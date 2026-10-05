@@ -1,5 +1,11 @@
 # PRIMAL RUN — tag dette med i morgen
 
+**Ny native leverance:** ../GDevelop/project.json kan nu åbnes direkte i
+GDevelop 5.6.283. Læs ../GDevelop/START_HER.md og ../GDevelop/STATUS.md.
+Det nye projekt er testet med faktisk serializer, HTML5-export og Chromium-
+runtime i cloud. Resten af dette dokument beskriver det bevarede originale kit;
+dets tidligere NOT RUN-status og artwork-begrænsninger ændres ikke.
+
 Kopiér hele den udpakkede PRIMAL_RUN_Prototype_Kit-mappe til arbejdscomputeren.
 Åbn START_HER.html i Chrome eller Edge. Katalog, billeder og browserdemo virker
 uden Codex, Python, server eller internet. GDevelop skal være tilgængeligt separat.

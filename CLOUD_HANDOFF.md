@@ -2,6 +2,14 @@
 
 Repository: https://github.com/JuNNeZ/primal-run — privat.
 
+## Aktuel leverance til 6. oktober 2026
+
+Åbn GDevelop/project.json med GDevelop 5.6.283. Se GDevelop/START_HER.md og
+GDevelop/STATUS.md. Native core + faktisk HTML5-export/runtime er verificeret
+i cloud. Historikken nedenfor beskriver udgangspunktet før dette arbejde.
+Næste ændringer testes med npm run test:gdevelop og reel engine-export/runtime.
+Læs GDevelop/README.md for scripts og officielle formatkilder.
+
 ## Tilslut i Codex
 
 Vælg repositoryet i din cloud-environment-opsætning og giv GitHub-integrationen

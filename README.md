@@ -7,7 +7,16 @@ otte WAV-placeholderlyde, en browserdemo og lokale GDevelop-byggeguides.
 Demoen har fire bevægelsesretninger, bite, HP, fjender, XP, mutationsvalg/stacks,
 pounce/stamina, death/restart og lokal DNA.
 
-## Start
+## Åbn GDevelop-projektet
+
+**Ny leverance:** [GDevelop/project.json](GDevelop/project.json) kan åbnes direkte i
+GDevelop 5.6.283. Læs [START_HER](GDevelop/START_HER.md) og
+[testet status](GDevelop/STATUS.md). Native Game-scene, movement/bite, fjender,
+HP/mad, XP, tre mutationer/stacks, pause, death/restart og lokal DNA er bygget.
+Faktisk GDevelop-serializer, HTML5-export og Chromium-runtime er testet i cloud.
+Desktop-editorens UI og produktionsanimationer er ikke godkendt.
+
+## Start browserreferencen
 
 Åbn `PRIMAL_RUN_Prototype_Kit/START_HER.html` i en browser efter download/clone.
 Eller kør `npm run preview` og gå til
@@ -37,5 +46,6 @@ i Prototype_Kit; regenerér ikke historiske pakker uden en konkret grund.
 ZIP-filer, som kan genskabes lokalt, er udeladt fra Git.
 
 Alle assets er prototyper. Action-poser og enemy-stillbilleder er ikke færdige
-animationer. Der er endnu ikke et GDevelop `project.json`, og GDevelop-runtime
-er ikke testet. Se sprite-regler og rapporter for de præcise begrænsninger.
+animationer. Det oprindelige kit er stadig en assetpakke/browserreference. Det nye native
+projekt ligger separat i GDevelop/; dets runtime-rapporter gælder kun denne
+leverance. Se sprite-regler og STATUS.md for de præcise begrænsninger.

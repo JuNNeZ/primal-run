@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "checks": [
+    "WASD/cardinal movement, diagonal normalization, stop retains facing",
+    "blocked movement selects idle; fixed radius rejects rocks",
+    "bite cooldown, kill removal, food, XP awarded once",
+    "level-up immediately freezes ALL gameplay incl later enemies, food, bleed and animation",
+    "overflow XP requires one choice per level; mutations stack",
+    "teeth stacks increase bleed; feathers regenerate stamina from balance.json",
+    "food consumed once and max HP enforced",
+    "death stops simulation; run DNA awarded once; restart clears all run state",
+    "pounce uses balance stamina/cooldown and feathers stacks",
+    "balance enemy variants: prey flees harmlessly, carnotaurus HP/damage/XP, bleed kills once",
+    "all 28 player frames have identical world-space torso mask and exact origin"
+  ],
+  "scope": "Deterministic kernel + generated project structure, NOT graphical GDevelop runtime"
+}

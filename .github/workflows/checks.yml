@@ -22,3 +22,13 @@ jobs:
       - run: python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py
       - run: python validate_sprites.py
       - run: npm test
+      - run: python GDevelop/tools/build_project.py
+      - run: npm run test:gdevelop
+      - run: python GDevelop/tools/prepare_engine.py
+      - run: node GDevelop/tools/export_gdevelop.cjs .cache/gdevelop-5.6.283
+      - run: npm run test:gdevelop-runtime
+      - run: npm run package:gdevelop
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PRIMAL_RUN_GDevelop
+          path: PRIMAL_RUN_GDevelop_2026-10-06.zip

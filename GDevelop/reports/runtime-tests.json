@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "engine": "GDevelop 5.6.283 HTML5 export",
+  "browser": "Chromium 151 headless shell",
+  "checks": [
+    "actual SpriteRuntimeObject cardinal walk/idle and world-space torso masks",
+    "native enemy variants, stacked bleed kill, XP once and object removal",
+    "blocked movement idles",
+    "mutation freezes whole gameplay and engine animation; native choices shown",
+    "native input selects once, resumes, stacks",
+    "death, native object cleanup, DNA once and restart",
+    "Playwright DOM keyboard binding moves and stops actual exported game"
+  ],
+  "pageErrors": [],
+  "scope": "REAL gdjs generated events, SpriteRuntimeObject/Pixi renderer and InputManager in Chromium; not desktop editor UI"
+}

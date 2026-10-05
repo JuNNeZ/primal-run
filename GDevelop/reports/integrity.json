@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "objects": 11,
+  "resources": 112,
+  "png": 104,
+  "wav": 8,
+  "checks": [
+    "relative resource paths",
+    "files exist",
+    "assets byte-identical to original kit",
+    "nearest/pixel rounding",
+    "no unpaused autonomous behaviors",
+    "all native object definitions visible in editor folder"
+  ],
+  "scope": "Project integrity, NOT engine schema/runtime"
+}

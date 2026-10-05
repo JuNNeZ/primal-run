@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-05",
+  "repository": "JuNNeZ/primal-run",
+  "base_commit": "202f3a9f325cc049aaa6bf77fc8b7915cbf425b1",
+  "environment": "Cloud Linux container; no Windows executor or local tokens",
+  "historical_sprites": {
+    "assets": 176,
+    "result": "PASS",
+    "scope": "PNG technical validation only"
+  },
+  "kit_assets": {
+    "assets": 104,
+    "result": "PASS",
+    "scope": "PNG technical validation only"
+  },
+  "browser_reference": {
+    "npm_test": "PASS",
+    "scope": "Separate original browserdemo, not GDevelop"
+  },
+  "engine": "GDevelop 5.6.283-0 from checksum-verified official release",
+  "editor_ui": "NOT RUN",
+  "artwork": "Byte-identical PNG/WAV assets. No production approval",
+  "initial_actions": {
+    "run_id": 37370541698,
+    "status": "queued",
+    "conclusion": null
+  }
+}

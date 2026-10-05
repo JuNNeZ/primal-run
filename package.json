@@ -6,7 +6,11 @@
   "scripts": {
     "test": "node check_kit_directions.cjs && node check_kit_progression.cjs && node check_kit_files.cjs",
     "preview": "python -m http.server 8000",
-    "validate:assets": "python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py"
+    "validate:assets": "python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py",
+    "test:gdevelop": "python GDevelop/tools/validate_project.py && node GDevelop/tools/test_core.cjs",
+    "test:gdevelop-runtime": "node GDevelop/tools/test_runtime.cjs",
+    "build:gdevelop": "python GDevelop/tools/build_project.py",
+    "package:gdevelop": "python GDevelop/tools/package_project.py"
   },
   "devDependencies": {
     "playwright": "^1.62.1"
