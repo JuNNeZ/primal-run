@@ -1,0 +1,44 @@
+const {chromium, browserOptions}=require('./tools/browser.cjs');
+const path=require('path'),fs=require('fs'),{pathToFileURL}=require('url');
+let browser;
+(async()=>{
+ browser=await chromium.launch(browserOptions());
+ const page=await browser.newPage({viewport:{width:1040,height:940}}),errors=[];
+ page.on('pageerror',e=>errors.push(String(e)));
+ await page.goto(pathToFileURL(path.join(__dirname,'PRIMAL_RUN_Demo_v4/demo.html')).href);
+ await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('Idle S'));
+ const check=(x,m)=>{if(!x)throw Error(m);};
+ await page.evaluate(()=>{const s=primalDemo.getState();s.enemies=[];s.player={x:480,y:250};});
+ await page.keyboard.down('KeyS');await page.waitForTimeout(180);
+ const phaseA=await page.evaluate(()=>({...primalDemo.getState(),player:{...primalDemo.getState().player}}));
+ await page.waitForTimeout(250);const phaseB=await page.evaluate(()=>({state:primalDemo.getState().playerAnimation,frame:primalDemo.getState().walkFrame,y:primalDemo.getState().player.y}));
+ check(phaseA.playerAnimation==='Walk_S'&&phaseB.state==='Walk_S','Southward movement did not enter Walk_S');
+ check(phaseA.walkFrame!==phaseB.frame&&phaseB.y>phaseA.player.y,'Movement did not advance frame and position');
+ await page.keyboard.up('KeyS');await page.waitForTimeout(50);
+ check(await page.evaluate(()=>primalDemo.getState().playerAnimation==='Idle_S'&&primalDemo.getState().walkTime===0),'Stopped state did not reset to Idle_S');
+ await page.evaluate(()=>{const s=primalDemo.getState();s.player={x:236,y:166};s.enemies=[];});
+ await page.keyboard.down('KeyS');await page.waitForTimeout(300);
+ check(await page.evaluate(()=>primalDemo.getState().playerAnimation==='Idle_S'),'Blocked movement still plays Walk_S');await page.keyboard.up('KeyS');
+ await page.evaluate(()=>{const s=primalDemo.getState();s.player={x:480,y:250};primalDemo.keys.add('KeyS');primalDemo.step(.1);s.walkTime=.70;primalDemo.step(.03);});
+ check(await page.evaluate(()=>primalDemo.getState().walkFrame===5),'Last loop frame missing');
+ await page.evaluate(()=>primalDemo.step(.05));check(await page.evaluate(()=>primalDemo.getState().walkFrame===0),'5->0 loop closure timing failed');
+ await page.evaluate(()=>primalDemo.keys.clear());
+ await page.keyboard.press('KeyR');await page.waitForTimeout(30);
+ check(await page.evaluate(()=>primalDemo.getState().walkFrame===0&&primalDemo.getState().playerAnimation==='Idle_S'),'Restart does not reset animation');
+ // Verify that the new pose/animation does not break the existing demo mechanics.
+ await page.evaluate(()=>{const s=primalDemo.getState();s.enemies=[{x:s.player.x+30,y:s.player.y,touch:0}];s.cooldown=0;});
+ await page.keyboard.press('Space');await page.waitForTimeout(80);
+ check(await page.evaluate(()=>primalDemo.getState().hunts===1&&primalDemo.getState().enemies.length===0),'Quick-tap bite regression');
+ await page.evaluate(()=>{const s=primalDemo.getState();s.health=30;s.food=[{...s.player}];primalDemo.step(0);});
+ check(await page.evaluate(()=>primalDemo.getState().health===44),'Healing regression');
+ await page.evaluate(()=>{primalDemo.getState().health=0;primalDemo.step(0);});
+ check(await page.evaluate(()=>primalDemo.getState().ended),'Death regression');
+ await page.keyboard.press('KeyR');await page.waitForTimeout(30);
+ check(await page.evaluate(()=>primalDemo.getState().health===100&&!primalDemo.getState().ended),'Restart regression');
+ await page.evaluate(()=>{const s=primalDemo.getState();s.enemies=[{x:730,y:350,touch:0}];s.player={x:480,y:300};primalDemo.keys.add('KeyS');primalDemo.step(.20);primalDemo.keys.clear();primalDemo.draw();});
+ await page.screenshot({path:path.join(__dirname,'PRIMAL_RUN_Demo_v4/demo_screenshot.png')});
+ check(!errors.length,'Browser runtime errors: '+errors.join('; '));
+ const report={result:'PASS',engine:'headless Chrome browser demo; not GDevelop',checks:['south movement enters and advances Walk_S','stop returns Idle_S','blocked movement stays Idle_S','5->0 timing','restart resets animation','quick-tap bite','healing','death','restart','no page errors']};
+ fs.writeFileSync(path.join(__dirname,'PRIMAL_RUN_Demo_v4/browser_test_report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));await browser.close();
+})().catch(async e=>{console.error(e);if(browser)await browser.close();process.exitCode=1;});
+

@@ -1,0 +1,62 @@
+{
+  "player": {
+    "hp": 100,
+    "speed": 160,
+    "bite_damage": 1,
+    "bite_radius": 74,
+    "bite_cooldown_seconds": 0.55,
+    "stamina": 100,
+    "stamina_regen_per_second": 18,
+    "pounce_cost": 30,
+    "pounce_seconds": 0.25,
+    "pounce_multiplier": 2.3,
+    "pounce_cooldown_seconds": 2
+  },
+  "enemies": {
+    "compy": {
+      "hp": 1,
+      "speed": 44,
+      "xp": 4,
+      "touch_damage": 12
+    },
+    "parasaurolophus": {
+      "hp": 2,
+      "speed": 44,
+      "xp": 6,
+      "touch_damage": 0,
+      "flee_radius": 170
+    },
+    "carnotaurus": {
+      "hp": 3,
+      "speed": 65,
+      "xp": 8,
+      "touch_damage": 18
+    }
+  },
+  "progression": {
+    "initial_next_xp": 8,
+    "next_xp_increase_per_level": 4,
+    "food_heal": 14,
+    "legs_speed_bonus_per_stack": 0.15,
+    "feathers_regen_bonus_per_stack": 0.2,
+    "bleed_seconds": 2,
+    "bleed_tick_seconds": 0.5,
+    "bleed_damage_per_tick_per_stack": 0.5
+  },
+  "demo": {
+    "width": 960,
+    "height": 640,
+    "survive_seconds": 60,
+    "spawn_interval_seconds": 3.2,
+    "max_enemies": 8,
+    "parasaurolophus_available_seconds": 10,
+    "carnotaurus_available_seconds": 20
+  },
+  "future_full_run_minutes": {
+    "deinosuchus": 5,
+    "carnotaurus_boss": 10,
+    "tyrannosaurus": 15,
+    "extinction": 20
+  },
+  "status": "Prototype tuning values; full-run bosses/events are not implemented"
+}

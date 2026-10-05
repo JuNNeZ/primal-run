@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "engine": "Chrome offline browser prototype; GDevelop NOT RUN",
+  "checks": [
+    "hunt XP triggers three-choice pause",
+    "pause freezes time/movement/damage",
+    "keyboard selection resumes",
+    "legs +15 percent speed",
+    "mutation stacks",
+    "feathers +20 percent regeneration",
+    "stamina pounce and boost",
+    "teeth adds bleed damage",
+    "food heals",
+    "death DNA once",
+    "DNA survives reload",
+    "60-second victory DNA bonus",
+    "restart clears run upgrades"
+  ]
+}

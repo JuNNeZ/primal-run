@@ -1,0 +1,45 @@
+{
+  "method": "whole-pose exports, North lossless rotation",
+  "spine_registration_offsets_y": {
+    "E": [
+      0,
+      0,
+      0,
+      7,
+      7,
+      7
+    ],
+    "W": [
+      13,
+      13,
+      13,
+      25,
+      25,
+      25
+    ]
+  },
+  "direction_origins": {
+    "S": [
+      64,
+      72
+    ],
+    "N": [
+      64,
+      56
+    ],
+    "E": [
+      68,
+      64
+    ],
+    "W": [
+      60,
+      64
+    ]
+  },
+  "source_sheet_size": [
+    1086,
+    1448
+  ],
+  "fps": 8,
+  "production_approved": false
+}

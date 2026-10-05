@@ -1,0 +1,105 @@
+﻿file,width,height,origin_x,origin_y,status,note
+assets/enemy/compy_idle_S_000.png,64,96,32,54,prototype_static,"aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+assets/environment/grass.png,32,32,0,0,prototype_static,"aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+assets/environment/fern.png,64,64,32,36,prototype_static,"aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+assets/environment/rock.png,64,64,32,36,prototype_static,"aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+assets/pickups/meat.png,32,32,16,16,prototype_static,"aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+assets/player/utahraptor_idle_S_000.png,128,128,64,72,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_S_000.png,128,128,64,72,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_S_001.png,128,128,64,72,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_S_002.png,128,128,64,72,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_S_003.png,128,128,64,72,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_S_004.png,128,128,64,72,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_S_005.png,128,128,64,72,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_idle_N_000.png,128,128,64,56,prototype_static,user-requested lossless 180-degree rotation of South; lighting rotates too
+assets/player/utahraptor_walk_N_000.png,128,128,64,56,prototype_static,user-requested lossless 180-degree rotation of South; lighting rotates too
+assets/player/utahraptor_walk_N_001.png,128,128,64,56,prototype_static,user-requested lossless 180-degree rotation of South; lighting rotates too
+assets/player/utahraptor_walk_N_002.png,128,128,64,56,prototype_static,user-requested lossless 180-degree rotation of South; lighting rotates too
+assets/player/utahraptor_walk_N_003.png,128,128,64,56,prototype_static,user-requested lossless 180-degree rotation of South; lighting rotates too
+assets/player/utahraptor_walk_N_004.png,128,128,64,56,prototype_static,user-requested lossless 180-degree rotation of South; lighting rotates too
+assets/player/utahraptor_walk_N_005.png,128,128,64,56,prototype_static,user-requested lossless 180-degree rotation of South; lighting rotates too
+assets/player/utahraptor_idle_E_000.png,128,128,68,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_E_000.png,128,128,68,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_E_001.png,128,128,68,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_E_002.png,128,128,68,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_E_003.png,128,128,68,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_E_004.png,128,128,68,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_E_005.png,128,128,68,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_idle_W_000.png,128,128,60,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_W_000.png,128,128,60,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_W_001.png,128,128,60,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_W_002.png,128,128,60,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_W_003.png,128,128,60,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_W_004.png,128,128,60,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/player/utahraptor_walk_W_005.png,128,128,60,64,prototype_static,whole-pose nearest-neighbor palette export
+assets/enemies/compy_idle_S_000.png,64,96,32,48,prototype_static,Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review.
+assets/enemies/parasaurolophus_idle_S_000.png,96,128,48,64,prototype_static,Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review.
+assets/enemies/carnotaurus_idle_S_000.png,96,128,48,64,prototype_static,Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review.
+assets/enemies/deinosuchus_idle_S_000.png,192,192,96,96,prototype_static,Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review.
+assets/enemies/tyrannosaurus_idle_S_000.png,192,192,96,96,prototype_static,Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review.
+assets/enemies/triceratops_idle_S_000.png,128,128,64,64,prototype_static,Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review.
+assets/enemies/ankylosaurus_idle_S_000.png,128,128,64,64,prototype_static,Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review.
+assets/player_actions/utahraptor_bite_S_000.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_bite_S_001.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_bite_S_002.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_bite_S_003.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_pounce_S_000.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_pounce_S_001.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_pounce_S_002.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_pounce_S_003.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_death_S_000.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_death_S_001.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_death_S_002.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_death_S_003.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_hurt_S_000.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_rest_S_000.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_juvenile_S_000.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/player_actions/utahraptor_fossil_S_000.png,128,128,64,72,prototype_static,"South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+assets/props/fern_large.png,64,64,32,32,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/boulder_large.png,64,64,32,32,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/dead_tree.png,128,128,64,64,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/fallen_log.png,64,64,32,32,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/tree_canopy.png,128,128,64,64,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/flower_bush.png,64,64,32,32,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/nest_eggs.png,64,64,32,32,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/nest_empty.png,64,64,32,32,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/pickups/meat_large.png,32,32,16,16,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/pickups/water_pickup.png,32,32,16,16,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/pickups/dna_pickup.png,32,32,16,16,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/pickups/egg_pickup.png,32,32,16,16,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/skull.png,64,64,32,32,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/ribcage.png,128,128,64,64,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/lava_rock.png,64,64,32,32,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/props/meteorite.png,64,64,32,32,prototype_static,Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately.
+assets/effects/bite_slash_000.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/bite_slash_001.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/bite_slash_002.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/bite_slash_003.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/dust_000.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/dust_001.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/dust_002.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/dust_003.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/meteor_impact_000.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/meteor_impact_001.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/meteor_impact_002.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/effects/meteor_impact_003.png,96,96,48,48,prototype_static,Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale.
+assets/ui/health.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/stamina.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/thirst.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/hunger.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/serrated_teeth.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/powerful_legs.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/insulating_feathers.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/dna.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/xp.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/bone.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/armor.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/ui/escape.png,32,32,16,16,prototype_static,Static UI icon; fill bars and text are separate functional objects.
+assets/tiles/grass_alt.png,32,32,0,0,prototype_static,Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified.
+assets/tiles/dirt.png,32,32,0,0,prototype_static,Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified.
+assets/tiles/sand.png,32,32,0,0,prototype_static,Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified.
+assets/tiles/gravel.png,32,32,0,0,prototype_static,Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified.
+assets/tiles/forest_floor.png,32,32,0,0,prototype_static,Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified.
+assets/tiles/shallow_water.png,32,32,0,0,prototype_static,Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified.
+assets/tiles/deep_water.png,32,32,0,0,prototype_static,Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified.
+assets/tiles/volcanic.png,32,32,0,0,prototype_static,Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified.

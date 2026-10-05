@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "errors": [],
+  "asset_count": 12,
+  "walk_frames": 6,
+  "fps": 8,
+  "loop_duration_seconds": 0.75,
+  "fixed_body_pixel_changes": 0,
+  "all_limbs_connected_to_body_anchor": true,
+  "frame_pair_changed_pixels": [
+    341,
+    432,
+    269,
+    391,
+    446,
+    371
+  ],
+  "loop_closure_changed_pixels": 371,
+  "anchors": [
+    64,
+    72
+  ],
+  "palette_size": 24,
+  "production_approved": false,
+  "GDevelop_runtime": "NOT RUN",
+  "scope": "PNG canvas, palette, alpha, padding, inventory, fixed-body identity, unique phases and closure comparison"
+}

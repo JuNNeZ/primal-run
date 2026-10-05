@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "engine": "headless Chrome browser demo; not GDevelop",
+  "checks": [
+    "south movement enters and advances Walk_S",
+    "stop returns Idle_S",
+    "blocked movement stays Idle_S",
+    "5->0 timing",
+    "restart resets animation",
+    "quick-tap bite",
+    "healing",
+    "death",
+    "restart",
+    "no page errors"
+  ]
+}

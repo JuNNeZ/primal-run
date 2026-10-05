@@ -1,0 +1,32 @@
+{
+  "result": "PASS",
+  "assets": 12,
+  "checks": [
+    "RGBA sizes",
+    "24-color palette",
+    "binary alpha",
+    "transparent RGB zero",
+    "player edge padding",
+    "six unique whole poses",
+    "central body changes across phases",
+    "loop seam difference within 1.5x largest adjacent difference"
+  ],
+  "adjacent_pixel_changes": [
+    2224,
+    1561,
+    2054,
+    1836,
+    1787,
+    2186
+  ],
+  "central_body_changes_from_frame_0": [
+    0,
+    1327,
+    1377,
+    1468,
+    1601,
+    1411
+  ],
+  "visual_caveat": "Pixel differences do not certify anatomical coherence; generated markings can vary.",
+  "GDevelop_runtime": "NOT RUN"
+}

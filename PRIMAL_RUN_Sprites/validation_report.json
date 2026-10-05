@@ -1,0 +1,9 @@
+{
+  "asset_count": 176,
+  "technical_export_result": "PASS",
+  "errors": [],
+  "approved_animations": 0,
+  "style_review": "UNAPPROVED: source concept inconsistencies; palette/master pending",
+  "runtime_test": "NOT RUN",
+  "scope": "RGBA, binary alpha, transparent RGB, padding, family canvas, inventory and truthful status only"
+}

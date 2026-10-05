@@ -1,0 +1,31 @@
+{
+  "canvas": [
+    128,
+    128
+  ],
+  "origin": [
+    64,
+    72
+  ],
+  "body_source_frame": 0,
+  "limb_windows": [
+    [
+      34,
+      79,
+      52,
+      114
+    ],
+    [
+      76,
+      78,
+      96,
+      114
+    ]
+  ],
+  "idle_source_frame": 1,
+  "method": "fixed generated body layer with six generated foot phases; no body resynthesis",
+  "fps": 8,
+  "loop": true,
+  "direction": "S",
+  "production_approved": false
+}

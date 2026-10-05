@@ -1,0 +1,5 @@
+*.png binary
+*.gif binary
+*.wav binary
+*.sh text eol=lf
+*.yml text eol=lf

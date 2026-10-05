@@ -1,0 +1,3170 @@
+[
+  {
+    "file": "01_Player_Utahraptor/idle/utahraptor_idle_pose_01.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      71,
+      36,
+      121,
+      125
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/idle/utahraptor_idle_pose_02.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      130,
+      36,
+      188,
+      125
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/idle/utahraptor_idle_pose_03.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      192,
+      36,
+      271,
+      125
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/idle/utahraptor_idle_pose_04.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      272,
+      36,
+      340,
+      125
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/idle/utahraptor_idle_pose_05.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      350,
+      36,
+      405,
+      125
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/idle/utahraptor_idle_pose_06.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      409,
+      36,
+      527,
+      125
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/idle/utahraptor_idle_pose_07.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      533,
+      36,
+      603,
+      125
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/walk/utahraptor_walk_pose_01.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      71,
+      127,
+      121,
+      216
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/walk/utahraptor_walk_pose_02.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      130,
+      127,
+      188,
+      216
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/walk/utahraptor_walk_pose_03.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      192,
+      127,
+      271,
+      216
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/walk/utahraptor_walk_pose_04.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      272,
+      127,
+      340,
+      216
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/walk/utahraptor_walk_pose_05.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      350,
+      127,
+      405,
+      216
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/walk/utahraptor_walk_pose_06.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      409,
+      127,
+      527,
+      216
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/walk/utahraptor_walk_pose_07.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      533,
+      127,
+      603,
+      216
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/run/utahraptor_run_pose_01.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      71,
+      217,
+      121,
+      309
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/run/utahraptor_run_pose_02.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      130,
+      217,
+      188,
+      309
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/run/utahraptor_run_pose_03.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      192,
+      217,
+      271,
+      309
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/run/utahraptor_run_pose_04.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      272,
+      217,
+      340,
+      309
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/run/utahraptor_run_pose_05.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      350,
+      217,
+      405,
+      309
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/run/utahraptor_run_pose_06.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      409,
+      217,
+      527,
+      309
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/run/utahraptor_run_pose_07.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      533,
+      217,
+      603,
+      309
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/attack/utahraptor_attack_pose_01.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      71,
+      316,
+      121,
+      405
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/attack/utahraptor_attack_pose_02.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      130,
+      316,
+      188,
+      405
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/attack/utahraptor_attack_pose_03.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      192,
+      316,
+      271,
+      405
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/attack/utahraptor_attack_pose_04.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      272,
+      316,
+      340,
+      405
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/attack/utahraptor_attack_pose_05.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      350,
+      316,
+      405,
+      405
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/attack/utahraptor_attack_pose_06.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      409,
+      316,
+      527,
+      405
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/attack/utahraptor_attack_pose_07.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      533,
+      316,
+      603,
+      405
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/hurt/utahraptor_hurt_pose_01.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      71,
+      411,
+      121,
+      502
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/hurt/utahraptor_hurt_pose_02.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      130,
+      411,
+      188,
+      502
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/hurt/utahraptor_hurt_pose_03.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      192,
+      411,
+      271,
+      502
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/hurt/utahraptor_hurt_pose_04.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      272,
+      411,
+      340,
+      502
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/hurt/utahraptor_hurt_pose_05.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      350,
+      411,
+      405,
+      502
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/hurt/utahraptor_hurt_pose_06.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      409,
+      411,
+      527,
+      502
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/hurt/utahraptor_hurt_pose_07.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      533,
+      411,
+      603,
+      502
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent source pose; not a confirmed animation frame."
+  },
+  {
+    "file": "01_Player_Utahraptor/death/utahraptor_death_pose_01.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      71,
+      513,
+      179,
+      573
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent death illustration; no verified temporal order."
+  },
+  {
+    "file": "01_Player_Utahraptor/death/utahraptor_death_pose_02.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      188,
+      514,
+      276,
+      575
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent death illustration; no verified temporal order."
+  },
+  {
+    "file": "01_Player_Utahraptor/death/utahraptor_death_pose_03.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      280,
+      513,
+      378,
+      575
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent death illustration; no verified temporal order."
+  },
+  {
+    "file": "01_Player_Utahraptor/death/utahraptor_death_pose_04.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      382,
+      515,
+      481,
+      576
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent death illustration; no verified temporal order."
+  },
+  {
+    "file": "01_Player_Utahraptor/death/utahraptor_death_pose_05.png",
+    "width": 128,
+    "height": 128,
+    "source_box": [
+      488,
+      510,
+      608,
+      577
+    ],
+    "suggested_origin": [
+      64,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent death illustration; no verified temporal order."
+  },
+  {
+    "file": "02_Enemies/compy/compy_pose_01.png",
+    "width": 64,
+    "height": 96,
+    "source_box": [
+      646,
+      70,
+      672,
+      139
+    ],
+    "suggested_origin": [
+      32,
+      48
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/compy/compy_pose_02.png",
+    "width": 64,
+    "height": 96,
+    "source_box": [
+      699,
+      69,
+      726,
+      140
+    ],
+    "suggested_origin": [
+      32,
+      48
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/compy/compy_pose_03.png",
+    "width": 64,
+    "height": 96,
+    "source_box": [
+      747,
+      70,
+      784,
+      139
+    ],
+    "suggested_origin": [
+      32,
+      48
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/compy/compy_pose_04.png",
+    "width": 64,
+    "height": 96,
+    "source_box": [
+      800,
+      67,
+      838,
+      137
+    ],
+    "suggested_origin": [
+      32,
+      48
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/compy/compy_pose_05.png",
+    "width": 64,
+    "height": 96,
+    "source_box": [
+      854,
+      65,
+      883,
+      140
+    ],
+    "suggested_origin": [
+      32,
+      48
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/compy/compy_pose_06.png",
+    "width": 64,
+    "height": 96,
+    "source_box": [
+      912,
+      67,
+      941,
+      139
+    ],
+    "suggested_origin": [
+      32,
+      48
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/compy/compy_pose_07.png",
+    "width": 64,
+    "height": 96,
+    "source_box": [
+      956,
+      72,
+      988,
+      139
+    ],
+    "suggested_origin": [
+      32,
+      48
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/compy/compy_pose_08.png",
+    "width": 64,
+    "height": 96,
+    "source_box": [
+      1013,
+      67,
+      1046,
+      140
+    ],
+    "suggested_origin": [
+      32,
+      48
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/parasaurolophus_young/parasaurolophus_young_pose_01.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      643,
+      168,
+      679,
+      268
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/parasaurolophus_young/parasaurolophus_young_pose_02.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      692,
+      167,
+      731,
+      270
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/parasaurolophus_young/parasaurolophus_young_pose_03.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      750,
+      167,
+      797,
+      269
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/parasaurolophus_young/parasaurolophus_young_pose_04.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      797,
+      166,
+      851,
+      274
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/parasaurolophus_young/parasaurolophus_young_pose_05.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      858,
+      168,
+      901,
+      274
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/parasaurolophus_young/parasaurolophus_young_pose_06.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      911,
+      168,
+      959,
+      269
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/parasaurolophus_young/parasaurolophus_young_pose_07.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      960,
+      162,
+      1005,
+      269
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/parasaurolophus_young/parasaurolophus_young_pose_08.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      1007,
+      171,
+      1051,
+      279
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/carnotaurus_young/carnotaurus_young_pose_01.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      637,
+      301,
+      681,
+      413
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/carnotaurus_young/carnotaurus_young_pose_02.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      688,
+      300,
+      738,
+      414
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/carnotaurus_young/carnotaurus_young_pose_03.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      746,
+      299,
+      797,
+      414
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/carnotaurus_young/carnotaurus_young_pose_04.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      803,
+      300,
+      854,
+      414
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/carnotaurus_young/carnotaurus_young_pose_05.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      861,
+      300,
+      910,
+      419
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/carnotaurus_young/carnotaurus_young_pose_06.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      914,
+      300,
+      964,
+      418
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/carnotaurus_young/carnotaurus_young_pose_07.png",
+    "width": 96,
+    "height": 128,
+    "source_box": [
+      988,
+      300,
+      1041,
+      420
+    ],
+    "suggested_origin": [
+      48,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/trex/trex_pose_01.png",
+    "width": 96,
+    "height": 160,
+    "source_box": [
+      638,
+      439,
+      690,
+      565
+    ],
+    "suggested_origin": [
+      48,
+      80
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/trex/trex_pose_02.png",
+    "width": 96,
+    "height": 160,
+    "source_box": [
+      703,
+      439,
+      763,
+      575
+    ],
+    "suggested_origin": [
+      48,
+      80
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/trex/trex_pose_03.png",
+    "width": 96,
+    "height": 160,
+    "source_box": [
+      774,
+      443,
+      826,
+      567
+    ],
+    "suggested_origin": [
+      48,
+      80
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/trex/trex_pose_04.png",
+    "width": 96,
+    "height": 160,
+    "source_box": [
+      834,
+      433,
+      895,
+      579
+    ],
+    "suggested_origin": [
+      48,
+      80
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/trex/trex_pose_05.png",
+    "width": 96,
+    "height": 160,
+    "source_box": [
+      901,
+      450,
+      937,
+      542
+    ],
+    "suggested_origin": [
+      48,
+      80
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/trex/trex_pose_06.png",
+    "width": 96,
+    "height": 160,
+    "source_box": [
+      946,
+      450,
+      995,
+      579
+    ],
+    "suggested_origin": [
+      48,
+      80
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "02_Enemies/trex/trex_pose_07.png",
+    "width": 96,
+    "height": 160,
+    "source_box": [
+      1000,
+      438,
+      1052,
+      586
+    ],
+    "suggested_origin": [
+      48,
+      80
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Independent sample pose; size and direction vary in source."
+  },
+  {
+    "file": "03_Environment/Source_Crops/grass.png",
+    "width": 97,
+    "height": 88,
+    "source_box": [
+      1077,
+      66,
+      1174,
+      154
+    ],
+    "suggested_origin": [
+      48,
+      44
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/dirt.png",
+    "width": 84,
+    "height": 88,
+    "source_box": [
+      1183,
+      66,
+      1267,
+      154
+    ],
+    "suggested_origin": [
+      42,
+      44
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/rocky.png",
+    "width": 81,
+    "height": 88,
+    "source_box": [
+      1277,
+      66,
+      1358,
+      154
+    ],
+    "suggested_origin": [
+      40,
+      44
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/sand.png",
+    "width": 75,
+    "height": 88,
+    "source_box": [
+      1368,
+      66,
+      1443,
+      154
+    ],
+    "suggested_origin": [
+      37,
+      44
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/water.png",
+    "width": 69,
+    "height": 88,
+    "source_box": [
+      1454,
+      66,
+      1523,
+      154
+    ],
+    "suggested_origin": [
+      34,
+      44
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/dense_grass.png",
+    "width": 84,
+    "height": 93,
+    "source_box": [
+      1077,
+      185,
+      1161,
+      278
+    ],
+    "suggested_origin": [
+      42,
+      46
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/forest_floor.png",
+    "width": 84,
+    "height": 92,
+    "source_box": [
+      1173,
+      185,
+      1257,
+      277
+    ],
+    "suggested_origin": [
+      42,
+      46
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/rock.png",
+    "width": 76,
+    "height": 94,
+    "source_box": [
+      1267,
+      185,
+      1343,
+      279
+    ],
+    "suggested_origin": [
+      38,
+      47
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/cliff_edge.png",
+    "width": 83,
+    "height": 93,
+    "source_box": [
+      1352,
+      185,
+      1435,
+      278
+    ],
+    "suggested_origin": [
+      41,
+      46
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/shallow_water.png",
+    "width": 76,
+    "height": 79,
+    "source_box": [
+      1447,
+      203,
+      1523,
+      282
+    ],
+    "suggested_origin": [
+      38,
+      39
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/cliff_01.png",
+    "width": 71,
+    "height": 106,
+    "source_box": [
+      1449,
+      308,
+      1520,
+      414
+    ],
+    "suggested_origin": [
+      35,
+      53
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/cliff_02.png",
+    "width": 69,
+    "height": 64,
+    "source_box": [
+      1450,
+      421,
+      1519,
+      485
+    ],
+    "suggested_origin": [
+      34,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/cliff_03.png",
+    "width": 69,
+    "height": 64,
+    "source_box": [
+      1450,
+      493,
+      1519,
+      557
+    ],
+    "suggested_origin": [
+      34,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/Source_Crops/cliff_04.png",
+    "width": 69,
+    "height": 18,
+    "source_box": [
+      1450,
+      562,
+      1519,
+      580
+    ],
+    "suggested_origin": [
+      34,
+      9
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Original rectangular illustration crop; seamless tiling is not verified."
+  },
+  {
+    "file": "03_Environment/biome_scene_sample.png",
+    "width": 364,
+    "height": 292,
+    "source_box": [
+      1078,
+      288,
+      1442,
+      580
+    ],
+    "suggested_origin": [
+      182,
+      146
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single illustration, not a tileset."
+  },
+  {
+    "file": "04_Props/tree_large.png",
+    "width": 153,
+    "height": 184,
+    "source_box": [
+      16,
+      631,
+      181,
+      816
+    ],
+    "suggested_origin": [
+      76,
+      92
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/tree_small.png",
+    "width": 86,
+    "height": 118,
+    "source_box": [
+      184,
+      633,
+      278,
+      753
+    ],
+    "suggested_origin": [
+      43,
+      59
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bush_01.png",
+    "width": 49,
+    "height": 51,
+    "source_box": [
+      280,
+      635,
+      343,
+      692
+    ],
+    "suggested_origin": [
+      24,
+      25
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bush_02.png",
+    "width": 56,
+    "height": 49,
+    "source_box": [
+      283,
+      706,
+      346,
+      754
+    ],
+    "suggested_origin": [
+      28,
+      24
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/tree_dead.png",
+    "width": 65,
+    "height": 118,
+    "source_box": [
+      348,
+      632,
+      416,
+      750
+    ],
+    "suggested_origin": [
+      32,
+      59
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/rock_moss.png",
+    "width": 78,
+    "height": 86,
+    "source_box": [
+      432,
+      626,
+      515,
+      713
+    ],
+    "suggested_origin": [
+      39,
+      43
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/rock_small_01.png",
+    "width": 23,
+    "height": 23,
+    "source_box": [
+      525,
+      651,
+      553,
+      687
+    ],
+    "suggested_origin": [
+      11,
+      11
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/rock_cluster_01.png",
+    "width": 79,
+    "height": 71,
+    "source_box": [
+      557,
+      625,
+      644,
+      703
+    ],
+    "suggested_origin": [
+      39,
+      35
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/plant_01.png",
+    "width": 40,
+    "height": 45,
+    "source_box": [
+      514,
+      699,
+      558,
+      750
+    ],
+    "suggested_origin": [
+      20,
+      22
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/stump.png",
+    "width": 52,
+    "height": 47,
+    "source_box": [
+      575,
+      712,
+      635,
+      763
+    ],
+    "suggested_origin": [
+      26,
+      23
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bush_03.png",
+    "width": 73,
+    "height": 67,
+    "source_box": [
+      148,
+      749,
+      225,
+      818
+    ],
+    "suggested_origin": [
+      36,
+      33
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/flowers_red_01.png",
+    "width": 35,
+    "height": 44,
+    "source_box": [
+      240,
+      756,
+      288,
+      805
+    ],
+    "suggested_origin": [
+      17,
+      22
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/stones_small.png",
+    "width": 40,
+    "height": 27,
+    "source_box": [
+      327,
+      762,
+      376,
+      795
+    ],
+    "suggested_origin": [
+      20,
+      13
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/plant_02.png",
+    "width": 55,
+    "height": 49,
+    "source_box": [
+      371,
+      734,
+      432,
+      787
+    ],
+    "suggested_origin": [
+      27,
+      24
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/plant_03.png",
+    "width": 42,
+    "height": 43,
+    "source_box": [
+      458,
+      736,
+      509,
+      784
+    ],
+    "suggested_origin": [
+      21,
+      21
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/flowers_red_02.png",
+    "width": 41,
+    "height": 53,
+    "source_box": [
+      515,
+      771,
+      560,
+      824
+    ],
+    "suggested_origin": [
+      20,
+      26
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/plant_04.png",
+    "width": 44,
+    "height": 39,
+    "source_box": [
+      577,
+      772,
+      638,
+      811
+    ],
+    "suggested_origin": [
+      22,
+      19
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/flowers_white.png",
+    "width": 43,
+    "height": 47,
+    "source_box": [
+      396,
+      792,
+      441,
+      842
+    ],
+    "suggested_origin": [
+      21,
+      23
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/flowers_red_03.png",
+    "width": 43,
+    "height": 44,
+    "source_box": [
+      456,
+      792,
+      507,
+      842
+    ],
+    "suggested_origin": [
+      21,
+      22
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/plant_05.png",
+    "width": 31,
+    "height": 34,
+    "source_box": [
+      337,
+      799,
+      377,
+      839
+    ],
+    "suggested_origin": [
+      15,
+      17
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/rock_cluster_02.png",
+    "width": 104,
+    "height": 81,
+    "source_box": [
+      16,
+      816,
+      121,
+      902
+    ],
+    "suggested_origin": [
+      52,
+      40
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/tree_trunk.png",
+    "width": 40,
+    "height": 90,
+    "source_box": [
+      123,
+      832,
+      169,
+      924
+    ],
+    "suggested_origin": [
+      20,
+      45
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/log_large.png",
+    "width": 152,
+    "height": 75,
+    "source_box": [
+      175,
+      805,
+      327,
+      884
+    ],
+    "suggested_origin": [
+      76,
+      37
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/fern_large.png",
+    "width": 99,
+    "height": 71,
+    "source_box": [
+      262,
+      858,
+      365,
+      937
+    ],
+    "suggested_origin": [
+      49,
+      35
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/branch_pile.png",
+    "width": 75,
+    "height": 50,
+    "source_box": [
+      364,
+      845,
+      443,
+      903
+    ],
+    "suggested_origin": [
+      37,
+      25
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/plant_06.png",
+    "width": 48,
+    "height": 36,
+    "source_box": [
+      18,
+      902,
+      65,
+      942
+    ],
+    "suggested_origin": [
+      24,
+      18
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/twig_01.png",
+    "width": 23,
+    "height": 22,
+    "source_box": [
+      78,
+      925,
+      105,
+      949
+    ],
+    "suggested_origin": [
+      11,
+      11
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/twig_02.png",
+    "width": 28,
+    "height": 27,
+    "source_box": [
+      109,
+      909,
+      133,
+      936
+    ],
+    "suggested_origin": [
+      14,
+      13
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/log_small.png",
+    "width": 83,
+    "height": 63,
+    "source_box": [
+      169,
+      890,
+      252,
+      954
+    ],
+    "suggested_origin": [
+      41,
+      31
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/rock_flowers.png",
+    "width": 44,
+    "height": 49,
+    "source_box": [
+      17,
+      943,
+      67,
+      1004
+    ],
+    "suggested_origin": [
+      22,
+      24
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/twig_03.png",
+    "width": 25,
+    "height": 39,
+    "source_box": [
+      77,
+      950,
+      107,
+      993
+    ],
+    "suggested_origin": [
+      12,
+      19
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/rock_cluster_03.png",
+    "width": 82,
+    "height": 71,
+    "source_box": [
+      108,
+      935,
+      193,
+      1008
+    ],
+    "suggested_origin": [
+      41,
+      35
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/rock_small_02.png",
+    "width": 37,
+    "height": 32,
+    "source_box": [
+      198,
+      974,
+      238,
+      1005
+    ],
+    "suggested_origin": [
+      18,
+      16
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/fern_02.png",
+    "width": 54,
+    "height": 49,
+    "source_box": [
+      238,
+      944,
+      291,
+      997
+    ],
+    "suggested_origin": [
+      27,
+      24
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/plant_07.png",
+    "width": 26,
+    "height": 27,
+    "source_box": [
+      297,
+      960,
+      323,
+      995
+    ],
+    "suggested_origin": [
+      13,
+      13
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/plant_08.png",
+    "width": 26,
+    "height": 29,
+    "source_box": [
+      327,
+      959,
+      350,
+      995
+    ],
+    "suggested_origin": [
+      13,
+      14
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/fern_03.png",
+    "width": 51,
+    "height": 45,
+    "source_box": [
+      354,
+      924,
+      408,
+      970
+    ],
+    "suggested_origin": [
+      25,
+      22
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/skeleton_large.png",
+    "width": 188,
+    "height": 105,
+    "source_box": [
+      451,
+      814,
+      643,
+      948
+    ],
+    "suggested_origin": [
+      94,
+      52
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_01.png",
+    "width": 55,
+    "height": 32,
+    "source_box": [
+      402,
+      903,
+      458,
+      938
+    ],
+    "suggested_origin": [
+      27,
+      16
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_02.png",
+    "width": 48,
+    "height": 34,
+    "source_box": [
+      559,
+      921,
+      611,
+      955
+    ],
+    "suggested_origin": [
+      24,
+      17
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_03.png",
+    "width": 25,
+    "height": 20,
+    "source_box": [
+      615,
+      899,
+      642,
+      919
+    ],
+    "suggested_origin": [
+      12,
+      10
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_04.png",
+    "width": 20,
+    "height": 21,
+    "source_box": [
+      615,
+      939,
+      640,
+      960
+    ],
+    "suggested_origin": [
+      10,
+      10
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_05.png",
+    "width": 44,
+    "height": 49,
+    "source_box": [
+      584,
+      953,
+      640,
+      1006
+    ],
+    "suggested_origin": [
+      22,
+      24
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_06.png",
+    "width": 45,
+    "height": 19,
+    "source_box": [
+      547,
+      960,
+      598,
+      979
+    ],
+    "suggested_origin": [
+      22,
+      9
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_07.png",
+    "width": 17,
+    "height": 15,
+    "source_box": [
+      549,
+      980,
+      577,
+      1004
+    ],
+    "suggested_origin": [
+      8,
+      7
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_08.png",
+    "width": 45,
+    "height": 38,
+    "source_box": [
+      491,
+      961,
+      538,
+      1003
+    ],
+    "suggested_origin": [
+      22,
+      19
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_09.png",
+    "width": 24,
+    "height": 18,
+    "source_box": [
+      455,
+      971,
+      485,
+      993
+    ],
+    "suggested_origin": [
+      12,
+      9
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_10.png",
+    "width": 16,
+    "height": 13,
+    "source_box": [
+      472,
+      949,
+      495,
+      969
+    ],
+    "suggested_origin": [
+      8,
+      6
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/bone_11.png",
+    "width": 46,
+    "height": 27,
+    "source_box": [
+      386,
+      973,
+      431,
+      1004
+    ],
+    "suggested_origin": [
+      23,
+      13
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "04_Props/skull_small.png",
+    "width": 62,
+    "height": 36,
+    "source_box": [
+      385,
+      949,
+      450,
+      985
+    ],
+    "suggested_origin": [
+      31,
+      18
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Icons/health.png",
+    "width": 40,
+    "height": 40,
+    "source_box": [
+      684,
+      636,
+      718,
+      667
+    ],
+    "suggested_origin": [
+      20,
+      20
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Bars/health_bar_sample.png",
+    "width": 145,
+    "height": 21,
+    "source_box": [
+      726,
+      637,
+      873,
+      667
+    ],
+    "suggested_origin": [
+      72,
+      10
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Baked partial fill from source; not a functional meter."
+  },
+  {
+    "file": "05_UI/Icons/hunger.png",
+    "width": 40,
+    "height": 40,
+    "source_box": [
+      684,
+      668,
+      718,
+      699
+    ],
+    "suggested_origin": [
+      20,
+      20
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Bars/hunger_bar_sample.png",
+    "width": 145,
+    "height": 21,
+    "source_box": [
+      726,
+      669,
+      873,
+      699
+    ],
+    "suggested_origin": [
+      72,
+      10
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Baked partial fill from source; not a functional meter."
+  },
+  {
+    "file": "05_UI/Icons/thirst.png",
+    "width": 40,
+    "height": 40,
+    "source_box": [
+      684,
+      701,
+      718,
+      732
+    ],
+    "suggested_origin": [
+      20,
+      20
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Bars/thirst_bar_sample.png",
+    "width": 145,
+    "height": 21,
+    "source_box": [
+      726,
+      702,
+      873,
+      732
+    ],
+    "suggested_origin": [
+      72,
+      10
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Baked partial fill from source; not a functional meter."
+  },
+  {
+    "file": "05_UI/Icons/stamina.png",
+    "width": 40,
+    "height": 40,
+    "source_box": [
+      684,
+      733,
+      718,
+      764
+    ],
+    "suggested_origin": [
+      20,
+      20
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Bars/stamina_bar_sample.png",
+    "width": 145,
+    "height": 21,
+    "source_box": [
+      726,
+      734,
+      873,
+      764
+    ],
+    "suggested_origin": [
+      72,
+      10
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Baked partial fill from source; not a functional meter."
+  },
+  {
+    "file": "05_UI/Bars/xp_bar_sample.png",
+    "width": 145,
+    "height": 21,
+    "source_box": [
+      726,
+      766,
+      873,
+      796
+    ],
+    "suggested_origin": [
+      72,
+      10
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Baked partial fill from source; not a functional meter."
+  },
+  {
+    "file": "05_UI/Icons/xp_label.png",
+    "width": 40,
+    "height": 40,
+    "source_box": [
+      684,
+      767,
+      717,
+      795
+    ],
+    "suggested_origin": [
+      20,
+      20
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Buttons/mutation_claws.png",
+    "width": 64,
+    "height": 64,
+    "source_box": [
+      681,
+      802,
+      739,
+      859
+    ],
+    "suggested_origin": [
+      32,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Slots/empty_slot_01.png",
+    "width": 64,
+    "height": 64,
+    "source_box": [
+      681,
+      864,
+      739,
+      906
+    ],
+    "suggested_origin": [
+      32,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Buttons/mutation_footprint.png",
+    "width": 64,
+    "height": 64,
+    "source_box": [
+      746,
+      802,
+      804,
+      859
+    ],
+    "suggested_origin": [
+      32,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Slots/empty_slot_02.png",
+    "width": 64,
+    "height": 64,
+    "source_box": [
+      746,
+      864,
+      804,
+      906
+    ],
+    "suggested_origin": [
+      32,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Buttons/mutation_feather.png",
+    "width": 64,
+    "height": 64,
+    "source_box": [
+      813,
+      802,
+      870,
+      859
+    ],
+    "suggested_origin": [
+      32,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Slots/empty_slot_03.png",
+    "width": 64,
+    "height": 64,
+    "source_box": [
+      813,
+      864,
+      870,
+      906
+    ],
+    "suggested_origin": [
+      32,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Buttons/mutation_heal.png",
+    "width": 64,
+    "height": 64,
+    "source_box": [
+      876,
+      802,
+      933,
+      859
+    ],
+    "suggested_origin": [
+      32,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Slots/empty_slot_04.png",
+    "width": 64,
+    "height": 64,
+    "source_box": [
+      876,
+      864,
+      933,
+      906
+    ],
+    "suggested_origin": [
+      32,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Buttons/mutation_dna.png",
+    "width": 64,
+    "height": 64,
+    "source_box": [
+      938,
+      802,
+      998,
+      859
+    ],
+    "suggested_origin": [
+      32,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "05_UI/Slots/empty_slot_05.png",
+    "width": 64,
+    "height": 64,
+    "source_box": [
+      938,
+      864,
+      998,
+      906
+    ],
+    "suggested_origin": [
+      32,
+      32
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "06_Pickups/meat.png",
+    "width": 80,
+    "height": 80,
+    "source_box": [
+      677,
+      946,
+      747,
+      1007
+    ],
+    "suggested_origin": [
+      40,
+      40
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "06_Pickups/water.png",
+    "width": 80,
+    "height": 80,
+    "source_box": [
+      766,
+      946,
+      807,
+      1008
+    ],
+    "suggested_origin": [
+      40,
+      40
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "06_Pickups/dna.png",
+    "width": 80,
+    "height": 80,
+    "source_box": [
+      825,
+      944,
+      882,
+      1009
+    ],
+    "suggested_origin": [
+      40,
+      40
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "06_Pickups/bone.png",
+    "width": 80,
+    "height": 80,
+    "source_box": [
+      885,
+      949,
+      948,
+      1007
+    ],
+    "suggested_origin": [
+      40,
+      40
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "06_Pickups/leaves.png",
+    "width": 80,
+    "height": 80,
+    "source_box": [
+      958,
+      944,
+      1023,
+      1009
+    ],
+    "suggested_origin": [
+      40,
+      40
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "07_Effects/blood_splash.png",
+    "width": 140,
+    "height": 89,
+    "source_box": [
+      1046,
+      629,
+      1194,
+      728
+    ],
+    "suggested_origin": [
+      70,
+      44
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/claw_slash.png",
+    "width": 105,
+    "height": 96,
+    "source_box": [
+      1198,
+      626,
+      1308,
+      728
+    ],
+    "suggested_origin": [
+      52,
+      48
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/sparkles.png",
+    "width": 111,
+    "height": 90,
+    "source_box": [
+      1313,
+      630,
+      1433,
+      726
+    ],
+    "suggested_origin": [
+      55,
+      45
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/smoke.png",
+    "width": 74,
+    "height": 91,
+    "source_box": [
+      1435,
+      630,
+      1517,
+      729
+    ],
+    "suggested_origin": [
+      37,
+      45
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/dust.png",
+    "width": 89,
+    "height": 84,
+    "source_box": [
+      1052,
+      731,
+      1150,
+      814
+    ],
+    "suggested_origin": [
+      44,
+      42
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/impact.png",
+    "width": 76,
+    "height": 76,
+    "source_box": [
+      1161,
+      731,
+      1262,
+      814
+    ],
+    "suggested_origin": [
+      38,
+      38
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/water_splash.png",
+    "width": 140,
+    "height": 89,
+    "source_box": [
+      1264,
+      728,
+      1400,
+      817
+    ],
+    "suggested_origin": [
+      70,
+      44
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/bubble_01.png",
+    "width": 21,
+    "height": 22,
+    "source_box": [
+      1394,
+      730,
+      1418,
+      754
+    ],
+    "suggested_origin": [
+      10,
+      11
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/bubble_02.png",
+    "width": 20,
+    "height": 20,
+    "source_box": [
+      1390,
+      775,
+      1413,
+      798
+    ],
+    "suggested_origin": [
+      10,
+      10
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/bubble_03.png",
+    "width": 26,
+    "height": 26,
+    "source_box": [
+      1422,
+      760,
+      1452,
+      791
+    ],
+    "suggested_origin": [
+      13,
+      13
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/bubble_04.png",
+    "width": 19,
+    "height": 20,
+    "source_box": [
+      1451,
+      781,
+      1478,
+      807
+    ],
+    "suggested_origin": [
+      9,
+      10
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "07_Effects/bubble_05.png",
+    "width": 14,
+    "height": 14,
+    "source_box": [
+      1433,
+      795,
+      1454,
+      815
+    ],
+    "suggested_origin": [
+      7,
+      7
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": "Single static effect; animation is not supplied."
+  },
+  {
+    "file": "08_Eggs_Nests/egg.png",
+    "width": 52,
+    "height": 62,
+    "source_box": [
+      1055,
+      884,
+      1108,
+      952
+    ],
+    "suggested_origin": [
+      26,
+      31
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "08_Eggs_Nests/nest_eggs.png",
+    "width": 146,
+    "height": 116,
+    "source_box": [
+      1113,
+      877,
+      1263,
+      997
+    ],
+    "suggested_origin": [
+      73,
+      58
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "08_Eggs_Nests/hatching_dinosaur.png",
+    "width": 101,
+    "height": 104,
+    "source_box": [
+      1264,
+      875,
+      1366,
+      984
+    ],
+    "suggested_origin": [
+      50,
+      52
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  },
+  {
+    "file": "08_Eggs_Nests/nest_empty.png",
+    "width": 148,
+    "height": 110,
+    "source_box": [
+      1368,
+      873,
+      1524,
+      990
+    ],
+    "suggested_origin": [
+      74,
+      55
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "note": ""
+  }
+]

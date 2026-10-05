@@ -1,0 +1,14 @@
+{
+  "method": "whole generated frames; no frozen torso and no limb-window composites",
+  "canvas": [
+    128,
+    128
+  ],
+  "origin": [
+    64,
+    72
+  ],
+  "idle_source_frame": 2,
+  "fps": 8,
+  "production_approved": false
+}

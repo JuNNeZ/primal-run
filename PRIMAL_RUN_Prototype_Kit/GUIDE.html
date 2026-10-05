@@ -1,0 +1,398 @@
+<!doctype html><html lang="da"><meta charset="utf-8"><title>PRIMAL RUN - lokal byggeguide</title><style>body{background:#151b19;color:#edd0a0;font:16px system-ui;max-width:1050px;margin:30px auto;padding:20px}a{color:#a8b15b}nav{position:sticky;top:0;background:#28372a;padding:18px;line-height:2;border:1px solid #586d38}section{background:#202a21;padding:24px;margin:24px 0;scroll-margin-top:100px}pre{font:15px/1.65 ui-monospace,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:32px}</style><h1>PRIMAL RUN — guide uden Codex</h1><p><a href="START_HER.html">Asset-katalog</a> · <a href="demo.html">Spil demo</a></p><nav><a href="#0">HANDOFF</a> · <a href="#1">GDEVELOP BYGGEGUIDE</a> · <a href="#2">EVENT OPSKRIFTER</a> · <a href="#3">TEST OG FEJLFINDING</a> · <a href="#4">SPRITE RULES</a></nav><section id="0"><pre># PRIMAL RUN — tag dette med i morgen
+
+Kopiér hele den udpakkede PRIMAL_RUN_Prototype_Kit-mappe til arbejdscomputeren.
+Åbn START_HER.html i Chrome eller Edge. Katalog, billeder og browserdemo virker
+uden Codex, Python, server eller internet. GDevelop skal være tilgængeligt separat.
+Gem også ZIP-filen som backup. Flyt ikke demo.html væk fra assets-mappen.
+
+## Det du har
+
+- 104 individuelle lossless PNG-filer; 71 nye oven på V5.
+- Utahraptor: fire retninger med seks gå-frames og én idle pr. retning.
+- 16 ekstra South-poser: bite, pounce, death, hurt, rest, juvenile og fossil.
+- Syv nye top-down stillbilleder: Compy, Parasaurolophus, Carnotaurus,
+  Deinosuchus, T. rex, Triceratops og Ankylosaurus.
+- 16 props/pickups: træer, sten, log, blomster, reder, æg, kød, vand, DNA og fossiler.
+- 12 VFX-frames til bite-slash, støv og meteor-impact.
+- 12 UI-ikoner og otte 32×32 terrænprototyper.
+- Otte korte originale WAV-lyde til bite, hit, pickup, level-up, pounce, death,
+  meteor og UI. Simple syntetiske placeholders; ikke dinosauroptagelser.
+- Offline katalog, previews, manifest, palette, sprite-regler, balancefil,
+  objektliste, byggeguide, event-opskrifter og testresultater.
+- Spilbar browserreference med bevægelse, bite, fjender, HP, mad, XP, pause ved
+  level-up, tre mutationer, stacks, pounce/stamina, death, restart og lokal DNA.
+
+Demoen varer 60 sekunder. Parasaurolophus og Carnotaurus kan spawne efter
+henholdsvis 10 og 20 sekunder. Boss-kamp og extinction-event er ikke implementeret.
+Mutationerne er tre faste valgmuligheder i denne prototype, ikke en tilfældig pulje.
+DNA er en gemt tæller, endnu uden unlock-menu.
+Lydene i sounds/ er ikke koblet til browserdemoen. De kan importeres særskilt i GDevelop.
+
+## Start i denne rækkefølge
+
+1. Spil demo.html og prøv S/W/A/D, Space, Shift, 1/2/3 og R.
+2. Åbn GUIDE.html; den samler hele den lokale GDevelop-guide og event-opskrifterne.
+3. Byg først bevægelse og retninger i en tom Game-scene.
+4. Tilføj én Compy, bite og health. Gem en fungerende kopi.
+5. Tilføj XP og level-up. Test at alle fjender står stille under valg.
+6. Tilføj death/restart og DNA-tælleren.
+7. Brug terræn, props og effekter til at forbedre læsbarheden.
+8. Tilføj én ny fjendetype ad gangen. Gem efter hver fungerende milepæl.
+
+## Hvad der stadig er foreløbigt
+
+Alle assets er prototyper. Det fælles farvesæt og de tekniske PNG-kontroller
+består, men det gør ikke billederne anatomisk eller animationsmæssigt perfekte.
+GDevelop-runtime er IKKE testet; dette er en assetpakke og browserreference,
+ikke et færdigt GDevelop-projekt, der kan åbnes som project.json.
+
+Walk-poser har noget variation i markeringer og kropsform. North er drejet South,
+inklusive lyset. De ekstra action-poser varierer i skala/registrering og bør først
+bruges som enkeltposer; de er ikke færdige animationer og er ikke koblet på demoen.
+Fjenderne har kun godkendt perspektiv som South-stillbilleder. Andre retninger
+i deres rå kildeark blev fravalgt. Ingen boss eller ekstra spillerart er spilbar.
+Tiles har gentagelsespreviews, men endnu ingen verificerede seamless-kanter eller
+biome-overgange. Vand er et visuelt placeholder-terræn, ikke en svømmemekanik.
+
+DNA gemmes i den lokale browsers lager. Det følger ikke automatisk med ZIP-filen
+til en anden computer; privat browsing eller lagerbegrænsninger kan forhindre
+persistens. Demoen fungerer stadig, men gemt DNA kan så gå tabt ved lukning.
+
+## Bevar din egen arbejdskopi
+
+Opret GDevelop-projektet i en mappe ved siden af pakken. Gem lokalt, og kopiér
+assets ind i projektets mappe før import. Lav versionskopier, fx primal-run-01,
+primal-run-02, efter hver milepæl. Din fremgang kræver ikke adgang til denne chat.
+</pre></section><section id="1"><pre># GDevelop — byg den første kerne
+
+Dette er en manuel byggeguide, ikke et automatisk importérbart projekt.
+Knapnavne kan være oversat i din GDevelop-installation. De engelske søgeord er
+med, så du kan finde funktionerne. Følg én milepæl ad gangen og Preview hver gang.
+
+## 1. Projekt og scene
+
+Create a project → Empty game. Slå Optimize for pixel art til. Navngiv scenen Game.
+Brug 960×640 som første spilstørrelse. Hold kameraet fast og lav ét lille område.
+Gem projektet lokalt i en mappe med en kopi af assets/.
+
+Tilføj et Tiled Sprite med assets/environment/grass.png. Stræk objektets område
+til 960×640; ændr objektets størrelse, ikke hver tiles billedskalering.
+Brug scene-baggrunden eller en fast baggrund på laveste Z-order.
+
+## 2. Player
+
+Add a new object → Sprite → Player. Lav følgende animationer med præcis navn:
+Idle_S, Walk_S, Idle_N, Walk_N, Idle_E, Walk_E, Idle_W, Walk_W.
+
+Idle bruger én PNG. Walk importerer _000 til _005 i nummerorden fra assets/player.
+Alle billeder er 128×128. Walk: 0.125 sekunder mellem billeder, Loop til.
+Idle: ét billede; ingen særskilt idle-animation er lavet endnu.
+
+Indstil origin på ALLE billeder i hver retning:
+
+| Retning | Origin X | Origin Y |
+| --- | --- | --- |
+| S / ned | 64 | 72 |
+| N / op | 64 | 56 |
+| E / højre | 68 | 64 |
+| W / venstre | 60 | 64 |
+
+Brug animation_manifest.json som facit. Positionen er en fast gameplay-pivot;
+halens omrids må ikke styre kollision. Lav en lille ens torso-hitbox centreret
+om origin i alle otte animationer. Bevar samme verdensareal ved retningsskift.
+Brug ikke automatisk collision fra hele dinosaurens silhouette.
+
+Tilføj Top-down movement i Behaviors. Max speed 160. Start med acceleration
+og deceleration 1000 for en hurtig respons. Slå Rotate object fra; vi vælger
+tegnede retninger. Slå Default controls fra og brug egne WASD-events.
+Placér Player cirka X=480, Y=320.
+
+## 3. Bevægelse og retninger
+
+Lav scenevariablerne fra EVENT_OPSKRIFTER.md. Første scene-start sætter Playing=1,
+Facing=&quot;S&quot;, Health=100, Stamina=100 og de øvrige startværdier.
+
+Lav fire events med betingelsen Playing=1 plus tast holdt:
+W → simulate Up control, S → Down, A → Left, D → Right i Top-down movement.
+Tilføj eventuelt piletaster som alternative betingelser. De præcise action-navne
+findes under Player → Top-down movement → controls.
+
+Gem Player-position i PrevX/PrevY ved slutningen af hvert frame. Efter movement
+sammenlignes den faktiske nye position med de gemte værdier. Hvis positionen
+ændres, vælg Walk_ + Facing. Ellers Idle_ + Facing. Behold Facing ved stop.
+Opdatér Facing fra retningen; ved diagonal input vinder lodret input i denne demo.
+Skift kun animation, når navnet faktisk ændres, så den ikke genstartes hvert frame.
+
+Ordnen for behavior-opdatering og dine events skal kontrolleres i Preview: en
+blokeret Player skal vise idle. Brug eventuelt behaviorens moving-condition
+sammen med kontrollen af faktisk position efter obstacle-separation.
+
+Test: fire retninger, diagonaler uden højere hastighed, stop, væg/sten, restart.
+
+## 4. Compy og jagt
+
+Lav Sprite Compy med assets/enemy/compy_idle_S_000.png fra den eksisterende demo.
+Den bruger origin 32,54. Den nye alternative Compy i assets/enemies bruger en
+anden tegning og origin 32,48; bland ikke disse origins.
+
+Giv Compy objektvariabler HP=1, TouchCooldown=0, BleedRemaining=0, BleedTick=0.
+Lav en Enemy-gruppe, så senere arter kan deles om combat-events.
+Placér én Compy. Brug en instant force mod Player med hastighed 44 som første
+AI-placeholder. På den unge Parasaurolophus kan kraften i stedet pege væk fra
+Player, når spilleren er tæt på. Brug fast collision; stød ikke halen mod alt.
+
+Spawn først efter 3.2 sekunder og højst otte fjender. Brug en scenevariabel
+SpawnClock += TimeDelta() kun mens Playing=1. Ved spawn nulstilles den. Dette
+pauser spawn sikkert under level-up uden at lade en real-time timer løbe videre.
+Start med fire faste kantpunkter, fx (106,220), (852,272), (580,110), (378,554).
+
+## 5. Bite, health og mad
+
+Space holdt/trykket plus Playing=1 plus BiteCooldown&lt;=0 giver ét bite.
+Sæt BiteCooldown=0.55. For each Enemy inden for 74 pixels fra Player: HP -= 1.
+Dette er en cirkulær demo-hitbox. Retningsbestemt bite kan komme senere.
+Opret BiteSlash på Player-position; afspil de fire VFX-frames ved 0.1 sekunder
+og slet objektet, når animationen er færdig. VFX er separat fra damage.
+
+Når Enemy.HP&lt;=0: giv XP, opret Meat på fjendens position, og slet Enemy i samme
+event. Brug For each Enemy, så hver død tælles én gang. Kollision med Meat:
+Health = min(100, Health+14), slet Meat. Hold kode/events for XP og mad adskilt,
+så mad ikke utilsigtet giver XP flere gange.
+
+Ved overlap med en levende fjende og dens TouchCooldown&lt;=0: Health -= 12,
+TouchCooldown=1.2. Regn cooldown ned med TimeDelta() kun under Playing=1.
+
+## 6. XP og tre mutationer
+
+Compy giver 4 XP. Første NextXP er 8. Når XP&gt;=NextXP og Playing=1 og Health&gt;0:
+XP -= NextXP, Level += 1, NextXP += 4, Playing=0, vis tre knapper og overlay.
+
+UI lægges på eget lag. Brug Text til navne og forklaring, Sprite til de tre ikoner
+assets/ui/serrated_teeth.png, powerful_legs.png, insulating_feathers.png.
+Paneler, knapper og barer kan laves som enkle farvede rektangler; ingen store
+panelillustrationer behøves for at teste gameplay.
+
+Knappen/tast 1 øger TeethStacks; 2 øger LegsStacks; 3 øger FeatherStacks.
+Hvert valg skjuler overlay og sætter Playing=1. Gennemfør kun valget, når
+Playing=0 og level-up er åben, så et holdt input ikke vælger flere gange.
+Hvis opsparet XP stadig er over næste tærskel, åbn næste level-up bagefter.
+
+Mutationernes tal står i balance.json og EVENT_OPSKRIFTER.md. Lad AL gameplay
+have Playing=1 som overordnet betingelse: bevægelse, AI, spawn, cooldowns,
+bleed, stamina, event-klokker og damage. UI-input skal fungere under pausen.
+Sæt bevægelseshastighed/kraft til nul eller deaktivér bevægelsesbehavior under
+pausen, så tidligere kræfter og acceleration ikke fortsætter af sig selv.
+
+## 7. Death, restart og DNA
+
+Health&lt;=0 sætter Playing=0 og RunEnded=1. Vis Run ended og en restart-knap.
+Gem/tilføj DNA én gang med Awarded=1 som vagt. Reset alle run-variabler ved R
+eller ved genstart af scenen, men bevar global DNA.
+
+Start med DNA som global tæller. Tilføj lokal Storage-læsning ved spilstart og
+Storage-skrivning ved run-slut bagefter. En global variabel alene gemmer ikke
+mellem lukninger. Test lagring ved at lukke og åbne spillet igen.
+
+## 8. Pounce og UI
+
+Shift + Playing=1 + Stamina&gt;=30 + PounceCooldown&lt;=0: Stamina -=30,
+PounceRemaining=0.25, PounceCooldown=2. I de 0.25 sekunder er bevægelseshastigheden
+2.3 gange normal hastighed. Regeneration: 18×(1+0.2×FeatherStacks) per sekund,
+med maksimum 100. Dette er en hastighedsburst; ingen hop-fysik er implementeret.
+
+Health-/XP-/staminabarer er separate baggrundsrektangler og farvede fill-objekter.
+Sæt fill-bredde fra den aktuelle værdi, fx 190×Health/100. Lad UI-laget følge
+skærmen. Brug native pixels og heltalsplacering; undgå jævnt zoom som slører art.
+
+## Officielle referencer, hvis internet er tilgængeligt
+
+- Top-down basics: https://wiki.gdevelop.io/gdevelop5/tutorials/topdown-shooter/
+- Egen control/rotation: https://wiki.gdevelop.io/gdevelop5/tutorials/roadrider/
+- Sprite animationer: https://wiki.gdevelop.io/gdevelop5/tutorials/endless-runner/
+- Spawn-ur: https://wiki.gdevelop.io/gdevelop5/tutorials/geometry-monster/9-adding-bombs/
+
+Guiden bruger egne spiltal og event-opskrifter; linksene understøtter de relevante
+GDevelop-funktioner. Browserdemoens testresultat er ikke en GDevelop-runtime-test.
+</pre></section><section id="2"><pre># Event-opskrifter — logik at bygge manuelt
+
+Navnene nedenfor er vores projektkonventioner. Formlerne er pseudokode; vælg
+GDevelops variable-actions og expression editor. Kopiér ikke hele tabellen ind
+som et JavaScript-event eller project.json.
+
+## Scenevariabler ved run-start
+
+| Navn | Startværdi | Formål |
+| --- | --- | --- |
+| Playing | 1 | Alle gameplay-events kræver 1 |
+| RunEnded | 0 | Død/vundet |
+| Awarded | 0 | DNA må kun gives én gang |
+| Health / MaxHealth | 100 / 100 | Liv |
+| Stamina / MaxStamina | 100 / 100 | Pounce |
+| XP / NextXP / Level | 0 / 8 / 1 | Level-system |
+| Hunts | 0 | Antal dræbte fjender |
+| RunTime / SpawnClock | 0 / 0 | Pausérbare ure |
+| BiteCooldown | 0 | Tid indtil næste bite |
+| PounceCooldown / PounceRemaining | 0 / 0 | Burst |
+| TeethStacks / LegsStacks / FeatherStacks | 0 / 0 / 0 | Mutationer |
+| Facing | S | Sidste retning som tekst |
+| PrevX / PrevY | Player-position | Faktisk bevægelse |
+| LevelUpOpen | 0 | Skeln level-up fra death-pause |
+
+Global DNA starter på 0 og kan senere læses fra Storage. Fjenders objektvariabler
+er HP, TouchCooldown, BleedRemaining, BleedTick og XPReward.
+
+## Event-rækkefølge og actions
+
+1. Scene-start: sæt startværdier, skjul GameOver/LevelUp UI, placér Player.
+2. Playing=1: regn gameplay-ure og cooldowns med TimeDelta(). Nul-gulv for cooldowns.
+3. Playing=1: WASD-controls, facing, pounce og movement; håndtér obstacle-kollision.
+4. Playing=1: spawn og fjende-AI; fjendernes levende status skal kontrolleres.
+5. Playing=1 + Space + BiteCooldown&lt;=0: cooldown=0.55, HP-=1 for fjender i radius.
+6. Bite med TeethStacks&gt;0: BleedRemaining=2; BleedTick=0 på ramte fjender.
+7. For each levende blødende Enemy under Playing=1: tick +=dt, remaining -=dt;
+   hver 0.5 sekund HP -=0.5×TeethStacks. Reducér tick med 0.5 ved udløsning.
+8. For each Enemy med HP&lt;=0: Hunts+=1; XP+=XPReward; spawn Meat; slet Enemy.
+9. For each levende Enemy der overlapper Player og TouchCooldown&lt;=0:
+   Health -= TouchDamage; cooldown=1.2. Parasaurolophus giver ikke touch-damage.
+10. Player overlapper Meat: heal maks 100; slet Meat. Spisning må ikke oprette mad.
+11. Health&lt;=0 og RunEnded=0: afslut, stop movement, tildel DNA én gang.
+12. Health&gt;0 + XP&gt;=NextXP + Playing=1: XP-=NextXP; Level+=1; NextXP+=4;
+    Playing=0; LevelUpOpen=1; stop behaviors/kræfter; vis overlay.
+13. LevelUpOpen=1 + klik/tastvalg: øg netop én stack; luk UI; Playing=1.
+14. RunEnded=1 + R eller restart-knap: genstart Game-scenen; bevar global DNA.
+15. Opdatér HUD og gem PrevX/PrevY. Vis kun passende idle/walk state.
+
+GDevelop evaluerer events løbende. Brug state-vagter og/eller Trigger once, hvor
+en engangshændelse ellers kan gentages. Sletning af en død Enemy i samme event
+forhindrer gentaget XP. Awarded forhindrer gentaget DNA. Genstart ikke walk hver frame.
+
+## Mutationer
+
+- Serrated Teeth: hvert bite sætter to sekunders bleed. Hver halve sekund giver
+  bleed 0.5×TeethStacks skade. Ny bite fornyer varigheden.
+- Powerful Legs: speed =160×(1+0.15×LegsStacks). To stacks er +30%, ikke +32.25%.
+- Insulating Feathers: regen =18×(1+0.2×FeatherStacks) stamina/sekund.
+- Pounce: speed×2.3 i 0.25 sekunder, pris 30 stamina, cooldown to sekunder.
+
+Faste tre valg bruges i prototypen. En senere mutationspulje skal vælge tre
+forskellige tilgængelige mutationer, inden UI vises, ikke randomisere hvert frame.
+
+## Lokalt DNA og rewards
+
+RunDNA = floor(Hunts/2)+floor(RunTime/15). Ved sejr lægges 10 til.
+DNA += RunDNA én gang. I browserdemoen er sejr efter 60 sekunder, og lageret er
+localStorage. I GDevelop bruger du global DNA plus Storage, ikke browser-JS fra demoen.
+DNA er kun en tæller her. Unlocks skal bygges separat og må ikke forveksles med
+stacks, der nulstilles ved hvert run.
+
+## Senere events — konkrete simple prototyper
+
+- Carcass: placér Meat ved en fossil-prop. Når spilleren nærmer sig, spawn to
+  Carnotaurus efter tre gameplay-sekunder. Eventet markeres Used=1.
+- Nest: brug nest_eggs. Ved interaktion og Used=0: tildel bonus-XP eller et ekstra
+  mutationvalg; skift til nest_empty. Forbrug eventet én gang.
+- Stampede: brug tre Parasaurolophus-stillbilleder, der bevæger sig mod samme
+  kantpunkt. De er midlertidige hazards, ikke færdige løbeanimationer.
+- Meteor Shower: tegn en advarselscirkel først. Vent ét gameplay-sekund, opret
+  meteor_impact, lav én damage-check og slet advarslen. Warning og impact er adskilt.
+- Alpha: spawn én Carnotaurus med øget HP og et synligt UI-navn; ikke tilfældig
+  ukommunikeret ekstra skade.
+- Boss: brug Deinosuchus eller T. rex-stillbillede som størrelse-/HP-placeholder.
+  Start med én tydelig telegraphed charge eller bite, før flere angreb bygges.
+- Escape: escape-ikon markerer en zone. Ved extinction sættes en nedtælling;
+  overlap med zonen før nul giver sejr. Ingen af disse event/boss-systemer er koblet
+  på browserdemoen endnu.
+
+## Tjekliste før du går videre
+
+- Samme diagonal og lige hastighed; ingen ekstra rotation af tegnede sprites.
+- Facing bliver stående på stop; blokeret movement viser idle.
+- Ét bite kan ramme flere fjender, men hver død giver kun én belønning.
+- Cooldowns, AI, bleed, spawn og stamina stopper under level-up.
+- Valg med 1/2/3 gælder kun under overlay; én handling giver én mutation.
+- Restart nulstiller run-statistik/stacks og lukker UI; DNA bevares.
+- Health stopper ved max, stamina stopper ved max, cooldowns stopper ved nul.
+- Observer alle action-poser og tiles i rigtig spilstørrelse før de bruges bredt.
+</pre></section><section id="3"><pre># Test og fejlfinding
+
+## De kontroller der er gennemført
+
+PNG-kontrollen: 104 filer, dimensioner, RGBA, binary alpha, transparent RGB,
+32-farvepalette og objekt-padding. Se validation_report.json.
+
+Browserdemoen testes i Chrome fra lokale filer. Kardinal-testen dækker alle
+fire retninger, stop, blockage, loop-overgang og disabled smoothing.
+Progression-testen dækker hunt XP, level-up pause, keyboard-valg, stacks,
+hastighed, regeneration, pounce, bleed, healing, death-DNA én gang, reload-
+persistens, sejrbonus og restart. Se de medfølgende testrapporter.
+
+De tests er ikke en GDevelop-runtime-test. Kunst og animationskontinuitet skal
+vurderes visuelt. Bosses og events er endnu kun tegninger og opskrifter.
+
+## Hvis noget driller på arbejdscomputeren
+
+- Ingen billeder: pak ZIP-filen helt ud; hold assets ved siden af demo.html.
+- Intet bevæger sig: klik i spilet; afslut et åbent mutationvalg med 1/2/3.
+- Browser vil ikke åbne lokale filer: brug dens Open file/Ctrl+O, eller flyt
+  den udpakkede mappe til en almindelig lokal mappe. Browserpolitik kan variere.
+- En MD-guide åbner som download: læs GUIDE.html, som indeholder samme lokale tekst.
+- GDevelop-dino glider/skifter størrelse: kontrollér origins på hvert frame,
+  canvas 128×128 og at du bruger assets/player frem for action-pose-studierne.
+- Walk står på frame 0: skift ikke samme animation ved hvert event/frame.
+- Walk spiller mod en sten: vælg idle ud fra faktisk movement, ikke kun holdt tast.
+- Diagonal er for hurtig: brug Top-down movement/normaliser retningen.
+- Fjender rører sig under level-up: Playing-vagten skal også omfatte behaviors,
+  kræfter og tidligere aktiveret movement, ikke kun spawn-events.
+- Flere levels vælges på ét tryk: UI skal kræve LevelUpOpen og lukke efter ét valg.
+- Ingen XP: For each Enemy med HP&lt;=0 skal tilføje XP før Enemy slettes.
+- Gentaget XP/DNA: slet døde Enemy i samme event; brug Awarded til DNA.
+- Lager nulstillet: browserens lokale data kan være væk/afvist. Core-loop fungerer
+  uden lagring. I GDevelop må Storage implementeres og testes separat.
+- Sløret art: filtering fra; native canvas; integer display scale og positioner.
+
+## Lokal validering, hvis Python er tilgængeligt
+
+Fra pakkens mappe: python tools/validate_kit.py. Det kræver Pillow, men ikke NumPy.
+Python er ikke nødvendigt for at spille demo eller åbne katalog/guide.
+
+## Før nye serier laves
+
+Fastlås et visuelt master-frame, hip-pivot og palette. Tegn de seks poses som
+kontrollerede ændringer af samme krop. Undgå at skjule wobble ved høj afspilnings-
+hastighed. Kontrollér hele serien ved 1× og 4× på både lys og mørk baggrund.
+Lad næste art få sit eget læsbare silhouette- og størrelsestjek før masseproduktion.
+</pre></section><section id="4"><pre># PRIMAL RUN — prototype-kit sprite-regel
+
+Følg de medfølgende v1/v2-referencefiler. Bevar alle tidligere pakker.
+Dette kit udvider den faste palette fra 24 til 32 farver med otte fælles
+UI/VFX-accenter. De oprindelige farver ændres ikke. Ingen asset må bruge farver
+uden for palette.json.
+
+PNG: native RGBA, lossless, alpha 0/255, transparent RGB=0. Fritstående objekter
+har mindst to pixels luft. Terræn er 32×32 og opaque. Nearest-neighbor ved
+eksport/skalering; heltalsplacering; ingen smoothed rotation.
+
+Manifestet fastlægger størrelse, source-crop, origin og prototype-status.
+Animationer/pose-studier har faste canvasser. Gamle walk-origins bevares:
+S64,72; N64,56; E68,64; W60,64. Collision må ikke følge haler/animationsomrids.
+
+Walk: seks frames, 8fps. North er den aftalte prototype-drejning af South,
+inklusive drejet lys. Denne undtagelse skal løses før produktionsgodkendelse.
+Nye fjender eksporteres kun som South-stillbilleder med overhead-perspektiv.
+Sideprofiler og forkert vendte celler fra enemy-kildearket er fravalgt.
+
+Action-tegninger er pose-studier. Der er variation i kropsdetaljer, skala og
+anatomisk registrering mod walk. De er ikke godkendte animationer. Brug eventuelt
+en enkelt bite/hurt/corpse-pose, indtil serien er gennemgået i spillet.
+VFX er fire non-looping prototypeframes ved 10fps; tjek effektens størrelse i spillet.
+UI-ikoner er 32×32; barernes fill og tekst bygges som separate funktionelle objekter.
+
+Kildeark bevares. Manuelt gennemgåede cropgrænser og udskillelse af nabofragmenter
+bruges ved eksport. Stillbilleder kan beskæres omkring deres isolerede omrids,
+men walk/action-frames må ikke automatisk recentreres efter bounding box.
+
+Vurdér farver, anatomi, skala, silhuet, fixed pivot, frame-overgange og repeat-tiles
+på lys og mørk baggrund. Tekniske kontroller er ikke en visuel godkendelse.
+Browser-tests dækker kun browserdemoen; GDevelop-runtime er IKKE testet.
+Alle assets forbliver prototype_static / production_approved=false.
+</pre></section>

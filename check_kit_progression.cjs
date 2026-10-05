@@ -1,0 +1,36 @@
+const {chromium, browserOptions}=require('./tools/browser.cjs');
+const path=require('path'),fs=require('fs'),{pathToFileURL}=require('url');let browser;
+(async()=>{
+ browser=await chromium.launch(browserOptions());
+ const page=await browser.newPage({viewport:{width:1080,height:950}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
+ await page.goto(pathToFileURL(path.join(__dirname,'PRIMAL_RUN_Prototype_Kit/demo.html')).href);
+ await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('Idle S'));
+ await page.evaluate(()=>{let s=primalDemo.getState();s.enemies=[];s.food=[];s.player={x:480,y:300};s.cooldown=0;s.enemies=[{x:490,y:300,hp:1,touch:0},{x:500,y:300,hp:1,touch:0}];});
+ await page.keyboard.press('Space');await page.waitForFunction(()=>primalDemo.getState().paused);
+ if(!await page.locator('#choices').isVisible())throw Error('Level-up choices missing');
+ const paused=await page.evaluate(()=>{const a=primalDemo,s=a.getState(),t=s.time,x=s.player.x,h=s.health;a.keys.add('KeyD');a.step(2);return s.time===t&&s.player.x===x&&s.health===h&&s.level===2&&s.hunts===2;});
+ if(!paused)throw Error('World did not pause or hunt XP wrong');
+ await page.screenshot({path:path.join(__dirname,'PRIMAL_RUN_Prototype_Kit/previews/mutation_demo.png')});
+ await page.keyboard.press('Digit2');
+ const results=await page.evaluate(()=>{
+  const a=primalDemo,s=a.getState(),check=(v,m)=>{if(!v)throw Error(m);},r=[];
+  check(!s.paused&&s.mutations.legs===1,'Selection failed');r.push('hunt XP triggers three-choice pause','pause freezes time/movement/damage','keyboard selection resumes');
+  s.player={x:480,y:300};a.keys.clear();a.keys.add('KeyD');a.step(.1);check(Math.abs(s.player.x-498.4)<.001,'Speed mutation wrong');a.keys.clear();r.push('legs +15 percent speed');
+  a.gainXP(s.nextXP-s.xp);a.chooseMutation('legs');check(s.mutations.legs===2,'Stack failed');r.push('mutation stacks');
+  a.gainXP(s.nextXP-s.xp);a.chooseMutation('feathers');s.stamina=20;a.step(.1);check(Math.abs(s.stamina-22.16)<.001,'Regeneration mutation wrong');r.push('feathers +20 percent regeneration');
+  s.player={x:480,y:300};s.stamina=100;s.pounceCooldown=0;a.keys.add('KeyD');a.keys.add('ShiftLeft');a.step(.1);check(Math.abs(s.player.x-(480+160*1.3*2.3*.1))<.001&&s.stamina===70,'Pounce failed');a.keys.clear();r.push('stamina pounce and boost');
+  a.gainXP(s.nextXP-s.xp);a.chooseMutation('teeth');s.enemies=[{x:s.player.x+10,y:s.player.y,hp:3,touch:1,kind:'carnotaurus',bleed:0,bleedTick:0}];s.cooldown=0;s.biteRequested=true;a.step(.01);check(s.enemies[0].hp===2&&s.enemies[0].bleed>0,'Bite bleed absent');a.step(.5);check(s.enemies[0].hp===1.5,'Bleed damage wrong');r.push('teeth adds bleed damage');
+  s.enemies=[];s.health=30;s.food=[{...s.player}];a.step(0);check(s.health===44,'Food healing failed');r.push('food heals');
+  const dna=a.getDNA();s.health=0;a.step(0);check(s.ended&&s.awarded&&a.getDNA()>dna,'Death DNA failed');const after=a.getDNA();a.step(1);check(a.getDNA()===after,'DNA awarded twice');r.push('death DNA once');return r;
+ });
+ const dna=await page.evaluate(()=>primalDemo.getDNA());
+ await page.reload();await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('Idle S'));
+ if(await page.evaluate(()=>primalDemo.getDNA())!==dna)throw Error('DNA persistence failed');results.push('DNA survives reload');
+ await page.evaluate(()=>{let s=primalDemo.getState();s.enemies=[];s.time=59.99;s.health=100;primalDemo.step(.02);});
+ if(!await page.evaluate(()=>primalDemo.getState().ended&&primalDemo.getState().runDNA>=10))throw Error('Victory bonus failed');results.push('60-second victory DNA bonus');
+ await page.keyboard.press('KeyR');
+ if(!await page.evaluate(()=>{let s=primalDemo.getState();return !s.ended&&!s.paused&&s.level===1&&s.health===100&&s.mutations.legs===0;}))throw Error('Restart failed');results.push('restart clears run upgrades');
+ await page.screenshot({path:path.join(__dirname,'PRIMAL_RUN_Prototype_Kit/previews/gameplay_demo.png')});
+ if(errors.length)throw Error(errors.join(';'));
+ const report={result:'PASS',engine:'Chrome offline browser prototype; GDevelop NOT RUN',checks:results};fs.writeFileSync(path.join(__dirname,'PRIMAL_RUN_Prototype_Kit/progression_test_report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));await browser.close();
+})().catch(async e=>{console.error(e);if(browser)await browser.close();process.exitCode=1;});

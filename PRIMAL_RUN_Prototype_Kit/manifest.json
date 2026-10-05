@@ -1,0 +1,2357 @@
+[
+  {
+    "file": "assets/enemy/compy_idle_S_000.png",
+    "size": [
+      64,
+      96
+    ],
+    "origin": [
+      32,
+      54
+    ],
+    "body_anchor": [
+      32,
+      54
+    ],
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/compy.png",
+    "export": "aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+  },
+  {
+    "file": "assets/environment/grass.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "body_anchor": null,
+    "status": "prototype_static",
+    "direction": null,
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/grass.png",
+    "export": "aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+  },
+  {
+    "file": "assets/environment/fern.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      36
+    ],
+    "body_anchor": null,
+    "status": "prototype_static",
+    "direction": null,
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/fern.png",
+    "export": "aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+  },
+  {
+    "file": "assets/environment/rock.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      36
+    ],
+    "body_anchor": null,
+    "status": "prototype_static",
+    "direction": null,
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/rock.png",
+    "export": "aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+  },
+  {
+    "file": "assets/pickups/meat.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "status": "prototype_static",
+    "direction": null,
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/meat.png",
+    "export": "aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+  },
+  {
+    "file": "assets/player/utahraptor_idle_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "S",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "S",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "S",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "S",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "S",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_004.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "S",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_005.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "S",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_idle_N_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "N",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "user-requested lossless 180-degree rotation of South; lighting rotates too"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_N_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "N",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "user-requested lossless 180-degree rotation of South; lighting rotates too"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_N_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "N",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "user-requested lossless 180-degree rotation of South; lighting rotates too"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_N_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "N",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "user-requested lossless 180-degree rotation of South; lighting rotates too"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_N_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "N",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "user-requested lossless 180-degree rotation of South; lighting rotates too"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_N_004.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "N",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "user-requested lossless 180-degree rotation of South; lighting rotates too"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_N_005.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "N",
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "user-requested lossless 180-degree rotation of South; lighting rotates too"
+  },
+  {
+    "file": "assets/player/utahraptor_idle_E_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "E",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_E_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "E",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_E_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "E",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_E_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "E",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_E_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "E",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_E_004.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "E",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_E_005.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "E",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_idle_W_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "W",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_W_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "W",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_W_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "W",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_W_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "W",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_W_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "W",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_W_004.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "W",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_W_005.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "direction": "W",
+    "source": "Source_Generated/utahraptor_walk_E_W_sheet.png",
+    "export": "whole-pose nearest-neighbor palette export"
+  },
+  {
+    "file": "assets/enemies/compy_idle_S_000.png",
+    "size": [
+      64,
+      96
+    ],
+    "origin": [
+      32,
+      48
+    ],
+    "body_anchor": [
+      32,
+      48
+    ],
+    "source": "Source_Generated/enemies_sheet.png",
+    "source_crop": [
+      0,
+      0,
+      314,
+      267
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review."
+  },
+  {
+    "file": "assets/enemies/parasaurolophus_idle_S_000.png",
+    "size": [
+      96,
+      128
+    ],
+    "origin": [
+      48,
+      64
+    ],
+    "body_anchor": [
+      48,
+      64
+    ],
+    "source": "Source_Generated/enemies_sheet.png",
+    "source_crop": [
+      0,
+      267,
+      314,
+      565
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review."
+  },
+  {
+    "file": "assets/enemies/carnotaurus_idle_S_000.png",
+    "size": [
+      96,
+      128
+    ],
+    "origin": [
+      48,
+      64
+    ],
+    "body_anchor": [
+      48,
+      64
+    ],
+    "source": "Source_Generated/enemies_sheet.png",
+    "source_crop": [
+      0,
+      565,
+      314,
+      855
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review."
+  },
+  {
+    "file": "assets/enemies/deinosuchus_idle_S_000.png",
+    "size": [
+      192,
+      192
+    ],
+    "origin": [
+      96,
+      96
+    ],
+    "body_anchor": [
+      96,
+      96
+    ],
+    "source": "Source_Generated/enemies_sheet.png",
+    "source_crop": [
+      0,
+      855,
+      314,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review."
+  },
+  {
+    "file": "assets/enemies/tyrannosaurus_idle_S_000.png",
+    "size": [
+      192,
+      192
+    ],
+    "origin": [
+      96,
+      96
+    ],
+    "body_anchor": [
+      96,
+      96
+    ],
+    "source": "Source_Generated/enemies_sheet.png",
+    "source_crop": [
+      314,
+      855,
+      627,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review."
+  },
+  {
+    "file": "assets/enemies/triceratops_idle_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "source": "Source_Generated/enemies_sheet.png",
+    "source_crop": [
+      627,
+      855,
+      940,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review."
+  },
+  {
+    "file": "assets/enemies/ankylosaurus_idle_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "source": "Source_Generated/enemies_sheet.png",
+    "source_crop": [
+      940,
+      855,
+      1254,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Overhead South static prototype. No walk/run/death animation. Other source directions failed perspective review."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_bite_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      0,
+      0,
+      314,
+      314
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_bite_S_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      314,
+      0,
+      627,
+      314
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_bite_S_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      627,
+      0,
+      940,
+      314
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_bite_S_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      940,
+      0,
+      1254,
+      314
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_pounce_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      0,
+      314,
+      314,
+      627
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_pounce_S_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      314,
+      314,
+      627,
+      627
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_pounce_S_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      627,
+      314,
+      940,
+      627
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_pounce_S_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      940,
+      314,
+      1254,
+      627
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_death_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      0,
+      627,
+      314,
+      940
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_death_S_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      314,
+      627,
+      627,
+      940
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_death_S_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      627,
+      627,
+      940,
+      940
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_death_S_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      940,
+      627,
+      1254,
+      940
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_hurt_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      0,
+      940,
+      314,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_rest_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      314,
+      940,
+      627,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_juvenile_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      627,
+      940,
+      940,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/player_actions/utahraptor_fossil_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "source": "Source_Generated/actions_sheet.png",
+    "source_crop": [
+      940,
+      940,
+      1254,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "South pose study. Body texture, scale and hip registration differ from walk. Use as optional rough placeholder; not a verified animation."
+  },
+  {
+    "file": "assets/props/fern_large.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      0,
+      0,
+      314,
+      314
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/boulder_large.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      314,
+      0,
+      627,
+      314
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/dead_tree.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      627,
+      0,
+      940,
+      314
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/fallen_log.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      940,
+      0,
+      1254,
+      314
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/tree_canopy.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      0,
+      314,
+      314,
+      627
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/flower_bush.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      314,
+      314,
+      627,
+      627
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/nest_eggs.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      627,
+      314,
+      940,
+      627
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/nest_empty.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      940,
+      314,
+      1254,
+      627
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/pickups/meat_large.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      0,
+      627,
+      314,
+      940
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/pickups/water_pickup.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      314,
+      627,
+      627,
+      940
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/pickups/dna_pickup.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      627,
+      627,
+      940,
+      940
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/pickups/egg_pickup.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      940,
+      627,
+      1254,
+      940
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/skull.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      0,
+      940,
+      314,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/ribcage.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      314,
+      940,
+      627,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/lava_rock.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      627,
+      940,
+      940,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/props/meteorite.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/props_sheet.png",
+    "source_crop": [
+      940,
+      940,
+      1254,
+      1254
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static overhead/symbol prototype. Props use a conservative center pivot; adjust collision separately."
+  },
+  {
+    "file": "assets/effects/bite_slash_000.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/bite_slash_001.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      256,
+      0,
+      512,
+      256
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/bite_slash_002.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      512,
+      0,
+      768,
+      256
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/bite_slash_003.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      768,
+      0,
+      1024,
+      256
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/dust_000.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      0,
+      301,
+      256,
+      512
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/dust_001.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      256,
+      301,
+      512,
+      512
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/dust_002.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      512,
+      301,
+      768,
+      512
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/dust_003.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      768,
+      301,
+      1024,
+      512
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/meteor_impact_000.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      0,
+      512,
+      256,
+      768
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/meteor_impact_001.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      256,
+      512,
+      512,
+      768
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/meteor_impact_002.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      512,
+      512,
+      768,
+      768
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/effects/meteor_impact_003.png",
+    "size": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      48
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      768,
+      512,
+      1024,
+      768
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Four-frame non-looping VFX prototype; 10 fps; centered pivot. Verify against gameplay scale."
+  },
+  {
+    "file": "assets/ui/health.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      0,
+      768,
+      256,
+      1024
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/stamina.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      256,
+      768,
+      512,
+      1024
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/thirst.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      512,
+      768,
+      768,
+      1024
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/hunger.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      768,
+      768,
+      1024,
+      1024
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/serrated_teeth.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      0,
+      1024,
+      256,
+      1280
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/powerful_legs.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      256,
+      1024,
+      512,
+      1280
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/insulating_feathers.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      512,
+      1024,
+      768,
+      1280
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/dna.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      768,
+      1024,
+      1024,
+      1280
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/xp.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      0,
+      1280,
+      256,
+      1536
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/bone.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      256,
+      1280,
+      512,
+      1536
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/armor.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      512,
+      1280,
+      768,
+      1536
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/ui/escape.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/effects_sheet.png",
+    "source_crop": [
+      768,
+      1280,
+      1024,
+      1536
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Static UI icon; fill bars and text are separate functional objects."
+  },
+  {
+    "file": "assets/tiles/grass_alt.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/tiles_sheet.png",
+    "source_crop": [
+      0,
+      0,
+      444,
+      444
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified."
+  },
+  {
+    "file": "assets/tiles/dirt.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/tiles_sheet.png",
+    "source_crop": [
+      444,
+      0,
+      887,
+      444
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified."
+  },
+  {
+    "file": "assets/tiles/sand.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/tiles_sheet.png",
+    "source_crop": [
+      887,
+      0,
+      1330,
+      444
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified."
+  },
+  {
+    "file": "assets/tiles/gravel.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/tiles_sheet.png",
+    "source_crop": [
+      1330,
+      0,
+      1774,
+      444
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified."
+  },
+  {
+    "file": "assets/tiles/forest_floor.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/tiles_sheet.png",
+    "source_crop": [
+      0,
+      444,
+      444,
+      887
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified."
+  },
+  {
+    "file": "assets/tiles/shallow_water.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/tiles_sheet.png",
+    "source_crop": [
+      444,
+      444,
+      887,
+      887
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified."
+  },
+  {
+    "file": "assets/tiles/deep_water.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/tiles_sheet.png",
+    "source_crop": [
+      887,
+      444,
+      1330,
+      887
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified."
+  },
+  {
+    "file": "assets/tiles/volcanic.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "body_anchor": null,
+    "source": "Source_Generated/tiles_sheet.png",
+    "source_crop": [
+      1330,
+      444,
+      1774,
+      887
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false,
+    "note": "Opaque terrain prototype. Tile-repeat preview included; seamless edges and biome transitions not certified."
+  }
+]

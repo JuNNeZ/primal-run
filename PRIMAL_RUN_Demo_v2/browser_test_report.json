@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "engine": "headless Chromium browser demo, not GDevelop",
+  "checks": [
+    "six sprites loaded",
+    "keyboard movement",
+    "bite removes nearby enemy",
+    "food heals",
+    "death",
+    "restart",
+    "rock collision",
+    "no page errors"
+  ]
+}

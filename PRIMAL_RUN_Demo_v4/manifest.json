@@ -1,0 +1,254 @@
+[
+  {
+    "file": "assets/player/utahraptor_idle_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole pose; nearest-neighbor sampling; fixed palette and binary alpha"
+  },
+  {
+    "file": "assets/enemy/compy_idle_S_000.png",
+    "size": [
+      64,
+      96
+    ],
+    "origin": [
+      32,
+      54
+    ],
+    "body_anchor": [
+      32,
+      54
+    ],
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/compy.png",
+    "export": "aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+  },
+  {
+    "file": "assets/environment/grass.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "body_anchor": null,
+    "status": "prototype_static",
+    "direction": null,
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/grass.png",
+    "export": "aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+  },
+  {
+    "file": "assets/environment/fern.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      36
+    ],
+    "body_anchor": null,
+    "status": "prototype_static",
+    "direction": null,
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/fern.png",
+    "export": "aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+  },
+  {
+    "file": "assets/environment/rock.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      36
+    ],
+    "body_anchor": null,
+    "status": "prototype_static",
+    "direction": null,
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/rock.png",
+    "export": "aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+  },
+  {
+    "file": "assets/pickups/meat.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "body_anchor": null,
+    "status": "prototype_static",
+    "direction": null,
+    "frame_count": 1,
+    "animation_ready": false,
+    "source": "Source_Generated/meat.png",
+    "export": "aspect-preserving nearest-neighbor sampling, fixed 24-color palette, binary alpha"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "direction": "S",
+    "animation": "Walk_S",
+    "frame": 0,
+    "frame_count": 6,
+    "animation_ready": false,
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole pose; nearest-neighbor sampling; fixed palette and binary alpha"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "direction": "S",
+    "animation": "Walk_S",
+    "frame": 1,
+    "frame_count": 6,
+    "animation_ready": false,
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole pose; nearest-neighbor sampling; fixed palette and binary alpha"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "direction": "S",
+    "animation": "Walk_S",
+    "frame": 2,
+    "frame_count": 6,
+    "animation_ready": false,
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole pose; nearest-neighbor sampling; fixed palette and binary alpha"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "direction": "S",
+    "animation": "Walk_S",
+    "frame": 3,
+    "frame_count": 6,
+    "animation_ready": false,
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole pose; nearest-neighbor sampling; fixed palette and binary alpha"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_004.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "direction": "S",
+    "animation": "Walk_S",
+    "frame": 4,
+    "frame_count": 6,
+    "animation_ready": false,
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole pose; nearest-neighbor sampling; fixed palette and binary alpha"
+  },
+  {
+    "file": "assets/player/utahraptor_walk_S_005.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "status": "prototype_static",
+    "direction": "S",
+    "animation": "Walk_S",
+    "frame": 5,
+    "frame_count": 6,
+    "animation_ready": false,
+    "source": "Source_Generated/utahraptor_walk_S_sheet.png",
+    "export": "whole pose; nearest-neighbor sampling; fixed palette and binary alpha"
+  }
+]

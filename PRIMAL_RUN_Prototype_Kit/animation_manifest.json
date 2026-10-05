@@ -1,0 +1,244 @@
+{
+  "object": "Player",
+  "canvas": [
+    128,
+    128
+  ],
+  "animations": [
+    {
+      "name": "Idle_S",
+      "frames": [
+        "assets/player/utahraptor_idle_S_000.png"
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "loop": false,
+      "fps": null,
+      "production_approved": false
+    },
+    {
+      "name": "Walk_S",
+      "frames": [
+        "assets/player/utahraptor_walk_S_000.png",
+        "assets/player/utahraptor_walk_S_001.png",
+        "assets/player/utahraptor_walk_S_002.png",
+        "assets/player/utahraptor_walk_S_003.png",
+        "assets/player/utahraptor_walk_S_004.png",
+        "assets/player/utahraptor_walk_S_005.png"
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "loop": true,
+      "fps": 8,
+      "production_approved": false
+    },
+    {
+      "name": "Idle_N",
+      "frames": [
+        "assets/player/utahraptor_idle_N_000.png"
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "loop": false,
+      "fps": null,
+      "production_approved": false
+    },
+    {
+      "name": "Walk_N",
+      "frames": [
+        "assets/player/utahraptor_walk_N_000.png",
+        "assets/player/utahraptor_walk_N_001.png",
+        "assets/player/utahraptor_walk_N_002.png",
+        "assets/player/utahraptor_walk_N_003.png",
+        "assets/player/utahraptor_walk_N_004.png",
+        "assets/player/utahraptor_walk_N_005.png"
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "loop": true,
+      "fps": 8,
+      "production_approved": false
+    },
+    {
+      "name": "Idle_E",
+      "frames": [
+        "assets/player/utahraptor_idle_E_000.png"
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "loop": false,
+      "fps": null,
+      "production_approved": false
+    },
+    {
+      "name": "Walk_E",
+      "frames": [
+        "assets/player/utahraptor_walk_E_000.png",
+        "assets/player/utahraptor_walk_E_001.png",
+        "assets/player/utahraptor_walk_E_002.png",
+        "assets/player/utahraptor_walk_E_003.png",
+        "assets/player/utahraptor_walk_E_004.png",
+        "assets/player/utahraptor_walk_E_005.png"
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "loop": true,
+      "fps": 8,
+      "production_approved": false
+    },
+    {
+      "name": "Idle_W",
+      "frames": [
+        "assets/player/utahraptor_idle_W_000.png"
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "loop": false,
+      "fps": null,
+      "production_approved": false
+    },
+    {
+      "name": "Walk_W",
+      "frames": [
+        "assets/player/utahraptor_walk_W_000.png",
+        "assets/player/utahraptor_walk_W_001.png",
+        "assets/player/utahraptor_walk_W_002.png",
+        "assets/player/utahraptor_walk_W_003.png",
+        "assets/player/utahraptor_walk_W_004.png",
+        "assets/player/utahraptor_walk_W_005.png"
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "loop": true,
+      "fps": 8,
+      "production_approved": false
+    }
+  ],
+  "direction_origins": {
+    "S": [
+      64,
+      72
+    ],
+    "N": [
+      64,
+      56
+    ],
+    "E": [
+      68,
+      64
+    ],
+    "W": [
+      60,
+      64
+    ]
+  },
+  "north_caveat": "Rotated South prototype; lighting rotates. Collision must remain independent of image silhouette.",
+  "GDevelop_runtime": "NOT RUN",
+  "optional_pose_studies": [
+    {
+      "name": "bite_S",
+      "frames": [
+        "assets/player_actions/utahraptor_bite_S_000.png",
+        "assets/player_actions/utahraptor_bite_S_001.png",
+        "assets/player_actions/utahraptor_bite_S_002.png",
+        "assets/player_actions/utahraptor_bite_S_003.png"
+      ],
+      "suggested_fps": 10,
+      "loop": false,
+      "validated_animation": false,
+      "note": "Optional pose study only; not used in browser gameplay."
+    },
+    {
+      "name": "pounce_S",
+      "frames": [
+        "assets/player_actions/utahraptor_pounce_S_000.png",
+        "assets/player_actions/utahraptor_pounce_S_001.png",
+        "assets/player_actions/utahraptor_pounce_S_002.png",
+        "assets/player_actions/utahraptor_pounce_S_003.png"
+      ],
+      "suggested_fps": 8,
+      "loop": false,
+      "validated_animation": false,
+      "note": "Optional pose study only; not used in browser gameplay."
+    },
+    {
+      "name": "death_S",
+      "frames": [
+        "assets/player_actions/utahraptor_death_S_000.png",
+        "assets/player_actions/utahraptor_death_S_001.png",
+        "assets/player_actions/utahraptor_death_S_002.png",
+        "assets/player_actions/utahraptor_death_S_003.png"
+      ],
+      "suggested_fps": 8,
+      "loop": false,
+      "validated_animation": false,
+      "note": "Optional pose study only; not used in browser gameplay."
+    }
+  ],
+  "effects": [
+    {
+      "name": "bite_slash",
+      "frames": [
+        "assets/effects/bite_slash_000.png",
+        "assets/effects/bite_slash_001.png",
+        "assets/effects/bite_slash_002.png",
+        "assets/effects/bite_slash_003.png"
+      ],
+      "fps": 10,
+      "loop": false,
+      "origin": [
+        48,
+        48
+      ],
+      "production_approved": false
+    },
+    {
+      "name": "dust",
+      "frames": [
+        "assets/effects/dust_000.png",
+        "assets/effects/dust_001.png",
+        "assets/effects/dust_002.png",
+        "assets/effects/dust_003.png"
+      ],
+      "fps": 10,
+      "loop": false,
+      "origin": [
+        48,
+        48
+      ],
+      "production_approved": false
+    },
+    {
+      "name": "meteor_impact",
+      "frames": [
+        "assets/effects/meteor_impact_000.png",
+        "assets/effects/meteor_impact_001.png",
+        "assets/effects/meteor_impact_002.png",
+        "assets/effects/meteor_impact_003.png"
+      ],
+      "fps": 10,
+      "loop": false,
+      "origin": [
+        48,
+        48
+      ],
+      "production_approved": false
+    }
+  ]
+}

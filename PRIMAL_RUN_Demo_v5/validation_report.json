@@ -1,0 +1,65 @@
+{
+  "result": "PASS",
+  "asset_count": 33,
+  "checks": [
+    "canvas sizes",
+    "RGBA",
+    "binary alpha",
+    "24-color palette",
+    "padding",
+    "unique frames",
+    "loop seam difference"
+  ],
+  "directions": [
+    {
+      "direction": "S",
+      "pixel_changes_between_frames": [
+        2224,
+        1561,
+        2054,
+        1836,
+        1787,
+        2186
+      ],
+      "loop_seam_within_1_5x_max": true
+    },
+    {
+      "direction": "E",
+      "pixel_changes_between_frames": [
+        1623,
+        1654,
+        2376,
+        1678,
+        1680,
+        2283
+      ],
+      "loop_seam_within_1_5x_max": true
+    },
+    {
+      "direction": "W",
+      "pixel_changes_between_frames": [
+        1346,
+        1818,
+        2015,
+        1583,
+        1763,
+        1529
+      ],
+      "loop_seam_within_1_5x_max": true
+    },
+    {
+      "direction": "N",
+      "pixel_changes_between_frames": [
+        2224,
+        1561,
+        2054,
+        1836,
+        1787,
+        2186
+      ],
+      "loop_seam_within_1_5x_max": true
+    }
+  ],
+  "visual_review": "Prototype; generated markings vary. North lighting is rotated.",
+  "GDevelop_runtime": "NOT RUN"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "primal-run-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PRIMAL RUN offline prototype and GDevelop asset kit",
+  "scripts": {
+    "test": "node check_kit_directions.cjs && node check_kit_progression.cjs && node check_kit_files.cjs",
+    "preview": "python -m http.server 8000",
+    "validate:assets": "python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
+}
