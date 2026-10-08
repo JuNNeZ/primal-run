@@ -1,7 +1,7 @@
 # Foreslåede næste opgraderinger og rettelser
 
-Prioriteret efter hvor meget de forbedrer spiloplevelsen. Dette er forslag,
-ikke funktioner der allerede er implementeret.
+Prioriteret efter hvor meget de forbedrer spiloplevelsen. Punkt 1–8 er nu implementeret i prototypen. Visuel produktionsgodkendelse og
+langvarig spiltest på fysiske mobiler er fortsat åbne.
 
 1. **Finpuds sprites og animationsovergange.** Ensret kropsankre, ben og markeringer
    mellem frames, især når et dyr skifter retning/state. Giv Parasaurolophus og de
@@ -26,5 +26,5 @@ ikke funktioner der allerede er implementeret.
    biome- og spillerframes; mål hukommelse/fps på telefoner. Brug ruminddeling
    til dyrekollision og tegn kun synlige objekter i store områder.
 
-De første to er min anbefaling: pænere, mere sammenhængende bevægelse og terræn,
+Oprindelig anbefaling: pænere, mere sammenhængende bevægelse og terræn,
 som gør jagterne taktisk forskellige, løfter både grafikken og mechanics.

@@ -20,7 +20,7 @@
     constructor(resolve, settings) {
       this.resolve = resolve; this.settings = settings; this.context = null;
       this.intensity = 'menu'; this.beat = 0; this.nextBeat = 0; this.active = new Set(); this.error = null;
-      this.timer = null; this.trackId='menu'; this.healthBand=0; this.ducked=false; this.voices=new Set();this.retiredBuses=new Map();this.transitions=0;
+      this.timer = null; this.trackId='menu'; this.healthBand=0; this.ducked=false; this.voices=new Set();this.retiredBuses=new Map();this.transitions=0;this.ambientStage=0;this.nextCall=0;this.ambientSources=[];
     }
     async unlock() {
       try {
@@ -28,6 +28,14 @@
           const AudioContext = window.AudioContext || window.webkitAudioContext;
           if (!AudioContext) return;
           this.context = new AudioContext(); this.music = this.context.createGain(); this.music.connect(this.context.destination);
+          this.ambient=this.context.createGain();this.ambient.connect(this.context.destination);
+          if(this.context.createBuffer&&this.context.createBiquadFilter){
+            for(let layer=0;layer<2;layer++){
+              const c=this.context,buffer=c.createBuffer(1,c.sampleRate*2,c.sampleRate),data=buffer.getChannelData(0);
+              for(let i=0;i<data.length;i++)data[i]=Math.sin(i*127.1+layer)*Math.cos(i*31.7)*.2;
+              const source=c.createBufferSource(),filter=c.createBiquadFilter(),gain=c.createGain();source.buffer=buffer;source.loop=true;filter.type='lowpass';filter.frequency.value=layer?1400:220;gain.gain.value=.03;source.connect(filter);filter.connect(gain);gain.connect(this.ambient);source.start();this.ambientSources.push({source,filter,gain});
+            }
+          }
           this.effects = this.context.createGain(); this.effects.connect(this.context.destination);
           this.bus=this.context.createGain();this.bus.gain.value=1;this.bus.connect(this.music);
           this.nextBeat = this.context.currentTime + .06;
@@ -40,6 +48,7 @@
     sync() {
       const s = this.settings;
       if (this.context) this.effects.gain.setTargetAtTime(s.master * s.sfx, this.context.currentTime, .01);
+      if(this.context&&this.ambient){const t=this.context.currentTime;this.ambient.gain.setTargetAtTime(s.master*(s.ambient??.7)*(this.ducked?.2:this.intensity==='boss'?.6:1),t,.25);for(let i=0;i<this.ambientSources.length;i++){const a=this.ambientSources[i];a.gain.gain.setTargetAtTime(i===0?[.08,.05,.13,.16][this.ambientStage]:[.02,.14,.01,.025][this.ambientStage],t,1);a.filter.frequency.setTargetAtTime(i===0?[220,300,180,100][this.ambientStage]:[1800,900,1300,350][this.ambientStage],t,1);}}
       if (this.context) this.music.gain.setTargetAtTime(s.master * s.music * (this.ducked ? .28 : 1), this.context.currentTime, .1);
       for (const audio of this.active) audio.volume = s.master * s.sfx;
     }
@@ -53,6 +62,7 @@
       oscillator.onended = () => { this.voices.delete(oscillator);oscillator.disconnect(); gain.disconnect(); };
     }
     setScene({phase='menu',stage=0,boss=false,health=1,maxHealth=1,victory=false}={}) {
+      this.ambientStage=Math.max(0,Math.min(3,stage));
       const gameplay=['playing','paused','mutation','exploration','cleared'].includes(phase);
       const ratio=Math.max(0,Math.min(1,health/Math.max(1,maxHealth)));
       // Hysteresis prevents healing/damage around a threshold from flickering layers.
@@ -76,11 +86,12 @@
     schedule() {
       const c=this.context;if(!c||c.state!=='running')return;
       for(const [bus,until]of this.retiredBuses)if(c.currentTime>=until){bus.disconnect();this.retiredBuses.delete(bus);}
+      if(this.ambient&&this.settings.master*(this.settings.ambient??.7)>0&&c.currentTime>=this.nextCall){const t=c.currentTime+.03,stage=this.ambientStage;this.nextCall=t+6+stage*2;this.tone([360,220,180,90][stage],t,1.2,.013,'sine',[110,80,65,40][stage],this.ambient);if(stage<2)for(let i=0;i<3;i++)this.tone(2400+stage*700,t+i*.14,.09,.005,'sine',1800,this.ambient);}
       if(this.settings.master*this.settings.music===0){this.nextBeat=c.currentTime+.04;return;}
       if(this.nextBeat<c.currentTime)this.nextBeat=c.currentTime+.03;
       const score=SCORES[this.trackId]||SCORES.menu,interval=30/score.bpm;
       while(this.nextBeat<c.currentTime+.16){
-        const t=this.nextBeat,beat=this.beat++,chord=score.chords[Math.floor(beat/16)%4],note=score.motif[beat%16];
+        const t=this.nextBeat,beat=this.beat++,chord=score.chords[Math.floor(beat/16)%4],note=score.motif[(beat+Math.floor(beat/64)*4)%16];
         if(beat%8===0){this.tone(frequency(score.root-12+chord),t,interval*7.7,.05,'sine');this.tone(frequency(score.root+chord+7),t,interval*7.5,.012,'sine');}
         if(note!==null)this.tone(frequency(score.root+12+note),t,interval*(score.drums===0?1.8:.8),score.voice==='square'?.011:.028,score.voice);
         if(score.drums&&beat%2===0)this.tone(110,t,.15,.035+score.drums*.018,'sine',38);
@@ -124,6 +135,7 @@
       for (const audio of this.active) audio.pause(); this.active.clear();
       for(const voice of this.voices){try{voice.stop();}catch(_){}}this.voices.clear();
       if(this.bus)this.bus.disconnect();for(const bus of this.retiredBuses.keys())bus.disconnect();this.retiredBuses.clear();
+      for(const a of this.ambientSources){a.source.stop();a.source.disconnect();a.filter.disconnect();a.gain.disconnect();}this.ambientSources=[];if(this.ambient)this.ambient.disconnect();
       if (this.context) this.context.close();
     }
   }
