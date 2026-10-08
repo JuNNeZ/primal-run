@@ -64,7 +64,7 @@
       } else if (phase === 'paused') {
         screen.innerHTML = `<section class="panel compact">${heading('TAG EN PAUSE', 'Jagten venter')}${button('resume', 'FORTSÆT · Esc', 'primary')}<div class="actions">${button('settings', 'Indstillinger')}${button('abandon', 'Afslut run')}</div><p class="fine">Opsamlet DNA er allerede gemt. Afslut run registrerer din score.</p></section>`;
       } else if (phase === 'mutation') {
-        screen.innerHTML = `<section class="panel">${heading('RAPTOR-LEVEL ' + r.level, 'Vælg din mutation', 'Verden står stille. Vælg med musen eller 1, 2, 3.')}<div class="mutation-grid">${r.choices.map((id, i) => {
+        screen.innerHTML = `<section class="panel">${heading('RAPTOR-LEVEL ' + r.level, 'Vælg din mutation', 'SPILLET ER PAUSET — du er sikker, mens du vælger. Klik eller tryk 1, 2, 3. Efter valget er du beskyttet i ét sekund.')}<div class="mutation-grid">${r.choices.map((id, i) => {
           const m = C.MUTATIONS.find(m => m.id === id);
           return `<button data-mutation="${id}">${imageTag('assets/ui/' + m.icon + '.png')}<small>VALG ${i + 1} · RANG ${r.mutations[id] + 1}/${m.max}</small><h2>${m.name}</h2><p>${m.text}</p></button>`;
         }).join('')}</div></section>`;
@@ -178,7 +178,7 @@
       await audio.unlock();
       const target = e.target.closest('button,[data-action]'); if (!target) return;
       if (target.dataset.buy) { game.purchase(target.dataset.buy); renderScreen(true); return; }
-      if (target.dataset.mutation) { game.choose(target.dataset.mutation); renderScreen(); return; }
+      if (target.dataset.mutation) { game.choose(target.dataset.mutation); keys.clear(); accumulator = 0; last = 0; renderScreen(); return; }
       const action = target.dataset.action;
       if (action) e.preventDefault();
       if (action === 'start' && ready) { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); game.phase = 'intro'; }
@@ -209,7 +209,7 @@
         if (game.phase === 'playing') game.pause(); else if (game.phase === 'paused') game.resume(); else if (game.phase === 'settings') game.phase = returnPhase; else if (['intro', 'help', 'shop', 'scores'].includes(game.phase)) game.phase = 'menu';
         renderScreen(); return;
       }
-      if (game.phase === 'mutation' && /^Digit[123]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); renderScreen(); return; }
+      if (game.phase === 'mutation' && /^Digit[123]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); keys.clear(); accumulator = 0; last = 0; renderScreen(); return; }
       if (game.phase !== 'playing') return;
       if (['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) e.preventDefault();
       keys.add(e.code);

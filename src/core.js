@@ -126,6 +126,7 @@
       r.mutations[id]++; if (id === 'heart') { r.maxHealth += 15; r.health = Math.min(r.maxHealth, r.health + 15); }
       r.choices = []; this.phase = 'playing'; this.emit('ui'); this.maybeLevelUp();
       if (this.phase === 'playing' && r.bossDefeated) this.phase = 'cleared';
+      if (this.phase === 'playing') r.invulnerable = Math.max(r.invulnerable, 1);
       return true;
     }
     damage(amount) {
