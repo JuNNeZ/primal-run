@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-08",
+  "production_approved": false,
+  "GDevelop": {
+    "result": "PASS",
+    "runtime": "GDevelop GDJS 5.6.283",
+    "checked": 64,
+    "paused": true,
+    "scope": "64 actual drawn frames, all four species/directions/states, native128 size, fixed64 origin, stable collision, no smoothing, mutation freeze. Not production art approval."
+  },
+  "browser": {
+    "result": "PASS",
+    "checked": 64,
+    "scope": "tests/enemy-animation-browser.cjs in final npm test, all species/directions/states, fixed pivots and mutation freeze"
+  },
+  "AI_tests": {
+    "cases": 19,
+    "scope": "includes pack separation, delayed Compy bite, harmless edge-aware flee, first-biome charge/locked aim/sideways dodge, tail warning and single strike, front vs rear armor, meat-gated difficulty and predator cap"
+  },
+  "visual_review": {
+    "native": "All64frames inspected on dark/light grids",
+    "4x": "All64frames inspected on both backgrounds; changed registrations re-inspected. Clips, lateral gapes and wrong North charge excluded.",
+    "loops": "enemy_review.html planted/left/planted/right8fps walk; short action studies",
+    "remaining": "Generated markings and body shapes vary slightly; full temporal/user art approval pending. Compy E/W and Carnotaurus N action deliberately reuse reviewed stride poses."
+  },
+  "opening_automated_samples": [
+    {
+      "seed": 1,
+      "first_mutation_seconds": 14,
+      "boss_seconds": 33,
+      "health_at_boss": 95
+    },
+    {
+      "seed": 2,
+      "first_mutation_seconds": 8,
+      "boss_seconds": 43,
+      "health_at_boss": 73
+    },
+    {
+      "seed": 3,
+      "first_mutation_seconds": 12,
+      "boss_seconds": 40,
+      "health_at_boss": 89
+    }
+  ],
+  "opening_sample_limit": "Seeded nearest-target simulation,60steps/sec, hold attack, collect nearby meat, prefer teeth upgrade. No injected meat/XP or enemy HP. Stops at boss appearance, not boss victory. This is not human playtesting or a guarantee of player completion times.",
+  "source_sha256": {
+    "src/core.js": "9b36dafd7ad155b2bd56439a978e38f2bb2a52dcd358f18ee05a384487a1393a",
+    "src/app.js": "46e606bd977da2ea843ba9ead8889b04b5968645f5631dec17bb32058d8a5974",
+    "enemy_animation_manifest.json": "edf624901270e7c4e5a68a6b402dacabe5b6608cb16f8c33e42527179ed24527"
+  }
+}

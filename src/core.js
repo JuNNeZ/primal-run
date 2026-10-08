@@ -100,7 +100,7 @@
       const p = position || (edge < 2 ? { x: edge ? 904 : 56, y: 100 + this.random() * 440 } : { x: 80 + this.random() * 800, y: edge === 2 ? 100 : 560 });
       const scale = 1 + r.stage * .3;
       const hp = boss ? (220 + r.stage * 85) : base.hp * scale;
-      const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? 32 : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0 };
+      const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? 32 : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0, walk: 0, poseTime: 0, moving: false, direction: 'S', attackHit: false, attackRadius: kind === 'ankylosaurus' ? 90 : boss ? 130 : base.radius + 28 };
       r.enemies.push(e); return e;
     }
     move(entity, dx, dy) {
@@ -188,30 +188,80 @@
       }
     }
     enemyStep(e, dt) {
+      if (this.phase !== 'playing') return;
+      const x = e.x, y = e.y;
+      this.enemyAI(e, dt);
+      e.moving = Math.hypot(e.x - x, e.y - y) > .001;
+      e.walk = e.moving ? (e.walk + dt) % .5 : 0; e.poseTime += dt;
+      const dx = e.moving && !['charge', 'windup'].includes(e.mode) ? e.x - x : e.facingX;
+      const dy = e.moving && !['charge', 'windup'].includes(e.mode) ? e.y - y : e.facingY;
+      if (Math.hypot(dx, dy) > .001) e.direction = Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? 'E' : 'W') : (dy > 0 ? 'S' : 'N');
+    }
+    enemyAI(e, dt) {
       const r = this.run, dx = r.player.x - e.x, dy = r.player.y - e.y, d = Math.max(1, Math.hypot(dx, dy));
       e.cooldown = Math.max(0, e.cooldown - dt); e.hit = Math.max(0, e.hit - dt);
       if (e.stagger > 0) { e.stagger = Math.max(0, e.stagger - dt); return; }
       if (e.mode === 'windup') {
         e.timer -= dt;
-        if (e.timer <= 0) { e.mode = e.pattern === 2 ? 'slam' : 'charge'; e.timer = e.mode === 'slam' ? .15 : .55; this.emit('roar'); }
+        if (e.timer <= 0) {
+          e.mode = e.pattern === 2 ? 'slam' : e.kind === 'compy' && !e.boss ? 'bite' : 'charge';
+          e.timer = e.mode === 'charge' ? .55 : .18; e.attackHit = false;
+          if (e.kind !== 'compy') this.emit('roar');
+        }
       } else if (e.mode === 'charge') {
         this.move(e, e.chargeX * (e.boss ? 340 : 230) * dt, e.chargeY * (e.boss ? 340 : 230) * dt);
         if (Math.hypot(r.player.x - e.x, r.player.y - e.y) < e.radius + 19) this.damage(e.damage);
         e.timer -= dt; if (e.timer <= 0) { e.mode = 'recover'; e.timer = e.boss ? 1.4 : .9; }
-      } else if (e.mode === 'slam') {
-        if (d < 130) this.damage(e.damage + 6);
-        e.mode = 'recover'; e.timer = 1.6;
+      } else if (e.mode === 'slam' || e.mode === 'bite') {
+        e.timer -= dt;
+        if (!e.attackHit && e.timer <= .1) {
+          e.attackHit = true;
+          const facingDot = (dx * e.facingX + dy * e.facingY) / d;
+          if (d < e.attackRadius && (e.mode === 'slam' || facingDot > .2)) this.damage(e.damage + (e.boss ? 6 : 0));
+        }
+        if (e.timer <= 0) { e.mode = 'recover'; e.timer = e.kind === 'compy' ? .35 : 1.6; }
       } else if (e.mode === 'recover') {
-        e.timer -= dt; if (e.timer <= 0) { e.mode = 'chase'; e.cooldown = 1.2; }
+        e.timer -= dt; if (e.timer <= 0) { e.mode = 'chase'; e.cooldown = e.kind === 'compy' ? .8 : 1.2; }
       } else {
         e.facingX = dx / d; e.facingY = dy / d;
-        const flee = e.kind === 'parasaurolophus' && d < 200;
-        if (d > e.radius + 18 || flee) this.move(e, dx / d * e.speed * dt * (flee ? -1 : 1), dy / d * e.speed * dt * (flee ? -1 : 1));
-        const charger = e.boss || (e.kind === 'carnotaurus' && r.stage > 0);
-        if (charger && e.cooldown === 0 && d < 360) {
+        if (e.kind === 'parasaurolophus' && !e.boss && d < 260) {
+          e.mode = 'flee';
+          // Pick a free escape heading rather than running forever into an edge or rock.
+          let best = null;
+          for (let i = 0; i < 8; i++) {
+            const angle = Math.atan2(-dy, -dx) + i * Math.PI / 4;
+            const vx = Math.cos(angle), vy = Math.sin(angle), px = e.x + vx * 65, py = e.y + vy * 65;
+            const room = px > 42 + e.radius && px < WIDTH - 42 - e.radius && py > 76 + e.radius && py < HEIGHT - 42 - e.radius;
+            const clear = ROCKS.every(rock => Math.hypot(px - rock.x, py - rock.y) > rock.radius + e.radius + 4);
+            const score = (-dx * vx - dy * vy) / d + (room ? 0 : -4) + (clear ? 0 : -3);
+            if (!best || score > best.score) best = { vx, vy, score };
+          }
+          e.facingX = best.vx; e.facingY = best.vy; this.move(e, best.vx * e.speed * 1.25 * dt, best.vy * e.speed * 1.25 * dt); return;
+        }
+        e.mode = 'chase';
+        let vx = dx / d, vy = dy / d, speed = e.speed;
+        if (e.kind === 'compy' && !e.boss) {
+          const pack = r.enemies.filter(other => other !== e && other.kind === 'compy' && !other.boss && Math.hypot(other.x - e.x, other.y - e.y) < 180);
+          speed *= 1 + Math.min(pack.length, 2) * .08;
+          for (const other of pack) {
+            const sx = e.x - other.x, sy = e.y - other.y, gap = Math.hypot(sx, sy);
+            if (gap < 42) { vx += (gap > .01 ? sx / gap : (e.id < other.id ? -1 : 1)) * .75; vy += (gap > .01 ? sy / gap : 0) * .75; }
+          }
+          const norm = Math.max(1, Math.hypot(vx, vy)); vx /= norm; vy /= norm;
+        }
+        if (d > e.radius + 18) this.move(e, vx * speed * dt, vy * speed * dt);
+        const charger = e.boss || e.kind === 'carnotaurus';
+        if (charger && e.cooldown === 0 && d < (e.boss ? 360 : 230)) {
           e.pattern = e.boss && ['triceratops', 'tyrannosaurus'].includes(e.kind) ? (e.pattern + 1) % 3 : 0;
-          e.mode = 'windup'; e.timer = e.kind === 'deinosuchus' ? .95 : .8; e.chargeX = dx / d; e.chargeY = dy / d;
-        } else if (!charger && e.damage && d < e.radius + 20 && e.cooldown === 0) { this.damage(e.damage); e.cooldown = 1.2; }
+          e.mode = 'windup'; e.windupDuration = e.kind === 'deinosuchus' ? .95 : e.boss ? .8 : .9; e.timer = e.windupDuration;
+          e.chargeX = dx / d; e.chargeY = dy / d;
+        } else if (!charger && e.cooldown === 0 && ((e.kind === 'ankylosaurus' && d < 100) || (e.kind === 'compy' && d < e.radius + 24))) {
+          e.pattern = e.kind === 'ankylosaurus' ? 2 : 0;
+          e.mode = 'windup'; e.windupDuration = e.kind === 'compy' ? .32 : .9; e.timer = e.windupDuration;
+          e.chargeX = dx / d; e.chargeY = dy / d;
+        } else if (!charger && !['compy', 'ankylosaurus', 'parasaurolophus'].includes(e.kind) && e.damage && d < e.radius + 20 && e.cooldown === 0) {
+          this.damage(e.damage); e.cooldown = 1.2;
+        }
       }
     }
     step(dt, input = {}) {
@@ -259,12 +309,14 @@
       if (!r.bossSpawned && r.meat >= STAGES[r.stage].target) { r.bossSpawned = true; this.spawn(STAGES[r.stage].boss, { x: 480, y: 130 }, true); this.emit('boss'); }
       if (!r.bossSpawned) {
         r.spawnTimer -= dt;
-        const opening = r.stage === 0 && r.seconds < 20 && r.meat < 6;
-        const building = r.stage === 0 && !opening && (r.seconds < 45 || r.meat < 12);
+        const opening = r.stage === 0 && r.meat < 6;
+        const building = r.stage === 0 && !opening && r.meat < 12;
         const cap = r.stage === 0 ? (opening ? 3 : building ? 5 : 7) : 9 + r.stage * 2;
         if (r.spawnTimer <= 0 && r.enemies.length < cap) {
           const pool = r.stage === 0 ? (opening ? ['compy', 'parasaurolophus'] : building ? ['compy', 'compy', 'parasaurolophus'] : ['compy', 'parasaurolophus', 'carnotaurus']) : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'carnotaurus', 'ankylosaurus'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];
-          this.spawn(pool[Math.floor(this.random() * pool.length)]); r.spawnTimer = r.stage === 0 ? (opening ? 4 : building ? 3.2 : 2.6) : Math.max(1, 2.4 - r.stage * .35);
+          let kind = pool[Math.floor(this.random() * pool.length)];
+          if (r.stage === 0 && r.enemies.filter(e => e.kind === 'carnotaurus').length >= 1 && kind === 'carnotaurus') kind = 'compy';
+          this.spawn(kind); r.spawnTimer = r.stage === 0 ? (opening ? 4 : building ? 3.2 : 2.6) : Math.max(1, 2.4 - r.stage * .35);
         }
       }
       this.maybeLevelUp();
