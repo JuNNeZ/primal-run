@@ -2,14 +2,14 @@
   "date": "2026-10-08",
   "status": "PASS",
   "source_sha256": {
-    "src/core.js": "be5361a0b996f9f4f6901439e74076524a32a547ba271edb55e1dfdbd558ef4f",
+    "src/core.js": "de09a643cdc5ab462aeb26bb877e7f983587c826d94c70929599ce27902d3d05",
     "src/app.js": "15dbd5de27940b047ea7845fc9362a7650fb9d3721d927612b5a02c1191a8f15",
     "style.css": "e1018e5b4ff4ed3084906bb151df8ff927944a8b86f49f70cb1127c591783a61"
   },
   "simulation": {
-    "cases": 22,
+    "cases": 24,
     "result": "PASS",
-    "scope": "combat, paused mutations, rarity values, weighted choices, world bounds, prepopulated wildlife, offscreen spawn placement, facing, progression, save/DNA"
+    "scope": "combat, paused mutations, rarity values, weighted choices, world bounds, prepopulated wildlife, offscreen spawn placement, facing, progression, save/DNA, mixed-body collision, dense coincident crowds, mass/charge priority, stable edge separation and no NPC damage"
   },
   "standalone": {
     "runtime": "standalone browser",
@@ -17,6 +17,7 @@
     "checks": [
       "responsive square pixels/no overflow",
       "camera follows world position",
+      "real frame loop resolves a mixed 12-dinosaur crowd without friendly fire",
       "flee/chase facing",
       "XP percentage/count/remaining",
       "colored rarity cards/current-next rank",
@@ -141,6 +142,7 @@
     "checks": [
       "responsive square pixels/no overflow",
       "camera follows world position",
+      "real frame loop resolves a mixed 12-dinosaur crowd without friendly fire",
       "flee/chase facing",
       "XP percentage/count/remaining",
       "colored rarity cards/current-next rank",
@@ -260,8 +262,8 @@
     ]
   },
   "regression": {
-    "npm_test": "PASS in /tmp/primal-world-final-checks; final label placement rechecked standalone/GDJS world tests",
-    "GDevelop_5_6_283": "game progression, 24 player frames, 64 enemy frames and responsive world checks passed in official export",
+    "npm_test": "PASS in /tmp/primal-collision-checks; historical kit outputs preserved",
+    "GDevelop_5_6_283": "official export: mixed-crowd actual-frame collision, responsive world checks and game progression PASS; previous 24-player/64-enemy sprite draw evidence remains applicable to unchanged renderer/assets",
     "PNG_validation": "104 kit / 192 active game / 64 enemy overlay / 176 historical sprites PASS; no PNG changed"
   },
   "limits": [

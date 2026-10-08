@@ -156,6 +156,37 @@
         if (d < min) { entity.x = rock.x + (d > .001 ? x / d : 1) * min; entity.y = rock.y + (d > .001 ? y / d : 0) * min; }
       }
     }
+    separateDinosaurs() {
+      if (this.phase !== 'playing') return;
+      const enemies = this.run.enemies;
+      // Stable torso circles; tails and animation poses never change collision.
+      // Iterate so a correction cannot leave the next neighbour stacked.
+      for (let pass = 0; pass < 12; pass++) {
+        let overlapping = false;
+        for (let i = 0; i < enemies.length; i++) for (let j = i + 1; j < enemies.length; j++) {
+          const a = enemies[i], b = enemies[j];
+          const dx = b.x - a.x, dy = b.y - a.y, gap = Math.hypot(dx, dy), minimum = a.radius + b.radius + 4;
+          if (gap >= minimum - .05) continue;
+          overlapping = true;
+          // Deterministic direction also resolves exact coincident spawns.
+          const angle = ((a.id * 31 + b.id * 17) % 360) * Math.PI / 180;
+          const nx = gap > .001 ? dx / gap : Math.cos(angle), ny = gap > .001 ? dy / gap : Math.sin(angle);
+          const massA = a.radius * a.radius * (a.boss ? 4 : 1) * (a.mode === 'charge' ? 3 : 1);
+          const massB = b.radius * b.radius * (b.boss ? 4 : 1) * (b.mode === 'charge' ? 3 : 1);
+          const overlap = minimum - gap;
+          const pushA = overlap * massB / (massA + massB), pushB = overlap - pushA;
+          const ax = a.x, ay = a.y, bx = b.x, by = b.y;
+          this.move(a, -nx * pushA, -ny * pushA);
+          this.move(b, nx * pushB, ny * pushB);
+          // An animal pinned against the map/rock leaves more correction to its neighbour.
+          const movedA = Math.max(0, (ax - a.x) * nx + (ay - a.y) * ny);
+          const movedB = Math.max(0, (b.x - bx) * nx + (b.y - by) * ny);
+          if (movedA < pushA - .01) this.move(b, nx * (pushA - movedA), ny * (pushA - movedA));
+          if (movedB < pushB - .01) this.move(a, -nx * (pushB - movedB), -ny * (pushB - movedB));
+        }
+        if (!overlapping) break;
+      }
+    }
     pause() { if (this.phase === 'playing') { this.phase = 'paused'; this.emit('pause'); } }
     resume() { if (this.phase === 'paused') this.phase = 'playing'; }
     abandon() { if (this.run && !this.run.result) this.finish(false); this.phase = 'menu'; }
@@ -361,7 +392,7 @@
       }
       // Preserve remaining enemies on death; never process rewards after a fatal hit.
       if (this.phase !== 'playing') return;
-      r.enemies = survivors;
+      r.enemies = survivors; this.separateDinosaurs();
       const collected = [], radius = 26 * (1 + .05 * r.upgrades.magnet) + 10 * m.reach;
       for (const p of r.pickups) {
         if (Math.hypot(p.x - r.player.x, p.y - r.player.y) >= radius) continue;
