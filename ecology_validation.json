@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "assets": 24,
+  "props": 18,
+  "insect_poses": 6,
+  "errors": [],
+  "checks": [
+    "RGBA/native size",
+    "fixed32 palette",
+    "binary alpha/transparent RGB0",
+    "two pixel padding",
+    "source/export integrity",
+    "distinct insect studies"
+  ],
+  "production_approved": false
+}

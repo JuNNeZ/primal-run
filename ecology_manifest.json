@@ -1,0 +1,722 @@
+[
+  {
+    "file": "assets/ecology/cycad.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      0,
+      0,
+      256,
+      320
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "1a8a3807c0325443c7611c819681ef5e28f0386803b2d40ec0602c36fa3a121a",
+    "sampling_step": 3,
+    "bbox": [
+      23,
+      30,
+      98,
+      99
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/broad_fern.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      256,
+      0,
+      512,
+      320
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "fd048156204bc90cadcce24d05f5429a121930c9a52e41cf933414902c43b308",
+    "sampling_step": 3,
+    "bbox": [
+      24,
+      28,
+      98,
+      104
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/seed_fern.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      512,
+      0,
+      768,
+      320
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "8f7434e804c517260de30c5e4f5107460775df767928e0d38219c35b2535f0a7",
+    "sampling_step": 3,
+    "bbox": [
+      24,
+      24,
+      95,
+      104
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/conifer.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      768,
+      0,
+      1024,
+      320
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "0441e81539c2628970c2c0a0eb3803a2bde6d9fa627fc7bcf91fd9d039c2eccd",
+    "sampling_step": 3,
+    "bbox": [
+      25,
+      25,
+      85,
+      101
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/horsetail.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      1024,
+      0,
+      1280,
+      320
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "ff22093c7cd696b68fbe38e79c2af093534ce23499c1c8d445709b4aec95d8ab",
+    "sampling_step": 3,
+    "bbox": [
+      31,
+      23,
+      83,
+      105
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/reeds.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      1280,
+      0,
+      1536,
+      320
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "94ce586bb9102e7738ae48319ddd6811bd5414c15a3acec759ea90e63729647e",
+    "sampling_step": 3,
+    "bbox": [
+      18,
+      23,
+      85,
+      105
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/shrub.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      0,
+      320,
+      256,
+      575
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "af8dc72e217d16ccf9de218690cd46715c37fcc436cbaadfb6106aaa0afcb616",
+    "sampling_step": 3,
+    "bbox": [
+      23,
+      21,
+      95,
+      88
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/fruit_bush.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      256,
+      320,
+      512,
+      575
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "e86675f2612b058dfc37fa21403ddc11e90eb0991ae6e62e73d6d3af28c35de1",
+    "sampling_step": 3,
+    "bbox": [
+      23,
+      21,
+      98,
+      88
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/herb.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      512,
+      320,
+      768,
+      575
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "79a620934d1d525ca3363339d41100f002e9d1d3e26abb6fcdf6120cf130552f",
+    "sampling_step": 3,
+    "bbox": [
+      22,
+      22,
+      98,
+      90
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/dry_grass.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      768,
+      320,
+      1024,
+      575
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "77d841358ad04e036bc717f7cce217fc54806ea28a90dd8a74c51c7bd1ac35e4",
+    "sampling_step": 3,
+    "bbox": [
+      27,
+      25,
+      91,
+      87
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/moss.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      1024,
+      320,
+      1280,
+      575
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "263af1a25871f2011de7e6da3a6bf4cfb256d87e6e48047420e1490c9eb62626",
+    "sampling_step": 3,
+    "bbox": [
+      23,
+      35,
+      87,
+      85
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/lichen.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      1280,
+      320,
+      1536,
+      575
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "7162c2265f80ad98fc79f714eb97e15f8fd66219fcb132933d8b646be1152f27",
+    "sampling_step": 3,
+    "bbox": [
+      17,
+      28,
+      87,
+      88
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/roots.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      0,
+      575,
+      256,
+      790
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "a527a1c68885090b7316a9fc8c18480443fb63c5a5f8b770ef5e06167304de07",
+    "sampling_step": 3,
+    "bbox": [
+      24,
+      22,
+      98,
+      84
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/mushrooms.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      256,
+      575,
+      512,
+      790
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "ce6daad052537a0e423038123e1808430257398f6d92a17f704f28155a4b68f1",
+    "sampling_step": 3,
+    "bbox": [
+      35,
+      28,
+      86,
+      80
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/leaf_litter.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      512,
+      575,
+      768,
+      790
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "ddd37609921d1b5c3673cdde97651bdf92ad72d0cd512bb1dc2bd32a4d3bbc3a",
+    "sampling_step": 3,
+    "bbox": [
+      26,
+      30,
+      95,
+      82
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/flowers.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      768,
+      575,
+      1024,
+      790
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "be586330f95539f1a0a42a6650e06a993c1706be214f1d6a962ca9883a1c0e22",
+    "sampling_step": 3,
+    "bbox": [
+      26,
+      29,
+      92,
+      85
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/succulent.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      1024,
+      575,
+      1280,
+      790
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "e00df5016344d46180666a51e2dd432206c40b2051170b7d70dcb548df14f5f8",
+    "sampling_step": 3,
+    "bbox": [
+      26,
+      29,
+      89,
+      81
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/twigs.png",
+    "size": [
+      112,
+      112
+    ],
+    "origin": [
+      56,
+      56
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      1280,
+      575,
+      1536,
+      790
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "927bcc7cfe01d5b12dcc3fd9213d52e344b9e475eeae9fb42bc04db78ee093b6",
+    "sampling_step": 3,
+    "bbox": [
+      17,
+      27,
+      89,
+      83
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/dragonfly_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      0,
+      790,
+      256,
+      1024
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "673a21ad71694d8c7a8c38acab356056585b3ccac3b5d7d0d95af03346b32f6a",
+    "sampling_step": 10,
+    "bbox": [
+      13,
+      5,
+      22,
+      23
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/dragonfly_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      256,
+      790,
+      512,
+      1024
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "bed669c535fddd3365171d8daf2123b136f8f324e2e6be7ec7c97da664a7443d",
+    "sampling_step": 10,
+    "bbox": [
+      5,
+      8,
+      28,
+      22
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/beetle_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      512,
+      790,
+      768,
+      1024
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "d16648cb1fb3cfe471090be487dd9e233e3cb4b921356225086074c1d2b54ed7",
+    "sampling_step": 10,
+    "bbox": [
+      11,
+      7,
+      20,
+      21
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/beetle_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      768,
+      790,
+      1024,
+      1024
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "94d6b353438a21eb428bfb68aca49c416f32f4c49545ccb7ee0ab2dff1655152",
+    "sampling_step": 10,
+    "bbox": [
+      3,
+      8,
+      28,
+      21
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/firefly_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      1024,
+      790,
+      1280,
+      1024
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "0ed36240f328a9f891502b1cc2429145a2c2449977a9ac8055956f133ba6d748",
+    "sampling_step": 10,
+    "bbox": [
+      13,
+      9,
+      18,
+      20
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ecology/firefly_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/ecology/jungle_props.png",
+    "source_crop": [
+      1280,
+      790,
+      1536,
+      1024
+    ],
+    "source_sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+    "export_sha256": "77f9dfc39befa94df4b8117f527c5197510bb46345e3e4ac7c5b0f9b1a195a0f",
+    "sampling_step": 10,
+    "bbox": [
+      3,
+      8,
+      26,
+      20
+    ],
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  }
+]

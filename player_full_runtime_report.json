@@ -1,12 +1,12 @@
 {
   "date": "2026-10-08",
   "status": "PASS",
-  "core_tests": 42,
+  "core_tests": 46,
   "pursuit_tests": 5,
   "new_frames": 480,
   "sequences": 96,
-  "active_pngs": 672,
-  "gdevelop_resources": 680,
+  "active_pngs": 696,
+  "gdevelop_resources": 704,
   "standalone": {
     "runtime": "standalone Chromium",
     "status": "PASS",
@@ -42,14 +42,16 @@
     "production_approved": false
   },
   "source_sha256": {
-    "src/core.js": "d10cd6ae01054d7ce021bf7888b07554055596c17d736ff38cd185e9b43d6e14",
-    "src/app.js": "1f66b20232ac0e4821a5bf63aa87573f79c095ba71ac37bf8ce23a518fd45b82",
+    "src/core.js": "55d88d3cbe48d2cacc7dd20618a055e4c87e28716a98503b6ec59e28e1c07398",
+    "src/app.js": "6df5de30ad6e84dfd62537038b0e28e85220ed162cfd0372226afe4549d11320",
+    "src/assets.js": "a47612ea78deca6c3569f5d5ead137b3906566cdee2a094d653c0572fe947ad7",
     "src/audio.js": "8c05993c669bd89459bb52b885409f590d5d84815b4dc4fb23e99b536ee42010",
-    "style.css": "c4600bc8e1c9b7cad46ad758589928a8a65a9b8a1437ccc2ff9de8b0dc014b29"
+    "style.css": "6fc68662342e2e15c97faf579b242d4f65bacf4565de2ec989a5bd2e06598547"
   },
   "full_npm_test": "PASS in temporary checkout; original kit preserved",
   "validators": "PASS: kit, game, enemies, player-full, historical root sprites",
   "visual_review": "Native grids on light/dark backgrounds; complete frame sets, minor anatomy/marking/registration variations remain",
   "production_approved": false,
-  "animation_ready": false
+  "animation_ready": false,
+  "additional_context": "Species display-only palette mapping and larger NPC torso corrections validated in jungle_runtime_report.json."
 }

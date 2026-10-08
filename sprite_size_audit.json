@@ -1,0 +1,298 @@
+{
+  "status": "RECORDED",
+  "scope": "Gameplay scale audit: native canvases/unchanged registered origins, stable class/NPC torso radius, integer rendering scale and warnings based on actual body radius. Not fossil body lengths or anatomical approval.",
+  "png_assets": 696,
+  "species": {
+    "compy": {
+      "player_torso_radius": 12,
+      "npc_torso_radius": 12,
+      "player_frames": 120,
+      "npc_studies": 17,
+      "display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "28372a",
+        "674333": "3f5030",
+        "8d6042": "586d38",
+        "b98252": "799447",
+        "d4a36c": "a8b15b",
+        "edd0a0": "ded392",
+        "54282d": "28372a",
+        "913b32": "3f5030",
+        "c6663c": "586d38",
+        "de954a": "799447",
+        "8d2028": "3f5030"
+      },
+      "origins_preserved": true
+    },
+    "utahraptor": {
+      "player_torso_radius": 16,
+      "player_frames": 120,
+      "npc_studies": 0,
+      "display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "3b4144",
+        "674333": "3c7180",
+        "8d6042": "3c7180",
+        "b98252": "69a4a0",
+        "d4a36c": "a2d4c1",
+        "edd0a0": "e8ece1",
+        "54282d": "3b4144",
+        "913b32": "3c7180",
+        "c6663c": "69a4a0",
+        "de954a": "a2d4c1",
+        "8d2028": "3c7180"
+      },
+      "origins_preserved": true
+    },
+    "parasaurolophus": {
+      "npc_torso_radius": 18,
+      "player_frames": 0,
+      "npc_studies": 17,
+      "display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "28372a",
+        "674333": "3f5030",
+        "8d6042": "586d38",
+        "b98252": "799447",
+        "d4a36c": "ded392",
+        "edd0a0": "edd0a0",
+        "54282d": "443027",
+        "913b32": "586d38",
+        "c6663c": "a8b15b",
+        "de954a": "ded392",
+        "8d2028": "3f5030"
+      },
+      "origins_preserved": true
+    },
+    "carnotaurus": {
+      "player_torso_radius": 21,
+      "npc_torso_radius": 21,
+      "player_frames": 120,
+      "npc_studies": 17,
+      "display_scale": 1,
+      "boss_display_scale": 2,
+      "boss_torso_radius": 42,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "443027",
+        "674333": "674333",
+        "8d6042": "8d6042",
+        "b98252": "b98252",
+        "d4a36c": "d4a36c",
+        "edd0a0": "edd0a0",
+        "54282d": "443027",
+        "913b32": "8d6042",
+        "c6663c": "b98252",
+        "de954a": "d4a36c",
+        "8d2028": "674333"
+      },
+      "origins_preserved": true
+    },
+    "ankylosaurus": {
+      "player_torso_radius": 23,
+      "npc_torso_radius": 23,
+      "player_frames": 120,
+      "npc_studies": 17,
+      "display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "3b4144",
+        "674333": "626861",
+        "8d6042": "626861",
+        "b98252": "929387",
+        "d4a36c": "bab8a2",
+        "edd0a0": "e8ece1",
+        "54282d": "3b4144",
+        "913b32": "626861",
+        "c6663c": "929387",
+        "de954a": "bab8a2",
+        "8d2028": "626861"
+      },
+      "origins_preserved": true
+    },
+    "deinosuchus": {
+      "npc_torso_radius": 32,
+      "player_frames": 0,
+      "npc_studies": 1,
+      "display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "151b19",
+        "674333": "28372a",
+        "8d6042": "3f5030",
+        "b98252": "586d38",
+        "d4a36c": "799447",
+        "edd0a0": "bab8a2",
+        "54282d": "151b19",
+        "913b32": "28372a",
+        "c6663c": "3f5030",
+        "de954a": "586d38",
+        "8d2028": "28372a"
+      },
+      "origins_preserved": true
+    },
+    "triceratops": {
+      "npc_torso_radius": 28,
+      "player_frames": 0,
+      "npc_studies": 1,
+      "display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "3b4144",
+        "674333": "626861",
+        "8d6042": "626861",
+        "b98252": "929387",
+        "d4a36c": "bab8a2",
+        "edd0a0": "edd0a0",
+        "54282d": "443027",
+        "913b32": "626861",
+        "c6663c": "929387",
+        "de954a": "bab8a2",
+        "8d2028": "626861"
+      },
+      "origins_preserved": true
+    },
+    "tyrannosaurus": {
+      "npc_torso_radius": 32,
+      "player_frames": 0,
+      "npc_studies": 1,
+      "display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "443027",
+        "674333": "674333",
+        "8d6042": "8d6042",
+        "b98252": "b98252",
+        "d4a36c": "d4a36c",
+        "edd0a0": "edd0a0",
+        "54282d": "443027",
+        "913b32": "674333",
+        "c6663c": "8d6042",
+        "de954a": "b98252",
+        "8d2028": "674333"
+      },
+      "origins_preserved": true
+    }
+  },
+  "biomes": [
+    {
+      "name": "Bregneskoven",
+      "animals": [
+        "compy",
+        "compy",
+        "parasaurolophus",
+        "carnotaurus"
+      ],
+      "plants": [
+        "cycad",
+        "broad_fern",
+        "seed_fern",
+        "conifer",
+        "horsetail",
+        "shrub",
+        "herb",
+        "moss",
+        "roots",
+        "mushrooms",
+        "leaf_litter",
+        "twigs"
+      ],
+      "insects": [
+        "beetle",
+        "firefly"
+      ]
+    },
+    {
+      "name": "Flodsletten",
+      "animals": [
+        "compy",
+        "parasaurolophus",
+        "carnotaurus",
+        "deinosuchus"
+      ],
+      "plants": [
+        "cycad",
+        "broad_fern",
+        "horsetail",
+        "reeds",
+        "shrub",
+        "fruit_bush",
+        "herb",
+        "moss",
+        "roots",
+        "flowers"
+      ],
+      "insects": [
+        "dragonfly",
+        "beetle",
+        "firefly"
+      ]
+    },
+    {
+      "name": "Klippelandet",
+      "animals": [
+        "compy",
+        "parasaurolophus",
+        "carnotaurus",
+        "ankylosaurus",
+        "triceratops"
+      ],
+      "plants": [
+        "conifer",
+        "shrub",
+        "herb",
+        "dry_grass",
+        "lichen",
+        "succulent",
+        "twigs",
+        "flowers"
+      ],
+      "insects": [
+        "beetle"
+      ]
+    },
+    {
+      "name": "Den vulkanske dal",
+      "animals": [
+        "compy",
+        "parasaurolophus",
+        "carnotaurus",
+        "ankylosaurus",
+        "tyrannosaurus"
+      ],
+      "plants": [
+        "dry_grass",
+        "lichen",
+        "succulent",
+        "twigs"
+      ],
+      "insects": [
+        "beetle"
+      ]
+    }
+  ],
+  "remaining_visual_limitations": [
+    "Player/NPC drawings differ modestly in proportions; same torso radius retains gameplay consistency.",
+    "Generated full frames retain minor marking/anatomy/registration variation.",
+    "Native Parasaurolophus is a juvenile-sized prey illustration.",
+    "Flora are stylised visual placeholders, not identified fossil plant taxa."
+  ],
+  "production_approved": false
+}
