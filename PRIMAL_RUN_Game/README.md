@@ -283,11 +283,33 @@ endelige effektlyde er en senere lydopgave. Highscores er lokale; online-score
 kræver backend og validering.
 
 Alle billeder beholder deres prototype-status. De øvrige enemy-billeder er South-
-stillbilleder; de fire nye serier er animerede prototype-studier. Utahraptorens North-walk er
-fortsat prototype-drejningen af South med dens kendte lysbegrænsning.
+stillbilleder; de fire nye serier er animerede prototype-studier. De nye player-serier har særskilt genererede North-frames. Historiske drejede
+North-studier er bevaret som reference.
 Se `SPRITE_RULES.md`, `manifest.json`, `palette.json`, `validation_report.json`
 og `integration_report.json`. Ingen kildepixels eller origins ændres.
 
-Compy, Carnotaurus og Ankylosaurus bruger de eksisterende cardinal pose-studier
-som player-sprites. Angrebet skifter mellem optakt/action/recovery; de har endnu
-ikke Utahraptorens seks særskilte bidframes. Alle PNG-pixels/origins bevares.
+## Komplette spilleranimationer og jagtadfærd
+
+Compy, Utahraptor, Carnotaurus og Ankylosaurus bruger nu 480 nye PNG-frames:
+4 idle, 6 gang, 6 løb, 6 angreb, 2 skade og 6 død i hver af fire retninger.
+Angreb rammer på frame 3; Ankylosaurus svinger halen. Native canvas er 144×144
+med transparent plads til haler; kropshitboxes er uændrede. Pause fryser alle
+frames. Død afspiller én gang og bliver på sidste frame.
+[Review med alle frames og loops](player_full_review.html),
+[regler](SPRITE_RULES_PLAYER_FULL.md) og [runtime-test](player_full_runtime_report.json).
+De 24 ældre Utahraptor-bidframes og alle øvrige originale PNGs er bevaret.
+De nye serier er komplette animationsstudier i pixelstil; små variationer i
+anatomi, markeringer og registrering kræver stadig visuel finjustering.
+
+Efter en træffer har et dyr 0 % chance for at opgive jagten i 8 sekunder.
+En ny træffer nulstiller perioden. Derefter stiger opgivelseschancen med afstand
+(over 160 pixels) og tid siden sidste angreb. Dyret søger hjem med 4 sekunders
+beskyttelse mod straks at starte jagten igen; et nyt angreb provokerer det igen.
+Bosser og allerede varslede angrebsforløb afbrydes ikke af opgivelsesrollen.
+Byttedyr stopper flugten ved cirka 110 pixels fra en stillestående, uforstyrret
+spiller og vender mod spilleren. Bevægelse eller en nylig træffer øger deres
+flugtafstand til 260 pixels. Adfærdsroller bruger en separat RNG fra loot.
+
+`npm run validate:player-full` kontrollerer 480 frames/96 serier, alpha, palette,
+padding, faste origins, kildehashes og forskellige frames. Teknisk PASS er
+ikke en produktionsgodkendelse af grafikken.

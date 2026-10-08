@@ -76,7 +76,7 @@ test('Compy separates from its pack and telegraphs one bite instead of unavoidab
   g.enemyStep(a, .01); assert.equal(r.health, 93, 'bite only hits once');
 });
 test('Parasaurolophus flees harmlessly and steers along an edge rather than getting stuck', () => {
-  const g = make(), r = g.run; r.player.x = r.map.width - 170; r.player.y = 340;
+  const g = make(), r = g.run; r.player.x = r.map.width - 170; r.player.y = 340; r.player.moving = true;
   const e = g.spawn('parasaurolophus', { x: r.map.width - 70, y: 340 });
   for (let i = 0; i < 20; i++) g.enemyStep(e, .05);
   assert.equal(e.mode, 'flee'); assert.ok(Math.abs(e.y - 340) > 30); assert.ok(e.x <= r.map.width - 60);

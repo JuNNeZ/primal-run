@@ -5,14 +5,15 @@
   "description": "PRIMAL RUN offline prototype and GDevelop asset kit",
   "scripts": {
     "test": "npm run test:game && npm run test:kit",
-    "test:game": "node --test tests/game.test.cjs tests/roguelite.test.cjs && node tests/game-browser.cjs && node tests/player-animation-browser.cjs && node tests/enemy-animation-browser.cjs && node tests/world-browser.cjs && node tests/polish-browser.cjs && node tests/roguelite-browser.cjs",
+    "test:game": "node --test tests/game.test.cjs tests/roguelite.test.cjs tests/pursuit.test.cjs && node tests/game-browser.cjs && node tests/player-animation-browser.cjs && node tests/enemy-animation-browser.cjs && node tests/world-browser.cjs && node tests/polish-browser.cjs && node tests/roguelite-browser.cjs && node tests/player-full-browser.cjs",
     "test:kit": "node check_kit_directions.cjs && node check_kit_progression.cjs && node check_kit_files.cjs",
     "build:game": "python tools/build_game.py",
     "build:web": "node tools/build_web.cjs",
     "validate:game-sprites": "python tools/validate_game_sprites.py",
     "preview": "python -m http.server 8000",
     "validate:assets": "python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py",
-    "validate:enemy-sprites": "python tools/validate_enemy_animations.py"
+    "validate:enemy-sprites": "python tools/validate_enemy_animations.py",
+    "validate:player-full": "python tools/validate_player_full.py"
   },
   "devDependencies": {
     "playwright": "^1.62.1"

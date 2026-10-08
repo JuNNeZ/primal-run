@@ -161,8 +161,8 @@
     start({ seed } = {}) {
       const species = this.save.selectedSpecies, config = PLAYER_SPECIES[species];
       const up = { ...this.save.upgrades }, maxHealth = config.hp * (1 + .02 * up.health);
-      this.run = { seed: seed === undefined ? Math.floor(this.random() * 4294967296) : seed >>> 0, species, abilityHits: [], exploration: 0, eliteKills: 0, player: { x: 480, y: 340, radius: config.radius, facing: 'S', walk: 0, moving: false }, health: maxHealth, maxHealth, stamina: 100, slow: 0, stage: 0, meat: 0, totalMeat: 0, level: 1, xp: 0, nextXP: 6, mutations: Object.fromEntries(MUTATIONS.map(m => [m.id, 0])), upgrades: up, choices: [], enemies: [], pickups: [], effects: [], particles: [], decals: [], hitStop: 0, seconds: 0, kills: 0, bosses: 0, dna: 0, score: 0, spawnTimer: 1, attackCooldown: 0, attack: null, biteFacing: 'S', bite: 0, pounce: 0, pounceCooldown: 0, invulnerable: 0, shake: 0, bossSpawned: false, bossDefeated: false, result: null };
-      this.run.map = createMap(0, this.run.seed); this.setView(WIDTH, HEIGHT); this.run.jonas = this.save.name.toLowerCase() === 'jonas'; this.phase = 'playing'; this.populate(); this.emit('start'); if (this.run.jonas) this.emit('jonas');
+      this.run = { seed: seed === undefined ? Math.floor(this.random() * 4294967296) : seed >>> 0, species, abilityHits: [], exploration: 0, eliteKills: 0, player: { x: 480, y: 340, radius: config.radius, facing: 'S', walk: 0, moving: false }, health: maxHealth, maxHealth, stamina: 100, slow: 0, stage: 0, meat: 0, totalMeat: 0, level: 1, xp: 0, nextXP: 6, mutations: Object.fromEntries(MUTATIONS.map(m => [m.id, 0])), upgrades: up, choices: [], enemies: [], pickups: [], effects: [], particles: [], decals: [], hitStop: 0, hurt: 0, deathTime: -1, seconds: 0, kills: 0, bosses: 0, dna: 0, score: 0, spawnTimer: 1, attackCooldown: 0, attack: null, biteFacing: 'S', bite: 0, pounce: 0, pounceCooldown: 0, invulnerable: 0, shake: 0, bossSpawned: false, bossDefeated: false, result: null };
+      this.behaviorRandom = seeded(this.run.seed ^ 0x9E3779B9); this.run.map = createMap(0, this.run.seed); this.setView(WIDTH, HEIGHT); this.run.jonas = this.save.name.toLowerCase() === 'jonas'; this.phase = 'playing'; this.populate(); this.emit('start'); if (this.run.jonas) this.emit('jonas');
     }
     setView(width, height) {
       if (!this.run) return;
@@ -203,7 +203,7 @@
       const scale = 1 + r.stage * .3;
       const hp = boss ? (220 + r.stage * 85) : base.hp * scale;
       const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? 32 : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0, walk: 0, poseTime: 0, moving: false, direction: 'S', attackHit: false, attackRadius: kind === 'ankylosaurus' ? 90 : boss ? 130 : base.radius + 28 };
-      e.bossPhase = 1; e.attackCycle = 0; e.attackName = ''; e.followUp = false; e.trailTimer = 0; e.homeX = p.x; e.homeY = p.y; e.alert = boss; r.enemies.push(e); return e;
+      e.bossPhase = 1; e.attackCycle = 0; e.attackName = ''; e.followUp = false; e.trailTimer = 0; e.homeX = p.x; e.homeY = p.y; e.alert = boss; e.lastAttackedAt = -1000; e.disengagedUntil = 0; r.enemies.push(e); return e;
     }
     move(entity, dx, dy) {
       entity.x = clamp(entity.x + dx, 42 + entity.radius, this.run.map.width - 42 - entity.radius);
@@ -274,8 +274,8 @@
     }
     damage(amount) {
       const r = this.run; if (r.invulnerable > 0 || (r.pounce > 0 && ['compy', 'utahraptor'].includes(r.species)) || this.phase !== 'playing') return;
-      r.health = Math.max(0, r.health - amount * (1 - .08 * r.mutations.armor) * (r.species === 'ankylosaurus' && r.pounce > 0 ? .25 : 1)); r.invulnerable = .65; r.shake = .18; this.emit('hit');
-      if (r.species === 'ankylosaurus' && r.mutations.spikes) { for (const e of r.enemies) if (Math.hypot(e.x-r.player.x,e.y-r.player.y)<110) e.hp -= 4*r.mutations.spikes; }
+      r.health = Math.max(0, r.health - amount * (1 - .08 * r.mutations.armor) * (r.species === 'ankylosaurus' && r.pounce > 0 ? .25 : 1)); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
+      if (r.species === 'ankylosaurus' && r.mutations.spikes) { for (const e of r.enemies) if (Math.hypot(e.x-r.player.x,e.y-r.player.y)<110) { e.hp -= 4*r.mutations.spikes; this.provoke(e); } }
       if (r.health <= 0) this.finish(false);
     }
     attack() {
@@ -314,7 +314,7 @@
         const armor = ['triceratops', 'ankylosaurus'].includes(e.kind) && frontal ? .5 : 1;
         const vulnerable = e.boss && e.mode === 'recover' && !frontal;
         const damage = PLAYER_SPECIES[r.species].damage * (1 + .02 * r.upgrades.damage + .2 * r.mutations.teeth + (r.species === 'compy' && e.kind === 'parasaurolophus' ? .35 * r.mutations.hunter : 0) + (r.species === 'utahraptor' && !e.alert ? .5 * r.mutations.ambush : 0) + (r.health < r.maxHealth * .4 ? .2 * r.mutations.fury : 0)) * armor * (vulnerable ? 1.5 : 1);
-        e.hp -= damage; e.alert = true; hits++; strong ||= e.boss || vulnerable || damage >= 16;
+        e.hp -= damage; this.provoke(e); hits++; strong ||= e.boss || vulnerable || damage >= 16;
         this.burst(e.x, e.y, 'blood', vulnerable ? 12 : 8, e.id);
         e.bleed = r.mutations.bleed ? 3 : 0; e.hit = .15;
         if (!e.boss) {
@@ -342,6 +342,21 @@
         if (this.random() < .10) r.pickups.push({ id: ++this.nextId, kind: 'heal', x: e.x, y: clamp(e.y + 18, 80, r.map.height - 54), value: 15 });
       }
     }
+    provoke(e) {
+      e.lastAttackedAt = this.run.seconds; e.disengagedUntil = 0; e.alert = true;
+      if (['return', 'wander', 'flee', 'watch'].includes(e.mode)) e.mode = 'chase';
+    }
+    chaseGiveUpRate(e, distance) {
+      if (e.boss || !e.damage || this.run.seconds - e.lastAttackedAt < 8 || distance < 160) return 0;
+      const age = Math.min(40, this.run.seconds - e.lastAttackedAt);
+      return Math.min(1.2, (distance - 160) / 650 * (.12 + Math.max(0, age - 8) * .025));
+    }
+    disengage(e) { e.alert = false; e.mode = 'return'; e.disengagedUntil = this.run.seconds + 4; e.cooldown = Math.max(e.cooldown, .8); }
+    returnHome(e, dt) {
+      const dx=e.homeX-e.x,dy=e.homeY-e.y,d=Math.hypot(dx,dy);
+      if(d<10){e.mode='wander';return;}
+      e.facingX=dx/d;e.facingY=dy/d;this.move(e,dx/d*e.speed*.7*dt,dy/d*e.speed*.7*dt);
+    }
     enemyStep(e, dt) {
       if (this.phase !== 'playing') return;
       const x = e.x, y = e.y;
@@ -365,7 +380,7 @@
       this.phase = 'playing'; r.activeSite = null;
       if (take && site && !site.claimed) {
         site.claimed = true; r.exploration++; r.pickups.push({id:++this.nextId,kind:'meat',rarity:2,value:8+r.stage*2,x:site.x,y:site.y});
-        const guard = r.enemies.find(e => e.id === site.guardId); if (guard) guard.alert = true;
+        const guard = r.enemies.find(e => e.id === site.guardId); if (guard) this.provoke(guard);
       }
       return true;
     }
@@ -468,11 +483,18 @@
       if (e.boss && e.kind === 'carnotaurus' && this.run.stage === 0) { this.forestBossAI(e, dt); return; }
       const r = this.run, dx = r.player.x - e.x, dy = r.player.y - e.y, d = Math.max(1, Math.hypot(dx, dy));
       e.cooldown = Math.max(0, e.cooldown - dt); e.hit = Math.max(0, e.hit - dt);
-      if (e.guard && !e.alert) return;
+      if (e.guard && !e.alert && e.mode !== 'return') return;
       if (e.stagger > 0) { e.stagger = Math.max(0, e.stagger - dt); return; }
       if (!e.boss && !['windup', 'charge', 'slam', 'bite', 'recover'].includes(e.mode)) {
-        if (d < (e.kind === 'compy' ? 260 : 400)) e.alert = true;
-        if (d > 850) e.alert = false;
+        if (e.mode === 'return' && !e.alert) {
+          if (r.seconds >= e.disengagedUntil && d < 120) { e.alert = true; e.mode = 'chase'; }
+          else { this.returnHome(e, dt); return; }
+        }
+        if (d < (e.kind === 'compy' ? 260 : 400) && r.seconds >= e.disengagedUntil) e.alert = true;
+        if (e.alert && e.damage) {
+          const rate = this.chaseGiveUpRate(e, d);
+          if (d > 1200 && r.seconds-e.lastAttackedAt >= 8 || rate > 0 && this.behaviorRandom() < 1-Math.exp(-rate*dt)) { this.disengage(e); this.returnHome(e,dt); return; }
+        }
         if (!e.alert) {
           e.mode = 'wander';
           const angle = r.seconds * .18 + e.id * 2.4;
@@ -506,7 +528,13 @@
         e.timer -= dt; if (e.timer <= 0) { e.mode = 'chase'; e.cooldown = e.kind === 'compy' ? .8 : 1.2; }
       } else {
         e.facingX = dx / d; e.facingY = dy / d;
-        if (e.kind === 'parasaurolophus' && !e.boss && d < 260) {
+        if (e.kind === 'parasaurolophus' && !e.boss) {
+          const threatened = r.seconds-e.lastAttackedAt < 8;
+          // A stationary observer is not an endless threat. Maintain a small
+          // personal-space bubble only; moving hunters trigger a wider flight zone.
+          const flightDistance = threatened || r.player.moving ? 260 : 110;
+          if (d >= flightDistance) { e.mode='watch'; e.facingX=dx/d; e.facingY=dy/d; if(d>550)e.alert=false; return; }
+
           e.mode = 'flee';
           // Pick a free escape heading rather than running forever into an edge or rock.
           let best = null;
@@ -552,7 +580,7 @@
       const r = this.run, m = r.mutations;
       if (r.hitStop > 0) { const stopped = Math.min(dt, r.hitStop); r.hitStop = Math.max(0, r.hitStop - stopped); dt -= stopped; if (dt <= .000001) return; }
       r.seconds += dt;
-      for (const timer of ['attackCooldown', 'bite', 'pounce', 'pounceCooldown', 'invulnerable', 'shake', 'slow']) r[timer] = Math.max(0, r[timer] - dt);
+      for (const timer of ['attackCooldown', 'bite', 'pounce', 'pounceCooldown', 'invulnerable', 'shake', 'slow', 'hurt']) r[timer] = Math.max(0, r[timer] - dt);
       r.stamina = Math.min(100, r.stamina + dt * 18 * (1 + .03 * r.upgrades.regen + .2 * m.feathers));
       let dx = clamp(finite(input.x), -1, 1), dy = clamp(finite(input.y), -1, 1), n = Math.hypot(dx, dy);
       const config = PLAYER_SPECIES[r.species], cost = Math.max(5, config.abilityCost - m.pounce * 5);
@@ -577,7 +605,7 @@
       r.player.walk = r.player.moving ? (r.player.walk + dt) % .75 : 0;
       if (r.pounce > 0 && ['utahraptor', 'carnotaurus'].includes(r.species)) for (const e of r.enemies) {
         if (!r.abilityHits.includes(e.id) && Math.hypot(e.x-r.player.x,e.y-r.player.y)<e.radius+r.player.radius+12) {
-          r.abilityHits.push(e.id); e.hp -= (r.species === 'carnotaurus' ? 20 + 8*m.gore : 8 + 5*m.claws); e.alert = true; e.hit = .15;
+          r.abilityHits.push(e.id); e.hp -= (r.species === 'carnotaurus' ? 20 + 8*m.gore : 8 + 5*m.claws); this.provoke(e); e.hit = .15;
           if (m.momentum) r.stamina = Math.min(100, r.stamina + 8*m.momentum);
           r.hitStop = Math.max(r.hitStop,.04); this.burst(e.x,e.y,'blood',10,e.id); this.emit('bite_hit', {hits:1,strong:true});
         }
@@ -636,7 +664,7 @@
       const r = this.run; if (!r || r.result) return;
       r.result = { name: this.save.name, score: r.score + (victory ? 3000 : 0), stage: r.stage + 1, bosses: r.bosses, seconds: Math.floor(r.seconds), victory: !!victory };
       this.save.scores = [...this.save.scores, r.result].sort((a, b) => b.score - a.score).slice(0, 10);
-      r.attack = null; r.bite = 0; this.phase = 'result'; this.persist(); this.emit(victory ? 'victory' : 'death');
+      r.attack = null; r.bite = 0; r.deathTime = victory ? -1 : 0; this.phase = 'result'; this.persist(); this.emit(victory ? 'victory' : 'death');
     }
   }
   return { Game, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, createMap, SAVE_KEY, sanitizeSave, upgradeCost };

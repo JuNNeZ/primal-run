@@ -11,8 +11,11 @@ Den fælles spilkerne kører i browseren og i et GDevelop 5-projekt.
 Fire fjendearter har nu gang/action-studier i fire retninger og forskellig AI.
 [Se fjendeanimationerne](PRIMAL_RUN_Game/enemy_review.html).
 
-Utahraptoren har nu et seks-frame bid i hver af fire retninger med skade på
-kontaktframen. [Se alle nye player-frames og animationer](PRIMAL_RUN_Game/player_review.html).
+Alle fire spilbare arter har 480 nye frames: idle, gang, løb, angreb, skade og død
+i fire retninger. [Se spilleranimationerne](PRIMAL_RUN_Game/player_full_review.html).
+Almindelige fjender kan opgive jagten efter 8 sekunder uden en ny træffer;
+chancen stiger med afstand og tid. Uforstyrrede byttedyr holder cirka 110 pixels
+afstand, når spilleren står stille. Bosser opgiver ikke.
 
 **PRIMAL_RUN_Prototype_Kit** er den bevarede assetpakke og tidligere browserdemo
 med 104 PNG-assets, otte WAV-placeholderlyde og GDevelop-byggeguides.

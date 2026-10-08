@@ -1,0 +1,6251 @@
+{
+  "technical_export_result": "PASS",
+  "assets": 480,
+  "sequences": 96,
+  "errors": [],
+  "frames": {
+    "assets/player_full/compy_idle_S_000.png": {
+      "bbox": [
+        66,
+        30,
+        99,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1111
+    },
+    "assets/player_full/compy_idle_S_001.png": {
+      "bbox": [
+        64,
+        30,
+        92,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1155
+    },
+    "assets/player_full/compy_idle_S_002.png": {
+      "bbox": [
+        62,
+        30,
+        95,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1189
+    },
+    "assets/player_full/compy_idle_S_003.png": {
+      "bbox": [
+        54,
+        29,
+        88,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1207
+    },
+    "assets/player_full/compy_hurt_S_000.png": {
+      "bbox": [
+        57,
+        36,
+        92,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1229
+    },
+    "assets/player_full/compy_hurt_S_001.png": {
+      "bbox": [
+        55,
+        36,
+        91,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1187
+    },
+    "assets/player_full/compy_walk_S_000.png": {
+      "bbox": [
+        65,
+        23,
+        99,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1274
+    },
+    "assets/player_full/compy_walk_S_001.png": {
+      "bbox": [
+        64,
+        24,
+        93,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1260
+    },
+    "assets/player_full/compy_walk_S_002.png": {
+      "bbox": [
+        64,
+        23,
+        96,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1324
+    },
+    "assets/player_full/compy_walk_S_003.png": {
+      "bbox": [
+        59,
+        24,
+        88,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1285
+    },
+    "assets/player_full/compy_walk_S_004.png": {
+      "bbox": [
+        53,
+        25,
+        86,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1270
+    },
+    "assets/player_full/compy_walk_S_005.png": {
+      "bbox": [
+        53,
+        24,
+        84,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1321
+    },
+    "assets/player_full/compy_run_S_000.png": {
+      "bbox": [
+        66,
+        20,
+        102,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1434
+    },
+    "assets/player_full/compy_run_S_001.png": {
+      "bbox": [
+        62,
+        20,
+        103,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1295
+    },
+    "assets/player_full/compy_run_S_002.png": {
+      "bbox": [
+        60,
+        26,
+        95,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1260
+    },
+    "assets/player_full/compy_run_S_003.png": {
+      "bbox": [
+        54,
+        20,
+        94,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1401
+    },
+    "assets/player_full/compy_run_S_004.png": {
+      "bbox": [
+        54,
+        16,
+        90,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1336
+    },
+    "assets/player_full/compy_run_S_005.png": {
+      "bbox": [
+        51,
+        21,
+        90,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1365
+    },
+    "assets/player_full/compy_attack_S_000.png": {
+      "bbox": [
+        66,
+        21,
+        102,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1324
+    },
+    "assets/player_full/compy_attack_S_001.png": {
+      "bbox": [
+        63,
+        23,
+        97,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1262
+    },
+    "assets/player_full/compy_attack_S_002.png": {
+      "bbox": [
+        58,
+        20,
+        97,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1371
+    },
+    "assets/player_full/compy_attack_S_003.png": {
+      "bbox": [
+        54,
+        21,
+        92,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1467
+    },
+    "assets/player_full/compy_attack_S_004.png": {
+      "bbox": [
+        58,
+        22,
+        91,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1304
+    },
+    "assets/player_full/compy_attack_S_005.png": {
+      "bbox": [
+        51,
+        21,
+        87,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1316
+    },
+    "assets/player_full/compy_death_S_000.png": {
+      "bbox": [
+        66,
+        12,
+        103,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1322
+    },
+    "assets/player_full/compy_death_S_001.png": {
+      "bbox": [
+        55,
+        11,
+        107,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1526
+    },
+    "assets/player_full/compy_death_S_002.png": {
+      "bbox": [
+        50,
+        26,
+        119,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1436
+    },
+    "assets/player_full/compy_death_S_003.png": {
+      "bbox": [
+        35,
+        46,
+        117,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1521
+    },
+    "assets/player_full/compy_death_S_004.png": {
+      "bbox": [
+        25,
+        53,
+        114,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1568
+    },
+    "assets/player_full/compy_death_S_005.png": {
+      "bbox": [
+        11,
+        54,
+        115,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1614
+    },
+    "assets/player_full/utahraptor_idle_S_000.png": {
+      "bbox": [
+        51,
+        25,
+        92,
+        123
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1898
+    },
+    "assets/player_full/utahraptor_idle_S_001.png": {
+      "bbox": [
+        51,
+        25,
+        92,
+        123
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1895
+    },
+    "assets/player_full/utahraptor_idle_S_002.png": {
+      "bbox": [
+        51,
+        25,
+        93,
+        124
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1909
+    },
+    "assets/player_full/utahraptor_idle_S_003.png": {
+      "bbox": [
+        52,
+        25,
+        93,
+        122
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1871
+    },
+    "assets/player_full/utahraptor_hurt_S_000.png": {
+      "bbox": [
+        48,
+        25,
+        100,
+        120
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1938
+    },
+    "assets/player_full/utahraptor_hurt_S_001.png": {
+      "bbox": [
+        51,
+        28,
+        93,
+        119
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1953
+    },
+    "assets/player_full/utahraptor_walk_S_000.png": {
+      "bbox": [
+        52,
+        26,
+        90,
+        120
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1848
+    },
+    "assets/player_full/utahraptor_walk_S_001.png": {
+      "bbox": [
+        53,
+        26,
+        92,
+        119
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1838
+    },
+    "assets/player_full/utahraptor_walk_S_002.png": {
+      "bbox": [
+        53,
+        26,
+        89,
+        120
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1812
+    },
+    "assets/player_full/utahraptor_walk_S_003.png": {
+      "bbox": [
+        54,
+        26,
+        92,
+        120
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1805
+    },
+    "assets/player_full/utahraptor_walk_S_004.png": {
+      "bbox": [
+        53,
+        29,
+        90,
+        119
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1752
+    },
+    "assets/player_full/utahraptor_walk_S_005.png": {
+      "bbox": [
+        50,
+        26,
+        88,
+        119
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1832
+    },
+    "assets/player_full/utahraptor_run_S_000.png": {
+      "bbox": [
+        52,
+        22,
+        92,
+        122
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1953
+    },
+    "assets/player_full/utahraptor_run_S_001.png": {
+      "bbox": [
+        52,
+        22,
+        92,
+        118
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1913
+    },
+    "assets/player_full/utahraptor_run_S_002.png": {
+      "bbox": [
+        53,
+        22,
+        90,
+        121
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1960
+    },
+    "assets/player_full/utahraptor_run_S_003.png": {
+      "bbox": [
+        52,
+        23,
+        94,
+        121
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1963
+    },
+    "assets/player_full/utahraptor_run_S_004.png": {
+      "bbox": [
+        52,
+        29,
+        94,
+        120
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1898
+    },
+    "assets/player_full/utahraptor_run_S_005.png": {
+      "bbox": [
+        53,
+        22,
+        90,
+        120
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1951
+    },
+    "assets/player_full/utahraptor_attack_S_000.png": {
+      "bbox": [
+        51,
+        25,
+        92,
+        120
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1836
+    },
+    "assets/player_full/utahraptor_attack_S_001.png": {
+      "bbox": [
+        50,
+        24,
+        96,
+        118
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1963
+    },
+    "assets/player_full/utahraptor_attack_S_002.png": {
+      "bbox": [
+        51,
+        24,
+        95,
+        125
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 2036
+    },
+    "assets/player_full/utahraptor_attack_S_003.png": {
+      "bbox": [
+        53,
+        28,
+        91,
+        125
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1856
+    },
+    "assets/player_full/utahraptor_attack_S_004.png": {
+      "bbox": [
+        49,
+        24,
+        98,
+        123
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1946
+    },
+    "assets/player_full/utahraptor_attack_S_005.png": {
+      "bbox": [
+        51,
+        25,
+        89,
+        120
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1858
+    },
+    "assets/player_full/utahraptor_death_S_000.png": {
+      "bbox": [
+        44,
+        33,
+        99,
+        118
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 1972
+    },
+    "assets/player_full/utahraptor_death_S_001.png": {
+      "bbox": [
+        44,
+        28,
+        104,
+        122
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 2089
+    },
+    "assets/player_full/utahraptor_death_S_002.png": {
+      "bbox": [
+        35,
+        32,
+        103,
+        120
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 2056
+    },
+    "assets/player_full/utahraptor_death_S_003.png": {
+      "bbox": [
+        37,
+        36,
+        106,
+        122
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 2499
+    },
+    "assets/player_full/utahraptor_death_S_004.png": {
+      "bbox": [
+        36,
+        40,
+        116,
+        122
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 2559
+    },
+    "assets/player_full/utahraptor_death_S_005.png": {
+      "bbox": [
+        25,
+        31,
+        117,
+        122
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "opaque_pixels": 2852
+    },
+    "assets/player_full/carnotaurus_idle_S_000.png": {
+      "bbox": [
+        66,
+        21,
+        109,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2091
+    },
+    "assets/player_full/carnotaurus_idle_S_001.png": {
+      "bbox": [
+        67,
+        21,
+        109,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2119
+    },
+    "assets/player_full/carnotaurus_idle_S_002.png": {
+      "bbox": [
+        56,
+        20,
+        97,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2084
+    },
+    "assets/player_full/carnotaurus_idle_S_003.png": {
+      "bbox": [
+        49,
+        21,
+        90,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2043
+    },
+    "assets/player_full/carnotaurus_hurt_S_000.png": {
+      "bbox": [
+        49,
+        21,
+        97,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2236
+    },
+    "assets/player_full/carnotaurus_hurt_S_001.png": {
+      "bbox": [
+        45,
+        21,
+        88,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2235
+    },
+    "assets/player_full/carnotaurus_walk_S_000.png": {
+      "bbox": [
+        64,
+        19,
+        107,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2205
+    },
+    "assets/player_full/carnotaurus_walk_S_001.png": {
+      "bbox": [
+        64,
+        19,
+        106,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2168
+    },
+    "assets/player_full/carnotaurus_walk_S_002.png": {
+      "bbox": [
+        54,
+        19,
+        96,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2150
+    },
+    "assets/player_full/carnotaurus_walk_S_003.png": {
+      "bbox": [
+        51,
+        18,
+        93,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2145
+    },
+    "assets/player_full/carnotaurus_walk_S_004.png": {
+      "bbox": [
+        42,
+        19,
+        87,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2282
+    },
+    "assets/player_full/carnotaurus_walk_S_005.png": {
+      "bbox": [
+        43,
+        19,
+        84,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2149
+    },
+    "assets/player_full/carnotaurus_run_S_000.png": {
+      "bbox": [
+        65,
+        19,
+        106,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2126
+    },
+    "assets/player_full/carnotaurus_run_S_001.png": {
+      "bbox": [
+        63,
+        20,
+        107,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2251
+    },
+    "assets/player_full/carnotaurus_run_S_002.png": {
+      "bbox": [
+        54,
+        18,
+        96,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2134
+    },
+    "assets/player_full/carnotaurus_run_S_003.png": {
+      "bbox": [
+        49,
+        18,
+        92,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2303
+    },
+    "assets/player_full/carnotaurus_run_S_004.png": {
+      "bbox": [
+        44,
+        19,
+        86,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2254
+    },
+    "assets/player_full/carnotaurus_run_S_005.png": {
+      "bbox": [
+        43,
+        19,
+        85,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2221
+    },
+    "assets/player_full/carnotaurus_attack_S_000.png": {
+      "bbox": [
+        64,
+        15,
+        108,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2243
+    },
+    "assets/player_full/carnotaurus_attack_S_001.png": {
+      "bbox": [
+        61,
+        17,
+        111,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2267
+    },
+    "assets/player_full/carnotaurus_attack_S_002.png": {
+      "bbox": [
+        52,
+        17,
+        105,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2362
+    },
+    "assets/player_full/carnotaurus_attack_S_003.png": {
+      "bbox": [
+        44,
+        15,
+        95,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2418
+    },
+    "assets/player_full/carnotaurus_attack_S_004.png": {
+      "bbox": [
+        41,
+        15,
+        98,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2618
+    },
+    "assets/player_full/carnotaurus_attack_S_005.png": {
+      "bbox": [
+        40,
+        15,
+        88,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2406
+    },
+    "assets/player_full/carnotaurus_death_S_000.png": {
+      "bbox": [
+        63,
+        11,
+        115,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2283
+    },
+    "assets/player_full/carnotaurus_death_S_001.png": {
+      "bbox": [
+        61,
+        11,
+        117,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2430
+    },
+    "assets/player_full/carnotaurus_death_S_002.png": {
+      "bbox": [
+        39,
+        11,
+        118,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2831
+    },
+    "assets/player_full/carnotaurus_death_S_003.png": {
+      "bbox": [
+        25,
+        11,
+        112,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3357
+    },
+    "assets/player_full/carnotaurus_death_S_004.png": {
+      "bbox": [
+        14,
+        16,
+        118,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3552
+    },
+    "assets/player_full/carnotaurus_death_S_005.png": {
+      "bbox": [
+        11,
+        17,
+        113,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3776
+    },
+    "assets/player_full/ankylosaurus_idle_S_000.png": {
+      "bbox": [
+        51,
+        21,
+        104,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2812
+    },
+    "assets/player_full/ankylosaurus_idle_S_001.png": {
+      "bbox": [
+        48,
+        21,
+        100,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2791
+    },
+    "assets/player_full/ankylosaurus_idle_S_002.png": {
+      "bbox": [
+        43,
+        22,
+        96,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2781
+    },
+    "assets/player_full/ankylosaurus_idle_S_003.png": {
+      "bbox": [
+        46,
+        20,
+        99,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2822
+    },
+    "assets/player_full/ankylosaurus_hurt_S_000.png": {
+      "bbox": [
+        52,
+        24,
+        105,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2714
+    },
+    "assets/player_full/ankylosaurus_hurt_S_001.png": {
+      "bbox": [
+        42,
+        20,
+        97,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2899
+    },
+    "assets/player_full/ankylosaurus_walk_S_000.png": {
+      "bbox": [
+        49,
+        18,
+        101,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2762
+    },
+    "assets/player_full/ankylosaurus_walk_S_001.png": {
+      "bbox": [
+        50,
+        17,
+        101,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2739
+    },
+    "assets/player_full/ankylosaurus_walk_S_002.png": {
+      "bbox": [
+        52,
+        19,
+        103,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2765
+    },
+    "assets/player_full/ankylosaurus_walk_S_003.png": {
+      "bbox": [
+        43,
+        18,
+        94,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2725
+    },
+    "assets/player_full/ankylosaurus_walk_S_004.png": {
+      "bbox": [
+        46,
+        19,
+        98,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2680
+    },
+    "assets/player_full/ankylosaurus_walk_S_005.png": {
+      "bbox": [
+        45,
+        18,
+        96,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2706
+    },
+    "assets/player_full/ankylosaurus_run_S_000.png": {
+      "bbox": [
+        50,
+        15,
+        106,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2850
+    },
+    "assets/player_full/ankylosaurus_run_S_001.png": {
+      "bbox": [
+        48,
+        14,
+        105,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2875
+    },
+    "assets/player_full/ankylosaurus_run_S_002.png": {
+      "bbox": [
+        47,
+        16,
+        105,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2891
+    },
+    "assets/player_full/ankylosaurus_run_S_003.png": {
+      "bbox": [
+        42,
+        18,
+        96,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2794
+    },
+    "assets/player_full/ankylosaurus_run_S_004.png": {
+      "bbox": [
+        46,
+        15,
+        98,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2814
+    },
+    "assets/player_full/ankylosaurus_run_S_005.png": {
+      "bbox": [
+        43,
+        16,
+        94,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2728
+    },
+    "assets/player_full/ankylosaurus_attack_S_000.png": {
+      "bbox": [
+        50,
+        12,
+        104,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2850
+    },
+    "assets/player_full/ankylosaurus_attack_S_001.png": {
+      "bbox": [
+        41,
+        8,
+        109,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2899
+    },
+    "assets/player_full/ankylosaurus_attack_S_002.png": {
+      "bbox": [
+        45,
+        6,
+        99,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3049
+    },
+    "assets/player_full/ankylosaurus_attack_S_003.png": {
+      "bbox": [
+        35,
+        27,
+        133,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3255
+    },
+    "assets/player_full/ankylosaurus_attack_S_004.png": {
+      "bbox": [
+        33,
+        15,
+        103,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2997
+    },
+    "assets/player_full/ankylosaurus_attack_S_005.png": {
+      "bbox": [
+        40,
+        12,
+        93,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2840
+    },
+    "assets/player_full/ankylosaurus_death_S_000.png": {
+      "bbox": [
+        48,
+        9,
+        103,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2764
+    },
+    "assets/player_full/ankylosaurus_death_S_001.png": {
+      "bbox": [
+        48,
+        8,
+        104,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2899
+    },
+    "assets/player_full/ankylosaurus_death_S_002.png": {
+      "bbox": [
+        38,
+        11,
+        106,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3160
+    },
+    "assets/player_full/ankylosaurus_death_S_003.png": {
+      "bbox": [
+        37,
+        7,
+        107,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3293
+    },
+    "assets/player_full/ankylosaurus_death_S_004.png": {
+      "bbox": [
+        35,
+        8,
+        116,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3352
+    },
+    "assets/player_full/ankylosaurus_death_S_005.png": {
+      "bbox": [
+        30,
+        5,
+        116,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3517
+    },
+    "assets/player_full/compy_idle_E_000.png": {
+      "bbox": [
+        21,
+        54,
+        126,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1508
+    },
+    "assets/player_full/compy_idle_E_001.png": {
+      "bbox": [
+        17,
+        54,
+        125,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1564
+    },
+    "assets/player_full/compy_idle_E_002.png": {
+      "bbox": [
+        17,
+        51,
+        123,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1548
+    },
+    "assets/player_full/compy_idle_E_003.png": {
+      "bbox": [
+        14,
+        55,
+        120,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1557
+    },
+    "assets/player_full/compy_hurt_E_000.png": {
+      "bbox": [
+        12,
+        52,
+        121,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1659
+    },
+    "assets/player_full/compy_hurt_E_001.png": {
+      "bbox": [
+        10,
+        54,
+        120,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1831
+    },
+    "assets/player_full/compy_walk_E_000.png": {
+      "bbox": [
+        18,
+        53,
+        130,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1783
+    },
+    "assets/player_full/compy_walk_E_001.png": {
+      "bbox": [
+        18,
+        51,
+        130,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1766
+    },
+    "assets/player_full/compy_walk_E_002.png": {
+      "bbox": [
+        16,
+        49,
+        126,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1710
+    },
+    "assets/player_full/compy_walk_E_003.png": {
+      "bbox": [
+        14,
+        53,
+        128,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1817
+    },
+    "assets/player_full/compy_walk_E_004.png": {
+      "bbox": [
+        13,
+        47,
+        123,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1809
+    },
+    "assets/player_full/compy_walk_E_005.png": {
+      "bbox": [
+        10,
+        51,
+        121,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1822
+    },
+    "assets/player_full/compy_run_E_000.png": {
+      "bbox": [
+        20,
+        53,
+        137,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1817
+    },
+    "assets/player_full/compy_run_E_001.png": {
+      "bbox": [
+        19,
+        48,
+        133,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1879
+    },
+    "assets/player_full/compy_run_E_002.png": {
+      "bbox": [
+        14,
+        49,
+        129,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1880
+    },
+    "assets/player_full/compy_run_E_003.png": {
+      "bbox": [
+        12,
+        55,
+        128,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1904
+    },
+    "assets/player_full/compy_run_E_004.png": {
+      "bbox": [
+        10,
+        47,
+        125,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1867
+    },
+    "assets/player_full/compy_run_E_005.png": {
+      "bbox": [
+        10,
+        48,
+        119,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1768
+    },
+    "assets/player_full/compy_attack_E_000.png": {
+      "bbox": [
+        20,
+        54,
+        128,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1602
+    },
+    "assets/player_full/compy_attack_E_001.png": {
+      "bbox": [
+        22,
+        50,
+        131,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1797
+    },
+    "assets/player_full/compy_attack_E_002.png": {
+      "bbox": [
+        15,
+        54,
+        120,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1809
+    },
+    "assets/player_full/compy_attack_E_003.png": {
+      "bbox": [
+        12,
+        53,
+        129,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1844
+    },
+    "assets/player_full/compy_attack_E_004.png": {
+      "bbox": [
+        10,
+        53,
+        120,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1726
+    },
+    "assets/player_full/compy_attack_E_005.png": {
+      "bbox": [
+        10,
+        53,
+        121,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1645
+    },
+    "assets/player_full/compy_death_E_000.png": {
+      "bbox": [
+        20,
+        54,
+        129,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1703
+    },
+    "assets/player_full/compy_death_E_001.png": {
+      "bbox": [
+        19,
+        53,
+        129,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1678
+    },
+    "assets/player_full/compy_death_E_002.png": {
+      "bbox": [
+        18,
+        53,
+        125,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1724
+    },
+    "assets/player_full/compy_death_E_003.png": {
+      "bbox": [
+        10,
+        53,
+        125,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1806
+    },
+    "assets/player_full/compy_death_E_004.png": {
+      "bbox": [
+        10,
+        54,
+        123,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1825
+    },
+    "assets/player_full/compy_death_E_005.png": {
+      "bbox": [
+        5,
+        53,
+        123,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1916
+    },
+    "assets/player_full/utahraptor_idle_E_000.png": {
+      "bbox": [
+        16,
+        48,
+        135,
+        98
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2511
+    },
+    "assets/player_full/utahraptor_idle_E_001.png": {
+      "bbox": [
+        17,
+        48,
+        134,
+        98
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2496
+    },
+    "assets/player_full/utahraptor_idle_E_002.png": {
+      "bbox": [
+        16,
+        51,
+        134,
+        95
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2616
+    },
+    "assets/player_full/utahraptor_idle_E_003.png": {
+      "bbox": [
+        15,
+        48,
+        134,
+        97
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2520
+    },
+    "assets/player_full/utahraptor_hurt_E_000.png": {
+      "bbox": [
+        17,
+        48,
+        134,
+        104
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2566
+    },
+    "assets/player_full/utahraptor_hurt_E_001.png": {
+      "bbox": [
+        14,
+        52,
+        132,
+        107
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2824
+    },
+    "assets/player_full/utahraptor_walk_E_000.png": {
+      "bbox": [
+        14,
+        52,
+        135,
+        103
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2610
+    },
+    "assets/player_full/utahraptor_walk_E_001.png": {
+      "bbox": [
+        14,
+        51,
+        134,
+        98
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2451
+    },
+    "assets/player_full/utahraptor_walk_E_002.png": {
+      "bbox": [
+        14,
+        50,
+        134,
+        102
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2677
+    },
+    "assets/player_full/utahraptor_walk_E_003.png": {
+      "bbox": [
+        15,
+        50,
+        134,
+        99
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2662
+    },
+    "assets/player_full/utahraptor_walk_E_004.png": {
+      "bbox": [
+        14,
+        53,
+        134,
+        102
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2702
+    },
+    "assets/player_full/utahraptor_walk_E_005.png": {
+      "bbox": [
+        13,
+        50,
+        134,
+        107
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2620
+    },
+    "assets/player_full/utahraptor_run_E_000.png": {
+      "bbox": [
+        14,
+        50,
+        135,
+        104
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2530
+    },
+    "assets/player_full/utahraptor_run_E_001.png": {
+      "bbox": [
+        15,
+        52,
+        134,
+        99
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2410
+    },
+    "assets/player_full/utahraptor_run_E_002.png": {
+      "bbox": [
+        14,
+        52,
+        131,
+        105
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2631
+    },
+    "assets/player_full/utahraptor_run_E_003.png": {
+      "bbox": [
+        13,
+        49,
+        134,
+        105
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2622
+    },
+    "assets/player_full/utahraptor_run_E_004.png": {
+      "bbox": [
+        14,
+        51,
+        134,
+        108
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2521
+    },
+    "assets/player_full/utahraptor_run_E_005.png": {
+      "bbox": [
+        13,
+        51,
+        133,
+        97
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2562
+    },
+    "assets/player_full/utahraptor_attack_E_000.png": {
+      "bbox": [
+        16,
+        46,
+        135,
+        95
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2491
+    },
+    "assets/player_full/utahraptor_attack_E_001.png": {
+      "bbox": [
+        16,
+        49,
+        134,
+        103
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2709
+    },
+    "assets/player_full/utahraptor_attack_E_002.png": {
+      "bbox": [
+        12,
+        46,
+        129,
+        102
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2700
+    },
+    "assets/player_full/utahraptor_attack_E_003.png": {
+      "bbox": [
+        11,
+        49,
+        130,
+        94
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2463
+    },
+    "assets/player_full/utahraptor_attack_E_004.png": {
+      "bbox": [
+        7,
+        42,
+        131,
+        99
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2758
+    },
+    "assets/player_full/utahraptor_attack_E_005.png": {
+      "bbox": [
+        13,
+        47,
+        131,
+        95
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2700
+    },
+    "assets/player_full/utahraptor_death_E_000.png": {
+      "bbox": [
+        16,
+        38,
+        133,
+        99
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2779
+    },
+    "assets/player_full/utahraptor_death_E_001.png": {
+      "bbox": [
+        12,
+        41,
+        135,
+        98
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2814
+    },
+    "assets/player_full/utahraptor_death_E_002.png": {
+      "bbox": [
+        13,
+        45,
+        131,
+        97
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2518
+    },
+    "assets/player_full/utahraptor_death_E_003.png": {
+      "bbox": [
+        13,
+        44,
+        136,
+        91
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2696
+    },
+    "assets/player_full/utahraptor_death_E_004.png": {
+      "bbox": [
+        10,
+        48,
+        131,
+        91
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2587
+    },
+    "assets/player_full/utahraptor_death_E_005.png": {
+      "bbox": [
+        6,
+        47,
+        131,
+        91
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "opaque_pixels": 2613
+    },
+    "assets/player_full/carnotaurus_idle_E_000.png": {
+      "bbox": [
+        14,
+        51,
+        131,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2300
+    },
+    "assets/player_full/carnotaurus_idle_E_001.png": {
+      "bbox": [
+        13,
+        51,
+        131,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2391
+    },
+    "assets/player_full/carnotaurus_idle_E_002.png": {
+      "bbox": [
+        13,
+        51,
+        131,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2358
+    },
+    "assets/player_full/carnotaurus_idle_E_003.png": {
+      "bbox": [
+        13,
+        51,
+        130,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2355
+    },
+    "assets/player_full/carnotaurus_hurt_E_000.png": {
+      "bbox": [
+        12,
+        47,
+        127,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2340
+    },
+    "assets/player_full/carnotaurus_hurt_E_001.png": {
+      "bbox": [
+        12,
+        51,
+        127,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2293
+    },
+    "assets/player_full/carnotaurus_walk_E_000.png": {
+      "bbox": [
+        14,
+        45,
+        132,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2319
+    },
+    "assets/player_full/carnotaurus_walk_E_001.png": {
+      "bbox": [
+        14,
+        45,
+        132,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2251
+    },
+    "assets/player_full/carnotaurus_walk_E_002.png": {
+      "bbox": [
+        13,
+        45,
+        131,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2304
+    },
+    "assets/player_full/carnotaurus_walk_E_003.png": {
+      "bbox": [
+        13,
+        45,
+        130,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2255
+    },
+    "assets/player_full/carnotaurus_walk_E_004.png": {
+      "bbox": [
+        12,
+        46,
+        130,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2272
+    },
+    "assets/player_full/carnotaurus_walk_E_005.png": {
+      "bbox": [
+        12,
+        45,
+        129,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2312
+    },
+    "assets/player_full/carnotaurus_run_E_000.png": {
+      "bbox": [
+        14,
+        46,
+        132,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2332
+    },
+    "assets/player_full/carnotaurus_run_E_001.png": {
+      "bbox": [
+        16,
+        46,
+        135,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2218
+    },
+    "assets/player_full/carnotaurus_run_E_002.png": {
+      "bbox": [
+        13,
+        46,
+        131,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2207
+    },
+    "assets/player_full/carnotaurus_run_E_003.png": {
+      "bbox": [
+        13,
+        46,
+        130,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2350
+    },
+    "assets/player_full/carnotaurus_run_E_004.png": {
+      "bbox": [
+        12,
+        46,
+        130,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2276
+    },
+    "assets/player_full/carnotaurus_run_E_005.png": {
+      "bbox": [
+        12,
+        48,
+        129,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2243
+    },
+    "assets/player_full/carnotaurus_attack_E_000.png": {
+      "bbox": [
+        14,
+        42,
+        131,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2413
+    },
+    "assets/player_full/carnotaurus_attack_E_001.png": {
+      "bbox": [
+        13,
+        42,
+        131,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2380
+    },
+    "assets/player_full/carnotaurus_attack_E_002.png": {
+      "bbox": [
+        14,
+        42,
+        129,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2477
+    },
+    "assets/player_full/carnotaurus_attack_E_003.png": {
+      "bbox": [
+        13,
+        44,
+        137,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2441
+    },
+    "assets/player_full/carnotaurus_attack_E_004.png": {
+      "bbox": [
+        12,
+        42,
+        130,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2342
+    },
+    "assets/player_full/carnotaurus_attack_E_005.png": {
+      "bbox": [
+        12,
+        42,
+        129,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2366
+    },
+    "assets/player_full/carnotaurus_death_E_000.png": {
+      "bbox": [
+        14,
+        42,
+        132,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2488
+    },
+    "assets/player_full/carnotaurus_death_E_001.png": {
+      "bbox": [
+        13,
+        42,
+        132,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2430
+    },
+    "assets/player_full/carnotaurus_death_E_002.png": {
+      "bbox": [
+        14,
+        41,
+        130,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2432
+    },
+    "assets/player_full/carnotaurus_death_E_003.png": {
+      "bbox": [
+        13,
+        40,
+        131,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2492
+    },
+    "assets/player_full/carnotaurus_death_E_004.png": {
+      "bbox": [
+        12,
+        42,
+        131,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2343
+    },
+    "assets/player_full/carnotaurus_death_E_005.png": {
+      "bbox": [
+        12,
+        42,
+        129,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2277
+    },
+    "assets/player_full/ankylosaurus_idle_E_000.png": {
+      "bbox": [
+        20,
+        47,
+        128,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2894
+    },
+    "assets/player_full/ankylosaurus_idle_E_001.png": {
+      "bbox": [
+        17,
+        47,
+        124,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2888
+    },
+    "assets/player_full/ankylosaurus_idle_E_002.png": {
+      "bbox": [
+        13,
+        47,
+        122,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2951
+    },
+    "assets/player_full/ankylosaurus_idle_E_003.png": {
+      "bbox": [
+        11,
+        47,
+        121,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2958
+    },
+    "assets/player_full/ankylosaurus_hurt_E_000.png": {
+      "bbox": [
+        9,
+        48,
+        118,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2910
+    },
+    "assets/player_full/ankylosaurus_hurt_E_001.png": {
+      "bbox": [
+        9,
+        49,
+        116,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2822
+    },
+    "assets/player_full/ankylosaurus_walk_E_000.png": {
+      "bbox": [
+        20,
+        45,
+        131,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2985
+    },
+    "assets/player_full/ankylosaurus_walk_E_001.png": {
+      "bbox": [
+        17,
+        47,
+        127,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2949
+    },
+    "assets/player_full/ankylosaurus_walk_E_002.png": {
+      "bbox": [
+        13,
+        46,
+        125,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3025
+    },
+    "assets/player_full/ankylosaurus_walk_E_003.png": {
+      "bbox": [
+        10,
+        47,
+        122,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3005
+    },
+    "assets/player_full/ankylosaurus_walk_E_004.png": {
+      "bbox": [
+        9,
+        48,
+        120,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2976
+    },
+    "assets/player_full/ankylosaurus_walk_E_005.png": {
+      "bbox": [
+        8,
+        46,
+        119,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2939
+    },
+    "assets/player_full/ankylosaurus_run_E_000.png": {
+      "bbox": [
+        17,
+        48,
+        128,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2963
+    },
+    "assets/player_full/ankylosaurus_run_E_001.png": {
+      "bbox": [
+        16,
+        48,
+        127,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2961
+    },
+    "assets/player_full/ankylosaurus_run_E_002.png": {
+      "bbox": [
+        12,
+        48,
+        125,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2987
+    },
+    "assets/player_full/ankylosaurus_run_E_003.png": {
+      "bbox": [
+        12,
+        48,
+        125,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2921
+    },
+    "assets/player_full/ankylosaurus_run_E_004.png": {
+      "bbox": [
+        9,
+        48,
+        120,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2961
+    },
+    "assets/player_full/ankylosaurus_run_E_005.png": {
+      "bbox": [
+        11,
+        48,
+        120,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3039
+    },
+    "assets/player_full/ankylosaurus_attack_E_000.png": {
+      "bbox": [
+        17,
+        45,
+        131,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3073
+    },
+    "assets/player_full/ankylosaurus_attack_E_001.png": {
+      "bbox": [
+        29,
+        32,
+        129,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3058
+    },
+    "assets/player_full/ankylosaurus_attack_E_002.png": {
+      "bbox": [
+        44,
+        23,
+        125,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2968
+    },
+    "assets/player_full/ankylosaurus_attack_E_003.png": {
+      "bbox": [
+        20,
+        46,
+        129,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3096
+    },
+    "assets/player_full/ankylosaurus_attack_E_004.png": {
+      "bbox": [
+        14,
+        46,
+        124,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2958
+    },
+    "assets/player_full/ankylosaurus_attack_E_005.png": {
+      "bbox": [
+        8,
+        45,
+        120,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3041
+    },
+    "assets/player_full/ankylosaurus_death_E_000.png": {
+      "bbox": [
+        17,
+        38,
+        129,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3077
+    },
+    "assets/player_full/ankylosaurus_death_E_001.png": {
+      "bbox": [
+        9,
+        39,
+        124,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3088
+    },
+    "assets/player_full/ankylosaurus_death_E_002.png": {
+      "bbox": [
+        12,
+        41,
+        125,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3079
+    },
+    "assets/player_full/ankylosaurus_death_E_003.png": {
+      "bbox": [
+        9,
+        44,
+        125,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3100
+    },
+    "assets/player_full/ankylosaurus_death_E_004.png": {
+      "bbox": [
+        9,
+        44,
+        120,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2988
+    },
+    "assets/player_full/ankylosaurus_death_E_005.png": {
+      "bbox": [
+        4,
+        44,
+        120,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3091
+    },
+    "assets/player_full/compy_idle_N_000.png": {
+      "bbox": [
+        55,
+        31,
+        90,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1119
+    },
+    "assets/player_full/compy_idle_N_001.png": {
+      "bbox": [
+        54,
+        31,
+        89,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1095
+    },
+    "assets/player_full/compy_idle_N_002.png": {
+      "bbox": [
+        54,
+        31,
+        88,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1112
+    },
+    "assets/player_full/compy_idle_N_003.png": {
+      "bbox": [
+        54,
+        31,
+        89,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1124
+    },
+    "assets/player_full/compy_hurt_N_000.png": {
+      "bbox": [
+        54,
+        37,
+        91,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1064
+    },
+    "assets/player_full/compy_hurt_N_001.png": {
+      "bbox": [
+        52,
+        39,
+        88,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1052
+    },
+    "assets/player_full/compy_walk_N_000.png": {
+      "bbox": [
+        54,
+        30,
+        88,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1209
+    },
+    "assets/player_full/compy_walk_N_001.png": {
+      "bbox": [
+        54,
+        26,
+        89,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1248
+    },
+    "assets/player_full/compy_walk_N_002.png": {
+      "bbox": [
+        51,
+        29,
+        86,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1236
+    },
+    "assets/player_full/compy_walk_N_003.png": {
+      "bbox": [
+        58,
+        27,
+        92,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1288
+    },
+    "assets/player_full/compy_walk_N_004.png": {
+      "bbox": [
+        54,
+        26,
+        88,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1245
+    },
+    "assets/player_full/compy_walk_N_005.png": {
+      "bbox": [
+        54,
+        28,
+        89,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1256
+    },
+    "assets/player_full/compy_run_N_000.png": {
+      "bbox": [
+        54,
+        26,
+        88,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1214
+    },
+    "assets/player_full/compy_run_N_001.png": {
+      "bbox": [
+        55,
+        19,
+        89,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1253
+    },
+    "assets/player_full/compy_run_N_002.png": {
+      "bbox": [
+        52,
+        23,
+        87,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1245
+    },
+    "assets/player_full/compy_run_N_003.png": {
+      "bbox": [
+        54,
+        23,
+        90,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1321
+    },
+    "assets/player_full/compy_run_N_004.png": {
+      "bbox": [
+        53,
+        21,
+        90,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1358
+    },
+    "assets/player_full/compy_run_N_005.png": {
+      "bbox": [
+        51,
+        21,
+        86,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1256
+    },
+    "assets/player_full/compy_attack_N_000.png": {
+      "bbox": [
+        53,
+        31,
+        88,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1206
+    },
+    "assets/player_full/compy_attack_N_001.png": {
+      "bbox": [
+        53,
+        30,
+        89,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1260
+    },
+    "assets/player_full/compy_attack_N_002.png": {
+      "bbox": [
+        55,
+        24,
+        86,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1297
+    },
+    "assets/player_full/compy_attack_N_003.png": {
+      "bbox": [
+        57,
+        31,
+        93,
+        119
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1289
+    },
+    "assets/player_full/compy_attack_N_004.png": {
+      "bbox": [
+        53,
+        34,
+        93,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1157
+    },
+    "assets/player_full/compy_attack_N_005.png": {
+      "bbox": [
+        53,
+        31,
+        89,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1231
+    },
+    "assets/player_full/compy_death_N_000.png": {
+      "bbox": [
+        50,
+        30,
+        91,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1238
+    },
+    "assets/player_full/compy_death_N_001.png": {
+      "bbox": [
+        48,
+        32,
+        90,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1314
+    },
+    "assets/player_full/compy_death_N_002.png": {
+      "bbox": [
+        48,
+        29,
+        100,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1417
+    },
+    "assets/player_full/compy_death_N_003.png": {
+      "bbox": [
+        46,
+        35,
+        108,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1510
+    },
+    "assets/player_full/compy_death_N_004.png": {
+      "bbox": [
+        43,
+        34,
+        103,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1609
+    },
+    "assets/player_full/compy_death_N_005.png": {
+      "bbox": [
+        41,
+        34,
+        99,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1576
+    },
+    "assets/player_full/utahraptor_idle_N_000.png": {
+      "bbox": [
+        54,
+        22,
+        94,
+        109
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1598
+    },
+    "assets/player_full/utahraptor_idle_N_001.png": {
+      "bbox": [
+        51,
+        21,
+        93,
+        109
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1643
+    },
+    "assets/player_full/utahraptor_idle_N_002.png": {
+      "bbox": [
+        49,
+        21,
+        91,
+        109
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1629
+    },
+    "assets/player_full/utahraptor_idle_N_003.png": {
+      "bbox": [
+        50,
+        20,
+        93,
+        110
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1699
+    },
+    "assets/player_full/utahraptor_hurt_N_000.png": {
+      "bbox": [
+        49,
+        17,
+        92,
+        109
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1698
+    },
+    "assets/player_full/utahraptor_hurt_N_001.png": {
+      "bbox": [
+        46,
+        19,
+        90,
+        109
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1809
+    },
+    "assets/player_full/utahraptor_walk_N_000.png": {
+      "bbox": [
+        52,
+        16,
+        93,
+        104
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1744
+    },
+    "assets/player_full/utahraptor_walk_N_001.png": {
+      "bbox": [
+        48,
+        15,
+        91,
+        104
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1776
+    },
+    "assets/player_full/utahraptor_walk_N_002.png": {
+      "bbox": [
+        52,
+        16,
+        92,
+        104
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1693
+    },
+    "assets/player_full/utahraptor_walk_N_003.png": {
+      "bbox": [
+        49,
+        16,
+        91,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1785
+    },
+    "assets/player_full/utahraptor_walk_N_004.png": {
+      "bbox": [
+        51,
+        16,
+        92,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1671
+    },
+    "assets/player_full/utahraptor_walk_N_005.png": {
+      "bbox": [
+        48,
+        17,
+        90,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1820
+    },
+    "assets/player_full/utahraptor_run_N_000.png": {
+      "bbox": [
+        49,
+        14,
+        93,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1783
+    },
+    "assets/player_full/utahraptor_run_N_001.png": {
+      "bbox": [
+        49,
+        13,
+        93,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1970
+    },
+    "assets/player_full/utahraptor_run_N_002.png": {
+      "bbox": [
+        52,
+        13,
+        92,
+        106
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1847
+    },
+    "assets/player_full/utahraptor_run_N_003.png": {
+      "bbox": [
+        48,
+        14,
+        90,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1851
+    },
+    "assets/player_full/utahraptor_run_N_004.png": {
+      "bbox": [
+        49,
+        13,
+        91,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1944
+    },
+    "assets/player_full/utahraptor_run_N_005.png": {
+      "bbox": [
+        49,
+        12,
+        92,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1886
+    },
+    "assets/player_full/utahraptor_attack_N_000.png": {
+      "bbox": [
+        52,
+        18,
+        93,
+        106
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1685
+    },
+    "assets/player_full/utahraptor_attack_N_001.png": {
+      "bbox": [
+        49,
+        18,
+        95,
+        106
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1805
+    },
+    "assets/player_full/utahraptor_attack_N_002.png": {
+      "bbox": [
+        47,
+        14,
+        92,
+        107
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1772
+    },
+    "assets/player_full/utahraptor_attack_N_003.png": {
+      "bbox": [
+        53,
+        17,
+        96,
+        106
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1752
+    },
+    "assets/player_full/utahraptor_attack_N_004.png": {
+      "bbox": [
+        48,
+        16,
+        91,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1714
+    },
+    "assets/player_full/utahraptor_attack_N_005.png": {
+      "bbox": [
+        50,
+        18,
+        90,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1698
+    },
+    "assets/player_full/utahraptor_death_N_000.png": {
+      "bbox": [
+        48,
+        14,
+        94,
+        107
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1980
+    },
+    "assets/player_full/utahraptor_death_N_001.png": {
+      "bbox": [
+        48,
+        20,
+        97,
+        105
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1919
+    },
+    "assets/player_full/utahraptor_death_N_002.png": {
+      "bbox": [
+        44,
+        24,
+        95,
+        108
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 1728
+    },
+    "assets/player_full/utahraptor_death_N_003.png": {
+      "bbox": [
+        46,
+        16,
+        98,
+        108
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 2014
+    },
+    "assets/player_full/utahraptor_death_N_004.png": {
+      "bbox": [
+        41,
+        16,
+        101,
+        109
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 2013
+    },
+    "assets/player_full/utahraptor_death_N_005.png": {
+      "bbox": [
+        40,
+        16,
+        100,
+        108
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "opaque_pixels": 2010
+    },
+    "assets/player_full/carnotaurus_idle_N_000.png": {
+      "bbox": [
+        54,
+        18,
+        89,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1781
+    },
+    "assets/player_full/carnotaurus_idle_N_001.png": {
+      "bbox": [
+        56,
+        18,
+        90,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1798
+    },
+    "assets/player_full/carnotaurus_idle_N_002.png": {
+      "bbox": [
+        54,
+        19,
+        89,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1792
+    },
+    "assets/player_full/carnotaurus_idle_N_003.png": {
+      "bbox": [
+        56,
+        19,
+        90,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1801
+    },
+    "assets/player_full/carnotaurus_hurt_N_000.png": {
+      "bbox": [
+        53,
+        18,
+        89,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1841
+    },
+    "assets/player_full/carnotaurus_hurt_N_001.png": {
+      "bbox": [
+        46,
+        18,
+        80,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1776
+    },
+    "assets/player_full/carnotaurus_walk_N_000.png": {
+      "bbox": [
+        54,
+        15,
+        88,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1756
+    },
+    "assets/player_full/carnotaurus_walk_N_001.png": {
+      "bbox": [
+        53,
+        16,
+        87,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1795
+    },
+    "assets/player_full/carnotaurus_walk_N_002.png": {
+      "bbox": [
+        50,
+        16,
+        84,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1829
+    },
+    "assets/player_full/carnotaurus_walk_N_003.png": {
+      "bbox": [
+        49,
+        15,
+        83,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1838
+    },
+    "assets/player_full/carnotaurus_walk_N_004.png": {
+      "bbox": [
+        48,
+        16,
+        83,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1843
+    },
+    "assets/player_full/carnotaurus_walk_N_005.png": {
+      "bbox": [
+        48,
+        15,
+        81,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1750
+    },
+    "assets/player_full/carnotaurus_run_N_000.png": {
+      "bbox": [
+        47,
+        19,
+        81,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1818
+    },
+    "assets/player_full/carnotaurus_run_N_001.png": {
+      "bbox": [
+        53,
+        19,
+        90,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1833
+    },
+    "assets/player_full/carnotaurus_run_N_002.png": {
+      "bbox": [
+        52,
+        20,
+        90,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1854
+    },
+    "assets/player_full/carnotaurus_run_N_003.png": {
+      "bbox": [
+        45,
+        20,
+        80,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1815
+    },
+    "assets/player_full/carnotaurus_run_N_004.png": {
+      "bbox": [
+        47,
+        18,
+        83,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1865
+    },
+    "assets/player_full/carnotaurus_run_N_005.png": {
+      "bbox": [
+        53,
+        19,
+        88,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1825
+    },
+    "assets/player_full/carnotaurus_attack_N_000.png": {
+      "bbox": [
+        54,
+        20,
+        90,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1848
+    },
+    "assets/player_full/carnotaurus_attack_N_001.png": {
+      "bbox": [
+        52,
+        21,
+        87,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1969
+    },
+    "assets/player_full/carnotaurus_attack_N_002.png": {
+      "bbox": [
+        51,
+        18,
+        86,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2011
+    },
+    "assets/player_full/carnotaurus_attack_N_003.png": {
+      "bbox": [
+        51,
+        20,
+        89,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2054
+    },
+    "assets/player_full/carnotaurus_attack_N_004.png": {
+      "bbox": [
+        53,
+        19,
+        90,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1966
+    },
+    "assets/player_full/carnotaurus_attack_N_005.png": {
+      "bbox": [
+        45,
+        19,
+        81,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1842
+    },
+    "assets/player_full/carnotaurus_death_N_000.png": {
+      "bbox": [
+        54,
+        18,
+        91,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2010
+    },
+    "assets/player_full/carnotaurus_death_N_001.png": {
+      "bbox": [
+        51,
+        24,
+        94,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2025
+    },
+    "assets/player_full/carnotaurus_death_N_002.png": {
+      "bbox": [
+        46,
+        25,
+        99,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2023
+    },
+    "assets/player_full/carnotaurus_death_N_003.png": {
+      "bbox": [
+        35,
+        26,
+        99,
+        124
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2076
+    },
+    "assets/player_full/carnotaurus_death_N_004.png": {
+      "bbox": [
+        36,
+        23,
+        104,
+        124
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2374
+    },
+    "assets/player_full/carnotaurus_death_N_005.png": {
+      "bbox": [
+        33,
+        23,
+        101,
+        124
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2367
+    },
+    "assets/player_full/ankylosaurus_idle_N_000.png": {
+      "bbox": [
+        47,
+        8,
+        100,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2948
+    },
+    "assets/player_full/ankylosaurus_idle_N_001.png": {
+      "bbox": [
+        46,
+        8,
+        98,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2937
+    },
+    "assets/player_full/ankylosaurus_idle_N_002.png": {
+      "bbox": [
+        47,
+        8,
+        99,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2919
+    },
+    "assets/player_full/ankylosaurus_idle_N_003.png": {
+      "bbox": [
+        49,
+        8,
+        102,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2940
+    },
+    "assets/player_full/ankylosaurus_hurt_N_000.png": {
+      "bbox": [
+        47,
+        9,
+        98,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2864
+    },
+    "assets/player_full/ankylosaurus_hurt_N_001.png": {
+      "bbox": [
+        53,
+        13,
+        107,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2884
+    },
+    "assets/player_full/ankylosaurus_walk_N_000.png": {
+      "bbox": [
+        46,
+        14,
+        99,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2741
+    },
+    "assets/player_full/ankylosaurus_walk_N_001.png": {
+      "bbox": [
+        45,
+        16,
+        98,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2887
+    },
+    "assets/player_full/ankylosaurus_walk_N_002.png": {
+      "bbox": [
+        44,
+        15,
+        97,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2764
+    },
+    "assets/player_full/ankylosaurus_walk_N_003.png": {
+      "bbox": [
+        47,
+        15,
+        100,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2817
+    },
+    "assets/player_full/ankylosaurus_walk_N_004.png": {
+      "bbox": [
+        48,
+        16,
+        100,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2809
+    },
+    "assets/player_full/ankylosaurus_walk_N_005.png": {
+      "bbox": [
+        47,
+        14,
+        99,
+        109
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2751
+    },
+    "assets/player_full/ankylosaurus_run_N_000.png": {
+      "bbox": [
+        44,
+        8,
+        97,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2777
+    },
+    "assets/player_full/ankylosaurus_run_N_001.png": {
+      "bbox": [
+        45,
+        8,
+        97,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2803
+    },
+    "assets/player_full/ankylosaurus_run_N_002.png": {
+      "bbox": [
+        45,
+        8,
+        98,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2960
+    },
+    "assets/player_full/ankylosaurus_run_N_003.png": {
+      "bbox": [
+        47,
+        9,
+        102,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2861
+    },
+    "assets/player_full/ankylosaurus_run_N_004.png": {
+      "bbox": [
+        50,
+        10,
+        103,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2935
+    },
+    "assets/player_full/ankylosaurus_run_N_005.png": {
+      "bbox": [
+        53,
+        8,
+        106,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2883
+    },
+    "assets/player_full/ankylosaurus_attack_N_000.png": {
+      "bbox": [
+        48,
+        9,
+        101,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2806
+    },
+    "assets/player_full/ankylosaurus_attack_N_001.png": {
+      "bbox": [
+        45,
+        9,
+        106,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2773
+    },
+    "assets/player_full/ankylosaurus_attack_N_002.png": {
+      "bbox": [
+        9,
+        10,
+        95,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2736
+    },
+    "assets/player_full/ankylosaurus_attack_N_003.png": {
+      "bbox": [
+        40,
+        7,
+        132,
+        81
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2838
+    },
+    "assets/player_full/ankylosaurus_attack_N_004.png": {
+      "bbox": [
+        33,
+        10,
+        104,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2841
+    },
+    "assets/player_full/ankylosaurus_attack_N_005.png": {
+      "bbox": [
+        49,
+        8,
+        103,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2874
+    },
+    "assets/player_full/ankylosaurus_death_N_000.png": {
+      "bbox": [
+        49,
+        11,
+        103,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2845
+    },
+    "assets/player_full/ankylosaurus_death_N_001.png": {
+      "bbox": [
+        42,
+        19,
+        101,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2738
+    },
+    "assets/player_full/ankylosaurus_death_N_002.png": {
+      "bbox": [
+        42,
+        14,
+        105,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2884
+    },
+    "assets/player_full/ankylosaurus_death_N_003.png": {
+      "bbox": [
+        42,
+        11,
+        105,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2894
+    },
+    "assets/player_full/ankylosaurus_death_N_004.png": {
+      "bbox": [
+        41,
+        11,
+        108,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3003
+    },
+    "assets/player_full/ankylosaurus_death_N_005.png": {
+      "bbox": [
+        43,
+        12,
+        110,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3003
+    },
+    "assets/player_full/compy_idle_W_000.png": {
+      "bbox": [
+        21,
+        56,
+        127,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1439
+    },
+    "assets/player_full/compy_idle_W_001.png": {
+      "bbox": [
+        21,
+        56,
+        126,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1461
+    },
+    "assets/player_full/compy_idle_W_002.png": {
+      "bbox": [
+        19,
+        54,
+        126,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1507
+    },
+    "assets/player_full/compy_idle_W_003.png": {
+      "bbox": [
+        17,
+        56,
+        125,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1488
+    },
+    "assets/player_full/compy_hurt_W_000.png": {
+      "bbox": [
+        23,
+        53,
+        121,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1498
+    },
+    "assets/player_full/compy_hurt_W_001.png": {
+      "bbox": [
+        16,
+        54,
+        119,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1535
+    },
+    "assets/player_full/compy_walk_W_000.png": {
+      "bbox": [
+        21,
+        54,
+        129,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1584
+    },
+    "assets/player_full/compy_walk_W_001.png": {
+      "bbox": [
+        19,
+        53,
+        128,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1556
+    },
+    "assets/player_full/compy_walk_W_002.png": {
+      "bbox": [
+        19,
+        54,
+        127,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1542
+    },
+    "assets/player_full/compy_walk_W_003.png": {
+      "bbox": [
+        17,
+        53,
+        126,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1542
+    },
+    "assets/player_full/compy_walk_W_004.png": {
+      "bbox": [
+        20,
+        53,
+        123,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1523
+    },
+    "assets/player_full/compy_walk_W_005.png": {
+      "bbox": [
+        14,
+        51,
+        123,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1578
+    },
+    "assets/player_full/compy_run_W_000.png": {
+      "bbox": [
+        21,
+        54,
+        131,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1582
+    },
+    "assets/player_full/compy_run_W_001.png": {
+      "bbox": [
+        21,
+        52,
+        129,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1684
+    },
+    "assets/player_full/compy_run_W_002.png": {
+      "bbox": [
+        18,
+        54,
+        129,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1628
+    },
+    "assets/player_full/compy_run_W_003.png": {
+      "bbox": [
+        18,
+        54,
+        128,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1696
+    },
+    "assets/player_full/compy_run_W_004.png": {
+      "bbox": [
+        16,
+        53,
+        125,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1573
+    },
+    "assets/player_full/compy_run_W_005.png": {
+      "bbox": [
+        16,
+        52,
+        124,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1581
+    },
+    "assets/player_full/compy_attack_W_000.png": {
+      "bbox": [
+        22,
+        54,
+        128,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1527
+    },
+    "assets/player_full/compy_attack_W_001.png": {
+      "bbox": [
+        18,
+        52,
+        130,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1692
+    },
+    "assets/player_full/compy_attack_W_002.png": {
+      "bbox": [
+        15,
+        53,
+        130,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1665
+    },
+    "assets/player_full/compy_attack_W_003.png": {
+      "bbox": [
+        13,
+        52,
+        134,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1706
+    },
+    "assets/player_full/compy_attack_W_004.png": {
+      "bbox": [
+        21,
+        53,
+        126,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1593
+    },
+    "assets/player_full/compy_attack_W_005.png": {
+      "bbox": [
+        14,
+        53,
+        124,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1613
+    },
+    "assets/player_full/compy_death_W_000.png": {
+      "bbox": [
+        28,
+        50,
+        126,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1569
+    },
+    "assets/player_full/compy_death_W_001.png": {
+      "bbox": [
+        18,
+        50,
+        126,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1628
+    },
+    "assets/player_full/compy_death_W_002.png": {
+      "bbox": [
+        16,
+        50,
+        128,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1697
+    },
+    "assets/player_full/compy_death_W_003.png": {
+      "bbox": [
+        16,
+        50,
+        126,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1737
+    },
+    "assets/player_full/compy_death_W_004.png": {
+      "bbox": [
+        11,
+        47,
+        129,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1833
+    },
+    "assets/player_full/compy_death_W_005.png": {
+      "bbox": [
+        14,
+        58,
+        123,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1543
+    },
+    "assets/player_full/utahraptor_idle_W_000.png": {
+      "bbox": [
+        17,
+        51,
+        128,
+        95
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2076
+    },
+    "assets/player_full/utahraptor_idle_W_001.png": {
+      "bbox": [
+        16,
+        49,
+        126,
+        97
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2036
+    },
+    "assets/player_full/utahraptor_idle_W_002.png": {
+      "bbox": [
+        12,
+        49,
+        124,
+        97
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2079
+    },
+    "assets/player_full/utahraptor_idle_W_003.png": {
+      "bbox": [
+        11,
+        49,
+        120,
+        97
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2051
+    },
+    "assets/player_full/utahraptor_hurt_W_000.png": {
+      "bbox": [
+        13,
+        53,
+        124,
+        100
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2075
+    },
+    "assets/player_full/utahraptor_hurt_W_001.png": {
+      "bbox": [
+        13,
+        51,
+        122,
+        98
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 1976
+    },
+    "assets/player_full/utahraptor_walk_W_000.png": {
+      "bbox": [
+        14,
+        49,
+        129,
+        99
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2191
+    },
+    "assets/player_full/utahraptor_walk_W_001.png": {
+      "bbox": [
+        13,
+        47,
+        125,
+        99
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2136
+    },
+    "assets/player_full/utahraptor_walk_W_002.png": {
+      "bbox": [
+        9,
+        49,
+        126,
+        105
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2217
+    },
+    "assets/player_full/utahraptor_walk_W_003.png": {
+      "bbox": [
+        11,
+        49,
+        128,
+        105
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2238
+    },
+    "assets/player_full/utahraptor_walk_W_004.png": {
+      "bbox": [
+        11,
+        45,
+        126,
+        98
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2228
+    },
+    "assets/player_full/utahraptor_walk_W_005.png": {
+      "bbox": [
+        9,
+        46,
+        122,
+        104
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2208
+    },
+    "assets/player_full/utahraptor_run_W_000.png": {
+      "bbox": [
+        11,
+        53,
+        132,
+        103
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2265
+    },
+    "assets/player_full/utahraptor_run_W_001.png": {
+      "bbox": [
+        12,
+        52,
+        130,
+        101
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2283
+    },
+    "assets/player_full/utahraptor_run_W_002.png": {
+      "bbox": [
+        9,
+        50,
+        125,
+        106
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2341
+    },
+    "assets/player_full/utahraptor_run_W_003.png": {
+      "bbox": [
+        3,
+        57,
+        130,
+        108
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2254
+    },
+    "assets/player_full/utahraptor_run_W_004.png": {
+      "bbox": [
+        9,
+        50,
+        125,
+        97
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2172
+    },
+    "assets/player_full/utahraptor_run_W_005.png": {
+      "bbox": [
+        7,
+        50,
+        124,
+        100
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2261
+    },
+    "assets/player_full/utahraptor_attack_W_000.png": {
+      "bbox": [
+        12,
+        49,
+        127,
+        108
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2348
+    },
+    "assets/player_full/utahraptor_attack_W_001.png": {
+      "bbox": [
+        11,
+        48,
+        127,
+        108
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2426
+    },
+    "assets/player_full/utahraptor_attack_W_002.png": {
+      "bbox": [
+        11,
+        50,
+        122,
+        110
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2455
+    },
+    "assets/player_full/utahraptor_attack_W_003.png": {
+      "bbox": [
+        2,
+        52,
+        132,
+        109
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2552
+    },
+    "assets/player_full/utahraptor_attack_W_004.png": {
+      "bbox": [
+        14,
+        47,
+        129,
+        108
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2193
+    },
+    "assets/player_full/utahraptor_attack_W_005.png": {
+      "bbox": [
+        8,
+        50,
+        122,
+        105
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2296
+    },
+    "assets/player_full/utahraptor_death_W_000.png": {
+      "bbox": [
+        19,
+        35,
+        131,
+        108
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2352
+    },
+    "assets/player_full/utahraptor_death_W_001.png": {
+      "bbox": [
+        14,
+        52,
+        128,
+        105
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2262
+    },
+    "assets/player_full/utahraptor_death_W_002.png": {
+      "bbox": [
+        9,
+        38,
+        129,
+        105
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2550
+    },
+    "assets/player_full/utahraptor_death_W_003.png": {
+      "bbox": [
+        5,
+        43,
+        132,
+        105
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2624
+    },
+    "assets/player_full/utahraptor_death_W_004.png": {
+      "bbox": [
+        6,
+        46,
+        126,
+        98
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2461
+    },
+    "assets/player_full/utahraptor_death_W_005.png": {
+      "bbox": [
+        7,
+        58,
+        124,
+        99
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "opaque_pixels": 2309
+    },
+    "assets/player_full/carnotaurus_idle_W_000.png": {
+      "bbox": [
+        19,
+        48,
+        135,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2414
+    },
+    "assets/player_full/carnotaurus_idle_W_001.png": {
+      "bbox": [
+        16,
+        47,
+        130,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2370
+    },
+    "assets/player_full/carnotaurus_idle_W_002.png": {
+      "bbox": [
+        13,
+        49,
+        129,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2448
+    },
+    "assets/player_full/carnotaurus_idle_W_003.png": {
+      "bbox": [
+        13,
+        47,
+        131,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2473
+    },
+    "assets/player_full/carnotaurus_hurt_W_000.png": {
+      "bbox": [
+        16,
+        47,
+        128,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2376
+    },
+    "assets/player_full/carnotaurus_hurt_W_001.png": {
+      "bbox": [
+        11,
+        49,
+        125,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2410
+    },
+    "assets/player_full/carnotaurus_walk_W_000.png": {
+      "bbox": [
+        18,
+        47,
+        134,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2539
+    },
+    "assets/player_full/carnotaurus_walk_W_001.png": {
+      "bbox": [
+        15,
+        48,
+        134,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2548
+    },
+    "assets/player_full/carnotaurus_walk_W_002.png": {
+      "bbox": [
+        17,
+        46,
+        130,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2473
+    },
+    "assets/player_full/carnotaurus_walk_W_003.png": {
+      "bbox": [
+        12,
+        46,
+        129,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2514
+    },
+    "assets/player_full/carnotaurus_walk_W_004.png": {
+      "bbox": [
+        10,
+        49,
+        130,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2610
+    },
+    "assets/player_full/carnotaurus_walk_W_005.png": {
+      "bbox": [
+        11,
+        48,
+        126,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2463
+    },
+    "assets/player_full/carnotaurus_run_W_000.png": {
+      "bbox": [
+        18,
+        46,
+        134,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2654
+    },
+    "assets/player_full/carnotaurus_run_W_001.png": {
+      "bbox": [
+        15,
+        53,
+        133,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2521
+    },
+    "assets/player_full/carnotaurus_run_W_002.png": {
+      "bbox": [
+        14,
+        55,
+        131,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2528
+    },
+    "assets/player_full/carnotaurus_run_W_003.png": {
+      "bbox": [
+        10,
+        46,
+        130,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2706
+    },
+    "assets/player_full/carnotaurus_run_W_004.png": {
+      "bbox": [
+        12,
+        53,
+        127,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2282
+    },
+    "assets/player_full/carnotaurus_run_W_005.png": {
+      "bbox": [
+        10,
+        51,
+        127,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2509
+    },
+    "assets/player_full/carnotaurus_attack_W_000.png": {
+      "bbox": [
+        18,
+        47,
+        133,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2351
+    },
+    "assets/player_full/carnotaurus_attack_W_001.png": {
+      "bbox": [
+        15,
+        52,
+        132,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2471
+    },
+    "assets/player_full/carnotaurus_attack_W_002.png": {
+      "bbox": [
+        15,
+        48,
+        129,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2599
+    },
+    "assets/player_full/carnotaurus_attack_W_003.png": {
+      "bbox": [
+        9,
+        52,
+        128,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2477
+    },
+    "assets/player_full/carnotaurus_attack_W_004.png": {
+      "bbox": [
+        9,
+        47,
+        129,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2495
+    },
+    "assets/player_full/carnotaurus_attack_W_005.png": {
+      "bbox": [
+        11,
+        47,
+        127,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2439
+    },
+    "assets/player_full/carnotaurus_death_W_000.png": {
+      "bbox": [
+        18,
+        43,
+        131,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2558
+    },
+    "assets/player_full/carnotaurus_death_W_001.png": {
+      "bbox": [
+        15,
+        47,
+        132,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2425
+    },
+    "assets/player_full/carnotaurus_death_W_002.png": {
+      "bbox": [
+        14,
+        37,
+        130,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2550
+    },
+    "assets/player_full/carnotaurus_death_W_003.png": {
+      "bbox": [
+        12,
+        39,
+        128,
+        104
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2478
+    },
+    "assets/player_full/carnotaurus_death_W_004.png": {
+      "bbox": [
+        8,
+        35,
+        126,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2600
+    },
+    "assets/player_full/carnotaurus_death_W_005.png": {
+      "bbox": [
+        7,
+        35,
+        125,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2646
+    },
+    "assets/player_full/ankylosaurus_idle_W_000.png": {
+      "bbox": [
+        18,
+        50,
+        119,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2291
+    },
+    "assets/player_full/ankylosaurus_idle_W_001.png": {
+      "bbox": [
+        18,
+        50,
+        118,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2330
+    },
+    "assets/player_full/ankylosaurus_idle_W_002.png": {
+      "bbox": [
+        17,
+        49,
+        118,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2412
+    },
+    "assets/player_full/ankylosaurus_idle_W_003.png": {
+      "bbox": [
+        18,
+        50,
+        118,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2330
+    },
+    "assets/player_full/ankylosaurus_hurt_W_000.png": {
+      "bbox": [
+        18,
+        48,
+        116,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2395
+    },
+    "assets/player_full/ankylosaurus_hurt_W_001.png": {
+      "bbox": [
+        15,
+        47,
+        116,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2392
+    },
+    "assets/player_full/ankylosaurus_walk_W_000.png": {
+      "bbox": [
+        18,
+        50,
+        121,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2385
+    },
+    "assets/player_full/ankylosaurus_walk_W_001.png": {
+      "bbox": [
+        17,
+        50,
+        122,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2379
+    },
+    "assets/player_full/ankylosaurus_walk_W_002.png": {
+      "bbox": [
+        17,
+        50,
+        123,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2449
+    },
+    "assets/player_full/ankylosaurus_walk_W_003.png": {
+      "bbox": [
+        16,
+        50,
+        121,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2368
+    },
+    "assets/player_full/ankylosaurus_walk_W_004.png": {
+      "bbox": [
+        16,
+        51,
+        122,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2447
+    },
+    "assets/player_full/ankylosaurus_walk_W_005.png": {
+      "bbox": [
+        17,
+        48,
+        120,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2397
+    },
+    "assets/player_full/ankylosaurus_run_W_000.png": {
+      "bbox": [
+        17,
+        48,
+        124,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2429
+    },
+    "assets/player_full/ankylosaurus_run_W_001.png": {
+      "bbox": [
+        17,
+        45,
+        123,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2469
+    },
+    "assets/player_full/ankylosaurus_run_W_002.png": {
+      "bbox": [
+        16,
+        46,
+        124,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2442
+    },
+    "assets/player_full/ankylosaurus_run_W_003.png": {
+      "bbox": [
+        17,
+        45,
+        124,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2416
+    },
+    "assets/player_full/ankylosaurus_run_W_004.png": {
+      "bbox": [
+        15,
+        44,
+        122,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2494
+    },
+    "assets/player_full/ankylosaurus_run_W_005.png": {
+      "bbox": [
+        15,
+        46,
+        120,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2413
+    },
+    "assets/player_full/ankylosaurus_attack_W_000.png": {
+      "bbox": [
+        18,
+        50,
+        119,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2347
+    },
+    "assets/player_full/ankylosaurus_attack_W_001.png": {
+      "bbox": [
+        17,
+        28,
+        117,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2585
+    },
+    "assets/player_full/ankylosaurus_attack_W_002.png": {
+      "bbox": [
+        17,
+        15,
+        92,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2606
+    },
+    "assets/player_full/ankylosaurus_attack_W_003.png": {
+      "bbox": [
+        16,
+        49,
+        120,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2674
+    },
+    "assets/player_full/ankylosaurus_attack_W_004.png": {
+      "bbox": [
+        17,
+        49,
+        122,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2628
+    },
+    "assets/player_full/ankylosaurus_attack_W_005.png": {
+      "bbox": [
+        17,
+        50,
+        118,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2359
+    },
+    "assets/player_full/ankylosaurus_death_W_000.png": {
+      "bbox": [
+        19,
+        42,
+        120,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2403
+    },
+    "assets/player_full/ankylosaurus_death_W_001.png": {
+      "bbox": [
+        17,
+        39,
+        119,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2493
+    },
+    "assets/player_full/ankylosaurus_death_W_002.png": {
+      "bbox": [
+        16,
+        39,
+        121,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2612
+    },
+    "assets/player_full/ankylosaurus_death_W_003.png": {
+      "bbox": [
+        15,
+        38,
+        119,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2669
+    },
+    "assets/player_full/ankylosaurus_death_W_004.png": {
+      "bbox": [
+        17,
+        35,
+        121,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2699
+    },
+    "assets/player_full/ankylosaurus_death_W_005.png": {
+      "bbox": [
+        15,
+        37,
+        118,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2572
+    }
+  },
+  "production_approved": false,
+  "scope": "Complete directional/state inventory, lossless native144 pixels, palette, alpha, padding, hashes, fixed declared hips, separate temporal frames. No anatomical/temporal production certification.",
+  "visual_notes": "See player_full_review.html and native grids on both backgrounds. Small generated body/marking variation remains; no mirrored/rotated directions. Legacy PNGs preserved."
+}

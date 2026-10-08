@@ -22,6 +22,9 @@ def build():
     enemy_overlay = GAME / 'enemy_animation_manifest.json'
     if enemy_overlay.exists():
         manifest += json.loads(enemy_overlay.read_text(encoding='utf-8'))
+    full_overlay = GAME / 'player_full_manifest.json'
+    if full_overlay.exists():
+        manifest += json.loads(full_overlay.read_text(encoding='utf-8'))
     if len({entry['file'] for entry in manifest}) != len(manifest):
         raise SystemExit('Duplicate resource paths in combined manifest')
     for folder in ('assets', 'sounds', 'Source_Generated'):
@@ -48,6 +51,13 @@ def build():
         animations['animations'] += enemy['animations']
         animations['enemy_frame_plan'] = enemy['frame_plan_exception']
         animations['enemy_runtime'] = 'See enemy_animation_runtime_report.json; artwork retains prototype status.'
+        (GAME / 'animation_manifest.json').write_text(json.dumps(animations, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    full_animations = GAME / 'player_full_animations.json'
+    if full_animations.exists():
+        animations = json.loads((GAME / 'animation_manifest.json').read_text(encoding='utf-8'))
+        full = json.loads(full_animations.read_text(encoding='utf-8'))
+        animations['animations'] += full['animations']
+        animations['player_full_frame_plan'] = full['frame_plan_exception']
         (GAME / 'animation_manifest.json').write_text(json.dumps(animations, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     assets = {entry['file']: {'origin': entry['origin'], 'size': entry['size']} for entry in manifest}
     asset_code = 'globalThis.PrimalAssets = ' + json.dumps(assets, ensure_ascii=False, separators=(',', ':')) + ';\n'
@@ -81,7 +91,7 @@ runtimeScene.__primalRun.update(performance.now());
     project = {
         'firstLayout': 'PrimalRun', 'gdVersion': {'major': 5, 'minor': 6, 'build': 283, 'revision': 0},
         'properties': {
-            'name': 'PRIMAL RUN', 'description': 'Utahraptor roguelite · four biomes · meat, mutations, bosses and permanent DNA upgrades',
+            'name': 'PRIMAL RUN', 'description': 'Dinosaur roguelite · four playable species and seeded biomes · meat, mutations, bosses and permanent DNA upgrades',
             'author': 'PRIMAL RUN', 'version': '0.2.0', 'packageName': 'com.primalrun.game',
             'projectUuid': '4202b52d-cf20-4b76-807b-a58f0d4bbbcd',
             'windowWidth': 960, 'windowHeight': 640, 'maxFPS': 60, 'minFPS': 20,

@@ -17,10 +17,10 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       const calls = [], original = ctx.drawImage;
       const resourceFiles = typeof gdjs !== 'undefined' && gdjs.projectData ? new Map(gdjs.projectData.resources.resources.map(resource => [resource.name, resource.file])) : new Map();
       ctx.drawImage = function (image, ...args) {
-        if (image.src && /utahraptor_bite_/.test(image.src)) calls.push({ file: decodeURIComponent(image.src).split('/').pop(), x: args[0], y: args[1], width: image.naturalWidth, height: image.naturalHeight });
+        if (image.src && /utahraptor_attack_/.test(image.src)) calls.push({ file: decodeURIComponent(image.src).split('/').pop(), x: args[0], y: args[1], width: image.naturalWidth, height: image.naturalHeight });
         return original.call(this, image, ...args);
       };
-      const checks = [], origin = { S: [64, 72], N: [64, 56], E: [68, 64], W: [60, 64] };
+      const checks = [], origin = { S: [72, 80], N: [72, 64], E: [76, 72], W: [68, 72] };
       for (const d of ['S', 'N', 'E', 'W']) {
         g.phase = 'playing'; r.enemies = []; r.pickups = []; r.player.x = 480; r.player.y = 340; r.player.facing = d; r.attack = null; r.attackCooldown = 0;
         g.attack(); g.pause();
@@ -28,10 +28,10 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
           r.attack.elapsed = (frame + .2) / 6 * r.attack.duration;
           calls.length = 0; primalRun.update(performance.now());
           const call = calls[calls.length - 1];
-          const resourceName = 'assets/player_combat/utahraptor_bite_' + d + '_' + String(frame).padStart(3, '0') + '.png';
+          const resourceName = 'assets/player_full/utahraptor_attack_' + d + '_' + String(frame).padStart(3, '0') + '.png';
           const expectedFile = (resourceFiles.get(resourceName) || resourceName).split('/').pop();
           if (!call || call.file !== expectedFile) throw Error('Wrong drawn frame ' + d + '/' + frame + ': expected ' + expectedFile);
-          if (call.width !== 128 || call.height !== 128) throw Error('Non-native frame size');
+          if (call.width !== 144 || call.height !== 144) throw Error('Non-native frame size');
           if (call.x !== 480 - origin[d][0] || call.y !== 340 - origin[d][1]) throw Error('Anchor drift');
           if (r.player.radius !== 16 || ctx.imageSmoothingEnabled) throw Error('Collision/smoothing drift');
         }

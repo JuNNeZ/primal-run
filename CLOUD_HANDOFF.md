@@ -155,3 +155,25 @@ Utahraptor. Facing/boss timing fixtures isolate random obstacles; seeded-map
 tests cover 80 stage/seed combinations. Temporary full checks at
 /tmp/primal-roguelite-final-checks and actual exported GDJS at
 /tmp/primal-roguelite-final-gd. Source branch and gh-pages deployment unchanged.
+
+## 2026-10-08: chase disengagement and complete playable animation studies
+
+All four playable classes now use 480 new native 144×144 frames across six
+states and four directions. Historical PNGs remain untouched. Sources, exact
+prompts and anatomical anchors are in Source_Generated/player_full. Export with
+`python tools/export_player_full.py`; validate with
+`python tools/validate_player_full.py`, then rebuild the GDevelop project.
+Reviewed source crops expand 32 pixels around cells and isolate the connected
+subject before lossless extraction/palette mapping. Never mirror North/West.
+All art remains prototype_static, production_approved=false, animation_ready=false.
+Minor marking/anatomy/registration variation remains for future visual polish.
+
+Pursuit has an eight-second no-disengagement window after player damage,
+distance/time weighted random disengagement, four-second reaggro delay and
+return-home behavior. Bosses never disengage. Stationary observers let prey
+settle at 110px; movement/recent damage uses 260px. RNG is isolated from loot.
+42 core tests include five pursuit tests; seven browser suites include all
+480 actual player draws, hurt/death, stable collision/origins and mutation freeze.
+See player_full_runtime_report.json for separate standalone/official GDevelop
+results. Run kit tests/legacy validators in a temporary checkout to preserve
+historical reports. Browser path here: /usr/bin/chromium.

@@ -44,6 +44,9 @@ Use tools/export_enemy_animations.py, rebuild the combined manifest, and validat
 with tools/validate_enemy_animations.py. Keep the new overlay under
 assets/enemy_animations; preserve the old South sprites. Browser/GDevelop checks
 are in tests/enemy-animation-browser.cjs and the enemy runtime report.
+For complete playable animation sets also read PRIMAL_RUN_Game/SPRITE_RULES_PLAYER_FULL.md.
+Keep the overlay under assets/player_full, use tools/export_player_full.py and
+validate with tools/validate_player_full.py. Preserve legacy player/enemy art.
 For the offline Prototype Kit, follow `PRIMAL_RUN_Prototype_Kit/SPRITE_RULES.md`.
 The fixed palette extends to 32 colors; existing 24 colors remain unchanged.
 Action poses are unapproved studies. Export only reviewed overhead enemy cells.
