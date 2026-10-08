@@ -1,0 +1,272 @@
+{
+  "date": "2026-10-08",
+  "status": "PASS",
+  "source_sha256": {
+    "src/core.js": "be5361a0b996f9f4f6901439e74076524a32a547ba271edb55e1dfdbd558ef4f",
+    "src/app.js": "15dbd5de27940b047ea7845fc9362a7650fb9d3721d927612b5a02c1191a8f15",
+    "style.css": "e1018e5b4ff4ed3084906bb151df8ff927944a8b86f49f70cb1127c591783a61"
+  },
+  "simulation": {
+    "cases": 22,
+    "result": "PASS",
+    "scope": "combat, paused mutations, rarity values, weighted choices, world bounds, prepopulated wildlife, offscreen spawn placement, facing, progression, save/DNA"
+  },
+  "standalone": {
+    "runtime": "standalone browser",
+    "status": "PASS",
+    "checks": [
+      "responsive square pixels/no overflow",
+      "camera follows world position",
+      "flee/chase facing",
+      "XP percentage/count/remaining",
+      "colored rarity cards/current-next rank",
+      "mutation freeze",
+      "all choices reachable",
+      "Jonas cosmetic secret"
+    ],
+    "results": [
+      {
+        "viewport": "1280x900",
+        "view": {
+          "width": 1248,
+          "height": 790,
+          "x": 816,
+          "y": 565
+        },
+        "map": {
+          "width": 2880,
+          "height": 1920
+        },
+        "canvas": {
+          "width": 1248,
+          "height": 790
+        },
+        "box": {
+          "width": 1246,
+          "height": 788
+        },
+        "cameraX": 816,
+        "prey": "E",
+        "hunter": "E",
+        "xp": "LEVEL-UP · KØD / XP50 % · 3 / 6 stk3 kødværdi til level 2",
+        "bodyWidth": 1280,
+        "bodyHeight": 900
+      },
+      {
+        "viewport": "390x844",
+        "view": {
+          "width": 378,
+          "height": 755,
+          "x": 1251,
+          "y": 583
+        },
+        "map": {
+          "width": 2880,
+          "height": 1920
+        },
+        "canvas": {
+          "width": 378,
+          "height": 755
+        },
+        "box": {
+          "width": 376,
+          "height": 753.203125
+        },
+        "cameraX": 1251,
+        "prey": "E",
+        "hunter": "E",
+        "xp": "LEVEL-UP · KØD / XP50 % · 3 / 6 stk3 kødværdi til level 2",
+        "bodyWidth": 390,
+        "bodyHeight": 844
+      },
+      {
+        "viewport": "844x390",
+        "view": {
+          "width": 812,
+          "height": 322,
+          "x": 1034,
+          "y": 799
+        },
+        "map": {
+          "width": 2880,
+          "height": 1920
+        },
+        "canvas": {
+          "width": 812,
+          "height": 322
+        },
+        "box": {
+          "width": 810,
+          "height": 320
+        },
+        "cameraX": 1034,
+        "prey": "E",
+        "hunter": "E",
+        "xp": "LEVEL-UP · KØD / XP50 % · 3 / 6 stk3 kødværdi til level 2",
+        "bodyWidth": 844,
+        "bodyHeight": 390
+      },
+      {
+        "viewport": "2560x1080",
+        "view": {
+          "width": 1264,
+          "height": 485,
+          "x": 808,
+          "y": 718
+        },
+        "map": {
+          "width": 2880,
+          "height": 1920
+        },
+        "canvas": {
+          "width": 1264,
+          "height": 485
+        },
+        "box": {
+          "width": 2526,
+          "height": 968
+        },
+        "cameraX": 808,
+        "prey": "E",
+        "hunter": "E",
+        "xp": "LEVEL-UP · KØD / XP50 % · 3 / 6 stk3 kødværdi til level 2",
+        "bodyWidth": 2560,
+        "bodyHeight": 1080
+      }
+    ]
+  },
+  "GDevelop": {
+    "runtime": "official GDevelop GDJS export",
+    "status": "PASS",
+    "checks": [
+      "responsive square pixels/no overflow",
+      "camera follows world position",
+      "flee/chase facing",
+      "XP percentage/count/remaining",
+      "colored rarity cards/current-next rank",
+      "mutation freeze",
+      "all choices reachable",
+      "Jonas cosmetic secret"
+    ],
+    "results": [
+      {
+        "viewport": "1280x900",
+        "view": {
+          "width": 1248,
+          "height": 790,
+          "x": 816,
+          "y": 565
+        },
+        "map": {
+          "width": 2880,
+          "height": 1920
+        },
+        "canvas": {
+          "width": 1248,
+          "height": 790
+        },
+        "box": {
+          "width": 1246,
+          "height": 788
+        },
+        "cameraX": 816,
+        "prey": "E",
+        "hunter": "E",
+        "xp": "LEVEL-UP · KØD / XP50 % · 3 / 6 stk3 kødværdi til level 2",
+        "bodyWidth": 1280,
+        "bodyHeight": 900
+      },
+      {
+        "viewport": "390x844",
+        "view": {
+          "width": 378,
+          "height": 755,
+          "x": 1251,
+          "y": 583
+        },
+        "map": {
+          "width": 2880,
+          "height": 1920
+        },
+        "canvas": {
+          "width": 378,
+          "height": 755
+        },
+        "box": {
+          "width": 376,
+          "height": 753.203125
+        },
+        "cameraX": 1251,
+        "prey": "E",
+        "hunter": "E",
+        "xp": "LEVEL-UP · KØD / XP50 % · 3 / 6 stk3 kødværdi til level 2",
+        "bodyWidth": 390,
+        "bodyHeight": 844
+      },
+      {
+        "viewport": "844x390",
+        "view": {
+          "width": 812,
+          "height": 322,
+          "x": 1034,
+          "y": 799
+        },
+        "map": {
+          "width": 2880,
+          "height": 1920
+        },
+        "canvas": {
+          "width": 812,
+          "height": 322
+        },
+        "box": {
+          "width": 810,
+          "height": 320
+        },
+        "cameraX": 1034,
+        "prey": "E",
+        "hunter": "E",
+        "xp": "LEVEL-UP · KØD / XP50 % · 3 / 6 stk3 kødværdi til level 2",
+        "bodyWidth": 844,
+        "bodyHeight": 390
+      },
+      {
+        "viewport": "2560x1080",
+        "view": {
+          "width": 1264,
+          "height": 485,
+          "x": 808,
+          "y": 718
+        },
+        "map": {
+          "width": 2880,
+          "height": 1920
+        },
+        "canvas": {
+          "width": 1264,
+          "height": 485
+        },
+        "box": {
+          "width": 2526,
+          "height": 968
+        },
+        "cameraX": 808,
+        "prey": "E",
+        "hunter": "E",
+        "xp": "LEVEL-UP · KØD / XP50 % · 3 / 6 stk3 kødværdi til level 2",
+        "bodyWidth": 2560,
+        "bodyHeight": 1080
+      }
+    ]
+  },
+  "regression": {
+    "npm_test": "PASS in /tmp/primal-world-final-checks; final label placement rechecked standalone/GDJS world tests",
+    "GDevelop_5_6_283": "game progression, 24 player frames, 64 enemy frames and responsive world checks passed in official export",
+    "PNG_validation": "104 kit / 192 active game / 64 enemy overlay / 176 historical sprites PASS; no PNG changed"
+  },
+  "limits": [
+    "automated controlled scenarios do not replace human balancing or physical-device playtests",
+    "Deinosuchus, Triceratops and Tyrannosaurus use cardinal rotation of legacy still poses; no new walk animation for these species",
+    "same sprite prototype approval status; lighting on rotated stills remains a prototype limitation"
+  ]
+}

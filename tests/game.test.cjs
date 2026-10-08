@@ -52,7 +52,9 @@ test('successful bite gives one impact, damage number and a short knockback stag
 });
 test('first biome opens with three weak enemies and ramps composition, caps and cadence toward a 24-meat boss', () => {
   const g = new C.Game({ random: () => .99 }); g.start(); const r = g.run;
-  assert.equal(r.enemies.length, 3); assert.equal(r.enemies.filter(e => e.kind === 'compy').length, 2);
+  const nearby = r.enemies.filter(e => Math.hypot(e.x - r.player.x, e.y - r.player.y) < 600);
+  assert.equal(nearby.length, 3); assert.equal(nearby.filter(e => e.kind === 'compy').length, 2);
+  assert.ok(r.enemies.length > 25, 'distant habitats contain animals before exploring');
   assert.ok(r.enemies.every(e => e.kind !== 'carnotaurus')); assert.equal(r.spawnTimer, 5);
   for (const [seconds, meat, kind, interval] of [[0, 0, 'parasaurolophus', 4], [30, 6, 'parasaurolophus', 3.2], [60, 12, 'carnotaurus', 2.6]]) {
     r.enemies = []; r.pickups = []; r.seconds = seconds; r.meat = meat; r.spawnTimer = 0;
@@ -74,10 +76,10 @@ test('Compy separates from its pack and telegraphs one bite instead of unavoidab
   g.enemyStep(a, .01); assert.equal(r.health, 93, 'bite only hits once');
 });
 test('Parasaurolophus flees harmlessly and steers along an edge rather than getting stuck', () => {
-  const g = make(), r = g.run; r.player.x = 790; r.player.y = 340;
-  const e = g.spawn('parasaurolophus', { x: 890, y: 340 });
+  const g = make(), r = g.run; r.player.x = r.map.width - 170; r.player.y = 340;
+  const e = g.spawn('parasaurolophus', { x: r.map.width - 70, y: 340 });
   for (let i = 0; i < 20; i++) g.enemyStep(e, .05);
-  assert.equal(e.mode, 'flee'); assert.ok(Math.abs(e.y - 340) > 30); assert.ok(e.x <= 900);
+  assert.equal(e.mode, 'flee'); assert.ok(Math.abs(e.y - 340) > 30); assert.ok(e.x <= r.map.width - 60);
   assert.equal(r.health, 100); assert.ok(e.moving); assert.ok(['N', 'S'].includes(e.direction));
 });
 test('ordinary Carnotaurus charges from the first biome, locks its warning aim and allows a sideways dodge', () => {
@@ -192,4 +194,42 @@ test('GDevelop event matches shared source; all integrated PNGs preserve origina
     assert.equal(asset.status, 'prototype_static');
     assert.ok(project.resources.resources.some(r => r.name === asset.file && r.file === asset.file && r.smoothed === false));
   }
+});
+
+
+test('meat quality changes pickup value and XP; large species have better rare-drop odds', () => {
+  for (const [roll, rarity, value] of [[.1, 0, 5], [.7, 1, 8], [.9, 2, 10], [.99, 3, 15]]) {
+    const g = make(() => roll), r = g.run;
+    g.kill(g.spawn('carnotaurus', { x: 480, y: 340 }));
+    const p = r.pickups.find(p => p.kind === 'meat'); assert.equal(p.rarity, rarity); assert.equal(p.value, value);
+    r.enemies = []; tick(g); assert.equal(r.totalMeat, value); assert.equal(r.meat, value);
+    assert.equal(r.level > 1, value >= 6);
+  }
+  const g = make(() => .9); g.kill(g.spawn('compy', { x: 100, y: 100 }));
+  assert.equal(g.run.pickups[0].rarity, 1, 'same roll gives a lower rarity from tiny prey');
+});
+test('map exploration follows world bounds; reinforcements and bosses never spawn inside the viewport', () => {
+  const g = make(() => .99), r = g.run;
+  assert.ok(r.map.width >= C.WIDTH * 3); assert.ok(r.map.height >= C.HEIGHT * 3);
+  for (const [width, height, x, y] of [[390, 600, 480, 340], [1600, 700, 1600, 900], [700, 300, 2800, 1800]]) {
+    r.player.x = x; r.player.y = y; g.setView(width, height);
+    for (let i = 0; i < 12; i++) {
+      const e = g.spawn('compy'), v = r.view; assert.ok(e);
+      assert.ok(e.x <= v.x - 128 || e.x >= v.x + v.width + 128 || e.y <= v.y - 128 || e.y >= v.y + v.height + 128);
+      assert.ok(e.x >= 80 && e.x <= r.map.width - 80);
+    }
+  }
+  r.player.x = 1600; r.player.y = 900; g.setView(390, 600); assert.equal(r.view.x, 1405);
+  const e = g.spawn('compy', { x: 2400, y: 1400 }), start = { x: e.x, y: e.y };
+  g.enemyStep(e, .05); assert.equal(e.mode, 'wander'); assert.ok(Math.hypot(e.x - start.x, e.y - start.y) < 2);
+  r.enemies = [e]; r.player.x = e.x - 100; r.player.y = e.y; g.enemyStep(e, .05); assert.equal(e.mode, 'chase'); assert.equal(e.direction, 'W');
+  r.player.x = 2800; g.move(r.player, 9999, 0); assert.equal(r.player.x, r.map.width - 58);
+});
+test('weighted mutation rarity retains unique choices and ranks, and Jonas unlocks a cosmetic secret', () => {
+  const g = make(() => .99); g.save.name = 'Jonas'; g.start();
+  assert.equal(g.run.jonas, true); assert.ok(g.drainEvents().some(e => e.type === 'jonas'));
+  assert.equal(g.run.maxHealth, 100, 'secret does not change balance');
+  g.addXP(6); assert.equal(new Set(g.run.choices).size, 3);
+  assert.equal(C.MUTATIONS.find(m => m.id === g.run.choices[0]).rarity, 'epic');
+  const id = g.run.choices[0]; assert.equal(g.run.mutations[id], 0); g.choose(id); assert.equal(g.run.mutations[id], 1);
 });

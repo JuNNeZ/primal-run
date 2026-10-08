@@ -12,7 +12,8 @@ Alle webstier er relative og fungerer under `/primal-run/` på GitHub Pages.
 
 WASD/piletaster flytter, Space bider foran spilleren, Shift pouncer under
 bevægelse, og Escape pauser. Der er også touch-knapper. Tastatur på desktop
-er den primære testede styring; mobiltilpasning skal fortsat spiltestes.
+er testet sammen med responsive touch-layouts i portræt og landskab.
+Langvarig spiltest på fysiske mobiler er stadig relevant.
 
 ## Åbn direkte i GDevelop
 
@@ -86,8 +87,9 @@ Efter at ændringerne er lagt på GitHub:
 
 Et privat repository kræver en GitHub-plan med understøttelse af Pages fra
 private repositories. Webspillet og dets leverede assets kan være offentligt
-tilgængelige, selv om kilde-repositoryet er privat. Ingen publicering er udført
-af udviklingsarbejdet her.
+tilgængelige, selv om kilde-repositoryet er privat. Den aktive demo publiceres også som statiske filer på `gh-pages`:
+https://junnez.github.io/primal-run/. Ved branch-deployment vælges gh-pages / root
+i Pages-indstillingerne. Workflowet ovenfor er en alternativ publiceringsvej.
 
 ## Implementeret
 
@@ -131,7 +133,9 @@ SPRITE_RULES_ENEMIES.md og enemy_animation_runtime_report.json.
   slagets rækkevidde, og 1,6 sekunders recovery giver en åbning.
 
 Boss-Carnotaurus bruger også nye retningsposer. De øvrige bossarter og fjender
-beholder deres gamle stillbilleder. Nye billeder er prototyper; markeringer,
+beholder deres gamle stillbilleder, som nu roteres i 90-graders trin omkring
+kroppens faste origin, så de vender mod bevægelsen. Smoothing er slået fra;
+roteret lys er stadig en prototypebegrænsning. Nye billeder er prototyper; markeringer,
 body registration og fuld temporal kvalitet kræver fortsat kunstreview.
 
 ## Kampfeedback og første bane
@@ -141,8 +145,10 @@ separat dyb kontaktlyd. Almindelige fjender skubbes 18 pixels væk og bremses i
 0,12 sekunder; panser begrænser skubbet til 8 pixels. Bosser kan ikke stunlåses.
 Kontaktlyden følger master- og effektvolumen, uafhængigt af musikvolumen.
 
-Første bane starter med to Compy og én Parasaurolophus. Første ekstra fjende
-kommer efter fem sekunder. Åbningen har højst tre fjender, derefter fem og til
+Første banes startområde har to Compy og én Parasaurolophus; længere væk
+er dyrene allerede placeret i levesteder før jagtens start. Første ekstra fjende
+kan komme efter fem sekunder uden for kameraet. Åbningen har højst tre
+fjender inden for 900 pixels, derefter fem og til
 sidst syv; spawnintervallet går fra 4 til 3,2 til 2,6 sekunder. Carnotaurus kan
 først dukke op efter 12 opsamlede kødenheder; højst én almindelig Carnotaurus
 ad gangen. Eskaleringen følger opsamlet kød, så en langsom første jagt ikke
@@ -150,6 +156,44 @@ bliver overfyldt, før man har lært styringen.
 Bossen kræver nu 24 kød. Tiderne fryser i pause og under mutationsvalg.
 Dette er en første balancejustering; menneskelig spiltest skal afgøre det
 endelige tempo til første mutation og boss.
+
+## Maps, rarities og progression
+
+Hver biome har sit eget større kort: 2880×1920, 3200×2176, 3520×2432 og
+3840×2688 simulationpixels. Kameraet følger spilleren og stopper ved kortkanten.
+Visningen følger skærmens størrelse med kvadratiske pixels og heltalsskalering.
+Dyr vandrer omkring deres levested, reagerer på nærhed eller angreb og opgiver
+forfølgelsen ved stor afstand. Replenishment og bosser vælger positioner uden
+for kameraet plus 128 pixels sikkerhed; de kommer ikke frem foran spilleren.
+Minikortet viser spilleren, nærliggende dyr og bossen. Bevægelse og opsamling
+bruger kortets grænser, ikke skærmens.
+
+Spilleren har blågrøn ring og `▼ DIG`, fjender orange/rød ring og `◆ FJENDE`,
+fredeligt bytte grøn ring og `◇ BYTTE`, bosser gul ring og `◆ BOSS`. De fire
+animerede arter skifter retningssprite; de tre øvrige arter bruger en roteret
+South-pose. Kropshitboxes følger ikke spriteformen.
+
+Kød har fire kvaliteter: almindeligt ×1, nærende ×1,5, sjældent ×2 og episk ×3
+(afrundet op). Farvet ring, kvalitetsnavn og værdien `+X` vises på jorden.
+Compy har 76/19/4,5/0,5 % chance; Parasaurolophus 60/28/10/2 %; store dyr
+55/25/15/5 %. Værdien giver både XP, score og progression mod bossmålet.
+DNA-chancerne er uændrede. XP-baren viser procent, opsamlet/mål og resterende
+kødværdi til næste raptor-level; biome-kødmålet står separat øverst.
+
+Mutationer har faste rarities med hvid/grøn/blågrøn/lilla markering:
+almindelig (ben, udholdenhed, spring), usædvanlig (tænder, hjerte), sjælden
+(panser, rækkevidde, hurtige kæber), episk (blødning, ådselæder).
+Valg trækkes uden gentagelse med vægte 6/4/2/1 og udelukker maksimale rangtrin.
+Kortene viser `RANG nu → efter valg / 3`. Alle effekter er fortsat beskrevet
+på kortet, og simuleringen er pauset under valget.
+
+Navnet Jonas (uanset store/små bogstaver) låser en kosmetisk krone, titlen
+“Kødens konge” og en hemmelig hilsen op. Ingen ekstra stats eller DNA.
+
+`world_runtime_report.json` adskiller standalone-browser og rigtig GDevelop
+5.6.283 GDJS. `tests/world-browser.cjs` kontrollerer fire skærmformater,
+kameraposition, bevægelsesretninger inklusive roteret boss-pose, rarity/rang,
+XP-bar, sikre mutationsvalg, touch-layout og Jonas-hemmeligheden.
 
 ## Status og næste arbejde
 

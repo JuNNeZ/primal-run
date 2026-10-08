@@ -64,3 +64,23 @@ https://learn.chatgpt.com/docs/cloud
 
 Cloud-checks kan validere PNG'er og browsermekanik; de erstatter ikke visuel
 vurdering eller GDevelop Preview. Brug en `codex/`-branch til næste ændring.
+
+## 2026-10-08: exploration and rarities
+
+Active game now has per-stage world bounds, prepopulated habitats, proximity AI,
+offscreen replenishment/boss placement, responsive camera/minimap and distinct
+player/hostile/prey labels. Meat has four weighted rarities; mutation cards have
+fixed weighted rarities and current → next rank. XP bar includes percentage and
+remaining meat value. Jonas unlocks a cosmetic crown/title only. Legacy three
+boss species rotate their old South stills in cardinal steps; four newer species
+use their direction frames. PNGs and prototype approval status unchanged.
+
+`tests/world-browser.cjs` is included in `npm run test:game`; covers desktop,
+portrait, landscape and ultrawide. `PRIMAL_RUN_Game/world_runtime_report.json`
+records separate standalone and official GDevelop 5.6.283 checks plus source
+hashes. Entire npm test and PNG validators passed in temporary copy, preserving
+historical kit outputs. Original 19-case enemy runtime report remains historical
+evidence for pre-map timing; use world report for current mechanics.
+
+Pages continues to publish static `dist/` on gh-pages; source development remains
+on codex/primal-run-playable. Demo: https://junnez.github.io/primal-run/.
