@@ -33,6 +33,13 @@
     { id: 'quick', name: 'Hurtige kæber', text: '8 % kortere cooldown mellem bid.', icon: 'bone', max: 3 },
     { id: 'scavenger', name: 'Ådselæder', text: 'Kød heler 1 liv pr. kødenhed pr. rang.', icon: 'hunger', max: 3 },
   ];
+  const MUTATION_RARITIES = {
+    common: { name: 'Almindelig', color: '#e8ece1', weight: 6 },
+    uncommon: { name: 'Usædvanlig', color: '#799447', weight: 4 },
+    rare: { name: 'Sjælden', color: '#69a4a0', weight: 2 },
+    epic: { name: 'Episk', color: '#bb80d9', weight: 1 },
+  };
+  MUTATIONS.forEach(m => { m.rarity = ['bleed', 'scavenger'].includes(m.id) ? 'epic' : ['armor', 'quick', 'reach'].includes(m.id) ? 'rare' : ['teeth', 'heart'].includes(m.id) ? 'uncommon' : 'common'; });
   const UPGRADES = [
     { id: 'health', name: 'Livskraft', text: '+2 % startliv pr. rang', max: 5 },
     { id: 'damage', name: 'Skarpe tænder', text: '+2 % startskade pr. rang', max: 5 },
@@ -40,6 +47,25 @@
     { id: 'magnet', name: 'Duft af bytte', text: '+5 % opsamlingsradius pr. rang', max: 5 },
   ];
   const ROCKS = [{ x: 225, y: 200, radius: 22 }, { x: 730, y: 180, radius: 22 }, { x: 260, y: 475, radius: 22 }, { x: 735, y: 475, radius: 22 }];
+  const MEAT_RARITIES = [
+    { name: 'Almindeligt', multiplier: 1, color: '#e8ece1', symbol: '•' },
+    { name: 'Nærende', multiplier: 1.5, color: '#799447', symbol: '◆' },
+    { name: 'Sjældent', multiplier: 2, color: '#69a4a0', symbol: '◆◆' },
+    { name: 'Episk', multiplier: 3, color: '#bb80d9', symbol: '★' },
+  ];
+  function createMap(stage) {
+    const width = 2880 + stage * 320, height = 1920 + stage * 256;
+    const rocks = ROCKS.map(r => ({ ...r })), decorations = [], habitats = [];
+    for (let y = 240; y < height - 160; y += 320) for (let x = 240; x < width - 160; x += 360) {
+      if (Math.hypot(x - 480, y - 340) < 650) continue;
+      const i = habitats.length;
+      habitats.push({ x: x + (i % 3) * 24, y: y + (i % 2) * 32 });
+      rocks.push({ x: x + 110, y: y + 85, radius: 22 });
+    }
+    for (let y = 120; y < height; y += 180) for (let x = 100; x < width; x += 220)
+      decorations.push({ x: x + (y % 70), y, path: 'assets/environment/fern.png' });
+    return { width, height, rocks, decorations, habitats };
+  }
   const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
   const finite = (n, fallback = 0) => typeof n === 'number' && Number.isFinite(n) ? n : fallback;
   const cleanName = value => String(value || 'Utahraptor').trim().slice(0, 20) || 'Utahraptor';
@@ -83,30 +109,49 @@
     start() {
       const up = { ...this.save.upgrades }, maxHealth = 100 * (1 + .02 * up.health);
       this.run = { player: { x: 480, y: 340, radius: 16, facing: 'S', walk: 0, moving: false }, health: maxHealth, maxHealth, stamina: 100, stage: 0, meat: 0, totalMeat: 0, level: 1, xp: 0, nextXP: 6, mutations: Object.fromEntries(MUTATIONS.map(m => [m.id, 0])), upgrades: up, choices: [], enemies: [], pickups: [], effects: [], seconds: 0, kills: 0, bosses: 0, dna: 0, score: 0, spawnTimer: 1, attackCooldown: 0, attack: null, biteFacing: 'S', bite: 0, pounce: 0, pounceCooldown: 0, invulnerable: 0, shake: 0, bossSpawned: false, bossDefeated: false, result: null };
-      this.phase = 'playing'; this.populate(); this.emit('start');
+      this.run.map = createMap(0); this.setView(WIDTH, HEIGHT); this.run.jonas = this.save.name.toLowerCase() === 'jonas'; this.phase = 'playing'; this.populate(); this.emit('start'); if (this.run.jonas) this.emit('jonas');
+    }
+    setView(width, height) {
+      if (!this.run) return;
+      const r = this.run;
+      r.view = { width, height, x: Math.round(clamp(r.player.x - width / 2, 0, Math.max(0, r.map.width - width))), y: Math.round(clamp(r.player.y - height / 2, 0, Math.max(0, r.map.height - height))) };
     }
     populate() {
       const r = this.run;
-      if (r.stage === 0) {
-        this.spawn('compy', { x: 420, y: 245 }); this.spawn('compy', { x: 575, y: 350 });
-        this.spawn('parasaurolophus', { x: 640, y: 225 }); r.spawnTimer = 5; return;
+      this.spawn('compy', { x: 420, y: 245 }); this.spawn('compy', { x: 575, y: 350 });
+      this.spawn('parasaurolophus', { x: 640, y: 225 });
+      const pool = r.stage === 0 ? ['compy', 'parasaurolophus', 'compy'] : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'ankylosaurus', 'carnotaurus'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];
+      r.map.habitats.forEach((p, i) => {
+        this.spawn(pool[i % pool.length], p);
+        if (i % 3 === 0) this.spawn('compy', { x: p.x + 45, y: p.y + 30 });
+      });
+      r.spawnTimer = r.stage === 0 ? 5 : 1;
+    }
+    hiddenSpawn() {
+      const r = this.run, v = r.view, start = this.random() * Math.PI * 2;
+      for (let i = 0; i < 32; i++) {
+        const angle = start + i * Math.PI * 2 / 32;
+        const distance = Math.hypot(v.width, v.height) / 2 + 180;
+        const p = { x: r.player.x + Math.cos(angle) * distance, y: r.player.y + Math.sin(angle) * distance };
+        if (p.x < 80 || p.y < 100 || p.x > r.map.width - 80 || p.y > r.map.height - 80) continue;
+        if (p.x > v.x - 128 && p.x < v.x + v.width + 128 && p.y > v.y - 128 && p.y < v.y + v.height + 128) continue;
+        if (r.map.rocks.some(rock => Math.hypot(p.x - rock.x, p.y - rock.y) < 65)) continue;
+        return p;
       }
-      for (let i = 0; i < 5; i++) this.spawn(i % 3 === 0 ? 'parasaurolophus' : 'compy', { x: 340 + (i % 3) * 110, y: i < 3 ? 170 : 440 });
-      r.spawnTimer = 1;
+      return null;
     }
     spawn(kind, position, boss = false) {
       const r = this.run, base = SPECIES[kind]; if (!base) throw Error('Unknown species');
-      const edge = Math.floor(this.random() * 4);
-      const p = position || (edge < 2 ? { x: edge ? 904 : 56, y: 100 + this.random() * 440 } : { x: 80 + this.random() * 800, y: edge === 2 ? 100 : 560 });
+      const p = position || this.hiddenSpawn(); if (!p) return null;
       const scale = 1 + r.stage * .3;
       const hp = boss ? (220 + r.stage * 85) : base.hp * scale;
       const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? 32 : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0, walk: 0, poseTime: 0, moving: false, direction: 'S', attackHit: false, attackRadius: kind === 'ankylosaurus' ? 90 : boss ? 130 : base.radius + 28 };
-      r.enemies.push(e); return e;
+      e.homeX = p.x; e.homeY = p.y; e.alert = boss; r.enemies.push(e); return e;
     }
     move(entity, dx, dy) {
-      entity.x = clamp(entity.x + dx, 42 + entity.radius, WIDTH - 42 - entity.radius);
-      entity.y = clamp(entity.y + dy, 76 + entity.radius, HEIGHT - 42 - entity.radius);
-      for (const rock of ROCKS) {
+      entity.x = clamp(entity.x + dx, 42 + entity.radius, this.run.map.width - 42 - entity.radius);
+      entity.y = clamp(entity.y + dy, 76 + entity.radius, this.run.map.height - 42 - entity.radius);
+      for (const rock of this.run.map.rocks) {
         const x = entity.x - rock.x, y = entity.y - rock.y, d = Math.hypot(x, y), min = entity.radius + rock.radius;
         if (d < min) { entity.x = rock.x + (d > .001 ? x / d : 1) * min; entity.y = rock.y + (d > .001 ? y / d : 0) * min; }
       }
@@ -122,8 +167,14 @@
       const pool = MUTATIONS.filter(m => r.mutations[m.id] < m.max);
       if (!pool.length) { r.xp = Math.min(r.xp, r.nextXP - 1); return; }
       r.xp -= r.nextXP; r.level++; r.nextXP = 6 + (r.level - 1) * 3;
-      for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(this.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
-      r.choices = pool.slice(0, 3).map(m => m.id); this.phase = 'mutation'; this.emit('level_up');
+      const choices = [];
+      while (choices.length < 3 && pool.length) {
+        const total = pool.reduce((sum, m) => sum + MUTATION_RARITIES[m.rarity].weight, 0);
+        let roll = this.random() * total, index = pool.length - 1;
+        for (let i = 0; i < pool.length; i++) { roll -= MUTATION_RARITIES[pool[i].rarity].weight; if (roll < 0) { index = i; break; } }
+        choices.push(pool.splice(index, 1)[0].id);
+      }
+      r.choices = choices; this.phase = 'mutation'; this.emit('level_up');
     }
     choose(id) {
       const r = this.run; if (this.phase !== 'mutation' || !r.choices.includes(id)) return false;
@@ -164,7 +215,7 @@
         const frontal = dist > 0 && ((-dx * e.facingX - dy * e.facingY) / dist > .6);
         const armor = ['triceratops', 'ankylosaurus'].includes(e.kind) && frontal ? .5 : 1;
         const damage = 10 * (1 + .02 * r.upgrades.damage + .2 * r.mutations.teeth) * armor;
-        e.hp -= damage; hits++;
+        e.hp -= damage; e.alert = true; hits++;
         e.bleed = r.mutations.bleed ? 3 : 0; e.hit = .15;
         if (!e.boss) {
           const distance = armor < 1 ? 8 : 18;
@@ -182,9 +233,11 @@
         this.addDNA(STAGES[r.stage].dna); this.emit('boss_dead');
       } else {
         const base = SPECIES[e.kind]; r.score += base.meat * 15;
-        r.pickups.push({ id: ++this.nextId, kind: 'meat', x: e.x, y: e.y, value: base.meat });
-        if (this.random() < base.chance) r.pickups.push({ id: ++this.nextId, kind: 'dna', x: clamp(e.x + 20, 48, 912), y: e.y, value: base.dna });
-        if (this.random() < .10) r.pickups.push({ id: ++this.nextId, kind: 'heal', x: e.x, y: clamp(e.y + 18, 80, 586), value: 15 });
+        const roll = this.random(), thresholds = base.meat === 1 ? [.76, .95, .995] : base.meat === 3 ? [.6, .88, .98] : [.55, .8, .95];
+        const rarity = thresholds.filter(t => roll >= t).length;
+        r.pickups.push({ id: ++this.nextId, kind: 'meat', x: e.x, y: e.y, rarity, value: Math.ceil(base.meat * MEAT_RARITIES[rarity].multiplier) });
+        if (this.random() < base.chance) r.pickups.push({ id: ++this.nextId, kind: 'dna', x: clamp(e.x + 20, 48, r.map.width - 48), y: e.y, value: base.dna });
+        if (this.random() < .10) r.pickups.push({ id: ++this.nextId, kind: 'heal', x: e.x, y: clamp(e.y + 18, 80, r.map.height - 54), value: 15 });
       }
     }
     enemyStep(e, dt) {
@@ -201,6 +254,19 @@
       const r = this.run, dx = r.player.x - e.x, dy = r.player.y - e.y, d = Math.max(1, Math.hypot(dx, dy));
       e.cooldown = Math.max(0, e.cooldown - dt); e.hit = Math.max(0, e.hit - dt);
       if (e.stagger > 0) { e.stagger = Math.max(0, e.stagger - dt); return; }
+      if (!e.boss && !['windup', 'charge', 'slam', 'bite', 'recover'].includes(e.mode)) {
+        if (d < (e.kind === 'compy' ? 260 : 400)) e.alert = true;
+        if (d > 850) e.alert = false;
+        if (!e.alert) {
+          e.mode = 'wander';
+          const angle = r.seconds * .18 + e.id * 2.4;
+          const tx = e.homeX + Math.cos(angle) * 65, ty = e.homeY + Math.sin(angle) * 65;
+          const wx = tx - e.x, wy = ty - e.y, wd = Math.max(1, Math.hypot(wx, wy));
+          e.facingX = wx / wd; e.facingY = wy / wd;
+          if (wd > 4) this.move(e, wx / wd * e.speed * .35 * dt, wy / wd * e.speed * .35 * dt);
+          return;
+        }
+      }
       if (e.mode === 'windup') {
         e.timer -= dt;
         if (e.timer <= 0) {
@@ -231,8 +297,8 @@
           for (let i = 0; i < 8; i++) {
             const angle = Math.atan2(-dy, -dx) + i * Math.PI / 4;
             const vx = Math.cos(angle), vy = Math.sin(angle), px = e.x + vx * 65, py = e.y + vy * 65;
-            const room = px > 42 + e.radius && px < WIDTH - 42 - e.radius && py > 76 + e.radius && py < HEIGHT - 42 - e.radius;
-            const clear = ROCKS.every(rock => Math.hypot(px - rock.x, py - rock.y) > rock.radius + e.radius + 4);
+            const room = px > 42 + e.radius && px < r.map.width - 42 - e.radius && py > 76 + e.radius && py < r.map.height - 42 - e.radius;
+            const clear = r.map.rocks.every(rock => Math.hypot(px - rock.x, py - rock.y) > rock.radius + e.radius + 4);
             const score = (-dx * vx - dy * vy) / d + (room ? 0 : -4) + (clear ? 0 : -3);
             if (!best || score > best.score) best = { vx, vy, score };
           }
@@ -300,19 +366,20 @@
       for (const p of r.pickups) {
         if (Math.hypot(p.x - r.player.x, p.y - r.player.y) >= radius) continue;
         collected.push(p.id);
-        if (p.kind === 'meat') { r.meat += p.value; r.totalMeat += p.value; r.xp += p.value; r.score += p.value * 10; r.health = Math.min(r.maxHealth, r.health + p.value * m.scavenger); this.emit('pickup'); }
+        if (p.kind === 'meat') { r.meat += p.value; r.totalMeat += p.value; r.xp += p.value; r.score += p.value * 10; r.health = Math.min(r.maxHealth, r.health + p.value * m.scavenger); r.effects.push({ x: p.x, y: p.y, text: '+' + p.value + ' ' + MEAT_RARITIES[p.rarity || 0].name.toUpperCase(), color: MEAT_RARITIES[p.rarity || 0].color, life: .55 }); this.emit('pickup'); }
         else if (p.kind === 'dna') this.addDNA(p.value);
         else { r.health = Math.min(r.maxHealth, r.health + p.value); this.emit('pickup'); }
       }
       r.pickups = r.pickups.filter(p => !collected.includes(p.id));
       r.effects = r.effects.filter(e => (e.life -= dt) > 0);
-      if (!r.bossSpawned && r.meat >= STAGES[r.stage].target) { r.bossSpawned = true; this.spawn(STAGES[r.stage].boss, { x: 480, y: 130 }, true); this.emit('boss'); }
+      this.setView(r.view.width, r.view.height);
+      if (!r.bossSpawned && r.meat >= STAGES[r.stage].target && this.spawn(STAGES[r.stage].boss, null, true)) { r.bossSpawned = true; this.emit('boss'); }
       if (!r.bossSpawned) {
         r.spawnTimer -= dt;
         const opening = r.stage === 0 && r.meat < 6;
         const building = r.stage === 0 && !opening && r.meat < 12;
         const cap = r.stage === 0 ? (opening ? 3 : building ? 5 : 7) : 9 + r.stage * 2;
-        if (r.spawnTimer <= 0 && r.enemies.length < cap) {
+        if (r.spawnTimer <= 0 && r.enemies.filter(e => Math.hypot(e.x - r.player.x, e.y - r.player.y) < 900).length < cap && r.enemies.length < 120) {
           const pool = r.stage === 0 ? (opening ? ['compy', 'parasaurolophus'] : building ? ['compy', 'compy', 'parasaurolophus'] : ['compy', 'parasaurolophus', 'carnotaurus']) : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'carnotaurus', 'ankylosaurus'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];
           let kind = pool[Math.floor(this.random() * pool.length)];
           if (r.stage === 0 && r.enemies.filter(e => e.kind === 'carnotaurus').length >= 1 && kind === 'carnotaurus') kind = 'compy';
@@ -329,7 +396,7 @@
       if (r.stage === STAGES.length - 1) { this.finish(true); return true; }
       r.stage++; r.meat = 0; r.bossSpawned = false; r.bossDefeated = false; r.enemies = []; r.pickups = []; r.attack = null; r.bite = 0;
       r.player.x = 480; r.player.y = 340; r.health = Math.min(r.maxHealth, r.health + r.maxHealth * .3); r.stamina = 100; r.invulnerable = 1;
-      this.phase = 'playing'; this.populate(); this.emit('stage'); return true;
+      r.map = createMap(r.stage); this.setView(r.view.width, r.view.height); this.phase = 'playing'; this.populate(); this.emit('stage'); return true;
     }
     finish(victory) {
       const r = this.run; if (!r || r.result) return;
@@ -338,5 +405,5 @@
       r.attack = null; r.bite = 0; this.phase = 'result'; this.persist(); this.emit(victory ? 'victory' : 'death');
     }
   }
-  return { Game, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, MUTATIONS, UPGRADES, ROCKS, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { Game, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

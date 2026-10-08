@@ -48,5 +48,6 @@
     "src/core.js": "9b36dafd7ad155b2bd56439a978e38f2bb2a52dcd358f18ee05a384487a1393a",
     "src/app.js": "46e606bd977da2ea843ba9ead8889b04b5968645f5631dec17bb32058d8a5974",
     "enemy_animation_manifest.json": "edf624901270e7c4e5a68a6b402dacabe5b6608cb16f8c33e42527179ed24527"
-  }
+  },
+  "historical_context": "Evidence captured before larger maps and rarity progression. Opening hunt timings apply to that earlier version; see world_runtime_report.json for current source/runtime evidence."
 }
