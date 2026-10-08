@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-08",
+  "status": "PASS",
+  "source_sha256": {
+    "src/core.js": "b147f2aa7aeab2c47b1728c9ef993ad1e14522678d41483bf3a99a8314fe27fc",
+    "src/app.js": "fbbe6f12219460ccc194c8e8b3f10cbcaac76f7b2b4aea21229d4211022f3799",
+    "src/audio.js": "8c05993c669bd89459bb52b885409f590d5d84815b4dc4fb23e99b536ee42010",
+    "style.css": "f5123fdcb5a803a30c5a703a83a3f9535532b880c63bf2310b39d4f7f0cf1fa9"
+  },
+  "core_tests": 37,
+  "map_cases": 80,
+  "standalone": {
+    "runtime": "standalone Chromium",
+    "status": "PASS",
+    "snapshot": {
+      "seed": 1954076569,
+      "plants": 1346,
+      "roads": 0
+    },
+    "checks": [
+      "Compy default and native sprite",
+      "red species names",
+      "seeded dense wilderness without roads",
+      "nest modal freezes simulation",
+      "DNA unlock and selection UI/reload",
+      "stationary Ankylosaurus brace",
+      "portrait and landscape layouts"
+    ]
+  },
+  "gdevelop": {
+    "runtime": "official GDevelop GDJS 5.6.283",
+    "status": "PASS",
+    "snapshot": {
+      "seed": 480925424,
+      "plants": 1348,
+      "roads": 0
+    },
+    "checks": [
+      "Compy default and native sprite",
+      "red species names",
+      "seeded dense wilderness without roads",
+      "nest modal freezes simulation",
+      "DNA unlock and selection UI/reload",
+      "stationary Ankylosaurus brace",
+      "portrait and landscape layouts"
+    ]
+  },
+  "verification": {
+    "complete_npm_test": "PASS in temporary copy, preserves historical kit reports",
+    "official_gdevelop_test_game": "PASS; real libGD/GDJS 5.6.283 export",
+    "asset_validation": "PASS: 104 kit PNGs, 192 active PNGs, 64 enemy overlay PNGs; original pixels unchanged"
+  },
+  "isolated_compy_first_boss": {
+    "status": "PASS",
+    "phase": "cleared",
+    "health": 80,
+    "seconds": 62.31666666666441,
+    "scope": "Normal movement/attack simulation inputs, no HP/stat changes after spawn; isolated arena with no additional enemies or rocks."
+  },
+  "art_scope": "Existing native sprite studies reused for three new playable classes; no new PNGs or production animation approval. Terrain composition, foliage density, player pointer, labels, ability rings and UI improved."
+}
