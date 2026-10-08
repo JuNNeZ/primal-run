@@ -264,3 +264,70 @@ test('crowded herds, bosses and map-edge collisions resolve without escaping bou
   g.separateDinosaurs(); assert.equal(edge.x, 54); assert.ok(other.x - edge.x >= 36.95);
   const x = other.x; g.separateDinosaurs(); assert.equal(other.x, x, 'settled bodies do not jitter');
 });
+
+test('successful bites freeze simulation briefly, misses do not, and blood/dust decay with bounded counts', () => {
+  const g = make(), r = g.run; g.resolveBite('E'); assert.equal(r.hitStop, 0); assert.equal(r.particles.length, 0);
+  const e = g.spawn('carnotaurus', { x: 530, y: 340 }); e.speed = 0;
+  g.resolveBite('E'); assert.equal(r.hitStop, .033); assert.ok(r.particles.length >= 8); assert.equal(r.decals.length, 1);
+  const before = { x: r.player.x, seconds: r.seconds, particles: JSON.stringify(r.particles), timer: e.cooldown };
+  g.step(.016, { x: 1 }); assert.equal(r.player.x, before.x); assert.equal(r.seconds, before.seconds); assert.equal(e.cooldown, before.timer); assert.equal(JSON.stringify(r.particles), before.particles);
+  g.pause(); const frozen = JSON.stringify(r); tick(g); assert.equal(JSON.stringify(r), frozen, 'pause also freezes pending hit-stop'); g.resume();
+  g.step(.05, { x: 1 }); assert.ok(r.player.x > before.x); assert.ok(r.seconds > before.seconds);
+  for (let i = 0; i < 30; i++) g.burst(100, 100, 'blood', 12, i);
+  assert.equal(r.particles.length, 160); assert.equal(r.decals.length, 31);
+  r.enemies = []; r.hitStop = 0; for (let i = 0; i < 100; i++) g.step(.05);
+  assert.equal(r.particles.length, 0); assert.equal(r.decals.length, 0);
+});
+test('first boss alternates a locked charge and a directional bite with useful recovery openings', () => {
+  const g = make(), r = g.run, boss = g.spawn('carnotaurus', { x: 480, y: 220 }, true); boss.cooldown = 0;
+  g.enemyStep(boss, .01); assert.equal(boss.mode, 'windup'); assert.equal(boss.pattern, 0); assert.equal(boss.timer, .95);
+  const aim = [boss.chargeX, boss.chargeY]; r.player.x = 700;
+  for (let i = 0; i < 20; i++) g.enemyStep(boss, .05);
+  assert.deepEqual([boss.chargeX, boss.chargeY], aim); assert.equal(boss.mode, 'charge');
+  for (let i = 0; i < 12; i++) g.enemyStep(boss, .05);
+  assert.equal(boss.mode, 'recover'); assert.ok(boss.timer >= 1.55); assert.equal(r.health, 100, 'sideways dodge avoids charge');
+  boss.x = 520; boss.y = 340; boss.facingX = 1; boss.facingY = 0;
+  r.player.x = 480; r.player.y = 340; const hp = boss.hp; g.resolveBite('E'); assert.equal(boss.hp, hp - 15); assert.ok(r.effects.at(-1).text.includes('ÅBEN FLANKE'));
+  r.player.x = 560; r.hitStop = 0; const frontHP = boss.hp; g.resolveBite('W'); assert.equal(boss.hp, frontHP - 10, 'front is not the recovery weak point');
+  boss.mode = 'chase'; boss.cooldown = 0; boss.x = 480; boss.y = 250; r.player.x = 480; r.player.y = 340;
+  g.enemyStep(boss, .01); assert.equal(boss.pattern, 1); assert.equal(boss.attackRadius, 100); assert.equal(boss.windupDuration, .6);
+  boss.timer = .001; g.enemyStep(boss, .01); assert.equal(boss.mode, 'bite');
+  r.invulnerable = 0; g.enemyStep(boss, .11); assert.equal(r.health, 80); r.invulnerable = 0;
+  g.enemyStep(boss, .02); assert.equal(r.health, 80, 'one hit per bite');
+});
+test('half-health first boss signals phase two once and telegraphs each leg of its double charge', () => {
+  const g = make(), r = g.run, boss = g.spawn('carnotaurus', { x: 480, y: 220 }, true);
+  boss.hp = 110; g.drainEvents(); g.enemyStep(boss, .01);
+  assert.equal(boss.bossPhase, 2); assert.equal(boss.mode, 'enrage'); assert.equal(boss.timer, 1.1); assert.equal(g.drainEvents().filter(e => e.type === 'boss_enrage').length, 1);
+  const frozen = JSON.stringify(boss); g.phase = 'mutation'; g.enemyStep(boss, .05); assert.equal(JSON.stringify(boss), frozen); g.phase = 'playing';
+  for (let i = 0; i < 27; i++) g.enemyStep(boss, .05);
+  assert.equal(boss.mode, 'windup'); assert.equal(boss.followUp, true); const firstAim = [boss.chargeX, boss.chargeY];
+  boss.timer = .001; g.enemyStep(boss, .01); r.player.x = 680;
+  for (let i = 0; i < 12; i++) g.enemyStep(boss, .05);
+  assert.equal(boss.mode, 'windup'); assert.equal(boss.attackName, 'STORMLØB 2/2'); assert.equal(boss.timer, .65); assert.equal(boss.followUp, false);
+  const secondAim = [boss.chargeX, boss.chargeY]; assert.notDeepEqual(secondAim, firstAim);
+  r.player.x = 400; r.player.y = 600; g.enemyStep(boss, .05); assert.deepEqual([boss.chargeX, boss.chargeY], secondAim);
+  boss.timer = .001; g.enemyStep(boss, .01); for (let i = 0; i < 12; i++) g.enemyStep(boss, .05);
+  assert.equal(boss.mode, 'recover'); assert.equal(g.drainEvents().filter(e => e.type === 'boss_enrage').length, 0);
+});
+test('phase-two stomp hits once inside its warned radius, allows pounce, and stays specific to first boss', () => {
+  const g = make(), r = g.run, boss = g.spawn('carnotaurus', { x: 480, y: 250 }, true);
+  boss.bossPhase = 2; boss.attackCycle = 2; boss.cooldown = 0;
+  g.enemyStep(boss, .01); assert.equal(boss.pattern, 2); assert.equal(boss.windupDuration, .9); assert.equal(boss.attackRadius, 115);
+  boss.timer = .001; g.enemyStep(boss, .01); assert.equal(boss.mode, 'slam');
+  r.pounce = .2; g.enemyStep(boss, .11); assert.equal(r.health, 100);
+  r.pounce = 0; g.enemyStep(boss, .02); assert.equal(r.health, 100, 'missed stomp does not repeat');
+  boss.timer = .001; g.enemyStep(boss, .01); assert.equal(boss.mode, 'recover'); assert.equal(boss.timer, 1.8);
+  r.stage = 1; const later = g.spawn('deinosuchus', { x: 480, y: 200 }, true); later.hp = later.maxHP / 2; later.cooldown = 0; g.enemyStep(later, .01);
+  assert.equal(later.mode, 'windup'); assert.equal(later.windupDuration, .95); assert.equal(later.bossPhase, 1);
+});
+test('terrain layouts provide repeatable trails, clearings and biome-specific scenery without changing world bounds', () => {
+  for (let stage = 0; stage < 4; stage++) {
+    const map = C.createMap(stage); assert.deepEqual(map, C.createMap(stage));
+    assert.equal(map.trails.length, 3); assert.ok(map.regions.length >= 5); assert.ok(map.clearings.some(c => c.x === 480 && c.y === 340));
+    assert.ok(map.decorations.length > 10); assert.ok(map.decorations.every(p => p.x > 0 && p.x < map.width && p.y > 0 && p.y < map.height));
+    assert.ok(map.trails.every(points => points.every(p => p.x >= 0 && p.y >= 0 && p.x <= map.width && p.y <= map.height)));
+    if (stage === 0) assert.ok(map.decorations.some(p => p.canopy));
+    if (stage === 3) assert.ok(map.decorations.some(p => p.path.endsWith('lava_rock.png')));
+  }
+});

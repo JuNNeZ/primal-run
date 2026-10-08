@@ -201,14 +201,59 @@ Navnet Jonas (uanset store/små bogstaver) låser en kosmetisk krone, titlen
 kameraposition, bevægelsesretninger inklusive roteret boss-pose, rarity/rang,
 XP-bar, sikre mutationsvalg, touch-layout og Jonas-hemmeligheden.
 
+## Terræn, kampfeedback og første boss
+
+Kortene har nu sammenhængende, snoede stier og uregelmæssige lysninger/grønne
+områder. Originale tiles bruges med dæmpet kontrast, så dyr, loot og varsler
+står tydeligere. Skoven har træer, bregner, blomster og stammer; flodsletten
+har en flod med brede bredder; klippelandet har sten, døde træer og kranier;
+vulkandalen har sprækker, lavasten og knogler. Stier og flod/sprække vises på
+minikortet. Vegetation placeres uden for hovedstier og lysninger; trækroner
+bliver gennemsigtige tæt på spilleren. Flod/lava er visuel scenery i denne
+opdatering, uden nye skjulte terrænskader. Eksisterende sten-kollision bevares.
+Alle PNG-kildepixels er uændrede; ingen nye sprite-animationer påstås.
+
+Et bid, der rammer, giver 33 ms hit-stop (50 ms ved boss/stærkt/flere hits),
+partikler, et kort blodmærke og lidt kamerarystelse. Misses giver ingen
+kontakt-feedback. Blødende dyr efterlader kortvarige blodspor; pounce og bossens
+stormløb giver støv. Effekterne har faste caps og udløber med simulationstiden;
+pause/mutationsvalg fryser også dem. Kontaktlyden har en kort støj-transient,
+og bossen får en syntetisk brummen. Alle lyde følger master/SFX separat fra
+musikken; kamerarystelse kan fortsat slås fra.
+
+Skovens jæger har en egen AI med to faser:
+
+- Fase 1: 0,95 sekunders varsel før et fastlåst stormløb (320 px/s i 0,58 s).
+  Tæt på spilleren veksler den med et varslet retningsbid (0,6 s varsel).
+- Under recovery kan flankerne/bagkroppen bides for **+50 % skade**; fronten
+  har ingen bonus. En blågrøn markering og HUD-tekst viser åbningen.
+- Ved halvt liv: én tydelig 1,1 sekunders raseri-pause og fase-2-besked.
+- Fase 2: hurtigere stormløb (370 px/s), et ekstra stormløb med nyt, fastlåst
+  sigte efter **0,65 sekunders nyt varsel**, samt bid og varslet tramp tæt på.
+  Tramp har 115 pixels radius, rammer én gang og kan undviges med pounce.
+- Stormløb har 1,65 s recovery; bid 1,15 s; tramp 1,8 s. Bossen kan ikke
+  stunlåses. DNA-belønningen er fortsat 15, og næste biome åbnes som før.
+
+Bid-varslet viser den faktiske kegle (radius 100, facing dot >0,35).
+Stormløbsvarslet viser en capsule med faktisk bane-længde og kontakt-radius 51,
+ikke kun en smal midterlinje. HUD viser fase, afstand og aktuelt angreb/åbning.
+
+`tests/polish-browser.cjs` kontrollerer faktiske renderinger af alle fire biomer,
+kontaktframe/hit-stop/partikler, pause, fase- og rangevarsler samt en hel første
+bosskamp med almindelige simulation-inputs uden ændringer af bossens HP efter
+spawn. Det er en kontrolleret, isoleret boss-spiltest, ikke en menneskelig
+slutgodkendelse af balance. `polish_runtime_report.json` registrerer standalone
+og rigtig GDevelop 5.6.283 separat. Hele pakken består 29 core-tests plus
+browser-/kit-regressioner og tekniske PNG-valideringer.
+
 ## Status og næste arbejde
 
 Dette er en spilbar udviklingsversion, ikke et færdigbalanceret produktionsspil.
 Progressions- og browserkontroller gennemfører bossforløbet med kontrollerede
 testtilstande; de erstatter ikke en fuld menneskelig gennemspilning.
 
-Næste arbejde er kampbalance, bedre fjendeadskillelse/pathfinding, unikke
-biomefarer og mere særprægede bossmønstre, fuld mobiltest samt visuel gennemgang
+Næste arbejde er menneskelig kampbalance/spiltest, bedre pathfinding, unikke
+biomefarer og videreudvikling af de øvrige bossmønstre, fysisk mobiltest samt visuel gennemgang
 af animationerne. Musikken er et kort genereret loop; længere kompositioner og
 endelige effektlyde er en senere lydopgave. Highscores er lokale; online-score
 kræver backend og validering.

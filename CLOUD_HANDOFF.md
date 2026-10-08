@@ -94,3 +94,25 @@ and timers. No friendly fire, NPC rewards or new player movement blocking.
 24 core cases, all browser regressions and original kit tests PASS. Mixed crowd
 in actual frame loop and progression also PASS in official GDevelop 5.6.283.
 Current standalone/GDJS evidence and source hashes: world_runtime_report.json.
+
+## 2026-10-08: terrain, combat feedback and first-boss polish
+
+Maps now compose the unchanged kit art with subdued terrain textures, organic
+regions/clearings, winding trails, biome-specific props and visual river/lava
+features. Minimap includes trails/features; nearby canopies fade. No new PNGs
+or terrain damage, and sprite approval status is unchanged.
+
+Bites have 33/50 ms hit-stop, capped blood/dust particles/decals and a sharper
+SFX transient; pause freezes FX. First Carnotaurus boss has phase-one charge/bite,
+recovery rear/flank +50% bonus, half-health enrage, phase-two double charge with
+a new locked telegraph, directional bite and one-hit/pounce-avoidable stomp.
+HUD explains phase and openings. Warning geometry matches bite cone / charge
+capsule. Boss reward/progression unchanged; other boss AIs retained.
+
+29 core tests plus complete npm test and kit/active/enemy PNG validators PASS.
+Official GDevelop 5.6.283 export passes progression, player/enemy frames, world
+layouts and polish checks; final warning geometry rechecked in final GDJS export.
+A complete isolated boss fight passes through normal input without HP edits.
+Reports: PRIMAL_RUN_Game/polish_runtime_report.json and world_runtime_report.json.
+Temporary checks: /tmp/primal-polish-final-checks; engine binaries remain /tmp.
+Publication continues via source codex/primal-run-playable and static gh-pages.
