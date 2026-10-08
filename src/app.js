@@ -17,7 +17,7 @@
       <footer><span><kbd>WASD</kbd> Bevæg · <kbd>SPACE</kbd> Bid · <kbd>SHIFT</kbd> Pounce · <kbd>ESC</kbd> Pause</span><span class="save-status"></span></footer>`;
     host.appendChild(shell);
     const canvas = shell.querySelector('canvas'), ctx = canvas.getContext('2d');
-    const screen = shell.querySelector('.screen'), images = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
+    const screen = shell.querySelector('.screen'), images = {}, flashes = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
     const audio = new root.PrimalAudio(resolve, game.save.settings);
     let ready = false, disposed = false, previousPhase = '', returnPhase = 'menu', last = 0, accumulator = 0, animationId = 0, toastUntil = 0;
     const catalog = root.PrimalAssets;
@@ -80,8 +80,8 @@
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
       shell.querySelector('.save-status').textContent = game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session';
     }
-    function sprite(path, x, y, alpha = 1) {
-      const image = images[path], meta = catalog[path]; if (!image || !meta) return;
+    function sprite(path, x, y, alpha = 1, flash = false) {
+      const image = flash ? flashes[path] : images[path], meta = catalog[path]; if (!image || !meta) return;
       ctx.globalAlpha = alpha; ctx.drawImage(image, Math.round(x) - meta.origin[0], Math.round(y) - meta.origin[1]); ctx.globalAlpha = 1;
     }
     function background(stage) {
@@ -132,6 +132,7 @@
         if (o.enemy && o.enemy.boss) { ctx.strokeStyle = '#e9b75a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), 35, 17, 0, 0, Math.PI * 2); ctx.stroke(); }
         const alpha = o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
         sprite(o.path, o.x, o.y, alpha);
+        if (o.enemy && o.enemy.hit > 0) sprite(o.path, o.x, o.y, .7 * o.enemy.hit / .15, true);
         if (o.enemy && o.enemy.hp < o.enemy.maxHP && !o.enemy.boss) { ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - 40, 40, 4); ctx.fillStyle = '#c45f45'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - 40, Math.round(40 * o.enemy.hp / o.enemy.maxHP), 4); }
       }
       if (r) {
@@ -140,7 +141,11 @@
           sprite('assets/effects/bite_slash_001.png', r.player.x + dx * 36, r.player.y + dy * 36);
         }
         ctx.font = 'bold 12px monospace'; ctx.textAlign = 'center';
-        for (const e of r.effects) { ctx.fillStyle = '#edd0a0'; ctx.fillText(e.text, Math.round(e.x), Math.round(e.y - 30 - (1 - e.life) * 20)); }
+        for (const e of r.effects) {
+          const x = Math.round(e.x), y = Math.round(e.y - 55 - (1 - e.life / .55) * 20);
+          ctx.lineWidth = 3; ctx.strokeStyle = '#101713'; ctx.strokeText(e.text, x, y);
+          ctx.fillStyle = '#ffe0a0'; ctx.fillText(e.text, x, y);
+        }
       }
       ctx.restore();
       if (!r) return;
@@ -221,7 +226,13 @@
     const releasePointer = e => { const target = e.target.closest('[data-key]'); if (target) keys.delete(target.dataset.key); };
     listen(shell, 'pointerup', releasePointer); listen(shell, 'pointercancel', releasePointer); listen(shell, 'lostpointercapture', releasePointer);
     const load = Promise.all(Object.keys(catalog).map(path => new Promise((resolveLoad, reject) => {
-      const image = new Image(); image.onload = () => { images[path] = image; resolveLoad(); }; image.onerror = () => reject(Error(path)); image.src = resolve(path);
+      const image = new Image(); image.onload = () => { images[path] = image;
+        if (path.startsWith('assets/enemies/')) {
+          const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
+          const tintCtx = tint.getContext('2d'); tintCtx.drawImage(image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';
+          tintCtx.fillStyle = '#fff1c9'; tintCtx.fillRect(0, 0, tint.width, tint.height); flashes[path] = tint;
+        }
+        resolveLoad(); }; image.onerror = () => reject(Error(path)); image.src = resolve(path);
     }))).then(() => { ready = true; renderScreen(true); return true; }).catch(e => { game.phase = 'error'; renderScreen(true); screen.querySelector('.load-error').textContent = e.message; return false; });
     const api = { game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
     root.primalRun = api; renderScreen(true); if (!driven) animationId = requestAnimationFrame(frame);
