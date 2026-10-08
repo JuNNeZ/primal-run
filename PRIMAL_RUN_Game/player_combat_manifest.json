@@ -1,0 +1,1058 @@
+[
+  {
+    "file": "assets/player_combat/utahraptor_bite_S_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "direction": "S",
+    "state": "bite",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_S_sheet.png",
+    "source_sha256": "88177d42b1e429cb30e9c8801f02ac3c8cf23519d912859e12081c3b189fb4cc",
+    "source_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      70,
+      70
+    ],
+    "registration_offset": [
+      -6,
+      2
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 0,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_S_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "direction": "S",
+    "state": "bite",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_S_sheet.png",
+    "source_sha256": "88177d42b1e429cb30e9c8801f02ac3c8cf23519d912859e12081c3b189fb4cc",
+    "source_crop": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "source_cell_anchor": [
+      64,
+      71
+    ],
+    "registration_offset": [
+      0,
+      1
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 1,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_S_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "direction": "S",
+    "state": "bite",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_S_sheet.png",
+    "source_sha256": "88177d42b1e429cb30e9c8801f02ac3c8cf23519d912859e12081c3b189fb4cc",
+    "source_crop": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      61,
+      71
+    ],
+    "registration_offset": [
+      3,
+      1
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 2,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_S_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "direction": "S",
+    "state": "bite",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_S_sheet.png",
+    "source_sha256": "88177d42b1e429cb30e9c8801f02ac3c8cf23519d912859e12081c3b189fb4cc",
+    "source_crop": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "source_cell_anchor": [
+      70,
+      72
+    ],
+    "registration_offset": [
+      -6,
+      0
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 3,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_S_004.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "direction": "S",
+    "state": "bite",
+    "frame": 4,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_S_sheet.png",
+    "source_sha256": "88177d42b1e429cb30e9c8801f02ac3c8cf23519d912859e12081c3b189fb4cc",
+    "source_crop": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "source_cell_anchor": [
+      64,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 4,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_S_005.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      72
+    ],
+    "body_anchor": [
+      64,
+      72
+    ],
+    "direction": "S",
+    "state": "bite",
+    "frame": 5,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_S_sheet.png",
+    "source_sha256": "88177d42b1e429cb30e9c8801f02ac3c8cf23519d912859e12081c3b189fb4cc",
+    "source_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      70,
+      70
+    ],
+    "registration_offset": [
+      -6,
+      2
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 0,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_N_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "direction": "N",
+    "state": "bite",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_N_sheet.png",
+    "source_sha256": "9dc439ef9105c45e33f8c00db4f95b7fbdd9c893fccbb65cc44c341c75429ac1",
+    "source_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      71,
+      56
+    ],
+    "registration_offset": [
+      -7,
+      0
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 0,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_N_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "direction": "N",
+    "state": "bite",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_N_sheet.png",
+    "source_sha256": "9dc439ef9105c45e33f8c00db4f95b7fbdd9c893fccbb65cc44c341c75429ac1",
+    "source_crop": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "source_cell_anchor": [
+      64,
+      56
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 1,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_N_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "direction": "N",
+    "state": "bite",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_N_sheet.png",
+    "source_sha256": "9dc439ef9105c45e33f8c00db4f95b7fbdd9c893fccbb65cc44c341c75429ac1",
+    "source_crop": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      64,
+      56
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 2,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_N_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "direction": "N",
+    "state": "bite",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_N_sheet.png",
+    "source_sha256": "9dc439ef9105c45e33f8c00db4f95b7fbdd9c893fccbb65cc44c341c75429ac1",
+    "source_crop": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "source_cell_anchor": [
+      71,
+      56
+    ],
+    "registration_offset": [
+      -7,
+      0
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 3,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_N_004.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "direction": "N",
+    "state": "bite",
+    "frame": 4,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_N_sheet.png",
+    "source_sha256": "9dc439ef9105c45e33f8c00db4f95b7fbdd9c893fccbb65cc44c341c75429ac1",
+    "source_crop": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "source_cell_anchor": [
+      64,
+      56
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 4,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_N_005.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      56
+    ],
+    "body_anchor": [
+      64,
+      56
+    ],
+    "direction": "N",
+    "state": "bite",
+    "frame": 5,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_N_sheet.png",
+    "source_sha256": "9dc439ef9105c45e33f8c00db4f95b7fbdd9c893fccbb65cc44c341c75429ac1",
+    "source_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      71,
+      56
+    ],
+    "registration_offset": [
+      -7,
+      0
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 0,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_E_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "direction": "E",
+    "state": "bite",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_E_sheet.png",
+    "source_sha256": "6d485e86e0b60903d6d340ce611f1fda6cac59f5f76e19d773ca890ee1880f8a",
+    "source_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      70,
+      66
+    ],
+    "registration_offset": [
+      -2,
+      -2
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 0,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_E_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "direction": "E",
+    "state": "bite",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_E_sheet.png",
+    "source_sha256": "6d485e86e0b60903d6d340ce611f1fda6cac59f5f76e19d773ca890ee1880f8a",
+    "source_crop": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "source_cell_anchor": [
+      70,
+      66
+    ],
+    "registration_offset": [
+      -2,
+      -2
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 1,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_E_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "direction": "E",
+    "state": "bite",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_E_sheet.png",
+    "source_sha256": "6d485e86e0b60903d6d340ce611f1fda6cac59f5f76e19d773ca890ee1880f8a",
+    "source_crop": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      70,
+      66
+    ],
+    "registration_offset": [
+      -2,
+      -2
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 2,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_E_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "direction": "E",
+    "state": "bite",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_E_sheet.png",
+    "source_sha256": "6d485e86e0b60903d6d340ce611f1fda6cac59f5f76e19d773ca890ee1880f8a",
+    "source_crop": [
+      0,
+      512,
+      528,
+      1024
+    ],
+    "source_cell_anchor": [
+      72,
+      58
+    ],
+    "registration_offset": [
+      -4,
+      6
+    ],
+    "sampled_source_size": [
+      132,
+      128
+    ],
+    "source_frame": 3,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_E_004.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "direction": "E",
+    "state": "bite",
+    "frame": 4,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_E_sheet.png",
+    "source_sha256": "6d485e86e0b60903d6d340ce611f1fda6cac59f5f76e19d773ca890ee1880f8a",
+    "source_crop": [
+      528,
+      512,
+      1024,
+      1024
+    ],
+    "source_cell_anchor": [
+      66,
+      58
+    ],
+    "registration_offset": [
+      2,
+      6
+    ],
+    "sampled_source_size": [
+      124,
+      128
+    ],
+    "source_frame": 4,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_E_005.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      68,
+      64
+    ],
+    "body_anchor": [
+      68,
+      64
+    ],
+    "direction": "E",
+    "state": "bite",
+    "frame": 5,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_E_sheet.png",
+    "source_sha256": "6d485e86e0b60903d6d340ce611f1fda6cac59f5f76e19d773ca890ee1880f8a",
+    "source_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      70,
+      66
+    ],
+    "registration_offset": [
+      -2,
+      -2
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 0,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_W_000.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "direction": "W",
+    "state": "bite",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_W_sheet.png",
+    "source_sha256": "df30537c8eac9dba5d2f1c1927a6896067c26e1fd0fe0bc39fc09e656458e915",
+    "source_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      63,
+      68
+    ],
+    "registration_offset": [
+      -3,
+      -4
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 0,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_W_001.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "direction": "W",
+    "state": "bite",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_W_sheet.png",
+    "source_sha256": "df30537c8eac9dba5d2f1c1927a6896067c26e1fd0fe0bc39fc09e656458e915",
+    "source_crop": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "source_cell_anchor": [
+      63,
+      68
+    ],
+    "registration_offset": [
+      -3,
+      -4
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 1,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_W_002.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "direction": "W",
+    "state": "bite",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_W_sheet.png",
+    "source_sha256": "df30537c8eac9dba5d2f1c1927a6896067c26e1fd0fe0bc39fc09e656458e915",
+    "source_crop": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      63,
+      68
+    ],
+    "registration_offset": [
+      -3,
+      -4
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 2,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_W_003.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "direction": "W",
+    "state": "bite",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_W_sheet.png",
+    "source_sha256": "df30537c8eac9dba5d2f1c1927a6896067c26e1fd0fe0bc39fc09e656458e915",
+    "source_crop": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "source_cell_anchor": [
+      63,
+      68
+    ],
+    "registration_offset": [
+      -3,
+      -4
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 3,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_W_004.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "direction": "W",
+    "state": "bite",
+    "frame": 4,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_W_sheet.png",
+    "source_sha256": "df30537c8eac9dba5d2f1c1927a6896067c26e1fd0fe0bc39fc09e656458e915",
+    "source_crop": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "source_cell_anchor": [
+      63,
+      68
+    ],
+    "registration_offset": [
+      -3,
+      -4
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 4,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/player_combat/utahraptor_bite_W_005.png",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      60,
+      64
+    ],
+    "body_anchor": [
+      60,
+      64
+    ],
+    "direction": "W",
+    "state": "bite",
+    "frame": 5,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/player_attacks_v1/bite_W_sheet.png",
+    "source_sha256": "df30537c8eac9dba5d2f1c1927a6896067c26e1fd0fe0bc39fc09e656458e915",
+    "source_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      63,
+      68
+    ],
+    "registration_offset": [
+      -3,
+      -4
+    ],
+    "sampled_source_size": [
+      128,
+      128
+    ],
+    "source_frame": 0,
+    "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
+    "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  }
+]

@@ -21,4 +21,5 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py
       - run: python validate_sprites.py
+      - run: python tools/validate_game_sprites.py
       - run: npm test

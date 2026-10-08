@@ -1,0 +1,66 @@
+[
+  {
+    "file": "sounds/bite.wav",
+    "duration_seconds": 0.16,
+    "sample_rate": 22050,
+    "mono": true,
+    "peak": 11765,
+    "status": "synthetic_placeholder"
+  },
+  {
+    "file": "sounds/hit.wav",
+    "duration_seconds": 0.18,
+    "sample_rate": 22050,
+    "mono": true,
+    "peak": 11452,
+    "status": "synthetic_placeholder"
+  },
+  {
+    "file": "sounds/pickup.wav",
+    "duration_seconds": 0.2,
+    "sample_rate": 22050,
+    "mono": true,
+    "peak": 12074,
+    "status": "synthetic_placeholder"
+  },
+  {
+    "file": "sounds/level_up.wav",
+    "duration_seconds": 0.6,
+    "sample_rate": 22050,
+    "mono": true,
+    "peak": 12329,
+    "status": "synthetic_placeholder"
+  },
+  {
+    "file": "sounds/pounce.wav",
+    "duration_seconds": 0.24,
+    "sample_rate": 22050,
+    "mono": true,
+    "peak": 11579,
+    "status": "synthetic_placeholder"
+  },
+  {
+    "file": "sounds/death.wav",
+    "duration_seconds": 0.7,
+    "sample_rate": 22050,
+    "mono": true,
+    "peak": 12055,
+    "status": "synthetic_placeholder"
+  },
+  {
+    "file": "sounds/meteor.wav",
+    "duration_seconds": 0.75,
+    "sample_rate": 22050,
+    "mono": true,
+    "peak": 12223,
+    "status": "synthetic_placeholder"
+  },
+  {
+    "file": "sounds/ui_select.wav",
+    "duration_seconds": 0.12,
+    "sample_rate": 22050,
+    "mono": true,
+    "peak": 11862,
+    "status": "synthetic_placeholder"
+  }
+]

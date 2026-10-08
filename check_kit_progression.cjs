@@ -1,9 +1,9 @@
-const {chromium, browserOptions}=require('./tools/browser.cjs');
-const path=require('path'),fs=require('fs'),{pathToFileURL}=require('url');let browser;
+const {chromium, browserOptions, localURL}=require('./tools/browser.cjs');
+const path=require('path'),fs=require('fs');let browser;
 (async()=>{
  browser=await chromium.launch(browserOptions());
  const page=await browser.newPage({viewport:{width:1080,height:950}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
- await page.goto(pathToFileURL(path.join(__dirname,'PRIMAL_RUN_Prototype_Kit/demo.html')).href);
+ await page.goto(await localURL(path.join(__dirname,'PRIMAL_RUN_Prototype_Kit/demo.html')));
  await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('Idle S'));
  await page.evaluate(()=>{let s=primalDemo.getState();s.enemies=[];s.food=[];s.player={x:480,y:300};s.cooldown=0;s.enemies=[{x:490,y:300,hp:1,touch:0},{x:500,y:300,hp:1,touch:0}];});
  await page.keyboard.press('Space');await page.waitForFunction(()=>primalDemo.getState().paused);

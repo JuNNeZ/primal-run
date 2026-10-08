@@ -2,6 +2,21 @@
 
 Repository: https://github.com/JuNNeZ/primal-run — privat.
 
+## Aktuel udviklingsversion
+
+Det nye spil ligger i **PRIMAL_RUN_Game**. Se mappens README.md og
+DEVELOPMENT_PLAN.md. `project.json` kan åbnes i GDevelop 5; det bruger
+JavaScript-events med en fælles spilkerne og canvas/HTML-menuer.
+En rigtig GDevelop 5.6.283 HTML5-eksport er testet i Chromium. Den gamle
+Prototype_Kit-demo og nedenstående oprindelige overdragelse er bevaret som
+historik; der findes nu et GDevelop-projekt.
+
+Start browserudgaven med `npm run preview` og åbn
+`/PRIMAL_RUN_Game/index.html`. Kør `npm run test:game` efter kodeændringer
+og `npm run build:game` for at opdatere det genererede GDevelop-event.
+`npm run build:web` samt den manuelle Pages-workflow klargør publicering.
+Ingen GitHub-push eller deployment er foretaget automatisk.
+
 ## Tilslut i Codex
 
 Vælg repositoryet i din cloud-environment-opsætning og giv GitHub-integrationen

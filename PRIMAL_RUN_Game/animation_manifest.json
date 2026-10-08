@@ -1,0 +1,358 @@
+{
+  "object": "Player",
+  "canvas": [
+    128,
+    128
+  ],
+  "animations": [
+    {
+      "name": "Idle_S",
+      "frames": [
+        "assets/player/utahraptor_idle_S_000.png"
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "loop": false,
+      "fps": null,
+      "production_approved": false
+    },
+    {
+      "name": "Walk_S",
+      "frames": [
+        "assets/player/utahraptor_walk_S_000.png",
+        "assets/player/utahraptor_walk_S_001.png",
+        "assets/player/utahraptor_walk_S_002.png",
+        "assets/player/utahraptor_walk_S_003.png",
+        "assets/player/utahraptor_walk_S_004.png",
+        "assets/player/utahraptor_walk_S_005.png"
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "loop": true,
+      "fps": 8,
+      "production_approved": false
+    },
+    {
+      "name": "Idle_N",
+      "frames": [
+        "assets/player/utahraptor_idle_N_000.png"
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "loop": false,
+      "fps": null,
+      "production_approved": false
+    },
+    {
+      "name": "Walk_N",
+      "frames": [
+        "assets/player/utahraptor_walk_N_000.png",
+        "assets/player/utahraptor_walk_N_001.png",
+        "assets/player/utahraptor_walk_N_002.png",
+        "assets/player/utahraptor_walk_N_003.png",
+        "assets/player/utahraptor_walk_N_004.png",
+        "assets/player/utahraptor_walk_N_005.png"
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "loop": true,
+      "fps": 8,
+      "production_approved": false
+    },
+    {
+      "name": "Idle_E",
+      "frames": [
+        "assets/player/utahraptor_idle_E_000.png"
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "loop": false,
+      "fps": null,
+      "production_approved": false
+    },
+    {
+      "name": "Walk_E",
+      "frames": [
+        "assets/player/utahraptor_walk_E_000.png",
+        "assets/player/utahraptor_walk_E_001.png",
+        "assets/player/utahraptor_walk_E_002.png",
+        "assets/player/utahraptor_walk_E_003.png",
+        "assets/player/utahraptor_walk_E_004.png",
+        "assets/player/utahraptor_walk_E_005.png"
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "loop": true,
+      "fps": 8,
+      "production_approved": false
+    },
+    {
+      "name": "Idle_W",
+      "frames": [
+        "assets/player/utahraptor_idle_W_000.png"
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "loop": false,
+      "fps": null,
+      "production_approved": false
+    },
+    {
+      "name": "Walk_W",
+      "frames": [
+        "assets/player/utahraptor_walk_W_000.png",
+        "assets/player/utahraptor_walk_W_001.png",
+        "assets/player/utahraptor_walk_W_002.png",
+        "assets/player/utahraptor_walk_W_003.png",
+        "assets/player/utahraptor_walk_W_004.png",
+        "assets/player/utahraptor_walk_W_005.png"
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "loop": true,
+      "fps": 8,
+      "production_approved": false
+    },
+    {
+      "name": "Bite_S",
+      "frames": [
+        "assets/player_combat/utahraptor_bite_S_000.png",
+        "assets/player_combat/utahraptor_bite_S_001.png",
+        "assets/player_combat/utahraptor_bite_S_002.png",
+        "assets/player_combat/utahraptor_bite_S_003.png",
+        "assets/player_combat/utahraptor_bite_S_004.png",
+        "assets/player_combat/utahraptor_bite_S_005.png"
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "body_anchor": [
+        64,
+        72
+      ],
+      "fps": 14,
+      "loop": false,
+      "duration_seconds": 0.42857142857142855,
+      "contact_frame": 3,
+      "contact_seconds": 0.21428571428571427,
+      "quick_jaws": "Scale duration and contact time together by (1 - 0.08 * rank).",
+      "validated_animation": false,
+      "production_approved": false,
+      "review": "Generated poses manually checked for direction and mouth perspective; still require user art review and matching legacy walk refinement."
+    },
+    {
+      "name": "Bite_N",
+      "frames": [
+        "assets/player_combat/utahraptor_bite_N_000.png",
+        "assets/player_combat/utahraptor_bite_N_001.png",
+        "assets/player_combat/utahraptor_bite_N_002.png",
+        "assets/player_combat/utahraptor_bite_N_003.png",
+        "assets/player_combat/utahraptor_bite_N_004.png",
+        "assets/player_combat/utahraptor_bite_N_005.png"
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "body_anchor": [
+        64,
+        56
+      ],
+      "fps": 14,
+      "loop": false,
+      "duration_seconds": 0.42857142857142855,
+      "contact_frame": 3,
+      "contact_seconds": 0.21428571428571427,
+      "quick_jaws": "Scale duration and contact time together by (1 - 0.08 * rank).",
+      "validated_animation": false,
+      "production_approved": false,
+      "review": "Generated poses manually checked for direction and mouth perspective; still require user art review and matching legacy walk refinement."
+    },
+    {
+      "name": "Bite_E",
+      "frames": [
+        "assets/player_combat/utahraptor_bite_E_000.png",
+        "assets/player_combat/utahraptor_bite_E_001.png",
+        "assets/player_combat/utahraptor_bite_E_002.png",
+        "assets/player_combat/utahraptor_bite_E_003.png",
+        "assets/player_combat/utahraptor_bite_E_004.png",
+        "assets/player_combat/utahraptor_bite_E_005.png"
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "body_anchor": [
+        68,
+        64
+      ],
+      "fps": 14,
+      "loop": false,
+      "duration_seconds": 0.42857142857142855,
+      "contact_frame": 3,
+      "contact_seconds": 0.21428571428571427,
+      "quick_jaws": "Scale duration and contact time together by (1 - 0.08 * rank).",
+      "validated_animation": false,
+      "production_approved": false,
+      "review": "Generated poses manually checked for direction and mouth perspective; still require user art review and matching legacy walk refinement."
+    },
+    {
+      "name": "Bite_W",
+      "frames": [
+        "assets/player_combat/utahraptor_bite_W_000.png",
+        "assets/player_combat/utahraptor_bite_W_001.png",
+        "assets/player_combat/utahraptor_bite_W_002.png",
+        "assets/player_combat/utahraptor_bite_W_003.png",
+        "assets/player_combat/utahraptor_bite_W_004.png",
+        "assets/player_combat/utahraptor_bite_W_005.png"
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "body_anchor": [
+        60,
+        64
+      ],
+      "fps": 14,
+      "loop": false,
+      "duration_seconds": 0.42857142857142855,
+      "contact_frame": 3,
+      "contact_seconds": 0.21428571428571427,
+      "quick_jaws": "Scale duration and contact time together by (1 - 0.08 * rank).",
+      "validated_animation": false,
+      "production_approved": false,
+      "review": "Generated poses manually checked for direction and mouth perspective; still require user art review and matching legacy walk refinement."
+    }
+  ],
+  "direction_origins": {
+    "S": [
+      64,
+      72
+    ],
+    "N": [
+      64,
+      56
+    ],
+    "E": [
+      68,
+      64
+    ],
+    "W": [
+      60,
+      64
+    ]
+  },
+  "north_caveat": "Rotated South prototype; lighting rotates. Collision must remain independent of image silhouette.",
+  "GDevelop_runtime": "Functional Bite_S/N/E/W tests PASS; see player_animation_runtime_report.json. Production art remains unapproved.",
+  "optional_pose_studies": [
+    {
+      "name": "bite_S",
+      "frames": [
+        "assets/player_actions/utahraptor_bite_S_000.png",
+        "assets/player_actions/utahraptor_bite_S_001.png",
+        "assets/player_actions/utahraptor_bite_S_002.png",
+        "assets/player_actions/utahraptor_bite_S_003.png"
+      ],
+      "suggested_fps": 10,
+      "loop": false,
+      "validated_animation": false,
+      "note": "Optional pose study only; not used in browser gameplay."
+    },
+    {
+      "name": "pounce_S",
+      "frames": [
+        "assets/player_actions/utahraptor_pounce_S_000.png",
+        "assets/player_actions/utahraptor_pounce_S_001.png",
+        "assets/player_actions/utahraptor_pounce_S_002.png",
+        "assets/player_actions/utahraptor_pounce_S_003.png"
+      ],
+      "suggested_fps": 8,
+      "loop": false,
+      "validated_animation": false,
+      "note": "Optional pose study only; not used in browser gameplay."
+    },
+    {
+      "name": "death_S",
+      "frames": [
+        "assets/player_actions/utahraptor_death_S_000.png",
+        "assets/player_actions/utahraptor_death_S_001.png",
+        "assets/player_actions/utahraptor_death_S_002.png",
+        "assets/player_actions/utahraptor_death_S_003.png"
+      ],
+      "suggested_fps": 8,
+      "loop": false,
+      "validated_animation": false,
+      "note": "Optional pose study only; not used in browser gameplay."
+    }
+  ],
+  "effects": [
+    {
+      "name": "bite_slash",
+      "frames": [
+        "assets/effects/bite_slash_000.png",
+        "assets/effects/bite_slash_001.png",
+        "assets/effects/bite_slash_002.png",
+        "assets/effects/bite_slash_003.png"
+      ],
+      "fps": 10,
+      "loop": false,
+      "origin": [
+        48,
+        48
+      ],
+      "production_approved": false
+    },
+    {
+      "name": "dust",
+      "frames": [
+        "assets/effects/dust_000.png",
+        "assets/effects/dust_001.png",
+        "assets/effects/dust_002.png",
+        "assets/effects/dust_003.png"
+      ],
+      "fps": 10,
+      "loop": false,
+      "origin": [
+        48,
+        48
+      ],
+      "production_approved": false
+    },
+    {
+      "name": "meteor_impact",
+      "frames": [
+        "assets/effects/meteor_impact_000.png",
+        "assets/effects/meteor_impact_001.png",
+        "assets/effects/meteor_impact_002.png",
+        "assets/effects/meteor_impact_003.png"
+      ],
+      "fps": 10,
+      "loop": false,
+      "origin": [
+        48,
+        48
+      ],
+      "production_approved": false
+    }
+  ],
+  "combat_frame_plan": "Bite upgraded from 4 frames/10fps to 6 frames/14fps for anticipation, gape, contact, recoil and exact ready return.",
+  "north_combat_caveat": "New North attacks are separately generated; not a rotation of South. Legacy North walk still has its original rotated-light caveat."
+}

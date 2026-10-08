@@ -1,0 +1,1 @@
+Raw imagegen reference sheets. Import individual PNGs from assets/. Enemy sheet has rejected profile/wrong-facing samples; only reviewed South cells were exported. Action drawings are pose studies, not approved animations. Atlas layouts can be uneven; source_crop in manifest records reviewed extraction boundaries.

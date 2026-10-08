@@ -2,16 +2,32 @@
 
 Privat arbejdsrepository til et top-down dinosaur-roguelite i pixel art.
 
-Den aktuelle kerne er **PRIMAL_RUN_Prototype_Kit**: 104 individuelle PNG-assets,
-otte WAV-placeholderlyde, en browserdemo og lokale GDevelop-byggeguides.
-Demoen har fire bevægelsesretninger, bite, HP, fjender, XP, mutationsvalg/stacks,
-pounce/stamina, death/restart og lokal DNA.
+Det aktive spil er **PRIMAL_RUN_Game**: en spilbar udviklingsversion med
+Utahraptor, fire biomer/bosser, kød/levels, mutationer, permanent DNA-shop,
+startmenu, lokale highscores, lydindstillinger og original proceduremusik.
+Den fælles spilkerne kører i browseren og i et GDevelop 5-projekt.
+
+Utahraptoren har nu et seks-frame bid i hver af fire retninger med skade på
+kontaktframen. [Se alle nye player-frames og animationer](PRIMAL_RUN_Game/player_review.html).
+
+**PRIMAL_RUN_Prototype_Kit** er den bevarede assetpakke og tidligere browserdemo
+med 104 PNG-assets, otte WAV-placeholderlyde og GDevelop-byggeguides.
 
 ## Start
 
-Åbn `PRIMAL_RUN_Prototype_Kit/START_HER.html` i en browser efter download/clone.
-Eller kør `npm run preview` og gå til
-`http://localhost:8000/PRIMAL_RUN_Prototype_Kit/START_HER.html`.
+Kør `npm run preview`, og åbn
+`http://localhost:8000/PRIMAL_RUN_Game/index.html`.
+
+I GDevelop åbnes **[PRIMAL_RUN_Game/project.json](PRIMAL_RUN_Game/project.json)**
+direkte. Behold hele projektmappen samlet. Mekanikkerne bruger JavaScript-events
+og redigeres i `src/`; de er ikke individuelle visuelle events i sceneeditoren.
+Projektet er indlæst og eksporteret med GDevelop 5.6.283, og eksporten er testet
+i Chromium. Se [spillets vejledning](PRIMAL_RUN_Game/README.md) og
+[udviklingsplanen](PRIMAL_RUN_Game/DEVELOPMENT_PLAN.md).
+
+`npm run build:web` klargør `dist/` til GitHub Pages. Den manuelle workflow
+**Publish PRIMAL RUN to GitHub Pages** publicerer efter opsætning i GitHub.
+Der er ikke foretaget nogen deployment som del af det lokale udviklingsarbejde.
 
 Læs [cloud-overdragelsen](CLOUD_HANDOFF.md), når arbejdet fortsættes på en anden computer.
 Den komplette asset-guide ligger i
@@ -26,16 +42,25 @@ npm ci
 npx playwright install --with-deps chromium
 python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py
 npm test
+npm run build:game
+npm run build:web
 ```
 
 På Windows kan de installerede Chrome-filer bruges automatisk. En anden browsersti
 kan sættes med `PRIMAL_CHROME_PATH`. På Linux/cloud bruges Playwright Chromium.
 GitHub Actions kører asset- og browserkontroller ved push og PR.
 
+`npm run test:game` tester den nye spilkerne og browserversionen.
+`npm run test:kit` tester den tidligere prototype via lokal HTTP. Kit-testene
+skriver rapporter og screenshots; brug en midlertidig kopi, hvis historiske
+rapporter skal bevares. `npm run build:game` opdaterer det genererede GDevelop-
+event og kopierer kit-assets byte-for-byte; kør det efter ændringer i `src/`.
+
 Tidligere V2–V5-pakker og konceptudklip er bevaret som referencer. Arbejd videre
-i Prototype_Kit; regenerér ikke historiske pakker uden en konkret grund.
+i PRIMAL_RUN_Game; regenerér ikke historiske pakker uden en konkret grund.
 ZIP-filer, som kan genskabes lokalt, er udeladt fra Git.
 
 Alle assets er prototyper. Action-poser og enemy-stillbilleder er ikke færdige
-animationer. Der er endnu ikke et GDevelop `project.json`, og GDevelop-runtime
-er ikke testet. Se sprite-regler og rapporter for de præcise begrænsninger.
+animationer. Den nye GDevelop-runtime er funktionelt testet, men det godkender
+ikke grafikkens stil, anatomi eller animationskvalitet. Balance, mobilstyring og
+endelige animationer kræver videre spiltest. Se sprite-regler og rapporter.

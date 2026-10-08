@@ -3,11 +3,16 @@
 ## Repository and cloud work
 
 Read README.md and CLOUD_HANDOFF.md before continuing. The active deliverable is
-PRIMAL_RUN_Prototype_Kit; earlier packs are preserved references. There is no
-GDevelop project.json yet. Keep browser evidence separate from GDevelop runtime.
+PRIMAL_RUN_Game; Prototype_Kit and earlier packs are preserved references.
+PRIMAL_RUN_Game/project.json is a generated GDevelop 5 project using JavaScript
+events and the shared canvas/HTML game. Edit src/*.js and style.css, then run
+`npm run build:game`; do not hand-edit its generated event. Keep standalone
+browser evidence separate from tests of the real GDevelop GDJS export.
 Install Python requirements and npm dependencies; use Playwright Chromium in
 cloud. Run `python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py` and `npm test`
-after relevant changes. GitHub Actions runs these checks on Linux.
+after relevant changes. `npm run test:game` covers the new game; `test:kit`
+writes historical reports/screenshots, so run it in a temporary checkout copy
+when preserving those outputs. GitHub Actions runs these checks on Linux.
 New work uses a codex/ branch. ZIPs are generated outputs, excluded from Git.
 Source art is tracked in package Source_Generated directories; do not depend on
 the original Windows user profile or temporary clipboard paths.
@@ -28,6 +33,12 @@ loop closure, palette, transparency and browser state changes for V4.
 For V5 cardinal directions, follow `PRIMAL_RUN_Demo_v5/SPRITE_RULES.md`.
 North is the user's explicit prototype rotation exception; retain its lighting
 caveat. Validate all four direction origins and movement/stop/blocked states.
+For the active game's player combat sprites, also read
+`PRIMAL_RUN_Game/SPRITE_RULES_PLAYER_COMBAT.md`. Keep new attacks in
+assets/player_combat and player_combat_manifest.json; the build combines this
+overlay with the unchanged kit manifest. Export with tools/export_player_attacks.py,
+run tools/validate_game_sprites.py, then rebuild/test the actual GDevelop export.
+All new combat art remains a prototype until its visual gates are approved.
 For the offline Prototype Kit, follow `PRIMAL_RUN_Prototype_Kit/SPRITE_RULES.md`.
 The fixed palette extends to 32 colors; existing 24 colors remain unchanged.
 Action poses are unapproved studies. Export only reviewed overhead enemy cells.

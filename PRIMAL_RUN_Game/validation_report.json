@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "asset_count": 104,
+  "new_assets": 71,
+  "palette_size": 32,
+  "errors": [],
+  "scope": [
+    "inventory",
+    "RGBA dimensions",
+    "binary alpha",
+    "transparent RGB zero",
+    "fixed palette",
+    "object padding"
+  ],
+  "visual_limits": [
+    "Enemy directions except South excluded: source profile/polarity failures.",
+    "Action drawings are pose studies; detail/scale/registration vary.",
+    "Terrain repeat previews available; seamless transitions not certified.",
+    "North player rotation carries rotated lighting."
+  ],
+  "GDevelop_runtime": "NOT RUN"
+}
