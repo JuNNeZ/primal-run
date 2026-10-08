@@ -84,3 +84,13 @@ evidence for pre-map timing; use world report for current mechanics.
 
 Pages continues to publish static `dist/` on gh-pages; source development remains
 on codex/primal-run-playable. Demo: https://junnez.github.io/primal-run/.
+
+## 2026-10-08: dinosaur crowd collision
+
+NPC fixed-torso collision now separates mixed species after AI movement. Twelve
+solver passes handle crowds; pinned animals transfer correction to neighbours.
+Mass scales with body radius, boss status and charging, preserving attack aim
+and timers. No friendly fire, NPC rewards or new player movement blocking.
+24 core cases, all browser regressions and original kit tests PASS. Mixed crowd
+in actual frame loop and progression also PASS in official GDevelop 5.6.283.
+Current standalone/GDJS evidence and source hashes: world_runtime_report.json.

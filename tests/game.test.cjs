@@ -233,3 +233,34 @@ test('weighted mutation rarity retains unique choices and ranks, and Jonas unloc
   assert.equal(C.MUTATIONS.find(m => m.id === g.run.choices[0]).rarity, 'epic');
   const id = g.run.choices[0]; assert.equal(g.run.mutations[id], 0); g.choose(id); assert.equal(g.run.mutations[id], 1);
 });
+
+
+test('mixed dinosaurs separate fixed bodies even at identical coordinates without dealing damage or changing attack aim', () => {
+  const g = make(), r = g.run;
+  const a = g.spawn('compy', { x: 1500, y: 1100 }), b = g.spawn('parasaurolophus', { x: 1500, y: 1100 });
+  b.mode = 'windup'; b.timer = .5; b.chargeX = 1; b.chargeY = 0;
+  const hp = [a.hp, b.hp, r.health]; g.separateDinosaurs();
+  assert.ok(Math.hypot(a.x - b.x, a.y - b.y) >= a.radius + b.radius + 3.95);
+  assert.deepEqual([a.hp, b.hp, r.health], hp); assert.equal(r.pickups.length, 0);
+  assert.equal(b.mode, 'windup'); assert.equal(b.timer, .5); assert.equal(b.chargeX, 1);
+  g.phase = 'mutation'; a.x = b.x; a.y = b.y; const frozen = JSON.stringify(r);
+  g.separateDinosaurs(); assert.equal(JSON.stringify(r), frozen);
+});
+test('crowded herds, bosses and map-edge collisions resolve without escaping bounds or blocking charge patterns', () => {
+  const g = make(), r = g.run;
+  for (let i = 0; i < 12; i++) g.spawn(i % 2 ? 'compy' : 'carnotaurus', { x: 1500, y: 1100 });
+  for (let frame = 0; frame < 20; frame++) g.separateDinosaurs();
+  for (let i = 0; i < r.enemies.length; i++) for (let j = i + 1; j < r.enemies.length; j++) {
+    const a = r.enemies[i], b = r.enemies[j];
+    assert.ok(Math.hypot(a.x - b.x, a.y - b.y) >= a.radius + b.radius + 3.9);
+  }
+  r.enemies = [];
+  const boss = g.spawn('carnotaurus', { x: 1500, y: 1100 }, true), small = g.spawn('compy', { x: 1501, y: 1100 });
+  boss.mode = 'charge'; boss.timer = .4; boss.chargeX = 1; boss.chargeY = 0;
+  g.separateDinosaurs(); assert.ok(Math.abs(boss.x - 1500) < 1, 'large charging boss pushes small animals aside');
+  assert.ok(small.x > 1540); assert.equal(boss.timer, .4); assert.equal(boss.chargeX, 1);
+  r.enemies = [];
+  const edge = g.spawn('compy', { x: 54, y: 1100 }), other = g.spawn('carnotaurus', { x: 60, y: 1100 });
+  g.separateDinosaurs(); assert.equal(edge.x, 54); assert.ok(other.x - edge.x >= 36.95);
+  const x = other.x; g.separateDinosaurs(); assert.equal(other.x, x, 'settled bodies do not jitter');
+});

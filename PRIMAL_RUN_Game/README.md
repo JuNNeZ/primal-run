@@ -172,6 +172,12 @@ Spilleren har blågrøn ring og `▼ DIG`, fjender orange/rød ring og `◆ FJEN
 fredeligt bytte grøn ring og `◇ BYTTE`, bosser gul ring og `◆ BOSS`. De fire
 animerede arter skifter retningssprite; de tre øvrige arter bruger en roteret
 South-pose. Kropshitboxes følger ikke spriteformen.
+Fjender og bytte kolliderer nu indbyrdes med faste torso-cirkler og fire pixels
+afstand. Overlap løses efter AI-bevægelse, også i tætte flokke og ved kortkanter.
+Store dyr har større masse; bosser og stormløb skubber mindre dyr til side.
+Kollisionen ændrer ikke HP, angrebsretning eller angrebstiming og er pauset
+under mutationsvalg. Spillerens bevægelse/pounce har fortsat fri passage;
+fjenderne gør ikke skade på hinanden eller skaber gratis kød/DNA.
 
 Kød har fire kvaliteter: almindeligt ×1, nærende ×1,5, sjældent ×2 og episk ×3
 (afrundet op). Farvet ring, kvalitetsnavn og værdien `+X` vises på jorden.

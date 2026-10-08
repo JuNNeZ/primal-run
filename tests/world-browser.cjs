@@ -16,6 +16,19 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       await page.waitForTimeout(100);
       if (mobile) assert.equal(await page.locator('.touch-controls').isVisible(), true);
       assert.ok(await page.evaluate(() => document.body.scrollHeight <= innerHeight), 'playing touch layout fits viewport');
+      if (width === 1280) {
+        await page.evaluate(() => {
+          const g = primalRun.game, r = g.run; r.enemies = []; r.spawnTimer = 999;
+          r.player.x = 1800; r.player.y = 1200;
+          for (let i = 0; i < 12; i++) { const e = g.spawn(i % 2 ? 'compy' : 'parasaurolophus', { x: 1500, y: 1100 }); e.speed = 0; e.cooldown = 999; }
+          window.collisionStartTime = r.seconds;
+        });
+        await page.waitForFunction(() => primalRun.game.run.seconds > collisionStartTime + .4);
+        assert.ok(await page.evaluate(() => {
+          const enemies = primalRun.game.run.enemies;
+          return enemies.length === 12 && enemies.every((a, i) => enemies.slice(i + 1).every(b => Math.hypot(a.x - b.x, a.y - b.y) >= a.radius + b.radius + 3.9)) && enemies.every(e => e.hp === e.maxHP);
+        }), 'real frame loop separates a mixed crowd without dinosaur friendly fire');
+      }
       await page.evaluate(() => {
         const g = primalRun.game, r = g.run; r.enemies = []; r.spawnTimer = 999;
         r.player.x = 1440; r.player.y = 960; r.xp = 3;
@@ -53,7 +66,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       results.push({ viewport: `${width}x${height}`, ...state }); await context.close();
     }
     assert.deepEqual(errors, []);
-    if (process.env.PRIMAL_WORLD_REPORT) fs.writeFileSync(process.env.PRIMAL_WORLD_REPORT, JSON.stringify({ runtime: process.env.PRIMAL_EXPECT_GDEVELOP ? 'official GDevelop GDJS export' : 'standalone browser', status: 'PASS', checks: ['responsive square pixels/no overflow', 'camera follows world position', 'flee/chase facing', 'XP percentage/count/remaining', 'colored rarity cards/current-next rank', 'mutation freeze', 'all choices reachable', 'Jonas cosmetic secret'], results }, null, 2) + '\n');
+    if (process.env.PRIMAL_WORLD_REPORT) fs.writeFileSync(process.env.PRIMAL_WORLD_REPORT, JSON.stringify({ runtime: process.env.PRIMAL_EXPECT_GDEVELOP ? 'official GDevelop GDJS export' : 'standalone browser', status: 'PASS', checks: ['responsive square pixels/no overflow', 'camera follows world position', 'real frame loop resolves a mixed 12-dinosaur crowd without friendly fire', 'flee/chase facing', 'XP percentage/count/remaining', 'colored rarity cards/current-next rank', 'mutation freeze', 'all choices reachable', 'Jonas cosmetic secret'], results }, null, 2) + '\n');
     console.log('PASS: world browser · desktop/portrait/landscape/ultrawide · camera · facing · XP bar · rarity/rank cards · safe selection · Jonas');
   } finally { await browser.close(); }
 })().catch(e => { console.error(e); process.exit(1); });
