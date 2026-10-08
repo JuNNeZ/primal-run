@@ -345,3 +345,29 @@ og original/spilfarver. Se SPRITE_RULES_ECOLOGY.md, ecology_manifest.json,
 ecology_validation.json og jungle_runtime_report.json. Kør
 `python tools/export_ecology.py`, `npm run validate:ecology`,
 `node tools/audit_sprite_sizes.cjs`, derefter `npm run build:game`.
+
+## Adaptive musik, varierede åbninger og sikre tastetryk
+
+Menuen, de fire biomer og de fire bosser har egne kompositioner med forskellige
+motiver, tempi, harmonier og instrumenter. Sejr og død har også hver sin musik.
+Temaer crossfader på0,65sekunder. Ved50/25/10%liv tilføjes gradvist pulsslag og
+spændingsstemmer oven på det aktuelle tema, også under bosskampen. Små healings
+omkring grænserne skifter ikke frem og tilbage: farelag slipper ved55/30/15%.
+Pause og valgskærme dæmper musikken og fjerner farepulsen. Volumes er fortsat
+uafhængige. Musikken er original WebAudio-syntese, ikke eksterne optagelser.
+
+Et run starter stadig på samme sikre koordinat, men stenformationer, begyndende
+byttedyr, planteklynger og store jordpletter varierer nu synligt. Tre forskellige
+klyngefordelinger og både vandrette/lodrette flod- og lavaforløb varierer per seed.
+Verdensmål, fri plads omkring start, biomehabitater og passage til sites bevares.
+Samme seed genskaber samme kort; almindelig Ny jagt vælger en frisk seed.
+
+Space angriber kun under gameplay. Den aktiverer aldrig menuknapper, heller
+ikke ved keyup efter en mutation eller bosssejr, eller hvis man holder tasten
+nede. Mutationer vælges med klik eller1/2/3 (Enter på en fokuseret knap virker).
+Klik eller Enter på Næste biome fortsætter med vilje. Mellemrum i navne virker.
+
+Se music_manifest.json og adaptive_runtime_report.json for temaer og separate
+browser/GDevelop-resultater, herunder faktiske renderede lydkurver og Space-tests.
+De tidligere runtime-rapporter beskriver deres tidligere leverancer; den nye
+rapport tester også alle eksisterende gameplay- og animationssuiter.

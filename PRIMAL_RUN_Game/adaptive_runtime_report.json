@@ -1,0 +1,224 @@
+{
+  "date": "2026-10-08",
+  "status": "PASS",
+  "source_sha256": {
+    "src/core.js": "ecf8ca555c6f425c4bb3c4ad6362ae56b017965b8fca71ed4268671f9f06fa1c",
+    "src/app.js": "22ddf07271618821353fcf7d65fc8016f3fdfee6b1fd59ce82d6914f165ba3e9",
+    "src/audio.js": "30c25c257f83cde3d2edd06614ac28018e1c2b76f226a2c3a918cc4031578688",
+    "src/assets.js": "a47612ea78deca6c3569f5d5ead137b3906566cdee2a094d653c0572fe947ad7",
+    "style.css": "6fc68662342e2e15c97faf579b242d4f65bacf4565de2ec989a5bd2e06598547"
+  },
+  "core_tests": 51,
+  "browser_suites": 9,
+  "full_npm_test": "PASS in temporary checkout, including historical kit",
+  "kit_png_validation": "PASS 104 assets; no new art exports",
+  "standalone": {
+    "status": "PASS",
+    "runtime": "standalone Chromium",
+    "themes": [
+      "forest",
+      "boss0",
+      "river",
+      "boss1",
+      "rocks",
+      "boss2",
+      "volcano",
+      "boss3"
+    ],
+    "rendered": [
+      {
+        "id": "menu",
+        "rms": 0.014598590408515707,
+        "peak": 0.07105064392089844,
+        "hash": "17cfa81ca4989f60eb18264f0adc21c92107889d8ca54227070470041938d777"
+      },
+      {
+        "id": "forest",
+        "rms": 0.012903993454756502,
+        "peak": 0.0765029788017273,
+        "hash": "fc9216446b58b3ee5e742e0a84f588a942d1877812bf28bc18d104092e2efe91"
+      },
+      {
+        "id": "river",
+        "rms": 0.014596747317732127,
+        "peak": 0.1152687668800354,
+        "hash": "3ec7c09c7354909eeb1fc3aaa439d0a8c6faaaaac872ea640dc0d9c1db842936"
+      },
+      {
+        "id": "rocks",
+        "rms": 0.013647929618298941,
+        "peak": 0.11022710800170898,
+        "hash": "a35d8600f7538414f62159b176dbf513c9ec74796fc7ebe3968ee7ca9594978e"
+      },
+      {
+        "id": "volcano",
+        "rms": 0.013437144767274173,
+        "peak": 0.09421780705451965,
+        "hash": "ad76af0892e45550e1862b4cfb4ffe64df3676916c6fa0aa9b5460d7a550ea30"
+      },
+      {
+        "id": "boss0",
+        "rms": 0.01715295456105211,
+        "peak": 0.12193223834037781,
+        "hash": "a825b004843a0c5df540f4ab4db0a97b1e21e8eac0cc55e4cf55474b997acdbd"
+      },
+      {
+        "id": "boss1",
+        "rms": 0.014330630705560895,
+        "peak": 0.12330839782953262,
+        "hash": "a2c5e868393a9144683da84e648e5c2ece622a4c06bda83f240a473800f895b7"
+      },
+      {
+        "id": "boss2",
+        "rms": 0.016966636692777284,
+        "peak": 0.11954556405544281,
+        "hash": "1ad496d323c78b6189a4163d0dcbdccc44e112e4dd7c5cea97b8eaea3136e692"
+      },
+      {
+        "id": "boss3",
+        "rms": 0.017197463941673596,
+        "peak": 0.12084701657295227,
+        "hash": "810b4ada09e8f6b260b045dc88a4a0beb2129d4f1106cdc1f28fd1d5f2edc4f4"
+      },
+      {
+        "id": "boss3:1",
+        "rms": 0.01673326140484971,
+        "peak": 0.10445376485586166,
+        "hash": "1aa1a17a525b4009f19fd002c7f825bfbc74c4c5f1acfa2dfdbe72d185926fe6"
+      },
+      {
+        "id": "boss3:2",
+        "rms": 0.017318406742785897,
+        "peak": 0.10771796107292175,
+        "hash": "0651ac783aa58120282e9c321167322092553f8b10cd6ae49f1cdcf6bcce3cfd"
+      },
+      {
+        "id": "boss3:3",
+        "rms": 0.017627062354599793,
+        "peak": 0.11089937388896942,
+        "hash": "966f080d6b083345d4ea7cbadd7d96ac795e83a52cad7278086721fc88f05fa2"
+      }
+    ],
+    "checks": [
+      "actual WebAudio tones for all biome/boss themes",
+      "health50/25/10 layers coexist with boss",
+      "paused score duck",
+      "held Space released on mutation and cleared screens cannot click",
+      "repeated Space cannot select/skip",
+      "Digit2 chooses; Enter deliberately advances",
+      "three successive starts have different layouts",
+      "no page/audio errors"
+    ]
+  },
+  "official_gdevelop": {
+    "status": "PASS",
+    "runtime": "official GDevelop GDJS 5.6.283",
+    "themes": [
+      "forest",
+      "boss0",
+      "river",
+      "boss1",
+      "rocks",
+      "boss2",
+      "volcano",
+      "boss3"
+    ],
+    "rendered": [
+      {
+        "id": "menu",
+        "rms": 0.014598590403690652,
+        "peak": 0.07105064392089844,
+        "hash": "28f3c12cabee4449564432d9873e4337f5b2bf7c2d6c5d955330cec7db326edf"
+      },
+      {
+        "id": "forest",
+        "rms": 0.012903993462610371,
+        "peak": 0.07650298625230789,
+        "hash": "29986acfb97d4715478c475c5abb8bb79b56a44f3da9dd0f32d68527ae10abcb"
+      },
+      {
+        "id": "river",
+        "rms": 0.01459674731200565,
+        "peak": 0.1152687668800354,
+        "hash": "c418e9c82d43a3a4f9a0c5061936d309d27bf53fffeb255cc41b3578a3ffee94"
+      },
+      {
+        "id": "rocks",
+        "rms": 0.013647929613108217,
+        "peak": 0.11022710800170898,
+        "hash": "32fc14a673316a2ffe99445b6b6a3b1a27a1218fed43befd7819d633a4ebabbb"
+      },
+      {
+        "id": "volcano",
+        "rms": 0.013437144765451433,
+        "peak": 0.09421780705451965,
+        "hash": "e0f1e8d31716063a9b5374e8aaec2ac273d374dfe7fb03259bbf986dd3387d83"
+      },
+      {
+        "id": "boss0",
+        "rms": 0.01715295455454378,
+        "peak": 0.12193223834037781,
+        "hash": "1fc164b2036fd2fc5a2a973465fbc5a09ce3587644f7b0334df4d369aa0659a2"
+      },
+      {
+        "id": "boss1",
+        "rms": 0.014330630709514439,
+        "peak": 0.12330839782953262,
+        "hash": "6a3ad827facc333460b051da343ad7cf65e51eb4e6c92b16a57218b4283a7b96"
+      },
+      {
+        "id": "boss2",
+        "rms": 0.016966636677241787,
+        "peak": 0.11954557150602341,
+        "hash": "0d82f45f9861ef9cb669e0836789d3da21b3f1ea51a55b90c16a71d2c4922caf"
+      },
+      {
+        "id": "boss3",
+        "rms": 0.017197463931271133,
+        "peak": 0.12084701657295227,
+        "hash": "130da33131f1110b830b16ae8e95f0edc76d494b0ecd5fba2fea6bfbf8dded52"
+      },
+      {
+        "id": "boss3:1",
+        "rms": 0.01673326139630222,
+        "peak": 0.10445377230644226,
+        "hash": "e26180494adcc0cab7555f1afd6c5c20ae316922d25c75d3ea9a7f122443a834"
+      },
+      {
+        "id": "boss3:2",
+        "rms": 0.017318406725350077,
+        "peak": 0.10771796107292175,
+        "hash": "df9ae1e29241f0eb88dd9dd0c0bfa4beae40f31dbd913a896889f0958ae17a8c"
+      },
+      {
+        "id": "boss3:3",
+        "rms": 0.017627062370337784,
+        "peak": 0.11089937388896942,
+        "hash": "b9e1555f1cd5dbd7e665ea31f12587489143783af7f9c0c14c97f351011b6f1f"
+      }
+    ],
+    "checks": [
+      "actual WebAudio tones for all biome/boss themes",
+      "health50/25/10 layers coexist with boss",
+      "paused score duck",
+      "held Space released on mutation and cleared screens cannot click",
+      "repeated Space cannot select/skip",
+      "Digit2 chooses; Enter deliberately advances",
+      "three successive starts have different layouts",
+      "no page/audio errors"
+    ]
+  },
+  "layout_checks": {
+    "stage_seed_opening_cases": 128,
+    "connectivity_maps": 64,
+    "safe_start_radius": 150,
+    "natural_profiles": 3,
+    "river_orientations": 2,
+    "same_seed_repeatable": true,
+    "sites_reachable": true,
+    "biome_spawn_checks": "PASS across existing ecology fixtures"
+  },
+  "space_guard": "Real keydown in combat, phase transition, keyup on focused choice, repeated key presses: no native click. Digit2/Enter intentional controls pass.",
+  "music_checks": "Nine base theme waveforms plus three health-layer waveforms are unique, audible and below sample clipping.11 scene compositions including result themes have distinct declarations and schedule notes.",
+  "historical_reports": "Previous sprite/jungle reports remain evidence for their earlier source versions; this report verifies all nine current browser suites."
+}

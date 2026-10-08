@@ -200,3 +200,30 @@ and actual biome vegetation checks. Eight browser suites include responsive
 cinematic controls, reduced motion, actual four-class recoloured pixels and
 pause isolation. See jungle_runtime_report.json for separate final standalone/
 official GDevelop evidence. NEXT_IMPROVEMENTS.md records the requested proposals.
+
+## 2026-10-08: adaptive music, varied opening layouts and Space guard
+
+Audio.SCORES has11 original scene compositions: menu, four biomes, four bosses,
+victory and defeat. setScene chooses theme and health layers50/25/10 with release
+hysteresis55/30/15; a0.65s bus crossfade retires old channels without timer leaks.
+Pause/mutations/nest/stage-cleared duck music and suppress danger pulses. Existing
+music/master/sfx controls and browser gesture unlock remain intact.
+
+Map seeds were already random, but fixed opening rocks and large empty starter
+area looked repeated. Fixed ROCKS are now legacy exported data, not population.
+createMap adds varying opening rocks, three grove-distribution profiles and
+horizontal/vertical river/lava channels. Starter prey positions are seeded and
+avoid obstacles; biome spawn and safe-start constraints remain. New shore habitat
+samples ensure river bosses have suitable offscreen positions for both orientations.
+No new art exports or palette changes. Opening snapshots are in previews/layout.
+
+Space is preventDefault on both keydown and keyup outside text inputs; only
+playing adds it to attack keys. Focused mutation/next buttons therefore cannot
+receive native Space click. Intentional Enter, click and mutation digits remain.
+
+51 core tests and nine browser suites PASS standalone and official GDJS export.
+Full npm test/kit PNG validation run in /tmp/primal-adaptive-validation. Tests
+include128 opening layout seeds,64 connectivity maps, real held/repeated Space
+across phase transitions and OfflineAudioContext waveforms for all nine base
+menu/biome/boss themes plus three health layers. See adaptive_runtime_report.json
+and music_manifest.json; old feature reports remain historical evidence.

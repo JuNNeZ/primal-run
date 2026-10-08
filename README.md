@@ -17,6 +17,10 @@ Almindelige fjender kan opgive jagten efter 8 sekunder uden en ny træffer;
 chancen stiger med afstand og tid. Uforstyrrede byttedyr holder cirka 110 pixels
 afstand, når spilleren står stille. Bosser opgiver ikke.
 
+Menu, fire biomer og fire bosskampe har nu særskilte musiktemaer med farelag
+ved50/25/10%liv. Startområder, naturklynger og flodretning varierer mellem runs.
+Space angriber kun; mutationer og næste biome kræver et bevidst valg.
+
 Startmenuen har en animeret jungle med dinosaurer, parallax og smådyr.
 18 nye plante-/jorddetaljer og seks insektposes varierer mellem biomerne;
 Deinosuchus spawner ved floden, og dyr undgår lava ved spawn.

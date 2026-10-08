@@ -247,7 +247,7 @@ test('mixed dinosaurs separate fixed bodies even at identical coordinates withou
   g.separateDinosaurs(); assert.equal(JSON.stringify(r), frozen);
 });
 test('crowded herds, bosses and map-edge collisions resolve without escaping bounds or blocking charge patterns', () => {
-  const g = make(), r = g.run;
+  const g = make(), r = g.run; r.map.rocks = []; // Isolate body separation from random terrain.
   for (let i = 0; i < 12; i++) g.spawn(i % 2 ? 'compy' : 'carnotaurus', { x: 1500, y: 1100 });
   for (let frame = 0; frame < 20; frame++) g.separateDinosaurs();
   for (let i = 0; i < r.enemies.length; i++) for (let j = i + 1; j < r.enemies.length; j++) {
