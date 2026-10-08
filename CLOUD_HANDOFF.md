@@ -246,3 +246,25 @@ Officiel GDevelop5.6.283 eksport /tmp/primal-priorities-gdexport-v2 og alle
 terrain_runtime_report og priorities_1_4_runtime_report; ældre rapporter bevaret.
 Art beholder prototype_static/production_approvedfalse/animation_readyfalse.
 Spiltest skal afgøre næste balance- og artfinpudsning;5–8 afventer brugeren.
+
+### Spisning og prioriteter 5–8 (2026-10-08)
+
+- Lig: 25–30 simulationsekunder, mørkner efter 10 sek., fader de sidste 5 sek.
+  Stationær F-spisning giver 1 kødværdi hver 0,6 sek.; afbrydes af input/skade og
+  bruger ingen stamina. DNA og løse redebelønninger beholder opsamling.
+- Naturlyd har separat ambient-slider; biomer skifter vind/vand/kald/insekter.
+  Musikmotiver varierer efter 64 beats; eksisterende boss-crossfade/livslag bevares.
+- Joystick, gamepad, autoangreb, gemte tasteskift, tekst/HUD-skala og reduceret
+  bevægelse. Space vælger fortsat aldrig mutationer eller skifter bane.
+- Fog følger synsfeltet; to seedede opdagelser og biomeegnede alternative
+  bossrydninger. Pausemenu har kopierbart seed-link; startmenu tager seed-input.
+- Lazy frames og farvelag; assetStats estimerer kun appens RGBA-billed/canvaslager,
+  ikke GPU/browser-cache. 128-pixel gitter til dyrekollision og viewport-culling.
+- Ny regression: tests/eating-discovery.test.cjs og
+  tests/eating-accessibility-browser.cjs. Kør npm test i en midlertidig kopi, da
+  historiske kit-tests skriver rapporter og screenshots. Art-fixtures preloader
+  eksplicit alle frames; det er ikke spillets normale opstartsadfærd.
+- Performance rapporteres separat for standalone og officiel GDevelop-eksport i
+  cloud Chromium med 390×844 viewport. Fysiske telefoner er ikke målt.
+- Ingen PNG-kildepixels ændret. Alle assets forbliver prototyper uden visuel
+  produktionsgodkendelse. project.json genereres stadig fra src/ og style.css.

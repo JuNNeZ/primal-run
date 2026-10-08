@@ -11,7 +11,8 @@ Til publicering bygger `npm run build:web` en selvstændig webudgave i `dist/`.
 Alle webstier er relative og fungerer under `/primal-run/` på GitHub Pages.
 
 WASD/piletaster flytter, Space angriber, Shift bruger artens evne, E undersøger
-fossiler/reder, og Escape pauser. Der er også touch-knapper. Tastatur på desktop
+fossiler/reder, F spiser fra lig mens du står stille, og Escape pauser.
+På mobil bruges et joystick og touch-knapper; gamepad og tasteskift understøttes. Tastatur på desktop
 er testet sammen med responsive touch-layouts i portræt og landskab.
 Langvarig spiltest på fysiske mobiler er stadig relevant.
 
@@ -379,3 +380,37 @@ og [balanceaudit](balance_audit.json). C sniger; buske kan skjule. Vand/mudder
 påvirker fart. Flokke deler alarmer, og territoriale dyr vender hjem.
 Alle syv fjendearter har seks animationsstates i fire retninger.
 Prioritet5–8 afventer brugerens spiltest.
+
+
+## Spisning og punkt 5–8
+
+Lig bliver mørkere efter 10 sekunder og fader de sidste 5 sekunder af deres
+25–30 sekunders levetid. Hold F i nærheden, mens du står stille: hver 0,6 sekunder
+får du én kødværdi. Større og sjældnere bytte tager længere tid, fordi det har mere
+kød. Bevægelse, angreb, evner og faktisk skade afbryder den igangværende portion;
+allerede spist kød beholdes. Der bruges ingen stamina. Rester forsvinder med liget.
+Løse redebelønninger og DNA samles stadig op; bosser giver deres garanterede DNA.
+Mutationsvalg og pause fryser både spisning og nedbrydning.
+
+Naturlyd har sin egen slider. Vind, vand, insekter og fjerne dyrekald varierer med
+biomet; musikken varierer motiver over længere forløb og skifter blødt til bosser.
+Autoangreb er valgfrit og slås fra under spisning. Indstillinger gemmer tekst/HUD
+på 85–140 %, reduceret bevægelse og individuelle taster. Piletaster og Escape
+bevares som faste alternativer. Tasteskift tillader bogstaver, Space og Shift og
+forhindrer dobbeltbindinger. Gamepad: pind/D-pad flytter, A angriber, B bruger evne,
+X spiser, Y undersøger, RB sniger, Start pauser. I menuer vælger D-pad og et nyt
+A-tryk; et holdt angreb springer ikke skærme over.
+
+Minimappets ukendte felter afsløres ved udforskning. Hvert seed placerer to små
+opdagelser (kilde eller sjældent fossil) og op til tre biomeegnede bossarenaer med
+forskellige rydninger. Bossmarkøren forbliver synlig i tågen. Indtast seed før
+start, eller kopiér seed-linket fra pausemenuen. Seed gentager verdenen, ikke alle
+loot-rul og spillerhandlinger.
+
+Kun aktuelle dino-frames indlæses før start; næste biome indlæses før baneskift.
+Menuens forbipasserende dyr indlæses efter behov. Farvelag/flash-lag fremstilles
+først ved visning, og ubrugte dinoframes frigives ved baneskift. Ruminddeling på
+128 pixels begrænser dyrekollisionspar; synlige objekter sorteres og tegnes.
+Runtime-rapporterne måler simulation/rendering og estimeret RGBA-hukommelse i
+cloud Chromium ved telefonstørrelse. De er ikke FPS- eller RAM-certificering på
+fysisk telefon; browserens billedcache/GPU-hukommelse indgår ikke i estimatet.

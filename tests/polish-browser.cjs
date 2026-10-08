@@ -7,7 +7,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
   try {
     const page = await browser.newPage({ viewport: { width: 1280, height: 900 } }); page.on('pageerror', e => errors.push(String(e)));
     await page.goto(process.env.PRIMAL_GAME_URL || await localURL(path.resolve(__dirname, '../PRIMAL_RUN_Game/index.html')));
-    await page.waitForSelector('[data-action="start"]:not(:disabled)'); await page.evaluate(() => { const g=primalRun.game; g.save.unlockedSpecies.push('utahraptor'); g.selectSpecies('utahraptor'); }); await page.locator('[data-action="start"]').click(); await page.locator('[data-action="begin"]').click();
+    await page.waitForSelector('[data-action="start"]:not(:disabled)');await page.evaluate(async()=>{for(const species of Object.keys(PrimalCore.PLAYER_SPECIES))await primalRun.preload({species,stage:3,kinds:Object.keys(PrimalCore.SPECIES)});}); await page.evaluate(() => { const g=primalRun.game; g.save.unlockedSpecies.push('utahraptor'); g.selectSpecies('utahraptor'); }); await page.locator('[data-action="start"]').click(); await page.locator('[data-action="begin"]').click();await page.waitForFunction(()=>primalRun.game.phase==='playing');
     const terrain = [];
     for (let stage = 0; stage < 4; stage++) {
       terrain.push(await page.evaluate(stage => {
@@ -57,7 +57,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
 
     // Run a complete fight through shared simulation inputs: no boss-HP edits after spawn.
     const fight = await page.evaluate(() => {
-      const g = primalRun.game; g.start(); const r = g.run; r.enemies = []; r.spawnTimer = 999; r.player.x = 1450; r.player.y = 1050; r.map.rocks = []; // Isolate boss timing from random terrain collisions.
+      const g = primalRun.game; g.start(); const r = g.run; r.enemies = []; r.spawnTimer = 999; r.player.x = 1450; r.player.y = 1050; r.map.rocks = [];r.map.events=[]; // Isolate boss timing from random terrain collisions.
       const boss = g.spawn('carnotaurus', { x: 1500, y: 950 }, true), modes = new Set();
       for (let i = 0; i < 9000 && g.phase === 'playing'; i++) {
         modes.add(boss.bossPhase + ':' + boss.mode); let x = 0, y = 0, attack = false;

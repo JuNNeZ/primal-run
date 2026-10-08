@@ -36,7 +36,7 @@ test('kills drop meat, but XP, levels and boss threshold require actual pickup',
   enemy.hp = 0; tick(g);
   assert.equal(r.kills, 1); assert.equal(r.xp, 0); assert.equal(r.totalMeat, 0);
   assert.equal(r.pickups[0].value, 5);
-  r.meat = 25; r.player.x = 100; r.player.y = 100; tick(g);
+  r.meat = 25; r.player.x = 100; r.player.y = 100; tick(g);assert.equal(r.meat,25);for(let i=0;i<190;i++)g.step(1/60,{eat:true});
   assert.equal(r.meat, 30); assert.equal(r.xp, 5); assert.equal(r.enemies.filter(e => e.boss).length, 1);
   tick(g); assert.equal(r.enemies.filter(e => e.boss).length, 1, 'boss spawns once');
 });
@@ -202,7 +202,7 @@ test('meat quality changes pickup value and XP; large species have better rare-d
     const g = make(() => roll), r = g.run;
     g.kill(g.spawn('carnotaurus', { x: 480, y: 340 }));
     const p = r.pickups.find(p => p.kind === 'meat'); assert.equal(p.rarity, rarity); assert.equal(p.value, value);
-    r.enemies = []; tick(g); assert.equal(r.totalMeat, value); assert.equal(r.meat, value);
+    r.enemies = [];while(r.totalMeat<value){if(g.phase==='mutation')g.choose(r.choices[0]);g.step(.05,{eat:true});} assert.equal(r.totalMeat, value); assert.equal(r.meat, value);
     assert.equal(r.level > 1, value >= 6);
   }
   const g = make(() => .9); g.kill(g.spawn('compy', { x: 100, y: 100 }));

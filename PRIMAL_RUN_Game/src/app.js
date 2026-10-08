@@ -7,20 +7,22 @@
     if (root.primalRun) root.primalRun.dispose();
     let storage = null; try { storage = window.localStorage; } catch (_) { /* In-memory play still works. */ }
     const game = new C.Game({ storage });
+    const keyLabel=action=>game.save.bindings[action].replace('Key','').replace(/Shift(Left|Right)/,'SHIFT').replace('Space','SPACE');
     const shell = document.createElement('div'); shell.className = 'primal-shell';
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
-      <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space bider, Shift springer, Escape pauser."></canvas>
+      <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space angriber, Shift bruger evne, F spiser, Escape pauser."></canvas>
       <div class="hud" hidden><div><small>LIV</small><div class="meter health"><i></i></div><b id="health-label"></b></div><div><small>STAMINA</small><div class="meter stamina"><i></i></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
       <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"></span><span id="skill-label"></span><span id="terrain-label"></span></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · KØD / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div></main>
-      <div class="touch-controls" hidden><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space">ANGREB</button><button data-key="ShiftLeft">EVNE</button><button data-key="KeyE">UNDERSØG</button></div></div>
-      <footer><span><kbd>WASD</kbd> Bevæg · <kbd>SPACE</kbd> Angreb · <kbd>SHIFT</kbd> Evne · <kbd>C</kbd> Snig / skjul · <kbd>E</kbd> Undersøg · <kbd>ESC</kbd> Pause</span><span class="save-status"></span></footer>`;
+      <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space">ANGREB</button><button data-key="ShiftLeft">EVNE</button><button data-key="KeyE">UNDERSØG</button><button data-key="KeyF">SPIS</button></div></div>
+      <footer><span><kbd>${['up','left','down','right'].map(keyLabel).join('')}</kbd> Bevæg · <kbd>${keyLabel('attack')}</kbd> Angreb · <kbd>${keyLabel('ability')}</kbd> Evne · <kbd>${keyLabel('sneak')}</kbd> Snig / skjul · <kbd>${keyLabel('eat')}</kbd> Hold for at spise · <kbd>${keyLabel('interact')}</kbd> Undersøg · <kbd>ESC</kbd> Pause</span><span class="save-status"></span></footer>`;
     host.appendChild(shell);
     const canvas = shell.querySelector('canvas'), ctx = canvas.getContext('2d');
-    const screen = shell.querySelector('.screen'), images = {}, flashes = {}, skins = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
+    const screen = shell.querySelector('.screen'), images = {}, flashes = {}, skins = {}, decomposition = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
     const audio = new root.PrimalAudio(resolve, game.save.settings);
     let ready = false, disposed = false, previousPhase = '', returnPhase = 'menu', last = 0, accumulator = 0, animationId = 0, toastUntil = 0;
     const catalog = root.PrimalAssets, previewMap = C.createMap(0);
+    let bindingAction=null,seedInput='',joystick={x:0,y:0},joyPointer=null,joyOrigin={x:0,y:0},padPrevious=[];
     let menuClock=0;const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
     const menuScene=()=>['menu','species','shop','scores','help'].includes(game.phase) || game.phase==='settings' && returnPhase==='menu';
     function listen(target, name, callback, options) { target.addEventListener(name, callback, options); cleanups.push(() => target.removeEventListener(name, callback, options)); }
@@ -31,6 +33,7 @@
     function renderScreen(force = false) {
       const phase = game.phase, r = game.run;
       if (phase === previousPhase && !force) return;
+      const codes=[['up','left','down','right'].map(keyLabel).join(''),keyLabel('attack'),keyLabel('ability'),keyLabel('sneak'),keyLabel('eat'),keyLabel('interact'),'ESC'];shell.querySelectorAll('footer kbd').forEach((el,i)=>el.textContent=codes[i]);
       previousPhase = phase; screen.dataset.phase = phase; keys.clear();
       const running = ['playing', 'paused', 'mutation', 'exploration', 'cleared'].includes(phase);
       shell.querySelector('.meat-progress').hidden = !running; shell.querySelector('.hud').hidden = !running; shell.querySelector('.run-info').hidden = !running;
@@ -43,16 +46,16 @@
         screen.innerHTML = `<div class="jungle-title" aria-hidden="true"><small>EN VERDEN FØR MENNESKET</small><strong>PRIMAL<br><em>RUN</em></strong><span>Junglen lever. Jagten begynder.</span></div><section class="panel menu-panel">${heading('JAGT · MUTÉR · OVERLEV', 'PRIMAL <em>RUN</em>', 'Start som Compy. Lås nye arter op. Fire tilfældige naturkort og ét liv.')}
           <label class="name-label">DIT NAVN<input id="player-name" maxlength="20" autocomplete="nickname" value="${htmlEscape(game.save.name)}"></label>
           <p class="selected-dino">${C.PLAYER_SPECIES[game.save.selectedSpecies].name} · ${C.PLAYER_SPECIES[game.save.selectedSpecies].skill}</p>
-          ${button('start', ready ? 'START JAGTEN <span>→</span>' : 'INDLÆSER…', 'primary')}
+          <label class="name-label">KORT-SEED (tomt = tilfældigt)<input id="map-seed" inputmode="numeric" maxlength="10" value="${htmlEscape(seedInput)}"></label>${button('start', ready ? 'START JAGTEN <span>→</span>' : 'INDLÆSER…', 'primary')}
           <div class="menu-grid">${button('species', 'Vælg dinosaur')}${button('shop', 'DNA-laboratorium <b>' + game.save.dna + '</b>')}${button('scores', 'Highscores')}${button('settings', 'Indstillinger')}${button('help', 'Sådan spiller du')}</div>
           <p class="fine">Kød giver levels. Bosser åbner næste biome. DNA beholdes, når du dør.</p></section>`;
         screen.querySelector('[data-action="start"]').disabled = !ready;
       } else if (phase === 'intro') {
         screen.innerHTML = `<section class="panel hunt-intro">${heading('KLAR PÅ 20 SEKUNDER', 'Sådan overlever du')}
-          <dl class="control-guide"><div><dt><kbd>WASD</kbd> / <kbd>↑ ↓ ← →</kbd></dt><dd>Bevæg dig og vend mod dit bytte.</dd></div><div><dt><kbd>SPACE</kbd></dt><dd>Hold for at bide. Du rammer kun foran dig — gå tæt på!</dd></div><div><dt><kbd>SHIFT</kbd> + bevægelse</dt><dd>${C.PLAYER_SPECIES[game.save.selectedSpecies].text}</dd></div><div><dt><kbd>C</kbd></dt><dd>Hold for at snige. Stå stille eller snig i buske i 0,6 sek. for at skjule dig. Angreb og evner afslører dig; bosser lader sig ikke narre.</dd></div><div><dt><kbd>E</kbd></dt><dd>Undersøg fossiler og reder tæt på dig.</dd></div><div><dt><kbd>ESC</kbd></dt><dd>Pause og indstillinger.</dd></div></dl>
+          <dl class="control-guide"><div><dt><kbd>${['up','left','down','right'].map(keyLabel).join('')}</kbd> / <kbd>↑ ↓ ← →</kbd></dt><dd>Bevæg dig og vend mod dit bytte.</dd></div><div><dt><kbd>${keyLabel('attack')}</kbd></dt><dd>Hold for at bide. Du rammer kun foran dig — gå tæt på!</dd></div><div><dt><kbd>${keyLabel('ability')}</kbd> + bevægelse</dt><dd>${C.PLAYER_SPECIES[game.save.selectedSpecies].text}</dd></div><div><dt><kbd>${keyLabel('sneak')}</kbd></dt><dd>Hold for at snige. Stå stille eller snig i buske i 0,6 sek. for at skjule dig. Angreb og evner afslører dig; bosser lader sig ikke narre.</dd></div><div><dt><kbd>${keyLabel('eat')}</kbd></dt><dd>Stå tæt på et lig og hold F. Kød gives i portioner; bevægelse, angreb og skade afbryder. Lig mørkner og forsvinder efter 25–30 sekunder.</dd></div><div><dt><kbd>${keyLabel('interact')}</kbd></dt><dd>Undersøg fossiler og reder tæt på dig.</dd></div><div><dt><kbd>ESC</kbd></dt><dd>Pause og indstillinger.</dd></div></dl>
           <p class="hunt-goal"><strong>Udforsk kortet → saml kød → vælg mutationer.</strong><br>Du er markeret med ▼ DIG. Farlige dyr har deres artsnavn i rødt, og fredeligt bytte har grønt artsnavn. Kød findes som almindeligt, nærende, sjældent og episk — bedre kvalitet giver mere XP og tæller mere mod kødmålet. Nå kødmålet, besejr bossen, og fortsæt til næste biome. Undvig de røde angrebsvarsler.</p>
           <p class="hunt-goal"><strong>DNA beholdes, når du dør.</strong> Saml DNA fra byttet — bosser giver det altid. Køb permanente upgrades i DNA-laboratoriet før næste jagt.</p>
-          <p class="fine">På mobil: brug pileknapperne, ANGREB, EVNE og UNDERSØG under spillet.</p>
+          <p class="fine">På mobil: brug joysticket, ANGREB, SPIS, EVNE og UNDERSØG under spillet.</p>
           <div class="actions">${button('menu', '← Tilbage')}${button('begin', 'FORSTÅET — START JAGTEN →', 'primary')}</div></section>`;
       } else if (phase === 'species') {
         screen.innerHTML = `<section class="panel">${heading('PERMANENT ARTSARKIV', 'Vælg dinosaur', 'DNA-unlocks beholdes ved død. Valget gælder næste jagt. ' + game.save.dna + ' DNA i banken.')}<div class="upgrade-grid species-grid">${Object.entries(C.PLAYER_SPECIES).map(([id, d]) => {
@@ -66,18 +69,18 @@
           return `<article><h2>${u.name}</h2><p>${u.text}</p><div class="ranks">${'●'.repeat(rank)}${'○'.repeat(u.max - rank)}</div><button data-buy="${u.id}" ${rank >= u.max || game.save.dna < cost ? 'disabled' : ''}>${rank >= u.max ? 'Fuldt udviklet' : cost + ' DNA · Køb rang ' + (rank + 1)}</button></article>`;
         }).join('')}</div>${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'settings') {
-        screen.innerHTML = `<section class="panel">${heading('FIND DIN BALANCE', 'Indstillinger')}<div class="settings">${[['master', 'Samlet lyd'], ['music', 'Musik'], ['sfx', 'Lydeffekter']].map(([id, label]) => `<label>${label}<output id="volume-${id}">${Math.round(game.save.settings[id] * 100)} %</output><input aria-label="${label}" data-setting="${id}" type="range" min="0" max="100" value="${Math.round(game.save.settings[id] * 100)}"></label>`).join('')}<label class="check"><input data-setting="shake" type="checkbox" ${game.save.settings.shake ? 'checked' : ''}> Kamerarystelse</label></div><div class="actions">${button('mute', 'Slå al lyd fra')}${button('fullscreen', 'Fuldskærm')}${button('back', '← Tilbage', 'primary')}</div><p class="fine">Lyd starter efter et klik. Musikken er et originalt, proceduralt jagttema.</p></section>`;
+        screen.innerHTML = `<section class="panel">${heading('FIND DIN BALANCE', 'Indstillinger')}<div class="settings">${[['master', 'Samlet lyd'], ['music', 'Musik'], ['sfx', 'Lydeffekter'], ['ambient', 'Naturlyde']].map(([id, label]) => `<label>${label}<output id="volume-${id}">${Math.round(game.save.settings[id] * 100)} %</output><input aria-label="${label}" data-setting="${id}" type="range" min="0" max="100" value="${Math.round(game.save.settings[id] * 100)}"></label>`).join('')}<label class="check"><input data-setting="shake" type="checkbox" ${game.save.settings.shake ? 'checked' : ''}> Kamerarystelse</label>${['autoAttack','reducedMotion'].map(id=>`<label class="check"><input data-setting="${id}" type="checkbox" ${game.save.settings[id]?'checked':''}>${id==='autoAttack'?'Automatisk angreb':'Reduceret bevægelse'}</label>`).join('')}${['hudScale','textScale'].map(id=>`<label>${id==='hudScale'?'HUD-størrelse':'Tekststørrelse'}<input data-setting="${id}" type="range" min="85" max="140" value="${game.save.settings[id]*100}"></label>`).join('')}<div class="bindings">${Object.entries(game.save.bindings).map(([action,code])=>`<button data-binding="${action}">${({up:'Op',down:'Ned',left:'Venstre',right:'Højre',attack:'Angreb',ability:'Evne',sneak:'Snig',eat:'Spis',interact:'Undersøg'})[action]}: ${code.replace('Key','')}</button>`).join('')}</div><p>Gamepad: venstre pind bevæger · A angriber · B evne · X spiser · Y undersøger · RB sniger · Start pauser.</p></div><div class="actions">${button('mute', 'Slå al lyd fra')}${button('fullscreen', 'Fuldskærm')}${button('back', '← Tilbage', 'primary')}</div><p class="fine">Lyd starter efter et klik. Musikken er et originalt, proceduralt jagttema.</p></section>`;
       } else if (phase === 'scores') {
         screen.innerHTML = `<section class="panel">${heading('DE STØRSTE JÆGERE', 'Highscores', 'Din lokale top 10 i denne browser.')}<div class="table-scroll"><table><thead><tr><th>#</th><th>Jæger</th><th>Score</th><th>Bane</th><th>Bosser</th><th>Tid</th></tr></thead><tbody>${game.save.scores.map((s, i) => `<tr><td>${i + 1}</td><td>${htmlEscape(s.name)}${s.victory ? ' ♛' : ''}</td><td>${s.score}</td><td>${s.stage}</td><td>${s.bosses}</td><td>${timeLabel(s.seconds)}</td></tr>`).join('') || '<tr><td colspan="6">Din første jagt venter.</td></tr>'}</tbody></table></div>${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'help') {
         screen.innerHTML = `<section class="panel">${heading('LÆR AT JAGE', 'Din første jagt')}<ol class="instructions"><li>Bevæg dig med WASD eller piletaster. Hold Space for at angribe. Ankylosaurus slår med halen omkring sig; andre arter bider foran sig.</li><li>Shift bruger din arts evne og stamina. Compy undviger, Utahraptor springer, Carnotaurus stormer og Ankylosaurus går i panserstilling.</li><li>Vand og mudder sænker dig. Hold C i buske for at skjule dig; angreb afslører dig. Rovdyr advarer ved deres territorier, og flokke alarmerer hinanden.</li><li>Saml kødet fra dit bytte. Ved level-up vælger du én af tre mutationer.</li><li>Nå kødmålet for at lokke bossen frem. De røde varsler viser dens næste angreb. Angrib, når den hviler.</li><li>DNA har 5 / 15 / 30 % dropchance fra små / mellemstore / store dyr. Bosser giver altid DNA.</li><li>DNA beholdes ved død. Lås nye arter op under Vælg dinosaur, eller køb start-upgrades i laboratoriet. Tryk E ved fossiler og reder; elitevogtere er valgfrie.</li></ol><p class="fine">Fire bosser giver en sejr. Escape pauser. Spillet pauser også, når du skifter fane.</p>${button('menu', '← Klar til jagt', 'primary')}</section>`;
       } else if (phase === 'paused') {
-        screen.innerHTML = `<section class="panel compact">${heading('TAG EN PAUSE', 'Jagten venter', 'Kort-seed: ' + r.seed)}${button('resume', 'FORTSÆT · Esc', 'primary')}<div class="actions">${button('settings', 'Indstillinger')}${button('abandon', 'Afslut run')}</div><p class="fine">Opsamlet DNA er allerede gemt. Afslut run registrerer din score.</p></section>`;
+        screen.innerHTML = `<section class="panel compact">${heading('TAG EN PAUSE', 'Jagten venter', 'Kort-seed: ' + r.seed)}${button('resume', 'FORTSÆT · Esc', 'primary')}${button('share', 'DEL KORT-SEED')}<label>Seed-link<input class="seed-link" readonly value="${htmlEscape((()=>{const url=new URL(location.href);url.searchParams.set('seed',r.seed);return url.href;})())}"></label><div class="actions">${button('settings', 'Indstillinger')}${button('abandon', 'Afslut run')}</div><p class="fine">Opsamlet DNA er allerede gemt. Afslut run registrerer din score.</p></section>`;
       } else if (phase === 'mutation') {
         screen.innerHTML = `<section class="panel">${heading('DINO-LEVEL ' + r.level, 'Vælg din mutation', 'SPILLET ER PAUSET — du er sikker, mens du vælger. Klik eller tryk 1, 2, 3. Efter valget er du beskyttet i ét sekund.')}<div class="mutation-grid">${r.choices.map((id, i) => {
           const m = C.MUTATIONS.find(m => m.id === id);
           const rarity = C.MUTATION_RARITIES[m.rarity];
-          return `<button data-mutation="${id}" style="--rarity:${rarity.color}" class="rarity-card"><strong class="rarity-name">${rarity.name.toUpperCase()}</strong>${imageTag('assets/ui/' + m.icon + '.png')}<small>VALG ${i + 1} · RANG ${r.mutations[id]} → ${r.mutations[id] + 1} / ${m.max}</small><h2>${m.name}</h2><small>${m.species ? C.PLAYER_SPECIES[m.species].name.toUpperCase() : "FÆLLES MUTATION"}</small><p>${m.text}</p></button>`;
+          return `<button data-mutation="${id}" style="--rarity:${rarity.color}" class="rarity-card"><strong class="rarity-name">${({common:'•',uncommon:'◆',rare:'✦',epic:'★'})[m.rarity]} ${rarity.name.toUpperCase()}</strong>${imageTag('assets/ui/' + m.icon + '.png')}<small>VALG ${i + 1} · RANG ${r.mutations[id]} → ${r.mutations[id] + 1} / ${m.max}</small><h2>${m.name}</h2><small>${m.species ? C.PLAYER_SPECIES[m.species].name.toUpperCase() : "FÆLLES MUTATION"}</small><p>${m.text}</p></button>`;
         }).join('')}</div></section>`;
       } else if (phase === 'exploration') {
         screen.innerHTML = `<section class="panel compact">${heading('VALGFRI RISIKO · SPILLET ER PAUSET', 'En bevogtet rede', 'Tag sjældent kød og væk den nærliggende elitevogter, eller lad reden være.')}<div class="actions"><button data-explore="leave">LAD DEN VÆRE</button><button class="primary" data-explore="take">TAG KØDET · +${8 + r.stage * 2}</button></div></section>`;
@@ -93,8 +96,23 @@
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
       shell.querySelector('.save-status').textContent = game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session';
     }
+    const prepared=new Set();
+    function prepareImage(path){if(prepared.has(path)||!images[path])return;prepared.add(path);const image=images[path];
+        const species=Object.keys(C.SPECIES_COLORS).find(id=>path.includes('/'+id+'_'));
+        if(species) {
+          const layer=document.createElement('canvas');layer.width=image.width;layer.height=image.height;const lc=layer.getContext('2d');lc.drawImage(image,0,0);const pixels=lc.getImageData(0,0,image.width,image.height),mapping=C.SPECIES_COLORS[species];
+          for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[pixels.data[i],pixels.data[i+1],pixels.data[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('');const color=mapping[key];if(color){pixels.data[i]=parseInt(color.slice(0,2),16);pixels.data[i+1]=parseInt(color.slice(2,4),16);pixels.data[i+2]=parseInt(color.slice(4,6),16);}}
+          lc.putImageData(pixels,0,0);skins[path]=layer;
+        }
+        if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/') || path.startsWith('assets/enemy_full/') || path.startsWith('assets/player_full/'))) {
+          const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
+          const tintCtx = tint.getContext('2d'); tintCtx.drawImage(image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';
+          tintCtx.fillStyle = '#fff1c9'; tintCtx.fillRect(0, 0, tint.width, tint.height); flashes[path] = tint;
+        }
+
+    }
     function sprite(path, x, y, alpha = 1, flash = false, rotation = 0, scale = 1) {
-      const image = flash ? flashes[path] : images[path], meta = catalog[path]; if (!image || !meta) return;
+      prepareImage(path);const image = flash ? flashes[path] : images[path], meta = catalog[path]; if(!image&&meta){loadImage(path).catch(()=>{});return;}if(!meta)return;
       ctx.globalAlpha = alpha;
       const paint=(img,dx,dy)=>{if(scale===1)ctx.drawImage(img,dx,dy);else ctx.drawImage(img,dx,dy,img.width*scale,img.height*scale);};
       if(rotation){ctx.save();ctx.translate(Math.round(x),Math.round(y));ctx.rotate(rotation);paint(image,-meta.origin[0]*scale,-meta.origin[1]*scale);if(!flash&&skins[path])paint(skins[path],-meta.origin[0]*scale,-meta.origin[1]*scale);ctx.restore();}
@@ -102,6 +120,7 @@
       ctx.globalAlpha = 1;
     }
     function insect(p,time) {
+      if(game.save.settings.reducedMotion||reducedMotion.matches)return;
       const flying=p.kind!=='beetle',phase=time*2+p.phase;
       const x=p.x+(flying?Math.sin(phase)*18:Math.sin(phase*.35)*5),y=p.y+(flying?Math.cos(phase*.7)*8:0);
       sprite('assets/ecology/'+p.kind+'_'+(Math.floor(time*8+p.phase)%2)+'.png',x,y);
@@ -185,7 +204,7 @@
     }
     function minimap(r) {
       const width = Math.min(120, canvas.width * .25), height = width * r.map.height / r.map.width;
-      const x = canvas.width - width - 12, y = canvas.height - height - 38;
+      const x = canvas.width - width - 12, y = canvas.height - height - shell.querySelector('.run-info').offsetHeight - 24;
       ctx.fillStyle = '#101713dc'; ctx.fillRect(x, y, width, height); ctx.strokeStyle = '#b6c0a9'; ctx.strokeRect(x, y, width, height);
       for (const site of r.map.sites) if (site.discovered && !site.claimed) { ctx.fillStyle = site.type === 'fossil' ? '#bb80d9' : '#e9b75a'; ctx.fillRect(Math.round(x+site.x/r.map.width*width)-1,Math.round(y+site.y/r.map.height*height)-1,3,3); }
       if (r.stage === 1 || r.stage === 3) { trace(r.map.river.map(p => ({ x: x + p.x / r.map.width * width, y: y + p.y / r.map.height * height }))); ctx.strokeStyle = r.stage === 1 ? '#69a4a0' : '#de954a'; ctx.lineWidth = 2; ctx.stroke(); }
@@ -195,16 +214,19 @@
         ctx.fillRect(Math.round(x + e.x / r.map.width * width) - 2, Math.round(y + e.y / r.map.height * height) - 2, 4, 4);
       }
       ctx.fillStyle = '#69a4a0'; ctx.beginPath(); ctx.arc(Math.round(x + r.player.x / r.map.width * width), Math.round(y + r.player.y / r.map.height * height), 3, 0, Math.PI * 2); ctx.fill();
+      for(let gx=0;gx<Math.ceil(r.map.width/192);gx++)for(let gy=0;gy<Math.ceil(r.map.height/192);gy++)if(!r.explored[gx+','+gy]){ctx.fillStyle='#040906e8';ctx.fillRect(x+gx*192/r.map.width*width,y+gy*192/r.map.height*height,192/r.map.width*width+.5,192/r.map.height*height+.5);}
+      for(const boss of r.enemies.filter(e=>e.boss)){ctx.fillStyle='#e9b75a';ctx.fillRect(x+boss.x/r.map.width*width-2,y+boss.y/r.map.height*height-2,4,4);}
+      ctx.fillStyle='#fff1c9';ctx.fillRect(x+r.player.x/r.map.width*width-1,y+r.player.y/r.map.height*height-1,3,3);
       label('DIG • / BOSS ◆', x + width / 2, y - 6, '#efdfb8');
     }
     function draw() {
-      resize();
+      resize();shell.querySelector('.meat-progress').style.bottom=(shell.querySelector('.run-info').offsetHeight+24)+'px';
       if (!ready) { ctx.fillStyle = '#151b19'; ctx.fillRect(0, 0, canvas.width, canvas.height); return; }
       if(menuScene()){ctx.imageSmoothingEnabled=false;drawMenu();return;}
       canvas.dataset.scene='game';
       const r = game.run, stage = r ? r.stage : 0;
       ctx.imageSmoothingEnabled = false; ctx.save();
-      if (r && r.shake > 0 && game.save.settings.shake) ctx.translate(Math.round(Math.sin(r.seconds * 110) * 3), Math.round(Math.cos(r.seconds * 90) * 3));
+      if (r && r.shake > 0 && game.save.settings.shake && !game.save.settings.reducedMotion && !reducedMotion.matches) ctx.translate(Math.round(Math.sin(r.seconds * 110) * 3), Math.round(Math.cos(r.seconds * 90) * 3));
       const map = r ? r.map : previewMap, view = r ? r.view : { x: 0, y: 0 };
       ctx.translate(-view.x, -view.y);
       canvas.dataset.cameraX = view.x; canvas.dataset.cameraY = view.y;
@@ -236,11 +258,13 @@
             ctx.strokeStyle = rarity.color; ctx.lineWidth = 2 + (p.rarity || 0); ctx.beginPath(); ctx.ellipse(Math.round(p.x), Math.round(p.y), 18, 10, 0, 0, Math.PI * 2); ctx.stroke();
             label(rarity.symbol + ' ' + rarity.name + ' +' + p.value, p.x, p.y - 24, rarity.color);
           }
+          if(p.corpseId!==undefined)continue;
           sprite(p.kind === 'meat' ? 'assets/pickups/meat.png' : p.kind === 'dna' ? 'assets/pickups/dna_pickup.png' : 'assets/ui/health.png', p.x, p.y);
         }
       }
       const objects = map.rocks.map(p => ({ ...p, path: 'assets/environment/rock.png' }));
-      objects.push(...map.decorations);
+      objects.push(...map.decorations.filter(o=>o.x>=view.x-200&&o.x<=view.x+canvas.width+200&&o.y>=view.y-200&&o.y<=view.y+canvas.height+200));
+      if(r)for(const event of map.events)if(!event.claimed&&Math.hypot(event.x-r.player.x,event.y-r.player.y)<400){objects.push({...event,path:event.type==='spring'?'assets/props/flower_bush.png':'assets/props/skull.png'});label(event.type==='spring'?'✚ HELENDE KILDE':'✦ SJÆLDENT FOSSIL',event.x,event.y-30,'#bbd899');}
       if (r) for (const site of map.sites) if (!site.claimed && site.type !== 'rare') {
         objects.push({ ...site, path: 'assets/props/' + (site.type === 'fossil' ? 'skull' : 'nest_eggs') + '.png' });
         if (Math.hypot(site.x-r.player.x,site.y-r.player.y)<160) label((site.type === 'fossil' ? 'FOSSIL' : 'BEVOGTET REDE')+' · E',site.x,site.y-42,'#e9b75a');
@@ -277,24 +301,27 @@
         canvas.dataset.playerState = r.attack ? 'Bite_' + r.attack.facing : (p.moving ? 'Walk_' : 'Idle_') + p.facing;
         objects.push({ ...p, player: true, path: playerPath });
       } else objects.push({ x: 780, y: 390, path: 'assets/player/utahraptor_idle_S_000.png' });
+      for(let i=objects.length-1;i>=0;i--)if(objects[i].x<view.x-200||objects[i].x>view.x+canvas.width+200||objects[i].y<view.y-200||objects[i].y>view.y+canvas.height+200)objects.splice(i,1);
       objects.sort((a, b) => a.y - b.y);
       for (const o of objects) {
         if (o.x < view.x - 160 || o.y < view.y - 160 || o.x > view.x + canvas.width + 160 || o.y > view.y + canvas.height + 160) continue;
         if (o.player || o.enemy) { ctx.strokeStyle = o.player ? '#69a4a0' : o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869' : '#8eaa60'; ctx.lineWidth = o.player ? 4 : 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), o.player ? 24 : o.enemy.boss ? o.radius + 14 : o.radius + 6, 10, 0, 0, Math.PI * 2); ctx.stroke(); }
         if (o.enemy && o.enemy.boss) { ctx.strokeStyle = '#e9b75a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), 35, 17, 0, 0, Math.PI * 2); ctx.stroke(); }
-        const alpha = o.corpse ? Math.min(1,(8-o.age)/2) : o.player && r.hidden ? .6 : o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
+        const alpha = o.corpse ? Math.max(0,Math.min(1,((o.lifetime||30)-o.age)/5)) : o.player && r.hidden ? .6 : o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
         sprite(o.path, o.x, o.y, alpha, false, o.rotation, o.visualScale || 1);
         if (o.player && r.jonas) { ctx.fillStyle = '#e9b75a'; const x = Math.round(o.x), y = Math.round(o.y) - 46; ctx.fillRect(x - 9, y, 18, 5); ctx.fillRect(x - 9, y - 5, 4, 5); ctx.fillRect(x - 2, y - 7, 4, 7); ctx.fillRect(x + 5, y - 5, 4, 5); }
-        if (o.enemy) label((o.enemy.mode === 'return' ? '↩ ' : o.enemy.boss ? '◆ ' : o.enemy.elite ? '★ ' : o.enemy.rare ? '✦ ' : '') + C.SPECIES_LABELS[o.enemy.kind], o.x, o.y - enemyLabelOffset(o.enemy), o.enemy.damage ? '#ed7869' : '#8eaa60');
+        if (o.enemy) label((o.enemy.mode === 'return' ? '↩ ' : o.enemy.boss ? '◆ ' : o.enemy.elite ? '★ ' : o.enemy.rare ? '✦ ' : o.enemy.damage ? '⚠ ' : '○ ') + C.SPECIES_LABELS[o.enemy.kind], o.x, o.y - enemyLabelOffset(o.enemy), o.enemy.damage ? '#ed7869' : '#8eaa60');
         if(o.enemy&&!o.enemy.alert&&['graze','rest','warning'].includes(o.enemy.mode))label(({graze:o.enemy.kind==='parasaurolophus'?'GRÆSSER':'SØGER FØDE',rest:'HVILER',warning:'TERRITORIUM · HOLD AFSTAND'})[o.enemy.mode],o.x,o.y-enemyLabelOffset(o.enemy)-18,o.enemy.mode==='warning'?'#e9b75a':'#b6c0a9');
         if (o.enemy && o.enemy.boss) {
           if (o.enemy.mode === 'recover') {
             const e = o.enemy; ctx.strokeStyle = '#a2d4c1'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(Math.round(e.x - e.facingX * 24), Math.round(e.y - e.facingY * 24), 18, 0, Math.PI * 2); ctx.stroke(); label('ÅBEN FLANKE · +50 %', e.x, e.y - enemyLabelOffset(e) - 18, '#a2d4c1');
           } else if (o.enemy.mode === 'enrage') label('RASERI · FASE 2', o.x, o.y - enemyLabelOffset(o.enemy) - 18, '#de954a');
         }
+        if(o.corpse&&o.age>10&&images[o.path]){if(!decomposition[o.path]){const layer=document.createElement('canvas'),im=images[o.path];layer.width=im.width;layer.height=im.height;const lc=layer.getContext('2d');lc.drawImage(im,0,0);lc.globalCompositeOperation='source-in';lc.fillStyle='#151b19';lc.fillRect(0,0,layer.width,layer.height);decomposition[o.path]=layer;}const im=decomposition[o.path],scale=o.visualScale||1,meta=catalog[o.path];ctx.globalAlpha=alpha*Math.min(.65,(o.age-10)/15);ctx.drawImage(im,Math.round(o.x)-meta.origin[0]*scale,Math.round(o.y)-meta.origin[1]*scale,im.width*scale,im.height*scale);ctx.globalAlpha=1;}
         if (o.enemy && o.enemy.hit > 0) sprite(o.path, o.x, o.y, .7 * o.enemy.hit / .15, true, o.rotation, o.visualScale || 1);
         if (o.enemy && o.enemy.hp < o.enemy.maxHP && !o.enemy.boss) { ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, 40, 4); ctx.fillStyle = '#c45f45'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, Math.round(40 * o.enemy.hp / o.enemy.maxHP), 4); }
       }
+      if(r)for(const food of r.pickups.filter(p=>p.corpseId!==undefined)){const corpse=r.corpses.find(c=>c.id===food.corpseId);if(corpse)label(C.MEAT_RARITIES[food.rarity].symbol+' '+food.value+' · '+keyLabel('eat')+' SPIS',food.x,food.y+enemyLabelOffset(corpse),C.MEAT_RARITIES[food.rarity].color);}
       for(const ambient of map.ambience || [])if(ambient.x>view.x-40&&ambient.x<view.x+canvas.width+40&&ambient.y>view.y-40&&ambient.y<view.y+canvas.height+40)insect(ambient,r?r.seconds:0);
       if (r) {
         if (r.species === 'ankylosaurus' && r.pounce > 0) { ctx.strokeStyle='#a2d4c1'; ctx.lineWidth=4; ctx.beginPath(); ctx.arc(Math.round(r.player.x),Math.round(r.player.y),38,0,Math.PI*2); ctx.stroke(); }
@@ -305,7 +332,7 @@
           const [dx, dy] = { N: [0, -1], S: [0, 1], E: [1, 0], W: [-1, 0] }[r.biteFacing];
           sprite('assets/effects/bite_slash_001.png', r.player.x + dx * 36, r.player.y + dy * 36);
         }
-        for (const p of r.particles) { ctx.fillStyle = p.kind === 'dust' ? '#ded392' : '#c6663c'; ctx.globalAlpha = Math.min(1, p.life / p.maxLife * 1.5); ctx.fillRect(Math.round(p.x), Math.round(p.y), p.size, p.size); } ctx.globalAlpha = 1;
+        for (const p of (game.save.settings.reducedMotion||reducedMotion.matches?[]:r.particles)) { ctx.fillStyle = p.kind === 'dust' ? '#ded392' : '#c6663c'; ctx.globalAlpha = Math.min(1, p.life / p.maxLife * 1.5); ctx.fillRect(Math.round(p.x), Math.round(p.y), p.size, p.size); } ctx.globalAlpha = 1;
         canvas.dataset.hitStop = r.hitStop > 0 ? 'true' : 'false'; canvas.dataset.particles = r.particles.length;
         ctx.font = 'bold 12px monospace'; ctx.textAlign = 'center';
         for (const e of r.effects) {
@@ -331,7 +358,7 @@
       shell.querySelector('#dna-label').textContent = '+' + r.dna + ' DNA · ' + r.kills + ' JAGTER';
       shell.querySelector('#time-label').textContent = timeLabel(r.seconds);
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
-      shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : 'SHIFT KLAR');
+      shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : keyLabel('ability')+' KLAR');
       bossHUD.hidden = !boss || !['playing', 'paused', 'mutation'].includes(game.phase);
       if (boss) { bossHUD.querySelector('b').textContent = C.STAGES[r.stage].bossName + (' · FASE ' + boss.bossPhase) + ' · ' + Math.round(Math.hypot(boss.x - r.player.x, boss.y - r.player.y) / 32) + ' m · find ◆ på kortet'; bossHUD.dataset.bossPhase = boss.bossPhase; const tip = bossHUD.querySelector('.boss-tip'); tip.hidden = false; tip.textContent = boss.mode === 'recover' ? 'ÅBEN FLANKE · +50 % SKADE BAGFRA' : boss.mode === 'enrage' ? ['FASE 2 · DOBBELT STORMLØB OG TRAMP', 'FASE 2 · HURTIGT BAGHOLD OG STØRRE HALEBØLGE', 'FASE 2 · DOBBELT HORNSTORM', 'FASE 2 · DOBBELTBID OG BRØL'][r.stage] : boss.mode === 'windup' ? boss.attackName : 'UNDVIG SIDEVÆRT · BID, NÅR DEN HVILER'; bossHUD.querySelector('i').style.width = Math.max(0, boss.hp / boss.maxHP * 100) + '%'; }
     }
@@ -339,18 +366,27 @@
       if (disposed) return;
       const dt = last ? Math.min(.1, Math.max(0, (now - last) / 1000)) : 0; last = now;
       const phaseBefore = game.phase; accumulator += dt;
-      if(menuScene() && !document.hidden && !reducedMotion.matches)menuClock+=dt;
+      if(menuScene() && !document.hidden && !reducedMotion.matches && !game.save.settings.reducedMotion)menuClock+=dt;
       if (game.phase === 'result' && game.run.deathTime >= 0) game.run.deathTime = Math.min(.75, game.run.deathTime + dt);
+      const pad=Array.from(navigator.getGamepads?.()||[]).find(Boolean),buttons=pad?pad.buttons.map(b=>b.pressed):[];
+      if(buttons[9]&&!padPrevious[9]){if(game.phase==='playing')game.pause();else if(game.phase==='paused')game.resume();}
+      if(game.phase!=='playing'&&pad){const focusables=Array.from(screen.querySelectorAll('button:not(:disabled)'));if((buttons[12]&&!padPrevious[12])||(buttons[13]&&!padPrevious[13])){const index=focusables.indexOf(document.activeElement),delta=buttons[12]?-1:1;focusables[(index+delta+focusables.length)%focusables.length]?.focus();}if(buttons[0]&&!padPrevious[0]&&screen.contains(document.activeElement))document.activeElement.click();}
+      padPrevious=buttons;
+      const held=action=>keys.has(game.save.bindings[action]);
+      const ax=pad&&Math.abs(pad.axes[0])>.18?pad.axes[0]:0,ay=pad&&Math.abs(pad.axes[1])>.18?pad.axes[1]:0;
       if (ready && game.phase === 'playing') {
         while (accumulator >= 1 / 60 && game.phase === 'playing') {
-          game.step(1 / 60, { x: (keys.has('KeyD') || keys.has('ArrowRight') ? 1 : 0) - (keys.has('KeyA') || keys.has('ArrowLeft') ? 1 : 0), y: (keys.has('KeyS') || keys.has('ArrowDown') ? 1 : 0) - (keys.has('KeyW') || keys.has('ArrowUp') ? 1 : 0), sneak: keys.has('KeyC'), attack: keys.has('Space'), interact: keys.has('KeyE'), pounce: keys.has('ShiftLeft') || keys.has('ShiftRight') });
+          const eat=held('eat')||buttons[2];
+          game.step(1 / 60, { x:joystick.x+ax+(held('right')||keys.has('ArrowRight')||buttons[15]?1:0)-(held('left')||keys.has('ArrowLeft')||buttons[14]?1:0),y:joystick.y+ay+(held('down')||keys.has('ArrowDown')||buttons[13]?1:0)-(held('up')||keys.has('ArrowUp')||buttons[12]?1:0),eat,sneak:held('sneak')||buttons[5],attack:held('attack')||buttons[0]||game.save.settings.autoAttack&&!eat&&game.run.enemies.some(e=>Math.hypot(e.x-game.run.player.x,e.y-game.run.player.y)<65+e.radius),interact:held('interact')||buttons[3],pounce:held('ability')||buttons[1] });
           accumulator -= 1 / 60;
         }
       } else accumulator = 0;
       if (game.phase !== phaseBefore) accumulator = 0;
-      for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast(['FASE 2 · Dobbelt stormløb og tramp!', 'FASE 2 · Hurtigere baghold og stor halebølge!', 'FASE 2 · Dobbelt hornstorm!', 'FASE 2 · Dobbeltbid og brøl!'][game.run.stage]); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if (event.type === 'dna') toast('+' + event.amount + ' DNA · gemt'); }
+      for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast(['FASE 2 · Dobbelt stormløb og tramp!', 'FASE 2 · Hurtigere baghold og stor halebølge!', 'FASE 2 · Dobbelt hornstorm!', 'FASE 2 · Dobbeltbid og brøl!'][game.run.stage]); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if(event.type==='discovery')toast(event.text); if (event.type === 'dna') toast('+' + event.amount + ' DNA · gemt'); }
       const musicRun=game.run;audio.setScene({phase:game.phase==='settings'&&returnPhase==='paused'?'paused':game.phase,stage:musicRun?musicRun.stage:0,boss:!!(musicRun&&musicRun.bossSpawned&&!musicRun.bossDefeated),health:musicRun?musicRun.health:1,maxHealth:musicRun?musicRun.maxHealth:1,victory:!!(musicRun&&musicRun.result&&musicRun.result.victory)});audio.sync();
+      shell.style.setProperty('--hud-scale',game.save.settings.hudScale);shell.style.setProperty('--text-scale',game.save.settings.textScale);
       renderScreen(); draw();
+      if(game.phase==='playing'&&game.run&&game.run.eating){const r=game.run,x=Math.round(r.player.x-r.view.x),y=Math.round(r.player.y-r.view.y+90);ctx.fillStyle='#101713';ctx.fillRect(x-42,y,84,8);ctx.fillStyle='#fff1c9';ctx.fillRect(x-40,y+2,80*r.eating.progress,4);}
       shell.querySelector('.toast').hidden = now > toastUntil;
       shell.querySelector('.save-status').textContent = game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · kun denne session';
     }
@@ -362,11 +398,14 @@
       if (target.dataset.species) { const id = target.dataset.species; if (!game.save.unlockedSpecies.includes(id)) game.unlockSpecies(id); game.selectSpecies(id); renderScreen(true); return; }
       if (target.dataset.explore) { game.explore(target.dataset.explore === 'take'); keys.clear(); accumulator = 0; renderScreen(); return; }
       if (target.dataset.mutation) { game.choose(target.dataset.mutation); keys.clear(); accumulator = 0; last = 0; renderScreen(); return; }
+      const binding=e.target.closest('[data-binding]');if(binding){bindingAction=binding.dataset.binding;binding.textContent='Tryk en ny tast · Esc annullerer';return;}
+      if(target.dataset.binding){bindingAction=target.dataset.binding;target.textContent='Tryk en ny tast · Esc annullerer';return;}
       const action = target.dataset.action;
       if (action) e.preventDefault();
-      if (action === 'start' && ready) { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); game.phase = 'intro'; }
-      else if (action === 'begin' && ready && game.phase === 'intro') game.start();
+      if (action === 'start' && ready) { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value);const seed=shell.querySelector('#map-seed');if(seed)seedInput=seed.value.trim();if(seedInput&&!/^\d{1,10}$/.test(seedInput)){toast('Seed skal være et heltal fra 0 til 4294967295');return;}if(Number(seedInput)>4294967295){toast('Seed er for stort');return;}game.phase = 'intro'; }
+      else if (action === 'begin' && ready && game.phase === 'intro'){target.disabled=true;await preload({species:game.save.selectedSpecies,stage:0});game.start(seedInput?{seed:Number(seedInput)}:{});}
       else if (['shop', 'scores', 'help', 'species'].includes(action)) { if (game.phase === 'menu') { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); } game.phase = action; }
+      else if(action==='share'){const url=new URL(location.href);url.searchParams.set('seed',game.run.seed);navigator.clipboard?.writeText(url.href).then(()=>toast('Seed-link kopieret')).catch(()=>toast('Markér seed-linket og kopiér det'));if(!navigator.clipboard)toast('Markér seed-linket og kopiér det');}
       else if (action === 'settings') { returnPhase = game.phase === 'paused' ? 'paused' : 'menu'; const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); game.phase = 'settings'; }
       else if (action === 'back') game.phase = returnPhase;
       else if (action === 'menu') game.phase = 'menu';
@@ -374,7 +413,7 @@
       else if (action === 'pause') { if (game.phase === 'playing') game.pause(); else game.resume(); }
       else if (action === 'resume') game.resume();
       else if (action === 'abandon') { game.finish(false); }
-      else if (action === 'next') game.nextStage();
+      else if (action === 'next'){target.disabled=true;await preload({stage:Math.min(3,game.run.stage+1)});game.nextStage();evictUnused(game.run.stage,game.run.species);}
       else if (action === 'mute') { game.setSetting('master', 0); audio.sync(); renderScreen(true); }
       else if (action === 'fullscreen') { try { if (document.fullscreenElement) await document.exitFullscreen(); else await shell.requestFullscreen(); } catch (_) { toast('Fuldskærm understøttes ikke her.'); } }
       if (action !== 'pause' && action !== 'start') audio.play('ui');
@@ -382,10 +421,11 @@
     });
     listen(shell, 'input', e => {
       const key = e.target.dataset.setting; if (!key) return;
-      game.setSetting(key, key === 'shake' ? e.target.checked : Number(e.target.value) / 100); audio.sync();
+      game.setSetting(key, ['shake','autoAttack','reducedMotion'].includes(key) ? e.target.checked : Number(e.target.value) / 100); audio.sync();
       const output = shell.querySelector('#volume-' + key); if (output) output.textContent = Math.round(game.save.settings[key] * 100) + ' %';
     });
     listen(window, 'keydown', e => {
+      if(bindingAction){e.preventDefault();if(e.code==='Escape'){bindingAction=null;renderScreen(true);return;}if(game.setBinding(bindingAction,e.code)){bindingAction=null;renderScreen(true);}else toast('Tasten er allerede i brug eller understøttes ikke');return;}
       if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
       audio.unlock();
       if (e.code === 'Escape' && !e.repeat) {
@@ -395,32 +435,30 @@
       if (game.phase === 'mutation' && /^Digit[123]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); keys.clear(); accumulator = 0; last = 0; renderScreen(); return; }
       if(e.code==='Space'){e.preventDefault();if(game.phase!=='playing'){keys.delete('Space');return;}}
       if (game.phase !== 'playing') return;
-      if (e.code === 'KeyE' && !e.repeat) { e.preventDefault(); game.interact(); accumulator = 0; renderScreen(); return; }
+      if (e.code === game.save.bindings.interact && !e.repeat) { e.preventDefault(); game.interact(); accumulator = 0; renderScreen(); return; }
       if (['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) e.preventDefault();
       keys.add(e.code);
     });
     listen(window, 'keyup', e => {if(e.code==='Space'&&!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName))e.preventDefault();keys.delete(e.code);});
-    const unfocus = () => { keys.clear(); accumulator = 0; last = 0; game.pause(); renderScreen(); };
+    const unfocus = () => {joystick={x:0,y:0};keys.clear(); accumulator = 0; last = 0; game.pause(); renderScreen(); };
     listen(window, 'blur', unfocus); listen(document, 'visibilitychange', () => { if (document.hidden) unfocus(); });
-    listen(shell, 'pointerdown', e => { audio.unlock(); const target = e.target.closest('[data-key]'); if (!target || game.phase !== 'playing') return; e.preventDefault(); target.setPointerCapture(e.pointerId); keys.add(target.dataset.key); });
-    const releasePointer = e => { const target = e.target.closest('[data-key]'); if (target) keys.delete(target.dataset.key); };
+    listen(shell, 'pointerdown', e => { audio.unlock(); const target = e.target.closest('[data-key]'); if (!target || game.phase !== 'playing') return; e.preventDefault(); target.setPointerCapture(e.pointerId); const action=Object.keys(game.save.bindings).find(a=>({attack:'Space',ability:'ShiftLeft',interact:'KeyE',eat:'KeyF'})[a]===target.dataset.key);target.dataset.activeKey=action?game.save.bindings[action]:target.dataset.key;keys.add(target.dataset.activeKey); });
+    const releasePointer = e => { const target = e.target.closest('[data-key]'); if (target) keys.delete(target.dataset.activeKey||target.dataset.key); };
     listen(shell, 'pointerup', releasePointer); listen(shell, 'pointercancel', releasePointer); listen(shell, 'lostpointercapture', releasePointer);
-    const load = Promise.all(Object.keys(catalog).map(path => new Promise((resolveLoad, reject) => {
+    const joy=shell.querySelector('.joystick');
+    listen(joy,'pointerdown',e=>{if(game.phase!=='playing'||joyPointer!==null)return;e.preventDefault();joyPointer=e.pointerId;joyOrigin={x:e.clientX,y:e.clientY};joy.setPointerCapture(e.pointerId);});
+    listen(joy,'pointermove',e=>{if(e.pointerId!==joyPointer)return;const dx=e.clientX-joyOrigin.x,dy=e.clientY-joyOrigin.y,length=Math.hypot(dx,dy),scale=Math.min(1,40/Math.max(1,length));joystick={x:dx*scale/40,y:dy*scale/40};joy.querySelector('i').style.transform=`translate(${dx*scale}px,${dy*scale}px)`;});
+    const stopJoy=e=>{if(e.pointerId!==joyPointer)return;joyPointer=null;joystick={x:0,y:0};joy.querySelector('i').style.transform='';};listen(joy,'pointerup',stopJoy);listen(joy,'pointercancel',stopJoy);listen(joy,'lostpointercapture',stopJoy);
+    const loading={};
+    function loadImage(path){if(loading[path])return loading[path];return loading[path]=new Promise((resolveLoad,reject)=>{
       const image = new Image(); image.onload = () => { images[path] = image;
-        const species=Object.keys(C.SPECIES_COLORS).find(id=>path.includes('/'+id+'_'));
-        if(species) {
-          const layer=document.createElement('canvas');layer.width=image.width;layer.height=image.height;const lc=layer.getContext('2d');lc.drawImage(image,0,0);const pixels=lc.getImageData(0,0,image.width,image.height),mapping=C.SPECIES_COLORS[species];
-          for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[pixels.data[i],pixels.data[i+1],pixels.data[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('');const color=mapping[key];if(color){pixels.data[i]=parseInt(color.slice(0,2),16);pixels.data[i+1]=parseInt(color.slice(2,4),16);pixels.data[i+2]=parseInt(color.slice(4,6),16);}}
-          lc.putImageData(pixels,0,0);skins[path]=layer;
-        }
-        if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/') || path.startsWith('assets/enemy_full/') || path.startsWith('assets/player_full/'))) {
-          const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
-          const tintCtx = tint.getContext('2d'); tintCtx.drawImage(image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';
-          tintCtx.fillStyle = '#fff1c9'; tintCtx.fillRect(0, 0, tint.width, tint.height); flashes[path] = tint;
-        }
         resolveLoad(); }; image.onerror = () => reject(Error(path)); image.src = resolve(path);
-    }))).then(() => { ready = true; renderScreen(true); return true; }).catch(e => { game.phase = 'error'; renderScreen(true); screen.querySelector('.load-error').textContent = e.message; return false; });
-    const api = { game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
+    });}
+    function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[]}={}){const animals=new Set([species,...C.BIOMES[stage].animals,C.STAGES[stage].boss,...kinds]);return Promise.all(Object.keys(catalog).filter(path=>!/(player_full|enemy_full|enemy_animations|enemies|player_combat)\//.test(path)||Array.from(animals).some(id=>path.includes('/'+id+'_'))).map(loadImage));}
+    function evictUnused(stage,species){const allowed=new Set([species,...C.BIOMES[stage].animals,C.STAGES[stage].boss]);for(const path of Object.keys(images))if(/(player_full|enemy_full|enemy_animations|enemies|player_combat)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete loading[path];delete skins[path];delete flashes[path];delete decomposition[path];prepared.delete(path);}}
+    const querySeed=new URL(location.href).searchParams.get('seed');if(querySeed&&/^\d{1,10}$/.test(querySeed)&&Number(querySeed)<=4294967295)seedInput=querySeed;
+    const load = preload().then(() => { ready = true; renderScreen(true); return true; }).catch(e => { game.phase = 'error'; renderScreen(true); screen.querySelector('.load-error').textContent = e.message; return false; });
+    const api = { preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,decodedBytes:[...Object.values(images),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition)].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
     root.primalRun = api; renderScreen(true); if (!driven) animationId = requestAnimationFrame(frame);
     return api;
   }

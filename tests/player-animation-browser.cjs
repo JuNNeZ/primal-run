@@ -11,7 +11,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     // This regression suite verifies the unlocked Utahraptor combat profile.
     await page.evaluate(() => { const g=primalRun.game; g.save.unlockedSpecies.push('utahraptor'); g.selectSpecies('utahraptor'); });
     await page.locator('[data-action="start"]').click();
-    await page.locator('[data-action="begin"]').click();
+    await page.locator('[data-action="begin"]').click();await page.evaluate(async()=>{for(const species of Object.keys(PrimalCore.PLAYER_SPECIES))await primalRun.preload({species,stage:3,kinds:Object.keys(PrimalCore.SPECIES)});});await page.waitForFunction(()=>primalRun.game.phase==='playing');
     const result = await page.evaluate(() => {
       const g = primalRun.game, r = g.run, canvas = document.querySelector('canvas[aria-label]'), ctx = canvas.getContext('2d');
       const calls = [], original = ctx.drawImage;

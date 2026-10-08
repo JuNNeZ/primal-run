@@ -20,3 +20,8 @@ test('crossfades reuse unchanged scenes, retire buses and mute avoids new music 
  a.setScene({phase:'playing',stage:0});assert.equal(a.retiredBuses.size,1);assert.ok(ramps.some(([v,t])=>v===0&&t===10.65));const bus=a.bus;a.setScene({phase:'playing',stage:0});assert.equal(a.bus,bus);
  a.context.currentTime=13;a.settings.music=0;a.tone=()=>{throw Error('Muted schedule creates voice')};a.schedule();assert.equal(a.retiredBuses.size,0);assert.equal(old.disconnected,true);
 });
+
+test('ambient layer schedules independently from muted music and changes calls with biome; music varies after 64 beats',()=>{
+ const a=new Audio(x=>x,{master:1,music:0,sfx:0,ambient:1}),calls=[];a.context={state:'running',currentTime:0,createGain:()=>({gain:{value:1,setValueAtTime(){},linearRampToValueAtTime(){},cancelScheduledValues(){}},disconnect(){},connect(){}})};a.music={};a.ambient={};a.tone=(...args)=>calls.push(args);a.setScene({phase:'playing',stage:0});a.schedule();const forest=calls[0][0];assert.ok(calls.length>=4);a.context.currentTime=20;a.setScene({phase:'playing',stage:3});a.schedule();assert.notEqual(calls[4][0],forest);const count=calls.length;a.settings.ambient=0;a.context.currentTime=40;a.schedule();assert.equal(calls.length,count);
+ a.settings.music=1;a.trackId='forest';a.healthBand=0;a.beat=0;a.nextBeat=40;calls.length=0;a.schedule();const base=calls.filter(c=>c[3]===.028)[0][0];a.beat=64;a.nextBeat=40;calls.length=0;a.schedule();assert.notEqual(calls.filter(c=>c[3]===.028)[0][0],base);
+});

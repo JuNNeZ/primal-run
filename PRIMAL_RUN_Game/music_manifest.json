@@ -355,5 +355,23 @@
     15
   ],
   "pause_duck": 0.28,
-  "health_layers": "Heartbeat; faster pulse and tension; critical dissonant accent. Additive to biome/boss theme."
+  "health_layers": "Heartbeat; faster pulse and tension; critical dissonant accent. Additive to biome/boss theme.",
+  "long_form_variation": {
+    "every_beats": 64,
+    "motif_offset": 4,
+    "cycle_variations": 4
+  },
+  "ambient": {
+    "origin": "Original procedural WebAudio filtered noise and animal/insect tones; no external recordings",
+    "volume": "master × ambient, independent from music and sfx",
+    "boss_multiplier": 0.6,
+    "pause_multiplier": 0.2,
+    "profiles": [
+      "forest wind + distant calls + insects",
+      "river water + wind + insects",
+      "rock wind + distant calls",
+      "volcanic low wind + deep distant calls"
+    ],
+    "crossfade_seconds": 1
+  }
 }
