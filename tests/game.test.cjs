@@ -40,6 +40,30 @@ test('kills drop meat, but XP, levels and boss threshold require actual pickup',
   assert.equal(r.meat, 30); assert.equal(r.xp, 5); assert.equal(r.enemies.filter(e => e.boss).length, 1);
   tick(g); assert.equal(r.enemies.filter(e => e.boss).length, 1, 'boss spawns once');
 });
+test('successful bite gives one impact, damage number and a short knockback stagger; misses stay quiet', () => {
+  const g = make(), r = g.run;
+  const e = g.spawn('carnotaurus', { x: 520, y: 340 });
+  g.drainEvents(); g.resolveBite('E');
+  assert.equal(e.hp, 38); assert.equal(e.x, 538); assert.equal(e.hit, .15); assert.equal(e.stagger, .12);
+  assert.equal(r.effects[0].text, '10'); assert.equal(g.drainEvents().filter(e => e.type === 'bite_hit').length, 1);
+  const x = e.x; g.enemyStep(e, .05); assert.equal(e.x, x, 'target cannot instantly walk back through knockback');
+  g.resolveBite('W'); assert.equal(g.drainEvents().filter(e => e.type === 'bite_hit').length, 0, 'miss has no impact sound');
+  e.boss = true; const bossX = e.x; g.resolveBite('E'); assert.equal(e.x, bossX, 'boss is not stunlocked or knocked back');
+});
+test('first biome opens with three weak enemies and ramps composition, caps and cadence toward a 24-meat boss', () => {
+  const g = new C.Game({ random: () => .99 }); g.start(); const r = g.run;
+  assert.equal(r.enemies.length, 3); assert.equal(r.enemies.filter(e => e.kind === 'compy').length, 2);
+  assert.ok(r.enemies.every(e => e.kind !== 'carnotaurus')); assert.equal(r.spawnTimer, 5);
+  for (const [seconds, meat, kind, interval] of [[0, 0, 'parasaurolophus', 4], [30, 6, 'parasaurolophus', 3.2], [60, 12, 'carnotaurus', 2.6]]) {
+    r.enemies = []; r.pickups = []; r.seconds = seconds; r.meat = meat; r.spawnTimer = 0;
+    g.step(.01); assert.equal(r.enemies[0].kind, kind); assert.equal(r.spawnTimer, interval);
+  }
+  r.enemies = []; r.seconds = 0; r.meat = 0; r.spawnTimer = 0;
+  for (let i = 0; i < 3; i++) g.spawn('compy', { x: 100, y: 100 });
+  g.step(.01); assert.equal(r.enemies.length, 3, 'opening cap prevents a swarm');
+  r.enemies = []; r.meat = 23; r.pickups = [{ id: 999, kind: 'meat', x: r.player.x, y: r.player.y, value: 1 }];
+  g.step(.01); assert.equal(r.bossSpawned, true); assert.equal(r.enemies.filter(e => e.boss).length, 1);
+});
 test('mutation choices are distinct, pause simulation, and queued levels resolve', () => {
   const g = make(), r = g.run; g.addXP(30);
   assert.equal(g.phase, 'mutation'); assert.equal(new Set(r.choices).size, 3);

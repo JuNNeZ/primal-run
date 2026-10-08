@@ -96,7 +96,7 @@ af udviklingsarbejdet her.
   faste kropshitboxes og klippekollision.
 - Syv fjendetyper; fire bosser med varslede stormløb og for de sidste to også
   områdeangreb. Frontpanser gør Triceratops/Ankylosaurus sværere at angribe forfra.
-- Fire kødmål: 30/50/75/100. Kød giver XP ved opsamling; kills giver ikke XP direkte.
+- Fire kødmål: 24/50/75/100. Kød giver XP ved opsamling; kills giver ikke XP direkte.
 - Ti mutationer, tre tilfældige forskellige valg, højst tre rangtrin hver.
 - DNA-drop: Compy 5 %/1 DNA, Parasaurolophus 15 %/2 DNA, store dyr 30 %/4 DNA.
   Bosser giver garanteret 15/20/25/30 DNA direkte til den gemte bank.
@@ -111,6 +111,21 @@ Data gemmes i denne browsers lager på denne webadresse. Det synkroniseres ikke
 mellem maskiner eller mellem Preview og GitHub Pages. Ved blokeret lagring kan
 man stadig spille, men fremgangen varer kun i sessionen. Den gamle demos DNA
 ændres eller migreres ikke automatisk.
+
+## Kampfeedback og første bane
+
+Bid, der rammer, giver en kort lys markering på fjenden, et skadetal og en
+separat dyb kontaktlyd. Almindelige fjender skubbes 18 pixels væk og bremses i
+0,12 sekunder; panser begrænser skubbet til 8 pixels. Bosser kan ikke stunlåses.
+Kontaktlyden følger master- og effektvolumen, uafhængigt af musikvolumen.
+
+Første bane starter med to Compy og én Parasaurolophus. Første ekstra fjende
+kommer efter fem sekunder. Åbningen har højst tre fjender, derefter fem og til
+sidst syv; spawnintervallet går fra 4 til 3,2 til 2,6 sekunder. Carnotaurus kan
+først dukke op efter 45 aktive spilsekunder og 12 opsamlede kødenheder.
+Bossen kræver nu 24 kød. Tiderne fryser i pause og under mutationsvalg.
+Dette er en første balancejustering; menneskelig spiltest skal afgøre det
+endelige tempo til første mutation og boss.
 
 ## Status og næste arbejde
 

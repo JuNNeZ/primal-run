@@ -13,6 +13,7 @@
           const AudioContext = window.AudioContext || window.webkitAudioContext;
           if (!AudioContext) return;
           this.context = new AudioContext(); this.music = this.context.createGain(); this.music.connect(this.context.destination);
+          this.effects = this.context.createGain(); this.effects.connect(this.context.destination);
           this.nextBeat = this.context.currentTime + .06;
           this.timer = setInterval(() => this.schedule(), 100);
         }
@@ -22,6 +23,7 @@
     }
     sync() {
       const s = this.settings;
+      if (this.context) this.effects.gain.setTargetAtTime(s.master * s.sfx, this.context.currentTime, .01);
       if (this.context) this.music.gain.setTargetAtTime(s.master * s.music * (this.intensity === 'paused' ? .4 : 1), this.context.currentTime, .1);
       for (const audio of this.active) audio.volume = s.master * s.sfx;
     }
@@ -48,7 +50,16 @@
         this.nextBeat += interval;
       }
     }
+    impact() {
+      const c = this.context; if (!c || c.state !== 'running') return;
+      const t = c.currentTime, osc = c.createOscillator(), gain = c.createGain();
+      osc.type = 'triangle'; osc.frequency.setValueAtTime(180, t); osc.frequency.exponentialRampToValueAtTime(48, t + .09);
+      gain.gain.setValueAtTime(.3, t); gain.gain.exponentialRampToValueAtTime(.0001, t + .12);
+      osc.connect(gain); gain.connect(this.effects); osc.start(t); osc.stop(t + .13);
+      osc.onended = () => { osc.disconnect(); gain.disconnect(); };
+    }
     play(event) {
+      if (event === 'bite_hit') { if (this.settings.master * this.settings.sfx > 0) this.impact(); return; }
       const names = { bite: 'bite', hit: 'hit', pickup: 'pickup', dna: 'pickup', pounce: 'pounce', level_up: 'level_up', death: 'death', ui: 'ui_select', boss: 'meteor', boss_dead: 'level_up', victory: 'level_up', stage: 'ui_select', start: 'ui_select' };
       const name = names[event]; if (!name || this.settings.master * this.settings.sfx === 0 || this.active.size > 8) return;
       const audio = new Audio(this.resolve('sounds/' + name + '.wav')); audio.volume = this.settings.master * this.settings.sfx;

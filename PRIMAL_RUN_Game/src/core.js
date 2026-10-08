@@ -7,7 +7,7 @@
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
-    { name: 'Bregneskoven', subtitle: 'Jagten begynder', target: 30, tile: 'forest_floor', boss: 'carnotaurus', bossName: 'Skovens jæger', dna: 15 },
+    { name: 'Bregneskoven', subtitle: 'Jagten begynder', target: 24, tile: 'forest_floor', boss: 'carnotaurus', bossName: 'Skovens jæger', dna: 15 },
     { name: 'Flodsletten', subtitle: 'Hold øje med flodens jæger', target: 50, tile: 'sand', boss: 'deinosuchus', bossName: 'Flodens gab', dna: 20 },
     { name: 'Klippelandet', subtitle: 'Angrib de pansrede flanker', target: 75, tile: 'gravel', boss: 'triceratops', bossName: 'Den hornede vogter', dna: 25 },
     { name: 'Den vulkanske dal', subtitle: 'Den sidste jagt', target: 100, tile: 'volcanic', boss: 'tyrannosaurus', bossName: 'Dalens konge', dna: 30 },
@@ -87,6 +87,10 @@
     }
     populate() {
       const r = this.run;
+      if (r.stage === 0) {
+        this.spawn('compy', { x: 420, y: 245 }); this.spawn('compy', { x: 575, y: 350 });
+        this.spawn('parasaurolophus', { x: 640, y: 225 }); r.spawnTimer = 5; return;
+      }
       for (let i = 0; i < 5; i++) this.spawn(i % 3 === 0 ? 'parasaurolophus' : 'compy', { x: 340 + (i % 3) * 110, y: i < 3 ? 170 : 440 });
       r.spawnTimer = 1;
     }
@@ -96,7 +100,7 @@
       const p = position || (edge < 2 ? { x: edge ? 904 : 56, y: 100 + this.random() * 440 } : { x: 80 + this.random() * 800, y: edge === 2 ? 100 : 560 });
       const scale = 1 + r.stage * .3;
       const hp = boss ? (220 + r.stage * 85) : base.hp * scale;
-      const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? 32 : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, pattern: 0 };
+      const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? 32 : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0 };
       r.enemies.push(e); return e;
     }
     move(entity, dx, dy) {
@@ -153,16 +157,23 @@
     resolveBite(facing) {
       const r = this.run;
       const dir = { N: [0, -1], S: [0, 1], E: [1, 0], W: [-1, 0] }[facing];
+      let hits = 0;
       for (const e of r.enemies) {
         const dx = e.x - r.player.x, dy = e.y - r.player.y, dist = Math.hypot(dx, dy);
         if (dist > 66 + e.radius + 10 * r.mutations.reach || (dist > 24 && (dx * dir[0] + dy * dir[1]) / dist < .35)) continue;
         const frontal = dist > 0 && ((-dx * e.facingX - dy * e.facingY) / dist > .6);
         const armor = ['triceratops', 'ankylosaurus'].includes(e.kind) && frontal ? .5 : 1;
-        e.hp -= 10 * (1 + .02 * r.upgrades.damage + .2 * r.mutations.teeth) * armor;
+        const damage = 10 * (1 + .02 * r.upgrades.damage + .2 * r.mutations.teeth) * armor;
+        e.hp -= damage; hits++;
         e.bleed = r.mutations.bleed ? 3 : 0; e.hit = .15;
-        if (!e.boss) this.move(e, dx / Math.max(dist, 1) * 8, dy / Math.max(dist, 1) * 8);
-        r.effects.push({ x: e.x, y: e.y, text: armor < 1 ? 'PANSSER' : 'BID', life: .55 });
+        if (!e.boss) {
+          const distance = armor < 1 ? 8 : 18;
+          this.move(e, (dist > 1 ? dx / dist : dir[0]) * distance, (dist > 1 ? dy / dist : dir[1]) * distance);
+          e.stagger = .12;
+        }
+        r.effects.push({ x: e.x, y: e.y, text: (armor < 1 ? 'PANSSER · ' : '') + Math.round(damage), life: .55 });
       }
+      if (hits) this.emit('bite_hit', { hits });
     }
     kill(e) {
       const r = this.run; r.kills++;
@@ -179,6 +190,7 @@
     enemyStep(e, dt) {
       const r = this.run, dx = r.player.x - e.x, dy = r.player.y - e.y, d = Math.max(1, Math.hypot(dx, dy));
       e.cooldown = Math.max(0, e.cooldown - dt); e.hit = Math.max(0, e.hit - dt);
+      if (e.stagger > 0) { e.stagger = Math.max(0, e.stagger - dt); return; }
       if (e.mode === 'windup') {
         e.timer -= dt;
         if (e.timer <= 0) { e.mode = e.pattern === 2 ? 'slam' : 'charge'; e.timer = e.mode === 'slam' ? .15 : .55; this.emit('roar'); }
@@ -247,9 +259,12 @@
       if (!r.bossSpawned && r.meat >= STAGES[r.stage].target) { r.bossSpawned = true; this.spawn(STAGES[r.stage].boss, { x: 480, y: 130 }, true); this.emit('boss'); }
       if (!r.bossSpawned) {
         r.spawnTimer -= dt;
-        if (r.spawnTimer <= 0 && r.enemies.length < 9 + r.stage * 2) {
-          const pool = r.stage === 0 ? ['compy', 'compy', 'parasaurolophus', 'carnotaurus'] : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'carnotaurus', 'ankylosaurus'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];
-          this.spawn(pool[Math.floor(this.random() * pool.length)]); r.spawnTimer = Math.max(1, 2.4 - r.stage * .35);
+        const opening = r.stage === 0 && r.seconds < 20 && r.meat < 6;
+        const building = r.stage === 0 && !opening && (r.seconds < 45 || r.meat < 12);
+        const cap = r.stage === 0 ? (opening ? 3 : building ? 5 : 7) : 9 + r.stage * 2;
+        if (r.spawnTimer <= 0 && r.enemies.length < cap) {
+          const pool = r.stage === 0 ? (opening ? ['compy', 'parasaurolophus'] : building ? ['compy', 'compy', 'parasaurolophus'] : ['compy', 'parasaurolophus', 'carnotaurus']) : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'carnotaurus', 'ankylosaurus'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];
+          this.spawn(pool[Math.floor(this.random() * pool.length)]); r.spawnTimer = r.stage === 0 ? (opening ? 4 : building ? 3.2 : 2.6) : Math.max(1, 2.4 - r.stage * .35);
         }
       }
       this.maybeLevelUp();
