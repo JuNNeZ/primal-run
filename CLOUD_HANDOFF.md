@@ -227,3 +227,22 @@ include128 opening layout seeds,64 connectivity maps, real held/repeated Space
 across phase transitions and OfflineAudioContext waveforms for all nine base
 menu/biome/boss themes plus three health layers. See adaptive_runtime_report.json
 and music_manifest.json; old feature reports remain historical evidence.
+
+## Prioritet1–4 · 8. oktober2026
+
+Komplette NPC-serier:480 nye enemy_full frames til Para/Deino/Trice/T.rex;
+Compy/Carno/Anky deler player_full. Runtime viser840 NPC frames i seks states
+og fire retninger. Gait bevares ved vending; korrekt gang/løb-loopperiode;
+kontaktposer følger bid/slam-timing. Corpse6frames afsluttes og fades efter8s.
+Vand/mudder/buske giver terrain-fart; C og ro i buske skjuler efter0,6s.
+Flokalarmer, græsning/hvile, lokale hjem/territorier og8s-træffergrace.
+Klassepriser0/25/55/75DNA, Compy Hunter25%, Anky cooldown0,74s, Momentum
+max24stamina/cast, DNA-priskurve1,4. Se PRIORITIES_1_4.md og balance_audit.json.
+
+60 kernetests+10browserforløb PASS, fuld npmtest inkl. tre historiske kitchecks
+kørt i /tmp/primal-priorities-check. Alle seks PNG-validatorer PASS.
+Officiel GDevelop5.6.283 eksport /tmp/primal-priorities-gdexport-v2 og alle
+10browserforløb PASS,1184ressourcer. Nye rapporter enemy_full_runtime_report,
+terrain_runtime_report og priorities_1_4_runtime_report; ældre rapporter bevaret.
+Art beholder prototype_static/production_approvedfalse/animation_readyfalse.
+Spiltest skal afgøre næste balance- og artfinpudsning;5–8 afventer brugeren.

@@ -18,7 +18,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
  await page.keyboard.press('Escape');await page.locator('[data-action="abandon"]').click();await page.locator('[data-action="menu"]').click();
  await page.evaluate(()=>{primalRun.game.save.dna=200;primalRun.game.persist();});await page.locator('[data-action="species"]').click();
  for(const id of ['utahraptor','carnotaurus','ankylosaurus']){await page.locator('[data-species="'+id+'"]').click();assert.equal(await page.evaluate(()=>primalRun.game.save.selectedSpecies),id);}
- assert.equal(await page.evaluate(()=>primalRun.game.save.dna),30);
+ assert.equal(await page.evaluate(()=>primalRun.game.save.dna),45);
  if(process.env.PRIMAL_VISUAL_DIR)await page.screenshot({path:path.join(process.env.PRIMAL_VISUAL_DIR,'species-menu.png')});
  await page.reload();await page.waitForSelector('[data-action="start"]:not(:disabled)');assert.equal(await page.evaluate(()=>primalRun.game.save.selectedSpecies),'ankylosaurus');await page.locator('[data-action="start"]').click();await page.locator('[data-action="begin"]').click();await page.waitForFunction(()=>document.querySelector('canvas[aria-label]').dataset.playerSpecies==='ankylosaurus');
  await page.keyboard.down('Shift');await page.waitForFunction(()=>primalRun.game.run.pounce>0);await page.keyboard.up('Shift');assert.ok(await page.evaluate(()=>primalRun.game.run.stamina<100));

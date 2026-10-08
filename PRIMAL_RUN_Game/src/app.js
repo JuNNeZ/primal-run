@@ -11,10 +11,10 @@
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
       <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space bider, Shift springer, Escape pauser."></canvas>
       <div class="hud" hidden><div><small>LIV</small><div class="meter health"><i></i></div><b id="health-label"></b></div><div><small>STAMINA</small><div class="meter stamina"><i></i></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
-      <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"></span><span id="skill-label"></span></div>
+      <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"></span><span id="skill-label"></span><span id="terrain-label"></span></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · KØD / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div></main>
       <div class="touch-controls" hidden><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space">ANGREB</button><button data-key="ShiftLeft">EVNE</button><button data-key="KeyE">UNDERSØG</button></div></div>
-      <footer><span><kbd>WASD</kbd> Bevæg · <kbd>SPACE</kbd> Angreb · <kbd>SHIFT</kbd> Evne · <kbd>E</kbd> Undersøg · <kbd>ESC</kbd> Pause</span><span class="save-status"></span></footer>`;
+      <footer><span><kbd>WASD</kbd> Bevæg · <kbd>SPACE</kbd> Angreb · <kbd>SHIFT</kbd> Evne · <kbd>C</kbd> Snig / skjul · <kbd>E</kbd> Undersøg · <kbd>ESC</kbd> Pause</span><span class="save-status"></span></footer>`;
     host.appendChild(shell);
     const canvas = shell.querySelector('canvas'), ctx = canvas.getContext('2d');
     const screen = shell.querySelector('.screen'), images = {}, flashes = {}, skins = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
@@ -49,7 +49,7 @@
         screen.querySelector('[data-action="start"]').disabled = !ready;
       } else if (phase === 'intro') {
         screen.innerHTML = `<section class="panel hunt-intro">${heading('KLAR PÅ 20 SEKUNDER', 'Sådan overlever du')}
-          <dl class="control-guide"><div><dt><kbd>WASD</kbd> / <kbd>↑ ↓ ← →</kbd></dt><dd>Bevæg dig og vend mod dit bytte.</dd></div><div><dt><kbd>SPACE</kbd></dt><dd>Hold for at bide. Du rammer kun foran dig — gå tæt på!</dd></div><div><dt><kbd>SHIFT</kbd> + bevægelse</dt><dd>${C.PLAYER_SPECIES[game.save.selectedSpecies].text}</dd></div><div><dt><kbd>E</kbd></dt><dd>Undersøg fossiler og reder tæt på dig.</dd></div><div><dt><kbd>ESC</kbd></dt><dd>Pause og indstillinger.</dd></div></dl>
+          <dl class="control-guide"><div><dt><kbd>WASD</kbd> / <kbd>↑ ↓ ← →</kbd></dt><dd>Bevæg dig og vend mod dit bytte.</dd></div><div><dt><kbd>SPACE</kbd></dt><dd>Hold for at bide. Du rammer kun foran dig — gå tæt på!</dd></div><div><dt><kbd>SHIFT</kbd> + bevægelse</dt><dd>${C.PLAYER_SPECIES[game.save.selectedSpecies].text}</dd></div><div><dt><kbd>C</kbd></dt><dd>Hold for at snige. Stå stille eller snig i buske i 0,6 sek. for at skjule dig. Angreb og evner afslører dig; bosser lader sig ikke narre.</dd></div><div><dt><kbd>E</kbd></dt><dd>Undersøg fossiler og reder tæt på dig.</dd></div><div><dt><kbd>ESC</kbd></dt><dd>Pause og indstillinger.</dd></div></dl>
           <p class="hunt-goal"><strong>Udforsk kortet → saml kød → vælg mutationer.</strong><br>Du er markeret med ▼ DIG. Farlige dyr har deres artsnavn i rødt, og fredeligt bytte har grønt artsnavn. Kød findes som almindeligt, nærende, sjældent og episk — bedre kvalitet giver mere XP og tæller mere mod kødmålet. Nå kødmålet, besejr bossen, og fortsæt til næste biome. Undvig de røde angrebsvarsler.</p>
           <p class="hunt-goal"><strong>DNA beholdes, når du dør.</strong> Saml DNA fra byttet — bosser giver det altid. Køb permanente upgrades i DNA-laboratoriet før næste jagt.</p>
           <p class="fine">På mobil: brug pileknapperne, ANGREB, EVNE og UNDERSØG under spillet.</p>
@@ -70,7 +70,7 @@
       } else if (phase === 'scores') {
         screen.innerHTML = `<section class="panel">${heading('DE STØRSTE JÆGERE', 'Highscores', 'Din lokale top 10 i denne browser.')}<div class="table-scroll"><table><thead><tr><th>#</th><th>Jæger</th><th>Score</th><th>Bane</th><th>Bosser</th><th>Tid</th></tr></thead><tbody>${game.save.scores.map((s, i) => `<tr><td>${i + 1}</td><td>${htmlEscape(s.name)}${s.victory ? ' ♛' : ''}</td><td>${s.score}</td><td>${s.stage}</td><td>${s.bosses}</td><td>${timeLabel(s.seconds)}</td></tr>`).join('') || '<tr><td colspan="6">Din første jagt venter.</td></tr>'}</tbody></table></div>${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'help') {
-        screen.innerHTML = `<section class="panel">${heading('LÆR AT JAGE', 'Din første jagt')}<ol class="instructions"><li>Bevæg dig med WASD eller piletaster. Hold Space for at angribe. Ankylosaurus slår med halen omkring sig; andre arter bider foran sig.</li><li>Shift bruger din arts evne og stamina. Compy undviger, Utahraptor springer, Carnotaurus stormer og Ankylosaurus går i panserstilling.</li><li>Saml kødet fra dit bytte. Ved level-up vælger du én af tre mutationer.</li><li>Nå kødmålet for at lokke bossen frem. De røde varsler viser dens næste angreb. Angrib, når den hviler.</li><li>DNA har 5 / 15 / 30 % dropchance fra små / mellemstore / store dyr. Bosser giver altid DNA.</li><li>DNA beholdes ved død. Lås nye arter op under Vælg dinosaur, eller køb start-upgrades i laboratoriet. Tryk E ved fossiler og reder; elitevogtere er valgfrie.</li></ol><p class="fine">Fire bosser giver en sejr. Escape pauser. Spillet pauser også, når du skifter fane.</p>${button('menu', '← Klar til jagt', 'primary')}</section>`;
+        screen.innerHTML = `<section class="panel">${heading('LÆR AT JAGE', 'Din første jagt')}<ol class="instructions"><li>Bevæg dig med WASD eller piletaster. Hold Space for at angribe. Ankylosaurus slår med halen omkring sig; andre arter bider foran sig.</li><li>Shift bruger din arts evne og stamina. Compy undviger, Utahraptor springer, Carnotaurus stormer og Ankylosaurus går i panserstilling.</li><li>Vand og mudder sænker dig. Hold C i buske for at skjule dig; angreb afslører dig. Rovdyr advarer ved deres territorier, og flokke alarmerer hinanden.</li><li>Saml kødet fra dit bytte. Ved level-up vælger du én af tre mutationer.</li><li>Nå kødmålet for at lokke bossen frem. De røde varsler viser dens næste angreb. Angrib, når den hviler.</li><li>DNA har 5 / 15 / 30 % dropchance fra små / mellemstore / store dyr. Bosser giver altid DNA.</li><li>DNA beholdes ved død. Lås nye arter op under Vælg dinosaur, eller køb start-upgrades i laboratoriet. Tryk E ved fossiler og reder; elitevogtere er valgfrie.</li></ol><p class="fine">Fire bosser giver en sejr. Escape pauser. Spillet pauser også, når du skifter fane.</p>${button('menu', '← Klar til jagt', 'primary')}</section>`;
       } else if (phase === 'paused') {
         screen.innerHTML = `<section class="panel compact">${heading('TAG EN PAUSE', 'Jagten venter', 'Kort-seed: ' + r.seed)}${button('resume', 'FORTSÆT · Esc', 'primary')}<div class="actions">${button('settings', 'Indstillinger')}${button('abandon', 'Afslut run')}</div><p class="fine">Opsamlet DNA er allerede gemt. Afslut run registrerer din score.</p></section>`;
       } else if (phase === 'mutation') {
@@ -174,9 +174,11 @@
       if (stage === 3) {
         trace(map.river); ctx.strokeStyle = '#54282d'; ctx.lineWidth = 42; ctx.stroke(); ctx.strokeStyle = '#c6663c'; ctx.lineWidth = 14; ctx.stroke(); ctx.strokeStyle = '#de954a'; ctx.lineWidth = 4; ctx.stroke();
       }
+      for(const p of map.mud||[]){ctx.beginPath();ctx.ellipse(p.x,p.y,p.rx,p.ry,0,0,Math.PI*2);texturedFill('dirt','#674333',.18);ctx.strokeStyle='#913b3266';ctx.lineWidth=2;ctx.stroke();}
       ctx.fillStyle = '#151b1966'; ctx.fillRect(0, 0, map.width, 76); ctx.fillRect(0, map.height - 42, map.width, 42); ctx.fillRect(0, 0, 42, map.height); ctx.fillRect(map.width - 42, 0, 42, map.height);
     }
-    function enemyLabelOffset(e){return (['deinosuchus','tyrannosaurus'].includes(e.kind)?96:64)*(e.visualScale||1)+12;}
+    function enemyLabelOffset(e){return 72*(e.visualScale||1)+12;}
+    function enemyFrame(kind,state,direction,frame){return 'assets/'+(['compy','carnotaurus','ankylosaurus'].includes(kind)?'player_full/':'enemy_full/')+kind+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';}
     function label(text, x, y, color) {
       ctx.font = 'bold 11px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713';
       ctx.strokeText(text, Math.round(x), Math.round(y)); ctx.fillStyle = color; ctx.fillText(text, Math.round(x), Math.round(y));
@@ -245,13 +247,13 @@
       }
       if (r) {
         for (const e of r.enemies) {
-          let state = 'idle';
-          if (['charge', 'bite', 'slam'].includes(e.mode) || (e.mode === 'windup' && e.timer < e.windupDuration * .5)) state = 'action';
-          else if (e.moving) state = (e.mode === 'flee' ? ['step_left', 'action', 'step_right', 'action'] : ['idle', 'step_left', 'idle', 'step_right'])[Math.min(3, Math.floor(e.walk * 8))];
-          const candidate = 'assets/enemy_animations/' + e.kind + '_' + state + '_' + e.direction + '_000.png';
-          const path = catalog[candidate] ? candidate : 'assets/enemies/' + e.kind + '_idle_S_000.png';
-          objects.push({ ...e, enemy: e, path, rotation: catalog[candidate] ? 0 : { S: 0, W: Math.PI / 2, N: Math.PI, E: -Math.PI / 2 }[e.direction] });
+          const attacking=['charge','bite','slam'].includes(e.mode), winding=e.mode==='windup';
+          const state=attacking||winding?'attack':e.hit>0?'hurt':e.moving?(e.mode==='flee'||e.mode==='burst'?'run':'walk'):'idle';
+          const frame=state==='attack'?(winding?Math.min(2,Math.floor((1-e.timer/(e.windupDuration||.6))*3)):(e.mode==='charge'?Math.min(5,3+Math.max(0,Math.floor((1-e.timer/(e.boss?(e.kind==='carnotaurus'&&r.stage===0?.58:.65):.55))*3))):e.timer>(e.boss?.12:.1)?2:Math.min(5,3+Math.floor((1-e.timer/(e.boss?.12:.1))*3)))):state==='hurt'?Math.min(1,Math.floor((.15-e.hit)*8)):state==='idle'?Math.floor(e.poseTime*4)%4:Math.floor(e.walk*(state==='run'?12:8))%6;
+          const path=enemyFrame(e.kind,state,e.direction,frame);
+          objects.push({...e,enemy:e,path,rotation:0});
         }
+        for(const corpse of r.corpses||[])objects.push({...corpse,corpse:true,path:enemyFrame(corpse.kind,'death',corpse.direction,Math.min(5,Math.floor(corpse.age*8)))});
         const p = r.player, frame = String(Math.min(5, Math.floor(p.walk * 8))).padStart(3, '0');
         let playerPath = 'assets/player/utahraptor_' + (p.moving ? 'walk_' : 'idle_') + p.facing + '_' + (p.moving ? frame : '000') + '.png';
         if (r.attack) {
@@ -259,7 +261,7 @@
           const attackPath = 'assets/player_combat/utahraptor_bite_' + r.attack.facing + '_' + String(attackFrame).padStart(3, '0') + '.png';
           if (catalog[attackPath]) playerPath = attackPath;
         }
-        const animationState = r.deathTime >= 0 ? 'death' : r.hurt > 0 ? 'hurt' : r.attack ? 'attack' : p.moving ? (r.pounce > 0 ? 'run' : 'walk') : 'idle';
+        const animationState = r.deathTime >= 0 ? 'death' : r.attack ? 'attack' : r.hurt > 0 ? 'hurt' : p.moving ? (r.pounce > 0 ? 'run' : 'walk') : 'idle';
         const animationDirection = r.attack && animationState === 'attack' ? r.attack.facing : p.facing;
         const animationFrame = animationState === 'death' ? Math.min(5, Math.floor(r.deathTime * 8)) : animationState === 'hurt' ? Math.min(1, Math.floor((.25 - r.hurt) * 8)) : animationState === 'attack' ? Math.min(5, Math.floor(r.attack.elapsed / r.attack.duration * 6)) : animationState === 'idle' ? Math.floor(r.seconds * 4) % 4 : Math.floor(p.walk * (animationState === 'run' ? 12 : 8)) % 6;
         const fullPath = 'assets/player_full/' + r.species + '_' + animationState + '_' + animationDirection + '_' + String(animationFrame).padStart(3, '0') + '.png';
@@ -280,10 +282,11 @@
         if (o.x < view.x - 160 || o.y < view.y - 160 || o.x > view.x + canvas.width + 160 || o.y > view.y + canvas.height + 160) continue;
         if (o.player || o.enemy) { ctx.strokeStyle = o.player ? '#69a4a0' : o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869' : '#8eaa60'; ctx.lineWidth = o.player ? 4 : 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), o.player ? 24 : o.enemy.boss ? o.radius + 14 : o.radius + 6, 10, 0, 0, Math.PI * 2); ctx.stroke(); }
         if (o.enemy && o.enemy.boss) { ctx.strokeStyle = '#e9b75a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), 35, 17, 0, 0, Math.PI * 2); ctx.stroke(); }
-        const alpha = o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
+        const alpha = o.corpse ? Math.min(1,(8-o.age)/2) : o.player && r.hidden ? .6 : o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
         sprite(o.path, o.x, o.y, alpha, false, o.rotation, o.visualScale || 1);
         if (o.player && r.jonas) { ctx.fillStyle = '#e9b75a'; const x = Math.round(o.x), y = Math.round(o.y) - 46; ctx.fillRect(x - 9, y, 18, 5); ctx.fillRect(x - 9, y - 5, 4, 5); ctx.fillRect(x - 2, y - 7, 4, 7); ctx.fillRect(x + 5, y - 5, 4, 5); }
         if (o.enemy) label((o.enemy.mode === 'return' ? '↩ ' : o.enemy.boss ? '◆ ' : o.enemy.elite ? '★ ' : o.enemy.rare ? '✦ ' : '') + C.SPECIES_LABELS[o.enemy.kind], o.x, o.y - enemyLabelOffset(o.enemy), o.enemy.damage ? '#ed7869' : '#8eaa60');
+        if(o.enemy&&!o.enemy.alert&&['graze','rest','warning'].includes(o.enemy.mode))label(({graze:o.enemy.kind==='parasaurolophus'?'GRÆSSER':'SØGER FØDE',rest:'HVILER',warning:'TERRITORIUM · HOLD AFSTAND'})[o.enemy.mode],o.x,o.y-enemyLabelOffset(o.enemy)-18,o.enemy.mode==='warning'?'#e9b75a':'#b6c0a9');
         if (o.enemy && o.enemy.boss) {
           if (o.enemy.mode === 'recover') {
             const e = o.enemy; ctx.strokeStyle = '#a2d4c1'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(Math.round(e.x - e.facingX * 24), Math.round(e.y - e.facingY * 24), 18, 0, Math.PI * 2); ctx.stroke(); label('ÅBEN FLANKE · +50 %', e.x, e.y - enemyLabelOffset(e) - 18, '#a2d4c1');
@@ -317,6 +320,7 @@
       shell.querySelector('.health i').style.width = Math.max(0, 100 * r.health / r.maxHealth) + '%';
       shell.querySelector('#health-label').textContent = Math.ceil(r.health) + '/' + Math.ceil(r.maxHealth);
       shell.querySelector('.stamina i').style.width = r.stamina + '%';
+      canvas.dataset.surface=r.surface;canvas.dataset.hidden=String(r.hidden);shell.querySelector('#terrain-label').textContent=r.hidden?'SKJULT · angrib for at afsløre dig':({water:'VAND · 60 % fart',mud:'MUDDER · 75 % fart',bush:'BUSKE · stå stille / hold C',ground:''})[r.surface];
       shell.querySelector('#biome-label').textContent = 'BANE ' + (r.stage + 1) + ' · ' + C.STAGES[r.stage].name;
       shell.querySelector('#meat-label').textContent = r.bossSpawned ? 'BOSSEN ER HER' : r.meat + ' / ' + C.STAGES[r.stage].target + ' KØD';
       const progress = shell.querySelector('.meat-progress'), percent = Math.min(100, Math.floor(r.xp / r.nextXP * 100));
@@ -339,7 +343,7 @@
       if (game.phase === 'result' && game.run.deathTime >= 0) game.run.deathTime = Math.min(.75, game.run.deathTime + dt);
       if (ready && game.phase === 'playing') {
         while (accumulator >= 1 / 60 && game.phase === 'playing') {
-          game.step(1 / 60, { x: (keys.has('KeyD') || keys.has('ArrowRight') ? 1 : 0) - (keys.has('KeyA') || keys.has('ArrowLeft') ? 1 : 0), y: (keys.has('KeyS') || keys.has('ArrowDown') ? 1 : 0) - (keys.has('KeyW') || keys.has('ArrowUp') ? 1 : 0), attack: keys.has('Space'), interact: keys.has('KeyE'), pounce: keys.has('ShiftLeft') || keys.has('ShiftRight') });
+          game.step(1 / 60, { x: (keys.has('KeyD') || keys.has('ArrowRight') ? 1 : 0) - (keys.has('KeyA') || keys.has('ArrowLeft') ? 1 : 0), y: (keys.has('KeyS') || keys.has('ArrowDown') ? 1 : 0) - (keys.has('KeyW') || keys.has('ArrowUp') ? 1 : 0), sneak: keys.has('KeyC'), attack: keys.has('Space'), interact: keys.has('KeyE'), pounce: keys.has('ShiftLeft') || keys.has('ShiftRight') });
           accumulator -= 1 / 60;
         }
       } else accumulator = 0;
@@ -409,7 +413,7 @@
           for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[pixels.data[i],pixels.data[i+1],pixels.data[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('');const color=mapping[key];if(color){pixels.data[i]=parseInt(color.slice(0,2),16);pixels.data[i+1]=parseInt(color.slice(2,4),16);pixels.data[i+2]=parseInt(color.slice(4,6),16);}}
           lc.putImageData(pixels,0,0);skins[path]=layer;
         }
-        if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/'))) {
+        if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/') || path.startsWith('assets/enemy_full/') || path.startsWith('assets/player_full/'))) {
           const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
           const tintCtx = tint.getContext('2d'); tintCtx.drawImage(image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';
           tintCtx.fillStyle = '#fff1c9'; tintCtx.fillRect(0, 0, tint.width, tint.height); flashes[path] = tint;

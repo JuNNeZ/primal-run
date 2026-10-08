@@ -25,6 +25,9 @@ def build():
     full_overlay = GAME / 'player_full_manifest.json'
     if full_overlay.exists():
         manifest += json.loads(full_overlay.read_text(encoding='utf-8'))
+    enemy_full_overlay = GAME / 'enemy_full_manifest.json'
+    if enemy_full_overlay.exists():
+        manifest += json.loads(enemy_full_overlay.read_text(encoding='utf-8'))
     ecology_overlay = GAME / 'ecology_manifest.json'
     if ecology_overlay.exists():
         manifest += json.loads(ecology_overlay.read_text(encoding='utf-8'))
@@ -62,6 +65,12 @@ def build():
         animations['animations'] += full['animations']
         animations['player_full_frame_plan'] = full['frame_plan_exception']
         (GAME / 'animation_manifest.json').write_text(json.dumps(animations, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    enemy_full = GAME / 'enemy_full_animations.json'
+    if enemy_full.exists():
+        animations = json.loads((GAME / 'animation_manifest.json').read_text())
+        animations['animations'] += json.loads(enemy_full.read_text())['animations']
+        animations['enemy_full_frame_plan'] = 'idle4/walk6/run6/attack6/hurt2/death6 in separately drawn cardinal directions; shared playable sets for Compy, Carnotaurus and Ankylosaurus.'
+        (GAME / 'animation_manifest.json').write_text(json.dumps(animations, indent=2)+'\n')
     assets = {entry['file']: {'origin': entry['origin'], 'size': entry['size']} for entry in manifest}
     asset_code = 'globalThis.PrimalAssets = ' + json.dumps(assets, ensure_ascii=False, separators=(',', ':')) + ';\n'
     (GAME / 'src/assets.js').write_text(asset_code, encoding='utf-8')

@@ -35,7 +35,7 @@ test('mutation pool contains shared and own mutations, never another species ski
   for(const m of C.MUTATIONS)if(!m.species)g.run.mutations[m.id]=m.max;
   g.addXP(6);assert.equal(g.phase,'mutation');assert.ok(g.run.choices.length>=2);assert.ok(g.run.choices.every(id=>own.some(m=>m.id===id)));
  }
- const g=make('compy'),e=g.spawn('parasaurolophus',{x:520,y:340});g.run.mutations.hunter=2;g.resolveBite('E');assert.ok(Math.abs(e.hp-(30-6*1.7))<1e-8);
+ const g=make('compy'),e=g.spawn('parasaurolophus',{x:520,y:340});g.run.mutations.hunter=2;g.resolveBite('E');assert.ok(Math.abs(e.hp-(30-6*1.5))<1e-8);
 });
 test('fossils award permanent DNA once; nest choice freezes every simulation field and wakes preplaced guardian',()=>{
  const g=make(),r=g.run, fossil=r.map.sites.find(s=>s.type==='fossil');r.player.x=fossil.x;r.player.y=fossil.y;assert.equal(g.interact(),true);assert.equal(g.save.dna,3);assert.equal(g.interact(),false);

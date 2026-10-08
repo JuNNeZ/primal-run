@@ -1,0 +1,14 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),C=require('../PRIMAL_RUN_Game/src/core.js');
+// Stationary targets isolate timing/damage from navigation. These are repeatable
+// comparisons, not claims about player win rates or final difficulty.
+function trial(species,target,mutations={}){
+ const g=new C.Game({random:()=>.99});g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:71});const r=g.run;r.enemies=[];r.spawnTimer=999;r.map.rocks=[];r.map.mud=[];r.map.cover=[];r.map.sites=[];r.player.facing='E';Object.assign(r.mutations,mutations);
+ const e=g.spawn(target,{x:520,y:340});g.enemyStep=()=>{};let elapsed=0,hits=0;const old=g.resolveBite.bind(g);g.resolveBite=d=>{hits++;old(d);};
+ while(r.kills===0&&elapsed<30){e.x=520;e.y=340;e.stagger=0;g.step(1/60,{attack:true});elapsed+=1/60;}
+ return {timeToKill:+elapsed.toFixed(2),attacks:hits};
+}
+const classes=Object.fromEntries(Object.entries(C.PLAYER_SPECIES).map(([id,c])=>[id,{hp:c.hp,speed:c.speed,unlockDNA:c.cost,baseDPS:+(c.damage/c.cooldown).toFixed(2),prey:trial(id,'parasaurolophus'),predator:trial(id,'carnotaurus'),armoured:trial(id,'ankylosaurus'),sharedOffence:trial(id,'carnotaurus',{teeth:3,quick:3})}]));
+const progression={guaranteedBossDNA:C.STAGES.map(s=>s.dna),cumulativeBossDNA:C.STAGES.map((_,i)=>C.STAGES.slice(0,i+1).reduce((sum,s)=>sum+s.dna,0)),expectedDropDNA:Object.fromEntries(Object.entries(C.SPECIES).map(([id,s])=>[id,+(s.chance*s.dna).toFixed(2)])),note:'Fossils and optional elites add guaranteed rewards; ordinary drops are random. Banked DNA survives death.'};
+const result={progression,scope:'Deterministic primary attacks against stationary prey, predator and rear-armoured target. Includes contact time, hit-stop, cooldown and bleed; excludes enemy retaliation and navigation. Human playtesting still required.',classes,upgradeCosts:Array.from({length:10},(_,i)=>C.upgradeCost(i)),mutationChecks:{compyHunter:trial('compy','parasaurolophus',{hunter:3}),compyCombined:trial('compy','parasaurolophus',{hunter:3,teeth:3,quick:3}),utahBleed:trial('utahraptor','carnotaurus',{bleed:3}),utahAmbush:trial('utahraptor','parasaurolophus',{ambush:3})},adjustments:['Carnotaurus unlock60→55 DNA; Ankylosaurus85→75 DNA','Ankylosaurus cooldown0.8→0.74s; retains slow travel and surrounding tail hit','Compy Hunter35→25%/rank, additive with shared damage','Carnotaurus Momentum maximum24 stamina refund/cast; cannot make35-cost charge free through a herd','DNA upgrade exponent1.5→1.4; first purchase10 unchanged','Bleed UI clarifies fixed3-second duration refreshed by bites; maximum9damage/s at rank3']};
+fs.writeFileSync(path.resolve(__dirname,'../PRIMAL_RUN_Game/balance_audit.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));

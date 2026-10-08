@@ -221,7 +221,7 @@ test('map exploration follows world bounds; reinforcements and bosses never spaw
   }
   r.player.x = 1600; r.player.y = 900; g.setView(390, 600); assert.equal(r.view.x, 1405);
   const e = g.spawn('compy', { x: 2400, y: 1400 }), start = { x: e.x, y: e.y };
-  g.enemyStep(e, .05); assert.equal(e.mode, 'wander'); assert.ok(Math.hypot(e.x - start.x, e.y - start.y) < 2);
+  g.enemyStep(e, .05); assert.ok(['rest','roam','graze'].includes(e.mode)); assert.ok(Math.hypot(e.x - start.x, e.y - start.y) < 2);
   r.enemies = [e]; r.player.x = e.x - 100; r.player.y = e.y; g.enemyStep(e, .05); assert.equal(e.mode, 'chase'); assert.equal(e.direction, 'W');
   r.player.x = 2800; g.move(r.player, 9999, 0); assert.equal(r.player.x, r.map.width - 58);
 });

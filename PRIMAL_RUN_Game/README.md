@@ -371,3 +371,11 @@ Se music_manifest.json og adaptive_runtime_report.json for temaer og separate
 browser/GDevelop-resultater, herunder faktiske renderede lydkurver og Space-tests.
 De tidligere runtime-rapporter beskriver deres tidligere leverancer; den nye
 rapport tester også alle eksisterende gameplay- og animationssuiter.
+
+## Spiltest: prioritet1–4
+
+Se [ændringer og controls](PRIORITIES_1_4.md), [komplette fjendeframes](enemy_full_review.html)
+og [balanceaudit](balance_audit.json). C sniger; buske kan skjule. Vand/mudder
+påvirker fart. Flokke deler alarmer, og territoriale dyr vender hjem.
+Alle syv fjendearter har seks animationsstates i fire retninger.
+Prioritet5–8 afventer brugerens spiltest.

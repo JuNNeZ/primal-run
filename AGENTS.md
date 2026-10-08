@@ -47,6 +47,9 @@ are in tests/enemy-animation-browser.cjs and the enemy runtime report.
 For complete playable animation sets also read PRIMAL_RUN_Game/SPRITE_RULES_PLAYER_FULL.md.
 Keep the overlay under assets/player_full, use tools/export_player_full.py and
 validate with tools/validate_player_full.py. Preserve legacy player/enemy art.
+For full remaining NPC sequences also read PRIMAL_RUN_Game/SPRITE_RULES_ENEMY_FULL.md.
+Use tools/export_enemy_full.py and tools/validate_enemy_full.py; preserve legacy
+overlays and share existing player_full frames for Compy/Carno/Anky NPCs.
 For ecology assets and runtime species colours read PRIMAL_RUN_Game/SPRITE_RULES_ECOLOGY.md.
 Keep sources intact, use tools/export_ecology.py and tools/validate_ecology.py,
 and include native light/dark previews, manifest and separate runtime evidence.

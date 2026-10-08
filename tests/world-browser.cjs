@@ -44,7 +44,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
         return { view: r.view, map: { width: r.map.width, height: r.map.height }, canvas: { width: c.width, height: c.height }, box: { width: box.width, height: box.height }, cameraX: +c.dataset.cameraX, prey: r.enemies[0].direction, hunter: r.enemies[1].direction, xp: document.querySelector('.meat-progress').textContent, bodyWidth: document.body.scrollWidth, bodyHeight: document.body.scrollHeight };
       });
       assert.ok(state.view.x > 0 && state.view.y > 0); assert.equal(state.cameraX, state.view.x);
-      assert.ok(await page.evaluate(() => spriteRotations.includes(Math.PI / 2)), 'legacy boss sprite rotates around its body anchor without smoothing');
+      assert.ok(await page.evaluate(() => !spriteRotations.includes(Math.PI / 2)), 'full cardinal enemy frames do not rotate the body or lighting');
       assert.equal(state.prey, 'E', 'fleeing animal faces away'); assert.equal(state.hunter, 'E', 'hunter faces toward player');
       assert.ok(Math.abs(state.box.width / state.canvas.width - state.box.height / state.canvas.height) < .01, 'square pixels across viewport');
       assert.ok(state.bodyWidth <= width && state.bodyHeight <= height, 'no page overflow');

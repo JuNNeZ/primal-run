@@ -8,8 +8,12 @@ kød/levels, fælles og artsmutationer, permanente DNA-unlocks og upgrades,
 startmenu, lokale highscores, lydindstillinger og original proceduremusik.
 Den fælles spilkerne kører i browseren og i et GDevelop 5-projekt.
 
-Fire fjendearter har nu gang/action-studier i fire retninger og forskellig AI.
-[Se fjendeanimationerne](PRIMAL_RUN_Game/enemy_review.html).
+Alle syv fjendearter har komplette serier for idle, gang, løb, angreb, skade
+og død i fire retninger:840 runtime-frames, heraf480 nye.
+[Se fjendeanimationerne](PRIMAL_RUN_Game/enemy_full_review.html).
+Vand/mudder sænker bevægelse; hold C i buske for at snige/skjule dig.
+Flokke alarmerer hinanden, bytte græsser/hviler, og rovdyr har territorier.
+[Spiltest og balanceændringer1–4](PRIMAL_RUN_Game/PRIORITIES_1_4.md).
 
 Alle fire spilbare arter har 480 nye frames: idle, gang, løb, angreb, skade og død
 i fire retninger. [Se spilleranimationerne](PRIMAL_RUN_Game/player_full_review.html).

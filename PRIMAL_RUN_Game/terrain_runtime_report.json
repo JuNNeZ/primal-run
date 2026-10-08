@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "runtime": "official GDevelop GDJS5.6.283",
+  "checks": [
+    "actual C+movement preserves hidden state",
+    "Space reveals without selecting overlays",
+    "concealment HUD",
+    "mud/water HUD matches core surface",
+    "pause freezes environment and corpses"
+  ],
+  "production_approved": false
+}
