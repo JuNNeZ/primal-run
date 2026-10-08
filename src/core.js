@@ -114,7 +114,15 @@
   function createMap(stage, seed = 1) {
     const random = seeded((seed ^ Math.imul(stage + 1, 2654435761)) >>> 0);
     const width = 2880 + stage * 320, height = 1920 + stage * 256;
-    const rocks = ROCKS.map(r => ({ ...r })), decorations = [], habitats = [], clearings = [], regions = [], trails = [], sites = [];
+    const rocks = [], decorations = [], habitats = [], clearings = [], regions = [], trails = [], sites = [];
+    const layout=Math.floor(random()*3),groves=[];
+    for(let i=0;i<6+layout*2;i++)groves.push({x:Math.round(180+random()*(width-360)),y:Math.round(180+random()*(height-360)),radius:150+Math.round(random()*210),kind:i%3});
+    // Opening formations change too: never a fixed four-rock tutorial square.
+    for(let i=0;i<5+layout;i++){
+      const angle=random()*Math.PI*2,distance=170+random()*330,x=Math.round(480+Math.cos(angle)*distance),y=Math.round(340+Math.sin(angle)*distance);
+      if(x<80||y<105||x>width-80||y>height-80||Math.hypot(x-480,y-340)<150||rocks.some(r=>Math.hypot(x-r.x,y-r.y)<100))continue;
+      rocks.push({x,y,radius:22});
+    }
     const safe = (x, y, radius = 650) => Math.hypot(x - 480, y - 340) > radius;
     for (let y = 240; y < height - 160; y += 320) for (let x = 240; x < width - 160; x += 360) {
       const px = x + (random() - .5) * 180, py = y + (random() - .5) * 150;
@@ -126,22 +134,32 @@
       if (!safe(x, y, 700) || habitats.some(h => Math.hypot(x - h.x, y - h.y) < 85) || rocks.some(r => Math.hypot(x - r.x, y - r.y) < 110)) continue;
       rocks.push({ x: Math.round(x), y: Math.round(y), radius: 22 });
     }
+    for(const grove of groves)regions.push({...grove,seed:random()*100});
     for (let i = 0; i < 28; i++) regions.push({ x: Math.round(random() * width), y: Math.round(random() * height), radius: 90 + random() * 170, seed: random() * 100 });
-    const river = Array.from({ length: 7 }, (_, i) => ({ x: Math.round(width * (.66 + random() * .2)), y: height * i / 6 }));
+    const horizontal=random()<.5,riverOffset=.48+random()*.25;
+    const river=Array.from({length:7},(_,i)=>horizontal?{x:Math.round(width*i/6),y:Math.round(height*(riverOffset+(random()-.5)*.14))}:{x:Math.round(width*(riverOffset+(random()-.5)*.14)),y:Math.round(height*i/6)});
+    if(stage===1)for(let i=1;i<river.length;i++){
+      const a=river[i-1],b=river[i],dx=b.x-a.x,dy=b.y-a.y,length=Math.hypot(dx,dy);
+      for(const side of [-1,1]){const x=Math.round((a.x+b.x)/2-dy/length*95*side),y=Math.round((a.y+b.y)/2+dx/length*95*side);if(x>80&&x<width-80&&y>110&&y<height-80&&safe(x,y))habitats.push({x,y,roll:.99});}
+    }
     const habitatMap={river};
     const props = stage === 0 ? ['fern_large', 'fern_large', 'fern_large', 'tree_canopy', 'flower_bush', 'fallen_log'] : stage === 1 ? ['fern_large', 'fern_large', 'flower_bush', 'tree_canopy', 'fallen_log'] : stage === 2 ? ['fern_large', 'fern_large', 'boulder_large', 'dead_tree', 'flower_bush'] : ['fern_large', 'lava_rock', 'dead_tree', 'ribcage', 'meteorite'];
     const count = [850, 850, 600, 450][stage];
+    const foliagePoint=()=>{
+      if(random()<[.75,.5,.85][layout]){const grove=groves[Math.floor(random()*groves.length)],angle=random()*Math.PI*2,radius=Math.sqrt(random())*grove.radius;return {x:Math.round(Math.max(70,Math.min(width-70,grove.x+Math.cos(angle)*radius))),y:Math.round(Math.max(90,Math.min(height-90,grove.y+Math.sin(angle)*radius)))};}
+      return {x:Math.round(70+random()*(width-140)),y:Math.round(90+random()*(height-180))};
+    };
     for (let i = 0; i < count; i++) {
-      const x = Math.round(70 + random() * (width - 140)), y = Math.round(90 + random() * (height - 180));
+      const {x,y}=foliagePoint();
       if (Math.hypot(x - 480, y - 340) < 65) continue;
       const prop = props[Math.floor(random() * props.length)];
       if(stage===3 && riverDistance(habitatMap,{x,y})<100) continue;
       decorations.push({ x, y, path: 'assets/props/' + prop + '.png', canopy: prop === 'tree_canopy', foliage: ['fern_large', 'flower_bush', 'tree_canopy'].includes(prop) });
     }
-    if (stage < 3) for (let i = 0; i < 500; i++) decorations.push({ x: Math.round(70 + random() * (width - 140)), y: Math.round(90 + random() * (height - 180)), path: 'assets/environment/fern.png', foliage: true });
+    if(stage<3)for(let i=0;i<500;i++){const p=foliagePoint();if(Math.hypot(p.x-480,p.y-340)>65)decorations.push({...p,path:'assets/environment/fern.png',foliage:true});}
     const ecology=BIOMES[stage];
     for(let i=0;i<420;i++) {
-      const x=Math.round(70+random()*(width-140)),y=Math.round(90+random()*(height-180));
+      const {x,y}=foliagePoint();
       if(Math.hypot(x-480,y-340)<65 || stage===3 && riverDistance(habitatMap,{x,y})<145) continue;
       let plant=ecology.plants[Math.floor(random()*ecology.plants.length)];
       if(stage===1 && riverDistance(habitatMap,{x,y})<170) plant=random()<.6?'reeds':'horsetail';
@@ -159,7 +177,7 @@
       const h = habitats[Math.floor((i + .5) / 6 * habitats.length)];
       sites.push({ id: i, type: i % 3 === 0 ? 'fossil' : i % 3 === 1 ? 'nest' : 'rare', x: h.x, y: h.y, claimed: false, discovered: false });
     }
-    return { seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites, ambience };
+    return { seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites, ambience, layout, groves, riverOrientation:horizontal?'horizontal':'vertical' };
   }
   const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
   const finite = (n, fallback = 0) => typeof n === 'number' && Number.isFinite(n) ? n : fallback;
@@ -226,8 +244,12 @@
     }
     populate() {
       const r = this.run;
-      this.spawn('compy', { x: 420, y: 245 }); this.spawn('compy', { x: 575, y: 350 });
-      this.spawn('parasaurolophus', { x: 640, y: 225 });
+      const openingRandom=seeded(r.seed^Math.imul(r.stage+1,1234567));
+      for(const kind of ['compy','compy','parasaurolophus'])for(let attempt=0;attempt<32;attempt++){
+        const angle=openingRandom()*Math.PI*2,distance=110+openingRandom()*160,point={x:Math.round(480+Math.cos(angle)*distance),y:Math.round(340+Math.sin(angle)*distance)};
+        if(point.x<65||point.y<100||r.map.rocks.some(rock=>Math.hypot(point.x-rock.x,point.y-rock.y)<70))continue;
+        this.spawn(kind,point);break;
+      }
       const pool = r.stage === 0 ? ['compy', 'parasaurolophus', 'compy'] : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'ankylosaurus', 'carnotaurus', 'triceratops'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];
       r.map.habitats.forEach((p, i) => {
         const eligible=pool.filter(kind=>suitableHabitat(r.stage,r.map,kind,p));

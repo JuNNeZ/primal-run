@@ -345,7 +345,7 @@
       } else accumulator = 0;
       if (game.phase !== phaseBefore) accumulator = 0;
       for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast(['FASE 2 · Dobbelt stormløb og tramp!', 'FASE 2 · Hurtigere baghold og stor halebølge!', 'FASE 2 · Dobbelt hornstorm!', 'FASE 2 · Dobbeltbid og brøl!'][game.run.stage]); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if (event.type === 'dna') toast('+' + event.amount + ' DNA · gemt'); }
-      audio.intensity = game.phase === 'playing' ? (game.run.bossSpawned ? 'boss' : 'hunt') : game.phase === 'paused' ? 'paused' : 'menu'; audio.sync();
+      const musicRun=game.run;audio.setScene({phase:game.phase==='settings'&&returnPhase==='paused'?'paused':game.phase,stage:musicRun?musicRun.stage:0,boss:!!(musicRun&&musicRun.bossSpawned&&!musicRun.bossDefeated),health:musicRun?musicRun.health:1,maxHealth:musicRun?musicRun.maxHealth:1,victory:!!(musicRun&&musicRun.result&&musicRun.result.victory)});audio.sync();
       renderScreen(); draw();
       shell.querySelector('.toast').hidden = now > toastUntil;
       shell.querySelector('.save-status').textContent = game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · kun denne session';
@@ -389,12 +389,13 @@
         renderScreen(); return;
       }
       if (game.phase === 'mutation' && /^Digit[123]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); keys.clear(); accumulator = 0; last = 0; renderScreen(); return; }
+      if(e.code==='Space'){e.preventDefault();if(game.phase!=='playing'){keys.delete('Space');return;}}
       if (game.phase !== 'playing') return;
       if (e.code === 'KeyE' && !e.repeat) { e.preventDefault(); game.interact(); accumulator = 0; renderScreen(); return; }
       if (['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) e.preventDefault();
       keys.add(e.code);
     });
-    listen(window, 'keyup', e => keys.delete(e.code));
+    listen(window, 'keyup', e => {if(e.code==='Space'&&!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName))e.preventDefault();keys.delete(e.code);});
     const unfocus = () => { keys.clear(); accumulator = 0; last = 0; game.pause(); renderScreen(); };
     listen(window, 'blur', unfocus); listen(document, 'visibilitychange', () => { if (document.hidden) unfocus(); });
     listen(shell, 'pointerdown', e => { audio.unlock(); const target = e.target.closest('[data-key]'); if (!target || game.phase !== 'playing') return; e.preventDefault(); target.setPointerCapture(e.pointerId); keys.add(target.dataset.key); });
