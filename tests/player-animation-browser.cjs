@@ -9,6 +9,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     const url = process.env.PRIMAL_GAME_URL || await localURL(path.resolve(__dirname, '../PRIMAL_RUN_Game/index.html'));
     await page.goto(url); await page.waitForFunction(() => window.primalRun && document.querySelector('[data-action="start"]:not(:disabled)'));
     await page.locator('[data-action="start"]').click();
+    await page.locator('[data-action="begin"]').click();
     const result = await page.evaluate(() => {
       const g = primalRun.game, r = g.run, canvas = document.querySelector('canvas[aria-label]'), ctx = canvas.getContext('2d');
       const calls = [], original = ctx.drawImage;
