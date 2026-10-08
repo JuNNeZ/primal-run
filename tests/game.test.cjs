@@ -48,6 +48,22 @@ test('mutation choices are distinct, pause simulation, and queued levels resolve
   resolveMutations(g); assert.equal(r.level, 4); assert.equal(g.phase, 'playing');
   assert.equal(Object.values(r.mutations).reduce((a, b) => a + b, 0), 3);
 });
+test('mutation menu freezes enemies, attacks, pickups and damage; choosing grants brief protection', () => {
+  const g = make(), r = g.run;
+  r.health = 1; r.invulnerable = 0;
+  const enemy = g.spawn('carnotaurus', { x: r.player.x, y: r.player.y });
+  enemy.mode = 'charge'; enemy.timer = .5; enemy.chargeX = 1; enemy.chargeY = 0;
+  g.attack(); g.addXP(r.nextXP);
+  const frozen = JSON.stringify(r);
+  for (let i = 0; i < 200; i++) { g.step(.05, { x: 1, attack: true, pounce: true }); g.damage(999); }
+  assert.equal(JSON.stringify(r), frozen, 'entire world remains unchanged while choosing');
+  g.choose(r.choices.find(id => id !== 'heart'));
+  assert.equal(g.phase, 'playing'); assert.equal(r.invulnerable, 1);
+  g.damage(999); assert.equal(r.health, 1, 'safe immediately after choosing');
+  r.enemies = []; r.attack = null;
+  for (let i = 0; i < 21; i++) g.step(.05);
+  g.damage(999); assert.equal(g.phase, 'result', 'protection ends after one second');
+});
 test('DNA rolls use species chances and pickups are banked once, surviving reload/death', () => {
   const s = storage(), g = make(() => .04, s), r = g.run;
   g.spawn('compy', { x: 480, y: 340 }).hp = 0; tick(g); tick(g);

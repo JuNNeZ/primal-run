@@ -52,7 +52,12 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     await page.evaluate(() => { primalRun.game.addXP(6); });
     await page.waitForSelector('[data-mutation]');
     assert.equal(await page.locator('[data-mutation]').count(), 3);
+    const frozenMutation = await page.evaluate(() => JSON.stringify(primalRun.game.run));
+    await page.keyboard.down('d'); await page.keyboard.down('Space');
+    await page.waitForTimeout(300);
+    assert.equal(await page.evaluate(() => JSON.stringify(primalRun.game.run)), frozenMutation, 'world stays frozen during power-up selection');
     await page.locator('[data-mutation]').first().click();
+    await page.keyboard.up('d'); await page.keyboard.up('Space');
     await page.waitForFunction(() => primalRun.game.phase === 'playing');
     for (let stage = 0; stage < 4; stage++) {
       await page.evaluate(() => {
