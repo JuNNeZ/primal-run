@@ -31,7 +31,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       }
       await page.evaluate(() => {
         const g = primalRun.game, r = g.run; r.enemies = []; r.spawnTimer = 999;
-        r.player.x = 1440; r.player.y = 960; r.xp = 3;
+        r.player.x = 1440; r.player.y = 960; r.xp = 3; r.map.rocks = []; // Isolate facing from random obstacle steering.
         for (let rarity = 0; rarity < 4; rarity++) r.pickups.push({ id: 1000 + rarity, kind: 'meat', rarity, value: rarity + 1, x: 1320 + rarity * 85, y: 1100 });
         const prey = g.spawn('parasaurolophus', { x: 1530, y: 960 }); g.enemyStep(prey, .05);
         const hunter = g.spawn('carnotaurus', { x: 1350, y: 960 }); g.enemyStep(hunter, .05);

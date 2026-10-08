@@ -116,3 +116,42 @@ A complete isolated boss fight passes through normal input without HP edits.
 Reports: PRIMAL_RUN_Game/polish_runtime_report.json and world_runtime_report.json.
 Temporary checks: /tmp/primal-polish-final-checks; engine binaries remain /tmp.
 Publication continues via source codex/primal-run-playable and static gh-pages.
+
+## 2026-10-08: seeded roguelite, playable species and priorities 2–5
+
+This update supersedes the fixed terrain/trails and Utahraptor-only start above.
+New saves start as Compy. PLAYER_SPECIES defines four classes; species selection
+and DNA unlocks (Utahraptor 25, Carnotaurus 60, Ankylosaurus 85) persist under the
+existing save key, preserving previous DNA/upgrades/settings/scores. Unlocks
+and selection are blocked mid-run. Shift uses a class ability; Carnotaurus
+charges on a locked heading and has no immunity, Ankylosaurus braces without
+moving, and Compy/Utahraptor have short protected dashes/leaps. Shared mutations
+and species-restricted mutations form a 20-entry pool; class effects are real.
+
+createMap(stage, seed) uses its own seeded RNG, separate from loot. Each run
+gets a seed visible in pause; map bounds and safe start remain fixed. Random
+habitats, rocks, foliage, river and six sites vary per seed. There are no roads
+or artificial clearings. Dense plants fade near the player; cyan pointer/ring
+and red species names identify actors. Original PNGs and origins are unchanged.
+New playable classes reuse existing native directional pose studies (idle,
+stride, action); Utahraptor retains its 24-frame combat overlay. None is newly
+production-approved.
+
+E/touch Undersøg claims fossils or opens a fully paused nest choice. Rewards
+are once per site, guardians are preplaced and dormant until theft/attack,
+rare prey/elite meat is at least rare, elites guarantee extra DNA. Discovered
+sites appear on the minimap. All bosses now have half-health phase transitions,
+locked warning shapes and rear/flank recovery vulnerability. Later bosses use
+laterBossAI: Deinosuchus lunge/bite/wave, Triceratops hornstorm/rock recovery,
+T. rex stamina-draining roar/stomp/double bite. Historical palette and art
+validation reports stay intact. The game is explicitly a fantasy mix of time
+periods; Deinosuchus is a crocodyliform.
+
+37 core tests, all six browser suites, complete npm test (including preserved
+kit checks) and all three PNG validators PASS. Standalone and real GDevelop
+5.6.283 export results are separate in roguelite_runtime_report.json; world
+and polish reports refreshed. Legacy attack suites explicitly select unlocked
+Utahraptor. Facing/boss timing fixtures isolate random obstacles; seeded-map
+tests cover 80 stage/seed combinations. Temporary full checks at
+/tmp/primal-roguelite-final-checks and actual exported GDJS at
+/tmp/primal-roguelite-final-gd. Source branch and gh-pages deployment unchanged.

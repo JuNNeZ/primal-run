@@ -4,7 +4,7 @@ const assert = require('node:assert/strict');
 const C = require('../PRIMAL_RUN_Game/src/core.js');
 const fs = require('node:fs'), path = require('node:path'), crypto = require('node:crypto');
 function storage() { const values = new Map(); return { getItem: key => values.get(key) || null, setItem: (key, value) => values.set(key, value) }; }
-function make(random = () => .5, store = storage()) { const g = new C.Game({ storage: store, random }); g.start(); g.run.enemies = []; g.run.spawnTimer = 999; return g; }
+function make(random = () => .5, store = storage()) { const g = new C.Game({ storage: store, random }); g.save.unlockedSpecies.push('utahraptor'); g.selectSpecies('utahraptor'); g.start(); g.run.enemies = []; g.run.spawnTimer = 999; return g; }
 const tick = g => g.step(1 / 60);
 function resolveMutations(g) { while (g.phase === 'mutation') assert.equal(g.choose(g.run.choices[0]), true); }
 
@@ -55,7 +55,7 @@ test('first biome opens with three weak enemies and ramps composition, caps and 
   const nearby = r.enemies.filter(e => Math.hypot(e.x - r.player.x, e.y - r.player.y) < 600);
   assert.equal(nearby.length, 3); assert.equal(nearby.filter(e => e.kind === 'compy').length, 2);
   assert.ok(r.enemies.length > 25, 'distant habitats contain animals before exploring');
-  assert.ok(r.enemies.every(e => e.kind !== 'carnotaurus')); assert.equal(r.spawnTimer, 5);
+  assert.ok(r.enemies.every(e => e.elite || e.kind !== 'carnotaurus')); assert.equal(r.spawnTimer, 5);
   for (const [seconds, meat, kind, interval] of [[0, 0, 'parasaurolophus', 4], [30, 6, 'parasaurolophus', 3.2], [60, 12, 'carnotaurus', 2.6]]) {
     r.enemies = []; r.pickups = []; r.seconds = seconds; r.meat = meat; r.spawnTimer = 0;
     g.step(.01); assert.equal(r.enemies[0].kind, kind); assert.equal(r.spawnTimer, interval);
@@ -310,7 +310,7 @@ test('half-health first boss signals phase two once and telegraphs each leg of i
   boss.timer = .001; g.enemyStep(boss, .01); for (let i = 0; i < 12; i++) g.enemyStep(boss, .05);
   assert.equal(boss.mode, 'recover'); assert.equal(g.drainEvents().filter(e => e.type === 'boss_enrage').length, 0);
 });
-test('phase-two stomp hits once inside its warned radius, allows pounce, and stays specific to first boss', () => {
+test('first-boss stomp hits once and later bosses now also signal phase two', () => {
   const g = make(), r = g.run, boss = g.spawn('carnotaurus', { x: 480, y: 250 }, true);
   boss.bossPhase = 2; boss.attackCycle = 2; boss.cooldown = 0;
   g.enemyStep(boss, .01); assert.equal(boss.pattern, 2); assert.equal(boss.windupDuration, .9); assert.equal(boss.attackRadius, 115);
@@ -319,12 +319,12 @@ test('phase-two stomp hits once inside its warned radius, allows pounce, and sta
   r.pounce = 0; g.enemyStep(boss, .02); assert.equal(r.health, 100, 'missed stomp does not repeat');
   boss.timer = .001; g.enemyStep(boss, .01); assert.equal(boss.mode, 'recover'); assert.equal(boss.timer, 1.8);
   r.stage = 1; const later = g.spawn('deinosuchus', { x: 480, y: 200 }, true); later.hp = later.maxHP / 2; later.cooldown = 0; g.enemyStep(later, .01);
-  assert.equal(later.mode, 'windup'); assert.equal(later.windupDuration, .95); assert.equal(later.bossPhase, 1);
+  assert.equal(later.mode, 'enrage'); assert.equal(later.bossPhase, 2);
 });
-test('terrain layouts provide repeatable trails, clearings and biome-specific scenery without changing world bounds', () => {
+test('terrain layouts provide seeded wilderness and biome-specific scenery without changing world bounds', () => {
   for (let stage = 0; stage < 4; stage++) {
     const map = C.createMap(stage); assert.deepEqual(map, C.createMap(stage));
-    assert.equal(map.trails.length, 3); assert.ok(map.regions.length >= 5); assert.ok(map.clearings.some(c => c.x === 480 && c.y === 340));
+    assert.equal(map.trails.length, 0); assert.ok(map.regions.length >= 5); assert.equal(map.clearings.length, 0); assert.notDeepEqual(map, C.createMap(stage, 2));
     assert.ok(map.decorations.length > 10); assert.ok(map.decorations.every(p => p.x > 0 && p.x < map.width && p.y > 0 && p.y < map.height));
     assert.ok(map.trails.every(points => points.every(p => p.x >= 0 && p.y >= 0 && p.x <= map.width && p.y <= map.height)));
     if (stage === 0) assert.ok(map.decorations.some(p => p.canopy));

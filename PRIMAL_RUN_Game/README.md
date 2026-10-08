@@ -1,7 +1,7 @@
 # PRIMAL RUN — første spilbare version
 
-Spil som Utahraptor gennem fire biomer. Jagt, saml kød, vælg mutationer,
-besejr bosser, og brug gemt DNA på små start-upgrades.
+Start som Compy og udforsk fire tilfældige biomer. Jagt, saml kød, vælg
+mutationer, og besejr bosser. DNA låser nye arter op og køber start-upgrades.
 
 ## Spil i browseren
 
@@ -10,8 +10,8 @@ Fra repositoryets rod: `npm run preview`. Åbn
 Til publicering bygger `npm run build:web` en selvstændig webudgave i `dist/`.
 Alle webstier er relative og fungerer under `/primal-run/` på GitHub Pages.
 
-WASD/piletaster flytter, Space bider foran spilleren, Shift pouncer under
-bevægelse, og Escape pauser. Der er også touch-knapper. Tastatur på desktop
+WASD/piletaster flytter, Space angriber, Shift bruger artens evne, E undersøger
+fossiler/reder, og Escape pauser. Der er også touch-knapper. Tastatur på desktop
 er testet sammen med responsive touch-layouts i portræt og landskab.
 Langvarig spiltest på fysiske mobiler er stadig relevant.
 
@@ -99,7 +99,7 @@ i Pages-indstillingerne. Workflowet ovenfor er en alternativ publiceringsvej.
 - Syv fjendetyper; fire bosser med varslede stormløb og for de sidste to også
   områdeangreb. Frontpanser gør Triceratops/Ankylosaurus sværere at angribe forfra.
 - Fire kødmål: 24/50/75/100. Kød giver XP ved opsamling; kills giver ikke XP direkte.
-- Ti mutationer, tre tilfældige forskellige valg, højst tre rangtrin hver.
+- Tyve mutationer: ti fælles og ti artsmutationer; tre forskellige valg, højst tre rangtrin hver.
 - DNA-drop: Compy 5 %/1 DNA, Parasaurolophus 15 %/2 DNA, store dyr 30 %/4 DNA.
   Bosser giver garanteret 15/20/25/30 DNA direkte til den gemte bank.
 - DNA-shop: fire upgrades med højst fem rangtrin; starter med 10 DNA i pris.
@@ -168,8 +168,8 @@ for kameraet plus 128 pixels sikkerhed; de kommer ikke frem foran spilleren.
 Minikortet viser spilleren, nærliggende dyr og bossen. Bevægelse og opsamling
 bruger kortets grænser, ikke skærmens.
 
-Spilleren har blågrøn ring og `▼ DIG`, fjender orange/rød ring og `◆ FJENDE`,
-fredeligt bytte grøn ring og `◇ BYTTE`, bosser gul ring og `◆ BOSS`. De fire
+Spilleren har blågrøn ring, pil og `DIG · art`; farlige dyr har rød ring og
+rødt artsnavn, fredeligt bytte grønt artsnavn, bosser gul ring og `◆ artsnavn`. De fire
 animerede arter skifter retningssprite; de tre øvrige arter bruger en roteret
 South-pose. Kropshitboxes følger ikke spriteformen.
 Fjender og bytte kolliderer nu indbyrdes med faste torso-cirkler og fire pixels
@@ -184,7 +184,7 @@ Kød har fire kvaliteter: almindeligt ×1, nærende ×1,5, sjældent ×2 og epis
 Compy har 76/19/4,5/0,5 % chance; Parasaurolophus 60/28/10/2 %; store dyr
 55/25/15/5 %. Værdien giver både XP, score og progression mod bossmålet.
 DNA-chancerne er uændrede. XP-baren viser procent, opsamlet/mål og resterende
-kødværdi til næste raptor-level; biome-kødmålet står separat øverst.
+kødværdi til næste dino-level; biome-kødmålet står separat øverst.
 
 Mutationer har faste rarities med hvid/grøn/blågrøn/lilla markering:
 almindelig (ben, udholdenhed, spring), usædvanlig (tænder, hjerte), sjælden
@@ -201,50 +201,74 @@ Navnet Jonas (uanset store/små bogstaver) låser en kosmetisk krone, titlen
 kameraposition, bevægelsesretninger inklusive roteret boss-pose, rarity/rang,
 XP-bar, sikre mutationsvalg, touch-layout og Jonas-hemmeligheden.
 
-## Terræn, kampfeedback og første boss
+## Tilfældige naturkort, arter og udforskning
 
-Kortene har nu sammenhængende, snoede stier og uregelmæssige lysninger/grønne
-områder. Originale tiles bruges med dæmpet kontrast, så dyr, loot og varsler
-står tydeligere. Skoven har træer, bregner, blomster og stammer; flodsletten
-har en flod med brede bredder; klippelandet har sten, døde træer og kranier;
-vulkandalen har sprækker, lavasten og knogler. Stier og flod/sprække vises på
-minikortet. Vegetation placeres uden for hovedstier og lysninger; trækroner
-bliver gennemsigtige tæt på spilleren. Flod/lava er visuel scenery i denne
-opdatering, uden nye skjulte terrænskader. Eksisterende sten-kollision bevares.
-Alle PNG-kildepixels er uændrede; ingen nye sprite-animationer påstås.
+Hver jagt får et 32-bit seed; alle fire kort genereres af dette seed og biome-ID.
+Samme seed giver samme landskab, habitater og begyndelsesbestand. Loot bruger
+sin egen RNG og følger fortsat artens oprindelige dropchancer. Seed står i pausemenuen.
+Kortene er 2880×1920 til 3840×2688. De første tre svage dyr ligger i startområdet;
+farlige habitater, reder og elitevogtere placeres mindst 650 pixels fra starten.
+Klipper har mellemrum; planter har ingen kollision. Forstærkninger og bosser
+kommer fortsat uden for synsfeltet, når progressionen udløser dem.
 
-Et bid, der rammer, giver 33 ms hit-stop (50 ms ved boss/stærkt/flere hits),
-partikler, et kort blodmærke og lidt kamerarystelse. Misses giver ingen
-kontakt-feedback. Blødende dyr efterlader kortvarige blodspor; pounce og bossens
-stormløb giver støv. Effekterne har faste caps og udløber med simulationstiden;
-pause/mutationsvalg fryser også dem. Kontaktlyden har en kort støj-transient,
-og bossen får en syntetisk brummen. Alle lyde følger master/SFX separat fra
-musikken; kamerarystelse kan fortsat slås fra.
+Der er ingen veje eller kunstige hovedstier. Bregner, trækroner og småplanter
+ligger tæt i skov/flodslette; klippe- og vulkanområder har deres egen spredning.
+Ground patches er dæmpede, organiske farvevariationer. Planter bliver
+halvgennemsigtige tæt på spilleren. Flod/lava er scenery uden skjult skade.
+Spilleren har en tydelig blågrøn pil og ring; farlige dyr har rødt artsnavn,
+fredeligt bytte grønt. Elitevogtere har ★, sjældent bytte ✦ og bosser ◆.
 
-Skovens jæger har en egen AI med to faser:
+| Spilbar art | DNA-unlock | Spillestil | Shift |
+|---|---:|---|---|
+| Compy | Gratis | 80 liv, hurtige bid, 175 fart | Kort beskyttet undvigelse |
+| Utahraptor | 25 | 100 liv, balanceret, 155 fart | Springangreb med én kløetræffer pr. dyr |
+| Carnotaurus | 60 | 125 liv, tunge bid, 140 fart | Fastlåst stormløb med kontaktskade; ingen immunitet |
+| Ankylosaurus | 85 | 150 liv, langsom, 110 fart | Panserstilling: 75 % mindre skade i ét sekund |
 
-- Fase 1: 0,95 sekunders varsel før et fastlåst stormløb (320 px/s i 0,58 s).
-  Tæt på spilleren veksler den med et varslet retningsbid (0,6 s varsel).
-- Under recovery kan flankerne/bagkroppen bides for **+50 % skade**; fronten
-  har ingen bonus. En blågrøn markering og HUD-tekst viser åbningen.
-- Ved halvt liv: én tydelig 1,1 sekunders raseri-pause og fase-2-besked.
-- Fase 2: hurtigere stormløb (370 px/s), et ekstra stormløb med nyt, fastlåst
-  sigte efter **0,65 sekunders nyt varsel**, samt bid og varslet tramp tæt på.
-  Tramp har 115 pixels radius, rammer én gang og kan undviges med pounce.
-- Stormløb har 1,65 s recovery; bid 1,15 s; tramp 1,8 s. Bossen kan ikke
-  stunlåses. DNA-belønningen er fortsat 15, og næste biome åbnes som før.
+Ankylosaurus' normale angreb er et haleslag omkring hele kroppen. Alle arter
+har fælles upgrades/mutationer og deres egen mutationspulje. Eksempler:
+Compy jagter fredeligt bytte bedre; Utahraptor får blødning/baghold/springkløer;
+Carnotaurus kombinerer ekstra stormløbsskade og genvundet stamina;
+Ankylosaurus kombinerer pigpanser, bred hale og heling under forsvar.
+Overlevelsesraseri virker sammen med fælles panser/heling ved lavt liv.
+Der er intet standard-giftbid. Artsvalg og unlocks gemmes sammen med eksisterende
+DNA, indstillinger og upgrades; mutationer nulstilles ved en ny jagt.
 
-Bid-varslet viser den faktiske kegle (radius 100, facing dot >0,35).
-Stormløbsvarslet viser en capsule med faktisk bane-længde og kontakt-radius 51,
-ikke kun en smal midterlinje. HUD viser fase, afstand og aktuelt angreb/åbning.
+Hvert kort har seks udforskningssteder: to fossiler, to reder og to sjældne
+byttedyr. Fossiler giver 3–6 permanent DNA via E. Reder pauser spillet og lader
+dig vælge sjældent kød eller gå videre. Kød vækker en allerede placeret
+elitevogter. Eliter har 1,6× liv, 1,3× skade, bedre kød og garanteret ekstra
+DNA. Belønninger fra et sted kan kun tages én gang. Minikortet viser steder,
+når du kommer inden for 550 pixels, og fjerner dem efter fuldførelse.
 
-`tests/polish-browser.cjs` kontrollerer faktiske renderinger af alle fire biomer,
-kontaktframe/hit-stop/partikler, pause, fase- og rangevarsler samt en hel første
-bosskamp med almindelige simulation-inputs uden ændringer af bossens HP efter
-spawn. Det er en kontrolleret, isoleret boss-spiltest, ikke en menneskelig
-slutgodkendelse af balance. `polish_runtime_report.json` registrerer standalone
-og rigtig GDevelop 5.6.283 separat. Hele pakken består 29 core-tests plus
-browser-/kit-regressioner og tekniske PNG-valideringer.
+## Kampfeedback og alle fire bosser
+
+Træffere giver kort hit-stop, blod/støv, skadetal, en kontaktlyd og valgfri
+kamerarystelse. Pause, mutationer og redevalg fryser også alle effekter.
+Alle bosser får en varslet fase 2 ved halvt liv; angrebsvarsler låser sigtet.
+Efter et angreb har de recovery, hvor bid mod flankerne giver +50 % skade.
+
+- Carnotaurus: stormløb og bid; fase 2 dobbelt stormløb og tramp.
+- Deinosuchus: bagholdslunge, gab og halebølge; fase 2 hurtigere lunge og
+  større bølge, som kort sænker bevægelseshastigheden.
+- Triceratops: hornstorm, hornstød og tramp; fase 2 dobbelt hornstorm.
+  Stormløb mod en klippe giver længere recovery.
+- T. rex: jordrystelse, kæmpebid og brøl; brøl koster stamina og sænker farten.
+  Fase 2 giver et ekstra bid med nyt varsel.
+
+Bosser giver stadig 15/20/25/30 garanteret DNA og åbner næste biome.
+Røde varsler viser den faktiske cirkel, bidkegle eller stormløbscapsule.
+Kerneregler og UI er testet i standalone Chromium og en officiel GDevelop
+5.6.283 GDJS-eksport; se `roguelite_runtime_report.json` og tests/roguelite*.
+
+## Dinosaurernes tidsperioder
+
+Spillets blanding er et fantasiunivers. Compsognathus levede i sen Jura
+(ca. 150 millioner år siden), Utahraptor i tidlig Kridt, og de øvrige arter
+her i sen Kridt. T. rex, Triceratops og Ankylosaurus overlappede i det vestlige
+Nordamerika nær slutningen af Kridt (ca. 68–66 millioner år siden).
+Carnotaurus levede i Sydamerika; Deinosuchus var en krokodilleslægt, ikke en
+dinosaur. Alle arterne mødtes derfor ikke i ét historisk økosystem.
 
 ## Status og næste arbejde
 
@@ -253,7 +277,7 @@ Progressions- og browserkontroller gennemfører bossforløbet med kontrollerede
 testtilstande; de erstatter ikke en fuld menneskelig gennemspilning.
 
 Næste arbejde er menneskelig kampbalance/spiltest, bedre pathfinding, unikke
-biomefarer og videreudvikling af de øvrige bossmønstre, fysisk mobiltest samt visuel gennemgang
+biomefarer og menneskelig finjustering af de fire bossmønstre, fysisk mobiltest samt visuel gennemgang
 af animationerne. Musikken er et kort genereret loop; længere kompositioner og
 endelige effektlyde er en senere lydopgave. Highscores er lokale; online-score
 kræver backend og validering.
@@ -263,3 +287,7 @@ stillbilleder; de fire nye serier er animerede prototype-studier. Utahraptorens 
 fortsat prototype-drejningen af South med dens kendte lysbegrænsning.
 Se `SPRITE_RULES.md`, `manifest.json`, `palette.json`, `validation_report.json`
 og `integration_report.json`. Ingen kildepixels eller origins ændres.
+
+Compy, Carnotaurus og Ankylosaurus bruger de eksisterende cardinal pose-studier
+som player-sprites. Angrebet skifter mellem optakt/action/recovery; de har endnu
+ikke Utahraptorens seks særskilte bidframes. Alle PNG-pixels/origins bevares.

@@ -22,6 +22,8 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     assert.equal(await page.evaluate(() => primalRun.game.save.settings.music), .2);
     assert.equal(await page.evaluate(() => primalRun.audio.context.state), 'running');
     await page.locator('[data-action="back"]').click();
+    // This regression suite verifies the unlocked Utahraptor combat profile.
+    await page.evaluate(() => { const g=primalRun.game; g.save.unlockedSpecies.push('utahraptor'); g.selectSpecies('utahraptor'); });
     await page.locator('[data-action="start"]').click();
     assert.equal(await page.evaluate(() => primalRun.game.phase), 'intro');
     assert.equal(await page.evaluate(() => primalRun.game.run), null, 'jagt starter først efter intro');

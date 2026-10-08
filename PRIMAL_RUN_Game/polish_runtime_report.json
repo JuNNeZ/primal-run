@@ -2,72 +2,76 @@
   "date": "2026-10-08",
   "status": "PASS",
   "source_sha256": {
-    "src/core.js": "1c1cc82593873f62d326085dca3f6290b4caf02135827ef700eaff245e18cb03",
-    "src/app.js": "2481b5e6038355fdb9678d6087e780d4d2440e3ab79fa9629c5304fdb53dd741",
+    "src/core.js": "b147f2aa7aeab2c47b1728c9ef993ad1e14522678d41483bf3a99a8314fe27fc",
+    "src/app.js": "fbbe6f12219460ccc194c8e8b3f10cbcaac76f7b2b4aea21229d4211022f3799",
     "src/audio.js": "8c05993c669bd89459bb52b885409f590d5d84815b4dc4fb23e99b536ee42010",
-    "style.css": "75f80c2e246da2b70b79c185780eb02f87695b71e2bc1416e3f1ee570285151f"
+    "style.css": "f5123fdcb5a803a30c5a703a83a3f9535532b880c63bf2310b39d4f7f0cf1fa9"
   },
-  "core_tests": 29,
+  "core_tests": 37,
   "standalone": {
     "runtime": "standalone browser",
     "status": "PASS",
     "terrain": [
       {
         "stage": 0,
-        "brightness": 1808352,
-        "trails": 3,
-        "regions": 9,
+        "brightness": 1761986,
+        "trails": 0,
+        "regions": 28,
         "smoothing": false,
         "propTypes": [
+          "assets/props/flower_bush.png",
           "assets/props/fern_large.png",
           "assets/props/tree_canopy.png",
-          "assets/props/flower_bush.png",
-          "assets/props/fallen_log.png"
+          "assets/props/fallen_log.png",
+          "assets/environment/fern.png"
         ]
       },
       {
         "stage": 1,
-        "brightness": 3975614,
-        "trails": 3,
-        "regions": 14,
+        "brightness": 3696874,
+        "trails": 0,
+        "regions": 28,
         "smoothing": false,
         "propTypes": [
           "assets/props/fern_large.png",
+          "assets/props/tree_canopy.png",
           "assets/props/fallen_log.png",
-          "assets/props/nest_empty.png",
-          "assets/props/flower_bush.png"
+          "assets/props/flower_bush.png",
+          "assets/environment/fern.png"
         ]
       },
       {
         "stage": 2,
-        "brightness": 2851281,
-        "trails": 3,
-        "regions": 19,
+        "brightness": 2724483,
+        "trails": 0,
+        "regions": 28,
         "smoothing": false,
         "propTypes": [
           "assets/props/boulder_large.png",
+          "assets/props/fern_large.png",
           "assets/props/dead_tree.png",
-          "assets/props/skull.png",
-          "assets/props/fern_large.png"
+          "assets/props/flower_bush.png",
+          "assets/environment/fern.png"
         ]
       },
       {
         "stage": 3,
-        "brightness": 1918666,
-        "trails": 3,
-        "regions": 24,
+        "brightness": 1864533,
+        "trails": 0,
+        "regions": 28,
         "smoothing": false,
         "propTypes": [
-          "assets/props/lava_rock.png",
           "assets/props/dead_tree.png",
           "assets/props/ribcage.png",
-          "assets/props/meteorite.png"
+          "assets/props/fern_large.png",
+          "assets/props/meteorite.png",
+          "assets/props/lava_rock.png"
         ]
       }
     ],
     "fight": {
       "phase": "cleared",
-      "seconds": 34.416666666665996,
+      "seconds": 37.48333333333249,
       "health": 100,
       "dna": 15,
       "modes": [
@@ -94,66 +98,70 @@
       "full first-boss fight through normal simulation inputs without HP edits"
     ]
   },
-  "GDevelop": {
+  "gdevelop": {
     "runtime": "official GDevelop GDJS 5.6.283",
     "status": "PASS",
     "terrain": [
       {
         "stage": 0,
-        "brightness": 1808352,
-        "trails": 3,
-        "regions": 9,
+        "brightness": 1761986,
+        "trails": 0,
+        "regions": 28,
         "smoothing": false,
         "propTypes": [
+          "assets/props/flower_bush.png",
           "assets/props/fern_large.png",
           "assets/props/tree_canopy.png",
-          "assets/props/flower_bush.png",
-          "assets/props/fallen_log.png"
+          "assets/props/fallen_log.png",
+          "assets/environment/fern.png"
         ]
       },
       {
         "stage": 1,
-        "brightness": 3975614,
-        "trails": 3,
-        "regions": 14,
+        "brightness": 3696874,
+        "trails": 0,
+        "regions": 28,
         "smoothing": false,
         "propTypes": [
           "assets/props/fern_large.png",
+          "assets/props/tree_canopy.png",
           "assets/props/fallen_log.png",
-          "assets/props/nest_empty.png",
-          "assets/props/flower_bush.png"
+          "assets/props/flower_bush.png",
+          "assets/environment/fern.png"
         ]
       },
       {
         "stage": 2,
-        "brightness": 2851281,
-        "trails": 3,
-        "regions": 19,
+        "brightness": 2724483,
+        "trails": 0,
+        "regions": 28,
         "smoothing": false,
         "propTypes": [
           "assets/props/boulder_large.png",
+          "assets/props/fern_large.png",
           "assets/props/dead_tree.png",
-          "assets/props/skull.png",
-          "assets/props/fern_large.png"
+          "assets/props/flower_bush.png",
+          "assets/environment/fern.png"
         ]
       },
       {
         "stage": 3,
-        "brightness": 1918666,
-        "trails": 3,
-        "regions": 24,
+        "brightness": 1864533,
+        "trails": 0,
+        "regions": 28,
         "smoothing": false,
         "propTypes": [
-          "assets/props/lava_rock.png",
           "assets/props/dead_tree.png",
           "assets/props/ribcage.png",
-          "assets/props/meteorite.png"
+          "assets/props/fern_large.png",
+          "assets/props/meteorite.png",
+          "assets/props/lava_rock.png"
         ]
       }
     ],
     "fight": {
       "phase": "cleared",
-      "seconds": 34.416666666665996,
+      "seconds": 37.48333333333249,
       "health": 100,
       "dna": 15,
       "modes": [
@@ -180,19 +188,5 @@
       "full first-boss fight through normal simulation inputs without HP edits"
     ]
   },
-  "regression": {
-    "npm_test": "PASS in /tmp/primal-polish-final-checks (29 core cases, all active browser tests, three historical kit browser checks)",
-    "official_GDJS_export": "GDevelop 5.6.283: complete active test suite PASS; final bite-cone/charge-capsule and responsive world checks PASS in final export",
-    "asset_validation": "104 original kit, 192 active PNGs, 64 enemy overlay PASS; no PNG or original audio file changed"
-  },
-  "visual_review": {
-    "terrain": "Four actual biome screenshots reviewed: trails, regions, clearings, biome props, visual river/lava and minimap. Quieter texture and organic boundaries replace rectangular habitat patches.",
-    "mobile": "390x844 first-boss phase-two view inspected with touch controls, phase HUD and minimap; automated responsive tests also cover landscape/ultrawide.",
-    "combat": "Actual contact particles/hit-stop/weak point and first-boss enrage/charge/bite warnings inspected."
-  },
-  "limits": [
-    "Controlled automated boss fight starts in an isolated scene and uses exact reactions; human balancing and physical mobile playtests still needed.",
-    "Existing sprite studies remain prototype_static; no new animation or production art approval.",
-    "River/lava features are visual scenery; this update adds no terrain damage."
-  ]
+  "scope": "Terrain now seeded wilderness without roads; legacy full first-boss combat regression uses unlocked Utahraptor profile. All class/exploration/later-boss tests are in roguelite_runtime_report.json."
 }
