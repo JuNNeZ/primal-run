@@ -50,16 +50,23 @@
         this.nextBeat += interval;
       }
     }
-    impact() {
+    impact(strong = false) {
       const c = this.context; if (!c || c.state !== 'running') return;
       const t = c.currentTime, osc = c.createOscillator(), gain = c.createGain();
       osc.type = 'triangle'; osc.frequency.setValueAtTime(180, t); osc.frequency.exponentialRampToValueAtTime(48, t + .09);
-      gain.gain.setValueAtTime(.3, t); gain.gain.exponentialRampToValueAtTime(.0001, t + .12);
+      gain.gain.setValueAtTime(strong ? .4 : .3, t); gain.gain.exponentialRampToValueAtTime(.0001, t + .12);
       osc.connect(gain); gain.connect(this.effects); osc.start(t); osc.stop(t + .13);
       osc.onended = () => { osc.disconnect(); gain.disconnect(); };
+      const buffer = c.createBuffer(1, Math.floor(c.sampleRate * .035), c.sampleRate), samples = buffer.getChannelData(0);
+      for (let i = 0; i < samples.length; i++) samples[i] = Math.sin(i * 127.1) * Math.cos(i * 31.7) * (1 - i / samples.length);
+      const snap = c.createBufferSource(), snapGain = c.createGain(); snap.buffer = buffer; snapGain.gain.value = strong ? .13 : .08; snap.connect(snapGain); snapGain.connect(this.effects); snap.start(t); snap.onended = () => { snap.disconnect(); snapGain.disconnect(); };
     }
-    play(event) {
-      if (event === 'bite_hit') { if (this.settings.master * this.settings.sfx > 0) this.impact(); return; }
+    play(event, detail = {}) {
+      if (event === 'bite_hit') { if (this.settings.master * this.settings.sfx > 0) this.impact(detail.strong); return; }
+      if (['roar', 'boss_enrage'].includes(event)) {
+        const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
+        const osc = c.createOscillator(), gain = c.createGain(), t = c.currentTime; osc.type = 'sawtooth'; osc.frequency.setValueAtTime(event === 'boss_enrage' ? 95 : 70, t); osc.frequency.exponentialRampToValueAtTime(32, t + .32); gain.gain.setValueAtTime(.06, t); gain.gain.exponentialRampToValueAtTime(.0001, t + .35); osc.connect(gain); gain.connect(this.effects); osc.start(t); osc.stop(t + .36); osc.onended = () => { osc.disconnect(); gain.disconnect(); }; return;
+      }
       const names = { bite: 'bite', hit: 'hit', pickup: 'pickup', dna: 'pickup', pounce: 'pounce', level_up: 'level_up', death: 'death', ui: 'ui_select', boss: 'meteor', boss_dead: 'level_up', victory: 'level_up', stage: 'ui_select', start: 'ui_select' };
       const name = names[event]; if (!name || this.settings.master * this.settings.sfx === 0 || this.active.size > 8) return;
       const audio = new Audio(this.resolve('sounds/' + name + '.wav')); audio.volume = this.settings.master * this.settings.sfx;

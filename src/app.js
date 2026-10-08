@@ -11,7 +11,7 @@
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">UTAH­RAPTOR · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
       <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space bider, Shift springer, Escape pauser."></canvas>
       <div class="hud" hidden><div><small>LIV</small><div class="meter health"><i></i></div><b id="health-label"></b></div><div><small>STAMINA</small><div class="meter stamina"><i></i></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
-      <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"></span></div>
+      <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"></span></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · KØD / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div></main>
       <div class="touch-controls" hidden><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space">BID</button><button data-key="ShiftLeft">POUNCE</button></div></div>
       <footer><span><kbd>WASD</kbd> Bevæg · <kbd>SPACE</kbd> Bid · <kbd>SHIFT</kbd> Pounce · <kbd>ESC</kbd> Pause</span><span class="save-status"></span></footer>`;
@@ -20,7 +20,7 @@
     const screen = shell.querySelector('.screen'), images = {}, flashes = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
     const audio = new root.PrimalAudio(resolve, game.save.settings);
     let ready = false, disposed = false, previousPhase = '', returnPhase = 'menu', last = 0, accumulator = 0, animationId = 0, toastUntil = 0;
-    const catalog = root.PrimalAssets;
+    const catalog = root.PrimalAssets, previewMap = C.createMap(0);
     function listen(target, name, callback, options) { target.addEventListener(name, callback, options); cleanups.push(() => target.removeEventListener(name, callback, options)); }
     function toast(text) { shell.querySelector('.toast').textContent = text; toastUntil = performance.now() + 2600; }
     function imageTag(path, className = '') { return `<img class="${className}" src="${htmlEscape(resolve(path))}" alt="">`; }
@@ -96,13 +96,50 @@
       if (game.run) game.setView(width, height);
     }
     const observer = new ResizeObserver(resize); observer.observe(shell.querySelector('.arena')); cleanups.push(() => observer.disconnect());
+    function trace(points) {
+      ctx.beginPath(); ctx.moveTo(Math.round(points[0].x), Math.round(points[0].y));
+      for (let i = 1; i < points.length - 1; i++) ctx.quadraticCurveTo(Math.round(points[i].x), Math.round(points[i].y), Math.round((points[i].x + points[i + 1].x) / 2), Math.round((points[i].y + points[i + 1].y) / 2));
+      const last = points[points.length - 1]; ctx.lineTo(Math.round(last.x), Math.round(last.y));
+    }
+    function blob(x, y, rx, ry, seed = 0) {
+      const points = Array.from({ length: 16 }, (_, i) => {
+        const angle = i * Math.PI / 8, variation = 1 + .13 * Math.sin(i * 2.7 + seed);
+        return { x: Math.round((x + Math.cos(angle) * rx * variation) / 4) * 4, y: Math.round((y + Math.sin(angle) * ry * variation) / 4) * 4 };
+      });
+      ctx.beginPath(); ctx.moveTo(Math.round((points[15].x + points[0].x) / 2), Math.round((points[15].y + points[0].y) / 2));
+      points.forEach((p, i) => { const next = points[(i + 1) % 16]; ctx.quadraticCurveTo(p.x, p.y, Math.round((p.x + next.x) / 2), Math.round((p.y + next.y) / 2)); }); ctx.closePath();
+    }
+    function texturedFill(tile, color, alpha = .18) {
+      ctx.fillStyle = color; ctx.fill();
+      if (!backgrounds.has(tile)) backgrounds.set(tile, ctx.createPattern(images['assets/tiles/' + tile + '.png'], 'repeat'));
+      ctx.fillStyle = backgrounds.get(tile); ctx.globalAlpha = alpha; ctx.fill(); ctx.globalAlpha = 1;
+    }
     function background(stage, map, view) {
-      const tilePath = 'assets/tiles/' + C.STAGES[stage].tile + '.png';
-      if (!backgrounds.has(stage)) backgrounds.set(stage, ctx.createPattern(images[tilePath], 'repeat'));
-      ctx.fillStyle = backgrounds.get(stage); ctx.fillRect(view.x, view.y, canvas.width, canvas.height);
-      const patches = stage === 1 ? 'shallow_water' : stage === 2 ? 'dirt' : stage === 3 ? 'gravel' : 'grass_alt';
-      ctx.fillStyle = ctx.createPattern(images['assets/tiles/' + patches + '.png'], 'repeat');
-      for (const [i, h] of map.habitats.entries()) if (i % 3 === 0) ctx.fillRect(h.x - 96, h.y - 64, 192, 128);
+      ctx.beginPath(); ctx.rect(view.x, view.y, canvas.width, canvas.height);
+      texturedFill(C.STAGES[stage].tile, ['#28372a', '#d4a36c', '#626861', '#3b4144'][stage], .17);
+      for (const region of map.regions) {
+        if (Math.abs(region.x - view.x - canvas.width / 2) > canvas.width / 2 + region.radius || Math.abs(region.y - view.y - canvas.height / 2) > canvas.height / 2 + region.radius) continue;
+        blob(region.x, region.y, region.radius, region.radius * .7, region.seed); texturedFill(stage === 0 ? 'grass_alt' : stage === 1 ? 'forest_floor' : stage === 2 ? 'dirt' : 'volcanic', ['#3f5030', '#586d38', '#674333', '#54282d'][stage], .15);
+        ctx.strokeStyle = ['#586d38', '#799447', '#8d6042', '#913b32'][stage]; ctx.lineWidth = 8; ctx.globalAlpha = .35; ctx.stroke(); ctx.globalAlpha = 1;
+      }
+      ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      if (stage === 1) {
+        trace(map.river); ctx.strokeStyle = '#edd0a0'; ctx.lineWidth = 156; ctx.stroke();
+        ctx.strokeStyle = '#69a4a0'; ctx.lineWidth = 116; ctx.stroke(); ctx.strokeStyle = '#3c7180'; ctx.lineWidth = 64; ctx.stroke();
+      }
+      if (stage === 3) {
+        trace(map.river); ctx.strokeStyle = '#54282d'; ctx.lineWidth = 42; ctx.stroke(); ctx.strokeStyle = '#c6663c'; ctx.lineWidth = 14; ctx.stroke(); ctx.strokeStyle = '#de954a'; ctx.lineWidth = 4; ctx.stroke();
+      }
+      for (const points of map.trails) {
+        trace(points); ctx.lineWidth = 94; ctx.strokeStyle = ['#3f5030', '#b98252', '#443027', '#151b19'][stage]; ctx.stroke();
+        ctx.lineWidth = 76; ctx.strokeStyle = ['#674333', '#edd0a0', '#8d6042', '#626861'][stage]; ctx.stroke();
+        ctx.lineWidth = 62; ctx.strokeStyle = ['#8d6042', '#d4a36c', '#929387', '#3b4144'][stage]; ctx.stroke();
+        ctx.lineWidth = 57; ctx.strokeStyle = backgrounds.get(stage === 1 ? 'sand' : stage === 2 ? 'gravel' : 'forest_floor') || backgrounds.get(C.STAGES[stage].tile); ctx.globalAlpha = .15; ctx.stroke(); ctx.globalAlpha = 1;
+      }
+      for (const c of map.clearings) {
+        blob(c.x, c.y, c.radius, c.radius * .7, c.x * .01);
+        texturedFill(stage === 1 ? 'sand' : stage === 2 ? 'gravel' : 'dirt', ['#8d6042', '#d4a36c', '#929387', '#626861'][stage], .12);
+      }
       ctx.fillStyle = '#151b1966'; ctx.fillRect(0, 0, map.width, 76); ctx.fillRect(0, map.height - 42, map.width, 42); ctx.fillRect(0, 0, 42, map.height); ctx.fillRect(map.width - 42, 0, 42, map.height);
     }
     function label(text, x, y, color) {
@@ -113,6 +150,8 @@
       const width = Math.min(120, canvas.width * .25), height = width * r.map.height / r.map.width;
       const x = canvas.width - width - 12, y = canvas.height - height - 38;
       ctx.fillStyle = '#101713dc'; ctx.fillRect(x, y, width, height); ctx.strokeStyle = '#b6c0a9'; ctx.strokeRect(x, y, width, height);
+      for (const points of r.map.trails) { trace(points.map(p => ({ x: x + p.x / r.map.width * width, y: y + p.y / r.map.height * height }))); ctx.strokeStyle = '#8d6042'; ctx.lineWidth = 1; ctx.stroke(); }
+      if (r.stage === 1 || r.stage === 3) { trace(r.map.river.map(p => ({ x: x + p.x / r.map.width * width, y: y + p.y / r.map.height * height }))); ctx.strokeStyle = r.stage === 1 ? '#69a4a0' : '#de954a'; ctx.lineWidth = 2; ctx.stroke(); }
       ctx.strokeStyle = '#69a4a0'; ctx.strokeRect(x + r.view.x / r.map.width * width, y + r.view.y / r.map.height * height, Math.min(width, r.view.width / r.map.width * width), Math.min(height, r.view.height / r.map.height * height));
       for (const e of r.enemies) if (e.boss || Math.hypot(e.x - r.player.x, e.y - r.player.y) < 550) {
         ctx.fillStyle = e.boss ? '#e9b75a' : e.damage ? '#ed7869' : '#8eaa60';
@@ -127,22 +166,29 @@
       const r = game.run, stage = r ? r.stage : 0;
       ctx.imageSmoothingEnabled = false; ctx.save();
       if (r && r.shake > 0 && game.save.settings.shake) ctx.translate(Math.round(Math.sin(r.seconds * 110) * 3), Math.round(Math.cos(r.seconds * 90) * 3));
-      const map = r ? r.map : C.createMap(0), view = r ? r.view : { x: 0, y: 0 };
+      const map = r ? r.map : previewMap, view = r ? r.view : { x: 0, y: 0 };
       ctx.translate(-view.x, -view.y);
       canvas.dataset.cameraX = view.x; canvas.dataset.cameraY = view.y;
       background(stage, map, view);
       if (r) {
+        for (const p of r.decals) { ctx.fillStyle = '#913b32'; ctx.globalAlpha = Math.min(.6, p.life * .25); ctx.fillRect(Math.round(p.x) - 5, Math.round(p.y) - 3, 10, 6); ctx.fillRect(Math.round(p.x) + 6, Math.round(p.y) + 4, 3, 2); } ctx.globalAlpha = 1;
         for (const e of r.enemies) if (e.mode === 'windup') {
           ctx.strokeStyle = '#ed7869'; ctx.fillStyle = '#913b3277'; ctx.lineWidth = 3;
           ctx.beginPath();
-          if (e.pattern === 2 || e.kind === 'compy') ctx.arc(Math.round(e.x), Math.round(e.y), e.attackRadius, 0, Math.PI * 2);
-          else {
-            const x = Math.round(e.x), y = Math.round(e.y), nx = -e.chargeY * 28, ny = e.chargeX * 28, length = e.boss ? 200 : 130;
+          if (e.pattern === 1 && e.boss && e.kind === 'carnotaurus' && r.stage === 0) {
+            const angle = Math.atan2(e.facingY, e.facingX), cone = Math.acos(.35); ctx.moveTo(Math.round(e.x), Math.round(e.y)); ctx.arc(Math.round(e.x), Math.round(e.y), e.attackRadius, angle - cone, angle + cone); ctx.closePath();
+          } else if (e.pattern === 2 || e.kind === 'compy') ctx.arc(Math.round(e.x), Math.round(e.y), e.attackRadius, 0, Math.PI * 2);
+          else if (e.boss && e.kind === 'carnotaurus' && r.stage === 0) {
+            const x = Math.round(e.x), y = Math.round(e.y), radius = e.radius + 19, length = (e.bossPhase === 2 ? 370 : 320) * .58;
+            const endX = Math.round(x + e.chargeX * length), endY = Math.round(y + e.chargeY * length), angle = Math.atan2(e.chargeY, e.chargeX), nx = -e.chargeY * radius, ny = e.chargeX * radius;
+            ctx.moveTo(x - nx, y - ny); ctx.lineTo(endX - nx, endY - ny); ctx.arc(endX, endY, radius, angle - Math.PI / 2, angle + Math.PI / 2); ctx.lineTo(x + nx, y + ny); ctx.arc(x, y, radius, angle + Math.PI / 2, angle + Math.PI * 1.5); ctx.closePath();
+          } else {
+            const x = Math.round(e.x), y = Math.round(e.y), nx = -e.chargeY * 28, ny = e.chargeX * 28, length = e.boss && e.kind === 'carnotaurus' && r.stage === 0 ? (e.bossPhase === 2 ? 215 : 186) : e.boss ? 200 : 130;
             ctx.moveTo(x + nx, y + ny); ctx.lineTo(x + e.chargeX * length + nx, y + e.chargeY * length + ny); ctx.lineTo(x + e.chargeX * length - nx, y + e.chargeY * length - ny); ctx.lineTo(x - nx, y - ny); ctx.closePath();
           }
           ctx.fill(); ctx.stroke();
           ctx.font = 'bold 10px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#151b19';
-          const warning = e.kind === 'compy' ? 'BID' : e.kind === 'ankylosaurus' ? 'HALESLAG' : 'STORMLØB';
+          const warning = e.attackName || (e.kind === 'compy' ? 'BID' : e.kind === 'ankylosaurus' ? 'HALESLAG' : 'STORMLØB');
           ctx.strokeText(warning, Math.round(e.x), Math.round(e.y) - 66); ctx.fillStyle = '#ed7869'; ctx.fillText(warning, Math.round(e.x), Math.round(e.y) - 66);
         }
         for (const p of r.pickups) {
@@ -179,13 +225,18 @@
       objects.sort((a, b) => a.y - b.y);
       for (const o of objects) {
         if (o.x < view.x - 160 || o.y < view.y - 160 || o.x > view.x + canvas.width + 160 || o.y > view.y + canvas.height + 160) continue;
-        if (o.player || o.enemy) { ctx.strokeStyle = o.player ? '#69a4a0' : o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869' : '#8eaa60'; ctx.lineWidth = o.player ? 4 : 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), o.player ? 24 : o.radius + 6, 10, 0, 0, Math.PI * 2); ctx.stroke(); }
+        if (o.player || o.enemy) { ctx.strokeStyle = o.player ? '#69a4a0' : o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869' : '#8eaa60'; ctx.lineWidth = o.player ? 4 : 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), o.player ? 24 : o.enemy.boss ? o.radius + 14 : o.radius + 6, 10, 0, 0, Math.PI * 2); ctx.stroke(); }
         if (o.enemy && o.enemy.boss) { ctx.strokeStyle = '#e9b75a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), 35, 17, 0, 0, Math.PI * 2); ctx.stroke(); }
-        const alpha = o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
+        const alpha = o.canopy && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .35 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
         sprite(o.path, o.x, o.y, alpha, false, o.rotation);
         if (o.player && r.jonas) { ctx.fillStyle = '#e9b75a'; const x = Math.round(o.x), y = Math.round(o.y) - 46; ctx.fillRect(x - 9, y, 18, 5); ctx.fillRect(x - 9, y - 5, 4, 5); ctx.fillRect(x - 2, y - 7, 4, 7); ctx.fillRect(x + 5, y - 5, 4, 5); }
         if (o.player) label(r.jonas ? '▼ DIG · JONAS' : '▼ DIG', o.x, o.y - 70, '#69a4a0');
         else if (o.enemy && o.enemy.mode !== 'windup') label(o.enemy.boss ? '◆ BOSS' : o.enemy.damage ? '◆ FJENDE' : '◇ BYTTE', o.x, o.y - 53, o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869' : '#8eaa60');
+        if (o.enemy && o.enemy.boss && o.enemy.kind === 'carnotaurus' && r.stage === 0) {
+          if (o.enemy.mode === 'recover') {
+            const e = o.enemy; ctx.strokeStyle = '#a2d4c1'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(Math.round(e.x - e.facingX * 24), Math.round(e.y - e.facingY * 24), 18, 0, Math.PI * 2); ctx.stroke(); label('ÅBEN FLANKE · +50 %', e.x, e.y - 82, '#a2d4c1');
+          } else if (o.enemy.mode === 'enrage') label('RASERI · FASE 2', o.x, o.y - 82, '#de954a');
+        }
         if (o.enemy && o.enemy.hit > 0) sprite(o.path, o.x, o.y, .7 * o.enemy.hit / .15, true, o.rotation);
         if (o.enemy && o.enemy.hp < o.enemy.maxHP && !o.enemy.boss) { ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - 40, 40, 4); ctx.fillStyle = '#c45f45'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - 40, Math.round(40 * o.enemy.hp / o.enemy.maxHP), 4); }
       }
@@ -194,6 +245,8 @@
           const [dx, dy] = { N: [0, -1], S: [0, 1], E: [1, 0], W: [-1, 0] }[r.biteFacing];
           sprite('assets/effects/bite_slash_001.png', r.player.x + dx * 36, r.player.y + dy * 36);
         }
+        for (const p of r.particles) { ctx.fillStyle = p.kind === 'dust' ? '#ded392' : '#c6663c'; ctx.globalAlpha = Math.min(1, p.life / p.maxLife * 1.5); ctx.fillRect(Math.round(p.x), Math.round(p.y), p.size, p.size); } ctx.globalAlpha = 1;
+        canvas.dataset.hitStop = r.hitStop > 0 ? 'true' : 'false'; canvas.dataset.particles = r.particles.length;
         ctx.font = 'bold 12px monospace'; ctx.textAlign = 'center';
         for (const e of r.effects) {
           const x = Math.round(e.x), y = Math.round(e.y - 55 - (1 - e.life / .55) * 20);
@@ -218,7 +271,7 @@
       shell.querySelector('#time-label').textContent = timeLabel(r.seconds);
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
       bossHUD.hidden = !boss || !['playing', 'paused', 'mutation'].includes(game.phase);
-      if (boss) { bossHUD.querySelector('b').textContent = C.STAGES[r.stage].bossName + ' · ' + Math.round(Math.hypot(boss.x - r.player.x, boss.y - r.player.y) / 32) + ' m · find ◆ på kortet'; bossHUD.querySelector('i').style.width = Math.max(0, boss.hp / boss.maxHP * 100) + '%'; }
+      if (boss) { bossHUD.querySelector('b').textContent = C.STAGES[r.stage].bossName + (r.stage === 0 ? ' · FASE ' + boss.bossPhase : '') + ' · ' + Math.round(Math.hypot(boss.x - r.player.x, boss.y - r.player.y) / 32) + ' m · find ◆ på kortet'; bossHUD.dataset.bossPhase = boss.bossPhase; const tip = bossHUD.querySelector('.boss-tip'); tip.hidden = r.stage !== 0; tip.textContent = boss.mode === 'recover' ? 'ÅBEN FLANKE · +50 % SKADE BAGFRA' : boss.mode === 'enrage' ? 'FASE 2 · DOBBELT STORMLØB OG TRAMP' : boss.mode === 'windup' ? boss.attackName : 'UNDVIG SIDEVÆRT · BID, NÅR DEN HVILER'; bossHUD.querySelector('i').style.width = Math.max(0, boss.hp / boss.maxHP * 100) + '%'; }
     }
     function update(now) {
       if (disposed) return;
@@ -231,7 +284,7 @@
         }
       } else accumulator = 0;
       if (game.phase !== phaseBefore) accumulator = 0;
-      for (const event of game.drainEvents()) { audio.play(event.type); if (event.type === 'boss') toast('BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if (event.type === 'dna') toast('+' + event.amount + ' DNA · gemt'); }
+      for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast('FASE 2 · Pas på dobbelt stormløb og tramp!'); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if (event.type === 'dna') toast('+' + event.amount + ' DNA · gemt'); }
       audio.intensity = game.phase === 'playing' ? (game.run.bossSpawned ? 'boss' : 'hunt') : game.phase === 'paused' ? 'paused' : 'menu'; audio.sync();
       renderScreen(); draw();
       shell.querySelector('.toast').hidden = now > toastUntil;

@@ -2,14 +2,15 @@
   "date": "2026-10-08",
   "status": "PASS",
   "source_sha256": {
-    "src/core.js": "de09a643cdc5ab462aeb26bb877e7f983587c826d94c70929599ce27902d3d05",
-    "src/app.js": "15dbd5de27940b047ea7845fc9362a7650fb9d3721d927612b5a02c1191a8f15",
-    "style.css": "e1018e5b4ff4ed3084906bb151df8ff927944a8b86f49f70cb1127c591783a61"
+    "src/core.js": "1c1cc82593873f62d326085dca3f6290b4caf02135827ef700eaff245e18cb03",
+    "src/app.js": "2481b5e6038355fdb9678d6087e780d4d2440e3ab79fa9629c5304fdb53dd741",
+    "src/audio.js": "8c05993c669bd89459bb52b885409f590d5d84815b4dc4fb23e99b536ee42010",
+    "style.css": "75f80c2e246da2b70b79c185780eb02f87695b71e2bc1416e3f1ee570285151f"
   },
   "simulation": {
-    "cases": 24,
+    "cases": 29,
     "result": "PASS",
-    "scope": "combat, paused mutations, rarity values, weighted choices, world bounds, prepopulated wildlife, offscreen spawn placement, facing, progression, save/DNA, mixed-body collision, dense coincident crowds, mass/charge priority, stable edge separation and no NPC damage"
+    "scope": "combat, paused mutations, rarity values, weighted choices, world bounds, prepopulated wildlife, offscreen spawn placement, facing, progression, save/DNA, mixed-body collision, dense coincident crowds, mass/charge priority, stable edge separation and no NPC damage, contact hit-stop/FX lifetimes, first-boss phase transition, directional bite, locked double charge and recovery vulnerability"
   },
   "standalone": {
     "runtime": "standalone browser",
@@ -262,13 +263,14 @@
     ]
   },
   "regression": {
-    "npm_test": "PASS in /tmp/primal-collision-checks; historical kit outputs preserved",
-    "GDevelop_5_6_283": "official export: mixed-crowd actual-frame collision, responsive world checks and game progression PASS; previous 24-player/64-enemy sprite draw evidence remains applicable to unchanged renderer/assets",
+    "npm_test": "PASS in /tmp/primal-polish-final-checks; final warning rendering rechecked in standalone and official GDJS polish tests",
+    "GDevelop_5_6_283": "complete active suite PASS, including actual drawn player/enemy frames, world responsiveness/crowd collision and new terrain/combat/boss checks; final warning geometry and responsive checks PASS in final export",
     "PNG_validation": "104 kit / 192 active game / 64 enemy overlay / 176 historical sprites PASS; no PNG changed"
   },
   "limits": [
     "automated controlled scenarios do not replace human balancing or physical-device playtests",
     "Deinosuchus, Triceratops and Tyrannosaurus use cardinal rotation of legacy still poses; no new walk animation for these species",
     "same sprite prototype approval status; lighting on rotated stills remains a prototype limitation"
-  ]
+  ],
+  "current_polish_evidence": "polish_runtime_report.json"
 }
