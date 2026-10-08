@@ -313,3 +313,35 @@ flugtafstand til 260 pixels. Adfærdsroller bruger en separat RNG fra loot.
 `npm run validate:player-full` kontrollerer 480 frames/96 serier, alpha, palette,
 padding, faste origins, kildehashes og forskellige frames. Teknisk PASS er
 ikke en produktionsgodkendelse af grafikken.
+
+## Animeret junglemenu og biomeøkologi
+
+Menuen har tre lag parallax, lysstriber, Compy-flokke og passerende Utahraptor,
+Carnotaurus og Ankylosaurus. Menuens ur er separat fra simulationen og følger
+reduceret-bevægelse-indstillingen. Ved pause/mutationsvalg fryser vegetationens
+og insekternes bevægelse med resten af verdenen. Musik- og effektvolumen virker
+som hidtil; nye insekter er visuelle detaljer uden nye lydfiler.
+
+18 nye props: cycad, to bregner, nåletræ, padderok, siv, buske, urt, tørt græs,
+mos, lav, rødder, svampe, blade, blomster, sukkulent og kviste. Tre insektarter
+har to poses hver. Flodbiomet får siv tæt ved vandet og guldsmede; klippelandet
+har tør vegetation, og vulkanbiomet begrænser planter til områder væk fra lava.
+
+Alle normale spawns, rede-/byttedyr og reinforcement/bossspawns kontrolleres mod
+artspuljer og lokale habitater. Deinosuchus spawner38–135px fra flodens centerlinje;
+landdyr mindst85px fra centerlinjen. Intet dyr spawner nærmere90px fra lavaens
+centerlinje. Dyrene kan fortsat bevæge sig efter jagten; reglerne gælder spawn.
+Klippelandet har også almindelige Triceratops. Fantasiblandingen af tidsperioder
+er bevaret; farver og botaniske detaljer er stiliserede, ikke fossilrekonstruktioner.
+
+Arterne bruger faste palette-substitutioner til grøn Compy, teal Utahraptor,
+okker Carnotaurus og slate Ankylosaurus; original-PNGs bevares. Deinosuchus/T.rex
+har nu32px torso-radius, Triceratops28px. Første Carnotaurus-boss tegnes2× med42px
+torso og et tilsvarende kontaktvarsel. Tails påvirker aldrig collision. Størrelser
+er gameplay-proportioner; [audit](sprite_size_audit.json) viser radier og forbehold.
+
+[Grafisk review](ecology_review.html) viser native billeder på begge baggrunde
+og original/spilfarver. Se SPRITE_RULES_ECOLOGY.md, ecology_manifest.json,
+ecology_validation.json og jungle_runtime_report.json. Kør
+`python tools/export_ecology.py`, `npm run validate:ecology`,
+`node tools/audit_sprite_sizes.cjs`, derefter `npm run build:game`.

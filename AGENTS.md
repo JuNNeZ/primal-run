@@ -47,6 +47,9 @@ are in tests/enemy-animation-browser.cjs and the enemy runtime report.
 For complete playable animation sets also read PRIMAL_RUN_Game/SPRITE_RULES_PLAYER_FULL.md.
 Keep the overlay under assets/player_full, use tools/export_player_full.py and
 validate with tools/validate_player_full.py. Preserve legacy player/enemy art.
+For ecology assets and runtime species colours read PRIMAL_RUN_Game/SPRITE_RULES_ECOLOGY.md.
+Keep sources intact, use tools/export_ecology.py and tools/validate_ecology.py,
+and include native light/dark previews, manifest and separate runtime evidence.
 For the offline Prototype Kit, follow `PRIMAL_RUN_Prototype_Kit/SPRITE_RULES.md`.
 The fixed palette extends to 32 colors; existing 24 colors remain unchanged.
 Action poses are unapproved studies. Export only reviewed overhead enemy cells.

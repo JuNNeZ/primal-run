@@ -51,7 +51,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     if (evidence) await page.screenshot({ path: path.join(evidence, 'boss-charge-warning.png') });
     const chargeWarning = await page.evaluate(() => {
       const ctx = document.querySelector('canvas[aria-label]').getContext('2d'), original = ctx.arc, arcs = [];
-      ctx.arc = function(...args) { if (args[2] === 51) arcs.push(args); return original.apply(this, args); }; primalRun.update(performance.now()); ctx.arc = original; return arcs;
+      ctx.arc = function(...args) { if (args[2] === primalRun.game.run.enemies[0].radius + primalRun.game.run.player.radius + 3) arcs.push(args); return original.apply(this, args); }; primalRun.update(performance.now()); ctx.arc = original; return arcs;
     });
     assert.equal(chargeWarning.length, 2); assert.ok(Math.abs(Math.hypot(chargeWarning[0][0] - chargeWarning[1][0], chargeWarning[0][1] - chargeWarning[1][1]) - 370 * .58) < 2, 'drawn charge capsule matches speed, duration and body contact radius');
 

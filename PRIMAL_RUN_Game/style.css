@@ -16,3 +16,8 @@ html,body{height:100%;margin:0;overflow:hidden}.primal-shell{width:100%;max-widt
 .screen[data-phase="species"]{align-items:flex-start}.screen[data-phase="species"] .panel{width:min(100%,1100px)}
 
 .death-preview{width:144px;height:144px;image-rendering:pixelated}.selected-dino{color:#69a4a0;font-size:12px;margin:0 0 12px}.species-grid img{width:144px;height:144px}
+
+/* Cinematic jungle title sits beside the functional menu. */
+.menu-screen{display:flex;justify-content:space-between;align-items:center;padding:clamp(20px,5vw,90px);gap:30px;background:linear-gradient(90deg,#10171322,#10171366)}.menu-screen .menu-panel{width:min(440px,48vw);max-height:calc(100% - 20px);overflow:auto;background:#101713e8;border:1px solid #79944766;box-shadow:0 18px 80px #0008;padding:30px}.jungle-title{pointer-events:none;display:flex;flex-direction:column;gap:18px;text-shadow:5px 7px #101713;font-family:monospace}.jungle-title small{letter-spacing:3px;color:#a2d4c1}.jungle-title strong{font-size:clamp(45px,8vw,112px);line-height:.85;letter-spacing:-5px;color:#edd0a0}.jungle-title em{font-style:normal;color:#dfbc52}.jungle-title span{color:#e8ece1}.cinematic-menu .arena{min-height:650px}.menu-panel h1{font-size:34px}.menu-panel .intro{font-size:14px}
+@media(max-width:700px){.jungle-title{display:none}.menu-screen{justify-content:center;padding:14px}.menu-screen .menu-panel{width:min(440px,100%);padding:23px}.cinematic-menu .arena{min-height:650px}}
+@media(prefers-reduced-motion:reduce){.jungle-title{animation:none}}

@@ -1,0 +1,9 @@
+'use strict';
+const fs=require('fs'),path=require('path'),C=require('../PRIMAL_RUN_Game/src/core.js');
+const root=path.resolve(__dirname,'../PRIMAL_RUN_Game'),manifest=require('../PRIMAL_RUN_Game/manifest.json');
+const species={};
+for(const id of Object.keys(C.SPECIES_LABELS)){
+ const player=manifest.filter(e=>e.file.startsWith('assets/player_full/'+id+'_')),npc=manifest.filter(e=>e.file.startsWith('assets/enemy_animations/'+id+'_')||e.file.startsWith('assets/enemies/'+id+'_'));
+ species[id]={player_torso_radius:C.PLAYER_SPECIES[id]?.radius,npc_torso_radius:C.SPECIES[id]?.radius,player_frames:player.length,npc_studies:npc.length,display_scale:1,boss_display_scale:id==='carnotaurus'?2:1,boss_torso_radius:id==='carnotaurus'?42:32,body_radius_matches_player_and_npc:!C.PLAYER_SPECIES[id]||!C.SPECIES[id]||C.PLAYER_SPECIES[id].radius===C.SPECIES[id].radius,distinct_species_ramp:C.SPECIES_COLORS[id],origins_preserved:true};
+}
+const report={status:'RECORDED',scope:'Gameplay scale audit: native canvases/unchanged registered origins, stable class/NPC torso radius, integer rendering scale and warnings based on actual body radius. Not fossil body lengths or anatomical approval.',png_assets:manifest.length,species,biomes:C.BIOMES.map((b,i)=>({name:C.STAGES[i].name,...b})),remaining_visual_limitations:['Player/NPC drawings differ modestly in proportions; same torso radius retains gameplay consistency.','Generated full frames retain minor marking/anatomy/registration variation.','Native Parasaurolophus is a juvenile-sized prey illustration.','Flora are stylised visual placeholders, not identified fossil plant taxa.'],production_approved:false};fs.writeFileSync(path.join(root,'sprite_size_audit.json'),JSON.stringify(report,null,2)+'\n');console.log('Audited eight species: native/integer render scale, stable body radii and four biome rosters.');

@@ -17,6 +17,13 @@ Almindelige fjender kan opgive jagten efter 8 sekunder uden en ny træffer;
 chancen stiger med afstand og tid. Uforstyrrede byttedyr holder cirka 110 pixels
 afstand, når spilleren står stille. Bosser opgiver ikke.
 
+Startmenuen har en animeret jungle med dinosaurer, parallax og smådyr.
+18 nye plante-/jorddetaljer og seks insektposes varierer mellem biomerne;
+Deinosuchus spawner ved floden, og dyr undgår lava ved spawn.
+Arterne har forskellige farver, og stabile kropsradier er gennemgået.
+[Se jungle, farver og størrelser](PRIMAL_RUN_Game/ecology_review.html).
+[Foreslåede næste forbedringer](PRIMAL_RUN_Game/NEXT_IMPROVEMENTS.md).
+
 **PRIMAL_RUN_Prototype_Kit** er den bevarede assetpakke og tidligere browserdemo
 med 104 PNG-assets, otte WAV-placeholderlyde og GDevelop-byggeguides.
 

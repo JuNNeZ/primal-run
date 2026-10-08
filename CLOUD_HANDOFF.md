@@ -177,3 +177,26 @@ settle at 110px; movement/recent damage uses 260px. RNG is isolated from loot.
 See player_full_runtime_report.json for separate standalone/official GDevelop
 results. Run kit tests/legacy validators in a temporary checkout to preserve
 historical reports. Browser path here: /usr/bin/chromium.
+
+## 2026-10-08: cinematic menu, ecology and species readability
+
+Menu-only clock/parallax/actors live in app.js; reduced motion freezes the
+cinematic and no simulation state is touched. 24 new ecology PNGs are additive;
+read SPRITE_RULES_ECOLOGY.md before art work. Source sheet has manually reviewed
+nonuniform rows0/320/575/790/1024. Export/validate via tools/export_ecology.py
+and tools/validate_ecology.py; size audit via tools/audit_sprite_sizes.cjs.
+SPECIES_COLORS performs cached display-only exact fixed32 palette remapping
+without modifying source PNGs. New frames use the same per-species mappings.
+All original frames and sources remain unchanged and art remains prototype.
+
+BIOMES/suitableHabitat enforce real population/reinforcement/boss spawn habitat:
+riverbank Deinosuchus, land animals out of the water core, no lava spawns.
+Natural wandering/chase is not restricted to the birth habitat. Explicit
+spawn(kind,position) remains available for controlled fixtures. First boss is
+integer2× with42px body; Deinosuchus/T.rex NPC32 and Triceratops28 better match
+native art. Attack warning tests use actual entity contact radii.
+46 core tests include128 stage/seed population cases,48 map habitat variants
+and actual biome vegetation checks. Eight browser suites include responsive
+cinematic controls, reduced motion, actual four-class recoloured pixels and
+pause isolation. See jungle_runtime_report.json for separate final standalone/
+official GDevelop evidence. NEXT_IMPROVEMENTS.md records the requested proposals.

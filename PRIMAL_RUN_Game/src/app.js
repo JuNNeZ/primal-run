@@ -17,13 +17,15 @@
       <footer><span><kbd>WASD</kbd> Bevæg · <kbd>SPACE</kbd> Angreb · <kbd>SHIFT</kbd> Evne · <kbd>E</kbd> Undersøg · <kbd>ESC</kbd> Pause</span><span class="save-status"></span></footer>`;
     host.appendChild(shell);
     const canvas = shell.querySelector('canvas'), ctx = canvas.getContext('2d');
-    const screen = shell.querySelector('.screen'), images = {}, flashes = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
+    const screen = shell.querySelector('.screen'), images = {}, flashes = {}, skins = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
     const audio = new root.PrimalAudio(resolve, game.save.settings);
     let ready = false, disposed = false, previousPhase = '', returnPhase = 'menu', last = 0, accumulator = 0, animationId = 0, toastUntil = 0;
     const catalog = root.PrimalAssets, previewMap = C.createMap(0);
+    let menuClock=0;const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+    const menuScene=()=>['menu','species','shop','scores','help'].includes(game.phase) || game.phase==='settings' && returnPhase==='menu';
     function listen(target, name, callback, options) { target.addEventListener(name, callback, options); cleanups.push(() => target.removeEventListener(name, callback, options)); }
     function toast(text) { shell.querySelector('.toast').textContent = text; toastUntil = performance.now() + 2600; }
-    function imageTag(path, className = '') { return `<img class="${className}" src="${htmlEscape(resolve(path))}" alt="">`; }
+    function imageTag(path, className = '') { return `<img class="${className}" src="${htmlEscape(skins[path] ? skins[path].toDataURL() : resolve(path))}" alt="">`; }
     function button(action, text, className = '') { return `<button class="${className}" data-action="${action}">${text}</button>`; }
     function heading(kicker, title, text = '') { return `<small class="eyebrow">${kicker}</small><h1>${title}</h1>${text ? `<p class="intro">${text}</p>` : ''}`; }
     function renderScreen(force = false) {
@@ -34,10 +36,11 @@
       shell.querySelector('.meat-progress').hidden = !running; shell.querySelector('.hud').hidden = !running; shell.querySelector('.run-info').hidden = !running;
       shell.querySelector('#pause-button').hidden = !['playing', 'paused'].includes(phase);
       shell.querySelector('.touch-controls').hidden = phase !== 'playing';
+      screen.classList.toggle('menu-screen',phase==='menu');shell.classList.toggle('cinematic-menu',phase==='menu');
       screen.hidden = phase === 'playing'; screen.classList.toggle('wide', ['shop', 'scores', 'species'].includes(phase));
       if (phase === 'playing') { screen.innerHTML = ''; canvas.focus({ preventScroll: true }); return; }
       if (phase === 'menu') {
-        screen.innerHTML = `<section class="panel menu-panel">${heading('JAGT · MUTÉR · OVERLEV', 'PRIMAL <em>RUN</em>', 'Start som Compy. Lås nye arter op. Fire tilfældige naturkort og ét liv.')}
+        screen.innerHTML = `<div class="jungle-title" aria-hidden="true"><small>EN VERDEN FØR MENNESKET</small><strong>PRIMAL<br><em>RUN</em></strong><span>Junglen lever. Jagten begynder.</span></div><section class="panel menu-panel">${heading('JAGT · MUTÉR · OVERLEV', 'PRIMAL <em>RUN</em>', 'Start som Compy. Lås nye arter op. Fire tilfældige naturkort og ét liv.')}
           <label class="name-label">DIT NAVN<input id="player-name" maxlength="20" autocomplete="nickname" value="${htmlEscape(game.save.name)}"></label>
           <p class="selected-dino">${C.PLAYER_SPECIES[game.save.selectedSpecies].name} · ${C.PLAYER_SPECIES[game.save.selectedSpecies].skill}</p>
           ${button('start', ready ? 'START JAGTEN <span>→</span>' : 'INDLÆSER…', 'primary')}
@@ -90,12 +93,44 @@
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
       shell.querySelector('.save-status').textContent = game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session';
     }
-    function sprite(path, x, y, alpha = 1, flash = false, rotation = 0) {
+    function sprite(path, x, y, alpha = 1, flash = false, rotation = 0, scale = 1) {
       const image = flash ? flashes[path] : images[path], meta = catalog[path]; if (!image || !meta) return;
       ctx.globalAlpha = alpha;
-      if (rotation) { ctx.save(); ctx.translate(Math.round(x), Math.round(y)); ctx.rotate(rotation); ctx.drawImage(image, -meta.origin[0], -meta.origin[1]); ctx.restore(); }
-      else ctx.drawImage(image, Math.round(x) - meta.origin[0], Math.round(y) - meta.origin[1]);
+      const paint=(img,dx,dy)=>{if(scale===1)ctx.drawImage(img,dx,dy);else ctx.drawImage(img,dx,dy,img.width*scale,img.height*scale);};
+      if(rotation){ctx.save();ctx.translate(Math.round(x),Math.round(y));ctx.rotate(rotation);paint(image,-meta.origin[0]*scale,-meta.origin[1]*scale);if(!flash&&skins[path])paint(skins[path],-meta.origin[0]*scale,-meta.origin[1]*scale);ctx.restore();}
+      else {paint(image,Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);if(!flash&&skins[path])paint(skins[path],Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);}
       ctx.globalAlpha = 1;
+    }
+    function insect(p,time) {
+      const flying=p.kind!=='beetle',phase=time*2+p.phase;
+      const x=p.x+(flying?Math.sin(phase)*18:Math.sin(phase*.35)*5),y=p.y+(flying?Math.cos(phase*.7)*8:0);
+      sprite('assets/ecology/'+p.kind+'_'+(Math.floor(time*8+p.phase)%2)+'.png',x,y);
+    }
+    function drawMenu() {
+      const w=canvas.width,h=canvas.height,t=menuClock;
+      ctx.fillStyle='#101713';ctx.fillRect(0,0,w,h);
+      const gradient=ctx.createLinearGradient(0,0,0,h);gradient.addColorStop(0,'#28372a');gradient.addColorStop(.55,'#3f5030');gradient.addColorStop(1,'#151b19');ctx.fillStyle=gradient;ctx.fillRect(0,0,w,h);
+      for(let i=0;i<14;i++){const x=((i*160-t*3)%(w+240)+(w+240))%(w+240)-120;sprite('assets/props/tree_canopy.png',x,30+(i%3)*65,.65,false,0,2);}
+      // Three foliage layers have different horizontal speeds. No gameplay state advances here.
+      for(let layer=0;layer<3;layer++)for(let i=0;i<22;i++){
+        const spacing=110,period=spacing*22;const x=((i*spacing-t*(layer+1)*6)%period+period)%period-100;
+        const y=layer===0?h*.25+(i%3)*16:layer===1?h*.68+(i%4)*17:h-15+(i%2)*22;
+        const plant=['cycad','conifer','broad_fern','seed_fern','shrub'][(i+layer)%5];
+        sprite('assets/ecology/'+plant+'.png',x,y,layer===0?.5:1,false,0,layer===2?2:1);
+      }
+      ctx.fillStyle='#ded392';ctx.globalAlpha=.06;for(let i=0;i<4;i++){ctx.beginPath();const x=w*(.12+i*.23);ctx.moveTo(x,0);ctx.lineTo(x+100,h);ctx.lineTo(x+180,h);ctx.lineTo(x+45,0);ctx.closePath();ctx.fill();}ctx.globalAlpha=1;
+      const actors=[{kind:'compy',speed:115,delay:0,y:.82},{kind:'compy',speed:115,delay:1.4,y:.86},{kind:'compy',speed:115,delay:2.6,y:.80},{kind:'utahraptor',speed:92,delay:5,y:.65},{kind:'carnotaurus',speed:-70,delay:7,y:.53},{kind:'ankylosaurus',speed:36,delay:12,y:.9}];
+      const shown=[];
+      for(const [i,a]of actors.entries()){
+        const distance=w+360,progress=((t-Math.max(0,a.delay))*Math.abs(a.speed)%distance+distance)%distance;
+        const x=a.speed>0?progress-180:w+180-progress,dir=a.speed>0?'E':'W';
+        const frame=Math.floor(t*12+i)%6,path='assets/player_full/'+a.kind+'_run_'+dir+'_'+String(frame).padStart(3,'0')+'.png';
+        sprite(path,x,Math.round(h*a.y));if(x>-100&&x<w+100)shown.push(a.kind);
+      }
+      for(let i=0;i<12;i++)insect({x:(i*137+65)%w,y:h*(.25+(i%5)*.12),kind:i%3?'firefly':'dragonfly',phase:i*1.7},t);
+      // Foreground frames the scene while leaving all menu controls readable.
+      for(let i=0;i<Math.ceil(w/100);i++)sprite('assets/ecology/broad_fern.png',i*100,h+8,1,false,0,2);
+      canvas.dataset.menuTime=t.toFixed(2);canvas.dataset.menuActors=shown.join(',');canvas.dataset.scene='jungle';
     }
     function resize() {
       const box = shell.querySelector('.arena').getBoundingClientRect();
@@ -141,6 +176,7 @@
       }
       ctx.fillStyle = '#151b1966'; ctx.fillRect(0, 0, map.width, 76); ctx.fillRect(0, map.height - 42, map.width, 42); ctx.fillRect(0, 0, 42, map.height); ctx.fillRect(map.width - 42, 0, 42, map.height);
     }
+    function enemyLabelOffset(e){return (['deinosuchus','tyrannosaurus'].includes(e.kind)?96:64)*(e.visualScale||1)+12;}
     function label(text, x, y, color) {
       ctx.font = 'bold 11px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713';
       ctx.strokeText(text, Math.round(x), Math.round(y)); ctx.fillStyle = color; ctx.fillText(text, Math.round(x), Math.round(y));
@@ -162,6 +198,8 @@
     function draw() {
       resize();
       if (!ready) { ctx.fillStyle = '#151b19'; ctx.fillRect(0, 0, canvas.width, canvas.height); return; }
+      if(menuScene()){ctx.imageSmoothingEnabled=false;drawMenu();return;}
+      canvas.dataset.scene='game';
       const r = game.run, stage = r ? r.stage : 0;
       ctx.imageSmoothingEnabled = false; ctx.save();
       if (r && r.shake > 0 && game.save.settings.shake) ctx.translate(Math.round(Math.sin(r.seconds * 110) * 3), Math.round(Math.cos(r.seconds * 90) * 3));
@@ -188,7 +226,7 @@
           ctx.fill(); ctx.stroke();
           ctx.font = 'bold 10px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#151b19';
           const warning = e.attackName || (e.kind === 'compy' ? 'BID' : e.kind === 'ankylosaurus' ? 'HALESLAG' : 'STORMLØB');
-          ctx.strokeText(warning, Math.round(e.x), Math.round(e.y) - 66); ctx.fillStyle = '#ed7869'; ctx.fillText(warning, Math.round(e.x), Math.round(e.y) - 66);
+          ctx.strokeText(warning, Math.round(e.x), Math.round(e.y) - enemyLabelOffset(e) - 18); ctx.fillStyle = '#ed7869'; ctx.fillText(warning, Math.round(e.x), Math.round(e.y) - enemyLabelOffset(e) - 18);
         }
         for (const p of r.pickups) {
           if (p.kind === 'meat') {
@@ -243,22 +281,23 @@
         if (o.player || o.enemy) { ctx.strokeStyle = o.player ? '#69a4a0' : o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869' : '#8eaa60'; ctx.lineWidth = o.player ? 4 : 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), o.player ? 24 : o.enemy.boss ? o.radius + 14 : o.radius + 6, 10, 0, 0, Math.PI * 2); ctx.stroke(); }
         if (o.enemy && o.enemy.boss) { ctx.strokeStyle = '#e9b75a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), 35, 17, 0, 0, Math.PI * 2); ctx.stroke(); }
         const alpha = o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
-        sprite(o.path, o.x, o.y, alpha, false, o.rotation);
+        sprite(o.path, o.x, o.y, alpha, false, o.rotation, o.visualScale || 1);
         if (o.player && r.jonas) { ctx.fillStyle = '#e9b75a'; const x = Math.round(o.x), y = Math.round(o.y) - 46; ctx.fillRect(x - 9, y, 18, 5); ctx.fillRect(x - 9, y - 5, 4, 5); ctx.fillRect(x - 2, y - 7, 4, 7); ctx.fillRect(x + 5, y - 5, 4, 5); }
-        if (o.enemy) label((o.enemy.mode === 'return' ? '↩ ' : o.enemy.boss ? '◆ ' : o.enemy.elite ? '★ ' : o.enemy.rare ? '✦ ' : '') + C.SPECIES_LABELS[o.enemy.kind], o.x, o.y - 53, o.enemy.damage ? '#ed7869' : '#8eaa60');
+        if (o.enemy) label((o.enemy.mode === 'return' ? '↩ ' : o.enemy.boss ? '◆ ' : o.enemy.elite ? '★ ' : o.enemy.rare ? '✦ ' : '') + C.SPECIES_LABELS[o.enemy.kind], o.x, o.y - enemyLabelOffset(o.enemy), o.enemy.damage ? '#ed7869' : '#8eaa60');
         if (o.enemy && o.enemy.boss) {
           if (o.enemy.mode === 'recover') {
-            const e = o.enemy; ctx.strokeStyle = '#a2d4c1'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(Math.round(e.x - e.facingX * 24), Math.round(e.y - e.facingY * 24), 18, 0, Math.PI * 2); ctx.stroke(); label('ÅBEN FLANKE · +50 %', e.x, e.y - 82, '#a2d4c1');
-          } else if (o.enemy.mode === 'enrage') label('RASERI · FASE 2', o.x, o.y - 82, '#de954a');
+            const e = o.enemy; ctx.strokeStyle = '#a2d4c1'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(Math.round(e.x - e.facingX * 24), Math.round(e.y - e.facingY * 24), 18, 0, Math.PI * 2); ctx.stroke(); label('ÅBEN FLANKE · +50 %', e.x, e.y - enemyLabelOffset(e) - 18, '#a2d4c1');
+          } else if (o.enemy.mode === 'enrage') label('RASERI · FASE 2', o.x, o.y - enemyLabelOffset(o.enemy) - 18, '#de954a');
         }
-        if (o.enemy && o.enemy.hit > 0) sprite(o.path, o.x, o.y, .7 * o.enemy.hit / .15, true, o.rotation);
-        if (o.enemy && o.enemy.hp < o.enemy.maxHP && !o.enemy.boss) { ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - 40, 40, 4); ctx.fillStyle = '#c45f45'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - 40, Math.round(40 * o.enemy.hp / o.enemy.maxHP), 4); }
+        if (o.enemy && o.enemy.hit > 0) sprite(o.path, o.x, o.y, .7 * o.enemy.hit / .15, true, o.rotation, o.visualScale || 1);
+        if (o.enemy && o.enemy.hp < o.enemy.maxHP && !o.enemy.boss) { ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, 40, 4); ctx.fillStyle = '#c45f45'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, Math.round(40 * o.enemy.hp / o.enemy.maxHP), 4); }
       }
+      for(const ambient of map.ambience || [])if(ambient.x>view.x-40&&ambient.x<view.x+canvas.width+40&&ambient.y>view.y-40&&ambient.y<view.y+canvas.height+40)insect(ambient,r?r.seconds:0);
       if (r) {
         if (r.species === 'ankylosaurus' && r.pounce > 0) { ctx.strokeStyle='#a2d4c1'; ctx.lineWidth=4; ctx.beginPath(); ctx.arc(Math.round(r.player.x),Math.round(r.player.y),38,0,Math.PI*2); ctx.stroke(); }
         if (r.species === 'ankylosaurus' && r.bite > 0) { ctx.strokeStyle='#efdfb8'; ctx.lineWidth=3; ctx.beginPath(); ctx.arc(Math.round(r.player.x),Math.round(r.player.y),C.PLAYER_SPECIES.ankylosaurus.range+10*r.mutations.reach+12*r.mutations.sweep,0,Math.PI*2); ctx.stroke(); }
-        ctx.fillStyle='#69a4a0'; ctx.strokeStyle='#101713'; ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(Math.round(r.player.x)-7,Math.round(r.player.y)-42); ctx.lineTo(Math.round(r.player.x)+7,Math.round(r.player.y)-42); ctx.lineTo(Math.round(r.player.x),Math.round(r.player.y)-31); ctx.closePath(); ctx.fill(); ctx.stroke();
-        label(r.jonas ? 'DIG · JONAS' : 'DIG · ' + C.PLAYER_SPECIES[r.species].name, r.player.x, r.player.y - 48, '#69a4a0');
+        ctx.fillStyle='#69a4a0'; ctx.strokeStyle='#101713'; ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(Math.round(r.player.x)-7,Math.round(r.player.y)-84); ctx.lineTo(Math.round(r.player.x)+7,Math.round(r.player.y)-84); ctx.lineTo(Math.round(r.player.x),Math.round(r.player.y)-73); ctx.closePath(); ctx.fill(); ctx.stroke();
+        label(r.jonas ? 'DIG · JONAS' : 'DIG · ' + C.PLAYER_SPECIES[r.species].name, r.player.x, r.player.y - 100, '#69a4a0');
         if (r.bite > 0) {
           const [dx, dy] = { N: [0, -1], S: [0, 1], E: [1, 0], W: [-1, 0] }[r.biteFacing];
           sprite('assets/effects/bite_slash_001.png', r.player.x + dx * 36, r.player.y + dy * 36);
@@ -296,6 +335,7 @@
       if (disposed) return;
       const dt = last ? Math.min(.1, Math.max(0, (now - last) / 1000)) : 0; last = now;
       const phaseBefore = game.phase; accumulator += dt;
+      if(menuScene() && !document.hidden && !reducedMotion.matches)menuClock+=dt;
       if (game.phase === 'result' && game.run.deathTime >= 0) game.run.deathTime = Math.min(.75, game.run.deathTime + dt);
       if (ready && game.phase === 'playing') {
         while (accumulator >= 1 / 60 && game.phase === 'playing') {
@@ -362,6 +402,12 @@
     listen(shell, 'pointerup', releasePointer); listen(shell, 'pointercancel', releasePointer); listen(shell, 'lostpointercapture', releasePointer);
     const load = Promise.all(Object.keys(catalog).map(path => new Promise((resolveLoad, reject) => {
       const image = new Image(); image.onload = () => { images[path] = image;
+        const species=Object.keys(C.SPECIES_COLORS).find(id=>path.includes('/'+id+'_'));
+        if(species) {
+          const layer=document.createElement('canvas');layer.width=image.width;layer.height=image.height;const lc=layer.getContext('2d');lc.drawImage(image,0,0);const pixels=lc.getImageData(0,0,image.width,image.height),mapping=C.SPECIES_COLORS[species];
+          for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[pixels.data[i],pixels.data[i+1],pixels.data[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('');const color=mapping[key];if(color){pixels.data[i]=parseInt(color.slice(0,2),16);pixels.data[i+1]=parseInt(color.slice(2,4),16);pixels.data[i+2]=parseInt(color.slice(4,6),16);}}
+          lc.putImageData(pixels,0,0);skins[path]=layer;
+        }
         if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/'))) {
           const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
           const tintCtx = tint.getContext('2d'); tintCtx.drawImage(image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';

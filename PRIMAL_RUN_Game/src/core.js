@@ -17,11 +17,48 @@
     parasaurolophus: { hp: 30, speed: 60, damage: 0, meat: 3, chance: .15, dna: 2, radius: 18 },
     carnotaurus: { hp: 48, speed: 77, damage: 13, meat: 5, chance: .30, dna: 4, radius: 21 },
     ankylosaurus: { hp: 65, speed: 38, damage: 16, meat: 5, chance: .30, dna: 4, radius: 23 },
-    deinosuchus: { hp: 70, speed: 53, damage: 17, meat: 5, chance: .30, dna: 4, radius: 23 },
-    triceratops: { hp: 80, speed: 50, damage: 19, meat: 5, chance: .30, dna: 4, radius: 25 },
-    tyrannosaurus: { hp: 95, speed: 65, damage: 22, meat: 5, chance: .30, dna: 4, radius: 26 },
+    deinosuchus: { hp: 70, speed: 53, damage: 17, meat: 5, chance: .30, dna: 4, radius: 32 },
+    triceratops: { hp: 80, speed: 50, damage: 19, meat: 5, chance: .30, dna: 4, radius: 28 },
+    tyrannosaurus: { hp: 95, speed: 65, damage: 22, meat: 5, chance: .30, dna: 4, radius: 32 },
   };
   const SPECIES_LABELS = { compy: 'Compsognathus', utahraptor: 'Utahraptor', parasaurolophus: 'Parasaurolophus', carnotaurus: 'Carnotaurus', ankylosaurus: 'Ankylosaurus', deinosuchus: 'Deinosuchus', triceratops: 'Triceratops', tyrannosaurus: 'Tyrannosaurus rex' };
+  // Habitat suitability, not a claim that these species coexisted historically.
+  const BIOMES = [
+    { animals: ['compy','compy','parasaurolophus','carnotaurus'], plants: ['cycad','broad_fern','seed_fern','conifer','horsetail','shrub','herb','moss','roots','mushrooms','leaf_litter','twigs'], insects: ['beetle','firefly'] },
+    { animals: ['compy','parasaurolophus','carnotaurus','deinosuchus'], plants: ['cycad','broad_fern','horsetail','reeds','shrub','fruit_bush','herb','moss','roots','flowers'], insects: ['dragonfly','beetle','firefly'] },
+    { animals: ['compy','parasaurolophus','carnotaurus','ankylosaurus','triceratops'], plants: ['conifer','shrub','herb','dry_grass','lichen','succulent','twigs','flowers'], insects: ['beetle'] },
+    { animals: ['compy','parasaurolophus','carnotaurus','ankylosaurus','tyrannosaurus'], plants: ['dry_grass','lichen','succulent','twigs'], insects: ['beetle'] },
+  ];
+  function riverDistance(map, p) {
+    let distance = Infinity;
+    for (let i=1;i<map.river.length;i++) {
+      const a=map.river[i-1],b=map.river[i],dx=b.x-a.x,dy=b.y-a.y;
+      const t=Math.max(0,Math.min(1,((p.x-a.x)*dx+(p.y-a.y)*dy)/(dx*dx+dy*dy)));
+      distance=Math.min(distance,Math.hypot(p.x-a.x-t*dx,p.y-a.y-t*dy));
+    }
+    return distance;
+  }
+  function suitableHabitat(stage,map,kind,p) {
+    if (!BIOMES[stage].animals.includes(kind) && STAGES[stage].boss!==kind) return false;
+    const distance=riverDistance(map,p);
+    if(stage===3 && distance<90) return false; // No animals spawn in lava.
+    if(stage===1) return kind==='deinosuchus' ? distance>=38 && distance<=135 : distance>=85;
+    return kind!=='deinosuchus';
+  }
+  // Display-only mapping stays within the existing Primal Earth 32 palette.
+  const SPECIES_COLORS={};
+  const warm=['443027','674333','8d6042','b98252','d4a36c','edd0a0','54282d','913b32','c6663c','de954a'];
+  const tones={
+    compy:['28372a','3f5030','586d38','799447','a8b15b','ded392','28372a','3f5030','586d38','799447'],
+    utahraptor:['3b4144','3c7180','3c7180','69a4a0','a2d4c1','e8ece1','3b4144','3c7180','69a4a0','a2d4c1'],
+    carnotaurus:['443027','674333','8d6042','b98252','d4a36c','edd0a0','443027','8d6042','b98252','d4a36c'],
+    ankylosaurus:['3b4144','626861','626861','929387','bab8a2','e8ece1','3b4144','626861','929387','bab8a2'],
+    parasaurolophus:['28372a','3f5030','586d38','799447','ded392','edd0a0','443027','586d38','a8b15b','ded392'],
+    deinosuchus:['151b19','28372a','3f5030','586d38','799447','bab8a2','151b19','28372a','3f5030','586d38'],
+    triceratops:['3b4144','626861','626861','929387','bab8a2','edd0a0','443027','626861','929387','bab8a2'],
+    tyrannosaurus:['443027','674333','8d6042','b98252','d4a36c','edd0a0','443027','674333','8d6042','b98252'],
+  };
+  for(const [id,ramp] of Object.entries(tones)){SPECIES_COLORS[id]=Object.fromEntries(warm.map((color,i)=>[color,ramp[i]]));SPECIES_COLORS[id]['8d2028']=ramp[1];}
   const PLAYER_SPECIES = {
     compy: { name: 'Compy', cost: 0, hp: 80, damage: 6, speed: 175, radius: 12, cooldown: .32, duration: .24, range: 52, skill: 'Smutter', text: 'Hurtige bid og korte undvigelser. Shift: smut frem, 20 stamina.', abilityCost: 20, abilityTime: .16, abilityCooldown: 1.25 },
     utahraptor: { name: 'Utahraptor', cost: 25, hp: 100, damage: 10, speed: 155, radius: 16, cooldown: .5, duration: 6 / 14, range: 66, skill: 'Springangreb', text: 'Balanceret jæger. Shift: beskyttet spring; kløer rammer én gang pr. dyr.', abilityCost: 30, abilityTime: .23, abilityCooldown: 1.8 },
@@ -90,21 +127,39 @@
       rocks.push({ x: Math.round(x), y: Math.round(y), radius: 22 });
     }
     for (let i = 0; i < 28; i++) regions.push({ x: Math.round(random() * width), y: Math.round(random() * height), radius: 90 + random() * 170, seed: random() * 100 });
+    const river = Array.from({ length: 7 }, (_, i) => ({ x: Math.round(width * (.66 + random() * .2)), y: height * i / 6 }));
+    const habitatMap={river};
     const props = stage === 0 ? ['fern_large', 'fern_large', 'fern_large', 'tree_canopy', 'flower_bush', 'fallen_log'] : stage === 1 ? ['fern_large', 'fern_large', 'flower_bush', 'tree_canopy', 'fallen_log'] : stage === 2 ? ['fern_large', 'fern_large', 'boulder_large', 'dead_tree', 'flower_bush'] : ['fern_large', 'lava_rock', 'dead_tree', 'ribcage', 'meteorite'];
     const count = [850, 850, 600, 450][stage];
     for (let i = 0; i < count; i++) {
       const x = Math.round(70 + random() * (width - 140)), y = Math.round(90 + random() * (height - 180));
       if (Math.hypot(x - 480, y - 340) < 65) continue;
       const prop = props[Math.floor(random() * props.length)];
+      if(stage===3 && riverDistance(habitatMap,{x,y})<100) continue;
       decorations.push({ x, y, path: 'assets/props/' + prop + '.png', canopy: prop === 'tree_canopy', foliage: ['fern_large', 'flower_bush', 'tree_canopy'].includes(prop) });
     }
     if (stage < 3) for (let i = 0; i < 500; i++) decorations.push({ x: Math.round(70 + random() * (width - 140)), y: Math.round(90 + random() * (height - 180)), path: 'assets/environment/fern.png', foliage: true });
+    const ecology=BIOMES[stage];
+    for(let i=0;i<420;i++) {
+      const x=Math.round(70+random()*(width-140)),y=Math.round(90+random()*(height-180));
+      if(Math.hypot(x-480,y-340)<65 || stage===3 && riverDistance(habitatMap,{x,y})<145) continue;
+      let plant=ecology.plants[Math.floor(random()*ecology.plants.length)];
+      if(stage===1 && riverDistance(habitatMap,{x,y})<170) plant=random()<.6?'reeds':'horsetail';
+      decorations.push({x,y,path:'assets/ecology/'+plant+'.png',foliage:!['lichen','twigs','leaf_litter','moss'].includes(plant),ecology:true});
+    }
+    const ambience=[];
+    for(let i=0;i<45;i++) {
+      let x=Math.round(70+random()*(width-140)),y=Math.round(90+random()*(height-180));
+      const kind=ecology.insects[i%ecology.insects.length];
+      if(kind==='dragonfly'){ const n=Math.floor(random()*(river.length-1)),a=river[n],b=river[n+1],t=.35+random()*.3;x=Math.round(a.x+(b.x-a.x)*t-80);y=Math.round(a.y+(b.y-a.y)*t); }
+      if(stage===3 && riverDistance(habitatMap,{x,y})<145)continue;
+      ambience.push({x,y,kind,phase:random()*Math.PI*2});
+    }
     for (let i = 0; i < 6; i++) {
       const h = habitats[Math.floor((i + .5) / 6 * habitats.length)];
       sites.push({ id: i, type: i % 3 === 0 ? 'fossil' : i % 3 === 1 ? 'nest' : 'rare', x: h.x, y: h.y, claimed: false, discovered: false });
     }
-    const river = Array.from({ length: 7 }, (_, i) => ({ x: Math.round(width * (.66 + random() * .2)), y: height * i / 6 }));
-    return { seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites };
+    return { seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites, ambience };
   }
   const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
   const finite = (n, fallback = 0) => typeof n === 'number' && Number.isFinite(n) ? n : fallback;
@@ -173,18 +228,26 @@
       const r = this.run;
       this.spawn('compy', { x: 420, y: 245 }); this.spawn('compy', { x: 575, y: 350 });
       this.spawn('parasaurolophus', { x: 640, y: 225 });
-      const pool = r.stage === 0 ? ['compy', 'parasaurolophus', 'compy'] : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'ankylosaurus', 'carnotaurus'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];
+      const pool = r.stage === 0 ? ['compy', 'parasaurolophus', 'compy'] : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'ankylosaurus', 'carnotaurus', 'triceratops'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];
       r.map.habitats.forEach((p, i) => {
-        this.spawn(pool[Math.floor(p.roll * pool.length)], p);
-        if (i % 3 === 0) this.spawn('compy', { x: p.x + 45, y: p.y + 30 });
+        const eligible=pool.filter(kind=>suitableHabitat(r.stage,r.map,kind,p));
+        if(eligible.length)this.spawn(eligible[Math.floor(p.roll*eligible.length)],p);
+        const flock={x:p.x+45,y:p.y+30};
+        if (i % 3 === 0 && suitableHabitat(r.stage,r.map,'compy',flock)) this.spawn('compy',flock);
       });
       for (const site of r.map.sites) {
-        if (site.type === 'rare') { const e = this.spawn('parasaurolophus', site); e.rare = true; e.speed *= 1.2; site.animalId = e.id; }
-        if (site.type === 'nest') { const e = this.spawn(r.stage === 0 ? 'carnotaurus' : STAGES[r.stage].boss, { x: site.x + 100, y: site.y }); e.elite = true; e.guard = true; e.hp *= 1.6; e.maxHP = e.hp; e.damage *= 1.3; e.speed *= 1.08; site.guardId = e.id; }
+        if (site.type === 'rare') { const point=this.habitatPosition('parasaurolophus',site);if(!point)continue;site.x=point.x;site.y=point.y;const e = this.spawn('parasaurolophus', point); e.rare = true; e.speed *= 1.2; site.animalId = e.id; }
+        if (site.type === 'nest') { const kind=r.stage===1?'carnotaurus':STAGES[r.stage].boss;const point=this.habitatPosition(kind,{x:site.x+100,y:site.y});if(!point)continue;if(Math.hypot(point.x-site.x,point.y-site.y)>180){site.x=point.x;site.y=point.y+70;}const e=this.spawn(kind,point); e.elite = true; e.guard = true; e.hp *= 1.6; e.maxHP = e.hp; e.damage *= 1.3; e.speed *= 1.08; site.guardId = e.id; }
       }
       r.spawnTimer = r.stage === 0 ? 5 : 1;
     }
-    hiddenSpawn() {
+    habitatPosition(kind, near) {
+      const r=this.run;
+      const candidates=[near,...r.map.habitats].filter(p=>suitableHabitat(r.stage,r.map,kind,p) && !r.map.rocks.some(rock=>Math.hypot(p.x-rock.x,p.y-rock.y)<65));
+      candidates.sort((a,b)=>Math.hypot(a.x-near.x,a.y-near.y)-Math.hypot(b.x-near.x,b.y-near.y));
+      return candidates[0] || null;
+    }
+    hiddenSpawn(kind='compy') {
       const r = this.run, v = r.view, start = this.random() * Math.PI * 2;
       for (let i = 0; i < 32; i++) {
         const angle = start + i * Math.PI * 2 / 32;
@@ -192,18 +255,21 @@
         const p = { x: r.player.x + Math.cos(angle) * distance, y: r.player.y + Math.sin(angle) * distance };
         if (p.x < 80 || p.y < 100 || p.x > r.map.width - 80 || p.y > r.map.height - 80) continue;
         if (p.x > v.x - 128 && p.x < v.x + v.width + 128 && p.y > v.y - 128 && p.y < v.y + v.height + 128) continue;
-        if (r.map.rocks.some(rock => Math.hypot(p.x - rock.x, p.y - rock.y) < 65)) continue;
+        if (r.map.rocks.some(rock => Math.hypot(p.x - rock.x, p.y - rock.y) < 65) || !suitableHabitat(r.stage,r.map,kind,p)) continue;
         return p;
+      }
+      if(kind==='deinosuchus') {
+        return r.map.habitats.find(p=>suitableHabitat(r.stage,r.map,kind,p) && (p.x<v.x-128 || p.x>v.x+v.width+128 || p.y<v.y-128 || p.y>v.y+v.height+128) && !r.map.rocks.some(rock=>Math.hypot(p.x-rock.x,p.y-rock.y)<65)) || null;
       }
       return null;
     }
     spawn(kind, position, boss = false) {
       const r = this.run, base = SPECIES[kind]; if (!base) throw Error('Unknown species');
-      const p = position || this.hiddenSpawn(); if (!p) return null;
+      const p = position || this.hiddenSpawn(kind); if (!p) return null;
       const scale = 1 + r.stage * .3;
       const hp = boss ? (220 + r.stage * 85) : base.hp * scale;
-      const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? 32 : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0, walk: 0, poseTime: 0, moving: false, direction: 'S', attackHit: false, attackRadius: kind === 'ankylosaurus' ? 90 : boss ? 130 : base.radius + 28 };
-      e.bossPhase = 1; e.attackCycle = 0; e.attackName = ''; e.followUp = false; e.trailTimer = 0; e.homeX = p.x; e.homeY = p.y; e.alert = boss; e.lastAttackedAt = -1000; e.disengagedUntil = 0; r.enemies.push(e); return e;
+      const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? (kind==='carnotaurus'?42:32) : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0, walk: 0, poseTime: 0, moving: false, direction: 'S', attackHit: false, attackRadius: kind === 'ankylosaurus' ? 90 : boss ? 130 : base.radius + 28 };
+      e.visualScale=boss && kind==='carnotaurus'?2:1; e.bossPhase = 1; e.attackCycle = 0; e.attackName = ''; e.followUp = false; e.trailTimer = 0; e.homeX = p.x; e.homeY = p.y; e.alert = boss; e.lastAttackedAt = -1000; e.disengagedUntil = 0; r.enemies.push(e); return e;
     }
     move(entity, dx, dy) {
       entity.x = clamp(entity.x + dx, 42 + entity.radius, this.run.map.width - 42 - entity.radius);
@@ -642,7 +708,7 @@
         const building = r.stage === 0 && !opening && r.meat < 12;
         const cap = r.stage === 0 ? (opening ? 3 : building ? 5 : 7) : 9 + r.stage * 2;
         if (r.spawnTimer <= 0 && r.enemies.filter(e => Math.hypot(e.x - r.player.x, e.y - r.player.y) < 900).length < cap && r.enemies.length < 120) {
-          const pool = r.stage === 0 ? (opening ? ['compy', 'parasaurolophus'] : building ? ['compy', 'compy', 'parasaurolophus'] : ['compy', 'parasaurolophus', 'carnotaurus']) : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'carnotaurus', 'ankylosaurus'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];
+          const pool = r.stage === 0 ? (opening ? ['compy', 'parasaurolophus'] : building ? ['compy', 'compy', 'parasaurolophus'] : ['compy', 'parasaurolophus', 'carnotaurus']) : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'carnotaurus', 'ankylosaurus', 'triceratops'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];
           let kind = pool[Math.floor(this.random() * pool.length)];
           if (r.stage === 0 && r.enemies.filter(e => e.kind === 'carnotaurus' && !e.elite).length >= 1 && kind === 'carnotaurus') kind = 'compy';
           this.spawn(kind); r.spawnTimer = r.stage === 0 ? (opening ? 4 : building ? 3.2 : 2.6) : Math.max(1, 2.4 - r.stage * .35);
@@ -667,5 +733,5 @@
       r.attack = null; r.bite = 0; r.deathTime = victory ? -1 : 0; this.phase = 'result'; this.persist(); this.emit(victory ? 'victory' : 'death');
     }
   }
-  return { Game, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { Game, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

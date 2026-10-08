@@ -25,6 +25,9 @@ def build():
     full_overlay = GAME / 'player_full_manifest.json'
     if full_overlay.exists():
         manifest += json.loads(full_overlay.read_text(encoding='utf-8'))
+    ecology_overlay = GAME / 'ecology_manifest.json'
+    if ecology_overlay.exists():
+        manifest += json.loads(ecology_overlay.read_text(encoding='utf-8'))
     if len({entry['file'] for entry in manifest}) != len(manifest):
         raise SystemExit('Duplicate resource paths in combined manifest')
     for folder in ('assets', 'sounds', 'Source_Generated'):
