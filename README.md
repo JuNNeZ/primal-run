@@ -27,7 +27,10 @@ i Chromium. Se [spillets vejledning](PRIMAL_RUN_Game/README.md) og
 
 `npm run build:web` klargør `dist/` til GitHub Pages. Den manuelle workflow
 **Publish PRIMAL RUN to GitHub Pages** publicerer efter opsætning i GitHub.
-Der er ikke foretaget nogen deployment som del af det lokale udviklingsarbejde.
+Den færdige webdemo ligger også på branchen **gh-pages**. Vælg
+**Settings → Pages → Deploy from a branch → gh-pages → / (root) → Save**.
+Efter GitHubs deployment er adressen https://junnez.github.io/primal-run/.
+Publicering er først aktiv, når Pages er slået til i repositoryets indstillinger.
 
 Læs [cloud-overdragelsen](CLOUD_HANDOFF.md), når arbejdet fortsættes på en anden computer.
 Den komplette asset-guide ligger i
