@@ -43,6 +43,13 @@
           <div class="menu-grid">${button('shop', 'DNA-laboratorium <b>' + game.save.dna + '</b>')}${button('scores', 'Highscores')}${button('settings', 'Indstillinger')}${button('help', 'Sådan spiller du')}</div>
           <p class="fine">Kød giver levels. Bosser åbner næste biome. DNA beholdes, når du dør.</p></section>`;
         screen.querySelector('[data-action="start"]').disabled = !ready;
+      } else if (phase === 'intro') {
+        screen.innerHTML = `<section class="panel hunt-intro">${heading('KLAR PÅ 20 SEKUNDER', 'Sådan overlever du')}
+          <dl class="control-guide"><div><dt><kbd>WASD</kbd> / <kbd>↑ ↓ ← →</kbd></dt><dd>Bevæg dig og vend mod dit bytte.</dd></div><div><dt><kbd>SPACE</kbd></dt><dd>Hold for at bide. Du rammer kun foran dig — gå tæt på!</dd></div><div><dt><kbd>SHIFT</kbd> + bevægelse</dt><dd>Spring frem og undvig. Bruger stamina, som fyldes igen.</dd></div><div><dt><kbd>ESC</kbd></dt><dd>Pause og indstillinger.</dd></div></dl>
+          <p class="hunt-goal"><strong>Jagt → saml kød → vælg mutationer.</strong><br>Nå kødmålet, besejr bossen, og fortsæt til næste biome. Undvig de røde angrebsvarsler.</p>
+          <p class="hunt-goal"><strong>DNA beholdes, når du dør.</strong> Saml DNA fra byttet — bosser giver det altid. Køb permanente upgrades i DNA-laboratoriet før næste jagt.</p>
+          <p class="fine">På mobil: brug pileknapperne, BID og POUNCE under spillet.</p>
+          <div class="actions">${button('menu', '← Tilbage')}${button('begin', 'FORSTÅET — START JAGTEN →', 'primary')}</div></section>`;
       } else if (phase === 'shop') {
         screen.innerHTML = `<section class="panel">${heading('PERMANENT EVOLUTION', 'DNA-laboratoriet', 'Små forbedringer til dit næste run. Mutationerne finder du stadig på jagten.')}<div class="bank">${imageTag('assets/ui/dna.png')}<b>${game.save.dna} DNA</b></div><div class="upgrade-grid">${C.UPGRADES.map(u => {
           const rank = game.save.upgrades[u.id], cost = C.upgradeCost(rank);
@@ -70,7 +77,7 @@
       } else if (phase === 'error') {
         screen.innerHTML = `<section class="panel">${heading('INDLÆSNING FEJLEDE', 'Assets mangler')}<p>Kontrollér, at assets-mappen følger med spillet. Genindlæs siden efter rettelsen.</p><p class="load-error"></p></section>`;
       }
-      const focus = screen.querySelector('button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
+      const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
       shell.querySelector('.save-status').textContent = game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session';
     }
     function sprite(path, x, y, alpha = 1) {
@@ -174,7 +181,8 @@
       if (target.dataset.mutation) { game.choose(target.dataset.mutation); renderScreen(); return; }
       const action = target.dataset.action;
       if (action) e.preventDefault();
-      if (action === 'start' && ready) { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); game.start(); }
+      if (action === 'start' && ready) { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); game.phase = 'intro'; }
+      else if (action === 'begin' && ready && game.phase === 'intro') game.start();
       else if (['shop', 'scores', 'help'].includes(action)) { if (game.phase === 'menu') { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); } game.phase = action; }
       else if (action === 'settings') { returnPhase = game.phase === 'paused' ? 'paused' : 'menu'; const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); game.phase = 'settings'; }
       else if (action === 'back') game.phase = returnPhase;
@@ -198,7 +206,7 @@
       if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
       audio.unlock();
       if (e.code === 'Escape' && !e.repeat) {
-        if (game.phase === 'playing') game.pause(); else if (game.phase === 'paused') game.resume(); else if (game.phase === 'settings') game.phase = returnPhase; else if (['help', 'shop', 'scores'].includes(game.phase)) game.phase = 'menu';
+        if (game.phase === 'playing') game.pause(); else if (game.phase === 'paused') game.resume(); else if (game.phase === 'settings') game.phase = returnPhase; else if (['intro', 'help', 'shop', 'scores'].includes(game.phase)) game.phase = 'menu';
         renderScreen(); return;
       }
       if (game.phase === 'mutation' && /^Digit[123]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); renderScreen(); return; }
