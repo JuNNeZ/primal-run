@@ -14,3 +14,5 @@ html,body{height:100%;margin:0;overflow:hidden}.primal-shell{width:100%;max-widt
 .species-grid img{width:128px;height:128px;image-rendering:pixelated}.selected-species{outline:2px solid #69a4a0}.species-grid article small{display:block;margin:12px 0}.run-info{flex-wrap:wrap}.touch-controls>div:last-child{display:flex;gap:6px;flex-wrap:wrap}.species-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
 
 .screen[data-phase="species"]{align-items:flex-start}.screen[data-phase="species"] .panel{width:min(100%,1100px)}
+
+.death-preview{width:144px;height:144px;image-rendering:pixelated}.selected-dino{color:#69a4a0;font-size:12px;margin:0 0 12px}.species-grid img{width:144px;height:144px}

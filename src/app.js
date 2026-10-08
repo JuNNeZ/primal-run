@@ -39,6 +39,7 @@
       if (phase === 'menu') {
         screen.innerHTML = `<section class="panel menu-panel">${heading('JAGT · MUTÉR · OVERLEV', 'PRIMAL <em>RUN</em>', 'Start som Compy. Lås nye arter op. Fire tilfældige naturkort og ét liv.')}
           <label class="name-label">DIT NAVN<input id="player-name" maxlength="20" autocomplete="nickname" value="${htmlEscape(game.save.name)}"></label>
+          <p class="selected-dino">${C.PLAYER_SPECIES[game.save.selectedSpecies].name} · ${C.PLAYER_SPECIES[game.save.selectedSpecies].skill}</p>
           ${button('start', ready ? 'START JAGTEN <span>→</span>' : 'INDLÆSER…', 'primary')}
           <div class="menu-grid">${button('species', 'Vælg dinosaur')}${button('shop', 'DNA-laboratorium <b>' + game.save.dna + '</b>')}${button('scores', 'Highscores')}${button('settings', 'Indstillinger')}${button('help', 'Sådan spiller du')}</div>
           <p class="fine">Kød giver levels. Bosser åbner næste biome. DNA beholdes, når du dør.</p></section>`;
@@ -53,7 +54,7 @@
       } else if (phase === 'species') {
         screen.innerHTML = `<section class="panel">${heading('PERMANENT ARTSARKIV', 'Vælg dinosaur', 'DNA-unlocks beholdes ved død. Valget gælder næste jagt. ' + game.save.dna + ' DNA i banken.')}<div class="upgrade-grid species-grid">${Object.entries(C.PLAYER_SPECIES).map(([id, d]) => {
           const unlocked = game.save.unlockedSpecies.includes(id), selected = game.save.selectedSpecies === id;
-          const path = id === 'utahraptor' ? 'assets/player/utahraptor_idle_S_000.png' : 'assets/enemy_animations/' + id + '_idle_S_000.png';
+          const path = 'assets/player_full/' + id + '_idle_S_000.png';
           return `<article class="${selected ? 'selected-species' : ''}">${imageTag(path)}<h2>${d.name}</h2><p>${d.text}</p><small>${d.hp} LIV · ${d.damage} SKADE · ${d.speed} FART</small><button data-species="${id}" ${selected || !unlocked && game.save.dna < d.cost ? 'disabled' : ''}>${selected ? 'VALGT' : unlocked ? 'VÆLG' : 'LÅS OP · ' + d.cost + ' DNA'}</button></article>`;
         }).join('')}</div><p class="fine">Et fantasiunivers: arterne kommer fra forskellige perioder. Compy: sen Jura. Utahraptor: tidlig Kridt. De øvrige arter: sen Kridt. Deinosuchus er en krokodilleslægt.</p>${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'shop') {
@@ -82,7 +83,7 @@
         screen.innerHTML = `<section class="panel compact">${heading('BOSS BESEJRET', stage.bossName + ' er faldet', '+' + stage.dna + ' DNA er gemt. Din dinosaur bliver stærkere.')}<div class="bank">${imageTag('assets/ui/dna.png')}<b>${game.save.dna} DNA</b></div>${button('next', r.stage === 3 ? 'AFSLUT JAGTEN →' : 'NÆSTE BIOME →', 'primary')}<p class="fine">${r.stage === 3 ? 'Alle fire biomer er erobret.' : 'Du beholder mutationerne og genvinder 30 % af dit maksimale liv.'}</p></section>`;
       } else if (phase === 'result') {
         const result = r.result;
-        screen.innerHTML = `<section class="panel compact">${heading(result.victory ? 'DALENS NYE KONGE' : 'EVOLUTIONEN FORTSÆTTER', result.victory ? 'Jagten er vundet' : 'Jagten er slut', htmlEscape(result.name) + ' · Bane ' + result.stage + ' · ' + result.bosses + ' bosser')}<div class="result-stats"><div><small>SCORE</small><b>${result.score}</b></div><div><small>DNA I RUN</small><b>+${r.dna}</b></div><div><small>TID</small><b>${timeLabel(result.seconds)}</b></div></div>${button('start', 'NY JAGT →', 'primary')}<div class="actions">${button('shop', 'DNA-laboratorium')}${button('scores', 'Highscores')}${button('menu', 'Hovedmenu')}</div></section>`;
+        screen.innerHTML = `<section class="panel compact">${heading(result.victory ? 'DALENS NYE KONGE' : 'EVOLUTIONEN FORTSÆTTER', result.victory ? 'Jagten er vundet' : 'Jagten er slut', htmlEscape(result.name) + ' · Bane ' + result.stage + ' · ' + result.bosses + ' bosser')}${result.victory ? "" : "<img class=\"death-preview\" alt=\"Din dinosaur efter jagten\">"}<div class="result-stats"><div><small>SCORE</small><b>${result.score}</b></div><div><small>DNA I RUN</small><b>+${r.dna}</b></div><div><small>TID</small><b>${timeLabel(result.seconds)}</b></div></div>${button('start', 'NY JAGT →', 'primary')}<div class="actions">${button('shop', 'DNA-laboratorium')}${button('scores', 'Highscores')}${button('menu', 'Hovedmenu')}</div></section>`;
       } else if (phase === 'error') {
         screen.innerHTML = `<section class="panel">${heading('INDLÆSNING FEJLEDE', 'Assets mangler')}<p>Kontrollér, at assets-mappen følger med spillet. Genindlæs siden efter rettelsen.</p><p class="load-error"></p></section>`;
       }
@@ -220,10 +221,17 @@
           const attackPath = 'assets/player_combat/utahraptor_bite_' + r.attack.facing + '_' + String(attackFrame).padStart(3, '0') + '.png';
           if (catalog[attackPath]) playerPath = attackPath;
         }
-        if (r.species !== 'utahraptor') {
-          const state = r.attack ? (r.attack.elapsed / r.attack.duration < .25 || r.attack.elapsed / r.attack.duration > .75 ? 'idle' : 'action') : r.pounce > 0 ? 'action' : p.moving ? ['idle','step_left','idle','step_right'][Math.floor(p.walk * 8) % 4] : 'idle';
-          playerPath = 'assets/enemy_animations/' + r.species + '_' + state + '_' + (r.attack ? r.attack.facing : p.facing) + '_000.png';
+        const animationState = r.deathTime >= 0 ? 'death' : r.hurt > 0 ? 'hurt' : r.attack ? 'attack' : p.moving ? (r.pounce > 0 ? 'run' : 'walk') : 'idle';
+        const animationDirection = r.attack && animationState === 'attack' ? r.attack.facing : p.facing;
+        const animationFrame = animationState === 'death' ? Math.min(5, Math.floor(r.deathTime * 8)) : animationState === 'hurt' ? Math.min(1, Math.floor((.25 - r.hurt) * 8)) : animationState === 'attack' ? Math.min(5, Math.floor(r.attack.elapsed / r.attack.duration * 6)) : animationState === 'idle' ? Math.floor(r.seconds * 4) % 4 : Math.floor(p.walk * (animationState === 'run' ? 12 : 8)) % 6;
+        const fullPath = 'assets/player_full/' + r.species + '_' + animationState + '_' + animationDirection + '_' + String(animationFrame).padStart(3, '0') + '.png';
+        if (catalog[fullPath]) playerPath = fullPath;
+        else if (r.species !== 'utahraptor') {
+          const state = r.attack ? 'action' : p.moving ? ['idle', 'step_left', 'idle', 'step_right'][Math.floor(p.walk * 8) % 4] : 'idle';
+          playerPath = 'assets/enemy_animations/' + r.species + '_' + state + '_' + p.facing + '_000.png';
         }
+        canvas.dataset.playerAnimation = animationState + ':' + animationFrame;
+        const resultPreview = shell.querySelector('.death-preview'); if (resultPreview && catalog[fullPath]) resultPreview.src = resolve(fullPath);
         canvas.dataset.playerSpecies = r.species;
         canvas.dataset.playerSprite = playerPath;
         canvas.dataset.playerState = r.attack ? 'Bite_' + r.attack.facing : (p.moving ? 'Walk_' : 'Idle_') + p.facing;
@@ -237,7 +245,7 @@
         const alpha = o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
         sprite(o.path, o.x, o.y, alpha, false, o.rotation);
         if (o.player && r.jonas) { ctx.fillStyle = '#e9b75a'; const x = Math.round(o.x), y = Math.round(o.y) - 46; ctx.fillRect(x - 9, y, 18, 5); ctx.fillRect(x - 9, y - 5, 4, 5); ctx.fillRect(x - 2, y - 7, 4, 7); ctx.fillRect(x + 5, y - 5, 4, 5); }
-        if (o.enemy) label((o.enemy.boss ? '◆ ' : o.enemy.elite ? '★ ' : o.enemy.rare ? '✦ ' : '') + C.SPECIES_LABELS[o.enemy.kind], o.x, o.y - 53, o.enemy.damage ? '#ed7869' : '#8eaa60');
+        if (o.enemy) label((o.enemy.mode === 'return' ? '↩ ' : o.enemy.boss ? '◆ ' : o.enemy.elite ? '★ ' : o.enemy.rare ? '✦ ' : '') + C.SPECIES_LABELS[o.enemy.kind], o.x, o.y - 53, o.enemy.damage ? '#ed7869' : '#8eaa60');
         if (o.enemy && o.enemy.boss) {
           if (o.enemy.mode === 'recover') {
             const e = o.enemy; ctx.strokeStyle = '#a2d4c1'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(Math.round(e.x - e.facingX * 24), Math.round(e.y - e.facingY * 24), 18, 0, Math.PI * 2); ctx.stroke(); label('ÅBEN FLANKE · +50 %', e.x, e.y - 82, '#a2d4c1');
@@ -288,6 +296,7 @@
       if (disposed) return;
       const dt = last ? Math.min(.1, Math.max(0, (now - last) / 1000)) : 0; last = now;
       const phaseBefore = game.phase; accumulator += dt;
+      if (game.phase === 'result' && game.run.deathTime >= 0) game.run.deathTime = Math.min(.75, game.run.deathTime + dt);
       if (ready && game.phase === 'playing') {
         while (accumulator >= 1 / 60 && game.phase === 'playing') {
           game.step(1 / 60, { x: (keys.has('KeyD') || keys.has('ArrowRight') ? 1 : 0) - (keys.has('KeyA') || keys.has('ArrowLeft') ? 1 : 0), y: (keys.has('KeyS') || keys.has('ArrowDown') ? 1 : 0) - (keys.has('KeyW') || keys.has('ArrowUp') ? 1 : 0), attack: keys.has('Space'), interact: keys.has('KeyE'), pounce: keys.has('ShiftLeft') || keys.has('ShiftRight') });

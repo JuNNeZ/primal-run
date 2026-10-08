@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-08",
+  "status": "PASS",
+  "core_tests": 42,
+  "pursuit_tests": 5,
+  "new_frames": 480,
+  "sequences": 96,
+  "active_pngs": 672,
+  "gdevelop_resources": 680,
+  "standalone": {
+    "runtime": "standalone Chromium",
+    "status": "PASS",
+    "checked": 480,
+    "states": 6,
+    "species": 4,
+    "directions": 4,
+    "checks": [
+      "480 actual drawn frames",
+      "six states/four directions/four classes",
+      "native144 and registered origins",
+      "stable species body collision/no smoothing",
+      "pause freezes animation",
+      "actual hurt/death transitions and terminal corpse"
+    ],
+    "production_approved": false
+  },
+  "official_gdevelop": {
+    "runtime": "official GDevelop GDJS 5.6.283",
+    "status": "PASS",
+    "checked": 480,
+    "states": 6,
+    "species": 4,
+    "directions": 4,
+    "checks": [
+      "480 actual drawn frames",
+      "six states/four directions/four classes",
+      "native144 and registered origins",
+      "stable species body collision/no smoothing",
+      "pause freezes animation",
+      "actual hurt/death transitions and terminal corpse"
+    ],
+    "production_approved": false
+  },
+  "source_sha256": {
+    "src/core.js": "d10cd6ae01054d7ce021bf7888b07554055596c17d736ff38cd185e9b43d6e14",
+    "src/app.js": "1f66b20232ac0e4821a5bf63aa87573f79c095ba71ac37bf8ce23a518fd45b82",
+    "src/audio.js": "8c05993c669bd89459bb52b885409f590d5d84815b4dc4fb23e99b536ee42010",
+    "style.css": "c4600bc8e1c9b7cad46ad758589928a8a65a9b8a1437ccc2ff9de8b0dc014b29"
+  },
+  "full_npm_test": "PASS in temporary checkout; original kit preserved",
+  "validators": "PASS: kit, game, enemies, player-full, historical root sprites",
+  "visual_review": "Native grids on light/dark backgrounds; complete frame sets, minor anatomy/marking/registration variations remain",
+  "production_approved": false,
+  "animation_ready": false
+}
