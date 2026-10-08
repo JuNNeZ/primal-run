@@ -7,6 +7,9 @@ Utahraptor, fire biomer/bosser, kød/levels, mutationer, permanent DNA-shop,
 startmenu, lokale highscores, lydindstillinger og original proceduremusik.
 Den fælles spilkerne kører i browseren og i et GDevelop 5-projekt.
 
+Fire fjendearter har nu gang/action-studier i fire retninger og forskellig AI.
+[Se fjendeanimationerne](PRIMAL_RUN_Game/enemy_review.html).
+
 Utahraptoren har nu et seks-frame bid i hver af fire retninger med skade på
 kontaktframen. [Se alle nye player-frames og animationer](PRIMAL_RUN_Game/player_review.html).
 

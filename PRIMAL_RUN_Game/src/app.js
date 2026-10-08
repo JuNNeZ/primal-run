@@ -103,19 +103,29 @@
         for (const e of r.enemies) if (e.mode === 'windup') {
           ctx.strokeStyle = '#ed7869'; ctx.fillStyle = '#913b3277'; ctx.lineWidth = 3;
           ctx.beginPath();
-          if (e.pattern === 2) ctx.arc(Math.round(e.x), Math.round(e.y), 130, 0, Math.PI * 2);
+          if (e.pattern === 2 || e.kind === 'compy') ctx.arc(Math.round(e.x), Math.round(e.y), e.attackRadius, 0, Math.PI * 2);
           else {
             const x = Math.round(e.x), y = Math.round(e.y), nx = -e.chargeY * 28, ny = e.chargeX * 28, length = e.boss ? 200 : 130;
             ctx.moveTo(x + nx, y + ny); ctx.lineTo(x + e.chargeX * length + nx, y + e.chargeY * length + ny); ctx.lineTo(x + e.chargeX * length - nx, y + e.chargeY * length - ny); ctx.lineTo(x - nx, y - ny); ctx.closePath();
           }
           ctx.fill(); ctx.stroke();
+          ctx.font = 'bold 10px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#151b19';
+          const warning = e.kind === 'compy' ? 'BID' : e.kind === 'ankylosaurus' ? 'HALESLAG' : 'STORMLØB';
+          ctx.strokeText(warning, Math.round(e.x), Math.round(e.y) - 66); ctx.fillStyle = '#ed7869'; ctx.fillText(warning, Math.round(e.x), Math.round(e.y) - 66);
         }
         for (const p of r.pickups) sprite(p.kind === 'meat' ? 'assets/pickups/meat.png' : p.kind === 'dna' ? 'assets/pickups/dna_pickup.png' : 'assets/ui/health.png', p.x, p.y);
       }
       const objects = C.ROCKS.map(p => ({ ...p, path: 'assets/environment/rock.png' }));
       for (const [x, y] of [[100, 130], [130, 490], [855, 125], [835, 540], [390, 180], [600, 510], [87, 565], [860, 350]]) objects.push({ x, y, path: 'assets/environment/fern.png' });
       if (r) {
-        for (const e of r.enemies) objects.push({ ...e, enemy: e, path: 'assets/enemies/' + e.kind + '_idle_S_000.png' });
+        for (const e of r.enemies) {
+          let state = 'idle';
+          if (['charge', 'bite', 'slam'].includes(e.mode) || (e.mode === 'windup' && e.timer < e.windupDuration * .5)) state = 'action';
+          else if (e.moving) state = (e.mode === 'flee' ? ['step_left', 'action', 'step_right', 'action'] : ['idle', 'step_left', 'idle', 'step_right'])[Math.min(3, Math.floor(e.walk * 8))];
+          const candidate = 'assets/enemy_animations/' + e.kind + '_' + state + '_' + e.direction + '_000.png';
+          const path = catalog[candidate] ? candidate : 'assets/enemies/' + e.kind + '_idle_S_000.png';
+          objects.push({ ...e, enemy: e, path });
+        }
         const p = r.player, frame = String(Math.min(5, Math.floor(p.walk * 8))).padStart(3, '0');
         let playerPath = 'assets/player/utahraptor_' + (p.moving ? 'walk_' : 'idle_') + p.facing + '_' + (p.moving ? frame : '000') + '.png';
         if (r.attack) {
@@ -227,7 +237,7 @@
     listen(shell, 'pointerup', releasePointer); listen(shell, 'pointercancel', releasePointer); listen(shell, 'lostpointercapture', releasePointer);
     const load = Promise.all(Object.keys(catalog).map(path => new Promise((resolveLoad, reject) => {
       const image = new Image(); image.onload = () => { images[path] = image;
-        if (path.startsWith('assets/enemies/')) {
+        if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/'))) {
           const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
           const tintCtx = tint.getContext('2d'); tintCtx.drawImage(image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';
           tintCtx.fillStyle = '#fff1c9'; tintCtx.fillRect(0, 0, tint.width, tint.height); flashes[path] = tint;

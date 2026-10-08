@@ -29,6 +29,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: npm run test:game
       - run: npm run validate:game-sprites
+      - run: npm run validate:enemy-sprites
       - run: npm run build:web
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

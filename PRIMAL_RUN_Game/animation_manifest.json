@@ -240,6 +240,950 @@
       "validated_animation": false,
       "production_approved": false,
       "review": "Generated poses manually checked for direction and mouth perspective; still require user art review and matching legacy walk refinement."
+    },
+    {
+      "name": "compy_idle_S",
+      "species": "compy",
+      "state": "idle",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/compy_idle_S_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_walk_S",
+      "species": "compy",
+      "state": "walk",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/compy_idle_S_000.png",
+        "assets/enemy_animations/compy_step_left_S_000.png",
+        "assets/enemy_animations/compy_idle_S_000.png",
+        "assets/enemy_animations/compy_step_right_S_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_action_S",
+      "species": "compy",
+      "state": "action",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/compy_idle_S_000.png",
+        "assets/enemy_animations/compy_action_S_000.png",
+        "assets/enemy_animations/compy_idle_S_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_idle_E",
+      "species": "compy",
+      "state": "idle",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/compy_idle_E_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_walk_E",
+      "species": "compy",
+      "state": "walk",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/compy_idle_E_000.png",
+        "assets/enemy_animations/compy_step_left_E_000.png",
+        "assets/enemy_animations/compy_idle_E_000.png",
+        "assets/enemy_animations/compy_step_right_E_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_action_E",
+      "species": "compy",
+      "state": "action",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/compy_idle_E_000.png",
+        "assets/enemy_animations/compy_action_E_000.png",
+        "assets/enemy_animations/compy_idle_E_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_idle_N",
+      "species": "compy",
+      "state": "idle",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/compy_idle_N_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_walk_N",
+      "species": "compy",
+      "state": "walk",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/compy_idle_N_000.png",
+        "assets/enemy_animations/compy_step_left_N_000.png",
+        "assets/enemy_animations/compy_idle_N_000.png",
+        "assets/enemy_animations/compy_step_right_N_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_action_N",
+      "species": "compy",
+      "state": "action",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/compy_idle_N_000.png",
+        "assets/enemy_animations/compy_action_N_000.png",
+        "assets/enemy_animations/compy_idle_N_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_idle_W",
+      "species": "compy",
+      "state": "idle",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/compy_idle_W_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_walk_W",
+      "species": "compy",
+      "state": "walk",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/compy_idle_W_000.png",
+        "assets/enemy_animations/compy_step_left_W_000.png",
+        "assets/enemy_animations/compy_idle_W_000.png",
+        "assets/enemy_animations/compy_step_right_W_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "compy_action_W",
+      "species": "compy",
+      "state": "action",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/compy_idle_W_000.png",
+        "assets/enemy_animations/compy_action_W_000.png",
+        "assets/enemy_animations/compy_idle_W_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_idle_S",
+      "species": "parasaurolophus",
+      "state": "idle",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_S_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_walk_S",
+      "species": "parasaurolophus",
+      "state": "walk",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_S_000.png",
+        "assets/enemy_animations/parasaurolophus_step_left_S_000.png",
+        "assets/enemy_animations/parasaurolophus_idle_S_000.png",
+        "assets/enemy_animations/parasaurolophus_step_right_S_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_action_S",
+      "species": "parasaurolophus",
+      "state": "action",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_S_000.png",
+        "assets/enemy_animations/parasaurolophus_action_S_000.png",
+        "assets/enemy_animations/parasaurolophus_idle_S_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_idle_E",
+      "species": "parasaurolophus",
+      "state": "idle",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_E_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_walk_E",
+      "species": "parasaurolophus",
+      "state": "walk",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_E_000.png",
+        "assets/enemy_animations/parasaurolophus_step_left_E_000.png",
+        "assets/enemy_animations/parasaurolophus_idle_E_000.png",
+        "assets/enemy_animations/parasaurolophus_step_right_E_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_action_E",
+      "species": "parasaurolophus",
+      "state": "action",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_E_000.png",
+        "assets/enemy_animations/parasaurolophus_action_E_000.png",
+        "assets/enemy_animations/parasaurolophus_idle_E_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_idle_N",
+      "species": "parasaurolophus",
+      "state": "idle",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_N_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_walk_N",
+      "species": "parasaurolophus",
+      "state": "walk",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_N_000.png",
+        "assets/enemy_animations/parasaurolophus_step_left_N_000.png",
+        "assets/enemy_animations/parasaurolophus_idle_N_000.png",
+        "assets/enemy_animations/parasaurolophus_step_right_N_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_action_N",
+      "species": "parasaurolophus",
+      "state": "action",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_N_000.png",
+        "assets/enemy_animations/parasaurolophus_action_N_000.png",
+        "assets/enemy_animations/parasaurolophus_idle_N_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_idle_W",
+      "species": "parasaurolophus",
+      "state": "idle",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_W_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_walk_W",
+      "species": "parasaurolophus",
+      "state": "walk",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_W_000.png",
+        "assets/enemy_animations/parasaurolophus_step_left_W_000.png",
+        "assets/enemy_animations/parasaurolophus_idle_W_000.png",
+        "assets/enemy_animations/parasaurolophus_step_right_W_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "parasaurolophus_action_W",
+      "species": "parasaurolophus",
+      "state": "action",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/parasaurolophus_idle_W_000.png",
+        "assets/enemy_animations/parasaurolophus_action_W_000.png",
+        "assets/enemy_animations/parasaurolophus_idle_W_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_idle_S",
+      "species": "carnotaurus",
+      "state": "idle",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_S_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_walk_S",
+      "species": "carnotaurus",
+      "state": "walk",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_S_000.png",
+        "assets/enemy_animations/carnotaurus_step_left_S_000.png",
+        "assets/enemy_animations/carnotaurus_idle_S_000.png",
+        "assets/enemy_animations/carnotaurus_step_right_S_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_action_S",
+      "species": "carnotaurus",
+      "state": "action",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_S_000.png",
+        "assets/enemy_animations/carnotaurus_action_S_000.png",
+        "assets/enemy_animations/carnotaurus_idle_S_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_idle_E",
+      "species": "carnotaurus",
+      "state": "idle",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_E_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_walk_E",
+      "species": "carnotaurus",
+      "state": "walk",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_E_000.png",
+        "assets/enemy_animations/carnotaurus_step_left_E_000.png",
+        "assets/enemy_animations/carnotaurus_idle_E_000.png",
+        "assets/enemy_animations/carnotaurus_step_right_E_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_action_E",
+      "species": "carnotaurus",
+      "state": "action",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_E_000.png",
+        "assets/enemy_animations/carnotaurus_action_E_000.png",
+        "assets/enemy_animations/carnotaurus_idle_E_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_idle_N",
+      "species": "carnotaurus",
+      "state": "idle",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_N_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_walk_N",
+      "species": "carnotaurus",
+      "state": "walk",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_N_000.png",
+        "assets/enemy_animations/carnotaurus_step_left_N_000.png",
+        "assets/enemy_animations/carnotaurus_idle_N_000.png",
+        "assets/enemy_animations/carnotaurus_step_right_N_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_action_N",
+      "species": "carnotaurus",
+      "state": "action",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_N_000.png",
+        "assets/enemy_animations/carnotaurus_action_N_000.png",
+        "assets/enemy_animations/carnotaurus_idle_N_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_idle_W",
+      "species": "carnotaurus",
+      "state": "idle",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_W_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_walk_W",
+      "species": "carnotaurus",
+      "state": "walk",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_W_000.png",
+        "assets/enemy_animations/carnotaurus_step_left_W_000.png",
+        "assets/enemy_animations/carnotaurus_idle_W_000.png",
+        "assets/enemy_animations/carnotaurus_step_right_W_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "carnotaurus_action_W",
+      "species": "carnotaurus",
+      "state": "action",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/carnotaurus_idle_W_000.png",
+        "assets/enemy_animations/carnotaurus_action_W_000.png",
+        "assets/enemy_animations/carnotaurus_idle_W_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_idle_S",
+      "species": "ankylosaurus",
+      "state": "idle",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_S_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_walk_S",
+      "species": "ankylosaurus",
+      "state": "walk",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_S_000.png",
+        "assets/enemy_animations/ankylosaurus_step_left_S_000.png",
+        "assets/enemy_animations/ankylosaurus_idle_S_000.png",
+        "assets/enemy_animations/ankylosaurus_step_right_S_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_action_S",
+      "species": "ankylosaurus",
+      "state": "action",
+      "direction": "S",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_S_000.png",
+        "assets/enemy_animations/ankylosaurus_action_S_000.png",
+        "assets/enemy_animations/ankylosaurus_idle_S_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_idle_E",
+      "species": "ankylosaurus",
+      "state": "idle",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_E_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_walk_E",
+      "species": "ankylosaurus",
+      "state": "walk",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_E_000.png",
+        "assets/enemy_animations/ankylosaurus_step_left_E_000.png",
+        "assets/enemy_animations/ankylosaurus_idle_E_000.png",
+        "assets/enemy_animations/ankylosaurus_step_right_E_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_action_E",
+      "species": "ankylosaurus",
+      "state": "action",
+      "direction": "E",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_E_000.png",
+        "assets/enemy_animations/ankylosaurus_action_E_000.png",
+        "assets/enemy_animations/ankylosaurus_idle_E_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_idle_N",
+      "species": "ankylosaurus",
+      "state": "idle",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_N_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_walk_N",
+      "species": "ankylosaurus",
+      "state": "walk",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_N_000.png",
+        "assets/enemy_animations/ankylosaurus_step_left_N_000.png",
+        "assets/enemy_animations/ankylosaurus_idle_N_000.png",
+        "assets/enemy_animations/ankylosaurus_step_right_N_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_action_N",
+      "species": "ankylosaurus",
+      "state": "action",
+      "direction": "N",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_N_000.png",
+        "assets/enemy_animations/ankylosaurus_action_N_000.png",
+        "assets/enemy_animations/ankylosaurus_idle_N_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_idle_W",
+      "species": "ankylosaurus",
+      "state": "idle",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_W_000.png"
+      ],
+      "fps": 1,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_walk_W",
+      "species": "ankylosaurus",
+      "state": "walk",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_W_000.png",
+        "assets/enemy_animations/ankylosaurus_step_left_W_000.png",
+        "assets/enemy_animations/ankylosaurus_idle_W_000.png",
+        "assets/enemy_animations/ankylosaurus_step_right_W_000.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
+    },
+    {
+      "name": "ankylosaurus_action_W",
+      "species": "ankylosaurus",
+      "state": "action",
+      "direction": "W",
+      "frames": [
+        "assets/enemy_animations/ankylosaurus_idle_W_000.png",
+        "assets/enemy_animations/ankylosaurus_action_W_000.png",
+        "assets/enemy_animations/ankylosaurus_idle_W_000.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        64,
+        64
+      ],
+      "production_approved": false,
+      "validated_animation": false,
+      "note": "Walk uses intentional planted return frames; action is a three-pose study, not a full production sequence."
     }
   ],
   "direction_origins": {
@@ -354,5 +1298,7 @@
     }
   ],
   "combat_frame_plan": "Bite upgraded from 4 frames/10fps to 6 frames/14fps for anticipation, gape, contact, recoil and exact ready return.",
-  "north_combat_caveat": "New North attacks are separately generated; not a rotation of South. Legacy North walk still has its original rotated-light caveat."
+  "north_combat_caveat": "New North attacks are separately generated; not a rotation of South. Legacy North walk still has its original rotated-light caveat.",
+  "enemy_frame_plan": "128x128 fixed canvas for all four cardinal directions; 4-frame 8fps walk uses planted,left,planted,right. Three-frame nonloop action uses ready,action,ready. Parasaurolophus action is flee, not attack. All generated studies retain prototype status.",
+  "enemy_runtime": "See enemy_animation_runtime_report.json; artwork retains prototype status."
 }

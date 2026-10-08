@@ -1080,6 +1080,518 @@
         "metadata": ""
       },
       {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_idle_S_000.png",
+        "file": "assets/enemy_animations/compy_idle_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_step_left_S_000.png",
+        "file": "assets/enemy_animations/compy_step_left_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_step_right_S_000.png",
+        "file": "assets/enemy_animations/compy_step_right_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_action_S_000.png",
+        "file": "assets/enemy_animations/compy_action_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_idle_E_000.png",
+        "file": "assets/enemy_animations/compy_idle_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_step_left_E_000.png",
+        "file": "assets/enemy_animations/compy_step_left_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_step_right_E_000.png",
+        "file": "assets/enemy_animations/compy_step_right_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_action_E_000.png",
+        "file": "assets/enemy_animations/compy_action_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_idle_N_000.png",
+        "file": "assets/enemy_animations/compy_idle_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_step_left_N_000.png",
+        "file": "assets/enemy_animations/compy_step_left_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_step_right_N_000.png",
+        "file": "assets/enemy_animations/compy_step_right_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_action_N_000.png",
+        "file": "assets/enemy_animations/compy_action_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_idle_W_000.png",
+        "file": "assets/enemy_animations/compy_idle_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_step_left_W_000.png",
+        "file": "assets/enemy_animations/compy_step_left_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_step_right_W_000.png",
+        "file": "assets/enemy_animations/compy_step_right_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/compy_action_W_000.png",
+        "file": "assets/enemy_animations/compy_action_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_idle_S_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_idle_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_step_left_S_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_step_left_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_step_right_S_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_step_right_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_action_S_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_action_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_idle_E_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_idle_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_step_left_E_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_step_left_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_step_right_E_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_step_right_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_action_E_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_action_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_idle_N_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_idle_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_step_left_N_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_step_left_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_step_right_N_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_step_right_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_action_N_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_action_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_idle_W_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_idle_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_step_left_W_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_step_left_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_step_right_W_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_step_right_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/parasaurolophus_action_W_000.png",
+        "file": "assets/enemy_animations/parasaurolophus_action_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_idle_S_000.png",
+        "file": "assets/enemy_animations/carnotaurus_idle_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_step_left_S_000.png",
+        "file": "assets/enemy_animations/carnotaurus_step_left_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_step_right_S_000.png",
+        "file": "assets/enemy_animations/carnotaurus_step_right_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_action_S_000.png",
+        "file": "assets/enemy_animations/carnotaurus_action_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_idle_E_000.png",
+        "file": "assets/enemy_animations/carnotaurus_idle_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_step_left_E_000.png",
+        "file": "assets/enemy_animations/carnotaurus_step_left_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_step_right_E_000.png",
+        "file": "assets/enemy_animations/carnotaurus_step_right_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_action_E_000.png",
+        "file": "assets/enemy_animations/carnotaurus_action_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_idle_N_000.png",
+        "file": "assets/enemy_animations/carnotaurus_idle_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_step_left_N_000.png",
+        "file": "assets/enemy_animations/carnotaurus_step_left_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_step_right_N_000.png",
+        "file": "assets/enemy_animations/carnotaurus_step_right_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_action_N_000.png",
+        "file": "assets/enemy_animations/carnotaurus_action_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_idle_W_000.png",
+        "file": "assets/enemy_animations/carnotaurus_idle_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_step_left_W_000.png",
+        "file": "assets/enemy_animations/carnotaurus_step_left_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_step_right_W_000.png",
+        "file": "assets/enemy_animations/carnotaurus_step_right_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/carnotaurus_action_W_000.png",
+        "file": "assets/enemy_animations/carnotaurus_action_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_idle_S_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_idle_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_step_left_S_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_step_left_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_step_right_S_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_step_right_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_action_S_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_action_S_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_idle_E_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_idle_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_step_left_E_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_step_left_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_step_right_E_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_step_right_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_action_E_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_action_E_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_idle_N_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_idle_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_step_left_N_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_step_left_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_step_right_N_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_step_right_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_action_N_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_action_N_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_idle_W_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_idle_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_step_left_W_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_step_left_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_step_right_W_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_step_right_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/enemy_animations/ankylosaurus_action_W_000.png",
+        "file": "assets/enemy_animations/ankylosaurus_action_W_000.png",
+        "smoothed": false,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
         "kind": "audio",
         "name": "sounds/bite.wav",
         "file": "sounds/bite.wav",
@@ -1324,7 +1836,7 @@
             "      const p = position || (edge < 2 ? { x: edge ? 904 : 56, y: 100 + this.random() * 440 } : { x: 80 + this.random() * 800, y: edge === 2 ? 100 : 560 });",
             "      const scale = 1 + r.stage * .3;",
             "      const hp = boss ? (220 + r.stage * 85) : base.hp * scale;",
-            "      const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? 32 : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0 };",
+            "      const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? 32 : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0, walk: 0, poseTime: 0, moving: false, direction: 'S', attackHit: false, attackRadius: kind === 'ankylosaurus' ? 90 : boss ? 130 : base.radius + 28 };",
             "      r.enemies.push(e); return e;",
             "    }",
             "    move(entity, dx, dy) {",
@@ -1412,30 +1924,80 @@
             "      }",
             "    }",
             "    enemyStep(e, dt) {",
+            "      if (this.phase !== 'playing') return;",
+            "      const x = e.x, y = e.y;",
+            "      this.enemyAI(e, dt);",
+            "      e.moving = Math.hypot(e.x - x, e.y - y) > .001;",
+            "      e.walk = e.moving ? (e.walk + dt) % .5 : 0; e.poseTime += dt;",
+            "      const dx = e.moving && !['charge', 'windup'].includes(e.mode) ? e.x - x : e.facingX;",
+            "      const dy = e.moving && !['charge', 'windup'].includes(e.mode) ? e.y - y : e.facingY;",
+            "      if (Math.hypot(dx, dy) > .001) e.direction = Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? 'E' : 'W') : (dy > 0 ? 'S' : 'N');",
+            "    }",
+            "    enemyAI(e, dt) {",
             "      const r = this.run, dx = r.player.x - e.x, dy = r.player.y - e.y, d = Math.max(1, Math.hypot(dx, dy));",
             "      e.cooldown = Math.max(0, e.cooldown - dt); e.hit = Math.max(0, e.hit - dt);",
             "      if (e.stagger > 0) { e.stagger = Math.max(0, e.stagger - dt); return; }",
             "      if (e.mode === 'windup') {",
             "        e.timer -= dt;",
-            "        if (e.timer <= 0) { e.mode = e.pattern === 2 ? 'slam' : 'charge'; e.timer = e.mode === 'slam' ? .15 : .55; this.emit('roar'); }",
+            "        if (e.timer <= 0) {",
+            "          e.mode = e.pattern === 2 ? 'slam' : e.kind === 'compy' && !e.boss ? 'bite' : 'charge';",
+            "          e.timer = e.mode === 'charge' ? .55 : .18; e.attackHit = false;",
+            "          if (e.kind !== 'compy') this.emit('roar');",
+            "        }",
             "      } else if (e.mode === 'charge') {",
             "        this.move(e, e.chargeX * (e.boss ? 340 : 230) * dt, e.chargeY * (e.boss ? 340 : 230) * dt);",
             "        if (Math.hypot(r.player.x - e.x, r.player.y - e.y) < e.radius + 19) this.damage(e.damage);",
             "        e.timer -= dt; if (e.timer <= 0) { e.mode = 'recover'; e.timer = e.boss ? 1.4 : .9; }",
-            "      } else if (e.mode === 'slam') {",
-            "        if (d < 130) this.damage(e.damage + 6);",
-            "        e.mode = 'recover'; e.timer = 1.6;",
+            "      } else if (e.mode === 'slam' || e.mode === 'bite') {",
+            "        e.timer -= dt;",
+            "        if (!e.attackHit && e.timer <= .1) {",
+            "          e.attackHit = true;",
+            "          const facingDot = (dx * e.facingX + dy * e.facingY) / d;",
+            "          if (d < e.attackRadius && (e.mode === 'slam' || facingDot > .2)) this.damage(e.damage + (e.boss ? 6 : 0));",
+            "        }",
+            "        if (e.timer <= 0) { e.mode = 'recover'; e.timer = e.kind === 'compy' ? .35 : 1.6; }",
             "      } else if (e.mode === 'recover') {",
-            "        e.timer -= dt; if (e.timer <= 0) { e.mode = 'chase'; e.cooldown = 1.2; }",
+            "        e.timer -= dt; if (e.timer <= 0) { e.mode = 'chase'; e.cooldown = e.kind === 'compy' ? .8 : 1.2; }",
             "      } else {",
             "        e.facingX = dx / d; e.facingY = dy / d;",
-            "        const flee = e.kind === 'parasaurolophus' && d < 200;",
-            "        if (d > e.radius + 18 || flee) this.move(e, dx / d * e.speed * dt * (flee ? -1 : 1), dy / d * e.speed * dt * (flee ? -1 : 1));",
-            "        const charger = e.boss || (e.kind === 'carnotaurus' && r.stage > 0);",
-            "        if (charger && e.cooldown === 0 && d < 360) {",
+            "        if (e.kind === 'parasaurolophus' && !e.boss && d < 260) {",
+            "          e.mode = 'flee';",
+            "          // Pick a free escape heading rather than running forever into an edge or rock.",
+            "          let best = null;",
+            "          for (let i = 0; i < 8; i++) {",
+            "            const angle = Math.atan2(-dy, -dx) + i * Math.PI / 4;",
+            "            const vx = Math.cos(angle), vy = Math.sin(angle), px = e.x + vx * 65, py = e.y + vy * 65;",
+            "            const room = px > 42 + e.radius && px < WIDTH - 42 - e.radius && py > 76 + e.radius && py < HEIGHT - 42 - e.radius;",
+            "            const clear = ROCKS.every(rock => Math.hypot(px - rock.x, py - rock.y) > rock.radius + e.radius + 4);",
+            "            const score = (-dx * vx - dy * vy) / d + (room ? 0 : -4) + (clear ? 0 : -3);",
+            "            if (!best || score > best.score) best = { vx, vy, score };",
+            "          }",
+            "          e.facingX = best.vx; e.facingY = best.vy; this.move(e, best.vx * e.speed * 1.25 * dt, best.vy * e.speed * 1.25 * dt); return;",
+            "        }",
+            "        e.mode = 'chase';",
+            "        let vx = dx / d, vy = dy / d, speed = e.speed;",
+            "        if (e.kind === 'compy' && !e.boss) {",
+            "          const pack = r.enemies.filter(other => other !== e && other.kind === 'compy' && !other.boss && Math.hypot(other.x - e.x, other.y - e.y) < 180);",
+            "          speed *= 1 + Math.min(pack.length, 2) * .08;",
+            "          for (const other of pack) {",
+            "            const sx = e.x - other.x, sy = e.y - other.y, gap = Math.hypot(sx, sy);",
+            "            if (gap < 42) { vx += (gap > .01 ? sx / gap : (e.id < other.id ? -1 : 1)) * .75; vy += (gap > .01 ? sy / gap : 0) * .75; }",
+            "          }",
+            "          const norm = Math.max(1, Math.hypot(vx, vy)); vx /= norm; vy /= norm;",
+            "        }",
+            "        if (d > e.radius + 18) this.move(e, vx * speed * dt, vy * speed * dt);",
+            "        const charger = e.boss || e.kind === 'carnotaurus';",
+            "        if (charger && e.cooldown === 0 && d < (e.boss ? 360 : 230)) {",
             "          e.pattern = e.boss && ['triceratops', 'tyrannosaurus'].includes(e.kind) ? (e.pattern + 1) % 3 : 0;",
-            "          e.mode = 'windup'; e.timer = e.kind === 'deinosuchus' ? .95 : .8; e.chargeX = dx / d; e.chargeY = dy / d;",
-            "        } else if (!charger && e.damage && d < e.radius + 20 && e.cooldown === 0) { this.damage(e.damage); e.cooldown = 1.2; }",
+            "          e.mode = 'windup'; e.windupDuration = e.kind === 'deinosuchus' ? .95 : e.boss ? .8 : .9; e.timer = e.windupDuration;",
+            "          e.chargeX = dx / d; e.chargeY = dy / d;",
+            "        } else if (!charger && e.cooldown === 0 && ((e.kind === 'ankylosaurus' && d < 100) || (e.kind === 'compy' && d < e.radius + 24))) {",
+            "          e.pattern = e.kind === 'ankylosaurus' ? 2 : 0;",
+            "          e.mode = 'windup'; e.windupDuration = e.kind === 'compy' ? .32 : .9; e.timer = e.windupDuration;",
+            "          e.chargeX = dx / d; e.chargeY = dy / d;",
+            "        } else if (!charger && !['compy', 'ankylosaurus', 'parasaurolophus'].includes(e.kind) && e.damage && d < e.radius + 20 && e.cooldown === 0) {",
+            "          this.damage(e.damage); e.cooldown = 1.2;",
+            "        }",
             "      }",
             "    }",
             "    step(dt, input = {}) {",
@@ -1483,12 +2045,14 @@
             "      if (!r.bossSpawned && r.meat >= STAGES[r.stage].target) { r.bossSpawned = true; this.spawn(STAGES[r.stage].boss, { x: 480, y: 130 }, true); this.emit('boss'); }",
             "      if (!r.bossSpawned) {",
             "        r.spawnTimer -= dt;",
-            "        const opening = r.stage === 0 && r.seconds < 20 && r.meat < 6;",
-            "        const building = r.stage === 0 && !opening && (r.seconds < 45 || r.meat < 12);",
+            "        const opening = r.stage === 0 && r.meat < 6;",
+            "        const building = r.stage === 0 && !opening && r.meat < 12;",
             "        const cap = r.stage === 0 ? (opening ? 3 : building ? 5 : 7) : 9 + r.stage * 2;",
             "        if (r.spawnTimer <= 0 && r.enemies.length < cap) {",
             "          const pool = r.stage === 0 ? (opening ? ['compy', 'parasaurolophus'] : building ? ['compy', 'compy', 'parasaurolophus'] : ['compy', 'parasaurolophus', 'carnotaurus']) : r.stage === 1 ? ['compy', 'parasaurolophus', 'carnotaurus', 'deinosuchus'] : r.stage === 2 ? ['compy', 'parasaurolophus', 'carnotaurus', 'ankylosaurus'] : ['parasaurolophus', 'carnotaurus', 'ankylosaurus', 'tyrannosaurus'];",
-            "          this.spawn(pool[Math.floor(this.random() * pool.length)]); r.spawnTimer = r.stage === 0 ? (opening ? 4 : building ? 3.2 : 2.6) : Math.max(1, 2.4 - r.stage * .35);",
+            "          let kind = pool[Math.floor(this.random() * pool.length)];",
+            "          if (r.stage === 0 && r.enemies.filter(e => e.kind === 'carnotaurus').length >= 1 && kind === 'carnotaurus') kind = 'compy';",
+            "          this.spawn(kind); r.spawnTimer = r.stage === 0 ? (opening ? 4 : building ? 3.2 : 2.6) : Math.max(1, 2.4 - r.stage * .35);",
             "        }",
             "      }",
             "      this.maybeLevelUp();",
@@ -1513,7 +2077,7 @@
             "  return { Game, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, MUTATIONS, UPGRADES, ROCKS, SAVE_KEY, sanitizeSave, upgradeCost };",
             "});",
             "",
-            "globalThis.PrimalAssets = {\"assets/enemy/compy_idle_S_000.png\":{\"origin\":[32,54],\"size\":[64,96]},\"assets/environment/grass.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/environment/fern.png\":{\"origin\":[32,36],\"size\":[64,64]},\"assets/environment/rock.png\":{\"origin\":[32,36],\"size\":[64,64]},\"assets/pickups/meat.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/player/utahraptor_idle_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_001.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_002.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_003.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_004.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_005.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_idle_N_000.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_000.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_001.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_002.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_003.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_004.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_005.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_idle_E_000.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_000.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_001.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_002.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_003.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_004.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_005.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_idle_W_000.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_000.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_001.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_002.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_003.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_004.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_005.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/enemies/compy_idle_S_000.png\":{\"origin\":[32,48],\"size\":[64,96]},\"assets/enemies/parasaurolophus_idle_S_000.png\":{\"origin\":[48,64],\"size\":[96,128]},\"assets/enemies/carnotaurus_idle_S_000.png\":{\"origin\":[48,64],\"size\":[96,128]},\"assets/enemies/deinosuchus_idle_S_000.png\":{\"origin\":[96,96],\"size\":[192,192]},\"assets/enemies/tyrannosaurus_idle_S_000.png\":{\"origin\":[96,96],\"size\":[192,192]},\"assets/enemies/triceratops_idle_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemies/ankylosaurus_idle_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/player_actions/utahraptor_bite_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_bite_S_001.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_bite_S_002.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_bite_S_003.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_pounce_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_pounce_S_001.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_pounce_S_002.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_pounce_S_003.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_death_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_death_S_001.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_death_S_002.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_death_S_003.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_hurt_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_rest_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_juvenile_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_fossil_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/props/fern_large.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/boulder_large.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/dead_tree.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/props/fallen_log.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/tree_canopy.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/props/flower_bush.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/nest_eggs.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/nest_empty.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/pickups/meat_large.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/pickups/water_pickup.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/pickups/dna_pickup.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/pickups/egg_pickup.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/props/skull.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/ribcage.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/props/lava_rock.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/meteorite.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/effects/bite_slash_000.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/bite_slash_001.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/bite_slash_002.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/bite_slash_003.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/dust_000.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/dust_001.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/dust_002.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/dust_003.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/meteor_impact_000.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/meteor_impact_001.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/meteor_impact_002.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/meteor_impact_003.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/ui/health.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/stamina.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/thirst.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/hunger.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/serrated_teeth.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/powerful_legs.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/insulating_feathers.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/dna.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/xp.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/bone.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/armor.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/escape.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/tiles/grass_alt.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/dirt.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/sand.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/gravel.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/forest_floor.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/shallow_water.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/deep_water.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/volcanic.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/player_combat/utahraptor_bite_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_S_001.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_S_002.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_S_003.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_S_004.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_S_005.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_000.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_001.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_002.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_003.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_004.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_005.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_000.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_001.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_002.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_003.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_004.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_005.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_000.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_001.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_002.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_003.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_004.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_005.png\":{\"origin\":[60,64],\"size\":[128,128]}};",
+            "globalThis.PrimalAssets = {\"assets/enemy/compy_idle_S_000.png\":{\"origin\":[32,54],\"size\":[64,96]},\"assets/environment/grass.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/environment/fern.png\":{\"origin\":[32,36],\"size\":[64,64]},\"assets/environment/rock.png\":{\"origin\":[32,36],\"size\":[64,64]},\"assets/pickups/meat.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/player/utahraptor_idle_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_001.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_002.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_003.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_004.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_walk_S_005.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player/utahraptor_idle_N_000.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_000.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_001.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_002.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_003.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_004.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_walk_N_005.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player/utahraptor_idle_E_000.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_000.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_001.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_002.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_003.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_004.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_E_005.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player/utahraptor_idle_W_000.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_000.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_001.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_002.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_003.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_004.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player/utahraptor_walk_W_005.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/enemies/compy_idle_S_000.png\":{\"origin\":[32,48],\"size\":[64,96]},\"assets/enemies/parasaurolophus_idle_S_000.png\":{\"origin\":[48,64],\"size\":[96,128]},\"assets/enemies/carnotaurus_idle_S_000.png\":{\"origin\":[48,64],\"size\":[96,128]},\"assets/enemies/deinosuchus_idle_S_000.png\":{\"origin\":[96,96],\"size\":[192,192]},\"assets/enemies/tyrannosaurus_idle_S_000.png\":{\"origin\":[96,96],\"size\":[192,192]},\"assets/enemies/triceratops_idle_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemies/ankylosaurus_idle_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/player_actions/utahraptor_bite_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_bite_S_001.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_bite_S_002.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_bite_S_003.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_pounce_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_pounce_S_001.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_pounce_S_002.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_pounce_S_003.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_death_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_death_S_001.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_death_S_002.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_death_S_003.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_hurt_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_rest_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_juvenile_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_actions/utahraptor_fossil_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/props/fern_large.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/boulder_large.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/dead_tree.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/props/fallen_log.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/tree_canopy.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/props/flower_bush.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/nest_eggs.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/nest_empty.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/pickups/meat_large.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/pickups/water_pickup.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/pickups/dna_pickup.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/pickups/egg_pickup.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/props/skull.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/ribcage.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/props/lava_rock.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/props/meteorite.png\":{\"origin\":[32,32],\"size\":[64,64]},\"assets/effects/bite_slash_000.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/bite_slash_001.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/bite_slash_002.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/bite_slash_003.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/dust_000.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/dust_001.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/dust_002.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/dust_003.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/meteor_impact_000.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/meteor_impact_001.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/meteor_impact_002.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/effects/meteor_impact_003.png\":{\"origin\":[48,48],\"size\":[96,96]},\"assets/ui/health.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/stamina.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/thirst.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/hunger.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/serrated_teeth.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/powerful_legs.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/insulating_feathers.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/dna.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/xp.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/bone.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/armor.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/ui/escape.png\":{\"origin\":[16,16],\"size\":[32,32]},\"assets/tiles/grass_alt.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/dirt.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/sand.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/gravel.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/forest_floor.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/shallow_water.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/deep_water.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/tiles/volcanic.png\":{\"origin\":[0,0],\"size\":[32,32]},\"assets/player_combat/utahraptor_bite_S_000.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_S_001.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_S_002.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_S_003.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_S_004.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_S_005.png\":{\"origin\":[64,72],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_000.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_001.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_002.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_003.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_004.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_N_005.png\":{\"origin\":[64,56],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_000.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_001.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_002.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_003.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_004.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_E_005.png\":{\"origin\":[68,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_000.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_001.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_002.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_003.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_004.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/player_combat/utahraptor_bite_W_005.png\":{\"origin\":[60,64],\"size\":[128,128]},\"assets/enemy_animations/compy_idle_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_step_left_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_step_right_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_action_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_idle_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_step_left_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_step_right_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_action_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_idle_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_step_left_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_step_right_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_action_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_idle_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_step_left_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_step_right_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/compy_action_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_idle_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_step_left_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_step_right_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_action_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_idle_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_step_left_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_step_right_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_action_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_idle_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_step_left_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_step_right_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_action_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_idle_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_step_left_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_step_right_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/parasaurolophus_action_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_idle_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_step_left_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_step_right_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_action_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_idle_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_step_left_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_step_right_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_action_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_idle_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_step_left_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_step_right_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_action_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_idle_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_step_left_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_step_right_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/carnotaurus_action_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_idle_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_step_left_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_step_right_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_action_S_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_idle_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_step_left_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_step_right_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_action_E_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_idle_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_step_left_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_step_right_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_action_N_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_idle_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_step_left_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_step_right_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]},\"assets/enemy_animations/ankylosaurus_action_W_000.png\":{\"origin\":[64,64],\"size\":[128,128]}};",
             "",
             "/* Original procedural soundtrack: a pentatonic hunt motif and hand-drum pulses. */",
             "(function (root) {",
@@ -1699,19 +2263,29 @@
             "        for (const e of r.enemies) if (e.mode === 'windup') {",
             "          ctx.strokeStyle = '#ed7869'; ctx.fillStyle = '#913b3277'; ctx.lineWidth = 3;",
             "          ctx.beginPath();",
-            "          if (e.pattern === 2) ctx.arc(Math.round(e.x), Math.round(e.y), 130, 0, Math.PI * 2);",
+            "          if (e.pattern === 2 || e.kind === 'compy') ctx.arc(Math.round(e.x), Math.round(e.y), e.attackRadius, 0, Math.PI * 2);",
             "          else {",
             "            const x = Math.round(e.x), y = Math.round(e.y), nx = -e.chargeY * 28, ny = e.chargeX * 28, length = e.boss ? 200 : 130;",
             "            ctx.moveTo(x + nx, y + ny); ctx.lineTo(x + e.chargeX * length + nx, y + e.chargeY * length + ny); ctx.lineTo(x + e.chargeX * length - nx, y + e.chargeY * length - ny); ctx.lineTo(x - nx, y - ny); ctx.closePath();",
             "          }",
             "          ctx.fill(); ctx.stroke();",
+            "          ctx.font = 'bold 10px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#151b19';",
+            "          const warning = e.kind === 'compy' ? 'BID' : e.kind === 'ankylosaurus' ? 'HALESLAG' : 'STORMLØB';",
+            "          ctx.strokeText(warning, Math.round(e.x), Math.round(e.y) - 66); ctx.fillStyle = '#ed7869'; ctx.fillText(warning, Math.round(e.x), Math.round(e.y) - 66);",
             "        }",
             "        for (const p of r.pickups) sprite(p.kind === 'meat' ? 'assets/pickups/meat.png' : p.kind === 'dna' ? 'assets/pickups/dna_pickup.png' : 'assets/ui/health.png', p.x, p.y);",
             "      }",
             "      const objects = C.ROCKS.map(p => ({ ...p, path: 'assets/environment/rock.png' }));",
             "      for (const [x, y] of [[100, 130], [130, 490], [855, 125], [835, 540], [390, 180], [600, 510], [87, 565], [860, 350]]) objects.push({ x, y, path: 'assets/environment/fern.png' });",
             "      if (r) {",
-            "        for (const e of r.enemies) objects.push({ ...e, enemy: e, path: 'assets/enemies/' + e.kind + '_idle_S_000.png' });",
+            "        for (const e of r.enemies) {",
+            "          let state = 'idle';",
+            "          if (['charge', 'bite', 'slam'].includes(e.mode) || (e.mode === 'windup' && e.timer < e.windupDuration * .5)) state = 'action';",
+            "          else if (e.moving) state = (e.mode === 'flee' ? ['step_left', 'action', 'step_right', 'action'] : ['idle', 'step_left', 'idle', 'step_right'])[Math.min(3, Math.floor(e.walk * 8))];",
+            "          const candidate = 'assets/enemy_animations/' + e.kind + '_' + state + '_' + e.direction + '_000.png';",
+            "          const path = catalog[candidate] ? candidate : 'assets/enemies/' + e.kind + '_idle_S_000.png';",
+            "          objects.push({ ...e, enemy: e, path });",
+            "        }",
             "        const p = r.player, frame = String(Math.min(5, Math.floor(p.walk * 8))).padStart(3, '0');",
             "        let playerPath = 'assets/player/utahraptor_' + (p.moving ? 'walk_' : 'idle_') + p.facing + '_' + (p.moving ? frame : '000') + '.png';",
             "        if (r.attack) {",
@@ -1823,7 +2397,7 @@
             "    listen(shell, 'pointerup', releasePointer); listen(shell, 'pointercancel', releasePointer); listen(shell, 'lostpointercapture', releasePointer);",
             "    const load = Promise.all(Object.keys(catalog).map(path => new Promise((resolveLoad, reject) => {",
             "      const image = new Image(); image.onload = () => { images[path] = image;",
-            "        if (path.startsWith('assets/enemies/')) {",
+            "        if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/'))) {",
             "          const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;",
             "          const tintCtx = tint.getContext('2d'); tintCtx.drawImage(image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';",
             "          tintCtx.fillStyle = '#fff1c9'; tintCtx.fillRect(0, 0, tint.width, tint.height); flashes[path] = tint;",

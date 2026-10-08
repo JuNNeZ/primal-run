@@ -22,4 +22,5 @@ jobs:
       - run: python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py
       - run: python validate_sprites.py
       - run: python tools/validate_game_sprites.py
+      - run: python tools/validate_enemy_animations.py
       - run: npm test

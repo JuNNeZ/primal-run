@@ -49,8 +49,8 @@ Se `SPRITE_RULES_PLAYER_COMBAT.md`, `player_combat_manifest.json`,
 
 De nye poses er gennemgåede angrebsstudier til spiltest. De erstatter ikke de
 historiske walk/idle-filer, og mindre forskelle i krop/striber samt overgangen
-til den gamle walk kræver yderligere visuel forfining. Fjendernes sprites er
-foreløbig bevaret; player-angreb er første prioritet.
+til den gamle walk kræver yderligere visuel forfining. De gamle fjendesprites er
+bevaret som reference; fire arter har nu nye retnings- og animationsstudier.
 
 Til reproduktion af eksporten fra de bevarede kilder:
 
@@ -112,6 +112,28 @@ mellem maskiner eller mellem Preview og GitHub Pages. Ved blokeret lagring kan
 man stadig spille, men fremgangen varer kun i sessionen. Den gamle demos DNA
 ændres eller migreres ikke automatisk.
 
+## Nye fjender
+
+Compy, Parasaurolophus, Carnotaurus og Ankylosaurus har nu 64 nye PNGs: fire poses
+(klar/venstretrin/højretrin/action) i fire retninger. Gang bruger et fire-frame
+loop med bevidst genbrugte planted-frames. Action-timing følger AI-varslet,
+angrebet og recovery. Se [enemy_review.html](enemy_review.html),
+SPRITE_RULES_ENEMIES.md og enemy_animation_runtime_report.json.
+
+- Compy bevæger sig hurtigere i nærheden af andre Compy, holder afstand fra
+  hinanden og varsler et kort bid; ren kropskontakt giver ikke straks skade.
+- Parasaurolophus er ufarlig, flygter ved 260 pixels og søger en fri retning langs
+  kanter/klipper frem for at fortsætte direkte ind i en væg.
+- Carnotaurus har 0,9 sekunders fastlåst varsel og stormløb allerede på første
+  bane; efter angrebet er der 0,9 sekunders recovery.
+- Ankylosaurus varsler haleslag i 0,9 sekunder og rammer én gang inden for 90 pixels.
+  Frontpanser halverer bid; bagfra tager den fuld skade. Det røde område viser
+  slagets rækkevidde, og 1,6 sekunders recovery giver en åbning.
+
+Boss-Carnotaurus bruger også nye retningsposer. De øvrige bossarter og fjender
+beholder deres gamle stillbilleder. Nye billeder er prototyper; markeringer,
+body registration og fuld temporal kvalitet kræver fortsat kunstreview.
+
 ## Kampfeedback og første bane
 
 Bid, der rammer, giver en kort lys markering på fjenden, et skadetal og en
@@ -122,7 +144,9 @@ Kontaktlyden følger master- og effektvolumen, uafhængigt af musikvolumen.
 Første bane starter med to Compy og én Parasaurolophus. Første ekstra fjende
 kommer efter fem sekunder. Åbningen har højst tre fjender, derefter fem og til
 sidst syv; spawnintervallet går fra 4 til 3,2 til 2,6 sekunder. Carnotaurus kan
-først dukke op efter 45 aktive spilsekunder og 12 opsamlede kødenheder.
+først dukke op efter 12 opsamlede kødenheder; højst én almindelig Carnotaurus
+ad gangen. Eskaleringen følger opsamlet kød, så en langsom første jagt ikke
+bliver overfyldt, før man har lært styringen.
 Bossen kræver nu 24 kød. Tiderne fryser i pause og under mutationsvalg.
 Dette er en første balancejustering; menneskelig spiltest skal afgøre det
 endelige tempo til første mutation og boss.
@@ -139,8 +163,8 @@ af animationerne. Musikken er et kort genereret loop; længere kompositioner og
 endelige effektlyde er en senere lydopgave. Highscores er lokale; online-score
 kræver backend og validering.
 
-Alle billeder beholder deres prototype-status. Enemy-billeder er South-
-stillbilleder, ikke færdige retningsanimationer. Utahraptorens North-walk er
+Alle billeder beholder deres prototype-status. De øvrige enemy-billeder er South-
+stillbilleder; de fire nye serier er animerede prototype-studier. Utahraptorens North-walk er
 fortsat prototype-drejningen af South med dens kendte lysbegrænsning.
 Se `SPRITE_RULES.md`, `manifest.json`, `palette.json`, `validation_report.json`
 og `integration_report.json`. Ingen kildepixels eller origins ændres.

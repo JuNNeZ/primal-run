@@ -39,6 +39,11 @@ assets/player_combat and player_combat_manifest.json; the build combines this
 overlay with the unchanged kit manifest. Export with tools/export_player_attacks.py,
 run tools/validate_game_sprites.py, then rebuild/test the actual GDevelop export.
 All new combat art remains a prototype until its visual gates are approved.
+For active enemy animations also read PRIMAL_RUN_Game/SPRITE_RULES_ENEMIES.md.
+Use tools/export_enemy_animations.py, rebuild the combined manifest, and validate
+with tools/validate_enemy_animations.py. Keep the new overlay under
+assets/enemy_animations; preserve the old South sprites. Browser/GDevelop checks
+are in tests/enemy-animation-browser.cjs and the enemy runtime report.
 For the offline Prototype Kit, follow `PRIMAL_RUN_Prototype_Kit/SPRITE_RULES.md`.
 The fixed palette extends to 32 colors; existing 24 colors remain unchanged.
 Action poses are unapproved studies. Export only reviewed overhead enemy cells.

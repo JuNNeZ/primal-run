@@ -19,6 +19,9 @@ def build():
     overlay_file = GAME / 'player_combat_manifest.json'
     if overlay_file.exists():
         manifest += json.loads(overlay_file.read_text(encoding='utf-8'))
+    enemy_overlay = GAME / 'enemy_animation_manifest.json'
+    if enemy_overlay.exists():
+        manifest += json.loads(enemy_overlay.read_text(encoding='utf-8'))
     if len({entry['file'] for entry in manifest}) != len(manifest):
         raise SystemExit('Duplicate resource paths in combined manifest')
     for folder in ('assets', 'sounds', 'Source_Generated'):
@@ -37,6 +40,14 @@ def build():
         animations['combat_frame_plan'] = combat['frame_plan_exception']
         animations['north_combat_caveat'] = combat['north_caveat']
         animations['GDevelop_runtime'] = 'Functional Bite_S/N/E/W tests PASS; see player_animation_runtime_report.json. Production art remains unapproved.'
+        (GAME / 'animation_manifest.json').write_text(json.dumps(animations, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    enemy_animations = GAME / 'enemy_animations.json'
+    if enemy_animations.exists():
+        animations = json.loads((GAME / 'animation_manifest.json').read_text(encoding='utf-8'))
+        enemy = json.loads(enemy_animations.read_text(encoding='utf-8'))
+        animations['animations'] += enemy['animations']
+        animations['enemy_frame_plan'] = enemy['frame_plan_exception']
+        animations['enemy_runtime'] = 'See enemy_animation_runtime_report.json; artwork retains prototype status.'
         (GAME / 'animation_manifest.json').write_text(json.dumps(animations, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     assets = {entry['file']: {'origin': entry['origin'], 'size': entry['size']} for entry in manifest}
     asset_code = 'globalThis.PrimalAssets = ' + json.dumps(assets, ensure_ascii=False, separators=(',', ':')) + ';\n'

@@ -64,6 +64,45 @@ test('first biome opens with three weak enemies and ramps composition, caps and 
   r.enemies = []; r.meat = 23; r.pickups = [{ id: 999, kind: 'meat', x: r.player.x, y: r.player.y, value: 1 }];
   g.step(.01); assert.equal(r.bossSpawned, true); assert.equal(r.enemies.filter(e => e.boss).length, 1);
 });
+test('Compy separates from its pack and telegraphs one bite instead of unavoidable contact damage', () => {
+  const g = make(), r = g.run, a = g.spawn('compy', { x: 600, y: 340 }), b = g.spawn('compy', { x: 604, y: 340 });
+  g.enemyStep(a, .05); g.enemyStep(b, .05); assert.ok(b.x - a.x > 4, 'pack members spread apart');
+  r.enemies = [a]; a.x = r.player.x + 20; a.y = r.player.y; a.cooldown = 0;
+  g.enemyStep(a, .01); assert.equal(a.mode, 'windup'); assert.equal(r.health, 100);
+  a.timer = .001; g.enemyStep(a, .01); assert.equal(a.mode, 'bite');
+  g.enemyStep(a, .1); assert.equal(r.health, 93); r.invulnerable = 0;
+  g.enemyStep(a, .01); assert.equal(r.health, 93, 'bite only hits once');
+});
+test('Parasaurolophus flees harmlessly and steers along an edge rather than getting stuck', () => {
+  const g = make(), r = g.run; r.player.x = 790; r.player.y = 340;
+  const e = g.spawn('parasaurolophus', { x: 890, y: 340 });
+  for (let i = 0; i < 20; i++) g.enemyStep(e, .05);
+  assert.equal(e.mode, 'flee'); assert.ok(Math.abs(e.y - 340) > 30); assert.ok(e.x <= 900);
+  assert.equal(r.health, 100); assert.ok(e.moving); assert.ok(['N', 'S'].includes(e.direction));
+});
+test('ordinary Carnotaurus charges from the first biome, locks its warning aim and allows a sideways dodge', () => {
+  const g = make(), r = g.run, e = g.spawn('carnotaurus', { x: 480, y: 200 }); e.cooldown = 0;
+  g.enemyStep(e, .01); assert.equal(e.mode, 'windup'); assert.equal(e.timer, .9);
+  r.player.x = 680; const aim = [e.chargeX, e.chargeY];
+  for (let i = 0; i < 30; i++) g.enemyStep(e, .05);
+  assert.deepEqual([e.chargeX, e.chargeY], aim); assert.equal(r.health, 100); assert.equal(e.mode, 'recover');
+});
+test('Ankylosaurus warns before tail strike, hits once and has weaker rear armor', () => {
+  const g = make(), r = g.run, e = g.spawn('ankylosaurus', { x: 520, y: 340 }); e.cooldown = 0;
+  g.enemyStep(e, .01); assert.equal(e.mode, 'windup'); assert.equal(e.pattern, 2); assert.equal(e.attackRadius, 90);
+  e.timer = .001; g.enemyStep(e, .01); g.enemyStep(e, .1); assert.equal(r.health, 84);
+  r.invulnerable = 0; g.enemyStep(e, .01); assert.equal(r.health, 84);
+  e.facingX = 1; e.facingY = 0; e.hp = e.maxHP; e.x = 520;
+  r.player.x = 560; g.resolveBite('W'); assert.equal(e.hp, e.maxHP - 5, 'front armor halves damage');
+  e.hp = e.maxHP; e.x = 520; r.player.x = 480; g.resolveBite('E'); assert.equal(e.hp, e.maxHP - 10, 'rear is vulnerable');
+  g.phase = 'mutation'; const frozen = JSON.stringify(e); g.enemyStep(e, .05); assert.equal(JSON.stringify(e), frozen);
+});
+test('first biome waits for meat progression before unlocking a stronger predator and caps it at one', () => {
+  const g = make(() => .99), r = g.run; r.seconds = 200; r.meat = 0; r.spawnTimer = 0; tick(g);
+  assert.equal(r.enemies[0].kind, 'parasaurolophus', 'waiting alone cannot escalate difficulty');
+  r.meat = 12; r.enemies = []; r.spawnTimer = 0; tick(g); assert.equal(r.enemies[0].kind, 'carnotaurus');
+  r.spawnTimer = 0; tick(g); assert.equal(r.enemies.filter(e => e.kind === 'carnotaurus').length, 1);
+});
 test('mutation choices are distinct, pause simulation, and queued levels resolve', () => {
   const g = make(), r = g.run; g.addXP(30);
   assert.equal(g.phase, 'mutation'); assert.equal(new Set(r.choices).size, 3);

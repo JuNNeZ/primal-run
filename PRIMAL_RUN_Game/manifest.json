@@ -3409,5 +3409,2693 @@
     "source_frame": 0,
     "export": "4x nearest-neighbor sampling; alpha>=192 becomes binary; nearest fixed 32-color palette; manually registered hip anchor; no silhouette auto-centering",
     "note": "Attack study integrated for gameplay review. Frame5 intentionally reuses ready frame0. No production animation approval."
+  },
+  {
+    "file": "assets/enemy_animations/compy_idle_S_000.png",
+    "export_sha256": "95e0380477ed3af84ea28f2a092de063e0c86a40c32ed5a6f05ffdf2c5d94e0f",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "S",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      0,
+      0,
+      338,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      51,
+      60
+    ],
+    "registration_offset": [
+      13,
+      4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_step_left_S_000.png",
+    "export_sha256": "d3507ab783bb47fd61155a16cf9194692d9fbc0197e3b9f9760432b43e6be4cb",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "S",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      0,
+      290,
+      338,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      51,
+      64
+    ],
+    "registration_offset": [
+      13,
+      0
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_step_right_S_000.png",
+    "export_sha256": "e3ed2c89d7d972e16c4bcaabaa37cc4b478c33ea5efdb9525edf78026d3698e4",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "S",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      0,
+      603,
+      338,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      52,
+      64
+    ],
+    "registration_offset": [
+      12,
+      0
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_action_S_000.png",
+    "export_sha256": "7da599a76c5b0736e9f4f364f9948b06dc04085a178777e06d17ec2e14432952",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "S",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      0,
+      916,
+      338,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      49,
+      57
+    ],
+    "registration_offset": [
+      15,
+      7
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_idle_E_000.png",
+    "export_sha256": "614ba4d0e50d56bbdc451c4b2994b774389eaaefcd3155bcfd86966a80aec63e",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "E",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      290,
+      0,
+      651,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      57,
+      60
+    ],
+    "registration_offset": [
+      7,
+      4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_step_left_E_000.png",
+    "export_sha256": "cdad35b9f99d6ed86d96a8e485551df2ce588bcec74318cf755cbba456bde9f9",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "E",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      290,
+      290,
+      651,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      57,
+      68
+    ],
+    "registration_offset": [
+      7,
+      -4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_step_right_E_000.png",
+    "export_sha256": "b0048a01fc22ee2bf32728dd71b0861ee74afaae8fe4c26a9f30ea6677441dfb",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "E",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      290,
+      603,
+      651,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      56,
+      67
+    ],
+    "registration_offset": [
+      8,
+      -3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_action_E_000.png",
+    "export_sha256": "cdad35b9f99d6ed86d96a8e485551df2ce588bcec74318cf755cbba456bde9f9",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "E",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      290,
+      290,
+      651,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      57,
+      68
+    ],
+    "registration_offset": [
+      7,
+      -4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_idle_N_000.png",
+    "export_sha256": "e71da3bf1af647fc16d729dc093785c875954d6d221348381e8b376559adbb09",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "N",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      603,
+      0,
+      964,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      61,
+      61
+    ],
+    "registration_offset": [
+      3,
+      3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_step_left_N_000.png",
+    "export_sha256": "d0e5de7ad87deb55ba0638a2454bf0d22fffb36452689dc4c450b1951974e777",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "N",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      603,
+      290,
+      964,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      61,
+      64
+    ],
+    "registration_offset": [
+      3,
+      0
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_step_right_N_000.png",
+    "export_sha256": "9d755165e9beb964d9991c80e98a8da6bd3191da5cf5768f6e0fec88536701a9",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "N",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      603,
+      603,
+      964,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      61,
+      62
+    ],
+    "registration_offset": [
+      3,
+      2
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_action_N_000.png",
+    "export_sha256": "24844ce80884ba79745e76b1e824765a5c8721af2cadeb4491b4b94bd8454b63",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "N",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      603,
+      916,
+      964,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      61,
+      55
+    ],
+    "registration_offset": [
+      3,
+      9
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_idle_W_000.png",
+    "export_sha256": "17d1b0f3bf1127210a4052ac5254f12a0a6b7080a843c98e0bb47fd3d1a6b559",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "W",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      916,
+      0,
+      1254,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      61,
+      60
+    ],
+    "registration_offset": [
+      3,
+      4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_step_left_W_000.png",
+    "export_sha256": "96ebbc28238e13a816f397112b26e400d0971e69d717764632b2366e678b594d",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "W",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      916,
+      290,
+      1254,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      63,
+      68
+    ],
+    "registration_offset": [
+      1,
+      -4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_step_right_W_000.png",
+    "export_sha256": "93327ada01ccf281b733be8a150df47c7685e8e6242aa8870112a9f0a3255457",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "W",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      916,
+      603,
+      1254,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      60,
+      65
+    ],
+    "registration_offset": [
+      4,
+      -1
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/compy_action_W_000.png",
+    "export_sha256": "96ebbc28238e13a816f397112b26e400d0971e69d717764632b2366e678b594d",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "compy",
+    "direction": "W",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/compy_sheet.png",
+    "source_sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+    "source_crop": [
+      916,
+      290,
+      1254,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      63,
+      68
+    ],
+    "registration_offset": [
+      1,
+      -4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_idle_S_000.png",
+    "export_sha256": "1d36e31302f230a9d1b6b7f8aeed56e6f20b37ba142043745164ffef6c47682c",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "S",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      0,
+      0,
+      338,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      42,
+      60
+    ],
+    "registration_offset": [
+      22,
+      4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_step_left_S_000.png",
+    "export_sha256": "8df6931a20c157f8735a913185c7fb0eabf83b14be02b61b6ec7239ede6f416f",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "S",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      0,
+      290,
+      338,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      41,
+      66
+    ],
+    "registration_offset": [
+      23,
+      -2
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_step_right_S_000.png",
+    "export_sha256": "3466aadc042d033be23cda8d9c050d2924318a984791782e0f52ad8503da527e",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "S",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      0,
+      603,
+      338,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      39,
+      67
+    ],
+    "registration_offset": [
+      25,
+      -3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_action_S_000.png",
+    "export_sha256": "717038dcb17e017949375e54c749a38940a4ec6960ccbfe25384a669efca8dcc",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "S",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      0,
+      916,
+      338,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      42,
+      61
+    ],
+    "registration_offset": [
+      22,
+      3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_idle_E_000.png",
+    "export_sha256": "8d993259c75d81066800c5589b6db03b4a7bb43be9fc8318abac726be5ed7e8d",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "E",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      260,
+      0,
+      651,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      64,
+      62
+    ],
+    "registration_offset": [
+      0,
+      2
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_step_left_E_000.png",
+    "export_sha256": "610614315eca98970f5972fb5c4336dda1aef44ab9a76de0231b41ac8446e39a",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "E",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      260,
+      290,
+      651,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      64,
+      72
+    ],
+    "registration_offset": [
+      0,
+      -8
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_step_right_E_000.png",
+    "export_sha256": "3aa187fbbd940c9f305eea9436bfbea0dd6d81db3d2bec792f805ed655d60a43",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "E",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      260,
+      603,
+      651,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      64,
+      72
+    ],
+    "registration_offset": [
+      0,
+      -8
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_action_E_000.png",
+    "export_sha256": "5105013ec2f9ea71d57893ecf331e195d92acc9b122d9d266ce994d1085469a0",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "E",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      260,
+      916,
+      651,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      64,
+      64
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_idle_N_000.png",
+    "export_sha256": "a30766a0b715520c6898325d93c94923a03bec0e63b04b584ff60391b74fba70",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "N",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      603,
+      0,
+      964,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      60,
+      61
+    ],
+    "registration_offset": [
+      4,
+      3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_step_left_N_000.png",
+    "export_sha256": "63571fe54380a0c8dd8d39bd5af86692b2b5414c65da0b3d3d5c6f11e5d70888",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "N",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      603,
+      290,
+      964,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      61,
+      67
+    ],
+    "registration_offset": [
+      3,
+      -3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_step_right_N_000.png",
+    "export_sha256": "fbca09b3df499cf509c87d71501194f9b2af78b30ea491cecb890493bd3d7564",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "N",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      603,
+      603,
+      964,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      60,
+      69
+    ],
+    "registration_offset": [
+      4,
+      -5
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_action_N_000.png",
+    "export_sha256": "2bc6201e1371524259dfdc28ba84a32bef045ee587c4c5d3e94944e2e507fa6b",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "N",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      603,
+      916,
+      964,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      59,
+      64
+    ],
+    "registration_offset": [
+      5,
+      0
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_idle_W_000.png",
+    "export_sha256": "87e756d30bce541ca55a9061d5103a971953d4130d19323cae54530a8d527c60",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "W",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      916,
+      0,
+      1254,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      58,
+      64
+    ],
+    "registration_offset": [
+      6,
+      0
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_step_left_W_000.png",
+    "export_sha256": "e7dcdd5f26be351b15500c6154ce7b40ec3d70353b2098d415fa49083284d464",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "W",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      916,
+      290,
+      1254,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      58,
+      74
+    ],
+    "registration_offset": [
+      6,
+      -10
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_step_right_W_000.png",
+    "export_sha256": "d4e40765c096957cb5157ab740f5dba1d37d84d372027de3db59c183424ab8ba",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "W",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      916,
+      603,
+      1254,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      58,
+      73
+    ],
+    "registration_offset": [
+      6,
+      -9
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/parasaurolophus_action_W_000.png",
+    "export_sha256": "5b16b683af1712e09516e8cba0ecd33af76d12257b4bd43074e66b1dcfc5a32c",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "parasaurolophus",
+    "direction": "W",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/parasaurolophus_sheet.png",
+    "source_sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+    "source_crop": [
+      916,
+      916,
+      1254,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      58,
+      65
+    ],
+    "registration_offset": [
+      6,
+      -1
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_idle_S_000.png",
+    "export_sha256": "690f2f9a0796898ba617607d45b66bfcbb60ecc5ff18624d9301f326e14cf88d",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "S",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      0,
+      290,
+      338,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      42,
+      70
+    ],
+    "registration_offset": [
+      22,
+      -6
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_step_left_S_000.png",
+    "export_sha256": "690f2f9a0796898ba617607d45b66bfcbb60ecc5ff18624d9301f326e14cf88d",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "S",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      0,
+      290,
+      338,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      42,
+      70
+    ],
+    "registration_offset": [
+      22,
+      -6
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_step_right_S_000.png",
+    "export_sha256": "e6017f9aaccd4d402bac4b32745338b80e91cfcc0fe5997dccf8b667149340ef",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "S",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      0,
+      603,
+      338,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      42,
+      67
+    ],
+    "registration_offset": [
+      22,
+      -3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_action_S_000.png",
+    "export_sha256": "e78e0abecacb6d9e49be59e9a84ae62f949f4628508e7acb7bcff6894761fce2",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "S",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      0,
+      934,
+      338,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      43,
+      55
+    ],
+    "registration_offset": [
+      21,
+      9
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_idle_E_000.png",
+    "export_sha256": "242c2467090f8203ae630efacd727a2662253877110043e3df70d58228150024",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "E",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      260,
+      0,
+      651,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      65,
+      63
+    ],
+    "registration_offset": [
+      -1,
+      1
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_step_left_E_000.png",
+    "export_sha256": "6ee7c0740accbd0d6f8ae68db6bc8b5eef4cacd1bddfb79474a61ec9231270c6",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "E",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      260,
+      290,
+      651,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      66,
+      68
+    ],
+    "registration_offset": [
+      -2,
+      -4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_step_right_E_000.png",
+    "export_sha256": "35a6d7cd791656fa02709f0cf6e95fd179edc70b1f14c1bcf2296cfe9207c099",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "E",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      260,
+      603,
+      651,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      65,
+      69
+    ],
+    "registration_offset": [
+      -1,
+      -5
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_action_E_000.png",
+    "export_sha256": "e9e34c4dedb203ea241090f8b31146f8f656f94e96a626974313e82fafd77d23",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "E",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      260,
+      916,
+      651,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      66,
+      61
+    ],
+    "registration_offset": [
+      -2,
+      3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_idle_N_000.png",
+    "export_sha256": "db9fd8210fe3f24ee97ad83e1ee88ec07279c89de63a8395e9efe5e5a0623709",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "N",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      603,
+      0,
+      964,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      59,
+      53
+    ],
+    "registration_offset": [
+      5,
+      11
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_step_left_N_000.png",
+    "export_sha256": "80cb3fff66c0bc601bdeb29b54e3f7328f6ae180e65e320ed90042e114613041",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "N",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      603,
+      290,
+      964,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      59,
+      60
+    ],
+    "registration_offset": [
+      5,
+      4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_step_right_N_000.png",
+    "export_sha256": "31a534a3fdf3013c7b33858deb47326785b0b4f1d79309a92e054353e2ae8a8c",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "N",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      603,
+      603,
+      964,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      59,
+      60
+    ],
+    "registration_offset": [
+      5,
+      4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_action_N_000.png",
+    "export_sha256": "80cb3fff66c0bc601bdeb29b54e3f7328f6ae180e65e320ed90042e114613041",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "N",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      603,
+      290,
+      964,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      59,
+      60
+    ],
+    "registration_offset": [
+      5,
+      4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_idle_W_000.png",
+    "export_sha256": "082ef2c40e2bfc8514aa6b7bd8d49a3067116ac3785eeff9717c31ee1fedda83",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "W",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      916,
+      0,
+      1254,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      60,
+      62
+    ],
+    "registration_offset": [
+      4,
+      2
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_step_left_W_000.png",
+    "export_sha256": "b936ef36c19668aa25cfebbab385416ba93424a33bde4a95e90e698e8b65553c",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "W",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      916,
+      290,
+      1254,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      61,
+      70
+    ],
+    "registration_offset": [
+      3,
+      -6
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_step_right_W_000.png",
+    "export_sha256": "31b96c771e168386b887245153bfce53d01ec86d4c8a3e1bd0846b13f73cd541",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "W",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      916,
+      603,
+      1254,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      61,
+      69
+    ],
+    "registration_offset": [
+      3,
+      -5
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/carnotaurus_action_W_000.png",
+    "export_sha256": "7fa1672a7bdc6743fbb1da946517342ba27e818beb6bcca1be7596925ddfc8f4",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "carnotaurus",
+    "direction": "W",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/carnotaurus_sheet.png",
+    "source_sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+    "source_crop": [
+      916,
+      916,
+      1254,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      61,
+      61
+    ],
+    "registration_offset": [
+      3,
+      3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_idle_S_000.png",
+    "export_sha256": "5ae1533731b692b1830f23a7acf8fa488a0f69ecbf310ef5a5e05ef2bd28330e",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "S",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      0,
+      0,
+      338,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      46,
+      66
+    ],
+    "registration_offset": [
+      18,
+      -2
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_step_left_S_000.png",
+    "export_sha256": "55315e6e07169770493effff551b3db1dbe16d686b56a9b5903e48bb269942fd",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "S",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      0,
+      290,
+      338,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      46,
+      66
+    ],
+    "registration_offset": [
+      18,
+      -2
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_step_right_S_000.png",
+    "export_sha256": "d2a11f40eaf84b3810d048df7add29c6c904b917782dfed3f4887a1f7b1afe04",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "S",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      0,
+      603,
+      338,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      46,
+      63
+    ],
+    "registration_offset": [
+      18,
+      1
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_action_S_000.png",
+    "export_sha256": "bcbaa358248d9b3791e52f8f514bc52fe44166dd7555fad8493af74bd5b8d94c",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "S",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      0,
+      916,
+      338,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      46,
+      60
+    ],
+    "registration_offset": [
+      18,
+      4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_idle_E_000.png",
+    "export_sha256": "3b2a43b154860460fe937686d71e4cec16418862465593d26f1b19cb5a70b7a1",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "E",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      260,
+      0,
+      651,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      69,
+      66
+    ],
+    "registration_offset": [
+      -5,
+      -2
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_step_left_E_000.png",
+    "export_sha256": "130e3c653ca59af107c2c979f77794926916343f60263d94936e0bc585271947",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "E",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      260,
+      290,
+      651,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      75,
+      68
+    ],
+    "registration_offset": [
+      -11,
+      -4
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_step_right_E_000.png",
+    "export_sha256": "c8838d83d6327e0b3fe6a1fe70384f675f792a52d33cab76ebff9d4ce6e9b7db",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "E",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      260,
+      603,
+      651,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      69,
+      67
+    ],
+    "registration_offset": [
+      -5,
+      -3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_action_E_000.png",
+    "export_sha256": "fae2bc371e2c49af99b9d60b09cf34e2664da0a9def596af1eda1cdb00da376e",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "E",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      260,
+      916,
+      651,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      71,
+      58
+    ],
+    "registration_offset": [
+      -7,
+      6
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_idle_N_000.png",
+    "export_sha256": "ab3d8c18861835fd80a1d7057bdd2bb15d478d5a4c18e6a67c82cdd797af1f6b",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "N",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      603,
+      0,
+      964,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      58,
+      67
+    ],
+    "registration_offset": [
+      6,
+      -3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_step_left_N_000.png",
+    "export_sha256": "976b5bf4ed7449b6b8d640b1dc9ad1fd427e6e12c3e88023c40a0641b803a237",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "N",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      603,
+      290,
+      964,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      58,
+      73
+    ],
+    "registration_offset": [
+      6,
+      -9
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_step_right_N_000.png",
+    "export_sha256": "be0818a7e508997e112d120f1f84122423f32cdd1890a6f073dc2371315a8275",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "N",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      603,
+      603,
+      964,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      58,
+      64
+    ],
+    "registration_offset": [
+      6,
+      0
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_action_N_000.png",
+    "export_sha256": "e6373f753046c34599b637db57f26bfcf5cab8717afad3573bf295162158e348",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "N",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      603,
+      916,
+      964,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      58,
+      70
+    ],
+    "registration_offset": [
+      6,
+      -6
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_idle_W_000.png",
+    "export_sha256": "e8fd5cf02b635e8171c6ce65f497802e51c671263d206cba209e85dde1ee6b01",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "W",
+    "state": "idle",
+    "frame": 0,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      916,
+      0,
+      1254,
+      338
+    ],
+    "source_row": 0,
+    "source_cell_anchor": [
+      48,
+      66
+    ],
+    "registration_offset": [
+      16,
+      -2
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_step_left_W_000.png",
+    "export_sha256": "44cffda36c52489c208d60890698707b8263451bb6251413685dd4990362c63e",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "W",
+    "state": "step_left",
+    "frame": 1,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      916,
+      290,
+      1254,
+      651
+    ],
+    "source_row": 1,
+    "source_cell_anchor": [
+      60,
+      74
+    ],
+    "registration_offset": [
+      4,
+      -10
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_step_right_W_000.png",
+    "export_sha256": "d8cfde663ce7bbd9ece39cd3033a53a0c00fbe02ddd8c829be30be1511e4311d",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "W",
+    "state": "step_right",
+    "frame": 2,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      916,
+      603,
+      1254,
+      964
+    ],
+    "source_row": 2,
+    "source_cell_anchor": [
+      60,
+      67
+    ],
+    "registration_offset": [
+      4,
+      -3
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
+  },
+  {
+    "file": "assets/enemy_animations/ankylosaurus_action_W_000.png",
+    "export_sha256": "4a2b8d43a285275931845d66719f785ef9e8a02f4dd46b221df38b3c89ee0673",
+    "size": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      64
+    ],
+    "body_anchor": [
+      64,
+      64
+    ],
+    "species": "ankylosaurus",
+    "direction": "W",
+    "state": "action",
+    "frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source": "Source_Generated/enemies_v1/ankylosaurus_sheet.png",
+    "source_sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+    "source_crop": [
+      916,
+      916,
+      1254,
+      1254
+    ],
+    "source_row": 3,
+    "source_cell_anchor": [
+      60,
+      65
+    ],
+    "registration_offset": [
+      4,
+      -1
+    ],
+    "export": "Integer 3px nearest-neighbor source sampling, alpha>=192, fixed32palette, manually registered anatomy. No interpolation or automatic bbox centering. Expanded reviewed crop; isolated neighbouring fragments excluded.",
+    "note": "Clipped South carnotaurus idle, wrong-facing North carnotaurus action and lateral horizontal Compy gapes excluded; documented ready/lunge reuse."
   }
 ]
