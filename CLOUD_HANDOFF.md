@@ -287,3 +287,15 @@ Spiltest skal afgøre næste balance- og artfinpudsning;5–8 afventer brugeren.
   other directions still need redraws. Art remains prototype_static/unapproved.
 - Exporter now reads per-state overrides; native size/pivot remains144/72.
   Source/project/Pages are rebuilt from current src/style and combined manifest.
+
+## Species colour and legacy renderer audit · 2026-10-09
+
+- Portraits prepare species skins even before first canvas draw and lazy-load
+  missing classes. Death previews share that path; encoded skins are cached and
+  evicted with species. No source PNG changes. See PRIMAL_RUN_Game/CODE_AUDIT.md.
+- Player rendering only uses player_full; obsolete hardcoded Utah/legacy NPC
+  fallbacks are removed. Intro background follows selected species.
+- New tests/species-colour-browser.cjs checks all four portrait palettes against
+  exact expected RGB substitutions and unchanged alpha, starting cold as Compy.
+  It supports standalone and official GDJS resource filenames. npm test now has
+  72 core tests, 13 game browser suites and 3 preserved-kit suites.
