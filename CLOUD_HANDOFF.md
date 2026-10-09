@@ -299,3 +299,11 @@ Spiltest skal afgøre næste balance- og artfinpudsning;5–8 afventer brugeren.
   exact expected RGB substitutions and unchanged alpha, starting cold as Compy.
   It supports standalone and official GDJS resource filenames. npm test now has
   72 core tests, 13 game browser suites and 3 preserved-kit suites.
+
+## Recovery checkpoint · 2026-10-09
+
+Unfinished expansion and all 85 generated PNG originals are preserved. Read
+[UNFINISHED_EXPANSION.md](PRIMAL_RUN_Game/UNFINISHED_EXPANSION.md) before continuing.
+New class art export is incomplete; do not publish this checkpoint as a release.
+The later decay/regeneration/predator attraction/DNA lab/playable T. rex request
+is still pending. SHA-256 inventory is under Source_Generated/recovery_2026_10_09.
