@@ -1,0 +1,64 @@
+'use strict';
+// Overhaul phases 1-2: crits, stamina, rival minibosses and ecology behaviour.
+const { test } = require('node:test'), assert = require('node:assert/strict'), C = require('../PRIMAL_RUN_Game/src/core.js');
+function game(species, random = () => .5) {
+  const g = new C.Game({ random }); g.save.unlockedSpecies = Object.keys(C.PLAYER_SPECIES);
+  if (species) g.selectSpecies(species); g.start({ seed: 321 });
+  const r = g.run; r.enemies = []; r.pickups = []; r.spawnTimer = 999; r.map.rocks = []; return g;
+}
+
+test('critical hits are the only bite stagger and boss crits build a break meter', () => {
+  const g = game('velociraptor', () => 0), r = g.run, e = g.spawn('carnotaurus', { x: 520, y: 340 });
+  g.resolveBite('E'); assert.ok(e.stagger >= C.CRIT.stagger); assert.equal(r.stats.crits, 1);
+  const boss = g.spawn('carnotaurus', { x: 520, y: 340 }, true);
+  for (let i = 0; i < 4; i++) g.resolveBite('E');
+  assert.equal(boss.mode, 'broken', 'four crits break a boss');
+  const calm = game('velociraptor', () => .99), m = calm.spawn('carnotaurus', { x: 520, y: 340 });
+  calm.resolveBite('E'); assert.equal(m.stagger, 0);
+});
+
+test('stamina refills slower in combat and an empty bar leaves you winded', () => {
+  const g = game('carnotaurus'), r = g.run; r.stamina = 55; r.pounceCooldown = 0;
+  g.step(.01, { x: 1, pounce: true }); assert.ok(r.stamina < C.STAMINA.windedBelow); assert.ok(r.winded > 0);
+  const x = r.player.x; r.pounce = 0; r.staminaDelay = 0; g.step(.05, { x: 1 }); const winded = r.player.x - x;
+  r.winded = 0; const y = r.player.x; g.step(.05, { x: 1 }); assert.ok(r.player.x - y > winded, 'winded is slower');
+});
+
+test('every journey level has one optional rival miniboss that rewards an epic genome', () => {
+  const g = new C.Game({ random: () => .5 }); g.start({ seed: 77 }); const r = g.run;
+  assert.ok(r.map.rival); const rival = r.enemies.find(e => e.id === r.map.rival.id);
+  assert.ok(rival.miniboss && rival.elite && !rival.guard); assert.ok(Math.hypot(rival.x - 480, rival.y - 340) > 900);
+  g.kill(rival); assert.equal(g.phase, 'mutation'); assert.equal(r.rareSelection, true);
+});
+
+test('compys steal food near you instead of attacking, then run off with it', () => {
+  const g = game('velociraptor'), r = g.run, c = g.spawn('compy', { x: 600, y: 340 });
+  r.pickups.push({ id: 900, kind: 'meat', corpseId: 55, x: 560, y: 340, rarity: 0, value: 3 });
+  for (let i = 0; i < 40 && !c.carrying; i++) g.enemyStep(c, .05);
+  assert.equal(c.carrying, 1); assert.equal(r.pickups[0].value, 2); assert.equal(r.health, r.maxHealth);
+  const d = Math.hypot(c.x - r.player.x, c.y - r.player.y); g.enemyStep(c, .1);
+  assert.ok(Math.hypot(c.x - r.player.x, c.y - r.player.y) > d, 'thief runs away');
+});
+
+test('a wounded compy retreats, heals out of sight and returns while hungry', () => {
+  const g = game('velociraptor'), r = g.run, c = g.spawn('compy', { x: 540, y: 340 });
+  g.provoke(c); c.hp = c.maxHP * .3; c.hunger = .9; g.enemyStep(c, .05); assert.equal(c.retreating, true); assert.equal(c.mode, 'flee');
+  c.x = 1600; c.y = 1200; for (let i = 0; i < 400 && c.retreating; i++) { r.seconds += .05; g.enemyStep(c, .05); }
+  assert.equal(c.retreating, false); assert.equal(c.alert, true);
+});
+
+test('territorial herbivores only warn a herbivore player unless crowded or hit', () => {
+  const g = game('triceratops'), r = g.run, a = g.spawn('ankylosaurus', { x: 620, y: 340 });
+  g.enemyStep(a, .05); assert.equal(a.mode, 'warning'); assert.equal(a.alert, false);
+  a.x = 560; for (let i = 0; i < 60; i++) g.enemyStep(a, .05); assert.equal(a.alert, true, 'crowding for 2.5 s provokes it');
+  const c = game('velociraptor'), b = c.spawn('ankylosaurus', { x: 600, y: 340 }); c.enemyStep(b, .05); assert.equal(b.alert, true, 'carnivores are still a threat');
+});
+
+test('hungry predators can hunt prey; natural kills leave a carcass but give the player nothing', () => {
+  const g = game('velociraptor'), r = g.run; r.player.x = 2400; r.player.y = 1600;
+  const hunter = g.spawn('carnotaurus', { x: 800, y: 700 }), prey = g.spawn('parasaurolophus', { x: 860, y: 700 });
+  hunter.hunger = .95; prey.hp = 1; const kills = r.kills, dna = r.dna;
+  for (let i = 0; i < 200 && r.enemies.includes(prey); i++) g.step(.05, {});
+  assert.ok(!r.enemies.includes(prey)); assert.equal(r.kills, kills); assert.equal(r.dna, dna);
+  assert.ok(r.corpses.some(c => c.id === prey.id)); assert.ok(r.pickups.some(p => p.corpseId === prey.id));
+});
