@@ -2,8 +2,8 @@
 const test=require('node:test'),assert=require('node:assert/strict'),C=require('../PRIMAL_RUN_Game/src/core.js');
 function setup(species='compy'){const g=new C.Game({random:()=>.9});g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:33});Object.assign(g.run,{enemies:[],spawnTimer:999});Object.assign(g.run.map,{rocks:[],cover:[],mud:[]});return g;}
 test('water and mud slow travel while crocodiles retain water speed and collision corrections remain independent',()=>{
- const g=setup(),r=g.run,p=r.player;r.stage=1;r.map.river=[{x:0,y:340},{x:2880,y:340}];r.map.riverCurve=r.map.river;
- const x=p.x;g.travel(p,10,0);assert.equal(p.x-x,6);const croc=g.spawn('deinosuchus',{x:900,y:340});g.travel(croc,10,0);assert.equal(croc.x,910);
+ const g=setup(),r=g.run,p=r.player;r.stage=1;r.map.river=[{x:0,y:380},{x:2880,y:380}];r.map.riverCurve=r.map.river;r.map.fords=[];r.map.ponds=[]; // player stands in the shallow band
+ const x=p.x;g.travel(p,10,0);assert.equal(p.x-x,6);const croc=g.spawn('deinosuchus',{x:900,y:380});g.travel(croc,10,0);assert.equal(croc.x,910);
  r.stage=0;r.map.mud=[{x:p.x,y:p.y,rx:90,ry:90}];const mx=p.x;g.travel(p,10,0);assert.equal(p.x-mx,7.5);g.move(p,10,0);assert.equal(p.x-mx,17.5);
 });
 test('bush concealment requires a quiet delay, reduces detection, and attacks reveal immediately',()=>{

@@ -23,8 +23,8 @@ const log = [];
     log.push('preloading'); fs.writeFileSync(path.join(out, 'log.txt'), log.join('\n'));
     await Promise.race([page.evaluate(async () => { for (let stage = 0; stage < 4; stage++) await primalRun.preload({ species: 'velociraptor', stage }); }), page.waitForTimeout(90000)]);
     log.push('preloaded');
-    const scene = async (name, setup) => {
-      const info = await page.evaluate(setup);
+    const scene = async (name, setup, arg) => {
+      const info = await page.evaluate(setup, arg);
       await page.evaluate(() => { const g = primalRun.game; if (g.phase === 'playing') g.pause(); primalRun.update(performance.now()); document.querySelector('.screen').hidden = primalRun.game.phase === 'paused'; });
       await shoot(page, name); if (info) log.push(name + ' ' + JSON.stringify(info));
     };
@@ -50,6 +50,9 @@ const log = [];
       const g = primalRun.game; g.random = () => 0; const r = g.run; r.enemies = r.enemies.filter(e => !e.boss);
       const e = g.spawn('parasaurolophus', { x: r.player.x + 40, y: r.player.y }); r.player.facing = 'E'; g.resolveBite('E'); g.random = Math.random; g.step(1 / 60, {}); return { effects: r.effects.map(f => f.text) };
     });
+    await scene('desktop-24-achievements', () => { const g = primalRun.game; g.phase = 'achievements'; return null; });
+    await scene('desktop-25-species', () => { const g = primalRun.game; g.phase = 'species'; return null; });
+    await scene('desktop-26-menu-again', () => { const g = primalRun.game; g.phase = 'menu'; return null; });
     await scene('desktop-23-mutation', () => { const g = primalRun.game; g.phase = 'playing'; g.addXP(50); return { phase: g.phase }; });
     await page.close();
   }

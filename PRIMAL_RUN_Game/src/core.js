@@ -67,6 +67,15 @@
   function isWater(stage,map,p,margin=0){
     return stage===1&&riverDistance(map,p)<58-margin||(map.ponds||[]).some(pond=>{const rx=pond.radius-margin,ry=pond.radius*.7-margin;return rx>0&&ry>0&&((p.x-pond.x)/rx)**2+((p.y-pond.y)/ry)**2<1;});
   }
+  // Overhaul phase 5 terrain: deep river water with shallow fords, lava cracks.
+  const DEEP_WATER=26,LAVA_CORE=14;
+  function nearFord(map,p){return (map.fords||[]).some(f=>Math.hypot(p.x-f.x,p.y-f.y)<78);}
+  function isDeepWater(stage,map,p){
+    if(stage===1&&riverDistance(map,p)<DEEP_WATER&&!nearFord(map,p))return true;
+    return (map.ponds||[]).some(pond=>((p.x-pond.x)/(pond.radius*.45))**2+((p.y-pond.y)/(pond.radius*.7*.45))**2<1);
+  }
+  const canSwim=entity=>['deinosuchus','baryonyx'].includes(entity.kind)||entity.radius>=28;
+  function isLava(stage,map,p){return stage===3&&riverDistance(map,p)<LAVA_CORE;}
   function suitableHabitat(stage,map,kind,p) {
     if (!BIOMES[stage].animals.includes(kind) && STAGES[stage].boss!==kind) return false;
     const distance=riverDistance(map,p);
@@ -285,7 +294,8 @@
       const a=curve[i-1],b=curve[i],dx=b.x-a.x,dy=b.y-a.y,length=Math.hypot(dx,dy);
       for(const side of [-1,1]){const x=Math.round((a.x+b.x)/2-dy/length*95*side),y=Math.round((a.y+b.y)/2+dx/length*95*side);if(x>80&&x<width-80&&y>110&&y<height-80&&safe(x,y))habitats.push({x,y,roll:.99});}
     }
-    const habitatMap={river,riverCurve:curve};
+    const fords=[];if(stage===1){let run=0;for(let i=1;i<curve.length;i++){run+=Math.hypot(curve[i].x-curve[i-1].x,curve[i].y-curve[i-1].y);if(run>520&&curve[i].x>120&&curve[i].y>140&&curve[i].x<width-120&&curve[i].y<height-120){fords.push({x:Math.round(curve[i].x),y:Math.round(curve[i].y)});run=0;}}}
+    const habitatMap={river,riverCurve:curve,fords};
     const mud=[];
     for(let i=0;i<[6,18,4,0][stage];i++){
       const point=stage===1?curve[Math.floor(random()*curve.length)]:{x:140+random()*(width-280),y:160+random()*(height-320)};
@@ -343,7 +353,7 @@
     for(let i=rocks.length-1;i>=0;i--)if(isWater(stage,waterMap,rocks[i],-rocks[i].radius))rocks.splice(i,1);
     const cover=decorations.filter(d=>/shrub|fruit_bush|fern_large|flower_bush/.test(d.path)).map(d=>({x:d.x,y:d.y,radius:34}));
     const zones=buildZones(stage,seed,width,height,{rocks,decorations,mud,habitats,events,forage,waterMap,props});
-    return { zones, ponds,fishSchools,forage, events, arenas, seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites, ambience, layout, groves, riverOrientation:horizontal?'horizontal':'vertical',riverCurve:curve,mud,cover };
+    return { fords, zones, ponds,fishSchools,forage, events, arenas, seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites, ambience, layout, groves, riverOrientation:horizontal?'horizontal':'vertical',riverCurve:curve,mud,cover };
   }
   const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
   const finite = (n, fallback = 0) => typeof n === 'number' && Number.isFinite(n) ? n : fallback;
@@ -353,7 +363,7 @@
     const save = { version: 1, name: cleanName(x.name), dna: Math.floor(clamp(finite(x.dna), 0, 1000000)), upgrades: {}, settings: {}, scores: [] };
     for (const u of UPGRADES) save.upgrades[u.id] = Math.floor(clamp(finite(x.upgrades && x.upgrades[u.id]), 0, u.max));
     for (const key of ['master', 'music', 'sfx', 'ambient']) save.settings[key] = clamp(finite(x.settings && x.settings[key], key === 'music' ? .4 : .7), 0, 1);
-    save.settings.autoAttack=!!(x.settings&&x.settings.autoAttack);save.settings.reducedMotion=!!(x.settings&&x.settings.reducedMotion);
+    save.settings.autoAttack=!!(x.settings&&x.settings.autoAttack);save.settings.skipIntro=!!(x.settings&&x.settings.skipIntro);save.settings.language=typeof (x.settings&&x.settings.language)==='string'?x.settings.language.slice(0,8):'da';save.settings.reducedMotion=!!(x.settings&&x.settings.reducedMotion);
     for(const key of ['hudScale','textScale'])save.settings[key]=clamp(finite(x.settings&&x.settings[key],1),.85,1.4);
     const defaults={up:'KeyW',down:'KeyS',left:'KeyA',right:'KeyD',attack:'Space',ability:'ShiftLeft',sneak:'KeyC',eat:'KeyF',interact:'KeyE'};save.bindings={...defaults};
     if(x.bindings){const candidate={...defaults};for(const key of Object.keys(defaults))if(/^(Key[A-Z]|Space|ShiftLeft|ShiftRight)$/.test(x.bindings[key]||''))candidate[key]=x.bindings[key];if(new Set(Object.values(candidate)).size===Object.keys(candidate).length)save.bindings=candidate;}
@@ -418,7 +428,8 @@
     setSetting(key, value) {
       if (['master', 'music', 'sfx', 'ambient'].includes(key)) this.save.settings[key] = clamp(finite(value), 0, 1);
       else if(['hudScale','textScale'].includes(key))this.save.settings[key]=clamp(finite(value,1),.85,1.4);
-      else if (['shake','autoAttack','reducedMotion'].includes(key))this.save.settings[key]=!!value;
+      else if (['shake','autoAttack','reducedMotion','skipIntro'].includes(key))this.save.settings[key]=!!value;
+      else if (key==='language'&&typeof value==='string')this.save.settings.language=value.slice(0,8);
       else return;
       this.persist();
     }
@@ -548,12 +559,23 @@
     }
     terrainAt(entity) {
       const r=this.run,map=r.map;
+      if(isLava(r.stage,map,entity))return {kind:'lava',speed:.7,cover:false,burn:entity===r.player};
+      if(isWater(r.stage,map,entity)&&isDeepWater(r.stage,map,entity))return {kind:'deep',speed:entity.kind==='deinosuchus'?1:entity.kind==='baryonyx'?1.1*(1+(entity===r.player?.08*r.mutations.riverHunter:0)):.45,cover:false};
       if(isWater(r.stage,map,entity))return {kind:'water',speed:entity.kind==='deinosuchus'?1:entity.kind==='baryonyx'?1.05*(1+(entity===r.player?.08*r.mutations.riverHunter:0)):.6,cover:false};
       if((map.mud||[]).some(p=>((entity.x-p.x)/p.rx)**2+((entity.y-p.y)/p.ry)**2<1))return {kind:'mud',speed:entity.kind==='deinosuchus'?.9:.75,cover:false};
+      const zone=r.stage>=2?zoneAt(map,entity):null;
+      if(zone&&zone.id==='ash')return {kind:'ash',speed:.9,cover:false};
+      if(zone&&zone.id==='canyon'&&!(map.cover||[]).some(p=>Math.hypot(entity.x-p.x,entity.y-p.y)<p.radius))return {kind:'gravel',speed:1.05,cover:false};
       if((map.cover||[]).some(p=>Math.hypot(entity.x-p.x,entity.y-p.y)<p.radius))return {kind:'bush',speed:.9,cover:true};
       return {kind:'ground',speed:1,cover:false};
     }
-    travel(entity,dx,dy){if(entity!==this.run.player&&!entity.boss&&entity.hp<entity.maxHP*.35){dx*=.72;dy*=.72;}const surface=this.terrainAt(entity);this.move(entity,dx*surface.speed,dy*surface.speed);}
+    travel(entity,dx,dy){
+      const r=this.run;if(entity!==r.player&&!entity.boss&&entity.hp<entity.maxHP*.35){dx*=.72;dy*=.72;}const surface=this.terrainAt(entity);dx*=surface.speed;dy*=surface.speed;
+      // Non-swimmers cannot step from shallow into deep water; animals also refuse lava.
+      const blocked=p=>!canSwim(entity)&&isDeepWater(r.stage,r.map,p)&&!isDeepWater(r.stage,r.map,entity)||entity!==r.player&&isLava(r.stage,r.map,p)&&!isLava(r.stage,r.map,entity);
+      if(blocked({x:entity.x+dx,y:entity.y+dy})){if(!blocked({x:entity.x+dx,y:entity.y}))dy=0;else if(!blocked({x:entity.x,y:entity.y+dy}))dx=0;else{dx=0;dy=0;}}
+      this.move(entity,dx,dy);
+    }
     move(entity, dx, dy) {
       entity.x = clamp(entity.x + dx, 42 + entity.radius, this.run.map.width - 42 - entity.radius);
       entity.y = clamp(entity.y + dy, 76 + entity.radius, this.run.map.height - 42 - entity.radius);
@@ -646,7 +668,7 @@
       return true;
     }
     damage(amount, source) {
-      const r = this.run; if (r.invulnerable > 0 || (r.pounce > 0 && ['compy', 'utahraptor','velociraptor'].includes(r.species)) || this.phase !== 'playing') {if(this.phase==='playing'&&source)r.stats.avoidedHits++;return;}
+      const r = this.run; if (r.invulnerable > 0 || (r.pounce > 0 && ['compy', 'utahraptor','velociraptor'].includes(r.species)) || this.phase !== 'playing') {if(this.phase==='playing'&&source){r.stats.avoidedHits++;if(!r.lastDodgeText||r.seconds-r.lastDodgeText>.6){r.lastDodgeText=r.seconds;r.effects.push({x:r.player.x,y:r.player.y,text:'UNDVIGET',color:'#a2d4c1',life:.55});}}return;}
       r.eating=null;r.staminaDelay=Math.max(r.staminaDelay,1);r.revealedUntil=r.seconds+1;r.hidden=false;r.concealTime=0; const facing={N:[0,-1],S:[0,1],E:[1,0],W:[-1,0]}[r.player.facing];const sx=source?source.x-r.player.x:0,sy=source?source.y-r.player.y:0,sd=Math.hypot(sx,sy);const front=r.species==='triceratops'&&sd>0&&(sx*facing[0]+sy*facing[1])/sd>.35;amount*=(1+.12*r.mutations.glassCannon+.15*r.mutations.lightFrame)*(front?1-.25-.08*r.mutations.frill:1); amount*= (1 - .08 * r.mutations.armor) * (r.species === 'ankylosaurus' && r.pounce > 0 ? .25 : 1);const shielded=Math.min(r.shield,amount);r.shield-=shielded;amount-=shielded;r.stats.damageTaken+=Math.min(r.health,amount);if(source&&source.boss)source.hitPlayer=true;r.lastHit=source&&Object.hasOwn(SPECIES,source.kind)?{kind:source.kind,direction:source.direction,mode:source.mode,boss:!!source.boss,sex:source.sex}:null;r.health = Math.max(0, r.health - amount); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
       if (r.species === 'ankylosaurus' && r.mutations.spikes) { for (const e of r.enemies) if (Math.hypot(e.x-r.player.x,e.y-r.player.y)<110) { e.hp -= 4*r.mutations.spikes*(e.npcGuardUntil>r.seconds?.25:1); this.provoke(e); } }
       if (r.health <= 0) this.finish(false);
@@ -944,7 +966,7 @@
       r.corpses=r.corpses.filter(c=>c.age<c.lifetime);r.pickups=r.pickups.filter(p=>p.value>0&&(p.corpseId===undefined||r.corpses.some(c=>c.id===p.corpseId&&c.age<(c.foodLifetime||c.lifetime))));
     }
     naturalBehavior(e,dt){
-      const r=this.run;if(this.scavenge(e,dt))return;e.naturalTime+=dt;const cycle=e.naturalTime%22;e.activity=cycle<8?(herbivorousNPC(e.kind)?'graze':'rest'):cycle<12?'rest':'roam';e.mode=e.activity;if(e.activity==='graze')e.hunger=Math.max(0,(e.hunger??.5)-dt/40);
+      const r=this.run;if(this.scavenge(e,dt))return;e.naturalTime+=dt;const cycle=e.naturalTime%22;e.activity=cycle<8?(herbivorousNPC(e.kind)?'graze':'rest'):cycle<12?'rest':'roam';if(e.activity==='graze'&&cycle>5&&isWater(r.stage,r.map,{x:e.x,y:e.y},-70))e.activity='drink';e.mode=e.activity;if(e.activity==='graze')e.hunger=Math.max(0,(e.hunger??.5)-dt/40);
       if(e.activity!=='roam')return;
       const peers=e.herdId?r.enemies.filter(o=>o!==e&&o.herdId===e.herdId&&Math.hypot(o.x-e.x,o.y-e.y)<280):[];
       let tx=e.homeX+Math.cos(e.naturalTime*.22+e.id)*90,ty=e.homeY+Math.sin(e.naturalTime*.22+e.id)*90;
@@ -1213,6 +1235,7 @@
         }
       }
       const surface=this.terrainAt(r.player);r.surface=surface.kind;
+      if(surface.burn){r.burnTick=(r.burnTick||0)-dt;if(r.burnTick<=0){r.burnTick=.5;const inv=r.invulnerable;r.invulnerable=0;this.damage(4,null);r.invulnerable=Math.max(inv,.1);r.lastHit=null;if(this.phase!=='playing')return;}}
       const quiet=(!r.player.moving||!!input.sneak)&&!r.attack&&r.pounce===0&&r.seconds>=r.revealedUntil;
       r.concealTime=surface.cover&&quiet?r.concealTime+dt:0;r.hidden=r.concealTime>=.6;
       this.decayCorpses(dt);
@@ -1299,5 +1322,5 @@
       for(const [e,hp] of enemies)r.stats.damageDealt+=Math.max(0,hp-Math.max(0,e.hp));
     }
   };
-  return { ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, playerFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, playerFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

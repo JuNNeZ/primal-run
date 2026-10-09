@@ -101,3 +101,12 @@ test('fresh saves only have Velociraptor; pre-overhaul saves keep Compy; lifetim
   const g = new C.Game({ random: () => .5 }); g.start({ seed: 4 }); g.run.stats.kills = 7; g.finish(false); g.finish(false); g.bankLifetime(false);
   assert.equal(g.save.lifetime.runs, 1); assert.equal(g.save.lifetime.kills, 7);
 });
+
+test('deep river water blocks small walkers except at fords; swimmers and big species cross; lava burns', () => {
+  const g = game('velociraptor'), r = g.run, p = r.player; r.stage = 1; r.map.river = [{ x: 0, y: 400 }, { x: 4000, y: 400 }]; r.map.riverCurve = r.map.river; r.map.ponds = []; r.map.fords = [{ x: 1200, y: 400 }];
+  p.x = 600; p.y = 370; for (let i = 0; i < 20; i++) g.travel(p, 0, 4); assert.ok(p.y < 400 - 20, 'cannot wade into deep water');
+  p.x = 1200; p.y = 370; for (let i = 0; i < 30; i++) g.travel(p, 0, 4); assert.ok(p.y > 420, 'the ford is crossable');
+  const croc = g.spawn('deinosuchus', { x: 2000, y: 370 }); for (let i = 0; i < 20; i++) g.travel(croc, 0, 4); assert.ok(croc.y > 400);
+  const lava = game('velociraptor'), l = lava.run; l.stage = 3; l.map.river = [{ x: 0, y: 340 }, { x: 4000, y: 340 }]; l.map.riverCurve = l.map.river; l.player.y = 340;
+  const hp = l.health; lava.step(.05, {}); assert.ok(l.health < hp, 'lava burns'); assert.equal(l.surface, 'lava');
+});

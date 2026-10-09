@@ -16,7 +16,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
  await page.locator('[data-explore="take"]').click();await page.waitForFunction(()=>primalRun.game.run.exploration===1);assert.equal(await page.evaluate(()=>primalRun.game.run.map.sites.filter(s=>s.claimed).length),1);
  await page.waitForFunction(()=>primalRun.game.phase==='mutation'); await page.locator('[data-mutation]').first().click();
  await page.keyboard.press('Escape');await page.locator('[data-action="abandon"]').click();await page.locator('[data-action="menu"]').click();
- await page.evaluate(()=>{primalRun.game.save.dna=200;primalRun.game.persist();});await page.locator('[data-action="species"]').click();
+ await page.evaluate(()=>{primalRun.game.save.dna=400;primalRun.game.persist();});await page.locator('[data-action="species"]').click();
  for(const id of ['utahraptor','carnotaurus','ankylosaurus']){await page.locator('[data-species="'+id+'"]').click();assert.equal(await page.evaluate(()=>primalRun.game.save.selectedSpecies),id);}
  assert.equal(await page.evaluate(()=>primalRun.game.save.dna),45);
  if(process.env.PRIMAL_VISUAL_DIR)await page.screenshot({path:path.join(process.env.PRIMAL_VISUAL_DIR,'species-menu.png')});

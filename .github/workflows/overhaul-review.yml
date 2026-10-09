@@ -43,13 +43,13 @@ jobs:
         run: timeout 300 node tools/screenshots.cjs review/shots || echo "SCREENSHOTS FAILED" >> review/summary.txt
       - name: Publish results branch
         if: always()
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           branch="ci-results/${GITHUB_REF_NAME}"
-          cp -r review /tmp/review
-          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
-          git checkout --orphan results-tmp
-          git rm -rq --cached . && find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          cp -r /tmp/review/* .
+          cd review
           echo "commit ${GITHUB_SHA}" > COMMIT.txt
+          git init -q && git checkout -q -b results
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
           git add -A && git commit -qm "Review for ${GITHUB_SHA}"
-          git push -f origin "HEAD:refs/heads/${branch}"
+          git push -qf "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/${branch}"
