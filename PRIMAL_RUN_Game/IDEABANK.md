@@ -4,6 +4,10 @@ Ideer til senere. Ikke godkendt til implementering endnu.
 
 ## Større eller procedurale baner (tilføjet 9. okt. 2026)
 
+**Status:** første version er bygget i overhaulen – banerne er 1,4× større, procedurelt delt i
+navngivne områder med egne dyr og skjulte belønninger. Næste skridt kunne være helt
+procedurale banerækkefølger og sjældne arter, der kun findes i afsides områder.
+
 - Undersøg om banerne skal være markant større, med 2–3 under-biomer pr. bane
   under ét grundtema (fx flodbred, tæt skov og lysning i samme bane).
 - Alternativt procedurale kort, så man ikke møder alle dinosaurer alle steder.

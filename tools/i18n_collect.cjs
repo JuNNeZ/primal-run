@@ -12,8 +12,10 @@ const { chromium, browserOptions, localURL } = require('./browser.cjs');
   await page.goto(await localURL(path.resolve(__dirname, '../PRIMAL_RUN_Game/index.html')));
   await page.waitForSelector('[data-action="start"]:not(:disabled)', { timeout: 60000 });
   const settle = () => page.waitForTimeout(150);
+  const dump = async note => { const missing = await page.evaluate(() => [...PrimalI18n.missing].sort()).catch(() => []); fs.writeFileSync(out, JSON.stringify({ lang, note, count: missing.length, errors, missing }, null, 1)); };
+  setInterval(() => dump('partial'), 5000).unref();
   for (const phase of ['menu', 'species', 'shop', 'achievements', 'guide', 'settings', 'help', 'scores']) { await page.evaluate(p => { primalRun.game.phase = p; }, phase); await settle(); }
-  await page.click('[data-action="start"]'); await settle();
+  await dump('screens'); await page.click('[data-action="start"]'); await settle();
   await page.evaluate(async () => {
     const g = primalRun.game, I = PrimalI18n, C = PrimalCore; g.save.unlockedSpecies = Object.keys(C.PLAYER_SPECIES);
     const tick = () => new Promise(r => requestAnimationFrame(() => r()));
@@ -32,6 +34,7 @@ const { chromium, browserOptions, localURL } = require('./browser.cjs');
     for (const m of C.MUTATIONS) { I.t(m.name); I.t(m.text); }
     for (const a of C.ACHIEVEMENTS) { I.t(a.name); I.t(a.text); }
   });
+  await dump('menus');
   await settle();
   const missing = await page.evaluate(() => [...PrimalI18n.missing].sort());
   fs.writeFileSync(out, JSON.stringify({ lang, count: missing.length, errors, missing }, null, 1));

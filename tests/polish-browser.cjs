@@ -61,8 +61,11 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       const boss = g.spawn('carnotaurus', { x: 1500, y: 950 }, true), modes = new Set();
       for (let i = 0; i < 9000 && g.phase === 'playing'; i++) {
         modes.add(boss.bossPhase + ':' + boss.mode); let x = 0, y = 0, attack = false;
-        if (['windup', 'charge'].includes(boss.mode)) { x = -boss.chargeY; y = boss.chargeX; }
-        else if (boss.mode === 'recover') {
+        // Bosses aim at you early in a charge windup, so a good player waits, then sidesteps late; slams and spins are escaped outward.
+        const late = boss.mode === 'windup' && (boss.timer <= (boss.windupDuration || 1) * .55 || boss.pattern !== 0 || boss.spin);
+        if (boss.mode === 'windup' && !late) { x = 0; y = 0; }
+        else if (['windup', 'charge', 'slam'].includes(boss.mode)) { if (boss.pattern === 2 || boss.spin) { x = r.player.x - boss.x; y = r.player.y - boss.y; } else { x = -boss.chargeY; y = boss.chargeX; } }
+        else if (['recover', 'broken'].includes(boss.mode)) {
           const tx = boss.x - boss.facingX * 55, ty = boss.y - boss.facingY * 55;
           if (Math.hypot(tx - r.player.x, ty - r.player.y) > 12) { x = tx - r.player.x; y = ty - r.player.y; }
           else { x = boss.x - r.player.x; y = boss.y - r.player.y; attack = true; }
@@ -74,7 +77,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       }
       return { phase: g.phase, seconds: r.seconds, health: r.health, dna: r.dna, modes: [...modes] };
     });
-    assert.equal(fight.phase, 'cleared'); assert.equal(fight.dna, 15); assert.ok(fight.health > 0 && fight.seconds < 90);
+    assert.equal(fight.phase, 'cleared'); assert.ok(fight.dna >= 15, 'boss DNA (plus any achievement DNA)'); assert.ok(fight.health > 0 && fight.seconds < 90);
     for (const mode of ['1:charge', '1:bite', '2:enrage', '2:charge', '2:bite', '2:slam']) assert.ok(fight.modes.includes(mode));
     if (process.env.PRIMAL_EXPECT_GDEVELOP) assert.equal(await page.evaluate(() => typeof gdjs.RuntimeGame), 'function'); assert.deepEqual(errors, []);
     if (process.env.PRIMAL_POLISH_REPORT) fs.writeFileSync(process.env.PRIMAL_POLISH_REPORT, JSON.stringify({ runtime: process.env.PRIMAL_EXPECT_GDEVELOP ? 'official GDevelop GDJS 5.6.283' : 'standalone browser', status: 'PASS', terrain: terrain.map(({ props, ...t }) => ({ ...t, propTypes: [...new Set(props)] })), fight, checks: ['four rendered biomes', 'native sprites/no smoothing', 'contact particles/hit-stop/recovery weak point', 'paused FX', 'phase-two HUD and double-charge warning', 'full first-boss fight through normal simulation inputs without HP edits'] }, null, 2) + '\n');

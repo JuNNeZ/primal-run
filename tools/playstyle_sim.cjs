@@ -95,11 +95,21 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades }) {
     const p = r.player, hpFrac = r.health / r.maxHealth, cost = C.abilityCost(r);
     const hostile = r.enemies.filter(e => e.damage && e.alert && dist(e) < 260);
     const warning = nearest(r.enemies.filter(e => ['windup', 'charge', 'slam', 'bite'].includes(e.mode) && dist(e) < (e.attackRadius || 60) + 80));
-    // Dodge telegraphed attacks (skill-based chance, rolled once per decision)
+    // Dodge telegraphed attacks like a player would: wait for the late, locked part of a boss
+    // windup, then step out of the shape (sideways from a charge lane, outward from a circle).
     if (warning && R() < S.dodge) {
       const dx = p.x - warning.x, dy = p.y - warning.y, n = Math.hypot(dx, dy) || 1;
-      const side = R() < 0.5 ? 1 : -1;
-      return { ...steer(p.x - dy / n * 130 * side + dx / n * 40, p.y + dx / n * 130 * side + dy / n * 40), attack: style !== 'newbie', pounce: S.ability === 'smart' && r.stamina >= cost && ['velociraptor', 'utahraptor', 'compy', 'gallimimus'].includes(species) };
+      const early = warning.mode === 'windup' && warning.boss && warning.timer > (warning.windupDuration || 1) * .55 && warning.pattern === 0 && !warning.spin && S.dodge > .5;
+      let tx, ty;
+      if (warning.pattern >= 2 || warning.spin) { tx = warning.x + dx / n * ((warning.attackRadius || 100) + 60); ty = warning.y + dy / n * ((warning.attackRadius || 100) + 60); }
+      else { const cx = warning.chargeX || dx / n, cy = warning.chargeY || dy / n, side = ((-cy) * dx + cx * dy) >= 0 ? 1 : -1; tx = p.x - cy * 140 * side; ty = p.y + cx * 140 * side; }
+      if (!early) return { ...steer(tx, ty), attack: style !== 'newbie' && n < config.range + warning.radius, pounce: S.ability === 'smart' && r.stamina >= cost && ['velociraptor', 'utahraptor', 'compy', 'gallimimus'].includes(species) && warning.timer < .3 };
+    }
+    // Punish an exposed boss from behind.
+    const exposed = nearest(r.enemies.filter(e => e.boss && ['recover', 'broken'].includes(e.mode) && dist(e) < 400));
+    if (exposed && S.dodge > .3) {
+      const bx = exposed.x - exposed.facingX * (exposed.radius + 20), by = exposed.y - exposed.facingY * (exposed.radius + 20);
+      return { ...steer(bx, by), attack: dist(exposed) < config.range + exposed.radius + 10 };
     }
     // Retreat when hurt
     if (S.retreatHP && hpFrac < S.retreatHP && hostile.length) {
