@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-09",
+  "core_tests": {
+    "passed": 72,
+    "failed": 0
+  },
+  "standalone": {
+    "existing_game_browser_suites": 11,
+    "additional_combat_browser_suite": "PASS",
+    "final_changed_enemy_frames_runtime": "PASS",
+    "kit_browser_suites": 3
+  },
+  "gdevelop": {
+    "runtime": "Official libGD exporter and GDJS, no mock",
+    "game_browser_suites_passed": 12,
+    "failed": 0,
+    "project_sha256": "2627b1b8a0593283f8f5fb3fc112a3ceefea84d547b3fa4cae0c4fcccf0da3da"
+  },
+  "sprite_export": {
+    "result": "PASS",
+    "native_frames_changed": 18,
+    "total_enemy_full_frames": 480,
+    "canvas": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "production_approved": false,
+    "remaining": "Parasaurolophus other directions and cross-state volume/anatomy still need redraws."
+  },
+  "features": [
+    "ability stamina and regeneration rebalance",
+    "attack and ability cooldown HUD",
+    "minimap boss diamond",
+    "above-sprite telegraph countdowns and delayed ordinary predator attacks",
+    "Ankylosaurus plant diet and plant exploration rewards",
+    "five rare legendary mutations",
+    "world anchored cached terrain details"
+  ],
+  "public_site_http_check": "Not certified; local standalone and official GDJS export tested separately."
+}
