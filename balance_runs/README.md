@@ -1,3 +1,7 @@
+# Nye målinger
+
+[Aktuel rute:240 nye boteksperimenter](JOURNEY_RESULTS.md).
+
 # Historical bot samples before the water-placement fix
 
 These samples predate WATER_AND_BARYONYX_FIX.md. Their recorded source SHA is

@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "runtime": "standalone Chromium",
+  "checked": 1200,
+  "species": 10,
+  "states": 6,
+  "directions": 4,
+  "paused": true,
+  "scope": "1200 actual drawn NPC frames, complete directional/state inventory, registered native144 pivots, integer scales, fixed collisions, death series and mutation pause.",
+  "production_approved": false
+}

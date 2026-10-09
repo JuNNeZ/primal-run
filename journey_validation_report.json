@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "coreTests": 107,
+  "browserChecks": 18,
+  "legacyKitChecks": 3,
+  "playerFramesRendered": 1200,
+  "npcFramesRendered": 1200,
+  "corpsePropsRendered": 160,
+  "endSceneCombinations": 30,
+  "gdevelopGDJS": "NOT RUN for this revision; generated project rebuilt only",
+  "production_approved": false,
+  "coreSHA256": "e06fe7e292490fd6abb534e7be7ce705fa10f7bc224af4019a5c347db14b35ef",
+  "sourcePreservation": {
+    "priorRawSources": 85,
+    "unchangedCarnoSouthNorthCorpseProps": 8
+  }
+}
