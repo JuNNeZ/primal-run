@@ -39,12 +39,12 @@ jobs:
           done
           grep -E "^# (pass|fail)" review/unit.txt >> review/summary.txt || true
       - name: Screenshots
-        timeout-minutes: 6
-        run: timeout 300 node tools/screenshots.cjs review/shots || echo "SCREENSHOTS FAILED" >> review/summary.txt
+        timeout-minutes: 8
+        run: timeout 420 node tools/screenshots.cjs review/shots || echo "SCREENSHOTS FAILED" >> review/summary.txt
       - name: Translation coverage
-        timeout-minutes: 5
+        timeout-minutes: 8
         run: |
-          for l in en; do timeout 240 node tools/i18n_collect.cjs review/i18n-missing-$l.json $l || echo "I18N $l FAILED" >> review/summary.txt; done
+          for l in en; do timeout 400 node tools/i18n_collect.cjs review/i18n-missing-$l.json $l || echo "I18N $l FAILED" >> review/summary.txt; done
       - name: Publish results branch
         if: always()
         env:

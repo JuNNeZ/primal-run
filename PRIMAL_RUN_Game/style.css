@@ -70,3 +70,5 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .menu-screen{justify-content:flex-end}.menu-screen .menu-panel{max-height:calc(100% - 10px);padding:22px 24px}.menu-panel h1{font-size:40px;margin-bottom:10px}
 .meat-progress small{display:none}
 @media(max-width:800px){.menu-screen{justify-content:center}.menu-fields{grid-template-columns:1fr}}
+.menu-screen .menu-panel{margin:0 3% 0 auto}
+@media(max-width:800px){.menu-screen .menu-panel{margin:0 auto}}

@@ -46,8 +46,16 @@
     if (out === null && trimmed.includes(' / ')) out = trimmed.split(' / ').map(part => translateCore(part)).join(' / ');
     if (out === null) { const m = trimmed.match(/^([^:]{2,40}):\s*(.+)$/); if (m) { const label = withNumbers(m[1] + ':'); if (label !== null) out = label + ' ' + translateCore(m[2]); } }
     if (out === null) { const m = trimmed.match(/^([^A-Za-zÆØÅæøå]+)(.+)$/); if (m) { const rest = withNumbers(m[2]); if (rest !== null) out = m[1] + rest; } }
+    if (out === null) { const m = trimmed.match(/^(.*?)\s*·$/); if (m && m[1]) { const core = translate(m[1]); out = core + ' ·'; } }
+    if (out === null && isTranslation(trimmed)) out = trimmed;
     if (out === null) { missing.add(trimmed.replace(/\d+(?:[.,]\d+)?/g, '#').replace(KEY, '@')); out = trimmed; }
     cache.set(k, out); return pad(text, out);
+  }
+  const valueSets = {};
+  function isTranslation(text) {
+    const d = dictionaries[lang]; if (!d) return false;
+    if (!valueSets[lang]) valueSets[lang] = new Set(Object.values(d).map(v => v.replace(/#/g, '').trim()));
+    return valueSets[lang].has(text.replace(/\d+(?:[.,]\d+)?/g, '').trim());
   }
   function translateCore(part) { const t = translate(part); return t; }
   function pad(original, result) { const lead = original.match(/^\s*/)[0], tail = original.match(/\s*$/)[0]; return lead + result.trim() + tail; }
@@ -62,7 +70,7 @@
     LANGUAGES,
     get lang() { return lang; },
     setLanguage(id) { lang = LANGUAGES.some(l => l.id === id) ? id : 'da'; cache.clear(); return lang; },
-    add(id, entries) { dictionaries[id] = Object.assign(dictionaries[id] || {}, entries); delete upperIndex[id]; cache.clear(); },
+    add(id, entries) { dictionaries[id] = Object.assign(dictionaries[id] || {}, entries); delete upperIndex[id]; delete valueSets[id]; cache.clear(); },
     // Template with named parts: tf('Låser {0} op', name)
     tf(template, ...args) { return translate(template).replace(/\{(\d)\}/g, (_, i) => args[+i] ?? ''); },
     t: translate, translateNode, missing,

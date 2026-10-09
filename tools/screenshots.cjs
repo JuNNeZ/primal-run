@@ -56,5 +56,18 @@ const log = [];
     await scene('desktop-23-mutation', () => { const g = primalRun.game; g.phase = 'playing'; g.addXP(50); return { phase: g.phase }; });
     await page.close();
   }
+  for (const lang of ['ja', 'de']) {
+    const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+    page.on('pageerror', e => log.push('[' + lang + '] pageerror ' + e));
+    await page.addInitScript(l => { try { localStorage.setItem('primalRun.save.v1', JSON.stringify({ version: 2, settings: { language: l } })); } catch (_) {} }, lang);
+    await page.goto(process.env.PRIMAL_GAME_URL || await localURL(path.resolve(__dirname, '../PRIMAL_RUN_Game/index.html')));
+    await page.waitForSelector('[data-action="start"]:not(:disabled)', { timeout: 60000 }); await page.waitForTimeout(500);
+    await shoot(page, lang + '-01-menu');
+    await page.evaluate(() => { const g = primalRun.game; g.phase = 'menu'; g.start({ seed: 4242 }); const r = g.run, z = r.map.zones[1]; r.player.x = z.x; r.player.y = z.y; for (let i = 0; i < 30; i++) g.step(1 / 30, {}); g.pause(); primalRun.update(performance.now()); document.querySelector('.screen').hidden = true; });
+    await shoot(page, lang + '-02-game');
+    await page.evaluate(() => { const g = primalRun.game; g.phase = 'playing'; g.addXP(50); }); await page.waitForTimeout(200);
+    await shoot(page, lang + '-03-mutation');
+    await page.close();
+  }
   await browser.close();
 })().catch(e => { log.push('FATAL ' + (e.stack || e)); process.exitCode = 1; }).finally(() => fs.writeFileSync(path.join(out, 'log.txt'), log.join('\n') + '\n'));
