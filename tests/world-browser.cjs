@@ -48,7 +48,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       assert.equal(state.prey, 'E', 'fleeing animal faces away'); assert.equal(state.hunter, 'E', 'hunter faces toward player');
       assert.ok(Math.abs(state.box.width / state.canvas.width - state.box.height / state.canvas.height) < .01, 'square pixels across viewport');
       assert.ok(state.bodyWidth <= width && state.bodyHeight <= height, 'no page overflow');
-      assert.ok(state.xp.includes('50 %') && state.xp.includes('3 / 6 stk') && state.xp.includes('3 kødværdi til level 2'));
+      assert.ok(state.xp.includes('50 %') && state.xp.includes('3 / 6 stk') && state.xp.includes('3 fødeværdi til level 2'));
       await page.locator('[data-action="resume"]').click();
       await page.evaluate(() => primalRun.game.addXP(3)); await page.waitForSelector('[data-mutation]');
       const cards = await page.locator('[data-mutation]').allTextContents();

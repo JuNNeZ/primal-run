@@ -29,21 +29,21 @@
       "hp": 80,
       "speed": 175,
       "unlockDNA": 0,
-      "baseDPS": 18.75,
+      "baseDPS": 15,
       "prey": {
-        "timeToKill": 1.62,
+        "timeToKill": 1.9,
         "attacks": 5
       },
       "predator": {
-        "timeToKill": 2.72,
+        "timeToKill": 3.2,
         "attacks": 8
       },
       "armoured": {
-        "timeToKill": 3.82,
+        "timeToKill": 4.5,
         "attacks": 11
       },
       "sharedOffence": {
-        "timeToKill": 1.25,
+        "timeToKill": 1.53,
         "attacks": 5
       }
     },
@@ -51,21 +51,21 @@
       "hp": 100,
       "speed": 155,
       "unlockDNA": 25,
-      "baseDPS": 20,
+      "baseDPS": 16.67,
       "prey": {
-        "timeToKill": 1.3,
+        "timeToKill": 1.5,
         "attacks": 3
       },
       "predator": {
-        "timeToKill": 2.37,
+        "timeToKill": 2.77,
         "attacks": 5
       },
       "armoured": {
-        "timeToKill": 3.43,
+        "timeToKill": 4.03,
         "attacks": 7
       },
       "sharedOffence": {
-        "timeToKill": 1.05,
+        "timeToKill": 1.22,
         "attacks": 3
       }
     },
@@ -73,21 +73,21 @@
       "hp": 125,
       "speed": 140,
       "unlockDNA": 55,
-      "baseDPS": 21.54,
+      "baseDPS": 17.5,
       "prey": {
-        "timeToKill": 1.62,
+        "timeToKill": 1.95,
         "attacks": 3
       },
       "predator": {
-        "timeToKill": 2.3,
+        "timeToKill": 2.78,
         "attacks": 4
       },
       "armoured": {
-        "timeToKill": 2.98,
+        "timeToKill": 3.62,
         "attacks": 5
       },
       "sharedOffence": {
-        "timeToKill": 1.3,
+        "timeToKill": 1.55,
         "attacks": 3
       }
     },
@@ -95,21 +95,21 @@
       "hp": 150,
       "speed": 110,
       "unlockDNA": 75,
-      "baseDPS": 16.22,
+      "baseDPS": 13.33,
       "prey": {
-        "timeToKill": 1.85,
+        "timeToKill": 2.17,
         "attacks": 3
       },
       "predator": {
-        "timeToKill": 2.63,
+        "timeToKill": 3.1,
         "attacks": 4
       },
       "armoured": {
-        "timeToKill": 4.2,
+        "timeToKill": 4.97,
         "attacks": 6
       },
       "sharedOffence": {
-        "timeToKill": 1.45,
+        "timeToKill": 1.73,
         "attacks": 3
       }
     }
@@ -128,28 +128,28 @@
   ],
   "mutationChecks": {
     "compyHunter": {
-      "timeToKill": 0.88,
+      "timeToKill": 1.03,
       "attacks": 3
     },
     "compyCombined": {
-      "timeToKill": 0.68,
+      "timeToKill": 0.83,
       "attacks": 3
     },
     "utahBleed": {
-      "timeToKill": 1.83,
+      "timeToKill": 2.13,
       "attacks": 4
     },
     "utahAmbush": {
-      "timeToKill": 0.8,
+      "timeToKill": 0.88,
       "attacks": 2
     }
   },
   "adjustments": [
     "Carnotaurus unlock60→55 DNA; Ankylosaurus85→75 DNA",
-    "Ankylosaurus cooldown0.8→0.74s; retains slow travel and surrounding tail hit",
+    "Primary cooldowns: Compy0.40s, Utah0.60s, Carno0.80s, Anky0.90s",
     "Compy Hunter35→25%/rank, additive with shared damage",
-    "Carnotaurus Momentum maximum24 stamina refund/cast; cannot make35-cost charge free through a herd",
-    "DNA upgrade exponent1.5→1.4; first purchase10 unchanged",
+    "Ability stamina costs28/38/45/45; Momentum refund maximum12 per cast",
+    "Stamina regeneration12/s calm and8/s combat; blocked1.25s after abilities and1s after damage",
     "Bleed UI clarifies fixed3-second duration refreshed by bites; maximum9damage/s at rank3"
   ]
 }

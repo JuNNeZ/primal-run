@@ -1,4 +1,4 @@
-"""Export separately generated full player atlases; never draw or interpolate poses."""
+"""Export separately generated full enemy atlases; never draw or interpolate poses."""
 from pathlib import Path
 import hashlib,json,io
 import numpy as np
@@ -15,17 +15,17 @@ def export():
   if (width,height)!=(1536,1024):raise ValueError(f'Unexpected sheet size {source}: {pic.size}')
   ys=[round(i*height/5) for i in range(6)];origin=[n+8 for n in item['origin']];species=item['species'];direction=item['direction'];files={}
   for state,(row,start,count,fps,loop) in PLAN.items():
-   frames=[]
+   frames=[];override=item.get('state_overrides',{}).get(state);state_source=GAME/override['source'] if override else source;state_pic=Image.open(state_source).convert('RGBA') if override else pic;state_rows=override['rows'] if override else 5;state_ys=[round(i*height/state_rows) for i in range(state_rows+1)];source_row=override['row'] if override else row;step=override['sample_step'] if override else 2
    for frame in range(count):
-    col=start+frame;crop=[max(0,col*256-32),max(0,ys[row]-32),min(width,(col+1)*256+32),min(height,ys[row+1]+32)]
+    col=start+frame;crop=[max(0,col*256-32),max(0,state_ys[source_row]-32),min(width,(col+1)*256+32),min(height,state_ys[source_row+1]+32)]
     # Explicit manually reviewed anatomical hip landmark in source-cell pixels.
-    landmark=item['anchors'][row][col];anchor=[landmark[0]+col*256-crop[0],landmark[1]+ys[row]-crop[1]];sample=np.asarray(pic.crop(crop))[1::2,1::2].copy();visible=isolate(sample[:,:,3]>=192)
+    landmark=override['anchors'][frame] if override else item['anchors'][row][col];anchor=[landmark[0]+col*256-crop[0],landmark[1]+state_ys[source_row]-crop[1]];sample=np.asarray(state_pic.crop(crop))[1::step,1::step].copy();visible=isolate(sample[:,:,3]>=192)
     colors=sample[:,:,:3].astype(np.int32);idx=np.argmin(((colors[:,:,None,:]-palette[None,None,:,:])**2).sum(axis=3),axis=2);sample[:,:,:3]=palette[idx];sample[:,:,3]=np.where(visible,255,0);sample[~visible]=0
-    offset=[origin[0]-round((anchor[0]-1)/2),origin[1]-round((anchor[1]-1)/2)];fy,fx=np.where(visible);tx,ty=fx+offset[0],fy+offset[1]
+    offset=[origin[0]-round((anchor[0]-1)/step),origin[1]-round((anchor[1]-1)/step)];fy,fx=np.where(visible);tx,ty=fx+offset[0],fy+offset[1]
     if not len(fx) or min(tx)<2 or min(ty)<2 or max(tx)>141 or max(ty)>141:
      errors.append(f'{species} {direction} {state} {frame} padding: {min(tx)},{min(ty)}-{max(tx)},{max(ty)}');continue
     out=np.zeros((144,144,4),dtype=np.uint8);out[ty,tx]=sample[fy,fx];file=f'assets/enemy_full/{species}_{state}_{direction}_{frame:03}.png';buff=io.BytesIO();Image.fromarray(out).save(buff,format='PNG');payload=buff.getvalue();pending.append((GAME/file,payload));frames.append(file);files[(row,col)]=file
-    manifest.append({'file':file,'size':[144,144],'origin':origin,'body_anchor':origin,'species':species,'direction':direction,'state':state,'frame':frame,'source':item['source'],'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'source_crop':crop,'source_cell_anchor':anchor,'registration_offset':offset,'export_sha256':hashlib.sha256(payload).hexdigest(),'status':'prototype_static','production_approved':False,'animation_ready':False,'export':'Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering.'})
+    manifest.append({'file':file,'size':[144,144],'origin':origin,'body_anchor':origin,'species':species,'direction':direction,'state':state,'frame':frame,'source':str(state_source.relative_to(GAME)),'source_sha256':hashlib.sha256(state_source.read_bytes()).hexdigest(),'source_crop':crop,'source_cell_anchor':anchor,'registration_offset':offset,'export_sha256':hashlib.sha256(payload).hexdigest(),'status':'prototype_static','production_approved':False,'animation_ready':False,'export':f'Fixed integer {step}px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering.'})
    animations.append({'name':f'{species}_{state}_{direction}','species':species,'state':state,'direction':direction,'frames':frames,'fps':fps,'loop':loop,'origin':origin,'contact_frame':3 if state=='attack' else None,'validated_animation':False,'production_approved':False})
   # Technical contact grids on both backgrounds at native1x; no altered sprite pixels.
   for color,label in [('#151b19','dark'),('#e8ece1','light')]:

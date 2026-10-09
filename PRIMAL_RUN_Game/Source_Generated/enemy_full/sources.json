@@ -138,7 +138,41 @@
           102
         ]
       ]
-    ]
+    ],
+    "state_overrides": {
+      "walk": {
+        "source": "Source_Generated/enemy_full/parasaurolophus_S_movement_revision.png",
+        "rows": 2,
+        "row": 0,
+        "sample_step": 3,
+        "anchors": [
+          [
+            136,
+            236
+          ],
+          [
+            135,
+            236
+          ],
+          [
+            130,
+            236
+          ],
+          [
+            126,
+            236
+          ],
+          [
+            123,
+            236
+          ],
+          [
+            122,
+            236
+          ]
+        ]
+      }
+    }
   },
   {
     "species": "deinosuchus",
@@ -1125,7 +1159,73 @@
           102
         ]
       ]
-    ]
+    ],
+    "state_overrides": {
+      "walk": {
+        "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+        "rows": 2,
+        "row": 0,
+        "sample_step": 3,
+        "anchors": [
+          [
+            134,
+            236
+          ],
+          [
+            136,
+            240
+          ],
+          [
+            127,
+            240
+          ],
+          [
+            124,
+            236
+          ],
+          [
+            123,
+            236
+          ],
+          [
+            121,
+            236
+          ]
+        ]
+      },
+      "run": {
+        "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+        "rows": 2,
+        "row": 1,
+        "sample_step": 3,
+        "anchors": [
+          [
+            136,
+            204
+          ],
+          [
+            136,
+            204
+          ],
+          [
+            132,
+            204
+          ],
+          [
+            129,
+            204
+          ],
+          [
+            125,
+            204
+          ],
+          [
+            120,
+            204
+          ]
+        ]
+      }
+    }
   },
   {
     "species": "parasaurolophus",

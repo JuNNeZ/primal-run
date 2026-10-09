@@ -268,3 +268,22 @@ Spiltest skal afgøre næste balance- og artfinpudsning;5–8 afventer brugeren.
   cloud Chromium med 390×844 viewport. Fysiske telefoner er ikke målt.
 - Ingen PNG-kildepixels ændret. Alle assets forbliver prototyper uden visuel
   produktionsgodkendelse. project.json genereres stadig fra src/ og style.css.
+
+## Mathias playtest fixes · 2026-10-09
+
+- See PRIMAL_RUN_Game/COMBAT_FEEDBACK.md for implemented balancing, diet,
+  legendary mutations and the next suggestions. Ability stamina costs28/38/45/45,
+  regeneration12/s calm or8/s combat, blocked after casts/damage and during casts.
+- New tests/combat-feedback.test.cjs and combat-feedback-browser.cjs cover
+  plant-only feeding/rewards, telegraph timing, shields, stamina, HUD and minimap.
+  npm test now contains72 core tests and12 game browser suites plus3 kit suites.
+- Ankylosaurus uses map.forage and F rather than meat. Internal meat counters
+  represent food progress for both diets. Triceratops remains NPC/boss only.
+- Boss minimap marker is a diamond; telegraphs render above sprites with timers.
+- Eighteen new native PNGs: Para South walk6, T. rex North walk6/run6.
+  Source_Generated/enemy_full/sources.json state_overrides records two preserved
+  source atlases, integer3px sampling and explicit hip anchors. Existing atlases
+  and legacy overlays are preserved. Body consistency across states and Para's
+  other directions still need redraws. Art remains prototype_static/unapproved.
+- Exporter now reads per-state overrides; native size/pivot remains144/72.
+  Source/project/Pages are rebuilt from current src/style and combined manifest.

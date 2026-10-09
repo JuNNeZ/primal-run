@@ -30,3 +30,15 @@ body volume and death poses still vary. This is an animation-complete gameplay
 prototype, not production art approval. All files remain prototype_static,
 production_approved=false and animation_ready=false. PNG/runtime checks alone
 cannot certify anatomical/temporal consistency. Review alongside player-full.
+
+Movement revision 2026-10-09: Parasaurolophus South walk use a separate
+1536×1024 two-row source. This source uses fixed integer3px sampling because
+its whole poses are drawn larger; original sources keep integer2px sampling.
+The source and reviewed hip landmarks are recorded as state_overrides in
+sources.json. Only these six native frames change. No limb pixels are
+painted away during extraction. It remains a prototype: other directions and
+North Tyrannosaurus volume still need a consistent anatomical redraw.
+
+The same integer3px two-row source exception covers Tyrannosaurus North
+walk/run (twelve frames), with a broader pelvis/head. Idle/attack/death are
+preserved, so a complete cross-state anatomy/volume pass remains necessary.

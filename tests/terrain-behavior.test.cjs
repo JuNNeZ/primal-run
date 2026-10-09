@@ -27,7 +27,7 @@ test('death series remain for 25–30 simulation seconds, cap memory, and freeze
  const g=setup(),r=g.run;for(let i=0;i<35;i++)g.kill(g.spawn('compy',{x:1000,y:700}));assert.equal(r.corpses.length,32);r.enemies=[];g.phase='mutation';const before=JSON.stringify(r.corpses);g.step(.05);assert.equal(JSON.stringify(r.corpses),before);g.phase='playing';for(let i=0;i<610;i++)g.step(.05);assert.equal(r.corpses.length,0);
 });
 test('momentum refunds are capped per cast even when a Carnotaurus hits an entire pack',()=>{
- const g=setup('carnotaurus'),r=g.run;r.mutations.momentum=3;for(let i=0;i<5;i++)g.spawn('parasaurolophus',{x:500+i*2,y:340});g.step(.02,{x:1,pounce:true});assert.equal(r.abilityRefund,24);assert.ok(r.stamina<90,'35 stamina cost cannot be refunded completely');
+ const g=setup('carnotaurus'),r=g.run;r.mutations.momentum=3;for(let i=0;i<5;i++)g.spawn('parasaurolophus',{x:500+i*2,y:340});g.step(.02,{x:1,pounce:true});assert.equal(r.abilityRefund,12);assert.ok(r.stamina<=67,'45 stamina cost keeps a minimum 33 stamina net cost');
 });
 test('shared damage and hunter stack additively while armour and defensive stance multiply without invulnerability',()=>{
  const g=setup(),r=g.run,e=g.spawn('parasaurolophus',{x:520,y:340});r.mutations.hunter=3;r.mutations.teeth=3;const hp=e.hp;g.resolveBite('E');assert.ok(Math.abs(hp-e.hp-6*2.35)<1e-8);

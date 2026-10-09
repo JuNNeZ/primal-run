@@ -25556,27 +25556,27 @@
     "direction": "S",
     "state": "walk",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_S.png",
-    "source_sha256": "39f69dd31d5c66ac8b35192e4fe7e8603f60919d7bd967362d8c49fb2048548d",
+    "source": "Source_Generated/enemy_full/parasaurolophus_S_movement_revision.png",
+    "source_sha256": "f42b5d6ec0809ce9f8e4bb73df8e5e6dcaf58a3c40bac463db1fdd4f9819bf00",
     "source_crop": [
       0,
-      173,
+      0,
       288,
-      442
+      544
     ],
     "source_cell_anchor": [
-      128,
-      134
+      136,
+      236
     ],
     "registration_offset": [
-      8,
-      6
+      27,
+      -6
     ],
-    "export_sha256": "4379ca4ebffed9b03f94077af6016fabd29a041d8f79b7c00c85ed97efd98195",
+    "export_sha256": "3616bdd8cdaefa3fd7100f044b25e221593e9338de8efb659b34eb51b718e902",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/parasaurolophus_walk_S_001.png",
@@ -25596,27 +25596,27 @@
     "direction": "S",
     "state": "walk",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_S.png",
-    "source_sha256": "39f69dd31d5c66ac8b35192e4fe7e8603f60919d7bd967362d8c49fb2048548d",
+    "source": "Source_Generated/enemy_full/parasaurolophus_S_movement_revision.png",
+    "source_sha256": "f42b5d6ec0809ce9f8e4bb73df8e5e6dcaf58a3c40bac463db1fdd4f9819bf00",
     "source_crop": [
       224,
-      173,
+      0,
       544,
-      442
+      544
     ],
     "source_cell_anchor": [
-      160,
-      134
+      167,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      17,
+      -6
     ],
-    "export_sha256": "8b8ac86466e3b30bbd43c38f48bbb0d20c9454b4678ab16da7e852300a15a315",
+    "export_sha256": "72e153c1cff8028d185b03f751f53b181f3ab8dc91faea63244aa2bed3456c62",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/parasaurolophus_walk_S_002.png",
@@ -25636,27 +25636,27 @@
     "direction": "S",
     "state": "walk",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_S.png",
-    "source_sha256": "39f69dd31d5c66ac8b35192e4fe7e8603f60919d7bd967362d8c49fb2048548d",
+    "source": "Source_Generated/enemy_full/parasaurolophus_S_movement_revision.png",
+    "source_sha256": "f42b5d6ec0809ce9f8e4bb73df8e5e6dcaf58a3c40bac463db1fdd4f9819bf00",
     "source_crop": [
       480,
-      173,
+      0,
       800,
-      442
+      544
     ],
     "source_cell_anchor": [
-      160,
-      134
+      162,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      18,
+      -6
     ],
-    "export_sha256": "26e11010ff478919f5e9b2f0a4112bc2b2b372497b9ce1a030dd73567a1f4278",
+    "export_sha256": "e6b64af06e3a3e7913597d0c5ab6a53e3d3a563e663a9969a7b14ecb27e33626",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/parasaurolophus_walk_S_003.png",
@@ -25676,27 +25676,27 @@
     "direction": "S",
     "state": "walk",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_S.png",
-    "source_sha256": "39f69dd31d5c66ac8b35192e4fe7e8603f60919d7bd967362d8c49fb2048548d",
+    "source": "Source_Generated/enemy_full/parasaurolophus_S_movement_revision.png",
+    "source_sha256": "f42b5d6ec0809ce9f8e4bb73df8e5e6dcaf58a3c40bac463db1fdd4f9819bf00",
     "source_crop": [
       736,
-      173,
+      0,
       1056,
-      442
+      544
     ],
     "source_cell_anchor": [
-      160,
-      134
+      158,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      20,
+      -6
     ],
-    "export_sha256": "0b870ba0e2eacb9d7ff1a8bb0cbdbc1ea6bd09d21e7212e7d42af8dc7905629c",
+    "export_sha256": "593c094a9cd164a6c6c6255b1b2aabc203e0e68b0c1cc9e1c06a11d951cdd09b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/parasaurolophus_walk_S_004.png",
@@ -25716,27 +25716,27 @@
     "direction": "S",
     "state": "walk",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_S.png",
-    "source_sha256": "39f69dd31d5c66ac8b35192e4fe7e8603f60919d7bd967362d8c49fb2048548d",
+    "source": "Source_Generated/enemy_full/parasaurolophus_S_movement_revision.png",
+    "source_sha256": "f42b5d6ec0809ce9f8e4bb73df8e5e6dcaf58a3c40bac463db1fdd4f9819bf00",
     "source_crop": [
       992,
-      173,
+      0,
       1312,
-      442
+      544
     ],
     "source_cell_anchor": [
-      160,
-      134
+      155,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      21,
+      -6
     ],
-    "export_sha256": "1b70c95648cce62729ba1d5cfedab09d398b55909a5e4e436111aa87f70c554a",
+    "export_sha256": "a2621bb28a481286de7105323efb79b95b03e33578ec71c1e910cfb5211c02d5",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/parasaurolophus_walk_S_005.png",
@@ -25756,27 +25756,27 @@
     "direction": "S",
     "state": "walk",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_S.png",
-    "source_sha256": "39f69dd31d5c66ac8b35192e4fe7e8603f60919d7bd967362d8c49fb2048548d",
+    "source": "Source_Generated/enemy_full/parasaurolophus_S_movement_revision.png",
+    "source_sha256": "f42b5d6ec0809ce9f8e4bb73df8e5e6dcaf58a3c40bac463db1fdd4f9819bf00",
     "source_crop": [
       1248,
-      173,
+      0,
       1536,
-      442
+      544
     ],
     "source_cell_anchor": [
-      160,
-      134
+      154,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      21,
+      -6
     ],
-    "export_sha256": "ad507eafbaf8ef824e3f834b466b4f2a33bdd75b30c622b37db1d179f72654bc",
+    "export_sha256": "635a2103aa73c707a98a980e3d887d849accb95502706f1f02061dbda9173e95",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/parasaurolophus_run_S_000.png",
@@ -33956,27 +33956,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       0,
-      173,
+      0,
       288,
-      442
+      544
     ],
     "source_cell_anchor": [
-      128,
-      134
+      134,
+      236
     ],
     "registration_offset": [
-      8,
-      6
+      28,
+      -6
     ],
-    "export_sha256": "30f54ad907825444a9c766fb43f1eafa135a5b2924ff6b8835bf0d0bbbcba596",
+    "export_sha256": "ff406f9a08ef29f7ef33ed62f547fcc2692942d308dba4cfaa8f777f94b63276",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_walk_N_001.png",
@@ -33996,27 +33996,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       224,
-      173,
+      0,
       544,
-      442
+      544
     ],
     "source_cell_anchor": [
-      160,
-      134
+      168,
+      240
     ],
     "registration_offset": [
-      -8,
-      6
+      16,
+      -8
     ],
-    "export_sha256": "9a3e091ff69c84c786233626b72e94e993b109bcf52176183bff0caa6d096564",
+    "export_sha256": "78fca1556ab220516de5abbdfab4389e07ffe8f6d17f27bb867033bd82cdf28a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_walk_N_002.png",
@@ -34036,27 +34036,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       480,
-      173,
+      0,
       800,
-      442
+      544
     ],
     "source_cell_anchor": [
-      160,
-      134
+      159,
+      240
     ],
     "registration_offset": [
-      -8,
-      6
+      19,
+      -8
     ],
-    "export_sha256": "80f83f52d481ab696a1134d1bdf2872347c185db0758a450f13985d974d2c618",
+    "export_sha256": "34e294bcba3de54de6283b93843d94732f7e608441c9cfa166b09012ba682fe4",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_walk_N_003.png",
@@ -34076,27 +34076,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       736,
-      173,
+      0,
       1056,
-      442
+      544
     ],
     "source_cell_anchor": [
-      160,
-      134
+      156,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      20,
+      -6
     ],
-    "export_sha256": "a58f36242c8ffc10bc054f521fc6371b6651df931c4468ce4440c9ab8d8a761f",
+    "export_sha256": "0f9b0159dafb2b08e5e0c21b24fc0d574e3a929fa7ec660c11c8832cd75d9642",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_walk_N_004.png",
@@ -34116,27 +34116,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       992,
-      173,
+      0,
       1312,
-      442
+      544
     ],
     "source_cell_anchor": [
-      160,
-      134
+      155,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      21,
+      -6
     ],
-    "export_sha256": "9141efe7b6621337c891494874fd770d2fe159c8fb3178097ff4ce173837b2e3",
+    "export_sha256": "7349af323cbbeb621851d4ca07c53cc5a9bc28c86a2ecace6b26f8705ae3320f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_walk_N_005.png",
@@ -34156,27 +34156,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       1248,
-      173,
+      0,
       1536,
-      442
+      544
     ],
     "source_cell_anchor": [
-      160,
-      134
+      153,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      21,
+      -6
     ],
-    "export_sha256": "b777ec660eed99db0f2131714c986677d22beea9e998a31110223ae622d3a7c1",
+    "export_sha256": "608b45f413e5365a633be4744ba899624cc23a6fc44801ad3494a35e634d8023",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_000.png",
@@ -34196,27 +34196,27 @@
     "direction": "N",
     "state": "run",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       0,
-      378,
+      480,
       288,
-      646
+      1024
     ],
     "source_cell_anchor": [
-      128,
-      134
+      136,
+      236
     ],
     "registration_offset": [
-      8,
-      6
+      27,
+      -6
     ],
-    "export_sha256": "25e42c98af494bc2157cb7730392812a1dc3fdaaea1662b62a8c636a80d7a9cb",
+    "export_sha256": "c448a600a4b4afebd8a5ea1b2156ce9249fab9892f63959307e78ff6b62b6456",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_001.png",
@@ -34236,27 +34236,27 @@
     "direction": "N",
     "state": "run",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       224,
-      378,
+      480,
       544,
-      646
+      1024
     ],
     "source_cell_anchor": [
-      160,
-      134
+      168,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      16,
+      -6
     ],
-    "export_sha256": "1ac6fed0437805e259e4e43919aaba03b7b1b4893c03bf74b90aafdd562ea2a0",
+    "export_sha256": "ecd8ea4a3ab80144173d51d37844fdde64230f1a1da00c18f6aaa1e2a515cbda",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_002.png",
@@ -34276,27 +34276,27 @@
     "direction": "N",
     "state": "run",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       480,
-      378,
+      480,
       800,
-      646
+      1024
     ],
     "source_cell_anchor": [
-      160,
-      134
+      164,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      18,
+      -6
     ],
-    "export_sha256": "9bd75257dd96174fbb13606016245513fa1878a51402951933e5ca7af00899c7",
+    "export_sha256": "a3d15850d7e0d51dbd0728cde0ce96fcf1a35eaf1930d179f6777f120028999a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_003.png",
@@ -34316,27 +34316,27 @@
     "direction": "N",
     "state": "run",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       736,
-      378,
+      480,
       1056,
-      646
+      1024
     ],
     "source_cell_anchor": [
-      160,
-      134
+      161,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      19,
+      -6
     ],
-    "export_sha256": "30cf2f5fd39033e5fd58eb7ee786ff88814f54afb6526bed7aad4c0cd57e2be9",
+    "export_sha256": "8fc3c351042eca1b49fc573f332c84fac9989a9a1fb1d1615fe2747c9706516e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_004.png",
@@ -34356,27 +34356,27 @@
     "direction": "N",
     "state": "run",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       992,
-      378,
+      480,
       1312,
-      646
+      1024
     ],
     "source_cell_anchor": [
-      160,
-      134
+      157,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      20,
+      -6
     ],
-    "export_sha256": "0182c4e22b4a2c7adc210ed57bdd1c6eb33dd7cada9e28c7fc2de6b757976c1f",
+    "export_sha256": "599008c6959c3ac9e790835cf0eff99e14ec3e00b2c90bd4e0d112320ed541d4",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_005.png",
@@ -34396,27 +34396,27 @@
     "direction": "N",
     "state": "run",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
+    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
     "source_crop": [
       1248,
-      378,
+      480,
       1536,
-      646
+      1024
     ],
     "source_cell_anchor": [
-      160,
-      134
+      152,
+      236
     ],
     "registration_offset": [
-      -8,
-      6
+      22,
+      -6
     ],
-    "export_sha256": "60b40e36feeca077f23b5695ea534bced1a9a67d371060ef3a837bbb66cc6a98",
+    "export_sha256": "1011ac14eed6150f2d3aae80f2ba47783c4908676767daa3d13dda000c4c297a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_attack_N_000.png",
