@@ -296,11 +296,11 @@
             ctx.strokeStyle = rarity.color; ctx.lineWidth = 2 + (p.rarity || 0); ctx.beginPath(); ctx.ellipse(Math.round(p.x), Math.round(p.y), 18, 10, 0, 0, Math.PI * 2); ctx.stroke();
             label(rarity.symbol + ' ' + rarity.name + ' +' + p.value, p.x, p.y - 24, rarity.color);
           }
-          if(p.corpseId!==undefined)continue;
+          if(p.kind==='fish'||p.corpseId!==undefined)continue;
           sprite(p.kind === 'meat' ? 'assets/pickups/meat.png' : p.kind === 'dna' ? 'assets/pickups/dna_pickup.png' : 'assets/ui/health.png', p.x, p.y);
         }
       }
-      if(r)for(const school of map.fishSchools||[])if(school.stock>0){sprite('assets/fishing/fish_'+String(Math.floor(r.seconds*4)%4).padStart(3,'0')+'.png',school.x,school.y);if(r.species==='baryonyx'&&Math.hypot(school.x-r.player.x,school.y-r.player.y)<200)label('FISK · '+school.stock+' · '+keyLabel('eat')+' FISK / '+keyLabel('ability')+' STØD',school.x,school.y-42,'#a2d4c1');}
+      if(r)for(const school of map.fishSchools||[])if(school.stock>0&&C.isWater(stage,map,school,14)){sprite('assets/fishing/fish_'+String(Math.floor(r.seconds*4)%4).padStart(3,'0')+'.png',school.x,school.y);if(r.species==='baryonyx'&&Math.hypot(school.x-r.player.x,school.y-r.player.y)<200)label('FISK · '+school.stock+' · '+keyLabel('eat')+' FISK / '+keyLabel('ability')+' STØD',school.x,school.y-42,'#a2d4c1');}
       const objects = map.rocks.map(p => ({ ...p, path: 'assets/environment/rock.png' }));
       objects.push(...map.decorations.filter(o=>o.x>=view.x-200&&o.x<=view.x+canvas.width+200&&o.y>=view.y-200&&o.y<=view.y+canvas.height+200));
       if(r)for(const event of map.events)if(!event.claimed&&Math.hypot(event.x-r.player.x,event.y-r.player.y)<400){objects.push({...event,path:event.type==='spring'?'assets/props/flower_bush.png':'assets/props/skull.png'});label(event.type==='spring'?'✚ HELENDE KILDE':'✦ SJÆLDENT FOSSIL',event.x,event.y-30,'#bbd899');}

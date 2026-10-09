@@ -344,3 +344,12 @@ on old samples; normal runs include timeouts and bots are not human win rates.
 The newest current validation is standalone Chromium; no fresh official GDJS
 export was run because the engine binaries are absent from this restored machine.
 Historical GDevelop evidence is not current validation.
+
+## Water and Baryonyx north repair · 2026-10-09
+
+See PRIMAL_RUN_Game/WATER_AND_BARYONYX_FIX.md.30 living Baryonyx north frames
+repaired; original source preserved, corpse art unchanged. Ponds/river schools,
+water-only Baryonyx fishing guards, plant/foliage/mud/rock shore clearance and
+matching elliptical water movement geometry. Existing972 balance samples are
+marked historical before these water/food placement changes; do not rewrite
+their original source SHA. New source and browser evidence remain prototype.

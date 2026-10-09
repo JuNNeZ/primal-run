@@ -7,10 +7,10 @@
   "production_approved": false,
   "scope": "Integration preserves source pixels, manifest origins and prototype status. Not a visual or animation approval.",
   "source_sha256": {
-    "src/core.js": "a1028c82077ba94365c8129921bc2a96288f0100c212fe7bd76b773c569492fb",
+    "src/core.js": "ab98f3a1f57f6cce8ddafa8b75a330029f691b0644d590bd56ad5bddcf77766b",
     "src/assets.js": "0bf0ae0093d4e60045974d3c71f7a55719855109565a0be0a2720c66bbea2e90",
     "src/audio.js": "1b434e95d7062acfedc2e736f105d559b409f2fa82ca7fe65140abd008d6fc69",
-    "src/app.js": "67e1a586dc9f05b0f943fd21666dcfc9482567d4ec2e4443d66bb2e112495b48",
+    "src/app.js": "5fd0cd05e737b4f5625e641e43422c4129e2f03b801c9cfc427009f601e834e0",
     "style.css": "8cba04df2673b1fd112be4cd1e8d6ae2241f6a7fc4ed0b6e7ef734cb4e0a73df"
   }
 }

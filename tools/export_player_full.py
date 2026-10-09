@@ -19,7 +19,7 @@ def export():
    for frame in range(count):
     col=start+frame;crop=[max(0,col*256-32),max(0,ys[row]-32),min(width,(col+1)*256+32),min(height,ys[row+1]+32)]
     # Explicit manually reviewed anatomical hip landmark in source-cell pixels.
-    landmark=item['anchors'][row][col];anchor=[landmark[0]+col*256-crop[0],landmark[1]+ys[row]-crop[1]];sample=np.asarray(pic.crop(crop))[1::2,1::2].copy();visible=isolate(sample[:,:,3]>=192)
+    landmark=item['anchors'][row][col];anchor=[landmark[0]+col*256-crop[0],landmark[1]+ys[row]-crop[1]];sample=np.asarray(pic.crop(crop))[1::2,1::2].copy();visible=isolate(sample[:,:,3]>=192,item.get('neighbor_isolation_margin',2))
     colors=sample[:,:,:3].astype(np.int32);idx=np.argmin(((colors[:,:,None,:]-palette[None,None,:,:])**2).sum(axis=3),axis=2);sample[:,:,:3]=palette[idx];sample[:,:,3]=np.where(visible,255,0);sample[~visible]=0
     offset=[origin[0]-round((anchor[0]-1)/2),origin[1]-round((anchor[1]-1)/2)];fy,fx=np.where(visible);tx,ty=fx+offset[0],fy+offset[1]
     if not len(fx) or min(tx)<2 or min(ty)<2 or max(tx)>141 or max(ty)>141:

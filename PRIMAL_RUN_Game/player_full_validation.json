@@ -10147,19 +10147,19 @@
     "assets/player_full/baryonyx_idle_N_000.png": {
       "bbox": [
         49,
-        21,
+        20,
         95,
-        120
+        121
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2423
+      "opaque_pixels": 2537
     },
     "assets/player_full/baryonyx_idle_N_001.png": {
       "bbox": [
-        51,
+        50,
         20,
         95,
         120
@@ -10168,7 +10168,7 @@
         72,
         72
       ],
-      "opaque_pixels": 2425
+      "opaque_pixels": 2519
     },
     "assets/player_full/baryonyx_idle_N_002.png": {
       "bbox": [
@@ -10181,181 +10181,142 @@
         72,
         72
       ],
-      "opaque_pixels": 2429
+      "opaque_pixels": 2545
     },
     "assets/player_full/baryonyx_idle_N_003.png": {
       "bbox": [
         49,
         20,
-        94,
-        119
+        95,
+        120
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2407
+      "opaque_pixels": 2551
     },
     "assets/player_full/baryonyx_hurt_N_000.png": {
       "bbox": [
         48,
         21,
         97,
-        120
+        121
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2688
+      "opaque_pixels": 2776
     },
     "assets/player_full/baryonyx_hurt_N_001.png": {
       "bbox": [
-        46,
+        48,
         20,
-        97,
-        120
+        98,
+        121
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2699
+      "opaque_pixels": 2767
     },
     "assets/player_full/baryonyx_walk_N_000.png": {
       "bbox": [
-        47,
+        48,
         20,
         96,
-        120
+        122
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2694
+      "opaque_pixels": 2777
     },
     "assets/player_full/baryonyx_walk_N_001.png": {
       "bbox": [
         50,
         20,
         95,
-        119
+        121
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2671
+      "opaque_pixels": 2753
     },
     "assets/player_full/baryonyx_walk_N_002.png": {
       "bbox": [
-        47,
-        21,
+        48,
+        20,
         95,
-        120
+        122
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2710
+      "opaque_pixels": 2828
     },
     "assets/player_full/baryonyx_walk_N_003.png": {
       "bbox": [
         51,
-        20,
-        98,
-        119
+        19,
+        99,
+        121
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2574
+      "opaque_pixels": 2711
     },
     "assets/player_full/baryonyx_walk_N_004.png": {
       "bbox": [
         48,
-        20,
-        95,
-        120
+        19,
+        94,
+        122
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2654
+      "opaque_pixels": 2794
     },
     "assets/player_full/baryonyx_walk_N_005.png": {
       "bbox": [
         50,
-        20,
-        96,
-        120
+        19,
+        97,
+        122
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2705
+      "opaque_pixels": 2883
     },
     "assets/player_full/baryonyx_run_N_000.png": {
       "bbox": [
-        52,
-        21,
-        100,
-        118
+        51,
+        20,
+        101,
+        122
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2477
+      "opaque_pixels": 2695
     },
     "assets/player_full/baryonyx_run_N_001.png": {
       "bbox": [
-        49,
-        21,
-        96,
-        118
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2524
-    },
-    "assets/player_full/baryonyx_run_N_002.png": {
-      "bbox": [
         48,
-        21,
-        98,
-        119
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2663
-    },
-    "assets/player_full/baryonyx_run_N_003.png": {
-      "bbox": [
-        47,
-        21,
-        96,
-        120
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2717
-    },
-    "assets/player_full/baryonyx_run_N_004.png": {
-      "bbox": [
-        49,
-        21,
+        20,
         98,
         122
       ],
@@ -10363,12 +10324,142 @@
         72,
         72
       ],
-      "opaque_pixels": 2674
+      "opaque_pixels": 2753
+    },
+    "assets/player_full/baryonyx_run_N_002.png": {
+      "bbox": [
+        47,
+        20,
+        98,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2797
+    },
+    "assets/player_full/baryonyx_run_N_003.png": {
+      "bbox": [
+        46,
+        20,
+        97,
+        122
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2899
+    },
+    "assets/player_full/baryonyx_run_N_004.png": {
+      "bbox": [
+        49,
+        20,
+        99,
+        122
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2839
     },
     "assets/player_full/baryonyx_run_N_005.png": {
       "bbox": [
         48,
         20,
+        96,
+        122
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2854
+    },
+    "assets/player_full/baryonyx_attack_N_000.png": {
+      "bbox": [
+        50,
+        22,
+        97,
+        124
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2822
+    },
+    "assets/player_full/baryonyx_attack_N_001.png": {
+      "bbox": [
+        48,
+        20,
+        95,
+        124
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2880
+    },
+    "assets/player_full/baryonyx_attack_N_002.png": {
+      "bbox": [
+        50,
+        19,
+        96,
+        125
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2821
+    },
+    "assets/player_full/baryonyx_attack_N_003.png": {
+      "bbox": [
+        47,
+        22,
+        97,
+        124
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2852
+    },
+    "assets/player_full/baryonyx_attack_N_004.png": {
+      "bbox": [
+        49,
+        19,
+        97,
+        124
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2895
+    },
+    "assets/player_full/baryonyx_attack_N_005.png": {
+      "bbox": [
+        48,
+        23,
+        96,
+        124
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2894
+    },
+    "assets/player_full/baryonyx_death_N_000.png": {
+      "bbox": [
+        49,
+        23,
         97,
         120
       ],
@@ -10376,163 +10467,72 @@
         72,
         72
       ],
-      "opaque_pixels": 2714
+      "opaque_pixels": 2740
     },
-    "assets/player_full/baryonyx_attack_N_000.png": {
+    "assets/player_full/baryonyx_death_N_001.png": {
       "bbox": [
-        50,
-        20,
-        97,
-        122
+        44,
+        24,
+        99,
+        118
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2686
+      "opaque_pixels": 2893
     },
-    "assets/player_full/baryonyx_attack_N_001.png": {
+    "assets/player_full/baryonyx_death_N_002.png": {
       "bbox": [
-        49,
-        19,
-        94,
-        121
+        31,
+        26,
+        102,
+        118
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2699
+      "opaque_pixels": 3188
     },
-    "assets/player_full/baryonyx_attack_N_002.png": {
+    "assets/player_full/baryonyx_death_N_003.png": {
       "bbox": [
-        51,
+        38,
         21,
-        96,
-        123
+        108,
+        118
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2608
+      "opaque_pixels": 3449
     },
-    "assets/player_full/baryonyx_attack_N_003.png": {
+    "assets/player_full/baryonyx_death_N_004.png": {
       "bbox": [
-        48,
+        42,
         25,
-        96,
-        121
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2629
-    },
-    "assets/player_full/baryonyx_attack_N_004.png": {
-      "bbox": [
-        49,
-        16,
-        96,
-        122
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2732
-    },
-    "assets/player_full/baryonyx_attack_N_005.png": {
-      "bbox": [
-        49,
-        23,
-        95,
-        123
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2707
-    },
-    "assets/player_full/baryonyx_death_N_000.png": {
-      "bbox": [
-        50,
-        23,
-        97,
+        121,
         119
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2573
-    },
-    "assets/player_full/baryonyx_death_N_001.png": {
-      "bbox": [
-        45,
-        24,
-        99,
-        116
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2670
-    },
-    "assets/player_full/baryonyx_death_N_002.png": {
-      "bbox": [
-        31,
-        27,
-        99,
-        114
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2919
-    },
-    "assets/player_full/baryonyx_death_N_003.png": {
-      "bbox": [
-        40,
-        21,
-        107,
-        116
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3255
-    },
-    "assets/player_full/baryonyx_death_N_004.png": {
-      "bbox": [
-        41,
-        26,
-        119,
-        116
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3269
+      "opaque_pixels": 3443
     },
     "assets/player_full/baryonyx_death_N_005.png": {
       "bbox": [
-        38,
-        25,
-        106,
-        115
+        36,
+        24,
+        108,
+        118
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3240
+      "opaque_pixels": 3461
     },
     "assets/player_full/baryonyx_idle_W_000.png": {
       "bbox": [

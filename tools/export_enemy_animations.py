@@ -12,7 +12,7 @@ ANCHORS={
  'carnotaurus':{'S':[(42,62),(42,62),(42,59),(43,53)],'E':[(47,63),(48,60),(47,61),(48,53)],'N':[(51,53),(51,52),(51,52),(51,57)],'W':[(52,62),(53,62),(53,61),(53,53)]},
  'ankylosaurus':{'S':[(46,66),(46,58),(46,55),(46,52)],'E':[(51,66),(57,60),(51,59),(53,50)],'N':[(50,67),(50,65),(50,56),(50,62)],'W':[(40,66),(52,66),(52,59),(52,57)]},
 }
-def isolate(visible):
+def isolate(visible,margin=2):
  # Reviewed atlases have isolated neighbouring tail fragments; retain complete
  # main animal plus nearby detached pixels, without changing its registration.
  seen=np.zeros_like(visible); groups=[]
@@ -27,7 +27,7 @@ def isolate(visible):
      if 0<=ny<visible.shape[0] and 0<=nx<visible.shape[1] and visible[ny,nx] and not seen[ny,nx]:seen[ny,nx]=True;stack.append((ny,nx))
   groups.append(group)
  main=max(groups,key=len); ys,xs=zip(*main)
- keep=np.zeros_like(visible); y0,y1=max(0,min(ys)-2),max(ys)+3;x0,x1=max(0,min(xs)-2),max(xs)+3
+ keep=np.zeros_like(visible); y0,y1=max(0,min(ys)-margin),max(ys)+margin+1;x0,x1=max(0,min(xs)-margin),max(xs)+margin+1
  keep[y0:y1,x0:x1]=visible[y0:y1,x0:x1]
  return keep
 

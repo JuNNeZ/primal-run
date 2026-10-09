@@ -3694,7 +3694,7 @@
   {
     "species": "baryonyx",
     "direction": "N",
-    "source": "Source_Generated/player_full/baryonyx_N.png",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
     "origin": [
       64,
       64
@@ -3831,7 +3831,9 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "review": "North single-tail anatomy revision: one tapering tail and two short hindlegs with visible toes; original preserved. All30 drawn poses/hip landmarks retained; prototype unapproved. Tight cell isolation removes disconnected neighbouring tail tips above/below main pose; no recentering.",
+    "neighbor_isolation_margin": 0
   },
   {
     "species": "baryonyx",
