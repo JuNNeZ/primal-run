@@ -230,7 +230,7 @@ test('weighted mutation rarity retains unique choices and ranks, and Jonas unloc
   assert.equal(g.run.jonas, true); assert.ok(g.drainEvents().some(e => e.type === 'jonas'));
   assert.equal(g.run.maxHealth, 100, 'secret does not change balance');
   g.addXP(6); assert.equal(new Set(g.run.choices).size, 3);
-  assert.equal(C.MUTATIONS.find(m => m.id === g.run.choices[0]).rarity, 'epic');
+  assert.equal(C.MUTATIONS.find(m => m.id === g.run.choices[0]).rarity, 'rare');
   const id = g.run.choices[0]; assert.equal(g.run.mutations[id], 0); g.choose(id); assert.equal(g.run.mutations[id], 1);
 });
 

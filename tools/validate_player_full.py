@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1];GAME=ROOT/'PRIMAL_RUN_Game'
 manifest=json.loads((GAME/'player_full_manifest.json').read_text());animations=json.loads((GAME/'player_full_animations.json').read_text())['animations']
 palette={tuple(int(c[i:i+2],16) for i in [1,3,5]) for c in json.loads((GAME/'palette.json').read_text())['colors']};errors=[];stats={}
 plan={'idle':4,'walk':6,'run':6,'attack':6,'hurt':2,'death':6}
-if len(manifest)!=480 or len(animations)!=96:errors.append('Full plan requires 480 frames / 96 directional state sequences')
+if len(manifest)!=840 or len(animations)!=168:errors.append('Full plan requires 840 frames / 168 directional state sequences')
 for e in manifest:
  file=GAME/e['file'];im=Image.open(file);a=np.array(im);box=im.getbbox()
  if im.mode!='RGBA' or im.size!=(144,144) or e['size']!=[144,144]:errors.append(e['file']+': native canvas')
@@ -20,7 +20,7 @@ for e in manifest:
  stats[e['file']]={'bbox':box,'origin':e['origin'],'opaque_pixels':int(np.count_nonzero(a[:,:,3]))}
 listed={e['file'] for e in manifest};actual={p.relative_to(GAME).as_posix() for p in (GAME/'assets/player_full').glob('*.png')}
 if actual!=listed:errors.append('Full-player overlay inventory mismatch')
-for species in ['compy','utahraptor','carnotaurus','ankylosaurus']:
+for species in ['compy','utahraptor','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx']:
  for d in ['S','E','N','W']:
   for state,count in plan.items():
    group=[a for a in animations if a['species']==species and a['direction']==d and a['state']==state]

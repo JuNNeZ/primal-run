@@ -32,7 +32,7 @@ test('momentum refunds are capped per cast even when a Carnotaurus hits an entir
 test('shared damage and hunter stack additively while armour and defensive stance multiply without invulnerability',()=>{
  const g=setup(),r=g.run,e=g.spawn('parasaurolophus',{x:520,y:340});r.mutations.hunter=3;r.mutations.teeth=3;const hp=e.hp;g.resolveBite('E');assert.ok(Math.abs(hp-e.hp-6*2.35)<1e-8);
  const tank=setup('ankylosaurus'),t=tank.run;t.mutations.armor=3;t.pounce=1;tank.damage(100);assert.equal(t.health,131);
- assert.deepEqual(Object.values(C.PLAYER_SPECIES).map(c=>c.cost),[0,25,55,75]);assert.ok(C.upgradeCost(4)>C.upgradeCost(3));
+ assert.deepEqual(Object.values(C.PLAYER_SPECIES).map(c=>c.cost),[0,25,55,75,90,35,20,65]);assert.ok(C.upgradeCost(4)>C.upgradeCost(3));
 });
 
 test('turning preserves stride phase and walk/run clocks close their loops without an extra-frame reset',()=>{const g=setup(),r=g.run;r.player.walk=.72;g.step(.04,{x:1});assert.ok(Math.abs(r.player.walk-.76)<1e-8);r.player.walk=1.49;g.step(.02,{y:1});assert.ok(Math.abs(r.player.walk-.01)<1e-8);assert.equal(r.player.facing,'S');});

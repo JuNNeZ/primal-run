@@ -25,8 +25,8 @@ test('ability costs, immunity, contact damage once per animal, and defensive bra
  for(const species of Object.keys(C.PLAYER_SPECIES)){
   const g=make(species),r=g.run;r.player.facing='E';const e=g.spawn('tyrannosaurus',{x:505,y:340});e.cooldown=999;e.speed=0;
   g.step(.01,{pounce:true,x:1});assert.ok(r.pounce>0);assert.ok(r.stamina<100);const hp=e.hp;g.step(.01,{x:1});assert.equal(e.hp,hp,'ability cannot damage same target twice');
-  const health=r.health;g.damage(20);assert.equal(r.health,health-(species==='ankylosaurus'?5:species==='carnotaurus'?20:0));
-  if(['utahraptor','carnotaurus'].includes(species))assert.ok(hp<e.maxHP);else assert.equal(hp,e.maxHP);
+  const health=r.health;g.damage(20);assert.equal(r.health,health-(species==='ankylosaurus'?5:['compy','utahraptor'].includes(species)?0:20));
+  if(['utahraptor','carnotaurus','triceratops','pachycephalosaurus','baryonyx'].includes(species))assert.ok(hp<e.maxHP);else assert.equal(hp,e.maxHP);
  }
 });
 test('mutation pool contains shared and own mutations, never another species skill',()=>{

@@ -36,7 +36,7 @@ test('species display ramps use only the fixed palette and retain different iden
  const palette=new Set(require('../PRIMAL_RUN_Game/palette.json').colors.map(c=>c.slice(1)));
  const signatures=[];
  for(const [id,mapping]of Object.entries(C.SPECIES_COLORS)){for(const c of Object.values(mapping))assert.ok(palette.has(c));if(C.PLAYER_SPECIES[id]){signatures.push(JSON.stringify(mapping));if(C.SPECIES[id])assert.equal(C.PLAYER_SPECIES[id].radius,C.SPECIES[id].radius);}}
- assert.equal(new Set(signatures).size,4);
+ assert.equal(new Set(signatures).size,8);
  const g=new C.Game();g.start({seed:2});const regular=g.spawn('carnotaurus',{x:900,y:900}),boss=g.spawn('carnotaurus',{x:1100,y:900},true);
  assert.equal(regular.visualScale,1);assert.equal(boss.visualScale,2);assert.equal(boss.radius,regular.radius*2);
 });
