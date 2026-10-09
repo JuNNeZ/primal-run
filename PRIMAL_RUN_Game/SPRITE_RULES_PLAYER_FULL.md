@@ -38,3 +38,8 @@ player_full now holds840frames for7species; playable Triceratops shares the
 120directional enemy_full frames without duplicating pixels. All8players
 have960state/direction frames available. Anatomy/markings/death pose limitations
 remain; prototype_static/unapproved, not certified by technical export tests.
+
+T. rex playable2026-10-09: shares120 existing enemy_full frames,144x144
+native source at integer2x in runtime; fixed32px torso radius. Nine playable
+classes total1080 drawn frames, no new production approvals. Para E/N/W and
+T. rex N source revisions remain preserved under enemy_full.

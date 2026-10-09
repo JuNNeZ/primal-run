@@ -600,7 +600,7 @@
   {
     "species": "parasaurolophus",
     "direction": "N",
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
     "origin": [
       64,
       64
@@ -1031,131 +1031,131 @@
     "anchors": [
       [
         [
-          128,
+          174,
           102
         ],
         [
-          128,
+          185,
           102
         ],
         [
-          128,
+          157,
           102
         ],
         [
-          128,
+          133,
           102
         ],
         [
-          128,
+          123,
           102
         ],
         [
-          128,
+          95,
           102
         ]
       ],
       [
         [
-          128,
+          180,
           102
         ],
         [
-          128,
+          158,
           102
         ],
         [
-          128,
+          137,
           102
         ],
         [
-          128,
+          117,
           102
         ],
         [
-          128,
+          98,
           102
         ],
         [
-          128,
+          74,
           102
         ]
       ],
       [
         [
-          128,
+          184,
           102
         ],
         [
-          128,
+          158,
           102
         ],
         [
-          128,
+          141,
           102
         ],
         [
-          128,
+          118,
           102
         ],
         [
-          128,
+          96,
           102
         ],
         [
-          128,
+          74,
           102
         ]
       ],
       [
         [
-          128,
+          176,
           102
         ],
         [
-          128,
+          165,
           102
         ],
         [
-          128,
+          146,
           102
         ],
         [
-          128,
+          120,
           102
         ],
         [
-          128,
+          108,
           102
         ],
         [
-          128,
+          88,
           102
         ]
       ],
       [
         [
-          128,
+          174,
           102
         ],
         [
-          128,
+          165,
           102
         ],
         [
-          128,
+          146,
           102
         ],
         [
-          128,
+          120,
           102
         ],
         [
-          128,
+          108,
           102
         ],
         [
-          128,
+          88,
           102
         ]
       ]
@@ -1164,7 +1164,7 @@
   {
     "species": "parasaurolophus",
     "direction": "E",
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
     "origin": [
       64,
       64
@@ -1728,7 +1728,7 @@
   {
     "species": "parasaurolophus",
     "direction": "W",
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
     "origin": [
       64,
       64

@@ -3,7 +3,7 @@
 Arbejdsrepository til et top-down dinosaur-roguelite i pixel art.
 
 Det aktive spil er **PRIMAL_RUN_Game**: en spilbar udviklingsversion med
-Compy som startart, fire spilbare arter, tilfældige naturkort, fire bosser,
+Compy som startart, ni spilbare arter, tilfældige naturkort, fire bosser,
 kød/levels, fælles og artsmutationer, permanente DNA-unlocks og upgrades,
 startmenu, lokale highscores, lydindstillinger og original proceduremusik.
 Den fælles spilkerne kører i browseren og i et GDevelop 5-projekt.

@@ -52,7 +52,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       await page.locator('[data-action="resume"]').click();
       await page.evaluate(() => primalRun.game.addXP(3)); await page.waitForSelector('[data-mutation]');
       const cards = await page.locator('[data-mutation]').allTextContents();
-      assert.equal(cards.length, 3); assert.ok(cards.every(t => /RANG 0 → 1 \/ 3/.test(t)));
+      assert.equal(cards.length, 3); assert.ok(await page.evaluate(()=>[...document.querySelectorAll('[data-mutation]')].every(el=>el.textContent.includes('RANG 0 → 1 / '+PrimalCore.MUTATIONS.find(m=>m.id===el.dataset.mutation).max))));
       const frozen = await page.evaluate(() => JSON.stringify(primalRun.game.run)); await page.waitForTimeout(100);
       assert.equal(await page.evaluate(() => JSON.stringify(primalRun.game.run)), frozen);
       const last = page.locator('[data-mutation]').last(); await last.click();

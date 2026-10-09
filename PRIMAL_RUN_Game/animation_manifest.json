@@ -3298,6 +3298,1590 @@
       "production_approved": false
     },
     {
+      "name": "pachycephalosaurus_idle_S",
+      "species": "pachycephalosaurus",
+      "state": "idle",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_idle_S_000.png",
+        "assets/player_full/pachycephalosaurus_idle_S_001.png",
+        "assets/player_full/pachycephalosaurus_idle_S_002.png",
+        "assets/player_full/pachycephalosaurus_idle_S_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_hurt_S",
+      "species": "pachycephalosaurus",
+      "state": "hurt",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_hurt_S_000.png",
+        "assets/player_full/pachycephalosaurus_hurt_S_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_walk_S",
+      "species": "pachycephalosaurus",
+      "state": "walk",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_walk_S_000.png",
+        "assets/player_full/pachycephalosaurus_walk_S_001.png",
+        "assets/player_full/pachycephalosaurus_walk_S_002.png",
+        "assets/player_full/pachycephalosaurus_walk_S_003.png",
+        "assets/player_full/pachycephalosaurus_walk_S_004.png",
+        "assets/player_full/pachycephalosaurus_walk_S_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_run_S",
+      "species": "pachycephalosaurus",
+      "state": "run",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_run_S_000.png",
+        "assets/player_full/pachycephalosaurus_run_S_001.png",
+        "assets/player_full/pachycephalosaurus_run_S_002.png",
+        "assets/player_full/pachycephalosaurus_run_S_003.png",
+        "assets/player_full/pachycephalosaurus_run_S_004.png",
+        "assets/player_full/pachycephalosaurus_run_S_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_attack_S",
+      "species": "pachycephalosaurus",
+      "state": "attack",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_attack_S_000.png",
+        "assets/player_full/pachycephalosaurus_attack_S_001.png",
+        "assets/player_full/pachycephalosaurus_attack_S_002.png",
+        "assets/player_full/pachycephalosaurus_attack_S_003.png",
+        "assets/player_full/pachycephalosaurus_attack_S_004.png",
+        "assets/player_full/pachycephalosaurus_attack_S_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_death_S",
+      "species": "pachycephalosaurus",
+      "state": "death",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_death_S_000.png",
+        "assets/player_full/pachycephalosaurus_death_S_001.png",
+        "assets/player_full/pachycephalosaurus_death_S_002.png",
+        "assets/player_full/pachycephalosaurus_death_S_003.png",
+        "assets/player_full/pachycephalosaurus_death_S_004.png",
+        "assets/player_full/pachycephalosaurus_death_S_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_idle_E",
+      "species": "pachycephalosaurus",
+      "state": "idle",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_idle_E_000.png",
+        "assets/player_full/pachycephalosaurus_idle_E_001.png",
+        "assets/player_full/pachycephalosaurus_idle_E_002.png",
+        "assets/player_full/pachycephalosaurus_idle_E_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_hurt_E",
+      "species": "pachycephalosaurus",
+      "state": "hurt",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_hurt_E_000.png",
+        "assets/player_full/pachycephalosaurus_hurt_E_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_walk_E",
+      "species": "pachycephalosaurus",
+      "state": "walk",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_walk_E_000.png",
+        "assets/player_full/pachycephalosaurus_walk_E_001.png",
+        "assets/player_full/pachycephalosaurus_walk_E_002.png",
+        "assets/player_full/pachycephalosaurus_walk_E_003.png",
+        "assets/player_full/pachycephalosaurus_walk_E_004.png",
+        "assets/player_full/pachycephalosaurus_walk_E_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_run_E",
+      "species": "pachycephalosaurus",
+      "state": "run",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_run_E_000.png",
+        "assets/player_full/pachycephalosaurus_run_E_001.png",
+        "assets/player_full/pachycephalosaurus_run_E_002.png",
+        "assets/player_full/pachycephalosaurus_run_E_003.png",
+        "assets/player_full/pachycephalosaurus_run_E_004.png",
+        "assets/player_full/pachycephalosaurus_run_E_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_attack_E",
+      "species": "pachycephalosaurus",
+      "state": "attack",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_attack_E_000.png",
+        "assets/player_full/pachycephalosaurus_attack_E_001.png",
+        "assets/player_full/pachycephalosaurus_attack_E_002.png",
+        "assets/player_full/pachycephalosaurus_attack_E_003.png",
+        "assets/player_full/pachycephalosaurus_attack_E_004.png",
+        "assets/player_full/pachycephalosaurus_attack_E_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_death_E",
+      "species": "pachycephalosaurus",
+      "state": "death",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_death_E_000.png",
+        "assets/player_full/pachycephalosaurus_death_E_001.png",
+        "assets/player_full/pachycephalosaurus_death_E_002.png",
+        "assets/player_full/pachycephalosaurus_death_E_003.png",
+        "assets/player_full/pachycephalosaurus_death_E_004.png",
+        "assets/player_full/pachycephalosaurus_death_E_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_idle_N",
+      "species": "pachycephalosaurus",
+      "state": "idle",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_idle_N_000.png",
+        "assets/player_full/pachycephalosaurus_idle_N_001.png",
+        "assets/player_full/pachycephalosaurus_idle_N_002.png",
+        "assets/player_full/pachycephalosaurus_idle_N_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_hurt_N",
+      "species": "pachycephalosaurus",
+      "state": "hurt",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_hurt_N_000.png",
+        "assets/player_full/pachycephalosaurus_hurt_N_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_walk_N",
+      "species": "pachycephalosaurus",
+      "state": "walk",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_walk_N_000.png",
+        "assets/player_full/pachycephalosaurus_walk_N_001.png",
+        "assets/player_full/pachycephalosaurus_walk_N_002.png",
+        "assets/player_full/pachycephalosaurus_walk_N_003.png",
+        "assets/player_full/pachycephalosaurus_walk_N_004.png",
+        "assets/player_full/pachycephalosaurus_walk_N_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_run_N",
+      "species": "pachycephalosaurus",
+      "state": "run",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_run_N_000.png",
+        "assets/player_full/pachycephalosaurus_run_N_001.png",
+        "assets/player_full/pachycephalosaurus_run_N_002.png",
+        "assets/player_full/pachycephalosaurus_run_N_003.png",
+        "assets/player_full/pachycephalosaurus_run_N_004.png",
+        "assets/player_full/pachycephalosaurus_run_N_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_attack_N",
+      "species": "pachycephalosaurus",
+      "state": "attack",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_attack_N_000.png",
+        "assets/player_full/pachycephalosaurus_attack_N_001.png",
+        "assets/player_full/pachycephalosaurus_attack_N_002.png",
+        "assets/player_full/pachycephalosaurus_attack_N_003.png",
+        "assets/player_full/pachycephalosaurus_attack_N_004.png",
+        "assets/player_full/pachycephalosaurus_attack_N_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_death_N",
+      "species": "pachycephalosaurus",
+      "state": "death",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_death_N_000.png",
+        "assets/player_full/pachycephalosaurus_death_N_001.png",
+        "assets/player_full/pachycephalosaurus_death_N_002.png",
+        "assets/player_full/pachycephalosaurus_death_N_003.png",
+        "assets/player_full/pachycephalosaurus_death_N_004.png",
+        "assets/player_full/pachycephalosaurus_death_N_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_idle_W",
+      "species": "pachycephalosaurus",
+      "state": "idle",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_idle_W_000.png",
+        "assets/player_full/pachycephalosaurus_idle_W_001.png",
+        "assets/player_full/pachycephalosaurus_idle_W_002.png",
+        "assets/player_full/pachycephalosaurus_idle_W_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_hurt_W",
+      "species": "pachycephalosaurus",
+      "state": "hurt",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_hurt_W_000.png",
+        "assets/player_full/pachycephalosaurus_hurt_W_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_walk_W",
+      "species": "pachycephalosaurus",
+      "state": "walk",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_walk_W_000.png",
+        "assets/player_full/pachycephalosaurus_walk_W_001.png",
+        "assets/player_full/pachycephalosaurus_walk_W_002.png",
+        "assets/player_full/pachycephalosaurus_walk_W_003.png",
+        "assets/player_full/pachycephalosaurus_walk_W_004.png",
+        "assets/player_full/pachycephalosaurus_walk_W_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_run_W",
+      "species": "pachycephalosaurus",
+      "state": "run",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_run_W_000.png",
+        "assets/player_full/pachycephalosaurus_run_W_001.png",
+        "assets/player_full/pachycephalosaurus_run_W_002.png",
+        "assets/player_full/pachycephalosaurus_run_W_003.png",
+        "assets/player_full/pachycephalosaurus_run_W_004.png",
+        "assets/player_full/pachycephalosaurus_run_W_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_attack_W",
+      "species": "pachycephalosaurus",
+      "state": "attack",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_attack_W_000.png",
+        "assets/player_full/pachycephalosaurus_attack_W_001.png",
+        "assets/player_full/pachycephalosaurus_attack_W_002.png",
+        "assets/player_full/pachycephalosaurus_attack_W_003.png",
+        "assets/player_full/pachycephalosaurus_attack_W_004.png",
+        "assets/player_full/pachycephalosaurus_attack_W_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "pachycephalosaurus_death_W",
+      "species": "pachycephalosaurus",
+      "state": "death",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/pachycephalosaurus_death_W_000.png",
+        "assets/player_full/pachycephalosaurus_death_W_001.png",
+        "assets/player_full/pachycephalosaurus_death_W_002.png",
+        "assets/player_full/pachycephalosaurus_death_W_003.png",
+        "assets/player_full/pachycephalosaurus_death_W_004.png",
+        "assets/player_full/pachycephalosaurus_death_W_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_idle_S",
+      "species": "gallimimus",
+      "state": "idle",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/gallimimus_idle_S_000.png",
+        "assets/player_full/gallimimus_idle_S_001.png",
+        "assets/player_full/gallimimus_idle_S_002.png",
+        "assets/player_full/gallimimus_idle_S_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_hurt_S",
+      "species": "gallimimus",
+      "state": "hurt",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/gallimimus_hurt_S_000.png",
+        "assets/player_full/gallimimus_hurt_S_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_walk_S",
+      "species": "gallimimus",
+      "state": "walk",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/gallimimus_walk_S_000.png",
+        "assets/player_full/gallimimus_walk_S_001.png",
+        "assets/player_full/gallimimus_walk_S_002.png",
+        "assets/player_full/gallimimus_walk_S_003.png",
+        "assets/player_full/gallimimus_walk_S_004.png",
+        "assets/player_full/gallimimus_walk_S_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_run_S",
+      "species": "gallimimus",
+      "state": "run",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/gallimimus_run_S_000.png",
+        "assets/player_full/gallimimus_run_S_001.png",
+        "assets/player_full/gallimimus_run_S_002.png",
+        "assets/player_full/gallimimus_run_S_003.png",
+        "assets/player_full/gallimimus_run_S_004.png",
+        "assets/player_full/gallimimus_run_S_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_attack_S",
+      "species": "gallimimus",
+      "state": "attack",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/gallimimus_attack_S_000.png",
+        "assets/player_full/gallimimus_attack_S_001.png",
+        "assets/player_full/gallimimus_attack_S_002.png",
+        "assets/player_full/gallimimus_attack_S_003.png",
+        "assets/player_full/gallimimus_attack_S_004.png",
+        "assets/player_full/gallimimus_attack_S_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_death_S",
+      "species": "gallimimus",
+      "state": "death",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/gallimimus_death_S_000.png",
+        "assets/player_full/gallimimus_death_S_001.png",
+        "assets/player_full/gallimimus_death_S_002.png",
+        "assets/player_full/gallimimus_death_S_003.png",
+        "assets/player_full/gallimimus_death_S_004.png",
+        "assets/player_full/gallimimus_death_S_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_idle_E",
+      "species": "gallimimus",
+      "state": "idle",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/gallimimus_idle_E_000.png",
+        "assets/player_full/gallimimus_idle_E_001.png",
+        "assets/player_full/gallimimus_idle_E_002.png",
+        "assets/player_full/gallimimus_idle_E_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_hurt_E",
+      "species": "gallimimus",
+      "state": "hurt",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/gallimimus_hurt_E_000.png",
+        "assets/player_full/gallimimus_hurt_E_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_walk_E",
+      "species": "gallimimus",
+      "state": "walk",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/gallimimus_walk_E_000.png",
+        "assets/player_full/gallimimus_walk_E_001.png",
+        "assets/player_full/gallimimus_walk_E_002.png",
+        "assets/player_full/gallimimus_walk_E_003.png",
+        "assets/player_full/gallimimus_walk_E_004.png",
+        "assets/player_full/gallimimus_walk_E_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_run_E",
+      "species": "gallimimus",
+      "state": "run",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/gallimimus_run_E_000.png",
+        "assets/player_full/gallimimus_run_E_001.png",
+        "assets/player_full/gallimimus_run_E_002.png",
+        "assets/player_full/gallimimus_run_E_003.png",
+        "assets/player_full/gallimimus_run_E_004.png",
+        "assets/player_full/gallimimus_run_E_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_attack_E",
+      "species": "gallimimus",
+      "state": "attack",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/gallimimus_attack_E_000.png",
+        "assets/player_full/gallimimus_attack_E_001.png",
+        "assets/player_full/gallimimus_attack_E_002.png",
+        "assets/player_full/gallimimus_attack_E_003.png",
+        "assets/player_full/gallimimus_attack_E_004.png",
+        "assets/player_full/gallimimus_attack_E_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_death_E",
+      "species": "gallimimus",
+      "state": "death",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/gallimimus_death_E_000.png",
+        "assets/player_full/gallimimus_death_E_001.png",
+        "assets/player_full/gallimimus_death_E_002.png",
+        "assets/player_full/gallimimus_death_E_003.png",
+        "assets/player_full/gallimimus_death_E_004.png",
+        "assets/player_full/gallimimus_death_E_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_idle_N",
+      "species": "gallimimus",
+      "state": "idle",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/gallimimus_idle_N_000.png",
+        "assets/player_full/gallimimus_idle_N_001.png",
+        "assets/player_full/gallimimus_idle_N_002.png",
+        "assets/player_full/gallimimus_idle_N_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_hurt_N",
+      "species": "gallimimus",
+      "state": "hurt",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/gallimimus_hurt_N_000.png",
+        "assets/player_full/gallimimus_hurt_N_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_walk_N",
+      "species": "gallimimus",
+      "state": "walk",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/gallimimus_walk_N_000.png",
+        "assets/player_full/gallimimus_walk_N_001.png",
+        "assets/player_full/gallimimus_walk_N_002.png",
+        "assets/player_full/gallimimus_walk_N_003.png",
+        "assets/player_full/gallimimus_walk_N_004.png",
+        "assets/player_full/gallimimus_walk_N_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_run_N",
+      "species": "gallimimus",
+      "state": "run",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/gallimimus_run_N_000.png",
+        "assets/player_full/gallimimus_run_N_001.png",
+        "assets/player_full/gallimimus_run_N_002.png",
+        "assets/player_full/gallimimus_run_N_003.png",
+        "assets/player_full/gallimimus_run_N_004.png",
+        "assets/player_full/gallimimus_run_N_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_attack_N",
+      "species": "gallimimus",
+      "state": "attack",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/gallimimus_attack_N_000.png",
+        "assets/player_full/gallimimus_attack_N_001.png",
+        "assets/player_full/gallimimus_attack_N_002.png",
+        "assets/player_full/gallimimus_attack_N_003.png",
+        "assets/player_full/gallimimus_attack_N_004.png",
+        "assets/player_full/gallimimus_attack_N_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_death_N",
+      "species": "gallimimus",
+      "state": "death",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/gallimimus_death_N_000.png",
+        "assets/player_full/gallimimus_death_N_001.png",
+        "assets/player_full/gallimimus_death_N_002.png",
+        "assets/player_full/gallimimus_death_N_003.png",
+        "assets/player_full/gallimimus_death_N_004.png",
+        "assets/player_full/gallimimus_death_N_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_idle_W",
+      "species": "gallimimus",
+      "state": "idle",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/gallimimus_idle_W_000.png",
+        "assets/player_full/gallimimus_idle_W_001.png",
+        "assets/player_full/gallimimus_idle_W_002.png",
+        "assets/player_full/gallimimus_idle_W_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_hurt_W",
+      "species": "gallimimus",
+      "state": "hurt",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/gallimimus_hurt_W_000.png",
+        "assets/player_full/gallimimus_hurt_W_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_walk_W",
+      "species": "gallimimus",
+      "state": "walk",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/gallimimus_walk_W_000.png",
+        "assets/player_full/gallimimus_walk_W_001.png",
+        "assets/player_full/gallimimus_walk_W_002.png",
+        "assets/player_full/gallimimus_walk_W_003.png",
+        "assets/player_full/gallimimus_walk_W_004.png",
+        "assets/player_full/gallimimus_walk_W_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_run_W",
+      "species": "gallimimus",
+      "state": "run",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/gallimimus_run_W_000.png",
+        "assets/player_full/gallimimus_run_W_001.png",
+        "assets/player_full/gallimimus_run_W_002.png",
+        "assets/player_full/gallimimus_run_W_003.png",
+        "assets/player_full/gallimimus_run_W_004.png",
+        "assets/player_full/gallimimus_run_W_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_attack_W",
+      "species": "gallimimus",
+      "state": "attack",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/gallimimus_attack_W_000.png",
+        "assets/player_full/gallimimus_attack_W_001.png",
+        "assets/player_full/gallimimus_attack_W_002.png",
+        "assets/player_full/gallimimus_attack_W_003.png",
+        "assets/player_full/gallimimus_attack_W_004.png",
+        "assets/player_full/gallimimus_attack_W_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "gallimimus_death_W",
+      "species": "gallimimus",
+      "state": "death",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/gallimimus_death_W_000.png",
+        "assets/player_full/gallimimus_death_W_001.png",
+        "assets/player_full/gallimimus_death_W_002.png",
+        "assets/player_full/gallimimus_death_W_003.png",
+        "assets/player_full/gallimimus_death_W_004.png",
+        "assets/player_full/gallimimus_death_W_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_idle_S",
+      "species": "baryonyx",
+      "state": "idle",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/baryonyx_idle_S_000.png",
+        "assets/player_full/baryonyx_idle_S_001.png",
+        "assets/player_full/baryonyx_idle_S_002.png",
+        "assets/player_full/baryonyx_idle_S_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_hurt_S",
+      "species": "baryonyx",
+      "state": "hurt",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/baryonyx_hurt_S_000.png",
+        "assets/player_full/baryonyx_hurt_S_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_walk_S",
+      "species": "baryonyx",
+      "state": "walk",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/baryonyx_walk_S_000.png",
+        "assets/player_full/baryonyx_walk_S_001.png",
+        "assets/player_full/baryonyx_walk_S_002.png",
+        "assets/player_full/baryonyx_walk_S_003.png",
+        "assets/player_full/baryonyx_walk_S_004.png",
+        "assets/player_full/baryonyx_walk_S_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_run_S",
+      "species": "baryonyx",
+      "state": "run",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/baryonyx_run_S_000.png",
+        "assets/player_full/baryonyx_run_S_001.png",
+        "assets/player_full/baryonyx_run_S_002.png",
+        "assets/player_full/baryonyx_run_S_003.png",
+        "assets/player_full/baryonyx_run_S_004.png",
+        "assets/player_full/baryonyx_run_S_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_attack_S",
+      "species": "baryonyx",
+      "state": "attack",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/baryonyx_attack_S_000.png",
+        "assets/player_full/baryonyx_attack_S_001.png",
+        "assets/player_full/baryonyx_attack_S_002.png",
+        "assets/player_full/baryonyx_attack_S_003.png",
+        "assets/player_full/baryonyx_attack_S_004.png",
+        "assets/player_full/baryonyx_attack_S_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_death_S",
+      "species": "baryonyx",
+      "state": "death",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/baryonyx_death_S_000.png",
+        "assets/player_full/baryonyx_death_S_001.png",
+        "assets/player_full/baryonyx_death_S_002.png",
+        "assets/player_full/baryonyx_death_S_003.png",
+        "assets/player_full/baryonyx_death_S_004.png",
+        "assets/player_full/baryonyx_death_S_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_idle_E",
+      "species": "baryonyx",
+      "state": "idle",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/baryonyx_idle_E_000.png",
+        "assets/player_full/baryonyx_idle_E_001.png",
+        "assets/player_full/baryonyx_idle_E_002.png",
+        "assets/player_full/baryonyx_idle_E_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_hurt_E",
+      "species": "baryonyx",
+      "state": "hurt",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/baryonyx_hurt_E_000.png",
+        "assets/player_full/baryonyx_hurt_E_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_walk_E",
+      "species": "baryonyx",
+      "state": "walk",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/baryonyx_walk_E_000.png",
+        "assets/player_full/baryonyx_walk_E_001.png",
+        "assets/player_full/baryonyx_walk_E_002.png",
+        "assets/player_full/baryonyx_walk_E_003.png",
+        "assets/player_full/baryonyx_walk_E_004.png",
+        "assets/player_full/baryonyx_walk_E_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_run_E",
+      "species": "baryonyx",
+      "state": "run",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/baryonyx_run_E_000.png",
+        "assets/player_full/baryonyx_run_E_001.png",
+        "assets/player_full/baryonyx_run_E_002.png",
+        "assets/player_full/baryonyx_run_E_003.png",
+        "assets/player_full/baryonyx_run_E_004.png",
+        "assets/player_full/baryonyx_run_E_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_attack_E",
+      "species": "baryonyx",
+      "state": "attack",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/baryonyx_attack_E_000.png",
+        "assets/player_full/baryonyx_attack_E_001.png",
+        "assets/player_full/baryonyx_attack_E_002.png",
+        "assets/player_full/baryonyx_attack_E_003.png",
+        "assets/player_full/baryonyx_attack_E_004.png",
+        "assets/player_full/baryonyx_attack_E_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_death_E",
+      "species": "baryonyx",
+      "state": "death",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/baryonyx_death_E_000.png",
+        "assets/player_full/baryonyx_death_E_001.png",
+        "assets/player_full/baryonyx_death_E_002.png",
+        "assets/player_full/baryonyx_death_E_003.png",
+        "assets/player_full/baryonyx_death_E_004.png",
+        "assets/player_full/baryonyx_death_E_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_idle_N",
+      "species": "baryonyx",
+      "state": "idle",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/baryonyx_idle_N_000.png",
+        "assets/player_full/baryonyx_idle_N_001.png",
+        "assets/player_full/baryonyx_idle_N_002.png",
+        "assets/player_full/baryonyx_idle_N_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_hurt_N",
+      "species": "baryonyx",
+      "state": "hurt",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/baryonyx_hurt_N_000.png",
+        "assets/player_full/baryonyx_hurt_N_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_walk_N",
+      "species": "baryonyx",
+      "state": "walk",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/baryonyx_walk_N_000.png",
+        "assets/player_full/baryonyx_walk_N_001.png",
+        "assets/player_full/baryonyx_walk_N_002.png",
+        "assets/player_full/baryonyx_walk_N_003.png",
+        "assets/player_full/baryonyx_walk_N_004.png",
+        "assets/player_full/baryonyx_walk_N_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_run_N",
+      "species": "baryonyx",
+      "state": "run",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/baryonyx_run_N_000.png",
+        "assets/player_full/baryonyx_run_N_001.png",
+        "assets/player_full/baryonyx_run_N_002.png",
+        "assets/player_full/baryonyx_run_N_003.png",
+        "assets/player_full/baryonyx_run_N_004.png",
+        "assets/player_full/baryonyx_run_N_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_attack_N",
+      "species": "baryonyx",
+      "state": "attack",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/baryonyx_attack_N_000.png",
+        "assets/player_full/baryonyx_attack_N_001.png",
+        "assets/player_full/baryonyx_attack_N_002.png",
+        "assets/player_full/baryonyx_attack_N_003.png",
+        "assets/player_full/baryonyx_attack_N_004.png",
+        "assets/player_full/baryonyx_attack_N_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_death_N",
+      "species": "baryonyx",
+      "state": "death",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/baryonyx_death_N_000.png",
+        "assets/player_full/baryonyx_death_N_001.png",
+        "assets/player_full/baryonyx_death_N_002.png",
+        "assets/player_full/baryonyx_death_N_003.png",
+        "assets/player_full/baryonyx_death_N_004.png",
+        "assets/player_full/baryonyx_death_N_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_idle_W",
+      "species": "baryonyx",
+      "state": "idle",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/baryonyx_idle_W_000.png",
+        "assets/player_full/baryonyx_idle_W_001.png",
+        "assets/player_full/baryonyx_idle_W_002.png",
+        "assets/player_full/baryonyx_idle_W_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_hurt_W",
+      "species": "baryonyx",
+      "state": "hurt",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/baryonyx_hurt_W_000.png",
+        "assets/player_full/baryonyx_hurt_W_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_walk_W",
+      "species": "baryonyx",
+      "state": "walk",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/baryonyx_walk_W_000.png",
+        "assets/player_full/baryonyx_walk_W_001.png",
+        "assets/player_full/baryonyx_walk_W_002.png",
+        "assets/player_full/baryonyx_walk_W_003.png",
+        "assets/player_full/baryonyx_walk_W_004.png",
+        "assets/player_full/baryonyx_walk_W_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_run_W",
+      "species": "baryonyx",
+      "state": "run",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/baryonyx_run_W_000.png",
+        "assets/player_full/baryonyx_run_W_001.png",
+        "assets/player_full/baryonyx_run_W_002.png",
+        "assets/player_full/baryonyx_run_W_003.png",
+        "assets/player_full/baryonyx_run_W_004.png",
+        "assets/player_full/baryonyx_run_W_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_attack_W",
+      "species": "baryonyx",
+      "state": "attack",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/baryonyx_attack_W_000.png",
+        "assets/player_full/baryonyx_attack_W_001.png",
+        "assets/player_full/baryonyx_attack_W_002.png",
+        "assets/player_full/baryonyx_attack_W_003.png",
+        "assets/player_full/baryonyx_attack_W_004.png",
+        "assets/player_full/baryonyx_attack_W_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "baryonyx_death_W",
+      "species": "baryonyx",
+      "state": "death",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/baryonyx_death_W_000.png",
+        "assets/player_full/baryonyx_death_W_001.png",
+        "assets/player_full/baryonyx_death_W_002.png",
+        "assets/player_full/baryonyx_death_W_003.png",
+        "assets/player_full/baryonyx_death_W_004.png",
+        "assets/player_full/baryonyx_death_W_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
       "name": "parasaurolophus_idle_S",
       "species": "parasaurolophus",
       "state": "idle",

@@ -80,9 +80,10 @@
     gallimimus:{name:'Gallimimus',cost:20,hp:70,damage:4,speed:215,radius:15,cooldown:.5,duration:.3,range:50,skill:'Flugtsprint',text:'Omnivor: spis urter eller kød. Shift: hurtig flugt; lav skade, ingen usårlighed.',abilityCost:24,abilityTime:1.1,abilityCooldown:3.5,diet:'omnivore'},
     baryonyx:{name:'Baryonyx',cost:65,hp:120,damage:12,speed:140,radius:22,cooldown:.7,duration:.46,range:74,skill:'Fiskestød',text:'Fiskejæger. Hold F ved fiskestimer; også kød. Shift: fang fisk eller ram tæt bytte.',abilityCost:35,abilityTime:.25,abilityCooldown:3,diet:'piscivore'}
   });
+  PLAYER_SPECIES.tyrannosaurus={name:'Tyrannosaurus rex',cost:120,hp:190,damage:38,speed:95,radius:32,cooldown:1.6,duration:1.1,range:96,skill:'Kongebrøl',text:'Kødæder. Langsomt knusende bid. Shift: brøl skræmmer almindelige dyr i nærheden; bosser er immune.',abilityCost:50,abilityTime:.9,abilityCooldown:6,diet:'carnivore'};
   for(const [id,config] of Object.entries(PLAYER_SPECIES))config.diet=config.diet||(id==='ankylosaurus'?'herbivore':'carnivore');
   const herbivorousNPC=kind=>['parasaurolophus','ankylosaurus','triceratops','pachycephalosaurus','gallimimus'].includes(kind);
-  const playerFrame=(species,state,direction,frame)=>'assets/'+(species==='triceratops'?'enemy_full/':'player_full/')+species+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';
+  const playerFrame=(species,state,direction,frame)=>'assets/'+(['triceratops','tyrannosaurus'].includes(species)?'enemy_full/':'player_full/')+species+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';
   const abilityCost=r=>Math.max(16,PLAYER_SPECIES[r.species].abilityCost-5*r.mutations.pounce+6*r.mutations.overclock);
   const mutationWeight=(mutation,ranks)=>MUTATION_RARITIES[mutation.rarity].weight*(1+Math.min(.4,.2*(ranks[mutation.id]||0)));
   function seeded(seed) { let x = seed >>> 0; return () => { x += 0x6D2B79F5; let t = Math.imul(x ^ x >>> 15, 1 | x); t ^= t + Math.imul(t ^ t >>> 7, 61 | t); return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
@@ -143,11 +144,14 @@
     {id:'galliWind',name:'Vindløber',text:'Sprint giver 1 sek. beskyttelse. Planteføde heler yderligere 1 liv pr. portion.',icon:'escape',max:1,rarity:'legendary',species:'gallimimus'},
     {id:'baryTide',name:'Flodens konge',text:'Fiskestød fanger op til 3 fisk fra samme stime og giver +12 kontaktskade.',icon:'serrated_teeth',max:1,rarity:'legendary',species:'baryonyx'}
   );
+  MUTATIONS.push({id:'rexJaw',name:'Knusende kæber',text:'+15 % bid-skade pr. rang; det langsomme angreb bevares.',icon:'serrated_teeth',max:3,rarity:'rare',species:'tyrannosaurus'},{id:'rexVoice',name:'Dalens stemme',text:'+0,5 sek. frygt pr. rang. Bosser er immune.',icon:'escape',max:3,rarity:'uncommon',species:'tyrannosaurus'});
+  MUTATIONS.push({id:'rexKing',name:'Urkongens bid',text:'+20 % bid-skade. Kun én rang.',icon:'serrated_teeth',max:1,rarity:'legendary',species:'tyrannosaurus'});
   const UPGRADES = [
     { id: 'health', name: 'Livskraft', text: '+2 % startliv pr. rang', max: 5 },
-    { id: 'damage', name: 'Skarpe tænder', text: '+2 % startskade pr. rang', max: 5 },
+    { id: 'damage', name: 'Angrebsstyrke', text: '+2 % startskade pr. rang', max: 5 },
     { id: 'regen', name: 'Udholdende jæger', text: '+3 % stamina-regeneration pr. rang', max: 5 },
-    { id: 'magnet', name: 'Duft af bytte', text: '+5 % opsamlingsradius pr. rang', max: 5 },
+    { id:'digestion',name:'Effektiv fødeoptagelse',text:'+5 % spise- og fiskerihastighed pr. rang',max:5 },
+    { id: 'magnet', name: 'Sporfinder', text: '+5 % opsamlingsradius pr. rang', max: 5 },
   ];
   const ROCKS = [{ x: 225, y: 200, radius: 22 }, { x: 730, y: 180, radius: 22 }, { x: 260, y: 475, radius: 22 }, { x: 735, y: 475, radius: 22 }];
   const MEAT_RARITIES = [
@@ -483,7 +487,7 @@
         const frontal = dist > 0 && ((-dx * e.facingX - dy * e.facingY) / dist > .6);
         const armor = ['triceratops', 'ankylosaurus'].includes(e.kind) && frontal ? .5 : 1;
         const vulnerable = e.boss && e.mode === 'recover' && !frontal;
-        const damage = PLAYER_SPECIES[r.species].damage * (1 + .02 * r.upgrades.damage + .2 * r.mutations.teeth + .2*r.mutations.apexGenome + .25*r.mutations.glassCannon + .2*r.mutations.heavyMuscle + (r.species === 'compy' && e.kind === 'parasaurolophus' ? .25 * r.mutations.hunter : 0) + (r.species === 'utahraptor' && !e.alert ? .5 * r.mutations.ambush : 0) + (r.health < r.maxHealth * .4 ? .2 * r.mutations.fury : 0)) * armor * (vulnerable ? 1.5 : 1)*(r.tailEmpowered>0?2:1);
+        const damage = PLAYER_SPECIES[r.species].damage * (1 + .02 * r.upgrades.damage + .15*r.mutations.rexJaw + .2*r.mutations.rexKing + .2 * r.mutations.teeth + .2*r.mutations.apexGenome + .25*r.mutations.glassCannon + .2*r.mutations.heavyMuscle + (r.species === 'compy' && e.kind === 'parasaurolophus' ? .25 * r.mutations.hunter : 0) + (r.species === 'utahraptor' && !e.alert ? .5 * r.mutations.ambush : 0) + (r.health < r.maxHealth * .4 ? .2 * r.mutations.fury : 0)) * armor * (vulnerable ? 1.5 : 1)*(r.tailEmpowered>0?2:1);
         e.hp -= damage; this.provoke(e); hits++; strong ||= e.boss || vulnerable || damage >= 16;
         this.burst(e.x, e.y, 'blood', vulnerable ? 12 : 8, e.id);
         e.bleed = r.mutations.bleed ? 3 : 0; e.hit = .15;
@@ -498,7 +502,7 @@
       if(r.species==='ankylosaurus')r.tailEmpowered=0;
     }
     kill(e) {
-      const r = this.run; r.kills++;r.corpses.push({id:e.id,lifetime:25+Math.min(5,e.radius/8),kind:e.kind,x:e.x,y:e.y,direction:e.direction,visualScale:e.visualScale,age:0});r.corpses=r.corpses.slice(-32);
+      const r = this.run; r.kills++;r.corpses.push({id:e.id,lifetime:14+Math.min(4,e.radius/8),spoilAt:7,decayPortions:0,kind:e.kind,x:e.x,y:e.y,direction:e.direction,visualScale:e.visualScale,age:0});r.corpses=r.corpses.slice(-32);
       if (e.boss) {
         r.bosses++; r.score += 1000 * (r.stage + 1); r.bossDefeated = true;
         this.addDNA(STAGES[r.stage].dna); this.emit('boss_dead');
@@ -531,7 +535,7 @@
       if(!food){r.eating=null;return;}r.hidden=false;r.concealTime=0;r.revealedUntil=r.seconds+1;
       const foodId=food.kind==='meat'?food.corpseId:food.id;if(!r.eating||r.eating.corpseId!==foodId)r.eating={corpseId:foodId,kind:food.kind,progress:0};
       if(food.kind==='fish'&&r.stamina<4){r.eating=null;return;}
-      r.eating.progress+=dt/(food.kind==='fish'?1.2/(1+.2*r.mutations.fisher):.6/(1+.2*r.mutations.forager));
+      r.eating.progress+=dt*(1+.05*r.upgrades.digestion)/(food.kind==='fish'?1.2/(1+.2*r.mutations.fisher):.6/(1+.2*r.mutations.forager));
       if(r.eating.progress>=1){r.eating.progress-=1;if(food.kind==='fish'){r.stamina-=4;r.staminaDelay=1;this.catchFish(food);}else{food.value--;this.awardFood(1,food.x,food.y,food.kind==='plant'?'PLANTEFØDE':MEAT_RARITIES[food.rarity].name);if(food.kind==='plant'&&r.mutations.galliWind)r.health=Math.min(r.maxHealth,r.health+1);}
         if(food.kind==='fish'?food.stock<=0:food.value<=0){if(food.kind==='plant')food.depleted=true;r.pickups=r.pickups.filter(p=>p!==food);r.eating=null;}
       }
@@ -556,6 +560,7 @@
       if (this.phase !== 'playing') return;
       const x = e.x, y = e.y;
       this.enemyAI(e, dt);
+      this.regenerateEnemy(e,dt);
       e.moving = Math.hypot(e.x - x, e.y - y) > .001;
       e.walk = e.moving ? (e.walk + dt) % 1.5 : 0; e.poseTime += dt;
       const dx = e.moving && !['charge', 'windup'].includes(e.mode) ? e.x - x : e.facingX;
@@ -673,8 +678,36 @@
       e.mode = 'windup'; e.windupDuration = e.pattern === 1 ? .6 : e.pattern === 2 ? .9 : .95; e.timer = e.windupDuration;
       e.chargeX = dx / d; e.chargeY = dy / d;
     }
+    regenerateEnemy(e,dt){
+      const r=this.run;
+      e.regenerating=false;
+      if(e.boss||e.hp<=0||e.hp>=e.maxHP||r.seconds-e.lastAttackedAt<10||e.alert||e.bleed>0||Math.hypot(e.x-r.player.x,e.y-r.player.y)<350)return;
+      e.hp=Math.min(e.maxHP,e.hp+e.maxHP*.025*dt);e.regenerating=true;
+    }
+    carrionTarget(e){
+      const r=this.run;if(e.boss||e.guard||herbivorousNPC(e.kind)||!e.damage)return null;
+      let best=null,bestScore=0;
+      for(const corpse of r.corpses){if(!r.pickups.some(p=>p.corpseId===corpse.id&&p.value>0))continue;const distance=Math.hypot(corpse.x-e.x,corpse.y-e.y);if(distance>650)continue;
+        const cluster=r.pickups.filter(p=>p.corpseId!==undefined&&Math.hypot(p.x-corpse.x,p.y-corpse.y)<180).reduce((n,p)=>n+p.value,0);
+        const score=cluster*(1-corpse.age/corpse.lifetime)/(1+distance/180);
+        if(score>bestScore){bestScore=score;best=corpse;}}
+      return best;
+    }
+    scavenge(e,dt){
+      const target=this.carrionTarget(e);if(!target)return false;
+      e.mode=e.activity='scavenge';const dx=target.x-e.x,dy=target.y-e.y,d=Math.hypot(dx,dy);
+      if(d>45){e.facingX=dx/d;e.facingY=dy/d;this.travel(e,dx/d*e.speed*.4*dt,dy/d*e.speed*.4*dt);e.scavengeTime=0;}
+      else {e.scavengeTime=(e.scavengeTime||0)+dt;if(e.scavengeTime>=2){e.scavengeTime-=2;const food=this.run.pickups.find(p=>p.corpseId===target.id&&p.value>0);if(food){food.value--;e.hp=Math.min(e.maxHP,e.hp+3);this.run.pickups=this.run.pickups.filter(p=>p.value>0);}}}
+      return true;
+    }
+    decayCorpses(dt){
+      const r=this.run;
+      for(const corpse of r.corpses){corpse.age+=dt;const portions=Math.max(0,Math.floor((corpse.age-(corpse.spoilAt||7))/2.5));const lost=portions-(corpse.decayPortions||0);corpse.decayPortions=portions;
+        if(lost>0)for(const food of r.pickups)if(food.corpseId===corpse.id)food.value=Math.max(0,food.value-lost);}
+      r.corpses=r.corpses.filter(c=>c.age<c.lifetime);r.pickups=r.pickups.filter(p=>p.value>0&&(p.corpseId===undefined||r.corpses.some(c=>c.id===p.corpseId)));
+    }
     naturalBehavior(e,dt){
-      const r=this.run;e.naturalTime+=dt;const cycle=e.naturalTime%22;e.activity=cycle<8?(herbivorousNPC(e.kind)?'graze':'rest'):cycle<12?'rest':'roam';e.mode=e.activity;
+      const r=this.run;if(this.scavenge(e,dt))return;e.naturalTime+=dt;const cycle=e.naturalTime%22;e.activity=cycle<8?(herbivorousNPC(e.kind)?'graze':'rest'):cycle<12?'rest':'roam';e.mode=e.activity;
       if(e.activity!=='roam')return;
       const peers=e.herdId?r.enemies.filter(o=>o!==e&&o.herdId===e.herdId&&Math.hypot(o.x-e.x,o.y-e.y)<280):[];
       let tx=e.homeX+Math.cos(e.naturalTime*.22+e.id)*90,ty=e.homeY+Math.sin(e.naturalTime*.22+e.id)*90;
@@ -686,6 +719,7 @@
       if (e.boss && e.kind === 'carnotaurus' && this.run.stage === 0) { this.forestBossAI(e, dt); return; }
       const r = this.run, dx = r.player.x - e.x, dy = r.player.y - e.y, d = Math.max(1, Math.hypot(dx, dy));
       e.cooldown = Math.max(0, e.cooldown - dt); e.hit = Math.max(0, e.hit - dt);
+      if(!e.boss&&e.scaredUntil>r.seconds){e.alert=false;e.mode=e.activity='flee';e.facingX=-dx/d;e.facingY=-dy/d;this.travel(e,-dx/d*e.speed*dt,-dy/d*e.speed*dt);return;}
       if (e.guard && !e.alert && e.mode !== 'return') return;
       if (e.stagger > 0) { e.stagger = Math.max(0, e.stagger - dt); return; }
       if (!e.boss && !['windup', 'charge', 'slam', 'bite', 'recover'].includes(e.mode)) {
@@ -790,8 +824,9 @@
       if(r.staminaDelay===0&&r.pounce===0)r.stamina=Math.min(100,r.stamina+dt*(inCombat?8:12)*(1+.03*r.upgrades.regen+.2*m.feathers));
       let dx = clamp(finite(input.x), -1, 1), dy = clamp(finite(input.y), -1, 1), n = Math.hypot(dx, dy);
       const config = PLAYER_SPECIES[r.species], cost = abilityCost(r);
-      if (input.pounce && (n || r.species === 'ankylosaurus') && r.pounceCooldown === 0 && r.stamina >= cost) {
+      if (input.pounce && (n || ['ankylosaurus','tyrannosaurus'].includes(r.species)) && r.pounceCooldown === 0 && r.stamina >= cost) {
         r.revealedUntil=r.seconds+2;r.hidden=false;r.concealTime=0; r.stamina -= cost;r.staminaDelay=1.25; r.pounce = config.abilityTime; r.abilityCooldownDuration=config.abilityCooldown*(1-.12*m.scurry);r.pounceCooldown=r.abilityCooldownDuration; r.abilityHits = []; r.abilityRefund=0;if(m.compyFrenzy)r.frenzy=3;if(m.raptorAmbush)r.invulnerable=Math.max(r.invulnerable,config.abilityTime+1);if(m.galliWind)r.invulnerable=Math.max(r.invulnerable,1);if(m.triceBulwark){r.shield=20;r.shieldTime=4;}if(m.ankyBastion){r.shield=20;r.shieldTime=4;r.tailEmpowered=4;} r.abilityX = n ? dx/n : 0; r.abilityY = n ? dy/n : 1;
+        if(r.species==='tyrannosaurus'){for(const e of r.enemies)if(!e.boss&&!e.guard&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<250){e.scaredUntil=r.seconds+2+.5*m.rexVoice;e.alert=false;e.mode='flee';}this.emit('roar');}
         if(r.species==='baryonyx'){const school=r.map.fishSchools.find(f=>f.stock>0&&Math.hypot(f.x-r.player.x,f.y-r.player.y)<110);if(school)this.catchFish(school,m.baryTide?3:1);}
         if (r.species === 'ankylosaurus' && m.guard) r.health = Math.min(r.maxHealth, r.health + 5 * m.guard);
         this.burst(r.player.x, r.player.y, 'dust', 10, r.level); this.emit('pounce');
@@ -805,7 +840,7 @@
         const facing = Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? 'E' : 'W') : (dy > 0 ? 'S' : 'N');
         // Keep gait phase across turns rather than restarting with every key change.
         r.player.facing = facing;
-        const speed = config.speed * (input.sneak ? .45 : 1) * (r.slow > 0 ? .65 : 1) * (1 + .08 * m.legs)*(1-.08*m.heavyMuscle) * (r.pounce > 0 ? r.species === 'ankylosaurus' ? .3 : r.species==='gallimimus'?1.6*(1+.08*m.stride):2.5 : r.attack ? .7 : 1);
+        const speed = config.speed * (input.sneak ? .45 : 1) * (r.slow > 0 ? .65 : 1) * (1 + .08 * m.legs)*(1-.08*m.heavyMuscle) * (r.pounce > 0 ? ['ankylosaurus','tyrannosaurus'].includes(r.species) ? .3 : r.species==='gallimimus'?1.6*(1+.08*m.stride):2.5 : r.attack ? .7 : 1);
         this.travel(r.player, dx / n * speed * dt, dy / n * speed * dt);
         r.player.moving = Math.hypot(r.player.x - beforeX, r.player.y - beforeY) > .001;
       }
@@ -820,7 +855,7 @@
       const surface=this.terrainAt(r.player);r.surface=surface.kind;
       const quiet=(!r.player.moving||!!input.sneak)&&!r.attack&&r.pounce===0&&r.seconds>=r.revealedUntil;
       r.concealTime=surface.cover&&quiet?r.concealTime+dt:0;r.hidden=r.concealTime>=.6;
-      for(const corpse of r.corpses)corpse.age+=dt;r.corpses=r.corpses.filter(c=>c.age<c.lifetime);r.pickups=r.pickups.filter(p=>p.corpseId===undefined||r.corpses.some(c=>c.id===p.corpseId));
+      this.decayCorpses(dt);
       this.advanceAttack(dt);
       if (input.attack) this.attack();
       const survivors = [];

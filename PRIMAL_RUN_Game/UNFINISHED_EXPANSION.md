@@ -1,3 +1,8 @@
+> Historical recovery checkpoint. On 2026-10-09 the missing player/fish exports,
+> Para source integration and carrion/T. rex mechanics were implemented.
+> See [CARRION_AND_REX.md](CARRION_AND_REX.md) for current behavior and validation.
+> The notes below preserve the original unfinished state, not current blockers.
+
 # Preserved unfinished expansion · 2026-10-09
 
 This is a recovery checkpoint, not a finished release. Do not publish this

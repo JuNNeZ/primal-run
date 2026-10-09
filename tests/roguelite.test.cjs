@@ -6,7 +6,7 @@ test('fresh saves start as Compy; legacy DNA and upgrades survive unlock migrati
  const g=new C.Game({storage});assert.equal(g.save.selectedSpecies,'compy');g.start({seed:7});assert.equal(g.run.maxHealth,83.2);assert.equal(g.run.player.radius,12);assert.equal(g.unlockSpecies('utahraptor'),false);
  g.phase='species';assert.equal(g.unlockSpecies('utahraptor'),true);assert.equal(g.save.dna,65);assert.equal(g.unlockSpecies('utahraptor'),false);assert.equal(g.unlockSpecies('__proto__'),false);g.selectSpecies('utahraptor');
  const reloaded=new C.Game({storage});assert.equal(reloaded.save.selectedSpecies,'utahraptor');reloaded.start();assert.equal(reloaded.run.maxHealth,104);assert.equal(reloaded.save.dna,65);
- assert.equal(C.sanitizeSave({selectedSpecies:'tyrannosaurus',unlockedSpecies:['tyrannosaurus']}).selectedSpecies,'compy');
+ assert.equal(C.sanitizeSave({selectedSpecies:'unknown_dinosaur',unlockedSpecies:['unknown_dinosaur']}).selectedSpecies,'compy');
 });
 test('random wilderness is repeatable by seed, varies between seeds and keeps bounded safe habitats',()=>{
  for(let stage=0;stage<4;stage++)for(let seed=1;seed<=20;seed++){

@@ -307,3 +307,18 @@ Unfinished expansion and all 85 generated PNG originals are preserved. Read
 New class art export is incomplete; do not publish this checkpoint as a release.
 The later decay/regeneration/predator attraction/DNA lab/playable T. rex request
 is still pending. SHA-256 inventory is under Source_Generated/recovery_2026_10_09.
+
+## Carrion and T. rex follow-up · 2026-10-09
+
+See PRIMAL_RUN_Game/CARRION_AND_REX.md. New player/fish exports are integrated:
+840 player_full +480 enemy_full +4 fish frames,1548 combined resources.
+Nine playable classes (Trice/T. rex reuse enemy frames), faster carrion decay,
+escape recovery and carnivore scavenging; DNA lab and digestion upgrade.
+Preserved recovery report is now historical, all original PNGs retained.
+Artwork remains prototype/unapproved; body/death-pose variation remains.
+Current validation is standalone Chromium; no fresh official GDJS export
+was possible because the engine binaries are absent in this restored machine.
+
+Validation:87 core,14 standalone game browser suites,3 preserved kit suites;
+1080 actual player frames and exact nine-class portrait palettes verified.
+Current report:PRIMAL_RUN_Game/carrion_rex_runtime_report.json.
