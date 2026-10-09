@@ -7,7 +7,7 @@
     if (root.primalRun) root.primalRun.dispose();
     let storage = null; try { storage = window.localStorage; } catch (_) { /* In-memory play still works. */ }
     const game = new C.Game({ storage });
-    const I18N=root.PrimalI18n||{t:x=>x,translateNode(){},setLanguage(){},lang:'da',LANGUAGES:[{id:'da',name:'Dansk'}]};I18N.setLanguage(game.save.settings.language||'da');const t=text=>I18N.t(text);
+    const I18N=root.PrimalI18n||{t:x=>x,translateNode(){},setLanguage(){},lang:'da',LANGUAGES:[{id:'da',name:'Dansk'}]};I18N.setLanguage(game.save.settings.language||'da');const tr=text=>I18N.t(text);
     const keyLabel=action=>game.save.bindings[action].replace('Key','').replace(/Shift(Left|Right)/,'SHIFT').replace('Space','SPACE');
     const shell = document.createElement('div'); shell.className = 'primal-shell';
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
@@ -27,7 +27,7 @@
     let menuClock=0;const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
     const menuScene=()=>['menu','species','shop','scores','help','guide','achievements'].includes(game.phase) || game.phase==='settings' && returnPhase==='menu';
     function listen(target, name, callback, options) { target.addEventListener(name, callback, options); cleanups.push(() => target.removeEventListener(name, callback, options)); }
-    function toast(text) { shell.querySelector('.toast').textContent = t(text); toastUntil = performance.now() + 2600; }
+    function toast(text) { shell.querySelector('.toast').textContent = tr(text); toastUntil = performance.now() + 2600; }
     function displayImageURL(path) { prepareImage(path); return skins[path] ? (displayURLs[path] || (displayURLs[path] = skins[path].toDataURL())) : resolve(path); }
     // Sprite frames have lots of empty margin; thumbnails crop to the visible pixels.
     function croppedURL(path){
@@ -83,11 +83,11 @@
           const path = C.playerFrame(id,'idle','S',0);
           const lock = C.SPECIES_UNLOCKS[id], achievement = lock.achievement && C.ACHIEVEMENTS.find(a => a.id === lock.achievement);
           const buttonText = selected ? 'VALGT' : unlocked ? 'VÆLG' : achievement ? '🔒 ' + achievement.name.toUpperCase() : 'LÅS OP · ' + d.cost + ' DNA';
-          return `<article class="${selected ? 'selected-species' : ''}${unlocked ? '' : ' locked-species'}">${imageTag(path, 'thumb', true)}<h2>${d.name}</h2><p>${d.text}</p><small>${d.hp} LIV · ${d.damage} SKADE · ${d.speed} FART</small>${!unlocked && achievement ? `<p class="unlock-hint">${achievement.text}</p>` : ''}<button data-species="${id}" ${selected || !unlocked && (achievement || game.save.dna < d.cost) ? 'disabled' : ''}>${buttonText}</button></article>`;
+          return `<article class="${selected ? 'selected-species' : ''}${unlocked ? '' : ' locked-species'}">${imageTag(path)}<h2>${d.name}</h2><p>${d.text}</p><small>${d.hp} LIV · ${d.damage} SKADE · ${d.speed} FART</small>${!unlocked && achievement ? `<p class="unlock-hint">${achievement.text}</p>` : ''}<button data-species="${id}" ${selected || !unlocked && (achievement || game.save.dna < d.cost) ? 'disabled' : ''}>${buttonText}</button></article>`;
         }).join('')}</div><div class="skin-picker"><h2>Farvedragt</h2><div>${Object.entries(C.SKINS).map(([id, skin]) => { const owned = game.save.skins.includes(id), req = skin.achievement && C.ACHIEVEMENTS.find(a => a.id === skin.achievement); return `<button data-skin="${id}" class="${game.save.skin === id ? 'selected' : ''}" ${owned ? '' : 'disabled'} title="${owned ? skin.name : 'Låses op af: ' + (req ? req.name : '')}">${owned ? '' : '🔒 '}${skin.name}</button>`; }).join('')}</div></div><p class="fine">Et fantasiunivers: arterne kommer fra forskellige perioder. Compy: sen Jura. Utahraptor: tidlig Kridt. Baryonyx: tidlig Kridt. De øvrige arter: sen Kridt. Deinosuchus er en krokodilleslægt.</p>${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'achievements') {
         const done = C.ACHIEVEMENTS.filter(a => game.save.achievements[a.id]).length, life = game.save.lifetime;
-        screen.innerHTML = `<section class="panel">${heading('BEDRIFTER', 'Achievements', done + ' af ' + C.ACHIEVEMENTS.length + ' opnået')}<div class="achievement-grid">${C.ACHIEVEMENTS.map(a => { const got = !!game.save.achievements[a.id], reward = a.species ? I18N.tf('Låser {0} op', C.PLAYER_SPECIES[a.species].name) : a.skin ? 'Farvedragt: ' + t(C.SKINS[a.skin].name) : '+' + a.dna + ' DNA'; return `<article class="achievement ${got ? 'done' : ''}"><b>${got ? '★' : '☆'} ${a.name}</b><p>${a.text}</p><small>${reward}</small></article>`; }).join('')}</div><div class="lifetime"><span>Runs <b>${life.runs}</b></span><span>Drab <b>${life.kills}</b></span><span>Bosser <b>${life.bosses}</b></span><span>Rivaler <b>${life.rivals}</b></span><span>Områder <b>${life.zones}</b></span><span>Løbet <b>${(life.distance / 1000).toFixed(1)} km</b></span></div>${button('menu', '← Tilbage')}</section>`;
+        screen.innerHTML = `<section class="panel">${heading('BEDRIFTER', 'Achievements', done + ' af ' + C.ACHIEVEMENTS.length + ' opnået')}<div class="achievement-grid">${C.ACHIEVEMENTS.map(a => { const got = !!game.save.achievements[a.id], reward = a.species ? I18N.tf('Låser {0} op', C.PLAYER_SPECIES[a.species].name) : a.skin ? 'Farvedragt: ' + tr(C.SKINS[a.skin].name) : '+' + a.dna + ' DNA'; return `<article class="achievement ${got ? 'done' : ''}"><b>${got ? '★' : '☆'} ${a.name}</b><p>${a.text}</p><small>${reward}</small></article>`; }).join('')}</div><div class="lifetime"><span>Runs <b>${life.runs}</b></span><span>Drab <b>${life.kills}</b></span><span>Bosser <b>${life.bosses}</b></span><span>Rivaler <b>${life.rivals}</b></span><span>Områder <b>${life.zones}</b></span><span>Løbet <b>${(life.distance / 1000).toFixed(1)} km</b></span></div>${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'guide') {
         screen.innerHTML=`<section class="panel">${heading('DALENS ARTSBOG','Observerede dinosaurer','Nye arter og angreb registreres, når du ser dem tæt på. Gemmes mellem runs.')}<div class="upgrade-grid">${Object.keys(C.SPECIES).map(id=>{const entry=game.save.fieldGuide[id];return `<article><h2>${entry?C.SPECIES_LABELS[id]:'Ukendt art'}</h2>${entry?`<p>Observeret i: ${entry.biomes.map(i=>C.STAGES[i].name).join(', ')}</p><p>Føde: ${['parasaurolophus','ankylosaurus','triceratops','pachycephalosaurus'].includes(id)?'Planter':id==='gallimimus'?'Planter og smådyr':id==='baryonyx'?'Fisk og kød':'Kød'}</p><p>Observerede angreb: ${entry.attacks.map(a=>({bite:'Bid',charge:'Stormløb',slam:'Slag/tramp',roar:'Brøl'})[a]).join(', ')||'Ingen endnu'}</p>`:'<p>Udforsk dalen for at lære arten at kende.</p>'}</article>`;}).join('')}</div>${button('menu','← Tilbage')}</section>`;
       } else if (phase === 'shop') {
@@ -121,7 +121,7 @@
         screen.innerHTML = `<section class="panel compact">${heading('VALGFRI RISIKO · SPILLET ER PAUSET', 'En bevogtet rede', 'Tag sjælden føde og væk den nærliggende elitevogter, eller lad reden være.')}<div class="actions"><button data-explore="leave">LAD DEN VÆRE</button><button class="primary" data-explore="take">TAG FØDEN · +${8 + r.stage * 2}</button></div></section>`;
       } else if (phase === 'cleared') {
         const stage = game.currentLevel();
-        screen.innerHTML = `<section class="panel compact">${heading('BOSS BESEJRET', I18N.tf('{0} er faldet', t(stage.bossName)), '+' + stage.dna + ' DNA er gemt.')}${statisticsHTML(true)}<div class="bank">${imageTag('assets/ui/dna.png')}<b>${game.save.dna} DNA</b></div>${button('next', r.levelIndex === r.campaign.length-1 ? 'AFSLUT JAGTEN →' : 'NÆSTE BANE →', 'primary')}<p class="fine">${r.levelIndex === r.campaign.length-1 ? 'Jagten er fuldført.' : 'Du beholder mutationerne og genvinder 30 % af dit maksimale liv.'}</p></section>`;
+        screen.innerHTML = `<section class="panel compact">${heading('BOSS BESEJRET', I18N.tf('{0} er faldet', tr(stage.bossName)), '+' + stage.dna + ' DNA er gemt.')}${statisticsHTML(true)}<div class="bank">${imageTag('assets/ui/dna.png')}<b>${game.save.dna} DNA</b></div>${button('next', r.levelIndex === r.campaign.length-1 ? 'AFSLUT JAGTEN →' : 'NÆSTE BANE →', 'primary')}<p class="fine">${r.levelIndex === r.campaign.length-1 ? 'Jagten er fuldført.' : 'Du beholder mutationerne og genvinder 30 % af dit maksimale liv.'}</p></section>`;
       } else if (phase === 'result') {
         const result = r.result;
         screen.innerHTML = `<section class="panel compact">${heading(result.victory ? 'DALENS NYE KONGE' : 'EVOLUTIONEN FORTSÆTTER', result.victory ? 'Jagten er vundet' : 'Jagten er slut', htmlEscape(result.name) + ' · Bane ' + result.stage + ' · ' + result.bosses + ' bosser')}${result.victory ? "" : "<img class=\"death-preview\" alt=\"Din dinosaur efter jagten\">"}<div class="result-stats"><div><small>SCORE</small><b>${result.score}</b></div><div><small>DNA I RUN</small><b>+${r.dna}</b></div><div><small>TID</small><b>${timeLabel(result.seconds)}</b></div></div><p class="run-title">${htmlEscape(game.runSummary())}</p><canvas class="end-scene" width="480" height="180" aria-label="Afslutningsscene"></canvas><p>${result.victory?'Jagten er fuldført':r.lastHit?'Dræbt af '+C.SPECIES_LABELS[r.lastHit.kind]:'Ingen registreret dræber'}</p>${statisticsHTML(false)}${button('start', 'NY JAGT →', 'primary')}<div class="actions">${button('shop', 'DNA-laboratorium')}${button('scores', 'Highscores')}${button('menu', 'Hovedmenu')}</div></section>`;
@@ -304,7 +304,7 @@
     function enemyLabelOffset(e){return (e.kind==='compy'?20:72)*(e.visualScale||1)+12;}
     function enemyFrame(kind,state,direction,frame){return 'assets/'+(['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx'].includes(kind)?'player_full/':'enemy_full/')+kind+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';}
     function label(text, x, y, color) {
-      text = t(text);
+      text = tr(text);
       ctx.font = 'bold 11px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713';
       ctx.strokeText(text, Math.round(x), Math.round(y)); ctx.fillStyle = color; ctx.fillText(text, Math.round(x), Math.round(y));
     }
@@ -360,7 +360,7 @@
         // Symbol in the danger zone works without colour.
         const cx=shape.type==='lane'?e.x+e.chargeX*shape.length*.55:shape.type==='cone'?e.x+Math.cos(shape.angle)*shape.radius*.6:e.x,cy=shape.type==='lane'?e.y+e.chargeY*shape.length*.55:shape.type==='cone'?e.y+Math.sin(shape.angle)*shape.radius*.6:e.y+shape.radius*.55;
         ctx.font='bold '+(e.boss?22:16)+'px monospace';ctx.textAlign='center';ctx.textBaseline='middle';ctx.lineWidth=4;ctx.strokeStyle='#151b19';ctx.strokeText(shape.icon,Math.round(cx),Math.round(cy));ctx.fillStyle='#fff1c9';ctx.fillText(shape.icon,Math.round(cx),Math.round(cy));ctx.textBaseline='alphabetic';
-        if(e.boss||e.miniboss||e.speciesSkill){const warning=t(e.attackName||'ANGREB');ctx.font='bold 11px monospace';ctx.lineWidth=3;ctx.strokeStyle='#151b19';ctx.strokeText(warning,Math.round(e.x),Math.round(e.y)-enemyLabelOffset(e)-20);ctx.fillStyle=base;ctx.fillText(warning,Math.round(e.x),Math.round(e.y)-enemyLabelOffset(e)-20);}
+        if(e.boss||e.miniboss||e.speciesSkill){const warning=tr(e.attackName||'ANGREB');ctx.font='bold 11px monospace';ctx.lineWidth=3;ctx.strokeStyle='#151b19';ctx.strokeText(warning,Math.round(e.x),Math.round(e.y)-enemyLabelOffset(e)-20);ctx.fillStyle=base;ctx.fillText(warning,Math.round(e.x),Math.round(e.y)-enemyLabelOffset(e)-20);}
         ctx.restore();
       }
     }
@@ -537,8 +537,8 @@
         for (const e of r.effects) {
           const total = e.crit ? .8 : .55, t = 1 - Math.max(0, e.life) / total, x = Math.round(e.x), y = Math.round(e.y - 55 - t * (e.crit ? 30 : 20));
           const size = e.crit ? Math.round(18 + 6 * Math.max(0, 1 - t * 4)) : 11; ctx.font = 'bold ' + size + 'px monospace';
-          ctx.lineWidth = e.crit ? 4 : 3; ctx.strokeStyle = '#101713'; ctx.strokeText(t(e.text), x, y);
-          ctx.fillStyle = e.color || '#ffe0a0'; ctx.fillText(t(e.text), x, y);
+          ctx.lineWidth = e.crit ? 4 : 3; ctx.strokeStyle = '#101713'; ctx.strokeText(tr(e.text), x, y);
+          ctx.fillStyle = e.color || '#ffe0a0'; ctx.fillText(tr(e.text), x, y);
         }
         ctx.font = 'bold 12px monospace';
       }

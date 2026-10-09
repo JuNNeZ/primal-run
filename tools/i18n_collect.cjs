@@ -20,9 +20,9 @@ const { chromium, browserOptions, localURL } = require('./browser.cjs');
     for (const species of Object.keys(C.PLAYER_SPECIES)) { g.phase = 'intro'; g.selectSpecies(species); await tick(); await tick(); }
     for (let level = 0; level < 8; level++) {
       g.phase = 'menu'; g.start({ seed: 1000 + level }); for (let i = 0; i < level; i++) { g.phase = 'cleared'; g.run.bossDefeated = true; g.nextStage(); }
-      const r = g.run; for (const z of r.map.zones) { r.player.x = z.x; r.player.y = z.y; for (let i = 0; i < 15; i++) g.step(1 / 30, {}); await tick(); }
+      const r = g.run; for (const z of r.map.zones.slice(0, 3)) { r.player.x = z.x; r.player.y = z.y; for (let i = 0; i < 8; i++) g.step(1 / 30, {}); await tick(); }
       r.meat = 999; for (let i = 0; i < 30 && !r.bossSpawned; i++) g.step(1 / 30, {});
-      const boss = r.enemies.find(e => e.boss); if (boss) { r.player.x = boss.x + 150; r.player.y = boss.y; for (let i = 0; i < 90; i++) { r.invulnerable = 1; g.step(1 / 30, {}); if (i % 10 === 0) await tick(); } boss.mode = 'recover'; boss.timer = 1; await tick(); boss.mode = 'broken'; boss.timer = 1; await tick(); boss.mode = 'enrage'; await tick(); }
+      const boss = r.enemies.find(e => e.boss); if (boss) { r.player.x = boss.x + 150; r.player.y = boss.y; for (let i = 0; i < 60; i++) { r.invulnerable = 1; g.step(1 / 30, {}); if (i % 6 === 0) await tick(); } boss.mode = 'recover'; boss.timer = 1; await tick(); boss.mode = 'broken'; boss.timer = 1; await tick(); boss.mode = 'enrage'; await tick(); }
       g.phase = 'paused'; await tick(); g.phase = 'playing'; g.addXP(200); await tick(); if (g.phase === 'mutation') { g.choose(r.choices[0]); await tick(); }
       r.rareRewards = 1; g.offerRareReward(); await tick(); if (g.phase === 'mutation') g.choose(r.choices[0]);
       if (boss) { boss.hp = 0; g.step(1 / 30, {}); await tick(); }

@@ -8,11 +8,11 @@
   "scope": "Integration preserves source pixels, manifest origins and prototype status. Not a visual or animation approval.",
   "source_sha256": {
     "src/core.js": "b73a1c16663570418f9594a2bdd1b8ae4a8de57481b58442764a7844dc1b9e32",
-    "src/i18n.js": "40dd834081a9a49fc82dd55734339c59c6660a9d79ea9848811060bcf9177d97",
-    "src/lang.js": "5b11e6377cb2ae85e664f3553ebf273c88e92a6bdc3c1373556381df3e29ed56",
+    "src/i18n.js": "0e2a658797527db2ad57fefbd8ddfaffd46958bb1f79d81d128215851742c77e",
+    "src/lang.js": "abae124342e84eb2129eea6392c1330716501e62c5448cb161838481dd19a756",
     "src/assets.js": "02a6a1fe5b1415af5c697efb9a1551f235dd29f2385ecc61437b18b99143709b",
     "src/audio.js": "1b434e95d7062acfedc2e736f105d559b409f2fa82ca7fe65140abd008d6fc69",
-    "src/app.js": "5c0510326338ce846eed90312dd97c7d48ed57285c95aae7e00a660cce623a62",
+    "src/app.js": "02105032b421850d88673000364721e9849f3cb17f1212a2564a96a6afe30406",
     "style.css": "3619d616c098f6b306ce5943b25271bd74c785bae79c3271fac31a284ac45eee"
   }
 }

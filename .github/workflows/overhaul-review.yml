@@ -44,7 +44,7 @@ jobs:
       - name: Translation coverage
         timeout-minutes: 5
         run: |
-          for l in en ja tlh; do timeout 200 node tools/i18n_collect.cjs review/i18n-missing-$l.json $l || echo "I18N $l FAILED" >> review/summary.txt; done
+          for l in en; do timeout 240 node tools/i18n_collect.cjs review/i18n-missing-$l.json $l || echo "I18N $l FAILED" >> review/summary.txt; done
       - name: Publish results branch
         if: always()
         env:

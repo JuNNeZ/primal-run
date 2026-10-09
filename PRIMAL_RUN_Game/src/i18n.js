@@ -39,7 +39,7 @@
   }
   function translate(text) {
     if (lang === 'da' || typeof text !== 'string') return text;
-    const trimmed = text.trim(); if (!trimmed || !/[A-Za-zÆØÅæøåÉé]/.test(trimmed)) return text;
+    const trimmed = text.trim(); if (!trimmed || !/[A-Za-zÆØÅæøåÉé]/.test(trimmed.replace(KEY, ''))) return text;
     const k = lang + '\u0000' + trimmed; if (cache.has(k)) return pad(text, cache.get(k));
     let out = withNumbers(trimmed);
     if (out === null && trimmed.includes(' · ')) out = trimmed.split(' · ').map(part => translateCore(part)).join(' · ');
