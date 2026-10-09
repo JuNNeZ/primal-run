@@ -23,6 +23,12 @@
     {biome:3,name:'Urkongens dal',subtitle:'Den sidste jagt',target:58,boss:'tyrannosaurus',bossName:'Ragnar - Dalens Konge',dna:35}
   ];
   const SECRET_SEED=1993;
+  const RIVALS=[
+    {kind:'carnotaurus',names:['Knud Kløvhorn','Grethe Grumme','Sigurd Skarptand']},
+    {kind:'baryonyx',names:['Fisker-Frede','Lise Lyngebid','Ole Ålekrog']},
+    {kind:'triceratops',names:['Bjarne Bulder','Hilda Hornvæg','Torben Tramp']},
+    {kind:'ankylosaurus',names:['Valdemar Vold','Ingrid Ildskjold','Bo Basalt']}
+  ];
   const SPECIES = {
     compy: { hp: 8, speed: 90, damage: 3, meat: 1, chance: .02, dna: 1, radius: 4 },
     parasaurolophus: { hp: 30, speed: 60, damage: 0, meat: 3, chance: .15, dna: 2, radius: 18 },
@@ -97,7 +103,10 @@
   });
   PLAYER_SPECIES.tyrannosaurus={name:'Tyrannosaurus rex',cost:120,hp:190,damage:38,speed:95,radius:32,cooldown:1.6,duration:1.1,range:96,skill:'Kongebrøl',text:'Kødæder. Langsomt knusende bid. Shift: brøl skræmmer almindelige dyr i nærheden; bosser er immune.',abilityCost:50,abilityTime:.9,abilityCooldown:6,diet:'carnivore'};
   PLAYER_SPECIES.velociraptor={name:'Velociraptor',cost:0,hp:90,damage:8,speed:170,radius:12,cooldown:.5,duration:.32,range:56,skill:'Kløspring',text:'Lille startjæger. Hurtige bid og et kort beskyttet kløspring. Shift:32 stamina.',abilityCost:32,abilityTime:.2,abilityCooldown:2,diet:'carnivore'};
-  PLAYER_SPECIES.compy.radius=4;PLAYER_SPECIES.compy.text='Lille challenge-art. Små bid og korte undvigelser; vær forsigtig blandt store dyr.';
+  PLAYER_SPECIES.compy.radius=4;
+  // Stamina rebalance (overhaul phase 1): heavy abilities cost more so stamina matters for every species.
+  for(const [id,cost] of Object.entries({utahraptor:36,carnotaurus:50,ankylosaurus:55,triceratops:55,pachycephalosaurus:38,gallimimus:30,baryonyx:40,tyrannosaurus:60,velociraptor:30}))PLAYER_SPECIES[id].abilityCost=cost;
+  PLAYER_SPECIES.velociraptor.text='Lille startjæger. Hurtige bid og et kort beskyttet kløspring. Shift: 30 stamina.';PLAYER_SPECIES.compy.text='Lille challenge-art. Små bid og korte undvigelser; vær forsigtig blandt store dyr.';
   for(const [id,config] of Object.entries(PLAYER_SPECIES))config.diet=config.diet||(id==='ankylosaurus'?'herbivore':'carnivore');
   const herbivorousNPC=kind=>['parasaurolophus','ankylosaurus','triceratops','pachycephalosaurus','gallimimus'].includes(kind);
   const playerFrame=(species,state,direction,frame)=>'assets/'+(['triceratops','tyrannosaurus'].includes(species)?'enemy_full/':'player_full/')+species+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';
@@ -165,6 +174,16 @@
   MUTATIONS.push({id:'rexKing',name:'Urkongens bid',text:'+20 % bid-skade. Kun én rang.',icon:'serrated_teeth',max:1,rarity:'legendary',species:'tyrannosaurus'});
   MUTATIONS.push({id:'lightFrame',name:'Let knoglebygning',text:'+15 % fart, men +15 % modtaget skade pr. rang.',icon:'powerful_legs',max:2,rarity:'rare'},{id:'metabolicRush',name:'Hurtigt stofskifte',text:'+25 % spisehastighed, men -15 % stamina-regeneration pr. rang.',icon:'hunger',max:2,rarity:'uncommon'});
   MUTATIONS.push({id:'velociClaw',name:'Små skarpe kløer',text:'+20 % kløspringsskade pr. rang.',icon:'serrated_teeth',max:3,rarity:'rare',species:'velociraptor'},{id:'velociPrime',name:'Den lille alfajæger',text:'Kløspring giver 2 sekunders beskyttelse; én rang.',icon:'escape',max:1,rarity:'legendary',species:'velociraptor'});
+  // Stamina tuning (overhaul phase 1): slower refill so abilities are a decision, not a reflex.
+  const STAMINA = { regen: 9, combatRegen: 5, delay: 1.5, windedBelow: 8, windedTime: 2, windedSpeed: .8 };
+  // Critical hits are the only source of stagger on ordinary bites (overhaul phase 1).
+  const CRIT = { base: .08, multiplier: 1.5, stagger: .35, bossBreak: 25, bossBreakStagger: 1.2 };
+  MUTATIONS.push(
+    {id:'keenClaws',name:'Skarpe kløer',text:'+6 % chance for kritisk træf pr. rang. Kritiske træf gør 50 % ekstra skade og stagger.',icon:'serrated_teeth',max:3,rarity:'common'},
+    {id:'instinct',name:'Rovdyrinstinkt',text:'+20 % kritisk chance mod dyr, der ikke har set dig, pr. rang.',icon:'hunger',max:2,rarity:'uncommon'},
+    {id:'bonebreak',name:'Knoglebrud',text:'Kritiske træf stagger 0,15 sek. længere og fylder bossens brud-meter 50 % hurtigere pr. rang.',icon:'bone',max:2,rarity:'rare'}
+  );
+  const critChance=(r,e)=>Math.min(.75,CRIT.base+.06*r.mutations.keenClaws+(e&&!e.alert?.2*r.mutations.instinct:0)+(r.species==='pachycephalosaurus'?.1:0)+(r.species==='compy'?.04:0));
   const UPGRADES = [
     { id: 'health', name: 'Livskraft', text: '+2 % startliv pr. rang', max: 5 },
     { id: 'damage', name: 'Angrebsstyrke', text: '+2 % startskade pr. rang', max: 5 },
@@ -365,7 +384,20 @@
         if (site.type === 'rare') { const point=this.habitatPosition('parasaurolophus',site);if(!point)continue;site.x=point.x;site.y=point.y;const e = this.spawn('parasaurolophus', point); e.rare = true;e.variant='albino'; e.speed *= 1.2; site.animalId = e.id; }
         if (site.type === 'nest') { const kind=r.stage===1?'carnotaurus':STAGES[r.stage].boss;const point=this.habitatPosition(kind,{x:site.x+100,y:site.y});if(!point)continue;if(Math.hypot(point.x-site.x,point.y-site.y)>180){site.x=point.x;site.y=point.y+70;}const e=this.spawn(kind,point); e.elite = true; e.guard = true; e.hp *= 1.6; e.maxHP = e.hp; e.damage *= 1.3; e.speed *= 1.08; site.guardId = e.id; }
       }
+      if (!r.secret) this.spawnRival();
       r.spawnTimer = r.stage === 0 ? 5 : 1;
+    }
+    // One optional miniboss per level, far from the start: risk you choose for an epic genome.
+    spawnRival() {
+      const r=this.run,kind=RIVALS[r.stage].kind,start={x:480,y:340};
+      const spots=r.map.habitats.filter(h=>Math.hypot(h.x-start.x,h.y-start.y)>900&&suitableHabitat(r.stage,r.map,kind,h)&&!r.map.rocks.some(rock=>Math.hypot(h.x-rock.x,h.y-rock.y)<70)&&!r.map.sites.some(site=>Math.hypot(h.x-site.x,h.y-site.y)<260));
+      if(!spots.length)return null;
+      const spot=spots[Math.floor(seeded(r.seed^Math.imul(r.levelIndex+7,97531))()*spots.length)];
+      const e=this.spawn(kind,spot);if(!e)return null;
+      const names=RIVALS[r.stage].names;
+      e.elite=true;e.miniboss=true;e.rivalName=names[(r.seed+r.levelIndex)%names.length];e.hp*=2.6;e.maxHP=e.hp;e.damage*=1.35;e.speed*=1.05;e.visualScale=Math.max(e.visualScale||1,1.35);e.territoryRadius=260;e.herdId=null;
+      r.map.rival={id:e.id,kind,x:spot.x,y:spot.y,name:e.rivalName};
+      return e;
     }
     habitatPosition(kind, near) {
       const r=this.run;
@@ -541,21 +573,29 @@
         if (dist > PLAYER_SPECIES[r.species].range + e.radius + 10 * r.mutations.reach + (r.species === 'ankylosaurus' ? 12 * r.mutations.sweep : 0) || (r.species !== 'ankylosaurus' && dist > 24 && (dx * dir[0] + dy * dir[1]) / dist < .35)) continue;
         const frontal = dist > 0 && ((-dx * e.facingX - dy * e.facingY) / dist > .6);
         const armor = ['triceratops', 'ankylosaurus'].includes(e.kind) && frontal ? .5 : 1;
-        const vulnerable = e.boss && e.mode === 'recover' && !frontal;
-        const damage = PLAYER_SPECIES[r.species].damage * (1 + .02 * r.upgrades.damage + .15*r.mutations.rexJaw + .2*r.mutations.rexKing + .2 * r.mutations.teeth + .2*r.mutations.apexGenome + .25*r.mutations.glassCannon + .2*r.mutations.heavyMuscle + (r.species === 'compy' && e.kind === 'parasaurolophus' ? .25 * r.mutations.hunter : 0) + (r.species === 'utahraptor' && !e.alert ? .5 * r.mutations.ambush : 0) + (r.health < r.maxHealth * .4 ? .2 * r.mutations.fury : 0)) * armor * (e.npcGuardUntil>r.seconds?.25:1) * (vulnerable ? 1.5 : 1)*(r.tailEmpowered>0?2:1);
-        e.hp -= damage; this.provoke(e); hits++; strong ||= e.boss || vulnerable || damage >= 16;
+        const vulnerable = e.boss && (e.mode === 'broken' || e.mode === 'recover' && !frontal);
+        const crit = this.random() < critChance(r,e);
+        const damage = (crit ? CRIT.multiplier : 1) * PLAYER_SPECIES[r.species].damage * (1 + .02 * r.upgrades.damage + .15*r.mutations.rexJaw + .2*r.mutations.rexKing + .2 * r.mutations.teeth + .2*r.mutations.apexGenome + .25*r.mutations.glassCannon + .2*r.mutations.heavyMuscle + (r.species === 'compy' && e.kind === 'parasaurolophus' ? .25 * r.mutations.hunter : 0) + (r.species === 'utahraptor' && !e.alert ? .5 * r.mutations.ambush : 0) + (r.health < r.maxHealth * .4 ? .2 * r.mutations.fury : 0)) * armor * (e.npcGuardUntil>r.seconds?.25:1) * (vulnerable ? 1.25 : 1)*(r.tailEmpowered>0?2:1);
+        e.hp -= damage; this.provoke(e); hits++; strong ||= crit || vulnerable || damage >= 16;if(crit){r.stats.crits=(r.stats.crits||0)+1;this.emit('crit');}
         this.burst(e.x, e.y, 'blood', vulnerable ? 12 : 8, e.id);
         e.bleed = r.mutations.bleed ? 3 : 0; e.hit = .15;
         if (!e.boss) {
-          const distance = armor < 1 ? 8 : 18;
+          const distance = (armor < 1 ? 5 : 10) * (crit ? 1.8 : 1);
           this.move(e, (dist > 1 ? dx / dist : dir[0]) * distance, (dist > 1 ? dy / dist : dir[1]) * distance);
-          e.stagger = r.species==='pachycephalosaurus'?.3+.12*r.mutations.dome:.12;
-        }
-        r.effects.push({ x: e.x, y: e.y, text: (armor < 1 ? 'PANSSER · ' : vulnerable ? 'ÅBEN FLANKE · ' : '') + Math.round(damage), life: .55 });
+          // Only critical hits interrupt ordinary animals; Pachy's dome lengthens its stagger.
+          e.flinch = .12; // brief movement pause; never cancels an attack in progress
+          if (crit) e.stagger = Math.max(e.stagger||0, CRIT.stagger + .15 * r.mutations.bonebreak + (r.species==='pachycephalosaurus' ? .12 * r.mutations.dome : 0));
+        } else if (crit) this.breakBoss(e, CRIT.bossBreak * (1 + .5 * r.mutations.bonebreak));
+        r.effects.push({ x: e.x, y: e.y, text: (crit ? 'KRITISK · ' : armor < 1 ? 'PANSSER · ' : vulnerable ? 'ÅBEN FLANKE · ' : '') + Math.round(damage), color: crit ? '#dfbc52' : undefined, crit, life: crit ? .8 : .55 });
       }
       if(hits){r.stats.landedAttacks++;r.stats.hits+=hits;}
       if (hits) { r.hitStop = Math.max(r.hitStop, strong || hits > 1 ? .05 : .033); r.shake = Math.max(r.shake, strong ? .1 : .055); this.emit('bite_hit', { hits, strong }); }
       if(r.species==='ankylosaurus')r.tailEmpowered=0;
+    }
+    breakBoss(e,amount){
+      if(!e.boss||e.mode==='broken')return;
+      e.breakMeter=(e.breakMeter||0)+amount;
+      if(e.breakMeter>=100){e.breakMeter=0;e.mode='broken';e.timer=CRIT.bossBreakStagger;e.attackName='BRUDT · ANGRIB NU';e.followUp=false;e.secondBite=false;this.emit('boss_break');this.burst(e.x,e.y,'dust',16,e.id);}
     }
     kill(e) {
       const r = this.run; r.kills++;r.stats.kills++;r.stats.killsBySpecies[e.kind]=(r.stats.killsBySpecies[e.kind]||0)+1;r.corpses.push({id:e.id,lifetime:60+Math.min(10,e.radius/4),foodLifetime:14+Math.min(4,e.radius/8),poseVariant:e.id%2,spoilAt:7,decayPortions:0,kind:e.kind,x:e.x,y:e.y,direction:e.direction,visualScale:e.visualScale,variant:e.rare?'albino':e.elite?'elite':e.sex==='male'?'male':null,age:0});r.corpses=r.corpses.slice(-32);
@@ -643,9 +683,28 @@
       }
       return true;
     }
+    // Shared boss smarts: turn toward the player during the early windup, punish
+    // players who stay behind the boss, and recover from a crit "break".
+    bossCommon(e,dt){
+      const r=this.run,dx=r.player.x-e.x,dy=r.player.y-e.y,d=Math.max(1,Math.hypot(dx,dy));
+      if(e.mode==='broken'){e.timer-=dt;e.hit=Math.max(0,e.hit-dt);if(e.timer<=0){e.mode='recover';e.timer=.35;}return true;}
+      if(e.mode==='windup'&&e.timer>(e.windupDuration||1)*.4&&e.pattern!==2&&e.pattern!==3){
+        const target=Math.atan2(dy,dx),current=Math.atan2(e.chargeY,e.chargeX);let diff=Math.atan2(Math.sin(target-current),Math.cos(target-current));const turn=Math.min(Math.abs(diff),(e.bossPhase===2?3.2:2.4)*dt)*Math.sign(diff);const a=current+turn;e.chargeX=e.facingX=Math.cos(a);e.chargeY=e.facingY=Math.sin(a);
+      }
+      if(e.mode==='charge'&&e.bossPhase===2){const target=Math.atan2(dy,dx),current=Math.atan2(e.chargeY,e.chargeX);let diff=Math.atan2(Math.sin(target-current),Math.cos(target-current));if(Math.abs(diff)<1.4){const a=current+Math.min(Math.abs(diff),1.1*dt)*Math.sign(diff);e.chargeX=e.facingX=Math.cos(a);e.chargeY=e.facingY=Math.sin(a);}}
+      if(['chase','recover'].includes(e.mode)){
+        const dot=(dx*e.facingX+dy*e.facingY)/d;
+        e.behindTime=d<170&&dot<-.25?(e.behindTime||0)+dt:Math.max(0,(e.behindTime||0)-dt*2);
+        if(e.behindTime>(e.bossPhase===2?.9:1.3)&&(e.mode==='chase'||e.timer<.6)){
+          e.behindTime=0;e.pattern=2;e.attackRadius=e.radius+78;e.mode='windup';e.windupDuration=e.timer=e.bossPhase===2?.45:.55;e.attackName='SVING · TRÆK DIG VÆK';e.followUp=false;e.spin=true;e.chargeX=dx/d;e.chargeY=dy/d;return true;
+        }
+      }
+      return false;
+    }
     laterBossAI(e, dt) {
       const r = this.run, dx = r.player.x-e.x, dy = r.player.y-e.y, d = Math.max(1,Math.hypot(dx,dy));
       e.hit = Math.max(0,e.hit-dt); e.cooldown = Math.max(0,e.cooldown-dt);
+      if (this.bossCommon(e,dt)) return;
       if (e.hp <= e.maxHP*.5 && e.bossPhase === 1) { e.bossPhase=2; e.mode='enrage'; e.timer=1.1; e.attackName='FASE 2 · RASERI'; this.emit('boss_enrage'); return; }
       if (e.mode === 'enrage' || e.mode === 'recover') { e.timer-=dt; if(e.timer<=0){e.mode='chase';e.cooldown=.35;} return; }
       if (e.mode === 'windup') {
@@ -668,7 +727,7 @@
         }
         if(e.timer<=0){
           if(e.bossPhase===2&&e.kind==='tyrannosaurus'&&e.pattern===1&&!e.secondBite){e.secondBite=true;e.mode='windup';e.timer=e.windupDuration=.8;e.attackName='DOBBELTBID 2/2';e.facingX=e.chargeX=dx/d;e.facingY=e.chargeY=dy/d;}
-          else{e.mode='recover';e.timer=e.pattern===2?1.8:1.3;}
+          else{e.mode='recover';e.timer=e.spin?.7:e.pattern===2?1.8:1.3;e.spin=false;}
         }return;
       }
       e.facingX=dx/d;e.facingY=dy/d;
@@ -684,6 +743,7 @@
     forestBossAI(e, dt) {
       const r = this.run, dx = r.player.x - e.x, dy = r.player.y - e.y, d = Math.max(1, Math.hypot(dx, dy));
       e.cooldown = Math.max(0, e.cooldown - dt); e.hit = Math.max(0, e.hit - dt);
+      if (this.bossCommon(e,dt)) return;
       if (e.hp <= e.maxHP * .5 && e.bossPhase === 1) {
         e.bossPhase = 2; e.mode = 'enrage'; e.timer = 1.1; e.followUp = false; e.attackCycle = 0; e.attackName = 'FASE 2 · RASERI';
         this.burst(e.x, e.y, 'dust', 18, e.id); this.emit('boss_enrage'); return;
@@ -711,7 +771,7 @@
             e.followUp = false; e.mode = 'windup'; e.windupDuration = .65; e.timer = .65; e.attackName = 'STORMLØB 2/2';
             const x = r.player.x - e.x, y = r.player.y - e.y, gap = Math.max(1, Math.hypot(x, y));
             e.chargeX = e.facingX = x / gap; e.chargeY = e.facingY = y / gap;
-          } else { e.mode = 'recover'; e.timer = 1.65; }
+          } else { e.mode = 'recover'; e.timer = e.bossPhase === 2 ? 1.2 : 1.5; }
         }
         return;
       }
@@ -723,7 +783,7 @@
           if (d < e.attackRadius && (e.mode === 'slam' || dot > .35)) this.damage(e.damage + (e.mode === 'slam' ? 4 : 0),e);
           if (e.mode === 'slam') r.shake = Math.max(r.shake, .12);
         }
-        if (e.timer <= 0) { e.mode = 'recover'; e.timer = e.pattern === 2 ? 1.8 : 1.15; } return;
+        if (e.timer <= 0) { e.mode = 'recover'; e.timer = e.spin ? .7 : e.pattern === 2 ? 1.8 : 1.15; e.spin = false; } return;
       }
       if (e.mode === 'recover') { e.timer -= dt; if (e.timer <= 0) { e.mode = 'chase'; e.cooldown = .35; } return; }
       e.facingX = dx / d; e.facingY = dy / d;
@@ -811,6 +871,7 @@
       if(!e.boss&&e.scaredUntil>r.seconds){e.alert=false;e.mode=e.activity='flee';e.facingX=-dx/d;e.facingY=-dy/d;this.travel(e,-dx/d*e.speed*dt,-dy/d*e.speed*dt);return;}
       if (e.guard && !e.alert && e.mode !== 'return') return;
       if (e.stagger > 0) { e.stagger = Math.max(0, e.stagger - dt); return; }
+      if (e.flinch > 0) { e.flinch = Math.max(0, e.flinch - dt); if (!['windup', 'charge', 'slam', 'bite', 'recover'].includes(e.mode)) return; }
       if (!e.boss && !['windup', 'charge', 'slam', 'bite', 'recover'].includes(e.mode)) {
         if (e.mode === 'return' && !e.alert) {
           if (r.seconds >= e.disengagedUntil && d < 120) { e.alert = true; e.mode = 'chase'; }
@@ -907,14 +968,14 @@
       const r = this.run, m = r.mutations;
       if (r.hitStop > 0) { const stopped = Math.min(dt, r.hitStop); r.hitStop = Math.max(0, r.hitStop - stopped); dt -= stopped; if (dt <= .000001) return; }
       r.seconds += dt;
-      for (const timer of ['attackCooldown', 'bite', 'pounce', 'pounceCooldown', 'invulnerable', 'shake', 'slow', 'hurt','staminaDelay','frenzy','tailEmpowered','shieldTime']) r[timer] = Math.max(0, r[timer] - dt);
+      for (const timer of ['attackCooldown', 'bite', 'pounce', 'pounceCooldown', 'invulnerable', 'shake', 'slow', 'hurt','staminaDelay','frenzy','tailEmpowered','shieldTime','winded']) r[timer] = Math.max(0, (r[timer]||0) - dt);
       if(r.shieldTime===0)r.shield=0;
       const inCombat=r.attack||r.enemies.some(e=>e.alert&&e.damage&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<400);
-      if(r.staminaDelay===0&&r.pounce===0)r.stamina=Math.min(100,r.stamina+dt*(inCombat?8:12)*(1+.03*r.upgrades.regen+.2*m.feathers)*(1-.15*m.metabolicRush));
+      if(r.staminaDelay===0&&r.pounce===0)r.stamina=Math.min(100,r.stamina+dt*(inCombat?STAMINA.combatRegen:STAMINA.regen)*(1+.03*r.upgrades.regen+.2*m.feathers)*(1-.15*m.metabolicRush));
       let dx = clamp(finite(input.x), -1, 1), dy = clamp(finite(input.y), -1, 1), n = Math.hypot(dx, dy);
       const config = PLAYER_SPECIES[r.species], cost = abilityCost(r);
       if (input.pounce && (n || ['ankylosaurus','tyrannosaurus'].includes(r.species)) && r.pounceCooldown === 0 && r.stamina >= cost) {
-        r.revealedUntil=r.seconds+2;r.hidden=false;r.concealTime=0; r.stamina -= cost;r.staminaDelay=1.25; r.pounce = config.abilityTime; r.stats.abilities++;r.stats.staminaSpent+=cost;r.abilityCooldownDuration=config.abilityCooldown*(1-.12*m.scurry);r.pounceCooldown=r.abilityCooldownDuration; r.abilityHits = []; r.abilityRefund=0;if(r.species==='velociraptor'&&m.velociPrime)r.invulnerable=2;if(m.compyFrenzy)r.frenzy=3;if(m.raptorAmbush)r.invulnerable=Math.max(r.invulnerable,config.abilityTime+1);if(m.galliWind)r.invulnerable=Math.max(r.invulnerable,1);if(m.triceBulwark){r.shield=20;r.shieldTime=4;}if(m.ankyBastion){r.shield=20;r.shieldTime=4;r.tailEmpowered=4;} r.abilityX = n ? dx/n : 0; r.abilityY = n ? dy/n : 1;
+        r.revealedUntil=r.seconds+2;r.hidden=false;r.concealTime=0; r.stamina -= cost;r.staminaDelay=STAMINA.delay;if(r.stamina<STAMINA.windedBelow){r.winded=STAMINA.windedTime;this.emit('winded');} r.pounce = config.abilityTime; r.stats.abilities++;r.stats.staminaSpent+=cost;r.abilityCooldownDuration=config.abilityCooldown*(1-.12*m.scurry);r.pounceCooldown=r.abilityCooldownDuration; r.abilityHits = []; r.abilityRefund=0;if(r.species==='velociraptor'&&m.velociPrime)r.invulnerable=2;if(m.compyFrenzy)r.frenzy=3;if(m.raptorAmbush)r.invulnerable=Math.max(r.invulnerable,config.abilityTime+1);if(m.galliWind)r.invulnerable=Math.max(r.invulnerable,1);if(m.triceBulwark){r.shield=20;r.shieldTime=4;}if(m.ankyBastion){r.shield=20;r.shieldTime=4;r.tailEmpowered=4;} r.abilityX = n ? dx/n : 0; r.abilityY = n ? dy/n : 1;
         if(r.species==='tyrannosaurus'){for(const e of r.enemies)if(!e.boss&&!e.guard&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<250){e.scaredUntil=r.seconds+2+.5*m.rexVoice;e.alert=false;e.mode='flee';}this.emit('roar');}
         if(r.species==='baryonyx'){const school=r.map.fishSchools.find(f=>f.stock>0&&isWater(r.stage,r.map,f,14)&&Math.hypot(f.x-r.player.x,f.y-r.player.y)<110);if(school)this.catchFish(school,m.baryTide?3:1);}
         if (r.species === 'ankylosaurus' && m.guard) r.health = Math.min(r.maxHealth, r.health + 5 * m.guard);
@@ -929,7 +990,7 @@
         const facing = Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? 'E' : 'W') : (dy > 0 ? 'S' : 'N');
         // Keep gait phase across turns rather than restarting with every key change.
         r.player.facing = facing;
-        const speed = config.speed * (input.sneak ? .45 : 1) * (r.slow > 0 ? .65 : 1) * (1 + .08 * m.legs+.15*m.lightFrame)*(1-.08*m.heavyMuscle) * (r.pounce > 0 ? ['ankylosaurus','tyrannosaurus'].includes(r.species) ? .3 : r.species==='gallimimus'?1.6*(1+.08*m.stride):2.5 : r.attack ? .7 : 1);
+        const speed = config.speed * (input.sneak ? .45 : 1) * (r.slow > 0 ? .65 : 1) * (r.winded > 0 ? STAMINA.windedSpeed : 1) * (1 + .08 * m.legs+.15*m.lightFrame)*(1-.08*m.heavyMuscle) * (r.pounce > 0 ? ['ankylosaurus','tyrannosaurus'].includes(r.species) ? .3 : r.species==='gallimimus'?1.6*(1+.08*m.stride):2.5 : r.attack ? .7 : 1);
         this.travel(r.player, dx / n * speed * dt, dy / n * speed * dt);
         r.stats.distance+=Math.hypot(r.player.x-beforeX,r.player.y-beforeY);r.player.moving = Math.hypot(r.player.x - beforeX, r.player.y - beforeY) > .001;
       }
@@ -1018,5 +1079,5 @@
       for(const [e,hp] of enemies)r.stats.damageDealt+=Math.max(0,hp-Math.max(0,e.hp));
     }
   };
-  return { playerFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { RIVALS, STAMINA, CRIT, critChance, playerFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

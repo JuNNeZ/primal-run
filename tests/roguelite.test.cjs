@@ -49,9 +49,9 @@ test('optional elites and rare prey exist before exploration and grant better lo
 });
 test('later bosses have locked warnings, phase two, and flank recovery; T. rex roar drains stamina',()=>{
  for(let stage=1;stage<4;stage++){
-  const g=make('utahraptor'),r=g.run;r.stage=stage;r.map.rocks=[];const e=g.spawn(C.STAGES[stage].boss,{x:480,y:200},true);e.cooldown=0;g.enemyStep(e,.01);assert.equal(e.mode,'windup');const aim=e.chargeX;r.player.x+=80;g.enemyStep(e,.01);assert.equal(e.chargeX,aim);
+  const g=make('utahraptor'),r=g.run;r.stage=stage;r.map.rocks=[];const e=g.spawn(C.STAGES[stage].boss,{x:480,y:200},true);e.cooldown=0;g.enemyStep(e,.01);assert.equal(e.mode,'windup');e.timer=e.windupDuration*.3;const aim=e.chargeX;r.player.x+=80;g.enemyStep(e,.01);assert.equal(e.chargeX,aim);
   e.hp=e.maxHP*.5;g.enemyStep(e,.01);assert.equal(e.mode,'enrage');assert.equal(e.bossPhase,2);assert.equal(g.drainEvents().filter(x=>x.type==='boss_enrage').length,1);
-  e.mode='recover';e.timer=2;e.facingX=0;e.facingY=-1;r.player.x=e.x;r.player.y=e.y+50;r.player.facing='N';const hp=e.hp;g.resolveBite('N');assert.equal(e.hp,hp-15);
+  e.mode='recover';e.timer=2;e.facingX=0;e.facingY=-1;r.player.x=e.x;r.player.y=e.y+50;r.player.facing='N';const hp=e.hp;g.resolveBite('N');assert.equal(e.hp,hp-12.5);
  }
  const g=make(),r=g.run;r.stage=3;const e=g.spawn('tyrannosaurus',{x:480,y:260},true);e.cooldown=0;g.enemyStep(e,.01);assert.equal(e.pattern,3);e.timer=.001;g.enemyStep(e,.01);g.enemyStep(e,.14);assert.equal(r.stamina,60);assert.equal(r.health,80);
 });

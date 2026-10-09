@@ -44,7 +44,7 @@ test('successful bite gives one impact, damage number and a short knockback stag
   const g = make(), r = g.run;
   const e = g.spawn('carnotaurus', { x: 520, y: 340 });
   g.drainEvents(); g.resolveBite('E');
-  assert.equal(e.hp, 38); assert.equal(e.x, 538); assert.equal(e.hit, .15); assert.equal(e.stagger, .12);
+  assert.equal(e.hp, 38); assert.equal(e.x, 530); assert.equal(e.hit, .15); assert.equal(e.stagger, 0, 'only critical hits stagger');
   assert.equal(r.effects[0].text, '10'); assert.equal(g.drainEvents().filter(e => e.type === 'bite_hit').length, 1);
   const x = e.x; g.enemyStep(e, .05); assert.equal(e.x, x, 'target cannot instantly walk back through knockback');
   g.resolveBite('W'); assert.equal(g.drainEvents().filter(e => e.type === 'bite_hit').length, 0, 'miss has no impact sound');
@@ -161,8 +161,9 @@ test('shop validates balances/ranks and applies permanent upgrades only to a new
 });
 test('boss windup freezes its aim, deals damage during charge, and pounce evades it', () => {
   const g = make(), r = g.run, boss = g.spawn('carnotaurus', { x: 480, y: 200 }, true);
-  boss.cooldown = 0; tick(g); assert.equal(boss.mode, 'windup'); const aim = boss.chargeX;
-  r.player.x = 540; tick(g); assert.equal(boss.chargeX, aim);
+  boss.cooldown = 0; tick(g); assert.equal(boss.mode, 'windup');
+  boss.timer = boss.windupDuration * .3; const aim = boss.chargeX;
+  r.player.x = 540; tick(g); assert.equal(boss.chargeX, aim, 'aim locks for the last 40 % of the windup');
   boss.mode = 'charge'; boss.timer = .5; boss.x = 540; boss.y = 340; tick(g); assert.ok(r.health < 100);
   r.invulnerable = 0; r.pounce = .2; const hp = r.health; boss.x = 540; boss.y = 340; tick(g); assert.equal(r.health, hp);
 });
@@ -230,7 +231,7 @@ test('weighted mutation rarity retains unique choices and ranks, and Jonas unloc
   assert.equal(g.run.jonas, true); assert.ok(g.drainEvents().some(e => e.type === 'jonas'));
   assert.equal(g.run.maxHealth, 100, 'secret does not change balance');
   g.addXP(6); assert.equal(new Set(g.run.choices).size, 3);
-  assert.equal(C.MUTATIONS.find(m => m.id === g.run.choices[0]).rarity, 'uncommon');
+  assert.ok(g.run.choices.every(id => C.MUTATIONS.some(m => m.id === id && !m.species || m.id === id && m.species === g.run.species)));
   const id = g.run.choices[0]; assert.equal(g.run.mutations[id], 0); g.choose(id); assert.equal(g.run.mutations[id], 1);
 });
 
@@ -282,12 +283,15 @@ test('first boss alternates a locked charge and a directional bite with useful r
   const g = make(), r = g.run, boss = g.spawn('carnotaurus', { x: 480, y: 220 }, true); boss.cooldown = 0;
   g.enemyStep(boss, .01); assert.equal(boss.mode, 'windup'); assert.equal(boss.pattern, 0); assert.equal(boss.timer, .95);
   const aim = [boss.chargeX, boss.chargeY]; r.player.x = 700;
-  for (let i = 0; i < 20; i++) g.enemyStep(boss, .05);
-  assert.deepEqual([boss.chargeX, boss.chargeY], aim); assert.equal(boss.mode, 'charge');
   for (let i = 0; i < 12; i++) g.enemyStep(boss, .05);
-  assert.equal(boss.mode, 'recover'); assert.ok(boss.timer >= 1.55); assert.equal(r.health, 100, 'sideways dodge avoids charge');
+  assert.ok(boss.chargeX > aim[0], 'early windup turns toward a side-stepping player');
+  const locked = [boss.chargeX, boss.chargeY]; r.player.x = 900;
+  for (let i = 0; i < 8; i++) g.enemyStep(boss, .05);
+  assert.deepEqual([boss.chargeX, boss.chargeY], locked, 'late windup is locked'); assert.equal(boss.mode, 'charge');
+  for (let i = 0; i < 12; i++) g.enemyStep(boss, .05);
+  assert.equal(boss.mode, 'recover'); assert.ok(boss.timer >= 1.45); assert.equal(r.health, 100, 'a late sideways dodge still avoids the charge');
   boss.x = 520; boss.y = 340; boss.facingX = 1; boss.facingY = 0;
-  r.player.x = 480; r.player.y = 340; const hp = boss.hp; g.resolveBite('E'); assert.equal(boss.hp, hp - 15); assert.ok(r.effects.at(-1).text.includes('ÅBEN FLANKE'));
+  r.player.x = 480; r.player.y = 340; const hp = boss.hp; g.resolveBite('E'); assert.equal(boss.hp, hp - 12.5); assert.ok(r.effects.at(-1).text.includes('ÅBEN FLANKE'));
   r.player.x = 560; r.hitStop = 0; const frontHP = boss.hp; g.resolveBite('W'); assert.equal(boss.hp, frontHP - 10, 'front is not the recovery weak point');
   boss.mode = 'chase'; boss.cooldown = 0; boss.x = 480; boss.y = 250; r.player.x = 480; r.player.y = 340;
   g.enemyStep(boss, .01); assert.equal(boss.pattern, 1); assert.equal(boss.attackRadius, 100); assert.equal(boss.windupDuration, .6);
@@ -306,7 +310,8 @@ test('half-health first boss signals phase two once and telegraphs each leg of i
   for (let i = 0; i < 12; i++) g.enemyStep(boss, .05);
   assert.equal(boss.mode, 'windup'); assert.equal(boss.attackName, 'STORMLØB 2/2'); assert.equal(boss.timer, .65); assert.equal(boss.followUp, false);
   const secondAim = [boss.chargeX, boss.chargeY]; assert.notDeepEqual(secondAim, firstAim);
-  r.player.x = 400; r.player.y = 600; g.enemyStep(boss, .05); assert.deepEqual([boss.chargeX, boss.chargeY], secondAim);
+  boss.timer = boss.windupDuration * .3; const lockedAim = [boss.chargeX, boss.chargeY];
+  r.player.x = 400; r.player.y = 600; g.enemyStep(boss, .05); assert.deepEqual([boss.chargeX, boss.chargeY], lockedAim);
   boss.timer = .001; g.enemyStep(boss, .01); for (let i = 0; i < 12; i++) g.enemyStep(boss, .05);
   assert.equal(boss.mode, 'recover'); assert.equal(g.drainEvents().filter(e => e.type === 'boss_enrage').length, 0);
 });
