@@ -8,7 +8,7 @@ const out = path.resolve(process.argv[2] || 'shots'); fs.mkdirSync(out, { recurs
 const log = [];
 (async () => {
   const browser = await chromium.launch(browserOptions());
-  const shoot = async (page, name) => { await page.waitForTimeout(120); await page.screenshot({ path: path.join(out, name + '.png') }); log.push('shot ' + name); };
+  const shoot = async (page, name) => { await page.waitForTimeout(120); await page.screenshot({ path: path.join(out, name + '.png'), timeout: 20000 }); log.push('shot ' + name); fs.writeFileSync(path.join(out, 'log.txt'), log.join('\n')); };
   for (const viewport of [{ width: 1280, height: 800, tag: 'desktop' }, { width: 390, height: 844, tag: 'mobile' }]) {
     const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height } });
     page.on('pageerror', e => log.push('[' + viewport.tag + '] pageerror ' + e));
@@ -20,7 +20,9 @@ const log = [];
     await page.click('[data-action="start"]'); await page.waitForTimeout(300);
     await shoot(page, viewport.tag + '-02-intro');
     if (viewport.tag === 'mobile') { await page.close(); continue; }
-    await page.evaluate(async () => { for (let stage = 0; stage < 4; stage++) await primalRun.preload({ species: 'velociraptor', stage, kinds: Object.keys(PrimalCore.SPECIES) }); });
+    log.push('preloading'); fs.writeFileSync(path.join(out, 'log.txt'), log.join('\n'));
+    await Promise.race([page.evaluate(async () => { for (let stage = 0; stage < 4; stage++) await primalRun.preload({ species: 'velociraptor', stage }); }), page.waitForTimeout(90000)]);
+    log.push('preloaded');
     const scene = async (name, setup) => {
       const info = await page.evaluate(setup);
       await page.evaluate(() => { const g = primalRun.game; if (g.phase === 'playing') g.pause(); primalRun.update(performance.now()); document.querySelector('.screen').hidden = primalRun.game.phase === 'paused'; });

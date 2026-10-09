@@ -83,3 +83,21 @@ test('entering a new zone is announced and rewards exploration once', () => {
   g.step(.05, {}); const ev = g.drainEvents().filter(e => e.type === 'zone'); assert.equal(ev.length, 1); assert.equal(ev[0].name, z.name);
   assert.equal(r.dna, dna + 1); g.step(.5, {}); assert.equal(g.drainEvents().filter(e => e.type === 'zone').length, 0);
 });
+
+test('achievements unlock once, pay DNA, unlock species and skins, and survive saving', () => {
+  const g = new C.Game({ random: () => .5 }); g.start({ seed: 3 }); const r = g.run; r.enemies = []; g.drainEvents();
+  const e = g.spawn('compy', { x: 520, y: 340 }); const dna = g.save.dna; g.kill(e); g.checkAchievements();
+  assert.ok(g.save.achievements.firstBlood); assert.equal(g.save.dna, dna + 5 + (r.dna - 5 - (r.dna - 5)));
+  assert.equal(g.drainEvents().filter(x => x.type === 'achievement').length, 1); g.checkAchievements(); assert.equal(g.drainEvents().filter(x => x.type === 'achievement').length, 0);
+  r.seconds = 601; g.checkAchievements(); assert.ok(g.save.unlockedSpecies.includes('compy'), 'surviving 10 minutes unlocks Compy');
+  const boss = g.spawn('baryonyx', { x: 600, y: 340 }, true); g.kill(boss); assert.ok(g.save.unlockedSpecies.includes('baryonyx')); assert.ok(g.save.skins.includes('male'));
+  const saved = C.sanitizeSave(JSON.parse(JSON.stringify(g.save))); assert.ok(saved.achievements.firstBoss); assert.ok(saved.unlockedSpecies.includes('baryonyx')); assert.ok(g.setSkin('male')); assert.equal(g.setSkin('albino'), false);
+});
+
+test('fresh saves only have Velociraptor; pre-overhaul saves keep Compy; lifetime stats bank once per run', () => {
+  assert.deepEqual(C.sanitizeSave({}).unlockedSpecies.slice().sort(), ['velociraptor'].sort());
+  const fresh = C.sanitizeSave({ version: 2 }); assert.deepEqual(fresh.unlockedSpecies, ['velociraptor']);
+  assert.ok(C.sanitizeSave({ version: 1, unlockedSpecies: ['utahraptor'] }).unlockedSpecies.includes('compy'));
+  const g = new C.Game({ random: () => .5 }); g.start({ seed: 4 }); g.run.stats.kills = 7; g.finish(false); g.finish(false); g.bankLifetime(false);
+  assert.equal(g.save.lifetime.runs, 1); assert.equal(g.save.lifetime.kills, 7);
+});

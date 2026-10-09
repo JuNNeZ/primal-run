@@ -360,10 +360,46 @@
     save.settings.shake = !(x.settings && x.settings.shake === false);
     if (Array.isArray(x.scores)) save.scores = x.scores.filter(s => s && Number.isFinite(s.score) && s.score >= 0).map(s => ({ name: cleanName(s.name), score: Math.floor(clamp(s.score, 0, 100000000)), stage: Math.floor(clamp(finite(s.stage, 1), 1, LEVELS.length)), bosses: Math.floor(clamp(finite(s.bosses), 0, LEVELS.length)), seconds: Math.floor(clamp(finite(s.seconds), 0, 100000)), victory: s.victory === true })).sort((a, b) => b.score - a.score).slice(0, 10);
     save.fieldGuide={};for(const [id,entry] of Object.entries(x.fieldGuide||{}))if(Object.hasOwn(SPECIES,id)&&entry&&typeof entry==='object')save.fieldGuide[id]={biomes:[...new Set((Array.isArray(entry.biomes)?entry.biomes:[]).filter(n=>Number.isInteger(n)&&n>=0&&n<4))],attacks:[...new Set((Array.isArray(entry.attacks)?entry.attacks:[]).filter(n=>['bite','charge','slam','roar'].includes(n)))]};
-    save.unlockedSpecies = ['velociraptor','compy', ...Object.keys(PLAYER_SPECIES).filter(id => id !== 'compy' && id !== 'velociraptor' && Array.isArray(x.unlockedSpecies) && x.unlockedSpecies.includes(id))];
+    // Saves from before the progression overhaul (version 1) always had Compy unlocked.
+    const legacy=x.version===1||!x.version&&Object.keys(x).length>0;
+    save.version=2;
+    save.unlockedSpecies = ['velociraptor', ...(legacy?['compy']:[]), ...Object.keys(PLAYER_SPECIES).filter(id => id !== 'velociraptor' && !(legacy&&id==='compy') && Array.isArray(x.unlockedSpecies) && x.unlockedSpecies.includes(id))];
+    save.achievements={};for(const a of ACHIEVEMENTS)if(x.achievements&&Number.isFinite(x.achievements[a.id]))save.achievements[a.id]=x.achievements[a.id];
+    save.lifetime={};for(const key of LIFETIME_KEYS)save.lifetime[key]=Math.max(0,finite(x.lifetime&&x.lifetime[key]));
+    save.dietRecords={};for(const key of ['carnivore','herbivore','other'])save.dietRecords[key]=Math.floor(clamp(finite(x.dietRecords&&x.dietRecords[key]),0,LEVELS.length));
+    save.skins=['classic',...Object.keys(SKINS).filter(id=>id!=='classic'&&Array.isArray(x.skins)&&x.skins.includes(id))];
+    save.skin=save.skins.includes(x.skin)?x.skin:'classic';
     save.selectedSpecies = save.unlockedSpecies.includes(x.selectedSpecies) ? x.selectedSpecies : 'velociraptor';
     return save;
   }
+  // ---- Progression (overhaul phase 4): a longer unlock ladder, achievements and cosmetic skins.
+  const SPECIES_UNLOCKS={
+    velociraptor:{free:true},
+    utahraptor:{dna:60}, pachycephalosaurus:{dna:80}, carnotaurus:{dna:140}, ankylosaurus:{dna:170},
+    compy:{achievement:'survivor'}, gallimimus:{achievement:'marathon'}, baryonyx:{achievement:'fisherKing'},
+    triceratops:{achievement:'gentleGiant'}, tyrannosaurus:{achievement:'apex'}
+  };
+  for(const [id,u] of Object.entries(SPECIES_UNLOCKS))PLAYER_SPECIES[id].cost=u.dna||0;
+  const SKINS={classic:{name:'Naturlige farver'},male:{name:'Prydfarver',achievement:'firstBoss'},elite:{name:'Rivalens farver',achievement:'rivalSlayer'},albino:{name:'Albino',achievement:'threeDiets'}};
+  const ACHIEVEMENTS=[
+    {id:'firstBlood',name:'Første bid',text:'Nedlæg dit første dyr.',dna:5,check:c=>c.life.kills>=1},
+    {id:'firstBoss',name:'Bossjæger',text:'Besejr din første boss.',dna:10,skin:'male',check:c=>c.life.bosses>=1},
+    {id:'albinoHunter',name:'Hvid skygge',text:'Nedlæg en albino.',dna:10,check:c=>c.life.albinos>=1},
+    {id:'critMaster',name:'Præcision',text:'Lav 10 kritiske træf i ét run.',dna:10,check:c=>c.run&&(c.run.stats.crits||0)>=10},
+    {id:'grazer',name:'Grønne tænder',text:'Spis 50 planteportioner i alt.',dna:10,check:c=>c.life.plantsEaten>=50},
+    {id:'explorer',name:'Opdagelsesrejsende',text:'Find 20 nye områder i alt.',dna:12,check:c=>c.life.zones>=20},
+    {id:'hundredKills',name:'Rovdyrets vej',text:'Nedlæg 100 dyr i alt.',dna:15,check:c=>c.life.kills>=100},
+    {id:'closeCall',name:'På et hængende hår',text:'Besejr en boss med under 10 % liv tilbage.',dna:15,check:c=>c.flags.closeCall},
+    {id:'untouchable',name:'Urørlig',text:'Besejr en boss uden at blive ramt af den.',dna:25,check:c=>c.flags.untouchable},
+    {id:'rivalSlayer',name:'Rivalernes skræk',text:'Nedlæg 5 rivaler i alt.',dna:15,skin:'elite',check:c=>c.life.rivals>=5},
+    {id:'survivor',name:'Overlever',text:'Overlev 10 minutter i ét run.',species:'compy',check:c=>c.run&&c.run.seconds>=600},
+    {id:'marathon',name:'Maratonløber',text:'Løb 20 km i alt.',species:'gallimimus',check:c=>c.life.distance>=20000},
+    {id:'fisherKing',name:'Fiskebankens fald',text:'Besejr Benny – Fiskebankens Hersker.',species:'baryonyx',check:c=>c.flags.bossKind==='baryonyx'},
+    {id:'gentleGiant',name:'Blid men farlig',text:'Nedlæg 3 elite- eller rivaldyr med en planteæder.',species:'triceratops',check:c=>c.life.herbivoreElites>=3},
+    {id:'apex',name:'Urkongens fald',text:'Besejr Ragnar – Dalens Konge på sidste bane.',species:'tyrannosaurus',check:c=>c.flags.bossKind==='tyrannosaurus'&&c.flags.finalBoss},
+    {id:'threeDiets',name:'Tre kostformer',text:'Nå bane 3 med en kødæder, en planteæder og en fisker eller altæder.',skin:'albino',check:c=>['carnivore','herbivore','other'].every(d=>c.save.dietRecords[d]>=3)}
+  ];
+  const LIFETIME_KEYS=['runs','kills','bosses','albinos','rivals','plantsEaten','fishCaught','distance','zones','herbivoreElites','seconds','victories'];
   function upgradeCost(rank) { return Math.round(10 * Math.pow(rank + 1, 1.4)); }
   class Game {
     constructor({ storage = null, random = Math.random } = {}) {
@@ -397,8 +433,29 @@
     unlockSpecies(id) {
       if (!['menu', 'shop', 'result', 'species'].includes(this.phase)) return false;
       const species = PLAYER_SPECIES[id];
-      if (!Object.hasOwn(PLAYER_SPECIES, id) || this.save.unlockedSpecies.includes(id) || this.save.dna < species.cost) return false;
+      if (!Object.hasOwn(PLAYER_SPECIES, id) || this.save.unlockedSpecies.includes(id) || SPECIES_UNLOCKS[id].achievement || this.save.dna < species.cost) return false;
       this.save.dna -= species.cost; this.save.unlockedSpecies.push(id); this.persist(); this.emit('ui'); return true;
+    }
+    setSkin(id){if(!this.save.skins.includes(id))return false;this.save.skin=id;this.persist();return true;}
+    lifetimeTotals(){
+      const life={...this.save.lifetime},r=this.run;if(!r||r.lifetimeBanked)return life;
+      life.kills+=r.stats.kills;life.bosses+=r.bosses;life.albinos+=r.stats.albinos||0;life.rivals+=r.stats.rivals||0;life.plantsEaten+=r.stats.plantsEaten;life.fishCaught+=r.stats.fishCaught;life.distance+=r.stats.distance;life.zones+=r.stats.zones||0;life.herbivoreElites+=r.stats.herbivoreElites||0;life.seconds+=r.seconds;return life;
+    }
+    bankLifetime(victory){
+      const r=this.run;if(!r||r.lifetimeBanked)return;const life=this.lifetimeTotals();life.runs++;if(victory)life.victories++;this.save.lifetime=life;r.lifetimeBanked=true;
+      const diet=PLAYER_SPECIES[r.species].diet,key=diet==='carnivore'?'carnivore':diet==='herbivore'?'herbivore':'other';this.save.dietRecords[key]=Math.max(this.save.dietRecords[key],r.levelIndex+1);
+    }
+    checkAchievements(flags={}){
+      const r=this.run;if(r){const diet=PLAYER_SPECIES[r.species].diet,key=diet==='carnivore'?'carnivore':diet==='herbivore'?'herbivore':'other';if(this.save.dietRecords[key]<r.levelIndex+1)this.save.dietRecords[key]=r.levelIndex+1;}
+      const context={save:this.save,run:r,life:this.lifetimeTotals(),flags},earned=[];
+      for(const a of ACHIEVEMENTS){if(this.save.achievements[a.id]||!a.check(context))continue;
+        this.save.achievements[a.id]=Date.now();earned.push(a);
+        if(a.dna){this.save.dna+=a.dna;if(r){r.dna+=a.dna;r.stats.dna+=a.dna;}}
+        if(a.species&&!this.save.unlockedSpecies.includes(a.species))this.save.unlockedSpecies.push(a.species);
+        if(a.skin&&!this.save.skins.includes(a.skin))this.save.skins.push(a.skin);
+        this.emit('achievement',{id:a.id,name:a.name,dna:a.dna||0,species:a.species||null,skin:a.skin||null});
+      }
+      if(earned.length)this.persist();return earned;
     }
     selectSpecies(id) {
       if (!['menu', 'shop', 'result', 'species'].includes(this.phase) || !this.save.unlockedSpecies.includes(id)) return false;
@@ -590,7 +647,7 @@
     }
     damage(amount, source) {
       const r = this.run; if (r.invulnerable > 0 || (r.pounce > 0 && ['compy', 'utahraptor','velociraptor'].includes(r.species)) || this.phase !== 'playing') {if(this.phase==='playing'&&source)r.stats.avoidedHits++;return;}
-      r.eating=null;r.staminaDelay=Math.max(r.staminaDelay,1);r.revealedUntil=r.seconds+1;r.hidden=false;r.concealTime=0; const facing={N:[0,-1],S:[0,1],E:[1,0],W:[-1,0]}[r.player.facing];const sx=source?source.x-r.player.x:0,sy=source?source.y-r.player.y:0,sd=Math.hypot(sx,sy);const front=r.species==='triceratops'&&sd>0&&(sx*facing[0]+sy*facing[1])/sd>.35;amount*=(1+.12*r.mutations.glassCannon+.15*r.mutations.lightFrame)*(front?1-.25-.08*r.mutations.frill:1); amount*= (1 - .08 * r.mutations.armor) * (r.species === 'ankylosaurus' && r.pounce > 0 ? .25 : 1);const shielded=Math.min(r.shield,amount);r.shield-=shielded;amount-=shielded;r.stats.damageTaken+=Math.min(r.health,amount);r.lastHit=source&&Object.hasOwn(SPECIES,source.kind)?{kind:source.kind,direction:source.direction,mode:source.mode,boss:!!source.boss,sex:source.sex}:null;r.health = Math.max(0, r.health - amount); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
+      r.eating=null;r.staminaDelay=Math.max(r.staminaDelay,1);r.revealedUntil=r.seconds+1;r.hidden=false;r.concealTime=0; const facing={N:[0,-1],S:[0,1],E:[1,0],W:[-1,0]}[r.player.facing];const sx=source?source.x-r.player.x:0,sy=source?source.y-r.player.y:0,sd=Math.hypot(sx,sy);const front=r.species==='triceratops'&&sd>0&&(sx*facing[0]+sy*facing[1])/sd>.35;amount*=(1+.12*r.mutations.glassCannon+.15*r.mutations.lightFrame)*(front?1-.25-.08*r.mutations.frill:1); amount*= (1 - .08 * r.mutations.armor) * (r.species === 'ankylosaurus' && r.pounce > 0 ? .25 : 1);const shielded=Math.min(r.shield,amount);r.shield-=shielded;amount-=shielded;r.stats.damageTaken+=Math.min(r.health,amount);if(source&&source.boss)source.hitPlayer=true;r.lastHit=source&&Object.hasOwn(SPECIES,source.kind)?{kind:source.kind,direction:source.direction,mode:source.mode,boss:!!source.boss,sex:source.sex}:null;r.health = Math.max(0, r.health - amount); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
       if (r.species === 'ankylosaurus' && r.mutations.spikes) { for (const e of r.enemies) if (Math.hypot(e.x-r.player.x,e.y-r.player.y)<110) { e.hp -= 4*r.mutations.spikes*(e.npcGuardUntil>r.seconds?.25:1); this.provoke(e); } }
       if (r.health <= 0) this.finish(false);
     }
@@ -659,10 +716,14 @@
       if (e.boss) {
         r.bosses++; r.score += 1000 * (r.stage + 1); r.bossDefeated = true;
         this.addDNA(this.currentLevel().dna); this.emit('boss_dead');
+        this.checkAchievements({bossKind:e.kind,finalBoss:r.levelIndex===r.campaign.length-1,closeCall:r.health<r.maxHealth*.1,untouchable:!e.hitPlayer});
       } else {
         const base = SPECIES[e.kind]; r.score += base.meat * 15;
         const roll = this.random(), thresholds = base.meat === 1 ? [.76, .95, .995] : base.meat === 3 ? [.6, .88, .98] : [.55, .8, .95];
         const rarity = e.rare || e.elite ? Math.max(2, thresholds.filter(t => roll >= t).length) : thresholds.filter(t => roll >= t).length;
+        if (e.rare) r.stats.albinos=(r.stats.albinos||0)+1;
+        if (e.miniboss) r.stats.rivals=(r.stats.rivals||0)+1;
+        if ((e.elite||e.miniboss) && PLAYER_SPECIES[r.species].diet==='herbivore') r.stats.herbivoreElites=(r.stats.herbivoreElites||0)+1;
         if (e.elite) { r.eliteKills++; this.addDNA(base.dna + r.stage + 2); r.rareRewards++; r.rewardSource='elite'; }
         if (e.rare) {this.addDNA(base.dna+3+r.stage);r.rareRewards++;r.rewardSource='albino'; const site = r.map.sites.find(s => s.animalId === e.id); if (site) site.claimed = true; }
         r.pickups.push({ id: ++this.nextId, kind: 'meat', corpseId:e.id, x: e.x, y: e.y, rarity, value: Math.ceil(base.meat * MEAT_RARITIES[rarity].multiplier) });
@@ -1187,6 +1248,7 @@
       for(let x=Math.floor(r.view.x/192);x<=Math.floor((r.view.x+r.view.width)/192);x++)for(let y=Math.floor(r.view.y/192);y<=Math.floor((r.view.y+r.view.height)/192);y++)r.explored[x+','+y]=true;
       for(const event of r.map.events)if(!event.claimed&&Math.hypot(event.x-r.player.x,event.y-r.player.y)<110){event.claimed=true;r.exploration++;if(event.type==='spring'){r.health=Math.min(r.maxHealth,r.health+20);this.emit('discovery',{text:'KILDE · +20 liv'});}else if(event.type==='cache'){const value=6+r.stage*2;if(['herbivore','omnivore'].includes(PLAYER_SPECIES[r.species].diet))r.map.forage.push({id:'plant:cache:'+event.x+':'+event.y,kind:'plant',rarity:3,value,x:event.x,y:event.y,depleted:false});else r.pickups.push({id:++this.nextId,kind:'meat',rarity:3,value,x:event.x,y:event.y});this.emit('discovery',{text:'GEMT FØDE · '+value+' episk føde'});}else{this.addDNA(2+r.stage);this.emit('discovery',{text:'SJÆLDENT FOSSIL · DNA fundet'});}}
 
+      r.achievementCheck=(r.achievementCheck||0)-dt;if(r.achievementCheck<=0){r.achievementCheck=1;this.checkAchievements();}
       r.zoneCheck=(r.zoneCheck||0)-dt;
       if(r.zoneCheck<=0&&r.map.zones){r.zoneCheck=.4;const z=zoneAt(r.map,r.player);r.zonesSeen=r.zonesSeen||{};if(z&&!r.zonesSeen[z.index]){r.zonesSeen[z.index]=true;r.stats.zones=(r.stats.zones||0)+1;if(!z.start){this.addDNA(1,true);r.exploration++;}this.emit('zone',{name:z.name,first:!z.start});}r.zone=z?z.index:null;}
       for (const p of r.particles) { p.life -= dt; p.x += p.vx * dt; p.y += p.vy * dt; p.vy += 50 * dt; }
@@ -1223,6 +1285,7 @@
       const r = this.run; if (!r || r.result) return;
       r.result = { name: this.save.name, score: r.score + (victory ? 3000 : 0), stage: r.levelIndex + 1, bosses: r.bosses, seconds: Math.floor(r.seconds), victory: !!victory };
       this.save.scores = [...this.save.scores, r.result].sort((a, b) => b.score - a.score).slice(0, 10);
+      this.checkAchievements();this.bankLifetime(victory);
       r.attack = null; r.bite = 0; r.deathTime = victory ? -1 : 0; this.phase = 'result'; this.persist(); this.emit(victory ? 'victory' : 'death');
     }
   }
@@ -1236,5 +1299,5 @@
       for(const [e,hp] of enemies)r.stats.damageDealt+=Math.max(0,hp-Math.max(0,e.hp));
     }
   };
-  return { ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, playerFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, playerFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

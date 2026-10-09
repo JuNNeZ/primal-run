@@ -4,8 +4,8 @@ function make(species='compy'){const g=new C.Game({random:()=>.5});g.save.unlock
 test('fresh saves start as Velociraptor; legacy DNA and upgrades survive unlock migration',()=>{
  const values=new Map([[C.SAVE_KEY,JSON.stringify({dna:90,name:'Jonas',upgrades:{health:2},settings:{music:.2}})]]), storage={getItem:k=>values.get(k),setItem:(k,v)=>values.set(k,v)};
  const g=new C.Game({storage});assert.equal(g.save.selectedSpecies,'velociraptor');g.start({seed:7});assert.ok(Math.abs(g.run.maxHealth-93.6)<1e-8);assert.equal(g.run.player.radius,12);assert.equal(g.unlockSpecies('utahraptor'),false);
- g.phase='species';assert.equal(g.unlockSpecies('utahraptor'),true);assert.equal(g.save.dna,65);assert.equal(g.unlockSpecies('utahraptor'),false);assert.equal(g.unlockSpecies('__proto__'),false);g.selectSpecies('utahraptor');
- const reloaded=new C.Game({storage});assert.equal(reloaded.save.selectedSpecies,'utahraptor');reloaded.start();assert.equal(reloaded.run.maxHealth,104);assert.equal(reloaded.save.dna,65);
+ g.phase='species';assert.equal(g.unlockSpecies('utahraptor'),true);assert.equal(g.save.dna,30);assert.equal(g.unlockSpecies('utahraptor'),false);assert.equal(g.unlockSpecies('__proto__'),false);g.selectSpecies('utahraptor');
+ const reloaded=new C.Game({storage});assert.equal(reloaded.save.selectedSpecies,'utahraptor');reloaded.start();assert.equal(reloaded.run.maxHealth,104);assert.equal(reloaded.save.dna,30);
  assert.equal(C.sanitizeSave({selectedSpecies:'unknown_dinosaur',unlockedSpecies:['unknown_dinosaur']}).selectedSpecies,'velociraptor');
 });
 test('random wilderness is repeatable by seed, varies between seeds and keeps bounded safe habitats',()=>{

@@ -26,20 +26,23 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - name: Unit and browser tests (captured)
+        timeout-minutes: 25
         run: |
           mkdir -p review
           node --test tests/*.test.cjs > review/unit.txt 2>&1 || echo "UNIT FAILED" >> review/summary.txt
           for f in tests/*-browser.cjs; do
             name=$(basename "$f" .cjs)
-            if node "$f" > "review/$name.txt" 2>&1; then echo "ok $name" >> review/summary.txt; else echo "FAIL $name" >> review/summary.txt; fi
+            if timeout 240 node "$f" > "review/$name.txt" 2>&1; then echo "ok $name" >> review/summary.txt; else echo "FAIL $name" >> review/summary.txt; fi
           done
           for v in tools/validate_game_sprites.py tools/validate_enemy_animations.py; do
             python "$v" > "review/$(basename $v .py).txt" 2>&1 && echo "ok $v" >> review/summary.txt || echo "FAIL $v" >> review/summary.txt
           done
           grep -E "^# (pass|fail)" review/unit.txt >> review/summary.txt || true
       - name: Screenshots
-        run: node tools/screenshots.cjs review/shots || echo "SCREENSHOTS FAILED" >> review/summary.txt
+        timeout-minutes: 6
+        run: timeout 300 node tools/screenshots.cjs review/shots || echo "SCREENSHOTS FAILED" >> review/summary.txt
       - name: Publish results branch
+        if: always()
         run: |
           branch="ci-results/${GITHUB_REF_NAME}"
           cp -r review /tmp/review

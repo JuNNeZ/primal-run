@@ -131,7 +131,7 @@ test('mutation menu freezes enemies, attacks, pickups and damage; choosing grant
   g.damage(999); assert.equal(g.phase, 'result', 'protection ends after one second');
 });
 test('DNA rolls use species chances and pickups are banked once, surviving reload/death', () => {
-  const s = storage(), g = make(() => .01, s), r = g.run;
+  const s = storage(), g = make(() => .01, s), r = g.run; g.checkAchievements = () => []; // DNA drop economy only
   g.spawn('compy', { x: 480, y: 340 }).hp = 0; tick(g); tick(g);
   assert.equal(r.dna, 1); assert.equal(g.save.dna, 1); tick(g); assert.equal(g.save.dna, 1);
   g.damage(1000); assert.equal(g.phase, 'result');
@@ -140,7 +140,7 @@ test('DNA rolls use species chances and pickups are banked once, surviving reloa
   assert.equal(noDrop.run.pickups.some(p => p.kind === 'dna'), false, '5% boundary is exclusive');
 });
 test('four guaranteed boss awards, transitions preserve mutations, and final boss wins once', () => {
-  const g = make(() => .99), r = g.run; r.mutations.teeth = 2;
+  const g = make(() => .99), r = g.run; r.mutations.teeth = 2; g.checkAchievements = () => []; // boss DNA only
   for (let stage = 0; stage < 4; stage++) {
     r.enemies = []; r.pickups = []; r.meat = C.STAGES[stage].target; tick(g);
     const boss = r.enemies.find(e => e.boss); assert.equal(boss.kind, C.STAGES[stage].boss);
