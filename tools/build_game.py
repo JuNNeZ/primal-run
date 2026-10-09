@@ -80,7 +80,7 @@ def build():
     assets = {entry['file']: {'origin': entry['origin'], 'size': entry['size']} for entry in manifest}
     asset_code = 'globalThis.PrimalAssets = ' + json.dumps(assets, ensure_ascii=False, separators=(',', ':')) + ';\n'
     (GAME / 'src/assets.js').write_text(asset_code, encoding='utf-8')
-    sources = ['src/core.js', 'src/assets.js', 'src/audio.js', 'src/app.js']
+    sources = ['src/core.js', 'src/i18n.js', 'src/lang.js', 'src/assets.js', 'src/audio.js', 'src/app.js']
     source = '\n'.join((GAME / filename).read_text(encoding='utf-8') for filename in sources)
     css = (GAME / 'style.css').read_text(encoding='utf-8')
     boot = '''// GENERATED from src/*.js and style.css by tools/build_game.py.

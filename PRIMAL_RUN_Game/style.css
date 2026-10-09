@@ -61,3 +61,12 @@ html,body{height:100%;margin:0;overflow:hidden}.primal-shell{width:100%;max-widt
 .skip-intro{font-size:12px;color:#b6c0a9;margin:8px 0}
 @media(max-width:800px){.intro-cards{grid-template-columns:1fr}.intro-cards article{display:grid;grid-template-columns:56px 1fr;text-align:left;gap:4px 10px;align-items:center}.intro-cards img,.intro-warning{width:56px;height:56px;grid-row:span 2;margin:0;font-size:26px}.cinematic-menu .arena>canvas{transform:perspective(900px) rotateX(18deg) scale(1.15)}}
 @media(prefers-reduced-motion:reduce){.arena>canvas{transition:none}}
+
+/* Review fixes: HUD portrait must not inherit the full-arena canvas rule; cropped thumbnails */
+.arena canvas.hud-portrait{position:static!important;inset:auto!important;width:64px!important;height:64px!important;display:block;transform:none!important}
+@media(max-width:800px){.arena canvas.hud-portrait{width:44px!important;height:44px!important}}
+img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{width:120px;height:120px;margin:0 auto;display:block}.chosen-dino img.thumb{width:56px;height:56px}.intro-cards img.thumb{width:84px;height:84px}
+.menu-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.menu-fields .name-label{margin:0}
+.menu-screen{justify-content:flex-end}.menu-screen .menu-panel{max-height:calc(100% - 10px);padding:22px 24px}.menu-panel h1{font-size:40px;margin-bottom:10px}
+.meat-progress small{display:none}
+@media(max-width:800px){.menu-screen{justify-content:center}.menu-fields{grid-template-columns:1fr}}

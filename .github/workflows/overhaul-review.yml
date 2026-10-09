@@ -41,6 +41,10 @@ jobs:
       - name: Screenshots
         timeout-minutes: 6
         run: timeout 300 node tools/screenshots.cjs review/shots || echo "SCREENSHOTS FAILED" >> review/summary.txt
+      - name: Translation coverage
+        timeout-minutes: 5
+        run: |
+          for l in en ja tlh; do timeout 200 node tools/i18n_collect.cjs review/i18n-missing-$l.json $l || echo "I18N $l FAILED" >> review/summary.txt; done
       - name: Publish results branch
         if: always()
         env:

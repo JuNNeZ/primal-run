@@ -37,6 +37,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
         const hunter = g.spawn('carnotaurus', { x: 1350, y: 960 }); g.enemyStep(hunter, .05);
         const oldBoss = g.spawn('deinosuchus', { x: 1440, y: 820 }); g.enemyStep(oldBoss, .05); oldBoss.direction = 'W';
         g.pause();
+        document.querySelector('.arena>canvas').style.transition = 'none'; // measure the settled camera, not the menu tilt animation
       });
       await page.waitForTimeout(100);
       const state = await page.evaluate(() => {

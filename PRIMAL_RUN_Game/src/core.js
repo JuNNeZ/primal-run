@@ -351,8 +351,10 @@
     for(let i=forage.length-1;i>=0;i--)if(isWater(stage,waterMap,forage[i],-24))forage.splice(i,1);
     for(let i=mud.length-1;i>=0;i--)if(isWater(stage,waterMap,mud[i],-Math.max(mud[i].rx,mud[i].ry)))mud.splice(i,1);
     for(let i=rocks.length-1;i>=0;i--)if(isWater(stage,waterMap,rocks[i],-rocks[i].radius))rocks.splice(i,1);
-    const cover=decorations.filter(d=>/shrub|fruit_bush|fern_large|flower_bush/.test(d.path)).map(d=>({x:d.x,y:d.y,radius:34}));
     const zones=buildZones(stage,seed,width,height,{rocks,decorations,mud,habitats,events,forage,waterMap,props});
+    // Edible plants stay visible: no tall scenery right on top of them.
+    for(let i=decorations.length-1;i>=0;i--){const d=decorations[i];if(d.foliage&&forage.some(f=>Math.hypot(f.x-d.x,f.y-d.y)<46))decorations.splice(i,1);}
+    const cover=decorations.filter(d=>/shrub|fruit_bush|fern_large|flower_bush/.test(d.path)).map(d=>({x:d.x,y:d.y,radius:34}));
     return { fords, zones, ponds,fishSchools,forage, events, arenas, seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites, ambience, layout, groves, riverOrientation:horizontal?'horizontal':'vertical',riverCurve:curve,mud,cover };
   }
   const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
@@ -497,6 +499,7 @@
       for(const centre of r.map.habitats.filter((_,i)=>i%4===0).slice(0,r.secret?6:3))for(let n=0;n<6;n++){const angle=n*Math.PI/3,point={x:centre.x+Math.cos(angle)*24,y:centre.y+Math.sin(angle)*24};if(!suitableHabitat(r.stage,r.map,'compy',point))continue;const e=this.spawn('compy',point);if(e){e.thiefPack=true;e.herdId='thieves:'+centre.x+':'+centre.y;}}
       const pool = r.stage===0?['compy','parasaurolophus','compy','gallimimus','pachycephalosaurus']:BIOMES[r.stage].animals;
       r.map.habitats.forEach((p, i) => {
+        if (isWater(r.stage, r.map, p, -20)) return;
         const zone=r.map.zones&&r.map.zones[p.zone],zonePool=zone?zone.animals.filter(kind=>BIOMES[r.stage].animals.includes(kind)&&(r.levelIndex>0||pool.includes(kind))):pool;
         const eligible=(zonePool.length?zonePool:pool).filter(kind=>suitableHabitat(r.stage,r.map,kind,p));
         if(eligible.length)this.spawn(eligible[Math.floor(p.roll*eligible.length)],p);
@@ -515,7 +518,7 @@
     // One optional miniboss per level, far from the start: risk you choose for an epic genome.
     spawnRival() {
       const r=this.run,kind=RIVALS[r.stage].kind,start={x:480,y:340};
-      const spots=r.map.habitats.filter(h=>Math.hypot(h.x-start.x,h.y-start.y)>900&&suitableHabitat(r.stage,r.map,kind,h)&&!r.map.rocks.some(rock=>Math.hypot(h.x-rock.x,h.y-rock.y)<70)&&!r.map.sites.some(site=>Math.hypot(h.x-site.x,h.y-site.y)<260));
+      const spots=r.map.habitats.filter(h=>!isWater(r.stage,r.map,h,-40)&&Math.hypot(h.x-start.x,h.y-start.y)>900&&suitableHabitat(r.stage,r.map,kind,h)&&!r.map.rocks.some(rock=>Math.hypot(h.x-rock.x,h.y-rock.y)<70)&&!r.map.sites.some(site=>Math.hypot(h.x-site.x,h.y-site.y)<260));
       if(!spots.length)return null;
       const spot=spots[Math.floor(seeded(r.seed^Math.imul(r.levelIndex+7,97531))()*spots.length)];
       const e=this.spawn(kind,spot);if(!e)return null;
