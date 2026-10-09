@@ -146,6 +146,7 @@
   );
   MUTATIONS.push({id:'rexJaw',name:'Knusende kæber',text:'+15 % bid-skade pr. rang; det langsomme angreb bevares.',icon:'serrated_teeth',max:3,rarity:'rare',species:'tyrannosaurus'},{id:'rexVoice',name:'Dalens stemme',text:'+0,5 sek. frygt pr. rang. Bosser er immune.',icon:'escape',max:3,rarity:'uncommon',species:'tyrannosaurus'});
   MUTATIONS.push({id:'rexKing',name:'Urkongens bid',text:'+20 % bid-skade. Kun én rang.',icon:'serrated_teeth',max:1,rarity:'legendary',species:'tyrannosaurus'});
+  MUTATIONS.push({id:'lightFrame',name:'Let knoglebygning',text:'+15 % fart, men +15 % modtaget skade pr. rang.',icon:'powerful_legs',max:2,rarity:'rare'},{id:'metabolicRush',name:'Hurtigt stofskifte',text:'+25 % spisehastighed, men -15 % stamina-regeneration pr. rang.',icon:'hunger',max:2,rarity:'uncommon'});
   const UPGRADES = [
     { id: 'health', name: 'Livskraft', text: '+2 % startliv pr. rang', max: 5 },
     { id: 'damage', name: 'Angrebsstyrke', text: '+2 % startskade pr. rang', max: 5 },
@@ -256,6 +257,7 @@
     if(x.bindings){const candidate={...defaults};for(const key of Object.keys(defaults))if(/^(Key[A-Z]|Space|ShiftLeft|ShiftRight)$/.test(x.bindings[key]||''))candidate[key]=x.bindings[key];if(new Set(Object.values(candidate)).size===Object.keys(candidate).length)save.bindings=candidate;}
     save.settings.shake = !(x.settings && x.settings.shake === false);
     if (Array.isArray(x.scores)) save.scores = x.scores.filter(s => s && Number.isFinite(s.score) && s.score >= 0).map(s => ({ name: cleanName(s.name), score: Math.floor(clamp(s.score, 0, 100000000)), stage: Math.floor(clamp(finite(s.stage, 1), 1, 4)), bosses: Math.floor(clamp(finite(s.bosses), 0, 4)), seconds: Math.floor(clamp(finite(s.seconds), 0, 100000)), victory: s.victory === true })).sort((a, b) => b.score - a.score).slice(0, 10);
+    save.fieldGuide={};for(const [id,entry] of Object.entries(x.fieldGuide||{}))if(Object.hasOwn(SPECIES,id)&&entry&&typeof entry==='object')save.fieldGuide[id]={biomes:[...new Set((Array.isArray(entry.biomes)?entry.biomes:[]).filter(n=>Number.isInteger(n)&&n>=0&&n<4))],attacks:[...new Set((Array.isArray(entry.attacks)?entry.attacks:[]).filter(n=>['bite','charge','slam','roar'].includes(n)))]};
     save.unlockedSpecies = ['compy', ...Object.keys(PLAYER_SPECIES).filter(id => id !== 'compy' && Array.isArray(x.unlockedSpecies) && x.unlockedSpecies.includes(id))];
     save.selectedSpecies = save.unlockedSpecies.includes(x.selectedSpecies) ? x.selectedSpecies : 'compy';
     return save;
@@ -303,7 +305,7 @@
     start({ seed } = {}) {
       const species = this.save.selectedSpecies, config = PLAYER_SPECIES[species];
       const up = { ...this.save.upgrades }, maxHealth = config.hp * (1 + .02 * up.health);
-      this.run = { corpses: [], eating: null, staminaDelay:0, frenzy:0, shield:0, shieldTime:0, tailEmpowered:0, explored: {}, hidden: false, concealTime: 0, revealedUntil: 0, surface: 'ground', seed: seed === undefined ? Math.floor(this.random() * 4294967296) : seed >>> 0, species, abilityHits: [], exploration: 0, eliteKills: 0, player: { x: 480, y: 340, radius: config.radius,kind:species, facing: 'S', walk: 0, moving: false }, health: maxHealth, maxHealth, stamina: 100, slow: 0, stage: 0, meat: 0, totalMeat: 0, level: 1, xp: 0, nextXP: 6, mutations: Object.fromEntries(MUTATIONS.map(m => [m.id, 0])), upgrades: up, choices: [], enemies: [], pickups: [], effects: [], particles: [], decals: [], hitStop: 0, hurt: 0, deathTime: -1, seconds: 0, kills: 0, bosses: 0, dna: 0, score: 0, spawnTimer: 1, attackCooldown: 0, attack: null, biteFacing: 'S', bite: 0, pounce: 0, pounceCooldown: 0, invulnerable: 0, shake: 0, bossSpawned: false, bossDefeated: false, result: null };
+      this.run = { stats:{attacks:0,landedAttacks:0,hits:0,kills:0,fishCaught:0,plantsEaten:0,meatEaten:0,abilities:0,avoidedHits:0,damageTaken:0,damageDealt:0,healing:0,distance:0,staminaSpent:0,food:0,dna:0,dropRolls:0,drops:0,mutations:0,killsBySpecies:{}},stageStats:[],missedSecrets:0,rareRewards:0,rareSelection:false,corpses: [], eating: null, staminaDelay:0, frenzy:0, shield:0, shieldTime:0, tailEmpowered:0, explored: {}, hidden: false, concealTime: 0, revealedUntil: 0, surface: 'ground', seed: seed === undefined ? Math.floor(this.random() * 4294967296) : seed >>> 0, species, abilityHits: [], exploration: 0, eliteKills: 0, player: { x: 480, y: 340, radius: config.radius,kind:species, facing: 'S', walk: 0, moving: false }, health: maxHealth, maxHealth, stamina: 100, slow: 0, stage: 0, meat: 0, totalMeat: 0, level: 1, xp: 0, nextXP: 6, mutations: Object.fromEntries(MUTATIONS.map(m => [m.id, 0])), upgrades: up, choices: [], enemies: [], pickups: [], effects: [], particles: [], decals: [], hitStop: 0, hurt: 0, deathTime: -1, seconds: 0, kills: 0, bosses: 0, dna: 0, score: 0, spawnTimer: 1, attackCooldown: 0, attack: null, biteFacing: 'S', bite: 0, pounce: 0, pounceCooldown: 0, invulnerable: 0, shake: 0, bossSpawned: false, bossDefeated: false, result: null };
       this.behaviorRandom = seeded(this.run.seed ^ 0x9E3779B9); this.run.map = createMap(0, this.run.seed); this.setView(WIDTH, HEIGHT); this.run.jonas = this.save.name.toLowerCase() === 'jonas'; this.phase = 'playing'; this.populate(); this.emit('start'); if (this.run.jonas) this.emit('jonas');
     }
     setView(width, height) {
@@ -329,7 +331,7 @@
         if (i % 3 === 0 && suitableHabitat(r.stage,r.map,'compy',flock)) this.spawn('compy',flock);
       });
       for (const site of r.map.sites) {
-        if (site.type === 'rare') { const point=this.habitatPosition('parasaurolophus',site);if(!point)continue;site.x=point.x;site.y=point.y;const e = this.spawn('parasaurolophus', point); e.rare = true; e.speed *= 1.2; site.animalId = e.id; }
+        if (site.type === 'rare') { const point=this.habitatPosition('parasaurolophus',site);if(!point)continue;site.x=point.x;site.y=point.y;const e = this.spawn('parasaurolophus', point); e.rare = true;e.variant='albino'; e.speed *= 1.2; site.animalId = e.id; }
         if (site.type === 'nest') { const kind=r.stage===1?'carnotaurus':STAGES[r.stage].boss;const point=this.habitatPosition(kind,{x:site.x+100,y:site.y});if(!point)continue;if(Math.hypot(point.x-site.x,point.y-site.y)>180){site.x=point.x;site.y=point.y+70;}const e=this.spawn(kind,point); e.elite = true; e.guard = true; e.hp *= 1.6; e.maxHP = e.hp; e.damage *= 1.3; e.speed *= 1.08; site.guardId = e.id; }
       }
       r.spawnTimer = r.stage === 0 ? 5 : 1;
@@ -364,7 +366,7 @@
       const hp = boss ? (220 + r.stage * 85) : base.hp * scale;
       const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? (kind==='carnotaurus'?42:32) : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0, walk: 0, poseTime: 0, moving: false, direction: 'S', attackHit: false, attackRadius: kind === 'ankylosaurus' ? 90 : boss ? 130 : base.radius + 28 };
       if(arena){e.arenaStyle=arena.style;const clearingRadius=arena.style==='grove'?100:arena.style==='ridge'?150:200;r.map.cover=r.map.cover.filter(d=>Math.hypot(d.x-arena.x,d.y-arena.y)>clearingRadius);r.map.decorations=r.map.decorations.filter(d=>Math.hypot(d.x-arena.x,d.y-arena.y)>(arena.style==='grove'?100:arena.style==='ridge'?150:200));r.map.rocks=r.map.rocks.filter(d=>Math.hypot(d.x-arena.x,d.y-arena.y)>120);}
-      e.visualScale=['deinosuchus','tyrannosaurus'].includes(kind)||boss&&kind==='carnotaurus'?2:1; e.herdId=['compy','parasaurolophus','gallimimus','pachycephalosaurus'].includes(kind)?(r.enemies.find(o=>o.kind===kind&&Math.hypot(o.homeX-p.x,o.homeY-p.y)<220)?.herdId||kind+':'+e.id):null;e.naturalTime=(e.id*1.73)%12;e.activity='roam';e.territoryRadius=['carnotaurus','ankylosaurus','deinosuchus','triceratops','tyrannosaurus'].includes(kind)?330:180; e.bossPhase = 1; e.attackCycle = 0; e.attackName = ''; e.followUp = false; e.trailTimer = 0; e.homeX = p.x; e.homeY = p.y; e.alert = boss; e.lastAttackedAt = -1000; e.disengagedUntil = 0; r.enemies.push(e); return e;
+      e.sex=seeded(r.seed^Math.imul(e.id,123457))()<.5?'female':'male';e.pattern=e.pattern||0; e.visualScale=['deinosuchus','tyrannosaurus'].includes(kind)||boss&&kind==='carnotaurus'?2:1; e.herdId=['compy','parasaurolophus','gallimimus','pachycephalosaurus'].includes(kind)?(r.enemies.find(o=>o.kind===kind&&Math.hypot(o.homeX-p.x,o.homeY-p.y)<220)?.herdId||kind+':'+e.id):null;e.naturalTime=(e.id*1.73)%12;e.activity='roam';e.territoryRadius=['carnotaurus','ankylosaurus','deinosuchus','triceratops','tyrannosaurus'].includes(kind)?330:180; e.bossPhase = 1; e.attackCycle = 0; e.attackName = ''; e.followUp = false; e.trailTimer = 0; e.homeX = p.x; e.homeY = p.y; e.alert = boss; e.lastAttackedAt = -1000; e.disengagedUntil = 0; r.enemies.push(e); return e;
     }
     terrainAt(entity) {
       const r=this.run,map=r.map;
@@ -373,7 +375,7 @@
       if((map.cover||[]).some(p=>Math.hypot(entity.x-p.x,entity.y-p.y)<p.radius))return {kind:'bush',speed:.9,cover:true};
       return {kind:'ground',speed:1,cover:false};
     }
-    travel(entity,dx,dy){const surface=this.terrainAt(entity);this.move(entity,dx*surface.speed,dy*surface.speed);}
+    travel(entity,dx,dy){if(entity!==this.run.player&&!entity.boss&&entity.hp<entity.maxHP*.35){dx*=.72;dy*=.72;}const surface=this.terrainAt(entity);this.move(entity,dx*surface.speed,dy*surface.speed);}
     move(entity, dx, dy) {
       entity.x = clamp(entity.x + dx, 42 + entity.radius, this.run.map.width - 42 - entity.radius);
       entity.y = clamp(entity.y + dy, 76 + entity.radius, this.run.map.height - 42 - entity.radius);
@@ -419,8 +421,29 @@
     pause() { if (this.phase === 'playing') { this.phase = 'paused'; this.emit('pause'); } }
     resume() { if (this.phase === 'paused') this.phase = 'playing'; }
     abandon() { if (this.run && !this.run.result) this.finish(false); this.phase = 'menu'; }
-    addDNA(amount) { this.save.dna += amount; this.run.dna += amount; this.persist(); this.emit('dna', { amount }); }
+    addDNA(amount) { this.save.dna += amount; this.run.dna += amount;this.run.stats.dna+=amount; this.persist(); this.emit('dna', { amount }); }
     addXP(amount) { this.run.xp += amount; this.maybeLevelUp(); }
+    offerRareReward(){
+      const r=this.run;if(this.phase!=='playing'||!r.rareRewards)return false;r.rareRewards--;
+      const pool=MUTATIONS.filter(m=>m.rarity==='epic'&&(!m.species||m.species===r.species)&&r.mutations[m.id]<m.max);
+      if(!pool.length){this.addDNA(8);return this.offerRareReward();}
+      r.choices=[];while(pool.length&&r.choices.length<3)r.choices.push(pool.splice(Math.floor(this.random()*pool.length),1)[0].id);
+      r.rareSelection=true;this.phase='mutation';this.emit('level_up');return true;
+    }
+    recordObservation(e){
+      const r=this.run;if(Math.hypot(e.x-r.player.x,e.y-r.player.y)>420)return;
+      const entry=this.save.fieldGuide[e.kind]||(this.save.fieldGuide[e.kind]={biomes:[],attacks:[]});let changed=false;
+      if(!entry.biomes.includes(r.stage)){entry.biomes.push(r.stage);changed=true;}
+      const attack=['bite','charge','slam'].includes(e.mode)?e.pattern===3?'roar':e.mode:null;
+      if(attack&&!entry.attacks.includes(attack)){entry.attacks.push(attack);changed=true;}
+      if(changed)this.persist();
+    }
+    runSummary(){const r=this.run;return r.species==='baryonyx'&&r.stats.fishCaught>=6?'Flodjæger':r.bosses>=2?'Boss-specialist':r.health>0&&r.health<=3?'Overlevede med '+Math.ceil(r.health)+' liv':r.exploration>=3?'Dalens opdagelsesrejsende':r.kills>=10?'Vedholdende jæger':'En ny gren på stamtræet';}
+    statistics(stageOnly=false){
+      const r=this.run,previous=stageOnly&&r.stageStats.length?r.stageStats[r.stageStats.length-1]:null,stats={};
+      for(const [key,value] of Object.entries(r.stats))if(typeof value==='number')stats[key]=value-(previous?.[key]||0);
+      return {...stats,steps:Math.floor(stats.distance/24),attackAccuracy:stats.attacks?100*stats.landedAttacks/stats.attacks:0,actualDNADropRate:stats.dropRolls?100*stats.drops/stats.dropRolls:0,secretsMissed:(stageOnly?0:r.missedSecrets)+r.map.sites.filter(s=>!s.claimed).length+r.map.events.filter(e=>!e.claimed).length,summary:this.runSummary(),mutations:Object.fromEntries(Object.entries(r.mutations).filter(([,v])=>v)),killsBySpecies:{...r.stats.killsBySpecies}};
+    }
     maybeLevelUp() {
       const r = this.run;
       if (r.xp < r.nextXP || this.phase !== 'playing') return;
@@ -438,21 +461,21 @@
     }
     choose(id) {
       const r = this.run; if (this.phase !== 'mutation' || !r.choices.includes(id)) return false;
-      r.mutations[id]++;if(id==='apexGenome'){r.maxHealth+=25;r.health=Math.min(r.maxHealth,r.health+25);} if (id === 'heart') { r.maxHealth += 15; r.health = Math.min(r.maxHealth, r.health + 15); }
-      r.choices = []; this.phase = 'playing'; this.emit('ui'); this.maybeLevelUp();
+      const beforeHealth=r.health;r.mutations[id]++;r.stats.mutations++;r.rareSelection=false;if(id==='apexGenome'){r.maxHealth+=25;r.health=Math.min(r.maxHealth,r.health+25);} if (id === 'heart') { r.maxHealth += 15; r.health = Math.min(r.maxHealth, r.health + 15); }
+      r.stats.healing+=Math.max(0,r.health-beforeHealth);r.choices = []; this.phase = 'playing'; this.emit('ui');if(!this.offerRareReward())this.maybeLevelUp();
       if (this.phase === 'playing' && r.bossDefeated) this.phase = 'cleared';
       if (this.phase === 'playing') r.invulnerable = Math.max(r.invulnerable, 1);
       return true;
     }
     damage(amount, source) {
-      const r = this.run; if (r.invulnerable > 0 || (r.pounce > 0 && ['compy', 'utahraptor'].includes(r.species)) || this.phase !== 'playing') return;
-      r.eating=null;r.staminaDelay=Math.max(r.staminaDelay,1);r.revealedUntil=r.seconds+1;r.hidden=false;r.concealTime=0; const facing={N:[0,-1],S:[0,1],E:[1,0],W:[-1,0]}[r.player.facing];const sx=source?source.x-r.player.x:0,sy=source?source.y-r.player.y:0,sd=Math.hypot(sx,sy);const front=r.species==='triceratops'&&sd>0&&(sx*facing[0]+sy*facing[1])/sd>.35;amount*=(1+.12*r.mutations.glassCannon)*(front?1-.25-.08*r.mutations.frill:1); amount*= (1 - .08 * r.mutations.armor) * (r.species === 'ankylosaurus' && r.pounce > 0 ? .25 : 1);const shielded=Math.min(r.shield,amount);r.shield-=shielded;amount-=shielded;r.health = Math.max(0, r.health - amount); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
+      const r = this.run; if (r.invulnerable > 0 || (r.pounce > 0 && ['compy', 'utahraptor'].includes(r.species)) || this.phase !== 'playing') {if(this.phase==='playing'&&source)r.stats.avoidedHits++;return;}
+      r.eating=null;r.staminaDelay=Math.max(r.staminaDelay,1);r.revealedUntil=r.seconds+1;r.hidden=false;r.concealTime=0; const facing={N:[0,-1],S:[0,1],E:[1,0],W:[-1,0]}[r.player.facing];const sx=source?source.x-r.player.x:0,sy=source?source.y-r.player.y:0,sd=Math.hypot(sx,sy);const front=r.species==='triceratops'&&sd>0&&(sx*facing[0]+sy*facing[1])/sd>.35;amount*=(1+.12*r.mutations.glassCannon+.15*r.mutations.lightFrame)*(front?1-.25-.08*r.mutations.frill:1); amount*= (1 - .08 * r.mutations.armor) * (r.species === 'ankylosaurus' && r.pounce > 0 ? .25 : 1);const shielded=Math.min(r.shield,amount);r.shield-=shielded;amount-=shielded;r.stats.damageTaken+=Math.min(r.health,amount);r.lastHit=source&&Object.hasOwn(SPECIES,source.kind)?{kind:source.kind,direction:source.direction,mode:source.mode,boss:!!source.boss,sex:source.sex}:null;r.health = Math.max(0, r.health - amount); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
       if (r.species === 'ankylosaurus' && r.mutations.spikes) { for (const e of r.enemies) if (Math.hypot(e.x-r.player.x,e.y-r.player.y)<110) { e.hp -= 4*r.mutations.spikes; this.provoke(e); } }
       if (r.health <= 0) this.finish(false);
     }
     attack() {
       const r = this.run; if (r.attackCooldown > 0 || r.attack || this.phase !== 'playing') return false;
-      r.revealedUntil=r.seconds+2;r.hidden=false;r.concealTime=0;
+      r.stats.attacks++;r.revealedUntil=r.seconds+2;r.hidden=false;r.concealTime=0;
       const speed = (1 - .08 * r.mutations.quick)*(1-.12*r.mutations.overclock)*(r.frenzy>0?.65:1);
       r.attackDuration=PLAYER_SPECIES[r.species].cooldown*speed;
       r.attackCooldown = r.attackDuration;
@@ -498,11 +521,12 @@
         }
         r.effects.push({ x: e.x, y: e.y, text: (armor < 1 ? 'PANSSER · ' : vulnerable ? 'ÅBEN FLANKE · ' : '') + Math.round(damage), life: .55 });
       }
+      if(hits){r.stats.landedAttacks++;r.stats.hits+=hits;}
       if (hits) { r.hitStop = Math.max(r.hitStop, strong || hits > 1 ? .05 : .033); r.shake = Math.max(r.shake, strong ? .1 : .055); this.emit('bite_hit', { hits, strong }); }
       if(r.species==='ankylosaurus')r.tailEmpowered=0;
     }
     kill(e) {
-      const r = this.run; r.kills++;r.corpses.push({id:e.id,lifetime:14+Math.min(4,e.radius/8),spoilAt:7,decayPortions:0,kind:e.kind,x:e.x,y:e.y,direction:e.direction,visualScale:e.visualScale,age:0});r.corpses=r.corpses.slice(-32);
+      const r = this.run; r.kills++;r.stats.kills++;r.stats.killsBySpecies[e.kind]=(r.stats.killsBySpecies[e.kind]||0)+1;r.corpses.push({id:e.id,lifetime:60+Math.min(10,e.radius/4),foodLifetime:14+Math.min(4,e.radius/8),poseVariant:e.id%2,spoilAt:7,decayPortions:0,kind:e.kind,x:e.x,y:e.y,direction:e.direction,visualScale:e.visualScale,age:0});r.corpses=r.corpses.slice(-32);
       if (e.boss) {
         r.bosses++; r.score += 1000 * (r.stage + 1); r.bossDefeated = true;
         this.addDNA(STAGES[r.stage].dna); this.emit('boss_dead');
@@ -511,17 +535,17 @@
         const roll = this.random(), thresholds = base.meat === 1 ? [.76, .95, .995] : base.meat === 3 ? [.6, .88, .98] : [.55, .8, .95];
         const rarity = e.rare || e.elite ? Math.max(2, thresholds.filter(t => roll >= t).length) : thresholds.filter(t => roll >= t).length;
         if (e.elite) { r.eliteKills++; this.addDNA(base.dna + r.stage + 2); }
-        if (e.rare) { const site = r.map.sites.find(s => s.animalId === e.id); if (site) site.claimed = true; }
+        if (e.rare) {this.addDNA(base.dna+3+r.stage);r.rareRewards++; const site = r.map.sites.find(s => s.animalId === e.id); if (site) site.claimed = true; }
         r.pickups.push({ id: ++this.nextId, kind: 'meat', corpseId:e.id, x: e.x, y: e.y, rarity, value: Math.ceil(base.meat * MEAT_RARITIES[rarity].multiplier) });
-        if (this.random() < base.chance) r.pickups.push({ id: ++this.nextId, kind: 'dna', x: clamp(e.x + 20, 48, r.map.width - 48), y: e.y, value: base.dna });
+        r.stats.dropRolls++;if (this.random() < base.chance) {r.stats.drops++;r.pickups.push({ id: ++this.nextId, kind: 'dna', x: clamp(e.x + 20, 48, r.map.width - 48), y: e.y, value: base.dna });}
         if (this.random() < .10) r.pickups.push({ id: ++this.nextId, kind: 'heal', x: e.x, y: clamp(e.y + 18, 80, r.map.height - 54), value: 15 });
       }
     }
     awardFood(value,x,y,label='FØDE') {
-      const r=this.run;r.meat+=value;r.totalMeat+=value;r.xp+=value;r.score+=value*10;r.health=Math.min(r.maxHealth,r.health+value*r.mutations.scavenger);r.effects.push({x,y,text:'+'+value+' '+label,color:'#a2d4c1',life:.55});this.emit('pickup');
+      const r=this.run;r.stats.food+=value;r.meat+=value;r.totalMeat+=value;r.xp+=value;r.score+=value*10;r.health=Math.min(r.maxHealth,r.health+value*r.mutations.scavenger);r.effects.push({x,y,text:'+'+value+' '+label,color:'#a2d4c1',life:.55});this.emit('pickup');
     }
     catchFish(school,count=1) {
-      const r=this.run;const caught=Math.min(count,school.stock);if(!caught)return 0;school.stock-=caught;this.awardFood(caught*(school.value+r.mutations.fisher),school.x,school.y,'FISK');return caught;
+      const r=this.run;const caught=Math.min(count,school.stock);if(!caught)return 0;school.stock-=caught;r.stats.fishCaught+=caught;this.awardFood(caught*(school.value+r.mutations.fisher),school.x,school.y,'FISK');return caught;
     }
     eat(dt,input) {
       const r=this.run;
@@ -535,8 +559,8 @@
       if(!food){r.eating=null;return;}r.hidden=false;r.concealTime=0;r.revealedUntil=r.seconds+1;
       const foodId=food.kind==='meat'?food.corpseId:food.id;if(!r.eating||r.eating.corpseId!==foodId)r.eating={corpseId:foodId,kind:food.kind,progress:0};
       if(food.kind==='fish'&&r.stamina<4){r.eating=null;return;}
-      r.eating.progress+=dt*(1+.05*r.upgrades.digestion)/(food.kind==='fish'?1.2/(1+.2*r.mutations.fisher):.6/(1+.2*r.mutations.forager));
-      if(r.eating.progress>=1){r.eating.progress-=1;if(food.kind==='fish'){r.stamina-=4;r.staminaDelay=1;this.catchFish(food);}else{food.value--;this.awardFood(1,food.x,food.y,food.kind==='plant'?'PLANTEFØDE':MEAT_RARITIES[food.rarity].name);if(food.kind==='plant'&&r.mutations.galliWind)r.health=Math.min(r.maxHealth,r.health+1);}
+      r.eating.progress+=dt*(1+.05*r.upgrades.digestion+.25*r.mutations.metabolicRush)/(food.kind==='fish'?1.2/(1+.2*r.mutations.fisher):.6/(1+.2*r.mutations.forager));
+      if(r.eating.progress>=1){r.eating.progress-=1;if(food.kind==='fish'){r.stamina-=4;r.stats.staminaSpent+=4;r.staminaDelay=1;this.catchFish(food);}else{r.stats[food.kind==='plant'?'plantsEaten':'meatEaten']++;food.value--;this.awardFood(1,food.x,food.y,food.kind==='plant'?'PLANTEFØDE':MEAT_RARITIES[food.rarity].name);if(food.kind==='plant'&&r.mutations.galliWind)r.health=Math.min(r.maxHealth,r.health+1);}
         if(food.kind==='fish'?food.stock<=0:food.value<=0){if(food.kind==='plant')food.depleted=true;r.pickups=r.pickups.filter(p=>p!==food);r.eating=null;}
       }
     }
@@ -558,9 +582,10 @@
     }
     enemyStep(e, dt) {
       if (this.phase !== 'playing') return;
-      const x = e.x, y = e.y;
-      this.enemyAI(e, dt);
+      const x = e.x, y = e.y; e.wounded=e.hp<e.maxHP*.35;
+      this.recordObservation(e);this.enemyAI(e, dt);
       this.regenerateEnemy(e,dt);
+      if(e.wounded&&!e.boss&&Math.hypot(e.x-x,e.y-y)>1){e.woundTrail=(e.woundTrail||0)+dt;if(e.woundTrail>.4){e.woundTrail=0;this.run.decals.push({x:e.x,y:e.y,life:3,seed:e.id});}}
       e.moving = Math.hypot(e.x - x, e.y - y) > .001;
       e.walk = e.moving ? (e.walk + dt) % 1.5 : 0; e.poseTime += dt;
       const dx = e.moving && !['charge', 'windup'].includes(e.mode) ? e.x - x : e.facingX;
@@ -704,7 +729,7 @@
       const r=this.run;
       for(const corpse of r.corpses){corpse.age+=dt;const portions=Math.max(0,Math.floor((corpse.age-(corpse.spoilAt||7))/2.5));const lost=portions-(corpse.decayPortions||0);corpse.decayPortions=portions;
         if(lost>0)for(const food of r.pickups)if(food.corpseId===corpse.id)food.value=Math.max(0,food.value-lost);}
-      r.corpses=r.corpses.filter(c=>c.age<c.lifetime);r.pickups=r.pickups.filter(p=>p.value>0&&(p.corpseId===undefined||r.corpses.some(c=>c.id===p.corpseId)));
+      r.corpses=r.corpses.filter(c=>c.age<c.lifetime);r.pickups=r.pickups.filter(p=>p.value>0&&(p.corpseId===undefined||r.corpses.some(c=>c.id===p.corpseId&&c.age<(c.foodLifetime||c.lifetime))));
     }
     naturalBehavior(e,dt){
       const r=this.run;if(this.scavenge(e,dt))return;e.naturalTime+=dt;const cycle=e.naturalTime%22;e.activity=cycle<8?(herbivorousNPC(e.kind)?'graze':'rest'):cycle<12?'rest':'roam';e.mode=e.activity;
@@ -737,7 +762,7 @@
         }
         if(r.hidden&&d>70&&!recent&&(!e.herdAlarmUntil||r.seconds>e.herdAlarmUntil)){e.alert=false;this.naturalBehavior(e,dt);return;}
         if (e.alert && e.damage) {
-          const rate = this.chaseGiveUpRate(e, d);
+          const rate = this.chaseGiveUpRate(e, d)*(e.wounded?2:1);
           if (d > 1200 && r.seconds-e.lastAttackedAt >= 8 || rate > 0 && this.behaviorRandom() < 1-Math.exp(-rate*dt)) { this.disengage(e); this.returnHome(e,dt); return; }
         }
         if (!e.alert) {this.naturalBehavior(e,dt);return;}
@@ -821,11 +846,11 @@
       for (const timer of ['attackCooldown', 'bite', 'pounce', 'pounceCooldown', 'invulnerable', 'shake', 'slow', 'hurt','staminaDelay','frenzy','tailEmpowered','shieldTime']) r[timer] = Math.max(0, r[timer] - dt);
       if(r.shieldTime===0)r.shield=0;
       const inCombat=r.attack||r.enemies.some(e=>e.alert&&e.damage&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<400);
-      if(r.staminaDelay===0&&r.pounce===0)r.stamina=Math.min(100,r.stamina+dt*(inCombat?8:12)*(1+.03*r.upgrades.regen+.2*m.feathers));
+      if(r.staminaDelay===0&&r.pounce===0)r.stamina=Math.min(100,r.stamina+dt*(inCombat?8:12)*(1+.03*r.upgrades.regen+.2*m.feathers)*(1-.15*m.metabolicRush));
       let dx = clamp(finite(input.x), -1, 1), dy = clamp(finite(input.y), -1, 1), n = Math.hypot(dx, dy);
       const config = PLAYER_SPECIES[r.species], cost = abilityCost(r);
       if (input.pounce && (n || ['ankylosaurus','tyrannosaurus'].includes(r.species)) && r.pounceCooldown === 0 && r.stamina >= cost) {
-        r.revealedUntil=r.seconds+2;r.hidden=false;r.concealTime=0; r.stamina -= cost;r.staminaDelay=1.25; r.pounce = config.abilityTime; r.abilityCooldownDuration=config.abilityCooldown*(1-.12*m.scurry);r.pounceCooldown=r.abilityCooldownDuration; r.abilityHits = []; r.abilityRefund=0;if(m.compyFrenzy)r.frenzy=3;if(m.raptorAmbush)r.invulnerable=Math.max(r.invulnerable,config.abilityTime+1);if(m.galliWind)r.invulnerable=Math.max(r.invulnerable,1);if(m.triceBulwark){r.shield=20;r.shieldTime=4;}if(m.ankyBastion){r.shield=20;r.shieldTime=4;r.tailEmpowered=4;} r.abilityX = n ? dx/n : 0; r.abilityY = n ? dy/n : 1;
+        r.revealedUntil=r.seconds+2;r.hidden=false;r.concealTime=0; r.stamina -= cost;r.staminaDelay=1.25; r.pounce = config.abilityTime; r.stats.abilities++;r.stats.staminaSpent+=cost;r.abilityCooldownDuration=config.abilityCooldown*(1-.12*m.scurry);r.pounceCooldown=r.abilityCooldownDuration; r.abilityHits = []; r.abilityRefund=0;if(m.compyFrenzy)r.frenzy=3;if(m.raptorAmbush)r.invulnerable=Math.max(r.invulnerable,config.abilityTime+1);if(m.galliWind)r.invulnerable=Math.max(r.invulnerable,1);if(m.triceBulwark){r.shield=20;r.shieldTime=4;}if(m.ankyBastion){r.shield=20;r.shieldTime=4;r.tailEmpowered=4;} r.abilityX = n ? dx/n : 0; r.abilityY = n ? dy/n : 1;
         if(r.species==='tyrannosaurus'){for(const e of r.enemies)if(!e.boss&&!e.guard&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<250){e.scaredUntil=r.seconds+2+.5*m.rexVoice;e.alert=false;e.mode='flee';}this.emit('roar');}
         if(r.species==='baryonyx'){const school=r.map.fishSchools.find(f=>f.stock>0&&Math.hypot(f.x-r.player.x,f.y-r.player.y)<110);if(school)this.catchFish(school,m.baryTide?3:1);}
         if (r.species === 'ankylosaurus' && m.guard) r.health = Math.min(r.maxHealth, r.health + 5 * m.guard);
@@ -840,9 +865,9 @@
         const facing = Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? 'E' : 'W') : (dy > 0 ? 'S' : 'N');
         // Keep gait phase across turns rather than restarting with every key change.
         r.player.facing = facing;
-        const speed = config.speed * (input.sneak ? .45 : 1) * (r.slow > 0 ? .65 : 1) * (1 + .08 * m.legs)*(1-.08*m.heavyMuscle) * (r.pounce > 0 ? ['ankylosaurus','tyrannosaurus'].includes(r.species) ? .3 : r.species==='gallimimus'?1.6*(1+.08*m.stride):2.5 : r.attack ? .7 : 1);
+        const speed = config.speed * (input.sneak ? .45 : 1) * (r.slow > 0 ? .65 : 1) * (1 + .08 * m.legs+.15*m.lightFrame)*(1-.08*m.heavyMuscle) * (r.pounce > 0 ? ['ankylosaurus','tyrannosaurus'].includes(r.species) ? .3 : r.species==='gallimimus'?1.6*(1+.08*m.stride):2.5 : r.attack ? .7 : 1);
         this.travel(r.player, dx / n * speed * dt, dy / n * speed * dt);
-        r.player.moving = Math.hypot(r.player.x - beforeX, r.player.y - beforeY) > .001;
+        r.stats.distance+=Math.hypot(r.player.x-beforeX,r.player.y-beforeY);r.player.moving = Math.hypot(r.player.x - beforeX, r.player.y - beforeY) > .001;
       }
       r.player.walk = r.player.moving ? (r.player.walk + dt) % 1.5 : 0;
       if (r.pounce > 0 && ['utahraptor', 'carnotaurus','triceratops','pachycephalosaurus','baryonyx'].includes(r.species)) for (const e of r.enemies) {
@@ -873,7 +898,7 @@
         if(p.corpseId!==undefined||PLAYER_SPECIES[r.species].diet==='herbivore'&&p.kind==='meat')continue;
         if (Math.hypot(p.x - r.player.x, p.y - r.player.y) >= radius) continue;
         collected.push(p.id);
-        if (p.kind === 'meat') { r.meat += p.value; r.totalMeat += p.value; r.xp += p.value; r.score += p.value * 10; r.health = Math.min(r.maxHealth, r.health + p.value * m.scavenger); r.effects.push({ x: p.x, y: p.y, text: '+' + p.value + ' ' + MEAT_RARITIES[p.rarity || 0].name.toUpperCase(), color: MEAT_RARITIES[p.rarity || 0].color, life: .55 }); this.emit('pickup'); }
+        if (p.kind === 'meat') {r.stats.food+=p.value; r.meat += p.value; r.totalMeat += p.value; r.xp += p.value; r.score += p.value * 10; r.health = Math.min(r.maxHealth, r.health + p.value * m.scavenger); r.effects.push({ x: p.x, y: p.y, text: '+' + p.value + ' ' + MEAT_RARITIES[p.rarity || 0].name.toUpperCase(), color: MEAT_RARITIES[p.rarity || 0].color, life: .55 }); this.emit('pickup'); }
         else if (p.kind === 'dna') this.addDNA(p.value);
         else { r.health = Math.min(r.maxHealth, r.health + p.value); this.emit('pickup'); }
       }
@@ -907,7 +932,7 @@
       const r = this.run;
       for (const p of r.pickups) if (p.kind === 'dna') this.addDNA(p.value);
       if (r.stage === STAGES.length - 1) { this.finish(true); return true; }
-      r.stage++; r.meat = 0; r.bossSpawned = false; r.bossDefeated = false; r.enemies = []; r.pickups = []; r.attack = null; r.bite = 0; r.hitStop = 0; r.particles = []; r.decals = [];
+      r.missedSecrets+=r.map.sites.filter(s=>!s.claimed).length+r.map.events.filter(e=>!e.claimed).length;r.stageStats.push({...r.stats,killsBySpecies:{...r.stats.killsBySpecies}});r.stage++; r.meat = 0; r.bossSpawned = false; r.bossDefeated = false; r.enemies = []; r.pickups = []; r.attack = null; r.bite = 0; r.hitStop = 0; r.particles = []; r.decals = [];
       r.corpses=[];r.eating=null;r.shield=0;r.shieldTime=0;r.tailEmpowered=0;r.frenzy=0;r.staminaDelay=0;r.explored={};r.hidden=false;r.concealTime=0;r.revealedUntil=0;
       r.player.x = 480; r.player.y = 340; r.health = Math.min(r.maxHealth, r.health + r.maxHealth * .3); r.stamina = 100; r.invulnerable = 1;
       r.map = createMap(r.stage, r.seed); this.setView(r.view.width, r.view.height); this.phase = 'playing'; this.populate(); this.emit('stage'); return true;
@@ -919,5 +944,15 @@
       r.attack = null; r.bite = 0; r.deathTime = victory ? -1 : 0; this.phase = 'result'; this.persist(); this.emit(victory ? 'victory' : 'death');
     }
   }
+  // Metrics observe the same simulation, including early returns and fatal hits.
+  const simulationStep=Game.prototype.step;
+  Game.prototype.step=function(dt,input){
+    const r=this.run;if(!r||this.phase!=='playing')return simulationStep.call(this,dt,input);
+    const health=r.health,taken=r.stats.damageTaken,enemies=r.enemies.map(e=>[e,e.hp]);
+    try{return simulationStep.call(this,dt,input);}finally{
+      r.stats.healing+=Math.max(0,r.health-health+r.stats.damageTaken-taken);
+      for(const [e,hp] of enemies)r.stats.damageDealt+=Math.max(0,hp-Math.max(0,e.hp));
+    }
+  };
   return { playerFrame,abilityCost,mutationWeight,Game, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

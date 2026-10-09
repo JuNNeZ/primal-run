@@ -1,0 +1,6402 @@
+[
+  {
+    "file": "assets/corpses/parasaurolophus_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      110
+    ],
+    "registration_offset": [
+      24,
+      45
+    ],
+    "export_sha256": "c8f6d097ebbcffcc33b7582811792572cab5cf4663cd6705233cb49b902b73d3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      224,
+      128
+    ],
+    "registration_offset": [
+      16,
+      40
+    ],
+    "export_sha256": "f77d81fb0739d1cc330f3685bf0b08e782971afc0c045f04ecefabf2e0d86145",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      160
+    ],
+    "registration_offset": [
+      8,
+      32
+    ],
+    "export_sha256": "c2c924c2f5caa115ee2e464e92984d942d01ab90b5291af066257e9ba1914586",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      288,
+      128
+    ],
+    "registration_offset": [
+      0,
+      40
+    ],
+    "export_sha256": "cff5dc45d238cad267c0c23a9c175c56feac7a03def4242959a03dcf577dded9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "47cc9c3de3becbd012c6a8a9522ecc9e7947a53e914723ab65727c0d5b7c0732",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "81e494769285c2ae231c8f38a569c8e8f72471b3ab8e2dff23f09b91a4ee77cf",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "c1dc20874bed7d0b8d89bbea241eb3d2d57443444512a21a6d5fe463bfb09fc4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "c42ff7dc4ae2bee3bdd560510843151fba3b32b4cf6026e5123bbe7a0e002772",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "5a2356a16ed4d65dc7954e10e0fd0908fe3e973cc8b9cf9cc39f836f1e83169b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "972710d47c018b76ad38763bf42637d377962e02303e3b77e1fd5805bc48e472",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "efec75a23148c364c8580df5a661e6bc6ff53c1ae9e8943e1a688265458ad533",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "426e3a4331b4b66edb5467ccd6bdebcf69e719c168befd9ce5ad1b5981f4db17",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "505e267a91edf0d28ce9b540857c3e7e61806718c470e888029784376f6025c9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "a789de24a99099c6c92b703b71469ae35d2f2da243427a07838e26a0c19c10ab",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "c0b669fcd85a38659272d478b66247b65dff6575b7a99594a06576e822973ec6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/parasaurolophus_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
+    "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "8026fc94a25bdcd390680081ae5702f21494d661f5e91796ec5d9510f7beb7d1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      110
+    ],
+    "registration_offset": [
+      24,
+      45
+    ],
+    "export_sha256": "70b0f507b989b2057246a68ee787fdde71d07122a23a01a11a23ef579ee766b0",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      224,
+      128
+    ],
+    "registration_offset": [
+      16,
+      40
+    ],
+    "export_sha256": "20722583125e402006851bac89e35fea9ac5ca79ffeb623e310bbf1efe454b4e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      160
+    ],
+    "registration_offset": [
+      8,
+      32
+    ],
+    "export_sha256": "cd359c39be967616cbe61be846f0f1c539a57d39baa2c6019526f5f8cc6b864d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      288,
+      128
+    ],
+    "registration_offset": [
+      0,
+      40
+    ],
+    "export_sha256": "5208415a11b1c78382b6909966ae58f575358066418bf4caa944b79841cb26a9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "85c3327d5474d07a51d81bf0a91cf669aa9dbc55bfca2473b1f415863f949030",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "30a17938c24074f809e3e777557f0477be7da11a499a41f7f2695253fab4c6c7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "091a3c4ae03fb0b9b435d2528ae9d71bff670a097036863f68c7808d95b21f21",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "05d0f6cb696aa1071a6957a691137d0a7bb87c52329c07dca1b6f8e16abe665b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "b1e88453946a1ab115403787faef33426b015dfd667a441d6b4bfc0ed80b5952",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "ca4eb08cb88c140f780eef1a6145e05c3a2b05e2a5a26f6fa36ed07ccb129085",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "684fdbe89c1ea860fd11b0981242da500a7545e97f9a4f06f2ad52cb9b81ad23",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "3f39084333bac9c124172cb600669bbdfe7f7047639d800e13b120a084b61fe6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "266b1ead2992ea4b95322388310cff603a91842cd1f5abd8fea0ff933eb53e35",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "cb1809dfc167b26a4edd79e178a98e8c2a2ffc1c972401978c34340f7ca29b4a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "c7aa29e41ac588408636f1723847eaf0ea69fd5d54f48d450445739aeaaf5074",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/ankylosaurus_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
+    "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "ac159625021ca56b71aa62b2861c13c8658db5f84f93fab2dc672fcc3ddb17a5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      110
+    ],
+    "registration_offset": [
+      24,
+      45
+    ],
+    "export_sha256": "a33ebaee5d706c21add70860dce5da3db0953697275b3d76551d2911df7b280e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      224,
+      128
+    ],
+    "registration_offset": [
+      16,
+      40
+    ],
+    "export_sha256": "d2c03f1049353885d0297aaff278263fd5de8ff8340c2772ca2de80f7f98d8c3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      160
+    ],
+    "registration_offset": [
+      8,
+      32
+    ],
+    "export_sha256": "fb1d0c3abc001b81a23ca15b175af9953d055c11ceed66e319342e33d991a65c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      288,
+      128
+    ],
+    "registration_offset": [
+      0,
+      40
+    ],
+    "export_sha256": "5ed5b1fc513e42cb8f2045bf008b588557edb4f0db76230f601f33bfff33cb8a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "78d405c9944f6fecb3d4e1fd92be7dcd9df14d0df9cd2a6e1d0ae55fd1d0fcf2",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "5b9e09dfcba01b61ea86760f13fd67a76d947b76f87a694c2c91e7977ea9e523",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "7ed36ff2e8f53b869c03fe9de5790a4d87952f387bcf8f37ade1923752fc3020",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "ea72ba134b683db72bc256190f7f17700474031e242a744eff55e32c953e0f59",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "c69a5f6e69d516f53d58e4994ab4adbd0364812aebea238063bfb1d85671ecb5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "06daa2261b5358fc5c832c44e268c157be1c8486b82d1995a26daa02f11ee222",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "f592b210c9bb76e1b990357e6e4931b3f02fe43062bfe623072dce619fb56998",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "47252f717b753faa026f2721907c078f1f44821b59099e0455f6fa3f8a2bcdaa",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "cf6ca34e277baf52ab4bf9f617a6698b9d44b1f5deeb2011fb302bcfffbc9111",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "b27e6df0ce9b3d864d0ca79bffea9e13d7255be9042789952954401e4feaab53",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "b999cd98f8ac2df4bbb06c2117d7c380473b01a503b64989ab52846252353340",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/deinosuchus_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+    "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "ee922c4a87d441ac63640d4413afec64136e3d9f46fa50cbddeed5fd8393460d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      110
+    ],
+    "registration_offset": [
+      24,
+      45
+    ],
+    "export_sha256": "1f1a62e58b439eb3e4eefe1cea35c4574157393af9117e91fe007117bae81cac",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      224,
+      128
+    ],
+    "registration_offset": [
+      16,
+      40
+    ],
+    "export_sha256": "c292935fbacfebf1579c845a2a6bc26d12055496c614914aa5b8e4195bf085bc",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      160
+    ],
+    "registration_offset": [
+      8,
+      32
+    ],
+    "export_sha256": "c868bfca59b6acf28680ddfb8ffc58b6d0f629a789f42f539ce89d054b98a20f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      288,
+      128
+    ],
+    "registration_offset": [
+      0,
+      40
+    ],
+    "export_sha256": "43640e76e3960330ef332a902883253af4b5ecafb864f112ce264b8441bb17c9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "5431be662420bf81643fa1e59c8cd997d4069be9602e4c3970ff07051b9aa7f7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "b680879f9501cc4befb6cd8fd8de63756183de6bf0270e5f1d608d701e74d5b4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "280658f985f3a6f4544435231ba2d41a52287cec65a887895a1e8d435541ce5f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "589309e9fcc949445f93e792310436e8a54e230446fc8394bc849f468c0c6b9e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "af8fda44c132030de48564aa5ebf38998c4542a368312923576519488c697d1e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "25d3b33bbae4efcf52b5e87d1aa535213f479ef1429cc7c3bd2eb18958be8f8f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "f580e41ab25e1ba0d4baa4834d09fe266d0dba0742c5fbc662ea066b1e71c36d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "4b337278c0f0801a7b86db7f952f715799c7323ece0c9934e634418a2e10a862",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "8cc5729bfcf4a167f4fa4746534c8b2d597cb2c9a732062188e29e439da09eb4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "e8c0b5ed498d4284155481f6fc8f537ec793a16a40fb266d26290aa9a756767b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "99cc49dfbe13138bd6a803ac5375468c24de2db3abc278fd66755795ca071400",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/triceratops_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
+    "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "b539d2f57d7e72e0d6420836288201ed6e7daf0e99995870e4e62333ad057f92",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      110
+    ],
+    "registration_offset": [
+      24,
+      45
+    ],
+    "export_sha256": "932e64f3d264f542b51484bc0c20103d12f7b7ccb78805f9fc5a80a7285b0893",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      224,
+      128
+    ],
+    "registration_offset": [
+      16,
+      40
+    ],
+    "export_sha256": "b6540a3824f6a39707b8dab61588cfae43ee66ad7affab88ef2f30b12f35bd0a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      160
+    ],
+    "registration_offset": [
+      8,
+      32
+    ],
+    "export_sha256": "cc232bc94bf8bba192be9f7033705ab1a17587f02b4ddc2429b5a2b6bbe76b51",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      288,
+      128
+    ],
+    "registration_offset": [
+      0,
+      40
+    ],
+    "export_sha256": "2347df016199b0abed46c9c1505898f6ea52166a9f4493822d2d067128019950",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "6b758a189d911a3a693c18b78163c45df79320f82352c87788516392ee919e53",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "0f7f147dfd961d269cffc2acd7f4cb0a94a4ada4f4813932fc942e92df588762",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "684f73f45e4a224e6c52675dba97cb5b95fe2e4d74f449d00ad2f664b5b5af07",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "84a7fd0f96f8ed099310420be35bcbde5952d6630030a944b0b170173f8f1b68",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "ddf30fd3946ee6989d23ce4dd7831afc2a7386e25c9decf5c825f676fe0ee380",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "0a23cd602d971523322c0c42a3754ba1d344badc9493a10ce8d77472e02fbce4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "eb7312c4f7d672156a5de2e87e16c5fbc98458984aa11a656ebfa4dbf0d52f39",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "3e01990163bd1bed8ce4765950e61690223b1fcbfbff0eac4333d6fe4bae3dc2",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "cd5c1b1b438be2935836f54f522d5a54a2509d9b62670783708c9066dac9c2b9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "b05f06c8834e167b350dd9d5ff7e9816012e2eac8585548fd72e708fa5b2284f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "3da9a5ee7404453b56e2aa58983bbda15cb82529ad679923390c59313d377b8d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/tyrannosaurus_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
+    "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "e0256397f53c8ebbb28ef5c42c67ee1e3c9a77cc9b78a0f2d309ad035cef7edb",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      110
+    ],
+    "registration_offset": [
+      24,
+      45
+    ],
+    "export_sha256": "e04b28388c6f60c7224840412ae3b7089013f985e3fb6121875d260379bc54ca",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      224,
+      128
+    ],
+    "registration_offset": [
+      16,
+      40
+    ],
+    "export_sha256": "75ebeddbb1a8d3cc42f3a9bfd4109437e236b1eefe8025cb4f6d466d14f8771a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      160
+    ],
+    "registration_offset": [
+      8,
+      32
+    ],
+    "export_sha256": "9df673905d1cea1e266e2ba47f5fa7a11f7e07226f2e622d569ab2f34208d067",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      288,
+      128
+    ],
+    "registration_offset": [
+      0,
+      40
+    ],
+    "export_sha256": "b9bc287f348494e92957a15e3cca1d4152f36e6c6c498738d37ef98b0307d97a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "2c6871bde53ff6050323b70c97e0bd804ecb9817372ee297d47ca8d5b26633b2",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "904ca591e7a2dfba930d7c95add6c9289d21cdd1776a81a3e7984bd96006eecf",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "8295ac1f1b0ad852f0de1a2b9a99c6d03d4db012e85db39ce57adca13806c77a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "c925dc33f667aed1187e3f0e4c87b4df111200896aaae6dd6c3f97a6e296e62f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "c01245cb820a6e1d64b7837cb78c9c0a624cf9c8f4508cdad089de6d4897a300",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "53008c96f1674a9178ee0343abe38aec5cd14382242c00ffa5ded605430a0be6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "a9116cdc06e0bf8ffafa09dcbc116d3b195aa52ea905737ce9f8bf02101987e3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "05ff9ca5bf04aedcc5b9d0299b676507f45e40bee8a1a0c1b1b4cd4334f9417e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "3745914b151b412d2a82900e0f9b21812d802b316176e2a9c85a42274f7a2eed",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "e72ecce3f343ba1ed1183059ae94da12f62de60f7335e72df407db7c30b1150b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "0858825225fb2d80616bdcdfdda3464629199d3fac542cae3544d5012ce0385a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/pachycephalosaurus_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
+    "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "e1b8d62803c9ab74503044180afb11c883b308b5670d3d866652b90eac3ff279",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      110
+    ],
+    "registration_offset": [
+      24,
+      45
+    ],
+    "export_sha256": "8954c0aba07be13210b84498880ae9783f5cc4151a67d3ce8e4857ac464f71e1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      224,
+      128
+    ],
+    "registration_offset": [
+      16,
+      40
+    ],
+    "export_sha256": "9f95f9d674b1beac1bf71309f216246745e554e80f2f69ffa0d99894e8061da8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      160
+    ],
+    "registration_offset": [
+      8,
+      32
+    ],
+    "export_sha256": "9ac31fd6d42c9604c26439e968017d2eccad58812093fc048e85283d2c2e6350",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      288,
+      128
+    ],
+    "registration_offset": [
+      0,
+      40
+    ],
+    "export_sha256": "7d97f1b0021924f1d74342acb50360b67d9fca0699f526f76e9c2aaa77a75dc8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "d4178db95af7edbb30ae09fd153eea4670b65940a1867ff7629bf232e91e141a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "aa58d0232ce52baf6833731ae6fbcb8734f102f40f865ad3dce3d0c591671a71",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "f730c25424f12c662fd7a542930899c4ccaa2044a032c92b30d192b58087b7ba",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "b78749e6293ea9ec2f34a0e9a0467e06995b2b039cf558d5189ca980704ae5e0",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "790c1082f451affabfa29841f246c583a1cd31666803a3f210b8e533508afdb6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "58be77754e87fa22ac6002529eb4827ca2f1a4465845608552a1a0440b4f71c5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "e114c421e3f7fcd9c85ca8388a2dbeac5e14277acde0fdde1141e8f237e984db",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "098f031bfbcb7c6c54ecd95b61a0144dc384592db016fc1852652dfc85e629bf",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "bc2c3dedaad13aea4443441f58fdcbee217c8757104d95a59278fd2e19396722",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "d2396ac4a085d41bee193315326af65566864544b7874128269f26f2dd05edb8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "206b048faa9c23a0e7ad0e49252efeaaa5ee4df8f160f4afcea4deb873f57962",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/gallimimus_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/gallimimus_sheet.png",
+    "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "df895f978f6c62945531d9776c5ae6ca4047a4de1d086775e2ff84f4f989c017",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      110
+    ],
+    "registration_offset": [
+      24,
+      45
+    ],
+    "export_sha256": "8b5fbe6406d2e078d2c1355c6fc3d23f96601962d9d25cf8771a74ebae0dfa21",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      224,
+      128
+    ],
+    "registration_offset": [
+      16,
+      40
+    ],
+    "export_sha256": "8558a9bd7aa4faa43b71536acc6bcdab63cbee7970ef05281fa42638c311b6f7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      160
+    ],
+    "registration_offset": [
+      8,
+      32
+    ],
+    "export_sha256": "448cb97a25fe32cd86e6e54bf0918cb643c8d7580e5967d097e08ae7d601eafc",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      288,
+      128
+    ],
+    "registration_offset": [
+      0,
+      40
+    ],
+    "export_sha256": "90ad657f607aa1ea81cf63cf26510a49416814f565ada41f754cb3185440081f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "d1bcd45c616a76af2d25262437ebe40f690e7e2057a2de4cc35ff76adc6a046a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "1c4a33489f3aec26e7c4f7cdf334afa39da6acb643ee7e9f25faed25d3846624",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "216a5bd8b46eb135a4f291ee22d4f59e812efb40049dd79a97882a398c47e9c4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "1e9274a4af583ba026e43f66bfd8feea4108c34acdafc437228cc3f7104bde35",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "e9e389b36bc76a1ebe8614935782a4a2c5b1fbb20e1923c239b52b717e1c7c34",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "12526a12090e9ade650980d897b0c2f59495d3d63328af84ee2d51ba13f9bbda",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "75b6160f30331291639e4c6a75a2dcac385b535510da9321e42edaa440c783fa",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "4815775c56074badd192586e023da2e919f6d3328842f74a756874f91a2e8226",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "b291770ed58ffdc82bfc834ab41e4149d0fe32a3bfdb2d3b09aad4eb42c941a3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "54bf01dd280758a4c228eb2f3a50ec0bf1d4ef6e6600c5448ea2f4949dac5f9c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "538d513a4044efd18d097f680e5d8e819a7030ce8778f1d670482e1720810eb6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/baryonyx_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/baryonyx_sheet.png",
+    "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "00b3dda4f2ee3b96a0f8906c0bd5104624749ced2932174491091b3c2db0d50d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      110
+    ],
+    "registration_offset": [
+      24,
+      45
+    ],
+    "export_sha256": "5041c78ca0e6127777010061ab7656bf4be27e100dbf3fe2849a9b756685d89b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      224,
+      128
+    ],
+    "registration_offset": [
+      16,
+      40
+    ],
+    "export_sha256": "3167ec94beb6c92daf11c525d2751680f40d71580bbc38d1e561ff11267b7991",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      160
+    ],
+    "registration_offset": [
+      8,
+      32
+    ],
+    "export_sha256": "2c6158a6fa6e00f8008522345b6f554223562f2eb7d51306da27846213c6a8c8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      288,
+      128
+    ],
+    "registration_offset": [
+      0,
+      40
+    ],
+    "export_sha256": "9ce86d96431b5a7c48e899c0a72c9c28ede1dc149d73b508cd49c90e855860c8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "f776b9718e92e3736695d0c629cb2f1267e8bf41c118f427cdd5ff7e3c9049ce",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "17476951ba55429f53a9faa2535577a54f68039f521cd95b34f00be7d8c91e02",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "81432cfd9995c5a4e8b2f1f143135d691c52ea893e57be5b01a4bb5fbd629b7b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "0c4f32070283986ebd134d8e721bd49b070e7cd9ac8b53eaf4d3a33153b6a475",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "010187f30888cc6289dc27fe7630fd47dd035f8b83076d8ad1189a5c67b59ec7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "30c8fe1c393882d436aaf3b81a8b3aef5f798e9521342e4c928f0a60d2d3b3ef",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "a6c974951cb11be62d16918e26f44411d47312e050ba5d6beab2b3dd080147b0",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "57b2e7576278a65647473c67525e98d839629c32cb680ac6f6115ce0a1e9f57e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "0e230d1237bba4e0253368fa21c6c1edcac474f1d57ccbbc73d6b54444094916",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "fe51fda77cdabe528b5f50192924675833cd04f5f0c1693460122347af250f14",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "1c9731767ed4c272a5c3c26fc44d74a84a3db9f1360744c4f526f1f620abb7e8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/compy_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "compy",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/compy_sheet.png",
+    "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "cf398eec56e468e73f634a8e821f42b6e84080e4614f01867b8450683d98b717",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      110
+    ],
+    "registration_offset": [
+      24,
+      45
+    ],
+    "export_sha256": "443fae48ce88a4d3a676972aa6ba46bae6567c5219fbec3b91fc0ebd12b4be5d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      224,
+      128
+    ],
+    "registration_offset": [
+      16,
+      40
+    ],
+    "export_sha256": "8bd9db8e2edbdedfd34cff1715a419804666bf5f517bd913f73759e6f50d97ba",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      160
+    ],
+    "registration_offset": [
+      8,
+      32
+    ],
+    "export_sha256": "0a5ac822ad21a68324e2b2e4402e3fdbfb3d48f053380b57abe0aeb4d85c85c1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      288,
+      128
+    ],
+    "registration_offset": [
+      0,
+      40
+    ],
+    "export_sha256": "1e115ceb8bfb24f231c40e17ad934af6d9c41d86e87c328115bf853fcba0797f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "7302d4fa73a88912bd48e52dd69cb916507a9a17cee89269b8bb3962b19514a8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "50c773c6f077456cbb49794844300271e453b908c2750c6929322de965498c71",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "5159127b8f1fa1c4753f60857df78e9a90720c3a5feedb68f369badd36054f26",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "9ebe0d771060c79b4107fd87eb262a54af974ff55def4782ef2a485ab143d9dc",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "85087604036fac09640c51364556f2d38a50f1d8455bd5cbee04c2a193195bde",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "4591a44c372784392098b17587ce47ce34d59d116d7069367c7e658cb221ad51",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "f1e416ba91299f4d7f74916f945b3ccab7985b6ee41fac5479ff6331d8f7347d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "d35d40c4fcd1196a83b55cec21d344882264061a774eb42d04bb416425bde65b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      174
+    ],
+    "registration_offset": [
+      24,
+      29
+    ],
+    "export_sha256": "3454c03f2067d3c2050ccce4408492909d9f8b4b685268dcabe61921868c3644",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      224,
+      192
+    ],
+    "registration_offset": [
+      16,
+      24
+    ],
+    "export_sha256": "a93e7e3ba2079f25bb05189b3b9083b46fe1494d550de81d30764b4e938a53ee",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      224
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "export_sha256": "a6a408f10b7ab1f551f3003b038c35400c2277f4f0a9a1309f8f825078247ad5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/carnotaurus_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      288,
+      192
+    ],
+    "registration_offset": [
+      0,
+      24
+    ],
+    "export_sha256": "347382762ac2fbf098f14b3e29734df0a3c78b0021963cb96ceb88dbcb3d6867",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-09",
+  "runtime": "standalone Chromium / Node shared core",
+  "status": "PASS",
+  "coreTests": 97,
+  "gameBrowserChecks": 16,
+  "kitBrowserChecks": 3,
+  "gdevelopGDJS": "NOT RUN: restored machine has no official engine binaries",
+  "checks": [
+    "albino queued epic/caps",
+    "persistent guide",
+    "wounded movement/trails",
+    "effective telemetry and pause",
+    "tradeoffs",
+    "reproducible simulation",
+    "160 actual rendered corpse poses",
+    "27 end-scene combinations",
+    "1080 actual player frames",
+    "9 portraits/palettes",
+    "Space-safe rewards and responsive UI",
+    "victory label never names a killer"
+  ],
+  "production_approved": false,
+  "source_sha256": {
+    "src/core.js": "a1028c82077ba94365c8129921bc2a96288f0100c212fe7bd76b773c569492fb",
+    "src/app.js": "67e1a586dc9f05b0f943fd21666dcfc9482567d4ec2e4443d66bb2e112495b48",
+    "src/audio.js": "1b434e95d7062acfedc2e736f105d559b409f2fa82ca7fe65140abd008d6fc69",
+    "style.css": "8cba04df2673b1fd112be4cd1e8d6ae2241f6a7fc4ed0b6e7ef734cb4e0a73df",
+    "corpse_manifest.json": "a5941609b2e9e0985525c5e50e674695e522448c87e32a111aed52a8b6e64879"
+  },
+  "balanceExperiments": 972,
+  "pagesBuildSmoke": "PASS: relative assets, species book, playable run"
+}

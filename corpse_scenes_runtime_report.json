@@ -1,0 +1,13 @@
+{
+  "runtime": "standalone Chromium",
+  "status": "PASS",
+  "corpseProps": 160,
+  "endSceneCombinations": 27,
+  "checks": [
+    "native144 corpse poses across 10 species, 2 states, 4 directions, 2 variants",
+    "final gradual fade",
+    "9 playable classes x3 factual killer attack types",
+    "no page errors"
+  ],
+  "production_approved": false
+}
