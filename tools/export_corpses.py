@@ -13,6 +13,7 @@ for item in config:
  grids={label:Image.new('RGBA',(576,656),color) for label,color in [('light','#e8ece1'),('dark','#151b19')]}
  for row in range(4):
   for col,direction in enumerate(['S','E','N','W']):
+   source=GAME/item.get('direction_sources',{}).get(direction,item['source']);image=Image.open(source).convert('RGBA')
    crop=[max(0,col*384-64),max(0,row*256-64),min(1536,(col+1)*384+64),min(1024,(row+1)*256+64)]
    a=np.array(image.crop(crop))[1::4,1::4].copy();visible=isolate(a[:,:,3]>=192)
    colors=a[:,:,:3].astype(np.int32);idx=np.argmin(((colors[:,:,None,:]-palette[None,None,:,:])**2).sum(axis=3),axis=2);a[:,:,:3]=palette[idx];a[:,:,3]=np.where(visible,255,0);a[~visible]=0
@@ -22,8 +23,11 @@ for item in config:
    for exclusion in item.get('native_neighbor_exclusions',[]):
     if exclusion['row']==row and exclusion['col']==col:
      x0,y0,x1,y1=exclusion['box'];out[y0:y1,x0:x1]=0
+   stride=item.get('native_sample_stride',1)
+   if stride>1:
+    sampled=out[::stride,::stride].copy();out[:]=0;offset2=72-72//stride;out[offset2:offset2+sampled.shape[0],offset2:offset2+sampled.shape[1]]=sampled
    im=Image.fromarray(out);stage='decayed' if row<2 else 'skeleton';variant=row%2;file=f"assets/corpses/{item['species']}_{stage}_{direction}_{variant}.png";buff=io.BytesIO();im.save(buff,format='PNG');payload=buff.getvalue();pending.append((GAME/file,payload))
-   manifest.append(dict(file=file,size=[144,144],origin=[72,72],body_anchor=[72,72],species=item['species'],stage=stage,variant=variant,direction=direction,source=item['source'],source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),source_crop=crop,source_cell_anchor=anchor,registration_offset=offset,export_sha256=hashlib.sha256(payload).hexdigest(),status='prototype_static',production_approved=False,animation_ready=False,export='Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation.'))
+   manifest.append(dict(file=file,size=[144,144],origin=[72,72],body_anchor=[72,72],species=item['species'],stage=stage,variant=variant,direction=direction,native_sample_stride=item.get('native_sample_stride',1),source=source.relative_to(GAME).as_posix(),source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),source_crop=crop,source_cell_anchor=anchor,registration_offset=offset,export_sha256=hashlib.sha256(payload).hexdigest(),status='prototype_static',production_approved=False,animation_ready=False,export='Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation.'))
    for grid in grids.values():grid.alpha_composite(im,(col*144,row*164+20));ImageDraw.Draw(grid).text((col*144+3,row*164+3),stage+' '+direction+' '+str(variant),fill='#69a4a0')
  for label,grid in grids.items():
   p=GAME/f"previews/corpses/{item['species']}_{label}_1x.png";p.parent.mkdir(parents=True,exist_ok=True);grid.save(p)

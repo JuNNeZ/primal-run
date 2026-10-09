@@ -139,7 +139,10 @@
         ]
       ]
     ],
-    "prompt": "Separate 6x5 transparent 1536x1024 top-down South atlas: idle4/hurt2, walk6, run6, attack6, death6. Same reference anatomy, upper-left lighting; fixed anatomical hips per cell. Source generated with image_gen; attack is tail sweep for Ankylosaurus, jaw/lunge otherwise."
+    "prompt": "Separate 6x5 transparent 1536x1024 top-down South atlas: idle4/hurt2, walk6, run6, attack6, death6. Same reference anatomy, upper-left lighting; fixed anatomical hips per cell. Source generated with image_gen; attack is tail sweep for Ankylosaurus, jaw/lunge otherwise.",
+    "native_sample_stride": 4,
+    "review": "Small Compy size: integer4 native sampling at fixed torso origin, user requested realistic relative size. Prototype.",
+    "source_sha256": "10af629c5da895aae2bd2a4728247db273bf8fa99ed0c80260b928436234f446"
   },
   {
     "species": "utahraptor",
@@ -281,7 +284,8 @@
         ]
       ]
     ],
-    "prompt": "Separate 6x5 transparent 1536x1024 top-down South atlas: idle4/hurt2, walk6, run6, attack6, death6. Same reference anatomy, upper-left lighting; fixed anatomical hips per cell. Source generated with image_gen; attack is tail sweep for Ankylosaurus, jaw/lunge otherwise."
+    "prompt": "Separate 6x5 transparent 1536x1024 top-down South atlas: idle4/hurt2, walk6, run6, attack6, death6. Same reference anatomy, upper-left lighting; fixed anatomical hips per cell. Source generated with image_gen; attack is tail sweep for Ankylosaurus, jaw/lunge otherwise.",
+    "source_sha256": "79fb53d1b56b1ba2b2516524bf1c82d07d4ad5058a2d41556ce1671614667ea0"
   },
   {
     "species": "carnotaurus",
@@ -423,7 +427,8 @@
         ]
       ]
     ],
-    "prompt": "Separate 6x5 transparent 1536x1024 top-down South atlas: idle4/hurt2, walk6, run6, attack6, death6. Same reference anatomy, upper-left lighting; fixed anatomical hips per cell. Source generated with image_gen; attack is tail sweep for Ankylosaurus, jaw/lunge otherwise."
+    "prompt": "Separate 6x5 transparent 1536x1024 top-down South atlas: idle4/hurt2, walk6, run6, attack6, death6. Same reference anatomy, upper-left lighting; fixed anatomical hips per cell. Source generated with image_gen; attack is tail sweep for Ankylosaurus, jaw/lunge otherwise.",
+    "source_sha256": "a6fa4fdd8b9658d93a629f1e0242d343d42464b49569a52d1da8e52fc0cbe6f2"
   },
   {
     "species": "ankylosaurus",
@@ -565,7 +570,8 @@
         ]
       ]
     ],
-    "prompt": "Separate 6x5 transparent 1536x1024 top-down South atlas: idle4/hurt2, walk6, run6, attack6, death6. Same reference anatomy, upper-left lighting; fixed anatomical hips per cell. Source generated with image_gen; attack is tail sweep for Ankylosaurus, jaw/lunge otherwise."
+    "prompt": "Separate 6x5 transparent 1536x1024 top-down South atlas: idle4/hurt2, walk6, run6, attack6, death6. Same reference anatomy, upper-left lighting; fixed anatomical hips per cell. Source generated with image_gen; attack is tail sweep for Ankylosaurus, jaw/lunge otherwise.",
+    "source_sha256": "3f3c6bbd485e490fd365155faaedde5c4ca6b8d25d0d45c45e3ebcbdae1ead52"
   },
   {
     "species": "compy",
@@ -707,7 +713,10 @@
         ]
       ]
     ],
-    "prompt": "6x5 full animation atlas, exact source layout/plan as South, East head right tail left; proper overhead anatomy, fixed32 warm-earth palette, upper-left lighting."
+    "prompt": "6x5 full animation atlas, exact source layout/plan as South, East head right tail left; proper overhead anatomy, fixed32 warm-earth palette, upper-left lighting.",
+    "native_sample_stride": 4,
+    "review": "Small Compy size: integer4 native sampling at fixed torso origin, user requested realistic relative size. Prototype.",
+    "source_sha256": "1cef0666454d2760fd931b52b3c897e1ca750bea84ca7f7793790023d472900a"
   },
   {
     "species": "utahraptor",
@@ -849,7 +858,8 @@
         ]
       ]
     ],
-    "prompt": "6x5 full animation atlas, exact source layout/plan as South, East head right tail left; proper overhead anatomy, fixed32 warm-earth palette, upper-left lighting."
+    "prompt": "6x5 full animation atlas, exact source layout/plan as South, East head right tail left; proper overhead anatomy, fixed32 warm-earth palette, upper-left lighting.",
+    "source_sha256": "a895332c47d1b4a249c3e3c6d0ae75abdd2a6d95c1dd9d0bb502e11f687d7548"
   },
   {
     "species": "carnotaurus",
@@ -991,7 +1001,8 @@
         ]
       ]
     ],
-    "prompt": "6x5 full animation atlas, exact source layout/plan as South, East head right tail left; proper overhead anatomy, fixed32 warm-earth palette, upper-left lighting."
+    "prompt": "6x5 full animation atlas, exact source layout/plan as South, East head right tail left; proper overhead anatomy, fixed32 warm-earth palette, upper-left lighting.",
+    "source_sha256": "87840d19abe7dc1a0d9722576b5ab7618d289612eeb5e5f1a699e4b0766dd4fa"
   },
   {
     "species": "ankylosaurus",
@@ -1133,7 +1144,8 @@
         ]
       ]
     ],
-    "prompt": "Corrected East sheet: preserve rows1-3, replace row4 with actual wide tail-club sweep, closed jaw, hip fixed. Row5 collapse and splayed legs. Rejected bite source preserved separately."
+    "prompt": "Corrected East sheet: preserve rows1-3, replace row4 with actual wide tail-club sweep, closed jaw, hip fixed. Row5 collapse and splayed legs. Rejected bite source preserved separately.",
+    "source_sha256": "babe4be43adf0aa96bf24beacfd292fe87f182d72b5482bd8c3d0e4bbc386be4"
   },
   {
     "species": "compy",
@@ -1275,7 +1287,10 @@
         ]
       ]
     ],
-    "prompt": "Same 6x5 full state plan, head UP tail DOWN, separate proper North anatomy and upper-left lighting. Attack column3 anticipates, column4 makes contact. Ankylosaurus tail sweeps LEFT/RIGHT with closed mouth. Sequential death collapse and splayed corpse."
+    "prompt": "Same 6x5 full state plan, head UP tail DOWN, separate proper North anatomy and upper-left lighting. Attack column3 anticipates, column4 makes contact. Ankylosaurus tail sweeps LEFT/RIGHT with closed mouth. Sequential death collapse and splayed corpse.",
+    "native_sample_stride": 4,
+    "review": "Small Compy size: integer4 native sampling at fixed torso origin, user requested realistic relative size. Prototype.",
+    "source_sha256": "7ee1cc010d2430ca9b4ae0f801b6b23313ed3bb88d2fd5db0417cb4c78c29098"
   },
   {
     "species": "utahraptor",
@@ -1417,7 +1432,8 @@
         ]
       ]
     ],
-    "prompt": "Same 6x5 full state plan, head UP tail DOWN, separate proper North anatomy and upper-left lighting. Attack column3 anticipates, column4 makes contact. Ankylosaurus tail sweeps LEFT/RIGHT with closed mouth. Sequential death collapse and splayed corpse."
+    "prompt": "Same 6x5 full state plan, head UP tail DOWN, separate proper North anatomy and upper-left lighting. Attack column3 anticipates, column4 makes contact. Ankylosaurus tail sweeps LEFT/RIGHT with closed mouth. Sequential death collapse and splayed corpse.",
+    "source_sha256": "51796a2c925de941874b116609489b2172933a5af5b9101ef36f55f4607c5eee"
   },
   {
     "species": "carnotaurus",
@@ -1559,7 +1575,8 @@
         ]
       ]
     ],
-    "prompt": "Same 6x5 full state plan, head UP tail DOWN, separate proper North anatomy and upper-left lighting. Attack column3 anticipates, column4 makes contact. Ankylosaurus tail sweeps LEFT/RIGHT with closed mouth. Sequential death collapse and splayed corpse."
+    "prompt": "Same 6x5 full state plan, head UP tail DOWN, separate proper North anatomy and upper-left lighting. Attack column3 anticipates, column4 makes contact. Ankylosaurus tail sweeps LEFT/RIGHT with closed mouth. Sequential death collapse and splayed corpse.",
+    "source_sha256": "5cb4d537a07ac2b063ce159f02df876495aab52e6140097b49a29b1e620c0a55"
   },
   {
     "species": "ankylosaurus",
@@ -1701,7 +1718,8 @@
         ]
       ]
     ],
-    "prompt": "Same 6x5 full state plan, head UP tail DOWN, separate proper North anatomy and upper-left lighting. Attack column3 anticipates, column4 makes contact. Ankylosaurus tail sweeps LEFT/RIGHT with closed mouth. Sequential death collapse and splayed corpse."
+    "prompt": "Same 6x5 full state plan, head UP tail DOWN, separate proper North anatomy and upper-left lighting. Attack column3 anticipates, column4 makes contact. Ankylosaurus tail sweeps LEFT/RIGHT with closed mouth. Sequential death collapse and splayed corpse.",
+    "source_sha256": "3c0bfca204db5628b3ac107dc7d609dfd69dd6760a8b4a82d99ac6a58791593f"
   },
   {
     "species": "compy",
@@ -1843,7 +1861,10 @@
         ]
       ]
     ],
-    "prompt": "Separate West six-state 6x5 atlas, head left and tail right, overhead view with both flanks, left-top lighting rather than mirrored East. Same anatomy/scale and fixed hip per cell. Ankylosaurus row4 sweeps tail up/down while mouth stays closed. Row5 actual death collapse."
+    "prompt": "Separate West six-state 6x5 atlas, head left and tail right, overhead view with both flanks, left-top lighting rather than mirrored East. Same anatomy/scale and fixed hip per cell. Ankylosaurus row4 sweeps tail up/down while mouth stays closed. Row5 actual death collapse.",
+    "native_sample_stride": 4,
+    "review": "Small Compy size: integer4 native sampling at fixed torso origin, user requested realistic relative size. Prototype.",
+    "source_sha256": "3449d326a8a4b9e13a411a1cf2c8e0c5b98c6ba1bd1bfd11706d3f78dca0fe4f"
   },
   {
     "species": "utahraptor",
@@ -1985,7 +2006,8 @@
         ]
       ]
     ],
-    "prompt": "Separate West six-state 6x5 atlas, head left and tail right, overhead view with both flanks, left-top lighting rather than mirrored East. Same anatomy/scale and fixed hip per cell. Ankylosaurus row4 sweeps tail up/down while mouth stays closed. Row5 actual death collapse."
+    "prompt": "Separate West six-state 6x5 atlas, head left and tail right, overhead view with both flanks, left-top lighting rather than mirrored East. Same anatomy/scale and fixed hip per cell. Ankylosaurus row4 sweeps tail up/down while mouth stays closed. Row5 actual death collapse.",
+    "source_sha256": "c7df123b85ef55e780e080bd47854622d4aef8a41a88333a8208b3deb417099a"
   },
   {
     "species": "carnotaurus",
@@ -2127,7 +2149,8 @@
         ]
       ]
     ],
-    "prompt": "Separate West six-state 6x5 atlas, head left and tail right, overhead view with both flanks, left-top lighting rather than mirrored East. Same anatomy/scale and fixed hip per cell. Ankylosaurus row4 sweeps tail up/down while mouth stays closed. Row5 actual death collapse."
+    "prompt": "Separate West six-state 6x5 atlas, head left and tail right, overhead view with both flanks, left-top lighting rather than mirrored East. Same anatomy/scale and fixed hip per cell. Ankylosaurus row4 sweeps tail up/down while mouth stays closed. Row5 actual death collapse.",
+    "source_sha256": "c0ef5e28be65cde9670da7018879e24bb657a884459fa39d8b3846abc7b20833"
   },
   {
     "species": "ankylosaurus",
@@ -2269,7 +2292,8 @@
         ]
       ]
     ],
-    "prompt": "Separate West six-state 6x5 atlas, head left and tail right, overhead view with both flanks, left-top lighting rather than mirrored East. Same anatomy/scale and fixed hip per cell. Ankylosaurus row4 sweeps tail up/down while mouth stays closed. Row5 actual death collapse."
+    "prompt": "Separate West six-state 6x5 atlas, head left and tail right, overhead view with both flanks, left-top lighting rather than mirrored East. Same anatomy/scale and fixed hip per cell. Ankylosaurus row4 sweeps tail up/down while mouth stays closed. Row5 actual death collapse.",
+    "source_sha256": "b12d2762b6977670d63c56efb8a3d5a03e284d26d103a764b85d842b4f2e160e"
   },
   {
     "species": "pachycephalosaurus",
@@ -2411,7 +2435,8 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "045041cb486767a90757ec6a2f20b97508077d4b6bf6a5b528feb61a2d55e36d"
   },
   {
     "species": "pachycephalosaurus",
@@ -2553,7 +2578,8 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "e926f75169945892965b159f0ff60b8178f33560f288bcb3dd17219b6232eb49"
   },
   {
     "species": "pachycephalosaurus",
@@ -2695,7 +2721,8 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "8e40150d8de4c0088f4c51a3bf295421e1efe39d79a2626b0f459b8c6d1a3dc8"
   },
   {
     "species": "pachycephalosaurus",
@@ -2837,7 +2864,8 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "a6af8788a2d74949abdbbd4a4530ef13140cb3efcd321d1da708a3588cbc81c9"
   },
   {
     "species": "gallimimus",
@@ -2979,7 +3007,8 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "b7f7500540f1bd90a0f661126efc1a6e2d3f1227af43e6285a9eac9b77e5f23a"
   },
   {
     "species": "gallimimus",
@@ -3121,7 +3150,8 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "49e49bc7c7acd98d34a2b8424b0d4de2cdc57be3dcf0e7b6641b04688fb79277"
   },
   {
     "species": "gallimimus",
@@ -3263,7 +3293,8 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "2267c1505eaddb21e7ba941473b6bbf08502d9ee6799f471dbc9d3c5ca64a3c0"
   },
   {
     "species": "gallimimus",
@@ -3405,7 +3436,8 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "edcf6454567587e11eaadfb2651b4ba32bbaae611c24d636ce4fd978fb167520"
   },
   {
     "species": "baryonyx",
@@ -3547,7 +3579,8 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "b1c436446d34637b80adb5ba19d475ba7a284a2020002c167dfd12d1efc7d266"
   },
   {
     "species": "baryonyx",
@@ -3689,12 +3722,13 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "d56ca3c5e7fc06905c0d8f06bdbacc6bb8e75b71941ae24995ab57fe9c7c21dc"
   },
   {
     "species": "baryonyx",
     "direction": "N",
-    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source": "Source_Generated/player_full/baryonyx_S.png",
     "origin": [
       64,
       64
@@ -3702,138 +3736,140 @@
     "anchors": [
       [
         [
-          175,
-          108
+          174,
+          110
         ],
-        [
-          187,
-          108
-        ],
-        [
-          143,
-          108
-        ],
-        [
-          119,
-          108
-        ],
-        [
-          93,
-          108
-        ],
-        [
-          93,
-          108
-        ]
-      ],
-      [
-        [
-          161,
-          108
-        ],
-        [
-          148,
-          108
-        ],
-        [
-          140,
-          108
-        ],
-        [
-          116,
-          108
-        ],
-        [
-          112,
-          108
-        ],
-        [
-          98,
-          108
-        ]
-      ],
-      [
         [
           156,
-          108
+          110
         ],
         [
-          159,
-          108
+          137,
+          110
         ],
         [
-          139,
-          108
+          120,
+          110
         ],
         [
-          126,
-          108
+          102,
+          110
         ],
         [
-          114,
-          108
-        ],
-        [
-          100,
-          108
+          84,
+          110
         ]
       ],
       [
         [
-          162,
-          108
+          174,
+          110
         ],
         [
-          151,
-          108
+          156,
+          110
         ],
         [
-          142,
-          108
+          137,
+          110
         ],
         [
-          117,
-          108
+          120,
+          110
         ],
         [
-          103,
-          108
+          102,
+          110
         ],
         [
-          97,
-          108
+          84,
+          110
         ]
       ],
       [
         [
-          162,
-          108
+          174,
+          110
         ],
         [
-          151,
-          108
+          156,
+          110
         ],
         [
-          142,
-          108
+          137,
+          110
         ],
         [
-          117,
-          108
+          120,
+          110
         ],
         [
-          103,
-          108
+          102,
+          110
         ],
         [
-          97,
-          108
+          84,
+          110
+        ]
+      ],
+      [
+        [
+          174,
+          110
+        ],
+        [
+          156,
+          110
+        ],
+        [
+          137,
+          110
+        ],
+        [
+          120,
+          110
+        ],
+        [
+          102,
+          110
+        ],
+        [
+          84,
+          110
+        ]
+      ],
+      [
+        [
+          174,
+          110
+        ],
+        [
+          156,
+          110
+        ],
+        [
+          137,
+          110
+        ],
+        [
+          120,
+          110
+        ],
+        [
+          102,
+          110
+        ],
+        [
+          84,
+          110
         ]
       ]
     ],
     "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
-    "review": "North single-tail anatomy revision: one tapering tail and two short hindlegs with visible toes; original preserved. All30 drawn poses/hip landmarks retained; prototype unapproved. Tight cell isolation removes disconnected neighbouring tail tips above/below main pose; no recentering.",
-    "neighbor_isolation_margin": 0
+    "user_transform": "rotate180",
+    "derived_from_direction": "S",
+    "review": "Explicit user exception: derive north by180-degree lossless rotation of canonical south poses. Same body/colour/scale; source lighting rotates too. Old north originals/revisions preserved.",
+    "source_sha256": "b1c436446d34637b80adb5ba19d475ba7a284a2020002c167dfd12d1efc7d266"
   },
   {
     "species": "baryonyx",
@@ -3975,6 +4011,589 @@
         ]
       ]
     ],
-    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype."
+    "review_note": "Explicit reviewed torso/hip landmarks; source pose volume still prototype.",
+    "source_sha256": "cb058128fc64e2a56cac573d8d3fe53e9c7e2a14c550b7589f032e4c17e05f57"
+  },
+  {
+    "species": "velociraptor",
+    "direction": "S",
+    "source": "Source_Generated/player_full/velociraptor_S.png",
+    "origin": [
+      64,
+      72
+    ],
+    "anchors": [
+      [
+        [
+          128,
+          116
+        ],
+        [
+          128,
+          116
+        ],
+        [
+          128,
+          116
+        ],
+        [
+          128,
+          116
+        ],
+        [
+          128,
+          116
+        ],
+        [
+          128,
+          116
+        ]
+      ],
+      [
+        [
+          128,
+          113
+        ],
+        [
+          128,
+          113
+        ],
+        [
+          128,
+          113
+        ],
+        [
+          128,
+          113
+        ],
+        [
+          128,
+          113
+        ],
+        [
+          128,
+          113
+        ]
+      ],
+      [
+        [
+          128,
+          112
+        ],
+        [
+          128,
+          112
+        ],
+        [
+          128,
+          112
+        ],
+        [
+          128,
+          112
+        ],
+        [
+          128,
+          112
+        ],
+        [
+          128,
+          112
+        ]
+      ],
+      [
+        [
+          128,
+          113
+        ],
+        [
+          128,
+          113
+        ],
+        [
+          128,
+          113
+        ],
+        [
+          128,
+          113
+        ],
+        [
+          128,
+          113
+        ],
+        [
+          128,
+          113
+        ]
+      ],
+      [
+        [
+          128,
+          109
+        ],
+        [
+          128,
+          109
+        ],
+        [
+          128,
+          109
+        ],
+        [
+          128,
+          109
+        ],
+        [
+          128,
+          109
+        ],
+        [
+          128,
+          109
+        ]
+      ]
+    ],
+    "prompt": "Separate 6x5 transparent 1536x1024 top-down South atlas: idle4/hurt2, walk6, run6, attack6, death6. Same reference anatomy, upper-left lighting; fixed anatomical hips per cell. Source generated with image_gen; attack is tail sweep for Ankylosaurus, jaw/lunge otherwise.",
+    "source_sha256": "202d9b0596dc8258357d23f880e7f754a13692d36b55ac5c20eb3873e94e9edb",
+    "native_sample_stride": 2,
+    "review": "Prototype derived from reviewed South master plus canonical Utah direction. Fixed palette and integer2 body sampling retain registered hips; full generated pose variation requires art review."
+  },
+  {
+    "species": "velociraptor",
+    "direction": "E",
+    "source": "Source_Generated/player_full/velociraptor_E.png",
+    "origin": [
+      68,
+      64
+    ],
+    "anchors": [
+      [
+        [
+          132,
+          129
+        ],
+        [
+          132,
+          129
+        ],
+        [
+          132,
+          129
+        ],
+        [
+          132,
+          129
+        ],
+        [
+          132,
+          129
+        ],
+        [
+          132,
+          129
+        ]
+      ],
+      [
+        [
+          132,
+          118
+        ],
+        [
+          132,
+          118
+        ],
+        [
+          132,
+          118
+        ],
+        [
+          132,
+          118
+        ],
+        [
+          132,
+          118
+        ],
+        [
+          132,
+          118
+        ]
+      ],
+      [
+        [
+          132,
+          104
+        ],
+        [
+          132,
+          104
+        ],
+        [
+          132,
+          104
+        ],
+        [
+          132,
+          104
+        ],
+        [
+          132,
+          104
+        ],
+        [
+          132,
+          104
+        ]
+      ],
+      [
+        [
+          132,
+          96
+        ],
+        [
+          132,
+          96
+        ],
+        [
+          132,
+          96
+        ],
+        [
+          132,
+          96
+        ],
+        [
+          132,
+          96
+        ],
+        [
+          132,
+          96
+        ]
+      ],
+      [
+        [
+          132,
+          93
+        ],
+        [
+          132,
+          93
+        ],
+        [
+          132,
+          93
+        ],
+        [
+          132,
+          93
+        ],
+        [
+          132,
+          93
+        ],
+        [
+          132,
+          93
+        ]
+      ]
+    ],
+    "prompt": "6x5 full animation atlas, exact source layout/plan as South, East head right tail left; proper overhead anatomy, fixed32 warm-earth palette, upper-left lighting.",
+    "source_sha256": "c8968babc1173059b6f3e9033d8581b9d39ab05d1d88ac08eb01feb4c9c34e8c",
+    "native_sample_stride": 2,
+    "review": "Prototype derived from reviewed South master plus canonical Utah direction. Fixed palette and integer2 body sampling retain registered hips; full generated pose variation requires art review."
+  },
+  {
+    "species": "velociraptor",
+    "direction": "N",
+    "source": "Source_Generated/player_full/velociraptor_N_revision2.png",
+    "origin": [
+      64,
+      56
+    ],
+    "anchors": [
+      [
+        [
+          170,
+          105
+        ],
+        [
+          157,
+          105
+        ],
+        [
+          142,
+          105
+        ],
+        [
+          122,
+          105
+        ],
+        [
+          106,
+          105
+        ],
+        [
+          94,
+          105
+        ]
+      ],
+      [
+        [
+          170,
+          104
+        ],
+        [
+          157,
+          104
+        ],
+        [
+          142,
+          104
+        ],
+        [
+          122,
+          104
+        ],
+        [
+          106,
+          104
+        ],
+        [
+          94,
+          104
+        ]
+      ],
+      [
+        [
+          170,
+          101
+        ],
+        [
+          157,
+          101
+        ],
+        [
+          142,
+          101
+        ],
+        [
+          122,
+          101
+        ],
+        [
+          106,
+          101
+        ],
+        [
+          94,
+          101
+        ]
+      ],
+      [
+        [
+          170,
+          92
+        ],
+        [
+          157,
+          92
+        ],
+        [
+          142,
+          92
+        ],
+        [
+          122,
+          92
+        ],
+        [
+          106,
+          92
+        ],
+        [
+          94,
+          92
+        ]
+      ],
+      [
+        [
+          170,
+          86
+        ],
+        [
+          157,
+          86
+        ],
+        [
+          142,
+          86
+        ],
+        [
+          122,
+          86
+        ],
+        [
+          106,
+          86
+        ],
+        [
+          94,
+          86
+        ]
+      ]
+    ],
+    "prompt": "Same 6x5 full state plan, head UP tail DOWN, separate proper North anatomy and upper-left lighting. Attack column3 anticipates, column4 makes contact. Ankylosaurus tail sweeps LEFT/RIGHT with closed mouth. Sequential death collapse and splayed corpse.",
+    "source_sha256": "daa65829715bd8acb6fd30391c765ae1f82cffd207a5f2d714bb0c00aa4a97a6",
+    "native_sample_stride": 2,
+    "review": "Revision2 all30 poses head up, tail down, derived only from canonical Utah N. Original and revision1 rejected for lower-row South-facing errors, preserved. Subtle source volume/marking variation remains prototype. Tight cell crop retains entire reviewed animal while excluding upper/lower neighbour tails; normal alpha192 preserved. Strong soft brown alpha halo removed with reviewed alpha248 threshold; source colours/anatomy unchanged, edges normalize to binary alpha.",
+    "crop_margin": 0,
+    "alpha_threshold": 248
+  },
+  {
+    "species": "velociraptor",
+    "direction": "W",
+    "source": "Source_Generated/player_full/velociraptor_W.png",
+    "origin": [
+      60,
+      64
+    ],
+    "anchors": [
+      [
+        [
+          128,
+          130
+        ],
+        [
+          128,
+          130
+        ],
+        [
+          128,
+          130
+        ],
+        [
+          128,
+          130
+        ],
+        [
+          128,
+          130
+        ],
+        [
+          128,
+          130
+        ]
+      ],
+      [
+        [
+          128,
+          104
+        ],
+        [
+          128,
+          104
+        ],
+        [
+          128,
+          104
+        ],
+        [
+          128,
+          104
+        ],
+        [
+          128,
+          104
+        ],
+        [
+          128,
+          104
+        ]
+      ],
+      [
+        [
+          128,
+          85
+        ],
+        [
+          128,
+          85
+        ],
+        [
+          128,
+          85
+        ],
+        [
+          128,
+          85
+        ],
+        [
+          128,
+          85
+        ],
+        [
+          128,
+          85
+        ]
+      ],
+      [
+        [
+          128,
+          72
+        ],
+        [
+          128,
+          72
+        ],
+        [
+          128,
+          72
+        ],
+        [
+          120,
+          72
+        ],
+        [
+          128,
+          72
+        ],
+        [
+          128,
+          72
+        ]
+      ],
+      [
+        [
+          128,
+          73
+        ],
+        [
+          128,
+          73
+        ],
+        [
+          128,
+          73
+        ],
+        [
+          128,
+          73
+        ],
+        [
+          128,
+          73
+        ],
+        [
+          128,
+          73
+        ]
+      ]
+    ],
+    "prompt": "Separate West six-state 6x5 atlas, head left and tail right, overhead view with both flanks, left-top lighting rather than mirrored East. Same anatomy/scale and fixed hip per cell. Ankylosaurus row4 sweeps tail up/down while mouth stays closed. Row5 actual death collapse.",
+    "source_sha256": "e6d44bcd3272e48a36f7a4a75efaf1e6a8e6db7ca99c5975f1ea6577ace6ae84",
+    "native_sample_stride": 2,
+    "review": "Prototype derived from reviewed South master plus canonical Utah direction. Fixed palette and integer2 body sampling retain registered hips; full generated pose variation requires art review."
   }
 ]

@@ -4882,6 +4882,534 @@
       "production_approved": false
     },
     {
+      "name": "velociraptor_idle_S",
+      "species": "velociraptor",
+      "state": "idle",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/velociraptor_idle_S_000.png",
+        "assets/player_full/velociraptor_idle_S_001.png",
+        "assets/player_full/velociraptor_idle_S_002.png",
+        "assets/player_full/velociraptor_idle_S_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        80
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_hurt_S",
+      "species": "velociraptor",
+      "state": "hurt",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/velociraptor_hurt_S_000.png",
+        "assets/player_full/velociraptor_hurt_S_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        80
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_walk_S",
+      "species": "velociraptor",
+      "state": "walk",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/velociraptor_walk_S_000.png",
+        "assets/player_full/velociraptor_walk_S_001.png",
+        "assets/player_full/velociraptor_walk_S_002.png",
+        "assets/player_full/velociraptor_walk_S_003.png",
+        "assets/player_full/velociraptor_walk_S_004.png",
+        "assets/player_full/velociraptor_walk_S_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        80
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_run_S",
+      "species": "velociraptor",
+      "state": "run",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/velociraptor_run_S_000.png",
+        "assets/player_full/velociraptor_run_S_001.png",
+        "assets/player_full/velociraptor_run_S_002.png",
+        "assets/player_full/velociraptor_run_S_003.png",
+        "assets/player_full/velociraptor_run_S_004.png",
+        "assets/player_full/velociraptor_run_S_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        80
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_attack_S",
+      "species": "velociraptor",
+      "state": "attack",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/velociraptor_attack_S_000.png",
+        "assets/player_full/velociraptor_attack_S_001.png",
+        "assets/player_full/velociraptor_attack_S_002.png",
+        "assets/player_full/velociraptor_attack_S_003.png",
+        "assets/player_full/velociraptor_attack_S_004.png",
+        "assets/player_full/velociraptor_attack_S_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        80
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_death_S",
+      "species": "velociraptor",
+      "state": "death",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/velociraptor_death_S_000.png",
+        "assets/player_full/velociraptor_death_S_001.png",
+        "assets/player_full/velociraptor_death_S_002.png",
+        "assets/player_full/velociraptor_death_S_003.png",
+        "assets/player_full/velociraptor_death_S_004.png",
+        "assets/player_full/velociraptor_death_S_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        80
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_idle_E",
+      "species": "velociraptor",
+      "state": "idle",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/velociraptor_idle_E_000.png",
+        "assets/player_full/velociraptor_idle_E_001.png",
+        "assets/player_full/velociraptor_idle_E_002.png",
+        "assets/player_full/velociraptor_idle_E_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        76,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_hurt_E",
+      "species": "velociraptor",
+      "state": "hurt",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/velociraptor_hurt_E_000.png",
+        "assets/player_full/velociraptor_hurt_E_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        76,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_walk_E",
+      "species": "velociraptor",
+      "state": "walk",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/velociraptor_walk_E_000.png",
+        "assets/player_full/velociraptor_walk_E_001.png",
+        "assets/player_full/velociraptor_walk_E_002.png",
+        "assets/player_full/velociraptor_walk_E_003.png",
+        "assets/player_full/velociraptor_walk_E_004.png",
+        "assets/player_full/velociraptor_walk_E_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        76,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_run_E",
+      "species": "velociraptor",
+      "state": "run",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/velociraptor_run_E_000.png",
+        "assets/player_full/velociraptor_run_E_001.png",
+        "assets/player_full/velociraptor_run_E_002.png",
+        "assets/player_full/velociraptor_run_E_003.png",
+        "assets/player_full/velociraptor_run_E_004.png",
+        "assets/player_full/velociraptor_run_E_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        76,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_attack_E",
+      "species": "velociraptor",
+      "state": "attack",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/velociraptor_attack_E_000.png",
+        "assets/player_full/velociraptor_attack_E_001.png",
+        "assets/player_full/velociraptor_attack_E_002.png",
+        "assets/player_full/velociraptor_attack_E_003.png",
+        "assets/player_full/velociraptor_attack_E_004.png",
+        "assets/player_full/velociraptor_attack_E_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        76,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_death_E",
+      "species": "velociraptor",
+      "state": "death",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/velociraptor_death_E_000.png",
+        "assets/player_full/velociraptor_death_E_001.png",
+        "assets/player_full/velociraptor_death_E_002.png",
+        "assets/player_full/velociraptor_death_E_003.png",
+        "assets/player_full/velociraptor_death_E_004.png",
+        "assets/player_full/velociraptor_death_E_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        76,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_idle_N",
+      "species": "velociraptor",
+      "state": "idle",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/velociraptor_idle_N_000.png",
+        "assets/player_full/velociraptor_idle_N_001.png",
+        "assets/player_full/velociraptor_idle_N_002.png",
+        "assets/player_full/velociraptor_idle_N_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        64
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_hurt_N",
+      "species": "velociraptor",
+      "state": "hurt",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/velociraptor_hurt_N_000.png",
+        "assets/player_full/velociraptor_hurt_N_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        64
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_walk_N",
+      "species": "velociraptor",
+      "state": "walk",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/velociraptor_walk_N_000.png",
+        "assets/player_full/velociraptor_walk_N_001.png",
+        "assets/player_full/velociraptor_walk_N_002.png",
+        "assets/player_full/velociraptor_walk_N_003.png",
+        "assets/player_full/velociraptor_walk_N_004.png",
+        "assets/player_full/velociraptor_walk_N_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        64
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_run_N",
+      "species": "velociraptor",
+      "state": "run",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/velociraptor_run_N_000.png",
+        "assets/player_full/velociraptor_run_N_001.png",
+        "assets/player_full/velociraptor_run_N_002.png",
+        "assets/player_full/velociraptor_run_N_003.png",
+        "assets/player_full/velociraptor_run_N_004.png",
+        "assets/player_full/velociraptor_run_N_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        64
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_attack_N",
+      "species": "velociraptor",
+      "state": "attack",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/velociraptor_attack_N_000.png",
+        "assets/player_full/velociraptor_attack_N_001.png",
+        "assets/player_full/velociraptor_attack_N_002.png",
+        "assets/player_full/velociraptor_attack_N_003.png",
+        "assets/player_full/velociraptor_attack_N_004.png",
+        "assets/player_full/velociraptor_attack_N_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        64
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_death_N",
+      "species": "velociraptor",
+      "state": "death",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/velociraptor_death_N_000.png",
+        "assets/player_full/velociraptor_death_N_001.png",
+        "assets/player_full/velociraptor_death_N_002.png",
+        "assets/player_full/velociraptor_death_N_003.png",
+        "assets/player_full/velociraptor_death_N_004.png",
+        "assets/player_full/velociraptor_death_N_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        64
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_idle_W",
+      "species": "velociraptor",
+      "state": "idle",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/velociraptor_idle_W_000.png",
+        "assets/player_full/velociraptor_idle_W_001.png",
+        "assets/player_full/velociraptor_idle_W_002.png",
+        "assets/player_full/velociraptor_idle_W_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        68,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_hurt_W",
+      "species": "velociraptor",
+      "state": "hurt",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/velociraptor_hurt_W_000.png",
+        "assets/player_full/velociraptor_hurt_W_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        68,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_walk_W",
+      "species": "velociraptor",
+      "state": "walk",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/velociraptor_walk_W_000.png",
+        "assets/player_full/velociraptor_walk_W_001.png",
+        "assets/player_full/velociraptor_walk_W_002.png",
+        "assets/player_full/velociraptor_walk_W_003.png",
+        "assets/player_full/velociraptor_walk_W_004.png",
+        "assets/player_full/velociraptor_walk_W_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        68,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_run_W",
+      "species": "velociraptor",
+      "state": "run",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/velociraptor_run_W_000.png",
+        "assets/player_full/velociraptor_run_W_001.png",
+        "assets/player_full/velociraptor_run_W_002.png",
+        "assets/player_full/velociraptor_run_W_003.png",
+        "assets/player_full/velociraptor_run_W_004.png",
+        "assets/player_full/velociraptor_run_W_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        68,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_attack_W",
+      "species": "velociraptor",
+      "state": "attack",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/velociraptor_attack_W_000.png",
+        "assets/player_full/velociraptor_attack_W_001.png",
+        "assets/player_full/velociraptor_attack_W_002.png",
+        "assets/player_full/velociraptor_attack_W_003.png",
+        "assets/player_full/velociraptor_attack_W_004.png",
+        "assets/player_full/velociraptor_attack_W_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        68,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "velociraptor_death_W",
+      "species": "velociraptor",
+      "state": "death",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/velociraptor_death_W_000.png",
+        "assets/player_full/velociraptor_death_W_001.png",
+        "assets/player_full/velociraptor_death_W_002.png",
+        "assets/player_full/velociraptor_death_W_003.png",
+        "assets/player_full/velociraptor_death_W_004.png",
+        "assets/player_full/velociraptor_death_W_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        68,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
       "name": "parasaurolophus_idle_S",
       "species": "parasaurolophus",
       "state": "idle",

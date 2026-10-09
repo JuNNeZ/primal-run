@@ -15,3 +15,7 @@ Two variants per species/direction; 10 NPC species =>160 assets. Fresh corpses
 use the existing death series; after7s use decayed props, after14–18s use skeletons.
 Food expires independently; bones persist60–70s and fade in the last5s.
 Keep separate current browser evidence from historical GDevelop evidence.
+
+Compy relative-size revision: extra integer2 sampling about the fixed72,72 hip, recorded as native_sample_stride; source sheets intact. Carnotaurus revision2 moves E/W horn bases back over eye sockets. Previous revisions retained.
+
+Per-direction source overrides are allowed to preserve unchanged S/N exports during an E/W correction. Each manifest entry names and hashes the actual source used for that cell, not only the default sheet. Verify unchanged directions against previous export hashes.

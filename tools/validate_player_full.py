@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1];GAME=ROOT/'PRIMAL_RUN_Game'
 manifest=json.loads((GAME/'player_full_manifest.json').read_text());animations=json.loads((GAME/'player_full_animations.json').read_text())['animations']
 palette={tuple(int(c[i:i+2],16) for i in [1,3,5]) for c in json.loads((GAME/'palette.json').read_text())['colors']};errors=[];stats={}
 plan={'idle':4,'walk':6,'run':6,'attack':6,'hurt':2,'death':6}
-if len(manifest)!=840 or len(animations)!=168:errors.append('Full plan requires 840 frames / 168 directional state sequences')
+if len(manifest)!=960 or len(animations)!=192:errors.append('Full plan requires 960 frames / 192 directional state sequences')
 for e in manifest:
  file=GAME/e['file'];im=Image.open(file);a=np.array(im);box=im.getbbox()
  if im.mode!='RGBA' or im.size!=(144,144) or e['size']!=[144,144]:errors.append(e['file']+': native canvas')
@@ -20,7 +20,7 @@ for e in manifest:
  stats[e['file']]={'bbox':box,'origin':e['origin'],'opaque_pixels':int(np.count_nonzero(a[:,:,3]))}
 listed={e['file'] for e in manifest};actual={p.relative_to(GAME).as_posix() for p in (GAME/'assets/player_full').glob('*.png')}
 if actual!=listed:errors.append('Full-player overlay inventory mismatch')
-for species in ['compy','utahraptor','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx']:
+for species in ['velociraptor','compy','utahraptor','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx']:
  for d in ['S','E','N','W']:
   for state,count in plan.items():
    group=[a for a in animations if a['species']==species and a['direction']==d and a['state']==state]
@@ -28,5 +28,11 @@ for species in ['compy','utahraptor','carnotaurus','ankylosaurus','pachycephalos
    anim=group[0];hashes=[hashlib.sha256((GAME/f).read_bytes()).hexdigest() for f in anim['frames']]
    if len(set(hashes))!=count:errors.append(anim['name']+': duplicate drawn poses')
    if anim['loop']!=(state in ['idle','walk','run']):errors.append(anim['name']+': loop plan')
-report={'technical_export_result':'FAIL' if errors else 'PASS','assets':len(manifest),'sequences':len(animations),'errors':errors,'frames':stats,'production_approved':False,'scope':'Complete directional/state inventory, lossless native144 pixels, palette, alpha, padding, hashes, fixed declared hips, separate temporal frames. No anatomical/temporal production certification.','visual_notes':'See player_full_review.html and native grids on both backgrounds. Small generated body/marking variation remains; no mirrored/rotated directions. Legacy PNGs preserved.'}
+# User-authorized prototype exception: North is exactly South turned180 degrees.
+for state,count in plan.items():
+ for frame in range(count):
+  south=np.array(Image.open(GAME/f'assets/player_full/baryonyx_{state}_S_{frame:03}.png'))
+  north=np.array(Image.open(GAME/f'assets/player_full/baryonyx_{state}_N_{frame:03}.png'))
+  if not np.array_equal(north,np.rot90(south,2)):errors.append(f'Baryonyx {state} {frame}: South rotation drift')
+report={'technical_export_result':'FAIL' if errors else 'PASS','assets':len(manifest),'sequences':len(animations),'errors':errors,'frames':stats,'production_approved':False,'scope':'Complete directional/state inventory, lossless native144 pixels, palette, alpha, padding, hashes, fixed declared hips, separate temporal frames. No anatomical/temporal production certification.','visual_notes':'See player_full_review.html and native grids on both backgrounds. Small generated body/marking variation remains; Baryonyx North uses the explicit user-authorized South180 exception (lighting also rotates); other directions remain separately drawn. Legacy PNGs preserved.'}
 (GAME/'player_full_validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k!='frames'},indent=2));raise SystemExit(1 if errors else 0)

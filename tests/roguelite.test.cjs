@@ -1,12 +1,12 @@
 'use strict';
 const {test}=require('node:test'), assert=require('node:assert/strict'), C=require('../PRIMAL_RUN_Game/src/core.js');
 function make(species='compy'){const g=new C.Game({random:()=>.5});g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:123});g.run.enemies=[];g.run.spawnTimer=999;return g;}
-test('fresh saves start as Compy; legacy DNA and upgrades survive unlock migration',()=>{
+test('fresh saves start as Velociraptor; legacy DNA and upgrades survive unlock migration',()=>{
  const values=new Map([[C.SAVE_KEY,JSON.stringify({dna:90,name:'Jonas',upgrades:{health:2},settings:{music:.2}})]]), storage={getItem:k=>values.get(k),setItem:(k,v)=>values.set(k,v)};
- const g=new C.Game({storage});assert.equal(g.save.selectedSpecies,'compy');g.start({seed:7});assert.equal(g.run.maxHealth,83.2);assert.equal(g.run.player.radius,12);assert.equal(g.unlockSpecies('utahraptor'),false);
+ const g=new C.Game({storage});assert.equal(g.save.selectedSpecies,'velociraptor');g.start({seed:7});assert.ok(Math.abs(g.run.maxHealth-93.6)<1e-8);assert.equal(g.run.player.radius,12);assert.equal(g.unlockSpecies('utahraptor'),false);
  g.phase='species';assert.equal(g.unlockSpecies('utahraptor'),true);assert.equal(g.save.dna,65);assert.equal(g.unlockSpecies('utahraptor'),false);assert.equal(g.unlockSpecies('__proto__'),false);g.selectSpecies('utahraptor');
  const reloaded=new C.Game({storage});assert.equal(reloaded.save.selectedSpecies,'utahraptor');reloaded.start();assert.equal(reloaded.run.maxHealth,104);assert.equal(reloaded.save.dna,65);
- assert.equal(C.sanitizeSave({selectedSpecies:'unknown_dinosaur',unlockedSpecies:['unknown_dinosaur']}).selectedSpecies,'compy');
+ assert.equal(C.sanitizeSave({selectedSpecies:'unknown_dinosaur',unlockedSpecies:['unknown_dinosaur']}).selectedSpecies,'velociraptor');
 });
 test('random wilderness is repeatable by seed, varies between seeds and keeps bounded safe habitats',()=>{
  for(let stage=0;stage<4;stage++)for(let seed=1;seed<=20;seed++){
@@ -18,15 +18,15 @@ test('random wilderness is repeatable by seed, varies between seeds and keeps bo
 test('each class has a distinct primary attack; Ankylosaurus tail hits behind it',()=>{
  for(const species of Object.keys(C.PLAYER_SPECIES)){
   const g=make(species),r=g.run;r.player.facing='E';const front=g.spawn('compy',{x:520,y:340}),back=g.spawn('compy',{x:440,y:340});g.resolveBite('E');
-  assert.equal(front.hp,18-C.PLAYER_SPECIES[species].damage);assert.equal(back.hp,species==='ankylosaurus'?6:18);
+  assert.equal(front.hp,C.SPECIES.compy.hp-C.PLAYER_SPECIES[species].damage);assert.equal(back.hp,species==='ankylosaurus'?C.SPECIES.compy.hp-12:C.SPECIES.compy.hp);
  }
 });
 test('ability costs, immunity, contact damage once per animal, and defensive brace differ by class',()=>{
  for(const species of Object.keys(C.PLAYER_SPECIES)){
   const g=make(species),r=g.run;r.player.facing='E';const e=g.spawn('tyrannosaurus',{x:505,y:340});e.cooldown=999;e.speed=0;
   g.step(.01,{pounce:true,x:1});assert.ok(r.pounce>0);assert.ok(r.stamina<100);const hp=e.hp;g.step(.01,{x:1});assert.equal(e.hp,hp,'ability cannot damage same target twice');
-  const health=r.health;g.damage(20);assert.equal(r.health,health-(species==='ankylosaurus'?5:['compy','utahraptor'].includes(species)?0:20));
-  if(['utahraptor','carnotaurus','triceratops','pachycephalosaurus','baryonyx'].includes(species))assert.ok(hp<e.maxHP);else assert.equal(hp,e.maxHP);
+  const health=r.health;g.damage(20);assert.equal(r.health,health-(species==='ankylosaurus'?5:['compy','utahraptor','velociraptor'].includes(species)?0:20));
+  if(['utahraptor','velociraptor','carnotaurus','triceratops','pachycephalosaurus','baryonyx'].includes(species))assert.ok(hp<e.maxHP);else assert.equal(hp,e.maxHP);
  }
 });
 test('mutation pool contains shared and own mutations, never another species skill',()=>{

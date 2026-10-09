@@ -4,18 +4,18 @@ const assert = require('node:assert/strict');
 const C = require('../PRIMAL_RUN_Game/src/core.js');
 const fs = require('node:fs'), path = require('node:path'), crypto = require('node:crypto');
 function storage() { const values = new Map(); return { getItem: key => values.get(key) || null, setItem: (key, value) => values.set(key, value) }; }
-function make(random = () => .5, store = storage()) { const g = new C.Game({ storage: store, random }); g.save.unlockedSpecies.push('utahraptor'); g.selectSpecies('utahraptor'); g.start(); g.run.enemies = []; g.run.spawnTimer = 999; return g; }
+function make(random = () => .5, store = storage()) { const g = new C.Game({ storage: store, random }); g.save.unlockedSpecies.push('utahraptor'); g.selectSpecies('utahraptor'); g.start({campaign:'classic'}); g.run.enemies = []; g.run.spawnTimer = 999; return g; }
 const tick = g => g.step(1 / 60);
 function resolveMutations(g) { while (g.phase === 'mutation') assert.equal(g.choose(g.run.choices[0]), true); }
 
 test('directional bites damage targets ahead, not targets behind; body collision stays fixed', () => {
   const g = make(), r = g.run; r.player.facing = 'E';
-  const front = g.spawn('compy', { x: 520, y: 340 }), back = g.spawn('compy', { x: 440, y: 340 });
+  const front = g.spawn('parasaurolophus', { x: 520, y: 340 }), back = g.spawn('parasaurolophus', { x: 440, y: 340 });
   g.step(1 / 60, { attack: true });
-  assert.equal(front.hp, 18, 'anticipation does not deal damage');
+  assert.equal(front.hp, 30, 'anticipation does not deal damage');
   for (let i = 0; i < 13; i++) tick(g);
-  assert.equal(front.hp, 8); assert.equal(back.hp, 18); assert.equal(r.player.radius, 16);
-  g.step(1 / 60, { attack: true }); assert.equal(front.hp, 8, 'cooldown prevents repeated damage');
+  assert.equal(front.hp, 20); assert.equal(back.hp, 30); assert.equal(r.player.radius, 16);
+  g.step(1 / 60, { attack: true }); assert.equal(front.hp, 20, 'cooldown prevents repeated damage');
 });
 test('bite contact happens once, aim is locked, quick jaws scale the whole animation, and pause freezes it', () => {
   const g = make(), r = g.run; r.player.facing = 'E';
@@ -51,7 +51,7 @@ test('successful bite gives one impact, damage number and a short knockback stag
   e.boss = true; const bossX = e.x; g.resolveBite('E'); assert.equal(e.x, bossX, 'boss is not stunlocked or knocked back');
 });
 test('first biome opens with three weak enemies and ramps composition, caps and cadence toward a 24-meat boss', () => {
-  const g = new C.Game({ random: () => .99 }); g.start(); const r = g.run;
+  const g = new C.Game({ random: () => .99 }); g.start({campaign:'classic'}); const r = g.run;
   const nearby = r.enemies.filter(e => Math.hypot(e.x - r.player.x, e.y - r.player.y) < 600);
   assert.equal(nearby.length, 3); assert.equal(nearby.filter(e => e.kind === 'compy').length, 2);
   assert.ok(r.enemies.length > 25, 'distant habitats contain animals before exploring');
@@ -72,8 +72,8 @@ test('Compy separates from its pack and telegraphs one bite instead of unavoidab
   r.enemies = [a]; a.x = r.player.x + 20; a.y = r.player.y; a.cooldown = 0;
   g.enemyStep(a, .01); assert.equal(a.mode, 'windup'); assert.equal(r.health, 100);
   a.timer = .001; g.enemyStep(a, .01); assert.equal(a.mode, 'bite');
-  g.enemyStep(a, .1); assert.equal(r.health, 93); r.invulnerable = 0;
-  g.enemyStep(a, .01); assert.equal(r.health, 93, 'bite only hits once');
+  g.enemyStep(a, .1); assert.equal(r.health, 97); r.invulnerable = 0;
+  g.enemyStep(a, .01); assert.equal(r.health, 97, 'bite only hits once');
 });
 test('Parasaurolophus flees harmlessly and steers along an edge rather than getting stuck', () => {
   const g = make(), r = g.run; r.player.x = r.map.width - 170; r.player.y = 340; r.player.moving = true;
@@ -130,12 +130,12 @@ test('mutation menu freezes enemies, attacks, pickups and damage; choosing grant
   g.damage(999); assert.equal(g.phase, 'result', 'protection ends after one second');
 });
 test('DNA rolls use species chances and pickups are banked once, surviving reload/death', () => {
-  const s = storage(), g = make(() => .04, s), r = g.run;
+  const s = storage(), g = make(() => .01, s), r = g.run;
   g.spawn('compy', { x: 480, y: 340 }).hp = 0; tick(g); tick(g);
   assert.equal(r.dna, 1); assert.equal(g.save.dna, 1); tick(g); assert.equal(g.save.dna, 1);
   g.damage(1000); assert.equal(g.phase, 'result');
   const reloaded = new C.Game({ storage: s }); assert.equal(reloaded.save.dna, 1);
-  const noDrop = make(() => .05); noDrop.spawn('compy', { x: 200, y: 200 }).hp = 0; tick(noDrop);
+  const noDrop = make(() => .02); noDrop.spawn('compy', { x: 200, y: 200 }).hp = 0; tick(noDrop);
   assert.equal(noDrop.run.pickups.some(p => p.kind === 'dna'), false, '5% boundary is exclusive');
 });
 test('four guaranteed boss awards, transitions preserve mutations, and final boss wins once', () => {
@@ -172,7 +172,7 @@ test('fatal damage stops updates; paused world and stamina do not advance', () =
 });
 test('malformed saves, disabled storage, and injected names remain bounded', () => {
   const x = C.sanitizeSave({ dna: Infinity, upgrades: { health: 999, damage: -20 }, settings: { music: -10 }, scores: [{ score: NaN }, { name: '<img onerror=evil>', score: 25, stage: 100 }] });
-  assert.equal(x.dna, 0); assert.equal(x.upgrades.health, 5); assert.equal(x.upgrades.damage, 0); assert.equal(x.settings.music, 0); assert.equal(x.scores.length, 1); assert.equal(x.scores[0].stage, 4);
+  assert.equal(x.dna, 0); assert.equal(x.upgrades.health, 5); assert.equal(x.upgrades.damage, 0); assert.equal(x.settings.music, 0); assert.equal(x.scores.length, 1); assert.equal(x.scores[0].stage, C.LEVELS.length);
   const g = make(() => .5, { getItem() { throw Error('blocked'); }, setItem() { throw Error('blocked'); } });
   g.addDNA(4); assert.equal(g.save.dna, 4); assert.equal(g.storageAvailable, false); tick(g);
 });
@@ -261,7 +261,7 @@ test('crowded herds, bosses and map-edge collisions resolve without escaping bou
   assert.ok(small.x > 1540); assert.equal(boss.timer, .4); assert.equal(boss.chargeX, 1);
   r.enemies = [];
   const edge = g.spawn('compy', { x: 54, y: 1100 }), other = g.spawn('carnotaurus', { x: 60, y: 1100 });
-  g.separateDinosaurs(); assert.equal(edge.x, 54); assert.ok(other.x - edge.x >= 36.95);
+  g.separateDinosaurs(); assert.equal(edge.x, 42+edge.radius); assert.ok(other.x - edge.x >= edge.radius+other.radius+3.95);
   const x = other.x; g.separateDinosaurs(); assert.equal(other.x, x, 'settled bodies do not jitter');
 });
 

@@ -17,6 +17,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -57,6 +58,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -97,6 +99,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -137,6 +140,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -177,6 +181,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -217,6 +222,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -257,6 +263,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -297,6 +304,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -337,6 +345,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -377,6 +386,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -417,6 +427,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -457,6 +468,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -497,6 +509,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -537,6 +550,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -577,6 +591,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -617,6 +632,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/parasaurolophus_sheet.png",
     "source_sha256": "4ca14b82cfb3aef3ca9b8cc45792eed796fca8c26bc71747078364ee1dbf6be9",
     "source_crop": [
@@ -657,6 +673,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -697,6 +714,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -737,6 +755,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -777,6 +796,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -817,6 +837,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -857,6 +878,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -897,6 +919,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -937,6 +960,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -977,6 +1001,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -1017,6 +1042,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -1057,6 +1083,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -1097,6 +1124,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -1137,6 +1165,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -1177,6 +1206,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -1217,6 +1247,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -1257,6 +1288,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/ankylosaurus_sheet.png",
     "source_sha256": "3e555503cb60a249c5e91e13de7043fbc0245e20d338cd51a8f1a4a62dc7b2af",
     "source_crop": [
@@ -1297,6 +1329,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1337,6 +1370,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1377,6 +1411,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1417,6 +1452,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1457,6 +1493,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1497,6 +1534,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1537,6 +1575,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1577,6 +1616,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1617,6 +1657,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1657,6 +1698,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1697,6 +1739,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1737,6 +1780,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1777,6 +1821,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1817,6 +1862,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1857,6 +1903,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1897,6 +1944,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/deinosuchus_sheet.png",
     "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
     "source_crop": [
@@ -1937,6 +1985,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -1977,6 +2026,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2017,6 +2067,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2057,6 +2108,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2097,6 +2149,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2137,6 +2190,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2177,6 +2231,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2217,6 +2272,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2257,6 +2313,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2297,6 +2354,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2337,6 +2395,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2377,6 +2436,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2417,6 +2477,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2457,6 +2518,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2497,6 +2559,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2537,6 +2600,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/triceratops_horn_revision2.png",
     "source_sha256": "688dda591007e11e19be41d9e1b1dde878832ccad1b77b60621eb999a797c91e",
     "source_crop": [
@@ -2577,6 +2641,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -2617,6 +2682,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -2657,6 +2723,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -2697,6 +2764,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -2737,6 +2805,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -2777,6 +2846,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -2817,6 +2887,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -2857,6 +2928,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -2897,6 +2969,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -2937,6 +3010,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -2977,6 +3051,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -3017,6 +3092,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -3057,6 +3133,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -3097,6 +3174,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -3137,6 +3215,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -3177,6 +3256,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/tyrannosaurus_sheet.png",
     "source_sha256": "2d0eae3ff71473298f5c6f163bd4d0382fbc19a29ee98a3b1bb439d8c604d830",
     "source_crop": [
@@ -3217,6 +3297,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3257,6 +3338,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3297,6 +3379,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3337,6 +3420,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3377,6 +3461,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3417,6 +3502,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3457,6 +3543,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3497,6 +3584,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3537,6 +3625,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3577,6 +3666,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3617,6 +3707,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3657,6 +3748,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3697,6 +3789,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3737,6 +3830,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3777,6 +3871,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3817,6 +3912,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/pachycephalosaurus_sheet.png",
     "source_sha256": "670e05bdefb2ef7a94e7a097be2a1005f4493b2b77ce9a3de705bba98cbed107",
     "source_crop": [
@@ -3857,6 +3953,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -3897,6 +3994,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -3937,6 +4035,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -3977,6 +4076,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4017,6 +4117,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4057,6 +4158,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4097,6 +4199,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4137,6 +4240,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4177,6 +4281,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4217,6 +4322,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4257,6 +4363,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4297,6 +4404,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4337,6 +4445,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4377,6 +4486,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4417,6 +4527,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4457,6 +4568,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/gallimimus_sheet.png",
     "source_sha256": "afa7b34414b0c696a87e8f9577653a80c520f5d50896e743d9da89355772ea1e",
     "source_crop": [
@@ -4497,6 +4609,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4537,6 +4650,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4577,6 +4691,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4617,6 +4732,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4657,6 +4773,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4697,6 +4814,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4737,6 +4855,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4777,6 +4896,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4817,6 +4937,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4857,6 +4978,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4897,6 +5019,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4937,6 +5060,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -4977,6 +5101,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -5017,6 +5142,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -5057,6 +5183,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -5097,6 +5224,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/baryonyx_sheet.png",
     "source_sha256": "f2d1d511c4c8cd84c6c0b4dd65db71fd75f16cf056ff3d16923e72b143c3b473",
     "source_crop": [
@@ -5137,6 +5265,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5153,7 +5282,7 @@
       24,
       45
     ],
-    "export_sha256": "5041c78ca0e6127777010061ab7656bf4be27e100dbf3fe2849a9b756685d89b",
+    "export_sha256": "fde91203a01f2caaea2df21fc2f23ce7ae823e0c32159ce4f1ad0cef1e04c236",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5177,6 +5306,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5193,7 +5323,7 @@
       16,
       40
     ],
-    "export_sha256": "3167ec94beb6c92daf11c525d2751680f40d71580bbc38d1e561ff11267b7991",
+    "export_sha256": "3b30cf5c937395fc3366549858bc2437cfb7989beaecda302d20d4820934b00a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5217,6 +5347,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5233,7 +5364,7 @@
       8,
       32
     ],
-    "export_sha256": "2c6158a6fa6e00f8008522345b6f554223562f2eb7d51306da27846213c6a8c8",
+    "export_sha256": "2a651b86ac91ad7b4b9b407cd54894bdbc3b15bb72a3a9fd72b0d7e387623273",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5257,6 +5388,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5273,7 +5405,7 @@
       0,
       40
     ],
-    "export_sha256": "9ce86d96431b5a7c48e899c0a72c9c28ede1dc149d73b508cd49c90e855860c8",
+    "export_sha256": "4b2ffcbb2a7c2b7c8a55903369f5366afa5062eb3e351375a23c6aeaaad6e03f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5297,6 +5429,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5313,7 +5446,7 @@
       24,
       29
     ],
-    "export_sha256": "f776b9718e92e3736695d0c629cb2f1267e8bf41c118f427cdd5ff7e3c9049ce",
+    "export_sha256": "e895dae3001efe8e4e46fb9748d0a660923164dd284cfa3a05a0bb032f252bba",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5337,6 +5470,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5353,7 +5487,7 @@
       16,
       24
     ],
-    "export_sha256": "17476951ba55429f53a9faa2535577a54f68039f521cd95b34f00be7d8c91e02",
+    "export_sha256": "132955dd11b8da14dbb7f8e81b17bbb750f355544b3c026af6cced21b0712b8b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5377,6 +5511,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5393,7 +5528,7 @@
       8,
       16
     ],
-    "export_sha256": "81432cfd9995c5a4e8b2f1f143135d691c52ea893e57be5b01a4bb5fbd629b7b",
+    "export_sha256": "786fe22e24dc740880ae318187f54d18ea78ac35b5475efeba3982ebc3887dcb",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5417,6 +5552,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5433,7 +5569,7 @@
       0,
       24
     ],
-    "export_sha256": "0c4f32070283986ebd134d8e721bd49b070e7cd9ac8b53eaf4d3a33153b6a475",
+    "export_sha256": "c4474f36f66c039aced8c070919606a31c1705bd896bf3e64e9a8fd8da3ad65e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5457,6 +5593,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5473,7 +5610,7 @@
       24,
       29
     ],
-    "export_sha256": "010187f30888cc6289dc27fe7630fd47dd035f8b83076d8ad1189a5c67b59ec7",
+    "export_sha256": "2130e93a4e3f3e1599fd23759ab2d23a8bb55ad9045afe122b94ce8ca8a79d45",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5497,6 +5634,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "E",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5513,7 +5651,7 @@
       16,
       24
     ],
-    "export_sha256": "30c8fe1c393882d436aaf3b81a8b3aef5f798e9521342e4c928f0a60d2d3b3ef",
+    "export_sha256": "1d728c12d4b3fcce16e1838bf2b6081d9010a426165c24cfaedb1db3233bce6f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5537,6 +5675,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5553,7 +5692,7 @@
       8,
       16
     ],
-    "export_sha256": "a6c974951cb11be62d16918e26f44411d47312e050ba5d6beab2b3dd080147b0",
+    "export_sha256": "b223e944644a7a75dc13b6adece7435ad67e56c058a787176b4871cf3d73020d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5577,6 +5716,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "W",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5593,7 +5733,7 @@
       0,
       24
     ],
-    "export_sha256": "57b2e7576278a65647473c67525e98d839629c32cb680ac6f6115ce0a1e9f57e",
+    "export_sha256": "33369f9f01a6d6639506c077fb371965af2f9dbd79b7bb97297ceba7a467975e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5617,6 +5757,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5633,7 +5774,7 @@
       24,
       29
     ],
-    "export_sha256": "0e230d1237bba4e0253368fa21c6c1edcac474f1d57ccbbc73d6b54444094916",
+    "export_sha256": "d0db7e83d67e9ea90efda618203d5876db1fbbcb7e6a04f0db84dbc396e573dc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5657,6 +5798,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "E",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5673,7 +5815,7 @@
       16,
       24
     ],
-    "export_sha256": "fe51fda77cdabe528b5f50192924675833cd04f5f0c1693460122347af250f14",
+    "export_sha256": "43f1995d6866e3374e06a460854643206172ae4845ee74e3f9ad9cb6798300f8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5697,6 +5839,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5713,7 +5856,7 @@
       8,
       16
     ],
-    "export_sha256": "1c9731767ed4c272a5c3c26fc44d74a84a3db9f1360744c4f526f1f620abb7e8",
+    "export_sha256": "060c09316cbe3d977720c6f5975f5fc66f68997b8312b29749bb08911fbd4d11",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5737,6 +5880,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "W",
+    "native_sample_stride": 2,
     "source": "Source_Generated/corpses/compy_sheet.png",
     "source_sha256": "159ff2b2e20fbcb216235d54bd7026d143464b96deaff069da2c524064463da4",
     "source_crop": [
@@ -5753,7 +5897,7 @@
       0,
       24
     ],
-    "export_sha256": "cf398eec56e468e73f634a8e821f42b6e84080e4614f01867b8450683d98b717",
+    "export_sha256": "aee2f2e860967150263afdff0c385505b14422d090653c815146b30edf316cc9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5777,6 +5921,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
     "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
     "source_crop": [
@@ -5817,8 +5962,9 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "E",
-    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
-    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision2.png",
+    "source_sha256": "44c99b7ac375427e14adb116984fe7ba4dbcd45b9914e4404a9521f910672267",
     "source_crop": [
       320,
       0,
@@ -5833,7 +5979,7 @@
       16,
       40
     ],
-    "export_sha256": "8bd9db8e2edbdedfd34cff1715a419804666bf5f517bd913f73759e6f50d97ba",
+    "export_sha256": "76ea29c8395bbbced6cae5d2351a48a649c689125a6fccfe2416e9b8c90b5ab4",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5857,6 +6003,7 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
     "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
     "source_crop": [
@@ -5897,8 +6044,9 @@
     "stage": "decayed",
     "variant": 0,
     "direction": "W",
-    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
-    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision2.png",
+    "source_sha256": "44c99b7ac375427e14adb116984fe7ba4dbcd45b9914e4404a9521f910672267",
     "source_crop": [
       1088,
       0,
@@ -5913,7 +6061,7 @@
       0,
       40
     ],
-    "export_sha256": "1e115ceb8bfb24f231c40e17ad934af6d9c41d86e87c328115bf853fcba0797f",
+    "export_sha256": "d0e70ecb428d7c07b472f490b96ba594ca30c1e0320931c9e6593434e0ea3346",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5937,6 +6085,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
     "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
     "source_crop": [
@@ -5977,8 +6126,9 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "E",
-    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
-    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision2.png",
+    "source_sha256": "44c99b7ac375427e14adb116984fe7ba4dbcd45b9914e4404a9521f910672267",
     "source_crop": [
       320,
       192,
@@ -5993,7 +6143,7 @@
       16,
       24
     ],
-    "export_sha256": "50c773c6f077456cbb49794844300271e453b908c2750c6929322de965498c71",
+    "export_sha256": "b780436e3e926b7ba3e85590802b599e59a5799bf0f51c2b900b391a3a85723b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6017,6 +6167,7 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
     "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
     "source_crop": [
@@ -6057,8 +6208,9 @@
     "stage": "decayed",
     "variant": 1,
     "direction": "W",
-    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
-    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision2.png",
+    "source_sha256": "44c99b7ac375427e14adb116984fe7ba4dbcd45b9914e4404a9521f910672267",
     "source_crop": [
       1088,
       192,
@@ -6073,7 +6225,7 @@
       0,
       24
     ],
-    "export_sha256": "9ebe0d771060c79b4107fd87eb262a54af974ff55def4782ef2a485ab143d9dc",
+    "export_sha256": "b541d54210f20a59b90eeabc40755f5da063ac3e30a1cbef43cf544bdff93b10",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6097,6 +6249,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
     "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
     "source_crop": [
@@ -6137,8 +6290,9 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "E",
-    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
-    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision2.png",
+    "source_sha256": "44c99b7ac375427e14adb116984fe7ba4dbcd45b9914e4404a9521f910672267",
     "source_crop": [
       320,
       448,
@@ -6153,7 +6307,7 @@
       16,
       24
     ],
-    "export_sha256": "4591a44c372784392098b17587ce47ce34d59d116d7069367c7e658cb221ad51",
+    "export_sha256": "92fd2f193c2a6fc6036d81dad2ff1a885d6b4b286b938970e17dd0dd7f9e677c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6177,6 +6331,7 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
     "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
     "source_crop": [
@@ -6217,8 +6372,9 @@
     "stage": "skeleton",
     "variant": 0,
     "direction": "W",
-    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
-    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision2.png",
+    "source_sha256": "44c99b7ac375427e14adb116984fe7ba4dbcd45b9914e4404a9521f910672267",
     "source_crop": [
       1088,
       448,
@@ -6233,7 +6389,7 @@
       0,
       24
     ],
-    "export_sha256": "d35d40c4fcd1196a83b55cec21d344882264061a774eb42d04bb416425bde65b",
+    "export_sha256": "94f6c8cfb3ced44a364f937e284c84b1eb87bab02443aa629695bf409ce98434",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6257,6 +6413,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "S",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
     "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
     "source_crop": [
@@ -6297,8 +6454,9 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "E",
-    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
-    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision2.png",
+    "source_sha256": "44c99b7ac375427e14adb116984fe7ba4dbcd45b9914e4404a9521f910672267",
     "source_crop": [
       320,
       704,
@@ -6313,7 +6471,7 @@
       16,
       24
     ],
-    "export_sha256": "a93e7e3ba2079f25bb05189b3b9083b46fe1494d550de81d30764b4e938a53ee",
+    "export_sha256": "b9b087ce27e002672da2ed91d1ed3b60880e27a6d45d8914b60a341fc1adc4a8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6337,6 +6495,7 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "N",
+    "native_sample_stride": 1,
     "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
     "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
     "source_crop": [
@@ -6377,8 +6536,9 @@
     "stage": "skeleton",
     "variant": 1,
     "direction": "W",
-    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
-    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision2.png",
+    "source_sha256": "44c99b7ac375427e14adb116984fe7ba4dbcd45b9914e4404a9521f910672267",
     "source_crop": [
       1088,
       704,
@@ -6393,7 +6553,7 @@
       0,
       24
     ],
-    "export_sha256": "347382762ac2fbf098f14b3e29734df0a3c78b0021963cb96ceb88dbcb3d6867",
+    "export_sha256": "72e7dded57b2606077c653be44a3865777240cd73af6f08deed828ffd5bb96a3",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,

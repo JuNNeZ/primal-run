@@ -23,7 +23,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     }
     assert.equal(new Set(terrain.map(t => t.brightness)).size, 4, 'four distinct actual rendered biome views'); assert.ok(terrain.every(t => t.trails === 0 && t.regions > 4 && !t.smoothing));
     await page.evaluate(() => {
-      const g = primalRun.game; g.start(); const r = g.run; r.enemies = []; r.pickups = []; r.spawnTimer = 999;
+      const g = primalRun.game; g.start({campaign:'classic'}); const r = g.run; r.enemies = []; r.pickups = []; r.spawnTimer = 999;
       r.player.x = 1450; r.player.y = 950; r.player.facing = 'E';
       const boss = g.spawn('carnotaurus', { x: 1500, y: 950 }, true); boss.mode = 'recover'; boss.timer = 1.65; boss.facingX = 1; boss.facingY = 0;
       g.attack(); r.attack.elapsed = r.attack.contactTime - .01; g.step(.011); g.pause(); primalRun.update(performance.now());
@@ -57,7 +57,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
 
     // Run a complete fight through shared simulation inputs: no boss-HP edits after spawn.
     const fight = await page.evaluate(() => {
-      const g = primalRun.game; g.start(); const r = g.run; r.enemies = []; r.spawnTimer = 999; r.player.x = 1450; r.player.y = 1050; r.map.rocks = [];r.map.events=[]; // Isolate boss timing from random terrain collisions.
+      const g = primalRun.game; g.start({campaign:'classic'}); const r = g.run; r.enemies = []; r.spawnTimer = 999; r.player.x = 1450; r.player.y = 1050; r.map.rocks = [];r.map.events=[]; // Isolate boss timing from random terrain collisions.
       const boss = g.spawn('carnotaurus', { x: 1500, y: 950 }, true), modes = new Set();
       for (let i = 0; i < 9000 && g.phase === 'playing'; i++) {
         modes.add(boss.bossPhase + ':' + boss.mode); let x = 0, y = 0, attack = false;

@@ -14,3 +14,5 @@ Use tools/export_{player_full,enemy_full,ecology,corpses}.py and matching valida
 Integrate overlays through tools/build_game.py; edit src files, never generated project events. Update manifests/resources after every export.
 Native light/dark previews and validation reports accompany changes. Browser evidence and real GDevelop GDJS evidence are distinct.
 Check legacy source hashes and git diff; commit raw sources and derivatives with clear prototype status.
+
+Declared user exceptions live in the family supplement/config. Baryonyx living N may use South180 (lighting caveat); Compy/Veloci may use recorded integer body sampling about fixed hips. Never silently extend these exceptions to another animal. For closely spaced sheets inspect alpha halos and neighbours; use reviewed tight cell margins/thresholds, never draw missing anatomy.

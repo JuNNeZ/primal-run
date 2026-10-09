@@ -16,3 +16,5 @@ Rare albino rewards are queued epic choices, capped by species/rank, pause norma
 Record statistics from real actions/damage; distinguish attempted attacks, landed attacks, avoided hits and estimated steps. Random DNA percentage excludes guaranteed rewards.
 Save migrations filter known species/IDs and bounded fields. Decorative NPC sex/palette randomness must not consume loot RNG or alter combat stats.
 Add focused regression tests for meaningful mechanics, run the full existing suite in a temporary copy to preserve historical evidence. Update mechanics docs and state limitations.
+
+Use currentLevel()/campaign/levelIndex for progression; stage remains the biome index for terrain/audio. Repeated biomes require distinct level seeds. NPC baseline skills share PLAYER_SPECIES costs/timing, skip bosses and never inherit player mutations. Telegraph geometry must use the actual active speed/duration/contact radius. Secret seed1993 is a one-level route. Compy pack-break fear expires; do not refresh it forever.

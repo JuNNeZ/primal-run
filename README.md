@@ -3,20 +3,20 @@
 Arbejdsrepository til et top-down dinosaur-roguelite i pixel art.
 
 Det aktive spil er **PRIMAL_RUN_Game**: en spilbar udviklingsversion med
-Compy som startart, ni spilbare arter, tilfældige naturkort, fire bosser,
+Velociraptor som startart, ti spilbare arter, otte tilfældige baner og navngivne bosser,
 kød/levels, fælles og artsmutationer, permanente DNA-unlocks og upgrades,
 startmenu, lokale highscores, lydindstillinger og original proceduremusik.
 Den fælles spilkerne kører i browseren og i et GDevelop 5-projekt.
 
-Alle syv fjendearter har komplette serier for idle, gang, løb, angreb, skade
-og død i fire retninger:840 runtime-frames, heraf480 nye.
+Alle ti fjendearter har komplette serier for idle, gang, løb, angreb, skade
+og død i fire retninger:1200 runtime-frames.
 [Se fjendeanimationerne](PRIMAL_RUN_Game/enemy_full_review.html).
 Vand/mudder sænker bevægelse; hold C i buske for at snige/skjule dig.
 Flokke alarmerer hinanden, bytte græsser/hviler, og rovdyr har territorier.
 [Spiltest og balanceændringer1–4](PRIMAL_RUN_Game/PRIORITIES_1_4.md).
 
-Alle fire spilbare arter har 480 nye frames: idle, gang, løb, angreb, skade og død
-i fire retninger. [Se spilleranimationerne](PRIMAL_RUN_Game/player_full_review.html).
+Otte separate spillerarter har960 frames; to arter deler deres fjendeserier.
+Ti spilbare arter har1200 frames for idle, gang, løb, angreb, skade og død. [Se spilleranimationerne](PRIMAL_RUN_Game/player_full_review.html).
 Almindelige fjender kan opgive jagten efter 8 sekunder uden en ny træffer;
 chancen stiger med afstand og tid. Uforstyrrede byttedyr holder cirka 110 pixels
 afstand, når spilleren står stille. Bosser opgiver ikke.
@@ -34,6 +34,8 @@ Arterne har forskellige farver, og stabile kropsradier er gennemgået.
 
 **PRIMAL_RUN_Prototype_Kit** er den bevarede assetpakke og tidligere browserdemo
 med 104 PNG-assets, otte WAV-placeholderlyde og GDevelop-byggeguides.
+
+[Ny rute, Compy-flokke, NPC-evner og seed1993](PRIMAL_RUN_Game/JOURNEY_AND_COMPY.md).
 
 ## Start
 

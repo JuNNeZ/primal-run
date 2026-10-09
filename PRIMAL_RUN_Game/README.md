@@ -1,7 +1,9 @@
 # PRIMAL RUN — første spilbare version
 
-Start som Compy og udforsk fire tilfældige biomer. Jagt, saml kød, vælg
+Start som Velociraptor og udforsk otte tilfældige baner i fire biomer. Jagt, saml kød, vælg
 mutationer, og besejr bosser. DNA låser nye arter op og køber start-upgrades.
+
+[Seneste ændringer og begrænsninger](JOURNEY_AND_COMPY.md).
 
 ## Spil i browseren
 

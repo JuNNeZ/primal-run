@@ -1,0 +1,50 @@
+{
+  "original_preserved": 85,
+  "new_sources": [
+    {
+      "file": "Source_Generated/player_full/velociraptor_E.png",
+      "sha256": "c8968babc1173059b6f3e9033d8581b9d39ab05d1d88ac08eb01feb4c9c34e8c",
+      "status": "prototype_static",
+      "production_approved": false
+    },
+    {
+      "file": "Source_Generated/player_full/velociraptor_N_rejected_revision1.png",
+      "sha256": "3876649c7fe7510322fc70374863242251c3b870ef67b67ef685e9e262ac72b5",
+      "status": "rejected_direction",
+      "production_approved": false
+    },
+    {
+      "file": "Source_Generated/player_full/velociraptor_W.png",
+      "sha256": "e6d44bcd3272e48a36f7a4a75efaf1e6a8e6db7ca99c5975f1ea6577ace6ae84",
+      "status": "prototype_static",
+      "production_approved": false
+    },
+    {
+      "file": "Source_Generated/player_full/velociraptor_N.png",
+      "sha256": "3576ffd48e72fe642f85d31fa4201c5b9559afcbe86b825d890cad783efbb6bf",
+      "status": "rejected_direction",
+      "production_approved": false
+    },
+    {
+      "file": "Source_Generated/player_full/velociraptor_N_revision2.png",
+      "sha256": "daa65829715bd8acb6fd30391c765ae1f82cffd207a5f2d714bb0c00aa4a97a6",
+      "status": "prototype_static",
+      "production_approved": false
+    },
+    {
+      "file": "Source_Generated/player_full/velociraptor_S.png",
+      "sha256": "202d9b0596dc8258357d23f880e7f754a13692d36b55ac5c20eb3873e94e9edb",
+      "status": "prototype_static",
+      "production_approved": false
+    },
+    {
+      "file": "Source_Generated/corpses/carnotaurus_horn_revision2.png",
+      "sha256": "44c99b7ac375427e14adb116984fe7ba4dbcd45b9914e4404a9521f910672267",
+      "status": "prototype_static",
+      "production_approved": false
+    }
+  ],
+  "reference_strategy": "Velociraptor South master from Utah South; E/W use South plus canonical direction, active N uses canonical Utah N only. Carno corpse rev2 uses previous corpse revision plus living South. Bary North explicitly rotates retained South.",
+  "body_sampling": "Compy4/Veloci2 additional integer native sampling; Compy corpse2.",
+  "limitations": "All art remains prototype_static; rejected North studies retained. Bary rotation changes lighting. No current GDJS export test."
+}

@@ -740,12 +740,13 @@
       ]
     ],
     "source_status": "prototype_static",
-    "visual_notes": "Two decomposed and two skeleton poses; remaining slight-side and anatomical variation is unapproved. Declared hip registration is approximate, not production-certified."
+    "visual_notes": "Two decomposed and two skeleton poses; remaining slight-side and anatomical variation is unapproved. Declared hip registration is approximate, not production-certified.",
+    "native_sample_stride": 2
   },
   {
     "species": "carnotaurus",
-    "source": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
-    "source_sha256": "49a1b352c5abb0c544aeb489d65b3dbf810c9636d9f3bb6ef5f34a263ab8ba08",
+    "source": "Source_Generated/corpses/carnotaurus_horn_revision2.png",
+    "source_sha256": "44c99b7ac375427e14adb116984fe7ba4dbcd45b9914e4404a9521f910672267",
     "anchors": [
       [
         [
@@ -822,6 +823,10 @@
     ],
     "source_status": "prototype_static",
     "visual_notes": "Two decomposed and two skeleton poses; remaining slight-side and anatomical variation is unapproved. Declared hip registration is approximate, not production-certified.",
-    "review": "Prototype: side views repaired to two separated brow horns; fixed body and cell anchors retained. Native/runtime review pending."
+    "review": "Revision2 cranial brow horns over eye sockets on E/W corpse/skeleton cells. Previous sources preserved. Prototype art, unapproved. S/N exports retain previous reviewed revision1 source byte-for-byte; only E/W use revision2.",
+    "direction_sources": {
+      "S": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
+      "N": "Source_Generated/corpses/carnotaurus_horn_revision1.png"
+    }
   }
 ]

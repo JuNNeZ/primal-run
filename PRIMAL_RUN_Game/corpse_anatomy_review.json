@@ -2,7 +2,7 @@
   "status": "prototype_reviewed_not_approved",
   "scope": "Only Triceratops/Carnotaurus decayed and skeleton props, not living frames",
   "triceratops": "North rear frill occludes nasal horn: two visible brow tips, removed midline frill spike; revision1 rejected, revision2 active. Explicit disconnected neighbouring tail exclusion recorded.",
-  "carnotaurus": "E/W show two spaced brow horns, no nasal unicorn horn; revision1 active.",
+  "carnotaurus": "E/W brow horn bases moved back over eye sockets, clear snout; revision2 active, both previous sources retained.",
   "review": [
     "source atlases",
     "all160 native static props on light/dark backgrounds",

@@ -16,3 +16,5 @@ Use image generation for anatomical edits. Extraction must not draw missing anat
 All generated atlases remain prototype_static and unapproved until the visual and runtime gates are approved. File checks cannot certify anatomy.
 Inspect revised source sheets, native exports on light/dark backgrounds and the actual animated renderer. Document remaining defects and rejected revisions.
 Run the corresponding exporter and validator, then build:game and relevant browser animation tests in a temporary copy.
+
+Respect the named target family: corpse/skeleton corrections must not redraw living frames. For a side-only change, preserve S/N byte-for-byte via directional source overrides. Carnotaurus corpse revision2 is an E/W cranial-horn correction; previous S/N remain active. Reject and retain whole sheets with wrong-facing rows before exporting. A native technical PASS is not an anatomy approval.

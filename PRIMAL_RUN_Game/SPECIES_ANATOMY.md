@@ -5,6 +5,7 @@ art direction, not fossil claims. Anatomy stays consistent in every state.
 
 | Core ID | Limbs / silhouette | Head / tail landmarks |
 |---|---|---|
+| velociraptor | Two hind legs, feathered forearms; one tail | Slender small starter, narrow skull and sickle claw; no horns |
 | compy | Two hind legs, two small arms; smallest biped | Narrow head, long thin tail; no horns |
 | utahraptor | Two hind legs, two arms; sickle claws | Teal player identity, feather shapes; no horns |
 | carnotaurus | Two hind legs, two very small arms | Exactly two brow horns above eyes; no nasal horn |
@@ -40,3 +41,5 @@ audit checklist, not a claim all legacy frames are anatomically approved.
 Baryonyx north: one continuous tapering tail behind pelvis; two short hindlegs
 with visible toes must not look like a second tail. Inspect native extraction
 for disconnected neighbouring tail fragments as well as drawn anatomy.
+
+2026-10-09 user exception: Baryonyx living North now losslessly rotates South180; lighting rotates too. Compy has extra integer4 body sampling and radius4; Velociraptor integer2 and radius12. Raw sources and rejected Veloci N directions are retained.

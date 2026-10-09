@@ -61,20 +61,20 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     await page.locator('[data-mutation]').first().click();
     await page.keyboard.up('d'); await page.keyboard.up('Space');
     await page.waitForFunction(() => primalRun.game.phase === 'playing');
-    for (let stage = 0; stage < 4; stage++) {
+    for (let stage = 0; stage < 8; stage++) {
       await page.evaluate(() => {
         const g = primalRun.game, r = g.run; r.enemies = []; r.pickups = []; r.xp = 0;
-        r.meat = PrimalCore.STAGES[r.stage].target;
+        r.meat = g.currentLevel().target;
       });
       await page.waitForFunction(() => primalRun.game.run.enemies.some(e => e.boss));
       await page.waitForSelector('.boss-hud:not([hidden])');
       await page.evaluate(() => { primalRun.game.run.enemies.find(e => e.boss).hp = 0; });
       await page.waitForSelector('[data-action="next"]');
-      await page.locator('[data-action="next"]').click();await page.waitForFunction(expected=>primalRun.game.phase==='result'||primalRun.game.run.stage===expected,stage+1);
+      await page.locator('[data-action="next"]').click();await page.waitForFunction(expected=>primalRun.game.phase==='result'||primalRun.game.run.levelIndex===expected,stage+1);
     }
     await page.waitForFunction(() => primalRun.game.phase === 'result');
     assert.equal(await page.evaluate(() => primalRun.game.run.result.victory), true);
-    assert.ok(await page.evaluate(() => primalRun.game.save.dna >= 90));
+    assert.ok(await page.evaluate(() => primalRun.game.save.dna >= 151));
     await page.locator('[data-action="shop"]').click();
     await page.locator('[data-buy="health"]').click();
     assert.equal(await page.evaluate(() => primalRun.game.save.upgrades.health), 1);
@@ -120,6 +120,6 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     assert.match(await denied.locator('.save-status').innerText(), /kun denne session/);
     await deniedContext.close();
     assert.deepEqual(errors, [], 'no page errors'); assert.deepEqual(failures, [], 'all resources load');
-    console.log('PASS: ' + (process.env.PRIMAL_EXPECT_GDEVELOP ? 'GDevelop GDJS export' : 'browser game') + ' · menu/name · sound controls/music · movement/bite/meat · pause · mutations · 4 bosses/victory · DNA shop · reload/highscore · death/restart · storage denial');
+    console.log('PASS: ' + (process.env.PRIMAL_EXPECT_GDEVELOP ? 'GDevelop GDJS export' : 'browser game') + ' · menu/name · sound controls/music · movement/bite/meat · pause · mutations · 8 bosses/victory · DNA shop · reload/highscore · death/restart · storage denial');
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });
