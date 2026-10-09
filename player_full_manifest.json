@@ -31217,8 +31217,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 0,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       0,
       0,
@@ -31233,7 +31233,7 @@
       -15,
       18
     ],
-    "export_sha256": "d6f34f972d119484b10c2c43f442abeadbd058a8d1f45199a70d9e3f39804df8",
+    "export_sha256": "8b047e838cb4324ad9bf501094723eff42950c715607726775793e1f43cf2e09",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31257,8 +31257,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 1,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       224,
       0,
@@ -31273,7 +31273,7 @@
       -37,
       18
     ],
-    "export_sha256": "5c86bc0002e3ff5f1de384df0f7d9128777788bb0e178c46775bb40aa85989dd",
+    "export_sha256": "785a5b7c548c20e4a2bed4785f4fcc75ac104693132224ac918ce9823625c00e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31297,8 +31297,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 2,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       480,
       0,
@@ -31313,7 +31313,7 @@
       -15,
       18
     ],
-    "export_sha256": "c570b7a257153dd05058b41d061ed90c6b2b61bf84b9a9a29dc4b0a9f18941be",
+    "export_sha256": "d2141489e202dedf24efe4b664603881dfabbf27cbb3bca6103ad31c406bc14c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31337,8 +31337,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 3,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       736,
       0,
@@ -31353,7 +31353,7 @@
       -3,
       18
     ],
-    "export_sha256": "98adb8a9e7ec6afb182156c94c56d84683d8acc11b4689c423aa4be2933cb06d",
+    "export_sha256": "f99bba9e4d575058918d7698346b46c6c6e2d96036263c8258985eb63dde6356",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31377,8 +31377,8 @@
     "direction": "N",
     "state": "hurt",
     "frame": 0,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       992,
       0,
@@ -31393,7 +31393,7 @@
       10,
       18
     ],
-    "export_sha256": "704c5c11722fbe220a8c8a16f14fd3f19023096b2ce8b75cd913117b3a24896d",
+    "export_sha256": "56e7a7323261f10734cd531d50347ad9dcbf2dccdf00e2b3e0de5e6f61ddf6f8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31417,8 +31417,8 @@
     "direction": "N",
     "state": "hurt",
     "frame": 1,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       1248,
       0,
@@ -31433,7 +31433,7 @@
       10,
       18
     ],
-    "export_sha256": "479b701daf4c1cec2222829980935f9f89d3284b48d26cf165be825c0037c872",
+    "export_sha256": "f9f6d19237fed613d9f1d2c4d72418fbb725c5c0c67a72262a27fdf1dbaeaf9d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31457,8 +31457,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 0,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       0,
       173,
@@ -31473,7 +31473,7 @@
       -8,
       2
     ],
-    "export_sha256": "f3c9b53d61c622ad4cee80aa4a3e00b1cb6a30b18d0cba2333673efe8108d1e6",
+    "export_sha256": "6b52b5712bc83f10fef1e33a5c753f854f8b4d06de653e178e44b6c349d2231f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31497,8 +31497,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 1,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       224,
       173,
@@ -31513,7 +31513,7 @@
       -18,
       2
     ],
-    "export_sha256": "7eaccf50e31fa2102d653013091fa3b549f666907837bcb6e2d327c86457ca4e",
+    "export_sha256": "9aa8745c42b858630940d0802cc4c12d4a033ab49d78eb3894c7bebaeaa5bd5c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31537,8 +31537,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 2,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       480,
       173,
@@ -31553,7 +31553,7 @@
       -14,
       2
     ],
-    "export_sha256": "99e1a1bb3d49f26cb26ed38297e8df12c532d55c01344d7b66a76cf95792f0cd",
+    "export_sha256": "e6143094d83ea8a49db83cf1173174b6d93238cde2fe4088eab37eb08da12b3a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31577,8 +31577,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 3,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       736,
       173,
@@ -31593,7 +31593,7 @@
       -2,
       2
     ],
-    "export_sha256": "9d4fd79c1117752ff4b1432e7fea855c898ab487dc5fed731f1ec00d1b54b4c0",
+    "export_sha256": "19f1e070fc760991b3ef2fd17673bc53422add0d84b80a3fabb7151390fc7fbc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31617,8 +31617,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 4,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       992,
       173,
@@ -31633,7 +31633,7 @@
       0,
       2
     ],
-    "export_sha256": "9fb5ce99cb90ba3399e1302c3975bc20d9a7d598f59af5772a6521d61d946ed4",
+    "export_sha256": "b464ddbc3696f5c28b25bc4322769a86680b32eeaedc5b3f8cdbfa821a39a5e7",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31657,8 +31657,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 5,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       1248,
       173,
@@ -31673,7 +31673,7 @@
       8,
       2
     ],
-    "export_sha256": "4d5b5438230970482c0a726b39a1355cfe27714cdbcfce424226b2da409c22ba",
+    "export_sha256": "ef23c0f444dd83fa4fa0665613082b46cd8ee1f56cb85239b9d10ed5b45a964a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31697,8 +31697,8 @@
     "direction": "N",
     "state": "run",
     "frame": 0,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       0,
       378,
@@ -31713,7 +31713,7 @@
       -6,
       2
     ],
-    "export_sha256": "80f809df1d1e463b64d03aa0c85d24d0b204ccdc9e978a2ebf754649522c896b",
+    "export_sha256": "557cc132825181975efca897d17e6c055d1a0e3134d809208b37c811197a5749",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31737,8 +31737,8 @@
     "direction": "N",
     "state": "run",
     "frame": 1,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       224,
       378,
@@ -31753,7 +31753,7 @@
       -23,
       2
     ],
-    "export_sha256": "7252f739c04dbdc6d4e62fc2592c1ec645ba66842b6282004a90dfe123da7464",
+    "export_sha256": "5f1e200d0ccdb4a483a5533a3e6067623431538f6e2ffb95c5297944c73aacbc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31777,8 +31777,8 @@
     "direction": "N",
     "state": "run",
     "frame": 2,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       480,
       378,
@@ -31793,7 +31793,7 @@
       -13,
       2
     ],
-    "export_sha256": "b5229e57f690fae51a675c24d02e2ce4992660e86a782c7e2a3eb8b65dfd2281",
+    "export_sha256": "7d0b55952b1db204a23ff69377068c40f532318a3cfa902495885d3c44278e09",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31817,8 +31817,8 @@
     "direction": "N",
     "state": "run",
     "frame": 3,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       736,
       378,
@@ -31833,7 +31833,7 @@
       -6,
       2
     ],
-    "export_sha256": "e6329f3f57ae858281e1f853841e44a1f09e198fe40b341c7772ffae0d23e76f",
+    "export_sha256": "5af9e50a04681d4b263c46766a67f940f5c32d3a5b2e481823b1691dabb19150",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31857,8 +31857,8 @@
     "direction": "N",
     "state": "run",
     "frame": 4,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       992,
       378,
@@ -31873,7 +31873,7 @@
       0,
       2
     ],
-    "export_sha256": "9cc20351c9aaff5b0603f13d527d8e4e565f6da557f63551e2a5a34116fea7dc",
+    "export_sha256": "9785501a791cb51ef6f6da4d61e668e0687751dd6dc8d3b1f32fa7abcbb20fa9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31897,8 +31897,8 @@
     "direction": "N",
     "state": "run",
     "frame": 5,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       1248,
       378,
@@ -31913,7 +31913,7 @@
       6,
       2
     ],
-    "export_sha256": "f5daa5fcfb4e326f6770cc6dd7c8a2125fdad3926fcfe8057c876cefbd19818d",
+    "export_sha256": "222a8c432a323b47ad753c7c6a414772bb0526a9b8fdf5ed2e7b3e35d0b10dff",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31937,8 +31937,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 0,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       0,
       582,
@@ -31953,7 +31953,7 @@
       -8,
       2
     ],
-    "export_sha256": "afeb4a1c335bd3c5675656654350469b57c7d42f85c49a7c27723b37f2745b4f",
+    "export_sha256": "ad44fc621636428ad13cd27d912ed37e2a07216567382298cf9f68340ed2239b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -31977,8 +31977,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 1,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       224,
       582,
@@ -31993,7 +31993,7 @@
       -19,
       2
     ],
-    "export_sha256": "e649c8199f8d4727c8cafb0a76b925750c5a1c16eaf052de0cf7fb0a35a76108",
+    "export_sha256": "6e3b407cb8602d99522d32570c0131629644d396ceb0820e703e67c352f1f754",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -32017,8 +32017,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 2,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       480,
       582,
@@ -32033,7 +32033,7 @@
       -14,
       2
     ],
-    "export_sha256": "d2f104c289972812956be099c1e596a4268301ccd9c5624ef8692412d9e06d53",
+    "export_sha256": "723621d759bd765edee20ebb640dfba52c6b28caecbd3fd2cdb2592159fce595",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -32057,8 +32057,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 3,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       736,
       582,
@@ -32073,7 +32073,7 @@
       -2,
       2
     ],
-    "export_sha256": "0d186e5f6f6595f41ca75066978904b15a58465cf38d847a4beaf7a5cb129f6a",
+    "export_sha256": "58b026f348e5b1aaaa26581f34604207ed068a10018c74b104ef7aa1d42cf987",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -32097,8 +32097,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 4,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       992,
       582,
@@ -32113,7 +32113,7 @@
       5,
       2
     ],
-    "export_sha256": "e1236f3be7aca4b65145f7723a22a282c297ec2c6d1ceb9e30e537fb267b897e",
+    "export_sha256": "1c8304334ae73241619a2885d7e04ee6b68b0ff0c6a909bebdc7b779bb0ca92e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -32137,8 +32137,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 5,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       1248,
       582,
@@ -32153,7 +32153,7 @@
       8,
       2
     ],
-    "export_sha256": "c526061a8f962807c741b3f2f44a64f9322cbaeda2d9c2634f34e82bf9b54eaa",
+    "export_sha256": "2186dd70f0b63e5a5296ab51a53fb49a7d5cf1fc65c827b041c8d18985a9dcb9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -32177,8 +32177,8 @@
     "direction": "N",
     "state": "death",
     "frame": 0,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       0,
       787,
@@ -32193,7 +32193,7 @@
       -8,
       2
     ],
-    "export_sha256": "7c3882d478568e597b371b9eb9769e3a02f5f903e57ea5ee6f50214c1883b2cd",
+    "export_sha256": "c38972a07c76786f07df4dcfc856106aa22db87608a0dd7bf7408af6a08ccdb6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -32217,8 +32217,8 @@
     "direction": "N",
     "state": "death",
     "frame": 1,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       224,
       787,
@@ -32233,7 +32233,7 @@
       -19,
       2
     ],
-    "export_sha256": "91481ddc8bbb4ccfdb87d765feaaaf86d2d6d8dbef3ab93ff64bacdde0bbbe22",
+    "export_sha256": "b3e4884e6702a23fe173bc61c73f6e0ff66f9efbbbdf800c3aad3939dfacd4e2",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -32257,8 +32257,8 @@
     "direction": "N",
     "state": "death",
     "frame": 2,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       480,
       787,
@@ -32273,7 +32273,7 @@
       -14,
       2
     ],
-    "export_sha256": "67f654a15480f3d6b4498c37fa641f10be5948816e47e7554f1eb918449e9f57",
+    "export_sha256": "663a1acf4e76699675df9374a5bd95ce5b013b025b8ec35abda98351c0755976",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -32297,8 +32297,8 @@
     "direction": "N",
     "state": "death",
     "frame": 3,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       736,
       787,
@@ -32313,7 +32313,7 @@
       -2,
       2
     ],
-    "export_sha256": "33bba15b72b9a58958322bfa02d2054787ed97e96fc7c8aa87218c27b8e63231",
+    "export_sha256": "408acb478f0f2e9a7a62ae1d872b1404846dfb96ee6f47e7d85becf5046c3704",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -32337,8 +32337,8 @@
     "direction": "N",
     "state": "death",
     "frame": 4,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       992,
       787,
@@ -32353,7 +32353,7 @@
       5,
       2
     ],
-    "export_sha256": "49a43f34cdbcb88eee092f00a0c92781546cdd7aff1901a85a6ac67b98720f24",
+    "export_sha256": "abe808c4506f3044ca29080e4e02fe80415dc44b033eac51e6a13ebaf8740931",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -32377,8 +32377,8 @@
     "direction": "N",
     "state": "death",
     "frame": 5,
-    "source": "Source_Generated/player_full/baryonyx_N.png",
-    "source_sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+    "source": "Source_Generated/player_full/baryonyx_N_single_tail_revision.png",
+    "source_sha256": "35e2d3fae8ccb12f37bf7717f299ccd76464012c2ce505fb8be020b53587630f",
     "source_crop": [
       1248,
       787,
@@ -32393,7 +32393,7 @@
       8,
       2
     ],
-    "export_sha256": "7e19530ccc075197d7c3c1b110384aa8854ae3b6d020b5e04729464e2dd96458",
+    "export_sha256": "5f2eff837582acfe4aa3be2ce8d32d281ec3609eaabb7f0ffe2c2c6495074a28",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,

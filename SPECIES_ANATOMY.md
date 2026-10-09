@@ -36,3 +36,7 @@ existing declared integer scale of two. Do not normalize every animal to one siz
 
 Status: existing and revised generated sheets are prototypes. This table is an
 audit checklist, not a claim all legacy frames are anatomically approved.
+
+Baryonyx north: one continuous tapering tail behind pelvis; two short hindlegs
+with visible toes must not look like a second tail. Inspect native extraction
+for disconnected neighbouring tail fragments as well as drawn anatomy.

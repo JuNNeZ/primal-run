@@ -1,9 +1,8 @@
 {
-  "source_commit": "61d91e7c536fe1e1d893c31925d0af94324a278e",
+  "source_commit": "2a1e7a396021bca799b20e0a79cb0e0f41d00505",
   "source_branch": "codex/primal-run-playable",
   "date": "2026-10-09",
-  "scope": "ecology, corpse props, species book, factual statistics and bot research",
-  "validation": "97 core tests,16 browser checks,3 kit checks; standalone Chromium; official GDJS NOT RUN",
-  "art": "prototype/unapproved",
-  "balance_experiments": 972
+  "scope": "living Baryonyx north single-tail anatomy and visible water-only fishing",
+  "validation": "100 core tests,17 browser checks,3 kit checks; standalone Chromium; official GDJS NOT RUN",
+  "art": "prototype/unapproved"
 }
