@@ -322,3 +322,25 @@ was possible because the engine binaries are absent in this restored machine.
 Validation:87 core,14 standalone game browser suites,3 preserved kit suites;
 1080 actual player frames and exact nine-class portrait palettes verified.
 Current report:PRIMAL_RUN_Game/carrion_rex_runtime_report.json.
+
+## Research/ecology/corpse follow-up · 2026-10-09
+
+Read PRIMAL_RUN_Game/RESEARCH_AND_ECOLOGY.md for current mechanics and experiment
+commands; focused project skills are routed in AGENTS.md. Corpse overlay160 PNGs
+adds10 species x2 decomposition states x4 directions x2 variants. Selected raw
+source hashes/anchors and rejected Triceratops revision are preserved under
+Source_Generated/corpses. Only corpse horn art is repaired; living animation
+atlases/exports stay byte-identical to the previous release. Original85 recovered
+source hashes still pass. All new art remains prototype/unapproved.
+
+New core systems: wounded ordinary AI/trails, persistent fieldGuide, actual run
+and stage stats, factual killer/end-scene compositions, queued albino epic rewards,
+NPC sex/elite/albino palettes, lightFrame/metabolicRush tradeoffs. No new scent
+or NPC-versus-NPC attacks. There are9 playable species, unchanged from last release.
+
+Balance CLI uses shared Game.step. Stored sample matrix:162 normal180s budgets,
+540 ordinary T.rex duels,270 stage4 boss duels. Compare coreSHA256 before relying
+on old samples; normal runs include timeouts and bots are not human win rates.
+The newest current validation is standalone Chromium; no fresh official GDJS
+export was run because the engine binaries are absent from this restored machine.
+Historical GDevelop evidence is not current validation.

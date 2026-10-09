@@ -23,8 +23,8 @@ test('territorial predators warn before entry, pursue attacks for eight seconds,
  const g=setup(),r=g.run,e=g.spawn('carnotaurus',{x:1000,y:700});r.player.x=1250;r.player.y=700;g.enemyStep(e,.02);assert.equal(e.mode,'warning');assert.equal(e.alert,false);
  g.provoke(e);r.player.x=1700;r.seconds=7.99;g.behaviorRandom=()=>1;g.enemyStep(e,.02);assert.ok(e.alert);e.x=1150;r.seconds=8;g.enemyStep(e,.02);assert.equal(e.mode,'return');assert.equal(e.alert,false);
 });
-test('death series remain for 14–18 simulation seconds, cap memory, and freeze during mutation choices',()=>{
- const g=setup(),r=g.run;for(let i=0;i<35;i++)g.kill(g.spawn('compy',{x:1000,y:700}));assert.equal(r.corpses.length,32);r.enemies=[];g.phase='mutation';const before=JSON.stringify(r.corpses);g.step(.05);assert.equal(JSON.stringify(r.corpses),before);g.phase='playing';for(let i=0;i<610;i++)g.step(.05);assert.equal(r.corpses.length,0);
+test('death series remain for 60–70 simulation seconds, cap memory, and freeze during mutation choices',()=>{
+ const g=setup(),r=g.run;for(let i=0;i<35;i++)g.kill(g.spawn('compy',{x:1000,y:700}));assert.equal(r.corpses.length,32);r.enemies=[];g.phase='mutation';const before=JSON.stringify(r.corpses);g.step(.05);assert.equal(JSON.stringify(r.corpses),before);g.phase='playing';for(let i=0;i<1460;i++)g.step(.05);assert.equal(r.corpses.length,0);
 });
 test('momentum refunds are capped per cast even when a Carnotaurus hits an entire pack',()=>{
  const g=setup('carnotaurus'),r=g.run;r.mutations.momentum=3;for(let i=0;i<5;i++)g.spawn('parasaurolophus',{x:500+i*2,y:340});g.step(.02,{x:1,pounce:true});assert.equal(r.abilityRefund,12);assert.ok(r.stamina<=67,'45 stamina cost keeps a minimum 33 stamina net cost');

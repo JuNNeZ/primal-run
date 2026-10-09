@@ -89,3 +89,13 @@ Alle assets er prototyper. Action-poser og enemy-stillbilleder er ikke færdige
 animationer. Den nye GDevelop-runtime er funktionelt testet, men det godkender
 ikke grafikkens stil, anatomi eller animationskvalitet. Balance, mobilstyring og
 endelige animationer kræver videre spiltest. Se sprite-regler og rapporter.
+
+## Current ecology, corpse art and research workflow
+
+See [RESEARCH_AND_ECOLOGY.md](PRIMAL_RUN_Game/RESEARCH_AND_ECOLOGY.md) for the
+species book, wounded animals, rare rewards, run statistics/cinematics and
+seeded balance CLI. [Balance samples](PRIMAL_RUN_Game/balance_runs/README.md)
+include settings, outcomes and caveats. Corpse assets use their own
+[rule](PRIMAL_RUN_Game/SPRITE_RULES_CORPSES.md); living sprites are preserved.
+Focused recipes in [.agents/skills](.agents/skills) cover sprites, asset generation,
+mechanics and balance; AGENTS.md routes future work to the relevant recipe.

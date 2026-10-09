@@ -24,7 +24,7 @@
     const catalog = root.PrimalAssets, previewMap = C.createMap(0);
     let bindingAction=null,seedInput='',joystick={x:0,y:0},joyPointer=null,joyOrigin={x:0,y:0},padPrevious=[];
     let menuClock=0;const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
-    const menuScene=()=>['menu','species','shop','scores','help'].includes(game.phase) || game.phase==='settings' && returnPhase==='menu';
+    const menuScene=()=>['menu','species','shop','scores','help','guide'].includes(game.phase) || game.phase==='settings' && returnPhase==='menu';
     function listen(target, name, callback, options) { target.addEventListener(name, callback, options); cleanups.push(() => target.removeEventListener(name, callback, options)); }
     function toast(text) { shell.querySelector('.toast').textContent = text; toastUntil = performance.now() + 2600; }
     function displayImageURL(path) { prepareImage(path); return skins[path] ? (displayURLs[path] || (displayURLs[path] = skins[path].toDataURL())) : resolve(path); }
@@ -54,7 +54,7 @@
           <label class="name-label">DIT NAVN<input id="player-name" maxlength="20" autocomplete="nickname" value="${htmlEscape(game.save.name)}"></label>
           <p class="selected-dino">${C.PLAYER_SPECIES[game.save.selectedSpecies].name} · ${C.PLAYER_SPECIES[game.save.selectedSpecies].skill}</p>
           <label class="name-label">KORT-SEED (tomt = tilfældigt)<input id="map-seed" inputmode="numeric" maxlength="10" value="${htmlEscape(seedInput)}"></label>${button('start', ready ? 'START JAGTEN <span>→</span>' : 'INDLÆSER…', 'primary')}
-          <div class="menu-grid">${button('species', 'Vælg dinosaur')}${button('shop', 'DNA-laboratorium <b>' + game.save.dna + '</b>')}${button('scores', 'Highscores')}${button('settings', 'Indstillinger')}${button('help', 'Sådan spiller du')}</div>
+          <div class="menu-grid">${button('species', 'Vælg dinosaur')}${button('shop', 'DNA-laboratorium <b>' + game.save.dna + '</b>')}${button('scores', 'Highscores')}${button('guide','Artsbog')}${button('settings', 'Indstillinger')}${button('help', 'Sådan spiller du')}</div>
           <p class="fine">Føde giver levels. Bosser åbner næste biome. DNA beholdes, når du dør.</p></section>`;
         screen.querySelector('[data-action="start"]').disabled = !ready;
       } else if (phase === 'intro') {
@@ -70,6 +70,8 @@
           const path = C.playerFrame(id,'idle','S',0);
           return `<article class="${selected ? 'selected-species' : ''}">${imageTag(path)}<h2>${d.name}</h2><p>${d.text}</p><small>${d.hp} LIV · ${d.damage} SKADE · ${d.speed} FART</small><button data-species="${id}" ${selected || !unlocked && game.save.dna < d.cost ? 'disabled' : ''}>${selected ? 'VALGT' : unlocked ? 'VÆLG' : 'LÅS OP · ' + d.cost + ' DNA'}</button></article>`;
         }).join('')}</div><p class="fine">Et fantasiunivers: arterne kommer fra forskellige perioder. Compy: sen Jura. Utahraptor: tidlig Kridt. Baryonyx: tidlig Kridt. De øvrige arter: sen Kridt. Deinosuchus er en krokodilleslægt.</p>${button('menu', '← Tilbage')}</section>`;
+      } else if (phase === 'guide') {
+        screen.innerHTML=`<section class="panel">${heading('DALENS ARTSBOG','Observerede dinosaurer','Nye arter og angreb registreres, når du ser dem tæt på. Gemmes mellem runs.')}<div class="upgrade-grid">${Object.keys(C.SPECIES).map(id=>{const entry=game.save.fieldGuide[id];return `<article><h2>${entry?C.SPECIES_LABELS[id]:'Ukendt art'}</h2>${entry?`<p>Observeret i: ${entry.biomes.map(i=>C.STAGES[i].name).join(', ')}</p><p>Føde: ${['parasaurolophus','ankylosaurus','triceratops','pachycephalosaurus'].includes(id)?'Planter':id==='gallimimus'?'Planter og smådyr':id==='baryonyx'?'Fisk og kød':'Kød'}</p><p>Observerede angreb: ${entry.attacks.map(a=>({bite:'Bid',charge:'Stormløb',slam:'Slag/tramp',roar:'Brøl'})[a]).join(', ')||'Ingen endnu'}</p>`:'<p>Udforsk dalen for at lære arten at kende.</p>'}</article>`;}).join('')}</div>${button('menu','← Tilbage')}</section>`;
       } else if (phase === 'shop') {
         screen.innerHTML = `<section class="panel">${heading('PERMANENT EVOLUTION', 'DNA-laboratoriet', 'Permanente forbedringer til alle arter. Arts-unlocks og mutationer er to forskellige dele af din evolution.')}<div class="bank">${imageTag('assets/ui/dna.png')}<b>${game.save.dna} DNA</b></div><div class="lab-summary"><h2>${C.PLAYER_SPECIES[game.save.selectedSpecies].name}</h2><p>${C.PLAYER_SPECIES[game.save.selectedSpecies].text}</p><p>Startliv: ${Math.round(C.PLAYER_SPECIES[game.save.selectedSpecies].hp*(1+.02*game.save.upgrades.health))} · Angreb: ${(C.PLAYER_SPECIES[game.save.selectedSpecies].damage*(1+.02*game.save.upgrades.damage)).toFixed(1)} · Evne: ${C.PLAYER_SPECIES[game.save.selectedSpecies].abilityCost} stamina</p>${button('species','Artsarkiv · '+game.save.unlockedSpecies.length+' / '+Object.keys(C.PLAYER_SPECIES).length+' arter')}</div><div class="upgrade-grid">${C.UPGRADES.map(u => {
           const rank = game.save.upgrades[u.id], cost = C.upgradeCost(rank);
@@ -84,7 +86,7 @@
       } else if (phase === 'paused') {
         screen.innerHTML = `<section class="panel compact">${heading('TAG EN PAUSE', 'Jagten venter', 'Kort-seed: ' + r.seed)}${button('resume', 'FORTSÆT · Esc', 'primary')}${button('share', 'DEL KORT-SEED')}<label>Seed-link<input class="seed-link" readonly value="${htmlEscape((()=>{const url=new URL(location.href);url.searchParams.set('seed',r.seed);return url.href;})())}"></label><div class="actions">${button('settings', 'Indstillinger')}${button('abandon', 'Afslut run')}</div><p class="fine">Opsamlet DNA er allerede gemt. Afslut run registrerer din score.</p></section>`;
       } else if (phase === 'mutation') {
-        screen.innerHTML = `<section class="panel">${heading('DINO-LEVEL ' + r.level, 'Vælg din mutation', 'SPILLET ER PAUSET — du er sikker, mens du vælger. Klik eller tryk 1, 2, 3. Efter valget er du beskyttet i ét sekund.')}<div class="mutation-grid">${r.choices.map((id, i) => {
+        screen.innerHTML = `<section class="panel">${heading(r.rareSelection?'SJÆLDEN ALBINO · EPISK GENOM':'DINO-LEVEL ' + r.level, 'Vælg din mutation', 'SPILLET ER PAUSET — du er sikker, mens du vælger. Klik eller tryk 1, 2, 3. Efter valget er du beskyttet i ét sekund.')}<div class="mutation-grid">${r.choices.map((id, i) => {
           const m = C.MUTATIONS.find(m => m.id === id);
           const rarity = C.MUTATION_RARITIES[m.rarity];
           return `<button data-mutation="${id}" style="--rarity:${rarity.color}" class="rarity-card"><strong class="rarity-name">${({common:'•',uncommon:'◆',rare:'✦',epic:'★',legendary:'♛'})[m.rarity]} ${rarity.name.toUpperCase()}</strong>${imageTag('assets/ui/' + m.icon + '.png')}<small>VALG ${i + 1} · RANG ${r.mutations[id]} → ${r.mutations[id] + 1} / ${m.max}</small><h2>${m.name}</h2><small>${m.species ? C.PLAYER_SPECIES[m.species].name.toUpperCase() : "FÆLLES MUTATION"}</small><p>${m.text}</p>${r.mutations[id]>0?'<small>BYG VIDERE · '+Math.round(Math.min(.4,.2*r.mutations[id])*100)+' % VALGVÆGT</small>':''}</button>`;
@@ -93,20 +95,28 @@
         screen.innerHTML = `<section class="panel compact">${heading('VALGFRI RISIKO · SPILLET ER PAUSET', 'En bevogtet rede', 'Tag sjælden føde og væk den nærliggende elitevogter, eller lad reden være.')}<div class="actions"><button data-explore="leave">LAD DEN VÆRE</button><button class="primary" data-explore="take">TAG FØDEN · +${8 + r.stage * 2}</button></div></section>`;
       } else if (phase === 'cleared') {
         const stage = C.STAGES[r.stage];
-        screen.innerHTML = `<section class="panel compact">${heading('BOSS BESEJRET', stage.bossName + ' er faldet', '+' + stage.dna + ' DNA er gemt. Din dinosaur bliver stærkere.')}<div class="bank">${imageTag('assets/ui/dna.png')}<b>${game.save.dna} DNA</b></div>${button('next', r.stage === 3 ? 'AFSLUT JAGTEN →' : 'NÆSTE BIOME →', 'primary')}<p class="fine">${r.stage === 3 ? 'Alle fire biomer er erobret.' : 'Du beholder mutationerne og genvinder 30 % af dit maksimale liv.'}</p></section>`;
+        screen.innerHTML = `<section class="panel compact">${heading('BOSS BESEJRET', stage.bossName + ' er faldet', '+' + stage.dna + ' DNA er gemt. Din dinosaur bliver stærkere.')}${statisticsHTML(true)}<div class="bank">${imageTag('assets/ui/dna.png')}<b>${game.save.dna} DNA</b></div>${button('next', r.stage === 3 ? 'AFSLUT JAGTEN →' : 'NÆSTE BIOME →', 'primary')}<p class="fine">${r.stage === 3 ? 'Alle fire biomer er erobret.' : 'Du beholder mutationerne og genvinder 30 % af dit maksimale liv.'}</p></section>`;
       } else if (phase === 'result') {
         const result = r.result;
-        screen.innerHTML = `<section class="panel compact">${heading(result.victory ? 'DALENS NYE KONGE' : 'EVOLUTIONEN FORTSÆTTER', result.victory ? 'Jagten er vundet' : 'Jagten er slut', htmlEscape(result.name) + ' · Bane ' + result.stage + ' · ' + result.bosses + ' bosser')}${result.victory ? "" : "<img class=\"death-preview\" alt=\"Din dinosaur efter jagten\">"}<div class="result-stats"><div><small>SCORE</small><b>${result.score}</b></div><div><small>DNA I RUN</small><b>+${r.dna}</b></div><div><small>TID</small><b>${timeLabel(result.seconds)}</b></div></div>${button('start', 'NY JAGT →', 'primary')}<div class="actions">${button('shop', 'DNA-laboratorium')}${button('scores', 'Highscores')}${button('menu', 'Hovedmenu')}</div></section>`;
+        screen.innerHTML = `<section class="panel compact">${heading(result.victory ? 'DALENS NYE KONGE' : 'EVOLUTIONEN FORTSÆTTER', result.victory ? 'Jagten er vundet' : 'Jagten er slut', htmlEscape(result.name) + ' · Bane ' + result.stage + ' · ' + result.bosses + ' bosser')}${result.victory ? "" : "<img class=\"death-preview\" alt=\"Din dinosaur efter jagten\">"}<div class="result-stats"><div><small>SCORE</small><b>${result.score}</b></div><div><small>DNA I RUN</small><b>+${r.dna}</b></div><div><small>TID</small><b>${timeLabel(result.seconds)}</b></div></div><p class="run-title">${htmlEscape(game.runSummary())}</p><canvas class="end-scene" width="480" height="180" aria-label="Afslutningsscene"></canvas><p>${result.victory?'Jagten er fuldført':r.lastHit?'Dræbt af '+C.SPECIES_LABELS[r.lastHit.kind]:'Ingen registreret dræber'}</p>${statisticsHTML(false)}${button('start', 'NY JAGT →', 'primary')}<div class="actions">${button('shop', 'DNA-laboratorium')}${button('scores', 'Highscores')}${button('menu', 'Hovedmenu')}</div></section>`;
       } else if (phase === 'error') {
         screen.innerHTML = `<section class="panel">${heading('INDLÆSNING FEJLEDE', 'Assets mangler')}<p>Kontrollér, at assets-mappen følger med spillet. Genindlæs siden efter rettelsen.</p><p class="load-error"></p></section>`;
       }
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
       shell.querySelector('.save-status').textContent = game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session';
     }
+    function statisticsHTML(stageOnly){const st=game.statistics(stageOnly),fields={kills:'Dinosaurer nedlagt',fishCaught:'Fisk fanget',plantsEaten:'Planteportioner spist',meatEaten:'Kødportioner spist',staminaSpent:'Stamina brugt',attacks:'Angreb',landedAttacks:'Angreb med træffer',abilities:'Evner / undvigelser',avoidedHits:'Undgåede kontakttræffere',damageDealt:'Effektiv skade',damageTaken:'Modtaget skade',healing:'Healing',food:'Føde spist',dna:'DNA',distance:'Distance (pixels)',steps:'Estimerede skridt',secretsMissed:'Hemmeligheder overset'};return `<details class="run-details"><summary>${stageOnly?'Denne banes':'Hele jagtens'} statistik</summary><div class="stat-grid">${Object.entries(fields).map(([key,label])=>`<div><small>${label}</small><b>${Math.round(st[key]||0)}</b></div>`).join('')}<div><small>Træfprocent</small><b>${st.attackAccuracy.toFixed(1)} %</b></div><div><small>Faktisk DNA-dropandel</small><b>${st.actualDNADropRate.toFixed(1)} % (${st.drops}/${st.dropRolls})</b></div></div><p>Mutationer: ${Object.entries(st.mutations).map(([id,rank])=>C.MUTATIONS.find(m=>m.id===id).name+' '+rank).join(' · ')||'Ingen'}</p><p class="fine">Skridt estimeres som distance / 24 pixels. DNA-andelen er observerede drops, ikke en ekstra luck-bonus.</p></details>`;}
+    let endSceneStarted=0,endSceneRun=null;
+    function drawEndScene(now){const scene=screen.querySelector('.end-scene');if(!scene)return;const r=game.run;if(endSceneRun!==r){endSceneRun=r;endSceneStarted=now;}const t=(now-endSceneStarted)/1000,dc=scene.getContext('2d');dc.imageSmoothingEnabled=false;dc.fillStyle='#151b19';dc.fillRect(0,0,480,180);dc.fillStyle='#28372a';dc.fillRect(0,130,480,50);
+      const reduced=reducedMotion.matches||game.save.settings.reducedMotion,phase=reduced?2:Math.min(3,t),killer=r.result.victory?null:r.lastHit,charge=killer?.mode==='charge',slam=killer?.mode==='slam',style=charge?'stormløb':slam?'slag':'bid';scene.dataset.scene=style;scene.dataset.species=r.species;
+      const paint=(path,x,y,scale=1)=>{prepareImage(path);const im=skins[path]||images[path],meta=catalog[path];if(!im){if(meta)loadImage(path).catch(()=>{});return;}dc.drawImage(im,Math.round(x-meta.origin[0]*scale),Math.round(y-meta.origin[1]*scale),im.width*scale,im.height*scale);};
+      const state=r.result.victory?'idle':phase<1?'hurt':'death',frame=state==='death'?Math.min(5,Math.floor((phase-1)*8)):state==='hurt'?0:Math.floor(phase*4)%4;paint(C.playerFrame(r.species,state,'W',Math.max(0,frame)),310,100,r.species==='tyrannosaurus'?2:1);
+      if(killer){const state=phase<1?'run':phase<1.5?'attack':'idle',frame=state==='idle'?0:Math.min(5,Math.floor((phase%1)*6));paint(enemyFrame(killer.kind,state,'E',frame),phase<1?70+phase*(charge?170:140):charge?240:210,slam?110:100,['tyrannosaurus','deinosuchus'].includes(killer.kind)?2:1);}
+    }
     const prepared=new Set();
     function prepareImage(path){if(prepared.has(path)||!images[path])return;prepared.add(path);const image=images[path];
         const species=Object.keys(C.SPECIES_COLORS).find(id=>path.includes('/'+id+'_'));
-        if(species) {
+        if(species&&!path.startsWith('assets/corpses/')) {
           const layer=document.createElement('canvas');layer.width=image.width;layer.height=image.height;const lc=layer.getContext('2d');lc.drawImage(image,0,0);const pixels=lc.getImageData(0,0,image.width,image.height),mapping=C.SPECIES_COLORS[species];
           for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[pixels.data[i],pixels.data[i+1],pixels.data[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('');const color=mapping[key];if(color){pixels.data[i]=parseInt(color.slice(0,2),16);pixels.data[i+1]=parseInt(color.slice(2,4),16);pixels.data[i+2]=parseInt(color.slice(4,6),16);}}
           lc.putImageData(pixels,0,0);skins[path]=layer;
@@ -118,12 +128,17 @@
         }
 
     }
-    function sprite(path, x, y, alpha = 1, flash = false, rotation = 0, scale = 1) {
+    const npcVariants=new Map();
+    function npcVariant(path,variant){const key=path+':'+variant;if(npcVariants.has(key))return npcVariants.get(key);const source=skins[path]||images[path];if(!source)return null;const layer=document.createElement('canvas');layer.width=source.width;layer.height=source.height;const lc=layer.getContext('2d');lc.drawImage(source,0,0);const pixels=lc.getImageData(0,0,layer.width,layer.height),swaps={male:{'799447':'a8b15b','69a4a0':'3c7180','b98252':'d4a36c','929387':'626861'},elite:{'799447':'de954a','69a4a0':'e9b75a','929387':'de954a','b98252':'e9b75a'}};
+      for(let i=0;i<pixels.data.length;i+=4){if(!pixels.data[i+3])continue;const rgb=[...pixels.data.slice(i,i+3)],key=rgb.map(v=>v.toString(16).padStart(2,'0')).join('');let value=swaps[variant]?.[key];if(variant==='albino'&&Math.max(...rgb)>55)value=Math.max(...rgb)>145?'e8ece1':'bab8a2';if(value)for(let j=0;j<3;j++)pixels.data[i+j]=parseInt(value.slice(j*2,j*2+2),16);}
+      lc.putImageData(pixels,0,0);npcVariants.set(key,layer);if(npcVariants.size>128)npcVariants.delete(npcVariants.keys().next().value);return layer;
+    }
+    function sprite(path, x, y, alpha = 1, flash = false, rotation = 0, scale = 1, variant=null) {
       prepareImage(path);const image = flash ? flashes[path] : images[path], meta = catalog[path]; if(!image&&meta){loadImage(path).catch(()=>{});return;}if(!meta)return;
       ctx.globalAlpha = alpha;
       const paint=(img,dx,dy)=>{if(scale===1)ctx.drawImage(img,dx,dy);else ctx.drawImage(img,dx,dy,img.width*scale,img.height*scale);};
-      if(rotation){ctx.save();ctx.translate(Math.round(x),Math.round(y));ctx.rotate(rotation);paint(image,-meta.origin[0]*scale,-meta.origin[1]*scale);if(!flash&&skins[path])paint(skins[path],-meta.origin[0]*scale,-meta.origin[1]*scale);ctx.restore();}
-      else {paint(image,Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);if(!flash&&skins[path])paint(skins[path],Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);}
+      if(rotation){ctx.save();ctx.translate(Math.round(x),Math.round(y));ctx.rotate(rotation);paint(image,-meta.origin[0]*scale,-meta.origin[1]*scale);if(!flash&&(variant?npcVariant(path,variant):skins[path]))paint(variant?npcVariant(path,variant):skins[path],-meta.origin[0]*scale,-meta.origin[1]*scale);ctx.restore();}
+      else {paint(image,Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);if(!flash&&(variant?npcVariant(path,variant):skins[path]))paint(variant?npcVariant(path,variant):skins[path],Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);}
       ctx.globalAlpha = 1;
     }
     function insect(p,time) {
@@ -302,7 +317,7 @@
           const path=enemyFrame(e.kind,state,e.direction,frame);
           objects.push({...e,enemy:e,path,rotation:0});
         }
-        for(const corpse of r.corpses||[])objects.push({...corpse,corpse:true,path:enemyFrame(corpse.kind,'death',corpse.direction,Math.min(5,Math.floor(corpse.age*8)))});
+        for(const corpse of r.corpses||[]){const stage=corpse.age>=(corpse.foodLifetime||18)?'skeleton':corpse.age>=7?'decayed':null,prop=stage?'assets/corpses/'+corpse.kind+'_'+stage+'_'+corpse.direction+'_'+(corpse.poseVariant||0)+'.png':null;objects.push({...corpse,corpse:true,path:prop&&catalog[prop]?prop:enemyFrame(corpse.kind,'death',corpse.direction,Math.min(5,Math.floor(corpse.age*8)))});}
         const p = r.player;
         const animationState = r.deathTime >= 0 ? 'death' : r.attack ? 'attack' : r.hurt > 0 ? 'hurt' : p.moving ? (r.pounce > 0 ? 'run' : 'walk') : 'idle';
         const animationDirection = r.attack && animationState === 'attack' ? r.attack.facing : p.facing;
@@ -323,16 +338,16 @@
         if (o.player || o.enemy) { ctx.strokeStyle = o.player ? '#69a4a0' : o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869' : '#8eaa60'; ctx.lineWidth = o.player ? 4 : 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), o.player ? 24 : o.enemy.boss ? o.radius + 14 : o.radius + 6, 10, 0, 0, Math.PI * 2); ctx.stroke(); }
         if (o.enemy && o.enemy.boss) { ctx.strokeStyle = '#e9b75a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), 35, 17, 0, 0, Math.PI * 2); ctx.stroke(); }
         const alpha = o.corpse ? Math.max(0,Math.min(1,((o.lifetime||30)-o.age)/5)) : o.player && r.hidden ? .6 : o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
-        sprite(o.path, o.x, o.y, alpha, false, o.rotation, o.visualScale || 1);
+        sprite(o.path, o.x, o.y, alpha, false, o.rotation, o.visualScale || 1,o.enemy?(o.enemy.rare?'albino':o.enemy.elite?'elite':o.enemy.sex==='male'?'male':null):null);
         if (o.player && r.jonas) { ctx.fillStyle = '#e9b75a'; const x = Math.round(o.x), y = Math.round(o.y) - 46; ctx.fillRect(x - 9, y, 18, 5); ctx.fillRect(x - 9, y - 5, 4, 5); ctx.fillRect(x - 2, y - 7, 4, 7); ctx.fillRect(x + 5, y - 5, 4, 5); }
-        if (o.enemy) label((o.enemy.mode === 'return' ? '↩ ' : o.enemy.boss ? '◆ ' : o.enemy.elite ? '★ ' : o.enemy.rare ? '✦ ' : o.enemy.damage ? '⚠ ' : '○ ') + C.SPECIES_LABELS[o.enemy.kind], o.x, o.y - enemyLabelOffset(o.enemy), o.enemy.damage ? '#ed7869' : '#8eaa60');
+        if (o.enemy) label((o.enemy.mode === 'return' ? '↩ ' : o.enemy.boss ? '◆ ' : o.enemy.elite ? '★ ' : o.enemy.rare ? '✦ ' : o.enemy.damage ? '⚠ ' : '○ ') + C.SPECIES_LABELS[o.enemy.kind]+(o.enemy.sex==='male'?' ♂':' ♀'), o.x, o.y - enemyLabelOffset(o.enemy), o.enemy.damage ? '#ed7869' : '#8eaa60');
         if(o.enemy&&!o.enemy.alert&&['graze','rest','warning','scavenge'].includes(o.enemy.mode))label(({graze:o.enemy.kind==='parasaurolophus'?'GRÆSSER':'SØGER FØDE',rest:'HVILER',warning:'TERRITORIUM · HOLD AFSTAND',scavenge:'SØGER KADAVERE'})[o.enemy.mode],o.x,o.y-enemyLabelOffset(o.enemy)-18,o.enemy.mode==='warning'?'#e9b75a':'#b6c0a9');
         if (o.enemy && o.enemy.boss) {
           if (o.enemy.mode === 'recover') {
             const e = o.enemy; ctx.strokeStyle = '#a2d4c1'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(Math.round(e.x - e.facingX * 24), Math.round(e.y - e.facingY * 24), 18, 0, Math.PI * 2); ctx.stroke(); label('ÅBEN FLANKE · +50 %', e.x, e.y - enemyLabelOffset(e) - 18, '#a2d4c1');
           } else if (o.enemy.mode === 'enrage') label('RASERI · FASE 2', o.x, o.y - enemyLabelOffset(o.enemy) - 18, '#de954a');
         }
-        if(o.corpse&&o.age>7&&images[o.path]){if(!decomposition[o.path]){const layer=document.createElement('canvas'),im=images[o.path];layer.width=im.width;layer.height=im.height;const lc=layer.getContext('2d');lc.drawImage(im,0,0);lc.globalCompositeOperation='source-in';lc.fillStyle='#151b19';lc.fillRect(0,0,layer.width,layer.height);decomposition[o.path]=layer;}const im=decomposition[o.path],scale=o.visualScale||1,meta=catalog[o.path];ctx.globalAlpha=alpha*Math.min(.65,(o.age-7)/8);ctx.drawImage(im,Math.round(o.x)-meta.origin[0]*scale,Math.round(o.y)-meta.origin[1]*scale,im.width*scale,im.height*scale);ctx.globalAlpha=1;}
+        if(o.corpse&&o.age>7&&!o.path.startsWith('assets/corpses/')&&images[o.path]){if(!decomposition[o.path]){const layer=document.createElement('canvas'),im=images[o.path];layer.width=im.width;layer.height=im.height;const lc=layer.getContext('2d');lc.drawImage(im,0,0);lc.globalCompositeOperation='source-in';lc.fillStyle='#151b19';lc.fillRect(0,0,layer.width,layer.height);decomposition[o.path]=layer;}const im=decomposition[o.path],scale=o.visualScale||1,meta=catalog[o.path];ctx.globalAlpha=alpha*Math.min(.65,(o.age-7)/8);ctx.drawImage(im,Math.round(o.x)-meta.origin[0]*scale,Math.round(o.y)-meta.origin[1]*scale,im.width*scale,im.height*scale);ctx.globalAlpha=1;}
         if (o.enemy && o.enemy.hit > 0) sprite(o.path, o.x, o.y, .7 * o.enemy.hit / .15, true, o.rotation, o.visualScale || 1);
         if (o.enemy && o.enemy.hp < o.enemy.maxHP && !o.enemy.boss) { ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, 40, 4); ctx.fillStyle = '#c45f45'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, Math.round(40 * o.enemy.hp / o.enemy.maxHP), 4); }
       }
@@ -406,7 +421,7 @@
       for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast(['FASE 2 · Dobbelt stormløb og tramp!', 'FASE 2 · Hurtigere baghold og stor halebølge!', 'FASE 2 · Dobbelt hornstorm!', 'FASE 2 · Dobbeltbid og brøl!'][game.run.stage]); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if(event.type==='discovery')toast(event.text); if (event.type === 'dna') toast('+' + event.amount + ' DNA · gemt'); }
       const musicRun=game.run;audio.setScene({phase:game.phase==='settings'&&returnPhase==='paused'?'paused':game.phase,stage:musicRun?musicRun.stage:0,boss:!!(musicRun&&musicRun.bossSpawned&&!musicRun.bossDefeated),health:musicRun?musicRun.health:1,maxHealth:musicRun?musicRun.maxHealth:1,victory:!!(musicRun&&musicRun.result&&musicRun.result.victory)});audio.sync();
       shell.style.setProperty('--hud-scale',game.save.settings.hudScale);shell.style.setProperty('--text-scale',game.save.settings.textScale);
-      renderScreen(); draw();
+      renderScreen(); draw();drawEndScene(now);
       if(game.phase==='playing'&&game.run&&game.run.eating){const r=game.run,x=Math.round(r.player.x-r.view.x),y=Math.round(r.player.y-r.view.y+102);ctx.fillStyle='#101713';ctx.fillRect(x-42,y,84,8);ctx.fillStyle='#fff1c9';ctx.fillRect(x-40,y+2,80*r.eating.progress,4);}
       shell.querySelector('.toast').hidden = now > toastUntil;
       shell.querySelector('.save-status').textContent = game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · kun denne session';
@@ -418,14 +433,14 @@
       if (target.dataset.buy) { game.purchase(target.dataset.buy); renderScreen(true); return; }
       if (target.dataset.species) { const id = target.dataset.species; if (!game.save.unlockedSpecies.includes(id)) game.unlockSpecies(id); game.selectSpecies(id); renderScreen(true); return; }
       if (target.dataset.explore) { game.explore(target.dataset.explore === 'take'); keys.clear(); accumulator = 0; renderScreen(); return; }
-      if (target.dataset.mutation) { game.choose(target.dataset.mutation); keys.clear(); accumulator = 0; last = 0; renderScreen(); return; }
+      if (target.dataset.mutation) { game.choose(target.dataset.mutation); keys.clear(); accumulator = 0; last = 0; renderScreen(true); return; }
       const binding=e.target.closest('[data-binding]');if(binding){bindingAction=binding.dataset.binding;binding.textContent='Tryk en ny tast · Esc annullerer';return;}
       if(target.dataset.binding){bindingAction=target.dataset.binding;target.textContent='Tryk en ny tast · Esc annullerer';return;}
       const action = target.dataset.action;
       if (action) e.preventDefault();
       if (action === 'start' && ready) { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value);const seed=shell.querySelector('#map-seed');if(seed)seedInput=seed.value.trim();if(seedInput&&!/^\d{1,10}$/.test(seedInput)){toast('Seed skal være et heltal fra 0 til 4294967295');return;}if(Number(seedInput)>4294967295){toast('Seed er for stort');return;}game.phase = 'intro'; }
       else if (action === 'begin' && ready && game.phase === 'intro'){target.disabled=true;await preload({species:game.save.selectedSpecies,stage:0});game.start(seedInput?{seed:Number(seedInput)}:{});}
-      else if (['shop', 'scores', 'help', 'species'].includes(action)) { if (game.phase === 'menu') { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); } game.phase = action; }
+      else if (['shop', 'scores', 'help', 'species','guide'].includes(action)) { if (game.phase === 'menu') { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); } game.phase = action; }
       else if(action==='share'){const url=new URL(location.href);url.searchParams.set('seed',game.run.seed);navigator.clipboard?.writeText(url.href).then(()=>toast('Seed-link kopieret')).catch(()=>toast('Markér seed-linket og kopiér det'));if(!navigator.clipboard)toast('Markér seed-linket og kopiér det');}
       else if (action === 'settings') { returnPhase = game.phase === 'paused' ? 'paused' : 'menu'; const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); game.phase = 'settings'; }
       else if (action === 'back') game.phase = returnPhase;
@@ -450,10 +465,10 @@
       if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
       audio.unlock();
       if (e.code === 'Escape' && !e.repeat) {
-        if (game.phase === 'playing') game.pause(); else if (game.phase === 'paused') game.resume(); else if (game.phase === 'settings') game.phase = returnPhase; else if (['intro', 'help', 'shop', 'scores', 'species'].includes(game.phase)) game.phase = 'menu';
+        if (game.phase === 'playing') game.pause(); else if (game.phase === 'paused') game.resume(); else if (game.phase === 'settings') game.phase = returnPhase; else if (['intro', 'help', 'shop', 'scores', 'species','guide'].includes(game.phase)) game.phase = 'menu';
         renderScreen(); return;
       }
-      if (game.phase === 'mutation' && /^Digit[123]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); keys.clear(); accumulator = 0; last = 0; renderScreen(); return; }
+      if (game.phase === 'mutation' && /^Digit[123]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); keys.clear(); accumulator = 0; last = 0; renderScreen(true); return; }
       if(e.code==='Space'){e.preventDefault();if(game.phase!=='playing'){keys.delete('Space');return;}}
       if (game.phase !== 'playing') return;
       if (e.code === game.save.bindings.interact && !e.repeat) { e.preventDefault(); game.interact(); accumulator = 0; renderScreen(); return; }
@@ -475,11 +490,11 @@
       const image = new Image(); image.onload = () => { images[path] = image;
         resolveLoad(); }; image.onerror = () => reject(Error(path)); image.src = resolve(path);
     });}
-    function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[]}={}){const animals=new Set([species,...C.BIOMES[stage].animals,C.STAGES[stage].boss,...kinds]);return Promise.all(Object.keys(catalog).filter(path=>!/(player_full|enemy_full|enemy_animations|enemies|player_combat)\//.test(path)||Array.from(animals).some(id=>path.includes('/'+id+'_'))).map(loadImage));}
-    function evictUnused(stage,species){const allowed=new Set([species,...C.BIOMES[stage].animals,C.STAGES[stage].boss]);for(const path of Object.keys(images))if(/(player_full|enemy_full|enemy_animations|enemies|player_combat)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];prepared.delete(path);}}
+    function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[]}={}){const animals=new Set([species,...C.BIOMES[stage].animals,C.STAGES[stage].boss,...kinds]);return Promise.all(Object.keys(catalog).filter(path=>!/(player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||Array.from(animals).some(id=>path.includes('/'+id+'_'))).map(loadImage));}
+    function evictUnused(stage,species){const allowed=new Set([species,...C.BIOMES[stage].animals,C.STAGES[stage].boss]);for(const path of Object.keys(images))if(/(player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);prepared.delete(path);}}
     const querySeed=new URL(location.href).searchParams.get('seed');if(querySeed&&/^\d{1,10}$/.test(querySeed)&&Number(querySeed)<=4294967295)seedInput=querySeed;
     const load = preload().then(() => { ready = true; renderScreen(true); return true; }).catch(e => { game.phase = 'error'; renderScreen(true); screen.querySelector('.load-error').textContent = e.message; return false; });
-    const api = { preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,decodedBytes:[...Object.values(images),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition)].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
+    const api = { preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,decodedBytes:[...Object.values(images),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values()].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
     root.primalRun = api; renderScreen(true); if (!driven) animationId = requestAnimationFrame(frame);
     return api;
   }

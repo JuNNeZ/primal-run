@@ -34,6 +34,9 @@ def build():
     fishing_overlay = GAME / 'fishing_manifest.json'
     if fishing_overlay.exists():
         manifest += json.loads(fishing_overlay.read_text())
+    corpse_overlay = GAME / 'corpse_manifest.json'
+    if corpse_overlay.exists():
+        manifest += json.loads(corpse_overlay.read_text())
     if len({entry['file'] for entry in manifest}) != len(manifest):
         raise SystemExit('Duplicate resource paths in combined manifest')
     for folder in ('assets', 'sounds', 'Source_Generated'):

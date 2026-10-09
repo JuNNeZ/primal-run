@@ -31,7 +31,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     });
     await page.waitForTimeout(80);
     assert.ok((await page.locator('.boss-tip').textContent()).includes('ÅBEN FLANKE')); assert.equal(await page.locator('.boss-hud').getAttribute('data-boss-phase'), '1');
-    assert.equal(await page.locator('canvas[aria-label]').getAttribute('data-hit-stop'), 'true'); assert.ok(+(await page.locator('canvas[aria-label]').getAttribute('data-particles')) > 0);
+    assert.equal(await page.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-hit-stop'), 'true'); assert.ok(+(await page.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-particles')) > 0);
     assert.equal(await page.evaluate(() => primalRun.game.run.enemies[0].hp), 205, 'recovery flank bonus uses actual contact frame');
     const frozen = await page.evaluate(() => JSON.stringify(primalRun.game.run)); await page.waitForTimeout(100); assert.equal(await page.evaluate(() => JSON.stringify(primalRun.game.run)), frozen);
     if (evidence) await page.screenshot({ path: path.join(evidence, 'bite-impact.png') });

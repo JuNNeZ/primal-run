@@ -68,3 +68,13 @@ integer coordinates. Do not resize with smoothing or invent missing frames durin
 extraction. Update the export manifest whenever assets change. Run
 `python validate_sprites.py` after exporting, and inspect every changed asset on
 both light and dark backgrounds. Report any remaining source limitations plainly.
+
+## Focused project skills
+For anatomy/animation work read `.agents/skills/primal-sprites/SKILL.md`; for
+generation/export/integration read `.agents/skills/primal-assets/SKILL.md`.
+For gameplay/AI/UI/persistence read `.agents/skills/primal-mechanics/SKILL.md`;
+for simulation read `.agents/skills/primal-balance/SKILL.md`. Read only the relevant
+family supplement and files for the task, then expand if a dependency requires it.
+Species anatomy: PRIMAL_RUN_Game/SPECIES_ANATOMY.md. Corpse overlay supplement:
+PRIMAL_RUN_Game/SPRITE_RULES_CORPSES.md. These routes do not replace the
+project-wide rules or automatically approve generated art.

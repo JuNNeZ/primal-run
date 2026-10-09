@@ -6,12 +6,12 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
  await page.goto(process.env.PRIMAL_GAME_URL||await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/index.html')));await page.waitForSelector('[data-action="start"]:not(:disabled)');
  assert.equal(await page.evaluate(()=>primalRun.game.save.selectedSpecies),'compy');
  await page.locator('[data-action="start"]').click();await page.locator('[data-action="begin"]').click();await page.waitForFunction(()=>primalRun.game.phase==='playing');await page.waitForFunction(()=>document.querySelector('canvas[aria-label]').dataset.playerSpecies==='compy');
- assert.match(await page.locator('canvas[aria-label]').getAttribute('data-player-sprite'),/compy_/);
+ assert.match(await page.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-player-sprite'),/compy_/);
  const snapshot=await page.evaluate(()=>{const g=primalRun.game,r=g.run,ctx=document.querySelector('canvas[aria-label]').getContext('2d');window.drawnNames=[];const old=ctx.fillText;ctx.fillText=function(text,...args){drawnNames.push([text,this.fillStyle]);return old.call(this,text,...args);};r.enemies.forEach(e=>{e.cooldown=999;});return {seed:r.seed,plants:r.map.decorations.length,roads:r.map.trails.length};});
  assert.ok(snapshot.plants>800);assert.equal(snapshot.roads,0);await page.waitForTimeout(150);
- const names=await page.evaluate(()=>drawnNames);assert.ok(names.some(([s,c])=>s==='⚠ Compsognathus'&&c==='#ed7869'));assert.ok(!names.some(([s])=>s.includes('FJENDE')));
+ const names=await page.evaluate(()=>drawnNames);assert.ok(names.some(([s,c])=>s.startsWith('⚠ Compsognathus')&&c==='#ed7869'));assert.ok(!names.some(([s])=>s.includes('FJENDE')));
  if(process.env.PRIMAL_VISUAL_DIR){fs.mkdirSync(process.env.PRIMAL_VISUAL_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.PRIMAL_VISUAL_DIR,'compy-forest.png')});}
- await page.evaluate(()=>{const r=primalRun.game.run,s=r.map.sites.find(s=>s.type==='nest');r.player.x=s.x;r.player.y=s.y;r.map.events=[];r.enemies=[];r.spawnTimer=999;});await page.keyboard.press('e');await page.waitForSelector('[data-explore="take"]');
+ await page.evaluate(()=>{const r=primalRun.game.run,s=r.map.sites.find(s=>s.type==='nest');r.player.x=s.x;r.player.y=s.y;primalRun.game.setView(r.view.width,r.view.height);r.map.events=[];r.enemies=[];r.spawnTimer=999;});await page.keyboard.press('e');await page.waitForSelector('[data-explore="take"]');
  const frozen=await page.evaluate(()=>JSON.stringify(primalRun.game.run));await page.waitForTimeout(250);assert.equal(await page.evaluate(()=>JSON.stringify(primalRun.game.run)),frozen);
  await page.locator('[data-explore="take"]').click();await page.waitForFunction(()=>primalRun.game.run.exploration===1);assert.equal(await page.evaluate(()=>primalRun.game.run.map.sites.filter(s=>s.claimed).length),1);
  await page.waitForFunction(()=>primalRun.game.phase==='mutation'); await page.locator('[data-mutation]').first().click();

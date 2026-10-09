@@ -1,0 +1,137 @@
+
+> primal-run-prototype@0.1.0 test
+> npm run test:game && npm run test:kit
+
+
+> primal-run-prototype@0.1.0 test:game
+> node --test tests/research.test.cjs tests/carrion-rex.test.cjs tests/expansion.test.cjs tests/combat-feedback.test.cjs tests/game.test.cjs tests/roguelite.test.cjs tests/pursuit.test.cjs tests/ecology.test.cjs tests/adaptive-audio.test.cjs tests/layout.test.cjs tests/terrain-behavior.test.cjs tests/eating-discovery.test.cjs && node tests/corpse-scenes-browser.cjs && node tests/research-browser.cjs && node tests/carrion-rex-browser.cjs && node tests/game-browser.cjs && node tests/player-animation-browser.cjs && node tests/enemy-animation-browser.cjs && node tests/world-browser.cjs && node tests/polish-browser.cjs && node tests/roguelite-browser.cjs && node tests/player-full-browser.cjs && node tests/jungle-browser.cjs && node tests/adaptive-browser.cjs && node tests/terrain-browser.cjs && node tests/eating-accessibility-browser.cjs && node tests/combat-feedback-browser.cjs && node tests/species-colour-browser.cjs
+
+✔ menu, four biomes, four bosses and results have distinct actual compositions (1.022205ms)
+✔ health layers have 50/25/10 thresholds, hysteresis, coexist with boss music and duck on pause (0.205617ms)
+✔ crossfades reuse unchanged scenes, retire buses and mute avoids new music voices (0.223593ms)
+✔ ambient layer schedules independently from muted music and changes calls with biome; music varies after 64 beats (0.207189ms)
+✔ food spoils in portions and disappears with corpse, while pause freezes decay (13.102396ms)
+✔ escape regeneration needs distance, ten seconds, no combat and no bleed; bosses never regen (6.450007ms)
+✔ predators prefer food clusters, walk gradually and consume without player rewards (3.809064ms)
+✔ T rex unlock persists and slow attack locks heading before heavy contact (4.007321ms)
+✔ stationary T rex roar spends stamina, scares normals and leaves boss unchanged (4.610171ms)
+✔ digestion DNA upgrade migrates safely, costs DNA and improves feeding (3.369749ms)
+✔ abilities consume their full stamina cost and recovery pauses after casting (44.965721ms)
+✔ herbivores eat plants and ignore corpse meat, including exploration rewards (2.115537ms)
+✔ ordinary large predators telegraph before contact damage (5.975318ms)
+✔ all herbivorous NPCs graze when unprovoked (4.013781ms)
+✔ legendary shield absorbs final damage after armour and stance (1.44682ms)
+✔ legendary mutation pool contains one shared and one per playable species (0.116254ms)
+✔ corpse meat requires stationary held eating, awards portions and preserves leftovers (17.140942ms)
+✔ attacks cancel eating, choices freeze its clock, corpse expiry removes linked leftovers (7.279434ms)
+✔ exploration reveals bounded cells and rare discoveries award once; stage clears fog (8.300258ms)
+✔ seed reproduces events and alternative arenas; settings and duplicate bindings stay safe (10.323458ms)
+✔ boss arena clearing removes matching cover, while explicit spawns leave the world unchanged (2.675563ms)
+✔ all naturally populated animals and nest guardians match the biome and local shore/lava habitat across seeds (568.699278ms)
+✔ offscreen reinforcements respect species habitats and an aquatic boss can use a remote riverbank (119.337792ms)
+✔ plants and ambient insects follow biome pools, are deterministic, and avoid lava (131.031424ms)
+✔ species display ramps use only the fixed palette and retain different identities and stable torso sizes (3.239926ms)
+✔ new species unlock with banked DNA and selection survives saving (1.097387ms)
+✔ Triceratops armour protects the front and leaves rear vulnerable (13.090017ms)
+✔ Pachycephalosaurus stagger works on normal dinosaurs and does not lock bosses (5.257377ms)
+✔ Gallimimus eats plants and meat, but sprint does not grant basic invulnerability (4.124806ms)
+✔ fishing consumes stamina and finite stock, stops on movement and freezes in mutation choices (2.795693ms)
+✔ fish and plant supplies support full progression in every biome without lava fishing (58.94155ms)
+✔ tradeoffs change both sides of their bargain (1.454771ms)
+✔ already owned mutations gain modest weight, caps stay excluded and species/rarities still apply (12.255182ms)
+✔ coordinated Compy packs reserve at most two simultaneous windups (1.952975ms)
+✔ directional bites damage targets ahead, not targets behind; body collision stays fixed (16.907144ms)
+✔ bite contact happens once, aim is locked, quick jaws scale the whole animation, and pause freezes it (7.377912ms)
+✔ kills drop meat, but XP, levels and boss threshold require actual pickup (17.262024ms)
+✔ successful bite gives one impact, damage number and a short knockback stagger; misses stay quiet (2.78056ms)
+✔ first biome opens with three weak enemies and ramps composition, caps and cadence toward a 24-meat boss (2.913338ms)
+✔ Compy separates from its pack and telegraphs one bite instead of unavoidable contact damage (4.376992ms)
+✔ Parasaurolophus flees harmlessly and steers along an edge rather than getting stuck (3.468557ms)
+✔ ordinary Carnotaurus charges from the first biome, locks its warning aim and allows a sideways dodge (4.477993ms)
+✔ Ankylosaurus warns before tail strike, hits once and has weaker rear armor (1.893797ms)
+✔ first biome waits for meat progression before unlocking a stronger predator and caps it at one (1.601371ms)
+✔ mutation choices are distinct, pause simulation, and queued levels resolve (1.804603ms)
+✔ mutation menu freezes enemies, attacks, pickups and damage; choosing grants brief protection (2.76735ms)
+✔ DNA rolls use species chances and pickups are banked once, surviving reload/death (3.795034ms)
+✔ four guaranteed boss awards, transitions preserve mutations, and final boss wins once (17.338548ms)
+✔ shop validates balances/ranks and applies permanent upgrades only to a new run (3.295128ms)
+✔ boss windup freezes its aim, deals damage during charge, and pounce evades it (1.743432ms)
+✔ fatal damage stops updates; paused world and stamina do not advance (3.377921ms)
+✔ malformed saves, disabled storage, and injected names remain bounded (1.738314ms)
+✔ GDevelop event matches shared source; all integrated PNGs preserve original pixels (20.915226ms)
+✔ meat quality changes pickup value and XP; large species have better rare-drop odds (27.910607ms)
+✔ map exploration follows world bounds; reinforcements and bosses never spawn inside the viewport (2.752648ms)
+✔ weighted mutation rarity retains unique choices and ranks, and Jonas unlocks a cosmetic secret (4.35459ms)
+✔ mixed dinosaurs separate fixed bodies even at identical coordinates without dealing damage or changing attack aim (3.330401ms)
+✔ crowded herds, bosses and map-edge collisions resolve without escaping bounds or blocking charge patterns (4.602269ms)
+✔ successful bites freeze simulation briefly, misses do not, and blood/dust decay with bounded counts (7.792911ms)
+✔ first boss alternates a locked charge and a directional bite with useful recovery openings (3.370901ms)
+✔ half-health first boss signals phase two once and telegraphs each leg of its double charge (3.081179ms)
+✔ first-boss stomp hits once and later bosses now also signal phase two (2.661332ms)
+✔ terrain layouts provide seeded wilderness and biome-specific scenery without changing world bounds (28.796358ms)
+✔ opening rocks, foliage clusters and river orientation visibly vary for repeat runs of the same level (334.749324ms)
+✔ map constraints preserve safe start and broad access to habitats and sites (198.998184ms)
+✔ a successful bite refreshes eight seconds with exactly zero give-up chance (14.864636ms)
+✔ give-up hazard increases with distance and time, excludes bosses and does not consume loot random rolls (6.179383ms)
+✔ disengaged enemies move home and cannot instantly re-aggro; new player attacks override disengagement (2.634882ms)
+✔ prey settle at personal-space distance for a still observer, flee a moving or recent attacker, then settle again (2.909433ms)
+✔ pause freezes pursuit grace, random decisions and prey distance state (4.042664ms)
+✔ runs are deterministic for identical seed/species/build and preserve timeout outcome (23.360426ms)
+✔ all registered species and new profiles run without NaN metrics (27.04893ms)
+✔ albino rewards are epic, queued, paused, cannot repeat, and caps fall back to DNA (2.373262ms)
+✔ injuries slow only wounded normal animals and leave an actual trail (3.488366ms)
+✔ field guide persists only nearby observations and sanitizes unknown species (1.474521ms)
+✔ telemetry records landed attacks, effective damage, distance and freezes in pause (1.540059ms)
+✔ two new tradeoffs affect mobility, vulnerability, feeding and stamina (5.271888ms)
+✔ aggregates keep deaths/timeouts separate and report uncertainty (0.390242ms)
+✔ missed secrets accumulate across stages but per-stage results stay separate (4.189523ms)
+✔ field guide does not claim a roar before it was observed (1.901318ms)
+✔ fresh saves start as Compy; legacy DNA and upgrades survive unlock migration (21.69544ms)
+✔ random wilderness is repeatable by seed, varies between seeds and keeps bounded safe habitats (283.16957ms)
+✔ each class has a distinct primary attack; Ankylosaurus tail hits behind it (10.582504ms)
+✔ ability costs, immunity, contact damage once per animal, and defensive brace differ by class (13.122776ms)
+✔ mutation pool contains shared and own mutations, never another species skill (12.87387ms)
+✔ fossils award permanent DNA once; nest choice freezes every simulation field and wakes preplaced guardian (2.843203ms)
+✔ optional elites and rare prey exist before exploration and grant better loot (1.400761ms)
+✔ later bosses have locked warnings, phase two, and flank recovery; T. rex roar drains stamina (7.186126ms)
+✔ water and mud slow travel while crocodiles retain water speed and collision corrections remain independent (14.384809ms)
+✔ bush concealment requires a quiet delay, reduces detection, and attacks reveal immediately (9.063658ms)
+✔ normal movement breaks concealment, sneaking preserves it and bosses keep targeting hidden players (3.689867ms)
+✔ herds share alarms without granting an unhit animal the attack grace, and resume grazing/rest (3.580864ms)
+✔ territorial predators warn before entry, pursue attacks for eight seconds, then leave players beyond their home (2.750355ms)
+✔ death series remain for 60–70 simulation seconds, cap memory, and freeze during mutation choices (10.983333ms)
+✔ momentum refunds are capped per cast even when a Carnotaurus hits an entire pack (3.104343ms)
+✔ shared damage and hunter stack additively while armour and defensive stance multiply without invulnerability (10.46602ms)
+✔ turning preserves stride phase and walk/run clocks close their loops without an extra-frame reset (1.899655ms)
+ℹ tests 97
+ℹ suites 0
+ℹ pass 97
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 982.996706
+PASS:160 actual corpse props and27 end scene combinations.
+PASS: persistent observations, species book, actual killer/cinematic type, statistics, reduced motion, mobile layout and no errors/missing assets.
+PASS: DNA migration/purchase, nine-class archive, T rex portrait/gameplay attack render, mobile layout, no missing assets or browser errors.
+PASS: browser game · menu/name · sound controls/music · movement/bite/meat · pause · mutations · 4 bosses/victory · DNA shop · reload/highscore · death/restart · storage denial
+PASS: browser player attack animation · S: all six actual drawn frames, native size, registered pivot, pause and idle · N: all six actual drawn frames, native size, registered pivot, pause and idle · E: all six actual drawn frames, native size, registered pivot, pause and idle · W: all six actual drawn frames, native size, registered pivot, pause and idle · contact-only damage, locked attack aim while moving, single hit and recovery
+PASS: 840 actual enemy frames · seven species · six states · four directions · integer scales · pause
+PASS: world browser · desktop/portrait/landscape/ultrawide · camera · facing · XP bar · rarity/rank cards · safe selection · Jonas
+PASS: terrain/combat/boss · four rendered biomes · hit-stop/particles · phase/range hints · full first-boss fight without HP edits
+PASS: roguelite · Compy/classes · wilderness · names · paused nest · unlock persistence · responsive UI
+PASS: full playable animation · 1080 actual frames · 9 classes/4 directions/6 states · hurt/death · pause · native origins
+PASS: cinematic jungle menu, responsive controls, reduced motion, actual species palettes, pause isolation
+PASS: adaptive music, health layers, Space selection guard and fresh-run layouts
+PASS: terrain and concealment browser controls/HUD/pause
+PASS: eating, joystick, remapping, gamepad, scaling, fog and lazy assets; phone-size cloud render p95 3.70 ms
+PASS: combat HUD cooldowns, stamina warning, minimap diamond, desktop/mobile, no browser errors
+PASS: all nine selector portraits exactly match runtime palettes and preserve alpha, including initially unloaded Utahraptor
+
+> primal-run-prototype@0.1.0 test:kit
+> node check_kit_directions.cjs && node check_kit_progression.cjs && node check_kit_files.cjs
+
+{"result":"PASS","engine":"Chrome browser; GDevelop NOT RUN","checks":["S movement/idle/loop","N movement/idle/loop","E movement/idle/loop","W movement/idle/loop","S blockage","N blockage","E blockage","W blockage","diagonal tie facing","pixel smoothing disabled"]}
+{"result":"PASS","engine":"Chrome offline browser prototype; GDevelop NOT RUN","checks":["hunt XP triggers three-choice pause","pause freezes time/movement/damage","keyboard selection resumes","legs +15 percent speed","mutation stacks","feathers +20 percent regeneration","stamina pounce and boost","teeth adds bleed damage","food heals","death DNA once","DNA survives reload","60-second victory DNA bonus","restart clears run upgrades"]}
+{"result":"PASS","checks":["104 catalog PNGs load","all entrypoint/guide/demo local links exist","guide includes five documents","HUD displays correct direction and UTF-8 text"],"scope":"Chromium over local HTTP; file:// access is not certified"}
+PASS: persistent observations, species book, actual killer/cinematic type, statistics, reduced motion, mobile layout and no errors/missing assets.
