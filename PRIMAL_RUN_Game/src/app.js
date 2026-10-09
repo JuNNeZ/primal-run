@@ -210,9 +210,23 @@
         }ctx.drawImage(layer,gx*128,gy*128);
       }
     }
+    // Soft per-zone ground tint, built once per map at 1/24 scale and drawn smoothed.
+    const ZONE_TINT={clearing:'#799447',thicket:'#3f5030',oldgrowth:'#28372a',bog:'#674333',meadow:'#a8b15b',reeds:'#586d38',bank:'#edd0a0',gallery:'#3f5030',drygrass:'#d4a36c',canyon:'#626861',plateau:'#929387',thorn:'#8d6042',ash:'#3b4144',deadwood:'#443027',steam:'#69a4a0',lavarim:'#913b32'};
+    const zoneTintCache=new WeakMap();
+    function zoneTint(stage,map,view){
+      if(!map.zones||!map.zones.length)return;
+      let layer=zoneTintCache.get(map);
+      if(!layer){const scale=24,w=Math.ceil(map.width/scale),h=Math.ceil(map.height/scale);layer=document.createElement('canvas');layer.width=w;layer.height=h;const lc=layer.getContext('2d'),img=lc.createImageData(w,h),rgb=c=>[parseInt(c.slice(1,3),16),parseInt(c.slice(3,5),16),parseInt(c.slice(5,7),16)];
+        for(let y=0;y<h;y++)for(let x=0;x<w;x++){const px=x*scale,py=y*scale;let wsum=0,acc=[0,0,0];for(const z of map.zones){const d=Math.hypot(px-z.x,py-z.y),wt=1/Math.pow(d+60,4);wsum+=wt;const c=rgb(ZONE_TINT[z.id]||'#586d38');acc[0]+=c[0]*wt;acc[1]+=c[1]*wt;acc[2]+=c[2]*wt;}const i=(y*w+x)*4;img.data[i]=acc[0]/wsum;img.data[i+1]=acc[1]/wsum;img.data[i+2]=acc[2]/wsum;img.data[i+3]=255;}
+        lc.putImageData(img,0,0);zoneTintCache.set(map,layer);}
+      ctx.save();ctx.globalAlpha=.32;ctx.imageSmoothingEnabled=true;const scale=map.width/layer.width;
+      const sx=Math.max(0,Math.floor(view.x/scale)),sy=Math.max(0,Math.floor(view.y/scale)),sw=Math.min(layer.width-sx,Math.ceil(canvas.width/scale)+2),sh=Math.min(layer.height-sy,Math.ceil(canvas.height/scale)+2);
+      if(sw>0&&sh>0)ctx.drawImage(layer,sx,sy,sw,sh,sx*scale,sy*scale,sw*scale,sh*scale);ctx.restore();
+    }
     function background(stage, map, view) {
       ctx.beginPath(); ctx.rect(view.x, view.y, canvas.width, canvas.height);
       texturedFill(C.STAGES[stage].tile, ['#28372a', '#d4a36c', '#626861', '#3b4144'][stage], .28);
+      zoneTint(stage,map,view);
       groundDetails(stage,map,view);
       for (const region of map.regions) {
         if (Math.abs(region.x - view.x - canvas.width / 2) > canvas.width / 2 + region.radius || Math.abs(region.y - view.y - canvas.height / 2) > canvas.height / 2 + region.radius) continue;
@@ -420,7 +434,7 @@
         }
       } else accumulator = 0;
       if (game.phase !== phaseBefore) accumulator = 0;
-      for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast(['FASE 2 · Dobbelt stormløb og tramp!', 'FASE 2 · Hurtigere baghold og stor halebølge!', 'FASE 2 · Dobbelt hornstorm!', 'FASE 2 · Dobbeltbid og brøl!'][game.run.stage]); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if(event.type==='discovery')toast(event.text); if (event.type === 'dna') toast('+' + event.amount + ' DNA · gemt'); }
+      for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast(['FASE 2 · Dobbelt stormløb og tramp!', 'FASE 2 · Hurtigere baghold og stor halebølge!', 'FASE 2 · Dobbelt hornstorm!', 'FASE 2 · Dobbeltbid og brøl!'][game.run.stage]); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if(event.type==='discovery')toast(event.text); if (event.type === 'dna' && !event.quiet) toast('+' + event.amount + ' DNA · gemt'); if(event.type==='zone')toast(event.first?'NYT OMRÅDE · '+event.name.toUpperCase()+' · +1 DNA':event.name.toUpperCase()); if(event.type==='boss_break')toast('BRUDT! · Angrib nu'); if(event.type==='winded')toast('FORPUSTET · vent på stamina'); }
       const musicRun=game.run;audio.setScene({phase:game.phase==='settings'&&returnPhase==='paused'?'paused':game.phase,stage:musicRun?musicRun.stage:0,boss:!!(musicRun&&musicRun.bossSpawned&&!musicRun.bossDefeated),health:musicRun?musicRun.health:1,maxHealth:musicRun?musicRun.maxHealth:1,victory:!!(musicRun&&musicRun.result&&musicRun.result.victory)});audio.sync();
       shell.style.setProperty('--hud-scale',game.save.settings.hudScale);shell.style.setProperty('--text-scale',game.save.settings.textScale);
       renderScreen(); draw();drawEndScene(now);

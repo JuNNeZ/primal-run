@@ -52,6 +52,7 @@ test('successful bite gives one impact, damage number and a short knockback stag
 });
 test('first biome opens with three weak enemies and ramps composition, caps and cadence toward a 24-meat boss', () => {
   const g = new C.Game({ random: () => .99 }); g.start({campaign:'classic'}); const r = g.run;
+  r.map.zones = []; // cadence test; zone restrictions are covered in overhaul.test.cjs
   const nearby = r.enemies.filter(e => Math.hypot(e.x - r.player.x, e.y - r.player.y) < 600);
   assert.equal(nearby.length, 3); assert.equal(nearby.filter(e => e.kind === 'compy').length, 2);
   assert.ok(r.enemies.length > 25, 'distant habitats contain animals before exploring');
@@ -100,7 +101,7 @@ test('Ankylosaurus warns before tail strike, hits once and has weaker rear armor
   g.phase = 'mutation'; const frozen = JSON.stringify(e); g.enemyStep(e, .05); assert.equal(JSON.stringify(e), frozen);
 });
 test('first biome waits for meat progression before unlocking a stronger predator and caps it at one', () => {
-  const g = make(() => .99), r = g.run; r.seconds = 200; r.meat = 0; r.spawnTimer = 0; tick(g);
+  const g = make(() => .99), r = g.run; r.map.zones = []; r.seconds = 200; r.meat = 0; r.spawnTimer = 0; tick(g);
   assert.equal(r.enemies[0].kind, 'parasaurolophus', 'waiting alone cannot escalate difficulty');
   r.meat = 12; r.enemies = []; r.spawnTimer = 0; tick(g); assert.equal(r.enemies[0].kind, 'carnotaurus');
   r.spawnTimer = 0; tick(g); assert.equal(r.enemies.filter(e => e.kind === 'carnotaurus').length, 1);

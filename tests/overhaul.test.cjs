@@ -57,8 +57,29 @@ test('territorial herbivores only warn a herbivore player unless crowded or hit'
 test('hungry predators can hunt prey; natural kills leave a carcass but give the player nothing', () => {
   const g = game('velociraptor'), r = g.run; r.player.x = 2400; r.player.y = 1600;
   const hunter = g.spawn('carnotaurus', { x: 800, y: 700 }), prey = g.spawn('parasaurolophus', { x: 860, y: 700 });
-  hunter.hunger = .95; prey.hp = 1; const kills = r.kills, dna = r.dna;
+  hunter.hunger = .95; prey.hp = 1; const kills = r.kills, drops = r.stats.dropRolls;
   for (let i = 0; i < 200 && r.enemies.includes(prey); i++) g.step(.05, {});
-  assert.ok(!r.enemies.includes(prey)); assert.equal(r.kills, kills); assert.equal(r.dna, dna);
+  assert.ok(!r.enemies.includes(prey)); assert.equal(r.kills, kills); assert.equal(r.stats.dropRolls, drops, 'no player loot roll');
   assert.ok(r.corpses.some(c => c.id === prey.id)); assert.ok(r.pickups.some(p => p.corpseId === prey.id));
+});
+
+test('maps are larger and split into named zones whose animals differ; the start zone is gentle', () => {
+  for (let stage = 0; stage < 4; stage++) for (let seed = 1; seed <= 12; seed++) {
+    const m = C.createMap(stage, seed); assert.ok(m.width >= 2880 * 1.3); assert.ok(m.zones.length >= 5);
+    assert.ok(m.zones[0].start); assert.ok(Math.hypot(m.zones[0].x - 480, m.zones[0].y - 340) < 400);
+    assert.ok(new Set(m.zones.map(z => z.id)).size >= 4, 'all zone types appear');
+    assert.ok(m.events.some(e => e.zone !== undefined), 'zones hide rewards');
+  }
+  const g = new C.Game({ random: () => .5 }); g.start({ seed: 9 }); const r = g.run;
+  for (const e of r.enemies.filter(e => !e.elite && !e.rare && !e.thiefPack)) {
+    const z = C.zoneAt(r.map, { x: e.homeX, y: e.homeY }); if (z) assert.ok(z.animals.includes(e.kind) || ['compy', 'parasaurolophus'].includes(e.kind), e.kind + ' in ' + z.id);
+  }
+  assert.ok(!r.enemies.some(e => e.kind === 'carnotaurus' && !e.elite && C.zoneAt(r.map, { x: e.homeX, y: e.homeY }).start), 'no Carnotaurus in the starting clearing');
+});
+
+test('entering a new zone is announced and rewards exploration once', () => {
+  const g = new C.Game({ random: () => .5 }); g.start({ seed: 5 }); const r = g.run; g.drainEvents();
+  const z = r.map.zones.find(z => !z.start); r.player.x = z.x; r.player.y = z.y; r.spawnTimer = 999; const dna = r.dna;
+  g.step(.05, {}); const ev = g.drainEvents().filter(e => e.type === 'zone'); assert.equal(ev.length, 1); assert.equal(ev[0].name, z.name);
+  assert.equal(r.dna, dna + 1); g.step(.5, {}); assert.equal(g.drainEvents().filter(e => e.type === 'zone').length, 0);
 });

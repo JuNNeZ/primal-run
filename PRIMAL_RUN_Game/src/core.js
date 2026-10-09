@@ -199,12 +199,66 @@
     { name: 'Sjældent', multiplier: 2, color: '#69a4a0', symbol: '◆◆' },
     { name: 'Episk', multiplier: 3, color: '#bb80d9', symbol: '★' },
   ];
+  // ---- Sub-biome zones (overhaul phase 3). Each map gets 5-6 Voronoi zones under one biome theme.
+  // Animals are tied to zones, so you meet different species in different parts of a level.
+  const MAP_SCALE=1.4, HABITAT_SPACING=1.2;
+  const ZONES=[
+    [{id:'clearing',name:'Lysningen',animals:['parasaurolophus','parasaurolophus','compy','gallimimus'],foliage:.45,start:true},
+     {id:'thicket',name:'Bregnekrattet',animals:['compy','compy','gallimimus','pachycephalosaurus'],foliage:1.35,extra:'fern_large'},
+     {id:'oldgrowth',name:'Urskoven',animals:['carnotaurus','compy','parasaurolophus'],foliage:1.15,extra:'tree_canopy'},
+     {id:'bog',name:'Mosesumpen',animals:['parasaurolophus','gallimimus','compy'],foliage:.9,mud:8}],
+    [{id:'meadow',name:'Flodengen',animals:['parasaurolophus','parasaurolophus','gallimimus','compy'],foliage:.6,start:true},
+     {id:'reeds',name:'Rørskoven',animals:['gallimimus','compy','baryonyx'],foliage:1.2,mud:10},
+     {id:'bank',name:'Flodbredden',animals:['baryonyx','deinosuchus','carnotaurus','compy'],foliage:.8},
+     {id:'gallery',name:'Galleriskoven',animals:['carnotaurus','parasaurolophus','compy'],foliage:1.2,extra:'tree_canopy'}],
+    [{id:'drygrass',name:'Tørgræssletten',animals:['parasaurolophus','gallimimus','compy'],foliage:.6,start:true},
+     {id:'canyon',name:'Kløften',animals:['pachycephalosaurus','compy','carnotaurus'],foliage:.7,rocks:24},
+     {id:'plateau',name:'Panserplateauet',animals:['ankylosaurus','triceratops','compy'],foliage:.55,extra:'boulder_large'},
+     {id:'thorn',name:'Tornekrattet',animals:['triceratops','gallimimus','pachycephalosaurus'],foliage:1.25}],
+    [{id:'ash',name:'Askemarken',animals:['compy','parasaurolophus','gallimimus'],foliage:.6,start:true},
+     {id:'deadwood',name:'Den døde skov',animals:['carnotaurus','compy'],foliage:1.1,extra:'dead_tree'},
+     {id:'steam',name:'Dampkilderne',animals:['parasaurolophus','gallimimus','ankylosaurus'],foliage:.9,springs:true},
+     {id:'lavarim',name:'Lavakanten',animals:['ankylosaurus','compy','carnotaurus'],foliage:.5,extra:'lava_rock'}]
+  ];
+  function zoneAt(map,p){
+    if(!map.zones||!map.zones.length)return null;let best=null,bd=Infinity;
+    for(const z of map.zones){const d=(p.x-z.x)**2+(p.y-z.y)**2;if(d<bd){bd=d;best=z;}}
+    return best;
+  }
+  function zoneAllows(map,kind,p){const z=zoneAt(map,p);return !z||z.animals.includes(kind);}
+  function buildZones(stage,seed,width,height,parts){
+    const random=seeded((seed^0x51ED27^Math.imul(stage+3,40503))>>>0),types=ZONES[stage],zones=[];
+    const startType=types.find(t=>t.start),others=types.filter(t=>!t.start);
+    zones.push({...startType,index:0,x:480+Math.round(random()*220),y:340+Math.round(random()*160)});
+    const total=5+Math.floor(random()*2),order=others.slice().sort(()=>random()-.5);
+    for(let i=1,attempt=0;i<total&&attempt<400;attempt++){
+      const x=Math.round(260+random()*(width-520)),y=Math.round(260+random()*(height-520));
+      if(zones.some(z=>Math.hypot(z.x-x,z.y-y)<Math.min(width,height)*.32))continue;
+      zones.push({...order[(i-1)%order.length],index:i,x,y});i++;
+    }
+    const near=p=>{let best=0,bd=Infinity;zones.forEach((z,i)=>{const d=(p.x-z.x)**2+(p.y-z.y)**2;if(d<bd){bd=d;best=i;}});return zones[best];};
+    // Thin or add scenery per zone, so each area reads differently.
+    for(let i=parts.decorations.length-1;i>=0;i--){const d=parts.decorations[i],z=near(d);if(z.foliage<1&&d.foliage&&random()>z.foliage)parts.decorations.splice(i,1);}
+    for(const z of zones){
+      const reach=Math.min(width,height)*.22,scatter=()=>{const a=random()*Math.PI*2,rr=Math.sqrt(random())*reach;return{x:Math.round(Math.max(80,Math.min(width-80,z.x+Math.cos(a)*rr))),y:Math.round(Math.max(110,Math.min(height-80,z.y+Math.sin(a)*rr)))};};
+      if(z.foliage>1)for(let i=0;i<Math.round((z.foliage-1)*400);i++){const p=scatter();const prop=z.extra&&random()<.4?z.extra:parts.props[Math.floor(random()*parts.props.length)];if(near(p)!==z||Math.hypot(p.x-480,p.y-340)<70||isWater(stage,parts.waterMap,p,-(prop==='tree_canopy'?96:50)))continue;parts.decorations.push({...p,path:'assets/props/'+prop+'.png',canopy:prop==='tree_canopy',foliage:['fern_large','flower_bush','tree_canopy'].includes(prop)});}
+      if(z.extra&&z.foliage<=1)for(let i=0;i<60;i++){const p=scatter();if(near(p)!==z||Math.hypot(p.x-480,p.y-340)<120||isWater(stage,parts.waterMap,p,-(z.extra==='tree_canopy'?96:60)))continue;parts.decorations.push({...p,path:'assets/props/'+z.extra+'.png',canopy:z.extra==='tree_canopy',foliage:z.extra==='tree_canopy'});}
+      if(z.rocks)for(let i=0;i<z.rocks;i++){const p=scatter();if(near(p)!==z||Math.hypot(p.x-480,p.y-340)<650||parts.rocks.some(r=>Math.hypot(p.x-r.x,p.y-r.y)<90)||parts.habitats.some(h=>Math.hypot(p.x-h.x,p.y-h.y)<70)||isWater(stage,parts.waterMap,p,-30))continue;parts.rocks.push({...p,radius:22});}
+      if(z.mud)for(let i=0;i<z.mud;i++){const p=scatter();if(near(p)!==z||Math.hypot(p.x-480,p.y-340)<160||isWater(stage,parts.waterMap,p,-80))continue;parts.mud.push({...p,rx:45+Math.round(random()*40),ry:28+Math.round(random()*30)});}
+      // Each zone hides one reward near its centre: a spring, a fossil or a food cache.
+      if(!z.start){const spot=parts.habitats.filter(h=>near(h)===z&&!isWater(stage,parts.waterMap,h,-64)).sort((a,b)=>Math.hypot(a.x-z.x,a.y-z.y)-Math.hypot(b.x-z.x,b.y-z.y))[0];if(spot)parts.events.push({x:spot.x+30,y:spot.y+20,type:z.springs?'spring':['cache','fossil','spring'][z.index%3],claimed:false,zone:z.index});}
+    }
+    for(const h of parts.habitats)h.zone=near(h).index;
+    for(const f of parts.forage){const z=near(f);if(['clearing','meadow','drygrass','steam','thorn','bog'].includes(z.id)&&f.rarity===0&&random()<.35)f.rarity=1;}
+    return zones.map(z=>({index:z.index,id:z.id,name:z.name,x:z.x,y:z.y,animals:z.animals.slice(),start:!!z.start}));
+  }
   function createMap(stage, seed = 1) {
     const random = seeded((seed ^ Math.imul(stage + 1, 2654435761)) >>> 0);
-    const width = 2880 + stage * 320, height = 1920 + stage * 256;
+    // Overhaul phase 3: larger maps split into named sub-biome zones (see ZONES).
+    const width = Math.round((2880 + stage * 320) * MAP_SCALE), height = Math.round((1920 + stage * 256) * MAP_SCALE), AREA = MAP_SCALE * MAP_SCALE;
     const rocks = [], decorations = [], habitats = [], clearings = [], regions = [], trails = [], sites = [];
     const layout=Math.floor(random()*3),groves=[];
-    for(let i=0;i<6+layout*2;i++)groves.push({x:Math.round(180+random()*(width-360)),y:Math.round(180+random()*(height-360)),radius:150+Math.round(random()*210),kind:i%3});
+    for(let i=0;i<Math.round((6+layout*2)*AREA);i++)groves.push({x:Math.round(180+random()*(width-360)),y:Math.round(180+random()*(height-360)),radius:150+Math.round(random()*210),kind:i%3});
     // Opening formations change too: never a fixed four-rock tutorial square.
     for(let i=0;i<5+layout;i++){
       const angle=random()*Math.PI*2,distance=170+random()*330,x=Math.round(480+Math.cos(angle)*distance),y=Math.round(340+Math.sin(angle)*distance);
@@ -212,18 +266,18 @@
       rocks.push({x,y,radius:22});
     }
     const safe = (x, y, radius = 650) => Math.hypot(x - 480, y - 340) > radius;
-    for (let y = 240; y < height - 160; y += 320) for (let x = 240; x < width - 160; x += 360) {
+    for (let y = 240; y < height - 160; y += 320 * HABITAT_SPACING) for (let x = 240; x < width - 160; x += 360 * HABITAT_SPACING) {
       const px = x + (random() - .5) * 180, py = y + (random() - .5) * 150;
       if (!safe(px, py)) continue;
       habitats.push({ x: Math.round(px), y: Math.round(py), roll: random() });
     }
-    for (let i = 0; i < 80 + stage * 15; i++) {
+    for (let i = 0; i < Math.round((80 + stage * 15) * AREA); i++) {
       const x = 100 + random() * (width - 200), y = 120 + random() * (height - 240);
       if (!safe(x, y, 700) || habitats.some(h => Math.hypot(x - h.x, y - h.y) < 85) || rocks.some(r => Math.hypot(x - r.x, y - r.y) < 110)) continue;
       rocks.push({ x: Math.round(x), y: Math.round(y), radius: 22 });
     }
     for(const grove of groves)regions.push({...grove,seed:random()*100});
-    for (let i = 0; i < 28; i++) regions.push({ x: Math.round(random() * width), y: Math.round(random() * height), radius: 90 + random() * 170, seed: random() * 100 });
+    for (let i = 0; i < Math.round(28 * AREA); i++) regions.push({ x: Math.round(random() * width), y: Math.round(random() * height), radius: 90 + random() * 170, seed: random() * 100 });
     const horizontal=random()<.5,riverOffset=.48+random()*.25;
     const river=Array.from({length:7},(_,i)=>horizontal?{x:Math.round(width*i/6),y:Math.round(height*(riverOffset+(random()-.5)*.14))}:{x:Math.round(width*(riverOffset+(random()-.5)*.14)),y:Math.round(height*i/6)});
     const curve=riverCurve(river);
@@ -239,7 +293,7 @@
       if(x>90&&y>120&&x<width-90&&y<height-90&&Math.hypot(x-480,y-340)>160)mud.push({x,y,rx:40+Math.round(random()*35),ry:25+Math.round(random()*30)});
     }
     const props = stage === 0 ? ['fern_large', 'fern_large', 'fern_large', 'tree_canopy', 'flower_bush', 'fallen_log'] : stage === 1 ? ['fern_large', 'fern_large', 'flower_bush', 'tree_canopy', 'fallen_log'] : stage === 2 ? ['fern_large', 'fern_large', 'boulder_large', 'dead_tree', 'flower_bush'] : ['fern_large', 'lava_rock', 'dead_tree', 'ribcage', 'meteorite'];
-    const count = [850, 850, 600, 450][stage];
+    const count = Math.round([850, 850, 600, 450][stage] * AREA);
     const foliagePoint=()=>{
       if(random()<[.75,.5,.85][layout]){const grove=groves[Math.floor(random()*groves.length)],angle=random()*Math.PI*2,radius=Math.sqrt(random())*grove.radius;return {x:Math.round(Math.max(70,Math.min(width-70,grove.x+Math.cos(angle)*radius))),y:Math.round(Math.max(90,Math.min(height-90,grove.y+Math.sin(angle)*radius)))};}
       return {x:Math.round(70+random()*(width-140)),y:Math.round(90+random()*(height-180))};
@@ -251,9 +305,9 @@
       if(stage===3 && riverDistance(habitatMap,{x,y})<100) continue;
       decorations.push({ x, y, path: 'assets/props/' + prop + '.png', canopy: prop === 'tree_canopy', foliage: ['fern_large', 'flower_bush', 'tree_canopy'].includes(prop) });
     }
-    if(stage<3)for(let i=0;i<500;i++){const p=foliagePoint();if(Math.hypot(p.x-480,p.y-340)>65)decorations.push({...p,path:'assets/environment/fern.png',foliage:true});}
+    if(stage<3)for(let i=0;i<Math.round(500*AREA);i++){const p=foliagePoint();if(Math.hypot(p.x-480,p.y-340)>65)decorations.push({...p,path:'assets/environment/fern.png',foliage:true});}
     const ecology=BIOMES[stage];
-    for(let i=0;i<420;i++) {
+    for(let i=0;i<Math.round(420*AREA);i++) {
       const {x,y}=foliagePoint();
       if(Math.hypot(x-480,y-340)<65 || stage===3 && riverDistance(habitatMap,{x,y})<145) continue;
       let plant=ecology.plants[Math.floor(random()*ecology.plants.length)];
@@ -261,7 +315,7 @@
       decorations.push({x,y,path:'assets/ecology/'+plant+'.png',foliage:!['lichen','twigs','leaf_litter','moss'].includes(plant),ecology:true});
     }
     const ambience=[];
-    for(let i=0;i<45;i++) {
+    for(let i=0;i<Math.round(45*AREA);i++) {
       let x=Math.round(70+random()*(width-140)),y=Math.round(90+random()*(height-180));
       const kind=ecology.insects[i%ecology.insects.length];
       if(kind==='dragonfly'){ const n=Math.floor(random()*(curve.length-1)),a=curve[n],b=curve[n+1],t=.35+random()*.3;x=Math.round(a.x+(b.x-a.x)*t-80);y=Math.round(a.y+(b.y-a.y)*t); }
@@ -275,7 +329,7 @@
     const events=[];
     for(let i=0;i<2;i++){const h=habitats[Math.floor(random()*habitats.length)];events.push({x:h.x,y:h.y,type:random()<.5?'spring':'fossil',claimed:false});}
     const arenas=habitats.filter(h=>Math.hypot(h.x-480,h.y-340)>750&&suitableHabitat(stage,habitatMap,STAGES[stage].boss,h)).filter((_,i)=>i%11===0).slice(0,3).map((h,i)=>({...h,style:['grove','ridge','clearing'][(i+layout)%3]}));
-    const forage=habitats.slice(0,36).map((h,i)=>({id:'plant:'+i,x:h.x,y:h.y,kind:'plant',rarity:i%11===0?2:i%4===0?1:0,value:4+stage+(i%3),depleted:false}));
+    const forage=habitats.filter((_,i)=>i%3!==2).slice(0,Math.round(36*AREA)).map((h,i)=>({id:'plant:'+i,x:h.x,y:h.y,kind:'plant',rarity:i%11===0?2:i%4===0?1:0,value:4+stage+(i%3),depleted:false}));
     const ponds=habitats.filter(h=>riverDistance(habitatMap,h)>150).filter((_,i)=>i%9===0).slice(0,8).map((h,i)=>({x:h.x,y:h.y,radius:72,id:i}));
     const fishSchools=ponds.map((pond,i)=>({id:'fish:'+i,x:pond.x,y:pond.y,stock:8,value:2+stage,kind:'fish',water:'pond'}));
     const waterMap={...habitatMap,ponds};
@@ -288,7 +342,8 @@
     for(let i=mud.length-1;i>=0;i--)if(isWater(stage,waterMap,mud[i],-Math.max(mud[i].rx,mud[i].ry)))mud.splice(i,1);
     for(let i=rocks.length-1;i>=0;i--)if(isWater(stage,waterMap,rocks[i],-rocks[i].radius))rocks.splice(i,1);
     const cover=decorations.filter(d=>/shrub|fruit_bush|fern_large|flower_bush/.test(d.path)).map(d=>({x:d.x,y:d.y,radius:34}));
-    return { ponds,fishSchools,forage, events, arenas, seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites, ambience, layout, groves, riverOrientation:horizontal?'horizontal':'vertical',riverCurve:curve,mud,cover };
+    const zones=buildZones(stage,seed,width,height,{rocks,decorations,mud,habitats,events,forage,waterMap,props});
+    return { zones, ponds,fishSchools,forage, events, arenas, seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites, ambience, layout, groves, riverOrientation:horizontal?'horizontal':'vertical',riverCurve:curve,mud,cover };
   }
   const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
   const finite = (n, fallback = 0) => typeof n === 'number' && Number.isFinite(n) ? n : fallback;
@@ -374,7 +429,8 @@
       for(const centre of r.map.habitats.filter((_,i)=>i%4===0).slice(0,r.secret?6:3))for(let n=0;n<6;n++){const angle=n*Math.PI/3,point={x:centre.x+Math.cos(angle)*24,y:centre.y+Math.sin(angle)*24};if(!suitableHabitat(r.stage,r.map,'compy',point))continue;const e=this.spawn('compy',point);if(e){e.thiefPack=true;e.herdId='thieves:'+centre.x+':'+centre.y;}}
       const pool = r.stage===0?['compy','parasaurolophus','compy','gallimimus','pachycephalosaurus']:BIOMES[r.stage].animals;
       r.map.habitats.forEach((p, i) => {
-        const eligible=pool.filter(kind=>suitableHabitat(r.stage,r.map,kind,p));
+        const zone=r.map.zones&&r.map.zones[p.zone],zonePool=zone?zone.animals.filter(kind=>BIOMES[r.stage].animals.includes(kind)&&(r.levelIndex>0||pool.includes(kind))):pool;
+        const eligible=(zonePool.length?zonePool:pool).filter(kind=>suitableHabitat(r.stage,r.map,kind,p));
         if(eligible.length)this.spawn(eligible[Math.floor(p.roll*eligible.length)],p);
         const flock={x:p.x+45,y:p.y+30};
         const animal=r.enemies[r.enemies.length-1];
@@ -414,7 +470,7 @@
         const p = { x: r.player.x + Math.cos(angle) * distance, y: r.player.y + Math.sin(angle) * distance };
         if (p.x < 80 || p.y < 100 || p.x > r.map.width - 80 || p.y > r.map.height - 80) continue;
         if (p.x > v.x - 128 && p.x < v.x + v.width + 128 && p.y > v.y - 128 && p.y < v.y + v.height + 128) continue;
-        if (r.map.rocks.some(rock => Math.hypot(p.x - rock.x, p.y - rock.y) < 65) || !suitableHabitat(r.stage,r.map,kind,p)) continue;
+        if (r.map.rocks.some(rock => Math.hypot(p.x - rock.x, p.y - rock.y) < 65) || !suitableHabitat(r.stage,r.map,kind,p) || !zoneAllows(r.map,kind,p)) continue;
         return p;
       }
       if(kind==='deinosuchus') {
@@ -486,7 +542,7 @@
     pause() { if (this.phase === 'playing') { this.phase = 'paused'; this.emit('pause'); } }
     resume() { if (this.phase === 'paused') this.phase = 'playing'; }
     abandon() { if (this.run && !this.run.result) this.finish(false); this.phase = 'menu'; }
-    addDNA(amount) { this.save.dna += amount; this.run.dna += amount;this.run.stats.dna+=amount; this.persist(); this.emit('dna', { amount }); }
+    addDNA(amount,quiet=false) { this.save.dna += amount; this.run.dna += amount;this.run.stats.dna+=amount; this.persist(); this.emit('dna', { amount, quiet }); }
     addXP(amount) { this.run.xp += amount; this.maybeLevelUp(); }
     offerRareReward(){
       const r=this.run;if(this.phase!=='playing'||!r.rareRewards)return false;r.rareRewards--;
@@ -1105,7 +1161,13 @@
       for (const e of r.enemies) {
         if (e.bleed > 0) { const duration = Math.min(e.bleed, dt); e.hp -= 3 * m.bleed * duration*(e.npcGuardUntil>r.seconds?.25:1); e.bleed -= duration; e.bleedTrail = (e.bleedTrail || 0) - dt; if (e.bleedTrail <= 0) { r.decals.push({ x: e.x, y: e.y, life: 2, seed: e.id }); e.bleedTrail = .25; } }
         if (e.hp <= 0) { if (e.naturalDeath) this.naturalDeath(e); else this.kill(e); }
-        else { this.enemyStep(e, dt); survivors.push(e); }
+        else {
+          // Level of detail: calm animals far off screen think 5x less often (same total time).
+          const far = !e.boss && !e.alert && !e.huntTarget && Math.abs(e.x - r.player.x) > 1400 || !e.boss && !e.alert && !e.huntTarget && Math.abs(e.y - r.player.y) > 1000;
+          if (far) { e.lodDt = (e.lodDt || 0) + dt; if (e.lodDt >= .2) { this.enemyStep(e, Math.min(.2, e.lodDt)); e.lodDt = 0; } }
+          else { if (e.lodDt) { this.enemyStep(e, Math.min(.2, e.lodDt + dt)); e.lodDt = 0; } else this.enemyStep(e, dt); }
+          survivors.push(e);
+        }
         if (this.phase !== 'playing') break;
       }
       // Preserve remaining enemies on death; never process rewards after a fatal hit.
@@ -1123,8 +1185,10 @@
       r.pickups = r.pickups.filter(p => !collected.includes(p.id));
       this.eat(dt,input);
       for(let x=Math.floor(r.view.x/192);x<=Math.floor((r.view.x+r.view.width)/192);x++)for(let y=Math.floor(r.view.y/192);y<=Math.floor((r.view.y+r.view.height)/192);y++)r.explored[x+','+y]=true;
-      for(const event of r.map.events)if(!event.claimed&&Math.hypot(event.x-r.player.x,event.y-r.player.y)<110){event.claimed=true;r.exploration++;if(event.type==='spring'){r.health=Math.min(r.maxHealth,r.health+20);this.emit('discovery',{text:'KILDE · +20 liv'});}else{this.addDNA(2+r.stage);this.emit('discovery',{text:'SJÆLDENT FOSSIL · DNA fundet'});}}
+      for(const event of r.map.events)if(!event.claimed&&Math.hypot(event.x-r.player.x,event.y-r.player.y)<110){event.claimed=true;r.exploration++;if(event.type==='spring'){r.health=Math.min(r.maxHealth,r.health+20);this.emit('discovery',{text:'KILDE · +20 liv'});}else if(event.type==='cache'){const value=6+r.stage*2;if(['herbivore','omnivore'].includes(PLAYER_SPECIES[r.species].diet))r.map.forage.push({id:'plant:cache:'+event.x+':'+event.y,kind:'plant',rarity:3,value,x:event.x,y:event.y,depleted:false});else r.pickups.push({id:++this.nextId,kind:'meat',rarity:3,value,x:event.x,y:event.y});this.emit('discovery',{text:'GEMT FØDE · '+value+' episk føde'});}else{this.addDNA(2+r.stage);this.emit('discovery',{text:'SJÆLDENT FOSSIL · DNA fundet'});}}
 
+      r.zoneCheck=(r.zoneCheck||0)-dt;
+      if(r.zoneCheck<=0&&r.map.zones){r.zoneCheck=.4;const z=zoneAt(r.map,r.player);r.zonesSeen=r.zonesSeen||{};if(z&&!r.zonesSeen[z.index]){r.zonesSeen[z.index]=true;r.stats.zones=(r.stats.zones||0)+1;if(!z.start){this.addDNA(1,true);r.exploration++;}this.emit('zone',{name:z.name,first:!z.start});}r.zone=z?z.index:null;}
       for (const p of r.particles) { p.life -= dt; p.x += p.vx * dt; p.y += p.vy * dt; p.vy += 50 * dt; }
       r.particles = r.particles.filter(p => p.life > 0); r.decals = r.decals.filter(p => (p.life -= dt) > 0).slice(-80);
       r.effects = r.effects.filter(e => (e.life -= dt) > 0);
@@ -1151,7 +1215,7 @@
       for (const p of r.pickups) if (p.kind === 'dna') this.addDNA(p.value);
       if (r.levelIndex === r.campaign.length - 1) { this.finish(true); return true; }
       r.missedSecrets+=r.map.sites.filter(s=>!s.claimed).length+r.map.events.filter(e=>!e.claimed).length;r.stageStats.push({...r.stats,killsBySpecies:{...r.stats.killsBySpecies}});r.levelIndex++;r.stage=r.campaign[r.levelIndex].biome; r.meat = 0; r.bossSpawned = false; r.bossDefeated = false; r.enemies = []; r.pickups = []; r.attack = null; r.bite = 0; r.hitStop = 0; r.particles = []; r.decals = [];
-      r.corpses=[];r.eating=null;r.shield=0;r.shieldTime=0;r.tailEmpowered=0;r.frenzy=0;r.staminaDelay=0;r.explored={};r.hidden=false;r.concealTime=0;r.revealedUntil=0;
+      r.corpses=[];r.zonesSeen={};r.zone=null;r.eating=null;r.shield=0;r.shieldTime=0;r.tailEmpowered=0;r.frenzy=0;r.staminaDelay=0;r.explored={};r.hidden=false;r.concealTime=0;r.revealedUntil=0;
       r.player.x = 480; r.player.y = 340; r.health = Math.min(r.maxHealth, r.health + r.maxHealth * .3); r.stamina = 100; r.invulnerable = 1;
       r.map = createMap(r.stage, (r.seed^Math.imul(r.levelIndex,2246822519))>>>0); this.setView(r.view.width, r.view.height); this.phase = 'playing'; this.populate(); this.emit('stage'); return true;
     }
@@ -1172,5 +1236,5 @@
       for(const [e,hp] of enemies)r.stats.damageDealt+=Math.max(0,hp-Math.max(0,e.hp));
     }
   };
-  return { RIVALS, STAMINA, CRIT, critChance, playerFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, playerFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

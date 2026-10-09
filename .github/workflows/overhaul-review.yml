@@ -1,0 +1,52 @@
+name: Overhaul review (tests + screenshots)
+# Runs on pushes to claude/** branches. Test output and screenshots are pushed to the
+# branch "ci-results/<branch>" so they can be reviewed without opening Actions logs.
+on:
+  push:
+    branches: ['claude/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: review-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Unit and browser tests (captured)
+        run: |
+          mkdir -p review
+          node --test tests/*.test.cjs > review/unit.txt 2>&1 || echo "UNIT FAILED" >> review/summary.txt
+          for f in tests/*-browser.cjs; do
+            name=$(basename "$f" .cjs)
+            if node "$f" > "review/$name.txt" 2>&1; then echo "ok $name" >> review/summary.txt; else echo "FAIL $name" >> review/summary.txt; fi
+          done
+          for v in tools/validate_game_sprites.py tools/validate_enemy_animations.py; do
+            python "$v" > "review/$(basename $v .py).txt" 2>&1 && echo "ok $v" >> review/summary.txt || echo "FAIL $v" >> review/summary.txt
+          done
+          grep -E "^# (pass|fail)" review/unit.txt >> review/summary.txt || true
+      - name: Screenshots
+        run: node tools/screenshots.cjs review/shots || echo "SCREENSHOTS FAILED" >> review/summary.txt
+      - name: Publish results branch
+        run: |
+          branch="ci-results/${GITHUB_REF_NAME}"
+          cp -r review /tmp/review
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git checkout --orphan results-tmp
+          git rm -rq --cached . && find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r /tmp/review/* .
+          echo "commit ${GITHUB_SHA}" > COMMIT.txt
+          git add -A && git commit -qm "Review for ${GITHUB_SHA}"
+          git push -f origin "HEAD:refs/heads/${branch}"
