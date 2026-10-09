@@ -17,7 +17,9 @@
     "validate:ecology": "python tools/validate_ecology.py",
     "validate:corpses": "python tools/validate_corpses.py",
     "validate:enemy-full": "python tools/validate_enemy_full.py",
-    "validate:player-full": "python tools/validate_player_full.py"
+    "validate:player-full": "python tools/validate_player_full.py",
+    "simulate:styles": "node tools/playstyle_sim.cjs",
+    "simulate:quick": "node tools/playstyle_sim.cjs --quick"
   },
   "devDependencies": {
     "playwright": "^1.62.1"

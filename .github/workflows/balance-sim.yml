@@ -1,0 +1,44 @@
+name: Balance-simulering (spillestile)
+# Kør manuelt: GitHub → Actions → "Balance-simulering (spillestile)" → Run workflow.
+# Resultatet (REPORT.md, summary.csv, summary_compact.json, runs.jsonl) hentes som artifact nederst på kørslens side.
+on:
+  workflow_dispatch:
+    inputs:
+      runs:
+        description: 'Seeds pr. art × spillestil'
+        default: '20'
+      seconds:
+        description: 'Simulerede sekunder pr. run'
+        default: '1500'
+      species:
+        description: 'Arter (all eller fx velociraptor,compy)'
+        default: 'all'
+      styles:
+        description: 'Spillestile (all eller fx casual,optimizer,newbie)'
+        default: 'all'
+permissions:
+  contents: read
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Kør simulering
+        run: >
+          node tools/playstyle_sim.cjs
+          --runs "${{ github.event.inputs.runs }}"
+          --seconds "${{ github.event.inputs.seconds }}"
+          --species "${{ github.event.inputs.species }}"
+          --styles "${{ github.event.inputs.styles }}"
+          --threads 4
+          --out sim-output
+      - name: Vis rapport i kørslens oversigt
+        run: cat sim-output/REPORT.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: balance-simulering
+          path: sim-output/

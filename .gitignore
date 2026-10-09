@@ -9,3 +9,6 @@ __pycache__/
 !.env.example
 .DS_Store
 Thumbs.db
+
+# Local simulator output
+PRIMAL_RUN_Game/balance_runs/playstyle_*/runs.jsonl
