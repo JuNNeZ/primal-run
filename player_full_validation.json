@@ -1,7 +1,7 @@
 {
   "technical_export_result": "PASS",
-  "assets": 480,
-  "sequences": 96,
+  "assets": 840,
+  "sequences": 168,
   "errors": [],
   "frames": {
     "assets/player_full/compy_idle_S_000.png": {
@@ -6243,6 +6243,4686 @@
         72
       ],
       "opaque_pixels": 2572
+    },
+    "assets/player_full/pachycephalosaurus_idle_S_000.png": {
+      "bbox": [
+        55,
+        20,
+        95,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2034
+    },
+    "assets/player_full/pachycephalosaurus_idle_S_001.png": {
+      "bbox": [
+        54,
+        26,
+        94,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2004
+    },
+    "assets/player_full/pachycephalosaurus_idle_S_002.png": {
+      "bbox": [
+        53,
+        22,
+        92,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2034
+    },
+    "assets/player_full/pachycephalosaurus_idle_S_003.png": {
+      "bbox": [
+        51,
+        22,
+        91,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2013
+    },
+    "assets/player_full/pachycephalosaurus_hurt_S_000.png": {
+      "bbox": [
+        51,
+        25,
+        90,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1891
+    },
+    "assets/player_full/pachycephalosaurus_hurt_S_001.png": {
+      "bbox": [
+        50,
+        23,
+        90,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1934
+    },
+    "assets/player_full/pachycephalosaurus_walk_S_000.png": {
+      "bbox": [
+        53,
+        22,
+        94,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2078
+    },
+    "assets/player_full/pachycephalosaurus_walk_S_001.png": {
+      "bbox": [
+        54,
+        22,
+        96,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2155
+    },
+    "assets/player_full/pachycephalosaurus_walk_S_002.png": {
+      "bbox": [
+        53,
+        20,
+        95,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2193
+    },
+    "assets/player_full/pachycephalosaurus_walk_S_003.png": {
+      "bbox": [
+        49,
+        25,
+        90,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2119
+    },
+    "assets/player_full/pachycephalosaurus_walk_S_004.png": {
+      "bbox": [
+        51,
+        20,
+        91,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2110
+    },
+    "assets/player_full/pachycephalosaurus_walk_S_005.png": {
+      "bbox": [
+        50,
+        22,
+        92,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2160
+    },
+    "assets/player_full/pachycephalosaurus_run_S_000.png": {
+      "bbox": [
+        53,
+        21,
+        96,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2129
+    },
+    "assets/player_full/pachycephalosaurus_run_S_001.png": {
+      "bbox": [
+        52,
+        23,
+        93,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1996
+    },
+    "assets/player_full/pachycephalosaurus_run_S_002.png": {
+      "bbox": [
+        50,
+        20,
+        92,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2131
+    },
+    "assets/player_full/pachycephalosaurus_run_S_003.png": {
+      "bbox": [
+        51,
+        20,
+        92,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2122
+    },
+    "assets/player_full/pachycephalosaurus_run_S_004.png": {
+      "bbox": [
+        50,
+        19,
+        91,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2176
+    },
+    "assets/player_full/pachycephalosaurus_run_S_005.png": {
+      "bbox": [
+        48,
+        19,
+        91,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2329
+    },
+    "assets/player_full/pachycephalosaurus_attack_S_000.png": {
+      "bbox": [
+        52,
+        21,
+        95,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2040
+    },
+    "assets/player_full/pachycephalosaurus_attack_S_001.png": {
+      "bbox": [
+        53,
+        24,
+        97,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2087
+    },
+    "assets/player_full/pachycephalosaurus_attack_S_002.png": {
+      "bbox": [
+        53,
+        19,
+        95,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2202
+    },
+    "assets/player_full/pachycephalosaurus_attack_S_003.png": {
+      "bbox": [
+        52,
+        23,
+        97,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2244
+    },
+    "assets/player_full/pachycephalosaurus_attack_S_004.png": {
+      "bbox": [
+        51,
+        21,
+        92,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2039
+    },
+    "assets/player_full/pachycephalosaurus_attack_S_005.png": {
+      "bbox": [
+        52,
+        21,
+        93,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2048
+    },
+    "assets/player_full/pachycephalosaurus_death_S_000.png": {
+      "bbox": [
+        54,
+        21,
+        98,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2115
+    },
+    "assets/player_full/pachycephalosaurus_death_S_001.png": {
+      "bbox": [
+        51,
+        22,
+        100,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2310
+    },
+    "assets/player_full/pachycephalosaurus_death_S_002.png": {
+      "bbox": [
+        37,
+        36,
+        104,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2391
+    },
+    "assets/player_full/pachycephalosaurus_death_S_003.png": {
+      "bbox": [
+        51,
+        27,
+        105,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2308
+    },
+    "assets/player_full/pachycephalosaurus_death_S_004.png": {
+      "bbox": [
+        44,
+        37,
+        116,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2215
+    },
+    "assets/player_full/pachycephalosaurus_death_S_005.png": {
+      "bbox": [
+        19,
+        53,
+        122,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2527
+    },
+    "assets/player_full/pachycephalosaurus_idle_E_000.png": {
+      "bbox": [
+        21,
+        55,
+        123,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2136
+    },
+    "assets/player_full/pachycephalosaurus_idle_E_001.png": {
+      "bbox": [
+        20,
+        53,
+        123,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2298
+    },
+    "assets/player_full/pachycephalosaurus_idle_E_002.png": {
+      "bbox": [
+        19,
+        52,
+        123,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2402
+    },
+    "assets/player_full/pachycephalosaurus_idle_E_003.png": {
+      "bbox": [
+        19,
+        52,
+        123,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2330
+    },
+    "assets/player_full/pachycephalosaurus_hurt_E_000.png": {
+      "bbox": [
+        17,
+        51,
+        126,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2441
+    },
+    "assets/player_full/pachycephalosaurus_hurt_E_001.png": {
+      "bbox": [
+        25,
+        50,
+        121,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2295
+    },
+    "assets/player_full/pachycephalosaurus_walk_E_000.png": {
+      "bbox": [
+        19,
+        40,
+        126,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2476
+    },
+    "assets/player_full/pachycephalosaurus_walk_E_001.png": {
+      "bbox": [
+        17,
+        40,
+        125,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2451
+    },
+    "assets/player_full/pachycephalosaurus_walk_E_002.png": {
+      "bbox": [
+        16,
+        41,
+        127,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2565
+    },
+    "assets/player_full/pachycephalosaurus_walk_E_003.png": {
+      "bbox": [
+        15,
+        39,
+        127,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2591
+    },
+    "assets/player_full/pachycephalosaurus_walk_E_004.png": {
+      "bbox": [
+        16,
+        37,
+        123,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2475
+    },
+    "assets/player_full/pachycephalosaurus_walk_E_005.png": {
+      "bbox": [
+        15,
+        39,
+        123,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2470
+    },
+    "assets/player_full/pachycephalosaurus_run_E_000.png": {
+      "bbox": [
+        19,
+        32,
+        128,
+        81
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2578
+    },
+    "assets/player_full/pachycephalosaurus_run_E_001.png": {
+      "bbox": [
+        12,
+        30,
+        126,
+        81
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2668
+    },
+    "assets/player_full/pachycephalosaurus_run_E_002.png": {
+      "bbox": [
+        9,
+        30,
+        130,
+        78
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2681
+    },
+    "assets/player_full/pachycephalosaurus_run_E_003.png": {
+      "bbox": [
+        11,
+        30,
+        130,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2793
+    },
+    "assets/player_full/pachycephalosaurus_run_E_004.png": {
+      "bbox": [
+        17,
+        28,
+        125,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2556
+    },
+    "assets/player_full/pachycephalosaurus_run_E_005.png": {
+      "bbox": [
+        14,
+        27,
+        126,
+        77
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2610
+    },
+    "assets/player_full/pachycephalosaurus_attack_E_000.png": {
+      "bbox": [
+        20,
+        24,
+        124,
+        73
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2423
+    },
+    "assets/player_full/pachycephalosaurus_attack_E_001.png": {
+      "bbox": [
+        16,
+        25,
+        124,
+        74
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2524
+    },
+    "assets/player_full/pachycephalosaurus_attack_E_002.png": {
+      "bbox": [
+        16,
+        23,
+        130,
+        72
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2689
+    },
+    "assets/player_full/pachycephalosaurus_attack_E_003.png": {
+      "bbox": [
+        15,
+        22,
+        128,
+        73
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2557
+    },
+    "assets/player_full/pachycephalosaurus_attack_E_004.png": {
+      "bbox": [
+        12,
+        23,
+        122,
+        73
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2559
+    },
+    "assets/player_full/pachycephalosaurus_attack_E_005.png": {
+      "bbox": [
+        17,
+        22,
+        121,
+        73
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2449
+    },
+    "assets/player_full/pachycephalosaurus_death_E_000.png": {
+      "bbox": [
+        20,
+        12,
+        127,
+        65
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2507
+    },
+    "assets/player_full/pachycephalosaurus_death_E_001.png": {
+      "bbox": [
+        19,
+        11,
+        123,
+        63
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2568
+    },
+    "assets/player_full/pachycephalosaurus_death_E_002.png": {
+      "bbox": [
+        18,
+        11,
+        128,
+        61
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2751
+    },
+    "assets/player_full/pachycephalosaurus_death_E_003.png": {
+      "bbox": [
+        16,
+        13,
+        139,
+        61
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3087
+    },
+    "assets/player_full/pachycephalosaurus_death_E_004.png": {
+      "bbox": [
+        19,
+        11,
+        129,
+        69
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2853
+    },
+    "assets/player_full/pachycephalosaurus_death_E_005.png": {
+      "bbox": [
+        15,
+        16,
+        126,
+        68
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2917
+    },
+    "assets/player_full/pachycephalosaurus_idle_N_000.png": {
+      "bbox": [
+        64,
+        25,
+        103,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1965
+    },
+    "assets/player_full/pachycephalosaurus_idle_N_001.png": {
+      "bbox": [
+        55,
+        25,
+        94,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2015
+    },
+    "assets/player_full/pachycephalosaurus_idle_N_002.png": {
+      "bbox": [
+        52,
+        24,
+        92,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2057
+    },
+    "assets/player_full/pachycephalosaurus_idle_N_003.png": {
+      "bbox": [
+        50,
+        24,
+        90,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2080
+    },
+    "assets/player_full/pachycephalosaurus_hurt_N_000.png": {
+      "bbox": [
+        51,
+        27,
+        90,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2025
+    },
+    "assets/player_full/pachycephalosaurus_hurt_N_001.png": {
+      "bbox": [
+        40,
+        26,
+        81,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1940
+    },
+    "assets/player_full/pachycephalosaurus_walk_N_000.png": {
+      "bbox": [
+        60,
+        16,
+        102,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2106
+    },
+    "assets/player_full/pachycephalosaurus_walk_N_001.png": {
+      "bbox": [
+        54,
+        16,
+        95,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2227
+    },
+    "assets/player_full/pachycephalosaurus_walk_N_002.png": {
+      "bbox": [
+        52,
+        18,
+        93,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2086
+    },
+    "assets/player_full/pachycephalosaurus_walk_N_003.png": {
+      "bbox": [
+        47,
+        16,
+        88,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2200
+    },
+    "assets/player_full/pachycephalosaurus_walk_N_004.png": {
+      "bbox": [
+        47,
+        16,
+        90,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2126
+    },
+    "assets/player_full/pachycephalosaurus_walk_N_005.png": {
+      "bbox": [
+        41,
+        16,
+        82,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2204
+    },
+    "assets/player_full/pachycephalosaurus_run_N_000.png": {
+      "bbox": [
+        59,
+        11,
+        102,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2197
+    },
+    "assets/player_full/pachycephalosaurus_run_N_001.png": {
+      "bbox": [
+        51,
+        9,
+        98,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2233
+    },
+    "assets/player_full/pachycephalosaurus_run_N_002.png": {
+      "bbox": [
+        49,
+        7,
+        95,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2262
+    },
+    "assets/player_full/pachycephalosaurus_run_N_003.png": {
+      "bbox": [
+        48,
+        8,
+        91,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2269
+    },
+    "assets/player_full/pachycephalosaurus_run_N_004.png": {
+      "bbox": [
+        47,
+        9,
+        90,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2282
+    },
+    "assets/player_full/pachycephalosaurus_run_N_005.png": {
+      "bbox": [
+        41,
+        9,
+        84,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2223
+    },
+    "assets/player_full/pachycephalosaurus_attack_N_000.png": {
+      "bbox": [
+        58,
+        4,
+        102,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2341
+    },
+    "assets/player_full/pachycephalosaurus_attack_N_001.png": {
+      "bbox": [
+        53,
+        4,
+        96,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2367
+    },
+    "assets/player_full/pachycephalosaurus_attack_N_002.png": {
+      "bbox": [
+        52,
+        5,
+        93,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2278
+    },
+    "assets/player_full/pachycephalosaurus_attack_N_003.png": {
+      "bbox": [
+        47,
+        5,
+        88,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2294
+    },
+    "assets/player_full/pachycephalosaurus_attack_N_004.png": {
+      "bbox": [
+        47,
+        3,
+        91,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2359
+    },
+    "assets/player_full/pachycephalosaurus_attack_N_005.png": {
+      "bbox": [
+        41,
+        3,
+        85,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2325
+    },
+    "assets/player_full/pachycephalosaurus_death_N_000.png": {
+      "bbox": [
+        59,
+        2,
+        103,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2319
+    },
+    "assets/player_full/pachycephalosaurus_death_N_001.png": {
+      "bbox": [
+        49,
+        8,
+        95,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2349
+    },
+    "assets/player_full/pachycephalosaurus_death_N_002.png": {
+      "bbox": [
+        49,
+        16,
+        104,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2392
+    },
+    "assets/player_full/pachycephalosaurus_death_N_003.png": {
+      "bbox": [
+        47,
+        12,
+        105,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2678
+    },
+    "assets/player_full/pachycephalosaurus_death_N_004.png": {
+      "bbox": [
+        42,
+        7,
+        104,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2621
+    },
+    "assets/player_full/pachycephalosaurus_death_N_005.png": {
+      "bbox": [
+        37,
+        2,
+        94,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2478
+    },
+    "assets/player_full/pachycephalosaurus_idle_W_000.png": {
+      "bbox": [
+        28,
+        42,
+        135,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2507
+    },
+    "assets/player_full/pachycephalosaurus_idle_W_001.png": {
+      "bbox": [
+        28,
+        41,
+        139,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2574
+    },
+    "assets/player_full/pachycephalosaurus_idle_W_002.png": {
+      "bbox": [
+        22,
+        40,
+        136,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2761
+    },
+    "assets/player_full/pachycephalosaurus_idle_W_003.png": {
+      "bbox": [
+        17,
+        42,
+        133,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2637
+    },
+    "assets/player_full/pachycephalosaurus_hurt_W_000.png": {
+      "bbox": [
+        26,
+        37,
+        134,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2846
+    },
+    "assets/player_full/pachycephalosaurus_hurt_W_001.png": {
+      "bbox": [
+        21,
+        39,
+        126,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2598
+    },
+    "assets/player_full/pachycephalosaurus_walk_W_000.png": {
+      "bbox": [
+        24,
+        32,
+        138,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2679
+    },
+    "assets/player_full/pachycephalosaurus_walk_W_001.png": {
+      "bbox": [
+        22,
+        32,
+        138,
+        85
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2770
+    },
+    "assets/player_full/pachycephalosaurus_walk_W_002.png": {
+      "bbox": [
+        21,
+        32,
+        136,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2857
+    },
+    "assets/player_full/pachycephalosaurus_walk_W_003.png": {
+      "bbox": [
+        18,
+        34,
+        136,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2946
+    },
+    "assets/player_full/pachycephalosaurus_walk_W_004.png": {
+      "bbox": [
+        19,
+        32,
+        135,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2854
+    },
+    "assets/player_full/pachycephalosaurus_walk_W_005.png": {
+      "bbox": [
+        22,
+        33,
+        132,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2749
+    },
+    "assets/player_full/pachycephalosaurus_run_W_000.png": {
+      "bbox": [
+        21,
+        25,
+        138,
+        81
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2894
+    },
+    "assets/player_full/pachycephalosaurus_run_W_001.png": {
+      "bbox": [
+        21,
+        26,
+        135,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2811
+    },
+    "assets/player_full/pachycephalosaurus_run_W_002.png": {
+      "bbox": [
+        16,
+        32,
+        138,
+        78
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2853
+    },
+    "assets/player_full/pachycephalosaurus_run_W_003.png": {
+      "bbox": [
+        21,
+        26,
+        137,
+        82
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2951
+    },
+    "assets/player_full/pachycephalosaurus_run_W_004.png": {
+      "bbox": [
+        18,
+        23,
+        132,
+        81
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2793
+    },
+    "assets/player_full/pachycephalosaurus_run_W_005.png": {
+      "bbox": [
+        16,
+        30,
+        129,
+        78
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2581
+    },
+    "assets/player_full/pachycephalosaurus_attack_W_000.png": {
+      "bbox": [
+        23,
+        21,
+        136,
+        74
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2684
+    },
+    "assets/player_full/pachycephalosaurus_attack_W_001.png": {
+      "bbox": [
+        20,
+        22,
+        139,
+        74
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2862
+    },
+    "assets/player_full/pachycephalosaurus_attack_W_002.png": {
+      "bbox": [
+        21,
+        21,
+        139,
+        67
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2612
+    },
+    "assets/player_full/pachycephalosaurus_attack_W_003.png": {
+      "bbox": [
+        21,
+        21,
+        139,
+        73
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2722
+    },
+    "assets/player_full/pachycephalosaurus_attack_W_004.png": {
+      "bbox": [
+        25,
+        20,
+        134,
+        73
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2598
+    },
+    "assets/player_full/pachycephalosaurus_attack_W_005.png": {
+      "bbox": [
+        16,
+        21,
+        128,
+        73
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2649
+    },
+    "assets/player_full/pachycephalosaurus_death_W_000.png": {
+      "bbox": [
+        20,
+        11,
+        135,
+        72
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2949
+    },
+    "assets/player_full/pachycephalosaurus_death_W_001.png": {
+      "bbox": [
+        17,
+        15,
+        134,
+        73
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3053
+    },
+    "assets/player_full/pachycephalosaurus_death_W_002.png": {
+      "bbox": [
+        22,
+        17,
+        129,
+        73
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2866
+    },
+    "assets/player_full/pachycephalosaurus_death_W_003.png": {
+      "bbox": [
+        21,
+        11,
+        132,
+        71
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3161
+    },
+    "assets/player_full/pachycephalosaurus_death_W_004.png": {
+      "bbox": [
+        23,
+        16,
+        131,
+        70
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3008
+    },
+    "assets/player_full/pachycephalosaurus_death_W_005.png": {
+      "bbox": [
+        21,
+        23,
+        121,
+        78
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3122
+    },
+    "assets/player_full/gallimimus_idle_S_000.png": {
+      "bbox": [
+        54,
+        21,
+        90,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1691
+    },
+    "assets/player_full/gallimimus_idle_S_001.png": {
+      "bbox": [
+        54,
+        22,
+        90,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1743
+    },
+    "assets/player_full/gallimimus_idle_S_002.png": {
+      "bbox": [
+        54,
+        22,
+        89,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1735
+    },
+    "assets/player_full/gallimimus_idle_S_003.png": {
+      "bbox": [
+        54,
+        22,
+        89,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1741
+    },
+    "assets/player_full/gallimimus_hurt_S_000.png": {
+      "bbox": [
+        53,
+        25,
+        88,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1583
+    },
+    "assets/player_full/gallimimus_hurt_S_001.png": {
+      "bbox": [
+        55,
+        27,
+        89,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1693
+    },
+    "assets/player_full/gallimimus_walk_S_000.png": {
+      "bbox": [
+        54,
+        21,
+        89,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1696
+    },
+    "assets/player_full/gallimimus_walk_S_001.png": {
+      "bbox": [
+        54,
+        21,
+        89,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1664
+    },
+    "assets/player_full/gallimimus_walk_S_002.png": {
+      "bbox": [
+        54,
+        24,
+        89,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1646
+    },
+    "assets/player_full/gallimimus_walk_S_003.png": {
+      "bbox": [
+        54,
+        20,
+        89,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1679
+    },
+    "assets/player_full/gallimimus_walk_S_004.png": {
+      "bbox": [
+        55,
+        22,
+        90,
+        119
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1683
+    },
+    "assets/player_full/gallimimus_walk_S_005.png": {
+      "bbox": [
+        55,
+        23,
+        90,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1678
+    },
+    "assets/player_full/gallimimus_run_S_000.png": {
+      "bbox": [
+        53,
+        19,
+        89,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1775
+    },
+    "assets/player_full/gallimimus_run_S_001.png": {
+      "bbox": [
+        54,
+        19,
+        90,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1830
+    },
+    "assets/player_full/gallimimus_run_S_002.png": {
+      "bbox": [
+        54,
+        16,
+        89,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1755
+    },
+    "assets/player_full/gallimimus_run_S_003.png": {
+      "bbox": [
+        53,
+        22,
+        89,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1777
+    },
+    "assets/player_full/gallimimus_run_S_004.png": {
+      "bbox": [
+        52,
+        19,
+        88,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1750
+    },
+    "assets/player_full/gallimimus_run_S_005.png": {
+      "bbox": [
+        54,
+        21,
+        91,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1744
+    },
+    "assets/player_full/gallimimus_attack_S_000.png": {
+      "bbox": [
+        53,
+        19,
+        89,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1689
+    },
+    "assets/player_full/gallimimus_attack_S_001.png": {
+      "bbox": [
+        54,
+        19,
+        90,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1709
+    },
+    "assets/player_full/gallimimus_attack_S_002.png": {
+      "bbox": [
+        54,
+        22,
+        90,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1742
+    },
+    "assets/player_full/gallimimus_attack_S_003.png": {
+      "bbox": [
+        54,
+        20,
+        90,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1761
+    },
+    "assets/player_full/gallimimus_attack_S_004.png": {
+      "bbox": [
+        54,
+        19,
+        90,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1764
+    },
+    "assets/player_full/gallimimus_attack_S_005.png": {
+      "bbox": [
+        54,
+        20,
+        90,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1762
+    },
+    "assets/player_full/gallimimus_death_S_000.png": {
+      "bbox": [
+        53,
+        16,
+        89,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1746
+    },
+    "assets/player_full/gallimimus_death_S_001.png": {
+      "bbox": [
+        54,
+        17,
+        92,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1792
+    },
+    "assets/player_full/gallimimus_death_S_002.png": {
+      "bbox": [
+        43,
+        25,
+        101,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1956
+    },
+    "assets/player_full/gallimimus_death_S_003.png": {
+      "bbox": [
+        40,
+        33,
+        116,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2135
+    },
+    "assets/player_full/gallimimus_death_S_004.png": {
+      "bbox": [
+        37,
+        22,
+        117,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2337
+    },
+    "assets/player_full/gallimimus_death_S_005.png": {
+      "bbox": [
+        17,
+        37,
+        120,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2354
+    },
+    "assets/player_full/gallimimus_idle_E_000.png": {
+      "bbox": [
+        14,
+        50,
+        130,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2150
+    },
+    "assets/player_full/gallimimus_idle_E_001.png": {
+      "bbox": [
+        12,
+        50,
+        129,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2144
+    },
+    "assets/player_full/gallimimus_idle_E_002.png": {
+      "bbox": [
+        12,
+        50,
+        129,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2142
+    },
+    "assets/player_full/gallimimus_idle_E_003.png": {
+      "bbox": [
+        12,
+        50,
+        129,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2168
+    },
+    "assets/player_full/gallimimus_hurt_E_000.png": {
+      "bbox": [
+        12,
+        50,
+        124,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2186
+    },
+    "assets/player_full/gallimimus_hurt_E_001.png": {
+      "bbox": [
+        13,
+        50,
+        124,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2209
+    },
+    "assets/player_full/gallimimus_walk_E_000.png": {
+      "bbox": [
+        14,
+        40,
+        132,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2216
+    },
+    "assets/player_full/gallimimus_walk_E_001.png": {
+      "bbox": [
+        12,
+        40,
+        132,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2319
+    },
+    "assets/player_full/gallimimus_walk_E_002.png": {
+      "bbox": [
+        12,
+        40,
+        132,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2258
+    },
+    "assets/player_full/gallimimus_walk_E_003.png": {
+      "bbox": [
+        12,
+        40,
+        130,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2282
+    },
+    "assets/player_full/gallimimus_walk_E_004.png": {
+      "bbox": [
+        13,
+        40,
+        133,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2249
+    },
+    "assets/player_full/gallimimus_walk_E_005.png": {
+      "bbox": [
+        12,
+        40,
+        132,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2288
+    },
+    "assets/player_full/gallimimus_run_E_000.png": {
+      "bbox": [
+        14,
+        33,
+        132,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2289
+    },
+    "assets/player_full/gallimimus_run_E_001.png": {
+      "bbox": [
+        11,
+        32,
+        133,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2339
+    },
+    "assets/player_full/gallimimus_run_E_002.png": {
+      "bbox": [
+        12,
+        33,
+        134,
+        82
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2402
+    },
+    "assets/player_full/gallimimus_run_E_003.png": {
+      "bbox": [
+        13,
+        33,
+        132,
+        84
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2287
+    },
+    "assets/player_full/gallimimus_run_E_004.png": {
+      "bbox": [
+        12,
+        33,
+        134,
+        82
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2270
+    },
+    "assets/player_full/gallimimus_run_E_005.png": {
+      "bbox": [
+        13,
+        33,
+        131,
+        82
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2349
+    },
+    "assets/player_full/gallimimus_attack_E_000.png": {
+      "bbox": [
+        14,
+        29,
+        130,
+        78
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2221
+    },
+    "assets/player_full/gallimimus_attack_E_001.png": {
+      "bbox": [
+        11,
+        29,
+        127,
+        79
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2236
+    },
+    "assets/player_full/gallimimus_attack_E_002.png": {
+      "bbox": [
+        12,
+        29,
+        140,
+        77
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2287
+    },
+    "assets/player_full/gallimimus_attack_E_003.png": {
+      "bbox": [
+        18,
+        29,
+        133,
+        79
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2185
+    },
+    "assets/player_full/gallimimus_attack_E_004.png": {
+      "bbox": [
+        13,
+        29,
+        133,
+        79
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2264
+    },
+    "assets/player_full/gallimimus_attack_E_005.png": {
+      "bbox": [
+        12,
+        29,
+        131,
+        79
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2240
+    },
+    "assets/player_full/gallimimus_death_E_000.png": {
+      "bbox": [
+        14,
+        25,
+        132,
+        74
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2231
+    },
+    "assets/player_full/gallimimus_death_E_001.png": {
+      "bbox": [
+        13,
+        25,
+        133,
+        76
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2354
+    },
+    "assets/player_full/gallimimus_death_E_002.png": {
+      "bbox": [
+        15,
+        27,
+        131,
+        77
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2300
+    },
+    "assets/player_full/gallimimus_death_E_003.png": {
+      "bbox": [
+        17,
+        27,
+        132,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2559
+    },
+    "assets/player_full/gallimimus_death_E_004.png": {
+      "bbox": [
+        20,
+        17,
+        132,
+        82
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2626
+    },
+    "assets/player_full/gallimimus_death_E_005.png": {
+      "bbox": [
+        13,
+        30,
+        131,
+        76
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2532
+    },
+    "assets/player_full/gallimimus_idle_N_000.png": {
+      "bbox": [
+        55,
+        23,
+        90,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1621
+    },
+    "assets/player_full/gallimimus_idle_N_001.png": {
+      "bbox": [
+        57,
+        22,
+        92,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1646
+    },
+    "assets/player_full/gallimimus_idle_N_002.png": {
+      "bbox": [
+        55,
+        23,
+        90,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1645
+    },
+    "assets/player_full/gallimimus_idle_N_003.png": {
+      "bbox": [
+        53,
+        23,
+        89,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1663
+    },
+    "assets/player_full/gallimimus_hurt_N_000.png": {
+      "bbox": [
+        53,
+        23,
+        89,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1646
+    },
+    "assets/player_full/gallimimus_hurt_N_001.png": {
+      "bbox": [
+        52,
+        23,
+        89,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1706
+    },
+    "assets/player_full/gallimimus_walk_N_000.png": {
+      "bbox": [
+        54,
+        17,
+        91,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1730
+    },
+    "assets/player_full/gallimimus_walk_N_001.png": {
+      "bbox": [
+        52,
+        17,
+        89,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1732
+    },
+    "assets/player_full/gallimimus_walk_N_002.png": {
+      "bbox": [
+        51,
+        17,
+        89,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1740
+    },
+    "assets/player_full/gallimimus_walk_N_003.png": {
+      "bbox": [
+        51,
+        17,
+        88,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1686
+    },
+    "assets/player_full/gallimimus_walk_N_004.png": {
+      "bbox": [
+        54,
+        16,
+        91,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1884
+    },
+    "assets/player_full/gallimimus_walk_N_005.png": {
+      "bbox": [
+        52,
+        17,
+        89,
+        111
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1748
+    },
+    "assets/player_full/gallimimus_run_N_000.png": {
+      "bbox": [
+        54,
+        13,
+        91,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1728
+    },
+    "assets/player_full/gallimimus_run_N_001.png": {
+      "bbox": [
+        55,
+        13,
+        92,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1712
+    },
+    "assets/player_full/gallimimus_run_N_002.png": {
+      "bbox": [
+        53,
+        13,
+        90,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1756
+    },
+    "assets/player_full/gallimimus_run_N_003.png": {
+      "bbox": [
+        51,
+        12,
+        88,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1745
+    },
+    "assets/player_full/gallimimus_run_N_004.png": {
+      "bbox": [
+        52,
+        13,
+        89,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1744
+    },
+    "assets/player_full/gallimimus_run_N_005.png": {
+      "bbox": [
+        52,
+        13,
+        89,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1711
+    },
+    "assets/player_full/gallimimus_attack_N_000.png": {
+      "bbox": [
+        53,
+        9,
+        90,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1698
+    },
+    "assets/player_full/gallimimus_attack_N_001.png": {
+      "bbox": [
+        53,
+        9,
+        90,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1694
+    },
+    "assets/player_full/gallimimus_attack_N_002.png": {
+      "bbox": [
+        53,
+        9,
+        90,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1707
+    },
+    "assets/player_full/gallimimus_attack_N_003.png": {
+      "bbox": [
+        52,
+        9,
+        89,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1667
+    },
+    "assets/player_full/gallimimus_attack_N_004.png": {
+      "bbox": [
+        53,
+        10,
+        90,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1726
+    },
+    "assets/player_full/gallimimus_attack_N_005.png": {
+      "bbox": [
+        52,
+        9,
+        89,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1703
+    },
+    "assets/player_full/gallimimus_death_N_000.png": {
+      "bbox": [
+        53,
+        4,
+        92,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1837
+    },
+    "assets/player_full/gallimimus_death_N_001.png": {
+      "bbox": [
+        55,
+        8,
+        94,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1968
+    },
+    "assets/player_full/gallimimus_death_N_002.png": {
+      "bbox": [
+        49,
+        14,
+        104,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2116
+    },
+    "assets/player_full/gallimimus_death_N_003.png": {
+      "bbox": [
+        38,
+        11,
+        111,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2245
+    },
+    "assets/player_full/gallimimus_death_N_004.png": {
+      "bbox": [
+        36,
+        12,
+        110,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2404
+    },
+    "assets/player_full/gallimimus_death_N_005.png": {
+      "bbox": [
+        17,
+        25,
+        122,
+        81
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2432
+    },
+    "assets/player_full/gallimimus_idle_W_000.png": {
+      "bbox": [
+        26,
+        53,
+        137,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1996
+    },
+    "assets/player_full/gallimimus_idle_W_001.png": {
+      "bbox": [
+        22,
+        52,
+        134,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2039
+    },
+    "assets/player_full/gallimimus_idle_W_002.png": {
+      "bbox": [
+        16,
+        52,
+        131,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2109
+    },
+    "assets/player_full/gallimimus_idle_W_003.png": {
+      "bbox": [
+        11,
+        53,
+        135,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2239
+    },
+    "assets/player_full/gallimimus_hurt_W_000.png": {
+      "bbox": [
+        15,
+        52,
+        135,
+        105
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2442
+    },
+    "assets/player_full/gallimimus_hurt_W_001.png": {
+      "bbox": [
+        18,
+        50,
+        131,
+        113
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2379
+    },
+    "assets/player_full/gallimimus_walk_W_000.png": {
+      "bbox": [
+        21,
+        48,
+        141,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2204
+    },
+    "assets/player_full/gallimimus_walk_W_001.png": {
+      "bbox": [
+        19,
+        46,
+        136,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2245
+    },
+    "assets/player_full/gallimimus_walk_W_002.png": {
+      "bbox": [
+        16,
+        50,
+        134,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2240
+    },
+    "assets/player_full/gallimimus_walk_W_003.png": {
+      "bbox": [
+        11,
+        47,
+        132,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2282
+    },
+    "assets/player_full/gallimimus_walk_W_004.png": {
+      "bbox": [
+        14,
+        49,
+        131,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2182
+    },
+    "assets/player_full/gallimimus_walk_W_005.png": {
+      "bbox": [
+        8,
+        44,
+        131,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2382
+    },
+    "assets/player_full/gallimimus_run_W_000.png": {
+      "bbox": [
+        20,
+        41,
+        141,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2253
+    },
+    "assets/player_full/gallimimus_run_W_001.png": {
+      "bbox": [
+        19,
+        41,
+        137,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2232
+    },
+    "assets/player_full/gallimimus_run_W_002.png": {
+      "bbox": [
+        16,
+        40,
+        134,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2345
+    },
+    "assets/player_full/gallimimus_run_W_003.png": {
+      "bbox": [
+        11,
+        41,
+        131,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2244
+    },
+    "assets/player_full/gallimimus_run_W_004.png": {
+      "bbox": [
+        11,
+        40,
+        131,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2366
+    },
+    "assets/player_full/gallimimus_run_W_005.png": {
+      "bbox": [
+        9,
+        38,
+        131,
+        85
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2363
+    },
+    "assets/player_full/gallimimus_attack_W_000.png": {
+      "bbox": [
+        33,
+        34,
+        141,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2183
+    },
+    "assets/player_full/gallimimus_attack_W_001.png": {
+      "bbox": [
+        23,
+        34,
+        137,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2179
+    },
+    "assets/player_full/gallimimus_attack_W_002.png": {
+      "bbox": [
+        16,
+        31,
+        132,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2207
+    },
+    "assets/player_full/gallimimus_attack_W_003.png": {
+      "bbox": [
+        11,
+        32,
+        132,
+        82
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2293
+    },
+    "assets/player_full/gallimimus_attack_W_004.png": {
+      "bbox": [
+        11,
+        33,
+        131,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2302
+    },
+    "assets/player_full/gallimimus_attack_W_005.png": {
+      "bbox": [
+        10,
+        31,
+        129,
+        79
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2324
+    },
+    "assets/player_full/gallimimus_death_W_000.png": {
+      "bbox": [
+        21,
+        25,
+        139,
+        80
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2391
+    },
+    "assets/player_full/gallimimus_death_W_001.png": {
+      "bbox": [
+        27,
+        28,
+        141,
+        77
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2385
+    },
+    "assets/player_full/gallimimus_death_W_002.png": {
+      "bbox": [
+        26,
+        28,
+        134,
+        80
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2519
+    },
+    "assets/player_full/gallimimus_death_W_003.png": {
+      "bbox": [
+        11,
+        30,
+        130,
+        80
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2569
+    },
+    "assets/player_full/gallimimus_death_W_004.png": {
+      "bbox": [
+        11,
+        28,
+        128,
+        75
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2450
+    },
+    "assets/player_full/gallimimus_death_W_005.png": {
+      "bbox": [
+        8,
+        28,
+        120,
+        73
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2422
+    },
+    "assets/player_full/baryonyx_idle_S_000.png": {
+      "bbox": [
+        52,
+        21,
+        94,
+        123
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2188
+    },
+    "assets/player_full/baryonyx_idle_S_001.png": {
+      "bbox": [
+        51,
+        22,
+        92,
+        123
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2149
+    },
+    "assets/player_full/baryonyx_idle_S_002.png": {
+      "bbox": [
+        52,
+        21,
+        93,
+        123
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2129
+    },
+    "assets/player_full/baryonyx_idle_S_003.png": {
+      "bbox": [
+        51,
+        21,
+        92,
+        123
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2164
+    },
+    "assets/player_full/baryonyx_hurt_S_000.png": {
+      "bbox": [
+        53,
+        25,
+        94,
+        123
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2063
+    },
+    "assets/player_full/baryonyx_hurt_S_001.png": {
+      "bbox": [
+        51,
+        24,
+        93,
+        123
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2130
+    },
+    "assets/player_full/baryonyx_walk_S_000.png": {
+      "bbox": [
+        52,
+        23,
+        94,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2067
+    },
+    "assets/player_full/baryonyx_walk_S_001.png": {
+      "bbox": [
+        51,
+        23,
+        92,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2068
+    },
+    "assets/player_full/baryonyx_walk_S_002.png": {
+      "bbox": [
+        51,
+        23,
+        93,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2120
+    },
+    "assets/player_full/baryonyx_walk_S_003.png": {
+      "bbox": [
+        51,
+        23,
+        93,
+        123
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2155
+    },
+    "assets/player_full/baryonyx_walk_S_004.png": {
+      "bbox": [
+        52,
+        24,
+        94,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2106
+    },
+    "assets/player_full/baryonyx_walk_S_005.png": {
+      "bbox": [
+        51,
+        23,
+        93,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2075
+    },
+    "assets/player_full/baryonyx_run_S_000.png": {
+      "bbox": [
+        52,
+        21,
+        93,
+        122
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2131
+    },
+    "assets/player_full/baryonyx_run_S_001.png": {
+      "bbox": [
+        50,
+        21,
+        94,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2100
+    },
+    "assets/player_full/baryonyx_run_S_002.png": {
+      "bbox": [
+        51,
+        21,
+        94,
+        124
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2214
+    },
+    "assets/player_full/baryonyx_run_S_003.png": {
+      "bbox": [
+        51,
+        18,
+        93,
+        125
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2302
+    },
+    "assets/player_full/baryonyx_run_S_004.png": {
+      "bbox": [
+        50,
+        21,
+        94,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2109
+    },
+    "assets/player_full/baryonyx_run_S_005.png": {
+      "bbox": [
+        51,
+        21,
+        93,
+        125
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2212
+    },
+    "assets/player_full/baryonyx_attack_S_000.png": {
+      "bbox": [
+        51,
+        23,
+        95,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2082
+    },
+    "assets/player_full/baryonyx_attack_S_001.png": {
+      "bbox": [
+        50,
+        24,
+        94,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2099
+    },
+    "assets/player_full/baryonyx_attack_S_002.png": {
+      "bbox": [
+        51,
+        25,
+        95,
+        129
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2177
+    },
+    "assets/player_full/baryonyx_attack_S_003.png": {
+      "bbox": [
+        49,
+        26,
+        92,
+        124
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2203
+    },
+    "assets/player_full/baryonyx_attack_S_004.png": {
+      "bbox": [
+        50,
+        23,
+        94,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2148
+    },
+    "assets/player_full/baryonyx_attack_S_005.png": {
+      "bbox": [
+        49,
+        19,
+        93,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2218
+    },
+    "assets/player_full/baryonyx_death_S_000.png": {
+      "bbox": [
+        52,
+        27,
+        95,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2009
+    },
+    "assets/player_full/baryonyx_death_S_001.png": {
+      "bbox": [
+        42,
+        24,
+        94,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2307
+    },
+    "assets/player_full/baryonyx_death_S_002.png": {
+      "bbox": [
+        38,
+        23,
+        101,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2543
+    },
+    "assets/player_full/baryonyx_death_S_003.png": {
+      "bbox": [
+        32,
+        29,
+        103,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2563
+    },
+    "assets/player_full/baryonyx_death_S_004.png": {
+      "bbox": [
+        28,
+        32,
+        110,
+        112
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2952
+    },
+    "assets/player_full/baryonyx_death_S_005.png": {
+      "bbox": [
+        27,
+        35,
+        123,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2970
+    },
+    "assets/player_full/baryonyx_idle_E_000.png": {
+      "bbox": [
+        13,
+        45,
+        136,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2606
+    },
+    "assets/player_full/baryonyx_idle_E_001.png": {
+      "bbox": [
+        13,
+        44,
+        136,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2705
+    },
+    "assets/player_full/baryonyx_idle_E_002.png": {
+      "bbox": [
+        13,
+        43,
+        135,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2649
+    },
+    "assets/player_full/baryonyx_idle_E_003.png": {
+      "bbox": [
+        11,
+        43,
+        135,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2650
+    },
+    "assets/player_full/baryonyx_hurt_E_000.png": {
+      "bbox": [
+        13,
+        42,
+        134,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2694
+    },
+    "assets/player_full/baryonyx_hurt_E_001.png": {
+      "bbox": [
+        10,
+        45,
+        132,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2704
+    },
+    "assets/player_full/baryonyx_walk_E_000.png": {
+      "bbox": [
+        13,
+        34,
+        137,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2817
+    },
+    "assets/player_full/baryonyx_walk_E_001.png": {
+      "bbox": [
+        13,
+        38,
+        138,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2781
+    },
+    "assets/player_full/baryonyx_walk_E_002.png": {
+      "bbox": [
+        12,
+        35,
+        136,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2802
+    },
+    "assets/player_full/baryonyx_walk_E_003.png": {
+      "bbox": [
+        10,
+        38,
+        137,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2812
+    },
+    "assets/player_full/baryonyx_walk_E_004.png": {
+      "bbox": [
+        14,
+        36,
+        133,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2638
+    },
+    "assets/player_full/baryonyx_walk_E_005.png": {
+      "bbox": [
+        9,
+        41,
+        132,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2778
+    },
+    "assets/player_full/baryonyx_run_E_000.png": {
+      "bbox": [
+        13,
+        25,
+        137,
+        76
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2678
+    },
+    "assets/player_full/baryonyx_run_E_001.png": {
+      "bbox": [
+        13,
+        27,
+        137,
+        77
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2797
+    },
+    "assets/player_full/baryonyx_run_E_002.png": {
+      "bbox": [
+        13,
+        21,
+        135,
+        81
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2718
+    },
+    "assets/player_full/baryonyx_run_E_003.png": {
+      "bbox": [
+        12,
+        27,
+        137,
+        77
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2841
+    },
+    "assets/player_full/baryonyx_run_E_004.png": {
+      "bbox": [
+        13,
+        23,
+        134,
+        75
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2755
+    },
+    "assets/player_full/baryonyx_run_E_005.png": {
+      "bbox": [
+        9,
+        28,
+        132,
+        78
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2865
+    },
+    "assets/player_full/baryonyx_attack_E_000.png": {
+      "bbox": [
+        13,
+        12,
+        135,
+        70
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2757
+    },
+    "assets/player_full/baryonyx_attack_E_001.png": {
+      "bbox": [
+        13,
+        15,
+        135,
+        72
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2721
+    },
+    "assets/player_full/baryonyx_attack_E_002.png": {
+      "bbox": [
+        13,
+        16,
+        135,
+        66
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2748
+    },
+    "assets/player_full/baryonyx_attack_E_003.png": {
+      "bbox": [
+        11,
+        17,
+        124,
+        66
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2665
+    },
+    "assets/player_full/baryonyx_attack_E_004.png": {
+      "bbox": [
+        8,
+        17,
+        130,
+        64
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2623
+    },
+    "assets/player_full/baryonyx_attack_E_005.png": {
+      "bbox": [
+        7,
+        15,
+        128,
+        59
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2569
+    },
+    "assets/player_full/baryonyx_death_E_000.png": {
+      "bbox": [
+        13,
+        14,
+        138,
+        68
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2813
+    },
+    "assets/player_full/baryonyx_death_E_001.png": {
+      "bbox": [
+        19,
+        13,
+        138,
+        74
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2924
+    },
+    "assets/player_full/baryonyx_death_E_002.png": {
+      "bbox": [
+        21,
+        7,
+        133,
+        72
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3088
+    },
+    "assets/player_full/baryonyx_death_E_003.png": {
+      "bbox": [
+        18,
+        9,
+        135,
+        67
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2996
+    },
+    "assets/player_full/baryonyx_death_E_004.png": {
+      "bbox": [
+        14,
+        9,
+        127,
+        69
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3007
+    },
+    "assets/player_full/baryonyx_death_E_005.png": {
+      "bbox": [
+        11,
+        5,
+        129,
+        71
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3192
+    },
+    "assets/player_full/baryonyx_idle_N_000.png": {
+      "bbox": [
+        49,
+        21,
+        95,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2423
+    },
+    "assets/player_full/baryonyx_idle_N_001.png": {
+      "bbox": [
+        51,
+        20,
+        95,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2425
+    },
+    "assets/player_full/baryonyx_idle_N_002.png": {
+      "bbox": [
+        50,
+        20,
+        95,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2429
+    },
+    "assets/player_full/baryonyx_idle_N_003.png": {
+      "bbox": [
+        49,
+        20,
+        94,
+        119
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2407
+    },
+    "assets/player_full/baryonyx_hurt_N_000.png": {
+      "bbox": [
+        48,
+        21,
+        97,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2688
+    },
+    "assets/player_full/baryonyx_hurt_N_001.png": {
+      "bbox": [
+        46,
+        20,
+        97,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2699
+    },
+    "assets/player_full/baryonyx_walk_N_000.png": {
+      "bbox": [
+        47,
+        20,
+        96,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2694
+    },
+    "assets/player_full/baryonyx_walk_N_001.png": {
+      "bbox": [
+        50,
+        20,
+        95,
+        119
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2671
+    },
+    "assets/player_full/baryonyx_walk_N_002.png": {
+      "bbox": [
+        47,
+        21,
+        95,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2710
+    },
+    "assets/player_full/baryonyx_walk_N_003.png": {
+      "bbox": [
+        51,
+        20,
+        98,
+        119
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2574
+    },
+    "assets/player_full/baryonyx_walk_N_004.png": {
+      "bbox": [
+        48,
+        20,
+        95,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2654
+    },
+    "assets/player_full/baryonyx_walk_N_005.png": {
+      "bbox": [
+        50,
+        20,
+        96,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2705
+    },
+    "assets/player_full/baryonyx_run_N_000.png": {
+      "bbox": [
+        52,
+        21,
+        100,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2477
+    },
+    "assets/player_full/baryonyx_run_N_001.png": {
+      "bbox": [
+        49,
+        21,
+        96,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2524
+    },
+    "assets/player_full/baryonyx_run_N_002.png": {
+      "bbox": [
+        48,
+        21,
+        98,
+        119
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2663
+    },
+    "assets/player_full/baryonyx_run_N_003.png": {
+      "bbox": [
+        47,
+        21,
+        96,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2717
+    },
+    "assets/player_full/baryonyx_run_N_004.png": {
+      "bbox": [
+        49,
+        21,
+        98,
+        122
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2674
+    },
+    "assets/player_full/baryonyx_run_N_005.png": {
+      "bbox": [
+        48,
+        20,
+        97,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2714
+    },
+    "assets/player_full/baryonyx_attack_N_000.png": {
+      "bbox": [
+        50,
+        20,
+        97,
+        122
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2686
+    },
+    "assets/player_full/baryonyx_attack_N_001.png": {
+      "bbox": [
+        49,
+        19,
+        94,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2699
+    },
+    "assets/player_full/baryonyx_attack_N_002.png": {
+      "bbox": [
+        51,
+        21,
+        96,
+        123
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2608
+    },
+    "assets/player_full/baryonyx_attack_N_003.png": {
+      "bbox": [
+        48,
+        25,
+        96,
+        121
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2629
+    },
+    "assets/player_full/baryonyx_attack_N_004.png": {
+      "bbox": [
+        49,
+        16,
+        96,
+        122
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2732
+    },
+    "assets/player_full/baryonyx_attack_N_005.png": {
+      "bbox": [
+        49,
+        23,
+        95,
+        123
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2707
+    },
+    "assets/player_full/baryonyx_death_N_000.png": {
+      "bbox": [
+        50,
+        23,
+        97,
+        119
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2573
+    },
+    "assets/player_full/baryonyx_death_N_001.png": {
+      "bbox": [
+        45,
+        24,
+        99,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2670
+    },
+    "assets/player_full/baryonyx_death_N_002.png": {
+      "bbox": [
+        31,
+        27,
+        99,
+        114
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2919
+    },
+    "assets/player_full/baryonyx_death_N_003.png": {
+      "bbox": [
+        40,
+        21,
+        107,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3255
+    },
+    "assets/player_full/baryonyx_death_N_004.png": {
+      "bbox": [
+        41,
+        26,
+        119,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3269
+    },
+    "assets/player_full/baryonyx_death_N_005.png": {
+      "bbox": [
+        38,
+        25,
+        106,
+        115
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3240
+    },
+    "assets/player_full/baryonyx_idle_W_000.png": {
+      "bbox": [
+        12,
+        55,
+        131,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2431
+    },
+    "assets/player_full/baryonyx_idle_W_001.png": {
+      "bbox": [
+        11,
+        52,
+        131,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2427
+    },
+    "assets/player_full/baryonyx_idle_W_002.png": {
+      "bbox": [
+        10,
+        53,
+        132,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2517
+    },
+    "assets/player_full/baryonyx_idle_W_003.png": {
+      "bbox": [
+        9,
+        54,
+        132,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2438
+    },
+    "assets/player_full/baryonyx_hurt_W_000.png": {
+      "bbox": [
+        23,
+        49,
+        139,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2654
+    },
+    "assets/player_full/baryonyx_hurt_W_001.png": {
+      "bbox": [
+        24,
+        48,
+        128,
+        106
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2682
+    },
+    "assets/player_full/baryonyx_walk_W_000.png": {
+      "bbox": [
+        12,
+        45,
+        133,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2563
+    },
+    "assets/player_full/baryonyx_walk_W_001.png": {
+      "bbox": [
+        11,
+        46,
+        133,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2620
+    },
+    "assets/player_full/baryonyx_walk_W_002.png": {
+      "bbox": [
+        10,
+        42,
+        132,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2665
+    },
+    "assets/player_full/baryonyx_walk_W_003.png": {
+      "bbox": [
+        9,
+        44,
+        131,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2593
+    },
+    "assets/player_full/baryonyx_walk_W_004.png": {
+      "bbox": [
+        7,
+        43,
+        128,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2606
+    },
+    "assets/player_full/baryonyx_walk_W_005.png": {
+      "bbox": [
+        6,
+        44,
+        128,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2602
+    },
+    "assets/player_full/baryonyx_run_W_000.png": {
+      "bbox": [
+        12,
+        33,
+        133,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2608
+    },
+    "assets/player_full/baryonyx_run_W_001.png": {
+      "bbox": [
+        11,
+        36,
+        132,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2613
+    },
+    "assets/player_full/baryonyx_run_W_002.png": {
+      "bbox": [
+        10,
+        32,
+        133,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2589
+    },
+    "assets/player_full/baryonyx_run_W_003.png": {
+      "bbox": [
+        9,
+        35,
+        130,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2578
+    },
+    "assets/player_full/baryonyx_run_W_004.png": {
+      "bbox": [
+        7,
+        32,
+        128,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2615
+    },
+    "assets/player_full/baryonyx_run_W_005.png": {
+      "bbox": [
+        5,
+        37,
+        128,
+        89
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2643
+    },
+    "assets/player_full/baryonyx_attack_W_000.png": {
+      "bbox": [
+        12,
+        24,
+        133,
+        70
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2537
+    },
+    "assets/player_full/baryonyx_attack_W_001.png": {
+      "bbox": [
+        12,
+        28,
+        133,
+        77
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2672
+    },
+    "assets/player_full/baryonyx_attack_W_002.png": {
+      "bbox": [
+        11,
+        24,
+        131,
+        78
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2748
+    },
+    "assets/player_full/baryonyx_attack_W_003.png": {
+      "bbox": [
+        11,
+        31,
+        133,
+        78
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2594
+    },
+    "assets/player_full/baryonyx_attack_W_004.png": {
+      "bbox": [
+        9,
+        29,
+        130,
+        75
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2642
+    },
+    "assets/player_full/baryonyx_attack_W_005.png": {
+      "bbox": [
+        6,
+        30,
+        127,
+        80
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2609
+    },
+    "assets/player_full/baryonyx_death_W_000.png": {
+      "bbox": [
+        12,
+        5,
+        134,
+        54
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2699
+    },
+    "assets/player_full/baryonyx_death_W_001.png": {
+      "bbox": [
+        18,
+        5,
+        131,
+        62
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2822
+    },
+    "assets/player_full/baryonyx_death_W_002.png": {
+      "bbox": [
+        8,
+        14,
+        135,
+        65
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2837
+    },
+    "assets/player_full/baryonyx_death_W_003.png": {
+      "bbox": [
+        4,
+        16,
+        140,
+        69
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3175
+    },
+    "assets/player_full/baryonyx_death_W_004.png": {
+      "bbox": [
+        4,
+        10,
+        142,
+        63
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2900
+    },
+    "assets/player_full/baryonyx_death_W_005.png": {
+      "bbox": [
+        3,
+        9,
+        128,
+        65
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2746
     }
   },
   "production_approved": false,

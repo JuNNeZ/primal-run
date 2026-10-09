@@ -4817,8 +4817,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       0,
       0,
@@ -4833,7 +4833,7 @@
       8,
       22
     ],
-    "export_sha256": "4254894c6e666aecbc523b724bda770f9c23a23c17c659b85caedd5f12b1c0ad",
+    "export_sha256": "482c79c8f8d49fd954dc8946ced76629bf26ebf5a06e690a20bcebb152fe906d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -4857,8 +4857,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       224,
       0,
@@ -4873,7 +4873,7 @@
       -8,
       22
     ],
-    "export_sha256": "5758f65291a49c0c69275666d7e24a52cecbe69a4c25d8e0bc8c90d4613ed3a5",
+    "export_sha256": "24653880b8245db89a7010ca152b1e473c4ba8500fd48790a014196dfc4d4326",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -4897,8 +4897,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       480,
       0,
@@ -4913,7 +4913,7 @@
       -8,
       22
     ],
-    "export_sha256": "9cb06c91116bb07b8b03046e03a87279fb485cdd24d4d6817688e428a19f6160",
+    "export_sha256": "665d1c2ff9c4ebfff1d32e3b36071d229ba9cd26604b0ba273564683cf059968",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -4937,8 +4937,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       736,
       0,
@@ -4953,7 +4953,7 @@
       -8,
       22
     ],
-    "export_sha256": "bc7e64bfed237d78f0d0df6b93daefc73e97478ebdfde158833b21409aee1ea9",
+    "export_sha256": "920f05c8bc46eb60501aebcc3fade33448144ccb1df291080d7fb80ff92a8b26",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -4977,8 +4977,8 @@
     "direction": "N",
     "state": "hurt",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       992,
       0,
@@ -4993,7 +4993,7 @@
       -8,
       22
     ],
-    "export_sha256": "48dd40f09888e2cbfde7159f748a5a17a4519d5b9bea96293225eb32a5e3722b",
+    "export_sha256": "409b0b65c4f9b6a102516a89edba190f822954a9a9c67064c2f801669349fadc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5017,8 +5017,8 @@
     "direction": "N",
     "state": "hurt",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       1248,
       0,
@@ -5033,7 +5033,7 @@
       -8,
       22
     ],
-    "export_sha256": "47149b3e2e2d99d5dfb2ea4c0038172cdf09ef48a22c6bc80931392712da9b8e",
+    "export_sha256": "0339b44d97314fcd6897ce506e14e464febfcd8b0f4254bf03b39101f9138466",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5057,8 +5057,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       0,
       173,
@@ -5073,7 +5073,7 @@
       8,
       6
     ],
-    "export_sha256": "4c6a93f5c8e04d83835504b059db3bcde092e9935a192bb0d997315ffa3d7b71",
+    "export_sha256": "20c88940c2f75e6c0ab911740a5e1de617df7a76193db138553a1d399c2543a8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5097,8 +5097,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       224,
       173,
@@ -5113,7 +5113,7 @@
       -8,
       6
     ],
-    "export_sha256": "765f56d07c7a4d6df5e5eb9024b0ee4ef52b9e344beb94e3774a9c2f4a199884",
+    "export_sha256": "37477bf48f55de891d7273aa7883245982da349e2f0e5037e445bafa9eb53963",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5137,8 +5137,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       480,
       173,
@@ -5153,7 +5153,7 @@
       -8,
       6
     ],
-    "export_sha256": "5172f000b6dc5dd03805312f9712f393144285b4140b499b06cb646885d4eea9",
+    "export_sha256": "0b376dece3742b02d09bb1c4c34c41a5aabaa74318a9fc226f0a8020a8a32f36",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5177,8 +5177,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       736,
       173,
@@ -5193,7 +5193,7 @@
       -8,
       6
     ],
-    "export_sha256": "d709207d003bb099ad859285de41d70f2555b4c7b4cd0b08f8889ab0efa24798",
+    "export_sha256": "e286f27ce6e57708e7e147a75cb7136a26674ab48ba8e3db9e366398889cd8e0",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5217,8 +5217,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       992,
       173,
@@ -5233,7 +5233,7 @@
       -8,
       6
     ],
-    "export_sha256": "5df14bed9ae947f70bcbea785a63ff322390eae4439b3307e6b32aee90bbb90f",
+    "export_sha256": "c5fed0a4ac496b5e3695f0cfb9a2b677e6e2313bb858d86e5f0c4330bb2ebbdf",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5257,8 +5257,8 @@
     "direction": "N",
     "state": "walk",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       1248,
       173,
@@ -5273,7 +5273,7 @@
       -8,
       6
     ],
-    "export_sha256": "7d1ad71ef9ac3f8d9595f0217a9f3fba29fe5571036fe2ca616e948a8a2de173",
+    "export_sha256": "7fa71b687355a2fd6ea43bbb94481b4eca2e7820697d01c0d46e4f5cc08fd0cf",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5297,8 +5297,8 @@
     "direction": "N",
     "state": "run",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       0,
       378,
@@ -5313,7 +5313,7 @@
       8,
       6
     ],
-    "export_sha256": "0390571d15bd73003ed1e66cecd82dd8cca84f4593bcf70f5fb17b5c1969c901",
+    "export_sha256": "1b590171d377f13e2b8ce35c22d1b22bf28aac21771f69e3f9d75ece05f3c147",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5337,8 +5337,8 @@
     "direction": "N",
     "state": "run",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       224,
       378,
@@ -5353,7 +5353,7 @@
       -8,
       6
     ],
-    "export_sha256": "102219d63706be2e69f5def643bef6208c10e39cc8de47200ef9d9753dd44401",
+    "export_sha256": "71d5a180ad523bae17513f0e96a81e1a85ec26a000056a6de0abd770623f0e45",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5377,8 +5377,8 @@
     "direction": "N",
     "state": "run",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       480,
       378,
@@ -5393,7 +5393,7 @@
       -8,
       6
     ],
-    "export_sha256": "d45e67a451207ec1cc034fa47f6c1f6fe234e63485efb0ed375cf78df2374aa4",
+    "export_sha256": "fc5899a29c4588580dd7772b83ea41c3b9d9b6c09280048bfa5027e6c66eea41",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5417,8 +5417,8 @@
     "direction": "N",
     "state": "run",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       736,
       378,
@@ -5433,7 +5433,7 @@
       -8,
       6
     ],
-    "export_sha256": "0120ac27f0f91bf869724b61bd68a119f304869e22b0fe98efe42932d04156ee",
+    "export_sha256": "122c6df8a2a963624d1a85c9ac51bde0acf0831708fc071135f8b5ccf916de3f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5457,8 +5457,8 @@
     "direction": "N",
     "state": "run",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       992,
       378,
@@ -5473,7 +5473,7 @@
       -8,
       6
     ],
-    "export_sha256": "c0251b8c51b990fd05818273418a0389bb267fdfad92e459085fdefe40b03009",
+    "export_sha256": "49a99407b73f1286ee00954876ad636c25cec542ccdc57caea949d1170dd1aa4",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5497,8 +5497,8 @@
     "direction": "N",
     "state": "run",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       1248,
       378,
@@ -5513,7 +5513,7 @@
       -8,
       6
     ],
-    "export_sha256": "acfa7cae6d3f5353c8c080590d8a355bd61e6793aae0082054de14b674c008d6",
+    "export_sha256": "3b221f285dfb55f204439da7b11088192b7e7e9a6eab05af56be958d0e0d6493",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5537,8 +5537,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       0,
       582,
@@ -5553,7 +5553,7 @@
       8,
       6
     ],
-    "export_sha256": "98d8dc167f140d56d1d0a461830b8bcda481691b14f29e25861f8714f5e0a5e6",
+    "export_sha256": "b2958cc7b6f6bc2740977c6568fa3af83500ba20757a43979db8069b17fb6d54",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5577,8 +5577,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       224,
       582,
@@ -5593,7 +5593,7 @@
       -8,
       6
     ],
-    "export_sha256": "b5d49695b72a9bfdd027523dceef4261ea5fb2ad785971be4fba888600d1dea7",
+    "export_sha256": "4b74960612f35371312c78a4ee41bcb416044c3fa39c0285fa0a96e15557e24e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5617,8 +5617,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       480,
       582,
@@ -5633,7 +5633,7 @@
       -8,
       6
     ],
-    "export_sha256": "d9b8b2b6fb9370cd9e261364fc822273163e8d601ed111f8b17590ceaa7b884c",
+    "export_sha256": "1354cc6a14013630a023a61ea774b1ba6e201ec55e937bdae205f9755e00ceae",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5657,8 +5657,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       736,
       582,
@@ -5673,7 +5673,7 @@
       -8,
       6
     ],
-    "export_sha256": "9600ed9a6af2f76b5a7f71c942543995bb07cc61bbf6419390a4c492966ac8ca",
+    "export_sha256": "2304fe72fefbe4aecbc44f10e57124413cf7db331d3c1be248c813e166ea1d32",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5697,8 +5697,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       992,
       582,
@@ -5713,7 +5713,7 @@
       -8,
       6
     ],
-    "export_sha256": "c6ff78991627f3bf22b5a47c2a64285c948eb26adf3b8449aeff6672e87db2b1",
+    "export_sha256": "31c9cae8980f1a9e6d591ef519d029d821030e9ddf076390b49ca1ed8db912ee",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5737,8 +5737,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       1248,
       582,
@@ -5753,7 +5753,7 @@
       -8,
       6
     ],
-    "export_sha256": "240a3ebcad85cc4bdf2eb484976afeb26bc8aac916ff9703c850c0889c0c6489",
+    "export_sha256": "78b66e513cecf7c8eaf44dee02728af5b5deb43c05a76d66355835ffdd5a714e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5777,8 +5777,8 @@
     "direction": "N",
     "state": "death",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       0,
       787,
@@ -5793,7 +5793,7 @@
       8,
       6
     ],
-    "export_sha256": "df3fc07636020619b6752486e97074241ef103ab44f1c9c63d57a3bc2199f7df",
+    "export_sha256": "ff82d93ec2f51974e24e7f6e6d24a3109e438273d0a9357272d653b16048713b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5817,8 +5817,8 @@
     "direction": "N",
     "state": "death",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       224,
       787,
@@ -5833,7 +5833,7 @@
       -8,
       6
     ],
-    "export_sha256": "1f8aad77216f5f085db2c2b0068ae0c2d31a4faaacee169e540301d959d7202c",
+    "export_sha256": "b9671216c77d1738784692e9c893f23a7aeae7ec3d85d1df62f00db267f69b4c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5857,8 +5857,8 @@
     "direction": "N",
     "state": "death",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       480,
       787,
@@ -5873,7 +5873,7 @@
       -8,
       6
     ],
-    "export_sha256": "fd677d64cc6f6d360f74f7abe53467163c48740a28f58e6c601220ac229cae05",
+    "export_sha256": "dd201e58f5cdbe051838cd4120f7fad2616107e8452748d7d827b7dedbfb027a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5897,8 +5897,8 @@
     "direction": "N",
     "state": "death",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       736,
       787,
@@ -5913,7 +5913,7 @@
       -8,
       6
     ],
-    "export_sha256": "c2ce10d3d0a151f787cc80edbcc3f59a357d5e69909002911dcea6b73181c7ad",
+    "export_sha256": "0767c59c189c76ab1e73380721ca8d2c85d147cc752dfbf8584e11f38649e38b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5937,8 +5937,8 @@
     "direction": "N",
     "state": "death",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       992,
       787,
@@ -5953,7 +5953,7 @@
       -8,
       6
     ],
-    "export_sha256": "9525ab05df6656a1249bde9294c30a895ec34000f4b8edf05424b05d62942228",
+    "export_sha256": "faefaacc613bf3957fc3e4f490ac0b7e0145917c458171703eff88de63236d68",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -5977,8 +5977,8 @@
     "direction": "N",
     "state": "death",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_N.png",
-    "source_sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+    "source": "Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png",
+    "source_sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
     "source_crop": [
       1248,
       787,
@@ -5993,7 +5993,7 @@
       -8,
       6
     ],
-    "export_sha256": "d8c83292378c13df992e16f7a37aa90abb505d1c56b6cea6e6d9e510583b0a20",
+    "export_sha256": "112b828477d67a4ac5185d7edf9f28d7e728b66a2d26dcc6d59df838b1784347",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -8417,8 +8417,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       0,
       0,
@@ -8426,14 +8426,14 @@
       237
     ],
     "source_cell_anchor": [
-      128,
+      174,
       102
     ],
     "registration_offset": [
-      8,
+      -14,
       22
     ],
-    "export_sha256": "803e3ee45875d46d085343b6eb5499490bd5f06a9f4a4264101a003bf10eeffb",
+    "export_sha256": "813868e83b0ec6cd32b0d75925d76c53389961d0569c22fd5d771612b3c01d51",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -8457,8 +8457,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       224,
       0,
@@ -8466,14 +8466,14 @@
       237
     ],
     "source_cell_anchor": [
-      160,
+      217,
       102
     ],
     "registration_offset": [
-      -8,
+      -36,
       22
     ],
-    "export_sha256": "fb654c8e66b198c89d1aaf0f8e8ffe98ba4aad7ff8dbcce87700dfb4a6d4f987",
+    "export_sha256": "e49e8578ead372975fa90a48691a9a1600f06a4629c0c409102e06230e712597",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -8497,8 +8497,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       480,
       0,
@@ -8506,14 +8506,14 @@
       237
     ],
     "source_cell_anchor": [
-      160,
+      189,
       102
     ],
     "registration_offset": [
-      -8,
+      -22,
       22
     ],
-    "export_sha256": "83ece2f68f4b4c0d34669c8adae3ff9b7216166a263d97578ee04127b3b13db3",
+    "export_sha256": "aa10ad8daba2f19548b69f24cd3fa72f90044ce9508cdcaeeff3619ec07fd96e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -8537,8 +8537,8 @@
     "direction": "N",
     "state": "idle",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       736,
       0,
@@ -8546,14 +8546,14 @@
       237
     ],
     "source_cell_anchor": [
-      160,
+      165,
       102
     ],
     "registration_offset": [
-      -8,
+      -10,
       22
     ],
-    "export_sha256": "aafbe6500aaa9f61ad732bb389d7568eb43baff6d75d39a9e69d3435f37ee942",
+    "export_sha256": "e468ebbaee8b8ce62c102ebfde8712084a3cce90372c60e2773f90b46031a0cc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -8577,8 +8577,8 @@
     "direction": "N",
     "state": "hurt",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       992,
       0,
@@ -8586,14 +8586,14 @@
       237
     ],
     "source_cell_anchor": [
-      160,
+      155,
       102
     ],
     "registration_offset": [
-      -8,
+      -5,
       22
     ],
-    "export_sha256": "0e1b641d65165cd3054f45c13237a55222070dccad0810b24bac1f572c5e2435",
+    "export_sha256": "f5831f30ce62b6a59d9c0be45c39ee87afffb0c7c9f9db1137fb78153cd2ff65",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -8617,8 +8617,8 @@
     "direction": "N",
     "state": "hurt",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       1248,
       0,
@@ -8626,14 +8626,14 @@
       237
     ],
     "source_cell_anchor": [
-      160,
+      127,
       102
     ],
     "registration_offset": [
-      -8,
+      9,
       22
     ],
-    "export_sha256": "18fcc8c3bd57ad2f79814018921546b758eeead0efa4a88d94d173d27e958610",
+    "export_sha256": "dc55f2aaf313f4aaf40337cfd4091a04191f1661ad7ab123aa2dfd431aa8092f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -8657,27 +8657,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       0,
-      0,
+      173,
       288,
-      544
+      442
     ],
     "source_cell_anchor": [
-      134,
-      236
+      180,
+      134
     ],
     "registration_offset": [
-      28,
-      -6
+      -18,
+      6
     ],
-    "export_sha256": "ff406f9a08ef29f7ef33ed62f547fcc2692942d308dba4cfaa8f777f94b63276",
+    "export_sha256": "92840022bb74faba90a0630c192ef64ba073aea6ad93cc10acf7e5ab304ac109",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_walk_N_001.png",
@@ -8697,27 +8697,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       224,
-      0,
+      173,
       544,
-      544
+      442
     ],
     "source_cell_anchor": [
-      168,
-      240
+      190,
+      134
     ],
     "registration_offset": [
-      16,
-      -8
+      -22,
+      6
     ],
-    "export_sha256": "78fca1556ab220516de5abbdfab4389e07ffe8f6d17f27bb867033bd82cdf28a",
+    "export_sha256": "bd742a907c8215140543b68c13e94d9ec26b4f17a01dbe4d037254474c19c08a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_walk_N_002.png",
@@ -8737,27 +8737,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       480,
-      0,
+      173,
       800,
-      544
+      442
     ],
     "source_cell_anchor": [
-      159,
-      240
+      169,
+      134
     ],
     "registration_offset": [
-      19,
-      -8
+      -12,
+      6
     ],
-    "export_sha256": "34e294bcba3de54de6283b93843d94732f7e608441c9cfa166b09012ba682fe4",
+    "export_sha256": "0d696466462f7848872dd41bcded41b03f2319d66690ef3467635e37349dab5d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_walk_N_003.png",
@@ -8777,27 +8777,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       736,
-      0,
+      173,
       1056,
-      544
+      442
     ],
     "source_cell_anchor": [
-      156,
-      236
+      149,
+      134
     ],
     "registration_offset": [
-      20,
-      -6
+      -2,
+      6
     ],
-    "export_sha256": "0f9b0159dafb2b08e5e0c21b24fc0d574e3a929fa7ec660c11c8832cd75d9642",
+    "export_sha256": "66a8c2ce49bda900e743f2a491d01c84f5497c0a2d7f5a8128cefb58f5968a56",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_walk_N_004.png",
@@ -8817,27 +8817,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       992,
-      0,
+      173,
       1312,
-      544
+      442
     ],
     "source_cell_anchor": [
-      155,
-      236
+      130,
+      134
     ],
     "registration_offset": [
-      21,
-      -6
+      8,
+      6
     ],
-    "export_sha256": "7349af323cbbeb621851d4ca07c53cc5a9bc28c86a2ecace6b26f8705ae3320f",
+    "export_sha256": "deb235e029d30c3994e8d20cd5cda27217cc5cecda4f4640000355bc0c7864d6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_walk_N_005.png",
@@ -8857,27 +8857,27 @@
     "direction": "N",
     "state": "walk",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       1248,
-      0,
+      173,
       1536,
-      544
+      442
     ],
     "source_cell_anchor": [
-      153,
-      236
+      106,
+      134
     ],
     "registration_offset": [
-      21,
-      -6
+      20,
+      6
     ],
-    "export_sha256": "608b45f413e5365a633be4744ba899624cc23a6fc44801ad3494a35e634d8023",
+    "export_sha256": "9d1fd65e4332af7dcf6af04d8f7128159dd04cd024640d143857ef44bf26896d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_000.png",
@@ -8897,27 +8897,27 @@
     "direction": "N",
     "state": "run",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       0,
-      480,
+      378,
       288,
-      1024
+      646
     ],
     "source_cell_anchor": [
-      136,
-      236
+      184,
+      134
     ],
     "registration_offset": [
-      27,
-      -6
+      -20,
+      6
     ],
-    "export_sha256": "c448a600a4b4afebd8a5ea1b2156ce9249fab9892f63959307e78ff6b62b6456",
+    "export_sha256": "5423fc242debb6aff48ca9c8f58e55e64bad34d6e70b97c4f929ee5af82e2c64",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_001.png",
@@ -8937,27 +8937,27 @@
     "direction": "N",
     "state": "run",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       224,
-      480,
+      378,
       544,
-      1024
+      646
     ],
     "source_cell_anchor": [
-      168,
-      236
+      190,
+      134
     ],
     "registration_offset": [
-      16,
-      -6
+      -22,
+      6
     ],
-    "export_sha256": "ecd8ea4a3ab80144173d51d37844fdde64230f1a1da00c18f6aaa1e2a515cbda",
+    "export_sha256": "45cb6b03440e901f2a3e8efd40ff59aa61669ebea9bd22be52da363b5a739187",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_002.png",
@@ -8977,27 +8977,27 @@
     "direction": "N",
     "state": "run",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       480,
-      480,
+      378,
       800,
-      1024
+      646
     ],
     "source_cell_anchor": [
-      164,
-      236
+      173,
+      134
     ],
     "registration_offset": [
-      18,
-      -6
+      -14,
+      6
     ],
-    "export_sha256": "a3d15850d7e0d51dbd0728cde0ce96fcf1a35eaf1930d179f6777f120028999a",
+    "export_sha256": "3c0815840e5d292f157420c1f69681ada82dd765a3fe207ff5f0bb0256c3f48f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_003.png",
@@ -9017,27 +9017,27 @@
     "direction": "N",
     "state": "run",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       736,
-      480,
+      378,
       1056,
-      1024
+      646
     ],
     "source_cell_anchor": [
-      161,
-      236
+      150,
+      134
     ],
     "registration_offset": [
-      19,
-      -6
+      -2,
+      6
     ],
-    "export_sha256": "8fc3c351042eca1b49fc573f332c84fac9989a9a1fb1d1615fe2747c9706516e",
+    "export_sha256": "baabe6b3e2f2ea2e6adf30c8531d3eaf372bf7e6f626bb644362c5f11e36de7b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_004.png",
@@ -9057,27 +9057,27 @@
     "direction": "N",
     "state": "run",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       992,
-      480,
+      378,
       1312,
-      1024
+      646
     ],
     "source_cell_anchor": [
-      157,
-      236
+      128,
+      134
     ],
     "registration_offset": [
-      20,
-      -6
+      8,
+      6
     ],
-    "export_sha256": "599008c6959c3ac9e790835cf0eff99e14ec3e00b2c90bd4e0d112320ed541d4",
+    "export_sha256": "2cbaf8020c4029a7a9a3f3c44290009c91abbad704b790aacd3fc82cf944ff83",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_run_N_005.png",
@@ -9097,27 +9097,27 @@
     "direction": "N",
     "state": "run",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png",
-    "source_sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       1248,
-      480,
+      378,
       1536,
-      1024
+      646
     ],
     "source_cell_anchor": [
-      152,
-      236
+      106,
+      134
     ],
     "registration_offset": [
-      22,
-      -6
+      20,
+      6
     ],
-    "export_sha256": "1011ac14eed6150f2d3aae80f2ba47783c4908676767daa3d13dda000c4c297a",
+    "export_sha256": "00fc29b14a7a5738c13d556d7f793889d9b0a82979a9516614369bdd6608de29",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "export": "Fixed integer 3px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
   },
   {
     "file": "assets/enemy_full/tyrannosaurus_attack_N_000.png",
@@ -9137,8 +9137,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       0,
       582,
@@ -9146,14 +9146,14 @@
       851
     ],
     "source_cell_anchor": [
-      128,
+      176,
       134
     ],
     "registration_offset": [
-      8,
+      -16,
       6
     ],
-    "export_sha256": "876a728cdff5dd25686fc3aa01e1318710b69ab4867e06ce8edb64c6464dae38",
+    "export_sha256": "0df71348d3634d3f9ac867ad2ccea53a1902572afe601eb1c03768c31403ed69",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9177,8 +9177,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       224,
       582,
@@ -9186,14 +9186,14 @@
       851
     ],
     "source_cell_anchor": [
-      160,
+      197,
       134
     ],
     "registration_offset": [
-      -8,
+      -26,
       6
     ],
-    "export_sha256": "c11a2850b41d675c8a8b3f402d65079cb81edb34e98b285543b028dbc1018748",
+    "export_sha256": "ba2845b05e6647738e04255918610ae42b4e2afa42844ca2b7e541febbc4c7b6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9217,8 +9217,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       480,
       582,
@@ -9226,14 +9226,14 @@
       851
     ],
     "source_cell_anchor": [
-      160,
+      178,
       134
     ],
     "registration_offset": [
-      -8,
+      -16,
       6
     ],
-    "export_sha256": "4d6b42147009081ad2c5befe0fdcd89c493700adda513f828ec802845d411e10",
+    "export_sha256": "cd2a8869d4ea53656e6efdc7f87c1c8c38f426a106aadd4f2b60fa0f4dbec855",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9257,8 +9257,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       736,
       582,
@@ -9266,14 +9266,14 @@
       851
     ],
     "source_cell_anchor": [
-      160,
+      152,
       134
     ],
     "registration_offset": [
-      -8,
+      -4,
       6
     ],
-    "export_sha256": "8232b0dd4f0c097ecfccec47574e994fd4b4c22e6f3e7aeb25ab279a9b9f6b47",
+    "export_sha256": "06ce900d7ebff8bbe85dcedbe6e3c6dcf1b4e66c5422769e68ce37b6c8db6269",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9297,8 +9297,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       992,
       582,
@@ -9306,14 +9306,14 @@
       851
     ],
     "source_cell_anchor": [
-      160,
+      140,
       134
     ],
     "registration_offset": [
-      -8,
+      2,
       6
     ],
-    "export_sha256": "ad0c5e214fb248bc1aace30d7da66f067132ed622e2bb96a7646388968e6760e",
+    "export_sha256": "70a5b3f5c768dea1a0e05d5d03be26e169a40b9e8a00033e0e8a7a16cb835cd1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9337,8 +9337,8 @@
     "direction": "N",
     "state": "attack",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       1248,
       582,
@@ -9346,14 +9346,14 @@
       851
     ],
     "source_cell_anchor": [
-      160,
+      120,
       134
     ],
     "registration_offset": [
-      -8,
+      12,
       6
     ],
-    "export_sha256": "115e8830e635d01f9b95dc10da1cb1db437e8f4ffbf9de0d8ae301ab010428f2",
+    "export_sha256": "8bf27f9c2ed1d5ed9ad37295658b85aca4e1414fe1909859c4e03140f8e94b52",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9377,8 +9377,8 @@
     "direction": "N",
     "state": "death",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       0,
       787,
@@ -9386,14 +9386,14 @@
       1024
     ],
     "source_cell_anchor": [
-      128,
+      174,
       134
     ],
     "registration_offset": [
-      8,
+      -14,
       6
     ],
-    "export_sha256": "9f3f425dd9bb27b072feefc254112802fb3472235c4d51375c9b5db0a0279249",
+    "export_sha256": "bf966b3bad6e6d25722edcd8c77d407d34d9357f2565425fe7751f79c62a6011",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9417,8 +9417,8 @@
     "direction": "N",
     "state": "death",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       224,
       787,
@@ -9426,14 +9426,14 @@
       1024
     ],
     "source_cell_anchor": [
-      160,
+      197,
       134
     ],
     "registration_offset": [
-      -8,
+      -26,
       6
     ],
-    "export_sha256": "4a1cf5f4955c41f733576b20a08a76d1a2d58de58ac37bd3102e06205a21e40d",
+    "export_sha256": "c8510039863ae8a316102816bc68ea1872d04acc5e9d3ac07381d36ffb820c82",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9457,8 +9457,8 @@
     "direction": "N",
     "state": "death",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       480,
       787,
@@ -9466,14 +9466,14 @@
       1024
     ],
     "source_cell_anchor": [
-      160,
+      178,
       134
     ],
     "registration_offset": [
-      -8,
+      -16,
       6
     ],
-    "export_sha256": "25ea88d406282bc76b96ec068cef30e1361e4785269de14c28c3e519b3a92d3c",
+    "export_sha256": "22deb8f253ba63cd4f9c582c55fdef80e74cc7147b0282d15e8cb0d26b5b960e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9497,8 +9497,8 @@
     "direction": "N",
     "state": "death",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       736,
       787,
@@ -9506,14 +9506,14 @@
       1024
     ],
     "source_cell_anchor": [
-      160,
+      152,
       134
     ],
     "registration_offset": [
-      -8,
+      -4,
       6
     ],
-    "export_sha256": "f71aa7b2ddfe6f4f8f19ae833dfa1af1ef188fce39645cb8b30cb8b984b1ddfa",
+    "export_sha256": "1d4f03ae5de28c3d3dd610986eda03f92569317dffd691e7f8bdbe898e7ddbb9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9537,8 +9537,8 @@
     "direction": "N",
     "state": "death",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       992,
       787,
@@ -9546,14 +9546,14 @@
       1024
     ],
     "source_cell_anchor": [
-      160,
+      140,
       134
     ],
     "registration_offset": [
-      -8,
+      2,
       6
     ],
-    "export_sha256": "65e7823d66e28da37188a51e43d227d48d21bcba5049522abfdf41e592c96f61",
+    "export_sha256": "ceb5c78b04e0ab1c5e9c076bebece7bfef22769d917af64d11e6794c7490fedc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9577,8 +9577,8 @@
     "direction": "N",
     "state": "death",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/tyrannosaurus_N.png",
-    "source_sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+    "source": "Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png",
+    "source_sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
     "source_crop": [
       1248,
       787,
@@ -9586,14 +9586,14 @@
       1024
     ],
     "source_cell_anchor": [
-      160,
+      120,
       134
     ],
     "registration_offset": [
-      -8,
+      12,
       6
     ],
-    "export_sha256": "97b4960730abf527997d0d696a0d07f08b70bef37046d4329cc1911b5140c625",
+    "export_sha256": "16d3f91f33637fcf956eaac7dc40e4a5ec9ffbb62f284676e4bd3c0e7f0a04e1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9617,8 +9617,8 @@
     "direction": "E",
     "state": "idle",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       0,
       0,
@@ -9633,7 +9633,7 @@
       8,
       22
     ],
-    "export_sha256": "65f998903f5dbd2a3f4cf0383122314651d057f73dc126cce27b545776944567",
+    "export_sha256": "b59c9ff6566f22bc06a497311f3e8c725f509126b5e1d26902ed05d9399a6e14",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9657,8 +9657,8 @@
     "direction": "E",
     "state": "idle",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       224,
       0,
@@ -9673,7 +9673,7 @@
       -8,
       22
     ],
-    "export_sha256": "e1d6c01c40b5ee1b99fbff53272670be770ef6c7cb81d564db52f769d6420ded",
+    "export_sha256": "bdf1c67847ea8ad42f64b3b3ffa3541b8168ddd8efd68779141f13f6ad5c5f69",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9697,8 +9697,8 @@
     "direction": "E",
     "state": "idle",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       480,
       0,
@@ -9713,7 +9713,7 @@
       -8,
       22
     ],
-    "export_sha256": "187b814a3968ed1bc77365f840d038dec092912555a170fca499a9bda00bb2a4",
+    "export_sha256": "c83bded027ab05f51d5dc774c29e4edeb600033b72ab2bfec8e6ed5f1e6bf488",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9737,8 +9737,8 @@
     "direction": "E",
     "state": "idle",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       736,
       0,
@@ -9753,7 +9753,7 @@
       -8,
       22
     ],
-    "export_sha256": "933bc5468a1405cc63c671067cb9e93e216a2e0ec09412c4827d750e95e64eb8",
+    "export_sha256": "e9348e8b45835e20e11d226e886991110f2eee64a1a2163f3fbefee2cdc009c0",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9777,8 +9777,8 @@
     "direction": "E",
     "state": "hurt",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       992,
       0,
@@ -9793,7 +9793,7 @@
       -8,
       22
     ],
-    "export_sha256": "00f124aa23e84bdab7cceaafba08e954a6026dc87c815bba353f1f7b4bbb5e0c",
+    "export_sha256": "225869ac75c775154179a153a4901ddabe8df45158fce5e959c5afce794a0f9f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9817,8 +9817,8 @@
     "direction": "E",
     "state": "hurt",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       1248,
       0,
@@ -9833,7 +9833,7 @@
       -8,
       22
     ],
-    "export_sha256": "02d72b83ed3cddbdd65cddba31da286d5902f234ba71d4d4a0702bd31235b35b",
+    "export_sha256": "77489aa2f08e0f53b9751cc0db792418f7336f7edf0a410d3b859cafb6391641",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9857,8 +9857,8 @@
     "direction": "E",
     "state": "walk",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       0,
       173,
@@ -9873,7 +9873,7 @@
       8,
       6
     ],
-    "export_sha256": "4102838261d62e801392a81aad5bc934b00f0abbc99b866976ab2d7077b9c75b",
+    "export_sha256": "780b0a1d8ecd12a5f40f7c78e4c096ca76dc243d682cb1eea90b03b554956096",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9897,8 +9897,8 @@
     "direction": "E",
     "state": "walk",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       224,
       173,
@@ -9913,7 +9913,7 @@
       -8,
       6
     ],
-    "export_sha256": "3e6d91e5136eafec08a88472469f70e638745bae0e36760d2c603e0f5e7d9ed0",
+    "export_sha256": "0125f894d10ca4918d668769d79562c1e4b757b6705cb62868552cbf0d1a64e7",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9937,8 +9937,8 @@
     "direction": "E",
     "state": "walk",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       480,
       173,
@@ -9953,7 +9953,7 @@
       -8,
       6
     ],
-    "export_sha256": "a5dc1709994732ed08b91e8c1e76ef371346e76628c9cd6b3a9925b20c25a3df",
+    "export_sha256": "fe8cee423d2e6f5713bf76950c32720ca7327372d7d935855f21e0aa11dc074f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -9977,8 +9977,8 @@
     "direction": "E",
     "state": "walk",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       736,
       173,
@@ -9993,7 +9993,7 @@
       -8,
       6
     ],
-    "export_sha256": "fa0df92e56de53c99b35a29bfc5b368fc0d316931715f68ece8f26995a92488c",
+    "export_sha256": "f41916b2d99e5dccbafe85ec4bb611b13472fddcf204b3e40d5c4836361b9669",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10017,8 +10017,8 @@
     "direction": "E",
     "state": "walk",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       992,
       173,
@@ -10033,7 +10033,7 @@
       -8,
       6
     ],
-    "export_sha256": "4c9eb7683e5478706a067f50e6f80fba481828273db930ebafc7f5d64f6a527c",
+    "export_sha256": "9949a9d24827d38a4daf6e31c17f919c3df4a7a525caea631d7ecac7940a4762",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10057,8 +10057,8 @@
     "direction": "E",
     "state": "walk",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       1248,
       173,
@@ -10073,7 +10073,7 @@
       -8,
       6
     ],
-    "export_sha256": "201ee06444a9b0d1b6e0d2aa2532e4120f8542a38c1df897388966854429b5e6",
+    "export_sha256": "37387842711ce2b417fe6a1d894e0e853ac3a5db8ad519746bb074c6cea47b0b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10097,8 +10097,8 @@
     "direction": "E",
     "state": "run",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       0,
       378,
@@ -10113,7 +10113,7 @@
       8,
       6
     ],
-    "export_sha256": "e5a37019e38676f7355cfd4d3c8740045ca0bf02c244282facf45f3b26d5f502",
+    "export_sha256": "41efae85b9f0bb76e70d75506dc46178222b4f8d2720655475bd067b34e6a35c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10137,8 +10137,8 @@
     "direction": "E",
     "state": "run",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       224,
       378,
@@ -10153,7 +10153,7 @@
       -8,
       6
     ],
-    "export_sha256": "448697a13414f0f8773dabbc9a9bd9ec36ef777744e553442d591c862de3dc50",
+    "export_sha256": "e8f9a08e6f75d11ec3e4e4130fab061bbc7afc4ec190c4c8aa358cfa969872c9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10177,8 +10177,8 @@
     "direction": "E",
     "state": "run",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       480,
       378,
@@ -10193,7 +10193,7 @@
       -8,
       6
     ],
-    "export_sha256": "3ff4e89605b893745e82f31fbc47fbf8fa60ea7748e1e97f282edb3c31c46d32",
+    "export_sha256": "6f54f6952dfe19b6bdee6df798fda9e0ab18bd5e37c85ea7355c318c69b4513d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10217,8 +10217,8 @@
     "direction": "E",
     "state": "run",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       736,
       378,
@@ -10233,7 +10233,7 @@
       -8,
       6
     ],
-    "export_sha256": "ff2a860b85d2e0042ad67da1b5db3d9537270cf483e8ddb6bc97542264fd23be",
+    "export_sha256": "cce1c70c608280f9360b2b1438aba3b09d687a149a26d3347bb929384391805c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10257,8 +10257,8 @@
     "direction": "E",
     "state": "run",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       992,
       378,
@@ -10273,7 +10273,7 @@
       -8,
       6
     ],
-    "export_sha256": "0f3aa854dc720424966405ad4164f9ebfae37a3b0aebc21a0628bbf2ace16d4c",
+    "export_sha256": "984a95e8411eb025dbc7b372ccaa9e5357c141b8546b7c08781cc3a137d6ef12",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10297,8 +10297,8 @@
     "direction": "E",
     "state": "run",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       1248,
       378,
@@ -10313,7 +10313,7 @@
       -8,
       6
     ],
-    "export_sha256": "808bebd9e2621e53ff09e26fff3cefe338902a1c3f095a594dff9429ebabe8d9",
+    "export_sha256": "be7cd34c560144ee52e64038023d35439f7a53234e6e416b3e5294f55af59823",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10337,8 +10337,8 @@
     "direction": "E",
     "state": "attack",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       0,
       582,
@@ -10353,7 +10353,7 @@
       8,
       6
     ],
-    "export_sha256": "8824e10141076db9bd446b49cdd2ef64f74cfd59f1816eb13dc604d08c58c43f",
+    "export_sha256": "e07f4e1a9742bfe7dafac15ad713f09607f9a2b2a06227fade9f8b36fa5599ca",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10377,8 +10377,8 @@
     "direction": "E",
     "state": "attack",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       224,
       582,
@@ -10393,7 +10393,7 @@
       -8,
       6
     ],
-    "export_sha256": "139740eb43eacd27283a97d096fefb2213dfc7c7a2847c441eed970e802cfe9b",
+    "export_sha256": "02d99c0e897b4320575404b72166cb28ec16c57db0c84de535934d1311640bd3",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10417,8 +10417,8 @@
     "direction": "E",
     "state": "attack",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       480,
       582,
@@ -10433,7 +10433,7 @@
       -8,
       6
     ],
-    "export_sha256": "5d7e47416d2a2a8ed28061e2dc7285578ce703636cd68e2d69b17bd9dec0f13b",
+    "export_sha256": "7543494e275983210beec0dc08ba50cae97bdb349ecfce73c77eba525b4275f2",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10457,8 +10457,8 @@
     "direction": "E",
     "state": "attack",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       736,
       582,
@@ -10473,7 +10473,7 @@
       -8,
       6
     ],
-    "export_sha256": "2f211faf50bc661ccf58e6a824d2f5416c2c064f8d30727f9984e38c9d8485c4",
+    "export_sha256": "0c1371ef0be311e42bcdba8c773efede552f057c2d1f36df33450be8d61cd8cd",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10497,8 +10497,8 @@
     "direction": "E",
     "state": "attack",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       992,
       582,
@@ -10513,7 +10513,7 @@
       -8,
       6
     ],
-    "export_sha256": "2f2f8a4ba4b9636bb81176d41c7e317aeb7faab65df1995d203b5fd9b2dc5eab",
+    "export_sha256": "607fdc53296b6f144b17aa088e9524beb7fe4af8e44063d02b9bc747cff8020c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10537,8 +10537,8 @@
     "direction": "E",
     "state": "attack",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       1248,
       582,
@@ -10553,7 +10553,7 @@
       -8,
       6
     ],
-    "export_sha256": "ee882ccba14208c8bce7598dbfd4ec44e66768806b87363662d3216bc49fc51c",
+    "export_sha256": "4c461a2c99f04ad142fbc22e92770110524d120f2cae970b7bd5e3f19f9bbc90",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10577,8 +10577,8 @@
     "direction": "E",
     "state": "death",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       0,
       787,
@@ -10593,7 +10593,7 @@
       8,
       6
     ],
-    "export_sha256": "58cd5c012b59d17e3861db7ec412ab5d5337eb4c4ec6477331d835748de8c9b2",
+    "export_sha256": "fec52937c210f1fba95471f4fc16138197966d9f58e4ba07b0141a4edfb9c453",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10617,8 +10617,8 @@
     "direction": "E",
     "state": "death",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       224,
       787,
@@ -10633,7 +10633,7 @@
       -8,
       6
     ],
-    "export_sha256": "033edfff69d236d9308eff9b147375da234fb61cb871178399718a7cc2c64c13",
+    "export_sha256": "b35951ae03977429ad92cc87c0e8ddc8ab44f439a16d2a709f35be341759c4dc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10657,8 +10657,8 @@
     "direction": "E",
     "state": "death",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       480,
       787,
@@ -10673,7 +10673,7 @@
       -8,
       6
     ],
-    "export_sha256": "5bb72992202b70078b95b323854348ea22a7105053acbf4df4b9e1e2fdc44e12",
+    "export_sha256": "579084481471d8741e5d27c847cffd10ae7691c05962f6b1ddb81699399e9785",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10697,8 +10697,8 @@
     "direction": "E",
     "state": "death",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       736,
       787,
@@ -10713,7 +10713,7 @@
       -8,
       6
     ],
-    "export_sha256": "3b0af4e778aca99ebc6cfe0a896e50ce2733fd754f051b9588b6c3c2176eeabe",
+    "export_sha256": "2e1a9f902878dea763ed0ee3965d1683ce9b0370651d26859783f01a07475ddd",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10737,8 +10737,8 @@
     "direction": "E",
     "state": "death",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       992,
       787,
@@ -10753,7 +10753,7 @@
       -8,
       6
     ],
-    "export_sha256": "37a3109594ea4ea6668c93e116bb2c4594c912c467b49d379f5af20690625f96",
+    "export_sha256": "24262802dd8071d7ded71f190f8cc66c96d8221d2c02d7b7bd3c0369033fc703",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -10777,8 +10777,8 @@
     "direction": "E",
     "state": "death",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_E.png",
-    "source_sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+    "source": "Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png",
+    "source_sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
     "source_crop": [
       1248,
       787,
@@ -10793,7 +10793,7 @@
       -8,
       6
     ],
-    "export_sha256": "eb9a746b1b0f8ab19bbd1330e5e277b9cde186ba7e8d2f9bbd691e1a9b49ce71",
+    "export_sha256": "7267362742324d7ced9ca25c19115b89d036c804765df51c4e073c09811f850d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14417,8 +14417,8 @@
     "direction": "W",
     "state": "idle",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       0,
       0,
@@ -14433,7 +14433,7 @@
       8,
       22
     ],
-    "export_sha256": "68bc6f92602c87f5ac241cd8f9edd22b164db186dcbce39c27a674c0d6587c62",
+    "export_sha256": "c7bf1253defa03912c1b5aab422e19fcf8a3f7d0c823cd40fc2d2ec16937c9c0",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14457,8 +14457,8 @@
     "direction": "W",
     "state": "idle",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       224,
       0,
@@ -14473,7 +14473,7 @@
       -8,
       22
     ],
-    "export_sha256": "b38c5560efd106f855af8172ec15da4996dacdad964ee44aa62d6c847e954a1f",
+    "export_sha256": "b69a0c7aa8ee9152a782b453f1cd4a16e9365bb66e4412f5b063ab0120d5bc21",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14497,8 +14497,8 @@
     "direction": "W",
     "state": "idle",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       480,
       0,
@@ -14513,7 +14513,7 @@
       -8,
       22
     ],
-    "export_sha256": "1d190cdc4e00a4c50e97f2092ab69d5acafcc4f058beba3321c615675a26ab3e",
+    "export_sha256": "138436eddba1053bad1283876ef661543c7e5f4ae89e869498af003656b31bb2",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14537,8 +14537,8 @@
     "direction": "W",
     "state": "idle",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       736,
       0,
@@ -14553,7 +14553,7 @@
       -8,
       22
     ],
-    "export_sha256": "39c93f9ae1a73d36a8969ef68fe5645d7dcfb6e1936608153ec0f2a20973ab43",
+    "export_sha256": "5dfe4e609541fdf7209c6ffed72e8a5b1be72929668cc15a4684328160ecfae6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14577,8 +14577,8 @@
     "direction": "W",
     "state": "hurt",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       992,
       0,
@@ -14593,7 +14593,7 @@
       -8,
       22
     ],
-    "export_sha256": "c5a4ac7c9624f35b7e63aa8ed49d87af8459403429c5b2b0866e463d10891f61",
+    "export_sha256": "3ff0099168e5712df522c01f5a7fed2802e292b820a9d7b99795e805e8c7b8f3",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14617,8 +14617,8 @@
     "direction": "W",
     "state": "hurt",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       1248,
       0,
@@ -14633,7 +14633,7 @@
       -8,
       22
     ],
-    "export_sha256": "d9c572981bde3f9441342d6697721194ba7089f54e4a6a0b21b823fa128fbedc",
+    "export_sha256": "c4e3fc22957e917ebf3d1a42eb5ea5bb2757a06e32b81ef59def0074f1898197",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14657,8 +14657,8 @@
     "direction": "W",
     "state": "walk",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       0,
       173,
@@ -14673,7 +14673,7 @@
       8,
       6
     ],
-    "export_sha256": "30103dc0d1435c683deb3fe51d6c35125fb09c5cf8db199267a1e204bf27d914",
+    "export_sha256": "886e0469fcbdd669155dc0e024296496e61f915d393bda5d576608402e1c164b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14697,8 +14697,8 @@
     "direction": "W",
     "state": "walk",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       224,
       173,
@@ -14713,7 +14713,7 @@
       -8,
       6
     ],
-    "export_sha256": "a678a6d1a83eb627e5bba8a69dd270c4e504f2c29089af3af8e130d3b8f7cac9",
+    "export_sha256": "d9a8f035978474e8e21f3b8181912ee4cbcc7d5d2a39197035b7e0f7f2aac081",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14737,8 +14737,8 @@
     "direction": "W",
     "state": "walk",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       480,
       173,
@@ -14753,7 +14753,7 @@
       -8,
       6
     ],
-    "export_sha256": "7f2b66a62c17e53e33515d1d88f5592609c135c7ec8146791974e5ce149d5bb9",
+    "export_sha256": "70de04196f6f4fca4f60e5622121058f92ff17dd366b3dbf92dae7da688de267",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14777,8 +14777,8 @@
     "direction": "W",
     "state": "walk",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       736,
       173,
@@ -14793,7 +14793,7 @@
       -8,
       6
     ],
-    "export_sha256": "ff920728dbcef3fdde9ed88429d1924c3193f77d45970b920a44e4e5750d6f6c",
+    "export_sha256": "a6b4972378e16adff3d51cfe520e12ab4fdcdf36bd1ccb26595954f701bc2baa",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14817,8 +14817,8 @@
     "direction": "W",
     "state": "walk",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       992,
       173,
@@ -14833,7 +14833,7 @@
       -8,
       6
     ],
-    "export_sha256": "87ce3e87422fd547c45301f81a7d51749ce97192456c6acd963b0974824c6378",
+    "export_sha256": "43bc6eebc69dac508023d3385114df1f4d6d33b9fb3b7d2a102b802e0ee9e42b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14857,8 +14857,8 @@
     "direction": "W",
     "state": "walk",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       1248,
       173,
@@ -14873,7 +14873,7 @@
       -8,
       6
     ],
-    "export_sha256": "75327f0d72f9e208681940b3b2cc7bf619879a9b7e5ef0dd715ca11a01436a49",
+    "export_sha256": "a4e8cd8a9baa0e081c1746c8bb5318845e311a17c5966c03e0a0c8c6d60eb91a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14897,8 +14897,8 @@
     "direction": "W",
     "state": "run",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       0,
       378,
@@ -14913,7 +14913,7 @@
       8,
       6
     ],
-    "export_sha256": "41ca5785db8165ead8de2c95572d653e5ebb6a78439ceaa39ef1bd868a89c0ac",
+    "export_sha256": "b90988d38d89ec7fc53a68d9e3216a4d0bfb819c0474b32830a2b7ff82f69c46",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14937,8 +14937,8 @@
     "direction": "W",
     "state": "run",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       224,
       378,
@@ -14953,7 +14953,7 @@
       -8,
       6
     ],
-    "export_sha256": "a172f3098c2e0a3c96809be6bda34f0792fb02ef9ab614dec4af1c25748321f4",
+    "export_sha256": "e55fb978e8b76e11772b2f1b6f3018560527d4f83a65bf85e9012a5d250c87c5",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -14977,8 +14977,8 @@
     "direction": "W",
     "state": "run",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       480,
       378,
@@ -14993,7 +14993,7 @@
       -8,
       6
     ],
-    "export_sha256": "c8cb2fc40037c15b6806722c2dd74cdd891f544b2851fd88378f8a374b598862",
+    "export_sha256": "b89e42fc17054d25fddd7488f23c85fe01db80873598f1776b7c44ddf53b23ca",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15017,8 +15017,8 @@
     "direction": "W",
     "state": "run",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       736,
       378,
@@ -15033,7 +15033,7 @@
       -8,
       6
     ],
-    "export_sha256": "8e4191a497fc12409517aca445409653e1c45743fae68e81dd8c4fe94a9cacf7",
+    "export_sha256": "48bbce712e6f4b208d423a29c46539559822031a538240c40f8ca73cb6e23a70",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15057,8 +15057,8 @@
     "direction": "W",
     "state": "run",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       992,
       378,
@@ -15073,7 +15073,7 @@
       -8,
       6
     ],
-    "export_sha256": "0e31d7091a0ca9cd7f674e9e4b8047212169f821ca3dfe17199140b86647150d",
+    "export_sha256": "453403541f89f6b64832c5e047c7700186951d4d4dd312d631824b7b5cad4e41",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15097,8 +15097,8 @@
     "direction": "W",
     "state": "run",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       1248,
       378,
@@ -15113,7 +15113,7 @@
       -8,
       6
     ],
-    "export_sha256": "8e015ffe68eb2759ad76b12c0d3bdd215903bd0ba3002b57ff8a00fdb0ef02a3",
+    "export_sha256": "bebc8a65fd18fe4c5453965947dd74e2b5d60732628a1f75a898bb6979abab0b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15137,8 +15137,8 @@
     "direction": "W",
     "state": "attack",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       0,
       582,
@@ -15153,7 +15153,7 @@
       8,
       6
     ],
-    "export_sha256": "ea03db1cdf68dc83874bc6e0fabab0287f8215a3f435fcf9c30e33dc1fd4c518",
+    "export_sha256": "c20480a8b75dc554869bdac9ca67c3a7240b9a379b73fc390e5d597442d265b6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15177,8 +15177,8 @@
     "direction": "W",
     "state": "attack",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       224,
       582,
@@ -15193,7 +15193,7 @@
       -8,
       6
     ],
-    "export_sha256": "7395ae48fe72b85eb6c362e39112b76a8bb6122100ec0fb0f5aef4bb0b07ef99",
+    "export_sha256": "c31b6805dc1656241285f0da8c853dbdb5b86e8cd907a1e9d29179c32b6827f7",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15217,8 +15217,8 @@
     "direction": "W",
     "state": "attack",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       480,
       582,
@@ -15233,7 +15233,7 @@
       -8,
       6
     ],
-    "export_sha256": "e659fd4401db63d193933abd1418578fb9a4c6e3dc652f97257fe6d027b12f5a",
+    "export_sha256": "eba1ea4459d8eb2510458e8492f9f63d8e00b5b6615eca8e4502fa62cda03e6a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15257,8 +15257,8 @@
     "direction": "W",
     "state": "attack",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       736,
       582,
@@ -15273,7 +15273,7 @@
       -8,
       6
     ],
-    "export_sha256": "e7e05f50ae380a6e0ad36f4006027839da6ae7317c80693f7101f45593750321",
+    "export_sha256": "75cb8c4b9e2d598a0906f352a9fd3bfaf8d9da8085649973619c9a0753861c05",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15297,8 +15297,8 @@
     "direction": "W",
     "state": "attack",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       992,
       582,
@@ -15313,7 +15313,7 @@
       -8,
       6
     ],
-    "export_sha256": "52f0941df7fc49cb023a6d988630c6fceb7f7678fada2838fa2881669f6b383e",
+    "export_sha256": "eec182f28b740e109690b10f1135e44da8909d800aac04c065bba50fa8a84cf1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15337,8 +15337,8 @@
     "direction": "W",
     "state": "attack",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       1248,
       582,
@@ -15353,7 +15353,7 @@
       -8,
       6
     ],
-    "export_sha256": "73b90e9b388063262730ad9975e3bbdf29e32daed584098ebe143d67550058ee",
+    "export_sha256": "4fa3c32a0db043132e336ba35d9632574d19ed4cf30f29cf139d4d0da8356ed5",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15377,8 +15377,8 @@
     "direction": "W",
     "state": "death",
     "frame": 0,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       0,
       787,
@@ -15393,7 +15393,7 @@
       8,
       6
     ],
-    "export_sha256": "248946abcdad212723d1a1de86227e0f75d884b9632d8d0fc77c34482f8d5cd5",
+    "export_sha256": "2131979c3fe255e8009b2330cb8bd0fee987a69ba5fd199a1acb119afb66e56c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15417,8 +15417,8 @@
     "direction": "W",
     "state": "death",
     "frame": 1,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       224,
       787,
@@ -15433,7 +15433,7 @@
       -8,
       6
     ],
-    "export_sha256": "f690359d4d7beab4b84972a73d73e291cc5a883034c7d1e9c917454719231f14",
+    "export_sha256": "ce17a69aa052b04f4d980d280a6ac32d28c5ceb1b367a541127cfd7f420fb5da",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15457,8 +15457,8 @@
     "direction": "W",
     "state": "death",
     "frame": 2,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       480,
       787,
@@ -15473,7 +15473,7 @@
       -8,
       6
     ],
-    "export_sha256": "11e150ad34e35b63d7919eb2914f2c59d6176955a647ea5ea32306710ba4b7f2",
+    "export_sha256": "5b943c5f049b27ac37b51536de47faf6d30d2ce63e5163a3e75436839ec55db8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15497,8 +15497,8 @@
     "direction": "W",
     "state": "death",
     "frame": 3,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       736,
       787,
@@ -15513,7 +15513,7 @@
       -8,
       6
     ],
-    "export_sha256": "bfbd0f4b4e3399deea10266a03e7cead85fabb3dd7669f2355b94d67b9c12a1c",
+    "export_sha256": "78079299753fe70493da434913d798f426069280267a4969f9f8b883d6e659b5",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15537,8 +15537,8 @@
     "direction": "W",
     "state": "death",
     "frame": 4,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       992,
       787,
@@ -15553,7 +15553,7 @@
       -8,
       6
     ],
-    "export_sha256": "d2f72964e2e18a9d1b7862f99d7a876abe89ac0c237e85d77e3fca253c314104",
+    "export_sha256": "33bb787e877afde1644a812c2618354be33427738da2fed190fb51f964ef76f9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -15577,8 +15577,8 @@
     "direction": "W",
     "state": "death",
     "frame": 5,
-    "source": "Source_Generated/enemy_full/parasaurolophus_W.png",
-    "source_sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+    "source": "Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png",
+    "source_sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
     "source_crop": [
       1248,
       787,
@@ -15593,7 +15593,7 @@
       -8,
       6
     ],
-    "export_sha256": "33caa36e60fea67840cccdc686f163a9fb448a9776cc73da72cb002250e8b542",
+    "export_sha256": "5f0b71a2b1f4351af4092e9725bad0e10880674342b55f117f05736dcfea3f34",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,

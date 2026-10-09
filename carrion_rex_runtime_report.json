@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-09",
+  "standalone": "PASS",
+  "core_tests": 87,
+  "game_browser_suites": 14,
+  "preserved_kit_suites": 3,
+  "actual_player_frames_drawn": 1080,
+  "playable_species": 9,
+  "png_validators": {
+    "player_full": "PASS",
+    "enemy_full": "PASS",
+    "fishing": "PASS",
+    "preserved_kit": "PASS"
+  },
+  "browser_checks": [
+    "PASS: DNA migration/purchase, nine-class archive, T rex portrait/gameplay attack render, mobile layout, no missing assets or browser errors.",
+    "PASS: browser game · menu/name · sound controls/music · movement/bite/meat · pause · mutations · 4 bosses/victory · DNA shop · reload/highscore · death/restart · storage denial",
+    "PASS: browser player attack animation · S: all six actual drawn frames, native size, registered pivot, pause and idle · N: all six actual drawn frames, native size, registered pivot, pause and idle · E: all six actual drawn frames, native size, registered pivot, pause and idle · W: all six actual drawn frames, native size, registered pivot, pause and idle · contact-only damage, locked attack aim while moving, single hit and recovery",
+    "PASS: 840 actual enemy frames · seven species · six states · four directions · integer scales · pause",
+    "PASS: world browser · desktop/portrait/landscape/ultrawide · camera · facing · XP bar · rarity/rank cards · safe selection · Jonas",
+    "PASS: terrain/combat/boss · four rendered biomes · hit-stop/particles · phase/range hints · full first-boss fight without HP edits",
+    "PASS: roguelite · Compy/classes · wilderness · names · paused nest · unlock persistence · responsive UI",
+    "PASS: full playable animation · 1080 actual frames · 9 classes/4 directions/6 states · hurt/death · pause · native origins",
+    "PASS: cinematic jungle menu, responsive controls, reduced motion, actual species palettes, pause isolation",
+    "PASS: adaptive music, health layers, Space selection guard and fresh-run layouts",
+    "PASS: terrain and concealment browser controls/HUD/pause",
+    "PASS: eating, joystick, remapping, gamepad, scaling, fog and lazy assets; phone-size cloud render p95 2.00 ms",
+    "PASS: combat HUD cooldowns, stamina warning, minimap diamond, desktop/mobile, no browser errors",
+    "PASS: all nine selector portraits exactly match runtime palettes and preserve alpha, including initially unloaded Utahraptor",
+    "{\"result\":\"PASS\",\"engine\":\"Chrome browser; GDevelop NOT RUN\",\"checks\":[\"S movement/idle/loop\",\"N movement/idle/loop\",\"E movement/idle/loop\",\"W movement/idle/loop\",\"S blockage\",\"N blockage\",\"E blockage\",\"W blockage\",\"diagonal tie facing\",\"pixel smoothing disabled\"]}",
+    "{\"result\":\"PASS\",\"engine\":\"Chrome offline browser prototype; GDevelop NOT RUN\",\"checks\":[\"hunt XP triggers three-choice pause\",\"pause freezes time/movement/damage\",\"keyboard selection resumes\",\"legs +15 percent speed\",\"mutation stacks\",\"feathers +20 percent regeneration\",\"stamina pounce and boost\",\"teeth adds bleed damage\",\"food heals\",\"death DNA once\",\"DNA survives reload\",\"60-second victory DNA bonus\",\"restart clears run upgrades\"]}",
+    "{\"result\":\"PASS\",\"checks\":[\"104 catalog PNGs load\",\"all entrypoint/guide/demo local links exist\",\"guide includes five documents\",\"HUD displays correct direction and UTF-8 text\"],\"scope\":\"Chromium over local HTTP; file:// access is not certified\"}"
+  ],
+  "final_core_change": "carrion-rex and source integration retested after excluding empty target corpses",
+  "official_gdevelop_runtime": "NOT RUN: official engine binaries absent in restored environment; project rebuilt from shared source, not equivalent to runtime validation.",
+  "art_status": "prototype_static; production_approved=false; generated body/death variation remains",
+  "source_sha256": {
+    "core.js": "9d865ba88449b9d9bc4c5f136d5ba0bdd9c59f6c95535551382e48039986dc09",
+    "app.js": "a45bdac0df8e8a264ebdf4b9f94579a95fe3f4ae731092a3af8bd741f058521b"
+  }
+}

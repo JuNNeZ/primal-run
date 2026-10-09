@@ -30,3 +30,16 @@ Kontrollér alle frames på lyse/mørke native grids og review-loops ved1×/4×,
 derefter faktisk canvas-rendering, timing, state-skift, pause og GDevelop.
 Variation i genereret anatomi/markeringer skal dokumenteres, aldrig skjules.
 Lever manifests, palette, regel, kildehistorik, PNG- og runtime-rapporter.
+
+Expansion 2026-10-09: Pachycephalosaurus, Gallimimus and Baryonyx add120
+frames each using separate S/E/N/W atlases, integer2px sampling, fixed32 palette
+and explicit source hips. Native144×144/pivot72,72 remain unchanged.
+player_full now holds840frames for7species; playable Triceratops shares the
+120directional enemy_full frames without duplicating pixels. All8players
+have960state/direction frames available. Anatomy/markings/death pose limitations
+remain; prototype_static/unapproved, not certified by technical export tests.
+
+T. rex playable2026-10-09: shares120 existing enemy_full frames,144x144
+native source at integer2x in runtime; fixed32px torso radius. Nine playable
+classes total1080 drawn frames, no new production approvals. Para E/N/W and
+T. rex N source revisions remain preserved under enemy_full.

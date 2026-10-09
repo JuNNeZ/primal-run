@@ -1567,256 +1567,22 @@
     "assets/enemy_full/parasaurolophus_idle_N_000.png": {
       "bbox": [
         54,
-        27,
+        25,
         90,
-        119
+        120
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1769
+      "opaque_pixels": 1854
     },
     "assets/enemy_full/parasaurolophus_idle_N_001.png": {
       "bbox": [
-        55,
-        26,
-        90,
-        119
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1730
-    },
-    "assets/enemy_full/parasaurolophus_idle_N_002.png": {
-      "bbox": [
         54,
         26,
         90,
-        119
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1812
-    },
-    "assets/enemy_full/parasaurolophus_idle_N_003.png": {
-      "bbox": [
-        55,
-        26,
-        91,
-        118
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1795
-    },
-    "assets/enemy_full/parasaurolophus_hurt_N_000.png": {
-      "bbox": [
-        54,
-        27,
-        98,
-        119
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1950
-    },
-    "assets/enemy_full/parasaurolophus_hurt_N_001.png": {
-      "bbox": [
-        47,
-        27,
-        96,
-        116
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1879
-    },
-    "assets/enemy_full/parasaurolophus_walk_N_000.png": {
-      "bbox": [
-        54,
-        24,
-        89,
-        117
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1678
-    },
-    "assets/enemy_full/parasaurolophus_walk_N_001.png": {
-      "bbox": [
-        53,
-        25,
-        90,
-        116
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1743
-    },
-    "assets/enemy_full/parasaurolophus_walk_N_002.png": {
-      "bbox": [
-        53,
-        24,
-        90,
-        117
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1772
-    },
-    "assets/enemy_full/parasaurolophus_walk_N_003.png": {
-      "bbox": [
-        51,
-        25,
-        90,
-        117
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1732
-    },
-    "assets/enemy_full/parasaurolophus_walk_N_004.png": {
-      "bbox": [
-        54,
-        24,
-        90,
-        117
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1738
-    },
-    "assets/enemy_full/parasaurolophus_walk_N_005.png": {
-      "bbox": [
-        53,
-        24,
-        89,
-        117
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1752
-    },
-    "assets/enemy_full/parasaurolophus_run_N_000.png": {
-      "bbox": [
-        55,
-        22,
-        90,
-        118
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1760
-    },
-    "assets/enemy_full/parasaurolophus_run_N_001.png": {
-      "bbox": [
-        54,
-        22,
-        92,
-        119
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1683
-    },
-    "assets/enemy_full/parasaurolophus_run_N_002.png": {
-      "bbox": [
-        53,
-        22,
-        88,
-        114
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1702
-    },
-    "assets/enemy_full/parasaurolophus_run_N_003.png": {
-      "bbox": [
-        56,
-        21,
-        90,
-        114
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1657
-    },
-    "assets/enemy_full/parasaurolophus_run_N_004.png": {
-      "bbox": [
-        53,
-        22,
-        90,
-        118
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1711
-    },
-    "assets/enemy_full/parasaurolophus_run_N_005.png": {
-      "bbox": [
-        55,
-        22,
-        89,
-        118
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1756
-    },
-    "assets/enemy_full/parasaurolophus_attack_N_000.png": {
-      "bbox": [
-        55,
-        24,
-        91,
-        116
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1768
-    },
-    "assets/enemy_full/parasaurolophus_attack_N_001.png": {
-      "bbox": [
-        51,
-        23,
-        91,
-        115
+        120
       ],
       "origin": [
         72,
@@ -1824,88 +1590,322 @@
       ],
       "opaque_pixels": 1833
     },
+    "assets/enemy_full/parasaurolophus_idle_N_002.png": {
+      "bbox": [
+        54,
+        26,
+        90,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1906
+    },
+    "assets/enemy_full/parasaurolophus_idle_N_003.png": {
+      "bbox": [
+        54,
+        26,
+        90,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1924
+    },
+    "assets/enemy_full/parasaurolophus_hurt_N_000.png": {
+      "bbox": [
+        55,
+        26,
+        94,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1953
+    },
+    "assets/enemy_full/parasaurolophus_hurt_N_001.png": {
+      "bbox": [
+        49,
+        26,
+        93,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2030
+    },
+    "assets/enemy_full/parasaurolophus_walk_N_000.png": {
+      "bbox": [
+        54,
+        23,
+        90,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1851
+    },
+    "assets/enemy_full/parasaurolophus_walk_N_001.png": {
+      "bbox": [
+        54,
+        23,
+        89,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1870
+    },
+    "assets/enemy_full/parasaurolophus_walk_N_002.png": {
+      "bbox": [
+        53,
+        23,
+        90,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1962
+    },
+    "assets/enemy_full/parasaurolophus_walk_N_003.png": {
+      "bbox": [
+        51,
+        23,
+        90,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1830
+    },
+    "assets/enemy_full/parasaurolophus_walk_N_004.png": {
+      "bbox": [
+        53,
+        23,
+        90,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1911
+    },
+    "assets/enemy_full/parasaurolophus_walk_N_005.png": {
+      "bbox": [
+        54,
+        23,
+        90,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1921
+    },
+    "assets/enemy_full/parasaurolophus_run_N_000.png": {
+      "bbox": [
+        54,
+        20,
+        90,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1872
+    },
+    "assets/enemy_full/parasaurolophus_run_N_001.png": {
+      "bbox": [
+        53,
+        20,
+        92,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1832
+    },
+    "assets/enemy_full/parasaurolophus_run_N_002.png": {
+      "bbox": [
+        54,
+        20,
+        90,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1838
+    },
+    "assets/enemy_full/parasaurolophus_run_N_003.png": {
+      "bbox": [
+        54,
+        20,
+        90,
+        116
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1818
+    },
+    "assets/enemy_full/parasaurolophus_run_N_004.png": {
+      "bbox": [
+        53,
+        20,
+        90,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1903
+    },
+    "assets/enemy_full/parasaurolophus_run_N_005.png": {
+      "bbox": [
+        54,
+        21,
+        90,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1914
+    },
+    "assets/enemy_full/parasaurolophus_attack_N_000.png": {
+      "bbox": [
+        54,
+        21,
+        90,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 1929
+    },
+    "assets/enemy_full/parasaurolophus_attack_N_001.png": {
+      "bbox": [
+        50,
+        21,
+        89,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2008
+    },
     "assets/enemy_full/parasaurolophus_attack_N_002.png": {
       "bbox": [
         53,
         20,
         90,
-        116
+        117
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1939
+      "opaque_pixels": 2031
     },
     "assets/enemy_full/parasaurolophus_attack_N_003.png": {
       "bbox": [
-        55,
-        17,
-        89,
-        116
+        54,
+        16,
+        90,
+        117
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1884
+      "opaque_pixels": 1952
     },
     "assets/enemy_full/parasaurolophus_attack_N_004.png": {
       "bbox": [
-        49,
-        24,
-        105,
-        116
+        50,
+        22,
+        110,
+        115
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1897
+      "opaque_pixels": 2101
     },
     "assets/enemy_full/parasaurolophus_attack_N_005.png": {
       "bbox": [
-        53,
-        24,
+        54,
+        21,
         90,
-        116
+        117
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1770
+      "opaque_pixels": 1947
     },
     "assets/enemy_full/parasaurolophus_death_N_000.png": {
       "bbox": [
         55,
-        21,
-        89,
-        113
+        20,
+        90,
+        115
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1713
+      "opaque_pixels": 1843
     },
     "assets/enemy_full/parasaurolophus_death_N_001.png": {
       "bbox": [
-        43,
-        20,
-        97,
-        113
+        44,
+        19,
+        99,
+        111
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1884
+      "opaque_pixels": 2007
     },
     "assets/enemy_full/parasaurolophus_death_N_002.png": {
       "bbox": [
         48,
-        27,
+        25,
         98,
         114
       ],
@@ -1913,46 +1913,46 @@
         72,
         72
       ],
-      "opaque_pixels": 1916
+      "opaque_pixels": 2049
     },
     "assets/enemy_full/parasaurolophus_death_N_003.png": {
       "bbox": [
-        41,
-        32,
-        104,
-        114
+        40,
+        31,
+        105,
+        115
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2173
+      "opaque_pixels": 2349
     },
     "assets/enemy_full/parasaurolophus_death_N_004.png": {
       "bbox": [
-        20,
-        40,
-        126,
-        88
+        18,
+        41,
+        128,
+        90
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2509
+      "opaque_pixels": 2726
     },
     "assets/enemy_full/parasaurolophus_death_N_005.png": {
       "bbox": [
         18,
         44,
-        126,
-        83
+        128,
+        85
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2440
+      "opaque_pixels": 2654
     },
     "assets/enemy_full/deinosuchus_idle_N_000.png": {
       "bbox": [
@@ -2736,387 +2736,231 @@
     },
     "assets/enemy_full/tyrannosaurus_idle_N_000.png": {
       "bbox": [
-        53,
-        26,
-        88,
-        120
+        51,
+        29,
+        93,
+        130
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1589
+      "opaque_pixels": 2488
     },
     "assets/enemy_full/tyrannosaurus_idle_N_001.png": {
       "bbox": [
-        54,
-        26,
-        90,
-        120
+        50,
+        27,
+        94,
+        130
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1642
+      "opaque_pixels": 2597
     },
     "assets/enemy_full/tyrannosaurus_idle_N_002.png": {
       "bbox": [
-        54,
-        26,
-        92,
-        120
+        51,
+        27,
+        94,
+        131
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1646
+      "opaque_pixels": 2660
     },
     "assets/enemy_full/tyrannosaurus_idle_N_003.png": {
       "bbox": [
-        54,
+        50,
         27,
-        91,
-        120
+        94,
+        130
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1607
+      "opaque_pixels": 2696
     },
     "assets/enemy_full/tyrannosaurus_hurt_N_000.png": {
       "bbox": [
-        57,
-        26,
-        94,
-        120
+        50,
+        27,
+        95,
+        130
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1759
+      "opaque_pixels": 2545
     },
     "assets/enemy_full/tyrannosaurus_hurt_N_001.png": {
       "bbox": [
-        56,
-        27,
-        97,
-        120
+        51,
+        33,
+        95,
+        131
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 1951
+      "opaque_pixels": 2519
     },
     "assets/enemy_full/tyrannosaurus_walk_N_000.png": {
       "bbox": [
-        50,
-        10,
-        96,
-        134
+        51,
+        34,
+        93,
+        132
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3106
+      "opaque_pixels": 2475
     },
     "assets/enemy_full/tyrannosaurus_walk_N_001.png": {
       "bbox": [
-        50,
-        10,
-        94,
-        138
+        51,
+        34,
+        95,
+        130
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3198
+      "opaque_pixels": 2489
     },
     "assets/enemy_full/tyrannosaurus_walk_N_002.png": {
       "bbox": [
-        51,
-        9,
-        94,
-        136
+        52,
+        33,
+        96,
+        131
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3156
+      "opaque_pixels": 2635
     },
     "assets/enemy_full/tyrannosaurus_walk_N_003.png": {
       "bbox": [
         50,
-        10,
-        95,
-        139
+        33,
+        93,
+        131
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3196
+      "opaque_pixels": 2586
     },
     "assets/enemy_full/tyrannosaurus_walk_N_004.png": {
       "bbox": [
         50,
-        11,
-        95,
-        135
+        33,
+        94,
+        130
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3298
+      "opaque_pixels": 2492
     },
     "assets/enemy_full/tyrannosaurus_walk_N_005.png": {
       "bbox": [
-        50,
-        10,
+        51,
+        32,
         95,
-        135
+        130
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3081
+      "opaque_pixels": 2652
     },
     "assets/enemy_full/tyrannosaurus_run_N_000.png": {
       "bbox": [
-        47,
-        3,
-        98,
-        137
+        49,
+        32,
+        95,
+        129
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3901
+      "opaque_pixels": 2613
     },
     "assets/enemy_full/tyrannosaurus_run_N_001.png": {
       "bbox": [
-        47,
-        3,
-        97,
-        139
+        49,
+        32,
+        95,
+        129
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3666
+      "opaque_pixels": 2805
     },
     "assets/enemy_full/tyrannosaurus_run_N_002.png": {
       "bbox": [
         50,
-        3,
-        99,
-        139
+        32,
+        96,
+        129
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3695
+      "opaque_pixels": 2729
     },
     "assets/enemy_full/tyrannosaurus_run_N_003.png": {
       "bbox": [
-        50,
-        3,
-        99,
-        140
+        51,
+        32,
+        96,
+        129
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3851
+      "opaque_pixels": 2758
     },
     "assets/enemy_full/tyrannosaurus_run_N_004.png": {
       "bbox": [
         49,
-        2,
-        98,
-        138
+        32,
+        94,
+        129
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3937
+      "opaque_pixels": 2600
     },
     "assets/enemy_full/tyrannosaurus_run_N_005.png": {
       "bbox": [
-        48,
-        2,
+        51,
+        32,
         97,
-        136
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3589
-    },
-    "assets/enemy_full/tyrannosaurus_attack_N_000.png": {
-      "bbox": [
-        52,
-        25,
-        90,
-        122
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1833
-    },
-    "assets/enemy_full/tyrannosaurus_attack_N_001.png": {
-      "bbox": [
-        49,
-        24,
-        91,
-        122
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2093
-    },
-    "assets/enemy_full/tyrannosaurus_attack_N_002.png": {
-      "bbox": [
-        51,
-        25,
-        94,
-        122
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2029
-    },
-    "assets/enemy_full/tyrannosaurus_attack_N_003.png": {
-      "bbox": [
-        51,
-        23,
-        95,
-        122
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1997
-    },
-    "assets/enemy_full/tyrannosaurus_attack_N_004.png": {
-      "bbox": [
-        52,
-        23,
-        95,
-        122
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1901
-    },
-    "assets/enemy_full/tyrannosaurus_attack_N_005.png": {
-      "bbox": [
-        51,
-        25,
-        94,
-        122
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1984
-    },
-    "assets/enemy_full/tyrannosaurus_death_N_000.png": {
-      "bbox": [
-        53,
-        25,
-        90,
-        118
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1832
-    },
-    "assets/enemy_full/tyrannosaurus_death_N_001.png": {
-      "bbox": [
-        52,
-        29,
-        96,
-        118
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1947
-    },
-    "assets/enemy_full/tyrannosaurus_death_N_002.png": {
-      "bbox": [
-        48,
-        37,
-        97,
-        117
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 1988
-    },
-    "assets/enemy_full/tyrannosaurus_death_N_003.png": {
-      "bbox": [
-        36,
-        37,
-        99,
-        118
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2418
-    },
-    "assets/enemy_full/tyrannosaurus_death_N_004.png": {
-      "bbox": [
-        27,
-        39,
-        115,
-        118
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2790
-    },
-    "assets/enemy_full/tyrannosaurus_death_N_005.png": {
-      "bbox": [
-        23,
-        39,
-        118,
-        112
+        130
       ],
       "origin": [
         72,
@@ -3124,231 +2968,387 @@
       ],
       "opaque_pixels": 2675
     },
+    "assets/enemy_full/tyrannosaurus_attack_N_000.png": {
+      "bbox": [
+        49,
+        34,
+        94,
+        130
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2586
+    },
+    "assets/enemy_full/tyrannosaurus_attack_N_001.png": {
+      "bbox": [
+        50,
+        35,
+        96,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2503
+    },
+    "assets/enemy_full/tyrannosaurus_attack_N_002.png": {
+      "bbox": [
+        50,
+        30,
+        96,
+        130
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2789
+    },
+    "assets/enemy_full/tyrannosaurus_attack_N_003.png": {
+      "bbox": [
+        49,
+        31,
+        95,
+        130
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2693
+    },
+    "assets/enemy_full/tyrannosaurus_attack_N_004.png": {
+      "bbox": [
+        47,
+        33,
+        95,
+        130
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2795
+    },
+    "assets/enemy_full/tyrannosaurus_attack_N_005.png": {
+      "bbox": [
+        47,
+        35,
+        96,
+        130
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2706
+    },
+    "assets/enemy_full/tyrannosaurus_death_N_000.png": {
+      "bbox": [
+        49,
+        27,
+        94,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2529
+    },
+    "assets/enemy_full/tyrannosaurus_death_N_001.png": {
+      "bbox": [
+        49,
+        31,
+        96,
+        120
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2519
+    },
+    "assets/enemy_full/tyrannosaurus_death_N_002.png": {
+      "bbox": [
+        47,
+        40,
+        99,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2390
+    },
+    "assets/enemy_full/tyrannosaurus_death_N_003.png": {
+      "bbox": [
+        48,
+        41,
+        104,
+        119
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2421
+    },
+    "assets/enemy_full/tyrannosaurus_death_N_004.png": {
+      "bbox": [
+        45,
+        44,
+        110,
+        117
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2590
+    },
+    "assets/enemy_full/tyrannosaurus_death_N_005.png": {
+      "bbox": [
+        46,
+        47,
+        116,
+        118
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2505
+    },
     "assets/enemy_full/parasaurolophus_idle_E_000.png": {
       "bbox": [
-        16,
-        48,
-        128,
-        105
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2765
-    },
-    "assets/enemy_full/parasaurolophus_idle_E_001.png": {
-      "bbox": [
-        16,
-        50,
-        128,
-        105
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2711
-    },
-    "assets/enemy_full/parasaurolophus_idle_E_002.png": {
-      "bbox": [
-        16,
-        49,
-        128,
-        103
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2850
-    },
-    "assets/enemy_full/parasaurolophus_idle_E_003.png": {
-      "bbox": [
-        14,
-        48,
-        126,
-        105
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2763
-    },
-    "assets/enemy_full/parasaurolophus_hurt_E_000.png": {
-      "bbox": [
-        14,
-        48,
-        131,
-        107
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3106
-    },
-    "assets/enemy_full/parasaurolophus_hurt_E_001.png": {
-      "bbox": [
-        13,
-        47,
-        125,
-        108
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2939
-    },
-    "assets/enemy_full/parasaurolophus_walk_E_000.png": {
-      "bbox": [
-        16,
-        42,
-        131,
-        98
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2841
-    },
-    "assets/enemy_full/parasaurolophus_walk_E_001.png": {
-      "bbox": [
-        16,
-        43,
-        129,
-        99
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2699
-    },
-    "assets/enemy_full/parasaurolophus_walk_E_002.png": {
-      "bbox": [
-        16,
-        43,
-        130,
-        100
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2792
-    },
-    "assets/enemy_full/parasaurolophus_walk_E_003.png": {
-      "bbox": [
-        16,
-        42,
-        130,
-        99
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2787
-    },
-    "assets/enemy_full/parasaurolophus_walk_E_004.png": {
-      "bbox": [
         15,
-        43,
-        128,
-        96
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2840
-    },
-    "assets/enemy_full/parasaurolophus_walk_E_005.png": {
-      "bbox": [
-        13,
-        40,
-        127,
+        55,
+        129,
         106
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2856
+      "opaque_pixels": 2695
     },
-    "assets/enemy_full/parasaurolophus_run_E_000.png": {
-      "bbox": [
-        16,
-        36,
-        132,
-        92
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2797
-    },
-    "assets/enemy_full/parasaurolophus_run_E_001.png": {
-      "bbox": [
-        16,
-        38,
-        128,
-        93
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2743
-    },
-    "assets/enemy_full/parasaurolophus_run_E_002.png": {
+    "assets/enemy_full/parasaurolophus_idle_E_001.png": {
       "bbox": [
         15,
-        37,
+        57,
         128,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2606
+    },
+    "assets/enemy_full/parasaurolophus_idle_E_002.png": {
+      "bbox": [
+        15,
+        55,
+        128,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2717
+    },
+    "assets/enemy_full/parasaurolophus_idle_E_003.png": {
+      "bbox": [
+        13,
+        56,
+        127,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2655
+    },
+    "assets/enemy_full/parasaurolophus_hurt_E_000.png": {
+      "bbox": [
+        13,
+        58,
+        132,
+        107
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2786
+    },
+    "assets/enemy_full/parasaurolophus_hurt_E_001.png": {
+      "bbox": [
+        13,
+        58,
+        127,
+        108
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2564
+    },
+    "assets/enemy_full/parasaurolophus_walk_E_000.png": {
+      "bbox": [
+        15,
+        48,
+        131,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2732
+    },
+    "assets/enemy_full/parasaurolophus_walk_E_001.png": {
+      "bbox": [
+        15,
+        51,
+        130,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2627
+    },
+    "assets/enemy_full/parasaurolophus_walk_E_002.png": {
+      "bbox": [
+        14,
+        50,
+        131,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2646
+    },
+    "assets/enemy_full/parasaurolophus_walk_E_003.png": {
+      "bbox": [
+        15,
+        50,
+        130,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2664
+    },
+    "assets/enemy_full/parasaurolophus_walk_E_004.png": {
+      "bbox": [
+        14,
+        51,
+        129,
         97
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2824
+      "opaque_pixels": 2601
     },
-    "assets/enemy_full/parasaurolophus_run_E_003.png": {
+    "assets/enemy_full/parasaurolophus_walk_E_005.png": {
       "bbox": [
         14,
-        37,
-        128,
-        98
+        51,
+        127,
+        102
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2846
+      "opaque_pixels": 2556
     },
-    "assets/enemy_full/parasaurolophus_run_E_004.png": {
+    "assets/enemy_full/parasaurolophus_run_E_000.png": {
       "bbox": [
         15,
-        38,
-        131,
+        42,
+        132,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2725
+    },
+    "assets/enemy_full/parasaurolophus_run_E_001.png": {
+      "bbox": [
+        14,
+        43,
+        128,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2639
+    },
+    "assets/enemy_full/parasaurolophus_run_E_002.png": {
+      "bbox": [
+        15,
+        44,
+        129,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2712
+    },
+    "assets/enemy_full/parasaurolophus_run_E_003.png": {
+      "bbox": [
+        14,
+        44,
+        129,
         96
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2894
+      "opaque_pixels": 2664
+    },
+    "assets/enemy_full/parasaurolophus_run_E_004.png": {
+      "bbox": [
+        14,
+        46,
+        131,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2701
     },
     "assets/enemy_full/parasaurolophus_run_E_005.png": {
       "bbox": [
         14,
-        35,
+        46,
         127,
         97
       ],
@@ -3356,118 +3356,53 @@
         72,
         72
       ],
-      "opaque_pixels": 2715
+      "opaque_pixels": 2568
     },
     "assets/enemy_full/parasaurolophus_attack_E_000.png": {
       "bbox": [
-        15,
-        34,
-        135,
-        94
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2960
-    },
-    "assets/enemy_full/parasaurolophus_attack_E_001.png": {
-      "bbox": [
-        16,
-        34,
-        129,
-        91
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2879
-    },
-    "assets/enemy_full/parasaurolophus_attack_E_002.png": {
-      "bbox": [
-        13,
-        32,
-        126,
-        93
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2880
-    },
-    "assets/enemy_full/parasaurolophus_attack_E_003.png": {
-      "bbox": [
-        12,
-        34,
-        131,
-        96
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3023
-    },
-    "assets/enemy_full/parasaurolophus_attack_E_004.png": {
-      "bbox": [
         14,
-        33,
-        132,
-        93
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2929
-    },
-    "assets/enemy_full/parasaurolophus_attack_E_005.png": {
-      "bbox": [
-        13,
-        33,
-        126,
-        96
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2934
-    },
-    "assets/enemy_full/parasaurolophus_death_E_000.png": {
-      "bbox": [
-        16,
-        28,
-        133,
-        91
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2951
-    },
-    "assets/enemy_full/parasaurolophus_death_E_001.png": {
-      "bbox": [
-        23,
-        27,
-        135,
+        35,
+        134,
         92
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 2929
+      "opaque_pixels": 2830
     },
-    "assets/enemy_full/parasaurolophus_death_E_002.png": {
+    "assets/enemy_full/parasaurolophus_attack_E_001.png": {
       "bbox": [
-        29,
-        25,
-        134,
-        84
+        14,
+        37,
+        131,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2744
+    },
+    "assets/enemy_full/parasaurolophus_attack_E_002.png": {
+      "bbox": [
+        14,
+        35,
+        128,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2727
+    },
+    "assets/enemy_full/parasaurolophus_attack_E_003.png": {
+      "bbox": [
+        12,
+        35,
+        131,
+        93
       ],
       "origin": [
         72,
@@ -3475,44 +3410,109 @@
       ],
       "opaque_pixels": 2799
     },
-    "assets/enemy_full/parasaurolophus_death_E_003.png": {
+    "assets/enemy_full/parasaurolophus_attack_E_004.png": {
       "bbox": [
-        21,
-        26,
-        134,
-        92
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 2999
-    },
-    "assets/enemy_full/parasaurolophus_death_E_004.png": {
-      "bbox": [
-        27,
-        23,
-        119,
-        98
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3343
-    },
-    "assets/enemy_full/parasaurolophus_death_E_005.png": {
-      "bbox": [
-        16,
-        17,
-        128,
+        15,
+        42,
+        132,
         93
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3593
+      "opaque_pixels": 2686
+    },
+    "assets/enemy_full/parasaurolophus_attack_E_005.png": {
+      "bbox": [
+        15,
+        36,
+        127,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2708
+    },
+    "assets/enemy_full/parasaurolophus_death_E_000.png": {
+      "bbox": [
+        16,
+        29,
+        133,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2830
+    },
+    "assets/enemy_full/parasaurolophus_death_E_001.png": {
+      "bbox": [
+        20,
+        30,
+        134,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2741
+    },
+    "assets/enemy_full/parasaurolophus_death_E_002.png": {
+      "bbox": [
+        25,
+        25,
+        135,
+        85
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2667
+    },
+    "assets/enemy_full/parasaurolophus_death_E_003.png": {
+      "bbox": [
+        19,
+        26,
+        133,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 2897
+    },
+    "assets/enemy_full/parasaurolophus_death_E_004.png": {
+      "bbox": [
+        26,
+        24,
+        120,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3179
+    },
+    "assets/enemy_full/parasaurolophus_death_E_005.png": {
+      "bbox": [
+        16,
+        18,
+        130,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3677
     },
     "assets/enemy_full/deinosuchus_idle_E_000.png": {
       "bbox": [
@@ -4687,22 +4687,22 @@
     "assets/enemy_full/parasaurolophus_idle_W_000.png": {
       "bbox": [
         17,
-        48,
+        47,
         134,
-        106
+        110
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3177
+      "opaque_pixels": 3141
     },
     "assets/enemy_full/parasaurolophus_idle_W_001.png": {
       "bbox": [
         18,
-        48,
-        133,
-        106
+        47,
+        134,
+        110
       ],
       "origin": [
         72,
@@ -4713,15 +4713,15 @@
     "assets/enemy_full/parasaurolophus_idle_W_002.png": {
       "bbox": [
         18,
-        48,
-        133,
+        47,
+        134,
         110
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3082
+      "opaque_pixels": 3142
     },
     "assets/enemy_full/parasaurolophus_idle_W_003.png": {
       "bbox": [
@@ -4734,59 +4734,59 @@
         72,
         72
       ],
-      "opaque_pixels": 3260
+      "opaque_pixels": 3089
     },
     "assets/enemy_full/parasaurolophus_hurt_W_000.png": {
       "bbox": [
         25,
-        44,
-        133,
-        113
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3784
-    },
-    "assets/enemy_full/parasaurolophus_hurt_W_001.png": {
-      "bbox": [
-        27,
-        51,
-        126,
+        45,
+        134,
         111
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3135
+      "opaque_pixels": 3502
+    },
+    "assets/enemy_full/parasaurolophus_hurt_W_001.png": {
+      "bbox": [
+        28,
+        51,
+        127,
+        110
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3068
     },
     "assets/enemy_full/parasaurolophus_walk_W_000.png": {
       "bbox": [
         17,
         38,
-        134,
-        101
+        135,
+        105
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3420
+      "opaque_pixels": 3247
     },
     "assets/enemy_full/parasaurolophus_walk_W_001.png": {
       "bbox": [
         18,
-        40,
+        38,
         134,
-        106
+        105
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3328
+      "opaque_pixels": 3238
     },
     "assets/enemy_full/parasaurolophus_walk_W_002.png": {
       "bbox": [
@@ -4799,12 +4799,12 @@
         72,
         72
       ],
-      "opaque_pixels": 3335
+      "opaque_pixels": 3318
     },
     "assets/enemy_full/parasaurolophus_walk_W_003.png": {
       "bbox": [
         18,
-        40,
+        39,
         134,
         106
       ],
@@ -4812,38 +4812,181 @@
         72,
         72
       ],
-      "opaque_pixels": 3372
+      "opaque_pixels": 3303
     },
     "assets/enemy_full/parasaurolophus_walk_W_004.png": {
       "bbox": [
         17,
-        41,
-        133,
-        104
+        39,
+        134,
+        105
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3534
+      "opaque_pixels": 3373
     },
     "assets/enemy_full/parasaurolophus_walk_W_005.png": {
       "bbox": [
         17,
-        41,
-        132,
+        40,
+        133,
         106
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 3247
+      "opaque_pixels": 3224
     },
     "assets/enemy_full/parasaurolophus_run_W_000.png": {
       "bbox": [
         17,
-        34,
+        33,
+        133,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3389
+    },
+    "assets/enemy_full/parasaurolophus_run_W_001.png": {
+      "bbox": [
+        18,
+        33,
+        134,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3339
+    },
+    "assets/enemy_full/parasaurolophus_run_W_002.png": {
+      "bbox": [
+        18,
+        33,
+        135,
+        102
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3445
+    },
+    "assets/enemy_full/parasaurolophus_run_W_003.png": {
+      "bbox": [
+        18,
+        33,
+        135,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3348
+    },
+    "assets/enemy_full/parasaurolophus_run_W_004.png": {
+      "bbox": [
+        17,
+        33,
+        134,
+        103
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3336
+    },
+    "assets/enemy_full/parasaurolophus_run_W_005.png": {
+      "bbox": [
+        17,
+        33,
+        133,
+        100
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3269
+    },
+    "assets/enemy_full/parasaurolophus_attack_W_000.png": {
+      "bbox": [
+        19,
+        26,
+        135,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3438
+    },
+    "assets/enemy_full/parasaurolophus_attack_W_001.png": {
+      "bbox": [
+        18,
+        26,
+        134,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3487
+    },
+    "assets/enemy_full/parasaurolophus_attack_W_002.png": {
+      "bbox": [
+        26,
+        26,
+        134,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3199
+    },
+    "assets/enemy_full/parasaurolophus_attack_W_003.png": {
+      "bbox": [
+        18,
+        30,
+        136,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3646
+    },
+    "assets/enemy_full/parasaurolophus_attack_W_004.png": {
+      "bbox": [
+        18,
+        31,
+        134,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3642
+    },
+    "assets/enemy_full/parasaurolophus_attack_W_005.png": {
+      "bbox": [
+        17,
+        27,
         132,
         95
       ],
@@ -4851,228 +4994,85 @@
         72,
         72
       ],
-      "opaque_pixels": 3634
-    },
-    "assets/enemy_full/parasaurolophus_run_W_001.png": {
-      "bbox": [
-        18,
-        36,
-        132,
-        97
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3501
-    },
-    "assets/enemy_full/parasaurolophus_run_W_002.png": {
-      "bbox": [
-        18,
-        35,
-        134,
-        103
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3410
-    },
-    "assets/enemy_full/parasaurolophus_run_W_003.png": {
-      "bbox": [
-        18,
-        32,
-        134,
-        101
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3542
-    },
-    "assets/enemy_full/parasaurolophus_run_W_004.png": {
-      "bbox": [
-        17,
-        36,
-        133,
-        103
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3524
-    },
-    "assets/enemy_full/parasaurolophus_run_W_005.png": {
-      "bbox": [
-        17,
-        37,
-        131,
-        97
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3302
-    },
-    "assets/enemy_full/parasaurolophus_attack_W_000.png": {
-      "bbox": [
-        19,
-        27,
-        134,
-        93
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3539
-    },
-    "assets/enemy_full/parasaurolophus_attack_W_001.png": {
-      "bbox": [
-        18,
-        26,
-        133,
-        96
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3611
-    },
-    "assets/enemy_full/parasaurolophus_attack_W_002.png": {
-      "bbox": [
-        26,
-        25,
-        133,
-        93
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3092
-    },
-    "assets/enemy_full/parasaurolophus_attack_W_003.png": {
-      "bbox": [
-        18,
-        30,
-        134,
-        92
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3691
-    },
-    "assets/enemy_full/parasaurolophus_attack_W_004.png": {
-      "bbox": [
-        18,
-        30,
-        133,
-        98
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 4033
-    },
-    "assets/enemy_full/parasaurolophus_attack_W_005.png": {
-      "bbox": [
-        17,
-        30,
-        131,
-        93
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3328
+      "opaque_pixels": 3276
     },
     "assets/enemy_full/parasaurolophus_death_W_000.png": {
       "bbox": [
         19,
-        20,
-        125,
-        90
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3518
-    },
-    "assets/enemy_full/parasaurolophus_death_W_001.png": {
-      "bbox": [
-        19,
-        19,
-        133,
-        89
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3562
-    },
-    "assets/enemy_full/parasaurolophus_death_W_002.png": {
-      "bbox": [
-        23,
         21,
-        128,
-        89
-      ],
-      "origin": [
-        72,
-        72
-      ],
-      "opaque_pixels": 3738
-    },
-    "assets/enemy_full/parasaurolophus_death_W_003.png": {
-      "bbox": [
-        25,
-        12,
-        132,
+        126,
         91
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 4093
+      "opaque_pixels": 3411
     },
-    "assets/enemy_full/parasaurolophus_death_W_004.png": {
+    "assets/enemy_full/parasaurolophus_death_W_001.png": {
       "bbox": [
-        26,
-        14,
-        128,
+        18,
+        21,
+        135,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 3429
+    },
+    "assets/enemy_full/parasaurolophus_death_W_002.png": {
+      "bbox": [
+        23,
+        22,
+        130,
         92
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 4583
+      "opaque_pixels": 3672
     },
-    "assets/enemy_full/parasaurolophus_death_W_005.png": {
+    "assets/enemy_full/parasaurolophus_death_W_003.png": {
       "bbox": [
-        14,
-        12,
-        125,
-        100
+        26,
+        17,
+        134,
+        92
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 4660
+      "opaque_pixels": 4120
+    },
+    "assets/enemy_full/parasaurolophus_death_W_004.png": {
+      "bbox": [
+        26,
+        17,
+        130,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 4464
+    },
+    "assets/enemy_full/parasaurolophus_death_W_005.png": {
+      "bbox": [
+        17,
+        13,
+        126,
+        101
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 4470
     },
     "assets/enemy_full/deinosuchus_idle_W_000.png": {
       "bbox": [
