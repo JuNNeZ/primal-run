@@ -186,7 +186,7 @@ UI = [
 ("SJÆLDEN ALBINO NEDLAGT","RARE ALBINO TAKEN DOWN","SELTENER ALBINO ERLEGT","SÄLLSYNT ALBINO FÄLLD","SJELDEN ALBINO FELT","希少なアルビノ撃破","稀有白化动物已击倒"),
 ("EPISK GENOM","EPIC GENOME","EPISCHES GENOM","EPISKT GENOM","EPISK GENOM","エピックゲノム","史诗基因组"),
 ("Vælg din mutation","Choose your mutation","Wähle deine Mutation","Välj din mutation","Velg mutasjonen din","突然変異を選ぶ","选择你的变异"),
-("Spillet er pauset. Tryk 1, 2 eller 3.","The game is paused. Press 1, 2 or 3.","Das Spiel ist pausiert. Drücke 1, 2 oder 3.","Spelet är pausat. Tryck 1, 2 eller 3.","Spillet er satt på pause. Trykk 1, 2 eller 3.","一時停止中。1、2、3を押す。","游戏已暂停。按 1、2 或 3。"),
+("Spillet er pauset. Tryk #, # eller #.","The game is paused. Press #, # or #.","Das Spiel ist pausiert. Drücke #, # oder #.","Spelet är pausat. Tryck #, # eller #.","Spillet er satt på pause. Trykk #, # eller #.","一時停止中。#、#、#を押す。","游戏已暂停。按 #、# 或 #。"),
 ("VALG #","CHOICE #","WAHL #","VAL #","VALG #","選択 #","选项 #"),
 ("RANG # → # / #","RANK # → # / #","RANG # → # / #","RANG # → # / #","RANG # → # / #","ランク # → # / #","等级 # → # / #"),
 ("FÆLLES MUTATION","SHARED MUTATION","GEMEINSAME MUTATION","GEMENSAM MUTATION","FELLES MUTASJON","共通の突然変異","通用变异"),
@@ -422,4 +422,5 @@ UI = [
 ("Tyrannosaurus rex","Tyrannosaurus rex","Tyrannosaurus rex","Tyrannosaurus rex","Tyrannosaurus rex","ティラノサウルス","霸王龙"),
 ("Parasaurolophus","Parasaurolophus","Parasaurolophus","Parasaurolophus","Parasaurolophus","パラサウロロフス","副栉龙"),
 ("Deinosuchus","Deinosuchus","Deinosuchus","Deinosuchus","Deinosuchus","デイノスクス","恐鳄"),
+("fremgang gemmes kun i denne session","progress is saved for this session only","Fortschritt wird nur in dieser Sitzung gespeichert","framsteg sparas endast i denna session","fremgang lagres kun i denne økten","進行状況はこのセッションのみ保存","进度仅保存在本次会话"),
 ]

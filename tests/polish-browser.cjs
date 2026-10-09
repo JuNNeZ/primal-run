@@ -25,6 +25,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     await page.evaluate(() => {
       const g = primalRun.game; g.start({campaign:'classic'}); const r = g.run; r.enemies = []; r.pickups = []; r.spawnTimer = 999;
       r.player.x = 1450; r.player.y = 950; r.player.facing = 'E';
+      g.random = () => .99; // no critical hit, exact flank number
       const boss = g.spawn('carnotaurus', { x: 1500, y: 950 }, true); boss.mode = 'recover'; boss.timer = 1.65; boss.facingX = 1; boss.facingY = 0;
       g.attack(); r.attack.elapsed = r.attack.contactTime - .01; g.step(.011); g.pause(); primalRun.update(performance.now());
       document.querySelector('.screen').hidden = true;

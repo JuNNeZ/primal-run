@@ -130,7 +130,7 @@
       }
       I18N.translateNode(screen);
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
-      shell.querySelector('.save-status').textContent = game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session';
+      shell.querySelector('.save-status').textContent = tr(game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session');
     }
     function statisticsHTML(stageOnly){const st=game.statistics(stageOnly),fields={kills:'Dinosaurer nedlagt',fishCaught:'Fisk fanget',plantsEaten:'Planteportioner spist',meatEaten:'Kødportioner spist',staminaSpent:'Stamina brugt',attacks:'Angreb',landedAttacks:'Angreb med træffer',abilities:'Evner / undvigelser',avoidedHits:'Undgåede kontakttræffere',damageDealt:'Effektiv skade',damageTaken:'Modtaget skade',healing:'Healing',food:'Føde spist',dna:'DNA',distance:'Distance (pixels)',steps:'Estimerede skridt',secretsMissed:'Hemmeligheder overset'};return `<details class="run-details"><summary>${stageOnly?'Denne banes':'Hele jagtens'} statistik</summary><div class="stat-grid">${Object.entries(fields).map(([key,label])=>`<div><small>${label}</small><b>${Math.round(st[key]||0)}</b></div>`).join('')}<div><small>Træfprocent</small><b>${st.attackAccuracy.toFixed(1)} %</b></div><div><small>Faktisk DNA-dropandel</small><b>${st.actualDNADropRate.toFixed(1)} % (${st.drops}/${st.dropRolls})</b></div></div><p>Mutationer: ${Object.entries(st.mutations).map(([id,rank])=>C.MUTATIONS.find(m=>m.id===id).name+' '+rank).join(' · ')||'Ingen'}</p><p class="fine">Skridt estimeres som distance / 24 pixels. DNA-andelen er observerede drops, ikke en ekstra luck-bonus.</p></details>`;}
     let endSceneStarted=0,endSceneRun=null;
@@ -597,12 +597,12 @@
       if (game.phase !== phaseBefore) accumulator = 0;
       for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast(['FASE 2 · Dobbelt stormløb og tramp!', 'FASE 2 · Hurtigere baghold og stor halebølge!', 'FASE 2 · Dobbelt hornstorm!', 'FASE 2 · Dobbeltbid og brøl!'][game.run.stage]); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if(event.type==='discovery')toast(event.text); if (event.type === 'dna' && !event.quiet) toast('+' + event.amount + ' DNA · gemt'); if(event.type==='achievement')toast('★ ACHIEVEMENT · '+event.name.toUpperCase()+(event.species?' · '+I18N.tf('{0} låst op!',C.PLAYER_SPECIES[event.species].name):event.skin?' · ny farvedragt':' · +'+event.dna+' DNA'));if(event.type==='zone')toast(event.first?'NYT OMRÅDE · '+event.name.toUpperCase()+' · +1 DNA':event.name.toUpperCase()); if(event.type==='boss_break')toast('BRUDT! · Angrib nu'); if(event.type==='winded')toast('FORPUSTET · vent på stamina'); }
       const musicRun=game.run;audio.setScene({phase:game.phase==='settings'&&returnPhase==='paused'?'paused':game.phase,stage:musicRun?musicRun.stage:0,boss:!!(musicRun&&musicRun.bossSpawned&&!musicRun.bossDefeated),health:musicRun?musicRun.health:1,maxHealth:musicRun?musicRun.maxHealth:1,victory:!!(musicRun&&musicRun.result&&musicRun.result.victory)});audio.sync();
-      if(I18N.lang!=='da'&&game.run)for(const sel of ['.hud','.run-info','.meat-progress','.boss-hud'])I18N.translateNode(shell.querySelector(sel));
       shell.style.setProperty('--hud-scale',game.save.settings.hudScale);shell.style.setProperty('--text-scale',game.save.settings.textScale);
       renderScreen(); draw();drawEndScene(now);
+      if(I18N.lang!=='da'&&game.run)for(const sel of ['.hud','.run-info','.meat-progress','.boss-hud'])I18N.translateNode(shell.querySelector(sel));
       if(game.phase==='playing'&&game.run&&game.run.eating){const r=game.run,x=Math.round(r.player.x-r.view.x),y=Math.round(r.player.y-r.view.y+102);ctx.fillStyle='#101713';ctx.fillRect(x-42,y,84,8);ctx.fillStyle='#fff1c9';ctx.fillRect(x-40,y+2,80*r.eating.progress,4);}
       shell.querySelector('.toast').hidden = now > toastUntil;
-      shell.querySelector('.save-status').textContent = game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · kun denne session';
+      shell.querySelector('.save-status').textContent = tr(game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · kun denne session');
     }
     // A single thrown error used to stop requestAnimationFrame for good, which froze the game.
     let frameErrors=0;
