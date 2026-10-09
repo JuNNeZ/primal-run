@@ -558,7 +558,7 @@
       if(r.species==='ankylosaurus')r.tailEmpowered=0;
     }
     kill(e) {
-      const r = this.run; r.kills++;r.stats.kills++;r.stats.killsBySpecies[e.kind]=(r.stats.killsBySpecies[e.kind]||0)+1;r.corpses.push({id:e.id,lifetime:60+Math.min(10,e.radius/4),foodLifetime:14+Math.min(4,e.radius/8),poseVariant:e.id%2,spoilAt:7,decayPortions:0,kind:e.kind,x:e.x,y:e.y,direction:e.direction,visualScale:e.visualScale,age:0});r.corpses=r.corpses.slice(-32);
+      const r = this.run; r.kills++;r.stats.kills++;r.stats.killsBySpecies[e.kind]=(r.stats.killsBySpecies[e.kind]||0)+1;r.corpses.push({id:e.id,lifetime:60+Math.min(10,e.radius/4),foodLifetime:14+Math.min(4,e.radius/8),poseVariant:e.id%2,spoilAt:7,decayPortions:0,kind:e.kind,x:e.x,y:e.y,direction:e.direction,visualScale:e.visualScale,variant:e.rare?'albino':e.elite?'elite':e.sex==='male'?'male':null,age:0});r.corpses=r.corpses.slice(-32);
       if (e.boss) {
         r.bosses++; r.score += 1000 * (r.stage + 1); r.bossDefeated = true;
         this.addDNA(this.currentLevel().dna); this.emit('boss_dead');
@@ -566,11 +566,13 @@
         const base = SPECIES[e.kind]; r.score += base.meat * 15;
         const roll = this.random(), thresholds = base.meat === 1 ? [.76, .95, .995] : base.meat === 3 ? [.6, .88, .98] : [.55, .8, .95];
         const rarity = e.rare || e.elite ? Math.max(2, thresholds.filter(t => roll >= t).length) : thresholds.filter(t => roll >= t).length;
-        if (e.elite) { r.eliteKills++; this.addDNA(base.dna + r.stage + 2); }
-        if (e.rare) {this.addDNA(base.dna+3+r.stage);r.rareRewards++; const site = r.map.sites.find(s => s.animalId === e.id); if (site) site.claimed = true; }
+        if (e.elite) { r.eliteKills++; this.addDNA(base.dna + r.stage + 2); r.rareRewards++; r.rewardSource='elite'; }
+        if (e.rare) {this.addDNA(base.dna+3+r.stage);r.rareRewards++;r.rewardSource='albino'; const site = r.map.sites.find(s => s.animalId === e.id); if (site) site.claimed = true; }
         r.pickups.push({ id: ++this.nextId, kind: 'meat', corpseId:e.id, x: e.x, y: e.y, rarity, value: Math.ceil(base.meat * MEAT_RARITIES[rarity].multiplier) });
         r.stats.dropRolls++;if (this.random() < base.chance) {r.stats.drops++;r.pickups.push({ id: ++this.nextId, kind: 'dna', x: clamp(e.x + 20, 48, r.map.width - 48), y: e.y, value: base.dna });}
         if (this.random() < .10) r.pickups.push({ id: ++this.nextId, kind: 'heal', x: e.x, y: clamp(e.y + 18, 80, r.map.height - 54), value: 15 });
+        // Epic genome is the reward for the kill itself, offered at once on its own screen.
+        if ((e.rare || e.elite) && this.phase === 'playing') this.offerRareReward();
       }
     }
     awardFood(value,x,y,label='FØDE') {
