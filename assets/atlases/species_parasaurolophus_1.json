@@ -1,0 +1,372 @@
+{
+  "assets/enemies/parasaurolophus_idle_S_000.png": {
+    "anchor": [
+      48,
+      64
+    ],
+    "h": 128,
+    "w": 96,
+    "x": 911,
+    "y": 293
+  },
+  "assets/enemy_animations/parasaurolophus_action_E_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 877,
+    "y": 147
+  },
+  "assets/enemy_animations/parasaurolophus_action_N_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1007,
+    "y": 147
+  },
+  "assets/enemy_animations/parasaurolophus_action_S_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1137,
+    "y": 147
+  },
+  "assets/enemy_animations/parasaurolophus_action_W_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1267,
+    "y": 147
+  },
+  "assets/enemy_animations/parasaurolophus_idle_E_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1397,
+    "y": 147
+  },
+  "assets/enemy_animations/parasaurolophus_idle_N_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1527,
+    "y": 147
+  },
+  "assets/enemy_animations/parasaurolophus_idle_S_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1657,
+    "y": 147
+  },
+  "assets/enemy_animations/parasaurolophus_idle_W_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1787,
+    "y": 147
+  },
+  "assets/enemy_animations/parasaurolophus_step_left_E_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1917,
+    "y": 147
+  },
+  "assets/enemy_animations/parasaurolophus_step_left_N_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1,
+    "y": 293
+  },
+  "assets/enemy_animations/parasaurolophus_step_left_S_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 131,
+    "y": 293
+  },
+  "assets/enemy_animations/parasaurolophus_step_left_W_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 261,
+    "y": 293
+  },
+  "assets/enemy_animations/parasaurolophus_step_right_E_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 391,
+    "y": 293
+  },
+  "assets/enemy_animations/parasaurolophus_step_right_N_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 521,
+    "y": 293
+  },
+  "assets/enemy_animations/parasaurolophus_step_right_S_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 651,
+    "y": 293
+  },
+  "assets/enemy_animations/parasaurolophus_step_right_W_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 781,
+    "y": 293
+  },
+  "assets/species_attacks/parasaurolophus_attack_E_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_E_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_N_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_N_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_N_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_N_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_S_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_S_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_S_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_S_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 1
+  },
+  "assets/species_attacks/parasaurolophus_attack_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 147
+  },
+  "assets/species_attacks/parasaurolophus_attack_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 147
+  },
+  "assets/species_attacks/parasaurolophus_attack_W_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 147
+  },
+  "assets/species_attacks/parasaurolophus_attack_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 147
+  },
+  "assets/species_attacks/parasaurolophus_attack_W_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 147
+  },
+  "assets/species_attacks/parasaurolophus_attack_W_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 147
+  }
+}

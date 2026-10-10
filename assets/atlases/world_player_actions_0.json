@@ -1,0 +1,162 @@
+{
+  "assets/player_actions/utahraptor_bite_S_000.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1,
+    "y": 1
+  },
+  "assets/player_actions/utahraptor_bite_S_001.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 131,
+    "y": 1
+  },
+  "assets/player_actions/utahraptor_bite_S_002.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 261,
+    "y": 1
+  },
+  "assets/player_actions/utahraptor_bite_S_003.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 391,
+    "y": 1
+  },
+  "assets/player_actions/utahraptor_death_S_000.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 521,
+    "y": 1
+  },
+  "assets/player_actions/utahraptor_death_S_001.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 651,
+    "y": 1
+  },
+  "assets/player_actions/utahraptor_death_S_002.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 781,
+    "y": 1
+  },
+  "assets/player_actions/utahraptor_death_S_003.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1,
+    "y": 131
+  },
+  "assets/player_actions/utahraptor_fossil_S_000.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 131,
+    "y": 131
+  },
+  "assets/player_actions/utahraptor_hurt_S_000.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 261,
+    "y": 131
+  },
+  "assets/player_actions/utahraptor_juvenile_S_000.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 391,
+    "y": 131
+  },
+  "assets/player_actions/utahraptor_pounce_S_000.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 521,
+    "y": 131
+  },
+  "assets/player_actions/utahraptor_pounce_S_001.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 651,
+    "y": 131
+  },
+  "assets/player_actions/utahraptor_pounce_S_002.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 781,
+    "y": 131
+  },
+  "assets/player_actions/utahraptor_pounce_S_003.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1,
+    "y": 261
+  },
+  "assets/player_actions/utahraptor_rest_S_000.png": {
+    "anchor": [
+      64,
+      72
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 131,
+    "y": 261
+  }
+}

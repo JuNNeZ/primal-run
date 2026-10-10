@@ -13,7 +13,7 @@
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
       <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space angriber, Shift bruger evne, F spiser, Escape pauser."></canvas>
       <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="hud-chips"><span id="food-chip"></span><span id="dna-chip"></span><span id="zone-chip"></span></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
-      <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div></div></div>
+      <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div></div></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div></main>
       <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space">ANGREB</button><button data-key="ShiftLeft">EVNE</button><button data-key="KeyE">UNDERSØG</button><button data-key="KeyF">SPIS</button></div></div>
       <footer><span><kbd>${['up','left','down','right'].map(keyLabel).join('')}</kbd> Bevæg · <kbd>${keyLabel('attack')}</kbd> Angreb · <kbd>${keyLabel('ability')}</kbd> Evne · <kbd>${keyLabel('sneak')}</kbd> Snig / skjul · <kbd>${keyLabel('eat')}</kbd> Hold for at spise · <kbd>${keyLabel('interact')}</kbd> Undersøg · <kbd>ESC</kbd> Pause</span><span class="save-status"></span></footer>`;
@@ -22,19 +22,36 @@
     const screen = shell.querySelector('.screen'), images = {}, flashes = {}, skins = {}, displayURLs = {}, decomposition = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
     const audio = new root.PrimalAudio(resolve, game.save.settings);
     let ready = false, disposed = false, previousPhase = '', returnPhase = 'menu', last = 0, accumulator = 0, animationId = 0, toastUntil = 0;
+    const sheets = {}, sheetLoads = {}, frameCanvases = {};
     const catalog = root.PrimalAssets, previewMap = C.createMap(0);
     let bindingAction=null,seedInput='',joystick={x:0,y:0},joyPointer=null,joyOrigin={x:0,y:0},padPrevious=[];
     let menuClock=0;const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
     const menuScene=()=>['menu','species','shop','scores','help','guide','achievements','daily','challenges'].includes(game.phase) || game.phase==='settings' && returnPhase==='menu';
     function listen(target, name, callback, options) { target.addEventListener(name, callback, options); cleanups.push(() => target.removeEventListener(name, callback, options)); }
     function toast(text) { shell.querySelector('.toast').textContent = tr(text); toastUntil = performance.now() + 2600; }
-    function displayImageURL(path) { prepareImage(path); return skins[path] ? (displayURLs[path] || (displayURLs[path] = skins[path].toDataURL())) : resolve(path); }
+    function drawAsset(context, image, ...args) {
+      if (!image.sheet) { context.drawImage(image, ...args); return; }
+      const {sheet,x,y,width,height}=image;
+      if(args.length===2) context.drawImage(sheet,x,y,width,height,args[0],args[1],width,height);
+      else if(args.length===4) context.drawImage(sheet,x,y,width,height,...args);
+      else context.drawImage(sheet,x+args[0],y+args[1],...args.slice(2));
+    }
+    function frameCanvas(image) {
+      if (!image.sheet) return image;
+      if (!frameCanvases[image.spritePath]) {
+        const c=document.createElement('canvas');c.width=image.width;c.height=image.height;
+        drawAsset(c.getContext('2d'),image,0,0);c.spritePath=image.spritePath;
+        frameCanvases[image.spritePath]=c;
+      }
+      return frameCanvases[image.spritePath];
+    }
+    function displayImageURL(path) { prepareImage(path); const image=skins[path]||images[path]; return image ? (displayURLs[path]||(displayURLs[path]=frameCanvas(image).toDataURL ? frameCanvas(image).toDataURL() : resolve(path))) : ''; }
     // Sprite frames have lots of empty margin; thumbnails crop to the visible pixels.
     function croppedURL(path){
       const key=path+'#crop';if(displayURLs[key])return displayURLs[key];prepareImage(path);const im=skins[path]||images[path];if(!im)return null;
-      const c=document.createElement('canvas');c.width=im.width;c.height=im.height;const cc=c.getContext('2d');cc.drawImage(im,0,0);if(images[path]&&skins[path]){cc.clearRect(0,0,c.width,c.height);cc.drawImage(images[path],0,0);cc.drawImage(skins[path],0,0);}
+      const c=document.createElement('canvas');c.width=im.width;c.height=im.height;const cc=c.getContext('2d');drawAsset(cc,im,0,0);if(images[path]&&skins[path]){cc.clearRect(0,0,c.width,c.height);drawAsset(cc,images[path],0,0);drawAsset(cc,skins[path],0,0);}
       const d=cc.getImageData(0,0,c.width,c.height).data;let x0=c.width,y0=c.height,x1=0,y1=0;for(let y=0;y<c.height;y++)for(let x=0;x<c.width;x++)if(d[(y*c.width+x)*4+3]>8){if(x<x0)x0=x;if(y<y0)y0=y;if(x>x1)x1=x;if(y>y1)y1=y;}
-      if(x1<x0)return null;const pad=3,w=x1-x0+1+pad*2,h=y1-y0+1+pad*2,side=Math.max(w,h),o=document.createElement('canvas');o.width=o.height=side;o.getContext('2d').drawImage(c,x0-pad,y0-pad,w,h,Math.round((side-w)/2),Math.round((side-h)/2),w,h);
+      if(x1<x0)return null;const pad=3,w=x1-x0+1+pad*2,h=y1-y0+1+pad*2,side=Math.max(w,h),o=document.createElement('canvas');o.width=o.height=side;drawAsset(o.getContext('2d'),c,x0-pad,y0-pad,w,h,Math.round((side-w)/2),Math.round((side-h)/2),w,h);
       return displayURLs[key]=o.toDataURL();
     }
     function imageTag(path, className = '', crop = false) {
@@ -209,7 +226,7 @@
     // Field guide models (FEATURES.guideModels): each seen species walks in place facing east and attacks every ~5 s.
     // Only the frames of discovered species are fetched, on demand (GitHub Pages request budget).
     const guideFrames={},guideBoxes={};
-    function opaqueBox(kind,im){if(guideBoxes[kind])return guideBoxes[kind];const c=document.createElement('canvas');c.width=im.width;c.height=im.height;const x=c.getContext('2d');x.drawImage(im,0,0);const d=x.getImageData(0,0,im.width,im.height).data;let x0=im.width,y0=im.height,x1=-1,y1=-1;for(let y=0;y<im.height;y++)for(let i=0;i<im.width;i++)if(d[(y*im.width+i)*4+3]>16){if(i<x0)x0=i;if(i>x1)x1=i;if(y<y0)y0=y;if(y>y1)y1=y;}return guideBoxes[kind]=x1<0?{x:0,y:0,w:im.width,h:im.height}:{x:x0,y:y0,w:x1-x0+1,h:y1-y0+1};}
+    function opaqueBox(kind,im){if(guideBoxes[kind])return guideBoxes[kind];const c=document.createElement('canvas');c.width=im.width;c.height=im.height;const x=c.getContext('2d');drawAsset(x,im,0,0);const d=x.getImageData(0,0,im.width,im.height).data;let x0=im.width,y0=im.height,x1=-1,y1=-1;for(let y=0;y<im.height;y++)for(let i=0;i<im.width;i++)if(d[(y*im.width+i)*4+3]>16){if(i<x0)x0=i;if(i>x1)x1=i;if(y<y0)y0=y;if(y>y1)y1=y;}return guideBoxes[kind]=x1<0?{x:0,y:0,w:im.width,h:im.height}:{x:x0,y:y0,w:x1-x0+1,h:y1-y0+1};}
     function guideFrameCount(kind,state){const key=kind+':'+state;if(guideFrames[key]===undefined){let n=0;while(n<16&&catalog[enemyFrame(kind,state,'E',n)])n++;guideFrames[key]=n;}return guideFrames[key];}
     function drawGuideModels(now){if(game.phase!=='guide')return;const reduced=reducedMotion.matches||game.save.settings.reducedMotion;
       screen.querySelectorAll('canvas.guide-model').forEach((cv,i)=>{const kind=cv.dataset.kind,dc=cv.getContext('2d'),W=cv.width,H=cv.height;dc.imageSmoothingEnabled=false;dc.clearRect(0,0,W,H);
@@ -221,12 +238,12 @@
         // Scale and place by the visible body of the first walk frame (frames carry wide transparent padding), so every frame shares one anchor.
         const box=opaqueBox(kind,ref),bm=catalog[base],fit=Math.min((H*.7)/box.h,(W*.62)/box.w),scale=fit>=1?Math.min(4,Math.floor(fit)):fit,gy=H*.88,ox=W/2-(box.x+box.w/2-bm.origin[0])*scale,oy=gy-(box.y+box.h-bm.origin[1])*scale;
         dc.fillStyle='#0004';dc.beginPath();dc.ellipse(W/2,gy-2,box.w*scale*.36,5,0,0,Math.PI*2);dc.fill();
-        dc.drawImage(im,Math.round(ox-meta.origin[0]*scale),Math.round(oy-meta.origin[1]*scale),Math.round(im.width*scale),Math.round(im.height*scale));});
+        drawAsset(dc,im,Math.round(ox-meta.origin[0]*scale),Math.round(oy-meta.origin[1]*scale),Math.round(im.width*scale),Math.round(im.height*scale));});
     }
     let endSceneStarted=0,endSceneRun=null;
     function drawEndScene(now){const scene=screen.querySelector('.end-scene');if(!scene)return;const r=game.run;if(endSceneRun!==r){endSceneRun=r;endSceneStarted=now;}const t=(now-endSceneStarted)/1000,dc=scene.getContext('2d');dc.imageSmoothingEnabled=false;dc.fillStyle='#151b19';dc.fillRect(0,0,480,180);dc.fillStyle='#28372a';dc.fillRect(0,130,480,50);
       const reduced=reducedMotion.matches||game.save.settings.reducedMotion,phase=reduced?2:Math.min(3,t),killer=r.result.victory?null:r.lastHit,charge=killer?.mode==='charge',slam=killer?.mode==='slam',style=charge?'stormløb':slam?'slag':'bid';scene.dataset.scene=style;scene.dataset.species=r.species;
-      const paint=(path,x,y,scale=1)=>{prepareImage(path);const im=skins[path]||images[path],meta=catalog[path];if(!im){if(meta)loadImage(path).catch(()=>{});return;}dc.drawImage(im,Math.round(x-meta.origin[0]*scale),Math.round(y-meta.origin[1]*scale),im.width*scale,im.height*scale);};
+      const paint=(path,x,y,scale=1)=>{prepareImage(path);const im=skins[path]||images[path],meta=catalog[path];if(!im){if(meta)loadImage(path).catch(()=>{});return;}drawAsset(dc,im,Math.round(x-meta.origin[0]*scale),Math.round(y-meta.origin[1]*scale),im.width*scale,im.height*scale);};
       const state=r.result.victory?'idle':phase<1?'hurt':'death',frame=state==='death'?Math.min(5,Math.floor((phase-1)*8)):state==='hurt'?0:Math.floor(phase*4)%4;paint(C.playerFrame(r.species,state,'W',Math.max(0,frame)),310,100,['tyrannosaurus','deinosuchus'].includes(r.species)?2:1);
       if(killer){const state=phase<1?'run':phase<1.5?'attack':'idle',frame=state==='idle'?0:Math.min(5,Math.floor((phase%1)*6));paint(enemyFrame(killer.kind,state,'E',frame),phase<1?70+phase*(charge?170:140):charge?240:210,slam?110:100,['tyrannosaurus','deinosuchus'].includes(killer.kind)?2:1);}
     }
@@ -234,29 +251,82 @@
     function prepareImage(path){if(prepared.has(path)||!images[path])return;prepared.add(path);const image=images[path];
         const species=Object.keys(C.SPECIES_COLORS).find(id=>path.includes('/'+id+'_'));
         if(species&&!path.startsWith('assets/corpses/')) {
-          const layer=document.createElement('canvas');layer.width=image.width;layer.height=image.height;const lc=layer.getContext('2d');lc.drawImage(image,0,0);const pixels=lc.getImageData(0,0,image.width,image.height),mapping=C.SPECIES_COLORS[species];
+          const layer=document.createElement('canvas');layer.width=image.width;layer.height=image.height;const lc=layer.getContext('2d');drawAsset(lc,image,0,0);const pixels=lc.getImageData(0,0,image.width,image.height),mapping=C.SPECIES_COLORS[species];
           for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[pixels.data[i],pixels.data[i+1],pixels.data[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('');const color=mapping[key];if(color){pixels.data[i]=parseInt(color.slice(0,2),16);pixels.data[i+1]=parseInt(color.slice(2,4),16);pixels.data[i+2]=parseInt(color.slice(4,6),16);}}
           lc.putImageData(pixels,0,0);skins[path]=layer;
         }
         if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/') || path.startsWith('assets/enemy_full/') || path.startsWith('assets/player_full/') || path.startsWith('assets/species_attacks/') || path.startsWith('assets/behavior/') || path.startsWith('assets/behavior_native/') || path.startsWith('assets/behavior_injured/'))) {
           const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
-          const tintCtx = tint.getContext('2d'); tintCtx.drawImage(image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';
+          const tintCtx = tint.getContext('2d'); drawAsset(tintCtx,image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';
           tintCtx.fillStyle = '#fff1c9'; tintCtx.fillRect(0, 0, tint.width, tint.height); flashes[path] = tint;
         }
 
     }
     const npcVariants=new Map();
-    function npcVariant(path,variant){const key=path+':'+variant;if(npcVariants.has(key))return npcVariants.get(key);const source=skins[path]||images[path];if(!source)return null;const layer=document.createElement('canvas');layer.width=source.width;layer.height=source.height;const lc=layer.getContext('2d');lc.drawImage(source,0,0);const pixels=lc.getImageData(0,0,layer.width,layer.height),swaps={male:{'799447':'a8b15b','69a4a0':'3c7180','b98252':'d4a36c','929387':'626861'},elite:{'799447':'de954a','69a4a0':'e9b75a','929387':'de954a','b98252':'e9b75a'},fishKing:{'799447':'3c7180','69a4a0':'a2d4c1','929387':'2466a0','b98252':'69a4a0'}};
+    function npcVariant(path,variant){const key=path+':'+variant;if(npcVariants.has(key))return npcVariants.get(key);const source=skins[path]||images[path];if(!source)return null;const layer=document.createElement('canvas');layer.width=source.width;layer.height=source.height;const lc=layer.getContext('2d');drawAsset(lc,source,0,0);const pixels=lc.getImageData(0,0,layer.width,layer.height),swaps={male:{'799447':'a8b15b','69a4a0':'3c7180','b98252':'d4a36c','929387':'626861'},elite:{'799447':'de954a','69a4a0':'e9b75a','929387':'de954a','b98252':'e9b75a'},fishKing:{'799447':'3c7180','69a4a0':'a2d4c1','929387':'2466a0','b98252':'69a4a0'}};
       for(let i=0;i<pixels.data.length;i+=4){if(!pixels.data[i+3])continue;const rgb=[...pixels.data.slice(i,i+3)],key=rgb.map(v=>v.toString(16).padStart(2,'0')).join('');let value=swaps[variant]?.[key];if(variant==='albino'&&Math.max(...rgb)>55)value=Math.max(...rgb)>145?'e8ece1':'bab8a2';if(value)for(let j=0;j<3;j++)pixels.data[i+j]=parseInt(value.slice(j*2,j*2+2),16);}
       lc.putImageData(pixels,0,0);npcVariants.set(key,layer);if(npcVariants.size>128)npcVariants.delete(npcVariants.keys().next().value);return layer;
     }
     function sprite(path, x, y, alpha = 1, flash = false, rotation = 0, scale = 1, variant=null) {
       prepareImage(path);const image = flash ? flashes[path] : images[path], meta = catalog[path]; if(!image&&meta){loadImage(path).catch(()=>{});return;}if(!meta)return;
       ctx.globalAlpha = alpha;
-      const paint=(img,dx,dy)=>{if(scale===1)ctx.drawImage(img,dx,dy);else ctx.drawImage(img,dx,dy,img.width*scale,img.height*scale);};
+      const paint=(img,dx,dy)=>{if(scale===1)drawAsset(ctx,img,dx,dy);else drawAsset(ctx,img,dx,dy,img.width*scale,img.height*scale);};
       if(rotation){ctx.save();ctx.translate(Math.round(x),Math.round(y));ctx.rotate(rotation);paint(image,-meta.origin[0]*scale,-meta.origin[1]*scale);if(!flash&&(variant?npcVariant(path,variant):skins[path]))paint(variant?npcVariant(path,variant):skins[path],-meta.origin[0]*scale,-meta.origin[1]*scale);ctx.restore();}
       else {paint(image,Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);if(!flash&&(variant?npcVariant(path,variant):skins[path]))paint(variant?npcVariant(path,variant):skins[path],Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);}
       ctx.globalAlpha = 1;
+    }
+    function presentationReady(path) {
+      if (!C.FEATURES.presentationArt || !catalog[path]) return false;
+      if (!images[path]) { loadImage(path).catch(() => {}); return false; }
+      return true;
+    }
+    function presentation(path, x, y, alpha = 1) {
+      if (!presentationReady(path)) return false;
+      sprite(path, Math.round(x), Math.round(y), alpha);
+      return true;
+    }
+    function drawApprovedCrossing(c) {
+      const path = 'assets/ground/basalt_crossing_' + ((Math.floor(c.x) ^ Math.floor(c.y)) & 1) + '.png';
+      if (!presentationReady(path)) return false;
+      // Keep the existing visible crossing footprint; neither collision nor lava geometry changes.
+      ctx.save(); ctx.beginPath(); ctx.ellipse(c.x, c.y, 70, 52, 0, 0, Math.PI * 2);
+      ctx.fillStyle = '#3b4144'; ctx.fill(); ctx.clip();
+      presentation(path, c.x, c.y); ctx.restore(); return true;
+    }
+    function drawApprovedAsh(c, r) {
+      const remaining = c.until - r.seconds, elapsed = Math.max(0, 3 - remaining);
+      const frame = calm() ? 1 : Math.min(3, Math.floor(elapsed / 3 * 4));
+      const path = 'assets/effects/ash_cloud_' + String(frame).padStart(3, '0') + '.png';
+      if (!presentationReady(path)) return false;
+      // Three native puffs cover the zone without stretching the approved pixel clusters.
+      ctx.save(); ctx.beginPath(); ctx.arc(c.x, c.y, c.radius, 0, Math.PI * 2); ctx.clip();
+      for (const [dx, dy] of [[-36, -10], [28, -20], [0, 20]])
+        presentation(path, c.x + dx, c.y + dy, .65 * Math.min(1, remaining));
+      ctx.restore(); return true;
+    }
+    function drawApprovedDryBank(pond) {
+      const paths = Array.from({length: 4}, (_, n) => 'assets/ground/dried_mud_edge_N_' + n + '.png');
+      if (!paths.map(presentationReady).every(Boolean)) return false;
+      const rx = pond.baseRadius + 10, ry = pond.baseRadius * .7 + 8;
+      ctx.save(); ctx.beginPath(); ctx.ellipse(pond.x, pond.y, rx, ry, 0, 0, Math.PI * 2); ctx.clip();
+      // Only the authored north-facing edge is supplied. Other sides retain the existing bank.
+      for (let x = Math.floor((pond.x - rx) / 32) * 32; x < pond.x + rx; x += 32) {
+        const dx = Math.max(-1, Math.min(1, (x + 16 - pond.x) / rx));
+        const y = Math.round(pond.y - ry * Math.sqrt(1 - dx * dx) - 9);
+        const variant = ((Math.floor(x / 32) + Math.floor(pond.y / 32)) % 4 + 4) % 4;
+        presentation(paths[variant], x + 16, y + 16);
+      }
+      ctx.restore(); return true;
+    }
+    function drawTimeIcon(r) {
+      const icon = shell.querySelector('.time-icon'), glyph = shell.querySelector('.time-glyph');
+      const path = 'assets/ui/time_' + (r.night ? 'moon' : 'sun') + '.png';
+      shell.querySelector('.time-value').textContent = timeLabel(r.seconds);
+      glyph.textContent = C.FEATURES.dayNight ? (r.night ? '☾ ' : '☀ ') : '';
+      const loaded = C.FEATURES.dayNight && presentationReady(path);
+      icon.hidden = !loaded; glyph.hidden = loaded;
+      if (loaded) { const dc = icon.getContext('2d'); dc.imageSmoothingEnabled = false;
+        dc.clearRect(0, 0, 16, 16); drawAsset(dc,images[path], 0, 0); icon.dataset.sprite = path; }
     }
     function insect(p,time) {
       if(game.save.settings.reducedMotion||reducedMotion.matches)return;
@@ -342,10 +412,69 @@
     }
     function texturedFill(tile, color, alpha = .18) {
       ctx.fillStyle = color; ctx.fill();
-      if (!backgrounds.has(tile)){const tileImage=images['assets/tiles/' + tile + '.png'];if(!tileImage){loadImage('assets/tiles/' + tile + '.png');}else backgrounds.set(tile, ctx.createPattern(tileImage, 'repeat'));}
+      if (!backgrounds.has(tile)){const tileImage=images['assets/tiles/' + tile + '.png'];if(!tileImage){loadImage('assets/tiles/' + tile + '.png');}else backgrounds.set(tile, ctx.createPattern(frameCanvas(tileImage), 'repeat'));}
       if(backgrounds.has(tile)){ctx.fillStyle = backgrounds.get(tile); ctx.globalAlpha = alpha; ctx.fill(); ctx.globalAlpha = 1;}
     }
     const groundCache=new Map();
+    const GROUND_FAMILIES=['forest','river','rocks','volcano'];
+    const groundPatchCache=new Map();
+    function groundHash(seed,x,y){let h=(seed^Math.imul(x+71,73856093)^Math.imul(y+29,19349663))>>>0;h=Math.imul(h^(h>>>16),2246822519)>>>0;return (h^(h>>>13))>>>0;}
+    function nativeGroundReady(stage){
+      if(!C.FEATURES.nativeGround)return false;
+      const families=new Set([GROUND_FAMILIES[stage],'river']);let loaded=true;
+      for(const family of families)for(let i=0;i<4;i++){
+        const path='assets/ground/'+family+'_'+i+'.png';
+        if(!catalog[path])return false;
+        if(!images[path]){loaded=false;loadImage(path).catch(()=>{});}
+      }
+      return loaded;
+    }
+    function paintGroundCells(context,family,seed,x0,y0,width,height){
+      context.imageSmoothingEnabled=false;
+      for(let y=Math.floor(y0/32)*32;y<y0+height;y+=32)for(let x=Math.floor(x0/32)*32;x<x0+width;x+=32){
+        const variant=groundHash(seed,Math.floor(x/32),Math.floor(y/32))%4;
+        drawAsset(context,images['assets/ground/'+family+'_'+variant+'.png'],x-x0,y-y0);
+      }
+    }
+    function nativeGround(stage,map,view){
+      if(!nativeGroundReady(stage)){canvas.dataset.nativeGround='false';return false;}
+      canvas.dataset.nativeGround='true';
+      for(let gy=Math.floor(view.y/128);gy<=Math.floor((view.y+canvas.height)/128);gy++)for(let gx=Math.floor(view.x/128);gx<=Math.floor((view.x+canvas.width)/128);gx++){
+        const key='native:'+map.seed+':'+stage+':'+gx+':'+gy;let layer=groundCache.get(key);
+        if(!layer){layer=document.createElement('canvas');layer.width=layer.height=128;
+          layer.groundFamily=GROUND_FAMILIES[stage];const lc=layer.getContext('2d');lc.fillStyle=['#28372a','#674333','#626861','#3b4144'][stage];lc.fillRect(0,0,128,128);lc.globalAlpha=.38;paintGroundCells(lc,GROUND_FAMILIES[stage],map.seed,gx*128,gy*128,128,128);lc.globalAlpha=1;
+          groundCache.set(key,layer);if(groundCache.size>128)groundCache.delete(groundCache.keys().next().value);
+        }
+        drawAsset(ctx,layer,gx*128,gy*128);
+      }
+      return true;
+    }
+    function pixelGroundPatch(p,stage,kind='mud'){
+      if(!nativeGroundReady(stage))return false;
+      const seed=game.run?.map.seed||previewMap.seed;
+      const x0=Math.floor((p.x-p.rx)/2)*2,y0=Math.floor((p.y-p.ry)/2)*2;
+      const w=Math.ceil((p.x+p.rx-x0)/2)*2,h=Math.ceil((p.y+p.ry-y0)/2)*2;
+      const key=[seed,p.x,p.y,p.rx,p.ry,kind].join(':');let layer=groundPatchCache.get(key);
+      if(!layer){
+        layer=document.createElement('canvas');layer.width=w;layer.height=h;layer.groundPatch=kind;
+        const lc=layer.getContext('2d');lc.fillStyle=kind==='dry'?'#8d6042':'#443027';lc.fillRect(0,0,w,h);
+        // Native tile detail at restrained contrast; source PNGs are untouched.
+        lc.globalAlpha=kind==='dry'?.52:.60;paintGroundCells(lc,'river',seed^13477,x0,y0,w,h);lc.globalAlpha=1;
+        const image=lc.getImageData(0,0,w,h),data=image.data;
+        for(let y=0;y<h;y+=2)for(let x=0;x<w;x+=2){
+          const wx=x0+x+1,wy=y0+y+1,q=((wx-p.x)/p.rx)**2+((wy-p.y)/p.ry)**2;
+          // Two-pixel steps and eight-pixel edge clusters break the outline inside the physical ellipse.
+          const edge=.90+(groundHash(seed,Math.floor(wx/8),Math.floor(wy/8))%256/255-.5)*.18;
+          const visible=q<edge;
+          if(!visible)for(let dy=0;dy<2&&y+dy<h;dy++)for(let dx=0;dx<2&&x+dx<w;dx++){
+            const i=((y+dy)*w+x+dx)*4;data[i]=data[i+1]=data[i+2]=data[i+3]=0;
+          }
+        }
+        lc.putImageData(image,0,0);groundPatchCache.set(key,layer);
+        if(groundPatchCache.size>64)groundPatchCache.delete(groundPatchCache.keys().next().value);
+      }
+      drawAsset(ctx,layer,x0,y0);return true;
+    }
     function groundDetails(stage,map,view){
       for(let gx=Math.floor(view.x/128);gx<=Math.floor((view.x+canvas.width)/128);gx++)for(let gy=Math.floor(view.y/128);gy<=Math.floor((view.y+canvas.height)/128);gy++){
         const key=map.seed+':'+stage+':'+gx+':'+gy;let layer=groundCache.get(key);
@@ -353,7 +482,7 @@
           const colors=[['#3f5030','#586d38','#674333','#8d6042'],['#bab8a2','#d4a36c','#929387','#674333'],['#3b4144','#929387','#bab8a2','#443027'],['#151b19','#626861','#674333','#54282d']][stage];
           for(let i=0;i<65;i++){const x=Math.floor(random()*124),y=Math.floor(random()*124),wx=gx*128+x,wy=gy*128+y;if((stage===1&&C.riverDistance(map,{x:wx,y:wy})<58)||(stage===3&&C.riverDistance(map,{x:wx,y:wy})<22))continue;lc.fillStyle=colors[Math.floor(random()*colors.length)];const size=1+Math.floor(random()*3);lc.fillRect(x,y,size,1);if(i%7===0){lc.fillRect(x+size,y+1,size,1);lc.fillRect(x+size*2,y+2,size,1);}if(i%11===0){lc.fillStyle=colors[1];lc.fillRect(x,y,3,2);lc.fillStyle=colors[0];lc.fillRect(x+1,y+2,3,1);}}
           groundCache.set(key,layer);if(groundCache.size>128)groundCache.delete(groundCache.keys().next().value);
-        }ctx.drawImage(layer,gx*128,gy*128);
+        }drawAsset(ctx,layer,gx*128,gy*128);
       }
     }
     // Soft per-zone ground tint, built once per map at 1/24 scale and drawn smoothed.
@@ -367,9 +496,11 @@
         lc.putImageData(img,0,0);zoneTintCache.set(map,layer);}
       ctx.save();ctx.globalAlpha=.32;ctx.imageSmoothingEnabled=true;const scale=map.width/layer.width;
       const sx=Math.max(0,Math.floor(view.x/scale)),sy=Math.max(0,Math.floor(view.y/scale)),sw=Math.min(layer.width-sx,Math.ceil(canvas.width/scale)+2),sh=Math.min(layer.height-sy,Math.ceil(canvas.height/scale)+2);
-      if(sw>0&&sh>0)ctx.drawImage(layer,sx,sy,sw,sh,sx*scale,sy*scale,sw*scale,sh*scale);ctx.restore();
+      if(sw>0&&sh>0)drawAsset(ctx,layer,sx,sy,sw,sh,sx*scale,sy*scale,sw*scale,sh*scale);ctx.restore();
     }
     function background(stage, map, view) {
+      const native=nativeGround(stage,map,view);
+      if(!native){
       ctx.beginPath(); ctx.rect(view.x, view.y, canvas.width, canvas.height);
       texturedFill(C.STAGES[stage].tile, ['#28372a', '#d4a36c', '#626861', '#3b4144'][stage], .28);
       zoneTint(stage,map,view);
@@ -379,7 +510,8 @@
         blob(region.x, region.y, region.radius, region.radius * .7, region.seed); ctx.save(); ctx.globalAlpha = .32; ctx.fillStyle = ['#3f5030', '#586d38', '#674333', '#54282d'][stage]; ctx.fill(); ctx.restore(); /* subtle natural ground patches */
 
       }
-      const waterTime=game.run?game.run.seconds:menuClock;const tiledWater=C.FEATURES.waterTiles&&catalog['assets/water_transitions/shore_soil_15.png'];canvas.dataset.waterTiles=tiledWater?'true':'false';if(tiledWater)drawWaterTiles(stage,map,view);for(const pond of map.ponds||[])drawPond(pond,waterTime,tiledWater);
+      }
+      const waterTime=game.run?game.run.seconds:menuClock;const tiledWater=C.FEATURES.waterTiles&&catalog['assets/water_transitions/shore_soil_15.png'];canvas.dataset.waterTiles=tiledWater?'true':'false';for(const pond of map.ponds||[])drawDryBank(pond,stage);if(tiledWater)drawWaterTiles(stage,map,view);for(const pond of map.ponds||[])drawPond(pond,waterTime,tiledWater);
       ctx.lineCap = 'round'; ctx.lineJoin = 'round';
       if (stage === 1) {
         drawRiver(map,waterTime,tiledWater);
@@ -387,15 +519,16 @@
       if (stage === 3) {
         trace(map.river); ctx.strokeStyle = '#3b4144'; ctx.lineWidth = 58; ctx.stroke(); ctx.strokeStyle = '#54282d'; ctx.lineWidth = 42; ctx.stroke(); ctx.strokeStyle = '#c6663c'; ctx.lineWidth = 26; ctx.stroke();
         ctx.save(); ctx.globalAlpha = calm() ? .8 : .55 + .35 * Math.sin(waterTime * 3); ctx.strokeStyle = '#de954a'; ctx.lineWidth = 10; ctx.stroke(); ctx.globalAlpha = .9; ctx.strokeStyle = '#ded392'; ctx.lineWidth = 3; ctx.setLineDash([12, 18]); ctx.lineDashOffset = calm() ? 0 : -waterTime * 20; ctx.stroke(); ctx.restore();
-        // B1b basalt crossings: procedural placeholder (no sprite yet, see MISSING_SPRITES.md), 70 px safe radius as in core.
+        // B1b basalt crossings: approved native art, with the original procedural fallback.
         for (const c of map.lavaCrossings || []) {
+          if (drawApprovedCrossing(c)) continue;
           ctx.save(); ctx.translate(c.x, c.y); ctx.beginPath(); ctx.ellipse(0, 0, 70, 52, 0, 0, Math.PI * 2); ctx.fillStyle = '#3b4144'; ctx.fill(); ctx.strokeStyle = '#151b19'; ctx.lineWidth = 3; ctx.stroke();
           let seed = (c.x * 31 + c.y * 17) >>> 0; const rnd = () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
           for (let i = 0; i < 16; i++) { const a = rnd() * Math.PI * 2, d = Math.sqrt(rnd()) * 50, k = 7 + rnd() * 6; ctx.beginPath(); for (let j = 0; j < 6; j++) { const t = j / 6 * Math.PI * 2 + a; ctx.lineTo(Math.cos(a) * d + Math.cos(t) * k, Math.sin(a) * d * .72 + Math.sin(t) * k * .7); } ctx.closePath(); ctx.fillStyle = i % 3 ? '#626861' : '#929387'; ctx.fill(); ctx.strokeStyle = '#151b19'; ctx.lineWidth = 1; ctx.stroke(); }
           ctx.restore();
         }
       }
-      for(const p of map.mud||[]){ctx.beginPath();ctx.ellipse(p.x,p.y,p.rx,p.ry,0,0,Math.PI*2);texturedFill('dirt','#674333',.18);ctx.strokeStyle='#913b3266';ctx.lineWidth=2;ctx.stroke();}
+      for(const p of map.mud||[]){if(pixelGroundPatch(p,stage))continue;ctx.beginPath();ctx.ellipse(p.x,p.y,p.rx,p.ry,0,0,Math.PI*2);texturedFill('dirt','#674333',.18);ctx.strokeStyle='#913b3266';ctx.lineWidth=2;ctx.stroke();}
       ctx.fillStyle = '#151b1966'; ctx.fillRect(0, 0, map.width, 76); ctx.fillRect(0, map.height - 42, map.width, 42); ctx.fillRect(0, 0, 42, map.height); ctx.fillRect(map.width - 42, 0, 42, map.height);
     }
     function enemyLabelOffset(e){return (e.kind==='compy'?20:72)*(e.visualScale||1)+12;}
@@ -415,7 +548,7 @@
     function drawPortrait(r){
       const pc=shell.querySelector('.hud-portrait'),p=pc.getContext('2d'),state=r.hurt>0?'hurt':r.eating?'eat':r.attack||r.pounce>0?'fight':r.hidden||r.concealTime>0?'sneak':'idle',frame=game.save.settings.reducedMotion||reducedMotion.matches?0:Math.floor(r.seconds*4)%4,path='assets/avatars/'+r.species+'_'+state+'_'+String(frame).padStart(3,'0')+'.png';prepareImage(path);const im=skins[path]||images[path],meta=catalog[path];pc.dataset.species=r.species;pc.dataset.state=state;pc.dataset.sprite=path;if(!im&&meta)loadImage(path).catch(()=>{});
       p.clearRect(0,0,64,64);p.fillStyle='#101b16';p.beginPath();p.arc(32,32,30,0,Math.PI*2);p.fill();
-      if(im&&meta){prepareImage(path);p.save();p.beginPath();p.arc(32,32,27,0,Math.PI*2);p.clip();p.imageSmoothingEnabled=false;p.drawImage(im,0,0);p.restore();}
+      if(im&&meta){prepareImage(path);p.save();p.beginPath();p.arc(32,32,27,0,Math.PI*2);p.clip();p.imageSmoothingEnabled=false;drawAsset(p,im,0,0);p.restore();}
       p.lineWidth=4;p.strokeStyle='#28372a';p.beginPath();p.arc(32,32,29,0,Math.PI*2);p.stroke();
       p.strokeStyle='#c3a35c';p.beginPath();p.arc(32,32,29,-Math.PI/2,-Math.PI/2+Math.PI*2*Math.min(1,r.xp/r.nextXP));p.stroke();
       p.fillStyle='#c3a35c';p.beginPath();p.arc(52,52,10,0,Math.PI*2);p.fill();p.fillStyle='#15221a';p.font='bold 11px monospace';p.textAlign='center';p.textBaseline='middle';p.fillText(String(r.level),52,53);
@@ -473,7 +606,7 @@
     }
     // ===== Overhaul phase 5: water, shadows, ambience, telegraphs, attack effects =====
     const calm=()=>game.save.settings.reducedMotion||reducedMotion.matches;
-    function tilePattern(tile){if(!backgrounds.has(tile)){const im=images['assets/tiles/'+tile+'.png'];if(!im){loadImage('assets/tiles/'+tile+'.png');return null;}backgrounds.set(tile,ctx.createPattern(im,'repeat'));}return backgrounds.get(tile);}
+    function tilePattern(tile){if(!backgrounds.has(tile)){const im=images['assets/tiles/'+tile+'.png'];if(!im){loadImage('assets/tiles/'+tile+'.png');return null;}backgrounds.set(tile,ctx.createPattern(frameCanvas(im),'repeat'));}return backgrounds.get(tile);}
     // Shared world-grid corners classify the same water/deep-water geometry as movement.
     // Cache vertices per map; render only viewport tiles, not the whole map each frame.
     const waterVertexCache=new WeakMap();
@@ -512,12 +645,17 @@
         ctx.restore();
       }
     }
-    function drawPond(pond,time,tiled=false){
+    function drawDryBank(pond,stage){
       if(pond.baseRadius&&pond.baseRadius>pond.radius+1){ // B4 drought: cracked dry mud where the water was (procedural)
+        if(!pixelGroundPatch({x:pond.x,y:pond.y,rx:pond.baseRadius+10,ry:pond.baseRadius*.7+8},stage,'dry')){
         ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.baseRadius+10,pond.baseRadius*.7+8,0,0,Math.PI*2);ctx.fillStyle='#8d6042';ctx.fill();
         ctx.save();ctx.strokeStyle='#674333';ctx.lineWidth=1.5;let seed=(pond.x*13+pond.y*7)>>>0;const rnd=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
         ctx.beginPath();for(let i=0;i<14;i++){const a=rnd()*Math.PI*2,r0=pond.radius*(.9+rnd()*.1),r1=pond.baseRadius*(.85+rnd()*.2);ctx.moveTo(pond.x+Math.cos(a)*r0,pond.y+Math.sin(a)*r0*.7);ctx.lineTo(pond.x+Math.cos(a+.15)*r1,pond.y+Math.sin(a+.15)*r1*.7);}ctx.stroke();ctx.restore();
+        }
+        drawApprovedDryBank(pond);
       }
+    }
+    function drawPond(pond,time,tiled=false){
       if(!tiled){
       ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius+10,pond.radius*.7+8,0,0,Math.PI*2);ctx.fillStyle='#b98252';ctx.fill();
       ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius,pond.radius*.7,0,0,Math.PI*2);ctx.fillStyle='#69a4a0';ctx.fill();
@@ -549,7 +687,7 @@
       if(C.FEATURES.dayNight&&r.darkness>0){ // B2 night: procedural darkening with a soft light around the player (night palette = A6 asset)
         const px=r.player.x-r.view.x,py=r.player.y-r.view.y,inner=110,outer=Math.max(w,h)*.55,g=ctx.createRadialGradient(px,py,inner,px,py,outer);
         g.addColorStop(0,'rgba(21,27,25,0)');g.addColorStop(1,'rgba(21,27,25,'+(.62*r.darkness).toFixed(3)+')');
-        ctx.save();ctx.fillStyle=g;ctx.fillRect(0,0,w,h);ctx.globalAlpha=.18*r.darkness;ctx.globalCompositeOperation='multiply';ctx.fillStyle='#3c7180';ctx.fillRect(0,0,w,h);ctx.restore();
+        ctx.save();ctx.globalCompositeOperation='multiply';ctx.fillStyle=g;ctx.fillRect(0,0,w,h);ctx.globalAlpha=.18*r.darkness;ctx.fillStyle='#3c7180';ctx.fillRect(0,0,w,h);ctx.restore();
       }
       if(!calm()){
         ctx.save();
@@ -664,7 +802,7 @@
         if (o.player && r.jonas) { ctx.fillStyle = '#e9b75a'; const x = Math.round(o.x), y = Math.round(o.y) - 46; ctx.fillRect(x - 9, y, 18, 5); ctx.fillRect(x - 9, y - 5, 4, 5); ctx.fillRect(x - 2, y - 7, 4, 7); ctx.fillRect(x + 5, y - 5, 4, 5); }
         // Less text: names only for special animals or nearby ones; behaviour as a small icon.
         if (o.raptor) { const a = o.raptor, d = r ? Math.hypot(a.x - r.player.x, a.y - r.player.y) : 1e9;
-          if (a.ally) { ctx.save(); ctx.fillStyle = '#a2d4c1'; ctx.strokeStyle = '#151b19'; ctx.lineWidth = 2; const mx = Math.round(a.x), my = Math.round(a.y) - 46; ctx.beginPath(); ctx.moveTo(mx, my - 5); ctx.lineTo(mx + 5, my); ctx.lineTo(mx, my + 5); ctx.lineTo(mx - 5, my); ctx.closePath(); ctx.stroke(); ctx.fill(); ctx.restore();
+          if (a.ally) { if (!presentation('assets/ui/raptor_ally.png', a.x, a.y - 46)) { ctx.save(); ctx.fillStyle = '#a2d4c1'; ctx.strokeStyle = '#151b19'; ctx.lineWidth = 2; const mx = Math.round(a.x), my = Math.round(a.y) - 46; ctx.beginPath(); ctx.moveTo(mx, my - 5); ctx.lineTo(mx + 5, my); ctx.lineTo(mx, my + 5); ctx.lineTo(mx - 5, my); ctx.closePath(); ctx.stroke(); ctx.fill(); ctx.restore(); }
             ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(a.x) - 14, Math.round(a.y) + 14, 28, 3); ctx.fillStyle = a.mode === 'flee' ? '#de954a' : '#a2d4c1'; ctx.fillRect(Math.round(a.x) - 14, Math.round(a.y) + 14, Math.round(28 * a.hp / a.maxHP), 3); }
           else if (d < 300) { const fed = r.pickups.some(p => p.corpseId !== undefined && p.value > 0 && Math.hypot(p.x - a.x, p.y - a.y) < C.PACK.meatReach); label(d < 160 && fed ? 'VILD RAPTOR · ' + keyLabel('interact') + ' FODR' : d < 160 ? 'VILD RAPTOR · LÆG KØD HER' : 'VILD RAPTOR', a.x, a.y - 44, '#a2d4c1'); } }
         if (o.enemy) { const e = o.enemy, near = r && Math.hypot(e.x - r.player.x, e.y - r.player.y) < 230, special = e.boss || e.elite || e.rare || e.miniboss;
@@ -676,11 +814,11 @@
           } else if (o.enemy.mode === 'broken') label('BRUDT · ANGRIB NU', o.x, o.y - enemyLabelOffset(o.enemy) - 18, '#dfbc52');
           else if (o.enemy.mode === 'enrage') label('RASERI · FASE 2', o.x, o.y - enemyLabelOffset(o.enemy) - 18, '#de954a');
         }
-        if(o.corpse&&o.age>7&&!o.path.startsWith('assets/corpses/')&&images[o.path]){if(!decomposition[o.path]){const layer=document.createElement('canvas'),im=images[o.path];layer.width=im.width;layer.height=im.height;const lc=layer.getContext('2d');lc.drawImage(im,0,0);lc.globalCompositeOperation='source-in';lc.fillStyle='#151b19';lc.fillRect(0,0,layer.width,layer.height);decomposition[o.path]=layer;}const im=decomposition[o.path],scale=o.visualScale||1,meta=catalog[o.path];ctx.globalAlpha=alpha*Math.min(.65,(o.age-7)/8);ctx.drawImage(im,Math.round(o.x)-meta.origin[0]*scale,Math.round(o.y)-meta.origin[1]*scale,im.width*scale,im.height*scale);ctx.globalAlpha=1;}
+        if(o.corpse&&o.age>7&&!o.path.startsWith('assets/corpses/')&&images[o.path]){if(!decomposition[o.path]){const layer=document.createElement('canvas'),im=images[o.path];layer.width=im.width;layer.height=im.height;const lc=layer.getContext('2d');drawAsset(lc,im,0,0);lc.globalCompositeOperation='source-in';lc.fillStyle='#151b19';lc.fillRect(0,0,layer.width,layer.height);decomposition[o.path]=layer;}const im=decomposition[o.path],scale=o.visualScale||1,meta=catalog[o.path];ctx.globalAlpha=alpha*Math.min(.65,(o.age-7)/8);drawAsset(ctx,im,Math.round(o.x)-meta.origin[0]*scale,Math.round(o.y)-meta.origin[1]*scale,im.width*scale,im.height*scale);ctx.globalAlpha=1;}
         if (o.enemy && o.enemy.hit > 0) sprite(o.path, o.x, o.y, .7 * o.enemy.hit / .15, true, o.rotation, o.visualScale || 1);
         if (o.enemy && o.enemy.hp < o.enemy.maxHP && !o.enemy.boss) { ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, 40, 4); ctx.fillStyle = '#c45f45'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, Math.round(40 * o.enemy.hp / o.enemy.maxHP), 4); }
       }
-      if(r)for(const c of r.ashClouds||[])if(c.until>r.seconds){const fade=Math.min(1,c.until-r.seconds);ctx.save();ctx.globalAlpha=.32*fade;ctx.fillStyle='#626861';for(let i=0;i<5;i++){const a=i*1.26+c.x*.01;ctx.beginPath();ctx.arc(c.x+Math.cos(a)*c.radius*.35,c.y+Math.sin(a)*c.radius*.25,c.radius*.55,0,Math.PI*2);ctx.fill();}ctx.restore();} // B1c ash clouds (procedural)
+      if(r)for(const c of r.ashClouds||[])if(c.until>r.seconds){if(drawApprovedAsh(c,r))continue;const fade=Math.min(1,c.until-r.seconds);ctx.save();ctx.globalAlpha=.32*fade;ctx.fillStyle='#626861';for(let i=0;i<5;i++){const a=i*1.26+c.x*.01;ctx.beginPath();ctx.arc(c.x+Math.cos(a)*c.radius*.35,c.y+Math.sin(a)*c.radius*.25,c.radius*.55,0,Math.PI*2);ctx.fill();}ctx.restore();} // B1c native ash clouds, with procedural fallback.
       if(r)drawTelegraphs(r);
       if(r&&C.PLAYER_SPECIES[r.species].diet!=='herbivore')for(const food of r.pickups.filter(p=>p.corpseId!==undefined)){const corpse=r.corpses.find(c=>c.id===food.corpseId);if(corpse)label(C.MEAT_RARITIES[food.rarity].symbol+' '+food.value+(corpse.age>=7?' · FORDÆRVER':' · FRISK')+' · '+keyLabel('eat')+' SPIS',food.x,food.y+enemyLabelOffset(corpse),C.MEAT_RARITIES[food.rarity].color);}
       for(const ambient of map.ambience || [])if(ambient.x>view.x-40&&ambient.x<view.x+canvas.width+40&&ambient.y>view.y-40&&ambient.y<view.y+canvas.height+40)insect(ambient,r?r.seconds:0);
@@ -694,7 +832,7 @@
           attackFX(r.species, r.player.x, r.player.y, dx, dy, 1 - r.bite / .12, r.species === 'tyrannosaurus' ? 1.6 : r.species === 'compy' ? .6 : 1);
         }
         for (const e of r.enemies) if ((e.mode === 'bite' || e.mode === 'slam') && e.attackHit && e.timer > 0) attackFX(e.kind, e.x, e.y, e.facingX, e.facingY, Math.min(1, 1 - e.timer / .18), (e.visualScale || 1) * (e.kind === 'compy' ? .6 : 1));
-        for (const p of (game.save.settings.reducedMotion||reducedMotion.matches?[]:r.particles)) { ctx.fillStyle = p.kind === 'dust' ? '#ded392' : p.kind === 'bubble' ? '#a2d4c1' : p.kind === 'ash' ? '#929387' : '#c6663c'; ctx.globalAlpha = Math.min(1, p.life / p.maxLife * 1.5); ctx.fillRect(Math.round(p.x), Math.round(p.y), p.size, p.size); } ctx.globalAlpha = 1;
+        for (const p of (game.save.settings.reducedMotion||reducedMotion.matches?[]:r.particles)) { if (p.kind === 'bubble' && presentation('assets/effects/bubble_' + String(Math.min(3, Math.floor((1-p.life/p.maxLife)*4))).padStart(3,'0') + '.png', p.x, p.y, Math.min(1,p.life/p.maxLife*1.5))) continue; ctx.fillStyle = p.kind === 'dust' ? '#ded392' : p.kind === 'bubble' ? '#a2d4c1' : p.kind === 'ash' ? '#929387' : '#c6663c'; ctx.globalAlpha = Math.min(1, p.life / p.maxLife * 1.5); ctx.fillRect(Math.round(p.x), Math.round(p.y), p.size, p.size); } ctx.globalAlpha = 1;
         canvas.dataset.hitStop = r.hitStop > 0 ? 'true' : 'false'; canvas.dataset.particles = r.particles.length;
         ctx.font = 'bold 12px monospace'; ctx.textAlign = 'center';
         for (const e of r.effects) {
@@ -728,7 +866,7 @@
       progress.querySelector('small').textContent = Math.max(0, r.nextXP - r.xp) + ' fødeværdi til level ' + (r.level + 1);
       shell.querySelector('#level-label').textContent = 'LEVEL ' + r.level + ' · ' + r.xp + '/' + r.nextXP + ' XP';
       shell.querySelector('#dna-label').textContent = '+' + r.dna + ' DNA · ' + r.kills + ' JAGTER';
-      shell.querySelector('#time-label').textContent = (C.FEATURES.dayNight ? (r.night ? '☾ ' : '☀ ') : '') + timeLabel(r.seconds); // B2 sun/moon
+      drawTimeIcon(r); // Approved native HUD art, with the existing glyph as fallback.
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
       shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : keyLabel('ability')+' KLAR');
       const config=C.PLAYER_SPECIES[r.species],cost=C.abilityCost(r),attackFraction=1-r.attackCooldown/(r.attackDuration||config.cooldown),abilityFraction=1-r.pounceCooldown/(r.abilityCooldownDuration||config.abilityCooldown);
@@ -849,18 +987,53 @@
     const loading={};
     // Robust loading: retry, timeout and never leave the game stuck on one failed or stalled image.
     const failedImages=new Set();
-    function loadImage(path,attempt=0){if(loading[path])return loading[path];return loading[path]=new Promise(resolveLoad=>{
-      const image=new Image();let settled=false;const done=ok=>{if(settled)return;settled=true;clearTimeout(timer);if(ok){images[path]=image;failedImages.delete(path);resolveLoad(true);return;}delete loading[path];if(attempt<2){setTimeout(()=>loadImage(path,attempt+1).then(resolveLoad),400*(attempt+1));return;}failedImages.add(path);resolveLoad(false);};
-      const timer=setTimeout(()=>done(false),15000);image.onload=()=>done(true);image.onerror=()=>done(false);image.src=resolve(path)+(attempt?(resolve(path).includes('?')?'&':'?')+'retry='+attempt:'');
-    });}
-    function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[],menu=false}={},onProgress=null){if(menu){const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||path.includes('/'+species+'_idle_')));return Promise.all(paths.map(p=>loadImage(p)));} // menu: UI + chosen species only (~200 files; GitHub Pages rate limits per IP). Everything else loads at START or on demand.
+    function fetchImage(path, attempt=0) {
+      return new Promise(resolveLoad=>{
+        const image=new Image();let settled=false;
+        const done=ok=>{if(settled)return;settled=true;clearTimeout(timer);
+          if(ok)resolveLoad(image);
+          else if(attempt<2)setTimeout(()=>fetchImage(path,attempt+1).then(resolveLoad),400*(attempt+1));
+          else resolveLoad(null);
+        };
+        const timer=setTimeout(()=>done(false),15000);image.onload=()=>done(true);image.onerror=()=>done(false);
+        image.src=resolve(path)+(attempt?(resolve(path).includes('?')?'&':'?')+'retry='+attempt:'');
+      });
+    }
+    function loadImage(path) {
+      if(loading[path])return loading[path];
+      return loading[path]=(async()=>{
+        const frame=C.FEATURES.spriteAtlas&&catalog[path]?.atlas;
+        if(frame){
+          const sheet=await (sheetLoads[frame.file]||(sheetLoads[frame.file]=fetchImage(frame.file)));
+          if(sheet){
+            sheets[frame.file]=sheet;
+            if(!sheet.primalFrames)sheet.primalFrames={};
+            sheet.primalFrames[frame.x+','+frame.y+','+frame.w+','+frame.h]=path;
+            images[path]={sheet,x:frame.x,y:frame.y,width:frame.w,height:frame.h,spritePath:path};
+            failedImages.delete(path);return true;
+          }
+        }
+        // A missing atlas still permits the preserved standalone PNG to load.
+        const image=await fetchImage(path);
+        if(image){image.spritePath=path;images[path]=image;failedImages.delete(path);return true;}
+        failedImages.add(path);return false;
+      })();
+    }
+    function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[],menu=false}={},onProgress=null){if(menu){const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||path.includes('/'+species+'_idle_')));return Promise.all(paths.map(p=>loadImage(p)));} // menu: UI + chosen species only (shared atlas requests; frame-level progress remains compatible). Everything else loads at START or on demand.
     const animals=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss),...kinds]);const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||Array.from(animals).some(id=>path.includes('/'+id+'_'))));let loadedCount=0;const total=paths.length;return Promise.all(paths.map(p=>loadImage(p).then(ok=>{loadedCount++;if(onProgress)onProgress(loadedCount,total);return ok;})));}
-    function evictUnused(stage,species){const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);for(const path of Object.keys(images))if(/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);prepared.delete(path);}}
+    function evictUnused(stage,species){const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);for(const path of Object.keys(images))if(/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete frameCanvases[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);prepared.delete(path);}for(const file of Object.keys(sheets))if(!Object.values(images).some(image=>image.sheet===sheets[file])){delete sheets[file];delete sheetLoads[file];}}
     const querySeed=new URL(location.href).searchParams.get('seed');if(querySeed&&/^\d{1,10}$/.test(querySeed)&&Number(querySeed)<=4294967295)seedInput=querySeed;
     const load = preload({ menu: true }).then(() => { ready = true; renderScreen(true); return true; }).catch(e => { game.phase = 'error'; renderScreen(true); screen.querySelector('.load-error').textContent = e.message; return false; });
-    const api = { telegraphShape: (e, r = game.run) => telegraphShape(r, e), warningLabelY: (e, width = 120, r = game.run) => warningLabelY(r, e, width), preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,decodedBytes:[...Object.values(images),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values()].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
+    const api = { telegraphShape: (e, r = game.run) => telegraphShape(r, e), warningLabelY: (e, width = 120, r = game.run) => warningLabelY(r, e, width), preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,atlasSheets:Object.keys(sheets).length,decodedBytes:[...Object.values(sheets),...Object.values(images).filter(i=>!i.sheet),...Object.values(frameCanvases),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values()].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
     root.primalRun = api; renderScreen(true); if (!driven) animationId = requestAnimationFrame(frame);
     return api;
   }
-  root.PrimalApp = { mount };
+  // Normalize actual canvas draws for runtime checks, including atlas crops.
+  function drawRecord(image,args) {
+    const path=image.primalFrames&&args.length===8?image.primalFrames[args.slice(0,4).join(',')]:image.spritePath;
+    if(!path)return {image,args};
+    const meta=root.PrimalAssets[path];
+    return {image:{src:path,width:meta.size[0],height:meta.size[1],naturalWidth:meta.size[0],naturalHeight:meta.size[1]},args:image.primalFrames?args.slice(4):args};
+  }
+  root.PrimalApp = { mount, drawRecord };
 })(globalThis);

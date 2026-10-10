@@ -1,0 +1,402 @@
+{
+  "assets/avatars/pachycephalosaurus_eat_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 877,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_eat_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 943,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_eat_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1009,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_eat_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1075,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_fight_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1141,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_fight_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1207,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_fight_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1273,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_fight_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1339,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_hurt_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1405,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_hurt_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1471,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_hurt_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1537,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_hurt_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1603,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_idle_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1669,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_idle_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1735,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_idle_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1801,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_idle_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1867,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_sneak_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1933,
+    "y": 147
+  },
+  "assets/avatars/pachycephalosaurus_sneak_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1,
+    "y": 293
+  },
+  "assets/avatars/pachycephalosaurus_sneak_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 67,
+    "y": 293
+  },
+  "assets/avatars/pachycephalosaurus_sneak_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 133,
+    "y": 293
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_E_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_E_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_N_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_N_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_N_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_N_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_S_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_S_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_S_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_S_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 1
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 147
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 147
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_W_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 147
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 147
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_W_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 147
+  },
+  "assets/species_attacks/pachycephalosaurus_attack_W_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 147
+  }
+}
