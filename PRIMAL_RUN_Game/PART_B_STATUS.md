@@ -158,6 +158,23 @@ Udfyldes pr. pakke (kommandoer fra repo-roden).
 
 - B1a+B1b: `node --test tests/*.test.cjs` gav 186/186 grønne. X8 fejlede første gang på en travl maskine (2,9 ms) og måles nu som bedste af 8 batches. `tests/part-b-browser.cjs`, `terrain-browser`, `game-browser` og `records-browser` er grønne.
 
+## Balance (bots, ikke mennesker)
+
+`simulate:quick` på ab6dd41: 252 runs (12 arter × 7 stilarter × 3 seeds, 600 s), samme kode med alle Part B-gameplayflag af og til (`--off`). Mapper: `balance_runs/2026-10-10-B-final-off` og `-on`.
+
+| | Part B af | Part B til |
+|---|---|---|
+| Døde | 177 | 223 |
+| Gns. bane nået | 2,90 | 2,51 |
+| DNA pr. run | 65,7 | 54,5 |
+| Bosser pr. run | 1,90 | 1,51 |
+| Dræbt af Carnotaurus | 93 | 143 |
+| Allierede rekrutteret / natdrab | 0 / 0 | 23 / 1902 |
+
+- Konklusion (bevist for bots): Spillet er tydeligt sværere med Part B. Mest skyldes det Carnotaurus, sandsynligvis rovdyr, der følger spor (B3), og natten (B2). Det er ikke målt pr. pakke, fordi pr.-pakke-kørslerne blev stoppet for at nå integrationen. Anbefaling: Prøv det selv. Føles det for svært, kan `FEATURES.scentTrails` eller `dayNight` slås fra hver for sig, eller rovdyrenes sporradius kan sættes ned.
+- Kørslen er fra før B5-rettelsen (31e61ad), hvor allierede ikke længere angriber bosser på egen hånd.
+- Titler: `speed_slayer` var hovedtitel i 53,5 % af runs før ændringen og i 27,0 % efter (mål ≤ 25 %). Data: `balance_runs/title_distribution_2026-10-10-*`.
+
 ## Integrationskonflikter (til /primal-integrate og Codex)
 
 - `src/core.js`: nyt navigationsblok efter `isLava`, nye Game-metoder før `laterBossAI` (`playerReach`, `chargeLaneClear`, `bossReach`, `chargeLaneLost`, `chargeSkid`), en linje i hver boss-AI (hook før chase-bevægelsen, lane-tjek ved valg, windup og charge), 3 linjer i `travel()`, `lavaCrossings` i `createMap` og `isLava`, og `'stalk'` i retningslisten i `enemyStep`. Del A rører ikke boss-AI'en. Risiko: lav.
