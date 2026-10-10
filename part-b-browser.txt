@@ -1,0 +1,18 @@
+part-b browser OK
+- B1a da: Karl stalks across lava, HP intact, HUD "LURER VED BREDDEN"
+- B1a en: Karl stalks across lava, HP intact, HUD "LURKING ON THE BANK"
+- B1b: 2 basalt crossings, crossing centre is not lava
+- B1c: telegraph shapes for 7 bosses × 6 patterns, Benny dive telegraph "DYK · FLYT DIG"
+- B7 da: daily seed 20261010 (deinonychus), result "Dagens jagt · 10.10.2026 · plads 1 af 1", list 1 row, 390 px
+- B7 de: daily seed 20261010 (deinonychus), result "Tagesjagd · 10.10.2026 · Platz 1 von 1", list 1 row, 390 px
+- B6 da: 3 challenges (4th disabled), forced intro, result "Udfordringer · Skrøbelig · Seje bosser · Hurtige fjender · +0 DNA", next normal hunt has none
+- B6 ja: 3 challenges (4th disabled), forced intro, result "チャレンジ · もろい体 · タフなボス · 素早い敵 · +0 DNA", next normal hunt has none
+- B8 da: progress "Fiskekonge: 12/30 fisk som Baryonyx", skin unlocked + selected, label "Fiskekongens farver kun Baryonyx"
+- B8 sv: progress "Fiskkung: 12/30 fiskar som Baryonyx", skin unlocked + selected, label "Fiskkungens färger endast Baryonyx"
+- B3: 200 tracks drawn + updated: 34.38 ms/frame vs 32.60 ms (4× CPU, 390 px), ≤ +10 %
+- B4 da: pond 72 → 25 px, notice "TØRKE · VANDHULLERNE SKRUMPER"
+- B4 en: pond 72 → 25 px, notice "DROUGHT · THE WATER HOLES ARE SHRINKING"
+- B2: night darkness 1, edge brightness 102 → 73, HUD "☾ 2:56", herbivore asleep
+- B5 en: E press recruited 1 ally, label "WILD RAPTOR · E FEED"
+- B5 da: E press recruited 1 ally, label "VILD RAPTOR · E FODR"
+- Languages: es/ar/hi/ur/yue/ta/pcm/ru menus translated, RTL for ar/ur, no horizontal scroll at 390 px

@@ -1,0 +1,4 @@
+records browser: PASS
+da: compy death card, 29 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844
+de: compy death card, 29 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844
+ja: compy death card, 29 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844
