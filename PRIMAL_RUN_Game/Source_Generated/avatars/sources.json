@@ -1,0 +1,128 @@
+[
+  {
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "species": [
+      "ankylosaurus",
+      "triceratops",
+      "pachycephalosaurus",
+      "gallimimus"
+    ],
+    "centres_x": [
+      48,
+      120,
+      188,
+      256,
+      336,
+      402,
+      474,
+      539,
+      603,
+      676,
+      742,
+      808,
+      874,
+      942,
+      1008,
+      1074,
+      1276,
+      1343,
+      1413,
+      1483
+    ],
+    "centres_y": [
+      254,
+      393,
+      534,
+      666
+    ],
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "reference": "Same-species South head crop, fixed canonical palette; no body/tail.",
+    "review_notes": "Explicit reviewed head landmarks; source layout contains extra drawn heads in herbivore/raptor sheets. Unused extras are preserved, not exported. Native clips and temporal shape consistency still require review."
+  },
+  {
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "species": [
+      "carnotaurus",
+      "baryonyx",
+      "deinosuchus",
+      "tyrannosaurus"
+    ],
+    "centres_x": [
+      40,
+      113,
+      187,
+      261,
+      336,
+      412,
+      486,
+      562,
+      640,
+      722,
+      807,
+      893,
+      973,
+      1049,
+      1126,
+      1201,
+      1278,
+      1352,
+      1425,
+      1498
+    ],
+    "centres_y": [
+      208,
+      420,
+      622,
+      835
+    ],
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "reference": "Same-species South head crop, fixed canonical palette; no body/tail.",
+    "review_notes": "Explicit reviewed head landmarks; source layout contains extra drawn heads in herbivore/raptor sheets. Unused extras are preserved, not exported. Native clips and temporal shape consistency still require review."
+  },
+  {
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "species": [
+      "compy",
+      "velociraptor",
+      "deinonychus",
+      "utahraptor"
+    ],
+    "centres_x": [
+      40,
+      112,
+      185,
+      256,
+      336,
+      406,
+      476,
+      548,
+      627,
+      697,
+      767,
+      837,
+      907,
+      986,
+      1054,
+      1124,
+      1276,
+      1347,
+      1418,
+      1492
+    ],
+    "centres_y": [
+      183,
+      387,
+      605,
+      827
+    ],
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "reference": "Same-species South head crop, fixed canonical palette; no body/tail.",
+    "review_notes": "Explicit reviewed head landmarks; source layout contains extra drawn heads in herbivore/raptor sheets. Unused extras are preserved, not exported. Native clips and temporal shape consistency still require review."
+  }
+]

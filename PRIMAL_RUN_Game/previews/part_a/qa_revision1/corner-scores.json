@@ -1,0 +1,354 @@
+[
+  {
+    "family": "shore_soil",
+    "declared": 0,
+    "actual": 0,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 1,
+    "actual": 1,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 2,
+    "actual": 2,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 3,
+    "actual": 3,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 4,
+    "actual": 4,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 5,
+    "actual": 5,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 6,
+    "actual": 6,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 7,
+    "actual": 7,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 8,
+    "actual": 8,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 9,
+    "actual": 9,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 10,
+    "actual": 10,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 11,
+    "actual": 1,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      0.188,
+      0.0,
+      0.25
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 12,
+    "actual": 12,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 13,
+    "actual": 13,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 14,
+    "actual": 14,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_soil",
+    "declared": 15,
+    "actual": 15,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 0,
+    "actual": 0,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 1,
+    "actual": 2,
+    "NW_NE_SE_SW_water_fraction": [
+      0.25,
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 2,
+    "actual": 2,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 3,
+    "actual": 3,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 4,
+    "actual": 4,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 5,
+    "actual": 5,
+    "NW_NE_SE_SW_water_fraction": [
+      0.938,
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 6,
+    "actual": 6,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 7,
+    "actual": 7,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      0.938,
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 8,
+    "actual": 8,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 9,
+    "actual": 9,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 10,
+    "actual": 10,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      1.0,
+      0.0,
+      0.938
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 11,
+    "actual": 3,
+    "NW_NE_SE_SW_water_fraction": [
+      0.938,
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 12,
+    "actual": 12,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 13,
+    "actual": 13,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 14,
+    "actual": 14,
+    "NW_NE_SE_SW_water_fraction": [
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "family": "shore_sand",
+    "declared": 15,
+    "actual": 15,
+    "NW_NE_SE_SW_water_fraction": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+]

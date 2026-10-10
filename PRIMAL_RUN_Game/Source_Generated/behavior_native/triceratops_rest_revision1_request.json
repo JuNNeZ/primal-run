@@ -1,0 +1,30 @@
+{
+  "prompt": "Make only tiny localized head/foot changes to this EXACT canonical triceratops sprite atlas. Columns0/1 SLEEP: eyesclosed, head rests slightly lower toward chest, tiny quietbreathing only; no curledbodyshrink. Columns2/3 SCRATCH: one forefoot gently lifted against its lower neck/chest, then rubs same spot shifted fewpixels. Otherlimbs planted, closedmouth. Four feet, frill, two long browhorns plus one short nosehorn unchanged. Preserve all original bodyoutline/volume,tail,pixelmarkings and original raw colours; do NOT repaintwholebody or enlarge/shrink. EXACTLY1536x1024 transparent FOUR columns384wide FOUR rows256high S,N,E,W, same layout. Fixed hip192,128eachcell. Everyanimal remains EXACTLY current TWO TIMES native size and position. Tiny readable movements only, neverfillcell. One tail, originalcameraoverhead/slightside. No shadows/background/labels/puddles/food. Crisp squarepixels1990sstyle.",
+  "source": "triceratops_rest_revision1.png",
+  "references": [
+    "triceratops_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "source_sha256": "ac17366542c0ccf34399163a1633cb36efeddfe521a19b1760db2ce974a21e3b",
+  "canonical_references": [
+    {
+      "file": "assets/enemy_full/triceratops_idle_S_000.png",
+      "sha256": "4580176f5fa4c15278f1f1fe201a7dabfc3703b8a79ee9d754167b0b691d79cb"
+    },
+    {
+      "file": "assets/enemy_full/triceratops_idle_N_000.png",
+      "sha256": "5a0090591ff060727492549873679e5278b661ae7141ad8644e2a8ef9b8b7a75"
+    },
+    {
+      "file": "assets/enemy_full/triceratops_idle_E_000.png",
+      "sha256": "b6e1ba17a86a402b90772fc54d589259ddd4cf7a947a14a21739d31f1eb5f505"
+    },
+    {
+      "file": "assets/enemy_full/triceratops_idle_W_000.png",
+      "sha256": "4526b78761915fbf627942b421ea192481c91665da50aaabe0d823865e979287"
+    }
+  ],
+  "canonical_layout_sha256": "62635b5589639d8b04d947a785061856ae2a328f040473432329cdd703f6b0bb"
+}

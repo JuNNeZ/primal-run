@@ -1,0 +1,17 @@
+{
+  "status": "prototype_reviewed_not_approved",
+  "scope": "Only Triceratops/Carnotaurus decayed and skeleton props, not living frames",
+  "triceratops": "North rear frill occludes nasal horn: two visible brow tips, removed midline frill spike; revision1 rejected, revision2 active. Explicit disconnected neighbouring tail exclusion recorded.",
+  "carnotaurus": "E/W brow horn bases moved back over eye sockets, clear snout; revision2 active, both previous sources retained.",
+  "review": [
+    "source atlases",
+    "all160 native static props on light/dark backgrounds",
+    "actual canvas renderer native sizes, pose selection and fade"
+  ],
+  "limitations": [
+    "Generated body/bone details still vary across directions; full paleontological/animation production certification is not claimed.",
+    "Props are static phases, not drawn decomposition animations."
+  ],
+  "production_approved": false,
+  "living_frames_changed": false
+}

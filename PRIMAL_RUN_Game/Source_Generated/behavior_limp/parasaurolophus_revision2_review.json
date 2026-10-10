@@ -1,0 +1,450 @@
+{
+  "species": "parasaurolophus",
+  "source": "Source_Generated/behavior_limp/parasaurolophus_revision2.png",
+  "canonical_reference": "Source_Generated/behavior_limp/parasaurolophus_canonical_walk23_reference.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "cell_dimensions": [
+    384,
+    256
+  ],
+  "direction_rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "authored_keypose_columns": {
+    "2": 2,
+    "3": 3
+  },
+  "source_hip_anchor": [
+    192,
+    128
+  ],
+  "sampling_stride": 2,
+  "sampling_offset": 1,
+  "alpha_threshold": 192,
+  "origin": [
+    72,
+    72
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_enabled": false,
+  "review": "Reviewed prototype keyposes; Pachy/Para/Galli eight candidates each, Carno seven candidates and rejected North2 native fallback. Named pelvis/tail-root anchors correct source displacement; no bbox recentering or resizing. User anatomy approval and complete animation loop review remain separate.",
+  "poses": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/parasaurolophus_limp_S_002.png",
+      "species": "parasaurolophus",
+      "state": "limp",
+      "direction": "S",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/enemy_full/parasaurolophus_walk_S_002.png",
+      "canonical_sha256": "e6b64af06e3a3e7913597d0c5ab6a53e3d3a563e663a9969a7b14ecb27e33626",
+      "source": "Source_Generated/behavior_limp/parasaurolophus_revision2.png",
+      "source_sha256": "758f417f83179a5440c48b7ef9273e2dce3c2a2856c4fca9961b68867741e082",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "83571a9ba7d127488425c5c17a21808169cc2a9e2ee8172bbdff850fb132a491",
+      "changed_pixels": 1496,
+      "silhouette_iou": 0.9417,
+      "extent_ratios": [
+        1.0238,
+        1.0
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/parasaurolophus_limp_S_003.png",
+      "species": "parasaurolophus",
+      "state": "limp",
+      "direction": "S",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/enemy_full/parasaurolophus_walk_S_003.png",
+      "canonical_sha256": "593c094a9cd164a6c6c6255b1b2aabc203e0e68b0c1cc9e1c06a11d951cdd09b",
+      "source": "Source_Generated/behavior_limp/parasaurolophus_revision2.png",
+      "source_sha256": "758f417f83179a5440c48b7ef9273e2dce3c2a2856c4fca9961b68867741e082",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "f3c21b48d1f530db9bb750adc1b45a4dd577e836785aafdffcbb5eb976226f34",
+      "changed_pixels": 1554,
+      "silhouette_iou": 0.9456,
+      "extent_ratios": [
+        1.0238,
+        0.9916
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/parasaurolophus_limp_N_002.png",
+      "species": "parasaurolophus",
+      "state": "limp",
+      "direction": "N",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/enemy_full/parasaurolophus_walk_N_002.png",
+      "canonical_sha256": "0b376dece3742b02d09bb1c4c34c41a5aabaa74318a9fc226f0a8020a8a32f36",
+      "source": "Source_Generated/behavior_limp/parasaurolophus_revision2.png",
+      "source_sha256": "758f417f83179a5440c48b7ef9273e2dce3c2a2856c4fca9961b68867741e082",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "82f5e119d45304e29c0e6b17907d0a52df28573327f72cc08c7562b9c1a22614",
+      "changed_pixels": 1139,
+      "silhouette_iou": 0.9303,
+      "extent_ratios": [
+        1.027,
+        1.0211
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/parasaurolophus_limp_N_003.png",
+      "species": "parasaurolophus",
+      "state": "limp",
+      "direction": "N",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/enemy_full/parasaurolophus_walk_N_003.png",
+      "canonical_sha256": "e286f27ce6e57708e7e147a75cb7136a26674ab48ba8e3db9e366398889cd8e0",
+      "source": "Source_Generated/behavior_limp/parasaurolophus_revision2.png",
+      "source_sha256": "758f417f83179a5440c48b7ef9273e2dce3c2a2856c4fca9961b68867741e082",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "d2ce9014f95b49bfca48c5240e515792c657e65c4a49a0787f2e37dc158674d8",
+      "changed_pixels": 1151,
+      "silhouette_iou": 0.9081,
+      "extent_ratios": [
+        1.0513,
+        1.0211
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/parasaurolophus_limp_E_002.png",
+      "species": "parasaurolophus",
+      "state": "limp",
+      "direction": "E",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/enemy_full/parasaurolophus_walk_E_002.png",
+      "canonical_sha256": "fe8cee423d2e6f5713bf76950c32720ca7327372d7d935855f21e0aa11dc074f",
+      "source": "Source_Generated/behavior_limp/parasaurolophus_revision2.png",
+      "source_sha256": "758f417f83179a5440c48b7ef9273e2dce3c2a2856c4fca9961b68867741e082",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "9a53b9cb403fcc1e1ea301be4f442a6f79e90cc672990e4eaa131ae8af290b74",
+      "changed_pixels": 1572,
+      "silhouette_iou": 0.9215,
+      "extent_ratios": [
+        1.0085,
+        1.0392
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/parasaurolophus_limp_E_003.png",
+      "species": "parasaurolophus",
+      "state": "limp",
+      "direction": "E",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/enemy_full/parasaurolophus_walk_E_003.png",
+      "canonical_sha256": "f41916b2d99e5dccbafe85ec4bb611b13472fddcf204b3e40d5c4836361b9669",
+      "source": "Source_Generated/behavior_limp/parasaurolophus_revision2.png",
+      "source_sha256": "758f417f83179a5440c48b7ef9273e2dce3c2a2856c4fca9961b68867741e082",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "2f415d8fb90ce0f02a5fe29fca74350eac25cbcc29f1b29d4166a96deacf26f7",
+      "changed_pixels": 1589,
+      "silhouette_iou": 0.928,
+      "extent_ratios": [
+        1.0087,
+        1.0196
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/parasaurolophus_limp_W_002.png",
+      "species": "parasaurolophus",
+      "state": "limp",
+      "direction": "W",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/enemy_full/parasaurolophus_walk_W_002.png",
+      "canonical_sha256": "70de04196f6f4fca4f60e5622121058f92ff17dd366b3dbf92dae7da688de267",
+      "source": "Source_Generated/behavior_limp/parasaurolophus_revision2.png",
+      "source_sha256": "758f417f83179a5440c48b7ef9273e2dce3c2a2856c4fca9961b68867741e082",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "1dd4888416e738227e75260e3a892d5dad303bc5340865d3b4cf1b5dc985f5a7",
+      "changed_pixels": 1820,
+      "silhouette_iou": 0.9455,
+      "extent_ratios": [
+        1.0,
+        1.0143
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/parasaurolophus_limp_W_003.png",
+      "species": "parasaurolophus",
+      "state": "limp",
+      "direction": "W",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/enemy_full/parasaurolophus_walk_W_003.png",
+      "canonical_sha256": "a6b4972378e16adff3d51cfe520e12ab4fdcdf36bd1ccb26595954f701bc2baa",
+      "source": "Source_Generated/behavior_limp/parasaurolophus_revision2.png",
+      "source_sha256": "758f417f83179a5440c48b7ef9273e2dce3c2a2856c4fca9961b68867741e082",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "80171c1bb93969392c8596741685344327dc24f02a42e58944d584b7e907fd16",
+      "changed_pixels": 1829,
+      "silhouette_iou": 0.9337,
+      "extent_ratios": [
+        1.0172,
+        1.0299
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    }
+  ],
+  "registration_overrides": {}
+}

@@ -1,0 +1,30 @@
+{
+  "prompt": "Edit this exact gallimimus atlas minimally into a quiet SCRATCH/GROOM pair. One hindfoot briefly lifts against its own chest/flank to groom. Supporting leg planted, two arms unchanged. Exactly2hindlegs plus2arms. Preserve dome for Pachy and slender beak/neck for Gallimimus. Column0 foot raised toward its own body, column1 foot rubbing same spot a few pixels away. Closed mouth, calm head/neck tilts slightly, never a bite/attack. Keep torso, tail, markings, camera and all body pixels as faithful as possible to source; body volume cannot grow or shrink. Output exactly1536x1024 transparent same TWO columns768wide FOUR rows256high S,N,E,W. Fixed hip local384,128. Keep existing TWO TIMES native animal size and original blank space; never fill cells. Use small readable pixel movement only, preserve colour placement. No labels/shadows/ground. One tail, original limb count. 1990s overhead oblique pixel art. No scaling or recentering of animal.",
+  "source": "gallimimus_revision1.png",
+  "references": [
+    "gallimimus_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration.",
+  "source_sha256": "c676b83b2042902c554bf9debefb9a93e2418371942183f853c07d3e95771ab8",
+  "canonical_references": [
+    {
+      "file": "assets/player_full/gallimimus_idle_S_000.png",
+      "sha256": "f9e2b12086dcd2290a5bf469906fca7dd2b9edde51be2980d08a745ac3908d00"
+    },
+    {
+      "file": "assets/player_full/gallimimus_idle_N_000.png",
+      "sha256": "a9e671799fc7619251ec897abf61baf4539190a4c2522bb04015b2769d6f9bd3"
+    },
+    {
+      "file": "assets/player_full/gallimimus_idle_E_000.png",
+      "sha256": "c30ecc9b995ac85c05ae691215f8c35f7854150be44118aed4b583d72044aa10"
+    },
+    {
+      "file": "assets/player_full/gallimimus_idle_W_000.png",
+      "sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4"
+    }
+  ]
+}

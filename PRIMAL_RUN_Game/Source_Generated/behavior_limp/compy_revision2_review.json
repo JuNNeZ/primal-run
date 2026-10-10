@@ -1,0 +1,418 @@
+{
+  "species": "compy",
+  "source": "Source_Generated/behavior_limp/compy_revision2.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "canonical_reference": "Source_Generated/behavior_limp/compy_canonical_walk23_reference.png",
+  "status": "prototype_static",
+  "runtime_enabled": false,
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Native light/dark reviewed. Usable poses retain size, silhouette and tail with held hindfoot. Failed poses retain native fallback; authored changes remain unapproved prototypes.",
+  "frames": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/compy_limp_S_002.png",
+      "species": "compy",
+      "direction": "S",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/compy_revision2.png",
+      "source_sha256": "0ff4bdd6f591a887444852e08981d53de0aac5a594d8b4708afd6c3c101e149f",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/compy_walk_S_002.png",
+      "canonical_sha256": "02f01e9192c1760285d864f30adc989b60ecc9c91d4c20b5e7db917f10b7da01",
+      "export_sha256": "ecf2df73a994164263aa018b7d0dd198965e9a39a756dd68f346c2bb44f635f7",
+      "silhouette_iou": 0.7524,
+      "extent_ratios": [
+        1.0,
+        1.1428571428571428
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: tiny body enlarged/changed; integerstride3/4 does not fix silhouette.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/compy_limp_S_003.png",
+      "species": "compy",
+      "direction": "S",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/compy_revision2.png",
+      "source_sha256": "0ff4bdd6f591a887444852e08981d53de0aac5a594d8b4708afd6c3c101e149f",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/compy_walk_S_003.png",
+      "canonical_sha256": "b8a60fbb7c0d31f619dd99eec07cee7fa6aefd8a56f4f6528efcede8428d0e42",
+      "export_sha256": "8cb1e5ee05a1fcf8842c280efd973e00935c01866d2f9cc24a58a5938b2754c1",
+      "silhouette_iou": 0.7238,
+      "extent_ratios": [
+        1.1428571428571428,
+        1.0952380952380953
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: tiny body enlarged/changed; integerstride3/4 does not fix silhouette.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/compy_limp_N_002.png",
+      "species": "compy",
+      "direction": "N",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/compy_revision2.png",
+      "source_sha256": "0ff4bdd6f591a887444852e08981d53de0aac5a594d8b4708afd6c3c101e149f",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/compy_walk_N_002.png",
+      "canonical_sha256": "3fd6060752f42329ebf6b6a85b46f9afd72220f94ab451aafb5a560f107dda08",
+      "export_sha256": "b8261bb4d52c85f60411b80a4a1647d809d0b30859725a7e8fbd90574021690a",
+      "silhouette_iou": 0.6857,
+      "extent_ratios": [
+        0.8888888888888888,
+        1.25
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: tiny body enlarged/changed; integerstride3/4 does not fix silhouette.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/compy_limp_N_003.png",
+      "species": "compy",
+      "direction": "N",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/compy_revision2.png",
+      "source_sha256": "0ff4bdd6f591a887444852e08981d53de0aac5a594d8b4708afd6c3c101e149f",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/compy_walk_N_003.png",
+      "canonical_sha256": "bab7438bfc76c89e49db140b3395b4f94b91fd13bc326c33df5b6b406e5d057b",
+      "export_sha256": "dad202985448d58e8f70af48033691833101a8b8272f403b1e2b6432d3336627",
+      "silhouette_iou": 0.6972,
+      "extent_ratios": [
+        1.0,
+        1.2380952380952381
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: tiny body enlarged/changed; integerstride3/4 does not fix silhouette.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/compy_limp_E_002.png",
+      "species": "compy",
+      "direction": "E",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/compy_revision2.png",
+      "source_sha256": "0ff4bdd6f591a887444852e08981d53de0aac5a594d8b4708afd6c3c101e149f",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/compy_walk_E_002.png",
+      "canonical_sha256": "1ccb3483675d784227630ef39f21e00746cb872585e2f35dc042cfab2c725d7b",
+      "export_sha256": "68df28838d9ab3519940a19a6b264378fb22e0ecefb33ba6b52973724bdf8f7e",
+      "silhouette_iou": 0.4545,
+      "extent_ratios": [
+        1.2962962962962963,
+        1.3636363636363635
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: tiny body enlarged/changed; integerstride3/4 does not fix silhouette.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/compy_limp_E_003.png",
+      "species": "compy",
+      "direction": "E",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/compy_revision2.png",
+      "source_sha256": "0ff4bdd6f591a887444852e08981d53de0aac5a594d8b4708afd6c3c101e149f",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/compy_walk_E_003.png",
+      "canonical_sha256": "4b87eb6e75ffdb1759a6f870a6b7122e6544322c38955805c1ddb487c8527564",
+      "export_sha256": "93db8013c1a5be3c56413c5ac51fa266d20ca48c3aa14de1e0eb10ac03ab65fe",
+      "silhouette_iou": 0.4129,
+      "extent_ratios": [
+        1.2592592592592593,
+        1.5
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: tiny body enlarged/changed; integerstride3/4 does not fix silhouette.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/compy_limp_W_002.png",
+      "species": "compy",
+      "direction": "W",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/compy_revision2.png",
+      "source_sha256": "0ff4bdd6f591a887444852e08981d53de0aac5a594d8b4708afd6c3c101e149f",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/compy_walk_W_002.png",
+      "canonical_sha256": "62ee38d86ea690edc2639a713ad43b7b444001fd3bc98a2bd868f080eacd5a12",
+      "export_sha256": "82848327c2dcb8b6bfeb10d3ff31d6d62bea7f70d81cdb86d640a99db2af5f23",
+      "silhouette_iou": 0.3448,
+      "extent_ratios": [
+        1.2592592592592593,
+        1.2727272727272727
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: tiny body enlarged/changed; integerstride3/4 does not fix silhouette.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/compy_limp_W_003.png",
+      "species": "compy",
+      "direction": "W",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/compy_revision2.png",
+      "source_sha256": "0ff4bdd6f591a887444852e08981d53de0aac5a594d8b4708afd6c3c101e149f",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/compy_walk_W_003.png",
+      "canonical_sha256": "84f4b85123e2f7abab92853c684ad16340d9ba2f697616a88bbd75d1c561ce95",
+      "export_sha256": "73e58ee47ebf9d34e5e3693b8876f8873a05fb9230d2ba5bb70457618904b50d",
+      "silhouette_iou": 0.4021,
+      "extent_ratios": [
+        1.2592592592592593,
+        1.2727272727272727
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: tiny body enlarged/changed; integerstride3/4 does not fix silhouette.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    }
+  ],
+  "prompt_file": "Source_Generated/behavior_limp/compy_revision2_prompt.txt",
+  "source_sha256": "0ff4bdd6f591a887444852e08981d53de0aac5a594d8b4708afd6c3c101e149f"
+}

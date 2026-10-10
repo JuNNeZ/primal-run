@@ -1,0 +1,377 @@
+{
+ "species": {
+  "status": "existing",
+  "source": "r.species",
+  "description": "Player species id"
+ },
+ "diet": {
+  "status": "existing",
+  "source": "PLAYER_SPECIES[species].diet",
+  "description": "carnivore / herbivore / omnivore / piscivore"
+ },
+ "victory": {
+  "status": "existing",
+  "source": "r.result.victory",
+  "description": "Final boss defeated (normal ending)"
+ },
+ "seconds": {
+  "status": "existing",
+  "source": "r.seconds",
+  "description": "Run time in seconds (simulation time, pauses excluded)"
+ },
+ "levelReached": {
+  "status": "existing",
+  "source": "r.levelIndex + 1",
+  "description": "Highest level number reached (1-8)"
+ },
+ "kills": {
+  "status": "existing",
+  "source": "r.stats.kills",
+  "description": "Animals killed by the player"
+ },
+ "killsBySpecies": {
+  "status": "existing",
+  "source": "r.stats.killsBySpecies",
+  "description": "Map species -> kills"
+ },
+ "bosses": {
+  "status": "existing",
+  "source": "r.bosses",
+  "description": "Level bosses defeated"
+ },
+ "albinos": {
+  "status": "existing",
+  "source": "r.stats.albinos",
+  "description": "Albino animals killed"
+ },
+ "rivals": {
+  "status": "existing",
+  "source": "r.stats.rivals",
+  "description": "Rival mini-bosses killed"
+ },
+ "herbivoreElites": {
+  "status": "existing",
+  "source": "r.stats.herbivoreElites",
+  "description": "Elite/rival kills while playing a herbivore"
+ },
+ "attacks": {
+  "status": "existing",
+  "source": "r.stats.attacks",
+  "description": "Attacks started"
+ },
+ "landedAttacks": {
+  "status": "existing",
+  "source": "r.stats.landedAttacks",
+  "description": "Attacks that hit at least one target"
+ },
+ "crits": {
+  "status": "existing",
+  "source": "r.stats.crits",
+  "description": "Critical hits"
+ },
+ "abilities": {
+  "status": "existing",
+  "source": "r.stats.abilities",
+  "description": "Species ability uses"
+ },
+ "avoidedHits": {
+  "status": "existing",
+  "source": "r.stats.avoidedHits",
+  "description": "Hits avoided by i-frames/pounce (shown as UNDVIGET)"
+ },
+ "damageDealt": {
+  "status": "existing",
+  "source": "r.stats.damageDealt",
+  "description": "Damage dealt (HP removed from enemies during player steps) - see stats spec risk R3"
+ },
+ "damageTaken": {
+  "status": "existing",
+  "source": "r.stats.damageTaken",
+  "description": "Damage taken"
+ },
+ "healing": {
+  "status": "existing",
+  "source": "r.stats.healing",
+  "description": "HP healed"
+ },
+ "distancePx": {
+  "status": "existing",
+  "source": "r.stats.distance",
+  "description": "World pixels moved by the player's own movement"
+ },
+ "plantsEaten": {
+  "status": "existing",
+  "source": "r.stats.plantsEaten",
+  "description": "Plant portions eaten"
+ },
+ "meatEaten": {
+  "status": "existing",
+  "source": "r.stats.meatEaten",
+  "description": "Meat portions eaten"
+ },
+ "fishCaught": {
+  "status": "existing",
+  "source": "r.stats.fishCaught",
+  "description": "Fish caught"
+ },
+ "food": {
+  "status": "existing",
+  "source": "r.stats.food",
+  "description": "Food value gained"
+ },
+ "dna": {
+  "status": "existing",
+  "source": "r.stats.dna",
+  "description": "DNA earned this run"
+ },
+ "mutationsTaken": {
+  "status": "existing",
+  "source": "r.stats.mutations",
+  "description": "Mutations chosen"
+ },
+ "zonesFound": {
+  "status": "existing",
+  "source": "r.stats.zones",
+  "description": "Named zones discovered (incl. start zones)"
+ },
+ "exploration": {
+  "status": "existing",
+  "source": "r.exploration",
+  "description": "Explore actions + new non-start zones"
+ },
+ "finteHits": {
+  "status": "existing",
+  "source": "r.stats.finteHits",
+  "description": "Deinonychus feint follow-up bites that landed (4d9115f)"
+ },
+ "staminaSpent": {
+  "status": "existing",
+  "source": "r.stats.staminaSpent",
+  "description": "Stamina spent"
+ },
+ "minutes": {
+  "status": "derived",
+  "source": "seconds / 60",
+  "description": "Run minutes"
+ },
+ "distanceM": {
+  "status": "derived",
+  "source": "distancePx / PX_PER_METER (see distance spec)",
+  "description": "Calibrated metres"
+ },
+ "accuracy": {
+  "status": "derived",
+  "source": "landedAttacks / max(1, attacks)",
+  "description": "Hit ratio 0-1"
+ },
+ "damageRatio": {
+  "status": "derived",
+  "source": "damageDealt / max(1, damageTaken)",
+  "description": "Damage efficiency"
+ },
+ "hpLeftPct": {
+  "status": "derived",
+  "source": "100 * r.health / r.maxHealth at run end",
+  "description": "HP left at end (0 on death)"
+ },
+ "deathCauseType": {
+  "status": "new",
+  "source": "r.deathCause.type",
+  "description": "'boss' | 'enemy' | 'lava' | 'environment' | 'abandon' | null"
+ },
+ "deathCauseKind": {
+  "status": "new",
+  "source": "r.deathCause.kind",
+  "description": "Species id of the killer, or hazard id ('lava')"
+ },
+ "deathBossId": {
+  "status": "new",
+  "source": "r.deathCause.bossId",
+  "description": "LEVELS[i].boss + level index, e.g. 'carnotaurus@2'"
+ },
+ "killerIsCompy": {
+  "status": "new",
+  "source": "r.deathCause.kind === 'compy'",
+  "description": "Killed by a Compsognathus"
+ },
+ "minibossKills": {
+  "status": "new",
+  "source": "r.stats.minibossKills",
+  "description": "Kills of e.miniboss (rivals) + mini-level bosses"
+ },
+ "eliteKills": {
+  "status": "new",
+  "source": "r.stats.eliteKills",
+  "description": "Kills of e.elite"
+ },
+ "rareKills": {
+  "status": "new",
+  "source": "r.stats.rareKills",
+  "description": "Kills of e.rare"
+ },
+ "bossAttempts": {
+  "status": "new",
+  "source": "r.stats.bossAttempts",
+  "description": "Boss encounters started (boss spawned and aggroed)"
+ },
+ "bossNoHitKills": {
+  "status": "new",
+  "source": "r.stats.bossNoHitKills",
+  "description": "Bosses killed without being hit by that boss (existing 'untouchable' flag, counted)"
+ },
+ "bossCloseCalls": {
+  "status": "new",
+  "source": "r.stats.bossCloseCalls",
+  "description": "Bosses killed with <10% HP left (existing 'closeCall' flag, counted)"
+ },
+ "fastestBossSeconds": {
+  "status": "new",
+  "source": "min over bossKills[].fightSeconds",
+  "description": "Shortest boss fight (aggro -> death)"
+ },
+ "maxHitDamage": {
+  "status": "new",
+  "source": "r.stats.maxHitDamage",
+  "description": "Largest single damage instance dealt"
+ },
+ "longestNoHitSeconds": {
+  "status": "new",
+  "source": "r.stats.longestNoHitSeconds",
+  "description": "Longest stretch of play time without taking damage"
+ },
+ "lowHpSeconds": {
+  "status": "new",
+  "source": "r.stats.lowHpSeconds",
+  "description": "Seconds spent below 15% HP"
+ },
+ "lavaDamage": {
+  "status": "new",
+  "source": "r.stats.lavaDamage",
+  "description": "Damage taken from lava"
+ },
+ "lavaSeconds": {
+  "status": "new",
+  "source": "r.stats.lavaSeconds",
+  "description": "Seconds spent standing in lava"
+ },
+ "deepWaterSeconds": {
+  "status": "new",
+  "source": "r.stats.deepWaterSeconds",
+  "description": "Seconds in deep water (swimmers only can enter)"
+ },
+ "mudSeconds": {
+  "status": "new",
+  "source": "r.stats.mudSeconds",
+  "description": "Seconds in mud"
+ },
+ "hiddenSeconds": {
+  "status": "new",
+  "source": "r.stats.hiddenSeconds",
+  "description": "Seconds concealed (r.hidden)"
+ },
+ "ambushKills": {
+  "status": "new",
+  "source": "r.stats.ambushKills",
+  "description": "Kills where the first hit landed on an unalerted animal"
+ },
+ "foodStolen": {
+  "status": "new",
+  "source": "r.stats.foodStolen",
+  "description": "Food portions stolen from the player by compys"
+ },
+ "eventsClaimed": {
+  "status": "new",
+  "source": "r.stats.eventsClaimed",
+  "description": "Zone reward events claimed (spring/fossil/cache)"
+ },
+ "sitesClaimed": {
+  "status": "new",
+  "source": "r.stats.sitesClaimed",
+  "description": "Explore sites taken (nest/fossil/rare)"
+ },
+ "zonesAvailable": {
+  "status": "new",
+  "source": "sum of map.zones.length over levels visited",
+  "description": "Zones that existed in visited levels"
+ },
+ "explorationPct": {
+  "status": "derived",
+  "source": "100 * zonesFound / max(1, zonesAvailable)",
+  "description": "Exploration completion"
+ },
+ "epicMutations": {
+  "status": "new",
+  "source": "count of epic+legendary in r.mutationLog",
+  "description": "Epic or legendary mutations taken"
+ },
+ "mutationLog": {
+  "status": "new",
+  "source": "r.mutationLog[]",
+  "description": "Ordered list {id, rarity, seconds}"
+ },
+ "levelUps": {
+  "status": "existing",
+  "source": "r.level - 1",
+  "description": "Level-ups this run"
+ },
+ "achievementsThisRun": {
+  "status": "new",
+  "source": "r.stats.achievementsUnlocked",
+  "description": "Achievements first unlocked during this run"
+ },
+ "secretsFound": {
+  "status": "new",
+  "source": "r.stats.secretsFound",
+  "description": "Secret collectibles (amber) found - System 6"
+ },
+ "secretLevel": {
+  "status": "new",
+  "source": "r.secretLevelReached",
+  "description": "Entered the post-Ragnar extinction level - System 6"
+ },
+ "secretEnding": {
+  "status": "new",
+  "source": "r.result.ending === 'survivors'",
+  "description": "Reached the survivors ending - System 7"
+ },
+ "abandoned": {
+  "status": "new",
+  "source": "r.result.abandoned",
+  "description": "Run ended via quit/abandon"
+ },
+ "nightKills": {
+  "status": "partB:B2",
+  "source": "r.stats.nightKills",
+  "description": "Kills during night (needs B2 day/night)"
+ },
+ "alliesRecruited": {
+  "status": "partB:B5",
+  "source": "r.stats.alliesRecruited",
+  "description": "Raptor allies recruited (needs B5)"
+ },
+ "challengeCount": {
+  "status": "partB:B6",
+  "source": "r.challenges.length",
+  "description": "Active risk modifiers (needs B6)"
+ },
+ "dailySeed": {
+  "status": "partB:B7",
+  "source": "r.daily === true",
+  "description": "Run is the daily hunt (needs B7)"
+ },
+ "rivalsSpawned": {
+  "status": "new",
+  "source": "count of map.rival over visited levels",
+  "description": "Rivals that existed in this run (System 6)"
+ },
+ "killerDiet": {
+  "status": "new",
+  "source": "SPECIES[r.deathCause.kind].diet",
+  "description": "Diet of the killer species"
+ },
+ "abilityKills": {
+  "status": "new",
+  "source": "r.stats.abilityKills",
+  "description": "Kills where the final hit was the species ability"
+ }
+}

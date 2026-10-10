@@ -1,0 +1,30 @@
+{
+  "prompt": "Make only tiny localized head/foot changes to this EXACT canonical pachycephalosaurus sprite atlas. Columns0/1 GRAZE: head modestly lowers to nibble, closedmouth and tiny neckjaw movement approx4sourcepixels. Columns2/3 DRINK: head just slightly lowered, tiny throat/swallow motion. Feetstill and nofood/water drawn. Exactly2hindlegs2smallarms, thick skull dome unchanged; no horns. Preserve all original bodyoutline/volume,tail,pixelmarkings and original raw colours; do NOT repaintwholebody or enlarge/shrink. EXACTLY1536x1024 transparent FOUR columns384wide FOUR rows256high S,N,E,W, same layout. Fixed hip192,128eachcell. Everyanimal remains EXACTLY current TWO TIMES native size and position. Tiny readable movements only, neverfillcell. One tail, originalcameraoverhead/slightside. No shadows/background/labels/puddles/food. Crisp squarepixels1990sstyle.",
+  "source": "pachycephalosaurus_feed_revision1.png",
+  "references": [
+    "pachycephalosaurus_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "source_sha256": "406ec8da5e9e73a422ca2ad975efe4027ee1547e0db512d7c9cf64dd8ae1bda6",
+  "canonical_references": [
+    {
+      "file": "assets/player_full/pachycephalosaurus_idle_S_000.png",
+      "sha256": "db81852982947c41754c08df608673e82437258eae60470ea00203ac8760fc50"
+    },
+    {
+      "file": "assets/player_full/pachycephalosaurus_idle_N_000.png",
+      "sha256": "11b4cd288d2753e99126c361f1dc96716478e7c52f3dbcd88a98503fd5884958"
+    },
+    {
+      "file": "assets/player_full/pachycephalosaurus_idle_E_000.png",
+      "sha256": "662a12b42ee25b638af54d113af05882765598857ab1370e50a9300ca00b18c3"
+    },
+    {
+      "file": "assets/player_full/pachycephalosaurus_idle_W_000.png",
+      "sha256": "357408c5df221b05d00c71f5a0134537f4dff0668faecc9819a33125d112f29d"
+    }
+  ],
+  "canonical_layout_sha256": "3da925035aa2a5032043406ee7456d53eee156f520a87bb061a6a8b9d15aad0f"
+}

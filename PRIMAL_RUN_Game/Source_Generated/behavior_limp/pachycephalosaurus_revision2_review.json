@@ -1,0 +1,450 @@
+{
+  "species": "pachycephalosaurus",
+  "source": "Source_Generated/behavior_limp/pachycephalosaurus_revision2.png",
+  "canonical_reference": "Source_Generated/behavior_limp/pachycephalosaurus_canonical_walk23_reference.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "cell_dimensions": [
+    384,
+    256
+  ],
+  "direction_rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "authored_keypose_columns": {
+    "2": 2,
+    "3": 3
+  },
+  "source_hip_anchor": [
+    192,
+    128
+  ],
+  "sampling_stride": 2,
+  "sampling_offset": 1,
+  "alpha_threshold": 192,
+  "origin": [
+    72,
+    72
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_enabled": false,
+  "review": "Reviewed prototype keyposes; Pachy/Para/Galli eight candidates each, Carno seven candidates and rejected North2 native fallback. Named pelvis/tail-root anchors correct source displacement; no bbox recentering or resizing. User anatomy approval and complete animation loop review remain separate.",
+  "poses": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/pachycephalosaurus_limp_S_002.png",
+      "species": "pachycephalosaurus",
+      "state": "limp",
+      "direction": "S",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/pachycephalosaurus_walk_S_002.png",
+      "canonical_sha256": "53c917dc874d9c0babcbe5870ac28b8486cb4cf59e1f4a3a8a76b0536f24e62a",
+      "source": "Source_Generated/behavior_limp/pachycephalosaurus_revision2.png",
+      "source_sha256": "961c932bcdc4b17058aea332271930f998d3ff20de689e1f72b74d4230cda11e",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "c2c52acf89100c600e59b0797ee70f28ad54319f7a70d89a05ad55f69889c708",
+      "changed_pixels": 1557,
+      "silhouette_iou": 0.9627,
+      "extent_ratios": [
+        1.0,
+        0.9891
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/pachycephalosaurus_limp_S_003.png",
+      "species": "pachycephalosaurus",
+      "state": "limp",
+      "direction": "S",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/pachycephalosaurus_walk_S_003.png",
+      "canonical_sha256": "fbc424d3093d3632d9644a33b16f9209ecefcc9494c5466ebc185b0b78a5e7aa",
+      "source": "Source_Generated/behavior_limp/pachycephalosaurus_revision2.png",
+      "source_sha256": "961c932bcdc4b17058aea332271930f998d3ff20de689e1f72b74d4230cda11e",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "fbe2c358520078398c048523b8fead17729b4c4e6949ed99560a671c8ae60f91",
+      "changed_pixels": 1554,
+      "silhouette_iou": 0.9484,
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/pachycephalosaurus_limp_N_002.png",
+      "species": "pachycephalosaurus",
+      "state": "limp",
+      "direction": "N",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/pachycephalosaurus_walk_N_002.png",
+      "canonical_sha256": "0971d59f8e27de2b83279ddcda78e1955e345c8153019be1d7ca37c16a4da17a",
+      "source": "Source_Generated/behavior_limp/pachycephalosaurus_revision2.png",
+      "source_sha256": "961c932bcdc4b17058aea332271930f998d3ff20de689e1f72b74d4230cda11e",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "4f15faa1337d813c123870ca0b018571ab10afdab3e74bd266223faf4c276bdb",
+      "changed_pixels": 1410,
+      "silhouette_iou": 0.9366,
+      "extent_ratios": [
+        0.9756,
+        0.9886
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/pachycephalosaurus_limp_N_003.png",
+      "species": "pachycephalosaurus",
+      "state": "limp",
+      "direction": "N",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/pachycephalosaurus_walk_N_003.png",
+      "canonical_sha256": "111458073ffb919b2e05a0d620fe66385e5effe9a7d5257cc3be9af1ddae9339",
+      "source": "Source_Generated/behavior_limp/pachycephalosaurus_revision2.png",
+      "source_sha256": "961c932bcdc4b17058aea332271930f998d3ff20de689e1f72b74d4230cda11e",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "8bbcb5318806524fd4ac0590877a6262c04fcce22a97b2688ad5cbb70481cf11",
+      "changed_pixels": 1444,
+      "silhouette_iou": 0.9464,
+      "extent_ratios": [
+        0.9756,
+        1.0
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/pachycephalosaurus_limp_E_002.png",
+      "species": "pachycephalosaurus",
+      "state": "limp",
+      "direction": "E",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/pachycephalosaurus_walk_E_002.png",
+      "canonical_sha256": "8a410acba07492b7057381aa91ad49b117b0372a6b51a9bba44023406eae8c0b",
+      "source": "Source_Generated/behavior_limp/pachycephalosaurus_revision2.png",
+      "source_sha256": "961c932bcdc4b17058aea332271930f998d3ff20de689e1f72b74d4230cda11e",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "c27b187a8bfd4ef425b2186513b8bc173a5335e50cb2ff214fba09d33eb6f5bf",
+      "changed_pixels": 1657,
+      "silhouette_iou": 0.9726,
+      "extent_ratios": [
+        1.0,
+        1.02
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/pachycephalosaurus_limp_E_003.png",
+      "species": "pachycephalosaurus",
+      "state": "limp",
+      "direction": "E",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/pachycephalosaurus_walk_E_003.png",
+      "canonical_sha256": "734cb4c81d732a9b9a3de9eb7f44f000ccf704f0a760ace6cbf58f3a5384a7fa",
+      "source": "Source_Generated/behavior_limp/pachycephalosaurus_revision2.png",
+      "source_sha256": "961c932bcdc4b17058aea332271930f998d3ff20de689e1f72b74d4230cda11e",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "61879b9ae1fcef714c5d97aa3dea93c32192d742867f9b553da567f759cd407e",
+      "changed_pixels": 1694,
+      "silhouette_iou": 0.9665,
+      "extent_ratios": [
+        1.0,
+        1.0179
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/pachycephalosaurus_limp_W_002.png",
+      "species": "pachycephalosaurus",
+      "state": "limp",
+      "direction": "W",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/pachycephalosaurus_walk_W_002.png",
+      "canonical_sha256": "d37a5bb4d0bccb20912c6c121812284894c17cc2b4ab474f0fe2994228f5b71e",
+      "source": "Source_Generated/behavior_limp/pachycephalosaurus_revision2.png",
+      "source_sha256": "961c932bcdc4b17058aea332271930f998d3ff20de689e1f72b74d4230cda11e",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "2ad81be5027a37ded29c3a8244ec20f30c513130f54ddc6f4830192edffcd00e",
+      "changed_pixels": 2125,
+      "silhouette_iou": 0.9074,
+      "extent_ratios": [
+        1.0,
+        0.9821
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/pachycephalosaurus_limp_W_003.png",
+      "species": "pachycephalosaurus",
+      "state": "limp",
+      "direction": "W",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/pachycephalosaurus_walk_W_003.png",
+      "canonical_sha256": "7434b22b79c8552adc97e6c7ad0c6eb25969abb1084cb1c2b907945d54363da1",
+      "source": "Source_Generated/behavior_limp/pachycephalosaurus_revision2.png",
+      "source_sha256": "961c932bcdc4b17058aea332271930f998d3ff20de689e1f72b74d4230cda11e",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "6b841e92b8b517d840d69736c3c6fc8c0aac8262c8482752968b753b8d52c853",
+      "changed_pixels": 2048,
+      "silhouette_iou": 0.9642,
+      "extent_ratios": [
+        0.9915,
+        0.9821
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    }
+  ],
+  "registration_overrides": {}
+}

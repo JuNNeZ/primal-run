@@ -1,0 +1,7 @@
+# Avatar sprites
+
+Avatars are **dedicated head portraits**, never full-body crops at runtime. Native64 ×64, origin32,32, four poses for idle/eat/fight/hurt/sneak, matching the playable species palette and cranial anatomy. No tails, backs or added limbs. Carnotaurus horns stay above eyes, not nasal. Triceratops has two brow horns and one smaller nasal horn. Raptors retain their own feather/cheek colour; no unsupported fantasy palettes.
+
+Raw sheets and rejected body sheet live in Source_Generated/avatars. The first generated full-body atlas is rejected. Generated sheets have extra heads and irregular columns: sources.json explicitly records the reviewed head landmarks and unused extras. Extraction uses integer stride3, fixed64 canvas, binary alpha and existing32-colour palette. It may isolate neighbouring sprite fragments; never draw anatomy or recentre by changing per-frame bbox at runtime. Regenerate only the affected source family with same-species canonical reference.
+
+Every export remains prototype_static, production_approved=false, animation_ready=false. Native contact grids, sprite-state browser checks and actual HUD screenshots are evidence, not anatomical approval. Eating/fighting/hurt expressions remain subtle and need player visual review. Reduced motion holds first expression. HUD state priority: hurt, eating, attack/ability, hiding, idle. Simulation pauses freeze its animation clock.

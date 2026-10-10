@@ -1,0 +1,109 @@
+{
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "scope": "Native export assembly; runtime evidence recorded separately",
+  "count": 312,
+  "authored": 88,
+  "native_continuity": 208,
+  "rejected_keypose_fallback": 16,
+  "species": [
+    {
+      "species": "ankylosaurus",
+      "drawn": 8,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 0,
+      "review": "Canonical WALK2/3 source edit: continuous clubtail at alpha192, four limbs, matching armour family/hip. Extent ratios1.00\u20131.0213 and native silhouette IoU0.9099\u20130.9681. Runtime prototype eligible, production unapproved."
+    },
+    {
+      "species": "baryonyx",
+      "drawn": 7,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 1,
+      "review": "Seven usable held-foot trial poses; one continuous tail and two hindlegs/two forearms retained. E3 height ratio1.111 fails extent gate; use original fallback. Minor generated shading changes."
+    },
+    {
+      "species": "carnotaurus",
+      "drawn": 7,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 1,
+      "review": "Reviewed prototype keyposes; Pachy/Para/Galli eight candidates each, Carno seven candidates and rejected North2 native fallback. Named pelvis/tail-root anchors correct source displacement; no bbox recentering or resizing. User anatomy approval and complete animation loop review remain separate."
+    },
+    {
+      "species": "compy",
+      "drawn": 0,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 8,
+      "review": "Native light/dark reviewed. Usable poses retain size, silhouette and tail with held hindfoot. Failed poses retain native fallback; authored changes remain unapproved prototypes."
+    },
+    {
+      "species": "deinonychus",
+      "drawn": 3,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 5,
+      "review": "Native light/dark reviewed. Usable poses retain size, silhouette and tail with held hindfoot. Failed poses retain native fallback; authored changes remain unapproved prototypes."
+    },
+    {
+      "species": "deinosuchus",
+      "drawn": 8,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 0,
+      "review": "Eight usable low crocodilian held-foot trial poses, four limbs and one continuous tail; original markings mostly preserved, minor generated shading changes."
+    },
+    {
+      "species": "gallimimus",
+      "drawn": 8,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 0,
+      "review": "Reviewed prototype keyposes; Pachy/Para/Galli eight candidates each, Carno seven candidates and rejected North2 native fallback. Named pelvis/tail-root anchors correct source displacement; no bbox recentering or resizing. User anatomy approval and complete animation loop review remain separate."
+    },
+    {
+      "species": "pachycephalosaurus",
+      "drawn": 8,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 0,
+      "review": "Reviewed prototype keyposes; Pachy/Para/Galli eight candidates each, Carno seven candidates and rejected North2 native fallback. Named pelvis/tail-root anchors correct source displacement; no bbox recentering or resizing. User anatomy approval and complete animation loop review remain separate."
+    },
+    {
+      "species": "parasaurolophus",
+      "drawn": 8,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 0,
+      "review": "Reviewed prototype keyposes; Pachy/Para/Galli eight candidates each, Carno seven candidates and rejected North2 native fallback. Named pelvis/tail-root anchors correct source displacement; no bbox recentering or resizing. User anatomy approval and complete animation loop review remain separate."
+    },
+    {
+      "species": "triceratops",
+      "drawn": 7,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 1,
+      "review": "Four-leg body, frill and horns remain comparable to native; S2 shifted silhouette rejected. Seven poses preserve body extent; W2 silhouette overlap0.871 is borderline and marked prototype."
+    },
+    {
+      "species": "tyrannosaurus",
+      "drawn": 8,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 0,
+      "review": "Eight usable native-sized held-foot trial poses; single tail and two hindlegs retained. Generated shading/markings are brighter than old poses; preserve prototype caveat and review actual palette-mapped animation."
+    },
+    {
+      "species": "utahraptor",
+      "drawn": 8,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 0,
+      "review": "Native light/dark reviewed. Usable poses retain size, silhouette and tail with held hindfoot. Failed poses retain native fallback; authored changes remain unapproved prototypes."
+    },
+    {
+      "species": "velociraptor",
+      "drawn": 8,
+      "native_continuity": 16,
+      "rejected_keypose_fallback": 0,
+      "review": "Native light/dark reviewed. Usable poses retain size, silhouette and tail with held hindfoot. Failed poses retain native fallback; authored changes remain unapproved prototypes."
+    }
+  ],
+  "technical_validation": "PASS",
+  "validated_pngs": 312,
+  "validated_reused_native_hashes": 224,
+  "validated_authored_source_hashes": 88,
+  "runtime_validation": "Parent-agent browser tests required; PNG validation is not runtime or anatomy approval",
+  "validated_authored_source_reextractions": 88
+}

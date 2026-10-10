@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "frames": 4,
+  "native_size": [
+    64,
+    64
+  ],
+  "padding": true,
+  "palette": true,
+  "binary_alpha": true,
+  "production_approved": false,
+  "scope": "Technical extraction only, not visual animation approval."
+}

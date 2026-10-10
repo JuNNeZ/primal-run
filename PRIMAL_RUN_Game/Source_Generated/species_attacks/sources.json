@@ -1,0 +1,42 @@
+{
+  "status": "Work in progress; no game overlay exported yet",
+  "reference": "Existing species native light previews; retain colours/anatomy/camera and all old fallbacks",
+  "layout": "requested1536x1024,6columns4rows,S/N/E/W,attack6contact3",
+  "entries": [
+    {
+      "file": "pachycephalosaurus_headbutt_prototype.png",
+      "sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+      "status": "prototype_static",
+      "integrated": false,
+      "review": "Parasaurolophus lateral rows changed to pure side profile: reject. Other sheets need palette/native pivot and transition review; Ankylosaurus last South tail differs from ready stance."
+    },
+    {
+      "file": "ankylosaurus_tail_sweep_prototype.png",
+      "sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+      "status": "prototype_static",
+      "integrated": false,
+      "review": "Parasaurolophus lateral rows changed to pure side profile: reject. Other sheets need palette/native pivot and transition review; Ankylosaurus last South tail differs from ready stance."
+    },
+    {
+      "file": "parasaurolophus_kick_rejected.png",
+      "sha256": "c5f06dab4a51101b154e40a11ec3ecf2e40c131c8258efed829a9d7877f60509",
+      "status": "rejected",
+      "integrated": false,
+      "review": "Parasaurolophus lateral rows changed to pure side profile: reject. Other sheets need palette/native pivot and transition review; Ankylosaurus last South tail differs from ready stance."
+    },
+    {
+      "file": "gallimimus_peck_prototype.png",
+      "sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+      "status": "prototype_static",
+      "integrated": false,
+      "review": "Parasaurolophus lateral rows changed to pure side profile: reject. Other sheets need palette/native pivot and transition review; Ankylosaurus last South tail differs from ready stance."
+    },
+    {
+      "file": "triceratops_horn_thrust_prototype.png",
+      "sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+      "status": "prototype_static",
+      "integrated": false,
+      "review": "Parasaurolophus lateral rows changed to pure side profile: reject. Other sheets need palette/native pivot and transition review; Ankylosaurus last South tail differs from ready stance."
+    }
+  ]
+}

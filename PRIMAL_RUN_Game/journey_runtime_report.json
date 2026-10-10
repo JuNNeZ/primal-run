@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "checks": [
+    "seed link enters secret intro and one-level route",
+    "Velociraptor starter plus actual tiny Compy flocks",
+    "NPC baseline stamina/windup and capsule length match active ability",
+    "named secret boss, intentional confirm and final victory"
+  ],
+  "telegraph": {
+    "arcs": [
+      [
+        432,
+        340,
+        38,
+        1.5707963267948966,
+        4.71238898038469
+      ],
+      [
+        600,
+        340,
+        38,
+        4.71238898038469,
+        7.853981633974483
+      ]
+    ],
+    "length": 168,
+    "cost": 45,
+    "skill": "STORMLØB"
+  },
+  "production_approved": false
+}

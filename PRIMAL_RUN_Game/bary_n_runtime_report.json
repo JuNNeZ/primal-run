@@ -1,0 +1,17 @@
+{
+  "runtime": "standalone Chromium",
+  "status": "PASS",
+  "checked": 1080,
+  "states": 6,
+  "species": 9,
+  "directions": 4,
+  "checks": [
+    "1080 actual drawn frames",
+    "six states/four directions/nine classes",
+    "native144 and registered origins",
+    "stable species body collision/no smoothing",
+    "pause freezes animation",
+    "actual hurt/death transitions and terminal corpse"
+  ],
+  "production_approved": false
+}

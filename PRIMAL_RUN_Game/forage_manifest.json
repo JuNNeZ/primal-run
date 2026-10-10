@@ -1,0 +1,218 @@
+[
+  {
+    "file": "assets/forage/fruit_0.png",
+    "food_type": "fruit",
+    "variant": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/forage/food_pickups.png",
+    "source_sha256": "7e921aace6d5f006331ff800a1bbdac06c1e2ddba0eee20e9d97b9e7ddf01f07",
+    "export_sha256": "e7676ef1ecc10be8c2a28fc2e0b0281ac8798acf2dc5fe90e2ad5a8abf1bd779",
+    "source_crop": [
+      0,
+      0,
+      384,
+      512
+    ],
+    "source_sample_stride": 8,
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/forage/fruit_1.png",
+    "food_type": "fruit",
+    "variant": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/forage/food_pickups.png",
+    "source_sha256": "7e921aace6d5f006331ff800a1bbdac06c1e2ddba0eee20e9d97b9e7ddf01f07",
+    "export_sha256": "b364620b77cd73ac66a39f7628ec3c665199b6e6cc69057ff690eddf2f45987c",
+    "source_crop": [
+      384,
+      0,
+      768,
+      512
+    ],
+    "source_sample_stride": 8,
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/forage/roots_0.png",
+    "food_type": "roots",
+    "variant": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/forage/food_pickups.png",
+    "source_sha256": "7e921aace6d5f006331ff800a1bbdac06c1e2ddba0eee20e9d97b9e7ddf01f07",
+    "export_sha256": "3fc9b5ae0e2d3ad80405603fb85c46f3bdab0ae89e852f16f3ce95a2b42b9db3",
+    "source_crop": [
+      768,
+      0,
+      1152,
+      512
+    ],
+    "source_sample_stride": 8,
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/forage/roots_1.png",
+    "food_type": "roots",
+    "variant": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/forage/food_pickups.png",
+    "source_sha256": "7e921aace6d5f006331ff800a1bbdac06c1e2ddba0eee20e9d97b9e7ddf01f07",
+    "export_sha256": "d77f0a5b491ffefd3c7d4dc3eebb6d4929aaa63d6083cd9e0754da82682db8da",
+    "source_crop": [
+      1152,
+      0,
+      1536,
+      512
+    ],
+    "source_sample_stride": 8,
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/forage/mushrooms_0.png",
+    "food_type": "mushrooms",
+    "variant": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/forage/food_pickups.png",
+    "source_sha256": "7e921aace6d5f006331ff800a1bbdac06c1e2ddba0eee20e9d97b9e7ddf01f07",
+    "export_sha256": "9f0d2b1d55847595a68f59bd142b92baed41400242461bf4018543079106fd63",
+    "source_crop": [
+      0,
+      512,
+      384,
+      1024
+    ],
+    "source_sample_stride": 8,
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/forage/mushrooms_1.png",
+    "food_type": "mushrooms",
+    "variant": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/forage/food_pickups.png",
+    "source_sha256": "7e921aace6d5f006331ff800a1bbdac06c1e2ddba0eee20e9d97b9e7ddf01f07",
+    "export_sha256": "910607b352832823ce258fb0615061e0f2eccbf992bcb63d36bafef134e3f642",
+    "source_crop": [
+      384,
+      512,
+      768,
+      1024
+    ],
+    "source_sample_stride": 8,
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/forage/toxic_mushrooms_0.png",
+    "food_type": "toxic_mushrooms",
+    "variant": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/forage/food_pickups.png",
+    "source_sha256": "7e921aace6d5f006331ff800a1bbdac06c1e2ddba0eee20e9d97b9e7ddf01f07",
+    "export_sha256": "cae70d709ccac1d46c7c9f942ed6a190b4b2210b075e62b7a147b4df3c668250",
+    "source_crop": [
+      768,
+      512,
+      1152,
+      1024
+    ],
+    "source_sample_stride": 8,
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/forage/toxic_mushrooms_1.png",
+    "food_type": "toxic_mushrooms",
+    "variant": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/forage/food_pickups.png",
+    "source_sha256": "7e921aace6d5f006331ff800a1bbdac06c1e2ddba0eee20e9d97b9e7ddf01f07",
+    "export_sha256": "d6a041ee2c66e6c8e85b65d006525cb4fac493529bc63c6c10d7e2ec594580a8",
+    "source_crop": [
+      1152,
+      512,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 8,
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "source": "PRIMAL_RUN_Game/assets/player_full/baryonyx_idle_W_000.png",
+  "sha256": "b85ec0234339136c8bde16cacd9ef70e1ab6b77f5961633b107b41317f0c8146",
+  "direction": "W",
+  "native_bbox": [
+    12,
+    55,
+    131,
+    96
+  ],
+  "layout": [
+    1536,
+    1024
+  ],
+  "cell": [
+    384,
+    256
+  ],
+  "hip": [
+    192,
+    128
+  ],
+  "scale": 2,
+  "placement": [
+    48,
+    -16
+  ]
+}

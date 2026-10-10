@@ -1,0 +1,596 @@
+{
+  "triceratops": {
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "anchors": {
+      "S": [
+        [
+          128,
+          118
+        ],
+        [
+          128,
+          118
+        ],
+        [
+          128,
+          118
+        ],
+        [
+          128,
+          118
+        ],
+        [
+          128,
+          118
+        ],
+        [
+          128,
+          118
+        ]
+      ],
+      "N": [
+        [
+          128,
+          140
+        ],
+        [
+          128,
+          140
+        ],
+        [
+          128,
+          140
+        ],
+        [
+          128,
+          140
+        ],
+        [
+          128,
+          140
+        ],
+        [
+          128,
+          140
+        ]
+      ],
+      "E": [
+        [
+          130,
+          128
+        ],
+        [
+          130,
+          128
+        ],
+        [
+          130,
+          128
+        ],
+        [
+          130,
+          128
+        ],
+        [
+          130,
+          128
+        ],
+        [
+          130,
+          128
+        ]
+      ],
+      "W": [
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ]
+      ]
+    },
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  "ankylosaurus": {
+    "reuse_native_family": "player_full",
+    "rejected_generation": {
+      "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+      "anchors": {
+        "S": [
+          [
+            142,
+            141
+          ],
+          [
+            142,
+            141
+          ],
+          [
+            142,
+            141
+          ],
+          [
+            142,
+            141
+          ],
+          [
+            142,
+            141
+          ],
+          [
+            142,
+            141
+          ]
+        ],
+        "N": [
+          [
+            142,
+            141
+          ],
+          [
+            142,
+            141
+          ],
+          [
+            142,
+            141
+          ],
+          [
+            142,
+            141
+          ],
+          [
+            142,
+            141
+          ],
+          [
+            142,
+            141
+          ]
+        ],
+        "E": [
+          [
+            142,
+            135
+          ],
+          [
+            142,
+            135
+          ],
+          [
+            142,
+            135
+          ],
+          [
+            142,
+            135
+          ],
+          [
+            142,
+            135
+          ],
+          [
+            142,
+            135
+          ]
+        ],
+        "W": [
+          [
+            126,
+            135
+          ],
+          [
+            126,
+            135
+          ],
+          [
+            126,
+            135
+          ],
+          [
+            126,
+            135
+          ],
+          [
+            126,
+            135
+          ],
+          [
+            126,
+            135
+          ]
+        ]
+      },
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "last_south_override": "Source_Generated/species_attacks/ankylosaurus_recovery_revision1.png",
+      "rejected_reason": "Body volume, armour landmarks and tail proportions diverge from the preserved living species."
+    },
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  "pachycephalosaurus": {
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "anchors": {
+      "S": [
+        [
+          128,
+          124
+        ],
+        [
+          128,
+          124
+        ],
+        [
+          128,
+          124
+        ],
+        [
+          128,
+          124
+        ],
+        [
+          128,
+          124
+        ],
+        [
+          128,
+          124
+        ]
+      ],
+      "N": [
+        [
+          128,
+          126
+        ],
+        [
+          128,
+          126
+        ],
+        [
+          128,
+          126
+        ],
+        [
+          128,
+          126
+        ],
+        [
+          128,
+          126
+        ],
+        [
+          128,
+          126
+        ]
+      ],
+      "E": [
+        [
+          126,
+          129
+        ],
+        [
+          126,
+          129
+        ],
+        [
+          126,
+          129
+        ],
+        [
+          126,
+          129
+        ],
+        [
+          126,
+          129
+        ],
+        [
+          126,
+          129
+        ]
+      ],
+      "W": [
+        [
+          127,
+          134
+        ],
+        [
+          127,
+          134
+        ],
+        [
+          127,
+          134
+        ],
+        [
+          127,
+          134
+        ],
+        [
+          127,
+          134
+        ],
+        [
+          127,
+          134
+        ]
+      ]
+    },
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  "gallimimus": {
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "anchors": {
+      "S": [
+        [
+          128,
+          112
+        ],
+        [
+          128,
+          112
+        ],
+        [
+          128,
+          112
+        ],
+        [
+          128,
+          112
+        ],
+        [
+          128,
+          112
+        ],
+        [
+          128,
+          112
+        ]
+      ],
+      "N": [
+        [
+          128,
+          143
+        ],
+        [
+          128,
+          143
+        ],
+        [
+          128,
+          143
+        ],
+        [
+          128,
+          143
+        ],
+        [
+          128,
+          143
+        ],
+        [
+          128,
+          143
+        ]
+      ],
+      "E": [
+        [
+          132,
+          117
+        ],
+        [
+          132,
+          117
+        ],
+        [
+          132,
+          117
+        ],
+        [
+          132,
+          117
+        ],
+        [
+          132,
+          117
+        ],
+        [
+          132,
+          117
+        ]
+      ],
+      "W": [
+        [
+          130,
+          114
+        ],
+        [
+          130,
+          114
+        ],
+        [
+          130,
+          114
+        ],
+        [
+          130,
+          114
+        ],
+        [
+          130,
+          114
+        ],
+        [
+          130,
+          114
+        ]
+      ]
+    },
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  "parasaurolophus": {
+    "source": "Source_Generated/species_attacks/parasaurolophus_kick_revision2.png",
+    "anchors": {
+      "S": [
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ]
+      ],
+      "N": [
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ]
+      ],
+      "E": [
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ]
+      ],
+      "W": [
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ]
+      ]
+    },
+    "alpha_threshold": 192,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "review_only": false,
+    "reason": "A visible kick is now present; body/marking matching requires comparison against the original before enabling runtime.",
+    "source_crop_inset": 8,
+    "cell_exclusions": {
+      "W1": [
+        [
+          0,
+          0,
+          18,
+          256
+        ]
+      ],
+      "W4": [
+        [
+          0,
+          0,
+          18,
+          256
+        ]
+      ]
+    }
+  }
+}

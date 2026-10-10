@@ -1,0 +1,59 @@
+{
+  "result": "PASS",
+  "GDevelop_version": "5.6.283",
+  "scope": "Functional sprite selection, native draw size, fixed render origins, fixed body hitbox, input/state transitions and damage timing; not production art certification.",
+  "browser": {
+    "result": "PASS",
+    "drawn_attack_frames": 24,
+    "checks": [
+      "all 6 frames of Bite_S/N/E/W are actually drawn from the expected source image",
+      "native 128x128 size",
+      "per-direction fixed origin",
+      "nearest-neighbor rendering",
+      "pause freezes attack time",
+      "recovery returns to directional idle",
+      "contact damage only once",
+      "locked aim while strafing"
+    ]
+  },
+  "GDevelop_GDJS_export": {
+    "result": "PASS",
+    "drawn_attack_frames": 24,
+    "exporter": "Official libGD.js/libGD.wasm and GDJS from GDevelop 5.6.283 portable Linux release",
+    "checks": [
+      "same functional scenario as browser",
+      "resource renaming resolved via GDevelop resource metadata",
+      "no pageerrors",
+      "complete gameplay regression suite passed"
+    ]
+  },
+  "web_package": {
+    "result": "PASS",
+    "url_prefix": "/dist/",
+    "checks": [
+      "same attack drawing/timing scenario from static web package"
+    ]
+  },
+  "node_tests": {
+    "passed": 11,
+    "failed": 0,
+    "skipped": 0
+  },
+  "sprite_validation": {
+    "assets": 128,
+    "new_attack_frames": 24,
+    "result": "PASS"
+  },
+  "visual_review": {
+    "native_1x_light_dark": "inspected all 24 frames",
+    "4x": "inspected frame sequence and recorded loops on both backgrounds",
+    "rejected_candidates": "E/W side-profile open-jaw frames replaced with corrected overhead sources",
+    "remaining_limitations": [
+      "minor body/stripe variations between generated poses",
+      "legacy walk/idle transitions require further art refinement",
+      "anatomical hip anchors are manually registered, not independently certified",
+      "full user visual/style approval remains outstanding"
+    ]
+  },
+  "production_approved": false
+}

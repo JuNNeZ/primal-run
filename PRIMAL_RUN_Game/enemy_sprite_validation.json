@@ -1,0 +1,842 @@
+{
+  "technical_export_result": "PASS",
+  "frames": {
+    "assets/enemy_animations/compy_idle_S_000.png": {
+      "bbox": [
+        51,
+        20,
+        80,
+        94
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 865
+    },
+    "assets/enemy_animations/compy_step_left_S_000.png": {
+      "bbox": [
+        51,
+        19,
+        80,
+        94
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 917
+    },
+    "assets/enemy_animations/compy_step_right_S_000.png": {
+      "bbox": [
+        50,
+        17,
+        79,
+        91
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 909
+    },
+    "assets/enemy_animations/compy_action_S_000.png": {
+      "bbox": [
+        53,
+        17,
+        82,
+        90
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 970
+    },
+    "assets/enemy_animations/compy_idle_E_000.png": {
+      "bbox": [
+        22,
+        51,
+        112,
+        79
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1001
+    },
+    "assets/enemy_animations/compy_step_left_E_000.png": {
+      "bbox": [
+        23,
+        44,
+        112,
+        78
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1025
+    },
+    "assets/enemy_animations/compy_step_right_E_000.png": {
+      "bbox": [
+        23,
+        44,
+        112,
+        76
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1014
+    },
+    "assets/enemy_animations/compy_action_E_000.png": {
+      "bbox": [
+        23,
+        44,
+        112,
+        78
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1025
+    },
+    "assets/enemy_animations/compy_idle_N_000.png": {
+      "bbox": [
+        48,
+        23,
+        78,
+        101
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 917
+    },
+    "assets/enemy_animations/compy_step_left_N_000.png": {
+      "bbox": [
+        48,
+        22,
+        78,
+        101
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 876
+    },
+    "assets/enemy_animations/compy_step_right_N_000.png": {
+      "bbox": [
+        48,
+        20,
+        78,
+        100
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 880
+    },
+    "assets/enemy_animations/compy_action_N_000.png": {
+      "bbox": [
+        47,
+        25,
+        77,
+        99
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 910
+    },
+    "assets/enemy_animations/compy_idle_W_000.png": {
+      "bbox": [
+        14,
+        51,
+        106,
+        79
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 992
+    },
+    "assets/enemy_animations/compy_step_left_W_000.png": {
+      "bbox": [
+        12,
+        44,
+        102,
+        78
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1040
+    },
+    "assets/enemy_animations/compy_step_right_W_000.png": {
+      "bbox": [
+        15,
+        47,
+        107,
+        78
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1024
+    },
+    "assets/enemy_animations/compy_action_W_000.png": {
+      "bbox": [
+        12,
+        44,
+        102,
+        78
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1040
+    },
+    "assets/enemy_animations/parasaurolophus_idle_S_000.png": {
+      "bbox": [
+        46,
+        10,
+        84,
+        105
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1976
+    },
+    "assets/enemy_animations/parasaurolophus_step_left_S_000.png": {
+      "bbox": [
+        46,
+        9,
+        86,
+        106
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2025
+    },
+    "assets/enemy_animations/parasaurolophus_step_right_S_000.png": {
+      "bbox": [
+        50,
+        8,
+        87,
+        106
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2017
+    },
+    "assets/enemy_animations/parasaurolophus_action_S_000.png": {
+      "bbox": [
+        49,
+        11,
+        83,
+        109
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1825
+    },
+    "assets/enemy_animations/parasaurolophus_idle_E_000.png": {
+      "bbox": [
+        9,
+        43,
+        120,
+        83
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2105
+    },
+    "assets/enemy_animations/parasaurolophus_step_left_E_000.png": {
+      "bbox": [
+        9,
+        36,
+        120,
+        80
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2112
+    },
+    "assets/enemy_animations/parasaurolophus_step_right_E_000.png": {
+      "bbox": [
+        8,
+        38,
+        120,
+        84
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2187
+    },
+    "assets/enemy_animations/parasaurolophus_action_E_000.png": {
+      "bbox": [
+        6,
+        40,
+        124,
+        81
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2260
+    },
+    "assets/enemy_animations/parasaurolophus_idle_N_000.png": {
+      "bbox": [
+        46,
+        8,
+        83,
+        107
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2058
+    },
+    "assets/enemy_animations/parasaurolophus_step_left_N_000.png": {
+      "bbox": [
+        45,
+        8,
+        81,
+        109
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2041
+    },
+    "assets/enemy_animations/parasaurolophus_step_right_N_000.png": {
+      "bbox": [
+        46,
+        6,
+        83,
+        105
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1952
+    },
+    "assets/enemy_animations/parasaurolophus_action_N_000.png": {
+      "bbox": [
+        47,
+        8,
+        82,
+        107
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1850
+    },
+    "assets/enemy_animations/parasaurolophus_idle_W_000.png": {
+      "bbox": [
+        6,
+        40,
+        113,
+        81
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2015
+    },
+    "assets/enemy_animations/parasaurolophus_step_left_W_000.png": {
+      "bbox": [
+        6,
+        40,
+        114,
+        81
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2072
+    },
+    "assets/enemy_animations/parasaurolophus_step_right_W_000.png": {
+      "bbox": [
+        6,
+        37,
+        115,
+        79
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2082
+    },
+    "assets/enemy_animations/parasaurolophus_action_W_000.png": {
+      "bbox": [
+        6,
+        39,
+        114,
+        80
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2131
+    },
+    "assets/enemy_animations/carnotaurus_idle_S_000.png": {
+      "bbox": [
+        45,
+        5,
+        84,
+        105
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1991
+    },
+    "assets/enemy_animations/carnotaurus_step_left_S_000.png": {
+      "bbox": [
+        45,
+        5,
+        84,
+        105
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1991
+    },
+    "assets/enemy_animations/carnotaurus_step_right_S_000.png": {
+      "bbox": [
+        46,
+        8,
+        84,
+        108
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2003
+    },
+    "assets/enemy_animations/carnotaurus_action_S_000.png": {
+      "bbox": [
+        46,
+        13,
+        84,
+        107
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1954
+    },
+    "assets/enemy_animations/carnotaurus_idle_E_000.png": {
+      "bbox": [
+        4,
+        38,
+        117,
+        82
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2117
+    },
+    "assets/enemy_animations/carnotaurus_step_left_E_000.png": {
+      "bbox": [
+        6,
+        43,
+        119,
+        89
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2060
+    },
+    "assets/enemy_animations/carnotaurus_step_right_E_000.png": {
+      "bbox": [
+        6,
+        40,
+        117,
+        86
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2181
+    },
+    "assets/enemy_animations/carnotaurus_action_E_000.png": {
+      "bbox": [
+        5,
+        40,
+        121,
+        85
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2316
+    },
+    "assets/enemy_animations/carnotaurus_idle_N_000.png": {
+      "bbox": [
+        46,
+        16,
+        82,
+        118
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2005
+    },
+    "assets/enemy_animations/carnotaurus_step_left_N_000.png": {
+      "bbox": [
+        46,
+        18,
+        82,
+        116
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1922
+    },
+    "assets/enemy_animations/carnotaurus_step_right_N_000.png": {
+      "bbox": [
+        46,
+        14,
+        83,
+        115
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2002
+    },
+    "assets/enemy_animations/carnotaurus_action_N_000.png": {
+      "bbox": [
+        46,
+        18,
+        82,
+        116
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1922
+    },
+    "assets/enemy_animations/carnotaurus_idle_W_000.png": {
+      "bbox": [
+        4,
+        42,
+        113,
+        83
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2056
+    },
+    "assets/enemy_animations/carnotaurus_step_left_W_000.png": {
+      "bbox": [
+        3,
+        40,
+        112,
+        88
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1997
+    },
+    "assets/enemy_animations/carnotaurus_step_right_W_000.png": {
+      "bbox": [
+        3,
+        41,
+        112,
+        85
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2093
+    },
+    "assets/enemy_animations/carnotaurus_action_W_000.png": {
+      "bbox": [
+        3,
+        40,
+        112,
+        85
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2285
+    },
+    "assets/enemy_animations/ankylosaurus_idle_S_000.png": {
+      "bbox": [
+        41,
+        9,
+        88,
+        104
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2616
+    },
+    "assets/enemy_animations/ankylosaurus_step_left_S_000.png": {
+      "bbox": [
+        41,
+        14,
+        89,
+        108
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2599
+    },
+    "assets/enemy_animations/ankylosaurus_step_right_S_000.png": {
+      "bbox": [
+        41,
+        12,
+        89,
+        105
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2489
+    },
+    "assets/enemy_animations/ankylosaurus_action_S_000.png": {
+      "bbox": [
+        33,
+        12,
+        92,
+        101
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2877
+    },
+    "assets/enemy_animations/ankylosaurus_idle_E_000.png": {
+      "bbox": [
+        11,
+        44,
+        114,
+        90
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2439
+    },
+    "assets/enemy_animations/ankylosaurus_step_left_E_000.png": {
+      "bbox": [
+        2,
+        45,
+        108,
+        93
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2499
+    },
+    "assets/enemy_animations/ankylosaurus_step_right_E_000.png": {
+      "bbox": [
+        10,
+        41,
+        114,
+        89
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2561
+    },
+    "assets/enemy_animations/ankylosaurus_action_E_000.png": {
+      "bbox": [
+        19,
+        17,
+        114,
+        91
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 3140
+    },
+    "assets/enemy_animations/ankylosaurus_idle_N_000.png": {
+      "bbox": [
+        42,
+        12,
+        89,
+        105
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2394
+    },
+    "assets/enemy_animations/ankylosaurus_step_left_N_000.png": {
+      "bbox": [
+        42,
+        9,
+        89,
+        101
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2538
+    },
+    "assets/enemy_animations/ankylosaurus_step_right_N_000.png": {
+      "bbox": [
+        42,
+        13,
+        89,
+        109
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2508
+    },
+    "assets/enemy_animations/ankylosaurus_action_N_000.png": {
+      "bbox": [
+        26,
+        6,
+        90,
+        90
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2848
+    },
+    "assets/enemy_animations/ankylosaurus_idle_W_000.png": {
+      "bbox": [
+        16,
+        44,
+        112,
+        90
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2403
+    },
+    "assets/enemy_animations/ankylosaurus_step_left_W_000.png": {
+      "bbox": [
+        4,
+        38,
+        106,
+        87
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2506
+    },
+    "assets/enemy_animations/ankylosaurus_step_right_W_000.png": {
+      "bbox": [
+        4,
+        42,
+        106,
+        89
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 2566
+    },
+    "assets/enemy_animations/ankylosaurus_action_W_000.png": {
+      "bbox": [
+        4,
+        10,
+        81,
+        84
+      ],
+      "origin": [
+        64,
+        64
+      ],
+      "opaque_pixels": 3148
+    }
+  },
+  "new_enemy_assets": 64,
+  "errors": [],
+  "production_approved": false,
+  "visual_review": "Native1x dark/light grids and enemy_review.html4x. Generated studies have minor anatomy/marking/registration variation. No production visual approval. Rejected clips and lateral Compy gapes excluded.",
+  "scope": "RGBA binary alpha, palette, native size, fixed declared pivots, source SHA, padding, inventory and distinct stride images. Does not prove anatomical alignment or temporal art quality."
+}

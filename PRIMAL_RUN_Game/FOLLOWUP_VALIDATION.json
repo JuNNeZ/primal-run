@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-10",
+  "unitTests": 136,
+  "browserSuites": 20,
+  "kitChecks": 3,
+  "result": "PASS",
+  "engine": "Chromium; GDevelop engine not run",
+  "pngResources": 2284,
+  "allResources": 2292,
+  "playerFullPNG": 1080,
+  "avatars": 240,
+  "speciesAttackPNG": 96,
+  "foragePNG": 8,
+  "artStatus": "prototype_static; production_approved=false; animation_ready=false",
+  "coreSHA256": "149132549ab94c9cc7fde61ae055c7a54efd458c8d60d3749556090c7af41502",
+  "remaining": [
+    "Parasaurolophus kick rejected, not integrated",
+    "A2 complete stable anatomy/breathing sequences",
+    "A3 additional carcasses/skeletons",
+    "A4 biome terrain/water overhaul",
+    "A5 enemy ability expansion",
+    "B balance campaign and boss-specific death telemetry"
+  ],
+  "publication": "Source branch only; gh-pages unchanged"
+}

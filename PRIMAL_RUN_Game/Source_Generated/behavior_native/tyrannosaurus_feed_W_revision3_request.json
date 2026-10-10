@@ -1,0 +1,24 @@
+{
+  "species": "tyrannosaurus",
+  "action": "feed",
+  "all_rows_direction": "W",
+  "source": "tyrannosaurus_feed_W_revision3.png",
+  "source_sha256": "7ea07ecab7a27b1e50dad8410a3757dd9492e7dd1590c34ff2ca04c923fcce89",
+  "reference": "tyrannosaurus_feed_W_canonical_layout.png",
+  "reference_sha256": "7ada060c8c2e2f16f011ebdb7c4e3175dd4415a161166838d972bc03db126cdf",
+  "prompt": "Faithfully edit the attached sheet, keeping all 16 exact same canonical tyrannosaurus sprites facing W. TRANSPARENT 1536x1024,4columns384x4rows256. Every row SAME direction W, NOT otherdirections. Hip EXACT192,128 within everycell. Everyanimals EXACTnative144x144 enlarged2x placed48,-16. DO NOT enlarge,bloat or reposition any sprite. Exactcanonicaloutline,extents,bodythickness,tailcurve,colours. Columns0/1 sniff andcolumns2/3drink:ONLYheadtip moves2sourcepixels, neckquiet, closedmouth; no water props. Bodyoutlinefeet/tailmustremainoldexact. Two identicalreference bodycopies per action canhave2pixelheadchange only. Crisp existingcoarsepixels preserved, NO highresolution repaint,no addedhair/limbs/shadows. Match given anatomy exactly, minimal drawing.",
+  "revision": 3,
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "cell": [
+    384,
+    256
+  ],
+  "hip": [
+    192,
+    128
+  ],
+  "sample": 2,
+  "review_status": "awaiting native ratio comparison; final attempt"
+}

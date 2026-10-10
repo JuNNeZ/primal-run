@@ -1,0 +1,36 @@
+{
+  "runtime": "GDevelop GDJS",
+  "startup": {
+    "loaded": 536,
+    "total": 1176,
+    "decodedBytes": 39880704
+  },
+  "performance": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "frames": 180,
+    "animals": 45,
+    "meanMs": 1.7094444444403052,
+    "p95Ms": 3.099999997764826,
+    "assets": {
+      "loaded": 793,
+      "total": 1176,
+      "decodedBytes": 67435520
+    },
+    "heapBytes": 17029560
+  },
+  "scope": "cloud Chromium with phone viewport; no physical phone measurement",
+  "checks": [
+    "F portions",
+    "joystick movement/release",
+    "seed",
+    "remapping",
+    "scaling",
+    "gamepad eating/movement/pause",
+    "fog",
+    "lazy boot"
+  ],
+  "errors": []
+}

@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-08",
+  "status": "PASS",
+  "source_sha256": {
+    "src/core.js": "b147f2aa7aeab2c47b1728c9ef993ad1e14522678d41483bf3a99a8314fe27fc",
+    "src/app.js": "fbbe6f12219460ccc194c8e8b3f10cbcaac76f7b2b4aea21229d4211022f3799",
+    "src/audio.js": "8c05993c669bd89459bb52b885409f590d5d84815b4dc4fb23e99b536ee42010",
+    "style.css": "f5123fdcb5a803a30c5a703a83a3f9535532b880c63bf2310b39d4f7f0cf1fa9"
+  },
+  "core_tests": 37,
+  "standalone": {
+    "runtime": "standalone browser",
+    "status": "PASS",
+    "terrain": [
+      {
+        "stage": 0,
+        "brightness": 1761986,
+        "trails": 0,
+        "regions": 28,
+        "smoothing": false,
+        "propTypes": [
+          "assets/props/flower_bush.png",
+          "assets/props/fern_large.png",
+          "assets/props/tree_canopy.png",
+          "assets/props/fallen_log.png",
+          "assets/environment/fern.png"
+        ]
+      },
+      {
+        "stage": 1,
+        "brightness": 3696874,
+        "trails": 0,
+        "regions": 28,
+        "smoothing": false,
+        "propTypes": [
+          "assets/props/fern_large.png",
+          "assets/props/tree_canopy.png",
+          "assets/props/fallen_log.png",
+          "assets/props/flower_bush.png",
+          "assets/environment/fern.png"
+        ]
+      },
+      {
+        "stage": 2,
+        "brightness": 2724483,
+        "trails": 0,
+        "regions": 28,
+        "smoothing": false,
+        "propTypes": [
+          "assets/props/boulder_large.png",
+          "assets/props/fern_large.png",
+          "assets/props/dead_tree.png",
+          "assets/props/flower_bush.png",
+          "assets/environment/fern.png"
+        ]
+      },
+      {
+        "stage": 3,
+        "brightness": 1864533,
+        "trails": 0,
+        "regions": 28,
+        "smoothing": false,
+        "propTypes": [
+          "assets/props/dead_tree.png",
+          "assets/props/ribcage.png",
+          "assets/props/fern_large.png",
+          "assets/props/meteorite.png",
+          "assets/props/lava_rock.png"
+        ]
+      }
+    ],
+    "fight": {
+      "phase": "cleared",
+      "seconds": 37.48333333333249,
+      "health": 100,
+      "dna": 15,
+      "modes": [
+        "1:chase",
+        "1:windup",
+        "1:charge",
+        "1:recover",
+        "1:bite",
+        "2:enrage",
+        "2:chase",
+        "2:windup",
+        "2:charge",
+        "2:recover",
+        "2:bite",
+        "2:slam"
+      ]
+    },
+    "checks": [
+      "four rendered biomes",
+      "native sprites/no smoothing",
+      "contact particles/hit-stop/recovery weak point",
+      "paused FX",
+      "phase-two HUD and double-charge warning",
+      "full first-boss fight through normal simulation inputs without HP edits"
+    ]
+  },
+  "gdevelop": {
+    "runtime": "official GDevelop GDJS 5.6.283",
+    "status": "PASS",
+    "terrain": [
+      {
+        "stage": 0,
+        "brightness": 1761986,
+        "trails": 0,
+        "regions": 28,
+        "smoothing": false,
+        "propTypes": [
+          "assets/props/flower_bush.png",
+          "assets/props/fern_large.png",
+          "assets/props/tree_canopy.png",
+          "assets/props/fallen_log.png",
+          "assets/environment/fern.png"
+        ]
+      },
+      {
+        "stage": 1,
+        "brightness": 3696874,
+        "trails": 0,
+        "regions": 28,
+        "smoothing": false,
+        "propTypes": [
+          "assets/props/fern_large.png",
+          "assets/props/tree_canopy.png",
+          "assets/props/fallen_log.png",
+          "assets/props/flower_bush.png",
+          "assets/environment/fern.png"
+        ]
+      },
+      {
+        "stage": 2,
+        "brightness": 2724483,
+        "trails": 0,
+        "regions": 28,
+        "smoothing": false,
+        "propTypes": [
+          "assets/props/boulder_large.png",
+          "assets/props/fern_large.png",
+          "assets/props/dead_tree.png",
+          "assets/props/flower_bush.png",
+          "assets/environment/fern.png"
+        ]
+      },
+      {
+        "stage": 3,
+        "brightness": 1864533,
+        "trails": 0,
+        "regions": 28,
+        "smoothing": false,
+        "propTypes": [
+          "assets/props/dead_tree.png",
+          "assets/props/ribcage.png",
+          "assets/props/fern_large.png",
+          "assets/props/meteorite.png",
+          "assets/props/lava_rock.png"
+        ]
+      }
+    ],
+    "fight": {
+      "phase": "cleared",
+      "seconds": 37.48333333333249,
+      "health": 100,
+      "dna": 15,
+      "modes": [
+        "1:chase",
+        "1:windup",
+        "1:charge",
+        "1:recover",
+        "1:bite",
+        "2:enrage",
+        "2:chase",
+        "2:windup",
+        "2:charge",
+        "2:recover",
+        "2:bite",
+        "2:slam"
+      ]
+    },
+    "checks": [
+      "four rendered biomes",
+      "native sprites/no smoothing",
+      "contact particles/hit-stop/recovery weak point",
+      "paused FX",
+      "phase-two HUD and double-charge warning",
+      "full first-boss fight through normal simulation inputs without HP edits"
+    ]
+  },
+  "scope": "Terrain now seeded wilderness without roads; legacy full first-boss combat regression uses unlocked Utahraptor profile. All class/exploration/later-boss tests are in roguelite_runtime_report.json."
+}

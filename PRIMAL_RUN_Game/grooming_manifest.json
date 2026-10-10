@@ -1,0 +1,2954 @@
+[
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/ankylosaurus_scratch_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/ankylosaurus_revision2.png",
+    "source_sha256": "2f6cd5aca7791d0a41c25a0221f7c9564373f9a36327a4249b364300df43c287",
+    "source_crop": [
+      0,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "62e54900f5c5a3e335be117d4443d1dd01347f1353c8de2077df90751558ffc4",
+    "reference": "assets/player_full/ankylosaurus_idle_S_000.png",
+    "reference_sha256": "58f2552c44b43378ff16066407ce60108f83398a9f0a865daab1e481b9586dd9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/ankylosaurus_scratch_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/ankylosaurus_revision2.png",
+    "source_sha256": "2f6cd5aca7791d0a41c25a0221f7c9564373f9a36327a4249b364300df43c287",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "ffe0c20c665849441467d7c9ac02231511b0fdcd8ed01610a5fd556cb5f8d2d3",
+    "reference": "assets/player_full/ankylosaurus_idle_S_000.png",
+    "reference_sha256": "58f2552c44b43378ff16066407ce60108f83398a9f0a865daab1e481b9586dd9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/ankylosaurus_scratch_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/ankylosaurus_revision2.png",
+    "source_sha256": "2f6cd5aca7791d0a41c25a0221f7c9564373f9a36327a4249b364300df43c287",
+    "source_crop": [
+      0,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "16dff078918c5157a4173fe289c412a31cd70fe33e89220e48c4ddabe5498140",
+    "reference": "assets/player_full/ankylosaurus_idle_N_000.png",
+    "reference_sha256": "1a670f607e0ec71bf24e60914a860c522125a02399cbd0091f94aeee14da5c6f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/ankylosaurus_scratch_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/ankylosaurus_revision2.png",
+    "source_sha256": "2f6cd5aca7791d0a41c25a0221f7c9564373f9a36327a4249b364300df43c287",
+    "source_crop": [
+      768,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "8e85c17c2afee2085a1d0663588bf2db3ec153e6ca5d3900b26d2b77868dc846",
+    "reference": "assets/player_full/ankylosaurus_idle_N_000.png",
+    "reference_sha256": "1a670f607e0ec71bf24e60914a860c522125a02399cbd0091f94aeee14da5c6f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/ankylosaurus_scratch_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/ankylosaurus_revision2.png",
+    "source_sha256": "2f6cd5aca7791d0a41c25a0221f7c9564373f9a36327a4249b364300df43c287",
+    "source_crop": [
+      0,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "a8dfefcb2db0470cd4469b56348ed5eeca78792b3b54f03229688de914884769",
+    "reference": "assets/player_full/ankylosaurus_idle_E_000.png",
+    "reference_sha256": "a30b20f757d7b2e9455b45cfdca3f3b077ed5dedb0d3e5c1975d7bbd29b937b4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/ankylosaurus_scratch_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/ankylosaurus_revision2.png",
+    "source_sha256": "2f6cd5aca7791d0a41c25a0221f7c9564373f9a36327a4249b364300df43c287",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "23d5d5fcc8f66cbfce069990083b0a5b714e1b95d041df8ce989c37f1b5a0202",
+    "reference": "assets/player_full/ankylosaurus_idle_E_000.png",
+    "reference_sha256": "a30b20f757d7b2e9455b45cfdca3f3b077ed5dedb0d3e5c1975d7bbd29b937b4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/ankylosaurus_scratch_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/ankylosaurus_revision2.png",
+    "source_sha256": "2f6cd5aca7791d0a41c25a0221f7c9564373f9a36327a4249b364300df43c287",
+    "source_crop": [
+      0,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "0a973eb4bdec4a3b33022743cf570371d46845ca3b93115ae37e354b7c32d776",
+    "reference": "assets/player_full/ankylosaurus_idle_W_000.png",
+    "reference_sha256": "e6b64eb096add20da2ec520181a7e28e9a4395c47b38d3a3d28cf94a525510c0",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/ankylosaurus_scratch_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/ankylosaurus_revision2.png",
+    "source_sha256": "2f6cd5aca7791d0a41c25a0221f7c9564373f9a36327a4249b364300df43c287",
+    "source_crop": [
+      768,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "8848ec509cdf47582eaae1235ffba7d8b52ce64b121d564271a7be41d235812c",
+    "reference": "assets/player_full/ankylosaurus_idle_W_000.png",
+    "reference_sha256": "e6b64eb096add20da2ec520181a7e28e9a4395c47b38d3a3d28cf94a525510c0",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/baryonyx_scratch_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/baryonyx_revision1.png",
+    "source_sha256": "b657a49d318723d94333db5e5331458b7353f7b0f63a2c41ce4b6f3e22084e6b",
+    "source_crop": [
+      0,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "806fa92e3ce3b0702f5105935a6b3612dc447e486eb91b3146b1d8890e8e81bf",
+    "reference": "assets/player_full/baryonyx_idle_S_000.png",
+    "reference_sha256": "19a0fceef49d4d1323b8ba1c01639b3dbf78fc6a652b4cfd9953c9661a6cb790",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/baryonyx_scratch_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/baryonyx_revision1.png",
+    "source_sha256": "b657a49d318723d94333db5e5331458b7353f7b0f63a2c41ce4b6f3e22084e6b",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "7619b247b0e592d4b870432feea5b70cfafa98cb77dac232d07046a49551383c",
+    "reference": "assets/player_full/baryonyx_idle_S_000.png",
+    "reference_sha256": "19a0fceef49d4d1323b8ba1c01639b3dbf78fc6a652b4cfd9953c9661a6cb790",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/baryonyx_scratch_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/baryonyx_revision1.png",
+    "source_sha256": "b657a49d318723d94333db5e5331458b7353f7b0f63a2c41ce4b6f3e22084e6b",
+    "source_crop": [
+      0,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "54f4d991f7b98344d1885d13b0d0330919de4cc19411b46ded06554c5d8d3ffc",
+    "reference": "assets/player_full/baryonyx_idle_N_000.png",
+    "reference_sha256": "f3e571b0c18a504bac1cfd49f26680ed2e0f39cdc2b0ed1a8bef1471ba888a00",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/baryonyx_scratch_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/baryonyx_revision1.png",
+    "source_sha256": "b657a49d318723d94333db5e5331458b7353f7b0f63a2c41ce4b6f3e22084e6b",
+    "source_crop": [
+      768,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "46297dbc134ab8aca7461df6983c33ded59467e043c199244c01e16c0e689c62",
+    "reference": "assets/player_full/baryonyx_idle_N_000.png",
+    "reference_sha256": "f3e571b0c18a504bac1cfd49f26680ed2e0f39cdc2b0ed1a8bef1471ba888a00",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/baryonyx_scratch_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/baryonyx_revision1.png",
+    "source_sha256": "b657a49d318723d94333db5e5331458b7353f7b0f63a2c41ce4b6f3e22084e6b",
+    "source_crop": [
+      0,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "0d606e1b625e2dca019f878c5a116207539bf347245951fb88d84b732af97279",
+    "reference": "assets/player_full/baryonyx_idle_E_000.png",
+    "reference_sha256": "6a4da4518178b771d312e1a114e5ff20aeda2b2f70e99258bbf2d2cf601e40f9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/baryonyx_scratch_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/baryonyx_revision1.png",
+    "source_sha256": "b657a49d318723d94333db5e5331458b7353f7b0f63a2c41ce4b6f3e22084e6b",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "c0d18f95853ffdaec5233d7f21d0d1df39b44bebe8e59f72bf3be20ed984f597",
+    "reference": "assets/player_full/baryonyx_idle_E_000.png",
+    "reference_sha256": "6a4da4518178b771d312e1a114e5ff20aeda2b2f70e99258bbf2d2cf601e40f9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/baryonyx_scratch_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/baryonyx_revision1.png",
+    "source_sha256": "b657a49d318723d94333db5e5331458b7353f7b0f63a2c41ce4b6f3e22084e6b",
+    "source_crop": [
+      0,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "57ce69273fddb0b2f08396ad24c05f1fbe4a2be10481dbbc2801f0121999a897",
+    "reference": "assets/player_full/baryonyx_idle_W_000.png",
+    "reference_sha256": "b85ec0234339136c8bde16cacd9ef70e1ab6b77f5961633b107b41317f0c8146",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/baryonyx_scratch_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "baryonyx",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/baryonyx_revision1.png",
+    "source_sha256": "b657a49d318723d94333db5e5331458b7353f7b0f63a2c41ce4b6f3e22084e6b",
+    "source_crop": [
+      768,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "f01ae3cc8646c559d1c0b62c6a05b7591ebdfe0b993159e9e05c5691565aa434",
+    "reference": "assets/player_full/baryonyx_idle_W_000.png",
+    "reference_sha256": "b85ec0234339136c8bde16cacd9ef70e1ab6b77f5961633b107b41317f0c8146",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/carnotaurus_scratch_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/carnotaurus_revision1.png",
+    "source_sha256": "d48903ab63a22162dc24337c16e54f78a6d932f18f397077f2b5b393a2fe08d1",
+    "source_crop": [
+      0,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "a9869b984dc92adc1c9afa603ffb86cac0d791d1af6ec5e5479afad84540c281",
+    "reference": "assets/player_full/carnotaurus_idle_S_000.png",
+    "reference_sha256": "8305e32b3f9d0ed451b83e964a1266bd0081cc9558ad15773afc1859e4252d4e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/carnotaurus_scratch_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/carnotaurus_revision1.png",
+    "source_sha256": "d48903ab63a22162dc24337c16e54f78a6d932f18f397077f2b5b393a2fe08d1",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "adc60028f36a6e521bb2fcf7b368719cf120cec2574811a9fa33fbd9d458c196",
+    "reference": "assets/player_full/carnotaurus_idle_S_000.png",
+    "reference_sha256": "8305e32b3f9d0ed451b83e964a1266bd0081cc9558ad15773afc1859e4252d4e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/carnotaurus_scratch_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/carnotaurus_revision1.png",
+    "source_sha256": "d48903ab63a22162dc24337c16e54f78a6d932f18f397077f2b5b393a2fe08d1",
+    "source_crop": [
+      0,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "1fbdc115cf72e7a1b39169dece053000b111425e083a7b44df102f96ec34a837",
+    "reference": "assets/player_full/carnotaurus_idle_N_000.png",
+    "reference_sha256": "95676786d135ed8e081d4e021bfc0ee6c9dce7bc04bd49c5851a0702720fa6db",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/carnotaurus_scratch_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/carnotaurus_revision1.png",
+    "source_sha256": "d48903ab63a22162dc24337c16e54f78a6d932f18f397077f2b5b393a2fe08d1",
+    "source_crop": [
+      768,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "513fd82496d07ee91ce3c8e12177539a372e730a0706f4923ba720b65f70595b",
+    "reference": "assets/player_full/carnotaurus_idle_N_000.png",
+    "reference_sha256": "95676786d135ed8e081d4e021bfc0ee6c9dce7bc04bd49c5851a0702720fa6db",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/carnotaurus_scratch_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/carnotaurus_revision1.png",
+    "source_sha256": "d48903ab63a22162dc24337c16e54f78a6d932f18f397077f2b5b393a2fe08d1",
+    "source_crop": [
+      0,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "a7888244124a77e6a507e21e30f2058e6e84a53d6438838cdc679c1c216e9933",
+    "reference": "assets/player_full/carnotaurus_idle_E_000.png",
+    "reference_sha256": "cb7977b7e04ac400b2822fecba70cb56e18b93277f7cce461c2d3fe74569ce12",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/carnotaurus_scratch_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/carnotaurus_revision1.png",
+    "source_sha256": "d48903ab63a22162dc24337c16e54f78a6d932f18f397077f2b5b393a2fe08d1",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "5c7d04f5fd65bd43a21f0b2657a7b1dfc70e3f3f87f27c4a910ba0caba138325",
+    "reference": "assets/player_full/carnotaurus_idle_E_000.png",
+    "reference_sha256": "cb7977b7e04ac400b2822fecba70cb56e18b93277f7cce461c2d3fe74569ce12",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/carnotaurus_scratch_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/carnotaurus_revision1.png",
+    "source_sha256": "d48903ab63a22162dc24337c16e54f78a6d932f18f397077f2b5b393a2fe08d1",
+    "source_crop": [
+      0,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "5c4f000d6d9a60f3ca185000d9f74ea2540f4ae48a98db18e373cf67cb26ac87",
+    "reference": "assets/player_full/carnotaurus_idle_W_000.png",
+    "reference_sha256": "cc481d699c807eae728a36a99b192be46f749d06adf55e9b6af1248b3da15607",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/carnotaurus_scratch_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "carnotaurus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/carnotaurus_revision1.png",
+    "source_sha256": "d48903ab63a22162dc24337c16e54f78a6d932f18f397077f2b5b393a2fe08d1",
+    "source_crop": [
+      768,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "665940b69789adf11e8afe1edf57c60677a399941cf5fb3381bafe3878d73fa6",
+    "reference": "assets/player_full/carnotaurus_idle_W_000.png",
+    "reference_sha256": "cc481d699c807eae728a36a99b192be46f749d06adf55e9b6af1248b3da15607",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/deinosuchus_scratch_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/deinosuchus_revision1.png",
+    "source_sha256": "c6c9b5a9941ddd758f9f5e94f98f4065433ed2868a0830dde8514d72a1a60cbd",
+    "source_crop": [
+      0,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "e138762c90eee77770fe8ba3cf69989fcd3d0b90a34384f5a05cc6a5043bf1cc",
+    "reference": "assets/enemy_full/deinosuchus_idle_S_000.png",
+    "reference_sha256": "72b11ff39af2314217aebea0067107c2b6f4fa0b7af0ec9dada06b7859039fd5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/deinosuchus_scratch_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/deinosuchus_revision1.png",
+    "source_sha256": "c6c9b5a9941ddd758f9f5e94f98f4065433ed2868a0830dde8514d72a1a60cbd",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "6c2788b068538ac86cb0891895863b1824e886e4a329b6ace3e4be9f6d9e5a57",
+    "reference": "assets/enemy_full/deinosuchus_idle_S_000.png",
+    "reference_sha256": "72b11ff39af2314217aebea0067107c2b6f4fa0b7af0ec9dada06b7859039fd5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/deinosuchus_scratch_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/deinosuchus_revision1.png",
+    "source_sha256": "c6c9b5a9941ddd758f9f5e94f98f4065433ed2868a0830dde8514d72a1a60cbd",
+    "source_crop": [
+      0,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "023e58e9c883630c4d3c311ef2904667e187f4f85467f25a6f57f5353ea04311",
+    "reference": "assets/enemy_full/deinosuchus_idle_N_000.png",
+    "reference_sha256": "a9e0df9208b9d62eced2ab193561118982d5bc51e3787b82e3f7faeddcbb5bc1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/deinosuchus_scratch_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/deinosuchus_revision1.png",
+    "source_sha256": "c6c9b5a9941ddd758f9f5e94f98f4065433ed2868a0830dde8514d72a1a60cbd",
+    "source_crop": [
+      768,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "2b2db92e05dfb32258f4bcc8492e934ae49db3c0c70dc208186c5a5a861e0d6a",
+    "reference": "assets/enemy_full/deinosuchus_idle_N_000.png",
+    "reference_sha256": "a9e0df9208b9d62eced2ab193561118982d5bc51e3787b82e3f7faeddcbb5bc1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/deinosuchus_scratch_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/deinosuchus_revision1.png",
+    "source_sha256": "c6c9b5a9941ddd758f9f5e94f98f4065433ed2868a0830dde8514d72a1a60cbd",
+    "source_crop": [
+      0,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "a8c5bb5da44c240996fb5825bb34652914368c2bf509502b0256cdf5788c0d47",
+    "reference": "assets/enemy_full/deinosuchus_idle_E_000.png",
+    "reference_sha256": "2e56f0df2118b19d13514a176ce92f24ffee96193290c7d9512c212581c49db1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/deinosuchus_scratch_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/deinosuchus_revision1.png",
+    "source_sha256": "c6c9b5a9941ddd758f9f5e94f98f4065433ed2868a0830dde8514d72a1a60cbd",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "c7f23c2651424bc49ada18e6986e1bac80c73fef627e856c738370d9eb0460aa",
+    "reference": "assets/enemy_full/deinosuchus_idle_E_000.png",
+    "reference_sha256": "2e56f0df2118b19d13514a176ce92f24ffee96193290c7d9512c212581c49db1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/deinosuchus_scratch_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/deinosuchus_revision1.png",
+    "source_sha256": "c6c9b5a9941ddd758f9f5e94f98f4065433ed2868a0830dde8514d72a1a60cbd",
+    "source_crop": [
+      0,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "3027b5a2fd504eafee112fdcd6ff296b49ca4ba2910d77d0f4b0377ee874c263",
+    "reference": "assets/enemy_full/deinosuchus_idle_W_000.png",
+    "reference_sha256": "706ad4ee89fcddfc6739d00d75ed32570f28f702fac8b5b733d98f79970449e1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/deinosuchus_scratch_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "deinosuchus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/deinosuchus_revision1.png",
+    "source_sha256": "c6c9b5a9941ddd758f9f5e94f98f4065433ed2868a0830dde8514d72a1a60cbd",
+    "source_crop": [
+      768,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "b14d024c4b104fe680d22ab1984f7c8db41b43c455faad07afdb8176d0afd13d",
+    "reference": "assets/enemy_full/deinosuchus_idle_W_000.png",
+    "reference_sha256": "706ad4ee89fcddfc6739d00d75ed32570f28f702fac8b5b733d98f79970449e1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/gallimimus_scratch_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/gallimimus_revision1.png",
+    "source_sha256": "c676b83b2042902c554bf9debefb9a93e2418371942183f853c07d3e95771ab8",
+    "source_crop": [
+      0,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "81f38aa4c7d513c1d6070ab8b29f3405d2389965eaba24565fd1a0c35165b9ff",
+    "reference": "assets/player_full/gallimimus_idle_S_000.png",
+    "reference_sha256": "f9e2b12086dcd2290a5bf469906fca7dd2b9edde51be2980d08a745ac3908d00",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/gallimimus_scratch_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/gallimimus_revision1.png",
+    "source_sha256": "c676b83b2042902c554bf9debefb9a93e2418371942183f853c07d3e95771ab8",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "42dd3dc36bd2b119481d2d8a636fa8ab3823375c79569d885394aee4ee3f27e4",
+    "reference": "assets/player_full/gallimimus_idle_S_000.png",
+    "reference_sha256": "f9e2b12086dcd2290a5bf469906fca7dd2b9edde51be2980d08a745ac3908d00",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/gallimimus_scratch_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/gallimimus_revision1.png",
+    "source_sha256": "c676b83b2042902c554bf9debefb9a93e2418371942183f853c07d3e95771ab8",
+    "source_crop": [
+      0,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "ba7c9c4a3a0a03ed25fb10138c3ff3159791f97ecbc735ae393f52a88edb7f87",
+    "reference": "assets/player_full/gallimimus_idle_N_000.png",
+    "reference_sha256": "a9e671799fc7619251ec897abf61baf4539190a4c2522bb04015b2769d6f9bd3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/gallimimus_scratch_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/gallimimus_revision1.png",
+    "source_sha256": "c676b83b2042902c554bf9debefb9a93e2418371942183f853c07d3e95771ab8",
+    "source_crop": [
+      768,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "5d32975a261068900641baa5f4d4bb6387ec93fcb6aa239802aa8cf69ce0566f",
+    "reference": "assets/player_full/gallimimus_idle_N_000.png",
+    "reference_sha256": "a9e671799fc7619251ec897abf61baf4539190a4c2522bb04015b2769d6f9bd3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/gallimimus_scratch_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/gallimimus_revision1.png",
+    "source_sha256": "c676b83b2042902c554bf9debefb9a93e2418371942183f853c07d3e95771ab8",
+    "source_crop": [
+      0,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "b93807f07d494136df6d6a079583dca311a60e59608ee1147c470b0535bab382",
+    "reference": "assets/player_full/gallimimus_idle_E_000.png",
+    "reference_sha256": "c30ecc9b995ac85c05ae691215f8c35f7854150be44118aed4b583d72044aa10",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/gallimimus_scratch_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/gallimimus_revision1.png",
+    "source_sha256": "c676b83b2042902c554bf9debefb9a93e2418371942183f853c07d3e95771ab8",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "d014d53e1cace44bfd0875e0152ce8d997d046fa1b07558ab5b2e70a9f7016cc",
+    "reference": "assets/player_full/gallimimus_idle_E_000.png",
+    "reference_sha256": "c30ecc9b995ac85c05ae691215f8c35f7854150be44118aed4b583d72044aa10",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/gallimimus_scratch_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/gallimimus_revision1.png",
+    "source_sha256": "c676b83b2042902c554bf9debefb9a93e2418371942183f853c07d3e95771ab8",
+    "source_crop": [
+      0,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "0f64e52b5c388921c5f9731c60168ceefa542fd6c2003b1d077d0019c719b4a5",
+    "reference": "assets/player_full/gallimimus_idle_W_000.png",
+    "reference_sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/gallimimus_scratch_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "gallimimus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/gallimimus_revision1.png",
+    "source_sha256": "c676b83b2042902c554bf9debefb9a93e2418371942183f853c07d3e95771ab8",
+    "source_crop": [
+      768,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "3b36fd955cf9779ae9facbf92c18a8807bdef087ffcc861ba646dc1d3ad5eb2b",
+    "reference": "assets/player_full/gallimimus_idle_W_000.png",
+    "reference_sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/pachycephalosaurus_scratch_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/pachycephalosaurus_revision1.png",
+    "source_sha256": "809459ca7f8eded47acc2a666a262dccf8f5c989b72fdbb8cd35cd92b28c6759",
+    "source_crop": [
+      0,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "3b70df5fa3175edc1741a8aff116115168e9c3fa0dc04bc9d538e9abf50adc8a",
+    "reference": "assets/player_full/pachycephalosaurus_idle_S_000.png",
+    "reference_sha256": "db81852982947c41754c08df608673e82437258eae60470ea00203ac8760fc50",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/pachycephalosaurus_scratch_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/pachycephalosaurus_revision1.png",
+    "source_sha256": "809459ca7f8eded47acc2a666a262dccf8f5c989b72fdbb8cd35cd92b28c6759",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "6de9ed0c5d41f948e16f6a0d6996cbbaedec399d74a6ecb5abd8f3a3cce01586",
+    "reference": "assets/player_full/pachycephalosaurus_idle_S_000.png",
+    "reference_sha256": "db81852982947c41754c08df608673e82437258eae60470ea00203ac8760fc50",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/pachycephalosaurus_scratch_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/pachycephalosaurus_revision1.png",
+    "source_sha256": "809459ca7f8eded47acc2a666a262dccf8f5c989b72fdbb8cd35cd92b28c6759",
+    "source_crop": [
+      0,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "7e8967a990f00e8f004472b2aedb9a03f9c7d6338cbe69fe350424208ee8a692",
+    "reference": "assets/player_full/pachycephalosaurus_idle_N_000.png",
+    "reference_sha256": "11b4cd288d2753e99126c361f1dc96716478e7c52f3dbcd88a98503fd5884958",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/pachycephalosaurus_scratch_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/pachycephalosaurus_revision1.png",
+    "source_sha256": "809459ca7f8eded47acc2a666a262dccf8f5c989b72fdbb8cd35cd92b28c6759",
+    "source_crop": [
+      768,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "33107422edf8cf56f5b227425fbfe29fb5953494ffdca2bd2fcc28a2e007cb7a",
+    "reference": "assets/player_full/pachycephalosaurus_idle_N_000.png",
+    "reference_sha256": "11b4cd288d2753e99126c361f1dc96716478e7c52f3dbcd88a98503fd5884958",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/pachycephalosaurus_scratch_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/pachycephalosaurus_revision1.png",
+    "source_sha256": "809459ca7f8eded47acc2a666a262dccf8f5c989b72fdbb8cd35cd92b28c6759",
+    "source_crop": [
+      0,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "0fd3d871534372ab699dab81342cfef82761e378f61ad2ab498f230161856a94",
+    "reference": "assets/player_full/pachycephalosaurus_idle_E_000.png",
+    "reference_sha256": "662a12b42ee25b638af54d113af05882765598857ab1370e50a9300ca00b18c3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/pachycephalosaurus_scratch_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/pachycephalosaurus_revision1.png",
+    "source_sha256": "809459ca7f8eded47acc2a666a262dccf8f5c989b72fdbb8cd35cd92b28c6759",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "d61250f31185bac72e7c24fa876146191d6394400471ac75f7258641a94e1977",
+    "reference": "assets/player_full/pachycephalosaurus_idle_E_000.png",
+    "reference_sha256": "662a12b42ee25b638af54d113af05882765598857ab1370e50a9300ca00b18c3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/pachycephalosaurus_scratch_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/pachycephalosaurus_revision1.png",
+    "source_sha256": "809459ca7f8eded47acc2a666a262dccf8f5c989b72fdbb8cd35cd92b28c6759",
+    "source_crop": [
+      0,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "41a05307f06e290ab79e993d62cf9139f074839ac6938d8fa4cdd57cc646b337",
+    "reference": "assets/player_full/pachycephalosaurus_idle_W_000.png",
+    "reference_sha256": "357408c5df221b05d00c71f5a0134537f4dff0668faecc9819a33125d112f29d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/pachycephalosaurus_scratch_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachycephalosaurus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/pachycephalosaurus_revision1.png",
+    "source_sha256": "809459ca7f8eded47acc2a666a262dccf8f5c989b72fdbb8cd35cd92b28c6759",
+    "source_crop": [
+      768,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "ec43822e371219b8cc77f6b15db42605de16631c02626bc0bbf1241ca278fba1",
+    "reference": "assets/player_full/pachycephalosaurus_idle_W_000.png",
+    "reference_sha256": "357408c5df221b05d00c71f5a0134537f4dff0668faecc9819a33125d112f29d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/parasaurolophus_scratch_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/parasaurolophus_revision1.png",
+    "source_sha256": "e3ca4c7b942a6c394d00dfe2846cde2154d2acc57c47abc2a5f204b192801d25",
+    "source_crop": [
+      0,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "8447f9aa2667b9570fb23b8e2149bedcdf6682b130fea44efc4e9aacb912c078",
+    "reference": "assets/enemy_full/parasaurolophus_idle_S_000.png",
+    "reference_sha256": "cf3086b22fd684a306e9b4c33d25046adff0c3cc11abbfc2adde10d01acee660",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/parasaurolophus_scratch_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/parasaurolophus_revision1.png",
+    "source_sha256": "e3ca4c7b942a6c394d00dfe2846cde2154d2acc57c47abc2a5f204b192801d25",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "e86792a70c285295b8fa7f756865aa023d7004b358a16f2a2070e231076a1017",
+    "reference": "assets/enemy_full/parasaurolophus_idle_S_000.png",
+    "reference_sha256": "cf3086b22fd684a306e9b4c33d25046adff0c3cc11abbfc2adde10d01acee660",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/parasaurolophus_scratch_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/parasaurolophus_revision1.png",
+    "source_sha256": "e3ca4c7b942a6c394d00dfe2846cde2154d2acc57c47abc2a5f204b192801d25",
+    "source_crop": [
+      0,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "164d611eeeff0d19dec786bc6c4524930725f1e62850daa83a4ddd2643b17eb4",
+    "reference": "assets/enemy_full/parasaurolophus_idle_N_000.png",
+    "reference_sha256": "482c79c8f8d49fd954dc8946ced76629bf26ebf5a06e690a20bcebb152fe906d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/parasaurolophus_scratch_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/parasaurolophus_revision1.png",
+    "source_sha256": "e3ca4c7b942a6c394d00dfe2846cde2154d2acc57c47abc2a5f204b192801d25",
+    "source_crop": [
+      768,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "a4410e5864a83cc5c9598c927cf57461bd0e07efc0d3211b99d9e8f724a6a4ec",
+    "reference": "assets/enemy_full/parasaurolophus_idle_N_000.png",
+    "reference_sha256": "482c79c8f8d49fd954dc8946ced76629bf26ebf5a06e690a20bcebb152fe906d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/parasaurolophus_scratch_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/parasaurolophus_revision1.png",
+    "source_sha256": "e3ca4c7b942a6c394d00dfe2846cde2154d2acc57c47abc2a5f204b192801d25",
+    "source_crop": [
+      0,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "4edb7d29c69dce88e425a5f59055bb515502fb39cd0b7093d61454c42cb631a5",
+    "reference": "assets/enemy_full/parasaurolophus_idle_E_000.png",
+    "reference_sha256": "b59c9ff6566f22bc06a497311f3e8c725f509126b5e1d26902ed05d9399a6e14",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/parasaurolophus_scratch_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/parasaurolophus_revision1.png",
+    "source_sha256": "e3ca4c7b942a6c394d00dfe2846cde2154d2acc57c47abc2a5f204b192801d25",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "c7dcd3844869749a836cc7ee3c1a8d8f11282c325ba433abef540b3951f27980",
+    "reference": "assets/enemy_full/parasaurolophus_idle_E_000.png",
+    "reference_sha256": "b59c9ff6566f22bc06a497311f3e8c725f509126b5e1d26902ed05d9399a6e14",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/parasaurolophus_scratch_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/parasaurolophus_revision1.png",
+    "source_sha256": "e3ca4c7b942a6c394d00dfe2846cde2154d2acc57c47abc2a5f204b192801d25",
+    "source_crop": [
+      0,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "6218c94f26542a6d182ae28522d217e0e57dcd027cdc313d5c8977cc275ce458",
+    "reference": "assets/enemy_full/parasaurolophus_idle_W_000.png",
+    "reference_sha256": "c7bf1253defa03912c1b5aab422e19fcf8a3f7d0c823cd40fc2d2ec16937c9c0",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/parasaurolophus_scratch_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "parasaurolophus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/parasaurolophus_revision1.png",
+    "source_sha256": "e3ca4c7b942a6c394d00dfe2846cde2154d2acc57c47abc2a5f204b192801d25",
+    "source_crop": [
+      768,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "36f532bc4e9e0c16a8a3744c4c9ba57b7ae8e388ea5ca651ba8a9b58e8945732",
+    "reference": "assets/enemy_full/parasaurolophus_idle_W_000.png",
+    "reference_sha256": "c7bf1253defa03912c1b5aab422e19fcf8a3f7d0c823cd40fc2d2ec16937c9c0",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/triceratops_scratch_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/triceratops_revision1.png",
+    "source_sha256": "5aabe56d95f43b14317772c597b417ff4b14ac24988063878b4cca06735ff444",
+    "source_crop": [
+      0,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "fd932db30ce1e248298ab601228cd12616d87493ddcf592dd338398e5a8de0c6",
+    "reference": "assets/enemy_full/triceratops_idle_S_000.png",
+    "reference_sha256": "4580176f5fa4c15278f1f1fe201a7dabfc3703b8a79ee9d754167b0b691d79cb",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/triceratops_scratch_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/triceratops_revision1.png",
+    "source_sha256": "5aabe56d95f43b14317772c597b417ff4b14ac24988063878b4cca06735ff444",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "d41c42c941db746366a653c1f5319fda18645bae8b99440eb6daf49bbd5e3c3a",
+    "reference": "assets/enemy_full/triceratops_idle_S_000.png",
+    "reference_sha256": "4580176f5fa4c15278f1f1fe201a7dabfc3703b8a79ee9d754167b0b691d79cb",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/triceratops_scratch_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/triceratops_revision1.png",
+    "source_sha256": "5aabe56d95f43b14317772c597b417ff4b14ac24988063878b4cca06735ff444",
+    "source_crop": [
+      0,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "97b369877ff29ebf0ec1114d32ba1a63fd4c4e7677ac27be8b0b300558948f90",
+    "reference": "assets/enemy_full/triceratops_idle_N_000.png",
+    "reference_sha256": "5a0090591ff060727492549873679e5278b661ae7141ad8644e2a8ef9b8b7a75",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/triceratops_scratch_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/triceratops_revision1.png",
+    "source_sha256": "5aabe56d95f43b14317772c597b417ff4b14ac24988063878b4cca06735ff444",
+    "source_crop": [
+      768,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "b7fb8d863b717fb8ff68b99c2bd005e4591f654374e97a64f1f100c2adcaacee",
+    "reference": "assets/enemy_full/triceratops_idle_N_000.png",
+    "reference_sha256": "5a0090591ff060727492549873679e5278b661ae7141ad8644e2a8ef9b8b7a75",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/triceratops_scratch_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/triceratops_revision1.png",
+    "source_sha256": "5aabe56d95f43b14317772c597b417ff4b14ac24988063878b4cca06735ff444",
+    "source_crop": [
+      0,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "2e71dcdd07ec296911b38fbc2b0313bef0e883e7e892fae2f5cece09088c7f86",
+    "reference": "assets/enemy_full/triceratops_idle_E_000.png",
+    "reference_sha256": "b6e1ba17a86a402b90772fc54d589259ddd4cf7a947a14a21739d31f1eb5f505",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/triceratops_scratch_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/triceratops_revision1.png",
+    "source_sha256": "5aabe56d95f43b14317772c597b417ff4b14ac24988063878b4cca06735ff444",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "f47e97331e3d766f569328bad200d734217f7e2bc899fff3d7da0af2f075ec20",
+    "reference": "assets/enemy_full/triceratops_idle_E_000.png",
+    "reference_sha256": "b6e1ba17a86a402b90772fc54d589259ddd4cf7a947a14a21739d31f1eb5f505",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/triceratops_scratch_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/triceratops_revision1.png",
+    "source_sha256": "5aabe56d95f43b14317772c597b417ff4b14ac24988063878b4cca06735ff444",
+    "source_crop": [
+      0,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "132706cce17704a7f64d424da38e79964dbf129c4a033624651f5816530d2ca9",
+    "reference": "assets/enemy_full/triceratops_idle_W_000.png",
+    "reference_sha256": "4526b78761915fbf627942b421ea192481c91665da50aaabe0d823865e979287",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/triceratops_scratch_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "triceratops",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/triceratops_revision1.png",
+    "source_sha256": "5aabe56d95f43b14317772c597b417ff4b14ac24988063878b4cca06735ff444",
+    "source_crop": [
+      768,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "234e5d0e44171c8226176a7e2bfccb883f072fe621549f89d3fcba6669c086c9",
+    "reference": "assets/enemy_full/triceratops_idle_W_000.png",
+    "reference_sha256": "4526b78761915fbf627942b421ea192481c91665da50aaabe0d823865e979287",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/tyrannosaurus_scratch_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/tyrannosaurus_revision1.png",
+    "source_sha256": "c4d98cb9c16427c730608734d95ae88ee181bfe139ccdf9c9b7574d7869c5c45",
+    "source_crop": [
+      0,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "52b85a093816d7159a5ae4d1bb6802d474da3b9bdc54ef9961ddac332d33db1c",
+    "reference": "assets/enemy_full/tyrannosaurus_idle_S_000.png",
+    "reference_sha256": "2cad87251d9d847860a4389209f15f532d3eaac67c9273de6e6d796e068b3525",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/tyrannosaurus_scratch_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "state": "scratch",
+    "direction": "S",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/tyrannosaurus_revision1.png",
+    "source_sha256": "c4d98cb9c16427c730608734d95ae88ee181bfe139ccdf9c9b7574d7869c5c45",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "22ab777455720f817e179ac943a585d84561d17af79c693bf5683a563a66ca11",
+    "reference": "assets/enemy_full/tyrannosaurus_idle_S_000.png",
+    "reference_sha256": "2cad87251d9d847860a4389209f15f532d3eaac67c9273de6e6d796e068b3525",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/tyrannosaurus_scratch_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/tyrannosaurus_revision1.png",
+    "source_sha256": "c4d98cb9c16427c730608734d95ae88ee181bfe139ccdf9c9b7574d7869c5c45",
+    "source_crop": [
+      0,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "4be1f164e951e6901274a199732401050c25ea7954c1cbc0f3b0b54432538ff2",
+    "reference": "assets/enemy_full/tyrannosaurus_idle_N_000.png",
+    "reference_sha256": "813868e83b0ec6cd32b0d75925d76c53389961d0569c22fd5d771612b3c01d51",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/tyrannosaurus_scratch_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "state": "scratch",
+    "direction": "N",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/tyrannosaurus_revision1.png",
+    "source_sha256": "c4d98cb9c16427c730608734d95ae88ee181bfe139ccdf9c9b7574d7869c5c45",
+    "source_crop": [
+      768,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "7523ebff2d6f745a9bccb7f6919af3e46809421a779e7faa160d672364b1c38b",
+    "reference": "assets/enemy_full/tyrannosaurus_idle_N_000.png",
+    "reference_sha256": "813868e83b0ec6cd32b0d75925d76c53389961d0569c22fd5d771612b3c01d51",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/tyrannosaurus_scratch_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/tyrannosaurus_revision1.png",
+    "source_sha256": "c4d98cb9c16427c730608734d95ae88ee181bfe139ccdf9c9b7574d7869c5c45",
+    "source_crop": [
+      0,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "af155f72ecd4520340ed03e2f92023f7d13700361fb0331cbab3f0e92b54a317",
+    "reference": "assets/enemy_full/tyrannosaurus_idle_E_000.png",
+    "reference_sha256": "243e120135282bccb7f4b9e7bc1e0930947cfd9714e8eb8a5223eb9782b1946b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/tyrannosaurus_scratch_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "state": "scratch",
+    "direction": "E",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/tyrannosaurus_revision1.png",
+    "source_sha256": "c4d98cb9c16427c730608734d95ae88ee181bfe139ccdf9c9b7574d7869c5c45",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "97fa75908b931e5c2233be24245761c08c1e87d8599ac7aab3b22eadc7c0e3f3",
+    "reference": "assets/enemy_full/tyrannosaurus_idle_E_000.png",
+    "reference_sha256": "243e120135282bccb7f4b9e7bc1e0930947cfd9714e8eb8a5223eb9782b1946b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/tyrannosaurus_scratch_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/behavior_grooming/tyrannosaurus_revision1.png",
+    "source_sha256": "c4d98cb9c16427c730608734d95ae88ee181bfe139ccdf9c9b7574d7869c5c45",
+    "source_crop": [
+      0,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "253687c6fc43abdfeae3e055bd7b7a35aa4e57175621f165d96076b203c878e4",
+    "reference": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
+    "reference_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "file": "Source_Generated/behavior_grooming/review_exports/tyrannosaurus_scratch_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "tyrannosaurus",
+    "state": "scratch",
+    "direction": "W",
+    "frame": 1,
+    "source": "Source_Generated/behavior_grooming/tyrannosaurus_revision1.png",
+    "source_sha256": "c4d98cb9c16427c730608734d95ae88ee181bfe139ccdf9c9b7574d7869c5c45",
+    "source_crop": [
+      768,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      384,
+      128
+    ],
+    "registration_offset": [
+      -120,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "eefaf561db43b388da44c1762dd226b2d388949f0b43573f9048470ac0d955a0",
+    "reference": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
+    "reference_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  }
+]

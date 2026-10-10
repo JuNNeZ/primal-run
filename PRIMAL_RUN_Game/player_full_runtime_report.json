@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-08",
+  "status": "PASS",
+  "core_tests": 46,
+  "pursuit_tests": 5,
+  "new_frames": 480,
+  "sequences": 96,
+  "active_pngs": 696,
+  "gdevelop_resources": 704,
+  "standalone": {
+    "runtime": "standalone Chromium",
+    "status": "PASS",
+    "checked": 480,
+    "states": 6,
+    "species": 4,
+    "directions": 4,
+    "checks": [
+      "480 actual drawn frames",
+      "six states/four directions/four classes",
+      "native144 and registered origins",
+      "stable species body collision/no smoothing",
+      "pause freezes animation",
+      "actual hurt/death transitions and terminal corpse"
+    ],
+    "production_approved": false
+  },
+  "official_gdevelop": {
+    "runtime": "official GDevelop GDJS 5.6.283",
+    "status": "PASS",
+    "checked": 480,
+    "states": 6,
+    "species": 4,
+    "directions": 4,
+    "checks": [
+      "480 actual drawn frames",
+      "six states/four directions/four classes",
+      "native144 and registered origins",
+      "stable species body collision/no smoothing",
+      "pause freezes animation",
+      "actual hurt/death transitions and terminal corpse"
+    ],
+    "production_approved": false
+  },
+  "source_sha256": {
+    "src/core.js": "55d88d3cbe48d2cacc7dd20618a055e4c87e28716a98503b6ec59e28e1c07398",
+    "src/app.js": "6df5de30ad6e84dfd62537038b0e28e85220ed162cfd0372226afe4549d11320",
+    "src/assets.js": "a47612ea78deca6c3569f5d5ead137b3906566cdee2a094d653c0572fe947ad7",
+    "src/audio.js": "8c05993c669bd89459bb52b885409f590d5d84815b4dc4fb23e99b536ee42010",
+    "style.css": "6fc68662342e2e15c97faf579b242d4f65bacf4565de2ec989a5bd2e06598547"
+  },
+  "full_npm_test": "PASS in temporary checkout; original kit preserved",
+  "validators": "PASS: kit, game, enemies, player-full, historical root sprites",
+  "visual_review": "Native grids on light/dark backgrounds; complete frame sets, minor anatomy/marking/registration variations remain",
+  "production_approved": false,
+  "animation_ready": false,
+  "additional_context": "Species display-only palette mapping and larger NPC torso corrections validated in jungle_runtime_report.json."
+}

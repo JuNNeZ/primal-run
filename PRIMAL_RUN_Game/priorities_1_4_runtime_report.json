@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "scope": "Priorities1\u20134 only; priorities5\u20138 await user playtest.",
+  "unit_tests": 60,
+  "standalone_browser_suites": 10,
+  "official_GDevelop_browser_suites": 10,
+  "GDevelop": "libGD/GDJS5.6.283 export imported and serialized1184 resources",
+  "enemy_frames_drawn": 840,
+  "new_enemy_frames": 480,
+  "player_frames_drawn": 480,
+  "integrated_png_assets": 1176,
+  "prototype_kit_checks": "PASS:104 PNG validation and three browser suites in temporary checkout; historical reports preserved",
+  "validation": "Combined PNG inventory, legacy enemy/player/ecology validators and new enemy_full validator PASS",
+  "production_approved": false,
+  "art_limitations": "Small generated anatomy/marking/body-volume variation remains. No production visual certification. Native light/dark grids inspected; separate1x/4x review loops supplied.",
+  "source_sha256": {
+    "src/core.js": "409de9c3547827864545542f7de156ae53f07f5c6d941bab3f8f7f82cb39f7a6",
+    "src/app.js": "aecaf8334c36bdc286be10f9ca467b3028412b5d1b9874553eea98ce0c859071",
+    "src/assets.js": "3ac9933d00114ac964e56c6c2c4db205501a31b0d3c573342f0731149bd35db2",
+    "src/audio.js": "30c25c257f83cde3d2edd06614ac28018e1c2b76f226a2c3a918cc4031578688",
+    "style.css": "6fc68662342e2e15c97faf579b242d4f65bacf4565de2ec989a5bd2e06598547"
+  }
+}

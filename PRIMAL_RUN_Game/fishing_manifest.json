@@ -1,0 +1,114 @@
+[
+  {
+    "file": "assets/fishing/fish_000.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/fishing/fish_sheet.png",
+    "source_crop": [
+      0,
+      0,
+      627,
+      627
+    ],
+    "source_sha256": "c730472ae730f90ad8dd6c51ca34cd5505c81b029e3d74882dd6eee6015cbc46",
+    "export_sha256": "1648d44ee8b81aeef0b1eafa5f9d2d80a9b6379c1e92dcb318e84da5cce3f266",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer13 sampling at offset1, fixed32 palette, alpha>=192; no interpolation."
+  },
+  {
+    "file": "assets/fishing/fish_001.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/fishing/fish_sheet.png",
+    "source_crop": [
+      627,
+      0,
+      1254,
+      627
+    ],
+    "source_sha256": "c730472ae730f90ad8dd6c51ca34cd5505c81b029e3d74882dd6eee6015cbc46",
+    "export_sha256": "af51cbbda6cd9cdb834e876ce704a0838ff4ddfb03bc3047a27a5e5b1620b820",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer13 sampling at offset1, fixed32 palette, alpha>=192; no interpolation."
+  },
+  {
+    "file": "assets/fishing/fish_002.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/fishing/fish_sheet.png",
+    "source_crop": [
+      0,
+      627,
+      627,
+      1254
+    ],
+    "source_sha256": "c730472ae730f90ad8dd6c51ca34cd5505c81b029e3d74882dd6eee6015cbc46",
+    "export_sha256": "26aa71c7998a4572f9a9862283a894cbbbfec66ed9118ec87e4ce87340e75c10",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer13 sampling at offset1, fixed32 palette, alpha>=192; no interpolation."
+  },
+  {
+    "file": "assets/fishing/fish_003.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "body_anchor": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/fishing/fish_sheet.png",
+    "source_crop": [
+      627,
+      627,
+      1254,
+      1254
+    ],
+    "source_sha256": "c730472ae730f90ad8dd6c51ca34cd5505c81b029e3d74882dd6eee6015cbc46",
+    "export_sha256": "8b31b8bbaa317f1ff02afd967e32e138fcaea9a26db22c98a37277e9a63ba025",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer13 sampling at offset1, fixed32 palette, alpha>=192; no interpolation."
+  }
+]

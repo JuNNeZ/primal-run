@@ -1,0 +1,50 @@
+name: Publish PRIMAL RUN to GitHub Pages
+
+# Publication is explicit. Enable Settings > Pages > Source: GitHub Actions,
+# then run this workflow on the branch/version you want to publish.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:game
+      - run: npm run validate:game-sprites
+      - run: npm run validate:enemy-sprites
+      - run: npm run build:web
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

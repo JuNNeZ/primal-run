@@ -1,0 +1,30 @@
+{
+  "prompt": "Edit this exact carnotaurus atlas minimally into a quiet SCRATCH/GROOM pair. One hindfoot lifts a little to scratch its own flank, then rubs a fewpixels. Two tiny arms unchanged, exactly TWO brow horns ABOVE eyes and ZERO nasal horn. Column0 limb lifted to its own body, column1 same limb gently rubbing slightly changed position. Head gently tilts toward own shoulder, closed mouth, calm, never bite/attack. Keep entire body silhouette, markings, scales, colour placement and camera pixel-faithful to source; no enlargement or shrinkage. Output exactly1536x1024 transparent same TWO columns768wide FOUR rows256high S,N,E,W. Fixed hip local384,128. Keep existing TWO TIMES native animal size and exact blank space; NEVER fill cells. Only small readable limb/neck movement. No labels/shadows/ground. One tail, original limb count. Crisp square 1990s overhead oblique pixel art. No recentering of animal.",
+  "source": "carnotaurus_revision1.png",
+  "references": [
+    "carnotaurus_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration.",
+  "source_sha256": "d48903ab63a22162dc24337c16e54f78a6d932f18f397077f2b5b393a2fe08d1",
+  "canonical_references": [
+    {
+      "file": "assets/player_full/carnotaurus_idle_S_000.png",
+      "sha256": "8305e32b3f9d0ed451b83e964a1266bd0081cc9558ad15773afc1859e4252d4e"
+    },
+    {
+      "file": "assets/player_full/carnotaurus_idle_N_000.png",
+      "sha256": "95676786d135ed8e081d4e021bfc0ee6c9dce7bc04bd49c5851a0702720fa6db"
+    },
+    {
+      "file": "assets/player_full/carnotaurus_idle_E_000.png",
+      "sha256": "cb7977b7e04ac400b2822fecba70cb56e18b93277f7cce461c2d3fe74569ce12"
+    },
+    {
+      "file": "assets/player_full/carnotaurus_idle_W_000.png",
+      "sha256": "cc481d699c807eae728a36a99b192be46f749d06adf55e9b6af1248b3da15607"
+    }
+  ]
+}

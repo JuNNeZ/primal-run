@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "samples": [
+    {
+      "stage": 0,
+      "pondWaterPixel": [
+        59,
+        65,
+        68
+      ]
+    },
+    {
+      "stage": 1,
+      "pondWaterPixel": [
+        59,
+        65,
+        68
+      ]
+    },
+    {
+      "stage": 2,
+      "pondWaterPixel": [
+        59,
+        65,
+        68
+      ]
+    },
+    {
+      "stage": 3,
+      "pondWaterPixel": [
+        162,
+        212,
+        193
+      ]
+    }
+  ],
+  "checks": [
+    "visible water pixels behind fish across four biomes",
+    "actual Baryonyx fishing",
+    "river school in river biome",
+    "Triceratops cannot eat fish",
+    "no browser errors"
+  ]
+}

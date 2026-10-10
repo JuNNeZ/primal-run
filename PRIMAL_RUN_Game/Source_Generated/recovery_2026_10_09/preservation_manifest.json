@@ -1,0 +1,1028 @@
+{
+  "date": "2026-10-09",
+  "purpose": "Byte-for-byte preservation only; no new runtime integration or visual approval.",
+  "generated_images": 85,
+  "newly_preserved": 24,
+  "files": [
+    {
+      "original_filename": "exec-00b5f33c-37d7-44a5-8b25-9dbab57371bd.png",
+      "sha256": "729c86301cfea35267fa9e025b8ef773e30b572b2653a992c64ebd990e7cae63",
+      "bytes": 837063,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemies_v1/compy_sheet.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-01fdc46f-ed94-448a-975b-d59384ad92aa.png",
+      "sha256": "1cef0666454d2760fd931b52b3c897e1ca750bea84ca7f7793790023d472900a",
+      "bytes": 1775335,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/compy_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-0819f348-2bab-4dbb-9237-f760dfdbc0a4.png",
+      "sha256": "8c068de54c6b9b7e8e7b34613efffb258f45d81b6e2ff5c268cbee42259ad2e5",
+      "bytes": 1383405,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-0819f348-2bab-4dbb-9237-f760dfdbc0a4.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-0b183414-7cdb-4f65-b356-bbabef85aad6.png",
+      "sha256": "3f3c6bbd485e490fd365155faaedde5c4ca6b8d25d0d45c45e3ebcbdae1ead52",
+      "bytes": 2148675,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/ankylosaurus_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-0df260e6-0843-4b4c-9317-1a28ddc515fb.png",
+      "sha256": "8e40150d8de4c0088f4c51a3bf295421e1efe39d79a2626b0f459b8c6d1a3dc8",
+      "bytes": 1974566,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/pachycephalosaurus_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-0ea117cc-8e1c-4ad3-a25e-7137ac6a5374.png",
+      "sha256": "09513d63116cc5fd1956af830e861b6d7dc8387527b8cfd2491e6dfad330b446",
+      "bytes": 2123565,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/parasaurolophus_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-16277b95-5644-4b95-a996-7bea017e1415.png",
+      "sha256": "c7df123b85ef55e780e080bd47854622d4aef8a41a88333a8208b3deb417099a",
+      "bytes": 1989545,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/utahraptor_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-17254510-8675-426c-99ee-016dc74d6324.png",
+      "sha256": "a6fa4fdd8b9658d93a629f1e0242d343d42464b49569a52d1da8e52fc0cbe6f2",
+      "bytes": 2026268,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/carnotaurus_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-1832c336-00fe-4bf2-a5b0-8532a2ff3a7c.png",
+      "sha256": "5aa65f79583a0fbeb58e0ff11338686998e842ec5ac2307bc2e50f1c2aca83eb",
+      "bytes": 2040072,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/tyrannosaurus_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-188b127b-9c88-472d-8781-c15907d69c5d.png",
+      "sha256": "2db9c3c9e87ed0462dbe25cd4e58270505368dbfc17d86ecbc2905107baa0485",
+      "bytes": 2086445,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/parasaurolophus_E_anatomy_revision.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-19883939-6ab1-4cae-bac2-0a7d67e14d69.png",
+      "sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "bytes": 2062659,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/deinosuchus_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-19fbe0d2-3739-477b-9eb2-f8713695dc0c.png",
+      "sha256": "b12d2762b6977670d63c56efb8a3d5a03e284d26d103a764b85d842b4f2e160e",
+      "bytes": 1984933,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/ankylosaurus_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-1adaea9f-a14b-4dd0-93c2-85591fa871ad.png",
+      "sha256": "7031d038e9510093e6f9ee9bdd541e794c1583ef28d40c69a9ab5ad51987632d",
+      "bytes": 1909458,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/rejected/parasaurolophus_N_wrong_direction.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-1c25ff14-7ec1-43d5-aec0-3b427a030a78.png",
+      "sha256": "1fc04070b9cd58df45221aa67639045967f3f1c1e47b365a04be56f38498be21",
+      "bytes": 2166485,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-1c25ff14-7ec1-43d5-aec0-3b427a030a78.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-220387f1-e2fa-49b5-9cac-5ef7c12956eb.png",
+      "sha256": "a61f96074b1584d071dc5d484688cf3fcfbf35f150fb0fb16bb1713b55accc5d",
+      "bytes": 2143157,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-220387f1-e2fa-49b5-9cac-5ef7c12956eb.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-2ac87831-e6c8-49ec-98ea-016d7f109f3c.png",
+      "sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "bytes": 2302127,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/deinosuchus_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-2b4f6199-4b0a-4853-92f4-28271f710fdc.png",
+      "sha256": "449314de273bbb0701c5d6451559c4cdb41494f1f7a59833b63498c444278f88",
+      "bytes": 2177966,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/triceratops_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-2eae14ec-75bb-47cb-be51-a1c44e0b7a18.png",
+      "sha256": "715b10daab59c435510a892737888abeca0411624ece55dfb391c7c38cc8824b",
+      "bytes": 1115305,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemies_v1/parasaurolophus_sheet.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-2f7cce66-bbed-4de3-b8fa-cd1151ae77f6.png",
+      "sha256": "cb058128fc64e2a56cac573d8d3fe53e9c7e2a14c550b7589f032e4c17e05f57",
+      "bytes": 2015823,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/baryonyx_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-30fbdc39-7b10-4148-8d24-e907ec7b3dc1.png",
+      "sha256": "9dc439ef9105c45e33f8c00db4f95b7fbdd9c893fccbb65cc44c341c75429ac1",
+      "bytes": 1536599,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_attacks_v1/bite_N_sheet.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-32c9eb8f-f90b-48bb-b7e9-fd096c6e2cb7.png",
+      "sha256": "d56ca3c5e7fc06905c0d8f06bdbacc6bb8e75b71941ae24995ab57fe9c7c21dc",
+      "bytes": 2032392,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/baryonyx_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-373b0eae-2c64-47fc-8fc8-1e06f75da6cd.png",
+      "sha256": "9b937d096d85f2dab3595e75e13ee60ee60e4e5f508e0fd7f5c697a04c844ac9",
+      "bytes": 2251253,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/triceratops_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-37584931-442c-44bb-a699-5bd0e22058e0.png",
+      "sha256": "7ee1cc010d2430ca9b4ae0f801b6b23313ed3bb88d2fd5db0417cb4c78c29098",
+      "bytes": 1684488,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/compy_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-38cc4f3f-b41a-4fad-aae7-5bd7faea0e29.png",
+      "sha256": "16991f722d80011046dcbedcfb8c793c4c26df617f142b22716e94c61f33f2ed",
+      "bytes": 2051201,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/baryonyx_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-3fe82b0f-62c3-474f-aaf3-4fb89668dfc3.png",
+      "sha256": "df30537c8eac9dba5d2f1c1927a6896067c26e1fd0fe0bc39fc09e656458e915",
+      "bytes": 1416231,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_attacks_v1/bite_W_sheet.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-440a5f49-1f00-4698-897f-739cd0a50fcc.png",
+      "sha256": "c730472ae730f90ad8dd6c51ca34cd5505c81b029e3d74882dd6eee6015cbc46",
+      "bytes": 856725,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/fishing/fish_sheet.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-46cdfe40-324a-49e1-893b-0deedaedbbac.png",
+      "sha256": "a6af8788a2d74949abdbbd4a4530ef13140cb3efcd321d1da708a3588cbc81c9",
+      "bytes": 2084830,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/pachycephalosaurus_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-4818fa8c-602f-4d8b-94a8-a54cd290dd08.png",
+      "sha256": "e926f75169945892965b159f0ff60b8178f33560f288bcb3dd17219b6232eb49",
+      "bytes": 1981313,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/pachycephalosaurus_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-4c9922c8-e1fc-4eab-87c4-bb894bbe40ff.png",
+      "sha256": "b9a3b8fe9b04816fa83dde1d90b994d5d6c7a69bf35f30972a973922085b5e90",
+      "bytes": 1221680,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-4c9922c8-e1fc-4eab-87c4-bb894bbe40ff.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-5066394d-e40b-49ff-80a8-7e609463088d.png",
+      "sha256": "e9b38df4e245e3ea93e0ec371f22dd04b7d527a784295cec2c0b2f8e28baf2f8",
+      "bytes": 1478451,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_attacks_v1/bite_W_candidate.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-524a1de0-2f66-4234-abbf-3285e76afe62.png",
+      "sha256": "f42b5d6ec0809ce9f8e4bb73df8e5e6dcaf58a3c40bac463db1fdd4f9819bf00",
+      "bytes": 1740595,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/parasaurolophus_S_movement_revision.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-52fab0f9-4b13-40b5-8941-0b206b837d5f.png",
+      "sha256": "6d485e86e0b60903d6d340ce611f1fda6cac59f5f76e19d773ca890ee1880f8a",
+      "bytes": 1508575,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_attacks_v1/bite_E_sheet.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-53059cd0-01e5-46da-9f98-7f55f0db7a33.png",
+      "sha256": "ad6f52d4895e0190925e23c898f3190197f5c63e8e6eb8611b6b704f4edca49e",
+      "bytes": 1885997,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/tyrannosaurus_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-55014913-0478-4f5a-9e3d-45256b3525ef.png",
+      "sha256": "60fb2a7f0fa820aa7138685723b4bc0d683469ec67a3a3544e895719d7dd0a42",
+      "bytes": 1512032,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_attacks_v1/bite_E_candidate.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-5da86acd-7ca9-47b5-8e73-febbc78b5272.png",
+      "sha256": "3c0bfca204db5628b3ac107dc7d609dfd69dd6760a8b4a82d99ac6a58791593f",
+      "bytes": 2148816,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/ankylosaurus_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-602e1c5d-3e1a-4cbd-b705-1479e309d6b7.png",
+      "sha256": "5f0da83697112c3499e72352bade794e479e1992c42a3a20e581c4bfa86aad83",
+      "bytes": 1828582,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/parasaurolophus_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-61efc285-16e5-4a2a-8750-1833f6e81100.png",
+      "sha256": "1bbbabf2fb8d0158a647e085fdee57ce6a27eb5adde44e3cc444aa3494a26455",
+      "bytes": 2002622,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/tyrannosaurus_N_state_revision.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-6532bc32-3357-4e09-a7e4-d5729668578b.png",
+      "sha256": "1b58a7bfcf430a6c6cb2afeeeddfad13d500b53b5e241d0df7b1ec911c1a0784",
+      "bytes": 1892369,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/rejected/parasaurolophus_W_side_profile.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-6a26e040-7123-431a-a7fe-44d815cfd30c.png",
+      "sha256": "88177d42b1e429cb30e9c8801f02ac3c8cf23519d912859e12081c3b189fb4cc",
+      "bytes": 1563248,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_attacks_v1/bite_S_sheet.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-6f88e6e9-1d04-4fed-bba5-c2bf11c9bb43.png",
+      "sha256": "39f69dd31d5c66ac8b35192e4fe7e8603f60919d7bd967362d8c49fb2048548d",
+      "bytes": 2011373,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/parasaurolophus_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-7787d406-b999-4eb4-a945-4537f923bad3.png",
+      "sha256": "d4a4321fd9bcf3f6807539a23ef9062a15b87d46ef1e0519f23d6a584993d64c",
+      "bytes": 2345095,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-7787d406-b999-4eb4-a945-4537f923bad3.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-788fb44e-3076-4c04-a24c-83ebcd09fa71.png",
+      "sha256": "aa28677ccbd2dd8fed37b86e0d600ec09a8839e4704bb883728a16cd9e54bae1",
+      "bytes": 617749,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemies_v1/compy_rejected_gape.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-8066989e-0439-44eb-bba5-8fd12aff78bf.png",
+      "sha256": "d6ccd750f76acbdab09c558435356625dce4771ee1409f0195ef19498688912f",
+      "bytes": 1329507,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-8066989e-0439-44eb-bba5-8fd12aff78bf.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-80f087ed-eed7-4c47-98e9-92247982a006.png",
+      "sha256": "5cb4d537a07ac2b063ce159f02df876495aab52e6140097b49a29b1e620c0a55",
+      "bytes": 1851652,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/carnotaurus_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-8134d324-ec43-486c-be1b-0332a548921b.png",
+      "sha256": "4d770a32fcd380c3d502dc6504fb14179ec33c18f5ee9e21d62937b5ea8e30c3",
+      "bytes": 1321199,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-8134d324-ec43-486c-be1b-0332a548921b.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-83d79879-c166-4383-a6ed-eba7942e30cb.png",
+      "sha256": "55ceccff493dc3c505f58dea38fd294d91a587e219b5790801ff26a2297b849d",
+      "bytes": 2081052,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/ankylosaurus_E_rejected_bite.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-83d96e94-1554-4f36-b20f-71399dd79f56.png",
+      "sha256": "b1c436446d34637b80adb5ba19d475ba7a284a2020002c167dfd12d1efc7d266",
+      "bytes": 1905067,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/baryonyx_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-883138e5-94b5-4530-afd6-5003409e3386.png",
+      "sha256": "045041cb486767a90757ec6a2f20b97508077d4b6bf6a5b528feb61a2d55e36d",
+      "bytes": 1949141,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/pachycephalosaurus_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-88b5faf5-b52f-4b1f-8ad7-885a9c8fd659.png",
+      "sha256": "75c2c708c7c511cff11bb12f63a453ba1db5aa56a6410e6c3aa6c93952ca8396",
+      "bytes": 2357565,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/ecology/jungle_props.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-88e7fa11-f4d0-48bb-84dc-c5a4da4a0e06.png",
+      "sha256": "6c12c4a0ebe1e9009fada41fc17f14331113be9bc0173dbb068276118525adbe",
+      "bytes": 660597,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemies_v1/compy_rejected_side.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-89e3a7d2-7ca2-42a2-bee7-ae42c7f68cf1.png",
+      "sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "bytes": 2158485,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/deinosuchus_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-9193d0de-de4a-4fd9-af6f-16546838b994.png",
+      "sha256": "6368d5b4922128825a1f22641e9623f23464294d7f3fc39cccdf79a4a5350cee",
+      "bytes": 1349116,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemies_v1/ankylosaurus_sheet.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-97482fbf-d1d3-4679-935b-918ab659a2d6.png",
+      "sha256": "51796a2c925de941874b116609489b2172933a5af5b9101ef36f55f4607c5eee",
+      "bytes": 1908100,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/utahraptor_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-99a8be1f-716f-455d-9ac4-7b57b346ed83.png",
+      "sha256": "a895332c47d1b4a249c3e3c6d0ae75abdd2a6d95c1dd9d0bb502e11f687d7548",
+      "bytes": 2004622,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/utahraptor_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-9e8bdf43-6d28-45f4-b6c6-f27efab30fb6.png",
+      "sha256": "fc12c20d67fada83f362a493e0fee3115f055ba0d1365b24e5fa43f5dbdc0f7f",
+      "bytes": 2263692,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/triceratops_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-9fe0fed7-72d2-4f63-a907-5d655a31d17b.png",
+      "sha256": "d9a0a3ce8bcc5e95370dc69f5450d8ed4a79d0de6a172a0e346fd66538900b7c",
+      "bytes": 1842736,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/parasaurolophus_N_anatomy_revision.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-a8316879-9a28-4038-9711-22694eacdc10.png",
+      "sha256": "3449d326a8a4b9e13a411a1cf2c8e0c5b98c6ba1bd1bfd11706d3f78dca0fe4f",
+      "bytes": 1763251,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/compy_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-aa01ff7d-b5ec-4fa7-b726-1dde8d90eb14.png",
+      "sha256": "fe6373e068737e599fd8ba044142a7072fedb004626c350849b0f3bd10c34356",
+      "bytes": 1813251,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-aa01ff7d-b5ec-4fa7-b726-1dde8d90eb14.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-aa9d3425-16a2-408f-9dbc-59ee6a856f0c.png",
+      "sha256": "b7f7500540f1bd90a0f661126efc1a6e2d3f1227af43e6285a9eac9b77e5f23a",
+      "bytes": 1874181,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/gallimimus_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-aab71d70-f145-4b6a-a260-221a3f39c728.png",
+      "sha256": "2528b356c91d5fd1b69f16f9ddb902bc1798f109783252bcae148051c2ad732f",
+      "bytes": 2253361,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-aab71d70-f145-4b6a-a260-221a3f39c728.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-af693eb9-9594-4d7e-98d9-9e1405f1f4c2.png",
+      "sha256": "4611011f1e39f2810321b5cb8c98d1ac314f6679fd6dca85c1a4f8dccf586a27",
+      "bytes": 2063601,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-af693eb9-9594-4d7e-98d9-9e1405f1f4c2.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-b58671a5-e6d3-4c21-978a-f0d44394ebf7.png",
+      "sha256": "60ffc095b667245b64df47d086885674173afeeac277a991ba7acb583e1a2393",
+      "bytes": 2031173,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-b58671a5-e6d3-4c21-978a-f0d44394ebf7.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-b59d72e7-663c-401d-a671-eef57930b421.png",
+      "sha256": "fd429a4b3a9908d1dcbf4b7439f97ad26a14581b8a5e219a873d269edc03a4d9",
+      "bytes": 2079241,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-b59d72e7-663c-401d-a671-eef57930b421.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-b838b81d-da31-467e-974d-9b8c1d903e60.png",
+      "sha256": "613de0f82d915c98d62edd9a2213d05a728dc9d08ed8b22e6c561a1c03a587bd",
+      "bytes": 1397379,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-b838b81d-da31-467e-974d-9b8c1d903e60.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-bdf5be90-c285-44e0-9b61-d1f4e066b7ef.png",
+      "sha256": "49e49bc7c7acd98d34a2b8424b0d4de2cdc57be3dcf0e7b6641b04688fb79277",
+      "bytes": 1889331,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/gallimimus_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-c0c12fa2-ef77-4c74-8f1d-cc3f8f879858.png",
+      "sha256": "2d7c1f15f4b9181754aa1969b694f8421684899de69aa2e3ffb57f4ac54c4a65",
+      "bytes": 2250054,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/tyrannosaurus_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-c14a2eff-0be3-42e2-b7f0-7f9cbc0193b6.png",
+      "sha256": "a564cda9cecdc97205f0f257f890901c46cd8249eb6240f0f3e5665ad87e28d9",
+      "bytes": 1984479,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/tyrannosaurus_N_movement_revision.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-c72dd76b-40ad-480b-9fe1-0f1841f86194.png",
+      "sha256": "d7ba0cc6c2c574a5420aa010f7d84a88c183eeef97e587123f5a6d9205a7f4b7",
+      "bytes": 2004685,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/rejected/parasaurolophus_E_side_profile.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-cabc3f67-22c5-40e1-accc-638e2c44e53c.png",
+      "sha256": "aca83fb9b082474e42efb8e5f8bf4831fe0d39dddf27fa8c3e68e38b62c82dc5",
+      "bytes": 1066474,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemies_v1/carnotaurus_sheet.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-cd7c8e0d-cfad-4ee1-b44c-fd65497a51e7.png",
+      "sha256": "2267c1505eaddb21e7ba941473b6bbf08502d9ee6799f471dbc9d3c5ca64a3c0",
+      "bytes": 1863744,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/gallimimus_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-ce7aa6b7-1ce5-4c74-ac48-ab14ebe0e15d.png",
+      "sha256": "9d19ba304ff4fd2db378e1142365f532ea9f2f642e0fb7bd6e1bc568bac7ca5e",
+      "bytes": 2112932,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-ce7aa6b7-1ce5-4c74-ac48-ab14ebe0e15d.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-cfe50ee6-ef06-4ec1-9d84-afa4819e55d7.png",
+      "sha256": "8609a73e7497b7215345725f799b151aad2f9a8c50c05e4f8888452d5b1f7e61",
+      "bytes": 1296241,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-cfe50ee6-ef06-4ec1-9d84-afa4819e55d7.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-d31a389c-8699-4c0c-ab27-58ac236970e7.png",
+      "sha256": "033f757963c3c793304230b53f9c70789a1e8faf0ac250d42686cdcada70805f",
+      "bytes": 2390931,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-d31a389c-8699-4c0c-ab27-58ac236970e7.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-d8a03b0b-eb32-4e10-834f-e8c100947662.png",
+      "sha256": "c0ef5e28be65cde9670da7018879e24bb657a884459fa39d8b3846abc7b20833",
+      "bytes": 1974309,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/carnotaurus_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-de159126-9031-4819-8089-d0c0d6889b3f.png",
+      "sha256": "fa403639b51e45444ff7b2252295d85832150162ebb8c9bfae5f4bc88adb9c00",
+      "bytes": 1384363,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/recovery_2026_10_09/unreviewed/exec-de159126-9031-4819-8089-d0c0d6889b3f.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-e291aa09-1154-41b7-82e8-9aa57a8c6679.png",
+      "sha256": "10af629c5da895aae2bd2a4728247db273bf8fa99ed0c80260b928436234f446",
+      "bytes": 1706552,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/compy_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-e74ba07b-0afb-49c2-b248-d819ecf8cb0a.png",
+      "sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "bytes": 2336792,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/deinosuchus_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-e77c45a3-4c14-48a3-b1c4-ed9fff8462db.png",
+      "sha256": "68ae82500c335f25425fd6e8a8c4f593ef24c95af18420c67eef8aea9e281cef",
+      "bytes": 2399254,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/tyrannosaurus_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-e8a56911-9fca-4a6a-85cf-7f69052cbe7d.png",
+      "sha256": "babe4be43adf0aa96bf24beacfd292fe87f182d72b5482bd8c3d0e4bbc386be4",
+      "bytes": 2049901,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/ankylosaurus_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-ee339f88-4cdf-420d-984c-b32cdd4682bc.png",
+      "sha256": "79fb53d1b56b1ba2b2516524bf1c82d07d4ad5058a2d41556ce1671614667ea0",
+      "bytes": 1943834,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/utahraptor_S.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-f0d068d4-fbd9-4dce-8a04-17a63b6ec66e.png",
+      "sha256": "bd15263e49c4a95547f86519566bbe1072b6750e9f6ca2a367d0844e0c39e0db",
+      "bytes": 2288151,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/parasaurolophus_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-f5dc99db-f382-43ad-bc76-26adf151c16a.png",
+      "sha256": "87840d19abe7dc1a0d9722576b5ab7618d289612eeb5e5f1a699e4b0766dd4fa",
+      "bytes": 1872966,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/carnotaurus_E.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-f70a640c-4c80-4b6e-b84c-b78201822d6f.png",
+      "sha256": "edcf6454567587e11eaadfb2651b4ba32bbaae611c24d636ce4fd978fb167520",
+      "bytes": 1977878,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/player_full/gallimimus_W.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-f75c0941-e945-4779-9206-3adcda178050.png",
+      "sha256": "6f1c68198f2bc3151b1374e8f5810fde5301db9035372b46cfae0b3bd739c0bc",
+      "bytes": 2074010,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/triceratops_N.png"
+      ],
+      "already_archived": true,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    },
+    {
+      "original_filename": "exec-fbdc248f-e96a-4aae-91fd-be2d0ded0100.png",
+      "sha256": "d5cec6e95aa3245d00f1fdfab84ce1e2fd4b4215b5261cc4270b06ba979077e8",
+      "bytes": 2185443,
+      "repository_files": [
+        "PRIMAL_RUN_Game/Source_Generated/enemy_full/parasaurolophus_W_anatomy_revision.png"
+      ],
+      "already_archived": false,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false
+    }
+  ]
+}

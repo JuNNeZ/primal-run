@@ -1,10 +1,10 @@
-const {chromium, browserOptions}=require('./tools/browser.cjs');
-const path=require('path'),fs=require('fs'),{pathToFileURL}=require('url');
+const {chromium, browserOptions, localURL}=require('./tools/browser.cjs');
+const path=require('path'),fs=require('fs');
 let browser;
 (async()=>{
 browser=await chromium.launch(browserOptions());
 const page=await browser.newPage(),errors=[];page.on('pageerror',e=>errors.push(String(e)));
-await page.goto(pathToFileURL(path.join(__dirname,'PRIMAL_RUN_Prototype_Kit/demo.html')).href);
+await page.goto(await localURL(path.join(__dirname,'PRIMAL_RUN_Prototype_Kit/demo.html')));
 await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('Idle S'));
 const results=await page.evaluate(()=>{
  const check=(condition,message)=>{if(!condition)throw Error(message);};

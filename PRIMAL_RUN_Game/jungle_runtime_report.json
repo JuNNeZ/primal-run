@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-08",
+  "status": "PASS",
+  "source_sha256": {
+    "src/core.js": "55d88d3cbe48d2cacc7dd20618a055e4c87e28716a98503b6ec59e28e1c07398",
+    "src/app.js": "6df5de30ad6e84dfd62537038b0e28e85220ed162cfd0372226afe4549d11320",
+    "src/assets.js": "a47612ea78deca6c3569f5d5ead137b3906566cdee2a094d653c0572fe947ad7",
+    "src/audio.js": "8c05993c669bd89459bb52b885409f590d5d84815b4dc4fb23e99b536ee42010",
+    "style.css": "6fc68662342e2e15c97faf579b242d4f65bacf4565de2ec989a5bd2e06598547"
+  },
+  "core_tests": 46,
+  "browser_suites": 8,
+  "population_stage_seed_cases": 128,
+  "habitat_stage_seed_cases": 48,
+  "new_ecology_assets": 24,
+  "active_pngs": 696,
+  "gdevelop_resources": 704,
+  "standalone": {
+    "status": "PASS",
+    "runtime": "standalone Chromium",
+    "checks": [
+      "animated jungle scene on desktop/portrait/landscape",
+      "visible dinosaur passers-by",
+      "reduced-motion freezes scene",
+      "start/intro/pause controls",
+      "decoration respects paused run",
+      "actual recolored pixels for all four playable classes",
+      "no page errors or missing resources"
+    ],
+    "production_approved": false
+  },
+  "official_gdevelop": {
+    "status": "PASS",
+    "runtime": "official GDevelop GDJS 5.6.283",
+    "checks": [
+      "animated jungle scene on desktop/portrait/landscape",
+      "visible dinosaur passers-by",
+      "reduced-motion freezes scene",
+      "start/intro/pause controls",
+      "decoration respects paused run",
+      "actual recolored pixels for all four playable classes",
+      "no page errors or missing resources"
+    ],
+    "production_approved": false
+  },
+  "full_player_standalone": {
+    "runtime": "standalone Chromium",
+    "status": "PASS",
+    "checked": 480,
+    "states": 6,
+    "species": 4,
+    "directions": 4,
+    "checks": [
+      "480 actual drawn frames",
+      "six states/four directions/four classes",
+      "native144 and registered origins",
+      "stable species body collision/no smoothing",
+      "pause freezes animation",
+      "actual hurt/death transitions and terminal corpse"
+    ],
+    "production_approved": false
+  },
+  "full_player_gdevelop": {
+    "runtime": "official GDevelop GDJS 5.6.283",
+    "status": "PASS",
+    "checked": 480,
+    "states": 6,
+    "species": 4,
+    "directions": 4,
+    "checks": [
+      "480 actual drawn frames",
+      "six states/four directions/four classes",
+      "native144 and registered origins",
+      "stable species body collision/no smoothing",
+      "pause freezes animation",
+      "actual hurt/death transitions and terminal corpse"
+    ],
+    "production_approved": false
+  },
+  "full_npm_test": "PASS: all game/browser suites and historical kit; final game rerun after size/label corrections",
+  "validators": "PASS: kit, full game PNG inventory, enemy, full player, ecology and historical root sprites, in temporary checkout",
+  "visual_review": "24 props/insect poses and all eight species palettes reviewed on light/dark; final jungle menu screenshot reviewed. Native gameplay proportions, not literal fossil sizes.",
+  "art_status": "prototype_static",
+  "production_approved": false,
+  "remaining_art_limitations": [
+    "Generated dinosaur frame anatomy/marking/registration variations remain.",
+    "Insects have two-pose decorative studies, not fully polished flight cycles.",
+    "Flora are stylised placeholders, not identified fossil taxa."
+  ]
+}

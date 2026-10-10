@@ -1,0 +1,347 @@
+{
+  "technical_export_result": "PASS",
+  "assets": 3620,
+  "new_attack_frames": 24,
+  "errors": [],
+  "frames": {
+    "assets/player_combat/utahraptor_bite_S_000.png": {
+      "bbox": [
+        41,
+        14,
+        88,
+        113
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "opaque_pixels": 2203,
+      "palette_colors": 21
+    },
+    "assets/player_combat/utahraptor_bite_S_001.png": {
+      "bbox": [
+        40,
+        15,
+        87,
+        106
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "opaque_pixels": 2069,
+      "palette_colors": 21
+    },
+    "assets/player_combat/utahraptor_bite_S_002.png": {
+      "bbox": [
+        39,
+        14,
+        88,
+        116
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "opaque_pixels": 2312,
+      "palette_colors": 20
+    },
+    "assets/player_combat/utahraptor_bite_S_003.png": {
+      "bbox": [
+        41,
+        13,
+        88,
+        114
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "opaque_pixels": 2258,
+      "palette_colors": 19
+    },
+    "assets/player_combat/utahraptor_bite_S_004.png": {
+      "bbox": [
+        39,
+        13,
+        87,
+        107
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "opaque_pixels": 2162,
+      "palette_colors": 19
+    },
+    "assets/player_combat/utahraptor_bite_S_005.png": {
+      "bbox": [
+        41,
+        14,
+        88,
+        113
+      ],
+      "origin": [
+        64,
+        72
+      ],
+      "opaque_pixels": 2203,
+      "palette_colors": 21
+    },
+    "assets/player_combat/utahraptor_bite_N_000.png": {
+      "bbox": [
+        44,
+        5,
+        85,
+        120
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "opaque_pixels": 2094,
+      "palette_colors": 19
+    },
+    "assets/player_combat/utahraptor_bite_N_001.png": {
+      "bbox": [
+        44,
+        15,
+        84,
+        120
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "opaque_pixels": 1938,
+      "palette_colors": 20
+    },
+    "assets/player_combat/utahraptor_bite_N_002.png": {
+      "bbox": [
+        44,
+        5,
+        84,
+        120
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "opaque_pixels": 2093,
+      "palette_colors": 20
+    },
+    "assets/player_combat/utahraptor_bite_N_003.png": {
+      "bbox": [
+        44,
+        4,
+        85,
+        120
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "opaque_pixels": 2105,
+      "palette_colors": 19
+    },
+    "assets/player_combat/utahraptor_bite_N_004.png": {
+      "bbox": [
+        44,
+        7,
+        84,
+        120
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "opaque_pixels": 2052,
+      "palette_colors": 18
+    },
+    "assets/player_combat/utahraptor_bite_N_005.png": {
+      "bbox": [
+        44,
+        5,
+        85,
+        120
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "opaque_pixels": 2094,
+      "palette_colors": 19
+    },
+    "assets/player_combat/utahraptor_bite_E_000.png": {
+      "bbox": [
+        5,
+        41,
+        121,
+        90
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "opaque_pixels": 2512,
+      "palette_colors": 18
+    },
+    "assets/player_combat/utahraptor_bite_E_001.png": {
+      "bbox": [
+        2,
+        41,
+        114,
+        90
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "opaque_pixels": 2444,
+      "palette_colors": 19
+    },
+    "assets/player_combat/utahraptor_bite_E_002.png": {
+      "bbox": [
+        4,
+        41,
+        119,
+        90
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "opaque_pixels": 2548,
+      "palette_colors": 18
+    },
+    "assets/player_combat/utahraptor_bite_E_003.png": {
+      "bbox": [
+        3,
+        41,
+        125,
+        90
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "opaque_pixels": 2632,
+      "palette_colors": 19
+    },
+    "assets/player_combat/utahraptor_bite_E_004.png": {
+      "bbox": [
+        5,
+        41,
+        121,
+        90
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "opaque_pixels": 2508,
+      "palette_colors": 19
+    },
+    "assets/player_combat/utahraptor_bite_E_005.png": {
+      "bbox": [
+        5,
+        41,
+        121,
+        90
+      ],
+      "origin": [
+        68,
+        64
+      ],
+      "opaque_pixels": 2512,
+      "palette_colors": 18
+    },
+    "assets/player_combat/utahraptor_bite_W_000.png": {
+      "bbox": [
+        8,
+        41,
+        120,
+        90
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "opaque_pixels": 2245,
+      "palette_colors": 20
+    },
+    "assets/player_combat/utahraptor_bite_W_001.png": {
+      "bbox": [
+        9,
+        41,
+        120,
+        90
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "opaque_pixels": 2237,
+      "palette_colors": 20
+    },
+    "assets/player_combat/utahraptor_bite_W_002.png": {
+      "bbox": [
+        9,
+        41,
+        120,
+        90
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "opaque_pixels": 2262,
+      "palette_colors": 20
+    },
+    "assets/player_combat/utahraptor_bite_W_003.png": {
+      "bbox": [
+        6,
+        41,
+        120,
+        90
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "opaque_pixels": 2312,
+      "palette_colors": 20
+    },
+    "assets/player_combat/utahraptor_bite_W_004.png": {
+      "bbox": [
+        9,
+        41,
+        120,
+        90
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "opaque_pixels": 2252,
+      "palette_colors": 20
+    },
+    "assets/player_combat/utahraptor_bite_W_005.png": {
+      "bbox": [
+        8,
+        41,
+        120,
+        90
+      ],
+      "origin": [
+        60,
+        64
+      ],
+      "opaque_pixels": 2245,
+      "palette_colors": 20
+    }
+  },
+  "production_approved": false,
+  "scope": "Native PNG dimensions, palette, alpha, padding, inventory, source integrity, declared anchors, intentional endpoint reuse and timing plan. Does not certify anatomy, consistent lighting or temporal art quality.",
+  "visual_review": "See player_review.html at 1x/4x on both backgrounds. Generated poses remain studies; legacy walk/idle transitions require further refinement."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "frames": 72,
+  "species": {
+    "ankylosaurus": 8,
+    "baryonyx": 8,
+    "carnotaurus": 8,
+    "deinosuchus": 8,
+    "gallimimus": 8,
+    "pachycephalosaurus": 8,
+    "parasaurolophus": 8,
+    "triceratops": 8,
+    "tyrannosaurus": 8
+  },
+  "runtime_enabled": 0,
+  "errors": [],
+  "scope": "PNG/provenance only; anatomy/style/runtime approval remains separate."
+}

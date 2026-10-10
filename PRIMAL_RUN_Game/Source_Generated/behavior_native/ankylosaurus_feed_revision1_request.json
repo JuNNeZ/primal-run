@@ -1,0 +1,30 @@
+{
+  "prompt": "Make only tiny localized head/foot changes to this EXACT canonical Ankylosaurus sprite atlas. columns0/1 GRAZE: closed mouth softly nibbles ground with a tiny downward neck movement of about4sourcepixels betweenpair. Columns2/3 DRINK: head just slightly down, tiny throat swallow movement, feet still; no water drawn. Preserve all original body outline/armour plates, tailclub, pixelmarkings and original raw red/orange colours; do NOT repaint wholebody or increase/decrease size. It is body-consistent pixelgame animation reference. Exactly1536x1024 transparent FOUR columns384wide FOUR rows256high S,N,E,W, same layout. Fixed hip192,128eachcell. Every animal stays exactly its current TWO TIMES native size and existing position. Only a few pixels change to show action; never fillcell. Four legs, one tailclub, no horns. Preserve overhead/slight-side camera. Nolabels/shadows/background/puddles/food. Crisp square pixels 1990s style.",
+  "source": "ankylosaurus_feed_revision1.png",
+  "references": [
+    "ankylosaurus_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "source_sha256": "71fc6cc6ab8447fc66c86d761cb7e7a0417832929debdee089aa779b92f63dd4",
+  "canonical_references": [
+    {
+      "file": "assets/player_full/ankylosaurus_idle_S_000.png",
+      "sha256": "58f2552c44b43378ff16066407ce60108f83398a9f0a865daab1e481b9586dd9"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_N_000.png",
+      "sha256": "1a670f607e0ec71bf24e60914a860c522125a02399cbd0091f94aeee14da5c6f"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_E_000.png",
+      "sha256": "a30b20f757d7b2e9455b45cfdca3f3b077ed5dedb0d3e5c1975d7bbd29b937b4"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_W_000.png",
+      "sha256": "e6b64eb096add20da2ec520181a7e28e9a4395c47b38d3a3d28cf94a525510c0"
+    }
+  ],
+  "canonical_layout_sha256": "488546bd915dd4211e6f5a6bccce13d13f604861b778a2c8e541bfc949dad0b9"
+}

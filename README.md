@@ -1,17 +1,60 @@
 # PRIMAL RUN
 
-Privat arbejdsrepository til et top-down dinosaur-roguelite i pixel art.
+Arbejdsrepository til et top-down dinosaur-roguelite i pixel art.
 
-Den aktuelle kerne er **PRIMAL_RUN_Prototype_Kit**: 104 individuelle PNG-assets,
-otte WAV-placeholderlyde, en browserdemo og lokale GDevelop-byggeguides.
-Demoen har fire bevægelsesretninger, bite, HP, fjender, XP, mutationsvalg/stacks,
-pounce/stamina, death/restart og lokal DNA.
+Det aktive spil er **PRIMAL_RUN_Game**: en spilbar udviklingsversion med
+Velociraptor som startart, elleve spilbare arter, otte tilfældige baner og navngivne bosser,
+kød/levels, fælles og artsmutationer, permanente DNA-unlocks og upgrades,
+startmenu, lokale highscores, lydindstillinger og original proceduremusik.
+Den fælles spilkerne kører i browseren og i et GDevelop 5-projekt.
+
+Alle ti fjendearter har komplette serier for idle, gang, løb, angreb, skade
+og død i fire retninger:1200 runtime-frames.
+[Se fjendeanimationerne](PRIMAL_RUN_Game/enemy_full_review.html).
+Vand/mudder sænker bevægelse; hold C i buske for at snige/skjule dig.
+Flokke alarmerer hinanden, bytte græsser/hviler, og rovdyr har territorier.
+[Spiltest og balanceændringer1–4](PRIMAL_RUN_Game/PRIORITIES_1_4.md).
+
+Otte separate spillerarter har960 frames; tre arter deler deres fjendeserier.
+Elleve spilbare arter har1320 frames for idle, gang, løb, angreb, skade og død. [Se spilleranimationerne](PRIMAL_RUN_Game/player_full_review.html).
+Almindelige fjender kan opgive jagten efter 8 sekunder uden en ny træffer;
+chancen stiger med afstand og tid. Uforstyrrede byttedyr holder cirka 110 pixels
+afstand, når spilleren står stille. Bosser opgiver ikke.
+
+Menu, fire biomer og fire bosskampe har nu særskilte musiktemaer med farelag
+ved50/25/10%liv. Startområder, naturklynger og flodretning varierer mellem runs.
+Space angriber kun; mutationer og næste biome kræver et bevidst valg.
+
+Startmenuen har en animeret jungle med dinosaurer, parallax og smådyr.
+18 nye plante-/jorddetaljer og seks insektposes varierer mellem biomerne;
+Deinosuchus spawner ved floden, og dyr undgår lava ved spawn.
+Arterne har forskellige farver, og stabile kropsradier er gennemgået.
+[Se jungle, farver og størrelser](PRIMAL_RUN_Game/ecology_review.html).
+[Foreslåede næste forbedringer](PRIMAL_RUN_Game/NEXT_IMPROVEMENTS.md).
+
+**PRIMAL_RUN_Prototype_Kit** er den bevarede assetpakke og tidligere browserdemo
+med 104 PNG-assets, otte WAV-placeholderlyde og GDevelop-byggeguides.
+
+[Ny rute, Compy-flokke, NPC-evner og seed1993](PRIMAL_RUN_Game/JOURNEY_AND_COMPY.md).
 
 ## Start
 
-Åbn `PRIMAL_RUN_Prototype_Kit/START_HER.html` i en browser efter download/clone.
-Eller kør `npm run preview` og gå til
-`http://localhost:8000/PRIMAL_RUN_Prototype_Kit/START_HER.html`.
+Kør `npm run preview`, og åbn
+`http://localhost:8000/PRIMAL_RUN_Game/index.html`.
+
+I GDevelop åbnes **[PRIMAL_RUN_Game/project.json](PRIMAL_RUN_Game/project.json)**
+direkte. Behold hele projektmappen samlet. Mekanikkerne bruger JavaScript-events
+og redigeres i `src/`; de er ikke individuelle visuelle events i sceneeditoren.
+Projektet er indlæst og eksporteret med GDevelop 5.6.283, og eksporten er testet
+i Chromium. Se [spillets vejledning](PRIMAL_RUN_Game/README.md) og
+[udviklingsplanen](PRIMAL_RUN_Game/DEVELOPMENT_PLAN.md).
+
+`npm run build:web` klargør `dist/` til GitHub Pages. Den manuelle workflow
+**Publish PRIMAL RUN to GitHub Pages** publicerer efter opsætning i GitHub.
+Den færdige webdemo ligger også på branchen **gh-pages**. Vælg
+**Settings → Pages → Deploy from a branch → gh-pages → / (root) → Save**.
+Efter GitHubs deployment er adressen https://junnez.github.io/primal-run/.
+Publicering er først aktiv, når Pages er slået til i repositoryets indstillinger.
 
 Læs [cloud-overdragelsen](CLOUD_HANDOFF.md), når arbejdet fortsættes på en anden computer.
 Den komplette asset-guide ligger i
@@ -26,16 +69,37 @@ npm ci
 npx playwright install --with-deps chromium
 python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py
 npm test
+npm run build:game
+npm run build:web
 ```
 
 På Windows kan de installerede Chrome-filer bruges automatisk. En anden browsersti
 kan sættes med `PRIMAL_CHROME_PATH`. På Linux/cloud bruges Playwright Chromium.
 GitHub Actions kører asset- og browserkontroller ved push og PR.
 
+`npm run test:game` tester den nye spilkerne og browserversionen.
+`npm run test:kit` tester den tidligere prototype via lokal HTTP. Kit-testene
+skriver rapporter og screenshots; brug en midlertidig kopi, hvis historiske
+rapporter skal bevares. `npm run build:game` opdaterer det genererede GDevelop-
+event og kopierer kit-assets byte-for-byte; kør det efter ændringer i `src/`.
+
 Tidligere V2–V5-pakker og konceptudklip er bevaret som referencer. Arbejd videre
-i Prototype_Kit; regenerér ikke historiske pakker uden en konkret grund.
+i PRIMAL_RUN_Game; regenerér ikke historiske pakker uden en konkret grund.
 ZIP-filer, som kan genskabes lokalt, er udeladt fra Git.
 
 Alle assets er prototyper. Action-poser og enemy-stillbilleder er ikke færdige
-animationer. Der er endnu ikke et GDevelop `project.json`, og GDevelop-runtime
-er ikke testet. Se sprite-regler og rapporter for de præcise begrænsninger.
+animationer. Den nye GDevelop-runtime er funktionelt testet, men det godkender
+ikke grafikkens stil, anatomi eller animationskvalitet. Balance, mobilstyring og
+endelige animationer kræver videre spiltest. Se sprite-regler og rapporter.
+
+## Current ecology, corpse art and research workflow
+
+See [RESEARCH_AND_ECOLOGY.md](PRIMAL_RUN_Game/RESEARCH_AND_ECOLOGY.md) for the
+species book, wounded animals, rare rewards, run statistics/cinematics and
+seeded balance CLI. [Balance samples](PRIMAL_RUN_Game/balance_runs/README.md)
+include settings, outcomes and caveats. Corpse assets use their own
+[rule](PRIMAL_RUN_Game/SPRITE_RULES_CORPSES.md); living sprites are preserved.
+Focused recipes in [.agents/skills](.agents/skills) cover sprites, asset generation,
+mechanics and balance; AGENTS.md routes future work to the relevant recipe.
+
+[Deinosuchus: spillerintegration og animation-review](PRIMAL_RUN_Game/deinosuchus_playable_review.html). Låses op ved Doris på bane4; udviklingsbranch `codex/sprites-and-mechanics`, ikke automatisk publiceret.

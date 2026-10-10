@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "copied_assets": 104,
+  "new_combat_assets": 3516,
+  "byte_identical_to_kit": true,
+  "errors": [],
+  "production_approved": false,
+  "scope": "Integration preserves source pixels, manifest origins and prototype status. Not a visual or animation approval.",
+  "source_sha256": {
+    "src/run_titles.js": "11d200cfe8af66b5555bb7b23e1e676bdd8d80c398d458c967fbd3f0d435d06e",
+    "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
+    "src/core.js": "72908b7be9039a1b2b74c836e017a9b897480c52754b53ba4dffd25b3c79647e",
+    "src/i18n.js": "94adc5ad898f13b3dd8296ed7639d1e5fb8cf7e88faf1488e7176b7b456fd3d9",
+    "src/lang.js": "7fd0ddf441f5ee6cdfa2427111dce1439c0ef3618297143d1b36e6371dd8face",
+    "src/assets.js": "810e9f72d31198ed6b0c6e011d8c314de5e098bbe9ba812c662fd6abd08d8bd2",
+    "src/audio.js": "1b434e95d7062acfedc2e736f105d559b409f2fa82ca7fe65140abd008d6fc69",
+    "src/app.js": "6f0a0c00f1705ddbd227ae3ced240a4e8156fcfa92b72300d80ec6195c2231d2",
+    "style.css": "0b8f5b29ff6feb11f5918eaed1a1a92b57d9b2497b0d8ecbb819bb28f0f63988"
+  }
+}

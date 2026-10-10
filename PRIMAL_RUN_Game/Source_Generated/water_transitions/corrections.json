@@ -1,0 +1,86 @@
+{
+  "shore_soil:11": {
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "crop": [
+      34,
+      109,
+      354,
+      429
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "review": "Explicit interior320 square inside authored square; preserves targetcorner materials, ignores external presentation background."
+  },
+  "shore_sand:1": {
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "crop": [
+      417,
+      109,
+      737,
+      429
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "review": "Explicit interior320 square inside authored square; preserves targetcorner materials, ignores external presentation background."
+  },
+  "shore_sand:11": {
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "crop": [
+      801,
+      109,
+      1121,
+      429
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "review": "Explicit interior320 square inside authored square; preserves targetcorner materials, ignores external presentation background."
+  },
+  "water_depth:7": {
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "crop": [
+      1184,
+      109,
+      1504,
+      429
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "review": "Explicit interior320 square inside authored square; preserves targetcorner materials, ignores external presentation background."
+  },
+  "water_depth:11": {
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "crop": [
+      34,
+      558,
+      354,
+      878
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "review": "Explicit interior320 square inside authored square; preserves targetcorner materials, ignores external presentation background."
+  },
+  "water_depth:13": {
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "crop": [
+      417,
+      558,
+      737,
+      878
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "review": "Explicit interior320 square inside authored square; preserves targetcorner materials, ignores external presentation background."
+  },
+  "water_depth:14": {
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "crop": [
+      801,
+      558,
+      1121,
+      878
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "review": "Explicit interior320 square inside authored square; preserves targetcorner materials, ignores external presentation background."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "runtime": "GDevelop GDJS5.6.283",
+  "checked": 840,
+  "species": 7,
+  "states": 6,
+  "directions": 4,
+  "paused": true,
+  "scope": "840 actual drawn NPC frames, complete directional/state inventory, registered native144 pivots, integer scales, fixed collisions, death series and mutation pause.",
+  "production_approved": false
+}

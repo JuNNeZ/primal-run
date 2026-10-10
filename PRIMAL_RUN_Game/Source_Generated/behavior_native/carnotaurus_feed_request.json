@@ -1,0 +1,60 @@
+{
+  "species": "carnotaurus",
+  "family": "behavior_native",
+  "action": "feed",
+  "source": "carnotaurus_feed_revision1.png",
+  "source_sha256": "feba2bf62e26b82a25670cf22154fdec70c2e5d8b3b1d5f684a3b2427f277257",
+  "reference": "carnotaurus_canonical_layout.png",
+  "reference_sha256": "ec8285fda3010eb550354e7750a4ec19cfb57f9cce4aa239eb16becd058a34b5",
+  "prompt": "Edit attached canonical pixel sprite layout with MINIMAL motion only. Preserve EXACT whole body footprints, size, markings, colours, perspective and fixed hip positions. Transparent1536x1024 atlas,4columns384wide,4rows256high. Rows S,N,E,W in that order. Every cell hip192,128, original whole sprite144x144 enlarged exactly2x located48,-16. DO NOT fill cells or enlarge animal. Same tail, same two hind legs and tiny arms. Carnotaurus exactly TWO brow horns atop skull, NO nasal horn. Columns0,1 sniff ground with closed mouth, head tipped minimally; columns2,3 drink with head lowered a few pixels. No water props, no meat props. Paired frames differ only a few pixels, torso unchanged. Keep reference crisp coarse2x pixels, no smooth rendered art, no labels, no shadows beyond sprite, no extra limbs. This is a prototype consistency study.",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "cell_size": [
+    384,
+    256
+  ],
+  "rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "source_hip": [
+    192,
+    128
+  ],
+  "sampling": 2,
+  "native_canvas": [
+    144,
+    144
+  ],
+  "native_origin": [
+    72,
+    72
+  ],
+  "concerns": [
+    "Minimal pose study, not anatomy approved",
+    "Halo requires hard alpha export",
+    "No bbox recentering allowed"
+  ],
+  "canonical_references": [
+    {
+      "file": "assets/player_full/carnotaurus_idle_S_000.png",
+      "sha256": "8305e32b3f9d0ed451b83e964a1266bd0081cc9558ad15773afc1859e4252d4e"
+    },
+    {
+      "file": "assets/player_full/carnotaurus_idle_N_000.png",
+      "sha256": "95676786d135ed8e081d4e021bfc0ee6c9dce7bc04bd49c5851a0702720fa6db"
+    },
+    {
+      "file": "assets/player_full/carnotaurus_idle_E_000.png",
+      "sha256": "cb7977b7e04ac400b2822fecba70cb56e18b93277f7cce461c2d3fe74569ce12"
+    },
+    {
+      "file": "assets/player_full/carnotaurus_idle_W_000.png",
+      "sha256": "cc481d699c807eae728a36a99b192be46f749d06adf55e9b6af1248b3da15607"
+    }
+  ],
+  "canonical_layout_sha256": "ec8285fda3010eb550354e7750a4ec19cfb57f9cce4aa239eb16becd058a34b5"
+}

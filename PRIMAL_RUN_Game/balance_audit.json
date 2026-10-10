@@ -1,0 +1,155 @@
+{
+  "progression": {
+    "guaranteedBossDNA": [
+      15,
+      20,
+      25,
+      30
+    ],
+    "cumulativeBossDNA": [
+      15,
+      35,
+      60,
+      90
+    ],
+    "expectedDropDNA": {
+      "compy": 0.05,
+      "parasaurolophus": 0.3,
+      "carnotaurus": 1.2,
+      "ankylosaurus": 1.2,
+      "deinosuchus": 1.2,
+      "triceratops": 1.2,
+      "tyrannosaurus": 1.2
+    },
+    "note": "Fossils and optional elites add guaranteed rewards; ordinary drops are random. Banked DNA survives death."
+  },
+  "scope": "Deterministic primary attacks against stationary prey, predator and rear-armoured target. Includes contact time, hit-stop, cooldown and bleed; excludes enemy retaliation and navigation. Human playtesting still required.",
+  "classes": {
+    "compy": {
+      "hp": 80,
+      "speed": 175,
+      "unlockDNA": 0,
+      "baseDPS": 15,
+      "prey": {
+        "timeToKill": 1.9,
+        "attacks": 5
+      },
+      "predator": {
+        "timeToKill": 3.2,
+        "attacks": 8
+      },
+      "armoured": {
+        "timeToKill": 4.5,
+        "attacks": 11
+      },
+      "sharedOffence": {
+        "timeToKill": 1.53,
+        "attacks": 5
+      }
+    },
+    "utahraptor": {
+      "hp": 100,
+      "speed": 155,
+      "unlockDNA": 25,
+      "baseDPS": 16.67,
+      "prey": {
+        "timeToKill": 1.5,
+        "attacks": 3
+      },
+      "predator": {
+        "timeToKill": 2.77,
+        "attacks": 5
+      },
+      "armoured": {
+        "timeToKill": 4.03,
+        "attacks": 7
+      },
+      "sharedOffence": {
+        "timeToKill": 1.22,
+        "attacks": 3
+      }
+    },
+    "carnotaurus": {
+      "hp": 125,
+      "speed": 140,
+      "unlockDNA": 55,
+      "baseDPS": 17.5,
+      "prey": {
+        "timeToKill": 1.95,
+        "attacks": 3
+      },
+      "predator": {
+        "timeToKill": 2.78,
+        "attacks": 4
+      },
+      "armoured": {
+        "timeToKill": 3.62,
+        "attacks": 5
+      },
+      "sharedOffence": {
+        "timeToKill": 1.55,
+        "attacks": 3
+      }
+    },
+    "ankylosaurus": {
+      "hp": 150,
+      "speed": 110,
+      "unlockDNA": 75,
+      "baseDPS": 13.33,
+      "prey": {
+        "timeToKill": 2.17,
+        "attacks": 3
+      },
+      "predator": {
+        "timeToKill": 3.1,
+        "attacks": 4
+      },
+      "armoured": {
+        "timeToKill": 4.97,
+        "attacks": 6
+      },
+      "sharedOffence": {
+        "timeToKill": 1.73,
+        "attacks": 3
+      }
+    }
+  },
+  "upgradeCosts": [
+    10,
+    26,
+    47,
+    70,
+    95,
+    123,
+    152,
+    184,
+    217,
+    251
+  ],
+  "mutationChecks": {
+    "compyHunter": {
+      "timeToKill": 1.03,
+      "attacks": 3
+    },
+    "compyCombined": {
+      "timeToKill": 0.83,
+      "attacks": 3
+    },
+    "utahBleed": {
+      "timeToKill": 2.13,
+      "attacks": 4
+    },
+    "utahAmbush": {
+      "timeToKill": 0.88,
+      "attacks": 2
+    }
+  },
+  "adjustments": [
+    "Carnotaurus unlock60→55 DNA; Ankylosaurus85→75 DNA",
+    "Primary cooldowns: Compy0.40s, Utah0.60s, Carno0.80s, Anky0.90s",
+    "Compy Hunter35→25%/rank, additive with shared damage",
+    "Ability stamina costs28/38/45/45; Momentum refund maximum12 per cast",
+    "Stamina regeneration12/s calm and8/s combat; blocked1.25s after abilities and1s after damage",
+    "Bleed UI clarifies fixed3-second duration refreshed by bites; maximum9damage/s at rank3"
+  ]
+}

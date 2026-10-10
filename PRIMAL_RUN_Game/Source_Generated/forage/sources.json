@@ -1,0 +1,8 @@
+{
+  "source": "Source_Generated/forage/food_pickups.png",
+  "sha256": "7e921aace6d5f006331ff800a1bbdac06c1e2ddba0eee20e9d97b9e7ddf01f07",
+  "layout": "four columns/two rows; fruit2, roots2, edible mushrooms2, poisonous mushrooms2",
+  "reference": "Canonical herb/fruit_bush/roots/mushrooms ecological props",
+  "review": "Fallen fruit replaces whole fruit bush at edible pickups; toxic olive caps and explicit warning remain distinguishable. Native technical checks are not production approval.",
+  "production_approved": false
+}
