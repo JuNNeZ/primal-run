@@ -88,5 +88,6 @@
  "Spillet kunne fryse ved start eller ved næste bane – det er rettet.": "開始時や次のステージでゲームがフリーズすることがある問題を修正しました。",
  "Planteædere får ikke længere \"tryk F for at spise\" ved kød.": "草食種が肉の近くで「Fを押して食べる」と表示されなくなりました。",
  "<a href=\"./\">← Tilbage til spillet</a>": "<a href=\"./\">← ゲームに戻る</a>",
- "<b>Hovedmenuen:</b> Baggrunden fylder nu hele skærmen. Dinosauren i menuen kæmper mod små angribere og flygter fra bosser og store flokke, så den ikke længere bliver overløbet af Compyer. Patch notes står på det sprog, du har valgt, og menuen henter langt færre filer, når siden åbner.": "<b>メインメニュー：</b>背景が画面全体に広がるようになりました。メニューの恐竜は小さな相手とは戦い、ボスや大きな群れからは逃げるので、もうコンピーの群れに埋もれません。パッチノートは選んだ言語で表示され、ページを開いたときに読み込むファイルも大幅に減りました。"
+ "<b>Hovedmenuen:</b> Baggrunden fylder nu hele skærmen. Dinosauren i menuen kæmper mod små angribere og flygter fra bosser og store flokke, så den ikke længere bliver overløbet af Compyer. Patch notes står på det sprog, du har valgt, og menuen henter langt færre filer, når siden åbner.": "<b>メインメニュー：</b>背景が画面全体に広がるようになりました。メニューの恐竜は小さな相手とは戦い、ボスや大きな群れからは逃げるので、もうコンピーの群れに埋もれません。パッチノートは選んだ言語で表示され、ページを開いたときに読み込むファイルも大幅に減りました。",
+ "<b>Artsbogen:</b> Hver art, du har set, vises nu som en lille model, der går på stedet og angriber en gang imellem. Områder og angreb står nu på dit eget sprog.": "<b>図鑑：</b>見たことのある種族が、その場で歩いて時々攻撃する小さなモデルで表示されるように。エリアと攻撃もあなたの言語で表示されます。"
 }

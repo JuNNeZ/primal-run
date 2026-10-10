@@ -88,5 +88,6 @@
  "Spillet kunne fryse ved start eller ved næste bane – det er rettet.": "遊戲開始或者去下一關時可能會凍結——已修正。",
  "Planteædere får ikke længere \"tryk F for at spise\" ved kød.": "草食恐龍喺肉隔離唔會再見到「撳 F 食嘢」。",
  "<a href=\"./\">← Tilbage til spillet</a>": "<a href=\"./\">← 返回遊戲</a>",
- "<b>Hovedmenuen:</b> Baggrunden fylder nu hele skærmen. Dinosauren i menuen kæmper mod små angribere og flygter fra bosser og store flokke, så den ikke længere bliver overløbet af Compyer. Patch notes står på det sprog, du har valgt, og menuen henter langt færre filer, når siden åbner.": "<b>主選單：</b>背景而家會鋪滿成個畫面。選單入面隻恐龍會同細隻嘅敵人打，見到 BOSS 同大群就走，唔會再俾美頜龍淹冇。更新日誌會用你揀咗嘅語言顯示，開網頁嗰陣選單要載入嘅檔案亦少咗好多。"
+ "<b>Hovedmenuen:</b> Baggrunden fylder nu hele skærmen. Dinosauren i menuen kæmper mod små angribere og flygter fra bosser og store flokke, så den ikke længere bliver overløbet af Compyer. Patch notes står på det sprog, du har valgt, og menuen henter langt færre filer, når siden åbner.": "<b>主選單：</b>背景而家會鋪滿成個畫面。選單入面隻恐龍會同細隻嘅敵人打，見到 BOSS 同大群就走，唔會再俾美頜龍淹冇。更新日誌會用你揀咗嘅語言顯示，開網頁嗰陣選單要載入嘅檔案亦少咗好多。",
+ "<b>Artsbogen:</b> Hver art, du har set, vises nu som en lille model, der går på stedet og angriber en gang imellem. Områder og angreb står nu på dit eget sprog.": "<b>恐龍圖鑑：</b>你見過嘅每個物種而家都會以細模型展示，喺原地行並且間中出招。區域同攻擊而家都用你嘅語言顯示。"
 }

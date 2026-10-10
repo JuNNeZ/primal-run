@@ -88,5 +88,6 @@
  "Spillet kunne fryse ved start eller ved næste bane – det er rettet.": "游戏可能在开始时或进入下一关时卡死——已修复。",
  "Planteædere får ikke længere \"tryk F for at spise\" ved kød.": "植食者在肉旁边不会再看到“按 F 进食”。",
  "<a href=\"./\">← Tilbage til spillet</a>": "<a href=\"./\">← 返回游戏</a>",
- "<b>Hovedmenuen:</b> Baggrunden fylder nu hele skærmen. Dinosauren i menuen kæmper mod små angribere og flygter fra bosser og store flokke, så den ikke længere bliver overløbet af Compyer. Patch notes står på det sprog, du har valgt, og menuen henter langt færre filer, når siden åbner.": "<b>主菜单：</b>背景现在铺满整个屏幕。菜单里的恐龙会迎战小型来敌，遇到首领和大群敌人则会逃跑，不会再被美颌龙淹没。更新日志会以你选择的语言显示，页面打开时菜单加载的文件也大大减少。"
+ "<b>Hovedmenuen:</b> Baggrunden fylder nu hele skærmen. Dinosauren i menuen kæmper mod små angribere og flygter fra bosser og store flokke, så den ikke længere bliver overløbet af Compyer. Patch notes står på det sprog, du har valgt, og menuen henter langt færre filer, når siden åbner.": "<b>主菜单：</b>背景现在铺满整个屏幕。菜单里的恐龙会迎战小型来敌，遇到首领和大群敌人则会逃跑，不会再被美颌龙淹没。更新日志会以你选择的语言显示，页面打开时菜单加载的文件也大大减少。",
+ "<b>Artsbogen:</b> Hver art, du har set, vises nu som en lille model, der går på stedet og angriber en gang imellem. Områder og angreb står nu på dit eget sprog.": "<b>物种图鉴：</b>你见过的每个物种现在都会以小模型展示，原地行走并不时发动攻击。区域和攻击现在也以你的语言显示。"
 }
