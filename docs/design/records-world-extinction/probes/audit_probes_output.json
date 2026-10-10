@@ -1,0 +1,199 @@
+{
+ "distance": {
+  "species": "velociraptor",
+  "speedPxPerSec": 170,
+  "movingPx60s": 9778,
+  "displayedKmPer60s": 9.78,
+  "idlePx60s": 0,
+  "teleport500pxAdds": 0,
+  "minutesOfMovementFor103DisplayedKm": 10.5
+ },
+ "rivals": {
+  "levelsChecked": 1600,
+  "rivalMissing": 33,
+  "missingPerLevel": [
+   0,
+   0,
+   15,
+   18,
+   0,
+   0,
+   0,
+   0
+  ],
+  "runsWithAllEightRivals": 169,
+  "of": 200,
+  "rewardEventsPerLevel": {
+   "6": 827,
+   "7": 773
+  }
+ },
+ "colliders": {
+  "level": 3,
+  "solidRocks": 117,
+  "softCover": 1058,
+  "mudPatches": 19,
+  "props": {
+   "fern_large.png": {
+    "count": 591,
+    "onRockCollider": 12,
+    "isSoftCover": 591
+   },
+   "fallen_log.png": {
+    "count": 368,
+    "onRockCollider": 11,
+    "isSoftCover": 3
+   },
+   "flower_bush.png": {
+    "count": 324,
+    "onRockCollider": 11,
+    "isSoftCover": 324
+   },
+   "tree_canopy.png": {
+    "count": 357,
+    "onRockCollider": 9,
+    "isSoftCover": 2
+   },
+   "fern.png": {
+    "count": 829,
+    "onRockCollider": 12,
+    "isSoftCover": 3
+   },
+   "reeds.png": {
+    "count": 111,
+    "onRockCollider": 2,
+    "isSoftCover": 1
+   },
+   "moss.png": {
+    "count": 74,
+    "onRockCollider": 1,
+    "isSoftCover": 2
+   },
+   "shrub.png": {
+    "count": 70,
+    "onRockCollider": 2,
+    "isSoftCover": 70
+   },
+   "fruit_bush.png": {
+    "count": 73,
+    "onRockCollider": 3,
+    "isSoftCover": 73
+   },
+   "flowers.png": {
+    "count": 80,
+    "onRockCollider": 0,
+    "isSoftCover": 0
+   },
+   "roots.png": {
+    "count": 66,
+    "onRockCollider": 1,
+    "isSoftCover": 0
+   },
+   "cycad.png": {
+    "count": 62,
+    "onRockCollider": 1,
+    "isSoftCover": 0
+   },
+   "broad_fern.png": {
+    "count": 54,
+    "onRockCollider": 0,
+    "isSoftCover": 0
+   },
+   "horsetail.png": {
+    "count": 82,
+    "onRockCollider": 1,
+    "isSoftCover": 0
+   }
+  }
+ },
+ "lavaExploit": {
+  "lavaCoreHalfWidthPx": 14,
+  "trials": [
+   {
+    "playerOffsetFromLavaLine": 18,
+    "boss": "carnotaurus",
+    "bossHpLostPct": 37,
+    "playerHpLostPct": 100,
+    "framesByMode": {
+     "chase": 80,
+     "windup": 80,
+     "charge": 20,
+     "recover": 84,
+     "bite": 7
+    }
+   },
+   {
+    "playerOffsetFromLavaLine": 30,
+    "boss": "carnotaurus",
+    "bossHpLostPct": 40,
+    "playerHpLostPct": 100,
+    "framesByMode": {
+     "chase": 80,
+     "windup": 81,
+     "charge": 20,
+     "recover": 84,
+     "bite": 7
+    }
+   },
+   {
+    "playerOffsetFromLavaLine": 40,
+    "boss": "carnotaurus",
+    "bossHpLostPct": 37,
+    "playerHpLostPct": 100,
+    "framesByMode": {
+     "chase": 80,
+     "windup": 80,
+     "charge": 20,
+     "recover": 84,
+     "bite": 7
+    }
+   },
+   {
+    "playerOffsetFromLavaLine": 50,
+    "boss": "carnotaurus",
+    "bossHpLostPct": 91,
+    "playerHpLostPct": 100,
+    "framesByMode": {
+     "chase": 109,
+     "windup": 179,
+     "charge": 76,
+     "recover": 206,
+     "bite": 15,
+     "enrage": 35,
+     "slam": 4
+    }
+   },
+   {
+    "playerOffsetFromLavaLine": 60,
+    "boss": "carnotaurus",
+    "bossHpLostPct": 89,
+    "playerHpLostPct": 100,
+    "framesByMode": {
+     "chase": 111,
+     "windup": 167,
+     "charge": 57,
+     "recover": 159,
+     "bite": 14,
+     "enrage": 35,
+     "broken": 38,
+     "slam": 4
+    }
+   },
+   {
+    "playerOffsetFromLavaLine": 70,
+    "boss": "carnotaurus",
+    "bossHpLostPct": 91,
+    "playerHpLostPct": 100,
+    "framesByMode": {
+     "chase": 116,
+     "windup": 180,
+     "charge": 76,
+     "recover": 207,
+     "bite": 16,
+     "enrage": 35,
+     "slam": 4
+    }
+   }
+  ]
+ }
+}
