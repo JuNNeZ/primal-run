@@ -1,0 +1,1 @@
+PASS: cinematic jungle menu, responsive controls, reduced motion, actual species palettes, pause isolation
