@@ -4,6 +4,8 @@
   else root.PrimalCore = factory();
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
+  // Records/titles live in records.js; review pages that load only core.js keep working without them.
+  const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
   const FEATURES={packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
@@ -414,6 +416,8 @@
     save.skins=['classic',...Object.keys(SKINS).filter(id=>id!=='classic'&&Array.isArray(x.skins)&&x.skins.includes(id))];
     save.skin=save.skins.includes(x.skin)?x.skin:'classic';
     save.selectedSpecies = save.unlockedSpecies.includes(x.selectedSpecies) ? x.selectedSpecies : 'deinonychus';
+    // Version 3 adds local records and earned run titles; v2 saves are seeded from lifetime/scores.
+    if(RECORDS){save.version=3;save.titles=RECORDS.sanitizeTitles(x.titles);save.records=RECORDS.sanitizeRecords(x.records,save);}
     return save;
   }
   // ---- Progression (overhaul phase 4): a longer unlock ladder, achievements and cosmetic skins.
@@ -438,7 +442,7 @@
     {id:'untouchable',name:'Urørlig',text:'Besejr en boss uden at blive ramt af den.',dna:25,check:c=>c.flags.untouchable},
     {id:'rivalSlayer',name:'Rivalernes skræk',text:'Nedlæg 5 rivaler i alt.',dna:15,skin:'elite',check:c=>c.life.rivals>=5},
     {id:'survivor',name:'Overlever',text:'Overlev 10 minutter i ét run.',species:'compy',check:c=>c.run&&c.run.seconds>=600},
-    {id:'marathon',name:'Maratonløber',text:'Løb 20 km i alt.',species:'gallimimus',check:c=>c.life.distance>=20000},
+    {id:'marathon',name:'Maratonløber',text:'Løb 10 km i alt.',species:'gallimimus',check:c=>c.life.distance>=10000*PX_PER_METER},
     {id:'fisherKing',name:'Fiskebankens fald',text:'Besejr Benny – Fiskebankens Hersker.',species:'baryonyx',check:c=>c.flags.bossKind==='baryonyx'},
     {id:'riverMaw',name:'Flodens fald',text:'Besejr Doris på bane 4.',species:'deinosuchus',check:c=>c.flags.bossKind==='deinosuchus'&&c.run&&c.run.levelIndex===3},
     {id:'gentleGiant',name:'Blid men farlig',text:'Nedlæg 3 elite- eller rivaldyr med en planteæder.',species:'triceratops',check:c=>c.life.herbivoreElites>=3},
@@ -552,7 +556,9 @@
     // One optional miniboss per level, far from the start: risk you choose for an epic genome.
     spawnRival() {
       const r=this.run,kind=RIVALS[r.stage].kind,start={x:480,y:340};
-      const spots=r.map.habitats.filter(h=>!isWater(r.stage,r.map,h,-40)&&Math.hypot(h.x-start.x,h.y-start.y)>900&&suitableHabitat(r.stage,r.map,kind,h)&&!r.map.rocks.some(rock=>Math.hypot(h.x-rock.x,h.y-rock.y)<70)&&!r.map.sites.some(site=>Math.hypot(h.x-site.x,h.y-site.y)<260));
+      // A river rival (Baryonyx) needs a riverside habitat; on ~7 % of river maps none is also 40 px from water, so relax only that margin (never into water).
+      const candidates=margin=>r.map.habitats.filter(h=>!isWater(r.stage,r.map,h,margin)&&Math.hypot(h.x-start.x,h.y-start.y)>900&&suitableHabitat(r.stage,r.map,kind,h)&&!r.map.rocks.some(rock=>Math.hypot(h.x-rock.x,h.y-rock.y)<70)&&!r.map.sites.some(site=>Math.hypot(h.x-site.x,h.y-site.y)<260));
+      let spots=candidates(-40);if(!spots.length)spots=candidates(0);
       if(!spots.length)return null;
       const spot=spots[Math.floor(seeded(r.seed^Math.imul(r.levelIndex+7,97531))()*spots.length)];
       const e=this.spawn(kind,spot);if(!e)return null;
@@ -1292,7 +1298,7 @@
         }
       }
       const surface=this.terrainAt(r.player);r.surface=surface.kind;
-      if(surface.burn){r.burnTick=(r.burnTick||0)-dt;if(r.burnTick<=0){r.burnTick=.5;const inv=r.invulnerable;r.invulnerable=0;this.damage(4,null);r.invulnerable=Math.max(inv,.1);r.lastHit=null;if(this.phase!=='playing')return;}}
+      if(surface.burn){r.burnTick=(r.burnTick||0)-dt;if(r.burnTick<=0){r.burnTick=.5;const inv=r.invulnerable;r.invulnerable=0;this.damage(4,RECORDS?{hazard:'lava'}:null);r.invulnerable=Math.max(inv,.1);r.lastHit=null;if(this.phase!=='playing')return;}}
       const quiet=(!r.player.moving||!!input.sneak)&&!r.attack&&r.pounce===0&&r.seconds>=r.revealedUntil;
       r.concealTime=surface.cover&&quiet?r.concealTime+dt:0;r.hidden=r.concealTime>=.6;
       this.decayCorpses(dt);
@@ -1381,5 +1387,6 @@
       for(const [e,hp] of enemies)r.stats.damageDealt+=Math.max(0,hp-Math.max(0,e.hp));
     }
   };
-  return { FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
+  return { RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });
