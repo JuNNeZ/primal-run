@@ -51,7 +51,7 @@ html,body{height:100%;margin:0;overflow:hidden}.primal-shell{width:100%;max-widt
 /* M2: tilted living-world menu */
 .arena{transition:background .6s}.cinematic-menu .arena{background:linear-gradient(180deg,#de954a 0%,#674333 22%,#28372a 46%,#151b19 100%)}
 .arena>canvas{transition:transform 1.1s cubic-bezier(.2,.7,.2,1);transform-origin:50% 72%}
-.cinematic-menu .arena>canvas{transform:perspective(1100px) rotateX(26deg) scale(1.22)}
+.cinematic-menu .arena>canvas{transform-origin:50% 70%;transform:perspective(1100px) rotateX(22deg) scale(1.55)}
 .cinematic-menu .arena::after{content:"";position:absolute;inset:0 0 auto 0;height:28%;background:linear-gradient(180deg,#de954a55,transparent);pointer-events:none}
 .menu-screen{background:linear-gradient(90deg,#10171300,#101713aa 70%)}
 .chosen-dino{display:flex;align-items:center;gap:12px;margin:0 0 14px;padding:8px;background:#1b2b22;border:1px solid #3d4c33}.chosen-dino img{width:64px;height:64px;image-rendering:pixelated}.chosen-dino b{display:block;font-size:16px}.chosen-dino small{color:#a2d4c1;font-size:11px}.chosen-dino button{margin-left:auto;font-size:11px;padding:8px 10px}
@@ -59,7 +59,7 @@ html,body{height:100%;margin:0;overflow:hidden}.primal-shell{width:100%;max-widt
 .intro-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 12px}.intro-cards article{background:#1b2b22;border:1px solid #3d4c33;padding:12px;text-align:center}.intro-cards img{width:96px;height:96px;image-rendering:pixelated;margin:0 auto 6px;display:block;object-fit:contain}.intro-cards b{display:block;margin-bottom:6px}.intro-cards p{font-size:12px;color:#b6c0a9;line-height:1.5;margin:0}
 .intro-warning{display:flex;width:96px;height:96px;margin:0 auto 6px;align-items:center;justify-content:center;font-size:44px;color:#fff1c9;background:radial-gradient(circle,#ed7869aa 0 45%,#ed786933 46% 70%,transparent 71%);border-radius:50%;outline:2px dashed #ed7869;outline-offset:-6px}
 .skip-intro{font-size:12px;color:#b6c0a9;margin:8px 0}
-@media(max-width:800px){.intro-cards{grid-template-columns:1fr}.intro-cards article{display:grid;grid-template-columns:56px 1fr;text-align:left;gap:4px 10px;align-items:center}.intro-cards img,.intro-warning{width:56px;height:56px;grid-row:span 2;margin:0;font-size:26px}.cinematic-menu .arena>canvas{transform:perspective(900px) rotateX(18deg) scale(1.15)}}
+@media(max-width:800px){.intro-cards{grid-template-columns:1fr}.intro-cards article{display:grid;grid-template-columns:56px 1fr;text-align:left;gap:4px 10px;align-items:center}.intro-cards img,.intro-warning{width:56px;height:56px;grid-row:span 2;margin:0;font-size:26px}.cinematic-menu .arena>canvas{transform:perspective(900px) rotateX(16deg) scale(1.45)}}
 @media(prefers-reduced-motion:reduce){.arena>canvas{transition:none}}
 
 /* Review fixes: HUD portrait must not inherit the full-arena canvas rule; cropped thumbnails */

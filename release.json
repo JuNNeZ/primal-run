@@ -1,8 +1,8 @@
 {
-  "source_commit": "6e6a3a4",
+  "source_commit": "62f4213",
   "source_branch": "integration/next",
   "date": "2026-10-10",
-  "scope": "Part A (A1-A5, Codex) + Part B (B1-B8, Claude): boss reach and lava crossings, boss signatures, daily hunt, challenges, fish king skin, scent tracks, drought, day/night, raptor pack, records/titles; 22 languages + 3 fun languages; lazy menu preload (222 requests at menu instead of 1666)",
-  "validation": "229 unit tests; browser suite green except player-full-browser (fails identically on 030f613 and codex/sprites-and-mechanics in the cloud container: death frame timing)",
+  "scope": "Part A (A1-A5, Codex) + Part B (B1-B8, Claude): boss reach and lava crossings, boss signatures, daily hunt, challenges, fish king skin, scent tracks, drought, day/night, raptor pack, records/titles; 22 languages + 3 fun languages; lazy menu preload (222 requests at menu instead of 1666); menu: demo dino fights/flees, full-frame backdrop, no labels; patch notes in every language",
+  "validation": "231 unit tests; browser suite green except player-full-browser (fails identically on 030f613 in the cloud container)",
   "rollback": "branch backup/live-2026-10-10"
 }
