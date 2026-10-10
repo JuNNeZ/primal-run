@@ -7,7 +7,7 @@
   "production_approved": false,
   "scope": "Integration preserves source pixels, manifest origins and prototype status. Not a visual or animation approval.",
   "source_sha256": {
-    "src/run_titles.js": "422b8e02fd80c9048f7e231854bc2b43d4227d80c9d8f1a5080afe5fa7e0a358",
+    "src/run_titles.js": "11d200cfe8af66b5555bb7b23e1e676bdd8d80c398d458c967fbd3f0d435d06e",
     "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
     "src/core.js": "72908b7be9039a1b2b74c836e017a9b897480c52754b53ba4dffd25b3c79647e",
     "src/i18n.js": "94adc5ad898f13b3dd8296ed7639d1e5fb8cf7e88faf1488e7176b7b456fd3d9",

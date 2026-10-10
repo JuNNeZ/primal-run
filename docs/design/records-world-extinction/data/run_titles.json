@@ -231,7 +231,7 @@
    "requiredVariables": [
     "maxHitDamage"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "ambusher",
@@ -251,7 +251,7 @@
    "requiredVariables": [
     "ambushKills"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "albino_hunter",
@@ -312,7 +312,7 @@
     "eliteKills",
     "rareKills"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "boss_hunter",
@@ -372,7 +372,7 @@
    "requiredVariables": [
     "bossNoHitKills"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "ghost_of_the_valley",
@@ -392,7 +392,7 @@
    "requiredVariables": [
     "bossNoHitKills"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "by_a_thread",
@@ -412,7 +412,7 @@
    "requiredVariables": [
     "bossCloseCalls"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "speed_slayer",
@@ -421,10 +421,10 @@
     "en": "Speed Slayer"
    },
    "description": {
-    "da": "Besejrede en boss på under 25 sekunder i et run med mindst 2 bosser.",
-    "en": "Beat a boss in under 25 s in a run with at least 2 bosses."
+    "da": "Besejrede en boss på under 20 sekunder i et run med mindst 2 bosser.",
+    "en": "Beat a boss in under 20 s in a run with at least 2 bosses."
    },
-   "condition": "s.bosses >= 2 && s.fastestBossSeconds > 0 && s.fastestBossSeconds < 25",
+   "condition": "s.bosses >= 2 && s.fastestBossSeconds > 0 && s.fastestBossSeconds < 20",
    "priority": 55,
    "rarity": "rare",
    "tieBreak": "inverse:fastestBossSeconds",
@@ -433,7 +433,7 @@
     "fastestBossSeconds",
     "bosses"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "rival_slayer",
@@ -475,7 +475,7 @@
     "rivals",
     "rivalsSpawned"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "mini_menace",
@@ -495,7 +495,7 @@
    "requiredVariables": [
     "minibossKills"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "king_slayer",
@@ -538,7 +538,7 @@
     "hpLeftPct",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "survivor",
@@ -619,7 +619,7 @@
    "requiredVariables": [
     "longestNoHitSeconds"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "living_dangerously",
@@ -640,7 +640,7 @@
     "bosses",
     "lowHpSeconds"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "medic",
@@ -700,7 +700,7 @@
    "requiredVariables": [
     "hiddenSeconds"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "wanderer",
@@ -821,7 +821,7 @@
    "requiredVariables": [
     "eventsClaimed"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "nest_raider",
@@ -841,7 +841,7 @@
    "requiredVariables": [
     "sitesClaimed"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "tunnel_vision",
@@ -903,7 +903,7 @@
    "requiredVariables": [
     "secretsFound"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "needs feature: amber secrets"
   },
   {
    "id": "amber_keeper",
@@ -923,7 +923,7 @@
    "requiredVariables": [
     "secretsFound"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "needs feature: amber secrets"
   },
   {
    "id": "green_teeth",
@@ -1066,7 +1066,7 @@
    "requiredVariables": [
     "foodStolen"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "needs feature: food theft"
   },
   {
    "id": "omnivore_gourmet",
@@ -1147,7 +1147,7 @@
    "requiredVariables": [
     "epicMutations"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "dna_hoarder",
@@ -1187,7 +1187,7 @@
    "requiredVariables": [
     "achievementsThisRun"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "stamina_burner",
@@ -1248,7 +1248,7 @@
     "lavaSeconds",
     "levelReached"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "hot_feet",
@@ -1268,7 +1268,7 @@
    "requiredVariables": [
     "lavaDamage"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "swamp_thing",
@@ -1288,7 +1288,7 @@
    "requiredVariables": [
     "mudSeconds"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "deep_diver",
@@ -1308,7 +1308,7 @@
    "requiredVariables": [
     "deepWaterSeconds"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "lava_bath",
@@ -1329,7 +1329,7 @@
     "deathCauseType",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "compy_snack",
@@ -1350,7 +1350,7 @@
     "killerIsCompy",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "carls_lunch",
@@ -1371,7 +1371,7 @@
     "deathBossId",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "karls_ashes",
@@ -1392,7 +1392,7 @@
     "deathBossId",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "benny_bait",
@@ -1413,7 +1413,7 @@
     "deathBossId",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "doris_dinner",
@@ -1434,7 +1434,7 @@
     "deathBossId",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "palle_pushover",
@@ -1455,7 +1455,7 @@
     "deathBossId",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "asta_anvil",
@@ -1476,7 +1476,7 @@
     "deathBossId",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "tina_skewer",
@@ -1497,7 +1497,7 @@
     "deathBossId",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "so_close",
@@ -1518,7 +1518,7 @@
     "deathBossId",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "speedrun_to_death",
@@ -1540,7 +1540,7 @@
     "seconds",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "herbivore_casualty",
@@ -1563,7 +1563,7 @@
     "killerDiet",
     "victory"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "quitter",
@@ -1583,7 +1583,7 @@
    "requiredVariables": [
     "abandoned"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "punching_bag",
@@ -1775,7 +1775,7 @@
     "kills",
     "species"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "tyrant",
@@ -1838,7 +1838,7 @@
     "abilityKills",
     "species"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "tracked (records.js)"
   },
   {
    "id": "last_sky",
@@ -1858,7 +1858,7 @@
    "requiredVariables": [
     "secretLevel"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "needs feature: secret level 9"
   },
   {
    "id": "they_became_birds",
@@ -1878,7 +1878,7 @@
    "requiredVariables": [
     "secretEnding"
    ],
-   "implementationStatus": "needs new tracking"
+   "implementationStatus": "needs feature: secret ending"
   },
   {
    "id": "night_stalker",
