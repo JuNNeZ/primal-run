@@ -79,6 +79,9 @@ Alle elementer har i dag en procedurel fallback. Behold den, så spillet virker,
 - Æg, udklækning og unger (`IDEABANK.md` → "Udklækning og opvækst").
 - Nye spilbare arter og stemnings-NPC'er (`IDEABANK.md` → "Nye arter og dyr").
 
+## Balance (til orientering)
+Del B gør spillet sværere for bots, og B3 (spor) giver den største enkelteffekt. Se `balance_runs/2026-10-10-B-per-package/REPORT.md`. Lav ikke balanceændringer uden Jonas. Nye animationer og dyr skal ikke ændre kampreglerne.
+
 ## Claude-status (til orientering)
 Opdateres nederst i `PART_B_STATUS.md`. Åbne Claude-punkter: balance pr. pakke, `speed_slayer`-andelen og titel-metadata. Se afsnittet "Opfølgning 10. okt. aften".
 
