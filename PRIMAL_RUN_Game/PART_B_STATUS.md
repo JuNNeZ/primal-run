@@ -31,7 +31,7 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 
 - Nav-grid med 32 px celler pr. kort og nav-klasse, bygget første gang en boss har brug for det. 3×3 prøvepunkter pr. celle, så lavastriben på 28 px aldrig smutter mellem to celler. Klipper blokerer celler ud fra bossens radius.
 - BFS-flowfelt fra spilleren, højst hver 0,5 s pr. boss, og kun mens den lige linje er blokeret (X8).
-- Tilstande: `chase` (uændret, når linjen er fri), `reposition` (følger flowfeltet mod en krydsning; bid er stadig tilladt tæt på), `stalk` (ingen vej: holder spillerens rækkevidde + 30 px, vender mod spilleren), `leash` (12 s uden vej og 8 s uden skade: går hjem, samme HP). En boss, der står i et hjørne inden for spillerens rækkevidde, kæmper normalt igen.
+- Tilstande: `chase` (uændret, når linjen er fri), `reposition` (følger flowfeltet mod en krydsning og trækker sig samtidig ud af spillerens rækkevidde; den bider ikke hen over lavaen, se rettelserne efter review), `stalk` (ingen vej: holder spillerens rækkevidde + 30 px, vender mod spilleren), `leash` (12 s uden vej og 8 s uden skade: går hjem, samme HP). En boss, der står i et hjørne inden for spillerens rækkevidde, kæmper normalt igen.
 - Stormløb: banen tjekkes ved valg og ved låsning af sigtet (55 %). Er den blokeret, bliver det et bid (under 150 px) eller intet angreb. Et stormløb, der rammer lava, stopper med 0,45 s recover (`SKRIDER`).
 - Fejl fundet og rettet undervejs: `move()` kunne skubbe en boss fra en klippe ud i lavaen. `travel()` fortryder nu det skub (X7-test med klippe).
 - Bosser over 28 px radius kan svømme (`canSwim`), så dybt vand blokerer ingen boss. Carl på bane 2 rammes derfor aldrig af den nye kode (X10: identisk).
