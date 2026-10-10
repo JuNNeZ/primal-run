@@ -21,6 +21,7 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 | B1c Signaturmekanikker | `bossSignatures` | færdig (Benny, Ragnar, Karl) | X9-audit på 8 baner, én test pr. mekanik, Carl identisk, browser |
 | B7 Dagens jagt | `dailyHunt` | færdig | `tests/daily-hunt.test.cjs` (5), browser da/de 390 px |
 | B6 Udfordringer | `challenges` | færdig | `tests/challenges.test.cjs` (5), browser da/ja 390 px |
+| B8 Baryonyx-fiskekonge | `fishKing` | færdig | `tests/fish-king.test.cjs` (4), browser da/sv |
 
 ### B1a – boss-rækkevidde (05 §4)
 
@@ -88,6 +89,14 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 - RunSummary: `challengeCount` (0 uden udfordringer). Titlen `masochist` har `implementationStatus: "built in Part B (B6)"`.
 - Bots: `runOne({ challenges })` og `playstyle_sim.cjs --challenges a,b,c`.
 
+### B8 – Baryonyx-fiskekonge
+
+- `save.baryonyxFish` tæller fisk, der fanges som Baryonyx (wrapper om `catchFish`). Det er et livstidstal fra denne version. Ældre saves starter på 0, fordi der ikke findes historik pr. art, og der opfindes ingen tal. Værdien saneres i `sanitizeSave`.
+- Ved 30 fisk får man bedriften `fishKing` ("Fiskekonge", +15 DNA) og skin `fishKing` ("Fiskekongens farver"). Skinnet er et paletskift i den eksisterende `npcVariant` (grøn til #3c7180, blågrå til #a2d4c1, grå til #2466a0, brun til #69a4a0, alt fra Primal Earth 32). Der er ingen ny tegning. Det gælder kun Baryonyx (`skinFits`), og andre arter vises i klassiske farver.
+- Artsskærmen viser fremgangen ("Fiskekonge: 12/30 fisk som Baryonyx"), og skinknappen viser "kun Baryonyx" eller kravet.
+- Eksisterende skins, valgt skin, unlocks og bedrifter er uændrede (test med en gammel v2-save).
+- Balance: ingen ændring i spillet ud over 15 DNA én gang. Baryonyx-botten fisker allerede (diet `piscivore`), og testen viser, at tælleren følger dens `fishCaught`.
+
 ## Testresultater
 
 Udfyldes pr. pakke (kommandoer fra repo-roden).
@@ -103,4 +112,5 @@ Udfyldes pr. pakke (kommandoer fra repo-roden).
 - `src/records.js`: 1 linje (Part B-felter fra `r.partB`). `run_titles.json`: `daily_champion` aktiveret.
 - `src/app.js` B7: menuknap, `daily`-skærm, `daily-start`-handling, resultatlinje, Escape-liste. `style.css`: 1 linje.
 - `src/core.js` B6: én blok i Part B-sektionen (`CHALLENGES`, wrappers om `spawn`, `step` og `addDNA`) og `challengeCount` i `start`-wrapperen. `src/app.js` B6: menuknap, `challenges`-skærm, `challenge-start`, intro-liste, resultatlinje. `style.css`: 1 linje.
+- `src/core.js` B8: 1 linje i `sanitizeSave`, en blok i Part B-sektionen (`SKINS.fishKing`, `ACHIEVEMENTS.push`, `catchFish`-wrapper, `skinFits`). `src/app.js` B8: paletswap `fishKing` i `npcVariant`, `skinFits` i spillerens sprite-variant, fremgang i skinvælgeren.
 - Genererede filer (`lang.js`, `run_titles.js`, `project.json`, `integration_report.json`): genbyg med `python tools/rebuild_generated.py`.

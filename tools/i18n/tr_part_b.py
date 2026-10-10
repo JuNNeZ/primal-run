@@ -41,4 +41,10 @@ PART_B = [
 ("Al heling under jagten halveres.","All healing during the hunt is halved.","Alle Heilung während der Jagd wird halbiert.","All läkning under jakten halveras.","All heling under jakten halveres.","狩り中の回復はすべて半分。","狩猎中所有治疗减半。"),
 ("Dyre evner","Costly skills","Teure Fähigkeiten","Dyra förmågor","Dyre evner","高コストの技","昂贵技能"),
 ("Evner koster # % mere stamina.","Skills cost # % more stamina.","Fähigkeiten kosten # % mehr Ausdauer.","Förmågor kostar # % mer stamina.","Evner koster # % mer stamina.","技のスタミナ消費 +# %。","技能多消耗 # % 体力。"),
+# --- B8 Baryonyx-fiskekonge
+("Fiskekonge","Fish King","Fischkönig","Fiskkung","Fiskekonge","魚の王","鱼王"),
+("Fiskekongens farver","Fish King colours","Farben des Fischkönigs","Fiskkungens färger","Fiskekongens farger","魚の王の色","鱼王配色"),
+("Fang # fisk som Baryonyx (i alt).","Catch # fish as Baryonyx (in total).","Fange # Fische als Baryonyx (insgesamt).","Fånga # fiskar som Baryonyx (totalt).","Fang # fisk som Baryonyx (totalt).","バリオニクスで魚を計#匹捕まえる。","以重爪龙累计捕获 # 条鱼。"),
+("kun Baryonyx","Baryonyx only","nur Baryonyx","endast Baryonyx","bare Baryonyx","バリオニクス専用","仅限重爪龙"),
+("Fiskekonge: {0}/{1} fisk som Baryonyx","Fish King: {0}/{1} fish as Baryonyx","Fischkönig: {0}/{1} Fische als Baryonyx","Fiskkung: {0}/{1} fiskar som Baryonyx","Fiskekonge: {0}/{1} fisk som Baryonyx","魚の王: バリオニクスで {0}/{1} 匹","鱼王：以重爪龙捕获 {0}/{1} 条"),
 ]

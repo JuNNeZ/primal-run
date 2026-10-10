@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
+  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -473,7 +473,8 @@
     save.skin=save.skins.includes(x.skin)?x.skin:'classic';
     save.selectedSpecies = save.unlockedSpecies.includes(x.selectedSpecies) ? x.selectedSpecies : 'deinonychus';
     // Version 3 adds local records and earned run titles; v2 saves are seeded from lifetime/scores.
-    save.dailyHunts=sanitizeDailyHunts(x.dailyHunts); // B7 (kept even with the flag off, so no history is lost)
+    save.dailyHunts=sanitizeDailyHunts(x.dailyHunts); // B7
+    save.baryonyxFish=Math.floor(clamp(finite(x.baryonyxFish),0,1e7)); // B8, counted from this version on (kept even with the flag off, so no history is lost)
     if(RECORDS){save.version=3;save.titles=RECORDS.sanitizeTitles(x.titles);save.records=RECORDS.sanitizeRecords(x.records,save);}
     return save;
   }
@@ -1634,6 +1635,16 @@
     const r=this.run;if(!(FEATURES.challenges&&r&&r.challengeDNA>1&&amount>0))return addDNACore.call(this,amount,quiet);
     const total=amount*r.challengeDNA+(r.challengeDNACarry||0),give=Math.floor(total+1e-9);r.challengeDNACarry=total-give;return addDNACore.call(this,give,quiet);
   };
+  // ---- B8 Baryonyx-fiskekonge: 30 fish caught as Baryonyx (lifetime, from this version) → the "Fiskekonge" achievement
+  // and a Baryonyx-only palette-swap skin. Existing skins and unlocks are untouched.
+  const FISH_KING=30;
+  if(FEATURES.fishKing){
+    SKINS.fishKing={name:'Fiskekongens farver',achievement:'fishKing',species:'baryonyx'};
+    ACHIEVEMENTS.push({id:'fishKing',name:'Fiskekonge',text:'Fang 30 fisk som Baryonyx (i alt).',dna:15,skin:'fishKing',check:c=>(c.save.baryonyxFish||0)>=FISH_KING});
+  }
+  const skinFits=(id,species)=>!(SKINS[id]&&SKINS[id].species)||SKINS[id].species===species;
+  const catchFishCore=Game.prototype.catchFish;
+  Game.prototype.catchFish=function(school,count){const caught=catchFishCore.call(this,school,count);if(FEATURES.fishKing&&caught>0&&this.run.species==='baryonyx'){this.save.baryonyxFish=(this.save.baryonyxFish||0)+caught;}return caught;};
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

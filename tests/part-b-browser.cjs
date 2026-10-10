@@ -124,6 +124,23 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
     }
     await page.setViewportSize({ width: 960, height: 640 });
 
+    // ---- B8 Fiskekonge: progress on the species screen, then the Baryonyx-only skin unlocked and selectable (da + sv).
+    for (const lang of ['da', 'sv']) {
+      await open(lang, { settings: { language: lang, languageChosen: true, skipIntro: true }, baryonyxFish: 12, unlockedSpecies: ['baryonyx'] });
+      await page.evaluate(() => { primalRun.game.phase = 'species'; });
+      await page.waitForSelector('.fish-king-progress'); const progress = await page.locator('.fish-king-progress').innerText();
+      assert.match(progress, lang === 'da' ? /Fiskekonge: 12\/30 fisk som Baryonyx/ : /Fiskkung: 12\/30 fiskar som Baryonyx/, progress);
+      assert.equal(await page.locator('[data-skin="fishKing"]').isDisabled(), true);
+      await page.evaluate(() => { const g = primalRun.game; g.save.baryonyxFish = 30; g.checkAchievements(); g.phase = 'menu'; });
+      await page.waitForTimeout(150); await page.evaluate(() => { primalRun.game.phase = 'species'; });
+      await page.waitForFunction(() => !document.querySelector('.fish-king-progress'));
+      await page.locator('[data-skin="fishKing"]').click();
+      const state = await page.evaluate(() => ({ skin: primalRun.game.save.skin, label: document.querySelector('[data-skin="fishKing"]').innerText, fits: PrimalCore.skinFits('fishKing', 'tyrannosaurus') }));
+      assert.equal(state.skin, 'fishKing'); assert.match(state.label, lang === 'da' ? /kun Baryonyx/ : /endast Baryonyx/); assert.equal(state.fits, false);
+      if (lang === 'da') await page.screenshot({ path: path.join(shots, 'part_b_b8_skin.png') });
+      checks.push('B8 ' + lang + ': progress "' + progress + '", skin unlocked + selected, label "' + state.label.replace(/\s+/g, ' ') + '"');
+    }
+
     assert.deepEqual(errors, []);
     console.log('part-b browser OK\n- ' + checks.join('\n- '));
   } finally { await browser.close(); }

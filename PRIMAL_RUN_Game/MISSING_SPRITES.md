@@ -31,3 +31,4 @@ af ChatGPT-art (Codex integrerer). Palet: Primal Earth 32.
 | B1c | Bobler (Bennys dyk) | partikler i #a2d4c1 | lille bobleanimation (3–4 frames, 16×16) |
 | B1c | Askesky efter Karls stormløb | 5 halvgennemsigtige cirkler (#626861), radius 90 px | askesky-effekt (4 frames, ca. 192×128), kan genbruges til ASKEKAST-nedslaget |
 | B1c | Benny under vandet | Bennys sprite med 30 % alpha | valgfri: rygfinne/silhuet i vand (S/N/E/W) |
+| B8 | Fiskekongens farver (Baryonyx-skin) | paletskift af de eksisterende Baryonyx-frames | valgfrit: ChatGPT kan foreslå en bedre 4-farvers swap-tabel eller et kronemærke; ingen nye frames nødvendige |
