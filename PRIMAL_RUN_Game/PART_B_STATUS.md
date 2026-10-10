@@ -24,6 +24,7 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 | B8 Baryonyx-fiskekonge | `fishKing` | færdig | `tests/fish-king.test.cjs` (4), browser da/sv |
 | B3 Spor og lugt | `scentTrails` | færdig | `tests/scent-trails.test.cjs` (5), browser: tegning + frametid (Q26-metoden) |
 | B4 Tørke og vandhuller | `drought` | færdig | `tests/drought.test.cjs` (4), browser da/en |
+| B2 Dag og nat | `dayNight` | færdig | `tests/day-night.test.cjs` (5), browser (mørke, ☾, søvn) |
 
 ### B1a – boss-rækkevidde (05 §4)
 
@@ -84,8 +85,8 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 
 ### B6 – Udfordringer
 
-- `CHALLENGES` (5): `fragile` (−30 % maks. liv), `toughBosses` (bosser +30 % HP), `swiftFoes` (alle fjender +15 % fart, også dem `populate()` placerede ved start), `weakHealing` (al heling, der sker inde i `step()`, halveres; heling fra mutationsvalg og banebonus er ikke med) og `costlySkills` (+30 % stamina pr. evne).
-- `game.setChallenges(ids)` tager højst 3 kendte id'er. `start()` lægger dem i `r.challenges`, `r.partB.challengeCount` og `r.challengeDNA = 1 + 0,15 × antal`. `addDNA` giver bonussen og gemmer brøkdelen til næste gang, så +15 % også tæller på pickups med 1 DNA.
+- `CHALLENGES` (5): `fragile` (−30 % maks. liv), `toughBosses` (bosser +30 % HP), `swiftFoes` (alle fjender +15 % fart, også dem `populate()` placerede ved start), `weakHealing` (heling i `step()` og ved mutationsvalg halveres; de 30 % ved banestart er ikke med, og heling og skade i samme frame udligner hinanden) og `costlySkills` (+30 % stamina pr. evne).
+- `game.setChallenges(ids)` tager højst 3 kendte id'er. `start()` lægger dem i `r.challenges`, `r.partB.challengeCount` og `r.challengeDNA = 1 + 0,15 × antal`. Bonussen udbetales én gang ved `finish` som `round(r.dna × 0,15 × antal)`, men kun hvis mindst én boss er besejret (`r.challengeBonus`). Det er ændret efter review: Før gav `addDNA` +15 % på alt, så man kunne farme gratis med udfordringer, der ikke koster noget for ens spillestil, fx at dø før bossen med "Seje bosser".
 - Dagens jagt nulstiller udfordringerne (samme jagt for alle). "START JAGTEN" og "NY JAGT" starter altid uden udfordringer.
 - UI: Knappen "⚔ Udfordringer" i menuen, en vælger med afkrydsning (den 4. bliver låst), DNA-bonus, intro-skærmen vises altid (også med "spring intro over") og lister udfordringerne, og slutskærmen har en linje med dem.
 - RunSummary: `challengeCount` (0 uden udfordringer). Titlen `masochist` har `implementationStatus: "built in Part B (B6)"`.
@@ -115,6 +116,21 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 - Bots: Rovdyr-bots venter ved det største vandhul under tørke, når der ikke er bytte inden for 500 px.
 - Antagelse: 300 s er en nominel banelængde (bot-medianer for en bane ligger på ca. 1–4 min.). Tallet er en konstant og kan justeres.
 
+### B2 – Dag og nat
+
+- En cyklus varer 240 s og starter om morgenen: dag 0–150 s, skumring 150–165 s, nat 165–225 s, daggry 225–240 s (`darknessAt`, `r.darkness` 0–1, `r.night` ved mørke ≥ 0,5). Hændelserne `nightfall`/`daybreak` udsendes.
+- Synsvidde: `ecologyAI`'s `sight` ganges med 0,6 om natten. Compys: Om natten er 2 i stedet for 4 nok til at angribe (`packCalls`-ready), og de er dristige uden sult. Planteædere: `naturalBehavior` lægger dem til at sove (`activity: 'sleep'`, ikon z) tæt sammen med flokken, og sovende dyr flygter først ved 45 % af den normale afstand. Tørst går før søvn under tørke (rettet efter review: Nat og tørke overlapper fra 180 s).
+- `nightKills` tælles, når `kill()` belønner et dyr om natten (wrapper), og kommer i RunSummary via `r.partB`. Titlen `night_stalker` har `implementationStatus: "built in Part B (B2)"`.
+- Tegning: procedural nat (radial gradient i #151b19 op til 62 % med lys omkring spilleren og en let #3c7180-multiply). Rigtig natpalet = A6-asset (`MISSING_SPRITES.md`). HUD: ☀/☾ foran uret.
+- Bots: Rovdyr-bots med `dodge > 0,5` vælger sovende byttedyr om natten.
+
+### Rettelser efter review (primal-code-reviewer på 063b2ed…e078a3a)
+
+- B6: DNA-bonussen var en farm. Nu udbetales den ved slutningen og kun efter mindst én boss (se B6). "Svag heling" dækker nu også heling fra mutationsvalg.
+- B3: `track` nulstilles til `roam`, når sporet slipper op. Regn-falmning i tegningen bruger samme regel som logikken (`C.isRaining`).
+- B2/B4: Tørstige planteædere går til vandet, også om natten.
+- Noteret, ikke ændret: Nav-grid-cachen bygges med fuld damstørrelse. Det blokerer kun mere, aldrig mindre, og bosser kan svømme. `baryonyxFish` tæller først fra denne version.
+
 ### Titelændring: `speed_slayer` (Lynnedlægger)
 
 - Betingelsen er nu `s.bosses >= 2 && s.fastestBossSeconds > 0 && s.fastestBossSeconds < 25` (ændret i `run_titles.json`, `data/build_titles.py`, `RUN_TITLES.md` og genereret med `tools/build_run_titles.py`). Den nye beskrivelse er oversat i `tr_part_b.py`.
@@ -138,4 +154,5 @@ Udfyldes pr. pakke (kommandoer fra repo-roden).
 - `src/core.js` B8: 1 linje i `sanitizeSave`, en blok i Part B-sektionen (`SKINS.fishKing`, `ACHIEVEMENTS.push`, `catchFish`-wrapper, `skinFits`). `src/app.js` B8: paletswap `fishKing` i `npcVariant`, `skinFits` i spillerens sprite-variant, fremgang i skinvælgeren.
 - `src/core.js` B3: 1 linje i `enemyAI` (scent-hook før `ecologyAI`), `r.tracks=[]` i `nextStage`, en blok i Part B-sektionen (`TRACKS`, `step`-wrapper, `followScent`). `src/app.js` B3: sportegning før decals, `track` i `MODE_ICON`.
 - `src/core.js` B4: en blok i Part B-sektionen (wrappers om `start`, `nextStage`, `step` og `naturalBehavior`, samt `droughtScale` og `lastWater`). `src/app.js` B4: tørkekant i `drawPond`.
+- `src/core.js` B2: 3 små inline-ændringer i `ecologyAI` (synsvidde, compy-mod, sovende flugtafstand), 1 i `packCalls` (ready-tærskel), en blok i Part B-sektionen (`start`/`step`/`kill`/`naturalBehavior`-wrappers). `src/app.js` B2: natoverlay i `screenAmbience`, ☀/☾ i `#time-label`, `sleep` i `MODE_ICON`.
 - Genererede filer (`lang.js`, `run_titles.js`, `project.json`, `integration_report.json`): genbyg med `python tools/rebuild_generated.py`.

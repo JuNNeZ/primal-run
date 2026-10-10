@@ -115,7 +115,7 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
       assert.deepEqual(run, { list: ['fragile', 'toughBosses', 'swiftFoes'], count: 3 });
       await page.evaluate(() => { const g = primalRun.game; g.run.invulnerable = 0; g.damage(99999); });
       await page.waitForSelector('.challenge-result'); const line = await page.locator('.challenge-result').innerText();
-      assert.match(line, lang === 'da' ? /Udfordringer · Skrøbelig · Seje bosser · Hurtige fjender · \+45 % DNA/ : /チャレンジ · もろい体 · タフなボス · 素早い敵 · DNA \+45 %/, line);
+      assert.match(line, lang === 'da' ? /Udfordringer · Skrøbelig · Seje bosser · Hurtige fjender · \+0 DNA/ : /チャレンジ · もろい体 · タフなボス · 素早い敵 · (DNA \+0|\+0 DNA)/, line); // died before any boss: no bonus
       const w = await page.evaluate(() => [document.documentElement.scrollWidth, window.innerWidth]); assert.ok(w[0] <= w[1], 'no horizontal scroll ' + w);
       // A normal new hunt starts without challenges.
       await page.locator('[data-action="start"]').first().click(); await page.waitForFunction(() => primalRun.game.phase === 'playing');
@@ -179,6 +179,22 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
       assert.equal(b4.shown, lang === 'da' ? 'TØRKE · VANDHULLERNE SKRUMPER' : 'DROUGHT · THE WATER HOLES ARE SHRINKING');
       await page.waitForTimeout(200); if (lang === 'da') await page.screenshot({ path: path.join(shots, 'part_b_b4_drought.png') });
       checks.push('B4 ' + lang + ': pond ' + Math.round(b4.base) + ' → ' + Math.round(b4.radius) + ' px, notice "' + b4.shown + '"');
+    }
+
+    // ---- B2 Dag og nat: the night darkens the screen around a lit player, the HUD shows the moon, herbivores sleep.
+    {
+      await open('da');
+      const b2 = await page.evaluate(() => { const g = primalRun.game; g.phase = 'menu'; g.start({ seed: 3 }); const r = g.run; r.spawnTimer = 1e9; r.invulnerable = 1e9;
+        const e = g.spawn('parasaurolophus', { x: r.player.x + 160, y: r.player.y + 60 }); e.alert = false; e.naturalTime = 0;
+        const centre = () => { const c = document.querySelector('canvas'), x = c.getContext('2d').getImageData(c.width / 2 | 0, c.height / 2 | 0, 1, 1).data, y = c.getContext('2d').getImageData(8, c.height / 2 | 0, 1, 1).data; return { mid: x[0] + x[1] + x[2], edge: y[0] + y[1] + y[2] }; };
+        r.seconds = 20; primalRun.update(performance.now()); primalRun.update(performance.now() + 33); const day = centre();
+        r.seconds = 175; for (let i = 0; i < 40; i++) g.step(1 / 30, {}); primalRun.update(performance.now() + 66); primalRun.update(performance.now() + 99); const night = centre();
+        return { day, night, darkness: r.darkness, label: document.querySelector('#time-label').textContent, sleep: e.activity };
+      });
+      assert.equal(b2.darkness, 1); assert.match(b2.label, /^☾ /); assert.equal(b2.sleep, 'sleep');
+      assert.ok(b2.night.edge < b2.day.edge * .75, 'screen edge darker at night ' + JSON.stringify(b2));
+      await page.waitForTimeout(150); await page.screenshot({ path: path.join(shots, 'part_b_b2_night.png') });
+      checks.push('B2: night darkness 1, edge brightness ' + b2.day.edge + ' → ' + b2.night.edge + ', HUD "' + b2.label + '", herbivore asleep');
     }
 
     assert.deepEqual(errors, []);

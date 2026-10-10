@@ -26,7 +26,7 @@ PART_B = [
 ("Udfordringer","Challenges","Herausforderungen","Utmaningar","Utfordringer","チャレンジ","挑战"),
 ("UDFORDRINGER","CHALLENGES","HERAUSFORDERUNGEN","UTMANINGAR","UTFORDRINGER","チャレンジ","挑战"),
 ("Gør jagten sværere","Make the hunt harder","Mach die Jagd schwerer","Gör jakten svårare","Gjør jakten vanskeligere","狩りを難しくする","让狩猎更难"),
-("Vælg op til {0}. Hver udfordring giver +{1} % DNA.","Pick up to {0}. Each challenge gives +{1} % DNA.","Wähle bis zu {0}. Jede Herausforderung gibt +{1} % DNA.","Välj upp till {0}. Varje utmaning ger +{1} % DNA.","Velg opptil {0}. Hver utfordring gir +{1} % DNA.","最大{0}個まで選択。1つごとにDNA +{1} %。","最多选择 {0} 个。每个挑战 DNA +{1} %。"),
+("Vælg op til {0}. Hver udfordring giver +{1} % DNA, når du har besejret mindst én boss.","Pick up to {0}. Each challenge gives +{1} % DNA once you have beaten at least one boss.","Wähle bis zu {0}. Jede Herausforderung gibt +{1} % DNA, sobald du mindestens einen Boss besiegt hast.","Välj upp till {0}. Varje utmaning ger +{1} % DNA när du har besegrat minst en boss.","Velg opptil {0}. Hver utfordring gir +{1} % DNA når du har beseiret minst én boss.","最大{0}個まで選択。ボスを1体以上倒すと、1つごとにDNA +{1} %。","最多选择 {0} 个。击败至少一个首领后，每个挑战 DNA +{1} %。"),
 ("DNA-bonus: +{0} %","DNA bonus: +{0} %","DNA-Bonus: +{0} %","DNA-bonus: +{0} %","DNA-bonus: +{0} %","DNAボーナス: +{0} %","DNA 加成：+{0} %"),
 ("+# % DNA","+# % DNA","+# % DNA","+# % DNA","+# % DNA","DNA +# %","DNA +# %"),
 ("START MED UDFORDRINGER","START WITH CHALLENGES","MIT HERAUSFORDERUNGEN STARTEN","STARTA MED UTMANINGAR","START MED UTFORDRINGER","チャレンジ付きで開始","带挑战开始"),

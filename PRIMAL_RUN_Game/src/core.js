@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
+  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -1270,7 +1270,7 @@
       if(e.hunger===undefined)e.hunger=.25+((e.id*.618034)%1)*.5;
       e.hunger=Math.min(1,e.hunger+dt/150);
       if(e.guard||e.miniboss||['windup','charge','slam','bite','recover'].includes(e.mode))return false;
-      const sight=r.hidden?90:480;
+      const sight=(r.hidden?90:480)*(FEATURES.dayNight&&r.night?.6:1); // B2: shorter sight at night
       // Wounded small predators run, heal out of sight and come back if still hungry.
       const fleeAt={compy:.45,carnotaurus:.2,baryonyx:.2,pachycephalosaurus:.3}[e.kind];
       if(fleeAt&&!e.elite&&e.damage){
@@ -1291,7 +1291,7 @@
           else{food.value--;e.carrying=1;r.pickups=r.pickups.filter(p=>p.value>0);r.effects.push({x:e.x,y:e.y-14,text:'STJÅLET!',color:'#de954a',life:.8});this.emit('steal');if(r.eating&&r.eating.corpseId===food.corpseId&&food.value<=0)r.eating=null;}
           return true;
         }
-        const pack=e.herdId?r.enemies.filter(o=>o.herdId===e.herdId&&o.alert).length:1,bold=pack>=4&&e.hunger>.6;
+        const pack=e.herdId?r.enemies.filter(o=>o.herdId===e.herdId&&o.alert).length:1,bold=(pack>=4||FEATURES.dayNight&&r.night&&pack>=2)&&(e.hunger>.6||FEATURES.dayNight&&r.night) /* B2: bolder compys at night */;
         if(e.alert&&!bold){
           if(d<110){this.fleeFrom(e,r.player.x,r.player.y,dt,.6);e.mode=e.activity='watch';return true;}
           if(d<320){e.mode=e.activity='watch';e.facingX=dx/d;e.facingY=dy/d;return true;}
@@ -1310,7 +1310,7 @@
         const playerThreat=(diet!=='herbivore'||recent)&&(!r.hidden||d<90||recent);
         let tx=null,ty=null;
         if(hunter){tx=hunter.x;ty=hunter.y;}
-        else if(playerThreat&&(d<(r.player.moving||recent?280:150)||(e.fleeUntil>r.seconds||e.herdAlarmUntil>r.seconds)&&d<sight)){tx=r.player.x;ty=r.player.y;}
+        else if(playerThreat&&(d<(r.player.moving||recent?280:150)*(FEATURES.dayNight&&e.activity==='sleep'&&!recent?.45:1) /* B2: sleeping herds notice late */||(e.fleeUntil>r.seconds||e.herdAlarmUntil>r.seconds)&&d<sight)){tx=r.player.x;ty=r.player.y;}
         if(tx!==null){if(!(e.fleeUntil>r.seconds))this.alarmHerd(e);e.fleeUntil=r.seconds+20+(e.id*7)%10;e.alert=true;this.fleeFrom(e,tx,ty,dt,1.25);return true;}
         if(e.fleeUntil>r.seconds){e.alert=false;e.mode=e.activity='wary';e.facingX=-dx/d;e.facingY=-dy/d;this.travel(e,-dx/d*e.speed*.3*dt,-dy/d*e.speed*.3*dt);return true;}
         e.alert=false;this.naturalBehavior(e,dt);return true;
@@ -1333,7 +1333,7 @@
         const mates=r.enemies.filter(o=>o!==e&&o.kind===e.kind&&o.hp>0&&!o.boss&&!o.guard&&Math.hypot(o.x-e.x,o.y-e.y)<500);
         if(!e.packLeaderId)e.packLeaderId=e.id;if(!r.enemies.some(o=>o.id===e.packLeaderId&&o.hp>0))e.packLeaderId=e.id;
         if(e.packLeaderId===e.id&&(e.callUntil||0)<=r.seconds){e.callUntil=r.seconds+8;e.herdId=e.herdId||'call:'+e.id;for(const mate of mates){mate.herdId=e.herdId;mate.packLeaderId=e.packLeaderId;mate.alert=true;mate.rallyX=e.x;mate.rallyY=e.y;}r.effects.push({x:e.x,y:e.y-16,text:'!',life:.7});}
-        const ready=mates.filter(o=>o.herdId===e.herdId&&Math.hypot(o.x-e.x,o.y-e.y)<200).length+1>=4;
+        const ready=mates.filter(o=>o.herdId===e.herdId&&Math.hypot(o.x-e.x,o.y-e.y)<200).length+1>=(FEATURES.dayNight&&r.night?2:4); // B2: at night a pair is enough
         if(!ready){e.mode=e.activity='rally';e.facingX=dx/d;e.facingY=dy/d;if(d<140)this.travel(e,-dx/d*e.speed*.6*dt,-dy/d*e.speed*.6*dt);else if(e.rallyX!==undefined){const rx=e.rallyX-e.x,ry=e.rallyY-e.y,rd=Math.hypot(rx,ry);if(rd>45)this.travel(e,rx/rd*e.speed*dt,ry/rd*e.speed*dt);}return;}
       }
       if(!e.boss&&!(e.scaredUntil>r.seconds)&&this.npcAbility(e,dt))return;
@@ -1631,11 +1631,19 @@
     if(list.includes('costlySkills')&&r.stats.abilities>abilities){r.stamina=Math.max(0,r.stamina-cost*.3);r.stats.staminaSpent+=cost*.3;}
     return out;
   };
-  const addDNACore=Game.prototype.addDNA;
-  Game.prototype.addDNA=function(amount,quiet){ // the bonus keeps its fractions, so +15 % also counts on 1-DNA pickups
-    const r=this.run;if(!(FEATURES.challenges&&r&&r.challengeDNA>1&&amount>0))return addDNACore.call(this,amount,quiet);
-    const total=amount*r.challengeDNA+(r.challengeDNACarry||0),give=Math.floor(total+1e-9);r.challengeDNACarry=total-give;return addDNACore.call(this,give,quiet);
+  // The DNA bonus is paid once when the run ends, on the run's DNA, and only after at least one boss: dying early
+  // with "free" challenges (e.g. Seje bosser before any boss) earns nothing extra.
+  const finishChallenges=Game.prototype.finish;
+  Game.prototype.finish=function(victory){
+    const r=this.run,fresh=r&&!r.result;
+    if(FEATURES.challenges&&fresh&&(r.challenges||[]).length&&r.bosses>=1){const bonus=Math.round(r.dna*(r.challengeDNA-1));if(bonus>0){this.save.dna+=bonus;r.dna+=bonus;r.stats.dna+=bonus;}r.challengeBonus=bonus;}
+    else if(r&&fresh)r.challengeBonus=0;
+    return finishChallenges.call(this,victory);
   };
+  // Weak healing also covers the heals that happen when a mutation is chosen.
+  const chooseChallenges=Game.prototype.choose;
+  Game.prototype.choose=function(id){const r=this.run,list=FEATURES.challenges&&r&&r.challenges||[],health=r?r.health:0,out=chooseChallenges.call(this,id);
+    if(list.includes('weakHealing')&&r.health>health){const extra=(r.health-health)/2;r.health-=extra;r.stats.healing-=extra;}return out;};
   // ---- B8 Baryonyx-fiskekonge: 30 fish caught as Baryonyx (lifetime, from this version) → the "Fiskekonge" achievement
   // and a Baryonyx-only palette-swap skin. Existing skins and unlocks are untouched.
   const FISH_KING=30;
@@ -1669,7 +1677,7 @@
       // Tracks are in time order: walk back from the newest and stop at the first one in smelling range.
       for(let i=r.tracks.length-1;i>=0;i--){const p=r.tracks[i];if(p.t<=after)break;const reach=p.w?TRACKS.bloodSmell:TRACKS.smell,x=p.x-e.x,y=p.y-e.y;if(x*x+y*y>reach*reach||scentOf(r,p)<.15)continue;best=p;break;}
       e.scent=best;}
-    const p=e.scent;if(!p)return false;
+    const p=e.scent;if(!p){if(e.mode==='track'){e.mode=e.activity='roam';}return false;}
     const tx=p.x-e.x,ty=p.y-e.y,td=Math.hypot(tx,ty);
     if(td<18){e.scentT=p.t;e.scent=null;e.scentAt=-1;return true;} // reached it: next scan picks a newer point
     e.mode=e.activity='track';e.facingX=tx/td;e.facingY=ty/td;this.travel(e,tx/td*e.speed*.75*dt,ty/td*e.speed*.75*dt);
@@ -1713,6 +1721,31 @@
     if(isWater(r.stage,r.map,e,-24)){e.thirst=Math.max(0,e.thirst-dt/3);if(e.thirst<=0)e.activity='graze';return;} // at the edge: drink
     const dx=w.x-e.x,dy=w.y-e.y,d=Math.max(1,Math.hypot(dx,dy));e.facingX=dx/d;e.facingY=dy/d;this.travel(e,dx/d*e.speed*.55*dt,dy/d*e.speed*.55*dt);
   };
+  // ---- B2 Dag og nat: a 240 s cycle (day 150 s, dusk 15 s, night 60 s, dawn 15 s) starting in the morning.
+  // Night (darkness ≥ 0.5): animals see 40 % less far, compys hunt in smaller, bolder packs, herbivores sleep together
+  // (and notice the player later); kills at night count as RunSummary.nightKills.
+  const DAYNIGHT={period:240,dusk:150,night:165,dawn:225};
+  function darknessAt(seconds){const t=((seconds%DAYNIGHT.period)+DAYNIGHT.period)%DAYNIGHT.period;
+    if(t<DAYNIGHT.dusk)return 0;if(t<DAYNIGHT.night)return (t-DAYNIGHT.dusk)/(DAYNIGHT.night-DAYNIGHT.dusk);if(t<DAYNIGHT.dawn)return 1;return 1-(t-DAYNIGHT.dawn)/(DAYNIGHT.period-DAYNIGHT.dawn);}
+  const startNight=Game.prototype.start;
+  Game.prototype.start=function(options){startNight.call(this,options);if(this.run){this.run.darkness=0;this.run.night=false;if(FEATURES.dayNight)this.run.partB.nightKills=0;}};
+  const stepNight=Game.prototype.step;
+  Game.prototype.step=function(dt,input={}){
+    const r=this.run;if(FEATURES.dayNight&&r&&this.phase==='playing'){const was=r.night;r.darkness=darknessAt(r.seconds);r.night=r.darkness>=.5;if(r.night!==was)this.emit(r.night?'nightfall':'daybreak');}
+    else if(r){r.darkness=0;r.night=false;}
+    return stepNight.call(this,dt,input);
+  };
+  const killNight=Game.prototype.kill;
+  Game.prototype.kill=function(e){const r=this.run,fresh=e&&!e.rewarded,out=killNight.call(this,e);if(FEATURES.dayNight&&fresh&&e.rewarded&&r.night&&r.partB)r.partB.nightKills=(r.partB.nightKills||0)+1;return out;};
+  const naturalNight=Game.prototype.naturalBehavior;
+  Game.prototype.naturalBehavior=function(e,dt){
+    const r=this.run;if(!FEATURES.dayNight||!r.night||!herbivorousNPC(e.kind))return naturalNight.call(this,e,dt);
+    if(FEATURES.drought&&r.drought){if(e.activity==='drink'||(e.thirst||0)>=.6)return naturalNight.call(this,e,dt);e.thirst=Math.min(1,(e.thirst||0)+dt*DROUGHT.thirstRate);} // thirst wakes them in a drought
+    e.mode=e.activity='sleep';
+    const peers=e.herdId?r.enemies.filter(o=>o!==e&&o.herdId===e.herdId&&o.hp>0&&Math.hypot(o.x-e.x,o.y-e.y)<320):[];
+    if(peers.length){const cx=peers.reduce((n,o)=>n+o.x,0)/peers.length,cy=peers.reduce((n,o)=>n+o.y,0)/peers.length,dx=cx-e.x,dy=cy-e.y,d=Math.hypot(dx,dy);
+      if(d>e.radius*2+20){e.facingX=dx/d;e.facingY=dy/d;this.travel(e,dx/d*e.speed*.35*dt,dy/d*e.speed*.35*dt);}} // huddle with the herd
+  };
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

@@ -1898,7 +1898,7 @@
    "requiredVariables": [
     "nightKills"
    ],
-   "implementationStatus": "needs Part B"
+   "implementationStatus": "built in Part B (B2)"
   },
   {
    "id": "pack_leader",

@@ -185,7 +185,9 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     }
     // Fight
     const prey = r.enemies.filter(e => !e.guard || style === 'brawler');
-    const target = boss || nearest(prey.filter(e => dist(e) < 900)) || nearest(prey);
+    // B2: at night a sleeping herd is the easy meal for hunters who know it.
+    const sleeper = r.night && diet !== 'herbivore' && S.dodge > .5 ? nearest(prey.filter(e => e.activity === 'sleep' && dist(e) < 900)) : null;
+    const target = boss || sleeper || nearest(prey.filter(e => dist(e) < 900)) || nearest(prey);
     if (target) {
       const aim = S.aimError ? { x: target.x + (R() - .5) * S.aimError, y: target.y + (R() - .5) * S.aimError } : target;
       const inRange = dist(target) < config.range + target.radius - 10;
