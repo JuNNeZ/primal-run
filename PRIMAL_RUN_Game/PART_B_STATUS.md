@@ -173,3 +173,7 @@ Udfyldes pr. pakke (kommandoer fra repo-roden).
 - `src/core.js` B2: 3 små inline-ændringer i `ecologyAI` (synsvidde, compy-mod, sovende flugtafstand), 1 i `packCalls` (ready-tærskel), en blok i Part B-sektionen (`start`/`step`/`kill`/`naturalBehavior`-wrappers). `src/app.js` B2: natoverlay i `screenAmbience`, ☀/☾ i `#time-label`, `sleep` i `MODE_ICON`.
 - `src/core.js` B5: en blok i Part B-sektionen (`PACK`, `placeRaptors`, wrappers om `start`/`nextStage`/`interact`/`step`, `feedRaptor`, `packTarget`, `stepRaptors`). `src/app.js` B5: raptorer i objektlisten, markør, HP-bjælke og mærkater, `velociraptor` i preload/evict.
 - Genererede filer (`lang.js`, `run_titles.js`, `project.json`, `integration_report.json`): genbyg med `python tools/rebuild_generated.py`.
+
+## Requests på GitHub Pages (10. okt.)
+- Bevist ved måling i headless Chromium: menuen sender nu 222 requests i stedet for 1666. Grafikken for banen indlæses ved START. `tests/game-browser.cjs` venter derfor på `phase === 'playing'`.
+- Åbent punkt: sprite-atlas (Codex) er beskrevet i `MISSING_SPRITES.md` under "Sprite-atlas".
