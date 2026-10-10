@@ -7,14 +7,14 @@
   "production_approved": false,
   "scope": "Integration preserves source pixels, manifest origins and prototype status. Not a visual or animation approval.",
   "source_sha256": {
-    "src/run_titles.js": "dda58624c6ba25bcc4ec203ca72430c9eccc9412d43225f4c078c99c671b6c9c",
+    "src/run_titles.js": "bf8272307cefda2cc02fbd706561d8e31287af607ffb84baa17d43471919c82a",
     "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
-    "src/core.js": "1ff8ce99e4606b2daa00299442dd0bffbf465c4c2efc96cb0a6022ec7839a156",
+    "src/core.js": "edee6c711efb8809a17feb13a53b615800fe768064a6c7f1d4f97311e75a0d62",
     "src/i18n.js": "a59e4bf2caacd274df701b5d2db56312374724d9478e4883d1eb0c719fd56bf4",
-    "src/lang.js": "c74893d317bb98312f80a06b5cecb84b5d103712f1c8a467840cb17b345942d6",
+    "src/lang.js": "ca3eabdf6c230d3b4a6523dfdcc0098dcad0d1bdc72c68781fef9d78896b6fde",
     "src/assets.js": "c1ac64588b518b858ef7275b52494c0b84ae609788ddecb57e0918a350d78e25",
     "src/audio.js": "1b434e95d7062acfedc2e736f105d559b409f2fa82ca7fe65140abd008d6fc69",
-    "src/app.js": "235fab08e7991e0a0297e00a27d3913597916572954350e07fce2a252d662201",
+    "src/app.js": "1ffb25f5a63abd4a5b94b88f03c483f7011ab25851778a71f2c511546b6fd3ac",
     "style.css": "3d5c4edcc916ea696f4196d8b603658e7bf87915e66f0a6aabbbc0de18820887"
   }
 }

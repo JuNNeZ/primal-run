@@ -516,7 +516,7 @@
       else{ctx.strokeStyle='#fff1c9';ctx.lineWidth=2;ctx.beginPath();ctx.arc(0,0,10*size,-1,1);ctx.stroke();}
       ctx.restore();
     }
-    const MODE_ICON={rally:['♪','#e9b75a'],drink:['≈','#a2d4c1'],graze:['❀','#b6c0a9'],rest:['z','#b6c0a9'],warning:['!','#e9b75a'],wary:['?','#e9b75a'],flee:['»','#bbd899'],steal:['$','#de954a'],hunt:['♨','#ed7869'],scavenge:['☠','#b6c0a9'],watch:['…','#b6c0a9'],return:['↩','#b6c0a9']};
+    const MODE_ICON={track:['∴','#ed7869'],rally:['♪','#e9b75a'],drink:['≈','#a2d4c1'],graze:['❀','#b6c0a9'],rest:['z','#b6c0a9'],warning:['!','#e9b75a'],wary:['?','#e9b75a'],flee:['»','#bbd899'],steal:['$','#de954a'],hunt:['♨','#ed7869'],scavenge:['☠','#b6c0a9'],watch:['…','#b6c0a9'],return:['↩','#b6c0a9']};
     function draw() {
       resize();shell.querySelector('.meat-progress').style.bottom=(shell.querySelector('.run-info').offsetHeight+24)+'px';
       if (!ready) { ctx.fillStyle = '#151b19'; ctx.fillRect(0, 0, canvas.width, canvas.height); return; }
@@ -531,6 +531,15 @@
       background(stage, map, view);
       if(r)worldAmbience(r,view,r.seconds);
       if (r) {
+        if (C.FEATURES.scentTrails && r.tracks && r.tracks.length) { // B3 tracks: procedural paired prints, fading; blood scent in red
+          const fade = r.map.weather === 'rain' ? C.TRACKS.rainFade : C.TRACKS.fade, x0 = view.x - 20, y0 = view.y - 20, x1 = view.x + canvas.width + 20, y1 = view.y + canvas.height + 20;
+          // Batched into ≤ 8 paths (4 fade steps × 2 colours) so a full trail is a handful of draw calls on mobile.
+          const buckets = new Map();
+          for (const p of r.tracks) { if (p.x < x0 || p.x > x1 || p.y < y0 || p.y > y1) continue; const k = Math.ceil(4 * Math.max(0, 1 - (r.seconds - p.t) / fade)); if (k <= 0) continue;
+            const key = (p.w ? 'b' : 'd') + k; if (!buckets.has(key)) buckets.set(key, []); buckets.get(key).push(p); }
+          for (const [key, list] of buckets) { ctx.globalAlpha = .55 * (+key.slice(1)) / 4; ctx.fillStyle = key[0] === 'b' ? '#913b32' : '#151b19'; ctx.beginPath(); for (const p of list) { ctx.rect(p.x - 6, p.y - 2, 4, 3); ctx.rect(p.x + 2, p.y + 1, 4, 3); } ctx.fill(); }
+          ctx.globalAlpha = 1;
+        }
         for (const p of r.decals) { ctx.fillStyle = '#913b32'; ctx.globalAlpha = Math.min(.6, p.life * .25); ctx.fillRect(Math.round(p.x) - 5, Math.round(p.y) - 3, 10, 6); ctx.fillRect(Math.round(p.x) + 6, Math.round(p.y) + 4, 3, 2); } ctx.globalAlpha = 1;
         for (const p of r.pickups) {
           if (p.kind === 'meat') {

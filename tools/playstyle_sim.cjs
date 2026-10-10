@@ -61,7 +61,7 @@ function bandPoint(map, p) {
 
 // level: start at this journey level (0-based) via the game's own nextStage(); bossDuel: the boss spawns at once
 // and the run ends when it dies (outcome 'boss_win'). Used by X10 and the B1 before/after comparisons.
-function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null, challenges = [] }) {
+function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null, challenges = [], alone = false }) {
   const S = STYLES[style]; if (!S) throw Error('Unknown style ' + style);
   const R = rng(seed * 7919 + style.length * 104729);
   const g = new C.Game({ random: rng(seed ^ 0xABCDEF) });
@@ -75,6 +75,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
   for (let i = 0; i < level && i < r.campaign.length - 1; i++) { g.phase = 'cleared'; r.bossDefeated = true; g.nextStage(); }
   const bandMap = { riverCurve: r.map.riverCurve, river: r.map.river };
   if (open) { r.map.river = []; r.map.riverCurve = []; r.map.lavaCrossings = []; } // control: same level without lava/river
+  if (alone) { r.enemies = []; r.spawnTimer = 1e9; } // duel without other animals (X2: compares the boss fight only)
   if (bossDuel) r.meat = Math.max(r.meat, g.currentLevel().target);
   let duelBoss = null;
   const m = {
@@ -140,6 +141,9 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
       const bx = exposed.x - exposed.facingX * (exposed.radius + 20), by = exposed.y - exposed.facingY * (exposed.radius + 20);
       return { ...steer(bx, by), attack: dist(exposed) < config.range + exposed.radius + 10, pounce:species==='deinonychus'&&S.ability==='smart'&&r.stamina>=cost&&!r.precisionTime&&!r.pounceCooldown };
     }
+    // B3: a predator on your scent → careful players sneak away (sneaking halves the tracks left behind).
+    const tracker = (C.FEATURES || {}).scentTrails ? nearest(r.enemies.filter(e => e.activity === 'track' && dist(e) < 500)) : null;
+    if (tracker && (S.sneak || S.dodge > .5) && hpFrac < .6) { const dx = p.x - tracker.x, dy = p.y - tracker.y, n = Math.hypot(dx, dy) || 1; return { ...steer(p.x + dx / n * 200, p.y + dy / n * 200), sneak: true }; }
     // Retreat when hurt
     if (S.retreatHP && hpFrac < S.retreatHP && hostile.length) {
       const t = nearest(hostile), dx = p.x - t.x, dy = p.y - t.y, n = Math.hypot(dx, dy) || 1;
@@ -149,7 +153,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     // Exploiter: stand across lava (or deep water for non-swimming bosses) from the boss and only attack from there.
     if (S.exploit && boss && (r.stage === 3 || r.stage === 1 && !C.canSwim(boss))) {
       const band = bandPoint(r.map, boss);
-      if (band && band.d < 700) {
+      if (band && band.d < 2500) { // lure: wait across the band until the boss comes
         const side = ((boss.x - band.q.x) * band.n.x + (boss.y - band.q.y) * band.n.y) >= 0 ? -1 : 1, spot = { x: band.q.x + band.n.x * side * 70, y: band.q.y + band.n.y * side * 70 };
         const there = Math.hypot(spot.x - p.x, spot.y - p.y) < 24;
         return { ...(there ? { x: 0, y: 0 } : steer(spot.x, spot.y)), attack: there && dist(boss) < config.range + boss.radius + 20, pounce: there && ['ankylosaurus', 'tyrannosaurus'].includes(species) && dist(boss) < 140 && r.stamina >= cost };
@@ -314,6 +318,7 @@ function writeReport(out, meta, summary, warns) {
 // ---------------------------------------------------------------- worker
 if (!isMainThread) {
   const C = require(CORE_PATH);
+  for (const flag of workerData.off || []) if (C.FEATURES && flag in C.FEATURES) C.FEATURES[flag] = false; // --off: baseline with Part B flags off
   const rows = [];
   for (const job of workerData.jobs) {
     try { rows.push(runOne(C, job)); } catch (e) { rows.push({ species: job.species, style: job.style, seed: job.seed, outcome: 'error', error: String(e && e.stack || e) }); }
@@ -340,7 +345,7 @@ async function main() {
   const styles = get('styles', 'all') === 'all' ? Object.keys(STYLES) : get('styles').split(',');
   for (const s of species) if (!C.PLAYER_SPECIES[s]) throw Error('Ukendt art: ' + s);
   for (const s of styles) if (!STYLES[s]) throw Error('Ukendt stil: ' + s);
-  const upgrades = JSON.parse(get('upgrades', '{}')), challenges = get('challenges', '') ? get('challenges').split(',') : [];
+  const off = get('off', '') ? get('off').split(',') : [], upgrades = JSON.parse(get('upgrades', '{}')), challenges = get('challenges', '') ? get('challenges').split(',') : [];
   const threads = Math.max(1, Math.min(Number(get('threads', Math.max(1, os.cpus().length - 1))), 64));
   const date = new Date().toISOString().replace(/[:T]/g, '-').slice(0, 16);
   const out = path.resolve(get('out', path.join(__dirname, '../PRIMAL_RUN_Game/balance_runs/playstyle_' + date)));
@@ -352,7 +357,7 @@ async function main() {
   const t0 = Date.now(); let done = 0;
   console.error(`Kører ${jobs.length} runs på ${threads} tråde → ${out}`);
   const results = await Promise.all(buckets.filter(b => b.length).map(bucket => new Promise((resolve, reject) => {
-    const w = new Worker(__filename, { workerData: { jobs: bucket } });
+    const w = new Worker(__filename, { workerData: { jobs: bucket, off } });
     w.on('message', msg => { if (msg.progress) { done++; if (done % Math.max(1, Math.floor(jobs.length / 20)) === 0 || done === jobs.length) process.stderr.write(`\r  ${done}/${jobs.length} (${Math.round(100 * done / jobs.length)} %) · ${Math.round((Date.now() - t0) / 1000)}s   `); } if (msg.rows) resolve(msg.rows); });
     w.on('error', reject);
   })));
@@ -362,7 +367,7 @@ async function main() {
   const summary = summarize(ok), warns = warnings(summary, C);
   if (errors.length) warns.unshift(`${errors.length} runs fejlede med en JavaScript-fejl (se runs.jsonl, outcome "error") – det kan være samme fejl som får spillet til at låse!`);
   const coreSHA = crypto.createHash('sha256').update(fs.readFileSync(CORE_PATH)).digest('hex');
-  const meta = { policy:'six playstyles v2; Deinonychus defensive finte and exposed-boss opportunity', simulatorSHA:crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex'), date: new Date().toISOString(), coreSHA, totalRuns: rows.length, seconds, workers: threads, elapsed: Math.round((Date.now() - t0) / 1000), runsPerGroup: runs, species, styles, upgrades };
+  const meta = { policy:'seven playstyles (exploiter added for B1); Deinonychus defensive finte and exposed-boss opportunity', flagsOff: off, challenges, simulatorSHA:crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex'), date: new Date().toISOString(), coreSHA, totalRuns: rows.length, seconds, workers: threads, elapsed: Math.round((Date.now() - t0) / 1000), runsPerGroup: runs, species, styles, upgrades };
   const cols = Object.keys(summary[0] || {});
   fs.writeFileSync(path.join(out, 'summary.csv'), cols.join(',') + '\n' + summary.map(s => cols.map(c => JSON.stringify(s[c] ?? '')).join(',')).join('\n') + '\n');
   writeReport(out, meta, summary, warns);

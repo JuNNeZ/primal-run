@@ -22,6 +22,7 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 | B7 Dagens jagt | `dailyHunt` | færdig | `tests/daily-hunt.test.cjs` (5), browser da/de 390 px |
 | B6 Udfordringer | `challenges` | færdig | `tests/challenges.test.cjs` (5), browser da/ja 390 px |
 | B8 Baryonyx-fiskekonge | `fishKing` | færdig | `tests/fish-king.test.cjs` (4), browser da/sv |
+| B3 Spor og lugt | `scentTrails` | færdig | `tests/scent-trails.test.cjs` (5), browser: tegning + frametid (Q26-metoden) |
 
 ### B1a – boss-rækkevidde (05 §4)
 
@@ -53,7 +54,7 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 - **Benny (bane 3):** Er han højst 140 px fra vand, dykker han. Det har 1,2 s windup, bobler, en cirkel på 70 px, der følger spilleren de første 35 % og derefter står stille i 0,78 s, og han dukker op ved kanten af cirklen. Kun cirklen afgør, om man bliver ramt. Hver 10. sekund løber han i højst 5 s tilbage mod floden, hvis den er under 720 px væk og dykket er klar.
 - **Ragnar (bane 8):** Det eksisterende brøl (1,25 s windup, cirkel på 230 px) får nu småvildt (planteædere ≤ 22 px) inden for 520 px til at stampede mod spilleren i 2,2 s. Det gør ingen skade, men giver et kort slow ved kontakt. Står spilleren i cirklen, halveres stamina-regenerationen i 4 s (`r.roarDebuff`).
 - **Carl og Karl, dobbelt stormløb:** Det fandtes allerede i fase 2 (`STORMLØB 1/2–2/2`) og er ikke lavet om. Carl er ikke ændret: dueller med alle B1-flag af og til er identiske.
-- **Karl (bane 7):** Hvert afsluttet stormløb efterlader en askesky (3 s, radius 90 px), som bremser spilleren. Det gør ingen skade. Under `stalk` kommer **ASKEKAST**, hvis han er blevet ramt inden for de sidste 2 s og står uden for spillerens rækkevidde: en låst cirkel på 70 px med 0,9 s windup, der giver 0,6 × biddets skade og har 4 s cooldown.
+- **Karl (bane 7):** Hvert afsluttet stormløb efterlader en askesky (3 s, radius 90 px). Inde i skyen er spilleren 15 % langsommere, og den gør ingen skade. Først brugte skyen `r.slow` (−35 %), og det gjorde Karl markant sværere for optimizer-botten: 56,7 % mod 77,6 % boss-HP tabt på åben grund. Derfor blev den sat ned efter X2. Under `stalk` kommer **ASKEKAST**, hvis han er blevet ramt inden for de sidste 2 s og står uden for spillerens rækkevidde: en låst cirkel på 70 px med 0,9 s windup, der giver 0,6 × biddets skade og har 4 s cooldown.
 - **X9:** Alle skadevoldende bossangreb på alle 8 baner kommer efter et windup på mindst 0,45 s (test med tilfældige bevægelser). Browsertesten viser, at `telegraphShape` returnerer en form for alle 7 bossarter × 6 mønstre, og at dyk og ASKEKAST tegnes ved målet.
 
 **Forslag (ikke bygget) til de øvrige bosser:**
@@ -97,6 +98,19 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 - Eksisterende skins, valgt skin, unlocks og bedrifter er uændrede (test med en gammel v2-save).
 - Balance: ingen ændring i spillet ud over 15 DNA én gang. Baryonyx-botten fisker allerede (diet `piscivore`), og testen viser, at tælleren følger dens `fishCaught`.
 
+### B3 – Spor og lugt
+
+- Spilleren lægger et sporpunkt for hver 40 px, man går, og for hver 80 px, når man sniger sig. Der er højst 200 punkter, og de ældste fjernes først. Punkterne forsvinder efter 40 s, i regn efter 20 s (`map.weather === 'rain'`, samme regel som `app.js`). Under 35 % HP eller forgiftet bliver punktet et blodspor (`w`), som lugtes på 320 px i stedet for 200 px og tæller 1,5×.
+- `followScent`: Ledige rovdyr (har skade, er ikke planteædere, vagter, minibosser eller bosser, og er ikke i gang med `hunt`/`scavenge`/`steal`/`drink`/`flee`) skanner højst hver 0,5 s og kun inden for 900 px af spilleren (LOD). De går mod det nyeste punkt i nærheden og følger sporet fremad (`activity: 'track'`, ikon ∴). Inden for 220 px bliver de opmærksomme på spilleren, når man er skjult først inden for 90 px.
+- Tegning: procedurelle parvise prikker i #151b19 (blod: #913b32), samlet i højst 8 paths (4 falmetrin × 2 farver).
+- Frametid (Q26-metoden): 390×844, 4× CPU-throttling, samme scene med flag af og til, 16 ABBA-batches med tvungen rasterisering pr. frame, minimum. Resultat: 62,2 mod 60,1 ms (+3,6 %), krav ≤ +10 %. Selve skanningen: ≤ 0,05 ms pr. rovdyr (unit-test).
+- Bots: Forsigtige stilarter (`sneak` eller `dodge > 0,5`) sniger sig væk under 60 % HP, når et rovdyr følger deres spor.
+
+### Titelændring: `speed_slayer` (Lynnedlægger)
+
+- Betingelsen er nu `s.bosses >= 2 && s.fastestBossSeconds > 0 && s.fastestBossSeconds < 25` (ændret i `run_titles.json`, `data/build_titles.py`, `RUN_TITLES.md` og genereret med `tools/build_run_titles.py`). Den nye beskrivelse er oversat i `tr_part_b.py`.
+- Før (`title_distribution.cjs` på 030f613): `speed_slayer` er hovedtitel i 53,5 % af 187 titlede bot-runs (Q14 FAIL). Efter-tal står under Testresultater.
+
 ## Testresultater
 
 Udfyldes pr. pakke (kommandoer fra repo-roden).
@@ -113,4 +127,5 @@ Udfyldes pr. pakke (kommandoer fra repo-roden).
 - `src/app.js` B7: menuknap, `daily`-skærm, `daily-start`-handling, resultatlinje, Escape-liste. `style.css`: 1 linje.
 - `src/core.js` B6: én blok i Part B-sektionen (`CHALLENGES`, wrappers om `spawn`, `step` og `addDNA`) og `challengeCount` i `start`-wrapperen. `src/app.js` B6: menuknap, `challenges`-skærm, `challenge-start`, intro-liste, resultatlinje. `style.css`: 1 linje.
 - `src/core.js` B8: 1 linje i `sanitizeSave`, en blok i Part B-sektionen (`SKINS.fishKing`, `ACHIEVEMENTS.push`, `catchFish`-wrapper, `skinFits`). `src/app.js` B8: paletswap `fishKing` i `npcVariant`, `skinFits` i spillerens sprite-variant, fremgang i skinvælgeren.
+- `src/core.js` B3: 1 linje i `enemyAI` (scent-hook før `ecologyAI`), `r.tracks=[]` i `nextStage`, en blok i Part B-sektionen (`TRACKS`, `step`-wrapper, `followScent`). `src/app.js` B3: sportegning før decals, `track` i `MODE_ICON`.
 - Genererede filer (`lang.js`, `run_titles.js`, `project.json`, `integration_report.json`): genbyg med `python tools/rebuild_generated.py`.

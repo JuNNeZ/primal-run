@@ -79,7 +79,7 @@ test('B1c Ragnar: the roar stampedes nearby small game toward the player and hal
   assert.ok(Math.abs(slow - normal / 2) < 1e-6, slow + ' vs ' + normal);
 });
 
-test('B1c Karl: a finished charge leaves a 3 s ash cloud that slows the player; Carl leaves none', () => {
+test('B1c Karl: a finished charge leaves a 3 s ash cloud (−15 % speed inside); Carl leaves none', () => {
   for (const [level, expect] of [[6, 1], [1, 0]]) {
     const { g, r, boss, line } = scene({ level, offset: 300, bossOffset: 0, open: true });
     r.player.x = boss.x + line.n.y * 500; r.player.y = boss.y - line.n.x * 500;
@@ -87,8 +87,10 @@ test('B1c Karl: a finished charge leaves a 3 s ash cloud that slows the player; 
     for (let i = 0; i < 6; i++) g.step(DT, {});
     assert.equal((r.ashClouds || []).length, expect, 'level ' + (level + 1));
     if (expect) {
-      const c = r.ashClouds[0]; Object.assign(r.player, { x: c.x, y: c.y }); r.slow = 0; g.step(DT, {}); assert.ok(r.slow > 0, 'slowed inside the cloud');
-      for (let i = 0; i < 100; i++) g.step(DT, {}); Object.assign(r.player, { x: c.x, y: c.y }); r.slow = 0; g.step(DT, {}); assert.equal(r.slow, 0, 'gone after 3 s');
+      const c = r.ashClouds[0]; Object.assign(r.player, { x: c.x, y: c.y }); g.step(DT, {}); assert.equal(r.inAsh, true, 'inside the cloud');
+      const pace = () => { const x = r.player.x; g.step(DT, { x: 1, y: 0 }); return r.player.x - x; }; Object.assign(r.player, { x: c.x - 40, y: c.y }); const slow = pace();
+      for (let i = 0; i < 100; i++) g.step(DT, {}); Object.assign(r.player, { x: c.x - 40, y: c.y }); const fast = pace(); g.step(DT, {});
+      assert.equal(r.inAsh, false, 'gone after 3 s'); assert.ok(Math.abs(slow / fast - .85) < .03, 'about 15 % slower: ' + (slow / fast).toFixed(3));
     }
   }
 });

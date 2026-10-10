@@ -151,7 +151,7 @@ test('X10: Carl normal fights (optimizer bot, 12 seeds here, 50 in balance_runs)
 });
 
 test('X2 (B1b): a bot that walks to a basalt crossing and fights takes Karl within ±10 % of the open-ground fight', () => {
-  const lost = open => { let sum = 0; for (let i = 0; i < 12; i++) sum += runOne(C, { species: 'carnotaurus', style: 'optimizer', seed: 3000 + i, seconds: 200, dt: DT, level: 6, bossDuel: true, open, across: true }).bossHpLostPct; return sum / 12; };
+  const lost = open => { let sum = 0; for (let i = 0; i < 12; i++) sum += runOne(C, { species: 'carnotaurus', style: 'optimizer', seed: 3000 + i, seconds: 200, dt: DT, level: 6, bossDuel: true, open, across: true, alone: true }).bossHpLostPct; return sum / 12; };
   const ground = lost(true), lava = lost(false);
   assert.ok(Math.abs(lava - ground) <= 10, JSON.stringify({ ground, lava }));
 });
