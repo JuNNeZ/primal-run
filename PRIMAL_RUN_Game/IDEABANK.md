@@ -26,3 +26,7 @@ procedurale banerækkefølger og sjældne arter, der kun findes i afsides områd
   - Starter man altid som baby, eller er "baby-start" en sværhedsgrad,
     der giver mere XP eller flere mutationer gennem et run?
 - Kræver nye sprites for hvert trin pr. art; kunne starte med én art som prøve.
+
+## Deinosuchus som spiller
+
+**Bygget:** separat pakke på `codex/sprites-and-mechanics`: eksisterende levende, ådsel- og skeletsprites genbruges. Endelig teststatus fremgår af `SPRITES_AND_MECHANICS_STATUS.md`.

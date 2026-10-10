@@ -3,7 +3,7 @@
 Arbejdsrepository til et top-down dinosaur-roguelite i pixel art.
 
 Det aktive spil er **PRIMAL_RUN_Game**: en spilbar udviklingsversion med
-Velociraptor som startart, ti spilbare arter, otte tilfældige baner og navngivne bosser,
+Velociraptor som startart, elleve spilbare arter, otte tilfældige baner og navngivne bosser,
 kød/levels, fælles og artsmutationer, permanente DNA-unlocks og upgrades,
 startmenu, lokale highscores, lydindstillinger og original proceduremusik.
 Den fælles spilkerne kører i browseren og i et GDevelop 5-projekt.
@@ -15,8 +15,8 @@ Vand/mudder sænker bevægelse; hold C i buske for at snige/skjule dig.
 Flokke alarmerer hinanden, bytte græsser/hviler, og rovdyr har territorier.
 [Spiltest og balanceændringer1–4](PRIMAL_RUN_Game/PRIORITIES_1_4.md).
 
-Otte separate spillerarter har960 frames; to arter deler deres fjendeserier.
-Ti spilbare arter har1200 frames for idle, gang, løb, angreb, skade og død. [Se spilleranimationerne](PRIMAL_RUN_Game/player_full_review.html).
+Otte separate spillerarter har960 frames; tre arter deler deres fjendeserier.
+Elleve spilbare arter har1320 frames for idle, gang, løb, angreb, skade og død. [Se spilleranimationerne](PRIMAL_RUN_Game/player_full_review.html).
 Almindelige fjender kan opgive jagten efter 8 sekunder uden en ny træffer;
 chancen stiger med afstand og tid. Uforstyrrede byttedyr holder cirka 110 pixels
 afstand, når spilleren står stille. Bosser opgiver ikke.
@@ -101,3 +101,5 @@ include settings, outcomes and caveats. Corpse assets use their own
 [rule](PRIMAL_RUN_Game/SPRITE_RULES_CORPSES.md); living sprites are preserved.
 Focused recipes in [.agents/skills](.agents/skills) cover sprites, asset generation,
 mechanics and balance; AGENTS.md routes future work to the relevant recipe.
+
+[Deinosuchus: spillerintegration og animation-review](PRIMAL_RUN_Game/deinosuchus_playable_review.html). Låses op ved Doris på bane4; udviklingsbranch `codex/sprites-and-mechanics`, ikke automatisk publiceret.

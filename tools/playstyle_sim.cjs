@@ -144,7 +144,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades }) {
       const inRange = dist(target) < config.range + target.radius - 10;
       let pounce = false;
       if (S.ability === 'spam') pounce = r.stamina >= cost;
-      else if (S.ability === 'smart') pounce = r.stamina >= cost && (inRange ? ['ankylosaurus', 'tyrannosaurus'].includes(species) && hostile.length > 0 : dist(target) < 170 && r.stamina > 60);
+      else if (S.ability === 'smart') pounce = r.stamina >= cost && (inRange ? ['ankylosaurus', 'tyrannosaurus', 'deinosuchus'].includes(species) && hostile.length > 0 : dist(target) < 170 && r.stamina > 60);
       else if (S.ability === 'sometimes') pounce = r.stamina >= cost && R() < 0.15;
       return { ...steer(aim.x, aim.y), attack: inRange || dist(target) < config.range + 40, pounce };
     }

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Existing export hashes, native metadata and shared asset paths",
+  "livingFrames": 120,
+  "corpseProps": 16,
+  "verified": 136,
+  "anatomyApproved": false,
+  "GDevelopFreshExport": "NOT RUN",
+  "coreSHA": "9545864c77183fb15f82a5328b039cea3ffa03b2a4ff2a701af74c4e85ff7fa1",
+  "unitTestsFullSuite": 126,
+  "additionalFocusedTests": 6,
+  "browserSuites": 20,
+  "kitChecks": 3,
+  "fullTestCommand": "PRIMAL_CHROME_PATH=/usr/bin/chromium npm test",
+  "fullTestExitCode": 0,
+  "balanceRunsBefore": 180,
+  "balanceRunsAfter": 198,
+  "unchangedExistingSpeciesStyleGroups": 60
+}

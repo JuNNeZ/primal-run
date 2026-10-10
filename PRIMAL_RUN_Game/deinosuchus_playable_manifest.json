@@ -1,0 +1,5466 @@
+{
+  "species": "deinosuchus",
+  "integration": "Shared existing enemy and corpse frames; no source changes",
+  "runtimeScale": 2,
+  "collisionRadius": 32,
+  "status": "prototype_static",
+  "production_approved": false,
+  "assets": [
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_S_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "idle",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        0,
+        0,
+        288,
+        237
+      ],
+      "source_cell_anchor": [
+        128,
+        102
+      ],
+      "registration_offset": [
+        8,
+        22
+      ],
+      "export_sha256": "72b11ff39af2314217aebea0067107c2b6f4fa0b7af0ec9dada06b7859039fd5",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_S_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "idle",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        224,
+        0,
+        544,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "c156643eefd3bd02bcc7d36425e3e0bf8ed20eadf01b3743758a2b7b216e2118",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_S_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "idle",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        480,
+        0,
+        800,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "13cc7428b96502c7cf1284092891922e0ac8f9b5b9900727a5eb86191dc66891",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_S_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "idle",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        736,
+        0,
+        1056,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "2a9467b282778938df3ba120635cac9a51ad9285aa59262d51da05e8a789eed3",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_hurt_S_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "hurt",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        992,
+        0,
+        1312,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "eda6eeb8ac5b481fc9684ee8fcd015333a40cc6e69bb3a5eb55017abe834a50f",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_hurt_S_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "hurt",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        1248,
+        0,
+        1536,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "5476a12e8554ed9e7d7e3da3b7f9ea3bdab935870cbf054f921ce60a5e2c13cc",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_S_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "walk",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        0,
+        173,
+        288,
+        442
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "52909de98f0e957ec5bad7e83e806a2d8326c224609a5256f1c280d5fe449c1d",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_S_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "walk",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        224,
+        173,
+        544,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "3474377fed930e81db009f8d3a528936dbb062c0b784425148d1320483177c33",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_S_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "walk",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        480,
+        173,
+        800,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "1a9f1eb444884e2a824ef3a2d6ce39d6cece14790a7f3a1663a2488ada79feb5",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_S_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "walk",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        736,
+        173,
+        1056,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "f4f92a458bdba8ef1e0ecfc91b8d1aa5494c545e18f81db92790f8728d465381",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_S_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "walk",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        992,
+        173,
+        1312,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "3f88295edc30cbf4ee081a0fe0416934c22b02a4019ef409e64b0f7bc311265c",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_S_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "walk",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        1248,
+        173,
+        1536,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "4956c464c7c04f769f70a56327e67ae681931d39983fb2b7e6baa7bc6059be40",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_S_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "run",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        0,
+        378,
+        288,
+        646
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "40a65aad8ee8ef32090e39bbc4bb052ac9cfe4cddc7242aca2fafba613d6019a",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_S_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "run",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        224,
+        378,
+        544,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "cedff52bad777091c8f1f1d4a66109b8cbd3eb24477cc5e695ba1ce1f32a5f91",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_S_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "run",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        480,
+        378,
+        800,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "b4661ec2b262f9f8b167fcfb13abeab81973629616f947ca6546c65e06b7c853",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_S_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "run",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        736,
+        378,
+        1056,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "ac7b78d927faa021bc8c5fb6b983ab8603c13d90874de34dabcf5dea46ce6ce9",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_S_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "run",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        992,
+        378,
+        1312,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "9feb8b8d0231b758e4ca04cfdba26d3205a31598e37b8b5e6b269dee31ea6b29",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_S_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "run",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        1248,
+        378,
+        1536,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "b47865b8974e30174f8e2603a8d096e779a5debdf5c6ffc8f5df7181b8dbd1dc",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_S_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "attack",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        0,
+        582,
+        288,
+        851
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "91068ceb4a3b511a16197b3b69ab125b9b59d6a254a2e273c25f8323c6f0a938",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_S_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "attack",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        224,
+        582,
+        544,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "32bff5d9065bb7e79b47c6d7cf90eac85f0249073d6d12822bbd9c2531de16a0",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_S_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "attack",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        480,
+        582,
+        800,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "e52b1dd891c404f3aa93eff951ebcd95ed5319d429f3f0c4d717c581f427632a",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_S_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "attack",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        736,
+        582,
+        1056,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "1af97111c8db4fd1ffcde607511283d0ca01d14151662fe45800fdb01013f249",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_S_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "attack",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        992,
+        582,
+        1312,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "e6a01da018ce4e25add0bb651e11d688b86276e314600384bd1d14b21a25aaa4",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_S_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "attack",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        1248,
+        582,
+        1536,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "2687b5e1334d835fc71bfd3b1393a62b89673d5f81986d3e4caf04f149ff1733",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_S_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "death",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        0,
+        787,
+        288,
+        1024
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "a5d7c398bdfaabd65ef50e64b5c41b6aef5cb1cd81c0f2e0acc1ce6be268267f",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_S_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "death",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        224,
+        787,
+        544,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "13325ef1a708e81c2a32366308298755281222cb17a42fe5f7201a26e8748aa6",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_S_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "death",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        480,
+        787,
+        800,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "849b2528a37d653785100b9876d177e9dbbe2ef8a2de485db37316acf94ecea6",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_S_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "death",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        736,
+        787,
+        1056,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "22134fa193c8d31dd1b3ab0e8d0db6788ea8673d43ec2c9ee05a81457746788f",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_S_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "death",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        992,
+        787,
+        1312,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "67733eac17a4130da0317cd4d98ee0510ac049e62b3270f2e51f918f8193be34",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_S_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "death",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_S.png",
+      "source_sha256": "253cd979d3318cee7220b94b9251f1cc99a03e304562bcd7496fb93098c831d4",
+      "source_crop": [
+        1248,
+        787,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "638013e9b7a6d86f461f184413fdca65eaec136fff1250c495f008423a8c6fba",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_N_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "idle",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        0,
+        0,
+        288,
+        237
+      ],
+      "source_cell_anchor": [
+        128,
+        102
+      ],
+      "registration_offset": [
+        8,
+        22
+      ],
+      "export_sha256": "a9e0df9208b9d62eced2ab193561118982d5bc51e3787b82e3f7faeddcbb5bc1",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_N_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "idle",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        224,
+        0,
+        544,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "847b71c1b71f9c1ea675509f040f8b524148ecd09e4aff663394dc6f5bfc5d66",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_N_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "idle",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        480,
+        0,
+        800,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "f1586c07fc24b6405450137318d20df9b072ef9136475cfccefc78b571ab979c",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_N_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "idle",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        736,
+        0,
+        1056,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "b888cd010aaa4c02d4eda1b1267ad25658be5636b5367f1d961a0bd45b8fc56d",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_hurt_N_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "hurt",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        992,
+        0,
+        1312,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "3000deca9f26ce11dd5ceea0d0f05851990bd3c10dc4cf13eab037d3e5c4bdfc",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_hurt_N_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "hurt",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        1248,
+        0,
+        1536,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "fb23e8804cf7651e846b82c188917f7ddb1aa18b617f1c5e1d88a637be5954b3",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_N_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "walk",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        0,
+        173,
+        288,
+        442
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "57e541f14cfd9f25e1d71b9d94130abc991f3aa11b9c7a01ce4d438feb541d03",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_N_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "walk",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        224,
+        173,
+        544,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "de569c0a929e5912f7c02c60110e4b51c08ac5b6b556b1f0643cf76c47a229ab",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_N_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "walk",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        480,
+        173,
+        800,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "2e43d1341d09cade55a16909eb7f942974fcceb3a801e9df956dbedc705d3791",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_N_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "walk",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        736,
+        173,
+        1056,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "442a19c6c304dfcb2269078fed9eaae83fd76317cee70b5f3f7c9e41d8d4924d",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_N_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "walk",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        992,
+        173,
+        1312,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "066155a255bff78c621a89bb22d75cccfad329dcd18d9c9482c8cb1738f536a7",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_N_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "walk",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        1248,
+        173,
+        1536,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "8a216006e6ffdabdfdb0e022a2a0ba0f070d05da7c8ef06ad630655c7a2e3394",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_N_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "run",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        0,
+        378,
+        288,
+        646
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "71deb582bc6379eba14a935a19e2217c078b9452ab44d5bf2a590ab301caca2d",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_N_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "run",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        224,
+        378,
+        544,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "6e56ed3942c5f18d6269c1def7dd3255ad80221fc6f91e2a11b1e57762d3676a",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_N_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "run",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        480,
+        378,
+        800,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "2c5e53cfa8ca7c9db6a7c538c334aae77c73d316ae712bb449d3454ab95dfe36",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_N_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "run",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        736,
+        378,
+        1056,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "55c1d7bfe30c20f64d992bc349ee91eb0e43c1b5a01c5dff26e41d312da65fb8",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_N_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "run",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        992,
+        378,
+        1312,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "1bee4dd626237396260de3b0ad0ec1ed5286101e6064c8cecb959ff0517f22b8",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_N_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "run",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        1248,
+        378,
+        1536,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "45bf317ef59d9dada0f27c70413663e88a8e82f9989e67285310966fc641a4c1",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_N_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "attack",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        0,
+        582,
+        288,
+        851
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "799768b1ba477932e91fc37ccacea93909cddcb5388a7347f6c71918fe2b0165",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_N_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "attack",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        224,
+        582,
+        544,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "e657eceaed2af2a42ade9542ec83acaf52b1277dd433f753c6bb40b7bc28fd24",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_N_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "attack",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        480,
+        582,
+        800,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "f640c86470756427cd8823b9e296f7db54cb1fb3beaf1e32d34b3e5d735ab7c4",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_N_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "attack",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        736,
+        582,
+        1056,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "bfcf5b338b01973594c9910216b30e648dee59e932a7e601f045efaae5b05548",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_N_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "attack",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        992,
+        582,
+        1312,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "1c6c2bd6444185bab1c3fa9526b63d399c40c34cd752a1e658976cd0894751e5",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_N_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "attack",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        1248,
+        582,
+        1536,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "16f3b969d3ca5262bc4a2d9fe14d9099f89af95e7d62626e8acb3895cbbd31e0",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_N_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "death",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        0,
+        787,
+        288,
+        1024
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "88e0a75adf85aa59c04696984d667248605190e7f34675eb04525c8aedc40117",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_N_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "death",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        224,
+        787,
+        544,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "9db404bb8463d9fbb3e354f45f6cd425876a864e16c332e9d794a428524c5274",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_N_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "death",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        480,
+        787,
+        800,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "1748b9370d79de751b2b95f5ed5ddb430174739589c5526995c395624c97d522",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_N_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "death",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        736,
+        787,
+        1056,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "541f8524f956ece942e4f47997003ce0cbf91fa7d21549a17a13e8c870fc798a",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_N_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "death",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        992,
+        787,
+        1312,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "ed5799ba80b1216372e1617043430226580e9be98ae8fa474f84015b5609c47d",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_N_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "death",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_N.png",
+      "source_sha256": "19c26bb24445511d77105b3b08eaef1fb1da99c2bfad26dbeb7dbf6e828b6d61",
+      "source_crop": [
+        1248,
+        787,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "61ab4ead3d37107cdfeb0c8ce809ab6b62198006aafdbecfb39229a7b52f4423",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_E_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "idle",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        0,
+        0,
+        288,
+        237
+      ],
+      "source_cell_anchor": [
+        134,
+        102
+      ],
+      "registration_offset": [
+        6,
+        22
+      ],
+      "export_sha256": "2e56f0df2118b19d13514a176ce92f24ffee96193290c7d9512c212581c49db1",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_E_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "idle",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        224,
+        0,
+        544,
+        237
+      ],
+      "source_cell_anchor": [
+        166,
+        102
+      ],
+      "registration_offset": [
+        -10,
+        22
+      ],
+      "export_sha256": "78e8d633bb5ff6983cdad4e1b64bf3d71be025246f64527e6dec0421cc5fe859",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_E_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "idle",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        480,
+        0,
+        800,
+        237
+      ],
+      "source_cell_anchor": [
+        166,
+        102
+      ],
+      "registration_offset": [
+        -10,
+        22
+      ],
+      "export_sha256": "17447e580df161dde8d98b5a71900516e213686e8260e081b063557a1f2f76a8",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_E_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "idle",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        736,
+        0,
+        1056,
+        237
+      ],
+      "source_cell_anchor": [
+        166,
+        102
+      ],
+      "registration_offset": [
+        -10,
+        22
+      ],
+      "export_sha256": "a7ad94a8c8ac8e81c5ec5617b9c4e5598712be8c9051c849d0718407c3c0f880",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_hurt_E_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "hurt",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        992,
+        0,
+        1312,
+        237
+      ],
+      "source_cell_anchor": [
+        166,
+        102
+      ],
+      "registration_offset": [
+        -10,
+        22
+      ],
+      "export_sha256": "0ef069bde887fce3ff458141a99773484e45318f52b34c3eebbb4c3480494519",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_hurt_E_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "hurt",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        1248,
+        0,
+        1536,
+        237
+      ],
+      "source_cell_anchor": [
+        166,
+        102
+      ],
+      "registration_offset": [
+        -10,
+        22
+      ],
+      "export_sha256": "88470c040b7841e829c86975c6196e2ad1cf5c08c52fd4ff5909ff790e2d4b47",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_E_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "walk",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        0,
+        173,
+        288,
+        442
+      ],
+      "source_cell_anchor": [
+        134,
+        134
+      ],
+      "registration_offset": [
+        6,
+        6
+      ],
+      "export_sha256": "a37116c3b80b693fa6fd88ac8a407192e8139fef6d6c93b640c01d9f16afbead",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_E_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "walk",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        224,
+        173,
+        544,
+        442
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "0978335f0f55f80ec213724c4099a06c256f30554d2a0c9e44e1a9abd4f7ca09",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_E_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "walk",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        480,
+        173,
+        800,
+        442
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "50d200ddde9f64ba5990faf0290d65d2b36d45c4a2404a4bb45e414c1ba39a23",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_E_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "walk",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        736,
+        173,
+        1056,
+        442
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "84922ef638a823de7b3b649c1ceacbb64bbfa2b01e7d2d169afb28c288d60d13",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_E_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "walk",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        992,
+        173,
+        1312,
+        442
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "1ebd2bda117074753ce47c3f8f26d17a230515ad83c57e2b6517e109a1a30af3",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_E_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "walk",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        1248,
+        173,
+        1536,
+        442
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "b1cec0c3e0b82110dc70895ab73c218a675b4f84eced2417fab7fb2bbc9f9ca5",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_E_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "run",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        0,
+        378,
+        288,
+        646
+      ],
+      "source_cell_anchor": [
+        134,
+        134
+      ],
+      "registration_offset": [
+        6,
+        6
+      ],
+      "export_sha256": "221477dd5b1656399fcfe9b3882a5c64e84bf6c737539dd88a61ffa70c842031",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_E_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "run",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        224,
+        378,
+        544,
+        646
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "8036c35f4e8b6b5e227ee1cc0556edf545a608b7afe326e020920513ef517917",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_E_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "run",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        480,
+        378,
+        800,
+        646
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "89774201e4114ecdbe3b656b7675847d7c0bfb5cf609444e657ed853f89aed58",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_E_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "run",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        736,
+        378,
+        1056,
+        646
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "210e08c718e719569a1204ffab7081cbae4d09b533a1f77e154702f464e58ba5",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_E_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "run",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        992,
+        378,
+        1312,
+        646
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "7627ae137afb9a559bacc85e6a32c03d4fbd21be15d55ffe37c28b2f3e58d855",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_E_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "run",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        1248,
+        378,
+        1536,
+        646
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "4a5e5e8c03dc699d93e617e1e0194ac63fb2e4371d3ae9a7ff1c573a17e38e1e",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_E_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "attack",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        0,
+        582,
+        288,
+        851
+      ],
+      "source_cell_anchor": [
+        134,
+        134
+      ],
+      "registration_offset": [
+        6,
+        6
+      ],
+      "export_sha256": "ec545fd01a5575ffadc09595c4f715530edb1ed499f35873380db85380128fcc",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_E_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "attack",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        224,
+        582,
+        544,
+        851
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "1d703c63dad5ffa260081594beee3d0ce5ec3a120e9d26dd43c8b5edfa57e37b",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_E_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "attack",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        480,
+        582,
+        800,
+        851
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "77d50eeaed55a11c23ec8479433b8edf08a50d616794890bbc878dabf3f188d4",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_E_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "attack",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        736,
+        582,
+        1056,
+        851
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "c2ff2285b9fc103a4e566b73c81dcd94300f60be350383c0f40a4393bd9ecd62",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_E_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "attack",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        992,
+        582,
+        1312,
+        851
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "4fb5f020b8433c374485990c6efa90ee4f5c41e2bf07f1931497c29003d119fe",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_E_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "attack",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        1248,
+        582,
+        1536,
+        851
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "87b066013632bfb4c1a4f81edeecef6bd958131bd730dae5e27f8679d0071cb7",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_E_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "death",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        0,
+        787,
+        288,
+        1024
+      ],
+      "source_cell_anchor": [
+        134,
+        134
+      ],
+      "registration_offset": [
+        6,
+        6
+      ],
+      "export_sha256": "d7b21b9b6eecee80ff539a79e43c80ee5b341e7b9b0dd6adae764052697ebdde",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_E_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "death",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        224,
+        787,
+        544,
+        1024
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "205b13e1f8a3b4ae02ba21b5884e18745ee95766c5332281fbcefccfa006fbce",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_E_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "death",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        480,
+        787,
+        800,
+        1024
+      ],
+      "source_cell_anchor": [
+        168,
+        134
+      ],
+      "registration_offset": [
+        -12,
+        6
+      ],
+      "export_sha256": "706a910dfed40ee6a42ff29ce59b97c8b3fbc3f91276e21a4a8371945759708a",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_E_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "death",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        736,
+        787,
+        1056,
+        1024
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "77f88802934ebf36ec5e7fc45d0ce2c95314b79569c488f1c96c4666b5b050b2",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_E_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "death",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        992,
+        787,
+        1312,
+        1024
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "e15a58045a3263a0bcb29cbc045445ae6124fe7fcbb14a477ac75dde695f69ac",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_E_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "death",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_E.png",
+      "source_sha256": "d4a9da33636c280f4072b95ef8968bd24b19d217e728922f72bd70cb7ecca715",
+      "source_crop": [
+        1248,
+        787,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        166,
+        134
+      ],
+      "registration_offset": [
+        -10,
+        6
+      ],
+      "export_sha256": "290db6bd2cd2622fef88db980dc4ed267b72a965c46fd7529f6b16a6926f83a7",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_W_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "idle",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        0,
+        0,
+        288,
+        237
+      ],
+      "source_cell_anchor": [
+        128,
+        102
+      ],
+      "registration_offset": [
+        8,
+        22
+      ],
+      "export_sha256": "706ad4ee89fcddfc6739d00d75ed32570f28f702fac8b5b733d98f79970449e1",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_W_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "idle",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        224,
+        0,
+        544,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "ea36817beed62e7cec74a8fa1365faf1eb527a6e59f7fa6287f0f4bfc9300b03",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_W_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "idle",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        480,
+        0,
+        800,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "5846cb97ccd2795205d4faa1a6815b4c793ac8b677e5ea6d12616ba627b1d6ba",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_W_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "idle",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        736,
+        0,
+        1056,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "9d75805b7c7207df7643bed7964ed08d88d92cd52eda7df3ee1332ea563b71d4",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_hurt_W_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "hurt",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        992,
+        0,
+        1312,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "d825bdec026a0b287bd93adc4af4a1bc2ef88c2544db8245339fc82501be668d",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_hurt_W_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "hurt",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        1248,
+        0,
+        1536,
+        237
+      ],
+      "source_cell_anchor": [
+        160,
+        102
+      ],
+      "registration_offset": [
+        -8,
+        22
+      ],
+      "export_sha256": "f0f5ab7b9688bad10ed91ea22ba79f1aabac91b8626c0ab30f4451cddcbc7d0e",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_W_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "walk",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        0,
+        173,
+        288,
+        442
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "3825d6259ab1f2d6e935d51e51f1f7bf312888d10f696cc015bada35b043c0f4",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_W_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "walk",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        224,
+        173,
+        544,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "1b05abd442a4ed535244da9f7e7c7fc36abb553fdad5e2a673e9e2e8f9e8e736",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_W_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "walk",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        480,
+        173,
+        800,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "69aa07a09e5936b1bd562c275c954545cf44c2a5b53312dcd483e58433f1a9ce",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_W_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "walk",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        736,
+        173,
+        1056,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "58f97cb1c69e05dea4dc644e1ef0d19d2dfb70e64e6c3b50c2b559f6c5bb6533",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_W_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "walk",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        992,
+        173,
+        1312,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "4dd2ce061bde9be8de30fe9f475f690b8cc89572c77e6e9cf89c76b76e2b4140",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_walk_W_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "walk",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        1248,
+        173,
+        1536,
+        442
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "ce5562e029708fa92056078446f4cfe4995048d49fb361a932937706918a1d3a",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_W_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "run",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        0,
+        378,
+        288,
+        646
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "5b4a935e947441487e35b9d63b04fb0a47d68303e3bb90543467425ed434fa9a",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_W_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "run",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        224,
+        378,
+        544,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "510dba3a49bd5823e407e14fb86c8cc183e6279bb5fed89ab51afc7b6d1a58e4",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_W_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "run",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        480,
+        378,
+        800,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "cb5b7a36ff5e9cebfbd83954ab36180058d0a85805d44faf8c275600c8f24e4c",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_W_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "run",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        736,
+        378,
+        1056,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "70d9f794e697624d98db32aedfdd0b632a16c130626349c91705e0c5145ee5ef",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_W_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "run",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        992,
+        378,
+        1312,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "a6e0009735e60f05fc61ec715b333d8266aba26cc8f49dd2404fcbb5b504708e",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_run_W_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "run",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        1248,
+        378,
+        1536,
+        646
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "04e40cab05e38adbd101f4124364235cdb1c3b736c4cd3ff8653b815aebd2fb5",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_W_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "attack",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        0,
+        582,
+        288,
+        851
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "7b7a4bb290fe5b615192803ca530f4c53730cab6c02ba04fe5dcffb566af706b",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_W_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "attack",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        224,
+        582,
+        544,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "5fd253ad89350be3e2b0b59e275540ef2104225b5b482febf0d54ac0f68d87ee",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_W_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "attack",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        480,
+        582,
+        800,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "348abdf8c16a27b4a7e4511bec83a1f292dd1999378faeeb3592ff5290175cb2",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_W_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "attack",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        736,
+        582,
+        1056,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "008889dc6049dc104a065df33d0a66b3a8a45f43ad326cf8900199ff8f0b4667",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_W_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "attack",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        992,
+        582,
+        1312,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "dd256e9a113e938c12da9906c444210c8e1ba32bc150501c5ea814f14dddf0fc",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_attack_W_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "attack",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        1248,
+        582,
+        1536,
+        851
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "8029e3c8541440dc35dd30326042ee1492eee0d1e16ed04be972d674399f868b",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_W_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "death",
+      "frame": 0,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        0,
+        787,
+        288,
+        1024
+      ],
+      "source_cell_anchor": [
+        128,
+        134
+      ],
+      "registration_offset": [
+        8,
+        6
+      ],
+      "export_sha256": "a51c7de06073cfc410268feacdf9f5a6fce2cfcbd089f2232787ad73b0af1e37",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_W_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "death",
+      "frame": 1,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        224,
+        787,
+        544,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "fa441e349a46dd139f1158964aeae4d2434edf9fb34cc5e864beb57bd1c358c6",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_W_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "death",
+      "frame": 2,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        480,
+        787,
+        800,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "f51ccef0acee5fb196c966860483b7f4a6b32f6b863e9289b773d11ac3584841",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_W_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "death",
+      "frame": 3,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        736,
+        787,
+        1056,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "3339583547150ba0eae2037246d8cec2e15080b0d3065f75f335c1f5154c8ba3",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_W_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "death",
+      "frame": 4,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        992,
+        787,
+        1312,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "3c40ee28af2aca82ed1367436104cf13c1ba0235a432711d757dce0eaea97a6b",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_death_W_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "death",
+      "frame": 5,
+      "source": "Source_Generated/enemy_full/deinosuchus_W.png",
+      "source_sha256": "05354ed6886d3399ffbfad9651e4fdec9ece4e43a6db48592dd2669a9020ba6b",
+      "source_crop": [
+        1248,
+        787,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        160,
+        134
+      ],
+      "registration_offset": [
+        -8,
+        6
+      ],
+      "export_sha256": "f110007a5e0225ff483f44c910b014831193bb285003106f6ee299bb1c87b4ed",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Fixed integer 2px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_decayed_S_0.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "decayed",
+      "variant": 0,
+      "direction": "S",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        0,
+        0,
+        448,
+        320
+      ],
+      "source_cell_anchor": [
+        192,
+        110
+      ],
+      "registration_offset": [
+        24,
+        45
+      ],
+      "export_sha256": "a33ebaee5d706c21add70860dce5da3db0953697275b3d76551d2911df7b280e",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_decayed_E_0.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "decayed",
+      "variant": 0,
+      "direction": "E",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        320,
+        0,
+        832,
+        320
+      ],
+      "source_cell_anchor": [
+        224,
+        128
+      ],
+      "registration_offset": [
+        16,
+        40
+      ],
+      "export_sha256": "d2c03f1049353885d0297aaff278263fd5de8ff8340c2772ca2de80f7f98d8c3",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_decayed_N_0.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "decayed",
+      "variant": 0,
+      "direction": "N",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        704,
+        0,
+        1216,
+        320
+      ],
+      "source_cell_anchor": [
+        256,
+        160
+      ],
+      "registration_offset": [
+        8,
+        32
+      ],
+      "export_sha256": "fb1d0c3abc001b81a23ca15b175af9953d055c11ceed66e319342e33d991a65c",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_decayed_W_0.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "decayed",
+      "variant": 0,
+      "direction": "W",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        1088,
+        0,
+        1536,
+        320
+      ],
+      "source_cell_anchor": [
+        288,
+        128
+      ],
+      "registration_offset": [
+        0,
+        40
+      ],
+      "export_sha256": "5ed5b1fc513e42cb8f2045bf008b588557edb4f0db76230f601f33bfff33cb8a",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_decayed_S_1.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "decayed",
+      "variant": 1,
+      "direction": "S",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        0,
+        192,
+        448,
+        576
+      ],
+      "source_cell_anchor": [
+        192,
+        174
+      ],
+      "registration_offset": [
+        24,
+        29
+      ],
+      "export_sha256": "78d405c9944f6fecb3d4e1fd92be7dcd9df14d0df9cd2a6e1d0ae55fd1d0fcf2",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_decayed_E_1.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "decayed",
+      "variant": 1,
+      "direction": "E",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        320,
+        192,
+        832,
+        576
+      ],
+      "source_cell_anchor": [
+        224,
+        192
+      ],
+      "registration_offset": [
+        16,
+        24
+      ],
+      "export_sha256": "5b9e09dfcba01b61ea86760f13fd67a76d947b76f87a694c2c91e7977ea9e523",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_decayed_N_1.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "decayed",
+      "variant": 1,
+      "direction": "N",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        704,
+        192,
+        1216,
+        576
+      ],
+      "source_cell_anchor": [
+        256,
+        224
+      ],
+      "registration_offset": [
+        8,
+        16
+      ],
+      "export_sha256": "7ed36ff2e8f53b869c03fe9de5790a4d87952f387bcf8f37ade1923752fc3020",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_decayed_W_1.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "decayed",
+      "variant": 1,
+      "direction": "W",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        1088,
+        192,
+        1536,
+        576
+      ],
+      "source_cell_anchor": [
+        288,
+        192
+      ],
+      "registration_offset": [
+        0,
+        24
+      ],
+      "export_sha256": "ea72ba134b683db72bc256190f7f17700474031e242a744eff55e32c953e0f59",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_skeleton_S_0.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "skeleton",
+      "variant": 0,
+      "direction": "S",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        0,
+        448,
+        448,
+        832
+      ],
+      "source_cell_anchor": [
+        192,
+        174
+      ],
+      "registration_offset": [
+        24,
+        29
+      ],
+      "export_sha256": "c69a5f6e69d516f53d58e4994ab4adbd0364812aebea238063bfb1d85671ecb5",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_skeleton_E_0.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "skeleton",
+      "variant": 0,
+      "direction": "E",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        320,
+        448,
+        832,
+        832
+      ],
+      "source_cell_anchor": [
+        224,
+        192
+      ],
+      "registration_offset": [
+        16,
+        24
+      ],
+      "export_sha256": "06daa2261b5358fc5c832c44e268c157be1c8486b82d1995a26daa02f11ee222",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_skeleton_N_0.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "skeleton",
+      "variant": 0,
+      "direction": "N",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        704,
+        448,
+        1216,
+        832
+      ],
+      "source_cell_anchor": [
+        256,
+        224
+      ],
+      "registration_offset": [
+        8,
+        16
+      ],
+      "export_sha256": "f592b210c9bb76e1b990357e6e4931b3f02fe43062bfe623072dce619fb56998",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_skeleton_W_0.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "skeleton",
+      "variant": 0,
+      "direction": "W",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        1088,
+        448,
+        1536,
+        832
+      ],
+      "source_cell_anchor": [
+        288,
+        192
+      ],
+      "registration_offset": [
+        0,
+        24
+      ],
+      "export_sha256": "47252f717b753faa026f2721907c078f1f44821b59099e0455f6fa3f8a2bcdaa",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_skeleton_S_1.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "skeleton",
+      "variant": 1,
+      "direction": "S",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        0,
+        704,
+        448,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        174
+      ],
+      "registration_offset": [
+        24,
+        29
+      ],
+      "export_sha256": "cf6ca34e277baf52ab4bf9f617a6698b9d44b1f5deeb2011fb302bcfffbc9111",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_skeleton_E_1.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "skeleton",
+      "variant": 1,
+      "direction": "E",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        320,
+        704,
+        832,
+        1024
+      ],
+      "source_cell_anchor": [
+        224,
+        192
+      ],
+      "registration_offset": [
+        16,
+        24
+      ],
+      "export_sha256": "b27e6df0ce9b3d864d0ca79bffea9e13d7255be9042789952954401e4feaab53",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_skeleton_N_1.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "skeleton",
+      "variant": 1,
+      "direction": "N",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        704,
+        704,
+        1216,
+        1024
+      ],
+      "source_cell_anchor": [
+        256,
+        224
+      ],
+      "registration_offset": [
+        8,
+        16
+      ],
+      "export_sha256": "b999cd98f8ac2df4bbb06c2117d7c380473b01a503b64989ab52846252353340",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    },
+    {
+      "file": "assets/corpses/deinosuchus_skeleton_W_1.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "deinosuchus",
+      "stage": "skeleton",
+      "variant": 1,
+      "direction": "W",
+      "native_sample_stride": 1,
+      "source": "Source_Generated/corpses/deinosuchus_sheet.png",
+      "source_sha256": "c48a3f098132343ebc5b5217b9f180a4c025cdc4f1b8649c8fb414d37855ba41",
+      "source_crop": [
+        1088,
+        704,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        288,
+        192
+      ],
+      "registration_offset": [
+        0,
+        24
+      ],
+      "export_sha256": "ee922c4a87d441ac63640d4413afec64136e3d9f46fa50cbddeed5fd8393460d",
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+    }
+  ]
+}

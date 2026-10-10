@@ -138,7 +138,7 @@
     function drawEndScene(now){const scene=screen.querySelector('.end-scene');if(!scene)return;const r=game.run;if(endSceneRun!==r){endSceneRun=r;endSceneStarted=now;}const t=(now-endSceneStarted)/1000,dc=scene.getContext('2d');dc.imageSmoothingEnabled=false;dc.fillStyle='#151b19';dc.fillRect(0,0,480,180);dc.fillStyle='#28372a';dc.fillRect(0,130,480,50);
       const reduced=reducedMotion.matches||game.save.settings.reducedMotion,phase=reduced?2:Math.min(3,t),killer=r.result.victory?null:r.lastHit,charge=killer?.mode==='charge',slam=killer?.mode==='slam',style=charge?'stormløb':slam?'slag':'bid';scene.dataset.scene=style;scene.dataset.species=r.species;
       const paint=(path,x,y,scale=1)=>{prepareImage(path);const im=skins[path]||images[path],meta=catalog[path];if(!im){if(meta)loadImage(path).catch(()=>{});return;}dc.drawImage(im,Math.round(x-meta.origin[0]*scale),Math.round(y-meta.origin[1]*scale),im.width*scale,im.height*scale);};
-      const state=r.result.victory?'idle':phase<1?'hurt':'death',frame=state==='death'?Math.min(5,Math.floor((phase-1)*8)):state==='hurt'?0:Math.floor(phase*4)%4;paint(C.playerFrame(r.species,state,'W',Math.max(0,frame)),310,100,r.species==='tyrannosaurus'?2:1);
+      const state=r.result.victory?'idle':phase<1?'hurt':'death',frame=state==='death'?Math.min(5,Math.floor((phase-1)*8)):state==='hurt'?0:Math.floor(phase*4)%4;paint(C.playerFrame(r.species,state,'W',Math.max(0,frame)),310,100,['tyrannosaurus','deinosuchus'].includes(r.species)?2:1);
       if(killer){const state=phase<1?'run':phase<1.5?'attack':'idle',frame=state==='idle'?0:Math.min(5,Math.floor((phase%1)*6));paint(enemyFrame(killer.kind,state,'E',frame),phase<1?70+phase*(charge?170:140):charge?240:210,slam?110:100,['tyrannosaurus','deinosuchus'].includes(killer.kind)?2:1);}
     }
     const prepared=new Set();
@@ -312,7 +312,7 @@
     function drawPortrait(r){
       const pc=shell.querySelector('.hud-portrait'),p=pc.getContext('2d'),path=C.playerFrame(r.species,'idle','S',Math.floor(r.seconds*4)%4),im=skins[path]||images[path],meta=catalog[path];
       p.clearRect(0,0,64,64);p.fillStyle='#101b16';p.beginPath();p.arc(32,32,30,0,Math.PI*2);p.fill();
-      if(im&&meta){prepareImage(path);p.save();p.beginPath();p.arc(32,32,27,0,Math.PI*2);p.clip();p.imageSmoothingEnabled=false;const sc=r.species==='tyrannosaurus'||r.species==='triceratops'?.5:r.species==='compy'?1.4:.75;p.drawImage(im,32-meta.origin[0]*sc,50-meta.origin[1]*sc,im.width*sc,im.height*sc);p.restore();}
+      if(im&&meta){prepareImage(path);p.save();p.beginPath();p.arc(32,32,27,0,Math.PI*2);p.clip();p.imageSmoothingEnabled=false;const sc=['tyrannosaurus','triceratops','deinosuchus'].includes(r.species)?.5:r.species==='compy'?1.4:.75;p.drawImage(im,32-meta.origin[0]*sc,50-meta.origin[1]*sc,im.width*sc,im.height*sc);p.restore();}
       p.lineWidth=4;p.strokeStyle='#28372a';p.beginPath();p.arc(32,32,29,0,Math.PI*2);p.stroke();
       p.strokeStyle='#c3a35c';p.beginPath();p.arc(32,32,29,-Math.PI/2,-Math.PI/2+Math.PI*2*Math.min(1,r.xp/r.nextXP));p.stroke();
       p.fillStyle='#c3a35c';p.beginPath();p.arc(52,52,10,0,Math.PI*2);p.fill();p.fillStyle='#15221a';p.font='bold 11px monospace';p.textAlign='center';p.textBaseline='middle';p.fillText(String(r.level),52,53);
@@ -492,7 +492,7 @@
         canvas.dataset.playerSpecies = r.species;
         canvas.dataset.playerSprite = playerPath;
         canvas.dataset.playerState = r.attack ? 'Bite_' + r.attack.facing : (p.moving ? 'Walk_' : 'Idle_') + p.facing;
-        objects.push({ ...p, visualScale:r.species==='tyrannosaurus'?2:1, player: true, path: playerPath });
+        objects.push({ ...p, visualScale:['tyrannosaurus','deinosuchus'].includes(r.species)?2:1, player: true, path: playerPath });
       } else objects.push({ x: 780, y: 390, path: C.playerFrame(game.save.selectedSpecies,'idle','S',0) });
       for(let i=objects.length-1;i>=0;i--)if(objects[i].x<view.x-200||objects[i].x>view.x+canvas.width+200||objects[i].y<view.y-200||objects[i].y>view.y+canvas.height+200)objects.splice(i,1);
       objects.sort((a, b) => a.y - b.y);
@@ -557,7 +557,7 @@
         const diet = C.PLAYER_SPECIES[r.species].diet; shell.querySelector('#food-chip').textContent = (diet === 'herbivore' ? '❧ ' : diet === 'piscivore' ? '≈ ' : '◆ ') + r.meat + '/' + game.currentLevel().target;
         shell.querySelector('#dna-chip').textContent = '⬡ ' + r.dna; const zone = r.zone !== null && r.zone !== undefined && r.map.zones ? r.map.zones[r.zone] : null; shell.querySelector('#zone-chip').textContent = zone ? zone.name : '';
         drawPortrait(r); }
-      canvas.dataset.surface=r.surface;canvas.dataset.hidden=String(r.hidden);shell.querySelector('#terrain-label').textContent=r.hidden?'SKJULT · angrib for at afsløre dig':({water:r.species==='baryonyx'?'VAND · FLODJÆGER':'VAND · 60 % fart',mud:'MUDDER · 75 % fart',bush:'BUSKE · stå stille / hold C',ground:''})[r.surface];
+      canvas.dataset.surface=r.surface;canvas.dataset.hidden=String(r.hidden);shell.querySelector('#terrain-label').textContent=r.hidden?'SKJULT · angrib for at afsløre dig':({water:['baryonyx','deinosuchus'].includes(r.species)?'VAND · FLODJÆGER':'VAND · 60 % fart',mud:'MUDDER · 75 % fart',bush:'BUSKE · stå stille / hold C',ground:''})[r.surface];
       shell.querySelector('#biome-label').textContent = 'BANE ' + (r.levelIndex + 1) + '/' + r.campaign.length + ' · ' + game.currentLevel().name;
       shell.querySelector('#meat-label').textContent = r.bossSpawned ? 'BOSSEN ER HER' : r.meat + ' / ' + game.currentLevel().target + ({herbivore:' PLANTEFØDE',omnivore:' FØDE',piscivore:' FISK / KØD',carnivore:' KØD'})[C.PLAYER_SPECIES[r.species].diet];
       const progress = shell.querySelector('.meat-progress'), percent = Math.min(100, Math.floor(r.xp / r.nextXP * 100));

@@ -16,3 +16,7 @@ grafikken mest, i prioriteret rækkefølge:
 6. **Ideer fra idébanken**: æg, udklækning og baby-/ungestadier pr. art.
 
 Følg `SPRITE_RULES*.md`: native pixels, fast palet, en validerings- og manifestfil pr. levering.
+
+## Deinosuchus
+
+Spillerintegrationen genbruger de eksisterende 120 levende frames og 16 ådsel-/skeletposes. Ingen nye tegninger er nødvendige for denne integration. Kilderne forbliver prototype_static; kryds-state anatomi er ikke produktionsgodkendt.

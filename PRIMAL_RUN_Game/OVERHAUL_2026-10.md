@@ -55,3 +55,7 @@ og delvise (resten vises på engelsk). Tabellerne ligger i `tools/i18n/`; kør
 - Nye tegnede sprites (fx rigtige hornstød-animationer, flere idle-animationer, babyer) er
   ikke lavet; effekterne er kode-tegnede. Se `MISSING_SPRITES.md`.
 - Simulator-bots er ikke mennesker. Brug `tools/playstyle_sim.cjs` til at sammenligne.
+
+## Fortsættelse: sprites og mekanikker
+
+Branch `codex/sprites-and-mechanics`, baseret på denne overhaul. Deinosuchus tilføjes som spiller; A1–A6 og B1–B8 spores separat i `SPRITES_AND_MECHANICS_STATUS.md`. Tidligere ufærdige Deinonychus- og terrænændringer er bevaret på `codex/preserved-feathered-starter` og ikke automatisk flettet ind. Live-siden ændres ikke.

@@ -43,7 +43,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       }
       ctx.drawImage = original;
       // Lock aim while strafing, and synchronise actual damage with contact.
-      g.phase = 'playing'; r.player.facing = 'E'; r.attack = null; r.attackCooldown = 0; r.enemies = []; r.pickups = []; r.spawnTimer = 999;
+      g.random=()=>.5; g.phase = 'playing'; r.player.facing = 'E'; r.attack = null; r.attackCooldown = 0; r.enemies = []; r.pickups = []; r.spawnTimer = 999;
       const enemy = g.spawn('carnotaurus', { x: 530, y: 340 }); enemy.speed = 0;
       g.step(1 / 60, { attack: true });
       if (enemy.hp !== 48) throw Error('Damage before contact');

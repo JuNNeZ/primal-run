@@ -47,3 +47,5 @@ T. rex N source revisions remain preserved under enemy_full.
 Current extension: Velociraptor adds120 frames, total960/player_full and192sequences,10playables/1200frames with shared enemy_full. Existing South master and Utah cardinal references define its identity. Compy extra native integer4, Veloci integer2, before alpha/palette/origin-preserving render. Source N revision2 uses tight cells and reviewed alpha248 to reject a soft halo; all other active atlases retain192.
 
 Explicit user-authorized exception: Baryonyx North is exactly its South frames rotated180 with lossless pixel transpose. Its source/origin/palette remain declared, lighting also rotates. No general mirroring/rotation permission for other species. Validate exact South->North pixel equality. All remain prototype_static, not approved.
+
+Deinosuchus playable extension: shares the 120 existing enemy_full frames without redrawing sources. Native144/pivot72,72 at integer2x matches its NPC scale; collision32 remains fixed. Eleven playable species have1320 available frames. All original prototype limitations and corpse16poses remain unchanged.
