@@ -1,8 +1,8 @@
 {
-  "source_commit": "2a1e7a396021bca799b20e0a79cb0e0f41d00505",
-  "source_branch": "codex/primal-run-playable",
-  "date": "2026-10-09",
-  "scope": "living Baryonyx north single-tail anatomy and visible water-only fishing",
-  "validation": "100 core tests,17 browser checks,3 kit checks; standalone Chromium; official GDJS NOT RUN",
-  "art": "prototype/unapproved"
+  "source_commit": "5d7d13f81e287c88b338be1b883f31b69c070bb3",
+  "source_branch": "claude/overhaul",
+  "date": "2026-10-10",
+  "scope": "October overhaul: procedural sub-biome maps, boss and crit rebalance, ecology AI, HUD/telegraphs/water, achievements and unlocks, 7+2 languages, patch notes",
+  "validation": "121 unit tests, 18 browser checks, 3 kit checks in CI",
+  "rollback": "tag live-backup-2026-10-09"
 }
