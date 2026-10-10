@@ -3,6 +3,14 @@
 Godkendt af Jonas: M2, M4, M5, G1–G11, A1–A6, B1–B5, P1–P5, L1–L5 + procedurale baner.
 Alt ligger på branchen `claude/overhaul`. Hver fase er sin egen commit.
 
+## Del A — genbrug af Ankylosaurus, 10. oktober
+
+Den nye halesvingsgeneration skiftede kropsbredde, rygplader og haleproportioner og er forkastet. De 24 bevarede player_full-angrebsframes kopieres nu byte-identisk til artsangrebsoverlaget for både spiller og NPC. Oprindelige PNGs og rå kilder er uændrede; manifests validerer lighed og hashes. En manglende hit-flash på artsangreb er også rettet.
+
+A3 fortsætter med en timing-baseret halteprototype under 30 % liv i alle walk/run-serier. Den ændrer kun dwell-tid for eksisterende poses; særskilte tegninger med skånet ben, A2 ecology-poses, A4 vandtiles og A5 raptorådsler er stadig åbne. Parasaurolophus revision2 er et native review-udkast med tydeligere spark, ikke et aktivt runtime-overlag. Se part_a_review.html og SPRITE_RULES_LIMP.md.
+
+GitHub API-afvisningen kan ikke sidestilles med et bekræftet udløbet token: api.github.com mangler i det observerede netværksallowlist. Miljøkladden har nu api.github.com og det eksisterende cdn.playwright.dev. Den skal gemmes/publiceres, og API-operationen genprøves; Git-push påvirkes ikke.
+
 ## Rettelser
 - Låsning ved start/næste bane: tegne-loopet overlever fejl, klik venter ikke på lyd,
   billeder hentes med timeout og genforsøg, manglende terrænbilleder kaster ikke fejl.

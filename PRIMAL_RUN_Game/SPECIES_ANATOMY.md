@@ -5,7 +5,8 @@ art direction, not fossil claims. Anatomy stays consistent in every state.
 
 | Core ID | Limbs / silhouette | Head / tail landmarks |
 |---|---|---|
-| velociraptor | Two hind legs, feathered forearms; one tail | Slender small starter, narrow skull and sickle claw; no horns |
+| deinonychus | Two hind legs, feathered forearms; one tail | Chestnut/cream, medium raptor with sickle claw; no horns |
+| velociraptor | Two hind legs, feathered forearms; one tail | Slender small legacy player, narrow skull and sickle claw; no horns |
 | compy | Two hind legs, two small arms; smallest biped | Narrow head, long thin tail; no horns |
 | utahraptor | Two hind legs, two arms; sickle claws | Teal player identity, feather shapes; no horns |
 | carnotaurus | Two hind legs, two very small arms | Exactly two brow horns above eyes; no nasal horn |

@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1];GAME=ROOT/'PRIMAL_RUN_Game'
 palette={tuple(int(c[i:i+2],16) for i in (1,3,5)) for c in json.loads((GAME/'palette.json').read_text())['colors']};errors=[]
-for family,size,count in [('avatar',64,240),('species_attack',144,96),('forage',64,8)]:
+for family,size,count in [('avatar',64,240),('species_attack',144,120),('forage',64,8)]:
  data=json.loads((GAME/(family+'_manifest.json')).read_text())
  if len(data)!=count:errors.append(f'{family}: expected {count} files')
  for e in data:
@@ -16,6 +16,7 @@ for family,size,count in [('avatar',64,240),('species_attack',144,96),('forage',
   if not box or min(box[:2])<2 or max(box[2:])>size-2:errors.append(e['file']+': empty/clipped')
   for path,key in [(p,'export_sha256'),(GAME/e['source'],'source_sha256')]:
    if hashlib.sha256(path.read_bytes()).hexdigest()!=e[key]:errors.append(e['file']+': SHA')
+  if e.get('reused_from') and (p.read_bytes()!=(GAME/e['reused_from']).read_bytes() or hashlib.sha256((GAME/e['reused_from']).read_bytes()).hexdigest()!=e['reused_sha256']):errors.append(e['file']+': legacy reuse changed')
   if e['status']!='prototype_static' or e['production_approved'] or e['animation_ready']:errors.append(e['file']+': unsupported approval')
  report={'status':'FAIL' if errors else 'PASS','files':len(data),'errors':errors.copy(),'production_approved':False,'scope':'Canvas, binary alpha, padding, fixed palette, declared registration and source/export integrity only.'}
  (GAME/(family+'_validation.json')).write_text(json.dumps(report,indent=2)+'\n')

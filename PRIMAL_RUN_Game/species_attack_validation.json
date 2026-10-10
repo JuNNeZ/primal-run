@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "files": 96,
+  "files": 120,
   "errors": [],
   "production_approved": false,
   "scope": "Canvas, binary alpha, padding, fixed palette, declared registration and source/export integrity only."

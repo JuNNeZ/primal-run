@@ -40,4 +40,10 @@ procedurale banerækkefølger og sjældne arter, der kun findes i afsides områd
 - Førstegangssprogvalg, pauset build-visning og afstand mellem faste fund.
 - Separate HUD-hoveder og fire artsangreb er **integrerede prototyper**; visuel slutpolering er åben.
 
-A2–A5 og Parasaurolophus-spark forbliver åbne. De øvrige ideer og B-mekanikker flyttes ikke til bygget før de er implementeret/testet. Udklækning/opvækst forbliver en fremtidig idé.
+A3 har nu en timing-prototype med eksisterende poses, men tegnede skåneben-poses er åbne. A2, A4, A5 og endelig Parasaurolophus-sparkmatching forbliver åbne. De øvrige ideer og B-mekanikker flyttes ikke til bygget før de er implementeret/testet. Udklækning/opvækst forbliver en fremtidig idé.
+
+## Del A — konsistensrettelse
+
+- **Bygget:** Ankylosaurus gamle 24 halesving genbruges byte-identisk; ingen ny kropsform.
+- **Bygget prototype:** under 30 % HP viser alle arter en asymmetrisk gang-/løberytme. Ingen ændring af skade, fart eller angrebstiming.
+- **Review-only:** Parasaurolophus-spark revision2; eksisterende sources bruges som reference, men de nye frames er endnu ikke aktiveret.

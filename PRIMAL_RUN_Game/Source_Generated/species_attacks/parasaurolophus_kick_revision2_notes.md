@@ -1,0 +1,5 @@
+# Parasaurolophus kick revision2 — review only
+
+References: Source_Generated/enemy_full/parasaurolophus_S.png, parasaurolophus_N_anatomy_revision.png, parasaurolophus_E_anatomy_revision.png, parasaurolophus_W_anatomy_revision.png. Image-generation correction requested same olive/cream body, peach backwards crest, overhead camera, fixed hips, two hindlegs and two tucked forearms. Six attack columns × S/N/E/W rows; stance, weight shift, knee bend, side kick(contact3), retraction, stance. Closed jaw throughout. No extra tails, crests, limbs or camera changes.
+
+Review: a clearer kick is present, unlike previous bite/tail studies. Body/marking and side leg-position matching against the old living atlas remain incomplete. Do not enable in game without this review. Crop inset8 excludes inter-cell fragments; W1/W4 additionally exclude source-cell x0–17 only, which contains detached neighbour tails, not the current animal. Palette/alpha/origin remain fixed. See exports.json and species_attack_manifest.json for exact hashes and extraction data.

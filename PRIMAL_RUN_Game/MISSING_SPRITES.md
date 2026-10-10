@@ -4,10 +4,10 @@ Overhaulen bruger kode-tegnede effekter, hvor der mangler tegnede frames. Disse 
 grafikken mest, i prioriteret rækkefølge:
 
 1. **Angreb pr. art** (S/N/E/W, 6 frames): Triceratops hornstød, Ankylosaurus halesving,
-   Pachycephalosaurus hovedstød, Gallimimus næbhak. Der er nu 96 integrerede prototypeframes for disse fire arter, med native review og fallback. Endelig konsistens mellem gang og angreb mangler stadig; Parasaurolophus har endnu ikke et godkendeligt spark.
+   Pachycephalosaurus hovedstød, Gallimimus næbhak. Der er nu 96 integrerede prototypeframes for disse fire arter, med native review og fallback. Endelig konsistens mellem gang og angreb mangler stadig; Ankylosaurus genbruger de gamle halesving byte-identisk. Parasaurolophus revision2 har 24 review-only sparkposes, som stadig kræver body-/benaudit.
 2. **Idle-variationer**: græsse, drikke, kradse sig, sove – for planteædere og de store rovdyr.
    I dag vises adfærden som et lille ikon (❀, ≈, z).
-3. **Halten**: walk-cyklus ved lavt liv for alle arter.
+3. **Halten**: asymmetrisk animationsrytme under 30 % liv er bygget med de eksisterende poses. Nye anatomiske skåneben-poses mangler stadig.
 4. **Vand-overgange**: kant-tiles mellem sand/lavt vand/dybt vand og vadesteder, så floden
    ikke kun tegnes med streger og mønstre.
 5. **Velociraptor og Utahraptor som fjender** kræver ådsel- og skeletsprites (decayed/skeleton

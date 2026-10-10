@@ -14,12 +14,12 @@ ind i overhaulen; grundlagene har forskellige balance- og renderændringer.
   120 levende frames samt eksisterende 16 ådsel-/skeletposes; ingen nye anatomiske tegninger.
 - Deinonychus: gratis startart integreret fra den bevarede snapshot, 120 native frames og fem egne rariteter; eksisterende saves beholder valgt art.
 - HUD: 240 separate hovedposes for 12 spilbare arter, fem reaktioner; rå kilder og forkastet body-atlas bevaret.
-- A1 artsangreb: 96 native prototypeframes integreret for Triceratops, Ankylosaurus, Pachycephalosaurus og Gallimimus. Ankylosaurus South-recovery er rettet; øvrige23 celler bruger oprindelig kilde. Parasaurolophus mangler stadig et tydeligt kontakt-spark; to udkast er forkastet og bevaret.
+- A1 artsangreb: 96 native prototypeframes integreret for Triceratops, Ankylosaurus, Pachycephalosaurus og Gallimimus. Ankylosaurus bruger nu de 24 gamle player_full-angreb byte-identisk; den nye genererede kropsform er forkastet. Parasaurolophus mangler stadig et tydeligt kontakt-spark; to udkast er forkastet og bevaret; revision2 har 24 review-only sparkposes, endnu ikke aktive.
 - Føde: otte nye ground-pickups, deterministisk variation, advarsel og kort forgiftning fra enkelte svampe.
 - Mekanik/UI: sjældne belønninger er idempotente, arts-/diætfiltre deles, Compys rekrutterer mindst fire, reder kræver drab, førstegangssprogvalg og pauset build er implementeret.
 - Idle-overgange: stabil verdenspose som midlertidig forbedring; nye tegninger er ikke færdige. Gang/sprint deler benfase.
 - A2 ecology-idle: afventer.
-- A3 halten: afventer.
+- A3 halten: timing-prototype under 30 % HP er integreret for alle spiller-/NPC-serier; bruger uændrede walk/run-poses. Anatomiske skåneben-poses afventer.
 - A4 vand-autotiles: afventer.
 - A5 raptor-ådsler/skeletter: afventer.
 - A6 lava/HUD/natpaletter: valgfri, afventer.
