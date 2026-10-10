@@ -1,0 +1,1 @@
+PASS: DNA migration/purchase, twelve-class archive, T rex portrait/gameplay attack render, mobile layout, no missing assets or browser errors.
