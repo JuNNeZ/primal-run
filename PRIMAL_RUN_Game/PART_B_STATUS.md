@@ -132,7 +132,13 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 - Allierede følger spilleren i formation. De angriber spillerens mål, dvs. det dyr man senest har ramt inden for 6 s og 420 px, ellers en opmærksom fjende inden for 250 px. Et bid tager 6 × (1 + 0,25 × biom) HP, men højst ned til 1 HP, så de aldrig dræber og aldrig tæller som kills. De får 0,3 × fjendens skade tilbage pr. bid, flygter under 35 % HP og vender tilbage ved 70 %. De regenererer 2 %/s, når de følger spilleren.
 - UI: Et teal ◆ over den allierede og en lille HP-bjælke (procedural), mærkatet "VILD RAPTOR · E FODR / LÆG KØD HER" og effekterne "NY FLOKFÆLLE" og "FLYGTER".
 - Bots: `explorer` og stilarter med `dodge > 0,5` fodrer en raptor, når der ligger kød ved den og ingen fjende er tæt på. `runOne` rapporterer `allies` og `nightKills`.
-- Antagelse: Allierede gør også bosskampe lettere (de bider bossen ned til 1 HP). Det er ikke testet mod menneskelige spillere og skal vurderes i balancekørslen.
+- Rettet efter review (ab6dd41):
+  - Før kunne allierede tage en boss helt ned på egen hånd (Benny var på 1 HP efter 31 s, mens spilleren stod stille). Nu angriber de kun en boss, spilleren selv kæmper mod, og de bider bosser med halv styrke.
+  - Bossers frontpanser og NPC-vagt gælder nu også for de allieredes bid.
+  - De bider aldrig hen over lava eller dybt vand.
+  - Allieredes HP kan ikke længere gå under 1.
+  - En allieret uden mål flygter ikke længere væk fra spilleren.
+- Antagelse: Allierede gør stadig kampe lidt lettere, og det er ikke testet med mennesker.
 
 ### Rettelser efter review (primal-code-reviewer på 063b2ed…e078a3a)
 

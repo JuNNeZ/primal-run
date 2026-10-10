@@ -1772,7 +1772,7 @@
     const r=this.run;let best=null,bestAt=r.seconds-6;
     for(const e of r.enemies)if(e.hp>1&&e.lastAttackedAt>bestAt&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<420){bestAt=e.lastAttackedAt;best=e;}
     if(best)return best;let near=null,nd=250;
-    for(const e of r.enemies)if(e.hp>1&&e.alert&&e.damage){const d=Math.hypot(e.x-r.player.x,e.y-r.player.y);if(d<nd){nd=d;near=e;}}
+    for(const e of r.enemies)if(e.hp>1&&e.alert&&e.damage&&!e.boss){ /* bosses only once you fight them yourself */const d=Math.hypot(e.x-r.player.x,e.y-r.player.y);if(d<nd){nd=d;near=e;}}
     return near;
   };
   Game.prototype.stepRaptors=function(dt){
@@ -1780,11 +1780,13 @@
     for(const a of r.raptors||[]){
       const x=a.x,y=a.y;a.cooldown=Math.max(0,a.cooldown-dt);
       if(!a.ally){const t=r.seconds*.3+a.homeX*.01;this.travel(a,(a.homeX+Math.cos(t)*60-a.x)*dt*.5,(a.homeY+Math.sin(t)*40-a.y)*dt*.5);} // wild: pace near its spot
-      else if(a.mode==='flee'){const t=target||r.player,dx=a.x-t.x,dy=a.y-t.y,d=Math.max(1,Math.hypot(dx,dy));this.travel(a,dx/d*PACK.speed*dt,dy/d*PACK.speed*dt);a.hp=Math.min(a.maxHP,a.hp+a.maxHP*PACK.regen*2*dt);if(a.hp>=a.maxHP*.7)a.mode='follow';}
+      else if(a.mode==='flee'){const t=target||r.enemies.find(e=>e.alert&&e.damage&&Math.hypot(e.x-a.x,e.y-a.y)<400)||{x:r.player.x+(a.x>r.player.x?-120:120),y:r.player.y},dx=a.x-t.x,dy=a.y-t.y,d=Math.max(1,Math.hypot(dx,dy));this.travel(a,dx/d*PACK.speed*dt,dy/d*PACK.speed*dt);a.hp=Math.min(a.maxHP,a.hp+a.maxHP*PACK.regen*2*dt);if(a.hp>=a.maxHP*.7)a.mode='follow';}
       else if(target&&a.hp>=a.maxHP*PACK.flee){a.mode='attack';const dx=target.x-a.x,dy=target.y-a.y,d=Math.max(1,Math.hypot(dx,dy)),reach=target.radius+a.radius+14;
-        if(d>reach)this.travel(a,dx/d*PACK.speed*dt,dy/d*PACK.speed*dt);
-        else if(a.cooldown===0){a.cooldown=PACK.cooldown;target.hp=Math.max(1,target.hp-PACK.damage*(1+r.stage*.25));target.hit=Math.max(target.hit||0,.12);a.bites=(a.bites||0)+1;
-          if(target.damage){a.hp-=target.damage*.3;if(a.hp<a.maxHP*PACK.flee){a.mode='flee';r.effects.push({x:a.x,y:a.y-26,text:'FLYGTER',color:'#bbd899',life:1});}}}
+        const across=!navLineClear(r.stage,r.map,true,a,target,0); // never bite across lava/deep water
+        if(d>reach||across)this.travel(a,dx/d*PACK.speed*dt,dy/d*PACK.speed*dt);
+        else if(a.cooldown===0){a.cooldown=PACK.cooldown;const frontal=((a.x-target.x)*target.facingX+(a.y-target.y)*target.facingY)/d>.6,armor=['triceratops','ankylosaurus'].includes(target.kind)&&frontal?.5:1,guard=target.npcGuardUntil>r.seconds?.25:1;
+          target.hp=Math.max(1,target.hp-PACK.damage*(1+r.stage*.25)*armor*guard*(target.boss?.5:1)); /* same armour as your bite; half vs bosses */target.hit=Math.max(target.hit||0,.12);a.bites=(a.bites||0)+1;
+          if(target.damage){a.hp=Math.max(1,a.hp-target.damage*(target.boss?.5:.3));if(a.hp<a.maxHP*PACK.flee){a.mode='flee';r.effects.push({x:a.x,y:a.y-26,text:'FLYGTER',color:'#bbd899',life:1});}}}
         a.facingX=dx/d;a.facingY=dy/d;}
       else{a.mode=a.hp<a.maxHP*PACK.flee?'flee':'follow';const sx=r.player.x-(r.player.facing==='E'?60:r.player.facing==='W'?-60:0)+(a.slot?-30:30),sy=r.player.y-(r.player.facing==='S'?60:r.player.facing==='N'?-60:0)+20,dx=sx-a.x,dy=sy-a.y,d=Math.hypot(dx,dy);
         if(d>18){const v=Math.min(PACK.speed*(d>200?1.4:1),d/dt);this.travel(a,dx/d*v*dt,dy/d*v*dt);a.facingX=dx/d;a.facingY=dy/d;}a.hp=Math.min(a.maxHP,a.hp+a.maxHP*PACK.regen*dt);}

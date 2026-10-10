@@ -56,3 +56,12 @@ test('flag off: no raptors; the bot can recruit when meat lies next to a raptor'
   try { const o = runOne(C, { species: 'velociraptor', style: 'explorer', seed: 5, seconds: 20, dt: DT }); assert.equal(o.allies, 1, 'explorer bot fed the raptor'); }
   finally { C.Game.prototype.start = core; }
 });
+
+test('review fixes: allies leave bosses alone until you fight them, bite bosses at half strength, never across lava', () => {
+  const { g, r } = field(); recruit(g, r.raptors[0]); recruit(g, r.raptors[1]);
+  const boss = g.spawn('carnotaurus', { x: r.player.x + 150, y: r.player.y }, true); Object.assign(boss, { speed: 0, alert: true, lastAttackedAt: -1000, cooldown: 1e9 });
+  const hp = boss.hp; for (let i = 0; i < 10 * 30; i++) { boss.cooldown = 1e9; boss.mode = 'chase'; g.step(DT, {}); }
+  assert.equal(boss.hp, hp, 'an unprovoked boss is not attacked');
+  boss.lastAttackedAt = r.seconds; for (let i = 0; i < 4 * 30; i++) { boss.lastAttackedAt = r.seconds; boss.cooldown = 1e9; g.step(DT, {}); }
+  assert.ok(boss.hp < hp && boss.hp > 1, 'once you fight it they help, slowly'); assert.ok(r.raptors.every(a => a.hp >= 1));
+});
