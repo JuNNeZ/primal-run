@@ -1,0 +1,422 @@
+[
+  {
+    "species": "baryonyx",
+    "action": "rest",
+    "direction": "E",
+    "col": 0,
+    "width_ratio": 1.049,
+    "height_ratio": 1.043,
+    "area_ratio": 1.091,
+    "bbox_source_sample": [
+      32,
+      38,
+      161,
+      86
+    ]
+  },
+  {
+    "species": "baryonyx",
+    "action": "rest",
+    "direction": "E",
+    "col": 1,
+    "width_ratio": 1.049,
+    "height_ratio": 1.043,
+    "area_ratio": 1.098,
+    "bbox_source_sample": [
+      32,
+      38,
+      161,
+      86
+    ]
+  },
+  {
+    "species": "baryonyx",
+    "action": "rest",
+    "direction": "E",
+    "col": 2,
+    "width_ratio": 1.049,
+    "height_ratio": 1.022,
+    "area_ratio": 1.092,
+    "bbox_source_sample": [
+      32,
+      38,
+      161,
+      85
+    ]
+  },
+  {
+    "species": "baryonyx",
+    "action": "rest",
+    "direction": "E",
+    "col": 3,
+    "width_ratio": 1.057,
+    "height_ratio": 1.065,
+    "area_ratio": 1.111,
+    "bbox_source_sample": [
+      31,
+      37,
+      161,
+      86
+    ]
+  },
+  {
+    "species": "baryonyx",
+    "action": "rest",
+    "direction": "W",
+    "col": 0,
+    "width_ratio": 1.134,
+    "height_ratio": 1.244,
+    "area_ratio": 1.337,
+    "bbox_source_sample": [
+      29,
+      41,
+      164,
+      92
+    ]
+  },
+  {
+    "species": "baryonyx",
+    "action": "rest",
+    "direction": "W",
+    "col": 1,
+    "width_ratio": 1.134,
+    "height_ratio": 1.244,
+    "area_ratio": 1.349,
+    "bbox_source_sample": [
+      29,
+      41,
+      164,
+      92
+    ]
+  },
+  {
+    "species": "baryonyx",
+    "action": "rest",
+    "direction": "W",
+    "col": 2,
+    "width_ratio": 1.143,
+    "height_ratio": 1.22,
+    "area_ratio": 1.318,
+    "bbox_source_sample": [
+      29,
+      41,
+      165,
+      91
+    ]
+  },
+  {
+    "species": "baryonyx",
+    "action": "rest",
+    "direction": "W",
+    "col": 3,
+    "width_ratio": 1.143,
+    "height_ratio": 1.244,
+    "area_ratio": 1.352,
+    "bbox_source_sample": [
+      29,
+      41,
+      165,
+      92
+    ]
+  },
+  {
+    "species": "carnotaurus",
+    "action": "rest",
+    "direction": "E",
+    "col": 0,
+    "width_ratio": 1.009,
+    "height_ratio": 1.042,
+    "area_ratio": 1.054,
+    "bbox_source_sample": [
+      40,
+      42,
+      158,
+      92
+    ]
+  },
+  {
+    "species": "carnotaurus",
+    "action": "rest",
+    "direction": "E",
+    "col": 1,
+    "width_ratio": 1.009,
+    "height_ratio": 1.042,
+    "area_ratio": 1.057,
+    "bbox_source_sample": [
+      40,
+      42,
+      158,
+      92
+    ]
+  },
+  {
+    "species": "carnotaurus",
+    "action": "rest",
+    "direction": "E",
+    "col": 2,
+    "width_ratio": 1.017,
+    "height_ratio": 1.042,
+    "area_ratio": 1.088,
+    "bbox_source_sample": [
+      40,
+      43,
+      159,
+      93
+    ]
+  },
+  {
+    "species": "carnotaurus",
+    "action": "rest",
+    "direction": "E",
+    "col": 3,
+    "width_ratio": 1.017,
+    "height_ratio": 1.042,
+    "area_ratio": 1.089,
+    "bbox_source_sample": [
+      40,
+      43,
+      159,
+      93
+    ]
+  },
+  {
+    "species": "carnotaurus",
+    "action": "rest",
+    "direction": "W",
+    "col": 0,
+    "width_ratio": 1.017,
+    "height_ratio": 1.064,
+    "area_ratio": 1.026,
+    "bbox_source_sample": [
+      40,
+      39,
+      158,
+      89
+    ]
+  },
+  {
+    "species": "carnotaurus",
+    "action": "rest",
+    "direction": "W",
+    "col": 1,
+    "width_ratio": 1.017,
+    "height_ratio": 1.064,
+    "area_ratio": 1.026,
+    "bbox_source_sample": [
+      40,
+      39,
+      158,
+      89
+    ]
+  },
+  {
+    "species": "carnotaurus",
+    "action": "rest",
+    "direction": "W",
+    "col": 2,
+    "width_ratio": 1.026,
+    "height_ratio": 1.106,
+    "area_ratio": 1.049,
+    "bbox_source_sample": [
+      40,
+      39,
+      159,
+      91
+    ]
+  },
+  {
+    "species": "carnotaurus",
+    "action": "rest",
+    "direction": "W",
+    "col": 3,
+    "width_ratio": 1.017,
+    "height_ratio": 1.106,
+    "area_ratio": 1.055,
+    "bbox_source_sample": [
+      40,
+      39,
+      158,
+      91
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "S",
+    "col": 0,
+    "width_ratio": 1.186,
+    "height_ratio": 1.096,
+    "area_ratio": 1.172,
+    "bbox_source_sample": [
+      83,
+      16,
+      134,
+      119
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "S",
+    "col": 1,
+    "width_ratio": 1.186,
+    "height_ratio": 1.074,
+    "area_ratio": 1.156,
+    "bbox_source_sample": [
+      83,
+      16,
+      134,
+      117
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "S",
+    "col": 2,
+    "width_ratio": 1.186,
+    "height_ratio": 1.096,
+    "area_ratio": 1.175,
+    "bbox_source_sample": [
+      67,
+      16,
+      118,
+      119
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "S",
+    "col": 3,
+    "width_ratio": 1.186,
+    "height_ratio": 1.096,
+    "area_ratio": 1.177,
+    "bbox_source_sample": [
+      67,
+      16,
+      118,
+      119
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "E",
+    "col": 0,
+    "width_ratio": 1.127,
+    "height_ratio": 1.75,
+    "area_ratio": 1.198,
+    "bbox_source_sample": [
+      29,
+      0,
+      171,
+      112
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "E",
+    "col": 1,
+    "width_ratio": 1.135,
+    "height_ratio": 1.75,
+    "area_ratio": 1.211,
+    "bbox_source_sample": [
+      29,
+      0,
+      172,
+      112
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "E",
+    "col": 2,
+    "width_ratio": 1.119,
+    "height_ratio": 1.75,
+    "area_ratio": 1.201,
+    "bbox_source_sample": [
+      28,
+      0,
+      169,
+      112
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "E",
+    "col": 3,
+    "width_ratio": 1.119,
+    "height_ratio": 1.75,
+    "area_ratio": 1.226,
+    "bbox_source_sample": [
+      24,
+      0,
+      165,
+      112
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "W",
+    "col": 0,
+    "width_ratio": 1.151,
+    "height_ratio": 1.086,
+    "area_ratio": 1.199,
+    "bbox_source_sample": [
+      34,
+      24,
+      171,
+      100
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "W",
+    "col": 1,
+    "width_ratio": 1.202,
+    "height_ratio": 1.086,
+    "area_ratio": 1.249,
+    "bbox_source_sample": [
+      29,
+      24,
+      172,
+      100
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "W",
+    "col": 2,
+    "width_ratio": 1.185,
+    "height_ratio": 1.086,
+    "area_ratio": 1.233,
+    "bbox_source_sample": [
+      30,
+      24,
+      171,
+      100
+    ]
+  },
+  {
+    "species": "tyrannosaurus",
+    "action": "feed",
+    "direction": "W",
+    "col": 3,
+    "width_ratio": 1.218,
+    "height_ratio": 1.086,
+    "area_ratio": 1.266,
+    "bbox_source_sample": [
+      26,
+      24,
+      171,
+      100
+    ]
+  }
+]

@@ -14,7 +14,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
     g.phase='menu';g.save.unlockedSpecies=Object.keys(PrimalCore.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:123});g.pause();const r=g.run;r.enemies=[];r.pickups=[];r.corpses=[];
     for(const direction of ['S','N','E','W'])for(const running of [false,true])for(const hp of [100,29]){
      r.maxHealth=100;r.health=hp;r.player.facing=direction;r.player.moving=true;r.player.gaitPhase=.7;r.pounce=running?.4:0;r.hurt=0;r.attack=null;r.deathTime=-1;
-     calls.length=0;primalRun.update(performance.now());const state=running?'run':'walk',frame=hp===29?3:4,name=PrimalCore.playerFrame(species,state,direction,frame);
+     calls.length=0;primalRun.update(performance.now());const state=running?'run':'walk',frame=hp===29?3:4,name=hp===29&&PrimalAssets[`assets/behavior_injured/${species}_limp_${direction}_${String(frame).padStart(3,'0')}.png`]?`assets/behavior_injured/${species}_limp_${direction}_${String(frame).padStart(3,'0')}.png`:PrimalCore.playerFrame(species,state,direction,frame);
      if(canvas.dataset.playerSprite!==name||!calls.some(c=>c.file===name.split('/').pop()))throw Error('Wrong low-health gait '+name);players++;
     }
    }
@@ -23,7 +23,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
     r.enemies=[];const e=g.spawn(species,{x:r.player.x+100,y:r.player.y});
     for(const direction of ['S','N','E','W'])for(const running of [false,true]){
      e.hp=e.maxHP*.29;e.direction=direction;e.gaitPhase=.7;e.hit=0;e.moving=true;e.mode=running?'flee':'chase';e.sex='female';
-     calls.length=0;primalRun.update(performance.now());const family=['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx'].includes(species)?'player_full':'enemy_full',name=`${species}_${running?'run':'walk'}_${direction}_003.png`;
+     calls.length=0;primalRun.update(performance.now());const family=['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx'].includes(species)?'player_full':'enemy_full',name=PrimalAssets[`assets/behavior_injured/${species}_limp_${direction}_003.png`]?`${species}_limp_${direction}_003.png`:`${species}_${running?'run':'walk'}_${direction}_003.png`;
      if(!calls.some(c=>c.file===name))throw Error('NPC gait not drawn '+family+'/'+name);npcs++;
     }
    }
@@ -45,6 +45,6 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
  assert.equal(result.players,192);assert.equal(result.npcs,80);assert.equal(result.tailFrames,24);assert.deepEqual(errors,[]);
  const out=path.resolve(__dirname,'../PRIMAL_RUN_Game/previews/part_a');fs.mkdirSync(out,{recursive:true});await page.screenshot({path:path.join(out,'ankylosaurus-reused-runtime.png')});
  await page.setViewportSize({width:390,height:844});await page.screenshot({path:path.join(out,'ankylosaurus-mobile.png')});
- await page.setViewportSize({width:1280,height:1000});await page.goto(await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/part_a_review.html')));await page.waitForFunction(()=>document.querySelectorAll('#frames img').length===6&&[...document.querySelectorAll('#frames img')].every(i=>i.complete&&i.naturalWidth));await page.locator('#pause').click();await page.screenshot({path:path.join(out,'ankylosaurus-body-comparison.png')});await page.locator('#species').selectOption('parasaurolophus');await page.waitForFunction(()=>document.querySelector('#frames img')?.src.includes('parasaurolophus'));assert.match(await page.locator('#status').innerText(),/Kun review/);assert.deepEqual(errors,[]);
+ await page.setViewportSize({width:1280,height:1000});await page.goto(await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/part_a_review.html')));await page.waitForFunction(()=>document.querySelectorAll('#frames img').length===6&&[...document.querySelectorAll('#frames img')].every(i=>i.complete&&i.naturalWidth));await page.locator('#pause').click();await page.screenshot({path:path.join(out,'ankylosaurus-body-comparison.png')});await page.locator('#species').selectOption('parasaurolophus');await page.waitForFunction(()=>document.querySelector('#frames img')?.src.includes('parasaurolophus'));assert.match(await page.locator('#status').innerText(),/Eksisterende kildeframes/ );assert.deepEqual(errors,[]);
  fs.writeFileSync(path.resolve(out,'../../part_a_runtime_report.json'),JSON.stringify({status:'PASS',runtime:'standalone Chromium',...result,checks:['192 player health/direction/gait cases','80 low-health NPC walk/run cases','24 byte-reused tail swings render on player and NPC','attack hurt flash exists','pause freezes phase','390px mobile screenshot'],production_approved:false},null,2)+'\n');console.log('PASS part A: reused tail swings, low-health gait, hit flash, pause');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

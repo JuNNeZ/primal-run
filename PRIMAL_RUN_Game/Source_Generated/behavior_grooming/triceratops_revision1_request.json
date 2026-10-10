@@ -1,0 +1,30 @@
+{
+  "prompt": "Edit this exact triceratops atlas minimally into a quiet SCRATCH/GROOM pair. One forefoot lifts to rub its lower neck/chest; other3 feet planted. Exactly4legs. Two brow horns plus one short nasal horn and frill unchanged. Column0 foot raised toward its own body, column1 foot rubbing same spot a few pixels away. Closed mouth, calm head/neck tilts slightly, never a bite/attack. Keep torso, tail, markings, camera and all body pixels as faithful as possible to source; body volume cannot grow or shrink. Output exactly1536x1024 transparent same TWO columns768wide FOUR rows256high S,N,E,W. Fixed hip local384,128. Keep existing TWO TIMES native animal size and original blank space; never fill cells. Use small readable pixel movement only, preserve colour placement. No labels/shadows/ground. One tail, original limb count. 1990s overhead oblique pixel art. No scaling or recentering of animal.",
+  "source": "triceratops_revision1.png",
+  "references": [
+    "triceratops_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration.",
+  "source_sha256": "5aabe56d95f43b14317772c597b417ff4b14ac24988063878b4cca06735ff444",
+  "canonical_references": [
+    {
+      "file": "assets/enemy_full/triceratops_idle_S_000.png",
+      "sha256": "4580176f5fa4c15278f1f1fe201a7dabfc3703b8a79ee9d754167b0b691d79cb"
+    },
+    {
+      "file": "assets/enemy_full/triceratops_idle_N_000.png",
+      "sha256": "5a0090591ff060727492549873679e5278b661ae7141ad8644e2a8ef9b8b7a75"
+    },
+    {
+      "file": "assets/enemy_full/triceratops_idle_E_000.png",
+      "sha256": "b6e1ba17a86a402b90772fc54d589259ddd4cf7a947a14a21739d31f1eb5f505"
+    },
+    {
+      "file": "assets/enemy_full/triceratops_idle_W_000.png",
+      "sha256": "4526b78761915fbf627942b421ea192481c91665da50aaabe0d823865e979287"
+    }
+  ]
+}

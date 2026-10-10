@@ -1,0 +1,30 @@
+{
+  "prompt": "Edit this exact tyrannosaurus atlas minimally into a quiet SCRATCH/GROOM pair. One hindfoot gently scratches its own flank, then rubs a fewpixels. Two tiny arms unchanged, massive head and torso stay same size in NORTH. Column0 limb lifted to its own body, column1 same limb gently rubbing slightly changed position. Head gently tilts toward own shoulder, closed mouth, calm, never bite/attack. Keep entire body silhouette, markings, scales, colour placement and camera pixel-faithful to source; no enlargement or shrinkage. Output exactly1536x1024 transparent same TWO columns768wide FOUR rows256high S,N,E,W. Fixed hip local384,128. Keep existing TWO TIMES native animal size and exact blank space; NEVER fill cells. Only small readable limb/neck movement. No labels/shadows/ground. One tail, original limb count. Crisp square 1990s overhead oblique pixel art. No recentering of animal.",
+  "source": "tyrannosaurus_revision1.png",
+  "references": [
+    "tyrannosaurus_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration.",
+  "source_sha256": "c4d98cb9c16427c730608734d95ae88ee181bfe139ccdf9c9b7574d7869c5c45",
+  "canonical_references": [
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_S_000.png",
+      "sha256": "2cad87251d9d847860a4389209f15f532d3eaac67c9273de6e6d796e068b3525"
+    },
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_N_000.png",
+      "sha256": "813868e83b0ec6cd32b0d75925d76c53389961d0569c22fd5d771612b3c01d51"
+    },
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_E_000.png",
+      "sha256": "243e120135282bccb7f4b9e7bc1e0930947cfd9714e8eb8a5223eb9782b1946b"
+    },
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
+      "sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77"
+    }
+  ]
+}

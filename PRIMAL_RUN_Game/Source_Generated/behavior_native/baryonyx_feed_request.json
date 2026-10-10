@@ -1,0 +1,60 @@
+{
+  "species": "baryonyx",
+  "family": "behavior_native",
+  "action": "feed",
+  "source": "baryonyx_feed_revision1.png",
+  "source_sha256": "10b8eb93597f09226bd6e96208f8cc6bdb6b4435103e33006d668552ba786182",
+  "reference": "baryonyx_canonical_layout.png",
+  "reference_sha256": "b815ce4cbccf58d490ffe810fde1b81c4b2b5a33b3cc6288d760b3485f6b421d",
+  "prompt": "Edit attached canonical pixel sprite layout with MINIMAL motion only. Preserve EXACT whole body footprints, size, markings, colours, perspective and fixed hip positions. Transparent1536x1024 atlas,4columns384wide,4rows256high. Rows S,N,E,W in that order. Every cell hip192,128, original whole sprite144x144 enlarged exactly2x located48,-16. DO NOT fill cells or enlarge animal. Long narrow jaw, two hind legs, clawed forearms, exactly ONE tail in all directions, especially North. Columns0,1 sniff ground with closed mouth, head tipped minimally; columns2,3 drink with head lowered a few pixels. No water props, no meat props. Paired frames differ only a few pixels, torso unchanged. Keep reference crisp coarse2x pixels, no smooth rendered art, no labels, no shadows beyond sprite, no extra limbs. Prototype consistency study.",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "cell_size": [
+    384,
+    256
+  ],
+  "rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "source_hip": [
+    192,
+    128
+  ],
+  "sampling": 2,
+  "native_canvas": [
+    144,
+    144
+  ],
+  "native_origin": [
+    72,
+    72
+  ],
+  "concerns": [
+    "Minimal pose study, not anatomy approved",
+    "Halo requires hard alpha export",
+    "No bbox recentering allowed"
+  ],
+  "canonical_references": [
+    {
+      "file": "assets/player_full/baryonyx_idle_S_000.png",
+      "sha256": "19a0fceef49d4d1323b8ba1c01639b3dbf78fc6a652b4cfd9953c9661a6cb790"
+    },
+    {
+      "file": "assets/player_full/baryonyx_idle_N_000.png",
+      "sha256": "f3e571b0c18a504bac1cfd49f26680ed2e0f39cdc2b0ed1a8bef1471ba888a00"
+    },
+    {
+      "file": "assets/player_full/baryonyx_idle_E_000.png",
+      "sha256": "6a4da4518178b771d312e1a114e5ff20aeda2b2f70e99258bbf2d2cf601e40f9"
+    },
+    {
+      "file": "assets/player_full/baryonyx_idle_W_000.png",
+      "sha256": "b85ec0234339136c8bde16cacd9ef70e1ab6b77f5961633b107b41317f0c8146"
+    }
+  ],
+  "canonical_layout_sha256": "b815ce4cbccf58d490ffe810fde1b81c4b2b5a33b3cc6288d760b3485f6b421d"
+}

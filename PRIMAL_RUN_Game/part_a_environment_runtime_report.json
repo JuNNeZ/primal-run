@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "ecology": 288,
+  "ecologyDrawn": 276,
+  "ecologyFallback": 12,
+  "corpses": 32,
+  "ford": true,
+  "cacheInvalidation": true,
+  "pause": true,
+  "rollback": true,
+  "injuryRollback": true,
+  "reviewPages": {
+    "legacyDraft": true,
+    "injuredNative": true,
+    "behaviorNative": true,
+    "controls": true,
+    "pause": true
+  },
+  "checks": [
+    "288 ecology cases draw eligible authored poses or original fallbacks; rejected candidates remain hidden",
+    "32 raptor decay/skeleton props",
+    "native shore/deep-water tiles render",
+    "fords match movement and geometry changes refresh cache",
+    "ecology/injury/water rollback and full pause freeze",
+    "legacy draft plus native injury/behavior review pages draw pixels, change controls and freeze while paused"
+  ],
+  "production_approved": false
+}

@@ -1,0 +1,65 @@
+{
+  "species": "tyrannosaurus",
+  "family": "behavior_native",
+  "action": "feed",
+  "source": "tyrannosaurus_feed_revision2.png",
+  "source_sha256": "04a3bb82097bf881dd856e7645b448291e1eeeae85a40ff5627cff980ef7cda9",
+  "reference": "tyrannosaurus_canonical_layout.png",
+  "reference_sha256": "a533503af52e56de5f8debbd00a32909795a3430b4d6df8d3e78ccace9328032",
+  "prompt": "Use reference1 canonical layout as PIXELSIZE/SILHOUETTE MASTER. Reference2 is rejected behaviorstudy ONLY illustrating actions; it is too thick and must notdeterminebody size. Output transparent1536x1024,4columns384\u00d74rows256 S,N,E,W fixedhip192,128 ineachcell. Fullcanonicalnative144\u00d7144spriteat2x placed48,-16. Correct ONLY South row0: rejectedskull/torso width inflated30%. Restore exact skinny original South footprint. Headmaylower2sourcepixelsONLY, no torsochange. Copy unchangedbodypixeloutline fromreference1 with EXACTSAMEscale,bodyvolume,colourmarks,tailwidthandlength,feetspan. No recentering. Columns0/1 sniff and2/3drink: ONLY headtipchanges2sourcepixels, bodyandlimbsfixed. Remainingdirections keep reference2 poses but exactreference1scale. Original harshpixelart2xclusters, no gradient,no drop shadow,no addeddetail. Exactoldbodyfaithful,veryminimalmotion.",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "cell_size": [
+    384,
+    256
+  ],
+  "rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "source_hip": [
+    192,
+    128
+  ],
+  "sampling": 2,
+  "native_canvas": [
+    144,
+    144
+  ],
+  "native_origin": [
+    72,
+    72
+  ],
+  "concerns": [
+    "Minimal pose study, not anatomy approved",
+    "Halo requires hard alpha export",
+    "No bbox recentering allowed"
+  ],
+  "canonical_references": [
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_S_000.png",
+      "sha256": "2cad87251d9d847860a4389209f15f532d3eaac67c9273de6e6d796e068b3525"
+    },
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_N_000.png",
+      "sha256": "813868e83b0ec6cd32b0d75925d76c53389961d0569c22fd5d771612b3c01d51"
+    },
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_E_000.png",
+      "sha256": "243e120135282bccb7f4b9e7bc1e0930947cfd9714e8eb8a5223eb9782b1946b"
+    },
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
+      "sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77"
+    }
+  ],
+  "canonical_layout_sha256": "a533503af52e56de5f8debbd00a32909795a3430b4d6df8d3e78ccace9328032",
+  "rejected_reference": "tyrannosaurus_feed_revision1.png",
+  "rejected_reference_sha256": "45384e8976d8839ce4c5eb7fd7038172928670dce011c4a7eb088c7aa58625e2",
+  "revision": 2,
+  "correction": "canonical body silhouette; no export rescaling",
+  "review_status": "awaiting native ratio comparison"
+}

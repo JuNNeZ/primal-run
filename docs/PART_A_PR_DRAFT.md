@@ -1,11 +1,30 @@
-# Del A: genbrug af Ankylosaurus og sammenhængende animationsrytme
+# Del A: sammenhængende artsangreb, dyreadfærd og vandgrafik
 
-Ankylosaurus’ nye halesving ændrede kropsbredde, rygplader og haleproportioner. De 24 eksisterende native player_full-angrebsframes genbruges nu byte-identisk på spiller og NPC, med oprindelige kilder, anchors og SHA-256 i manifestet. Afviste kilder er bevaret. Angrebstiming og gameplay-stats er uændrede.
+Spilleren og NPC’er får artsrigtige angreb og tydeligere naturlige/sårede poses,
+mens vandet bruger overgangstiles frem for brede linjestreger. Ankylosaurus’
+24 gamle halesving genbruges byte-identisk; Parasaurolophus’ 24 revision2-spark
+aktiveres uden at erstatte de oprindelige levende assets.
 
-Under 30%HP bruger alle arter en asymmetrisk gang-/løberytme med de eksisterende poses. Skåneben-tegninger er stadig åbne. Artsangreb får nu også den manglende hit-flash. Parasaurolophus-kick revision2 er et native review-udkast, ikke et aktivt runtime-overlag.
+Pakken tilføjer 288 ecology-frames for ni arter, 312 injured-walk-frames for
+13 arter, 48 vandtiles og 32 Velociraptor-/Utahraptor-ådsler/skeletter.
+Injury indeholder 88 tegnede keyposes og 224 native frames, heraf 16 eksplicitte
+fallbacks for afviste poses. Ecology-grooming har senest 276 aktive tegnede poses/12
+native fallbacks. Alle gamle 160 corpse-poses er uændrede.
+632 tidligere behavior-studieframes er runtime-deaktiveret. Kilder, forkastede
+forsøg, anchors, hashes og native previews er bevaret i repositoryet.
 
-Validation: 138 unit tests, 21 browser suites, 3 kit checks; sprite validators PASS. Actual desktop/mobile rendering, all24 reused player/NPC tail swings,192 player health/direction/gait cases,80 low-health NPC cases and pause freeze verified. GDevelop engine not rerun. Existing balance data remains preserved; this package changes presentation only and claims no new balance conclusions.
+Validation: slutpakken består 141 unit-tests, 22 browser-suiter og tre kit-kontroller.
+Log og samlet rapport: docs/validation/part-a-final-test.log og
+PART_A_FINAL_VERIFICATION.json. De 312 injury-PNG’er består palette/alpha/kildegenudtræk og
+byte-identisk genbrug; vandets rettede hjørner består deres tekniske gate.
+Dette erstatter ikke anatomi-review eller faktisk GDJS-validering; den aktuelle
+GDevelop-eksport er ikke kørt. Alle assets forbliver unapproved prototypes.
+Ingen nye balancekonklusioner udledes af præsentationsændringerne.
 
-Screenshots: PRIMAL_RUN_Game/previews/part_a/ankylosaurus-reused-runtime.png, ankylosaurus-mobile.png, ankylosaurus-body-comparison.png. Interactive comparison: PRIMAL_RUN_Game/part_a_review.html. CI-results target: ci-results/codex/sprites-and-mechanics (link only once the matching commit results exist).
+Review: `part_a_review.html`, `native_behavior_review.html`, `injured_walk_review.html` samt de native
+light/dark-grids under `PRIMAL_RUN_Game/previews/`. A6 er valgfri og fortsat åben.
 
-Draft scope: A2, anatomical A3, A4, A5 and final Paras/cross-state consistency remain open. No gh-pages changes. Target branch: claude/overhaul. PR creation is pending GitHub API network activation/auth verification, documented in docs/GITHUB_API_ACCESS.md.
+Sourcebranch: `codex/sprites-and-mechanics`. PR-base: `claude/overhaul`.
+Ingen gh-pages-publicering. PR-oprettelse afventer GitHub API-netværksadgang;
+se `docs/GITHUB_API_ACCESS.md`. CI-link tilføjes først til den relevante commits
+faktiske resultater.

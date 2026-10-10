@@ -1,0 +1,28 @@
+{
+  "source": "PRIMAL_RUN_Game/assets/enemy_full/tyrannosaurus_idle_S_000.png",
+  "sha256": "2cad87251d9d847860a4389209f15f532d3eaac67c9273de6e6d796e068b3525",
+  "direction": "S",
+  "native_bbox": [
+    61,
+    24,
+    104,
+    118
+  ],
+  "layout": [
+    1536,
+    1024
+  ],
+  "cell": [
+    384,
+    256
+  ],
+  "hip": [
+    192,
+    128
+  ],
+  "scale": 2,
+  "placement": [
+    48,
+    -16
+  ]
+}

@@ -4288,7 +4288,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_S_001.png",
@@ -4331,7 +4331,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_S_002.png",
@@ -4374,7 +4374,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_S_003.png",
@@ -4417,7 +4417,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_S_004.png",
@@ -4460,7 +4460,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_S_005.png",
@@ -4503,7 +4503,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_N_000.png",
@@ -4546,7 +4546,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_N_001.png",
@@ -4589,7 +4589,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_N_002.png",
@@ -4632,7 +4632,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_N_003.png",
@@ -4675,7 +4675,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_N_004.png",
@@ -4718,7 +4718,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_N_005.png",
@@ -4761,7 +4761,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_E_000.png",
@@ -4804,7 +4804,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_E_001.png",
@@ -4847,7 +4847,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_E_002.png",
@@ -4890,7 +4890,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_E_003.png",
@@ -4933,7 +4933,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_E_004.png",
@@ -4976,7 +4976,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_E_005.png",
@@ -5019,7 +5019,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_W_000.png",
@@ -5062,7 +5062,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_W_001.png",
@@ -5112,7 +5112,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_W_002.png",
@@ -5155,7 +5155,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_W_003.png",
@@ -5198,7 +5198,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_W_004.png",
@@ -5248,7 +5248,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   },
   {
     "file": "assets/species_attacks/parasaurolophus_attack_W_005.png",
@@ -5291,6 +5291,6 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "runtime_enabled": false
+    "runtime_enabled": true
   }
 ]

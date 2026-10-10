@@ -1,0 +1,495 @@
+{
+  "species": "gallimimus",
+  "source": "Source_Generated/behavior_limp/gallimimus_revision2.png",
+  "canonical_reference": "Source_Generated/behavior_limp/gallimimus_canonical_walk23_reference.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "cell_dimensions": [
+    384,
+    256
+  ],
+  "direction_rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "authored_keypose_columns": {
+    "2": 2,
+    "3": 3
+  },
+  "source_hip_anchor": [
+    192,
+    128
+  ],
+  "sampling_stride": 2,
+  "sampling_offset": 1,
+  "alpha_threshold": 192,
+  "origin": [
+    72,
+    72
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_enabled": false,
+  "review": "Reviewed prototype keyposes; Pachy/Para/Galli eight candidates each, Carno seven candidates and rejected North2 native fallback. Named pelvis/tail-root anchors correct source displacement; no bbox recentering or resizing. User anatomy approval and complete animation loop review remain separate.",
+  "poses": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/gallimimus_limp_S_002.png",
+      "species": "gallimimus",
+      "state": "limp",
+      "direction": "S",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/gallimimus_walk_S_002.png",
+      "canonical_sha256": "e0d59a448a23bf00e5594dcd8e58c301d92a70bde651dd55b1fc8da54c1a7e10",
+      "source": "Source_Generated/behavior_limp/gallimimus_revision2.png",
+      "source_sha256": "82a0e8e11fa02f6e47d41c04e10a1ae656b62e80fe75c8ff2bd69079761ccb17",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        184,
+        128
+      ],
+      "registration_offset": [
+        -20,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "e0ae1f365467974b1b21895fb4becdae434ae5cba57350659e2afe9208af9903",
+      "changed_pixels": 1200,
+      "silhouette_iou": 0.8919,
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/gallimimus_limp_S_003.png",
+      "species": "gallimimus",
+      "state": "limp",
+      "direction": "S",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/gallimimus_walk_S_003.png",
+      "canonical_sha256": "f8c2d04dac02584cc69b43bf9d0edde04c1e8d7440d158c9826c1cb028467bda",
+      "source": "Source_Generated/behavior_limp/gallimimus_revision2.png",
+      "source_sha256": "82a0e8e11fa02f6e47d41c04e10a1ae656b62e80fe75c8ff2bd69079761ccb17",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        222,
+        128
+      ],
+      "registration_offset": [
+        -39,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "b9014b379f957a14f800e2812d09ae7f9815d7883d7b09b1066ee20692f1353c",
+      "changed_pixels": 1056,
+      "silhouette_iou": 0.9603,
+      "extent_ratios": [
+        1.0286,
+        0.9794
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/gallimimus_limp_N_002.png",
+      "species": "gallimimus",
+      "state": "limp",
+      "direction": "N",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/gallimimus_walk_N_002.png",
+      "canonical_sha256": "99e4dbcf39452a44b8b16f363d81f5bdeddfbe40123ab29ac1f4c3235d3fb3d5",
+      "source": "Source_Generated/behavior_limp/gallimimus_revision2.png",
+      "source_sha256": "82a0e8e11fa02f6e47d41c04e10a1ae656b62e80fe75c8ff2bd69079761ccb17",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        188,
+        128
+      ],
+      "registration_offset": [
+        -22,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "524981d3fb43e283c5f6cb6f552d60cc16b0ddfc163d00f7a2cebb3e4b8457f2",
+      "changed_pixels": 1214,
+      "silhouette_iou": 0.9047,
+      "extent_ratios": [
+        1.0263,
+        0.9894
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/gallimimus_limp_N_003.png",
+      "species": "gallimimus",
+      "state": "limp",
+      "direction": "N",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/gallimimus_walk_N_003.png",
+      "canonical_sha256": "b7c9c119b4419bcc9f58506b274b40648241ebffd604842eda5bd2a65fd3b4fc",
+      "source": "Source_Generated/behavior_limp/gallimimus_revision2.png",
+      "source_sha256": "82a0e8e11fa02f6e47d41c04e10a1ae656b62e80fe75c8ff2bd69079761ccb17",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        222,
+        128
+      ],
+      "registration_offset": [
+        -39,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "fb2c122211daad5081f4b87225f1b372389ead9ff8293348c00cd1498e8f7f3f",
+      "changed_pixels": 1101,
+      "silhouette_iou": 0.9276,
+      "extent_ratios": [
+        1.0541,
+        0.9892
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/gallimimus_limp_E_002.png",
+      "species": "gallimimus",
+      "state": "limp",
+      "direction": "E",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/gallimimus_walk_E_002.png",
+      "canonical_sha256": "d7aaf7446db7badd87a218b1cd7616527f81c7811db7230d49fe3bb8cc25a82d",
+      "source": "Source_Generated/behavior_limp/gallimimus_revision2.png",
+      "source_sha256": "82a0e8e11fa02f6e47d41c04e10a1ae656b62e80fe75c8ff2bd69079761ccb17",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "f81a92d2fd00a2cd9d8a98e381e5345cc17b72b5c196cc2e2bfedc278a8f0135",
+      "changed_pixels": 1502,
+      "silhouette_iou": 0.9113,
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/gallimimus_limp_E_003.png",
+      "species": "gallimimus",
+      "state": "limp",
+      "direction": "E",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/gallimimus_walk_E_003.png",
+      "canonical_sha256": "519951f3d28b31b547824768f662b7012618217add860bae72a5c4000baad98d",
+      "source": "Source_Generated/behavior_limp/gallimimus_revision2.png",
+      "source_sha256": "82a0e8e11fa02f6e47d41c04e10a1ae656b62e80fe75c8ff2bd69079761ccb17",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "dddff75fc3d6d1374f11c6dd3a9bd50bbadeba12217bda1674845972e6ea1858",
+      "changed_pixels": 1729,
+      "silhouette_iou": 0.876,
+      "extent_ratios": [
+        1.0085,
+        1.0426
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/gallimimus_limp_W_002.png",
+      "species": "gallimimus",
+      "state": "limp",
+      "direction": "W",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/gallimimus_walk_W_002.png",
+      "canonical_sha256": "1227a2c2fc29c26676bd7d6ec62f6a5573aaea0baa8ba410842dbc0c8e51507f",
+      "source": "Source_Generated/behavior_limp/gallimimus_revision2.png",
+      "source_sha256": "82a0e8e11fa02f6e47d41c04e10a1ae656b62e80fe75c8ff2bd69079761ccb17",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "951ee4de14de48de82f93f10b94e37d9abb4afb45084954024571e45b8b66e1c",
+      "changed_pixels": 1474,
+      "silhouette_iou": 0.9174,
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/gallimimus_limp_W_003.png",
+      "species": "gallimimus",
+      "state": "limp",
+      "direction": "W",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/gallimimus_walk_W_003.png",
+      "canonical_sha256": "ac0caa8421bee9f7949002ed020f0422b3710ffedcee74c0056a6f4027601ed5",
+      "source": "Source_Generated/behavior_limp/gallimimus_revision2.png",
+      "source_sha256": "82a0e8e11fa02f6e47d41c04e10a1ae656b62e80fe75c8ff2bd69079761ccb17",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "78824f9f0ea999b18cff70082ed2cb995f51fb30e82ae85ebd6f2ebf66136ab3",
+      "changed_pixels": 1489,
+      "silhouette_iou": 0.9185,
+      "extent_ratios": [
+        1.0165,
+        0.9796
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    }
+  ],
+  "registration_overrides": {
+    "S2": {
+      "source_cell_anchor": [
+        184,
+        128
+      ],
+      "registration_offset": [
+        -20,
+        8
+      ],
+      "landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering"
+    },
+    "S3": {
+      "source_cell_anchor": [
+        222,
+        128
+      ],
+      "registration_offset": [
+        -39,
+        8
+      ],
+      "landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering"
+    },
+    "N2": {
+      "source_cell_anchor": [
+        188,
+        128
+      ],
+      "registration_offset": [
+        -22,
+        8
+      ],
+      "landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering"
+    },
+    "N3": {
+      "source_cell_anchor": [
+        222,
+        128
+      ],
+      "registration_offset": [
+        -39,
+        8
+      ],
+      "landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering"
+    }
+  }
+}

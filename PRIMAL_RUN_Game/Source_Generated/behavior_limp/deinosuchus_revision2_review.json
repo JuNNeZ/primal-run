@@ -1,0 +1,473 @@
+{
+  "species": "deinosuchus",
+  "canonical_reference": "Source_Generated/behavior_limp/deinosuchus_canonical_walk23_reference.png",
+  "source": "Source_Generated/behavior_limp/deinosuchus_revision2.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_enabled": false,
+  "review": "Eight usable low crocodilian held-foot trial poses, four limbs and one continuous tail; original markings mostly preserved, minor generated shading changes.",
+  "entries": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinosuchus_limp_S_002_revision2.png",
+      "direction": "S",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        43,
+        24,
+        101,
+        119
+      ],
+      "export_bbox": [
+        43,
+        24,
+        100,
+        119
+      ],
+      "extent_ratios": [
+        0.9827586206896551,
+        1.0
+      ],
+      "silhouette_iou": 0.924503742271396,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/deinosuchus_revision2.png",
+      "source_sha256": "6ea124337dcc4039631c081f8800d7c8a47f422f6af07f595697649ac2aa11a6",
+      "export_sha256": "636f11bc38c1ff4131c0516eef99072faa9d6827af634bf996dec21813bd3560",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable low crocodilian held-foot trial poses, four limbs and one continuous tail; original markings mostly preserved, minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinosuchus_limp_S_003_revision2.png",
+      "direction": "S",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        40,
+        23,
+        104,
+        119
+      ],
+      "export_bbox": [
+        40,
+        24,
+        103,
+        119
+      ],
+      "extent_ratios": [
+        0.984375,
+        0.9895833333333334
+      ],
+      "silhouette_iou": 0.973693319487712,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/deinosuchus_revision2.png",
+      "source_sha256": "6ea124337dcc4039631c081f8800d7c8a47f422f6af07f595697649ac2aa11a6",
+      "export_sha256": "58063e4856a3c763584724e902ac8105be42462d13659affeca0c54aab4abffd",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable low crocodilian held-foot trial poses, four limbs and one continuous tail; original markings mostly preserved, minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinosuchus_limp_N_002_revision2.png",
+      "direction": "N",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        43,
+        22,
+        97,
+        117
+      ],
+      "export_bbox": [
+        43,
+        22,
+        97,
+        117
+      ],
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "silhouette_iou": 0.8932536293766012,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/deinosuchus_revision2.png",
+      "source_sha256": "6ea124337dcc4039631c081f8800d7c8a47f422f6af07f595697649ac2aa11a6",
+      "export_sha256": "df47d0ebbf88a273bc0bd9409bc228c8e4a215eb1ea2f2f7966b209af47e03e0",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable low crocodilian held-foot trial poses, four limbs and one continuous tail; original markings mostly preserved, minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinosuchus_limp_N_003_revision2.png",
+      "direction": "N",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        42,
+        23,
+        93,
+        117
+      ],
+      "export_bbox": [
+        42,
+        23,
+        93,
+        117
+      ],
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "silhouette_iou": 0.9359861591695502,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/deinosuchus_revision2.png",
+      "source_sha256": "6ea124337dcc4039631c081f8800d7c8a47f422f6af07f595697649ac2aa11a6",
+      "export_sha256": "1a5cdba31a571c2ba39a6fad0719c3a9d2838a2be554842bfc13249aaa2b4271",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable low crocodilian held-foot trial poses, four limbs and one continuous tail; original markings mostly preserved, minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinosuchus_limp_E_002_revision2.png",
+      "direction": "E",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        11,
+        44,
+        135,
+        105
+      ],
+      "export_bbox": [
+        11,
+        44,
+        135,
+        105
+      ],
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "silhouette_iou": 0.9546695794647734,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/deinosuchus_revision2.png",
+      "source_sha256": "6ea124337dcc4039631c081f8800d7c8a47f422f6af07f595697649ac2aa11a6",
+      "export_sha256": "d79d0b18632fe3ccce58db80a9c1b4b3c084f9ef8ec4e38231b9ce540232a2e0",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable low crocodilian held-foot trial poses, four limbs and one continuous tail; original markings mostly preserved, minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinosuchus_limp_E_003_revision2.png",
+      "direction": "E",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        15,
+        44,
+        137,
+        109
+      ],
+      "export_bbox": [
+        15,
+        44,
+        137,
+        108
+      ],
+      "extent_ratios": [
+        1.0,
+        0.9846153846153847
+      ],
+      "silhouette_iou": 0.9532554257095158,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/deinosuchus_revision2.png",
+      "source_sha256": "6ea124337dcc4039631c081f8800d7c8a47f422f6af07f595697649ac2aa11a6",
+      "export_sha256": "7c1ada19be3d2f9afaee926ed4e4cb7ef597d2ae5a4bf6e18f60be557398ace8",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable low crocodilian held-foot trial poses, four limbs and one continuous tail; original markings mostly preserved, minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinosuchus_limp_W_002_revision2.png",
+      "direction": "W",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        17,
+        44,
+        130,
+        107
+      ],
+      "export_bbox": [
+        17,
+        44,
+        130,
+        106
+      ],
+      "extent_ratios": [
+        1.0,
+        0.9841269841269841
+      ],
+      "silhouette_iou": 0.9671403197158082,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/deinosuchus_revision2.png",
+      "source_sha256": "6ea124337dcc4039631c081f8800d7c8a47f422f6af07f595697649ac2aa11a6",
+      "export_sha256": "5184ec76a23a006a315ea24b28876ce1a6a86c0a28fd254c780596874fbb8a8e",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable low crocodilian held-foot trial poses, four limbs and one continuous tail; original markings mostly preserved, minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinosuchus_limp_W_003_revision2.png",
+      "direction": "W",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        14,
+        41,
+        132,
+        109
+      ],
+      "export_bbox": [
+        14,
+        42,
+        132,
+        108
+      ],
+      "extent_ratios": [
+        1.0,
+        0.9705882352941176
+      ],
+      "silhouette_iou": 0.9398803046789989,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/deinosuchus_revision2.png",
+      "source_sha256": "6ea124337dcc4039631c081f8800d7c8a47f422f6af07f595697649ac2aa11a6",
+      "export_sha256": "a2c0eb08c45b7997ca075a3b324dded47c615d4a03a16b05b92766c61f0a0a33",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable low crocodilian held-foot trial poses, four limbs and one continuous tail; original markings mostly preserved, minor generated shading changes."
+    }
+  ],
+  "canonical_reference_sha256": "dbb8dd791a882b6b96e59ac9ed39877df2027d3e7d426724d36c086b76323604"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "family": "shore_soil",
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "boundaries": [
+      0,
+      314,
+      627,
+      941,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "corner_bits": {
+      "NW": 1,
+      "NE": 2,
+      "SE": 4,
+      "SW": 8
+    },
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "family": "shore_sand",
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "boundaries": [
+      0,
+      314,
+      627,
+      941,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "corner_bits": {
+      "NW": 1,
+      "NE": 2,
+      "SE": 4,
+      "SW": 8
+    },
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "family": "water_depth",
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "boundaries": [
+      0,
+      314,
+      627,
+      941,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "corner_bits": {
+      "NW": 1,
+      "NE": 2,
+      "SE": 4,
+      "SW": 8
+    },
+    "status": "prototype_static",
+    "production_approved": false
+  }
+]

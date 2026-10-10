@@ -1,0 +1,58 @@
+{
+  "species": "carnotaurus",
+  "layout": [
+    1536,
+    1024
+  ],
+  "cell": [
+    384,
+    256
+  ],
+  "hip": [
+    192,
+    128
+  ],
+  "operation": "Lossless nearest-neighbor integer2x, duplicate canonical idle into four columns; no drawing or bbox recentering",
+  "references": [
+    {
+      "path": "PRIMAL_RUN_Game/assets/player_full/carnotaurus_idle_S_000.png",
+      "sha256": "8305e32b3f9d0ed451b83e964a1266bd0081cc9558ad15773afc1859e4252d4e",
+      "direction": "S",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    },
+    {
+      "path": "PRIMAL_RUN_Game/assets/player_full/carnotaurus_idle_N_000.png",
+      "sha256": "95676786d135ed8e081d4e021bfc0ee6c9dce7bc04bd49c5851a0702720fa6db",
+      "direction": "N",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    },
+    {
+      "path": "PRIMAL_RUN_Game/assets/player_full/carnotaurus_idle_E_000.png",
+      "sha256": "cb7977b7e04ac400b2822fecba70cb56e18b93277f7cce461c2d3fe74569ce12",
+      "direction": "E",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    },
+    {
+      "path": "PRIMAL_RUN_Game/assets/player_full/carnotaurus_idle_W_000.png",
+      "sha256": "cc481d699c807eae728a36a99b192be46f749d06adf55e9b6af1248b3da15607",
+      "direction": "W",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    }
+  ]
+}

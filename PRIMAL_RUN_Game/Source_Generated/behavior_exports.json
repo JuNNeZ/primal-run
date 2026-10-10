@@ -1,0 +1,659 @@
+[
+  {
+    "species": "ankylosaurus",
+    "family": "ecology",
+    "source": "Source_Generated/behavior_ecology/ankylosaurus_revision1.png",
+    "anchors": {
+      "S": [
+        128,
+        160
+      ],
+      "N": [
+        128,
+        192
+      ],
+      "E": [
+        128,
+        176
+      ],
+      "W": [
+        128,
+        144
+      ]
+    },
+    "sample_stride": 2,
+    "runtime_enabled": false,
+    "row_insets": {},
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "review": "Revision1 body-scale/registration failure; native-reference replacement family required. Preserve source/exports for comparison only."
+  },
+  {
+    "species": "baryonyx",
+    "family": "ecology",
+    "source": "Source_Generated/behavior_ecology/baryonyx_revision1.png",
+    "anchors": {
+      "S": [
+        128,
+        160
+      ],
+      "N": [
+        128,
+        184
+      ],
+      "E": [
+        128,
+        176
+      ],
+      "W": [
+        128,
+        144
+      ]
+    },
+    "sample_stride": 2,
+    "runtime_enabled": false,
+    "row_insets": {},
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "review": "Revision1 body-scale/registration failure; native-reference replacement family required. Preserve source/exports for comparison only."
+  },
+  {
+    "species": "carnotaurus",
+    "family": "ecology",
+    "source": "Source_Generated/behavior_ecology/carnotaurus_revision1.png",
+    "anchors": {
+      "S": [
+        128,
+        160
+      ],
+      "N": [
+        128,
+        160
+      ],
+      "E": [
+        128,
+        176
+      ],
+      "W": [
+        116,
+        144
+      ]
+    },
+    "sample_stride": 2,
+    "runtime_enabled": false,
+    "row_insets": {},
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "review": "Revision1 body-scale/registration failure; native-reference replacement family required. Preserve source/exports for comparison only."
+  },
+  {
+    "species": "deinosuchus",
+    "family": "ecology",
+    "source": "Source_Generated/behavior_ecology/deinosuchus_revision1.png",
+    "anchors": {
+      "S": [
+        128,
+        160
+      ],
+      "N": [
+        128,
+        160
+      ],
+      "E": [
+        128,
+        176
+      ],
+      "W": [
+        128,
+        144
+      ]
+    },
+    "sample_stride": 2,
+    "runtime_enabled": false,
+    "row_insets": {},
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "review": "Revision1 body-scale/registration failure; native-reference replacement family required. Preserve source/exports for comparison only."
+  },
+  {
+    "species": "gallimimus",
+    "family": "ecology",
+    "source": "Source_Generated/behavior_ecology/gallimimus_revision1.png",
+    "anchors": {
+      "S": [
+        128,
+        160
+      ],
+      "N": [
+        128,
+        192
+      ],
+      "E": [
+        128,
+        176
+      ],
+      "W": [
+        128,
+        144
+      ]
+    },
+    "sample_stride": 2,
+    "runtime_enabled": false,
+    "row_insets": {},
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "review": "Revision1 body-scale/registration failure; native-reference replacement family required. Preserve source/exports for comparison only."
+  },
+  {
+    "species": "pachycephalosaurus",
+    "family": "ecology",
+    "source": "Source_Generated/behavior_ecology/pachycephalosaurus_revision1.png",
+    "anchors": {
+      "S": [
+        128,
+        160
+      ],
+      "N": [
+        128,
+        160
+      ],
+      "E": [
+        128,
+        176
+      ],
+      "W": [
+        128,
+        144
+      ]
+    },
+    "sample_stride": 2,
+    "runtime_enabled": false,
+    "row_insets": {},
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "review": "Revision1 body-scale/registration failure; native-reference replacement family required. Preserve source/exports for comparison only."
+  },
+  {
+    "species": "parasaurolophus",
+    "family": "ecology",
+    "source": "Source_Generated/behavior_ecology/parasaurolophus_revision1.png",
+    "anchors": {
+      "S": [
+        128,
+        160
+      ],
+      "N": [
+        128,
+        150
+      ],
+      "E": [
+        128,
+        176
+      ],
+      "W": [
+        128,
+        144
+      ]
+    },
+    "sample_stride": 2,
+    "runtime_enabled": false,
+    "row_insets": {},
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "review": "Revision1 body-scale/registration failure; native-reference replacement family required. Preserve source/exports for comparison only."
+  },
+  {
+    "species": "triceratops",
+    "family": "ecology",
+    "source": "Source_Generated/behavior_ecology/triceratops_revision1.png",
+    "anchors": {
+      "S": [
+        128,
+        180
+      ],
+      "N": [
+        128,
+        192
+      ],
+      "E": [
+        128,
+        176
+      ],
+      "W": [
+        128,
+        144
+      ]
+    },
+    "sample_stride": 2,
+    "runtime_enabled": false,
+    "row_insets": {},
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "review": "Revision1 body-scale/registration failure; native-reference replacement family required. Preserve source/exports for comparison only."
+  },
+  {
+    "species": "tyrannosaurus",
+    "family": "ecology",
+    "source": "Source_Generated/behavior_ecology/tyrannosaurus_revision1.png",
+    "anchors": {
+      "S": [
+        128,
+        160
+      ],
+      "N": [
+        128,
+        160
+      ],
+      "E": [
+        128,
+        176
+      ],
+      "W": [
+        128,
+        144
+      ]
+    },
+    "sample_stride": 2,
+    "runtime_enabled": false,
+    "row_insets": {},
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "review": "Revision1 body-scale/registration failure; native-reference replacement family required. Preserve source/exports for comparison only."
+  },
+  {
+    "species": "ankylosaurus",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/ankylosaurus_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        168
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "direction_strides": {
+      "E": 3,
+      "W": 3
+    },
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "baryonyx",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/baryonyx_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        160
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "direction_strides": {
+      "E": 3,
+      "W": 3
+    },
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "carnotaurus",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/carnotaurus_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        168
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "direction_strides": {
+      "E": 3,
+      "W": 3
+    },
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "compy",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/compy_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        160
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 6,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "deinonychus",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/deinonychus_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        160
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 3,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "deinosuchus",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/deinosuchus_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        168
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "direction_strides": {
+      "E": 3,
+      "W": 3
+    },
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "gallimimus",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/gallimimus_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        160
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "pachycephalosaurus",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/pachycephalosaurus_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        160
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "direction_strides": {
+      "E": 3,
+      "W": 3
+    },
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "parasaurolophus",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/parasaurolophus_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        160
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "triceratops",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/triceratops_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        168
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "direction_strides": {
+      "E": 3,
+      "W": 3
+    },
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "tyrannosaurus",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/tyrannosaurus_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        160
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "direction_strides": {
+      "E": 3,
+      "W": 3
+    },
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  },
+  {
+    "species": "utahraptor",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/utahraptor_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        144
+      ],
+      "E": [
+        200,
+        160
+      ],
+      "W": [
+        184,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing.",
+    "direction_strides": {
+      "E": 3,
+      "W": 3
+    }
+  },
+  {
+    "species": "velociraptor",
+    "family": "limp",
+    "source": "Source_Generated/behavior_limp/velociraptor_revision1.png",
+    "anchors": {
+      "S": [
+        192,
+        160
+      ],
+      "N": [
+        192,
+        160
+      ],
+      "E": [
+        192,
+        160
+      ],
+      "W": [
+        192,
+        160
+      ]
+    },
+    "sample_stride": 2,
+    "crop_margin": 48,
+    "isolate_neighbors": true,
+    "runtime_enabled": false,
+    "review": "Drawn anatomy/scale transitions under review; runtime retains byte-identical native gait timing."
+  }
+]

@@ -1,0 +1,485 @@
+{
+  "species": "carnotaurus",
+  "source": "Source_Generated/behavior_limp/carnotaurus_revision2.png",
+  "canonical_reference": "Source_Generated/behavior_limp/carnotaurus_canonical_walk23_reference.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "cell_dimensions": [
+    384,
+    256
+  ],
+  "direction_rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "authored_keypose_columns": {
+    "2": 2,
+    "3": 3
+  },
+  "source_hip_anchor": [
+    192,
+    128
+  ],
+  "sampling_stride": 2,
+  "sampling_offset": 1,
+  "alpha_threshold": 192,
+  "origin": [
+    72,
+    72
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_enabled": false,
+  "review": "Reviewed prototype keyposes; Pachy/Para/Galli eight candidates each, Carno seven candidates and rejected North2 native fallback. Named pelvis/tail-root anchors correct source displacement; no bbox recentering or resizing. User anatomy approval and complete animation loop review remain separate.",
+  "poses": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/carnotaurus_limp_S_002.png",
+      "species": "carnotaurus",
+      "state": "limp",
+      "direction": "S",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/carnotaurus_walk_S_002.png",
+      "canonical_sha256": "7911363eb5109870c44e461b6bac0c773c2ad4be624a17a9b26557c744de6681",
+      "source": "Source_Generated/behavior_limp/carnotaurus_revision2.png",
+      "source_sha256": "0169c52a8508dc710ad756d28effcdb2cdf71ee4e0a9644d230bc3d77cdc128f",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        182,
+        126
+      ],
+      "registration_offset": [
+        -19,
+        9
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "45935dab2cc34e4e6304f2e5d1dd29acb627b099a6beb674ffe2d6c28fcd6a4f",
+      "changed_pixels": 1325,
+      "silhouette_iou": 0.9095,
+      "extent_ratios": [
+        1.0238,
+        0.9892
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/carnotaurus_limp_S_003.png",
+      "species": "carnotaurus",
+      "state": "limp",
+      "direction": "S",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/carnotaurus_walk_S_003.png",
+      "canonical_sha256": "b581b62a3ff78f20de1a2f296caeed2358cd84dffa031960a3210d0d0a62f94c",
+      "source": "Source_Generated/behavior_limp/carnotaurus_revision2.png",
+      "source_sha256": "0169c52a8508dc710ad756d28effcdb2cdf71ee4e0a9644d230bc3d77cdc128f",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        190,
+        124
+      ],
+      "registration_offset": [
+        -23,
+        10
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "06bb2ef472a52672d796e3b3f52e055a9ab241e049aa5865f1315c8253ec103e",
+      "changed_pixels": 1334,
+      "silhouette_iou": 0.9337,
+      "extent_ratios": [
+        1.0238,
+        0.9895
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/carnotaurus_limp_N_002.png",
+      "species": "carnotaurus",
+      "state": "limp",
+      "direction": "N",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/carnotaurus_walk_N_002.png",
+      "canonical_sha256": "f9c652b65d76daed0e3fd8788b76597abc73689ea161caf100035424e5c27e35",
+      "source": "Source_Generated/behavior_limp/carnotaurus_revision2.png",
+      "source_sha256": "0169c52a8508dc710ad756d28effcdb2cdf71ee4e0a9644d230bc3d77cdc128f",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "055a13d20d724183a999fd850492c9e251b11159362b5d065db1d524fe1799b1",
+      "changed_pixels": 1943,
+      "silhouette_iou": 0.7106,
+      "extent_ratios": [
+        1.0588,
+        1.0
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": false,
+      "visual_candidate": false,
+      "visual_review": "Rejected N2: tail/body drift remains beyond overlap gate; native walk fallback required.",
+      "rejection_reason": "body_tail_silhouette_drift"
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/carnotaurus_limp_N_003.png",
+      "species": "carnotaurus",
+      "state": "limp",
+      "direction": "N",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/carnotaurus_walk_N_003.png",
+      "canonical_sha256": "0c0faaf38a70ccae8e2b5c7efc899c48f6ca8446691dd8a450b51eff8548e2f3",
+      "source": "Source_Generated/behavior_limp/carnotaurus_revision2.png",
+      "source_sha256": "0169c52a8508dc710ad756d28effcdb2cdf71ee4e0a9644d230bc3d77cdc128f",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        196,
+        128
+      ],
+      "registration_offset": [
+        -26,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "3abf575ff200ab8e0773a41902938f1be2d7f430f79eac42368ba2e2e2fa0bb7",
+      "changed_pixels": 1107,
+      "silhouette_iou": 0.9473,
+      "extent_ratios": [
+        1.0294,
+        0.9894
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/carnotaurus_limp_E_002.png",
+      "species": "carnotaurus",
+      "state": "limp",
+      "direction": "E",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/carnotaurus_walk_E_002.png",
+      "canonical_sha256": "e88f85012dcbcd358f3140e87c8786d5af53dad42d24084f071c829ec0255a19",
+      "source": "Source_Generated/behavior_limp/carnotaurus_revision2.png",
+      "source_sha256": "0169c52a8508dc710ad756d28effcdb2cdf71ee4e0a9644d230bc3d77cdc128f",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "4cb5cda5013b8f2aadfc6c175c6d5bfd5930c17f7002187dc072456161948f70",
+      "changed_pixels": 1545,
+      "silhouette_iou": 0.912,
+      "extent_ratios": [
+        0.9831,
+        1.0
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/carnotaurus_limp_E_003.png",
+      "species": "carnotaurus",
+      "state": "limp",
+      "direction": "E",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/carnotaurus_walk_E_003.png",
+      "canonical_sha256": "855415577f055f8641518378e6951c9568654bf3170a07ac2b43a72125df01ec",
+      "source": "Source_Generated/behavior_limp/carnotaurus_revision2.png",
+      "source_sha256": "0169c52a8508dc710ad756d28effcdb2cdf71ee4e0a9644d230bc3d77cdc128f",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "8013fedab5b7a1dd6a96c4377e992d698a33d1e4fc93e720bfca14fd07499d08",
+      "changed_pixels": 1332,
+      "silhouette_iou": 0.9376,
+      "extent_ratios": [
+        0.9829,
+        1.0204
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/carnotaurus_limp_W_002.png",
+      "species": "carnotaurus",
+      "state": "limp",
+      "direction": "W",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/carnotaurus_walk_W_002.png",
+      "canonical_sha256": "dd52659d0767342384b67d92ba4019390357eeecd8c933d6f606e453acb71d67",
+      "source": "Source_Generated/behavior_limp/carnotaurus_revision2.png",
+      "source_sha256": "0169c52a8508dc710ad756d28effcdb2cdf71ee4e0a9644d230bc3d77cdc128f",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "a234d077ae138670a59407b81a34a6faeb31ae5a5daa987276be2ba87355e7cc",
+      "changed_pixels": 1461,
+      "silhouette_iou": 0.9183,
+      "extent_ratios": [
+        1.0,
+        0.9643
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/carnotaurus_limp_W_003.png",
+      "species": "carnotaurus",
+      "state": "limp",
+      "direction": "W",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "canonical": "assets/player_full/carnotaurus_walk_W_003.png",
+      "canonical_sha256": "2f91057fd6f9a716679b703ffffe945bf92004e5cc6eb55a32c6526db5a82817",
+      "source": "Source_Generated/behavior_limp/carnotaurus_revision2.png",
+      "source_sha256": "0169c52a8508dc710ad756d28effcdb2cdf71ee4e0a9644d230bc3d77cdc128f",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "registration_landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering",
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "export_sha256": "cacfa5820fd2c2005c177ad4af299517b89b88f7e134199738504512c5dd7a8c",
+      "changed_pixels": 1584,
+      "silhouette_iou": 0.8907,
+      "extent_ratios": [
+        1.0,
+        0.9833
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "technical_candidate": true,
+      "visual_candidate": true,
+      "visual_review": "Native light/dark reviewed; head, body, one tail and limb counts preserved; subtle held hindfoot. Registered against canonical pelvis/tail-root where generator drifted."
+    }
+  ],
+  "registration_overrides": {
+    "S2": {
+      "source_cell_anchor": [
+        182,
+        126
+      ],
+      "registration_offset": [
+        -19,
+        9
+      ],
+      "landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering"
+    },
+    "S3": {
+      "source_cell_anchor": [
+        190,
+        124
+      ],
+      "registration_offset": [
+        -23,
+        10
+      ],
+      "landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering"
+    },
+    "N3": {
+      "source_cell_anchor": [
+        196,
+        128
+      ],
+      "registration_offset": [
+        -26,
+        8
+      ],
+      "landmark": "Manual tail-root/pelvis match to corresponding canonical walk keypose; no bbox centering"
+    }
+  }
+}

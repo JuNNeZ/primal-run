@@ -38,12 +38,31 @@ procedurale banerækkefølger og sjældne arter, der kun findes i afsides områd
 - Compy-indkaldelse/gruppekrav, territoriale reder og drabsgatet fødecache.
 - Varieret planteføde, giftige svampe med advarsel og rolig effekt.
 - Førstegangssprogvalg, pauset build-visning og afstand mellem faste fund.
-- Separate HUD-hoveder og fire artsangreb er **integrerede prototyper**; visuel slutpolering er åben.
+- Separate HUD-hoveder og fem artsangreb er **integrerede prototyper**; visuel slutpolering er åben.
 
-A3 har nu en timing-prototype med eksisterende poses, men tegnede skåneben-poses er åbne. A2, A4, A5 og endelig Parasaurolophus-sparkmatching forbliver åbne. De øvrige ideer og B-mekanikker flyttes ikke til bygget før de er implementeret/testet. Udklækning/opvækst forbliver en fremtidig idé.
+## Del A — bygget og browser-testet som prototype
 
-## Del A — konsistensrettelse
+- Fem artsangreb / 120 frames: Ankylosaurus’ 24 oprindelige halesving genbruges;
+  Parasaurolophus’ 24 revision2-spark er aktive.
+- 288 ecology-frames for ni arter: 276 aktive tegnede poses og 12 native fallbacks.
+- 312 sårede gangframes for 13 arter: 88 nye keyposes, 224 originale frames.
+  De 16 afviste keyposes beholdes som dokumenterede fallbacks.
+- 48 jord-/sand-/vanddybde-tiles og 32 nye raptor-ådsler/skeletter.
+- 632 tidligere behavior-studieframes bevares runtime-deaktiveret.
 
+Dette er unapproved prototypes, ikke færdig produktionsgrafik. Den samlede browser-suite består;
+GDJS-test og visuel produktionsgodkendelse er særskilte opgaver; A6 forbliver valgfri og åben.
+
+## Næste grafiske forbedringer
+
+- Størrelsestro Compy-skåneben; de nuværende tegninger blev afvist.
+- De sidste fem Deinonychus-keyposes og enkelte Baryonyx/Carno/Trice-poses.
+- Ens body-markeringer og shading på tværs af alle state-skift.
+- Visuel vandkant-/tile-seam-polering på større kort og små skærme.
+- Valgfrie lava/aske-tiles, pixel-HUD-chips og afstemte natpaletter.
+
+B-mekanikker flyttes ikke til bygget før implementering og relevante tests.
+Udklækning/opvækst forbliver en fremtidig idé med uafklaret balance.
 - **Bygget:** Ankylosaurus gamle 24 halesving genbruges byte-identisk; ingen ny kropsform.
 - **Bygget prototype:** under 30 % HP viser alle arter en asymmetrisk gang-/løberytme. Ingen ændring af skade, fart eller angrebstiming.
 - **Review-only:** Parasaurolophus-spark revision2; eksisterende sources bruges som reference, men de nye frames er endnu ikke aktiveret.

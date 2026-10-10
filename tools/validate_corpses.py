@@ -6,7 +6,7 @@ from PIL import Image
 GAME=Path(__file__).resolve().parents[1]/'PRIMAL_RUN_Game'
 manifest=json.loads((GAME/'corpse_manifest.json').read_text());errors=[]
 palette={tuple(int(c[i:i+2],16) for i in (1,3,5)) for c in json.loads((GAME/'palette.json').read_text())['colors']}
-if len(manifest)!=160:errors.append('Expected160 corpse props')
+if len(manifest)!=192:errors.append('Expected192 corpse props')
 keys=set()
 for e in manifest:
  p=GAME/e['file'];im=Image.open(p);a=np.array(im);bbox=im.getbbox();key=(e['species'],e['stage'],e['direction'],e['variant'])

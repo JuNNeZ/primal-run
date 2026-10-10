@@ -1,0 +1,58 @@
+{
+  "species": "deinosuchus",
+  "layout": [
+    1536,
+    1024
+  ],
+  "cell": [
+    384,
+    256
+  ],
+  "hip": [
+    192,
+    128
+  ],
+  "operation": "Lossless nearest-neighbor integer2x, duplicate canonical idle into four columns; no drawing or bbox recentering",
+  "references": [
+    {
+      "path": "PRIMAL_RUN_Game/assets/enemy_full/deinosuchus_idle_S_000.png",
+      "sha256": "72b11ff39af2314217aebea0067107c2b6f4fa0b7af0ec9dada06b7859039fd5",
+      "direction": "S",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    },
+    {
+      "path": "PRIMAL_RUN_Game/assets/enemy_full/deinosuchus_idle_N_000.png",
+      "sha256": "a9e0df9208b9d62eced2ab193561118982d5bc51e3787b82e3f7faeddcbb5bc1",
+      "direction": "N",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    },
+    {
+      "path": "PRIMAL_RUN_Game/assets/enemy_full/deinosuchus_idle_E_000.png",
+      "sha256": "2e56f0df2118b19d13514a176ce92f24ffee96193290c7d9512c212581c49db1",
+      "direction": "E",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    },
+    {
+      "path": "PRIMAL_RUN_Game/assets/enemy_full/deinosuchus_idle_W_000.png",
+      "sha256": "706ad4ee89fcddfc6739d00d75ed32570f28f702fac8b5b733d98f79970449e1",
+      "direction": "W",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    }
+  ]
+}

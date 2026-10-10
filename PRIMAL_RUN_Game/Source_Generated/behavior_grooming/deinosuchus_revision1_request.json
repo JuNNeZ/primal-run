@@ -1,0 +1,30 @@
+{
+  "prompt": "Edit this exact deinosuchus atlas minimally into a quiet SCRATCH/GROOM pair. One near hindfoot lifts a little to scratch its own flank; other3feet remain planted, long low body and scutes unchanged. Exactly4legs. Column0 limb lifted to its own body, column1 same limb gently rubbing slightly changed position. Head gently tilts toward own shoulder, closed mouth, calm, never bite/attack. Keep entire body silhouette, markings, scales, colour placement and camera pixel-faithful to source; no enlargement or shrinkage. Output exactly1536x1024 transparent same TWO columns768wide FOUR rows256high S,N,E,W. Fixed hip local384,128. Keep existing TWO TIMES native animal size and exact blank space; NEVER fill cells. Only small readable limb/neck movement. No labels/shadows/ground. One tail, original limb count. Crisp square 1990s overhead oblique pixel art. No recentering of animal.",
+  "source": "deinosuchus_revision1.png",
+  "references": [
+    "deinosuchus_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration.",
+  "source_sha256": "c6c9b5a9941ddd758f9f5e94f98f4065433ed2868a0830dde8514d72a1a60cbd",
+  "canonical_references": [
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_S_000.png",
+      "sha256": "72b11ff39af2314217aebea0067107c2b6f4fa0b7af0ec9dada06b7859039fd5"
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_N_000.png",
+      "sha256": "a9e0df9208b9d62eced2ab193561118982d5bc51e3787b82e3f7faeddcbb5bc1"
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_E_000.png",
+      "sha256": "2e56f0df2118b19d13514a176ce92f24ffee96193290c7d9512c212581c49db1"
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_W_000.png",
+      "sha256": "706ad4ee89fcddfc6739d00d75ed32570f28f702fac8b5b733d98f79970449e1"
+    }
+  ]
+}

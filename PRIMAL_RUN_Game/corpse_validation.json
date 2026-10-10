@@ -1,6 +1,6 @@
 {
   "technical_export_result": "PASS",
-  "assets": 160,
+  "assets": 192,
   "errors": [],
   "production_approved": false,
   "scope": "Static native pixel inventory, palette, alpha, hashes, padding and variants. Does not certify anatomy or animated transitions."

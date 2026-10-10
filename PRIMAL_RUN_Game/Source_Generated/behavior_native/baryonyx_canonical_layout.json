@@ -1,0 +1,58 @@
+{
+  "species": "baryonyx",
+  "layout": [
+    1536,
+    1024
+  ],
+  "cell": [
+    384,
+    256
+  ],
+  "hip": [
+    192,
+    128
+  ],
+  "operation": "Lossless nearest-neighbor integer2x, duplicate canonical idle into four columns; no drawing or bbox recentering",
+  "references": [
+    {
+      "path": "PRIMAL_RUN_Game/assets/player_full/baryonyx_idle_S_000.png",
+      "sha256": "19a0fceef49d4d1323b8ba1c01639b3dbf78fc6a652b4cfd9953c9661a6cb790",
+      "direction": "S",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    },
+    {
+      "path": "PRIMAL_RUN_Game/assets/player_full/baryonyx_idle_N_000.png",
+      "sha256": "f3e571b0c18a504bac1cfd49f26680ed2e0f39cdc2b0ed1a8bef1471ba888a00",
+      "direction": "N",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    },
+    {
+      "path": "PRIMAL_RUN_Game/assets/player_full/baryonyx_idle_E_000.png",
+      "sha256": "6a4da4518178b771d312e1a114e5ff20aeda2b2f70e99258bbf2d2cf601e40f9",
+      "direction": "E",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    },
+    {
+      "path": "PRIMAL_RUN_Game/assets/player_full/baryonyx_idle_W_000.png",
+      "sha256": "b85ec0234339136c8bde16cacd9ef70e1ab6b77f5961633b107b41317f0c8146",
+      "direction": "W",
+      "placement": [
+        48,
+        -16
+      ],
+      "scale": 2
+    }
+  ]
+}

@@ -221,7 +221,7 @@
           for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[pixels.data[i],pixels.data[i+1],pixels.data[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('');const color=mapping[key];if(color){pixels.data[i]=parseInt(color.slice(0,2),16);pixels.data[i+1]=parseInt(color.slice(2,4),16);pixels.data[i+2]=parseInt(color.slice(4,6),16);}}
           lc.putImageData(pixels,0,0);skins[path]=layer;
         }
-        if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/') || path.startsWith('assets/enemy_full/') || path.startsWith('assets/player_full/') || path.startsWith('assets/species_attacks/'))) {
+        if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/') || path.startsWith('assets/enemy_full/') || path.startsWith('assets/player_full/') || path.startsWith('assets/species_attacks/') || path.startsWith('assets/behavior/') || path.startsWith('assets/behavior_native/') || path.startsWith('assets/behavior_injured/'))) {
           const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
           const tintCtx = tint.getContext('2d'); tintCtx.drawImage(image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';
           tintCtx.fillStyle = '#fff1c9'; tintCtx.fillRect(0, 0, tint.width, tint.height); flashes[path] = tint;
@@ -362,10 +362,10 @@
         blob(region.x, region.y, region.radius, region.radius * .7, region.seed); ctx.save(); ctx.globalAlpha = .32; ctx.fillStyle = ['#3f5030', '#586d38', '#674333', '#54282d'][stage]; ctx.fill(); ctx.restore(); /* subtle natural ground patches */
 
       }
-      const waterTime=game.run?game.run.seconds:menuClock;for(const pond of map.ponds||[])drawPond(pond,waterTime);
+      const waterTime=game.run?game.run.seconds:menuClock;const tiledWater=C.FEATURES.waterTiles&&catalog['assets/water_transitions/shore_soil_15.png'];canvas.dataset.waterTiles=tiledWater?'true':'false';if(tiledWater)drawWaterTiles(stage,map,view);for(const pond of map.ponds||[])drawPond(pond,waterTime,tiledWater);
       ctx.lineCap = 'round'; ctx.lineJoin = 'round';
       if (stage === 1) {
-        drawRiver(map,waterTime);
+        drawRiver(map,waterTime,tiledWater);
       }
       if (stage === 3) {
         trace(map.river); ctx.strokeStyle = '#3b4144'; ctx.lineWidth = 58; ctx.stroke(); ctx.strokeStyle = '#54282d'; ctx.lineWidth = 42; ctx.stroke(); ctx.strokeStyle = '#c6663c'; ctx.lineWidth = 26; ctx.stroke();
@@ -382,7 +382,14 @@
       ctx.fillStyle = '#151b1966'; ctx.fillRect(0, 0, map.width, 76); ctx.fillRect(0, map.height - 42, map.width, 42); ctx.fillRect(0, 0, 42, map.height); ctx.fillRect(map.width - 42, 0, 42, map.height);
     }
     function enemyLabelOffset(e){return (e.kind==='compy'?20:72)*(e.visualScale||1)+12;}
-    function enemyFrame(kind,state,direction,frame){const attack=C.playerFrame(kind,state,direction,frame);if(state==='attack'&&attack.startsWith('assets/species_attacks/')&&catalog[attack])return attack;return 'assets/'+(['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx'].includes(kind)?'player_full/':'enemy_full/')+kind+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';}
+    function authoredBehaviorPath(species,state,direction,frame,health,maxHealth,mode='',time=0){
+      const legacy=C.behaviorFrame(species,state,direction,frame,health,maxHealth,mode,time);if(!legacy)return null;
+      const family=['walk','run'].includes(state)?'behavior_injured':'behavior_native';
+      const revised='assets/'+family+'/'+legacy.split('/').pop();
+      for(const path of [revised,legacy])if(catalog[path]&&catalog[path].runtime_enabled!==false)return path;
+      return null;
+    }
+    function enemyFrame(kind,state,direction,frame){const attack=C.playerFrame(kind,state,direction,frame);if(state==='attack'&&attack.startsWith('assets/species_attacks/')&&catalog[attack])return attack;return 'assets/'+(['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx','utahraptor','velociraptor','deinonychus'].includes(kind)?'player_full/':'enemy_full/')+kind+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';}
     function label(text, x, y, color) {
       text = tr(text);
       ctx.font = 'bold 11px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713';
@@ -448,30 +455,55 @@
     // ===== Overhaul phase 5: water, shadows, ambience, telegraphs, attack effects =====
     const calm=()=>game.save.settings.reducedMotion||reducedMotion.matches;
     function tilePattern(tile){if(!backgrounds.has(tile)){const im=images['assets/tiles/'+tile+'.png'];if(!im){loadImage('assets/tiles/'+tile+'.png');return null;}backgrounds.set(tile,ctx.createPattern(im,'repeat'));}return backgrounds.get(tile);}
-    function drawRiver(map,time){
+    // Shared world-grid corners classify the same water/deep-water geometry as movement.
+    // Cache vertices per map; render only viewport tiles, not the whole map each frame.
+    const waterVertexCache=new WeakMap();
+    function waterCorner(stage,map,x,y){
+      let cache=waterVertexCache.get(map);if(!cache){cache=new Map();waterVertexCache.set(map,cache);}
+      const key=stage+':'+x+':'+y;if(cache.has(key))return cache.get(key);
+      const p={x,y},v=C.isDeepWater(stage,map,p)?2:C.isWater(stage,map,p)?1:0;cache.set(key,v);return v;
+    }
+    function drawWaterTiles(stage,map,view){
+      const signature=JSON.stringify([stage,map.ponds,map.fords,map.riverCurve||map.river]);if(waterVertexCache.get(map)?.signature!==signature){const vertices=new Map();vertices.signature=signature;waterVertexCache.set(map,vertices);}
+      const step=32;let count=0,deepCount=0;
+      for(let y=Math.floor(view.y/step)*step;y<view.y+canvas.height;y+=step)for(let x=Math.floor(view.x/step)*step;x<view.x+canvas.width;x+=step){
+        const corners=[[x,y],[x+step,y],[x+step,y+step],[x,y+step]].map(p=>waterCorner(stage,map,p[0],p[1]));
+        const wet=corners.reduce((m,v,i)=>m|(v>0?1<<i:0),0);if(!wet)continue;
+        const deep=corners.reduce((m,v,i)=>m|(v===2?1<<i:0),0),family=wet===15&&deep?'water_depth':stage===1?'shore_sand':'shore_soil',mask=family==='water_depth'?deep:wet;
+        const path='assets/water_transitions/'+family+'_'+String(mask).padStart(2,'0')+'.png';
+        sprite(path,x,y);count++;if(deep)deepCount++;
+      }
+      canvas.dataset.waterTileCount=count;canvas.dataset.deepWaterTileCount=deepCount;
+    }
+    function drawRiver(map,time,tiled=false){
+      if(!tiled){
       trace(map.river);ctx.strokeStyle='#b98252';ctx.lineWidth=176;ctx.stroke();
       ctx.strokeStyle='#edd0a0';ctx.lineWidth=156;ctx.stroke();
       ctx.strokeStyle='#69a4a0';ctx.lineWidth=116;ctx.stroke();
       const deep=tilePattern('deep_water');ctx.strokeStyle='#2c5a6e';ctx.lineWidth=56;ctx.stroke();
       if(deep){ctx.save();ctx.globalAlpha=.45;ctx.strokeStyle=deep;ctx.stroke();ctx.restore();}
+      }
+      trace(map.river);
       ctx.save();ctx.setLineDash([3,11]);ctx.lineDashOffset=calm()?0:-time*14;ctx.strokeStyle='#e8ece1';ctx.globalAlpha=.35;ctx.lineWidth=118;ctx.stroke();
       ctx.setLineDash([14,30]);ctx.lineDashOffset=calm()?0:-time*26;ctx.globalAlpha=.25;ctx.lineWidth=30;ctx.strokeStyle='#a2d4c1';ctx.stroke();ctx.restore();
       for(const f of map.fords||[]){
-        ctx.save();ctx.translate(f.x,f.y);ctx.fillStyle='#69a4a0';ctx.beginPath();ctx.ellipse(0,0,78,44,0,0,Math.PI*2);ctx.fill();
+        ctx.save();ctx.translate(f.x,f.y);if(!tiled){ctx.fillStyle='#69a4a0';ctx.beginPath();ctx.ellipse(0,0,78,44,0,0,Math.PI*2);ctx.fill();}
         let seed=(f.x*31+f.y*17)>>>0;const rnd=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
         for(let i=0;i<14;i++){const a=rnd()*Math.PI*2,d=Math.sqrt(rnd())*52;ctx.fillStyle=i%3?'#929387':'#bab8a2';ctx.beginPath();ctx.ellipse(Math.cos(a)*d,Math.sin(a)*d*.6,6+rnd()*6,4+rnd()*3,0,0,Math.PI*2);ctx.fill();}
         ctx.restore();
       }
     }
-    function drawPond(pond,time){
+    function drawPond(pond,time,tiled=false){
       if(pond.baseRadius&&pond.baseRadius>pond.radius+1){ // B4 drought: cracked dry mud where the water was (procedural)
         ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.baseRadius+10,pond.baseRadius*.7+8,0,0,Math.PI*2);ctx.fillStyle='#8d6042';ctx.fill();
         ctx.save();ctx.strokeStyle='#674333';ctx.lineWidth=1.5;let seed=(pond.x*13+pond.y*7)>>>0;const rnd=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
         ctx.beginPath();for(let i=0;i<14;i++){const a=rnd()*Math.PI*2,r0=pond.radius*(.9+rnd()*.1),r1=pond.baseRadius*(.85+rnd()*.2);ctx.moveTo(pond.x+Math.cos(a)*r0,pond.y+Math.sin(a)*r0*.7);ctx.lineTo(pond.x+Math.cos(a+.15)*r1,pond.y+Math.sin(a+.15)*r1*.7);}ctx.stroke();ctx.restore();
       }
+      if(!tiled){
       ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius+10,pond.radius*.7+8,0,0,Math.PI*2);ctx.fillStyle='#b98252';ctx.fill();
       ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius,pond.radius*.7,0,0,Math.PI*2);ctx.fillStyle='#69a4a0';ctx.fill();
       ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius*.45,pond.radius*.7*.45,0,0,Math.PI*2);ctx.fillStyle='#2c5a6e';ctx.fill();const deep=tilePattern('deep_water');if(deep){ctx.save();ctx.globalAlpha=.4;ctx.fillStyle=deep;ctx.fill();ctx.restore();}
+      }
       if(!calm()){const k=(time*.6+pond.x*.001)%1;ctx.save();ctx.globalAlpha=.4*(1-k);ctx.strokeStyle='#e8ece1';ctx.lineWidth=1.5;ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius*(.3+.6*k),pond.radius*.7*(.3+.6*k),0,0,Math.PI*2);ctx.stroke();ctx.restore();}
     }
     function shadowUnder(o){
@@ -576,7 +608,8 @@
           const attacking=['charge','bite','slam'].includes(e.mode), winding=e.mode==='windup';
           const state=attacking||winding?'attack':e.hit>0?'hurt':e.moving?(e.mode==='flee'||e.mode==='burst'?'run':'walk'):'idle';
           const frame=state==='attack'?(winding?Math.min(2,Math.floor((1-e.timer/(e.windupDuration||.6))*3)):(e.mode==='charge'?Math.min(5,3+Math.max(0,Math.floor((1-e.timer/(e.speciesSkill?C.PLAYER_SPECIES[e.kind].abilityTime:e.boss?(e.kind==='carnotaurus'?.58:.65):.55))*3))):e.timer>(e.boss?.12:.1)?2:Math.min(5,3+Math.floor((1-e.timer/(e.boss?.12:.1))*3)))):state==='hurt'?Math.min(1,Math.floor((.15-e.hit)*8)):state==='idle'?(C.FEATURES.stableIdle?0:Math.floor(e.poseTime*4)%4):C.locomotionFrame(e.gaitPhase??e.walk*(state==='run'?12:8)/6,e.hp,e.maxHP);
-          const path=enemyFrame(e.kind,state,e.direction,frame);
+          const behavior=authoredBehaviorPath(e.kind,state,e.direction,frame,e.hp,e.maxHP,e.mode==='rest'&&(e.naturalTime||0)%22<8&&C.isWater(r.stage,map,e,-70)?'drink':e.mode,e.naturalTime||0);
+          const path=behavior&&catalog[behavior]&&catalog[behavior].runtime_enabled!==false?behavior:enemyFrame(e.kind,state,e.direction,frame);
           objects.push({...e,enemy:e,path,rotation:0});
         }
         for(const corpse of r.corpses||[]){const stage=corpse.age>=(corpse.foodLifetime||18)?'skeleton':corpse.age>=7?'decayed':null,prop=stage?'assets/corpses/'+corpse.kind+'_'+stage+'_'+corpse.direction+'_'+(corpse.poseVariant||0)+'.png':null;objects.push({...corpse,corpse:true,path:prop&&catalog[prop]?prop:enemyFrame(corpse.kind,'death',corpse.direction,Math.min(5,Math.floor(corpse.age*8)))});}
@@ -584,7 +617,8 @@
         const animationState = r.deathTime >= 0 ? 'death' : r.attack ? 'attack' : r.hurt > 0 ? 'hurt' : p.moving ? (r.pounce > 0 ? 'run' : 'walk') : 'idle';
         const animationDirection = r.attack && animationState === 'attack' ? r.attack.facing : p.facing;
         const animationFrame = animationState === 'death' ? Math.min(5, Math.floor(r.deathTime * 8)) : animationState === 'hurt' ? Math.min(1, Math.floor((.25 - r.hurt) * 8)) : animationState === 'attack' ? Math.min(5, Math.floor(r.attack.elapsed / r.attack.duration * 6)) : animationState === 'idle' ? (C.FEATURES.stableIdle?0:Math.floor(r.seconds * 4) % 4) : C.locomotionFrame(p.gaitPhase??p.walk*(animationState==='run'?12:8)/6,r.health,r.maxHealth);
-        const fullPath = C.playerFrame(r.species,animationState,animationDirection,animationFrame);
+        const behavior=authoredBehaviorPath(r.species,animationState,animationDirection,animationFrame,r.health,r.maxHealth);
+        const fullPath = behavior&&catalog[behavior]&&catalog[behavior].runtime_enabled!==false?behavior:C.playerFrame(r.species,animationState,animationDirection,animationFrame);
         const playerPath = catalog[fullPath]&&(images[fullPath]||!fullPath.startsWith('assets/species_attacks/'))?fullPath:C.legacyPlayerFrame(r.species,animationState,animationDirection,animationFrame);
         canvas.dataset.playerAnimation = animationState + ':' + animationFrame;
         const resultPreview = shell.querySelector('.death-preview'); if (resultPreview && catalog[fullPath]) resultPreview.src = displayImageURL(fullPath);
@@ -616,7 +650,7 @@
           else if (d < 300) { const fed = r.pickups.some(p => p.corpseId !== undefined && p.value > 0 && Math.hypot(p.x - a.x, p.y - a.y) < C.PACK.meatReach); label(d < 160 && fed ? 'VILD RAPTOR · ' + keyLabel('interact') + ' FODR' : d < 160 ? 'VILD RAPTOR · LÆG KØD HER' : 'VILD RAPTOR', a.x, a.y - 44, '#a2d4c1'); } }
         if (o.enemy) { const e = o.enemy, near = r && Math.hypot(e.x - r.player.x, e.y - r.player.y) < 230, special = e.boss || e.elite || e.rare || e.miniboss;
           if (special || near) label((e.boss ? '◆ ' : e.miniboss ? '☠ ' : e.elite ? '★ ' : e.rare ? '✦ ' : e.damage ? '⚠ ' : '') + (e.rivalName || C.SPECIES_LABELS[e.kind]), o.x, o.y - enemyLabelOffset(e), e.miniboss ? '#e9b75a' : e.damage ? '#ed7869' : '#8eaa60');
-          const icon = MODE_ICON[e.mode]; if (icon && !e.boss) { ctx.save(); ctx.font = 'bold 14px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713'; const iy = Math.round(o.y - enemyLabelOffset(e) - (special || near ? 16 : 0)); ctx.strokeText(icon[0], Math.round(o.x), iy); ctx.fillStyle = icon[1]; ctx.fillText(icon[0], Math.round(o.x), iy); ctx.restore(); } }
+          const icon = MODE_ICON[e.mode]; if (icon && !e.boss && !(near && /^assets\/behavior(?:_native)?\//.test(o.path) && ['graze','drink','rest'].includes(e.mode))) { ctx.save(); ctx.font = 'bold 14px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713'; const iy = Math.round(o.y - enemyLabelOffset(e) - (special || near ? 16 : 0)); ctx.strokeText(icon[0], Math.round(o.x), iy); ctx.fillStyle = icon[1]; ctx.fillText(icon[0], Math.round(o.x), iy); ctx.restore(); } }
         if (o.enemy && o.enemy.boss) {
           if (o.enemy.mode === 'recover') {
             const e = o.enemy; ctx.strokeStyle = '#a2d4c1'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(Math.round(e.x - e.facingX * 24), Math.round(e.y - e.facingY * 24), 18, 0, Math.PI * 2); ctx.stroke(); label('ÅBEN FLANKE · +25 %', e.x, e.y - enemyLabelOffset(e) - 18, '#a2d4c1');
@@ -801,8 +835,8 @@
       const timer=setTimeout(()=>done(false),15000);image.onload=()=>done(true);image.onerror=()=>done(false);image.src=resolve(path)+(attempt?(resolve(path).includes('?')?'&':'?')+'retry='+attempt:'');
     });}
     function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[],menu=false}={},onProgress=null){if(menu){const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||path.includes('/'+species+'_idle_')));return Promise.all(paths.map(p=>loadImage(p)));} // menu: UI + chosen species only (~200 files; GitHub Pages rate limits per IP). Everything else loads at START or on demand.
-    const animals=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss),...kinds]);const paths=Object.keys(catalog).filter(path=>!/(species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||Array.from(animals).some(id=>path.includes('/'+id+'_')));let loadedCount=0;const total=paths.length;return Promise.all(paths.map(p=>loadImage(p).then(ok=>{loadedCount++;if(onProgress)onProgress(loadedCount,total);return ok;})));}
-    function evictUnused(stage,species){const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);for(const path of Object.keys(images))if(/(species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);prepared.delete(path);}}
+    const animals=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss),...kinds]);const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||Array.from(animals).some(id=>path.includes('/'+id+'_'))));let loadedCount=0;const total=paths.length;return Promise.all(paths.map(p=>loadImage(p).then(ok=>{loadedCount++;if(onProgress)onProgress(loadedCount,total);return ok;})));}
+    function evictUnused(stage,species){const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);for(const path of Object.keys(images))if(/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);prepared.delete(path);}}
     const querySeed=new URL(location.href).searchParams.get('seed');if(querySeed&&/^\d{1,10}$/.test(querySeed)&&Number(querySeed)<=4294967295)seedInput=querySeed;
     const load = preload({ menu: true }).then(() => { ready = true; renderScreen(true); return true; }).catch(e => { game.phase = 'error'; renderScreen(true); screen.querySelector('.load-error').textContent = e.message; return false; });
     const api = { telegraphShape: (e, r = game.run) => telegraphShape(r, e), preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,decodedBytes:[...Object.values(images),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values()].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };

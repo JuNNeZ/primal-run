@@ -1,0 +1,24 @@
+{
+  "species": "baryonyx",
+  "action": "rest",
+  "all_rows_direction": "W",
+  "source": "baryonyx_rest_W_revision3.png",
+  "source_sha256": "124bcae841e52cca8fc71e05b7189aea0f8635a4d3eec4d8f8007a68976bf48d",
+  "reference": "baryonyx_rest_W_canonical_layout.png",
+  "reference_sha256": "4a568c866c27ecfdb53d618543e90ba4c18279071700d155915198c6af97703f",
+  "prompt": "Faithfully edit the attached sheet, keeping all 16 exact same canonical baryonyx sprites facing W. TRANSPARENT 1536x1024,4columns384x4rows256. Every row SAME direction W, NOT otherdirections. Hip EXACT192,128 within everycell. Everyanimals EXACTnative144x144 enlarged2x placed48,-16. DO NOT enlarge,bloat or reposition any sprite. Exactcanonicaloutline,extents,bodythickness,tailcurve,colours. Columns0/1 ONLY eyesclose for sleep; columns2/3 ONLY forearm moves2sourcepixelswithinexistingfootprint for gentlegroom, torsoandlegsremainexactold. Two identicalreference bodycopies per action canhave2pixelheadchange only. Crisp existingcoarsepixels preserved, NO highresolution repaint,no addedhair/limbs/shadows. Match given anatomy exactly, minimal drawing.",
+  "revision": 3,
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "cell": [
+    384,
+    256
+  ],
+  "hip": [
+    192,
+    128
+  ],
+  "sample": 2,
+  "review_status": "awaiting native ratio comparison; final attempt"
+}

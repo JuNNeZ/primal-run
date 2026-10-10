@@ -828,5 +828,167 @@
       "S": "Source_Generated/corpses/carnotaurus_horn_revision1.png",
       "N": "Source_Generated/corpses/carnotaurus_horn_revision1.png"
     }
+  },
+  {
+    "species": "utahraptor",
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "anchors": [
+      [
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ]
+      ],
+      [
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ]
+      ],
+      [
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ]
+      ],
+      [
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ]
+      ]
+    ],
+    "source_sample_stride": 4,
+    "review_status": "prototype_static; native scale review required"
+  },
+  {
+    "species": "velociraptor",
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "anchors": [
+      [
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ]
+      ],
+      [
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ]
+      ],
+      [
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ]
+      ],
+      [
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ],
+        [
+          192,
+          128
+        ]
+      ]
+    ],
+    "source_sample_stride": 6,
+    "review_status": "prototype_static; native scale review required"
   }
 ]

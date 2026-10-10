@@ -1,0 +1,65 @@
+{
+  "species": "baryonyx",
+  "family": "behavior_native",
+  "action": "rest",
+  "source": "baryonyx_rest_revision2.png",
+  "source_sha256": "36569a21a95af6b0fc21e225be76d0a76f7ef85c3cd7ee83fd917e50c725f87c",
+  "reference": "baryonyx_canonical_layout.png",
+  "reference_sha256": "b815ce4cbccf58d490ffe810fde1b81c4b2b5a33b3cc6288d760b3485f6b421d",
+  "prompt": "Use reference1 canonical layout as PIXELSIZE/SILHOUETTE MASTER. Reference2 is rejected behaviorstudy ONLY illustrating actions; it is too thick and must notdeterminebody size. Output transparent1536x1024,4columns384\u00d74rows256 S,N,E,W fixedhip192,128 ineachcell. Fullcanonicalnative144\u00d7144spriteat2x placed48,-16. Correct ONLY E/W rows2/3: old canonical wholeanimals are thinner. Rejectedeast/west silhouettes inflated width/bodythickness 30\u201349%. E/W canonical has slim torsoleavingarms narrow; one tailonly. Copy unchangedbodypixeloutline fromreference1 with EXACTSAMEscale,bodyvolume,colourmarks,tailwidthandlength,feetspan. No recentering. Columns0/1 sleeping with eyeclosedonly, sameawakebodysilhouette. Columns2/3 scratch: ONLY one existingfootmoves2\u20134sourcepixelsINSIDEthecanonicaloutline, no new arm/legoutgrowth. Remainingdirections keep reference2 poses but exactreference1scale. Original harshpixelart2xclusters, no gradient,no drop shadow,no addeddetail. Exactoldbodyfaithful,veryminimalmotion.",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "cell_size": [
+    384,
+    256
+  ],
+  "rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "source_hip": [
+    192,
+    128
+  ],
+  "sampling": 2,
+  "native_canvas": [
+    144,
+    144
+  ],
+  "native_origin": [
+    72,
+    72
+  ],
+  "concerns": [
+    "Minimal pose study, not anatomy approved",
+    "Halo requires hard alpha export",
+    "No bbox recentering allowed"
+  ],
+  "canonical_references": [
+    {
+      "file": "assets/player_full/baryonyx_idle_S_000.png",
+      "sha256": "19a0fceef49d4d1323b8ba1c01639b3dbf78fc6a652b4cfd9953c9661a6cb790"
+    },
+    {
+      "file": "assets/player_full/baryonyx_idle_N_000.png",
+      "sha256": "f3e571b0c18a504bac1cfd49f26680ed2e0f39cdc2b0ed1a8bef1471ba888a00"
+    },
+    {
+      "file": "assets/player_full/baryonyx_idle_E_000.png",
+      "sha256": "6a4da4518178b771d312e1a114e5ff20aeda2b2f70e99258bbf2d2cf601e40f9"
+    },
+    {
+      "file": "assets/player_full/baryonyx_idle_W_000.png",
+      "sha256": "b85ec0234339136c8bde16cacd9ef70e1ab6b77f5961633b107b41317f0c8146"
+    }
+  ],
+  "canonical_layout_sha256": "b815ce4cbccf58d490ffe810fde1b81c4b2b5a33b3cc6288d760b3485f6b421d",
+  "rejected_reference": "baryonyx_rest_revision1.png",
+  "rejected_reference_sha256": "c5af67077c1e2fda23808dff00f9d0d97ef848468cf99913af526407cfc6c779",
+  "revision": 2,
+  "correction": "canonical body silhouette; no export rescaling",
+  "review_status": "awaiting native ratio comparison"
+}

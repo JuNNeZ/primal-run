@@ -1,0 +1,418 @@
+{
+  "species": "utahraptor",
+  "source": "Source_Generated/behavior_limp/utahraptor_revision2.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "canonical_reference": "Source_Generated/behavior_limp/utahraptor_canonical_walk23_reference.png",
+  "status": "prototype_static",
+  "runtime_enabled": false,
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Native light/dark reviewed. Usable poses retain size, silhouette and tail with held hindfoot. Failed poses retain native fallback; authored changes remain unapproved prototypes.",
+  "frames": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/utahraptor_limp_S_002.png",
+      "species": "utahraptor",
+      "direction": "S",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/utahraptor_revision2.png",
+      "source_sha256": "2b6372ea86bb5efc6999b97517e2f88801815f5ebb6590627d89bef7bff919b4",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        144
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/utahraptor_walk_S_002.png",
+      "canonical_sha256": "982f52b59d1182e31b7a7f3a8704ee2d42c7838cd58694e004a6a09e4314cf80",
+      "export_sha256": "877d61ba796dfe2e661d338e161912cefaa0ae4895095eee6ea927eaf9f86c11",
+      "silhouette_iou": 0.9049,
+      "extent_ratios": [
+        1.0,
+        0.9787234042553191
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/utahraptor_limp_S_003.png",
+      "species": "utahraptor",
+      "direction": "S",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/utahraptor_revision2.png",
+      "source_sha256": "2b6372ea86bb5efc6999b97517e2f88801815f5ebb6590627d89bef7bff919b4",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        144
+      ],
+      "origin": [
+        72,
+        80
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/utahraptor_walk_S_003.png",
+      "canonical_sha256": "85a938f52aa27b69906a524f026741ee0267c2aa25e890e0498531212f884be9",
+      "export_sha256": "1de75b7d2babec87e1bfb4950eeae3a38a4e8dd37b9684a20079e4089b3281a7",
+      "silhouette_iou": 0.9117,
+      "extent_ratios": [
+        0.9210526315789473,
+        0.9893617021276596
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/utahraptor_limp_N_002.png",
+      "species": "utahraptor",
+      "direction": "N",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/utahraptor_revision2.png",
+      "source_sha256": "2b6372ea86bb5efc6999b97517e2f88801815f5ebb6590627d89bef7bff919b4",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        112
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/utahraptor_walk_N_002.png",
+      "canonical_sha256": "200067c1767cc9cf33717d2ed0c2a5a4120882cec59ee6c444a26cc6501107ad",
+      "export_sha256": "9a635868fc74d59fef55298383f6adf840138875691a204165a66a2640a64f2e",
+      "silhouette_iou": 0.914,
+      "extent_ratios": [
+        0.975,
+        0.9886363636363636
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/utahraptor_limp_N_003.png",
+      "species": "utahraptor",
+      "direction": "N",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/utahraptor_revision2.png",
+      "source_sha256": "2b6372ea86bb5efc6999b97517e2f88801815f5ebb6590627d89bef7bff919b4",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        112
+      ],
+      "origin": [
+        72,
+        64
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/utahraptor_walk_N_003.png",
+      "canonical_sha256": "6e81dfd9c8dc2c96ae64ec9b61a57ade360878142ed51fc420a30bee25bc6ae8",
+      "export_sha256": "72a2e4f1509955436ba54f1a7d3f3d0cee00956ea7f8143b070f1a2b1dcf5023",
+      "silhouette_iou": 0.9424,
+      "extent_ratios": [
+        1.0,
+        0.9887640449438202
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/utahraptor_limp_E_002.png",
+      "species": "utahraptor",
+      "direction": "E",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/utahraptor_revision2.png",
+      "source_sha256": "2b6372ea86bb5efc6999b97517e2f88801815f5ebb6590627d89bef7bff919b4",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        200,
+        128
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/utahraptor_walk_E_002.png",
+      "canonical_sha256": "2a9358b69308da81382561aabc897e0fde64b56d8221bc85c2e75120044f05e9",
+      "export_sha256": "6ed14e0d0bf7a837b0fbd522df191940cbd04e29cf2e371f996312520804290b",
+      "silhouette_iou": 0.9218,
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/utahraptor_limp_E_003.png",
+      "species": "utahraptor",
+      "direction": "E",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/utahraptor_revision2.png",
+      "source_sha256": "2b6372ea86bb5efc6999b97517e2f88801815f5ebb6590627d89bef7bff919b4",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        200,
+        128
+      ],
+      "origin": [
+        76,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/utahraptor_walk_E_003.png",
+      "canonical_sha256": "bfdf47ae5bd4727c6382a51111873b0b7f4373f2c9ea86543aa49cec1d3b0534",
+      "export_sha256": "f74f2a0887180a2a2b8460e6960dc9dfb2dccc4c240a87076b9d830581ea12b2",
+      "silhouette_iou": 0.9267,
+      "extent_ratios": [
+        0.9915966386554622,
+        0.9795918367346939
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/utahraptor_limp_W_002.png",
+      "species": "utahraptor",
+      "direction": "W",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/utahraptor_revision2.png",
+      "source_sha256": "2b6372ea86bb5efc6999b97517e2f88801815f5ebb6590627d89bef7bff919b4",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        184,
+        128
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/utahraptor_walk_W_002.png",
+      "canonical_sha256": "6a403fe084cbdf3a39a514dd605059474ad04ab95d46033fbd3f0ee6ca8fe524",
+      "export_sha256": "db58d4c0995b01f93615d60de3e27cea4885a98609e59d595c7cf62d8b8f039d",
+      "silhouette_iou": 0.8916,
+      "extent_ratios": [
+        0.9743589743589743,
+        1.0
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/utahraptor_limp_W_003.png",
+      "species": "utahraptor",
+      "direction": "W",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/utahraptor_revision2.png",
+      "source_sha256": "2b6372ea86bb5efc6999b97517e2f88801815f5ebb6590627d89bef7bff919b4",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        184,
+        128
+      ],
+      "origin": [
+        68,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/utahraptor_walk_W_003.png",
+      "canonical_sha256": "c1e650bbe1c1fc1b8fab1876488352f83495bc9336a6b88b7aea8373b1ff964c",
+      "export_sha256": "e4fa6ccaf08cfc78ed3cb0d5e278238ba2f7cfd969e4727524d5c3c3c44f72a3",
+      "silhouette_iou": 0.9144,
+      "extent_ratios": [
+        0.9743589743589743,
+        0.9821428571428571
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    }
+  ],
+  "prompt_file": "Source_Generated/behavior_limp/utahraptor_revision2_prompt.txt",
+  "source_sha256": "2b6372ea86bb5efc6999b97517e2f88801815f5ebb6590627d89bef7bff919b4"
+}
