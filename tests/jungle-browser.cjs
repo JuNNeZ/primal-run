@@ -4,7 +4,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
 (async()=>{const browser=await chromium.launch(browserOptions());let errors=[];try{
  const url=process.env.PRIMAL_GAME_URL||await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/index.html'));
  for(const [width,height] of [[1440,950],[390,844],[844,390]]){
-  const p=await browser.newPage({viewport:{width,height}});p.on('pageerror',e=>errors.push(String(e)));p.on('response',r=>{if(r.status()>=400)errors.push(r.url())});await p.goto(url);await p.waitForFunction(()=>primalRun&&document.querySelector('[data-action=start]:not(:disabled)'));
+  const p=await browser.newPage({viewport:{width,height}});p.on('pageerror',e=>errors.push(String(e)));p.on('response',r=>{if(r.status()>=400)errors.push(r.url())});await p.goto(url);await p.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{});await p.waitForFunction(()=>primalRun&&document.querySelector('[data-action=start]:not(:disabled)'));
   assert.equal(await p.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-scene'),'jungle');const before=+(await p.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-menu-time'));await p.waitForTimeout(300);assert.ok(+(await p.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-menu-time'))>before);assert.ok(await p.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-menu-actors'));
   await p.emulateMedia({reducedMotion:'reduce'});await p.waitForTimeout(100);const frozen=await p.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-menu-time');await p.waitForTimeout(150);assert.equal(await p.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-menu-time'),frozen);await p.emulateMedia({reducedMotion:'no-preference'});
   await p.locator('[data-action=start]').click();await p.locator('[data-action=begin]').click();await p.waitForFunction(()=>primalRun.game.phase==='playing');await p.keyboard.press('Escape');await p.waitForFunction(()=>primalRun.game.phase==='paused');await p.waitForTimeout(100);
@@ -20,7 +20,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
      if(checked<10)throw Error(species+' has no actual species palette on its body');result.push({species,checked});
     }
     return result;
-   });assert.equal(colors.length,11);
+   });assert.equal(colors.length,12);
   }
   if(process.env.PRIMAL_EXPECT_GDEVELOP)assert.equal(await p.evaluate(()=>typeof gdjs.RuntimeGame),'function');await p.close();
  }

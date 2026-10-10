@@ -7,7 +7,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     const page = await browser.newPage({ viewport: { width: 1280, height: 1000 } }), errors = [];
     page.on('pageerror', e => errors.push(String(e)));
     const url = process.env.PRIMAL_GAME_URL || await localURL(path.resolve(__dirname, '../PRIMAL_RUN_Game/index.html'));
-    await page.goto(url); await page.waitForFunction(() => window.primalRun && document.querySelector('[data-action="start"]:not(:disabled)'));
+    await page.goto(url);await page.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{}); await page.waitForFunction(() => window.primalRun && document.querySelector('[data-action="start"]:not(:disabled)'));
     // This regression suite verifies the unlocked Utahraptor combat profile.
     await page.evaluate(() => { const g=primalRun.game; g.save.unlockedSpecies.push('utahraptor'); g.selectSpecies('utahraptor'); });
     await page.locator('[data-action="start"]').click();

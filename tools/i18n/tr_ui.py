@@ -425,3 +425,15 @@ UI = [
 ("Nyt i oktober-opdateringen →","What's new in the October update →","Neu im Oktober-Update →","Nytt i oktoberuppdateringen →","Nytt i oktoberoppdateringen →","10月アップデートの新要素 →","十月更新内容 →"),
 ("fremgang gemmes kun i denne session","progress is saved for this session only","Fortschritt wird nur in dieser Sitzung gespeichert","framsteg sparas endast i denna session","fremgang lagres kun i denne økten","進行状況はこのセッションのみ保存","进度仅保存在本次会话"),
 ]
+
+UI += [
+('DIT BUILD','YOUR BUILD','DEIN BUILD','DITT BUILD','DITT BUILD','ビルド','你的构筑'),
+('Dit build','Your build','Dein Build','Ditt build','Ditt build','ビルド','你的构筑'),
+('Ingen mutationer endnu.','No mutations yet.','Noch keine Mutationen.','Inga mutationer ännu.','Ingen mutasjoner ennå.','まだ変異はない。','尚无变异。'),
+('← Tilbage til pause','← Back to pause','← Zurück zur Pause','← Tillbaka till paus','← Tilbake til pause','← ポーズに戻る','← 返回暂停'),
+('FORLADT REDE','ABANDONED NEST','VERLASSENES NEST','ÖVERGIVET BO','FORLATT REDE','空の巣','无人守卫的巢'),
+('FRUGT','FRUIT','FRÜCHTE','FRUKT','FRUKT','果実','水果'),
+('RØDDER','ROOTS','WURZELN','RÖTTER','RØTTER','根','根茎'),
+('SVAMPE','MUSHROOMS','PILZE','SVAMP','SOPP','キノコ','蘑菇'),
+]
+UI += [('GIFTIGE SVAMPE','POISONOUS MUSHROOMS','GIFTIGE PILZE','GIFTIG SVAMP','GIFTIG SOPP','毒キノコ','毒蘑菇')]

@@ -94,9 +94,9 @@ test('achievements unlock once, pay DNA, unlock species and skins, and survive s
   const saved = C.sanitizeSave(JSON.parse(JSON.stringify(g.save))); assert.ok(saved.achievements.firstBoss); assert.ok(saved.unlockedSpecies.includes('baryonyx')); assert.ok(g.setSkin('male')); assert.equal(g.setSkin('albino'), false);
 });
 
-test('fresh saves only have Velociraptor; pre-overhaul saves keep Compy; lifetime stats bank once per run', () => {
-  assert.deepEqual(C.sanitizeSave({}).unlockedSpecies.slice().sort(), ['velociraptor'].sort());
-  const fresh = C.sanitizeSave({ version: 2 }); assert.deepEqual(fresh.unlockedSpecies, ['velociraptor']);
+test('fresh saves unlock Deinonychus and retain Velociraptor; pre-overhaul saves keep Compy; lifetime stats bank once per run', () => {
+  assert.deepEqual(C.sanitizeSave({}).unlockedSpecies.slice().sort(), ['deinonychus','velociraptor'].sort());
+  const fresh = C.sanitizeSave({ version: 2 }); assert.deepEqual(fresh.unlockedSpecies, ['deinonychus','velociraptor']);
   assert.ok(C.sanitizeSave({ version: 1, unlockedSpecies: ['utahraptor'] }).unlockedSpecies.includes('compy'));
   const g = new C.Game({ random: () => .5 }); g.start({ seed: 4 }); g.run.stats.kills = 7; g.finish(false); g.finish(false); g.bankLifetime(false);
   assert.equal(g.save.lifetime.runs, 1); assert.equal(g.save.lifetime.kills, 7);

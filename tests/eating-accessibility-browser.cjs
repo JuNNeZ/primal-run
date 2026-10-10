@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),path=require('node:path'),fs=require(
 const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
 (async()=>{const browser=await chromium.launch(browserOptions());try{
  const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
- await page.goto(process.env.PRIMAL_GAME_URL||await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/index.html')));await page.waitForSelector('[data-action="start"]:not(:disabled)');
+ await page.goto(process.env.PRIMAL_GAME_URL||await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/index.html')));await page.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{});await page.waitForSelector('[data-action="start"]:not(:disabled)');
  const startup=await page.evaluate(()=>primalRun.assetStats());assert.ok(startup.loaded<startup.total*.8,'boot must not eagerly load every frame');
  await page.locator('#map-seed').fill('123456');await page.locator('[data-action="start"]').click();await page.locator('[data-action="begin"]').click();await page.waitForFunction(()=>primalRun.game.phase==='playing');assert.equal(await page.evaluate(()=>primalRun.game.run.seed),123456);
  const foodValue=await page.evaluate(()=>{const g=primalRun.game,r=g.run;r.enemies=[];r.map.events=[];r.map.rocks=[];r.spawnTimer=999;g.kill(g.spawn('parasaurolophus',{...r.player}));r.enemies=[];return r.pickups.find(p=>p.kind==='meat').value;});

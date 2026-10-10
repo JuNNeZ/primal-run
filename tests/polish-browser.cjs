@@ -6,7 +6,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
   if (evidence) fs.mkdirSync(evidence, { recursive: true });
   try {
     const page = await browser.newPage({ viewport: { width: 1280, height: 900 } }); page.on('pageerror', e => errors.push(String(e)));
-    await page.goto(process.env.PRIMAL_GAME_URL || await localURL(path.resolve(__dirname, '../PRIMAL_RUN_Game/index.html')));
+    await page.goto(process.env.PRIMAL_GAME_URL || await localURL(path.resolve(__dirname, '../PRIMAL_RUN_Game/index.html')));await page.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{});
     await page.waitForSelector('[data-action="start"]:not(:disabled)');await page.evaluate(async()=>{for(const species of Object.keys(PrimalCore.PLAYER_SPECIES))await primalRun.preload({species,stage:3,kinds:Object.keys(PrimalCore.SPECIES)});}); await page.evaluate(() => { const g=primalRun.game; g.save.unlockedSpecies.push('utahraptor'); g.selectSpecies('utahraptor'); }); await page.locator('[data-action="start"]').click(); await page.locator('[data-action="begin"]').click();await page.waitForFunction(()=>primalRun.game.phase==='playing');
     const terrain = [];
     for (let stage = 0; stage < 4; stage++) {

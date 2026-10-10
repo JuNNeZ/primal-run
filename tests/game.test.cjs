@@ -70,7 +70,7 @@ test('first biome opens with three weak enemies and ramps composition, caps and 
 test('Compy separates from its pack and telegraphs one bite instead of unavoidable contact damage', () => {
   const g = make(), r = g.run, a = g.spawn('compy', { x: 600, y: 340 }), b = g.spawn('compy', { x: 604, y: 340 });
   g.enemyStep(a, .05); g.enemyStep(b, .05); assert.ok(b.x - a.x > 4, 'pack members spread apart');
-  r.enemies = [a]; a.x = r.player.x + 20; a.y = r.player.y; a.cooldown = 0; g.provoke(a); // compys only bite once provoked (they are thieves first)
+  r.enemies = [a];a.herdId='regression-pack';for(let i=0;i<3;i++){const mate=g.spawn('compy',{x:650+i*20,y:360});mate.herdId=a.herdId;mate.alert=true;} a.x = r.player.x + 20; a.y = r.player.y; a.cooldown = 0; g.provoke(a); // compys only bite once provoked (they are thieves first)
   g.enemyStep(a, .01); assert.equal(a.mode, 'windup'); assert.equal(r.health, 100);
   a.timer = .001; g.enemyStep(a, .01); assert.equal(a.mode, 'bite');
   g.enemyStep(a, .1); assert.equal(r.health, 97); r.invulnerable = 0;

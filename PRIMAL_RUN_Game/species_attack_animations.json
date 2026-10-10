@@ -1,0 +1,260 @@
+{
+  "animations": [
+    {
+      "species": "triceratops",
+      "direction": "S",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/triceratops_attack_S_000.png",
+        "assets/species_attacks/triceratops_attack_S_001.png",
+        "assets/species_attacks/triceratops_attack_S_002.png",
+        "assets/species_attacks/triceratops_attack_S_003.png",
+        "assets/species_attacks/triceratops_attack_S_004.png",
+        "assets/species_attacks/triceratops_attack_S_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "N",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/triceratops_attack_N_000.png",
+        "assets/species_attacks/triceratops_attack_N_001.png",
+        "assets/species_attacks/triceratops_attack_N_002.png",
+        "assets/species_attacks/triceratops_attack_N_003.png",
+        "assets/species_attacks/triceratops_attack_N_004.png",
+        "assets/species_attacks/triceratops_attack_N_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "E",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/triceratops_attack_E_000.png",
+        "assets/species_attacks/triceratops_attack_E_001.png",
+        "assets/species_attacks/triceratops_attack_E_002.png",
+        "assets/species_attacks/triceratops_attack_E_003.png",
+        "assets/species_attacks/triceratops_attack_E_004.png",
+        "assets/species_attacks/triceratops_attack_E_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "W",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/triceratops_attack_W_000.png",
+        "assets/species_attacks/triceratops_attack_W_001.png",
+        "assets/species_attacks/triceratops_attack_W_002.png",
+        "assets/species_attacks/triceratops_attack_W_003.png",
+        "assets/species_attacks/triceratops_attack_W_004.png",
+        "assets/species_attacks/triceratops_attack_W_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "S",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/ankylosaurus_attack_S_000.png",
+        "assets/species_attacks/ankylosaurus_attack_S_001.png",
+        "assets/species_attacks/ankylosaurus_attack_S_002.png",
+        "assets/species_attacks/ankylosaurus_attack_S_003.png",
+        "assets/species_attacks/ankylosaurus_attack_S_004.png",
+        "assets/species_attacks/ankylosaurus_attack_S_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "N",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/ankylosaurus_attack_N_000.png",
+        "assets/species_attacks/ankylosaurus_attack_N_001.png",
+        "assets/species_attacks/ankylosaurus_attack_N_002.png",
+        "assets/species_attacks/ankylosaurus_attack_N_003.png",
+        "assets/species_attacks/ankylosaurus_attack_N_004.png",
+        "assets/species_attacks/ankylosaurus_attack_N_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "E",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/ankylosaurus_attack_E_000.png",
+        "assets/species_attacks/ankylosaurus_attack_E_001.png",
+        "assets/species_attacks/ankylosaurus_attack_E_002.png",
+        "assets/species_attacks/ankylosaurus_attack_E_003.png",
+        "assets/species_attacks/ankylosaurus_attack_E_004.png",
+        "assets/species_attacks/ankylosaurus_attack_E_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "W",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/ankylosaurus_attack_W_000.png",
+        "assets/species_attacks/ankylosaurus_attack_W_001.png",
+        "assets/species_attacks/ankylosaurus_attack_W_002.png",
+        "assets/species_attacks/ankylosaurus_attack_W_003.png",
+        "assets/species_attacks/ankylosaurus_attack_W_004.png",
+        "assets/species_attacks/ankylosaurus_attack_W_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "S",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/pachycephalosaurus_attack_S_000.png",
+        "assets/species_attacks/pachycephalosaurus_attack_S_001.png",
+        "assets/species_attacks/pachycephalosaurus_attack_S_002.png",
+        "assets/species_attacks/pachycephalosaurus_attack_S_003.png",
+        "assets/species_attacks/pachycephalosaurus_attack_S_004.png",
+        "assets/species_attacks/pachycephalosaurus_attack_S_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "N",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/pachycephalosaurus_attack_N_000.png",
+        "assets/species_attacks/pachycephalosaurus_attack_N_001.png",
+        "assets/species_attacks/pachycephalosaurus_attack_N_002.png",
+        "assets/species_attacks/pachycephalosaurus_attack_N_003.png",
+        "assets/species_attacks/pachycephalosaurus_attack_N_004.png",
+        "assets/species_attacks/pachycephalosaurus_attack_N_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "E",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/pachycephalosaurus_attack_E_000.png",
+        "assets/species_attacks/pachycephalosaurus_attack_E_001.png",
+        "assets/species_attacks/pachycephalosaurus_attack_E_002.png",
+        "assets/species_attacks/pachycephalosaurus_attack_E_003.png",
+        "assets/species_attacks/pachycephalosaurus_attack_E_004.png",
+        "assets/species_attacks/pachycephalosaurus_attack_E_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "W",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/pachycephalosaurus_attack_W_000.png",
+        "assets/species_attacks/pachycephalosaurus_attack_W_001.png",
+        "assets/species_attacks/pachycephalosaurus_attack_W_002.png",
+        "assets/species_attacks/pachycephalosaurus_attack_W_003.png",
+        "assets/species_attacks/pachycephalosaurus_attack_W_004.png",
+        "assets/species_attacks/pachycephalosaurus_attack_W_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "S",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/gallimimus_attack_S_000.png",
+        "assets/species_attacks/gallimimus_attack_S_001.png",
+        "assets/species_attacks/gallimimus_attack_S_002.png",
+        "assets/species_attacks/gallimimus_attack_S_003.png",
+        "assets/species_attacks/gallimimus_attack_S_004.png",
+        "assets/species_attacks/gallimimus_attack_S_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "N",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/gallimimus_attack_N_000.png",
+        "assets/species_attacks/gallimimus_attack_N_001.png",
+        "assets/species_attacks/gallimimus_attack_N_002.png",
+        "assets/species_attacks/gallimimus_attack_N_003.png",
+        "assets/species_attacks/gallimimus_attack_N_004.png",
+        "assets/species_attacks/gallimimus_attack_N_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "E",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/gallimimus_attack_E_000.png",
+        "assets/species_attacks/gallimimus_attack_E_001.png",
+        "assets/species_attacks/gallimimus_attack_E_002.png",
+        "assets/species_attacks/gallimimus_attack_E_003.png",
+        "assets/species_attacks/gallimimus_attack_E_004.png",
+        "assets/species_attacks/gallimimus_attack_E_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "W",
+      "state": "attack",
+      "frames": [
+        "assets/species_attacks/gallimimus_attack_W_000.png",
+        "assets/species_attacks/gallimimus_attack_W_001.png",
+        "assets/species_attacks/gallimimus_attack_W_002.png",
+        "assets/species_attacks/gallimimus_attack_W_003.png",
+        "assets/species_attacks/gallimimus_attack_W_004.png",
+        "assets/species_attacks/gallimimus_attack_W_005.png"
+      ],
+      "contact_frame": 3,
+      "loop": false,
+      "production_approved": false
+    }
+  ]
+}

@@ -12,7 +12,12 @@ ind i overhaulen; grundlagene har forskellige balance- og renderændringer.
 
 - Deinosuchus som spiller: implementeret; fuld testpakke består (126 kernetests, 20 browser-suiter, 3 kit-kontroller) plus ekstra tradeoff-test. Før/efter:180/198 runs; 60 eksisterende art/stil-grupper uændrede. Genbrug eksisterende
   120 levende frames samt eksisterende 16 ådsel-/skeletposes; ingen nye anatomiske tegninger.
-- A1 artsangreb: fem rå prototypeark er bevaret; endnu ikke eksporteret eller integreret. Parasaurolophus er forkastet pga. ændret kameravinkel; Ankylosaurus kræver slutpose-rettelse.
+- Deinonychus: gratis startart integreret fra den bevarede snapshot, 120 native frames og fem egne rariteter; eksisterende saves beholder valgt art.
+- HUD: 240 separate hovedposes for 12 spilbare arter, fem reaktioner; rå kilder og forkastet body-atlas bevaret.
+- A1 artsangreb: 96 native prototypeframes integreret for Triceratops, Ankylosaurus, Pachycephalosaurus og Gallimimus. Ankylosaurus South-recovery er rettet; øvrige23 celler bruger oprindelig kilde. Parasaurolophus mangler stadig et tydeligt kontakt-spark; to udkast er forkastet og bevaret.
+- Føde: otte nye ground-pickups, deterministisk variation, advarsel og kort forgiftning fra enkelte svampe.
+- Mekanik/UI: sjældne belønninger er idempotente, arts-/diætfiltre deles, Compys rekrutterer mindst fire, reder kræver drab, førstegangssprogvalg og pauset build er implementeret.
+- Idle-overgange: stabil verdenspose som midlertidig forbedring; nye tegninger er ikke færdige. Gang/sprint deler benfase.
 - A2 ecology-idle: afventer.
 - A3 halten: afventer.
 - A4 vand-autotiles: afventer.

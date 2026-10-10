@@ -30,3 +30,14 @@ procedurale banerækkefølger og sjældne arter, der kun findes i afsides områd
 ## Deinosuchus som spiller
 
 **Bygget:** separat pakke på `codex/sprites-and-mechanics`: eksisterende levende, ådsel- og skeletsprites genbruges. Endelig teststatus fremgår af `SPRITES_AND_MECHANICS_STATUS.md`.
+
+## Bygget i opfølgningspakken 10. oktober
+
+- Deinonychus gratis starter og finte med fem egne mutationstier; gamle valg/DNA bevares.
+- Idempotente specialdrab, én episk pr. albino/elite, diætfiltre også ved valg.
+- Compy-indkaldelse/gruppekrav, territoriale reder og drabsgatet fødecache.
+- Varieret planteføde, giftige svampe med advarsel og rolig effekt.
+- Førstegangssprogvalg, pauset build-visning og afstand mellem faste fund.
+- Separate HUD-hoveder og fire artsangreb er **integrerede prototyper**; visuel slutpolering er åben.
+
+A2–A5 og Parasaurolophus-spark forbliver åbne. De øvrige ideer og B-mekanikker flyttes ikke til bygget før de er implementeret/testet. Udklækning/opvækst forbliver en fremtidig idé.

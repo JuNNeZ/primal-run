@@ -8,7 +8,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     for (const [width, height, mobile] of [[1280, 900, false], [390, 844, true], [844, 390, true], [2560, 1080, false]]) {
       const context = await browser.newContext({ viewport: { width, height }, isMobile: mobile, hasTouch: mobile });
       const page = await context.newPage(); await page.addInitScript(() => { window.spriteRotations = []; const rotate = CanvasRenderingContext2D.prototype.rotate; CanvasRenderingContext2D.prototype.rotate = function(angle) { window.spriteRotations.push(angle); if (window.spriteRotations.length > 100) window.spriteRotations.shift(); return rotate.call(this, angle); }; }); page.on('pageerror', e => errors.push(String(e)));
-      await page.goto(process.env.PRIMAL_GAME_URL || await localURL(path.resolve(__dirname, '../PRIMAL_RUN_Game/index.html')));
+      await page.goto(process.env.PRIMAL_GAME_URL || await localURL(path.resolve(__dirname, '../PRIMAL_RUN_Game/index.html')));await page.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{});
       await page.waitForSelector('[data-action="start"]:not(:disabled)');await page.evaluate(async()=>{for(const species of Object.keys(PrimalCore.PLAYER_SPECIES))await primalRun.preload({species,stage:3,kinds:Object.keys(PrimalCore.SPECIES)});});
       await page.locator('#player-name').fill('Jonas');
       await page.locator('[data-action="start"]').click(); await page.locator('[data-action="begin"]').click();await page.waitForFunction(()=>primalRun.game.phase==='playing');

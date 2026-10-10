@@ -103,13 +103,13 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades }) {
       let tx, ty;
       if (warning.pattern >= 2 || warning.spin) { tx = warning.x + dx / n * ((warning.attackRadius || 100) + 60); ty = warning.y + dy / n * ((warning.attackRadius || 100) + 60); }
       else { const cx = warning.chargeX || dx / n, cy = warning.chargeY || dy / n, side = ((-cy) * dx + cx * dy) >= 0 ? 1 : -1; tx = p.x - cy * 140 * side; ty = p.y + cx * 140 * side; }
-      if (!early) return { ...steer(tx, ty), attack: style !== 'newbie' && n < config.range + warning.radius, pounce: S.ability === 'smart' && r.stamina >= cost && ['velociraptor', 'utahraptor', 'compy', 'gallimimus'].includes(species) && warning.timer < .3 };
+      if (!early) return { ...steer(tx, ty), attack: style !== 'newbie' && n < config.range + warning.radius, pounce: S.ability === 'smart' && r.stamina >= cost && ['deinonychus','velociraptor', 'utahraptor', 'compy', 'gallimimus'].includes(species) && warning.timer < .3 };
     }
     // Punish an exposed boss from behind.
     const exposed = nearest(r.enemies.filter(e => e.boss && ['recover', 'broken'].includes(e.mode) && dist(e) < 400));
     if (exposed && S.dodge > .3) {
       const bx = exposed.x - exposed.facingX * (exposed.radius + 20), by = exposed.y - exposed.facingY * (exposed.radius + 20);
-      return { ...steer(bx, by), attack: dist(exposed) < config.range + exposed.radius + 10 };
+      return { ...steer(bx, by), attack: dist(exposed) < config.range + exposed.radius + 10, pounce:species==='deinonychus'&&S.ability==='smart'&&r.stamina>=cost&&!r.precisionTime&&!r.pounceCooldown };
     }
     // Retreat when hurt
     if (S.retreatHP && hpFrac < S.retreatHP && hostile.length) {
@@ -201,7 +201,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades }) {
     meat: r.totalMeat, dna: r.dna, kills: r.kills, eliteKills: r.eliteKills, playerLevel: r.level,
     mutationPicks: m.mutationPicks, epicRewards: m.epicRewards,
     attacks: st.attacks, landedAttacks: st.landedAttacks, accuracyPct: st.attacks ? +(100 * st.landedAttacks / st.attacks).toFixed(1) : 0,
-    abilities: st.abilities, abilitiesPerMin: +(st.abilities / minutes).toFixed(2), staminaSpent: Math.round(st.staminaSpent),
+    finteHits:st.finteHits||0, abilities: st.abilities, abilitiesPerMin: +(st.abilities / minutes).toFixed(2), staminaSpent: Math.round(st.staminaSpent),
     staminaStarvedPctOfCombat: m.combatTime ? +(100 * m.starvedTime / m.combatTime).toFixed(1) : 0,
     combatPct: +(100 * m.combatTime / Math.max(r.seconds, 1e-6)).toFixed(1),
     damageTaken: Math.round(st.damageTaken), damageDealt: Math.round(st.damageDealt), healing: Math.round(st.healing),
@@ -243,7 +243,7 @@ function warnings(summary, C) {
   // Unlock pacing
   const dnaBy = {}; for (const s of summary) if (s.dna_p50 !== null) (dnaBy[s.style] ||= []).push(s.dna_p50);
   const prices = Object.values(C.PLAYER_SPECIES).map(p => p.cost || 0), totalUnlock = prices.reduce((a, b) => a + b, 0);
-  for (const [style, list] of Object.entries(dnaBy)) { const per = mean(list); if (per) w.push(`Unlock-tempo (${style}): ~${per} DNA pr. run → alle arter (${totalUnlock} DNA) efter ~${Math.ceil(totalUnlock / per)} runs (uden upgrades).`); }
+  for (const [style, list] of Object.entries(dnaBy)) { const per = mean(list); if (per) w.push(`Unlock-tempo (${style}): ~${per} DNA pr. run → DNA-købte arter (${totalUnlock} DNA; øvrige kræver achievements) efter ~${Math.ceil(totalUnlock / per)} runs (uden upgrades).`); }
   return w;
 }
 
@@ -315,7 +315,7 @@ async function main() {
   const summary = summarize(ok), warns = warnings(summary, C);
   if (errors.length) warns.unshift(`${errors.length} runs fejlede med en JavaScript-fejl (se runs.jsonl, outcome "error") – det kan være samme fejl som får spillet til at låse!`);
   const coreSHA = crypto.createHash('sha256').update(fs.readFileSync(CORE_PATH)).digest('hex');
-  const meta = { date: new Date().toISOString(), coreSHA, totalRuns: rows.length, seconds, workers: threads, elapsed: Math.round((Date.now() - t0) / 1000), runsPerGroup: runs, species, styles, upgrades };
+  const meta = { policy:'six playstyles v2; Deinonychus defensive finte and exposed-boss opportunity', simulatorSHA:crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex'), date: new Date().toISOString(), coreSHA, totalRuns: rows.length, seconds, workers: threads, elapsed: Math.round((Date.now() - t0) / 1000), runsPerGroup: runs, species, styles, upgrades };
   const cols = Object.keys(summary[0] || {});
   fs.writeFileSync(path.join(out, 'summary.csv'), cols.join(',') + '\n' + summary.map(s => cols.map(c => JSON.stringify(s[c] ?? '')).join(',')).join('\n') + '\n');
   writeReport(out, meta, summary, warns);

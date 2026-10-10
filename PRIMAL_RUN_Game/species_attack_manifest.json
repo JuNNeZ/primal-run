@@ -1,0 +1,3842 @@
+[
+  {
+    "file": "assets/species_attacks/triceratops_attack_S_000.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "S",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "5d1cb2aa75151d785c0ba788b59fd743b756560a939c44084acf9a7f629dd6f0",
+    "source_crop": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      118
+    ],
+    "registration_offset": [
+      8,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_S_001.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "S",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "fe51fb1460ae1aecd6bc9403328ab98ff3eee210d83f72b0c8fe5f4a8ebb3833",
+    "source_crop": [
+      256,
+      0,
+      512,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      118
+    ],
+    "registration_offset": [
+      8,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_S_002.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "S",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "234a9bbcadd44a67e8e97357d3d4169089947f09dc77dcf8e17a389a6e9c36e2",
+    "source_crop": [
+      512,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      118
+    ],
+    "registration_offset": [
+      8,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_S_003.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "S",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "cf272bb0f3390bc8d7f8250240f6e91df0415caf7983360aa5976552d9fc4bdb",
+    "source_crop": [
+      768,
+      0,
+      1024,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      118
+    ],
+    "registration_offset": [
+      8,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_S_004.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "S",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "c2e5d81557be97ddac88ab464fa18095ee6454d044e5445639734a21c63e4506",
+    "source_crop": [
+      1024,
+      0,
+      1280,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      118
+    ],
+    "registration_offset": [
+      8,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_S_005.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "S",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "9d5a39b445c4fc1f460eba1348837cdad8adf10bf559b4d77ad370f8cbbaccf5",
+    "source_crop": [
+      1280,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      118
+    ],
+    "registration_offset": [
+      8,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_N_000.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "N",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "7f73ec8194f0879da97bc8f7da50b7c930b1dd121ec40c7510ccb5836fe16d4b",
+    "source_crop": [
+      0,
+      256,
+      256,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      140
+    ],
+    "registration_offset": [
+      8,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_N_001.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "N",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "ab8e98943ce02796203241e1e5524f2f51fc4382712c3be23267faacd52edb9e",
+    "source_crop": [
+      256,
+      256,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      140
+    ],
+    "registration_offset": [
+      8,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_N_002.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "N",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "2700572c6f06d9d3257e70c9be2b0ff135619d24deab431d7d32881fd0cedc4b",
+    "source_crop": [
+      512,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      140
+    ],
+    "registration_offset": [
+      8,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_N_003.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "N",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "05356002a1cdc0939f926ea86484ff70f45b520aaf4885672f333c777a2f1565",
+    "source_crop": [
+      768,
+      256,
+      1024,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      140
+    ],
+    "registration_offset": [
+      8,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_N_004.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "N",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "2411b70d8fa72fa250b3128ee4b9a66d792b59b15f52bdbd7480eaad8cf3165f",
+    "source_crop": [
+      1024,
+      256,
+      1280,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      140
+    ],
+    "registration_offset": [
+      8,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_N_005.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "N",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "cd973cfb7cc1eaa17338422adcc31fae06a2bc029bb6125aee8177b679b6ef8d",
+    "source_crop": [
+      1280,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      140
+    ],
+    "registration_offset": [
+      8,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_E_000.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "E",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "1151dfd9ece7cc8b0d2744f42d786879ed28a3607ba2ed6c6773f8a7c4d479d9",
+    "source_crop": [
+      0,
+      512,
+      256,
+      768
+    ],
+    "source_cell_anchor": [
+      130,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_E_001.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "E",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "1b1fdf9651fc77554aaf45e764f5abf0a6bdf51b0097201cd5901094481bf1e0",
+    "source_crop": [
+      256,
+      512,
+      512,
+      768
+    ],
+    "source_cell_anchor": [
+      130,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_E_002.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "E",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "65ead134728d82321e184be351b6664547767a38376fb974920d8beeaa5552f4",
+    "source_crop": [
+      512,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      130,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_E_003.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "E",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "8763722394dc067a6f8fa0fe14615853f76399d678d82e689ff218dff736e16a",
+    "source_crop": [
+      768,
+      512,
+      1024,
+      768
+    ],
+    "source_cell_anchor": [
+      130,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_E_004.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "E",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "c93634da330e987cdde58daaa0b5c513feeeaae8ef40af5bff3dca281b51f051",
+    "source_crop": [
+      1024,
+      512,
+      1280,
+      768
+    ],
+    "source_cell_anchor": [
+      130,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_E_005.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "E",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "697e5d69a616154df619be1702fca1cbbef12544b33c615db0730b48bfb438a0",
+    "source_crop": [
+      1280,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      130,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_W_000.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "W",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "7465cdb37a10e679c154b90e368c0a8d4da67b64cc115b388111fd6acce110fe",
+    "source_crop": [
+      0,
+      768,
+      256,
+      1024
+    ],
+    "source_cell_anchor": [
+      128,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_W_001.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "W",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "066f06dd3910a4e7689cedb8f9307bae024ba19388e8acfa7ecaf0d79204b1ef",
+    "source_crop": [
+      256,
+      768,
+      512,
+      1024
+    ],
+    "source_cell_anchor": [
+      128,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_W_002.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "W",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "8a6e064fdef2366ea273bbb32248c15fd746606cc3f250bf5be94f2d0b09c9aa",
+    "source_crop": [
+      512,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      128,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_W_003.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "W",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "127ab3485f484f8ce5f0d051b4a7bfcdced4f364a4a039ee1e38f44ef4a2a653",
+    "source_crop": [
+      768,
+      768,
+      1024,
+      1024
+    ],
+    "source_cell_anchor": [
+      128,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_W_004.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "W",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "1b738365c903b4688bd646205850bbd1841a41cbc3baaf9270d181717c3bcc1d",
+    "source_crop": [
+      1024,
+      768,
+      1280,
+      1024
+    ],
+    "source_cell_anchor": [
+      128,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/triceratops_attack_W_005.png",
+    "species": "triceratops",
+    "state": "attack",
+    "direction": "W",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+    "source_sha256": "05b3011079af4cedb4d620173931385f8ab3c9591af10d951f20588f7495c3e5",
+    "export_sha256": "42e1b554be810a67e9e66d7abe6ce7a20138817bcefe2175d9b0e7ce0c0eb97f",
+    "source_crop": [
+      1280,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      128,
+      128
+    ],
+    "registration_offset": [
+      8,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_S_000.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "e46e2dd0dcd3ade2c227c38393cc9316904051a2f85b437781b916d88d37261d",
+    "source_crop": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_S_001.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "e8cfc28fafed581d651e750518bfc777a0924d3599cd3c42e968ff201c122ec3",
+    "source_crop": [
+      256,
+      0,
+      512,
+      256
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_S_002.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "10f899a61e4f28ce10bd32b83bb1958a4814720a0b6beca693f3f1f5c9d873f4",
+    "source_crop": [
+      512,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_S_003.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "da1542e4727bd76404b1ef2e9a597c426af0420a4a73185338620041c2d24195",
+    "source_crop": [
+      768,
+      0,
+      1024,
+      256
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_S_004.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "2aa28bb266de293c3efdce39184ec8e85e093983ff010dc6381da6f39adecb07",
+    "source_crop": [
+      1024,
+      0,
+      1280,
+      256
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_S_005.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_recovery_revision1.png",
+    "source_sha256": "0b44dc2d90813195917e2b4e5b1e6a43a1357187faa8177d4b7d4e2de41d0262",
+    "export_sha256": "513d5c62087553f2618b9f57cfe3653213cd9e2d76d4fd131b8a44ca265f58fa",
+    "source_crop": [
+      1280,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_N_000.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "1a93496988b78c95e4c02ddb8c61be601302e27c150de06463f55c802274c399",
+    "source_crop": [
+      0,
+      256,
+      256,
+      512
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_N_001.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "4b1dcd31bb9c0ed6be200e43d2ae02ae3de85725b247cd0d43ff07d950fd9810",
+    "source_crop": [
+      256,
+      256,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_N_002.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "e81e958bb1614b7e83772fe0e9f228354daeec3c32a0ef48cf4e948ab67746fc",
+    "source_crop": [
+      512,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_N_003.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "70b65b423fdbac66e754d4bf0b21ab0aa83850a705c7e0799f9bf3a7000348c6",
+    "source_crop": [
+      768,
+      256,
+      1024,
+      512
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_N_004.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "dc325804bc8995657763878f9fefddc9c31db62b7f495f9e0b169d11f723439a",
+    "source_crop": [
+      1024,
+      256,
+      1280,
+      512
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_N_005.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "df4f853ddeb90b355c5736fa5948c2c4ccfe7fa101224e2f6bbe2de9d9217e4e",
+    "source_crop": [
+      1280,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      142,
+      141
+    ],
+    "registration_offset": [
+      2,
+      2
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_E_000.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "1f3dc38755cc2c4741771e62fb0f8fafb1050b676195778ba3deac5d0a7d3e14",
+    "source_crop": [
+      0,
+      512,
+      256,
+      768
+    ],
+    "source_cell_anchor": [
+      142,
+      135
+    ],
+    "registration_offset": [
+      2,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_E_001.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "78d8d17826207982ab614b907932c0df172b6c465d3b17251fb030f95f47544b",
+    "source_crop": [
+      256,
+      512,
+      512,
+      768
+    ],
+    "source_cell_anchor": [
+      142,
+      135
+    ],
+    "registration_offset": [
+      2,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_E_002.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "812850d45211b52d4a2ba9b3b495a7d8b832dc1d78e3345561d0094ac223eeff",
+    "source_crop": [
+      512,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      142,
+      135
+    ],
+    "registration_offset": [
+      2,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_E_003.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "37ad0dab4f7708e031ee153c2b1d03787fc1d99207f402a77639acf79f111693",
+    "source_crop": [
+      768,
+      512,
+      1024,
+      768
+    ],
+    "source_cell_anchor": [
+      142,
+      135
+    ],
+    "registration_offset": [
+      2,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_E_004.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "dc24a1c67cc1fe4e1b9f57f9be778511d8cf9614b32e710636e14e4649b953b7",
+    "source_crop": [
+      1024,
+      512,
+      1280,
+      768
+    ],
+    "source_cell_anchor": [
+      142,
+      135
+    ],
+    "registration_offset": [
+      2,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_E_005.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "1b706c622e6edb08e82a10d8b28c2b34c48b0d8a246261a211d282d4118c613f",
+    "source_crop": [
+      1280,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      142,
+      135
+    ],
+    "registration_offset": [
+      2,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_W_000.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "2d4376f4568b5d331295e60cc350f0fa3c107f79e24dd59002d4c324d0ba54ad",
+    "source_crop": [
+      0,
+      768,
+      256,
+      1024
+    ],
+    "source_cell_anchor": [
+      126,
+      135
+    ],
+    "registration_offset": [
+      10,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_W_001.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "c6925fb8ed65ac526891a29f420438c5d4b69740f049cd542f3fd732d0da69b3",
+    "source_crop": [
+      256,
+      768,
+      512,
+      1024
+    ],
+    "source_cell_anchor": [
+      126,
+      135
+    ],
+    "registration_offset": [
+      10,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_W_002.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "6621559212ee7eff3b13263ca216c90e740bfa7460cab699df2a0723b76296ba",
+    "source_crop": [
+      512,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      126,
+      135
+    ],
+    "registration_offset": [
+      10,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_W_003.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "0dcee49301aca5b48847b4aec8aa1ce180f3a2c6248eb9f1d15eebff546a16bd",
+    "source_crop": [
+      768,
+      768,
+      1024,
+      1024
+    ],
+    "source_cell_anchor": [
+      126,
+      135
+    ],
+    "registration_offset": [
+      10,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_W_004.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "33de8ee1ed17b002a4c6ea4d91e79112ab720e5a05fa5a0d68690632516c0857",
+    "source_crop": [
+      1024,
+      768,
+      1280,
+      1024
+    ],
+    "source_cell_anchor": [
+      126,
+      135
+    ],
+    "registration_offset": [
+      10,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/ankylosaurus_attack_W_005.png",
+    "species": "ankylosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/ankylosaurus_tail_sweep_prototype.png",
+    "source_sha256": "e35266d3e4c7e504be50515ff2d0526a937d7514acd6db4c8c833a40b5dc49cc",
+    "export_sha256": "ea557372ebd439b0aa1b2e59445b84040d64c762f11912ce48a8f65e08abd25b",
+    "source_crop": [
+      1280,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      126,
+      135
+    ],
+    "registration_offset": [
+      10,
+      5
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_S_000.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "b1d0041f2db08a5d6cd8293d828c383975ec5fa790b95e8fb4a85371f793dde3",
+    "source_crop": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      124
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_S_001.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "7c2265f3f81e67f552489416864da289763ab476e7e77b3b033c600fdf79b5a5",
+    "source_crop": [
+      256,
+      0,
+      512,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      124
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_S_002.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "9c2269316e359551239813f99196c79cfc7d9350f0c35b450cfc143dfbd22c2b",
+    "source_crop": [
+      512,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      124
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_S_003.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "fb8580a4fa902455e0a18da45c0e84c6e44f2867e94be79ae85ac2fe042a887c",
+    "source_crop": [
+      768,
+      0,
+      1024,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      124
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_S_004.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "5dd78b0f024bb7211a568603f2f1558c628ca1c8ec8ae2edd75721b050f9ca4e",
+    "source_crop": [
+      1024,
+      0,
+      1280,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      124
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_S_005.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "70fac2a1cc94098dfdd21da1a635e3947fa64bbaf737f354653e1ab331aeaa47",
+    "source_crop": [
+      1280,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      124
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_N_000.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "22f3156a23a98c6d5427bf7dd48c37d986b04f09af97c0246d1001df749067d5",
+    "source_crop": [
+      0,
+      256,
+      256,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      126
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_N_001.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "831529836f281b263e87e80c4a0f87e770b6bd30f85b89ebee6c5eacc549f59c",
+    "source_crop": [
+      256,
+      256,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      126
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_N_002.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "e0d9bc9fc79b9e466bab8c9caf3b9d8763b7a614cc151f4375b5e5da3b6cf012",
+    "source_crop": [
+      512,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      126
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_N_003.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "f3fdfbe47bf5be12137012418ccebb5011b73a1e4def508740a7210cf98eae01",
+    "source_crop": [
+      768,
+      256,
+      1024,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      126
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_N_004.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "bb11424046431a8ad812565c055c573eed41e6bc77582210c4accb16888c6a69",
+    "source_crop": [
+      1024,
+      256,
+      1280,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      126
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_N_005.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "e6abc6bc2ff3161dfb9caa274e2b4839a03fbb4ffde6eebf060e2b72d374f53e",
+    "source_crop": [
+      1280,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      126
+    ],
+    "registration_offset": [
+      8,
+      10
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_E_000.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "2b4dc623fea4d2e7de32ac3d7b3f2f2d117275db9ead79460324a44745de54eb",
+    "source_crop": [
+      0,
+      512,
+      256,
+      768
+    ],
+    "source_cell_anchor": [
+      126,
+      129
+    ],
+    "registration_offset": [
+      10,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_E_001.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "a00a4bdf22269217b658a0293c2da4f22c04482727a9d08fc89b3c642c064d40",
+    "source_crop": [
+      256,
+      512,
+      512,
+      768
+    ],
+    "source_cell_anchor": [
+      126,
+      129
+    ],
+    "registration_offset": [
+      10,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_E_002.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "69c376bb5619af1bc2fc1bbe67ae001bda27788083589298935425d38cd00447",
+    "source_crop": [
+      512,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      126,
+      129
+    ],
+    "registration_offset": [
+      10,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_E_003.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "454c87471ce5d23aaf7d93c727809ab023b47859614f656a305b25c07b78f2fa",
+    "source_crop": [
+      768,
+      512,
+      1024,
+      768
+    ],
+    "source_cell_anchor": [
+      126,
+      129
+    ],
+    "registration_offset": [
+      10,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_E_004.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "92f79d2073edbb61e66023e70db714fce830404ae7a822127e0c8ba1a1e2c409",
+    "source_crop": [
+      1024,
+      512,
+      1280,
+      768
+    ],
+    "source_cell_anchor": [
+      126,
+      129
+    ],
+    "registration_offset": [
+      10,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_E_005.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "23602d40676ff06cc170eef9e95b8179554e5a971b130dbd16ea75e6100f8f66",
+    "source_crop": [
+      1280,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      126,
+      129
+    ],
+    "registration_offset": [
+      10,
+      8
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_W_000.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "40ed2d170130586a6e123b4d6f111279c86dd13f88613b12065be2d3ee269930",
+    "source_crop": [
+      0,
+      768,
+      256,
+      1024
+    ],
+    "source_cell_anchor": [
+      127,
+      134
+    ],
+    "registration_offset": [
+      9,
+      6
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_W_001.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "834ed9d4393bd9f3d0562f72228df7ad64ae223f60a7704e9c37a5d3617d8903",
+    "source_crop": [
+      256,
+      768,
+      512,
+      1024
+    ],
+    "source_cell_anchor": [
+      127,
+      134
+    ],
+    "registration_offset": [
+      9,
+      6
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_W_002.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "bae9bc799636fceaf5cefd1e5d84f3bec6df72fdadc6b3cd957edb1beb25a011",
+    "source_crop": [
+      512,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      127,
+      134
+    ],
+    "registration_offset": [
+      9,
+      6
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_W_003.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "4d2e32745a63d56cca860e972bcbd3cdffa180337e390dc4f2b59d229a1693f7",
+    "source_crop": [
+      768,
+      768,
+      1024,
+      1024
+    ],
+    "source_cell_anchor": [
+      127,
+      134
+    ],
+    "registration_offset": [
+      9,
+      6
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_W_004.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "ecdcc9b6fa9e199900daa84de3fb1b43132e01bd11f6d0cb804e7946d975ab88",
+    "source_crop": [
+      1024,
+      768,
+      1280,
+      1024
+    ],
+    "source_cell_anchor": [
+      127,
+      134
+    ],
+    "registration_offset": [
+      9,
+      6
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/pachycephalosaurus_attack_W_005.png",
+    "species": "pachycephalosaurus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+    "source_sha256": "2314bfa7ab5c1e88bdc4b3c697ad87bf55f516f4405a4d8f2e4441ab5c255b0c",
+    "export_sha256": "d139e98fa5f9c06eb8d0394e6244e4d9ef870afbce0b37caa40bc10fbbbf492d",
+    "source_crop": [
+      1280,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      127,
+      134
+    ],
+    "registration_offset": [
+      9,
+      6
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_S_000.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "062027316f7eab56f172140c27babba09b4d9a19fda1e1b6ee3e8838f218b4a7",
+    "source_crop": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      112
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_S_001.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "1432289e46eec35b7f88e750c8d8cf406dbacfcca551a911916ab8551a818045",
+    "source_crop": [
+      256,
+      0,
+      512,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      112
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_S_002.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "1bb1cc649249603daf53395ec8bfaf973f479d4911c254be207dbb404451a512",
+    "source_crop": [
+      512,
+      0,
+      768,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      112
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_S_003.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "1326bb1d7fd0f4cddd84a242edb01bbf83b27f6f30dc8ab703d185c66d841630",
+    "source_crop": [
+      768,
+      0,
+      1024,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      112
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_S_004.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "e9dd4c5d29519b17f8532281bf4035d7425949941ae9591c27934100964541d1",
+    "source_crop": [
+      1024,
+      0,
+      1280,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      112
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_S_005.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "S",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "c995b7f293be3244f0e059ee56a81449b9d77e6a13ff9dfb6fb7ab173bc10e69",
+    "source_crop": [
+      1280,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      128,
+      112
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_N_000.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "91c14a5c52ec4fe4290d67cbb49b8e4b91ef0f751e67c8ddc8c671d9db4c90d8",
+    "source_crop": [
+      0,
+      256,
+      256,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      143
+    ],
+    "registration_offset": [
+      8,
+      1
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_N_001.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "6f9ee29357634180c8db972c6ff483f1142ef155d89ae9f3fbaf5b7bcd0dc62a",
+    "source_crop": [
+      256,
+      256,
+      512,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      143
+    ],
+    "registration_offset": [
+      8,
+      1
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_N_002.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "22edd3e0a7fc0fd897ba6f35519f411e5f489899ec91a90d37b5d8c29ce70a9b",
+    "source_crop": [
+      512,
+      256,
+      768,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      143
+    ],
+    "registration_offset": [
+      8,
+      1
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_N_003.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "bd289225c9e02885342feba76d04598b58bafc084277a46c29c74b4e8f517634",
+    "source_crop": [
+      768,
+      256,
+      1024,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      143
+    ],
+    "registration_offset": [
+      8,
+      1
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_N_004.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "00e83de8f47fbb3cd887016425bcba6b6077975e6d372e2f743a037f9d738087",
+    "source_crop": [
+      1024,
+      256,
+      1280,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      143
+    ],
+    "registration_offset": [
+      8,
+      1
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_N_005.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "N",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "9e9c4803fd00bb80950513f5523648ccd3f65d4185fee63c1086548217bdc2ed",
+    "source_crop": [
+      1280,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      128,
+      143
+    ],
+    "registration_offset": [
+      8,
+      1
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_E_000.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "ea83f4532614b9a58f94e29d5711cb46cc4b6688c9d07531c8439f282cff51c1",
+    "source_crop": [
+      0,
+      512,
+      256,
+      768
+    ],
+    "source_cell_anchor": [
+      132,
+      117
+    ],
+    "registration_offset": [
+      6,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_E_001.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "3f439c747af0bfae9968472158e479e889e991f63273c17389e6ca8bee5a49b6",
+    "source_crop": [
+      256,
+      512,
+      512,
+      768
+    ],
+    "source_cell_anchor": [
+      132,
+      117
+    ],
+    "registration_offset": [
+      6,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_E_002.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "202522247a1f2ae825f987bccd87defa90b2fd2c924744893df9605d6a763a96",
+    "source_crop": [
+      512,
+      512,
+      768,
+      768
+    ],
+    "source_cell_anchor": [
+      132,
+      117
+    ],
+    "registration_offset": [
+      6,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_E_003.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "bde5a0836f65007df71ef5a803e966bc59075e0be898b2de3c157c3ce7dbb6a8",
+    "source_crop": [
+      768,
+      512,
+      1024,
+      768
+    ],
+    "source_cell_anchor": [
+      132,
+      117
+    ],
+    "registration_offset": [
+      6,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_E_004.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "0068b0f86a1e1dbd7105828b48cc3c2954377dfdb065b96dec4e1a29ee3efbe1",
+    "source_crop": [
+      1024,
+      512,
+      1280,
+      768
+    ],
+    "source_cell_anchor": [
+      132,
+      117
+    ],
+    "registration_offset": [
+      6,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_E_005.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "E",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "da48fadec69e8173d113f8d3e66347ba9f16b054953b88e3cf4937e079a35137",
+    "source_crop": [
+      1280,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      132,
+      117
+    ],
+    "registration_offset": [
+      6,
+      14
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_W_000.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 0,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "d4c8da26102a6c513aeeb216b0fb6556db6587a0b7fffc8a61b469c4fe4f93e4",
+    "source_crop": [
+      0,
+      768,
+      256,
+      1024
+    ],
+    "source_cell_anchor": [
+      130,
+      114
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_W_001.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 1,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "85f866f1d668691e915245ee0d38cc7d2b2d36b3c908349ad978b23265d03a8c",
+    "source_crop": [
+      256,
+      768,
+      512,
+      1024
+    ],
+    "source_cell_anchor": [
+      130,
+      114
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_W_002.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 2,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "f3b85d8340d05d2370b63d52b64daffae839df5e91046ba02e3197344cc61601",
+    "source_crop": [
+      512,
+      768,
+      768,
+      1024
+    ],
+    "source_cell_anchor": [
+      130,
+      114
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_W_003.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 3,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "cc50b707acd42aff63a5c498735580f51134c804d286b1a198e0b8e50ec371d6",
+    "source_crop": [
+      768,
+      768,
+      1024,
+      1024
+    ],
+    "source_cell_anchor": [
+      130,
+      114
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_W_004.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 4,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "5309f7229ea16392e798a9744a8b7a4c0e2db8780d41a67f4d576a21aa36455c",
+    "source_crop": [
+      1024,
+      768,
+      1280,
+      1024
+    ],
+    "source_cell_anchor": [
+      130,
+      114
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/species_attacks/gallimimus_attack_W_005.png",
+    "species": "gallimimus",
+    "state": "attack",
+    "direction": "W",
+    "frame": 5,
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+    "source_sha256": "50ec23620bbee047345e05ada0d8ead657a8eb3f7a755d7644af47839d746be5",
+    "export_sha256": "3e76ef39772e2c82012da031da39b999fccb57c6342823ba42d4c93693705011",
+    "source_crop": [
+      1280,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      130,
+      114
+    ],
+    "registration_offset": [
+      8,
+      16
+    ],
+    "contact_frame": 3,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  }
+]

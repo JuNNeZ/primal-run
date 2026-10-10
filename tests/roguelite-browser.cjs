@@ -3,10 +3,10 @@ const assert=require('node:assert/strict'),path=require('node:path'),fs=require(
 const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
 (async()=>{const browser=await chromium.launch(browserOptions());try{
  const page=await browser.newPage({viewport:{width:1280,height:900}}),errors=[],labels=[];page.on('pageerror',e=>errors.push(String(e)));
- await page.goto(process.env.PRIMAL_GAME_URL||await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/index.html')));await page.waitForSelector('[data-action="start"]:not(:disabled)');
- assert.equal(await page.evaluate(()=>primalRun.game.save.selectedSpecies),'velociraptor');
- await page.locator('[data-action="start"]').click();await page.locator('[data-action="begin"]').click();await page.waitForFunction(()=>primalRun.game.phase==='playing');await page.waitForFunction(()=>document.querySelector('canvas[aria-label]').dataset.playerSpecies==='velociraptor');
- assert.match(await page.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-player-sprite'),/velociraptor_/);
+ await page.goto(process.env.PRIMAL_GAME_URL||await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/index.html')));await page.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{});await page.waitForSelector('[data-action="start"]:not(:disabled)');
+ assert.equal(await page.evaluate(()=>primalRun.game.save.selectedSpecies),'deinonychus');
+ await page.locator('[data-action="start"]').click();await page.locator('[data-action="begin"]').click();await page.waitForFunction(()=>primalRun.game.phase==='playing');await page.waitForFunction(()=>document.querySelector('canvas[aria-label]').dataset.playerSpecies==='deinonychus');
+ assert.match(await page.locator('canvas[aria-label]:not(.end-scene)').getAttribute('data-player-sprite'),/deinonychus_/);
  const snapshot=await page.evaluate(()=>{const g=primalRun.game,r=g.run,ctx=document.querySelector('canvas[aria-label]').getContext('2d');window.drawnNames=[];const old=ctx.fillText;ctx.fillText=function(text,...args){drawnNames.push([text,this.fillStyle]);return old.call(this,text,...args);};if(!r.enemies.some(e=>e.kind==='compy'&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<200)){const c=r.enemies.find(e=>e.kind==='compy')||g.spawn('compy',{x:r.player.x+120,y:r.player.y});c.x=r.player.x+120;c.y=r.player.y;}r.enemies.forEach(e=>{e.cooldown=999;});return {seed:r.seed,plants:r.map.decorations.length,roads:r.map.trails.length};});
  assert.ok(snapshot.plants>800);assert.equal(snapshot.roads,0);await page.waitForTimeout(150);
  const names=await page.evaluate(()=>drawnNames);assert.ok(names.some(([s,c])=>s.startsWith('⚠ Compsognathus')&&c==='#ed7869'));assert.ok(!names.some(([s])=>s.includes('FJENDE')));

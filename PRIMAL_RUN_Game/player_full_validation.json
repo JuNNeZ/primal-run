@@ -1,7 +1,7 @@
 {
   "technical_export_result": "PASS",
-  "assets": 960,
-  "sequences": 192,
+  "assets": 1080,
+  "sequences": 216,
   "errors": [],
   "frames": {
     "assets/player_full/compy_idle_S_000.png": {
@@ -12483,6 +12483,1566 @@
         72
       ],
       "opaque_pixels": 591
+    },
+    "assets/player_full/deinonychus_idle_S_000.png": {
+      "bbox": [
+        63,
+        50,
+        93,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 650
+    },
+    "assets/player_full/deinonychus_idle_S_001.png": {
+      "bbox": [
+        66,
+        50,
+        94,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 639
+    },
+    "assets/player_full/deinonychus_idle_S_002.png": {
+      "bbox": [
+        66,
+        51,
+        96,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 660
+    },
+    "assets/player_full/deinonychus_idle_S_003.png": {
+      "bbox": [
+        63,
+        50,
+        91,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 656
+    },
+    "assets/player_full/deinonychus_hurt_S_000.png": {
+      "bbox": [
+        66,
+        51,
+        96,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 675
+    },
+    "assets/player_full/deinonychus_hurt_S_001.png": {
+      "bbox": [
+        55,
+        51,
+        87,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 715
+    },
+    "assets/player_full/deinonychus_walk_S_000.png": {
+      "bbox": [
+        65,
+        51,
+        88,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 639
+    },
+    "assets/player_full/deinonychus_walk_S_001.png": {
+      "bbox": [
+        63,
+        51,
+        92,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 681
+    },
+    "assets/player_full/deinonychus_walk_S_002.png": {
+      "bbox": [
+        67,
+        51,
+        92,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 690
+    },
+    "assets/player_full/deinonychus_walk_S_003.png": {
+      "bbox": [
+        64,
+        51,
+        92,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 659
+    },
+    "assets/player_full/deinonychus_walk_S_004.png": {
+      "bbox": [
+        63,
+        51,
+        88,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 658
+    },
+    "assets/player_full/deinonychus_walk_S_005.png": {
+      "bbox": [
+        59,
+        51,
+        86,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 676
+    },
+    "assets/player_full/deinonychus_run_S_000.png": {
+      "bbox": [
+        62,
+        50,
+        94,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 700
+    },
+    "assets/player_full/deinonychus_run_S_001.png": {
+      "bbox": [
+        68,
+        51,
+        99,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 673
+    },
+    "assets/player_full/deinonychus_run_S_002.png": {
+      "bbox": [
+        68,
+        52,
+        99,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 708
+    },
+    "assets/player_full/deinonychus_run_S_003.png": {
+      "bbox": [
+        64,
+        50,
+        93,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 703
+    },
+    "assets/player_full/deinonychus_run_S_004.png": {
+      "bbox": [
+        63,
+        51,
+        90,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 708
+    },
+    "assets/player_full/deinonychus_run_S_005.png": {
+      "bbox": [
+        56,
+        50,
+        86,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 721
+    },
+    "assets/player_full/deinonychus_attack_S_000.png": {
+      "bbox": [
+        62,
+        50,
+        90,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 727
+    },
+    "assets/player_full/deinonychus_attack_S_001.png": {
+      "bbox": [
+        67,
+        50,
+        92,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 644
+    },
+    "assets/player_full/deinonychus_attack_S_002.png": {
+      "bbox": [
+        68,
+        52,
+        94,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 606
+    },
+    "assets/player_full/deinonychus_attack_S_003.png": {
+      "bbox": [
+        64,
+        50,
+        96,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 730
+    },
+    "assets/player_full/deinonychus_attack_S_004.png": {
+      "bbox": [
+        62,
+        51,
+        92,
+        98
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 703
+    },
+    "assets/player_full/deinonychus_attack_S_005.png": {
+      "bbox": [
+        57,
+        52,
+        84,
+        99
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 685
+    },
+    "assets/player_full/deinonychus_death_S_000.png": {
+      "bbox": [
+        60,
+        52,
+        92,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 701
+    },
+    "assets/player_full/deinonychus_death_S_001.png": {
+      "bbox": [
+        59,
+        53,
+        95,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 717
+    },
+    "assets/player_full/deinonychus_death_S_002.png": {
+      "bbox": [
+        57,
+        53,
+        100,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 734
+    },
+    "assets/player_full/deinonychus_death_S_003.png": {
+      "bbox": [
+        52,
+        53,
+        99,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 762
+    },
+    "assets/player_full/deinonychus_death_S_004.png": {
+      "bbox": [
+        52,
+        53,
+        102,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 823
+    },
+    "assets/player_full/deinonychus_death_S_005.png": {
+      "bbox": [
+        52,
+        52,
+        91,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 770
+    },
+    "assets/player_full/deinonychus_idle_N_000.png": {
+      "bbox": [
+        63,
+        46,
+        82,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 481
+    },
+    "assets/player_full/deinonychus_idle_N_001.png": {
+      "bbox": [
+        62,
+        46,
+        82,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 486
+    },
+    "assets/player_full/deinonychus_idle_N_002.png": {
+      "bbox": [
+        62,
+        46,
+        82,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 498
+    },
+    "assets/player_full/deinonychus_idle_N_003.png": {
+      "bbox": [
+        62,
+        46,
+        82,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 486
+    },
+    "assets/player_full/deinonychus_hurt_N_000.png": {
+      "bbox": [
+        62,
+        46,
+        82,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 505
+    },
+    "assets/player_full/deinonychus_hurt_N_001.png": {
+      "bbox": [
+        62,
+        46,
+        82,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 487
+    },
+    "assets/player_full/deinonychus_walk_N_000.png": {
+      "bbox": [
+        62,
+        45,
+        82,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 515
+    },
+    "assets/player_full/deinonychus_walk_N_001.png": {
+      "bbox": [
+        62,
+        44,
+        82,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 500
+    },
+    "assets/player_full/deinonychus_walk_N_002.png": {
+      "bbox": [
+        62,
+        44,
+        82,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 503
+    },
+    "assets/player_full/deinonychus_walk_N_003.png": {
+      "bbox": [
+        62,
+        44,
+        82,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 505
+    },
+    "assets/player_full/deinonychus_walk_N_004.png": {
+      "bbox": [
+        62,
+        44,
+        82,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 508
+    },
+    "assets/player_full/deinonychus_walk_N_005.png": {
+      "bbox": [
+        62,
+        44,
+        82,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 514
+    },
+    "assets/player_full/deinonychus_run_N_000.png": {
+      "bbox": [
+        62,
+        42,
+        82,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 501
+    },
+    "assets/player_full/deinonychus_run_N_001.png": {
+      "bbox": [
+        63,
+        43,
+        82,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 494
+    },
+    "assets/player_full/deinonychus_run_N_002.png": {
+      "bbox": [
+        62,
+        43,
+        82,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 493
+    },
+    "assets/player_full/deinonychus_run_N_003.png": {
+      "bbox": [
+        62,
+        43,
+        82,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 495
+    },
+    "assets/player_full/deinonychus_run_N_004.png": {
+      "bbox": [
+        62,
+        43,
+        82,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 489
+    },
+    "assets/player_full/deinonychus_run_N_005.png": {
+      "bbox": [
+        62,
+        42,
+        82,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 506
+    },
+    "assets/player_full/deinonychus_attack_N_000.png": {
+      "bbox": [
+        62,
+        41,
+        82,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 495
+    },
+    "assets/player_full/deinonychus_attack_N_001.png": {
+      "bbox": [
+        62,
+        41,
+        82,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 509
+    },
+    "assets/player_full/deinonychus_attack_N_002.png": {
+      "bbox": [
+        62,
+        42,
+        82,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 498
+    },
+    "assets/player_full/deinonychus_attack_N_003.png": {
+      "bbox": [
+        61,
+        42,
+        82,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 502
+    },
+    "assets/player_full/deinonychus_attack_N_004.png": {
+      "bbox": [
+        62,
+        42,
+        82,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 497
+    },
+    "assets/player_full/deinonychus_attack_N_005.png": {
+      "bbox": [
+        62,
+        41,
+        82,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 505
+    },
+    "assets/player_full/deinonychus_death_N_000.png": {
+      "bbox": [
+        62,
+        41,
+        84,
+        84
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 543
+    },
+    "assets/player_full/deinonychus_death_N_001.png": {
+      "bbox": [
+        61,
+        41,
+        85,
+        84
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 517
+    },
+    "assets/player_full/deinonychus_death_N_002.png": {
+      "bbox": [
+        60,
+        41,
+        85,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 527
+    },
+    "assets/player_full/deinonychus_death_N_003.png": {
+      "bbox": [
+        59,
+        41,
+        84,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 514
+    },
+    "assets/player_full/deinonychus_death_N_004.png": {
+      "bbox": [
+        57,
+        41,
+        88,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 555
+    },
+    "assets/player_full/deinonychus_death_N_005.png": {
+      "bbox": [
+        57,
+        41,
+        87,
+        84
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 547
+    },
+    "assets/player_full/deinonychus_idle_E_000.png": {
+      "bbox": [
+        52,
+        58,
+        108,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 772
+    },
+    "assets/player_full/deinonychus_idle_E_001.png": {
+      "bbox": [
+        51,
+        57,
+        109,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 818
+    },
+    "assets/player_full/deinonychus_idle_E_002.png": {
+      "bbox": [
+        52,
+        57,
+        109,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 805
+    },
+    "assets/player_full/deinonychus_idle_E_003.png": {
+      "bbox": [
+        52,
+        57,
+        110,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 807
+    },
+    "assets/player_full/deinonychus_hurt_E_000.png": {
+      "bbox": [
+        52,
+        63,
+        111,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 817
+    },
+    "assets/player_full/deinonychus_hurt_E_001.png": {
+      "bbox": [
+        52,
+        64,
+        108,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 745
+    },
+    "assets/player_full/deinonychus_walk_E_000.png": {
+      "bbox": [
+        52,
+        58,
+        110,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 752
+    },
+    "assets/player_full/deinonychus_walk_E_001.png": {
+      "bbox": [
+        51,
+        58,
+        110,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 794
+    },
+    "assets/player_full/deinonychus_walk_E_002.png": {
+      "bbox": [
+        50,
+        58,
+        108,
+        91
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 795
+    },
+    "assets/player_full/deinonychus_walk_E_003.png": {
+      "bbox": [
+        50,
+        58,
+        110,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 791
+    },
+    "assets/player_full/deinonychus_walk_E_004.png": {
+      "bbox": [
+        52,
+        58,
+        110,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 797
+    },
+    "assets/player_full/deinonychus_walk_E_005.png": {
+      "bbox": [
+        50,
+        58,
+        109,
+        90
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 783
+    },
+    "assets/player_full/deinonychus_run_E_000.png": {
+      "bbox": [
+        52,
+        55,
+        110,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 805
+    },
+    "assets/player_full/deinonychus_run_E_001.png": {
+      "bbox": [
+        51,
+        58,
+        109,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 790
+    },
+    "assets/player_full/deinonychus_run_E_002.png": {
+      "bbox": [
+        50,
+        56,
+        110,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 800
+    },
+    "assets/player_full/deinonychus_run_E_003.png": {
+      "bbox": [
+        51,
+        57,
+        110,
+        84
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 768
+    },
+    "assets/player_full/deinonychus_run_E_004.png": {
+      "bbox": [
+        52,
+        56,
+        110,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 760
+    },
+    "assets/player_full/deinonychus_run_E_005.png": {
+      "bbox": [
+        50,
+        55,
+        109,
+        84
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 768
+    },
+    "assets/player_full/deinonychus_attack_E_000.png": {
+      "bbox": [
+        52,
+        52,
+        108,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 796
+    },
+    "assets/player_full/deinonychus_attack_E_001.png": {
+      "bbox": [
+        51,
+        52,
+        108,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 846
+    },
+    "assets/player_full/deinonychus_attack_E_002.png": {
+      "bbox": [
+        50,
+        55,
+        112,
+        84
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 797
+    },
+    "assets/player_full/deinonychus_attack_E_003.png": {
+      "bbox": [
+        51,
+        57,
+        110,
+        85
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 775
+    },
+    "assets/player_full/deinonychus_attack_E_004.png": {
+      "bbox": [
+        52,
+        54,
+        110,
+        86
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 771
+    },
+    "assets/player_full/deinonychus_attack_E_005.png": {
+      "bbox": [
+        51,
+        53,
+        109,
+        85
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 784
+    },
+    "assets/player_full/deinonychus_death_E_000.png": {
+      "bbox": [
+        51,
+        49,
+        107,
+        80
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 809
+    },
+    "assets/player_full/deinonychus_death_E_001.png": {
+      "bbox": [
+        53,
+        54,
+        110,
+        81
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 750
+    },
+    "assets/player_full/deinonychus_death_E_002.png": {
+      "bbox": [
+        50,
+        53,
+        111,
+        79
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 772
+    },
+    "assets/player_full/deinonychus_death_E_003.png": {
+      "bbox": [
+        51,
+        57,
+        111,
+        79
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 741
+    },
+    "assets/player_full/deinonychus_death_E_004.png": {
+      "bbox": [
+        53,
+        60,
+        111,
+        79
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 655
+    },
+    "assets/player_full/deinonychus_death_E_005.png": {
+      "bbox": [
+        52,
+        58,
+        109,
+        78
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 677
+    },
+    "assets/player_full/deinonychus_idle_W_000.png": {
+      "bbox": [
+        36,
+        61,
+        95,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 829
+    },
+    "assets/player_full/deinonychus_idle_W_001.png": {
+      "bbox": [
+        38,
+        60,
+        95,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 869
+    },
+    "assets/player_full/deinonychus_idle_W_002.png": {
+      "bbox": [
+        39,
+        60,
+        95,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 843
+    },
+    "assets/player_full/deinonychus_idle_W_003.png": {
+      "bbox": [
+        39,
+        62,
+        95,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 838
+    },
+    "assets/player_full/deinonychus_hurt_W_000.png": {
+      "bbox": [
+        44,
+        56,
+        95,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 873
+    },
+    "assets/player_full/deinonychus_hurt_W_001.png": {
+      "bbox": [
+        42,
+        61,
+        91,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 789
+    },
+    "assets/player_full/deinonychus_walk_W_000.png": {
+      "bbox": [
+        36,
+        57,
+        95,
+        93
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 847
+    },
+    "assets/player_full/deinonychus_walk_W_001.png": {
+      "bbox": [
+        38,
+        57,
+        95,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 848
+    },
+    "assets/player_full/deinonychus_walk_W_002.png": {
+      "bbox": [
+        37,
+        58,
+        92,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 794
+    },
+    "assets/player_full/deinonychus_walk_W_003.png": {
+      "bbox": [
+        35,
+        60,
+        93,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 832
+    },
+    "assets/player_full/deinonychus_walk_W_004.png": {
+      "bbox": [
+        36,
+        57,
+        93,
+        96
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 869
+    },
+    "assets/player_full/deinonychus_walk_W_005.png": {
+      "bbox": [
+        35,
+        60,
+        92,
+        97
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 840
+    },
+    "assets/player_full/deinonychus_run_W_000.png": {
+      "bbox": [
+        36,
+        55,
+        95,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 814
+    },
+    "assets/player_full/deinonychus_run_W_001.png": {
+      "bbox": [
+        35,
+        57,
+        95,
+        95
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 906
+    },
+    "assets/player_full/deinonychus_run_W_002.png": {
+      "bbox": [
+        37,
+        55,
+        93,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 806
+    },
+    "assets/player_full/deinonychus_run_W_003.png": {
+      "bbox": [
+        35,
+        55,
+        95,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 853
+    },
+    "assets/player_full/deinonychus_run_W_004.png": {
+      "bbox": [
+        33,
+        57,
+        95,
+        92
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 856
+    },
+    "assets/player_full/deinonychus_run_W_005.png": {
+      "bbox": [
+        32,
+        56,
+        90,
+        94
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 862
+    },
+    "assets/player_full/deinonychus_attack_W_000.png": {
+      "bbox": [
+        38,
+        54,
+        95,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 844
+    },
+    "assets/player_full/deinonychus_attack_W_001.png": {
+      "bbox": [
+        36,
+        52,
+        94,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 859
+    },
+    "assets/player_full/deinonychus_attack_W_002.png": {
+      "bbox": [
+        38,
+        53,
+        94,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 837
+    },
+    "assets/player_full/deinonychus_attack_W_003.png": {
+      "bbox": [
+        36,
+        60,
+        94,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 799
+    },
+    "assets/player_full/deinonychus_attack_W_004.png": {
+      "bbox": [
+        39,
+        52,
+        93,
+        87
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 823
+    },
+    "assets/player_full/deinonychus_attack_W_005.png": {
+      "bbox": [
+        35,
+        55,
+        89,
+        88
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 772
+    },
+    "assets/player_full/deinonychus_death_W_000.png": {
+      "bbox": [
+        40,
+        49,
+        94,
+        85
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 863
+    },
+    "assets/player_full/deinonychus_death_W_001.png": {
+      "bbox": [
+        37,
+        50,
+        94,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 836
+    },
+    "assets/player_full/deinonychus_death_W_002.png": {
+      "bbox": [
+        36,
+        57,
+        94,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 759
+    },
+    "assets/player_full/deinonychus_death_W_003.png": {
+      "bbox": [
+        33,
+        55,
+        95,
+        85
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 846
+    },
+    "assets/player_full/deinonychus_death_W_004.png": {
+      "bbox": [
+        31,
+        59,
+        91,
+        84
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 836
+    },
+    "assets/player_full/deinonychus_death_W_005.png": {
+      "bbox": [
+        31,
+        65,
+        92,
+        83
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "opaque_pixels": 764
     }
   },
   "production_approved": false,

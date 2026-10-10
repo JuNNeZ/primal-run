@@ -16,3 +16,5 @@ Native light/dark previews and validation reports accompany changes. Browser evi
 Check legacy source hashes and git diff; commit raw sources and derivatives with clear prototype status.
 
 Declared user exceptions live in the family supplement/config. Baryonyx living N may use South180 (lighting caveat); Compy/Veloci may use recorded integer body sampling about fixed hips. Never silently extend these exceptions to another animal. For closely spaced sheets inspect alpha halos and neighbours; use reviewed tight cell margins/thresholds, never draw missing anatomy.
+
+HUD/forage/A1 follow-up: read only the relevant SPRITE_RULES_AVATARS.md, SPRITE_RULES_FORAGE.md or SPRITE_RULES_SPECIES_ATTACKS.md. Exporters are tools/export_avatars.py, export_forage.py and export_species_attacks.py; combined technical gate is validate_hud_attacks.py. Fixed source landmarks and named per-cell overrides are required; preserve rejected atlases and never discard a thin tail club by largest-component filtering.

@@ -1,0 +1,7682 @@
+[
+  {
+    "file": "assets/avatars/ankylosaurus_idle_000.png",
+    "species": "ankylosaurus",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "466aa8eab62594af0eea41157fd77bf68a16a953895a5b61f9a5da0dbd97b347",
+    "source_crop": [
+      12,
+      164,
+      84,
+      344
+    ],
+    "source_anchor": [
+      48,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_idle_001.png",
+    "species": "ankylosaurus",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "4a89f3cc04fa1f75a41dff35999b65371abbe9c6b09093fc7f408cdc46e56ebf",
+    "source_crop": [
+      84,
+      164,
+      156,
+      344
+    ],
+    "source_anchor": [
+      120,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_idle_002.png",
+    "species": "ankylosaurus",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "7be538588f7e729abcbc55f40697e6bd8e5dc10650eeb9dd7f3b115779f3d831",
+    "source_crop": [
+      152,
+      164,
+      224,
+      344
+    ],
+    "source_anchor": [
+      188,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_idle_003.png",
+    "species": "ankylosaurus",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "dfea7885487b595be229727d3667354a1dcb237d128977e5ba4dd74ea0f537ec",
+    "source_crop": [
+      220,
+      164,
+      292,
+      344
+    ],
+    "source_anchor": [
+      256,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_eat_000.png",
+    "species": "ankylosaurus",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "4aa1c01f808d7e28e4fbfd69d808ac5313bf9be126d47d311114270f043f52cc",
+    "source_crop": [
+      300,
+      164,
+      372,
+      344
+    ],
+    "source_anchor": [
+      336,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_eat_001.png",
+    "species": "ankylosaurus",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "11d85f6dd7bcfa4d45fe17f28500c9a477c28e257d498aef88ffd1d335449000",
+    "source_crop": [
+      366,
+      164,
+      438,
+      344
+    ],
+    "source_anchor": [
+      402,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_eat_002.png",
+    "species": "ankylosaurus",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "2858ddb604a8f7273782e4904d7f787d6ca4d2e51ab29fa12f6fdf6d7da61784",
+    "source_crop": [
+      438,
+      164,
+      510,
+      344
+    ],
+    "source_anchor": [
+      474,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_eat_003.png",
+    "species": "ankylosaurus",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "37d8046715334711fc075ffd4227d73c0e0c660d898d3e011fc1eac09dfe24f5",
+    "source_crop": [
+      503,
+      164,
+      575,
+      344
+    ],
+    "source_anchor": [
+      539,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_fight_000.png",
+    "species": "ankylosaurus",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "cc4283c1a244e81f7a3c2dc817997c307f29277e1b8d4fa94bb38423f81c28fe",
+    "source_crop": [
+      567,
+      164,
+      639,
+      344
+    ],
+    "source_anchor": [
+      603,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_fight_001.png",
+    "species": "ankylosaurus",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "18e29ac77574cff11e17383849f1ae1d8a49e17c7391efe95fc79b306ed97695",
+    "source_crop": [
+      640,
+      164,
+      712,
+      344
+    ],
+    "source_anchor": [
+      676,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_fight_002.png",
+    "species": "ankylosaurus",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "a3413967d9b2a6c943b7b59fea22ad765ff4759c5e2b89f55f1e93b6301de22a",
+    "source_crop": [
+      706,
+      164,
+      778,
+      344
+    ],
+    "source_anchor": [
+      742,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_fight_003.png",
+    "species": "ankylosaurus",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "292af75c9f40ef4c2b11b8eb670dce2fbcd6ef7eb2cd4db36250eb907af60f13",
+    "source_crop": [
+      772,
+      164,
+      844,
+      344
+    ],
+    "source_anchor": [
+      808,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_hurt_000.png",
+    "species": "ankylosaurus",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "a7f6db285a985202915a09c08c4ea56b9c2538d63ff5c5bf9a667d729e6e44f3",
+    "source_crop": [
+      838,
+      164,
+      910,
+      344
+    ],
+    "source_anchor": [
+      874,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_hurt_001.png",
+    "species": "ankylosaurus",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "64dd1109f5d43dacf4e92415d3f7cb989191abc26527c6854586e424b108aa3f",
+    "source_crop": [
+      906,
+      164,
+      978,
+      344
+    ],
+    "source_anchor": [
+      942,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_hurt_002.png",
+    "species": "ankylosaurus",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "101efc70a256433e15349bbe0855b33898e0beea5f5ecb2eb1fcb63390503aac",
+    "source_crop": [
+      972,
+      164,
+      1044,
+      344
+    ],
+    "source_anchor": [
+      1008,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_hurt_003.png",
+    "species": "ankylosaurus",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "7c096d9c05aa54811108cbfe48e58a231d9247ba7bc5f5ba3461ffcab68d1e61",
+    "source_crop": [
+      1038,
+      164,
+      1110,
+      344
+    ],
+    "source_anchor": [
+      1074,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_sneak_000.png",
+    "species": "ankylosaurus",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "f899bbb08ec0c38b349b6362d016a2b27e7606bde920ef52f8b2d4e89eb557fd",
+    "source_crop": [
+      1240,
+      164,
+      1312,
+      344
+    ],
+    "source_anchor": [
+      1276,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_sneak_001.png",
+    "species": "ankylosaurus",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "8074521bb53253dbc72fb03e852c4ce79de89eaf806d4b49b5a50c24cc48f598",
+    "source_crop": [
+      1307,
+      164,
+      1379,
+      344
+    ],
+    "source_anchor": [
+      1343,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_sneak_002.png",
+    "species": "ankylosaurus",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "f428d200d3851a06907c6ea3d30e331a6ebc1c63822922d8164ae8c6d27dc4aa",
+    "source_crop": [
+      1377,
+      164,
+      1449,
+      344
+    ],
+    "source_anchor": [
+      1413,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/ankylosaurus_sneak_003.png",
+    "species": "ankylosaurus",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "054048d1802ae17c259be13cac530d908a3a7a0bf5082fcbb881034413444299",
+    "source_crop": [
+      1447,
+      164,
+      1519,
+      344
+    ],
+    "source_anchor": [
+      1483,
+      254
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_idle_000.png",
+    "species": "triceratops",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "9973794e6b5dbbcba0821d3a6f19d865c7f3e0991a5d5ce178c373f03e6cdaf1",
+    "source_crop": [
+      12,
+      303,
+      84,
+      483
+    ],
+    "source_anchor": [
+      48,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_idle_001.png",
+    "species": "triceratops",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "d2facdb2a86db4695c2b78b9675bf7ff50029463b4cec66506c645e9a1fe6060",
+    "source_crop": [
+      84,
+      303,
+      156,
+      483
+    ],
+    "source_anchor": [
+      120,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_idle_002.png",
+    "species": "triceratops",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "7b629a7fc720bb11062b377d0b0b31725bbe4e16cef58a64740ffd5225e7fd2a",
+    "source_crop": [
+      152,
+      303,
+      224,
+      483
+    ],
+    "source_anchor": [
+      188,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_idle_003.png",
+    "species": "triceratops",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "f74bc458b5f9a8075fc43785cb98eac953f61ae929603a4cd2cd1ec0f3e1a119",
+    "source_crop": [
+      220,
+      303,
+      292,
+      483
+    ],
+    "source_anchor": [
+      256,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_eat_000.png",
+    "species": "triceratops",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "ff643cf345c04841eea68d32363537359135372ad2f904039a80dc7e26179caf",
+    "source_crop": [
+      300,
+      303,
+      372,
+      483
+    ],
+    "source_anchor": [
+      336,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_eat_001.png",
+    "species": "triceratops",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "52557aac0f000321e7f97382ddfe51e5120815034d2b8cd67e04d4ecc4642b5a",
+    "source_crop": [
+      366,
+      303,
+      438,
+      483
+    ],
+    "source_anchor": [
+      402,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_eat_002.png",
+    "species": "triceratops",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "269966f228fd2354f6ab3b0727a412a656a98db56fa81f5e5917505d133b5239",
+    "source_crop": [
+      438,
+      303,
+      510,
+      483
+    ],
+    "source_anchor": [
+      474,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_eat_003.png",
+    "species": "triceratops",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "8f5efaf9e14ebab18f28588e88b050a65076eef91102da81d881c40527c6a106",
+    "source_crop": [
+      503,
+      303,
+      575,
+      483
+    ],
+    "source_anchor": [
+      539,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_fight_000.png",
+    "species": "triceratops",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "d541757ff43bc25232a2d8e63ea36eba655afc8c722ee3bcaecd9cacf7a6cddd",
+    "source_crop": [
+      567,
+      303,
+      639,
+      483
+    ],
+    "source_anchor": [
+      603,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_fight_001.png",
+    "species": "triceratops",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "95844ea5a117fd3e490ebf7aec4c8bbc4627443c310f0e741bfdf3885a1067ea",
+    "source_crop": [
+      640,
+      303,
+      712,
+      483
+    ],
+    "source_anchor": [
+      676,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_fight_002.png",
+    "species": "triceratops",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "334eccfe676d3ecc6a4f6425944c112badfb8d6d4f7e884b56272d6fa8c2530c",
+    "source_crop": [
+      706,
+      303,
+      778,
+      483
+    ],
+    "source_anchor": [
+      742,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_fight_003.png",
+    "species": "triceratops",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "0d5ec99230549d5f21efb25250b447f44405b24060d8cd90e029f416828c4055",
+    "source_crop": [
+      772,
+      303,
+      844,
+      483
+    ],
+    "source_anchor": [
+      808,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_hurt_000.png",
+    "species": "triceratops",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "229dbdac80138f66f53d3cc3758d97a8556d6602b7b3b4751e1ea90f5e731ce2",
+    "source_crop": [
+      838,
+      303,
+      910,
+      483
+    ],
+    "source_anchor": [
+      874,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_hurt_001.png",
+    "species": "triceratops",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "9200479c5430e73d07a37da9bee3ddf777bb03e4ae510309bb5e7d37e13a9efc",
+    "source_crop": [
+      906,
+      303,
+      978,
+      483
+    ],
+    "source_anchor": [
+      942,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_hurt_002.png",
+    "species": "triceratops",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "e1ede23aed8b0af80f1d285010eb19368a772eb22d7b18539098e05d4157b3ac",
+    "source_crop": [
+      972,
+      303,
+      1044,
+      483
+    ],
+    "source_anchor": [
+      1008,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_hurt_003.png",
+    "species": "triceratops",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "f5dd512a4b0133aef1f7c9b2694deb2edb0635fdf5b0696b9a96ff7c59c65edc",
+    "source_crop": [
+      1038,
+      303,
+      1110,
+      483
+    ],
+    "source_anchor": [
+      1074,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_sneak_000.png",
+    "species": "triceratops",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "c24c93d1a88a847a77497986836a686f0693b73dcdf492f7287b2d47e9f2e800",
+    "source_crop": [
+      1240,
+      303,
+      1312,
+      483
+    ],
+    "source_anchor": [
+      1276,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_sneak_001.png",
+    "species": "triceratops",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "9d42350e5f5f0fff6f7fe601850c2dc7b00d61347698c4bbd5edfad8af47fd31",
+    "source_crop": [
+      1307,
+      303,
+      1379,
+      483
+    ],
+    "source_anchor": [
+      1343,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_sneak_002.png",
+    "species": "triceratops",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "0f1993252e5838d30e5e02e286daa15e241345860237f50569d16fe7f071cd10",
+    "source_crop": [
+      1377,
+      303,
+      1449,
+      483
+    ],
+    "source_anchor": [
+      1413,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/triceratops_sneak_003.png",
+    "species": "triceratops",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "2c15fbe3de2bd20ea600b2b5699486bcce538a42381a9fcc50c8c547b5262826",
+    "source_crop": [
+      1447,
+      303,
+      1519,
+      483
+    ],
+    "source_anchor": [
+      1483,
+      393
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_idle_000.png",
+    "species": "pachycephalosaurus",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "aa98b3b8e322db08b5a3b2a4e15e1caa5dd66bb25807bf9f4c9d0b9b7aa6a3a5",
+    "source_crop": [
+      12,
+      444,
+      84,
+      624
+    ],
+    "source_anchor": [
+      48,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_idle_001.png",
+    "species": "pachycephalosaurus",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "5755dd554de69c78a72953545e09a58b4c3117d362bdbe13ac65978b98c41008",
+    "source_crop": [
+      84,
+      444,
+      156,
+      624
+    ],
+    "source_anchor": [
+      120,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_idle_002.png",
+    "species": "pachycephalosaurus",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "0f0ae7dfc6a992c339370a7e9c9935b59b96c7f5afcab4187df1137ce6ea6487",
+    "source_crop": [
+      152,
+      444,
+      224,
+      624
+    ],
+    "source_anchor": [
+      188,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_idle_003.png",
+    "species": "pachycephalosaurus",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "a5acce0f6b6edc7f3186d1e6ef72073a18d2b4999c096e54b72acf2faee039e6",
+    "source_crop": [
+      220,
+      444,
+      292,
+      624
+    ],
+    "source_anchor": [
+      256,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_eat_000.png",
+    "species": "pachycephalosaurus",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "e306e9df1f4ec0c229854c8ef6471eba13c218c4ab47144dbcc93330a6e3186f",
+    "source_crop": [
+      300,
+      444,
+      372,
+      624
+    ],
+    "source_anchor": [
+      336,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_eat_001.png",
+    "species": "pachycephalosaurus",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "555961e9dbb49475e34262806204de0aefe51d8996cfc4c2ee4be60195b561d9",
+    "source_crop": [
+      366,
+      444,
+      438,
+      624
+    ],
+    "source_anchor": [
+      402,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_eat_002.png",
+    "species": "pachycephalosaurus",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "8af8f846cd06e8092d02a123488cab32015d508b005d9338b3310fc1a9a11d50",
+    "source_crop": [
+      438,
+      444,
+      510,
+      624
+    ],
+    "source_anchor": [
+      474,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_eat_003.png",
+    "species": "pachycephalosaurus",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "ac531f0fb1a13a07908b322e8a59c683f32791b575e47189df8b8b58604a9b44",
+    "source_crop": [
+      503,
+      444,
+      575,
+      624
+    ],
+    "source_anchor": [
+      539,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_fight_000.png",
+    "species": "pachycephalosaurus",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "77b254cda24f1ad83297b356e0eb129deab36132c39d7a38b817e6f5221e7d5c",
+    "source_crop": [
+      567,
+      444,
+      639,
+      624
+    ],
+    "source_anchor": [
+      603,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_fight_001.png",
+    "species": "pachycephalosaurus",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "8063b5d8d779377a6e3b13841f7f357facbcce5f9809069497141fa1743690ef",
+    "source_crop": [
+      640,
+      444,
+      712,
+      624
+    ],
+    "source_anchor": [
+      676,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_fight_002.png",
+    "species": "pachycephalosaurus",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "b58a66486ec4fefe2ad4c7730c3a871839a4a4cd90669a7bb549e1248a7bf708",
+    "source_crop": [
+      706,
+      444,
+      778,
+      624
+    ],
+    "source_anchor": [
+      742,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_fight_003.png",
+    "species": "pachycephalosaurus",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "57152129b27711a083bf88f89a34a85dcf30985e66da8bd8515346ad2b366c7a",
+    "source_crop": [
+      772,
+      444,
+      844,
+      624
+    ],
+    "source_anchor": [
+      808,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_hurt_000.png",
+    "species": "pachycephalosaurus",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "cf2cd81e8dba45a5466e7e0ecae99e3e1dbd5f990475c40cbc7a2e549c112c12",
+    "source_crop": [
+      838,
+      444,
+      910,
+      624
+    ],
+    "source_anchor": [
+      874,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_hurt_001.png",
+    "species": "pachycephalosaurus",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "9a016b48093a8c8684e74ef2180d6b178d618a93d400bf7e7e6321dcf4afabc4",
+    "source_crop": [
+      906,
+      444,
+      978,
+      624
+    ],
+    "source_anchor": [
+      942,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_hurt_002.png",
+    "species": "pachycephalosaurus",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "ef6d2b2edc6e7992f5ea0c06e16d9586e9e841cdd80cd73232e5b5ca3f55668f",
+    "source_crop": [
+      972,
+      444,
+      1044,
+      624
+    ],
+    "source_anchor": [
+      1008,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_hurt_003.png",
+    "species": "pachycephalosaurus",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "c51406048f74e02c7da2f26aaa14d22b2fd40f885bf19c154ee4971a2c2a4607",
+    "source_crop": [
+      1038,
+      444,
+      1110,
+      624
+    ],
+    "source_anchor": [
+      1074,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_sneak_000.png",
+    "species": "pachycephalosaurus",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "1883537686167a0046aa1ac65718813d226ae5bb34b8ddf3da515c0a76571c2f",
+    "source_crop": [
+      1240,
+      444,
+      1312,
+      624
+    ],
+    "source_anchor": [
+      1276,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_sneak_001.png",
+    "species": "pachycephalosaurus",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "4e0e4c8440c251b9570f2e5a995cb01edd5190d56eab815ed3be440d5b01431c",
+    "source_crop": [
+      1307,
+      444,
+      1379,
+      624
+    ],
+    "source_anchor": [
+      1343,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_sneak_002.png",
+    "species": "pachycephalosaurus",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "382859a01e7cc12f5425c983b947cf3bccada38df657b40e6b2e5a3a0db9c09c",
+    "source_crop": [
+      1377,
+      444,
+      1449,
+      624
+    ],
+    "source_anchor": [
+      1413,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/pachycephalosaurus_sneak_003.png",
+    "species": "pachycephalosaurus",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "298099cf5dde8bb25b1d132a1cc74820dfe2bd50db70e102590c3c2050b0055d",
+    "source_crop": [
+      1447,
+      444,
+      1519,
+      624
+    ],
+    "source_anchor": [
+      1483,
+      534
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_idle_000.png",
+    "species": "gallimimus",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "e2f2a3f7e2dce9b5af66d92f3ca47dcbfc02bf6e34f48e0c0dd50ff9a33d121f",
+    "source_crop": [
+      12,
+      576,
+      84,
+      756
+    ],
+    "source_anchor": [
+      48,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_idle_001.png",
+    "species": "gallimimus",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "ed56e45b54427cf06f5d16f4b123a2c82660b15284a6296575390f6eb9d16ae5",
+    "source_crop": [
+      84,
+      576,
+      156,
+      756
+    ],
+    "source_anchor": [
+      120,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_idle_002.png",
+    "species": "gallimimus",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "1ee1791dccbc95ad014e9d006100d2a8cd8c3d904d8526b124b7e57281de7ee0",
+    "source_crop": [
+      152,
+      576,
+      224,
+      756
+    ],
+    "source_anchor": [
+      188,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_idle_003.png",
+    "species": "gallimimus",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "2c785102e12dd246fbe3ec867b25fbf75552c97ba363d8f372cfabe8c6798c72",
+    "source_crop": [
+      220,
+      576,
+      292,
+      756
+    ],
+    "source_anchor": [
+      256,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_eat_000.png",
+    "species": "gallimimus",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "eb88fd139495cfbecca45f128b11d7657b64e9efbf46ef30ddd367fac4baa593",
+    "source_crop": [
+      300,
+      576,
+      372,
+      756
+    ],
+    "source_anchor": [
+      336,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_eat_001.png",
+    "species": "gallimimus",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "f761267fba487c54ffcff0f5d3167553c4912811b985d10832a00a7d75a68093",
+    "source_crop": [
+      366,
+      576,
+      438,
+      756
+    ],
+    "source_anchor": [
+      402,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_eat_002.png",
+    "species": "gallimimus",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "cfc3802e4c9ed871f81a87125574f8bd8b812902feaee0ba92f41f49635855c3",
+    "source_crop": [
+      438,
+      576,
+      510,
+      756
+    ],
+    "source_anchor": [
+      474,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_eat_003.png",
+    "species": "gallimimus",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "32b82b4c81e7a4550964d69d42ba9072d5bb2942a032e513ec584ba9921d8984",
+    "source_crop": [
+      503,
+      576,
+      575,
+      756
+    ],
+    "source_anchor": [
+      539,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_fight_000.png",
+    "species": "gallimimus",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "cafbf3c601f9773b2595a54cd0b3b5b12454957782e52bf8ce53226450089e0d",
+    "source_crop": [
+      567,
+      576,
+      639,
+      756
+    ],
+    "source_anchor": [
+      603,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_fight_001.png",
+    "species": "gallimimus",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "af4f2c0725d028a778e8f504780b6048e359cd19b6a68518a4ca97d0b7d93287",
+    "source_crop": [
+      640,
+      576,
+      712,
+      756
+    ],
+    "source_anchor": [
+      676,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_fight_002.png",
+    "species": "gallimimus",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "3df86e395c196c1cb2e84dfed473e496371fe116f048375a801fcadad8f1dffb",
+    "source_crop": [
+      706,
+      576,
+      778,
+      756
+    ],
+    "source_anchor": [
+      742,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_fight_003.png",
+    "species": "gallimimus",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "f344849441ec3a82a2c467e93c7d0f6e227f20f9676e172592835b5ea6ae41be",
+    "source_crop": [
+      772,
+      576,
+      844,
+      756
+    ],
+    "source_anchor": [
+      808,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_hurt_000.png",
+    "species": "gallimimus",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "e507e6d50af7aed25916c852d1770792c508c00522125f219965f2f274847242",
+    "source_crop": [
+      838,
+      576,
+      910,
+      756
+    ],
+    "source_anchor": [
+      874,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_hurt_001.png",
+    "species": "gallimimus",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "605bb297623357d2bc75e50f52283207b233555b9243a511dd8bfa4eedfe9f94",
+    "source_crop": [
+      906,
+      576,
+      978,
+      756
+    ],
+    "source_anchor": [
+      942,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_hurt_002.png",
+    "species": "gallimimus",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "ac1863f160860c9982c8c757836a441f273dfad8920539ba51b35d2f24f4da0c",
+    "source_crop": [
+      972,
+      576,
+      1044,
+      756
+    ],
+    "source_anchor": [
+      1008,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_hurt_003.png",
+    "species": "gallimimus",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "c3dfbafc9794ec7a1786f76826ba3321247907754035d5ed82ac41a1060c412f",
+    "source_crop": [
+      1038,
+      576,
+      1110,
+      756
+    ],
+    "source_anchor": [
+      1074,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_sneak_000.png",
+    "species": "gallimimus",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "2b7cded99acd2a87f0785d0a73f5932776d1b22494f56b721df6df5b8aeb7156",
+    "source_crop": [
+      1240,
+      576,
+      1312,
+      756
+    ],
+    "source_anchor": [
+      1276,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_sneak_001.png",
+    "species": "gallimimus",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "a220a129f3930b84feed058393d0cf0a6ada38eba01420b335ca9538938b176f",
+    "source_crop": [
+      1307,
+      576,
+      1379,
+      756
+    ],
+    "source_anchor": [
+      1343,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_sneak_002.png",
+    "species": "gallimimus",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "b4198c5adf70560bf5743c09319aab99ca5126374bc2aef48ea4fe957b3c0e35",
+    "source_crop": [
+      1377,
+      576,
+      1449,
+      756
+    ],
+    "source_anchor": [
+      1413,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/gallimimus_sneak_003.png",
+    "species": "gallimimus",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/herbivores_heads.png",
+    "source_sha256": "c5f382098f56b4e4b39fffe67d5ec0117b9187a2b36e9e4cd25d3005f695bcfd",
+    "export_sha256": "d752bce1a9aeae03819d016a74787fbf09dfb2dc44bffb638e1de1faecac2f0e",
+    "source_crop": [
+      1447,
+      576,
+      1519,
+      756
+    ],
+    "source_anchor": [
+      1483,
+      666
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_idle_000.png",
+    "species": "carnotaurus",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "0b1e4458506ddf192a19b6fcd61fc74718a981e28b9f026a13f817e4f5af82dc",
+    "source_crop": [
+      4,
+      118,
+      76,
+      298
+    ],
+    "source_anchor": [
+      40,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_idle_001.png",
+    "species": "carnotaurus",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "96214ab17a6736c0b6801cfd7c835ee8a549dec27bae421386786c07625229b1",
+    "source_crop": [
+      77,
+      118,
+      149,
+      298
+    ],
+    "source_anchor": [
+      113,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_idle_002.png",
+    "species": "carnotaurus",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "efae3ece6e4992f5d25042f94db76d397a937fdc68ce4c560c4c549e0d177128",
+    "source_crop": [
+      151,
+      118,
+      223,
+      298
+    ],
+    "source_anchor": [
+      187,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_idle_003.png",
+    "species": "carnotaurus",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "b00307eaf9af2bc746ab6bd96bd0bb8c5941030e6c7da4ed4dcab4319b7225f0",
+    "source_crop": [
+      225,
+      118,
+      297,
+      298
+    ],
+    "source_anchor": [
+      261,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_eat_000.png",
+    "species": "carnotaurus",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "425e14ff55fe6eb22b6c259656b1dfa0648db4c2a48b484ca3f4878e144154ab",
+    "source_crop": [
+      300,
+      118,
+      372,
+      298
+    ],
+    "source_anchor": [
+      336,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_eat_001.png",
+    "species": "carnotaurus",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "7a61057db8d3be950e9933002c02c0bd2b538283f7ac27e821ccf3bf101875f4",
+    "source_crop": [
+      376,
+      118,
+      448,
+      298
+    ],
+    "source_anchor": [
+      412,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_eat_002.png",
+    "species": "carnotaurus",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "e9fd03da82cdb02c61900a67734bc3112a283b68d5a5333ec2b1aae1fc21049f",
+    "source_crop": [
+      450,
+      118,
+      522,
+      298
+    ],
+    "source_anchor": [
+      486,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_eat_003.png",
+    "species": "carnotaurus",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "9accbdd8067fb42307d3203160302d9f39fd648e5bfbae614b9052740c4752bf",
+    "source_crop": [
+      526,
+      118,
+      598,
+      298
+    ],
+    "source_anchor": [
+      562,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_fight_000.png",
+    "species": "carnotaurus",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "c73248da1cf8dccec2828636e6cf4e68cb24eadc7762e4a1c3567403c6943794",
+    "source_crop": [
+      604,
+      118,
+      676,
+      298
+    ],
+    "source_anchor": [
+      640,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_fight_001.png",
+    "species": "carnotaurus",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "cebb9aec03c79eba7426917dd59ce3c7f59781e305f3348d2589a4087ab79929",
+    "source_crop": [
+      686,
+      118,
+      758,
+      298
+    ],
+    "source_anchor": [
+      722,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_fight_002.png",
+    "species": "carnotaurus",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "4fa71051d6850df0632bd71feb47221e075cf5ea5cb24db1e71f8fa447980117",
+    "source_crop": [
+      771,
+      118,
+      843,
+      298
+    ],
+    "source_anchor": [
+      807,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_fight_003.png",
+    "species": "carnotaurus",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "81edab8ea9aab4145ed5639b95ecea4bdd71feaf02bf01b826b098079dfb477e",
+    "source_crop": [
+      857,
+      118,
+      929,
+      298
+    ],
+    "source_anchor": [
+      893,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_hurt_000.png",
+    "species": "carnotaurus",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "f85eb2f2f1d40081baa81e6bf9e1d4d9ee6a9f416072e961d8203f0e9dce29c4",
+    "source_crop": [
+      937,
+      118,
+      1009,
+      298
+    ],
+    "source_anchor": [
+      973,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_hurt_001.png",
+    "species": "carnotaurus",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "372204f7e48dfa86e34dee74b7059c791ecac026ad48797921b32f5d8ea3f094",
+    "source_crop": [
+      1013,
+      118,
+      1085,
+      298
+    ],
+    "source_anchor": [
+      1049,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_hurt_002.png",
+    "species": "carnotaurus",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "938d241bbf50b0f4ec32b020212c95adcad5defc47137cb2697ef9c5f1987d57",
+    "source_crop": [
+      1090,
+      118,
+      1162,
+      298
+    ],
+    "source_anchor": [
+      1126,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_hurt_003.png",
+    "species": "carnotaurus",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "3e7ea53d7a0089334a8fe3a656ec9a54fd5e41bc93040f26a1f4c706fe52b4f7",
+    "source_crop": [
+      1165,
+      118,
+      1237,
+      298
+    ],
+    "source_anchor": [
+      1201,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_sneak_000.png",
+    "species": "carnotaurus",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "5b069d2b00fa056a2e67cb20ff53e993ef5d899c70c071243af084f273b98175",
+    "source_crop": [
+      1242,
+      118,
+      1314,
+      298
+    ],
+    "source_anchor": [
+      1278,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_sneak_001.png",
+    "species": "carnotaurus",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "8231e21b3350945a9e72355c8ab9243387dde6546ba83711d8e5864871a7045d",
+    "source_crop": [
+      1316,
+      118,
+      1388,
+      298
+    ],
+    "source_anchor": [
+      1352,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_sneak_002.png",
+    "species": "carnotaurus",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "5672ab728894a8f43f1334c07c32690d64b8bfc75602ce27b5260dfb613b1833",
+    "source_crop": [
+      1389,
+      118,
+      1461,
+      298
+    ],
+    "source_anchor": [
+      1425,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/carnotaurus_sneak_003.png",
+    "species": "carnotaurus",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "b5703ae2407eeff98afa48fef424cddd29ea2d28d126188a394ca2a477d92139",
+    "source_crop": [
+      1462,
+      118,
+      1534,
+      298
+    ],
+    "source_anchor": [
+      1498,
+      208
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_idle_000.png",
+    "species": "baryonyx",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "1de8c51003e1aa705128afc7a1385dce2c73e357b9fc16915d569880914d5770",
+    "source_crop": [
+      4,
+      330,
+      76,
+      510
+    ],
+    "source_anchor": [
+      40,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_idle_001.png",
+    "species": "baryonyx",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "0dd29471dfdd35814e1539d31a880139d4d89833d649d714a1f610c2c15557d2",
+    "source_crop": [
+      77,
+      330,
+      149,
+      510
+    ],
+    "source_anchor": [
+      113,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_idle_002.png",
+    "species": "baryonyx",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "e7f46a26b8a258518936ed64fc9ebfad0888c8fb89d309264e525af57138c685",
+    "source_crop": [
+      151,
+      330,
+      223,
+      510
+    ],
+    "source_anchor": [
+      187,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_idle_003.png",
+    "species": "baryonyx",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "4e1481e4752be79adb9dfc0ac5777f395c314f934e478183aa8ade876282d015",
+    "source_crop": [
+      225,
+      330,
+      297,
+      510
+    ],
+    "source_anchor": [
+      261,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_eat_000.png",
+    "species": "baryonyx",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "388449f83631f6a98fa5990fb03852577646650c7b5c4ec40158ee6c9a60d348",
+    "source_crop": [
+      300,
+      330,
+      372,
+      510
+    ],
+    "source_anchor": [
+      336,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_eat_001.png",
+    "species": "baryonyx",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "3df0aa3a6415cb464ca678b742c5d28062b3b50d0f4e6bafa80002f584d23625",
+    "source_crop": [
+      376,
+      330,
+      448,
+      510
+    ],
+    "source_anchor": [
+      412,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_eat_002.png",
+    "species": "baryonyx",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "45b4f25ae77088fbdf580329a2a02bdd00e788c71e7ebe3611f51a4e10ba0d01",
+    "source_crop": [
+      450,
+      330,
+      522,
+      510
+    ],
+    "source_anchor": [
+      486,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_eat_003.png",
+    "species": "baryonyx",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "b046a0dc798eb77006bd97b3e838f668f690c54f72c2947b20e4650566562469",
+    "source_crop": [
+      526,
+      330,
+      598,
+      510
+    ],
+    "source_anchor": [
+      562,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_fight_000.png",
+    "species": "baryonyx",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "c9ff98dcc41c3d7149eedfd67650267a0e66dd37fc0e7d6a699ef6da99cff312",
+    "source_crop": [
+      604,
+      330,
+      676,
+      510
+    ],
+    "source_anchor": [
+      640,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_fight_001.png",
+    "species": "baryonyx",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "6a016d0c05db895de818303eaf242a07e00fb14f3f540c4010d763f2d5349b33",
+    "source_crop": [
+      686,
+      330,
+      758,
+      510
+    ],
+    "source_anchor": [
+      722,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_fight_002.png",
+    "species": "baryonyx",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "325c204e8073a415e42c4897c7fd5dfa54794b37ad85ff05587f70eddfdf5481",
+    "source_crop": [
+      771,
+      330,
+      843,
+      510
+    ],
+    "source_anchor": [
+      807,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_fight_003.png",
+    "species": "baryonyx",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "8fa0b6334b8f664f4df007e1cf0559006e7c57e92e444411c6d59a53c5fbff41",
+    "source_crop": [
+      857,
+      330,
+      929,
+      510
+    ],
+    "source_anchor": [
+      893,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_hurt_000.png",
+    "species": "baryonyx",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "5a5e6329fc49d2f2ca152f98431d7ba03476b23e8b081c635b3ba3341fb4bae2",
+    "source_crop": [
+      937,
+      330,
+      1009,
+      510
+    ],
+    "source_anchor": [
+      973,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_hurt_001.png",
+    "species": "baryonyx",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "13a64973b6e5a36b5a6ba471d7c87e9634379b64498388715e0cd38ef539e54b",
+    "source_crop": [
+      1013,
+      330,
+      1085,
+      510
+    ],
+    "source_anchor": [
+      1049,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_hurt_002.png",
+    "species": "baryonyx",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "8c3c0f693a074c6a954587f54fb29bfc5063f635ddc756fda4fa9609b5bd972f",
+    "source_crop": [
+      1090,
+      330,
+      1162,
+      510
+    ],
+    "source_anchor": [
+      1126,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_hurt_003.png",
+    "species": "baryonyx",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "16f417b0dcd62695c2739bcb09b0ef423bad63a37bcfa2eb2f47cd9283aa7cce",
+    "source_crop": [
+      1165,
+      330,
+      1237,
+      510
+    ],
+    "source_anchor": [
+      1201,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_sneak_000.png",
+    "species": "baryonyx",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "22018cbd2e77e036012693453de31672e86e64b51b26e889c2271e54c9d586bd",
+    "source_crop": [
+      1242,
+      330,
+      1314,
+      510
+    ],
+    "source_anchor": [
+      1278,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_sneak_001.png",
+    "species": "baryonyx",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "e1c82952c493d5a70436b3f0cab80cffcb83c1dec1b2be35a08a327d8032f871",
+    "source_crop": [
+      1316,
+      330,
+      1388,
+      510
+    ],
+    "source_anchor": [
+      1352,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_sneak_002.png",
+    "species": "baryonyx",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "5e8c296b0e59c3c050543faae50c4d87f1270f086a010162970c35449083a8c0",
+    "source_crop": [
+      1389,
+      330,
+      1461,
+      510
+    ],
+    "source_anchor": [
+      1425,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/baryonyx_sneak_003.png",
+    "species": "baryonyx",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "de92e9afb63eb95f1fe9eb34c295aa8a251ee26500e6075095622df846e4ca50",
+    "source_crop": [
+      1462,
+      330,
+      1534,
+      510
+    ],
+    "source_anchor": [
+      1498,
+      420
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_idle_000.png",
+    "species": "deinosuchus",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "b113ee6642266342cebf94eccef10714d0aeea08bb733196280518a88bd3a925",
+    "source_crop": [
+      4,
+      532,
+      76,
+      712
+    ],
+    "source_anchor": [
+      40,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_idle_001.png",
+    "species": "deinosuchus",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "084ad0df9aef2fa2907c91256c6ab8f03eb4d3e1cb09b202f872565b04e3edb8",
+    "source_crop": [
+      77,
+      532,
+      149,
+      712
+    ],
+    "source_anchor": [
+      113,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_idle_002.png",
+    "species": "deinosuchus",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "4cedadfb2622eb080535c5220b594abb0307a0bedd9757120d3aab83c494be0e",
+    "source_crop": [
+      151,
+      532,
+      223,
+      712
+    ],
+    "source_anchor": [
+      187,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_idle_003.png",
+    "species": "deinosuchus",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "d2cdbf5e733a28080e976f7f9d90104d51142df80da5d005e9b2b2e5f46f7e9c",
+    "source_crop": [
+      225,
+      532,
+      297,
+      712
+    ],
+    "source_anchor": [
+      261,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_eat_000.png",
+    "species": "deinosuchus",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "4a9c479fb623dbcbe20b45409b40b73aff9ccced95a7b6a2f0f85e5a9def489d",
+    "source_crop": [
+      300,
+      532,
+      372,
+      712
+    ],
+    "source_anchor": [
+      336,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_eat_001.png",
+    "species": "deinosuchus",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "76d7b29abe5012bdd3e0ba48f0466af2717ea673503a030107ce0fe3df55035e",
+    "source_crop": [
+      376,
+      532,
+      448,
+      712
+    ],
+    "source_anchor": [
+      412,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_eat_002.png",
+    "species": "deinosuchus",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "064e45bfe528969f719682e9075325276f89e330f3aae0cad6045ba823a74d22",
+    "source_crop": [
+      450,
+      532,
+      522,
+      712
+    ],
+    "source_anchor": [
+      486,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_eat_003.png",
+    "species": "deinosuchus",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "cc6cdbe565fe634cc909da46bea9942fa258665451fd041e5f9125e396de9417",
+    "source_crop": [
+      526,
+      532,
+      598,
+      712
+    ],
+    "source_anchor": [
+      562,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_fight_000.png",
+    "species": "deinosuchus",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "c3b55663b2d9495f991a395bf059ead95c80a35d470236af6131821c7e5e38e5",
+    "source_crop": [
+      604,
+      532,
+      676,
+      712
+    ],
+    "source_anchor": [
+      640,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_fight_001.png",
+    "species": "deinosuchus",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "a6c98886441888300a6b37887b9fd7bf4228866d6c5dfd57441c746abd2667a6",
+    "source_crop": [
+      686,
+      532,
+      758,
+      712
+    ],
+    "source_anchor": [
+      722,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_fight_002.png",
+    "species": "deinosuchus",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "fb2119d3185bbb1744c160add3963e4deaec1cdcc2612f8bd2969d89c02284e2",
+    "source_crop": [
+      771,
+      532,
+      843,
+      712
+    ],
+    "source_anchor": [
+      807,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_fight_003.png",
+    "species": "deinosuchus",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "55b9b604a44f1c89a03a676fa887d04255ee2c3055119d8ad0184e4fcffe68f6",
+    "source_crop": [
+      857,
+      532,
+      929,
+      712
+    ],
+    "source_anchor": [
+      893,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_hurt_000.png",
+    "species": "deinosuchus",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "ce10953d8388f176bd82eae4a6b6072ed79f38ba51eabc13e8c51835fe3591e8",
+    "source_crop": [
+      937,
+      532,
+      1009,
+      712
+    ],
+    "source_anchor": [
+      973,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_hurt_001.png",
+    "species": "deinosuchus",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "bc4c42fc21c59670b7b8222ce17d53d95f14f8a2c30f9db5c66c13b0faa3b565",
+    "source_crop": [
+      1013,
+      532,
+      1085,
+      712
+    ],
+    "source_anchor": [
+      1049,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_hurt_002.png",
+    "species": "deinosuchus",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "508300904d55e22d23279ea2f1cd7d3de5a0bae272b96b75a6f5276ed1040412",
+    "source_crop": [
+      1090,
+      532,
+      1162,
+      712
+    ],
+    "source_anchor": [
+      1126,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_hurt_003.png",
+    "species": "deinosuchus",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "acc69def7de49085fd473ab6ffb2f4616ad4c926bceb29be1021d4389a8ef67d",
+    "source_crop": [
+      1165,
+      532,
+      1237,
+      712
+    ],
+    "source_anchor": [
+      1201,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_sneak_000.png",
+    "species": "deinosuchus",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "e7c7251805842710555ceabd9fb2f1edbeb6374d9a73a5c078eef98ec2ca09d8",
+    "source_crop": [
+      1242,
+      532,
+      1314,
+      712
+    ],
+    "source_anchor": [
+      1278,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_sneak_001.png",
+    "species": "deinosuchus",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "0de2c8d4f7fad4a0deead692fb51bdfe4618098b0966fbbb54a69c8c6433d2bc",
+    "source_crop": [
+      1316,
+      532,
+      1388,
+      712
+    ],
+    "source_anchor": [
+      1352,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_sneak_002.png",
+    "species": "deinosuchus",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "2494909d96637a3ed86c0fabc33d8f97dc122c60a1465c586303318f7ebec51f",
+    "source_crop": [
+      1389,
+      532,
+      1461,
+      712
+    ],
+    "source_anchor": [
+      1425,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinosuchus_sneak_003.png",
+    "species": "deinosuchus",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "0a7389dba0b6926587324be2678f84202084b73fa2d6768ce629abb285ae7649",
+    "source_crop": [
+      1462,
+      532,
+      1534,
+      712
+    ],
+    "source_anchor": [
+      1498,
+      622
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_idle_000.png",
+    "species": "tyrannosaurus",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "e49263d5fefc832c7d42c9a182184016768c98b67cb9953fd4389a911b5bddc0",
+    "source_crop": [
+      4,
+      745,
+      76,
+      925
+    ],
+    "source_anchor": [
+      40,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_idle_001.png",
+    "species": "tyrannosaurus",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "4225036b398ddd4ddcd54d102f9a49ecc22918e9cd6f22d4b344e3842c44913f",
+    "source_crop": [
+      77,
+      745,
+      149,
+      925
+    ],
+    "source_anchor": [
+      113,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_idle_002.png",
+    "species": "tyrannosaurus",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "bee3aba25746b1f2ef16574d5dd324812cae217360c9a48414a181938cd0cce8",
+    "source_crop": [
+      151,
+      745,
+      223,
+      925
+    ],
+    "source_anchor": [
+      187,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_idle_003.png",
+    "species": "tyrannosaurus",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "8ef7f7d41c7d247dcba80fc1d3e09f4fd1b73cafe7872d56dcc99e4bfd7e1e0b",
+    "source_crop": [
+      225,
+      745,
+      297,
+      925
+    ],
+    "source_anchor": [
+      261,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_eat_000.png",
+    "species": "tyrannosaurus",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "3fcb20f5e09814dac6f6e2351af44b467454f78fde4bb907eae911241c762829",
+    "source_crop": [
+      300,
+      745,
+      372,
+      925
+    ],
+    "source_anchor": [
+      336,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_eat_001.png",
+    "species": "tyrannosaurus",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "c1fefda62bf077497998fc3c82ac0fb95cbb761e9ab43ed2b6f02bfb73547bf8",
+    "source_crop": [
+      376,
+      745,
+      448,
+      925
+    ],
+    "source_anchor": [
+      412,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_eat_002.png",
+    "species": "tyrannosaurus",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "f26a01453a45622cc98de1d90c8a511cf9cf334acae8b1c23e0228734eb7f6c4",
+    "source_crop": [
+      450,
+      745,
+      522,
+      925
+    ],
+    "source_anchor": [
+      486,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_eat_003.png",
+    "species": "tyrannosaurus",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "72fc8325fdd5e02885c65c39e759bff571c0b60c5e768cb67b8d966e651fa069",
+    "source_crop": [
+      526,
+      745,
+      598,
+      925
+    ],
+    "source_anchor": [
+      562,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_fight_000.png",
+    "species": "tyrannosaurus",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "2e9afbc07672bed43cb3f47ca71a2e7817eecbd17d2630f35ff389007991f484",
+    "source_crop": [
+      604,
+      745,
+      676,
+      925
+    ],
+    "source_anchor": [
+      640,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_fight_001.png",
+    "species": "tyrannosaurus",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "ece9d1526a4e555c71c71113762c233343da817ff56ed79b8b866c1fe0817cce",
+    "source_crop": [
+      686,
+      745,
+      758,
+      925
+    ],
+    "source_anchor": [
+      722,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_fight_002.png",
+    "species": "tyrannosaurus",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "efbad2985e274c84bb2555a8d610e9c3547bad79066b7a8ed4e6c0421c691c84",
+    "source_crop": [
+      771,
+      745,
+      843,
+      925
+    ],
+    "source_anchor": [
+      807,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_fight_003.png",
+    "species": "tyrannosaurus",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "fbf3fb7f963a07a87d5d1713410c2fc3bb99e237093b87b4f7ff7b87e947862f",
+    "source_crop": [
+      857,
+      745,
+      929,
+      925
+    ],
+    "source_anchor": [
+      893,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_hurt_000.png",
+    "species": "tyrannosaurus",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "2c75b66189138b9ef6c2fa9cd1c2990a3d62e4f2332c5525fb6c54501c7b770d",
+    "source_crop": [
+      937,
+      745,
+      1009,
+      925
+    ],
+    "source_anchor": [
+      973,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_hurt_001.png",
+    "species": "tyrannosaurus",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "f9c9ec5fec8da18753c82aaf475d52fa5f1bac3425065d0b7457aecfc8e8d27f",
+    "source_crop": [
+      1013,
+      745,
+      1085,
+      925
+    ],
+    "source_anchor": [
+      1049,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_hurt_002.png",
+    "species": "tyrannosaurus",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "926f6123ed99634bbed056258f111113915f4ab71cba81da136f94d73547745f",
+    "source_crop": [
+      1090,
+      745,
+      1162,
+      925
+    ],
+    "source_anchor": [
+      1126,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_hurt_003.png",
+    "species": "tyrannosaurus",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "36697d3298da2ce0853c9c48cffda45294d6ccb04f67aa616f9e66d61f06735a",
+    "source_crop": [
+      1165,
+      745,
+      1237,
+      925
+    ],
+    "source_anchor": [
+      1201,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_sneak_000.png",
+    "species": "tyrannosaurus",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "116ff4eb404413b418b8a48bbf84bb51cdf14f516ece8e0ab701da9e474a51e2",
+    "source_crop": [
+      1242,
+      745,
+      1314,
+      925
+    ],
+    "source_anchor": [
+      1278,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_sneak_001.png",
+    "species": "tyrannosaurus",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "9c4565dafb92c6da8d6b95235886f7593c35779b4451f008b6f815dd694dac54",
+    "source_crop": [
+      1316,
+      745,
+      1388,
+      925
+    ],
+    "source_anchor": [
+      1352,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_sneak_002.png",
+    "species": "tyrannosaurus",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "90ac719fec3e5f38dcb77b42fdc1efad90bcacc38c1d56597adbf8639999b1cc",
+    "source_crop": [
+      1389,
+      745,
+      1461,
+      925
+    ],
+    "source_anchor": [
+      1425,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/tyrannosaurus_sneak_003.png",
+    "species": "tyrannosaurus",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/predators_heads.png",
+    "source_sha256": "66dd76546fecc14258d5c992323f1273161a6da7a4c389021f429b397411918b",
+    "export_sha256": "6bad6208118b7b8798cf476c2bb3826363f0c2105d06837d3b342c1123e4eb12",
+    "source_crop": [
+      1462,
+      745,
+      1534,
+      925
+    ],
+    "source_anchor": [
+      1498,
+      835
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_idle_000.png",
+    "species": "compy",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "73da64f9712ad59c25ea6fefe11928542218db7909b47da74456063f3aa6e6e4",
+    "source_crop": [
+      4,
+      93,
+      76,
+      273
+    ],
+    "source_anchor": [
+      40,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_idle_001.png",
+    "species": "compy",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "a17a293190e32c874c64bebd81eb008a39f3ed562da7c2857256b19e4890cda7",
+    "source_crop": [
+      76,
+      93,
+      148,
+      273
+    ],
+    "source_anchor": [
+      112,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_idle_002.png",
+    "species": "compy",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "8dece056dac04fc29a831db98894fcfc27982698a49ce197a70ad063975e9e54",
+    "source_crop": [
+      149,
+      93,
+      221,
+      273
+    ],
+    "source_anchor": [
+      185,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_idle_003.png",
+    "species": "compy",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "9655d9c809be36af176963a8c7f2dc9f56cf2b32ea31594c222752da2efb318a",
+    "source_crop": [
+      220,
+      93,
+      292,
+      273
+    ],
+    "source_anchor": [
+      256,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_eat_000.png",
+    "species": "compy",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "de3e836c5edb9c426ce8955ae43e749883bff37f33c276899ffe518e19ad32fc",
+    "source_crop": [
+      300,
+      93,
+      372,
+      273
+    ],
+    "source_anchor": [
+      336,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_eat_001.png",
+    "species": "compy",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "be494ffb71d805fae1aae829c632eac1235bb263466bc65f645c6ea558b659a5",
+    "source_crop": [
+      370,
+      93,
+      442,
+      273
+    ],
+    "source_anchor": [
+      406,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_eat_002.png",
+    "species": "compy",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "55acf3bee628ecff9c6741c9332ad4229633732695f5e5a4b94c27dc65ab6282",
+    "source_crop": [
+      440,
+      93,
+      512,
+      273
+    ],
+    "source_anchor": [
+      476,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_eat_003.png",
+    "species": "compy",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "89eab2843110721776bf299496ad56f4f9cb810d3df9de792ca0bc524b490f99",
+    "source_crop": [
+      512,
+      93,
+      584,
+      273
+    ],
+    "source_anchor": [
+      548,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_fight_000.png",
+    "species": "compy",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "0b214de0847b696b6227f47c32a9fb3df23f2833f46d01901cf24cb8a348bfa2",
+    "source_crop": [
+      591,
+      93,
+      663,
+      273
+    ],
+    "source_anchor": [
+      627,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_fight_001.png",
+    "species": "compy",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "7b6e914ba95f2a3a3ed0d26d86c45a5aac4fd91a4efbae9e438a9ac237d5835e",
+    "source_crop": [
+      661,
+      93,
+      733,
+      273
+    ],
+    "source_anchor": [
+      697,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_fight_002.png",
+    "species": "compy",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "beb970e0b5d859a937b197888bfd41a402e2440bb11bd228de6a0c5ea2354abe",
+    "source_crop": [
+      731,
+      93,
+      803,
+      273
+    ],
+    "source_anchor": [
+      767,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_fight_003.png",
+    "species": "compy",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "4c2b3fb760484d4d89e0b9a83b3597df784fdf47a47d30521f06ebb00e46fbbd",
+    "source_crop": [
+      801,
+      93,
+      873,
+      273
+    ],
+    "source_anchor": [
+      837,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_hurt_000.png",
+    "species": "compy",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "47d23278efc831e7b4cf369a151b5a01af8d22f2fd21d86c59d11554472ee4f3",
+    "source_crop": [
+      871,
+      93,
+      943,
+      273
+    ],
+    "source_anchor": [
+      907,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_hurt_001.png",
+    "species": "compy",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "de5c567272168162a7b48b25134566fce6c89d4169ae6859138ba153360ca861",
+    "source_crop": [
+      950,
+      93,
+      1022,
+      273
+    ],
+    "source_anchor": [
+      986,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_hurt_002.png",
+    "species": "compy",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "4d814edc0c7d04d4c297c13a423b10e4f3258a0d000538445dfd6f52b47d9553",
+    "source_crop": [
+      1018,
+      93,
+      1090,
+      273
+    ],
+    "source_anchor": [
+      1054,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_hurt_003.png",
+    "species": "compy",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "74c0677a6eb17c36495897131e2364bd2b75a66623f3e865e690e89a157138fe",
+    "source_crop": [
+      1088,
+      93,
+      1160,
+      273
+    ],
+    "source_anchor": [
+      1124,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_sneak_000.png",
+    "species": "compy",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "7292ceecc1a756ceab16a59e2f6440e8e9b4b4af8955ab79ed19df759fb2e811",
+    "source_crop": [
+      1240,
+      93,
+      1312,
+      273
+    ],
+    "source_anchor": [
+      1276,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_sneak_001.png",
+    "species": "compy",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "075fafa427403e5c295e5f2d045ff5012a1ea12c962676c46261a2bcc2fe9be0",
+    "source_crop": [
+      1311,
+      93,
+      1383,
+      273
+    ],
+    "source_anchor": [
+      1347,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_sneak_002.png",
+    "species": "compy",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "d50aedd25d7e09197487315152a47d89a1e6d29c45384d6fa8e88e2233bdc1a0",
+    "source_crop": [
+      1382,
+      93,
+      1454,
+      273
+    ],
+    "source_anchor": [
+      1418,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/compy_sneak_003.png",
+    "species": "compy",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "da4c3efe5977b673fe7eebb0fe73855afc8d67be79152a62ac1215e0ee813c74",
+    "source_crop": [
+      1456,
+      93,
+      1528,
+      273
+    ],
+    "source_anchor": [
+      1492,
+      183
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_idle_000.png",
+    "species": "velociraptor",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "fe1f7f66767e20904f7aba73f19316103fe6173509f0c0ccd7caca1961189a35",
+    "source_crop": [
+      4,
+      297,
+      76,
+      477
+    ],
+    "source_anchor": [
+      40,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_idle_001.png",
+    "species": "velociraptor",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "f68387450d4871a01f24cac39fdaf682edeaa684c7a5d857323537d2b9e698a7",
+    "source_crop": [
+      76,
+      297,
+      148,
+      477
+    ],
+    "source_anchor": [
+      112,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_idle_002.png",
+    "species": "velociraptor",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "a22c7cdcc24e7b66e5618d4155ba9cc00c221658b4012bb5456b7cd6815e4c70",
+    "source_crop": [
+      149,
+      297,
+      221,
+      477
+    ],
+    "source_anchor": [
+      185,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_idle_003.png",
+    "species": "velociraptor",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "ddffd7919dcb7607c79789a019f017e372740e0bd64af7acfaaba142862724d0",
+    "source_crop": [
+      220,
+      297,
+      292,
+      477
+    ],
+    "source_anchor": [
+      256,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_eat_000.png",
+    "species": "velociraptor",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "fe576ef632c58842335541833446956c2a23f4c684ae94fa7bad4e109a90522b",
+    "source_crop": [
+      300,
+      297,
+      372,
+      477
+    ],
+    "source_anchor": [
+      336,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_eat_001.png",
+    "species": "velociraptor",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "3e91d068476553418ee58c277e7cb329881e7eccc9e3faf05bd7226023bc4e09",
+    "source_crop": [
+      370,
+      297,
+      442,
+      477
+    ],
+    "source_anchor": [
+      406,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_eat_002.png",
+    "species": "velociraptor",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "1f807456011eadfb73139459929c538a6f08b4c398361eac912ac1ab7ce43ebb",
+    "source_crop": [
+      440,
+      297,
+      512,
+      477
+    ],
+    "source_anchor": [
+      476,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_eat_003.png",
+    "species": "velociraptor",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "06e282e1ac1af3aba69ccb26c15b65731323e63cd5588cd2415ba8309bf64037",
+    "source_crop": [
+      512,
+      297,
+      584,
+      477
+    ],
+    "source_anchor": [
+      548,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_fight_000.png",
+    "species": "velociraptor",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "3500351a36218a224a9806a453603db65de005bceb01d81a8b552bd9e25fbedf",
+    "source_crop": [
+      591,
+      297,
+      663,
+      477
+    ],
+    "source_anchor": [
+      627,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_fight_001.png",
+    "species": "velociraptor",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "b22ac19e17d4e1e179cdd5d582b2c10ef2dcc0a098add58db4c9fb3f8a49edbc",
+    "source_crop": [
+      661,
+      297,
+      733,
+      477
+    ],
+    "source_anchor": [
+      697,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_fight_002.png",
+    "species": "velociraptor",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "de9be19ab3464b86e484d586ffa5bbebb5b1801e35563fc974a0c32a12d98c17",
+    "source_crop": [
+      731,
+      297,
+      803,
+      477
+    ],
+    "source_anchor": [
+      767,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_fight_003.png",
+    "species": "velociraptor",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "cb9b87fb9d564697f471062c13ae8fb0d2c3a774efeff5da87336acd8cddef62",
+    "source_crop": [
+      801,
+      297,
+      873,
+      477
+    ],
+    "source_anchor": [
+      837,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_hurt_000.png",
+    "species": "velociraptor",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "df8d308de8e15f26107926148e9a0d29dac343400b9ac2b083d912436231fff1",
+    "source_crop": [
+      871,
+      297,
+      943,
+      477
+    ],
+    "source_anchor": [
+      907,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_hurt_001.png",
+    "species": "velociraptor",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "f79f46e0afe07953dcfb1fe48ca950a09c0c5b22a404fcbaeab493a0de3686a4",
+    "source_crop": [
+      950,
+      297,
+      1022,
+      477
+    ],
+    "source_anchor": [
+      986,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_hurt_002.png",
+    "species": "velociraptor",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "891bf80b6e56fff6eec14936a3cc855cb472128f637faa70852e5e365dbe5bf5",
+    "source_crop": [
+      1018,
+      297,
+      1090,
+      477
+    ],
+    "source_anchor": [
+      1054,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_hurt_003.png",
+    "species": "velociraptor",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "579e6c2c6f71a9fea502549083c17cc47891b2c87abe25c884334c6666b56ee9",
+    "source_crop": [
+      1088,
+      297,
+      1160,
+      477
+    ],
+    "source_anchor": [
+      1124,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_sneak_000.png",
+    "species": "velociraptor",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "1dbe84d2742816a806c23818616252f72c70eb676784b162a1a77e21cf317291",
+    "source_crop": [
+      1240,
+      297,
+      1312,
+      477
+    ],
+    "source_anchor": [
+      1276,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_sneak_001.png",
+    "species": "velociraptor",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "7e158cbd029e627a2a15bdead303850239698ab68c20975a13f40cee97d66eb0",
+    "source_crop": [
+      1311,
+      297,
+      1383,
+      477
+    ],
+    "source_anchor": [
+      1347,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_sneak_002.png",
+    "species": "velociraptor",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "c9b3d169bc985b2273a2f98cbde93ed3ed39d7b988298d41cc1193aa6759daed",
+    "source_crop": [
+      1382,
+      297,
+      1454,
+      477
+    ],
+    "source_anchor": [
+      1418,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/velociraptor_sneak_003.png",
+    "species": "velociraptor",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "e9c456155cce1540fe32ad7bba264bfc0fa3b61a8db0aa347c663fb0179cd850",
+    "source_crop": [
+      1456,
+      297,
+      1528,
+      477
+    ],
+    "source_anchor": [
+      1492,
+      387
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_idle_000.png",
+    "species": "deinonychus",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "1b1d4d394391b20cb29478ddb6e57ae94e0a16cae69db402e3a9f70250098617",
+    "source_crop": [
+      4,
+      515,
+      76,
+      695
+    ],
+    "source_anchor": [
+      40,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_idle_001.png",
+    "species": "deinonychus",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "4e9a573106093dbf81441dda1715ce30f5d5a034d1b93b9564a7054f8cd7a14d",
+    "source_crop": [
+      76,
+      515,
+      148,
+      695
+    ],
+    "source_anchor": [
+      112,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_idle_002.png",
+    "species": "deinonychus",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "8525130824d8c7afb93f9706ed365caaa9c4c6a49a3057b89c031df1c3984123",
+    "source_crop": [
+      149,
+      515,
+      221,
+      695
+    ],
+    "source_anchor": [
+      185,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_idle_003.png",
+    "species": "deinonychus",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "202700fc71f69ef69f5802f7a4b905ddcff9b190eb0e0974285e499c5f848bc8",
+    "source_crop": [
+      220,
+      515,
+      292,
+      695
+    ],
+    "source_anchor": [
+      256,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_eat_000.png",
+    "species": "deinonychus",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "d678195f64ca305ccf22d840bca4a5881d6116f7148993579ad18836f51afff7",
+    "source_crop": [
+      300,
+      515,
+      372,
+      695
+    ],
+    "source_anchor": [
+      336,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_eat_001.png",
+    "species": "deinonychus",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "6d95ed107b61d3ecb598f707bf06c59bc69e4a82baa8a3d05228a60768ec2bca",
+    "source_crop": [
+      370,
+      515,
+      442,
+      695
+    ],
+    "source_anchor": [
+      406,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_eat_002.png",
+    "species": "deinonychus",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "09e9811b5cbd267635222ad50d65da1280b6edfb8fbec2635fe52ac4213d434f",
+    "source_crop": [
+      440,
+      515,
+      512,
+      695
+    ],
+    "source_anchor": [
+      476,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_eat_003.png",
+    "species": "deinonychus",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "c9267efdf1320ac9c8726ccacf4fc2d96642b990598455df43341d074881c32d",
+    "source_crop": [
+      512,
+      515,
+      584,
+      695
+    ],
+    "source_anchor": [
+      548,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_fight_000.png",
+    "species": "deinonychus",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "9df8ee1f3e3565da92b98695d317d3afc493db60bc5307e92d6642a728f10a62",
+    "source_crop": [
+      591,
+      515,
+      663,
+      695
+    ],
+    "source_anchor": [
+      627,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_fight_001.png",
+    "species": "deinonychus",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "c92c99bac0612740d0c27815578bcf9104f93dc928bc6dce1d97b347f90e1c98",
+    "source_crop": [
+      661,
+      515,
+      733,
+      695
+    ],
+    "source_anchor": [
+      697,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_fight_002.png",
+    "species": "deinonychus",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "70bdac72e2a4655c3fef00ca6320387ad853b8c226087c5106330f10d0548edd",
+    "source_crop": [
+      731,
+      515,
+      803,
+      695
+    ],
+    "source_anchor": [
+      767,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_fight_003.png",
+    "species": "deinonychus",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "0109b57fb60743f855edf97330ddbdf1706c6c247e0198ec88705d61c282cf5a",
+    "source_crop": [
+      801,
+      515,
+      873,
+      695
+    ],
+    "source_anchor": [
+      837,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_hurt_000.png",
+    "species": "deinonychus",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "f5f12f2c0caf026bd475a416babd8efa0e1b4be813e618b438b3ea9ae2e8a0df",
+    "source_crop": [
+      871,
+      515,
+      943,
+      695
+    ],
+    "source_anchor": [
+      907,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_hurt_001.png",
+    "species": "deinonychus",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "7ec25e6d968ba3efa1ab71b301937fc0a2b53d2de85cc85711db33e01fd7f8b9",
+    "source_crop": [
+      950,
+      515,
+      1022,
+      695
+    ],
+    "source_anchor": [
+      986,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_hurt_002.png",
+    "species": "deinonychus",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "e5c16000b4144ed496fa5f85f8934091cb0ffc67cf499e4f4781dce968e35875",
+    "source_crop": [
+      1018,
+      515,
+      1090,
+      695
+    ],
+    "source_anchor": [
+      1054,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_hurt_003.png",
+    "species": "deinonychus",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "592e8e7aa46c08bc5367f996a2ecd4ad6a63b1ccda973e73355a932508cdd055",
+    "source_crop": [
+      1088,
+      515,
+      1160,
+      695
+    ],
+    "source_anchor": [
+      1124,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_sneak_000.png",
+    "species": "deinonychus",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "966c27db9f993c98ca0f6bdd9549644d67503d0802a69c12ae83c08fffa1c337",
+    "source_crop": [
+      1240,
+      515,
+      1312,
+      695
+    ],
+    "source_anchor": [
+      1276,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_sneak_001.png",
+    "species": "deinonychus",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "657bc4547d6051371e46a973354c57fd920dc36281190f0531b38b8b564d4ed0",
+    "source_crop": [
+      1311,
+      515,
+      1383,
+      695
+    ],
+    "source_anchor": [
+      1347,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_sneak_002.png",
+    "species": "deinonychus",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "30912988901de1205bbff5cac81d76a843bb70acf04a45341848ec448f65b838",
+    "source_crop": [
+      1382,
+      515,
+      1454,
+      695
+    ],
+    "source_anchor": [
+      1418,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/deinonychus_sneak_003.png",
+    "species": "deinonychus",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "56ef29e9f2c31f03640077f9805b1d9a8b2534bc84e3ab21ee3e44093fdeb5f6",
+    "source_crop": [
+      1456,
+      515,
+      1528,
+      695
+    ],
+    "source_anchor": [
+      1492,
+      605
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_idle_000.png",
+    "species": "utahraptor",
+    "state": "idle",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "d5617126fbac82f530e9f31112ccc1b87eb19da3294f67ca1422577b1b63a268",
+    "source_crop": [
+      4,
+      737,
+      76,
+      917
+    ],
+    "source_anchor": [
+      40,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_idle_001.png",
+    "species": "utahraptor",
+    "state": "idle",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "c02faffc1245781a03f7bd0e8e1b890a765ab5769d485eb6b017de376a585e96",
+    "source_crop": [
+      76,
+      737,
+      148,
+      917
+    ],
+    "source_anchor": [
+      112,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_idle_002.png",
+    "species": "utahraptor",
+    "state": "idle",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "6de0cc85853f7af401f3beefc0c837cc212bf08048a15a554a5367c196d4d358",
+    "source_crop": [
+      149,
+      737,
+      221,
+      917
+    ],
+    "source_anchor": [
+      185,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_idle_003.png",
+    "species": "utahraptor",
+    "state": "idle",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "822d54fa49f51d99c2c4dbf8b16360b50411e319f90518ba95767c7cc7061281",
+    "source_crop": [
+      220,
+      737,
+      292,
+      917
+    ],
+    "source_anchor": [
+      256,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_eat_000.png",
+    "species": "utahraptor",
+    "state": "eat",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "0e8c2b6b861dcb852aa23c93fba85f2481cdbc02b31b631355dd70bead8fdee1",
+    "source_crop": [
+      300,
+      737,
+      372,
+      917
+    ],
+    "source_anchor": [
+      336,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_eat_001.png",
+    "species": "utahraptor",
+    "state": "eat",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "aeb037125d0d51cd18d8d43a83a3dd4c8ece6eb1b64f46c67dbc1484b34e3035",
+    "source_crop": [
+      370,
+      737,
+      442,
+      917
+    ],
+    "source_anchor": [
+      406,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_eat_002.png",
+    "species": "utahraptor",
+    "state": "eat",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "57e4822543292a9704a78fcab333cafb580a98d73522a32032028b6bd2128856",
+    "source_crop": [
+      440,
+      737,
+      512,
+      917
+    ],
+    "source_anchor": [
+      476,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_eat_003.png",
+    "species": "utahraptor",
+    "state": "eat",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "cd0a6781f5ddc8a75ba6964751105e8a198ce8002833f543055b801aee9eb24a",
+    "source_crop": [
+      512,
+      737,
+      584,
+      917
+    ],
+    "source_anchor": [
+      548,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_fight_000.png",
+    "species": "utahraptor",
+    "state": "fight",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "972a7e9d355a579f1738187f8478c956988344cd30e83897cac3eb98c37d6d48",
+    "source_crop": [
+      591,
+      737,
+      663,
+      917
+    ],
+    "source_anchor": [
+      627,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_fight_001.png",
+    "species": "utahraptor",
+    "state": "fight",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "1d33536aeaec6d1881a4b566228b27e31e2b49429ceb82bc9e632137f428da7f",
+    "source_crop": [
+      661,
+      737,
+      733,
+      917
+    ],
+    "source_anchor": [
+      697,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_fight_002.png",
+    "species": "utahraptor",
+    "state": "fight",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "2a74fb372267508c2df9e677886ce57dacd937318c9a6ae451ff03b4829b8a25",
+    "source_crop": [
+      731,
+      737,
+      803,
+      917
+    ],
+    "source_anchor": [
+      767,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_fight_003.png",
+    "species": "utahraptor",
+    "state": "fight",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "ef288b9a98b0fa63a5eb87174bd270678d47c9b6006be174252f743a9108a2ba",
+    "source_crop": [
+      801,
+      737,
+      873,
+      917
+    ],
+    "source_anchor": [
+      837,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_hurt_000.png",
+    "species": "utahraptor",
+    "state": "hurt",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "a5a60a08547817f5f4cff5e3ab9e77245365c55ad5cb38ea508c27f44215987f",
+    "source_crop": [
+      871,
+      737,
+      943,
+      917
+    ],
+    "source_anchor": [
+      907,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_hurt_001.png",
+    "species": "utahraptor",
+    "state": "hurt",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "dc986a6638f95bda5058cedd07ca0d5d9788a388181eccc7afe62d8b9b22f075",
+    "source_crop": [
+      950,
+      737,
+      1022,
+      917
+    ],
+    "source_anchor": [
+      986,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_hurt_002.png",
+    "species": "utahraptor",
+    "state": "hurt",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "5132e9ae76cc9209b6153be41ce1c5ec683e87bea79be473aeb6e8048e2b8ed7",
+    "source_crop": [
+      1018,
+      737,
+      1090,
+      917
+    ],
+    "source_anchor": [
+      1054,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_hurt_003.png",
+    "species": "utahraptor",
+    "state": "hurt",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "2ab2c5281d743a3e1da4278c98ac925c0504d2db4501caf67a7ab72cb258b35d",
+    "source_crop": [
+      1088,
+      737,
+      1160,
+      917
+    ],
+    "source_anchor": [
+      1124,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_sneak_000.png",
+    "species": "utahraptor",
+    "state": "sneak",
+    "frame": 0,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "9a0fe287a9e7b52c890b9b180ccb2e8be8b3b8ad5c8ac6ddcd53124a15b09f83",
+    "source_crop": [
+      1240,
+      737,
+      1312,
+      917
+    ],
+    "source_anchor": [
+      1276,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_sneak_001.png",
+    "species": "utahraptor",
+    "state": "sneak",
+    "frame": 1,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "3fdf4d219d5c9d4278de00605927ff9e71a8a57a87bcdf52ba2d867a2c2f6215",
+    "source_crop": [
+      1311,
+      737,
+      1383,
+      917
+    ],
+    "source_anchor": [
+      1347,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_sneak_002.png",
+    "species": "utahraptor",
+    "state": "sneak",
+    "frame": 2,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "df229c5747537900d032e9a54480a82069c9e5530eb84c8359a7a5211c39f3be",
+    "source_crop": [
+      1382,
+      737,
+      1454,
+      917
+    ],
+    "source_anchor": [
+      1418,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/avatars/utahraptor_sneak_003.png",
+    "species": "utahraptor",
+    "state": "sneak",
+    "frame": 3,
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "source": "Source_Generated/avatars/raptors_heads.png",
+    "source_sha256": "bed88ed2839ba70c77b4b6e61f2fc12a9d1befe9271ea07a7983fa70ef395846",
+    "export_sha256": "72ffc934c12a32d01961d2509567cd17c19740ceb68093cdea797135bbfb5ffe",
+    "source_crop": [
+      1456,
+      737,
+      1528,
+      917
+    ],
+    "source_anchor": [
+      1492,
+      827
+    ],
+    "source_sample_stride": 3,
+    "alpha_threshold": 248,
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  }
+]

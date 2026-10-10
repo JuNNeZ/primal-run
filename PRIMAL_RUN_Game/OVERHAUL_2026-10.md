@@ -59,3 +59,11 @@ og delvise (resten vises på engelsk). Tabellerne ligger i `tools/i18n/`; kør
 ## Fortsættelse: sprites og mekanikker
 
 Branch `codex/sprites-and-mechanics`, baseret på denne overhaul. Deinosuchus tilføjes som spiller; A1–A6 og B1–B8 spores separat i `SPRITES_AND_MECHANICS_STATUS.md`. Tidligere ufærdige Deinonychus- og terrænændringer er bevaret på `codex/preserved-feathered-starter` og ikke automatisk flettet ind. Live-siden ændres ikke.
+
+## Opfølgning 10. oktober: Deinonychus og del A-prototyper
+
+Deinonychus er gratis fjerklædt startart med finte, egne fem rariteter og bevarede saves; Deinosuchus låses stadig op via Doris. Albino/elite-drab giver én episk belønning hver, og både valg og tilbud bruger samme arts-/diætfilter. Compys kalder eksisterende venner og venter på fire; reder forsvares og belønnes først efter vogterens død. Planteføde er varieret og har otte egne props med giftadvarsel/reduceret bevægelse.
+
+Førstegangssprogvalg har de syv fuldt oversatte sprog i egne navne. Pause → Dit build viser mutationer/rang/raritet og fryser simulationen. Separate 240 HUD-hovedposes dækker alle12spillere; fire A1-arter har96angrebsframes med egne våben og gamle fallbacks. Verdens-idle holdes stabilt, og gang/sprint deler benfase.
+
+Grafikken er prototype, ikke produktionsgodkendt. Parasaurolophus-spark mangler; A2 ecology-idles, A3 tegnede haltecyklusser, A4 vand-autotiles og A5 raptor-ådsler/skeletter er fortsat åbne. Ingen B-pakke eller udklækning erklæres bygget. Se SPRITES_AND_MECHANICS_STATUS.md og de separate regler/review.

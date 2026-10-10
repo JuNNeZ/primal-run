@@ -37,6 +37,15 @@ def build():
     corpse_overlay = GAME / 'corpse_manifest.json'
     if corpse_overlay.exists():
         manifest += json.loads(corpse_overlay.read_text())
+    attack_overlay = GAME / 'species_attack_manifest.json'
+    if attack_overlay.exists():
+        manifest += json.loads(attack_overlay.read_text())
+    forage_overlay = GAME / 'forage_manifest.json'
+    if forage_overlay.exists():
+        manifest += json.loads(forage_overlay.read_text())
+    avatar_overlay = GAME / 'avatar_manifest.json'
+    if avatar_overlay.exists():
+        manifest += json.loads(avatar_overlay.read_text())
     if len({entry['file'] for entry in manifest}) != len(manifest):
         raise SystemExit('Duplicate resource paths in combined manifest')
     for folder in ('assets', 'sounds', 'Source_Generated'):
