@@ -1,0 +1,474 @@
+{
+  "species": "baryonyx",
+  "canonical_reference": "Source_Generated/behavior_limp/baryonyx_canonical_walk23_reference.png",
+  "source": "Source_Generated/behavior_limp/baryonyx_revision2.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_enabled": false,
+  "review": "Seven usable held-foot trial poses; one continuous tail and two hindlegs/two forearms retained. E3 height ratio1.111 fails extent gate; use original fallback. Minor generated shading changes.",
+  "entries": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/baryonyx_limp_S_002_revision2.png",
+      "direction": "S",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        51,
+        23,
+        93,
+        121
+      ],
+      "export_bbox": [
+        51,
+        22,
+        93,
+        121
+      ],
+      "extent_ratios": [
+        1.0,
+        1.010204081632653
+      ],
+      "silhouette_iou": 0.9214446952595937,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/baryonyx_revision2.png",
+      "source_sha256": "76f360d8c17a10f5b05a50fd5ee912557eb610158092970e32ba8ec96a1fe60c",
+      "export_sha256": "a825322d472c232dac25cca83e8286ff6547f4254b35d34598bf5017fe1d3082",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Seven usable held-foot trial poses; one continuous tail and two hindlegs/two forearms retained. E3 height ratio1.111 fails extent gate; use original fallback. Minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/baryonyx_limp_S_003_revision2.png",
+      "direction": "S",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        51,
+        23,
+        93,
+        123
+      ],
+      "export_bbox": [
+        51,
+        22,
+        93,
+        120
+      ],
+      "extent_ratios": [
+        1.0,
+        0.98
+      ],
+      "silhouette_iou": 0.9351059035601622,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/baryonyx_revision2.png",
+      "source_sha256": "76f360d8c17a10f5b05a50fd5ee912557eb610158092970e32ba8ec96a1fe60c",
+      "export_sha256": "14f087a15384416fafedf31ba5325fe3fbff50a7c4bd8e167121b53fe2524646",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Seven usable held-foot trial poses; one continuous tail and two hindlegs/two forearms retained. E3 height ratio1.111 fails extent gate; use original fallback. Minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/baryonyx_limp_N_002_revision2.png",
+      "direction": "N",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        51,
+        23,
+        93,
+        121
+      ],
+      "export_bbox": [
+        51,
+        24,
+        93,
+        121
+      ],
+      "extent_ratios": [
+        1.0,
+        0.9897959183673469
+      ],
+      "silhouette_iou": 0.9411764705882353,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/baryonyx_revision2.png",
+      "source_sha256": "76f360d8c17a10f5b05a50fd5ee912557eb610158092970e32ba8ec96a1fe60c",
+      "export_sha256": "b18e9c519648b4020db9eb40630e2b4796c6f81adcf8b86bd3553c955fd1fe91",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Seven usable held-foot trial poses; one continuous tail and two hindlegs/two forearms retained. E3 height ratio1.111 fails extent gate; use original fallback. Minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/baryonyx_limp_N_003_revision2.png",
+      "direction": "N",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        51,
+        21,
+        93,
+        121
+      ],
+      "export_bbox": [
+        51,
+        24,
+        93,
+        121
+      ],
+      "extent_ratios": [
+        1.0,
+        0.97
+      ],
+      "silhouette_iou": 0.9593312245820154,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/baryonyx_revision2.png",
+      "source_sha256": "76f360d8c17a10f5b05a50fd5ee912557eb610158092970e32ba8ec96a1fe60c",
+      "export_sha256": "1a36685a18cecb0bcdd74053c293ef8564b4c472e61745f8f22ffd489540ba97",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Seven usable held-foot trial poses; one continuous tail and two hindlegs/two forearms retained. E3 height ratio1.111 fails extent gate; use original fallback. Minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/baryonyx_limp_E_002_revision2.png",
+      "direction": "E",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        12,
+        35,
+        136,
+        90
+      ],
+      "export_bbox": [
+        11,
+        34,
+        136,
+        90
+      ],
+      "extent_ratios": [
+        1.0080645161290323,
+        1.018181818181818
+      ],
+      "silhouette_iou": 0.9498798489529694,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/baryonyx_revision2.png",
+      "source_sha256": "76f360d8c17a10f5b05a50fd5ee912557eb610158092970e32ba8ec96a1fe60c",
+      "export_sha256": "e64720a27c8018647461d26ce7e83fe08185028fe4b45489a44ffc01f7f377f7",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Seven usable held-foot trial poses; one continuous tail and two hindlegs/two forearms retained. E3 height ratio1.111 fails extent gate; use original fallback. Minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/baryonyx_limp_E_003_revision2.png",
+      "direction": "E",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        10,
+        38,
+        137,
+        83
+      ],
+      "export_bbox": [
+        10,
+        37,
+        137,
+        87
+      ],
+      "extent_ratios": [
+        1.0,
+        1.1111111111111112
+      ],
+      "silhouette_iou": 0.9443507588532883,
+      "technical_candidate": false,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/baryonyx_revision2.png",
+      "source_sha256": "76f360d8c17a10f5b05a50fd5ee912557eb610158092970e32ba8ec96a1fe60c",
+      "export_sha256": "3ec5902d0131703158024e5c1b5087c7f28d423e86b1f075c9d46bf05125a0fe",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": false,
+      "review": "Seven usable held-foot trial poses; one continuous tail and two hindlegs/two forearms retained. E3 height ratio1.111 fails extent gate; use original fallback. Minor generated shading changes.",
+      "rejection_reason": "Extent ratio exceeds\u00b110percent"
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/baryonyx_limp_W_002_revision2.png",
+      "direction": "W",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        10,
+        42,
+        132,
+        97
+      ],
+      "export_bbox": [
+        9,
+        42,
+        134,
+        98
+      ],
+      "extent_ratios": [
+        1.0245901639344261,
+        1.018181818181818
+      ],
+      "silhouette_iou": 0.9054621848739496,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/baryonyx_revision2.png",
+      "source_sha256": "76f360d8c17a10f5b05a50fd5ee912557eb610158092970e32ba8ec96a1fe60c",
+      "export_sha256": "d2cba23fb30e3c3b600aa2df4ca3944943555c3d73497f20fd46db473eb1e3e0",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Seven usable held-foot trial poses; one continuous tail and two hindlegs/two forearms retained. E3 height ratio1.111 fails extent gate; use original fallback. Minor generated shading changes."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/baryonyx_limp_W_003_revision2.png",
+      "direction": "W",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        9,
+        44,
+        131,
+        95
+      ],
+      "export_bbox": [
+        9,
+        44,
+        134,
+        96
+      ],
+      "extent_ratios": [
+        1.0245901639344261,
+        1.0196078431372548
+      ],
+      "silhouette_iou": 0.9441809558555272,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/baryonyx_revision2.png",
+      "source_sha256": "76f360d8c17a10f5b05a50fd5ee912557eb610158092970e32ba8ec96a1fe60c",
+      "export_sha256": "1542bc3f2d619e834cbe42fcdc048036b1768041ab999baff4641baf8efe18d7",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Seven usable held-foot trial poses; one continuous tail and two hindlegs/two forearms retained. E3 height ratio1.111 fails extent gate; use original fallback. Minor generated shading changes."
+    }
+  ],
+  "canonical_reference_sha256": "c36b7e0c465def1a00764ffe4670ceee05f422bc078e802ff4b93bdb250a6141"
+}

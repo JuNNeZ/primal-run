@@ -1,0 +1,536 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "family": "shore_soil",
+      "mask": 0,
+      "actual": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 1,
+      "actual": 1,
+      "scores": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 2,
+      "actual": 2,
+      "scores": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 3,
+      "actual": 3,
+      "scores": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 4,
+      "actual": 4,
+      "scores": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 5,
+      "actual": 5,
+      "scores": [
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 6,
+      "actual": 6,
+      "scores": [
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 7,
+      "actual": 7,
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 8,
+      "actual": 8,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 9,
+      "actual": 9,
+      "scores": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 10,
+      "actual": 10,
+      "scores": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 11,
+      "actual": 11,
+      "scores": [
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 12,
+      "actual": 12,
+      "scores": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 13,
+      "actual": 13,
+      "scores": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 14,
+      "actual": 14,
+      "scores": [
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_soil",
+      "mask": 15,
+      "actual": 15,
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 0,
+      "actual": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 1,
+      "actual": 1,
+      "scores": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 2,
+      "actual": 2,
+      "scores": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 3,
+      "actual": 3,
+      "scores": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 4,
+      "actual": 4,
+      "scores": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 5,
+      "actual": 5,
+      "scores": [
+        0.9375,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 6,
+      "actual": 6,
+      "scores": [
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 7,
+      "actual": 7,
+      "scores": [
+        1.0,
+        0.9375,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 8,
+      "actual": 8,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 9,
+      "actual": 9,
+      "scores": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 10,
+      "actual": 10,
+      "scores": [
+        0.0,
+        1.0,
+        0.0,
+        0.9375
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 11,
+      "actual": 11,
+      "scores": [
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 12,
+      "actual": 12,
+      "scores": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 13,
+      "actual": 13,
+      "scores": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 14,
+      "actual": 14,
+      "scores": [
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "family": "shore_sand",
+      "mask": 15,
+      "actual": 15,
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 0,
+      "actual": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 1,
+      "actual": 1,
+      "scores": [
+        0.6875,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 2,
+      "actual": 2,
+      "scores": [
+        0.0,
+        0.6875,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 3,
+      "actual": 3,
+      "scores": [
+        0.6875,
+        0.75,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 4,
+      "actual": 4,
+      "scores": [
+        0.0,
+        0.0,
+        0.75,
+        0.0
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 5,
+      "actual": 5,
+      "scores": [
+        0.6875,
+        0.0,
+        0.6875,
+        0.0
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 6,
+      "actual": 6,
+      "scores": [
+        0.0,
+        0.6875,
+        0.75,
+        0.0
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 7,
+      "actual": 7,
+      "scores": [
+        0.75,
+        0.6875,
+        0.875,
+        0.0
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 8,
+      "actual": 8,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.6875
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 9,
+      "actual": 9,
+      "scores": [
+        0.9375,
+        0.0,
+        0.0,
+        0.6875
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 10,
+      "actual": 10,
+      "scores": [
+        0.0,
+        0.5,
+        0.0,
+        0.9375
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 11,
+      "actual": 11,
+      "scores": [
+        0.6875,
+        0.8125,
+        0.0,
+        0.875
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 12,
+      "actual": 12,
+      "scores": [
+        0.0,
+        0.0,
+        0.5625,
+        0.6875
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 13,
+      "actual": 13,
+      "scores": [
+        0.8125,
+        0.0,
+        0.8125,
+        0.8125
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 14,
+      "actual": 14,
+      "scores": [
+        0.0,
+        0.9375,
+        0.875,
+        0.6875
+      ]
+    },
+    {
+      "family": "water_depth",
+      "mask": 15,
+      "actual": 15,
+      "scores": [
+        0.75,
+        0.625,
+        0.625,
+        0.6875
+      ]
+    }
+  ],
+  "errors": [],
+  "scope": "Native4x4 corner material patches at NW/NE/SE/SW, majorityincludingties; not texture-seam or production approval.",
+  "production_approved": false
+}

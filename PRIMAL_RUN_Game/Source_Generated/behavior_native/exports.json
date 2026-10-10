@@ -1,0 +1,193 @@
+[
+  {
+    "species": "ankylosaurus",
+    "part": "feed",
+    "source": "Source_Generated/behavior_native/ankylosaurus_feed_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "ankylosaurus",
+    "part": "rest",
+    "source": "Source_Generated/behavior_native/ankylosaurus_rest_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "baryonyx",
+    "part": "feed",
+    "source": "Source_Generated/behavior_native/baryonyx_feed_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "baryonyx",
+    "part": "rest",
+    "source": "Source_Generated/behavior_native/baryonyx_rest_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Nativebody comparison: scratchE revision2 matchesreferencefootprint; Wquarantined, unchangedotherdirectionsrevision1. Quietprototype only.",
+    "rejected_poses": {
+      "sleep_W_000": "Revision3 West torsoarea1.36\u20131.38\u00d7canonical andwidth1.18\u00d7; entirepairedcyclequarantined. Exactcanonicalidlefallback, no sourcebodyrescale.",
+      "sleep_W_001": "Revision3 West torsoarea1.36\u20131.38\u00d7canonical andwidth1.18\u00d7; entirepairedcyclequarantined. Exactcanonicalidlefallback, no sourcebodyrescale.",
+      "scratch_W_000": "Revision3 West torsoarea1.36\u20131.38\u00d7canonical andwidth1.18\u00d7; entirepairedcyclequarantined. Exactcanonicalidlefallback, no sourcebodyrescale.",
+      "scratch_W_001": "Revision3 West torsoarea1.36\u20131.38\u00d7canonical andwidth1.18\u00d7; entirepairedcyclequarantined. Exactcanonicalidlefallback, no sourcebodyrescale."
+    },
+    "source_overrides": {
+      "scratch_E": "Source_Generated/behavior_native/baryonyx_rest_revision2.png",
+      "sleep_W": "Source_Generated/behavior_native/baryonyx_rest_W_revision3.png",
+      "scratch_W": "Source_Generated/behavior_native/baryonyx_rest_W_revision3.png"
+    }
+  },
+  {
+    "species": "carnotaurus",
+    "part": "feed",
+    "source": "Source_Generated/behavior_native/carnotaurus_feed_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "carnotaurus",
+    "part": "rest",
+    "source": "Source_Generated/behavior_native/carnotaurus_rest_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Canonical nativebody comparison: revision2 sides preserve torso volume and correcttwo browhorns; unchangedS/N fromrevision1. Quiet prototypeposes, no productionapproval.",
+    "rejected_poses": {},
+    "source_overrides": {
+      "sleep_E": "Source_Generated/behavior_native/carnotaurus_rest_revision2.png",
+      "sleep_W": "Source_Generated/behavior_native/carnotaurus_rest_revision2.png",
+      "scratch_E": "Source_Generated/behavior_native/carnotaurus_rest_revision2.png",
+      "scratch_W": "Source_Generated/behavior_native/carnotaurus_rest_revision2.png"
+    }
+  },
+  {
+    "species": "deinosuchus",
+    "part": "feed",
+    "source": "Source_Generated/behavior_native/deinosuchus_feed_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "deinosuchus",
+    "part": "rest",
+    "source": "Source_Generated/behavior_native/deinosuchus_rest_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "gallimimus",
+    "part": "feed",
+    "source": "Source_Generated/behavior_native/gallimimus_feed_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "gallimimus",
+    "part": "rest",
+    "source": "Source_Generated/behavior_native/gallimimus_rest_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "pachycephalosaurus",
+    "part": "feed",
+    "source": "Source_Generated/behavior_native/pachycephalosaurus_feed_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "pachycephalosaurus",
+    "part": "rest",
+    "source": "Source_Generated/behavior_native/pachycephalosaurus_rest_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "parasaurolophus",
+    "part": "feed",
+    "source": "Source_Generated/behavior_native/parasaurolophus_feed_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "parasaurolophus",
+    "part": "rest",
+    "source": "Source_Generated/behavior_native/parasaurolophus_rest_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "triceratops",
+    "part": "feed",
+    "source": "Source_Generated/behavior_native/triceratops_feed_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "triceratops",
+    "part": "rest",
+    "source": "Source_Generated/behavior_native/triceratops_rest_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  },
+  {
+    "species": "tyrannosaurus",
+    "part": "feed",
+    "source": "Source_Generated/behavior_native/tyrannosaurus_feed_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Nativebody review: South/Eastsniff andWestfeed revision3 preserveproportions; Northunchangedrevision1. South/Eastdrink remainexplicitfallback, notdrawnanimation. Prototype only.",
+    "rejected_poses": {
+      "drink_S_000": "Revision3 South drinking poses shift torso16nativepixels betweenactions; fixedhipretained, no bboxrecenter or incorrectsniffrelabelling. Canonicalidlefallback.",
+      "drink_S_001": "Revision3 South drinking poses shift torso16nativepixels betweenactions; fixedhipretained, no bboxrecenter or incorrectsniffrelabelling. Canonicalidlefallback.",
+      "drink_E_000": "Revision3 East drinking torsoarea1.28\u00d7 andwidth1.15\u00d7canonical; no anatomyrescale orsniffrelabelling. Canonicalidlefallback.",
+      "drink_E_001": "Revision3 East drinking torsoarea1.28\u00d7 andwidth1.15\u00d7canonical; no anatomyrescale orsniffrelabelling. Canonicalidlefallback."
+    },
+    "source_overrides": {
+      "graze_S": "Source_Generated/behavior_native/tyrannosaurus_feed_S_revision3.png",
+      "graze_E": "Source_Generated/behavior_native/tyrannosaurus_feed_E_revision3.png",
+      "graze_W": "Source_Generated/behavior_native/tyrannosaurus_feed_W_revision3.png",
+      "drink_S": "Source_Generated/behavior_native/tyrannosaurus_feed_S_revision3.png",
+      "drink_E": "Source_Generated/behavior_native/tyrannosaurus_feed_E_revision3.png",
+      "drink_W": "Source_Generated/behavior_native/tyrannosaurus_feed_W_revision3.png"
+    }
+  },
+  {
+    "species": "tyrannosaurus",
+    "part": "rest",
+    "source": "Source_Generated/behavior_native/tyrannosaurus_rest_revision1.png",
+    "alpha_threshold": 192,
+    "runtime_enabled": true,
+    "visual_review": "Native light comparison: canonical body size/hip maintained; quiet generated prototype, markings not pixel-identical and motion subtle. No production/animation approval.",
+    "rejected_poses": {}
+  }
+]

@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
+  const FEATURES={packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -126,7 +126,7 @@
   PLAYER_SPECIES.velociraptor.text='Lille startjæger. Hurtige bid og et kort beskyttet kløspring. Shift: 30 stamina.';PLAYER_SPECIES.compy.text='Lille challenge-art. Små bid og korte undvigelser; vær forsigtig blandt store dyr.';
   for(const [id,config] of Object.entries(PLAYER_SPECIES))config.diet=config.diet||(id==='ankylosaurus'?'herbivore':'carnivore');
   const herbivorousNPC=kind=>['parasaurolophus','ankylosaurus','triceratops','pachycephalosaurus','gallimimus'].includes(kind);
-  const legacyPlayerFrame=(species,state,direction,frame)=>'assets/'+(['triceratops','tyrannosaurus','deinosuchus'].includes(species)?'enemy_full/':'player_full/')+species+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';
+  const legacyPlayerFrame=(species,state,direction,frame)=>'assets/'+(['parasaurolophus','triceratops','tyrannosaurus','deinosuchus'].includes(species)?'enemy_full/':'player_full/')+species+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';
   // A3: retain the six drawn poses and their fixed hips; hold the loaded step
   // longer instead of deforming the body or inventing intermediate limbs.
   const locomotionFrame=(phase,health,maxHealth)=>{
@@ -135,7 +135,16 @@
     const step=cycle*8,boundaries=[1,2,5,6,7,8];
     return boundaries.findIndex(end=>step<end);
   };
-  const playerFrame=(species,state,direction,frame)=>FEATURES.speciesAttacks&&state==='attack'&&['ankylosaurus','triceratops','pachycephalosaurus','gallimimus'].includes(species)?'assets/species_attacks/'+species+'_attack_'+direction+'_'+String(frame).padStart(3,'0')+'.png':legacyPlayerFrame(species,state,direction,frame);
+  // Presentation only: ecology clocks/gait phases already pause with the run.
+  function behaviorFrame(species,state,direction,frame,health,maxHealth,mode='',time=0){
+    if(FEATURES.injuredPoses&&FEATURES.limpAnimation&&['walk','run'].includes(state)&&maxHealth>0&&health/maxHealth<.3)
+      return 'assets/behavior/'+species+'_limp_'+direction+'_'+String(frame).padStart(3,'0')+'.png';
+    if(!FEATURES.ecologyAnimations||state!=='idle')return null;
+    const activity=mode==='graze'?'graze':mode==='drink'?'drink':mode==='scratch'?'scratch':mode==='rest'?((time%22>=8&&time%22<10)?'scratch':'sleep'):null;
+    if(!activity)return null;
+    return 'assets/behavior/'+species+'_'+activity+'_'+direction+'_'+String(Math.floor(time*1.5)%2).padStart(3,'0')+'.png';
+  }
+  const playerFrame=(species,state,direction,frame)=>FEATURES.speciesAttacks&&state==='attack'&&['ankylosaurus','triceratops','pachycephalosaurus','gallimimus','parasaurolophus'].includes(species)?'assets/species_attacks/'+species+'_attack_'+direction+'_'+String(frame).padStart(3,'0')+'.png':legacyPlayerFrame(species,state,direction,frame);
   const abilityCost=r=>Math.max(16,PLAYER_SPECIES[r.species].abilityCost-2*r.mutations.deinonychus_common-3*r.mutations.crocEconomy-5*r.mutations.pounce+6*r.mutations.overclock);
   const mutationWeight=(mutation,ranks)=>MUTATION_RARITIES[mutation.rarity].weight*(1+Math.min(.4,.2*(ranks[mutation.id]||0)));
   function seeded(seed) { let x = seed >>> 0; return () => { x += 0x6D2B79F5; let t = Math.imul(x ^ x >>> 15, 1 | x); t ^= t + Math.imul(t ^ t >>> 7, 61 | t); return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
@@ -1388,5 +1397,5 @@
     }
   };
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

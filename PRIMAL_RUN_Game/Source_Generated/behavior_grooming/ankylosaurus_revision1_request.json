@@ -1,0 +1,48 @@
+{
+  "prompt": "Edit this exact transparent Ankylosaurus atlas with ONLY a very small grooming/scratching motion. Keep the entire body outline, armour plates, tail club, raw red/orange palette, hip locations and animal sizes pixel-faithful to supplied image. Do not repaint or reinterpret dinosaur. Output exactly1536x1024 transparent, same 2 columns each768px by4rows256px, S,N,E,W directions. Left column gently lifts one near forefoot toward lower neck to scratch, right column the same foot touches/scratches lower neck. All other pixels stay as close as possible to reference. Neither biting nor attacking: closed mouth, calm animal. Only ONE forefoot moves, four legs total. Hip is eachcell384,128. Keep original TWO TIMES native size: body visible approx80x180 S/N and230x100 E/W, never fill the huge cell. Feet/body root cannot slide. No ground/shadows/labels or new horns. 1990s overhead oblique pixel art, crisp square pixels, transparent.",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "source": "ankylosaurus_revision1.png",
+  "references": [
+    "/tmp/ankylosaurus-groom-layout.png"
+  ],
+  "review": "Held: body faithful at native resolution, but grooming motion difficult to read.",
+  "source_sha256": "054081a4c09c2572663e197b103e9f3b4696fe3e32dde14c6f58874600b5641f",
+  "reference_sources": [
+    {
+      "file": "assets/player_full/ankylosaurus_idle_S_000.png",
+      "sha256": "58f2552c44b43378ff16066407ce60108f83398a9f0a865daab1e481b9586dd9"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_N_000.png",
+      "sha256": "1a670f607e0ec71bf24e60914a860c522125a02399cbd0091f94aeee14da5c6f"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_E_000.png",
+      "sha256": "a30b20f757d7b2e9455b45cfdca3f3b077ed5dedb0d3e5c1975d7bbd29b937b4"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_W_000.png",
+      "sha256": "e6b64eb096add20da2ec520181a7e28e9a4395c47b38d3a3d28cf94a525510c0"
+    }
+  ],
+  "canonical_references": [
+    {
+      "file": "assets/player_full/ankylosaurus_idle_S_000.png",
+      "sha256": "58f2552c44b43378ff16066407ce60108f83398a9f0a865daab1e481b9586dd9"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_N_000.png",
+      "sha256": "1a670f607e0ec71bf24e60914a860c522125a02399cbd0091f94aeee14da5c6f"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_E_000.png",
+      "sha256": "a30b20f757d7b2e9455b45cfdca3f3b077ed5dedb0d3e5c1975d7bbd29b937b4"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_W_000.png",
+      "sha256": "e6b64eb096add20da2ec520181a7e28e9a4395c47b38d3a3d28cf94a525510c0"
+    }
+  ]
+}

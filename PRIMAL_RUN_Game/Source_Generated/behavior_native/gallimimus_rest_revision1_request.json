@@ -1,0 +1,30 @@
+{
+  "prompt": "Make only tiny localized head/foot changes to this EXACT canonical gallimimus sprite atlas. Columns0/1 SLEEP: eyesclosed, head rests slightly lower toward chest, tiny quietbreathing only; no curledbodyshrink. Columns2/3 SCRATCH: one hindfoot gently lifted against ownflank; supportingfoot planted, then rubs same spot shifted fewpixels. Otherlimbs planted, closedmouth. Exactly2hindlegs2arms, beak and slenderneck unchanged; no teeth/horns. Preserve all original bodyoutline/volume,tail,pixelmarkings and original raw colours; do NOT repaintwholebody or enlarge/shrink. EXACTLY1536x1024 transparent FOUR columns384wide FOUR rows256high S,N,E,W, same layout. Fixed hip192,128eachcell. Everyanimal remains EXACTLY current TWO TIMES native size and position. Tiny readable movements only, neverfillcell. One tail, originalcameraoverhead/slightside. No shadows/background/labels/puddles/food. Crisp squarepixels1990sstyle.",
+  "source": "gallimimus_rest_revision1.png",
+  "references": [
+    "gallimimus_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "source_sha256": "ca47a263a4450890227e226aa9a50c2ae3cba94d35d1c1fa19ded6f6b3b85634",
+  "canonical_references": [
+    {
+      "file": "assets/player_full/gallimimus_idle_S_000.png",
+      "sha256": "f9e2b12086dcd2290a5bf469906fca7dd2b9edde51be2980d08a745ac3908d00"
+    },
+    {
+      "file": "assets/player_full/gallimimus_idle_N_000.png",
+      "sha256": "a9e671799fc7619251ec897abf61baf4539190a4c2522bb04015b2769d6f9bd3"
+    },
+    {
+      "file": "assets/player_full/gallimimus_idle_E_000.png",
+      "sha256": "c30ecc9b995ac85c05ae691215f8c35f7854150be44118aed4b583d72044aa10"
+    },
+    {
+      "file": "assets/player_full/gallimimus_idle_W_000.png",
+      "sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4"
+    }
+  ],
+  "canonical_layout_sha256": "bd3ceeae828ee20f9a228f29ad3be4a63850ec06b21bb4ffe312aa00643e5b23"
+}

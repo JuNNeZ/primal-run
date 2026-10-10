@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "unit_tests": 141,
+  "browser_suites": 22,
+  "kit_checks": 3,
+  "runtime": "standalone Chromium; GDJS not run",
+  "assets": {
+    "native_behavior": 288,
+    "authored_behavior": 276,
+    "behavior_fallback": 12,
+    "injury": 312,
+    "authored_injury_keyposes": 88,
+    "native_injury": 224,
+    "water": 48,
+    "corpses": 192
+  },
+  "production_approved": false
+}

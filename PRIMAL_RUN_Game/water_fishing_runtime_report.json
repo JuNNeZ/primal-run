@@ -5,33 +5,33 @@
     {
       "stage": 0,
       "pondWaterPixel": [
-        60,
-        113,
-        128
+        59,
+        65,
+        68
       ]
     },
     {
       "stage": 1,
       "pondWaterPixel": [
-        60,
-        113,
-        128
+        59,
+        65,
+        68
       ]
     },
     {
       "stage": 2,
       "pondWaterPixel": [
-        60,
-        113,
-        128
+        59,
+        65,
+        68
       ]
     },
     {
       "stage": 3,
       "pondWaterPixel": [
-        60,
-        113,
-        128
+        162,
+        212,
+        193
       ]
     }
   ],
@@ -41,13 +41,5 @@
     "river school in river biome",
     "Triceratops cannot eat fish",
     "no browser errors"
-  ],
-  "coreTests": 100,
-  "gameBrowserChecks": 17,
-  "kitBrowserChecks": 3,
-  "source_sha256": {
-    "src/core.js": "ab98f3a1f57f6cce8ddafa8b75a330029f691b0644d590bd56ad5bddcf77766b",
-    "src/app.js": "5fd0cd05e737b4f5625e641e43422c4129e2f03b801c9cfc427009f601e834e0",
-    "player_full_manifest.json": "77694aa22e799f01baa0071439a6161a5749434fceb4c03b6c10d43de8e03067"
-  }
+  ]
 }
