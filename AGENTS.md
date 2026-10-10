@@ -78,3 +78,10 @@ family supplement and files for the task, then expand if a dependency requires i
 Species anatomy: PRIMAL_RUN_Game/SPECIES_ANATOMY.md. Corpse overlay supplement:
 PRIMAL_RUN_Game/SPRITE_RULES_CORPSES.md. These routes do not replace the
 project-wide rules or automatically approve generated art.
+
+## Art gate and parallel integration workflow
+- Incoming ChatGPT art: use `.agents/skills/primal-art-intake/SKILL.md` and `.agents/skills/primal-art-gates/SKILL.md`; stage candidates only until visual/in-engine approval.
+- Terrain safe-spot and Karl exploit: use `.agents/skills/primal-boss-exploit/SKILL.md` (Ankylosaurus Space, NOT Velociraptor bite).
+- Bringing Claude code onto Codex: use `.agents/skills/primal-safe-integration/SKILL.md` on a scratch branch, with save-migration and Part A coexistence tests.
+- Before any release review: use `.agents/skills/primal-release-gate/SKILL.md`; no unapproved gh-pages push.
+- These Codex skills provide workflow instructions. They do not themselves switch Codex model or reasoning effort automatically.
