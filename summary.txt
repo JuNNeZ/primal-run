@@ -1,0 +1,26 @@
+ok adaptive-browser
+ok carrion-rex-browser
+ok combat-feedback-browser
+ok corpse-scenes-browser
+ok eating-accessibility-browser
+ok enemy-animation-browser
+ok game-browser
+ok journey-browser
+ok jungle-browser
+ok player-animation-browser
+ok player-full-browser
+ok polish-browser
+ok research-browser
+ok roguelite-browser
+ok species-colour-browser
+ok terrain-browser
+ok water-fishing-browser
+ok world-browser
+ok check_kit_directions.cjs
+ok check_kit_progression.cjs
+ok check_kit_files.cjs
+ok tools/validate_game_sprites.py
+ok tools/validate_enemy_animations.py
+# pass 121
+# fail 0
+I18N en FAILED

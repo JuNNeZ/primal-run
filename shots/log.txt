@@ -1,0 +1,31 @@
+shot desktop-01-menu
+shot desktop-02-intro
+preloading
+preloaded
+shot desktop-10-level1
+desktop-10-level1 {"level":0,"zone":"Mosesumpen","enemies":87,"nearby":["compy","compy","compy","compy","gallimimus","parasaurolophus","compy","parasaurolophus","gallimimus","compy","compy","gallimimus","pachycephalosaurus","compy","compy","compy","gallimimus"]}
+shot desktop-12-level3
+desktop-12-level3 {"level":2,"zone":"Galleriskoven","enemies":112,"nearby":["compy","carnotaurus","parasaurolophus","compy","compy","compy","compy","compy","compy","compy","compy","carnotaurus"]}
+shot desktop-14-level5
+desktop-14-level5 {"level":4,"zone":"Kløften","enemies":126,"nearby":["compy","compy","compy","pachycephalosaurus","compy","pachycephalosaurus","compy","compy","carnotaurus","carnotaurus","triceratops"]}
+shot desktop-16-level7
+desktop-16-level7 {"level":6,"zone":"Lavakanten","enemies":149,"nearby":["compy","ankylosaurus","carnotaurus","compy","ankylosaurus","carnotaurus","ankylosaurus","compy","ankylosaurus","ankylosaurus","tyrannosaurus"]}
+shot desktop-20-herbivore-forage
+desktop-20-herbivore-forage {"forage":28}
+shot desktop-21-boss-windup
+desktop-21-boss-windup {"mode":"windup","name":"STORMLØB"}
+shot desktop-22-combat-crit
+desktop-22-combat-crit {"effects":["KRITISK · 12","KRITISK · 12"]}
+shot desktop-24-achievements
+shot desktop-25-species
+shot desktop-26-menu-again
+shot desktop-23-mutation
+desktop-23-mutation {"phase":"mutation"}
+shot mobile-01-menu
+shot mobile-02-intro
+shot ja-01-menu
+shot ja-02-game
+shot ja-03-mutation
+shot de-01-menu
+shot de-02-game
+shot de-03-mutation

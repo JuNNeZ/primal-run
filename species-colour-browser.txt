@@ -1,0 +1,1 @@
+PASS: all ten selector portraits exactly match runtime palettes and preserve alpha, including initially unloaded Utahraptor

@@ -1,0 +1,736 @@
+TAP version 13
+# Subtest: menu, four biomes, four bosses and results have distinct actual compositions
+ok 1 - menu, four biomes, four bosses and results have distinct actual compositions
+  ---
+  duration_ms: 2.316612
+  type: 'test'
+  ...
+# Subtest: health layers have 50/25/10 thresholds, hysteresis, coexist with boss music and duck on pause
+ok 2 - health layers have 50/25/10 thresholds, hysteresis, coexist with boss music and duck on pause
+  ---
+  duration_ms: 0.498995
+  type: 'test'
+  ...
+# Subtest: crossfades reuse unchanged scenes, retire buses and mute avoids new music voices
+ok 3 - crossfades reuse unchanged scenes, retire buses and mute avoids new music voices
+  ---
+  duration_ms: 0.495909
+  type: 'test'
+  ...
+# Subtest: ambient layer schedules independently from muted music and changes calls with biome; music varies after 64 beats
+ok 4 - ambient layer schedules independently from muted music and changes calls with biome; music varies after 64 beats
+  ---
+  duration_ms: 0.627482
+  type: 'test'
+  ...
+# Subtest: food spoils in portions and disappears with corpse, while pause freezes decay
+ok 5 - food spoils in portions and disappears with corpse, while pause freezes decay
+  ---
+  duration_ms: 66.346456
+  type: 'test'
+  ...
+# Subtest: escape regeneration needs distance, ten seconds, no combat and no bleed; bosses never regen
+ok 6 - escape regeneration needs distance, ten seconds, no combat and no bleed; bosses never regen
+  ---
+  duration_ms: 37.068167
+  type: 'test'
+  ...
+# Subtest: predators prefer food clusters, walk gradually and consume without player rewards
+ok 7 - predators prefer food clusters, walk gradually and consume without player rewards
+  ---
+  duration_ms: 30.204924
+  type: 'test'
+  ...
+# Subtest: T rex unlock persists and slow attack locks heading before heavy contact
+ok 8 - T rex unlock persists and slow attack locks heading before heavy contact
+  ---
+  duration_ms: 33.778296
+  type: 'test'
+  ...
+# Subtest: stationary T rex roar spends stamina, scares normals and leaves boss unchanged
+ok 9 - stationary T rex roar spends stamina, scares normals and leaves boss unchanged
+  ---
+  duration_ms: 32.303842
+  type: 'test'
+  ...
+# Subtest: digestion DNA upgrade migrates safely, costs DNA and improves feeding
+ok 10 - digestion DNA upgrade migrates safely, costs DNA and improves feeding
+  ---
+  duration_ms: 60.785743
+  type: 'test'
+  ...
+# Subtest: abilities consume their full stamina cost and recovery pauses after casting
+ok 11 - abilities consume their full stamina cost and recovery pauses after casting
+  ---
+  duration_ms: 443.736322
+  type: 'test'
+  ...
+# Subtest: herbivores eat plants and ignore corpse meat, including exploration rewards
+ok 12 - herbivores eat plants and ignore corpse meat, including exploration rewards
+  ---
+  duration_ms: 21.541662
+  type: 'test'
+  ...
+# Subtest: ordinary large predators telegraph before contact damage
+ok 13 - ordinary large predators telegraph before contact damage
+  ---
+  duration_ms: 68.963465
+  type: 'test'
+  ...
+# Subtest: all herbivorous NPCs graze when unprovoked
+ok 14 - all herbivorous NPCs graze when unprovoked
+  ---
+  duration_ms: 65.515253
+  type: 'test'
+  ...
+# Subtest: legendary shield absorbs final damage after armour and stance
+ok 15 - legendary shield absorbs final damage after armour and stance
+  ---
+  duration_ms: 30.14913
+  type: 'test'
+  ...
+# Subtest: legendary mutation pool contains one shared and one per playable species
+ok 16 - legendary mutation pool contains one shared and one per playable species
+  ---
+  duration_ms: 0.335642
+  type: 'test'
+  ...
+# Subtest: corpse meat requires stationary held eating, awards portions and preserves leftovers
+ok 17 - corpse meat requires stationary held eating, awards portions and preserves leftovers
+  ---
+  duration_ms: 105.639918
+  type: 'test'
+  ...
+# Subtest: attacks cancel eating, choices freeze its clock, corpse expiry removes linked leftovers
+ok 18 - attacks cancel eating, choices freeze its clock, corpse expiry removes linked leftovers
+  ---
+  duration_ms: 63.835283
+  type: 'test'
+  ...
+# Subtest: exploration reveals bounded cells and rare discoveries award once; stage clears fog
+ok 19 - exploration reveals bounded cells and rare discoveries award once; stage clears fog
+  ---
+  duration_ms: 66.385509
+  type: 'test'
+  ...
+# Subtest: seed reproduces events and alternative arenas; settings and duplicate bindings stay safe
+ok 20 - seed reproduces events and alternative arenas; settings and duplicate bindings stay safe
+  ---
+  duration_ms: 264.450901
+  type: 'test'
+  ...
+# Subtest: boss arena clearing removes matching cover, while explicit spawns leave the world unchanged
+ok 21 - boss arena clearing removes matching cover, while explicit spawns leave the world unchanged
+  ---
+  duration_ms: 45.898981
+  type: 'test'
+  ...
+# Subtest: all naturally populated animals and nest guardians match the biome and local shore/lava habitat across seeds
+ok 22 - all naturally populated animals and nest guardians match the biome and local shore/lava habitat across seeds
+  ---
+  duration_ms: 7849.870663
+  type: 'test'
+  ...
+# Subtest: offscreen reinforcements respect species habitats and an aquatic boss can use a remote riverbank
+ok 23 - offscreen reinforcements respect species habitats and an aquatic boss can use a remote riverbank
+  ---
+  duration_ms: 2158.230578
+  type: 'test'
+  ...
+# Subtest: plants and ambient insects follow biome pools, are deterministic, and avoid lava
+ok 24 - plants and ambient insects follow biome pools, are deterministic, and avoid lava
+  ---
+  duration_ms: 2457.832326
+  type: 'test'
+  ...
+# Subtest: species display ramps use only the fixed palette and retain different identities and stable torso sizes
+ok 25 - species display ramps use only the fixed palette and retain different identities and stable torso sizes
+  ---
+  duration_ms: 37.063624
+  type: 'test'
+  ...
+# Subtest: DNA species unlock with banked DNA, achievement species cannot be bought, and selection survives saving
+ok 26 - DNA species unlock with banked DNA, achievement species cannot be bought, and selection survives saving
+  ---
+  duration_ms: 3.266291
+  type: 'test'
+  ...
+# Subtest: Triceratops armour protects the front and leaves rear vulnerable
+ok 27 - Triceratops armour protects the front and leaves rear vulnerable
+  ---
+  duration_ms: 57.739278
+  type: 'test'
+  ...
+# Subtest: Pachycephalosaurus crits stagger normal dinosaurs, fill a boss break meter and never stun-lock bosses
+ok 28 - Pachycephalosaurus crits stagger normal dinosaurs, fill a boss break meter and never stun-lock bosses
+  ---
+  duration_ms: 52.022824
+  type: 'test'
+  ...
+# Subtest: Gallimimus eats plants and meat, but sprint does not grant basic invulnerability
+ok 29 - Gallimimus eats plants and meat, but sprint does not grant basic invulnerability
+  ---
+  duration_ms: 45.127853
+  type: 'test'
+  ...
+# Subtest: fishing consumes stamina and finite stock, stops on movement and freezes in mutation choices
+ok 30 - fishing consumes stamina and finite stock, stops on movement and freezes in mutation choices
+  ---
+  duration_ms: 33.03707
+  type: 'test'
+  ...
+# Subtest: fish and plant supplies support full progression in every biome without lava fishing
+ok 31 - fish and plant supplies support full progression in every biome without lava fishing
+  ---
+  duration_ms: 1632.095324
+  type: 'test'
+  ...
+# Subtest: tradeoffs change both sides of their bargain
+ok 32 - tradeoffs change both sides of their bargain
+  ---
+  duration_ms: 23.519947
+  type: 'test'
+  ...
+# Subtest: already owned mutations gain modest weight, caps stay excluded and species/rarities still apply
+ok 33 - already owned mutations gain modest weight, caps stay excluded and species/rarities still apply
+  ---
+  duration_ms: 243.694622
+  type: 'test'
+  ...
+# Subtest: coordinated Compy packs reserve at most two simultaneous windups
+ok 34 - coordinated Compy packs reserve at most two simultaneous windups
+  ---
+  duration_ms: 31.938436
+  type: 'test'
+  ...
+# Subtest: fish stay in visible water, plants and tall vegetation clear shores across seeded biomes
+ok 35 - fish stay in visible water, plants and tall vegetation clear shores across seeded biomes
+  ---
+  duration_ms: 5859.906315
+  type: 'test'
+  ...
+# Subtest: herbivores and omnivores cannot fish; invalid dry-land schools cannot reward Baryonyx
+ok 36 - herbivores and omnivores cannot fish; invalid dry-land schools cannot reward Baryonyx
+  ---
+  duration_ms: 121.365855
+  type: 'test'
+  ...
+# Subtest: stray fish pickups do not become generic healing or food for herbivores
+ok 37 - stray fish pickups do not become generic healing or food for herbivores
+  ---
+  duration_ms: 15.304778
+  type: 'test'
+  ...
+# Subtest: directional bites damage targets ahead, not targets behind; body collision stays fixed
+ok 38 - directional bites damage targets ahead, not targets behind; body collision stays fixed
+  ---
+  duration_ms: 111.515084
+  type: 'test'
+  ...
+# Subtest: bite contact happens once, aim is locked, quick jaws scale the whole animation, and pause freezes it
+ok 39 - bite contact happens once, aim is locked, quick jaws scale the whole animation, and pause freezes it
+  ---
+  duration_ms: 64.479747
+  type: 'test'
+  ...
+# Subtest: kills drop meat, but XP, levels and boss threshold require actual pickup
+ok 40 - kills drop meat, but XP, levels and boss threshold require actual pickup
+  ---
+  duration_ms: 97.726958
+  type: 'test'
+  ...
+# Subtest: successful bite gives one impact, damage number and a short knockback stagger; misses stay quiet
+ok 41 - successful bite gives one impact, damage number and a short knockback stagger; misses stay quiet
+  ---
+  duration_ms: 31.829046
+  type: 'test'
+  ...
+# Subtest: first biome opens with three weak enemies and ramps composition, caps and cadence toward a 24-meat boss
+ok 42 - first biome opens with three weak enemies and ramps composition, caps and cadence toward a 24-meat boss
+  ---
+  duration_ms: 29.548167
+  type: 'test'
+  ...
+# Subtest: Compy separates from its pack and telegraphs one bite instead of unavoidable contact damage
+ok 43 - Compy separates from its pack and telegraphs one bite instead of unavoidable contact damage
+  ---
+  duration_ms: 25.000381
+  type: 'test'
+  ...
+# Subtest: Parasaurolophus flees harmlessly and steers along an edge rather than getting stuck
+ok 44 - Parasaurolophus flees harmlessly and steers along an edge rather than getting stuck
+  ---
+  duration_ms: 36.290859
+  type: 'test'
+  ...
+# Subtest: ordinary Carnotaurus charges from the first biome, locks its warning aim and allows a sideways dodge
+ok 45 - ordinary Carnotaurus charges from the first biome, locks its warning aim and allows a sideways dodge
+  ---
+  duration_ms: 28.038905
+  type: 'test'
+  ...
+# Subtest: Ankylosaurus warns before tail strike, hits once and has weaker rear armor
+ok 46 - Ankylosaurus warns before tail strike, hits once and has weaker rear armor
+  ---
+  duration_ms: 35.981866
+  type: 'test'
+  ...
+# Subtest: first biome waits for meat progression before unlocking a stronger predator and caps it at one
+ok 47 - first biome waits for meat progression before unlocking a stronger predator and caps it at one
+  ---
+  duration_ms: 52.602353
+  type: 'test'
+  ...
+# Subtest: mutation choices are distinct, pause simulation, and queued levels resolve
+ok 48 - mutation choices are distinct, pause simulation, and queued levels resolve
+  ---
+  duration_ms: 34.464165
+  type: 'test'
+  ...
+# Subtest: mutation menu freezes enemies, attacks, pickups and damage; choosing grants brief protection
+ok 49 - mutation menu freezes enemies, attacks, pickups and damage; choosing grants brief protection
+  ---
+  duration_ms: 30.000905
+  type: 'test'
+  ...
+# Subtest: DNA rolls use species chances and pickups are banked once, surviving reload/death
+ok 50 - DNA rolls use species chances and pickups are banked once, surviving reload/death
+  ---
+  duration_ms: 42.781595
+  type: 'test'
+  ...
+# Subtest: four guaranteed boss awards, transitions preserve mutations, and final boss wins once
+ok 51 - four guaranteed boss awards, transitions preserve mutations, and final boss wins once
+  ---
+  duration_ms: 202.840941
+  type: 'test'
+  ...
+# Subtest: shop validates balances/ranks and applies permanent upgrades only to a new run
+ok 52 - shop validates balances/ranks and applies permanent upgrades only to a new run
+  ---
+  duration_ms: 38.910392
+  type: 'test'
+  ...
+# Subtest: boss windup freezes its aim, deals damage during charge, and pounce evades it
+ok 53 - boss windup freezes its aim, deals damage during charge, and pounce evades it
+  ---
+  duration_ms: 20.063533
+  type: 'test'
+  ...
+# Subtest: fatal damage stops updates; paused world and stamina do not advance
+ok 54 - fatal damage stops updates; paused world and stamina do not advance
+  ---
+  duration_ms: 33.819971
+  type: 'test'
+  ...
+# Subtest: malformed saves, disabled storage, and injected names remain bounded
+ok 55 - malformed saves, disabled storage, and injected names remain bounded
+  ---
+  duration_ms: 43.207905
+  type: 'test'
+  ...
+# Subtest: GDevelop event matches shared source; all integrated PNGs preserve original pixels
+ok 56 - GDevelop event matches shared source; all integrated PNGs preserve original pixels
+  ---
+  duration_ms: 151.596387
+  type: 'test'
+  ...
+# Subtest: meat quality changes pickup value and XP; large species have better rare-drop odds
+ok 57 - meat quality changes pickup value and XP; large species have better rare-drop odds
+  ---
+  duration_ms: 218.617399
+  type: 'test'
+  ...
+# Subtest: map exploration follows world bounds; reinforcements and bosses never spawn inside the viewport
+ok 58 - map exploration follows world bounds; reinforcements and bosses never spawn inside the viewport
+  ---
+  duration_ms: 25.618847
+  type: 'test'
+  ...
+# Subtest: weighted mutation rarity retains unique choices and ranks, and Jonas unlocks a cosmetic secret
+ok 59 - weighted mutation rarity retains unique choices and ranks, and Jonas unlocks a cosmetic secret
+  ---
+  duration_ms: 50.655103
+  type: 'test'
+  ...
+# Subtest: mixed dinosaurs separate fixed bodies even at identical coordinates without dealing damage or changing attack aim
+ok 60 - mixed dinosaurs separate fixed bodies even at identical coordinates without dealing damage or changing attack aim
+  ---
+  duration_ms: 25.80964
+  type: 'test'
+  ...
+# Subtest: crowded herds, bosses and map-edge collisions resolve without escaping bounds or blocking charge patterns
+ok 61 - crowded herds, bosses and map-edge collisions resolve without escaping bounds or blocking charge patterns
+  ---
+  duration_ms: 40.637393
+  type: 'test'
+  ...
+# Subtest: successful bites freeze simulation briefly, misses do not, and blood/dust decay with bounded counts
+ok 62 - successful bites freeze simulation briefly, misses do not, and blood/dust decay with bounded counts
+  ---
+  duration_ms: 54.648502
+  type: 'test'
+  ...
+# Subtest: first boss alternates a locked charge and a directional bite with useful recovery openings
+ok 63 - first boss alternates a locked charge and a directional bite with useful recovery openings
+  ---
+  duration_ms: 27.249457
+  type: 'test'
+  ...
+# Subtest: half-health first boss signals phase two once and telegraphs each leg of its double charge
+ok 64 - half-health first boss signals phase two once and telegraphs each leg of its double charge
+  ---
+  duration_ms: 31.653848
+  type: 'test'
+  ...
+# Subtest: first-boss stomp hits once and later bosses now also signal phase two
+ok 65 - first-boss stomp hits once and later bosses now also signal phase two
+  ---
+  duration_ms: 23.128633
+  type: 'test'
+  ...
+# Subtest: terrain layouts provide seeded wilderness and biome-specific scenery without changing world bounds
+ok 66 - terrain layouts provide seeded wilderness and biome-specific scenery without changing world bounds
+  ---
+  duration_ms: 509.806477
+  type: 'test'
+  ...
+# Subtest: every full language translates all mutation, species, level, zone and achievement texts
+ok 67 - every full language translates all mutation, species, level, zone and achievement texts
+  ---
+  duration_ms: 8.240087
+  type: 'test'
+  ...
+# Subtest: numbers, key names, segments and templates survive translation; fun languages fall back to English
+ok 68 - numbers, key names, segments and templates survive translation; fun languages fall back to English
+  ---
+  duration_ms: 0.50206
+  type: 'test'
+  ...
+# Subtest: Velociraptor is the free starter; old chosen Compy and purchased species survive migration
+ok 69 - Velociraptor is the free starter; old chosen Compy and purchased species survive migration
+  ---
+  duration_ms: 76.264633
+  type: 'test'
+  ...
+# Subtest: eight named bosses progress through new maps, including repeat biomes, and keep mutations
+ok 70 - eight named bosses progress through new maps, including repeat biomes, and keep mutations
+  ---
+  duration_ms: 465.898812
+  type: 'test'
+  ...
+# Subtest: seed1993 enters the one-level Compy secret, normal seeds retain the full journey
+ok 71 - seed1993 enters the one-level Compy secret, normal seeds retain the full journey
+  ---
+  duration_ms: 50.451547
+  type: 'test'
+  ...
+# Subtest: tiny Compy thieves consume corpse food without awarding the player, depleted packs scatter
+ok 72 - tiny Compy thieves consume corpse food without awarding the player, depleted packs scatter
+  ---
+  duration_ms: 30.600256
+  type: 'test'
+  ...
+# Subtest: ordinary species abilities share baseline costs and cooldowns, telegraph and freeze during mutation choices
+ok 73 - ordinary species abilities share baseline costs and cooldowns, telegraph and freeze during mutation choices
+  ---
+  duration_ms: 199.945427
+  type: 'test'
+  ...
+# Subtest: NPC skills ignore player mutations, bosses keep their independent attack pattern, Bary can only catch actual water fish
+ok 74 - NPC skills ignore player mutations, bosses keep their independent attack pattern, Bary can only catch actual water fish
+  ---
+  duration_ms: 22.541123
+  type: 'test'
+  ...
+# Subtest: simulator starting biome respects the eight-level route; isolated seed1993 duels use the classic fixture
+ok 75 - simulator starting biome respects the eight-level route; isolated seed1993 duels use the classic fixture
+  ---
+  duration_ms: 327.489001
+  type: 'test'
+  ...
+# Subtest: opening rocks, foliage clusters and river orientation visibly vary for repeat runs of the same level
+ok 76 - opening rocks, foliage clusters and river orientation visibly vary for repeat runs of the same level
+  ---
+  duration_ms: 8078.665055
+  type: 'test'
+  ...
+# Subtest: map constraints preserve safe start and broad access to habitats and sites
+ok 77 - map constraints preserve safe start and broad access to habitats and sites
+  ---
+  duration_ms: 3145.616842
+  type: 'test'
+  ...
+# Subtest: critical hits are the only bite stagger and boss crits build a break meter
+ok 78 - critical hits are the only bite stagger and boss crits build a break meter
+  ---
+  duration_ms: 147.999988
+  type: 'test'
+  ...
+# Subtest: stamina refills slower in combat and an empty bar leaves you winded
+ok 79 - stamina refills slower in combat and an empty bar leaves you winded
+  ---
+  duration_ms: 30.554373
+  type: 'test'
+  ...
+# Subtest: every journey level has one optional rival miniboss that rewards an epic genome
+ok 80 - every journey level has one optional rival miniboss that rewards an epic genome
+  ---
+  duration_ms: 30.390389
+  type: 'test'
+  ...
+# Subtest: compys steal food near you instead of attacking, then run off with it
+ok 81 - compys steal food near you instead of attacking, then run off with it
+  ---
+  duration_ms: 38.217663
+  type: 'test'
+  ...
+# Subtest: a wounded compy retreats, heals out of sight and returns while hungry
+ok 82 - a wounded compy retreats, heals out of sight and returns while hungry
+  ---
+  duration_ms: 29.187601
+  type: 'test'
+  ...
+# Subtest: territorial herbivores only warn a herbivore player unless crowded or hit
+ok 83 - territorial herbivores only warn a herbivore player unless crowded or hit
+  ---
+  duration_ms: 52.785706
+  type: 'test'
+  ...
+# Subtest: hungry predators can hunt prey; natural kills leave a carcass but give the player nothing
+ok 84 - hungry predators can hunt prey; natural kills leave a carcass but give the player nothing
+  ---
+  duration_ms: 32.09638
+  type: 'test'
+  ...
+# Subtest: maps are larger and split into named zones whose animals differ; the start zone is gentle
+ok 85 - maps are larger and split into named zones whose animals differ; the start zone is gentle
+  ---
+  duration_ms: 1649.454854
+  type: 'test'
+  ...
+# Subtest: entering a new zone is announced and rewards exploration once
+ok 86 - entering a new zone is announced and rewards exploration once
+  ---
+  duration_ms: 18.233064
+  type: 'test'
+  ...
+# Subtest: achievements unlock once, pay DNA, unlock species and skins, and survive saving
+ok 87 - achievements unlock once, pay DNA, unlock species and skins, and survive saving
+  ---
+  duration_ms: 15.450188
+  type: 'test'
+  ...
+# Subtest: fresh saves only have Velociraptor; pre-overhaul saves keep Compy; lifetime stats bank once per run
+ok 88 - fresh saves only have Velociraptor; pre-overhaul saves keep Compy; lifetime stats bank once per run
+  ---
+  duration_ms: 24.001461
+  type: 'test'
+  ...
+# Subtest: deep river water blocks small walkers except at fords; swimmers and big species cross; lava burns
+ok 89 - deep river water blocks small walkers except at fords; swimmers and big species cross; lava burns
+  ---
+  duration_ms: 50.995739
+  type: 'test'
+  ...
+# Subtest: a successful bite refreshes eight seconds with exactly zero give-up chance
+ok 90 - a successful bite refreshes eight seconds with exactly zero give-up chance
+  ---
+  duration_ms: 57.886356
+  type: 'test'
+  ...
+# Subtest: give-up hazard increases with distance and time, excludes bosses and does not consume loot random rolls
+ok 91 - give-up hazard increases with distance and time, excludes bosses and does not consume loot random rolls
+  ---
+  duration_ms: 41.027211
+  type: 'test'
+  ...
+# Subtest: disengaged enemies move home and cannot instantly re-aggro; new player attacks override disengagement
+ok 92 - disengaged enemies move home and cannot instantly re-aggro; new player attacks override disengagement
+  ---
+  duration_ms: 13.599064
+  type: 'test'
+  ...
+# Subtest: prey ignore a still distant observer, flee a moving hunter until out of sight, remember it, and ignore a herbivore player
+ok 93 - prey ignore a still distant observer, flee a moving hunter until out of sight, remember it, and ignore a herbivore player
+  ---
+  duration_ms: 33.182766
+  type: 'test'
+  ...
+# Subtest: pause freezes pursuit grace, random decisions and prey distance state
+ok 94 - pause freezes pursuit grace, random decisions and prey distance state
+  ---
+  duration_ms: 22.783853
+  type: 'test'
+  ...
+# Subtest: runs are deterministic for identical seed/species/build and preserve timeout outcome
+ok 95 - runs are deterministic for identical seed/species/build and preserve timeout outcome
+  ---
+  duration_ms: 169.38017
+  type: 'test'
+  ...
+# Subtest: all registered species and new profiles run without NaN metrics
+ok 96 - all registered species and new profiles run without NaN metrics
+  ---
+  duration_ms: 185.293124
+  type: 'test'
+  ...
+# Subtest: albino/elite kills open their own epic reward at once, paused, cannot repeat, and caps fall back to DNA
+ok 97 - albino/elite kills open their own epic reward at once, paused, cannot repeat, and caps fall back to DNA
+  ---
+  duration_ms: 25.963487
+  type: 'test'
+  ...
+# Subtest: injuries slow only wounded normal animals and leave an actual trail
+ok 98 - injuries slow only wounded normal animals and leave an actual trail
+  ---
+  duration_ms: 19.330326
+  type: 'test'
+  ...
+# Subtest: field guide persists only nearby observations and sanitizes unknown species
+ok 99 - field guide persists only nearby observations and sanitizes unknown species
+  ---
+  duration_ms: 19.681437
+  type: 'test'
+  ...
+# Subtest: telemetry records landed attacks, effective damage, distance and freezes in pause
+ok 100 - telemetry records landed attacks, effective damage, distance and freezes in pause
+  ---
+  duration_ms: 20.529989
+  type: 'test'
+  ...
+# Subtest: two new tradeoffs affect mobility, vulnerability, feeding and stamina
+ok 101 - two new tradeoffs affect mobility, vulnerability, feeding and stamina
+  ---
+  duration_ms: 95.827305
+  type: 'test'
+  ...
+# Subtest: aggregates keep deaths/timeouts separate and report uncertainty
+ok 102 - aggregates keep deaths/timeouts separate and report uncertainty
+  ---
+  duration_ms: 0.630909
+  type: 'test'
+  ...
+# Subtest: missed secrets accumulate across stages but per-stage results stay separate
+ok 103 - missed secrets accumulate across stages but per-stage results stay separate
+  ---
+  duration_ms: 53.219063
+  type: 'test'
+  ...
+# Subtest: field guide does not claim a roar before it was observed
+ok 104 - field guide does not claim a roar before it was observed
+  ---
+  duration_ms: 19.399054
+  type: 'test'
+  ...
+# Subtest: fresh saves start as Velociraptor; legacy DNA and upgrades survive unlock migration
+ok 105 - fresh saves start as Velociraptor; legacy DNA and upgrades survive unlock migration
+  ---
+  duration_ms: 107.807243
+  type: 'test'
+  ...
+# Subtest: random wilderness is repeatable by seed, varies between seeds and keeps bounded safe habitats
+ok 106 - random wilderness is repeatable by seed, varies between seeds and keeps bounded safe habitats
+  ---
+  duration_ms: 4750.425276
+  type: 'test'
+  ...
+# Subtest: each class has a distinct primary attack; Ankylosaurus tail hits behind it
+ok 107 - each class has a distinct primary attack; Ankylosaurus tail hits behind it
+  ---
+  duration_ms: 101.986386
+  type: 'test'
+  ...
+# Subtest: ability costs, immunity, contact damage once per animal, and defensive brace differ by class
+ok 108 - ability costs, immunity, contact damage once per animal, and defensive brace differ by class
+  ---
+  duration_ms: 112.02683
+  type: 'test'
+  ...
+# Subtest: mutation pool contains shared and own mutations, never another species skill
+ok 109 - mutation pool contains shared and own mutations, never another species skill
+  ---
+  duration_ms: 107.76701
+  type: 'test'
+  ...
+# Subtest: fossils award permanent DNA once; nest choice freezes every simulation field and wakes preplaced guardian
+ok 110 - fossils award permanent DNA once; nest choice freezes every simulation field and wakes preplaced guardian
+  ---
+  duration_ms: 20.524163
+  type: 'test'
+  ...
+# Subtest: optional elites and rare prey exist before exploration and grant better loot
+ok 111 - optional elites and rare prey exist before exploration and grant better loot
+  ---
+  duration_ms: 12.502616
+  type: 'test'
+  ...
+# Subtest: later bosses have locked warnings, phase two, and flank recovery; T. rex roar drains stamina
+ok 112 - later bosses have locked warnings, phase two, and flank recovery; T. rex roar drains stamina
+  ---
+  duration_ms: 52.25284
+  type: 'test'
+  ...
+# Subtest: water and mud slow travel while crocodiles retain water speed and collision corrections remain independent
+ok 113 - water and mud slow travel while crocodiles retain water speed and collision corrections remain independent
+  ---
+  duration_ms: 80.07069
+  type: 'test'
+  ...
+# Subtest: bush concealment requires a quiet delay, reduces detection, and attacks reveal immediately
+ok 114 - bush concealment requires a quiet delay, reduces detection, and attacks reveal immediately
+  ---
+  duration_ms: 45.74737
+  type: 'test'
+  ...
+# Subtest: normal movement breaks concealment, sneaking preserves it and bosses keep targeting hidden players
+ok 115 - normal movement breaks concealment, sneaking preserves it and bosses keep targeting hidden players
+  ---
+  duration_ms: 24.810234
+  type: 'test'
+  ...
+# Subtest: herds share alarms without granting an unhit animal the attack grace, and resume grazing/rest
+ok 116 - herds share alarms without granting an unhit animal the attack grace, and resume grazing/rest
+  ---
+  duration_ms: 28.017853
+  type: 'test'
+  ...
+# Subtest: territorial predators warn before entry, pursue attacks for eight seconds, then leave players beyond their home
+ok 117 - territorial predators warn before entry, pursue attacks for eight seconds, then leave players beyond their home
+  ---
+  duration_ms: 27.604456
+  type: 'test'
+  ...
+# Subtest: death series remain for 60–70 simulation seconds, cap memory, and freeze during mutation choices
+ok 118 - death series remain for 60–70 simulation seconds, cap memory, and freeze during mutation choices
+  ---
+  duration_ms: 81.170348
+  type: 'test'
+  ...
+# Subtest: momentum refunds are capped per cast even when a Carnotaurus hits an entire pack
+ok 119 - momentum refunds are capped per cast even when a Carnotaurus hits an entire pack
+  ---
+  duration_ms: 33.996506
+  type: 'test'
+  ...
+# Subtest: shared damage and hunter stack additively while armour and defensive stance multiply without invulnerability
+ok 120 - shared damage and hunter stack additively while armour and defensive stance multiply without invulnerability
+  ---
+  duration_ms: 59.495301
+  type: 'test'
+  ...
+# Subtest: turning preserves stride phase and walk/run clocks close their loops without an extra-frame reset
+ok 121 - turning preserves stride phase and walk/run clocks close their loops without an extra-frame reset
+  ---
+  duration_ms: 25.141215
+  type: 'test'
+  ...
+1..121
+# tests 121
+# suites 0
+# pass 121
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 17618.418401

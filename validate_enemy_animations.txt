@@ -1,0 +1,8 @@
+{
+  "technical_export_result": "PASS",
+  "new_enemy_assets": 64,
+  "errors": [],
+  "production_approved": false,
+  "visual_review": "Native1x dark/light grids and enemy_review.html4x. Generated studies have minor anatomy/marking/registration variation. No production visual approval. Rejected clips and lateral Compy gapes excluded.",
+  "scope": "RGBA binary alpha, palette, native size, fixed declared pivots, source SHA, padding, inventory and distinct stride images. Does not prove anatomical alignment or temporal art quality."
+}
