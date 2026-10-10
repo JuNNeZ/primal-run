@@ -20,6 +20,10 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       if (lang === 'de') { assert.match(card, /Compy-Snack/); assert.match(cause, /Todesursache\s+Compsognathus/); }
       if (lang === 'ja') { assert.match(card, /コンピーのおやつ/); assert.match(cause, /死因/); }
       await noScroll(lang + ' result');
+      // "Del resultat" copies a text card (clipboard stubbed so the test needs no permission prompt).
+      await page.evaluate(() => { window.__shared = null; Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: t => { window.__shared = t; return Promise.resolve(); } } }); });
+      await page.locator('[data-action="share-card"]').click(); const shared = await page.evaluate(() => window.__shared);
+      assert.match(shared, /^PRIMAL RUN · ★ /); assert.match(shared, /Seed 21/); assert.match(shared, lang === 'da' ? /Compy-snack[\s\S]*Dødsårsag: Compsognathus/ : lang === 'de' ? /Compy-Snack[\s\S]*Todesursache: Compsognathus/ : /コンピーのおやつ/);
       // Records screen (Q8): both boards and every scope render without horizontal scroll and without missing translations.
       await page.evaluate(() => { PrimalI18n.missing.clear(); });
       await page.locator('.run-card ~ .actions [data-action="scores"], [data-action="scores"]').first().click();

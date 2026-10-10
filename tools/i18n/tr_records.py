@@ -101,6 +101,9 @@ RECORDS = [
 ("Føde","Food","Nahrung","Föda","Mat","食料","食物"),
 ("Fisk","Fish","Fische","Fisk","Fisk","魚","鱼"),
 ("Ny titel","New title","Neuer Titel","Ny titel","Ny tittel","新しい称号","新称号"),
+("Del resultat","Share result","Ergebnis teilen","Dela resultat","Del resultat","結果を共有","分享结果"),
+("Resultat kopieret","Result copied","Ergebnis kopiert","Resultat kopierat","Resultat kopiert","結果をコピーしました","结果已复制"),
+("Resultatet kunne ikke kopieres","The result could not be copied","Das Ergebnis konnte nicht kopiert werden","Resultatet kunde inte kopieras","Resultatet kunne ikke kopieres","結果をコピーできませんでした","无法复制结果"),
 ]
 
 # Title names and descriptions: (da, en, de, sv, no, ja, zh).

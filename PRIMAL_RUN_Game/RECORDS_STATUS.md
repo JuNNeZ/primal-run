@@ -1,6 +1,6 @@
 # Rekorder, distance og run-titler – status (R-DIST · R-TRACK · R-RECORDS · R-REPORT)
 
-Branch: `claude/records-impl` (built from `claude/primal-skills` → `codex/sprites-and-mechanics` @ 33d78a1).
+Branch: `claude/records-implementation` (same history as `claude/records-impl`; built from `claude/primal-skills` → `codex/sprites-and-mechanics` @ 33d78a1).
 Specs: `docs/design/records-world-extinction/` (copied unchanged from `claude/records-design`; data files `run_titles.json`
 and `run_summary_variables.json` are the source of truth for titles).
 
@@ -44,7 +44,7 @@ Overlap with Part A: no sprite, animation, terrain or boss AI changes. `core.js`
 ## Assumptions and approximations (not proven)
 
 - `maxHitDamage` = largest HP drop on one enemy within a single player step, counted only for animals the player provoked in that step (`provoke()` sets `lastAttackedAt`). Not exactly the final per-hit damage from `resolveBite`.
-- `bossAttempts` counts a boss's first `alert`. Boss fight time is measured from the boss's spawn.
+- `bossAttempts` counts a boss once it is within 420 px of the player or damaged (core spawns bosses already `alert`). Boss fight time runs from the boss's spawn.
 - `ambushKills` = a kill within 1.5 s of an attack started while hidden.
 - `rivalsSpawned` counts rivals seen in `r.enemies` (one per level).
 - Untracked (`null` → titles hidden, boards show "—"): `foodStolen`, `secretsFound`, `secretLevel`, `secretEnding` and Part B (`nightKills`, `alliesRecruited`, `challengeCount`, `dailySeed`). Affects the titles robbed_blind, amber_*, last_sky, they_became_birds and the 4 Part B titles.
@@ -52,7 +52,30 @@ Overlap with Part A: no sprite, animation, terrain or boss AI changes. `core.js`
 
 ## Not done / remaining integration
 
-- Share as PNG ("Del") is not built. Seed sharing exists already.
+- "Del resultat" copies a text card (clipboard, no network). A PNG share image is not built.
 - **Q14 FAIL (bot evidence, not human playtests):** `balance_runs/title_distribution_2026-10-10.json` – 72 bot runs (12 species × 6 styles, 600 s), 58 ended. `speed_slayer` was primary in 60.3 % (target ≤ 25 %), fallback 0 % (target < 10 %). Cause: bots kill Palle (mini-boss, level 1, 100 HP) within 25 s of the boss spawning. Recommendation for Jonas: limit `speed_slayer` to non-mini bosses or require `bosses >= 2`. Changing the reviewed catalogue is a design decision, so it was not changed.
 - Run log for bots in `tools/playstyle_sim.cjs` is not extended; `tools/title_distribution.cjs` reuses its bots instead.
 - Merging into the Codex branch happens only on Jonas' instruction. Expect conflicts only in `core.js` (8 lines), `app.js` (result/scores screens), `project.json`/`integration_report.json` (regenerate with `npm run build:game`) and `lang.js` (regenerate with `python tools/i18n/build_lang.py`).
+
+## Independent review (subagent, read-only) – 89cb630
+
+Fixed: the fatal hit is now included in the summary (lava/flawless), boss chips in classic/secret runs show the right boss, record keys are restricted to plain ids and values are escaped, weighted-cause ties follow §5.1, and a boss attempt counts at engagement. Not changed (noted): poison ticks count as hits for "no damage taken" streaks; a `seeded` sum keeps the "fra tidligere runs" note after new runs are added.
+
+## Ankylosaurus/Karl lava exploit – 64a889c
+
+`node tools/boss_exploit_probe.cjs` (seed 3, real core, stationary player holding Space):
+
+| Setup | Karl HP lost | Player HP lost | Result |
+|---|---|---|---|
+| Ankylosaurus 90 px from the lava line | 100 % (21.8 s) | 26 % | exploit reproduced |
+| Ankylosaurus 70 px | 100 % | 72.7 % | |
+| Same distance, open ground (control) | 62 % | 100 % | player dies |
+| Velociraptor 50–70 px | 100 % | 77.8 % | |
+| Triceratops 90 px | 100 % | 0 % | worse than Anky |
+| Ankylosaurus vs Carl across deep water (level 2) | 100 % | 98.7 % | Carl reaches; no exploit there |
+
+Karl never enters lava (X7 holds); his charges stop at the edge and he cannot reach the far bank. `tests/boss-exploit.test.cjs` pins the repro, and X1 (≤ 25 % HP loss across lava) is a TODO test for Codex' B1 reachability/stalk work (05 §4.3). No boss AI was changed.
+
+## Rival bug – 89cb630
+
+Probe over 500 seeds × 8 levels: the rival was missing on level 3 (39×) and level 4 (35×), i.e. on 7.4 % of river maps. Cause: the Baryonyx rival needs `suitableHabitat` (riverside) **and** `!isWater(margin -40)`, and on those maps no habitat satisfied both. Fix: fall back to margin 0 (never in water). After the fix 0 were missing across 2000 maps. Rivals that did spawn were all still alive after 60 s (470/470), so they do not disappear.
