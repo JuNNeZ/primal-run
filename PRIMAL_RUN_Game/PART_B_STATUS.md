@@ -25,6 +25,7 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 | B3 Spor og lugt | `scentTrails` | færdig | `tests/scent-trails.test.cjs` (5), browser: tegning + frametid (Q26-metoden) |
 | B4 Tørke og vandhuller | `drought` | færdig | `tests/drought.test.cjs` (4), browser da/en |
 | B2 Dag og nat | `dayNight` | færdig | `tests/day-night.test.cjs` (5), browser (mørke, ☾, søvn) |
+| B5 Raptor-flok | `raptorPack` | færdig | `tests/raptor-pack.test.cjs` (5), browser da/en med rigtigt E-tryk |
 
 ### B1a – boss-rækkevidde (05 §4)
 
@@ -124,6 +125,15 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 - Tegning: procedural nat (radial gradient i #151b19 op til 62 % med lys omkring spilleren og en let #3c7180-multiply). Rigtig natpalet = A6-asset (`MISSING_SPRITES.md`). HUD: ☀/☾ foran uret.
 - Bots: Rovdyr-bots med `dodge > 0,5` vælger sovende byttedyr om natten.
 
+### B5 – Raptor-flok
+
+- Der findes ingen raptor-NPC'er (velociraptor/utahraptor/deinonychus er kun spillerarter, og NPC-ådsler mangler, jf. `MISSING_SPRITES.md` punkt 5). Derfor ligger raptorer i `r.raptors` uden for `r.enemies`. Økologi, kollision, records og bosser ser dem ikke, og de bruger spillerens eksisterende Velociraptor-frames. Der er ingen ny grafik.
+- Hver bane placerer 2 vilde raptorer (seedet, på land, mindst 600 px fra start). Trykker man E (`interact`, både tastatur og `step`-input) inden for 90 px af en vild raptor med kød inden for 140 px af den, spiser den en portion og bliver allieret. Man kan have højst 2, og de følger med til næste bane. `alliesRecruited` kommer i RunSummary, og titlen `pack_leader` er aktiveret.
+- Allierede følger spilleren i formation. De angriber spillerens mål, dvs. det dyr man senest har ramt inden for 6 s og 420 px, ellers en opmærksom fjende inden for 250 px. Et bid tager 6 × (1 + 0,25 × biom) HP, men højst ned til 1 HP, så de aldrig dræber og aldrig tæller som kills. De får 0,3 × fjendens skade tilbage pr. bid, flygter under 35 % HP og vender tilbage ved 70 %. De regenererer 2 %/s, når de følger spilleren.
+- UI: Et teal ◆ over den allierede og en lille HP-bjælke (procedural), mærkatet "VILD RAPTOR · E FODR / LÆG KØD HER" og effekterne "NY FLOKFÆLLE" og "FLYGTER".
+- Bots: `explorer` og stilarter med `dodge > 0,5` fodrer en raptor, når der ligger kød ved den og ingen fjende er tæt på. `runOne` rapporterer `allies` og `nightKills`.
+- Antagelse: Allierede gør også bosskampe lettere (de bider bossen ned til 1 HP). Det er ikke testet mod menneskelige spillere og skal vurderes i balancekørslen.
+
 ### Rettelser efter review (primal-code-reviewer på 063b2ed…e078a3a)
 
 - B6: DNA-bonussen var en farm. Nu udbetales den ved slutningen og kun efter mindst én boss (se B6). "Svag heling" dækker nu også heling fra mutationsvalg.
@@ -155,4 +165,5 @@ Udfyldes pr. pakke (kommandoer fra repo-roden).
 - `src/core.js` B3: 1 linje i `enemyAI` (scent-hook før `ecologyAI`), `r.tracks=[]` i `nextStage`, en blok i Part B-sektionen (`TRACKS`, `step`-wrapper, `followScent`). `src/app.js` B3: sportegning før decals, `track` i `MODE_ICON`.
 - `src/core.js` B4: en blok i Part B-sektionen (wrappers om `start`, `nextStage`, `step` og `naturalBehavior`, samt `droughtScale` og `lastWater`). `src/app.js` B4: tørkekant i `drawPond`.
 - `src/core.js` B2: 3 små inline-ændringer i `ecologyAI` (synsvidde, compy-mod, sovende flugtafstand), 1 i `packCalls` (ready-tærskel), en blok i Part B-sektionen (`start`/`step`/`kill`/`naturalBehavior`-wrappers). `src/app.js` B2: natoverlay i `screenAmbience`, ☀/☾ i `#time-label`, `sleep` i `MODE_ICON`.
+- `src/core.js` B5: en blok i Part B-sektionen (`PACK`, `placeRaptors`, wrappers om `start`/`nextStage`/`interact`/`step`, `feedRaptor`, `packTarget`, `stepRaptors`). `src/app.js` B5: raptorer i objektlisten, markør, HP-bjælke og mærkater, `velociraptor` i preload/evict.
 - Genererede filer (`lang.js`, `run_titles.js`, `project.json`, `integration_report.json`): genbyg med `python tools/rebuild_generated.py`.

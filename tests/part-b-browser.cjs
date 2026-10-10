@@ -197,6 +197,19 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
       checks.push('B2: night darkness 1, edge brightness ' + b2.day.edge + ' → ' + b2.night.edge + ', HUD "' + b2.label + '", herbivore asleep');
     }
 
+    // ---- B5 Raptor-flok: a real E key press next to a wild raptor with a corpse beside it recruits it (en label + da).
+    for (const lang of ['en', 'da']) {
+      await open(lang);
+      const label = await page.evaluate(() => { const g = primalRun.game; g.phase = 'menu'; g.start({ seed: 3 }); const r = g.run; r.enemies = []; r.spawnTimer = 1e9; r.invulnerable = 1e9;
+        const a = r.raptors[0]; Object.assign(r.player, { x: a.x + 60, y: a.y }); const prey = g.spawn('parasaurolophus', { x: a.x + 15, y: a.y + 20 }); prey.hp = 0; g.kill(prey); r.enemies = [];
+        return PrimalI18n.t('VILD RAPTOR · ' + 'E' + ' FODR'); });
+      await page.waitForTimeout(120); await page.keyboard.down('KeyE'); await page.waitForTimeout(120); await page.keyboard.up('KeyE');
+      const b5 = await page.evaluate(() => { const r = primalRun.game.run; return { allies: r.raptors.filter(a => a.ally).length, recruited: r.partB.alliesRecruited }; });
+      assert.deepEqual(b5, { allies: 1, recruited: 1 }); assert.equal(label, lang === 'en' ? 'WILD RAPTOR · E FEED' : 'VILD RAPTOR · E FODR');
+      await page.waitForTimeout(400); if (lang === 'da') await page.screenshot({ path: path.join(shots, 'part_b_b5_ally.png') });
+      checks.push('B5 ' + lang + ': E press recruited 1 ally, label "' + label + '"');
+    }
+
     assert.deepEqual(errors, []);
     console.log('part-b browser OK\n- ' + checks.join('\n- '));
   } finally { await browser.close(); }

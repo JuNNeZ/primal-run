@@ -1918,7 +1918,7 @@
    "requiredVariables": [
     "alliesRecruited"
    ],
-   "implementationStatus": "needs Part B"
+   "implementationStatus": "built in Part B (B5)"
   },
   {
    "id": "masochist",

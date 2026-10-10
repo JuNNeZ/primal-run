@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
+  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -1746,6 +1746,62 @@
     if(peers.length){const cx=peers.reduce((n,o)=>n+o.x,0)/peers.length,cy=peers.reduce((n,o)=>n+o.y,0)/peers.length,dx=cx-e.x,dy=cy-e.y,d=Math.hypot(dx,dy);
       if(d>e.radius*2+20){e.facingX=dx/d;e.facingY=dy/d;this.travel(e,dx/d*e.speed*.35*dt,dy/d*e.speed*.35*dt);}} // huddle with the herd
   };
+  // ---- B5 Raptor-flok: two wild velociraptors per level (r.raptors, outside r.enemies so ecology, records and
+  // collisions ignore them). Interact (E) next to one while meat lies within 140 px of it: it eats one portion and joins
+  // (max 2 allies, they follow you between levels). Allies attack the animal you fight, never land the killing blow
+  // (they leave it at 1 HP, so they never count as kills), take hits back, flee below 35 % HP and recover.
+  const PACK={max:2,wild:2,feedReach:90,meatReach:140,hp:60,speed:150,damage:6,cooldown:1.1,flee:.35,regen:.02};
+  function placeRaptors(g){
+    const r=g.run,random=seeded((r.seed^0x5bd1e995)+r.levelIndex*7919),spots=(r.map.habitats||[]).filter(h=>Math.hypot(h.x-480,h.y-340)>600&&!isWater(r.stage,r.map,h)&&!isLava(r.stage,r.map,h));
+    r.raptors=(r.raptors||[]).filter(a=>a.ally);for(const a of r.raptors){a.x=r.player.x-40-20*a.slot;a.y=r.player.y+30;a.mode='follow';}
+    for(let i=0;i<PACK.wild&&spots.length;i++){const p=spots.splice(Math.floor(random()*spots.length),1)[0];r.raptors.push({id:'raptor:'+r.levelIndex+':'+i,kind:'velociraptor',x:p.x,y:p.y,radius:12,hp:PACK.hp,maxHP:PACK.hp,ally:false,mode:'wild',facingX:0,facingY:1,cooldown:0,walk:0,moving:false,homeX:p.x,homeY:p.y});}
+  }
+  const startPack=Game.prototype.start;
+  Game.prototype.start=function(options){startPack.call(this,options);if(this.run){this.run.raptors=[];if(FEATURES.raptorPack){this.run.partB.alliesRecruited=0;placeRaptors(this);}}};
+  const nextStagePack=Game.prototype.nextStage;
+  Game.prototype.nextStage=function(){const r=this.run,level=r&&r.levelIndex,out=nextStagePack.call(this);if(FEATURES.raptorPack&&this.run&&this.run.levelIndex!==level)placeRaptors(this);return out;};
+  Game.prototype.feedRaptor=function(){
+    const r=this.run,allies=(r.raptors||[]).filter(a=>a.ally).length;if(!FEATURES.raptorPack||allies>=PACK.max)return false;
+    const raptor=(r.raptors||[]).find(a=>!a.ally&&Math.hypot(a.x-r.player.x,a.y-r.player.y)<PACK.feedReach);if(!raptor)return false;
+    const meat=r.pickups.find(p=>p.corpseId!==undefined&&p.value>0&&Math.hypot(p.x-raptor.x,p.y-raptor.y)<PACK.meatReach);if(!meat)return false;
+    meat.value--;r.pickups=r.pickups.filter(p=>p.corpseId===undefined||p.value>0);
+    Object.assign(raptor,{ally:true,mode:'follow',slot:allies,hp:raptor.maxHP});r.partB.alliesRecruited=(r.partB.alliesRecruited||0)+1;
+    r.effects.push({x:raptor.x,y:raptor.y-30,text:'NY FLOKFÆLLE',color:'#a2d4c1',life:1.6});this.emit('ally',{id:raptor.id});return true;
+  };
+  Game.prototype.packTarget=function(){
+    const r=this.run;let best=null,bestAt=r.seconds-6;
+    for(const e of r.enemies)if(e.hp>1&&e.lastAttackedAt>bestAt&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<420){bestAt=e.lastAttackedAt;best=e;}
+    if(best)return best;let near=null,nd=250;
+    for(const e of r.enemies)if(e.hp>1&&e.alert&&e.damage){const d=Math.hypot(e.x-r.player.x,e.y-r.player.y);if(d<nd){nd=d;near=e;}}
+    return near;
+  };
+  Game.prototype.stepRaptors=function(dt){
+    const r=this.run,target=this.packTarget();
+    for(const a of r.raptors||[]){
+      const x=a.x,y=a.y;a.cooldown=Math.max(0,a.cooldown-dt);
+      if(!a.ally){const t=r.seconds*.3+a.homeX*.01;this.travel(a,(a.homeX+Math.cos(t)*60-a.x)*dt*.5,(a.homeY+Math.sin(t)*40-a.y)*dt*.5);} // wild: pace near its spot
+      else if(a.mode==='flee'){const t=target||r.player,dx=a.x-t.x,dy=a.y-t.y,d=Math.max(1,Math.hypot(dx,dy));this.travel(a,dx/d*PACK.speed*dt,dy/d*PACK.speed*dt);a.hp=Math.min(a.maxHP,a.hp+a.maxHP*PACK.regen*2*dt);if(a.hp>=a.maxHP*.7)a.mode='follow';}
+      else if(target&&a.hp>=a.maxHP*PACK.flee){a.mode='attack';const dx=target.x-a.x,dy=target.y-a.y,d=Math.max(1,Math.hypot(dx,dy)),reach=target.radius+a.radius+14;
+        if(d>reach)this.travel(a,dx/d*PACK.speed*dt,dy/d*PACK.speed*dt);
+        else if(a.cooldown===0){a.cooldown=PACK.cooldown;target.hp=Math.max(1,target.hp-PACK.damage*(1+r.stage*.25));target.hit=Math.max(target.hit||0,.12);a.bites=(a.bites||0)+1;
+          if(target.damage){a.hp-=target.damage*.3;if(a.hp<a.maxHP*PACK.flee){a.mode='flee';r.effects.push({x:a.x,y:a.y-26,text:'FLYGTER',color:'#bbd899',life:1});}}}
+        a.facingX=dx/d;a.facingY=dy/d;}
+      else{a.mode=a.hp<a.maxHP*PACK.flee?'flee':'follow';const sx=r.player.x-(r.player.facing==='E'?60:r.player.facing==='W'?-60:0)+(a.slot?-30:30),sy=r.player.y-(r.player.facing==='S'?60:r.player.facing==='N'?-60:0)+20,dx=sx-a.x,dy=sy-a.y,d=Math.hypot(dx,dy);
+        if(d>18){const v=Math.min(PACK.speed*(d>200?1.4:1),d/dt);this.travel(a,dx/d*v*dt,dy/d*v*dt);a.facingX=dx/d;a.facingY=dy/d;}a.hp=Math.min(a.maxHP,a.hp+a.maxHP*PACK.regen*dt);}
+      a.moving=Math.hypot(a.x-x,a.y-y)>.05;if(a.moving)a.walk=(a.walk+dt)%1;
+    }
+  };
+  // The keyboard calls interact() directly (app.js keydown); step() input.interact covers gamepads and bots.
+  const interactPack=Game.prototype.interact;
+  Game.prototype.interact=function(...args){if(FEATURES.raptorPack&&this.run&&this.phase==='playing'&&this.feedRaptor())return true;return interactPack.apply(this,args);};
+  const stepPack=Game.prototype.step;
+  Game.prototype.step=function(dt,input={}){
+    const r=this.run,live=FEATURES.raptorPack&&r&&this.phase==='playing';
+    if(live&&input.interact&&this.feedRaptor())input={...input,interact:false}; // feeding takes the E press
+    const out=stepPack.call(this,dt,input);
+    if(live&&this.run===r&&this.phase==='playing')this.stepRaptors(dt);
+    return out;
+  };
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { PACK, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

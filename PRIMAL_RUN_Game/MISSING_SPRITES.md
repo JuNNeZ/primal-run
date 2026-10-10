@@ -35,3 +35,4 @@ af ChatGPT-art (Codex integrerer). Palet: Primal Earth 32.
 | B4 | Tørret mudderkant om skrumpende damme | ellipse i #8d6042 med revner i #674333 | tørret mudder-kanttile (A6), helst med 3–4 revnevarianter, så kanten kan følge dammens radius |
 | B2 | Natpalet | radial mørkning (#151b19) + let blå multiply (#3c7180) i `screenAmbience` | A6 nat-paletskift for terræn og dyr (fx 8-farvers swap-tabel), evt. øjenglimt for rovdyr |
 | B2 | Sol-/måneikon i HUD | tekstsymbolerne ☀ og ☾ foran uret | 2 små HUD-ikoner (16×16) i UI-stil |
+| B5 | Vilde og allierede raptorer | spillerens Velociraptor-frames (`player_full/velociraptor_*`), teal ◆ og HP-bjælke tegnet i kode | valgfrit: et lille flokmærke-ikon (12×12), og NPC-ådsel/skelet for Velociraptor, hvis allierede senere skal kunne dø (punkt 5 ovenfor) |
