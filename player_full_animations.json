@@ -4223,6 +4223,534 @@
       "contact_frame": null,
       "validated_animation": false,
       "production_approved": false
+    },
+    {
+      "name": "deinonychus_idle_S",
+      "species": "deinonychus",
+      "state": "idle",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/deinonychus_idle_S_000.png",
+        "assets/player_full/deinonychus_idle_S_001.png",
+        "assets/player_full/deinonychus_idle_S_002.png",
+        "assets/player_full/deinonychus_idle_S_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_hurt_S",
+      "species": "deinonychus",
+      "state": "hurt",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/deinonychus_hurt_S_000.png",
+        "assets/player_full/deinonychus_hurt_S_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_walk_S",
+      "species": "deinonychus",
+      "state": "walk",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/deinonychus_walk_S_000.png",
+        "assets/player_full/deinonychus_walk_S_001.png",
+        "assets/player_full/deinonychus_walk_S_002.png",
+        "assets/player_full/deinonychus_walk_S_003.png",
+        "assets/player_full/deinonychus_walk_S_004.png",
+        "assets/player_full/deinonychus_walk_S_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_run_S",
+      "species": "deinonychus",
+      "state": "run",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/deinonychus_run_S_000.png",
+        "assets/player_full/deinonychus_run_S_001.png",
+        "assets/player_full/deinonychus_run_S_002.png",
+        "assets/player_full/deinonychus_run_S_003.png",
+        "assets/player_full/deinonychus_run_S_004.png",
+        "assets/player_full/deinonychus_run_S_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_attack_S",
+      "species": "deinonychus",
+      "state": "attack",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/deinonychus_attack_S_000.png",
+        "assets/player_full/deinonychus_attack_S_001.png",
+        "assets/player_full/deinonychus_attack_S_002.png",
+        "assets/player_full/deinonychus_attack_S_003.png",
+        "assets/player_full/deinonychus_attack_S_004.png",
+        "assets/player_full/deinonychus_attack_S_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_death_S",
+      "species": "deinonychus",
+      "state": "death",
+      "direction": "S",
+      "frames": [
+        "assets/player_full/deinonychus_death_S_000.png",
+        "assets/player_full/deinonychus_death_S_001.png",
+        "assets/player_full/deinonychus_death_S_002.png",
+        "assets/player_full/deinonychus_death_S_003.png",
+        "assets/player_full/deinonychus_death_S_004.png",
+        "assets/player_full/deinonychus_death_S_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_idle_N",
+      "species": "deinonychus",
+      "state": "idle",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/deinonychus_idle_N_000.png",
+        "assets/player_full/deinonychus_idle_N_001.png",
+        "assets/player_full/deinonychus_idle_N_002.png",
+        "assets/player_full/deinonychus_idle_N_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_hurt_N",
+      "species": "deinonychus",
+      "state": "hurt",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/deinonychus_hurt_N_000.png",
+        "assets/player_full/deinonychus_hurt_N_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_walk_N",
+      "species": "deinonychus",
+      "state": "walk",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/deinonychus_walk_N_000.png",
+        "assets/player_full/deinonychus_walk_N_001.png",
+        "assets/player_full/deinonychus_walk_N_002.png",
+        "assets/player_full/deinonychus_walk_N_003.png",
+        "assets/player_full/deinonychus_walk_N_004.png",
+        "assets/player_full/deinonychus_walk_N_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_run_N",
+      "species": "deinonychus",
+      "state": "run",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/deinonychus_run_N_000.png",
+        "assets/player_full/deinonychus_run_N_001.png",
+        "assets/player_full/deinonychus_run_N_002.png",
+        "assets/player_full/deinonychus_run_N_003.png",
+        "assets/player_full/deinonychus_run_N_004.png",
+        "assets/player_full/deinonychus_run_N_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_attack_N",
+      "species": "deinonychus",
+      "state": "attack",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/deinonychus_attack_N_000.png",
+        "assets/player_full/deinonychus_attack_N_001.png",
+        "assets/player_full/deinonychus_attack_N_002.png",
+        "assets/player_full/deinonychus_attack_N_003.png",
+        "assets/player_full/deinonychus_attack_N_004.png",
+        "assets/player_full/deinonychus_attack_N_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_death_N",
+      "species": "deinonychus",
+      "state": "death",
+      "direction": "N",
+      "frames": [
+        "assets/player_full/deinonychus_death_N_000.png",
+        "assets/player_full/deinonychus_death_N_001.png",
+        "assets/player_full/deinonychus_death_N_002.png",
+        "assets/player_full/deinonychus_death_N_003.png",
+        "assets/player_full/deinonychus_death_N_004.png",
+        "assets/player_full/deinonychus_death_N_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_idle_E",
+      "species": "deinonychus",
+      "state": "idle",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/deinonychus_idle_E_000.png",
+        "assets/player_full/deinonychus_idle_E_001.png",
+        "assets/player_full/deinonychus_idle_E_002.png",
+        "assets/player_full/deinonychus_idle_E_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_hurt_E",
+      "species": "deinonychus",
+      "state": "hurt",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/deinonychus_hurt_E_000.png",
+        "assets/player_full/deinonychus_hurt_E_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_walk_E",
+      "species": "deinonychus",
+      "state": "walk",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/deinonychus_walk_E_000.png",
+        "assets/player_full/deinonychus_walk_E_001.png",
+        "assets/player_full/deinonychus_walk_E_002.png",
+        "assets/player_full/deinonychus_walk_E_003.png",
+        "assets/player_full/deinonychus_walk_E_004.png",
+        "assets/player_full/deinonychus_walk_E_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_run_E",
+      "species": "deinonychus",
+      "state": "run",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/deinonychus_run_E_000.png",
+        "assets/player_full/deinonychus_run_E_001.png",
+        "assets/player_full/deinonychus_run_E_002.png",
+        "assets/player_full/deinonychus_run_E_003.png",
+        "assets/player_full/deinonychus_run_E_004.png",
+        "assets/player_full/deinonychus_run_E_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_attack_E",
+      "species": "deinonychus",
+      "state": "attack",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/deinonychus_attack_E_000.png",
+        "assets/player_full/deinonychus_attack_E_001.png",
+        "assets/player_full/deinonychus_attack_E_002.png",
+        "assets/player_full/deinonychus_attack_E_003.png",
+        "assets/player_full/deinonychus_attack_E_004.png",
+        "assets/player_full/deinonychus_attack_E_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_death_E",
+      "species": "deinonychus",
+      "state": "death",
+      "direction": "E",
+      "frames": [
+        "assets/player_full/deinonychus_death_E_000.png",
+        "assets/player_full/deinonychus_death_E_001.png",
+        "assets/player_full/deinonychus_death_E_002.png",
+        "assets/player_full/deinonychus_death_E_003.png",
+        "assets/player_full/deinonychus_death_E_004.png",
+        "assets/player_full/deinonychus_death_E_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_idle_W",
+      "species": "deinonychus",
+      "state": "idle",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/deinonychus_idle_W_000.png",
+        "assets/player_full/deinonychus_idle_W_001.png",
+        "assets/player_full/deinonychus_idle_W_002.png",
+        "assets/player_full/deinonychus_idle_W_003.png"
+      ],
+      "fps": 4,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_hurt_W",
+      "species": "deinonychus",
+      "state": "hurt",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/deinonychus_hurt_W_000.png",
+        "assets/player_full/deinonychus_hurt_W_001.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_walk_W",
+      "species": "deinonychus",
+      "state": "walk",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/deinonychus_walk_W_000.png",
+        "assets/player_full/deinonychus_walk_W_001.png",
+        "assets/player_full/deinonychus_walk_W_002.png",
+        "assets/player_full/deinonychus_walk_W_003.png",
+        "assets/player_full/deinonychus_walk_W_004.png",
+        "assets/player_full/deinonychus_walk_W_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_run_W",
+      "species": "deinonychus",
+      "state": "run",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/deinonychus_run_W_000.png",
+        "assets/player_full/deinonychus_run_W_001.png",
+        "assets/player_full/deinonychus_run_W_002.png",
+        "assets/player_full/deinonychus_run_W_003.png",
+        "assets/player_full/deinonychus_run_W_004.png",
+        "assets/player_full/deinonychus_run_W_005.png"
+      ],
+      "fps": 12,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_attack_W",
+      "species": "deinonychus",
+      "state": "attack",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/deinonychus_attack_W_000.png",
+        "assets/player_full/deinonychus_attack_W_001.png",
+        "assets/player_full/deinonychus_attack_W_002.png",
+        "assets/player_full/deinonychus_attack_W_003.png",
+        "assets/player_full/deinonychus_attack_W_004.png",
+        "assets/player_full/deinonychus_attack_W_005.png"
+      ],
+      "fps": 14,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": 3,
+      "validated_animation": false,
+      "production_approved": false
+    },
+    {
+      "name": "deinonychus_death_W",
+      "species": "deinonychus",
+      "state": "death",
+      "direction": "W",
+      "frames": [
+        "assets/player_full/deinonychus_death_W_000.png",
+        "assets/player_full/deinonychus_death_W_001.png",
+        "assets/player_full/deinonychus_death_W_002.png",
+        "assets/player_full/deinonychus_death_W_003.png",
+        "assets/player_full/deinonychus_death_W_004.png",
+        "assets/player_full/deinonychus_death_W_005.png"
+      ],
+      "fps": 8,
+      "loop": false,
+      "origin": [
+        72,
+        72
+      ],
+      "contact_frame": null,
+      "validated_animation": false,
+      "production_approved": false
     }
   ],
   "frame_plan_exception": "Separately drawn 4-direction full states: idle4/walk6/run6/attack6/hurt2/death6. All generated art remains prototype_static; class-specific attack speed uses gameplay duration."

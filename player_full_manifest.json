@@ -43198,5 +43198,5525 @@
     "user_transform": null,
     "derived_from_direction": null,
     "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "idle",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      0,
+      0,
+      256,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "33e8e2a4cd1f3d4f532aa4ad9aa69cecd36f02733057f32e9a7f3fc012aab076",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "idle",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      256,
+      0,
+      512,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "275c3d0130861bc057ce22888a07c07b0d726b48ae6b0c57602ec087fec422c1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_S_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "idle",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      512,
+      0,
+      768,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "b1c1d90394b0c9cfaf7eee911639524f098339e4a42bfd5ad9b4846443132430",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_S_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "idle",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      768,
+      0,
+      1024,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "bc6ee962df44533102701c89b2fc398ebd27adb0898a1a50457baa48bcf1f395",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_hurt_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "hurt",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      1024,
+      0,
+      1280,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "d066648633f9541d83cdd9d386fc8d528d5a59bbe5099c6a3a13fdd7f1be4d7d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_hurt_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "hurt",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      1280,
+      0,
+      1536,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "529fea99de1d39eb59155c6f3097fbfbc2a5594ab6655dd6fbc1ca98a78ee010",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "walk",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      0,
+      205,
+      256,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "01e59d3168238f503b34c2b9ea4b6892413bb573013c64dcd10807fbdbb81e72",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "walk",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      256,
+      205,
+      512,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "13d9524a7f8e26688122e28185e55f4a497ad9d619498028b5909bbc01a55a30",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_S_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "walk",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      512,
+      205,
+      768,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "df3d944ae3b36507a4b23fc4c8b3ffda0f61580f4dfcac8297ebad157dc7a754",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_S_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "walk",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      768,
+      205,
+      1024,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "a8f9b1d37eeb385ff8fd631491674515b58518921c1e4ca94addb3150089d0f7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_S_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "walk",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      1024,
+      205,
+      1280,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "2b6fbcef5e2c27fe19ab3053fba00827bfb8c3c795d83e3072c21d8bc78ecbc5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_S_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "walk",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      1280,
+      205,
+      1536,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "caddf3041a3e759ecfeb87b3846fba5608f17ebcd35b7d79b7475c28f4ca23ec",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "run",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      0,
+      410,
+      256,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "1c23209ce07157be5d0bebf8a814367580c4984a9e56d5c367585140127bc731",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "run",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      256,
+      410,
+      512,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "5a4f9769c49a91fdf0de35b9d901bfdc36891a5c7a80f351d124243f94403ab4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_S_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "run",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      512,
+      410,
+      768,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "fa44486b5616407e64f83c31dde2f78d2ae9727b2fffd60ca4544c383cec3aee",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_S_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "run",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      768,
+      410,
+      1024,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "316956090de20bdadbd69560774646fd3623f16b76d389de2760f22cb1641163",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_S_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "run",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      1024,
+      410,
+      1280,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "1b93af190b81510c1a12cbef67b17cc6804b0d9498f0ea74c8078f8aea109eab",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_S_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "run",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      1280,
+      410,
+      1536,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "9a331a6ba828cbfb2d5d3f3b32f29b0576346e85b655941e085e60338246784d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "attack",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      0,
+      614,
+      256,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "ecae17dc89c89a57f49a1f69cb1cad67819811943266e388e6cfa19659c18015",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "attack",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      256,
+      614,
+      512,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "a0aa88ee02cd8d3b6fdc1323f543abb00e8b3f8b931325daae488f168e2f638d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_S_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "attack",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      512,
+      614,
+      768,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "eb4d5652a1ac295e339cde8a12d86e4db6882b959895202d8e7222fed48f2180",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_S_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "attack",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      768,
+      614,
+      1024,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "07f25f7a76620f429098dedb4c05e96c165cb7341b232cc64f546d81e27b3976",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_S_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "attack",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      1024,
+      614,
+      1280,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "67322523c1fa8d5700f5cee2655678f7855e5579a41440a78dc1bef6bbb14315",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_S_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "attack",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      1280,
+      614,
+      1536,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "290622854bb7b58bd76a6e8bfafd8476d88f338ad57a763462f37a6d29cd2582",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_S_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "death",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      0,
+      819,
+      256,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "e571ec4774318d98fc1b760baac8720085b323e10bcb67a4d6402002df36acbf",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_S_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "death",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      256,
+      819,
+      512,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "ccd584cbf1e23f33f33b691dcbeb5e70dbcbfdadb6a0cdb7d46774b9e6e14d62",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_S_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "death",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      512,
+      819,
+      768,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "4aa9e323f543b0298ccbcce49aa4505dc3f5c81de489e673ca4d874016460ae7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_S_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "death",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      768,
+      819,
+      1024,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "915b35c0e52707ba1fb6b19d180861e173deeb6da2fd71f1b633b6c2d3800b9f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_S_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "death",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      1024,
+      819,
+      1280,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "d2a814b29e2659a71431703d1313558bcebcc8a547239606baba1fd4b6e019de",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_S_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "S",
+    "state": "death",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_S.png",
+    "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+    "source_crop": [
+      1280,
+      819,
+      1536,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      128,
+      96
+    ],
+    "registration_offset": [
+      40,
+      48
+    ],
+    "export_sha256": "8a674e36f3bf478e33f09d49d2884f5b7b6085195b56a05a6e37cdc7b56a99d1",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "idle",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      0,
+      0,
+      256,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      170,
+      125
+    ],
+    "registration_offset": [
+      30,
+      41
+    ],
+    "export_sha256": "c36d2d319a7a141c038cadc955df4a687792b60216c7a8bf250dee189bb47450",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "idle",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      256,
+      0,
+      512,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      154,
+      125
+    ],
+    "registration_offset": [
+      34,
+      41
+    ],
+    "export_sha256": "dcf7d865183a6774f2afaee4009606c452bc1ae702b9d2a2536bb80de2aa4624",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_N_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "idle",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      512,
+      0,
+      768,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      138,
+      125
+    ],
+    "registration_offset": [
+      38,
+      41
+    ],
+    "export_sha256": "6d1bcabe9fe9cf0e8a22e833e2327fb6472e0b01fcbf9e2c461a6bac29d3063c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_N_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "idle",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      768,
+      0,
+      1024,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      122,
+      125
+    ],
+    "registration_offset": [
+      42,
+      41
+    ],
+    "export_sha256": "f4b22264258c6e35b31d360d85f008aa539243f05cef635ada36db50e86988d7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_hurt_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "hurt",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      1024,
+      0,
+      1280,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      106,
+      125
+    ],
+    "registration_offset": [
+      46,
+      41
+    ],
+    "export_sha256": "bb77c537d8d417f8de4b26afc95d193d0ee35ffb572826b218ef24c63f469599",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_hurt_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "hurt",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      1280,
+      0,
+      1536,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      90,
+      125
+    ],
+    "registration_offset": [
+      50,
+      41
+    ],
+    "export_sha256": "c85d9a9bc8fdf9b6e0a409e30bb44a8a88072494f42df52b30526feb6d2c8a4a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "walk",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      0,
+      205,
+      256,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      170,
+      125
+    ],
+    "registration_offset": [
+      30,
+      41
+    ],
+    "export_sha256": "9dae1fda73d0d4d5ccd11b27024b50f3a833fd0900aad9db5c75ffd4c240a292",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "walk",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      256,
+      205,
+      512,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      154,
+      125
+    ],
+    "registration_offset": [
+      34,
+      41
+    ],
+    "export_sha256": "83bfdb9a43543d593c253f8b9591fd2f9b54436ad122528de0166323f1b1fcc7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_N_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "walk",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      512,
+      205,
+      768,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      138,
+      125
+    ],
+    "registration_offset": [
+      38,
+      41
+    ],
+    "export_sha256": "b50ac58fec999b978e552151348da4928a7ee11bdb44bfa2280be1be57e8c5db",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_N_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "walk",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      768,
+      205,
+      1024,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      122,
+      125
+    ],
+    "registration_offset": [
+      42,
+      41
+    ],
+    "export_sha256": "2c6968b5352d30b74d17640e4c1e733b19ab5ee120fedb16ef4ca744bcdd93b6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_N_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "walk",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      1024,
+      205,
+      1280,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      106,
+      125
+    ],
+    "registration_offset": [
+      46,
+      41
+    ],
+    "export_sha256": "44106c2e83051b5b12bf5e0974a0d7925124d9c3c89c33cff425d188466d3433",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_N_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "walk",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      1280,
+      205,
+      1536,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      90,
+      125
+    ],
+    "registration_offset": [
+      50,
+      41
+    ],
+    "export_sha256": "79d1480188ff815179a1b927cc4540672bd1d8653f0448816df9d4e9559c5071",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "run",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      0,
+      410,
+      256,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      170,
+      125
+    ],
+    "registration_offset": [
+      30,
+      41
+    ],
+    "export_sha256": "2c3862884deb7b9a1f95697935c97579bac2aa080141424640a1de0f3a8edbe6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "run",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      256,
+      410,
+      512,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      154,
+      125
+    ],
+    "registration_offset": [
+      34,
+      41
+    ],
+    "export_sha256": "ebfe27cc617fb9805dc4ebf6e8b92ffaeb672e4c0b3428bf8d6bf7345333bd0e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_N_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "run",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      512,
+      410,
+      768,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      138,
+      125
+    ],
+    "registration_offset": [
+      38,
+      41
+    ],
+    "export_sha256": "450f8ab890bd2ecc93fee86364e73fdac0a909c6eee25392b5425e896c7b2bbd",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_N_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "run",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      768,
+      410,
+      1024,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      122,
+      125
+    ],
+    "registration_offset": [
+      42,
+      41
+    ],
+    "export_sha256": "0d95aa2f487f2a46461eb152a095a844f1977a91bcea85c0e1b1f7c0500eaea2",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_N_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "run",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      1024,
+      410,
+      1280,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      106,
+      125
+    ],
+    "registration_offset": [
+      46,
+      41
+    ],
+    "export_sha256": "9ca3fcbe2884334b3e837032045d29291f954d3257cc87951e4cdaf5a9c27341",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_N_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "run",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      1280,
+      410,
+      1536,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      90,
+      125
+    ],
+    "registration_offset": [
+      50,
+      41
+    ],
+    "export_sha256": "1ea915790225e3fe5d2042123593cd7772b961b1be350700e0791e420c422bbd",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "attack",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      0,
+      614,
+      256,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      170,
+      125
+    ],
+    "registration_offset": [
+      30,
+      41
+    ],
+    "export_sha256": "5a10d8e9dadfa1cf8a05a7d2738766e1104cc98deebd19da17df12ef9ab6aed9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "attack",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      256,
+      614,
+      512,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      154,
+      125
+    ],
+    "registration_offset": [
+      34,
+      41
+    ],
+    "export_sha256": "dfbbb2efa7bc26b71af12beb139091ef1b8dcef2f3eb4d55601d2b9d14114f5c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_N_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "attack",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      512,
+      614,
+      768,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      138,
+      125
+    ],
+    "registration_offset": [
+      38,
+      41
+    ],
+    "export_sha256": "bc24b4fda3232f72111f2b48cb884d1f5a8e4b3b212e9bd932f05d6dc9fb105b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_N_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "attack",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      768,
+      614,
+      1024,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      122,
+      125
+    ],
+    "registration_offset": [
+      42,
+      41
+    ],
+    "export_sha256": "fc74a413ac02a8e82258af85ea7f18cad58e77bd434bec9d7069630d5af5ec1a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_N_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "attack",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      1024,
+      614,
+      1280,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      106,
+      125
+    ],
+    "registration_offset": [
+      46,
+      41
+    ],
+    "export_sha256": "9c9d88d48f5fe9d94ee794916d18ad27540fd13a54e3e86d1dbc7d5909e80755",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_N_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "attack",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      1280,
+      614,
+      1536,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      90,
+      125
+    ],
+    "registration_offset": [
+      50,
+      41
+    ],
+    "export_sha256": "a0f7f14e533914e74623577c44b6df03b854a96bfca40cf2b0919bce124a0328",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_N_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "death",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      0,
+      819,
+      256,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      170,
+      125
+    ],
+    "registration_offset": [
+      30,
+      41
+    ],
+    "export_sha256": "c3eb6b73f6ac925ce8294663e6b617cfc57c00f6c7cc512b4a8a0279ef1fddc4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_N_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "death",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      256,
+      819,
+      512,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      154,
+      125
+    ],
+    "registration_offset": [
+      34,
+      41
+    ],
+    "export_sha256": "3621d4da740ad954ed7a3c3ae9b8d32cf147b061834aaeef3583d6daf7a704d7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_N_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "death",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      512,
+      819,
+      768,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      138,
+      125
+    ],
+    "registration_offset": [
+      38,
+      41
+    ],
+    "export_sha256": "ba084dc8794f97254cd5ed0b6e7f62d7fa206dfa064641ff37fb9bcaf916a847",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_N_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "death",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      768,
+      819,
+      1024,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      122,
+      125
+    ],
+    "registration_offset": [
+      42,
+      41
+    ],
+    "export_sha256": "fea107c3640ba83e6cb315ae42bcb7256a0b255f1d80785fb0f026934dfc6459",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_N_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "death",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      1024,
+      819,
+      1280,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      106,
+      125
+    ],
+    "registration_offset": [
+      46,
+      41
+    ],
+    "export_sha256": "25a6c70d14ab4178ddc21dfcb5cf0f274c897554e384b83ec0950927b024c990",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_N_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "N",
+    "state": "death",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_N_revision1.png",
+    "source_sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+    "source_crop": [
+      1280,
+      819,
+      1536,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      90,
+      125
+    ],
+    "registration_offset": [
+      50,
+      41
+    ],
+    "export_sha256": "387e58b2764ab5ed1f1fc0a027c7146d3a331e2558b04cb234726a2c2a669e48",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "idle",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      0,
+      0,
+      256,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "8a5a22fe5dc53910add87a8dec6dc5ab7f5c7ec810036173fd6c3f5e0eb90450",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "idle",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      256,
+      0,
+      512,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "6b837143df51ba888fb3d5d1f53632223dd914e6dcbaf80d7b8bed9d6732f6e5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_E_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "idle",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      512,
+      0,
+      768,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "cad8a744db1fb9a89a9e2d67cdc65b0910199c716be0789b0a2c8d4267b9fdf3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_E_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "idle",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      768,
+      0,
+      1024,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "53f768db446e7733fdcb2056e25d13409f373bf23e9c357ffa1cf5387c895a0d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_hurt_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "hurt",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      1024,
+      0,
+      1280,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "f3be1b60dc83d52946b375c9282613b732a133b377e338effef67cc498f5797e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_hurt_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "hurt",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      1280,
+      0,
+      1536,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "7cab7afe37ed521a123fc41b96d58fd1b5bc17c7a5c25f769d50374ab395e4a7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "walk",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      0,
+      205,
+      256,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "af759a1454634b532a0ca0cee349fab7adba2ea8ccf088b080387cc1f8871b31",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "walk",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      256,
+      205,
+      512,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "c5cae43cac3865409f1707858b78fdb45968dbc28290a4f9e70a438f3aeab0b5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_E_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "walk",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      512,
+      205,
+      768,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "8b45a4e2e0487b4dfb0675b70b4c5dfd4dc1701258b166f6ed86d471160013cb",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_E_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "walk",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      768,
+      205,
+      1024,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "768b5f88361be956bdf6dc9a265f51db646bb6418294004792a147eefaf6fc09",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_E_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "walk",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      1024,
+      205,
+      1280,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "97cfed684462ab287f66b750aa234909191f743d1599b7e3dd8732fbffe26f51",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_E_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "walk",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      1280,
+      205,
+      1536,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "2a09c1711994919554e5bb6c9e93becafc7f1480a80b29b2ac2af27fdb6b0de0",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "run",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      0,
+      410,
+      256,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "4dffc0e4a366afbc51cb6964b4b9aa738f1ed4841a83b5aa9d45c7f7ec9ca458",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "run",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      256,
+      410,
+      512,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "1943be859915602377f9d2df6634e82ec3e0ad6cc07433ae61ab1fe893a7159f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_E_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "run",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      512,
+      410,
+      768,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "ff68342ce92298a6cbaa85ad8703ffe3db4adcabb66cdcfb52d3f6eea0a9995e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_E_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "run",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      768,
+      410,
+      1024,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "e9c7153001bf3258b165dfca720493e7661c3a1ee8b6a8ce93c68cfe0eda223f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_E_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "run",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      1024,
+      410,
+      1280,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "11f58efd465a7ca325e8f572ee277749fda2d860eff543ea9d946b67ae3a5714",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_E_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "run",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      1280,
+      410,
+      1536,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "65e5c5e196054bfabeaccf66eeb9cf006f7ab8a22e785e93b076078312a41f93",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "attack",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      0,
+      614,
+      256,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "cdd9d5f20b79f0ecb8f534cb15be4500df0a34ee88b77742fb0bc3471ecdfd43",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "attack",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      256,
+      614,
+      512,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "c637350fc2c0f9aa3911abb8cd65eef90a3fc4f058286bcff8ec41e678da35e8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_E_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "attack",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      512,
+      614,
+      768,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "9d2e42bbb2532cfdf1308f94470911a73ed2532c64554f5ec40188c186e5333d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_E_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "attack",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      768,
+      614,
+      1024,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "7fc65cb1cee57d0ab1c298da042e1b21589dbb028a13ffa41f79a08b480e2f50",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_E_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "attack",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      1024,
+      614,
+      1280,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "888916db9d4f460ddb0353294d94372f910eaf589836fae4e01923ef543ea0f3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_E_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "attack",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      1280,
+      614,
+      1536,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "b4fd4dd469f9b8ac869790b42f283eac0320bdebdc726579aff921b06829ee82",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_E_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "death",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      0,
+      819,
+      256,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "6b1e54b0bcac02e8d5422e374fae4f93b595c2bed6a3752c1f5133d8d832b46b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_E_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "death",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      256,
+      819,
+      512,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "ff4367beb6e60d8f3b5179cecdaefc2132cca5cadf7e091d206b960b1a4cbc93",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_E_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "death",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      512,
+      819,
+      768,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "0db779811b563630f9aeb84ed7f8da6a091f772540a6b6ea95f345139680e601",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_E_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "death",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      768,
+      819,
+      1024,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "02680c286774737a5a064059c9882107c24412e457cd670bf73e23dc06d3b1c9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_E_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "death",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      1024,
+      819,
+      1280,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "cb0c3b2d35188b754102402ddedb1f9a313acbb61a4e5c70c83b950562a5509a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_E_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "E",
+    "state": "death",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_E.png",
+    "source_sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+    "source_crop": [
+      1280,
+      819,
+      1536,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      95,
+      105
+    ],
+    "registration_offset": [
+      49,
+      46
+    ],
+    "export_sha256": "a2fed01e8e231d363f4a0dfb35870d7e353e923ad5df8fe2a7bc36712ef36e59",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "idle",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      0,
+      0,
+      256,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "bf672cbd91a52327ff8187d0781d5e4d73c56cb2c4faa6cb4e0417f89249c752",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "idle",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      256,
+      0,
+      512,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "ee47edb228d06e4dc241476003001347cc6e88aa7322a9faa5b1f173d02ec422",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_W_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "idle",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      512,
+      0,
+      768,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "1e0f1926fcb19045ee27d638f8e641fbe20f0573827ce6e7b35115ebd90b4c30",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_idle_W_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "idle",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      768,
+      0,
+      1024,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "fe185ff59f3281967edfc4c2b295489887da0711a36cdc3b7f4bfe6bad16b583",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_hurt_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "hurt",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      1024,
+      0,
+      1280,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "b1e90c26bb288ed5419f877505534b75edba659a80ee49388db5dd041a45d12b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_hurt_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "hurt",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      1280,
+      0,
+      1536,
+      205
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "daa2e9bffa99d692a42b315555ac25a8bc5d28eeb498ca183e2076217a75013e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "walk",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      0,
+      205,
+      256,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "d3e166023849fe1b8d06f2105d0b7dd289c92a422becdf01f94f7b748a96a1f0",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "walk",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      256,
+      205,
+      512,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "fa3442404bd0a0cd84e50c157c99837f7fec15e4d97266c1fa4c506eee841743",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_W_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "walk",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      512,
+      205,
+      768,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "ad5f5b0ade898cf96f6ccbb8f6edfa13588f85aa7ca1a72bb55513d08729bb57",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_W_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "walk",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      768,
+      205,
+      1024,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "013b88e1ead0da58111f83294b3abb7b3ddd88cb8c27cd25f3a6f340a29fab9d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_W_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "walk",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      1024,
+      205,
+      1280,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "7b98513da60c9f822b84bdc5e68dc41bf5f65384b7b4980d6f7e5e3cbc1c9f37",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_walk_W_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "walk",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      1280,
+      205,
+      1536,
+      410
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "117b672f429f17bde7b8ffcaf41d6247240a7ec3005a5053ea0217327bb8da5f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "run",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      0,
+      410,
+      256,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "47d7356a4d2b604a2c4b7f86eb52218615cfbcb9b0a2a72d045824e8e9099505",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "run",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      256,
+      410,
+      512,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "aa9eec474f8e69b52739cf6e63d9f687f0409f785e3e4e47b22b104f83c19bca",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_W_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "run",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      512,
+      410,
+      768,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "1165d9c84eed6ab9de18c8aa50d25685ccfb5af107713914e9a27131a29b4862",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_W_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "run",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      768,
+      410,
+      1024,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "4a1bc38695e499257bd8ae78533a2478815dcc955e79f71036fb5eab0c775984",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_W_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "run",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      1024,
+      410,
+      1280,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "7ef181986b42cf2afdbff534d7a1a3da1196ec3229b116ca1eaa577fd8e92e90",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_run_W_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "run",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      1280,
+      410,
+      1536,
+      614
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "2d975593c6fd50f558f8e73d263895e34bf3e09b5968db517647900285de4ebb",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "attack",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      0,
+      614,
+      256,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "d40af1c48a4517f000baba74e3407af66690053ef67b094204782cbb25c8f206",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "attack",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      256,
+      614,
+      512,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "f6c6903688245e8871502a52a809c5145e3e3e22edf7f84e5c59ade4a4357b90",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_W_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "attack",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      512,
+      614,
+      768,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "937f862e4fcc032f324568f63655f3dbdc4629c9b9f7705b81feb87a036696bd",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_W_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "attack",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      768,
+      614,
+      1024,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "4debef2ee6b78938f29b8b6fcb3ba66335f770477cc7480ca800f20a701e837c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_W_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "attack",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      1024,
+      614,
+      1280,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "3d15b35bae3ccf422a54a8c4d1bdfd7bac787ac0fe58d8ddfde5af61dfc6bd2c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_attack_W_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "attack",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      1280,
+      614,
+      1536,
+      819
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "225066b1fa85086709abd5c64180f54a5ee11380ac7d15a889b6e44e344667b4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_W_000.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "death",
+    "frame": 0,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      0,
+      819,
+      256,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "0f2bb46734e8069e02f48a5c0c7ef0c9d5dbdf7c5869329dcd84e850df342488",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_W_001.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "death",
+    "frame": 1,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      256,
+      819,
+      512,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "2683dd5eda6ab57a4878e8fc7deb288c141ae2ff0fbe5deae923b08961eb7c3b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_W_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "death",
+    "frame": 2,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      512,
+      819,
+      768,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "63b19db6ebe1b47b3da4c7c38e84ccb10254e306b379056896f2f907a49ff3ab",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_W_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "death",
+    "frame": 3,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      768,
+      819,
+      1024,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "e06cca2eac8ca61b089faef2bccd4efb48d192e99da9548f1e21ff07905745eb",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_W_004.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "death",
+    "frame": 4,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      1024,
+      819,
+      1280,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "a86b413095fba6050a7f415261479f7240519f3dc2030c7f5cbd64cace7302d8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
+  },
+  {
+    "file": "assets/player_full/deinonychus_death_W_005.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "deinonychus",
+    "direction": "W",
+    "state": "death",
+    "frame": 5,
+    "source": "Source_Generated/player_full/deinonychus_W.png",
+    "source_sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+    "source_crop": [
+      1280,
+      819,
+      1536,
+      1024
+    ],
+    "crop_margin": 0,
+    "source_cell_anchor": [
+      166,
+      105
+    ],
+    "registration_offset": [
+      31,
+      46
+    ],
+    "export_sha256": "95f708ff8ace45021c57ed75799da7d7625e82bbb7fd4c4e703fdddaf708ba66",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "source_sample_stride": 4,
+    "alpha_threshold": 248,
+    "native_sample_stride": 1,
+    "user_transform": null,
+    "derived_from_direction": null,
+    "export": "Fixed integer source sampling, binary alpha, fixed32 palette, explicit hip landmark. Declared native stride and user_transform are recorded. No drawing, interpolation, mirroring or bbox recentering."
   }
 ]

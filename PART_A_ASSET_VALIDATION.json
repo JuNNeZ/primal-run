@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "families": {
+    "water_transition": 48,
+    "behavior": 632
+  },
+  "assets": 680,
+  "errors": [],
+  "production_approved": false,
+  "scope": "Native export inventory, alpha, palette, hashes and complete directions. Does not certify anatomy, gait or seamless tile edges."
+}

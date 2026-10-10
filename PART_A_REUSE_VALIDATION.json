@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "date": "2026-10-10",
+  "unitTests": 138,
+  "browserSuites": 21,
+  "kitChecks": 3,
+  "runtime": "standalone Chromium; real GDevelop export NOT RUN",
+  "coreSHA256": "5fa7187371167956d70cf05d6e470a8c3d31348b39fd56d90a30e8296029ed4e",
+  "pngResources": 2308,
+  "allResources": 2316,
+  "sourcePreservation": {
+    "originalPlayerFull": "byte-identical to parent commit",
+    "originalEnemyFull": "byte-identical to parent commit",
+    "ankylosaurusAttackReuse": 24,
+    "ankylosaurusOriginalsUntouched": true
+  },
+  "A1": {
+    "activeOverlayFrames": 96,
+    "ankylosaurus": "preserved native24 tail swings copied exactly; rejected body sources retained",
+    "parasaurolophus": "24 review-only kick poses; NOT active"
+  },
+  "A3": "asymmetric timing prototype below30%HP; six old native poses; drawn injured-limb poses pending",
+  "production_approved": false,
+  "animation_ready": false,
+  "remaining": [
+    "A1 final cross-state anatomical consistency/Paras kick acceptance",
+    "A2 ecology poses",
+    "A3 drawn injured-limb poses",
+    "A4 water-autotiles",
+    "A5 raptor corpse/skeletons"
+  ],
+  "livePublication": "gh-pages unchanged",
+  "githubAPI": "Forbidden; api.github.com added to saved environment draft, activation/retest pending"
+}

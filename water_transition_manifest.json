@@ -1,0 +1,1346 @@
+[
+  {
+    "file": "assets/water_transitions/shore_soil_00.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 0,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      0,
+      0,
+      314,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "aefb6a6a5f13e45a610216f189da8f05320a08fcf0910159e1312efc87d02f27",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_01.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 1,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      314,
+      0,
+      627,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "d647fa87b970164bb111f74a5b5083c9c75495dedcfd163198e887157b70b69d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_02.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 2,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      627,
+      0,
+      941,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "c54ad13f041c359e53dcc9e2a8a658936064fe89d078eaeaba8f9c0647a25699",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_03.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 3,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      941,
+      0,
+      1254,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "3d34bb5d1c58bb9baf93441db486786bb9ffc662cfabcdc0fb916688261be99d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_04.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 4,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      0,
+      314,
+      314,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "094a0e5cbcdc6458041b75e087a2c76a50dfc2f1d1c33ce7ec904021cfe1ca0d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_05.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 5,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      314,
+      314,
+      627,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "434179b5054a9e97786bef492a89e5cceea56c0e537f824f5bab073798e3928f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_06.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 6,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      627,
+      314,
+      941,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "eb216213a58b98e21db9948167e43304c2b88c31a9243fd340e4ddee2d470077",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_07.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 7,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      941,
+      314,
+      1254,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "493ac1ae16b90aed74a0013b7038724eb43dae14013f5dd99a12497657741e7c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_08.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 8,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      0,
+      627,
+      314,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "6530bdb7cdf1da34431590f63126db49a9927a90ef86e1e6e3e204aba03211ed",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_09.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 9,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      314,
+      627,
+      627,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "cf69bafeb44c3f36ac17b141d486d0f318b4dd9b392069bd9fab702fdae9142c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_10.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 10,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      627,
+      627,
+      941,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "dff874eb5af272f10a2dbd59b8d53208024e0382dbfaed549fd7a3e22bdd6d93",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_11.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 11,
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "source_sha256": "c62dcc5a6b09981ba160d3f33a215117cc9325db624e165dc552efee66854b3c",
+    "source_crop": [
+      34,
+      109,
+      354,
+      429
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "a13b952789aa1ab8970ab81f8f4bfc3984526f297120075cff52c770b6c2ccf0",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_12.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 12,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      0,
+      941,
+      314,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "adbb37b95f69b2670dba15c1fd6a8ecc2cbe4886cea6913571db446ac5a21cd2",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_13.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 13,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      314,
+      941,
+      627,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "611f86353f9940d74fb9556d96e6a68ed2891f462f8ac1ce2e7124ad3554332e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_14.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 14,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      627,
+      941,
+      941,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "ec4c9a583a9001efd4e4d588a233c010c8ac5a9bcd5a72296d31f9b89a669664",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_soil_15.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_soil",
+    "mask": 15,
+    "source": "Source_Generated/water_transitions/shore_soil_revision1.png",
+    "source_sha256": "598614ddbc4624dbd9e6cf27909707e3b81d28825e2db7be512c1c59282976b8",
+    "source_crop": [
+      941,
+      941,
+      1254,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "4990774dbc4ab13b181dca9863ad11bc624ab0563cd6a5248739676ad0a69574",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_00.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 0,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      0,
+      0,
+      314,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "23dce5be95b68153288a8fd08d4176f9ae1e256c0d8a5b554803a969b2db5adc",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_01.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 1,
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "source_sha256": "c62dcc5a6b09981ba160d3f33a215117cc9325db624e165dc552efee66854b3c",
+    "source_crop": [
+      417,
+      109,
+      737,
+      429
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "ad2648da8743325618db393d0f5e2787de79062f71cfae43ce309d4e3020f841",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_02.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 2,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      627,
+      0,
+      941,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "0873474597fea2ce31319db365590a11a7228909ab37c1a8c4de95469a4d3e86",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_03.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 3,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      941,
+      0,
+      1254,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "05b0bbf5635cd15bd385203b45a9c1e523e83d19ae59619d974090550b3072e5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_04.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 4,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      0,
+      314,
+      314,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "95281459b032bbf1d487c757a34ea674477ec8a85d8acc8adbdbeb01c819bfae",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_05.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 5,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      314,
+      314,
+      627,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "ff1baf7f53c178eb89e58db190bc0145d8a14e7e6973fa471a52a84d524b65e5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_06.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 6,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      627,
+      314,
+      941,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "50bea4ddcd1ecbea45e2a95ecdbd414d426c6fa08e6ff4a141fe1f7d76870b0d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_07.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 7,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      941,
+      314,
+      1254,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "94c2b535a4b62d94f8a99bced4191612d345fb0b755323c6152b87784068da6c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_08.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 8,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      0,
+      627,
+      314,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "62d8bc683c319f49816cda9402f77f9e68c091c9358bcf0049ea33acab053130",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_09.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 9,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      314,
+      627,
+      627,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "353e69c260803c853a94f4ad9163fb8319a6be977de492fd381f099b1c92ec3c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_10.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 10,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      627,
+      627,
+      941,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "51c245f4539a79a6601e9b5b8922247ff3867c41948fe4d234d8f194f807b3c8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_11.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 11,
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "source_sha256": "c62dcc5a6b09981ba160d3f33a215117cc9325db624e165dc552efee66854b3c",
+    "source_crop": [
+      801,
+      109,
+      1121,
+      429
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "09362ca8cc677a80d8b08a40084331aba21c801f83aec61535332fb0c4f5157f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_12.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 12,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      0,
+      941,
+      314,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "1413b7cb080dbbfcf6d969c6a0b1d752eefb2d6c4f13e18e0938bc0f7e1056c9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_13.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 13,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      314,
+      941,
+      627,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "1a60d85ebeff9098d9d8e13175054a2a4472861231152b601eaa44446396c051",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_14.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 14,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      627,
+      941,
+      941,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "9f079a9499bd6d8c615bed1999727b9276c589c34843947cf897c2ac0f558e9f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/shore_sand_15.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "shore_sand",
+    "mask": 15,
+    "source": "Source_Generated/water_transitions/shore_sand_revision1.png",
+    "source_sha256": "5f81d28cee129ccbeb009b38845e0192a988517352900b15e594245f2ecbf9e3",
+    "source_crop": [
+      941,
+      941,
+      1254,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "00427106dee5ba9e2884f6ac8778a0545b0cf7db232143e3a7cec8d3614f6907",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_00.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 0,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      0,
+      0,
+      314,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "6677f5b691ed2d4284876ea8ee72b67ac2f5efd128db528e45509df8f16c5879",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_01.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 1,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      314,
+      0,
+      627,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "6e56983272e2fdeb6caaf86edc79ef03a0601a18ce42abc8877358dc06bd0a04",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_02.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 2,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      627,
+      0,
+      941,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "e55f65ad014d066a394398ff7aa9be9abf776172758b709076d73303141a6a8f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_03.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 3,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      941,
+      0,
+      1254,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "6bb026dc5b5ee71728be9178c37c3812ae511c596349f3d963b511c09548b22a",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_04.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 4,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      0,
+      314,
+      314,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "a8b002448c4628f6895b72e9580edd172e18b10272ea17c0a4eb7c630613ef7d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_05.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 5,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      314,
+      314,
+      627,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "6ad2c7ffaf781b121bcd4e84779090ce84565cae05904b6ec778fcddc66c4f8c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_06.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 6,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      627,
+      314,
+      941,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "2ea910c674871e1ff8dff7b98ed8fa1fe54b87435e5bf941fb86499ceca0f1b3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_07.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 7,
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "source_sha256": "c62dcc5a6b09981ba160d3f33a215117cc9325db624e165dc552efee66854b3c",
+    "source_crop": [
+      1184,
+      109,
+      1504,
+      429
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "dcb399e6ea517a8cf0ffa35ccecbd21269fe52b514fa5e5c8048c06b95b8ffb8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_08.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 8,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      0,
+      627,
+      314,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "a6dd47ff51035898596acee1b7a28ed471dc7c7a47b31dac4ca5cc7fff80e299",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_09.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 9,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      314,
+      627,
+      627,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "ecb772c53499ce053b064e0a97b5e4249cefcce702b3b81b182375cb3470677f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_10.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 10,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      627,
+      627,
+      941,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "295e0a5e51f02f34932c9b3510a84590656a9d52ba130c8c89e915e4094a018b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_11.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 11,
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "source_sha256": "c62dcc5a6b09981ba160d3f33a215117cc9325db624e165dc552efee66854b3c",
+    "source_crop": [
+      34,
+      558,
+      354,
+      878
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "b8112cdb70c051fb58412be83b142dd9fa8dac0d611e61a0a0009f7750c90345",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_12.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 12,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      0,
+      941,
+      314,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "874f28ea0d7da41071994fb63c5f64d2d611e893eda554c8a81e48654bf2cec6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_13.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 13,
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "source_sha256": "c62dcc5a6b09981ba160d3f33a215117cc9325db624e165dc552efee66854b3c",
+    "source_crop": [
+      417,
+      558,
+      737,
+      878
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "545d5ae2715bb54781a30d699b69b624c01e37da388fcb8d561ee3353c4d45fe",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_14.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 14,
+    "source": "Source_Generated/water_transitions/corner_repairs_revision2.png",
+    "source_sha256": "c62dcc5a6b09981ba160d3f33a215117cc9325db624e165dc552efee66854b3c",
+    "source_crop": [
+      801,
+      558,
+      1121,
+      878
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "068ccb0ad351459fec4037b7cfb919c219eda8767d0cec1491babd20c88f6ac3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/water_transitions/water_depth_15.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "water_depth",
+    "mask": 15,
+    "source": "Source_Generated/water_transitions/water_depth_revision1.png",
+    "source_sha256": "09c5220fefa77f3f5437014531a01b918c0dbfe901b85bce34d34f53849e9fdf",
+    "source_crop": [
+      941,
+      941,
+      1254,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "palette_subset": "water blues for depth/all-water; full32 for banks",
+    "export_sha256": "2de51ddfd40673506d5849dd87039345afaf3cea7b0c0e97cddb595367e73cdf",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  }
+]

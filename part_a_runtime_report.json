@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "players": 192,
+  "npcs": 80,
+  "tailFrames": 24,
+  "paused": true,
+  "checks": [
+    "192 player health/direction/gait cases",
+    "80 low-health NPC walk/run cases",
+    "24 byte-reused tail swings render on player and NPC",
+    "attack hurt flash exists",
+    "pause freezes phase",
+    "390px mobile screenshot"
+  ],
+  "production_approved": false
+}

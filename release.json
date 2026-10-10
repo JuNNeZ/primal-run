@@ -1,8 +1,8 @@
 {
-  "source_commit": "5d7d13f81e287c88b338be1b883f31b69c070bb3",
-  "source_branch": "claude/overhaul",
+  "source_commit": "f1e511a44bee7e6b8124b31eea6ee2bfa5a9be5c",
+  "source_branch": "integration/next",
   "date": "2026-10-10",
-  "scope": "October overhaul: procedural sub-biome maps, boss and crit rebalance, ecology AI, HUD/telegraphs/water, achievements and unlocks, 7+2 languages, patch notes",
-  "validation": "121 unit tests, 18 browser checks, 3 kit checks in CI",
-  "rollback": "branch backup/live-2026-10-09"
+  "scope": "Part A (A1-A5, Codex) + Part B (B1-B8, Claude): boss reach and lava crossings, boss signatures, daily hunt, challenges, fish king skin, scent tracks, drought, day/night, raptor pack, records/titles; 22 languages + 3 fun languages",
+  "validation": "229 unit tests; browser suite green except player-full-browser (fails identically on 030f613 and codex/sprites-and-mechanics in the cloud container: death frame timing)",
+  "rollback": "branch backup/live-2026-10-10"
 }
