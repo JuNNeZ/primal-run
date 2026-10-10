@@ -5,7 +5,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
  const p=await b.newPage({viewport:{width:1280,height:900}}),errors=[];p.on('pageerror',e=>errors.push(String(e)));
  await p.goto(await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/index.html')));await p.locator('[data-first-language="da"]').click();await p.waitForSelector('[data-action="start"]:not(:disabled)');
  await p.evaluate(async()=>{await primalRun.preload({species:'utahraptor',stage:1,kinds:[...Object.keys(PrimalCore.SPECIES),'velociraptor']});});
- await p.locator('[data-action="start"]').click();await p.locator('[data-action="begin"]').click();
+ await p.locator('[data-action="start"]').click();await p.locator('[data-action="begin"]').click();await p.waitForFunction(()=>primalRun.game.phase==='playing',null,{timeout:60000}); // stage art loads at START
  const result=await p.evaluate(()=>{const g=primalRun.game,C=PrimalCore,r=g.run,canvas=document.querySelector('canvas[aria-label]'),ctx=canvas.getContext('2d'),old=ctx.drawImage,calls=[];let ecology=0,ecologyDrawn=0,ecologyFallback=0,corpses=0;
  g.pause();r.player.x=800;r.player.y=600;r.player.moving=false;r.hurt=0;r.attack=null;r.spawnTimer=999;r.pickups=[];r.corpses=[];r.map.rocks=[];r.map.decorations=[];r.map.forage=[];r.map.sites=[];r.map.events=[];
  ctx.drawImage=function(im,...a){if(im.src)calls.push('assets/'+im.src.split('/assets/').pop().split('?')[0]);return old.call(this,im,...a);};
