@@ -34,6 +34,9 @@ jobs:
             name=$(basename "$f" .cjs)
             if timeout 240 node "$f" > "review/$name.txt" 2>&1; then echo "ok $name" >> review/summary.txt; else echo "FAIL $name" >> review/summary.txt; fi
           done
+          for f in check_kit_directions.cjs check_kit_progression.cjs check_kit_files.cjs; do
+            if timeout 240 node "$f" > "review/$(basename $f .cjs).txt" 2>&1; then echo "ok $f" >> review/summary.txt; else echo "FAIL $f" >> review/summary.txt; fi
+          done
           for v in tools/validate_game_sprites.py tools/validate_enemy_animations.py; do
             python "$v" > "review/$(basename $v .py).txt" 2>&1 && echo "ok $v" >> review/summary.txt || echo "FAIL $v" >> review/summary.txt
           done
