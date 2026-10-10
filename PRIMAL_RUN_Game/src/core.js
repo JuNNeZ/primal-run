@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
+  const FEATURES={bossReach:true,lavaCrossings:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -78,7 +78,55 @@
     return (map.ponds||[]).some(pond=>((p.x-pond.x)/(pond.radius*.45))**2+((p.y-pond.y)/(pond.radius*.7*.45))**2<1);
   }
   const canSwim=entity=>['deinosuchus','baryonyx'].includes(entity.kind)||entity.radius>=28;
-  function isLava(stage,map,p){return stage===3&&riverDistance(map,p)<LAVA_CORE;}
+  // B1b: lava is off within 70 px of a basalt crossing (05 §4.1).
+  function isLava(stage,map,p){return stage===3&&riverDistance(map,p)<LAVA_CORE&&!(map.lavaCrossings||[]).some(c=>Math.hypot(p.x-c.x,p.y-c.y)<70);}
+  // B1a boss reachability (05_BOSS_EXPLOIT_REVIEW §4): a 32 px terrain nav grid per map and nav class,
+  // a BFS flow field from the player and straight-lane checks. Rocks block cells for the walker's radius in the
+  // grid (so the flow field routes around them); the straight-lane check only looks at terrain.
+  const NAV_CELL=32,NAV_GRIDS=new WeakMap();
+  const navBlocked=(stage,map,swim,p)=>isLava(stage,map,p)||!swim&&isDeepWater(stage,map,p);
+  function navGrid(stage,map,swim,radius=0){
+    let byMap=NAV_GRIDS.get(map);if(!byMap)NAV_GRIDS.set(map,byMap={});
+    const key=stage+':'+(swim?1:0)+':'+Math.round(radius);if(byMap[key])return byMap[key];
+    const cols=Math.ceil(map.width/NAV_CELL),rows=Math.ceil(map.height/NAV_CELL),blocked=new Uint8Array(cols*rows);
+    if(stage===3||!swim)for(let gy=0;gy<rows;gy++)for(let gx=0;gx<cols;gx++){
+      const cx=gx*NAV_CELL+16,cy=gy*NAV_CELL+16;
+      if(swim&&riverDistance(map,{x:cx,y:cy})>LAVA_CORE+24)continue;
+      // 3×3 samples 12 px apart: a 28 px lava strip can never slip between two cells.
+      search:for(const ox of [-12,0,12])for(const oy of [-12,0,12])if(navBlocked(stage,map,swim,{x:cx+ox,y:cy+oy})){blocked[gy*cols+gx]=1;break search;}
+    }
+    for(const rock of radius?map.rocks||[]:[]){const reach=rock.radius+radius-4;
+      for(let gy=Math.max(0,Math.floor((rock.y-reach)/NAV_CELL));gy<=Math.min(rows-1,Math.floor((rock.y+reach)/NAV_CELL));gy++)for(let gx=Math.max(0,Math.floor((rock.x-reach)/NAV_CELL));gx<=Math.min(cols-1,Math.floor((rock.x+reach)/NAV_CELL));gx++)
+        if(Math.hypot(gx*NAV_CELL+16-rock.x,gy*NAV_CELL+16-rock.y)<reach)blocked[gy*cols+gx]=1;}
+    return byMap[key]={cols,rows,blocked};
+  }
+  const navCell=(grid,p)=>Math.max(0,Math.min(grid.rows-1,Math.floor(p.y/NAV_CELL)))*grid.cols+Math.max(0,Math.min(grid.cols-1,Math.floor(p.x/NAV_CELL)));
+  // True when the straight segment a→b avoids blocked terrain; the last `ignore` px at b (player standing in lava) are skipped.
+  function navLineClear(stage,map,swim,a,b,ignore=16){
+    const dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy),steps=Math.ceil(d/6);
+    for(let i=1;i<steps;i++){const t=i/steps;if(d*(1-t)<ignore)break;if(navBlocked(stage,map,swim,{x:a.x+dx*t,y:a.y+dy*t}))return false;}
+    return true;
+  }
+  // BFS distance (in cells) from every free cell to the player's reachable cells; -1 = no path.
+  function navFlow(stage,map,grid,swim,target){
+    const {cols,rows,blocked}=grid,dist=new Int32Array(cols*rows).fill(-1),queue=grid.queue||(grid.queue=new Int32Array(cols*rows));let head=0,tail=0;
+    const tc=navCell(grid,target),tx=tc%cols,ty=(tc-tx)/cols;
+    for(let y=Math.max(0,ty-2);y<=Math.min(rows-1,ty+2);y++)for(let x=Math.max(0,tx-2);x<=Math.min(cols-1,tx+2);x++){const i=y*cols+x;
+      if(!blocked[i]&&navLineClear(stage,map,swim,{x:x*NAV_CELL+16,y:y*NAV_CELL+16},target)){dist[i]=0;queue[tail++]=i;}}
+    while(head<tail){const i=queue[head++],x=i%cols,y=(i-x)/cols,next=dist[i]+1;
+      if(x>0&&dist[i-1]<0&&!blocked[i-1]){dist[i-1]=next;queue[tail++]=i-1;}
+      if(x<cols-1&&dist[i+1]<0&&!blocked[i+1]){dist[i+1]=next;queue[tail++]=i+1;}
+      if(y>0&&dist[i-cols]<0&&!blocked[i-cols]){dist[i-cols]=next;queue[tail++]=i-cols;}
+      if(y<rows-1&&dist[i+cols]<0&&!blocked[i+cols]){dist[i+cols]=next;queue[tail++]=i+cols;}}
+    return dist;
+  }
+  // Next waypoint down the flow field from p (own cell or the best of the 5×5 around it), or null when no path exists.
+  function navStep(stage,map,swim,grid,flow,p){
+    const c=navCell(grid,p),cx=c%grid.cols,cy=(c-cx)/grid.cols;let best=-1,bestScore=Infinity;
+    for(let y=Math.max(0,cy-2);y<=Math.min(grid.rows-1,cy+2);y++)for(let x=Math.max(0,cx-2);x<=Math.min(grid.cols-1,cx+2);x++){const i=y*grid.cols+x;if(flow[i]<0)continue;
+      const score=flow[i]*NAV_CELL+Math.hypot(x*NAV_CELL+16-p.x,y*NAV_CELL+16-p.y);if(score<bestScore&&navLineClear(stage,map,swim,p,{x:x*NAV_CELL+16,y:y*NAV_CELL+16},0)){bestScore=score;best=i;}}
+    return best<0?null:{x:best%grid.cols*NAV_CELL+16,y:Math.floor(best/grid.cols)*NAV_CELL+16,steps:flow[best]};
+  }
   function suitableHabitat(stage,map,kind,p) {
     if (!BIOMES[stage].animals.includes(kind) && STAGES[stage].boss!==kind) return false;
     const distance=riverDistance(map,p);
@@ -319,7 +367,15 @@
       for(const side of [-1,1]){const x=Math.round((a.x+b.x)/2-dy/length*95*side),y=Math.round((a.y+b.y)/2+dx/length*95*side);if(x>80&&x<width-80&&y>110&&y<height-80&&safe(x,y))habitats.push({x,y,roll:.99});}
     }
     const fords=[];if(stage===1){let run=0;for(let i=1;i<curve.length;i++){run+=Math.hypot(curve[i].x-curve[i-1].x,curve[i].y-curve[i-1].y);if(run>520&&curve[i].x>120&&curve[i].y>140&&curve[i].x<width-120&&curve[i].y<height-120){fords.push({x:Math.round(curve[i].x),y:Math.round(curve[i].y)});run=0;}}}
-    const habitatMap={river,riverCurve:curve,fords};
+    // B1b lava crossings: the preserved design (codex/preserved-feathered-starter, curve 28 % and 68 %), kept
+    // ≥ 600 px from the start (480, 340) and ≥ 900 px apart along the bank (05 §4.1).
+    const lavaCrossings=[];if(FEATURES.lavaCrossings&&stage===3){
+      const along=[0];for(let i=1;i<curve.length;i++)along.push(along[i-1]+Math.hypot(curve[i].x-curve[i-1].x,curve[i].y-curve[i-1].y));
+      const inside=p=>p.x>140&&p.y>170&&p.x<width-140&&p.y<height-140,ok=p=>inside(p)&&Math.hypot(p.x-480,p.y-340)>=600;
+      for(const f of [.28,.68]){let best=null;for(let i=0;i<curve.length;i++){const p=curve[i];if(!ok(p)||lavaCrossings.some(c=>Math.abs(along[i]-c.along)<900))continue;const score=Math.abs(i-Math.floor(curve.length*f));if(!best||score<best.score)best={score,i};}
+        if(best)lavaCrossings.push({x:Math.round(curve[best.i].x),y:Math.round(curve[best.i].y),along:Math.round(along[best.i])});}
+    }
+    const habitatMap={river,riverCurve:curve,fords,lavaCrossings};
     const mud=[];
     for(let i=0;i<[6,18,4,0][stage];i++){
       const point=stage===1?curve[Math.floor(random()*curve.length)]:{x:140+random()*(width-280),y:160+random()*(height-320)};
@@ -388,7 +444,7 @@
     // Edible plants stay visible: no tall scenery right on top of them.
     for(let i=decorations.length-1;i>=0;i--){const d=decorations[i];if(d.foliage&&forage.some(f=>Math.hypot(f.x-d.x,f.y-d.y)<46))decorations.splice(i,1);}
     const cover=decorations.filter(d=>/shrub|fruit_bush|fern_large|flower_bush/.test(d.path)).map(d=>({x:d.x,y:d.y,radius:34}));
-    return { fords, zones, ponds,fishSchools,forage, events, arenas, seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites, ambience, layout, groves, riverOrientation:horizontal?'horizontal':'vertical',riverCurve:curve,mud,cover };
+    return { lavaCrossings, fords, zones, ponds,fishSchools,forage, events, arenas, seed, width, height, rocks, decorations, habitats, clearings, regions, trails, river, sites, ambience, layout, groves, riverOrientation:horizontal?'horizontal':'vertical',riverCurve:curve,mud,cover };
   }
   const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
   const finite = (n, fallback = 0) => typeof n === 'number' && Number.isFinite(n) ? n : fallback;
@@ -617,7 +673,9 @@
       // Non-swimmers cannot step from shallow into deep water; animals also refuse lava.
       const blocked=p=>!canSwim(entity)&&isDeepWater(r.stage,r.map,p)&&!isDeepWater(r.stage,r.map,entity)||entity!==r.player&&isLava(r.stage,r.map,p)&&!isLava(r.stage,r.map,entity);
       if(blocked({x:entity.x+dx,y:entity.y+dy})){if(!blocked({x:entity.x+dx,y:entity.y}))dy=0;else if(!blocked({x:entity.x,y:entity.y+dy}))dx=0;else{dx=0;dy=0;}}
-      this.move(entity,dx,dy);
+      const was={x:entity.x,y:entity.y};this.move(entity,dx,dy);
+      // B1a/X7: a rock push-out may not shove an animal into lava (or a non-swimmer into deep water).
+      if(FEATURES.bossReach&&entity!==r.player&&(isLava(r.stage,r.map,entity)&&!isLava(r.stage,r.map,was)||!canSwim(entity)&&isDeepWater(r.stage,r.map,entity)&&!isDeepWater(r.stage,r.map,was))){entity.x=was.x;entity.y=was.y;}
     }
     move(entity, dx, dy) {
       entity.x = clamp(entity.x + dx, 42 + entity.radius, this.run.map.width - 42 - entity.radius);
@@ -851,8 +909,8 @@
       e.moving = Math.hypot(e.x - x, e.y - y) > .001;
       if(e.moving)e.gaitPhase=((e.gaitPhase||0)+dt*(['flee','burst'].includes(e.mode)?2:8/6))%1;
       e.walk = e.moving ? (e.walk + dt) % 1.5 : e.walk; e.poseTime += dt;
-      const dx = e.moving && !['charge', 'windup'].includes(e.mode) ? e.x - x : e.facingX;
-      const dy = e.moving && !['charge', 'windup'].includes(e.mode) ? e.y - y : e.facingY;
+      const dx = e.moving && !['charge', 'windup', 'stalk'].includes(e.mode) ? e.x - x : e.facingX;
+      const dy = e.moving && !['charge', 'windup', 'stalk'].includes(e.mode) ? e.y - y : e.facingY;
       if (Math.hypot(dx, dy) > .001) e.direction = Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? 'E' : 'W') : (dy > 0 ? 'S' : 'N');
     }
     interact() {
@@ -891,6 +949,53 @@
       }
       return false;
     }
+    // B1a: player's melee reach against e (resolveBite's hit test), used for the stalk distance.
+    playerReach(e){const r=this.run;return PLAYER_SPECIES[r.species].range+e.radius+10*r.mutations.reach+(r.species==='ankylosaurus'?12*r.mutations.sweep:0);}
+    // B1a: is the straight charge lane from e toward the player free of terrain e cannot cross (05 §4.2)?
+    chargeLaneClear(e){const r=this.run;return navLineClear(r.stage,r.map,canSwim(e),e,r.player);}
+    // B1a reachability states (05 §4.3). Called only from a boss's free 'chase' step; returns true when it
+    // took over movement. A clear straight line keeps today's chase untouched (Carl/normal fights unchanged).
+    bossReach(e,dt,d){
+      const r=this.run,p=r.player,swim=canSwim(e),now=r.seconds;
+      if(e.reachHP===undefined||e.hp<e.reachHP)e.reachHitAt=now;e.reachHP=e.hp;
+      if(navLineClear(r.stage,r.map,swim,e,p)){if(e.reach&&e.reach!=='chase'){e.reach='chase';e.mode='chase';}e.unreachableSince=null;return false;}
+      const grid=navGrid(r.stage,r.map,swim,e.radius);
+      if(!e.flow||now-e.flowAt>=.5||e.flowAt>now){e.flowAt=now;e.flow=navFlow(r.stage,r.map,grid,swim,p);r.navUpdates=(r.navUpdates||0)+1;}
+      const step=navStep(r.stage,r.map,swim,grid,e.flow,e),speed=e.speed*(e.bossPhase===2?1.18:1);
+      if(step){ // reposition: walk the flow field toward the crossing; a bite in range stays allowed
+        e.reach=e.mode='reposition';e.unreachableSince=null;
+        if(d<150&&e.cooldown<=0)return false; // let the AI pick an attack (a blocked charge lane becomes a bite)
+        const wx=step.x-e.x,wy=step.y-e.y,wd=Math.max(1,Math.hypot(wx,wy));e.facingX=wx/wd;e.facingY=wy/wd;this.travel(e,wx/wd*speed*dt,wy/wd*speed*dt);
+        return true;
+      }
+      if(e.unreachableSince==null)e.unreachableSince=now;
+      const ux=(e.x-p.x)/d,uy=(e.y-p.y)/d,keep=this.playerReach(e)+30;
+      if(now-e.unreachableSince>=12&&now-e.reachHitAt>=8){ // leash: back to the arena, HP unchanged, never into reach
+        e.reach=e.mode='leash';const hx=e.homeX-e.x,hy=e.homeY-e.y,hd=Math.hypot(hx,hy);
+        if(d>=keep){if(hd>24){e.facingX=hx/hd;e.facingY=hy/hd;this.travel(e,hx/hd*e.speed*.8*dt,hy/hd*e.speed*.8*dt);}else{e.facingX=-ux;e.facingY=-uy;}return true;}
+      }else e.reach=e.mode='stalk';
+      // stalk: pace along the bank just outside the player's reach, facing the player
+      const sway=Math.sin(now*.9+e.id)*.4,tx=p.x+(ux-uy*sway)*keep,ty=p.y+(uy+ux*sway)*keep;
+      let gx=tx-e.x,gy=ty-e.y;if(d<keep+8){gx=ux;gy=uy;} // inside the reach margin: back straight off first
+      const gd=Math.hypot(gx,gy),bx=e.x,by=e.y;if(d<keep+8||gd>6)this.travel(e,gx/gd*Math.min(speed,d<keep+8?speed:gd/dt)*dt,gy/gd*Math.min(speed,d<keep+8?speed:gd/dt)*dt);
+      e.facingX=-ux;e.facingY=-uy;
+      // Cornered (edge, rock or lava behind it) inside the player's reach: fight back with the normal pattern (charges stay lane-checked).
+      if(d<keep-10&&Math.hypot(e.x-bx,e.y-by)<speed*dt*.25){e.cornered=(e.cornered||0)+dt;if(e.cornered>.4){e.mode='chase';return false;}}else e.cornered=0;
+      return true;
+    }
+    // B1a: re-check the charge lane once, when the windup aim locks (55 % left); a lost lane cancels the charge.
+    chargeLaneLost(e,dt){
+      if(!FEATURES.bossReach||e.pattern!==0||e.spin)return false;const lock=(e.windupDuration||1)*.55;
+      if(!(e.timer>lock&&e.timer-dt<=lock)||this.chargeLaneClear(e))return false;
+      e.mode='chase';e.cooldown=.35;e.attackName='';e.laneCancels=(e.laneCancels||0)+1;return true;
+    }
+    // B1a: a charge whose next step would enter blocked terrain skids to a stop with a short 0.45 s recover.
+    chargeSkid(e,stepX,stepY){
+      const r=this.run;if(!FEATURES.bossReach)return false;
+      const ahead={x:e.x+stepX+e.chargeX*e.radius*.5,y:e.y+stepY+e.chargeY*e.radius*.5};
+      if(!navBlocked(r.stage,r.map,canSwim(e),ahead))return false;
+      e.mode='recover';e.timer=.45;e.followUp=false;e.attackName='SKRIDER';e.skids=(e.skids||0)+1;this.burst(e.x,e.y,'dust',14,e.id);return true;
+    }
     laterBossAI(e, dt) {
       const r = this.run, dx = r.player.x-e.x, dy = r.player.y-e.y, d = Math.max(1,Math.hypot(dx,dy));
       e.hit = Math.max(0,e.hit-dt); e.cooldown = Math.max(0,e.cooldown-dt);
@@ -898,10 +1003,12 @@
       if (e.hp <= e.maxHP*.5 && e.bossPhase === 1) { e.bossPhase=2; e.mode='enrage'; e.timer=1.1; e.attackName='FASE 2 · RASERI'; this.emit('boss_enrage'); return; }
       if (e.mode === 'enrage' || e.mode === 'recover') { e.timer-=dt; if(e.timer<=0){e.mode='chase';e.cooldown=.35;} return; }
       if (e.mode === 'windup') {
+        if(this.chargeLaneLost(e,dt))return;
         e.timer-=dt; if(e.timer<=0){e.mode=e.pattern===0?'charge':e.pattern===1?'bite':'slam';e.timer=e.pattern===0?.65:.25;e.attackHit=false;this.emit('roar');} return;
       }
       if (e.mode === 'charge') {
         const x=e.x,y=e.y, speed=e.kind==='deinosuchus'?(e.bossPhase===2?390:300):370;
+        if(this.chargeSkid(e,e.chargeX*speed*dt,e.chargeY*speed*dt))return;
         this.travel(e,e.chargeX*speed*dt,e.chargeY*speed*dt);
         this.burst(e.x,e.y,'dust',2,e.id);
         if(!e.attackHit && Math.hypot(r.player.x-e.x,r.player.y-e.y)<e.radius+r.player.radius+3){e.attackHit=true;this.damage(e.damage,e);}
@@ -920,11 +1027,13 @@
           else{e.mode='recover';e.timer=e.spin?.7:e.pattern===2?1.8:1.3;e.spin=false;}
         }return;
       }
+      if(FEATURES.bossReach&&this.bossReach(e,dt,d))return;
       e.facingX=dx/d;e.facingY=dy/d;
       if(d>80)this.travel(e,dx/d*e.speed*dt,dy/d*e.speed*dt);
       if(e.cooldown>0||d>380)return;
       e.pattern=e.attackCycle++%3;e.secondBite=false;
       if(e.kind==='tyrannosaurus'&&e.pattern===0)e.pattern=3;
+      if(FEATURES.bossReach&&e.pattern===0&&!this.chargeLaneClear(e)){if(d<150)e.pattern=1;else{e.cooldown=.3;return;}}
       e.followUp=e.kind==='triceratops'&&e.bossPhase===2&&e.pattern===0;
       e.attackRadius=e.pattern===3?230:e.pattern===2?(e.kind==='deinosuchus'?(e.bossPhase===2?210:150):e.kind==='tyrannosaurus'?190:125):110;
       const names=e.kind==='pachycephalosaurus'?['KUPPELSTØD · SIDETRIN','DOBBELTSTØD · BAGOM','STENSTØD · HOLD AFSTAND']:e.kind==='baryonyx'?['FISKESTØD · SIDETRIN','KLØGAB · BAGOM','HALESLAG · HOLD AFSTAND']:e.kind==='ankylosaurus'?['PANSERMARCH · SIDETRIN','HALEKØLLE · BAGOM','HALESVING · HOLD AFSTAND']:e.kind==='deinosuchus'?['BAGHOLD · SIDETRIN','GAB · UNDVIG BAGOM','HALEBØLGE · HOLD AFSTAND']:e.kind==='triceratops'?['HORNSTORM · LOK MOD KLIPPE','HORNSTØD · BAGOM','TRAMP · HOLD AFSTAND']:['BRØL · HOLD AFSTAND',e.bossPhase===2?'DOBBELTBID 1/2':'KÆMPEBID · BAGOM','JORDRYSTELSE · HOLD AFSTAND'];
@@ -943,6 +1052,7 @@
       }
       if(FEATURES.packCalls&&e.kind==='compy'&&!e.boss&&e.alert&&!['windup','charge','bite','recover'].includes(e.mode)&&r.enemies.filter(o=>o.kind===e.kind&&o.herdId===e.herdId&&o.hp>0&&Math.hypot(o.x-e.x,o.y-e.y)<200).length<4){e.mode=e.activity='rally';return;}
       if (e.mode === 'windup') {
+        if (this.chargeLaneLost(e, dt)) return;
         e.timer -= dt;
         if (e.timer <= 0) {
           e.mode = e.pattern === 2 ? 'slam' : e.pattern === 1 ? 'bite' : 'charge';
@@ -952,6 +1062,7 @@
         return;
       }
       if (e.mode === 'charge') {
+        if (this.chargeSkid(e, e.chargeX * (e.bossPhase === 2 ? 370 : 320) * dt, e.chargeY * (e.bossPhase === 2 ? 370 : 320) * dt)) return;
         this.travel(e, e.chargeX * (e.bossPhase === 2 ? 370 : 320) * dt, e.chargeY * (e.bossPhase === 2 ? 370 : 320) * dt);
         e.trailTimer -= dt;
         if (e.trailTimer <= 0) { this.burst(e.x, e.y, 'dust', 3, e.id); e.trailTimer = .09; }
@@ -977,11 +1088,13 @@
         if (e.timer <= 0) { e.mode = 'recover'; e.timer = e.spin ? .7 : e.pattern === 2 ? 1.8 : 1.15; e.spin = false; } return;
       }
       if (e.mode === 'recover') { e.timer -= dt; if (e.timer <= 0) { e.mode = 'chase'; e.cooldown = .35; } return; }
+      if (FEATURES.bossReach && this.bossReach(e, dt, d)) return;
       e.facingX = dx / d; e.facingY = dy / d;
       if (d > e.radius + 38) this.travel(e, dx / d * e.speed * (e.bossPhase === 2 ? 1.18 : 1) * dt, dy / d * e.speed * (e.bossPhase === 2 ? 1.18 : 1) * dt);
       if (e.cooldown > 0 || d >= 360) return;
       const cycle = e.attackCycle++ % (e.bossPhase === 2 ? 3 : 2);
       e.pattern = cycle === 1 && d < 150 ? 1 : cycle === 2 && d < 180 ? 2 : 0;
+      if (FEATURES.bossReach && e.pattern === 0 && !this.chargeLaneClear(e)) { if (d < 150) e.pattern = 1; else { e.cooldown = .3; return; } }
       e.attackRadius = e.pattern === 2 ? 115 : 100;
       e.followUp = e.bossPhase === 2 && e.pattern === 0;
       e.attackName = e.pattern === 1 ? 'BID · UNDVIG BAGOM' : e.pattern === 2 ? 'TRAMP · HOLD AFSTAND' : e.followUp ? 'STORMLØB 1/2' : 'STORMLØB';
@@ -1388,5 +1501,5 @@
     }
   };
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

@@ -19,3 +19,12 @@ Følg `SPRITE_RULES*.md`: native pixels, fast palet, en validerings- og manifest
 ## Deinosuchus
 
 Spillerintegrationen genbruger de eksisterende 120 levende frames og 16 ådsel-/skeletposes. Ingen nye tegninger er nødvendige for denne integration. Kilderne forbliver prototype_static; kryds-state anatomi er ikke produktionsgodkendt.
+
+## Del B (claude/part-b) – pladsholdere, der venter på grafik
+
+Claude laver ingen original grafik. Disse elementer tegnes i dag procedurelt i `app.js` og bør erstattes
+af ChatGPT-art (Codex integrerer). Palet: Primal Earth 32.
+
+| Pakke | Element | I dag | Ønsket asset |
+|---|---|---|---|
+| B1b | Basaltkrydsning over lava (bane 7) | mørk ellipse (#3b4144) med sekskantede sten (#626861/#929387), radius 70 px | 2 varianter `basalt_crossing_0/1.png` ca. 160×120 px, opaque kant mod lava (A6 lava-/askekanter). Den bevarede gren `codex/preserved-feathered-starter` har prototyper i `assets/ground/`. |
