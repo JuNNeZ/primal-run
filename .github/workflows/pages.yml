@@ -30,6 +30,7 @@ jobs:
       - run: npm run test:game
       - run: npm run validate:game-sprites
       - run: npm run validate:atlases
+      - run: python tools/validate_ground_reuse.py
       - run: npm run validate:enemy-sprites
       - run: npm run build:web
       - uses: actions/configure-pages@v5

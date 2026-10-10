@@ -32,7 +32,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
     r.night=false;capture();const sun=document.querySelector('.time-icon').dataset.sprite;
     r.night=true;capture();const moon=document.querySelector('.time-icon').dataset.sprite;
     C.FEATURES.presentationArt=false;capture();
-    if(calls.some(c=>c.path&&/assets\/(ground\/|effects\/(bubble|ash_cloud)|ui\/raptor_ally)/.test(c.path)))throw Error('Presentation flag ignored');
+    if(calls.some(c=>c.path&&/assets\/(ground\/(basalt_crossing|dried_mud)|effects\/(bubble|ash_cloud)|ui\/raptor_ally)/.test(c.path)))throw Error('Presentation flag ignored');
     if(!document.querySelector('.time-icon').hidden||document.querySelector('.time-glyph').hidden)throw Error('Missing HUD fallback');
     C.FEATURES.presentationArt=true;capture();
     return {seen:[...seen],sun,moon,calmPaths,stats:primalRun.assetStats(),pausedSeconds:r.seconds};

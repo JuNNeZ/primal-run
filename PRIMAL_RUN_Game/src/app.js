@@ -416,6 +416,65 @@
       if(backgrounds.has(tile)){ctx.fillStyle = backgrounds.get(tile); ctx.globalAlpha = alpha; ctx.fill(); ctx.globalAlpha = 1;}
     }
     const groundCache=new Map();
+    const GROUND_FAMILIES=['forest','river','rocks','volcano'];
+    const groundPatchCache=new Map();
+    function groundHash(seed,x,y){let h=(seed^Math.imul(x+71,73856093)^Math.imul(y+29,19349663))>>>0;h=Math.imul(h^(h>>>16),2246822519)>>>0;return (h^(h>>>13))>>>0;}
+    function nativeGroundReady(stage){
+      if(!C.FEATURES.nativeGround)return false;
+      const families=new Set([GROUND_FAMILIES[stage],'river']);let loaded=true;
+      for(const family of families)for(let i=0;i<4;i++){
+        const path='assets/ground/'+family+'_'+i+'.png';
+        if(!catalog[path])return false;
+        if(!images[path]){loaded=false;loadImage(path).catch(()=>{});}
+      }
+      return loaded;
+    }
+    function paintGroundCells(context,family,seed,x0,y0,width,height){
+      context.imageSmoothingEnabled=false;
+      for(let y=Math.floor(y0/32)*32;y<y0+height;y+=32)for(let x=Math.floor(x0/32)*32;x<x0+width;x+=32){
+        const variant=groundHash(seed,Math.floor(x/32),Math.floor(y/32))%4;
+        drawAsset(context,images['assets/ground/'+family+'_'+variant+'.png'],x-x0,y-y0);
+      }
+    }
+    function nativeGround(stage,map,view){
+      if(!nativeGroundReady(stage)){canvas.dataset.nativeGround='false';return false;}
+      canvas.dataset.nativeGround='true';
+      for(let gy=Math.floor(view.y/128);gy<=Math.floor((view.y+canvas.height)/128);gy++)for(let gx=Math.floor(view.x/128);gx<=Math.floor((view.x+canvas.width)/128);gx++){
+        const key='native:'+map.seed+':'+stage+':'+gx+':'+gy;let layer=groundCache.get(key);
+        if(!layer){layer=document.createElement('canvas');layer.width=layer.height=128;
+          layer.groundFamily=GROUND_FAMILIES[stage];const lc=layer.getContext('2d');lc.fillStyle=['#28372a','#674333','#626861','#3b4144'][stage];lc.fillRect(0,0,128,128);lc.globalAlpha=.38;paintGroundCells(lc,GROUND_FAMILIES[stage],map.seed,gx*128,gy*128,128,128);lc.globalAlpha=1;
+          groundCache.set(key,layer);if(groundCache.size>128)groundCache.delete(groundCache.keys().next().value);
+        }
+        drawAsset(ctx,layer,gx*128,gy*128);
+      }
+      return true;
+    }
+    function pixelGroundPatch(p,stage,kind='mud'){
+      if(!nativeGroundReady(stage))return false;
+      const seed=game.run?.map.seed||previewMap.seed;
+      const x0=Math.floor((p.x-p.rx)/2)*2,y0=Math.floor((p.y-p.ry)/2)*2;
+      const w=Math.ceil((p.x+p.rx-x0)/2)*2,h=Math.ceil((p.y+p.ry-y0)/2)*2;
+      const key=[seed,p.x,p.y,p.rx,p.ry,kind].join(':');let layer=groundPatchCache.get(key);
+      if(!layer){
+        layer=document.createElement('canvas');layer.width=w;layer.height=h;layer.groundPatch=kind;
+        const lc=layer.getContext('2d');lc.fillStyle=kind==='dry'?'#8d6042':'#443027';lc.fillRect(0,0,w,h);
+        // Native tile detail at restrained contrast; source PNGs are untouched.
+        lc.globalAlpha=kind==='dry'?.52:.60;paintGroundCells(lc,'river',seed^13477,x0,y0,w,h);lc.globalAlpha=1;
+        const image=lc.getImageData(0,0,w,h),data=image.data;
+        for(let y=0;y<h;y+=2)for(let x=0;x<w;x+=2){
+          const wx=x0+x+1,wy=y0+y+1,q=((wx-p.x)/p.rx)**2+((wy-p.y)/p.ry)**2;
+          // Two-pixel steps and eight-pixel edge clusters break the outline inside the physical ellipse.
+          const edge=.90+(groundHash(seed,Math.floor(wx/8),Math.floor(wy/8))%256/255-.5)*.18;
+          const visible=q<edge;
+          if(!visible)for(let dy=0;dy<2&&y+dy<h;dy++)for(let dx=0;dx<2&&x+dx<w;dx++){
+            const i=((y+dy)*w+x+dx)*4;data[i]=data[i+1]=data[i+2]=data[i+3]=0;
+          }
+        }
+        lc.putImageData(image,0,0);groundPatchCache.set(key,layer);
+        if(groundPatchCache.size>64)groundPatchCache.delete(groundPatchCache.keys().next().value);
+      }
+      drawAsset(ctx,layer,x0,y0);return true;
+    }
     function groundDetails(stage,map,view){
       for(let gx=Math.floor(view.x/128);gx<=Math.floor((view.x+canvas.width)/128);gx++)for(let gy=Math.floor(view.y/128);gy<=Math.floor((view.y+canvas.height)/128);gy++){
         const key=map.seed+':'+stage+':'+gx+':'+gy;let layer=groundCache.get(key);
@@ -440,6 +499,8 @@
       if(sw>0&&sh>0)drawAsset(ctx,layer,sx,sy,sw,sh,sx*scale,sy*scale,sw*scale,sh*scale);ctx.restore();
     }
     function background(stage, map, view) {
+      const native=nativeGround(stage,map,view);
+      if(!native){
       ctx.beginPath(); ctx.rect(view.x, view.y, canvas.width, canvas.height);
       texturedFill(C.STAGES[stage].tile, ['#28372a', '#d4a36c', '#626861', '#3b4144'][stage], .28);
       zoneTint(stage,map,view);
@@ -449,7 +510,8 @@
         blob(region.x, region.y, region.radius, region.radius * .7, region.seed); ctx.save(); ctx.globalAlpha = .32; ctx.fillStyle = ['#3f5030', '#586d38', '#674333', '#54282d'][stage]; ctx.fill(); ctx.restore(); /* subtle natural ground patches */
 
       }
-      const waterTime=game.run?game.run.seconds:menuClock;const tiledWater=C.FEATURES.waterTiles&&catalog['assets/water_transitions/shore_soil_15.png'];canvas.dataset.waterTiles=tiledWater?'true':'false';if(tiledWater)drawWaterTiles(stage,map,view);for(const pond of map.ponds||[])drawPond(pond,waterTime,tiledWater);
+      }
+      const waterTime=game.run?game.run.seconds:menuClock;const tiledWater=C.FEATURES.waterTiles&&catalog['assets/water_transitions/shore_soil_15.png'];canvas.dataset.waterTiles=tiledWater?'true':'false';for(const pond of map.ponds||[])drawDryBank(pond,stage);if(tiledWater)drawWaterTiles(stage,map,view);for(const pond of map.ponds||[])drawPond(pond,waterTime,tiledWater);
       ctx.lineCap = 'round'; ctx.lineJoin = 'round';
       if (stage === 1) {
         drawRiver(map,waterTime,tiledWater);
@@ -466,7 +528,7 @@
           ctx.restore();
         }
       }
-      for(const p of map.mud||[]){ctx.beginPath();ctx.ellipse(p.x,p.y,p.rx,p.ry,0,0,Math.PI*2);texturedFill('dirt','#674333',.18);ctx.strokeStyle='#913b3266';ctx.lineWidth=2;ctx.stroke();}
+      for(const p of map.mud||[]){if(pixelGroundPatch(p,stage))continue;ctx.beginPath();ctx.ellipse(p.x,p.y,p.rx,p.ry,0,0,Math.PI*2);texturedFill('dirt','#674333',.18);ctx.strokeStyle='#913b3266';ctx.lineWidth=2;ctx.stroke();}
       ctx.fillStyle = '#151b1966'; ctx.fillRect(0, 0, map.width, 76); ctx.fillRect(0, map.height - 42, map.width, 42); ctx.fillRect(0, 0, 42, map.height); ctx.fillRect(map.width - 42, 0, 42, map.height);
     }
     function enemyLabelOffset(e){return (e.kind==='compy'?20:72)*(e.visualScale||1)+12;}
@@ -581,13 +643,17 @@
         ctx.restore();
       }
     }
-    function drawPond(pond,time,tiled=false){
+    function drawDryBank(pond,stage){
       if(pond.baseRadius&&pond.baseRadius>pond.radius+1){ // B4 drought: cracked dry mud where the water was (procedural)
+        if(!pixelGroundPatch({x:pond.x,y:pond.y,rx:pond.baseRadius+10,ry:pond.baseRadius*.7+8},stage,'dry')){
         ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.baseRadius+10,pond.baseRadius*.7+8,0,0,Math.PI*2);ctx.fillStyle='#8d6042';ctx.fill();
         ctx.save();ctx.strokeStyle='#674333';ctx.lineWidth=1.5;let seed=(pond.x*13+pond.y*7)>>>0;const rnd=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
         ctx.beginPath();for(let i=0;i<14;i++){const a=rnd()*Math.PI*2,r0=pond.radius*(.9+rnd()*.1),r1=pond.baseRadius*(.85+rnd()*.2);ctx.moveTo(pond.x+Math.cos(a)*r0,pond.y+Math.sin(a)*r0*.7);ctx.lineTo(pond.x+Math.cos(a+.15)*r1,pond.y+Math.sin(a+.15)*r1*.7);}ctx.stroke();ctx.restore();
+        }
         drawApprovedDryBank(pond);
       }
+    }
+    function drawPond(pond,time,tiled=false){
       if(!tiled){
       ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius+10,pond.radius*.7+8,0,0,Math.PI*2);ctx.fillStyle='#b98252';ctx.fill();
       ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius,pond.radius*.7,0,0,Math.PI*2);ctx.fillStyle='#69a4a0';ctx.fill();

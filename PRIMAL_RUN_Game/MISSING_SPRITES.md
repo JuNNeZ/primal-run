@@ -1,5 +1,10 @@
 # Grafiske opgaver efter del A
 
+## Opdatering · ground
+
+De flade mudderellipser og den gamle ground-blanding er erstattet af bevarede
+feathered-tiles og pixelkanter. Se [GROUND_REUSE.md](GROUND_REUSE.md).
+
 ## Opdatering · godkendt presentation-art
 
 B1b basaltpassager, B1c bobler/askesky, B2 sol/måne og B5 allieretmarkør er nu

@@ -58,5 +58,165 @@
     "w": 32,
     "x": 361,
     "y": 259
+  },
+  "assets/ground/forest_0.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 395,
+    "y": 259
+  },
+  "assets/ground/forest_1.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 429,
+    "y": 259
+  },
+  "assets/ground/forest_2.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 259
+  },
+  "assets/ground/forest_3.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 517
+  },
+  "assets/ground/river_0.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 517
+  },
+  "assets/ground/river_1.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 517
+  },
+  "assets/ground/river_2.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 517
+  },
+  "assets/ground/river_3.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 517
+  },
+  "assets/ground/rocks_0.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 517
+  },
+  "assets/ground/rocks_1.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 517
+  },
+  "assets/ground/rocks_2.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 239,
+    "y": 517
+  },
+  "assets/ground/rocks_3.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 273,
+    "y": 517
+  },
+  "assets/ground/volcano_0.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 307,
+    "y": 517
+  },
+  "assets/ground/volcano_1.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 341,
+    "y": 517
+  },
+  "assets/ground/volcano_2.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 375,
+    "y": 517
+  },
+  "assets/ground/volcano_3.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 409,
+    "y": 517
   }
 }

@@ -4,6 +4,10 @@
   "menuRequests": 17,
   "menuAndVolcanicStageRequests": 27,
   "seen": [
+    "assets/ground/dried_mud_edge_N_0.png",
+    "assets/ground/dried_mud_edge_N_1.png",
+    "assets/ground/dried_mud_edge_N_2.png",
+    "assets/ground/dried_mud_edge_N_3.png",
     "assets/water_transitions/shore_soil_04.png",
     "assets/water_transitions/shore_soil_12.png",
     "assets/water_transitions/shore_soil_08.png",
@@ -17,10 +21,6 @@
     "assets/water_transitions/shore_soil_01.png",
     "assets/water_transitions/shore_soil_02.png",
     "assets/water_transitions/shore_soil_03.png",
-    "assets/ground/dried_mud_edge_N_0.png",
-    "assets/ground/dried_mud_edge_N_1.png",
-    "assets/ground/dried_mud_edge_N_2.png",
-    "assets/ground/dried_mud_edge_N_3.png",
     "assets/ground/basalt_crossing_0.png",
     "assets/ground/basalt_crossing_1.png",
     "assets/ecology/lichen.png",
@@ -55,10 +55,10 @@
     "assets/effects/ash_cloud_001.png"
   ],
   "stats": {
-    "loaded": 1755,
-    "total": 3637,
+    "loaded": 1772,
+    "total": 3653,
     "atlasSheets": 27,
-    "decodedBytes": 152506368
+    "decodedBytes": 153227264
   },
   "pausedSeconds": 10,
   "fallback": {

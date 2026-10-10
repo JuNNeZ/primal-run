@@ -1,0 +1,498 @@
+[
+  {
+    "file": "assets/ground/forest_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      12,
+      12,
+      300,
+      300
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "fcf8d1aec9913886b48c6a6a4f7bd8f0ffce4d605c95bc95bfee19f79d858152",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/forest_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      326,
+      12,
+      614,
+      300
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "0ed86b622b06047074aeab47ee8109ebadd04b6d468c7f08166af3839a9f2520",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/forest_2.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      639,
+      12,
+      927,
+      300
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "6f67b0f5db0cf2c2e72b86a352029c9114ebcbda7d2ce6684956007ee5ab7c0c",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/forest_3.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      952,
+      12,
+      1240,
+      300
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "73b41302b781ad615b4cdaf6734b19f877b8a82349240268c86ddfd405a1476a",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/river_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      12,
+      326,
+      300,
+      614
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "fcfe67d614620fb43bbec71b5a0ff3dcc17866e9704fde4ebf8c08f454383e47",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/river_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      326,
+      326,
+      614,
+      614
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "b36d5493616f12323f18223eefeaef55bce98585e4d4cd1126fd88cbc610d418",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/river_2.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      639,
+      326,
+      927,
+      614
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "ec33a615b6918e9df856267acae7dc1312b8bc3d4d2708c74ff4f337d05ce3c5",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/river_3.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      952,
+      326,
+      1240,
+      614
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "7b4f610375c17ebec83d999f98717816c23b19034afea94612543045b1448927",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/rocks_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      12,
+      639,
+      300,
+      927
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "ffb063bf902bdf8eb68c0aaf78d466fe202be5bba5f4d78c2761abf1c63ffc78",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/rocks_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      326,
+      639,
+      614,
+      927
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "9967d215d4770c0d91a472b17c846323c5126b5939b8b854cf618cbc5de343e6",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/rocks_2.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      639,
+      639,
+      927,
+      927
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "87a8a5d6f18537359b8fae7d723957834c92ddf7d64638679a5cde6d7c6cb499",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/rocks_3.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      952,
+      639,
+      1240,
+      927
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "efa057c5e89194e29c71ade9368283f472ed5bc57ea8b4365f7a314f4f318a9f",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/volcano_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      12,
+      952,
+      300,
+      1240
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "e8240058e3d4127e0213f88e987a1d65a1954d17dace9a6ded54b7e7bdbb4aa2",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/volcano_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      326,
+      952,
+      614,
+      1240
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "c9961aba02787e2234a1dbe8f663c5b9587255a5b2f1b2ea804446290752ad51",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/volcano_2.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      639,
+      952,
+      927,
+      1240
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "c75f194d1307cf64f163e8dd6003e1afa84851c42bddb05ae1f4b704cc3b51e4",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/volcano_3.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "source": "Source_Generated/ground/biome_ground_atlas.png",
+    "source_crop": [
+      952,
+      952,
+      1240,
+      1240
+    ],
+    "sampling_step": 9,
+    "source_sha256": "a8b844ffb769846e0af72e398b36e88226c784861cf2fad2db302f3b17e54c82",
+    "export_sha256": "e0ae2c02c4f031200d5c79210632c5a74deff2d4b71a5419e26ef6ab80a4cabe",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/volcanic_cone_0.png",
+    "size": [
+      256,
+      256
+    ],
+    "origin": [
+      128,
+      128
+    ],
+    "source": "Source_Generated/ground/volcanic_props.png",
+    "source_crop": [
+      0,
+      0,
+      640,
+      720
+    ],
+    "source_cell_anchor": [
+      320,
+      315
+    ],
+    "sampling_step": 3,
+    "source_sha256": "3ba7e1ad83671d7d830aba863035a6beaa6393bdbee005a75b4c5b4d5657f4ae",
+    "export_sha256": "0c14df7cea3f56af2e9426d59a6d7edb021ae23d287a625847be472a00ed869b",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/volcanic_cone_1.png",
+    "size": [
+      256,
+      256
+    ],
+    "origin": [
+      128,
+      128
+    ],
+    "source": "Source_Generated/ground/volcanic_props.png",
+    "source_crop": [
+      640,
+      0,
+      1280,
+      720
+    ],
+    "source_cell_anchor": [
+      320,
+      315
+    ],
+    "sampling_step": 3,
+    "source_sha256": "3ba7e1ad83671d7d830aba863035a6beaa6393bdbee005a75b4c5b4d5657f4ae",
+    "export_sha256": "a6318c135445c5ebefebf9224f86379fd1d747d8a1aaa1957a1e10e4d7aac01a",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/basalt_crossing_0.png",
+    "size": [
+      256,
+      256
+    ],
+    "origin": [
+      128,
+      128
+    ],
+    "source": "Source_Generated/ground/volcanic_props.png",
+    "source_crop": [
+      0,
+      720,
+      640,
+      1280
+    ],
+    "source_cell_anchor": [
+      320,
+      280
+    ],
+    "sampling_step": 3,
+    "source_sha256": "3ba7e1ad83671d7d830aba863035a6beaa6393bdbee005a75b4c5b4d5657f4ae",
+    "export_sha256": "c748fd612a65e2a2e17665b289dfb2ef5d6778ddc7ace95872a48a57f526729d",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ground/basalt_crossing_1.png",
+    "size": [
+      256,
+      256
+    ],
+    "origin": [
+      128,
+      128
+    ],
+    "source": "Source_Generated/ground/volcanic_props.png",
+    "source_crop": [
+      640,
+      720,
+      1280,
+      1280
+    ],
+    "source_cell_anchor": [
+      320,
+      280
+    ],
+    "sampling_step": 3,
+    "source_sha256": "3ba7e1ad83671d7d830aba863035a6beaa6393bdbee005a75b4c5b4d5657f4ae",
+    "export_sha256": "06f2039f1b2bd6980741de551b1b17de2b6a2df34539e823140882ecaaac070a",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  }
+]

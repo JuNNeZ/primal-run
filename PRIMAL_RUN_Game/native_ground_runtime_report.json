@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "checks": [
+    "four preserved tile families",
+    "native pixels and unsmoothed binary patch fringe",
+    "textured mud and drought ring",
+    "dry bank below pond water",
+    "unchanged physical mud surface",
+    "feature fallback",
+    "paused simulation unchanged"
+  ],
+  "families": [
+    "forest",
+    "river",
+    "rocks",
+    "volcano"
+  ],
+  "patches": [
+    {
+      "kind": "dry",
+      "visible": 19840,
+      "transparent": 8960,
+      "colors": 15
+    },
+    {
+      "kind": "mud",
+      "visible": 17084,
+      "transparent": 6916,
+      "colors": 15
+    },
+    {
+      "kind": "dry",
+      "visible": 19840,
+      "transparent": 8960,
+      "colors": 15
+    },
+    {
+      "kind": "mud",
+      "visible": 17084,
+      "transparent": 6916,
+      "colors": 15
+    },
+    {
+      "kind": "dry",
+      "visible": 19840,
+      "transparent": 8960,
+      "colors": 15
+    },
+    {
+      "kind": "mud",
+      "visible": 17084,
+      "transparent": 6916,
+      "colors": 15
+    },
+    {
+      "kind": "dry",
+      "visible": 19840,
+      "transparent": 8960,
+      "colors": 15
+    },
+    {
+      "kind": "mud",
+      "visible": 17084,
+      "transparent": 6916,
+      "colors": 15
+    },
+    {
+      "kind": "dry",
+      "visible": 19840,
+      "transparent": 8960,
+      "colors": 15
+    },
+    {
+      "kind": "mud",
+      "visible": 17084,
+      "transparent": 6916,
+      "colors": 15
+    },
+    {
+      "kind": "dry",
+      "visible": 19840,
+      "transparent": 8960,
+      "colors": 15
+    },
+    {
+      "kind": "mud",
+      "visible": 17084,
+      "transparent": 6916,
+      "colors": 15
+    },
+    {
+      "kind": "dry",
+      "visible": 19840,
+      "transparent": 8960,
+      "colors": 15
+    },
+    {
+      "kind": "mud",
+      "visible": 17084,
+      "transparent": 6916,
+      "colors": 15
+    },
+    {
+      "kind": "dry",
+      "visible": 19840,
+      "transparent": 8960,
+      "colors": 15
+    },
+    {
+      "kind": "mud",
+      "visible": 17084,
+      "transparent": 6916,
+      "colors": 15
+    }
+  ]
+}

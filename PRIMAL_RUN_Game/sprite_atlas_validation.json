@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "approved_exports": 17,
-  "frames": 2993,
+  "frames": 3009,
   "sheets": 36,
   "checks": [
     "exact native RGBA bytes",

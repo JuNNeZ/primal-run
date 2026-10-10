@@ -35,7 +35,7 @@ def build():
     fishing_overlay = GAME / 'fishing_manifest.json'
     if fishing_overlay.exists():
         manifest += json.loads(fishing_overlay.read_text())
-    for overlay_name in ('water_transition_manifest.json','behavior_manifest.json','injured_walk_manifest.json','native_behavior_manifest.json','presentation_manifest.json'):
+    for overlay_name in ('water_transition_manifest.json','behavior_manifest.json','injured_walk_manifest.json','native_behavior_manifest.json','presentation_manifest.json','ground_reuse_manifest.json'):
         overlay = GAME / overlay_name
         if overlay.exists():
             manifest += json.loads(overlay.read_text())
