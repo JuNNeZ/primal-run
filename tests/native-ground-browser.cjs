@@ -4,6 +4,8 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
 (async()=>{const browser=await chromium.launch(browserOptions());try{
  const page=await browser.newPage({viewport:{width:1100,height:860}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
  await page.goto(await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/index.html')));await page.evaluate(()=>primalRun.ready);
+ await page.waitForFunction(()=>document.querySelector('canvas[aria-label]').dataset.nativeGround==='true'&&document.querySelector('canvas[aria-label]').dataset.scene==='jungle');
+ assert.equal(await page.evaluate(()=>primalRun.game.phase),'menu');
  await page.evaluate(async()=>{await primalRun.preload({species:'triceratops',stage:0});const g=primalRun.game;g.save.unlockedSpecies=Object.keys(PrimalCore.PLAYER_SPECIES);g.selectSpecies('triceratops');g.start({seed:33});g.pause();});
  const samples=await page.evaluate(()=>{
   const g=primalRun.game,r=g.run,C=PrimalCore,canvas=document.querySelector('canvas[aria-label]'),ctx=canvas.getContext('2d'),old=ctx.drawImage,patches=[],families=new Set(),layers=[];
@@ -27,5 +29,5 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
   await page.locator('canvas[aria-label]').screenshot({path:path.join(out,`biome_${stage}_after.png`)});
   if(stage===0){await page.evaluate(()=>{PrimalCore.FEATURES.nativeGround=false;primalRun.update(performance.now());});await page.locator('canvas[aria-label]').screenshot({path:path.join(out,'forest_before.png')});await page.evaluate(()=>{PrimalCore.FEATURES.nativeGround=true;primalRun.update(performance.now());});}
  }
- assert.deepEqual(errors,[]);fs.writeFileSync(path.resolve(__dirname,'../PRIMAL_RUN_Game/native_ground_runtime_report.json'),JSON.stringify({status:'PASS',runtime:'standalone Chromium',...samples,checks:['four preserved tile families','native pixels and unsmoothed binary patch fringe','textured mud and drought ring','dry bank below pond water','unchanged physical mud surface','feature fallback','paused simulation unchanged']},null,2)+'\n');console.log('PASS: four native biomes, textured mud/drought, binary pixel edges, unchanged terrain rules and pause');
+ assert.deepEqual(errors,[]);fs.writeFileSync(path.resolve(__dirname,'../PRIMAL_RUN_Game/native_ground_runtime_report.json'),JSON.stringify({status:'PASS',runtime:'standalone Chromium',...samples,checks:['main menu uses native ground','four preserved tile families','native pixels and unsmoothed binary patch fringe','textured mud and drought ring','dry bank below pond water','unchanged physical mud surface','feature fallback','paused simulation unchanged']},null,2)+'\n');console.log('PASS: four native biomes, textured mud/drought, binary pixel edges, unchanged terrain rules and pause');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

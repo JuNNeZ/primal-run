@@ -194,3 +194,23 @@ Udfyldes pr. pakke (kommandoer fra repo-roden).
 ## Requests på GitHub Pages (10. okt.)
 - Bevist ved måling i headless Chromium: menuen sender nu 222 requests i stedet for 1666. Grafikken for banen indlæses ved START. `tests/game-browser.cjs` venter derfor på `phase === 'playing'`.
 - Åbent punkt: sprite-atlas (Codex) er beskrevet i `MISSING_SPRITES.md` under "Sprite-atlas".
+
+## Opfølgning 10. okt. aften
+- **Menuen:**
+  - Dinosauren forsvarer sig eller flygter (`menuPilot`).
+  - Baggrunden fylder hele skærmen, og der er ingen navneskilte.
+  - Header og footer oversættes ved første sprogvalg.
+  - Patch notes findes på alle sprog (`tools/i18n/patch_notes.py`).
+- **Artsbogen:**
+  - Lister oversættes element for element.
+  - Hver set art vises som en animeret model (`guideModels`).
+  - Testes i `tests/field-guide-browser.cjs`.
+- **CI:** `test:game` manglede 8 af del B's testfiler. De er tilføjet sammen med `menu-pilot`.
+- **Bennys advarselstekst** løftes op over "DIG"-mærket (`warningLabelY`). Testes i `part-b-browser`.
+- **Titler:**
+  - `speed_slayer` < 20 s. Andelen som hovedtitel faldt fra 25,3 % til 19,0 % i 79 bot-runs.
+  - 36 titler har fået status `tracked (records.js)`.
+  - 5 titler kræver funktioner, der ikke er bygget: rav-hemmeligheder, madtyveri, hemmelig bane 9 og hemmelig slutning.
+- **Balance pr. pakke:** `balance_runs/2026-10-10-B-per-package/REPORT.md`. B3 giver den største effekt, og en eventuel dæmpning venter på Jonas.
+- **Codex:** prioriteret liste i `CODEX_HANDOFF.md`.
+- Hele browser-suiten består lokalt (25/25 på 712d34c), også `player-full-browser`. Den gamle fejl (death:4) skyldtes en fast ventetid på 850 ms under CPU-belastning.

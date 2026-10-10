@@ -67,9 +67,13 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
         const pts = r.map.riverCurve, mid = pts[Math.floor(pts.length / 2)];
         Object.assign(r.player, { x: mid.x + 160, y: mid.y }); const boss = g.spawn(C.LEVELS[2].boss, { x: mid.x + 10, y: mid.y }, true); boss.alert = true;
         for (let i = 0; i < 120 && !(boss.mode === 'windup' && boss.pattern === 4 && boss.timer < 1); i++) { r.invulnerable = 1; g.step(1 / 30, {}); }
-        return { shapes, dive: boss.mode === 'windup' && boss.pattern === 4, name: boss.attackName };
+        // Benny's warning text next to the player is lifted above the DIG label (it used to overlap); far away it stays put.
+        const P = r.player, near = { kind: 'baryonyx', x: P.x + 50, y: P.y + 4 }, far = { kind: 'baryonyx', x: P.x + 500, y: P.y + 4 };
+        const label = { near: primalRun.warningLabelY(near, 140), far: primalRun.warningLabelY(far, 140), you: Math.round(P.y - 100), farDefault: Math.round(far.y) - 84 - 20 };
+        return { shapes, dive: boss.mode === 'windup' && boss.pattern === 4, name: boss.attackName, label };
       });
       assert.ok(b1c.shapes.every(s => s.ok), JSON.stringify(b1c.shapes.filter(s => !s.ok)));
+      assert.ok(b1c.label.you - b1c.label.near >= 14, 'boss warning clears the DIG label: ' + JSON.stringify(b1c.label)); assert.equal(b1c.label.far, b1c.label.farDefault);
       assert.ok(b1c.shapes.filter(s => s.pattern >= 4).every(s => s.at === 300), 'dive/ASKEKAST circles sit on the target');
       assert.equal(b1c.dive, true, 'Benny dives near the river');
       await page.waitForTimeout(120); await page.screenshot({ path: path.join(shots, 'part_b_b1c_dive.png') });

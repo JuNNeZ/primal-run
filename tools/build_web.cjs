@@ -10,6 +10,21 @@ for (const name of ['native_behavior_review.html','native_behavior_manifest.json
 for (const name of ['previews', 'balance_runs']) {
   if (fs.existsSync(path.join(game, name))) fs.cpSync(path.join(game, name), path.join(out, name), {recursive:true});
 }
-for (const name of ['sprite_atlas_manifest.json','sprite_atlas_validation.json','presentation_manifest.json','presentation_atlas_runtime_report.json','presentation_implementation_validation.json','SPRITE_RULES_PRESENTATION.md','PRESENTATION_AND_ATLAS.md','GROUND_REUSE.md','ground_reuse_manifest.json','ground_reuse_validation.json','native_ground_runtime_report.json','native_ground_implementation_validation.json','SPRITE_RULES_GROUND.md']) fs.copyFileSync(path.join(game,name),path.join(out,name));
+for (const name of ['sprite_atlas_manifest.json','sprite_atlas_validation.json','presentation_manifest.json','presentation_atlas_runtime_report.json','presentation_implementation_validation.json','SPRITE_RULES_PRESENTATION.md','PRESENTATION_AND_ATLAS.md','GROUND_REUSE.md','ground_reuse_manifest.json','ground_reuse_validation.json','native_ground_runtime_report.json','native_ground_implementation_validation.json','SPRITE_RULES_GROUND.md','PAGES_GROUND_RELEASE.md','pages_build_runtime_report.json']) fs.copyFileSync(path.join(game,name),path.join(out,name));
 fs.writeFileSync(path.join(out, '.nojekyll'), '');
+// Pages caches stable URLs. Version scripts and images together so new atlas
+// coordinates cannot be paired with a cached sheet from the previous release.
+const crypto = require('node:crypto');
+const releaseHash = crypto.createHash('sha256');
+for (const name of [...fs.readdirSync(path.join(out, 'src')).filter(n=>n.endsWith('.js')).sort().map(n=>'src/'+n), 'style.css', ...fs.readdirSync(path.join(out, 'assets/atlases')).filter(n=>n.endsWith('.png')).sort().map(n=>'assets/atlases/'+n)]) {
+  releaseHash.update(name); releaseHash.update(fs.readFileSync(path.join(out,name)));
+}
+const version = releaseHash.digest('hex').slice(0,16);
+const entry = path.join(out, 'index.html');
+let html = fs.readFileSync(entry,'utf8');
+html = html.replace(/(src|href)="(src\/[^"?]+\.js|style\.css)"/g, '$1="$2?v='+version+'"');
+html = html.replace('PrimalApp.mount();', 'PrimalApp.mount({resolve:path=>path+(path.includes("?")?"&":"?")+"v='+version+'"});');
+fs.writeFileSync(entry, html);
+const sourceCommit = process.env.PRIMAL_RELEASE_COMMIT || process.env.GITHUB_SHA || null;
+fs.writeFileSync(path.join(out,'release.json'), JSON.stringify({source_commit:sourceCommit,version,native_ground:true},null,2)+'\n');
 console.log('Built static browser game in dist/. All paths are relative for GitHub Pages.');
