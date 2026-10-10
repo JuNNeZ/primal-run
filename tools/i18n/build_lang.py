@@ -7,11 +7,12 @@ here = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(here))
 from tr_core import CORE
 from tr_ui import UI
+from tr_records import RECORDS
 from tr_fun import TLH, SJN
 LANGS = ['en', 'de', 'sv', 'no', 'ja', 'zh']
 dicts = {l: {} for l in LANGS}
 seen = {}
-for row in CORE + UI:
+for row in CORE + UI + RECORDS:
     da, *rest = row
     if len(rest) != len(LANGS):
         raise SystemExit(f'Row needs {len(LANGS)} translations: {da}')

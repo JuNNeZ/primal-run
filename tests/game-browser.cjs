@@ -79,6 +79,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     await page.locator('[data-buy="health"]').click();
     assert.equal(await page.evaluate(() => primalRun.game.save.upgrades.health), 1);
     await page.locator('[data-action="menu"]').click(); await page.locator('[data-action="scores"]').click();
+    await page.locator('[data-records-tab="top"]').click();
     assert.match(await page.locator('tbody').innerText(), /Raptor Test/);
     await page.reload(); await page.waitForFunction(() => window.primalRun && document.querySelector('[data-action="start"]:not(:disabled)'));
     assert.equal(await page.evaluate(() => primalRun.game.save.upgrades.health), 1);
