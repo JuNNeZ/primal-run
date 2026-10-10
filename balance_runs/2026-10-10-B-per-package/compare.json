@@ -1,0 +1,68 @@
+[
+ {
+  "config": "alt til",
+  "runs": 84,
+  "deaths": 76,
+  "level": 2.52,
+  "bosses": 1.52,
+  "dna": 53.1,
+  "damageTaken": 222,
+  "carnoKills": 52,
+  "topKiller": "carnotaurus:52"
+ },
+ {
+  "config": "scentTrails AF",
+  "runs": 84,
+  "deaths": 70,
+  "level": 2.68,
+  "bosses": 1.68,
+  "dna": 59.2,
+  "damageTaken": 238,
+  "carnoKills": 38,
+  "topKiller": "carnotaurus:38"
+ },
+ {
+  "config": "dayNight AF",
+  "runs": 84,
+  "deaths": 73,
+  "level": 2.51,
+  "bosses": 1.51,
+  "dna": 52.7,
+  "damageTaken": 228,
+  "carnoKills": 43,
+  "topKiller": "carnotaurus:43"
+ },
+ {
+  "config": "raptorPack AF",
+  "runs": 84,
+  "deaths": 76,
+  "level": 2.49,
+  "bosses": 1.49,
+  "dna": 52.8,
+  "damageTaken": 225,
+  "carnoKills": 52,
+  "topKiller": "carnotaurus:52"
+ },
+ {
+  "config": "bossSignatures AF",
+  "runs": 84,
+  "deaths": 71,
+  "level": 2.56,
+  "bosses": 1.56,
+  "dna": 53.4,
+  "damageTaken": 226,
+  "carnoKills": 53,
+  "topKiller": "carnotaurus:53"
+ },
+ {
+  "config": "drought AF",
+  "runs": 84,
+  "deaths": 75,
+  "level": 2.51,
+  "bosses": 1.51,
+  "dna": 53.1,
+  "damageTaken": 223,
+  "carnoKills": 50,
+  "topKiller": "carnotaurus:50"
+ }
+]
