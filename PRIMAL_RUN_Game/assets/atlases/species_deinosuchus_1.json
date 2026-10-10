@@ -1,0 +1,322 @@
+{
+  "assets/avatars/deinosuchus_eat_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1753,
+    "y": 1
+  },
+  "assets/avatars/deinosuchus_eat_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1819,
+    "y": 1
+  },
+  "assets/avatars/deinosuchus_eat_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1885,
+    "y": 1
+  },
+  "assets/avatars/deinosuchus_eat_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1951,
+    "y": 1
+  },
+  "assets/avatars/deinosuchus_fight_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_fight_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 67,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_fight_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 133,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_fight_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 199,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_hurt_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 265,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_hurt_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 331,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_hurt_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 397,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_hurt_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 463,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_idle_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 529,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_idle_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 595,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_idle_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 661,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_idle_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 727,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_sneak_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 793,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_sneak_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 859,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_sneak_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 925,
+    "y": 147
+  },
+  "assets/avatars/deinosuchus_sneak_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 991,
+    "y": 147
+  },
+  "assets/enemy_full/deinosuchus_walk_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_S_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_S_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_S_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_S_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_W_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_W_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 1
+  },
+  "assets/enemy_full/deinosuchus_walk_W_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 1
+  }
+}

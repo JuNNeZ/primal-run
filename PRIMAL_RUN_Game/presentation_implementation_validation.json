@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "base_commit": "522e1b42faf9efa3a7a0fda27daf33e905d3a888",
+  "branch": "codex/approved-art-and-atlas",
+  "simulation_tests": 231,
+  "browser_scripts": 26,
+  "historical_kit_browser_scripts": 3,
+  "player_drawn_frames": 1440,
+  "enemy_drawn_frames": 1200,
+  "atlas": {
+    "status": "PASS",
+    "approved_exports": 17,
+    "frames": 2993,
+    "sheets": 36,
+    "checks": [
+      "exact native RGBA bytes",
+      "unaltered anchors and dimensions",
+      "one-pixel zero-RGBA gutters",
+      "nonoverlapping frames",
+      "complete active catalog coverage",
+      "unchanged user-approved exports and masters"
+    ]
+  },
+  "presentation": {
+    "status": "PASS",
+    "runtime": "standalone Chromium",
+    "menuRequests": 17,
+    "menuAndVolcanicStageRequests": 27,
+    "seen": [
+      "assets/water_transitions/shore_soil_04.png",
+      "assets/water_transitions/shore_soil_12.png",
+      "assets/water_transitions/shore_soil_08.png",
+      "assets/water_transitions/shore_soil_14.png",
+      "assets/water_transitions/water_depth_12.png",
+      "assets/water_transitions/shore_soil_13.png",
+      "assets/water_transitions/shore_soil_06.png",
+      "assets/water_transitions/water_depth_02.png",
+      "assets/water_transitions/water_depth_03.png",
+      "assets/water_transitions/shore_soil_11.png",
+      "assets/water_transitions/shore_soil_01.png",
+      "assets/water_transitions/shore_soil_02.png",
+      "assets/water_transitions/shore_soil_03.png",
+      "assets/ground/dried_mud_edge_N_0.png",
+      "assets/ground/dried_mud_edge_N_1.png",
+      "assets/ground/dried_mud_edge_N_2.png",
+      "assets/ground/dried_mud_edge_N_3.png",
+      "assets/ground/basalt_crossing_0.png",
+      "assets/ground/basalt_crossing_1.png",
+      "assets/ecology/lichen.png",
+      "assets/environment/rock.png",
+      "assets/ecology/succulent.png",
+      "assets/props/meteorite.png",
+      "assets/props/lava_rock.png",
+      "assets/ecology/dry_grass.png",
+      "assets/props/ribcage.png",
+      "assets/props/fern_large.png",
+      "assets/props/dead_tree.png",
+      "assets/ecology/twigs.png",
+      "assets/player_full/velociraptor_idle_E_000.png",
+      "assets/ui/raptor_ally.png",
+      "assets/player_full/velociraptor_idle_S_000.png",
+      "assets/effects/ash_cloud_000.png",
+      "assets/ecology/beetle_1.png",
+      "assets/ecology/beetle_0.png",
+      "assets/effects/bubble_000.png",
+      "assets/effects/ash_cloud_001.png",
+      "assets/effects/bubble_001.png",
+      "assets/effects/ash_cloud_002.png",
+      "assets/effects/bubble_002.png",
+      "assets/effects/ash_cloud_003.png",
+      "assets/effects/bubble_003.png"
+    ],
+    "sun": "assets/ui/time_sun.png",
+    "moon": "assets/ui/time_moon.png",
+    "calmPaths": [
+      "assets/effects/ash_cloud_001.png",
+      "assets/effects/ash_cloud_001.png",
+      "assets/effects/ash_cloud_001.png"
+    ],
+    "stats": {
+      "loaded": 1755,
+      "total": 3637,
+      "atlasSheets": 27,
+      "decodedBytes": 152506368
+    },
+    "pausedSeconds": 10,
+    "fallback": {
+      "path": "assets/ui/time_sun.png",
+      "hidden": false
+    },
+    "missingPNG": {
+      "hidden": true,
+      "glyphHidden": false,
+      "glyph": "☀ "
+    },
+    "production_approved": false
+  },
+  "checks": {
+    "approved_art": true,
+    "game_pngs": true,
+    "enemy_pngs": true,
+    "kit_pngs": true,
+    "generated_source_hashes": true,
+    "all_game_test_components": true,
+    "all_kit_test_components": true,
+    "static_web_build": true
+  },
+  "engine": "standalone Chromium; generated GDevelop project/sourcehash checks; actual GDJS export not run",
+  "source_sha256": {
+    "src/run_titles.js": "422b8e02fd80c9048f7e231854bc2b43d4227d80c9d8f1a5080afe5fa7e0a358",
+    "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
+    "src/core.js": "5f8fff0b8b69cc8d1e5b13922cade3ae2eea4a51372aecc382b62abc3b9526e5",
+    "src/i18n.js": "94adc5ad898f13b3dd8296ed7639d1e5fb8cf7e88faf1488e7176b7b456fd3d9",
+    "src/lang.js": "7fd0ddf441f5ee6cdfa2427111dce1439c0ef3618297143d1b36e6371dd8face",
+    "src/assets.js": "2b7af322d981e5cbf0e4c6fa32970a62106453c753c570bc67d073e71e2dbf6d",
+    "src/audio.js": "1b434e95d7062acfedc2e736f105d559b409f2fa82ca7fe65140abd008d6fc69",
+    "src/app.js": "3f6315bba8fad39334b8dade12511e287fe02793a529ad128071ddbdc52884d5",
+    "style.css": "b0e0dc2c370f346f61a0300905256014cb88ad328f0ec3f1436e2009bd451e35"
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "assets/water_transitions/shore_sand_00.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 1
+  },
+  "assets/water_transitions/shore_sand_01.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 1
+  },
+  "assets/water_transitions/shore_sand_02.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 1
+  },
+  "assets/water_transitions/shore_sand_03.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 1
+  },
+  "assets/water_transitions/shore_sand_04.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 1
+  },
+  "assets/water_transitions/shore_sand_05.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 1
+  },
+  "assets/water_transitions/shore_sand_06.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 1
+  },
+  "assets/water_transitions/shore_sand_07.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 35
+  },
+  "assets/water_transitions/shore_sand_08.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 35
+  },
+  "assets/water_transitions/shore_sand_09.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 35
+  },
+  "assets/water_transitions/shore_sand_10.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 35
+  },
+  "assets/water_transitions/shore_sand_11.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 35
+  },
+  "assets/water_transitions/shore_sand_12.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 35
+  },
+  "assets/water_transitions/shore_sand_13.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 35
+  },
+  "assets/water_transitions/shore_sand_14.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 69
+  },
+  "assets/water_transitions/shore_sand_15.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 69
+  },
+  "assets/water_transitions/shore_soil_00.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 69
+  },
+  "assets/water_transitions/shore_soil_01.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 69
+  },
+  "assets/water_transitions/shore_soil_02.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 69
+  },
+  "assets/water_transitions/shore_soil_03.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 69
+  },
+  "assets/water_transitions/shore_soil_04.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 69
+  },
+  "assets/water_transitions/shore_soil_05.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 103
+  },
+  "assets/water_transitions/shore_soil_06.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 103
+  },
+  "assets/water_transitions/shore_soil_07.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 103
+  },
+  "assets/water_transitions/shore_soil_08.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 103
+  },
+  "assets/water_transitions/shore_soil_09.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 103
+  },
+  "assets/water_transitions/shore_soil_10.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 103
+  },
+  "assets/water_transitions/shore_soil_11.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 103
+  },
+  "assets/water_transitions/shore_soil_12.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 137
+  },
+  "assets/water_transitions/shore_soil_13.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 137
+  },
+  "assets/water_transitions/shore_soil_14.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 137
+  },
+  "assets/water_transitions/shore_soil_15.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 137
+  },
+  "assets/water_transitions/water_depth_00.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 137
+  },
+  "assets/water_transitions/water_depth_01.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 137
+  },
+  "assets/water_transitions/water_depth_02.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 137
+  },
+  "assets/water_transitions/water_depth_03.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 171
+  },
+  "assets/water_transitions/water_depth_04.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 171
+  },
+  "assets/water_transitions/water_depth_05.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 171
+  },
+  "assets/water_transitions/water_depth_06.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 171
+  },
+  "assets/water_transitions/water_depth_07.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 171
+  },
+  "assets/water_transitions/water_depth_08.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 171
+  },
+  "assets/water_transitions/water_depth_09.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 171
+  },
+  "assets/water_transitions/water_depth_10.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 205
+  },
+  "assets/water_transitions/water_depth_11.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 205
+  },
+  "assets/water_transitions/water_depth_12.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 205
+  },
+  "assets/water_transitions/water_depth_13.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 205
+  },
+  "assets/water_transitions/water_depth_14.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 205
+  },
+  "assets/water_transitions/water_depth_15.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 205
+  }
+}

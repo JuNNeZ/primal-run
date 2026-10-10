@@ -1,0 +1,25 @@
+{
+  "approved": true,
+  "date": "2026-10-10",
+  "by": "user",
+  "statement": "Det er så fint godkendt. implementer dem og forsæt",
+  "exports": {
+    "assets/ui/time_sun.png": "f90a30e7d949a0aad9e1b89d53c90c5f7f1714fe4efc546e41783d3c66a19e9b",
+    "assets/ui/time_moon.png": "d89d25ecea7d8d19c255508e47d04f3e7a48c5b4ea2b6cb66f17eaa61b9e0d1d",
+    "assets/ui/raptor_ally.png": "8690155917d75467b102efa11cbfb45f7d37b091c64d4960f4fed557a07ccc47",
+    "assets/effects/bubble_000.png": "f68465d9f19eaa7dd3bd45be924c089a6adb961266cebf1d39cbf6cb3179869e",
+    "assets/effects/bubble_001.png": "fff996ebef1e7820a6691d74691a8f4f4df04a2949f8364b1e0fb2eebdeeb935",
+    "assets/effects/bubble_002.png": "d7d22e68e2bb3f8614196a38c44f98634ce312a0cbb4e6c93c8c240ce9a1a3ba",
+    "assets/effects/bubble_003.png": "11ac164a83d2151cc59bf9ca531f46ef6d598e6e735e39c30c810682ae75fcf3",
+    "assets/effects/ash_cloud_000.png": "18ec326af67e714147868cf3e44ea5ae93e7d9f1d6dce52798031917b888ba38",
+    "assets/effects/ash_cloud_001.png": "3d70ad3b8b2b2e9248b9dd420c2a117960b676b69dec4baf2c82b6d46b273138",
+    "assets/effects/ash_cloud_002.png": "3114b5f6adc4b28e9fa523675ca28ffc372af47ff20201cb09ef40d2b3cc4db9",
+    "assets/effects/ash_cloud_003.png": "afaed35f9e8e70d096f4566509834953015405431d7e3acad88eb919806b85ad",
+    "assets/ground/dried_mud_edge_N_0.png": "9cd47b961e85c91fcb262cb1d3cfe0cc3abd77ae928ffcd49671a908295745d5",
+    "assets/ground/dried_mud_edge_N_1.png": "cab61c01ffefd27c14aa53da6b6a9f8cbf734caeec21d0f5795c8001b3e144ff",
+    "assets/ground/dried_mud_edge_N_2.png": "55b72744cddd8e1c57192a3fa7284d6f636f552cd7a81e045bfb4e968fe5f94c",
+    "assets/ground/dried_mud_edge_N_3.png": "dcfc54a0077c956481dd4448a110f2d1feb195bf9588e31cbaf428da84244c72",
+    "assets/ground/basalt_crossing_0.png": "c748fd612a65e2a2e17665b289dfb2ef5d6778ddc7ace95872a48a57f526729d",
+    "assets/ground/basalt_crossing_1.png": "06f2039f1b2bd6980741de551b1b17de2b6a2df34539e823140882ecaaac070a"
+  }
+}

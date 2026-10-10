@@ -1,0 +1,565 @@
+{
+  "name": "Feathered reference reuse and corrected handoff art",
+  "revision": 3,
+  "authoring": "Reused preserved art plus Codex native pixel details",
+  "palette": "palette.json",
+  "animation_ready": false,
+  "assets": [
+    {
+      "path": "assets/ui/time_sun.png",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "family": "hud",
+      "frame": null,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Generated/draw_art.py",
+      "source_crop": null
+    },
+    {
+      "path": "assets/ui/time_moon.png",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "family": "hud",
+      "frame": null,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Generated/draw_art.py",
+      "source_crop": null
+    },
+    {
+      "path": "assets/ui/raptor_ally.png",
+      "size": [
+        12,
+        12
+      ],
+      "origin": [
+        6,
+        6
+      ],
+      "family": "ally_marker",
+      "frame": null,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/original/insulating_feathers.png",
+      "source_crop": null,
+      "source_sha256": "74fd924e09e4ebcc3d487b831ca6d4bfb22515c2509470512fc6fa30d68cd7bc",
+      "operation": {
+        "integer_sample_step": 2,
+        "source_crop": [
+          4,
+          4,
+          28,
+          28
+        ],
+        "palette_swap": "warm feather highlights to teal team colors"
+      },
+      "export_sha256": "8690155917d75467b102efa11cbfb45f7d37b091c64d4960f4fed557a07ccc47"
+    },
+    {
+      "path": "assets/effects/bubble_000.png",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "family": "bubble",
+      "frame": 0,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/original/bubble_02.png",
+      "source_crop": null,
+      "source_sha256": "03d4f0eacebcce94e32d3f871bd6741e326d19f62e17969b79b20bd8b79e8ac9",
+      "operation": {
+        "integer_sample_step": 2,
+        "sample_offset": [
+          0,
+          0
+        ],
+        "placement": [
+          3,
+          3
+        ],
+        "alpha_threshold": 192,
+        "palette": "nearest fixed RGB"
+      },
+      "export_sha256": "f68465d9f19eaa7dd3bd45be924c089a6adb961266cebf1d39cbf6cb3179869e"
+    },
+    {
+      "path": "assets/effects/bubble_001.png",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "family": "bubble",
+      "frame": 1,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/original/bubble_01.png",
+      "source_crop": null,
+      "source_sha256": "9c30f09e06f2e097d77f0f9b694fc2eeeaa9d8533b7035f60264d2863b4ee3dd",
+      "operation": {
+        "integer_sample_step": 2,
+        "sample_offset": [
+          1,
+          1
+        ],
+        "placement": [
+          3,
+          2
+        ],
+        "alpha_threshold": 192,
+        "palette": "nearest fixed RGB"
+      },
+      "export_sha256": "fff996ebef1e7820a6691d74691a8f4f4df04a2949f8364b1e0fb2eebdeeb935"
+    },
+    {
+      "path": "assets/effects/bubble_002.png",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "family": "bubble",
+      "frame": 2,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/original/bubble_03.png",
+      "source_crop": null,
+      "source_sha256": "2afbce85c1176f14621f622814a845df112d7e41f242c6bd5a54a6836da6c9dd",
+      "operation": {
+        "integer_sample_step": 2,
+        "sample_offset": [
+          0,
+          1
+        ],
+        "placement": [
+          1,
+          1
+        ],
+        "alpha_threshold": 192,
+        "palette": "nearest fixed RGB"
+      },
+      "export_sha256": "d7d22e68e2bb3f8614196a38c44f98634ce312a0cbb4e6c93c8c240ce9a1a3ba"
+    },
+    {
+      "path": "assets/effects/bubble_003.png",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "family": "bubble",
+      "frame": 3,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/original/bubble_05.png",
+      "source_crop": null,
+      "source_sha256": "504768f32004f8d0c7c98528965bc0962c9f3f340a56180d30174039372b67c8",
+      "operation": {
+        "integer_sample_step": 1,
+        "sample_offset": [
+          0,
+          0
+        ],
+        "placement": [
+          1,
+          1
+        ],
+        "alpha_threshold": 192,
+        "palette": "nearest fixed RGB"
+      },
+      "export_sha256": "11ac164a83d2151cc59bf9ca531f46ef6d598e6e735e39c30c810682ae75fcf3"
+    },
+    {
+      "path": "assets/effects/ash_cloud_000.png",
+      "size": [
+        192,
+        128
+      ],
+      "origin": [
+        96,
+        64
+      ],
+      "family": "ash_cloud",
+      "frame": 0,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/feathered/assets/effects/dust_000.png",
+      "source_crop": null,
+      "source_sha256": "5c0ab18b92e732fad61e74f442f899ea3c3fe6bdbea48e90621d23451bf4b5af",
+      "operation": {
+        "palette_swap": {
+          "#151b19": "#151b19",
+          "#443027": "#3b4144",
+          "#674333": "#3b4144",
+          "#8d6042": "#626861",
+          "#b98252": "#929387",
+          "#d4a36c": "#929387",
+          "#edd0a0": "#bab8a2",
+          "#ded392": "#bab8a2",
+          "#54282d": "#3b4144",
+          "#913b32": "#626861",
+          "#c6663c": "#929387",
+          "#de954a": "#bab8a2"
+        },
+        "placement": [
+          48,
+          16
+        ],
+        "sampling_step": 1,
+        "source_origin": [
+          48,
+          48
+        ],
+        "source_pixels_geometry_unchanged": true
+      },
+      "export_sha256": "18ec326af67e714147868cf3e44ea5ae93e7d9f1d6dce52798031917b888ba38"
+    },
+    {
+      "path": "assets/effects/ash_cloud_001.png",
+      "size": [
+        192,
+        128
+      ],
+      "origin": [
+        96,
+        64
+      ],
+      "family": "ash_cloud",
+      "frame": 1,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/feathered/assets/effects/dust_001.png",
+      "source_crop": null,
+      "source_sha256": "92c9b742d5bb8e62c3dabf536547636f4d7f8099fe8e4255f786bfb771fca6da",
+      "operation": {
+        "palette_swap": {
+          "#151b19": "#151b19",
+          "#443027": "#3b4144",
+          "#674333": "#3b4144",
+          "#8d6042": "#626861",
+          "#b98252": "#929387",
+          "#d4a36c": "#929387",
+          "#edd0a0": "#bab8a2",
+          "#ded392": "#bab8a2",
+          "#54282d": "#3b4144",
+          "#913b32": "#626861",
+          "#c6663c": "#929387",
+          "#de954a": "#bab8a2"
+        },
+        "placement": [
+          48,
+          16
+        ],
+        "sampling_step": 1,
+        "source_origin": [
+          48,
+          48
+        ],
+        "source_pixels_geometry_unchanged": true
+      },
+      "export_sha256": "3d70ad3b8b2b2e9248b9dd420c2a117960b676b69dec4baf2c82b6d46b273138"
+    },
+    {
+      "path": "assets/effects/ash_cloud_002.png",
+      "size": [
+        192,
+        128
+      ],
+      "origin": [
+        96,
+        64
+      ],
+      "family": "ash_cloud",
+      "frame": 2,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/feathered/assets/effects/dust_002.png",
+      "source_crop": null,
+      "source_sha256": "0a6aa1c61305d988f5406e3fd81347bb07e1fe8acd4c2821a08af4ee47142371",
+      "operation": {
+        "palette_swap": {
+          "#151b19": "#151b19",
+          "#443027": "#3b4144",
+          "#674333": "#3b4144",
+          "#8d6042": "#626861",
+          "#b98252": "#929387",
+          "#d4a36c": "#929387",
+          "#edd0a0": "#bab8a2",
+          "#ded392": "#bab8a2",
+          "#54282d": "#3b4144",
+          "#913b32": "#626861",
+          "#c6663c": "#929387",
+          "#de954a": "#bab8a2"
+        },
+        "placement": [
+          48,
+          16
+        ],
+        "sampling_step": 1,
+        "source_origin": [
+          48,
+          48
+        ],
+        "source_pixels_geometry_unchanged": true
+      },
+      "export_sha256": "3114b5f6adc4b28e9fa523675ca28ffc372af47ff20201cb09ef40d2b3cc4db9"
+    },
+    {
+      "path": "assets/effects/ash_cloud_003.png",
+      "size": [
+        192,
+        128
+      ],
+      "origin": [
+        96,
+        64
+      ],
+      "family": "ash_cloud",
+      "frame": 3,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/feathered/assets/effects/dust_003.png",
+      "source_crop": null,
+      "source_sha256": "9e5960afb9e602d22174dd23867854128fac5724748ab69143a4c84a9d100c1e",
+      "operation": {
+        "palette_swap": {
+          "#151b19": "#151b19",
+          "#443027": "#3b4144",
+          "#674333": "#3b4144",
+          "#8d6042": "#626861",
+          "#b98252": "#929387",
+          "#d4a36c": "#929387",
+          "#edd0a0": "#bab8a2",
+          "#ded392": "#bab8a2",
+          "#54282d": "#3b4144",
+          "#913b32": "#626861",
+          "#c6663c": "#929387",
+          "#de954a": "#bab8a2"
+        },
+        "placement": [
+          48,
+          16
+        ],
+        "sampling_step": 1,
+        "source_origin": [
+          48,
+          48
+        ],
+        "source_pixels_geometry_unchanged": true
+      },
+      "export_sha256": "afaed35f9e8e70d096f4566509834953015405431d7e3acad88eb919806b85ad"
+    },
+    {
+      "path": "assets/ground/dried_mud_edge_N_0.png",
+      "size": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        16
+      ],
+      "family": "mud_overlay",
+      "frame": null,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/feathered/assets/ground/river_0.png",
+      "source_crop": null,
+      "source_sha256": "fcfe67d614620fb43bbec71b5a0ff3dcc17866e9704fde4ebf8c08f454383e47",
+      "operation": {
+        "palette_swap": {
+          "#28372a": "#443027",
+          "#3f5030": "#674333",
+          "#586d38": "#8d6042",
+          "#799447": "#b98252",
+          "#a8b15b": "#d4a36c"
+        },
+        "clip": "native north bank",
+        "added_details": "Codex-authored integer crack paths",
+        "seam_source": "river_0.png column 0",
+        "sampling_step": 1
+      },
+      "export_sha256": "9cd47b961e85c91fcb262cb1d3cfe0cc3abd77ae928ffcd49671a908295745d5"
+    },
+    {
+      "path": "assets/ground/dried_mud_edge_N_1.png",
+      "size": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        16
+      ],
+      "family": "mud_overlay",
+      "frame": null,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/feathered/assets/ground/river_1.png",
+      "source_crop": null,
+      "source_sha256": "b36d5493616f12323f18223eefeaef55bce98585e4d4cd1126fd88cbc610d418",
+      "operation": {
+        "palette_swap": {
+          "#28372a": "#443027",
+          "#3f5030": "#674333",
+          "#586d38": "#8d6042",
+          "#799447": "#b98252",
+          "#a8b15b": "#d4a36c"
+        },
+        "clip": "native north bank",
+        "added_details": "Codex-authored integer crack paths",
+        "seam_source": "river_0.png column 0",
+        "sampling_step": 1
+      },
+      "export_sha256": "cab61c01ffefd27c14aa53da6b6a9f8cbf734caeec21d0f5795c8001b3e144ff"
+    },
+    {
+      "path": "assets/ground/dried_mud_edge_N_2.png",
+      "size": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        16
+      ],
+      "family": "mud_overlay",
+      "frame": null,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/feathered/assets/ground/river_2.png",
+      "source_crop": null,
+      "source_sha256": "ec33a615b6918e9df856267acae7dc1312b8bc3d4d2708c74ff4f337d05ce3c5",
+      "operation": {
+        "palette_swap": {
+          "#28372a": "#443027",
+          "#3f5030": "#674333",
+          "#586d38": "#8d6042",
+          "#799447": "#b98252",
+          "#a8b15b": "#d4a36c"
+        },
+        "clip": "native north bank",
+        "added_details": "Codex-authored integer crack paths",
+        "seam_source": "river_0.png column 0",
+        "sampling_step": 1
+      },
+      "export_sha256": "55b72744cddd8e1c57192a3fa7284d6f636f552cd7a81e045bfb4e968fe5f94c"
+    },
+    {
+      "path": "assets/ground/dried_mud_edge_N_3.png",
+      "size": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        16
+      ],
+      "family": "mud_overlay",
+      "frame": null,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/feathered/assets/ground/river_3.png",
+      "source_crop": null,
+      "source_sha256": "7b4f610375c17ebec83d999f98717816c23b19034afea94612543045b1448927",
+      "operation": {
+        "palette_swap": {
+          "#28372a": "#443027",
+          "#3f5030": "#674333",
+          "#586d38": "#8d6042",
+          "#799447": "#b98252",
+          "#a8b15b": "#d4a36c"
+        },
+        "clip": "native north bank",
+        "added_details": "Codex-authored integer crack paths",
+        "seam_source": "river_0.png column 0",
+        "sampling_step": 1
+      },
+      "export_sha256": "dcfc54a0077c956481dd4448a110f2d1feb195bf9588e31cbaf428da84244c72"
+    },
+    {
+      "path": "assets/ground/basalt_crossing_0.png",
+      "size": [
+        256,
+        256
+      ],
+      "origin": [
+        128,
+        128
+      ],
+      "family": "basalt_crossing",
+      "frame": null,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/feathered/assets/ground/basalt_crossing_0.png",
+      "source_crop": null,
+      "source_sha256": "c748fd612a65e2a2e17665b289dfb2ef5d6778ddc7ace95872a48a57f526729d",
+      "operation": {
+        "sampling_step": 1,
+        "unchanged": true
+      },
+      "export_sha256": "c748fd612a65e2a2e17665b289dfb2ef5d6778ddc7ace95872a48a57f526729d"
+    },
+    {
+      "path": "assets/ground/basalt_crossing_1.png",
+      "size": [
+        256,
+        256
+      ],
+      "origin": [
+        128,
+        128
+      ],
+      "family": "basalt_crossing",
+      "frame": null,
+      "status": "prototype_static",
+      "production_approved": false,
+      "source": "Source_Reused/feathered/assets/ground/basalt_crossing_1.png",
+      "source_crop": null,
+      "source_sha256": "06f2039f1b2bd6980741de551b1b17de2b6a2df34539e823140882ecaaac070a",
+      "operation": {
+        "sampling_step": 1,
+        "unchanged": true
+      },
+      "export_sha256": "06f2039f1b2bd6980741de551b1b17de2b6a2df34539e823140882ecaaac070a"
+    }
+  ],
+  "proposed_playback": {
+    "bubble": {
+      "fps": 10,
+      "loop": false
+    },
+    "ash_cloud": {
+      "fps": 10,
+      "loop": false
+    }
+  },
+  "source_contract": "Source_Reused/feathered/reference/SPRITE_RULES_GROUND.md"
+}

@@ -8,7 +8,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
  await page.locator('[data-action="start"]').click();await page.locator('[data-action="begin"]').click();
  const result=await page.evaluate(()=>{
   const g=primalRun.game,canvas=document.querySelector('canvas[aria-label]'),ctx=canvas.getContext('2d'),old=ctx.drawImage,calls=[];let players=0,npcs=0,tailFrames=0;
-  ctx.drawImage=function(im,...args){calls.push({file:im.src?.split('/').pop(),width:im.width,height:im.height,args});return old.call(this,im,...args);};
+  ctx.drawImage=function(nativeImage,...nativeArgs){const {image:im,args:args}=PrimalApp.drawRecord(nativeImage,nativeArgs);calls.push({file:im.src?.split('/').pop(),width:im.width,height:im.height,args});return old.call(this,nativeImage,...nativeArgs);};
   try{
    for(const species of Object.keys(PrimalCore.PLAYER_SPECIES)){
     g.phase='menu';g.save.unlockedSpecies=Object.keys(PrimalCore.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:123});g.pause();const r=g.run;r.enemies=[];r.pickups=[];r.corpses=[];

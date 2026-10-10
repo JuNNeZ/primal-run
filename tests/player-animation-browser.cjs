@@ -16,9 +16,9 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       const g = primalRun.game, r = g.run, canvas = document.querySelector('canvas[aria-label]'), ctx = canvas.getContext('2d');
       const calls = [], original = ctx.drawImage;
       const resourceFiles = typeof gdjs !== 'undefined' && gdjs.projectData ? new Map(gdjs.projectData.resources.resources.map(resource => [resource.name, resource.file])) : new Map();
-      ctx.drawImage = function (image, ...args) {
+      ctx.drawImage=function(nativeImage,...nativeArgs){const {image:image,args:args}=PrimalApp.drawRecord(nativeImage,nativeArgs);
         if (image.src && /utahraptor_attack_/.test(image.src)) calls.push({ file: decodeURIComponent(image.src).split('/').pop(), x: args[0], y: args[1], width: image.naturalWidth, height: image.naturalHeight });
-        return original.call(this, image, ...args);
+        return original.call(this, nativeImage, ...nativeArgs);
       };
       const checks = [], origin = { S: [72, 80], N: [72, 64], E: [76, 72], W: [68, 72] };
       for (const d of ['S', 'N', 'E', 'W']) {

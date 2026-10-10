@@ -1,0 +1,1812 @@
+{
+  "assets/behavior_injured/tyrannosaurus_limp_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 195,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 341,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_E_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 487,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_E_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 633,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_E_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 779,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_E_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 925,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1071,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1217,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_N_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1363,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_N_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1509,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_N_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1655,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_N_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1801,
+    "y": 1
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_S_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_S_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_S_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_S_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_W_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_W_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 195
+  },
+  "assets/behavior_injured/tyrannosaurus_limp_W_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 195
+  },
+  "assets/behavior_native/tyrannosaurus_drink_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 195
+  },
+  "assets/behavior_native/tyrannosaurus_drink_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 195
+  },
+  "assets/behavior_native/tyrannosaurus_graze_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_graze_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_graze_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_graze_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_graze_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_graze_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_scratch_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_scratch_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_scratch_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_scratch_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_scratch_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_scratch_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_scratch_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_scratch_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 341
+  },
+  "assets/behavior_native/tyrannosaurus_sleep_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 487
+  },
+  "assets/behavior_native/tyrannosaurus_sleep_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 487
+  },
+  "assets/behavior_native/tyrannosaurus_sleep_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 487
+  },
+  "assets/behavior_native/tyrannosaurus_sleep_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 487
+  },
+  "assets/behavior_native/tyrannosaurus_sleep_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 487
+  },
+  "assets/behavior_native/tyrannosaurus_sleep_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 487
+  },
+  "assets/behavior_native/tyrannosaurus_sleep_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 487
+  },
+  "assets/behavior_native/tyrannosaurus_sleep_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 487
+  },
+  "assets/corpses/tyrannosaurus_decayed_E_0.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 487
+  },
+  "assets/corpses/tyrannosaurus_decayed_E_1.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 487
+  },
+  "assets/corpses/tyrannosaurus_decayed_N_0.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 487
+  },
+  "assets/corpses/tyrannosaurus_decayed_N_1.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 487
+  },
+  "assets/corpses/tyrannosaurus_decayed_S_0.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 487
+  },
+  "assets/corpses/tyrannosaurus_decayed_S_1.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 487
+  },
+  "assets/corpses/tyrannosaurus_decayed_W_0.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 633
+  },
+  "assets/corpses/tyrannosaurus_decayed_W_1.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 633
+  },
+  "assets/corpses/tyrannosaurus_skeleton_E_0.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 633
+  },
+  "assets/corpses/tyrannosaurus_skeleton_E_1.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 633
+  },
+  "assets/corpses/tyrannosaurus_skeleton_N_0.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 633
+  },
+  "assets/corpses/tyrannosaurus_skeleton_N_1.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 633
+  },
+  "assets/corpses/tyrannosaurus_skeleton_S_0.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 633
+  },
+  "assets/corpses/tyrannosaurus_skeleton_S_1.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 633
+  },
+  "assets/corpses/tyrannosaurus_skeleton_W_0.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 633
+  },
+  "assets/corpses/tyrannosaurus_skeleton_W_1.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 633
+  },
+  "assets/enemies/tyrannosaurus_idle_S_000.png": {
+    "anchor": [
+      96,
+      96
+    ],
+    "h": 192,
+    "w": 192,
+    "x": 1,
+    "y": 1
+  },
+  "assets/enemy_full/tyrannosaurus_attack_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 633
+  },
+  "assets/enemy_full/tyrannosaurus_attack_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 633
+  },
+  "assets/enemy_full/tyrannosaurus_attack_E_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 633
+  },
+  "assets/enemy_full/tyrannosaurus_attack_E_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 633
+  },
+  "assets/enemy_full/tyrannosaurus_attack_E_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_E_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_N_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_N_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_N_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_N_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_S_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_S_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_S_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_S_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 779
+  },
+  "assets/enemy_full/tyrannosaurus_attack_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_attack_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_attack_W_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_attack_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_attack_W_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_attack_W_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_death_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_death_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_death_E_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_death_E_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_death_E_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_death_E_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_death_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_death_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 925
+  },
+  "assets/enemy_full/tyrannosaurus_death_N_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_N_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_N_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_N_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_S_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_S_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_S_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_S_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_W_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 1071
+  },
+  "assets/enemy_full/tyrannosaurus_death_W_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_death_W_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_hurt_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_hurt_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_hurt_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_hurt_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_hurt_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_hurt_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_hurt_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_hurt_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_idle_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_idle_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_idle_E_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_idle_E_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 1217
+  },
+  "assets/enemy_full/tyrannosaurus_idle_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_N_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_N_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_S_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_S_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_W_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_idle_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_run_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_run_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 1363
+  },
+  "assets/enemy_full/tyrannosaurus_run_E_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_E_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_E_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_E_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_N_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_N_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_N_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_N_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_S_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_S_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 1509
+  },
+  "assets/enemy_full/tyrannosaurus_run_S_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_run_S_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_run_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_run_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_run_W_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_run_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_run_W_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_run_W_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_walk_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_walk_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_walk_E_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_walk_E_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_walk_E_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_walk_E_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 1655
+  },
+  "assets/enemy_full/tyrannosaurus_walk_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_N_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_N_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_N_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_N_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_S_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_S_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_S_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_S_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 1801
+  },
+  "assets/enemy_full/tyrannosaurus_walk_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 1801
+  }
+}

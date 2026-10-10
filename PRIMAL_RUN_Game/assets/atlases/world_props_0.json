@@ -1,0 +1,122 @@
+{
+  "assets/props/boulder_large.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 391,
+    "y": 1
+  },
+  "assets/props/dead_tree.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1,
+    "y": 1
+  },
+  "assets/props/fallen_log.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1,
+    "y": 131
+  },
+  "assets/props/fern_large.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 67,
+    "y": 131
+  },
+  "assets/props/flower_bush.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 133,
+    "y": 131
+  },
+  "assets/props/lava_rock.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 199,
+    "y": 131
+  },
+  "assets/props/meteorite.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 265,
+    "y": 131
+  },
+  "assets/props/nest_eggs.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 331,
+    "y": 131
+  },
+  "assets/props/nest_empty.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 397,
+    "y": 131
+  },
+  "assets/props/ribcage.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 131,
+    "y": 1
+  },
+  "assets/props/skull.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1,
+    "y": 197
+  },
+  "assets/props/tree_canopy.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 261,
+    "y": 1
+  }
+}

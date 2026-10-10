@@ -1,0 +1,96 @@
+{
+  "repository": "JuNNeZ/primal-run",
+  "ref": "codex/preserved-feathered-starter",
+  "files": [
+    {
+      "path": "assets/ground/basalt_crossing_0.png",
+      "git_blob_sha": "d74447940ef703c232cf1129cc1ade1455a6ad4b",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/ground/basalt_crossing_0.png"
+    },
+    {
+      "path": "assets/ground/basalt_crossing_1.png",
+      "git_blob_sha": "896a22eba001426e1b742a6455a61f8f20159ac7",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/ground/basalt_crossing_1.png"
+    },
+    {
+      "path": "assets/ground/river_0.png",
+      "git_blob_sha": "2929c017b6c4f0b137e67713b3fb9a33cca43b42",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/ground/river_0.png"
+    },
+    {
+      "path": "assets/ground/river_1.png",
+      "git_blob_sha": "b2e58d4febcea6f59ddd8deebfc727a421925c90",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/ground/river_1.png"
+    },
+    {
+      "path": "assets/ground/river_2.png",
+      "git_blob_sha": "0bcc4c8b57495bf75ee4ddf883e3b4a773075cea",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/ground/river_2.png"
+    },
+    {
+      "path": "assets/ground/river_3.png",
+      "git_blob_sha": "931979f4ac27742791c28d74668ac8316afc5601",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/ground/river_3.png"
+    },
+    {
+      "path": "assets/ground/volcano_0.png",
+      "git_blob_sha": "63289bb694b9a6bc42bb3f9386709e7710f126c1",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/ground/volcano_0.png"
+    },
+    {
+      "path": "assets/ground/volcano_1.png",
+      "git_blob_sha": "15b004ed406fe8199e363e6025f0a8822da69b5e",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/ground/volcano_1.png"
+    },
+    {
+      "path": "assets/ground/volcano_2.png",
+      "git_blob_sha": "460544e96466beeddc2f9524617db5a87770cb37",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/ground/volcano_2.png"
+    },
+    {
+      "path": "assets/ground/volcano_3.png",
+      "git_blob_sha": "c60a60df661eaa88d84456d43d4fc4c3107b718f",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/ground/volcano_3.png"
+    },
+    {
+      "path": "assets/effects/dust_000.png",
+      "git_blob_sha": "dcf524ee9437c8f0a18e9c9184b9749edafbaa11",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/effects/dust_000.png"
+    },
+    {
+      "path": "assets/effects/dust_001.png",
+      "git_blob_sha": "383905c0a7eafc06a22c085c8e81c8783144a031",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/effects/dust_001.png"
+    },
+    {
+      "path": "assets/effects/dust_002.png",
+      "git_blob_sha": "07124ebf85891f7680a795fe75eccdb13783f629",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/effects/dust_002.png"
+    },
+    {
+      "path": "assets/effects/dust_003.png",
+      "git_blob_sha": "db7acd69774edaa5f20d6d14abb2afb76709e7cf",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/assets/effects/dust_003.png"
+    },
+    {
+      "path": "ground_manifest.json",
+      "git_blob_sha": "2ca16ad285718cc2669703ad345eb9b59a1cfe50",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/ground_manifest.json"
+    },
+    {
+      "path": "ecology_manifest.json",
+      "git_blob_sha": "de6fc4d3a9ddc1464ed317c06f5218fb51df1c63",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/ecology_manifest.json"
+    },
+    {
+      "path": "reference/SPRITE_RULES_GROUND.md",
+      "git_blob_sha": "0026bbc6f0ea68cecdcc97ea861f3f80eff7408a",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/PRIMAL_RUN_Game/SPRITE_RULES_GROUND.md"
+    },
+    {
+      "path": "reference/SKILL.md",
+      "git_blob_sha": "7278607d0efc6dd55070e09fb8a31e2b8bd77e0c",
+      "url": "https://github.com/JuNNeZ/primal-run/blob/codex/preserved-feathered-starter/.agents/skills/primal-assets/SKILL.md"
+    }
+  ]
+}

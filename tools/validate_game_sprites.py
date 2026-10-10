@@ -32,7 +32,7 @@ for entry in manifest:
             if hashlib.sha256((GAME / entry['source']).read_bytes()).hexdigest() != entry['source_sha256']:
                 errors.append(file + ': source hash mismatch')
             stats[file] = {'bbox': list(bbox), 'origin': entry['origin'], 'opaque_pixels': int(np.sum(a[:, :, 3] == 255)), 'palette_colors': len(colors)}
-actual = {p.relative_to(GAME).as_posix() for p in (GAME / 'assets').rglob('*.png')}
+actual = {p.relative_to(GAME).as_posix() for p in (GAME / 'assets').rglob('*.png') if 'atlases' not in p.parts}
 listed = {e['file'] for e in manifest}
 if actual != listed:
     errors.append('Asset inventory mismatch: ' + str(sorted(actual ^ listed)))

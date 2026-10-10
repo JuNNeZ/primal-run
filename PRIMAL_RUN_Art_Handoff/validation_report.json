@@ -1,0 +1,180 @@
+{
+  "passed": true,
+  "asset_count": 17,
+  "mud_left_right_seams_match": true,
+  "feathered_source_git_blobs_match": true,
+  "visual_review": "See REVIEW.md; human approval pending",
+  "game_runtime_tested": false,
+  "results": [
+    {
+      "path": "assets/ui/time_sun.png",
+      "bounds": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/ui/time_moon.png",
+      "bounds": [
+        2,
+        2,
+        13,
+        14
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/ui/raptor_ally.png",
+      "bounds": [
+        2,
+        2,
+        10,
+        10
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/effects/bubble_000.png",
+      "bounds": [
+        4,
+        4,
+        12,
+        12
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/effects/bubble_001.png",
+      "bounds": [
+        4,
+        3,
+        12,
+        12
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/effects/bubble_002.png",
+      "bounds": [
+        2,
+        2,
+        13,
+        13
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/effects/bubble_003.png",
+      "bounds": [
+        3,
+        3,
+        13,
+        13
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/effects/ash_cloud_000.png",
+      "bounds": [
+        81,
+        49,
+        118,
+        90
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/effects/ash_cloud_001.png",
+      "bounds": [
+        64,
+        30,
+        131,
+        106
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/effects/ash_cloud_002.png",
+      "bounds": [
+        62,
+        27,
+        128,
+        106
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/effects/ash_cloud_003.png",
+      "bounds": [
+        66,
+        39,
+        113,
+        97
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/ground/dried_mud_edge_N_0.png",
+      "bounds": [
+        0,
+        8,
+        32,
+        32
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/ground/dried_mud_edge_N_1.png",
+      "bounds": [
+        0,
+        8,
+        32,
+        32
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/ground/dried_mud_edge_N_2.png",
+      "bounds": [
+        0,
+        8,
+        32,
+        32
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/ground/dried_mud_edge_N_3.png",
+      "bounds": [
+        0,
+        8,
+        32,
+        32
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/ground/basalt_crossing_0.png",
+      "bounds": [
+        31,
+        69,
+        222,
+        171
+      ],
+      "errors": []
+    },
+    {
+      "path": "assets/ground/basalt_crossing_1.png",
+      "bounds": [
+        22,
+        71,
+        218,
+        172
+      ],
+      "errors": []
+    }
+  ]
+}

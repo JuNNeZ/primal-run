@@ -1,5 +1,14 @@
 # Grafiske opgaver efter del A
 
+## Opdatering · godkendt presentation-art
+
+B1b basaltpassager, B1c bobler/askesky, B2 sol/måne og B5 allieretmarkør er nu
+integreret fra den godkendte pakke. B4 bruger de fire godkendte nordkanter;
+andre orienteringer mangler fortsat. Native atlas er bygget for alle aktive
+sprites. Se [PRESENTATION_AND_ATLAS.md](PRESENTATION_AND_ATLAS.md) for status,
+godkendelseshashes, fallbacks og tests. Tabellen nedenfor beskriver den tidligere
+placeholder og de øvrige åbne ønsker.
+
 A1–A5 har nu integrerede **prototyper**. Produktionsgodkendelse og den samlede
 slutverifikation mangler; se `SPRITES_AND_MECHANICS_STATUS.md`.
 
