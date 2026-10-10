@@ -1,0 +1,30 @@
+{
+  "prompt": "Edit this exact pachycephalosaurus atlas minimally into a quiet SCRATCH/GROOM pair. One hindfoot briefly lifts against its own chest/flank to groom. Supporting leg planted, two arms unchanged. Exactly2hindlegs plus2arms. Preserve dome for Pachy and slender beak/neck for Gallimimus. Column0 foot raised toward its own body, column1 foot rubbing same spot a few pixels away. Closed mouth, calm head/neck tilts slightly, never a bite/attack. Keep torso, tail, markings, camera and all body pixels as faithful as possible to source; body volume cannot grow or shrink. Output exactly1536x1024 transparent same TWO columns768wide FOUR rows256high S,N,E,W. Fixed hip local384,128. Keep existing TWO TIMES native animal size and original blank space; never fill cells. Use small readable pixel movement only, preserve colour placement. No labels/shadows/ground. One tail, original limb count. 1990s overhead oblique pixel art. No scaling or recentering of animal.",
+  "source": "pachycephalosaurus_revision1.png",
+  "references": [
+    "pachycephalosaurus_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration.",
+  "source_sha256": "809459ca7f8eded47acc2a666a262dccf8f5c989b72fdbb8cd35cd92b28c6759",
+  "canonical_references": [
+    {
+      "file": "assets/player_full/pachycephalosaurus_idle_S_000.png",
+      "sha256": "db81852982947c41754c08df608673e82437258eae60470ea00203ac8760fc50"
+    },
+    {
+      "file": "assets/player_full/pachycephalosaurus_idle_N_000.png",
+      "sha256": "11b4cd288d2753e99126c361f1dc96716478e7c52f3dbcd88a98503fd5884958"
+    },
+    {
+      "file": "assets/player_full/pachycephalosaurus_idle_E_000.png",
+      "sha256": "662a12b42ee25b638af54d113af05882765598857ab1370e50a9300ca00b18c3"
+    },
+    {
+      "file": "assets/player_full/pachycephalosaurus_idle_W_000.png",
+      "sha256": "357408c5df221b05d00c71f5a0134537f4dff0668faecc9819a33125d112f29d"
+    }
+  ]
+}

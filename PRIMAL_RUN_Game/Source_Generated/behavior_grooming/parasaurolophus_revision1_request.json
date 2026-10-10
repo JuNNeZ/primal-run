@@ -1,0 +1,30 @@
+{
+  "prompt": "Edit this exact parasaurolophus atlas minimally into a quiet SCRATCH/GROOM pair. One hindfoot lifts a little to scratch its own flank; short forelimbs planted and backward crest unchanged. No extra leg pair. Column0 foot raised toward its own body, column1 foot rubbing same spot a few pixels away. Closed mouth, calm head/neck tilts slightly, never a bite/attack. Keep torso, tail, markings, camera and all body pixels as faithful as possible to source; body volume cannot grow or shrink. Output exactly1536x1024 transparent same TWO columns768wide FOUR rows256high S,N,E,W. Fixed hip local384,128. Keep existing TWO TIMES native animal size and original blank space; never fill cells. Use small readable pixel movement only, preserve colour placement. No labels/shadows/ground. One tail, original limb count. 1990s overhead oblique pixel art. No scaling or recentering of animal.",
+  "source": "parasaurolophus_revision1.png",
+  "references": [
+    "parasaurolophus_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration.",
+  "source_sha256": "e3ca4c7b942a6c394d00dfe2846cde2154d2acc57c47abc2a5f204b192801d25",
+  "canonical_references": [
+    {
+      "file": "assets/enemy_full/parasaurolophus_idle_S_000.png",
+      "sha256": "cf3086b22fd684a306e9b4c33d25046adff0c3cc11abbfc2adde10d01acee660"
+    },
+    {
+      "file": "assets/enemy_full/parasaurolophus_idle_N_000.png",
+      "sha256": "482c79c8f8d49fd954dc8946ced76629bf26ebf5a06e690a20bcebb152fe906d"
+    },
+    {
+      "file": "assets/enemy_full/parasaurolophus_idle_E_000.png",
+      "sha256": "b59c9ff6566f22bc06a497311f3e8c725f509126b5e1d26902ed05d9399a6e14"
+    },
+    {
+      "file": "assets/enemy_full/parasaurolophus_idle_W_000.png",
+      "sha256": "c7bf1253defa03912c1b5aab422e19fcf8a3f7d0c823cd40fc2d2ec16937c9c0"
+    }
+  ]
+}

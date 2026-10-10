@@ -34,6 +34,10 @@ def build():
     fishing_overlay = GAME / 'fishing_manifest.json'
     if fishing_overlay.exists():
         manifest += json.loads(fishing_overlay.read_text())
+    for overlay_name in ('water_transition_manifest.json','behavior_manifest.json','injured_walk_manifest.json','native_behavior_manifest.json'):
+        overlay = GAME / overlay_name
+        if overlay.exists():
+            manifest += json.loads(overlay.read_text())
     corpse_overlay = GAME / 'corpse_manifest.json'
     if corpse_overlay.exists():
         manifest += json.loads(corpse_overlay.read_text())
@@ -86,7 +90,7 @@ def build():
         animations['animations'] += json.loads(enemy_full.read_text())['animations']
         animations['enemy_full_frame_plan'] = 'idle4/walk6/run6/attack6/hurt2/death6 in separately drawn cardinal directions; shared playable sets for Compy, Carnotaurus and Ankylosaurus.'
         (GAME / 'animation_manifest.json').write_text(json.dumps(animations, indent=2)+'\n')
-    assets = {entry['file']: {'origin': entry['origin'], 'size': entry['size']} for entry in manifest}
+    assets = {entry['file']: {'origin': entry['origin'], 'size': entry['size'], **({'runtime_enabled':entry['runtime_enabled']} if 'runtime_enabled' in entry else {})} for entry in manifest}
     asset_code = 'globalThis.PrimalAssets = ' + json.dumps(assets, ensure_ascii=False, separators=(',', ':')) + ';\n'
     (GAME / 'src/assets.js').write_text(asset_code, encoding='utf-8')
     sources = ['src/core.js', 'src/i18n.js', 'src/lang.js', 'src/assets.js', 'src/audio.js', 'src/app.js']

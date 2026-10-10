@@ -1,0 +1,1780 @@
+{
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "scope": "REJECTED revision1 only: 104 drawn keyposes compared with canonical walk2/3 under strict foot-pixel-preservation gate; revision2 runtime prototypes are evaluated separately in INJURED_WALK_VALIDATION.json",
+  "count": 104,
+  "geometry_pass": 0,
+  "runtime_enabled": 0,
+  "records": [
+    {
+      "species": "ankylosaurus",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/ankylosaurus_limp_S_002.png",
+      "canonical": "assets/player_full/ankylosaurus_walk_S_002.png",
+      "canonical_sha256": "1778f843027c6db3ddcc283f29c102052943fa110bee544e03fe26c626055dec",
+      "silhouette_iou": 0.4794,
+      "extent_ratio": [
+        1.2353,
+        1.2667
+      ],
+      "changed_pixels": 4316,
+      "foot_edit_budget": 332,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/ankylosaurus_limp_S_003.png",
+      "canonical": "assets/player_full/ankylosaurus_walk_S_003.png",
+      "canonical_sha256": "820af4fa5041672a1a7e9bf79dd4e461ea5590ef76d5bd7233aac2220f7a23c7",
+      "silhouette_iou": 0.4036,
+      "extent_ratio": [
+        1.2353,
+        1.2527
+      ],
+      "changed_pixels": 4750,
+      "foot_edit_budget": 327,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/ankylosaurus_limp_N_002.png",
+      "canonical": "assets/player_full/ankylosaurus_walk_N_002.png",
+      "canonical_sha256": "2dc831066716154da94d5415852c3a41e04b578b7c79d0157c183b2772f72e16",
+      "silhouette_iou": 0.3523,
+      "extent_ratio": [
+        1.1509,
+        1.117
+      ],
+      "changed_pixels": 4799,
+      "foot_edit_budget": 332,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/ankylosaurus_limp_N_003.png",
+      "canonical": "assets/player_full/ankylosaurus_walk_N_003.png",
+      "canonical_sha256": "d6cbd14d321e62116f04c2fd86246c56327ffbe1be8a6346c5b5f4da8f02d11c",
+      "silhouette_iou": 0.3583,
+      "extent_ratio": [
+        1.1887,
+        1.0938
+      ],
+      "changed_pixels": 4865,
+      "foot_edit_budget": 338,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/ankylosaurus_limp_E_002.png",
+      "canonical": "assets/player_full/ankylosaurus_walk_E_002.png",
+      "canonical_sha256": "ae3627f2e1df6ee60a6a4f72230e8321ccf85c8d9455dfe1263f5d7f552a3b98",
+      "silhouette_iou": 0.4076,
+      "extent_ratio": [
+        0.8125,
+        0.8269
+      ],
+      "changed_pixels": 3245,
+      "foot_edit_budget": 363,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/ankylosaurus_limp_E_003.png",
+      "canonical": "assets/player_full/ankylosaurus_walk_E_003.png",
+      "canonical_sha256": "45afef9caad5c183ae29e1b105fe93653412123a067681df4ce14c28cedea028",
+      "silhouette_iou": 0.3915,
+      "extent_ratio": [
+        0.8125,
+        0.86
+      ],
+      "changed_pixels": 3308,
+      "foot_edit_budget": 361,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/ankylosaurus_limp_W_002.png",
+      "canonical": "assets/player_full/ankylosaurus_walk_W_002.png",
+      "canonical_sha256": "bf1b15084e8d73e8a911d4295d55d427d1a6541aae62630ebe6f5a9014c29103",
+      "silhouette_iou": 0.3036,
+      "extent_ratio": [
+        0.8491,
+        0.8298
+      ],
+      "changed_pixels": 3114,
+      "foot_edit_budget": 294,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/ankylosaurus_limp_W_003.png",
+      "canonical": "assets/player_full/ankylosaurus_walk_W_003.png",
+      "canonical_sha256": "fdb8c7782af5b0b0d68df2cddf4a0db13631ef87e39bd584cd4e2b9fe6d0a271",
+      "silhouette_iou": 0.3328,
+      "extent_ratio": [
+        0.8667,
+        0.8511
+      ],
+      "changed_pixels": 2939,
+      "foot_edit_budget": 284,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "baryonyx",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/baryonyx_limp_S_002.png",
+      "canonical": "assets/player_full/baryonyx_walk_S_002.png",
+      "canonical_sha256": "7b6a636045a4c9a3da9d7e84a0daf0dfdea49b9c9143aeaa3f6dd70087d90ccf",
+      "silhouette_iou": 0.5915,
+      "extent_ratio": [
+        1.0476,
+        1.051
+      ],
+      "changed_pixels": 2569,
+      "foot_edit_budget": 254,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "baryonyx",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/baryonyx_limp_S_003.png",
+      "canonical": "assets/player_full/baryonyx_walk_S_003.png",
+      "canonical_sha256": "b4e570041dae6260e085de6f265f43abc9560f5be546a83b1fa96ec222052c81",
+      "silhouette_iou": 0.3792,
+      "extent_ratio": [
+        1.0476,
+        1.05
+      ],
+      "changed_pixels": 3130,
+      "foot_edit_budget": 259,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "baryonyx",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/baryonyx_limp_N_002.png",
+      "canonical": "assets/player_full/baryonyx_walk_N_002.png",
+      "canonical_sha256": "bb7269cb7b044ca399d0e09ede4a1a4de6ddc072598bde872db007993686bb74",
+      "silhouette_iou": 0.516,
+      "extent_ratio": [
+        1.1667,
+        1.1224
+      ],
+      "changed_pixels": 3080,
+      "foot_edit_budget": 254,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "baryonyx",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/baryonyx_limp_N_003.png",
+      "canonical": "assets/player_full/baryonyx_walk_N_003.png",
+      "canonical_sha256": "bd6dcd80ca73db36378bc5c94399300a2ff8df37a8536c14a9b04d6040e8eaa0",
+      "silhouette_iou": 0.3624,
+      "extent_ratio": [
+        1.2381,
+        1.15
+      ],
+      "changed_pixels": 3626,
+      "foot_edit_budget": 259,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "baryonyx",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/baryonyx_limp_E_002.png",
+      "canonical": "assets/player_full/baryonyx_walk_E_002.png",
+      "canonical_sha256": "d37ff934e3495cfc12f9b3e317dbbff0d5daa3cd730d2be5b0b2116808d54698",
+      "silhouette_iou": 0.2724,
+      "extent_ratio": [
+        0.7581,
+        0.6727
+      ],
+      "changed_pixels": 3195,
+      "foot_edit_budget": 336,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "baryonyx",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/baryonyx_limp_E_003.png",
+      "canonical": "assets/player_full/baryonyx_walk_E_003.png",
+      "canonical_sha256": "a672af1155a8392fb372cd3994d7662248152fb2972adfd0e358fa1b4bc6cc76",
+      "silhouette_iou": 0.3084,
+      "extent_ratio": [
+        0.7402,
+        0.8222
+      ],
+      "changed_pixels": 3134,
+      "foot_edit_budget": 337,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "baryonyx",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/baryonyx_limp_W_002.png",
+      "canonical": "assets/player_full/baryonyx_walk_W_002.png",
+      "canonical_sha256": "ee2c22f12aab93cbcb444ff8926bcfb637c74005e61ba36663de717b10024dbd",
+      "silhouette_iou": 0.2376,
+      "extent_ratio": [
+        0.7623,
+        0.6364
+      ],
+      "changed_pixels": 3262,
+      "foot_edit_budget": 320,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "baryonyx",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/baryonyx_limp_W_003.png",
+      "canonical": "assets/player_full/baryonyx_walk_W_003.png",
+      "canonical_sha256": "7dec942784a2b44cfab34a829549039cb017bf0e818e98a688ee195c924cfee4",
+      "silhouette_iou": 0.2433,
+      "extent_ratio": [
+        0.7459,
+        0.7059
+      ],
+      "changed_pixels": 3168,
+      "foot_edit_budget": 311,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/carnotaurus_limp_S_002.png",
+      "canonical": "assets/player_full/carnotaurus_walk_S_002.png",
+      "canonical_sha256": "7911363eb5109870c44e461b6bac0c773c2ad4be624a17a9b26557c744de6681",
+      "silhouette_iou": 0.6071,
+      "extent_ratio": [
+        1.2143,
+        1.172
+      ],
+      "changed_pixels": 2766,
+      "foot_edit_budget": 258,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/carnotaurus_limp_S_003.png",
+      "canonical": "assets/player_full/carnotaurus_walk_S_003.png",
+      "canonical_sha256": "b581b62a3ff78f20de1a2f296caeed2358cd84dffa031960a3210d0d0a62f94c",
+      "silhouette_iou": 0.5678,
+      "extent_ratio": [
+        1.1905,
+        1.1579
+      ],
+      "changed_pixels": 2849,
+      "foot_edit_budget": 257,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/carnotaurus_limp_N_002.png",
+      "canonical": "assets/player_full/carnotaurus_walk_N_002.png",
+      "canonical_sha256": "f9c652b65d76daed0e3fd8788b76597abc73689ea161caf100035424e5c27e35",
+      "silhouette_iou": 0.4239,
+      "extent_ratio": [
+        1.3529,
+        1.2366
+      ],
+      "changed_pixels": 3207,
+      "foot_edit_budget": 219,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/carnotaurus_limp_N_003.png",
+      "canonical": "assets/player_full/carnotaurus_walk_N_003.png",
+      "canonical_sha256": "0c0faaf38a70ccae8e2b5c7efc899c48f6ca8446691dd8a450b51eff8548e2f3",
+      "silhouette_iou": 0.409,
+      "extent_ratio": [
+        1.4118,
+        1.2128
+      ],
+      "changed_pixels": 3332,
+      "foot_edit_budget": 221,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/carnotaurus_limp_E_002.png",
+      "canonical": "assets/player_full/carnotaurus_walk_E_002.png",
+      "canonical_sha256": "e88f85012dcbcd358f3140e87c8786d5af53dad42d24084f071c829ec0255a19",
+      "silhouette_iou": 0.3978,
+      "extent_ratio": [
+        0.8898,
+        0.82
+      ],
+      "changed_pixels": 2661,
+      "foot_edit_budget": 276,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/carnotaurus_limp_E_003.png",
+      "canonical": "assets/player_full/carnotaurus_walk_E_003.png",
+      "canonical_sha256": "855415577f055f8641518378e6951c9568654bf3170a07ac2b43a72125df01ec",
+      "silhouette_iou": 0.3825,
+      "extent_ratio": [
+        0.8632,
+        0.8367
+      ],
+      "changed_pixels": 2645,
+      "foot_edit_budget": 271,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/carnotaurus_limp_W_002.png",
+      "canonical": "assets/player_full/carnotaurus_walk_W_002.png",
+      "canonical_sha256": "dd52659d0767342384b67d92ba4019390357eeecd8c933d6f606e453acb71d67",
+      "silhouette_iou": 0.2114,
+      "extent_ratio": [
+        0.8319,
+        0.7321
+      ],
+      "changed_pixels": 3260,
+      "foot_edit_budget": 297,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/carnotaurus_limp_W_003.png",
+      "canonical": "assets/player_full/carnotaurus_walk_W_003.png",
+      "canonical_sha256": "2f91057fd6f9a716679b703ffffe945bf92004e5cc6eb55a32c6526db5a82817",
+      "silhouette_iou": 0.1832,
+      "extent_ratio": [
+        0.8291,
+        0.6833
+      ],
+      "changed_pixels": 3383,
+      "foot_edit_budget": 302,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "compy",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/compy_limp_S_002.png",
+      "canonical": "assets/player_full/compy_walk_S_002.png",
+      "canonical_sha256": "02f01e9192c1760285d864f30adc989b60ecc9c91d4c20b5e7db917f10b7da01",
+      "silhouette_iou": 0.3776,
+      "extent_ratio": [
+        0.875,
+        0.619
+      ],
+      "changed_pixels": 91,
+      "foot_edit_budget": 16,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "compy",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/compy_limp_S_003.png",
+      "canonical": "assets/player_full/compy_walk_S_003.png",
+      "canonical_sha256": "b8a60fbb7c0d31f619dd99eec07cee7fa6aefd8a56f4f6528efcede8428d0e42",
+      "silhouette_iou": 0.4831,
+      "extent_ratio": [
+        1.0,
+        0.619
+      ],
+      "changed_pixels": 84,
+      "foot_edit_budget": 16,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "compy",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/compy_limp_N_002.png",
+      "canonical": "assets/player_full/compy_walk_N_002.png",
+      "canonical_sha256": "3fd6060752f42329ebf6b6a85b46f9afd72220f94ab451aafb5a560f107dda08",
+      "silhouette_iou": 0.7283,
+      "extent_ratio": [
+        0.8889,
+        0.9
+      ],
+      "changed_pixels": 79,
+      "foot_edit_budget": 16,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "compy",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/compy_limp_N_003.png",
+      "canonical": "assets/player_full/compy_walk_N_003.png",
+      "canonical_sha256": "bab7438bfc76c89e49db140b3395b4f94b91fd13bc326c33df5b6b406e5d057b",
+      "silhouette_iou": 0.7363,
+      "extent_ratio": [
+        0.875,
+        0.8095
+      ],
+      "changed_pixels": 77,
+      "foot_edit_budget": 16,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "compy",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/compy_limp_E_002.png",
+      "canonical": "assets/player_full/compy_walk_E_002.png",
+      "canonical_sha256": "1ccb3483675d784227630ef39f21e00746cb872585e2f35dc042cfab2c725d7b",
+      "silhouette_iou": 0.0722,
+      "extent_ratio": [
+        0.9259,
+        1.3636
+      ],
+      "changed_pixels": 178,
+      "foot_edit_budget": 16,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "compy",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/compy_limp_E_003.png",
+      "canonical": "assets/player_full/compy_walk_E_003.png",
+      "canonical_sha256": "4b87eb6e75ffdb1759a6f870a6b7122e6544322c38955805c1ddb487c8527564",
+      "silhouette_iou": 0.0652,
+      "extent_ratio": [
+        0.8519,
+        1.3
+      ],
+      "changed_pixels": 183,
+      "foot_edit_budget": 16,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "compy",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/compy_limp_W_002.png",
+      "canonical": "assets/player_full/compy_walk_W_002.png",
+      "canonical_sha256": "62ee38d86ea690edc2639a713ad43b7b444001fd3bc98a2bd868f080eacd5a12",
+      "silhouette_iou": 0.0,
+      "extent_ratio": [
+        0.8148,
+        1.0
+      ],
+      "changed_pixels": 164,
+      "foot_edit_budget": 16,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "compy",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/compy_limp_W_003.png",
+      "canonical": "assets/player_full/compy_walk_W_003.png",
+      "canonical_sha256": "84f4b85123e2f7abab92853c684ad16340d9ba2f697616a88bbd75d1c561ce95",
+      "silhouette_iou": 0.0,
+      "extent_ratio": [
+        0.7778,
+        1.0909
+      ],
+      "changed_pixels": 163,
+      "foot_edit_budget": 16,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinonychus",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/deinonychus_limp_S_002.png",
+      "canonical": "assets/player_full/deinonychus_walk_S_002.png",
+      "canonical_sha256": "df3d944ae3b36507a4b23fc4c8b3ffda0f61580f4dfcac8297ebad157dc7a754",
+      "silhouette_iou": 0.4492,
+      "extent_ratio": [
+        1.6,
+        1.3404
+      ],
+      "changed_pixels": 1302,
+      "foot_edit_budget": 83,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinonychus",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/deinonychus_limp_S_003.png",
+      "canonical": "assets/player_full/deinonychus_walk_S_003.png",
+      "canonical_sha256": "a8f9b1d37eeb385ff8fd631491674515b58518921c1e4ca94addb3150089d0f7",
+      "silhouette_iou": 0.3571,
+      "extent_ratio": [
+        1.3929,
+        1.3617
+      ],
+      "changed_pixels": 1382,
+      "foot_edit_budget": 79,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinonychus",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/deinonychus_limp_N_002.png",
+      "canonical": "assets/player_full/deinonychus_walk_N_002.png",
+      "canonical_sha256": "b50ac58fec999b978e552151348da4928a7ee11bdb44bfa2280be1be57e8c5db",
+      "silhouette_iou": 0.2795,
+      "extent_ratio": [
+        1.55,
+        1.3696
+      ],
+      "changed_pixels": 1222,
+      "foot_edit_budget": 60,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinonychus",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/deinonychus_limp_N_003.png",
+      "canonical": "assets/player_full/deinonychus_walk_N_003.png",
+      "canonical_sha256": "2c6968b5352d30b74d17640e4c1e733b19ab5ee120fedb16ef4ca744bcdd93b6",
+      "silhouette_iou": 0.3047,
+      "extent_ratio": [
+        1.6,
+        1.3696
+      ],
+      "changed_pixels": 1193,
+      "foot_edit_budget": 61,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinonychus",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/deinonychus_limp_E_002.png",
+      "canonical": "assets/player_full/deinonychus_walk_E_002.png",
+      "canonical_sha256": "8b45a4e2e0487b4dfb0675b70b4c5dfd4dc1701258b166f6ed86d471160013cb",
+      "silhouette_iou": 0.5075,
+      "extent_ratio": [
+        1.3103,
+        1.4242
+      ],
+      "changed_pixels": 1320,
+      "foot_edit_budget": 95,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinonychus",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/deinonychus_limp_E_003.png",
+      "canonical": "assets/player_full/deinonychus_walk_E_003.png",
+      "canonical_sha256": "768b5f88361be956bdf6dc9a265f51db646bb6418294004792a147eefaf6fc09",
+      "silhouette_iou": 0.5051,
+      "extent_ratio": [
+        1.3333,
+        1.2286
+      ],
+      "changed_pixels": 1341,
+      "foot_edit_budget": 95,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinonychus",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/deinonychus_limp_W_002.png",
+      "canonical": "assets/player_full/deinonychus_walk_W_002.png",
+      "canonical_sha256": "ad5f5b0ade898cf96f6ccbb8f6edfa13588f85aa7ca1a72bb55513d08729bb57",
+      "silhouette_iou": 0.0903,
+      "extent_ratio": [
+        1.4,
+        1.1026
+      ],
+      "changed_pixels": 1918,
+      "foot_edit_budget": 95,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinonychus",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/deinonychus_limp_W_003.png",
+      "canonical": "assets/player_full/deinonychus_walk_W_003.png",
+      "canonical_sha256": "013b88e1ead0da58111f83294b3abb7b3ddd88cb8c27cd25f3a6f340a29fab9d",
+      "silhouette_iou": 0.0868,
+      "extent_ratio": [
+        1.3621,
+        1.1667
+      ],
+      "changed_pixels": 2012,
+      "foot_edit_budget": 100,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/deinosuchus_limp_S_002.png",
+      "canonical": "assets/enemy_full/deinosuchus_walk_S_002.png",
+      "canonical_sha256": "1a9f1eb444884e2a824ef3a2d6ce39d6cece14790a7f3a1663a2488ada79feb5",
+      "silhouette_iou": 0.6753,
+      "extent_ratio": [
+        1.2759,
+        1.1579
+      ],
+      "changed_pixels": 3340,
+      "foot_edit_budget": 361,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/deinosuchus_limp_S_003.png",
+      "canonical": "assets/enemy_full/deinosuchus_walk_S_003.png",
+      "canonical_sha256": "f4f92a458bdba8ef1e0ecfc91b8d1aa5494c545e18f81db92790f8728d465381",
+      "silhouette_iou": 0.6411,
+      "extent_ratio": [
+        1.1406,
+        1.0938
+      ],
+      "changed_pixels": 3330,
+      "foot_edit_budget": 343,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/deinosuchus_limp_N_002.png",
+      "canonical": "assets/enemy_full/deinosuchus_walk_N_002.png",
+      "canonical_sha256": "2e43d1341d09cade55a16909eb7f942974fcceb3a801e9df956dbedc705d3791",
+      "silhouette_iou": 0.4913,
+      "extent_ratio": [
+        1.2407,
+        1.2316
+      ],
+      "changed_pixels": 3307,
+      "foot_edit_budget": 264,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/deinosuchus_limp_N_003.png",
+      "canonical": "assets/enemy_full/deinosuchus_walk_N_003.png",
+      "canonical_sha256": "442a19c6c304dfcb2269078fed9eaae83fd76317cee70b5f3f7c9e41d8d4924d",
+      "silhouette_iou": 0.5212,
+      "extent_ratio": [
+        1.2745,
+        1.2234
+      ],
+      "changed_pixels": 3262,
+      "foot_edit_budget": 268,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/deinosuchus_limp_E_002.png",
+      "canonical": "assets/enemy_full/deinosuchus_walk_E_002.png",
+      "canonical_sha256": "50d200ddde9f64ba5990faf0290d65d2b36d45c4a2404a4bb45e414c1ba39a23",
+      "silhouette_iou": 0.4504,
+      "extent_ratio": [
+        0.9032,
+        0.7213
+      ],
+      "changed_pixels": 3695,
+      "foot_edit_budget": 427,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/deinosuchus_limp_E_003.png",
+      "canonical": "assets/enemy_full/deinosuchus_walk_E_003.png",
+      "canonical_sha256": "84922ef638a823de7b3b649c1ceacbb64bbfa2b01e7d2d169afb28c288d60d13",
+      "silhouette_iou": 0.4293,
+      "extent_ratio": [
+        0.8689,
+        0.6615
+      ],
+      "changed_pixels": 3661,
+      "foot_edit_budget": 419,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/deinosuchus_limp_W_002.png",
+      "canonical": "assets/enemy_full/deinosuchus_walk_W_002.png",
+      "canonical_sha256": "69aa07a09e5936b1bd562c275c954545cf44c2a5b53312dcd483e58433f1a9ce",
+      "silhouette_iou": 0.3184,
+      "extent_ratio": [
+        0.8584,
+        0.746
+      ],
+      "changed_pixels": 3891,
+      "foot_edit_budget": 397,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/deinosuchus_limp_W_003.png",
+      "canonical": "assets/enemy_full/deinosuchus_walk_W_003.png",
+      "canonical_sha256": "58f97cb1c69e05dea4dc644e1ef0d19d2dfb70e64e6c3b50c2b559f6c5bb6533",
+      "silhouette_iou": 0.3228,
+      "extent_ratio": [
+        0.8475,
+        0.7059
+      ],
+      "changed_pixels": 4159,
+      "foot_edit_budget": 422,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/gallimimus_limp_S_002.png",
+      "canonical": "assets/player_full/gallimimus_walk_S_002.png",
+      "canonical_sha256": "e0d59a448a23bf00e5594dcd8e58c301d92a70bde651dd55b1fc8da54c1a7e10",
+      "silhouette_iou": 0.711,
+      "extent_ratio": [
+        1.1429,
+        1.1196
+      ],
+      "changed_pixels": 1837,
+      "foot_edit_budget": 198,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/gallimimus_limp_S_003.png",
+      "canonical": "assets/player_full/gallimimus_walk_S_003.png",
+      "canonical_sha256": "f8c2d04dac02584cc69b43bf9d0edde04c1e8d7440d158c9826c1cb028467bda",
+      "silhouette_iou": 0.6447,
+      "extent_ratio": [
+        1.0857,
+        0.9794
+      ],
+      "changed_pixels": 1968,
+      "foot_edit_budget": 201,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/gallimimus_limp_N_002.png",
+      "canonical": "assets/player_full/gallimimus_walk_N_002.png",
+      "canonical_sha256": "99e4dbcf39452a44b8b16f363d81f5bdeddfbe40123ab29ac1f4c3235d3fb3d5",
+      "silhouette_iou": 0.5553,
+      "extent_ratio": [
+        1.1316,
+        1.1915
+      ],
+      "changed_pixels": 2379,
+      "foot_edit_budget": 209,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/gallimimus_limp_N_003.png",
+      "canonical": "assets/player_full/gallimimus_walk_N_003.png",
+      "canonical_sha256": "b7c9c119b4419bcc9f58506b274b40648241ebffd604842eda5bd2a65fd3b4fc",
+      "silhouette_iou": 0.5006,
+      "extent_ratio": [
+        1.1622,
+        1.0538
+      ],
+      "changed_pixels": 2462,
+      "foot_edit_budget": 202,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/gallimimus_limp_E_002.png",
+      "canonical": "assets/player_full/gallimimus_walk_E_002.png",
+      "canonical_sha256": "d7aaf7446db7badd87a218b1cd7616527f81c7811db7230d49fe3bb8cc25a82d",
+      "silhouette_iou": 0.222,
+      "extent_ratio": [
+        1.075,
+        1.1224
+      ],
+      "changed_pixels": 4011,
+      "foot_edit_budget": 271,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/gallimimus_limp_E_003.png",
+      "canonical": "assets/player_full/gallimimus_walk_E_003.png",
+      "canonical_sha256": "519951f3d28b31b547824768f662b7012618217add860bae72a5c4000baad98d",
+      "silhouette_iou": 0.2379,
+      "extent_ratio": [
+        1.0932,
+        1.0851
+      ],
+      "changed_pixels": 3990,
+      "foot_edit_budget": 274,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/gallimimus_limp_W_002.png",
+      "canonical": "assets/player_full/gallimimus_walk_W_002.png",
+      "canonical_sha256": "1227a2c2fc29c26676bd7d6ec62f6a5573aaea0baa8ba410842dbc0c8e51507f",
+      "silhouette_iou": 0.2136,
+      "extent_ratio": [
+        1.0763,
+        1.16
+      ],
+      "changed_pixels": 4082,
+      "foot_edit_budget": 269,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "gallimimus",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/gallimimus_limp_W_003.png",
+      "canonical": "assets/player_full/gallimimus_walk_W_003.png",
+      "canonical_sha256": "ac0caa8421bee9f7949002ed020f0422b3710ffedcee74c0056a6f4027601ed5",
+      "silhouette_iou": 0.2366,
+      "extent_ratio": [
+        1.0992,
+        1.0612
+      ],
+      "changed_pixels": 4066,
+      "foot_edit_budget": 274,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/pachycephalosaurus_limp_S_002.png",
+      "canonical": "assets/player_full/pachycephalosaurus_walk_S_002.png",
+      "canonical_sha256": "53c917dc874d9c0babcbe5870ac28b8486cb4cf59e1f4a3a8a76b0536f24e62a",
+      "silhouette_iou": 0.6099,
+      "extent_ratio": [
+        1.2381,
+        1.1522
+      ],
+      "changed_pixels": 3045,
+      "foot_edit_budget": 263,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/pachycephalosaurus_limp_S_003.png",
+      "canonical": "assets/player_full/pachycephalosaurus_walk_S_003.png",
+      "canonical_sha256": "fbc424d3093d3632d9644a33b16f9209ecefcc9494c5466ebc185b0b78a5e7aa",
+      "silhouette_iou": 0.5711,
+      "extent_ratio": [
+        1.1951,
+        1.236
+      ],
+      "changed_pixels": 3087,
+      "foot_edit_budget": 254,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/pachycephalosaurus_limp_N_002.png",
+      "canonical": "assets/player_full/pachycephalosaurus_walk_N_002.png",
+      "canonical_sha256": "0971d59f8e27de2b83279ddcda78e1955e345c8153019be1d7ca37c16a4da17a",
+      "silhouette_iou": 0.4405,
+      "extent_ratio": [
+        1.2683,
+        1.2045
+      ],
+      "changed_pixels": 3525,
+      "foot_edit_budget": 250,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/pachycephalosaurus_limp_N_003.png",
+      "canonical": "assets/player_full/pachycephalosaurus_walk_N_003.png",
+      "canonical_sha256": "111458073ffb919b2e05a0d620fe66385e5effe9a7d5257cc3be9af1ddae9339",
+      "silhouette_iou": 0.4267,
+      "extent_ratio": [
+        1.2439,
+        1.1758
+      ],
+      "changed_pixels": 3634,
+      "foot_edit_budget": 264,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/pachycephalosaurus_limp_E_002.png",
+      "canonical": "assets/player_full/pachycephalosaurus_walk_E_002.png",
+      "canonical_sha256": "8a410acba07492b7057381aa91ad49b117b0372a6b51a9bba44023406eae8c0b",
+      "silhouette_iou": 0.2294,
+      "extent_ratio": [
+        0.8018,
+        0.74
+      ],
+      "changed_pixels": 3397,
+      "foot_edit_budget": 308,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/pachycephalosaurus_limp_E_003.png",
+      "canonical": "assets/player_full/pachycephalosaurus_walk_E_003.png",
+      "canonical_sha256": "734cb4c81d732a9b9a3de9eb7f44f000ccf704f0a760ace6cbf58f3a5384a7fa",
+      "silhouette_iou": 0.2384,
+      "extent_ratio": [
+        0.8214,
+        0.6607
+      ],
+      "changed_pixels": 3396,
+      "foot_edit_budget": 311,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/pachycephalosaurus_limp_W_002.png",
+      "canonical": "assets/player_full/pachycephalosaurus_walk_W_002.png",
+      "canonical_sha256": "d37a5bb4d0bccb20912c6c121812284894c17cc2b4ab474f0fe2994228f5b71e",
+      "silhouette_iou": 0.5729,
+      "extent_ratio": [
+        0.7826,
+        0.7143
+      ],
+      "changed_pixels": 2768,
+      "foot_edit_budget": 343,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/pachycephalosaurus_limp_W_003.png",
+      "canonical": "assets/player_full/pachycephalosaurus_walk_W_003.png",
+      "canonical_sha256": "7434b22b79c8552adc97e6c7ad0c6eb25969abb1084cb1c2b907945d54363da1",
+      "silhouette_iou": 0.5768,
+      "extent_ratio": [
+        0.7627,
+        0.6607
+      ],
+      "changed_pixels": 2830,
+      "foot_edit_budget": 354,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/parasaurolophus_limp_S_002.png",
+      "canonical": "assets/enemy_full/parasaurolophus_walk_S_002.png",
+      "canonical_sha256": "e6b64af06e3a3e7913597d0c5ab6a53e3d3a563e663a9969a7b14ecb27e33626",
+      "silhouette_iou": 0.5973,
+      "extent_ratio": [
+        1.0238,
+        0.7731
+      ],
+      "changed_pixels": 2764,
+      "foot_edit_budget": 320,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/parasaurolophus_limp_S_003.png",
+      "canonical": "assets/enemy_full/parasaurolophus_walk_S_003.png",
+      "canonical_sha256": "593c094a9cd164a6c6c6255b1b2aabc203e0e68b0c1cc9e1c06a11d951cdd09b",
+      "silhouette_iou": 0.5634,
+      "extent_ratio": [
+        1.0,
+        0.7479
+      ],
+      "changed_pixels": 2862,
+      "foot_edit_budget": 317,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/parasaurolophus_limp_N_002.png",
+      "canonical": "assets/enemy_full/parasaurolophus_walk_N_002.png",
+      "canonical_sha256": "0b376dece3742b02d09bb1c4c34c41a5aabaa74318a9fc226f0a8020a8a32f36",
+      "silhouette_iou": 0.7369,
+      "extent_ratio": [
+        1.1892,
+        0.9789
+      ],
+      "changed_pixels": 2160,
+      "foot_edit_budget": 235,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/parasaurolophus_limp_N_003.png",
+      "canonical": "assets/enemy_full/parasaurolophus_walk_N_003.png",
+      "canonical_sha256": "e286f27ce6e57708e7e147a75cb7136a26674ab48ba8e3db9e366398889cd8e0",
+      "silhouette_iou": 0.6917,
+      "extent_ratio": [
+        1.1026,
+        1.0211
+      ],
+      "changed_pixels": 2175,
+      "foot_edit_budget": 220,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/parasaurolophus_limp_E_002.png",
+      "canonical": "assets/enemy_full/parasaurolophus_walk_E_002.png",
+      "canonical_sha256": "fe8cee423d2e6f5713bf76950c32720ca7327372d7d935855f21e0aa11dc074f",
+      "silhouette_iou": 0.3055,
+      "extent_ratio": [
+        1.1026,
+        1.2157
+      ],
+      "changed_pixels": 4490,
+      "foot_edit_budget": 318,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/parasaurolophus_limp_E_003.png",
+      "canonical": "assets/enemy_full/parasaurolophus_walk_E_003.png",
+      "canonical_sha256": "f41916b2d99e5dccbafe85ec4bb611b13472fddcf204b3e40d5c4836361b9669",
+      "silhouette_iou": 0.2813,
+      "extent_ratio": [
+        1.1913,
+        1.1176
+      ],
+      "changed_pixels": 4657,
+      "foot_edit_budget": 320,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/parasaurolophus_limp_W_002.png",
+      "canonical": "assets/enemy_full/parasaurolophus_walk_W_002.png",
+      "canonical_sha256": "70de04196f6f4fca4f60e5622121058f92ff17dd366b3dbf92dae7da688de267",
+      "silhouette_iou": 0.225,
+      "extent_ratio": [
+        1.1638,
+        0.9286
+      ],
+      "changed_pixels": 5574,
+      "foot_edit_budget": 398,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/parasaurolophus_limp_W_003.png",
+      "canonical": "assets/enemy_full/parasaurolophus_walk_W_003.png",
+      "canonical_sha256": "a6b4972378e16adff3d51cfe520e12ab4fdcdf36bd1ccb26595954f701bc2baa",
+      "silhouette_iou": 0.236,
+      "extent_ratio": [
+        1.1724,
+        0.9552
+      ],
+      "changed_pixels": 5403,
+      "foot_edit_budget": 396,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/triceratops_limp_S_002.png",
+      "canonical": "assets/enemy_full/triceratops_walk_S_002.png",
+      "canonical_sha256": "7991a4f295bbf27f6176a2e4e1ae87b92a91b0ce7a05a4f487ed47eff7485794",
+      "silhouette_iou": 0.6065,
+      "extent_ratio": [
+        1.3469,
+        1.2717
+      ],
+      "changed_pixels": 4193,
+      "foot_edit_budget": 356,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/triceratops_limp_S_003.png",
+      "canonical": "assets/enemy_full/triceratops_walk_S_003.png",
+      "canonical_sha256": "ad7ef2003216c130cfa3893907c32ce4e9af4371a60761051482df3b72761661",
+      "silhouette_iou": 0.4354,
+      "extent_ratio": [
+        1.4082,
+        1.3152
+      ],
+      "changed_pixels": 4966,
+      "foot_edit_budget": 350,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/triceratops_limp_N_002.png",
+      "canonical": "assets/enemy_full/triceratops_walk_N_002.png",
+      "canonical_sha256": "4e788f10d4fb6e286f21c72a60f95aa0ba6e8c2ac99170e2049ae7d9e4239532",
+      "silhouette_iou": 0.317,
+      "extent_ratio": [
+        1.5,
+        1.3021
+      ],
+      "changed_pixels": 5632,
+      "foot_edit_budget": 297,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/triceratops_limp_N_003.png",
+      "canonical": "assets/enemy_full/triceratops_walk_N_003.png",
+      "canonical_sha256": "e2006f4d89ce88217bd63ebbc85dafc7630187d14ec7a90db35a9a7d2ac6d095",
+      "silhouette_iou": 0.2909,
+      "extent_ratio": [
+        1.5116,
+        1.3021
+      ],
+      "changed_pixels": 5798,
+      "foot_edit_budget": 289,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/triceratops_limp_E_002.png",
+      "canonical": "assets/enemy_full/triceratops_walk_E_002.png",
+      "canonical_sha256": "b19e7985973d734b2ddb53f950ac027fcdf374a8f81420ff4aa6cb3dee37273f",
+      "silhouette_iou": 0.4058,
+      "extent_ratio": [
+        0.8462,
+        0.8095
+      ],
+      "changed_pixels": 4314,
+      "foot_edit_budget": 453,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/triceratops_limp_E_003.png",
+      "canonical": "assets/enemy_full/triceratops_walk_E_003.png",
+      "canonical_sha256": "1168d2fe5f497bfc5bcfdd89152b3b56d37b5aecc611adf10da81f372180521e",
+      "silhouette_iou": 0.4176,
+      "extent_ratio": [
+        0.819,
+        0.7576
+      ],
+      "changed_pixels": 4160,
+      "foot_edit_budget": 445,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/triceratops_limp_W_002.png",
+      "canonical": "assets/enemy_full/triceratops_walk_W_002.png",
+      "canonical_sha256": "fd4737ce977d1bdbc0aa14710246f806b90cb2a9d40104c15002486a8199abfd",
+      "silhouette_iou": 0.4217,
+      "extent_ratio": [
+        0.8621,
+        0.7794
+      ],
+      "changed_pixels": 4189,
+      "foot_edit_budget": 439,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "triceratops",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/triceratops_limp_W_003.png",
+      "canonical": "assets/enemy_full/triceratops_walk_W_003.png",
+      "canonical_sha256": "f8485e2ed0903a0325280da76beb129e665ba500db930c6a7aeebff007f07324",
+      "silhouette_iou": 0.4525,
+      "extent_ratio": [
+        0.8772,
+        0.7681
+      ],
+      "changed_pixels": 4058,
+      "foot_edit_budget": 433,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/tyrannosaurus_limp_S_002.png",
+      "canonical": "assets/enemy_full/tyrannosaurus_walk_S_002.png",
+      "canonical_sha256": "9e7756fdb404b201feccda7a336ac9f729b74c79c9564e395d2f392bf2208a05",
+      "silhouette_iou": 0.7172,
+      "extent_ratio": [
+        1.2143,
+        1.1319
+      ],
+      "changed_pixels": 2355,
+      "foot_edit_budget": 263,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/tyrannosaurus_limp_S_003.png",
+      "canonical": "assets/enemy_full/tyrannosaurus_walk_S_003.png",
+      "canonical_sha256": "dfcf5d2cb6a53c549b89cbbb347cf58064b62d56ea94efd067268bb535e5e872",
+      "silhouette_iou": 0.6596,
+      "extent_ratio": [
+        1.1905,
+        1.0889
+      ],
+      "changed_pixels": 2525,
+      "foot_edit_budget": 277,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/tyrannosaurus_limp_N_002.png",
+      "canonical": "assets/enemy_full/tyrannosaurus_walk_N_002.png",
+      "canonical_sha256": "0d696466462f7848872dd41bcded41b03f2319d66690ef3467635e37349dab5d",
+      "silhouette_iou": 0.5565,
+      "extent_ratio": [
+        1.1136,
+        1.1327
+      ],
+      "changed_pixels": 3197,
+      "foot_edit_budget": 316,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/tyrannosaurus_limp_N_003.png",
+      "canonical": "assets/enemy_full/tyrannosaurus_walk_N_003.png",
+      "canonical_sha256": "66a8c2ce49bda900e743f2a491d01c84f5497c0a2d7f5a8128cefb58f5968a56",
+      "silhouette_iou": 0.6554,
+      "extent_ratio": [
+        1.1395,
+        1.1429
+      ],
+      "changed_pixels": 2892,
+      "foot_edit_budget": 310,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/tyrannosaurus_limp_E_002.png",
+      "canonical": "assets/enemy_full/tyrannosaurus_walk_E_002.png",
+      "canonical_sha256": "a3cd7df75b8805584d7f836f6f0b0748575d013c9a5c574a1679d65ba94ef663",
+      "silhouette_iou": 0.6363,
+      "extent_ratio": [
+        0.8512,
+        0.9107
+      ],
+      "changed_pixels": 2986,
+      "foot_edit_budget": 378,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/tyrannosaurus_limp_E_003.png",
+      "canonical": "assets/enemy_full/tyrannosaurus_walk_E_003.png",
+      "canonical_sha256": "e7ae4e935c0ee597cc8800b5dd779b80f3c47712b8138b3d1ed1b20c6d454e99",
+      "silhouette_iou": 0.6555,
+      "extent_ratio": [
+        0.8729,
+        0.85
+      ],
+      "changed_pixels": 2900,
+      "foot_edit_budget": 374,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/tyrannosaurus_limp_W_002.png",
+      "canonical": "assets/enemy_full/tyrannosaurus_walk_W_002.png",
+      "canonical_sha256": "833a712ec58f54a9c08a6a4c5f585f8bace8c2bcb0d62811b8a2ec1a93463477",
+      "silhouette_iou": 0.4422,
+      "extent_ratio": [
+        0.8699,
+        0.6447
+      ],
+      "changed_pixels": 3949,
+      "foot_edit_budget": 463,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/tyrannosaurus_limp_W_003.png",
+      "canonical": "assets/enemy_full/tyrannosaurus_walk_W_003.png",
+      "canonical_sha256": "38cfc1dd89e9e6906a84eeaf0ecfc91ac5d5675a5caa5337b9d37d3fb16a9c10",
+      "silhouette_iou": 0.5148,
+      "extent_ratio": [
+        0.9,
+        0.8475
+      ],
+      "changed_pixels": 3661,
+      "foot_edit_budget": 437,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "utahraptor",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/utahraptor_limp_S_002.png",
+      "canonical": "assets/player_full/utahraptor_walk_S_002.png",
+      "canonical_sha256": "982f52b59d1182e31b7a7f3a8704ee2d42c7838cd58694e004a6a09e4314cf80",
+      "silhouette_iou": 0.6846,
+      "extent_ratio": [
+        1.1667,
+        1.1277
+      ],
+      "changed_pixels": 2122,
+      "foot_edit_budget": 217,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "utahraptor",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/utahraptor_limp_S_003.png",
+      "canonical": "assets/player_full/utahraptor_walk_S_003.png",
+      "canonical_sha256": "85a938f52aa27b69906a524f026741ee0267c2aa25e890e0498531212f884be9",
+      "silhouette_iou": 0.5607,
+      "extent_ratio": [
+        1.1579,
+        1.1277
+      ],
+      "changed_pixels": 2414,
+      "foot_edit_budget": 217,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "utahraptor",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/utahraptor_limp_N_002.png",
+      "canonical": "assets/player_full/utahraptor_walk_N_002.png",
+      "canonical_sha256": "200067c1767cc9cf33717d2ed0c2a5a4120882cec59ee6c444a26cc6501107ad",
+      "silhouette_iou": 0.4941,
+      "extent_ratio": [
+        1.125,
+        1.1591
+      ],
+      "changed_pixels": 2398,
+      "foot_edit_budget": 203,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "utahraptor",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/utahraptor_limp_N_003.png",
+      "canonical": "assets/player_full/utahraptor_walk_N_003.png",
+      "canonical_sha256": "6e81dfd9c8dc2c96ae64ec9b61a57ade360878142ed51fc420a30bee25bc6ae8",
+      "silhouette_iou": 0.5185,
+      "extent_ratio": [
+        1.0714,
+        1.1236
+      ],
+      "changed_pixels": 2424,
+      "foot_edit_budget": 214,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "utahraptor",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/utahraptor_limp_E_002.png",
+      "canonical": "assets/player_full/utahraptor_walk_E_002.png",
+      "canonical_sha256": "2a9358b69308da81382561aabc897e0fde64b56d8221bc85c2e75120044f05e9",
+      "silhouette_iou": 0.465,
+      "extent_ratio": [
+        0.725,
+        0.75
+      ],
+      "changed_pixels": 2543,
+      "foot_edit_budget": 321,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "utahraptor",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/utahraptor_limp_E_003.png",
+      "canonical": "assets/player_full/utahraptor_walk_E_003.png",
+      "canonical_sha256": "bfdf47ae5bd4727c6382a51111873b0b7f4373f2c9ea86543aa49cec1d3b0534",
+      "silhouette_iou": 0.5244,
+      "extent_ratio": [
+        0.7479,
+        0.7959
+      ],
+      "changed_pixels": 2383,
+      "foot_edit_budget": 319,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "utahraptor",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/utahraptor_limp_W_002.png",
+      "canonical": "assets/player_full/utahraptor_walk_W_002.png",
+      "canonical_sha256": "6a403fe084cbdf3a39a514dd605059474ad04ab95d46033fbd3f0ee6ca8fe524",
+      "silhouette_iou": 0.3303,
+      "extent_ratio": [
+        0.7607,
+        0.6786
+      ],
+      "changed_pixels": 2574,
+      "foot_edit_budget": 266,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "utahraptor",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/utahraptor_limp_W_003.png",
+      "canonical": "assets/player_full/utahraptor_walk_W_003.png",
+      "canonical_sha256": "c1e650bbe1c1fc1b8fab1876488352f83495bc9336a6b88b7aea8373b1ff964c",
+      "silhouette_iou": 0.3099,
+      "extent_ratio": [
+        0.7692,
+        0.6607
+      ],
+      "changed_pixels": 2641,
+      "foot_edit_budget": 269,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "velociraptor",
+      "direction": "S",
+      "frame": 2,
+      "file": "assets/behavior/velociraptor_limp_S_002.png",
+      "canonical": "assets/player_full/velociraptor_walk_S_002.png",
+      "canonical_sha256": "5529d856d544e34091ff93dd04ada255a0694472029069c8ab1552357fdf34dc",
+      "silhouette_iou": 0.5041,
+      "extent_ratio": [
+        1.5238,
+        1.4167
+      ],
+      "changed_pixels": 851,
+      "foot_edit_budget": 59,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "velociraptor",
+      "direction": "S",
+      "frame": 3,
+      "file": "assets/behavior/velociraptor_limp_S_003.png",
+      "canonical": "assets/player_full/velociraptor_walk_S_003.png",
+      "canonical_sha256": "80c59b0d585f018fce85a45551a3296ba6cf955be4b837976c1f6ac0ac553171",
+      "silhouette_iou": 0.5257,
+      "extent_ratio": [
+        1.4167,
+        1.3125
+      ],
+      "changed_pixels": 805,
+      "foot_edit_budget": 57,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "velociraptor",
+      "direction": "N",
+      "frame": 2,
+      "file": "assets/behavior/velociraptor_limp_N_002.png",
+      "canonical": "assets/player_full/velociraptor_walk_N_002.png",
+      "canonical_sha256": "ed9da95b67b9804f18c010b0a9e266a3d4e0a1b8333560b3a773db8f8d6c19e6",
+      "silhouette_iou": 0.4341,
+      "extent_ratio": [
+        1.6316,
+        1.439
+      ],
+      "changed_pixels": 890,
+      "foot_edit_budget": 51,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "velociraptor",
+      "direction": "N",
+      "frame": 3,
+      "file": "assets/behavior/velociraptor_limp_N_003.png",
+      "canonical": "assets/player_full/velociraptor_walk_N_003.png",
+      "canonical_sha256": "36febbb94c541f143beff11d57e761f392ffcea426a7432ddab2f4b2b18bbb45",
+      "silhouette_iou": 0.4531,
+      "extent_ratio": [
+        1.65,
+        1.439
+      ],
+      "changed_pixels": 880,
+      "foot_edit_budget": 54,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "velociraptor",
+      "direction": "E",
+      "frame": 2,
+      "file": "assets/behavior/velociraptor_limp_E_002.png",
+      "canonical": "assets/player_full/velociraptor_walk_E_002.png",
+      "canonical_sha256": "61ac6933ad15cdc766398fb203fb886d748de342baba609769b182bc5abe1a80",
+      "silhouette_iou": 0.0714,
+      "extent_ratio": [
+        1.6667,
+        1.7143
+      ],
+      "changed_pixels": 2117,
+      "foot_edit_budget": 81,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "velociraptor",
+      "direction": "E",
+      "frame": 3,
+      "file": "assets/behavior/velociraptor_limp_E_003.png",
+      "canonical": "assets/player_full/velociraptor_walk_E_003.png",
+      "canonical_sha256": "8c28d73c285979425ed51ef77315e5cb17007356f193ec4d85ce425da58094fb",
+      "silhouette_iou": 0.118,
+      "extent_ratio": [
+        1.7458,
+        2.0769
+      ],
+      "changed_pixels": 2148,
+      "foot_edit_budget": 80,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "velociraptor",
+      "direction": "W",
+      "frame": 2,
+      "file": "assets/behavior/velociraptor_limp_W_002.png",
+      "canonical": "assets/player_full/velociraptor_walk_W_002.png",
+      "canonical_sha256": "f178d061d2d6460dcfc8c8e2a32d4aa1a386bec845a38567631b41833d7f348d",
+      "silhouette_iou": 0.0106,
+      "extent_ratio": [
+        1.7069,
+        1.3667
+      ],
+      "changed_pixels": 2162,
+      "foot_edit_budget": 73,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    },
+    {
+      "species": "velociraptor",
+      "direction": "W",
+      "frame": 3,
+      "file": "assets/behavior/velociraptor_limp_W_003.png",
+      "canonical": "assets/player_full/velociraptor_walk_W_003.png",
+      "canonical_sha256": "66f33eac109934d33c96cc32a48a41c2d89067bd9c531fd64537b1cbc216b037",
+      "silhouette_iou": 0.0525,
+      "extent_ratio": [
+        1.6441,
+        1.8621
+      ],
+      "changed_pixels": 2203,
+      "foot_edit_budget": 76,
+      "conservative_geometry_gate": false,
+      "runtime_enabled": false
+    }
+  ],
+  "package_revision": "Historical revision1 review; superseded by injured_walk_manifest.json and INJURED_WALK_VALIDATION.json"
+}

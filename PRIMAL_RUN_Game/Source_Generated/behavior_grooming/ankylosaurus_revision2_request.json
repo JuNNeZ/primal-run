@@ -1,0 +1,29 @@
+{
+  "prompt": "Edit this supplied exact ankylosaurus atlas minimally. The previous result is too similar to idle. Make the animal clearly GROOM ITSELF, never bite: column0 folds near FRONT LEG UP onto its own lower neck/chest, foot rests on neck; column1 foot rubs/scratches same spot moved a few pixels while head tilts gently toward foot. One forelimb moves, the other3 feet remain planted. Show bent elbow and foot reaching body; forelimb must NOT stay on ground. This motion is modest but clearly readable. Keep torso armour landmarks, tail and all body pixels as faithful as possible. Keep S,N,E,W rows and size exactly1536x1024 transparent2cols768x2564rows, hip384,128 percell. Preserve entire reference native body footprint and palette, not larger/rounder. Readable square pixel art, no backgrounds/shadows/labels. Exactly one tailclub, four legs, closed mouth. No movement of animal between columns.",
+  "source": "ankylosaurus_revision2.png",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "references": [
+    "ankylosaurus_canonical_layout.png"
+  ],
+  "source_sha256": "2f6cd5aca7791d0a41c25a0221f7c9564373f9a36327a4249b364300df43c287",
+  "canonical_references": [
+    {
+      "file": "assets/player_full/ankylosaurus_idle_S_000.png",
+      "sha256": "58f2552c44b43378ff16066407ce60108f83398a9f0a865daab1e481b9586dd9"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_N_000.png",
+      "sha256": "1a670f607e0ec71bf24e60914a860c522125a02399cbd0091f94aeee14da5c6f"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_E_000.png",
+      "sha256": "a30b20f757d7b2e9455b45cfdca3f3b077ed5dedb0d3e5c1975d7bbd29b937b4"
+    },
+    {
+      "file": "assets/player_full/ankylosaurus_idle_W_000.png",
+      "sha256": "e6b64eb096add20da2ec520181a7e28e9a4395c47b38d3a3d28cf94a525510c0"
+    }
+  ]
+}

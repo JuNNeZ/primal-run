@@ -1,0 +1,30 @@
+{
+  "prompt": "Edit this exact baryonyx atlas minimally into a quiet SCRATCH/GROOM pair. One clawed arm gently rubs its own lower jaw/neck, then a little lower. Two hindfeet remain planted and exactly ONE tail preserved, especially NORTH. Column0 limb lifted to its own body, column1 same limb gently rubbing slightly changed position. Head gently tilts toward own shoulder, closed mouth, calm, never bite/attack. Keep entire body silhouette, markings, scales, colour placement and camera pixel-faithful to source; no enlargement or shrinkage. Output exactly1536x1024 transparent same TWO columns768wide FOUR rows256high S,N,E,W. Fixed hip local384,128. Keep existing TWO TIMES native animal size and exact blank space; NEVER fill cells. Only small readable limb/neck movement. No labels/shadows/ground. One tail, original limb count. Crisp square 1990s overhead oblique pixel art. No recentering of animal.",
+  "source": "baryonyx_revision1.png",
+  "references": [
+    "baryonyx_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration.",
+  "source_sha256": "b657a49d318723d94333db5e5331458b7353f7b0f63a2c41ce4b6f3e22084e6b",
+  "canonical_references": [
+    {
+      "file": "assets/player_full/baryonyx_idle_S_000.png",
+      "sha256": "19a0fceef49d4d1323b8ba1c01639b3dbf78fc6a652b4cfd9953c9661a6cb790"
+    },
+    {
+      "file": "assets/player_full/baryonyx_idle_N_000.png",
+      "sha256": "f3e571b0c18a504bac1cfd49f26680ed2e0f39cdc2b0ed1a8bef1471ba888a00"
+    },
+    {
+      "file": "assets/player_full/baryonyx_idle_E_000.png",
+      "sha256": "6a4da4518178b771d312e1a114e5ff20aeda2b2f70e99258bbf2d2cf601e40f9"
+    },
+    {
+      "file": "assets/player_full/baryonyx_idle_W_000.png",
+      "sha256": "b85ec0234339136c8bde16cacd9ef70e1ab6b77f5961633b107b41317f0c8146"
+    }
+  ]
+}

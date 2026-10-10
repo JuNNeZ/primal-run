@@ -1,0 +1,30 @@
+{
+  "prompt": "Make only tiny localized head/foot changes to this EXACT canonical parasaurolophus sprite atlas. Columns0/1 GRAZE: head modestly lowers to nibble, closedmouth and tiny neckjaw movement approx4sourcepixels. Columns2/3 DRINK: head just slightly lowered, tiny throat/swallow motion. Feetstill and nofood/water drawn. Original backward crest and two hindlegs plus short forelimbs exactly unchanged. No extra legs. Preserve all original bodyoutline/volume,tail,pixelmarkings and original raw colours; do NOT repaintwholebody or enlarge/shrink. EXACTLY1536x1024 transparent FOUR columns384wide FOUR rows256high S,N,E,W, same layout. Fixed hip192,128eachcell. Everyanimal remains EXACTLY current TWO TIMES native size and position. Tiny readable movements only, neverfillcell. One tail, originalcameraoverhead/slightside. No shadows/background/labels/puddles/food. Crisp squarepixels1990sstyle.",
+  "source": "parasaurolophus_feed_revision1.png",
+  "references": [
+    "parasaurolophus_canonical_layout.png"
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "source_sha256": "b35b7b4c1dbc8cdb8b6aa4b701a9e87704d67bd12111c0f4e5567b3bd86d87aa",
+  "canonical_references": [
+    {
+      "file": "assets/enemy_full/parasaurolophus_idle_S_000.png",
+      "sha256": "cf3086b22fd684a306e9b4c33d25046adff0c3cc11abbfc2adde10d01acee660"
+    },
+    {
+      "file": "assets/enemy_full/parasaurolophus_idle_N_000.png",
+      "sha256": "482c79c8f8d49fd954dc8946ced76629bf26ebf5a06e690a20bcebb152fe906d"
+    },
+    {
+      "file": "assets/enemy_full/parasaurolophus_idle_E_000.png",
+      "sha256": "b59c9ff6566f22bc06a497311f3e8c725f509126b5e1d26902ed05d9399a6e14"
+    },
+    {
+      "file": "assets/enemy_full/parasaurolophus_idle_W_000.png",
+      "sha256": "c7bf1253defa03912c1b5aab422e19fcf8a3f7d0c823cd40fc2d2ec16937c9c0"
+    }
+  ],
+  "canonical_layout_sha256": "c6c4a435575874c85b16a1e8b0137e4779573b6bb77b4b60d9300cfbd0cd43f0"
+}

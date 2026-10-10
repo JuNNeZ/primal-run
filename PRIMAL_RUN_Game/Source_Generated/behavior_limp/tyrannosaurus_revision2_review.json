@@ -1,0 +1,473 @@
+{
+  "species": "tyrannosaurus",
+  "canonical_reference": "Source_Generated/behavior_limp/tyrannosaurus_canonical_walk23_reference.png",
+  "source": "Source_Generated/behavior_limp/tyrannosaurus_revision2.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_enabled": false,
+  "review": "Eight usable native-sized held-foot trial poses; single tail and two hindlegs retained. Generated shading/markings are brighter than old poses; preserve prototype caveat and review actual palette-mapped animation.",
+  "entries": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/tyrannosaurus_limp_S_002_revision2.png",
+      "direction": "S",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        51,
+        21,
+        93,
+        112
+      ],
+      "export_bbox": [
+        51,
+        20,
+        93,
+        111
+      ],
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "silhouette_iou": 0.9022717531075868,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/tyrannosaurus_revision2.png",
+      "source_sha256": "5222b2bc2ef7a8f733664f9b271d002492b7fdca395cbb1a535d9e5c9dfd9277",
+      "export_sha256": "4b2867477b3de25883436a5be979aee76b70d58e8712a2a44ddd65ed0efb67bb",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable native-sized held-foot trial poses; single tail and two hindlegs retained. Generated shading/markings are brighter than old poses; preserve prototype caveat and review actual palette-mapped animation."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/tyrannosaurus_limp_S_003_revision2.png",
+      "direction": "S",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        48,
+        21,
+        90,
+        111
+      ],
+      "export_bbox": [
+        47,
+        20,
+        90,
+        111
+      ],
+      "extent_ratios": [
+        1.0238095238095237,
+        1.011111111111111
+      ],
+      "silhouette_iou": 0.9490049751243781,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/tyrannosaurus_revision2.png",
+      "source_sha256": "5222b2bc2ef7a8f733664f9b271d002492b7fdca395cbb1a535d9e5c9dfd9277",
+      "export_sha256": "70220cb59412335ed8774b1ea7c2a8428a7feb37d44901f3f043e2b5302e1f0f",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable native-sized held-foot trial poses; single tail and two hindlegs retained. Generated shading/markings are brighter than old poses; preserve prototype caveat and review actual palette-mapped animation."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/tyrannosaurus_limp_N_002_revision2.png",
+      "direction": "N",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        52,
+        33,
+        96,
+        131
+      ],
+      "export_bbox": [
+        52,
+        32,
+        96,
+        132
+      ],
+      "extent_ratios": [
+        1.0,
+        1.0204081632653061
+      ],
+      "silhouette_iou": 0.9097196942118675,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/tyrannosaurus_revision2.png",
+      "source_sha256": "5222b2bc2ef7a8f733664f9b271d002492b7fdca395cbb1a535d9e5c9dfd9277",
+      "export_sha256": "5080d83b325d546cb89e59697e2836e1010e98b6c68acb4f9844f5cbeeac44ae",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable native-sized held-foot trial poses; single tail and two hindlegs retained. Generated shading/markings are brighter than old poses; preserve prototype caveat and review actual palette-mapped animation."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/tyrannosaurus_limp_N_003_revision2.png",
+      "direction": "N",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        50,
+        33,
+        93,
+        131
+      ],
+      "export_bbox": [
+        50,
+        32,
+        94,
+        131
+      ],
+      "extent_ratios": [
+        1.0232558139534884,
+        1.010204081632653
+      ],
+      "silhouette_iou": 0.934878587196468,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/tyrannosaurus_revision2.png",
+      "source_sha256": "5222b2bc2ef7a8f733664f9b271d002492b7fdca395cbb1a535d9e5c9dfd9277",
+      "export_sha256": "ca96ca3682b6ad53a412645d3094640f88fea275b77b1e0e9821f95ea34ba2d4",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable native-sized held-foot trial poses; single tail and two hindlegs retained. Generated shading/markings are brighter than old poses; preserve prototype caveat and review actual palette-mapped animation."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/tyrannosaurus_limp_E_002_revision2.png",
+      "direction": "E",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        17,
+        47,
+        138,
+        103
+      ],
+      "export_bbox": [
+        17,
+        46,
+        138,
+        105
+      ],
+      "extent_ratios": [
+        1.0,
+        1.0535714285714286
+      ],
+      "silhouette_iou": 0.9186846038863976,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/tyrannosaurus_revision2.png",
+      "source_sha256": "5222b2bc2ef7a8f733664f9b271d002492b7fdca395cbb1a535d9e5c9dfd9277",
+      "export_sha256": "6f003732f38b318b2bf817043ea2b6292a1a14190a7c683429f0ee8e009fcc98",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable native-sized held-foot trial poses; single tail and two hindlegs retained. Generated shading/markings are brighter than old poses; preserve prototype caveat and review actual palette-mapped animation."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/tyrannosaurus_limp_E_003_revision2.png",
+      "direction": "E",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        19,
+        47,
+        137,
+        107
+      ],
+      "export_bbox": [
+        19,
+        46,
+        137,
+        107
+      ],
+      "extent_ratios": [
+        1.0,
+        1.0166666666666666
+      ],
+      "silhouette_iou": 0.9580893682588598,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/tyrannosaurus_revision2.png",
+      "source_sha256": "5222b2bc2ef7a8f733664f9b271d002492b7fdca395cbb1a535d9e5c9dfd9277",
+      "export_sha256": "91f5bf77ee922127947a012af60d0430a0991a55be17f0e7cd815ba787198695",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable native-sized held-foot trial poses; single tail and two hindlegs retained. Generated shading/markings are brighter than old poses; preserve prototype caveat and review actual palette-mapped animation."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/tyrannosaurus_limp_W_002_revision2.png",
+      "direction": "W",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        13,
+        27,
+        136,
+        103
+      ],
+      "export_bbox": [
+        13,
+        26,
+        136,
+        103
+      ],
+      "extent_ratios": [
+        1.0,
+        1.013157894736842
+      ],
+      "silhouette_iou": 0.9372529644268774,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/tyrannosaurus_revision2.png",
+      "source_sha256": "5222b2bc2ef7a8f733664f9b271d002492b7fdca395cbb1a535d9e5c9dfd9277",
+      "export_sha256": "66dfca35ce7eb9bc22e86d58efb08d3c22a5d8f64d193add657523b5de6fb6ae",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable native-sized held-foot trial poses; single tail and two hindlegs retained. Generated shading/markings are brighter than old poses; preserve prototype caveat and review actual palette-mapped animation."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/tyrannosaurus_limp_W_003_revision2.png",
+      "direction": "W",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        13,
+        37,
+        133,
+        96
+      ],
+      "export_bbox": [
+        13,
+        36,
+        134,
+        97
+      ],
+      "extent_ratios": [
+        1.0083333333333333,
+        1.0338983050847457
+      ],
+      "silhouette_iou": 0.9282184655396619,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/tyrannosaurus_revision2.png",
+      "source_sha256": "5222b2bc2ef7a8f733664f9b271d002492b7fdca395cbb1a535d9e5c9dfd9277",
+      "export_sha256": "20cfc89a47e885c7d7b1425853dc191b4c80b3566091313a45e821dd07fd4a2a",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Eight usable native-sized held-foot trial poses; single tail and two hindlegs retained. Generated shading/markings are brighter than old poses; preserve prototype caveat and review actual palette-mapped animation."
+    }
+  ],
+  "canonical_reference_sha256": "b62f4ec0e8301acfd14ddbe2e60aaccf6bacf2d6f2ff694aaaa28be007a6b79c"
+}

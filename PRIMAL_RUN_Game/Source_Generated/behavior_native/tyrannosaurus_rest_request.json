@@ -1,0 +1,60 @@
+{
+  "species": "tyrannosaurus",
+  "family": "behavior_native",
+  "action": "rest",
+  "source": "tyrannosaurus_rest_revision1.png",
+  "source_sha256": "f8908e724b4d318ec6471ab49e7c9c71ae0b4335bbc155ef1e705e9a7a01f64f",
+  "reference": "tyrannosaurus_canonical_layout.png",
+  "reference_sha256": "a533503af52e56de5f8debbd00a32909795a3430b4d6df8d3e78ccace9328032",
+  "prompt": "Edit attached canonical pixel sprite layout with MINIMAL motion only. Preserve EXACT whole body footprints, size, markings, colours, perspective and fixed hip positions. Transparent1536x1024 atlas,4columns384wide,4rows256high. Rows S,N,E,W in that order. Every cell hip192,128, original whole sprite144x144 enlarged exactly2x located48,-16. DO NOT fill cells or enlarge animal. Massive head, two hind legs, tiny two-finger arms, NO horns, North body volume must equal canonical. Columns0,1 sleep lightly, eyes closed, head tilted a few pixels, torso and tail stationary; columns2,3 gently scratch flank using one hind foot with very small motion, correct limb count. Paired frames differ only a few pixels, torso unchanged. Keep reference crisp coarse2x pixels, no smooth rendered art, no labels, no shadows beyond sprite, no extra limbs. Prototype consistency study.",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "cell_size": [
+    384,
+    256
+  ],
+  "rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "source_hip": [
+    192,
+    128
+  ],
+  "sampling": 2,
+  "native_canvas": [
+    144,
+    144
+  ],
+  "native_origin": [
+    72,
+    72
+  ],
+  "concerns": [
+    "Minimal pose study, not anatomy approved",
+    "Halo requires hard alpha export",
+    "No bbox recentering allowed"
+  ],
+  "canonical_references": [
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_S_000.png",
+      "sha256": "2cad87251d9d847860a4389209f15f532d3eaac67c9273de6e6d796e068b3525"
+    },
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_N_000.png",
+      "sha256": "813868e83b0ec6cd32b0d75925d76c53389961d0569c22fd5d771612b3c01d51"
+    },
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_E_000.png",
+      "sha256": "243e120135282bccb7f4b9e7bc1e0930947cfd9714e8eb8a5223eb9782b1946b"
+    },
+    {
+      "file": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
+      "sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77"
+    }
+  ],
+  "canonical_layout_sha256": "a533503af52e56de5f8debbd00a32909795a3430b4d6df8d3e78ccace9328032"
+}

@@ -1,0 +1,5477 @@
+{
+  "scope": "Measurements flag source differences; no automated anatomy approval.",
+  "frames": [
+    {
+      "file": "assets/behavior_native/ankylosaurus_graze_S_000.png",
+      "area_ratio": 0.996,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.954,
+      "bounds": [
+        51,
+        21,
+        104,
+        112
+      ],
+      "reference_bounds": [
+        51,
+        21,
+        104,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_graze_S_001.png",
+      "area_ratio": 0.986,
+      "width_ratio": 1.0,
+      "height_ratio": 0.967,
+      "silhouette_iou": 0.929,
+      "bounds": [
+        51,
+        24,
+        104,
+        112
+      ],
+      "reference_bounds": [
+        51,
+        21,
+        104,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_drink_S_000.png",
+      "area_ratio": 1.002,
+      "width_ratio": 0.981,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.951,
+      "bounds": [
+        52,
+        22,
+        104,
+        112
+      ],
+      "reference_bounds": [
+        51,
+        21,
+        104,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_drink_S_001.png",
+      "area_ratio": 0.986,
+      "width_ratio": 1.0,
+      "height_ratio": 0.956,
+      "silhouette_iou": 0.925,
+      "bounds": [
+        51,
+        25,
+        104,
+        112
+      ],
+      "reference_bounds": [
+        51,
+        21,
+        104,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_graze_N_000.png",
+      "area_ratio": 0.982,
+      "width_ratio": 1.019,
+      "height_ratio": 0.969,
+      "silhouette_iou": 0.954,
+      "bounds": [
+        46,
+        11,
+        100,
+        105
+      ],
+      "reference_bounds": [
+        47,
+        8,
+        100,
+        105
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_graze_N_001.png",
+      "area_ratio": 0.982,
+      "width_ratio": 1.0,
+      "height_ratio": 0.979,
+      "silhouette_iou": 0.949,
+      "bounds": [
+        47,
+        11,
+        100,
+        106
+      ],
+      "reference_bounds": [
+        47,
+        8,
+        100,
+        105
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_drink_N_000.png",
+      "area_ratio": 0.979,
+      "width_ratio": 1.0,
+      "height_ratio": 0.969,
+      "silhouette_iou": 0.952,
+      "bounds": [
+        47,
+        11,
+        100,
+        105
+      ],
+      "reference_bounds": [
+        47,
+        8,
+        100,
+        105
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_drink_N_001.png",
+      "area_ratio": 0.984,
+      "width_ratio": 1.0,
+      "height_ratio": 0.979,
+      "silhouette_iou": 0.949,
+      "bounds": [
+        47,
+        11,
+        100,
+        106
+      ],
+      "reference_bounds": [
+        47,
+        8,
+        100,
+        105
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_graze_E_000.png",
+      "area_ratio": 1.021,
+      "width_ratio": 1.0,
+      "height_ratio": 1.019,
+      "silhouette_iou": 0.932,
+      "bounds": [
+        20,
+        47,
+        128,
+        101
+      ],
+      "reference_bounds": [
+        20,
+        47,
+        128,
+        100
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_graze_E_001.png",
+      "area_ratio": 1.026,
+      "width_ratio": 1.0,
+      "height_ratio": 1.019,
+      "silhouette_iou": 0.92,
+      "bounds": [
+        20,
+        47,
+        128,
+        101
+      ],
+      "reference_bounds": [
+        20,
+        47,
+        128,
+        100
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_drink_E_000.png",
+      "area_ratio": 1.017,
+      "width_ratio": 1.009,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.932,
+      "bounds": [
+        19,
+        47,
+        128,
+        100
+      ],
+      "reference_bounds": [
+        20,
+        47,
+        128,
+        100
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_drink_E_001.png",
+      "area_ratio": 1.023,
+      "width_ratio": 1.0,
+      "height_ratio": 1.019,
+      "silhouette_iou": 0.918,
+      "bounds": [
+        20,
+        47,
+        128,
+        101
+      ],
+      "reference_bounds": [
+        20,
+        47,
+        128,
+        100
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_graze_W_000.png",
+      "area_ratio": 1.057,
+      "width_ratio": 1.02,
+      "height_ratio": 1.024,
+      "silhouette_iou": 0.931,
+      "bounds": [
+        17,
+        49,
+        120,
+        92
+      ],
+      "reference_bounds": [
+        18,
+        50,
+        119,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_graze_W_001.png",
+      "area_ratio": 1.06,
+      "width_ratio": 1.02,
+      "height_ratio": 1.024,
+      "silhouette_iou": 0.914,
+      "bounds": [
+        17,
+        49,
+        120,
+        92
+      ],
+      "reference_bounds": [
+        18,
+        50,
+        119,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_drink_W_000.png",
+      "area_ratio": 1.05,
+      "width_ratio": 1.02,
+      "height_ratio": 1.024,
+      "silhouette_iou": 0.934,
+      "bounds": [
+        17,
+        49,
+        120,
+        92
+      ],
+      "reference_bounds": [
+        18,
+        50,
+        119,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_drink_W_001.png",
+      "area_ratio": 1.057,
+      "width_ratio": 1.02,
+      "height_ratio": 1.024,
+      "silhouette_iou": 0.919,
+      "bounds": [
+        17,
+        49,
+        120,
+        92
+      ],
+      "reference_bounds": [
+        18,
+        50,
+        119,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_sleep_S_000.png",
+      "area_ratio": 0.973,
+      "width_ratio": 0.981,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.955,
+      "bounds": [
+        51,
+        20,
+        103,
+        111
+      ],
+      "reference_bounds": [
+        51,
+        21,
+        104,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_sleep_S_001.png",
+      "area_ratio": 0.97,
+      "width_ratio": 0.962,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.956,
+      "bounds": [
+        52,
+        21,
+        103,
+        111
+      ],
+      "reference_bounds": [
+        51,
+        21,
+        104,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_scratch_S_000.png",
+      "area_ratio": 0.961,
+      "width_ratio": 0.962,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.948,
+      "bounds": [
+        52,
+        21,
+        103,
+        111
+      ],
+      "reference_bounds": [
+        51,
+        21,
+        104,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_scratch_S_001.png",
+      "area_ratio": 0.964,
+      "width_ratio": 0.962,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.952,
+      "bounds": [
+        52,
+        21,
+        103,
+        111
+      ],
+      "reference_bounds": [
+        51,
+        21,
+        104,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_sleep_N_000.png",
+      "area_ratio": 0.976,
+      "width_ratio": 0.981,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.958,
+      "bounds": [
+        47,
+        8,
+        99,
+        104
+      ],
+      "reference_bounds": [
+        47,
+        8,
+        100,
+        105
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_sleep_N_001.png",
+      "area_ratio": 0.975,
+      "width_ratio": 0.981,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.957,
+      "bounds": [
+        47,
+        8,
+        99,
+        104
+      ],
+      "reference_bounds": [
+        47,
+        8,
+        100,
+        105
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_scratch_N_000.png",
+      "area_ratio": 0.972,
+      "width_ratio": 0.981,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.956,
+      "bounds": [
+        47,
+        8,
+        99,
+        104
+      ],
+      "reference_bounds": [
+        47,
+        8,
+        100,
+        105
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_scratch_N_001.png",
+      "area_ratio": 0.971,
+      "width_ratio": 0.981,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.957,
+      "bounds": [
+        47,
+        8,
+        99,
+        104
+      ],
+      "reference_bounds": [
+        47,
+        8,
+        100,
+        105
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_sleep_E_000.png",
+      "area_ratio": 0.956,
+      "width_ratio": 0.981,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.951,
+      "bounds": [
+        20,
+        47,
+        126,
+        100
+      ],
+      "reference_bounds": [
+        20,
+        47,
+        128,
+        100
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_sleep_E_001.png",
+      "area_ratio": 0.954,
+      "width_ratio": 0.981,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.948,
+      "bounds": [
+        20,
+        47,
+        126,
+        100
+      ],
+      "reference_bounds": [
+        20,
+        47,
+        128,
+        100
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_scratch_E_000.png",
+      "area_ratio": 0.97,
+      "width_ratio": 0.981,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.944,
+      "bounds": [
+        20,
+        47,
+        126,
+        100
+      ],
+      "reference_bounds": [
+        20,
+        47,
+        128,
+        100
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_scratch_E_001.png",
+      "area_ratio": 0.972,
+      "width_ratio": 0.981,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.938,
+      "bounds": [
+        20,
+        47,
+        126,
+        100
+      ],
+      "reference_bounds": [
+        20,
+        47,
+        128,
+        100
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_sleep_W_000.png",
+      "area_ratio": 0.974,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.96,
+      "bounds": [
+        18,
+        50,
+        119,
+        92
+      ],
+      "reference_bounds": [
+        18,
+        50,
+        119,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_sleep_W_001.png",
+      "area_ratio": 0.976,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.96,
+      "bounds": [
+        18,
+        50,
+        119,
+        92
+      ],
+      "reference_bounds": [
+        18,
+        50,
+        119,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_scratch_W_000.png",
+      "area_ratio": 0.985,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.951,
+      "bounds": [
+        18,
+        50,
+        119,
+        92
+      ],
+      "reference_bounds": [
+        18,
+        50,
+        119,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/ankylosaurus_scratch_W_001.png",
+      "area_ratio": 0.983,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.951,
+      "bounds": [
+        18,
+        50,
+        119,
+        92
+      ],
+      "reference_bounds": [
+        18,
+        50,
+        119,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_graze_S_000.png",
+      "area_ratio": 1.16,
+      "width_ratio": 1.143,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.847,
+      "bounds": [
+        49,
+        20,
+        97,
+        124
+      ],
+      "reference_bounds": [
+        52,
+        21,
+        94,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_graze_S_001.png",
+      "area_ratio": 1.158,
+      "width_ratio": 1.167,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.849,
+      "bounds": [
+        49,
+        20,
+        98,
+        124
+      ],
+      "reference_bounds": [
+        52,
+        21,
+        94,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_drink_S_000.png",
+      "area_ratio": 1.172,
+      "width_ratio": 1.19,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.843,
+      "bounds": [
+        48,
+        20,
+        98,
+        124
+      ],
+      "reference_bounds": [
+        52,
+        21,
+        94,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_drink_S_001.png",
+      "area_ratio": 1.167,
+      "width_ratio": 1.19,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.847,
+      "bounds": [
+        48,
+        20,
+        98,
+        124
+      ],
+      "reference_bounds": [
+        52,
+        21,
+        94,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_graze_N_000.png",
+      "area_ratio": 1.231,
+      "width_ratio": 1.214,
+      "height_ratio": 1.059,
+      "silhouette_iou": 0.772,
+      "bounds": [
+        47,
+        20,
+        98,
+        128
+      ],
+      "reference_bounds": [
+        50,
+        21,
+        92,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_graze_N_001.png",
+      "area_ratio": 1.228,
+      "width_ratio": 1.19,
+      "height_ratio": 1.059,
+      "silhouette_iou": 0.762,
+      "bounds": [
+        47,
+        20,
+        97,
+        128
+      ],
+      "reference_bounds": [
+        50,
+        21,
+        92,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_drink_N_000.png",
+      "area_ratio": 1.235,
+      "width_ratio": 1.19,
+      "height_ratio": 1.059,
+      "silhouette_iou": 0.76,
+      "bounds": [
+        47,
+        20,
+        97,
+        128
+      ],
+      "reference_bounds": [
+        50,
+        21,
+        92,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_drink_N_001.png",
+      "area_ratio": 1.235,
+      "width_ratio": 1.19,
+      "height_ratio": 1.059,
+      "silhouette_iou": 0.771,
+      "bounds": [
+        47,
+        20,
+        97,
+        128
+      ],
+      "reference_bounds": [
+        50,
+        21,
+        92,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_graze_E_000.png",
+      "area_ratio": 1.206,
+      "width_ratio": 1.065,
+      "height_ratio": 1.087,
+      "silhouette_iou": 0.799,
+      "bounds": [
+        8,
+        43,
+        139,
+        93
+      ],
+      "reference_bounds": [
+        13,
+        45,
+        136,
+        91
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_graze_E_001.png",
+      "area_ratio": 1.218,
+      "width_ratio": 1.073,
+      "height_ratio": 1.087,
+      "silhouette_iou": 0.791,
+      "bounds": [
+        7,
+        43,
+        139,
+        93
+      ],
+      "reference_bounds": [
+        13,
+        45,
+        136,
+        91
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_drink_E_000.png",
+      "area_ratio": 1.226,
+      "width_ratio": 1.081,
+      "height_ratio": 1.087,
+      "silhouette_iou": 0.772,
+      "bounds": [
+        7,
+        43,
+        140,
+        93
+      ],
+      "reference_bounds": [
+        13,
+        45,
+        136,
+        91
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_drink_E_001.png",
+      "area_ratio": 1.22,
+      "width_ratio": 1.081,
+      "height_ratio": 1.087,
+      "silhouette_iou": 0.78,
+      "bounds": [
+        7,
+        43,
+        140,
+        93
+      ],
+      "reference_bounds": [
+        13,
+        45,
+        136,
+        91
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_graze_W_000.png",
+      "area_ratio": 1.291,
+      "width_ratio": 1.101,
+      "height_ratio": 1.195,
+      "silhouette_iou": 0.772,
+      "bounds": [
+        8,
+        51,
+        139,
+        100
+      ],
+      "reference_bounds": [
+        12,
+        55,
+        131,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_graze_W_001.png",
+      "area_ratio": 1.298,
+      "width_ratio": 1.101,
+      "height_ratio": 1.195,
+      "silhouette_iou": 0.769,
+      "bounds": [
+        8,
+        51,
+        139,
+        100
+      ],
+      "reference_bounds": [
+        12,
+        55,
+        131,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_drink_W_000.png",
+      "area_ratio": 1.285,
+      "width_ratio": 1.084,
+      "height_ratio": 1.171,
+      "silhouette_iou": 0.766,
+      "bounds": [
+        10,
+        52,
+        139,
+        100
+      ],
+      "reference_bounds": [
+        12,
+        55,
+        131,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_drink_W_001.png",
+      "area_ratio": 1.277,
+      "width_ratio": 1.084,
+      "height_ratio": 1.171,
+      "silhouette_iou": 0.777,
+      "bounds": [
+        10,
+        52,
+        139,
+        100
+      ],
+      "reference_bounds": [
+        12,
+        55,
+        131,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_sleep_S_000.png",
+      "area_ratio": 1.124,
+      "width_ratio": 1.071,
+      "height_ratio": 1.01,
+      "silhouette_iou": 0.881,
+      "bounds": [
+        49,
+        21,
+        94,
+        124
+      ],
+      "reference_bounds": [
+        52,
+        21,
+        94,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_sleep_S_001.png",
+      "area_ratio": 1.125,
+      "width_ratio": 1.071,
+      "height_ratio": 1.01,
+      "silhouette_iou": 0.883,
+      "bounds": [
+        49,
+        21,
+        94,
+        124
+      ],
+      "reference_bounds": [
+        52,
+        21,
+        94,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_scratch_S_000.png",
+      "area_ratio": 1.104,
+      "width_ratio": 1.095,
+      "height_ratio": 1.01,
+      "silhouette_iou": 0.86,
+      "bounds": [
+        48,
+        21,
+        94,
+        124
+      ],
+      "reference_bounds": [
+        52,
+        21,
+        94,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_scratch_S_001.png",
+      "area_ratio": 1.093,
+      "width_ratio": 1.119,
+      "height_ratio": 1.01,
+      "silhouette_iou": 0.867,
+      "bounds": [
+        49,
+        21,
+        96,
+        124
+      ],
+      "reference_bounds": [
+        52,
+        21,
+        94,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_sleep_N_000.png",
+      "area_ratio": 1.178,
+      "width_ratio": 1.095,
+      "height_ratio": 1.039,
+      "silhouette_iou": 0.819,
+      "bounds": [
+        48,
+        18,
+        94,
+        124
+      ],
+      "reference_bounds": [
+        50,
+        21,
+        92,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_sleep_N_001.png",
+      "area_ratio": 1.175,
+      "width_ratio": 1.119,
+      "height_ratio": 1.029,
+      "silhouette_iou": 0.824,
+      "bounds": [
+        49,
+        19,
+        96,
+        124
+      ],
+      "reference_bounds": [
+        50,
+        21,
+        92,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_scratch_N_000.png",
+      "area_ratio": 1.192,
+      "width_ratio": 1.143,
+      "height_ratio": 1.039,
+      "silhouette_iou": 0.804,
+      "bounds": [
+        48,
+        18,
+        96,
+        124
+      ],
+      "reference_bounds": [
+        50,
+        21,
+        92,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_scratch_N_001.png",
+      "area_ratio": 1.197,
+      "width_ratio": 1.143,
+      "height_ratio": 1.029,
+      "silhouette_iou": 0.806,
+      "bounds": [
+        48,
+        19,
+        96,
+        124
+      ],
+      "reference_bounds": [
+        50,
+        21,
+        92,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_sleep_E_000.png",
+      "area_ratio": 1.198,
+      "width_ratio": 1.073,
+      "height_ratio": 1.065,
+      "silhouette_iou": 0.814,
+      "bounds": [
+        6,
+        46,
+        138,
+        95
+      ],
+      "reference_bounds": [
+        13,
+        45,
+        136,
+        91
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_sleep_E_001.png",
+      "area_ratio": 1.25,
+      "width_ratio": 1.073,
+      "height_ratio": 1.109,
+      "silhouette_iou": 0.796,
+      "bounds": [
+        7,
+        44,
+        139,
+        95
+      ],
+      "reference_bounds": [
+        13,
+        45,
+        136,
+        91
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_scratch_E_000.png",
+      "area_ratio": 1.272,
+      "width_ratio": 1.081,
+      "height_ratio": 1.196,
+      "silhouette_iou": 0.772,
+      "bounds": [
+        6,
+        40,
+        139,
+        95
+      ],
+      "reference_bounds": [
+        13,
+        45,
+        136,
+        91
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_scratch_E_001.png",
+      "area_ratio": 1.303,
+      "width_ratio": 1.098,
+      "height_ratio": 1.217,
+      "silhouette_iou": 0.762,
+      "bounds": [
+        6,
+        39,
+        141,
+        95
+      ],
+      "reference_bounds": [
+        13,
+        45,
+        136,
+        91
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_sleep_W_000.png",
+      "area_ratio": 1.425,
+      "width_ratio": 1.16,
+      "height_ratio": 1.22,
+      "silhouette_iou": 0.7,
+      "bounds": [
+        3,
+        51,
+        141,
+        101
+      ],
+      "reference_bounds": [
+        12,
+        55,
+        131,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_sleep_W_001.png",
+      "area_ratio": 1.463,
+      "width_ratio": 1.151,
+      "height_ratio": 1.244,
+      "silhouette_iou": 0.682,
+      "bounds": [
+        4,
+        50,
+        141,
+        101
+      ],
+      "reference_bounds": [
+        12,
+        55,
+        131,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_scratch_W_000.png",
+      "area_ratio": 1.486,
+      "width_ratio": 1.168,
+      "height_ratio": 1.293,
+      "silhouette_iou": 0.662,
+      "bounds": [
+        3,
+        48,
+        142,
+        101
+      ],
+      "reference_bounds": [
+        12,
+        55,
+        131,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/baryonyx_scratch_W_001.png",
+      "area_ratio": 1.487,
+      "width_ratio": 1.16,
+      "height_ratio": 1.317,
+      "silhouette_iou": 0.659,
+      "bounds": [
+        4,
+        47,
+        142,
+        101
+      ],
+      "reference_bounds": [
+        12,
+        55,
+        131,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_graze_S_000.png",
+      "area_ratio": 1.109,
+      "width_ratio": 1.14,
+      "height_ratio": 1.043,
+      "silhouette_iou": 0.854,
+      "bounds": [
+        63,
+        20,
+        112,
+        118
+      ],
+      "reference_bounds": [
+        66,
+        21,
+        109,
+        115
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_graze_S_001.png",
+      "area_ratio": 1.119,
+      "width_ratio": 1.14,
+      "height_ratio": 1.043,
+      "silhouette_iou": 0.847,
+      "bounds": [
+        63,
+        20,
+        112,
+        118
+      ],
+      "reference_bounds": [
+        66,
+        21,
+        109,
+        115
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_drink_S_000.png",
+      "area_ratio": 1.118,
+      "width_ratio": 1.14,
+      "height_ratio": 1.043,
+      "silhouette_iou": 0.848,
+      "bounds": [
+        63,
+        20,
+        112,
+        118
+      ],
+      "reference_bounds": [
+        66,
+        21,
+        109,
+        115
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_drink_S_001.png",
+      "area_ratio": 1.119,
+      "width_ratio": 1.14,
+      "height_ratio": 1.043,
+      "silhouette_iou": 0.847,
+      "bounds": [
+        63,
+        20,
+        112,
+        118
+      ],
+      "reference_bounds": [
+        66,
+        21,
+        109,
+        115
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_graze_N_000.png",
+      "area_ratio": 1.159,
+      "width_ratio": 1.114,
+      "height_ratio": 1.032,
+      "silhouette_iou": 0.849,
+      "bounds": [
+        53,
+        18,
+        92,
+        115
+      ],
+      "reference_bounds": [
+        54,
+        18,
+        89,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_graze_N_001.png",
+      "area_ratio": 1.162,
+      "width_ratio": 1.114,
+      "height_ratio": 1.032,
+      "silhouette_iou": 0.848,
+      "bounds": [
+        53,
+        19,
+        92,
+        116
+      ],
+      "reference_bounds": [
+        54,
+        18,
+        89,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_drink_N_000.png",
+      "area_ratio": 1.164,
+      "width_ratio": 1.114,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.848,
+      "bounds": [
+        53,
+        19,
+        92,
+        115
+      ],
+      "reference_bounds": [
+        54,
+        18,
+        89,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_drink_N_001.png",
+      "area_ratio": 1.161,
+      "width_ratio": 1.114,
+      "height_ratio": 1.032,
+      "silhouette_iou": 0.849,
+      "bounds": [
+        53,
+        19,
+        92,
+        116
+      ],
+      "reference_bounds": [
+        54,
+        18,
+        89,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_graze_E_000.png",
+      "area_ratio": 1.232,
+      "width_ratio": 1.068,
+      "height_ratio": 1.125,
+      "silhouette_iou": 0.781,
+      "bounds": [
+        6,
+        47,
+        131,
+        101
+      ],
+      "reference_bounds": [
+        14,
+        51,
+        131,
+        99
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_graze_E_001.png",
+      "area_ratio": 1.258,
+      "width_ratio": 1.094,
+      "height_ratio": 1.125,
+      "silhouette_iou": 0.768,
+      "bounds": [
+        5,
+        47,
+        133,
+        101
+      ],
+      "reference_bounds": [
+        14,
+        51,
+        131,
+        99
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_drink_E_000.png",
+      "area_ratio": 1.251,
+      "width_ratio": 1.094,
+      "height_ratio": 1.104,
+      "silhouette_iou": 0.759,
+      "bounds": [
+        5,
+        47,
+        133,
+        100
+      ],
+      "reference_bounds": [
+        14,
+        51,
+        131,
+        99
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_drink_E_001.png",
+      "area_ratio": 1.252,
+      "width_ratio": 1.094,
+      "height_ratio": 1.104,
+      "silhouette_iou": 0.757,
+      "bounds": [
+        5,
+        47,
+        133,
+        100
+      ],
+      "reference_bounds": [
+        14,
+        51,
+        131,
+        99
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_graze_W_000.png",
+      "area_ratio": 1.155,
+      "width_ratio": 1.069,
+      "height_ratio": 1.149,
+      "silhouette_iou": 0.749,
+      "bounds": [
+        15,
+        46,
+        139,
+        100
+      ],
+      "reference_bounds": [
+        19,
+        48,
+        135,
+        95
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_graze_W_001.png",
+      "area_ratio": 1.18,
+      "width_ratio": 1.086,
+      "height_ratio": 1.149,
+      "silhouette_iou": 0.74,
+      "bounds": [
+        13,
+        46,
+        139,
+        100
+      ],
+      "reference_bounds": [
+        19,
+        48,
+        135,
+        95
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_drink_W_000.png",
+      "area_ratio": 1.206,
+      "width_ratio": 1.112,
+      "height_ratio": 1.149,
+      "silhouette_iou": 0.716,
+      "bounds": [
+        10,
+        46,
+        139,
+        100
+      ],
+      "reference_bounds": [
+        19,
+        48,
+        135,
+        95
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_drink_W_001.png",
+      "area_ratio": 1.209,
+      "width_ratio": 1.112,
+      "height_ratio": 1.128,
+      "silhouette_iou": 0.721,
+      "bounds": [
+        10,
+        46,
+        139,
+        99
+      ],
+      "reference_bounds": [
+        19,
+        48,
+        135,
+        95
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_sleep_S_000.png",
+      "area_ratio": 1.071,
+      "width_ratio": 1.047,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.93,
+      "bounds": [
+        65,
+        19,
+        110,
+        115
+      ],
+      "reference_bounds": [
+        66,
+        21,
+        109,
+        115
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_sleep_S_001.png",
+      "area_ratio": 1.078,
+      "width_ratio": 1.047,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.924,
+      "bounds": [
+        65,
+        19,
+        110,
+        115
+      ],
+      "reference_bounds": [
+        66,
+        21,
+        109,
+        115
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_scratch_S_000.png",
+      "area_ratio": 1.084,
+      "width_ratio": 1.163,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.868,
+      "bounds": [
+        65,
+        19,
+        115,
+        115
+      ],
+      "reference_bounds": [
+        66,
+        21,
+        109,
+        115
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_scratch_S_001.png",
+      "area_ratio": 1.101,
+      "width_ratio": 1.047,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.889,
+      "bounds": [
+        65,
+        19,
+        110,
+        115
+      ],
+      "reference_bounds": [
+        66,
+        21,
+        109,
+        115
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_sleep_N_000.png",
+      "area_ratio": 1.082,
+      "width_ratio": 1.057,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.902,
+      "bounds": [
+        53,
+        19,
+        90,
+        115
+      ],
+      "reference_bounds": [
+        54,
+        18,
+        89,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_sleep_N_001.png",
+      "area_ratio": 1.085,
+      "width_ratio": 1.057,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.898,
+      "bounds": [
+        53,
+        19,
+        90,
+        115
+      ],
+      "reference_bounds": [
+        54,
+        18,
+        89,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_scratch_N_000.png",
+      "area_ratio": 1.13,
+      "width_ratio": 1.143,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.858,
+      "bounds": [
+        53,
+        19,
+        93,
+        115
+      ],
+      "reference_bounds": [
+        54,
+        18,
+        89,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_scratch_N_001.png",
+      "area_ratio": 1.13,
+      "width_ratio": 1.057,
+      "height_ratio": 1.032,
+      "silhouette_iou": 0.864,
+      "bounds": [
+        53,
+        19,
+        90,
+        116
+      ],
+      "reference_bounds": [
+        54,
+        18,
+        89,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_sleep_E_000.png",
+      "area_ratio": 1.255,
+      "width_ratio": 1.06,
+      "height_ratio": 1.229,
+      "silhouette_iou": 0.766,
+      "bounds": [
+        10,
+        49,
+        134,
+        108
+      ],
+      "reference_bounds": [
+        14,
+        51,
+        131,
+        99
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_sleep_E_001.png",
+      "area_ratio": 1.255,
+      "width_ratio": 1.06,
+      "height_ratio": 1.229,
+      "silhouette_iou": 0.768,
+      "bounds": [
+        10,
+        49,
+        134,
+        108
+      ],
+      "reference_bounds": [
+        14,
+        51,
+        131,
+        99
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_scratch_E_000.png",
+      "area_ratio": 1.268,
+      "width_ratio": 1.06,
+      "height_ratio": 1.229,
+      "silhouette_iou": 0.759,
+      "bounds": [
+        10,
+        49,
+        134,
+        108
+      ],
+      "reference_bounds": [
+        14,
+        51,
+        131,
+        99
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_scratch_E_001.png",
+      "area_ratio": 1.26,
+      "width_ratio": 1.06,
+      "height_ratio": 1.229,
+      "silhouette_iou": 0.766,
+      "bounds": [
+        10,
+        49,
+        134,
+        108
+      ],
+      "reference_bounds": [
+        14,
+        51,
+        131,
+        99
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_sleep_W_000.png",
+      "area_ratio": 1.266,
+      "width_ratio": 1.086,
+      "height_ratio": 1.277,
+      "silhouette_iou": 0.692,
+      "bounds": [
+        9,
+        46,
+        135,
+        106
+      ],
+      "reference_bounds": [
+        19,
+        48,
+        135,
+        95
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_sleep_W_001.png",
+      "area_ratio": 1.247,
+      "width_ratio": 1.069,
+      "height_ratio": 1.298,
+      "silhouette_iou": 0.706,
+      "bounds": [
+        11,
+        46,
+        135,
+        107
+      ],
+      "reference_bounds": [
+        19,
+        48,
+        135,
+        95
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_scratch_W_000.png",
+      "area_ratio": 1.286,
+      "width_ratio": 1.078,
+      "height_ratio": 1.319,
+      "silhouette_iou": 0.698,
+      "bounds": [
+        10,
+        45,
+        135,
+        107
+      ],
+      "reference_bounds": [
+        19,
+        48,
+        135,
+        95
+      ]
+    },
+    {
+      "file": "assets/behavior_native/carnotaurus_scratch_W_001.png",
+      "area_ratio": 1.268,
+      "width_ratio": 1.069,
+      "height_ratio": 1.319,
+      "silhouette_iou": 0.703,
+      "bounds": [
+        11,
+        45,
+        135,
+        107
+      ],
+      "reference_bounds": [
+        19,
+        48,
+        135,
+        95
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_graze_S_000.png",
+      "area_ratio": 1.057,
+      "width_ratio": 1.016,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.93,
+      "bounds": [
+        41,
+        25,
+        106,
+        122
+      ],
+      "reference_bounds": [
+        42,
+        24,
+        106,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_graze_S_001.png",
+      "area_ratio": 1.064,
+      "width_ratio": 1.016,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.926,
+      "bounds": [
+        41,
+        25,
+        106,
+        122
+      ],
+      "reference_bounds": [
+        42,
+        24,
+        106,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_drink_S_000.png",
+      "area_ratio": 1.078,
+      "width_ratio": 1.016,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.917,
+      "bounds": [
+        41,
+        25,
+        106,
+        124
+      ],
+      "reference_bounds": [
+        42,
+        24,
+        106,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_drink_S_001.png",
+      "area_ratio": 1.089,
+      "width_ratio": 1.016,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.909,
+      "bounds": [
+        41,
+        25,
+        106,
+        124
+      ],
+      "reference_bounds": [
+        42,
+        24,
+        106,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_graze_N_000.png",
+      "area_ratio": 1.179,
+      "width_ratio": 1.06,
+      "height_ratio": 1.031,
+      "silhouette_iou": 0.772,
+      "bounds": [
+        49,
+        23,
+        102,
+        122
+      ],
+      "reference_bounds": [
+        53,
+        25,
+        103,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_graze_N_001.png",
+      "area_ratio": 1.181,
+      "width_ratio": 1.06,
+      "height_ratio": 1.031,
+      "silhouette_iou": 0.77,
+      "bounds": [
+        49,
+        23,
+        102,
+        122
+      ],
+      "reference_bounds": [
+        53,
+        25,
+        103,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_drink_N_000.png",
+      "area_ratio": 1.174,
+      "width_ratio": 1.06,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.777,
+      "bounds": [
+        49,
+        23,
+        102,
+        121
+      ],
+      "reference_bounds": [
+        53,
+        25,
+        103,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_drink_N_001.png",
+      "area_ratio": 1.18,
+      "width_ratio": 1.06,
+      "height_ratio": 1.021,
+      "silhouette_iou": 0.779,
+      "bounds": [
+        49,
+        23,
+        102,
+        121
+      ],
+      "reference_bounds": [
+        53,
+        25,
+        103,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_graze_E_000.png",
+      "area_ratio": 1.133,
+      "width_ratio": 1.032,
+      "height_ratio": 1.048,
+      "silhouette_iou": 0.881,
+      "bounds": [
+        8,
+        49,
+        137,
+        115
+      ],
+      "reference_bounds": [
+        9,
+        50,
+        134,
+        113
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_graze_E_001.png",
+      "area_ratio": 1.137,
+      "width_ratio": 1.032,
+      "height_ratio": 1.063,
+      "silhouette_iou": 0.875,
+      "bounds": [
+        8,
+        48,
+        137,
+        115
+      ],
+      "reference_bounds": [
+        9,
+        50,
+        134,
+        113
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_drink_E_000.png",
+      "area_ratio": 1.133,
+      "width_ratio": 1.032,
+      "height_ratio": 1.063,
+      "silhouette_iou": 0.876,
+      "bounds": [
+        8,
+        48,
+        137,
+        115
+      ],
+      "reference_bounds": [
+        9,
+        50,
+        134,
+        113
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_drink_E_001.png",
+      "area_ratio": 1.133,
+      "width_ratio": 1.032,
+      "height_ratio": 1.063,
+      "silhouette_iou": 0.867,
+      "bounds": [
+        8,
+        48,
+        137,
+        115
+      ],
+      "reference_bounds": [
+        9,
+        50,
+        134,
+        113
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_graze_W_000.png",
+      "area_ratio": 1.21,
+      "width_ratio": 1.071,
+      "height_ratio": 1.067,
+      "silhouette_iou": 0.814,
+      "bounds": [
+        16,
+        54,
+        137,
+        118
+      ],
+      "reference_bounds": [
+        20,
+        57,
+        133,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_graze_W_001.png",
+      "area_ratio": 1.207,
+      "width_ratio": 1.071,
+      "height_ratio": 1.067,
+      "silhouette_iou": 0.814,
+      "bounds": [
+        16,
+        54,
+        137,
+        118
+      ],
+      "reference_bounds": [
+        20,
+        57,
+        133,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_drink_W_000.png",
+      "area_ratio": 1.214,
+      "width_ratio": 1.071,
+      "height_ratio": 1.067,
+      "silhouette_iou": 0.811,
+      "bounds": [
+        16,
+        54,
+        137,
+        118
+      ],
+      "reference_bounds": [
+        20,
+        57,
+        133,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_drink_W_001.png",
+      "area_ratio": 1.215,
+      "width_ratio": 1.08,
+      "height_ratio": 1.067,
+      "silhouette_iou": 0.81,
+      "bounds": [
+        16,
+        54,
+        138,
+        118
+      ],
+      "reference_bounds": [
+        20,
+        57,
+        133,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_sleep_S_000.png",
+      "area_ratio": 1.018,
+      "width_ratio": 1.0,
+      "height_ratio": 0.979,
+      "silhouette_iou": 0.956,
+      "bounds": [
+        42,
+        25,
+        106,
+        120
+      ],
+      "reference_bounds": [
+        42,
+        24,
+        106,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_sleep_S_001.png",
+      "area_ratio": 1.026,
+      "width_ratio": 1.016,
+      "height_ratio": 0.979,
+      "silhouette_iou": 0.953,
+      "bounds": [
+        41,
+        25,
+        106,
+        120
+      ],
+      "reference_bounds": [
+        42,
+        24,
+        106,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_scratch_S_000.png",
+      "area_ratio": 1.009,
+      "width_ratio": 1.016,
+      "height_ratio": 0.979,
+      "silhouette_iou": 0.896,
+      "bounds": [
+        42,
+        25,
+        107,
+        120
+      ],
+      "reference_bounds": [
+        42,
+        24,
+        106,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_scratch_S_001.png",
+      "area_ratio": 1.022,
+      "width_ratio": 1.016,
+      "height_ratio": 0.979,
+      "silhouette_iou": 0.953,
+      "bounds": [
+        41,
+        25,
+        106,
+        120
+      ],
+      "reference_bounds": [
+        42,
+        24,
+        106,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_sleep_N_000.png",
+      "area_ratio": 1.063,
+      "width_ratio": 1.0,
+      "height_ratio": 1.01,
+      "silhouette_iou": 0.935,
+      "bounds": [
+        53,
+        24,
+        103,
+        121
+      ],
+      "reference_bounds": [
+        53,
+        25,
+        103,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_sleep_N_001.png",
+      "area_ratio": 1.063,
+      "width_ratio": 1.0,
+      "height_ratio": 1.01,
+      "silhouette_iou": 0.935,
+      "bounds": [
+        53,
+        24,
+        103,
+        121
+      ],
+      "reference_bounds": [
+        53,
+        25,
+        103,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_scratch_N_000.png",
+      "area_ratio": 1.097,
+      "width_ratio": 1.04,
+      "height_ratio": 1.01,
+      "silhouette_iou": 0.907,
+      "bounds": [
+        53,
+        24,
+        105,
+        121
+      ],
+      "reference_bounds": [
+        53,
+        25,
+        103,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_scratch_N_001.png",
+      "area_ratio": 1.06,
+      "width_ratio": 1.0,
+      "height_ratio": 1.01,
+      "silhouette_iou": 0.922,
+      "bounds": [
+        53,
+        24,
+        103,
+        121
+      ],
+      "reference_bounds": [
+        53,
+        25,
+        103,
+        121
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_sleep_E_000.png",
+      "area_ratio": 0.986,
+      "width_ratio": 1.008,
+      "height_ratio": 0.952,
+      "silhouette_iou": 0.944,
+      "bounds": [
+        9,
+        54,
+        135,
+        114
+      ],
+      "reference_bounds": [
+        9,
+        50,
+        134,
+        113
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_sleep_E_001.png",
+      "area_ratio": 0.99,
+      "width_ratio": 1.008,
+      "height_ratio": 0.952,
+      "silhouette_iou": 0.942,
+      "bounds": [
+        9,
+        54,
+        135,
+        114
+      ],
+      "reference_bounds": [
+        9,
+        50,
+        134,
+        113
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_scratch_E_000.png",
+      "area_ratio": 0.973,
+      "width_ratio": 1.008,
+      "height_ratio": 0.921,
+      "silhouette_iou": 0.937,
+      "bounds": [
+        9,
+        54,
+        135,
+        112
+      ],
+      "reference_bounds": [
+        9,
+        50,
+        134,
+        113
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_scratch_E_001.png",
+      "area_ratio": 0.988,
+      "width_ratio": 1.008,
+      "height_ratio": 0.952,
+      "silhouette_iou": 0.942,
+      "bounds": [
+        9,
+        54,
+        135,
+        114
+      ],
+      "reference_bounds": [
+        9,
+        50,
+        134,
+        113
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_sleep_W_000.png",
+      "area_ratio": 1.104,
+      "width_ratio": 1.053,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.876,
+      "bounds": [
+        16,
+        57,
+        135,
+        117
+      ],
+      "reference_bounds": [
+        20,
+        57,
+        133,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_sleep_W_001.png",
+      "area_ratio": 1.103,
+      "width_ratio": 1.053,
+      "height_ratio": 0.983,
+      "silhouette_iou": 0.875,
+      "bounds": [
+        16,
+        58,
+        135,
+        117
+      ],
+      "reference_bounds": [
+        20,
+        57,
+        133,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_scratch_W_000.png",
+      "area_ratio": 1.113,
+      "width_ratio": 1.053,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.854,
+      "bounds": [
+        16,
+        57,
+        135,
+        117
+      ],
+      "reference_bounds": [
+        20,
+        57,
+        133,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/deinosuchus_scratch_W_001.png",
+      "area_ratio": 1.1,
+      "width_ratio": 1.053,
+      "height_ratio": 0.983,
+      "silhouette_iou": 0.875,
+      "bounds": [
+        16,
+        58,
+        135,
+        117
+      ],
+      "reference_bounds": [
+        20,
+        57,
+        133,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_graze_S_000.png",
+      "area_ratio": 0.992,
+      "width_ratio": 0.972,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.958,
+      "bounds": [
+        54,
+        21,
+        89,
+        117
+      ],
+      "reference_bounds": [
+        54,
+        21,
+        90,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_graze_S_001.png",
+      "area_ratio": 0.991,
+      "width_ratio": 0.972,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.95,
+      "bounds": [
+        54,
+        21,
+        89,
+        117
+      ],
+      "reference_bounds": [
+        54,
+        21,
+        90,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_drink_S_000.png",
+      "area_ratio": 0.995,
+      "width_ratio": 0.972,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.947,
+      "bounds": [
+        54,
+        21,
+        89,
+        117
+      ],
+      "reference_bounds": [
+        54,
+        21,
+        90,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_drink_S_001.png",
+      "area_ratio": 0.993,
+      "width_ratio": 0.972,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.943,
+      "bounds": [
+        54,
+        21,
+        89,
+        117
+      ],
+      "reference_bounds": [
+        54,
+        21,
+        90,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_graze_N_000.png",
+      "area_ratio": 0.967,
+      "width_ratio": 1.0,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.932,
+      "bounds": [
+        54,
+        24,
+        89,
+        114
+      ],
+      "reference_bounds": [
+        55,
+        23,
+        90,
+        114
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_graze_N_001.png",
+      "area_ratio": 0.949,
+      "width_ratio": 1.0,
+      "height_ratio": 0.956,
+      "silhouette_iou": 0.912,
+      "bounds": [
+        54,
+        27,
+        89,
+        114
+      ],
+      "reference_bounds": [
+        55,
+        23,
+        90,
+        114
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_drink_N_000.png",
+      "area_ratio": 0.953,
+      "width_ratio": 1.0,
+      "height_ratio": 0.956,
+      "silhouette_iou": 0.918,
+      "bounds": [
+        54,
+        27,
+        89,
+        114
+      ],
+      "reference_bounds": [
+        55,
+        23,
+        90,
+        114
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_drink_N_001.png",
+      "area_ratio": 0.95,
+      "width_ratio": 1.0,
+      "height_ratio": 0.956,
+      "silhouette_iou": 0.915,
+      "bounds": [
+        54,
+        27,
+        89,
+        114
+      ],
+      "reference_bounds": [
+        55,
+        23,
+        90,
+        114
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_graze_E_000.png",
+      "area_ratio": 0.963,
+      "width_ratio": 0.974,
+      "height_ratio": 1.022,
+      "silhouette_iou": 0.914,
+      "bounds": [
+        14,
+        49,
+        127,
+        96
+      ],
+      "reference_bounds": [
+        14,
+        50,
+        130,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_graze_E_001.png",
+      "area_ratio": 0.96,
+      "width_ratio": 0.966,
+      "height_ratio": 1.022,
+      "silhouette_iou": 0.886,
+      "bounds": [
+        14,
+        49,
+        126,
+        96
+      ],
+      "reference_bounds": [
+        14,
+        50,
+        130,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_drink_E_000.png",
+      "area_ratio": 0.959,
+      "width_ratio": 0.966,
+      "height_ratio": 1.022,
+      "silhouette_iou": 0.896,
+      "bounds": [
+        14,
+        49,
+        126,
+        96
+      ],
+      "reference_bounds": [
+        14,
+        50,
+        130,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_drink_E_001.png",
+      "area_ratio": 0.958,
+      "width_ratio": 0.966,
+      "height_ratio": 1.022,
+      "silhouette_iou": 0.887,
+      "bounds": [
+        14,
+        49,
+        126,
+        96
+      ],
+      "reference_bounds": [
+        14,
+        50,
+        130,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_graze_W_000.png",
+      "area_ratio": 0.966,
+      "width_ratio": 0.991,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.952,
+      "bounds": [
+        26,
+        53,
+        136,
+        92
+      ],
+      "reference_bounds": [
+        26,
+        53,
+        137,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_graze_W_001.png",
+      "area_ratio": 0.969,
+      "width_ratio": 0.991,
+      "height_ratio": 0.974,
+      "silhouette_iou": 0.921,
+      "bounds": [
+        27,
+        54,
+        137,
+        92
+      ],
+      "reference_bounds": [
+        26,
+        53,
+        137,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_drink_W_000.png",
+      "area_ratio": 0.962,
+      "width_ratio": 0.991,
+      "height_ratio": 0.974,
+      "silhouette_iou": 0.914,
+      "bounds": [
+        27,
+        54,
+        137,
+        92
+      ],
+      "reference_bounds": [
+        26,
+        53,
+        137,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_drink_W_001.png",
+      "area_ratio": 0.957,
+      "width_ratio": 0.991,
+      "height_ratio": 0.974,
+      "silhouette_iou": 0.913,
+      "bounds": [
+        27,
+        54,
+        137,
+        92
+      ],
+      "reference_bounds": [
+        26,
+        53,
+        137,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_sleep_S_000.png",
+      "area_ratio": 1.046,
+      "width_ratio": 1.0,
+      "height_ratio": 0.979,
+      "silhouette_iou": 0.935,
+      "bounds": [
+        53,
+        22,
+        89,
+        116
+      ],
+      "reference_bounds": [
+        54,
+        21,
+        90,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_sleep_S_001.png",
+      "area_ratio": 1.046,
+      "width_ratio": 1.028,
+      "height_ratio": 0.979,
+      "silhouette_iou": 0.931,
+      "bounds": [
+        53,
+        22,
+        90,
+        116
+      ],
+      "reference_bounds": [
+        54,
+        21,
+        90,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_scratch_S_000.png",
+      "area_ratio": 1.055,
+      "width_ratio": 1.056,
+      "height_ratio": 0.979,
+      "silhouette_iou": 0.856,
+      "bounds": [
+        51,
+        22,
+        89,
+        116
+      ],
+      "reference_bounds": [
+        54,
+        21,
+        90,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_scratch_S_001.png",
+      "area_ratio": 1.038,
+      "width_ratio": 1.0,
+      "height_ratio": 0.979,
+      "silhouette_iou": 0.876,
+      "bounds": [
+        53,
+        22,
+        89,
+        116
+      ],
+      "reference_bounds": [
+        54,
+        21,
+        90,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_sleep_N_000.png",
+      "area_ratio": 0.994,
+      "width_ratio": 1.029,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.944,
+      "bounds": [
+        54,
+        22,
+        90,
+        114
+      ],
+      "reference_bounds": [
+        55,
+        23,
+        90,
+        114
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_sleep_N_001.png",
+      "area_ratio": 0.999,
+      "width_ratio": 1.029,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.945,
+      "bounds": [
+        54,
+        23,
+        90,
+        114
+      ],
+      "reference_bounds": [
+        55,
+        23,
+        90,
+        114
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_scratch_N_000.png",
+      "area_ratio": 1.026,
+      "width_ratio": 1.029,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.924,
+      "bounds": [
+        54,
+        22,
+        90,
+        114
+      ],
+      "reference_bounds": [
+        55,
+        23,
+        90,
+        114
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_scratch_N_001.png",
+      "area_ratio": 1.021,
+      "width_ratio": 1.029,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.927,
+      "bounds": [
+        54,
+        23,
+        90,
+        113
+      ],
+      "reference_bounds": [
+        55,
+        23,
+        90,
+        114
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_sleep_E_000.png",
+      "area_ratio": 1.019,
+      "width_ratio": 1.0,
+      "height_ratio": 1.022,
+      "silhouette_iou": 0.951,
+      "bounds": [
+        14,
+        49,
+        130,
+        96
+      ],
+      "reference_bounds": [
+        14,
+        50,
+        130,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_sleep_E_001.png",
+      "area_ratio": 1.021,
+      "width_ratio": 1.0,
+      "height_ratio": 1.043,
+      "silhouette_iou": 0.904,
+      "bounds": [
+        14,
+        49,
+        130,
+        97
+      ],
+      "reference_bounds": [
+        14,
+        50,
+        130,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_scratch_E_000.png",
+      "area_ratio": 1.011,
+      "width_ratio": 1.0,
+      "height_ratio": 1.022,
+      "silhouette_iou": 0.866,
+      "bounds": [
+        14,
+        49,
+        130,
+        96
+      ],
+      "reference_bounds": [
+        14,
+        50,
+        130,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_scratch_E_001.png",
+      "area_ratio": 1.011,
+      "width_ratio": 1.0,
+      "height_ratio": 1.022,
+      "silhouette_iou": 0.896,
+      "bounds": [
+        14,
+        49,
+        130,
+        96
+      ],
+      "reference_bounds": [
+        14,
+        50,
+        130,
+        96
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_sleep_W_000.png",
+      "area_ratio": 1.039,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.942,
+      "bounds": [
+        26,
+        53,
+        137,
+        92
+      ],
+      "reference_bounds": [
+        26,
+        53,
+        137,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_sleep_W_001.png",
+      "area_ratio": 1.04,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.94,
+      "bounds": [
+        26,
+        53,
+        137,
+        92
+      ],
+      "reference_bounds": [
+        26,
+        53,
+        137,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_scratch_W_000.png",
+      "area_ratio": 1.112,
+      "width_ratio": 1.009,
+      "height_ratio": 1.256,
+      "silhouette_iou": 0.881,
+      "bounds": [
+        25,
+        53,
+        137,
+        102
+      ],
+      "reference_bounds": [
+        26,
+        53,
+        137,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/gallimimus_scratch_W_001.png",
+      "area_ratio": 1.076,
+      "width_ratio": 1.009,
+      "height_ratio": 1.154,
+      "silhouette_iou": 0.897,
+      "bounds": [
+        25,
+        53,
+        137,
+        98
+      ],
+      "reference_bounds": [
+        26,
+        53,
+        137,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_graze_S_000.png",
+      "area_ratio": 0.977,
+      "width_ratio": 0.975,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.942,
+      "bounds": [
+        56,
+        21,
+        95,
+        117
+      ],
+      "reference_bounds": [
+        55,
+        20,
+        95,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_graze_S_001.png",
+      "area_ratio": 0.979,
+      "width_ratio": 0.975,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.942,
+      "bounds": [
+        56,
+        21,
+        95,
+        117
+      ],
+      "reference_bounds": [
+        55,
+        20,
+        95,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_drink_S_000.png",
+      "area_ratio": 0.932,
+      "width_ratio": 0.95,
+      "height_ratio": 0.958,
+      "silhouette_iou": 0.929,
+      "bounds": [
+        56,
+        21,
+        94,
+        113
+      ],
+      "reference_bounds": [
+        55,
+        20,
+        95,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_drink_S_001.png",
+      "area_ratio": 0.929,
+      "width_ratio": 0.95,
+      "height_ratio": 0.958,
+      "silhouette_iou": 0.925,
+      "bounds": [
+        56,
+        21,
+        94,
+        113
+      ],
+      "reference_bounds": [
+        55,
+        20,
+        95,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_graze_N_000.png",
+      "area_ratio": 0.929,
+      "width_ratio": 0.974,
+      "height_ratio": 0.966,
+      "silhouette_iou": 0.921,
+      "bounds": [
+        64,
+        27,
+        102,
+        111
+      ],
+      "reference_bounds": [
+        64,
+        25,
+        103,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_graze_N_001.png",
+      "area_ratio": 0.933,
+      "width_ratio": 0.974,
+      "height_ratio": 0.966,
+      "silhouette_iou": 0.925,
+      "bounds": [
+        64,
+        27,
+        102,
+        111
+      ],
+      "reference_bounds": [
+        64,
+        25,
+        103,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_drink_N_000.png",
+      "area_ratio": 0.937,
+      "width_ratio": 0.974,
+      "height_ratio": 0.966,
+      "silhouette_iou": 0.93,
+      "bounds": [
+        64,
+        27,
+        102,
+        111
+      ],
+      "reference_bounds": [
+        64,
+        25,
+        103,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_drink_N_001.png",
+      "area_ratio": 0.932,
+      "width_ratio": 0.974,
+      "height_ratio": 0.966,
+      "silhouette_iou": 0.924,
+      "bounds": [
+        64,
+        27,
+        102,
+        111
+      ],
+      "reference_bounds": [
+        64,
+        25,
+        103,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_graze_E_000.png",
+      "area_ratio": 0.954,
+      "width_ratio": 0.99,
+      "height_ratio": 0.974,
+      "silhouette_iou": 0.88,
+      "bounds": [
+        21,
+        55,
+        122,
+        92
+      ],
+      "reference_bounds": [
+        21,
+        55,
+        123,
+        93
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_graze_E_001.png",
+      "area_ratio": 0.954,
+      "width_ratio": 0.98,
+      "height_ratio": 0.974,
+      "silhouette_iou": 0.881,
+      "bounds": [
+        21,
+        55,
+        121,
+        92
+      ],
+      "reference_bounds": [
+        21,
+        55,
+        123,
+        93
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_drink_E_000.png",
+      "area_ratio": 0.953,
+      "width_ratio": 0.99,
+      "height_ratio": 0.974,
+      "silhouette_iou": 0.918,
+      "bounds": [
+        21,
+        55,
+        122,
+        92
+      ],
+      "reference_bounds": [
+        21,
+        55,
+        123,
+        93
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_drink_E_001.png",
+      "area_ratio": 0.952,
+      "width_ratio": 0.99,
+      "height_ratio": 0.974,
+      "silhouette_iou": 0.939,
+      "bounds": [
+        21,
+        55,
+        122,
+        92
+      ],
+      "reference_bounds": [
+        21,
+        55,
+        123,
+        93
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_graze_W_000.png",
+      "area_ratio": 0.947,
+      "width_ratio": 0.981,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.911,
+      "bounds": [
+        30,
+        41,
+        135,
+        92
+      ],
+      "reference_bounds": [
+        28,
+        42,
+        135,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_graze_W_001.png",
+      "area_ratio": 0.943,
+      "width_ratio": 0.981,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.909,
+      "bounds": [
+        30,
+        41,
+        135,
+        92
+      ],
+      "reference_bounds": [
+        28,
+        42,
+        135,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_drink_W_000.png",
+      "area_ratio": 0.938,
+      "width_ratio": 0.981,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.913,
+      "bounds": [
+        30,
+        41,
+        135,
+        92
+      ],
+      "reference_bounds": [
+        28,
+        42,
+        135,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_drink_W_001.png",
+      "area_ratio": 0.941,
+      "width_ratio": 0.972,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.915,
+      "bounds": [
+        30,
+        41,
+        134,
+        92
+      ],
+      "reference_bounds": [
+        28,
+        42,
+        135,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_sleep_S_000.png",
+      "area_ratio": 1.036,
+      "width_ratio": 1.0,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.936,
+      "bounds": [
+        55,
+        19,
+        95,
+        114
+      ],
+      "reference_bounds": [
+        55,
+        20,
+        95,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_sleep_S_001.png",
+      "area_ratio": 1.035,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.938,
+      "bounds": [
+        55,
+        19,
+        95,
+        115
+      ],
+      "reference_bounds": [
+        55,
+        20,
+        95,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_scratch_S_000.png",
+      "area_ratio": 1.092,
+      "width_ratio": 1.2,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.886,
+      "bounds": [
+        55,
+        19,
+        103,
+        114
+      ],
+      "reference_bounds": [
+        55,
+        20,
+        95,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_scratch_S_001.png",
+      "area_ratio": 1.094,
+      "width_ratio": 1.175,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.884,
+      "bounds": [
+        55,
+        19,
+        102,
+        114
+      ],
+      "reference_bounds": [
+        55,
+        20,
+        95,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_sleep_N_000.png",
+      "area_ratio": 1.049,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.942,
+      "bounds": [
+        64,
+        25,
+        103,
+        112
+      ],
+      "reference_bounds": [
+        64,
+        25,
+        103,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_sleep_N_001.png",
+      "area_ratio": 1.047,
+      "width_ratio": 1.0,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.941,
+      "bounds": [
+        64,
+        25,
+        103,
+        113
+      ],
+      "reference_bounds": [
+        64,
+        25,
+        103,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_scratch_N_000.png",
+      "area_ratio": 1.088,
+      "width_ratio": 1.103,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.912,
+      "bounds": [
+        64,
+        25,
+        107,
+        113
+      ],
+      "reference_bounds": [
+        64,
+        25,
+        103,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_scratch_N_001.png",
+      "area_ratio": 1.075,
+      "width_ratio": 1.103,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.91,
+      "bounds": [
+        64,
+        25,
+        107,
+        113
+      ],
+      "reference_bounds": [
+        64,
+        25,
+        103,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_sleep_E_000.png",
+      "area_ratio": 1.072,
+      "width_ratio": 1.01,
+      "height_ratio": 1.026,
+      "silhouette_iou": 0.911,
+      "bounds": [
+        20,
+        54,
+        123,
+        93
+      ],
+      "reference_bounds": [
+        21,
+        55,
+        123,
+        93
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_sleep_E_001.png",
+      "area_ratio": 1.075,
+      "width_ratio": 1.01,
+      "height_ratio": 1.026,
+      "silhouette_iou": 0.914,
+      "bounds": [
+        20,
+        54,
+        123,
+        93
+      ],
+      "reference_bounds": [
+        21,
+        55,
+        123,
+        93
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_scratch_E_000.png",
+      "area_ratio": 1.099,
+      "width_ratio": 1.01,
+      "height_ratio": 1.158,
+      "silhouette_iou": 0.877,
+      "bounds": [
+        20,
+        54,
+        123,
+        98
+      ],
+      "reference_bounds": [
+        21,
+        55,
+        123,
+        93
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_scratch_E_001.png",
+      "area_ratio": 1.095,
+      "width_ratio": 1.01,
+      "height_ratio": 1.158,
+      "silhouette_iou": 0.883,
+      "bounds": [
+        20,
+        54,
+        123,
+        98
+      ],
+      "reference_bounds": [
+        21,
+        55,
+        123,
+        93
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_sleep_W_000.png",
+      "area_ratio": 1.027,
+      "width_ratio": 0.991,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.961,
+      "bounds": [
+        28,
+        41,
+        134,
+        92
+      ],
+      "reference_bounds": [
+        28,
+        42,
+        135,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_sleep_W_001.png",
+      "area_ratio": 1.031,
+      "width_ratio": 0.991,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.955,
+      "bounds": [
+        28,
+        41,
+        134,
+        92
+      ],
+      "reference_bounds": [
+        28,
+        42,
+        135,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_scratch_W_000.png",
+      "area_ratio": 1.079,
+      "width_ratio": 0.991,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.901,
+      "bounds": [
+        28,
+        41,
+        134,
+        92
+      ],
+      "reference_bounds": [
+        28,
+        42,
+        135,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/pachycephalosaurus_scratch_W_001.png",
+      "area_ratio": 1.078,
+      "width_ratio": 0.991,
+      "height_ratio": 1.02,
+      "silhouette_iou": 0.903,
+      "bounds": [
+        28,
+        41,
+        134,
+        92
+      ],
+      "reference_bounds": [
+        28,
+        42,
+        135,
+        92
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_graze_S_000.png",
+      "area_ratio": 1.009,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.967,
+      "bounds": [
+        55,
+        25,
+        96,
+        116
+      ],
+      "reference_bounds": [
+        55,
+        25,
+        96,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_graze_S_001.png",
+      "area_ratio": 1.012,
+      "width_ratio": 1.0,
+      "height_ratio": 1.022,
+      "silhouette_iou": 0.951,
+      "bounds": [
+        55,
+        24,
+        96,
+        117
+      ],
+      "reference_bounds": [
+        55,
+        25,
+        96,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_drink_S_000.png",
+      "area_ratio": 1.007,
+      "width_ratio": 1.0,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.963,
+      "bounds": [
+        55,
+        24,
+        96,
+        116
+      ],
+      "reference_bounds": [
+        55,
+        25,
+        96,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_drink_S_001.png",
+      "area_ratio": 1.006,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.965,
+      "bounds": [
+        55,
+        25,
+        96,
+        116
+      ],
+      "reference_bounds": [
+        55,
+        25,
+        96,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_graze_N_000.png",
+      "area_ratio": 1.009,
+      "width_ratio": 0.972,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.948,
+      "bounds": [
+        54,
+        24,
+        89,
+        120
+      ],
+      "reference_bounds": [
+        54,
+        25,
+        90,
+        120
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_graze_N_001.png",
+      "area_ratio": 1.01,
+      "width_ratio": 0.972,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.944,
+      "bounds": [
+        54,
+        24,
+        89,
+        120
+      ],
+      "reference_bounds": [
+        54,
+        25,
+        90,
+        120
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_drink_N_000.png",
+      "area_ratio": 1.009,
+      "width_ratio": 0.972,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.949,
+      "bounds": [
+        54,
+        24,
+        89,
+        120
+      ],
+      "reference_bounds": [
+        54,
+        25,
+        90,
+        120
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_drink_N_001.png",
+      "area_ratio": 1.012,
+      "width_ratio": 0.972,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.948,
+      "bounds": [
+        54,
+        24,
+        89,
+        120
+      ],
+      "reference_bounds": [
+        54,
+        25,
+        90,
+        120
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_graze_E_000.png",
+      "area_ratio": 1.003,
+      "width_ratio": 0.982,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.912,
+      "bounds": [
+        16,
+        55,
+        128,
+        106
+      ],
+      "reference_bounds": [
+        15,
+        55,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_graze_E_001.png",
+      "area_ratio": 1.005,
+      "width_ratio": 0.982,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.909,
+      "bounds": [
+        16,
+        55,
+        128,
+        106
+      ],
+      "reference_bounds": [
+        15,
+        55,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_drink_E_000.png",
+      "area_ratio": 1.004,
+      "width_ratio": 0.982,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.911,
+      "bounds": [
+        16,
+        55,
+        128,
+        106
+      ],
+      "reference_bounds": [
+        15,
+        55,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_drink_E_001.png",
+      "area_ratio": 1.001,
+      "width_ratio": 0.991,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.914,
+      "bounds": [
+        16,
+        55,
+        129,
+        106
+      ],
+      "reference_bounds": [
+        15,
+        55,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_graze_W_000.png",
+      "area_ratio": 1.004,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.963,
+      "bounds": [
+        17,
+        48,
+        134,
+        111
+      ],
+      "reference_bounds": [
+        17,
+        47,
+        134,
+        110
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_graze_W_001.png",
+      "area_ratio": 1.0,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.955,
+      "bounds": [
+        17,
+        48,
+        134,
+        111
+      ],
+      "reference_bounds": [
+        17,
+        47,
+        134,
+        110
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_drink_W_000.png",
+      "area_ratio": 1.003,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.965,
+      "bounds": [
+        17,
+        48,
+        134,
+        111
+      ],
+      "reference_bounds": [
+        17,
+        47,
+        134,
+        110
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_drink_W_001.png",
+      "area_ratio": 0.999,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.969,
+      "bounds": [
+        17,
+        48,
+        134,
+        111
+      ],
+      "reference_bounds": [
+        17,
+        47,
+        134,
+        110
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_sleep_S_000.png",
+      "area_ratio": 1.002,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.972,
+      "bounds": [
+        55,
+        24,
+        96,
+        115
+      ],
+      "reference_bounds": [
+        55,
+        25,
+        96,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_sleep_S_001.png",
+      "area_ratio": 0.997,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.973,
+      "bounds": [
+        55,
+        25,
+        96,
+        116
+      ],
+      "reference_bounds": [
+        55,
+        25,
+        96,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_scratch_S_000.png",
+      "area_ratio": 1.051,
+      "width_ratio": 1.122,
+      "height_ratio": 1.011,
+      "silhouette_iou": 0.913,
+      "bounds": [
+        50,
+        24,
+        96,
+        116
+      ],
+      "reference_bounds": [
+        55,
+        25,
+        96,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_scratch_S_001.png",
+      "area_ratio": 1.024,
+      "width_ratio": 1.122,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.928,
+      "bounds": [
+        50,
+        25,
+        96,
+        115
+      ],
+      "reference_bounds": [
+        55,
+        25,
+        96,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_sleep_N_000.png",
+      "area_ratio": 0.97,
+      "width_ratio": 1.0,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.945,
+      "bounds": [
+        55,
+        26,
+        91,
+        120
+      ],
+      "reference_bounds": [
+        54,
+        25,
+        90,
+        120
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_sleep_N_001.png",
+      "area_ratio": 0.975,
+      "width_ratio": 1.0,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.954,
+      "bounds": [
+        54,
+        26,
+        90,
+        120
+      ],
+      "reference_bounds": [
+        54,
+        25,
+        90,
+        120
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_scratch_N_000.png",
+      "area_ratio": 0.998,
+      "width_ratio": 1.139,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.872,
+      "bounds": [
+        54,
+        25,
+        95,
+        120
+      ],
+      "reference_bounds": [
+        54,
+        25,
+        90,
+        120
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_scratch_N_001.png",
+      "area_ratio": 0.997,
+      "width_ratio": 1.167,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.848,
+      "bounds": [
+        54,
+        25,
+        96,
+        120
+      ],
+      "reference_bounds": [
+        54,
+        25,
+        90,
+        120
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_sleep_E_000.png",
+      "area_ratio": 0.986,
+      "width_ratio": 0.991,
+      "height_ratio": 0.98,
+      "silhouette_iou": 0.939,
+      "bounds": [
+        16,
+        55,
+        129,
+        105
+      ],
+      "reference_bounds": [
+        15,
+        55,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_sleep_E_001.png",
+      "area_ratio": 0.983,
+      "width_ratio": 0.991,
+      "height_ratio": 0.98,
+      "silhouette_iou": 0.94,
+      "bounds": [
+        16,
+        55,
+        129,
+        105
+      ],
+      "reference_bounds": [
+        15,
+        55,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_scratch_E_000.png",
+      "area_ratio": 1.051,
+      "width_ratio": 0.991,
+      "height_ratio": 0.98,
+      "silhouette_iou": 0.912,
+      "bounds": [
+        16,
+        55,
+        129,
+        105
+      ],
+      "reference_bounds": [
+        15,
+        55,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_scratch_E_001.png",
+      "area_ratio": 1.041,
+      "width_ratio": 0.991,
+      "height_ratio": 0.98,
+      "silhouette_iou": 0.923,
+      "bounds": [
+        16,
+        55,
+        129,
+        105
+      ],
+      "reference_bounds": [
+        15,
+        55,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_sleep_W_000.png",
+      "area_ratio": 0.98,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.959,
+      "bounds": [
+        17,
+        47,
+        134,
+        110
+      ],
+      "reference_bounds": [
+        17,
+        47,
+        134,
+        110
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_sleep_W_001.png",
+      "area_ratio": 0.978,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.958,
+      "bounds": [
+        17,
+        47,
+        134,
+        110
+      ],
+      "reference_bounds": [
+        17,
+        47,
+        134,
+        110
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_scratch_W_000.png",
+      "area_ratio": 1.005,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.955,
+      "bounds": [
+        17,
+        47,
+        134,
+        110
+      ],
+      "reference_bounds": [
+        17,
+        47,
+        134,
+        110
+      ]
+    },
+    {
+      "file": "assets/behavior_native/parasaurolophus_scratch_W_001.png",
+      "area_ratio": 0.985,
+      "width_ratio": 0.991,
+      "height_ratio": 0.984,
+      "silhouette_iou": 0.964,
+      "bounds": [
+        17,
+        47,
+        133,
+        109
+      ],
+      "reference_bounds": [
+        17,
+        47,
+        134,
+        110
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_graze_S_000.png",
+      "area_ratio": 1.036,
+      "width_ratio": 1.0,
+      "height_ratio": 1.052,
+      "silhouette_iou": 0.921,
+      "bounds": [
+        59,
+        27,
+        109,
+        129
+      ],
+      "reference_bounds": [
+        59,
+        26,
+        109,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_graze_S_001.png",
+      "area_ratio": 1.041,
+      "width_ratio": 1.0,
+      "height_ratio": 1.052,
+      "silhouette_iou": 0.917,
+      "bounds": [
+        59,
+        27,
+        109,
+        129
+      ],
+      "reference_bounds": [
+        59,
+        26,
+        109,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_drink_S_000.png",
+      "area_ratio": 1.037,
+      "width_ratio": 1.0,
+      "height_ratio": 1.052,
+      "silhouette_iou": 0.919,
+      "bounds": [
+        59,
+        27,
+        109,
+        129
+      ],
+      "reference_bounds": [
+        59,
+        26,
+        109,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_drink_S_001.png",
+      "area_ratio": 1.037,
+      "width_ratio": 1.0,
+      "height_ratio": 1.052,
+      "silhouette_iou": 0.92,
+      "bounds": [
+        59,
+        27,
+        109,
+        129
+      ],
+      "reference_bounds": [
+        59,
+        26,
+        109,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_graze_N_000.png",
+      "area_ratio": 0.965,
+      "width_ratio": 1.024,
+      "height_ratio": 0.935,
+      "silhouette_iou": 0.891,
+      "bounds": [
+        63,
+        31,
+        105,
+        117
+      ],
+      "reference_bounds": [
+        63,
+        24,
+        104,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_graze_N_001.png",
+      "area_ratio": 0.964,
+      "width_ratio": 1.024,
+      "height_ratio": 0.946,
+      "silhouette_iou": 0.894,
+      "bounds": [
+        63,
+        30,
+        105,
+        117
+      ],
+      "reference_bounds": [
+        63,
+        24,
+        104,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_drink_N_000.png",
+      "area_ratio": 0.97,
+      "width_ratio": 1.024,
+      "height_ratio": 0.946,
+      "silhouette_iou": 0.897,
+      "bounds": [
+        63,
+        30,
+        105,
+        117
+      ],
+      "reference_bounds": [
+        63,
+        24,
+        104,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_drink_N_001.png",
+      "area_ratio": 0.968,
+      "width_ratio": 1.024,
+      "height_ratio": 0.946,
+      "silhouette_iou": 0.894,
+      "bounds": [
+        63,
+        30,
+        105,
+        117
+      ],
+      "reference_bounds": [
+        63,
+        24,
+        104,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_graze_E_000.png",
+      "area_ratio": 1.01,
+      "width_ratio": 1.009,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.865,
+      "bounds": [
+        17,
+        45,
+        130,
+        106
+      ],
+      "reference_bounds": [
+        17,
+        45,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_graze_E_001.png",
+      "area_ratio": 1.012,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.864,
+      "bounds": [
+        17,
+        45,
+        129,
+        106
+      ],
+      "reference_bounds": [
+        17,
+        45,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_drink_E_000.png",
+      "area_ratio": 1.008,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.868,
+      "bounds": [
+        17,
+        45,
+        129,
+        106
+      ],
+      "reference_bounds": [
+        17,
+        45,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_drink_E_001.png",
+      "area_ratio": 1.012,
+      "width_ratio": 1.009,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.878,
+      "bounds": [
+        17,
+        45,
+        130,
+        106
+      ],
+      "reference_bounds": [
+        17,
+        45,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_graze_W_000.png",
+      "area_ratio": 1.003,
+      "width_ratio": 0.991,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.942,
+      "bounds": [
+        28,
+        48,
+        139,
+        117
+      ],
+      "reference_bounds": [
+        27,
+        48,
+        139,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_graze_W_001.png",
+      "area_ratio": 1.004,
+      "width_ratio": 0.991,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.952,
+      "bounds": [
+        28,
+        48,
+        139,
+        117
+      ],
+      "reference_bounds": [
+        27,
+        48,
+        139,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_drink_W_000.png",
+      "area_ratio": 1.001,
+      "width_ratio": 0.991,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.944,
+      "bounds": [
+        28,
+        48,
+        139,
+        117
+      ],
+      "reference_bounds": [
+        27,
+        48,
+        139,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_drink_W_001.png",
+      "area_ratio": 1.0,
+      "width_ratio": 0.991,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.943,
+      "bounds": [
+        28,
+        48,
+        139,
+        117
+      ],
+      "reference_bounds": [
+        27,
+        48,
+        139,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_sleep_S_000.png",
+      "area_ratio": 0.981,
+      "width_ratio": 0.98,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.975,
+      "bounds": [
+        59,
+        26,
+        108,
+        123
+      ],
+      "reference_bounds": [
+        59,
+        26,
+        109,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_sleep_S_001.png",
+      "area_ratio": 0.978,
+      "width_ratio": 0.98,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.973,
+      "bounds": [
+        59,
+        26,
+        108,
+        123
+      ],
+      "reference_bounds": [
+        59,
+        26,
+        109,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_scratch_S_000.png",
+      "area_ratio": 0.987,
+      "width_ratio": 0.98,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.952,
+      "bounds": [
+        59,
+        26,
+        108,
+        123
+      ],
+      "reference_bounds": [
+        59,
+        26,
+        109,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_scratch_S_001.png",
+      "area_ratio": 0.991,
+      "width_ratio": 0.98,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.955,
+      "bounds": [
+        59,
+        26,
+        108,
+        123
+      ],
+      "reference_bounds": [
+        59,
+        26,
+        109,
+        123
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_sleep_N_000.png",
+      "area_ratio": 0.981,
+      "width_ratio": 1.0,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.967,
+      "bounds": [
+        63,
+        24,
+        104,
+        115
+      ],
+      "reference_bounds": [
+        63,
+        24,
+        104,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_sleep_N_001.png",
+      "area_ratio": 0.983,
+      "width_ratio": 1.024,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.963,
+      "bounds": [
+        62,
+        24,
+        104,
+        115
+      ],
+      "reference_bounds": [
+        63,
+        24,
+        104,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_scratch_N_000.png",
+      "area_ratio": 0.988,
+      "width_ratio": 1.024,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.955,
+      "bounds": [
+        62,
+        24,
+        104,
+        115
+      ],
+      "reference_bounds": [
+        63,
+        24,
+        104,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_scratch_N_001.png",
+      "area_ratio": 0.993,
+      "width_ratio": 1.024,
+      "height_ratio": 0.989,
+      "silhouette_iou": 0.956,
+      "bounds": [
+        62,
+        24,
+        104,
+        115
+      ],
+      "reference_bounds": [
+        63,
+        24,
+        104,
+        116
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_sleep_E_000.png",
+      "area_ratio": 0.978,
+      "width_ratio": 0.982,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.939,
+      "bounds": [
+        17,
+        45,
+        127,
+        106
+      ],
+      "reference_bounds": [
+        17,
+        45,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_sleep_E_001.png",
+      "area_ratio": 0.98,
+      "width_ratio": 0.991,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.94,
+      "bounds": [
+        17,
+        45,
+        128,
+        106
+      ],
+      "reference_bounds": [
+        17,
+        45,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_scratch_E_000.png",
+      "area_ratio": 0.981,
+      "width_ratio": 0.991,
+      "height_ratio": 0.984,
+      "silhouette_iou": 0.972,
+      "bounds": [
+        17,
+        45,
+        128,
+        105
+      ],
+      "reference_bounds": [
+        17,
+        45,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_scratch_E_001.png",
+      "area_ratio": 0.98,
+      "width_ratio": 0.991,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.971,
+      "bounds": [
+        17,
+        45,
+        128,
+        106
+      ],
+      "reference_bounds": [
+        17,
+        45,
+        129,
+        106
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_sleep_W_000.png",
+      "area_ratio": 0.967,
+      "width_ratio": 0.991,
+      "height_ratio": 0.986,
+      "silhouette_iou": 0.963,
+      "bounds": [
+        28,
+        48,
+        139,
+        116
+      ],
+      "reference_bounds": [
+        27,
+        48,
+        139,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_sleep_W_001.png",
+      "area_ratio": 0.966,
+      "width_ratio": 0.991,
+      "height_ratio": 0.986,
+      "silhouette_iou": 0.963,
+      "bounds": [
+        28,
+        48,
+        139,
+        116
+      ],
+      "reference_bounds": [
+        27,
+        48,
+        139,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_scratch_W_000.png",
+      "area_ratio": 0.967,
+      "width_ratio": 0.991,
+      "height_ratio": 0.986,
+      "silhouette_iou": 0.963,
+      "bounds": [
+        28,
+        48,
+        139,
+        116
+      ],
+      "reference_bounds": [
+        27,
+        48,
+        139,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/triceratops_scratch_W_001.png",
+      "area_ratio": 0.966,
+      "width_ratio": 0.991,
+      "height_ratio": 0.986,
+      "silhouette_iou": 0.963,
+      "bounds": [
+        28,
+        48,
+        139,
+        116
+      ],
+      "reference_bounds": [
+        27,
+        48,
+        139,
+        117
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_graze_S_000.png",
+      "area_ratio": 1.315,
+      "width_ratio": 1.302,
+      "height_ratio": 1.074,
+      "silhouette_iou": 0.735,
+      "bounds": [
+        56,
+        24,
+        112,
+        125
+      ],
+      "reference_bounds": [
+        61,
+        24,
+        104,
+        118
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_graze_S_001.png",
+      "area_ratio": 1.328,
+      "width_ratio": 1.302,
+      "height_ratio": 1.085,
+      "silhouette_iou": 0.733,
+      "bounds": [
+        56,
+        24,
+        112,
+        126
+      ],
+      "reference_bounds": [
+        61,
+        24,
+        104,
+        118
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_drink_S_000.png",
+      "area_ratio": 1.323,
+      "width_ratio": 1.302,
+      "height_ratio": 1.085,
+      "silhouette_iou": 0.734,
+      "bounds": [
+        56,
+        24,
+        112,
+        126
+      ],
+      "reference_bounds": [
+        61,
+        24,
+        104,
+        118
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_drink_S_001.png",
+      "area_ratio": 1.328,
+      "width_ratio": 1.302,
+      "height_ratio": 1.085,
+      "silhouette_iou": 0.732,
+      "bounds": [
+        56,
+        24,
+        112,
+        126
+      ],
+      "reference_bounds": [
+        61,
+        24,
+        104,
+        118
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_graze_N_000.png",
+      "area_ratio": 1.244,
+      "width_ratio": 1.214,
+      "height_ratio": 1.089,
+      "silhouette_iou": 0.672,
+      "bounds": [
+        50,
+        26,
+        101,
+        136
+      ],
+      "reference_bounds": [
+        51,
+        29,
+        93,
+        130
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_graze_N_001.png",
+      "area_ratio": 1.239,
+      "width_ratio": 1.19,
+      "height_ratio": 1.089,
+      "silhouette_iou": 0.675,
+      "bounds": [
+        50,
+        26,
+        100,
+        136
+      ],
+      "reference_bounds": [
+        51,
+        29,
+        93,
+        130
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_drink_N_000.png",
+      "area_ratio": 1.232,
+      "width_ratio": 1.19,
+      "height_ratio": 1.089,
+      "silhouette_iou": 0.677,
+      "bounds": [
+        50,
+        26,
+        100,
+        136
+      ],
+      "reference_bounds": [
+        51,
+        29,
+        93,
+        130
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_drink_N_001.png",
+      "area_ratio": 1.232,
+      "width_ratio": 1.19,
+      "height_ratio": 1.089,
+      "silhouette_iou": 0.678,
+      "bounds": [
+        50,
+        26,
+        100,
+        136
+      ],
+      "reference_bounds": [
+        51,
+        29,
+        93,
+        130
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_graze_E_000.png",
+      "area_ratio": 1.0,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 1.0,
+      "bounds": [
+        12,
+        48,
+        138,
+        112
+      ],
+      "reference_bounds": [
+        12,
+        48,
+        138,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_graze_E_001.png",
+      "area_ratio": 1.0,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 1.0,
+      "bounds": [
+        12,
+        48,
+        138,
+        112
+      ],
+      "reference_bounds": [
+        12,
+        48,
+        138,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_drink_E_000.png",
+      "area_ratio": 1.0,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 1.0,
+      "bounds": [
+        12,
+        48,
+        138,
+        112
+      ],
+      "reference_bounds": [
+        12,
+        48,
+        138,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_drink_E_001.png",
+      "area_ratio": 1.0,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 1.0,
+      "bounds": [
+        12,
+        48,
+        138,
+        112
+      ],
+      "reference_bounds": [
+        12,
+        48,
+        138,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_graze_W_000.png",
+      "area_ratio": 1.0,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 1.0,
+      "bounds": [
+        21,
+        33,
+        140,
+        103
+      ],
+      "reference_bounds": [
+        21,
+        33,
+        140,
+        103
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_graze_W_001.png",
+      "area_ratio": 1.0,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 1.0,
+      "bounds": [
+        21,
+        33,
+        140,
+        103
+      ],
+      "reference_bounds": [
+        21,
+        33,
+        140,
+        103
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_drink_W_000.png",
+      "area_ratio": 1.0,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 1.0,
+      "bounds": [
+        21,
+        33,
+        140,
+        103
+      ],
+      "reference_bounds": [
+        21,
+        33,
+        140,
+        103
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_drink_W_001.png",
+      "area_ratio": 1.0,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 1.0,
+      "bounds": [
+        21,
+        33,
+        140,
+        103
+      ],
+      "reference_bounds": [
+        21,
+        33,
+        140,
+        103
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_sleep_S_000.png",
+      "area_ratio": 0.983,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.974,
+      "bounds": [
+        61,
+        24,
+        104,
+        118
+      ],
+      "reference_bounds": [
+        61,
+        24,
+        104,
+        118
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_sleep_S_001.png",
+      "area_ratio": 0.983,
+      "width_ratio": 1.0,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.975,
+      "bounds": [
+        61,
+        24,
+        104,
+        118
+      ],
+      "reference_bounds": [
+        61,
+        24,
+        104,
+        118
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_scratch_S_000.png",
+      "area_ratio": 1.061,
+      "width_ratio": 1.256,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.904,
+      "bounds": [
+        50,
+        24,
+        104,
+        118
+      ],
+      "reference_bounds": [
+        61,
+        24,
+        104,
+        118
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_scratch_S_001.png",
+      "area_ratio": 1.063,
+      "width_ratio": 1.163,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.892,
+      "bounds": [
+        54,
+        24,
+        104,
+        118
+      ],
+      "reference_bounds": [
+        61,
+        24,
+        104,
+        118
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_sleep_N_000.png",
+      "area_ratio": 0.962,
+      "width_ratio": 1.0,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.958,
+      "bounds": [
+        51,
+        29,
+        93,
+        129
+      ],
+      "reference_bounds": [
+        51,
+        29,
+        93,
+        130
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_sleep_N_001.png",
+      "area_ratio": 0.963,
+      "width_ratio": 1.0,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.959,
+      "bounds": [
+        51,
+        29,
+        93,
+        129
+      ],
+      "reference_bounds": [
+        51,
+        29,
+        93,
+        130
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_scratch_N_000.png",
+      "area_ratio": 0.968,
+      "width_ratio": 1.143,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.882,
+      "bounds": [
+        45,
+        29,
+        93,
+        129
+      ],
+      "reference_bounds": [
+        51,
+        29,
+        93,
+        130
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_scratch_N_001.png",
+      "area_ratio": 0.969,
+      "width_ratio": 1.048,
+      "height_ratio": 0.99,
+      "silhouette_iou": 0.946,
+      "bounds": [
+        49,
+        29,
+        93,
+        129
+      ],
+      "reference_bounds": [
+        51,
+        29,
+        93,
+        130
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_sleep_E_000.png",
+      "area_ratio": 0.974,
+      "width_ratio": 0.992,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.95,
+      "bounds": [
+        12,
+        48,
+        137,
+        112
+      ],
+      "reference_bounds": [
+        12,
+        48,
+        138,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_sleep_E_001.png",
+      "area_ratio": 0.976,
+      "width_ratio": 0.992,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.95,
+      "bounds": [
+        12,
+        48,
+        137,
+        112
+      ],
+      "reference_bounds": [
+        12,
+        48,
+        138,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_scratch_E_000.png",
+      "area_ratio": 0.973,
+      "width_ratio": 0.992,
+      "height_ratio": 1.031,
+      "silhouette_iou": 0.934,
+      "bounds": [
+        12,
+        46,
+        137,
+        112
+      ],
+      "reference_bounds": [
+        12,
+        48,
+        138,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_scratch_E_001.png",
+      "area_ratio": 0.979,
+      "width_ratio": 0.992,
+      "height_ratio": 1.016,
+      "silhouette_iou": 0.933,
+      "bounds": [
+        12,
+        46,
+        137,
+        111
+      ],
+      "reference_bounds": [
+        12,
+        48,
+        138,
+        112
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_sleep_W_000.png",
+      "area_ratio": 0.97,
+      "width_ratio": 0.992,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.96,
+      "bounds": [
+        21,
+        33,
+        139,
+        103
+      ],
+      "reference_bounds": [
+        21,
+        33,
+        140,
+        103
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_sleep_W_001.png",
+      "area_ratio": 0.966,
+      "width_ratio": 0.992,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.958,
+      "bounds": [
+        21,
+        33,
+        139,
+        103
+      ],
+      "reference_bounds": [
+        21,
+        33,
+        140,
+        103
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_scratch_W_000.png",
+      "area_ratio": 1.002,
+      "width_ratio": 0.992,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.935,
+      "bounds": [
+        21,
+        33,
+        139,
+        103
+      ],
+      "reference_bounds": [
+        21,
+        33,
+        140,
+        103
+      ]
+    },
+    {
+      "file": "assets/behavior_native/tyrannosaurus_scratch_W_001.png",
+      "area_ratio": 0.996,
+      "width_ratio": 0.992,
+      "height_ratio": 1.0,
+      "silhouette_iou": 0.936,
+      "bounds": [
+        21,
+        33,
+        139,
+        103
+      ],
+      "reference_bounds": [
+        21,
+        33,
+        140,
+        103
+      ]
+    }
+  ]
+}

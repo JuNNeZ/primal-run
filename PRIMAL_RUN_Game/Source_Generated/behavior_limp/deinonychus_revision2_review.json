@@ -1,0 +1,418 @@
+{
+  "species": "deinonychus",
+  "source": "Source_Generated/behavior_limp/deinonychus_revision2.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "canonical_reference": "Source_Generated/behavior_limp/deinonychus_canonical_walk23_reference.png",
+  "status": "prototype_static",
+  "runtime_enabled": false,
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Native light/dark reviewed. Usable poses retain size, silhouette and tail with held hindfoot. Failed poses retain native fallback; authored changes remain unapproved prototypes.",
+  "frames": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinonychus_limp_S_002.png",
+      "species": "deinonychus",
+      "direction": "S",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/deinonychus_revision2.png",
+      "source_sha256": "429cad5aeabc46832d56a023963189c4e46c8462b628d21a671a885f94c2b865",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/deinonychus_walk_S_002.png",
+      "canonical_sha256": "df3d944ae3b36507a4b23fc4c8b3ffda0f61580f4dfcac8297ebad157dc7a754",
+      "export_sha256": "3301e2f0d856dd734a6a52e435be53d5f1ba5fb5078fd94fc6e142e6e2c73925",
+      "silhouette_iou": 0.0854,
+      "extent_ratios": [
+        1.0,
+        1.0425531914893618
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: fixed-anchor silhouette mismatch; north/south displaced sideways; west2 crest/foot changed.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinonychus_limp_S_003.png",
+      "species": "deinonychus",
+      "direction": "S",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/deinonychus_revision2.png",
+      "source_sha256": "429cad5aeabc46832d56a023963189c4e46c8462b628d21a671a885f94c2b865",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/deinonychus_walk_S_003.png",
+      "canonical_sha256": "a8f9b1d37eeb385ff8fd631491674515b58518921c1e4ca94addb3150089d0f7",
+      "export_sha256": "9ced5e161a6af18568603670e8df9769a03eeedbfd8eaeba7af3a9736095fa78",
+      "silhouette_iou": 0.0958,
+      "extent_ratios": [
+        0.9285714285714286,
+        1.0425531914893618
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: fixed-anchor silhouette mismatch; north/south displaced sideways; west2 crest/foot changed.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinonychus_limp_N_002.png",
+      "species": "deinonychus",
+      "direction": "N",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/deinonychus_revision2.png",
+      "source_sha256": "429cad5aeabc46832d56a023963189c4e46c8462b628d21a671a885f94c2b865",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/deinonychus_walk_N_002.png",
+      "canonical_sha256": "b50ac58fec999b978e552151348da4928a7ee11bdb44bfa2280be1be57e8c5db",
+      "export_sha256": "81966ba43dc6876b3b9f47ac76309f2d16de712054064d1139bfebc2dfd509b5",
+      "silhouette_iou": 0.1661,
+      "extent_ratios": [
+        1.0,
+        1.0217391304347827
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: fixed-anchor silhouette mismatch; north/south displaced sideways; west2 crest/foot changed.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinonychus_limp_N_003.png",
+      "species": "deinonychus",
+      "direction": "N",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/deinonychus_revision2.png",
+      "source_sha256": "429cad5aeabc46832d56a023963189c4e46c8462b628d21a671a885f94c2b865",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/deinonychus_walk_N_003.png",
+      "canonical_sha256": "2c6968b5352d30b74d17640e4c1e733b19ab5ee120fedb16ef4ca744bcdd93b6",
+      "export_sha256": "8c5214dd9f614857e7081ae31c9d4e56d2a6d366a45b9c2b4d0d03e489a7cf37",
+      "silhouette_iou": 0.1646,
+      "extent_ratios": [
+        1.05,
+        1.0217391304347827
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: fixed-anchor silhouette mismatch; north/south displaced sideways; west2 crest/foot changed.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinonychus_limp_E_002.png",
+      "species": "deinonychus",
+      "direction": "E",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/deinonychus_revision2.png",
+      "source_sha256": "429cad5aeabc46832d56a023963189c4e46c8462b628d21a671a885f94c2b865",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/deinonychus_walk_E_002.png",
+      "canonical_sha256": "8b45a4e2e0487b4dfb0675b70b4c5dfd4dc1701258b166f6ed86d471160013cb",
+      "export_sha256": "afdca030d3ee90a8d9866331b4e99d164d0e6304346c8e6f3c9f811b68956299",
+      "silhouette_iou": 0.8702,
+      "extent_ratios": [
+        1.0344827586206897,
+        0.9696969696969697
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinonychus_limp_E_003.png",
+      "species": "deinonychus",
+      "direction": "E",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/deinonychus_revision2.png",
+      "source_sha256": "429cad5aeabc46832d56a023963189c4e46c8462b628d21a671a885f94c2b865",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/deinonychus_walk_E_003.png",
+      "canonical_sha256": "768b5f88361be956bdf6dc9a265f51db646bb6418294004792a147eefaf6fc09",
+      "export_sha256": "d50283a2dd2601b6ec765315496e4588fd8ab2f5938faf770b275e5219d5ce28",
+      "silhouette_iou": 0.8708,
+      "extent_ratios": [
+        1.0,
+        0.9142857142857143
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 2
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinonychus_limp_W_002.png",
+      "species": "deinonychus",
+      "direction": "W",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/deinonychus_revision2.png",
+      "source_sha256": "429cad5aeabc46832d56a023963189c4e46c8462b628d21a671a885f94c2b865",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/deinonychus_walk_W_002.png",
+      "canonical_sha256": "ad5f5b0ade898cf96f6ccbb8f6edfa13588f85aa7ca1a72bb55513d08729bb57",
+      "export_sha256": "feef6a717d58399bb2a43d5a8ffa632ddf26cacc57f73b7586f35d0ccf0e9909",
+      "silhouette_iou": 0.847,
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "technical_usable": false,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": false,
+      "review": "Rejected: fixed-anchor silhouette mismatch; north/south displaced sideways; west2 crest/foot changed.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/deinonychus_limp_W_003.png",
+      "species": "deinonychus",
+      "direction": "W",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/deinonychus_revision2.png",
+      "source_sha256": "429cad5aeabc46832d56a023963189c4e46c8462b628d21a671a885f94c2b865",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/deinonychus_walk_W_003.png",
+      "canonical_sha256": "013b88e1ead0da58111f83294b3abb7b3ddd88cb8c27cd25f3a6f340a29fab9d",
+      "export_sha256": "8c81e2b78b1c9367caa4c2905fcce7181bab914407974074c6a067987e2b38e5",
+      "silhouette_iou": 0.8701,
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    }
+  ],
+  "prompt_file": "Source_Generated/behavior_limp/deinonychus_revision2_prompt.txt",
+  "source_sha256": "429cad5aeabc46832d56a023963189c4e46c8462b628d21a671a885f94c2b865"
+}

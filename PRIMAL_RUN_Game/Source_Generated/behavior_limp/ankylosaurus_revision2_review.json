@@ -1,0 +1,39 @@
+{
+  "species": "ankylosaurus",
+  "source": "Source_Generated/behavior_limp/ankylosaurus_revision2.png",
+  "canonical_reference": "Source_Generated/behavior_limp/ankylosaurus_canonical_walk23_reference.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "cell_dimensions": [
+    384,
+    256
+  ],
+  "direction_rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "authored_keypose_columns": {
+    "2": 2,
+    "3": 3
+  },
+  "source_hip_anchor": [
+    192,
+    128
+  ],
+  "sampling_stride": 2,
+  "sampling_offset": 1,
+  "alpha_threshold": 192,
+  "origin": [
+    72,
+    72
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_enabled": true,
+  "review": "Canonical WALK2/3 source edit: continuous clubtail at alpha192, four limbs, matching armour family/hip. Extent ratios1.00\u20131.0213 and native silhouette IoU0.9099\u20130.9681. Runtime prototype eligible, production unapproved."
+}

@@ -1,0 +1,474 @@
+[
+  {
+    "file": "Source_Generated/behavior_limp/review_exports/ankylosaurus_limp_S_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "limp",
+    "direction": "S",
+    "frame": 2,
+    "source": "Source_Generated/behavior_limp/ankylosaurus_revision2.png",
+    "source_sha256": "eef9282a49a48bc0795f6b1db0fe4ee48495c7f28cb686bdb628a8875e4a059e",
+    "source_crop": [
+      768,
+      0,
+      1152,
+      256
+    ],
+    "source_cell_anchor": [
+      192,
+      128
+    ],
+    "registration_offset": [
+      -24,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "123491e15b87b0ff8bc63df09d6b37555fe9c48d790be8d789db4ab421cf2033",
+    "canonical": "assets/player_full/ankylosaurus_walk_S_002.png",
+    "canonical_sha256": "1778f843027c6db3ddcc283f29c102052943fa110bee544e03fe26c626055dec",
+    "changed_pixels": 1692,
+    "silhouette_iou": 0.9555,
+    "canonical_bounds": [
+      52,
+      19,
+      103,
+      109
+    ],
+    "export_bounds": [
+      51,
+      19,
+      103,
+      109
+    ],
+    "extent_ratio": [
+      1.0196,
+      1.0
+    ],
+    "review_notes": "Native visual comparison: four legs and continuous clubtail; same armour family and hip. Shortened hindfoot subtle; unapproved prototype.",
+    "status": "prototype_static",
+    "runtime_enabled": true,
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "Source_Generated/behavior_limp/review_exports/ankylosaurus_limp_S_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "limp",
+    "direction": "S",
+    "frame": 3,
+    "source": "Source_Generated/behavior_limp/ankylosaurus_revision2.png",
+    "source_sha256": "eef9282a49a48bc0795f6b1db0fe4ee48495c7f28cb686bdb628a8875e4a059e",
+    "source_crop": [
+      1152,
+      0,
+      1536,
+      256
+    ],
+    "source_cell_anchor": [
+      192,
+      128
+    ],
+    "registration_offset": [
+      -24,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "04d3dc3e05c539517f3db1712c7516185b0cd146f5c1ed5ebcb0f61d68ae37e2",
+    "canonical": "assets/player_full/ankylosaurus_walk_S_003.png",
+    "canonical_sha256": "820af4fa5041672a1a7e9bf79dd4e461ea5590ef76d5bd7233aac2220f7a23c7",
+    "changed_pixels": 1675,
+    "silhouette_iou": 0.9545,
+    "canonical_bounds": [
+      43,
+      18,
+      94,
+      109
+    ],
+    "export_bounds": [
+      42,
+      18,
+      94,
+      109
+    ],
+    "extent_ratio": [
+      1.0196,
+      1.0
+    ],
+    "review_notes": "Native visual comparison: four legs and continuous clubtail; same armour family and hip. Shortened hindfoot subtle; unapproved prototype.",
+    "status": "prototype_static",
+    "runtime_enabled": true,
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "Source_Generated/behavior_limp/review_exports/ankylosaurus_limp_N_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "limp",
+    "direction": "N",
+    "frame": 2,
+    "source": "Source_Generated/behavior_limp/ankylosaurus_revision2.png",
+    "source_sha256": "eef9282a49a48bc0795f6b1db0fe4ee48495c7f28cb686bdb628a8875e4a059e",
+    "source_crop": [
+      768,
+      256,
+      1152,
+      512
+    ],
+    "source_cell_anchor": [
+      192,
+      128
+    ],
+    "registration_offset": [
+      -24,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "e41e0c3c66a23a20868a3afb61eba8e25dcbe34c19ecb24515cc53182d49689c",
+    "canonical": "assets/player_full/ankylosaurus_walk_N_002.png",
+    "canonical_sha256": "2dc831066716154da94d5415852c3a41e04b578b7c79d0157c183b2772f72e16",
+    "changed_pixels": 1896,
+    "silhouette_iou": 0.9099,
+    "canonical_bounds": [
+      44,
+      15,
+      97,
+      109
+    ],
+    "export_bounds": [
+      44,
+      14,
+      97,
+      109
+    ],
+    "extent_ratio": [
+      1.0,
+      1.0106
+    ],
+    "review_notes": "Native visual comparison: four legs and continuous clubtail; same armour family and hip. Shortened hindfoot subtle; unapproved prototype.",
+    "status": "prototype_static",
+    "runtime_enabled": true,
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "Source_Generated/behavior_limp/review_exports/ankylosaurus_limp_N_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "limp",
+    "direction": "N",
+    "frame": 3,
+    "source": "Source_Generated/behavior_limp/ankylosaurus_revision2.png",
+    "source_sha256": "eef9282a49a48bc0795f6b1db0fe4ee48495c7f28cb686bdb628a8875e4a059e",
+    "source_crop": [
+      1152,
+      256,
+      1536,
+      512
+    ],
+    "source_cell_anchor": [
+      192,
+      128
+    ],
+    "registration_offset": [
+      -24,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "d3f98ef5bda37552ca325a4d4c3ff7a7550b55bf78c6d400344cb99dea15bfbf",
+    "canonical": "assets/player_full/ankylosaurus_walk_N_003.png",
+    "canonical_sha256": "d6cbd14d321e62116f04c2fd86246c56327ffbe1be8a6346c5b5f4da8f02d11c",
+    "changed_pixels": 1799,
+    "silhouette_iou": 0.9517,
+    "canonical_bounds": [
+      47,
+      15,
+      100,
+      111
+    ],
+    "export_bounds": [
+      47,
+      15,
+      100,
+      112
+    ],
+    "extent_ratio": [
+      1.0,
+      1.0104
+    ],
+    "review_notes": "Native visual comparison: four legs and continuous clubtail; same armour family and hip. Shortened hindfoot subtle; unapproved prototype.",
+    "status": "prototype_static",
+    "runtime_enabled": true,
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "Source_Generated/behavior_limp/review_exports/ankylosaurus_limp_E_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "limp",
+    "direction": "E",
+    "frame": 2,
+    "source": "Source_Generated/behavior_limp/ankylosaurus_revision2.png",
+    "source_sha256": "eef9282a49a48bc0795f6b1db0fe4ee48495c7f28cb686bdb628a8875e4a059e",
+    "source_crop": [
+      768,
+      512,
+      1152,
+      768
+    ],
+    "source_cell_anchor": [
+      192,
+      128
+    ],
+    "registration_offset": [
+      -24,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "34720c214a8c01d53870bbb9c1408fdab3602525f948ded5c031486c848d41c9",
+    "canonical": "assets/player_full/ankylosaurus_walk_E_002.png",
+    "canonical_sha256": "ae3627f2e1df6ee60a6a4f72230e8321ccf85c8d9455dfe1263f5d7f552a3b98",
+    "changed_pixels": 1746,
+    "silhouette_iou": 0.9504,
+    "canonical_bounds": [
+      13,
+      46,
+      125,
+      98
+    ],
+    "export_bounds": [
+      13,
+      46,
+      125,
+      99
+    ],
+    "extent_ratio": [
+      1.0,
+      1.0192
+    ],
+    "review_notes": "Native visual comparison: four legs and continuous clubtail; same armour family and hip. Shortened hindfoot subtle; unapproved prototype.",
+    "status": "prototype_static",
+    "runtime_enabled": true,
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "Source_Generated/behavior_limp/review_exports/ankylosaurus_limp_E_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "limp",
+    "direction": "E",
+    "frame": 3,
+    "source": "Source_Generated/behavior_limp/ankylosaurus_revision2.png",
+    "source_sha256": "eef9282a49a48bc0795f6b1db0fe4ee48495c7f28cb686bdb628a8875e4a059e",
+    "source_crop": [
+      1152,
+      512,
+      1536,
+      768
+    ],
+    "source_cell_anchor": [
+      192,
+      128
+    ],
+    "registration_offset": [
+      -24,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "eea0920243332e77c02638deb170fa6c0de64539571b86e932239e37f86c456c",
+    "canonical": "assets/player_full/ankylosaurus_walk_E_003.png",
+    "canonical_sha256": "45afef9caad5c183ae29e1b105fe93653412123a067681df4ce14c28cedea028",
+    "changed_pixels": 1719,
+    "silhouette_iou": 0.9681,
+    "canonical_bounds": [
+      10,
+      47,
+      122,
+      97
+    ],
+    "export_bounds": [
+      10,
+      47,
+      121,
+      98
+    ],
+    "extent_ratio": [
+      0.9911,
+      1.02
+    ],
+    "review_notes": "Native visual comparison: four legs and continuous clubtail; same armour family and hip. Shortened hindfoot subtle; unapproved prototype.",
+    "status": "prototype_static",
+    "runtime_enabled": true,
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "Source_Generated/behavior_limp/review_exports/ankylosaurus_limp_W_002.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "limp",
+    "direction": "W",
+    "frame": 2,
+    "source": "Source_Generated/behavior_limp/ankylosaurus_revision2.png",
+    "source_sha256": "eef9282a49a48bc0795f6b1db0fe4ee48495c7f28cb686bdb628a8875e4a059e",
+    "source_crop": [
+      768,
+      768,
+      1152,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      128
+    ],
+    "registration_offset": [
+      -24,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "f4ce981ee9f2ad7ce60be3a1d4695755a7c2ec75f696c75c3d6ac024cb20c36d",
+    "canonical": "assets/player_full/ankylosaurus_walk_W_002.png",
+    "canonical_sha256": "bf1b15084e8d73e8a911d4295d55d427d1a6541aae62630ebe6f5a9014c29103",
+    "changed_pixels": 1621,
+    "silhouette_iou": 0.9296,
+    "canonical_bounds": [
+      17,
+      50,
+      123,
+      97
+    ],
+    "export_bounds": [
+      16,
+      49,
+      122,
+      97
+    ],
+    "extent_ratio": [
+      1.0,
+      1.0213
+    ],
+    "review_notes": "Native visual comparison: four legs and continuous clubtail; same armour family and hip. Shortened hindfoot subtle; unapproved prototype.",
+    "status": "prototype_static",
+    "runtime_enabled": true,
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "Source_Generated/behavior_limp/review_exports/ankylosaurus_limp_W_003.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "ankylosaurus",
+    "state": "limp",
+    "direction": "W",
+    "frame": 3,
+    "source": "Source_Generated/behavior_limp/ankylosaurus_revision2.png",
+    "source_sha256": "eef9282a49a48bc0795f6b1db0fe4ee48495c7f28cb686bdb628a8875e4a059e",
+    "source_crop": [
+      1152,
+      768,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      128
+    ],
+    "registration_offset": [
+      -24,
+      8
+    ],
+    "sampling_stride": 2,
+    "sampling_offset": 1,
+    "export_sha256": "f7c157cc759225a7f5ebe40f22814f6f7ff9fe3af31e31af4c5b60130407b3be",
+    "canonical": "assets/player_full/ankylosaurus_walk_W_003.png",
+    "canonical_sha256": "fdb8c7782af5b0b0d68df2cddf4a0db13631ef87e39bd584cd4e2b9fe6d0a271",
+    "changed_pixels": 1558,
+    "silhouette_iou": 0.9434,
+    "canonical_bounds": [
+      16,
+      50,
+      121,
+      97
+    ],
+    "export_bounds": [
+      16,
+      49,
+      121,
+      97
+    ],
+    "extent_ratio": [
+      1.0,
+      1.0213
+    ],
+    "review_notes": "Native visual comparison: four legs and continuous clubtail; same armour family and hip. Shortened hindfoot subtle; unapproved prototype.",
+    "status": "prototype_static",
+    "runtime_enabled": true,
+    "production_approved": false,
+    "animation_ready": false
+  }
+]

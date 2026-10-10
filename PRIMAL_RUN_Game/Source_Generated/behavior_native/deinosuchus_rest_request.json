@@ -1,0 +1,60 @@
+{
+  "species": "deinosuchus",
+  "family": "behavior_native",
+  "action": "rest",
+  "source": "deinosuchus_rest_revision1.png",
+  "source_sha256": "9c1718ffa25947ac86c3b3d261b9bcefbc18af62ba37e32f4a39591c95282af4",
+  "reference": "deinosuchus_canonical_layout.png",
+  "reference_sha256": "f9930874faafefc2b2c8792b4a1992b211c2074fdf19f08c80fd054f46d0c980",
+  "prompt": "Edit attached canonical pixel sprite layout with MINIMAL motion only. Preserve EXACT whole body footprints, size, markings, colours, perspective and fixed hip positions. Transparent1536x1024 atlas,4columns384wide,4rows256high. Rows S,N,E,W in that order. Every cell hip192,128, original whole sprite144x144 enlarged exactly2x located48,-16. DO NOT fill cells or enlarge animal. Crocodilian long low body, four sprawling legs, one tapering tail, no horns. Columns0,1 sleep lightly, eyes closed, head tilted a few pixels, torso and tail stationary; columns2,3 gently scratch flank using one hind foot with very small motion, correct limb count. Paired frames differ only a few pixels, torso unchanged. Keep reference crisp coarse2x pixels, no smooth rendered art, no labels, no shadows beyond sprite, no extra limbs. Prototype consistency study.",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "cell_size": [
+    384,
+    256
+  ],
+  "rows": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "source_hip": [
+    192,
+    128
+  ],
+  "sampling": 2,
+  "native_canvas": [
+    144,
+    144
+  ],
+  "native_origin": [
+    72,
+    72
+  ],
+  "concerns": [
+    "Minimal pose study, not anatomy approved",
+    "Halo requires hard alpha export",
+    "No bbox recentering allowed"
+  ],
+  "canonical_references": [
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_S_000.png",
+      "sha256": "72b11ff39af2314217aebea0067107c2b6f4fa0b7af0ec9dada06b7859039fd5"
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_N_000.png",
+      "sha256": "a9e0df9208b9d62eced2ab193561118982d5bc51e3787b82e3f7faeddcbb5bc1"
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_E_000.png",
+      "sha256": "2e56f0df2118b19d13514a176ce92f24ffee96193290c7d9512c212581c49db1"
+    },
+    {
+      "file": "assets/enemy_full/deinosuchus_idle_W_000.png",
+      "sha256": "706ad4ee89fcddfc6739d00d75ed32570f28f702fac8b5b733d98f79970449e1"
+    }
+  ],
+  "canonical_layout_sha256": "f9930874faafefc2b2c8792b4a1992b211c2074fdf19f08c80fd054f46d0c980"
+}

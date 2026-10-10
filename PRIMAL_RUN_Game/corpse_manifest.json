@@ -34,6 +34,7 @@
       24,
       45
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c8f6d097ebbcffcc33b7582811792572cab5cf4663cd6705233cb49b902b73d3",
     "status": "prototype_static",
     "production_approved": false,
@@ -75,6 +76,7 @@
       16,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "f77d81fb0739d1cc330f3685bf0b08e782971afc0c045f04ecefabf2e0d86145",
     "status": "prototype_static",
     "production_approved": false,
@@ -116,6 +118,7 @@
       8,
       32
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c2c924c2f5caa115ee2e464e92984d942d01ab90b5291af066257e9ba1914586",
     "status": "prototype_static",
     "production_approved": false,
@@ -157,6 +160,7 @@
       0,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "cff5dc45d238cad267c0c23a9c175c56feac7a03def4242959a03dcf577dded9",
     "status": "prototype_static",
     "production_approved": false,
@@ -198,6 +202,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "47cc9c3de3becbd012c6a8a9522ecc9e7947a53e914723ab65727c0d5b7c0732",
     "status": "prototype_static",
     "production_approved": false,
@@ -239,6 +244,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "81e494769285c2ae231c8f38a569c8e8f72471b3ab8e2dff23f09b91a4ee77cf",
     "status": "prototype_static",
     "production_approved": false,
@@ -280,6 +286,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c1dc20874bed7d0b8d89bbea241eb3d2d57443444512a21a6d5fe463bfb09fc4",
     "status": "prototype_static",
     "production_approved": false,
@@ -321,6 +328,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c42ff7dc4ae2bee3bdd560510843151fba3b32b4cf6026e5123bbe7a0e002772",
     "status": "prototype_static",
     "production_approved": false,
@@ -362,6 +370,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "5a2356a16ed4d65dc7954e10e0fd0908fe3e973cc8b9cf9cc39f836f1e83169b",
     "status": "prototype_static",
     "production_approved": false,
@@ -403,6 +412,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "972710d47c018b76ad38763bf42637d377962e02303e3b77e1fd5805bc48e472",
     "status": "prototype_static",
     "production_approved": false,
@@ -444,6 +454,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "efec75a23148c364c8580df5a661e6bc6ff53c1ae9e8943e1a688265458ad533",
     "status": "prototype_static",
     "production_approved": false,
@@ -485,6 +496,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "426e3a4331b4b66edb5467ccd6bdebcf69e719c168befd9ce5ad1b5981f4db17",
     "status": "prototype_static",
     "production_approved": false,
@@ -526,6 +538,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "505e267a91edf0d28ce9b540857c3e7e61806718c470e888029784376f6025c9",
     "status": "prototype_static",
     "production_approved": false,
@@ -567,6 +580,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "a789de24a99099c6c92b703b71469ae35d2f2da243427a07838e26a0c19c10ab",
     "status": "prototype_static",
     "production_approved": false,
@@ -608,6 +622,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c0b669fcd85a38659272d478b66247b65dff6575b7a99594a06576e822973ec6",
     "status": "prototype_static",
     "production_approved": false,
@@ -649,6 +664,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "8026fc94a25bdcd390680081ae5702f21494d661f5e91796ec5d9510f7beb7d1",
     "status": "prototype_static",
     "production_approved": false,
@@ -690,6 +706,7 @@
       24,
       45
     ],
+    "source_sample_stride": 4,
     "export_sha256": "70b0f507b989b2057246a68ee787fdde71d07122a23a01a11a23ef579ee766b0",
     "status": "prototype_static",
     "production_approved": false,
@@ -731,6 +748,7 @@
       16,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "20722583125e402006851bac89e35fea9ac5ca79ffeb623e310bbf1efe454b4e",
     "status": "prototype_static",
     "production_approved": false,
@@ -772,6 +790,7 @@
       8,
       32
     ],
+    "source_sample_stride": 4,
     "export_sha256": "cd359c39be967616cbe61be846f0f1c539a57d39baa2c6019526f5f8cc6b864d",
     "status": "prototype_static",
     "production_approved": false,
@@ -813,6 +832,7 @@
       0,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "5208415a11b1c78382b6909966ae58f575358066418bf4caa944b79841cb26a9",
     "status": "prototype_static",
     "production_approved": false,
@@ -854,6 +874,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "85c3327d5474d07a51d81bf0a91cf669aa9dbc55bfca2473b1f415863f949030",
     "status": "prototype_static",
     "production_approved": false,
@@ -895,6 +916,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "30a17938c24074f809e3e777557f0477be7da11a499a41f7f2695253fab4c6c7",
     "status": "prototype_static",
     "production_approved": false,
@@ -936,6 +958,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "091a3c4ae03fb0b9b435d2528ae9d71bff670a097036863f68c7808d95b21f21",
     "status": "prototype_static",
     "production_approved": false,
@@ -977,6 +1000,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "05d0f6cb696aa1071a6957a691137d0a7bb87c52329c07dca1b6f8e16abe665b",
     "status": "prototype_static",
     "production_approved": false,
@@ -1018,6 +1042,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b1e88453946a1ab115403787faef33426b015dfd667a441d6b4bfc0ed80b5952",
     "status": "prototype_static",
     "production_approved": false,
@@ -1059,6 +1084,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "ca4eb08cb88c140f780eef1a6145e05c3a2b05e2a5a26f6fa36ed07ccb129085",
     "status": "prototype_static",
     "production_approved": false,
@@ -1100,6 +1126,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "684fdbe89c1ea860fd11b0981242da500a7545e97f9a4f06f2ad52cb9b81ad23",
     "status": "prototype_static",
     "production_approved": false,
@@ -1141,6 +1168,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "3f39084333bac9c124172cb600669bbdfe7f7047639d800e13b120a084b61fe6",
     "status": "prototype_static",
     "production_approved": false,
@@ -1182,6 +1210,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "266b1ead2992ea4b95322388310cff603a91842cd1f5abd8fea0ff933eb53e35",
     "status": "prototype_static",
     "production_approved": false,
@@ -1223,6 +1252,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "cb1809dfc167b26a4edd79e178a98e8c2a2ffc1c972401978c34340f7ca29b4a",
     "status": "prototype_static",
     "production_approved": false,
@@ -1264,6 +1294,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c7aa29e41ac588408636f1723847eaf0ea69fd5d54f48d450445739aeaaf5074",
     "status": "prototype_static",
     "production_approved": false,
@@ -1305,6 +1336,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "ac159625021ca56b71aa62b2861c13c8658db5f84f93fab2dc672fcc3ddb17a5",
     "status": "prototype_static",
     "production_approved": false,
@@ -1346,6 +1378,7 @@
       24,
       45
     ],
+    "source_sample_stride": 4,
     "export_sha256": "a33ebaee5d706c21add70860dce5da3db0953697275b3d76551d2911df7b280e",
     "status": "prototype_static",
     "production_approved": false,
@@ -1387,6 +1420,7 @@
       16,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "d2c03f1049353885d0297aaff278263fd5de8ff8340c2772ca2de80f7f98d8c3",
     "status": "prototype_static",
     "production_approved": false,
@@ -1428,6 +1462,7 @@
       8,
       32
     ],
+    "source_sample_stride": 4,
     "export_sha256": "fb1d0c3abc001b81a23ca15b175af9953d055c11ceed66e319342e33d991a65c",
     "status": "prototype_static",
     "production_approved": false,
@@ -1469,6 +1504,7 @@
       0,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "5ed5b1fc513e42cb8f2045bf008b588557edb4f0db76230f601f33bfff33cb8a",
     "status": "prototype_static",
     "production_approved": false,
@@ -1510,6 +1546,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "78d405c9944f6fecb3d4e1fd92be7dcd9df14d0df9cd2a6e1d0ae55fd1d0fcf2",
     "status": "prototype_static",
     "production_approved": false,
@@ -1551,6 +1588,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "5b9e09dfcba01b61ea86760f13fd67a76d947b76f87a694c2c91e7977ea9e523",
     "status": "prototype_static",
     "production_approved": false,
@@ -1592,6 +1630,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "7ed36ff2e8f53b869c03fe9de5790a4d87952f387bcf8f37ade1923752fc3020",
     "status": "prototype_static",
     "production_approved": false,
@@ -1633,6 +1672,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "ea72ba134b683db72bc256190f7f17700474031e242a744eff55e32c953e0f59",
     "status": "prototype_static",
     "production_approved": false,
@@ -1674,6 +1714,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c69a5f6e69d516f53d58e4994ab4adbd0364812aebea238063bfb1d85671ecb5",
     "status": "prototype_static",
     "production_approved": false,
@@ -1715,6 +1756,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "06daa2261b5358fc5c832c44e268c157be1c8486b82d1995a26daa02f11ee222",
     "status": "prototype_static",
     "production_approved": false,
@@ -1756,6 +1798,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "f592b210c9bb76e1b990357e6e4931b3f02fe43062bfe623072dce619fb56998",
     "status": "prototype_static",
     "production_approved": false,
@@ -1797,6 +1840,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "47252f717b753faa026f2721907c078f1f44821b59099e0455f6fa3f8a2bcdaa",
     "status": "prototype_static",
     "production_approved": false,
@@ -1838,6 +1882,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "cf6ca34e277baf52ab4bf9f617a6698b9d44b1f5deeb2011fb302bcfffbc9111",
     "status": "prototype_static",
     "production_approved": false,
@@ -1879,6 +1924,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b27e6df0ce9b3d864d0ca79bffea9e13d7255be9042789952954401e4feaab53",
     "status": "prototype_static",
     "production_approved": false,
@@ -1920,6 +1966,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b999cd98f8ac2df4bbb06c2117d7c380473b01a503b64989ab52846252353340",
     "status": "prototype_static",
     "production_approved": false,
@@ -1961,6 +2008,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "ee922c4a87d441ac63640d4413afec64136e3d9f46fa50cbddeed5fd8393460d",
     "status": "prototype_static",
     "production_approved": false,
@@ -2002,6 +2050,7 @@
       24,
       45
     ],
+    "source_sample_stride": 4,
     "export_sha256": "1f1a62e58b439eb3e4eefe1cea35c4574157393af9117e91fe007117bae81cac",
     "status": "prototype_static",
     "production_approved": false,
@@ -2043,6 +2092,7 @@
       16,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c292935fbacfebf1579c845a2a6bc26d12055496c614914aa5b8e4195bf085bc",
     "status": "prototype_static",
     "production_approved": false,
@@ -2084,6 +2134,7 @@
       8,
       32
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c868bfca59b6acf28680ddfb8ffc58b6d0f629a789f42f539ce89d054b98a20f",
     "status": "prototype_static",
     "production_approved": false,
@@ -2125,6 +2176,7 @@
       0,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "43640e76e3960330ef332a902883253af4b5ecafb864f112ce264b8441bb17c9",
     "status": "prototype_static",
     "production_approved": false,
@@ -2166,6 +2218,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "5431be662420bf81643fa1e59c8cd997d4069be9602e4c3970ff07051b9aa7f7",
     "status": "prototype_static",
     "production_approved": false,
@@ -2207,6 +2260,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b680879f9501cc4befb6cd8fd8de63756183de6bf0270e5f1d608d701e74d5b4",
     "status": "prototype_static",
     "production_approved": false,
@@ -2248,6 +2302,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "280658f985f3a6f4544435231ba2d41a52287cec65a887895a1e8d435541ce5f",
     "status": "prototype_static",
     "production_approved": false,
@@ -2289,6 +2344,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "589309e9fcc949445f93e792310436e8a54e230446fc8394bc849f468c0c6b9e",
     "status": "prototype_static",
     "production_approved": false,
@@ -2330,6 +2386,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "af8fda44c132030de48564aa5ebf38998c4542a368312923576519488c697d1e",
     "status": "prototype_static",
     "production_approved": false,
@@ -2371,6 +2428,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "25d3b33bbae4efcf52b5e87d1aa535213f479ef1429cc7c3bd2eb18958be8f8f",
     "status": "prototype_static",
     "production_approved": false,
@@ -2412,6 +2470,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "f580e41ab25e1ba0d4baa4834d09fe266d0dba0742c5fbc662ea066b1e71c36d",
     "status": "prototype_static",
     "production_approved": false,
@@ -2453,6 +2512,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "4b337278c0f0801a7b86db7f952f715799c7323ece0c9934e634418a2e10a862",
     "status": "prototype_static",
     "production_approved": false,
@@ -2494,6 +2554,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "8cc5729bfcf4a167f4fa4746534c8b2d597cb2c9a732062188e29e439da09eb4",
     "status": "prototype_static",
     "production_approved": false,
@@ -2535,6 +2596,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "e8c0b5ed498d4284155481f6fc8f537ec793a16a40fb266d26290aa9a756767b",
     "status": "prototype_static",
     "production_approved": false,
@@ -2576,6 +2638,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "99cc49dfbe13138bd6a803ac5375468c24de2db3abc278fd66755795ca071400",
     "status": "prototype_static",
     "production_approved": false,
@@ -2617,6 +2680,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b539d2f57d7e72e0d6420836288201ed6e7daf0e99995870e4e62333ad057f92",
     "status": "prototype_static",
     "production_approved": false,
@@ -2658,6 +2722,7 @@
       24,
       45
     ],
+    "source_sample_stride": 4,
     "export_sha256": "932e64f3d264f542b51484bc0c20103d12f7b7ccb78805f9fc5a80a7285b0893",
     "status": "prototype_static",
     "production_approved": false,
@@ -2699,6 +2764,7 @@
       16,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b6540a3824f6a39707b8dab61588cfae43ee66ad7affab88ef2f30b12f35bd0a",
     "status": "prototype_static",
     "production_approved": false,
@@ -2740,6 +2806,7 @@
       8,
       32
     ],
+    "source_sample_stride": 4,
     "export_sha256": "cc232bc94bf8bba192be9f7033705ab1a17587f02b4ddc2429b5a2b6bbe76b51",
     "status": "prototype_static",
     "production_approved": false,
@@ -2781,6 +2848,7 @@
       0,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "2347df016199b0abed46c9c1505898f6ea52166a9f4493822d2d067128019950",
     "status": "prototype_static",
     "production_approved": false,
@@ -2822,6 +2890,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "6b758a189d911a3a693c18b78163c45df79320f82352c87788516392ee919e53",
     "status": "prototype_static",
     "production_approved": false,
@@ -2863,6 +2932,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "0f7f147dfd961d269cffc2acd7f4cb0a94a4ada4f4813932fc942e92df588762",
     "status": "prototype_static",
     "production_approved": false,
@@ -2904,6 +2974,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "684f73f45e4a224e6c52675dba97cb5b95fe2e4d74f449d00ad2f664b5b5af07",
     "status": "prototype_static",
     "production_approved": false,
@@ -2945,6 +3016,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "84a7fd0f96f8ed099310420be35bcbde5952d6630030a944b0b170173f8f1b68",
     "status": "prototype_static",
     "production_approved": false,
@@ -2986,6 +3058,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "ddf30fd3946ee6989d23ce4dd7831afc2a7386e25c9decf5c825f676fe0ee380",
     "status": "prototype_static",
     "production_approved": false,
@@ -3027,6 +3100,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "0a23cd602d971523322c0c42a3754ba1d344badc9493a10ce8d77472e02fbce4",
     "status": "prototype_static",
     "production_approved": false,
@@ -3068,6 +3142,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "eb7312c4f7d672156a5de2e87e16c5fbc98458984aa11a656ebfa4dbf0d52f39",
     "status": "prototype_static",
     "production_approved": false,
@@ -3109,6 +3184,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "3e01990163bd1bed8ce4765950e61690223b1fcbfbff0eac4333d6fe4bae3dc2",
     "status": "prototype_static",
     "production_approved": false,
@@ -3150,6 +3226,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "cd5c1b1b438be2935836f54f522d5a54a2509d9b62670783708c9066dac9c2b9",
     "status": "prototype_static",
     "production_approved": false,
@@ -3191,6 +3268,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b05f06c8834e167b350dd9d5ff7e9816012e2eac8585548fd72e708fa5b2284f",
     "status": "prototype_static",
     "production_approved": false,
@@ -3232,6 +3310,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "3da9a5ee7404453b56e2aa58983bbda15cb82529ad679923390c59313d377b8d",
     "status": "prototype_static",
     "production_approved": false,
@@ -3273,6 +3352,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "e0256397f53c8ebbb28ef5c42c67ee1e3c9a77cc9b78a0f2d309ad035cef7edb",
     "status": "prototype_static",
     "production_approved": false,
@@ -3314,6 +3394,7 @@
       24,
       45
     ],
+    "source_sample_stride": 4,
     "export_sha256": "e04b28388c6f60c7224840412ae3b7089013f985e3fb6121875d260379bc54ca",
     "status": "prototype_static",
     "production_approved": false,
@@ -3355,6 +3436,7 @@
       16,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "75ebeddbb1a8d3cc42f3a9bfd4109437e236b1eefe8025cb4f6d466d14f8771a",
     "status": "prototype_static",
     "production_approved": false,
@@ -3396,6 +3478,7 @@
       8,
       32
     ],
+    "source_sample_stride": 4,
     "export_sha256": "9df673905d1cea1e266e2ba47f5fa7a11f7e07226f2e622d569ab2f34208d067",
     "status": "prototype_static",
     "production_approved": false,
@@ -3437,6 +3520,7 @@
       0,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b9bc287f348494e92957a15e3cca1d4152f36e6c6c498738d37ef98b0307d97a",
     "status": "prototype_static",
     "production_approved": false,
@@ -3478,6 +3562,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "2c6871bde53ff6050323b70c97e0bd804ecb9817372ee297d47ca8d5b26633b2",
     "status": "prototype_static",
     "production_approved": false,
@@ -3519,6 +3604,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "904ca591e7a2dfba930d7c95add6c9289d21cdd1776a81a3e7984bd96006eecf",
     "status": "prototype_static",
     "production_approved": false,
@@ -3560,6 +3646,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "8295ac1f1b0ad852f0de1a2b9a99c6d03d4db012e85db39ce57adca13806c77a",
     "status": "prototype_static",
     "production_approved": false,
@@ -3601,6 +3688,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c925dc33f667aed1187e3f0e4c87b4df111200896aaae6dd6c3f97a6e296e62f",
     "status": "prototype_static",
     "production_approved": false,
@@ -3642,6 +3730,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c01245cb820a6e1d64b7837cb78c9c0a624cf9c8f4508cdad089de6d4897a300",
     "status": "prototype_static",
     "production_approved": false,
@@ -3683,6 +3772,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "53008c96f1674a9178ee0343abe38aec5cd14382242c00ffa5ded605430a0be6",
     "status": "prototype_static",
     "production_approved": false,
@@ -3724,6 +3814,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "a9116cdc06e0bf8ffafa09dcbc116d3b195aa52ea905737ce9f8bf02101987e3",
     "status": "prototype_static",
     "production_approved": false,
@@ -3765,6 +3856,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "05ff9ca5bf04aedcc5b9d0299b676507f45e40bee8a1a0c1b1b4cd4334f9417e",
     "status": "prototype_static",
     "production_approved": false,
@@ -3806,6 +3898,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "3745914b151b412d2a82900e0f9b21812d802b316176e2a9c85a42274f7a2eed",
     "status": "prototype_static",
     "production_approved": false,
@@ -3847,6 +3940,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "e72ecce3f343ba1ed1183059ae94da12f62de60f7335e72df407db7c30b1150b",
     "status": "prototype_static",
     "production_approved": false,
@@ -3888,6 +3982,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "0858825225fb2d80616bdcdfdda3464629199d3fac542cae3544d5012ce0385a",
     "status": "prototype_static",
     "production_approved": false,
@@ -3929,6 +4024,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "e1b8d62803c9ab74503044180afb11c883b308b5670d3d866652b90eac3ff279",
     "status": "prototype_static",
     "production_approved": false,
@@ -3970,6 +4066,7 @@
       24,
       45
     ],
+    "source_sample_stride": 4,
     "export_sha256": "8954c0aba07be13210b84498880ae9783f5cc4151a67d3ce8e4857ac464f71e1",
     "status": "prototype_static",
     "production_approved": false,
@@ -4011,6 +4108,7 @@
       16,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "9f95f9d674b1beac1bf71309f216246745e554e80f2f69ffa0d99894e8061da8",
     "status": "prototype_static",
     "production_approved": false,
@@ -4052,6 +4150,7 @@
       8,
       32
     ],
+    "source_sample_stride": 4,
     "export_sha256": "9ac31fd6d42c9604c26439e968017d2eccad58812093fc048e85283d2c2e6350",
     "status": "prototype_static",
     "production_approved": false,
@@ -4093,6 +4192,7 @@
       0,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "7d97f1b0021924f1d74342acb50360b67d9fca0699f526f76e9c2aaa77a75dc8",
     "status": "prototype_static",
     "production_approved": false,
@@ -4134,6 +4234,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "d4178db95af7edbb30ae09fd153eea4670b65940a1867ff7629bf232e91e141a",
     "status": "prototype_static",
     "production_approved": false,
@@ -4175,6 +4276,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "aa58d0232ce52baf6833731ae6fbcb8734f102f40f865ad3dce3d0c591671a71",
     "status": "prototype_static",
     "production_approved": false,
@@ -4216,6 +4318,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "f730c25424f12c662fd7a542930899c4ccaa2044a032c92b30d192b58087b7ba",
     "status": "prototype_static",
     "production_approved": false,
@@ -4257,6 +4360,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b78749e6293ea9ec2f34a0e9a0467e06995b2b039cf558d5189ca980704ae5e0",
     "status": "prototype_static",
     "production_approved": false,
@@ -4298,6 +4402,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "790c1082f451affabfa29841f246c583a1cd31666803a3f210b8e533508afdb6",
     "status": "prototype_static",
     "production_approved": false,
@@ -4339,6 +4444,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "58be77754e87fa22ac6002529eb4827ca2f1a4465845608552a1a0440b4f71c5",
     "status": "prototype_static",
     "production_approved": false,
@@ -4380,6 +4486,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "e114c421e3f7fcd9c85ca8388a2dbeac5e14277acde0fdde1141e8f237e984db",
     "status": "prototype_static",
     "production_approved": false,
@@ -4421,6 +4528,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "098f031bfbcb7c6c54ecd95b61a0144dc384592db016fc1852652dfc85e629bf",
     "status": "prototype_static",
     "production_approved": false,
@@ -4462,6 +4570,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "bc2c3dedaad13aea4443441f58fdcbee217c8757104d95a59278fd2e19396722",
     "status": "prototype_static",
     "production_approved": false,
@@ -4503,6 +4612,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "d2396ac4a085d41bee193315326af65566864544b7874128269f26f2dd05edb8",
     "status": "prototype_static",
     "production_approved": false,
@@ -4544,6 +4654,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "206b048faa9c23a0e7ad0e49252efeaaa5ee4df8f160f4afcea4deb873f57962",
     "status": "prototype_static",
     "production_approved": false,
@@ -4585,6 +4696,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "df895f978f6c62945531d9776c5ae6ca4047a4de1d086775e2ff84f4f989c017",
     "status": "prototype_static",
     "production_approved": false,
@@ -4626,6 +4738,7 @@
       24,
       45
     ],
+    "source_sample_stride": 4,
     "export_sha256": "8b5fbe6406d2e078d2c1355c6fc3d23f96601962d9d25cf8771a74ebae0dfa21",
     "status": "prototype_static",
     "production_approved": false,
@@ -4667,6 +4780,7 @@
       16,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "8558a9bd7aa4faa43b71536acc6bcdab63cbee7970ef05281fa42638c311b6f7",
     "status": "prototype_static",
     "production_approved": false,
@@ -4708,6 +4822,7 @@
       8,
       32
     ],
+    "source_sample_stride": 4,
     "export_sha256": "448cb97a25fe32cd86e6e54bf0918cb643c8d7580e5967d097e08ae7d601eafc",
     "status": "prototype_static",
     "production_approved": false,
@@ -4749,6 +4864,7 @@
       0,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "90ad657f607aa1ea81cf63cf26510a49416814f565ada41f754cb3185440081f",
     "status": "prototype_static",
     "production_approved": false,
@@ -4790,6 +4906,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "d1bcd45c616a76af2d25262437ebe40f690e7e2057a2de4cc35ff76adc6a046a",
     "status": "prototype_static",
     "production_approved": false,
@@ -4831,6 +4948,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "1c4a33489f3aec26e7c4f7cdf334afa39da6acb643ee7e9f25faed25d3846624",
     "status": "prototype_static",
     "production_approved": false,
@@ -4872,6 +4990,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "216a5bd8b46eb135a4f291ee22d4f59e812efb40049dd79a97882a398c47e9c4",
     "status": "prototype_static",
     "production_approved": false,
@@ -4913,6 +5032,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "1e9274a4af583ba026e43f66bfd8feea4108c34acdafc437228cc3f7104bde35",
     "status": "prototype_static",
     "production_approved": false,
@@ -4954,6 +5074,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "e9e389b36bc76a1ebe8614935782a4a2c5b1fbb20e1923c239b52b717e1c7c34",
     "status": "prototype_static",
     "production_approved": false,
@@ -4995,6 +5116,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "12526a12090e9ade650980d897b0c2f59495d3d63328af84ee2d51ba13f9bbda",
     "status": "prototype_static",
     "production_approved": false,
@@ -5036,6 +5158,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "75b6160f30331291639e4c6a75a2dcac385b535510da9321e42edaa440c783fa",
     "status": "prototype_static",
     "production_approved": false,
@@ -5077,6 +5200,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "4815775c56074badd192586e023da2e919f6d3328842f74a756874f91a2e8226",
     "status": "prototype_static",
     "production_approved": false,
@@ -5118,6 +5242,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b291770ed58ffdc82bfc834ab41e4149d0fe32a3bfdb2d3b09aad4eb42c941a3",
     "status": "prototype_static",
     "production_approved": false,
@@ -5159,6 +5284,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "54bf01dd280758a4c228eb2f3a50ec0bf1d4ef6e6600c5448ea2f4949dac5f9c",
     "status": "prototype_static",
     "production_approved": false,
@@ -5200,6 +5326,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "538d513a4044efd18d097f680e5d8e819a7030ce8778f1d670482e1720810eb6",
     "status": "prototype_static",
     "production_approved": false,
@@ -5241,6 +5368,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "00b3dda4f2ee3b96a0f8906c0bd5104624749ced2932174491091b3c2db0d50d",
     "status": "prototype_static",
     "production_approved": false,
@@ -5282,6 +5410,7 @@
       24,
       45
     ],
+    "source_sample_stride": 4,
     "export_sha256": "fde91203a01f2caaea2df21fc2f23ce7ae823e0c32159ce4f1ad0cef1e04c236",
     "status": "prototype_static",
     "production_approved": false,
@@ -5323,6 +5452,7 @@
       16,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "3b30cf5c937395fc3366549858bc2437cfb7989beaecda302d20d4820934b00a",
     "status": "prototype_static",
     "production_approved": false,
@@ -5364,6 +5494,7 @@
       8,
       32
     ],
+    "source_sample_stride": 4,
     "export_sha256": "2a651b86ac91ad7b4b9b407cd54894bdbc3b15bb72a3a9fd72b0d7e387623273",
     "status": "prototype_static",
     "production_approved": false,
@@ -5405,6 +5536,7 @@
       0,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "4b2ffcbb2a7c2b7c8a55903369f5366afa5062eb3e351375a23c6aeaaad6e03f",
     "status": "prototype_static",
     "production_approved": false,
@@ -5446,6 +5578,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "e895dae3001efe8e4e46fb9748d0a660923164dd284cfa3a05a0bb032f252bba",
     "status": "prototype_static",
     "production_approved": false,
@@ -5487,6 +5620,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "132955dd11b8da14dbb7f8e81b17bbb750f355544b3c026af6cced21b0712b8b",
     "status": "prototype_static",
     "production_approved": false,
@@ -5528,6 +5662,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "786fe22e24dc740880ae318187f54d18ea78ac35b5475efeba3982ebc3887dcb",
     "status": "prototype_static",
     "production_approved": false,
@@ -5569,6 +5704,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "c4474f36f66c039aced8c070919606a31c1705bd896bf3e64e9a8fd8da3ad65e",
     "status": "prototype_static",
     "production_approved": false,
@@ -5610,6 +5746,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "2130e93a4e3f3e1599fd23759ab2d23a8bb55ad9045afe122b94ce8ca8a79d45",
     "status": "prototype_static",
     "production_approved": false,
@@ -5651,6 +5788,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "1d728c12d4b3fcce16e1838bf2b6081d9010a426165c24cfaedb1db3233bce6f",
     "status": "prototype_static",
     "production_approved": false,
@@ -5692,6 +5830,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b223e944644a7a75dc13b6adece7435ad67e56c058a787176b4871cf3d73020d",
     "status": "prototype_static",
     "production_approved": false,
@@ -5733,6 +5872,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "33369f9f01a6d6639506c077fb371965af2f9dbd79b7bb97297ceba7a467975e",
     "status": "prototype_static",
     "production_approved": false,
@@ -5774,6 +5914,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "d0db7e83d67e9ea90efda618203d5876db1fbbcb7e6a04f0db84dbc396e573dc",
     "status": "prototype_static",
     "production_approved": false,
@@ -5815,6 +5956,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "43f1995d6866e3374e06a460854643206172ae4845ee74e3f9ad9cb6798300f8",
     "status": "prototype_static",
     "production_approved": false,
@@ -5856,6 +5998,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "060c09316cbe3d977720c6f5975f5fc66f68997b8312b29749bb08911fbd4d11",
     "status": "prototype_static",
     "production_approved": false,
@@ -5897,6 +6040,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "aee2f2e860967150263afdff0c385505b14422d090653c815146b30edf316cc9",
     "status": "prototype_static",
     "production_approved": false,
@@ -5938,6 +6082,7 @@
       24,
       45
     ],
+    "source_sample_stride": 4,
     "export_sha256": "443fae48ce88a4d3a676972aa6ba46bae6567c5219fbec3b91fc0ebd12b4be5d",
     "status": "prototype_static",
     "production_approved": false,
@@ -5979,6 +6124,7 @@
       16,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "76ea29c8395bbbced6cae5d2351a48a649c689125a6fccfe2416e9b8c90b5ab4",
     "status": "prototype_static",
     "production_approved": false,
@@ -6020,6 +6166,7 @@
       8,
       32
     ],
+    "source_sample_stride": 4,
     "export_sha256": "0a5ac822ad21a68324e2b2e4402e3fdbfb3d48f053380b57abe0aeb4d85c85c1",
     "status": "prototype_static",
     "production_approved": false,
@@ -6061,6 +6208,7 @@
       0,
       40
     ],
+    "source_sample_stride": 4,
     "export_sha256": "d0e70ecb428d7c07b472f490b96ba594ca30c1e0320931c9e6593434e0ea3346",
     "status": "prototype_static",
     "production_approved": false,
@@ -6102,6 +6250,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "7302d4fa73a88912bd48e52dd69cb916507a9a17cee89269b8bb3962b19514a8",
     "status": "prototype_static",
     "production_approved": false,
@@ -6143,6 +6292,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b780436e3e926b7ba3e85590802b599e59a5799bf0f51c2b900b391a3a85723b",
     "status": "prototype_static",
     "production_approved": false,
@@ -6184,6 +6334,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "5159127b8f1fa1c4753f60857df78e9a90720c3a5feedb68f369badd36054f26",
     "status": "prototype_static",
     "production_approved": false,
@@ -6225,6 +6376,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b541d54210f20a59b90eeabc40755f5da063ac3e30a1cbef43cf544bdff93b10",
     "status": "prototype_static",
     "production_approved": false,
@@ -6266,6 +6418,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "85087604036fac09640c51364556f2d38a50f1d8455bd5cbee04c2a193195bde",
     "status": "prototype_static",
     "production_approved": false,
@@ -6307,6 +6460,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "92fd2f193c2a6fc6036d81dad2ff1a885d6b4b286b938970e17dd0dd7f9e677c",
     "status": "prototype_static",
     "production_approved": false,
@@ -6348,6 +6502,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "f1e416ba91299f4d7f74916f945b3ccab7985b6ee41fac5479ff6331d8f7347d",
     "status": "prototype_static",
     "production_approved": false,
@@ -6389,6 +6544,7 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "94f6c8cfb3ced44a364f937e284c84b1eb87bab02443aa629695bf409ce98434",
     "status": "prototype_static",
     "production_approved": false,
@@ -6430,6 +6586,7 @@
       24,
       29
     ],
+    "source_sample_stride": 4,
     "export_sha256": "3454c03f2067d3c2050ccce4408492909d9f8b4b685268dcabe61921868c3644",
     "status": "prototype_static",
     "production_approved": false,
@@ -6471,6 +6628,7 @@
       16,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "b9b087ce27e002672da2ed91d1ed3b60880e27a6d45d8914b60a341fc1adc4a8",
     "status": "prototype_static",
     "production_approved": false,
@@ -6512,6 +6670,7 @@
       8,
       16
     ],
+    "source_sample_stride": 4,
     "export_sha256": "a6a408f10b7ab1f551f3003b038c35400c2277f4f0a9a1309f8f825078247ad5",
     "status": "prototype_static",
     "production_approved": false,
@@ -6553,7 +6712,1352 @@
       0,
       24
     ],
+    "source_sample_stride": 4,
     "export_sha256": "72e7dded57b2606077c653be44a3865777240cd73af6f08deed828ffd5bb96a3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      128
+    ],
+    "registration_offset": [
+      24,
+      40
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "64c543b3062a6874f817ae1661a670cd3053f67b787d08c0e65a1db9c96cfa4c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      128
+    ],
+    "registration_offset": [
+      8,
+      40
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "d293af8f539d1ddece63734b13cafbaceda1d0a75c5740527a438f813e5a6ee6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      128
+    ],
+    "registration_offset": [
+      8,
+      40
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "60bceb55313b36107305b1c2aeacd2854ae53dd229f313be12f1f169874396e2",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      128
+    ],
+    "registration_offset": [
+      8,
+      40
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "308554f861b23008b4b99a9c6698b2eced7a648651551e5842c57b93810954f8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      192
+    ],
+    "registration_offset": [
+      24,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "a5c560b3737476acbeb08bb03e1a9e0b1e68b222fdac06bc97ee94fa5f973ba7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      8,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "4bb77ef450ad3c176e912fe761348a12c0229346c5c6aabaeab6a32a42ffb1d2",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      8,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "6b49b5e0bfd54a1bb863aa9a5674bee6f69e24c1bc2b6fe574523ce48fe29779",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      8,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "ad5252085a9810d8b01494c771c51f063029123af2393ee0ac3b1db6d07c14c5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      192
+    ],
+    "registration_offset": [
+      24,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "4433c904818c83032a185838a104b5cf84ce9b74ec9be289f0b0f8627c8c826b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      8,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "64ab84269395fad6db8409c7fae9269d37e1df3a05a04c2259e4bd1997ae0965",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      8,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "1a7ce92515fa805f0f4c7ff3df5224b341a139e0dbc788c333f182ac8773d857",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      8,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "4e524831edffa9f13e8cea1a096190e607c837f1562f75cc21d2e1bcdcf83a66",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      192
+    ],
+    "registration_offset": [
+      24,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "4632ab589f57946b02434b35a0b77730c93e430794587cfbc9046c31dc35e874",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      8,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "4aa09def9669d3a84cf01ec4ed630e07bdf8d8b690f0ca94a3b71501abda5872",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      8,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "5e88e54ce7931292e39d514654b777cee948f39d229c92e4a9193e93de194218",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/utahraptor_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "utahraptor",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_utahraptor_revision1.png",
+    "source_sha256": "9800726a33db613cf890ffbce7a89763ea85d862862ec6d41e29503007d991d1",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      8,
+      24
+    ],
+    "source_sample_stride": 4,
+    "export_sha256": "5b5288be8e3ba40a06abbd2722e5a969e21b7788e52a6da9a25f1c404fd6b27c",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_decayed_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "S",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      0,
+      0,
+      448,
+      320
+    ],
+    "source_cell_anchor": [
+      192,
+      128
+    ],
+    "registration_offset": [
+      40,
+      51
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "beb645d50324c8a9c65d24a8eb7d6ccbe69105ecb1648694512a168312b7a6a7",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_decayed_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "E",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      320,
+      0,
+      832,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      128
+    ],
+    "registration_offset": [
+      30,
+      51
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "0ae556146783076854036efbb835e553c10fbe5cb57a2d80fd3deb532437aa44",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_decayed_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "N",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      704,
+      0,
+      1216,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      128
+    ],
+    "registration_offset": [
+      30,
+      51
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "bab52c523ff371e80b5e68cfb1e8336a95a1172fe48585ff390bc1480521157b",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_decayed_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "decayed",
+    "variant": 0,
+    "direction": "W",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      1088,
+      0,
+      1536,
+      320
+    ],
+    "source_cell_anchor": [
+      256,
+      128
+    ],
+    "registration_offset": [
+      30,
+      51
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "ce310bb3547952fc290b046b55d35b18ba48ff651092afdac91fc155c538dd23",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_decayed_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "S",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      0,
+      192,
+      448,
+      576
+    ],
+    "source_cell_anchor": [
+      192,
+      192
+    ],
+    "registration_offset": [
+      40,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "b2b201204d04ec400454969a952e607be7ca550371e221234af273cf9b5f91e3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_decayed_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "E",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      320,
+      192,
+      832,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      30,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "2f434c8982506d621e5d4a09edab3e6b7e564eb297b2a294f5113c627d28fb64",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_decayed_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "N",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      704,
+      192,
+      1216,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      30,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "69fd08d5ca3015ab6791ba5ced54942433a6ab364d1cb34eebe92be8e72dd3bb",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_decayed_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "decayed",
+    "variant": 1,
+    "direction": "W",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      1088,
+      192,
+      1536,
+      576
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      30,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "85400034e9f7719694a8e442e7ca6c1be5156a8624e65ad0edd7d27c6e8c7401",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_skeleton_S_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "S",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      0,
+      448,
+      448,
+      832
+    ],
+    "source_cell_anchor": [
+      192,
+      192
+    ],
+    "registration_offset": [
+      40,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "38e46d0131fea1da33ab38bfb8a46b04b6a25bdeb347198422a8031ff33574ed",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_skeleton_E_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "E",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      320,
+      448,
+      832,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      30,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "39a2a433d8672fe60ec79de1ddd3fc52143b33be14ded402825cd633b889ff29",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_skeleton_N_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "N",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      704,
+      448,
+      1216,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      30,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "624b1490ab663a88bf0b2b38de29fadc383ae2d5e227463d945e36a90b1d4bd9",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_skeleton_W_0.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "skeleton",
+    "variant": 0,
+    "direction": "W",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      1088,
+      448,
+      1536,
+      832
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      30,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "d45b7d1e7eb670637d21169124a161b234ca47dd03029a03956fa55f29db4c26",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_skeleton_S_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "S",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      0,
+      704,
+      448,
+      1024
+    ],
+    "source_cell_anchor": [
+      192,
+      192
+    ],
+    "registration_offset": [
+      40,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "09f6fceb4938e260e80047eb511a10690c48f5471c2c85ddef59e7fa2b4aa44f",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_skeleton_E_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "E",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      320,
+      704,
+      832,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      30,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "e45bca256c94764f1a9fd1cfcaae51e64e7ab4162c946213c84ef64a31dd0f66",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_skeleton_N_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "N",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      704,
+      704,
+      1216,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      30,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "f8e4b5166077b4c5c1cde574bd4cc4d5e426ff0ded82ed7e10c972e3dfda25b4",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "export": "Integer4 sampling offset1, explicit approximate hip landmarks, neighbour isolation, fixed32 palette, alpha>=192. No drawing/interpolation/mirroring/rotation."
+  },
+  {
+    "file": "assets/corpses/velociraptor_skeleton_W_1.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "species": "velociraptor",
+    "stage": "skeleton",
+    "variant": 1,
+    "direction": "W",
+    "native_sample_stride": 1,
+    "source": "Source_Generated/corpses/corpse_velociraptor_revision1.png",
+    "source_sha256": "26e8fbb4f10946880a6c10d82fc4a7dcd2940d53011df81b412c191628c441fb",
+    "source_crop": [
+      1088,
+      704,
+      1536,
+      1024
+    ],
+    "source_cell_anchor": [
+      256,
+      192
+    ],
+    "registration_offset": [
+      30,
+      40
+    ],
+    "source_sample_stride": 6,
+    "export_sha256": "7d1e22cbd3a8e9fafda48b8d4b5c0db14c948aea24eee5b034bcbb0cbd3acca1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,

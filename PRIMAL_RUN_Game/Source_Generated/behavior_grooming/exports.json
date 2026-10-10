@@ -1,0 +1,56 @@
+[
+  {
+    "species": "ankylosaurus",
+    "source": "Source_Generated/behavior_grooming/ankylosaurus_revision2.png",
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "species": "baryonyx",
+    "source": "Source_Generated/behavior_grooming/baryonyx_revision1.png",
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "species": "carnotaurus",
+    "source": "Source_Generated/behavior_grooming/carnotaurus_revision1.png",
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "species": "deinosuchus",
+    "source": "Source_Generated/behavior_grooming/deinosuchus_revision1.png",
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "species": "gallimimus",
+    "source": "Source_Generated/behavior_grooming/gallimimus_revision1.png",
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "species": "pachycephalosaurus",
+    "source": "Source_Generated/behavior_grooming/pachycephalosaurus_revision1.png",
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "species": "parasaurolophus",
+    "source": "Source_Generated/behavior_grooming/parasaurolophus_revision1.png",
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "species": "triceratops",
+    "source": "Source_Generated/behavior_grooming/triceratops_revision1.png",
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  },
+  {
+    "species": "tyrannosaurus",
+    "source": "Source_Generated/behavior_grooming/tyrannosaurus_revision1.png",
+    "runtime_enabled": false,
+    "visual_review": "Standalone scratch study superseded by combined native_behavior family; no runtime integration."
+  }
+]

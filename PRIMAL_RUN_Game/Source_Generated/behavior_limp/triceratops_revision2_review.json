@@ -1,0 +1,474 @@
+{
+  "species": "triceratops",
+  "canonical_reference": "Source_Generated/behavior_limp/triceratops_canonical_walk23_reference.png",
+  "source": "Source_Generated/behavior_limp/triceratops_revision2.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_enabled": false,
+  "review": "Four-leg body, frill and horns remain comparable to native; S2 shifted silhouette rejected. Seven poses preserve body extent; W2 silhouette overlap0.871 is borderline and marked prototype.",
+  "entries": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/triceratops_limp_S_002_revision2.png",
+      "direction": "S",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        49,
+        24,
+        98,
+        116
+      ],
+      "export_bbox": [
+        41,
+        24,
+        92,
+        116
+      ],
+      "extent_ratios": [
+        1.0408163265306123,
+        1.0
+      ],
+      "silhouette_iou": 0.6257452574525745,
+      "technical_candidate": false,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/triceratops_revision2.png",
+      "source_sha256": "08bcc1affa343d9622efb911d8f557471c020bef653e50082a8ecdd513ee0aca",
+      "export_sha256": "bae5d7828495b4a758677508af0d4199a1493aee2a0a7dd58d287a590288a29e",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": false,
+      "review": "Four-leg body, frill and horns remain comparable to native; S2 shifted silhouette rejected. Seven poses preserve body extent; W2 silhouette overlap0.871 is borderline and marked prototype.",
+      "rejection_reason": "Registered silhouette overlap below0.87"
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/triceratops_limp_S_003_revision2.png",
+      "direction": "S",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        45,
+        25,
+        94,
+        117
+      ],
+      "export_bbox": [
+        44,
+        25,
+        94,
+        117
+      ],
+      "extent_ratios": [
+        1.0204081632653061,
+        1.0
+      ],
+      "silhouette_iou": 0.9663893510815308,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/triceratops_revision2.png",
+      "source_sha256": "08bcc1affa343d9622efb911d8f557471c020bef653e50082a8ecdd513ee0aca",
+      "export_sha256": "6ab747a97061bec006a60913db84ea5b824315002988f3e7aa0fc7893962e067",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Four-leg body, frill and horns remain comparable to native; S2 shifted silhouette rejected. Seven poses preserve body extent; W2 silhouette overlap0.871 is borderline and marked prototype."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/triceratops_limp_N_002_revision2.png",
+      "direction": "N",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        47,
+        16,
+        91,
+        112
+      ],
+      "export_bbox": [
+        46,
+        17,
+        91,
+        113
+      ],
+      "extent_ratios": [
+        1.0227272727272727,
+        1.0
+      ],
+      "silhouette_iou": 0.9385863267670915,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/triceratops_revision2.png",
+      "source_sha256": "08bcc1affa343d9622efb911d8f557471c020bef653e50082a8ecdd513ee0aca",
+      "export_sha256": "2974903866558fa3774c4b9a43fca3b1cc806f770a5d8450590e4cc21cfd88c9",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Four-leg body, frill and horns remain comparable to native; S2 shifted silhouette rejected. Seven poses preserve body extent; W2 silhouette overlap0.871 is borderline and marked prototype."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/triceratops_limp_N_003_revision2.png",
+      "direction": "N",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        44,
+        16,
+        87,
+        112
+      ],
+      "export_bbox": [
+        44,
+        16,
+        88,
+        114
+      ],
+      "extent_ratios": [
+        1.0232558139534884,
+        1.0208333333333333
+      ],
+      "silhouette_iou": 0.9319351009101702,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/triceratops_revision2.png",
+      "source_sha256": "08bcc1affa343d9622efb911d8f557471c020bef653e50082a8ecdd513ee0aca",
+      "export_sha256": "443d7c13848dcff5709f13e1b9816f13e84f0ba1d7ac66bdbe2de83e4d9fe03e",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Four-leg body, frill and horns remain comparable to native; S2 shifted silhouette rejected. Seven poses preserve body extent; W2 silhouette overlap0.871 is borderline and marked prototype."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/triceratops_limp_E_002_revision2.png",
+      "direction": "E",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        13,
+        37,
+        130,
+        100
+      ],
+      "export_bbox": [
+        12,
+        36,
+        129,
+        99
+      ],
+      "extent_ratios": [
+        1.0,
+        1.0
+      ],
+      "silhouette_iou": 0.9329283725639079,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/triceratops_revision2.png",
+      "source_sha256": "08bcc1affa343d9622efb911d8f557471c020bef653e50082a8ecdd513ee0aca",
+      "export_sha256": "aa79ed8cd7f293f4eabbdb9d18607457ee5cca3e1a95b580150d727b2139f38b",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Four-leg body, frill and horns remain comparable to native; S2 shifted silhouette rejected. Seven poses preserve body extent; W2 silhouette overlap0.871 is borderline and marked prototype."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/triceratops_limp_E_003_revision2.png",
+      "direction": "E",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        13,
+        36,
+        129,
+        102
+      ],
+      "export_bbox": [
+        12,
+        36,
+        129,
+        103
+      ],
+      "extent_ratios": [
+        1.0086206896551724,
+        1.0151515151515151
+      ],
+      "silhouette_iou": 0.956023939630497,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/triceratops_revision2.png",
+      "source_sha256": "08bcc1affa343d9622efb911d8f557471c020bef653e50082a8ecdd513ee0aca",
+      "export_sha256": "f6f5d36b947aafe80b31c0d17d4e1f4c9a245e1b71e99e9381e5456a30426dc4",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Four-leg body, frill and horns remain comparable to native; S2 shifted silhouette rejected. Seven poses preserve body extent; W2 silhouette overlap0.871 is borderline and marked prototype."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/triceratops_limp_W_002_revision2.png",
+      "direction": "W",
+      "frame": 2,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        16,
+        45,
+        132,
+        113
+      ],
+      "export_bbox": [
+        17,
+        45,
+        133,
+        114
+      ],
+      "extent_ratios": [
+        1.0,
+        1.0147058823529411
+      ],
+      "silhouette_iou": 0.8714393748424503,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/triceratops_revision2.png",
+      "source_sha256": "08bcc1affa343d9622efb911d8f557471c020bef653e50082a8ecdd513ee0aca",
+      "export_sha256": "2e2afa0eca917e81ad6ea10f03f3eec5858da58d8bc0efc3b8403c8d6a7fcf68",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Four-leg body, frill and horns remain comparable to native; S2 shifted silhouette rejected. Seven poses preserve body extent; W2 silhouette overlap0.871 is borderline and marked prototype."
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/triceratops_limp_W_003_revision2.png",
+      "direction": "W",
+      "frame": 3,
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "source_bbox": [
+        16,
+        45,
+        130,
+        114
+      ],
+      "export_bbox": [
+        16,
+        45,
+        132,
+        114
+      ],
+      "extent_ratios": [
+        1.0175438596491229,
+        1.0
+      ],
+      "silhouette_iou": 0.9672796106003245,
+      "technical_candidate": true,
+      "runtime_enabled": false,
+      "source": "Source_Generated/behavior_limp/triceratops_revision2.png",
+      "source_sha256": "08bcc1affa343d9622efb911d8f557471c020bef653e50082a8ecdd513ee0aca",
+      "export_sha256": "8ebfd1ff15985b35426e6ac69e135d860310e5829e36538bf1478d66d226d47b",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "alpha_threshold": 192,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "visual_candidate": true,
+      "review": "Four-leg body, frill and horns remain comparable to native; S2 shifted silhouette rejected. Seven poses preserve body extent; W2 silhouette overlap0.871 is borderline and marked prototype."
+    }
+  ],
+  "canonical_reference_sha256": "2176ab62c1cfa97aebd00248636a3ce0bffbfec91b285a151a029a6fc9c8b80b"
+}

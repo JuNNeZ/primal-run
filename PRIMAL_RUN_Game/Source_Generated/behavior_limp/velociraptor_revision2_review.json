@@ -1,0 +1,418 @@
+{
+  "species": "velociraptor",
+  "source": "Source_Generated/behavior_limp/velociraptor_revision2.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "canonical_reference": "Source_Generated/behavior_limp/velociraptor_canonical_walk23_reference.png",
+  "status": "prototype_static",
+  "runtime_enabled": false,
+  "production_approved": false,
+  "animation_ready": false,
+  "review": "Native light/dark reviewed. Usable poses retain size, silhouette and tail with held hindfoot. Failed poses retain native fallback; authored changes remain unapproved prototypes.",
+  "frames": [
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/velociraptor_limp_S_002.png",
+      "species": "velociraptor",
+      "direction": "S",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/velociraptor_revision2.png",
+      "source_sha256": "6471fecf6b2a371081b665c08cf4a89427a938b9b8ae4191ad82b7fe56fbb2be",
+      "source_crop": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/velociraptor_walk_S_002.png",
+      "canonical_sha256": "5529d856d544e34091ff93dd04ada255a0694472029069c8ab1552357fdf34dc",
+      "export_sha256": "1782a4b824a2e8b0ca361709dde44d20b55739f7b08dfc3b7010e75db689c52a",
+      "silhouette_iou": 0.9037,
+      "extent_ratios": [
+        1.0476190476190477,
+        1.0
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/velociraptor_limp_S_003.png",
+      "species": "velociraptor",
+      "direction": "S",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/velociraptor_revision2.png",
+      "source_sha256": "6471fecf6b2a371081b665c08cf4a89427a938b9b8ae4191ad82b7fe56fbb2be",
+      "source_crop": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/velociraptor_walk_S_003.png",
+      "canonical_sha256": "80c59b0d585f018fce85a45551a3296ba6cf955be4b837976c1f6ac0ac553171",
+      "export_sha256": "97fd96480557cbc9a068aab5d276e8637c033d4dc4822bfc79e349256cbf9440",
+      "silhouette_iou": 0.8845,
+      "extent_ratios": [
+        0.9166666666666666,
+        1.0
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/velociraptor_limp_N_002.png",
+      "species": "velociraptor",
+      "direction": "N",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/velociraptor_revision2.png",
+      "source_sha256": "6471fecf6b2a371081b665c08cf4a89427a938b9b8ae4191ad82b7fe56fbb2be",
+      "source_crop": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/velociraptor_walk_N_002.png",
+      "canonical_sha256": "ed9da95b67b9804f18c010b0a9e266a3d4e0a1b8333560b3a773db8f8d6c19e6",
+      "export_sha256": "ea43bd2142418b7d12439546e9c870e656c98909c4b5f370400d9199f13e9634",
+      "silhouette_iou": 0.9182,
+      "extent_ratios": [
+        1.0526315789473684,
+        1.0
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/velociraptor_limp_N_003.png",
+      "species": "velociraptor",
+      "direction": "N",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/velociraptor_revision2.png",
+      "source_sha256": "6471fecf6b2a371081b665c08cf4a89427a938b9b8ae4191ad82b7fe56fbb2be",
+      "source_crop": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/velociraptor_walk_N_003.png",
+      "canonical_sha256": "36febbb94c541f143beff11d57e761f392ffcea426a7432ddab2f4b2b18bbb45",
+      "export_sha256": "bd8ed2700da422e21a3efae9b23211f7bb7d970c09df42c48dfc45fa30e94bfc",
+      "silhouette_iou": 0.9281,
+      "extent_ratios": [
+        1.05,
+        1.024390243902439
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/velociraptor_limp_E_002.png",
+      "species": "velociraptor",
+      "direction": "E",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/velociraptor_revision2.png",
+      "source_sha256": "6471fecf6b2a371081b665c08cf4a89427a938b9b8ae4191ad82b7fe56fbb2be",
+      "source_crop": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/velociraptor_walk_E_002.png",
+      "canonical_sha256": "61ac6933ad15cdc766398fb203fb886d748de342baba609769b182bc5abe1a80",
+      "export_sha256": "3a8ceb4512e72c34e19827e0aea535ba959f89ab9ba386cd3c5a73fcd3c13e34",
+      "silhouette_iou": 0.9021,
+      "extent_ratios": [
+        0.9833333333333333,
+        0.9285714285714286
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/velociraptor_limp_E_003.png",
+      "species": "velociraptor",
+      "direction": "E",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/velociraptor_revision2.png",
+      "source_sha256": "6471fecf6b2a371081b665c08cf4a89427a938b9b8ae4191ad82b7fe56fbb2be",
+      "source_crop": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 128,
+      "canonical": "assets/player_full/velociraptor_walk_E_003.png",
+      "canonical_sha256": "8c28d73c285979425ed51ef77315e5cb17007356f193ec4d85ce425da58094fb",
+      "export_sha256": "b2040f85cac94f60d2152e38330e7b8caea2008b747ad7fd4e23bc70f4705220",
+      "silhouette_iou": 0.9263,
+      "extent_ratios": [
+        0.9830508474576272,
+        1.0
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn. Named threshold128 override retains thin tailtip bridge; no pixel drawing.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/velociraptor_limp_W_002.png",
+      "species": "velociraptor",
+      "direction": "W",
+      "frame": 2,
+      "source": "Source_Generated/behavior_limp/velociraptor_revision2.png",
+      "source_sha256": "6471fecf6b2a371081b665c08cf4a89427a938b9b8ae4191ad82b7fe56fbb2be",
+      "source_crop": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/velociraptor_walk_W_002.png",
+      "canonical_sha256": "f178d061d2d6460dcfc8c8e2a32d4aa1a386bec845a38567631b41833d7f348d",
+      "export_sha256": "659a3de71c49194cd963626cd60c27b6f18c49a32f99a6725a0dc8bd6937ad8c",
+      "silhouette_iou": 0.8963,
+      "extent_ratios": [
+        0.9827586206896551,
+        1.0
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    },
+    {
+      "file": "Source_Generated/behavior_limp/review_exports/velociraptor_limp_W_003.png",
+      "species": "velociraptor",
+      "direction": "W",
+      "frame": 3,
+      "source": "Source_Generated/behavior_limp/velociraptor_revision2.png",
+      "source_sha256": "6471fecf6b2a371081b665c08cf4a89427a938b9b8ae4191ad82b7fe56fbb2be",
+      "source_crop": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        192,
+        128
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "size": [
+        144,
+        144
+      ],
+      "sampling_stride": 2,
+      "sampling_offset": 1,
+      "registration_offset": [
+        -24,
+        8
+      ],
+      "alpha_threshold": 192,
+      "canonical": "assets/player_full/velociraptor_walk_W_003.png",
+      "canonical_sha256": "66f33eac109934d33c96cc32a48a41c2d89067bd9c531fd64537b1cbc216b037",
+      "export_sha256": "368957e38cca3478e5761ff8d0919074814ab66f9276f6645570c7e347c1aea1",
+      "silhouette_iou": 0.9389,
+      "extent_ratios": [
+        0.9830508474576272,
+        1.0344827586206897
+      ],
+      "technical_usable": true,
+      "runtime_enabled": false,
+      "production_approved": false,
+      "animation_ready": false,
+      "status": "prototype_static",
+      "visual_candidate": true,
+      "review": "Held hindfoot, intact tail and consistent body at native1x; marking pixels slightly redrawn.",
+      "alpha_components_8_connected": 1,
+      "canonical_alpha_components_8_connected": 1
+    }
+  ],
+  "prompt_file": "Source_Generated/behavior_limp/velociraptor_revision2_prompt.txt",
+  "source_sha256": "6471fecf6b2a371081b665c08cf4a89427a938b9b8ae4191ad82b7fe56fbb2be"
+}

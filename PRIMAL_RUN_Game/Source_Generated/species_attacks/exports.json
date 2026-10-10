@@ -571,7 +571,7 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "review_only": true,
+    "review_only": false,
     "reason": "A visible kick is now present; body/marking matching requires comparison against the original before enabling runtime.",
     "source_crop_inset": 8,
     "cell_exclusions": {
