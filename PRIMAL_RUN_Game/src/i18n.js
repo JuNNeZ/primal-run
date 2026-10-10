@@ -13,7 +13,8 @@
     { id: 'bn', name: 'বাংলা', fallback: 'en' }, { id: 'ur', name: 'اردو', fallback: 'en', rtl: true }, { id: 'id', name: 'Bahasa Indonesia', fallback: 'en' },
     { id: 'pcm', name: 'Naijá (Pidgin)', fallback: 'en' }, { id: 'mr', name: 'मराठी', fallback: 'en' }, { id: 'te', name: 'తెలుగు', fallback: 'en' },
     { id: 'tr', name: 'Türkçe', fallback: 'en' }, { id: 'ta', name: 'தமிழ்', fallback: 'en' }, { id: 'yue', name: '粵語', fallback: 'zh' },
-    { id: 'tlh', name: 'tlhIngan Hol (for sjov)', fallback: 'en', fun: true }, { id: 'sjn', name: 'Edhellen · Sindarin (for sjov)', fallback: 'en', fun: true }
+    // Fun languages: own name only; the UI adds "(for sjov)" in the current language.
+    { id: 'tlh', name: 'tlhIngan Hol', fallback: 'en', fun: true }, { id: 'sjn', name: 'Edhellen (Sindarin)', fallback: 'en', fun: true }, { id: 'dino', name: 'Rawr-rawrrr', fallback: 'en', fun: true }
   ];
   const dictionaries = {};
   let lang = 'da';

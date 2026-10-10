@@ -214,12 +214,15 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
 
     // ---- Languages: every new language renders the menu translated at 390 px without horizontal scroll; Arabic/Urdu are RTL.
     await page.setViewportSize({ width: 390, height: 844 });
-    for (const [lang, expect] of [['es', /CAZA/], ['ar', /الصيد/], ['hi', /शिकार/], ['ur', /شکار/], ['yue', /狩獵/], ['ta', /வேட்டை/], ['pcm', /HUNT/i], ['ru', /ОХОТ/i]]) {
+    for (const [lang, expect] of [['es', /CAZA/], ['ar', /الصيد/], ['hi', /शिकार/], ['ur', /شکار/], ['yue', /狩獵/], ['ta', /வேட்டை/], ['pcm', /HUNT/i], ['ru', /ОХОТ/i], ['dino', /GRAAAWR RAWRRR/]]) {
       await open(lang);
       const st = await page.evaluate(() => ({ text: document.querySelector('.screen').innerText, dir: document.querySelector('.screen').dir, w: [document.documentElement.scrollWidth, window.innerWidth], lang: document.documentElement.lang }));
       assert.match(st.text, expect, lang + ' menu'); assert.ok(st.w[0] <= st.w[1], lang + ' horizontal scroll ' + st.w); assert.equal(st.dir, ['ar', 'ur'].includes(lang) ? 'rtl' : 'ltr'); assert.equal(st.lang, lang);
       if (lang === 'ar') await page.screenshot({ path: path.join(shots, 'part_b_lang_ar.png') });
     }
+    { await open('de'); await page.evaluate(() => { primalRun.game.phase = 'settings'; }); await page.waitForSelector('#language-select');
+      const names = await page.$$eval('#language-select option', o => o.map(x => x.textContent));
+      for (const n of ['Español', 'العربية', 'हिन्दी', '粵語', 'Rawr-rawrrr (zum Spaß)', 'tlhIngan Hol (zum Spaß)']) assert.ok(names.includes(n), 'language list: ' + n + ' in ' + names.join(', ')); }
     checks.push('Languages: es/ar/hi/ur/yue/ta/pcm/ru menus translated, RTL for ar/ur, no horizontal scroll at 390 px');
     await page.setViewportSize({ width: 960, height: 640 });
 
