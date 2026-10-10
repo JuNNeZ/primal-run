@@ -421,16 +421,17 @@
     "en": "Speed Slayer"
    },
    "description": {
-    "da": "Besejrede en boss på under 25 sekunder.",
-    "en": "Beat a boss in under 25 s."
+    "da": "Besejrede en boss på under 25 sekunder i et run med mindst 2 bosser.",
+    "en": "Beat a boss in under 25 s in a run with at least 2 bosses."
    },
-   "condition": "s.fastestBossSeconds > 0 && s.fastestBossSeconds < 25",
+   "condition": "s.bosses >= 2 && s.fastestBossSeconds > 0 && s.fastestBossSeconds < 25",
    "priority": 55,
    "rarity": "rare",
    "tieBreak": "inverse:fastestBossSeconds",
    "category": "boss",
    "requiredVariables": [
-    "fastestBossSeconds"
+    "fastestBossSeconds",
+    "bosses"
    ],
    "implementationStatus": "needs new tracking"
   },

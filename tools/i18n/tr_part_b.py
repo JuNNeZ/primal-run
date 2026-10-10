@@ -47,4 +47,6 @@ PART_B = [
 ("Fang # fisk som Baryonyx (i alt).","Catch # fish as Baryonyx (in total).","Fange # Fische als Baryonyx (insgesamt).","Fånga # fiskar som Baryonyx (totalt).","Fang # fisk som Baryonyx (totalt).","バリオニクスで魚を計#匹捕まえる。","以重爪龙累计捕获 # 条鱼。"),
 ("kun Baryonyx","Baryonyx only","nur Baryonyx","endast Baryonyx","bare Baryonyx","バリオニクス専用","仅限重爪龙"),
 ("Fiskekonge: {0}/{1} fisk som Baryonyx","Fish King: {0}/{1} fish as Baryonyx","Fischkönig: {0}/{1} Fische als Baryonyx","Fiskkung: {0}/{1} fiskar som Baryonyx","Fiskekonge: {0}/{1} fisk som Baryonyx","魚の王: バリオニクスで {0}/{1} 匹","鱼王：以重爪龙捕获 {0}/{1} 条"),
+# --- run title change: speed_slayer needs at least 2 bosses (Q14)
+("Besejrede en boss på under # sekunder i et run med mindst # bosser.","Beat a boss in under # seconds in a run with at least # bosses.","Einen Boss in unter # Sekunden besiegt, in einem Run mit mindestens # Bossen.","Besegrade en boss på under # sekunder i ett run med minst # bossar.","Beseiret en boss på under # sekunder i et run med minst # bosser.","#秒以内にボスを倒した（ボス#体以上のラン）。","于 # 秒内击败首领（本局至少击败 # 个首领）。"),
 ]
