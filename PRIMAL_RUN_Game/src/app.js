@@ -463,6 +463,11 @@
       }
     }
     function drawPond(pond,time){
+      if(pond.baseRadius&&pond.baseRadius>pond.radius+1){ // B4 drought: cracked dry mud where the water was (procedural)
+        ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.baseRadius+10,pond.baseRadius*.7+8,0,0,Math.PI*2);ctx.fillStyle='#8d6042';ctx.fill();
+        ctx.save();ctx.strokeStyle='#674333';ctx.lineWidth=1.5;let seed=(pond.x*13+pond.y*7)>>>0;const rnd=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
+        ctx.beginPath();for(let i=0;i<14;i++){const a=rnd()*Math.PI*2,r0=pond.radius*(.9+rnd()*.1),r1=pond.baseRadius*(.85+rnd()*.2);ctx.moveTo(pond.x+Math.cos(a)*r0,pond.y+Math.sin(a)*r0*.7);ctx.lineTo(pond.x+Math.cos(a+.15)*r1,pond.y+Math.sin(a+.15)*r1*.7);}ctx.stroke();ctx.restore();
+      }
       ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius+10,pond.radius*.7+8,0,0,Math.PI*2);ctx.fillStyle='#b98252';ctx.fill();
       ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius,pond.radius*.7,0,0,Math.PI*2);ctx.fillStyle='#69a4a0';ctx.fill();
       ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius*.45,pond.radius*.7*.45,0,0,Math.PI*2);ctx.fillStyle='#2c5a6e';ctx.fill();const deep=tilePattern('deep_water');if(deep){ctx.save();ctx.globalAlpha=.4;ctx.fillStyle=deep;ctx.fill();ctx.restore();}

@@ -49,4 +49,7 @@ PART_B = [
 ("Fiskekonge: {0}/{1} fisk som Baryonyx","Fish King: {0}/{1} fish as Baryonyx","Fischkönig: {0}/{1} Fische als Baryonyx","Fiskkung: {0}/{1} fiskar som Baryonyx","Fiskekonge: {0}/{1} fisk som Baryonyx","魚の王: バリオニクスで {0}/{1} 匹","鱼王：以重爪龙捕获 {0}/{1} 条"),
 # --- run title change: speed_slayer needs at least 2 bosses (Q14)
 ("Besejrede en boss på under # sekunder i et run med mindst # bosser.","Beat a boss in under # seconds in a run with at least # bosses.","Einen Boss in unter # Sekunden besiegt, in einem Run mit mindestens # Bossen.","Besegrade en boss på under # sekunder i ett run med minst # bossar.","Beseiret en boss på under # sekunder i et run med minst # bosser.","#秒以内にボスを倒した（ボス#体以上のラン）。","于 # 秒内击败首领（本局至少击败 # 个首领）。"),
+# --- B4 Tørke
+("TØRKE","DROUGHT","DÜRRE","TORKA","TØRKE","干ばつ","干旱"),
+("VANDHULLERNE SKRUMPER","THE WATER HOLES ARE SHRINKING","DIE WASSERLÖCHER SCHRUMPFEN","VATTENHÅLEN KRYMPER","VANNHULLENE KRYMPER","水場が縮んでいく","水坑正在缩小"),
 ]

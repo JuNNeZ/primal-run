@@ -178,6 +178,11 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
       const site = nearest(r.map.sites.filter(s => !s.claimed && s.type !== 'rare' && s.discovered));
       if (site && dist(site) < 900) { if (dist(site) < 60) return { interact: true }; return steer(site.x, site.y); }
     }
+    // B4: in a drought prey gathers at the last water; hunters wait there when nothing is close.
+    if (r.drought && diet !== 'herbivore' && !boss && (r.map.ponds || []).length) {
+      const pond = r.map.ponds.slice().sort((a, b) => b.radius - a.radius)[0], near = nearest(r.enemies.filter(e => !e.guard && dist(e) < 500));
+      if (!near && Math.hypot(pond.x - p.x, pond.y - p.y) > pond.radius + 60) return steer(pond.x, pond.y);
+    }
     // Fight
     const prey = r.enemies.filter(e => !e.guard || style === 'brawler');
     const target = boss || nearest(prey.filter(e => dist(e) < 900)) || nearest(prey);

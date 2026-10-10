@@ -23,6 +23,7 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 | B6 Udfordringer | `challenges` | færdig | `tests/challenges.test.cjs` (5), browser da/ja 390 px |
 | B8 Baryonyx-fiskekonge | `fishKing` | færdig | `tests/fish-king.test.cjs` (4), browser da/sv |
 | B3 Spor og lugt | `scentTrails` | færdig | `tests/scent-trails.test.cjs` (5), browser: tegning + frametid (Q26-metoden) |
+| B4 Tørke og vandhuller | `drought` | færdig | `tests/drought.test.cjs` (4), browser da/en |
 
 ### B1a – boss-rækkevidde (05 §4)
 
@@ -106,6 +107,14 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 - Frametid (Q26-metoden): 390×844, 4× CPU-throttling, samme scene med flag af og til, 16 ABBA-batches med tvungen rasterisering pr. frame, minimum. Resultat: 62,2 mod 60,1 ms (+3,6 %), krav ≤ +10 %. Selve skanningen: ≤ 0,05 ms pr. rovdyr (unit-test).
 - Bots: Forsigtige stilarter (`sneak` eller `dodge > 0,5`) sniger sig væk under 60 % HP, når et rovdyr følger deres spor.
 
+### B4 – Tørke og vandhuller
+
+- "Banetid": Spillet har ingen fast banetid, så der bruges en nominel bane på 300 s (`DROUGHT.levelTime`). Efter 60 % (180 s fra banens start, `r.levelStart` sættes ved `start`/`nextStage`) skrumper alle damme lineært over 120 s til 35 % af deres radius. Ét seedet "sidste vand" (`ponds[seed % n]`) skrumper kun til 70 %. `isWater`/`isDeepWater` følger den nye radius, og spilleren får én besked: "TØRKE · VANDHULLERNE SKRUMPER".
+- `drink`: Under tørke bliver planteædere tørstige (fuldt efter 45 s). Fra 60 % tørst går de mod det bedste vand (`lastWater`: damme vægtet efter størrelse, floden på bane 3–4) og drikker ved kanten. Det samler byttedyr ved det sidste vand.
+- Tegning: revnet mudderkant (#8d6042 med revner i #674333) mellem den oprindelige og den nuværende radius. Proceduralt, asset-ønske i `MISSING_SPRITES.md`.
+- Bots: Rovdyr-bots venter ved det største vandhul under tørke, når der ikke er bytte inden for 500 px.
+- Antagelse: 300 s er en nominel banelængde (bot-medianer for en bane ligger på ca. 1–4 min.). Tallet er en konstant og kan justeres.
+
 ### Titelændring: `speed_slayer` (Lynnedlægger)
 
 - Betingelsen er nu `s.bosses >= 2 && s.fastestBossSeconds > 0 && s.fastestBossSeconds < 25` (ændret i `run_titles.json`, `data/build_titles.py`, `RUN_TITLES.md` og genereret med `tools/build_run_titles.py`). Den nye beskrivelse er oversat i `tr_part_b.py`.
@@ -128,4 +137,5 @@ Udfyldes pr. pakke (kommandoer fra repo-roden).
 - `src/core.js` B6: én blok i Part B-sektionen (`CHALLENGES`, wrappers om `spawn`, `step` og `addDNA`) og `challengeCount` i `start`-wrapperen. `src/app.js` B6: menuknap, `challenges`-skærm, `challenge-start`, intro-liste, resultatlinje. `style.css`: 1 linje.
 - `src/core.js` B8: 1 linje i `sanitizeSave`, en blok i Part B-sektionen (`SKINS.fishKing`, `ACHIEVEMENTS.push`, `catchFish`-wrapper, `skinFits`). `src/app.js` B8: paletswap `fishKing` i `npcVariant`, `skinFits` i spillerens sprite-variant, fremgang i skinvælgeren.
 - `src/core.js` B3: 1 linje i `enemyAI` (scent-hook før `ecologyAI`), `r.tracks=[]` i `nextStage`, en blok i Part B-sektionen (`TRACKS`, `step`-wrapper, `followScent`). `src/app.js` B3: sportegning før decals, `track` i `MODE_ICON`.
+- `src/core.js` B4: en blok i Part B-sektionen (wrappers om `start`, `nextStage`, `step` og `naturalBehavior`, samt `droughtScale` og `lastWater`). `src/app.js` B4: tørkekant i `drawPond`.
 - Genererede filer (`lang.js`, `run_titles.js`, `project.json`, `integration_report.json`): genbyg med `python tools/rebuild_generated.py`.

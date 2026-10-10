@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
+  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -1676,6 +1676,43 @@
     if(d<(r.hidden?90:220)){e.alert=true;e.mode='chase';e.trackedPlayer=(e.trackedPlayer||0)+1;} // smelled you out
     return true;
   };
+  // ---- B4 Tørke og vandhuller: after 60 % of a nominal 300 s level (180 s) the ponds shrink over 120 s to 35 % of their
+  // radius; one seeded "last water" only to 70 %. Thirsty herbivores then walk to the nearest remaining water to drink.
+  const DROUGHT={levelTime:300,start:.6,shrink:120,minScale:.35,lastScale:.7,thirstRate:1/45};
+  const startDrought=Game.prototype.start;
+  Game.prototype.start=function(options){startDrought.call(this,options);if(this.run){this.run.levelStart=0;this.run.drought=false;}};
+  const nextStageDrought=Game.prototype.nextStage;
+  Game.prototype.nextStage=function(){const r=this.run,level=r&&r.levelIndex,out=nextStageDrought.call(this);if(this.run&&this.run.levelIndex!==level){this.run.levelStart=this.run.seconds;this.run.drought=false;}return out;};
+  Game.prototype.droughtScale=function(pond){
+    const r=this.run,t=r.seconds-(r.levelStart||0),from=DROUGHT.levelTime*DROUGHT.start,k=Math.max(0,Math.min(1,(t-from)/DROUGHT.shrink));
+    const last=(r.map.ponds||[]).length?r.map.ponds[r.map.seed%r.map.ponds.length]:null;
+    return 1-(1-(pond===last?DROUGHT.lastScale:DROUGHT.minScale))*k;
+  };
+  const stepDrought=Game.prototype.step;
+  Game.prototype.step=function(dt,input={}){
+    const out=stepDrought.call(this,dt,input),r=this.run;
+    if(!FEATURES.drought||!r||this.phase!=='playing'||!(r.map.ponds||[]).length)return out;
+    for(const pond of r.map.ponds){if(!pond.baseRadius)pond.baseRadius=pond.radius;pond.radius=pond.baseRadius*this.droughtScale(pond);}
+    if(!r.drought&&r.seconds-(r.levelStart||0)>=DROUGHT.levelTime*DROUGHT.start){r.drought=true;r.effects.push({x:r.player.x,y:r.player.y-40,text:'TØRKE · VANDHULLERNE SKRUMPER',color:'#de954a',life:2.5});this.emit('drought');}
+    return out;
+  };
+  // Nearest water an animal can still drink from: the river on stage 1, otherwise the pond with the best size/distance.
+  Game.prototype.lastWater=function(e){
+    const r=this.run;let best=null,score=Infinity;
+    for(const pond of r.map.ponds||[]){const d=Math.hypot(pond.x-e.x,pond.y-e.y),s=d/(pond.radius/72);if(s<score){score=s;best={x:pond.x,y:pond.y,radius:pond.radius};}}
+    if(r.stage===1)for(const p of r.map.riverCurve||[]){const d=Math.hypot(p.x-e.x,p.y-e.y);if(d<score){score=d;best={x:p.x,y:p.y,radius:58};}}
+    return best;
+  };
+  const naturalDrought=Game.prototype.naturalBehavior;
+  Game.prototype.naturalBehavior=function(e,dt){
+    const r=this.run;if(!FEATURES.drought||!r.drought||!herbivorousNPC(e.kind))return naturalDrought.call(this,e,dt);
+    e.thirst=Math.min(1,(e.thirst||0)+dt*DROUGHT.thirstRate);
+    if(e.thirst<.6&&e.activity!=='drink')return naturalDrought.call(this,e,dt);
+    const w=this.lastWater(e);if(!w)return naturalDrought.call(this,e,dt);
+    e.mode=e.activity='drink';
+    if(isWater(r.stage,r.map,e,-24)){e.thirst=Math.max(0,e.thirst-dt/3);if(e.thirst<=0)e.activity='graze';return;} // at the edge: drink
+    const dx=w.x-e.x,dy=w.y-e.y,d=Math.max(1,Math.hypot(dx,dy));e.facingX=dx/d;e.facingY=dy/d;this.travel(e,dx/d*e.speed*.55*dt,dy/d*e.speed*.55*dt);
+  };
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

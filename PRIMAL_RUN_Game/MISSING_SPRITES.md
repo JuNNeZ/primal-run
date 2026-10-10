@@ -32,3 +32,4 @@ af ChatGPT-art (Codex integrerer). Palet: Primal Earth 32.
 | B1c | Askesky efter Karls stormløb | 5 halvgennemsigtige cirkler (#626861), radius 90 px | askesky-effekt (4 frames, ca. 192×128), kan genbruges til ASKEKAST-nedslaget |
 | B1c | Benny under vandet | Bennys sprite med 30 % alpha | valgfri: rygfinne/silhuet i vand (S/N/E/W) |
 | B8 | Fiskekongens farver (Baryonyx-skin) | paletskift af de eksisterende Baryonyx-frames | valgfrit: ChatGPT kan foreslå en bedre 4-farvers swap-tabel eller et kronemærke; ingen nye frames nødvendige |
+| B4 | Tørret mudderkant om skrumpende damme | ellipse i #8d6042 med revner i #674333 | tørret mudder-kanttile (A6), helst med 3–4 revnevarianter, så kanten kan følge dammens radius |

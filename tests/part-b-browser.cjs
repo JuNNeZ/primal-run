@@ -169,6 +169,18 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
       await page.setViewportSize({ width: 960, height: 640 });
     }
 
+    // ---- B4 Tørke: late in a level the ponds shrink and a dried, cracked edge is drawn; the notice is translated (da/en).
+    for (const lang of ['da', 'en']) {
+      await open(lang);
+      const b4 = await page.evaluate(() => { const g = primalRun.game; g.phase = 'menu'; g.start({ seed: 3 }); const r = g.run; r.enemies = []; r.spawnTimer = 1e9; r.invulnerable = 1e9;
+        const pond = r.map.ponds[0]; Object.assign(r.player, { x: pond.x + pond.radius + 60, y: pond.y }); r.seconds = 330; g.step(1 / 30, {});
+        PrimalI18n.missing.clear(); return { drought: r.drought, radius: pond.radius, base: pond.baseRadius, notice: r.effects.find(e => /TØRKE/.test(e.text))?.text, shown: PrimalI18n.t(r.effects.find(e => /TØRKE/.test(e.text))?.text || '') }; });
+      assert.equal(b4.drought, true); assert.ok(b4.radius < b4.base * .75, JSON.stringify(b4));
+      assert.equal(b4.shown, lang === 'da' ? 'TØRKE · VANDHULLERNE SKRUMPER' : 'DROUGHT · THE WATER HOLES ARE SHRINKING');
+      await page.waitForTimeout(200); if (lang === 'da') await page.screenshot({ path: path.join(shots, 'part_b_b4_drought.png') });
+      checks.push('B4 ' + lang + ': pond ' + Math.round(b4.base) + ' → ' + Math.round(b4.radius) + ' px, notice "' + b4.shown + '"');
+    }
+
     assert.deepEqual(errors, []);
     console.log('part-b browser OK\n- ' + checks.join('\n- '));
   } finally { await browser.close(); }
