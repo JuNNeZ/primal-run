@@ -61,15 +61,16 @@ function bandPoint(map, p) {
 
 // level: start at this journey level (0-based) via the game's own nextStage(); bossDuel: the boss spawns at once
 // and the run ends when it dies (outcome 'boss_win'). Used by X10 and the B1 before/after comparisons.
-function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false }) {
+function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null }) {
   const S = STYLES[style]; if (!S) throw Error('Unknown style ' + style);
   const R = rng(seed * 7919 + style.length * 104729);
   const g = new C.Game({ random: rng(seed ^ 0xABCDEF) });
   g.save.unlockedSpecies = Object.keys(C.PLAYER_SPECIES);
   g.selectSpecies(species);
   Object.assign(g.save.upgrades, upgrades || {});
-  g.start({ seed });
-  const r = g.run, config = C.PLAYER_SPECIES[species];
+  // daily: a date (ms) → B7 daily hunt (its own seed and rotating species; `species` is ignored).
+  if (daily !== null && g.startDaily) g.startDaily(daily); else g.start({ seed });
+  const r = g.run, config = C.PLAYER_SPECIES[r.species]; species = r.species;
   for (let i = 0; i < level && i < r.campaign.length - 1; i++) { g.phase = 'cleared'; r.bossDefeated = true; g.nextStage(); }
   const bandMap = { riverCurve: r.map.riverCurve, river: r.map.river };
   if (open) { r.map.river = []; r.map.riverCurve = []; r.map.lavaCrossings = []; } // control: same level without lava/river

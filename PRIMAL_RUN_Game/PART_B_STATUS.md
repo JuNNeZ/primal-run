@@ -19,6 +19,7 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 | B1a Boss-rækkevidde | `bossReach` | færdig | X1, X3–X8, X10, X11, X12 + hjørne-/AoE-/klippetests |
 | B1b Lavakrydsninger | `lavaCrossings` | færdig | X2, krydsningsgeometri på 40 seeds, browser |
 | B1c Signaturmekanikker | `bossSignatures` | færdig (Benny, Ragnar, Karl) | X9-audit på 8 baner, én test pr. mekanik, Carl identisk, browser |
+| B7 Dagens jagt | `dailyHunt` | færdig | `tests/daily-hunt.test.cjs` (5), browser da/de 390 px |
 
 ### B1a – boss-rækkevidde (05 §4)
 
@@ -59,6 +60,15 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 - *Asta (bane 5):* Fase 2 "Panserskjold": 75 % frontpanser og 0 % bagfra, så det kan betale sig at flanke. "Hjulsving" med en ring-telegraph på 0,9 s, der vokser udad.
 - *Tina (bane 6):* Når hornstormen rammer en klippe, knuses den til et gruskrater (en slow-zone i 6 s). Ved 40 % kalder hun en ung triceratops.
 
+### B7 – Dagens jagt
+
+- `game.dailyHunt(date)` giver `{seed: YYYYMMDD (lokal dato), species, entries}`. Arten roterer efter dagnummer over de ulåste arter i `PLAYER_SPECIES`-rækkefølge, så spillere med forskellige ulåste arter kan få forskellig art samme dag, men altid samme kort.
+- `game.startDaily()` starter med dagens art uden at ændre det valgte i menuen. Ved `finish` gemmes `save.dailyHunts[YYYYMMDD]` (top 5 efter score, de 14 nyeste datoer, saneret i `sanitizeSave`). Ældre saves uden feltet får `{}`. Unlocks, rekorder og titler påvirkes ikke.
+- RunSummary: Fælles Part B-adapter `r.partB` (core) → `records.js` kopierer felterne over sine `null`-standarder (1 linje). `dailySeed` = dagens seed, ellers 0. Titlen `daily_champion` har `implementationStatus: "built in Part B (B7)"` (genereret med `tools/build_run_titles.py`).
+- UI: Knappen "☀ Dagens jagt <art>" i menuen, en dagsskærm med seed, art og lokal top 5, en linje med placering på slutskærmen og knappen "Dagens jagt" bagefter. Det virker på 390 px uden vandret scroll.
+- Bots: `runOne({ daily: <dato> })` spiller dagens jagt.
+- Balance: Ingen ændring i almindelige runs. Dagens jagt bruger samme kode med et fast seed, så der er ingen ny simulering.
+
 ## Testresultater
 
 Udfyldes pr. pakke (kommandoer fra repo-roden).
@@ -70,4 +80,7 @@ Udfyldes pr. pakke (kommandoer fra repo-roden).
 - `src/core.js`: nyt navigationsblok efter `isLava`, nye Game-metoder før `laterBossAI` (`playerReach`, `chargeLaneClear`, `bossReach`, `chargeLaneLost`, `chargeSkid`), en linje i hver boss-AI (hook før chase-bevægelsen, lane-tjek ved valg, windup og charge), 3 linjer i `travel()`, `lavaCrossings` i `createMap` og `isLava`, og `'stalk'` i retningslisten i `enemyStep`. Del A rører ikke boss-AI'en. Risiko: lav.
 - `src/app.js`: tegning af basaltkrydsninger i lava-blokken (stage 3), krydsningsprikker på minikortet og boss-HUD-suffiks. B1c: `telegraphShape`/`telegraphPath` kan tegne en cirkel ved målet (`shape.at`), partikelfarver for `bubble`/`ash`, askeskyer før telegraphs, 30 % alpha for en dykket boss og `primalRun.telegraphShape` (test-API).
 - `src/core.js` B1c: nye Game-metoder før `playerReach` (`startDive`, `waterTrip`, `diveWindup`, `diveSurface`, `roarStampede`, `stampede`, `ashCloud`, `startAshThrow`, `ashThrowLand`), en linje i `laterBossAI` og `forestBossAI` pr. hook, `roarDebuff` i timerlisten og i stamina-regenerationen, en linje i NPC-flugtkoden (stampede) og `r.ashClouds=[]` i `nextStage`.
-- Genererede filer (`lang.js`, `project.json`, `integration_report.json`): genbyg med `python tools/rebuild_generated.py`.
+- `src/core.js` B7: én linje i `sanitizeSave` og en isoleret "Part B"-blok lige før `RECORDS.install` (wrapper om `Game.prototype.start`/`finish`, dagsfunktioner). Nye eksports: `dailyHunt`, `dailyKey`, `sanitizeDailyHunts`.
+- `src/records.js`: 1 linje (Part B-felter fra `r.partB`). `run_titles.json`: `daily_champion` aktiveret.
+- `src/app.js` B7: menuknap, `daily`-skærm, `daily-start`-handling, resultatlinje, Escape-liste. `style.css`: 1 linje.
+- Genererede filer (`lang.js`, `run_titles.js`, `project.json`, `integration_report.json`): genbyg med `python tools/rebuild_generated.py`.

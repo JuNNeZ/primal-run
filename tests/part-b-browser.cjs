@@ -76,6 +76,28 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
       checks.push('B1c: telegraph shapes for 7 bosses × 6 patterns, Benny dive telegraph "' + b1c.name + '"');
     }
 
+    // ---- B7 Dagens jagt: menu button → daily screen → run → result line → local list; 390 px wide, da/de.
+    for (const lang of ['da', 'de']) {
+      await page.setViewportSize({ width: 390, height: 844 }); await open(lang);
+      await page.locator('[data-action="daily"]').click();
+      const panel = await page.locator('.daily-panel').innerText();
+      const today = await page.evaluate(() => primalRun.game.dailyHunt());
+      assert.match(panel, new RegExp(String(today.seed))); assert.match(panel, lang === 'da' ? /DAGENS JAGT/ : /TAGESJAGD/);
+      await page.locator('[data-action="daily-start"]').click();
+      await page.waitForFunction(() => primalRun.game.phase === 'playing' && primalRun.game.run.daily);
+      const run = await page.evaluate(() => { const g = primalRun.game; return { seed: g.run.seed, species: g.run.species, chosen: g.save.selectedSpecies }; });
+      assert.equal(run.seed, today.seed); assert.equal(run.species, today.species);
+      await page.evaluate(() => { const g = primalRun.game; g.run.score = 321; g.run.invulnerable = 0; g.damage(99999); });
+      await page.waitForSelector('.daily-result');
+      const line = await page.locator('.daily-result').innerText();
+      assert.match(line, lang === 'da' ? /Dagens jagt · .* · plads 1 af 1/ : /Tagesjagd · .* · Platz 1 von 1/, line);
+      const w = await page.evaluate(() => [document.documentElement.scrollWidth, window.innerWidth]); assert.ok(w[0] <= w[1], 'no horizontal scroll ' + w);
+      await page.locator('.actions [data-action="daily"]').click(); assert.equal(await page.locator('.daily-list tbody tr').count(), 1);
+      if (lang === 'da') await page.screenshot({ path: path.join(shots, 'part_b_b7_daily.png') });
+      checks.push('B7 ' + lang + ': daily seed ' + today.seed + ' (' + today.species + '), result "' + line + '", list 1 row, 390 px');
+    }
+    await page.setViewportSize({ width: 960, height: 640 });
+
     assert.deepEqual(errors, []);
     console.log('part-b browser OK\n- ' + checks.join('\n- '));
   } finally { await browser.close(); }

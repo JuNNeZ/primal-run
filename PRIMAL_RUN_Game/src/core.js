@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
+  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -473,6 +473,7 @@
     save.skin=save.skins.includes(x.skin)?x.skin:'classic';
     save.selectedSpecies = save.unlockedSpecies.includes(x.selectedSpecies) ? x.selectedSpecies : 'deinonychus';
     // Version 3 adds local records and earned run titles; v2 saves are seeded from lifetime/scores.
+    if(FEATURES.dailyHunt)save.dailyHunts=sanitizeDailyHunts(x.dailyHunts); // B7
     if(RECORDS){save.version=3;save.titles=RECORDS.sanitizeTitles(x.titles);save.records=RECORDS.sanitizeRecords(x.records,save);}
     return save;
   }
@@ -1565,6 +1566,37 @@
       for(const [e,hp] of enemies)r.stats.damageDealt+=Math.max(0,hp-Math.max(0,e.hp));
     }
   };
+  // ===== Part B (claude/part-b): isolated blocks; each one is gated by its FEATURES flag. =====
+  // r.partB carries the RunSummary fields Part B owns (records.js copies them over its null defaults).
+  const startCore=Game.prototype.start;
+  Game.prototype.start=function(options){startCore.call(this,options);if(this.run)this.run.partB={...(FEATURES.dailyHunt?{dailySeed:0}:{})};};
+  // ---- B7 Dagens jagt: seed = YYYYMMDD (local date), species rotates over the unlocked ones, a local top 5 per date.
+  function dailyKey(date){const d=new Date(date);return d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();}
+  function dailyHunt(save,date=Date.now()){
+    const d=new Date(date),seed=dailyKey(d),pool=Object.keys(PLAYER_SPECIES).filter(id=>save.unlockedSpecies.includes(id)),day=Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5);
+    return {seed,key:String(seed),species:pool[day%pool.length]||'deinonychus',entries:(save.dailyHunts||{})[String(seed)]||[]};
+  }
+  function sanitizeDailyHunts(raw){
+    const out={};if(!raw||typeof raw!=='object')return out;
+    for(const key of Object.keys(raw).filter(k=>/^\d{8}$/.test(k)).sort().slice(-14)){const list=Array.isArray(raw[key])?raw[key]:[];
+      out[key]=list.filter(e=>e&&Number.isFinite(e.score)).map(e=>({name:cleanName(e.name),species:Object.hasOwn(PLAYER_SPECIES,e.species)?e.species:'deinonychus',score:Math.floor(clamp(e.score,0,1e8)),level:Math.floor(clamp(finite(e.level,1),1,LEVELS.length)),seconds:Math.floor(clamp(finite(e.seconds),0,1e6)),victory:!!e.victory})).sort((a,b)=>b.score-a.score).slice(0,5);}
+    return out;
+  }
+  Game.prototype.dailyHunt=function(date){return dailyHunt(this.save,date);};
+  Game.prototype.startDaily=function(date){
+    if(!FEATURES.dailyHunt)return false;const daily=dailyHunt(this.save,date),previous=this.save.selectedSpecies;
+    this.save.selectedSpecies=daily.species;try{this.start({seed:daily.seed});}finally{this.save.selectedSpecies=previous;}
+    this.run.daily={seed:daily.seed,key:daily.key,species:daily.species};this.run.partB.dailySeed=daily.seed;return true;
+  };
+  const finishCore=Game.prototype.finish;
+  Game.prototype.finish=function(victory){
+    const r=this.run,fresh=r&&!r.result;finishCore.call(this,victory);
+    if(!FEATURES.dailyHunt||!fresh||!r.daily||!r.result)return;
+    const list=(this.save.dailyHunts||(this.save.dailyHunts={}))[r.daily.key]||[],entry={name:this.save.name,species:r.species,score:r.result.score,level:r.result.stage,seconds:r.result.seconds,victory:!!victory};
+    this.save.dailyHunts[r.daily.key]=[...list,entry].sort((a,b)=>b.score-a.score).slice(0,5);
+    this.save.dailyHunts=sanitizeDailyHunts(this.save.dailyHunts);
+    r.daily.rank=this.save.dailyHunts[r.daily.key].findIndex(e=>e===entry||e.score===entry.score&&e.seconds===entry.seconds&&e.species===entry.species)+1;r.daily.entries=this.save.dailyHunts[r.daily.key].length;this.persist();
+  };
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

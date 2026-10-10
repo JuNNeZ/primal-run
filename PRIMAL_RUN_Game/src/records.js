@@ -77,6 +77,7 @@
       score: res.score || 0, seed: r.seed, endedAt: ctx.now
     };
     for (const key of UNTRACKED) s[key] = null;
+    for (const key of UNTRACKED) if (r.partB && r.partB[key] !== undefined && r.partB[key] !== null) s[key] = r.partB[key]; // Part B fills its own fields
     return s;
   }
 

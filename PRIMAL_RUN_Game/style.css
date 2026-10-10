@@ -81,3 +81,4 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .rarity-uncommon{color:#a2d4c1}.rarity-rare{color:#69a4a0}.rarity-epic{color:#c79ad8}.rarity-legendary{color:#e7c35a}.rarity-secret{color:#ffffff}
 .chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.chip{padding:2px 8px;border:1px solid #2c3a33;font-size:.85em}.chip.new{border-color:#e7c35a}.run-cause small{opacity:.7}
 .records-tabs button.selected{background:#c3a35c;border-color:#c3a35c;color:#15221a;font-weight:800}
+.daily-list{width:100%;border-collapse:collapse;margin:10px 0}.daily-list td{padding:8px 6px}.daily-result{color:#e9b75a;font-weight:700;text-align:center;margin:8px 0}
