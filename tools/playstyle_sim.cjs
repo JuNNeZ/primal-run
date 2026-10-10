@@ -26,7 +26,8 @@ const os = require('node:os');
 const crypto = require('node:crypto');
 const { Worker, isMainThread, parentPort, workerData } = require('node:worker_threads');
 
-const CORE_PATH = path.join(__dirname, '../PRIMAL_RUN_Game/src/core.js');
+// --core <path> (or PRIMAL_CORE) runs the same bots against another core.js, e.g. a baseline checkout.
+const CORE_PATH = path.resolve(process.env.PRIMAL_CORE || (process.argv.includes('--core') ? process.argv[process.argv.indexOf('--core') + 1] : path.join(__dirname, '../PRIMAL_RUN_Game/src/core.js')));
 
 // ---------------------------------------------------------------- play styles
 const STYLES = {
@@ -35,6 +36,7 @@ const STYLES = {
   casual:    { label: 'Afslappet/casual',       reaction: 0.30, dodge: 0.35, aimError: 30, ability: 'sometimes', retreatHP: 0.25, explore: true, picks: 'random', foodGreed: 0.4, sneak: false },
   brawler:   { label: 'Slagsbror (angriber alt)', reaction: 0.12, dodge: 0.15, aimError: 10, ability: 'spam', retreatHP: 0, explore: false, picks: 'offence', foodGreed: 0.2, sneak: false },
   explorer:  { label: 'Udforsker/samler',       reaction: 0.20, dodge: 0.6, aimError: 15, ability: 'smart', retreatHP: 0.4, explore: true, picks: 'defence', foodGreed: 0.8, sneak: true, wanderBias: 1 },
+  exploiter: { label: 'Terræn-udnytter (B1)', reaction: 0.05, dodge: 0.95, aimError: 0, ability: 'smart', retreatHP: 0.35, explore: false, picks: 'best', foodGreed: 0.6, sneak: false, exploit: true },
   newbie:    { label: 'Ny spiller',             reaction: 0.45, dodge: 0.15, aimError: 40, ability: 'never', retreatHP: 0.2, explore: false, picks: 'random', foodGreed: 0.3, sneak: false },
 };
 
@@ -46,27 +48,55 @@ const quant = (arr, q) => { const a = arr.filter(v => v !== null && v !== undefi
 const mean = arr => { const a = arr.filter(v => Number.isFinite(v)); return a.length ? +(a.reduce((s, v) => s + v, 0) / a.length).toFixed(2) : null; };
 
 // ---------------------------------------------------------------- one run
-function runOne(C, { species, style, seed, seconds, dt, upgrades }) {
+// Exploiter (05 §5): the point on the lava/deep-water centre line nearest the boss, and its normal.
+function bandPoint(map, p) {
+  const pts = map.riverCurve || map.river || []; let best = null;
+  for (let i = 1; i < pts.length; i++) {
+    const a = pts[i - 1], b = pts[i], dx = b.x - a.x, dy = b.y - a.y, len = Math.hypot(dx, dy) || 1;
+    const t = Math.max(0, Math.min(1, ((p.x - a.x) * dx + (p.y - a.y) * dy) / (len * len))), q = { x: a.x + t * dx, y: a.y + t * dy }, d = Math.hypot(p.x - q.x, p.y - q.y);
+    if (!best || d < best.d) best = { d, q, n: { x: -dy / len, y: dx / len } };
+  }
+  return best;
+}
+
+// level: start at this journey level (0-based) via the game's own nextStage(); bossDuel: the boss spawns at once
+// and the run ends when it dies (outcome 'boss_win'). Used by X10 and the B1 before/after comparisons.
+function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null, challenges = [], alone = false }) {
   const S = STYLES[style]; if (!S) throw Error('Unknown style ' + style);
   const R = rng(seed * 7919 + style.length * 104729);
   const g = new C.Game({ random: rng(seed ^ 0xABCDEF) });
   g.save.unlockedSpecies = Object.keys(C.PLAYER_SPECIES);
   g.selectSpecies(species);
   Object.assign(g.save.upgrades, upgrades || {});
-  g.start({ seed });
-  const r = g.run, config = C.PLAYER_SPECIES[species];
+  // daily: a date (ms) → B7 daily hunt (its own seed and rotating species; `species` is ignored).
+  if (challenges.length && g.setChallenges) g.setChallenges(challenges); // B6 modifiers for this run
+  if (daily !== null && g.startDaily) g.startDaily(daily); else g.start({ seed });
+  const r = g.run, config = C.PLAYER_SPECIES[r.species]; species = r.species;
+  for (let i = 0; i < level && i < r.campaign.length - 1; i++) { g.phase = 'cleared'; r.bossDefeated = true; g.nextStage(); }
+  const bandMap = { riverCurve: r.map.riverCurve, river: r.map.river };
+  if (open) { r.map.river = []; r.map.riverCurve = []; r.map.lavaCrossings = []; } // control: same level without lava/river
+  if (alone) { r.enemies = []; r.spawnTimer = 1e9; } // duel without other animals (X2: compares the boss fight only)
+  if (bossDuel) r.meat = Math.max(r.meat, g.currentLevel().target);
+  let duelBoss = null;
   const m = {
     tFirstMutation: null, tFirstBossSpawn: null, tFirstBossKill: null, bossFights: [], levelTimes: [], tFinalLevel: null,
     epicRewards: 0, mutationPicks: 0, starvedTime: 0, combatTime: 0, staggers: 0, enemyAttacksInterrupted: 0,
     lowHPTime: 0, eatingTime: 0, idleTime: 0, stuckTime: 0,
   };
   let bossSpawnAt = null, levelStart = 0, decision = { x: 0, y: 0 }, nextDecision = 0, wall = 0, lastPos = { x: r.player.x, y: r.player.y }, stuckClock = 0;
-  const wanderTarget = { x: r.player.x, y: r.player.y, until: 0 };
+  const wanderTarget = { x: r.player.x, y: r.player.y, until: 0 }, route = {};
   const prevStagger = new Map(), prevMode = new Map();
   const dist = e => Math.hypot(e.x - r.player.x, e.y - r.player.y);
   const nearest = items => { let best = null, bd = Infinity; for (const it of items) { const d = dist(it); if (d < bd) { bd = d; best = it; } } return best; };
 
   function steer(x, y) {
+    // B1b: like a player, path around the lava to a basalt crossing (same nav grid as the bosses) instead of wading through.
+    if (r.stage === 3 && C.NAV && (r.map.lavaCrossings || []).length && !C.NAV.navLineClear(r.stage, r.map, true, r.player, { x, y })) {
+      const grid = C.NAV.navGrid(r.stage, r.map, true, r.player.radius), key = Math.floor(x / 64) + ',' + Math.floor(y / 64);
+      if (!route.flow || route.key !== key || r.seconds - route.at > 1) Object.assign(route, { key, at: r.seconds, flow: C.NAV.navFlow(r.stage, r.map, grid, true, { x, y }) });
+      const next = C.NAV.navStep(r.stage, r.map, true, grid, route.flow, r.player);
+      if (next && next.steps > 0) { x = next.x; y = next.y; }
+    }
     let dx = x - r.player.x, dy = y - r.player.y; const n = Math.hypot(dx, dy); if (n < 2) return { x: 0, y: 0 };
     dx /= n; dy /= n;
     const blocked = (vx, vy) => r.map.rocks.some(rock => Math.hypot(r.player.x + vx * 50 - rock.x, r.player.y + vy * 50 - rock.y) < r.player.radius + rock.radius + 8);
@@ -111,12 +141,29 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades }) {
       const bx = exposed.x - exposed.facingX * (exposed.radius + 20), by = exposed.y - exposed.facingY * (exposed.radius + 20);
       return { ...steer(bx, by), attack: dist(exposed) < config.range + exposed.radius + 10, pounce:species==='deinonychus'&&S.ability==='smart'&&r.stamina>=cost&&!r.precisionTime&&!r.pounceCooldown };
     }
+    // B3: a predator on your scent → careful players sneak away (sneaking halves the tracks left behind).
+    const tracker = (C.FEATURES || {}).scentTrails ? nearest(r.enemies.filter(e => e.activity === 'track' && dist(e) < 500)) : null;
+    if (tracker && (S.sneak || S.dodge > .5) && hpFrac < .6) { const dx = p.x - tracker.x, dy = p.y - tracker.y, n = Math.hypot(dx, dy) || 1; return { ...steer(p.x + dx / n * 200, p.y + dy / n * 200), sneak: true }; }
+    // B5: feed a wild raptor when meat lies next to it (careful and exploring players recruit up to 2).
+    if ((C.FEATURES || {}).raptorPack && (S.explore || S.dodge > .5) && (r.raptors || []).filter(a => a.ally).length < C.PACK.max && !hostile.length) {
+      const wild = nearest((r.raptors || []).filter(a => !a.ally && dist(a) < 500 && r.pickups.some(f => f.corpseId !== undefined && f.value > 0 && Math.hypot(f.x - a.x, f.y - a.y) < C.PACK.meatReach)));
+      if (wild) return dist(wild) < C.PACK.feedReach - 10 ? { interact: true } : steer(wild.x, wild.y);
+    }
     // Retreat when hurt
     if (S.retreatHP && hpFrac < S.retreatHP && hostile.length) {
       const t = nearest(hostile), dx = p.x - t.x, dy = p.y - t.y, n = Math.hypot(dx, dy) || 1;
       return { ...steer(p.x + dx / n * 200, p.y + dy / n * 200), sneak: S.sneak };
     }
     const boss = nearest(r.enemies.filter(e => e.boss));
+    // Exploiter: stand across lava (or deep water for non-swimming bosses) from the boss and only attack from there.
+    if (S.exploit && boss && (r.stage === 3 || r.stage === 1 && !C.canSwim(boss))) {
+      const band = bandPoint(r.map, boss);
+      if (band && band.d < 2500) { // lure: wait across the band until the boss comes
+        const side = ((boss.x - band.q.x) * band.n.x + (boss.y - band.q.y) * band.n.y) >= 0 ? -1 : 1, spot = { x: band.q.x + band.n.x * side * 70, y: band.q.y + band.n.y * side * 70 };
+        const there = Math.hypot(spot.x - p.x, spot.y - p.y) < 24;
+        return { ...(there ? { x: 0, y: 0 } : steer(spot.x, spot.y)), attack: there && dist(boss) < config.range + boss.radius + 20, pounce: there && ['ankylosaurus', 'tyrannosaurus'].includes(species) && dist(boss) < 140 && r.stamina >= cost };
+      }
+    }
     // Food
     const diet = config.diet, foods = [];
     if (diet === 'herbivore' || diet === 'omnivore') foods.push(...r.map.forage.filter(f => !f.depleted));
@@ -136,9 +183,16 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades }) {
       const site = nearest(r.map.sites.filter(s => !s.claimed && s.type !== 'rare' && s.discovered));
       if (site && dist(site) < 900) { if (dist(site) < 60) return { interact: true }; return steer(site.x, site.y); }
     }
+    // B4: in a drought prey gathers at the last water; hunters wait there when nothing is close.
+    if (r.drought && diet !== 'herbivore' && !boss && (r.map.ponds || []).length) {
+      const pond = r.map.ponds.slice().sort((a, b) => b.radius - a.radius)[0], near = nearest(r.enemies.filter(e => !e.guard && dist(e) < 500));
+      if (!near && Math.hypot(pond.x - p.x, pond.y - p.y) > pond.radius + 60) return steer(pond.x, pond.y);
+    }
     // Fight
     const prey = r.enemies.filter(e => !e.guard || style === 'brawler');
-    const target = boss || nearest(prey.filter(e => dist(e) < 900)) || nearest(prey);
+    // B2: at night a sleeping herd is the easy meal for hunters who know it.
+    const sleeper = r.night && diet !== 'herbivore' && S.dodge > .5 ? nearest(prey.filter(e => e.activity === 'sleep' && dist(e) < 900)) : null;
+    const target = boss || sleeper || nearest(prey.filter(e => dist(e) < 900)) || nearest(prey);
     if (target) {
       const aim = S.aimError ? { x: target.x + (R() - .5) * S.aimError, y: target.y + (R() - .5) * S.aimError } : target;
       const inRange = dist(target) < config.range + target.radius - 10;
@@ -173,8 +227,15 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades }) {
     const before = { x: r.player.x, y: r.player.y };
     g.step(dt, input);
     if (decision.interact || decision.pounce) decision = { ...decision, interact: false, pounce: false };
+    if (bossDuel && !duelBoss && (duelBoss = r.enemies.find(e => e.boss) || null) && across) {
+      // X2: boss 120 px on one side of the (original) lava line, player 200 px on the other, same geometry with open: true.
+      const band = bandPoint(bandMap, duelBoss), side = ((duelBoss.x - band.q.x) * band.n.x + (duelBoss.y - band.q.y) * band.n.y) >= 0 ? 1 : -1;
+      Object.assign(duelBoss, { x: band.q.x + band.n.x * side * 120, y: band.q.y + band.n.y * side * 120 });
+      Object.assign(r.player, { x: band.q.x - band.n.x * side * 200, y: band.q.y - band.n.y * side * 200 });
+    }
     for (const ev of g.drainEvents()) {
       if (ev.type === 'boss') { bossSpawnAt = r.seconds; if (m.tFirstBossSpawn === null) m.tFirstBossSpawn = r.seconds; }
+      if (ev.type === 'boss_dead' && bossDuel) m.duelWon = true;
       if (ev.type === 'boss_dead') { if (m.tFirstBossKill === null) m.tFirstBossKill = r.seconds; if (bossSpawnAt !== null) m.bossFights.push(+(r.seconds - bossSpawnAt).toFixed(2)); bossSpawnAt = null; }
     }
     // Telemetry sampled every step
@@ -188,11 +249,13 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades }) {
       prevStagger.set(e.id, e.stagger || 0); prevMode.set(e.id, e.mode);
     }
     wall += dt;
+    if (m.duelWon) break;
   }
   const st = r.stats, minutes = Math.max(r.seconds / 60, 1e-6);
   return {
     species, style, seed,
-    outcome: r.result?.victory ? 'victory' : r.result ? 'death' : 'timeout',
+    bossHpLostPct: duelBoss ? +(100 * (duelBoss.maxHP - Math.max(0, m.duelWon ? 0 : duelBoss.hp)) / duelBoss.maxHP).toFixed(1) : null,
+    outcome: m.duelWon ? 'boss_win' : r.result?.victory ? 'victory' : r.result ? 'death' : 'timeout',
     killedBy: r.result && !r.result.victory ? (r.lastHit?.kind || 'unknown') : null,
     seconds: +r.seconds.toFixed(1), levelReached: r.levelIndex + 1, levelsTotal: r.campaign.length, biome: r.stage,
     tFirstMutation: m.tFirstMutation, tFirstBossSpawn: m.tFirstBossSpawn, tFirstBossKill: m.tFirstBossKill,
@@ -208,6 +271,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades }) {
     staggersPerMin: +(m.staggers / minutes).toFixed(2), enemyAttacksInterrupted: m.enemyAttacksInterrupted,
     lowHPPct: +(100 * m.lowHPTime / Math.max(r.seconds, 1e-6)).toFixed(1), eatingPct: +(100 * m.eatingTime / Math.max(r.seconds, 1e-6)).toFixed(1),
     stuckSeconds: +m.stuckTime.toFixed(1), plantsEaten: st.plantsEaten, fishCaught: st.fishCaught, exploration: r.exploration,
+    allies: (r.partB && r.partB.alliesRecruited) || 0, nightKills: (r.partB && r.partB.nightKills) || 0,
     distanceKm: +(st.distance / 1000).toFixed(2), mutations: Object.fromEntries(Object.entries(r.mutations).filter(([, v]) => v)),
   };
 }
@@ -267,6 +331,7 @@ function writeReport(out, meta, summary, warns) {
 // ---------------------------------------------------------------- worker
 if (!isMainThread) {
   const C = require(CORE_PATH);
+  for (const flag of workerData.off || []) if (C.FEATURES && flag in C.FEATURES) C.FEATURES[flag] = false; // --off: baseline with Part B flags off
   const rows = [];
   for (const job of workerData.jobs) {
     try { rows.push(runOne(C, job)); } catch (e) { rows.push({ species: job.species, style: job.style, seed: job.seed, outcome: 'error', error: String(e && e.stack || e) }); }
@@ -293,19 +358,19 @@ async function main() {
   const styles = get('styles', 'all') === 'all' ? Object.keys(STYLES) : get('styles').split(',');
   for (const s of species) if (!C.PLAYER_SPECIES[s]) throw Error('Ukendt art: ' + s);
   for (const s of styles) if (!STYLES[s]) throw Error('Ukendt stil: ' + s);
-  const upgrades = JSON.parse(get('upgrades', '{}'));
+  const off = get('off', '') ? get('off').split(',') : [], upgrades = JSON.parse(get('upgrades', '{}')), challenges = get('challenges', '') ? get('challenges').split(',') : [];
   const threads = Math.max(1, Math.min(Number(get('threads', Math.max(1, os.cpus().length - 1))), 64));
   const date = new Date().toISOString().replace(/[:T]/g, '-').slice(0, 16);
   const out = path.resolve(get('out', path.join(__dirname, '../PRIMAL_RUN_Game/balance_runs/playstyle_' + date)));
   fs.mkdirSync(out, { recursive: true });
   const jobs = [];
-  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades });
+  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades, challenges });
   // interleave so every worker gets a mix of slow and fast species
   const buckets = Array.from({ length: threads }, () => []); jobs.forEach((j, i) => buckets[i % threads].push(j));
   const t0 = Date.now(); let done = 0;
   console.error(`Kører ${jobs.length} runs på ${threads} tråde → ${out}`);
   const results = await Promise.all(buckets.filter(b => b.length).map(bucket => new Promise((resolve, reject) => {
-    const w = new Worker(__filename, { workerData: { jobs: bucket } });
+    const w = new Worker(__filename, { workerData: { jobs: bucket, off } });
     w.on('message', msg => { if (msg.progress) { done++; if (done % Math.max(1, Math.floor(jobs.length / 20)) === 0 || done === jobs.length) process.stderr.write(`\r  ${done}/${jobs.length} (${Math.round(100 * done / jobs.length)} %) · ${Math.round((Date.now() - t0) / 1000)}s   `); } if (msg.rows) resolve(msg.rows); });
     w.on('error', reject);
   })));
@@ -315,7 +380,7 @@ async function main() {
   const summary = summarize(ok), warns = warnings(summary, C);
   if (errors.length) warns.unshift(`${errors.length} runs fejlede med en JavaScript-fejl (se runs.jsonl, outcome "error") – det kan være samme fejl som får spillet til at låse!`);
   const coreSHA = crypto.createHash('sha256').update(fs.readFileSync(CORE_PATH)).digest('hex');
-  const meta = { policy:'six playstyles v2; Deinonychus defensive finte and exposed-boss opportunity', simulatorSHA:crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex'), date: new Date().toISOString(), coreSHA, totalRuns: rows.length, seconds, workers: threads, elapsed: Math.round((Date.now() - t0) / 1000), runsPerGroup: runs, species, styles, upgrades };
+  const meta = { policy:'seven playstyles (exploiter added for B1); Deinonychus defensive finte and exposed-boss opportunity', flagsOff: off, challenges, simulatorSHA:crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex'), date: new Date().toISOString(), coreSHA, totalRuns: rows.length, seconds, workers: threads, elapsed: Math.round((Date.now() - t0) / 1000), runsPerGroup: runs, species, styles, upgrades };
   const cols = Object.keys(summary[0] || {});
   fs.writeFileSync(path.join(out, 'summary.csv'), cols.join(',') + '\n' + summary.map(s => cols.map(c => JSON.stringify(s[c] ?? '')).join(',')).join('\n') + '\n');
   writeReport(out, meta, summary, warns);

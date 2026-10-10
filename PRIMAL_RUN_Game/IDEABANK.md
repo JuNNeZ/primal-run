@@ -63,3 +63,55 @@ GDJS-test og visuel produktionsgodkendelse er særskilte opgaver; A6 forbliver v
 
 B-mekanikker flyttes ikke til bygget før implementering og relevante tests.
 Udklækning/opvækst forbliver en fremtidig idé med uafklaret balance.
+- **Bygget:** Ankylosaurus gamle 24 halesving genbruges byte-identisk; ingen ny kropsform.
+- **Bygget prototype:** under 30 % HP viser alle arter en asymmetrisk gang-/løberytme. Ingen ændring af skade, fart eller angrebstiming.
+- **Review-only:** Parasaurolophus-spark revision2; eksisterende sources bruges som reference, men de nye frames er endnu ikke aktiveret.
+
+## Nye arter og dyr (tilføjet 10. okt. 2026, Jonas' ønske)
+
+Kun idéer, ikke godkendt. Alle kræver ny grafik fra ChatGPT (S/N/E/W, idle/walk/run/attack/hurt/death,
+plus ådsel og skelet for dyr, der giver kød) og en art-QA før Codex integrerer dem.
+"Bane" henviser til de nuværende biomer: skov (0), flod (1), plateau (2) og aske (3).
+
+### Mulige nye spilbare dinosaurer
+
+| Art | Rolle | Idé til evne / særpræg | Passer i |
+|---|---|---|---|
+| **Spinosaurus** | tung vandjæger | Kan svømme i dybt vand. Shift: "Sejlstød" skræmmer fisk op, så den fanger 2 ad gangen. Langsom på land. | flod |
+| **Allosaurus** | mellemtung rovdyr | "Økseslag": overkæben hugger, og bid på blødende dyr giver ekstra skade. Står mellem Carnotaurus og T. rex. | skov, plateau |
+| **Stegosaurus** | planteæder med pigge | Space er et halesving bagud med "thagomizer"-pigge. Flanker straffes, og den er svag forfra. | plateau |
+| **Parasaurolophus** (spillet) | flokplanteæder | Shift: "Trompetkald" kalder 2 artsfæller, som løber med i 8 s. Hurtig og skrøbelig. | skov, flod |
+| **Therizinosaurus** | mærkelig planteæder | Kæmpekløer: langsomme, men meget brede sving. Kan "rive" frugt ned fra høje træer (ny fødetype). | skov |
+| **Pteranodon** (ikke en dinosaur, men en flyveøgle) | luftspejder | Hopper/glider over lava og dybt vand i 2 s. Kan ikke bære bytte, kun ådsler. En sjov "hemmelig" art. | alle |
+| **Microraptor** | lille fjerjæger | Glid fra højt terræn, flimrende fjer forvirrer (kort usynlighed). Meget lav HP. | skov |
+| **Pachyrhinosaurus** | flok-hornbærer | Panserknude i stedet for horn, og stød skubber dyr tilbage. Får bonus, når flokfæller er tæt på. | plateau, aske |
+| **Oviraptor** | æggetyv | Kan tage æg fra reder (ny ressource). Hurtig flugt, svage bid. | skov, plateau |
+
+### NPC'er til stemning og mad
+
+**A. Byttedyr, der flygter (giver kød)**
+- *Dryosaurus*: lille, hurtig planteæder i flokke på 3–6. Løber i zigzag og angriber aldrig. God tidlig føde.
+- *Hypsilophodon*: hopper over sten, flygter mod tæt vegetation og gemmer sig i buske.
+- *Leaellynasaura*: om natten (B2), store øjne der lyser svagt. Kun aktiv i mørke.
+- *Protoceratops*: flygter først, men forsvarer sine unger ved reder (se B).
+
+**B. Dyr der kun forsvarer sig (angriber ikke først, giver kød)**
+- *Iguanodon*: rolig græsser. Bliver den angrebet, stikker den med tommelpiggen (kort telegraph) og går så sin vej.
+- *Psittacosaurus*: lille flok, bider kun når man står helt tæt. Ellers ignorerer den spilleren.
+- *Edmontosaurus*: stor flok ved floden, stamper i ring om ungerne. Rammer kun, hvis man går ind i ringen.
+- *Archelon* (kæmpeskildpadde): langsom ved vandkanten, trækker sig ind i skjoldet (næsten usårlig), giver meget kød, hvis man er tålmodig.
+
+**C. Ren stemning (giver intet kød, kan ikke angribes, som billerne i dag)**
+- *Sommerfugle- og guldsmedesværme* over blomster og vand, der letter, når man løber igennem.
+- *Små pattedyr* (Repenomamus-agtige) der piler ned i huller, når man nærmer sig.
+- *Fiskestimer* der springer i floden (rent visuelt, adskilt fra de fiskbare stimer).
+- *Flyveøgle-silhuetter* (Quetzalcoatlus) højt oppe, som en skygge der glider over kortet.
+- *Kæmpe-tusindben* (Arthropleura-inspireret, fantasy) der kravler over stammer i skoven.
+- *Frøer* der kvækker ved damme og hopper i vandet, og som forstummer under tørke (B4).
+- *Askefugle/gnister* i askebiomet: små gløder, der hvirvler op, når store dyr går forbi.
+- *Ildfluer* om natten (B2), der lyser svagt og samler sig ved vand.
+
+**Designnoter**
+- Stemnings-NPC'er skal være billige: ingen AI ud over "flygt fra spilleren" eller en fast bane, ingen kollision og højst ca. 20 synlige ad gangen (LOD som B3).
+- Dyr, der kun forsvarer sig, bruger den eksisterende `herbivorousNPC`/`provoke`-logik: de bliver kun `alert`, når de selv bliver ramt.
+- Nye byttedyr kræver ådsel- og skeletsprites ligesom de nuværende (`SPRITE_RULES_CORPSES.md`).

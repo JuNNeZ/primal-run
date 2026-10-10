@@ -7,7 +7,14 @@
   const LANGUAGES = [
     { id: 'da', name: 'Dansk' }, { id: 'en', name: 'English' }, { id: 'de', name: 'Deutsch' },
     { id: 'sv', name: 'Svenska' }, { id: 'no', name: 'Norsk' }, { id: 'ja', name: '日本語' }, { id: 'zh', name: '中文' },
-    { id: 'tlh', name: 'tlhIngan Hol (for sjov)', fallback: 'en' }, { id: 'sjn', name: 'Edhellen · Sindarin (for sjov)', fallback: 'en' }
+    // The world's most spoken languages (tools/i18n/lang/<code>, STYLE_GUIDE.md); missing strings fall back to English.
+    { id: 'es', name: 'Español', fallback: 'en' }, { id: 'fr', name: 'Français', fallback: 'en' }, { id: 'pt', name: 'Português (Brasil)', fallback: 'en' },
+    { id: 'ru', name: 'Русский', fallback: 'en' }, { id: 'hi', name: 'हिन्दी', fallback: 'en' }, { id: 'ar', name: 'العربية', fallback: 'en', rtl: true },
+    { id: 'bn', name: 'বাংলা', fallback: 'en' }, { id: 'ur', name: 'اردو', fallback: 'en', rtl: true }, { id: 'id', name: 'Bahasa Indonesia', fallback: 'en' },
+    { id: 'pcm', name: 'Naijá (Pidgin)', fallback: 'en' }, { id: 'mr', name: 'मराठी', fallback: 'en' }, { id: 'te', name: 'తెలుగు', fallback: 'en' },
+    { id: 'tr', name: 'Türkçe', fallback: 'en' }, { id: 'ta', name: 'தமிழ்', fallback: 'en' }, { id: 'yue', name: '粵語', fallback: 'zh' },
+    // Fun languages: own name only; the UI adds "(for sjov)" in the current language.
+    { id: 'tlh', name: 'tlhIngan Hol', fallback: 'en', fun: true }, { id: 'sjn', name: 'Edhellen (Sindarin)', fallback: 'en', fun: true }, { id: 'dino', name: 'Rawr-rawrrr', fallback: 'en', fun: true }
   ];
   const dictionaries = {};
   let lang = 'da';
@@ -69,6 +76,7 @@
   const api = {
     LANGUAGES,
     get lang() { return lang; },
+    get rtl() { return !!(LANGUAGES.find(l => l.id === lang) || {}).rtl; },
     setLanguage(id) { lang = LANGUAGES.some(l => l.id === id) ? id : 'da'; cache.clear(); return lang; },
     add(id, entries) { dictionaries[id] = Object.assign(dictionaries[id] || {}, entries); delete upperIndex[id]; delete valueSets[id]; cache.clear(); },
     // Template with named parts: tf('Låser {0} op', name)

@@ -3,7 +3,7 @@ const { test } = require('node:test'), assert = require('node:assert/strict');
 const I = require('../PRIMAL_RUN_Game/src/i18n.js'); globalThis.PrimalI18n = I; require('../PRIMAL_RUN_Game/src/lang.js');
 const C = require('../PRIMAL_RUN_Game/src/core.js');
 test('every full language translates all mutation, species, level, zone and achievement texts', () => {
-  for (const lang of ['en', 'de', 'sv', 'no', 'ja', 'zh']) {
+  for (const lang of ['en', 'de', 'sv', 'no', 'ja', 'zh', ...['es', 'fr', 'pt', 'ru', 'hi', 'ar', 'bn', 'ur', 'id', 'pcm', 'mr', 'te', 'tr', 'ta', 'yue'].filter(l => I.coverage(l).entries > 0)]) {
     I.setLanguage(lang); I.missing.clear();
     for (const m of C.MUTATIONS) { I.t(m.name); I.t(m.text); }
     for (const p of Object.values(C.PLAYER_SPECIES)) { I.t(p.skill); I.t(p.text); }

@@ -1,0 +1,19 @@
+# Glossary yue (廣東話 / 繁體 / 香港)
+- Boss: BOSS (mini-boss: 小 BOSS)
+- Level (map): 第 # 關 / 關卡; dino level: 等級; level-up: 升級
+- Mutation: 突變
+- DNA: DNA; DNA lab: DNA 實驗室
+- Stamina: 體力
+- Ability / skill: 技能
+- Run: 一局 / 本局
+- Hunt: 狩獵 (START THE HUNT: 開始狩獵)
+- Achievement: 成就
+- Rival: 死對頭
+- Species / dinosaur: 恐龍 (field guide: 恐龍圖鑑)
+- Colour pattern (skin): 配色
+- Settings: 設定; Pause: 暫停; Continue: 繼續; Back: 返回; Main menu: 主選單
+- Elite: 精英; Albino: 白化
+- Critical hit: 暴擊; stagger: 硬直; shield: 護盾
+- Hall of Fame / Shame: 名人堂 / 恥辱堂; Records: 紀錄; High scores: 排行榜
+- Species: 暴龍, 迅猛龍, 美頜龍 (Compy/Compsognathus), 猶他盜龍, 恐爪龍, 食肉牛龍, 甲龍, 三角龍, 厚頭龍, 似雞龍, 重爪龍, 恐鱷, 副櫛龍
+- Boss first names kept in Latin (Palle, Carl, Benny, Doris, Asta, Tina, Karl, Ragnar)

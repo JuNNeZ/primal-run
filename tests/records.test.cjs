@@ -226,8 +226,11 @@ test('Q12: a victory never yields a shame primary; secondaries never share a cat
   }
 });
 test('Part B and untracked titles are gated; the fallback appears when nothing else applies', () => {
-  const s = fixture(R.TITLES.find(t => t.id === 'night_stalker'), false); s.nightKills = null;
-  assert.equal(R.available(R.TITLES.find(t => t.id === 'night_stalker'), { ...s, nightKills: 99 }), false);
+  // Untracked variables gate their titles (foodStolen is still null). night_stalker was gated until Part B2 built nightKills.
+  const robbed = R.TITLES.find(t => t.id === 'robbed_blind'), s = fixture(robbed, true);
+  assert.equal(R.available(robbed, { ...s, foodStolen: null }), false);
+  const night = R.TITLES.find(t => t.id === 'night_stalker'); assert.equal(R.available(night, { ...fixture(night, true), nightKills: 99 }), true, 'built in Part B2');
+  assert.equal(R.available(night, { ...fixture(night, true), nightKills: null }), false, 'a summary without the field stays gated');
   assert.equal(R.available(R.TITLES.find(t => t.id === 'amber_keeper'), summary()), false, 'amber secrets are not built');
   assert.equal(R.pickTitles(summary({ kills: 0, levelReached: 1, victory: false, deathCauseType: 'enemy', seconds: 120, minutes: 2, distanceM: 400 })).primary.id, 'new_branch');
 });
