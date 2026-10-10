@@ -61,7 +61,7 @@ function bandPoint(map, p) {
 
 // level: start at this journey level (0-based) via the game's own nextStage(); bossDuel: the boss spawns at once
 // and the run ends when it dies (outcome 'boss_win'). Used by X10 and the B1 before/after comparisons.
-function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null }) {
+function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null, challenges = [] }) {
   const S = STYLES[style]; if (!S) throw Error('Unknown style ' + style);
   const R = rng(seed * 7919 + style.length * 104729);
   const g = new C.Game({ random: rng(seed ^ 0xABCDEF) });
@@ -69,6 +69,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
   g.selectSpecies(species);
   Object.assign(g.save.upgrades, upgrades || {});
   // daily: a date (ms) → B7 daily hunt (its own seed and rotating species; `species` is ignored).
+  if (challenges.length && g.setChallenges) g.setChallenges(challenges); // B6 modifiers for this run
   if (daily !== null && g.startDaily) g.startDaily(daily); else g.start({ seed });
   const r = g.run, config = C.PLAYER_SPECIES[r.species]; species = r.species;
   for (let i = 0; i < level && i < r.campaign.length - 1; i++) { g.phase = 'cleared'; r.bossDefeated = true; g.nextStage(); }
@@ -339,13 +340,13 @@ async function main() {
   const styles = get('styles', 'all') === 'all' ? Object.keys(STYLES) : get('styles').split(',');
   for (const s of species) if (!C.PLAYER_SPECIES[s]) throw Error('Ukendt art: ' + s);
   for (const s of styles) if (!STYLES[s]) throw Error('Ukendt stil: ' + s);
-  const upgrades = JSON.parse(get('upgrades', '{}'));
+  const upgrades = JSON.parse(get('upgrades', '{}')), challenges = get('challenges', '') ? get('challenges').split(',') : [];
   const threads = Math.max(1, Math.min(Number(get('threads', Math.max(1, os.cpus().length - 1))), 64));
   const date = new Date().toISOString().replace(/[:T]/g, '-').slice(0, 16);
   const out = path.resolve(get('out', path.join(__dirname, '../PRIMAL_RUN_Game/balance_runs/playstyle_' + date)));
   fs.mkdirSync(out, { recursive: true });
   const jobs = [];
-  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades });
+  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades, challenges });
   // interleave so every worker gets a mix of slow and fast species
   const buckets = Array.from({ length: threads }, () => []); jobs.forEach((j, i) => buckets[i % threads].push(j));
   const t0 = Date.now(); let done = 0;

@@ -98,6 +98,32 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
     }
     await page.setViewportSize({ width: 960, height: 640 });
 
+    // ---- B6 Udfordringer: pick 3 (a 4th is disabled), forced intro lists them, run carries them, result line; en + ja at 390 px.
+    for (const lang of ['da', 'ja']) {
+      await page.setViewportSize({ width: 390, height: 844 }); await open(lang, { settings: { language: lang, languageChosen: true, skipIntro: true } });
+      await page.locator('[data-action="challenges"]').click();
+      assert.equal(await page.locator('[data-action="challenge-start"]').isDisabled(), true, 'needs at least one');
+      for (const id of ['fragile', 'toughBosses', 'swiftFoes']) await page.locator(`[data-challenge="${id}"]`).check();
+      assert.equal(await page.locator('[data-challenge="weakHealing"]').isDisabled(), true, 'max 3');
+      assert.match(await page.locator('.challenge-bonus').innerText(), /45 %/);
+      await page.locator('[data-action="challenge-start"]').click();
+      await page.waitForSelector('.intro-challenges'); const intro = await page.locator('.intro-challenges').innerText();
+      assert.match(intro, lang === 'da' ? /Skrøbelig[\s\S]*Seje bosser[\s\S]*Hurtige fjender/ : /もろい体[\s\S]*タフなボス[\s\S]*素早い敵/, intro);
+      if (lang === 'da') await page.screenshot({ path: path.join(shots, 'part_b_b6_intro.png') });
+      await page.locator('[data-action="begin"]').click(); await page.waitForFunction(() => primalRun.game.phase === 'playing');
+      const run = await page.evaluate(() => ({ list: primalRun.game.run.challenges, count: primalRun.game.run.partB.challengeCount }));
+      assert.deepEqual(run, { list: ['fragile', 'toughBosses', 'swiftFoes'], count: 3 });
+      await page.evaluate(() => { const g = primalRun.game; g.run.invulnerable = 0; g.damage(99999); });
+      await page.waitForSelector('.challenge-result'); const line = await page.locator('.challenge-result').innerText();
+      assert.match(line, lang === 'da' ? /Udfordringer · Skrøbelig · Seje bosser · Hurtige fjender · \+45 % DNA/ : /チャレンジ · もろい体 · タフなボス · 素早い敵 · DNA \+45 %/, line);
+      const w = await page.evaluate(() => [document.documentElement.scrollWidth, window.innerWidth]); assert.ok(w[0] <= w[1], 'no horizontal scroll ' + w);
+      // A normal new hunt starts without challenges.
+      await page.locator('[data-action="start"]').first().click(); await page.waitForFunction(() => primalRun.game.phase === 'playing');
+      assert.deepEqual(await page.evaluate(() => primalRun.game.run.challenges), []);
+      checks.push('B6 ' + lang + ': 3 challenges (4th disabled), forced intro, result "' + line + '", next normal hunt has none');
+    }
+    await page.setViewportSize({ width: 960, height: 640 });
+
     assert.deepEqual(errors, []);
     console.log('part-b browser OK\n- ' + checks.join('\n- '));
   } finally { await browser.close(); }

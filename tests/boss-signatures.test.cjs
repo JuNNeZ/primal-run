@@ -14,7 +14,7 @@ test('X9: every damaging boss action on all 8 levels follows a windup of ≥ 0.4
     let windup = 0, wasMode = boss.mode, x = level * 7 + offset;
     const rand = () => (x = (x * 1103515245 + 12345) % 2147483648) / 2147483648;
     const hurt = g.damage.bind(g); let windupBeforeHit = null;
-    g.damage = (amount, source) => { if (source === boss && boss.pattern === 5) windupBeforeHit = windup; return hurt(amount, source); };
+    g.damage = (amount, source) => { if (source === boss && (boss.pattern === 5 || boss.pattern === 4 && !DAMAGING.includes(boss.mode))) windupBeforeHit = windup; return hurt(amount, source); }; // ASKEKAST and the dive hit straight from their windup
     for (let i = 0; i < 40 * 30 && boss.hp > 0; i++) {
       r.health = r.maxHealth; r.invulnerable = 0;
       if (i % 90 === 0) boss.hp = Math.max(1, boss.hp - boss.maxHP * .03); // also hurts it into phase 2 and lets stalkers "answer"
@@ -26,12 +26,13 @@ test('X9: every damaging boss action on all 8 levels follows a windup of ≥ 0.4
         assert.ok(windup >= .45 - 1e-6, 'level ' + (level + 1) + ' ' + boss.mode + ' after ' + windup.toFixed(2) + ' s windup');
         seen[boss.kind + ':' + boss.mode + ':' + boss.pattern] = true;
       }
-      if (windupBeforeHit !== null) { assert.ok(windupBeforeHit >= .45, 'ASKEKAST windup ' + windupBeforeHit); seen['askekast'] = true; windupBeforeHit = null; }
+      if (windupBeforeHit !== null) { assert.ok(windupBeforeHit >= .45, 'direct windup hit after ' + windupBeforeHit); seen[boss.kind + ':direct:' + boss.pattern] = true; windupBeforeHit = null; }
       wasMode = boss.mode; void held; void wasMode;
     }
   }
   assert.ok(Object.keys(seen).length >= 12, 'audit covered ' + Object.keys(seen).join(', '));
   assert.ok(Object.keys(seen).some(k => k.startsWith('baryonyx')), 'Benny audited');
+  assert.ok(seen['baryonyx:direct:4'], 'the dive hit was audited: ' + Object.keys(seen).join(', '));
 });
 
 test('B1c Benny: the dive has a 1.2 s windup with bubbles, locks its 70 px circle at 65 % left and can be dodged', () => {

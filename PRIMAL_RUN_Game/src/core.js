@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
+  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -473,7 +473,7 @@
     save.skin=save.skins.includes(x.skin)?x.skin:'classic';
     save.selectedSpecies = save.unlockedSpecies.includes(x.selectedSpecies) ? x.selectedSpecies : 'deinonychus';
     // Version 3 adds local records and earned run titles; v2 saves are seeded from lifetime/scores.
-    if(FEATURES.dailyHunt)save.dailyHunts=sanitizeDailyHunts(x.dailyHunts); // B7
+    save.dailyHunts=sanitizeDailyHunts(x.dailyHunts); // B7 (kept even with the flag off, so no history is lost)
     if(RECORDS){save.version=3;save.titles=RECORDS.sanitizeTitles(x.titles);save.records=RECORDS.sanitizeRecords(x.records,save);}
     return save;
   }
@@ -957,10 +957,12 @@
       const r=this.run;if(e.kind!=='baryonyx'||!isWater(r.stage,r.map,e,-140)||r.seconds<(e.diveReadyAt||0)||d<50||d>360)return false;
       e.pattern=4;e.mode='windup';e.timer=e.windupDuration=1.2;e.attackRadius=70;e.attackName='DYK · FLYT DIG';e.targetX=r.player.x;e.targetY=r.player.y;e.diveReadyAt=r.seconds+6;e.submerged=true;return true;
     }
-    // Benny heads back to the river (≤ 5 s, at most every 10 s, river ≤ 720 px away) when his dive is ready.
+    // Benny heads back to the river (≤ 5 s, at most every 10 s, river ≤ 720 px away) when his dive is ready and the
+    // player is not within 180 px (no free hits on his back).
     waterTrip(e,dt){
       const r=this.run;if(e.kind!=='baryonyx'||r.stage!==1||r.seconds<(e.diveReadyAt||0))return false;
-      if(isWater(r.stage,r.map,e,-40)){if(e.mode==='reposition')e.mode='chase';e.waterTripUntil=0;return false;}
+      // In the water, or the player is close: fight on.
+      if(isWater(r.stage,r.map,e,-40)||Math.hypot(r.player.x-e.x,r.player.y-e.y)<180){if(e.mode==='reposition')e.mode='chase';e.waterTripUntil=0;return false;}
       if(!(e.waterTripUntil>r.seconds)){if(r.seconds<(e.waterTripReadyAt||0)){if(e.mode==='reposition')e.mode='chase';return false;}e.waterTripUntil=r.seconds+5;e.waterTripReadyAt=r.seconds+10;}
       const line=r.map.riverCurve||r.map.river;let best=null,bd=Infinity;for(const p of line){const pd=Math.hypot(p.x-e.x,p.y-e.y);if(pd<bd){bd=pd;best=p;}}
       if(!best||bd>720||!(e.waterTripUntil>r.seconds)){if(e.mode==='reposition')e.mode='chase';e.waterTripUntil=0;return false;}
@@ -1569,7 +1571,7 @@
   // ===== Part B (claude/part-b): isolated blocks; each one is gated by its FEATURES flag. =====
   // r.partB carries the RunSummary fields Part B owns (records.js copies them over its null defaults).
   const startCore=Game.prototype.start;
-  Game.prototype.start=function(options){startCore.call(this,options);if(this.run)this.run.partB={...(FEATURES.dailyHunt?{dailySeed:0}:{})};};
+  Game.prototype.start=function(options){startCore.call(this,options);if(this.run)this.run.partB={...(FEATURES.dailyHunt?{dailySeed:0}:{}),...(FEATURES.challenges?{challengeCount:0}:{})};if(FEATURES.challenges)this.applyChallenges();};
   // ---- B7 Dagens jagt: seed = YYYYMMDD (local date), species rotates over the unlocked ones, a local top 5 per date.
   function dailyKey(date){const d=new Date(date);return d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();}
   function dailyHunt(save,date=Date.now()){
@@ -1584,7 +1586,7 @@
   }
   Game.prototype.dailyHunt=function(date){return dailyHunt(this.save,date);};
   Game.prototype.startDaily=function(date){
-    if(!FEATURES.dailyHunt)return false;const daily=dailyHunt(this.save,date),previous=this.save.selectedSpecies;
+    if(!FEATURES.dailyHunt)return false;const daily=dailyHunt(this.save,date),previous=this.save.selectedSpecies;if(this.setChallenges)this.setChallenges([]); // the daily hunt is the same for everyone
     this.save.selectedSpecies=daily.species;try{this.start({seed:daily.seed});}finally{this.save.selectedSpecies=previous;}
     this.run.daily={seed:daily.seed,key:daily.key,species:daily.species};this.run.partB.dailySeed=daily.seed;return true;
   };
@@ -1593,10 +1595,45 @@
     const r=this.run,fresh=r&&!r.result;finishCore.call(this,victory);
     if(!FEATURES.dailyHunt||!fresh||!r.daily||!r.result)return;
     const list=(this.save.dailyHunts||(this.save.dailyHunts={}))[r.daily.key]||[],entry={name:this.save.name,species:r.species,score:r.result.score,level:r.result.stage,seconds:r.result.seconds,victory:!!victory};
-    this.save.dailyHunts[r.daily.key]=[...list,entry].sort((a,b)=>b.score-a.score).slice(0,5);
-    this.save.dailyHunts=sanitizeDailyHunts(this.save.dailyHunts);
-    r.daily.rank=this.save.dailyHunts[r.daily.key].findIndex(e=>e===entry||e.score===entry.score&&e.seconds===entry.seconds&&e.species===entry.species)+1;r.daily.entries=this.save.dailyHunts[r.daily.key].length;this.persist();
+    const ranked=[...list,entry].sort((a,b)=>b.score-a.score),place=ranked.indexOf(entry)+1; // stable: ties keep earlier attempts first
+    this.save.dailyHunts[r.daily.key]=ranked.slice(0,5);this.save.dailyHunts=sanitizeDailyHunts(this.save.dailyHunts);
+    r.daily.rank=place<=5?place:null;r.daily.entries=this.save.dailyHunts[r.daily.key].length;this.persist();
+  };
+  // ---- B6 Udfordringer: up to 3 modifiers chosen before a run, +15 % DNA each, challengeCount in the RunSummary.
+  const CHALLENGES=[
+    {id:'fragile',name:'Skrøbelig',text:'−30 % maks. liv.'},
+    {id:'toughBosses',name:'Seje bosser',text:'Bosser har +30 % liv.'},
+    {id:'swiftFoes',name:'Hurtige fjender',text:'Alle fjender er 15 % hurtigere.'},
+    {id:'weakHealing',name:'Svag heling',text:'Al heling under jagten halveres.'},
+    {id:'costlySkills',name:'Dyre evner',text:'Evner koster 30 % mere stamina.'}
+  ],CHALLENGE_DNA=.15,MAX_CHALLENGES=3;
+  Game.prototype.setChallenges=function(ids){this.pendingChallenges=FEATURES.challenges?[...new Set(ids||[])].filter(id=>CHALLENGES.some(c=>c.id===id)).slice(0,MAX_CHALLENGES):[];return this.pendingChallenges;};
+  Game.prototype.applyChallenges=function(){
+    const r=this.run,list=(this.pendingChallenges||[]).slice();r.challenges=list;r.partB.challengeCount=list.length;r.challengeDNA=1+CHALLENGE_DNA*list.length;
+    if(list.includes('fragile')){r.maxHealth=Math.round(r.maxHealth*.7);r.health=Math.min(r.health,r.maxHealth);}
+    if(list.includes('swiftFoes'))for(const e of r.enemies)e.speed*=1.15; // animals placed by populate() before this ran
+  };
+  const spawnCore=Game.prototype.spawn;
+  Game.prototype.spawn=function(kind,position,boss){
+    const e=spawnCore.call(this,kind,position,boss),list=FEATURES.challenges&&this.run&&this.run.challenges||[];
+    if(e&&list.includes('toughBosses')&&e.boss){e.hp*=1.3;e.maxHP*=1.3;}
+    if(e&&list.includes('swiftFoes'))e.speed*=1.15;
+    return e;
+  };
+  const stepCore=Game.prototype.step;
+  Game.prototype.step=function(dt,input={}){
+    const r=this.run,list=FEATURES.challenges&&r&&this.phase==='playing'&&r.challenges||[];
+    if(!list.length)return stepCore.call(this,dt,input);
+    const health=r.health,abilities=r.stats.abilities,cost=abilityCost(r),out=stepCore.call(this,dt,input);
+    if(list.includes('weakHealing')&&r.health>health&&r.health>0){const extra=(r.health-health)/2;r.health-=extra;r.stats.healing-=extra;}
+    if(list.includes('costlySkills')&&r.stats.abilities>abilities){r.stamina=Math.max(0,r.stamina-cost*.3);r.stats.staminaSpent+=cost*.3;}
+    return out;
+  };
+  const addDNACore=Game.prototype.addDNA;
+  Game.prototype.addDNA=function(amount,quiet){ // the bonus keeps its fractions, so +15 % also counts on 1-DNA pickups
+    const r=this.run;if(!(FEATURES.challenges&&r&&r.challengeDNA>1&&amount>0))return addDNACore.call(this,amount,quiet);
+    const total=amount*r.challengeDNA+(r.challengeDNACarry||0),give=Math.floor(total+1e-9);r.challengeDNACarry=total-give;return addDNACore.call(this,give,quiet);
   };
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

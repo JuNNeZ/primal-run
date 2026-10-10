@@ -36,6 +36,8 @@ test('finishing a daily hunt stores a local top 5 for that date that survives sa
   const list = g.save.dailyHunts['20261010'];
   assert.equal(list.length, 5); assert.deepEqual(list.map(e => e.score), [600, 500, 400, 300, 200]);
   assert.equal(g.run.daily.rank, 1); assert.equal(g.run.daily.entries, 5);
+  g.phase = 'menu'; g.startDaily(day(2026, 10, 10)); g.run.score = 500; die(g); assert.equal(g.run.daily.rank, 3, 'a tie ranks after the earlier attempt');
+  g.phase = 'menu'; g.startDaily(day(2026, 10, 10)); g.run.score = 1; die(g); assert.equal(g.run.daily.rank, null, 'outside the top 5');
   const loaded = new C.Game({ storage, random: () => .5 }); assert.deepEqual(loaded.save.dailyHunts, g.save.dailyHunts);
   const raw = { dailyHunts: { 20261010: [{ score: 5, species: 'nope', name: '<b>x</b>' }, { score: 'x' }, null], bad: [{ score: 1 }], 20260101: 'x' } };
   for (let i = 0; i < 20; i++) raw.dailyHunts[String(20260200 + i + 1)] = [{ score: i }];
@@ -60,9 +62,10 @@ test('RunSummary.dailySeed and the daily_champion title (cleared 4 levels in the
   const picked = C.RECORDS.pickTitles(g.run.summary); assert.ok([picked.primary.id, ...picked.secondary.map(x => x.id)].length >= 1);
 });
 
-test('flag off: no daily hunt, no daily list in the save; bots can play the daily hunt', () => {
+test('flag off: no daily hunt (history kept); bots can play the daily hunt', () => {
   C.FEATURES.dailyHunt = false;
-  try { const g = new C.Game({ random: () => .5 }); assert.equal(g.startDaily(day(2026, 10, 10)), false); assert.equal(g.save.dailyHunts, undefined); g.start({ seed: 1 }); assert.deepEqual(g.run.partB, {}); }
+  try { const g = new C.Game({ random: () => .5 }); assert.equal(g.startDaily(day(2026, 10, 10)), false); g.start({ seed: 1 }); assert.equal('dailySeed' in g.run.partB, false);
+    assert.deepEqual(C.sanitizeSave({ dailyHunts: { 20261010: [{ score: 9 }] } }).dailyHunts['20261010'].length, 1, 'history is kept while the flag is off'); }
   finally { C.FEATURES.dailyHunt = true; }
   const o = runOne(C, { species: 'compy', style: 'average', seed: 1, seconds: 40, dt: 1 / 30, daily: day(2026, 10, 10) });
   assert.equal(o.seed, 1); assert.ok(o.seconds > 0); assert.ok(Object.keys(C.PLAYER_SPECIES).includes(o.species));

@@ -82,3 +82,4 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.chip{padding:2px 8px;border:1px solid #2c3a33;font-size:.85em}.chip.new{border-color:#e7c35a}.run-cause small{opacity:.7}
 .records-tabs button.selected{background:#c3a35c;border-color:#c3a35c;color:#15221a;font-weight:800}
 .daily-list{width:100%;border-collapse:collapse;margin:10px 0}.daily-list td{padding:8px 6px}.daily-result{color:#e9b75a;font-weight:700;text-align:center;margin:8px 0}
+.challenge-list{display:grid;gap:8px;margin:12px 0}.challenge{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid #50623d66;border-radius:6px}.challenge span{display:grid}.challenge small{opacity:.8}.challenge-bonus{text-align:center;color:#e9b75a;font-weight:700}.intro-challenges{border:1px solid #913b32;border-radius:6px;padding:8px 12px;margin:10px 0}.intro-challenges ul{margin:6px 0 0;padding-left:18px}

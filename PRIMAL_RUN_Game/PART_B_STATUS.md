@@ -20,6 +20,7 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 | B1b Lavakrydsninger | `lavaCrossings` | færdig | X2, krydsningsgeometri på 40 seeds, browser |
 | B1c Signaturmekanikker | `bossSignatures` | færdig (Benny, Ragnar, Karl) | X9-audit på 8 baner, én test pr. mekanik, Carl identisk, browser |
 | B7 Dagens jagt | `dailyHunt` | færdig | `tests/daily-hunt.test.cjs` (5), browser da/de 390 px |
+| B6 Udfordringer | `challenges` | færdig | `tests/challenges.test.cjs` (5), browser da/ja 390 px |
 
 ### B1a – boss-rækkevidde (05 §4)
 
@@ -69,6 +70,24 @@ Alt nyt ligger bag `FEATURES.<flag>` i `src/core.js` (sæt flaget til `false` fo
 - Bots: `runOne({ daily: <dato> })` spiller dagens jagt.
 - Balance: Ingen ændring i almindelige runs. Dagens jagt bruger samme kode med et fast seed, så der er ingen ny simulering.
 
+### Rettelser efter review (primal-code-reviewer på 69bb03a + a7e2529)
+
+- Benny vises kun halvgennemsigtig, mens hans dyk lader op. Før kunne han forblive gennemsigtig, hvis fase 2 afbrød dykket.
+- Bennys tur mod floden sker kun, når spilleren er mindst 180 px væk. Han vender ikke længere ryggen til en spiller, der står lige ved ham.
+- X9-testen tjekker nu også dykkets skade (den rammer direkte fra windup).
+- Placeringen i dagens jagt er stabil ved lige score (et tidligere forsøg står først). Uden for top 5 vises "–".
+- `save.dailyHunts` beholdes, også når flaget er slået fra, så historikken ikke går tabt.
+- Ikke rettet: Advarselsteksten over Benny kan overlappe "DIG"-mærket, når han står helt tæt på spilleren. Det er et eksisterende layout for alle bossers advarsler.
+
+### B6 – Udfordringer
+
+- `CHALLENGES` (5): `fragile` (−30 % maks. liv), `toughBosses` (bosser +30 % HP), `swiftFoes` (alle fjender +15 % fart, også dem `populate()` placerede ved start), `weakHealing` (al heling, der sker inde i `step()`, halveres; heling fra mutationsvalg og banebonus er ikke med) og `costlySkills` (+30 % stamina pr. evne).
+- `game.setChallenges(ids)` tager højst 3 kendte id'er. `start()` lægger dem i `r.challenges`, `r.partB.challengeCount` og `r.challengeDNA = 1 + 0,15 × antal`. `addDNA` giver bonussen og gemmer brøkdelen til næste gang, så +15 % også tæller på pickups med 1 DNA.
+- Dagens jagt nulstiller udfordringerne (samme jagt for alle). "START JAGTEN" og "NY JAGT" starter altid uden udfordringer.
+- UI: Knappen "⚔ Udfordringer" i menuen, en vælger med afkrydsning (den 4. bliver låst), DNA-bonus, intro-skærmen vises altid (også med "spring intro over") og lister udfordringerne, og slutskærmen har en linje med dem.
+- RunSummary: `challengeCount` (0 uden udfordringer). Titlen `masochist` har `implementationStatus: "built in Part B (B6)"`.
+- Bots: `runOne({ challenges })` og `playstyle_sim.cjs --challenges a,b,c`.
+
 ## Testresultater
 
 Udfyldes pr. pakke (kommandoer fra repo-roden).
@@ -83,4 +102,5 @@ Udfyldes pr. pakke (kommandoer fra repo-roden).
 - `src/core.js` B7: én linje i `sanitizeSave` og en isoleret "Part B"-blok lige før `RECORDS.install` (wrapper om `Game.prototype.start`/`finish`, dagsfunktioner). Nye eksports: `dailyHunt`, `dailyKey`, `sanitizeDailyHunts`.
 - `src/records.js`: 1 linje (Part B-felter fra `r.partB`). `run_titles.json`: `daily_champion` aktiveret.
 - `src/app.js` B7: menuknap, `daily`-skærm, `daily-start`-handling, resultatlinje, Escape-liste. `style.css`: 1 linje.
+- `src/core.js` B6: én blok i Part B-sektionen (`CHALLENGES`, wrappers om `spawn`, `step` og `addDNA`) og `challengeCount` i `start`-wrapperen. `src/app.js` B6: menuknap, `challenges`-skærm, `challenge-start`, intro-liste, resultatlinje. `style.css`: 1 linje.
 - Genererede filer (`lang.js`, `run_titles.js`, `project.json`, `integration_report.json`): genbyg med `python tools/rebuild_generated.py`.
