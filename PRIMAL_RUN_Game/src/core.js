@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true};
+  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -1813,6 +1813,22 @@
     if(live&&this.run===r&&this.phase==='playing')this.stepRaptors(dt);
     return out;
   };
+
+  // Menu backdrop pilot (FEATURES.menuPilot): the menu's demo dinosaur fights small attackers and runs from bosses or
+  // packs it cannot take, instead of walking on while every Compy in the valley piles onto it. Pure: returns step() input.
+  const MENU_HUNTING=['chase','windup','attack','enrage','stalk','reposition'];
+  function menuPilot(run,goal){
+    const P=run.player,sp=PLAYER_SPECIES[run.species]||{},walk=()=>{const dx=goal.x-P.x,dy=goal.y-P.y,d=Math.hypot(dx,dy)||1;return{x:dx/d,y:dy/d,sneak:true,mode:'walk'};};
+    if(!FEATURES.menuPilot)return walk();
+    const foes=run.enemies.filter(e=>e.hp>0&&!e.ally&&!e.pack&&e.damage&&Math.hypot(e.x-P.x,e.y-P.y)<260&&MENU_HUNTING.includes(e.mode));
+    if(!foes.length)return walk();
+    const strength=foes.reduce((n,e)=>n+(e.maxHP||e.hp),0);
+    if(foes.some(e=>e.boss||e.miniboss)||strength>(run.maxHealth||sp.hp||100)*2.5){
+      let fx=0,fy=0;for(const e of foes){const d=Math.hypot(P.x-e.x,P.y-e.y)||1,w=(e.maxHP||e.hp)/d/d;fx+=(P.x-e.x)*w;fy+=(P.y-e.y)*w;} /* away from the heaviest threat */ const d=Math.hypot(fx,fy)||1;return{x:fx/d,y:fy/d,mode:'flee'};
+    }
+    const t=foes.reduce((a,e)=>Math.hypot(e.x-P.x,e.y-P.y)<Math.hypot(a.x-P.x,a.y-P.y)?e:a),dx=t.x-P.x,dy=t.y-P.y,d=Math.hypot(dx,dy)||1,reach=(sp.range||60)+(t.radius||12);
+    return{x:d>reach*.7?dx/d:dx/d*.15,y:d>reach*.7?dy/d:dy/d*.15,attack:d<reach,mode:'fight',target:t.id};
+  }
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { PACK, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { menuPilot, PACK, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

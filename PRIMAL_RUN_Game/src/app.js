@@ -66,7 +66,7 @@
           ${button('start', ready ? 'START JAGTEN <span>→</span>' : 'INDLÆSER…', 'primary')}
           <div class="menu-grid">${button('shop', '⬡ DNA-lab <b>' + game.save.dna + '</b>')}${button('achievements', '★ Bedrifter <b>' + done + '/' + C.ACHIEVEMENTS.length + '</b>')}${button('guide', '❧ Artsbog')}${button('scores', '♛ Rekorder')}${C.FEATURES.dailyHunt ? button('daily', '☀ Dagens jagt <b>' + speciesName(game.dailyHunt().species) + '</b>') : ''}${C.FEATURES.challenges ? button('challenges', '⚔ Udfordringer') : ''}${button('settings', '⚙ Indstillinger')}${button('help', '? Sådan spiller du')}</div>
           <div class="menu-fields"><label class="name-label">DIT NAVN<input id="player-name" maxlength="20" autocomplete="nickname" value="${htmlEscape(game.save.name)}"></label><label class="name-label">KORT-SEED<input id="map-seed" inputmode="numeric" maxlength="10" placeholder="tilfældigt" value="${htmlEscape(seedInput)}"></label></div>
-          <a class="patch-link" href="PATCH_NOTES.html" target="_blank" rel="noopener">✦ Nyt i oktober-opdateringen →</a>
+          <a class="patch-link" href="PATCH_NOTES.html?lang=${I18N.lang}" target="_blank" rel="noopener">✦ Nyt i oktober-opdateringen →</a>
           </section>`;
         screen.querySelector('[data-action="start"]').disabled = !ready;
       } else if (phase === 'intro') {
@@ -263,7 +263,7 @@
       g.setView(canvas.width,canvas.height);
       const zones=r.map.zones||[{x:r.map.width/2,y:r.map.height/2}],goal=zones[menuWorld.target%zones.length],dx=goal.x-r.player.x,dy=goal.y-r.player.y,d=Math.hypot(dx,dy);
       if(d<90||(menuWorld.stuck||0)>3){menuWorld.target++;menuWorld.stuck=0;}
-      const before=r.player.x+r.player.y;g.step(dt,{x:d?dx/d:0,y:d?dy/d:0,sneak:true});menuWorld.stuck=Math.abs(r.player.x+r.player.y-before)<.01?(menuWorld.stuck||0)+dt:0;
+      const before=r.player.x+r.player.y,pilot=C.menuPilot?C.menuPilot(r,goal):{x:d?dx/d:0,y:d?dy/d:0,sneak:true};menuWorld.mode=pilot.mode;g.step(dt,pilot);menuWorld.stuck=Math.abs(r.player.x+r.player.y-before)<.01?(menuWorld.stuck||0)+dt:0;
       r.invulnerable=1e9;r.health=r.maxHealth;g.drainEvents();
     }
     function drawMenu() {
@@ -649,7 +649,7 @@
             ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(a.x) - 14, Math.round(a.y) + 14, 28, 3); ctx.fillStyle = a.mode === 'flee' ? '#de954a' : '#a2d4c1'; ctx.fillRect(Math.round(a.x) - 14, Math.round(a.y) + 14, Math.round(28 * a.hp / a.maxHP), 3); }
           else if (d < 300) { const fed = r.pickups.some(p => p.corpseId !== undefined && p.value > 0 && Math.hypot(p.x - a.x, p.y - a.y) < C.PACK.meatReach); label(d < 160 && fed ? 'VILD RAPTOR · ' + keyLabel('interact') + ' FODR' : d < 160 ? 'VILD RAPTOR · LÆG KØD HER' : 'VILD RAPTOR', a.x, a.y - 44, '#a2d4c1'); } }
         if (o.enemy) { const e = o.enemy, near = r && Math.hypot(e.x - r.player.x, e.y - r.player.y) < 230, special = e.boss || e.elite || e.rare || e.miniboss;
-          if (special || near) label((e.boss ? '◆ ' : e.miniboss ? '☠ ' : e.elite ? '★ ' : e.rare ? '✦ ' : e.damage ? '⚠ ' : '') + (e.rivalName || C.SPECIES_LABELS[e.kind]), o.x, o.y - enemyLabelOffset(e), e.miniboss ? '#e9b75a' : e.damage ? '#ed7869' : '#8eaa60');
+          if ((special || near) && !menuScene()) label((e.boss ? '◆ ' : e.miniboss ? '☠ ' : e.elite ? '★ ' : e.rare ? '✦ ' : e.damage ? '⚠ ' : '') + (e.rivalName || C.SPECIES_LABELS[e.kind]), o.x, o.y - enemyLabelOffset(e), e.miniboss ? '#e9b75a' : e.damage ? '#ed7869' : '#8eaa60');
           const icon = MODE_ICON[e.mode]; if (icon && !e.boss && !(near && /^assets\/behavior(?:_native)?\//.test(o.path) && ['graze','drink','rest'].includes(e.mode))) { ctx.save(); ctx.font = 'bold 14px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713'; const iy = Math.round(o.y - enemyLabelOffset(e) - (special || near ? 16 : 0)); ctx.strokeText(icon[0], Math.round(o.x), iy); ctx.fillStyle = icon[1]; ctx.fillText(icon[0], Math.round(o.x), iy); ctx.restore(); } }
         if (o.enemy && o.enemy.boss) {
           if (o.enemy.mode === 'recover') {
@@ -757,7 +757,7 @@
       // Never let a pending AudioContext.resume() block menu/level buttons.
       Promise.race([audio.unlock(),new Promise(done=>setTimeout(done,250))]).catch(()=>{});
       const target = e.target.closest('button,[data-action]'); if (!target) return;
-      if(target.dataset.firstLanguage){game.save.settings.languageChosen=true;game.setSetting('language',target.dataset.firstLanguage);I18N.setLanguage(target.dataset.firstLanguage);renderScreen(true);return;}
+      if(target.dataset.firstLanguage){game.save.settings.languageChosen=true;game.setSetting('language',target.dataset.firstLanguage);I18N.setLanguage(target.dataset.firstLanguage);I18N.translateNode(shell);renderScreen(true);return;} // static header/footer/touch labels were built in Danish
       if (target.dataset.buy) { game.purchase(target.dataset.buy); renderScreen(true); return; }
       if (target.dataset.skin) { game.setSkin(target.dataset.skin); renderScreen(true); return; }
       if (target.dataset.species) { const id = target.dataset.species; if (!game.save.unlockedSpecies.includes(id)) game.unlockSpecies(id); game.selectSpecies(id); renderScreen(true); return; }
