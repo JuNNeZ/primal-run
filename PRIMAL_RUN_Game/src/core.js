@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={bossReach:true,lavaCrossings:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
+  const FEATURES={bossReach:true,lavaCrossings:true,bossSignatures:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -949,6 +949,59 @@
       }
       return false;
     }
+    // ---- B1c signature mechanics (FEATURES.bossSignatures). Every damaging action has a ≥ 0.45 s telegraph (X9).
+    // Benny: within 140 px of water he dives (1.2 s windup, bubbles toward a 70 px target circle that tracks the player for
+    // the first 35 %, then locks for 0.78 s) and surfaces at its edge; only the circle decides the hit.
+    startDive(e,d){
+      const r=this.run;if(e.kind!=='baryonyx'||!isWater(r.stage,r.map,e,-140)||r.seconds<(e.diveReadyAt||0)||d<50||d>360)return false;
+      e.pattern=4;e.mode='windup';e.timer=e.windupDuration=1.2;e.attackRadius=70;e.attackName='DYK · FLYT DIG';e.targetX=r.player.x;e.targetY=r.player.y;e.diveReadyAt=r.seconds+6;e.submerged=true;return true;
+    }
+    // Benny heads back to the river (≤ 5 s, at most every 10 s, river ≤ 720 px away) when his dive is ready.
+    waterTrip(e,dt){
+      const r=this.run;if(e.kind!=='baryonyx'||r.stage!==1||r.seconds<(e.diveReadyAt||0))return false;
+      if(isWater(r.stage,r.map,e,-40)){if(e.mode==='reposition')e.mode='chase';e.waterTripUntil=0;return false;}
+      if(!(e.waterTripUntil>r.seconds)){if(r.seconds<(e.waterTripReadyAt||0)){if(e.mode==='reposition')e.mode='chase';return false;}e.waterTripUntil=r.seconds+5;e.waterTripReadyAt=r.seconds+10;}
+      const line=r.map.riverCurve||r.map.river;let best=null,bd=Infinity;for(const p of line){const pd=Math.hypot(p.x-e.x,p.y-e.y);if(pd<bd){bd=pd;best=p;}}
+      if(!best||bd>720||!(e.waterTripUntil>r.seconds)){if(e.mode==='reposition')e.mode='chase';e.waterTripUntil=0;return false;}
+      const x=best.x-e.x,y=best.y-e.y,n=Math.max(1,Math.hypot(x,y));e.facingX=x/n;e.facingY=y/n;e.mode='reposition';e.attackName='MOD FLODEN';this.travel(e,x/n*e.speed*dt,y/n*e.speed*dt);return true;
+    }
+    diveWindup(e,dt){
+      const r=this.run;if(e.timer>e.windupDuration*.65){e.targetX=r.player.x;e.targetY=r.player.y;}
+      e.bubbleTimer=(e.bubbleTimer||0)-dt;if(e.bubbleTimer<=0){e.bubbleTimer=.12;const t=1-e.timer/e.windupDuration;this.burst(e.x+(e.targetX-e.x)*t,e.y+(e.targetY-e.y)*t,'bubble',3,e.id);}
+    }
+    diveSurface(e){ // surfaces just short of the circle centre; the circle alone decides the hit
+      const r=this.run,tx=e.targetX,ty=e.targetY,ox=tx-e.x,oy=ty-e.y,on=Math.hypot(ox,oy),back=Math.min(on,e.radius+r.player.radius),spot={x:tx-(on>1?ox/on:0)*back,y:ty-(on>1?oy/on:0)*back};e.submerged=false;
+      if(!(FEATURES.bossReach&&navBlocked(r.stage,r.map,canSwim(e),spot))){const was={x:e.x,y:e.y};e.x=spot.x;e.y=spot.y;this.move(e,0,0);if(isLava(r.stage,r.map,e)){e.x=was.x;e.y=was.y;}}
+      if(on>1){e.facingX=ox/on;e.facingY=oy/on;}
+      this.burst(tx,ty,'bubble',16,e.id);r.shake=Math.max(r.shake,.1);this.emit('roar');
+      if(Math.hypot(r.player.x-tx,r.player.y-ty)<e.attackRadius)this.damage(e.damage,e);
+      e.mode='recover';e.timer=1.3;e.attackName='ÅBEN FLANKE';
+    }
+    // Ragnar: the roar (pattern 3) sends nearby small game stampeding toward and past the player and halves
+    // stamina regeneration for 4 s for a player inside the roar circle. Stampedes deal no damage (they jostle: short slow).
+    roarStampede(e){
+      const r=this.run;for(const o of r.enemies){if(o.boss||o.guard||o.hp<=0||o.radius>22||!herbivorousNPC(o.kind)||Math.hypot(o.x-e.x,o.y-e.y)>520)continue;
+        const x=r.player.x-o.x,y=r.player.y-o.y,n=Math.max(1,Math.hypot(x,y));o.stampedeUntil=r.seconds+2.2;o.stampedeX=x/n;o.stampedeY=y/n;o.scaredUntil=r.seconds+3;}
+    }
+    stampede(e,dt){
+      const r=this.run;e.alert=false;e.mode=e.activity='flee';e.facingX=e.stampedeX;e.facingY=e.stampedeY;this.travel(e,e.stampedeX*e.speed*1.25*dt,e.stampedeY*e.speed*1.25*dt);
+      if(Math.hypot(e.x-r.player.x,e.y-r.player.y)<e.radius+r.player.radius+4)r.slow=Math.max(r.slow,.35);return true;
+    }
+    // Karl (level 7): every finished charge leaves an ash cloud (3 s, radius 90) that slows the player inside it.
+    ashCloud(e){
+      const r=this.run;if(e.kind!=='carnotaurus'||r.stage!==3)return;r.ashClouds=(r.ashClouds||[]).filter(c=>c.until>r.seconds).slice(-3);r.ashClouds.push({x:Math.round(e.x),y:Math.round(e.y),radius:90,until:r.seconds+3});this.burst(e.x,e.y,'ash',12,e.id);
+    }
+    // Karl's optional answer while stalking (05 §4.3): if the player still hurt him in the last 2 s, ASKEKAST –
+    // a 70 px circle on the player's position, 0.9 s windup (locked), 0.6 × bite damage, 4 s cooldown.
+    startAshThrow(e){
+      const r=this.run;if(e.kind!=='carnotaurus'||r.stage!==3||r.seconds-(e.reachHitAt??-1e9)>2||r.seconds<(e.ashReadyAt||0))return false;
+      e.pattern=5;e.mode='windup';e.timer=e.windupDuration=.9;e.attackRadius=70;e.attackName='ASKEKAST · FLYT DIG';e.targetX=r.player.x;e.targetY=r.player.y;e.ashReadyAt=r.seconds+4;e.spin=false;return true;
+    }
+    ashThrowLand(e){
+      const r=this.run;this.burst(e.targetX,e.targetY,'ash',18,e.id);r.shake=Math.max(r.shake,.08);
+      if(Math.hypot(r.player.x-e.targetX,r.player.y-e.targetY)<e.attackRadius)this.damage(Math.round(e.damage*.6),e);
+      e.mode='recover';e.timer=.6;e.pattern=0;
+    }
     // B1a: player's melee reach against e (resolveBite's hit test), used for the stalk distance.
     playerReach(e){const r=this.run;return PLAYER_SPECIES[r.species].range+e.radius+10*r.mutations.reach+(r.species==='ankylosaurus'?12*r.mutations.sweep:0);}
     // B1a: is the straight charge lane from e toward the player free of terrain e cannot cross (05 §4.2)?
@@ -957,23 +1010,28 @@
     // took over movement. A clear straight line keeps today's chase untouched (Carl/normal fights unchanged).
     bossReach(e,dt,d){
       const r=this.run,p=r.player,swim=canSwim(e),now=r.seconds;
-      if(e.reachHP===undefined||e.hp<e.reachHP)e.reachHitAt=now;e.reachHP=e.hp;
-      if(navLineClear(r.stage,r.map,swim,e,p)){if(e.reach&&e.reach!=='chase'){e.reach='chase';e.mode='chase';}e.unreachableSince=null;return false;}
+      if(r.stage!==3&&swim)return false; // only lava (and deep water for non-swimmers) can block a boss: nothing to check
+      if(e.reachHP===undefined)e.reachHitAt=-1e9;else if(e.hp<e.reachHP)e.reachHitAt=now;e.reachHP=e.hp;
+      // Line check at most every 0.15 s (mobile cost); a clear line keeps the normal chase.
+      if(!(e.lineAt<=now&&now-e.lineAt<.15)){e.lineAt=now;e.lineClear=navLineClear(r.stage,r.map,swim,e,p);}
+      if(e.lineClear){if(e.reach&&e.reach!=='chase'){e.reach='chase';e.mode='chase';}e.unreachableSince=null;return false;}
       const grid=navGrid(r.stage,r.map,swim,e.radius);
       if(!e.flow||now-e.flowAt>=.5||e.flowAt>now){e.flowAt=now;e.flow=navFlow(r.stage,r.map,grid,swim,p);r.navUpdates=(r.navUpdates||0)+1;}
-      const step=navStep(r.stage,r.map,swim,grid,e.flow,e),speed=e.speed*(e.bossPhase===2?1.18:1);
-      if(step){ // reposition: walk the flow field toward the crossing; a bite in range stays allowed
+      if(!e.step||now-e.stepAt>=.2||e.stepAt>now||Math.hypot(e.step.x-e.x,e.step.y-e.y)<8){e.stepAt=now;e.step=navStep(r.stage,r.map,swim,grid,e.flow,e);}
+      const step=e.step,speed=e.speed*(e.bossPhase===2?1.18:1),keep=this.playerReach(e)+30;
+      if(step){ // reposition: walk the flow field toward the crossing, edging out of the player's reach; no trades across the band
         e.reach=e.mode='reposition';e.unreachableSince=null;
-        if(d<150&&e.cooldown<=0)return false; // let the AI pick an attack (a blocked charge lane becomes a bite)
-        const wx=step.x-e.x,wy=step.y-e.y,wd=Math.max(1,Math.hypot(wx,wy));e.facingX=wx/wd;e.facingY=wy/wd;this.travel(e,wx/wd*speed*dt,wy/wd*speed*dt);
+        let wx=step.x-e.x,wy=step.y-e.y,wd=Math.max(1,Math.hypot(wx,wy));wx/=wd;wy/=wd;
+        if(d<keep){const k=(keep-d)/keep*2;wx+=(e.x-p.x)/d*k;wy+=(e.y-p.y)/d*k;wd=Math.max(.001,Math.hypot(wx,wy));wx/=wd;wy/=wd;}
+        e.facingX=wx;e.facingY=wy;this.travel(e,wx*speed*dt,wy*speed*dt);
         return true;
       }
       if(e.unreachableSince==null)e.unreachableSince=now;
-      const ux=(e.x-p.x)/d,uy=(e.y-p.y)/d,keep=this.playerReach(e)+30;
+      const ux=(e.x-p.x)/d,uy=(e.y-p.y)/d;
       if(now-e.unreachableSince>=12&&now-e.reachHitAt>=8){ // leash: back to the arena, HP unchanged, never into reach
         e.reach=e.mode='leash';const hx=e.homeX-e.x,hy=e.homeY-e.y,hd=Math.hypot(hx,hy);
         if(d>=keep){if(hd>24){e.facingX=hx/hd;e.facingY=hy/hd;this.travel(e,hx/hd*e.speed*.8*dt,hy/hd*e.speed*.8*dt);}else{e.facingX=-ux;e.facingY=-uy;}return true;}
-      }else e.reach=e.mode='stalk';
+      }else{e.reach=e.mode='stalk';if(FEATURES.bossSignatures&&d>=keep-12&&this.startAshThrow(e))return true;}
       // stalk: pace along the bank just outside the player's reach, facing the player
       const sway=Math.sin(now*.9+e.id)*.4,tx=p.x+(ux-uy*sway)*keep,ty=p.y+(uy+ux*sway)*keep;
       let gx=tx-e.x,gy=ty-e.y;if(d<keep+8){gx=ux;gy=uy;} // inside the reach margin: back straight off first
@@ -1004,7 +1062,8 @@
       if (e.mode === 'enrage' || e.mode === 'recover') { e.timer-=dt; if(e.timer<=0){e.mode='chase';e.cooldown=.35;} return; }
       if (e.mode === 'windup') {
         if(this.chargeLaneLost(e,dt))return;
-        e.timer-=dt; if(e.timer<=0){e.mode=e.pattern===0?'charge':e.pattern===1?'bite':'slam';e.timer=e.pattern===0?.65:.25;e.attackHit=false;this.emit('roar');} return;
+        if(e.pattern===4)this.diveWindup(e,dt);
+        e.timer-=dt; if(e.timer<=0&&e.pattern===4){this.diveSurface(e);return;} if(e.timer<=0){e.mode=e.pattern===0?'charge':e.pattern===1?'bite':'slam';e.timer=e.pattern===0?.65:.25;e.attackHit=false;this.emit('roar');} return;
       }
       if (e.mode === 'charge') {
         const x=e.x,y=e.y, speed=e.kind==='deinosuchus'?(e.bossPhase===2?390:300):370;
@@ -1019,7 +1078,8 @@
       if(e.mode==='bite'||e.mode==='slam') {
         e.timer-=dt;
         if(!e.attackHit&&e.timer<=.12){e.attackHit=true;const dot=(dx*e.facingX+dy*e.facingY)/d;
-          if(d<e.attackRadius&&(e.pattern>=2||dot>.35)){if(e.pattern===3){r.stamina=Math.max(0,r.stamina-40);r.slow=1;}else{this.damage(e.damage+(e.pattern===2?5:0),e);if(e.kind==='deinosuchus'&&e.pattern===2&&e.bossPhase===2)r.slow=.8;}}
+          if(e.pattern===3&&FEATURES.bossSignatures)this.roarStampede(e);
+          if(d<e.attackRadius&&(e.pattern>=2||dot>.35)){if(e.pattern===3){r.stamina=Math.max(0,r.stamina-40);r.slow=1;if(FEATURES.bossSignatures)r.roarDebuff=4;}else{this.damage(e.damage+(e.pattern===2?5:0),e);if(e.kind==='deinosuchus'&&e.pattern===2&&e.bossPhase===2)r.slow=.8;}}
           this.burst(e.x,e.y,'dust',20,e.id);r.shake=Math.max(r.shake,.14);
         }
         if(e.timer<=0){
@@ -1028,12 +1088,14 @@
         }return;
       }
       if(FEATURES.bossReach&&this.bossReach(e,dt,d))return;
+      if(FEATURES.bossSignatures&&this.waterTrip(e,dt))return;
       e.facingX=dx/d;e.facingY=dy/d;
       if(d>80)this.travel(e,dx/d*e.speed*dt,dy/d*e.speed*dt);
       if(e.cooldown>0||d>380)return;
       e.pattern=e.attackCycle++%3;e.secondBite=false;
       if(e.kind==='tyrannosaurus'&&e.pattern===0)e.pattern=3;
       if(FEATURES.bossReach&&e.pattern===0&&!this.chargeLaneClear(e)){if(d<150)e.pattern=1;else{e.cooldown=.3;return;}}
+      if(FEATURES.bossSignatures&&this.startDive(e,d))return;
       e.followUp=e.kind==='triceratops'&&e.bossPhase===2&&e.pattern===0;
       e.attackRadius=e.pattern===3?230:e.pattern===2?(e.kind==='deinosuchus'?(e.bossPhase===2?210:150):e.kind==='tyrannosaurus'?190:125):110;
       const names=e.kind==='pachycephalosaurus'?['KUPPELSTØD · SIDETRIN','DOBBELTSTØD · BAGOM','STENSTØD · HOLD AFSTAND']:e.kind==='baryonyx'?['FISKESTØD · SIDETRIN','KLØGAB · BAGOM','HALESLAG · HOLD AFSTAND']:e.kind==='ankylosaurus'?['PANSERMARCH · SIDETRIN','HALEKØLLE · BAGOM','HALESVING · HOLD AFSTAND']:e.kind==='deinosuchus'?['BAGHOLD · SIDETRIN','GAB · UNDVIG BAGOM','HALEBØLGE · HOLD AFSTAND']:e.kind==='triceratops'?['HORNSTORM · LOK MOD KLIPPE','HORNSTØD · BAGOM','TRAMP · HOLD AFSTAND']:['BRØL · HOLD AFSTAND',e.bossPhase===2?'DOBBELTBID 1/2':'KÆMPEBID · BAGOM','JORDRYSTELSE · HOLD AFSTAND'];
@@ -1054,6 +1116,7 @@
       if (e.mode === 'windup') {
         if (this.chargeLaneLost(e, dt)) return;
         e.timer -= dt;
+        if (e.timer <= 0 && e.pattern === 5) { this.ashThrowLand(e); return; }
         if (e.timer <= 0) {
           e.mode = e.pattern === 2 ? 'slam' : e.pattern === 1 ? 'bite' : 'charge';
           e.timer = e.mode === 'charge' ? .58 : .22; e.attackHit = false;
@@ -1073,7 +1136,7 @@
             e.followUp = false; e.mode = 'windup'; e.windupDuration = .65; e.timer = .65; e.attackName = 'STORMLØB 2/2';
             const x = r.player.x - e.x, y = r.player.y - e.y, gap = Math.max(1, Math.hypot(x, y));
             e.chargeX = e.facingX = x / gap; e.chargeY = e.facingY = y / gap;
-          } else { e.mode = 'recover'; e.timer = e.bossPhase === 2 ? 1.2 : 1.5; }
+          } else { e.mode = 'recover'; e.timer = e.bossPhase === 2 ? 1.2 : 1.5; if (FEATURES.bossSignatures) this.ashCloud(e); }
         }
         return;
       }
@@ -1271,6 +1334,7 @@
       }
       if(!e.boss&&!(e.scaredUntil>r.seconds)&&this.npcAbility(e,dt))return;
       e.cooldown = Math.max(0, e.cooldown - dt); e.hit = Math.max(0, e.hit - dt);
+      if(FEATURES.bossSignatures&&e.stampedeUntil>r.seconds&&this.stampede(e,dt))return;
       if(!e.boss&&e.scaredUntil>r.seconds){e.alert=false;e.mode=e.activity='flee';e.facingX=-dx/d;e.facingY=-dy/d;this.travel(e,-dx/d*e.speed*dt,-dy/d*e.speed*dt);return;}
       if(FEATURES.territorialNests&&e.guard){const homeDistance=Math.hypot(r.player.x-e.homeX,r.player.y-e.homeY);if(homeDistance<220){e.alert=true;if(['watch','return','wander','rest'].includes(e.mode))e.mode='chase';}else if(homeDistance>340&&!['windup','charge','bite','slam'].includes(e.mode)){e.alert=false;e.mode='return';this.returnHome(e,dt);return;}}
       if (e.guard && !e.alert && e.mode !== 'return') return;
@@ -1374,10 +1438,11 @@
       if (r.hitStop > 0) { const stopped = Math.min(dt, r.hitStop); r.hitStop = Math.max(0, r.hitStop - stopped); dt -= stopped; if (dt <= .000001) return; }
       r.seconds += dt;
       if(r.poisonTime>0){r.poisonTime=Math.max(0,r.poisonTime-dt);r.poisonTick-=dt;if(r.poisonTick<=0){r.poisonTick+=1;this.damage(1,null);if(this.phase!=='playing')return;}}
-      for (const timer of ['attackCooldown', 'bite', 'pounce', 'pounceCooldown', 'invulnerable', 'shake', 'slow', 'hurt','staminaDelay','frenzy','tailEmpowered','shieldTime','precisionTime','winded']) r[timer] = Math.max(0, (r[timer]||0) - dt);
+      for (const timer of ['attackCooldown', 'bite', 'pounce', 'pounceCooldown', 'invulnerable', 'shake', 'slow', 'hurt','staminaDelay','frenzy','tailEmpowered','shieldTime','precisionTime','winded','roarDebuff']) r[timer] = Math.max(0, (r[timer]||0) - dt);
+      if(FEATURES.bossSignatures&&r.ashClouds&&r.ashClouds.some(c=>c.until>r.seconds&&Math.hypot(r.player.x-c.x,r.player.y-c.y)<c.radius))r.slow=Math.max(r.slow,.1); // B1c ash cloud
       if(r.shieldTime===0)r.shield=0;
       const inCombat=r.attack||r.enemies.some(e=>e.alert&&e.damage&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<400);
-      if(r.staminaDelay===0&&r.pounce===0)r.stamina=Math.min(100,r.stamina+dt*(inCombat?STAMINA.combatRegen:STAMINA.regen)*(1+.03*r.upgrades.regen+.2*m.feathers)*(1-.15*m.metabolicRush));
+      if(r.staminaDelay===0&&r.pounce===0)r.stamina=Math.min(100,r.stamina+dt*(inCombat?STAMINA.combatRegen:STAMINA.regen)*(1+.03*r.upgrades.regen+.2*m.feathers)*(1-.15*m.metabolicRush)*(r.roarDebuff>0?.5:1));
       let dx = clamp(finite(input.x), -1, 1), dy = clamp(finite(input.y), -1, 1), n = Math.hypot(dx, dy);
       const config = PLAYER_SPECIES[r.species], cost = abilityCost(r);
       if (input.pounce && (n || ['ankylosaurus','tyrannosaurus'].includes(r.species)) && r.pounceCooldown === 0 && r.stamina >= cost) {
@@ -1478,7 +1543,7 @@
       for (const p of r.pickups) if (p.kind === 'dna') this.addDNA(p.value);
       if (r.levelIndex === r.campaign.length - 1) { this.finish(true); return true; }
       r.missedSecrets+=r.map.sites.filter(s=>!s.claimed).length+r.map.events.filter(e=>!e.claimed).length;r.stageStats.push({...r.stats,killsBySpecies:{...r.stats.killsBySpecies}});r.levelIndex++;r.stage=r.campaign[r.levelIndex].biome; r.meat = 0; r.bossSpawned = false; r.bossDefeated = false; r.enemies = []; r.pickups = []; r.attack = null; r.bite = 0; r.hitStop = 0; r.particles = []; r.decals = [];
-      r.corpses=[];r.zonesSeen={};r.zone=null;r.eating=null;r.shield=0;r.shieldTime=0;r.tailEmpowered=0;r.frenzy=0;r.staminaDelay=0;r.explored={};r.hidden=false;r.concealTime=0;r.revealedUntil=0;
+      r.corpses=[];r.ashClouds=[];r.zonesSeen={};r.zone=null;r.eating=null;r.shield=0;r.shieldTime=0;r.tailEmpowered=0;r.frenzy=0;r.staminaDelay=0;r.explored={};r.hidden=false;r.concealTime=0;r.revealedUntil=0;
       r.player.x = 480; r.player.y = 340; r.health = Math.min(r.maxHealth, r.health + r.maxHealth * .3); r.stamina = 100; r.invulnerable = 1;
       r.map = createMap(r.stage, (r.seed^Math.imul(r.levelIndex,2246822519))>>>0); this.setView(r.view.width, r.view.height); this.phase = 'playing'; this.populate(); this.emit('stage'); return true;
     }

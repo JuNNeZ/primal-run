@@ -51,6 +51,31 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
       checks.push('B1b: 2 basalt crossings, crossing centre is not lava');
     }
 
+    // ---- B1c / X9: every boss attack pattern has a telegraph shape; Benny's dive circle sits on the target.
+    {
+      await open('en');
+      const b1c = await page.evaluate(() => {
+        const g = primalRun.game, C = PrimalCore; g.phase = 'menu'; g.start({ seed: 5 });
+        const r = g.run; for (let i = 0; i < 2; i++) { g.phase = 'cleared'; r.bossDefeated = true; g.nextStage(); }
+        Object.assign(r, { enemies: [], spawnTimer: 1e9, bossSpawned: true }); const shapes = [];
+        for (const kind of ['pachycephalosaurus', 'carnotaurus', 'baryonyx', 'deinosuchus', 'ankylosaurus', 'triceratops', 'tyrannosaurus'])
+          for (const pattern of [0, 1, 2, 3, 4, 5]) {
+            const e = { kind, boss: true, pattern, radius: 32, facingX: 1, facingY: 0, chargeX: 1, chargeY: 0, attackRadius: 90, bossPhase: 1, x: 100, y: 100, targetX: 300, targetY: 120, timer: .5, windupDuration: 1.2, mode: 'windup' };
+            const s = primalRun.telegraphShape(e); shapes.push({ kind, pattern, ok: !!s && (s.radius > 0 || s.length > 0), at: s && s.at ? s.at.x : null });
+          }
+        // Live dive on level 3: freeze the frame mid-windup for the screenshot.
+        const pts = r.map.riverCurve, mid = pts[Math.floor(pts.length / 2)];
+        Object.assign(r.player, { x: mid.x + 160, y: mid.y }); const boss = g.spawn(C.LEVELS[2].boss, { x: mid.x + 10, y: mid.y }, true); boss.alert = true;
+        for (let i = 0; i < 120 && !(boss.mode === 'windup' && boss.pattern === 4 && boss.timer < 1); i++) { r.invulnerable = 1; g.step(1 / 30, {}); }
+        return { shapes, dive: boss.mode === 'windup' && boss.pattern === 4, name: boss.attackName };
+      });
+      assert.ok(b1c.shapes.every(s => s.ok), JSON.stringify(b1c.shapes.filter(s => !s.ok)));
+      assert.ok(b1c.shapes.filter(s => s.pattern >= 4).every(s => s.at === 300), 'dive/ASKEKAST circles sit on the target');
+      assert.equal(b1c.dive, true, 'Benny dives near the river');
+      await page.waitForTimeout(120); await page.screenshot({ path: path.join(shots, 'part_b_b1c_dive.png') });
+      checks.push('B1c: telegraph shapes for 7 bosses × 6 patterns, Benny dive telegraph "' + b1c.name + '"');
+    }
+
     assert.deepEqual(errors, []);
     console.log('part-b browser OK\n- ' + checks.join('\n- '));
   } finally { await browser.close(); }

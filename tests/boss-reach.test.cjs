@@ -102,10 +102,11 @@ test('stalk: a boss cornered against the map edge inside the player reach fights
 test('X7: a rock at the lava edge cannot push a boss into the lava (move() push-out is reverted)', () => {
   const { g, r, boss, line, at } = scene({ offset: 300, bossOffset: 60, crossings: false });
   const edge = at(-14 - boss.radius - 4); Object.assign(boss, edge);
-  r.map.rocks.push({ x: edge.x - line.n.x * (boss.radius + 18), y: edge.y - line.n.y * (boss.radius + 18), radius: 22 }); // rock overlapping from behind
+  r.map.rocks.push({ x: edge.x - line.n.x * 60, y: edge.y - line.n.y * 60, radius: 80 }); // a big rock behind it: its push-out points into the lava
   for (let i = 0; i < 60; i++) { g.travel(boss, line.n.x * 2, line.n.y * 2); assert.equal(C.isLava(r.stage, r.map, boss), false, 'step ' + i); }
   C.FEATURES.bossReach = false; let entered = false; // documents the old bug: the same pushes reach the lava without the guard
   try { for (let i = 0; i < 60 && !entered; i++) { g.travel(boss, line.n.x * 2, line.n.y * 2); entered = C.isLava(r.stage, r.map, boss); } } finally { C.FEATURES.bossReach = true; }
+  assert.equal(entered, true, 'without the guard the rock pushes the boss into the lava (the bug this guards against)');
 });
 
 test('X8: flow-field updates cost ≤ 1.5 ms and run at most twice per second per boss', () => {
