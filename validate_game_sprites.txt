@@ -1,0 +1,9 @@
+{
+  "technical_export_result": "PASS",
+  "assets": 3620,
+  "new_attack_frames": 24,
+  "errors": [],
+  "production_approved": false,
+  "scope": "Native PNG dimensions, palette, alpha, padding, inventory, source integrity, declared anchors, intentional endpoint reuse and timing plan. Does not certify anatomy, consistent lighting or temporal art quality.",
+  "visual_review": "See player_review.html at 1x/4x on both backgrounds. Generated poses remain studies; legacy walk/idle transitions require further refinement."
+}
