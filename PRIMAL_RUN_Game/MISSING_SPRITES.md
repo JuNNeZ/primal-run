@@ -36,3 +36,16 @@ af ChatGPT-art (Codex integrerer). Palet: Primal Earth 32.
 | B2 | Natpalet | radial mørkning (#151b19) + let blå multiply (#3c7180) i `screenAmbience` | A6 nat-paletskift for terræn og dyr (fx 8-farvers swap-tabel), evt. øjenglimt for rovdyr |
 | B2 | Sol-/måneikon i HUD | tekstsymbolerne ☀ og ☾ foran uret | 2 små HUD-ikoner (16×16) i UI-stil |
 | B5 | Vilde og allierede raptorer | spillerens Velociraptor-frames (`player_full/velociraptor_*`), teal ◆ og HP-bjælke tegnet i kode | valgfrit: et lille flokmærke-ikon (12×12), og NPC-ådsel/skelet for Velociraptor, hvis allierede senere skal kunne dø (punkt 5 ovenfor) |
+
+## Sprite-atlas (anmodning til Codex, 10. okt.) – færre HTTP-requests på GitHub Pages
+
+Spillet hentede ca. 1666 enkelt-PNG'er ved sideindlæsning, og GitHub Pages rate-limiter det.
+Claude har gjort menuen lazy (`preload({menu:true})` i `app.js`: kun UI plus valgt arts idle-frames, ca. 222 requests).
+Banens grafik hentes nu først ved START, men en bane koster stadig flere hundrede til ca. 1000 requests.
+
+**Ønske:** Codex samler frames i atlas-ark i build-trinnet (`tools/build_web.cjs` / `build_game.py`). Det er ikke ny grafik, kun pakning af de eksisterende PNG'er pixel for pixel.
+
+- Lav ét ark pr. art pr. mappe, fx `player_full/velociraptor.png` + `.json`, og ét ark pr. fjende/boss. Gør det samme for `behavior*/`, `corpses/`, `effects/` og `ecology/`.
+- Atlas-JSON skal gemme `{path: {x,y,w,h,anchor}}`, så `catalog` og de faste ankre er uændrede. `sprite(path)` slår op i atlasset og tegner med `drawImage(sheet, x,y,w,h, …)`.
+- Behold Primal Earth 32 og de nøjagtige pixels. Brug ingen skalering, ingen komprimering med tab, og 1 px gennemsigtig padding mod bleeding.
+- Mål: højst ca. 40 requests pr. bane og ca. 30 i menuen. Validatorerne (`validate:game-sprites` / `validate:enemy-sprites`) skal køre på kilde-PNG'erne som i dag.

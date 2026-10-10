@@ -116,6 +116,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     await denied.goto(base);await denied.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{}); await denied.waitForFunction(() => window.primalRun && document.querySelector('[data-action="start"]:not(:disabled)'));
     await denied.locator('[data-action="start"]').click();
     await denied.locator('[data-action="begin"]').click();
+    await denied.waitForFunction(() => primalRun.game.phase === 'playing', null, { timeout: 60000 }); // stage art now loads at START
     await denied.evaluate(() => { primalRun.game.addDNA(2); });
     assert.equal(await denied.evaluate(() => primalRun.game.storageAvailable), false);
     assert.match(await denied.locator('.save-status').innerText(), /kun denne session/);
