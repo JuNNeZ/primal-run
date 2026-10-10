@@ -72,3 +72,5 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 @media(max-width:800px){.menu-screen{justify-content:center}.menu-fields{grid-template-columns:1fr}}
 .menu-screen .menu-panel{margin:0 3% 0 auto}
 @media(max-width:800px){.menu-screen .menu-panel{margin:0 auto}}
+
+.patch-link{display:block;margin-top:12px;font-size:12px;letter-spacing:.06em;color:#e9b75a;text-decoration:none;opacity:.85}.patch-link:hover{opacity:1;text-decoration:underline}

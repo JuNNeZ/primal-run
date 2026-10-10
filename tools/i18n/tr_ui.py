@@ -422,5 +422,6 @@ UI = [
 ("Tyrannosaurus rex","Tyrannosaurus rex","Tyrannosaurus rex","Tyrannosaurus rex","Tyrannosaurus rex","ティラノサウルス","霸王龙"),
 ("Parasaurolophus","Parasaurolophus","Parasaurolophus","Parasaurolophus","Parasaurolophus","パラサウロロフス","副栉龙"),
 ("Deinosuchus","Deinosuchus","Deinosuchus","Deinosuchus","Deinosuchus","デイノスクス","恐鳄"),
+("Nyt i oktober-opdateringen →","What's new in the October update →","Neu im Oktober-Update →","Nytt i oktoberuppdateringen →","Nytt i oktoberoppdateringen →","10月アップデートの新要素 →","十月更新内容 →"),
 ("fremgang gemmes kun i denne session","progress is saved for this session only","Fortschritt wird nur in dieser Sitzung gespeichert","framsteg sparas endast i denna session","fremgang lagres kun i denne økten","進行状況はこのセッションのみ保存","进度仅保存在本次会话"),
 ]

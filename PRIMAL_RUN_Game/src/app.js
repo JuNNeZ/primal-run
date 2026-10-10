@@ -64,6 +64,7 @@
           ${button('start', ready ? 'START JAGTEN <span>→</span>' : 'INDLÆSER…', 'primary')}
           <div class="menu-grid">${button('shop', '⬡ DNA-lab <b>' + game.save.dna + '</b>')}${button('achievements', '★ Bedrifter <b>' + done + '/' + C.ACHIEVEMENTS.length + '</b>')}${button('guide', '❧ Artsbog')}${button('scores', '♛ Highscores')}${button('settings', '⚙ Indstillinger')}${button('help', '? Sådan spiller du')}</div>
           <div class="menu-fields"><label class="name-label">DIT NAVN<input id="player-name" maxlength="20" autocomplete="nickname" value="${htmlEscape(game.save.name)}"></label><label class="name-label">KORT-SEED<input id="map-seed" inputmode="numeric" maxlength="10" placeholder="tilfældigt" value="${htmlEscape(seedInput)}"></label></div>
+          <a class="patch-link" href="PATCH_NOTES.html" target="_blank" rel="noopener">✦ Nyt i oktober-opdateringen →</a>
           </section>`;
         screen.querySelector('[data-action="start"]').disabled = !ready;
       } else if (phase === 'intro') {
