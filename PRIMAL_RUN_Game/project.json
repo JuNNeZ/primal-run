@@ -33033,7 +33033,7 @@
             "      if(C.FEATURES.dayNight&&r.darkness>0){ // B2 night: procedural darkening with a soft light around the player (night palette = A6 asset)",
             "        const px=r.player.x-r.view.x,py=r.player.y-r.view.y,inner=110,outer=Math.max(w,h)*.55,g=ctx.createRadialGradient(px,py,inner,px,py,outer);",
             "        g.addColorStop(0,'rgba(21,27,25,0)');g.addColorStop(1,'rgba(21,27,25,'+(.62*r.darkness).toFixed(3)+')');",
-            "        ctx.save();ctx.fillStyle=g;ctx.fillRect(0,0,w,h);ctx.globalAlpha=.18*r.darkness;ctx.globalCompositeOperation='multiply';ctx.fillStyle='#3c7180';ctx.fillRect(0,0,w,h);ctx.restore();",
+            "        ctx.save();ctx.globalCompositeOperation='multiply';ctx.fillStyle=g;ctx.fillRect(0,0,w,h);ctx.globalAlpha=.18*r.darkness;ctx.fillStyle='#3c7180';ctx.fillRect(0,0,w,h);ctx.restore();",
             "      }",
             "      if(!calm()){",
             "        ctx.save();",
