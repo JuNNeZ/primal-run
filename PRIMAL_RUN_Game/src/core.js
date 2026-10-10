@@ -556,7 +556,9 @@
     // One optional miniboss per level, far from the start: risk you choose for an epic genome.
     spawnRival() {
       const r=this.run,kind=RIVALS[r.stage].kind,start={x:480,y:340};
-      const spots=r.map.habitats.filter(h=>!isWater(r.stage,r.map,h,-40)&&Math.hypot(h.x-start.x,h.y-start.y)>900&&suitableHabitat(r.stage,r.map,kind,h)&&!r.map.rocks.some(rock=>Math.hypot(h.x-rock.x,h.y-rock.y)<70)&&!r.map.sites.some(site=>Math.hypot(h.x-site.x,h.y-site.y)<260));
+      // A river rival (Baryonyx) needs a riverside habitat; on ~7 % of river maps none is also 40 px from water, so relax only that margin (never into water).
+      const candidates=margin=>r.map.habitats.filter(h=>!isWater(r.stage,r.map,h,margin)&&Math.hypot(h.x-start.x,h.y-start.y)>900&&suitableHabitat(r.stage,r.map,kind,h)&&!r.map.rocks.some(rock=>Math.hypot(h.x-rock.x,h.y-rock.y)<70)&&!r.map.sites.some(site=>Math.hypot(h.x-site.x,h.y-site.y)<260));
+      let spots=candidates(-40);if(!spots.length)spots=candidates(0);
       if(!spots.length)return null;
       const spot=spots[Math.floor(seeded(r.seed^Math.imul(r.levelIndex+7,97531))()*spots.length)];
       const e=this.spawn(kind,spot);if(!e)return null;

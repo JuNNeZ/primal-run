@@ -210,7 +210,7 @@
     if (!agg) return null;
     if (def.type === 'mode' || def.type === 'weighted') {
       const weight = k => def.type === 'weighted' ? EMBARRASSMENT[k] || 1 : 1;
-      const keys = Object.keys(agg.counts).sort((a, b) => agg.counts[b] * weight(b) - agg.counts[a] * weight(a) || weight(b) - weight(a) || (b === agg.last) - (a === agg.last) || (a < b ? -1 : 1));
+      const keys = Object.keys(agg.counts).sort((a, b) => agg.counts[b] * weight(b) - agg.counts[a] * weight(a) || weight(b) - weight(a) || (def.type === 'mode' ? (b === agg.last) - (a === agg.last) : 0) || (a < b ? -1 : 1));
       return keys.length ? { value: keys[0], count: agg.counts[keys[0]] } : null;
     }
     if (def.type === 'species') {
@@ -225,7 +225,7 @@
   // ---- save v2 → v3 ---------------------------------------------------------------------------
   const finite = n => typeof n === 'number' && Number.isFinite(n);
   const cleanRef = r => r && typeof r === 'object' ? { species: String(r.species || '').slice(0, 24), date: String(r.date || '').slice(0, 10), seed: finite(r.seed) ? r.seed : 0, seconds: finite(r.seconds) ? r.seconds : 0, ...(finite(r.explorationPct) ? { explorationPct: r.explorationPct } : {}) } : null;
-  function cleanCounts(c) { const out = {}; if (c && typeof c === 'object') for (const [k, v] of Object.entries(c)) if (finite(v) && v >= 0 && k.length <= 40) out[k] = Math.floor(v); return out; }
+  function cleanCounts(c) { const out = {}; if (c && typeof c === 'object') for (const [k, v] of Object.entries(c)) if (finite(v) && v >= 0 && /^[a-z_@:0-9]{1,40}$/i.test(k)) out[k] = Math.floor(v); return out; }
   function cleanAgg(def, a) {
     if (!a || typeof a !== 'object') return null;
     switch (def.type) {
@@ -302,7 +302,7 @@
       .filter(t => s.victory ? t.category !== 'shame' || t.id === 'quitter' : true)
       .map(t => ({ t, score: titleScore(t, s) }))
       .sort((a, b) => b.score - a.score || index.get(a.t) - index.get(b.t)).map(x => x.t);
-    const primary = pool[0] || FALLBACK, secondary = [];
+    const primary = pool[0] || FALLBACK || { id: 'new_branch', category: 'fallback', rarity: 'common', name: { da: 'En Ny Gren på Stamtræet' }, description: { da: '' } }, secondary = [];
     for (const t of pool.slice(1)) {
       if (secondary.length === 2) break;
       if (t.category === primary.category || secondary.some(x => x.category === t.category)) continue;
@@ -339,20 +339,24 @@
       t.eventsClaimed += (r.map.events || []).filter(x => x.claimed).length;
       t.zonesAvailable += (r.map.zones || []).length;
     }
+    // Called after damage(), or from finish() when the hit was fatal, so the summary includes the killing blow.
+    // The hit in progress lives outside the run, so a damage() call while the world is frozen changes nothing in it.
+    const PENDING = new WeakMap();
+    function bankHit(r, t) {
+      const hit = PENDING.get(r); if (!hit || hit.banked) return; hit.banked = true;
+      const source = hit.source, taken = Math.max(0, hit.before - Math.max(0, r.health));
+      if (taken <= 0) return;
+      if (source && source.hazard === 'lava') t.lavaDamage += taken;
+      t.longestNoHitSeconds = Math.max(t.longestNoHitSeconds, r.seconds - t.lastHitAt); t.lastHitAt = r.seconds;
+      t.lastCause = causeOf(r, source);
+    }
     wrap('start', function (original, ...args) { const out = original.apply(this, args); if (this.run) this.run.track = newTrack(); return out; });
     // Lava passes {hazard:'lava'}; core still receives null so its own lava handling is unchanged.
     wrap('damage', function (original, amount, source) {
       const r = this.run; if (!r) return original.call(this, amount, source);
-      const t = T(r), before = r.health; t.pending = source || null;
+      const outer = PENDING.get(r); PENDING.set(r, { source: source || null, before: r.health, banked: false });
       try { return original.call(this, amount, source && source.hazard ? null : source); }
-      finally {
-        t.pending = undefined; const taken = Math.max(0, before - Math.max(0, r.health));
-        if (taken > 0) {
-          if (source && source.hazard === 'lava') t.lavaDamage += taken;
-          t.longestNoHitSeconds = Math.max(t.longestNoHitSeconds, r.seconds - t.lastHitAt); t.lastHitAt = r.seconds;
-          t.lastCause = causeOf(r, source);
-        }
-      }
+      finally { if (r.track) bankHit(r, r.track); if (outer) PENDING.set(r, outer); else PENDING.delete(r); }
     });
     wrap('attack', function (original, ...args) { const r = this.run, hidden = !!(r && r.hidden); const out = original.apply(this, args); if (out && hidden) T(r).ambushUntil = r.seconds + 1.5; return out; });
     wrap('kill', function (original, e) {
@@ -360,7 +364,7 @@
       const t = T(r), level = r.campaign[r.levelIndex] || {}, pounce = r.pounce > 0;
       const out = original.call(this, e);
       if (e.boss) {
-        t.bossKills.push({ kind: e.kind, level: r.levelIndex + 1, seconds: round1(r.seconds - (e.trackSpawnAt !== undefined ? e.trackSpawnAt : r.seconds)) });
+        t.bossKills.push({ kind: e.kind, level: r.levelIndex + 1, id: causeOf(r, e).bossId, name: level.bossName || null, seconds: round1(r.seconds - (e.trackSpawnAt !== undefined ? e.trackSpawnAt : r.seconds)) });
         if (!e.hitPlayer) t.bossNoHitKills++;
         if (r.health < r.maxHealth * .1) t.bossCloseCalls++;
         if (level.mini) t.minibossKills++;
@@ -390,7 +394,7 @@
         // Largest single-target HP drop within one player step, only for animals the player provoked this step.
         for (const [e, before] of hp) if (e.lastAttackedAt === r.seconds) t.maxHitDamage = Math.max(t.maxHitDamage, before - Math.max(0, e.hp));
         for (const e of r.enemies) {
-          if (e.boss && e.alert && e.trackAttemptAt === undefined) { e.trackAttemptAt = r.seconds; t.bossAttempts++; }
+          if (e.boss && e.trackAttemptAt === undefined && (e.hp < e.maxHP || Math.hypot(e.x - r.player.x, e.y - r.player.y) < 420)) { e.trackAttemptAt = r.seconds; t.bossAttempts++; }
           if (e.rivalName && !t.rivalIds.includes(r.levelIndex + ':' + e.rivalName)) t.rivalIds.push(r.levelIndex + ':' + e.rivalName);
         }
       }
@@ -400,7 +404,8 @@
     wrap('finish', function (original, victory) {
       const r = this.run; if (!r || r.result) return original.call(this, victory);
       const t = T(r);
-      r.deathCause = victory ? null : r.abandoned ? { type: 'abandon', at: r.seconds } : t.pending !== undefined ? causeOf(r, t.pending) : t.lastCause || { type: 'environment', at: r.seconds };
+      bankHit(r, t); const hit = PENDING.get(r);
+      r.deathCause = victory ? null : r.abandoned ? { type: 'abandon', at: r.seconds } : hit ? causeOf(r, hit.source) : t.lastCause || { type: 'environment', at: r.seconds };
       t.longestNoHitSeconds = Math.max(t.longestNoHitSeconds, r.seconds - t.lastHitAt);
       bankMap(r);
       const out = original.call(this, victory);

@@ -257,3 +257,35 @@ test('Q41: every records label, title name and title description is translated t
   }
   I.setLanguage('en'); assert.equal(C.formatDistance(68000, 'en'), '3.4 km'); assert.equal(I.t('3.4 km'), '3.4 km'); assert.equal(I.t('Compy-snack'), 'Compy Snack'); I.setLanguage('da');
 });
+
+// ---- regressions from the independent review of 37899fb ----------------------------------------
+test('a single lethal lava tick is included in the summary (lavaDamage, flawless span)', () => {
+  const g = setup('velociraptor', { level: 7 }), r = g.run; r.seconds = 50; r.health = 2; r.invulnerable = 0;
+  g.damage(4, { hazard: 'lava' });
+  assert.equal(r.summary.deathCauseType, 'lava'); assert.equal(r.summary.lavaDamage, 2); assert.equal(r.summary.longestNoHitSeconds, 50);
+});
+test('boss chips keep the campaign boss: classic runs never show journey names', () => {
+  const g = new C.Game({ random: () => .9 }); g.now = () => NOW; g.start({ seed: 4, campaign: 'classic' }); const r = g.run; r.enemies = [];
+  const boss = g.spawn(r.campaign[0].boss, { x: r.player.x + 300, y: r.player.y }, true); g.kill(boss);
+  assert.equal(r.track.bossKills[0].id, 'classic:' + r.campaign[0].boss); assert.equal(r.track.bossKills[0].name, r.campaign[0].bossName);
+});
+test('a boss attempt starts on engagement, not when the boss spawns far away', () => {
+  const g = setup('velociraptor', { level: 1 }), r = g.run, boss = g.spawn('carnotaurus', { x: r.player.x + 1500, y: r.player.y }, true); boss.cooldown = 999;
+  boss.speed = 0; g.step(.02, {}); assert.equal(r.track.bossAttempts, 0);
+  boss.x = r.player.x + 200; g.step(.02, {}); assert.equal(r.track.bossAttempts, 1); g.step(.02, {}); assert.equal(r.track.bossAttempts, 1);
+});
+test('record keys from storage are plain ids; weighted ties go to weight then alphabet', () => {
+  const save = C.sanitizeSave({ version: 3, records: { allTime: { nemesis: { counts: { '<img src=x onerror=alert(1)>': 3, compy: 1 } } } } });
+  assert.deepEqual(save.records.allTime.nemesis.counts, { compy: 1 });
+  const def = R.STATS.find(x => x.id === 'embarrassing_cause');
+  assert.equal(R.statValue(def, { counts: { boss_other: 2, enemy_other: 3 }, last: 'enemy_other' }).value, 'boss_other', '6 vs 6 → higher weight wins');
+  assert.equal(R.statValue(def, { counts: { level1_boss: 1, fleeing_prey: 1 }, last: 'level1_boss' }).value, 'fleeing_prey', 'equal weight → alphabetical');
+});
+test('Q27: river levels always place their rival (riverside fallback), 150 seeds × levels 3 and 4', () => {
+  for (let seed = 1; seed <= 150; seed++) for (const L of [2, 3]) {
+    const g = new C.Game({ random: () => .5 }); g.start({ seed }); const r = g.run;
+    r.levelIndex = L; r.stage = r.campaign[L].biome; r.map = C.createMap(r.stage, (r.seed ^ Math.imul(L, 2246822519)) >>> 0); r.enemies = []; g.setView(960, 640); g.populate();
+    assert.ok(r.map.rival, 'seed ' + seed + ' level ' + (L + 1));
+    const rival = r.enemies.find(e => e.id === r.map.rival.id); assert.ok(!C.isWater(r.stage, r.map, rival), 'rival not placed in water');
+  }
+});

@@ -157,7 +157,7 @@
       if(recordsTab==='top')return `<div class="records-tabs">${tabs}</div>`;
       const scopes=[['day','I dag'],['week','Uge'],['month','Måned'],['allTime','Altid']].map(([id,label])=>`<button class="${recordsScope===id?'selected':''}" data-records-scope="${id}" aria-pressed="${recordsScope===id}">${label}</button>`).join('');
       const rows=R.STATS.filter(def=>def.board===recordsTab&&(def.type!=='current'||recordsScope==='allTime')).map(def=>{const x=R.statValue(def,stats[def.id],save),ref=x&&x.ref?speciesName(x.ref.species)+' · '+x.ref.date:x&&x.seeded?'fra tidligere runs':'';
-        return `<div class="record-row"><span>${def.label}</span><b${x?'':' title="Registreres fra version 3"'}>${recordValue(def,x)}</b>${ref?`<small>${htmlEscape(ref)}</small>`:''}</div>`;}).join('');
+        return `<div class="record-row"><span>${def.label}</span><b${x?'':' title="Registreres fra version 3"'}>${htmlEscape(recordValue(def,x))}</b>${ref?`<small>${htmlEscape(ref)}</small>`:''}</div>`;}).join('');
       return `<div class="records-tabs">${tabs}</div><div class="records-tabs scopes">${scopes}</div><div class="records-list">${rows}</div><p class="fine">Rekorder gemmes kun i denne browser. — betyder endnu ikke registreret.</p>`;
     }
     const titleOf=id=>R.TITLES.find(t=>t.id===id);
@@ -178,7 +178,7 @@
       if(s.fishCaught||s.diet==='piscivore')cells.push(cell('Fisk',s.fishCaught));
       if(s.attacks>=10)cells.push(cell('Træfprocent',Math.round(100*s.accuracy)+' %'));
       if(s.longestNoHitSeconds>=30)cells.push(cell('Længste skadefri periode',timeLabel(s.longestNoHitSeconds)));
-      const bosses=s.bossKills.map(b=>`<span class="chip">${htmlEscape(bossName(b.kind+'@'+b.level))} ${timeLabel(b.seconds)} ✓</span>`).join('');
+      const bosses=s.bossKills.map(b=>`<span class="chip">${htmlEscape(b.name||bossName(b.id||b.kind))} ${timeLabel(b.seconds)} ✓</span>`).join('');
       const fresh=picked.fresh.map(titleOf).filter(Boolean).map(t=>`<span class="chip new">✦ ${t.name.da}</span>`).join('');
       return `<div class="run-card"><p class="run-header"><b>${speciesName(s.species)}</b> · Bane ${s.levelReached}/${r.campaign.length} · ${timeLabel(s.seconds)}</p><p class="run-title rarity-${primary.rarity}">★ ${primary.name.da}</p><p class="run-title-text">${primary.description.da}</p>${secondary.length?`<p class="run-secondary">${secondary.map(t=>t.name.da).join(' · ')}</p>`:''}<div class="stat-grid run-card-grid">${cells.join('')}</div>${bosses?`<p class="chips">${bosses}</p>`:''}${fresh?`<p class="chips"><small>Ny titel</small> ${fresh}</p>`:''}</div>`;
     }
