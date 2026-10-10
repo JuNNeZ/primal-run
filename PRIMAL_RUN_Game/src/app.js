@@ -46,6 +46,7 @@
     function button(action, text, className = '') { return `<button class="${className}" data-action="${action}">${text}</button>`; }
     function heading(kicker, title, text = '') { return `<small class="eyebrow">${kicker}</small><h1>${title}</h1>${text ? `<p class="intro">${text}</p>` : ''}`; }
     function renderScreen(force = false) {
+      screen.dir = I18N.rtl ? 'rtl' : 'ltr'; if (root.document) root.document.documentElement.lang = I18N.lang || 'da'; // RTL menus for Arabic/Urdu
       const phase = game.phase, r = game.run;
       if (phase === previousPhase && !force) return;
       const codes=[['up','left','down','right'].map(keyLabel).join(''),keyLabel('attack'),keyLabel('ability'),keyLabel('sneak'),keyLabel('eat'),keyLabel('interact'),'ESC'];shell.querySelectorAll('footer kbd').forEach((el,i)=>el.textContent=codes[i]);
@@ -57,7 +58,7 @@
       screen.classList.toggle('menu-screen',phase==='menu');shell.classList.toggle('cinematic-menu',phase==='menu');
       screen.hidden = phase === 'playing'; screen.classList.toggle('wide', ['shop', 'scores', 'species'].includes(phase));
       if (phase === 'playing') { screen.innerHTML = ''; canvas.focus({ preventScroll: true }); return; }
-      if (phase === 'menu'&&!game.save.settings.languageChosen) {screen.innerHTML=`<section class="panel compact"><h2 translate="no">Sprog / Language</h2><div class="menu-grid">${I18N.LANGUAGES.filter(l=>!l.fallback).map(l=>`<button data-first-language="${l.id}" translate="no" lang="${l.id}">${l.name}</button>`).join('')}</div></section>`;
+      if (phase === 'menu'&&!game.save.settings.languageChosen) {screen.innerHTML=`<section class="panel compact"><h2 translate="no">Sprog / Language</h2><div class="menu-grid">${I18N.LANGUAGES.filter(l=>!l.fun).map(l=>`<button data-first-language="${l.id}" translate="no" lang="${l.id}">${l.name}</button>`).join('')}</div></section>`;
       } else if (phase === 'menu') {
         const chosen = C.PLAYER_SPECIES[game.save.selectedSpecies], done = C.ACHIEVEMENTS.filter(a => game.save.achievements[a.id]).length;
         screen.innerHTML = `<section class="panel menu-panel"><small class="eyebrow">JAGT · MUTÉR · OVERLEV</small><h1>PRIMAL <em>RUN</em></h1>
