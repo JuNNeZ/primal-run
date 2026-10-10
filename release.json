@@ -4,5 +4,5 @@
   "date": "2026-10-10",
   "scope": "October overhaul: procedural sub-biome maps, boss and crit rebalance, ecology AI, HUD/telegraphs/water, achievements and unlocks, 7+2 languages, patch notes",
   "validation": "121 unit tests, 18 browser checks, 3 kit checks in CI",
-  "rollback": "tag live-backup-2026-10-09"
+  "rollback": "branch backup/live-2026-10-09"
 }
