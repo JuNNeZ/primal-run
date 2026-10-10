@@ -13,3 +13,10 @@ Repo: JuNNeZ/primal-run. The default `main` is a historical kit, not the authori
 - NEVER update `gh-pages`, merge PRs, auto-publish, force-push a shared branch, or silently overwrite overlapping changes without Jonas's explicit instruction.
 - Known issue: Ankylosaurus holds Space and hits Karl across level 7 lava while stationary; test that exact scenario rather than just a bite attack.
 - Favor inexpensive lookup and routine coding. Use High / XHigh for genuine complexity, and Fable only by explicit request.
+
+## Update 2026-10-10 (Claude records branch)
+- Current Claude base: `claude/records-implementation` (records, titles, metre distance, exploit/rival tests). Part B code plan and ownership: `PRIMAL_RUN_Game/PART_B_PLAN_2026-10.md` (Claude builds B code on `claude/part-b`; Codex does assets + integration). Status: `PRIMAL_RUN_Game/RECORDS_STATUS.md`.
+- Windows checkout: `git config core.longpaths true` and `git config core.autocrlf false` before checkout, or CRLF breaks the GDevelop source-hash test.
+- `python tools/build_game.py` on Windows writes CRLF and truncates `PRIMAL_RUN_Game/Source_Generated/README.md`: convert changed files to LF, `git checkout` that README, then recompute `integration_report.json` `source_sha256` from the LF files.
+- Browser tests rewrite tracked `*_report.json` and `previews/*.png`; restore them with `git checkout` before committing unless the change is intended.
+- New features go behind `FEATURES.<flag>`; keep core edits in small, isolated blocks; tests: `node --test tests/*.test.cjs`, then `npm run test:game` before pushing.
