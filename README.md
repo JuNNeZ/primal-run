@@ -3,7 +3,7 @@
 Arbejdsrepository til et top-down dinosaur-roguelite i pixel art.
 
 Det aktive spil er **PRIMAL_RUN_Game**: en spilbar udviklingsversion med
-Velociraptor som startart, ti spilbare arter, otte tilfældige baner og navngivne bosser,
+Deinonychus som startart, elleve spilbare arter, otte tilfældige baner og navngivne bosser,
 kød/levels, fælles og artsmutationer, permanente DNA-unlocks og upgrades,
 startmenu, lokale highscores, lydindstillinger og original proceduremusik.
 Den fælles spilkerne kører i browseren og i et GDevelop 5-projekt.
@@ -15,8 +15,8 @@ Vand/mudder sænker bevægelse; hold C i buske for at snige/skjule dig.
 Flokke alarmerer hinanden, bytte græsser/hviler, og rovdyr har territorier.
 [Spiltest og balanceændringer1–4](PRIMAL_RUN_Game/PRIORITIES_1_4.md).
 
-Otte separate spillerarter har960 frames; to arter deler deres fjendeserier.
-Ti spilbare arter har1200 frames for idle, gang, løb, angreb, skade og død. [Se spilleranimationerne](PRIMAL_RUN_Game/player_full_review.html).
+Ni separate spillerarter har1080 frames; to arter deler deres fjendeserier.
+Elleve spilbare arter har1320 frames for idle, gang, løb, angreb, skade og død. [Se spilleranimationerne](PRIMAL_RUN_Game/player_full_review.html).
 Almindelige fjender kan opgive jagten efter 8 sekunder uden en ny træffer;
 chancen stiger med afstand og tid. Uforstyrrede byttedyr holder cirka 110 pixels
 afstand, når spilleren står stille. Bosser opgiver ikke.
@@ -35,6 +35,9 @@ Arterne har forskellige farver, og stabile kropsradier er gennemgået.
 **PRIMAL_RUN_Prototype_Kit** er den bevarede assetpakke og tidligere browserdemo
 med 104 PNG-assets, otte WAV-placeholderlyde og GDevelop-byggeguides.
 
+[Fjerklædt startart, terræn og meteorfinale](PRIMAL_RUN_Game/FEATHERED_STARTER_AND_TERRAIN.md).
+[1.672 nye balanceforsøg](PRIMAL_RUN_Game/balance_runs/EVOLUTION_RESULTS.md).
+
 [Ny rute, Compy-flokke, NPC-evner og seed1993](PRIMAL_RUN_Game/JOURNEY_AND_COMPY.md).
 
 ## Start
@@ -45,8 +48,8 @@ Kør `npm run preview`, og åbn
 I GDevelop åbnes **[PRIMAL_RUN_Game/project.json](PRIMAL_RUN_Game/project.json)**
 direkte. Behold hele projektmappen samlet. Mekanikkerne bruger JavaScript-events
 og redigeres i `src/`; de er ikke individuelle visuelle events i sceneeditoren.
-Projektet er indlæst og eksporteret med GDevelop 5.6.283, og eksporten er testet
-i Chromium. Se [spillets vejledning](PRIMAL_RUN_Game/README.md) og
+En tidligere version er indlæst og eksporteret med GDevelop5.6.283. Den nyeste
+version er testet standalone i Chromium; en frisk rigtig GDJS-eksport er ikke kørt. Se [spillets vejledning](PRIMAL_RUN_Game/README.md) og
 [udviklingsplanen](PRIMAL_RUN_Game/DEVELOPMENT_PLAN.md).
 
 `npm run build:web` klargør `dist/` til GitHub Pages. Den manuelle workflow

@@ -20,9 +20,9 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
      if(checked<10)throw Error(species+' has no actual species palette on its body');result.push({species,checked});
     }
     return result;
-   });assert.equal(colors.length,10);
+   });assert.equal(colors.length,11);
   }
   if(process.env.PRIMAL_EXPECT_GDEVELOP)assert.equal(await p.evaluate(()=>typeof gdjs.RuntimeGame),'function');await p.close();
  }
- assert.deepEqual(errors,[]);const report={status:'PASS',runtime:process.env.PRIMAL_EXPECT_GDEVELOP?'official GDevelop GDJS 5.6.283':'standalone Chromium',checks:['animated jungle scene on desktop/portrait/landscape','visible dinosaur passers-by','reduced-motion freezes scene','start/intro/pause controls','decoration respects paused run','actual recolored pixels for all ten playable classes','no page errors or missing resources'],production_approved:false};if(process.env.PRIMAL_JUNGLE_REPORT)fs.writeFileSync(process.env.PRIMAL_JUNGLE_REPORT,JSON.stringify(report,null,2)+'\n');console.log('PASS: cinematic jungle menu, responsive controls, reduced motion, actual species palettes, pause isolation');
+ assert.deepEqual(errors,[]);const report={status:'PASS',runtime:process.env.PRIMAL_EXPECT_GDEVELOP?'official GDevelop GDJS 5.6.283':'standalone Chromium',checks:['animated jungle scene on desktop/portrait/landscape','visible dinosaur passers-by','reduced-motion freezes scene','start/intro/pause controls','decoration respects paused run','actual recolored pixels for all eleven playable classes','no page errors or missing resources'],production_approved:false};if(process.env.PRIMAL_JUNGLE_REPORT)fs.writeFileSync(process.env.PRIMAL_JUNGLE_REPORT,JSON.stringify(report,null,2)+'\n');console.log('PASS: cinematic jungle menu, responsive controls, reduced motion, actual species palettes, pause isolation');
 }finally{await browser.close()}})().catch(e=>{console.error(e);process.exitCode=1});

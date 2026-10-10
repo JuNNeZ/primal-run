@@ -13,6 +13,7 @@
     boss2:{name:'Den hornede march',bpm:136,root:40,voice:'square',motif:[0,7,0,7,3,3,10,null,5,12,5,12,7,3,0,null],chords:[0,5,3,7],drums:3},
     boss3:{name:'Dalens sidste konge',bpm:156,root:36,voice:'square',motif:[0,1,0,7,6,3,1,0,12,10,7,6,3,1,0,0],chords:[0,1,6,0],drums:3},
     victory:{name:'Dalens nye konge',bpm:92,root:55,voice:'triangle',motif:[0,4,7,12,null,11,9,7,4,7,12,16,14,12,null,null],chords:[0,5,7,0],drums:0},
+    extinction:{name:'Den sidste himmel',bpm:60,root:32,voice:'triangle',motif:[12,null,11,7,null,6,3,null,1,null,0,null,7,3,1,0],chords:[0,1,6,0],drums:2},
     defeat:{name:'Evolutionen fortsætter',bpm:64,root:45,voice:'sine',motif:[12,null,10,null,7,null,3,null,5,null,3,null,0,null,null,null],chords:[0,3,5,0],drums:0},
   };
   const frequency=midi=>440*Math.pow(2,(midi-69)/12);
@@ -61,7 +62,7 @@
       oscillator.connect(gain); gain.connect(destination || this.music); this.voices.add(oscillator); oscillator.start(start); oscillator.stop(start + length + .02);
       oscillator.onended = () => { this.voices.delete(oscillator);oscillator.disconnect(); gain.disconnect(); };
     }
-    setScene({phase='menu',stage=0,boss=false,health=1,maxHealth=1,victory=false}={}) {
+    setScene({phase='menu',stage=0,boss=false,health=1,maxHealth=1,victory=false,extinction=false}={}) {
       this.ambientStage=Math.max(0,Math.min(3,stage));
       const gameplay=['playing','paused','mutation','exploration','cleared'].includes(phase);
       const ratio=Math.max(0,Math.min(1,health/Math.max(1,maxHealth)));
@@ -74,7 +75,7 @@
       else band=band>0&&ratio<.55?1:0;
       this.healthBand=band;this.ducked=gameplay&&phase!=='playing';
       this.intensity=this.ducked?'paused':gameplay?(boss?'boss':'hunt'):'menu';
-      const track=phase==='result'?(victory?'victory':'defeat'):gameplay?(boss&&phase!=='cleared'?'boss'+stage:['forest','river','rocks','volcano'][stage]):'menu';
+      const track=phase==='result'?(extinction?'extinction':victory?'victory':'defeat'):gameplay?(boss&&phase!=='cleared'?'boss'+stage:['forest','river','rocks','volcano'][stage]):'menu';
       if(track===this.trackId)return;
       this.trackId=track;this.beat=0;this.transitions++;
       if(!this.context)return;
@@ -122,7 +123,7 @@
         const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
         const osc = c.createOscillator(), gain = c.createGain(), t = c.currentTime; osc.type = 'sawtooth'; osc.frequency.setValueAtTime(event === 'boss_enrage' ? 95 : 70, t); osc.frequency.exponentialRampToValueAtTime(32, t + .32); gain.gain.setValueAtTime(.06, t); gain.gain.exponentialRampToValueAtTime(.0001, t + .35); osc.connect(gain); gain.connect(this.effects); osc.start(t); osc.stop(t + .36); osc.onended = () => { osc.disconnect(); gain.disconnect(); }; return;
       }
-      const names = { bite: 'bite', hit: 'hit', pickup: 'pickup', dna: 'pickup', pounce: 'pounce', level_up: 'level_up', death: 'death', ui: 'ui_select', boss: 'meteor', boss_dead: 'level_up', victory: 'level_up', stage: 'ui_select', start: 'ui_select' };
+      const names = { meteor:'meteor',bite: 'bite', hit: 'hit', pickup: 'pickup', dna: 'pickup', pounce: 'pounce', level_up: 'level_up', death: 'death', ui: 'ui_select', boss: 'meteor', boss_dead: 'level_up', victory: 'level_up', stage: 'ui_select', start: 'ui_select' };
       const name = names[event]; if (!name || this.settings.master * this.settings.sfx === 0 || this.active.size > 8) return;
       const audio = new Audio(this.resolve('sounds/' + name + '.wav')); audio.volume = this.settings.master * this.settings.sfx;
       this.active.add(audio);

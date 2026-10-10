@@ -1,14 +1,121 @@
 {
   "status": "RECORDED",
-  "scope": "Gameplay scale audit: native canvases/unchanged registered origins, stable class/NPC torso radius, integer rendering scale and warnings based on actual body radius. Not fossil body lengths or anatomical approval.",
-  "png_assets": 1820,
+  "scope": "Registered native frames, stable gameplay torso radii and declared integer runtime scales. Player/NPC entries account for shared frame sets. Pixel scale is a readability budget, not calibrated fossil metres or anatomical approval.",
+  "png_assets": 1960,
+  "playables": 11,
+  "npc_species": 10,
   "species": {
+    "velociraptor": {
+      "player_torso_radius": 12,
+      "player_frames": 120,
+      "player_frames_present": true,
+      "npc_frames": 0,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "443027",
+        "674333": "586d38",
+        "8d6042": "799447",
+        "b98252": "a8b15b",
+        "d4a36c": "ded392",
+        "edd0a0": "e8ece1",
+        "54282d": "443027",
+        "913b32": "586d38",
+        "c6663c": "799447",
+        "de954a": "a8b15b",
+        "8d2028": "586d38"
+      },
+      "origins_preserved": true
+    },
+    "pachycephalosaurus": {
+      "player_torso_radius": 16,
+      "npc_torso_radius": 16,
+      "player_frames": 120,
+      "player_frames_present": true,
+      "npc_frames": 120,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "443027",
+        "674333": "626861",
+        "8d6042": "8d6042",
+        "b98252": "d4a36c",
+        "d4a36c": "ded392",
+        "edd0a0": "e8ece1",
+        "54282d": "443027",
+        "913b32": "626861",
+        "c6663c": "d4a36c",
+        "de954a": "ded392",
+        "8d2028": "626861"
+      },
+      "origins_preserved": true
+    },
+    "gallimimus": {
+      "player_torso_radius": 15,
+      "npc_torso_radius": 15,
+      "player_frames": 120,
+      "player_frames_present": true,
+      "npc_frames": 120,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "28372a",
+        "674333": "586d38",
+        "8d6042": "799447",
+        "b98252": "a8b15b",
+        "d4a36c": "ded392",
+        "edd0a0": "e8ece1",
+        "54282d": "28372a",
+        "913b32": "586d38",
+        "c6663c": "a8b15b",
+        "de954a": "ded392",
+        "8d2028": "586d38"
+      },
+      "origins_preserved": true
+    },
+    "baryonyx": {
+      "player_torso_radius": 22,
+      "npc_torso_radius": 22,
+      "player_frames": 120,
+      "player_frames_present": true,
+      "npc_frames": 120,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
+      "distinct_species_ramp": {
+        "443027": "151b19",
+        "674333": "3b4144",
+        "8d6042": "3c7180",
+        "b98252": "69a4a0",
+        "d4a36c": "bab8a2",
+        "edd0a0": "e8ece1",
+        "54282d": "151b19",
+        "913b32": "3b4144",
+        "c6663c": "69a4a0",
+        "de954a": "bab8a2",
+        "8d2028": "3b4144"
+      },
+      "origins_preserved": true
+    },
     "compy": {
       "player_torso_radius": 4,
       "npc_torso_radius": 4,
       "player_frames": 120,
-      "npc_studies": 17,
-      "display_scale": 1,
+      "player_frames_present": true,
+      "npc_frames": 120,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
       "boss_display_scale": 1,
       "boss_torso_radius": 32,
       "body_radius_matches_player_and_npc": true,
@@ -25,15 +132,15 @@
         "de954a": "799447",
         "8d2028": "3f5030"
       },
-      "origins_preserved": true,
-      "npc_frames": 120,
-      "native_body_sample_stride": 4
+      "origins_preserved": true
     },
     "utahraptor": {
       "player_torso_radius": 16,
       "player_frames": 120,
-      "npc_studies": 0,
-      "display_scale": 1,
+      "player_frames_present": true,
+      "npc_frames": 0,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
       "boss_display_scale": 1,
       "boss_torso_radius": 32,
       "body_radius_matches_player_and_npc": true,
@@ -50,16 +157,15 @@
         "de954a": "a2d4c1",
         "8d2028": "3c7180"
       },
-      "origins_preserved": true,
-      "npc_torso_radius": null,
-      "npc_frames": 0,
-      "native_body_sample_stride": 1
+      "origins_preserved": true
     },
     "parasaurolophus": {
       "npc_torso_radius": 18,
       "player_frames": 0,
-      "npc_studies": 17,
-      "display_scale": 1,
+      "player_frames_present": true,
+      "npc_frames": 120,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
       "boss_display_scale": 1,
       "boss_torso_radius": 32,
       "body_radius_matches_player_and_npc": true,
@@ -76,17 +182,16 @@
         "de954a": "ded392",
         "8d2028": "3f5030"
       },
-      "origins_preserved": true,
-      "player_torso_radius": null,
-      "npc_frames": 120,
-      "native_body_sample_stride": 1
+      "origins_preserved": true
     },
     "carnotaurus": {
       "player_torso_radius": 21,
       "npc_torso_radius": 21,
       "player_frames": 120,
-      "npc_studies": 17,
-      "display_scale": 1,
+      "player_frames_present": true,
+      "npc_frames": 120,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
       "boss_display_scale": 2,
       "boss_torso_radius": 42,
       "body_radius_matches_player_and_npc": true,
@@ -103,16 +208,16 @@
         "de954a": "d4a36c",
         "8d2028": "674333"
       },
-      "origins_preserved": true,
-      "npc_frames": 120,
-      "native_body_sample_stride": 1
+      "origins_preserved": true
     },
     "ankylosaurus": {
       "player_torso_radius": 23,
       "npc_torso_radius": 23,
       "player_frames": 120,
-      "npc_studies": 17,
-      "display_scale": 1,
+      "player_frames_present": true,
+      "npc_frames": 120,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
       "boss_display_scale": 1,
       "boss_torso_radius": 32,
       "body_radius_matches_player_and_npc": true,
@@ -129,16 +234,16 @@
         "de954a": "bab8a2",
         "8d2028": "626861"
       },
-      "origins_preserved": true,
-      "npc_frames": 120,
-      "native_body_sample_stride": 1
+      "origins_preserved": true
     },
     "deinosuchus": {
       "npc_torso_radius": 32,
       "player_frames": 0,
-      "npc_studies": 1,
-      "display_scale": 2,
-      "boss_display_scale": 1,
+      "player_frames_present": true,
+      "npc_frames": 120,
+      "player_display_scale": 1,
+      "npc_display_scale": 2,
+      "boss_display_scale": 2,
       "boss_torso_radius": 32,
       "body_radius_matches_player_and_npc": true,
       "distinct_species_ramp": {
@@ -154,16 +259,16 @@
         "de954a": "586d38",
         "8d2028": "28372a"
       },
-      "origins_preserved": true,
-      "player_torso_radius": null,
-      "npc_frames": 120,
-      "native_body_sample_stride": 1
+      "origins_preserved": true
     },
     "triceratops": {
+      "player_torso_radius": 28,
       "npc_torso_radius": 28,
       "player_frames": 120,
-      "npc_studies": 1,
-      "display_scale": 1,
+      "player_frames_present": true,
+      "npc_frames": 120,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
       "boss_display_scale": 1,
       "boss_torso_radius": 32,
       "body_radius_matches_player_and_npc": true,
@@ -180,17 +285,17 @@
         "de954a": "bab8a2",
         "8d2028": "626861"
       },
-      "origins_preserved": true,
-      "player_torso_radius": 28,
-      "npc_frames": 120,
-      "native_body_sample_stride": 1
+      "origins_preserved": true
     },
     "tyrannosaurus": {
+      "player_torso_radius": 32,
       "npc_torso_radius": 32,
       "player_frames": 120,
-      "npc_studies": 1,
-      "display_scale": 2,
-      "boss_display_scale": 1,
+      "player_frames_present": true,
+      "npc_frames": 120,
+      "player_display_scale": 2,
+      "npc_display_scale": 2,
+      "boss_display_scale": 2,
       "boss_torso_radius": 32,
       "body_radius_matches_player_and_npc": true,
       "distinct_species_ramp": {
@@ -206,98 +311,32 @@
         "de954a": "b98252",
         "8d2028": "674333"
       },
-      "origins_preserved": true,
-      "player_torso_radius": 32,
-      "npc_frames": 120,
-      "native_body_sample_stride": 1
+      "origins_preserved": true
     },
-    "pachycephalosaurus": {
-      "player_torso_radius": 16,
-      "npc_torso_radius": 16,
+    "deinonychus": {
+      "player_torso_radius": 14,
       "player_frames": 120,
-      "npc_frames": 120,
-      "distinct_species_ramp": {
-        "443027": "443027",
-        "674333": "626861",
-        "8d6042": "8d6042",
-        "b98252": "d4a36c",
-        "d4a36c": "ded392",
-        "edd0a0": "e8ece1",
-        "54282d": "443027",
-        "913b32": "626861",
-        "c6663c": "d4a36c",
-        "de954a": "ded392",
-        "8d2028": "626861"
-      },
-      "body_radius_matches_player_and_npc": true,
-      "native_body_sample_stride": 1,
-      "display_scale": 1
-    },
-    "gallimimus": {
-      "player_torso_radius": 15,
-      "npc_torso_radius": 15,
-      "player_frames": 120,
-      "npc_frames": 120,
-      "distinct_species_ramp": {
-        "443027": "28372a",
-        "674333": "586d38",
-        "8d6042": "799447",
-        "b98252": "a8b15b",
-        "d4a36c": "ded392",
-        "edd0a0": "e8ece1",
-        "54282d": "28372a",
-        "913b32": "586d38",
-        "c6663c": "a8b15b",
-        "de954a": "ded392",
-        "8d2028": "586d38"
-      },
-      "body_radius_matches_player_and_npc": true,
-      "native_body_sample_stride": 1,
-      "display_scale": 1
-    },
-    "baryonyx": {
-      "player_torso_radius": 22,
-      "npc_torso_radius": 22,
-      "player_frames": 120,
-      "npc_frames": 120,
-      "distinct_species_ramp": {
-        "443027": "151b19",
-        "674333": "3b4144",
-        "8d6042": "3c7180",
-        "b98252": "69a4a0",
-        "d4a36c": "bab8a2",
-        "edd0a0": "e8ece1",
-        "54282d": "151b19",
-        "913b32": "3b4144",
-        "c6663c": "69a4a0",
-        "de954a": "bab8a2",
-        "8d2028": "3b4144"
-      },
-      "body_radius_matches_player_and_npc": true,
-      "native_body_sample_stride": 1,
-      "display_scale": 1
-    },
-    "velociraptor": {
-      "player_torso_radius": 12,
-      "npc_torso_radius": null,
-      "player_frames": 120,
+      "player_frames_present": true,
       "npc_frames": 0,
+      "player_display_scale": 1,
+      "npc_display_scale": 1,
+      "boss_display_scale": 1,
+      "boss_torso_radius": 32,
+      "body_radius_matches_player_and_npc": true,
       "distinct_species_ramp": {
         "443027": "443027",
-        "674333": "586d38",
-        "8d6042": "799447",
-        "b98252": "a8b15b",
-        "d4a36c": "ded392",
+        "674333": "674333",
+        "8d6042": "8d6042",
+        "b98252": "bab8a2",
+        "d4a36c": "edd0a0",
         "edd0a0": "e8ece1",
         "54282d": "443027",
-        "913b32": "586d38",
-        "c6663c": "799447",
-        "de954a": "a8b15b",
-        "8d2028": "586d38"
+        "913b32": "674333",
+        "c6663c": "bab8a2",
+        "de954a": "edd0a0",
+        "8d2028": "674333"
       },
-      "body_radius_matches_player_and_npc": true,
-      "native_body_sample_stride": 2,
-      "display_scale": 1
+      "origins_preserved": true
     }
   },
   "biomes": [
@@ -307,7 +346,9 @@
         "compy",
         "compy",
         "parasaurolophus",
-        "carnotaurus"
+        "carnotaurus",
+        "pachycephalosaurus",
+        "gallimimus"
       ],
       "plants": [
         "cycad",
@@ -334,7 +375,9 @@
         "compy",
         "parasaurolophus",
         "carnotaurus",
-        "deinosuchus"
+        "deinosuchus",
+        "gallimimus",
+        "baryonyx"
       ],
       "plants": [
         "cycad",
@@ -361,7 +404,9 @@
         "parasaurolophus",
         "carnotaurus",
         "ankylosaurus",
-        "triceratops"
+        "triceratops",
+        "pachycephalosaurus",
+        "gallimimus"
       ],
       "plants": [
         "conifer",
@@ -384,7 +429,8 @@
         "parasaurolophus",
         "carnotaurus",
         "ankylosaurus",
-        "tyrannosaurus"
+        "tyrannosaurus",
+        "gallimimus"
       ],
       "plants": [
         "dry_grass",
@@ -398,13 +444,10 @@
     }
   ],
   "remaining_visual_limitations": [
-    "Player/NPC drawings differ modestly in proportions; same torso radius retains gameplay consistency.",
-    "Generated full frames retain minor marking/anatomy/registration variation.",
-    "Native Parasaurolophus is a juvenile-sized prey illustration.",
-    "Flora are stylised visual placeholders, not identified fossil plant taxa.",
-    "Compy/Velociraptor are relative integer-sampling size corrections, not exact meter-calibrated models."
+    "Generated marking/body/foot registration variation still needs animation polish.",
+    "Some older biped forearms can read as additional feet; anatomy is not certified by a technical PASS.",
+    "Native Parasaurolophus remains a juvenile-sized prey illustration.",
+    "Volcanoes/ground/plants are stylised prototype art, not identified fossil flora or metre-calibrated terrain."
   ],
-  "production_approved": false,
-  "current_revision": "Velociraptor starter / eight-level journey",
-  "playable_species": 10
+  "production_approved": false
 }

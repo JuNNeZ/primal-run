@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "tiles": [
+    {
+      "stage": 0,
+      "draws": [
+        "forest_1.png",
+        "forest_0.png",
+        "forest_3.png",
+        "forest_2.png"
+      ]
+    },
+    {
+      "stage": 1,
+      "draws": [
+        "river_1.png",
+        "river_0.png",
+        "river_3.png",
+        "river_2.png"
+      ]
+    },
+    {
+      "stage": 2,
+      "draws": [
+        "rocks_1.png",
+        "rocks_0.png",
+        "rocks_3.png",
+        "rocks_2.png"
+      ]
+    },
+    {
+      "stage": 3,
+      "draws": [
+        "volcano_1.png",
+        "volcano_0.png",
+        "volcano_3.png",
+        "volcano_2.png"
+      ]
+    }
+  ],
+  "starter": "deinonychus",
+  "smoothing": false,
+  "checks": [
+    "Native biome tiles are actually drawn without resize/smoothing",
+    "Four actual biome screenshots",
+    "Space cannot advance final cleared/result screens",
+    "Earned victory keeps score/DNA and freezes simulation telemetry",
+    "Meteor scene and distinct extinction music",
+    "Reduced-motion static finale"
+  ],
+  "production_approved": false
+}

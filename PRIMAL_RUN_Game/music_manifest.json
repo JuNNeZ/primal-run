@@ -64,7 +64,7 @@
       "drums": 1
     },
     "river": {
-      "name": "Flodens strøm",
+      "name": "Flodens str\u00f8m",
       "bpm": 88,
       "root": 55,
       "voice": "sine",
@@ -157,7 +157,7 @@
       "drums": 2
     },
     "boss0": {
-      "name": "Skovens stormløb",
+      "name": "Skovens storml\u00f8b",
       "bpm": 142,
       "root": 38,
       "voice": "square",
@@ -312,7 +312,7 @@
       "drums": 0
     },
     "defeat": {
-      "name": "Evolutionen fortsætter",
+      "name": "Evolutionen forts\u00e6tter",
       "bpm": 64,
       "root": 45,
       "voice": "sine",
@@ -363,7 +363,7 @@
   },
   "ambient": {
     "origin": "Original procedural WebAudio filtered noise and animal/insect tones; no external recordings",
-    "volume": "master × ambient, independent from music and sfx",
+    "volume": "master \u00d7 ambient, independent from music and sfx",
     "boss_multiplier": 0.6,
     "pause_multiplier": 0.2,
     "profiles": [
@@ -373,5 +373,11 @@
       "volcanic low wind + deep distant calls"
     ],
     "crossfade_seconds": 1
+  },
+  "extinction_theme": {
+    "id": "extinction",
+    "name": "Den sidste himmel",
+    "composition": "src/audio.js SCORES.extinction",
+    "purpose": "Earned victory extinction finale; descending motif and low percussion. One impact SFX at cinematic4sec."
   }
 }

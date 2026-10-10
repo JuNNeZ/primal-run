@@ -1,0 +1,13 @@
+{
+  "technical_result": "PASS",
+  "tiles": 16,
+  "props": 4,
+  "errors": [],
+  "production_approved": false,
+  "seamless_approved": false,
+  "limitations": [
+    "Generated tiles have subtle repeated clusters; irregular runtime patches reduce visible rectangular boundaries.",
+    "3x3 repeats are preserved for manual seam/style review; no technical seam certification.",
+    "Volcanic cone/crater art is a prototype; core supplies gradual heat and safe crossings."
+  ]
+}

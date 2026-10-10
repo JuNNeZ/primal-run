@@ -13,3 +13,5 @@ Compare identical seeds/scenarios across builds, multiple policies and enemy tie
 Do not label something OP from an easy target where all bots win. Report survival, time, food/DNA/kill rates and uncertainty.
 Keep report.json, summary.csv and incremental runs.jsonl under balance_runs. Document reproduction commands and caveats. Regenerate samples after core changes or mark their source SHA stale.
 New species must be added to the core registries and asset rules; the simulator discovers PLAYER_SPECIES rather than a second hard-coded species list.
+
+Evolution matrix: simulate_evolution_duels.cjs + summarize_evolution.cjs require1672 current-core cases. Eight build families include legendary/mixed. Record actual initial species/legendary grants separately from earned mutations. Repeated deterministic boss starts are not independent human-win evidence; report bot class-policy bias before nerfing prices/abilities. Do not combine old SHA results with current-core reports.

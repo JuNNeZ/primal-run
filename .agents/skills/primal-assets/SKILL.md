@@ -16,3 +16,5 @@ Native light/dark previews and validation reports accompany changes. Browser evi
 Check legacy source hashes and git diff; commit raw sources and derivatives with clear prototype status.
 
 Declared user exceptions live in the family supplement/config. Baryonyx living N may use South180 (lighting caveat); Compy/Veloci may use recorded integer body sampling about fixed hips. Never silently extend these exceptions to another animal. For closely spaced sheets inspect alpha halos and neighbours; use reviewed tight cell margins/thresholds, never draw missing anatomy.
+
+Ground family: read SPRITE_RULES_GROUND.md; export_ground.py/validate_ground.py produce16 native32 opaque tiles plus4 native256 volcanic props, fixed palette and preserved raw sheets. Add ground_manifest.json through build_game.py; physical water/lava geometry stays in core. Deinonychus source stride4 is its explicit new source plan, native144/pivot72 with no runtime scaling; do not generalize to old families. Retain rejected anatomy/direction drafts.

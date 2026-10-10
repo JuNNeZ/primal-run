@@ -78,3 +78,10 @@ family supplement and files for the task, then expand if a dependency requires i
 Species anatomy: PRIMAL_RUN_Game/SPECIES_ANATOMY.md. Corpse overlay supplement:
 PRIMAL_RUN_Game/SPRITE_RULES_CORPSES.md. These routes do not replace the
 project-wide rules or automatically approve generated art.
+
+For the ground overlay read PRIMAL_RUN_Game/SPRITE_RULES_GROUND.md and use
+export_ground.py/validate_ground.py. Native biome tiles are32x32, volcanic props
+256x256; preserve raw sheets, inspect3x3 repeats and keep prototype status.
+Current concise handoff replaces repeated reading of old milestones; historical
+content remains in CLOUD_HANDOFF_HISTORY.md. New species require personal
+mutations in all five rarities and deliberate shared-core/save/simulator integration.

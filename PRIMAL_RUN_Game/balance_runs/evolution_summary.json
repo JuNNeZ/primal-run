@@ -1,0 +1,288 @@
+{
+  "coreSHA256": "2219e2c7829120b45d9d4704c4cf9b28b1277674107663e35f297a82ed450915",
+  "simulatorSHA256": "4e68e3696ad0d937b1043f189794ed218f1d6318290a3029997f903c011ec3dd",
+  "runs": 1672,
+  "normalRuns": 880,
+  "duelRuns": 792,
+  "species": [
+    "compy",
+    "utahraptor",
+    "carnotaurus",
+    "ankylosaurus",
+    "triceratops",
+    "pachycephalosaurus",
+    "gallimimus",
+    "baryonyx",
+    "tyrannosaurus",
+    "velociraptor",
+    "deinonychus"
+  ],
+  "normalBuilds": [
+    {
+      "name": "baseline",
+      "upgrades": {},
+      "mutations": {}
+    },
+    {
+      "name": "offence",
+      "upgrades": {
+        "damage": 3
+      },
+      "mutations": {
+        "teeth": 2,
+        "quick": 2
+      }
+    },
+    {
+      "name": "survival",
+      "upgrades": {
+        "health": 3,
+        "regen": 3
+      },
+      "mutations": {
+        "armor": 2,
+        "scavenger": 2
+      }
+    },
+    {
+      "name": "tradeoff",
+      "upgrades": {
+        "digestion": 2
+      },
+      "mutations": {
+        "glassCannon": 2,
+        "heavyMuscle": 2,
+        "overclock": 2
+      }
+    },
+    {
+      "name": "mobility",
+      "upgrades": {
+        "regen": 3
+      },
+      "mutations": {
+        "lightFrame": 2,
+        "metabolicRush": 2
+      }
+    },
+    {
+      "name": "species",
+      "upgrades": {},
+      "mutations": {},
+      "speciesRanks": 2
+    },
+    {
+      "name": "legendary",
+      "upgrades": {},
+      "mutations": {
+        "apexGenome": 1
+      },
+      "speciesLegendary": true
+    },
+    {
+      "name": "mixed",
+      "upgrades": {
+        "health": 3,
+        "damage": 3,
+        "regen": 3,
+        "digestion": 2
+      },
+      "mutations": {
+        "teeth": 2,
+        "armor": 2,
+        "pounce": 2
+      },
+      "speciesRanks": 1
+    }
+  ],
+  "normalSeeds": [
+    7300,
+    7301,
+    7302,
+    7303,
+    7304
+  ],
+  "duelSeeds": [
+    7300,
+    7301,
+    7302
+  ],
+  "policies": [
+    "cautious",
+    "aggressive"
+  ],
+  "bossTargets": [
+    "carnotaurus",
+    "deinosuchus",
+    "tyrannosaurus"
+  ],
+  "table": [
+    {
+      "species": "compy",
+      "name": "Compy",
+      "unlockDNA": 0,
+      "baselineDeaths": 0,
+      "baselineRuns": 5,
+      "meanBosses": 1,
+      "meanFood": 26.4,
+      "rexBaselineWins": 0,
+      "rexBaselineSeconds": 19.57,
+      "rexTradeoffWins": 3,
+      "rexTradeoffSeconds": 16.88,
+      "rexLegendaryWins": 3
+    },
+    {
+      "species": "utahraptor",
+      "name": "Utahraptor",
+      "unlockDNA": 25,
+      "baselineDeaths": 1,
+      "baselineRuns": 5,
+      "meanBosses": 2,
+      "meanFood": 49.4,
+      "rexBaselineWins": 0,
+      "rexBaselineSeconds": 28.7,
+      "rexTradeoffWins": 3,
+      "rexTradeoffSeconds": 13.12,
+      "rexLegendaryWins": 3
+    },
+    {
+      "species": "carnotaurus",
+      "name": "Carnotaurus",
+      "unlockDNA": 55,
+      "baselineDeaths": 0,
+      "baselineRuns": 5,
+      "meanBosses": 2,
+      "meanFood": 58.4,
+      "rexBaselineWins": 3,
+      "rexBaselineSeconds": 24.89,
+      "rexTradeoffWins": 3,
+      "rexTradeoffSeconds": 9.49,
+      "rexLegendaryWins": 3
+    },
+    {
+      "species": "ankylosaurus",
+      "name": "Ankylosaurus",
+      "unlockDNA": 75,
+      "baselineDeaths": 0,
+      "baselineRuns": 5,
+      "meanBosses": 1.8,
+      "meanFood": 44,
+      "rexBaselineWins": 3,
+      "rexBaselineSeconds": 31.5,
+      "rexTradeoffWins": 3,
+      "rexTradeoffSeconds": 13.88,
+      "rexLegendaryWins": 3
+    },
+    {
+      "species": "triceratops",
+      "name": "Triceratops",
+      "unlockDNA": 90,
+      "baselineDeaths": 0,
+      "baselineRuns": 5,
+      "meanBosses": 1.4,
+      "meanFood": 37.6,
+      "rexBaselineWins": 3,
+      "rexBaselineSeconds": 26.74,
+      "rexTradeoffWins": 3,
+      "rexTradeoffSeconds": 10.74,
+      "rexLegendaryWins": 3
+    },
+    {
+      "species": "pachycephalosaurus",
+      "name": "Pachycephalosaurus",
+      "unlockDNA": 35,
+      "baselineDeaths": 0,
+      "baselineRuns": 5,
+      "meanBosses": 1.8,
+      "meanFood": 38,
+      "rexBaselineWins": 0,
+      "rexBaselineSeconds": 29.34,
+      "rexTradeoffWins": 3,
+      "rexTradeoffSeconds": 13.6,
+      "rexLegendaryWins": 3
+    },
+    {
+      "species": "gallimimus",
+      "name": "Gallimimus",
+      "unlockDNA": 20,
+      "baselineDeaths": 3,
+      "baselineRuns": 5,
+      "meanBosses": 1,
+      "meanFood": 23.2,
+      "rexBaselineWins": 0,
+      "rexBaselineSeconds": 19.5,
+      "rexTradeoffWins": 0,
+      "rexTradeoffSeconds": 9.52,
+      "rexLegendaryWins": 0
+    },
+    {
+      "species": "baryonyx",
+      "name": "Baryonyx",
+      "unlockDNA": 65,
+      "baselineDeaths": 0,
+      "baselineRuns": 5,
+      "meanBosses": 3,
+      "meanFood": 89.2,
+      "rexBaselineWins": 3,
+      "rexBaselineSeconds": 27.62,
+      "rexTradeoffWins": 3,
+      "rexTradeoffSeconds": 10.11,
+      "rexLegendaryWins": 3
+    },
+    {
+      "species": "tyrannosaurus",
+      "name": "Tyrannosaurus rex",
+      "unlockDNA": 120,
+      "baselineDeaths": 0,
+      "baselineRuns": 5,
+      "meanBosses": 1.8,
+      "meanFood": 39.2,
+      "rexBaselineWins": 3,
+      "rexBaselineSeconds": 18.38,
+      "rexTradeoffWins": 3,
+      "rexTradeoffSeconds": 9,
+      "rexLegendaryWins": 3
+    },
+    {
+      "species": "velociraptor",
+      "name": "Velociraptor",
+      "unlockDNA": 0,
+      "baselineDeaths": 0,
+      "baselineRuns": 5,
+      "meanBosses": 1.8,
+      "meanFood": 46.6,
+      "rexBaselineWins": 0,
+      "rexBaselineSeconds": 30.88,
+      "rexTradeoffWins": 3,
+      "rexTradeoffSeconds": 13.76,
+      "rexLegendaryWins": 3
+    },
+    {
+      "species": "deinonychus",
+      "name": "Deinonychus",
+      "unlockDNA": 0,
+      "baselineDeaths": 0,
+      "baselineRuns": 5,
+      "meanBosses": 2,
+      "meanFood": 47.2,
+      "rexBaselineWins": 3,
+      "rexBaselineSeconds": 33.78,
+      "rexTradeoffWins": 3,
+      "rexTradeoffSeconds": 14.770000000000001,
+      "rexLegendaryWins": 3
+    }
+  ],
+  "normalOutcomes": {
+    "timeout": 631,
+    "death": 249
+  },
+  "limits": [
+    "Eight representative build families, not all theoretical mutation combinations.",
+    "Granted initial mutations are research stress scenarios, not legal purchased starting mutations. DNA upgrade and species costs are recorded separately.",
+    "Bot class expertise differs: starter flank strategy is supported, other species use a generic policy; human skill and hit-and-run can change outcomes.",
+    "Five map seeds per normal scenario; paired comparisons share seeds.",
+    "Isolated boss fixtures have fixed starts and deterministic attack cycles; repeated seed timings are not independent evidence of a human win rate. Wilson intervals are descriptive scenario counts only.",
+    "No normal full-campaign victory within150sec; timeouts are not wins.",
+    "Duel fixture strips obstacles, cover, forage/fish and reinforcements; it is not the normal eight-level campaign."
+  ]
+}

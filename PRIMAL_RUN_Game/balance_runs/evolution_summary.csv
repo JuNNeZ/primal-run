@@ -1,0 +1,12 @@
+species,name,unlockDNA,baselineDeaths,baselineRuns,meanBosses,meanFood,rexBaselineWins,rexBaselineSeconds,rexTradeoffWins,rexTradeoffSeconds,rexLegendaryWins
+compy,Compy,0,0,5,1,26.4,0,19.57,3,16.88,3
+utahraptor,Utahraptor,25,1,5,2,49.4,0,28.7,3,13.12,3
+carnotaurus,Carnotaurus,55,0,5,2,58.4,3,24.89,3,9.49,3
+ankylosaurus,Ankylosaurus,75,0,5,1.8,44,3,31.5,3,13.88,3
+triceratops,Triceratops,90,0,5,1.4,37.6,3,26.74,3,10.74,3
+pachycephalosaurus,Pachycephalosaurus,35,0,5,1.8,38,0,29.34,3,13.6,3
+gallimimus,Gallimimus,20,3,5,1,23.2,0,19.5,0,9.52,0
+baryonyx,Baryonyx,65,0,5,3,89.2,3,27.62,3,10.11,3
+tyrannosaurus,Tyrannosaurus rex,120,0,5,1.8,39.2,3,18.38,3,9,3
+velociraptor,Velociraptor,0,0,5,1.8,46.6,0,30.88,3,13.76,3
+deinonychus,Deinonychus,0,0,5,2,47.2,3,33.78,3,14.770000000000001,3

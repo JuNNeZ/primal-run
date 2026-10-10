@@ -18,3 +18,5 @@ Inspect revised source sheets, native exports on light/dark backgrounds and the 
 Run the corresponding exporter and validator, then build:game and relevant browser animation tests in a temporary copy.
 
 Respect the named target family: corpse/skeleton corrections must not redraw living frames. For a side-only change, preserve S/N byte-for-byte via directional source overrides. Carnotaurus corpse revision2 is an E/W cranial-horn correction; previous S/N remain active. Reject and retain whole sheets with wrong-facing rows before exporting. A native technical PASS is not an anatomy approval.
+
+Biped readability gate: two rear hindfeet at pelvis/tailbase, much shorter forearms at chest; featherarms must not look like third/fourth weight-bearing feet. Four legs are correct for Triceratops/Anky/Deinosuchus. Deinonychus has cream/brown mantle, dark dorsal stripe and small fan-tipped tail; Utah stays larger teal/striped. Check hips and projected body volume in every direction; do not compensate for bad anatomy with arbitrary runtime zoom. Technical PASS never erases remaining generated proportion/marking defects.

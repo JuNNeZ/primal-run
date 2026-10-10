@@ -1,16 +1,16 @@
 {
   "result": "PASS",
   "copied_assets": 104,
-  "new_combat_assets": 1716,
+  "new_combat_assets": 1856,
   "byte_identical_to_kit": true,
   "errors": [],
   "production_approved": false,
   "scope": "Integration preserves source pixels, manifest origins and prototype status. Not a visual or animation approval.",
   "source_sha256": {
-    "src/core.js": "e06fe7e292490fd6abb534e7be7ce705fa10f7bc224af4019a5c347db14b35ef",
-    "src/assets.js": "02a6a1fe5b1415af5c697efb9a1551f235dd29f2385ecc61437b18b99143709b",
-    "src/audio.js": "1b434e95d7062acfedc2e736f105d559b409f2fa82ca7fe65140abd008d6fc69",
-    "src/app.js": "9f019436d9b51488e4c6164a6964a2640a7ee0c8a259204c3047d770285a89de",
+    "src/core.js": "2219e2c7829120b45d9d4704c4cf9b28b1277674107663e35f297a82ed450915",
+    "src/assets.js": "dd80eba6a6806f726717ee53e9d7aed5f6ebb61607bd796610c9402be805f389",
+    "src/audio.js": "6475335a5f16580ffc641896525aa22c488371b0ca5f04a83a1f7afe5234c1c1",
+    "src/app.js": "f7c6a8fdfb6e13161b9452ac3c85e4e3c9b86a530b80645b510ae0409cf92451",
     "style.css": "8cba04df2673b1fd112be4cd1e8d6ae2241f6a7fc4ed0b6e7ef734cb4e0a73df"
   }
 }

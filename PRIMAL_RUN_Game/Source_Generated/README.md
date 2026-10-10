@@ -1,3 +1,1 @@
 Raw imagegen reference sheets. Import individual PNGs from assets/. Enemy sheet has rejected profile/wrong-facing samples; only reviewed South cells were exported. Action drawings are pose studies, not approved animations. Atlas layouts can be uneven; source_crop in manifest records reviewed extraction boundaries.
-
-Journey/Velociraptor revision: see journey_preservation.json for7 new preserved sheets and the85 previously archived sources. Active player_full/sources.json records native sampling, alpha, origins and Baryonyx South180 exception. Veloci N original/revision1 are rejected direction studies; revision2 is active. Carnotaurus corpse revision2 applies only to E/W; direction_sources retains previous S/N. Originals are never overwritten.

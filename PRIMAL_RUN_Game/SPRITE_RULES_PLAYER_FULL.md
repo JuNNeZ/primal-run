@@ -47,3 +47,12 @@ T. rex N source revisions remain preserved under enemy_full.
 Current extension: Velociraptor adds120 frames, total960/player_full and192sequences,10playables/1200frames with shared enemy_full. Existing South master and Utah cardinal references define its identity. Compy extra native integer4, Veloci integer2, before alpha/palette/origin-preserving render. Source N revision2 uses tight cells and reviewed alpha248 to reject a soft halo; all other active atlases retain192.
 
 Explicit user-authorized exception: Baryonyx North is exactly its South frames rotated180 with lossless pixel transpose. Its source/origin/palette remain declared, lighting also rotates. No general mirroring/rotation permission for other species. Validate exact South->North pixel equality. All remain prototype_static, not approved.
+
+Deinonychus starter extension:120frames, player_full1080/216sequences,
+11playables/1320runtimeframes. Separate S/E/W and correctedN atlases reference
+one feathered master. Source stride4 samples native pixels directly onto144canvas
+at72,72; this is the recorded source plan for this family addition, no runtime
+upscale. Rear hind thighs attach near tailbase; chest featherarms are much shorter
+and cannot be presented as weight-bearing feet. Cream tail fan/dorsal stripe stay
+consistent. Initial South and wrong-facing North sheets are preserved/rejected.
+Minor generated volume/feather/foot registration variation still needs polish.

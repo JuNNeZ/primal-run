@@ -43,3 +43,10 @@ with visible toes must not look like a second tail. Inspect native extraction
 for disconnected neighbouring tail fragments as well as drawn anatomy.
 
 2026-10-09 user exception: Baryonyx living North now losslessly rotates South180; lighting rotates too. Compy has extra integer4 body sampling and radius4; Velociraptor integer2 and radius12. Raw sources and rejected Veloci N directions are retained.
+
+Deinonychus: two rear hindlegs at pelvis near tailbase, two very short feather
+forearms at chest, one tapering tail with compact fan. Brown/cream mantle, dark
+dorsal stripe and cream tail band; no horns. About3m fossil length, contrasted
+with Velociraptor~2m and Utahraptor~5–7m. Runtime pixels are a readability budget,
+not a scientifically calibrated metre scale. Starter radius14, source stride4,
+no runtime zoom. New sprites must distinguish featherarms from extra feet.

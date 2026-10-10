@@ -1,0 +1,63 @@
+{
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "active_species": "deinonychus",
+  "preserve_old_species": true,
+  "source_files": [
+    {
+      "file": "Source_Generated/player_full/deinonychus_S_rejected.png",
+      "sha256": "54a609afe9692173a8d50a9ce89b3d78212f477939cc4ba960d1574b8f2b57b9",
+      "status": "rejected"
+    },
+    {
+      "file": "Source_Generated/player_full/deinonychus_S_rejected_revision1.png",
+      "sha256": "e6b36f99d76951c3af279b456030c9aabc438ca726a1d147308d096c075342f7",
+      "status": "rejected"
+    },
+    {
+      "file": "Source_Generated/player_full/deinonychus_master.png",
+      "sha256": "2d23e3049ac84cc8dda0910a567e62184ba53cd8a896e41d1a6e7cd23a4cdf27",
+      "status": "prototype_reference"
+    },
+    {
+      "file": "Source_Generated/player_full/deinonychus_S.png",
+      "sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
+      "status": "active_prototype"
+    },
+    {
+      "file": "Source_Generated/player_full/deinonychus_N_rejected.png",
+      "sha256": "bdf863a116a8536745559fdd847ae2ce82e9a5df5a9adfcbf894fdfb65a257a3",
+      "status": "rejected"
+    },
+    {
+      "file": "Source_Generated/player_full/deinonychus_N_revision1.png",
+      "sha256": "2b3c299cf2655bae89574f4ba1539638ddbe92f4e83f27a5a2ce26807a83de70",
+      "status": "active_prototype"
+    },
+    {
+      "file": "Source_Generated/player_full/deinonychus_E.png",
+      "sha256": "5a6f7daee8fe6386111067c067559adbc87f0ae64d3199bb4629531c898ed6f2",
+      "status": "active_prototype"
+    },
+    {
+      "file": "Source_Generated/player_full/deinonychus_W.png",
+      "sha256": "184932f1d2a5eeb14923ac3c1a8c3a2da0e90fd5b50e1f1a79853c458e296ccf",
+      "status": "active_prototype"
+    }
+  ],
+  "rejections": [
+    "Initial S sheets: unclear rear pelvis vs chest limbs.",
+    "Initial N: head/tail reversal in walk/run and last attack poses."
+  ],
+  "review_notes": [
+    "Master places hind thighs near tail base and compact featherarms at chest.",
+    "S/E/W and Nrevision1: separate poses; heads remain correct cardinal directions.",
+    "New feather fan, cream mantle and rounded outline distinguish starter from striped teal Utahraptor.",
+    "Native integer body sampling is declared; no arbitrary upscaling.",
+    "Generated volume/feather/foot alignment variation remains; no production approval.",
+    "Legacy Utah/other living atlases were audited as prototypes, not regenerated or certified flawless."
+  ],
+  "source_sampling": "Deinonychus source stride4, fixed144nativecanvas, hip72,72. No runtime scaling.",
+  "original_sources_preserved": 85
+}
