@@ -61,7 +61,7 @@ function bandPoint(map, p) {
 
 // level: start at this journey level (0-based) via the game's own nextStage(); bossDuel: the boss spawns at once
 // and the run ends when it dies (outcome 'boss_win'). Used by X10 and the B1 before/after comparisons.
-function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null, challenges = [], alone = false }) {
+function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null, challenges = [], alone = false, mutations = 0 }) {
   const S = STYLES[style]; if (!S) throw Error('Unknown style ' + style);
   const R = rng(seed * 7919 + style.length * 104729);
   const g = new C.Game({ random: rng(seed ^ 0xABCDEF) });
@@ -81,7 +81,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
   const m = {
     tFirstMutation: null, tFirstBossSpawn: null, tFirstBossKill: null, bossFights: [], levelTimes: [], tFinalLevel: null,
     epicRewards: 0, mutationPicks: 0, starvedTime: 0, combatTime: 0, staggers: 0, enemyAttacksInterrupted: 0,
-    lowHPTime: 0, eatingTime: 0, idleTime: 0, stuckTime: 0,
+    lowHPTime: 0, eatingTime: 0, idleTime: 0, stuckTime: 0, levelPicks: [], levelPlayerLevel: [],
   };
   let bossSpawnAt = null, levelStart = 0, decision = { x: 0, y: 0 }, nextDecision = 0, wall = 0, lastPos = { x: r.player.x, y: r.player.y }, stuckClock = 0;
   const wanderTarget = { x: r.player.x, y: r.player.y, until: 0 }, route = {};
@@ -210,13 +210,16 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     return steer(wanderTarget.x, wanderTarget.y);
   }
 
+  // mutations: N level-ups chosen with this style's pick policy before the fight (1v1 duels with the expected build).
+  for (let i = 0; i < mutations && g.phase === 'playing'; i++) { r.xp = r.nextXP; g.maybeLevelUp(); while (g.phase === 'mutation') pickMutation(); }
+  m.mutationPicks = 0; m.tFirstMutation = null; m.epicRewards = 0;
   let safety = 0;
   while (wall < seconds && g.phase !== 'result') {
     if (++safety > seconds / dt * 4) break;
     if (g.phase === 'mutation') { pickMutation(); continue; }
     if (g.phase === 'exploration') { g.explore(true); continue; }
     if (g.phase === 'cleared') {
-      m.levelTimes.push(+(r.seconds - levelStart).toFixed(2));
+      m.levelTimes.push(+(r.seconds - levelStart).toFixed(2)); m.levelPicks.push(m.mutationPicks); m.levelPlayerLevel.push(r.level);
       if (!g.nextStage()) break;
       levelStart = r.seconds; if (r.levelIndex === r.campaign.length - 1 && m.tFinalLevel === null) m.tFinalLevel = r.seconds;
       continue;
@@ -266,7 +269,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     seconds: +r.seconds.toFixed(1), levelReached: r.levelIndex + 1, levelsTotal: r.campaign.length, biome: r.stage,
     tFirstMutation: m.tFirstMutation, tFirstBossSpawn: m.tFirstBossSpawn, tFirstBossKill: m.tFirstBossKill,
     bossFightSeconds: m.bossFights, meanBossFight: mean(m.bossFights), bossesKilled: r.bosses,
-    levelTimes: m.levelTimes, tFinalLevel: m.tFinalLevel,
+    levelTimes: m.levelTimes, levelPicks: m.levelPicks, levelPlayerLevel: m.levelPlayerLevel, tFinalLevel: m.tFinalLevel,
     meat: r.totalMeat, dna: r.dna, kills: r.kills, eliteKills: r.eliteKills, playerLevel: r.level,
     mutationPicks: m.mutationPicks, epicRewards: m.epicRewards,
     attacks: st.attacks, landedAttacks: st.landedAttacks, accuracyPct: st.attacks ? +(100 * st.landedAttacks / st.attacks).toFixed(1) : 0,
@@ -341,7 +344,7 @@ function applySet(C, set) {
 }
 
 // ---------------------------------------------------------------- worker
-if (!isMainThread) {
+if (!isMainThread && require.main === module) {
   const C = require(CORE_PATH);
   applySet(C, workerData.set);
   for (const flag of workerData.off || []) if (C.FEATURES && flag in C.FEATURES) C.FEATURES[flag] = false; // --off: baseline with Part B flags off

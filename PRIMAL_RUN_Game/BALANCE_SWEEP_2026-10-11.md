@@ -106,3 +106,48 @@ I pakken er Ankylosaurus ikke længere i top. Den ligger midt blandt de tunge ar
 ## Data
 
 Rådata pr. eksperiment (REPORT.md + summary_compact.json) ligger i `balance/data` i projektmappen. Simulatoren har fået to nye flag: `--set '<json>'` til at justere tal uden at ændre koden og `--level N` til at starte på en bestemt bane.
+## Opfølgning: 1v1-bossdueller og DNA-lab-upgrades
+
+### Bossdueller (1v1)
+
+Hver art mødte hver boss alene, med det antal mutationer man typisk har ved banens start: 0, 2, 4, 5, 7, 9, 11 og 13 (målt i almindelige runs). 12 arter × 3 stile (optimerer, gennemsnitlig, casual) × 8 seeds giver 288 dueller pr. boss. Sejr i %:
+
+| Boss | Uden upgrades | Max upgrades | Optimerer | Gennemsnitlig | Casual |
+|---|---:|---:|---:|---:|---:|
+| 1 Palle | **93** | 97 | 100 | 93 | 85 |
+| 2 Carl | 66 | 71 | 93 | 65 | 42 |
+| 3 Benny | 77 | 88 | 97 | 75 | 58 |
+| 4 Doris | 49 | 58 | 95 | 36 | 17 |
+| 5 Asta | 58 | 67 | 91 | 57 | 25 |
+| 6 **Tina** | **22** | 26 | 57 | **8** | **1** |
+| 7 Karl | 48 | 57 | 70 | 45 | 28 |
+| 8 Ragnar | 59 | 67 | 79 | 54 | 43 |
+
+(Stil-kolonnerne er uden upgrades.)
+
+- **I 1v1 er Carl ikke den sværeste.** Tina (bane 6) er klart sværest, og Doris og Karl er sværere end Carl. Carl er dødelig i hele runs, fordi man møder ham tidligt med kun 2 mutationer, ofte efter at have mistet liv til almindelige carnotaurer på vejen.
+- **Kurven er ujævn:** Benny (bane 3) er nemmere end Carl, og slutbossen Ragnar er nemmere end Tina og Karl.
+- **Palle er meget nem 1v1** (93 %). Han dræber kun, når man møder ham med lidt liv.
+
+### DNA-lab-upgrades betyder lidt
+
+Max upgrades (alle 5 på rang 5) giver kun +10 % liv og +10 % skade. Effekten er derfor lille:
+
+| | Uden upgrades | Max upgrades |
+|---|---:|---:|
+| Bane (gns.), hele runs | 2,51 | 2,85 |
+| Forbi bane 2 | 117/300 | 151/300 |
+| Bossduel-sejre | 59 % | 66 % |
+
+**Svar på dit spørgsmål:** Lige nu kan man ikke forvente, at et par runs med upgrades flytter én forbi en boss. Upgrades giver kun ca. +7 procentpoint i dueller. Hvis tanken er "man skal grinde lidt for at komme videre", skal upgrades være stærkere (fx +4-5 % pr. rang i stedet for +2 %), frem for at bosserne gøres nemmere. Palle og Benny kan så godt gøres lidt sværere.
+
+### Ankylosaurus med max upgrades
+
+| Bue | Bane (gns.) |
+|---|---:|
+| 360° | 3,92 |
+| 300° | 3,58 |
+| 270° + rækkevidde 90 | 3,66 |
+| 270° (rækkevidde 80) | 3,40 |
+
+De tunge arter ligger med max upgrades på: Triceratops 3,20, Deinosuchus 3,08, Tyrannosaurus 3,64 og Carnotaurus 2,56. Med upgrades ligger 270° + 90 på niveau med T-rex (top). Ren 270° ligger mellem T-rex og Triceratops.
