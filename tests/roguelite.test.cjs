@@ -81,3 +81,20 @@ test('boss strength rises through the journey and lab upgrades scale with UPGRAD
  const g=make('compy');g.save.upgrades.health=5;g.start({seed:9});assert.equal(g.run.maxHealth,Math.round(C.PLAYER_SPECIES.compy.hp*(1+5*C.UPGRADE_STEP.health))||g.run.maxHealth);
  assert.match(C.UPGRADES[0].text,new RegExp('\\+'+Math.round(100*C.UPGRADE_STEP.health)+' %'));
 });
+test('simulation prototypes stay off by default: 4 mutation choices, second wind, alternative abilities',()=>{
+ assert.equal(C.MUTATION_CHOICES.count,3);assert.equal(C.FEATURES.secondWind,false);assert.ok(Object.values(C.ALT_ABILITIES).every(v=>v===false));
+ const pin=()=>{const v=make('velociraptor'),r=v.run,t=v.spawn('parasaurolophus',{x:r.player.x,y:r.player.y+25});r.stamina=100;v.step(1/30,{pounce:true,x:0,y:1});return t;};
+ assert.ok(!(pin().stagger>0),'no pin without the flag');
+ const features={...C.FEATURES},alt={...C.ALT_ABILITIES};
+ try{
+  C.MUTATION_CHOICES.count=4;const g=make('compy');g.run.xp=g.run.nextXP;g.maybeLevelUp();assert.equal(g.run.choices.length,4);
+  C.FEATURES.secondWind=true;const s=make('compy');s.run.invulnerable=0;s.damage(9999);assert.equal(s.phase,'playing');assert.equal(s.run.health,1);
+  s.run.invulnerable=0;s.damage(9999);assert.notEqual(s.phase,'playing','only once per run');
+  Object.assign(C.ALT_ABILITIES,{gallimimus:true,pachycephalosaurus:true,velociraptor:true});
+  assert.ok(pin().stagger>0,'Velociraptor pin staggers');
+  const d=make('gallimimus'),dr=d.run,prey=d.spawn('carnotaurus',{x:dr.player.x+80,y:dr.player.y}),boss=d.spawn('carnotaurus',{x:dr.player.x-100,y:dr.player.y},true);
+  dr.stamina=100;d.step(1/30,{pounce:true,x:0,y:1});assert.ok(prey.stagger>0,'dust cloud staggers animals');assert.ok(boss.breakMeter>0||boss.mode==='broken','and fills the boss break meter');
+  const p=make('pachycephalosaurus'),pr=p.run;p.spawn('parasaurolophus',{x:pr.player.x,y:pr.player.y+30});pr.stamina=100;const cost=C.abilityCost(pr);
+  p.step(1/30,{pounce:true,x:0,y:1});assert.equal(pr.abilityChained,true);assert.ok(pr.pounceCooldown<=.35);assert.ok(Math.abs(pr.stamina-(100-cost/2))<1e-6,'half the stamina back');
+ }finally{Object.assign(C.FEATURES,features);Object.assign(C.ALT_ABILITIES,alt);C.MUTATION_CHOICES.count=3;}
+});

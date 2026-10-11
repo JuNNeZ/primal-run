@@ -131,7 +131,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
   }
 
   function decide() {
-    const p = r.player, hpFrac = r.health / r.maxHealth, cost = C.abilityCost(r);
+    const p = r.player, hpFrac = r.health / r.maxHealth, cost = C.abilityCost(r), alt = C.ALT_ABILITIES || {};
     const hostile = r.enemies.filter(e => e.damage && e.alert && dist(e) < 260);
     const warning = nearest(r.enemies.filter(e => ['windup', 'charge', 'slam', 'bite'].includes(e.mode) && dist(e) < (e.attackRadius || 60) + 80));
     // Dodge telegraphed attacks like a player would: wait for the late, locked part of a boss
@@ -208,7 +208,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
       const inRange = dist(target) < config.range + target.radius - 10;
       let pounce = false;
       if (S.ability === 'spam') pounce = r.stamina >= cost;
-      else if (S.ability === 'smart') pounce = r.stamina >= cost && (inRange ? ['ankylosaurus', 'tyrannosaurus', 'deinosuchus'].includes(species) && hostile.length > 0 : dist(target) < 170 && r.stamina > 60);
+      else if (S.ability === 'smart') pounce = r.stamina >= cost && (inRange ? (['ankylosaurus', 'tyrannosaurus', 'deinosuchus'].includes(species) || alt.pachycephalosaurus && species === 'pachycephalosaurus' || alt.gallimimus && species === 'gallimimus' && hostile.length > 1) && hostile.length > 0 : dist(target) < 170 && r.stamina > 60);
       else if (S.ability === 'sometimes') pounce = r.stamina >= cost && R() < 0.15;
       // Kiter: step back out of reach while the attack recovers, then dart in again.
       if (S.kite && r.attackCooldown > .12 && !r.attack && target.damage && dist(target) < config.range + target.radius + 30) {
@@ -379,7 +379,7 @@ function args() {
 async function main() {
   const { help, quick, get } = args();
   if (help) {
-    console.log(`PRIMAL RUN play-style simulator\n\n  --runs N         seeds per species×style (default 20, --quick: 3)\n  --seconds N      simulated seconds per run (default 1500)\n  --species a,b    default: all playable\n  --styles a,b     ${Object.keys(STYLES).join(', ')} (default: all)\n  --threads N      default: CPU cores - 1\n  --seed N         first seed (default 1000)\n  --out DIR        default balance_runs/playstyle_<date>\n  --upgrades JSON  DNA start upgrades, e.g. '{"health":2}'\n  --quick          small smoke test`);
+    console.log(`PRIMAL RUN play-style simulator\n\n  --runs N         seeds per species×style (default 20, --quick: 3)\n  --seconds N      simulated seconds per run (default 1500)\n  --species a,b    default: all playable\n  --styles a,b     ${Object.keys(STYLES).join(', ')} (default: all)\n  --threads N      default: CPU cores - 1\n  --seed N         first seed (default 1000)\n  --out DIR        default balance_runs/playstyle_<date>\n  --upgrades JSON  DNA start upgrades, e.g. '{"health":2}'\n  --set JSON       deep-merge into core exports, e.g. '{"BOSS_TUNING":{"hp":[1,1,1,1,1,1,1,1]}}' (--set-file FILE reads it from a file)\n  --level N        start on level N (1-8)\n  --start-mutations N  N mutation picks before the run starts\n  --quick          small smoke test`);
     return;
   }
   const C = require(CORE_PATH);
@@ -395,7 +395,7 @@ async function main() {
   const out = path.resolve(get('out', path.join(__dirname, '../PRIMAL_RUN_Game/balance_runs/playstyle_' + date)));
   fs.mkdirSync(out, { recursive: true });
   const jobs = [];
-  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades, challenges, level: Number(get('level', 1)) - 1 });
+  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades, challenges, level: Number(get('level', 1)) - 1, mutations: Number(get('start-mutations', 0)) });
   // interleave so every worker gets a mix of slow and fast species
   const buckets = Array.from({ length: threads }, () => []); jobs.forEach((j, i) => buckets[i % threads].push(j));
   const t0 = Date.now(); let done = 0;
