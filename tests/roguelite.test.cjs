@@ -3,9 +3,9 @@ const {test}=require('node:test'), assert=require('node:assert/strict'), C=requi
 function make(species='compy'){const g=new C.Game({random:()=>.5});g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:123});g.run.enemies=[];g.run.spawnTimer=999;return g;}
 test('fresh saves start as Deinonychus; legacy DNA and upgrades survive unlock migration',()=>{
  const values=new Map([[C.SAVE_KEY,JSON.stringify({dna:90,name:'Jonas',upgrades:{health:2},settings:{music:.2}})]]), storage={getItem:k=>values.get(k),setItem:(k,v)=>values.set(k,v)};
- const g=new C.Game({storage});assert.equal(g.save.selectedSpecies,'deinonychus');g.start({seed:7});assert.ok(Math.abs(g.run.maxHealth-104)<1e-8);assert.equal(g.run.player.radius,14);assert.equal(g.unlockSpecies('utahraptor'),false);
+ const g=new C.Game({storage});assert.equal(g.save.selectedSpecies,'deinonychus');g.start({seed:7});assert.ok(Math.abs(g.run.maxHealth-100*(1+2*C.UPGRADE_STEP.health))<1e-8);assert.equal(g.run.player.radius,14);assert.equal(g.unlockSpecies('utahraptor'),false);
  g.phase='species';assert.equal(g.unlockSpecies('utahraptor'),true);assert.equal(g.save.dna,30);assert.equal(g.unlockSpecies('utahraptor'),false);assert.equal(g.unlockSpecies('__proto__'),false);g.selectSpecies('utahraptor');
- const reloaded=new C.Game({storage});assert.equal(reloaded.save.selectedSpecies,'utahraptor');reloaded.start();assert.equal(reloaded.run.maxHealth,104);assert.equal(reloaded.save.dna,30);
+ const reloaded=new C.Game({storage});assert.equal(reloaded.save.selectedSpecies,'utahraptor');reloaded.start();assert.ok(Math.abs(reloaded.run.maxHealth-100*(1+2*C.UPGRADE_STEP.health))<1e-8);assert.equal(reloaded.save.dna,30);
  assert.equal(C.sanitizeSave({selectedSpecies:'unknown_dinosaur',unlockedSpecies:['unknown_dinosaur']}).selectedSpecies,'deinonychus');
 });
 test('random wilderness is repeatable by seed, varies between seeds and keeps bounded safe habitats',()=>{
@@ -64,4 +64,20 @@ test('an Ankylosaurus tail slam misses a player standing in front of its head',(
   const health=r.health;r.invulnerable=0;g.step(1/30,{});
   assert.equal(r.health<health,hurt,label);
  }
+});
+test('mutation rerolls: off by default, earned per boss, give a fresh offer; species bias shows an own-species choice',()=>{
+ const g=make('compy'),r=g.run;r.xp=r.nextXP;g.maybeLevelUp();assert.equal(g.phase,'mutation');assert.equal(g.rerollsLeft(),0);assert.equal(g.reroll(),false);
+ const saved={...C.FEATURES};
+ try{
+  C.FEATURES.mutationRerolls=true;const before=[...r.choices];r.rerolls=1;assert.equal(g.reroll(),true);assert.equal(g.rerollsLeft(),0);
+  assert.ok(r.choices.every(id=>!before.includes(id)),'fresh choices');assert.equal(g.reroll(),false);
+  const b=g.spawn('pachycephalosaurus',{x:900,y:900},true);g.kill(b);assert.equal(g.rerollsLeft(),1,'+1 reroll per boss');
+  C.FEATURES.speciesMutationBias=true;const h=make('triceratops');h.run.xp=h.run.nextXP;h.maybeLevelUp();
+  assert.ok(h.run.choices.some(id=>C.MUTATIONS.find(m=>m.id===id).species==='triceratops'),'own-species choice until one is taken');
+ }finally{Object.assign(C.FEATURES,saved);}
+});
+test('boss strength rises through the journey and lab upgrades scale with UPGRADE_STEP',()=>{
+ assert.equal(C.BOSS_TUNING.hp.length,8);assert.equal(C.BOSS_TUNING.damage.length,8);
+ const g=make('compy');g.save.upgrades.health=5;g.start({seed:9});assert.equal(g.run.maxHealth,Math.round(C.PLAYER_SPECIES.compy.hp*(1+5*C.UPGRADE_STEP.health))||g.run.maxHealth);
+ assert.match(C.UPGRADES[0].text,new RegExp('\\+'+Math.round(100*C.UPGRADE_STEP.health)+' %'));
 });

@@ -31,6 +31,7 @@ const C = require(CORE), set = JSON.parse(get('set', '{}')); merge(C, set);
 const threads = Math.max(1, Number(get('threads', Math.max(1, os.cpus().length - 1))));
 const species = get('species', 'all') === 'all' ? Object.keys(C.PLAYER_SPECIES) : get('species').split(',');
 const styles = get('styles', 'optimizer,average,casual').split(','), seeds = Number(get('seeds', 10));
+const levels = get('levels', null) ? get('levels').split(',').map(n => Number(n) - 1) : C.LEVELS.map((_, L) => L); // 1-based on the command line
 const upgrades = JSON.parse(get('upgrades', '{}')); // DNA-lab ranks, e.g. {"health":5,"damage":5,"regen":5,"digestion":5,"magnet":5}
 const median = arr => { const s = arr.filter(Number.isFinite).sort((x, y) => x - y); return s.length ? s[Math.floor(s.length / 2)] : null; };
 
@@ -59,12 +60,12 @@ function pool(jobs) {
   }
   console.error('Mutations at level start: ' + picks.join(','));
   const jobs = [];
-  for (let L = 0; L < C.LEVELS.length; L++) for (const sp of species) for (const st of styles) for (let i = 0; i < seeds; i++)
+  for (const L of levels) for (const sp of species) for (const st of styles) for (let i = 0; i < seeds; i++)
     jobs.push({ species: sp, style: st, seed: 4000 + i, seconds: 240, dt: 1 / 30, level: L, bossDuel: true, alone: true, mutations: picks[L], upgrades });
   console.error(`Duels: ${jobs.length}`);
   const rows = await pool(jobs), ok = rows.filter(r => r.outcome !== 'error');
   const cell = list => ({ n: list.length, winPct: Math.round(100 * list.filter(r => r.outcome === 'boss_win').length / Math.max(1, list.length)), deathPct: Math.round(100 * list.filter(r => r.outcome === 'death').length / Math.max(1, list.length)), bossHpLostPct: Math.round(list.reduce((s, r) => s + (r.bossHpLostPct || 0), 0) / Math.max(1, list.length)) });
-  const byBoss = C.LEVELS.map((lv, L) => ({ level: L + 1, boss: lv.bossName, mutations: picks[L], ...cell(ok.filter(r => r.level === L)) }));
+  const byBoss = C.LEVELS.map((lv, L) => ({ L, lv })).filter(x => levels.includes(x.L)).map(({ lv, L }) => ({ level: L + 1, boss: lv.bossName, mutations: picks[L], ...cell(ok.filter(r => r.level === L)) }));
   const matrix = species.map(sp => ({ species: sp, ...Object.fromEntries(C.LEVELS.map((_, L) => ['L' + (L + 1), cell(ok.filter(r => r.species === sp && r.level === L)).winPct])), all: cell(ok.filter(r => r.species === sp)).winPct }));
   const byStyle = styles.map(st => ({ style: st, ...Object.fromEntries(C.LEVELS.map((_, L) => ['L' + (L + 1), cell(ok.filter(r => r.style === st && r.level === L)).winPct])) }));
   const report = { date: new Date().toISOString(), set, upgrades, seeds, styles, picks, survey, errors: rows.length - ok.length, byBoss, matrix, byStyle };

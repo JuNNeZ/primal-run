@@ -155,7 +155,7 @@
           const m = C.MUTATIONS.find(m => m.id === id);
           const rarity = C.MUTATION_RARITIES[m.rarity];
           return `<button data-mutation="${id}" style="--rarity:${rarity.color}" class="rarity-card"><strong class="rarity-name">${({common:'•',uncommon:'◆',rare:'✦',epic:'★',legendary:'♛'})[m.rarity]} ${rarity.name.toUpperCase()}</strong>${imageTag('assets/ui/' + m.icon + '.png')}<small>VALG ${i + 1} · RANG ${r.mutations[id]} → ${r.mutations[id] + 1} / ${m.max}</small><h2>${m.name}</h2><small>${m.species ? C.PLAYER_SPECIES[m.species].name.toUpperCase() : "FÆLLES MUTATION"}</small><p>${m.text}</p>${r.mutations[id]>0?'<small>BYG VIDERE · '+Math.round(Math.min(.4,.2*r.mutations[id])*100)+' % VALGVÆGT</small>':''}</button>`;
-        }).join('')}</div></section>`;
+        }).join('')}</div>${game.rerollsLeft&&game.rerollsLeft()>0?`<div class="actions"><button data-reroll="1">NYE VALG · R · ${game.rerollsLeft()} TILBAGE</button></div>`:''}</section>`;
       } else if (phase === 'exploration') {
         screen.innerHTML = `<section class="panel compact">${heading('VALGFRI RISIKO · SPILLET ER PAUSET', 'En bevogtet rede', 'Tag sjælden føde og væk den nærliggende elitevogter, eller lad reden være.')}<div class="actions"><button data-explore="leave">LAD DEN VÆRE</button><button class="primary" data-explore="take">TAG FØDEN · +${8 + r.stage * 2}</button></div></section>`;
       } else if (phase === 'cleared') {
@@ -974,6 +974,7 @@
       if (target.dataset.skin) { game.setSkin(target.dataset.skin); renderScreen(true); return; }
       if (target.dataset.species) { const id = target.dataset.species; if (!game.save.unlockedSpecies.includes(id)) game.unlockSpecies(id); game.selectSpecies(id); renderScreen(true); return; }
       if (target.dataset.explore) { game.explore(target.dataset.explore === 'take'); keys.clear(); accumulator = 0; renderScreen(); return; }
+      if (target.dataset.reroll) { game.reroll(); renderScreen(true); return; }
       if (target.dataset.mutation) { game.choose(target.dataset.mutation); keys.clear(); accumulator = 0; last = 0; renderScreen(true); return; }
       const binding=e.target.closest('[data-binding]');if(binding){bindingAction=binding.dataset.binding;binding.textContent='Tryk en ny tast · Esc annullerer';return;}
       if(target.dataset.binding){bindingAction=target.dataset.binding;target.textContent='Tryk en ny tast · Esc annullerer';return;}
@@ -1022,6 +1023,7 @@
         if (game.phase === 'playing') game.pause(); else if (game.phase === 'paused') game.resume(); else if (game.phase === 'build')game.phase='paused';else if (game.phase === 'settings') game.phase = returnPhase; else if (['intro', 'help', 'shop', 'scores', 'species','guide','daily','challenges'].includes(game.phase)) game.phase = 'menu';
         renderScreen(); return;
       }
+      if (game.phase === 'mutation' && e.code === 'KeyR' && !e.repeat && game.reroll()) { renderScreen(true); return; }
       if (game.phase === 'mutation' && /^Digit[123]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); keys.clear(); accumulator = 0; last = 0; renderScreen(true); return; }
       if(e.code==='Space'){e.preventDefault();if(game.phase!=='playing'){keys.delete('Space');return;}}
       if (game.phase !== 'playing') return;

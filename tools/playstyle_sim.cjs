@@ -37,6 +37,9 @@ const STYLES = {
   brawler:   { label: 'Slagsbror (angriber alt)', reaction: 0.12, dodge: 0.15, aimError: 10, ability: 'spam', retreatHP: 0, explore: false, picks: 'offence', foodGreed: 0.2, sneak: false , tailTurn: 0.5 },
   explorer:  { label: 'Udforsker/samler',       reaction: 0.20, dodge: 0.6, aimError: 15, ability: 'smart', retreatHP: 0.4, explore: true, picks: 'defence', foodGreed: 0.8, sneak: true, wanderBias: 1 , tailTurn: 0.7 },
   exploiter: { label: 'Terræn-udnytter (B1)', reaction: 0.05, dodge: 0.95, aimError: 0, ability: 'smart', retreatHP: 0.35, explore: false, picks: 'best', foodGreed: 0.6, sneak: false, exploit: true , tailTurn: 1 },
+  kiter:     { label: 'Hit-and-run (kiter)',    reaction: 0.10, dodge: 0.85, aimError: 8, ability: 'smart', retreatHP: 0.35, explore: false, picks: 'mixed', foodGreed: 0.5, sneak: false, kite: true, tailTurn: .9 },
+  turtle:    { label: 'Forsigtig (skildpadde)', reaction: 0.15, dodge: 0.8, aimError: 12, ability: 'smart', retreatHP: 0.6, explore: true, picks: 'defence', foodGreed: 0.9, sneak: true, tailTurn: .8 },
+  rusher:    { label: 'Speedrunner (haster)',   reaction: 0.10, dodge: 0.5, aimError: 10, ability: 'spam', retreatHP: 0.15, explore: false, picks: 'offence', foodGreed: 0.1, sneak: false, tailTurn: .6 },
   newbie:    { label: 'Ny spiller',             reaction: 0.45, dodge: 0.15, aimError: 40, ability: 'never', retreatHP: 0.2, explore: false, picks: 'random', foodGreed: 0.3, sneak: false , tailTurn: 0.1 },
 };
 
@@ -105,6 +108,12 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
   }
 
   function pickMutation() {
+    // Rerolls (FEATURES.mutationRerolls): planners reroll an offer with nothing they want; casual players and newbies never do.
+    if (g.reroll && g.rerollsLeft && g.rerollsLeft() > 0 && !['casual', 'newbie'].includes(style)) {
+      const offer = r.choices.map(id => C.MUTATIONS.find(x => x.id === id)), good = { rare: 1, epic: 1, legendary: 1 };
+      const wanted = offer.some(m => m.species === species || good[m.rarity] || (S.picks === 'offence' ? OFFENCE : S.picks === 'defence' ? DEFENCE : OFFENCE.concat(DEFENCE)).includes(m.id));
+      if (!wanted) g.reroll();
+    }
     const picks = r.choices.map(id => C.MUTATIONS.find(x => x.id === id));
     let choice;
     if (S.picks === 'random') choice = picks[Math.floor(R() * picks.length)];
@@ -201,6 +210,11 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
       if (S.ability === 'spam') pounce = r.stamina >= cost;
       else if (S.ability === 'smart') pounce = r.stamina >= cost && (inRange ? ['ankylosaurus', 'tyrannosaurus', 'deinosuchus'].includes(species) && hostile.length > 0 : dist(target) < 170 && r.stamina > 60);
       else if (S.ability === 'sometimes') pounce = r.stamina >= cost && R() < 0.15;
+      // Kiter: step back out of reach while the attack recovers, then dart in again.
+      if (S.kite && r.attackCooldown > .12 && !r.attack && target.damage && dist(target) < config.range + target.radius + 30) {
+        const dx = p.x - target.x, dy = p.y - target.y, n = Math.hypot(dx, dy) || 1;
+        return { ...steer(p.x + dx / n * 120, p.y + dy / n * 120), pounce: false };
+      }
       return { ...steer(aim.x, aim.y), attack: inRange || dist(target) < config.range + 40, pounce };
     }
     // Wander to unexplored ground
@@ -281,7 +295,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     lowHPPct: +(100 * m.lowHPTime / Math.max(r.seconds, 1e-6)).toFixed(1), eatingPct: +(100 * m.eatingTime / Math.max(r.seconds, 1e-6)).toFixed(1),
     stuckSeconds: +m.stuckTime.toFixed(1), plantsEaten: st.plantsEaten, fishCaught: st.fishCaught, exploration: r.exploration,
     allies: (r.partB && r.partB.alliesRecruited) || 0, nightKills: (r.partB && r.partB.nightKills) || 0,
-    distanceKm: +(st.distance / 1000).toFixed(2), mutations: Object.fromEntries(Object.entries(r.mutations).filter(([, v]) => v)),
+    rerolls: st.rerolls || 0, ownSpecies: Object.entries(r.mutations).filter(([id, v]) => v && (C.MUTATIONS.find(x => x.id === id) || {}).species === r.species).reduce((s, [, v]) => s + v, 0), distanceKm: +(st.distance / 1000).toFixed(2), mutations: Object.fromEntries(Object.entries(r.mutations).filter(([, v]) => v)),
   };
 }
 
@@ -369,7 +383,7 @@ async function main() {
     return;
   }
   const C = require(CORE_PATH);
-  const set = JSON.parse(get('set', '{}')); applySet(C, set);
+  const set = get('set-file', null) ? JSON.parse(fs.readFileSync(get('set-file'), 'utf8')) : JSON.parse(get('set', '{}')); applySet(C, set);
   const runs = Number(get('runs', quick ? 3 : 20)), seconds = Number(get('seconds', quick ? 600 : 1500)), firstSeed = Number(get('seed', 1000));
   const species = get('species', 'all') === 'all' ? Object.keys(C.PLAYER_SPECIES) : get('species').split(',');
   const styles = get('styles', 'all') === 'all' ? Object.keys(STYLES) : get('styles').split(',');

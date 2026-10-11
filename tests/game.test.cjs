@@ -156,7 +156,7 @@ test('shop validates balances/ranks and applies permanent upgrades only to a new
   const g = make(); g.save.dna = 100;
   assert.equal(g.purchase('health'), false, 'no mid-run purchases');
   g.phase = 'shop'; assert.equal(g.purchase('health'), true); assert.equal(g.save.dna, 90);
-  assert.equal(g.run.maxHealth, 100); g.start(); assert.equal(g.run.maxHealth, 102);
+  assert.equal(g.run.maxHealth, 100); g.start(); assert.equal(g.run.maxHealth, 100 * (1 + C.UPGRADE_STEP.health));
   g.phase = 'shop'; g.save.upgrades.health = 5; assert.equal(g.purchase('health'), false);
   g.save.dna = 0; assert.equal(g.purchase('damage'), false); assert.equal(g.purchase('__proto__'), false);
 });
@@ -281,6 +281,8 @@ test('successful bites freeze simulation briefly, misses do not, and blood/dust 
   assert.equal(r.particles.length, 0); assert.equal(r.decals.length, 0);
 });
 test('first boss alternates a locked charge and a directional bite with useful recovery openings', () => {
+  const tune = C.BOSS_TUNING.damage; C.BOSS_TUNING.damage = tune.map(() => 1); // pins the untuned 20 damage bite
+  try {
   const g = make(), r = g.run, boss = g.spawn('carnotaurus', { x: 480, y: 220 }, true); boss.cooldown = 0;
   g.enemyStep(boss, .01); assert.equal(boss.mode, 'windup'); assert.equal(boss.pattern, 0); assert.equal(boss.timer, .95);
   const aim = [boss.chargeX, boss.chargeY]; r.player.x = 700;
@@ -299,6 +301,7 @@ test('first boss alternates a locked charge and a directional bite with useful r
   boss.timer = .001; g.enemyStep(boss, .01); assert.equal(boss.mode, 'bite');
   r.invulnerable = 0; g.enemyStep(boss, .11); assert.equal(r.health, 80); r.invulnerable = 0;
   g.enemyStep(boss, .02); assert.equal(r.health, 80, 'one hit per bite');
+  } finally { C.BOSS_TUNING.damage = tune; }
 });
 test('half-health first boss signals phase two once and telegraphs each leg of its double charge', () => {
   const g = make(), r = g.run, boss = g.spawn('carnotaurus', { x: 480, y: 220 }, true);
