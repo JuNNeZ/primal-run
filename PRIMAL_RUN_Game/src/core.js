@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true};
+  const FEATURES={shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,naturalEcology:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -1814,6 +1814,241 @@
     return out;
   };
 
+  // ---- Naturlig økologi (FEATURES.naturalEcology): animals fight and defend themselves against each other, not only
+  // against you. Predators hunt what they can beat (unarmed herbivores; armed ones only when wounded or clearly weaker
+  // and alone; armoured ones only for T. rex or when wounded) with the same windup → bite → recover they use on you.
+  // The bitten animal counters (armed) or flees (unarmed) and nearby armed herd mates join in. Carrion: smell grows
+  // with hunger and corpse size, predators trot (65 %) and skip food they cannot reach before it rots. Large carnivores
+  // only eat when neither you nor a higher-ranked carnivore is within 300 px of the corpse; otherwise they wait and
+  // watch from 400 px. A clearly stronger one (×1.4) drives the others off. Two predators fight to the death only when
+  // the corpse one of them waited for rotted away and the waiting one is starving; otherwise it withdraws. Animals busy
+  // with each other notice you late (120 px) but always answer your own attacks first. Baryonyx wades to a fish
+  // school, waits with its head down and snaps from standing instead of skating around on its species charge.
+  // A 256 px grid, built once per step, keeps neighbour searches local.
+  const NATURE={cell:256,maxHunts:4,huntRange:420,scan:.5,huntTimeout:12,huntCooldown:25,smellBase:500,smellHunger:700,trot:.65,safeRadius:300,waitRadius:400,dominance:1.4,starving:.9,rivalRange:500,fleeAt:.35,yieldTime:6,ban:15,notice:120,fishRange:650,fishHunger:.35,fishWait:1.6,fishStrike:.3,fishEat:1.2,fishGiveUp:15};
+  const bigCarnivore=e=>!!e&&e.hp>0&&e.damage>0&&!herbivorousNPC(e.kind)&&e.kind!=='compy';
+  const npcStrength=e=>Math.max(1,e.hp)*Math.max(1,e.damage);
+  const outranks=(a,b)=>npcStrength(a)>npcStrength(b)||npcStrength(a)===npcStrength(b)&&a.id<b.id;
+  const armoured=kind=>['ankylosaurus','triceratops'].includes(kind);
+  const NPC_FIGHT_MODES=['hunt','windup','bite','recover'];
+  Game.prototype.buildNatureGrid=function(){
+    const grid=new Map();for(const e of this.run.enemies){if(e.hp<=0)continue;const k=Math.floor(e.x/NATURE.cell)+','+Math.floor(e.y/NATURE.cell);let list=grid.get(k);if(!list)grid.set(k,list=[]);list.push(e);}
+    this.natureGrid=grid;
+  };
+  Game.prototype.nearbyAnimals=function(x,y,radius){
+    if(!this.natureStepping||!this.natureGrid)this.buildNatureGrid(); // outside step() (tests, tools) positions may have changed
+    const c=NATURE.cell,out=[];
+    for(let gx=Math.floor((x-radius)/c);gx<=Math.floor((x+radius)/c);gx++)for(let gy=Math.floor((y-radius)/c);gy<=Math.floor((y+radius)/c);gy++)
+      for(const o of this.natureGrid.get(gx+','+gy)||[])if(o.hp>0&&Math.hypot(o.x-x,o.y-y)<=radius)out.push(o);
+    return out;
+  };
+  const stepNature=Game.prototype.step;
+  Game.prototype.step=function(dt,input={}){
+    const live=FEATURES.naturalEcology&&this.run&&this.phase==='playing';if(!live)return stepNature.call(this,dt,input);
+    this.buildNatureGrid();this.natureStepping=true;try{return stepNature.call(this,dt,input);}finally{this.natureStepping=false;}
+  };
+  const animalById=(r,id)=>id===undefined||id===null?null:r.enemies.find(o=>o.id===id&&o.hp>0)||null;
+  Game.prototype.endNpcFight=function(e,cooldown=0){
+    e.huntTarget=null;e.hunting=false;e.deathFight=false;e.fightRoared=false;
+    if(NPC_FIGHT_MODES.includes(e.mode))e.mode=e.activity='roam';
+    if(cooldown)e.huntCooldownUntil=this.run.seconds+cooldown;
+  };
+  // One fight step against another animal: approach, windup, bite, recover. Same modes and timings the renderer
+  // already animates for attacks on the player.
+  Game.prototype.npcFight=function(e,t,dt){
+    const r=this.run;
+    if(!t||t.hp<=0||!r.enemies.includes(t)){this.endNpcFight(e);return false;}
+    if(!e.deathFight&&r.seconds-(e.lastBiteAt??e.huntStarted??r.seconds)>NATURE.huntTimeout){this.endNpcFight(e,e.hunting?NATURE.huntCooldown:0);return false;}
+    const dx=t.x-e.x,dy=t.y-e.y,d=Math.max(1,Math.hypot(dx,dy)),reach=e.radius+t.radius+(e.kind==='ankylosaurus'?34:12);
+    e.activity='hunt';e.facingX=e.chargeX=dx/d;e.facingY=e.chargeY=dy/d;
+    const close=(pace)=>{if(d>reach-4)this.travel(e,dx/d*e.speed*pace*dt,dy/d*e.speed*pace*dt);}; // keep on a fleeing target, lunge on the bite
+    if(e.mode==='windup'){e.timer-=dt;close(.6);if(e.timer<=0){e.mode='bite';e.timer=.18;e.attackHit=false;}return true;}
+    if(e.mode==='bite'){e.timer-=dt;close(1.6);if(!e.attackHit&&e.timer<=.1){e.attackHit=true;if(d<reach+16)this.npcBite(e,t);}if(e.timer<=0){e.mode='recover';e.timer=.9;}return true;}
+    if(e.mode==='recover'){e.timer-=dt;if(e.timer<=0)e.mode='hunt';return true;}
+    e.mode='hunt';
+    if(d>reach){const pace=e.speed*(e.hunting?1.15:.95);this.travel(e,dx/d*pace*dt,dy/d*pace*dt);}
+    else if(!(e.cooldown>0)){
+      e.mode='windup';e.pattern=1;e.timer=e.windupDuration=e.kind==='tyrannosaurus'?.6:.45;e.attackHit=false;
+      if(!e.fightRoared&&e.kind!=='compy'&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<700){e.fightRoared=true;this.emit('roar');} // you can hear a fight nearby
+    }
+    return true;
+  };
+  Game.prototype.npcBite=function(e,t){
+    const r=this.run,d=Math.max(1,Math.hypot(e.x-t.x,e.y-t.y)),frontal=((e.x-t.x)*t.facingX+(e.y-t.y)*t.facingY)/d>.6;
+    const armour=armoured(t.kind)&&frontal&&e.kind!=='tyrannosaurus'?.5:1,guard=t.npcGuardUntil>r.seconds?.25:1;
+    t.hp-=e.damage*armour*guard;t.hit=.15;e.lastBiteAt=r.seconds;this.burst(t.x,t.y,'blood',6,t.id);
+    t.npcAttacker=e.id;t.npcAttackedAt=r.seconds;
+    for(const mate of this.nearbyAnimals(t.x,t.y,260)){ // the herd reacts: armed mates help, unarmed ones scatter
+      if(mate===t||mate===e||mate.kind!==t.kind||mate.boss||mate.guard||mate.miniboss||mate.hunting)continue;
+      if(mate.damage&&mate.kind!=='compy'){mate.npcAttacker=e.id;mate.npcAttackedAt=r.seconds;}
+      else mate.npcFleeFrom={id:e.id,until:r.seconds+NATURE.yieldTime};
+    }
+    if(t.hp<=0){if(r.seconds-t.lastAttackedAt>3)t.naturalDeath=true;this.endNpcFight(e,e.hunting&&!e.deathFight?8:0);}
+  };
+  const findPreyCore=Game.prototype.findPrey;
+  Game.prototype.findPrey=function(e){
+    if(!FEATURES.naturalEcology)return findPreyCore.call(this,e);
+    const r=this.run;if((e.huntCooldownUntil||0)>r.seconds)return null;
+    if(e.preyScanAt!==undefined&&r.seconds>=e.preyScanAt&&r.seconds-e.preyScanAt<NATURE.scan)return null;e.preyScanAt=r.seconds;
+    if(r.enemies.filter(o=>o.hunting&&o.hp>0&&!o.deathFight).length>=NATURE.maxHunts)return null;
+    let best=null,bestScore=0;
+    for(const o of this.nearbyAnimals(e.x,e.y,NATURE.huntRange)){
+      if(o===e||o.boss||o.guard||o.miniboss||o.rare||o.kind===e.kind||!herbivorousNPC(o.kind))continue;
+      const wounded=o.hp<o.maxHP*.35;
+      if(o.damage){
+        const alone=!this.nearbyAnimals(o.x,o.y,250).some(m=>m!==o&&m.kind===o.kind);
+        if(armoured(o.kind)?!(e.kind==='tyrannosaurus'||wounded):!(wounded||alone&&npcStrength(e)>NATURE.dominance*npcStrength(o)))continue;
+      }
+      if(!navLineClear(r.stage,r.map,canSwim(e),e,o,0))continue; // never across deep water or lava
+      const d=Math.hypot(o.x-e.x,o.y-e.y),score=(wounded?2:1)*(o.damage?.6:1)/(1+d/150);
+      if(score>bestScore){bestScore=score;best=o;}
+    }
+    return best;
+  };
+  const huntPreyCore=Game.prototype.huntPrey;
+  Game.prototype.huntPrey=function(e,prey,dt){
+    if(!FEATURES.naturalEcology)return huntPreyCore.call(this,e,prey,dt);
+    if(e.huntTarget!==prey.id){e.huntTarget=prey.id;e.huntStarted=e.lastBiteAt=this.run.seconds;e.hunting=true;e.deathFight=false;}
+    this.npcFight(e,prey,dt);
+  };
+  const nearestHunterCore=Game.prototype.nearestHunter;
+  Game.prototype.nearestHunter=function(e){
+    if(!FEATURES.naturalEcology)return nearestHunterCore.call(this,e);
+    let best=null,bd=320;for(const o of this.nearbyAnimals(e.x,e.y,320))if(o.huntTarget===e.id){const d=Math.hypot(o.x-e.x,o.y-e.y);if(d<bd){bd=d;best=o;}}return best;
+  };
+  // Carrion: who can smell what, and whether it is still worth the walk.
+  const corpseFood=(r,id)=>{let n=0;for(const p of r.pickups)if(p.corpseId===id&&p.value>0)n+=p.value;return n;};
+  const carrionCore=Game.prototype.carrionTarget;
+  Game.prototype.carrionTarget=function(e){
+    if(!FEATURES.naturalEcology||e.kind==='compy')return carrionCore.call(this,e);
+    const r=this.run;if(e.boss||e.guard||herbivorousNPC(e.kind)||!e.damage)return null;
+    const smell=NATURE.smellBase+NATURE.smellHunger*(e.hunger??.5),pace=Math.max(1,e.speed*NATURE.trot);let best=null,bestScore=0;
+    for(const corpse of r.corpses){
+      if(e.carrionBan&&e.carrionBan.id===corpse.id&&e.carrionBan.until>r.seconds)continue;
+      const food=corpseFood(r,corpse.id);if(!food)continue;
+      const distance=Math.hypot(corpse.x-e.x,corpse.y-e.y);if(distance>smell*(1+Math.min(.3,food/20)))continue;
+      if(distance>45&&distance/pace>(corpse.foodLifetime||corpse.lifetime)-corpse.age+2)continue; // would only find bones
+      const cluster=r.pickups.filter(p=>p.corpseId!==undefined&&Math.hypot(p.x-corpse.x,p.y-corpse.y)<180).reduce((n,p)=>n+p.value,0);
+      const score=cluster*(1-corpse.age/corpse.lifetime)/(1+distance/180);
+      if(score>bestScore){bestScore=score;best=corpse;}
+    }
+    return best;
+  };
+  Game.prototype.feedOnCarrion=function(e,target,dt){
+    const dx=target.x-e.x,dy=target.y-e.y,d=Math.hypot(dx,dy);e.mode=e.activity='scavenge';e.waitCorpse=undefined;
+    if(d>45){e.facingX=dx/d;e.facingY=dy/d;this.travel(e,dx/d*e.speed*NATURE.trot*dt,dy/d*e.speed*NATURE.trot*dt);e.scavengeTime=0;return true;}
+    e.scavengeTime=(e.scavengeTime||0)+dt;
+    if(e.scavengeTime>=2){e.scavengeTime-=2;const r=this.run,food=r.pickups.find(p=>p.corpseId===target.id&&p.value>0);if(food){food.value--;e.hunger=Math.max(0,(e.hunger??.5)-.25);e.hp=Math.min(e.maxHP,e.hp+3);r.pickups=r.pickups.filter(p=>p.value>0);if(r.eating&&r.eating.corpseId===food.corpseId&&food.value<=0)r.eating=null;}}
+    return true;
+  };
+  // Large carnivores at a corpse: eat when it is safe, drive weaker rivals off, otherwise wait and watch.
+  const scavengeCore=Game.prototype.scavenge;
+  Game.prototype.scavenge=function(e,dt){
+    if(!FEATURES.naturalEcology||e.kind==='compy')return scavengeCore.call(this,e,dt);
+    const r=this.run,c=this.carrionTarget(e);if(!c)return false;
+    const dC=Math.hypot(c.x-e.x,c.y-e.y),eating=dC<=45&&e.mode==='scavenge';
+    const playerNear=!r.hidden&&Math.hypot(r.player.x-c.x,r.player.y-c.y)<NATURE.safeRadius; // hidden in a bush, you can ambush them
+    const rivals=this.nearbyAnimals(c.x,c.y,NATURE.safeRadius).filter(o=>o!==e&&(bigCarnivore(o)||o.boss));
+    const blockers=rivals.filter(o=>o.boss||outranks(o,e)||Math.hypot(o.x-c.x,o.y-c.y)<=45&&o.mode==='scavenge');
+    if(!playerNear&&(!blockers.length||eating&&!blockers.some(o=>o.boss||npcStrength(o)>NATURE.dominance*npcStrength(e))))return this.feedOnCarrion(e,c,dt);
+    if(!playerNear&&blockers.length&&blockers.every(o=>!o.boss&&npcStrength(e)>NATURE.dominance*npcStrength(o))){
+      const top=blockers.reduce((a,o)=>Math.hypot(o.x-e.x,o.y-e.y)<Math.hypot(a.x-e.x,a.y-e.y)?o:a),tx=top.x-e.x,ty=top.y-e.y,td=Math.max(1,Math.hypot(tx,ty));
+      e.activity='scavenge';e.facingX=tx/td;e.facingY=ty/td;
+      if(td>e.radius+top.radius+60){e.mode='scavenge';this.travel(e,tx/td*e.speed*NATURE.trot*dt,ty/td*e.speed*NATURE.trot*dt);return true;}
+      e.mode='warning';
+      for(const o of blockers){o.npcFleeFrom={id:e.id,until:r.seconds+NATURE.yieldTime};o.carrionBan={id:c.id,until:r.seconds+NATURE.ban};o.waitCorpse=undefined;if(o.huntTarget&&!o.hunting)this.endNpcFight(o);}
+      r.effects.push({x:e.x,y:e.y-20,text:'!',color:'#de954a',life:.7});return true;
+    }
+    // Not safe: wait at a distance, facing the food. Remember who is in the way in case the food rots.
+    const top=blockers.filter(o=>!o.boss).sort((a,b)=>npcStrength(b)-npcStrength(a))[0];
+    e.waitCorpse=c.id;e.carrionRival=top?top.id:undefined;e.mode='watch';e.activity='scavenge';
+    const dx=c.x-e.x,dy=c.y-e.y,d=Math.max(1,dC);e.facingX=dx/d;e.facingY=dy/d;
+    if(d>NATURE.waitRadius+40)this.travel(e,dx/d*e.speed*NATURE.trot*dt,dy/d*e.speed*NATURE.trot*dt);
+    else if(d<NATURE.waitRadius-40)this.travel(e,-dx/d*e.speed*.4*dt,-dy/d*e.speed*.4*dt);
+    return true;
+  };
+  // Mark a corpse whose food rotted away (as opposed to being eaten).
+  const decayNature=Game.prototype.decayCorpses;
+  Game.prototype.decayCorpses=function(dt){
+    if(!FEATURES.naturalEcology)return decayNature.call(this,dt);
+    const r=this.run,had=new Set();for(const p of r.pickups)if(p.corpseId!==undefined&&p.value>0)had.add(p.corpseId);
+    const out=decayNature.call(this,dt);
+    for(const c of r.corpses)if(had.has(c.id)&&!corpseFood(r,c.id))c.rotted=true;
+    return out;
+  };
+  // Baryonyx fishing: wade to a school, wait with the head down, snap from standing, swallow, repeat.
+  Game.prototype.npcFish=function(e,dt){
+    const r=this.run;if(e.boss||e.kind!=='baryonyx')return false;
+    const fishing=['fish','fishstrike'].includes(e.mode),hunger=e.hunger??.5,valid=f=>f&&f.stock>0&&isWater(r.stage,r.map,f,12)&&!(e.fishBan&&e.fishBan.id===f.id&&e.fishBan.until>r.seconds);
+    let school=(r.map.fishSchools||[]).find(f=>f.id===e.fishSchoolId);
+    if(!valid(school)){
+      school=null;if(hunger>=NATURE.fishHunger||fishing){let bd=NATURE.fishRange;for(const f of r.map.fishSchools||[])if(valid(f)){const d=Math.hypot(f.x-e.x,f.y-e.y);if(d<bd){bd=d;school=f;}}}
+      e.fishSchoolId=school?school.id:undefined;e.fishSince=r.seconds;
+      if(!school){if(fishing)e.mode=e.activity='roam';return false;}
+    }
+    if(e.mode!=='fishstrike'&&(hunger<.1||!fishing&&hunger<NATURE.fishHunger&&e.fishSchoolId===undefined)){e.fishSchoolId=undefined;if(fishing)e.mode=e.activity='roam';return false;}
+    const dx=school.x-e.x,dy=school.y-e.y,d=Math.max(1,Math.hypot(dx,dy));e.activity='drink';e.facingX=dx/d;e.facingY=dy/d;
+    if(e.mode==='fishstrike'){e.timer-=dt;if(e.timer<=0){if(school.stock>0){school.stock--;e.hp=Math.min(e.maxHP,e.hp+3);e.hunger=Math.max(0,hunger-.3);this.burst(school.x,school.y,'bubble',8,e.id);}e.mode='fish';e.fishWait=NATURE.fishEat;e.fishSince=r.seconds;}return true;}
+    if(d>48){
+      if(r.seconds-(e.fishSince??r.seconds)>NATURE.fishGiveUp){e.fishBan={id:school.id,until:r.seconds+30};e.fishSchoolId=undefined;e.mode=e.activity='roam';return false;} // cannot reach it
+      e.mode='roam';this.travel(e,dx/d*e.speed*.55*dt,dy/d*e.speed*.55*dt);e.fishWait=NATURE.fishWait+(e.id*.37)%1;return true;
+    }
+    e.mode='fish';e.fishWait=(e.fishWait??NATURE.fishWait)-dt;if(e.fishWait<=0){e.mode='fishstrike';e.timer=NATURE.fishStrike;e.attackHit=false;}
+    return true;
+  };
+  const npcAbilityNature=Game.prototype.npcAbility;
+  Game.prototype.npcAbility=function(e,dt){
+    const r=this.run;
+    if(FEATURES.naturalEcology&&e.kind==='baryonyx'&&!e.boss&&!e.speciesSkill&&!(e.alert&&Math.hypot(r.player.x-e.x,r.player.y-e.y)<220)){
+      // Same stamina/cooldown bookkeeping, but fish no longer trigger the charge.
+      e.skillCooldown=Math.max(0,e.skillCooldown-dt);e.skillDelay=Math.max(0,e.skillDelay-dt);if(!e.skillDelay)e.stamina=Math.min(100,e.stamina+18*dt);return false;
+    }
+    return npcAbilityNature.call(this,e,dt);
+  };
+  const provokeNature=Game.prototype.provoke;
+  Game.prototype.provoke=function(e){
+    if(FEATURES.naturalEcology&&e){if(e.huntTarget)this.endNpcFight(e);if(['fish','fishstrike'].includes(e.mode))e.mode='chase';e.waitCorpse=undefined;}
+    return provokeNature.call(this,e);
+  };
+  const ecologyNature=Game.prototype.ecologyAI;
+  Game.prototype.ecologyAI=function(e,dt,dx,dy,d){
+    const r=this.run;if(!FEATURES.naturalEcology||e.guard||e.miniboss)return ecologyNature.call(this,e,dt,dx,dy,d);
+    const recent=r.seconds-e.lastAttackedAt<8;
+    // You come first: an animal you hit, that is after you, or that sees you right next to it drops its own business.
+    if(recent||e.alert||!r.hidden&&d<NATURE.notice){if(e.huntTarget)this.endNpcFight(e);e.waitCorpse=undefined;return ecologyNature.call(this,e,dt,dx,dy,d);}
+    if(e.hunger===undefined)e.hunger=.25+((e.id*.618034)%1)*.5;
+    const mine=()=>{e.hunger=Math.min(1,e.hunger+dt/150);return true;};
+    // Yielding to a stronger animal.
+    if(e.npcFleeFrom&&e.npcFleeFrom.until>r.seconds){const src=animalById(r,e.npcFleeFrom.id);if(src&&Math.hypot(src.x-e.x,src.y-e.y)<450){if(e.huntTarget)this.endNpcFight(e);this.fleeFrom(e,src.x,src.y,dt,1.1);return mine();}}
+    if(e.npcFleeFrom&&!(e.npcFleeFrom.until>r.seconds))e.npcFleeFrom=null;
+    // Bitten by another animal: armed animals fight back while healthy, everything else runs.
+    if(e.npcAttacker!==undefined&&!e.hunting){
+      const a=r.seconds-e.npcAttackedAt<6?animalById(r,e.npcAttacker):null;
+      if(a&&Math.hypot(a.x-e.x,a.y-e.y)<450){
+        const holdOn=e.hp>=e.maxHP*NATURE.fleeAt||a.deathFight&&e.hunger>=NATURE.starving;
+        if(e.damage&&e.kind!=='compy'&&holdOn){if(e.huntTarget!==a.id){e.huntTarget=a.id;e.huntStarted=e.lastBiteAt=r.seconds;}if(this.npcFight(e,a,dt))return mine();}
+        else{if(e.huntTarget)this.endNpcFight(e);e.npcFleeFrom={id:a.id,until:r.seconds+NATURE.yieldTime};this.fleeFrom(e,a.x,a.y,dt,1.15);return mine();}
+      }else{e.npcAttacker=undefined;if(e.huntTarget&&!e.hunting)this.endNpcFight(e);}
+    }
+    // Own hunt (also a fight to the death over rotted carrion).
+    if(e.hunting&&e.huntTarget){
+      const t=animalById(r,e.huntTarget);
+      if(t&&!e.deathFight&&e.hp<e.maxHP*NATURE.fleeAt){this.endNpcFight(e,30);e.npcFleeFrom={id:t.id,until:r.seconds+NATURE.yieldTime};this.fleeFrom(e,t.x,t.y,dt,1.15);return mine();}
+      if(this.npcFight(e,t,dt))return mine();
+    }
+    // Waiting at a corpse that is now gone: starving and the food rotted → fight the rival to the death; else leave.
+    if(e.waitCorpse!==undefined&&!corpseFood(r,e.waitCorpse)){
+      const corpse=r.corpses.find(c=>c.id===e.waitCorpse),rotted=!corpse||!!corpse.rotted,rival=animalById(r,e.carrionRival);
+      e.waitCorpse=undefined;e.carrionRival=undefined;
+      if(rival&&rotted&&e.hunger>=NATURE.starving&&bigCarnivore(e)&&Math.hypot(rival.x-e.x,rival.y-e.y)<NATURE.rivalRange){
+        e.huntTarget=rival.id;e.hunting=true;e.deathFight=true;e.huntStarted=e.lastBiteAt=r.seconds;rival.npcAttacker=e.id;rival.npcAttackedAt=r.seconds;
+        if(this.npcFight(e,rival,dt))return mine();
+      }else if(e.mode==='watch'){this.disengage(e);this.returnHome(e,dt);return mine();}
+    }
+    if(e.kind==='baryonyx'&&this.npcFish(e,dt))return mine();
+    return ecologyNature.call(this,e,dt,dx,dy,d);
+  };
+
   // Menu backdrop pilot (FEATURES.menuPilot): the menu's demo dinosaur fights small attackers and runs from bosses or
   // packs it cannot take, instead of walking on while every Compy in the valley piles onto it. Pure: returns step() input.
   const MENU_HUNTING=['chase','windup','attack','enrage','stalk','reposition'];
@@ -1830,5 +2065,5 @@
     return{x:d>reach*.7?dx/d:dx/d*.15,y:d>reach*.7?dy/d:dy/d*.15,attack:d<reach,mode:'fight',target:t.id};
   }
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { menuPilot, PACK, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });
