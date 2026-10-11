@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true};
+  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -520,6 +520,23 @@
     deinosuchus:{achievement:'riverMaw'}, triceratops:{achievement:'gentleGiant'}, tyrannosaurus:{achievement:'apex'}
   };
   for(const [id,u] of Object.entries(SPECIES_UNLOCKS))PLAYER_SPECIES[id].cost=u.dna||0;
+  // Species cards: every species gets the same three texts (role, playstyle, ability) so the selection screen reads consistently.
+  for(const [id,[role,text,skillText]] of Object.entries({
+    deinonychus:['Flankejæger','Fjerklædt startjæger med hurtige bid. Bid fra siden eller bagfra for at gøre mest skade.','Kort undvigelse; dit næste bid fra siden eller bagfra gør +50 % skade i 2 sek.'],
+    velociraptor:['Lynjæger','Lille startjæger med de hurtigste bid. Har mindre liv end de større jægere.','Kort kløspring; du er beskyttet, mens du springer.'],
+    utahraptor:['Allround-jæger','Balanceret jæger med god fart og solide bid. Et sikkert valg på alle baner.','Beskyttet spring; kløerne rammer hvert dyr på vejen én gang.'],
+    pachycephalosaurus:['Hovedstøder','Hurtig planteæder med en tyk skalle. Hovedstød holder små dyr på afstand.','Stød frem og skub det ramte dyr tilbage.'],
+    carnotaurus:['Stormløber','Kødæder med tunge bid og god fart. Længere pause mellem bid end raptorerne.','Storm frem og skad alt, du rammer; du kan stadig blive ramt.'],
+    ankylosaurus:['Panserfæstning','Pansret planteæder. Dit angreb er et haleslag hele vejen rundt om dig.','Tag 75 % mindre skade i 1 sek.'],
+    compy:['Challenge-art','Den mindste art med små bid og lidt liv. Hold dig væk fra store dyr.','Smut et kort stykke frem og væk fra fare.'],
+    gallimimus:['Flugtløber','Den hurtigste art. Spiser både planter og kød, men bider svagt.','Kort sprint væk fra fare; giver ingen beskyttelse.'],
+    baryonyx:['Fiskejæger','Fanger fisk ved stimer og spiser også kød. Svømmer lidt hurtigere i dybt vand.','Fang fisk fra en stime, eller ram bytte tæt på.'],
+    deinosuchus:['Vandjæger','Krokodilleslægt med kraftige, langsomme bid. Langt hurtigere i dybt vand end på land.','Kort fremstød med åbent gab; giver ingen beskyttelse.'],
+    triceratops:['Frontkæmper','Tung planteæder med 25 % panser forfra. Ryggen er ubeskyttet.','Storm frem med hornene; stærk forfra, sårbar bagfra.'],
+    tyrannosaurus:['Toprovdyr','Det største rovdyr med mest liv. Langsomme, knusende bid.','Brøl og skræm almindelige dyr i nærheden; bosser er immune.']
+  }))Object.assign(PLAYER_SPECIES[id],{role,text,skillText});
+  // Selection order: free starters, then DNA cost (cheapest first), then achievement unlocks in achievement order.
+  const speciesOrder=()=>Object.keys(PLAYER_SPECIES).map((id,i)=>{const u=SPECIES_UNLOCKS[id]||{},a=u.achievement?ACHIEVEMENTS.findIndex(x=>x.id===u.achievement):-1;return {id,key:[a>=0?1:0,u.dna||0,a,id==='deinonychus'?0:1,i]};}).sort((x,y)=>{for(let k=0;k<x.key.length;k++)if(x.key[k]!==y.key[k])return x.key[k]-y.key[k];return 0;}).map(x=>x.id);
   const SKINS={classic:{name:'Naturlige farver'},male:{name:'Prydfarver',achievement:'firstBoss'},elite:{name:'Rivalens farver',achievement:'rivalSlayer'},albino:{name:'Albino',achievement:'threeDiets'}};
   const ACHIEVEMENTS=[
     {id:'firstBlood',name:'Første bid',text:'Nedlæg dit første dyr.',dna:5,check:c=>c.life.kills>=1},
@@ -1863,5 +1880,5 @@
     return{x:d>reach*.7?dx/d:dx/d*.15,y:d>reach*.7?dy/d:dy/d*.15,attack:d<reach,mode:'fight',target:t.id};
   }
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

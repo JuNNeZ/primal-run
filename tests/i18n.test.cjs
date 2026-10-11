@@ -6,7 +6,7 @@ test('every full language translates all mutation, species, level, zone and achi
   for (const lang of ['en', 'de', 'sv', 'no', 'ja', 'zh', ...['es', 'fr', 'pt', 'ru', 'hi', 'ar', 'bn', 'ur', 'id', 'pcm', 'mr', 'te', 'tr', 'ta', 'yue'].filter(l => I.coverage(l).entries > 0)]) {
     I.setLanguage(lang); I.missing.clear();
     for (const m of C.MUTATIONS) { I.t(m.name); I.t(m.text); }
-    for (const p of Object.values(C.PLAYER_SPECIES)) { I.t(p.skill); I.t(p.text); }
+    for (const p of Object.values(C.PLAYER_SPECIES)) { I.t(p.skill); I.t(p.text); I.t(p.role); I.t(p.skillText); }
     for (const l of C.LEVELS) { I.t(l.name); I.t(l.subtitle); I.t(l.bossName); }
     for (const zs of C.ZONES) for (const z of zs) I.t(z.name);
     for (const a of C.ACHIEVEMENTS) { I.t(a.name); I.t(a.text); }
