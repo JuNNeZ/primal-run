@@ -86,7 +86,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     assert.equal(await page.evaluate(() => primalRun.game.save.settings.music), .2);
     await page.locator('[data-action="start"]').click();
     await page.locator('[data-action="begin"]').click();await page.waitForFunction(()=>primalRun.game.phase==='playing');
-    assert.equal(await page.evaluate(() => primalRun.game.run.maxHealth), 102);
+    assert.ok(Math.abs(await page.evaluate(() => primalRun.game.run.maxHealth) - 100 * (1 + require('../PRIMAL_RUN_Game/src/core.js').UPGRADE_STEP.health)) < 1e-8);
     await page.evaluate(() => { primalRun.game.run.invulnerable = 0; primalRun.game.damage(9999); });
     await page.waitForSelector('[data-action="shop"]');
     assert.equal(await page.evaluate(() => primalRun.game.save.scores.length), 2);
