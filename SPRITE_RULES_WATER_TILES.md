@@ -28,3 +28,8 @@ dark water rather than flattening it into shallowblue. tools/validate_water_corn
 checks all48 corner assignments; trace(map.river) is independent of tiled base drawing.
 
 Runtime visual limitation: repeated foam/depth patterns can remain visibly tiled, especially in a straight test river. Corner topology and collision agreement are validated; organic seam/pattern polish still needs visual approval. Do not label these tiles seamless production art.
+
+Runtime shore blending: original exports remain opaque and immutable. The
+renderer may fade authored land pixels using shared mask-corner weights,
+without interpolating/resizing images or changing water/foam pixels. The
+shoreBlend flag restores the original layer; see SHORE_BLEND.md.
