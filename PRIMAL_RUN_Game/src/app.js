@@ -623,6 +623,26 @@
     // Shared world-grid corners classify the same water/deep-water geometry as movement.
     // Cache vertices per map; render only viewport tiles, not the whole map each frame.
     const waterVertexCache=new WeakMap();
+    const shoreBlendCache=new Map();
+    const waterPixelColors=new Set(['59,65,68','60,113,128','105,164,160','162,212,193','232,236,225','44,90,110']);
+    function blendedShore(path,mask){
+      if(!C.FEATURES.shoreBlend||mask===15)return null;
+      if(shoreBlendCache.has(path))return shoreBlendCache.get(path);
+      if(!images[path]){loadImage(path).catch(()=>{});return null;}
+      const layer=document.createElement('canvas');layer.width=layer.height=32;layer.spritePath=path;layer.shoreBlend=true;
+      const lc=layer.getContext('2d');lc.imageSmoothingEnabled=false;drawAsset(lc,images[path],0,0);
+      const pixels=lc.getImageData(0,0,32,32),data=pixels.data;
+      const nw=mask&1?1:0,ne=mask&2?1:0,se=mask&4?1:0,sw=mask&8?1:0;
+      for(let y=0;y<32;y++)for(let x=0;x<32;x++){
+        const i=(y*32+x)*4;if(waterPixelColors.has(data[i]+','+data[i+1]+','+data[i+2]))continue;
+        // Adjacent tiles share these corner weights. Fade only authored land
+        // pixels into the ground; water, foam and the source PNGs stay intact.
+        const u=(x+.5)/32,v=(y+.5)/32,wet=(nw*(1-u)+ne*u)*(1-v)+(sw*(1-u)+se*u)*v;
+        const t=Math.min(1,wet/.65);data[i+3]=Math.round(255*t*t*(3-2*t));
+        if(!data[i+3])data[i]=data[i+1]=data[i+2]=0;
+      }
+      lc.putImageData(pixels,0,0);shoreBlendCache.set(path,layer);return layer;
+    }
     function waterCorner(stage,map,x,y){
       let cache=waterVertexCache.get(map);if(!cache){cache=new Map();waterVertexCache.set(map,cache);}
       const key=stage+':'+x+':'+y;if(cache.has(key))return cache.get(key);
@@ -636,7 +656,8 @@
         const wet=corners.reduce((m,v,i)=>m|(v>0?1<<i:0),0);if(!wet)continue;
         const deep=corners.reduce((m,v,i)=>m|(v===2?1<<i:0),0),family=wet===15&&deep?'water_depth':stage===1?'shore_sand':'shore_soil',mask=family==='water_depth'?deep:wet;
         const path='assets/water_transitions/'+family+'_'+String(mask).padStart(2,'0')+'.png';
-        sprite(path,x,y);count++;if(deep)deepCount++;
+        const shore=family==='water_depth'?null:blendedShore(path,mask);
+        if(shore)drawAsset(ctx,shore,x,y);else sprite(path,x,y);count++;if(deep)deepCount++;
       }
       canvas.dataset.waterTileCount=count;canvas.dataset.deepWaterTileCount=deepCount;
     }
