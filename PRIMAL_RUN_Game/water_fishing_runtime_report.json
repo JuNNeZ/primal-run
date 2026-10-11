@@ -5,9 +5,9 @@
     {
       "stage": 0,
       "pondWaterPixel": [
-        59,
-        65,
-        68
+        60,
+        113,
+        128
       ]
     },
     {
@@ -29,14 +29,15 @@
     {
       "stage": 3,
       "pondWaterPixel": [
-        162,
-        212,
-        193
+        105,
+        164,
+        160
       ]
     }
   ],
   "checks": [
-    "visible water pixels behind fish across four biomes",
+    "fishing indicator and no stationary fish across four biomes",
+    "fish sprite appears only on catch",
     "actual Baryonyx fishing",
     "river school in river biome",
     "Triceratops cannot eat fish",

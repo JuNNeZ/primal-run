@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true};
+  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -67,15 +67,32 @@
     }
     return distance;
   }
+  function pondRadiusFactor(pond,a){
+    const phase=(pond.shapeSeed||0)%6283/1000;
+    return FEATURES.naturalPonds&&pond.natural?1+.12*Math.sin(3*a+phase)+.07*Math.cos(2*a-phase):1;
+  }
+  function pondContains(pond,p,margin=0,scale=1){
+    const rx=pond.radius*scale-margin,ry=pond.radius*(FEATURES.naturalPonds?pond.aspect||.7:.7)*scale-margin;
+    if(rx<=0||ry<=0)return false;
+    const dx=(p.x-pond.x)/rx,dy=(p.y-pond.y)/ry;
+    if(Math.abs(dx)>1.22||Math.abs(dy)>1.22)return false;
+    const shape=pondRadiusFactor(pond,Math.atan2(dy,dx));
+    return dx*dx+dy*dy<shape*shape;
+  }
+  function fishReach(map,player,school){
+    return FEATURES.fishingSpots&&school.water==='pond'
+      ?(map.ponds||[]).some(pond=>pond.id===school.pondId&&pondContains(pond,player,-45))
+      :Math.hypot(school.x-player.x,school.y-player.y)<55+player.radius;
+  }
   function isWater(stage,map,p,margin=0){
-    return stage===1&&riverDistance(map,p)<58-margin||(map.ponds||[]).some(pond=>{const rx=pond.radius-margin,ry=pond.radius*.7-margin;return rx>0&&ry>0&&((p.x-pond.x)/rx)**2+((p.y-pond.y)/ry)**2<1;});
+    return stage===1&&riverDistance(map,p)<58-margin||(map.ponds||[]).some(pond=>pondContains(pond,p,margin));
   }
   // Overhaul phase 5 terrain: deep river water with shallow fords, lava cracks.
   const DEEP_WATER=26,LAVA_CORE=14;
   function nearFord(map,p){return (map.fords||[]).some(f=>Math.hypot(p.x-f.x,p.y-f.y)<78);}
   function isDeepWater(stage,map,p){
     if(stage===1&&riverDistance(map,p)<DEEP_WATER&&!nearFord(map,p))return true;
-    return (map.ponds||[]).some(pond=>((p.x-pond.x)/(pond.radius*.45))**2+((p.y-pond.y)/(pond.radius*.7*.45))**2<1);
+    return (map.ponds||[]).some(pond=>pondContains(pond,p,0,.45));
   }
   const canSwim=entity=>['deinosuchus','baryonyx'].includes(entity.kind)||entity.radius>=28;
   // B1b: lava is off within 70 px of a basalt crossing (05 §4.1).
@@ -429,10 +446,17 @@
     for(let i=0;i<2;i++){const h=habitats[Math.floor(random()*habitats.length)];events.push({x:h.x,y:h.y,type:random()<.5?'spring':'fossil',claimed:false});}
     const arenas=habitats.filter(h=>Math.hypot(h.x-480,h.y-340)>750&&suitableHabitat(stage,habitatMap,STAGES[stage].boss,h)).filter((_,i)=>i%11===0).slice(0,3).map((h,i)=>({...h,style:['grove','ridge','clearing'][(i+layout)%3]}));
     const forage=habitats.filter((_,i)=>i%3!==2).slice(0,Math.round(36*AREA)).map((h,i)=>({id:'plant:'+i,x:h.x,y:h.y,kind:'plant',foodType:FEATURES.variedForage?['herb','fruit','roots','mushrooms'][i%4]:'herb',toxic:FEATURES.variedForage&&i%4===3&&i%19===3,rarity:i%11===0?2:i%4===0?1:0,value:4+stage+(i%3),depleted:false}));
-    const ponds=habitats.filter(h=>riverDistance(habitatMap,h)>150).filter((_,i)=>i%9===0).slice(0,8).map((h,i)=>({x:h.x,y:h.y,radius:72,id:i}));
-    const fishSchools=ponds.map((pond,i)=>({id:'fish:'+i,x:pond.x,y:pond.y,stock:8,value:2+stage,kind:'fish',water:'pond'}));
+    const ponds=habitats.filter(h=>riverDistance(habitatMap,h)>150).filter((_,i)=>i%9===0).slice(0,8).map((h,i)=>({x:h.x,y:h.y,radius:FEATURES.naturalPonds?64+((seed^Math.imul(i+1,7919))>>>0)%49:72,id:i,natural:true,aspect:.60+((seed^Math.imul(i+1,3571))>>>0)%23/100,shapeSeed:(seed^Math.imul(i+1,104729))>>>0}));
+    function fishingStock(id,x,y,stock,value,water,pondId){
+      const catchRarities=Array.from({length:32},(_,n)=>{
+        let h=(seed^Math.imul(x+y,n+17))>>>0;h=Math.imul(h^(h>>>16),0x45d9f3b);h=Math.imul(h^(h>>>16),0x45d9f3b);const roll=((h^(h>>>16))>>>0)%100;
+        return n===0?0:n===7?2:n===14?3:roll<65?0:roll<87?1:roll<98?2:3;
+      });
+      return {id,x,y,stock,capacity:stock,value,kind:'fish',water,pondId,catchIndex:0,catchRarities};
+    }
+    const fishSchools=ponds.map((pond,i)=>fishingStock('fish:'+i,pond.x,pond.y,FEATURES.fishingSpots?12+Math.round(pond.radius/18):8,2+stage,'pond',pond.id));
     const waterMap={...habitatMap,ponds};
-    if(stage===1)for(let i=8;i<curve.length-8;i+=10){const p=curve[i];if(p.x>80&&p.y>100&&p.x<width-80&&p.y<height-80)fishSchools.push({id:'riverfish:'+i,x:Math.round(p.x),y:Math.round(p.y),stock:8,value:3,kind:'fish',water:'river'});}
+    if(stage===1)for(let i=8;i<curve.length-8;i+=10){const p=curve[i];if(p.x>80&&p.y>100&&p.x<width-80&&p.y<height-80)fishSchools.push(fishingStock('riverfish:'+i,Math.round(p.x),Math.round(p.y),8,3,'river'));}
     // Keep water visible and edible plants on dry land; tall props clear the shoreline.
     for(const item of [...sites,...events])if(isWater(stage,waterMap,item,-64)){const dry=habitats.filter(h=>!isWater(stage,waterMap,h,-64)).sort((a,b)=>Math.hypot(a.x-item.x,a.y-item.y)-Math.hypot(b.x-item.x,b.y-item.y))[0];if(dry){item.x=dry.x;item.y=dry.y;}}
     const shore=p=>isWater(stage,waterMap,p,-(p.canopy?96:50));
@@ -876,7 +900,16 @@
       const r=this.run;r.stats.food+=value;r.meat+=value;r.totalMeat+=value;r.xp+=value;r.score+=value*10;r.health=Math.min(r.maxHealth,r.health+value*r.mutations.scavenger);r.effects.push({x,y,text:'+'+value+' '+label,color:'#a2d4c1',life:.55});this.emit('pickup');
     }
     catchFish(school,count=1) {
-      const r=this.run;if(PLAYER_SPECIES[r.species].diet!=='piscivore'||!r.map.fishSchools.includes(school)||!isWater(r.stage,r.map,school,14))return 0;const caught=Math.min(count,school.stock);if(!caught)return 0;school.stock-=caught;r.stats.fishCaught+=caught;this.awardFood(caught*(school.value+r.mutations.fisher),school.x,school.y,'FISK');return caught;
+      const r=this.run;if(!r||this.phase!=='playing'||!Number.isFinite(count)||PLAYER_SPECIES[r.species].diet!=='piscivore'||!r.map.fishSchools.includes(school)||!isWater(r.stage,r.map,school,14))return 0;
+      const caught=Math.min(Math.max(0,Math.floor(count)),school.stock);if(!caught)return 0;
+      school.stock-=caught;r.stats.fishCaught+=caught;
+      for(let i=0;i<caught;i++){
+        const index=school.catchIndex||0,rarity=FEATURES.fishingSpots?(school.catchRarities?.[index%school.catchRarities.length]||0):0;
+        const value=Math.ceil(school.value*MEAT_RARITIES[rarity].multiplier)+r.mutations.fisher;school.catchIndex=index+1;
+        this.awardFood(value,school.x,school.y,'FISK');
+        if(FEATURES.fishingSpots){const e=r.effects[r.effects.length-1];Object.assign(e,{kind:'fishCatch',slot:i,batch:caught,rarity,value,text:MEAT_RARITIES[rarity].symbol+' '+MEAT_RARITIES[rarity].name+' FISK · +'+value,color:MEAT_RARITIES[rarity].color,life:1.2,maxLife:1.2,toX:r.player.x,toY:r.player.y});}
+      }
+      return caught;
     }
     eat(dt,input) {
       const r=this.run;
@@ -886,7 +919,7 @@
       if(diet==='herbivore'||diet==='omnivore')candidates.push(...r.map.forage.filter(p=>!p.depleted));
       if(diet!=='herbivore')candidates.push(...r.pickups.filter(p=>p.corpseId!==undefined));
       if(diet==='piscivore')candidates.push(...r.map.fishSchools.filter(p=>p.stock>0&&isWater(r.stage,r.map,p,14)));
-      const food=candidates.filter(p=>(p.kind==='fish'?p.stock>0:p.value>0)&&Math.hypot(p.x-r.player.x,p.y-r.player.y)<55+r.player.radius).sort((a,b)=>Math.hypot(a.x-r.player.x,a.y-r.player.y)-Math.hypot(b.x-r.player.x,b.y-r.player.y))[0];
+      const food=candidates.filter(p=>(p.kind==='fish'?p.stock>0:p.value>0)&&(p.kind==='fish'?fishReach(r.map,r.player,p):Math.hypot(p.x-r.player.x,p.y-r.player.y)<55+r.player.radius)).sort((a,b)=>Math.hypot(a.x-r.player.x,a.y-r.player.y)-Math.hypot(b.x-r.player.x,b.y-r.player.y))[0];
       if(!food){r.eating=null;return;}r.hidden=false;r.concealTime=0;r.revealedUntil=r.seconds+1;
       const foodId=food.kind==='meat'?food.corpseId:food.id;if(!r.eating||r.eating.corpseId!==foodId)r.eating={corpseId:foodId,kind:food.kind,progress:0};
       if(food.kind==='fish'&&r.stamina<4){r.eating=null;return;}
@@ -1830,5 +1863,5 @@
     return{x:d>reach*.7?dx/d:dx/d*.15,y:d>reach*.7?dy/d:dy/d*.15,attack:d<reach,mode:'fight',target:t.id};
   }
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { menuPilot, PACK, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

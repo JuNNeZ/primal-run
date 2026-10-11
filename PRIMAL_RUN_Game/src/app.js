@@ -308,7 +308,7 @@
       const paths = Array.from({length: 4}, (_, n) => 'assets/ground/dried_mud_edge_N_' + n + '.png');
       if (!paths.map(presentationReady).every(Boolean)) return false;
       const rx = pond.baseRadius + 10, ry = pond.baseRadius * .7 + 8;
-      ctx.save(); ctx.beginPath(); ctx.ellipse(pond.x, pond.y, rx, ry, 0, 0, Math.PI * 2); ctx.clip();
+      ctx.save(); pondContour({...pond,radius:pond.baseRadius},1,10); ctx.clip();
       // Only the authored north-facing edge is supplied. Other sides retain the existing bank.
       for (let x = Math.floor((pond.x - rx) / 32) * 32; x < pond.x + rx; x += 32) {
         const dx = Math.max(-1, Math.min(1, (x + 16 - pond.x) / rx));
@@ -454,7 +454,7 @@
       const seed=game.run?.map.seed||previewMap.seed;
       const x0=Math.floor((p.x-p.rx)/2)*2,y0=Math.floor((p.y-p.ry)/2)*2;
       const w=Math.ceil((p.x+p.rx-x0)/2)*2,h=Math.ceil((p.y+p.ry-y0)/2)*2;
-      const key=[seed,p.x,p.y,p.rx,p.ry,kind].join(':');let layer=groundPatchCache.get(key);
+      const key=[seed,p.x,p.y,p.rx,p.ry,kind,p.pond?.shapeSeed,p.pond?.aspect,C.FEATURES.naturalPonds].join(':');let layer=groundPatchCache.get(key);
       if(!layer){
         layer=document.createElement('canvas');layer.width=w;layer.height=h;layer.groundPatch=kind;
         const lc=layer.getContext('2d');lc.fillStyle=kind==='dry'?'#8d6042':'#443027';lc.fillRect(0,0,w,h);
@@ -465,7 +465,7 @@
           const wx=x0+x+1,wy=y0+y+1,q=((wx-p.x)/p.rx)**2+((wy-p.y)/p.ry)**2;
           // Two-pixel steps and eight-pixel edge clusters break the outline inside the physical ellipse.
           const edge=.90+(groundHash(seed,Math.floor(wx/8),Math.floor(wy/8))%256/255-.5)*.18;
-          const visible=q<edge;
+          const visible=p.pond?C.pondContains(p.pond,{x:wx,y:wy},-8):q<edge;
           if(!visible)for(let dy=0;dy<2&&y+dy<h;dy++)for(let dx=0;dx<2&&x+dx<w;dx++){
             const i=((y+dy)*w+x+dx)*4;data[i]=data[i+1]=data[i+2]=data[i+3]=0;
           }
@@ -668,25 +668,29 @@
     }
     function drawDryBank(pond,stage){
       if(pond.baseRadius&&pond.baseRadius>pond.radius+1){ // B4 drought: cracked dry mud where the water was (procedural)
-        if(!pixelGroundPatch({x:pond.x,y:pond.y,rx:pond.baseRadius+10,ry:pond.baseRadius*.7+8},stage,'dry')){
-        ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.baseRadius+10,pond.baseRadius*.7+8,0,0,Math.PI*2);ctx.fillStyle='#8d6042';ctx.fill();
+        if(!pixelGroundPatch({x:pond.x,y:pond.y,rx:(pond.baseRadius+10)*1.2,ry:(pond.baseRadius*(pond.aspect||.7)+8)*1.2,pond:{...pond,radius:pond.baseRadius}},stage,'dry')){
+        pondContour({...pond,radius:pond.baseRadius},1,10);ctx.fillStyle='#8d6042';ctx.fill();
         ctx.save();ctx.strokeStyle='#674333';ctx.lineWidth=1.5;let seed=(pond.x*13+pond.y*7)>>>0;const rnd=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
         ctx.beginPath();for(let i=0;i<14;i++){const a=rnd()*Math.PI*2,r0=pond.radius*(.9+rnd()*.1),r1=pond.baseRadius*(.85+rnd()*.2);ctx.moveTo(pond.x+Math.cos(a)*r0,pond.y+Math.sin(a)*r0*.7);ctx.lineTo(pond.x+Math.cos(a+.15)*r1,pond.y+Math.sin(a+.15)*r1*.7);}ctx.stroke();ctx.restore();
         }
         drawApprovedDryBank(pond);
       }
     }
+    function pondContour(pond,scale=1,margin=0){
+      ctx.beginPath();const aspect=C.FEATURES.naturalPonds?pond.aspect||.7:.7;
+      for(let i=0;i<=64;i++){const a=i/64*Math.PI*2,f=C.pondRadiusFactor(pond,a),x=pond.x+Math.cos(a)*(pond.radius*scale+margin)*f,y=pond.y+Math.sin(a)*(pond.radius*aspect*scale+margin)*f;if(i)ctx.lineTo(x,y);else ctx.moveTo(x,y);}ctx.closePath();
+    }
     function drawPond(pond,time,tiled=false){
       if(!tiled){
-      ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius+10,pond.radius*.7+8,0,0,Math.PI*2);ctx.fillStyle='#b98252';ctx.fill();
-      ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius,pond.radius*.7,0,0,Math.PI*2);ctx.fillStyle='#69a4a0';ctx.fill();
-      ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius*.45,pond.radius*.7*.45,0,0,Math.PI*2);ctx.fillStyle='#2c5a6e';ctx.fill();const deep=tilePattern('deep_water');if(deep){ctx.save();ctx.globalAlpha=.4;ctx.fillStyle=deep;ctx.fill();ctx.restore();}
+        pondContour(pond,1,10);ctx.fillStyle='#b98252';ctx.fill();
+        pondContour(pond);ctx.fillStyle='#69a4a0';ctx.fill();
+        pondContour(pond,.45);ctx.fillStyle='#2c5a6e';ctx.fill();const deep=tilePattern('deep_water');if(deep){ctx.save();ctx.globalAlpha=.4;ctx.fillStyle=deep;ctx.fill();ctx.restore();}
       }
-      if(!calm()){const k=(time*.6+pond.x*.001)%1;ctx.save();ctx.globalAlpha=.4*(1-k);ctx.strokeStyle='#e8ece1';ctx.lineWidth=1.5;ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.radius*(.3+.6*k),pond.radius*.7*(.3+.6*k),0,0,Math.PI*2);ctx.stroke();ctx.restore();}
+      if(!calm()){const k=(time*.6+pond.x*.001)%1;ctx.save();ctx.globalAlpha=.24*(1-k);ctx.strokeStyle='#e8ece1';ctx.lineWidth=1;pondContour(pond,.3+.55*k);ctx.stroke();ctx.restore();}
     }
     function shadowUnder(o){
       const scale=o.visualScale||1;let rx,ry,ox=0,oy=3,alpha=.28;
-      if(o.player||o.enemy){rx=Math.max(9,(o.radius||14))*1.15*scale;ry=rx*.38;}
+      if(o.player||o.enemy){rx=Math.max(9,(o.radius||14))*1.15*scale;ry=rx*.38;alpha=C.FEATURES.cleanMarkers?.18:.28;const vertical=o.player?/^[NS]$/.test(o.facing):Math.abs(o.enemy.facingY||0)>Math.abs(o.enemy.facingX||0);if(C.FEATURES.cleanMarkers&&vertical){const swap=rx;rx=ry;ry=swap;}}
       else if(o.canopy){rx=50;ry=20;ox=14;oy=8;alpha=.22;}
       else if(o.path&&/rock|boulder/.test(o.path)){rx=20;ry=8;}
       else return;
@@ -765,14 +769,24 @@
         for (const p of r.pickups) {
           if (p.kind === 'meat') {
             const rarity = C.MEAT_RARITIES[p.rarity || 0];
-            ctx.strokeStyle = rarity.color; ctx.lineWidth = 2 + (p.rarity || 0); ctx.beginPath(); ctx.ellipse(Math.round(p.x), Math.round(p.y), 18, 10, 0, 0, Math.PI * 2); ctx.stroke();
+            if(!C.FEATURES.cleanMarkers){ctx.strokeStyle = rarity.color; ctx.lineWidth = 2 + (p.rarity || 0); ctx.beginPath(); ctx.ellipse(Math.round(p.x), Math.round(p.y), 18, 10, 0, 0, Math.PI * 2); ctx.stroke();}
             label(rarity.symbol + ' ' + rarity.name + ' +' + p.value, p.x, p.y - 24, rarity.color);
           }
           if(p.kind==='fish'||p.corpseId!==undefined)continue;
           sprite(p.kind === 'meat' ? 'assets/pickups/meat.png' : p.kind === 'dna' ? 'assets/pickups/dna_pickup.png' : 'assets/ui/health.png', p.x, p.y);
         }
       }
-      if(r)for(const school of map.fishSchools||[])if(school.stock>0&&C.isWater(stage,map,school,14)){sprite('assets/fishing/fish_'+String(Math.floor(r.seconds*4)%4).padStart(3,'0')+'.png',school.x,school.y);if(r.species==='baryonyx'&&Math.hypot(school.x-r.player.x,school.y-r.player.y)<200)label('FISK · '+school.stock+' · '+keyLabel('eat')+' FISK / '+keyLabel('ability')+' STØD',school.x,school.y-42,'#a2d4c1');}
+      canvas.dataset.fishingSpots='0';
+      if(r)for(const school of map.fishSchools||[])if(C.isWater(stage,map,school,14)){
+        if(!C.FEATURES.fishingSpots){if(school.stock>0)sprite('assets/fishing/fish_'+String(Math.floor(r.seconds*4)%4).padStart(3,'0')+'.png',school.x,school.y);continue;}
+        const nearby=Math.hypot(school.x-r.player.x,school.y-r.player.y)<240;
+        if(!nearby)continue;
+        canvas.dataset.fishingSpots=String(+canvas.dataset.fishingSpots+1);
+        // A float identifies a fishing spot; fish frames only appear on a successful catch.
+        ctx.save();const x=Math.round(school.x+32),y=Math.round(school.y+(calm()?0:Math.sin(r.seconds*2+school.x)*2));ctx.fillStyle='#151b19';ctx.fillRect(x-3,y-7,6,10);ctx.fillStyle=school.stock?'#e9b75a':'#929387';ctx.fillRect(x-2,y-6,4,4);ctx.fillStyle='#e8ece1';ctx.fillRect(x-2,y-2,4,3);ctx.restore();
+        label(school.stock?'FISKESTED · '+school.stock+'/'+(school.capacity||school.stock):'FISKESTED · TØMT',school.x+32,school.y+18,school.stock?'#a2d4c1':'#929387');
+        if(school.stock&&r.species==='baryonyx')label('HOLD '+keyLabel('eat')+' · FISK',school.x+32,school.y+34,'#e8ece1');
+      }
       const objects = map.rocks.map(p => ({ ...p, path: 'assets/environment/rock.png' }));
       objects.push(...map.decorations.filter(o=>o.x>=view.x-200&&o.x<=view.x+canvas.width+200&&o.y>=view.y-200&&o.y<=view.y+canvas.height+200));
       if(r)for(const event of map.events)if(!event.claimed&&Math.hypot(event.x-r.player.x,event.y-r.player.y)<400){objects.push({...event,path:event.type==='spring'?'assets/props/flower_bush.png':'assets/props/skull.png'});label(event.type==='spring'?'✚ HELENDE KILDE':'✦ SJÆLDENT FOSSIL',event.x,event.y-30,'#bbd899');}
@@ -815,9 +829,9 @@
       for (const o of objects) {
         if (o.x < view.x - 160 || o.y < view.y - 160 || o.x > view.x + canvas.width + 160 || o.y > view.y + canvas.height + 160) continue;
         shadowUnder(o);
-        if (o.player || o.enemy) { ctx.strokeStyle = o.player ? '#69a4a0' : o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869aa' : '#8eaa6088'; ctx.lineWidth = o.player ? 3 : 1.5; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), o.player ? 24 : o.enemy.boss ? o.radius + 14 : o.radius + 6, 10, 0, 0, Math.PI * 2); ctx.stroke(); }
-        if (o.enemy && o.enemy.boss) { ctx.strokeStyle = '#e9b75a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), 35, 17, 0, 0, Math.PI * 2); ctx.stroke(); }
-        if (o.edible) { const t = (r ? r.seconds : 0) * 3 + o.x * .01, glow = .45 + .25 * Math.sin(t); ctx.save(); ctx.globalAlpha = glow; ctx.strokeStyle = C.MEAT_RARITIES[o.rarity || 0].color === '#e8ece1' ? '#bbd899' : C.MEAT_RARITIES[o.rarity || 0].color; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y) + 2, 20, 8, 0, 0, Math.PI * 2); ctx.stroke(); ctx.globalAlpha = 1; ctx.fillStyle = '#bbd899'; ctx.font = '700 13px monospace'; ctx.textAlign = 'center'; ctx.fillText('❧', Math.round(o.x), Math.round(o.y) - 30 + Math.round(Math.sin(t) * 2)); ctx.restore(); }
+        if (!C.FEATURES.cleanMarkers && (o.player || o.enemy)) { ctx.strokeStyle = o.player ? '#69a4a0' : o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869aa' : '#8eaa6088'; ctx.lineWidth = o.player ? 3 : 1.5; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), o.player ? 24 : o.enemy.boss ? o.radius + 14 : o.radius + 6, 10, 0, 0, Math.PI * 2); ctx.stroke(); }
+        if (!C.FEATURES.cleanMarkers && o.enemy && o.enemy.boss) { ctx.strokeStyle = '#e9b75a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), 35, 17, 0, 0, Math.PI * 2); ctx.stroke(); }
+        if (o.edible) { const t = (r ? r.seconds : 0) * 3 + o.x * .01, glow = .45 + .25 * Math.sin(t); ctx.save(); ctx.globalAlpha = glow; ctx.strokeStyle = C.MEAT_RARITIES[o.rarity || 0].color === '#e8ece1' ? '#bbd899' : C.MEAT_RARITIES[o.rarity || 0].color; if(!C.FEATURES.cleanMarkers){ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y) + 2, 20, 8, 0, 0, Math.PI * 2); ctx.stroke();} ctx.globalAlpha = 1; ctx.fillStyle = '#bbd899'; ctx.font = '700 13px monospace'; ctx.textAlign = 'center'; ctx.fillText('❧', Math.round(o.x), Math.round(o.y) - 30 + Math.round(Math.sin(t) * 2)); ctx.restore(); }
         const alpha = o.corpse ? Math.max(0,Math.min(1,((o.lifetime||30)-o.age)/5)) : o.player && r.hidden ? .6 : o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
         sprite(o.path, o.x, o.y, o.enemy && o.enemy.submerged && o.enemy.mode === 'windup' && o.enemy.pattern === 4 ? alpha * .3 : alpha, false, o.rotation, o.visualScale || 1,o.enemy?(o.enemy.rare?'albino':o.enemy.elite?'elite':o.enemy.sex==='male'?'male':null):o.corpse?(o.variant||null):o.player&&game.save.skin!=='classic'&&C.skinFits(game.save.skin,r?r.species:game.save.selectedSpecies)?game.save.skin:null);
         if (o.player && r.jonas) { ctx.fillStyle = '#e9b75a'; const x = Math.round(o.x), y = Math.round(o.y) - 46; ctx.fillRect(x - 9, y, 18, 5); ctx.fillRect(x - 9, y - 5, 4, 5); ctx.fillRect(x - 2, y - 7, 4, 7); ctx.fillRect(x + 5, y - 5, 4, 5); }
@@ -847,7 +861,7 @@
         if (r.species === 'ankylosaurus' && r.pounce > 0) { ctx.strokeStyle='#a2d4c1'; ctx.lineWidth=4; ctx.beginPath(); ctx.arc(Math.round(r.player.x),Math.round(r.player.y),38,0,Math.PI*2); ctx.stroke(); }
         if (r.species === 'ankylosaurus' && r.bite > 0) { ctx.strokeStyle='#efdfb8'; ctx.lineWidth=3; ctx.beginPath(); ctx.arc(Math.round(r.player.x),Math.round(r.player.y),C.PLAYER_SPECIES.ankylosaurus.range+10*r.mutations.reach+12*r.mutations.sweep,0,Math.PI*2); ctx.stroke(); }
         if(!renderOverride){ctx.fillStyle='#69a4a0'; ctx.strokeStyle='#101713'; ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(Math.round(r.player.x)-7,Math.round(r.player.y)-84); ctx.lineTo(Math.round(r.player.x)+7,Math.round(r.player.y)-84); ctx.lineTo(Math.round(r.player.x),Math.round(r.player.y)-73); ctx.closePath(); ctx.fill(); ctx.stroke();}
-        if(!renderOverride)label(r.jonas ? 'DIG · JONAS' : 'DIG · ' + C.PLAYER_SPECIES[r.species].name, r.player.x, r.player.y - 100, '#69a4a0');
+        if(!renderOverride&&r.eating?.kind!=='fish'&&!r.effects.some(e=>e.kind==='fishCatch'))label(r.jonas ? 'DIG · JONAS' : 'DIG · ' + C.PLAYER_SPECIES[r.species].name, r.player.x, r.player.y - 100, '#69a4a0');
         if (r.bite > 0) {
           const [dx, dy] = { N: [0, -1], S: [0, 1], E: [1, 0], W: [-1, 0] }[r.biteFacing];
           attackFX(r.species, r.player.x, r.player.y, dx, dy, 1 - r.bite / .12, r.species === 'tyrannosaurus' ? 1.6 : r.species === 'compy' ? .6 : 1);
@@ -857,6 +871,12 @@
         canvas.dataset.hitStop = r.hitStop > 0 ? 'true' : 'false'; canvas.dataset.particles = r.particles.length;
         ctx.font = 'bold 12px monospace'; ctx.textAlign = 'center';
         for (const e of r.effects) {
+          if(e.kind==='fishCatch'){
+            const t=Math.max(0,Math.min(1,1-e.life/e.maxLife)),flight=calm()?0:Math.sin(Math.PI*t)*42,x=calm()?e.x:e.x+(e.toX-e.x)*t,y=(calm()?e.y:e.y+(e.toY-e.y)*t)-flight;
+            const offset=((e.slot||0)-((e.batch||1)-1)/2)*20;
+            sprite('assets/fishing/fish_'+String(calm()?0:Math.min(3,Math.floor(t*4))).padStart(3,'0')+'.png',Math.round(x+offset),Math.round(y));
+            label(e.text,x+offset,y-30-(e.slot||0)*16,e.color);continue;
+          }
           const total = e.crit ? .8 : .55, t = 1 - Math.max(0, e.life) / total, x = Math.round(e.x), y = Math.round(e.y - 55 - t * (e.crit ? 30 : 20));
           const size = e.crit ? Math.round(18 + 6 * Math.max(0, 1 - t * 4)) : 11; ctx.font = 'bold ' + size + 'px monospace';
           ctx.lineWidth = e.crit ? 4 : 3; ctx.strokeStyle = '#101713'; ctx.strokeText(tr(e.text), x, y);
