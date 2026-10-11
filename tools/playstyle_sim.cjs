@@ -31,13 +31,13 @@ const CORE_PATH = path.resolve(process.env.PRIMAL_CORE || (process.argv.includes
 
 // ---------------------------------------------------------------- play styles
 const STYLES = {
-  optimizer: { label: 'Optimerer (min-maxer)', reaction: 0.05, dodge: 0.95, aimError: 0, ability: 'smart', retreatHP: 0.35, explore: false, picks: 'best', foodGreed: 0.6, sneak: false },
-  average:   { label: 'Gennemsnitlig spiller',  reaction: 0.18, dodge: 0.65, aimError: 18, ability: 'smart', retreatHP: 0.30, explore: true,  picks: 'mixed', foodGreed: 0.5, sneak: false },
-  casual:    { label: 'Afslappet/casual',       reaction: 0.30, dodge: 0.35, aimError: 30, ability: 'sometimes', retreatHP: 0.25, explore: true, picks: 'random', foodGreed: 0.4, sneak: false },
-  brawler:   { label: 'Slagsbror (angriber alt)', reaction: 0.12, dodge: 0.15, aimError: 10, ability: 'spam', retreatHP: 0, explore: false, picks: 'offence', foodGreed: 0.2, sneak: false },
-  explorer:  { label: 'Udforsker/samler',       reaction: 0.20, dodge: 0.6, aimError: 15, ability: 'smart', retreatHP: 0.4, explore: true, picks: 'defence', foodGreed: 0.8, sneak: true, wanderBias: 1 },
-  exploiter: { label: 'Terræn-udnytter (B1)', reaction: 0.05, dodge: 0.95, aimError: 0, ability: 'smart', retreatHP: 0.35, explore: false, picks: 'best', foodGreed: 0.6, sneak: false, exploit: true },
-  newbie:    { label: 'Ny spiller',             reaction: 0.45, dodge: 0.15, aimError: 40, ability: 'never', retreatHP: 0.2, explore: false, picks: 'random', foodGreed: 0.3, sneak: false },
+  optimizer: { label: 'Optimerer (min-maxer)', reaction: 0.05, dodge: 0.95, aimError: 0, ability: 'smart', retreatHP: 0.35, explore: false, picks: 'best', foodGreed: 0.6, sneak: false , tailTurn: 1 },
+  average:   { label: 'Gennemsnitlig spiller',  reaction: 0.18, dodge: 0.65, aimError: 18, ability: 'smart', retreatHP: 0.30, explore: true,  picks: 'mixed', foodGreed: 0.5, sneak: false , tailTurn: 0.7 },
+  casual:    { label: 'Afslappet/casual',       reaction: 0.30, dodge: 0.35, aimError: 30, ability: 'sometimes', retreatHP: 0.25, explore: true, picks: 'random', foodGreed: 0.4, sneak: false , tailTurn: 0.4 },
+  brawler:   { label: 'Slagsbror (angriber alt)', reaction: 0.12, dodge: 0.15, aimError: 10, ability: 'spam', retreatHP: 0, explore: false, picks: 'offence', foodGreed: 0.2, sneak: false , tailTurn: 0.5 },
+  explorer:  { label: 'Udforsker/samler',       reaction: 0.20, dodge: 0.6, aimError: 15, ability: 'smart', retreatHP: 0.4, explore: true, picks: 'defence', foodGreed: 0.8, sneak: true, wanderBias: 1 , tailTurn: 0.7 },
+  exploiter: { label: 'Terræn-udnytter (B1)', reaction: 0.05, dodge: 0.95, aimError: 0, ability: 'smart', retreatHP: 0.35, explore: false, picks: 'best', foodGreed: 0.6, sneak: false, exploit: true , tailTurn: 1 },
+  newbie:    { label: 'Ny spiller',             reaction: 0.45, dodge: 0.15, aimError: 40, ability: 'never', retreatHP: 0.2, explore: false, picks: 'random', foodGreed: 0.3, sneak: false , tailTurn: 0.1 },
 };
 
 const OFFENCE = ['teeth', 'quick', 'claws', 'reach', 'hunter', 'ambush', 'frenzy', 'glassCannon', 'heavyMuscle', 'overclock', 'crit'];
@@ -131,7 +131,8 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
       const dx = p.x - warning.x, dy = p.y - warning.y, n = Math.hypot(dx, dy) || 1;
       const early = warning.mode === 'windup' && warning.boss && warning.timer > (warning.windupDuration || 1) * .55 && warning.pattern === 0 && !warning.spin && S.dodge > .5;
       let tx, ty;
-      if (warning.pattern >= 2 || warning.spin) { tx = warning.x + dx / n * ((warning.attackRadius || 100) + 60); ty = warning.y + dy / n * ((warning.attackRadius || 100) + 60); }
+      if (warning.kind === 'ankylosaurus' && warning.pattern === 2 && C.TAIL_ARC && C.TAIL_ARC.npc < 360 && S.dodge > .5) { tx = warning.x - (warning.chargeX || 0) * (warning.radius + 30); ty = warning.y - (warning.chargeY || 0) * (warning.radius + 30); } // limited tail arc: step in front of the head
+      else if (warning.pattern >= 2 || warning.spin) { tx = warning.x + dx / n * ((warning.attackRadius || 100) + 60); ty = warning.y + dy / n * ((warning.attackRadius || 100) + 60); }
       else { const cx = warning.chargeX || dx / n, cy = warning.chargeY || dy / n, side = ((-cy) * dx + cx * dy) >= 0 ? 1 : -1; tx = p.x - cy * 140 * side; ty = p.y + cx * 140 * side; }
       if (!early) return { ...steer(tx, ty), attack: style !== 'newbie' && n < config.range + warning.radius, pounce: S.ability === 'smart' && r.stamina >= cost && ['deinonychus','velociraptor', 'utahraptor', 'compy', 'gallimimus'].includes(species) && warning.timer < .3 };
     }
@@ -224,6 +225,11 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     if (wall >= nextDecision) { decision = decide(); nextDecision = wall + S.reaction * (0.7 + R() * 0.6); }
     const input = { ...decision };
     if (decision.eat) input.eat = true;
+    // Ankylosaurus with a limited tail arc: a player who knows it turns away from the target as the swing starts.
+    if (species === 'ankylosaurus' && input.attack && !r.attack && !r.attackCooldown && C.TAIL_ARC && C.TAIL_ARC.player < 360 && R() < S.tailTurn) {
+      const near = nearest(r.enemies.filter(e => dist(e) < config.range + e.radius + 40));
+      if (near) { const dx = r.player.x - near.x, dy = r.player.y - near.y, n = Math.hypot(dx, dy) || 1; input.x = dx / n; input.y = dy / n; }
+    }
     const before = { x: r.player.x, y: r.player.y };
     g.step(dt, input);
     if (decision.interact || decision.pounce) decision = { ...decision, interact: false, pounce: false };
@@ -256,7 +262,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     species, style, seed,
     bossHpLostPct: duelBoss ? +(100 * (duelBoss.maxHP - Math.max(0, m.duelWon ? 0 : duelBoss.hp)) / duelBoss.maxHP).toFixed(1) : null,
     outcome: m.duelWon ? 'boss_win' : r.result?.victory ? 'victory' : r.result ? 'death' : 'timeout',
-    killedBy: r.result && !r.result.victory ? (r.lastHit?.kind || 'unknown') : null,
+    killedBy: r.result && !r.result.victory ? (r.lastHit?.kind || 'unknown') : null, killedByBoss: r.result && !r.result.victory ? !!r.lastHit?.boss : null, killedByMode: r.result && !r.result.victory ? (r.lastHit?.mode || null) : null,
     seconds: +r.seconds.toFixed(1), levelReached: r.levelIndex + 1, levelsTotal: r.campaign.length, biome: r.stage,
     tFirstMutation: m.tFirstMutation, tFirstBossSpawn: m.tFirstBossSpawn, tFirstBossKill: m.tFirstBossKill,
     bossFightSeconds: m.bossFights, meanBossFight: mean(m.bossFights), bossesKilled: r.bosses,
@@ -328,9 +334,16 @@ function writeReport(out, meta, summary, warns) {
   fs.writeFileSync(path.join(out, 'REPORT.md'), lines.join('\n') + '\n');
 }
 
+// --set '{"TAIL_ARC":{"player":270},"PLAYER_SPECIES":{"ankylosaurus":{"damage":14}}}' deep-merges tuning into the core's exported tables.
+function applySet(C, set) {
+  const merge = (to, from) => { for (const [k, v] of Object.entries(from || {})) if (v && typeof v === 'object' && !Array.isArray(v) && to[k] && typeof to[k] === 'object') merge(to[k], v); else to[k] = v; };
+  merge(C, set);
+}
+
 // ---------------------------------------------------------------- worker
 if (!isMainThread) {
   const C = require(CORE_PATH);
+  applySet(C, workerData.set);
   for (const flag of workerData.off || []) if (C.FEATURES && flag in C.FEATURES) C.FEATURES[flag] = false; // --off: baseline with Part B flags off
   const rows = [];
   for (const job of workerData.jobs) {
@@ -353,6 +366,7 @@ async function main() {
     return;
   }
   const C = require(CORE_PATH);
+  const set = JSON.parse(get('set', '{}')); applySet(C, set);
   const runs = Number(get('runs', quick ? 3 : 20)), seconds = Number(get('seconds', quick ? 600 : 1500)), firstSeed = Number(get('seed', 1000));
   const species = get('species', 'all') === 'all' ? Object.keys(C.PLAYER_SPECIES) : get('species').split(',');
   const styles = get('styles', 'all') === 'all' ? Object.keys(STYLES) : get('styles').split(',');
@@ -364,13 +378,13 @@ async function main() {
   const out = path.resolve(get('out', path.join(__dirname, '../PRIMAL_RUN_Game/balance_runs/playstyle_' + date)));
   fs.mkdirSync(out, { recursive: true });
   const jobs = [];
-  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades, challenges });
+  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades, challenges, level: Number(get('level', 1)) - 1 });
   // interleave so every worker gets a mix of slow and fast species
   const buckets = Array.from({ length: threads }, () => []); jobs.forEach((j, i) => buckets[i % threads].push(j));
   const t0 = Date.now(); let done = 0;
   console.error(`Kører ${jobs.length} runs på ${threads} tråde → ${out}`);
   const results = await Promise.all(buckets.filter(b => b.length).map(bucket => new Promise((resolve, reject) => {
-    const w = new Worker(__filename, { workerData: { jobs: bucket, off } });
+    const w = new Worker(__filename, { workerData: { jobs: bucket, off, set } });
     w.on('message', msg => { if (msg.progress) { done++; if (done % Math.max(1, Math.floor(jobs.length / 20)) === 0 || done === jobs.length) process.stderr.write(`\r  ${done}/${jobs.length} (${Math.round(100 * done / jobs.length)} %) · ${Math.round((Date.now() - t0) / 1000)}s   `); } if (msg.rows) resolve(msg.rows); });
     w.on('error', reject);
   })));
@@ -380,7 +394,7 @@ async function main() {
   const summary = summarize(ok), warns = warnings(summary, C);
   if (errors.length) warns.unshift(`${errors.length} runs fejlede med en JavaScript-fejl (se runs.jsonl, outcome "error") – det kan være samme fejl som får spillet til at låse!`);
   const coreSHA = crypto.createHash('sha256').update(fs.readFileSync(CORE_PATH)).digest('hex');
-  const meta = { policy:'seven playstyles (exploiter added for B1); Deinonychus defensive finte and exposed-boss opportunity', flagsOff: off, challenges, simulatorSHA:crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex'), date: new Date().toISOString(), coreSHA, totalRuns: rows.length, seconds, workers: threads, elapsed: Math.round((Date.now() - t0) / 1000), runsPerGroup: runs, species, styles, upgrades };
+  const meta = { set, policy:'seven playstyles (exploiter added for B1); Deinonychus defensive finte and exposed-boss opportunity', flagsOff: off, challenges, simulatorSHA:crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex'), date: new Date().toISOString(), coreSHA, totalRuns: rows.length, seconds, workers: threads, elapsed: Math.round((Date.now() - t0) / 1000), runsPerGroup: runs, species, styles, upgrades };
   const cols = Object.keys(summary[0] || {});
   fs.writeFileSync(path.join(out, 'summary.csv'), cols.join(',') + '\n' + summary.map(s => cols.map(c => JSON.stringify(s[c] ?? '')).join(',')).join('\n') + '\n');
   writeReport(out, meta, summary, warns);

@@ -173,12 +173,12 @@
     compy: { name: 'Compy', cost: 0, hp: 80, damage: 6, speed: 175, radius: 12, cooldown: .4, duration: .28, range: 52, skill: 'Smutter', text: 'Hurtige bid og korte undvigelser. Shift: smut frem, 28 stamina.', abilityCost: 28, abilityTime: .16, abilityCooldown: 1.25 },
     utahraptor: { name: 'Utahraptor', cost: 25, hp: 100, damage: 10, speed: 155, radius: 16, cooldown: .6, duration: 6 / 14, range: 66, skill: 'Springangreb', text: 'Balanceret jæger. Shift: beskyttet spring; kløer rammer én gang pr. dyr.', abilityCost: 38, abilityTime: .23, abilityCooldown: 1.8 },
     carnotaurus: { name: 'Carnotaurus', cost: 55, hp: 125, damage: 14, speed: 140, radius: 21, cooldown: .8, duration: .5, range: 74, skill: 'Stormløb', text: 'Tunge bid. Shift: stormløb med kontaktskade; du kan stadig blive ramt.', abilityCost: 45, abilityTime: .4, abilityCooldown: 3.2 },
-    ankylosaurus: { name: 'Ankylosaurus', cost: 75, hp: 150, damage: 12, speed: 110, radius: 23, cooldown: .9, duration: .56, range: 80, skill: 'Panserstilling', text: 'Space: haleslag omkring dig. Shift: 75 % mindre skade i ét sekund.', abilityCost: 45, abilityTime: 1, abilityCooldown: 5 },
+    ankylosaurus: { name: 'Ankylosaurus', cost: 75, hp: 150, damage: 12, speed: 110, radius: 23, cooldown: .9, duration: .56, range: 90, skill: 'Panserstilling', text: 'Space: haleslag omkring dig. Shift: 75 % mindre skade i ét sekund.', abilityCost: 45, abilityTime: 1, abilityCooldown: 5 },
   };
   Object.assign(PLAYER_SPECIES,{
     triceratops:{name:'Triceratops',cost:90,hp:170,damage:16,speed:100,radius:28,cooldown:.95,duration:.6,range:82,skill:'Hornstorm',text:'Planteæder. 25 % frontpanser. Shift: hornstorm; stærk foran, åben bagtil.',abilityCost:45,abilityTime:.42,abilityCooldown:4,diet:'herbivore'},
     pachycephalosaurus:{name:'Pachycephalosaurus',cost:35,hp:100,damage:9,speed:155,radius:16,cooldown:.65,duration:.4,range:58,skill:'Hovedstød',text:'Planteæder. Hovedstød holder små dyr tilbage. Shift: ram og forskyd fjenden.',abilityCost:35,abilityTime:.24,abilityCooldown:2.6,diet:'herbivore'},
-    gallimimus:{name:'Gallimimus',cost:20,hp:70,damage:4,speed:215,radius:15,cooldown:.5,duration:.3,range:50,skill:'Flugtsprint',text:'Omnivor: spis urter eller kød. Shift: hurtig flugt; lav skade, ingen usårlighed.',abilityCost:24,abilityTime:1.1,abilityCooldown:3.5,diet:'omnivore'},
+    gallimimus:{name:'Gallimimus',cost:20,hp:100,damage:7,speed:215,radius:15,cooldown:.5,duration:.3,range:50,skill:'Flugtsprint',text:'Omnivor: spis urter eller kød. Shift: hurtig flugt; lav skade, ingen usårlighed.',abilityCost:24,abilityTime:1.1,abilityCooldown:3.5,diet:'omnivore'},
     baryonyx:{name:'Baryonyx',cost:65,hp:120,damage:12,speed:140,radius:22,cooldown:.7,duration:.46,range:74,skill:'Fiskestød',text:'Fiskejæger. Hold F ved fiskestimer; også kød. Shift: fang fisk eller ram tæt bytte.',abilityCost:35,abilityTime:.25,abilityCooldown:3,diet:'piscivore'}
   });
   PLAYER_SPECIES.tyrannosaurus={name:'Tyrannosaurus rex',cost:120,hp:190,damage:38,speed:95,radius:32,cooldown:1.6,duration:1.1,range:96,skill:'Kongebrøl',text:'Kødæder. Langsomt knusende bid. Shift: brøl skræmmer almindelige dyr i nærheden; bosser er immune.',abilityCost:50,abilityTime:.9,abilityCooldown:6,diet:'carnivore'};
@@ -284,6 +284,13 @@
   // Stamina tuning (overhaul phase 1): slower refill so abilities are a decision, not a reflex.
   const STAMINA = { regen: 9, combatRegen: 5, delay: 1.5, windedBelow: 8, windedTime: 2, windedSpeed: .8 };
   // Critical hits are the only source of stagger on ordinary bites (overhaul phase 1).
+  // Ankylosaurus tail club: the swing covers `player`/`npc` degrees behind and beside the body; the cone in front of the head is safe.
+  const TAIL_ARC = { player: 270, npc: 270 };
+  // Per-level boss multipliers (index = level 1-8), for balance experiments.
+  const BOSS_TUNING = { hp: [1, 1, 1, 1, 1, 1, 1, 1], damage: [1, .75, 1, 1, 1, 1, 1, 1] }; // level 2 (Carl) was the run-ending wall in simulation
+  const tailFront = degrees => Math.cos(Math.PI * (360 - degrees) / 360); // dot above this = inside the safe front cone
+  // An ankylosaurus slam swings its tail toward where the target stood at windup (chargeX/Y); a target in front of its head is safe.
+  const tailMisses = (e, dx, dy, d) => e.kind === 'ankylosaurus' && d > 1 && -(dx * (e.chargeX || 0) + dy * (e.chargeY || 0)) / d > tailFront(TAIL_ARC.npc);
   const CRIT = { base: .08, multiplier: 1.5, stagger: .35, bossBreak: 25, bossBreakStagger: 1.2 };
   MUTATIONS.push(
     {id:'keenClaws',name:'Præcise træf',text:'+6 % chance for kritisk træf pr. rang. Kritiske træf gør 50 % ekstra skade og stagger.',icon:'serrated_teeth',max:3,rarity:'common'},
@@ -703,7 +710,8 @@
       const p = position || arena || this.hiddenSpawn(kind); if (!p) return null;
       const scale = 1 + r.stage * .22 + r.levelIndex * .04;
       const level=this.currentLevel(),hp = boss ? level.boss===kind&&r.campaign.length!==4?(level.mini?100+r.levelIndex*30:180+r.levelIndex*55):(220+r.stage*85) : base.hp*scale;
-      const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? (kind==='carnotaurus'?42:32) : base.radius, hp, maxHP: hp, speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? 20 + r.stage * 5 : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0, walk: 0, poseTime: 0, moving: false, direction: 'S', attackHit: false, attackRadius: kind === 'ankylosaurus' ? 90 : boss ? 130 : base.radius + 28 };
+      const tune=boss?(i=>[BOSS_TUNING.hp[i]??1,BOSS_TUNING.damage[i]??1])(r.levelIndex):[1,1];
+      const e = { id: ++this.nextId, kind, x: p.x, y: p.y, radius: boss ? (kind==='carnotaurus'?42:32) : base.radius, hp: hp*tune[0], maxHP: hp*tune[0], speed: Math.min(base.speed * (1 + r.stage * .08), 110), damage: boss ? (20 + r.stage * 5)*tune[1] : base.damage * (1 + r.stage * .18), boss, facingX: 0, facingY: 1, cooldown: boss ? 1.8 : .5, mode: 'chase', timer: 0, chargeX: 0, chargeY: 1, bleed: 0, hit: 0, stagger: 0, pattern: 0, walk: 0, poseTime: 0, moving: false, direction: 'S', attackHit: false, attackRadius: kind === 'ankylosaurus' ? 90 : boss ? 130 : base.radius + 28 };
       if(arena){e.arenaStyle=arena.style;const clearingRadius=arena.style==='grove'?100:arena.style==='ridge'?150:200;r.map.cover=r.map.cover.filter(d=>Math.hypot(d.x-arena.x,d.y-arena.y)>clearingRadius);r.map.decorations=r.map.decorations.filter(d=>Math.hypot(d.x-arena.x,d.y-arena.y)>(arena.style==='grove'?100:arena.style==='ridge'?150:200));r.map.rocks=r.map.rocks.filter(d=>Math.hypot(d.x-arena.x,d.y-arena.y)>120);}
       e.stamina=100;e.skillCooldown=1.5;e.skillDelay=0;if(boss)e.bossName=level.boss===kind?level.bossName:STAGES[r.stage].bossName;
       e.sex=seeded(r.seed^Math.imul(e.id,123457))()<.5?'female':'male';e.pattern=e.pattern||0; e.visualScale=['deinosuchus','tyrannosaurus'].includes(kind)||boss&&kind==='carnotaurus'?2:1; e.herdId=['compy','parasaurolophus','gallimimus','pachycephalosaurus'].includes(kind)?(r.enemies.find(o=>o.kind===kind&&Math.hypot(o.homeX-p.x,o.homeY-p.y)<220)?.herdId||kind+':'+e.id):null;e.naturalTime=(e.id*1.73)%12;e.activity='roam';e.territoryRadius=['carnotaurus','ankylosaurus','deinosuchus','triceratops','tyrannosaurus'].includes(kind)?330:180; e.bossPhase = 1; e.attackCycle = 0; e.attackName = ''; e.followUp = false; e.trailTimer = 0; e.homeX = p.x; e.homeY = p.y; e.alert = boss; e.lastAttackedAt = -1000; e.disengagedUntil = 0; r.enemies.push(e); return e;
@@ -861,7 +869,7 @@
       let hits = 0, strong = false;
       for (const e of r.enemies) {
         const dx = e.x - r.player.x, dy = e.y - r.player.y, dist = Math.hypot(dx, dy);
-        if (dist > PLAYER_SPECIES[r.species].range + e.radius + 10 * r.mutations.reach + (r.species === 'ankylosaurus' ? 12 * r.mutations.sweep : 0) || (r.species !== 'ankylosaurus' && dist > 24 && (dx * dir[0] + dy * dir[1]) / dist < .35)) continue;
+        if (dist > PLAYER_SPECIES[r.species].range + e.radius + 10 * r.mutations.reach + (r.species === 'ankylosaurus' ? 12 * r.mutations.sweep : 0) || (r.species !== 'ankylosaurus' && dist > 24 && (dx * dir[0] + dy * dir[1]) / dist < .35) || (r.species === 'ankylosaurus' && dist > 24 && (dx * dir[0] + dy * dir[1]) / dist > tailFront(TAIL_ARC.player))) continue;
         const frontal = dist > 0 && ((-dx * e.facingX - dy * e.facingY) / dist > .6);
         const armor = ['triceratops', 'ankylosaurus'].includes(e.kind) && frontal ? .5 : 1;
         const vulnerable = e.boss && (e.mode === 'broken' || e.mode === 'recover' && !frontal);
@@ -1142,7 +1150,7 @@
         e.timer-=dt;
         if(!e.attackHit&&e.timer<=.12){e.attackHit=true;const dot=(dx*e.facingX+dy*e.facingY)/d;
           if(e.pattern===3&&FEATURES.bossSignatures)this.roarStampede(e);
-          if(d<e.attackRadius&&(e.pattern>=2||dot>.35)){if(e.pattern===3){r.stamina=Math.max(0,r.stamina-40);r.slow=1;if(FEATURES.bossSignatures)r.roarDebuff=4;}else{this.damage(e.damage+(e.pattern===2?5:0),e);if(e.kind==='deinosuchus'&&e.pattern===2&&e.bossPhase===2)r.slow=.8;}}
+          if(d<e.attackRadius&&(e.pattern>=2||dot>.35)&&!(e.pattern===2&&tailMisses(e,dx,dy,d))){if(e.pattern===3){r.stamina=Math.max(0,r.stamina-40);r.slow=1;if(FEATURES.bossSignatures)r.roarDebuff=4;}else{this.damage(e.damage+(e.pattern===2?5:0),e);if(e.kind==='deinosuchus'&&e.pattern===2&&e.bossPhase===2)r.slow=.8;}}
           this.burst(e.x,e.y,'dust',20,e.id);r.shake=Math.max(r.shake,.14);
         }
         if(e.timer<=0){
@@ -1208,7 +1216,7 @@
         if (!e.attackHit && e.timer <= .12) {
           e.attackHit = true; this.burst(e.x, e.y, 'dust', e.mode === 'slam' ? 20 : 8, e.id);
           const dot = (dx * e.facingX + dy * e.facingY) / d;
-          if (d < e.attackRadius && (e.mode === 'slam' || dot > .35)) this.damage(e.damage + (e.mode === 'slam' ? 4 : 0),e);
+          if (d < e.attackRadius && (e.mode === 'slam' || dot > .35) && !(e.mode === 'slam' && tailMisses(e, dx, dy, d))) this.damage(e.damage + (e.mode === 'slam' ? 4 : 0),e);
           if (e.mode === 'slam') r.shake = Math.max(r.shake, .12);
         }
         if (e.timer <= 0) { e.mode = 'recover'; e.timer = e.spin ? .7 : e.pattern === 2 ? 1.8 : 1.15; e.spin = false; } return;
@@ -1441,7 +1449,7 @@
         if (!e.attackHit && e.timer <= .1) {
           e.attackHit = true;
           const facingDot = (dx * e.facingX + dy * e.facingY) / d;
-          if (d < e.attackRadius && (e.mode === 'slam' || facingDot > .2)) this.damage(e.damage + (e.boss ? 6 : 0),e);
+          if (d < e.attackRadius && (e.mode === 'slam' || facingDot > .2) && !(e.mode === 'slam' && tailMisses(e, dx, dy, d))) this.damage(e.damage + (e.boss ? 6 : 0),e);
         }
         if (e.timer <= 0) { e.mode = 'recover'; e.timer = e.kind === 'compy' ? .35 : 1.6; }
       } else if (e.mode === 'recover') {
@@ -2115,5 +2123,5 @@
     return{x:d>reach*.7?dx/d:dx/d*.15,y:d>reach*.7?dy/d:dy/d*.15,attack:d<reach,mode:'fight',target:t.id};
   }
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { TAIL_ARC, BOSS_TUNING, speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });

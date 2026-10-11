@@ -591,6 +591,7 @@
     function telegraphShape(r,e){
       if(e.boss&&(e.pattern===4||e.pattern===5))return{type:'circle',radius:e.attackRadius,at:{x:e.targetX,y:e.targetY},icon:e.pattern===4?'◌':'✺'}; // B1c dive / ASKEKAST at the target
       if(e.pattern===1||e.kind==='compy'&&!e.speciesSkill&&e.pattern!==2)return{type:'cone',angle:Math.atan2(e.facingY,e.facingX),cone:Math.acos(e.boss?.35:.2),radius:e.attackRadius,icon:'▼'};
+      if(e.kind==='ankylosaurus'&&e.pattern===2&&!e.spin&&!e.speciesSkill&&C.TAIL_ARC&&C.TAIL_ARC.npc<360)return{type:'cone',angle:Math.atan2(e.chargeY||0,e.chargeX||1),cone:Math.PI*C.TAIL_ARC.npc/360,radius:e.attackRadius,icon:'◎'}; // tail arc: the cone in front of the head stays clear
       if(e.pattern>=2||e.kind==='compy')return{type:'circle',radius:e.attackRadius,icon:e.spin?'↻':e.pattern===3?'≋':'◎'};
       const lane=e.boss||e.speciesSkill,length=e.speciesSkill?C.PLAYER_SPECIES[e.kind].speed*3*C.PLAYER_SPECIES[e.kind].abilityTime:e.boss?(e.kind==='carnotaurus'?(e.bossPhase===2?370:320)*.58:(e.kind==='deinosuchus'?(e.bossPhase===2?390:300):370)*.65):130;
       return{type:'lane',capsule:!!lane,length,half:lane?e.radius+r.player.radius+(e.speciesSkill?5:3):28,icon:'»'};
@@ -872,7 +873,7 @@
       for(const ambient of map.ambience || [])if(ambient.x>view.x-40&&ambient.x<view.x+canvas.width+40&&ambient.y>view.y-40&&ambient.y<view.y+canvas.height+40)insect(ambient,r?r.seconds:0);
       if (r) {
         if (r.species === 'ankylosaurus' && r.pounce > 0) { ctx.strokeStyle='#a2d4c1'; ctx.lineWidth=4; ctx.beginPath(); ctx.arc(Math.round(r.player.x),Math.round(r.player.y),38,0,Math.PI*2); ctx.stroke(); }
-        if (r.species === 'ankylosaurus' && r.bite > 0) { ctx.strokeStyle='#efdfb8'; ctx.lineWidth=3; ctx.beginPath(); ctx.arc(Math.round(r.player.x),Math.round(r.player.y),C.PLAYER_SPECIES.ankylosaurus.range+10*r.mutations.reach+12*r.mutations.sweep,0,Math.PI*2); ctx.stroke(); }
+        if (r.species === 'ankylosaurus' && r.bite > 0) { ctx.strokeStyle='#efdfb8'; ctx.lineWidth=3; ctx.beginPath(); const tail={E:Math.PI,S:-Math.PI/2,W:0,N:Math.PI/2}[(r.attack&&r.attack.facing)||r.player.facing]||0,half=Math.PI*Math.min(360,(C.TAIL_ARC||{player:360}).player)/360; ctx.arc(Math.round(r.player.x),Math.round(r.player.y),C.PLAYER_SPECIES.ankylosaurus.range+10*r.mutations.reach+12*r.mutations.sweep,tail-half,tail+half); ctx.stroke(); }
         if(!renderOverride){ctx.fillStyle='#69a4a0'; ctx.strokeStyle='#101713'; ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(Math.round(r.player.x)-7,Math.round(r.player.y)-84); ctx.lineTo(Math.round(r.player.x)+7,Math.round(r.player.y)-84); ctx.lineTo(Math.round(r.player.x),Math.round(r.player.y)-73); ctx.closePath(); ctx.fill(); ctx.stroke();}
         if(!renderOverride&&r.eating?.kind!=='fish'&&!r.effects.some(e=>e.kind==='fishCatch'))label(r.jonas ? 'DIG · JONAS' : 'DIG · ' + C.PLAYER_SPECIES[r.species].name, r.player.x, r.player.y - 100, '#69a4a0');
         if (r.bite > 0) {

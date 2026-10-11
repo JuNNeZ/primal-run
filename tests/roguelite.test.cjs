@@ -15,11 +15,12 @@ test('random wilderness is repeatable by seed, varies between seeds and keeps bo
   assert.equal(m.sites.length,6);assert.ok(m.sites.every(s=>Math.hypot(s.x-480,s.y-340)>650));
  }
 });
-test('each class has a distinct primary attack; Ankylosaurus tail hits behind it',()=>{
+test('each class has a distinct primary attack; Ankylosaurus tail hits behind and beside it, never in front of its head',()=>{
  for(const species of Object.keys(C.PLAYER_SPECIES)){
   const g=make(species),r=g.run;r.player.facing='E';const front=g.spawn('compy',{x:520,y:340}),back=g.spawn('compy',{x:440,y:340});g.resolveBite('E');
-  assert.equal(front.hp,C.SPECIES.compy.hp-C.PLAYER_SPECIES[species].damage);assert.equal(back.hp,species==='ankylosaurus'?C.SPECIES.compy.hp-12:C.SPECIES.compy.hp);
+  assert.equal(front.hp,species==='ankylosaurus'?C.SPECIES.compy.hp:C.SPECIES.compy.hp-C.PLAYER_SPECIES[species].damage);assert.equal(back.hp,species==='ankylosaurus'?C.SPECIES.compy.hp-12:C.SPECIES.compy.hp);
  }
+ const g=make('ankylosaurus'),side=g.spawn('compy',{x:480,y:290});g.run.player.facing='E';g.resolveBite('E');assert.equal(side.hp,C.SPECIES.compy.hp-12,'270° arc reaches the flanks');
 });
 test('ability costs, immunity, contact damage once per animal, and defensive brace differ by class',()=>{
  for(const species of Object.keys(C.PLAYER_SPECIES)){
@@ -54,4 +55,13 @@ test('later bosses have locked warnings, phase two, and flank recovery; T. rex r
   e.mode='recover';e.timer=2;e.facingX=0;e.facingY=-1;r.player.x=e.x;r.player.y=e.y+50;r.player.facing='N';const hp=e.hp;g.resolveBite('N');assert.equal(e.hp,hp-12.5);
  }
  const g=make(),r=g.run;r.stage=3;const e=g.spawn('tyrannosaurus',{x:480,y:260},true);e.cooldown=0;g.enemyStep(e,.01);assert.equal(e.pattern,3);e.timer=.001;g.enemyStep(e,.01);g.enemyStep(e,.14);assert.equal(r.stamina,60);assert.equal(r.health,80);
+});
+test('an Ankylosaurus tail slam misses a player standing in front of its head',()=>{
+ // The slam was aimed (chargeX) toward the player: tail side, hurt. Aimed away: the player stands at its head, safe.
+ for(const [label,chargeX,hurt] of [['tail',-1,true],['head',1,false]]){
+  const g=make('velociraptor'),r=g.run,e=g.spawn('ankylosaurus',{x:r.player.x+60,y:r.player.y});
+  Object.assign(e,{alert:true,mode:'slam',pattern:2,timer:.1,attackHit:false,attackRadius:100,chargeX,chargeY:0,cooldown:99,lastAttackedAt:r.seconds});
+  const health=r.health;r.invulnerable=0;g.step(1/30,{});
+  assert.equal(r.health<health,hurt,label);
+ }
 });
