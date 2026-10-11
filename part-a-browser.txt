@@ -1,0 +1,1 @@
+PASS part A: reused tail swings, low-health gait, hit flash, pause
