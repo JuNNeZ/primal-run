@@ -230,6 +230,20 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
     checks.push('Languages: es/ar/hi/ur/yue/ta/pcm/ru menus translated, RTL for ar/ur, no horizontal scroll at 390 px');
     await page.setViewportSize({ width: 960, height: 640 });
 
+    // ---- Species cards: same layout for every species, sorted by DNA cost (free, DNA ascending, then achievements), translated.
+    for (const [lang, w] of [['da', 960], ['en', 960], ['de', 390], ['ar', 390]]) {
+      await page.setViewportSize({ width: w, height: w === 390 ? 844 : 640 });
+      await open(lang, { dna: 100 }); await page.evaluate(() => { PrimalI18n.missing.clear(); primalRun.game.phase = 'species'; }); await page.waitForSelector('[data-species-card]');
+      const sc = await page.evaluate(() => ({ order: [...document.querySelectorAll('[data-species-card]')].map(a => a.dataset.speciesCard), expected: PrimalCore.speciesOrder(),
+        cards: [...document.querySelectorAll('[data-species-card]')].map(a => ['.species-price', '.species-diet', 'h2', '.species-role', '.species-text', '.species-skill b', '.species-skill p'].every(q => a.querySelector(q) && a.querySelector(q).textContent.trim()) && a.querySelectorAll('.species-stat').length === 3),
+        danish: [...document.querySelectorAll('[data-species-card]')].flatMap(a => { const d = PrimalCore.PLAYER_SPECIES[a.dataset.speciesCard]; return [['.species-role', d.role], ['.species-text', d.text], ['.species-skill p', d.skillText]].filter(([q, da]) => a.querySelector(q).textContent.trim() === da).map(([, da]) => da); }), w: [document.documentElement.scrollWidth, window.innerWidth] }));
+      assert.deepEqual(sc.order, sc.expected); assert.ok(sc.cards.every(Boolean), lang + ' incomplete species card'); assert.ok(sc.w[0] <= sc.w[1], lang + ' horizontal scroll');
+      if (lang !== 'da') assert.deepEqual(sc.danish, [], lang + ' untranslated species card text');
+      if (lang === 'da' || lang === 'de') await page.screenshot({ path: path.join(shots, 'part_b_species_cards_' + lang + '.png') });
+    }
+    checks.push('Species cards: order ' + (await page.evaluate(() => PrimalCore.speciesOrder().join(' > '))) + '; all cards complete in da/en/de/ar, card texts translated');
+    await page.setViewportSize({ width: 960, height: 640 });
+
     assert.deepEqual(errors, []);
     console.log('part-b browser OK\n- ' + checks.join('\n- '));
   } finally { await browser.close(); }
