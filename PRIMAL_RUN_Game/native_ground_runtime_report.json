@@ -2,6 +2,7 @@
   "status": "PASS",
   "runtime": "standalone Chromium",
   "checks": [
+    "main menu uses native ground",
     "four preserved tile families",
     "native pixels and unsmoothed binary patch fringe",
     "textured mud and drought ring",
