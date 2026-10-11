@@ -99,11 +99,12 @@
           <label class="check skip-intro"><input type="checkbox" id="skip-intro" ${game.save.settings.skipIntro ? 'checked' : ''}> Spring introen over næste gang</label>
           <div class="actions">${button('menu', '← Tilbage')}${button('begin', 'START JAGTEN →', 'primary')}</div></section>`;
       } else if (phase === 'species') {
-        screen.innerHTML = `<section class="panel">${heading('PERMANENT ARTSARKIV', 'Vælg dinosaur', 'DNA-unlocks beholdes ved død. Valget gælder næste jagt. ' + game.save.dna + ' DNA i banken.')}<div class="upgrade-grid species-grid">${Object.entries(C.PLAYER_SPECIES).sort(([a],[b])=>a==='deinonychus'?-1:b==='deinonychus'?1:0).map(([id, d]) => {
+        screen.innerHTML = `<section class="panel">${heading('PERMANENT ARTSARKIV', 'Vælg dinosaur', 'DNA-unlocks beholdes ved død. Valget gælder næste jagt. ' + game.save.dna + ' DNA i banken.')}<div class="upgrade-grid species-grid">${(C.FEATURES.speciesCards?C.speciesOrder().map(id=>[id,C.PLAYER_SPECIES[id]]):Object.entries(C.PLAYER_SPECIES).sort(([a],[b])=>a==='deinonychus'?-1:b==='deinonychus'?1:0)).map(([id, d]) => {
           const unlocked = game.save.unlockedSpecies.includes(id), selected = game.save.selectedSpecies === id;
           const path = C.playerFrame(id,'idle','S',0);
           const lock = C.SPECIES_UNLOCKS[id], achievement = lock.achievement && C.ACHIEVEMENTS.find(a => a.id === lock.achievement);
           const buttonText = selected ? 'VALGT' : unlocked ? 'VÆLG' : achievement ? '🔒 ' + achievement.name.toUpperCase() : 'LÅS OP · ' + d.cost + ' DNA';
+          if (C.FEATURES.speciesCards) return speciesCard(id, d, { unlocked, selected, path, achievement, buttonText });
           return `<article class="${selected ? 'selected-species' : ''}${unlocked ? '' : ' locked-species'}">${imageTag(path)}<h2>${d.name}</h2><p>${d.text}</p><small>${d.hp} LIV · ${d.damage} SKADE · ${d.speed} FART</small>${!unlocked && achievement ? `<p class="unlock-hint">${achievement.text}</p>` : ''}<button data-species="${id}" ${selected || !unlocked && (achievement || game.save.dna < d.cost) ? 'disabled' : ''}>${buttonText}</button></article>`;
         }).join('')}</div><div class="skin-picker"><h2>Farvedragt</h2><div>${Object.entries(C.SKINS).map(([id, skin]) => { const owned = game.save.skins.includes(id), req = skin.achievement && C.ACHIEVEMENTS.find(a => a.id === skin.achievement); return `<button data-skin="${id}" class="${game.save.skin === id ? 'selected' : ''}" ${owned ? '' : 'disabled'} title="${owned ? skin.name : 'Låses op af: ' + (req ? req.name : '')}">${owned ? '' : '🔒 '}${skin.name}${skin.species ? ' <small>' + (owned ? 'kun ' + speciesName(skin.species) : req.text) + '</small>' : ''}</button>`; }).join('')}</div>${C.FEATURES.fishKing && !game.save.skins.includes('fishKing') ? `<p class="fine fish-king-progress">${I18N.tf('Fiskekonge: {0}/{1} fisk som Baryonyx', Math.min(C.FISH_KING, game.save.baryonyxFish || 0), C.FISH_KING)}</p>` : ''}</div><p class="fine">Et fantasiunivers: arterne kommer fra forskellige perioder. Compy: sen Jura. Utahraptor: tidlig Kridt. Baryonyx: tidlig Kridt. De øvrige arter: sen Kridt. Deinosuchus er en krokodilleslægt.</p>${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'achievements') {
@@ -175,6 +176,18 @@
     let recordsTab='fame',recordsScope='allTime';
     const R=C.RECORDS,CAUSES={compy:'Ædt af en compy',sub_minute:'Død inden for et minut',herbivore_on_herbivore:'Planteæder mod planteæder',lava:'Lava',level1_boss:'Palle på første bane',fleeing_prey:'Byttedyr på flugt',boss_other:'En anden boss',enemy_other:'Et andet dyr'};
     const speciesName=id=>C.PLAYER_SPECIES[id]?.name||C.SPECIES_LABELS[id]||id;
+    // Species selection card: same layout for every species (role, diet, playstyle, ability, stat bars, unlock).
+    const SPECIES_MAX=['hp','damage','speed'].reduce((m,k)=>(m[k]=Math.max(...Object.values(C.PLAYER_SPECIES).map(p=>p[k])),m),{});
+    const speciesCard=(id,d,{unlocked,selected,path,achievement,buttonText})=>{
+      const diet={carnivore:'Kødæder',herbivore:'Planteæder',omnivore:'Altæder',piscivore:'Fisk og kød'}[d.diet]||'Kødæder';
+      const price=achievement?`<span class="species-price achievement-price">🏆 <span>Bedrift</span></span>`:d.cost?`<span class="species-price">${d.cost} DNA</span>`:`<span class="species-price free-price">Gratis</span>`;
+      const stat=(k,label)=>`<div class="species-stat"><span>${label}</span><i><b style="width:${Math.round(100*d[k]/SPECIES_MAX[k])}%"></b></i><em>${d[k]}</em></div>`;
+      const seconds=String(d.abilityCooldown).replace('.',I18N.lang==='da'?',':'.');
+      return `<article data-species-card="${id}" class="species-card${selected?' selected-species':''}${unlocked?'':' locked-species'}"><header>${price}<span class="species-diet diet-${d.diet}">${diet}</span></header>${imageTag(path)}<h2>${d.name}</h2><p class="species-role">${d.role}</p><p class="species-text">${d.text}</p>`
+        +`<div class="species-skill"><div><kbd>${keyLabel('ability')}</kbd><b>${d.skill}</b></div><p>${d.skillText}</p><small><span>${d.abilityCost} stamina</span> · <span>${seconds} s</span></small></div>`
+        +`<div class="species-stats">${stat('hp','Liv')}${stat('damage','Skade')}${stat('speed','Fart')}</div>`
+        +`${!unlocked&&achievement?`<p class="unlock-hint">${achievement.text}</p>`:''}<button data-species="${id}" ${selected||!unlocked&&(achievement||game.save.dna<d.cost)?'disabled':''}>${buttonText}</button></article>`;
+    };
     function bossName(id){const m=/^(\w+)@(\d)$/.exec(id||'');return m&&C.LEVELS[+m[2]-1]?C.LEVELS[+m[2]-1].bossName:C.SPECIES_LABELS[String(id).split(':').pop()]||id;}
     function recordValue(def,x){
       if(!x)return '—';
