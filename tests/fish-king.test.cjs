@@ -46,6 +46,7 @@ test('the skin only applies to Baryonyx; the flag off stops counting; the Baryon
   try { const { g, school } = river('baryonyx'); g.catchFish(school); assert.equal(g.save.baryonyxFish, 0); } finally { C.FEATURES.fishKing = true; }
   const fish = []; const core = C.Game.prototype.catchFish;
   C.Game.prototype.catchFish = function (...a) { const n = core.apply(this, a); fish.push(this.save.baryonyxFish); return n; };
-  try { const o = runOne(C, { species: 'baryonyx', style: 'average', seed: 7, seconds: 240, dt: 1 / 30 }); assert.ok(o.fishCaught > 0, 'the bot fishes'); assert.equal(fish[fish.length - 1], o.fishCaught); }
+  // Natural shorelines change the old seed-7 combat route; seed 83 reaches fishing water.
+  try { const o = runOne(C, { species: 'baryonyx', style: 'average', seed: 83, seconds: 240, dt: 1 / 30 }); assert.ok(o.fishCaught > 0, 'the bot fishes'); assert.equal(fish[fish.length - 1], o.fishCaught); }
   finally { C.Game.prototype.catchFish = core; }
 });

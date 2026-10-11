@@ -10,7 +10,7 @@ for (const name of ['native_behavior_review.html','native_behavior_manifest.json
 for (const name of ['previews', 'balance_runs']) {
   if (fs.existsSync(path.join(game, name))) fs.cpSync(path.join(game, name), path.join(out, name), {recursive:true});
 }
-for (const name of ['sprite_atlas_manifest.json','sprite_atlas_validation.json','presentation_manifest.json','presentation_atlas_runtime_report.json','presentation_implementation_validation.json','SPRITE_RULES_PRESENTATION.md','PRESENTATION_AND_ATLAS.md','GROUND_REUSE.md','ground_reuse_manifest.json','ground_reuse_validation.json','native_ground_runtime_report.json','native_ground_implementation_validation.json','SPRITE_RULES_GROUND.md','PAGES_GROUND_RELEASE.md','pages_build_runtime_report.json','SHORE_BLEND.md','shore_blend_runtime_report.json']) fs.copyFileSync(path.join(game,name),path.join(out,name));
+for (const name of ['sprite_atlas_manifest.json','sprite_atlas_validation.json','presentation_manifest.json','presentation_atlas_runtime_report.json','presentation_implementation_validation.json','SPRITE_RULES_PRESENTATION.md','PRESENTATION_AND_ATLAS.md','GROUND_REUSE.md','ground_reuse_manifest.json','ground_reuse_validation.json','native_ground_runtime_report.json','native_ground_implementation_validation.json','SPRITE_RULES_GROUND.md','PAGES_GROUND_RELEASE.md','pages_build_runtime_report.json','SHORE_BLEND.md','shore_blend_runtime_report.json','NATURAL_LAKES_AND_FISHING.md','natural_fishing_runtime_report.json']) fs.copyFileSync(path.join(game,name),path.join(out,name));
 fs.writeFileSync(path.join(out, '.nojekyll'), '');
 // Pages caches stable URLs. Version scripts and images together so new atlas
 // coordinates cannot be paired with a cached sheet from the previous release.

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "eastShadow": [
+    25.299999999999997,
+    9.613999999999999
+  ],
+  "northShadow": [
+    9.613999999999999,
+    25.299999999999997
+  ],
+  "capacity": 17,
+  "rarity": 2,
+  "food": 4,
+  "stock": 16,
+  "checks": [
+    "float before catch; native fish on catch",
+    "shore fishing and finite stock",
+    "rarity and food value",
+    "permanent player ring removed",
+    "shadow follows facing",
+    "pause freezes world and catch effect",
+    "empty fishing spot remains visible",
+    "no browser errors"
+  ]
+}

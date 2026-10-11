@@ -167,12 +167,12 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     // Food
     const diet = config.diet, foods = [];
     if (diet === 'herbivore' || diet === 'omnivore') foods.push(...r.map.forage.filter(f => !f.depleted));
-    if (diet === 'piscivore') foods.push(...r.map.fishSchools.filter(f => f.stock > 0));
+    if (diet === 'piscivore') foods.push(...r.map.fishSchools.filter(f => f.stock > 0 && C.isWater(r.stage,r.map,f,14)));
     if (diet !== 'herbivore') foods.push(...r.pickups.filter(f => f.corpseId !== undefined));
     const food = nearest(foods);
     const hungry = !boss || hpFrac < 0.5;
     if (food && hungry && (!hostile.length || dist(food) < 100 || R() < S.foodGreed * 0.1)) {
-      if (dist(food) < 42) return { eat: true };
+      if (food.kind === 'fish' && C.fishReach ? C.fishReach(r.map,p,food) : dist(food) < 42) return { eat: true };
       return steer(food.x, food.y);
     }
     // Pick up DNA/heal pickups
