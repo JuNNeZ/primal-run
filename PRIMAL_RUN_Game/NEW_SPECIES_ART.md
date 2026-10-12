@@ -98,6 +98,13 @@ Efter eksport kører man `python tools/build_game.py`, `npm test`, `npm run vali
 `npm run validate:enemy-sprites` og `npm run simulate:quick`.
 Spinosaurus har allerede visualScale 2 i spillet (`STATIC_SCALE`), ligesom tyrannosaurus og deinosuchus.
 
+## Animationsguide og kontrol
+
+`tools/rig_animate.py` laver en guide pr. art: 120 frames i de samme tilstande, retninger og navne som ovenfor,
+med ben der går (IK og plantede fødder), samme kamera og lys i S/N/E/W, og en JSON med led og fodkontakt pr.
+frame. `tools/validate_rig_frames.py` kontrollerer færdige frames mod guiden og afviser stillestående ben,
+forkert benfase og skift i kamera, skala eller anker mellem retninger. Se `tools/RIG_ANIMATOR.md`.
+
 ## Små omgivelsesdyr (ekstra)
 
 Disse ligger i `assets/new_species/ambient/<navn>_<frame>.png`. De er tegnet som `assets/ecology/beetle_0.png`

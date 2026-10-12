@@ -12,3 +12,6 @@ Thumbs.db
 
 # Local simulator output
 PRIMAL_RUN_Game/balance_runs/playstyle_*/runs.jsonl
+
+# Rig guide frames (regenerate with: python tools/rig_animate.py --species <id>)
+PRIMAL_RUN_Rig/
