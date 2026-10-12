@@ -1,0 +1,8 @@
+libGD.js based on GDevelop 5.6.283-0
+Initializing GDJS platform...
+* Loading builtin extensions... done.
+* Loading other extensions... done.
+Platform initialization ended.
+Copying all resources from /workspace/primal-run/PRIMAL_RUN_Game to /workspace/primal-polish-gdjs-final2...
+STATUS:   Scene 'PrimalRun': 21.3034340031445ms, 2 events, 2303 KB generated code
+PASS: GDevelop loaded/serialized the project and exported its GDJS runtime to /workspace/primal-polish-gdjs-final2

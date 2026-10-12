@@ -272,122 +272,30 @@
     {
       "species": "carnotaurus",
       "direction": "S",
-      "state": "idle",
-      "area_ratio": 1.037,
-      "adjacent_centroid_steps": [
-        0.139,
-        11.557,
-        6.856
-      ],
-      "loop_centroid_step": 18.273
-    },
-    {
-      "species": "carnotaurus",
-      "direction": "S",
-      "state": "walk",
-      "area_ratio": 1.064,
-      "adjacent_centroid_steps": [
-        0.83,
-        9.453,
-        3.793,
-        7.829,
-        2.214
-      ],
-      "loop_centroid_step": 22.752
-    },
-    {
-      "species": "carnotaurus",
-      "direction": "S",
-      "state": "run",
-      "area_ratio": 1.083,
-      "adjacent_centroid_steps": [
-        1.869,
-        9.911,
-        4.173,
-        6.879,
-        0.441
-      ],
-      "loop_centroid_step": 20.606
-    },
-    {
-      "species": "carnotaurus",
-      "direction": "S",
-      "state": "attack",
-      "area_ratio": 1.167,
-      "adjacent_centroid_steps": [
-        2.448,
-        7.728,
-        6.587,
-        3.75,
-        5.259
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "carnotaurus",
-      "direction": "S",
       "state": "death",
       "area_ratio": 1.654,
       "adjacent_centroid_steps": [
-        3.769,
-        9.522,
-        8.332,
-        4.487,
-        9.249
+        6.228,
+        0.596,
+        13.701,
+        12.469,
+        4.565
       ],
       "loop_centroid_step": null
     },
     {
       "species": "carnotaurus",
-      "direction": "N",
+      "direction": "W",
       "state": "walk",
-      "area_ratio": 1.053,
+      "area_ratio": 1.06,
       "adjacent_centroid_steps": [
-        0.693,
-        3.551,
-        1.171,
-        1.405,
-        0.901
+        1.939,
+        1.191,
+        8.787,
+        1.97,
+        0.583
       ],
-      "loop_centroid_step": 7.391
-    },
-    {
-      "species": "carnotaurus",
-      "direction": "N",
-      "state": "run",
-      "area_ratio": 1.028,
-      "adjacent_centroid_steps": [
-        7.432,
-        2.723,
-        6.411,
-        1.626,
-        4.927
-      ],
-      "loop_centroid_step": 5.796
-    },
-    {
-      "species": "carnotaurus",
-      "direction": "N",
-      "state": "attack",
-      "area_ratio": 1.115,
-      "adjacent_centroid_steps": [
-        3.781,
-        1.977,
-        1.489,
-        4.48,
-        8.773
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "carnotaurus",
-      "direction": "N",
-      "state": "hurt",
-      "area_ratio": 1.037,
-      "adjacent_centroid_steps": [
-        8.166
-      ],
-      "loop_centroid_step": null
+      "loop_centroid_step": 10.561
     },
     {
       "species": "carnotaurus",
@@ -395,13 +303,27 @@
       "state": "run",
       "area_ratio": 1.186,
       "adjacent_centroid_steps": [
-        0.829,
-        4.76,
-        1.393,
-        2.172,
-        1.829
+        2.119,
+        2.537,
+        2.294,
+        8.253,
+        2.624
       ],
-      "loop_centroid_step": 8.084
+      "loop_centroid_step": 9.076
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "W",
+      "state": "attack",
+      "area_ratio": 1.105,
+      "adjacent_centroid_steps": [
+        1.803,
+        3.023,
+        0.869,
+        7.712,
+        3.838
+      ],
+      "loop_centroid_step": null
     },
     {
       "species": "ankylosaurus",
@@ -577,20 +499,6 @@
     },
     {
       "species": "pachycephalosaurus",
-      "direction": "S",
-      "state": "attack",
-      "area_ratio": 1.143,
-      "adjacent_centroid_steps": [
-        0.24,
-        0.527,
-        8.167,
-        8.298,
-        0.44
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "pachycephalosaurus",
       "direction": "N",
       "state": "idle",
       "area_ratio": 1.059,
@@ -678,6 +586,20 @@
         3.22
       ],
       "loop_centroid_step": 7.945
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "W",
+      "state": "attack",
+      "area_ratio": 1.102,
+      "adjacent_centroid_steps": [
+        1.564,
+        0.75,
+        1.141,
+        1.278,
+        7.882
+      ],
+      "loop_centroid_step": null
     },
     {
       "species": "pachycephalosaurus",
@@ -815,25 +737,15 @@
     },
     {
       "species": "deinonychus",
-      "direction": "S",
-      "state": "hurt",
-      "area_ratio": 1.059,
+      "direction": "W",
+      "state": "death",
+      "area_ratio": 1.137,
       "adjacent_centroid_steps": [
-        10.596
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "parasaurolophus",
-      "direction": "S",
-      "state": "attack",
-      "area_ratio": 1.102,
-      "adjacent_centroid_steps": [
-        1.352,
-        4.311,
-        3.047,
-        4.949,
-        8.422
+        2.57,
+        5.896,
+        6.825,
+        5.6,
+        11.792
       ],
       "loop_centroid_step": null
     },
@@ -878,20 +790,6 @@
     {
       "species": "parasaurolophus",
       "direction": "N",
-      "state": "attack",
-      "area_ratio": 1.14,
-      "adjacent_centroid_steps": [
-        1.013,
-        1.367,
-        1.159,
-        10.145,
-        4.03
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "parasaurolophus",
-      "direction": "N",
       "state": "death",
       "area_ratio": 1.479,
       "adjacent_centroid_steps": [
@@ -900,20 +798,6 @@
         3.188,
         2.54,
         1.83
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "parasaurolophus",
-      "direction": "W",
-      "state": "attack",
-      "area_ratio": 1.175,
-      "adjacent_centroid_steps": [
-        4.378,
-        2.276,
-        1.613,
-        4.41,
-        8.349
       ],
       "loop_centroid_step": null
     },
@@ -1035,25 +919,11 @@
       "state": "idle",
       "area_ratio": 1.023,
       "adjacent_centroid_steps": [
-        6.299,
-        2.509,
-        1.6
+        2.586,
+        0.948,
+        14.55
       ],
-      "loop_centroid_step": 10.372
-    },
-    {
-      "species": "triceratops",
-      "direction": "S",
-      "state": "walk",
-      "area_ratio": 1.048,
-      "adjacent_centroid_steps": [
-        1.558,
-        1.742,
-        4.659,
-        1.377,
-        1.298
-      ],
-      "loop_centroid_step": 7.316
+      "loop_centroid_step": 14.827
     },
     {
       "species": "triceratops",
@@ -1061,13 +931,27 @@
       "state": "run",
       "area_ratio": 1.068,
       "adjacent_centroid_steps": [
-        5.62,
-        2.356,
-        4.659,
-        4.704,
-        2.33
+        12.291,
+        10.198,
+        11.831,
+        5.169,
+        0.868
       ],
-      "loop_centroid_step": 13.272
+      "loop_centroid_step": 17.548
+    },
+    {
+      "species": "triceratops",
+      "direction": "S",
+      "state": "attack",
+      "area_ratio": 1.055,
+      "adjacent_centroid_steps": [
+        3.731,
+        3.799,
+        13.651,
+        13.929,
+        1.787
+      ],
+      "loop_centroid_step": null
     },
     {
       "species": "triceratops",
@@ -1075,25 +959,25 @@
       "state": "death",
       "area_ratio": 1.291,
       "adjacent_centroid_steps": [
-        3.33,
-        2.99,
-        1.744,
-        10.278,
-        5.716
+        1.148,
+        4.701,
+        3.765,
+        7.488,
+        2.743
       ],
       "loop_centroid_step": null
     },
     {
       "species": "triceratops",
       "direction": "E",
-      "state": "attack",
-      "area_ratio": 1.104,
+      "state": "death",
+      "area_ratio": 1.214,
       "adjacent_centroid_steps": [
-        5.544,
-        2.773,
-        8.55,
-        0.48,
-        0.853
+        5.643,
+        0.947,
+        7.757,
+        6.345,
+        4.211
       ],
       "loop_centroid_step": null
     },
@@ -1103,11 +987,11 @@
       "state": "idle",
       "area_ratio": 1.046,
       "adjacent_centroid_steps": [
-        10.268,
-        6.558,
-        4.71
+        1.053,
+        10.525,
+        2.45
       ],
-      "loop_centroid_step": 21.434
+      "loop_centroid_step": 11.479
     },
     {
       "species": "triceratops",
@@ -1115,13 +999,13 @@
       "state": "walk",
       "area_ratio": 1.083,
       "adjacent_centroid_steps": [
-        6.711,
-        8.139,
-        1.993,
-        1.786,
-        3.306
+        1.143,
+        7.482,
+        4.424,
+        3.033,
+        3.974
       ],
-      "loop_centroid_step": 21.479
+      "loop_centroid_step": 12.569
     },
     {
       "species": "triceratops",
@@ -1129,23 +1013,13 @@
       "state": "run",
       "area_ratio": 1.066,
       "adjacent_centroid_steps": [
-        9.834,
-        2.389,
-        6.558,
+        3.308,
+        5.311,
+        4.505,
         0.16,
-        2.965
+        3.919
       ],
-      "loop_centroid_step": 21.459
-    },
-    {
-      "species": "triceratops",
-      "direction": "N",
-      "state": "hurt",
-      "area_ratio": 1.019,
-      "adjacent_centroid_steps": [
-        7.714
-      ],
-      "loop_centroid_step": null
+      "loop_centroid_step": 13.862
     },
     {
       "species": "triceratops",
@@ -1153,11 +1027,11 @@
       "state": "death",
       "area_ratio": 1.228,
       "adjacent_centroid_steps": [
-        6.532,
-        4.753,
-        7.706,
-        5.925,
-        2.972
+        3.105,
+        4.354,
+        9.784,
+        1.655,
+        1.266
       ],
       "loop_centroid_step": null
     },
@@ -1167,13 +1041,13 @@
       "state": "walk",
       "area_ratio": 1.049,
       "adjacent_centroid_steps": [
-        0.768,
-        5.036,
-        0.906,
-        5.09,
-        3.708
+        0.871,
+        1.315,
+        1.007,
+        5.562,
+        1.648
       ],
-      "loop_centroid_step": 13.415
+      "loop_centroid_step": 7.598
     },
     {
       "species": "triceratops",
@@ -1181,13 +1055,13 @@
       "state": "run",
       "area_ratio": 1.067,
       "adjacent_centroid_steps": [
-        1.387,
-        5.089,
-        1.484,
-        4.576,
-        3.854
+        14.426,
+        2.96,
+        2.705,
+        4.288,
+        4.481
       ],
-      "loop_centroid_step": 12.57
+      "loop_centroid_step": 13.24
     },
     {
       "species": "triceratops",
@@ -1195,7 +1069,7 @@
       "state": "hurt",
       "area_ratio": 1.008,
       "adjacent_centroid_steps": [
-        12.745
+        11.18
       ],
       "loop_centroid_step": null
     },
@@ -1205,11 +1079,11 @@
       "state": "death",
       "area_ratio": 1.109,
       "adjacent_centroid_steps": [
-        2.335,
-        7.648,
-        7.34,
-        6.758,
-        4.66
+        2.413,
+        6.869,
+        10.13,
+        7.868,
+        3.404
       ],
       "loop_centroid_step": null
     },
@@ -1219,11 +1093,11 @@
       "state": "idle",
       "area_ratio": 1.046,
       "adjacent_centroid_steps": [
-        6.244,
-        4.754,
-        5.464
+        1.224,
+        1.312,
+        8.259
       ],
-      "loop_centroid_step": 16.431
+      "loop_centroid_step": 9.115
     },
     {
       "species": "tyrannosaurus",
@@ -1231,13 +1105,13 @@
       "state": "walk",
       "area_ratio": 1.147,
       "adjacent_centroid_steps": [
-        1.39,
-        6.886,
-        5.38,
-        6.052,
-        3.909
+        3.705,
+        14.589,
+        2.106,
+        2.979,
+        1.548
       ],
-      "loop_centroid_step": 10.555
+      "loop_centroid_step": 9.623
     },
     {
       "species": "tyrannosaurus",
@@ -1245,13 +1119,13 @@
       "state": "run",
       "area_ratio": 1.128,
       "adjacent_centroid_steps": [
-        8.329,
-        8.873,
-        14.092,
-        7.547,
-        3.588
+        7.271,
+        5.809,
+        10.278,
+        6.152,
+        3.357
       ],
-      "loop_centroid_step": 13.074
+      "loop_centroid_step": 15.429
     },
     {
       "species": "tyrannosaurus",
@@ -1259,11 +1133,11 @@
       "state": "attack",
       "area_ratio": 1.091,
       "adjacent_centroid_steps": [
-        8.4,
-        6.512,
-        10.302,
-        5.507,
-        3.617
+        14.881,
+        6.932,
+        5.152,
+        3.116,
+        2.62
       ],
       "loop_centroid_step": null
     },
@@ -1273,27 +1147,13 @@
       "state": "death",
       "area_ratio": 1.439,
       "adjacent_centroid_steps": [
-        4.144,
-        11.405,
-        5.149,
-        5.773,
-        6.591
+        10.157,
+        7.971,
+        5.21,
+        2.621,
+        7.512
       ],
       "loop_centroid_step": null
-    },
-    {
-      "species": "tyrannosaurus",
-      "direction": "E",
-      "state": "walk",
-      "area_ratio": 1.044,
-      "adjacent_centroid_steps": [
-        0.605,
-        1.77,
-        1.206,
-        2.219,
-        6.154
-      ],
-      "loop_centroid_step": 10.061
     },
     {
       "species": "tyrannosaurus",
@@ -1301,16 +1161,54 @@
       "state": "attack",
       "area_ratio": 1.109,
       "adjacent_centroid_steps": [
-        6.217,
-        5.319,
-        0.99,
-        3.99,
-        7.954
+        2.624,
+        2.422,
+        13.954,
+        15.258,
+        12.039
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "E",
+      "state": "death",
+      "area_ratio": 1.093,
+      "adjacent_centroid_steps": [
+        3.356,
+        2.922,
+        1.509,
+        1.012,
+        11.118
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "W",
+      "state": "hurt",
+      "area_ratio": 1.006,
+      "adjacent_centroid_steps": [
+        8.679
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "W",
+      "state": "death",
+      "area_ratio": 1.249,
+      "adjacent_centroid_steps": [
+        2.422,
+        1.504,
+        3.635,
+        10.98,
+        7.903
       ],
       "loop_centroid_step": null
     }
   ],
-  "visual_result": "REQUIRES_SOURCE_POLISH",
+  "visual_result": "SOURCE_POLISH_IMPLEMENTED",
   "production_approved": false,
   "metric_scope": "Centroid/area changes are review flags. Tail swing, limb motion and death can legitimately change them. Fixed declared hips do not prove fixed drawn hips. No bbox recentering or pixel edits.",
   "runtime_policy": {
@@ -1319,11 +1217,13 @@
     "attack": "gameplay duration/contact timing; species weapon differs; six poses in order",
     "extras": "diet-specific forage/drink/sleep/scratch and wounded poses are separate overlays, with documented native fallbacks"
   },
-  "known_art_issues": [
-    "Tyrannosaurus N body volume varies between preserved idle/attack and revised walk/run",
-    "Cross-state matching of independently generated Triceratops/Pachy/Galli/Para attacks needs polish",
-    "Generated gait/loop body and colour landmarks require visual review; source centroids are not anatomical pivots",
-    "Deinonychus S hurt poses shift visibly; keep prototype until source hips/anatomy are reviewed"
+  "source_review": "ANIMATION_POLISH.md",
+  "source_facts": [
+    "Tyrannosaurus N uses one complete state revision master; the earlier mixed-source explanation was incorrect",
+    "Explicit lossless registration corrects large pose/source-row placement differences; logical origins and physical game sizes are retained",
+    "Triceratops/Pachycephalosaurus/Gallimimus/Ankylosaurus weapon overlays reuse the matching native species action",
+    "Deinonychus S hurt is a local two-cell anatomical edit; Parasaurolophus kicks use local canonical-master/contact edits"
   ],
-  "source_policy": "Raw masters/native exports unchanged; no anatomical approval inferred from technical checks"
+  "visual_limits": "Anatomical points were reviewed separately; automatic centroid/area flags do not certify an animation. Small authored silhouette/marking variation remains in prototype art.",
+  "source_policy": "Original raw masters remain immutable. Active native derivatives are rebuilt from recorded local revisions and registration. No anatomical approval inferred from technical checks"
 }

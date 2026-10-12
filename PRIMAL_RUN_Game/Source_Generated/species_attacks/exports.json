@@ -1,113 +1,120 @@
 {
   "triceratops": {
-    "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
-    "anchors": {
-      "S": [
-        [
-          128,
-          118
+    "reuse_native_family": "enemy_full",
+    "rejected_generation": {
+      "source": "Source_Generated/species_attacks/triceratops_horn_thrust_prototype.png",
+      "anchors": {
+        "S": [
+          [
+            128,
+            118
+          ],
+          [
+            128,
+            118
+          ],
+          [
+            128,
+            118
+          ],
+          [
+            128,
+            118
+          ],
+          [
+            128,
+            118
+          ],
+          [
+            128,
+            118
+          ]
         ],
-        [
-          128,
-          118
+        "N": [
+          [
+            128,
+            140
+          ],
+          [
+            128,
+            140
+          ],
+          [
+            128,
+            140
+          ],
+          [
+            128,
+            140
+          ],
+          [
+            128,
+            140
+          ],
+          [
+            128,
+            140
+          ]
         ],
-        [
-          128,
-          118
+        "E": [
+          [
+            130,
+            128
+          ],
+          [
+            130,
+            128
+          ],
+          [
+            130,
+            128
+          ],
+          [
+            130,
+            128
+          ],
+          [
+            130,
+            128
+          ],
+          [
+            130,
+            128
+          ]
         ],
-        [
-          128,
-          118
-        ],
-        [
-          128,
-          118
-        ],
-        [
-          128,
-          118
+        "W": [
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ]
         ]
-      ],
-      "N": [
-        [
-          128,
-          140
-        ],
-        [
-          128,
-          140
-        ],
-        [
-          128,
-          140
-        ],
-        [
-          128,
-          140
-        ],
-        [
-          128,
-          140
-        ],
-        [
-          128,
-          140
-        ]
-      ],
-      "E": [
-        [
-          130,
-          128
-        ],
-        [
-          130,
-          128
-        ],
-        [
-          130,
-          128
-        ],
-        [
-          130,
-          128
-        ],
-        [
-          130,
-          128
-        ],
-        [
-          130,
-          128
-        ]
-      ],
-      "W": [
-        [
-          128,
-          128
-        ],
-        [
-          128,
-          128
-        ],
-        [
-          128,
-          128
-        ],
-        [
-          128,
-          128
-        ],
-        [
-          128,
-          128
-        ],
-        [
-          128,
-          128
-        ]
-      ]
+      },
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "rejected_reason": "Independent overlay changes body/marking scale across the locomotion-to-attack boundary. Existing horn thrust/dome jab/beak peck retains the canonical species."
     },
-    "alpha_threshold": 192,
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false
@@ -234,363 +241,1159 @@
     "animation_ready": false
   },
   "pachycephalosaurus": {
-    "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
-    "anchors": {
-      "S": [
-        [
-          128,
-          124
+    "reuse_native_family": "player_full",
+    "rejected_generation": {
+      "source": "Source_Generated/species_attacks/pachycephalosaurus_headbutt_prototype.png",
+      "anchors": {
+        "S": [
+          [
+            128,
+            124
+          ],
+          [
+            128,
+            124
+          ],
+          [
+            128,
+            124
+          ],
+          [
+            128,
+            124
+          ],
+          [
+            128,
+            124
+          ],
+          [
+            128,
+            124
+          ]
         ],
-        [
-          128,
-          124
+        "N": [
+          [
+            128,
+            126
+          ],
+          [
+            128,
+            126
+          ],
+          [
+            128,
+            126
+          ],
+          [
+            128,
+            126
+          ],
+          [
+            128,
+            126
+          ],
+          [
+            128,
+            126
+          ]
         ],
-        [
-          128,
-          124
+        "E": [
+          [
+            126,
+            129
+          ],
+          [
+            126,
+            129
+          ],
+          [
+            126,
+            129
+          ],
+          [
+            126,
+            129
+          ],
+          [
+            126,
+            129
+          ],
+          [
+            126,
+            129
+          ]
         ],
-        [
-          128,
-          124
-        ],
-        [
-          128,
-          124
-        ],
-        [
-          128,
-          124
+        "W": [
+          [
+            127,
+            134
+          ],
+          [
+            127,
+            134
+          ],
+          [
+            127,
+            134
+          ],
+          [
+            127,
+            134
+          ],
+          [
+            127,
+            134
+          ],
+          [
+            127,
+            134
+          ]
         ]
-      ],
-      "N": [
-        [
-          128,
-          126
-        ],
-        [
-          128,
-          126
-        ],
-        [
-          128,
-          126
-        ],
-        [
-          128,
-          126
-        ],
-        [
-          128,
-          126
-        ],
-        [
-          128,
-          126
-        ]
-      ],
-      "E": [
-        [
-          126,
-          129
-        ],
-        [
-          126,
-          129
-        ],
-        [
-          126,
-          129
-        ],
-        [
-          126,
-          129
-        ],
-        [
-          126,
-          129
-        ],
-        [
-          126,
-          129
-        ]
-      ],
-      "W": [
-        [
-          127,
-          134
-        ],
-        [
-          127,
-          134
-        ],
-        [
-          127,
-          134
-        ],
-        [
-          127,
-          134
-        ],
-        [
-          127,
-          134
-        ],
-        [
-          127,
-          134
-        ]
-      ]
+      },
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "rejected_reason": "Independent overlay changes body/marking scale across the locomotion-to-attack boundary. Existing horn thrust/dome jab/beak peck retains the canonical species."
     },
-    "alpha_threshold": 192,
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false
   },
   "gallimimus": {
-    "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
-    "anchors": {
-      "S": [
-        [
-          128,
-          112
+    "reuse_native_family": "player_full",
+    "rejected_generation": {
+      "source": "Source_Generated/species_attacks/gallimimus_peck_prototype.png",
+      "anchors": {
+        "S": [
+          [
+            128,
+            112
+          ],
+          [
+            128,
+            112
+          ],
+          [
+            128,
+            112
+          ],
+          [
+            128,
+            112
+          ],
+          [
+            128,
+            112
+          ],
+          [
+            128,
+            112
+          ]
         ],
-        [
-          128,
-          112
+        "N": [
+          [
+            128,
+            143
+          ],
+          [
+            128,
+            143
+          ],
+          [
+            128,
+            143
+          ],
+          [
+            128,
+            143
+          ],
+          [
+            128,
+            143
+          ],
+          [
+            128,
+            143
+          ]
         ],
-        [
-          128,
-          112
+        "E": [
+          [
+            132,
+            117
+          ],
+          [
+            132,
+            117
+          ],
+          [
+            132,
+            117
+          ],
+          [
+            132,
+            117
+          ],
+          [
+            132,
+            117
+          ],
+          [
+            132,
+            117
+          ]
         ],
-        [
-          128,
-          112
-        ],
-        [
-          128,
-          112
-        ],
-        [
-          128,
-          112
+        "W": [
+          [
+            130,
+            114
+          ],
+          [
+            130,
+            114
+          ],
+          [
+            130,
+            114
+          ],
+          [
+            130,
+            114
+          ],
+          [
+            130,
+            114
+          ],
+          [
+            130,
+            114
+          ]
         ]
-      ],
-      "N": [
-        [
-          128,
-          143
-        ],
-        [
-          128,
-          143
-        ],
-        [
-          128,
-          143
-        ],
-        [
-          128,
-          143
-        ],
-        [
-          128,
-          143
-        ],
-        [
-          128,
-          143
-        ]
-      ],
-      "E": [
-        [
-          132,
-          117
-        ],
-        [
-          132,
-          117
-        ],
-        [
-          132,
-          117
-        ],
-        [
-          132,
-          117
-        ],
-        [
-          132,
-          117
-        ],
-        [
-          132,
-          117
-        ]
-      ],
-      "W": [
-        [
-          130,
-          114
-        ],
-        [
-          130,
-          114
-        ],
-        [
-          130,
-          114
-        ],
-        [
-          130,
-          114
-        ],
-        [
-          130,
-          114
-        ],
-        [
-          130,
-          114
-        ]
-      ]
+      },
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "rejected_reason": "Independent overlay changes body/marking scale across the locomotion-to-attack boundary. Existing horn thrust/dome jab/beak peck retains the canonical species."
     },
-    "alpha_threshold": 192,
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false
   },
   "parasaurolophus": {
-    "source": "Source_Generated/species_attacks/parasaurolophus_kick_revision2.png",
+    "direction_sources": {
+      "S": "Source_Generated/animation_polish/parasaurolophus_S_kick_revision4.png",
+      "N": "Source_Generated/animation_polish/parasaurolophus_N_kick_revision4.png",
+      "E": "Source_Generated/animation_polish/parasaurolophus_E_kick_revision4.png",
+      "W": "Source_Generated/animation_polish/parasaurolophus_W_kick_revision4.png"
+    },
+    "source_rows": 5,
+    "source_row": 3,
     "anchors": {
       "S": [
         [
-          128,
-          128
+          136,
+          74
         ],
         [
-          128,
-          128
+          134,
+          74
         ],
         [
-          128,
-          128
+          136,
+          72
         ],
         [
-          128,
-          128
+          140,
+          80
         ],
         [
-          128,
-          128
+          142,
+          72
         ],
         [
-          128,
-          128
+          136,
+          74
         ]
       ],
       "N": [
         [
           128,
-          128
+          90
+        ],
+        [
+          132,
+          86
         ],
         [
           128,
-          128
+          86
+        ],
+        [
+          130,
+          84
+        ],
+        [
+          136,
+          84
         ],
         [
           128,
-          128
-        ],
-        [
-          128,
-          128
-        ],
-        [
-          128,
-          128
-        ],
-        [
-          128,
-          128
+          88
         ]
       ],
       "E": [
         [
           128,
-          128
+          60
+        ],
+        [
+          126,
+          62
+        ],
+        [
+          126,
+          60
         ],
         [
           128,
-          128
+          102
         ],
         [
-          128,
-          128
+          126,
+          60
         ],
         [
-          128,
-          128
-        ],
-        [
-          128,
-          128
-        ],
-        [
-          128,
-          128
+          126,
+          62
         ]
       ],
       "W": [
         [
-          128,
-          128
+          136,
+          64
+        ],
+        [
+          136,
+          66
+        ],
+        [
+          138,
+          66
         ],
         [
           128,
-          128
+          102
         ],
         [
-          128,
-          128
+          136,
+          68
         ],
         [
-          128,
-          128
-        ],
-        [
-          128,
-          128
-        ],
-        [
-          128,
-          128
+          136,
+          68
         ]
       ]
     },
     "alpha_threshold": 192,
+    "source_crop_inset": 0,
+    "rejected_generation": {
+      "source": "Source_Generated/species_attacks/parasaurolophus_kick_revision2.png",
+      "anchors": {
+        "S": [
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ]
+        ],
+        "N": [
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ]
+        ],
+        "E": [
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ]
+        ],
+        "W": [
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ],
+          [
+            128,
+            128
+          ]
+        ]
+      },
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "review_only": false,
+      "reason": "A visible kick is now present; body/marking matching requires comparison against the original before enabling runtime.",
+      "source_crop_inset": 8,
+      "cell_exclusions": {
+        "W1": [
+          [
+            0,
+            0,
+            18,
+            256
+          ]
+        ],
+        "W4": [
+          [
+            0,
+            0,
+            18,
+            256
+          ]
+        ]
+      },
+      "rejected_reason": "Generic independent kick sheet changes dorsal markings/head proportions and recovery matching. Replaced with edits of the canonical directional masters."
+    },
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
-    "review_only": false,
-    "reason": "A visible kick is now present; body/marking matching requires comparison against the original before enabling runtime.",
-    "source_crop_inset": 8,
     "cell_exclusions": {
+      "S0": [
+        [
+          0,
+          190,
+          256,
+          205
+        ]
+      ],
+      "S1": [
+        [
+          0,
+          190,
+          256,
+          205
+        ]
+      ],
+      "S2": [
+        [
+          0,
+          190,
+          256,
+          205
+        ]
+      ],
+      "S3": [
+        [
+          0,
+          190,
+          256,
+          205
+        ]
+      ],
+      "S4": [
+        [
+          0,
+          190,
+          256,
+          205
+        ]
+      ],
+      "S5": [
+        [
+          0,
+          190,
+          256,
+          205
+        ]
+      ],
+      "N0": [
+        [
+          0,
+          196,
+          256,
+          205
+        ]
+      ],
+      "N1": [
+        [
+          0,
+          196,
+          256,
+          205
+        ]
+      ],
+      "N2": [
+        [
+          0,
+          196,
+          256,
+          205
+        ]
+      ],
+      "N4": [
+        [
+          0,
+          196,
+          256,
+          205
+        ]
+      ],
+      "N5": [
+        [
+          0,
+          196,
+          256,
+          205
+        ]
+      ],
+      "E0": [
+        [
+          0,
+          185,
+          256,
+          205
+        ]
+      ],
+      "E1": [
+        [
+          0,
+          185,
+          256,
+          205
+        ]
+      ],
+      "E2": [
+        [
+          0,
+          185,
+          256,
+          205
+        ]
+      ],
+      "E4": [
+        [
+          0,
+          185,
+          256,
+          205
+        ]
+      ],
+      "E5": [
+        [
+          0,
+          185,
+          256,
+          205
+        ]
+      ],
+      "W0": [
+        [
+          0,
+          185,
+          256,
+          205
+        ]
+      ],
       "W1": [
         [
           0,
+          185,
+          256,
+          205
+        ]
+      ],
+      "W2": [
+        [
           0,
-          18,
-          256
+          185,
+          256,
+          205
         ]
       ],
       "W4": [
         [
           0,
+          185,
+          256,
+          205
+        ],
+        [
           0,
-          18,
-          256
+          38,
+          20,
+          72
+        ]
+      ],
+      "W5": [
+        [
+          0,
+          185,
+          256,
+          205
         ]
       ]
-    }
+    },
+    "frame_source_overrides": {
+      "E3": {
+        "source": "Source_Generated/animation_polish/parasaurolophus_E_contact_revision7.png",
+        "source_rows": 1,
+        "source_columns": 1,
+        "source_row": 0,
+        "source_column": 0,
+        "sampling_stride": 8,
+        "sampling_offset": 4,
+        "alpha_threshold": 192,
+        "anchor": [
+          788,
+          508
+        ]
+      },
+      "W3": {
+        "source": "Source_Generated/animation_polish/parasaurolophus_W_contact_revision7.png",
+        "source_rows": 1,
+        "source_columns": 1,
+        "source_row": 0,
+        "source_column": 0,
+        "sampling_stride": 8,
+        "sampling_offset": 4,
+        "alpha_threshold": 192,
+        "anchor": [
+          812,
+          532
+        ]
+      },
+      "N3": {
+        "source": "Source_Generated/animation_polish/parasaurolophus_N_contact_revision9.png",
+        "source_rows": 1,
+        "source_columns": 1,
+        "source_row": 0,
+        "source_column": 0,
+        "sampling_stride": 8,
+        "sampling_offset": 4,
+        "alpha_threshold": 192,
+        "anchor": [
+          780,
+          508
+        ]
+      }
+    },
+    "review": "Local edits of the canonical directional masters, with isolated E/W contact corrections. Explicit sampling and named anatomical source anchors; neighbouring tail fragments excluded by reviewed source-cell rectangles.",
+    "native_landmark_review": [
+      {
+        "direction": "S",
+        "frame": 0,
+        "point": [
+          74,
+          54
+        ],
+        "target": [
+          70,
+          68
+        ],
+        "delta": [
+          -4,
+          14
+        ],
+        "score": 0.0391,
+        "review": "Manual central spine point, excluding ambiguous cream-spot correspondence."
+      },
+      {
+        "direction": "S",
+        "frame": 1,
+        "point": [
+          73,
+          54
+        ],
+        "target": [
+          70,
+          68
+        ],
+        "delta": [
+          -3,
+          14
+        ],
+        "score": 0.0402,
+        "review": "Manual central spine point, excluding ambiguous cream-spot correspondence."
+      },
+      {
+        "direction": "S",
+        "frame": 2,
+        "point": [
+          74,
+          53
+        ],
+        "target": [
+          70,
+          68
+        ],
+        "delta": [
+          -4,
+          15
+        ],
+        "score": 0.0492,
+        "review": "Manual central spine point, excluding ambiguous cream-spot correspondence."
+      },
+      {
+        "direction": "S",
+        "frame": 3,
+        "point": [
+          76,
+          57
+        ],
+        "target": [
+          70,
+          68
+        ],
+        "delta": [
+          -6,
+          11
+        ],
+        "score": 0.0452,
+        "review": "Manual central spine point, excluding ambiguous cream-spot correspondence."
+      },
+      {
+        "direction": "S",
+        "frame": 4,
+        "point": [
+          77,
+          53
+        ],
+        "target": [
+          70,
+          68
+        ],
+        "delta": [
+          -7,
+          15
+        ],
+        "score": 0.0495,
+        "review": "Manual central spine point, excluding ambiguous cream-spot correspondence."
+      },
+      {
+        "direction": "S",
+        "frame": 5,
+        "point": [
+          74,
+          54
+        ],
+        "target": [
+          70,
+          68
+        ],
+        "delta": [
+          -4,
+          14
+        ],
+        "score": 0.0415,
+        "review": "Manual central spine point, excluding ambiguous cream-spot correspondence."
+      },
+      {
+        "direction": "E",
+        "frame": 0,
+        "point": [
+          67,
+          51
+        ],
+        "target": [
+          67,
+          72
+        ],
+        "delta": [
+          0,
+          21
+        ],
+        "score": 0.026,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "E",
+        "frame": 1,
+        "point": [
+          66,
+          52
+        ],
+        "target": [
+          67,
+          72
+        ],
+        "delta": [
+          1,
+          20
+        ],
+        "score": 0.0263,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "E",
+        "frame": 2,
+        "point": [
+          66,
+          51
+        ],
+        "target": [
+          67,
+          72
+        ],
+        "delta": [
+          1,
+          21
+        ],
+        "score": 0.0284,
+        "review": "Manual central spine point; patch suggestion landed on the belly marking during leg lift."
+      },
+      {
+        "direction": "E",
+        "frame": 3,
+        "point": [
+          67,
+          72
+        ],
+        "target": [
+          67,
+          72
+        ],
+        "delta": [
+          0,
+          0
+        ],
+        "score": 0.0122,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "E",
+        "frame": 4,
+        "point": [
+          66,
+          51
+        ],
+        "target": [
+          67,
+          72
+        ],
+        "delta": [
+          1,
+          21
+        ],
+        "score": 0.027,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "E",
+        "frame": 5,
+        "point": [
+          66,
+          52
+        ],
+        "target": [
+          67,
+          72
+        ],
+        "delta": [
+          1,
+          20
+        ],
+        "score": 0.0222,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "N",
+        "frame": 0,
+        "point": [
+          72,
+          60
+        ],
+        "target": [
+          72,
+          66
+        ],
+        "delta": [
+          0,
+          6
+        ],
+        "score": 0.0192,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "N",
+        "frame": 1,
+        "point": [
+          74,
+          58
+        ],
+        "target": [
+          72,
+          66
+        ],
+        "delta": [
+          -2,
+          8
+        ],
+        "score": 0.0237,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "N",
+        "frame": 2,
+        "point": [
+          72,
+          58
+        ],
+        "target": [
+          72,
+          66
+        ],
+        "delta": [
+          0,
+          8
+        ],
+        "score": 0.0234,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "N",
+        "frame": 3,
+        "point": [
+          72,
+          66
+        ],
+        "target": [
+          72,
+          66
+        ],
+        "delta": [
+          0,
+          0
+        ],
+        "score": 0.0207,
+        "review": "Native spine/cream-band point checked against canonical idle after the local tail/foot and cutout repairs.",
+        "source_sample_landmark": [
+          97,
+          57
+        ],
+        "source_sampling_stride": 8
+      },
+      {
+        "direction": "N",
+        "frame": 4,
+        "point": [
+          76,
+          57
+        ],
+        "target": [
+          72,
+          66
+        ],
+        "delta": [
+          -4,
+          9
+        ],
+        "score": 0.0338,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "N",
+        "frame": 5,
+        "point": [
+          72,
+          59
+        ],
+        "target": [
+          72,
+          66
+        ],
+        "delta": [
+          0,
+          7
+        ],
+        "score": 0.0162,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "W",
+        "frame": 0,
+        "point": [
+          88,
+          53
+        ],
+        "target": [
+          84,
+          72
+        ],
+        "delta": [
+          -4,
+          19
+        ],
+        "score": 0.0243,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "W",
+        "frame": 1,
+        "point": [
+          88,
+          54
+        ],
+        "target": [
+          84,
+          72
+        ],
+        "delta": [
+          -4,
+          18
+        ],
+        "score": 0.0192,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "W",
+        "frame": 2,
+        "point": [
+          89,
+          54
+        ],
+        "target": [
+          84,
+          72
+        ],
+        "delta": [
+          -5,
+          18
+        ],
+        "score": 0.0205,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "W",
+        "frame": 3,
+        "point": [
+          84,
+          72
+        ],
+        "target": [
+          84,
+          72
+        ],
+        "delta": [
+          0,
+          0
+        ],
+        "score": 0.0136,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "W",
+        "frame": 4,
+        "point": [
+          88,
+          55
+        ],
+        "target": [
+          84,
+          72
+        ],
+        "delta": [
+          -4,
+          17
+        ],
+        "score": 0.0194,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      },
+      {
+        "direction": "W",
+        "frame": 5,
+        "point": [
+          88,
+          55
+        ],
+        "target": [
+          84,
+          72
+        ],
+        "delta": [
+          -4,
+          17
+        ],
+        "score": 0.0203,
+        "review": "Anatomical spine patch point inspected in native/light/dark comparison; no centroid/bbox centering."
+      }
+    ]
   }
 }

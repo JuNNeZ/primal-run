@@ -2,9 +2,9 @@
   "status": "PASS",
   "approved_exports": 17,
   "frames": 3033,
-  "unique_frames": 2773,
-  "alias_frames": 260,
-  "sheets": 20,
+  "unique_frames": 2701,
+  "alias_frames": 332,
+  "sheets": 17,
   "checks": [
     "exact native RGBA bytes",
     "unaltered anchors and dimensions",

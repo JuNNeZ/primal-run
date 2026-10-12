@@ -84,10 +84,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_S_000.png": {
       "bbox": [
-        52,
-        13,
-        93,
-        134
+        56,
+        2,
+        97,
+        123
       ],
       "origin": [
         72,
@@ -97,10 +97,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_S_001.png": {
       "bbox": [
-        53,
-        13,
-        93,
-        133
+        57,
+        2,
+        97,
+        122
       ],
       "origin": [
         72,
@@ -110,10 +110,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_S_002.png": {
       "bbox": [
-        51,
-        13,
-        93,
-        132
+        55,
+        2,
+        97,
+        121
       ],
       "origin": [
         72,
@@ -123,10 +123,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_S_003.png": {
       "bbox": [
-        52,
-        13,
-        94,
-        132
+        56,
+        2,
+        98,
+        121
       ],
       "origin": [
         72,
@@ -136,10 +136,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_S_004.png": {
       "bbox": [
-        51,
-        13,
-        92,
-        133
+        55,
+        2,
+        96,
+        122
       ],
       "origin": [
         72,
@@ -149,10 +149,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_S_005.png": {
       "bbox": [
-        51,
-        13,
-        92,
-        134
+        55,
+        2,
+        96,
+        123
       ],
       "origin": [
         72,
@@ -162,10 +162,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_S_000.png": {
       "bbox": [
-        54,
-        16,
-        96,
-        112
+        53,
+        22,
+        95,
+        118
       ],
       "origin": [
         72,
@@ -175,10 +175,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_S_001.png": {
       "bbox": [
-        56,
-        16,
-        96,
-        112
+        55,
+        22,
+        95,
+        118
       ],
       "origin": [
         72,
@@ -188,10 +188,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_S_002.png": {
       "bbox": [
-        57,
-        18,
-        97,
-        109
+        56,
+        24,
+        96,
+        115
       ],
       "origin": [
         72,
@@ -201,10 +201,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_S_003.png": {
       "bbox": [
-        53,
-        17,
-        96,
-        113
+        52,
+        23,
+        95,
+        119
       ],
       "origin": [
         72,
@@ -214,10 +214,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_S_004.png": {
       "bbox": [
-        55,
-        17,
-        95,
-        114
+        54,
+        23,
+        94,
+        120
       ],
       "origin": [
         72,
@@ -227,10 +227,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_S_005.png": {
       "bbox": [
-        52,
-        20,
-        94,
-        108
+        51,
+        26,
+        93,
+        114
       ],
       "origin": [
         72,
@@ -240,10 +240,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_S_000.png": {
       "bbox": [
-        51,
-        15,
-        94,
-        109
+        53,
+        29,
+        96,
+        123
       ],
       "origin": [
         72,
@@ -253,10 +253,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_S_001.png": {
       "bbox": [
-        54,
-        15,
-        100,
-        109
+        56,
+        29,
+        102,
+        123
       ],
       "origin": [
         72,
@@ -266,10 +266,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_S_002.png": {
       "bbox": [
-        56,
-        14,
-        99,
-        109
+        58,
+        28,
+        101,
+        123
       ],
       "origin": [
         72,
@@ -279,10 +279,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_S_003.png": {
       "bbox": [
-        54,
-        17,
-        96,
-        114
+        56,
+        31,
+        98,
+        128
       ],
       "origin": [
         72,
@@ -292,10 +292,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_S_004.png": {
       "bbox": [
-        48,
-        15,
-        96,
-        108
+        50,
+        29,
+        98,
+        122
       ],
       "origin": [
         72,
@@ -305,10 +305,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_S_005.png": {
       "bbox": [
-        51,
-        16,
-        95,
-        110
+        53,
+        30,
+        97,
+        124
       ],
       "origin": [
         72,
@@ -319,9 +319,9 @@
     "assets/enemy_full/parasaurolophus_death_S_000.png": {
       "bbox": [
         51,
-        14,
+        29,
         96,
-        111
+        126
       ],
       "origin": [
         72,
@@ -332,9 +332,9 @@
     "assets/enemy_full/parasaurolophus_death_S_001.png": {
       "bbox": [
         56,
-        14,
+        29,
         101,
-        111
+        126
       ],
       "origin": [
         72,
@@ -345,9 +345,9 @@
     "assets/enemy_full/parasaurolophus_death_S_002.png": {
       "bbox": [
         51,
-        17,
+        32,
         104,
-        103
+        118
       ],
       "origin": [
         72,
@@ -358,9 +358,9 @@
     "assets/enemy_full/parasaurolophus_death_S_003.png": {
       "bbox": [
         33,
-        21,
+        36,
         108,
-        106
+        121
       ],
       "origin": [
         72,
@@ -371,9 +371,9 @@
     "assets/enemy_full/parasaurolophus_death_S_004.png": {
       "bbox": [
         39,
-        21,
+        36,
         107,
-        111
+        126
       ],
       "origin": [
         72,
@@ -384,9 +384,9 @@
     "assets/enemy_full/parasaurolophus_death_S_005.png": {
       "bbox": [
         34,
-        22,
+        37,
         124,
-        107
+        122
       ],
       "origin": [
         72,
@@ -553,9 +553,9 @@
     "assets/enemy_full/deinosuchus_run_S_000.png": {
       "bbox": [
         43,
-        21,
+        27,
         101,
-        116
+        122
       ],
       "origin": [
         72,
@@ -566,9 +566,9 @@
     "assets/enemy_full/deinosuchus_run_S_001.png": {
       "bbox": [
         39,
-        21,
+        27,
         104,
-        116
+        122
       ],
       "origin": [
         72,
@@ -579,9 +579,9 @@
     "assets/enemy_full/deinosuchus_run_S_002.png": {
       "bbox": [
         41,
-        21,
+        27,
         104,
-        116
+        122
       ],
       "origin": [
         72,
@@ -592,9 +592,9 @@
     "assets/enemy_full/deinosuchus_run_S_003.png": {
       "bbox": [
         41,
-        21,
+        27,
         103,
-        116
+        122
       ],
       "origin": [
         72,
@@ -605,9 +605,9 @@
     "assets/enemy_full/deinosuchus_run_S_004.png": {
       "bbox": [
         41,
-        21,
+        27,
         104,
-        119
+        125
       ],
       "origin": [
         72,
@@ -618,9 +618,9 @@
     "assets/enemy_full/deinosuchus_run_S_005.png": {
       "bbox": [
         43,
-        21,
+        27,
         103,
-        119
+        125
       ],
       "origin": [
         72,
@@ -799,10 +799,10 @@
     },
     "assets/enemy_full/triceratops_idle_S_001.png": {
       "bbox": [
-        54,
-        26,
-        102,
-        123
+        59,
+        29,
+        107,
+        126
       ],
       "origin": [
         72,
@@ -812,10 +812,10 @@
     },
     "assets/enemy_full/triceratops_idle_S_002.png": {
       "bbox": [
-        50,
-        26,
-        103,
-        123
+        58,
+        28,
+        111,
+        125
       ],
       "origin": [
         72,
@@ -825,10 +825,10 @@
     },
     "assets/enemy_full/triceratops_idle_S_003.png": {
       "bbox": [
-        49,
-        26,
-        98,
-        123
+        45,
+        23,
+        94,
+        120
       ],
       "origin": [
         72,
@@ -838,10 +838,10 @@
     },
     "assets/enemy_full/triceratops_hurt_S_000.png": {
       "bbox": [
-        46,
-        25,
-        100,
-        120
+        48,
+        26,
+        102,
+        121
       ],
       "origin": [
         72,
@@ -851,10 +851,10 @@
     },
     "assets/enemy_full/triceratops_hurt_S_001.png": {
       "bbox": [
-        43,
-        34,
-        101,
-        119
+        46,
+        31,
+        104,
+        116
       ],
       "origin": [
         72,
@@ -864,10 +864,10 @@
     },
     "assets/enemy_full/triceratops_walk_S_000.png": {
       "bbox": [
-        52,
-        24,
-        102,
-        115
+        49,
+        26,
+        99,
+        117
       ],
       "origin": [
         72,
@@ -877,10 +877,10 @@
     },
     "assets/enemy_full/triceratops_walk_S_001.png": {
       "bbox": [
-        48,
-        24,
-        101,
-        119
+        46,
+        25,
+        99,
+        120
       ],
       "origin": [
         72,
@@ -890,10 +890,10 @@
     },
     "assets/enemy_full/triceratops_walk_S_002.png": {
       "bbox": [
-        49,
-        24,
-        98,
-        116
+        45,
+        25,
+        94,
+        117
       ],
       "origin": [
         72,
@@ -904,9 +904,9 @@
     "assets/enemy_full/triceratops_walk_S_003.png": {
       "bbox": [
         45,
-        25,
+        26,
         94,
-        117
+        118
       ],
       "origin": [
         72,
@@ -929,10 +929,10 @@
     },
     "assets/enemy_full/triceratops_walk_S_005.png": {
       "bbox": [
-        44,
-        23,
-        94,
-        116
+        45,
+        25,
+        95,
+        118
       ],
       "origin": [
         72,
@@ -942,9 +942,9 @@
     },
     "assets/enemy_full/triceratops_run_S_000.png": {
       "bbox": [
-        55,
+        60,
         20,
-        103,
+        108,
         116
       ],
       "origin": [
@@ -955,9 +955,9 @@
     },
     "assets/enemy_full/triceratops_run_S_001.png": {
       "bbox": [
-        47,
+        45,
         20,
-        102,
+        100,
         117
       ],
       "origin": [
@@ -968,9 +968,9 @@
     },
     "assets/enemy_full/triceratops_run_S_002.png": {
       "bbox": [
-        47,
+        53,
         20,
-        100,
+        106,
         116
       ],
       "origin": [
@@ -981,10 +981,10 @@
     },
     "assets/enemy_full/triceratops_run_S_003.png": {
       "bbox": [
-        45,
-        20,
-        96,
-        115
+        43,
+        22,
+        94,
+        117
       ],
       "origin": [
         72,
@@ -994,10 +994,10 @@
     },
     "assets/enemy_full/triceratops_run_S_004.png": {
       "bbox": [
-        41,
-        20,
-        96,
-        116
+        39,
+        23,
+        94,
+        119
       ],
       "origin": [
         72,
@@ -1007,10 +1007,10 @@
     },
     "assets/enemy_full/triceratops_run_S_005.png": {
       "bbox": [
-        40,
-        20,
-        90,
-        116
+        41,
+        22,
+        91,
+        118
       ],
       "origin": [
         72,
@@ -1020,9 +1020,9 @@
     },
     "assets/enemy_full/triceratops_attack_S_000.png": {
       "bbox": [
-        49,
+        45,
         19,
-        99,
+        95,
         115
       ],
       "origin": [
@@ -1033,10 +1033,10 @@
     },
     "assets/enemy_full/triceratops_attack_S_001.png": {
       "bbox": [
-        46,
-        19,
-        99,
-        115
+        45,
+        21,
+        98,
+        117
       ],
       "origin": [
         72,
@@ -1046,9 +1046,9 @@
     },
     "assets/enemy_full/triceratops_attack_S_002.png": {
       "bbox": [
-        44,
+        42,
         21,
-        99,
+        97,
         115
       ],
       "origin": [
@@ -1059,10 +1059,10 @@
     },
     "assets/enemy_full/triceratops_attack_S_003.png": {
       "bbox": [
-        46,
-        19,
-        105,
-        116
+        52,
+        22,
+        111,
+        119
       ],
       "origin": [
         72,
@@ -1072,10 +1072,10 @@
     },
     "assets/enemy_full/triceratops_attack_S_004.png": {
       "bbox": [
-        45,
-        19,
-        101,
-        115
+        40,
+        21,
+        96,
+        117
       ],
       "origin": [
         72,
@@ -1086,9 +1086,9 @@
     "assets/enemy_full/triceratops_attack_S_005.png": {
       "bbox": [
         44,
-        19,
+        21,
         96,
-        115
+        117
       ],
       "origin": [
         72,
@@ -1098,10 +1098,10 @@
     },
     "assets/enemy_full/triceratops_death_S_000.png": {
       "bbox": [
-        50,
-        17,
-        104,
-        112
+        57,
+        19,
+        111,
+        114
       ],
       "origin": [
         72,
@@ -1111,10 +1111,10 @@
     },
     "assets/enemy_full/triceratops_death_S_001.png": {
       "bbox": [
-        39,
-        17,
-        111,
-        116
+        44,
+        15,
+        116,
+        114
       ],
       "origin": [
         72,
@@ -1124,9 +1124,9 @@
     },
     "assets/enemy_full/triceratops_death_S_002.png": {
       "bbox": [
-        42,
+        44,
         18,
-        117,
+        119,
         116
       ],
       "origin": [
@@ -1137,10 +1137,10 @@
     },
     "assets/enemy_full/triceratops_death_S_003.png": {
       "bbox": [
-        37,
-        25,
-        125,
-        112
+        35,
+        28,
+        123,
+        115
       ],
       "origin": [
         72,
@@ -1150,10 +1150,10 @@
     },
     "assets/enemy_full/triceratops_death_S_004.png": {
       "bbox": [
-        8,
-        29,
-        122,
-        107
+        11,
+        32,
+        125,
+        110
       ],
       "origin": [
         72,
@@ -1163,10 +1163,10 @@
     },
     "assets/enemy_full/triceratops_death_S_005.png": {
       "bbox": [
-        2,
-        38,
-        122,
-        99
+        8,
+        37,
+        128,
+        98
       ],
       "origin": [
         72,
@@ -1189,10 +1189,10 @@
     },
     "assets/enemy_full/tyrannosaurus_idle_S_001.png": {
       "bbox": [
-        55,
-        24,
-        100,
-        120
+        61,
+        25,
+        106,
+        121
       ],
       "origin": [
         72,
@@ -1202,9 +1202,9 @@
     },
     "assets/enemy_full/tyrannosaurus_idle_S_002.png": {
       "bbox": [
-        50,
+        60,
         24,
-        95,
+        105,
         118
       ],
       "origin": [
@@ -1215,10 +1215,10 @@
     },
     "assets/enemy_full/tyrannosaurus_idle_S_003.png": {
       "bbox": [
-        43,
-        27,
-        89,
-        118
+        51,
+        24,
+        97,
+        115
       ],
       "origin": [
         72,
@@ -1228,10 +1228,10 @@
     },
     "assets/enemy_full/tyrannosaurus_hurt_S_000.png": {
       "bbox": [
-        51,
-        26,
-        105,
-        114
+        48,
+        27,
+        102,
+        115
       ],
       "origin": [
         72,
@@ -1241,10 +1241,10 @@
     },
     "assets/enemy_full/tyrannosaurus_hurt_S_001.png": {
       "bbox": [
-        46,
-        29,
-        96,
-        125
+        53,
+        26,
+        103,
+        122
       ],
       "origin": [
         72,
@@ -1254,10 +1254,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_S_000.png": {
       "bbox": [
-        58,
-        22,
-        101,
-        113
+        60,
+        26,
+        103,
+        117
       ],
       "origin": [
         72,
@@ -1267,10 +1267,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_S_001.png": {
       "bbox": [
-        58,
-        23,
-        100,
-        115
+        63,
+        26,
+        105,
+        118
       ],
       "origin": [
         72,
@@ -1280,10 +1280,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_S_002.png": {
       "bbox": [
-        51,
-        21,
-        93,
-        112
+        50,
+        19,
+        92,
+        110
       ],
       "origin": [
         72,
@@ -1293,9 +1293,9 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_S_003.png": {
       "bbox": [
-        48,
+        50,
         21,
-        90,
+        92,
         111
       ],
       "origin": [
@@ -1306,10 +1306,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_S_004.png": {
       "bbox": [
-        50,
-        22,
-        94,
-        115
+        49,
+        20,
+        93,
+        113
       ],
       "origin": [
         72,
@@ -1319,9 +1319,9 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_S_005.png": {
       "bbox": [
-        46,
+        50,
         19,
-        89,
+        93,
         115
       ],
       "origin": [
@@ -1332,10 +1332,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_S_000.png": {
       "bbox": [
-        57,
-        18,
-        108,
-        115
+        60,
+        23,
+        111,
+        120
       ],
       "origin": [
         72,
@@ -1345,10 +1345,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_S_001.png": {
       "bbox": [
-        56,
-        17,
-        100,
-        113
+        62,
+        23,
+        106,
+        119
       ],
       "origin": [
         72,
@@ -1358,9 +1358,9 @@
     },
     "assets/enemy_full/tyrannosaurus_run_S_002.png": {
       "bbox": [
-        52,
+        55,
         17,
-        106,
+        109,
         117
       ],
       "origin": [
@@ -1371,10 +1371,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_S_003.png": {
       "bbox": [
-        43,
-        17,
-        88,
-        113
+        50,
+        18,
+        95,
+        114
       ],
       "origin": [
         72,
@@ -1384,10 +1384,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_S_004.png": {
       "bbox": [
-        50,
-        19,
-        94,
-        116
+        49,
+        22,
+        93,
+        119
       ],
       "origin": [
         72,
@@ -1397,10 +1397,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_S_005.png": {
       "bbox": [
-        47,
-        19,
-        91,
-        115
+        50,
+        18,
+        94,
+        114
       ],
       "origin": [
         72,
@@ -1410,10 +1410,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_S_000.png": {
       "bbox": [
-        54,
-        18,
-        102,
-        112
+        58,
+        24,
+        106,
+        118
       ],
       "origin": [
         72,
@@ -1423,10 +1423,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_S_001.png": {
       "bbox": [
-        54,
-        20,
-        102,
-        111
+        51,
+        21,
+        99,
+        112
       ],
       "origin": [
         72,
@@ -1436,10 +1436,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_S_002.png": {
       "bbox": [
-        48,
-        20,
-        102,
-        111
+        46,
+        22,
+        100,
+        113
       ],
       "origin": [
         72,
@@ -1449,9 +1449,9 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_S_003.png": {
       "bbox": [
-        39,
+        42,
         18,
-        92,
+        95,
         109
       ],
       "origin": [
@@ -1462,10 +1462,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_S_004.png": {
       "bbox": [
-        43,
-        22,
-        95,
-        114
+        47,
+        18,
+        99,
+        110
       ],
       "origin": [
         72,
@@ -1475,10 +1475,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_S_005.png": {
       "bbox": [
-        45,
-        18,
-        89,
-        114
+        49,
+        15,
+        93,
+        111
       ],
       "origin": [
         72,
@@ -1488,10 +1488,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_S_000.png": {
       "bbox": [
-        52,
-        15,
-        99,
-        108
+        47,
+        16,
+        94,
+        109
       ],
       "origin": [
         72,
@@ -1501,10 +1501,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_S_001.png": {
       "bbox": [
-        54,
-        16,
-        104,
-        108
+        55,
+        14,
+        105,
+        106
       ],
       "origin": [
         72,
@@ -1514,10 +1514,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_S_002.png": {
       "bbox": [
-        41,
-        21,
-        98,
-        111
+        47,
+        19,
+        104,
+        109
       ],
       "origin": [
         72,
@@ -1527,10 +1527,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_S_003.png": {
       "bbox": [
-        23,
-        18,
-        108,
-        107
+        30,
+        16,
+        115,
+        105
       ],
       "origin": [
         72,
@@ -1540,10 +1540,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_S_004.png": {
       "bbox": [
-        10,
-        29,
-        121,
-        104
+        12,
+        28,
+        123,
+        103
       ],
       "origin": [
         72,
@@ -1553,9 +1553,9 @@
     },
     "assets/enemy_full/tyrannosaurus_death_S_005.png": {
       "bbox": [
-        4,
+        6,
         35,
-        125,
+        127,
         107
       ],
       "origin": [
@@ -1618,9 +1618,9 @@
     },
     "assets/enemy_full/parasaurolophus_hurt_N_000.png": {
       "bbox": [
-        55,
+        48,
         26,
-        94,
+        87,
         120
       ],
       "origin": [
@@ -1631,9 +1631,9 @@
     },
     "assets/enemy_full/parasaurolophus_hurt_N_001.png": {
       "bbox": [
-        49,
+        42,
         26,
-        93,
+        86,
         118
       ],
       "origin": [
@@ -1878,10 +1878,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_N_000.png": {
       "bbox": [
-        55,
-        20,
-        90,
-        115
+        54,
+        27,
+        89,
+        122
       ],
       "origin": [
         72,
@@ -1891,10 +1891,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_N_001.png": {
       "bbox": [
-        44,
-        19,
-        99,
-        111
+        43,
+        26,
+        98,
+        118
       ],
       "origin": [
         72,
@@ -1904,10 +1904,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_N_002.png": {
       "bbox": [
-        48,
-        25,
-        98,
-        114
+        47,
+        32,
+        97,
+        121
       ],
       "origin": [
         72,
@@ -1917,10 +1917,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_N_003.png": {
       "bbox": [
-        40,
-        31,
-        105,
-        115
+        39,
+        38,
+        104,
+        122
       ],
       "origin": [
         72,
@@ -1930,10 +1930,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_N_004.png": {
       "bbox": [
-        18,
-        41,
-        128,
-        90
+        17,
+        48,
+        127,
+        97
       ],
       "origin": [
         72,
@@ -1943,10 +1943,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_N_005.png": {
       "bbox": [
-        18,
-        44,
-        128,
-        85
+        17,
+        51,
+        127,
+        92
       ],
       "origin": [
         72,
@@ -2008,10 +2008,10 @@
     },
     "assets/enemy_full/deinosuchus_hurt_N_000.png": {
       "bbox": [
-        44,
-        26,
-        97,
-        119
+        53,
+        28,
+        106,
+        121
       ],
       "origin": [
         72,
@@ -2021,10 +2021,10 @@
     },
     "assets/enemy_full/deinosuchus_hurt_N_001.png": {
       "bbox": [
-        43,
-        26,
-        94,
-        119
+        52,
+        28,
+        103,
+        121
       ],
       "origin": [
         72,
@@ -2112,10 +2112,10 @@
     },
     "assets/enemy_full/deinosuchus_run_N_000.png": {
       "bbox": [
-        51,
-        20,
-        101,
-        118
+        53,
+        27,
+        103,
+        125
       ],
       "origin": [
         72,
@@ -2125,10 +2125,10 @@
     },
     "assets/enemy_full/deinosuchus_run_N_001.png": {
       "bbox": [
-        47,
-        20,
-        110,
-        118
+        49,
+        27,
+        112,
+        125
       ],
       "origin": [
         72,
@@ -2138,10 +2138,10 @@
     },
     "assets/enemy_full/deinosuchus_run_N_002.png": {
       "bbox": [
-        45,
-        20,
-        102,
-        117
+        47,
+        27,
+        104,
+        124
       ],
       "origin": [
         72,
@@ -2151,10 +2151,10 @@
     },
     "assets/enemy_full/deinosuchus_run_N_003.png": {
       "bbox": [
-        40,
-        20,
-        96,
-        118
+        42,
+        27,
+        98,
+        125
       ],
       "origin": [
         72,
@@ -2164,10 +2164,10 @@
     },
     "assets/enemy_full/deinosuchus_run_N_004.png": {
       "bbox": [
-        39,
-        20,
-        94,
-        117
+        41,
+        27,
+        96,
+        124
       ],
       "origin": [
         72,
@@ -2177,10 +2177,10 @@
     },
     "assets/enemy_full/deinosuchus_run_N_005.png": {
       "bbox": [
-        39,
-        20,
-        96,
-        116
+        41,
+        27,
+        98,
+        123
       ],
       "origin": [
         72,
@@ -2359,9 +2359,9 @@
     },
     "assets/enemy_full/triceratops_idle_N_001.png": {
       "bbox": [
-        53,
+        63,
         24,
-        94,
+        104,
         116
       ],
       "origin": [
@@ -2372,10 +2372,10 @@
     },
     "assets/enemy_full/triceratops_idle_N_002.png": {
       "bbox": [
-        46,
-        23,
-        87,
-        116
+        52,
+        22,
+        93,
+        115
       ],
       "origin": [
         72,
@@ -2385,10 +2385,10 @@
     },
     "assets/enemy_full/triceratops_idle_N_003.png": {
       "bbox": [
-        41,
-        24,
-        83,
-        116
+        51,
+        25,
+        93,
+        117
       ],
       "origin": [
         72,
@@ -2398,10 +2398,10 @@
     },
     "assets/enemy_full/triceratops_hurt_N_000.png": {
       "bbox": [
-        33,
-        23,
-        87,
-        116
+        44,
+        21,
+        98,
+        114
       ],
       "origin": [
         72,
@@ -2411,10 +2411,10 @@
     },
     "assets/enemy_full/triceratops_hurt_N_001.png": {
       "bbox": [
-        39,
-        29,
-        92,
-        116
+        47,
+        26,
+        100,
+        113
       ],
       "origin": [
         72,
@@ -2424,10 +2424,10 @@
     },
     "assets/enemy_full/triceratops_walk_N_000.png": {
       "bbox": [
-        59,
-        17,
-        105,
-        112
+        60,
+        16,
+        106,
+        111
       ],
       "origin": [
         72,
@@ -2437,10 +2437,10 @@
     },
     "assets/enemy_full/triceratops_walk_N_001.png": {
       "bbox": [
-        53,
-        17,
-        97,
-        112
+        60,
+        16,
+        104,
+        111
       ],
       "origin": [
         72,
@@ -2450,10 +2450,10 @@
     },
     "assets/enemy_full/triceratops_walk_N_002.png": {
       "bbox": [
-        47,
-        16,
-        91,
-        112
+        55,
+        13,
+        99,
+        109
       ],
       "origin": [
         72,
@@ -2463,10 +2463,10 @@
     },
     "assets/enemy_full/triceratops_walk_N_003.png": {
       "bbox": [
-        44,
-        16,
-        87,
-        112
+        53,
+        17,
+        96,
+        113
       ],
       "origin": [
         72,
@@ -2476,10 +2476,10 @@
     },
     "assets/enemy_full/triceratops_walk_N_004.png": {
       "bbox": [
-        41,
-        17,
-        87,
-        112
+        50,
+        15,
+        96,
+        110
       ],
       "origin": [
         72,
@@ -2489,10 +2489,10 @@
     },
     "assets/enemy_full/triceratops_walk_N_005.png": {
       "bbox": [
-        38,
-        16,
-        86,
-        112
+        48,
+        19,
+        96,
+        115
       ],
       "origin": [
         72,
@@ -2502,9 +2502,9 @@
     },
     "assets/enemy_full/triceratops_run_N_000.png": {
       "bbox": [
-        59,
+        58,
         12,
-        109,
+        108,
         110
       ],
       "origin": [
@@ -2515,10 +2515,10 @@
     },
     "assets/enemy_full/triceratops_run_N_001.png": {
       "bbox": [
-        52,
-        13,
-        98,
-        106
+        58,
+        15,
+        104,
+        108
       ],
       "origin": [
         72,
@@ -2528,10 +2528,10 @@
     },
     "assets/enemy_full/triceratops_run_N_002.png": {
       "bbox": [
-        46,
-        13,
-        98,
-        110
+        50,
+        12,
+        102,
+        109
       ],
       "origin": [
         72,
@@ -2541,10 +2541,10 @@
     },
     "assets/enemy_full/triceratops_run_N_003.png": {
       "bbox": [
-        42,
-        13,
-        89,
-        109
+        50,
+        16,
+        97,
+        112
       ],
       "origin": [
         72,
@@ -2554,10 +2554,10 @@
     },
     "assets/enemy_full/triceratops_run_N_004.png": {
       "bbox": [
-        40,
-        12,
-        94,
-        112
+        48,
+        15,
+        102,
+        115
       ],
       "origin": [
         72,
@@ -2567,10 +2567,10 @@
     },
     "assets/enemy_full/triceratops_run_N_005.png": {
       "bbox": [
-        37,
-        12,
-        85,
-        110
+        44,
+        15,
+        92,
+        113
       ],
       "origin": [
         72,
@@ -2581,9 +2581,9 @@
     "assets/enemy_full/triceratops_attack_N_000.png": {
       "bbox": [
         63,
-        10,
+        12,
         104,
-        111
+        113
       ],
       "origin": [
         72,
@@ -2593,10 +2593,10 @@
     },
     "assets/enemy_full/triceratops_attack_N_001.png": {
       "bbox": [
-        56,
-        11,
-        109,
-        111
+        59,
+        12,
+        112,
+        112
       ],
       "origin": [
         72,
@@ -2606,10 +2606,10 @@
     },
     "assets/enemy_full/triceratops_attack_N_002.png": {
       "bbox": [
-        53,
-        10,
-        97,
-        112
+        58,
+        9,
+        102,
+        111
       ],
       "origin": [
         72,
@@ -2619,10 +2619,10 @@
     },
     "assets/enemy_full/triceratops_attack_N_003.png": {
       "bbox": [
-        46,
-        9,
-        92,
-        117
+        52,
+        11,
+        98,
+        119
       ],
       "origin": [
         72,
@@ -2632,10 +2632,10 @@
     },
     "assets/enemy_full/triceratops_attack_N_004.png": {
       "bbox": [
-        45,
-        7,
-        89,
-        114
+        52,
+        9,
+        96,
+        116
       ],
       "origin": [
         72,
@@ -2645,10 +2645,10 @@
     },
     "assets/enemy_full/triceratops_attack_N_005.png": {
       "bbox": [
-        39,
-        10,
-        82,
-        111
+        47,
+        11,
+        90,
+        112
       ],
       "origin": [
         72,
@@ -2659,9 +2659,9 @@
     "assets/enemy_full/triceratops_death_N_000.png": {
       "bbox": [
         59,
-        13,
+        14,
         111,
-        109
+        110
       ],
       "origin": [
         72,
@@ -2671,10 +2671,10 @@
     },
     "assets/enemy_full/triceratops_death_N_001.png": {
       "bbox": [
-        50,
-        14,
-        108,
-        110
+        54,
+        15,
+        112,
+        111
       ],
       "origin": [
         72,
@@ -2684,9 +2684,9 @@
     },
     "assets/enemy_full/triceratops_death_N_002.png": {
       "bbox": [
-        44,
+        48,
         19,
-        110,
+        114,
         110
       ],
       "origin": [
@@ -2697,10 +2697,10 @@
     },
     "assets/enemy_full/triceratops_death_N_003.png": {
       "bbox": [
-        32,
-        26,
-        109,
-        107
+        34,
+        24,
+        111,
+        105
       ],
       "origin": [
         72,
@@ -2710,10 +2710,10 @@
     },
     "assets/enemy_full/triceratops_death_N_004.png": {
       "bbox": [
-        17,
-        27,
-        116,
-        94
+        20,
+        30,
+        119,
+        97
       ],
       "origin": [
         72,
@@ -2723,10 +2723,10 @@
     },
     "assets/enemy_full/triceratops_death_N_005.png": {
       "bbox": [
-        17,
-        26,
-        110,
-        99
+        22,
+        29,
+        115,
+        102
       ],
       "origin": [
         72,
@@ -2801,10 +2801,10 @@
     },
     "assets/enemy_full/tyrannosaurus_hurt_N_001.png": {
       "bbox": [
-        51,
-        33,
-        95,
-        131
+        52,
+        31,
+        96,
+        129
       ],
       "origin": [
         72,
@@ -2814,10 +2814,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_N_000.png": {
       "bbox": [
-        51,
-        34,
-        93,
-        132
+        52,
+        29,
+        94,
+        127
       ],
       "origin": [
         72,
@@ -2827,10 +2827,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_N_001.png": {
       "bbox": [
-        51,
-        34,
-        95,
-        130
+        50,
+        29,
+        94,
+        125
       ],
       "origin": [
         72,
@@ -2840,10 +2840,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_N_002.png": {
       "bbox": [
-        52,
-        33,
-        96,
-        131
+        50,
+        27,
+        94,
+        125
       ],
       "origin": [
         72,
@@ -2854,9 +2854,9 @@
     "assets/enemy_full/tyrannosaurus_walk_N_003.png": {
       "bbox": [
         50,
-        33,
+        27,
         93,
-        131
+        125
       ],
       "origin": [
         72,
@@ -2867,9 +2867,9 @@
     "assets/enemy_full/tyrannosaurus_walk_N_004.png": {
       "bbox": [
         50,
-        33,
+        27,
         94,
-        130
+        124
       ],
       "origin": [
         72,
@@ -2879,10 +2879,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_N_005.png": {
       "bbox": [
-        51,
-        32,
-        95,
-        130
+        50,
+        27,
+        94,
+        125
       ],
       "origin": [
         72,
@@ -2893,9 +2893,9 @@
     "assets/enemy_full/tyrannosaurus_run_N_000.png": {
       "bbox": [
         49,
-        32,
+        28,
         95,
-        129
+        125
       ],
       "origin": [
         72,
@@ -2906,9 +2906,9 @@
     "assets/enemy_full/tyrannosaurus_run_N_001.png": {
       "bbox": [
         49,
-        32,
+        28,
         95,
-        129
+        125
       ],
       "origin": [
         72,
@@ -2919,9 +2919,9 @@
     "assets/enemy_full/tyrannosaurus_run_N_002.png": {
       "bbox": [
         50,
-        32,
+        27,
         96,
-        129
+        124
       ],
       "origin": [
         72,
@@ -2931,10 +2931,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_N_003.png": {
       "bbox": [
-        51,
-        32,
-        96,
-        129
+        50,
+        27,
+        95,
+        124
       ],
       "origin": [
         72,
@@ -2944,10 +2944,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_N_004.png": {
       "bbox": [
-        49,
-        32,
-        94,
-        129
+        51,
+        29,
+        96,
+        126
       ],
       "origin": [
         72,
@@ -2958,9 +2958,9 @@
     "assets/enemy_full/tyrannosaurus_run_N_005.png": {
       "bbox": [
         51,
-        32,
+        27,
         97,
-        130
+        125
       ],
       "origin": [
         72,
@@ -2971,9 +2971,9 @@
     "assets/enemy_full/tyrannosaurus_attack_N_000.png": {
       "bbox": [
         49,
-        34,
+        29,
         94,
-        130
+        125
       ],
       "origin": [
         72,
@@ -2983,10 +2983,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_N_001.png": {
       "bbox": [
-        50,
-        35,
-        96,
-        128
+        49,
+        30,
+        95,
+        123
       ],
       "origin": [
         72,
@@ -2996,10 +2996,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_N_002.png": {
       "bbox": [
-        50,
-        30,
-        96,
-        130
+        49,
+        26,
+        95,
+        126
       ],
       "origin": [
         72,
@@ -3010,9 +3010,9 @@
     "assets/enemy_full/tyrannosaurus_attack_N_003.png": {
       "bbox": [
         49,
-        31,
+        27,
         95,
-        130
+        126
       ],
       "origin": [
         72,
@@ -3023,9 +3023,9 @@
     "assets/enemy_full/tyrannosaurus_attack_N_004.png": {
       "bbox": [
         47,
-        33,
+        28,
         95,
-        130
+        125
       ],
       "origin": [
         72,
@@ -3035,10 +3035,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_N_005.png": {
       "bbox": [
-        47,
-        35,
-        96,
-        130
+        48,
+        30,
+        97,
+        125
       ],
       "origin": [
         72,
@@ -3048,10 +3048,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_N_000.png": {
       "bbox": [
-        49,
-        27,
-        94,
-        120
+        50,
+        30,
+        95,
+        123
       ],
       "origin": [
         72,
@@ -3061,10 +3061,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_N_001.png": {
       "bbox": [
-        49,
-        31,
-        96,
-        120
+        50,
+        32,
+        97,
+        121
       ],
       "origin": [
         72,
@@ -3074,10 +3074,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_N_002.png": {
       "bbox": [
-        47,
-        40,
-        99,
-        118
+        45,
+        42,
+        97,
+        120
       ],
       "origin": [
         72,
@@ -3088,9 +3088,9 @@
     "assets/enemy_full/tyrannosaurus_death_N_003.png": {
       "bbox": [
         48,
-        41,
+        42,
         104,
-        119
+        120
       ],
       "origin": [
         72,
@@ -3100,10 +3100,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_N_004.png": {
       "bbox": [
-        45,
-        44,
-        110,
-        117
+        43,
+        43,
+        108,
+        116
       ],
       "origin": [
         72,
@@ -3113,10 +3113,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_N_005.png": {
       "bbox": [
-        46,
-        47,
-        116,
-        118
+        42,
+        48,
+        112,
+        119
       ],
       "origin": [
         72,
@@ -3205,9 +3205,9 @@
     "assets/enemy_full/parasaurolophus_walk_E_000.png": {
       "bbox": [
         15,
-        48,
+        54,
         131,
-        100
+        106
       ],
       "origin": [
         72,
@@ -3218,9 +3218,9 @@
     "assets/enemy_full/parasaurolophus_walk_E_001.png": {
       "bbox": [
         15,
-        51,
+        57,
         130,
-        101
+        107
       ],
       "origin": [
         72,
@@ -3231,9 +3231,9 @@
     "assets/enemy_full/parasaurolophus_walk_E_002.png": {
       "bbox": [
         14,
-        50,
+        56,
         131,
-        101
+        107
       ],
       "origin": [
         72,
@@ -3244,9 +3244,9 @@
     "assets/enemy_full/parasaurolophus_walk_E_003.png": {
       "bbox": [
         15,
-        50,
+        56,
         130,
-        101
+        107
       ],
       "origin": [
         72,
@@ -3257,9 +3257,9 @@
     "assets/enemy_full/parasaurolophus_walk_E_004.png": {
       "bbox": [
         14,
-        51,
+        57,
         129,
-        97
+        103
       ],
       "origin": [
         72,
@@ -3270,9 +3270,9 @@
     "assets/enemy_full/parasaurolophus_walk_E_005.png": {
       "bbox": [
         14,
-        51,
+        57,
         127,
-        102
+        108
       ],
       "origin": [
         72,
@@ -3283,9 +3283,9 @@
     "assets/enemy_full/parasaurolophus_run_E_000.png": {
       "bbox": [
         15,
-        42,
+        54,
         132,
-        94
+        106
       ],
       "origin": [
         72,
@@ -3296,9 +3296,9 @@
     "assets/enemy_full/parasaurolophus_run_E_001.png": {
       "bbox": [
         14,
-        43,
+        55,
         128,
-        94
+        106
       ],
       "origin": [
         72,
@@ -3309,9 +3309,9 @@
     "assets/enemy_full/parasaurolophus_run_E_002.png": {
       "bbox": [
         15,
-        44,
+        56,
         129,
-        97
+        109
       ],
       "origin": [
         72,
@@ -3322,9 +3322,9 @@
     "assets/enemy_full/parasaurolophus_run_E_003.png": {
       "bbox": [
         14,
-        44,
+        56,
         129,
-        96
+        108
       ],
       "origin": [
         72,
@@ -3335,9 +3335,9 @@
     "assets/enemy_full/parasaurolophus_run_E_004.png": {
       "bbox": [
         14,
-        46,
+        58,
         131,
-        97
+        109
       ],
       "origin": [
         72,
@@ -3348,9 +3348,9 @@
     "assets/enemy_full/parasaurolophus_run_E_005.png": {
       "bbox": [
         14,
-        46,
+        58,
         127,
-        97
+        109
       ],
       "origin": [
         72,
@@ -3361,9 +3361,9 @@
     "assets/enemy_full/parasaurolophus_attack_E_000.png": {
       "bbox": [
         14,
-        35,
+        49,
         134,
-        92
+        106
       ],
       "origin": [
         72,
@@ -3374,9 +3374,9 @@
     "assets/enemy_full/parasaurolophus_attack_E_001.png": {
       "bbox": [
         14,
-        37,
+        51,
         131,
-        93
+        107
       ],
       "origin": [
         72,
@@ -3387,9 +3387,9 @@
     "assets/enemy_full/parasaurolophus_attack_E_002.png": {
       "bbox": [
         14,
-        35,
+        49,
         128,
-        93
+        107
       ],
       "origin": [
         72,
@@ -3400,9 +3400,9 @@
     "assets/enemy_full/parasaurolophus_attack_E_003.png": {
       "bbox": [
         12,
-        35,
+        49,
         131,
-        93
+        107
       ],
       "origin": [
         72,
@@ -3413,9 +3413,9 @@
     "assets/enemy_full/parasaurolophus_attack_E_004.png": {
       "bbox": [
         15,
-        42,
+        56,
         132,
-        93
+        107
       ],
       "origin": [
         72,
@@ -3426,9 +3426,9 @@
     "assets/enemy_full/parasaurolophus_attack_E_005.png": {
       "bbox": [
         15,
-        36,
+        50,
         127,
-        93
+        107
       ],
       "origin": [
         72,
@@ -3438,10 +3438,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_E_000.png": {
       "bbox": [
-        16,
-        29,
-        133,
-        90
+        15,
+        45,
+        132,
+        106
       ],
       "origin": [
         72,
@@ -3451,10 +3451,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_E_001.png": {
       "bbox": [
-        20,
-        30,
-        134,
-        90
+        19,
+        46,
+        133,
+        106
       ],
       "origin": [
         72,
@@ -3464,10 +3464,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_E_002.png": {
       "bbox": [
-        25,
-        25,
-        135,
-        85
+        24,
+        41,
+        134,
+        101
       ],
       "origin": [
         72,
@@ -3477,10 +3477,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_E_003.png": {
       "bbox": [
-        19,
-        26,
-        133,
-        91
+        18,
+        42,
+        132,
+        107
       ],
       "origin": [
         72,
@@ -3490,10 +3490,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_E_004.png": {
       "bbox": [
-        26,
-        24,
-        120,
-        98
+        25,
+        40,
+        119,
+        114
       ],
       "origin": [
         72,
@@ -3503,10 +3503,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_E_005.png": {
       "bbox": [
-        16,
-        18,
-        130,
-        91
+        15,
+        34,
+        129,
+        107
       ],
       "origin": [
         72,
@@ -3595,9 +3595,9 @@
     "assets/enemy_full/deinosuchus_walk_E_000.png": {
       "bbox": [
         12,
-        44,
+        50,
         134,
-        106
+        112
       ],
       "origin": [
         72,
@@ -3608,9 +3608,9 @@
     "assets/enemy_full/deinosuchus_walk_E_001.png": {
       "bbox": [
         14,
-        43,
+        49,
         131,
-        107
+        113
       ],
       "origin": [
         72,
@@ -3621,9 +3621,9 @@
     "assets/enemy_full/deinosuchus_walk_E_002.png": {
       "bbox": [
         11,
-        44,
+        50,
         135,
-        105
+        111
       ],
       "origin": [
         72,
@@ -3634,9 +3634,9 @@
     "assets/enemy_full/deinosuchus_walk_E_003.png": {
       "bbox": [
         15,
-        44,
+        50,
         137,
-        109
+        115
       ],
       "origin": [
         72,
@@ -3647,9 +3647,9 @@
     "assets/enemy_full/deinosuchus_walk_E_004.png": {
       "bbox": [
         27,
-        41,
+        47,
         141,
-        109
+        115
       ],
       "origin": [
         72,
@@ -3660,9 +3660,9 @@
     "assets/enemy_full/deinosuchus_walk_E_005.png": {
       "bbox": [
         21,
-        46,
+        52,
         130,
-        109
+        115
       ],
       "origin": [
         72,
@@ -3673,9 +3673,9 @@
     "assets/enemy_full/deinosuchus_run_E_000.png": {
       "bbox": [
         12,
-        39,
+        49,
         134,
-        105
+        115
       ],
       "origin": [
         72,
@@ -3686,9 +3686,9 @@
     "assets/enemy_full/deinosuchus_run_E_001.png": {
       "bbox": [
         14,
-        37,
+        47,
         136,
-        97
+        107
       ],
       "origin": [
         72,
@@ -3699,9 +3699,9 @@
     "assets/enemy_full/deinosuchus_run_E_002.png": {
       "bbox": [
         16,
-        36,
+        46,
         135,
-        103
+        113
       ],
       "origin": [
         72,
@@ -3712,9 +3712,9 @@
     "assets/enemy_full/deinosuchus_run_E_003.png": {
       "bbox": [
         15,
-        38,
+        48,
         137,
-        102
+        112
       ],
       "origin": [
         72,
@@ -3725,9 +3725,9 @@
     "assets/enemy_full/deinosuchus_run_E_004.png": {
       "bbox": [
         20,
-        36,
+        46,
         141,
-        100
+        110
       ],
       "origin": [
         72,
@@ -3738,9 +3738,9 @@
     "assets/enemy_full/deinosuchus_run_E_005.png": {
       "bbox": [
         21,
-        39,
+        49,
         130,
-        105
+        115
       ],
       "origin": [
         72,
@@ -3751,9 +3751,9 @@
     "assets/enemy_full/deinosuchus_attack_E_000.png": {
       "bbox": [
         9,
-        29,
+        46,
         134,
-        95
+        112
       ],
       "origin": [
         72,
@@ -3764,9 +3764,9 @@
     "assets/enemy_full/deinosuchus_attack_E_001.png": {
       "bbox": [
         12,
-        33,
+        50,
         132,
-        95
+        112
       ],
       "origin": [
         72,
@@ -3777,9 +3777,9 @@
     "assets/enemy_full/deinosuchus_attack_E_002.png": {
       "bbox": [
         11,
-        35,
+        52,
         127,
-        94
+        111
       ],
       "origin": [
         72,
@@ -3790,9 +3790,9 @@
     "assets/enemy_full/deinosuchus_attack_E_003.png": {
       "bbox": [
         12,
-        27,
+        44,
         123,
-        97
+        114
       ],
       "origin": [
         72,
@@ -3803,9 +3803,9 @@
     "assets/enemy_full/deinosuchus_attack_E_004.png": {
       "bbox": [
         9,
-        34,
+        51,
         131,
-        92
+        109
       ],
       "origin": [
         72,
@@ -3816,9 +3816,9 @@
     "assets/enemy_full/deinosuchus_attack_E_005.png": {
       "bbox": [
         14,
-        35,
+        52,
         130,
-        95
+        112
       ],
       "origin": [
         72,
@@ -3829,9 +3829,9 @@
     "assets/enemy_full/deinosuchus_death_E_000.png": {
       "bbox": [
         9,
-        28,
+        48,
         134,
-        93
+        113
       ],
       "origin": [
         72,
@@ -3842,9 +3842,9 @@
     "assets/enemy_full/deinosuchus_death_E_001.png": {
       "bbox": [
         15,
-        26,
+        46,
         135,
-        85
+        105
       ],
       "origin": [
         72,
@@ -3855,9 +3855,9 @@
     "assets/enemy_full/deinosuchus_death_E_002.png": {
       "bbox": [
         15,
-        24,
+        44,
         141,
-        89
+        109
       ],
       "origin": [
         72,
@@ -3868,9 +3868,9 @@
     "assets/enemy_full/deinosuchus_death_E_003.png": {
       "bbox": [
         9,
-        25,
+        45,
         133,
-        90
+        110
       ],
       "origin": [
         72,
@@ -3881,9 +3881,9 @@
     "assets/enemy_full/deinosuchus_death_E_004.png": {
       "bbox": [
         19,
-        23,
+        43,
         136,
-        98
+        118
       ],
       "origin": [
         72,
@@ -3894,9 +3894,9 @@
     "assets/enemy_full/deinosuchus_death_E_005.png": {
       "bbox": [
         21,
-        22,
+        42,
         131,
-        86
+        106
       ],
       "origin": [
         72,
@@ -3919,9 +3919,9 @@
     },
     "assets/enemy_full/triceratops_idle_E_001.png": {
       "bbox": [
-        14,
+        17,
         46,
-        129,
+        132,
         105
       ],
       "origin": [
@@ -3932,10 +3932,10 @@
     },
     "assets/enemy_full/triceratops_idle_E_002.png": {
       "bbox": [
-        14,
-        47,
-        130,
-        105
+        17,
+        46,
+        133,
+        104
       ],
       "origin": [
         72,
@@ -3945,9 +3945,9 @@
     },
     "assets/enemy_full/triceratops_idle_E_003.png": {
       "bbox": [
-        13,
+        16,
         46,
-        129,
+        132,
         106
       ],
       "origin": [
@@ -3958,10 +3958,10 @@
     },
     "assets/enemy_full/triceratops_hurt_E_000.png": {
       "bbox": [
-        13,
-        47,
-        129,
-        105
+        15,
+        45,
+        131,
+        103
       ],
       "origin": [
         72,
@@ -3971,9 +3971,9 @@
     },
     "assets/enemy_full/triceratops_hurt_E_001.png": {
       "bbox": [
-        14,
+        16,
         46,
-        124,
+        126,
         105
       ],
       "origin": [
@@ -3984,10 +3984,10 @@
     },
     "assets/enemy_full/triceratops_walk_E_000.png": {
       "bbox": [
-        14,
-        38,
-        130,
-        100
+        16,
+        44,
+        132,
+        106
       ],
       "origin": [
         72,
@@ -3997,10 +3997,10 @@
     },
     "assets/enemy_full/triceratops_walk_E_001.png": {
       "bbox": [
-        14,
-        38,
-        130,
-        102
+        16,
+        44,
+        132,
+        108
       ],
       "origin": [
         72,
@@ -4010,10 +4010,10 @@
     },
     "assets/enemy_full/triceratops_walk_E_002.png": {
       "bbox": [
-        13,
-        37,
-        130,
-        100
+        16,
+        43,
+        133,
+        106
       ],
       "origin": [
         72,
@@ -4023,10 +4023,10 @@
     },
     "assets/enemy_full/triceratops_walk_E_003.png": {
       "bbox": [
-        13,
-        36,
-        129,
-        102
+        16,
+        42,
+        132,
+        108
       ],
       "origin": [
         72,
@@ -4036,10 +4036,10 @@
     },
     "assets/enemy_full/triceratops_walk_E_004.png": {
       "bbox": [
-        13,
-        39,
-        133,
-        98
+        14,
+        45,
+        134,
+        104
       ],
       "origin": [
         72,
@@ -4049,10 +4049,10 @@
     },
     "assets/enemy_full/triceratops_walk_E_005.png": {
       "bbox": [
-        14,
-        36,
-        129,
-        102
+        17,
+        42,
+        132,
+        108
       ],
       "origin": [
         72,
@@ -4063,9 +4063,9 @@
     "assets/enemy_full/triceratops_run_E_000.png": {
       "bbox": [
         13,
-        33,
+        30,
         130,
-        94
+        91
       ],
       "origin": [
         72,
@@ -4076,9 +4076,9 @@
     "assets/enemy_full/triceratops_run_E_001.png": {
       "bbox": [
         14,
-        32,
+        29,
         130,
-        93
+        90
       ],
       "origin": [
         72,
@@ -4088,10 +4088,10 @@
     },
     "assets/enemy_full/triceratops_run_E_002.png": {
       "bbox": [
-        14,
-        31,
-        132,
-        95
+        15,
+        28,
+        133,
+        92
       ],
       "origin": [
         72,
@@ -4102,9 +4102,9 @@
     "assets/enemy_full/triceratops_run_E_003.png": {
       "bbox": [
         13,
-        32,
+        30,
         130,
-        95
+        93
       ],
       "origin": [
         72,
@@ -4114,10 +4114,10 @@
     },
     "assets/enemy_full/triceratops_run_E_004.png": {
       "bbox": [
-        13,
-        33,
-        133,
-        92
+        11,
+        31,
+        131,
+        90
       ],
       "origin": [
         72,
@@ -4127,10 +4127,10 @@
     },
     "assets/enemy_full/triceratops_run_E_005.png": {
       "bbox": [
-        14,
-        32,
-        130,
-        94
+        16,
+        28,
+        132,
+        90
       ],
       "origin": [
         72,
@@ -4140,10 +4140,10 @@
     },
     "assets/enemy_full/triceratops_attack_E_000.png": {
       "bbox": [
-        14,
-        27,
-        132,
-        89
+        13,
+        28,
+        131,
+        90
       ],
       "origin": [
         72,
@@ -4154,9 +4154,9 @@
     "assets/enemy_full/triceratops_attack_E_001.png": {
       "bbox": [
         14,
-        25,
+        27,
         130,
-        91
+        93
       ],
       "origin": [
         72,
@@ -4166,10 +4166,10 @@
     },
     "assets/enemy_full/triceratops_attack_E_002.png": {
       "bbox": [
-        14,
-        28,
-        131,
-        89
+        15,
+        30,
+        132,
+        91
       ],
       "origin": [
         72,
@@ -4192,10 +4192,10 @@
     },
     "assets/enemy_full/triceratops_attack_E_004.png": {
       "bbox": [
-        16,
-        28,
-        132,
-        90
+        15,
+        29,
+        131,
+        91
       ],
       "origin": [
         72,
@@ -4205,10 +4205,10 @@
     },
     "assets/enemy_full/triceratops_attack_E_005.png": {
       "bbox": [
-        13,
-        27,
-        129,
-        87
+        15,
+        29,
+        131,
+        89
       ],
       "origin": [
         72,
@@ -4218,10 +4218,10 @@
     },
     "assets/enemy_full/triceratops_death_E_000.png": {
       "bbox": [
-        13,
-        21,
-        131,
-        83
+        11,
+        27,
+        129,
+        89
       ],
       "origin": [
         72,
@@ -4232,9 +4232,9 @@
     "assets/enemy_full/triceratops_death_E_001.png": {
       "bbox": [
         14,
-        19,
+        26,
         130,
-        90
+        97
       ],
       "origin": [
         72,
@@ -4245,9 +4245,9 @@
     "assets/enemy_full/triceratops_death_E_002.png": {
       "bbox": [
         16,
-        20,
+        26,
         130,
-        90
+        96
       ],
       "origin": [
         72,
@@ -4257,9 +4257,9 @@
     },
     "assets/enemy_full/triceratops_death_E_003.png": {
       "bbox": [
-        13,
+        12,
         16,
-        129,
+        128,
         86
       ],
       "origin": [
@@ -4270,10 +4270,10 @@
     },
     "assets/enemy_full/triceratops_death_E_004.png": {
       "bbox": [
-        8,
-        21,
-        133,
-        90
+        7,
+        28,
+        132,
+        97
       ],
       "origin": [
         72,
@@ -4284,9 +4284,9 @@
     "assets/enemy_full/triceratops_death_E_005.png": {
       "bbox": [
         10,
-        23,
+        28,
         130,
-        85
+        90
       ],
       "origin": [
         72,
@@ -4309,9 +4309,9 @@
     },
     "assets/enemy_full/tyrannosaurus_idle_E_001.png": {
       "bbox": [
-        19,
+        15,
         46,
-        140,
+        136,
         112
       ],
       "origin": [
@@ -4322,9 +4322,9 @@
     },
     "assets/enemy_full/tyrannosaurus_idle_E_002.png": {
       "bbox": [
-        18,
+        15,
         47,
-        139,
+        136,
         112
       ],
       "origin": [
@@ -4335,9 +4335,9 @@
     },
     "assets/enemy_full/tyrannosaurus_idle_E_003.png": {
       "bbox": [
-        17,
+        16,
         47,
-        137,
+        136,
         111
       ],
       "origin": [
@@ -4348,10 +4348,10 @@
     },
     "assets/enemy_full/tyrannosaurus_hurt_E_000.png": {
       "bbox": [
-        20,
-        45,
-        141,
-        114
+        18,
+        44,
+        139,
+        113
       ],
       "origin": [
         72,
@@ -4361,9 +4361,9 @@
     },
     "assets/enemy_full/tyrannosaurus_hurt_E_001.png": {
       "bbox": [
-        23,
+        26,
         45,
-        131,
+        134,
         114
       ],
       "origin": [
@@ -4374,10 +4374,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_E_000.png": {
       "bbox": [
-        11,
-        48,
-        139,
-        107
+        7,
+        54,
+        135,
+        113
       ],
       "origin": [
         72,
@@ -4387,10 +4387,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_E_001.png": {
       "bbox": [
-        17,
-        43,
-        139,
-        107
+        13,
+        48,
+        135,
+        112
       ],
       "origin": [
         72,
@@ -4400,10 +4400,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_E_002.png": {
       "bbox": [
-        17,
-        47,
-        138,
-        103
+        15,
+        52,
+        136,
+        108
       ],
       "origin": [
         72,
@@ -4413,10 +4413,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_E_003.png": {
       "bbox": [
-        19,
-        47,
-        137,
-        107
+        18,
+        51,
+        136,
+        111
       ],
       "origin": [
         72,
@@ -4426,10 +4426,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_E_004.png": {
       "bbox": [
-        16,
-        45,
-        134,
-        107
+        18,
+        50,
+        136,
+        112
       ],
       "origin": [
         72,
@@ -4439,10 +4439,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_E_005.png": {
       "bbox": [
-        11,
-        45,
-        128,
-        107
+        19,
+        50,
+        136,
+        112
       ],
       "origin": [
         72,
@@ -4452,10 +4452,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_E_000.png": {
       "bbox": [
-        13,
-        40,
-        138,
-        100
+        10,
+        52,
+        135,
+        112
       ],
       "origin": [
         72,
@@ -4465,10 +4465,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_E_001.png": {
       "bbox": [
-        19,
-        42,
-        142,
-        100
+        14,
+        52,
+        137,
+        110
       ],
       "origin": [
         72,
@@ -4478,10 +4478,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_E_002.png": {
       "bbox": [
-        23,
-        40,
-        139,
-        99
+        19,
+        52,
+        135,
+        111
       ],
       "origin": [
         72,
@@ -4491,10 +4491,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_E_003.png": {
       "bbox": [
-        19,
-        41,
-        138,
-        101
+        16,
+        52,
+        135,
+        112
       ],
       "origin": [
         72,
@@ -4504,10 +4504,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_E_004.png": {
       "bbox": [
-        18,
-        38,
-        138,
-        99
+        16,
+        49,
+        136,
+        110
       ],
       "origin": [
         72,
@@ -4517,10 +4517,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_E_005.png": {
       "bbox": [
-        19,
-        39,
-        132,
-        100
+        20,
+        50,
+        133,
+        111
       ],
       "origin": [
         72,
@@ -4530,10 +4530,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_E_000.png": {
       "bbox": [
-        13,
-        35,
-        138,
-        96
+        15,
+        36,
+        140,
+        97
       ],
       "origin": [
         72,
@@ -4544,9 +4544,9 @@
     "assets/enemy_full/tyrannosaurus_attack_E_001.png": {
       "bbox": [
         22,
-        28,
+        32,
         142,
-        99
+        103
       ],
       "origin": [
         72,
@@ -4557,9 +4557,9 @@
     "assets/enemy_full/tyrannosaurus_attack_E_002.png": {
       "bbox": [
         17,
-        31,
+        32,
         139,
-        99
+        100
       ],
       "origin": [
         72,
@@ -4570,9 +4570,9 @@
     "assets/enemy_full/tyrannosaurus_attack_E_003.png": {
       "bbox": [
         21,
-        35,
+        49,
         136,
-        97
+        111
       ],
       "origin": [
         72,
@@ -4582,10 +4582,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_E_004.png": {
       "bbox": [
-        15,
-        33,
-        136,
-        98
+        19,
+        34,
+        140,
+        99
       ],
       "origin": [
         72,
@@ -4595,10 +4595,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_E_005.png": {
       "bbox": [
-        12,
-        31,
-        127,
-        99
+        21,
+        42,
+        136,
+        110
       ],
       "origin": [
         72,
@@ -4608,10 +4608,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_E_000.png": {
       "bbox": [
-        16,
-        26,
-        136,
-        91
+        18,
+        32,
+        138,
+        97
       ],
       "origin": [
         72,
@@ -4621,10 +4621,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_E_001.png": {
       "bbox": [
-        18,
-        31,
-        139,
-        94
+        19,
+        38,
+        140,
+        101
       ],
       "origin": [
         72,
@@ -4634,10 +4634,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_E_002.png": {
       "bbox": [
-        17,
-        26,
-        134,
-        96
+        22,
+        31,
+        139,
+        101
       ],
       "origin": [
         72,
@@ -4647,10 +4647,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_E_003.png": {
       "bbox": [
-        20,
-        20,
-        132,
-        96
+        28,
+        25,
+        140,
+        101
       ],
       "origin": [
         72,
@@ -4660,10 +4660,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_E_004.png": {
       "bbox": [
-        17,
-        35,
-        135,
-        97
+        20,
+        39,
+        138,
+        101
       ],
       "origin": [
         72,
@@ -4673,10 +4673,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_E_005.png": {
       "bbox": [
-        12,
-        24,
-        128,
-        92
+        13,
+        38,
+        129,
+        106
       ],
       "origin": [
         72,
@@ -4764,10 +4764,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_W_000.png": {
       "bbox": [
-        17,
-        38,
-        135,
-        105
+        16,
+        44,
+        134,
+        111
       ],
       "origin": [
         72,
@@ -4777,10 +4777,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_W_001.png": {
       "bbox": [
-        18,
-        38,
-        134,
-        105
+        17,
+        44,
+        133,
+        111
       ],
       "origin": [
         72,
@@ -4790,10 +4790,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_W_002.png": {
       "bbox": [
-        18,
-        38,
-        134,
-        108
+        17,
+        44,
+        133,
+        114
       ],
       "origin": [
         72,
@@ -4803,10 +4803,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_W_003.png": {
       "bbox": [
-        18,
-        39,
-        134,
-        106
+        17,
+        45,
+        133,
+        112
       ],
       "origin": [
         72,
@@ -4816,10 +4816,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_W_004.png": {
       "bbox": [
-        17,
-        39,
-        134,
-        105
+        16,
+        45,
+        133,
+        111
       ],
       "origin": [
         72,
@@ -4829,10 +4829,10 @@
     },
     "assets/enemy_full/parasaurolophus_walk_W_005.png": {
       "bbox": [
-        17,
-        40,
-        133,
-        106
+        16,
+        46,
+        132,
+        112
       ],
       "origin": [
         72,
@@ -4842,10 +4842,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_W_000.png": {
       "bbox": [
-        17,
-        33,
-        133,
-        100
+        14,
+        43,
+        130,
+        110
       ],
       "origin": [
         72,
@@ -4855,10 +4855,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_W_001.png": {
       "bbox": [
-        18,
-        33,
-        134,
-        100
+        15,
+        43,
+        131,
+        110
       ],
       "origin": [
         72,
@@ -4868,10 +4868,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_W_002.png": {
       "bbox": [
-        18,
-        33,
-        135,
-        102
+        15,
+        43,
+        132,
+        112
       ],
       "origin": [
         72,
@@ -4881,10 +4881,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_W_003.png": {
       "bbox": [
-        18,
-        33,
-        135,
-        100
+        15,
+        43,
+        132,
+        110
       ],
       "origin": [
         72,
@@ -4894,10 +4894,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_W_004.png": {
       "bbox": [
-        17,
-        33,
-        134,
-        103
+        14,
+        43,
+        131,
+        113
       ],
       "origin": [
         72,
@@ -4907,10 +4907,10 @@
     },
     "assets/enemy_full/parasaurolophus_run_W_005.png": {
       "bbox": [
-        17,
-        33,
-        133,
-        100
+        14,
+        43,
+        130,
+        110
       ],
       "origin": [
         72,
@@ -4920,10 +4920,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_W_000.png": {
       "bbox": [
-        19,
-        26,
-        135,
-        95
+        16,
+        45,
+        132,
+        114
       ],
       "origin": [
         72,
@@ -4933,10 +4933,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_W_001.png": {
       "bbox": [
-        18,
-        26,
-        134,
-        95
+        15,
+        45,
+        131,
+        114
       ],
       "origin": [
         72,
@@ -4946,10 +4946,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_W_002.png": {
       "bbox": [
-        26,
-        26,
-        134,
-        93
+        23,
+        45,
+        131,
+        112
       ],
       "origin": [
         72,
@@ -4959,10 +4959,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_W_003.png": {
       "bbox": [
-        18,
-        30,
-        136,
-        94
+        15,
+        49,
+        133,
+        113
       ],
       "origin": [
         72,
@@ -4972,10 +4972,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_W_004.png": {
       "bbox": [
-        18,
-        31,
-        134,
-        96
+        15,
+        50,
+        131,
+        115
       ],
       "origin": [
         72,
@@ -4985,10 +4985,10 @@
     },
     "assets/enemy_full/parasaurolophus_attack_W_005.png": {
       "bbox": [
-        17,
-        27,
-        132,
-        95
+        14,
+        46,
+        129,
+        114
       ],
       "origin": [
         72,
@@ -4998,10 +4998,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_W_000.png": {
       "bbox": [
-        19,
-        21,
-        126,
-        91
+        13,
+        41,
+        120,
+        111
       ],
       "origin": [
         72,
@@ -5011,10 +5011,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_W_001.png": {
       "bbox": [
-        18,
-        21,
-        135,
-        91
+        12,
+        41,
+        129,
+        111
       ],
       "origin": [
         72,
@@ -5024,10 +5024,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_W_002.png": {
       "bbox": [
-        23,
-        22,
-        130,
-        92
+        17,
+        42,
+        124,
+        112
       ],
       "origin": [
         72,
@@ -5037,10 +5037,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_W_003.png": {
       "bbox": [
-        26,
-        17,
-        134,
-        92
+        20,
+        37,
+        128,
+        112
       ],
       "origin": [
         72,
@@ -5050,10 +5050,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_W_004.png": {
       "bbox": [
-        26,
-        17,
-        130,
-        91
+        20,
+        37,
+        124,
+        111
       ],
       "origin": [
         72,
@@ -5063,10 +5063,10 @@
     },
     "assets/enemy_full/parasaurolophus_death_W_005.png": {
       "bbox": [
-        17,
-        13,
-        126,
-        101
+        11,
+        33,
+        120,
+        121
       ],
       "origin": [
         72,
@@ -5492,9 +5492,9 @@
     },
     "assets/enemy_full/triceratops_idle_W_002.png": {
       "bbox": [
-        24,
+        28,
         48,
-        135,
+        139,
         117
       ],
       "origin": [
@@ -5518,10 +5518,10 @@
     },
     "assets/enemy_full/triceratops_hurt_W_000.png": {
       "bbox": [
-        24,
-        53,
-        121,
-        117
+        26,
+        52,
+        123,
+        116
       ],
       "origin": [
         72,
@@ -5531,10 +5531,10 @@
     },
     "assets/enemy_full/triceratops_hurt_W_001.png": {
       "bbox": [
-        10,
-        55,
-        116,
-        117
+        17,
+        47,
+        123,
+        109
       ],
       "origin": [
         72,
@@ -5544,10 +5544,10 @@
     },
     "assets/enemy_full/triceratops_walk_W_000.png": {
       "bbox": [
-        20,
-        46,
-        137,
-        112
+        18,
+        50,
+        135,
+        116
       ],
       "origin": [
         72,
@@ -5557,10 +5557,10 @@
     },
     "assets/enemy_full/triceratops_walk_W_001.png": {
       "bbox": [
-        20,
-        43,
-        135,
-        114
+        19,
+        48,
+        134,
+        119
       ],
       "origin": [
         72,
@@ -5570,10 +5570,10 @@
     },
     "assets/enemy_full/triceratops_walk_W_002.png": {
       "bbox": [
-        16,
-        45,
-        132,
-        113
+        19,
+        50,
+        135,
+        118
       ],
       "origin": [
         72,
@@ -5583,10 +5583,10 @@
     },
     "assets/enemy_full/triceratops_walk_W_003.png": {
       "bbox": [
-        16,
-        45,
-        130,
-        114
+        18,
+        50,
+        132,
+        119
       ],
       "origin": [
         72,
@@ -5596,10 +5596,10 @@
     },
     "assets/enemy_full/triceratops_walk_W_004.png": {
       "bbox": [
-        12,
-        44,
-        124,
-        113
+        14,
+        46,
+        126,
+        115
       ],
       "origin": [
         72,
@@ -5609,10 +5609,10 @@
     },
     "assets/enemy_full/triceratops_walk_W_005.png": {
       "bbox": [
-        7,
-        43,
-        123,
-        114
+        11,
+        46,
+        127,
+        117
       ],
       "origin": [
         72,
@@ -5622,10 +5622,10 @@
     },
     "assets/enemy_full/triceratops_run_W_000.png": {
       "bbox": [
-        20,
-        45,
-        137,
-        107
+        22,
+        40,
+        139,
+        102
       ],
       "origin": [
         72,
@@ -5635,10 +5635,10 @@
     },
     "assets/enemy_full/triceratops_run_W_001.png": {
       "bbox": [
-        20,
-        47,
-        135,
-        107
+        19,
+        55,
+        134,
+        115
       ],
       "origin": [
         72,
@@ -5648,10 +5648,10 @@
     },
     "assets/enemy_full/triceratops_run_W_002.png": {
       "bbox": [
-        14,
-        44,
-        131,
-        100
+        17,
+        51,
+        134,
+        107
       ],
       "origin": [
         72,
@@ -5661,10 +5661,10 @@
     },
     "assets/enemy_full/triceratops_run_W_003.png": {
       "bbox": [
-        14,
-        48,
-        131,
-        107
+        16,
+        56,
+        133,
+        115
       ],
       "origin": [
         72,
@@ -5674,10 +5674,10 @@
     },
     "assets/enemy_full/triceratops_run_W_004.png": {
       "bbox": [
-        12,
-        48,
-        124,
-        97
+        16,
+        53,
+        128,
+        102
       ],
       "origin": [
         72,
@@ -5687,10 +5687,10 @@
     },
     "assets/enemy_full/triceratops_run_W_005.png": {
       "bbox": [
-        5,
-        51,
-        123,
-        107
+        9,
+        53,
+        127,
+        109
       ],
       "origin": [
         72,
@@ -5700,10 +5700,10 @@
     },
     "assets/enemy_full/triceratops_attack_W_000.png": {
       "bbox": [
-        27,
-        35,
-        139,
-        100
+        29,
+        34,
+        141,
+        99
       ],
       "origin": [
         72,
@@ -5713,10 +5713,10 @@
     },
     "assets/enemy_full/triceratops_attack_W_001.png": {
       "bbox": [
-        20,
-        33,
-        136,
-        103
+        22,
+        34,
+        138,
+        104
       ],
       "origin": [
         72,
@@ -5726,10 +5726,10 @@
     },
     "assets/enemy_full/triceratops_attack_W_002.png": {
       "bbox": [
-        18,
-        32,
-        132,
-        99
+        22,
+        33,
+        136,
+        100
       ],
       "origin": [
         72,
@@ -5739,9 +5739,9 @@
     },
     "assets/enemy_full/triceratops_attack_W_003.png": {
       "bbox": [
-        16,
+        19,
         36,
-        130,
+        133,
         99
       ],
       "origin": [
@@ -5752,10 +5752,10 @@
     },
     "assets/enemy_full/triceratops_attack_W_004.png": {
       "bbox": [
-        13,
-        32,
-        127,
-        101
+        16,
+        31,
+        130,
+        100
       ],
       "origin": [
         72,
@@ -5765,10 +5765,10 @@
     },
     "assets/enemy_full/triceratops_attack_W_005.png": {
       "bbox": [
-        9,
-        32,
-        123,
-        100
+        14,
+        31,
+        128,
+        99
       ],
       "origin": [
         72,
@@ -5778,10 +5778,10 @@
     },
     "assets/enemy_full/triceratops_death_W_000.png": {
       "bbox": [
-        22,
-        27,
-        142,
-        97
+        21,
+        30,
+        141,
+        100
       ],
       "origin": [
         72,
@@ -5791,10 +5791,10 @@
     },
     "assets/enemy_full/triceratops_death_W_001.png": {
       "bbox": [
-        22,
-        30,
-        135,
-        96
+        25,
+        35,
+        138,
+        101
       ],
       "origin": [
         72,
@@ -5804,10 +5804,10 @@
     },
     "assets/enemy_full/triceratops_death_W_002.png": {
       "bbox": [
-        15,
-        24,
-        132,
-        93
+        21,
+        26,
+        138,
+        95
       ],
       "origin": [
         72,
@@ -5817,10 +5817,10 @@
     },
     "assets/enemy_full/triceratops_death_W_003.png": {
       "bbox": [
-        7,
-        32,
-        120,
-        95
+        11,
+        36,
+        124,
+        99
       ],
       "origin": [
         72,
@@ -5830,9 +5830,9 @@
     },
     "assets/enemy_full/triceratops_death_W_004.png": {
       "bbox": [
-        2,
+        8,
         34,
-        120,
+        126,
         93
       ],
       "origin": [
@@ -5843,10 +5843,10 @@
     },
     "assets/enemy_full/triceratops_death_W_005.png": {
       "bbox": [
-        2,
-        38,
-        123,
-        93
+        8,
+        36,
+        129,
+        91
       ],
       "origin": [
         72,
@@ -5856,9 +5856,9 @@
     },
     "assets/enemy_full/tyrannosaurus_idle_W_000.png": {
       "bbox": [
-        21,
+        18,
         33,
-        140,
+        137,
         103
       ],
       "origin": [
@@ -5870,9 +5870,9 @@
     "assets/enemy_full/tyrannosaurus_idle_W_001.png": {
       "bbox": [
         17,
-        33,
+        32,
         141,
-        105
+        104
       ],
       "origin": [
         72,
@@ -5882,10 +5882,10 @@
     },
     "assets/enemy_full/tyrannosaurus_idle_W_002.png": {
       "bbox": [
-        19,
-        38,
-        135,
-        107
+        18,
+        34,
+        134,
+        103
       ],
       "origin": [
         72,
@@ -5895,10 +5895,10 @@
     },
     "assets/enemy_full/tyrannosaurus_idle_W_003.png": {
       "bbox": [
-        17,
-        33,
-        136,
-        108
+        18,
+        31,
+        137,
+        106
       ],
       "origin": [
         72,
@@ -5908,10 +5908,10 @@
     },
     "assets/enemy_full/tyrannosaurus_hurt_W_000.png": {
       "bbox": [
-        17,
-        35,
-        133,
-        103
+        18,
+        30,
+        134,
+        98
       ],
       "origin": [
         72,
@@ -5921,10 +5921,10 @@
     },
     "assets/enemy_full/tyrannosaurus_hurt_W_001.png": {
       "bbox": [
-        13,
-        46,
-        129,
-        105
+        11,
+        47,
+        127,
+        106
       ],
       "origin": [
         72,
@@ -5934,10 +5934,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_W_000.png": {
       "bbox": [
-        14,
-        34,
-        136,
-        103
+        15,
+        39,
+        137,
+        108
       ],
       "origin": [
         72,
@@ -5947,10 +5947,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_W_001.png": {
       "bbox": [
-        14,
-        30,
-        137,
-        102
+        16,
+        36,
+        139,
+        108
       ],
       "origin": [
         72,
@@ -5960,10 +5960,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_W_002.png": {
       "bbox": [
-        13,
-        27,
-        136,
-        103
+        15,
+        33,
+        138,
+        109
       ],
       "origin": [
         72,
@@ -5973,10 +5973,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_W_003.png": {
       "bbox": [
-        13,
-        37,
-        133,
-        96
+        15,
+        43,
+        135,
+        102
       ],
       "origin": [
         72,
@@ -5986,10 +5986,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_W_004.png": {
       "bbox": [
-        11,
-        27,
-        135,
-        100
+        15,
+        33,
+        139,
+        106
       ],
       "origin": [
         72,
@@ -5999,10 +5999,10 @@
     },
     "assets/enemy_full/tyrannosaurus_walk_W_005.png": {
       "bbox": [
-        11,
-        33,
-        130,
-        101
+        17,
+        39,
+        136,
+        107
       ],
       "origin": [
         72,
@@ -6012,10 +6012,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_W_000.png": {
       "bbox": [
-        16,
-        29,
-        135,
-        97
+        15,
+        35,
+        134,
+        103
       ],
       "origin": [
         72,
@@ -6025,10 +6025,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_W_001.png": {
       "bbox": [
-        14,
-        35,
-        134,
-        96
+        15,
+        42,
+        135,
+        103
       ],
       "origin": [
         72,
@@ -6038,10 +6038,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_W_002.png": {
       "bbox": [
-        11,
-        24,
-        135,
-        102
+        13,
+        28,
+        137,
+        106
       ],
       "origin": [
         72,
@@ -6051,10 +6051,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_W_003.png": {
       "bbox": [
-        13,
-        33,
-        134,
-        96
+        12,
+        40,
+        133,
+        103
       ],
       "origin": [
         72,
@@ -6064,10 +6064,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_W_004.png": {
       "bbox": [
-        8,
-        28,
-        134,
-        97
+        5,
+        36,
+        131,
+        105
       ],
       "origin": [
         72,
@@ -6077,10 +6077,10 @@
     },
     "assets/enemy_full/tyrannosaurus_run_W_005.png": {
       "bbox": [
-        9,
-        28,
-        130,
-        97
+        7,
+        35,
+        128,
+        104
       ],
       "origin": [
         72,
@@ -6090,10 +6090,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_W_000.png": {
       "bbox": [
-        15,
-        28,
-        136,
-        98
+        13,
+        34,
+        134,
+        104
       ],
       "origin": [
         72,
@@ -6103,10 +6103,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_W_001.png": {
       "bbox": [
-        14,
-        24,
-        132,
-        94
+        15,
+        33,
+        133,
+        103
       ],
       "origin": [
         72,
@@ -6116,10 +6116,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_W_002.png": {
       "bbox": [
-        14,
-        30,
-        137,
-        99
+        15,
+        33,
+        138,
+        102
       ],
       "origin": [
         72,
@@ -6129,10 +6129,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_W_003.png": {
       "bbox": [
-        18,
-        26,
-        132,
-        101
+        21,
+        34,
+        135,
+        109
       ],
       "origin": [
         72,
@@ -6142,10 +6142,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_W_004.png": {
       "bbox": [
-        12,
-        25,
-        134,
-        105
+        13,
+        31,
+        135,
+        111
       ],
       "origin": [
         72,
@@ -6155,10 +6155,10 @@
     },
     "assets/enemy_full/tyrannosaurus_attack_W_005.png": {
       "bbox": [
-        9,
-        29,
-        130,
-        95
+        15,
+        37,
+        136,
+        103
       ],
       "origin": [
         72,
@@ -6168,10 +6168,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_W_000.png": {
       "bbox": [
-        17,
-        34,
-        137,
-        104
+        14,
+        35,
+        134,
+        105
       ],
       "origin": [
         72,
@@ -6181,10 +6181,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_W_001.png": {
       "bbox": [
-        16,
-        28,
-        137,
-        104
+        15,
+        31,
+        136,
+        107
       ],
       "origin": [
         72,
@@ -6195,9 +6195,9 @@
     "assets/enemy_full/tyrannosaurus_death_W_002.png": {
       "bbox": [
         13,
-        21,
+        20,
         134,
-        100
+        99
       ],
       "origin": [
         72,
@@ -6207,10 +6207,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_W_003.png": {
       "bbox": [
-        15,
-        25,
-        133,
-        101
+        19,
+        29,
+        137,
+        105
       ],
       "origin": [
         72,
@@ -6220,10 +6220,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_W_004.png": {
       "bbox": [
-        13,
-        24,
-        131,
-        103
+        12,
+        23,
+        130,
+        102
       ],
       "origin": [
         72,
@@ -6233,10 +6233,10 @@
     },
     "assets/enemy_full/tyrannosaurus_death_W_005.png": {
       "bbox": [
-        6,
-        33,
-        130,
-        105
+        5,
+        34,
+        129,
+        106
       ],
       "origin": [
         72,

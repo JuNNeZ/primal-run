@@ -1,0 +1,16 @@
+PASS: full playable animation · 1440 actual frames · 12 classes/4 directions/6 states · hurt/death · pause · native origins
+page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-action="start"]:not(:disabled)') to be visible[22m
+
+    at /workspace/primal-polish-check/tests/enemy-animation-browser.cjs:5:216 {
+  log: [
+    `  - waiting for locator('[data-action="start"]:not(:disabled)') to be visible`
+  ],
+  name: 'TimeoutError'
+}
+Resume after explicit engine mount/menu readiness correction
+PASS: 1200 actual enemy frames · ten species · six states · four directions · integer scales · pause
+PASS: complete cinematic attacks30/60fps, pack gait/idle/pause,13-species native review
+PASS: 36 real attack flows, ordered six poses, contact3, one hit, stable recovery/pause
+PASS: all twelve selector portraits exactly match runtime palettes and preserve alpha, including initially unloaded Utahraptor

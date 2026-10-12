@@ -32,25 +32,20 @@ Angrebsvarighed, skade, kontakt, AI, loot, collision og artsskala er bevaret.
 ved30/60fps, flok-gang/løb/idle, pause og alle review-states/retninger.
 `tests/animation-continuity.test.cjs` kontrollerer simulationens fodfase.
 
-## Grafiske fund, som stadig kræver kildepolering
+## Grafiske rettelser efter auditten
 
-| Prioritet | Fund | Konkret review |
-|---|---|---|
-| Høj | T. rex North har smal krop i bevaret idle/attack/death og anden kropsfylde i revideret walk/run. Det giver et synligt kryds-state skift. | `tyrannosaurus`, N, idle→walk→attack; `previews/animation_audit/tyrannosaurus_gait.png` |
-| Høj | Deinonychus South hurt-poses flytter den synlige kropsmasse tydeligt. Fast eksportorigin beviser ikke, at den tegnede hofte er fast. | `deinonychus`, S, hurt0→1 og walk→hurt |
-| Mellem | Separat genererede Triceratops/Pachy/Galli/Para-angreb har variation i krop/markeringer i forhold til grundsættet. Anky genbruger de oprindelige24 halesving. | Afspillerens walk→attack→walk i alle fire retninger |
-| Mellem | Flere gang-/løbs-/idle-loops har store ændringer i silhouettecentrum, især Carno S, Triceratops N, Pachy N og T. rex S. Man skal skelne halebevægelse fra faktisk hoftejitter. | `species_animation_audit.json` → review_candidates, samt de native gait-grids |
-| Mellem | Raptorernes farver er forskellige, men silhuet og faste markeringer skal fortsat kontrolleres gennem alle states; farve/skala alene er ikke en identitetsgodkendelse. | S/E/N/W i raptoroversigten og fælles afspiller |
+Den konkrete kilderevision findes i [ANIMATION_POLISH.md](ANIMATION_POLISH.md).
+Store pose-/rækkeplaceringer er rettet ved eksplicitte anatomiske punkter og
+heltalsforskydninger; Deinonychus South hurt og Parasaurolophus' spark er lokalt
+revideret. Triceratops/Pachy/Galli/Anky bruger nu matching native våbenposes.
 
-Automatiske area-/centroid-/loop-målinger er **review-kandidater**, ikke en
-fejlliste eller en garanti for sidestepfri animation. Tail swing, bevægelige ben,
-angreb og fald kan legitimt ændre silhouetten. Der er ikke centreret sprites
-efter bounding box, interpoleret lemmer eller ændret anatomy/source art for at
-skjule forskelle. Korrigér de faktiske source-hips eller tegn artsrefererede
-revisioner med image generation, behold raw/rejected kilder, og kør familie-
-export/validator samt native/runtime-review igen. Følg
-`../PRIMAL_RUN_Sprites/SPRITE_RULES.md` og `SPRITE_RULES_PLAYER_FULL.md` /
-`SPRITE_RULES_ENEMY_FULL.md` / `SPRITE_RULES_SPECIES_ATTACKS.md`.
+Den tidligere beskrivelse af blandede T. rex North-kilder var forkert. Den
+aktive serie bruger ét samlet North-revisionsark; den konkrete placering mellem
+states er kontrolleret og korrigeret. Der er ikke tegnet en ny T. rex-krop.
+
+Automatiske area-/centroid-/loop-målinger forbliver review-kandidater. Halebevægelse,
+ben, angreb og fald ændrer legitimt silhouetten. Se den separate native kilde-,
+registrerings- og runtime-evidens; metrics alene er ikke visuel godkendelse.
 
 ## Artskontrakt
 
@@ -93,5 +88,6 @@ bliver aldrig automatisk en visuel godkendelse. Resultater og aktuelt
 testlog findes i `animation_continuity_runtime_report.json` samt
 `../docs/validation/SPECIES_ANIMATION_AUDIT_2026-10-12.json`.
 Tekniske checks og standalone Chromium er adskilt fra anatomisk godkendelse og
-faktisk GDJS-runtime. Art forbliver prototype_static; intet er produktionsgodkendt
-på baggrund af denne audit, og en ny GDJS-eksport er ikke kørt.
+faktisk GDJS-runtime. Art forbliver prototype_static; teknisk audit er ikke produktionsgodkendelse.
+Den efterfølgende native/standalone/GDJS-kontrol registreres separat i
+ANIMATION_POLISH.md og dens runtime-rapporter.

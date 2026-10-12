@@ -4741,7 +4741,25 @@
     "prompt": "Feathered Deinonychus master expanded into30separately drawn poses/cardinal direction. Two rear hindlegs, two short chest featherarms, one fan-tipped tail, brown/cream markings. Generation/rejection review in feathered_starter_review.json.",
     "source_sha256": "7b5bf2d88999f90a6296dc2a20c7ef7eefee569dd757c57e3bc515eed147f155",
     "review": "Prototype: manually inspected whole source direction/limbs; native grids and runtime reviewed separately. N first sheet rejected for reversed walking/running. Pose/volume variation remains. Declared direct source stride4, fixed72hip, no runtime enlargement.",
-    "source_sample_stride": 4
+    "source_sample_stride": 4,
+    "state_overrides": {
+      "hurt": {
+        "source": "Source_Generated/animation_polish/deinonychus_S_hurt_revision1.png",
+        "row": 0,
+        "start": 4,
+        "anchors": [
+          [
+            128,
+            96
+          ],
+          [
+            128,
+            96
+          ]
+        ],
+        "review": "Only revised South hurt cells are sampled. Other 28 source poses remain on the immutable original master."
+      }
+    }
   },
   {
     "species": "deinonychus",

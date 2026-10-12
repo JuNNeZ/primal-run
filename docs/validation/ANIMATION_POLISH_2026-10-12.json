@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-12",
+  "result": "PASS",
+  "scope": "Source polish, native registration, active export/atlas integrity and separate standalone/official-GDJS verification",
+  "source_art_changes": true,
+  "art_gate": "SOURCE_POLISH_IMPLEMENTED",
+  "production_approved": false,
+  "registration": {
+    "result": "PASS",
+    "registered_poses": 844,
+    "translated_poses": 812,
+    "canonical_targets": 38,
+    "byte_identical_weapon_poses": 96,
+    "errors": [],
+    "production_approved": false,
+    "scope": "Independent inverse translation/pixel digests, source binding, canonical anatomical targets, padding and native weapon reuse. Does not certify anatomy or interpolate motion."
+  },
+  "atlas": {
+    "status": "PASS",
+    "approved_exports": 17,
+    "frames": 3033,
+    "unique_frames": 2701,
+    "alias_frames": 332,
+    "sheets": 17,
+    "checks": [
+      "exact native RGBA bytes",
+      "unaltered anchors and dimensions",
+      "one-pixel zero-RGBA gutters",
+      "nonoverlapping unique frames; aliases share only exact rectangles",
+      "complete active catalog coverage",
+      "unchanged user-approved exports and masters"
+    ]
+  },
+  "checks": {
+    "npm_test": "PASS:251 unit tests,34 browser suites,3 kit checks,3 Python atlas/plan tests",
+    "official_GDevelop": "PASS:GDJS5.6.283 exporter;1440 player frames,1200 NPC frames,cinematic/pack continuity,36 actual attack flows,12 selector palettes",
+    "native_source_families": "PASS:player_full,enemy_full,species attacks/avatar/forage,312 injured frames,288 native behavior frames",
+    "historical_kit_pngs": "PASS:104 assets",
+    "A6": "PASS:110592 exact lava/damage pixel checks,Hud/diet/Part C icons,pause/rollback/mobile",
+    "night_palette": "PASS:192 exact sprite/skin cases,alpha/origins,rollback and bounded cache"
+  },
+  "reports": [
+    "../../PRIMAL_RUN_Game/animation_polish_validation.json",
+    "../../PRIMAL_RUN_Game/animation_polish_runtime_report.json",
+    "../../PRIMAL_RUN_Game/animation_polish_gdevelop_report.json",
+    "../../PRIMAL_RUN_Game/animation_polish_gdevelop_player_report.json",
+    "../../PRIMAL_RUN_Game/animation_polish_gdevelop_enemy_report.json",
+    "../../PRIMAL_RUN_Game/animation_polish_gdevelop_continuity_report.json",
+    "../../PRIMAL_RUN_Game/animation_continuity_runtime_report.json"
+  ],
+  "logs": [
+    "animation-polish-npm-test.log",
+    "animation-polish-gdevelop-test.log",
+    "animation-polish-gdevelop-export.log"
+  ],
+  "source_sha256": {
+    "PRIMAL_RUN_Game/src/core.js": "64cfdf9319fbef3bbe55f756754ede89f94f6388e65dd0c8634b35d1d31765da",
+    "PRIMAL_RUN_Game/src/app.js": "02a15dc4f1f404bcbc2930f41c25279145ed2063912414637d3868706e36c676",
+    "PRIMAL_RUN_Game/src/assets.js": "373b2c8e4f24da6681bab511bfbd359f3eb891c77daae1e747a02dd7ad68b7d4",
+    "PRIMAL_RUN_Game/project.json": "9caf1f94e3991a72218b77d436cf2d4c1bab20d16c99a87b3b23dbf7b97a904d",
+    "PRIMAL_RUN_Game/sprite_atlas_manifest.json": "1d0f099c6afa25880b85795f2997fe75bf2ac16aaa7ae363978fcd6109e56355",
+    "PRIMAL_RUN_Game/Source_Generated/animation_polish/hip_registration.json": "8e288e05ea95b955806fac0ff812c19f939b3f5d6ddb0c393c4c89bcf1fe7912",
+    "PRIMAL_RUN_Game/Source_Generated/player_full/sources.json": "19228b8faf064429822ea97f0009f925bba9f4231f3d0287e763258c94f9ab1d",
+    "PRIMAL_RUN_Game/Source_Generated/species_attacks/exports.json": "0489f48587c64a771ff6d47ceb4fbbabdbd9b9260d6f38a52201c7a6ca4fa4da",
+    "tools/native_registration.py": "d062ddbbd6d5c22db8173a04c74d909ae3f84420611d954410030ec3fad19be8",
+    "tools/validate_animation_polish.py": "28c71f7cfb69465b7ac23dce50415cdeecc2bbc5c3016d5b4399124b917ed942",
+    "tests/animation-polish-browser.cjs": "77c3135ee21dcf6a1261ec5fd76c4f5ff3c7a4ef72f304f7422192e6dff50c55",
+    "tests/player-full-browser.cjs": "fd2c06e74b569f545b736b10feea7ce7713443b2b7d889a0eaeff7bf42b715aa",
+    "tests/enemy-animation-browser.cjs": "92b4e301e27d4837f4812ea260fc282741fdd4e95931acc6b5ae7480135bd5c9"
+  },
+  "integration_base": "1c96b4715f828ca2acd2b26e0ab25b2fa597e729",
+  "workflow": "../../PRIMAL_RUN_Game/SPECIES_SHEET_WORKFLOW.md",
+  "limitations": [
+    "Small authored silhouette/marking variations remain in generated study poses; technical checks do not certify anatomy or production approval.",
+    "Normal attacks verified at30/60fps,maximal attack-speed modifiers at60fps;six distinct display frames cannot be guaranteed for arbitrarily short attacks at30fps."
+  ],
+  "fixture_corrections": [
+    "Legacy quarantined limp fallback exports refreshed to the registered native walk poses.",
+    "GDJS tests wait for engine/menu readiness and preserve logical atlas identities despite physical resource renaming."
+  ]
+}

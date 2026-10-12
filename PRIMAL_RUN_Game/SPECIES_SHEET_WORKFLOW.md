@@ -61,6 +61,63 @@ runtime som beskrevet i `SPRITE_RULES_PLAYER_FULL.md` og projektreglen
 `../PRIMAL_RUN_Sprites/SPRITE_RULES.md`. Plan/tekniske tests giver ingen visuel
 eller produktionsgodkendelse. Genererede artsark forbliver prototyper.
 
+## Bedre første generation · erfaring og kilder fra 12. oktober 2026
+
+Et flot AI-billede er ikke i sig selv en stabil animation. Vores polering krævede
+både kildeændringer og eksplicit registrering: hele kroppen flyttede mellem rækker,
+skadeposes drejede, og særskilte angrebsark ændrede markeringer og anatomi.
+En mere kontrolleret arbejdsgang til næste art er:
+
+1. Fastlæg artens egen silhuet, størrelse, palette, hoved, fjer/panser og hale i
+   `SPECIES_ANATOMY.md`. Sammenlign i native størrelse med beslægtede arter;
+   Utahraptor må ikke blot læses som en opskaleret Velociraptor.
+2. Lav og gennemgå én kanonisk pose per retning, med dokumenteret anatomisk
+   landmærke og offset til spillets logiske origin. Gem rå kilde og prompt.
+3. Pilotér én kort gangcyklus og ét angreb i én retning før alle 120 poses.
+   Brug den faktiske kanoniske sprite som identitetsreference og tegnede poses
+   eller en rig som bevægelsesreference. Definér forberedelse, kontakt og recovery;
+   anatomisk venstre/højre er ikke skærmens venstre/højre.
+4. Generér en lille sammenhængende animationsstribe fra referencen. Hold kamera,
+   kropsskala, palette og retning fælles. Genbrug en eksisterende god animation,
+   når angrebet allerede passer; 96 af vores artsangrebsposes kunne genbruges.
+5. Se den faktiske cyklus og idle→walk→attack→walk ved 1× på lys/mørk baggrund.
+   Kontrollér fødder, hale, markeringer og sidste→første pose. Tekniske tests kan
+   ikke alene afgøre, om et ben er byttet eller kroppen læses som en anden art.
+6. Ved en lokal fejl: udtag målposen med nabo-/identitetsreference, ret kun den
+   nødvendige celle, og bevar øvrige godkendte kildeceller. Det lykkedes bedre for
+   Parasaurolophus end gentagne genredigeringer af et helt ark. Gem forkastelser.
+7. Udtag med erklærede crops/sampling; registrér kun med kontrollerede anatomiske
+   punkter og tabsfri heltalsforskydning. Afvis clipping, uventet alpha og ændret
+   skala. Brug ikke centroid/bbox-centering som erstatning for kropsregistrering.
+8. Udvid først efter pilotreview. Byg runtime-atlasser til sidst og test faktiske
+   renderer-frames, timing, pause og stats i standalone og den rigtige GDJS-eksport.
+
+Det er vores anbefaling ud fra denne revision, ikke en garanti for fejlfri
+førstegenerering. Imagegen kan stadig ændre anatomi, selv med præcise prompts.
+For mange nye arter bør vi afprøve én repræsentativ biped og én quadruped med
+pose-/skeletstyring eller et enkelt rigget 3D-referenceforløb, før værktøj vælges.
+PixelLabs dokumenterede skeletværktøj kræver andre canvasstørrelser end vores 144;
+en eventuel pilot skal derfor dokumentere native eksport uden vilkårlig resize.
+
+Offentlige kilder, læst 12. oktober 2026:
+
+- [OpenAI sprite-pipeline](https://github.com/openai/plugins/blob/main/plugins/game-studio/skills/sprite-pipeline/SKILL.md)
+  anbefaler en godkendt spil-sprite, én samlet animationsstribe og review i engine.
+  Deres generelle normalisering er ikke automatisk tilladt af vores strengere
+  native-regler; brug projektets egne eksportører og anatomiske registrering.
+- [En brugers GPT-image/Codex-forsøg](https://community.openai.com/t/developing-sprite-sheets-with-gpt-image-2/1379831)
+  beskriver gentagne poses og forvekslede ben, bruger pose-/mannequinreferencer
+  og Codex til mekanisk opdeling. Det er et personligt forsøg, ikke en valideret
+  produktionsmetode; rådet om individuel frame-generation konflikter med OpenAIs
+  anbefaling om en samlet stribe. Vi starter med striben og reparerer lokalt.
+- [PixelLab: Animate with skeleton](https://www.pixellab.ai/docs/tools/animate-with-skeleton)
+  dokumenterer genbrugelige poses, fast reference, frosne frames og lokale
+  inpainting-rettelser. Skeletestimering kræver også manuel kontrol.
+- [Scenario: Create Spritesheets](https://help.scenario.com/articles/9088582240-create-spritesheets-with-scenario)
+  demonstrerer referencebillede→video→udvalgte keyposes→spritesheet, inklusive
+  attack→recovery. Det er en mulig bevægelsespilot; video garanterer ikke fast
+  pixelpalette eller anatomi og skal gennem samme review som imagegen.
+
 ## Måling
 
 Se `../docs/validation/SPRITE_ATLAS_OPTIMIZATION_2026-10-12.json` for samme

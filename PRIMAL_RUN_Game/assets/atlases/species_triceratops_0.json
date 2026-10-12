@@ -1,4 +1,204 @@
 {
+  "assets/avatars/triceratops_eat_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1899,
+    "y": 1445
+  },
+  "assets/avatars/triceratops_eat_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1965,
+    "y": 1445
+  },
+  "assets/avatars/triceratops_eat_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1315,
+    "y": 1511
+  },
+  "assets/avatars/triceratops_eat_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1315,
+    "y": 1577
+  },
+  "assets/avatars/triceratops_fight_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1315,
+    "y": 1643
+  },
+  "assets/avatars/triceratops_fight_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1315,
+    "y": 1709
+  },
+  "assets/avatars/triceratops_fight_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1315,
+    "y": 1775
+  },
+  "assets/avatars/triceratops_fight_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1315,
+    "y": 1841
+  },
+  "assets/avatars/triceratops_hurt_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1315,
+    "y": 1907
+  },
+  "assets/avatars/triceratops_hurt_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1315,
+    "y": 1973
+  },
+  "assets/avatars/triceratops_hurt_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1381,
+    "y": 1461
+  },
+  "assets/avatars/triceratops_hurt_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1447,
+    "y": 1461
+  },
+  "assets/avatars/triceratops_idle_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1513,
+    "y": 1461
+  },
+  "assets/avatars/triceratops_idle_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1579,
+    "y": 1461
+  },
+  "assets/avatars/triceratops_idle_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1645,
+    "y": 1461
+  },
+  "assets/avatars/triceratops_idle_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1711,
+    "y": 1461
+  },
+  "assets/avatars/triceratops_sneak_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1777,
+    "y": 1461
+  },
+  "assets/avatars/triceratops_sneak_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1843,
+    "y": 1511
+  },
+  "assets/avatars/triceratops_sneak_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1909,
+    "y": 1511
+  },
+  "assets/avatars/triceratops_sneak_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1975,
+    "y": 1511
+  },
   "assets/behavior_injured/triceratops_limp_E_000.png": {
     "anchor": [
       72,
@@ -718,6 +918,16 @@
     "w": 144,
     "x": 293,
     "y": 1461
+  },
+  "assets/enemies/triceratops_idle_S_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1899,
+    "y": 1315
   },
   "assets/enemy_full/triceratops_attack_E_000.png": {
     "anchor": [
@@ -1937,46 +2147,106 @@
     "y": 1461
   },
   "assets/species_attacks/triceratops_attack_E_000.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_E_000.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 1315
+    "x": 293,
+    "y": 1607
   },
   "assets/species_attacks/triceratops_attack_E_001.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_E_001.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 1461
+    "x": 293,
+    "y": 1753
   },
   "assets/species_attacks/triceratops_attack_E_002.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_E_002.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 1607
+    "x": 293,
+    "y": 1899
   },
   "assets/species_attacks/triceratops_attack_E_003.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_E_003.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 1753
+    "x": 439,
+    "y": 439
   },
   "assets/species_attacks/triceratops_attack_E_004.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_E_004.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 439
+  },
+  "assets/species_attacks/triceratops_attack_E_005.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_E_005.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 439
+  },
+  "assets/species_attacks/triceratops_attack_N_000.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_N_000.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 877,
+    "y": 439
+  },
+  "assets/species_attacks/triceratops_attack_N_001.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_N_001.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 439
+  },
+  "assets/species_attacks/triceratops_attack_N_002.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_N_002.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 439
+  },
+  "assets/species_attacks/triceratops_attack_N_003.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_N_003.png",
     "anchor": [
       72,
       72
@@ -1984,59 +2254,10 @@
     "h": 144,
     "w": 144,
     "x": 1315,
-    "y": 1899
-  },
-  "assets/species_attacks/triceratops_attack_E_005.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1461,
-    "y": 1461
-  },
-  "assets/species_attacks/triceratops_attack_N_000.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1607,
-    "y": 1461
-  },
-  "assets/species_attacks/triceratops_attack_N_001.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1753,
-    "y": 1461
-  },
-  "assets/species_attacks/triceratops_attack_N_002.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1899,
-    "y": 1461
-  },
-  "assets/species_attacks/triceratops_attack_N_003.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1461,
-    "y": 1607
+    "y": 439
   },
   "assets/species_attacks/triceratops_attack_N_004.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_N_004.png",
     "anchor": [
       72,
       72
@@ -2044,106 +2265,149 @@
     "h": 144,
     "w": 144,
     "x": 1461,
-    "y": 1753
+    "y": 439
   },
   "assets/species_attacks/triceratops_attack_N_005.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_N_005.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 1899
+    "x": 1607,
+    "y": 439
   },
   "assets/species_attacks/triceratops_attack_S_000.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_S_000.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 1607
+    "x": 1753,
+    "y": 439
   },
   "assets/species_attacks/triceratops_attack_S_001.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_S_001.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 1607
+    "x": 1899,
+    "y": 439
   },
   "assets/species_attacks/triceratops_attack_S_002.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_S_002.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 1607
+    "x": 439,
+    "y": 585
   },
   "assets/species_attacks/triceratops_attack_S_003.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_S_003.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 1753
+    "x": 439,
+    "y": 731
   },
   "assets/species_attacks/triceratops_attack_S_004.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_S_004.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 1899
+    "x": 439,
+    "y": 877
   },
   "assets/species_attacks/triceratops_attack_S_005.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_S_005.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 1753
+    "x": 439,
+    "y": 1023
   },
   "assets/species_attacks/triceratops_attack_W_000.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_W_000.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 1753
+    "x": 439,
+    "y": 1169
   },
   "assets/species_attacks/triceratops_attack_W_001.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_W_001.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 1899
+    "x": 439,
+    "y": 1315
   },
   "assets/species_attacks/triceratops_attack_W_002.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_W_002.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
+    "x": 439,
+    "y": 1461
+  },
+  "assets/species_attacks/triceratops_attack_W_003.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_W_003.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1607
+  },
+  "assets/species_attacks/triceratops_attack_W_004.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_W_004.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1753
+  },
+  "assets/species_attacks/triceratops_attack_W_005.png": {
+    "alias_of": "assets/enemy_full/triceratops_attack_W_005.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
     "y": 1899
   }
 }

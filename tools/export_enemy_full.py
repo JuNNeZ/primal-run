@@ -4,12 +4,13 @@ import hashlib,json,io
 import numpy as np
 from PIL import Image,ImageDraw
 from export_enemy_animations import isolate
+from native_registration import load_registration,register_pose
 ROOT=Path(__file__).resolve().parents[1]; GAME=ROOT/'PRIMAL_RUN_Game'
 CONFIG=GAME/'Source_Generated/enemy_full/sources.json'
 PLAN={'idle':(0,0,4,4,True),'hurt':(0,4,2,8,False),'walk':(1,0,6,8,True),'run':(2,0,6,12,True),'attack':(3,0,6,14,False),'death':(4,0,6,8,False)}
 def export():
  config=json.loads(CONFIG.read_text()); palette=np.array([[int(c[i:i+2],16) for i in [1,3,5]] for c in json.loads((GAME/'palette.json').read_text())['colors']],dtype=np.int32)
- manifest=[];animations=[];pending=[];errors=[]
+ manifest=[];animations=[];pending=[];errors=[];registration=load_registration()
  for item in config:
   source=GAME/item['source'];pic=Image.open(source).convert('RGBA');width,height=pic.size
   if (width,height)!=(1536,1024):raise ValueError(f'Unexpected sheet size {source}: {pic.size}')
@@ -24,8 +25,9 @@ def export():
     offset=[origin[0]-round((anchor[0]-1)/step),origin[1]-round((anchor[1]-1)/step)];fy,fx=np.where(visible);tx,ty=fx+offset[0],fy+offset[1]
     if not len(fx) or min(tx)<2 or min(ty)<2 or max(tx)>141 or max(ty)>141:
      errors.append(f'{species} {direction} {state} {frame} padding: {min(tx)},{min(ty)}-{max(tx)},{max(ty)}');continue
-    out=np.zeros((144,144,4),dtype=np.uint8);out[ty,tx]=sample[fy,fx];file=f'assets/enemy_full/{species}_{state}_{direction}_{frame:03}.png';buff=io.BytesIO();Image.fromarray(out).save(buff,format='PNG');payload=buff.getvalue();pending.append((GAME/file,payload));frames.append(file);files[(row,col)]=file
+    out=np.zeros((144,144,4),dtype=np.uint8);out[ty,tx]=sample[fy,fx];file=f'assets/enemy_full/{species}_{state}_{direction}_{frame:03}.png';out,registered=register_pose(out,file,origin,registration);buff=io.BytesIO();Image.fromarray(out).save(buff,format='PNG');payload=buff.getvalue();pending.append((GAME/file,payload));frames.append(file);files[(row,col)]=file
     manifest.append({'file':file,'size':[144,144],'origin':origin,'body_anchor':origin,'species':species,'direction':direction,'state':state,'frame':frame,'source':str(state_source.relative_to(GAME)),'source_sha256':hashlib.sha256(state_source.read_bytes()).hexdigest(),'source_crop':crop,'source_cell_anchor':anchor,'registration_offset':offset,'export_sha256':hashlib.sha256(payload).hexdigest(),'status':'prototype_static','production_approved':False,'animation_ready':False,'export':f'Fixed integer {step}px source sampling, alpha>=192, fixed32 palette, explicit hip landmark. No drawing, interpolation, rotation, mirroring or bbox recentering.'})
+    manifest[-1].update(registered)
    animations.append({'name':f'{species}_{state}_{direction}','species':species,'state':state,'direction':direction,'frames':frames,'fps':fps,'loop':loop,'origin':origin,'contact_frame':3 if state=='attack' else None,'validated_animation':False,'production_approved':False})
   # Technical contact grids on both backgrounds at native1x; no altered sprite pixels.
   for color,label in [('#151b19','dark'),('#e8ece1','light')]:

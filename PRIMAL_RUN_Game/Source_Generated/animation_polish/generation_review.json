@@ -1,0 +1,97 @@
+{
+  "deinonychus_S_hurt_revision1": {
+    "source": "deinonychus_S_hurt_revision1.png",
+    "sha256": "6f61bc52958574bd5c57b5cb5c65f166c69aac1ec47ae03be3164aa7c46cea8b",
+    "method": "image_gen edit of canonical deinonychus_S.png, with native idle/hurt integer previews as references",
+    "prompt_summary": "Change only row0 columns4/5 to subtle South-facing flinches. Match canonical chestnut/cream feathered body, two hind legs/two short feathered forearms/fan-tipped tail, fixed pelvis and cell layout. No diagonal body turn, translation, size breathing, palette/camera change. Preserve other28 cells. Transparent background.",
+    "active_cells": "row0 columns4/5 only; all other generated cells unused",
+    "review": "Revised native pair inspected at integer3x against original idle/walk/attack. Old diagonal hurt pair is retained in original raw master."
+  },
+  "parasaurolophus_kick_revision3_REJECTED": {
+    "source": "parasaurolophus_kick_revision3_REJECTED.png",
+    "sha256": "15fb277dab2c0241851fc0518422fca7653a8fce8e0af012b0c030c9c9679962",
+    "review": "REJECTED: still changes canonical torso proportions and dorsal markings; not referenced by any runtime export."
+  },
+  "parasaurolophus_S_kick_revision4": {
+    "source": "parasaurolophus_S_kick_revision4.png",
+    "sha256": "3ea1f9cd7663f547a8d381727fe5a6161c1a2c44b02e58badd3ac84b9871732a",
+    "prompt_file": "parasaurolophus_S_kick_revision4_prompt.txt",
+    "active_cells": "row3 only, six cells; other24 edited-output cells unused",
+    "review": "Source faces the same cardinal direction throughout. Kick derives from connected hind pelvis, closed mouth/crest retained. Native body matching and runtime checks follow export."
+  },
+  "parasaurolophus_N_kick_revision4": {
+    "source": "parasaurolophus_N_kick_revision4.png",
+    "sha256": "660608e783da403901d51f75f1bb92a3be5b6135149a149b1ea0f92bde6fd7fe",
+    "prompt_file": "parasaurolophus_N_kick_revision4_prompt.txt",
+    "active_cells": "row3 only, six cells; other24 edited-output cells unused",
+    "review": "Source faces the same cardinal direction throughout. Kick derives from connected hind pelvis, closed mouth/crest retained. Native body matching and runtime checks follow export."
+  },
+  "parasaurolophus_E_kick_revision4": {
+    "source": "parasaurolophus_E_kick_revision4.png",
+    "sha256": "3e6c830dba396cc7493b57ae25a43d36575c4e1bf3019d89b716f5b8de50796b",
+    "prompt_file": "parasaurolophus_E_kick_revision4_prompt.txt",
+    "active_cells": "row3 only, six cells; other24 edited-output cells unused",
+    "review": "Source faces the same cardinal direction throughout. Kick derives from connected hind pelvis, closed mouth/crest retained. Native body matching and runtime checks follow export."
+  },
+  "parasaurolophus_W_kick_revision4": {
+    "source": "parasaurolophus_W_kick_revision4.png",
+    "sha256": "ce5f9164767e398fe4c614120a4c2e21bfb9fa42a9d47a8977b3f288a682479d",
+    "prompt_file": "parasaurolophus_W_kick_revision4_prompt.txt",
+    "active_cells": "row3 only, six cells; other24 edited-output cells unused",
+    "review": "Source faces the same cardinal direction throughout. Kick derives from connected hind pelvis, closed mouth/crest retained. Native body matching and runtime checks follow export."
+  },
+  "parasaurolophus_E_contact_revision5_REJECTED": {
+    "source": "parasaurolophus_E_contact_revision5_REJECTED.png",
+    "sha256": "4f38b10aa67eb19663035c012ffde51a3d9b070378cc9ad368c1cf0e18cde6fe",
+    "prompt_file": "parasaurolophus_E_revision5_prompt.txt",
+    "review": "REJECTED: full-sheet edit leaves the target foot overextended or obscured; not sampled."
+  },
+  "parasaurolophus_W_contact_revision5_REJECTED": {
+    "source": "parasaurolophus_W_contact_revision5_REJECTED.png",
+    "sha256": "794a3771a55d49ea7cd1209d23d53e71411e7ef0d2da917df7467ae865525596",
+    "prompt_file": "parasaurolophus_W_revision5_prompt.txt",
+    "review": "REJECTED: full-sheet edit leaves the target foot overextended or obscured; not sampled."
+  },
+  "parasaurolophus_E_contact_revision6_REJECTED": {
+    "source": "parasaurolophus_E_contact_revision6_REJECTED.png",
+    "sha256": "efde0eaf7347ea3ad74856240966779f25495a2648707b4e1c3e3b9d7eb5ef22",
+    "prompt_file": "parasaurolophus_E_revision6_prompt.txt",
+    "review": "REJECTED: full-sheet edit leaves the target foot overextended or obscured; not sampled."
+  },
+  "parasaurolophus_W_contact_revision6_REJECTED": {
+    "source": "parasaurolophus_W_contact_revision6_REJECTED.png",
+    "sha256": "7c8413725e774c829f82fb276a17635da6d76a3195684efaabc76b805ba57ee1",
+    "prompt_file": "parasaurolophus_W_revision6_prompt.txt",
+    "review": "REJECTED: full-sheet edit leaves the target foot overextended or obscured; not sampled."
+  },
+  "parasaurolophus_E_contact_revision7": {
+    "source": "parasaurolophus_E_contact_revision7.png",
+    "sha256": "5599cebc09b0a153e3a16390d76db0a7da9748a96e02a04ebc5657fa85e05020",
+    "prompt_file": "parasaurolophus_E_revision7_prompt.txt",
+    "review": "Local contact pose reviewed: full separate tail, visibly bent connected hind kick, canonical head/body/marks.384x256 raw cell framing regenerated at4x; declared integer8px sampling restores native scale. Native sacrum/spine patch inspected against canonical idle; no export resizing or cropping of anatomy."
+  },
+  "parasaurolophus_W_contact_revision7": {
+    "source": "parasaurolophus_W_contact_revision7.png",
+    "sha256": "e46827b6d2fa3ce844e714382119b83854ec7a8bf2b0e7d6bf103b096c11a44a",
+    "prompt_file": "parasaurolophus_W_revision7_prompt.txt",
+    "review": "Local contact pose reviewed: full separate tail, visibly bent connected hind kick, canonical head/body/marks.384x256 raw cell framing regenerated at4x; declared integer8px sampling restores native scale. Native sacrum/spine patch inspected against canonical idle; no export resizing or cropping of anatomy."
+  },
+  "parasaurolophus_N_contact_revision7_REJECTED": {
+    "source": "parasaurolophus_N_contact_revision7_REJECTED.png",
+    "sha256": "7b8b1e9b369d5e049d03b2186968e657ed61b39d5638ef55374d16fb5767e6c7",
+    "prompt_file": "parasaurolophus_N_revision7_prompt.txt",
+    "review": "REJECTED: tail restored, but hind feet remained planted/symmetric rather than a readable kick."
+  },
+  "parasaurolophus_N_contact_revision8_REJECTED": {
+    "source": "parasaurolophus_N_contact_revision8_REJECTED.png",
+    "sha256": "e832efc708b3bcd7b1bca391ed18631ee21ee9e9e7343ca28f1d3129587e9ad7",
+    "prompt_file": "parasaurolophus_N_revision8_prompt.txt",
+    "review": "REJECTED for export: correct kick/tail anatomy, but high-alpha background and translucent interior cannot be thresholded without losing the body."
+  },
+  "parasaurolophus_N_contact_revision9": {
+    "source": "parasaurolophus_N_contact_revision9.png",
+    "sha256": "69653e485d254556b565e03ed84ea33ac97447a93e77f1775595097b1a89ac73",
+    "prompt_file": "parasaurolophus_N_revision9_prompt.txt",
+    "review": "Clean cutout of the corrected local North contact. Full distinct tail and connected rear-right foot, same facing/crest/torso. Native8px sampling and explicit spine point checked; background alpha excluded without interior holes."
+  }
+}

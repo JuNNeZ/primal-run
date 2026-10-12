@@ -1,6 +1,6 @@
 {
-  "alias_frames": 260,
-  "decoded_bytes": 226949936,
+  "alias_frames": 332,
+  "decoded_bytes": 223623472,
   "frames": {
     "assets/a6_hud/dna_chip.png": {
       "anchor": [
@@ -1415,660 +1415,660 @@
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 585,
-      "y": 1
+      "x": 1315,
+      "y": 1461
     },
     "assets/avatars/gallimimus_eat_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 651,
-      "y": 1
+      "x": 1315,
+      "y": 1527
     },
     "assets/avatars/gallimimus_eat_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 717,
-      "y": 1
+      "x": 1315,
+      "y": 1593
     },
     "assets/avatars/gallimimus_eat_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 783,
-      "y": 1
+      "x": 1315,
+      "y": 1659
     },
     "assets/avatars/gallimimus_fight_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 849,
-      "y": 1
+      "x": 1315,
+      "y": 1725
     },
     "assets/avatars/gallimimus_fight_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 915,
-      "y": 1
+      "x": 1315,
+      "y": 1791
     },
     "assets/avatars/gallimimus_fight_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 981,
-      "y": 1
+      "x": 1315,
+      "y": 1857
     },
     "assets/avatars/gallimimus_fight_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1047,
-      "y": 1
+      "x": 1315,
+      "y": 1923
     },
     "assets/avatars/gallimimus_hurt_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1113,
-      "y": 1
+      "x": 1381,
+      "y": 1461
     },
     "assets/avatars/gallimimus_hurt_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1179,
-      "y": 1
+      "x": 1381,
+      "y": 1527
     },
     "assets/avatars/gallimimus_hurt_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1245,
-      "y": 1
+      "x": 1381,
+      "y": 1593
     },
     "assets/avatars/gallimimus_hurt_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1311,
-      "y": 1
+      "x": 1381,
+      "y": 1659
     },
     "assets/avatars/gallimimus_idle_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1377,
-      "y": 1
+      "x": 1381,
+      "y": 1725
     },
     "assets/avatars/gallimimus_idle_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1443,
-      "y": 1
+      "x": 1381,
+      "y": 1791
     },
     "assets/avatars/gallimimus_idle_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1509,
-      "y": 1
+      "x": 1381,
+      "y": 1857
     },
     "assets/avatars/gallimimus_idle_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1575,
-      "y": 1
+      "x": 1381,
+      "y": 1923
     },
     "assets/avatars/gallimimus_sneak_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1641,
-      "y": 1
+      "x": 1447,
+      "y": 1461
     },
     "assets/avatars/gallimimus_sneak_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1707,
-      "y": 1
+      "x": 1447,
+      "y": 1527
     },
     "assets/avatars/gallimimus_sneak_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1773,
-      "y": 1
+      "x": 1447,
+      "y": 1593
     },
     "assets/avatars/gallimimus_sneak_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1839,
-      "y": 1
+      "x": 1447,
+      "y": 1659
     },
     "assets/avatars/pachycephalosaurus_eat_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 585,
-      "y": 1
+      "x": 1315,
+      "y": 1461
     },
     "assets/avatars/pachycephalosaurus_eat_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 651,
-      "y": 1
+      "x": 1315,
+      "y": 1527
     },
     "assets/avatars/pachycephalosaurus_eat_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 717,
-      "y": 1
+      "x": 1315,
+      "y": 1593
     },
     "assets/avatars/pachycephalosaurus_eat_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 783,
-      "y": 1
+      "x": 1315,
+      "y": 1659
     },
     "assets/avatars/pachycephalosaurus_fight_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 849,
-      "y": 1
+      "x": 1315,
+      "y": 1725
     },
     "assets/avatars/pachycephalosaurus_fight_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 915,
-      "y": 1
+      "x": 1315,
+      "y": 1791
     },
     "assets/avatars/pachycephalosaurus_fight_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 981,
-      "y": 1
+      "x": 1315,
+      "y": 1857
     },
     "assets/avatars/pachycephalosaurus_fight_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1047,
-      "y": 1
+      "x": 1315,
+      "y": 1923
     },
     "assets/avatars/pachycephalosaurus_hurt_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1113,
-      "y": 1
+      "x": 1381,
+      "y": 1461
     },
     "assets/avatars/pachycephalosaurus_hurt_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1179,
-      "y": 1
+      "x": 1381,
+      "y": 1527
     },
     "assets/avatars/pachycephalosaurus_hurt_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1245,
-      "y": 1
+      "x": 1381,
+      "y": 1593
     },
     "assets/avatars/pachycephalosaurus_hurt_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1311,
-      "y": 1
+      "x": 1381,
+      "y": 1659
     },
     "assets/avatars/pachycephalosaurus_idle_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1377,
-      "y": 1
+      "x": 1381,
+      "y": 1725
     },
     "assets/avatars/pachycephalosaurus_idle_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1443,
-      "y": 1
+      "x": 1381,
+      "y": 1791
     },
     "assets/avatars/pachycephalosaurus_idle_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1509,
-      "y": 1
+      "x": 1381,
+      "y": 1857
     },
     "assets/avatars/pachycephalosaurus_idle_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1575,
-      "y": 1
+      "x": 1381,
+      "y": 1923
     },
     "assets/avatars/pachycephalosaurus_sneak_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1641,
-      "y": 1
+      "x": 1447,
+      "y": 1461
     },
     "assets/avatars/pachycephalosaurus_sneak_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1707,
-      "y": 1
+      "x": 1447,
+      "y": 1527
     },
     "assets/avatars/pachycephalosaurus_sneak_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1773,
-      "y": 1
+      "x": 1447,
+      "y": 1593
     },
     "assets/avatars/pachycephalosaurus_sneak_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 64,
       "w": 64,
-      "x": 1839,
-      "y": 1
+      "x": 1447,
+      "y": 1659
     },
     "assets/avatars/triceratops_eat_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 569,
-      "y": 1
+      "x": 1899,
+      "y": 1445
     },
     "assets/avatars/triceratops_eat_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 635,
-      "y": 1
+      "x": 1965,
+      "y": 1445
     },
     "assets/avatars/triceratops_eat_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 701,
-      "y": 1
+      "x": 1315,
+      "y": 1511
     },
     "assets/avatars/triceratops_eat_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 767,
-      "y": 1
+      "x": 1315,
+      "y": 1577
     },
     "assets/avatars/triceratops_fight_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 833,
-      "y": 1
+      "x": 1315,
+      "y": 1643
     },
     "assets/avatars/triceratops_fight_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 899,
-      "y": 1
+      "x": 1315,
+      "y": 1709
     },
     "assets/avatars/triceratops_fight_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 965,
-      "y": 1
+      "x": 1315,
+      "y": 1775
     },
     "assets/avatars/triceratops_fight_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1031,
-      "y": 1
+      "x": 1315,
+      "y": 1841
     },
     "assets/avatars/triceratops_hurt_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1097,
-      "y": 1
+      "x": 1315,
+      "y": 1907
     },
     "assets/avatars/triceratops_hurt_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1163,
-      "y": 1
+      "x": 1315,
+      "y": 1973
     },
     "assets/avatars/triceratops_hurt_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1229,
-      "y": 1
+      "x": 1381,
+      "y": 1461
     },
     "assets/avatars/triceratops_hurt_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1295,
-      "y": 1
+      "x": 1447,
+      "y": 1461
     },
     "assets/avatars/triceratops_idle_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1361,
-      "y": 1
+      "x": 1513,
+      "y": 1461
     },
     "assets/avatars/triceratops_idle_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1427,
-      "y": 1
+      "x": 1579,
+      "y": 1461
     },
     "assets/avatars/triceratops_idle_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1493,
-      "y": 1
+      "x": 1645,
+      "y": 1461
     },
     "assets/avatars/triceratops_idle_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1559,
-      "y": 1
+      "x": 1711,
+      "y": 1461
     },
     "assets/avatars/triceratops_sneak_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1625,
-      "y": 1
+      "x": 1777,
+      "y": 1461
     },
     "assets/avatars/triceratops_sneak_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1691,
-      "y": 1
+      "x": 1843,
+      "y": 1511
     },
     "assets/avatars/triceratops_sneak_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1757,
-      "y": 1
+      "x": 1909,
+      "y": 1511
     },
     "assets/avatars/triceratops_sneak_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 64,
       "w": 64,
-      "x": 1823,
-      "y": 1
+      "x": 1975,
+      "y": 1511
     },
     "assets/avatars/tyrannosaurus_eat_000.png": {
       "anchor": [
@@ -11854,11 +11854,11 @@
         64,
         64
       ],
-      "file": "assets/atlases/species_triceratops_1.png",
+      "file": "assets/atlases/species_triceratops_0.png",
       "h": 128,
       "w": 128,
-      "x": 439,
-      "y": 1
+      "x": 1899,
+      "y": 1315
     },
     "assets/enemies/tyrannosaurus_idle_S_000.png": {
       "anchor": [
@@ -31789,6 +31789,7 @@
       "y": 1899
     },
     "assets/species_attacks/gallimimus_attack_E_000.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_E_000.png",
       "anchor": [
         72,
         72
@@ -31796,10 +31797,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1315,
-      "y": 1461
+      "x": 293,
+      "y": 1607
     },
     "assets/species_attacks/gallimimus_attack_E_001.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_E_001.png",
       "anchor": [
         72,
         72
@@ -31807,10 +31809,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1315,
-      "y": 1607
+      "x": 293,
+      "y": 1753
     },
     "assets/species_attacks/gallimimus_attack_E_002.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_E_002.png",
       "anchor": [
         72,
         72
@@ -31818,10 +31821,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1315,
-      "y": 1753
+      "x": 293,
+      "y": 1899
     },
     "assets/species_attacks/gallimimus_attack_E_003.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_E_003.png",
       "anchor": [
         72,
         72
@@ -31829,10 +31833,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1315,
-      "y": 1899
+      "x": 439,
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_E_004.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_E_004.png",
       "anchor": [
         72,
         72
@@ -31840,10 +31845,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1461,
-      "y": 1461
+      "x": 585,
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_E_005.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_E_005.png",
       "anchor": [
         72,
         72
@@ -31851,10 +31857,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1607,
-      "y": 1461
+      "x": 731,
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_N_000.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_N_000.png",
       "anchor": [
         72,
         72
@@ -31862,10 +31869,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1753,
-      "y": 1461
+      "x": 877,
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_N_001.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_N_001.png",
       "anchor": [
         72,
         72
@@ -31873,10 +31881,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1899,
-      "y": 1461
+      "x": 1023,
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_N_002.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_N_002.png",
       "anchor": [
         72,
         72
@@ -31884,10 +31893,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1461,
-      "y": 1607
+      "x": 1169,
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_N_003.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_N_003.png",
       "anchor": [
         72,
         72
@@ -31895,10 +31905,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1461,
-      "y": 1753
+      "x": 1315,
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_N_004.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_N_004.png",
       "anchor": [
         72,
         72
@@ -31907,9 +31918,10 @@
       "h": 144,
       "w": 144,
       "x": 1461,
-      "y": 1899
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_N_005.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_N_005.png",
       "anchor": [
         72,
         72
@@ -31918,9 +31930,10 @@
       "h": 144,
       "w": 144,
       "x": 1607,
-      "y": 1607
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_S_000.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_S_000.png",
       "anchor": [
         72,
         72
@@ -31929,9 +31942,10 @@
       "h": 144,
       "w": 144,
       "x": 1753,
-      "y": 1607
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_S_001.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_S_001.png",
       "anchor": [
         72,
         72
@@ -31940,9 +31954,10 @@
       "h": 144,
       "w": 144,
       "x": 1899,
-      "y": 1607
+      "y": 439
     },
     "assets/species_attacks/gallimimus_attack_S_002.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_S_002.png",
       "anchor": [
         72,
         72
@@ -31950,10 +31965,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1607,
-      "y": 1753
+      "x": 439,
+      "y": 585
     },
     "assets/species_attacks/gallimimus_attack_S_003.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_S_003.png",
       "anchor": [
         72,
         72
@@ -31961,10 +31977,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1607,
-      "y": 1899
+      "x": 439,
+      "y": 731
     },
     "assets/species_attacks/gallimimus_attack_S_004.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_S_004.png",
       "anchor": [
         72,
         72
@@ -31972,10 +31989,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1753,
-      "y": 1753
+      "x": 439,
+      "y": 877
     },
     "assets/species_attacks/gallimimus_attack_S_005.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_S_005.png",
       "anchor": [
         72,
         72
@@ -31983,10 +32001,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1899,
-      "y": 1753
+      "x": 439,
+      "y": 1023
     },
     "assets/species_attacks/gallimimus_attack_W_000.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_W_000.png",
       "anchor": [
         72,
         72
@@ -31994,10 +32013,11 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1753,
-      "y": 1899
+      "x": 439,
+      "y": 1169
     },
     "assets/species_attacks/gallimimus_attack_W_001.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_W_001.png",
       "anchor": [
         72,
         72
@@ -32005,316 +32025,344 @@
       "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1899,
-      "y": 1899
+      "x": 439,
+      "y": 1315
     },
     "assets/species_attacks/gallimimus_attack_W_002.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_W_002.png",
       "anchor": [
         72,
         72
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 1,
-      "y": 1
+      "x": 439,
+      "y": 1461
     },
     "assets/species_attacks/gallimimus_attack_W_003.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_W_003.png",
       "anchor": [
         72,
         72
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 147,
-      "y": 1
+      "x": 439,
+      "y": 1607
     },
     "assets/species_attacks/gallimimus_attack_W_004.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_W_004.png",
       "anchor": [
         72,
         72
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
-      "x": 293,
-      "y": 1
+      "x": 439,
+      "y": 1753
     },
     "assets/species_attacks/gallimimus_attack_W_005.png": {
+      "alias_of": "assets/player_full/gallimimus_attack_W_005.png",
       "anchor": [
         72,
         72
       ],
-      "file": "assets/atlases/species_gallimimus_1.png",
+      "file": "assets/atlases/species_gallimimus_0.png",
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 1
+      "y": 1899
     },
     "assets/species_attacks/pachycephalosaurus_attack_E_000.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_E_000.png",
       "anchor": [
         72,
         72
       ],
       "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1315,
-      "y": 1461
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_E_001.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1315,
-      "y": 1607
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_E_002.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1315,
-      "y": 1753
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_E_003.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1315,
-      "y": 1899
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_E_004.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1461,
-      "y": 1461
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_E_005.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1607,
-      "y": 1461
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_N_000.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1753,
-      "y": 1461
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_N_001.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1899,
-      "y": 1461
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_N_002.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1461,
-      "y": 1607
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_N_003.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1461,
-      "y": 1753
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_N_004.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1461,
-      "y": 1899
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_N_005.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1607,
-      "y": 1607
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_S_000.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1753,
-      "y": 1607
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_S_001.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1899,
-      "y": 1607
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_S_002.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1607,
-      "y": 1753
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_S_003.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1607,
-      "y": 1899
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_S_004.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1753,
-      "y": 1753
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_S_005.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1899,
-      "y": 1753
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_W_000.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1753,
-      "y": 1899
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_W_001.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1899,
-      "y": 1899
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_W_002.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
-      "h": 144,
-      "w": 144,
-      "x": 1,
-      "y": 1
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_W_003.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
-      "h": 144,
-      "w": 144,
-      "x": 147,
-      "y": 1
-    },
-    "assets/species_attacks/pachycephalosaurus_attack_W_004.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
       "h": 144,
       "w": 144,
       "x": 293,
-      "y": 1
+      "y": 1607
     },
-    "assets/species_attacks/pachycephalosaurus_attack_W_005.png": {
+    "assets/species_attacks/pachycephalosaurus_attack_E_001.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_E_001.png",
       "anchor": [
         72,
         72
       ],
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1753
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_E_002.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_E_002.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1899
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_E_003.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_E_003.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 1
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_E_004.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_E_004.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 585,
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_E_005.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_E_005.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 731,
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_N_000.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_N_000.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 877,
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_N_001.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_N_001.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1023,
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_N_002.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_N_002.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1169,
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_N_003.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_N_003.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1315,
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_N_004.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_N_004.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_N_005.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_N_005.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_S_000.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_S_000.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_S_001.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_S_001.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 439
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_S_002.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_S_002.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 585
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_S_003.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_S_003.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 731
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_S_004.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_S_004.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 877
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_S_005.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_S_005.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1023
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_W_000.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_W_000.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1169
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_W_001.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_W_001.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1315
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_W_002.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_W_002.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1461
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_W_003.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_W_003.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1607
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_W_004.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_W_004.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1753
+    },
+    "assets/species_attacks/pachycephalosaurus_attack_W_005.png": {
+      "alias_of": "assets/player_full/pachycephalosaurus_attack_W_005.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachycephalosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1899
     },
     "assets/species_attacks/parasaurolophus_attack_E_000.png": {
       "anchor": [
@@ -32581,268 +32629,292 @@
       "y": 1
     },
     "assets/species_attacks/triceratops_attack_E_000.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_E_000.png",
       "anchor": [
         72,
         72
       ],
       "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1899,
-      "y": 1315
-    },
-    "assets/species_attacks/triceratops_attack_E_001.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1315,
-      "y": 1461
-    },
-    "assets/species_attacks/triceratops_attack_E_002.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1315,
-      "y": 1607
-    },
-    "assets/species_attacks/triceratops_attack_E_003.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1315,
-      "y": 1753
-    },
-    "assets/species_attacks/triceratops_attack_E_004.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1315,
-      "y": 1899
-    },
-    "assets/species_attacks/triceratops_attack_E_005.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1461,
-      "y": 1461
-    },
-    "assets/species_attacks/triceratops_attack_N_000.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1607,
-      "y": 1461
-    },
-    "assets/species_attacks/triceratops_attack_N_001.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1753,
-      "y": 1461
-    },
-    "assets/species_attacks/triceratops_attack_N_002.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1899,
-      "y": 1461
-    },
-    "assets/species_attacks/triceratops_attack_N_003.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1461,
-      "y": 1607
-    },
-    "assets/species_attacks/triceratops_attack_N_004.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1461,
-      "y": 1753
-    },
-    "assets/species_attacks/triceratops_attack_N_005.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1461,
-      "y": 1899
-    },
-    "assets/species_attacks/triceratops_attack_S_000.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1607,
-      "y": 1607
-    },
-    "assets/species_attacks/triceratops_attack_S_001.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1753,
-      "y": 1607
-    },
-    "assets/species_attacks/triceratops_attack_S_002.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1899,
-      "y": 1607
-    },
-    "assets/species_attacks/triceratops_attack_S_003.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1607,
-      "y": 1753
-    },
-    "assets/species_attacks/triceratops_attack_S_004.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1607,
-      "y": 1899
-    },
-    "assets/species_attacks/triceratops_attack_S_005.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1753,
-      "y": 1753
-    },
-    "assets/species_attacks/triceratops_attack_W_000.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1899,
-      "y": 1753
-    },
-    "assets/species_attacks/triceratops_attack_W_001.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1753,
-      "y": 1899
-    },
-    "assets/species_attacks/triceratops_attack_W_002.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_0.png",
-      "h": 144,
-      "w": 144,
-      "x": 1899,
-      "y": 1899
-    },
-    "assets/species_attacks/triceratops_attack_W_003.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_1.png",
-      "h": 144,
-      "w": 144,
-      "x": 1,
-      "y": 1
-    },
-    "assets/species_attacks/triceratops_attack_W_004.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_1.png",
-      "h": 144,
-      "w": 144,
-      "x": 147,
-      "y": 1
-    },
-    "assets/species_attacks/triceratops_attack_W_005.png": {
-      "anchor": [
-        72,
-        72
-      ],
-      "file": "assets/atlases/species_triceratops_1.png",
       "h": 144,
       "w": 144,
       "x": 293,
-      "y": 1
+      "y": 1607
+    },
+    "assets/species_attacks/triceratops_attack_E_001.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_E_001.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1753
+    },
+    "assets/species_attacks/triceratops_attack_E_002.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_E_002.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1899
+    },
+    "assets/species_attacks/triceratops_attack_E_003.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_E_003.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_E_004.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_E_004.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 585,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_E_005.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_E_005.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 731,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_N_000.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_N_000.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 877,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_N_001.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_N_001.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1023,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_N_002.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_N_002.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1169,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_N_003.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_N_003.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1315,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_N_004.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_N_004.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_N_005.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_N_005.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_S_000.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_S_000.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_S_001.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_S_001.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 439
+    },
+    "assets/species_attacks/triceratops_attack_S_002.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_S_002.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 585
+    },
+    "assets/species_attacks/triceratops_attack_S_003.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_S_003.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 731
+    },
+    "assets/species_attacks/triceratops_attack_S_004.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_S_004.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 877
+    },
+    "assets/species_attacks/triceratops_attack_S_005.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_S_005.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1023
+    },
+    "assets/species_attacks/triceratops_attack_W_000.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_W_000.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1169
+    },
+    "assets/species_attacks/triceratops_attack_W_001.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_W_001.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1315
+    },
+    "assets/species_attacks/triceratops_attack_W_002.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_W_002.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1461
+    },
+    "assets/species_attacks/triceratops_attack_W_003.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_W_003.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1607
+    },
+    "assets/species_attacks/triceratops_attack_W_004.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_W_004.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1753
+    },
+    "assets/species_attacks/triceratops_attack_W_005.png": {
+      "alias_of": "assets/enemy_full/triceratops_attack_W_005.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_triceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1899
     },
     "assets/tiles/deep_water.png": {
       "anchor": [
@@ -33629,13 +33701,13 @@
   "max_dimension": 2048,
   "padding": 1,
   "pixels": "unaltered RGBA; no scaling or palette conversion; exact duplicate aliases only",
-  "png_bytes": 8513505,
+  "png_bytes": 8246664,
   "sheets": [
     {
       "file": "assets/atlases/species_ankylosaurus_0.png",
       "frames": 253,
       "group": "species_ankylosaurus",
-      "sha256": "939a122cc5d661554edcff9b3af0f5a95ded662dd9c61e9f11c28f41c91b0711",
+      "sha256": "5fb8e9fba2d8070908c756e08ffba9f9e3fd4ad083412579a5140841fdaafeb8",
       "size": [
         2044,
         2048
@@ -33646,7 +33718,7 @@
       "file": "assets/atlases/species_baryonyx_0.png",
       "frames": 208,
       "group": "species_baryonyx",
-      "sha256": "3e8d93bc9136ca681aed6cb3ef5981ee82966dcb5b77ed28796609c98985c336",
+      "sha256": "c7dbedeae7cb521cc6c8f23a545ba765d64bc253cb1a6aa842b6a68d1ef722e4",
       "size": [
         2044,
         2044
@@ -33657,7 +33729,7 @@
       "file": "assets/atlases/species_carnotaurus_0.png",
       "frames": 229,
       "group": "species_carnotaurus",
-      "sha256": "bbaea6db3b2b7a82c6cb930a90623a11162d59e290e489c4279ed777cd3e8839",
+      "sha256": "13e13b300de748e013681329309896aa1edccd19b84d093a151f61aa073740df",
       "size": [
         2044,
         2044
@@ -33679,7 +33751,7 @@
       "file": "assets/atlases/species_deinonychus_0.png",
       "frames": 164,
       "group": "species_deinonychus",
-      "sha256": "47abb7c087f64fed9bd233ab7b08d9487cea247c0e8acd8c021d0685a49249f1",
+      "sha256": "f7b560c8496efa2087b16436e8f3f015782281f5c0cf35b0860fbf9c1a1b8c02",
       "size": [
         2044,
         2044
@@ -33690,7 +33762,7 @@
       "file": "assets/atlases/species_deinosuchus_0.png",
       "frames": 213,
       "group": "species_deinosuchus",
-      "sha256": "79f3e7e2abf64ada58fb6a739fadf386cf8cf2d14a0e714bcf0d3bd27e20c283",
+      "sha256": "8f9548f25e8911651bc51a812e4d5ec108c8ad32bf23e0bf4291320befa98a0e",
       "size": [
         2044,
         2044
@@ -33699,53 +33771,31 @@
     },
     {
       "file": "assets/atlases/species_gallimimus_0.png",
-      "frames": 212,
+      "frames": 236,
       "group": "species_gallimimus",
-      "sha256": "52476f11eb09c17f2f5198a0b58fbc801826fc17a6522e76f6005a6e5ab60edd",
+      "sha256": "2d35d9c7fd9b782acec2401b0754e6e21dc15c60c50cf9a112810ee35fde98d0",
       "size": [
         2044,
         2044
       ],
       "unique_frames": 196
-    },
-    {
-      "file": "assets/atlases/species_gallimimus_1.png",
-      "frames": 24,
-      "group": "species_gallimimus",
-      "sha256": "cb96036d24eaa3857b0541c13ba25a8ec4bfc9a08e85afee5a078c32bb043c5b",
-      "size": [
-        1904,
-        146
-      ],
-      "unique_frames": 24
     },
     {
       "file": "assets/atlases/species_pachycephalosaurus_0.png",
-      "frames": 212,
+      "frames": 236,
       "group": "species_pachycephalosaurus",
-      "sha256": "5fe0558261f35347797df131b3ab614b2af900f07f62ccc183160edea765b9c2",
+      "sha256": "a7a6724d8eee5080da9028d4685e5537db34c7f7ae126e870a81668f20819a8f",
       "size": [
         2044,
         2044
       ],
       "unique_frames": 196
-    },
-    {
-      "file": "assets/atlases/species_pachycephalosaurus_1.png",
-      "frames": 24,
-      "group": "species_pachycephalosaurus",
-      "sha256": "03198643840a7cd6504f027baa46186df5d5fe5bd349ce07a7abd0984a04c392",
-      "size": [
-        1904,
-        146
-      ],
-      "unique_frames": 24
     },
     {
       "file": "assets/atlases/species_parasaurolophus_0.png",
       "frames": 212,
       "group": "species_parasaurolophus",
-      "sha256": "8bdb5e77d077f69c8555d035990591cbe9defd513f556b0ebbf54da62771579b",
+      "sha256": "d6d2e85689e68d81adb50d3cbec05eec2d43c054c4ad4d2b3502c7405a69ac71",
       "size": [
         2044,
         2044
@@ -33756,7 +33806,7 @@
       "file": "assets/atlases/species_parasaurolophus_1.png",
       "frames": 21,
       "group": "species_parasaurolophus",
-      "sha256": "88370a024c7fecacbe31ccab658db57f3c60d95a349ed15503e510d3d2cb6421",
+      "sha256": "7bb0cf090f890f53632f3382a50784c3d186d910f8f549330492a88cdcfd714c",
       "size": [
         2014,
         276
@@ -33765,9 +33815,9 @@
     },
     {
       "file": "assets/atlases/species_triceratops_0.png",
-      "frames": 213,
+      "frames": 237,
       "group": "species_triceratops",
-      "sha256": "462224d9d53096e9c656402ea98af5777f057a772e65dd0ce49440c8b07f35a4",
+      "sha256": "c4b1164603576cc6c65210fc4d33411162a34734b57afa46d9ce963f3b3f4a07",
       "size": [
         2044,
         2044
@@ -33775,21 +33825,10 @@
       "unique_frames": 196
     },
     {
-      "file": "assets/atlases/species_triceratops_1.png",
-      "frames": 24,
-      "group": "species_triceratops",
-      "sha256": "6deb83442b0b9ff2d1273e4ce14b4f694682d7430158acd8dd8d8c98b96a073a",
-      "size": [
-        1888,
-        146
-      ],
-      "unique_frames": 24
-    },
-    {
       "file": "assets/atlases/species_tyrannosaurus_0.png",
       "frames": 205,
       "group": "species_tyrannosaurus",
-      "sha256": "8d438c492d5c665b707e58a5c4e01deaff099e15662879b5a6acfe5b03b7a900",
+      "sha256": "f7bf76b7ef096b7b16542a902edb924b52a6e9522e17a2955b541398971d1ec1",
       "size": [
         2044,
         2044
@@ -33800,7 +33839,7 @@
       "file": "assets/atlases/species_utahraptor_0.png",
       "frames": 241,
       "group": "species_utahraptor",
-      "sha256": "cd0f1b524f684f7672102f792c559d76108aefec3371358aa9e60078c04424f0",
+      "sha256": "20c467edf0f8273e73d9f987057b8ce1aade8236e70042a7ed644a2395b9fc83",
       "size": [
         2046,
         2044
@@ -33852,6 +33891,6 @@
       "unique_frames": 133
     }
   ],
-  "unique_frames": 2773,
+  "unique_frames": 2701,
   "version": 2
 }

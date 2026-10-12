@@ -13,7 +13,10 @@ for (const name of ['previews', 'balance_runs']) {
   if (fs.existsSync(path.join(game, name))) fs.cpSync(path.join(game, name), path.join(out, name), {recursive:true});
 }
 for (const name of ['species_animation_review.html','species_animation_review_data.js',
-  'species_animation_audit.json','SPECIES_ANIMATION_AUDIT.md','animation_continuity_runtime_report.json']) {
+  'species_animation_audit.json','SPECIES_ANIMATION_AUDIT.md','animation_continuity_runtime_report.json',
+  'ANIMATION_POLISH.md','animation_polish_validation.json','animation_polish_runtime_report.json',
+  'animation_polish_gdevelop_report.json','animation_polish_gdevelop_player_report.json',
+  'animation_polish_gdevelop_enemy_report.json','animation_polish_gdevelop_continuity_report.json']) {
   if (fs.existsSync(path.join(game, name))) fs.copyFileSync(path.join(game, name), path.join(out, name));
 }
 for (const name of ['sprite_atlas_manifest.json','sprite_atlas_validation.json','presentation_manifest.json','presentation_atlas_runtime_report.json','presentation_implementation_validation.json','SPRITE_RULES_PRESENTATION.md','PRESENTATION_AND_ATLAS.md','GROUND_REUSE.md','ground_reuse_manifest.json','ground_reuse_validation.json','native_ground_runtime_report.json','native_ground_implementation_validation.json','SPRITE_RULES_GROUND.md','PAGES_GROUND_RELEASE.md','pages_build_runtime_report.json','SHORE_BLEND.md','shore_blend_runtime_report.json','NATURAL_LAKES_AND_FISHING.md','natural_fishing_runtime_report.json']) fs.copyFileSync(path.join(game,name),path.join(out,name));

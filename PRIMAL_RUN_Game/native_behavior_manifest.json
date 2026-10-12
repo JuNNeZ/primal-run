@@ -6186,15 +6186,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "5f669ca6577ca8e23243d0a0785eb088d1b7d9212c658a7403bf98afe3aca3e5",
+    "export_sha256": "02c4418bef8ed977e211cea44e8917c479737e1db8d49dec95b71061fdbee3a3",
     "reference": "assets/player_full/gallimimus_idle_W_000.png",
-    "reference_sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4",
+    "reference_sha256": "8773ffd5d686b4ae553602502b4ed54730700eba10f354c630adc81c9b540750",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6230,15 +6230,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "cd1f4190b16bb31d7e6698f967eb58665d4f0944f85a269374da8afebd5168a9",
+    "export_sha256": "f9d88290cb027da3697e75e5a4198f9264eb6fdc2a8cd07d21d9d40ffae46881",
     "reference": "assets/player_full/gallimimus_idle_W_000.png",
-    "reference_sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4",
+    "reference_sha256": "8773ffd5d686b4ae553602502b4ed54730700eba10f354c630adc81c9b540750",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6274,15 +6274,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "a0597bf028474b5b3ada661736bbc4bb114c8d54b7841cdc028dfe44334b14ba",
+    "export_sha256": "55398efb50e9ac8e3d375c3ccd5a68008ed076de771bbee4ca5a3ea8f59a9b03",
     "reference": "assets/player_full/gallimimus_idle_W_000.png",
-    "reference_sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4",
+    "reference_sha256": "8773ffd5d686b4ae553602502b4ed54730700eba10f354c630adc81c9b540750",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6318,15 +6318,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "f36eff582b1b0acaa73fd2a2f1b7e2d78fa8452384f3ffc50c24426662154f6c",
+    "export_sha256": "dba560fd076f96c7a8814a3b6472c803be2c6c0a8480abc3e9cc8cb8c9b1f0c0",
     "reference": "assets/player_full/gallimimus_idle_W_000.png",
-    "reference_sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4",
+    "reference_sha256": "8773ffd5d686b4ae553602502b4ed54730700eba10f354c630adc81c9b540750",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6890,15 +6890,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "558b1d9d437a069a3799c4984f0ad00f99a69203f178125bdcdc95e70131342d",
+    "export_sha256": "78593010996b30d1e8e50ef1b60fc6f3b90e1db30ef05489c5e461b551fff903",
     "reference": "assets/player_full/gallimimus_idle_W_000.png",
-    "reference_sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4",
+    "reference_sha256": "8773ffd5d686b4ae553602502b4ed54730700eba10f354c630adc81c9b540750",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6934,15 +6934,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "e942dcdcf0468797405aa935d11f29c9656c207ef05315b275226e3fb9061931",
+    "export_sha256": "58abc42a65bdf2686fc99c52ac8df23b961c0e68e9bb529389a34eccb1a3f77c",
     "reference": "assets/player_full/gallimimus_idle_W_000.png",
-    "reference_sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4",
+    "reference_sha256": "8773ffd5d686b4ae553602502b4ed54730700eba10f354c630adc81c9b540750",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -6978,15 +6978,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "3e8f56a61a42da3532f4f6f0aa960b527e8a76ce3a978d84a1c87d7a6e10a681",
+    "export_sha256": "b02a82bf69dcbbeacddc9fc47f9f483c6a05b1d54d6e03a42a744fb21796a96b",
     "reference": "assets/player_full/gallimimus_idle_W_000.png",
-    "reference_sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4",
+    "reference_sha256": "8773ffd5d686b4ae553602502b4ed54730700eba10f354c630adc81c9b540750",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -7022,15 +7022,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "3dcbf8652cc000b8e0089eca13f79460d321625b181c3a9b1aad1aac51ad04b9",
+    "export_sha256": "7d2ec6aec29786b37b9ce31ae30ba4e4d1c4f8dcf81ef50f5b13d1f35b612677",
     "reference": "assets/player_full/gallimimus_idle_W_000.png",
-    "reference_sha256": "4fc157232eb624623109e091987e774164d5486ed8abdf91de401180805bcad4",
+    "reference_sha256": "8773ffd5d686b4ae553602502b4ed54730700eba10f354c630adc81c9b540750",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -11818,22 +11818,22 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "export_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "reference": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
-    "reference_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "reference_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
     "runtime_enabled": false,
-    "visual_review": "Authored pose clips fixed native canvas: 16,33-147,103; canonical idle fallback.",
+    "visual_review": "Authored pose clips fixed native canvas: 13,33-144,103; canonical idle fallback.",
     "native_fallback": true,
-    "fallback_reason": "Authored pose clips fixed native canvas: 16,33-147,103; canonical idle fallback."
+    "fallback_reason": "Authored pose clips fixed native canvas: 13,33-144,103; canonical idle fallback."
   },
   {
     "file": "assets/behavior_native/tyrannosaurus_graze_W_001.png",
@@ -11862,22 +11862,22 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "export_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "reference": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
-    "reference_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "reference_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
     "runtime_enabled": false,
-    "visual_review": "Authored pose clips fixed native canvas: 16,33-147,103; canonical idle fallback.",
+    "visual_review": "Authored pose clips fixed native canvas: 13,33-144,103; canonical idle fallback.",
     "native_fallback": true,
-    "fallback_reason": "Authored pose clips fixed native canvas: 16,33-147,103; canonical idle fallback."
+    "fallback_reason": "Authored pose clips fixed native canvas: 13,33-144,103; canonical idle fallback."
   },
   {
     "file": "assets/behavior_native/tyrannosaurus_drink_W_000.png",
@@ -11906,22 +11906,22 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "export_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "reference": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
-    "reference_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "reference_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
     "runtime_enabled": false,
-    "visual_review": "Authored pose clips fixed native canvas: 16,33-147,103; canonical idle fallback.",
+    "visual_review": "Authored pose clips fixed native canvas: 13,33-144,103; canonical idle fallback.",
     "native_fallback": true,
-    "fallback_reason": "Authored pose clips fixed native canvas: 16,33-147,103; canonical idle fallback."
+    "fallback_reason": "Authored pose clips fixed native canvas: 13,33-144,103; canonical idle fallback."
   },
   {
     "file": "assets/behavior_native/tyrannosaurus_drink_W_001.png",
@@ -11950,22 +11950,22 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "export_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "reference": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
-    "reference_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "reference_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
     "runtime_enabled": false,
-    "visual_review": "Authored pose clips fixed native canvas: 16,33-147,103; canonical idle fallback.",
+    "visual_review": "Authored pose clips fixed native canvas: 13,33-144,103; canonical idle fallback.",
     "native_fallback": true,
-    "fallback_reason": "Authored pose clips fixed native canvas: 16,33-147,103; canonical idle fallback."
+    "fallback_reason": "Authored pose clips fixed native canvas: 13,33-144,103; canonical idle fallback."
   },
   {
     "file": "assets/behavior_native/tyrannosaurus_sleep_S_000.png",
@@ -12522,15 +12522,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "efb767ecc799adaff7be34561d50abf4328229bb4386f56cddb56c6eb9b42c9a",
+    "export_sha256": "f1852f828ea6acc1e1b28bedcdc1648d2690f641c9fe4d86eba8007dd1e349d2",
     "reference": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
-    "reference_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "reference_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -12566,15 +12566,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "abc1f62bc2497294be988d77d0ee55cca01a8c59efd06e5ba280d1a2e956d5c3",
+    "export_sha256": "3d1b555a4fb05672a1d54790e2542173ddd03a430272d22ec2cb29505e55e66c",
     "reference": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
-    "reference_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "reference_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -12610,15 +12610,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "025d371a592fe2f88308ef09e6c6eeea942ffe20aa04459d2fbea22046f44cab",
+    "export_sha256": "82d09f08209a254e41800a9cb0a7a669158f427a1bbdccd7cd70eb6c7a6447c3",
     "reference": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
-    "reference_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "reference_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -12654,15 +12654,15 @@
       128
     ],
     "registration_offset": [
-      -24,
+      -27,
       8
     ],
     "sampling_stride": 2,
     "sampling_offset": 1,
     "alpha_threshold": 192,
-    "export_sha256": "ba47f3ac3bc83bad2c21bc735a8e5bca427e0c9ef6a33cbeb6f4f52caf43b207",
+    "export_sha256": "480f88210304bc544a82847c138409ca3555f2036dbc93e8f71c77f4a668245e",
     "reference": "assets/enemy_full/tyrannosaurus_idle_W_000.png",
-    "reference_sha256": "9f93abb0f71d5ffe94904e68f6a5ccdad44120749e6dd6e6e665aa5f3e803b77",
+    "reference_sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,

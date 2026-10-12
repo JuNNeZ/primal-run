@@ -67,17 +67,19 @@ console.log(JSON.stringify({species,sequences,colors:C.SPECIES_COLORS,night:C.NI
     report=dict(technical_result='FAIL' if errors else 'PASS',species=len(coverage),sequences=len(catalog['sequences']),
         frames=sum(e['frames'] for e in coverage.values()),coverage=coverage,errors=errors,
         exact_cross_species_RGBA_matches=matches,review_candidates=risks,
-        visual_result='REQUIRES_SOURCE_POLISH',production_approved=False,
+        visual_result='SOURCE_POLISH_IMPLEMENTED' if (GAME/'Source_Generated/animation_polish/hip_registration.json').exists() else 'REQUIRES_SOURCE_REVIEW',production_approved=False,
         metric_scope='Centroid/area changes are review flags. Tail swing, limb motion and death can legitimately change them. Fixed declared hips do not prove fixed drawn hips. No bbox recentering or pixel edits.',
         runtime_policy={'stable_idle':'ordinary/player/pack idle holds pose0; stored4 poses are reviewed independently',
             'pack':'nonlethal companions use idle/walk/run/attack; hp is clamped at1, so death is deliberately unavailable',
             'attack':'gameplay duration/contact timing; species weapon differs; six poses in order',
             'extras':'diet-specific forage/drink/sleep/scratch and wounded poses are separate overlays, with documented native fallbacks'},
-        known_art_issues=['Tyrannosaurus N body volume varies between preserved idle/attack and revised walk/run',
-            'Cross-state matching of independently generated Triceratops/Pachy/Galli/Para attacks needs polish',
-            'Generated gait/loop body and colour landmarks require visual review; source centroids are not anatomical pivots',
-            'Deinonychus S hurt poses shift visibly; keep prototype until source hips/anatomy are reviewed'],
-        source_policy='Raw masters/native exports unchanged; no anatomical approval inferred from technical checks')
+        source_review='ANIMATION_POLISH.md',
+        source_facts=['Tyrannosaurus N uses one complete state revision master; the earlier mixed-source explanation was incorrect',
+            'Explicit lossless registration corrects large pose/source-row placement differences; logical origins and physical game sizes are retained',
+            'Triceratops/Pachycephalosaurus/Gallimimus/Ankylosaurus weapon overlays reuse the matching native species action',
+            'Deinonychus S hurt is a local two-cell anatomical edit; Parasaurolophus kicks use local canonical-master/contact edits'],
+        visual_limits='Anatomical points were reviewed separately; automatic centroid/area flags do not certify an animation. Small authored silhouette/marking variation remains in prototype art.',
+        source_policy='Original raw masters remain immutable. Active native derivatives are rebuilt from recorded local revisions and registration. No anatomical approval inferred from technical checks')
     (GAME/'species_animation_audit.json').write_text(json.dumps(report,indent=2)+'\n')
     (GAME/'species_animation_review_data.js').write_text('globalThis.SpeciesAnimationReview='+json.dumps(catalog,separators=(',',':'))+';\n')
     print(json.dumps({k:report[k] for k in ['technical_result','visual_result','species','sequences','frames','errors']}))

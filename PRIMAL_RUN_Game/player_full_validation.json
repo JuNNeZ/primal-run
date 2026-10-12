@@ -799,9 +799,9 @@
     },
     "assets/player_full/carnotaurus_idle_S_001.png": {
       "bbox": [
-        67,
+        68,
         21,
-        109,
+        110,
         115
       ],
       "origin": [
@@ -812,9 +812,9 @@
     },
     "assets/player_full/carnotaurus_idle_S_002.png": {
       "bbox": [
-        56,
+        67,
         20,
-        97,
+        108,
         116
       ],
       "origin": [
@@ -825,9 +825,9 @@
     },
     "assets/player_full/carnotaurus_idle_S_003.png": {
       "bbox": [
-        49,
+        68,
         21,
-        90,
+        109,
         115
       ],
       "origin": [
@@ -838,10 +838,10 @@
     },
     "assets/player_full/carnotaurus_hurt_S_000.png": {
       "bbox": [
-        49,
-        21,
-        97,
-        115
+        64,
+        19,
+        112,
+        113
       ],
       "origin": [
         72,
@@ -851,10 +851,10 @@
     },
     "assets/player_full/carnotaurus_hurt_S_001.png": {
       "bbox": [
-        45,
-        21,
-        88,
-        115
+        63,
+        18,
+        106,
+        112
       ],
       "origin": [
         72,
@@ -864,10 +864,10 @@
     },
     "assets/player_full/carnotaurus_walk_S_000.png": {
       "bbox": [
-        64,
-        19,
-        107,
-        113
+        66,
+        23,
+        109,
+        117
       ],
       "origin": [
         72,
@@ -877,10 +877,10 @@
     },
     "assets/player_full/carnotaurus_walk_S_001.png": {
       "bbox": [
-        64,
-        19,
-        106,
-        112
+        67,
+        22,
+        109,
+        115
       ],
       "origin": [
         72,
@@ -890,10 +890,10 @@
     },
     "assets/player_full/carnotaurus_walk_S_002.png": {
       "bbox": [
-        54,
-        19,
-        96,
-        112
+        64,
+        22,
+        106,
+        115
       ],
       "origin": [
         72,
@@ -903,10 +903,10 @@
     },
     "assets/player_full/carnotaurus_walk_S_003.png": {
       "bbox": [
-        51,
-        18,
-        93,
-        113
+        69,
+        21,
+        111,
+        116
       ],
       "origin": [
         72,
@@ -916,10 +916,10 @@
     },
     "assets/player_full/carnotaurus_walk_S_004.png": {
       "bbox": [
-        42,
-        19,
-        87,
-        113
+        63,
+        22,
+        108,
+        116
       ],
       "origin": [
         72,
@@ -929,10 +929,10 @@
     },
     "assets/player_full/carnotaurus_walk_S_005.png": {
       "bbox": [
-        43,
-        19,
-        84,
-        113
+        65,
+        22,
+        106,
+        116
       ],
       "origin": [
         72,
@@ -942,10 +942,10 @@
     },
     "assets/player_full/carnotaurus_run_S_000.png": {
       "bbox": [
-        65,
-        19,
-        106,
-        113
+        68,
+        23,
+        109,
+        117
       ],
       "origin": [
         72,
@@ -955,9 +955,9 @@
     },
     "assets/player_full/carnotaurus_run_S_001.png": {
       "bbox": [
-        63,
+        65,
         20,
-        107,
+        109,
         116
       ],
       "origin": [
@@ -968,10 +968,10 @@
     },
     "assets/player_full/carnotaurus_run_S_002.png": {
       "bbox": [
-        54,
-        18,
-        96,
-        114
+        64,
+        21,
+        106,
+        117
       ],
       "origin": [
         72,
@@ -981,10 +981,10 @@
     },
     "assets/player_full/carnotaurus_run_S_003.png": {
       "bbox": [
-        49,
-        18,
-        92,
-        113
+        68,
+        21,
+        111,
+        116
       ],
       "origin": [
         72,
@@ -994,9 +994,9 @@
     },
     "assets/player_full/carnotaurus_run_S_004.png": {
       "bbox": [
-        44,
+        67,
         19,
-        86,
+        109,
         112
       ],
       "origin": [
@@ -1007,10 +1007,10 @@
     },
     "assets/player_full/carnotaurus_run_S_005.png": {
       "bbox": [
-        43,
-        19,
-        85,
-        114
+        65,
+        22,
+        107,
+        117
       ],
       "origin": [
         72,
@@ -1020,10 +1020,10 @@
     },
     "assets/player_full/carnotaurus_attack_S_000.png": {
       "bbox": [
-        64,
-        15,
-        108,
-        110
+        66,
+        18,
+        110,
+        113
       ],
       "origin": [
         72,
@@ -1033,10 +1033,10 @@
     },
     "assets/player_full/carnotaurus_attack_S_001.png": {
       "bbox": [
-        61,
-        17,
-        111,
-        104
+        63,
+        22,
+        113,
+        109
       ],
       "origin": [
         72,
@@ -1046,10 +1046,10 @@
     },
     "assets/player_full/carnotaurus_attack_S_002.png": {
       "bbox": [
-        52,
-        17,
-        105,
-        104
+        62,
+        15,
+        115,
+        102
       ],
       "origin": [
         72,
@@ -1059,10 +1059,10 @@
     },
     "assets/player_full/carnotaurus_attack_S_003.png": {
       "bbox": [
-        44,
-        15,
-        95,
-        110
+        61,
+        13,
+        112,
+        108
       ],
       "origin": [
         72,
@@ -1072,10 +1072,10 @@
     },
     "assets/player_full/carnotaurus_attack_S_004.png": {
       "bbox": [
-        41,
-        15,
-        98,
-        109
+        62,
+        12,
+        119,
+        106
       ],
       "origin": [
         72,
@@ -1085,10 +1085,10 @@
     },
     "assets/player_full/carnotaurus_attack_S_005.png": {
       "bbox": [
-        40,
-        15,
-        88,
-        111
+        63,
+        13,
+        111,
+        109
       ],
       "origin": [
         72,
@@ -1098,10 +1098,10 @@
     },
     "assets/player_full/carnotaurus_death_S_000.png": {
       "bbox": [
-        63,
-        11,
-        115,
-        100
+        56,
+        10,
+        108,
+        99
       ],
       "origin": [
         72,
@@ -1111,9 +1111,9 @@
     },
     "assets/player_full/carnotaurus_death_S_001.png": {
       "bbox": [
-        61,
+        58,
         11,
-        117,
+        114,
         102
       ],
       "origin": [
@@ -1124,10 +1124,10 @@
     },
     "assets/player_full/carnotaurus_death_S_002.png": {
       "bbox": [
-        39,
-        11,
-        118,
-        110
+        45,
+        10,
+        124,
+        109
       ],
       "origin": [
         72,
@@ -1137,10 +1137,10 @@
     },
     "assets/player_full/carnotaurus_death_S_003.png": {
       "bbox": [
-        25,
-        11,
-        112,
-        98
+        31,
+        3,
+        118,
+        90
       ],
       "origin": [
         72,
@@ -1150,10 +1150,10 @@
     },
     "assets/player_full/carnotaurus_death_S_004.png": {
       "bbox": [
-        14,
-        16,
-        118,
-        102
+        15,
+        17,
+        119,
+        103
       ],
       "origin": [
         72,
@@ -1163,10 +1163,10 @@
     },
     "assets/player_full/carnotaurus_death_S_005.png": {
       "bbox": [
-        11,
-        17,
-        113,
-        98
+        18,
+        13,
+        120,
+        94
       ],
       "origin": [
         72,
@@ -1332,10 +1332,10 @@
     },
     "assets/player_full/ankylosaurus_run_S_000.png": {
       "bbox": [
-        50,
-        15,
-        106,
-        107
+        53,
+        22,
+        109,
+        114
       ],
       "origin": [
         72,
@@ -1345,10 +1345,10 @@
     },
     "assets/player_full/ankylosaurus_run_S_001.png": {
       "bbox": [
-        48,
-        14,
-        105,
-        107
+        51,
+        21,
+        108,
+        114
       ],
       "origin": [
         72,
@@ -1358,10 +1358,10 @@
     },
     "assets/player_full/ankylosaurus_run_S_002.png": {
       "bbox": [
-        47,
-        16,
-        105,
-        107
+        50,
+        23,
+        108,
+        114
       ],
       "origin": [
         72,
@@ -1371,10 +1371,10 @@
     },
     "assets/player_full/ankylosaurus_run_S_003.png": {
       "bbox": [
-        42,
-        18,
-        96,
-        107
+        45,
+        25,
+        99,
+        114
       ],
       "origin": [
         72,
@@ -1384,10 +1384,10 @@
     },
     "assets/player_full/ankylosaurus_run_S_004.png": {
       "bbox": [
-        46,
-        15,
-        98,
-        107
+        49,
+        22,
+        101,
+        114
       ],
       "origin": [
         72,
@@ -1397,10 +1397,10 @@
     },
     "assets/player_full/ankylosaurus_run_S_005.png": {
       "bbox": [
-        43,
-        16,
-        94,
-        107
+        46,
+        23,
+        97,
+        114
       ],
       "origin": [
         72,
@@ -1410,10 +1410,10 @@
     },
     "assets/player_full/ankylosaurus_attack_S_000.png": {
       "bbox": [
-        50,
-        12,
-        104,
-        104
+        51,
+        22,
+        105,
+        114
       ],
       "origin": [
         72,
@@ -1423,10 +1423,10 @@
     },
     "assets/player_full/ankylosaurus_attack_S_001.png": {
       "bbox": [
-        41,
-        8,
-        109,
-        104
+        42,
+        18,
+        110,
+        114
       ],
       "origin": [
         72,
@@ -1436,10 +1436,10 @@
     },
     "assets/player_full/ankylosaurus_attack_S_002.png": {
       "bbox": [
-        45,
-        6,
-        99,
-        104
+        46,
+        16,
+        100,
+        114
       ],
       "origin": [
         72,
@@ -1449,10 +1449,10 @@
     },
     "assets/player_full/ankylosaurus_attack_S_003.png": {
       "bbox": [
-        35,
-        27,
-        133,
-        104
+        36,
+        37,
+        134,
+        114
       ],
       "origin": [
         72,
@@ -1462,10 +1462,10 @@
     },
     "assets/player_full/ankylosaurus_attack_S_004.png": {
       "bbox": [
-        33,
-        15,
-        103,
-        104
+        34,
+        25,
+        104,
+        114
       ],
       "origin": [
         72,
@@ -1475,10 +1475,10 @@
     },
     "assets/player_full/ankylosaurus_attack_S_005.png": {
       "bbox": [
-        40,
-        12,
-        93,
-        104
+        41,
+        22,
+        94,
+        114
       ],
       "origin": [
         72,
@@ -1488,10 +1488,10 @@
     },
     "assets/player_full/ankylosaurus_death_S_000.png": {
       "bbox": [
-        48,
-        9,
-        103,
-        96
+        50,
+        15,
+        105,
+        102
       ],
       "origin": [
         72,
@@ -1501,10 +1501,10 @@
     },
     "assets/player_full/ankylosaurus_death_S_001.png": {
       "bbox": [
-        48,
-        8,
-        104,
-        99
+        50,
+        14,
+        106,
+        105
       ],
       "origin": [
         72,
@@ -1514,10 +1514,10 @@
     },
     "assets/player_full/ankylosaurus_death_S_002.png": {
       "bbox": [
-        38,
-        11,
-        106,
-        104
+        40,
+        17,
+        108,
+        110
       ],
       "origin": [
         72,
@@ -1527,10 +1527,10 @@
     },
     "assets/player_full/ankylosaurus_death_S_003.png": {
       "bbox": [
-        37,
-        7,
-        107,
-        102
+        39,
+        13,
+        109,
+        108
       ],
       "origin": [
         72,
@@ -1540,10 +1540,10 @@
     },
     "assets/player_full/ankylosaurus_death_S_004.png": {
       "bbox": [
-        35,
-        8,
-        116,
-        105
+        37,
+        14,
+        118,
+        111
       ],
       "origin": [
         72,
@@ -1553,10 +1553,10 @@
     },
     "assets/player_full/ankylosaurus_death_S_005.png": {
       "bbox": [
-        30,
-        5,
-        116,
-        105
+        32,
+        11,
+        118,
+        111
       ],
       "origin": [
         72,
@@ -2268,10 +2268,10 @@
     },
     "assets/player_full/utahraptor_death_E_000.png": {
       "bbox": [
-        16,
-        38,
-        133,
-        99
+        19,
+        45,
+        136,
+        106
       ],
       "origin": [
         76,
@@ -2281,10 +2281,10 @@
     },
     "assets/player_full/utahraptor_death_E_001.png": {
       "bbox": [
-        12,
-        41,
-        135,
-        98
+        15,
+        48,
+        138,
+        105
       ],
       "origin": [
         76,
@@ -2294,10 +2294,10 @@
     },
     "assets/player_full/utahraptor_death_E_002.png": {
       "bbox": [
-        13,
-        45,
-        131,
-        97
+        16,
+        52,
+        134,
+        104
       ],
       "origin": [
         76,
@@ -2307,10 +2307,10 @@
     },
     "assets/player_full/utahraptor_death_E_003.png": {
       "bbox": [
-        13,
-        44,
-        136,
-        91
+        16,
+        51,
+        139,
+        98
       ],
       "origin": [
         76,
@@ -2320,10 +2320,10 @@
     },
     "assets/player_full/utahraptor_death_E_004.png": {
       "bbox": [
-        10,
-        48,
-        131,
-        91
+        13,
+        55,
+        134,
+        98
       ],
       "origin": [
         76,
@@ -2333,10 +2333,10 @@
     },
     "assets/player_full/utahraptor_death_E_005.png": {
       "bbox": [
-        6,
-        47,
-        131,
-        91
+        9,
+        54,
+        134,
+        98
       ],
       "origin": [
         76,
@@ -2359,9 +2359,9 @@
     },
     "assets/player_full/carnotaurus_idle_E_001.png": {
       "bbox": [
-        13,
+        14,
         51,
-        131,
+        132,
         99
       ],
       "origin": [
@@ -2372,9 +2372,9 @@
     },
     "assets/player_full/carnotaurus_idle_E_002.png": {
       "bbox": [
-        13,
+        14,
         51,
-        131,
+        132,
         99
       ],
       "origin": [
@@ -2385,9 +2385,9 @@
     },
     "assets/player_full/carnotaurus_idle_E_003.png": {
       "bbox": [
-        13,
+        14,
         51,
-        130,
+        131,
         99
       ],
       "origin": [
@@ -2398,9 +2398,9 @@
     },
     "assets/player_full/carnotaurus_hurt_E_000.png": {
       "bbox": [
-        12,
+        14,
         47,
-        127,
+        129,
         99
       ],
       "origin": [
@@ -2411,9 +2411,9 @@
     },
     "assets/player_full/carnotaurus_hurt_E_001.png": {
       "bbox": [
-        12,
+        15,
         51,
-        127,
+        130,
         99
       ],
       "origin": [
@@ -2425,9 +2425,9 @@
     "assets/player_full/carnotaurus_walk_E_000.png": {
       "bbox": [
         14,
-        45,
+        51,
         132,
-        94
+        100
       ],
       "origin": [
         72,
@@ -2437,10 +2437,10 @@
     },
     "assets/player_full/carnotaurus_walk_E_001.png": {
       "bbox": [
-        14,
-        45,
-        132,
-        94
+        12,
+        53,
+        130,
+        102
       ],
       "origin": [
         72,
@@ -2451,9 +2451,9 @@
     "assets/player_full/carnotaurus_walk_E_002.png": {
       "bbox": [
         13,
-        45,
+        51,
         131,
-        95
+        101
       ],
       "origin": [
         72,
@@ -2463,10 +2463,10 @@
     },
     "assets/player_full/carnotaurus_walk_E_003.png": {
       "bbox": [
-        13,
-        45,
-        130,
-        94
+        12,
+        51,
+        129,
+        100
       ],
       "origin": [
         72,
@@ -2477,9 +2477,9 @@
     "assets/player_full/carnotaurus_walk_E_004.png": {
       "bbox": [
         12,
-        46,
+        50,
         130,
-        95
+        99
       ],
       "origin": [
         72,
@@ -2489,10 +2489,10 @@
     },
     "assets/player_full/carnotaurus_walk_E_005.png": {
       "bbox": [
-        12,
-        45,
-        129,
-        94
+        14,
+        51,
+        131,
+        100
       ],
       "origin": [
         72,
@@ -2502,10 +2502,10 @@
     },
     "assets/player_full/carnotaurus_run_E_000.png": {
       "bbox": [
-        14,
-        46,
-        132,
-        95
+        11,
+        49,
+        129,
+        98
       ],
       "origin": [
         72,
@@ -2515,10 +2515,10 @@
     },
     "assets/player_full/carnotaurus_run_E_001.png": {
       "bbox": [
-        16,
-        46,
-        135,
-        95
+        11,
+        51,
+        130,
+        100
       ],
       "origin": [
         72,
@@ -2529,9 +2529,9 @@
     "assets/player_full/carnotaurus_run_E_002.png": {
       "bbox": [
         13,
-        46,
+        50,
         131,
-        95
+        99
       ],
       "origin": [
         72,
@@ -2541,10 +2541,10 @@
     },
     "assets/player_full/carnotaurus_run_E_003.png": {
       "bbox": [
-        13,
-        46,
-        130,
-        95
+        12,
+        50,
+        129,
+        99
       ],
       "origin": [
         72,
@@ -2554,10 +2554,10 @@
     },
     "assets/player_full/carnotaurus_run_E_004.png": {
       "bbox": [
-        12,
-        46,
-        130,
-        93
+        13,
+        51,
+        131,
+        98
       ],
       "origin": [
         72,
@@ -2568,9 +2568,9 @@
     "assets/player_full/carnotaurus_run_E_005.png": {
       "bbox": [
         12,
-        48,
+        51,
         129,
-        95
+        98
       ],
       "origin": [
         72,
@@ -2581,9 +2581,9 @@
     "assets/player_full/carnotaurus_attack_E_000.png": {
       "bbox": [
         14,
-        42,
+        49,
         131,
-        94
+        101
       ],
       "origin": [
         72,
@@ -2594,9 +2594,9 @@
     "assets/player_full/carnotaurus_attack_E_001.png": {
       "bbox": [
         13,
-        42,
+        50,
         131,
-        94
+        102
       ],
       "origin": [
         72,
@@ -2606,10 +2606,10 @@
     },
     "assets/player_full/carnotaurus_attack_E_002.png": {
       "bbox": [
-        14,
-        42,
-        129,
-        94
+        16,
+        49,
+        131,
+        101
       ],
       "origin": [
         72,
@@ -2619,10 +2619,10 @@
     },
     "assets/player_full/carnotaurus_attack_E_003.png": {
       "bbox": [
-        13,
-        44,
-        137,
-        92
+        11,
+        51,
+        135,
+        99
       ],
       "origin": [
         72,
@@ -2632,10 +2632,10 @@
     },
     "assets/player_full/carnotaurus_attack_E_004.png": {
       "bbox": [
-        12,
-        42,
-        130,
-        93
+        14,
+        49,
+        132,
+        100
       ],
       "origin": [
         72,
@@ -2645,10 +2645,10 @@
     },
     "assets/player_full/carnotaurus_attack_E_005.png": {
       "bbox": [
-        12,
-        42,
-        129,
-        92
+        15,
+        50,
+        132,
+        100
       ],
       "origin": [
         72,
@@ -2659,9 +2659,9 @@
     "assets/player_full/carnotaurus_death_E_000.png": {
       "bbox": [
         14,
-        42,
+        48,
         132,
-        95
+        101
       ],
       "origin": [
         72,
@@ -2671,10 +2671,10 @@
     },
     "assets/player_full/carnotaurus_death_E_001.png": {
       "bbox": [
-        13,
-        42,
-        132,
-        97
+        12,
+        48,
+        131,
+        103
       ],
       "origin": [
         72,
@@ -2684,10 +2684,10 @@
     },
     "assets/player_full/carnotaurus_death_E_002.png": {
       "bbox": [
-        14,
-        41,
-        130,
-        95
+        16,
+        46,
+        132,
+        100
       ],
       "origin": [
         72,
@@ -2697,10 +2697,10 @@
     },
     "assets/player_full/carnotaurus_death_E_003.png": {
       "bbox": [
-        13,
-        40,
-        131,
-        98
+        14,
+        38,
+        132,
+        96
       ],
       "origin": [
         72,
@@ -2711,9 +2711,9 @@
     "assets/player_full/carnotaurus_death_E_004.png": {
       "bbox": [
         12,
-        42,
+        46,
         131,
-        95
+        99
       ],
       "origin": [
         72,
@@ -2723,10 +2723,10 @@
     },
     "assets/player_full/carnotaurus_death_E_005.png": {
       "bbox": [
-        12,
-        42,
-        129,
-        93
+        14,
+        50,
+        131,
+        101
       ],
       "origin": [
         72,
@@ -2788,10 +2788,10 @@
     },
     "assets/player_full/ankylosaurus_hurt_E_000.png": {
       "bbox": [
-        9,
-        48,
-        118,
-        101
+        20,
+        47,
+        129,
+        100
       ],
       "origin": [
         72,
@@ -2801,10 +2801,10 @@
     },
     "assets/player_full/ankylosaurus_hurt_E_001.png": {
       "bbox": [
-        9,
-        49,
-        116,
-        100
+        20,
+        48,
+        127,
+        99
       ],
       "origin": [
         72,
@@ -3048,10 +3048,10 @@
     },
     "assets/player_full/ankylosaurus_death_E_000.png": {
       "bbox": [
-        17,
-        38,
-        129,
-        94
+        18,
+        48,
+        130,
+        104
       ],
       "origin": [
         72,
@@ -3061,10 +3061,10 @@
     },
     "assets/player_full/ankylosaurus_death_E_001.png": {
       "bbox": [
-        9,
-        39,
-        124,
-        92
+        10,
+        49,
+        125,
+        102
       ],
       "origin": [
         72,
@@ -3074,10 +3074,10 @@
     },
     "assets/player_full/ankylosaurus_death_E_002.png": {
       "bbox": [
-        12,
-        41,
-        125,
-        94
+        13,
+        51,
+        126,
+        104
       ],
       "origin": [
         72,
@@ -3087,10 +3087,10 @@
     },
     "assets/player_full/ankylosaurus_death_E_003.png": {
       "bbox": [
-        9,
-        44,
-        125,
-        94
+        10,
+        54,
+        126,
+        104
       ],
       "origin": [
         72,
@@ -3100,10 +3100,10 @@
     },
     "assets/player_full/ankylosaurus_death_E_004.png": {
       "bbox": [
-        9,
-        44,
-        120,
-        94
+        10,
+        54,
+        121,
+        104
       ],
       "origin": [
         72,
@@ -3113,10 +3113,10 @@
     },
     "assets/player_full/ankylosaurus_death_E_005.png": {
       "bbox": [
-        4,
-        44,
-        120,
-        94
+        5,
+        54,
+        121,
+        104
       ],
       "origin": [
         72,
@@ -3672,10 +3672,10 @@
     },
     "assets/player_full/utahraptor_run_N_000.png": {
       "bbox": [
-        49,
-        14,
-        93,
-        105
+        52,
+        20,
+        96,
+        111
       ],
       "origin": [
         72,
@@ -3685,10 +3685,10 @@
     },
     "assets/player_full/utahraptor_run_N_001.png": {
       "bbox": [
-        49,
-        13,
-        93,
-        105
+        52,
+        19,
+        96,
+        111
       ],
       "origin": [
         72,
@@ -3698,10 +3698,10 @@
     },
     "assets/player_full/utahraptor_run_N_002.png": {
       "bbox": [
-        52,
-        13,
-        92,
-        106
+        55,
+        19,
+        95,
+        112
       ],
       "origin": [
         72,
@@ -3711,10 +3711,10 @@
     },
     "assets/player_full/utahraptor_run_N_003.png": {
       "bbox": [
-        48,
-        14,
-        90,
-        105
+        51,
+        20,
+        93,
+        111
       ],
       "origin": [
         72,
@@ -3724,10 +3724,10 @@
     },
     "assets/player_full/utahraptor_run_N_004.png": {
       "bbox": [
-        49,
-        13,
-        91,
-        105
+        52,
+        19,
+        94,
+        111
       ],
       "origin": [
         72,
@@ -3737,10 +3737,10 @@
     },
     "assets/player_full/utahraptor_run_N_005.png": {
       "bbox": [
-        49,
-        12,
-        92,
-        105
+        52,
+        18,
+        95,
+        111
       ],
       "origin": [
         72,
@@ -3828,10 +3828,10 @@
     },
     "assets/player_full/utahraptor_death_N_000.png": {
       "bbox": [
-        48,
-        14,
-        94,
-        107
+        50,
+        22,
+        96,
+        115
       ],
       "origin": [
         72,
@@ -3841,10 +3841,10 @@
     },
     "assets/player_full/utahraptor_death_N_001.png": {
       "bbox": [
-        48,
-        20,
-        97,
-        105
+        50,
+        28,
+        99,
+        113
       ],
       "origin": [
         72,
@@ -3854,10 +3854,10 @@
     },
     "assets/player_full/utahraptor_death_N_002.png": {
       "bbox": [
-        44,
-        24,
-        95,
-        108
+        46,
+        32,
+        97,
+        116
       ],
       "origin": [
         72,
@@ -3867,10 +3867,10 @@
     },
     "assets/player_full/utahraptor_death_N_003.png": {
       "bbox": [
-        46,
-        16,
-        98,
-        108
+        48,
+        24,
+        100,
+        116
       ],
       "origin": [
         72,
@@ -3880,10 +3880,10 @@
     },
     "assets/player_full/utahraptor_death_N_004.png": {
       "bbox": [
-        41,
-        16,
-        101,
-        109
+        43,
+        24,
+        103,
+        117
       ],
       "origin": [
         72,
@@ -3893,10 +3893,10 @@
     },
     "assets/player_full/utahraptor_death_N_005.png": {
       "bbox": [
-        40,
-        16,
-        100,
-        108
+        42,
+        24,
+        102,
+        116
       ],
       "origin": [
         72,
@@ -3919,10 +3919,10 @@
     },
     "assets/player_full/carnotaurus_idle_N_001.png": {
       "bbox": [
-        56,
-        18,
-        90,
-        112
+        55,
+        19,
+        89,
+        113
       ],
       "origin": [
         72,
@@ -3932,10 +3932,10 @@
     },
     "assets/player_full/carnotaurus_idle_N_002.png": {
       "bbox": [
-        54,
-        19,
-        89,
-        112
+        55,
+        18,
+        90,
+        111
       ],
       "origin": [
         72,
@@ -3945,9 +3945,9 @@
     },
     "assets/player_full/carnotaurus_idle_N_003.png": {
       "bbox": [
-        56,
+        55,
         19,
-        90,
+        89,
         113
       ],
       "origin": [
@@ -3958,9 +3958,9 @@
     },
     "assets/player_full/carnotaurus_hurt_N_000.png": {
       "bbox": [
-        53,
+        55,
         18,
-        89,
+        91,
         112
       ],
       "origin": [
@@ -3971,9 +3971,9 @@
     },
     "assets/player_full/carnotaurus_hurt_N_001.png": {
       "bbox": [
-        46,
+        54,
         18,
-        80,
+        88,
         113
       ],
       "origin": [
@@ -3984,10 +3984,10 @@
     },
     "assets/player_full/carnotaurus_walk_N_000.png": {
       "bbox": [
-        54,
-        15,
-        88,
-        109
+        55,
+        20,
+        89,
+        114
       ],
       "origin": [
         72,
@@ -3997,10 +3997,10 @@
     },
     "assets/player_full/carnotaurus_walk_N_001.png": {
       "bbox": [
-        53,
-        16,
-        87,
-        108
+        55,
+        21,
+        89,
+        113
       ],
       "origin": [
         72,
@@ -4010,10 +4010,10 @@
     },
     "assets/player_full/carnotaurus_walk_N_002.png": {
       "bbox": [
-        50,
-        16,
-        84,
-        109
+        55,
+        14,
+        89,
+        107
       ],
       "origin": [
         72,
@@ -4023,10 +4023,10 @@
     },
     "assets/player_full/carnotaurus_walk_N_003.png": {
       "bbox": [
-        49,
-        15,
-        83,
-        109
+        55,
+        13,
+        89,
+        107
       ],
       "origin": [
         72,
@@ -4036,10 +4036,10 @@
     },
     "assets/player_full/carnotaurus_walk_N_004.png": {
       "bbox": [
-        48,
-        16,
-        83,
-        108
+        54,
+        15,
+        89,
+        107
       ],
       "origin": [
         72,
@@ -4049,10 +4049,10 @@
     },
     "assets/player_full/carnotaurus_walk_N_005.png": {
       "bbox": [
-        48,
-        15,
-        81,
-        109
+        55,
+        19,
+        88,
+        113
       ],
       "origin": [
         72,
@@ -4062,10 +4062,10 @@
     },
     "assets/player_full/carnotaurus_run_N_000.png": {
       "bbox": [
-        47,
-        19,
-        81,
-        112
+        55,
+        21,
+        89,
+        114
       ],
       "origin": [
         72,
@@ -4075,10 +4075,10 @@
     },
     "assets/player_full/carnotaurus_run_N_001.png": {
       "bbox": [
-        53,
-        19,
-        90,
-        110
+        54,
+        21,
+        91,
+        112
       ],
       "origin": [
         72,
@@ -4088,10 +4088,10 @@
     },
     "assets/player_full/carnotaurus_run_N_002.png": {
       "bbox": [
-        52,
-        20,
-        90,
-        111
+        54,
+        21,
+        92,
+        112
       ],
       "origin": [
         72,
@@ -4101,10 +4101,10 @@
     },
     "assets/player_full/carnotaurus_run_N_003.png": {
       "bbox": [
-        45,
-        20,
-        80,
-        112
+        54,
+        22,
+        89,
+        114
       ],
       "origin": [
         72,
@@ -4114,10 +4114,10 @@
     },
     "assets/player_full/carnotaurus_run_N_004.png": {
       "bbox": [
-        47,
-        18,
-        83,
-        112
+        53,
+        20,
+        89,
+        114
       ],
       "origin": [
         72,
@@ -4127,10 +4127,10 @@
     },
     "assets/player_full/carnotaurus_run_N_005.png": {
       "bbox": [
-        53,
-        19,
-        88,
-        112
+        54,
+        20,
+        89,
+        113
       ],
       "origin": [
         72,
@@ -4153,10 +4153,10 @@
     },
     "assets/player_full/carnotaurus_attack_N_001.png": {
       "bbox": [
-        52,
-        21,
-        87,
-        115
+        54,
+        17,
+        89,
+        111
       ],
       "origin": [
         72,
@@ -4166,10 +4166,10 @@
     },
     "assets/player_full/carnotaurus_attack_N_002.png": {
       "bbox": [
-        51,
-        18,
-        86,
-        120
+        54,
+        16,
+        89,
+        118
       ],
       "origin": [
         72,
@@ -4179,10 +4179,10 @@
     },
     "assets/player_full/carnotaurus_attack_N_003.png": {
       "bbox": [
-        51,
-        20,
-        89,
-        117
+        53,
+        21,
+        91,
+        118
       ],
       "origin": [
         72,
@@ -4192,9 +4192,9 @@
     },
     "assets/player_full/carnotaurus_attack_N_004.png": {
       "bbox": [
-        53,
+        55,
         19,
-        90,
+        92,
         114
       ],
       "origin": [
@@ -4205,9 +4205,9 @@
     },
     "assets/player_full/carnotaurus_attack_N_005.png": {
       "bbox": [
-        45,
+        53,
         19,
-        81,
+        89,
         114
       ],
       "origin": [
@@ -4218,10 +4218,10 @@
     },
     "assets/player_full/carnotaurus_death_N_000.png": {
       "bbox": [
-        54,
-        18,
-        91,
-        113
+        53,
+        19,
+        90,
+        114
       ],
       "origin": [
         72,
@@ -4231,10 +4231,10 @@
     },
     "assets/player_full/carnotaurus_death_N_001.png": {
       "bbox": [
-        51,
-        24,
-        94,
-        116
+        52,
+        23,
+        95,
+        115
       ],
       "origin": [
         72,
@@ -4244,10 +4244,10 @@
     },
     "assets/player_full/carnotaurus_death_N_002.png": {
       "bbox": [
-        46,
-        25,
-        99,
-        116
+        52,
+        23,
+        105,
+        114
       ],
       "origin": [
         72,
@@ -4257,10 +4257,10 @@
     },
     "assets/player_full/carnotaurus_death_N_003.png": {
       "bbox": [
-        35,
-        26,
-        99,
-        124
+        39,
+        23,
+        103,
+        121
       ],
       "origin": [
         72,
@@ -4270,10 +4270,10 @@
     },
     "assets/player_full/carnotaurus_death_N_004.png": {
       "bbox": [
-        36,
-        23,
-        104,
-        124
+        38,
+        24,
+        106,
+        125
       ],
       "origin": [
         72,
@@ -4283,10 +4283,10 @@
     },
     "assets/player_full/carnotaurus_death_N_005.png": {
       "bbox": [
-        33,
-        23,
-        101,
-        124
+        38,
+        24,
+        106,
+        125
       ],
       "origin": [
         72,
@@ -5388,10 +5388,10 @@
     },
     "assets/player_full/utahraptor_death_W_000.png": {
       "bbox": [
-        19,
-        35,
-        131,
-        108
+        22,
+        43,
+        134,
+        116
       ],
       "origin": [
         68,
@@ -5401,10 +5401,10 @@
     },
     "assets/player_full/utahraptor_death_W_001.png": {
       "bbox": [
-        14,
-        52,
-        128,
-        105
+        17,
+        60,
+        131,
+        113
       ],
       "origin": [
         68,
@@ -5414,10 +5414,10 @@
     },
     "assets/player_full/utahraptor_death_W_002.png": {
       "bbox": [
-        9,
-        38,
-        129,
-        105
+        12,
+        46,
+        132,
+        113
       ],
       "origin": [
         68,
@@ -5427,10 +5427,10 @@
     },
     "assets/player_full/utahraptor_death_W_003.png": {
       "bbox": [
-        5,
-        43,
-        132,
-        105
+        8,
+        51,
+        135,
+        113
       ],
       "origin": [
         68,
@@ -5440,10 +5440,10 @@
     },
     "assets/player_full/utahraptor_death_W_004.png": {
       "bbox": [
-        6,
-        46,
-        126,
-        98
+        9,
+        54,
+        129,
+        106
       ],
       "origin": [
         68,
@@ -5453,10 +5453,10 @@
     },
     "assets/player_full/utahraptor_death_W_005.png": {
       "bbox": [
-        7,
-        58,
-        124,
-        99
+        10,
+        66,
+        127,
+        107
       ],
       "origin": [
         68,
@@ -5479,9 +5479,9 @@
     },
     "assets/player_full/carnotaurus_idle_W_001.png": {
       "bbox": [
-        16,
+        19,
         47,
-        130,
+        133,
         96
       ],
       "origin": [
@@ -5492,10 +5492,10 @@
     },
     "assets/player_full/carnotaurus_idle_W_002.png": {
       "bbox": [
-        13,
-        49,
-        129,
-        94
+        17,
+        50,
+        133,
+        95
       ],
       "origin": [
         72,
@@ -5505,10 +5505,10 @@
     },
     "assets/player_full/carnotaurus_idle_W_003.png": {
       "bbox": [
-        13,
-        47,
-        131,
-        96
+        16,
+        48,
+        134,
+        97
       ],
       "origin": [
         72,
@@ -5518,10 +5518,10 @@
     },
     "assets/player_full/carnotaurus_hurt_W_000.png": {
       "bbox": [
-        16,
-        47,
-        128,
-        103
+        13,
+        40,
+        125,
+        96
       ],
       "origin": [
         72,
@@ -5531,10 +5531,10 @@
     },
     "assets/player_full/carnotaurus_hurt_W_001.png": {
       "bbox": [
-        11,
-        49,
-        125,
-        103
+        10,
+        45,
+        124,
+        99
       ],
       "origin": [
         72,
@@ -5544,10 +5544,10 @@
     },
     "assets/player_full/carnotaurus_walk_W_000.png": {
       "bbox": [
-        18,
-        47,
-        134,
-        103
+        19,
+        48,
+        135,
+        104
       ],
       "origin": [
         72,
@@ -5557,9 +5557,9 @@
     },
     "assets/player_full/carnotaurus_walk_W_001.png": {
       "bbox": [
-        15,
+        16,
         48,
-        134,
+        135,
         102
       ],
       "origin": [
@@ -5570,9 +5570,9 @@
     },
     "assets/player_full/carnotaurus_walk_W_002.png": {
       "bbox": [
-        17,
+        20,
         46,
-        130,
+        133,
         102
       ],
       "origin": [
@@ -5583,10 +5583,10 @@
     },
     "assets/player_full/carnotaurus_walk_W_003.png": {
       "bbox": [
-        12,
-        46,
-        129,
-        106
+        10,
+        44,
+        127,
+        104
       ],
       "origin": [
         72,
@@ -5596,9 +5596,9 @@
     },
     "assets/player_full/carnotaurus_walk_W_004.png": {
       "bbox": [
-        10,
+        8,
         49,
-        130,
+        128,
         98
       ],
       "origin": [
@@ -5609,9 +5609,9 @@
     },
     "assets/player_full/carnotaurus_walk_W_005.png": {
       "bbox": [
-        11,
+        8,
         48,
-        126,
+        123,
         101
       ],
       "origin": [
@@ -5623,9 +5623,9 @@
     "assets/player_full/carnotaurus_run_W_000.png": {
       "bbox": [
         18,
-        46,
+        45,
         134,
-        104
+        103
       ],
       "origin": [
         72,
@@ -5635,10 +5635,10 @@
     },
     "assets/player_full/carnotaurus_run_W_001.png": {
       "bbox": [
-        15,
-        53,
-        133,
-        104
+        16,
+        54,
+        134,
+        105
       ],
       "origin": [
         72,
@@ -5648,9 +5648,9 @@
     },
     "assets/player_full/carnotaurus_run_W_002.png": {
       "bbox": [
-        14,
+        17,
         55,
-        131,
+        134,
         105
       ],
       "origin": [
@@ -5661,9 +5661,9 @@
     },
     "assets/player_full/carnotaurus_run_W_003.png": {
       "bbox": [
-        10,
+        16,
         46,
-        130,
+        136,
         103
       ],
       "origin": [
@@ -5675,9 +5675,9 @@
     "assets/player_full/carnotaurus_run_W_004.png": {
       "bbox": [
         12,
-        53,
+        55,
         127,
-        102
+        104
       ],
       "origin": [
         72,
@@ -5687,10 +5687,10 @@
     },
     "assets/player_full/carnotaurus_run_W_005.png": {
       "bbox": [
-        10,
-        51,
-        127,
-        105
+        9,
+        50,
+        126,
+        104
       ],
       "origin": [
         72,
@@ -5700,10 +5700,10 @@
     },
     "assets/player_full/carnotaurus_attack_W_000.png": {
       "bbox": [
-        18,
-        47,
-        133,
-        95
+        19,
+        48,
+        134,
+        96
       ],
       "origin": [
         72,
@@ -5726,10 +5726,10 @@
     },
     "assets/player_full/carnotaurus_attack_W_002.png": {
       "bbox": [
-        15,
-        48,
-        129,
-        103
+        17,
+        49,
+        131,
+        104
       ],
       "origin": [
         72,
@@ -5739,10 +5739,10 @@
     },
     "assets/player_full/carnotaurus_attack_W_003.png": {
       "bbox": [
-        9,
-        52,
-        128,
-        97
+        14,
+        50,
+        133,
+        95
       ],
       "origin": [
         72,
@@ -5752,10 +5752,10 @@
     },
     "assets/player_full/carnotaurus_attack_W_004.png": {
       "bbox": [
-        9,
-        47,
-        129,
-        96
+        6,
+        43,
+        126,
+        92
       ],
       "origin": [
         72,
@@ -5765,10 +5765,10 @@
     },
     "assets/player_full/carnotaurus_attack_W_005.png": {
       "bbox": [
-        11,
-        47,
-        127,
-        96
+        9,
+        48,
+        125,
+        97
       ],
       "origin": [
         72,
@@ -5778,10 +5778,10 @@
     },
     "assets/player_full/carnotaurus_death_W_000.png": {
       "bbox": [
-        18,
-        43,
-        131,
-        98
+        16,
+        49,
+        129,
+        104
       ],
       "origin": [
         72,
@@ -5791,10 +5791,10 @@
     },
     "assets/player_full/carnotaurus_death_W_001.png": {
       "bbox": [
-        15,
-        47,
-        132,
-        99
+        19,
+        49,
+        136,
+        101
       ],
       "origin": [
         72,
@@ -5804,10 +5804,10 @@
     },
     "assets/player_full/carnotaurus_death_W_002.png": {
       "bbox": [
-        14,
-        37,
-        130,
-        97
+        16,
+        36,
+        132,
+        96
       ],
       "origin": [
         72,
@@ -5817,10 +5817,10 @@
     },
     "assets/player_full/carnotaurus_death_W_003.png": {
       "bbox": [
-        12,
-        39,
-        128,
-        104
+        13,
+        36,
+        129,
+        101
       ],
       "origin": [
         72,
@@ -5830,10 +5830,10 @@
     },
     "assets/player_full/carnotaurus_death_W_004.png": {
       "bbox": [
-        8,
-        35,
-        126,
-        105
+        12,
+        31,
+        130,
+        101
       ],
       "origin": [
         72,
@@ -5843,10 +5843,10 @@
     },
     "assets/player_full/carnotaurus_death_W_005.png": {
       "bbox": [
-        7,
-        35,
-        125,
-        102
+        15,
+        34,
+        133,
+        101
       ],
       "origin": [
         72,
@@ -5908,10 +5908,10 @@
     },
     "assets/player_full/ankylosaurus_hurt_W_000.png": {
       "bbox": [
-        18,
-        48,
-        116,
-        98
+        24,
+        49,
+        122,
+        99
       ],
       "origin": [
         72,
@@ -5921,10 +5921,10 @@
     },
     "assets/player_full/ankylosaurus_hurt_W_001.png": {
       "bbox": [
-        15,
-        47,
-        116,
-        98
+        21,
+        48,
+        122,
+        99
       ],
       "origin": [
         72,
@@ -6168,10 +6168,10 @@
     },
     "assets/player_full/ankylosaurus_death_W_000.png": {
       "bbox": [
-        19,
-        42,
-        120,
-        87
+        22,
+        49,
+        123,
+        94
       ],
       "origin": [
         72,
@@ -6181,10 +6181,10 @@
     },
     "assets/player_full/ankylosaurus_death_W_001.png": {
       "bbox": [
-        17,
-        39,
-        119,
-        91
+        20,
+        46,
+        122,
+        98
       ],
       "origin": [
         72,
@@ -6194,10 +6194,10 @@
     },
     "assets/player_full/ankylosaurus_death_W_002.png": {
       "bbox": [
-        16,
-        39,
-        121,
-        96
+        19,
+        46,
+        124,
+        103
       ],
       "origin": [
         72,
@@ -6207,10 +6207,10 @@
     },
     "assets/player_full/ankylosaurus_death_W_003.png": {
       "bbox": [
-        15,
-        38,
-        119,
-        91
+        18,
+        45,
+        122,
+        98
       ],
       "origin": [
         72,
@@ -6220,10 +6220,10 @@
     },
     "assets/player_full/ankylosaurus_death_W_004.png": {
       "bbox": [
-        17,
-        35,
-        121,
-        97
+        20,
+        42,
+        124,
+        104
       ],
       "origin": [
         72,
@@ -6233,10 +6233,10 @@
     },
     "assets/player_full/ankylosaurus_death_W_005.png": {
       "bbox": [
-        15,
-        37,
-        118,
-        92
+        18,
+        44,
+        121,
+        99
       ],
       "origin": [
         72,
@@ -6714,10 +6714,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_E_000.png": {
       "bbox": [
-        19,
-        40,
-        126,
-        87
+        16,
+        52,
+        123,
+        99
       ],
       "origin": [
         72,
@@ -6727,10 +6727,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_E_001.png": {
       "bbox": [
-        17,
-        40,
-        125,
-        86
+        14,
+        52,
+        122,
+        98
       ],
       "origin": [
         72,
@@ -6740,10 +6740,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_E_002.png": {
       "bbox": [
-        16,
-        41,
-        127,
-        91
+        13,
+        53,
+        124,
+        103
       ],
       "origin": [
         72,
@@ -6753,10 +6753,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_E_003.png": {
       "bbox": [
-        15,
-        39,
-        127,
-        95
+        12,
+        51,
+        124,
+        107
       ],
       "origin": [
         72,
@@ -6766,10 +6766,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_E_004.png": {
       "bbox": [
-        16,
-        37,
-        123,
-        88
+        13,
+        49,
+        120,
+        100
       ],
       "origin": [
         72,
@@ -6779,10 +6779,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_E_005.png": {
       "bbox": [
-        15,
-        39,
-        123,
-        86
+        12,
+        51,
+        120,
+        98
       ],
       "origin": [
         72,
@@ -6792,10 +6792,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_E_000.png": {
       "bbox": [
-        19,
-        32,
-        128,
-        81
+        17,
+        52,
+        126,
+        101
       ],
       "origin": [
         72,
@@ -6805,10 +6805,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_E_001.png": {
       "bbox": [
-        12,
-        30,
-        126,
-        81
+        10,
+        50,
+        124,
+        101
       ],
       "origin": [
         72,
@@ -6818,10 +6818,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_E_002.png": {
       "bbox": [
-        9,
-        30,
-        130,
-        78
+        7,
+        50,
+        128,
+        98
       ],
       "origin": [
         72,
@@ -6831,10 +6831,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_E_003.png": {
       "bbox": [
-        11,
-        30,
-        130,
-        86
+        9,
+        50,
+        128,
+        106
       ],
       "origin": [
         72,
@@ -6844,10 +6844,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_E_004.png": {
       "bbox": [
-        17,
-        28,
-        125,
-        86
+        15,
+        48,
+        123,
+        106
       ],
       "origin": [
         72,
@@ -6857,10 +6857,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_E_005.png": {
       "bbox": [
-        14,
-        27,
-        126,
-        77
+        12,
+        47,
+        124,
+        97
       ],
       "origin": [
         72,
@@ -6870,10 +6870,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_E_000.png": {
       "bbox": [
-        20,
-        24,
-        124,
-        73
+        15,
+        51,
+        119,
+        100
       ],
       "origin": [
         72,
@@ -6883,10 +6883,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_E_001.png": {
       "bbox": [
-        16,
-        25,
-        124,
-        74
+        11,
+        52,
+        119,
+        101
       ],
       "origin": [
         72,
@@ -6896,10 +6896,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_E_002.png": {
       "bbox": [
-        16,
-        23,
-        130,
-        72
+        11,
+        50,
+        125,
+        99
       ],
       "origin": [
         72,
@@ -6909,10 +6909,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_E_003.png": {
       "bbox": [
-        15,
-        22,
-        128,
-        73
+        10,
+        49,
+        123,
+        100
       ],
       "origin": [
         72,
@@ -6922,10 +6922,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_E_004.png": {
       "bbox": [
-        12,
-        23,
-        122,
-        73
+        7,
+        50,
+        117,
+        100
       ],
       "origin": [
         72,
@@ -6935,10 +6935,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_E_005.png": {
       "bbox": [
-        17,
-        22,
-        121,
-        73
+        12,
+        49,
+        116,
+        100
       ],
       "origin": [
         72,
@@ -7078,10 +7078,10 @@
     },
     "assets/player_full/pachycephalosaurus_hurt_N_000.png": {
       "bbox": [
-        51,
-        27,
-        90,
-        112
+        64,
+        24,
+        103,
+        109
       ],
       "origin": [
         72,
@@ -7091,10 +7091,10 @@
     },
     "assets/player_full/pachycephalosaurus_hurt_N_001.png": {
       "bbox": [
-        40,
-        26,
-        81,
-        112
+        53,
+        23,
+        94,
+        109
       ],
       "origin": [
         72,
@@ -7104,10 +7104,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_N_000.png": {
       "bbox": [
-        60,
-        16,
-        102,
-        106
+        63,
+        23,
+        105,
+        113
       ],
       "origin": [
         72,
@@ -7117,10 +7117,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_N_001.png": {
       "bbox": [
-        54,
-        16,
-        95,
-        106
+        57,
+        23,
+        98,
+        113
       ],
       "origin": [
         72,
@@ -7130,10 +7130,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_N_002.png": {
       "bbox": [
-        52,
-        18,
-        93,
-        106
+        55,
+        25,
+        96,
+        113
       ],
       "origin": [
         72,
@@ -7143,10 +7143,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_N_003.png": {
       "bbox": [
-        47,
-        16,
-        88,
-        107
+        50,
+        23,
+        91,
+        114
       ],
       "origin": [
         72,
@@ -7156,10 +7156,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_N_004.png": {
       "bbox": [
-        47,
-        16,
-        90,
-        106
+        50,
+        23,
+        93,
+        113
       ],
       "origin": [
         72,
@@ -7169,10 +7169,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_N_005.png": {
       "bbox": [
-        41,
-        16,
-        82,
-        106
+        44,
+        23,
+        85,
+        113
       ],
       "origin": [
         72,
@@ -7182,10 +7182,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_N_000.png": {
       "bbox": [
-        59,
-        11,
-        102,
-        101
+        63,
+        23,
+        106,
+        113
       ],
       "origin": [
         72,
@@ -7195,10 +7195,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_N_001.png": {
       "bbox": [
-        51,
-        9,
-        98,
-        101
+        55,
+        21,
+        102,
+        113
       ],
       "origin": [
         72,
@@ -7208,10 +7208,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_N_002.png": {
       "bbox": [
-        49,
-        7,
-        95,
-        100
+        53,
+        19,
+        99,
+        112
       ],
       "origin": [
         72,
@@ -7221,10 +7221,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_N_003.png": {
       "bbox": [
-        48,
-        8,
-        91,
-        100
+        52,
+        20,
+        95,
+        112
       ],
       "origin": [
         72,
@@ -7234,10 +7234,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_N_004.png": {
       "bbox": [
-        47,
-        9,
-        90,
-        101
+        51,
+        21,
+        94,
+        113
       ],
       "origin": [
         72,
@@ -7247,10 +7247,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_N_005.png": {
       "bbox": [
-        41,
-        9,
-        84,
-        101
+        45,
+        21,
+        88,
+        113
       ],
       "origin": [
         72,
@@ -7260,10 +7260,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_N_000.png": {
       "bbox": [
-        58,
-        4,
-        102,
-        97
+        61,
+        21,
+        105,
+        114
       ],
       "origin": [
         72,
@@ -7273,10 +7273,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_N_001.png": {
       "bbox": [
-        53,
-        4,
-        96,
-        97
+        56,
+        21,
+        99,
+        114
       ],
       "origin": [
         72,
@@ -7286,10 +7286,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_N_002.png": {
       "bbox": [
-        52,
-        5,
-        93,
-        97
+        55,
+        22,
+        96,
+        114
       ],
       "origin": [
         72,
@@ -7299,10 +7299,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_N_003.png": {
       "bbox": [
-        47,
-        5,
-        88,
-        97
+        50,
+        22,
+        91,
+        114
       ],
       "origin": [
         72,
@@ -7312,10 +7312,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_N_004.png": {
       "bbox": [
-        47,
-        3,
-        91,
-        97
+        50,
+        20,
+        94,
+        114
       ],
       "origin": [
         72,
@@ -7325,10 +7325,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_N_005.png": {
       "bbox": [
-        41,
-        3,
-        85,
-        95
+        44,
+        20,
+        88,
+        112
       ],
       "origin": [
         72,
@@ -7338,10 +7338,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_N_000.png": {
       "bbox": [
-        59,
-        2,
-        103,
-        95
+        63,
+        22,
+        107,
+        115
       ],
       "origin": [
         72,
@@ -7351,10 +7351,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_N_001.png": {
       "bbox": [
-        49,
-        8,
-        95,
-        94
+        53,
+        28,
+        99,
+        114
       ],
       "origin": [
         72,
@@ -7364,10 +7364,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_N_002.png": {
       "bbox": [
-        49,
-        16,
-        104,
-        101
+        53,
+        36,
+        108,
+        121
       ],
       "origin": [
         72,
@@ -7377,10 +7377,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_N_003.png": {
       "bbox": [
-        47,
-        12,
-        105,
-        95
+        51,
+        32,
+        109,
+        115
       ],
       "origin": [
         72,
@@ -7390,10 +7390,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_N_004.png": {
       "bbox": [
-        42,
-        7,
-        104,
-        89
+        46,
+        27,
+        108,
+        109
       ],
       "origin": [
         72,
@@ -7403,10 +7403,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_N_005.png": {
       "bbox": [
-        37,
-        2,
-        94,
-        96
+        41,
+        22,
+        98,
+        116
       ],
       "origin": [
         72,
@@ -7494,10 +7494,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_W_000.png": {
       "bbox": [
-        24,
-        32,
-        138,
-        88
+        22,
+        42,
+        136,
+        98
       ],
       "origin": [
         72,
@@ -7507,10 +7507,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_W_001.png": {
       "bbox": [
-        22,
-        32,
-        138,
-        85
+        20,
+        42,
+        136,
+        95
       ],
       "origin": [
         72,
@@ -7520,10 +7520,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_W_002.png": {
       "bbox": [
-        21,
-        32,
-        136,
-        88
+        19,
+        42,
+        134,
+        98
       ],
       "origin": [
         72,
@@ -7533,10 +7533,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_W_003.png": {
       "bbox": [
-        18,
-        34,
-        136,
-        90
+        16,
+        44,
+        134,
+        100
       ],
       "origin": [
         72,
@@ -7546,10 +7546,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_W_004.png": {
       "bbox": [
-        19,
-        32,
-        135,
-        90
+        17,
+        42,
+        133,
+        100
       ],
       "origin": [
         72,
@@ -7559,10 +7559,10 @@
     },
     "assets/player_full/pachycephalosaurus_walk_W_005.png": {
       "bbox": [
-        22,
-        33,
-        132,
-        86
+        20,
+        43,
+        130,
+        96
       ],
       "origin": [
         72,
@@ -7572,10 +7572,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_W_000.png": {
       "bbox": [
-        21,
         25,
-        138,
-        81
+        41,
+        142,
+        97
       ],
       "origin": [
         72,
@@ -7585,10 +7585,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_W_001.png": {
       "bbox": [
-        21,
-        26,
-        135,
-        83
+        25,
+        42,
+        139,
+        99
       ],
       "origin": [
         72,
@@ -7598,10 +7598,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_W_002.png": {
       "bbox": [
-        16,
-        32,
-        138,
-        78
+        20,
+        48,
+        142,
+        94
       ],
       "origin": [
         72,
@@ -7611,10 +7611,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_W_003.png": {
       "bbox": [
-        21,
-        26,
-        137,
-        82
+        25,
+        42,
+        141,
+        98
       ],
       "origin": [
         72,
@@ -7624,10 +7624,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_W_004.png": {
       "bbox": [
-        18,
-        23,
-        132,
-        81
+        22,
+        39,
+        136,
+        97
       ],
       "origin": [
         72,
@@ -7637,10 +7637,10 @@
     },
     "assets/player_full/pachycephalosaurus_run_W_005.png": {
       "bbox": [
-        16,
-        30,
-        129,
-        78
+        20,
+        46,
+        133,
+        94
       ],
       "origin": [
         72,
@@ -7650,10 +7650,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_W_000.png": {
       "bbox": [
-        23,
-        21,
-        136,
-        74
+        26,
+        41,
+        139,
+        94
       ],
       "origin": [
         72,
@@ -7663,10 +7663,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_W_001.png": {
       "bbox": [
-        20,
-        22,
-        139,
-        74
+        23,
+        42,
+        142,
+        94
       ],
       "origin": [
         72,
@@ -7676,10 +7676,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_W_002.png": {
       "bbox": [
-        21,
-        21,
-        139,
-        67
+        24,
+        41,
+        142,
+        87
       ],
       "origin": [
         72,
@@ -7689,10 +7689,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_W_003.png": {
       "bbox": [
-        21,
-        21,
-        139,
-        73
+        24,
+        41,
+        142,
+        93
       ],
       "origin": [
         72,
@@ -7702,10 +7702,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_W_004.png": {
       "bbox": [
-        25,
-        20,
-        134,
-        73
+        28,
+        40,
+        137,
+        93
       ],
       "origin": [
         72,
@@ -7715,10 +7715,10 @@
     },
     "assets/player_full/pachycephalosaurus_attack_W_005.png": {
       "bbox": [
-        16,
-        21,
-        128,
-        73
+        19,
+        41,
+        131,
+        93
       ],
       "origin": [
         72,
@@ -7728,10 +7728,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_W_000.png": {
       "bbox": [
-        20,
-        11,
-        135,
-        72
+        23,
+        35,
+        138,
+        96
       ],
       "origin": [
         72,
@@ -7741,10 +7741,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_W_001.png": {
       "bbox": [
-        17,
-        15,
-        134,
-        73
+        20,
+        39,
+        137,
+        97
       ],
       "origin": [
         72,
@@ -7754,10 +7754,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_W_002.png": {
       "bbox": [
-        22,
-        17,
-        129,
-        73
+        25,
+        41,
+        132,
+        97
       ],
       "origin": [
         72,
@@ -7767,10 +7767,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_W_003.png": {
       "bbox": [
-        21,
-        11,
-        132,
-        71
+        24,
+        35,
+        135,
+        95
       ],
       "origin": [
         72,
@@ -7780,10 +7780,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_W_004.png": {
       "bbox": [
-        23,
-        16,
-        131,
-        70
+        26,
+        40,
+        134,
+        94
       ],
       "origin": [
         72,
@@ -7793,10 +7793,10 @@
     },
     "assets/player_full/pachycephalosaurus_death_W_005.png": {
       "bbox": [
-        21,
-        23,
-        121,
-        78
+        24,
+        47,
+        124,
+        102
       ],
       "origin": [
         72,
@@ -8119,9 +8119,9 @@
     "assets/player_full/gallimimus_death_S_000.png": {
       "bbox": [
         53,
-        16,
+        22,
         89,
-        111
+        117
       ],
       "origin": [
         72,
@@ -8132,9 +8132,9 @@
     "assets/player_full/gallimimus_death_S_001.png": {
       "bbox": [
         54,
-        17,
+        23,
         92,
-        110
+        116
       ],
       "origin": [
         72,
@@ -8145,9 +8145,9 @@
     "assets/player_full/gallimimus_death_S_002.png": {
       "bbox": [
         43,
-        25,
+        31,
         101,
-        108
+        114
       ],
       "origin": [
         72,
@@ -8158,9 +8158,9 @@
     "assets/player_full/gallimimus_death_S_003.png": {
       "bbox": [
         40,
-        33,
+        39,
         116,
-        110
+        116
       ],
       "origin": [
         72,
@@ -8171,9 +8171,9 @@
     "assets/player_full/gallimimus_death_S_004.png": {
       "bbox": [
         37,
-        22,
+        28,
         117,
-        101
+        107
       ],
       "origin": [
         72,
@@ -8184,9 +8184,9 @@
     "assets/player_full/gallimimus_death_S_005.png": {
       "bbox": [
         17,
-        37,
+        43,
         120,
-        98
+        104
       ],
       "origin": [
         72,
@@ -8274,10 +8274,10 @@
     },
     "assets/player_full/gallimimus_walk_E_000.png": {
       "bbox": [
-        14,
-        40,
-        132,
-        87
+        13,
+        49,
+        131,
+        96
       ],
       "origin": [
         72,
@@ -8287,10 +8287,10 @@
     },
     "assets/player_full/gallimimus_walk_E_001.png": {
       "bbox": [
-        12,
-        40,
-        132,
-        88
+        11,
+        49,
+        131,
+        97
       ],
       "origin": [
         72,
@@ -8300,10 +8300,10 @@
     },
     "assets/player_full/gallimimus_walk_E_002.png": {
       "bbox": [
-        12,
-        40,
-        132,
-        89
+        11,
+        49,
+        131,
+        98
       ],
       "origin": [
         72,
@@ -8313,10 +8313,10 @@
     },
     "assets/player_full/gallimimus_walk_E_003.png": {
       "bbox": [
-        12,
-        40,
-        130,
-        87
+        11,
+        49,
+        129,
+        96
       ],
       "origin": [
         72,
@@ -8326,10 +8326,10 @@
     },
     "assets/player_full/gallimimus_walk_E_004.png": {
       "bbox": [
-        13,
-        40,
-        133,
-        89
+        12,
+        49,
+        132,
+        98
       ],
       "origin": [
         72,
@@ -8339,10 +8339,10 @@
     },
     "assets/player_full/gallimimus_walk_E_005.png": {
       "bbox": [
-        12,
-        40,
-        132,
-        87
+        11,
+        49,
+        131,
+        96
       ],
       "origin": [
         72,
@@ -8353,9 +8353,9 @@
     "assets/player_full/gallimimus_run_E_000.png": {
       "bbox": [
         14,
-        33,
+        49,
         132,
-        83
+        99
       ],
       "origin": [
         72,
@@ -8366,9 +8366,9 @@
     "assets/player_full/gallimimus_run_E_001.png": {
       "bbox": [
         11,
-        32,
+        48,
         133,
-        83
+        99
       ],
       "origin": [
         72,
@@ -8379,9 +8379,9 @@
     "assets/player_full/gallimimus_run_E_002.png": {
       "bbox": [
         12,
-        33,
+        49,
         134,
-        82
+        98
       ],
       "origin": [
         72,
@@ -8392,9 +8392,9 @@
     "assets/player_full/gallimimus_run_E_003.png": {
       "bbox": [
         13,
-        33,
+        49,
         132,
-        84
+        100
       ],
       "origin": [
         72,
@@ -8405,9 +8405,9 @@
     "assets/player_full/gallimimus_run_E_004.png": {
       "bbox": [
         12,
-        33,
+        49,
         134,
-        82
+        98
       ],
       "origin": [
         72,
@@ -8418,9 +8418,9 @@
     "assets/player_full/gallimimus_run_E_005.png": {
       "bbox": [
         13,
-        33,
+        49,
         131,
-        82
+        98
       ],
       "origin": [
         72,
@@ -8430,10 +8430,10 @@
     },
     "assets/player_full/gallimimus_attack_E_000.png": {
       "bbox": [
-        14,
-        29,
-        130,
-        78
+        13,
+        48,
+        129,
+        97
       ],
       "origin": [
         72,
@@ -8443,10 +8443,10 @@
     },
     "assets/player_full/gallimimus_attack_E_001.png": {
       "bbox": [
-        11,
-        29,
-        127,
-        79
+        10,
+        48,
+        126,
+        98
       ],
       "origin": [
         72,
@@ -8456,10 +8456,10 @@
     },
     "assets/player_full/gallimimus_attack_E_002.png": {
       "bbox": [
-        12,
-        29,
-        140,
-        77
+        11,
+        48,
+        139,
+        96
       ],
       "origin": [
         72,
@@ -8469,10 +8469,10 @@
     },
     "assets/player_full/gallimimus_attack_E_003.png": {
       "bbox": [
-        18,
-        29,
-        133,
-        79
+        17,
+        48,
+        132,
+        98
       ],
       "origin": [
         72,
@@ -8482,10 +8482,10 @@
     },
     "assets/player_full/gallimimus_attack_E_004.png": {
       "bbox": [
-        13,
-        29,
-        133,
-        79
+        12,
+        48,
+        132,
+        98
       ],
       "origin": [
         72,
@@ -8495,10 +8495,10 @@
     },
     "assets/player_full/gallimimus_attack_E_005.png": {
       "bbox": [
-        12,
-        29,
-        131,
-        79
+        11,
+        48,
+        130,
+        98
       ],
       "origin": [
         72,
@@ -8509,9 +8509,9 @@
     "assets/player_full/gallimimus_death_E_000.png": {
       "bbox": [
         14,
-        25,
+        49,
         132,
-        74
+        98
       ],
       "origin": [
         72,
@@ -8522,9 +8522,9 @@
     "assets/player_full/gallimimus_death_E_001.png": {
       "bbox": [
         13,
-        25,
+        49,
         133,
-        76
+        100
       ],
       "origin": [
         72,
@@ -8535,9 +8535,9 @@
     "assets/player_full/gallimimus_death_E_002.png": {
       "bbox": [
         15,
-        27,
+        51,
         131,
-        77
+        101
       ],
       "origin": [
         72,
@@ -8548,9 +8548,9 @@
     "assets/player_full/gallimimus_death_E_003.png": {
       "bbox": [
         17,
-        27,
+        51,
         132,
-        83
+        107
       ],
       "origin": [
         72,
@@ -8561,9 +8561,9 @@
     "assets/player_full/gallimimus_death_E_004.png": {
       "bbox": [
         20,
-        17,
+        41,
         132,
-        82
+        106
       ],
       "origin": [
         72,
@@ -8574,9 +8574,9 @@
     "assets/player_full/gallimimus_death_E_005.png": {
       "bbox": [
         13,
-        30,
+        54,
         131,
-        76
+        100
       ],
       "origin": [
         72,
@@ -8743,9 +8743,9 @@
     "assets/player_full/gallimimus_run_N_000.png": {
       "bbox": [
         54,
-        13,
+        22,
         91,
-        105
+        114
       ],
       "origin": [
         72,
@@ -8756,9 +8756,9 @@
     "assets/player_full/gallimimus_run_N_001.png": {
       "bbox": [
         55,
-        13,
+        22,
         92,
-        106
+        115
       ],
       "origin": [
         72,
@@ -8769,9 +8769,9 @@
     "assets/player_full/gallimimus_run_N_002.png": {
       "bbox": [
         53,
-        13,
+        22,
         90,
-        105
+        114
       ],
       "origin": [
         72,
@@ -8782,9 +8782,9 @@
     "assets/player_full/gallimimus_run_N_003.png": {
       "bbox": [
         51,
-        12,
+        21,
         88,
-        105
+        114
       ],
       "origin": [
         72,
@@ -8795,9 +8795,9 @@
     "assets/player_full/gallimimus_run_N_004.png": {
       "bbox": [
         52,
-        13,
+        22,
         89,
-        107
+        116
       ],
       "origin": [
         72,
@@ -8808,9 +8808,9 @@
     "assets/player_full/gallimimus_run_N_005.png": {
       "bbox": [
         52,
-        13,
+        22,
         89,
-        106
+        115
       ],
       "origin": [
         72,
@@ -8820,10 +8820,10 @@
     },
     "assets/player_full/gallimimus_attack_N_000.png": {
       "bbox": [
-        53,
-        9,
-        90,
-        102
+        54,
+        20,
+        91,
+        113
       ],
       "origin": [
         72,
@@ -8833,10 +8833,10 @@
     },
     "assets/player_full/gallimimus_attack_N_001.png": {
       "bbox": [
-        53,
-        9,
-        90,
-        102
+        54,
+        20,
+        91,
+        113
       ],
       "origin": [
         72,
@@ -8846,10 +8846,10 @@
     },
     "assets/player_full/gallimimus_attack_N_002.png": {
       "bbox": [
-        53,
-        9,
-        90,
-        103
+        54,
+        20,
+        91,
+        114
       ],
       "origin": [
         72,
@@ -8859,10 +8859,10 @@
     },
     "assets/player_full/gallimimus_attack_N_003.png": {
       "bbox": [
-        52,
-        9,
-        89,
-        102
+        53,
+        20,
+        90,
+        113
       ],
       "origin": [
         72,
@@ -8872,10 +8872,10 @@
     },
     "assets/player_full/gallimimus_attack_N_004.png": {
       "bbox": [
-        53,
-        10,
-        90,
-        103
+        54,
+        21,
+        91,
+        114
       ],
       "origin": [
         72,
@@ -8885,10 +8885,10 @@
     },
     "assets/player_full/gallimimus_attack_N_005.png": {
       "bbox": [
-        52,
-        9,
-        89,
-        102
+        53,
+        20,
+        90,
+        113
       ],
       "origin": [
         72,
@@ -8898,10 +8898,10 @@
     },
     "assets/player_full/gallimimus_death_N_000.png": {
       "bbox": [
-        53,
-        4,
-        92,
-        103
+        54,
+        21,
+        93,
+        120
       ],
       "origin": [
         72,
@@ -8911,10 +8911,10 @@
     },
     "assets/player_full/gallimimus_death_N_001.png": {
       "bbox": [
-        55,
-        8,
-        94,
-        108
+        56,
+        25,
+        95,
+        125
       ],
       "origin": [
         72,
@@ -8924,10 +8924,10 @@
     },
     "assets/player_full/gallimimus_death_N_002.png": {
       "bbox": [
-        49,
-        14,
-        104,
-        101
+        50,
+        31,
+        105,
+        118
       ],
       "origin": [
         72,
@@ -8937,10 +8937,10 @@
     },
     "assets/player_full/gallimimus_death_N_003.png": {
       "bbox": [
-        38,
-        11,
-        111,
-        92
+        39,
+        28,
+        112,
+        109
       ],
       "origin": [
         72,
@@ -8950,10 +8950,10 @@
     },
     "assets/player_full/gallimimus_death_N_004.png": {
       "bbox": [
-        36,
-        12,
-        110,
-        96
+        37,
+        29,
+        111,
+        113
       ],
       "origin": [
         72,
@@ -8963,10 +8963,10 @@
     },
     "assets/player_full/gallimimus_death_N_005.png": {
       "bbox": [
-        17,
-        25,
-        122,
-        81
+        18,
+        42,
+        123,
+        98
       ],
       "origin": [
         72,
@@ -8976,9 +8976,9 @@
     },
     "assets/player_full/gallimimus_idle_W_000.png": {
       "bbox": [
-        26,
+        23,
         53,
-        137,
+        134,
         92
       ],
       "origin": [
@@ -8989,9 +8989,9 @@
     },
     "assets/player_full/gallimimus_idle_W_001.png": {
       "bbox": [
-        22,
+        19,
         52,
-        134,
+        131,
         92
       ],
       "origin": [
@@ -9002,9 +9002,9 @@
     },
     "assets/player_full/gallimimus_idle_W_002.png": {
       "bbox": [
-        16,
+        13,
         52,
-        131,
+        128,
         92
       ],
       "origin": [
@@ -9015,9 +9015,9 @@
     },
     "assets/player_full/gallimimus_idle_W_003.png": {
       "bbox": [
-        11,
+        8,
         53,
-        135,
+        132,
         92
       ],
       "origin": [
@@ -9028,10 +9028,10 @@
     },
     "assets/player_full/gallimimus_hurt_W_000.png": {
       "bbox": [
-        15,
-        52,
-        135,
-        105
+        21,
+        53,
+        141,
+        106
       ],
       "origin": [
         72,
@@ -9041,10 +9041,10 @@
     },
     "assets/player_full/gallimimus_hurt_W_001.png": {
       "bbox": [
-        18,
-        50,
-        131,
-        113
+        24,
+        51,
+        137,
+        114
       ],
       "origin": [
         72,
@@ -9054,10 +9054,10 @@
     },
     "assets/player_full/gallimimus_walk_W_000.png": {
       "bbox": [
-        21,
-        48,
-        141,
-        95
+        19,
+        54,
+        139,
+        101
       ],
       "origin": [
         72,
@@ -9067,10 +9067,10 @@
     },
     "assets/player_full/gallimimus_walk_W_001.png": {
       "bbox": [
-        19,
-        46,
-        136,
-        100
+        17,
+        52,
+        134,
+        106
       ],
       "origin": [
         72,
@@ -9080,10 +9080,10 @@
     },
     "assets/player_full/gallimimus_walk_W_002.png": {
       "bbox": [
-        16,
-        50,
-        134,
-        100
+        14,
+        56,
+        132,
+        106
       ],
       "origin": [
         72,
@@ -9093,10 +9093,10 @@
     },
     "assets/player_full/gallimimus_walk_W_003.png": {
       "bbox": [
-        11,
-        47,
-        132,
-        96
+        9,
+        53,
+        130,
+        102
       ],
       "origin": [
         72,
@@ -9106,10 +9106,10 @@
     },
     "assets/player_full/gallimimus_walk_W_004.png": {
       "bbox": [
-        14,
-        49,
-        131,
-        100
+        12,
+        55,
+        129,
+        106
       ],
       "origin": [
         72,
@@ -9119,10 +9119,10 @@
     },
     "assets/player_full/gallimimus_walk_W_005.png": {
       "bbox": [
-        8,
-        44,
-        131,
-        97
+        6,
+        50,
+        129,
+        103
       ],
       "origin": [
         72,
@@ -9132,10 +9132,10 @@
     },
     "assets/player_full/gallimimus_run_W_000.png": {
       "bbox": [
-        20,
-        41,
-        141,
-        91
+        18,
+        55,
+        139,
+        105
       ],
       "origin": [
         72,
@@ -9145,10 +9145,10 @@
     },
     "assets/player_full/gallimimus_run_W_001.png": {
       "bbox": [
-        19,
-        41,
-        137,
-        91
+        17,
+        55,
+        135,
+        105
       ],
       "origin": [
         72,
@@ -9158,10 +9158,10 @@
     },
     "assets/player_full/gallimimus_run_W_002.png": {
       "bbox": [
-        16,
-        40,
-        134,
-        91
+        14,
+        54,
+        132,
+        105
       ],
       "origin": [
         72,
@@ -9171,10 +9171,10 @@
     },
     "assets/player_full/gallimimus_run_W_003.png": {
       "bbox": [
-        11,
-        41,
-        131,
-        91
+        9,
+        55,
+        129,
+        105
       ],
       "origin": [
         72,
@@ -9184,10 +9184,10 @@
     },
     "assets/player_full/gallimimus_run_W_004.png": {
       "bbox": [
-        11,
-        40,
-        131,
-        90
+        9,
+        54,
+        129,
+        104
       ],
       "origin": [
         72,
@@ -9197,10 +9197,10 @@
     },
     "assets/player_full/gallimimus_run_W_005.png": {
       "bbox": [
-        9,
-        38,
-        131,
-        85
+        7,
+        52,
+        129,
+        99
       ],
       "origin": [
         72,
@@ -9210,10 +9210,10 @@
     },
     "assets/player_full/gallimimus_attack_W_000.png": {
       "bbox": [
-        33,
-        34,
-        141,
-        83
+        30,
+        55,
+        138,
+        104
       ],
       "origin": [
         72,
@@ -9223,10 +9223,10 @@
     },
     "assets/player_full/gallimimus_attack_W_001.png": {
       "bbox": [
-        23,
-        34,
-        137,
-        83
+        20,
+        55,
+        134,
+        104
       ],
       "origin": [
         72,
@@ -9236,10 +9236,10 @@
     },
     "assets/player_full/gallimimus_attack_W_002.png": {
       "bbox": [
-        16,
-        31,
-        132,
-        83
+        13,
+        52,
+        129,
+        104
       ],
       "origin": [
         72,
@@ -9249,10 +9249,10 @@
     },
     "assets/player_full/gallimimus_attack_W_003.png": {
       "bbox": [
-        11,
-        32,
-        132,
-        82
+        8,
+        53,
+        129,
+        103
       ],
       "origin": [
         72,
@@ -9262,10 +9262,10 @@
     },
     "assets/player_full/gallimimus_attack_W_004.png": {
       "bbox": [
-        11,
-        33,
-        131,
-        86
+        8,
+        54,
+        128,
+        107
       ],
       "origin": [
         72,
@@ -9275,10 +9275,10 @@
     },
     "assets/player_full/gallimimus_attack_W_005.png": {
       "bbox": [
-        10,
-        31,
-        129,
-        79
+        7,
+        52,
+        126,
+        100
       ],
       "origin": [
         72,
@@ -9288,10 +9288,10 @@
     },
     "assets/player_full/gallimimus_death_W_000.png": {
       "bbox": [
-        21,
-        25,
-        139,
-        80
+        15,
+        45,
+        133,
+        100
       ],
       "origin": [
         72,
@@ -9301,10 +9301,10 @@
     },
     "assets/player_full/gallimimus_death_W_001.png": {
       "bbox": [
-        27,
-        28,
-        141,
-        77
+        21,
+        48,
+        135,
+        97
       ],
       "origin": [
         72,
@@ -9314,10 +9314,10 @@
     },
     "assets/player_full/gallimimus_death_W_002.png": {
       "bbox": [
-        26,
-        28,
-        134,
-        80
+        20,
+        48,
+        128,
+        100
       ],
       "origin": [
         72,
@@ -9327,10 +9327,10 @@
     },
     "assets/player_full/gallimimus_death_W_003.png": {
       "bbox": [
-        11,
-        30,
-        130,
-        80
+        5,
+        50,
+        124,
+        100
       ],
       "origin": [
         72,
@@ -9340,10 +9340,10 @@
     },
     "assets/player_full/gallimimus_death_W_004.png": {
       "bbox": [
-        11,
-        28,
-        128,
-        75
+        5,
+        48,
+        122,
+        95
       ],
       "origin": [
         72,
@@ -9353,10 +9353,10 @@
     },
     "assets/player_full/gallimimus_death_W_005.png": {
       "bbox": [
-        8,
-        28,
-        120,
-        73
+        2,
+        48,
+        114,
+        93
       ],
       "origin": [
         72,
@@ -9835,9 +9835,9 @@
     "assets/player_full/baryonyx_walk_E_000.png": {
       "bbox": [
         13,
-        34,
+        44,
         137,
-        91
+        101
       ],
       "origin": [
         72,
@@ -9848,9 +9848,9 @@
     "assets/player_full/baryonyx_walk_E_001.png": {
       "bbox": [
         13,
-        38,
+        48,
         138,
-        89
+        99
       ],
       "origin": [
         72,
@@ -9861,9 +9861,9 @@
     "assets/player_full/baryonyx_walk_E_002.png": {
       "bbox": [
         12,
-        35,
+        45,
         136,
-        90
+        100
       ],
       "origin": [
         72,
@@ -9874,9 +9874,9 @@
     "assets/player_full/baryonyx_walk_E_003.png": {
       "bbox": [
         10,
-        38,
+        48,
         137,
-        83
+        93
       ],
       "origin": [
         72,
@@ -9887,9 +9887,9 @@
     "assets/player_full/baryonyx_walk_E_004.png": {
       "bbox": [
         14,
-        36,
+        46,
         133,
-        90
+        100
       ],
       "origin": [
         72,
@@ -9900,9 +9900,9 @@
     "assets/player_full/baryonyx_walk_E_005.png": {
       "bbox": [
         9,
-        41,
+        51,
         132,
-        90
+        100
       ],
       "origin": [
         72,
@@ -9912,10 +9912,10 @@
     },
     "assets/player_full/baryonyx_run_E_000.png": {
       "bbox": [
-        13,
-        25,
-        137,
-        76
+        11,
+        44,
+        135,
+        95
       ],
       "origin": [
         72,
@@ -9925,10 +9925,10 @@
     },
     "assets/player_full/baryonyx_run_E_001.png": {
       "bbox": [
-        13,
-        27,
-        137,
-        77
+        11,
+        46,
+        135,
+        96
       ],
       "origin": [
         72,
@@ -9938,10 +9938,10 @@
     },
     "assets/player_full/baryonyx_run_E_002.png": {
       "bbox": [
-        13,
-        21,
-        135,
-        81
+        11,
+        40,
+        133,
+        100
       ],
       "origin": [
         72,
@@ -9951,10 +9951,10 @@
     },
     "assets/player_full/baryonyx_run_E_003.png": {
       "bbox": [
-        12,
-        27,
-        137,
-        77
+        10,
+        46,
+        135,
+        96
       ],
       "origin": [
         72,
@@ -9964,10 +9964,10 @@
     },
     "assets/player_full/baryonyx_run_E_004.png": {
       "bbox": [
-        13,
-        23,
-        134,
-        75
+        11,
+        42,
+        132,
+        94
       ],
       "origin": [
         72,
@@ -9977,10 +9977,10 @@
     },
     "assets/player_full/baryonyx_run_E_005.png": {
       "bbox": [
-        9,
-        28,
-        132,
-        78
+        7,
+        47,
+        130,
+        97
       ],
       "origin": [
         72,
@@ -9991,9 +9991,9 @@
     "assets/player_full/baryonyx_attack_E_000.png": {
       "bbox": [
         13,
-        12,
+        41,
         135,
-        70
+        99
       ],
       "origin": [
         72,
@@ -10004,9 +10004,9 @@
     "assets/player_full/baryonyx_attack_E_001.png": {
       "bbox": [
         13,
-        15,
+        44,
         135,
-        72
+        101
       ],
       "origin": [
         72,
@@ -10017,9 +10017,9 @@
     "assets/player_full/baryonyx_attack_E_002.png": {
       "bbox": [
         13,
-        16,
+        45,
         135,
-        66
+        95
       ],
       "origin": [
         72,
@@ -10030,9 +10030,9 @@
     "assets/player_full/baryonyx_attack_E_003.png": {
       "bbox": [
         11,
-        17,
+        46,
         124,
-        66
+        95
       ],
       "origin": [
         72,
@@ -10043,9 +10043,9 @@
     "assets/player_full/baryonyx_attack_E_004.png": {
       "bbox": [
         8,
-        17,
+        46,
         130,
-        64
+        93
       ],
       "origin": [
         72,
@@ -10056,9 +10056,9 @@
     "assets/player_full/baryonyx_attack_E_005.png": {
       "bbox": [
         7,
-        15,
+        44,
         128,
-        59
+        88
       ],
       "origin": [
         72,
@@ -10068,10 +10068,10 @@
     },
     "assets/player_full/baryonyx_death_E_000.png": {
       "bbox": [
-        13,
-        14,
-        138,
-        68
+        11,
+        39,
+        136,
+        93
       ],
       "origin": [
         72,
@@ -10081,10 +10081,10 @@
     },
     "assets/player_full/baryonyx_death_E_001.png": {
       "bbox": [
-        19,
-        13,
-        138,
-        74
+        17,
+        38,
+        136,
+        99
       ],
       "origin": [
         72,
@@ -10094,10 +10094,10 @@
     },
     "assets/player_full/baryonyx_death_E_002.png": {
       "bbox": [
-        21,
-        7,
-        133,
-        72
+        19,
+        32,
+        131,
+        97
       ],
       "origin": [
         72,
@@ -10107,10 +10107,10 @@
     },
     "assets/player_full/baryonyx_death_E_003.png": {
       "bbox": [
-        18,
-        9,
-        135,
-        67
+        16,
+        34,
+        133,
+        92
       ],
       "origin": [
         72,
@@ -10120,10 +10120,10 @@
     },
     "assets/player_full/baryonyx_death_E_004.png": {
       "bbox": [
-        14,
-        9,
-        127,
-        69
+        12,
+        34,
+        125,
+        94
       ],
       "origin": [
         72,
@@ -10133,10 +10133,10 @@
     },
     "assets/player_full/baryonyx_death_E_005.png": {
       "bbox": [
-        11,
-        5,
-        129,
-        71
+        9,
+        30,
+        127,
+        96
       ],
       "origin": [
         72,
@@ -10614,10 +10614,10 @@
     },
     "assets/player_full/baryonyx_walk_W_000.png": {
       "bbox": [
-        12,
-        45,
-        133,
-        95
+        11,
+        52,
+        132,
+        102
       ],
       "origin": [
         72,
@@ -10627,10 +10627,10 @@
     },
     "assets/player_full/baryonyx_walk_W_001.png": {
       "bbox": [
-        11,
-        46,
-        133,
-        95
+        10,
+        53,
+        132,
+        102
       ],
       "origin": [
         72,
@@ -10640,10 +10640,10 @@
     },
     "assets/player_full/baryonyx_walk_W_002.png": {
       "bbox": [
-        10,
-        42,
-        132,
-        97
+        9,
+        49,
+        131,
+        104
       ],
       "origin": [
         72,
@@ -10653,10 +10653,10 @@
     },
     "assets/player_full/baryonyx_walk_W_003.png": {
       "bbox": [
-        9,
-        44,
-        131,
-        95
+        8,
+        51,
+        130,
+        102
       ],
       "origin": [
         72,
@@ -10666,10 +10666,10 @@
     },
     "assets/player_full/baryonyx_walk_W_004.png": {
       "bbox": [
-        7,
-        43,
-        128,
-        95
+        6,
+        50,
+        127,
+        102
       ],
       "origin": [
         72,
@@ -10679,10 +10679,10 @@
     },
     "assets/player_full/baryonyx_walk_W_005.png": {
       "bbox": [
-        6,
-        44,
-        128,
-        93
+        5,
+        51,
+        127,
+        100
       ],
       "origin": [
         72,
@@ -10693,9 +10693,9 @@
     "assets/player_full/baryonyx_run_W_000.png": {
       "bbox": [
         12,
-        33,
+        49,
         133,
-        89
+        105
       ],
       "origin": [
         72,
@@ -10706,9 +10706,9 @@
     "assets/player_full/baryonyx_run_W_001.png": {
       "bbox": [
         11,
-        36,
+        52,
         132,
-        87
+        103
       ],
       "origin": [
         72,
@@ -10719,9 +10719,9 @@
     "assets/player_full/baryonyx_run_W_002.png": {
       "bbox": [
         10,
-        32,
+        48,
         133,
-        86
+        102
       ],
       "origin": [
         72,
@@ -10732,9 +10732,9 @@
     "assets/player_full/baryonyx_run_W_003.png": {
       "bbox": [
         9,
-        35,
+        51,
         130,
-        89
+        105
       ],
       "origin": [
         72,
@@ -10745,9 +10745,9 @@
     "assets/player_full/baryonyx_run_W_004.png": {
       "bbox": [
         7,
-        32,
+        48,
         128,
-        87
+        103
       ],
       "origin": [
         72,
@@ -10758,9 +10758,9 @@
     "assets/player_full/baryonyx_run_W_005.png": {
       "bbox": [
         5,
-        37,
+        53,
         128,
-        89
+        105
       ],
       "origin": [
         72,
@@ -10770,10 +10770,10 @@
     },
     "assets/player_full/baryonyx_attack_W_000.png": {
       "bbox": [
-        12,
-        24,
-        133,
-        70
+        17,
+        42,
+        138,
+        88
       ],
       "origin": [
         72,
@@ -10783,10 +10783,10 @@
     },
     "assets/player_full/baryonyx_attack_W_001.png": {
       "bbox": [
-        12,
-        28,
-        133,
-        77
+        17,
+        46,
+        138,
+        95
       ],
       "origin": [
         72,
@@ -10796,10 +10796,10 @@
     },
     "assets/player_full/baryonyx_attack_W_002.png": {
       "bbox": [
-        11,
-        24,
-        131,
-        78
+        16,
+        42,
+        136,
+        96
       ],
       "origin": [
         72,
@@ -10809,10 +10809,10 @@
     },
     "assets/player_full/baryonyx_attack_W_003.png": {
       "bbox": [
-        11,
-        31,
-        133,
-        78
+        16,
+        49,
+        138,
+        96
       ],
       "origin": [
         72,
@@ -10822,10 +10822,10 @@
     },
     "assets/player_full/baryonyx_attack_W_004.png": {
       "bbox": [
-        9,
-        29,
-        130,
-        75
+        14,
+        47,
+        135,
+        93
       ],
       "origin": [
         72,
@@ -10835,10 +10835,10 @@
     },
     "assets/player_full/baryonyx_attack_W_005.png": {
       "bbox": [
-        6,
-        30,
-        127,
-        80
+        11,
+        48,
+        132,
+        98
       ],
       "origin": [
         72,
@@ -12499,10 +12499,10 @@
     },
     "assets/player_full/deinonychus_idle_S_001.png": {
       "bbox": [
-        66,
-        50,
-        94,
-        99
+        62,
+        48,
+        90,
+        97
       ],
       "origin": [
         72,
@@ -12512,10 +12512,10 @@
     },
     "assets/player_full/deinonychus_idle_S_002.png": {
       "bbox": [
-        66,
-        51,
-        96,
-        98
+        63,
+        52,
+        93,
+        99
       ],
       "origin": [
         72,
@@ -12538,35 +12538,35 @@
     },
     "assets/player_full/deinonychus_hurt_S_000.png": {
       "bbox": [
-        66,
-        51,
-        96,
-        99
+        62,
+        50,
+        92,
+        97
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 675
+      "opaque_pixels": 688
     },
     "assets/player_full/deinonychus_hurt_S_001.png": {
       "bbox": [
-        55,
-        51,
-        87,
+        62,
+        50,
+        92,
         99
       ],
       "origin": [
         72,
         72
       ],
-      "opaque_pixels": 715
+      "opaque_pixels": 682
     },
     "assets/player_full/deinonychus_walk_S_000.png": {
       "bbox": [
-        65,
+        66,
         51,
-        88,
+        89,
         98
       ],
       "origin": [
@@ -12577,10 +12577,10 @@
     },
     "assets/player_full/deinonychus_walk_S_001.png": {
       "bbox": [
-        63,
-        51,
-        92,
-        98
+        61,
+        50,
+        90,
+        97
       ],
       "origin": [
         72,
@@ -12590,10 +12590,10 @@
     },
     "assets/player_full/deinonychus_walk_S_002.png": {
       "bbox": [
-        67,
-        51,
-        92,
-        98
+        65,
+        50,
+        90,
+        97
       ],
       "origin": [
         72,
@@ -12603,10 +12603,10 @@
     },
     "assets/player_full/deinonychus_walk_S_003.png": {
       "bbox": [
-        64,
-        51,
-        92,
-        98
+        63,
+        48,
+        91,
+        95
       ],
       "origin": [
         72,
@@ -12616,9 +12616,9 @@
     },
     "assets/player_full/deinonychus_walk_S_004.png": {
       "bbox": [
-        63,
+        64,
         51,
-        88,
+        89,
         98
       ],
       "origin": [
@@ -12629,9 +12629,9 @@
     },
     "assets/player_full/deinonychus_walk_S_005.png": {
       "bbox": [
-        59,
+        66,
         51,
-        86,
+        93,
         99
       ],
       "origin": [
@@ -12642,9 +12642,9 @@
     },
     "assets/player_full/deinonychus_run_S_000.png": {
       "bbox": [
-        62,
+        61,
         50,
-        94,
+        93,
         98
       ],
       "origin": [
@@ -12655,10 +12655,10 @@
     },
     "assets/player_full/deinonychus_run_S_001.png": {
       "bbox": [
-        68,
-        51,
-        99,
-        98
+        62,
+        50,
+        93,
+        97
       ],
       "origin": [
         72,
@@ -12668,9 +12668,9 @@
     },
     "assets/player_full/deinonychus_run_S_002.png": {
       "bbox": [
-        68,
+        61,
         52,
-        99,
+        92,
         99
       ],
       "origin": [
@@ -12694,10 +12694,10 @@
     },
     "assets/player_full/deinonychus_run_S_004.png": {
       "bbox": [
-        63,
-        51,
-        90,
-        99
+        64,
+        48,
+        91,
+        96
       ],
       "origin": [
         72,
@@ -12707,10 +12707,10 @@
     },
     "assets/player_full/deinonychus_run_S_005.png": {
       "bbox": [
-        56,
-        50,
-        86,
-        99
+        61,
+        48,
+        91,
+        97
       ],
       "origin": [
         72,
@@ -12721,9 +12721,9 @@
     "assets/player_full/deinonychus_attack_S_000.png": {
       "bbox": [
         62,
-        50,
+        48,
         90,
-        99
+        97
       ],
       "origin": [
         72,
@@ -12733,10 +12733,10 @@
     },
     "assets/player_full/deinonychus_attack_S_001.png": {
       "bbox": [
-        67,
-        50,
-        92,
-        98
+        64,
+        49,
+        89,
+        97
       ],
       "origin": [
         72,
@@ -12746,10 +12746,10 @@
     },
     "assets/player_full/deinonychus_attack_S_002.png": {
       "bbox": [
-        68,
-        52,
-        94,
-        93
+        63,
+        51,
+        89,
+        92
       ],
       "origin": [
         72,
@@ -12759,10 +12759,10 @@
     },
     "assets/player_full/deinonychus_attack_S_003.png": {
       "bbox": [
-        64,
-        50,
-        96,
-        99
+        61,
+        49,
+        93,
+        98
       ],
       "origin": [
         72,
@@ -12772,10 +12772,10 @@
     },
     "assets/player_full/deinonychus_attack_S_004.png": {
       "bbox": [
-        62,
-        51,
-        92,
-        98
+        63,
+        49,
+        93,
+        96
       ],
       "origin": [
         72,
@@ -12785,10 +12785,10 @@
     },
     "assets/player_full/deinonychus_attack_S_005.png": {
       "bbox": [
-        57,
-        52,
-        84,
-        99
+        64,
+        50,
+        91,
+        97
       ],
       "origin": [
         72,
@@ -12798,10 +12798,10 @@
     },
     "assets/player_full/deinonychus_death_S_000.png": {
       "bbox": [
-        60,
-        52,
-        92,
-        95
+        61,
+        55,
+        93,
+        98
       ],
       "origin": [
         72,
@@ -12811,9 +12811,9 @@
     },
     "assets/player_full/deinonychus_death_S_001.png": {
       "bbox": [
-        59,
+        60,
         53,
-        95,
+        96,
         95
       ],
       "origin": [
@@ -12824,10 +12824,10 @@
     },
     "assets/player_full/deinonychus_death_S_002.png": {
       "bbox": [
-        57,
-        53,
-        100,
-        96
+        55,
+        51,
+        98,
+        94
       ],
       "origin": [
         72,
@@ -12837,10 +12837,10 @@
     },
     "assets/player_full/deinonychus_death_S_003.png": {
       "bbox": [
-        52,
         53,
-        99,
-        94
+        50,
+        100,
+        91
       ],
       "origin": [
         72,
@@ -12850,10 +12850,10 @@
     },
     "assets/player_full/deinonychus_death_S_004.png": {
       "bbox": [
-        52,
-        53,
-        102,
-        95
+        51,
+        51,
+        101,
+        93
       ],
       "origin": [
         72,
@@ -12863,10 +12863,10 @@
     },
     "assets/player_full/deinonychus_death_S_005.png": {
       "bbox": [
-        52,
-        52,
-        91,
-        94
+        56,
+        50,
+        95,
+        92
       ],
       "origin": [
         72,
@@ -12942,9 +12942,9 @@
     "assets/player_full/deinonychus_hurt_N_001.png": {
       "bbox": [
         62,
-        46,
+        48,
         82,
-        91
+        93
       ],
       "origin": [
         72,
@@ -12955,9 +12955,9 @@
     "assets/player_full/deinonychus_walk_N_000.png": {
       "bbox": [
         62,
-        45,
+        47,
         82,
-        90
+        92
       ],
       "origin": [
         72,
@@ -12968,9 +12968,9 @@
     "assets/player_full/deinonychus_walk_N_001.png": {
       "bbox": [
         62,
-        44,
+        46,
         82,
-        90
+        92
       ],
       "origin": [
         72,
@@ -12981,9 +12981,9 @@
     "assets/player_full/deinonychus_walk_N_002.png": {
       "bbox": [
         62,
-        44,
+        45,
         82,
-        90
+        91
       ],
       "origin": [
         72,
@@ -12994,9 +12994,9 @@
     "assets/player_full/deinonychus_walk_N_003.png": {
       "bbox": [
         62,
-        44,
+        46,
         82,
-        90
+        92
       ],
       "origin": [
         72,
@@ -13007,9 +13007,9 @@
     "assets/player_full/deinonychus_walk_N_004.png": {
       "bbox": [
         62,
-        44,
+        46,
         82,
-        90
+        92
       ],
       "origin": [
         72,
@@ -13020,9 +13020,9 @@
     "assets/player_full/deinonychus_walk_N_005.png": {
       "bbox": [
         62,
-        44,
+        46,
         82,
-        90
+        92
       ],
       "origin": [
         72,
@@ -13033,9 +13033,9 @@
     "assets/player_full/deinonychus_run_N_000.png": {
       "bbox": [
         62,
-        42,
+        46,
         82,
-        87
+        91
       ],
       "origin": [
         72,
@@ -13046,9 +13046,9 @@
     "assets/player_full/deinonychus_run_N_001.png": {
       "bbox": [
         63,
-        43,
+        47,
         82,
-        87
+        91
       ],
       "origin": [
         72,
@@ -13059,9 +13059,9 @@
     "assets/player_full/deinonychus_run_N_002.png": {
       "bbox": [
         62,
-        43,
+        47,
         82,
-        87
+        91
       ],
       "origin": [
         72,
@@ -13072,9 +13072,9 @@
     "assets/player_full/deinonychus_run_N_003.png": {
       "bbox": [
         62,
-        43,
+        47,
         82,
-        87
+        91
       ],
       "origin": [
         72,
@@ -13085,9 +13085,9 @@
     "assets/player_full/deinonychus_run_N_004.png": {
       "bbox": [
         62,
-        43,
+        47,
         82,
-        87
+        91
       ],
       "origin": [
         72,
@@ -13098,9 +13098,9 @@
     "assets/player_full/deinonychus_run_N_005.png": {
       "bbox": [
         62,
-        42,
+        46,
         82,
-        88
+        92
       ],
       "origin": [
         72,
@@ -13111,9 +13111,9 @@
     "assets/player_full/deinonychus_attack_N_000.png": {
       "bbox": [
         62,
-        41,
+        46,
         82,
-        86
+        91
       ],
       "origin": [
         72,
@@ -13124,9 +13124,9 @@
     "assets/player_full/deinonychus_attack_N_001.png": {
       "bbox": [
         62,
-        41,
+        45,
         82,
-        87
+        91
       ],
       "origin": [
         72,
@@ -13137,9 +13137,9 @@
     "assets/player_full/deinonychus_attack_N_002.png": {
       "bbox": [
         62,
-        42,
+        46,
         82,
-        87
+        91
       ],
       "origin": [
         72,
@@ -13150,9 +13150,9 @@
     "assets/player_full/deinonychus_attack_N_003.png": {
       "bbox": [
         61,
-        42,
+        46,
         82,
-        87
+        91
       ],
       "origin": [
         72,
@@ -13163,9 +13163,9 @@
     "assets/player_full/deinonychus_attack_N_004.png": {
       "bbox": [
         62,
-        42,
+        47,
         82,
-        87
+        92
       ],
       "origin": [
         72,
@@ -13176,9 +13176,9 @@
     "assets/player_full/deinonychus_attack_N_005.png": {
       "bbox": [
         62,
-        41,
+        46,
         82,
-        87
+        92
       ],
       "origin": [
         72,
@@ -13189,9 +13189,9 @@
     "assets/player_full/deinonychus_death_N_000.png": {
       "bbox": [
         62,
-        41,
+        52,
         84,
-        84
+        95
       ],
       "origin": [
         72,
@@ -13202,9 +13202,9 @@
     "assets/player_full/deinonychus_death_N_001.png": {
       "bbox": [
         61,
-        41,
+        50,
         85,
-        84
+        93
       ],
       "origin": [
         72,
@@ -13215,9 +13215,9 @@
     "assets/player_full/deinonychus_death_N_002.png": {
       "bbox": [
         60,
-        41,
+        53,
         85,
-        83
+        95
       ],
       "origin": [
         72,
@@ -13228,9 +13228,9 @@
     "assets/player_full/deinonychus_death_N_003.png": {
       "bbox": [
         59,
-        41,
+        52,
         84,
-        83
+        94
       ],
       "origin": [
         72,
@@ -13240,10 +13240,10 @@
     },
     "assets/player_full/deinonychus_death_N_004.png": {
       "bbox": [
-        57,
-        41,
-        88,
-        83
+        58,
+        50,
+        89,
+        92
       ],
       "origin": [
         72,
@@ -13254,9 +13254,9 @@
     "assets/player_full/deinonychus_death_N_005.png": {
       "bbox": [
         57,
-        41,
+        51,
         87,
-        84
+        94
       ],
       "origin": [
         72,
@@ -13279,9 +13279,9 @@
     },
     "assets/player_full/deinonychus_idle_E_001.png": {
       "bbox": [
-        51,
+        50,
         57,
-        109,
+        108,
         93
       ],
       "origin": [
@@ -13292,9 +13292,9 @@
     },
     "assets/player_full/deinonychus_idle_E_002.png": {
       "bbox": [
-        52,
+        51,
         57,
-        109,
+        108,
         93
       ],
       "origin": [
@@ -13319,9 +13319,9 @@
     "assets/player_full/deinonychus_hurt_E_000.png": {
       "bbox": [
         52,
-        63,
+        58,
         111,
-        93
+        88
       ],
       "origin": [
         72,
@@ -13331,9 +13331,9 @@
     },
     "assets/player_full/deinonychus_hurt_E_001.png": {
       "bbox": [
-        52,
+        50,
         64,
-        108,
+        106,
         92
       ],
       "origin": [
@@ -13344,10 +13344,10 @@
     },
     "assets/player_full/deinonychus_walk_E_000.png": {
       "bbox": [
-        52,
-        58,
-        110,
-        91
+        51,
+        61,
+        109,
+        94
       ],
       "origin": [
         72,
@@ -13357,10 +13357,10 @@
     },
     "assets/player_full/deinonychus_walk_E_001.png": {
       "bbox": [
-        51,
-        58,
-        110,
-        91
+        49,
+        59,
+        108,
+        92
       ],
       "origin": [
         72,
@@ -13371,9 +13371,9 @@
     "assets/player_full/deinonychus_walk_E_002.png": {
       "bbox": [
         50,
-        58,
+        61,
         108,
-        91
+        94
       ],
       "origin": [
         72,
@@ -13384,9 +13384,9 @@
     "assets/player_full/deinonychus_walk_E_003.png": {
       "bbox": [
         50,
-        58,
+        61,
         110,
-        93
+        96
       ],
       "origin": [
         72,
@@ -13396,10 +13396,10 @@
     },
     "assets/player_full/deinonychus_walk_E_004.png": {
       "bbox": [
-        52,
-        58,
-        110,
-        92
+        51,
+        61,
+        109,
+        95
       ],
       "origin": [
         72,
@@ -13410,9 +13410,9 @@
     "assets/player_full/deinonychus_walk_E_005.png": {
       "bbox": [
         50,
-        58,
+        61,
         109,
-        90
+        93
       ],
       "origin": [
         72,
@@ -13422,10 +13422,10 @@
     },
     "assets/player_full/deinonychus_run_E_000.png": {
       "bbox": [
-        52,
-        55,
-        110,
-        87
+        49,
+        61,
+        107,
+        93
       ],
       "origin": [
         72,
@@ -13435,10 +13435,10 @@
     },
     "assets/player_full/deinonychus_run_E_001.png": {
       "bbox": [
-        51,
-        58,
-        109,
-        86
+        49,
+        63,
+        107,
+        91
       ],
       "origin": [
         72,
@@ -13448,10 +13448,10 @@
     },
     "assets/player_full/deinonychus_run_E_002.png": {
       "bbox": [
-        50,
-        56,
-        110,
-        86
+        49,
+        61,
+        109,
+        91
       ],
       "origin": [
         72,
@@ -13461,10 +13461,10 @@
     },
     "assets/player_full/deinonychus_run_E_003.png": {
       "bbox": [
-        51,
-        57,
-        110,
-        84
+        49,
+        62,
+        108,
+        89
       ],
       "origin": [
         72,
@@ -13474,10 +13474,10 @@
     },
     "assets/player_full/deinonychus_run_E_004.png": {
       "bbox": [
-        52,
-        56,
-        110,
-        87
+        48,
+        61,
+        106,
+        92
       ],
       "origin": [
         72,
@@ -13488,9 +13488,9 @@
     "assets/player_full/deinonychus_run_E_005.png": {
       "bbox": [
         50,
-        55,
+        61,
         109,
-        84
+        90
       ],
       "origin": [
         72,
@@ -13500,10 +13500,10 @@
     },
     "assets/player_full/deinonychus_attack_E_000.png": {
       "bbox": [
-        52,
-        52,
-        108,
-        86
+        49,
+        59,
+        105,
+        93
       ],
       "origin": [
         72,
@@ -13514,9 +13514,9 @@
     "assets/player_full/deinonychus_attack_E_001.png": {
       "bbox": [
         51,
-        52,
+        57,
         108,
-        87
+        92
       ],
       "origin": [
         72,
@@ -13526,10 +13526,10 @@
     },
     "assets/player_full/deinonychus_attack_E_002.png": {
       "bbox": [
-        50,
-        55,
-        112,
-        84
+        48,
+        61,
+        110,
+        90
       ],
       "origin": [
         72,
@@ -13539,10 +13539,10 @@
     },
     "assets/player_full/deinonychus_attack_E_003.png": {
       "bbox": [
-        51,
-        57,
-        110,
-        85
+        49,
+        61,
+        108,
+        89
       ],
       "origin": [
         72,
@@ -13552,10 +13552,10 @@
     },
     "assets/player_full/deinonychus_attack_E_004.png": {
       "bbox": [
-        52,
-        54,
-        110,
-        86
+        49,
+        61,
+        107,
+        93
       ],
       "origin": [
         72,
@@ -13565,10 +13565,10 @@
     },
     "assets/player_full/deinonychus_attack_E_005.png": {
       "bbox": [
-        51,
-        53,
-        109,
-        85
+        49,
+        60,
+        107,
+        92
       ],
       "origin": [
         72,
@@ -13578,10 +13578,10 @@
     },
     "assets/player_full/deinonychus_death_E_000.png": {
       "bbox": [
-        51,
-        49,
-        107,
-        80
+        50,
+        62,
+        106,
+        93
       ],
       "origin": [
         72,
@@ -13591,10 +13591,10 @@
     },
     "assets/player_full/deinonychus_death_E_001.png": {
       "bbox": [
-        53,
-        54,
-        110,
-        81
+        50,
+        64,
+        107,
+        91
       ],
       "origin": [
         72,
@@ -13604,10 +13604,10 @@
     },
     "assets/player_full/deinonychus_death_E_002.png": {
       "bbox": [
-        50,
-        53,
-        111,
-        79
+        49,
+        61,
+        110,
+        87
       ],
       "origin": [
         72,
@@ -13617,10 +13617,10 @@
     },
     "assets/player_full/deinonychus_death_E_003.png": {
       "bbox": [
-        51,
-        57,
-        111,
-        79
+        50,
+        65,
+        110,
+        87
       ],
       "origin": [
         72,
@@ -13630,10 +13630,10 @@
     },
     "assets/player_full/deinonychus_death_E_004.png": {
       "bbox": [
-        53,
-        60,
-        111,
-        79
+        52,
+        64,
+        110,
+        83
       ],
       "origin": [
         72,
@@ -13643,10 +13643,10 @@
     },
     "assets/player_full/deinonychus_death_E_005.png": {
       "bbox": [
-        52,
-        58,
-        109,
-        78
+        50,
+        66,
+        107,
+        86
       ],
       "origin": [
         72,
@@ -13669,10 +13669,10 @@
     },
     "assets/player_full/deinonychus_idle_W_001.png": {
       "bbox": [
-        38,
-        60,
-        95,
-        95
+        37,
+        61,
+        94,
+        96
       ],
       "origin": [
         72,
@@ -13682,9 +13682,9 @@
     },
     "assets/player_full/deinonychus_idle_W_002.png": {
       "bbox": [
-        39,
+        38,
         60,
-        95,
+        94,
         94
       ],
       "origin": [
@@ -13695,9 +13695,9 @@
     },
     "assets/player_full/deinonychus_idle_W_003.png": {
       "bbox": [
-        39,
+        36,
         62,
-        95,
+        92,
         96
       ],
       "origin": [
@@ -13708,10 +13708,10 @@
     },
     "assets/player_full/deinonychus_hurt_W_000.png": {
       "bbox": [
-        44,
-        56,
-        95,
-        94
+        43,
+        58,
+        94,
+        96
       ],
       "origin": [
         72,
@@ -13721,10 +13721,10 @@
     },
     "assets/player_full/deinonychus_hurt_W_001.png": {
       "bbox": [
-        42,
-        61,
-        91,
-        94
+        43,
+        60,
+        92,
+        93
       ],
       "origin": [
         72,
@@ -13734,10 +13734,10 @@
     },
     "assets/player_full/deinonychus_walk_W_000.png": {
       "bbox": [
-        36,
-        57,
-        95,
-        93
+        41,
+        58,
+        100,
+        94
       ],
       "origin": [
         72,
@@ -13747,10 +13747,10 @@
     },
     "assets/player_full/deinonychus_walk_W_001.png": {
       "bbox": [
-        38,
-        57,
-        95,
-        97
+        37,
+        59,
+        94,
+        99
       ],
       "origin": [
         72,
@@ -13760,10 +13760,10 @@
     },
     "assets/player_full/deinonychus_walk_W_002.png": {
       "bbox": [
-        37,
-        58,
-        92,
-        97
+        43,
+        59,
+        98,
+        98
       ],
       "origin": [
         72,
@@ -13773,9 +13773,9 @@
     },
     "assets/player_full/deinonychus_walk_W_003.png": {
       "bbox": [
-        35,
+        37,
         60,
-        93,
+        95,
         96
       ],
       "origin": [
@@ -13786,10 +13786,10 @@
     },
     "assets/player_full/deinonychus_walk_W_004.png": {
       "bbox": [
-        36,
-        57,
-        93,
-        96
+        40,
+        59,
+        97,
+        98
       ],
       "origin": [
         72,
@@ -13799,9 +13799,9 @@
     },
     "assets/player_full/deinonychus_walk_W_005.png": {
       "bbox": [
-        35,
+        38,
         60,
-        92,
+        95,
         97
       ],
       "origin": [
@@ -13812,10 +13812,10 @@
     },
     "assets/player_full/deinonychus_run_W_000.png": {
       "bbox": [
-        36,
-        55,
-        95,
-        87
+        33,
+        62,
+        92,
+        94
       ],
       "origin": [
         72,
@@ -13825,10 +13825,10 @@
     },
     "assets/player_full/deinonychus_run_W_001.png": {
       "bbox": [
-        35,
-        57,
-        95,
-        95
+        33,
+        61,
+        93,
+        99
       ],
       "origin": [
         72,
@@ -13838,10 +13838,10 @@
     },
     "assets/player_full/deinonychus_run_W_002.png": {
       "bbox": [
-        37,
-        55,
-        93,
-        88
+        41,
+        59,
+        97,
+        92
       ],
       "origin": [
         72,
@@ -13851,10 +13851,10 @@
     },
     "assets/player_full/deinonychus_run_W_003.png": {
       "bbox": [
-        35,
-        55,
-        95,
-        92
+        36,
+        60,
+        96,
+        97
       ],
       "origin": [
         72,
@@ -13864,10 +13864,10 @@
     },
     "assets/player_full/deinonychus_run_W_004.png": {
       "bbox": [
-        33,
-        57,
-        95,
-        92
+        37,
+        61,
+        99,
+        96
       ],
       "origin": [
         72,
@@ -13877,10 +13877,10 @@
     },
     "assets/player_full/deinonychus_run_W_005.png": {
       "bbox": [
-        32,
-        56,
-        90,
-        94
+        40,
+        60,
+        98,
+        98
       ],
       "origin": [
         72,
@@ -13890,10 +13890,10 @@
     },
     "assets/player_full/deinonychus_attack_W_000.png": {
       "bbox": [
-        38,
-        54,
-        95,
-        88
+        37,
+        62,
+        94,
+        96
       ],
       "origin": [
         72,
@@ -13903,10 +13903,10 @@
     },
     "assets/player_full/deinonychus_attack_W_001.png": {
       "bbox": [
-        36,
-        52,
-        94,
-        88
+        37,
+        58,
+        95,
+        94
       ],
       "origin": [
         72,
@@ -13916,10 +13916,10 @@
     },
     "assets/player_full/deinonychus_attack_W_002.png": {
       "bbox": [
-        38,
-        53,
-        94,
-        88
+        40,
+        59,
+        96,
+        94
       ],
       "origin": [
         72,
@@ -13929,10 +13929,10 @@
     },
     "assets/player_full/deinonychus_attack_W_003.png": {
       "bbox": [
-        36,
-        60,
-        94,
-        88
+        35,
+        63,
+        93,
+        91
       ],
       "origin": [
         72,
@@ -13942,10 +13942,10 @@
     },
     "assets/player_full/deinonychus_attack_W_004.png": {
       "bbox": [
-        39,
-        52,
-        93,
-        87
+        41,
+        60,
+        95,
+        95
       ],
       "origin": [
         72,
@@ -13955,10 +13955,10 @@
     },
     "assets/player_full/deinonychus_attack_W_005.png": {
       "bbox": [
-        35,
-        55,
-        89,
-        88
+        39,
+        61,
+        93,
+        94
       ],
       "origin": [
         72,
@@ -13968,10 +13968,10 @@
     },
     "assets/player_full/deinonychus_death_W_000.png": {
       "bbox": [
-        40,
-        49,
-        94,
-        85
+        42,
+        62,
+        96,
+        98
       ],
       "origin": [
         72,
@@ -13981,10 +13981,10 @@
     },
     "assets/player_full/deinonychus_death_W_001.png": {
       "bbox": [
-        37,
-        50,
-        94,
-        83
+        38,
+        59,
+        95,
+        92
       ],
       "origin": [
         72,
@@ -13994,10 +13994,10 @@
     },
     "assets/player_full/deinonychus_death_W_002.png": {
       "bbox": [
-        36,
-        57,
-        94,
-        83
+        41,
+        60,
+        99,
+        86
       ],
       "origin": [
         72,
@@ -14007,10 +14007,10 @@
     },
     "assets/player_full/deinonychus_death_W_003.png": {
       "bbox": [
-        33,
-        55,
-        95,
-        85
+        35,
+        61,
+        97,
+        91
       ],
       "origin": [
         72,
@@ -14020,10 +14020,10 @@
     },
     "assets/player_full/deinonychus_death_W_004.png": {
       "bbox": [
-        31,
-        59,
-        91,
-        84
+        41,
+        63,
+        101,
+        88
       ],
       "origin": [
         72,
@@ -14033,10 +14033,10 @@
     },
     "assets/player_full/deinonychus_death_W_005.png": {
       "bbox": [
-        31,
-        65,
-        92,
-        83
+        30,
+        61,
+        91,
+        79
       ],
       "origin": [
         72,
