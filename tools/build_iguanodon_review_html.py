@@ -14,11 +14,15 @@ def build():
         'referenceAtlas': png(P/'Reference_Rig/reference_E_atlas.png'),
         'spriteAtlas': png(P/'review/iguanodon_rig/iguanodon_walk_E_atlas.png'),
     }
-    template = (ROOT/'tools/templates/iguanodon_rig_review.html').read_text()
+    template = (ROOT/'tools/templates/iguanodon_rig_review.html.in').read_text()
     marker = '__EMBEDDED_REVIEW_DATA__'
     assert template.count(marker) == 1
     encoded = json.dumps(payload, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
-    (P/'iguanodon_rig_review.html').write_text(template.replace(marker, encoded))
+    html = template.replace(marker, encoded)
+    assert marker not in html
+    # Distinct delivery name avoids confusing app previews with the authoring template.
+    for name in ['iguanodon_player_standalone.html', 'iguanodon_rig_review.html']:
+        (P/name).write_text(html)
     print('Built standalone Iguanodon reviewer: embedded pose JSON and two byte-identical PNG atlases.')
 
 if __name__ == '__main__':

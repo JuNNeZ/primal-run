@@ -14,6 +14,7 @@ Use tools/export_{player_full,enemy_full,ecology,corpses}.py and matching valida
 Integrate overlays through tools/build_game.py; edit src files, never generated project events. Update manifests/resources after every export.
 Native light/dark previews and validation reports accompany changes. Browser evidence and real GDevelop GDJS evidence are distinct.
 When delivering a review HTML as a clickable standalone file, embed its required PNG/JSON data losslessly. Test the copied HTML alone with external asset requests blocked, including direct file/offline opening; a localhost-only check is insufficient. Keep load failures visible beside the controls and disable controls until required images are ready. This packaging rule is for review deliverables, not the main game's runtime loader.
+Give authoring templates a non-delivery extension such as `.html.in` and a filename distinct from the delivered viewer. Reject unresolved placeholders in the exact linked HTML and open that absolute delivery path in Codex; duplicate HTML basenames can confuse preview selection.
 Check legacy source hashes and git diff; commit raw sources and derivatives with clear prototype status.
 
 Declared user exceptions live in the family supplement/config. Baryonyx living N may use South180 (lighting caveat); Compy/Veloci may use recorded integer body sampling about fixed hips. Never silently extend these exceptions to another animal. For closely spaced sheets inspect alpha halos and neighbours; use reviewed tight cell margins/thresholds, never draw missing anatomy.

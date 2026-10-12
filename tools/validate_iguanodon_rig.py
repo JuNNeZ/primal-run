@@ -41,7 +41,9 @@ for i,p in enumerate(frames):
     assert np.all(a[:,:2]==0) and np.all(a[:,-2:]==0)
 
 entries=json.loads((D/'manifest.json').read_text())
-html=(P/'iguanodon_rig_review.html').read_text()
+html=(P/'iguanodon_player_standalone.html').read_text()
+assert '__EMBEDDED_REVIEW_DATA__' not in html
+assert html==(P/'iguanodon_rig_review.html').read_text()
 embedded=json.loads(html.split('<script id="review-data" type="application/json">',1)[1].split('</script>',1)[0])
 assert embedded['rig']==rig
 for key,path in [('referenceAtlas',R/'reference_E_atlas.png'),('spriteAtlas',D/'iguanodon_walk_E_atlas.png')]:

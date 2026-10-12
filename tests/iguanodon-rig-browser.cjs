@@ -6,16 +6,20 @@ const os = require('node:os');
 const {pathToFileURL}=require('node:url');
 const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
 const root=path.resolve(__dirname,'../PRIMAL_RUN_Species_Pilot');
+const delivery='iguanodon_player_standalone.html';
 
 test('Iguanodon reference reviewer: ordered poses, pause, step, backgrounds and actual sprite pixels',async()=>{
   const browser=await chromium.launch(browserOptions());
   const temporary=fs.mkdtempSync(path.join(os.tmpdir(),'iguanodon-portable-'));
   const copied=path.join(temporary,'review.html');
-  fs.copyFileSync(path.join(root,'iguanodon_rig_review.html'),copied);
+  fs.copyFileSync(path.join(root,delivery),copied);
+  assert.equal(fs.readFileSync(copied,'utf8').includes('__EMBEDDED_REVIEW_DATA__'),false);
+  assert.equal(fs.existsSync(path.resolve(__dirname,'../tools/templates/iguanodon_rig_review.html')),false,
+    'authoring template must not share a previewable HTML filename with the delivery');
   try {
     const errors=[],scenarios=[];
     let poseChecks=0,pixelChecks=0;
-    for(const [mode,url] of [['http_without_external_assets',await localURL(path.join(root,'iguanodon_rig_review.html'))],
+    for(const [mode,url] of [['http_without_external_assets',await localURL(path.join(root,delivery))],
                             ['single_copied_file_offline',pathToFileURL(copied).href]]) {
     const context=await browser.newContext({viewport:{width:1100,height:1000},offline:mode==='single_copied_file_offline'});
     let page=await context.newPage();
@@ -90,7 +94,7 @@ test('Iguanodon viewer reports failed embedded image prominently and keeps contr
   const browser=await chromium.launch(browserOptions());
   try {
     const page=await browser.newPage();
-    const html=fs.readFileSync(path.join(root,'iguanodon_rig_review.html'),'utf8')
+    const html=fs.readFileSync(path.join(root,delivery),'utf8')
       .replace(/"referenceAtlas":"data:image\/png;base64,[^"]+"/,'"referenceAtlas":"data:image/png;base64,AAAA"');
     await page.setContent(html);
     await page.waitForFunction(()=>Boolean(window.iguanodonReview?.error));
