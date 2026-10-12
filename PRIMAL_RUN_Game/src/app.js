@@ -261,8 +261,11 @@
     function drawEndScene(now){const scene=screen.querySelector('.end-scene');if(!scene)return;const r=game.run;if(endSceneRun!==r){endSceneRun=r;endSceneStarted=now;}const t=(now-endSceneStarted)/1000,dc=scene.getContext('2d');dc.imageSmoothingEnabled=false;dc.fillStyle='#151b19';dc.fillRect(0,0,480,180);dc.fillStyle='#28372a';dc.fillRect(0,130,480,50);
       const reduced=reducedMotion.matches||game.save.settings.reducedMotion,phase=reduced?2:Math.min(3,t),killer=r.result.victory?null:r.lastHit,charge=killer?.mode==='charge',slam=killer?.mode==='slam',style=charge?'stormløb':slam?'slag':'bid';scene.dataset.scene=style;scene.dataset.species=r.species;
       const paint=(path,x,y,scale=1)=>{prepareImage(path);const im=skins[path]||images[path],meta=catalog[path];if(!im){if(meta)loadImage(path).catch(()=>{});return;}drawAsset(dc,im,Math.round(x-meta.origin[0]*scale),Math.round(y-meta.origin[1]*scale),im.width*scale,im.height*scale);};
-      const state=r.result.victory?'idle':phase<1?'hurt':'death',frame=state==='death'?Math.min(5,Math.floor((phase-1)*8)):state==='hurt'?0:Math.floor(phase*4)%4;paint(C.playerFrame(r.species,state,'W',Math.max(0,frame)),310,100,['tyrannosaurus','deinosuchus'].includes(r.species)?2:1);
-      if(killer){const state=phase<1?'run':phase<1.5?'attack':'idle',frame=state==='idle'?0:Math.min(5,Math.floor((phase%1)*6));paint(enemyFrame(killer.kind,state,'E',frame),phase<1?70+phase*(charge?170:140):charge?240:210,slam?110:100,['tyrannosaurus','deinosuchus'].includes(killer.kind)?2:1);}
+      const state=r.result.victory?'idle':phase<1?'hurt':'death',frame=state==='death'?Math.min(5,Math.floor((phase-1)*8)):state==='hurt'?0:C.FEATURES.stableIdle?0:Math.floor(phase*4)%4;paint(C.playerFrame(r.species,state,'W',Math.max(0,frame)),310,100,['tyrannosaurus','deinosuchus'].includes(r.species)?2:1);
+      if(killer){const state=phase<1?'run':phase<1.5?'attack':'idle';
+        // The attack occupies half a second: play all six poses within that window.
+        const frame=state==='attack'?Math.min(5,Math.floor((phase-1)/.5*6)):state==='run'?Math.floor(phase*12)%6:0;
+        paint(enemyFrame(killer.kind,state,'E',frame),phase<1?70+phase*(charge?170:140):charge?240:210,slam?110:100,['tyrannosaurus','deinosuchus'].includes(killer.kind)?2:1);}
     }
     const prepared=new Set();
     function prepareImage(path){if(prepared.has(path)||!images[path])return;prepared.add(path);const image=images[path];
@@ -948,7 +951,7 @@
         canvas.dataset.playerState = r.attack ? 'Bite_' + r.attack.facing : (p.moving ? 'Walk_' : 'Idle_') + p.facing;
         if (C.FEATURES.raptorPack) for (const a of r.raptors || []) { // B5 raptors drawn with the existing Velociraptor frames
           const dir = Math.abs(a.facingX) > Math.abs(a.facingY) ? (a.facingX > 0 ? 'E' : 'W') : (a.facingY > 0 ? 'S' : 'N'), biting = a.mode === 'attack' && a.cooldown > C.PACK.cooldown - .3;
-          const state = biting ? 'attack' : a.moving ? (a.mode === 'flee' ? 'run' : 'walk') : 'idle', frame = biting ? Math.min(5, Math.floor((C.PACK.cooldown - a.cooldown) / .05)) : a.moving ? Math.floor(a.walk * 6) % 6 : Math.floor(r.seconds * 4) % 4;
+          const state = biting ? 'attack' : a.moving ? (a.mode === 'flee' ? 'run' : 'walk') : 'idle', frame = biting ? Math.min(5, Math.floor((C.PACK.cooldown - a.cooldown) / .05)) : a.moving ? C.locomotionFrame(a.gaitPhase??a.walk,a.hp,a.maxHP) : C.FEATURES.stableIdle?0:Math.floor(r.seconds * 4) % 4;
           objects.push({ x: a.x, y: a.y, radius: a.radius, raptor: a, path: C.playerFrame('velociraptor', state, dir, frame) });
         }
         objects.push({ ...p, visualScale:['tyrannosaurus','deinosuchus'].includes(r.species)?2:1, player: true, path: playerPath });

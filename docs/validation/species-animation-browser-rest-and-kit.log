@@ -1,0 +1,50 @@
+PASS: world browser · desktop/portrait/landscape/ultrawide · camera · facing · XP bar · rarity/rank cards · safe selection · Jonas
+PASS: terrain/combat/boss · four rendered biomes · hit-stop/particles · phase/range hints · full first-boss fight without HP edits
+PASS: roguelite · Compy/classes · wilderness · names · paused nest · unlock persistence · responsive UI
+PASS: full playable animation · 1440 actual frames · 12 classes/4 directions/6 states · hurt/death · pause · native origins
+PASS: cinematic jungle menu, responsive controls, reduced motion, actual species palettes, pause isolation
+PASS: adaptive music, health layers, Space selection guard and fresh-run layouts
+PASS: terrain and concealment browser controls/HUD/pause
+PASS: eating, joystick, remapping, gamepad, scaling, fog and lazy assets; phone-size cloud render p95 13.90 ms
+PASS: combat HUD cooldowns, stamina warning, minimap diamond, desktop/mobile, no browser errors
+PASS: all twelve selector portraits exactly match runtime palettes and preserve alpha, including initially unloaded Utahraptor
+records browser: PASS
+da: compy death card, 29 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844
+de: compy death card, 29 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844
+ja: compy death card, 29 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844
+part-b browser OK
+- B1a da: Karl stalks across lava, HP intact, HUD "LURER VED BREDDEN"
+- B1a en: Karl stalks across lava, HP intact, HUD "LURKING ON THE BANK"
+- B1b: 2 basalt crossings, crossing centre is not lava
+- B1c: telegraph shapes for 7 bosses × 6 patterns, Benny dive telegraph "DYK · FLYT DIG"
+- B7 da: daily seed 20261012 (deinonychus), result "Dagens jagt · 12.10.2026 · plads 1 af 1", list 1 row, 390 px
+- B7 de: daily seed 20261012 (deinonychus), result "Tagesjagd · 12.10.2026 · Platz 1 von 1", list 1 row, 390 px
+- B6 da: 3 challenges (4th disabled), forced intro, result "Udfordringer · Skrøbelig · Seje bosser · Hurtige fjender · +0 DNA", next normal hunt has none
+- B6 ja: 3 challenges (4th disabled), forced intro, result "チャレンジ · もろい体 · タフなボス · 素早い敵 · +0 DNA", next normal hunt has none
+- B8 da: progress "Fiskekonge: 12/30 fisk som Baryonyx", skin unlocked + selected, label "Fiskekongens farver kun Baryonyx"
+- B8 sv: progress "Fiskkung: 12/30 fiskar som Baryonyx", skin unlocked + selected, label "Fiskkungens färger endast Baryonyx"
+- B3: 200 tracks drawn + updated: 35.68 ms/frame vs 32.67 ms (4× CPU, 390 px), ≤ +10 %
+- B4 da: pond 91 → 32 px, notice "TØRKE · VANDHULLERNE SKRUMPER"
+- B4 en: pond 91 → 32 px, notice "DROUGHT · THE WATER HOLES ARE SHRINKING"
+- B2: night darkness 1, edge brightness 68 → 36, HUD "☾ 2:56", herbivore asleep
+- B5 en: E press recruited 1 ally, label "WILD RAPTOR · E FEED"
+- B5 da: E press recruited 1 ally, label "VILD RAPTOR · E FODR"
+- Languages: es/ar/hi/ur/yue/ta/pcm/ru menus translated, RTL for ar/ur, no horizontal scroll at 390 px
+- Species cards: order deinonychus > velociraptor > utahraptor > pachycephalosaurus > carnotaurus > ankylosaurus > compy > gallimimus > baryonyx > deinosuchus > triceratops > tyrannosaurus; all cards complete in da/en/de/ar, card texts translated
+PASS field guide follows the menu language
+PASS: approved presentation art, reduced motion, HUD fallback, atlas failure fallback; 6 menu / 12 menu + volcanic-stage PNG requests
+PASS: four native biomes, textured mud/drought, binary pixel edges, unchanged terrain rules and pause
+PASS shore blend: soil/sand fades, original water/foam, pause and rollback
+PASS natural fishing: indicators, bank catches, rarity, stock, oriented shadows and pause
+{"result":"PASS","engine":"Chrome browser; GDevelop NOT RUN","checks":["Baryonyx fishes with drink pose","fish strike uses attack frames, no charge","NPC windup has no player telegraph","no page errors"],"fishing":{"roam":114,"fish":51,"fishstrike":8}}
+PASS night palette: 192 sprite/skin cases, preserved native pixels and bounded cache
+PASS A6: 110592 exact lava/damage pixel checks, crossing refresh, diet/HUD/Part C icons, rollback, pause and 390px
+PASS: complete cinematic attacks30/60fps, pack gait/idle/pause,13-species native review
+
+> primal-run-prototype@0.1.0 test:kit
+> node check_kit_directions.cjs && node check_kit_progression.cjs && node check_kit_files.cjs
+
+{"result":"PASS","engine":"Chrome browser; GDevelop NOT RUN","checks":["S movement/idle/loop","N movement/idle/loop","E movement/idle/loop","W movement/idle/loop","S blockage","N blockage","E blockage","W blockage","diagonal tie facing","pixel smoothing disabled"]}
+{"result":"PASS","engine":"Chrome offline browser prototype; GDevelop NOT RUN","checks":["hunt XP triggers three-choice pause","pause freezes time/movement/damage","keyboard selection resumes","legs +15 percent speed","mutation stacks","feathers +20 percent regeneration","stamina pounce and boost","teeth adds bleed damage","food heals","death DNA once","DNA survives reload","60-second victory DNA bonus","restart clears run upgrades"]}
+{"result":"PASS","checks":["104 catalog PNGs load","all entrypoint/guide/demo local links exist","guide includes five documents","HUD displays correct direction and UTF-8 text"],"scope":"Chromium over local HTTP; file:// access is not certified"}
+PASS continuation: 21 remaining game browser suites +3 kit checks; complete configured browser set:33

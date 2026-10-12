@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="da"><meta charset="utf-8"><title>Artsidentitet og animationer · Primal Run</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#151b19;color:#e8ece1;font:16px system-ui;padding:24px}h1{margin:0 0 12px}.controls{position:sticky;top:0;background:#151b19;padding:12px 0;z-index:2;display:flex;gap:12px;flex-wrap:wrap}select,button{font:inherit;padding:7px}p{max-width:1000px;color:#bab8a2}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}article{border:1px solid #626861;padding:12px;overflow:auto}h2{font-size:18px;margin:0 0 8px}canvas{display:block;image-rendering:pixelated;background:repeating-conic-gradient(#28372a 0% 25%,#3b4144 0% 50%) 0/16px 16px}body.light canvas{background:repeating-conic-gradient(#e8ece1 0% 25%,#bab8a2 0% 50%) 0/16px 16px}small{display:block;margin-top:6px;color:#bab8a2}.status{color:#e9b75a}
+</style>
+<h1>13 arter · samme grundplan · særskilt visuel identitet</h1>
+<p class="status">Teknisk dækning: 312 serier / 1.560 poses. Grafik er stadig prototype; ingen garanti for fejlfri anatomi eller glidende kildeposer. Se <a href="SPECIES_ANIMATION_AUDIT.md">fund og rettelser</a>.</p>
+<p>Sammenlign i samme native 144×144 canvas og med fast hoftekryds. Forstørrelse gælder alle arter ens; ingen centrering efter silhuetten. Farverne følger spillets artsmapping. Walk→attack→walk gør forskelle mellem kildepakker synlige. Reviewangreb afspilles over 0,5s; spillet bruger artens egen varighed. Idle viser alle fire bevarede studieposer; live-spillet holder pose0.</p>
+<div class="controls"><label>Retning <select id="direction"><option>S</option><option>E</option><option>N</option><option>W</option></select></label>
+<label>Type <select id="state"><option>idle</option><option selected>walk</option><option>run</option><option>attack</option><option>hurt</option><option>death</option><option value="transition">walk→attack→walk</option></select></label>
+<label>Visning <select id="zoom"><option value="1">Native 1×</option><option value="4">4× nearest-neighbor</option></select></label>
+<label>Baggrund <select id="background"><option value="dark">Mørk</option><option value="light">Lys</option></select></label>
+<label>Farver <select id="colors"><option value="species">Artsfarver</option><option value="night">Natpalet</option><option value="source">Originale eksportfarver</option></select></label>
+<button id="pause">Pause</button><button id="next">Næste frame</button><button id="reset">Frame 0</button></div>
+<div class="grid" id="grid"></div><script src="src/assets.js"></script><script src="species_animation_review_data.js"></script>
+<script>
+'use strict';
+const data=SpeciesAnimationReview,cache=new Map(),cards=new Map();let playing=true,clock=0,last=null;
+const $=id=>document.getElementById(id);
+for(const species of data.species){const article=document.createElement('article'),title=document.createElement('h2'),canvas=document.createElement('canvas'),label=document.createElement('small');title.textContent=species;canvas.width=canvas.height=144;article.append(title,canvas,label);$('grid').append(article);cards.set(species,{canvas,label});}
+function source(path){const file=PrimalAssets[path].atlas.file;if(!cache.has(file))cache.set(file,new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(new Error(file));im.src=file;}));return cache.get(file);}
+function current(){const mode=$('state').value;if(mode==='transition'){const p=clock%2;return p<.75?{state:'walk',time:p}:p<1.25?{state:'attack',time:p-.75}:{state:'walk',time:p-1.25};}return {state:mode,time:clock};}
+async function draw(){const {state,time}=current(),direction=$('direction').value,colorMode=$('colors').value;
+ for(const [species,card]of cards){const seq=data.sequences.find(s=>s.species===species&&s.direction===direction&&s.state===state),fps=state==='idle'?4:state==='walk'?8:state==='run'||state==='attack'?12:8;
+  // Nonloops end on the last pose. Reset replays; ordinary idle is held in the game.
+  const frame=['idle','walk','run'].includes(state)?Math.floor(time*fps)%seq.frames.length:Math.min(seq.frames.length-1,Math.floor(time*fps));
+  const path=seq.frames[frame],im=await source(path),crop=PrimalAssets[path].atlas,ctx=card.canvas.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,144,144);ctx.drawImage(im,crop.x,crop.y,crop.w,crop.h,0,0,crop.w,crop.h);
+  if(colorMode!=='source'){const pixels=ctx.getImageData(0,0,144,144),mapping=data.colors[species];for(let i=0;i<pixels.data.length;i+=4){if(!pixels.data[i+3])continue;let key=Array.from(pixels.data.slice(i,i+3),v=>v.toString(16).padStart(2,'0')).join('');let target=mapping[key]||key;if(colorMode==='night')target=data.night[target]||target;for(let j=0;j<3;j++)pixels.data[i+j]=parseInt(target.slice(j*2,j*2+2),16);}ctx.putImageData(pixels,0,0);}
+  const origin=seq.origins[frame];ctx.fillStyle='#e9b75a';ctx.fillRect(origin[0]-3,origin[1],7,1);ctx.fillRect(origin[0],origin[1]-3,1,7);
+  card.canvas.style.width=card.canvas.style.height=(144*Number($('zoom').value))+'px';card.label.textContent=direction+' · '+state+' · '+frame+' / '+(seq.frames.length-1)+' · hofte '+origin.join(',');card.canvas.dataset.sprite=path;
+ }
+}
+let busy=false;async function tick(now){if(last!==null&&playing&&!busy)clock+=Math.min(.1,(now-last)/1000);last=now;if(!busy){busy=true;try{await draw();}finally{busy=false;}}requestAnimationFrame(tick);}
+$('pause').onclick=()=>{playing=!playing;$('pause').textContent=playing?'Pause':'Afspil';};$('next').onclick=()=>{playing=false;$('pause').textContent='Afspil';const s=$('state').value,rate=s==='idle'?4:s==='walk'?8:s==='run'||s==='attack'||s==='transition'?12:8;clock+=1/rate+1e-6;};$('reset').onclick=()=>{clock=0;};for(const id of ['direction','state','colors'])$(id).onchange=()=>{clock=0;};$('background').onchange=()=>document.body.classList.toggle('light',$('background').value==='light');
+Promise.all(data.sequences.flatMap(s=>s.frames).map(source)).then(()=>{window.reviewReady=true;requestAnimationFrame(tick);}).catch(e=>{document.querySelector('.status').textContent='Billedfejl: '+e.message;});
+</script></html>

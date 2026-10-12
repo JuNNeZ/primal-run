@@ -8,6 +8,7 @@ import hashlib
 import json
 import shutil
 from build_sprite_atlases import build_atlases, group_for, CONFIG as ATLAS_CONFIG
+from audit_species_animations import audit as audit_species_animations
 
 ROOT = Path(__file__).resolve().parents[1]
 KIT = ROOT / 'PRIMAL_RUN_Prototype_Kit'
@@ -91,6 +92,8 @@ def build():
         animations['animations'] += json.loads(enemy_full.read_text())['animations']
         animations['enemy_full_frame_plan'] = 'idle4/walk6/run6/attack6/hurt2/death6 in separately drawn cardinal directions; shared playable sets for Compy, Carnotaurus and Ankylosaurus.'
         (GAME / 'animation_manifest.json').write_text(json.dumps(animations, indent=2)+'\n')
+    if not audit_species_animations():
+        raise ValueError('Active dinosaur animation inventory/registration audit failed')
     atlas = build_atlases(manifest)
     assets = {entry['file']: {'origin': entry['origin'], 'size': entry['size'], **({'runtime_enabled':entry['runtime_enabled']} if 'runtime_enabled' in entry else {})} for entry in manifest}
     atlas_config = json.loads(ATLAS_CONFIG.read_text())

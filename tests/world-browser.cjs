@@ -38,8 +38,9 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
         const oldBoss = g.spawn('deinosuchus', { x: 1440, y: 820 }); g.enemyStep(oldBoss, .05); oldBoss.direction = 'W';
         g.pause();
         document.querySelector('.arena>canvas').style.transition = 'none'; // measure the settled camera, not the menu tilt animation
+        primalRun.update(performance.now()); // Render this paused fixture before reading camera/HUD snapshots.
       });
-      await page.waitForTimeout(100);
+      await page.waitForFunction(() => { const r=primalRun.game.run,c=document.querySelector('canvas[aria-label]');return r.view.x>0&&r.view.y>0&&+c.dataset.cameraX===r.view.x; });
       const state = await page.evaluate(() => {
         const r = primalRun.game.run, c = document.querySelector('canvas[aria-label]'), box = c.getBoundingClientRect();
         return { view: r.view, map: { width: r.map.width, height: r.map.height }, canvas: { width: c.width, height: c.height }, box: { width: box.width, height: box.height }, cameraX: +c.dataset.cameraX, prey: r.enemies[0].direction, hunter: r.enemies[1].direction, xp: document.querySelector('.meat-progress').textContent, bodyWidth: document.body.scrollWidth, bodyHeight: document.body.scrollHeight };

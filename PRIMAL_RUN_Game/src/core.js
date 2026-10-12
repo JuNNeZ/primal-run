@@ -1863,7 +1863,8 @@
         a.facingX=dx/d;a.facingY=dy/d;}
       else{a.mode=a.hp<a.maxHP*PACK.flee?'flee':'follow';const sx=r.player.x-(r.player.facing==='E'?60:r.player.facing==='W'?-60:0)+(a.slot?-30:30),sy=r.player.y-(r.player.facing==='S'?60:r.player.facing==='N'?-60:0)+20,dx=sx-a.x,dy=sy-a.y,d=Math.hypot(dx,dy);
         if(d>18){const v=Math.min(PACK.speed*(d>200?1.4:1),d/dt);this.travel(a,dx/d*v*dt,dy/d*v*dt);a.facingX=dx/d;a.facingY=dy/d;}a.hp=Math.min(a.maxHP,a.hp+a.maxHP*PACK.regen*dt);}
-      a.moving=Math.hypot(a.x-x,a.y-y)>.05;if(a.moving)a.walk=(a.walk+dt)%1;
+      a.moving=Math.hypot(a.x-x,a.y-y)>.05;
+      if(a.moving){a.walk=(a.walk+dt)%1;a.gaitPhase=((a.gaitPhase||0)+dt*(a.mode==='flee'?2:8/6))%1;}
     }
   };
   // The keyboard calls interact() directly (app.js keydown); step() input.interact covers gamepads and bots.
