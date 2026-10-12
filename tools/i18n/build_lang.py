@@ -9,11 +9,12 @@ from tr_core import CORE
 from tr_ui import UI
 from tr_records import RECORDS
 from tr_part_b import PART_B
+from tr_part_c import PART_C
 from tr_fun import TLH, SJN
 LANGS = ['en', 'de', 'sv', 'no', 'ja', 'zh']
 dicts = {l: {} for l in LANGS}
 seen = {}
-for row in CORE + UI + RECORDS + PART_B:
+for row in CORE + UI + RECORDS + PART_B + PART_C:
     da, *rest = row
     if len(rest) != len(LANGS):
         raise SystemExit(f'Row needs {len(LANGS)} translations: {da}')
