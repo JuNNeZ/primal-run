@@ -7,7 +7,7 @@ from pathlib import Path
 import hashlib
 import json
 import shutil
-from build_sprite_atlases import build_atlases
+from build_sprite_atlases import build_atlases, group_for, CONFIG as ATLAS_CONFIG
 
 ROOT = Path(__file__).resolve().parents[1]
 KIT = ROOT / 'PRIMAL_RUN_Prototype_Kit'
@@ -93,6 +93,12 @@ def build():
         (GAME / 'animation_manifest.json').write_text(json.dumps(animations, indent=2)+'\n')
     atlas = build_atlases(manifest)
     assets = {entry['file']: {'origin': entry['origin'], 'size': entry['size'], **({'runtime_enabled':entry['runtime_enabled']} if 'runtime_enabled' in entry else {})} for entry in manifest}
+    atlas_config = json.loads(ATLAS_CONFIG.read_text())
+    for entry in manifest:
+        group = group_for(entry, atlas_config)
+        species = entry.get('species') or (group[len('species_'):] if group.startswith('species_') else None)
+        if species:
+            assets[entry['file']]['species'] = species
     for path, frame in atlas['frames'].items():
         assets[path]['atlas'] = frame
     asset_code = 'globalThis.PrimalAssets = ' + json.dumps(assets, ensure_ascii=False, separators=(',', ':')) + ';\n'

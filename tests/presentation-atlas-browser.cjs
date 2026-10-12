@@ -8,9 +8,12 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
   page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>{if(/\.png(?:\?|$)/.test(r.url()))requests.push(r.url());});
   const url=await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/index.html'));
   await page.goto(url);await page.evaluate(()=>primalRun.ready);await page.waitForLoadState('networkidle');
-  const menuRequests=requests.length;assert.ok(menuRequests<=30,'menu PNG requests '+menuRequests);
+  const menuRequests=requests.length;assert.ok(menuRequests<=8,'menu PNG requests '+menuRequests);
+  const menuStats=await page.evaluate(()=>primalRun.assetStats());
+  const menuSpecies=await page.evaluate(()=>[primalRun.game.save.selectedSpecies,...PrimalCore.BIOMES[0].animals,PrimalCore.STAGES[0].boss]);
+  assert.ok(requests.every(url=>!url.includes('/species_')||menuSpecies.some(species=>url.includes('/species_'+species+'_'))),'menu loaded an unrelated species atlas');
   await page.evaluate(async()=>{await primalRun.preload({species:'velociraptor',stage:3});});
-  const stageRequests=requests.length;assert.ok(stageRequests<=40,'menu + volcanic stage PNG requests '+stageRequests);
+  const stageRequests=requests.length;assert.ok(stageRequests<=14,'menu + volcanic stage PNG requests '+stageRequests);
   const result=await page.evaluate(()=>{
    const g=primalRun.game,C=PrimalCore;g.phase='menu';g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies('velociraptor');g.start({seed:83});g.pause();
    const r=g.run;r.stage=3;r.map=C.createMap(3,83);r.enemies=[];r.spawnTimer=999;r.player.x=1000;r.player.y=800;r.view.x=520;r.view.y=480;r.seconds=10;
@@ -47,17 +50,17 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
   await page.evaluate(()=>{const r=primalRun.game.run;r.night=false;r.ashClouds[0].until=r.seconds+2;r.particles[0].life=.75;document.querySelector('.screen').style.visibility='hidden';primalRun.update(performance.now());});
   await page.screenshot({path:path.join(out,'volcanic-approved-art.png')});
   // Fail the shared UI atlas: every original PNG remains a viable fallback.
-  const fallback=await browser.newPage();await fallback.route('**/assets/atlases/world_ui_*.png*',route=>route.abort());
+  const fallback=await browser.newPage();await fallback.route('**/assets/atlases/world_shared_*.png*',route=>route.abort());
   await fallback.goto(url);await fallback.evaluate(()=>primalRun.ready);
   const fallbackResult=await fallback.evaluate(async()=>{await primalRun.preload({species:'velociraptor'});const g=primalRun.game;g.start({seed:83});g.pause();primalRun.update(performance.now());return{path:document.querySelector('.time-icon').dataset.sprite,hidden:document.querySelector('.time-icon').hidden};});
   assert.equal(fallbackResult.path,'assets/ui/time_sun.png');assert.equal(fallbackResult.hidden,false);await fallback.close();
   const missing=await browser.newPage();
-  await missing.route('**/assets/atlases/world_ui_*.png*',route=>route.abort());
+  await missing.route('**/assets/atlases/world_shared_*.png*',route=>route.abort());
   await missing.route('**/assets/ui/time_sun.png*',route=>route.abort());
   await missing.goto(url);await missing.evaluate(()=>primalRun.ready);
   const missingResult=await missing.evaluate(()=>{const g=primalRun.game;g.start({seed:83});g.pause();primalRun.update(performance.now());return {hidden:document.querySelector('.time-icon').hidden,glyphHidden:document.querySelector('.time-glyph').hidden,glyph:document.querySelector('.time-glyph').textContent};});
   assert.equal(missingResult.hidden,true);assert.equal(missingResult.glyphHidden,false);assert.match(missingResult.glyph,/☀/);await missing.close();
-  const report={status:'PASS',runtime:'standalone Chromium',menuRequests,menuAndVolcanicStageRequests:stageRequests,...result,fallback:fallbackResult,missingPNG:missingResult,production_approved:false};
+  const report={status:'PASS',runtime:'standalone Chromium',menuRequests,menuStats,menuAndVolcanicStageRequests:stageRequests,...result,fallback:fallbackResult,missingPNG:missingResult,production_approved:false};
   fs.writeFileSync(path.resolve(__dirname,'../PRIMAL_RUN_Game/presentation_atlas_runtime_report.json'),JSON.stringify(report,null,2)+'\n');
   console.log(`PASS: approved presentation art, reduced motion, HUD fallback, atlas failure fallback; ${menuRequests} menu / ${stageRequests} menu + volcanic-stage PNG requests`);
  }finally{await browser.close();}

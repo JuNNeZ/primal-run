@@ -1,4 +1,204 @@
 {
+  "assets/avatars/ankylosaurus_eat_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1315,
+    "y": 1981
+  },
+  "assets/avatars/ankylosaurus_eat_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1381,
+    "y": 1981
+  },
+  "assets/avatars/ankylosaurus_eat_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1447,
+    "y": 1981
+  },
+  "assets/avatars/ankylosaurus_eat_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1513,
+    "y": 1981
+  },
+  "assets/avatars/ankylosaurus_fight_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1579,
+    "y": 1981
+  },
+  "assets/avatars/ankylosaurus_fight_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1645,
+    "y": 1981
+  },
+  "assets/avatars/ankylosaurus_fight_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1965,
+    "y": 1461
+  },
+  "assets/avatars/ankylosaurus_fight_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1965,
+    "y": 1527
+  },
+  "assets/avatars/ankylosaurus_hurt_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1965,
+    "y": 1593
+  },
+  "assets/avatars/ankylosaurus_hurt_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1965,
+    "y": 1659
+  },
+  "assets/avatars/ankylosaurus_hurt_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1835,
+    "y": 1721
+  },
+  "assets/avatars/ankylosaurus_hurt_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1705,
+    "y": 1851
+  },
+  "assets/avatars/ankylosaurus_idle_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1711,
+    "y": 1917
+  },
+  "assets/avatars/ankylosaurus_idle_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1771,
+    "y": 1851
+  },
+  "assets/avatars/ankylosaurus_idle_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1711,
+    "y": 1983
+  },
+  "assets/avatars/ankylosaurus_idle_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1777,
+    "y": 1917
+  },
+  "assets/avatars/ankylosaurus_sneak_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1777,
+    "y": 1983
+  },
+  "assets/avatars/ankylosaurus_sneak_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1837,
+    "y": 1787
+  },
+  "assets/avatars/ankylosaurus_sneak_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1903,
+    "y": 1725
+  },
+  "assets/avatars/ankylosaurus_sneak_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1969,
+    "y": 1725
+  },
   "assets/behavior_injured/ankylosaurus_limp_E_000.png": {
     "anchor": [
       72,
@@ -156,8 +356,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 147
+    "x": 1,
+    "y": 293
   },
   "assets/behavior_injured/ankylosaurus_limp_S_004.png": {
     "anchor": [
@@ -166,8 +366,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 147
+    "x": 1,
+    "y": 439
   },
   "assets/behavior_injured/ankylosaurus_limp_S_005.png": {
     "anchor": [
@@ -176,8 +376,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 147
+    "x": 1,
+    "y": 585
   },
   "assets/behavior_injured/ankylosaurus_limp_W_000.png": {
     "anchor": [
@@ -186,8 +386,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 147
+    "x": 1,
+    "y": 731
   },
   "assets/behavior_injured/ankylosaurus_limp_W_001.png": {
     "anchor": [
@@ -196,8 +396,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 147
+    "x": 1,
+    "y": 877
   },
   "assets/behavior_injured/ankylosaurus_limp_W_002.png": {
     "anchor": [
@@ -206,8 +406,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 147
+    "x": 1,
+    "y": 1023
   },
   "assets/behavior_injured/ankylosaurus_limp_W_003.png": {
     "anchor": [
@@ -216,8 +416,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 147
+    "x": 1,
+    "y": 1169
   },
   "assets/behavior_injured/ankylosaurus_limp_W_004.png": {
     "anchor": [
@@ -226,8 +426,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 147
+    "x": 1,
+    "y": 1315
   },
   "assets/behavior_injured/ankylosaurus_limp_W_005.png": {
     "anchor": [
@@ -236,8 +436,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 147
+    "x": 1,
+    "y": 1461
   },
   "assets/behavior_native/ankylosaurus_drink_E_000.png": {
     "anchor": [
@@ -246,8 +446,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 147
+    "x": 1,
+    "y": 1607
   },
   "assets/behavior_native/ankylosaurus_drink_E_001.png": {
     "anchor": [
@@ -256,8 +456,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 147
+    "x": 1,
+    "y": 1753
   },
   "assets/behavior_native/ankylosaurus_drink_N_000.png": {
     "anchor": [
@@ -266,8 +466,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 147
+    "x": 1,
+    "y": 1899
   },
   "assets/behavior_native/ankylosaurus_drink_N_001.png": {
     "anchor": [
@@ -276,7 +476,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
+    "x": 147,
     "y": 147
   },
   "assets/behavior_native/ankylosaurus_drink_S_000.png": {
@@ -286,8 +486,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 293
+    "x": 293,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_drink_S_001.png": {
     "anchor": [
@@ -296,8 +496,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 293
+    "x": 439,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_drink_W_000.png": {
     "anchor": [
@@ -306,8 +506,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 293
+    "x": 585,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_drink_W_001.png": {
     "anchor": [
@@ -316,8 +516,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 293
+    "x": 731,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_graze_E_000.png": {
     "anchor": [
@@ -326,8 +526,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 293
+    "x": 877,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_graze_E_001.png": {
     "anchor": [
@@ -336,8 +536,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 293
+    "x": 1023,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_graze_N_000.png": {
     "anchor": [
@@ -346,8 +546,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 293
+    "x": 1169,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_graze_N_001.png": {
     "anchor": [
@@ -356,8 +556,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 293
+    "x": 1315,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_graze_S_000.png": {
     "anchor": [
@@ -366,8 +566,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 293
+    "x": 1461,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_graze_S_001.png": {
     "anchor": [
@@ -376,8 +576,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 293
+    "x": 1607,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_graze_W_000.png": {
     "anchor": [
@@ -386,8 +586,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 293
+    "x": 1753,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_graze_W_001.png": {
     "anchor": [
@@ -396,8 +596,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 293
+    "x": 1899,
+    "y": 147
   },
   "assets/behavior_native/ankylosaurus_scratch_E_000.png": {
     "anchor": [
@@ -406,7 +606,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
+    "x": 147,
     "y": 293
   },
   "assets/behavior_native/ankylosaurus_scratch_E_001.png": {
@@ -416,8 +616,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 293
+    "x": 147,
+    "y": 439
   },
   "assets/behavior_native/ankylosaurus_scratch_N_000.png": {
     "anchor": [
@@ -426,8 +626,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 439
+    "x": 147,
+    "y": 585
   },
   "assets/behavior_native/ankylosaurus_scratch_N_001.png": {
     "anchor": [
@@ -437,7 +637,7 @@
     "h": 144,
     "w": 144,
     "x": 147,
-    "y": 439
+    "y": 731
   },
   "assets/behavior_native/ankylosaurus_scratch_S_000.png": {
     "anchor": [
@@ -446,8 +646,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 439
+    "x": 147,
+    "y": 877
   },
   "assets/behavior_native/ankylosaurus_scratch_S_001.png": {
     "anchor": [
@@ -456,8 +656,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 439
+    "x": 147,
+    "y": 1023
   },
   "assets/behavior_native/ankylosaurus_scratch_W_000.png": {
     "anchor": [
@@ -466,8 +666,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 439
+    "x": 147,
+    "y": 1169
   },
   "assets/behavior_native/ankylosaurus_scratch_W_001.png": {
     "anchor": [
@@ -476,8 +676,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 439
+    "x": 147,
+    "y": 1315
   },
   "assets/behavior_native/ankylosaurus_sleep_E_000.png": {
     "anchor": [
@@ -486,8 +686,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 439
+    "x": 147,
+    "y": 1461
   },
   "assets/behavior_native/ankylosaurus_sleep_E_001.png": {
     "anchor": [
@@ -496,8 +696,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 439
+    "x": 147,
+    "y": 1607
   },
   "assets/behavior_native/ankylosaurus_sleep_N_000.png": {
     "anchor": [
@@ -506,8 +706,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 439
+    "x": 147,
+    "y": 1753
   },
   "assets/behavior_native/ankylosaurus_sleep_N_001.png": {
     "anchor": [
@@ -516,8 +716,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 439
+    "x": 147,
+    "y": 1899
   },
   "assets/behavior_native/ankylosaurus_sleep_S_000.png": {
     "anchor": [
@@ -526,8 +726,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 439
+    "x": 293,
+    "y": 293
   },
   "assets/behavior_native/ankylosaurus_sleep_S_001.png": {
     "anchor": [
@@ -536,8 +736,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 439
+    "x": 439,
+    "y": 293
   },
   "assets/behavior_native/ankylosaurus_sleep_W_000.png": {
     "anchor": [
@@ -546,8 +746,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 439
+    "x": 585,
+    "y": 293
   },
   "assets/behavior_native/ankylosaurus_sleep_W_001.png": {
     "anchor": [
@@ -556,8 +756,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 439
+    "x": 731,
+    "y": 293
   },
   "assets/corpses/ankylosaurus_decayed_E_0.png": {
     "anchor": [
@@ -566,8 +766,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 585
+    "x": 877,
+    "y": 293
   },
   "assets/corpses/ankylosaurus_decayed_E_1.png": {
     "anchor": [
@@ -576,8 +776,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 585
+    "x": 1023,
+    "y": 293
   },
   "assets/corpses/ankylosaurus_decayed_N_0.png": {
     "anchor": [
@@ -586,8 +786,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 585
+    "x": 1169,
+    "y": 293
   },
   "assets/corpses/ankylosaurus_decayed_N_1.png": {
     "anchor": [
@@ -596,8 +796,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 585
+    "x": 1315,
+    "y": 293
   },
   "assets/corpses/ankylosaurus_decayed_S_0.png": {
     "anchor": [
@@ -606,8 +806,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 585
+    "x": 1461,
+    "y": 293
   },
   "assets/corpses/ankylosaurus_decayed_S_1.png": {
     "anchor": [
@@ -616,8 +816,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 585
+    "x": 1607,
+    "y": 293
   },
   "assets/corpses/ankylosaurus_decayed_W_0.png": {
     "anchor": [
@@ -626,8 +826,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 585
+    "x": 1753,
+    "y": 293
   },
   "assets/corpses/ankylosaurus_decayed_W_1.png": {
     "anchor": [
@@ -636,8 +836,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 585
+    "x": 1899,
+    "y": 293
   },
   "assets/corpses/ankylosaurus_skeleton_E_0.png": {
     "anchor": [
@@ -646,8 +846,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 585
+    "x": 293,
+    "y": 439
   },
   "assets/corpses/ankylosaurus_skeleton_E_1.png": {
     "anchor": [
@@ -656,7 +856,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
+    "x": 293,
     "y": 585
   },
   "assets/corpses/ankylosaurus_skeleton_N_0.png": {
@@ -666,8 +866,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 585
+    "x": 293,
+    "y": 731
   },
   "assets/corpses/ankylosaurus_skeleton_N_1.png": {
     "anchor": [
@@ -676,8 +876,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 585
+    "x": 293,
+    "y": 877
   },
   "assets/corpses/ankylosaurus_skeleton_S_0.png": {
     "anchor": [
@@ -686,8 +886,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 585
+    "x": 293,
+    "y": 1023
   },
   "assets/corpses/ankylosaurus_skeleton_S_1.png": {
     "anchor": [
@@ -696,8 +896,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 585
+    "x": 293,
+    "y": 1169
   },
   "assets/corpses/ankylosaurus_skeleton_W_0.png": {
     "anchor": [
@@ -706,8 +906,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 731
+    "x": 293,
+    "y": 1315
   },
   "assets/corpses/ankylosaurus_skeleton_W_1.png": {
     "anchor": [
@@ -716,8 +916,178 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 731
+    "x": 293,
+    "y": 1461
+  },
+  "assets/enemies/ankylosaurus_idle_S_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1315,
+    "y": 1461
+  },
+  "assets/enemy_animations/ankylosaurus_action_E_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1315,
+    "y": 1591
+  },
+  "assets/enemy_animations/ankylosaurus_action_N_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1315,
+    "y": 1721
+  },
+  "assets/enemy_animations/ankylosaurus_action_S_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1315,
+    "y": 1851
+  },
+  "assets/enemy_animations/ankylosaurus_action_W_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1445,
+    "y": 1461
+  },
+  "assets/enemy_animations/ankylosaurus_idle_E_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1445,
+    "y": 1591
+  },
+  "assets/enemy_animations/ankylosaurus_idle_N_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1445,
+    "y": 1721
+  },
+  "assets/enemy_animations/ankylosaurus_idle_S_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1445,
+    "y": 1851
+  },
+  "assets/enemy_animations/ankylosaurus_idle_W_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1575,
+    "y": 1461
+  },
+  "assets/enemy_animations/ankylosaurus_step_left_E_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1705,
+    "y": 1461
+  },
+  "assets/enemy_animations/ankylosaurus_step_left_N_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1835,
+    "y": 1461
+  },
+  "assets/enemy_animations/ankylosaurus_step_left_S_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1575,
+    "y": 1591
+  },
+  "assets/enemy_animations/ankylosaurus_step_left_W_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1575,
+    "y": 1721
+  },
+  "assets/enemy_animations/ankylosaurus_step_right_E_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1575,
+    "y": 1851
+  },
+  "assets/enemy_animations/ankylosaurus_step_right_N_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1705,
+    "y": 1591
+  },
+  "assets/enemy_animations/ankylosaurus_step_right_S_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1835,
+    "y": 1591
+  },
+  "assets/enemy_animations/ankylosaurus_step_right_W_000.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1705,
+    "y": 1721
   },
   "assets/player_full/ankylosaurus_attack_E_000.png": {
     "anchor": [
@@ -727,7 +1097,7 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 731
+    "y": 1607
   },
   "assets/player_full/ankylosaurus_attack_E_001.png": {
     "anchor": [
@@ -736,8 +1106,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 731
+    "x": 293,
+    "y": 1753
   },
   "assets/player_full/ankylosaurus_attack_E_002.png": {
     "anchor": [
@@ -746,8 +1116,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 731
+    "x": 293,
+    "y": 1899
   },
   "assets/player_full/ankylosaurus_attack_E_003.png": {
     "anchor": [
@@ -756,8 +1126,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 731
+    "x": 439,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_E_004.png": {
     "anchor": [
@@ -766,8 +1136,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 731
+    "x": 585,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_E_005.png": {
     "anchor": [
@@ -776,8 +1146,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 731
+    "x": 731,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_N_000.png": {
     "anchor": [
@@ -786,8 +1156,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 731
+    "x": 877,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_N_001.png": {
     "anchor": [
@@ -796,8 +1166,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 731
+    "x": 1023,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_N_002.png": {
     "anchor": [
@@ -806,8 +1176,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 731
+    "x": 1169,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_N_003.png": {
     "anchor": [
@@ -816,8 +1186,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 731
+    "x": 1315,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_N_004.png": {
     "anchor": [
@@ -826,8 +1196,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 731
+    "x": 1461,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_N_005.png": {
     "anchor": [
@@ -836,8 +1206,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 731
+    "x": 1607,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_S_000.png": {
     "anchor": [
@@ -846,8 +1216,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 877
+    "x": 1753,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_S_001.png": {
     "anchor": [
@@ -856,8 +1226,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 877
+    "x": 1899,
+    "y": 439
   },
   "assets/player_full/ankylosaurus_attack_S_002.png": {
     "anchor": [
@@ -866,8 +1236,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 877
+    "x": 439,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_attack_S_003.png": {
     "anchor": [
@@ -877,7 +1247,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 877
+    "y": 731
   },
   "assets/player_full/ankylosaurus_attack_S_004.png": {
     "anchor": [
@@ -886,7 +1256,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
+    "x": 439,
     "y": 877
   },
   "assets/player_full/ankylosaurus_attack_S_005.png": {
@@ -896,8 +1266,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 877
+    "x": 439,
+    "y": 1023
   },
   "assets/player_full/ankylosaurus_attack_W_000.png": {
     "anchor": [
@@ -906,8 +1276,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 877
+    "x": 439,
+    "y": 1169
   },
   "assets/player_full/ankylosaurus_attack_W_001.png": {
     "anchor": [
@@ -916,8 +1286,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 877
+    "x": 439,
+    "y": 1315
   },
   "assets/player_full/ankylosaurus_attack_W_002.png": {
     "anchor": [
@@ -926,8 +1296,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 877
+    "x": 439,
+    "y": 1461
   },
   "assets/player_full/ankylosaurus_attack_W_003.png": {
     "anchor": [
@@ -936,8 +1306,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 877
+    "x": 439,
+    "y": 1607
   },
   "assets/player_full/ankylosaurus_attack_W_004.png": {
     "anchor": [
@@ -946,8 +1316,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 877
+    "x": 439,
+    "y": 1753
   },
   "assets/player_full/ankylosaurus_attack_W_005.png": {
     "anchor": [
@@ -956,8 +1326,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 877
+    "x": 439,
+    "y": 1899
   },
   "assets/player_full/ankylosaurus_death_E_000.png": {
     "anchor": [
@@ -966,8 +1336,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 877
+    "x": 585,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_death_E_001.png": {
     "anchor": [
@@ -976,8 +1346,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 877
+    "x": 731,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_death_E_002.png": {
     "anchor": [
@@ -986,8 +1356,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 1023
+    "x": 877,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_death_E_003.png": {
     "anchor": [
@@ -996,8 +1366,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 1023
+    "x": 1023,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_death_E_004.png": {
     "anchor": [
@@ -1006,8 +1376,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1023
+    "x": 1169,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_death_E_005.png": {
     "anchor": [
@@ -1016,8 +1386,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 1023
+    "x": 1315,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_death_N_000.png": {
     "anchor": [
@@ -1026,8 +1396,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 1023
+    "x": 1461,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_death_N_001.png": {
     "anchor": [
@@ -1036,8 +1406,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 1023
+    "x": 1607,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_death_N_002.png": {
     "anchor": [
@@ -1046,8 +1416,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 1023
+    "x": 1753,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_death_N_003.png": {
     "anchor": [
@@ -1056,8 +1426,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 1023
+    "x": 1899,
+    "y": 585
   },
   "assets/player_full/ankylosaurus_death_N_004.png": {
     "anchor": [
@@ -1066,8 +1436,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 1023
+    "x": 585,
+    "y": 731
   },
   "assets/player_full/ankylosaurus_death_N_005.png": {
     "anchor": [
@@ -1076,8 +1446,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 1023
+    "x": 585,
+    "y": 877
   },
   "assets/player_full/ankylosaurus_death_S_000.png": {
     "anchor": [
@@ -1086,7 +1456,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
+    "x": 585,
     "y": 1023
   },
   "assets/player_full/ankylosaurus_death_S_001.png": {
@@ -1096,8 +1466,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 1023
+    "x": 585,
+    "y": 1169
   },
   "assets/player_full/ankylosaurus_death_S_002.png": {
     "anchor": [
@@ -1106,8 +1476,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 1023
+    "x": 585,
+    "y": 1315
   },
   "assets/player_full/ankylosaurus_death_S_003.png": {
     "anchor": [
@@ -1116,8 +1486,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 1023
+    "x": 585,
+    "y": 1461
   },
   "assets/player_full/ankylosaurus_death_S_004.png": {
     "anchor": [
@@ -1126,8 +1496,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 1169
+    "x": 585,
+    "y": 1607
   },
   "assets/player_full/ankylosaurus_death_S_005.png": {
     "anchor": [
@@ -1136,8 +1506,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 1169
+    "x": 585,
+    "y": 1753
   },
   "assets/player_full/ankylosaurus_death_W_000.png": {
     "anchor": [
@@ -1146,8 +1516,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1169
+    "x": 585,
+    "y": 1899
   },
   "assets/player_full/ankylosaurus_death_W_001.png": {
     "anchor": [
@@ -1156,8 +1526,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 1169
+    "x": 731,
+    "y": 731
   },
   "assets/player_full/ankylosaurus_death_W_002.png": {
     "anchor": [
@@ -1166,10 +1536,100 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 1169
+    "x": 877,
+    "y": 731
   },
   "assets/player_full/ankylosaurus_death_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1023,
+    "y": 731
+  },
+  "assets/player_full/ankylosaurus_death_W_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 731
+  },
+  "assets/player_full/ankylosaurus_death_W_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1315,
+    "y": 731
+  },
+  "assets/player_full/ankylosaurus_hurt_E_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 731
+  },
+  "assets/player_full/ankylosaurus_hurt_E_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 731
+  },
+  "assets/player_full/ankylosaurus_hurt_N_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 731
+  },
+  "assets/player_full/ankylosaurus_hurt_N_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 731
+  },
+  "assets/player_full/ankylosaurus_hurt_S_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 877
+  },
+  "assets/player_full/ankylosaurus_hurt_S_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1023
+  },
+  "assets/player_full/ankylosaurus_hurt_W_000.png": {
     "anchor": [
       72,
       72
@@ -1179,96 +1639,6 @@
     "x": 731,
     "y": 1169
   },
-  "assets/player_full/ankylosaurus_death_W_004.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 877,
-    "y": 1169
-  },
-  "assets/player_full/ankylosaurus_death_W_005.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1023,
-    "y": 1169
-  },
-  "assets/player_full/ankylosaurus_hurt_E_000.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1169,
-    "y": 1169
-  },
-  "assets/player_full/ankylosaurus_hurt_E_001.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1315,
-    "y": 1169
-  },
-  "assets/player_full/ankylosaurus_hurt_N_000.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1461,
-    "y": 1169
-  },
-  "assets/player_full/ankylosaurus_hurt_N_001.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1607,
-    "y": 1169
-  },
-  "assets/player_full/ankylosaurus_hurt_S_000.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1753,
-    "y": 1169
-  },
-  "assets/player_full/ankylosaurus_hurt_S_001.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1899,
-    "y": 1169
-  },
-  "assets/player_full/ankylosaurus_hurt_W_000.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1,
-    "y": 1315
-  },
   "assets/player_full/ankylosaurus_hurt_W_001.png": {
     "anchor": [
       72,
@@ -1276,7 +1646,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
+    "x": 731,
     "y": 1315
   },
   "assets/player_full/ankylosaurus_idle_E_000.png": {
@@ -1286,8 +1656,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1315
+    "x": 731,
+    "y": 1461
   },
   "assets/player_full/ankylosaurus_idle_E_001.png": {
     "anchor": [
@@ -1296,8 +1666,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 1315
+    "x": 731,
+    "y": 1607
   },
   "assets/player_full/ankylosaurus_idle_E_002.png": {
     "anchor": [
@@ -1306,8 +1676,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 1315
+    "x": 731,
+    "y": 1753
   },
   "assets/player_full/ankylosaurus_idle_E_003.png": {
     "anchor": [
@@ -1317,7 +1687,7 @@
     "h": 144,
     "w": 144,
     "x": 731,
-    "y": 1315
+    "y": 1899
   },
   "assets/player_full/ankylosaurus_idle_N_000.png": {
     "anchor": [
@@ -1327,7 +1697,7 @@
     "h": 144,
     "w": 144,
     "x": 877,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/ankylosaurus_idle_N_001.png": {
     "anchor": [
@@ -1337,7 +1707,7 @@
     "h": 144,
     "w": 144,
     "x": 1023,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/ankylosaurus_idle_N_002.png": {
     "anchor": [
@@ -1347,7 +1717,7 @@
     "h": 144,
     "w": 144,
     "x": 1169,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/ankylosaurus_idle_N_003.png": {
     "anchor": [
@@ -1357,7 +1727,7 @@
     "h": 144,
     "w": 144,
     "x": 1315,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/ankylosaurus_idle_S_000.png": {
     "anchor": [
@@ -1367,7 +1737,7 @@
     "h": 144,
     "w": 144,
     "x": 1461,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/ankylosaurus_idle_S_001.png": {
     "anchor": [
@@ -1377,7 +1747,7 @@
     "h": 144,
     "w": 144,
     "x": 1607,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/ankylosaurus_idle_S_002.png": {
     "anchor": [
@@ -1387,7 +1757,7 @@
     "h": 144,
     "w": 144,
     "x": 1753,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/ankylosaurus_idle_S_003.png": {
     "anchor": [
@@ -1397,7 +1767,7 @@
     "h": 144,
     "w": 144,
     "x": 1899,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/ankylosaurus_idle_W_000.png": {
     "anchor": [
@@ -1406,8 +1776,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 1461
+    "x": 877,
+    "y": 1023
   },
   "assets/player_full/ankylosaurus_idle_W_001.png": {
     "anchor": [
@@ -1416,8 +1786,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 1461
+    "x": 877,
+    "y": 1169
   },
   "assets/player_full/ankylosaurus_idle_W_002.png": {
     "anchor": [
@@ -1426,8 +1796,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1461
+    "x": 877,
+    "y": 1315
   },
   "assets/player_full/ankylosaurus_idle_W_003.png": {
     "anchor": [
@@ -1436,7 +1806,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
+    "x": 877,
     "y": 1461
   },
   "assets/player_full/ankylosaurus_run_E_000.png": {
@@ -1446,8 +1816,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 1461
+    "x": 877,
+    "y": 1607
   },
   "assets/player_full/ankylosaurus_run_E_001.png": {
     "anchor": [
@@ -1456,8 +1826,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 1461
+    "x": 877,
+    "y": 1753
   },
   "assets/player_full/ankylosaurus_run_E_002.png": {
     "anchor": [
@@ -1467,7 +1837,7 @@
     "h": 144,
     "w": 144,
     "x": 877,
-    "y": 1461
+    "y": 1899
   },
   "assets/player_full/ankylosaurus_run_E_003.png": {
     "anchor": [
@@ -1477,7 +1847,7 @@
     "h": 144,
     "w": 144,
     "x": 1023,
-    "y": 1461
+    "y": 1023
   },
   "assets/player_full/ankylosaurus_run_E_004.png": {
     "anchor": [
@@ -1487,7 +1857,7 @@
     "h": 144,
     "w": 144,
     "x": 1169,
-    "y": 1461
+    "y": 1023
   },
   "assets/player_full/ankylosaurus_run_E_005.png": {
     "anchor": [
@@ -1497,7 +1867,7 @@
     "h": 144,
     "w": 144,
     "x": 1315,
-    "y": 1461
+    "y": 1023
   },
   "assets/player_full/ankylosaurus_run_N_000.png": {
     "anchor": [
@@ -1507,7 +1877,7 @@
     "h": 144,
     "w": 144,
     "x": 1461,
-    "y": 1461
+    "y": 1023
   },
   "assets/player_full/ankylosaurus_run_N_001.png": {
     "anchor": [
@@ -1517,7 +1887,7 @@
     "h": 144,
     "w": 144,
     "x": 1607,
-    "y": 1461
+    "y": 1023
   },
   "assets/player_full/ankylosaurus_run_N_002.png": {
     "anchor": [
@@ -1527,7 +1897,7 @@
     "h": 144,
     "w": 144,
     "x": 1753,
-    "y": 1461
+    "y": 1023
   },
   "assets/player_full/ankylosaurus_run_N_003.png": {
     "anchor": [
@@ -1537,7 +1907,7 @@
     "h": 144,
     "w": 144,
     "x": 1899,
-    "y": 1461
+    "y": 1023
   },
   "assets/player_full/ankylosaurus_run_N_004.png": {
     "anchor": [
@@ -1546,8 +1916,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 1607
+    "x": 1023,
+    "y": 1169
   },
   "assets/player_full/ankylosaurus_run_N_005.png": {
     "anchor": [
@@ -1556,8 +1926,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 1607
+    "x": 1023,
+    "y": 1315
   },
   "assets/player_full/ankylosaurus_run_S_000.png": {
     "anchor": [
@@ -1566,8 +1936,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1607
+    "x": 1023,
+    "y": 1461
   },
   "assets/player_full/ankylosaurus_run_S_001.png": {
     "anchor": [
@@ -1576,7 +1946,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
+    "x": 1023,
     "y": 1607
   },
   "assets/player_full/ankylosaurus_run_S_002.png": {
@@ -1586,8 +1956,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 1607
+    "x": 1023,
+    "y": 1753
   },
   "assets/player_full/ankylosaurus_run_S_003.png": {
     "anchor": [
@@ -1596,8 +1966,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 1607
+    "x": 1023,
+    "y": 1899
   },
   "assets/player_full/ankylosaurus_run_S_004.png": {
     "anchor": [
@@ -1606,8 +1976,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 1607
+    "x": 1169,
+    "y": 1169
   },
   "assets/player_full/ankylosaurus_run_S_005.png": {
     "anchor": [
@@ -1616,10 +1986,92 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 1607
+    "x": 1315,
+    "y": 1169
   },
   "assets/player_full/ankylosaurus_run_W_000.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1461,
+    "y": 1169
+  },
+  "assets/player_full/ankylosaurus_run_W_001.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1607,
+    "y": 1169
+  },
+  "assets/player_full/ankylosaurus_run_W_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 1169
+  },
+  "assets/player_full/ankylosaurus_run_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 1169
+  },
+  "assets/player_full/ankylosaurus_run_W_004.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1315
+  },
+  "assets/player_full/ankylosaurus_run_W_005.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1169,
+    "y": 1461
+  },
+  "assets/player_full/ankylosaurus_walk_E_000.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_E_000.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1
+  },
+  "assets/player_full/ankylosaurus_walk_E_001.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_E_001.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1
+  },
+  "assets/player_full/ankylosaurus_walk_E_002.png": {
     "anchor": [
       72,
       72
@@ -1629,86 +2081,6 @@
     "x": 1169,
     "y": 1607
   },
-  "assets/player_full/ankylosaurus_run_W_001.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1315,
-    "y": 1607
-  },
-  "assets/player_full/ankylosaurus_run_W_002.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1461,
-    "y": 1607
-  },
-  "assets/player_full/ankylosaurus_run_W_003.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1607,
-    "y": 1607
-  },
-  "assets/player_full/ankylosaurus_run_W_004.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1753,
-    "y": 1607
-  },
-  "assets/player_full/ankylosaurus_run_W_005.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1899,
-    "y": 1607
-  },
-  "assets/player_full/ankylosaurus_walk_E_000.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1,
-    "y": 1753
-  },
-  "assets/player_full/ankylosaurus_walk_E_001.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 147,
-    "y": 1753
-  },
-  "assets/player_full/ankylosaurus_walk_E_002.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 293,
-    "y": 1753
-  },
   "assets/player_full/ankylosaurus_walk_E_003.png": {
     "anchor": [
       72,
@@ -1716,10 +2088,11 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
+    "x": 1169,
     "y": 1753
   },
   "assets/player_full/ankylosaurus_walk_E_004.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_E_004.png",
     "anchor": [
       72,
       72
@@ -1727,9 +2100,10 @@
     "h": 144,
     "w": 144,
     "x": 585,
-    "y": 1753
+    "y": 1
   },
   "assets/player_full/ankylosaurus_walk_E_005.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_E_005.png",
     "anchor": [
       72,
       72
@@ -1737,9 +2111,10 @@
     "h": 144,
     "w": 144,
     "x": 731,
-    "y": 1753
+    "y": 1
   },
   "assets/player_full/ankylosaurus_walk_N_000.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_N_000.png",
     "anchor": [
       72,
       72
@@ -1747,9 +2122,10 @@
     "h": 144,
     "w": 144,
     "x": 877,
-    "y": 1753
+    "y": 1
   },
   "assets/player_full/ankylosaurus_walk_N_001.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_N_001.png",
     "anchor": [
       72,
       72
@@ -1757,7 +2133,7 @@
     "h": 144,
     "w": 144,
     "x": 1023,
-    "y": 1753
+    "y": 1
   },
   "assets/player_full/ankylosaurus_walk_N_002.png": {
     "anchor": [
@@ -1767,7 +2143,7 @@
     "h": 144,
     "w": 144,
     "x": 1169,
-    "y": 1753
+    "y": 1899
   },
   "assets/player_full/ankylosaurus_walk_N_003.png": {
     "anchor": [
@@ -1777,9 +2153,10 @@
     "h": 144,
     "w": 144,
     "x": 1315,
-    "y": 1753
+    "y": 1315
   },
   "assets/player_full/ankylosaurus_walk_N_004.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_N_004.png",
     "anchor": [
       72,
       72
@@ -1787,9 +2164,10 @@
     "h": 144,
     "w": 144,
     "x": 1461,
-    "y": 1753
+    "y": 1
   },
   "assets/player_full/ankylosaurus_walk_N_005.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_N_005.png",
     "anchor": [
       72,
       72
@@ -1797,9 +2175,10 @@
     "h": 144,
     "w": 144,
     "x": 1607,
-    "y": 1753
+    "y": 1
   },
   "assets/player_full/ankylosaurus_walk_S_000.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_S_000.png",
     "anchor": [
       72,
       72
@@ -1807,9 +2186,10 @@
     "h": 144,
     "w": 144,
     "x": 1753,
-    "y": 1753
+    "y": 1
   },
   "assets/player_full/ankylosaurus_walk_S_001.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_S_001.png",
     "anchor": [
       72,
       72
@@ -1817,7 +2197,7 @@
     "h": 144,
     "w": 144,
     "x": 1899,
-    "y": 1753
+    "y": 1
   },
   "assets/player_full/ankylosaurus_walk_S_002.png": {
     "anchor": [
@@ -1826,8 +2206,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 1899
+    "x": 1461,
+    "y": 1315
   },
   "assets/player_full/ankylosaurus_walk_S_003.png": {
     "anchor": [
@@ -1836,10 +2216,119 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 1899
+    "x": 1607,
+    "y": 1315
   },
   "assets/player_full/ankylosaurus_walk_S_004.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_S_004.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 439
+  },
+  "assets/player_full/ankylosaurus_walk_S_005.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_S_005.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 585
+  },
+  "assets/player_full/ankylosaurus_walk_W_000.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_W_000.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 731
+  },
+  "assets/player_full/ankylosaurus_walk_W_001.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_W_001.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 877
+  },
+  "assets/player_full/ankylosaurus_walk_W_002.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1753,
+    "y": 1315
+  },
+  "assets/player_full/ankylosaurus_walk_W_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1899,
+    "y": 1315
+  },
+  "assets/player_full/ankylosaurus_walk_W_004.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_W_004.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1315
+  },
+  "assets/player_full/ankylosaurus_walk_W_005.png": {
+    "alias_of": "assets/behavior_injured/ankylosaurus_limp_W_005.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1461
+  },
+  "assets/species_attacks/ankylosaurus_attack_E_000.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_E_000.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1607
+  },
+  "assets/species_attacks/ankylosaurus_attack_E_001.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_E_001.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1753
+  },
+  "assets/species_attacks/ankylosaurus_attack_E_002.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_E_002.png",
     "anchor": [
       72,
       72
@@ -1849,7 +2338,8 @@
     "x": 293,
     "y": 1899
   },
-  "assets/player_full/ankylosaurus_walk_S_005.png": {
+  "assets/species_attacks/ankylosaurus_attack_E_003.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_E_003.png",
     "anchor": [
       72,
       72
@@ -1857,9 +2347,10 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 1899
+    "y": 439
   },
-  "assets/player_full/ankylosaurus_walk_W_000.png": {
+  "assets/species_attacks/ankylosaurus_attack_E_004.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_E_004.png",
     "anchor": [
       72,
       72
@@ -1867,9 +2358,10 @@
     "h": 144,
     "w": 144,
     "x": 585,
-    "y": 1899
+    "y": 439
   },
-  "assets/player_full/ankylosaurus_walk_W_001.png": {
+  "assets/species_attacks/ankylosaurus_attack_E_005.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_E_005.png",
     "anchor": [
       72,
       72
@@ -1877,9 +2369,10 @@
     "h": 144,
     "w": 144,
     "x": 731,
-    "y": 1899
+    "y": 439
   },
-  "assets/player_full/ankylosaurus_walk_W_002.png": {
+  "assets/species_attacks/ankylosaurus_attack_N_000.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_N_000.png",
     "anchor": [
       72,
       72
@@ -1887,9 +2380,10 @@
     "h": 144,
     "w": 144,
     "x": 877,
-    "y": 1899
+    "y": 439
   },
-  "assets/player_full/ankylosaurus_walk_W_003.png": {
+  "assets/species_attacks/ankylosaurus_attack_N_001.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_N_001.png",
     "anchor": [
       72,
       72
@@ -1897,9 +2391,10 @@
     "h": 144,
     "w": 144,
     "x": 1023,
-    "y": 1899
+    "y": 439
   },
-  "assets/player_full/ankylosaurus_walk_W_004.png": {
+  "assets/species_attacks/ankylosaurus_attack_N_002.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_N_002.png",
     "anchor": [
       72,
       72
@@ -1907,9 +2402,10 @@
     "h": 144,
     "w": 144,
     "x": 1169,
-    "y": 1899
+    "y": 439
   },
-  "assets/player_full/ankylosaurus_walk_W_005.png": {
+  "assets/species_attacks/ankylosaurus_attack_N_003.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_N_003.png",
     "anchor": [
       72,
       72
@@ -1917,9 +2413,10 @@
     "h": 144,
     "w": 144,
     "x": 1315,
-    "y": 1899
+    "y": 439
   },
-  "assets/species_attacks/ankylosaurus_attack_E_000.png": {
+  "assets/species_attacks/ankylosaurus_attack_N_004.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_N_004.png",
     "anchor": [
       72,
       72
@@ -1927,9 +2424,10 @@
     "h": 144,
     "w": 144,
     "x": 1461,
-    "y": 1899
+    "y": 439
   },
-  "assets/species_attacks/ankylosaurus_attack_E_001.png": {
+  "assets/species_attacks/ankylosaurus_attack_N_005.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_N_005.png",
     "anchor": [
       72,
       72
@@ -1937,9 +2435,10 @@
     "h": 144,
     "w": 144,
     "x": 1607,
-    "y": 1899
+    "y": 439
   },
-  "assets/species_attacks/ankylosaurus_attack_E_002.png": {
+  "assets/species_attacks/ankylosaurus_attack_S_000.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_S_000.png",
     "anchor": [
       72,
       72
@@ -1947,9 +2446,10 @@
     "h": 144,
     "w": 144,
     "x": 1753,
-    "y": 1899
+    "y": 439
   },
-  "assets/species_attacks/ankylosaurus_attack_E_003.png": {
+  "assets/species_attacks/ankylosaurus_attack_S_001.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_S_001.png",
     "anchor": [
       72,
       72
@@ -1957,6 +2457,116 @@
     "h": 144,
     "w": 144,
     "x": 1899,
+    "y": 439
+  },
+  "assets/species_attacks/ankylosaurus_attack_S_002.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_S_002.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 585
+  },
+  "assets/species_attacks/ankylosaurus_attack_S_003.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_S_003.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 731
+  },
+  "assets/species_attacks/ankylosaurus_attack_S_004.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_S_004.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 877
+  },
+  "assets/species_attacks/ankylosaurus_attack_S_005.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_S_005.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1023
+  },
+  "assets/species_attacks/ankylosaurus_attack_W_000.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_W_000.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1169
+  },
+  "assets/species_attacks/ankylosaurus_attack_W_001.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_W_001.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1315
+  },
+  "assets/species_attacks/ankylosaurus_attack_W_002.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_W_002.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1461
+  },
+  "assets/species_attacks/ankylosaurus_attack_W_003.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_W_003.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1607
+  },
+  "assets/species_attacks/ankylosaurus_attack_W_004.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_W_004.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1753
+  },
+  "assets/species_attacks/ankylosaurus_attack_W_005.png": {
+    "alias_of": "assets/player_full/ankylosaurus_attack_W_005.png",
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
     "y": 1899
   }
 }

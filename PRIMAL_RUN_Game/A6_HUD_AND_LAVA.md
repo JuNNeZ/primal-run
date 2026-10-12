@@ -79,3 +79,8 @@ men en ny faktisk GDJS-eksport er ikke kørt. Ingen gh-pages-publicering.
 Slutverifikation: `npm test` består samlet i en separat kopi: 249 unit-tests,
 32 spil-browser-suiter og tre kit-checks. Alle 24 nye exports og 3.033 aktive
 atlasframes består de tekniske gates. Se rapporten og de bevarede logs ovenfor.
+
+Efterfølgende atlasoptimering samler samme assets i20 ark og bevarer alle3.033
+logiske frames. HUD og lava ligger nu i de fælles runtime-bundles; tests af
+manglende HUD-ark bruger `world_shared`. Se [artsark-workflowet](SPECIES_SHEET_WORKFLOW.md)
+og den særskilte før/efter-rapport for aktuelle loadmålinger og artsplan-CLI.

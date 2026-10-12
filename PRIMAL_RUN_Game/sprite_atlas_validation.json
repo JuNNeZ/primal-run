@@ -2,12 +2,14 @@
   "status": "PASS",
   "approved_exports": 17,
   "frames": 3033,
-  "sheets": 38,
+  "unique_frames": 2773,
+  "alias_frames": 260,
+  "sheets": 20,
   "checks": [
     "exact native RGBA bytes",
     "unaltered anchors and dimensions",
     "one-pixel zero-RGBA gutters",
-    "nonoverlapping frames",
+    "nonoverlapping unique frames; aliases share only exact rectangles",
     "complete active catalog coverage",
     "unchanged user-approved exports and masters"
   ]

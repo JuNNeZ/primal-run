@@ -6,8 +6,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 877,
-    "y": 147
+    "x": 585,
+    "y": 1
   },
   "assets/avatars/gallimimus_eat_001.png": {
     "anchor": [
@@ -16,8 +16,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 943,
-    "y": 147
+    "x": 651,
+    "y": 1
   },
   "assets/avatars/gallimimus_eat_002.png": {
     "anchor": [
@@ -26,8 +26,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1009,
-    "y": 147
+    "x": 717,
+    "y": 1
   },
   "assets/avatars/gallimimus_eat_003.png": {
     "anchor": [
@@ -36,8 +36,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1075,
-    "y": 147
+    "x": 783,
+    "y": 1
   },
   "assets/avatars/gallimimus_fight_000.png": {
     "anchor": [
@@ -46,8 +46,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1141,
-    "y": 147
+    "x": 849,
+    "y": 1
   },
   "assets/avatars/gallimimus_fight_001.png": {
     "anchor": [
@@ -56,8 +56,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1207,
-    "y": 147
+    "x": 915,
+    "y": 1
   },
   "assets/avatars/gallimimus_fight_002.png": {
     "anchor": [
@@ -66,8 +66,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1273,
-    "y": 147
+    "x": 981,
+    "y": 1
   },
   "assets/avatars/gallimimus_fight_003.png": {
     "anchor": [
@@ -76,8 +76,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1339,
-    "y": 147
+    "x": 1047,
+    "y": 1
   },
   "assets/avatars/gallimimus_hurt_000.png": {
     "anchor": [
@@ -86,8 +86,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1405,
-    "y": 147
+    "x": 1113,
+    "y": 1
   },
   "assets/avatars/gallimimus_hurt_001.png": {
     "anchor": [
@@ -96,8 +96,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1471,
-    "y": 147
+    "x": 1179,
+    "y": 1
   },
   "assets/avatars/gallimimus_hurt_002.png": {
     "anchor": [
@@ -106,8 +106,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1537,
-    "y": 147
+    "x": 1245,
+    "y": 1
   },
   "assets/avatars/gallimimus_hurt_003.png": {
     "anchor": [
@@ -116,8 +116,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1603,
-    "y": 147
+    "x": 1311,
+    "y": 1
   },
   "assets/avatars/gallimimus_idle_000.png": {
     "anchor": [
@@ -126,8 +126,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1669,
-    "y": 147
+    "x": 1377,
+    "y": 1
   },
   "assets/avatars/gallimimus_idle_001.png": {
     "anchor": [
@@ -136,8 +136,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1735,
-    "y": 147
+    "x": 1443,
+    "y": 1
   },
   "assets/avatars/gallimimus_idle_002.png": {
     "anchor": [
@@ -146,8 +146,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1801,
-    "y": 147
+    "x": 1509,
+    "y": 1
   },
   "assets/avatars/gallimimus_idle_003.png": {
     "anchor": [
@@ -156,8 +156,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1867,
-    "y": 147
+    "x": 1575,
+    "y": 1
   },
   "assets/avatars/gallimimus_sneak_000.png": {
     "anchor": [
@@ -166,8 +166,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1933,
-    "y": 147
+    "x": 1641,
+    "y": 1
   },
   "assets/avatars/gallimimus_sneak_001.png": {
     "anchor": [
@@ -176,8 +176,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1,
-    "y": 293
+    "x": 1707,
+    "y": 1
   },
   "assets/avatars/gallimimus_sneak_002.png": {
     "anchor": [
@@ -186,8 +186,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 67,
-    "y": 293
+    "x": 1773,
+    "y": 1
   },
   "assets/avatars/gallimimus_sneak_003.png": {
     "anchor": [
@@ -196,168 +196,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 133,
-    "y": 293
-  },
-  "assets/species_attacks/gallimimus_attack_E_004.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1,
+    "x": 1839,
     "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_E_005.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 147,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_N_000.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 293,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_N_001.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 439,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_N_002.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 585,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_N_003.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 731,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_N_004.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 877,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_N_005.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1023,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_S_000.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1169,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_S_001.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1315,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_S_002.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1461,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_S_003.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1607,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_S_004.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1753,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_S_005.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1899,
-    "y": 1
-  },
-  "assets/species_attacks/gallimimus_attack_W_000.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1,
-    "y": 147
-  },
-  "assets/species_attacks/gallimimus_attack_W_001.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 147,
-    "y": 147
   },
   "assets/species_attacks/gallimimus_attack_W_002.png": {
     "anchor": [
@@ -366,8 +206,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 147
+    "x": 1,
+    "y": 1
   },
   "assets/species_attacks/gallimimus_attack_W_003.png": {
     "anchor": [
@@ -376,8 +216,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 147
+    "x": 147,
+    "y": 1
   },
   "assets/species_attacks/gallimimus_attack_W_004.png": {
     "anchor": [
@@ -386,8 +226,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 147
+    "x": 293,
+    "y": 1
   },
   "assets/species_attacks/gallimimus_attack_W_005.png": {
     "anchor": [
@@ -396,7 +236,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 147
+    "x": 439,
+    "y": 1
   }
 }

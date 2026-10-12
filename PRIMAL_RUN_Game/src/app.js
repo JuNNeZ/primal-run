@@ -32,9 +32,13 @@
     function drawAsset(context, image, ...args) {
       if (!image.sheet) { context.drawImage(image, ...args); return; }
       const {sheet,x,y,width,height}=image;
-      if(args.length===2) context.drawImage(sheet,x,y,width,height,args[0],args[1],width,height);
-      else if(args.length===4) context.drawImage(sheet,x,y,width,height,...args);
-      else context.drawImage(sheet,x+args[0],y+args[1],...args.slice(2));
+      // Several logical frames can share one exact crop. Keep the identity of this draw.
+      const previous=sheet.primalDrawPath;sheet.primalDrawPath=image.spritePath;
+      try {
+        if(args.length===2) context.drawImage(sheet,x,y,width,height,args[0],args[1],width,height);
+        else if(args.length===4) context.drawImage(sheet,x,y,width,height,...args);
+        else context.drawImage(sheet,x+args[0],y+args[1],...args.slice(2));
+      } finally { sheet.primalDrawPath=previous; }
     }
     function frameCanvas(image) {
       if (!image.sheet) return image;
@@ -1186,9 +1190,32 @@
         failedImages.add(path);return false;
       })();
     }
-    function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[],menu=false}={},onProgress=null){if(menu){const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||path.includes('/'+species+'_idle_')));return Promise.all(paths.map(p=>loadImage(p)));} // menu: UI + chosen species only (shared atlas requests; frame-level progress remains compatible). Everything else loads at START or on demand.
-    const animals=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss),...kinds]);const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||Array.from(animals).some(id=>path.includes('/'+id+'_'))));let loadedCount=0;const total=paths.length;return Promise.all(paths.map(p=>loadImage(p).then(ok=>{loadedCount++;if(onProgress)onProgress(loadedCount,total);return ok;})));}
-    function evictUnused(stage,species){nightFrames.clear();const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);for(const path of Object.keys(images))if(/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete frameCanvases[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);prepared.delete(path);}for(const file of Object.keys(sheets))if(!Object.values(images).some(image=>image.sheet===sheets[file])){delete sheets[file];delete sheetLoads[file];}}
+    function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[],menu=false}={},onProgress=null) {
+      // Catalog species includes legacy frames and future asset families as well.
+      const animals=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss),...kinds]);
+      const paths=Object.keys(catalog).filter(path=>{
+        const meta=catalog[path];if(meta.runtime_enabled===false)return false;
+        if(!meta.species)return true;
+        return menu?meta.species===species&&path.includes('/'+species+'_idle_'):animals.has(meta.species);
+      });
+      let loadedCount=0;const total=paths.length;
+      return Promise.all(paths.map(path=>loadImage(path).then(ok=>{
+        loadedCount++;if(onProgress)onProgress(loadedCount,total);return ok;
+      })));
+    }
+    function evictUnused(stage,species) {
+      nightFrames.clear();
+      const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);
+      for(const path of Object.keys(images))if(catalog[path]?.species&&!allowed.has(catalog[path].species)) {
+        delete images[path];delete frameCanvases[path];delete loading[path];delete skins[path];
+        delete displayURLs[path];delete flashes[path];delete decomposition[path];
+        for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);
+        prepared.delete(path);
+      }
+      for(const file of Object.keys(sheets))if(!Object.values(images).some(image=>image.sheet===sheets[file])) {
+        delete sheets[file];delete sheetLoads[file];
+      }
+    }
     const querySeed=new URL(location.href).searchParams.get('seed');if(querySeed&&/^\d{1,10}$/.test(querySeed)&&Number(querySeed)<=4294967295)seedInput=querySeed;
     const load = preload({ menu: true }).then(() => { ready = true; renderScreen(true); return true; }).catch(e => { game.phase = 'error'; renderScreen(true); screen.querySelector('.load-error').textContent = e.message; return false; });
     const api = { telegraphShape: (e, r = game.run) => telegraphShape(r, e), warningLabelY: (e, width = 120, r = game.run) => warningLabelY(r, e, width), preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,atlasSheets:Object.keys(sheets).length,nightFrames:nightFrames.size,lavaTiles:lavaCaches.get(game.run?.map)?.tiles.size||0,decodedBytes:[...Object.values(sheets),...Object.values(images).filter(i=>!i.sheet),...Object.values(frameCanvases),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values(),...nightFrames.values(),...(lavaCaches.get(game.run?.map)?.tiles.values()||[])].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
@@ -1197,7 +1224,7 @@
   }
   // Normalize actual canvas draws for runtime checks, including atlas crops.
   function drawRecord(image,args) {
-    const path=image.primalFrames&&args.length===8?image.primalFrames[args.slice(0,4).join(',')]:image.spritePath;
+    const path=image.primalDrawPath||(image.primalFrames&&args.length===8?image.primalFrames[args.slice(0,4).join(',')]:image.spritePath);
     if(!path)return {image,args};
     const meta=root.PrimalAssets[path];
     return {image:{src:path,width:meta.size[0],height:meta.size[1],naturalWidth:meta.size[0],naturalHeight:meta.size[1]},args:image.primalFrames?args.slice(4):args};

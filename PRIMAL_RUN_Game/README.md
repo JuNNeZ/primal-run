@@ -5,6 +5,8 @@ mutationer, og besejr bosser. DNA låser nye arter op og køber start-upgrades.
 
 [Seneste ændringer og begrænsninger](JOURNEY_AND_COMPY.md).
 
+[Artsopdelte sprite-ark, loadflow og skabelon til nye arter](SPECIES_SHEET_WORKFLOW.md).
+
 ## Spil i browseren
 
 Fra repositoryets rod: `npm run preview`. Åbn

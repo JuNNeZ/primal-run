@@ -1,8 +1,16 @@
 {
   "status": "PASS",
   "runtime": "standalone Chromium",
-  "menuRequests": 17,
-  "menuAndVolcanicStageRequests": 27,
+  "menuRequests": 6,
+  "menuStats": {
+    "loaded": 236,
+    "total": 3677,
+    "atlasSheets": 6,
+    "nightFrames": 0,
+    "lavaTiles": 0,
+    "decodedBytes": 75217808
+  },
+  "menuAndVolcanicStageRequests": 12,
   "seen": [
     "assets/ground/dried_mud_edge_N_0.png",
     "assets/ground/dried_mud_edge_N_1.png",
@@ -30,12 +38,12 @@
     "assets/props/lava_rock.png",
     "assets/ecology/dry_grass.png",
     "assets/props/ribcage.png",
-    "assets/props/fern_large.png",
     "assets/props/dead_tree.png",
     "assets/ecology/twigs.png",
     "assets/player_full/velociraptor_idle_E_000.png",
     "assets/ui/raptor_ally.png",
     "assets/player_full/velociraptor_idle_S_000.png",
+    "assets/props/fern_large.png",
     "assets/effects/ash_cloud_000.png",
     "assets/ecology/beetle_1.png",
     "assets/ecology/beetle_0.png",
@@ -55,10 +63,12 @@
     "assets/effects/ash_cloud_001.png"
   ],
   "stats": {
-    "loaded": 1772,
-    "total": 3653,
-    "atlasSheets": 27,
-    "decodedBytes": 153227264
+    "loaded": 1753,
+    "total": 3677,
+    "atlasSheets": 12,
+    "nightFrames": 2,
+    "lavaTiles": 0,
+    "decodedBytes": 145946928
   },
   "pausedSeconds": 10,
   "fallback": {

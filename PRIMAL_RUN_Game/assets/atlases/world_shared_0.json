@@ -1,0 +1,602 @@
+{
+  "assets/a6_hud/dna_chip.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 363,
+    "y": 261
+  },
+  "assets/a6_hud/food_fish.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 487,
+    "y": 1
+  },
+  "assets/a6_hud/food_meat.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 487,
+    "y": 27
+  },
+  "assets/a6_hud/food_plants.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 487,
+    "y": 53
+  },
+  "assets/a6_hud/pack_focus.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 487,
+    "y": 79
+  },
+  "assets/a6_hud/pack_follow.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 487,
+    "y": 105
+  },
+  "assets/a6_hud/reroll.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 487,
+    "y": 131
+  },
+  "assets/a6_hud/zone_chip.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 487,
+    "y": 157
+  },
+  "assets/effects/ash_cloud_000.png": {
+    "anchor": [
+      96,
+      64
+    ],
+    "h": 128,
+    "w": 192,
+    "x": 1,
+    "y": 1
+  },
+  "assets/effects/ash_cloud_001.png": {
+    "anchor": [
+      96,
+      64
+    ],
+    "h": 128,
+    "w": 192,
+    "x": 195,
+    "y": 1
+  },
+  "assets/effects/ash_cloud_002.png": {
+    "anchor": [
+      96,
+      64
+    ],
+    "h": 128,
+    "w": 192,
+    "x": 1,
+    "y": 131
+  },
+  "assets/effects/ash_cloud_003.png": {
+    "anchor": [
+      96,
+      64
+    ],
+    "h": 128,
+    "w": 192,
+    "x": 195,
+    "y": 131
+  },
+  "assets/effects/bite_slash_000.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 389,
+    "y": 1
+  },
+  "assets/effects/bite_slash_001.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 389,
+    "y": 99
+  },
+  "assets/effects/bite_slash_002.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 389,
+    "y": 197
+  },
+  "assets/effects/bite_slash_003.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 1,
+    "y": 261
+  },
+  "assets/effects/bubble_000.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 491,
+    "y": 183
+  },
+  "assets/effects/bubble_001.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 491,
+    "y": 201
+  },
+  "assets/effects/bubble_002.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 491,
+    "y": 219
+  },
+  "assets/effects/bubble_003.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 491,
+    "y": 237
+  },
+  "assets/effects/dust_000.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 99,
+    "y": 261
+  },
+  "assets/effects/dust_001.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 197,
+    "y": 261
+  },
+  "assets/effects/dust_002.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 295,
+    "y": 295
+  },
+  "assets/effects/dust_003.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 393,
+    "y": 295
+  },
+  "assets/effects/meteor_impact_000.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 1,
+    "y": 359
+  },
+  "assets/effects/meteor_impact_001.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 99,
+    "y": 359
+  },
+  "assets/effects/meteor_impact_002.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 197,
+    "y": 359
+  },
+  "assets/effects/meteor_impact_003.png": {
+    "anchor": [
+      48,
+      48
+    ],
+    "h": 96,
+    "w": 96,
+    "x": 295,
+    "y": 393
+  },
+  "assets/fishing/fish_000.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 393,
+    "y": 393
+  },
+  "assets/fishing/fish_001.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 393,
+    "y": 459
+  },
+  "assets/fishing/fish_002.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1,
+    "y": 457
+  },
+  "assets/fishing/fish_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 67,
+    "y": 457
+  },
+  "assets/forage/fruit_0.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 133,
+    "y": 457
+  },
+  "assets/forage/fruit_1.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 199,
+    "y": 457
+  },
+  "assets/forage/mushrooms_0.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 265,
+    "y": 491
+  },
+  "assets/forage/mushrooms_1.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 331,
+    "y": 525
+  },
+  "assets/forage/roots_0.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 397,
+    "y": 525
+  },
+  "assets/forage/roots_1.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1,
+    "y": 523
+  },
+  "assets/forage/toxic_mushrooms_0.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 67,
+    "y": 523
+  },
+  "assets/forage/toxic_mushrooms_1.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 133,
+    "y": 523
+  },
+  "assets/pickups/dna_pickup.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 331,
+    "y": 491
+  },
+  "assets/pickups/egg_pickup.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 295,
+    "y": 261
+  },
+  "assets/pickups/meat.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 329,
+    "y": 261
+  },
+  "assets/pickups/meat_large.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 393
+  },
+  "assets/pickups/water_pickup.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 427
+  },
+  "assets/ui/armor.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 461
+  },
+  "assets/ui/bone.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 495
+  },
+  "assets/ui/dna.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 529
+  },
+  "assets/ui/escape.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 563
+  },
+  "assets/ui/health.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 199,
+    "y": 523
+  },
+  "assets/ui/hunger.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 199,
+    "y": 557
+  },
+  "assets/ui/insulating_feathers.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 233,
+    "y": 557
+  },
+  "assets/ui/powerful_legs.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 267,
+    "y": 557
+  },
+  "assets/ui/raptor_ally.png": {
+    "anchor": [
+      6,
+      6
+    ],
+    "h": 12,
+    "w": 12,
+    "x": 497,
+    "y": 291
+  },
+  "assets/ui/serrated_teeth.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 589
+  },
+  "assets/ui/stamina.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 589
+  },
+  "assets/ui/thirst.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 589
+  },
+  "assets/ui/time_moon.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 491,
+    "y": 255
+  },
+  "assets/ui/time_sun.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 487,
+    "y": 273
+  },
+  "assets/ui/xp.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 589
+  }
+}

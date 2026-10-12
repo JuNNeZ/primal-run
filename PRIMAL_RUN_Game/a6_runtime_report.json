@@ -20,12 +20,12 @@
     "gallimimus"
   ],
   "stats": {
-    "loaded": 1792,
+    "loaded": 1749,
     "total": 3677,
-    "atlasSheets": 29,
+    "atlasSheets": 12,
     "nightFrames": 0,
     "lavaTiles": 108,
-    "decodedBytes": 151511040
+    "decodedBytes": 143933744
   },
   "pause": true,
   "controlAdapter": true,

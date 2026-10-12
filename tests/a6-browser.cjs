@@ -75,7 +75,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
  await page.locator('#scale').selectOption('4');assert.equal(await page.locator('#hud canvas').first().evaluate(c=>c.width),96);
  assert.deepEqual(errors,[]);
  // Missing HUD atlas and PNGs must retain text instead of empty statistics.
- const missing=await browser.newPage();await missing.route('**/assets/atlases/world_a6_hud_*.png*',route=>route.abort());
+ const missing=await browser.newPage();await missing.route('**/assets/atlases/world_shared_*.png*',route=>route.abort());
  await missing.route('**/assets/a6_hud/*.png*',route=>route.abort());
  await missing.goto(url);await missing.evaluate(()=>primalRun.ready);
  const fallback=await missing.evaluate(()=>{const g=primalRun.game;g.start({seed:83});g.pause();primalRun.update(performance.now());return{hidden:document.querySelector('#food-chip canvas').hidden,text:document.querySelector('#food-chip').textContent};});
