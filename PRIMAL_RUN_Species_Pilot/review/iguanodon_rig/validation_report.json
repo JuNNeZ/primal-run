@@ -1,0 +1,29 @@
+{
+  "rig_geometry": "PASS",
+  "sprite_export_count": 6,
+  "sprite_production_approved": false,
+  "runtime_scope": "standalone reference reviewer only; no game or GDJS integration",
+  "visual_review": {
+    "revision8": "REJECTED: prior identity overrides reference; sprawling far-side feet",
+    "revision9": "REJECTED: side profile overrides game camera",
+    "revision10": "camera improved; motion fidelity and marking stability insufficient for finished animation"
+  },
+  "skill_ready": false,
+  "next_step": "A pose-constrained renderer or locked rig textures is needed before mass production; prompting alone did not lock motion.",
+  "reference_pose_count": 12,
+  "bone_length_checks": 96,
+  "world_stance_contact_checks": 32,
+  "constant_root": true,
+  "no_reference_sidesteps": true,
+  "sprite_pixels": "PASS:144RGBA/fixed32/binary alpha/margins/source hashes/explicit sampling",
+  "unique_export_count": 6,
+  "visual_approval": false,
+  "browser": {
+    "status": "PASS",
+    "pose_checks": 24,
+    "actual_canvas_pixel_checks": 24,
+    "pause_step_loop_backgrounds": true,
+    "renderer": "standalone HTML Canvas; no GDevelop production certification",
+    "errors": []
+  }
+}

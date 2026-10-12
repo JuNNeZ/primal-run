@@ -1,0 +1,470 @@
+[
+  {
+    "file": "assets/frames/edmontosaurus_idle_S_000.png",
+    "species": "edmontosaurus",
+    "state": "idle",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/edmontosaurus_S_four_legs_revision7.png",
+    "source_crop": [
+      0,
+      0,
+      768,
+      1024
+    ],
+    "source_sample_stride": 7,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      397,
+      430
+    ],
+    "origin": [
+      72,
+      64
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_four_limbs_anatomical_reference_checked",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      16,
+      3
+    ],
+    "source_sha256": "e0e9fb4886560ba0e5678aca47703f295274c8c57ffbe6ba727794a381f4aad7",
+    "export_sha256": "76b6c95c0a8e80c91b2f3cf450195b48d2712ac4e2549e423a1526d004c130fa",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/edmontosaurus_idle_N_000.png",
+    "species": "edmontosaurus",
+    "state": "idle",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/edmontosaurus_overhead_SN_revision6.png",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 7,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      380,
+      575
+    ],
+    "origin": [
+      72,
+      80
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_four_limbs_anatomical_reference_checked",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      18,
+      -2
+    ],
+    "source_sha256": "5d4080a3da1c9d047557c30778b185cdcaed1a70925a7bcc4290b10b5187c024",
+    "export_sha256": "02775e5b823c9c0726d52b342ad1d703aebb75cf51c67cb1fced3aa9aca48c8e",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/edmontosaurus_idle_E_000.png",
+    "species": "edmontosaurus",
+    "state": "idle",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/edmontosaurus_overhead_revision5.png",
+    "source_crop": [
+      0,
+      0,
+      768,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      355,
+      513
+    ],
+    "origin": [
+      68,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_and_upright_limb_candidate",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      9,
+      -13
+    ],
+    "source_sha256": "d40ce8f1a2344f5c84a03f9ca6ad77e714baffe8937a18c250b5aa758d865c05",
+    "export_sha256": "8effcd55ba738883c60cef98eb4cde84e6aa82345564c365c2fd8521232a563e",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/edmontosaurus_idle_W_000.png",
+    "species": "edmontosaurus",
+    "state": "idle",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/edmontosaurus_overhead_revision5.png",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      410,
+      513
+    ],
+    "origin": [
+      76,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_and_upright_limb_candidate",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      8,
+      -13
+    ],
+    "source_sha256": "d40ce8f1a2344f5c84a03f9ca6ad77e714baffe8937a18c250b5aa758d865c05",
+    "export_sha256": "c31eee9a3612a6186514d93d37e337f22d259b45ceb9f0163e56bc1db663c01d",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/iguanodon_idle_S_000.png",
+    "species": "iguanodon",
+    "state": "idle",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/iguanodon_overhead_SN_revision6.png",
+    "source_crop": [
+      0,
+      0,
+      768,
+      1024
+    ],
+    "source_sample_stride": 7,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      430,
+      444
+    ],
+    "origin": [
+      72,
+      64
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_four_limbs_anatomical_reference_checked",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      11,
+      1
+    ],
+    "source_sha256": "6994a6d5588be92ad733d31e5a08e48d8877aa1fdcf2b67282f5db1281d5dbbe",
+    "export_sha256": "0ce564a8d7fe73ffaaa002f74966a12b65f2a2b13cb84101c4652e361ddefe55",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/iguanodon_idle_N_000.png",
+    "species": "iguanodon",
+    "state": "idle",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/iguanodon_overhead_SN_revision6.png",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 7,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      337,
+      580
+    ],
+    "origin": [
+      72,
+      80
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_four_limbs_anatomical_reference_checked",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      24,
+      -2
+    ],
+    "source_sha256": "6994a6d5588be92ad733d31e5a08e48d8877aa1fdcf2b67282f5db1281d5dbbe",
+    "export_sha256": "8c26e608e379e8598380237c49c2de3d6a3fe87e5ccbd66324905c821188c64b",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/iguanodon_idle_E_000.png",
+    "species": "iguanodon",
+    "state": "idle",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/iguanodon_overhead_revision5.png",
+    "source_crop": [
+      0,
+      0,
+      768,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      350,
+      508
+    ],
+    "origin": [
+      68,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_and_upright_limb_candidate",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      10,
+      -12
+    ],
+    "source_sha256": "741b4b1383ee205feb2eceda39fb12b47c49b824b6d2f81b8adc2c4a8823a8f7",
+    "export_sha256": "63dfa5192451571b5e40dca1557a9ed2eb5ac98f608dbd09721b60d13afc7f2c",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/iguanodon_idle_W_000.png",
+    "species": "iguanodon",
+    "state": "idle",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/iguanodon_overhead_revision5.png",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      417,
+      510
+    ],
+    "origin": [
+      76,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_and_upright_limb_candidate",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      7,
+      -12
+    ],
+    "source_sha256": "741b4b1383ee205feb2eceda39fb12b47c49b824b6d2f81b8adc2c4a8823a8f7",
+    "export_sha256": "86617744d65a2cc9113b8c49702c1188b14a650c74a7a5df0e7537c61ba74d54",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/archelon_idle_S_000.png",
+    "species": "archelon",
+    "state": "idle",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/archelon_reference_revision1.png",
+    "source_crop": [
+      0,
+      0,
+      768,
+      512
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      386,
+      184
+    ],
+    "origin": [
+      72,
+      64
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "anatomical_reference_candidate",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      8,
+      34
+    ],
+    "source_sha256": "e4b8f0ad7c66dc35647f6a9bd7eecef6a1bd4c7e3b74d40a2ba82675d6bb4151",
+    "export_sha256": "a5d58f96ca1ed9abeb8ca62233e3f6f5edc2a6577adc860f05f8bf1822d2d315",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/archelon_idle_N_000.png",
+    "species": "archelon",
+    "state": "idle",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/archelon_reference_revision1.png",
+    "source_crop": [
+      0,
+      512,
+      768,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      383,
+      282
+    ],
+    "origin": [
+      72,
+      80
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "anatomical_reference_candidate",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      9,
+      34
+    ],
+    "source_sha256": "e4b8f0ad7c66dc35647f6a9bd7eecef6a1bd4c7e3b74d40a2ba82675d6bb4151",
+    "export_sha256": "7388e12c63994ba3bd6ddc9adb66714fb7c5f4b9e96bc930c797b695486fff43",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/archelon_idle_E_000.png",
+    "species": "archelon",
+    "state": "idle",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/archelon_reference_revision1.png",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      512
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      278,
+      252
+    ],
+    "origin": [
+      60,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "anatomical_reference_candidate",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      14,
+      30
+    ],
+    "source_sha256": "e4b8f0ad7c66dc35647f6a9bd7eecef6a1bd4c7e3b74d40a2ba82675d6bb4151",
+    "export_sha256": "e5e3f395a1d614f207f690eff997f2acfc3f0b7a6e9663ec5a48088b127627a7",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/frames/archelon_idle_W_000.png",
+    "species": "archelon",
+    "state": "idle",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/archelon_reference_revision1.png",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      487,
+      237
+    ],
+    "origin": [
+      84,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "anatomical_reference_candidate",
+    "status": "prototype_static",
+    "production_approved": false,
+    "registration_offset": [
+      3,
+      33
+    ],
+    "source_sha256": "e4b8f0ad7c66dc35647f6a9bd7eecef6a1bd4c7e3b74d40a2ba82675d6bb4151",
+    "export_sha256": "10f851f29faad59f617af002a6d992bc36b1e89e3b313d1941530191d979b3a4",
+    "animation_ready": false
+  }
+]

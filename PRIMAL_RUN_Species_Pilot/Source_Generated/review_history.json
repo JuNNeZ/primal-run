@@ -1,0 +1,62 @@
+{
+  "reference_revision1": {
+    "scope": "S/N anatomy candidates;E/W rejected for lateral camera",
+    "status": "partial_reference_candidate"
+  },
+  "camera_revision2": {
+    "status": "rejected",
+    "reason": "User correction:forelimbs and hindlimbs too splayed/foreshortened like lizards;upright ornithopod anatomy required",
+    "affected_species": [
+      "edmontosaurus",
+      "iguanodon"
+    ]
+  },
+  "archelon_reference_revision1": {
+    "status": "reference_candidate",
+    "reason": "Four marine flippers and broad low shell;swimming motion pending review"
+  },
+  "upright_revision3": {
+    "status": "rejected_for_camera",
+    "reason": "User correction:E/W camera differs from existing top-down dinosaurs after upright leg correction",
+    "affected_species": [
+      "edmontosaurus",
+      "iguanodon"
+    ]
+  },
+  "edmontosaurus_walk_pilot_revision1": {
+    "file": "edmontosaurus_walk_E_pilot_revision1.png",
+    "sha256": "d59819f4333e747a34bd90fd65b7765796fdfeb4d3a6e208f7aa1d48653243b8",
+    "status": "rejected_camera",
+    "reason": "Derived from user-rejected side-like camera;retained but not active"
+  },
+  "edmontosaurus_attack_pilot_revision1": {
+    "file": "edmontosaurus_attack_E_pilot_revision1.png",
+    "sha256": "4b33814b405d347f8d19f05c3848d8ba7106c5430202d1726183b6e85348a66f",
+    "status": "rejected_camera",
+    "reason": "Derived from user-rejected side-like camera;retained but not active"
+  },
+  "iguanodon_walk_pilot_revision1": {
+    "file": "iguanodon_walk_E_pilot_revision1.png",
+    "sha256": "a8df06ec7e3ed695c6afa2f078dfa3472de8353b06d3d34dad975b21f44c78fc",
+    "status": "rejected_camera",
+    "reason": "Derived from user-rejected side-like camera;retained but not active"
+  },
+  "iguanodon_attack_pilot_revision1": {
+    "file": "iguanodon_attack_E_pilot_revision1.png",
+    "sha256": "0a063eac179213d83906ae7698ccb0df006aa4a2a8967880fad079b8e0fa4bb1",
+    "status": "rejected_camera",
+    "reason": "Derived from user-rejected side-like camera;retained but not active"
+  },
+  "archelon_walk_pilot_revision1": {
+    "file": "archelon_walk_E_pilot_revision1.png",
+    "sha256": "42294a5fe0621978dbf5a3064b8b7d3df1cc6b6b103839e7f7138dc4cbe3ee6b",
+    "status": "motion_candidate",
+    "reason": "Native root,scale,motion and anatomy review pending"
+  },
+  "archelon_attack_pilot_revision1": {
+    "file": "archelon_attack_E_pilot_revision1.png",
+    "sha256": "e6951b0672300d08a4c5593c206f317cffbe9e71b56540d239817abcfa0e5cc8",
+    "status": "motion_candidate",
+    "reason": "Native root,scale,motion and anatomy review pending"
+  }
+}

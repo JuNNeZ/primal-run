@@ -1,0 +1,24 @@
+{
+  "camera": "fixed high overhead,slight screen-bottom view;species-specific lateral orbit occlusion",
+  "species": {
+    "edmontosaurus": {
+      "S": "subtle lateral edge/slit only,not dorsal paired full pupils",
+      "N": "lateral pupils occluded by cranium/brow;do not expose paired pupils",
+      "E": "only near/lower lateral eye edge can be visible;upper/far pupil occluded",
+      "W": "only near/lower lateral eye edge can be visible;upper/far pupil occluded"
+    },
+    "iguanodon": {
+      "S": "subtle lateral edge/slit only,not dorsal paired full pupils",
+      "N": "lateral pupils occluded by cranium/brow;do not expose paired pupils",
+      "E": "only near/lower lateral eye edge can be visible;upper/far pupil occluded",
+      "W": "only near/lower lateral eye edge can be visible;upper/far pupil occluded"
+    },
+    "archelon": {
+      "S": "subtle lateral edge/slit only,not dorsal paired full pupils",
+      "N": "lateral pupils occluded by cranium/brow;do not expose paired pupils",
+      "E": "only near/lower lateral eye edge can be visible;upper/far pupil occluded",
+      "W": "only near/lower lateral eye edge can be visible;upper/far pupil occluded"
+    }
+  },
+  "scope": "Pilot art-direction contract;not a universal rule for other taxa with dorsal-facing eyes"
+}

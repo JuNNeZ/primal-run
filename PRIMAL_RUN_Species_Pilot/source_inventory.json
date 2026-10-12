@@ -1,0 +1,398 @@
+[
+  {
+    "file": "Source_Generated/ankylosaurus_camera_posture_reference_4x.png",
+    "sha256": "84b94bd80f58a2d169547c44cdda64a0c4d732b4549c1d4233e35f6381c95f18",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/archelon_E_strip_reference_3x.png",
+    "sha256": "9c7e193e2cac4fe58a75a4d07f03d01cb32367f5913b1a58ecb663b4ef4874fe",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/archelon_attack_E_pilot_revision1.png",
+    "sha256": "e6951b0672300d08a4c5593c206f317cffbe9e71b56540d239817abcfa0e5cc8",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/archelon_eye_review_reference_3x.png",
+    "sha256": "3d8de89c21c89e0e8e46f41bd64bf17204ff9debf50eabeab8d454f88b52009a",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/archelon_reference_revision1.png",
+    "sha256": "e4b8f0ad7c66dc35647f6a9bd7eecef6a1bd4c7e3b74d40a2ba82675d6bb4151",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/archelon_walk_E_pilot_revision1.png",
+    "sha256": "42294a5fe0621978dbf5a3064b8b7d3df1cc6b6b103839e7f7138dc4cbe3ee6b",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/camera_E_4x.png",
+    "sha256": "6f1ca70f58a5e34e7d10403306e531602ae6637e01e80e9977dc04c0eecb6550",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/camera_W_4x.png",
+    "sha256": "d485b18a03160ce8d550d69a7d8b13a1240f0fe2800889c4b6a157831d7ce2e4",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/camera_locked_revision4_prompts.json",
+    "sha256": "66d931b7a4ac5ba8743d3c375511cf956eb9524954c9449ba3f49c25abec97b9",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/camera_only_revision5_prompts.json",
+    "sha256": "38a93c40351f931ce75db864acc36783cc3a45f292bcaa272fc6e68590a97107",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/camera_revision2_prompts.json",
+    "sha256": "f7f21570a8e328e9bd0d78c1d7fc9340876ef8ebe13a3c6918e73e9972835418",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_E_strip_reference_3x.png",
+    "sha256": "e377e0cf02b9d20ca02f618f65c5ad4810788b5901db5419417ee4aece7dc72f",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_S_four_legs_revision7.png",
+    "sha256": "e0e9fb4886560ba0e5678aca47703f295274c8c57ffbe6ba727794a381f4aad7",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_S_four_legs_revision7_prompt.txt",
+    "sha256": "3dfe6758d60a3274d9bde52594a560f804c0b7226257e9ab33dfe2dcab52bd9f",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_attack_E_pilot_revision1.png",
+    "sha256": "4b33814b405d347f8d19f05c3848d8ba7106c5430202d1726183b6e85348a66f",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_camera_revision2.png",
+    "sha256": "5a7cce055596b34410af030d6e04c453a4e15672da56474b368af8e29960c15b",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_camera_revision4_REJECTED.png",
+    "sha256": "d4b025a7754304b718b98fb530fa5716287e834e96b93c75278fcda4f97c0de5",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_eye_review_reference_3x.png",
+    "sha256": "512f92adf0e020d609938cd6e6e6a8d0cfdf0706711172e1de326875e29638a4",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_overhead_SN_revision6.png",
+    "sha256": "5d4080a3da1c9d047557c30778b185cdcaed1a70925a7bcc4290b10b5187c024",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_overhead_revision5.png",
+    "sha256": "d40ce8f1a2344f5c84a03f9ca6ad77e714baffe8937a18c250b5aa758d865c05",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_reference_revision1.png",
+    "sha256": "597ab0b21acf94cf3293ff3805c88f05aae45dd756ea83751d6f2170cd76c4c0",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_upright_revision3.png",
+    "sha256": "0a3302828fc62fc142ed853d3040932bf7ec855498f5ba30c2b996b5403e4bd1",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/edmontosaurus_walk_E_pilot_revision1.png",
+    "sha256": "d59819f4333e747a34bd90fd65b7765796fdfeb4d3a6e208f7aa1d48653243b8",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/eye_visibility_prompts.json",
+    "sha256": "d36953abca3ab33f10a5b0a33b3e80bf9a1888a208b9b8e5762c07dcf3496f5e",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_E_strip_reference_3x.png",
+    "sha256": "2d73899a10368990612b9f4267a7ffa147e25b547e1b4234ce3ab5c7006db153",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_attack_E_pilot_revision1.png",
+    "sha256": "0a063eac179213d83906ae7698ccb0df006aa4a2a8967880fad079b8e0fa4bb1",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_camera_revision2.png",
+    "sha256": "fd120bfad655163ff1513f48e988129cc99739b5555f654793f6c6507c261eed",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_camera_revision4_REJECTED.png",
+    "sha256": "8d175819451a8aa39238cc99fcdf7c6f196c5c25c555466b3acddfd774f2045e",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_eye_review_reference_3x.png",
+    "sha256": "75d9fa1afc1217f68a1352392076aa14cf4880f80255eab83f3564f75a49ba31",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_overhead_SN_revision6.png",
+    "sha256": "6994a6d5588be92ad733d31e5a08e48d8877aa1fdcf2b67282f5db1281d5dbbe",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_overhead_revision5.png",
+    "sha256": "741b4b1383ee205feb2eceda39fb12b47c49b824b6d2f81b8adc2c4a8823a8f7",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_reference_revision1.png",
+    "sha256": "53e495f02271921fe3ebeb3156a70e41889d381c4b2a3a49f11f5ec661ed7da9",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_rig_walk_E_revision10.png",
+    "sha256": "3d4819cc4900403f232a3a4858abdf112f41b5dd50dd28aa6cdcbcd329b2d613",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_rig_walk_E_revision10_prompt.txt",
+    "sha256": "186515ca5758d4aa8119f33dd9a39dbbdcc9b2f9426924d323bc47c952412ef5",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_rig_walk_E_revision8.png",
+    "sha256": "42f7567f483c9b7a1e3317947fff049cf027ea6b71af0a0fe02b0708bc4cf2ba",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_rig_walk_E_revision9.png",
+    "sha256": "92b6592195a9cca58fb97c13517cc2a98f8475e8208b0702f6a7814704389d15",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_rig_walk_E_revision9_prompt.txt",
+    "sha256": "06c76d5529c5d95c50f53e22d0e0e831658924fa6df6706b99c91bfb3a1adfda",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_upright_revision3.png",
+    "sha256": "fe32eba24276646a33f75a5a03eb8de8b89b0410d74f0a9cb14e550f534ed59e",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_walk_E_pilot_revision1.png",
+    "sha256": "a8df06ec7e3ed695c6afa2f078dfa3472de8353b06d3d34dad975b21f44c78fc",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/overhead_SN_revision6_prompts.json",
+    "sha256": "e5333e184b1ffa2553290fa75b43b84a560cb4cc0f362969bebd07fd77b78a8a",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/pilot_prompts.json",
+    "sha256": "b9461013aad20679c6e04b1aec6fdaf1eee58c50f1770e0e520d47a5332407a1",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/reference_prompts.json",
+    "sha256": "4f3a7895304b029ab535bdf6d662281de164fd1a63cf8cb5e71fb28cf590b432",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/review_history.json",
+    "sha256": "49781895901bf1d92f7744925e807540db50a893ad5a314b3925619e088bed0b",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/style_reference_2x.png",
+    "sha256": "b08517dbeb144ad16239c25e7e286f83027e7326e3ea6c233e675ad825982445",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/triceratops_SN_camera_reference_4x.png",
+    "sha256": "f8f39fb102028a83e01e64980d23b395deca5ef449f73039ee03a194873f17b6",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/triceratops_camera_posture_reference_4x.png",
+    "sha256": "99a651cb3f965956609dcb2d34e47bb83f59f1f850648ce6dea1ec99189a0353",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/upright_limbs_revision3_prompts.json",
+    "sha256": "990f916fc3d4c5fda802f9c073a73bbc597f47ac22973f4c5c3b45279794216c",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/anatomy_side_clay.png",
+    "sha256": "07679e3dee9fa36d256f3bb6cdff59744a62b7ad1a029665e75bdadd8ecd0e8d",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/anatomy_side_joints.png",
+    "sha256": "d43c618527649ad6612648237443aeb2d4951d04c7401e025ea592f54a20b81e",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_000.png",
+    "sha256": "672a72e635698b64769923ead1994808f9999e2606c753827ff2f102180c3223",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_001.png",
+    "sha256": "2b6bd1bb1a9a5a584878b5ff4e275dc8db1ce59a317a3243a9510603e4ec95c6",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_002.png",
+    "sha256": "2b4d053707d40e5bfd8adcc7c32f524853ab43d4e32828978beac9e46fa5363e",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_003.png",
+    "sha256": "74c190df3bb385da930b636873edf811130c51a8345e4f7d749328be87dab02e",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_004.png",
+    "sha256": "b2f2688eff688e3e1b64e4d231caba4c865758806e7f571f87bbc39e468343f8",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_005.png",
+    "sha256": "d14a3eb43250f00eec1dacb2331b9e3346d96a1e4d9b048511e705397079bc06",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_006.png",
+    "sha256": "735ac21afa6dc985f1acae766b5da711d3e8fecfe79521ff10e353be487ed817",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_007.png",
+    "sha256": "c09f8e31847f879e4685974929b5b80f2102f215684122d32235cebbcea50a3a",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_008.png",
+    "sha256": "5000bd4bcae3bb29d951a6009c63064d36b1ff9775bb2255a433c4bc22845f7e",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_009.png",
+    "sha256": "3de5dd2567d7b4faf189f0c062e530a56141f899f00e67488428a9ec2bb56b5a",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_010.png",
+    "sha256": "f821029c6b7b64e2af43f38b412f164adab74c53f8f3dd00f58074f534a51c8f",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/guide_E_011.png",
+    "sha256": "d28bac44b8ed62e7c408f525b4acf28e8201a1ceaf00d6fd79409f82ed12ae1a",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/iguanodon_reference.blend",
+    "sha256": "764e54fcd84648647af40b10ee5f5d918f79c3eb3ccf7735ea84b51dda481f22",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/imagegen_prompt.txt",
+    "sha256": "efaf39091714ec658c079a0355c39d7123799d1e0a844e141865821d9c788e32",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/reference_E_atlas.png",
+    "sha256": "ff6dbcedb2784a631cf348b8b45eb46a91ff350f192c6ac9591f924ec4c76347",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/reference_manifest.json",
+    "sha256": "4b8fc29649fd5aeba70b00c80ec104f767923592d5c63aa3964bb57adebf5dba",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  },
+  {
+    "file": "Reference_Rig/walk_E_pose_guide.png",
+    "sha256": "27c511b417f1270c56afbafcb2fc2d51e2bff0dba0995676d34eb96b5851ec9a",
+    "status": "authored_reference_not_game_asset",
+    "production_approved": false
+  }
+]

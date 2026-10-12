@@ -1,0 +1,53 @@
+[
+  {
+    "file": "Source_Generated/iguanodon_rig_walk_E_revision8.png",
+    "sha256": "42f7567f483c9b7a1e3317947fff049cf027ea6b71af0a0fe02b0708bc4cf2ba",
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "Reference_Rig/walk_E_pose_guide.png",
+      "Source_Generated/triceratops_camera_posture_reference_4x.png",
+      "Source_Generated/iguanodon_overhead_revision5.png"
+    ],
+    "prompt": "Reference_Rig/imagegen_prompt.txt",
+    "actual_dimensions": [
+      1536,
+      1024
+    ],
+    "review": "rejected: old identity overrides joint reference",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_rig_walk_E_revision9.png",
+    "sha256": "92b6592195a9cca58fb97c13517cc2a98f8475e8208b0702f6a7814704389d15",
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "Reference_Rig/walk_E_pose_guide.png",
+      "Source_Generated/triceratops_camera_posture_reference_4x.png"
+    ],
+    "prompt": "Source_Generated/iguanodon_rig_walk_E_revision9_prompt.txt",
+    "actual_dimensions": [
+      1536,
+      1024
+    ],
+    "review": "rejected: camera becomes side profile",
+    "production_approved": false
+  },
+  {
+    "file": "Source_Generated/iguanodon_rig_walk_E_revision10.png",
+    "sha256": "3d4819cc4900403f232a3a4858abdf112f41b5dd50dd28aa6cdcbcd329b2d613",
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "Reference_Rig/walk_E_pose_guide.png"
+    ],
+    "prompt": "Source_Generated/iguanodon_rig_walk_E_revision10_prompt.txt",
+    "actual_dimensions": [
+      1536,
+      1024
+    ],
+    "review": "review-only: dorsal camera improved, motion/markings insufficient",
+    "production_approved": false
+  }
+]

@@ -1,0 +1,386 @@
+[
+  {
+    "file": "assets/frames/edmontosaurus_idle_S_000.png",
+    "species": "edmontosaurus",
+    "state": "idle",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/edmontosaurus_S_four_legs_revision7.png",
+    "source_crop": [
+      0,
+      0,
+      768,
+      1024
+    ],
+    "source_sample_stride": 7,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      397,
+      430
+    ],
+    "origin": [
+      72,
+      64
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_four_limbs_anatomical_reference_checked",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/edmontosaurus_idle_N_000.png",
+    "species": "edmontosaurus",
+    "state": "idle",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/edmontosaurus_overhead_SN_revision6.png",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 7,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      380,
+      575
+    ],
+    "origin": [
+      72,
+      80
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_four_limbs_anatomical_reference_checked",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/edmontosaurus_idle_E_000.png",
+    "species": "edmontosaurus",
+    "state": "idle",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/edmontosaurus_overhead_revision5.png",
+    "source_crop": [
+      0,
+      0,
+      768,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      355,
+      513
+    ],
+    "origin": [
+      68,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_and_upright_limb_candidate",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/edmontosaurus_idle_W_000.png",
+    "species": "edmontosaurus",
+    "state": "idle",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/edmontosaurus_overhead_revision5.png",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      410,
+      513
+    ],
+    "origin": [
+      76,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_and_upright_limb_candidate",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/iguanodon_idle_S_000.png",
+    "species": "iguanodon",
+    "state": "idle",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/iguanodon_overhead_SN_revision6.png",
+    "source_crop": [
+      0,
+      0,
+      768,
+      1024
+    ],
+    "source_sample_stride": 7,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      430,
+      444
+    ],
+    "origin": [
+      72,
+      64
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_four_limbs_anatomical_reference_checked",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/iguanodon_idle_N_000.png",
+    "species": "iguanodon",
+    "state": "idle",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/iguanodon_overhead_SN_revision6.png",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 7,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      337,
+      580
+    ],
+    "origin": [
+      72,
+      80
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_four_limbs_anatomical_reference_checked",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/iguanodon_idle_E_000.png",
+    "species": "iguanodon",
+    "state": "idle",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/iguanodon_overhead_revision5.png",
+    "source_crop": [
+      0,
+      0,
+      768,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      350,
+      508
+    ],
+    "origin": [
+      68,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_and_upright_limb_candidate",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/iguanodon_idle_W_000.png",
+    "species": "iguanodon",
+    "state": "idle",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/iguanodon_overhead_revision5.png",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      417,
+      510
+    ],
+    "origin": [
+      76,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "overhead_camera_and_upright_limb_candidate",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/archelon_idle_S_000.png",
+    "species": "archelon",
+    "state": "idle",
+    "direction": "S",
+    "frame": 0,
+    "source": "Source_Generated/archelon_reference_revision1.png",
+    "source_crop": [
+      0,
+      0,
+      768,
+      512
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      386,
+      184
+    ],
+    "origin": [
+      72,
+      64
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "anatomical_reference_candidate",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/archelon_idle_N_000.png",
+    "species": "archelon",
+    "state": "idle",
+    "direction": "N",
+    "frame": 0,
+    "source": "Source_Generated/archelon_reference_revision1.png",
+    "source_crop": [
+      0,
+      512,
+      768,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      383,
+      282
+    ],
+    "origin": [
+      72,
+      80
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "anatomical_reference_candidate",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/archelon_idle_E_000.png",
+    "species": "archelon",
+    "state": "idle",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/archelon_reference_revision1.png",
+    "source_crop": [
+      768,
+      0,
+      1536,
+      512
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      278,
+      252
+    ],
+    "origin": [
+      60,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "anatomical_reference_candidate",
+    "status": "prototype_static",
+    "production_approved": false
+  },
+  {
+    "file": "assets/frames/archelon_idle_W_000.png",
+    "species": "archelon",
+    "state": "idle",
+    "direction": "W",
+    "frame": 0,
+    "source": "Source_Generated/archelon_reference_revision1.png",
+    "source_crop": [
+      768,
+      512,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 6,
+    "sampling_offset": 3,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      487,
+      237
+    ],
+    "origin": [
+      84,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "review": "anatomical_reference_candidate",
+    "status": "prototype_static",
+    "production_approved": false
+  }
+]

@@ -1,0 +1,278 @@
+[
+  {
+    "file": "review/iguanodon_rig/iguanodon_walk_E_000.png",
+    "species": "iguanodon",
+    "state": "walk",
+    "direction": "E",
+    "frame": 0,
+    "source": "Source_Generated/iguanodon_rig_walk_E_revision10.png",
+    "source_crop": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_sample_stride": 4,
+    "sampling_offset": 2,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      233,
+      256
+    ],
+    "origin": [
+      68,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "review": "camera_candidate; generated motion does not reliably follow guide; review only",
+    "atlas": "review/iguanodon_rig/iguanodon_walk_E_atlas.png",
+    "atlas_crop": [
+      0,
+      0,
+      144,
+      144
+    ],
+    "registration_offset": [
+      10,
+      8
+    ],
+    "source_sha256": "3d4819cc4900403f232a3a4858abdf112f41b5dd50dd28aa6cdcbcd329b2d613",
+    "export_sha256": "d452e77342cb4c169d4030068e23005384d49214f7f7d9767ee92c0f4fdbec4b"
+  },
+  {
+    "file": "review/iguanodon_rig/iguanodon_walk_E_001.png",
+    "species": "iguanodon",
+    "state": "walk",
+    "direction": "E",
+    "frame": 1,
+    "source": "Source_Generated/iguanodon_rig_walk_E_revision10.png",
+    "source_crop": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "source_sample_stride": 4,
+    "sampling_offset": 2,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      233,
+      256
+    ],
+    "origin": [
+      68,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "review": "camera_candidate; generated motion does not reliably follow guide; review only",
+    "atlas": "review/iguanodon_rig/iguanodon_walk_E_atlas.png",
+    "atlas_crop": [
+      144,
+      0,
+      144,
+      144
+    ],
+    "registration_offset": [
+      10,
+      8
+    ],
+    "source_sha256": "3d4819cc4900403f232a3a4858abdf112f41b5dd50dd28aa6cdcbcd329b2d613",
+    "export_sha256": "0c51e617a0db0216bb6c56679a7c2aeda5b395014ddb770f9d6010ea6a3ff321"
+  },
+  {
+    "file": "review/iguanodon_rig/iguanodon_walk_E_002.png",
+    "species": "iguanodon",
+    "state": "walk",
+    "direction": "E",
+    "frame": 2,
+    "source": "Source_Generated/iguanodon_rig_walk_E_revision10.png",
+    "source_crop": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "source_sample_stride": 4,
+    "sampling_offset": 2,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      233,
+      256
+    ],
+    "origin": [
+      68,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "review": "camera_candidate; generated motion does not reliably follow guide; review only",
+    "atlas": "review/iguanodon_rig/iguanodon_walk_E_atlas.png",
+    "atlas_crop": [
+      288,
+      0,
+      144,
+      144
+    ],
+    "registration_offset": [
+      10,
+      8
+    ],
+    "source_sha256": "3d4819cc4900403f232a3a4858abdf112f41b5dd50dd28aa6cdcbcd329b2d613",
+    "export_sha256": "6655429f7068c957d10057f0d9014d3aa028e2f4b4f6c7a43c6228fd97c9a3ab"
+  },
+  {
+    "file": "review/iguanodon_rig/iguanodon_walk_E_003.png",
+    "species": "iguanodon",
+    "state": "walk",
+    "direction": "E",
+    "frame": 3,
+    "source": "Source_Generated/iguanodon_rig_walk_E_revision10.png",
+    "source_crop": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "source_sample_stride": 4,
+    "sampling_offset": 2,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      233,
+      250
+    ],
+    "origin": [
+      68,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "review": "camera_candidate; generated motion does not reliably follow guide; review only",
+    "atlas": "review/iguanodon_rig/iguanodon_walk_E_atlas.png",
+    "atlas_crop": [
+      0,
+      144,
+      144,
+      144
+    ],
+    "registration_offset": [
+      10,
+      10
+    ],
+    "source_sha256": "3d4819cc4900403f232a3a4858abdf112f41b5dd50dd28aa6cdcbcd329b2d613",
+    "export_sha256": "0865c80afce29680d7cc5e4b5c2b2faf5d76ef4cb68e37d49df5e975c496e1f8"
+  },
+  {
+    "file": "review/iguanodon_rig/iguanodon_walk_E_004.png",
+    "species": "iguanodon",
+    "state": "walk",
+    "direction": "E",
+    "frame": 4,
+    "source": "Source_Generated/iguanodon_rig_walk_E_revision10.png",
+    "source_crop": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "source_sample_stride": 4,
+    "sampling_offset": 2,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      233,
+      250
+    ],
+    "origin": [
+      68,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "review": "camera_candidate; generated motion does not reliably follow guide; review only",
+    "atlas": "review/iguanodon_rig/iguanodon_walk_E_atlas.png",
+    "atlas_crop": [
+      144,
+      144,
+      144,
+      144
+    ],
+    "registration_offset": [
+      10,
+      10
+    ],
+    "source_sha256": "3d4819cc4900403f232a3a4858abdf112f41b5dd50dd28aa6cdcbcd329b2d613",
+    "export_sha256": "63dad67cffd4eb9165a971ea55ff8dd882346c593ecc29433a6239c765320685"
+  },
+  {
+    "file": "review/iguanodon_rig/iguanodon_walk_E_005.png",
+    "species": "iguanodon",
+    "state": "walk",
+    "direction": "E",
+    "frame": 5,
+    "source": "Source_Generated/iguanodon_rig_walk_E_revision10.png",
+    "source_crop": [
+      1024,
+      512,
+      1536,
+      1024
+    ],
+    "source_sample_stride": 4,
+    "sampling_offset": 2,
+    "alpha_threshold": 192,
+    "source_landmark": [
+      233,
+      250
+    ],
+    "origin": [
+      68,
+      72
+    ],
+    "size": [
+      144,
+      144
+    ],
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "review": "camera_candidate; generated motion does not reliably follow guide; review only",
+    "atlas": "review/iguanodon_rig/iguanodon_walk_E_atlas.png",
+    "atlas_crop": [
+      288,
+      144,
+      144,
+      144
+    ],
+    "registration_offset": [
+      10,
+      10
+    ],
+    "source_sha256": "3d4819cc4900403f232a3a4858abdf112f41b5dd50dd28aa6cdcbcd329b2d613",
+    "export_sha256": "4f77d3dc64519dc9215a0b1a5fa4122148b4433fe957d183fb044882df7f40f4"
+  }
+]

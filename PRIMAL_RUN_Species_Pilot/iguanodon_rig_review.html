@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="da"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Iguanodon · reference og spriteforsøg</title>
+<style>
+body{font:16px system-ui;background:#151b19;color:#e8ece1;margin:24px;max-width:1080px}h1{font-size:24px}
+.row{display:flex;flex-wrap:wrap;gap:20px}.panel{max-width:460px}canvas{width:432px;max-width:100%;height:auto;image-rendering:pixelated;background:#e8ece1}
+button,input{font:inherit;margin:8px;padding:6px}a{color:#a2d4c1}small{display:block}input[type=range]{width:210px}
+</style>
+<h1>Iguanodon bernissartensis · firebenet pilot</h1>
+<p>Venstre: håndbygget 3D-reference med faste ledlængder og firetakts gang. Højre: seks imagegen-poses.
+Spriteforsøget følger endnu ikke bevægelsen præcist nok til at være en færdig animation.</p>
+<button id="play">Pause</button><button id="step">Næste pose</button><button id="background">Mørk baggrund</button>
+<label>Tempo <input id="speed" type="range" min="0.25" max="2" step="0.25" value="1"></label>
+<label>Pose <input id="frame" type="range" min="0" max="11" step="1" value="0"></label>
+<div class="row"><div class="panel"><h2>Led-/kropsreference</h2><canvas id="reference" width="432" height="432"></canvas><small id="contacts"></small></div>
+<div class="panel"><h2>Spriteforsøg · review</h2><canvas id="sprite" width="144" height="144"></canvas><small id="counter"></small></div></div>
+<p>Referencegangarten er en animationshypotese, ikke en målt fossilbevægelse. Modellen er en anatomisk proxy, ikke en fossilscan.
+Kun østretningen afprøves her. Referencen og de nye sprites er ikke tilføjet spillet.</p>
+<p><a href="IGUANODON_RESEARCH.md">Litteratur og begrundelse</a> · <a href="Reference_Rig/iguanodon_reference.blend">Blender-reference, første pose</a> ·
+<a href="review/iguanodon_rig/validation_report.json">Kontrolrapport</a> · <a href="Source_Generated/iguanodon_rig_walk_E_revision10.png">Råt spriteforsøg</a></p>
+<script>
+'use strict';
+(async()=>{
+const load=src=>new Promise((resolve,reject)=>{const im=new Image;im.onload=()=>resolve(im);im.onerror=()=>reject(Error(src));im.src=src;});
+const [rig,referenceAtlas,spriteAtlas]=await Promise.all([fetch('Reference_Rig/reference_manifest.json').then(r=>r.json()),
+ load('Reference_Rig/reference_E_atlas.png'),load('review/iguanodon_rig/iguanodon_walk_E_atlas.png')]);
+let playing=true,dark=false,phase=0,last=0,current=0;
+const range=document.getElementById('frame'),speed=document.getElementById('speed');
+function draw(){const i=current,j=Math.floor(i/2);for(const [id,im,k,size] of [['reference',referenceAtlas,i,432],['sprite',spriteAtlas,j,144]]){
+ const c=document.getElementById(id),ctx=c.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.fillStyle=dark?'#151b19':'#e8ece1';ctx.fillRect(0,0,c.width,c.height);ctx.drawImage(im,(k%3)*size,Math.floor(k/3)*size,size,size,0,0,size,size);}
+ range.value=i;document.getElementById('contacts').textContent='Standfase: '+Object.entries(rig.frames[i].limbs).filter(([,v])=>v.stance).map(([k])=>k).join(', ');
+ document.getElementById('counter').textContent=`Reference ${i+1}/12 · Sprite ${j+1}/6 · prototype`;
+ window.iguanodonReview={ready:true,frame:i,spriteFrame:j,playing,dark};}
+document.getElementById('play').onclick=()=>{playing=!playing;document.getElementById('play').textContent=playing?'Pause':'Afspil';draw();};
+document.getElementById('step').onclick=()=>{playing=false;document.getElementById('play').textContent='Afspil';current=(current+1)%12;phase=current;draw();};
+document.getElementById('background').onclick=()=>{dark=!dark;document.getElementById('background').textContent=dark?'Lys baggrund':'Mørk baggrund';draw();};
+range.oninput=()=>{playing=false;document.getElementById('play').textContent='Afspil';current=Number(range.value);phase=current;draw();};
+function tick(t){if(playing&&last){phase=(phase+Math.min(t-last,100)/750*12*Number(speed.value))%12;current=Math.floor(phase);draw();}last=t;requestAnimationFrame(tick);}draw();requestAnimationFrame(tick);
+})().catch(e=>{document.body.append('Indlæsningsfejl: '+e.message);});
+</script></html>
