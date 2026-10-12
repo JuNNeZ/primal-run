@@ -1,5 +1,6 @@
 """Independent geometry and mechanical-export checks; no visual certification."""
 import hashlib
+import base64
 import json
 import math
 import sys
@@ -40,6 +41,11 @@ for i,p in enumerate(frames):
     assert np.all(a[:,:2]==0) and np.all(a[:,-2:]==0)
 
 entries=json.loads((D/'manifest.json').read_text())
+html=(P/'iguanodon_rig_review.html').read_text()
+embedded=json.loads(html.split('<script id="review-data" type="application/json">',1)[1].split('</script>',1)[0])
+assert embedded['rig']==rig
+for key,path in [('referenceAtlas',R/'reference_E_atlas.png'),('spriteAtlas',D/'iguanodon_walk_E_atlas.png')]:
+    assert base64.b64decode(embedded[key].split(',',1)[1],validate=True)==path.read_bytes()
 hashes=[]
 for e in entries:
     path=P/e['file']
@@ -63,6 +69,7 @@ for e in entries:
 assert len(set(hashes))==6, 'exact duplicate export'
 report=json.loads((D/'validation_report.json').read_text())
 report.update(rig_geometry='PASS',reference_pose_count=12,bone_length_checks=length_checks,
+              embedded_html_data='PASS: both PNGs byte-identical and complete pose JSON embedded',
               world_stance_contact_checks=contacts,constant_root=True,no_reference_sidesteps=True,
               sprite_pixels='PASS:144RGBA/fixed32/binary alpha/margins/source hashes/explicit sampling',
               unique_export_count=len(set(hashes)),visual_approval=False)

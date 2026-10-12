@@ -6,6 +6,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from export_species_pilot import sample
+from build_iguanodon_review_html import build as build_html
 
 ROOT = Path(__file__).resolve().parents[1]
 P = ROOT/'PRIMAL_RUN_Species_Pilot'
@@ -71,4 +72,5 @@ report = {'rig_geometry': 'pending independent validation', 'sprite_export_count
           'skill_ready': False,
           'next_step': 'A pose-constrained renderer or locked rig textures is needed before mass production; prompting alone did not lock motion.'}
 (D/'validation_report.json').write_text(json.dumps(report,indent=2)+'\n')
+build_html()
 print('Exported six REVIEW-ONLY sprites and twelve reference poses; no production approval.')

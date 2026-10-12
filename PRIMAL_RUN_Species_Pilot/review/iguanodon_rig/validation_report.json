@@ -20,10 +20,25 @@
   "visual_approval": false,
   "browser": {
     "status": "PASS",
-    "pose_checks": 24,
-    "actual_canvas_pixel_checks": 24,
+    "pose_checks": 48,
+    "actual_canvas_pixel_checks": 48,
     "pause_step_loop_backgrounds": true,
+    "portable_scenarios": [
+      {
+        "mode": "http_without_external_assets",
+        "status": "PASS",
+        "direct_file_navigation": "not_applicable",
+        "external_asset_requests": 0
+      },
+      {
+        "mode": "copied_html_offline_asset_isolation",
+        "status": "PASS",
+        "direct_file_navigation": "blocked_by_managed_browser_policy",
+        "external_asset_requests": 0
+      }
+    ],
     "renderer": "standalone HTML Canvas; no GDevelop production certification",
     "errors": []
-  }
+  },
+  "embedded_html_data": "PASS: both PNGs byte-identical and complete pose JSON embedded"
 }

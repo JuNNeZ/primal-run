@@ -1,10 +1,11 @@
 # Artsforsøg og Iguanodon-reference
 
 Aktuelt forsøg: **kun Iguanodon**, østretning, firebenet gang.
-Åbn `iguanodon_rig_review.html` gennem repositoryets HTTP-preview for at
+Åbn `iguanodon_rig_review.html` direkte eller gennem repositoryets HTTP-preview for at
 sammenligne tolv 3D-referenceposes med seks genererede sprites.
-Afspilleren henter ét PNG-ark til referencen og ét til spriteforsøget;
-atlasudsnit bevarer de enkelte poses pixels uden skalering eller rotation.
+HTML-filen indeholder begge PNG-ark og posedata, så den også virker alene og
+offline. Atlasudsnit bevarer de enkelte poses pixels uden skalering eller
+rotation. Dokumentationslinks kræver stadig den samlede pakke.
 
 Den ortografiske kamerareference og de faste IK-led er brugbare til at
 beskrive poserne. Imagegen holder endnu ikke fodbevægelse og markeringer
@@ -22,6 +23,7 @@ previews. De er historiske prototyper. Ingen af de tre arter er gjort spilbare.
 ```sh
 blender -b --python tools/iguanodon_reference_rig.py
 python tools/build_iguanodon_rig_review.py
+python tools/build_iguanodon_review_html.py  # kun genpakning af HTML
 python tools/validate_iguanodon_rig.py
 PRIMAL_CHROME_PATH=/usr/bin/chromium node --test tests/iguanodon-rig-browser.cjs
 ```
