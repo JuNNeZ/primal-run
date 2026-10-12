@@ -1,0 +1,2538 @@
+{
+  "generator": "tools/draw_new_species.py",
+  "validator": "tools/validate_new_species.py",
+  "review": "new_species_review.html",
+  "handoff": "NEW_SPECIES_ART.md",
+  "status": "placeholder static drawing; Codex to animate",
+  "palette": "palette.json (Primal Earth 32), alpha 0/255, transparent RGB 0",
+  "method": "Deterministic procedural drawing: each animal is one small 3D model of ellipsoids and flat polygon slabs, ray-cast from a fixed overhead camera (image_up = 0.82*y + 0.36*z) with a fixed light, 3x supersampled, quantised to palette ramps with ordered dithering, 1 px #151b19 outline. S/E/N are separate renders of the same model (consistent light); W is the exact mirror of E. Corpse = same model in an opisthotonic pose rolled onto its side with decayed colours; skeleton = vertebrae, ribs, skull and limb bones of the same pose.",
+  "conventions": {
+    "live": "144x144 RGBA, origin/body anchor (hip) 72,72, directions S N E W like assets/enemy_full and assets/player_full",
+    "corpse_skeleton": "144x144 RGBA, E orientation, like assets/corpses/<species>_decayed_E_0.png and <species>_skeleton_E_0.png (origin 72,72); carcass bbox centred near 74,78 like the existing props; skeleton shares the corpse registration",
+    "avatar": "64x64 RGBA, origin 32,32, head only, like assets/avatars/<species>_idle_000.png"
+  },
+  "not_wired": "No game code, project.json or runtime manifest references these files.",
+  "species": {
+    "spinosaurus": {
+      "role": "playable",
+      "look": "long crocodile-like snout, tall rust/orange sail, dark teal-grey body, long tail",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 2,
+      "files": {
+        "S": "assets/new_species/spinosaurus_S.png",
+        "N": "assets/new_species/spinosaurus_N.png",
+        "E": "assets/new_species/spinosaurus_E.png",
+        "W": "assets/new_species/spinosaurus_W.png",
+        "corpse": "assets/new_species/spinosaurus_corpse.png",
+        "skeleton": "assets/new_species/spinosaurus_skeleton.png",
+        "avatar": "assets/new_species/spinosaurus_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        76,
+        94
+      ],
+      "alpha_bbox": {
+        "S": [
+          48,
+          18,
+          96,
+          124
+        ],
+        "N": [
+          48,
+          12,
+          96,
+          123
+        ],
+        "E": [
+          8,
+          52,
+          140,
+          92
+        ],
+        "W": [
+          4,
+          52,
+          136,
+          92
+        ],
+        "corpse": [
+          16,
+          52,
+          133,
+          103
+        ],
+        "skeleton": [
+          37,
+          53,
+          133,
+          103
+        ],
+        "avatar": [
+          21,
+          10,
+          43,
+          48
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "31dd8e5f7c064e14f3cd62ae0efcff8b88b37e2405780b9fed5e5247817a1b7e",
+        "N": "73e6586e78fb33ee3f4706cea3a0ea68f46017aeb78a5402dba3943907599a21",
+        "E": "4434068df96f3919ae1993b7b87d30f445d263ddc9fa536ac433a50b8f2e8ca9",
+        "W": "7bbf2b7c4b1225b7cac8b9f85972bb381158ed826b6b7dee134cf31e06ca9e23",
+        "corpse": "1d1702001e8ed9634972462ea986347120fb6f0c9cb949dd1db958730b87faa1",
+        "skeleton": "d64c8d9e77881d1ee4c0d36461e0d2e2d151dece33e7f8401c6686f6cca3cfff",
+        "avatar": "741f796bf5ee88ddd5901152f936886a16b73a35f7be58718a8b9a08e46fc87c"
+      }
+    },
+    "allosaurus": {
+      "role": "playable",
+      "look": "large theropod, small rust horn crests above the eyes, tan/brown with dark bands",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/allosaurus_S.png",
+        "N": "assets/new_species/allosaurus_N.png",
+        "E": "assets/new_species/allosaurus_E.png",
+        "W": "assets/new_species/allosaurus_W.png",
+        "corpse": "assets/new_species/allosaurus_corpse.png",
+        "skeleton": "assets/new_species/allosaurus_skeleton.png",
+        "avatar": "assets/new_species/allosaurus_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        65,
+        94
+      ],
+      "alpha_bbox": {
+        "S": [
+          45,
+          18,
+          99,
+          122
+        ],
+        "N": [
+          45,
+          13,
+          99,
+          123
+        ],
+        "E": [
+          8,
+          49,
+          138,
+          94
+        ],
+        "W": [
+          6,
+          49,
+          136,
+          94
+        ],
+        "corpse": [
+          25,
+          51,
+          123,
+          104
+        ],
+        "skeleton": [
+          27,
+          52,
+          122,
+          104
+        ],
+        "avatar": [
+          19,
+          13,
+          45,
+          45
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "dad99563c351b443a84644aec90583405c6367b785cd01c2c473c59ddb89c33b",
+        "N": "27091be74ccf0c570f82ffb4314e486ac68c4a1c10ea5e707f245cae1168709b",
+        "E": "4bae358ccdf51bf100253dc022ba6fa3cbd7d6de8238c61992599a86e5f463a0",
+        "W": "25127025e8b02fc6659fb7e716945abc44c9cade4417d8e0b249147293bda2e4",
+        "corpse": "eddf6ec212d7deb0f7291464ae240239a192f70324f091d5df4bb4737f7d13f3",
+        "skeleton": "139a8dedd135e9695e3b6431e8e0d9f2ccd323ad5b9da904875f5ab2612d1d2d",
+        "avatar": "c8d3892653912811f93deb111c2597d36098e2696e9750d5ab54dc97c5f4da5e"
+      }
+    },
+    "stegosaurus": {
+      "role": "playable",
+      "look": "olive quadruped, two alternating rows of rust plates, four-spike thagomizer, small head",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/stegosaurus_S.png",
+        "N": "assets/new_species/stegosaurus_N.png",
+        "E": "assets/new_species/stegosaurus_E.png",
+        "W": "assets/new_species/stegosaurus_W.png",
+        "corpse": "assets/new_species/stegosaurus_corpse.png",
+        "skeleton": "assets/new_species/stegosaurus_skeleton.png",
+        "avatar": "assets/new_species/stegosaurus_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        75,
+        92
+      ],
+      "alpha_bbox": {
+        "S": [
+          48,
+          20,
+          96,
+          114
+        ],
+        "N": [
+          48,
+          26,
+          96,
+          119
+        ],
+        "E": [
+          12,
+          50,
+          126,
+          92
+        ],
+        "W": [
+          18,
+          50,
+          132,
+          92
+        ],
+        "corpse": [
+          20,
+          56,
+          128,
+          101
+        ],
+        "skeleton": [
+          21,
+          56,
+          127,
+          101
+        ],
+        "avatar": [
+          20,
+          13,
+          44,
+          46
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "e6a97581b136c029dae9bba45cf134b32a2edc8de832b1abb1b8c94c568e5abd",
+        "N": "3e60e7c6efcda5df95580869282f79077d052b5bc6adb73ada9ef80a4057568a",
+        "E": "1d060a85bf327099b709cda5a6dd63843b1af7f23de2a18d2ab98cf1f4742fe1",
+        "W": "393b8e5c2fc6ff63739bf144105f823bf36ff970804d27b37bd1387863e7981c",
+        "corpse": "f4a6b73a9f8553f1fd2ccb599f46a84416312a12c3d866d2afb706aa888a4532",
+        "skeleton": "11e11edefaf0f2bbac7bc91d003c0cc4f447d8c3971ebf75ccd1ebe1e5812ed1",
+        "avatar": "bf101b4c3ba70676c9bc7a798e40a933cd45cda521d83ef35c10e07a3f6d063e"
+      }
+    },
+    "therizinosaurus": {
+      "role": "playable",
+      "look": "pot-bellied, grey/cream feathers, long neck, small beaked head, long scythe claws",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/therizinosaurus_S.png",
+        "N": "assets/new_species/therizinosaurus_N.png",
+        "E": "assets/new_species/therizinosaurus_E.png",
+        "W": "assets/new_species/therizinosaurus_W.png",
+        "corpse": "assets/new_species/therizinosaurus_corpse.png",
+        "skeleton": "assets/new_species/therizinosaurus_skeleton.png",
+        "avatar": "assets/new_species/therizinosaurus_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        78,
+        92
+      ],
+      "alpha_bbox": {
+        "S": [
+          45,
+          23,
+          99,
+          113
+        ],
+        "N": [
+          45,
+          18,
+          99,
+          115
+        ],
+        "E": [
+          16,
+          49,
+          128,
+          94
+        ],
+        "W": [
+          16,
+          49,
+          128,
+          94
+        ],
+        "corpse": [
+          22,
+          53,
+          125,
+          102
+        ],
+        "skeleton": [
+          32,
+          54,
+          125,
+          102
+        ],
+        "avatar": [
+          20,
+          13,
+          44,
+          46
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "6741546ccd5cde446912aac48cfd400059f9868e60c96035864fe493ca8e3a13",
+        "N": "4c054fa4c204c9be747af93822048dbbb0876b3141476fe850493bd349d4b306",
+        "E": "44ccd836fd84751f3e0a1c2caed6b3c4adaeede52afe9eab5560fbecc26e5a06",
+        "W": "ff230baee6ac502d7ff8aae7a78ba0f1ed4ffaade2317cdde049ffb60ec832e7",
+        "corpse": "5ae34f8654235ccd98d0e5584f6a313e6a6a74a7a6cb10f655508b30ae844b20",
+        "skeleton": "a00b8d2d7a5cc1464cc6b9e9843fd02dace18dc253ef25e6278795629c07631d",
+        "avatar": "a0a9b01a96818fa177d743e254cae089b7fd8cfbdaee52d86bd5e0908ee065bb"
+      }
+    },
+    "pteranodon": {
+      "role": "playable",
+      "look": "pterosaur in flight from above, pale/grey wings, long beak, rust backward crest",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/pteranodon_S.png",
+        "N": "assets/new_species/pteranodon_N.png",
+        "E": "assets/new_species/pteranodon_E.png",
+        "W": "assets/new_species/pteranodon_W.png",
+        "corpse": "assets/new_species/pteranodon_corpse.png",
+        "skeleton": "assets/new_species/pteranodon_skeleton.png",
+        "avatar": "assets/new_species/pteranodon_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        66,
+        96
+      ],
+      "alpha_bbox": {
+        "S": [
+          10,
+          55,
+          134,
+          98
+        ],
+        "N": [
+          10,
+          38,
+          134,
+          82
+        ],
+        "E": [
+          56,
+          17,
+          107,
+          118
+        ],
+        "W": [
+          37,
+          17,
+          88,
+          118
+        ],
+        "corpse": [
+          49,
+          41,
+          99,
+          115
+        ],
+        "skeleton": [
+          50,
+          41,
+          98,
+          115
+        ],
+        "avatar": [
+          25,
+          10,
+          39,
+          49
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "c21d267f8ab581d2be0aa153723290780350bd4056904a9e54bc5bbe77ba2ffa",
+        "N": "c7a79e42f70efbd6095bca290a9f9672b0eb404dd3584fe7d3069a082248ea56",
+        "E": "a964f7ec2c86e6345096446dea2e4006e5ca2e81a631be6a9018665ae89d18f9",
+        "W": "4214e7568baa4816452f978863aef0d60e7001eefea6434b1b8362187601975c",
+        "corpse": "0fc2c6154e125065028461f4d8f5db17f48bacd4d9fadc496ed85792c44ca5a6",
+        "skeleton": "02bd05f515b16265151bf396e57b76f2c663026a5c5cb500e3e1d121ea1d22f3",
+        "avatar": "c7e71e15edc76edaf37dbe09e453285221b095e85e384801a2c15a2df9a10d4d"
+      }
+    },
+    "microraptor": {
+      "role": "playable",
+      "look": "tiny four-winged raptor, dark iridescent black/blue/indigo",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/microraptor_S.png",
+        "N": "assets/new_species/microraptor_N.png",
+        "E": "assets/new_species/microraptor_E.png",
+        "W": "assets/new_species/microraptor_W.png",
+        "corpse": "assets/new_species/microraptor_corpse.png",
+        "skeleton": "assets/new_species/microraptor_skeleton.png",
+        "avatar": "assets/new_species/microraptor_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        82,
+        85
+      ],
+      "alpha_bbox": {
+        "S": [
+          51,
+          43,
+          93,
+          85
+        ],
+        "N": [
+          51,
+          53,
+          93,
+          97
+        ],
+        "E": [
+          40,
+          51,
+          91,
+          86
+        ],
+        "W": [
+          53,
+          51,
+          104,
+          86
+        ],
+        "corpse": [
+          49,
+          69,
+          99,
+          87
+        ],
+        "skeleton": [
+          61,
+          69,
+          99,
+          86
+        ],
+        "avatar": [
+          22,
+          18,
+          42,
+          40
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "474071fe725c994923908e9c158f0a3e1cfcbcb1293f0d44aaeb9df2be4d2413",
+        "N": "d5cfd14340f206c986673ff86da98577f2f9e95f86a8258288e9e41555558da5",
+        "E": "b2e5fd8aef5447e9cdad889f2f8ab1da922da2b4030e7e50340cdaf87acd206d",
+        "W": "32ecbd9dc58eccc2fda42b2ee0eee52c472a72d84940f989489ac7f6158511ee",
+        "corpse": "63c24aac190ee37e48b18b1ae2bb1f0f8660f34e6ee6d24c5dc4328e70b92edc",
+        "skeleton": "4b8c5a5cc454e5cfd3d3db5a6a944324220522bf61607757271e3d35a3ee3a2e",
+        "avatar": "f2f029408ed8194c9947461d9778030336c3fc8cf0f8f89b77be5e6baef6f938"
+      }
+    },
+    "pachyrhinosaurus": {
+      "role": "playable",
+      "look": "ceratopsian with a thick flat pale nasal boss (no nose horn), spiked frill",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/pachyrhinosaurus_S.png",
+        "N": "assets/new_species/pachyrhinosaurus_N.png",
+        "E": "assets/new_species/pachyrhinosaurus_E.png",
+        "W": "assets/new_species/pachyrhinosaurus_W.png",
+        "corpse": "assets/new_species/pachyrhinosaurus_corpse.png",
+        "skeleton": "assets/new_species/pachyrhinosaurus_skeleton.png",
+        "avatar": "assets/new_species/pachyrhinosaurus_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        72,
+        88
+      ],
+      "alpha_bbox": {
+        "S": [
+          50,
+          30,
+          94,
+          111
+        ],
+        "N": [
+          50,
+          27,
+          94,
+          110
+        ],
+        "E": [
+          23,
+          50,
+          123,
+          89
+        ],
+        "W": [
+          21,
+          50,
+          121,
+          89
+        ],
+        "corpse": [
+          26,
+          60,
+          123,
+          96
+        ],
+        "skeleton": [
+          26,
+          60,
+          121,
+          96
+        ],
+        "avatar": [
+          18,
+          15,
+          46,
+          43
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "41cf284a728876eb84a36a858c1fac2d36097cccdfce3f1d545ffca07f51f35b",
+        "N": "ff3ca420216b791e7db68d5785d9ccea284a81b0f5ab987e0cfcc87ee7465521",
+        "E": "c67f90f501ad84780adbeeb8f67e305141ff4509179816cbfbe186946d1ce618",
+        "W": "149c4896997cfcd702d2f50b4fd6a933124d5138ec85c0bb8c88c1e55433fb96",
+        "corpse": "8772a990af8cf07264847ad25b1e7779e04b43b95fe0d1a9276a9d42ce86d6af",
+        "skeleton": "dd2eeabeddb98c80477e007d4b57612b4751468641628053c53af9fa0407d579",
+        "avatar": "f8337f7a66ea09e97eb2e007a0de9383d786470d471bf0edf4263458a1942ddd"
+      }
+    },
+    "oviraptor": {
+      "role": "playable",
+      "look": "feathered, toothless beak, rounded orange crest, long clawed arms",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/oviraptor_S.png",
+        "N": "assets/new_species/oviraptor_N.png",
+        "E": "assets/new_species/oviraptor_E.png",
+        "W": "assets/new_species/oviraptor_W.png",
+        "corpse": "assets/new_species/oviraptor_corpse.png",
+        "skeleton": "assets/new_species/oviraptor_skeleton.png",
+        "avatar": "assets/new_species/oviraptor_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        84,
+        87
+      ],
+      "alpha_bbox": {
+        "S": [
+          57,
+          28,
+          87,
+          99
+        ],
+        "N": [
+          57,
+          36,
+          87,
+          110
+        ],
+        "E": [
+          22,
+          56,
+          110,
+          84
+        ],
+        "W": [
+          34,
+          56,
+          122,
+          84
+        ],
+        "corpse": [
+          34,
+          63,
+          115,
+          93
+        ],
+        "skeleton": [
+          51,
+          64,
+          115,
+          93
+        ],
+        "avatar": [
+          22,
+          11,
+          42,
+          47
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "e640cde44066e3e9fddac66745285b7177df916a7bd6c8d45045d00a98b9c139",
+        "N": "20077085e987437b9300eb3313decb2a8051ddd2451d6b87a4d4accc729fcfb8",
+        "E": "16e19c36d443dc52ef3ef96628ad59fbd6168472c9b5a42d36e8c18d05d096fd",
+        "W": "b6612a31975730bbde8049e37f99064d7290f4498a47b182c9c9847b0bf7e84e",
+        "corpse": "3266a1cbb960166090730332044e733ab1214a35cd669196eece8e3d31adde24",
+        "skeleton": "474ee1b72d5c9e1dd1294c4bf1f36567e26dafba667318d051092830b0bee9af",
+        "avatar": "7f7f4e94e4189684814ba5b6779191d4e8e29a6037e375775a60daf0c87f72b9"
+      }
+    },
+    "dryosaurus": {
+      "role": "wild",
+      "look": "small slender bipedal herbivore, light green/tan",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/dryosaurus_S.png",
+        "N": "assets/new_species/dryosaurus_N.png",
+        "E": "assets/new_species/dryosaurus_E.png",
+        "W": "assets/new_species/dryosaurus_W.png",
+        "corpse": "assets/new_species/dryosaurus_corpse.png",
+        "skeleton": "assets/new_species/dryosaurus_skeleton.png",
+        "avatar": "assets/new_species/dryosaurus_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        76,
+        86
+      ],
+      "alpha_bbox": {
+        "S": [
+          54,
+          38,
+          90,
+          95
+        ],
+        "N": [
+          54,
+          40,
+          90,
+          103
+        ],
+        "E": [
+          33,
+          57,
+          105,
+          86
+        ],
+        "W": [
+          39,
+          57,
+          111,
+          86
+        ],
+        "corpse": [
+          45,
+          64,
+          104,
+          93
+        ],
+        "skeleton": [
+          45,
+          64,
+          104,
+          93
+        ],
+        "avatar": [
+          21,
+          17,
+          43,
+          42
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "a7811eb5127b613cef3b683c73db1042d6d5779032e248701d487812e318f2cc",
+        "N": "e1997002c4aa32ff7dcd5670f93c370240b5a795832052a9718281d2093eb94b",
+        "E": "80dd03315cb8093062c31a6de8c7a6b7f72f2ebf20356f5c48a369ec2c1a614a",
+        "W": "34f8a4e78342d83f55f9f9666ac763ac94b0e3eaa23116b67e24e38720a9737b",
+        "corpse": "7a4ad9ab464faa356efd588505483fac0b4d82c681d0226db8cdf021974dcd1e",
+        "skeleton": "6e314bd6c41de1f7127078a0a8a4c972cc8693a21b0e8ce72f62994e10d9cdee",
+        "avatar": "9dc10ce9a2aa60b4df4f6b35b0f6b8b7879ab3b5b3baab00618e0efc9dfd4538"
+      }
+    },
+    "hypsilophodon": {
+      "role": "wild",
+      "look": "small biped, green-brown with dark stripes",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/hypsilophodon_S.png",
+        "N": "assets/new_species/hypsilophodon_N.png",
+        "E": "assets/new_species/hypsilophodon_E.png",
+        "W": "assets/new_species/hypsilophodon_W.png",
+        "corpse": "assets/new_species/hypsilophodon_corpse.png",
+        "skeleton": "assets/new_species/hypsilophodon_skeleton.png",
+        "avatar": "assets/new_species/hypsilophodon_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        74,
+        82
+      ],
+      "alpha_bbox": {
+        "S": [
+          62,
+          54,
+          82,
+          85
+        ],
+        "N": [
+          62,
+          54,
+          82,
+          88
+        ],
+        "E": [
+          51,
+          63,
+          91,
+          81
+        ],
+        "W": [
+          53,
+          63,
+          93,
+          81
+        ],
+        "corpse": [
+          56,
+          69,
+          91,
+          86
+        ],
+        "skeleton": [
+          56,
+          69,
+          90,
+          86
+        ],
+        "avatar": [
+          24,
+          20,
+          40,
+          39
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "689f73803e3739cf73f3739e6deecddc843c371d518a5e7d6c51c9d0e549b33f",
+        "N": "0e366709b0504e5cccfcfa0545d2aef91c8c664c52dc238c5caaa2209e70c9af",
+        "E": "616870fe82a863166de76c74fb865ec3031f2bb06fa762db3cb4b3eb7059be4d",
+        "W": "10bdc98b61d0cbc271fd31747cf93fab8eb7a54b5143b98a792eefa694311469",
+        "corpse": "1ef24e3d0ad676af401386daae48b6857d3272bed66aa6bc571f69c87e4a31fb",
+        "skeleton": "232755d5761f4d360f5743ce6d1e4ceed9166b7d5a91413c9691b1b7e4b1533e",
+        "avatar": "972f89238904131b886d672be0bf615b4e681f6b17e458d8e0f2c94e5410239a"
+      }
+    },
+    "leaellynasaura": {
+      "role": "wild",
+      "look": "tiny, very long tail, big pale eyes, grey/blue",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/leaellynasaura_S.png",
+        "N": "assets/new_species/leaellynasaura_N.png",
+        "E": "assets/new_species/leaellynasaura_E.png",
+        "W": "assets/new_species/leaellynasaura_W.png",
+        "corpse": "assets/new_species/leaellynasaura_corpse.png",
+        "skeleton": "assets/new_species/leaellynasaura_skeleton.png",
+        "avatar": "assets/new_species/leaellynasaura_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        77,
+        86
+      ],
+      "alpha_bbox": {
+        "S": [
+          64,
+          49,
+          80,
+          83
+        ],
+        "N": [
+          64,
+          58,
+          80,
+          93
+        ],
+        "E": [
+          41,
+          65,
+          87,
+          79
+        ],
+        "W": [
+          57,
+          65,
+          103,
+          79
+        ],
+        "corpse": [
+          58,
+          66,
+          90,
+          90
+        ],
+        "skeleton": [
+          58,
+          65,
+          90,
+          90
+        ],
+        "avatar": [
+          24,
+          20,
+          40,
+          38
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "18efb111abdbe56126c97df81bb70123dfe71e22912ab508569e4484d4af8ab4",
+        "N": "2756fef78c9ba788852532712b90bde42220b2f2cac0667cd14df4644e0f9339",
+        "E": "84c6c57c4ba62eae1745a8ad841fa9885cd98aff5585c2031fb7b04ad2591ad6",
+        "W": "2db45b411a143191272ef3b3f784d3769aaa4f44168671dc384deed783b1bdf7",
+        "corpse": "5108bd1dc0ec0e8b21f605791fca1bcfc0a48268773a6c61e402d9893522313c",
+        "skeleton": "c6d38c8309fc686cf501b869186a883cbe4013a8112c966a408b0f8e5389ba7d",
+        "avatar": "a1c1f083cbb134667df79d49a13e9e0c512a1ef86aa847ae5f4852187331372b"
+      }
+    },
+    "protoceratops": {
+      "role": "wild",
+      "look": "small sandy quadruped with frill and beak, no horns",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/protoceratops_S.png",
+        "N": "assets/new_species/protoceratops_N.png",
+        "E": "assets/new_species/protoceratops_E.png",
+        "W": "assets/new_species/protoceratops_W.png",
+        "corpse": "assets/new_species/protoceratops_corpse.png",
+        "skeleton": "assets/new_species/protoceratops_skeleton.png",
+        "avatar": "assets/new_species/protoceratops_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        72,
+        83
+      ],
+      "alpha_bbox": {
+        "S": [
+          59,
+          47,
+          85,
+          95
+        ],
+        "N": [
+          59,
+          46,
+          85,
+          94
+        ],
+        "E": [
+          44,
+          58,
+          102,
+          82
+        ],
+        "W": [
+          42,
+          58,
+          100,
+          82
+        ],
+        "corpse": [
+          46,
+          68,
+          102,
+          88
+        ],
+        "skeleton": [
+          46,
+          68,
+          101,
+          88
+        ],
+        "avatar": [
+          19,
+          18,
+          45,
+          40
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "6505f4030bb7f7c0935270e709a79a91fbb5f3131fbf2b11314d7596aff7fb7a",
+        "N": "8e84937b88088cea7aebf52617aa39f4b0df5aecac0b300a3e952d9258b19e8e",
+        "E": "108d043095719c88b6fdab2d61116dfced2e595afed10b24467e8b1079a812fe",
+        "W": "949956dcf1e6886d75773f532235640637cea680ea30b782831ac7d28854dd20",
+        "corpse": "8b3e73aa89244015c571eba82cf910016acf1f99503c67de328364ae441909ad",
+        "skeleton": "9bf1a10dfaf0fdc8798ed86f7c27c6a93bd62b9794e981d517c1388066612ee8",
+        "avatar": "4411ffccb82767233981369aba80fead467691482a1e8b5ff18841d11bbf6968"
+      }
+    },
+    "iguanodon": {
+      "role": "wild",
+      "look": "large olive/grey herbivore with thumb spikes",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/iguanodon_S.png",
+        "N": "assets/new_species/iguanodon_N.png",
+        "E": "assets/new_species/iguanodon_E.png",
+        "W": "assets/new_species/iguanodon_W.png",
+        "corpse": "assets/new_species/iguanodon_corpse.png",
+        "skeleton": "assets/new_species/iguanodon_skeleton.png",
+        "avatar": "assets/new_species/iguanodon_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        72,
+        93
+      ],
+      "alpha_bbox": {
+        "S": [
+          45,
+          17,
+          99,
+          116
+        ],
+        "N": [
+          45,
+          20,
+          99,
+          122
+        ],
+        "E": [
+          8,
+          49,
+          130,
+          94
+        ],
+        "W": [
+          14,
+          49,
+          136,
+          94
+        ],
+        "corpse": [
+          23,
+          53,
+          125,
+          103
+        ],
+        "skeleton": [
+          23,
+          54,
+          124,
+          103
+        ],
+        "avatar": [
+          20,
+          11,
+          44,
+          48
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "464608776b29027409776de90805faf750bf52969db7274466dcafc4d16b7d48",
+        "N": "83a257a52f4a818b1fc17e4174344e3572a7d31e2037cbddb48a4e6fdc88b005",
+        "E": "293aa0523440e231f8b4622e14d80f46fe2db9a536168f40fdc04d8762c28d9a",
+        "W": "3cf0d250f84201318b390750272d2d9ff46ef873b824b8044a7e952a24d73cb8",
+        "corpse": "e49bf2c425efce0688cb19eb149aec7ae46d69b06b2bac8b24519176a6169ff1",
+        "skeleton": "937c2d4a52dccf6a61d6b5811b11a43a2f2a5fe6ee787ffa2a3e72f1b5494abc",
+        "avatar": "ad5dd277598e2f360872346645196dca1549366f1f8230db0ba99a81959d6b25"
+      }
+    },
+    "psittacosaurus": {
+      "role": "wild",
+      "look": "small biped, parrot beak, quill bristles on the tail, brown/olive",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/psittacosaurus_S.png",
+        "N": "assets/new_species/psittacosaurus_N.png",
+        "E": "assets/new_species/psittacosaurus_E.png",
+        "W": "assets/new_species/psittacosaurus_W.png",
+        "corpse": "assets/new_species/psittacosaurus_corpse.png",
+        "skeleton": "assets/new_species/psittacosaurus_skeleton.png",
+        "avatar": "assets/new_species/psittacosaurus_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        75,
+        82
+      ],
+      "alpha_bbox": {
+        "S": [
+          61,
+          52,
+          83,
+          87
+        ],
+        "N": [
+          61,
+          52,
+          83,
+          90
+        ],
+        "E": [
+          47,
+          63,
+          94,
+          81
+        ],
+        "W": [
+          50,
+          63,
+          97,
+          81
+        ],
+        "corpse": [
+          54,
+          69,
+          94,
+          87
+        ],
+        "skeleton": [
+          54,
+          69,
+          94,
+          87
+        ],
+        "avatar": [
+          20,
+          19,
+          44,
+          39
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "87aec853610a25a287a7abf991fc363a32c721c3f74911a243b6fa07d15a2cdb",
+        "N": "40ef10f0c6d31d4e82b839e5b3c8bf684cf9695336482a651e964e1554aefa56",
+        "E": "d63cbfdac486f921a3e0549340976c85bfc53300ff30d1b7c963931cc2ea0a95",
+        "W": "3a9e461b7916c22d9ad05b28cd8373cd695befd174f934ec35e3e9e583998178",
+        "corpse": "2bcf783f7391cec92dfb2d33a16d3dde2ff681eadf9f82abb9386bfe83a9b757",
+        "skeleton": "1b1495e5d50ba78c0b501f7512f0d467c34fe0dcd373de25b97a69c234638f1f",
+        "avatar": "c740ea2ab9d0d6d61e418dd18f40c420fea564a6db4da4c2253b24adb837fbe0"
+      }
+    },
+    "edmontosaurus": {
+      "role": "wild",
+      "look": "large crestless duck-billed hadrosaur, brown/green",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/edmontosaurus_S.png",
+        "N": "assets/new_species/edmontosaurus_N.png",
+        "E": "assets/new_species/edmontosaurus_E.png",
+        "W": "assets/new_species/edmontosaurus_W.png",
+        "corpse": "assets/new_species/edmontosaurus_corpse.png",
+        "skeleton": "assets/new_species/edmontosaurus_skeleton.png",
+        "avatar": "assets/new_species/edmontosaurus_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        69,
+        93
+      ],
+      "alpha_bbox": {
+        "S": [
+          45,
+          19,
+          99,
+          118
+        ],
+        "N": [
+          45,
+          17,
+          99,
+          121
+        ],
+        "E": [
+          10,
+          49,
+          133,
+          94
+        ],
+        "W": [
+          11,
+          49,
+          134,
+          94
+        ],
+        "corpse": [
+          22,
+          53,
+          126,
+          103
+        ],
+        "skeleton": [
+          22,
+          54,
+          125,
+          103
+        ],
+        "avatar": [
+          21,
+          11,
+          43,
+          48
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "5f8531eb3b187795df81968acf98fa4a205a1e0c36865f9645928467ddfebd60",
+        "N": "405b983ff0f27de06b0ef54abeea53ef6f283502874c58603f7207e734d15361",
+        "E": "e9dc87c3c30bcbaee1a854543b958ad0aae7e7450f23c7391be99bda92c5faf6",
+        "W": "b9488e6ebbd6fb4f940d439c9170cb799d1b28d8471bec5bd44ccc6c85ec47d3",
+        "corpse": "c63fe14f4d905c9734fbca53fd77204e22a55774cc39377606ecd303319b7388",
+        "skeleton": "aaecbc05b2d51614f70eb62716bf5647b51a133890ce6c1bf484d4e29f44e811",
+        "avatar": "d20ba6b0128881f12d5c730d1dfd0b7c2b87b423bb08628d76a1a52de9554c3a"
+      }
+    },
+    "archelon": {
+      "role": "wild",
+      "look": "giant grey-teal sea turtle, ridged shell, four flippers",
+      "status": "placeholder static drawing; Codex to animate",
+      "asset_status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "runtime_enabled": false,
+      "suggested_visual_scale": 1,
+      "files": {
+        "S": "assets/new_species/archelon_S.png",
+        "N": "assets/new_species/archelon_N.png",
+        "E": "assets/new_species/archelon_E.png",
+        "W": "assets/new_species/archelon_W.png",
+        "corpse": "assets/new_species/archelon_corpse.png",
+        "skeleton": "assets/new_species/archelon_skeleton.png",
+        "avatar": "assets/new_species/archelon_avatar.png"
+      },
+      "size": {
+        "S": [
+          144,
+          144
+        ],
+        "N": [
+          144,
+          144
+        ],
+        "E": [
+          144,
+          144
+        ],
+        "W": [
+          144,
+          144
+        ],
+        "corpse": [
+          144,
+          144
+        ],
+        "skeleton": [
+          144,
+          144
+        ],
+        "avatar": [
+          64,
+          64
+        ]
+      },
+      "origin": {
+        "S": [
+          72,
+          72
+        ],
+        "N": [
+          72,
+          72
+        ],
+        "E": [
+          72,
+          72
+        ],
+        "W": [
+          72,
+          72
+        ],
+        "corpse": [
+          72,
+          72
+        ],
+        "skeleton": [
+          72,
+          72
+        ],
+        "avatar": [
+          32,
+          32
+        ]
+      },
+      "body_anchor": [
+        72,
+        72
+      ],
+      "corpse_model_anchor": [
+        70,
+        78
+      ],
+      "alpha_bbox": {
+        "S": [
+          11,
+          35,
+          133,
+          113
+        ],
+        "N": [
+          11,
+          28,
+          133,
+          107
+        ],
+        "E": [
+          28,
+          22,
+          124,
+          122
+        ],
+        "W": [
+          20,
+          22,
+          116,
+          122
+        ],
+        "corpse": [
+          26,
+          28,
+          122,
+          128
+        ],
+        "skeleton": [
+          26,
+          36,
+          121,
+          123
+        ],
+        "avatar": [
+          20,
+          15,
+          44,
+          44
+        ]
+      },
+      "derived": {
+        "W": "exact horizontal mirror of E"
+      },
+      "sha256": {
+        "S": "bf7309c5b643c28615c4bf8a61d4d793529d4500d76c9e8cdf84162a576be110",
+        "N": "4bfb88dcab1406fcd0a82cbd098454b218004ab940bb7a62219c51f5ab28de85",
+        "E": "b736cae49827d724c94136dc11c4d465a990dab397a3cf6edce987026492f7eb",
+        "W": "73436d74943f487231130ccce515b638d924083fe99f5f8aae8ff365a400b289",
+        "corpse": "3d049b3ef9267184331f7676a3b5021557fbdfca1be442fda7c30686538a8c65",
+        "skeleton": "2f8e6e9f8656418144ab52142faee2a1dbd422b5785001f0ca3ccf592aff5ba5",
+        "avatar": "7722b76140b8c4ce11a60206f68252ec72e2cfc784f09f79001d3ca22ab500a1"
+      }
+    }
+  },
+  "ambient": {
+    "butterfly": {
+      "files": [
+        "assets/new_species/ambient/butterfly_0.png",
+        "assets/new_species/ambient/butterfly_1.png"
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "frames": 2,
+      "suggested_fps": 10,
+      "facing": "head toward the top of the image, like assets/ecology/beetle_0.png",
+      "note": "wings open / wings raised",
+      "status": "placeholder static drawing; Codex to animate",
+      "alpha_bbox": [
+        [
+          4,
+          8,
+          28,
+          25
+        ],
+        [
+          10,
+          7,
+          22,
+          24
+        ]
+      ],
+      "sha256": [
+        "db6fdc8428cd598051010cf31c98f7c8fd0a1ecc599e15dd542807759f62060d",
+        "64ab689a41c920d7aa623900ee02d33e8ef339f3ce4f6fe3fa8694f5f7d6ef9b"
+      ]
+    },
+    "frog": {
+      "files": [
+        "assets/new_species/ambient/frog_0.png",
+        "assets/new_species/ambient/frog_1.png"
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "frames": 2,
+      "suggested_fps": 6,
+      "facing": "head toward the top of the image, like assets/ecology/beetle_0.png",
+      "note": "crouched / mid-hop",
+      "status": "placeholder static drawing; Codex to animate",
+      "alpha_bbox": [
+        [
+          6,
+          5,
+          26,
+          22
+        ],
+        [
+          8,
+          3,
+          23,
+          29
+        ]
+      ],
+      "sha256": [
+        "7dbec91fbb10ddd410e210c2ea978f148995bf998338c6e17352507fccd1c672",
+        "0ee7adb77425a0862c574ddec511c18e15b62bbcfb435ad7399ce7de5bafdf40"
+      ]
+    },
+    "small_mammal": {
+      "files": [
+        "assets/new_species/ambient/small_mammal_0.png",
+        "assets/new_species/ambient/small_mammal_1.png"
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "frames": 2,
+      "suggested_fps": 10,
+      "facing": "head toward the top of the image, like assets/ecology/beetle_0.png",
+      "note": "shrew-like early mammal, scurry cycle",
+      "status": "placeholder static drawing; Codex to animate",
+      "alpha_bbox": [
+        [
+          9,
+          3,
+          23,
+          29
+        ],
+        [
+          9,
+          3,
+          23,
+          29
+        ]
+      ],
+      "sha256": [
+        "671a0adef1297e28ac3151b01c0c9897847a31a2c0cf617d496cdb516c070d72",
+        "149bef5c502d1c385419c52bde1c441fd6834f48a368c9c0510838813a300864"
+      ]
+    },
+    "firefly_glow": {
+      "files": [
+        "assets/new_species/ambient/firefly_glow_0.png",
+        "assets/new_species/ambient/firefly_glow_1.png"
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "frames": 2,
+      "suggested_fps": 3,
+      "facing": "head toward the top of the image, like assets/ecology/beetle_0.png",
+      "note": "glow halo to lay over assets/ecology/firefly_*, dim / bright",
+      "status": "placeholder static drawing; Codex to animate",
+      "alpha_bbox": [
+        [
+          4,
+          3,
+          13,
+          12
+        ],
+        [
+          1,
+          1,
+          15,
+          15
+        ]
+      ],
+      "sha256": [
+        "f3387d7959263f3c5e490077e43794f0ec70934bf7ae9fb17c5eee9b1ea0c269",
+        "e9b9b6d55b8f6051b1c44118adafa2e9ad6fe2c3d0b7233e1226dc9d098e8ddd"
+      ]
+    },
+    "pterosaur_shadow": {
+      "files": [
+        "assets/new_species/ambient/pterosaur_shadow_0.png",
+        "assets/new_species/ambient/pterosaur_shadow_1.png"
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "frames": 2,
+      "suggested_fps": 4,
+      "facing": "head toward the top of the image, like assets/ecology/beetle_0.png",
+      "note": "flat #151b19 silhouette of a flying pterosaur, glide / upstroke; draw with reduced opacity as a ground shadow",
+      "status": "placeholder static drawing; Codex to animate",
+      "alpha_bbox": [
+        [
+          2,
+          11,
+          45,
+          37
+        ],
+        [
+          7,
+          11,
+          39,
+          37
+        ]
+      ],
+      "sha256": [
+        "e73bdbd1e475d575bcef4f4542edcecb6f30af982b5861957573cf19fbcb6d41",
+        "3ea4783a0d139ce465b6693e2b864933915549bb3256e4378ff65ab58a2af934"
+      ]
+    },
+    "millipede": {
+      "files": [
+        "assets/new_species/ambient/millipede_0.png",
+        "assets/new_species/ambient/millipede_1.png"
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "frames": 2,
+      "suggested_fps": 8,
+      "facing": "head toward the top of the image, like assets/ecology/beetle_0.png",
+      "note": "giant millipede, body wave and leg phase alternate",
+      "status": "placeholder static drawing; Codex to animate",
+      "alpha_bbox": [
+        [
+          10,
+          2,
+          22,
+          30
+        ],
+        [
+          10,
+          2,
+          22,
+          30
+        ]
+      ],
+      "sha256": [
+        "458183caefcb751fe7bbcea837c4b5189b49e40ae494758c1ab6de53620f8c7c",
+        "58aa59bde4571ae13d11d5d1745c3ceb2132b195a77ca369e6cc0435479ff5c3"
+      ]
+    },
+    "ash_ember": {
+      "files": [
+        "assets/new_species/ambient/ash_ember_0.png",
+        "assets/new_species/ambient/ash_ember_1.png"
+      ],
+      "size": [
+        12,
+        12
+      ],
+      "frames": 2,
+      "suggested_fps": 8,
+      "facing": "head toward the top of the image, like assets/ecology/beetle_0.png",
+      "note": "floating ember for lava/volcano levels, flicker",
+      "status": "placeholder static drawing; Codex to animate",
+      "alpha_bbox": [
+        [
+          3,
+          3,
+          7,
+          9
+        ],
+        [
+          3,
+          3,
+          8,
+          9
+        ]
+      ],
+      "sha256": [
+        "33f058b76445c1597b2aa67c0db29878af03abe68a8087ee46b15d2d6703a98a",
+        "148086b75dce8879155d73982173df3ac5c05ac92c84245e2d4cfe2e9f88e1a2"
+      ]
+    }
+  }
+}
