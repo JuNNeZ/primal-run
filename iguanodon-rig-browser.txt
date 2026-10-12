@@ -1,0 +1,22 @@
+TAP version 13
+# Subtest: Iguanodon reference reviewer: ordered poses, pause, step, backgrounds and actual sprite pixels
+ok 1 - Iguanodon reference reviewer: ordered poses, pause, step, backgrounds and actual sprite pixels
+  ---
+  duration_ms: 2202.027471
+  type: 'test'
+  ...
+# Subtest: Iguanodon viewer reports failed embedded image prominently and keeps controls disabled
+ok 2 - Iguanodon viewer reports failed embedded image prominently and keeps controls disabled
+  ---
+  duration_ms: 206.867977
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2414.732194
