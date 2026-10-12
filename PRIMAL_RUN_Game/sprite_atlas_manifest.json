@@ -18183,6 +18183,1238 @@
       "x": 409,
       "y": 517
     },
+    "assets/new_species/allosaurus_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_allosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/allosaurus_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_allosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/allosaurus_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_allosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/allosaurus_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_allosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/allosaurus_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_allosaurus_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/allosaurus_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_allosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/allosaurus_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_allosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/archelon_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_archelon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/archelon_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_archelon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/archelon_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_archelon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/archelon_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_archelon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/archelon_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_archelon_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/archelon_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_archelon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/archelon_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_archelon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/dryosaurus_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_dryosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/dryosaurus_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_dryosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/dryosaurus_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_dryosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/dryosaurus_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_dryosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/dryosaurus_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_dryosaurus_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/dryosaurus_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_dryosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/dryosaurus_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_dryosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/edmontosaurus_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_edmontosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/edmontosaurus_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_edmontosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/edmontosaurus_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_edmontosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/edmontosaurus_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_edmontosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/edmontosaurus_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_edmontosaurus_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/edmontosaurus_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_edmontosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/edmontosaurus_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_edmontosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/hypsilophodon_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_hypsilophodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/hypsilophodon_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_hypsilophodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/hypsilophodon_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_hypsilophodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/hypsilophodon_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_hypsilophodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/hypsilophodon_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_hypsilophodon_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/hypsilophodon_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_hypsilophodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/hypsilophodon_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_hypsilophodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/iguanodon_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_iguanodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/iguanodon_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_iguanodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/iguanodon_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_iguanodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/iguanodon_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_iguanodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/iguanodon_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_iguanodon_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/iguanodon_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_iguanodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/iguanodon_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_iguanodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/leaellynasaura_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_leaellynasaura_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/leaellynasaura_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_leaellynasaura_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/leaellynasaura_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_leaellynasaura_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/leaellynasaura_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_leaellynasaura_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/leaellynasaura_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_leaellynasaura_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/leaellynasaura_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_leaellynasaura_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/leaellynasaura_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_leaellynasaura_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/microraptor_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_microraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/microraptor_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_microraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/microraptor_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_microraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/microraptor_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_microraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/microraptor_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_microraptor_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/microraptor_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_microraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/microraptor_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_microraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/oviraptor_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_oviraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/oviraptor_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_oviraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/oviraptor_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_oviraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/oviraptor_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_oviraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/oviraptor_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_oviraptor_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/oviraptor_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_oviraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/oviraptor_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_oviraptor_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/pachyrhinosaurus_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachyrhinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/pachyrhinosaurus_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachyrhinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/pachyrhinosaurus_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachyrhinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/pachyrhinosaurus_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachyrhinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/pachyrhinosaurus_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_pachyrhinosaurus_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/pachyrhinosaurus_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachyrhinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/pachyrhinosaurus_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pachyrhinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/protoceratops_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_protoceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/protoceratops_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_protoceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/protoceratops_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_protoceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/protoceratops_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_protoceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/protoceratops_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_protoceratops_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/protoceratops_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_protoceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/protoceratops_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_protoceratops_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/psittacosaurus_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_psittacosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/psittacosaurus_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_psittacosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/psittacosaurus_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_psittacosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/psittacosaurus_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_psittacosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/psittacosaurus_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_psittacosaurus_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/psittacosaurus_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_psittacosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/psittacosaurus_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_psittacosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/pteranodon_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pteranodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/pteranodon_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pteranodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/pteranodon_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pteranodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/pteranodon_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pteranodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/pteranodon_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_pteranodon_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/pteranodon_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pteranodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/pteranodon_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_pteranodon_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/spinosaurus_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_spinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/spinosaurus_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_spinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/spinosaurus_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_spinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/spinosaurus_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_spinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/spinosaurus_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_spinosaurus_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/spinosaurus_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_spinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/spinosaurus_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_spinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/stegosaurus_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_stegosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/stegosaurus_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_stegosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/stegosaurus_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_stegosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/stegosaurus_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_stegosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/stegosaurus_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_stegosaurus_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/stegosaurus_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_stegosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/stegosaurus_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_stegosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/new_species/therizinosaurus_E.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_therizinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/therizinosaurus_N.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_therizinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/new_species/therizinosaurus_S.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_therizinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/new_species/therizinosaurus_W.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_therizinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/new_species/therizinosaurus_avatar.png": {
+      "anchor": [
+        32,
+        32
+      ],
+      "file": "assets/atlases/species_therizinosaurus_0.png",
+      "h": 64,
+      "w": 64,
+      "x": 439,
+      "y": 147
+    },
+    "assets/new_species/therizinosaurus_corpse.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_therizinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/new_species/therizinosaurus_skeleton.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_therizinosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
     "assets/pickups/dna_pickup.png": {
       "anchor": [
         16,
@@ -33104,6 +34336,15 @@
   "pixels": "unaltered RGBA; no scaling or palette conversion",
   "sheets": [
     {
+      "file": "assets/atlases/species_allosaurus_0.png",
+      "frames": 7,
+      "sha256": "5ee65510b8b48bfb742404d8a875e3e938df73621fb4c8e21f5a8541fcd41429",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
       "file": "assets/atlases/species_ankylosaurus_0.png",
       "frames": 196,
       "sha256": "a41d46ac08d23cd68ce621c6f4d1163f0cece80bd86f0b1cba3edc55f8bdeb22",
@@ -33119,6 +34360,15 @@
       "size": [
         2048,
         488
+      ]
+    },
+    {
+      "file": "assets/atlases/species_archelon_0.png",
+      "frames": 7,
+      "sha256": "030ddaa0206252cbc46eff71b54045450e9835fb46adce133802d99f76fa416d",
+      "size": [
+        512,
+        292
       ]
     },
     {
@@ -33194,6 +34444,24 @@
       ]
     },
     {
+      "file": "assets/atlases/species_dryosaurus_0.png",
+      "frames": 7,
+      "sha256": "ce745e3de2d3db3c45d88e83e408270921891b6369df3886f6a6f76b2ad56594",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
+      "file": "assets/atlases/species_edmontosaurus_0.png",
+      "frames": 7,
+      "sha256": "c58f6ce07f5d9136720a975b836a409047035153157cba304a1bc3f0818fb1bb",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
       "file": "assets/atlases/species_gallimimus_0.png",
       "frames": 196,
       "sha256": "c456873bdb25c462e36844f301d71bf8779bbb92da015cbe5b190e08bf12470d",
@@ -33209,6 +34477,51 @@
       "size": [
         2048,
         358
+      ]
+    },
+    {
+      "file": "assets/atlases/species_hypsilophodon_0.png",
+      "frames": 7,
+      "sha256": "308a116c2adccaadb4644f1691a04ddf4642b2c246fb6f72c1df5f64b149d32d",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
+      "file": "assets/atlases/species_iguanodon_0.png",
+      "frames": 7,
+      "sha256": "07c02886aa0d66899a62a23038c26f4e6f052f7f69cb2476420822b4412fc8e0",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
+      "file": "assets/atlases/species_leaellynasaura_0.png",
+      "frames": 7,
+      "sha256": "72b676acfe86baaccea440a35ac6acae8798bb0a487e3dcf346afa339abde805",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
+      "file": "assets/atlases/species_microraptor_0.png",
+      "frames": 7,
+      "sha256": "404acda25f97b225f6b7bd64c35a209ef093b9112098418f6fbc3604a164dfd0",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
+      "file": "assets/atlases/species_oviraptor_0.png",
+      "frames": 7,
+      "sha256": "f3617f2289cb8b98047e501a50b1e0f747b9bac89872c578e90b1d86176cc18f",
+      "size": [
+        512,
+        292
       ]
     },
     {
@@ -33230,6 +34543,15 @@
       ]
     },
     {
+      "file": "assets/atlases/species_pachyrhinosaurus_0.png",
+      "frames": 7,
+      "sha256": "b4317248e3532b5a2b1e88e97086d6af94b027d256bf109df6c4be3179cafcd1",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
       "file": "assets/atlases/species_parasaurolophus_0.png",
       "frames": 196,
       "sha256": "d249555c94777ad682820b74c91708321bed2ea79b9b0640cb8051a88db54384",
@@ -33245,6 +34567,60 @@
       "size": [
         2048,
         422
+      ]
+    },
+    {
+      "file": "assets/atlases/species_protoceratops_0.png",
+      "frames": 7,
+      "sha256": "8b0baf038ed5d9c93475b7a8b107b332d92abc7e78cad8582e8e8b277b088c1a",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
+      "file": "assets/atlases/species_psittacosaurus_0.png",
+      "frames": 7,
+      "sha256": "18d69da933c7d18f27247b6274993d8b2947bfc41ca520dd3c0aaeacc3e848c5",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
+      "file": "assets/atlases/species_pteranodon_0.png",
+      "frames": 7,
+      "sha256": "e0d65d8b09ab2db049e1731e2e6e1453e1ab2ceac748b5f6a3e5aad3089f990b",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
+      "file": "assets/atlases/species_spinosaurus_0.png",
+      "frames": 7,
+      "sha256": "6c7718b1514e8cf56ad0dd193a09532bd2ad64077848e79a209dc8d6242c9484",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
+      "file": "assets/atlases/species_stegosaurus_0.png",
+      "frames": 7,
+      "sha256": "9ad8e56886e6eaffc6a1b1f21433c1c54d28ffecb75f6c2479b3f5e49ddd28f3",
+      "size": [
+        512,
+        292
+      ]
+    },
+    {
+      "file": "assets/atlases/species_therizinosaurus_0.png",
+      "frames": 7,
+      "sha256": "012bb376a899ad514da5bcae19fd3e2363ed83bbb4c08d49f6ed68abb5cb057d",
+      "size": [
+        512,
+        292
       ]
     },
     {

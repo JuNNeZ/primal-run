@@ -1,8 +1,8 @@
 {
   "status": "PASS",
   "approved_exports": 17,
-  "frames": 3009,
-  "sheets": 36,
+  "frames": 3121,
+  "sheets": 52,
   "checks": [
     "exact native RGBA bytes",
     "unaltered anchors and dimensions",

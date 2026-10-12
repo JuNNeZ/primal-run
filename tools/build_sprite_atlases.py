@@ -7,7 +7,7 @@ import shutil
 from PIL import Image
 
 GAME = Path(__file__).resolve().parents[1] / 'PRIMAL_RUN_Game'
-ANIMALS = {'behavior','behavior_native','behavior_injured','species_attacks','avatars','player_full','enemy_full','enemy_animations','enemies','player_combat','corpses'}
+ANIMALS = {'behavior','behavior_native','behavior_injured','species_attacks','avatars','player_full','enemy_full','enemy_animations','enemies','player_combat','corpses','new_species'}
 
 def build_atlases(manifest, game=GAME):
     out = game / 'assets/atlases'

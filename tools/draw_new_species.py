@@ -16,8 +16,9 @@ Outputs (PRIMAL_RUN_Game/assets/new_species/):
   ambient/*.png        small ambient creatures (stretch goal)
 plus PRIMAL_RUN_Game/new_species_manifest.json.
 
-These are static placeholders for Codex to animate; nothing here is wired
-into the game.
+These are static placeholders for Codex to animate. The live poses, corpses,
+skeletons and avatars are drawn by the game behind FEATURES.newSpecies
+(core.js staticFrame); ambient/ is not used.
 
 Usage: python tools/draw_new_species.py [--only id,id] [--sheet out.png] [--lineup out.png]
 A full run (no --only) also redraws ambient/, the manifest and new_species_review.html.
@@ -2030,7 +2031,8 @@ def write_manifest(results, ambient):
                                 'skeleton shares the corpse registration'),
             'avatar': '64x64 RGBA, origin 32,32, head only, like assets/avatars/<species>_idle_000.png',
         },
-        'not_wired': 'No game code, project.json or runtime manifest references these files.',
+        'wiring': ('Live poses, corpses, skeletons and avatars are drawn as static frames behind FEATURES.newSpecies '
+                   '(core.js staticFrame) and listed in manifest.json as prototype_static; ambient/ is not used.'),
         'species': species,
         'ambient': ambient,
     }

@@ -51,6 +51,15 @@ def build():
     avatar_overlay = GAME / 'avatar_manifest.json'
     if avatar_overlay.exists():
         manifest += json.loads(avatar_overlay.read_text())
+    new_species = GAME / 'new_species_manifest.json'
+    if new_species.exists():  # static placeholder drawings for FEATURES.newSpecies until Codex animates them
+        art = json.loads(new_species.read_text(encoding='utf-8'))
+        for species, info in art['species'].items():
+            for key, file in info['files'].items():
+                manifest.append({'file': file, 'size': info['size'][key], 'origin': info['origin'][key], 'species': species, 'status': 'prototype_static', 'direction': key if key in ('S', 'N', 'E', 'W') else 'E', 'frame_count': 1, 'animation_ready': False})
+        for kind, info in art.get('ambient', {}).items():  # ambient creatures are drawn but not used by the game yet
+            for file in info['files']:
+                manifest.append({'file': file, 'size': info['size'], 'origin': [info['size'][0] // 2, info['size'][1] // 2], 'species': kind, 'status': 'prototype_static', 'animation_ready': False, 'runtime_enabled': False})
     if len({entry['file'] for entry in manifest}) != len(manifest):
         raise SystemExit('Duplicate resource paths in combined manifest')
     for folder in ('assets', 'sounds', 'Source_Generated'):

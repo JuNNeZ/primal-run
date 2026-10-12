@@ -11,7 +11,7 @@
     "corpse_skeleton": "144x144 RGBA, E orientation, like assets/corpses/<species>_decayed_E_0.png and <species>_skeleton_E_0.png (origin 72,72); carcass bbox centred near 74,78 like the existing props; skeleton shares the corpse registration",
     "avatar": "64x64 RGBA, origin 32,32, head only, like assets/avatars/<species>_idle_000.png"
   },
-  "not_wired": "No game code, project.json or runtime manifest references these files.",
+  "wiring": "Live poses, corpses, skeletons and avatars are drawn as static frames behind FEATURES.newSpecies (core.js staticFrame) and listed in manifest.json as prototype_static; ambient/ is not used.",
   "species": {
     "spinosaurus": {
       "role": "playable",

@@ -179,10 +179,11 @@ def main():
     if actual != expected:
         err('inventory mismatch in assets/new_species: ' + str(sorted(actual ^ expected)))
 
-    # placeholders must not be wired into the game yet
-    for path in sorted((GAME / 'src').glob('*.js')) + [GAME / 'project.json', GAME / 'manifest.json']:
-        if path.exists() and 'new_species' in path.read_text(encoding='utf-8', errors='ignore'):
-            err(f'{path.relative_to(GAME).as_posix()} references new_species (placeholders are not to be wired)')
+    # the live frames, corpses and avatars are wired as static frames behind FEATURES.newSpecies (core.js staticFrame);
+    # every one of them must reach the game manifest so the asset catalog can draw it
+    listed = {e['file'] for e in json.loads((GAME / 'manifest.json').read_text(encoding='utf-8'))}
+    for rel in sorted(expected - listed):
+        err(f'{rel} is missing from manifest.json (run python tools/build_game.py)')
 
     print(f'species: {len(species)}  species files: {len([x for x in expected if "/ambient/" not in x])}  '
           f'ambient creatures: {len(amb)} ({sum(len(e.get("files", [])) for e in amb.values())} files)')

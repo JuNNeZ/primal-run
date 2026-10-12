@@ -1,7 +1,12 @@
 # Nye arter: statiske pladsholdertegninger (overdragelse til Codex)
 
-Status: **prototype_static**, `production_approved: false`, `animation_ready: false`, `runtime_enabled: false`.
-Intet af dette er koblet ind i spillet. `src/*.js`, `project.json`, `manifest.json` og `integration_report.json` er ikke ændret.
+Status: **prototype_static**, `production_approved: false`, `animation_ready: false`.
+Spillet tegner de levende poser, kadavere, skeletter og avatarer som stillbilleder bag `FEATURES.newSpecies`
+(`staticFrame` i `src/core.js`; `src/app.js` giver dem en lille gå-bevægelse). Filerne står i `manifest.json`
+som `prototype_static`. Omgivelsesdyrene i `ambient/` bruges ikke (`runtime_enabled: false`).
+
+Når Codex leverer rigtige animationer, falder spillet automatisk over på dem: sæt `animated:true` på arten i
+`NEW_PLAYERS`/`NEW_NPCS` i `core.js` (som Parasaurolophus har), så bruges de normale `player_full`/`enemy_full`-frames.
 
 Gennemsyn: `new_species_review.html` (2×, pixelated, med eksisterende arter ved siden af til sammenligning af skala).
 Data: `new_species_manifest.json`. Den indeholder rolle, filer, alpha-bbox pr. retning og sha256 for hver art.
@@ -91,7 +96,7 @@ I alt er det 156 frames pr. art og 2.496 frames for alle 16 arter.
 
 Efter eksport kører man `python tools/build_game.py`, `npm test`, `npm run validate:game-sprites`,
 `npm run validate:enemy-sprites` og `npm run simulate:quick`.
-Spinosaurus bør have visualScale 2 i spillet, ligesom tyrannosaurus og deinosuchus.
+Spinosaurus har allerede visualScale 2 i spillet (`STATIC_SCALE`), ligesom tyrannosaurus og deinosuchus.
 
 ## Små omgivelsesdyr (ekstra)
 
