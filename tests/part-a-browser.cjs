@@ -23,7 +23,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
     r.enemies=[];const e=g.spawn(species,{x:r.player.x+100,y:r.player.y});
     for(const direction of ['S','N','E','W'])for(const running of [false,true]){
      e.hp=e.maxHP*.29;e.direction=direction;e.gaitPhase=.7;e.hit=0;e.moving=true;e.mode=running?'flee':'chase';e.sex='female';
-     calls.length=0;primalRun.update(performance.now());const family=['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx'].includes(species)?'player_full':'enemy_full',name=PrimalAssets[`assets/behavior_injured/${species}_limp_${direction}_003.png`]?`${species}_limp_${direction}_003.png`:`${species}_${running?'run':'walk'}_${direction}_003.png`;
+     calls.length=0;primalRun.update(performance.now());const family=['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx'].includes(species)?'player_full':'enemy_full',name=PrimalCore.STATIC_SPECIES.has(species)?`${species}_${direction}.png`:PrimalAssets[`assets/behavior_injured/${species}_limp_${direction}_003.png`]?`${species}_limp_${direction}_003.png`:`${species}_${running?'run':'walk'}_${direction}_003.png`; // new species are static drawings until Codex animates them
      if(!calls.some(c=>c.file===name))throw Error('NPC gait not drawn '+family+'/'+name);npcs++;
     }
    }
@@ -42,9 +42,9 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
    return {players,npcs,tailFrames,paused:true};
   }finally{ctx.drawImage=old;}
  });
- assert.equal(result.players,192);assert.equal(result.npcs,80);assert.equal(result.tailFrames,24);assert.deepEqual(errors,[]);
+ const counts=await page.evaluate(()=>({players:Object.keys(PrimalCore.PLAYER_SPECIES).length*16,npcs:Object.keys(PrimalCore.SPECIES).length*8}));assert.equal(result.players,counts.players);assert.equal(result.npcs,counts.npcs);assert.equal(result.tailFrames,24);assert.deepEqual(errors,[]);
  const out=path.resolve(__dirname,'../PRIMAL_RUN_Game/previews/part_a');fs.mkdirSync(out,{recursive:true});await page.screenshot({path:path.join(out,'ankylosaurus-reused-runtime.png')});
  await page.setViewportSize({width:390,height:844});await page.screenshot({path:path.join(out,'ankylosaurus-mobile.png')});
  await page.setViewportSize({width:1280,height:1000});await page.goto(await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/part_a_review.html')));await page.waitForFunction(()=>document.querySelectorAll('#frames img').length===6&&[...document.querySelectorAll('#frames img')].every(i=>i.complete&&i.naturalWidth));await page.locator('#pause').click();await page.screenshot({path:path.join(out,'ankylosaurus-body-comparison.png')});await page.locator('#species').selectOption('parasaurolophus');await page.waitForFunction(()=>document.querySelector('#frames img')?.src.includes('parasaurolophus'));assert.match(await page.locator('#status').innerText(),/Eksisterende kildeframes/ );assert.deepEqual(errors,[]);
- fs.writeFileSync(path.resolve(out,'../../part_a_runtime_report.json'),JSON.stringify({status:'PASS',runtime:'standalone Chromium',...result,checks:['192 player health/direction/gait cases','80 low-health NPC walk/run cases','24 byte-reused tail swings render on player and NPC','attack hurt flash exists','pause freezes phase','390px mobile screenshot'],production_approved:false},null,2)+'\n');console.log('PASS part A: reused tail swings, low-health gait, hit flash, pause');
+ fs.writeFileSync(path.resolve(out,'../../part_a_runtime_report.json'),JSON.stringify({status:'PASS',runtime:'standalone Chromium',...result,checks:[result.players+' player health/direction/gait cases',result.npcs+' low-health NPC walk/run cases','24 byte-reused tail swings render on player and NPC','attack hurt flash exists','pause freezes phase','390px mobile screenshot'],production_approved:false},null,2)+'\n');console.log('PASS part A: reused tail swings, low-health gait, hit flash, pause');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
