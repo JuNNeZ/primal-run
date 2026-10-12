@@ -14,8 +14,8 @@ sprites. Se [PRESENTATION_AND_ATLAS.md](PRESENTATION_AND_ATLAS.md) for status,
 godkendelseshashes, fallbacks og tests. Tabellen nedenfor beskriver den tidligere
 placeholder og de øvrige åbne ønsker.
 
-A1–A5 har nu integrerede **prototyper**. Produktionsgodkendelse og den samlede
-slutverifikation mangler; se `SPRITES_AND_MECHANICS_STATUS.md`.
+A1–A5 har nu integrerede **prototyper**. Produktionsgodkendelse og en ny GDJS-sluttest mangler. Browser- og
+assetchecks er verificeret i fortsættelsen den 12. oktober; se `SPRITES_AND_MECHANICS_STATUS.md`.
 
 1. **Kryds-state konsistens:** finpuds kropsform, markeringer og loop-overgange.
    Fem arter har 120 artsangrebsframes, inklusive Parasaurolophus-spark.
@@ -31,7 +31,7 @@ slutverifikation mangler; se `SPRITES_AND_MECHANICS_STATUS.md`.
    færdiggøres uden at ændre vandreglerne for at skjule grafikfejl.
 5. **Raptor-ådsler:** Velociraptor/Utahraptor har nu 32 NPC-klare ådsel-/skeletposes.
    De 160 ældre poses er uændrede. Endelig anatomi- og farvereview mangler.
-6. **Valgfri A6:** lava/aske-overgange, pixel-HUD-chips og natpaletter.
+6. **A6 fortsættelse:** native natpalet er implementeret med palet-skift oven på artsfarver/skins. Lava/aske-overgange og mad/DNA/zone-HUD-chips mangler fortsat. Sol/måne, basaltpassager og askeskyer er allerede integreret. Se NIGHT_PALETTE.md.
 7. **Fremtid:** æg, udklækning og baby-/ungestadier pr. art, efter gameplay-/balancevalg.
 
 De 632 tidligere behavior-studieframes er runtime-deaktiveret og bevaret som

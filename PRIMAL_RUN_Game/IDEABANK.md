@@ -2,6 +2,13 @@
 
 Ideer til senere. Ikke godkendt til implementering endnu.
 
+## A-serien · 12. oktober 2026
+
+**Bygget:** A1–A5 er integreret og godkendt til implementering/push af Jonas.
+A6 fortsætter med natpalet-skift af eksisterende dyr og ådsler, også med skins.
+Nye mad/DNA/zone-chips og komplette lava/aske-kanter er fortsat åbne.
+Se NIGHT_PALETTE.md og SPRITES_AND_MECHANICS_STATUS.md.
+
 ## Større eller procedurale baner (tilføjet 9. okt. 2026)
 
 **Status:** første version er bygget i overhaulen – banerne er 1,4× større, procedurelt delt i

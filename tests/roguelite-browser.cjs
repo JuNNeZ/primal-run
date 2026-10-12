@@ -11,7 +11,8 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
  assert.ok(snapshot.plants>800);assert.equal(snapshot.roads,0);await page.waitForTimeout(150);
  const names=await page.evaluate(()=>drawnNames);assert.ok(names.some(([s,c])=>s.startsWith('⚠ Compsognathus')&&c==='#ed7869'));assert.ok(!names.some(([s])=>s.includes('FJENDE')));
  if(process.env.PRIMAL_VISUAL_DIR){fs.mkdirSync(process.env.PRIMAL_VISUAL_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.PRIMAL_VISUAL_DIR,'compy-forest.png')});}
- await page.evaluate(()=>{const r=primalRun.game.run,s=r.map.sites.find(s=>s.type==='nest');r.player.x=s.x;r.player.y=s.y;primalRun.game.setView(r.view.width,r.view.height);r.map.events=[];r.enemies=[];r.spawnTimer=999;});await page.keyboard.press('e');await page.waitForSelector('[data-explore="take"]');
+ // Keep first-time zone discovery separate from the nest's single exploration reward.
+ await page.evaluate(()=>{const r=primalRun.game.run,s=r.map.sites.find(s=>s.type==='nest');r.player.x=s.x;r.player.y=s.y;primalRun.game.setView(r.view.width,r.view.height);r.map.events=[];r.zonesSeen=Object.fromEntries(r.map.zones.map((_,i)=>[i,true]));r.enemies=[];r.spawnTimer=999;});await page.keyboard.press('e');await page.waitForSelector('[data-explore="take"]');
  const frozen=await page.evaluate(()=>JSON.stringify(primalRun.game.run));await page.waitForTimeout(250);assert.equal(await page.evaluate(()=>JSON.stringify(primalRun.game.run)),frozen);
  const exploreBase=await page.evaluate(()=>primalRun.game.run.exploration);await page.locator('[data-explore="take"]').click();await page.waitForFunction(b=>primalRun.game.run.exploration===b+1,exploreBase);assert.equal(await page.evaluate(()=>primalRun.game.run.map.sites.filter(s=>s.claimed).length),1);
  await page.waitForFunction(()=>primalRun.game.phase==='mutation'); await page.locator('[data-mutation]').first().click();

@@ -6,6 +6,15 @@ Live/gh-pages ændres ikke. Opgave: `docs/tasks/SPRITES_AND_MECHANICS_2026-10.md
 Tidligere ufærdigt arbejde og rå ark er bevaret på
 `codex/preserved-feathered-starter` (`b2eb9f3`), uden automatisk sammenfletning.
 
+## Godkendelse og fortsættelse · 12. oktober 2026
+
+Jonas har godkendt implementering og push af A1–A5 fra CODEX_TASKS_2026-10.md.
+Pakken findes allerede på integration/next og bevares. Denne fortsættelse bygger
+på integrationsbranchens kombinerede spil; den genaktiverer ingen afviste poses.
+Godkendelsen registrerer leverancen, ikke en ny GDJS-test eller automatisk
+produktionscertificering. Natpaletten i A6 genbruger native pixels og eksisterende skins.
+Se NIGHT_PALETTE.md for scope og aktuelle tests.
+
 ## Del A — integrerede og browser-testede prototyper
 
 | Pakke | Leveret | Begrænsning |
@@ -15,7 +24,7 @@ Tidligere ufærdigt arbejde og rå ark er bevaret på
 | A3 såret gang | 312 frames for 13 arter: 88 tegnede keyposes og 224 byte-identiske native frames | 16 afviste keyposes bruger fallback; Compy har kun originalerne, Deinonychus har fem fallback-keyposes |
 | A4 vand | 48 tiles: jord/lavt vand, sand/lavt vand og lavt/dybt vand; syv hjørnetiles rettet | Hjørne-/renderer-kontrol PASS; synlige gentagelser kræver visuel polering |
 | A5 raptor-ådsler | 192 ådsel-/skeletposes: gamle 160 uændrede, 32 nye til Velociraptor/Utahraptor | NPC-klare assets er ikke en påstand om nye spawn-regler |
-| A6 lava/HUD/natpaletter | Valgfri pakke | Åben |
+| A6 lava/HUD/natpaletter | Natpalet implementeret; eksisterende sol/måne, basalt og askeskyer bevares | Nye mad/DNA/zone-chips og komplette lava/aske-kanter mangler |
 
 De 632 tidligere behavior-studieframes er i karantæne med runtime slået fra.
 Forkastede og review-only exports er bevaret under Source_Generated.

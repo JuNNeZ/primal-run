@@ -266,7 +266,7 @@
         if(species&&!path.startsWith('assets/corpses/')) {
           const layer=document.createElement('canvas');layer.width=image.width;layer.height=image.height;const lc=layer.getContext('2d');drawAsset(lc,image,0,0);const pixels=lc.getImageData(0,0,image.width,image.height),mapping=C.SPECIES_COLORS[species];
           for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[pixels.data[i],pixels.data[i+1],pixels.data[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('');const color=mapping[key];if(color){pixels.data[i]=parseInt(color.slice(0,2),16);pixels.data[i+1]=parseInt(color.slice(2,4),16);pixels.data[i+2]=parseInt(color.slice(4,6),16);}}
-          lc.putImageData(pixels,0,0);skins[path]=layer;
+          lc.putImageData(pixels,0,0);layer.spritePath=path;skins[path]=layer;
         }
         if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/') || path.startsWith('assets/enemy_full/') || path.startsWith('assets/player_full/') || path.startsWith('assets/species_attacks/') || path.startsWith('assets/behavior/') || path.startsWith('assets/behavior_native/') || path.startsWith('assets/behavior_injured/'))) {
           const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
@@ -278,12 +278,43 @@
     const npcVariants=new Map();
     function npcVariant(path,variant){const key=path+':'+variant;if(npcVariants.has(key))return npcVariants.get(key);const source=skins[path]||images[path];if(!source)return null;const layer=document.createElement('canvas');layer.width=source.width;layer.height=source.height;const lc=layer.getContext('2d');drawAsset(lc,source,0,0);const pixels=lc.getImageData(0,0,layer.width,layer.height),swaps={male:{'799447':'a8b15b','69a4a0':'3c7180','b98252':'d4a36c','929387':'626861'},elite:{'799447':'de954a','69a4a0':'e9b75a','929387':'de954a','b98252':'e9b75a'},fishKing:{'799447':'3c7180','69a4a0':'a2d4c1','929387':'2466a0','b98252':'69a4a0'}};
       for(let i=0;i<pixels.data.length;i+=4){if(!pixels.data[i+3])continue;const rgb=[...pixels.data.slice(i,i+3)],key=rgb.map(v=>v.toString(16).padStart(2,'0')).join('');let value=swaps[variant]?.[key];if(variant==='albino'&&Math.max(...rgb)>55)value=Math.max(...rgb)>145?'e8ece1':'bab8a2';if(value)for(let j=0;j<3;j++)pixels.data[i+j]=parseInt(value.slice(j*2,j*2+2),16);}
-      lc.putImageData(pixels,0,0);npcVariants.set(key,layer);if(npcVariants.size>128)npcVariants.delete(npcVariants.keys().next().value);return layer;
+      lc.putImageData(pixels,0,0);layer.spritePath=path;npcVariants.set(key,layer);if(npcVariants.size>128)npcVariants.delete(npcVariants.keys().next().value);return layer;
+    }
+    const nightFrames = new Map(), NIGHT_FRAME_LIMIT = 128;
+    function nightFrame(path, source, variant) {
+      // Recolour the final species/skin pixels, preserving alpha, silhouettes and origins.
+      const key = path + ':' + (variant || 'classic');
+      if (nightFrames.has(key)) return nightFrames.get(key);
+      const layer = document.createElement('canvas');
+      layer.width = source.width; layer.height = source.height;
+      layer.spritePath = path; layer.nightPalette = true;
+      const lc = layer.getContext('2d'); lc.imageSmoothingEnabled = false;
+      drawAsset(lc, source, 0, 0);
+      const pixels = lc.getImageData(0, 0, layer.width, layer.height);
+      for (let i = 0; i < pixels.data.length; i += 4) {
+        if (!pixels.data[i + 3]) continue;
+        const rgb = [pixels.data[i], pixels.data[i+1], pixels.data[i+2]]
+          .map(v => v.toString(16).padStart(2, '0')).join('');
+        const target = C.NIGHT_PALETTE[rgb];
+        if (target) for (let j = 0; j < 3; j++) pixels.data[i+j] = parseInt(target.slice(j*2, j*2+2), 16);
+      }
+      lc.putImageData(pixels, 0, 0); nightFrames.set(key, layer);
+      if (nightFrames.size > NIGHT_FRAME_LIMIT) nightFrames.delete(nightFrames.keys().next().value);
+      return layer;
     }
     function sprite(path, x, y, alpha = 1, flash = false, rotation = 0, scale = 1, variant=null) {
       prepareImage(path);const image = flash ? flashes[path] : images[path], meta = catalog[path]; if(!image&&meta){loadImage(path).catch(()=>{});return;}if(!meta)return;
       ctx.globalAlpha = alpha;
+      const night = !flash && C.FEATURES.dayNight && C.FEATURES.nightPalette && game.run?.night
+        && /^assets\/(enemies|enemy_animations|enemy_full|player_full|player_combat|species_attacks|behavior_native|behavior_injured|corpses)\//.test(path);
+      const finalImage = night ? nightFrame(path, (variant ? npcVariant(path,variant) : skins[path]) || image, variant) : null;
       const paint=(img,dx,dy)=>{if(scale===1)drawAsset(ctx,img,dx,dy);else drawAsset(ctx,img,dx,dy,img.width*scale,img.height*scale);};
+      if (finalImage) {
+        const dx = -meta.origin[0]*scale, dy = -meta.origin[1]*scale;
+        if (rotation) { ctx.save(); ctx.translate(Math.round(x),Math.round(y)); ctx.rotate(rotation); paint(finalImage,dx,dy); ctx.restore(); }
+        else paint(finalImage,Math.round(x)+dx,Math.round(y)+dy);
+        ctx.globalAlpha = 1; return;
+      }
       if(rotation){ctx.save();ctx.translate(Math.round(x),Math.round(y));ctx.rotate(rotation);paint(image,-meta.origin[0]*scale,-meta.origin[1]*scale);if(!flash&&(variant?npcVariant(path,variant):skins[path]))paint(variant?npcVariant(path,variant):skins[path],-meta.origin[0]*scale,-meta.origin[1]*scale);ctx.restore();}
       else {paint(image,Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);if(!flash&&(variant?npcVariant(path,variant):skins[path]))paint(variant?npcVariant(path,variant):skins[path],Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);}
       ctx.globalAlpha = 1;
@@ -722,7 +753,7 @@
     function screenAmbience(r,time){
       const w=canvas.width,h=canvas.height,[tint,alpha]=LEVEL_LIGHT[Math.min(LEVEL_LIGHT.length-1,r.levelIndex||0)],kind=weather(r);
       if(alpha){ctx.save();ctx.globalAlpha=alpha;ctx.globalCompositeOperation='multiply';ctx.fillStyle=tint;ctx.fillRect(0,0,w,h);ctx.restore();}
-      if(C.FEATURES.dayNight&&r.darkness>0){ // B2 night: procedural darkening with a soft light around the player (night palette = A6 asset)
+      if(C.FEATURES.dayNight&&r.darkness>0){ // B2 lighting remains separate from A6's native sprite palette.
         const px=r.player.x-r.view.x,py=r.player.y-r.view.y,inner=110,outer=Math.max(w,h)*.55,g=ctx.createRadialGradient(px,py,inner,px,py,outer);
         g.addColorStop(0,'rgba(21,27,25,0)');g.addColorStop(1,'rgba(21,27,25,'+(.62*r.darkness).toFixed(3)+')');
         ctx.save();ctx.globalCompositeOperation='multiply';ctx.fillStyle=g;ctx.fillRect(0,0,w,h);ctx.globalAlpha=.18*r.darkness;ctx.fillStyle='#3c7180';ctx.fillRect(0,0,w,h);ctx.restore();
@@ -1075,10 +1106,10 @@
     }
     function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[],menu=false}={},onProgress=null){if(menu){const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||path.includes('/'+species+'_idle_')));return Promise.all(paths.map(p=>loadImage(p)));} // menu: UI + chosen species only (shared atlas requests; frame-level progress remains compatible). Everything else loads at START or on demand.
     const animals=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss),...kinds]);const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||Array.from(animals).some(id=>path.includes('/'+id+'_'))));let loadedCount=0;const total=paths.length;return Promise.all(paths.map(p=>loadImage(p).then(ok=>{loadedCount++;if(onProgress)onProgress(loadedCount,total);return ok;})));}
-    function evictUnused(stage,species){const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);for(const path of Object.keys(images))if(/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete frameCanvases[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);prepared.delete(path);}for(const file of Object.keys(sheets))if(!Object.values(images).some(image=>image.sheet===sheets[file])){delete sheets[file];delete sheetLoads[file];}}
+    function evictUnused(stage,species){nightFrames.clear();const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);for(const path of Object.keys(images))if(/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete frameCanvases[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);prepared.delete(path);}for(const file of Object.keys(sheets))if(!Object.values(images).some(image=>image.sheet===sheets[file])){delete sheets[file];delete sheetLoads[file];}}
     const querySeed=new URL(location.href).searchParams.get('seed');if(querySeed&&/^\d{1,10}$/.test(querySeed)&&Number(querySeed)<=4294967295)seedInput=querySeed;
     const load = preload({ menu: true }).then(() => { ready = true; renderScreen(true); return true; }).catch(e => { game.phase = 'error'; renderScreen(true); screen.querySelector('.load-error').textContent = e.message; return false; });
-    const api = { telegraphShape: (e, r = game.run) => telegraphShape(r, e), warningLabelY: (e, width = 120, r = game.run) => warningLabelY(r, e, width), preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,atlasSheets:Object.keys(sheets).length,decodedBytes:[...Object.values(sheets),...Object.values(images).filter(i=>!i.sheet),...Object.values(frameCanvases),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values()].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
+    const api = { telegraphShape: (e, r = game.run) => telegraphShape(r, e), warningLabelY: (e, width = 120, r = game.run) => warningLabelY(r, e, width), preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,atlasSheets:Object.keys(sheets).length,nightFrames:nightFrames.size,decodedBytes:[...Object.values(sheets),...Object.values(images).filter(i=>!i.sheet),...Object.values(frameCanvases),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values(),...nightFrames.values()].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
     root.primalRun = api; renderScreen(true); if (!driven) animationId = requestAnimationFrame(frame);
     return api;
   }

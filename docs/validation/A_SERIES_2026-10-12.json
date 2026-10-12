@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-12",
+  "source_branch": "integration/next",
+  "source_commit": "1c96b4715f828ca2acd2b26e0ab25b2fa597e729",
+  "authorization": "Jonas approved implementation and push of A1–A5 and continued work on the A series in this chat.",
+  "scope": "Integration acceptance. No fabricated GDevelop runtime or production-art certification.",
+  "accepted_packages": {
+    "A1": {
+      "manifest": "species_attack_manifest.json",
+      "sha256": "3bb383b9fa9e5511f47a5760a9daa496873155e8eb414411b68410a783728dec",
+      "entries": 120
+    },
+    "A2": {
+      "manifest": "native_behavior_manifest.json",
+      "sha256": "63b2e36832acb029011bd85c6f06921f4234f1c149c7bfc3223297ddafe15dcc",
+      "entries": 288
+    },
+    "A3": {
+      "manifest": "injured_walk_manifest.json",
+      "sha256": "d9b60a72e72f3a90acc461906f5faa123ed9fdd963b91d432e832f5bd54a8a32",
+      "entries": 312
+    },
+    "A4": {
+      "manifest": "water_transition_manifest.json",
+      "sha256": "2c009e74e31a026ea341220ba6699178de4dab2128f7be99e517484dd379ea19",
+      "entries": 48
+    },
+    "A5": {
+      "manifest": "corpse_manifest.json",
+      "sha256": "506d1f59e0adf515c8edbaa095d9d62fe5a2fc70fae80b83d53f7f77732d0729",
+      "entries": 192
+    }
+  },
+  "A6": {
+    "night_palette": "implemented",
+    "remaining": [
+      "food/DNA/zone HUD chips",
+      "complete lava/ash transition tiles"
+    ]
+  },
+  "checks": {
+    "part_a_assets": "PASS",
+    "corpse_assets": "PASS (192)",
+    "hud_attacks": "PASS",
+    "active_and_enemy_sprites": "PASS",
+    "kit_assets": "PASS (104)",
+    "unit_tests": "PASS (249)",
+    "night_palette_pixels": "PASS (192 sprite/skin/corpse cases)",
+    "browser_and_kit_regressions": "PASS (31 game browser suites + 3 kit checks, run as components in isolated copy)",
+    "GDevelop_runtime": "not run",
+    "final_generated_sources": "PASS (game + night palette tests after final rebuild)"
+  },
+  "source_sha256": {
+    "src/core.js": "d089aa72bc788278bf06d750296f50004216729a853d08278af6252340b075c1",
+    "src/app.js": "93f62ffc6f714026626d97950c27b05e7b7a69a0d2c1b73a774a0f561d466773",
+    "night_palette_manifest.json": "050286761c8c4858e4c55dcd71756b555fb4cc9ab8e6af59eecbd669030fc990"
+  },
+  "test_execution_note": "Initial npm test passed 249 unit tests and preceding browser suites, then encountered the known zone/nest exploration race. The fixture now marks zones seen, isolating the nest reward. That suite and all remaining npm test components passed after correction; final night palette and generated-source checks passed separately.",
+  "logs": [
+    "a-series-initial-test.log",
+    "a-series-final-browser-test.log"
+  ]
+}
