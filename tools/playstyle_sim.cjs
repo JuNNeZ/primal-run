@@ -186,7 +186,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
       return steer(food.x, food.y);
     }
     // Pick up DNA/heal pickups
-    const loot = nearest(r.pickups.filter(f => f.corpseId === undefined && dist(f) < 300));
+    const loot = nearest(r.pickups.filter(f => f.corpseId === undefined && dist(f) < (f.kind === 'powerup' && style !== 'newbie' ? 600 : 300))); // --exp powerups glow, so players see them from further away
     if (loot) return steer(loot.x, loot.y);
     // Explore sites
     if (S.explore && !boss) {
@@ -297,7 +297,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     lowHPPct: +(100 * m.lowHPTime / Math.max(r.seconds, 1e-6)).toFixed(1), eatingPct: +(100 * m.eatingTime / Math.max(r.seconds, 1e-6)).toFixed(1),
     stuckSeconds: +m.stuckTime.toFixed(1), plantsEaten: st.plantsEaten, fishCaught: st.fishCaught, exploration: r.exploration,
     allies: (r.partB && r.partB.alliesRecruited) || 0, nightKills: (r.partB && r.partB.nightKills) || 0,
-    rerolls: st.rerolls || 0, ownSpecies: Object.entries(r.mutations).filter(([id, v]) => v && (C.MUTATIONS.find(x => x.id === id) || {}).species === r.species).reduce((s, [, v]) => s + v, 0), distanceKm: +(st.distance / 1000).toFixed(2), mutations: Object.fromEntries(Object.entries(r.mutations).filter(([, v]) => v)),
+    exp: st.exp || null, rerolls: st.rerolls || 0, ownSpecies: Object.entries(r.mutations).filter(([id, v]) => v && (C.MUTATIONS.find(x => x.id === id) || {}).species === r.species).reduce((s, [, v]) => s + v, 0), distanceKm: +(st.distance / 1000).toFixed(2), mutations: Object.fromEntries(Object.entries(r.mutations).filter(([, v]) => v)),
   };
 }
 
@@ -363,6 +363,7 @@ function applySet(C, set) {
 if (!isMainThread && require.main === module) {
   const C = require(CORE_PATH);
   applySet(C, workerData.set);
+  if (workerData.exp) require('./experiments.cjs').install(C, workerData.exp); // --exp: simulator-only prototypes (tools/experiments.cjs)
   for (const flag of workerData.off || []) if (C.FEATURES && flag in C.FEATURES) C.FEATURES[flag] = false; // --off: baseline with Part B flags off
   const rows = [];
   for (const job of workerData.jobs) {
@@ -381,11 +382,12 @@ function args() {
 async function main() {
   const { help, quick, get } = args();
   if (help) {
-    console.log(`PRIMAL RUN play-style simulator\n\n  --runs N         seeds per species×style (default 20, --quick: 3)\n  --seconds N      simulated seconds per run (default 1500)\n  --species a,b    default: all playable\n  --styles a,b     ${Object.keys(STYLES).join(', ')} (default: all)\n  --threads N      default: CPU cores - 1\n  --seed N         first seed (default 1000)\n  --out DIR        default balance_runs/playstyle_<date>\n  --upgrades JSON  DNA start upgrades, e.g. '{"health":2}'\n  --set JSON       deep-merge into core exports, e.g. '{"BOSS_TUNING":{"hp":[1,1,1,1,1,1,1,1]}}' (--set-file FILE reads it from a file)\n  --level N        start on level N (1-8)\n  --start-mutations N  N mutation picks before the run starts\n  --quick          small smoke test`);
+    console.log(`PRIMAL RUN play-style simulator\n\n  --runs N         seeds per species×style (default 20, --quick: 3)\n  --seconds N      simulated seconds per run (default 1500)\n  --species a,b    default: all playable\n  --styles a,b     ${Object.keys(STYLES).join(', ')} (default: all)\n  --threads N      default: CPU cores - 1\n  --seed N         first seed (default 1000)\n  --out DIR        default balance_runs/playstyle_<date>\n  --upgrades JSON  DNA start upgrades, e.g. '{"health":2}'\n  --exp JSON       simulator-only prototypes from tools/experiments.cjs, e.g. '{"powerups":true}'\n  --set JSON       deep-merge into core exports, e.g. '{"BOSS_TUNING":{"hp":[1,1,1,1,1,1,1,1]}}' (--set-file FILE reads it from a file)\n  --level N        start on level N (1-8)\n  --start-mutations N  N mutation picks before the run starts\n  --quick          small smoke test`);
     return;
   }
   const C = require(CORE_PATH);
   const set = get('set-file', null) ? JSON.parse(fs.readFileSync(get('set-file'), 'utf8')) : JSON.parse(get('set', '{}')); applySet(C, set);
+  const exp = JSON.parse(get('exp', 'null'));
   const runs = Number(get('runs', quick ? 3 : 20)), seconds = Number(get('seconds', quick ? 600 : 1500)), firstSeed = Number(get('seed', 1000));
   const species = get('species', 'all') === 'all' ? Object.keys(C.PLAYER_SPECIES) : get('species').split(',');
   const styles = get('styles', 'all') === 'all' ? Object.keys(STYLES) : get('styles').split(',');
@@ -403,7 +405,7 @@ async function main() {
   const t0 = Date.now(); let done = 0;
   console.error(`Kører ${jobs.length} runs på ${threads} tråde → ${out}`);
   const results = await Promise.all(buckets.filter(b => b.length).map(bucket => new Promise((resolve, reject) => {
-    const w = new Worker(__filename, { workerData: { jobs: bucket, off, set } });
+    const w = new Worker(__filename, { workerData: { jobs: bucket, off, set, exp } });
     w.on('message', msg => { if (msg.progress) { done++; if (done % Math.max(1, Math.floor(jobs.length / 20)) === 0 || done === jobs.length) process.stderr.write(`\r  ${done}/${jobs.length} (${Math.round(100 * done / jobs.length)} %) · ${Math.round((Date.now() - t0) / 1000)}s   `); } if (msg.rows) resolve(msg.rows); });
     w.on('error', reject);
   })));
@@ -413,7 +415,7 @@ async function main() {
   const summary = summarize(ok), warns = warnings(summary, C);
   if (errors.length) warns.unshift(`${errors.length} runs fejlede med en JavaScript-fejl (se runs.jsonl, outcome "error") – det kan være samme fejl som får spillet til at låse!`);
   const coreSHA = crypto.createHash('sha256').update(fs.readFileSync(CORE_PATH)).digest('hex');
-  const meta = { set, policy:'seven playstyles (exploiter added for B1); Deinonychus defensive finte and exposed-boss opportunity', flagsOff: off, challenges, simulatorSHA:crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex'), date: new Date().toISOString(), coreSHA, totalRuns: rows.length, seconds, workers: threads, elapsed: Math.round((Date.now() - t0) / 1000), runsPerGroup: runs, species, styles, upgrades };
+  const meta = { set, exp, policy:'seven playstyles (exploiter added for B1); Deinonychus defensive finte and exposed-boss opportunity', flagsOff: off, challenges, simulatorSHA:crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex'), date: new Date().toISOString(), coreSHA, totalRuns: rows.length, seconds, workers: threads, elapsed: Math.round((Date.now() - t0) / 1000), runsPerGroup: runs, species, styles, upgrades };
   const cols = Object.keys(summary[0] || {});
   fs.writeFileSync(path.join(out, 'summary.csv'), cols.join(',') + '\n' + summary.map(s => cols.map(c => JSON.stringify(s[c] ?? '')).join(',')).join('\n') + '\n');
   writeReport(out, meta, summary, warns);
