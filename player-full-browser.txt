@@ -1,0 +1,1 @@
+PASS: full playable animation · 1440 actual frames · 12 classes/4 directions/6 states · hurt/death · pause · native origins
