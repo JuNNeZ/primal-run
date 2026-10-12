@@ -9,9 +9,9 @@
   "source_sha256": {
     "src/run_titles.js": "11d200cfe8af66b5555bb7b23e1e676bdd8d80c398d458c967fbd3f0d435d06e",
     "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
-    "src/core.js": "3cce53162372bb273e4e0037d9973bc99bd087f799e2564e1f95da56515faf0d",
+    "src/core.js": "53fe3cbf633f59f960c2531606bcb930cefe4a4af87a7cb6edfc2a28db984c80",
     "src/i18n.js": "94adc5ad898f13b3dd8296ed7639d1e5fb8cf7e88faf1488e7176b7b456fd3d9",
-    "src/lang.js": "ebd580e8b568ea5dc1d07a222612403ebde87c35197633b04bf84d793e30cb6a",
+    "src/lang.js": "bf3afc717ba30d7b9cf106549c10a31481b1038921b1bc907ef22d21e46e19ac",
     "src/assets.js": "d8bbef00f3aa9e41db5466591635ae96a5dd0ed42518e72e9a78d0b4c9061425",
     "src/audio.js": "4011c9ba813e1e53c780d52a59d26e068b53d783eec2708e56dcfeec856a40ca",
     "src/app.js": "92be2e6d4d3299c188b6b5177e73e2b0aaf9abc5010471d537fc8bd6a6b1c835",
