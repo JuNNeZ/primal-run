@@ -64,7 +64,7 @@ function bandPoint(map, p) {
 
 // level: start at this journey level (0-based) via the game's own nextStage(); bossDuel: the boss spawns at once
 // and the run ends when it dies (outcome 'boss_win'). Used by X10 and the B1 before/after comparisons.
-function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null, challenges = [], alone = false, mutations = 0 }) {
+function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null, challenges = [], alone = false, mutations = 0, startPicks = 0 }) {
   const S = STYLES[style]; if (!S) throw Error('Unknown style ' + style);
   const R = rng(seed * 7919 + style.length * 104729);
   const g = new C.Game({ random: rng(seed ^ 0xABCDEF) });
@@ -227,6 +227,8 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
   // mutations: N level-ups chosen with this style's pick policy before the fight (1v1 duels with the expected build).
   for (let i = 0; i < mutations && g.phase === 'playing'; i++) { r.xp = r.nextXP; g.maybeLevelUp(); while (g.phase === 'mutation') pickMutation(); }
   m.mutationPicks = 0; m.tFirstMutation = null; m.epicRewards = 0;
+  // startPicks: extra mutation offers before the run without raising the player level (lab idea "Medfødt mutation").
+  for (let i = 0; i < startPicks && g.phase === 'playing'; i++) { const pool = C.MUTATIONS.filter(x => g.mutationAvailable(x)); if (!pool.length) break; r.choices = g.rollChoices(pool); g.phase = 'mutation'; while (g.phase === 'mutation') pickMutation(); }
   let safety = 0;
   while (wall < seconds && g.phase !== 'result') {
     if (++safety > seconds / dt * 4) break;
@@ -395,7 +397,7 @@ async function main() {
   const out = path.resolve(get('out', path.join(__dirname, '../PRIMAL_RUN_Game/balance_runs/playstyle_' + date)));
   fs.mkdirSync(out, { recursive: true });
   const jobs = [];
-  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades, challenges, level: Number(get('level', 1)) - 1, mutations: Number(get('start-mutations', 0)) });
+  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades, challenges, level: Number(get('level', 1)) - 1, startPicks: Number(get('start-mutations', 0)) });
   // interleave so every worker gets a mix of slow and fast species
   const buckets = Array.from({ length: threads }, () => []); jobs.forEach((j, i) => buckets[i % threads].push(j));
   const t0 = Date.now(); let done = 0;
