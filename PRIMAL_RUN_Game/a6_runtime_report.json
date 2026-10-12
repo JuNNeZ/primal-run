@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "samples": 110592,
+  "crossingSamples": 26172,
+  "masks": [
+    0,
+    4,
+    8,
+    12,
+    2,
+    1,
+    3,
+    10
+  ],
+  "HUD": [
+    "velociraptor",
+    "ankylosaurus",
+    "baryonyx",
+    "gallimimus"
+  ],
+  "stats": {
+    "loaded": 1792,
+    "total": 3677,
+    "atlasSheets": 29,
+    "nightFrames": 0,
+    "lavaTiles": 108,
+    "decodedBytes": 151511040
+  },
+  "pause": true,
+  "controlAdapter": true,
+  "missingHUD": {
+    "hidden": true,
+    "text": "◆ 0/18"
+  },
+  "GDevelop_runtime": "not run",
+  "production_approved": false
+}

@@ -86,6 +86,14 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .arena canvas.guide-model{position:relative;inset:auto;display:block;width:100%;max-width:240px;height:auto;aspect-ratio:2/1;margin:2px auto 6px;background:linear-gradient(180deg,#0000 55%,#28372a 56%,#1e2a20);border-radius:4px;image-rendering:pixelated;pointer-events:none}
 #time-label { display: inline-flex; align-items: center; gap: 4px; }
 .time-icon { width: 16px; height: 16px; image-rendering: pixelated; flex: none; }
+.hud-chips > span{display:inline-flex;align-items:center;gap:2px}
+.hud-chips > span[hidden],.chip-icon[hidden]{display:none}
+.chip-icon{width:24px;height:24px;flex:none;image-rendering:pixelated}
+.a6-control-icon{width:24px;height:24px;image-rendering:pixelated;vertical-align:middle;margin-right:4px}
+.a6-control-icon[hidden]{display:none}
+.arena canvas.chip-icon,.arena canvas.a6-control-icon{position:static;inset:auto;width:24px;height:24px;display:inline-block;object-fit:contain;transform:none}
+.arena canvas.time-icon{position:static;inset:auto;width:16px;height:16px;display:inline-block;object-fit:contain;transform:none}
+@media(max-width:800px){.hud-chips{gap:4px}.hud-chips > #zone-chip{display:none}}
 /* Species selection cards: one layout for every species (role, diet, playstyle, ability, stat bars). */
 .species-grid .species-card{display:flex;flex-direction:column;gap:0;padding:12px 14px 14px}
 .species-card header{display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}

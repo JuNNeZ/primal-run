@@ -1,0 +1,162 @@
+{
+  "assets/lava_ash/lava_ash_00.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 1
+  },
+  "assets/lava_ash/lava_ash_01.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 1
+  },
+  "assets/lava_ash/lava_ash_02.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 1
+  },
+  "assets/lava_ash/lava_ash_03.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 1
+  },
+  "assets/lava_ash/lava_ash_04.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 1
+  },
+  "assets/lava_ash/lava_ash_05.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 1
+  },
+  "assets/lava_ash/lava_ash_06.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 1
+  },
+  "assets/lava_ash/lava_ash_07.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 35
+  },
+  "assets/lava_ash/lava_ash_08.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 35
+  },
+  "assets/lava_ash/lava_ash_09.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 35
+  },
+  "assets/lava_ash/lava_ash_10.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 35
+  },
+  "assets/lava_ash/lava_ash_11.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 35
+  },
+  "assets/lava_ash/lava_ash_12.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 35
+  },
+  "assets/lava_ash/lava_ash_13.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 35
+  },
+  "assets/lava_ash/lava_ash_14.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 69
+  },
+  "assets/lava_ash/lava_ash_15.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 69
+  }
+}

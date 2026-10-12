@@ -25,8 +25,8 @@ cachegrænsen og pause. Rapport og desktop/390px screenshots ligger i
 `night_palette_runtime_report.json` og `previews/night_palette/`.
 Det er standalone Chromium; en ny GDevelop GDJS-eksport er ikke kørt.
 
-A6 er stadig delvist åben: nye mad/DNA/zone-HUD-chips og et komplet
-lava/aske-overgangssæt mangler. Godkendte sol/måne, basaltpassager og askeskyer
+A6 er nu fortsat med otte HUD-ikoner og seksten lava/aske-masker; se
+A6_HUD_AND_LAVA.md for integration, review og Part C-kompatibilitet. Godkendte sol/måne, basaltpassager og askeskyer
 fra presentation-pakken forbliver aktive. Denne leverance publicerer ikke gh-pages.
 
 Verifikation: 249 unit-tests, alle 31 spil-browser-suiter og tre kit-checks

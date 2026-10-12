@@ -23,6 +23,7 @@ jobs:
       - run: python validate_sprites.py
       - run: python tools/validate_game_sprites.py
       - run: python tools/validate_sprite_atlases.py
+      - run: python tools/validate_a6.py
       - run: python tools/validate_ground_reuse.py
       - run: python PRIMAL_RUN_Art_Handoff/validate_art.py
       - run: python tools/validate_enemy_animations.py

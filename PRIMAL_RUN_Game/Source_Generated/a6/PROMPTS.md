@@ -1,0 +1,23 @@
+# Preserved image-generation prompts · A6
+
+Both raw masters remain unchanged. Actual outputs are 1254×1254; requested
+dimensions in the prompts are not treated as actual file dimensions. Extraction
+coordinates, integer sampling, exported palette and hashes are in a6_manifest.json.
+
+## hud_revision1.png
+
+Create a NEW PRIMAL RUN pixel-art source sprite atlas, exactly square 1024 by 1024. This is an extraction master, NOT a poster. A regular 4-column by 4-row grid of 256x256 cells, no gaps, no lines, no labels, NO text anywhere. Place ONLY eight icons in the FIRST TWO ROWS, leave the bottom two rows completely transparent. Each icon is a genuine logical 16x16 pixel sprite displayed at EXACTLY 16x nearest-neighbor zoom in its 256x256 cell, blocky native pixels, no antialiasing, no soft gradients. Two logical pixels (32 displayed pixels) transparent border in each cell. Icons share upper-left lighting, charcoal outline, muted earth colours, semi-realistic prehistoric rogue-lite style. Row 1 from left: a small red meat steak with pale bone; two fern leaves for plant food; a teal fish facing right; a gold DNA double helix. Row 2 from left: a small parchment map with teal location dot for zone; TWO small teal feathers side by side meaning allied pack following; a gold target crosshair with tiny red centre meaning pack focus attack; two gold bent arrows circling each other meaning reroll mutation cards. Transparent background for all cells, no shadows outside the sprite. Use only these exact RGB hex colours: 151b19,28372a,3f5030,586d38,799447,a8b15b,ded392,443027,674333,8d6042,b98252,d4a36c,edd0a0,3b4144,626861,929387,bab8a2,54282d,913b32,c6663c,de954a,3c7180,69a4a0,a2d4c1,56346f,8853b0,bb80d9,563f8e,e8ece1,dfbc52,8d2028,2466a0. Each of the eight symbols must occupy one entire cell and have a clear recognisable silhouette at its logical 16x16 size. No added decorative frame.
+
+## lava_revision1.png
+
+Create one NEW PRIMAL RUN terrain source atlas: a perfectly regular square 4 by 4 grid of SIXTEEN OPAQUE texture tiles. Entire image square 1280x1280, each cell exactly320x320, no gaps, gutters, outlines, labels or text. True low-resolution top-down pixel art with each logical32x32 tile enlarged exactly10 times nearest-neighbor, blocky pixels, no smoothing. A complete 16-mask marching-squares transition from matte cool volcanic ash/basalt (#3b4144,#626861,#929387,#151b19) to molten lava (#54282d,#913b32,#c6663c,#de954a,#ded392). Natural irregular crust shoreline, quiet detail, upper-left lighting, no foam, no roads, no figures. Shared ash/lava textures seamless at each cell edge. Bits assigned NW=1 NE=2 SE=4 SW=8; each corner lava if bit is set, ASH if unset. ORDER is row-major mask0 to mask15, as follows: row1 mask0 ALL ash, mask1 ONLY NW lava triangle, mask2 ONLY NE lava triangle, mask3 upper half lava/lower ash horizontal bank; row2 mask4 ONLY SE lava triangle, mask5 TWO SEPARATE lava islands at NW and SE, mask6 right half lava/left ash vertical bank, mask7 all lava EXCEPT an ash triangle at SW; row3 mask8 ONLY SW lava triangle, mask9 left half lava/right ash vertical bank, mask10 TWO SEPARATE lava islands at NE and SW, mask11 all lava EXCEPT an ash triangle at SE; row4 mask12 lower half lava/upper ash horizontal bank, mask13 all lava EXCEPT an ash triangle at NE, mask14 all lava EXCEPT an ash triangle at NW, mask15 ALL lava, with subtle magma texture. IMPORTANT: EVERY CORNER MUST MATCH ITS BIT. No random deviation or embers on the corner ash patches. Cells0 and15 seamless full texture tiles; all boundaries connect at exact midpoint of edges. Lava/ash corners require their respective colour. These are native game tiles not a concept painting. Use ONLY these fixed colours: #151b19,#28372a,#3f5030,#586d38,#799447,#a8b15b,#ded392,#443027,#674333,#8d6042,#b98252,#d4a36c,#edd0a0,#3b4144,#626861,#929387,#bab8a2,#54282d,#913b32,#c6663c,#de954a,#3c7180,#69a4a0,#a2d4c1,#56346f,#8853b0,#bb80d9,#563f8e,#e8ece1,#dfbc52,#8d2028,#2466a0. All sixteen cells filled completely, no border around the atlas.
+
+## Review notes
+
+HUD requested logical16 icons, but the actual source has taller irregular
+clusters. A documented 24×24 export with fixed 16×20 integer samples preserves
+the symbols and transparent padding. No source art was redrawn during extraction.
+Source aliases/filenames are extraction identifiers, not evidence of production approval.
+All sixteen exported lava corner masks match their declared bits. This certifies
+corner topology, not seamless texture continuity. Repetition and transitions are
+shown honestly in a6_review.html and native previews.

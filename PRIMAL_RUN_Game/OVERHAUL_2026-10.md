@@ -9,7 +9,7 @@ A1–A5 er allerede integreret på integration/next; Jonas har godkendt
 implementering og push. A6 får et natpalet-skift på eksisterende dyr og ådsler
 uden nye tegninger. Artsfarver og skins behandles før natfarver; tilbagevenden
 til dag gendanner de samme pixels. FEATURE-flags kan deaktivere skiftet.
-Nye HUD-chips og komplette lava/aske-kanter er stadig åbne. Se NIGHT_PALETTE.md.
+HUD-chips og seksten lava/aske-masker er nu implementeret som prototyper. Part C-følg/fokus/reroll er forberedt og kompatibilitet testes særskilt. Se A6_HUD_AND_LAVA.md.
 
 ## Del A — integrerede prototyper, 10. oktober
 

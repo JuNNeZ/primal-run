@@ -9,6 +9,8 @@
   const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true};
   // A6: display-only moonlight ramp, entirely within Primal Earth 32.
   FEATURES.nightPalette = true;
+  FEATURES.hudIcons = true;
+  FEATURES.lavaTiles = true;
   const NIGHT_PALETTE = Object.freeze({
     '151b19':'151b19','28372a':'28372a','3f5030':'28372a','586d38':'3f5030',
     '799447':'586d38','a8b15b':'799447','ded392':'bab8a2','443027':'151b19',

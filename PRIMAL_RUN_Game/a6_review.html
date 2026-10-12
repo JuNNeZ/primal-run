@@ -1,0 +1,18 @@
+<!doctype html><html lang="da"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PRIMAL RUN · A6 ikoner og lava/aske</title>
+<style>body{background:#151b19;color:#e8ece1;font:16px system-ui;margin:24px}p{max-width:800px}section{display:flex;flex-wrap:wrap;gap:12px}figure{margin:0;padding:12px;background:#3b4144}canvas,img{image-rendering:pixelated}.light{background:#e8ece1}.dark{background:#151b19}select{font:inherit;padding:8px}figcaption{font-size:12px;margin-bottom:8px}</style>
+<h1>A6 · HUD og lava/aske</h1><p>Udviklingsprototyper: native pixels, fast palet og bevarede kilder. Maskernes bits er NW1, NE2, SE4, SW8. Tekniske gates er bestået; visuel sømløshed og produktion/GDJS er særskilte gates.</p>
+<label>Skala <select id="scale"><option value="1">1×</option><option value="4">4×</option></select></label>
+<h2>HUD · lys/mørk</h2><section id="hud"></section>
+<h2>Lava/aske · alle maskebits</h2><section id="masks"></section>
+<h2>Gentagelse · 3×3 grids</h2><section id="repeat"></section>
+<script>
+const names=['food_meat','food_plants','food_fish','dna_chip','zone_chip','pack_follow','pack_focus','reroll'];
+const jobs=[];
+function add(host,path,label,bg,repeat=1){const f=document.createElement('figure');f.innerHTML='<figcaption>'+label+'</figcaption><canvas class="'+bg+'"></canvas>';host.append(f);const image=new Image();image.src=path;jobs.push({canvas:f.querySelector('canvas'),image,repeat});}
+for(const name of names)for(const bg of ['light','dark'])add(document.querySelector('#hud'),'assets/a6_hud/'+name+'.png',name+' · '+bg,bg);
+for(let mask=0;mask<16;mask++)add(document.querySelector('#masks'),'assets/lava_ash/lava_ash_'+String(mask).padStart(2,'0')+'.png','Mask '+mask,'dark');
+for(const mask of [0,3,6,9,12,15])add(document.querySelector('#repeat'),'assets/lava_ash/lava_ash_'+String(mask).padStart(2,'0')+'.png','Mask '+mask+' · 3×3','dark',3);
+async function render(){await Promise.all(jobs.map(j=>j.image.decode()));const scale=+document.querySelector('#scale').value;for(const {canvas,image,repeat} of jobs){canvas.width=image.width*scale*repeat;canvas.height=image.height*scale*repeat;const c=canvas.getContext('2d');c.imageSmoothingEnabled=false;for(let y=0;y<repeat;y++)for(let x=0;x<repeat;x++)c.drawImage(image,x*image.width*scale,y*image.height*scale,image.width*scale,image.height*scale);}document.body.dataset.ready='true';}
+document.querySelector('#scale').addEventListener('change',render);render();
+</script></html>

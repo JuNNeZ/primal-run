@@ -1,5 +1,93 @@
 {
   "frames": {
+    "assets/a6_hud/dna_chip.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_a6_hud_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 1,
+      "y": 1
+    },
+    "assets/a6_hud/food_fish.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_a6_hud_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 27,
+      "y": 1
+    },
+    "assets/a6_hud/food_meat.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_a6_hud_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 53,
+      "y": 1
+    },
+    "assets/a6_hud/food_plants.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_a6_hud_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 79,
+      "y": 1
+    },
+    "assets/a6_hud/pack_focus.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_a6_hud_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 105,
+      "y": 1
+    },
+    "assets/a6_hud/pack_follow.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_a6_hud_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 131,
+      "y": 1
+    },
+    "assets/a6_hud/reroll.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_a6_hud_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 157,
+      "y": 1
+    },
+    "assets/a6_hud/zone_chip.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_a6_hud_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 183,
+      "y": 1
+    },
     "assets/avatars/ankylosaurus_eat_000.png": {
       "anchor": [
         32,
@@ -18183,6 +18271,182 @@
       "x": 409,
       "y": 517
     },
+    "assets/lava_ash/lava_ash_00.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 1,
+      "y": 1
+    },
+    "assets/lava_ash/lava_ash_01.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 35,
+      "y": 1
+    },
+    "assets/lava_ash/lava_ash_02.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 69,
+      "y": 1
+    },
+    "assets/lava_ash/lava_ash_03.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 103,
+      "y": 1
+    },
+    "assets/lava_ash/lava_ash_04.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 137,
+      "y": 1
+    },
+    "assets/lava_ash/lava_ash_05.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 171,
+      "y": 1
+    },
+    "assets/lava_ash/lava_ash_06.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 205,
+      "y": 1
+    },
+    "assets/lava_ash/lava_ash_07.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 1,
+      "y": 35
+    },
+    "assets/lava_ash/lava_ash_08.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 35,
+      "y": 35
+    },
+    "assets/lava_ash/lava_ash_09.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 69,
+      "y": 35
+    },
+    "assets/lava_ash/lava_ash_10.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 103,
+      "y": 35
+    },
+    "assets/lava_ash/lava_ash_11.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 137,
+      "y": 35
+    },
+    "assets/lava_ash/lava_ash_12.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 171,
+      "y": 35
+    },
+    "assets/lava_ash/lava_ash_13.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 205,
+      "y": 35
+    },
+    "assets/lava_ash/lava_ash_14.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 1,
+      "y": 69
+    },
+    "assets/lava_ash/lava_ash_15.png": {
+      "anchor": [
+        0,
+        0
+      ],
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 35,
+      "y": 69
+    },
     "assets/pickups/dna_pickup.png": {
       "anchor": [
         16,
@@ -33302,6 +33566,15 @@
       ]
     },
     {
+      "file": "assets/atlases/world_a6_hud_0.png",
+      "frames": 8,
+      "sha256": "169432c6f339546294b647c24c65da9d1fb78ae09c5ff936fcfe2376f0096baf",
+      "size": [
+        256,
+        26
+      ]
+    },
+    {
       "file": "assets/atlases/world_ecology_0.png",
       "frames": 24,
       "sha256": "534f1145215b91292a525a3f08947d0f11f813f7d6a1843b8020ac493812db66",
@@ -33362,6 +33635,15 @@
       "size": [
         512,
         550
+      ]
+    },
+    {
+      "file": "assets/atlases/world_lava_ash_0.png",
+      "frames": 16,
+      "sha256": "059190a8be68b99cb09b5b4369003c2902d972a6b3703a67f2b0dde84c5360a0",
+      "size": [
+        256,
+        102
       ]
     },
     {

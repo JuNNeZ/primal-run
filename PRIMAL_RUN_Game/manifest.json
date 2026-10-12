@@ -132271,6 +132271,742 @@
     "reuse": "byte-identical native tile; original crop, sampling and source hash retained"
   },
   {
+    "file": "assets/a6_hud/food_meat.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "Source_Generated/a6/hud_revision1.png",
+    "source_sha256": "3c53b194429b9a077945ed947243e0b2bf1a20b73d5485f6a192283284cca316",
+    "source_crop": [
+      0,
+      0,
+      314,
+      392
+    ],
+    "sampling_stride": 20,
+    "sampling_offset": 10,
+    "placement": [
+      4,
+      2
+    ],
+    "export_sha256": "25d4604e4b0133345fd4759009d4b87a6ce2e745e6b2db5424b5115a4c438a33",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/a6_hud/food_plants.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "Source_Generated/a6/hud_revision1.png",
+    "source_sha256": "3c53b194429b9a077945ed947243e0b2bf1a20b73d5485f6a192283284cca316",
+    "source_crop": [
+      314,
+      0,
+      627,
+      392
+    ],
+    "sampling_stride": 20,
+    "sampling_offset": 10,
+    "placement": [
+      4,
+      2
+    ],
+    "export_sha256": "2b7f31373d8f5b2418a84a1f1c49ca156896fa0810a2dee7605bbd0214cea301",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/a6_hud/food_fish.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "Source_Generated/a6/hud_revision1.png",
+    "source_sha256": "3c53b194429b9a077945ed947243e0b2bf1a20b73d5485f6a192283284cca316",
+    "source_crop": [
+      627,
+      0,
+      941,
+      392
+    ],
+    "sampling_stride": 20,
+    "sampling_offset": 10,
+    "placement": [
+      4,
+      2
+    ],
+    "export_sha256": "de15e156f14d2ad4b5655459e9e527a5b3c3c9bc86c4f70d1bc02682522fc116",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/a6_hud/dna_chip.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "Source_Generated/a6/hud_revision1.png",
+    "source_sha256": "3c53b194429b9a077945ed947243e0b2bf1a20b73d5485f6a192283284cca316",
+    "source_crop": [
+      941,
+      0,
+      1254,
+      392
+    ],
+    "sampling_stride": 20,
+    "sampling_offset": 10,
+    "placement": [
+      4,
+      2
+    ],
+    "export_sha256": "964a636ae1ede77b69217f13da5f604c7946c1ace64bc9c0577362bddb7d6429",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/a6_hud/zone_chip.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "Source_Generated/a6/hud_revision1.png",
+    "source_sha256": "3c53b194429b9a077945ed947243e0b2bf1a20b73d5485f6a192283284cca316",
+    "source_crop": [
+      0,
+      392,
+      314,
+      784
+    ],
+    "sampling_stride": 20,
+    "sampling_offset": 10,
+    "placement": [
+      4,
+      2
+    ],
+    "export_sha256": "a50d871d5bc68137e9ef18ce156ddc244e4bf41274594f78739ea3623d0fd8f8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/a6_hud/pack_follow.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "Source_Generated/a6/hud_revision1.png",
+    "source_sha256": "3c53b194429b9a077945ed947243e0b2bf1a20b73d5485f6a192283284cca316",
+    "source_crop": [
+      314,
+      392,
+      627,
+      784
+    ],
+    "sampling_stride": 20,
+    "sampling_offset": 10,
+    "placement": [
+      4,
+      2
+    ],
+    "export_sha256": "2dfe2bdcc390f35cbd7ab4a69d15c7a8aa2bde30c03a7e85e5b2be7198aeae3d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/a6_hud/pack_focus.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "Source_Generated/a6/hud_revision1.png",
+    "source_sha256": "3c53b194429b9a077945ed947243e0b2bf1a20b73d5485f6a192283284cca316",
+    "source_crop": [
+      627,
+      392,
+      941,
+      784
+    ],
+    "sampling_stride": 20,
+    "sampling_offset": 10,
+    "placement": [
+      4,
+      2
+    ],
+    "export_sha256": "8b01f73f739b924b2b8c2ca84960f8cb71da0e918dda8a8d5f878e0206ed06e5",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/a6_hud/reroll.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "Source_Generated/a6/hud_revision1.png",
+    "source_sha256": "3c53b194429b9a077945ed947243e0b2bf1a20b73d5485f6a192283284cca316",
+    "source_crop": [
+      941,
+      392,
+      1254,
+      784
+    ],
+    "sampling_stride": 20,
+    "sampling_offset": 10,
+    "placement": [
+      4,
+      2
+    ],
+    "export_sha256": "1351dd19a5a4d7623b82b99685732c2a4a6556b3f7c6220265e780b9fd018bbc",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_00.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      0,
+      0,
+      314,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "91dca0dc714f3a36e3a3ede181af80751e5dca13f6248854969300ae68476910",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 0
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_01.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      314,
+      0,
+      627,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "0dad51a379d68f08c3db1a034eb43179d27f284f6bb304af9e871ec87e204a73",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 1
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_02.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      627,
+      0,
+      941,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "67d772e22a07457407402ee1ad33d1890af4cb51528492c8da422c6665ce2a1d",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 2
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_03.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      941,
+      0,
+      1254,
+      314
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "7995b24a6c7b55078ddea4a7b53304f14f834e12b1e4994ea7d1f9312ac8d373",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 3
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_04.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      0,
+      314,
+      314,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "eb0df411f71a5eac8f82f98025d4b8d7ddd3a79eb1d90ba679d82cb9643dbe06",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 4
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_05.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      314,
+      314,
+      627,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "1a8803c56820857c147f117597a718e9e9a3d3c4444d4d2986e4471b5cf36090",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 5
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_06.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      627,
+      314,
+      941,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "0022e5fc4fa62a6e39a4bdd3ca44158b2bd453c2fe0654faa30910597ea5d78e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 6
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_07.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      941,
+      314,
+      1254,
+      627
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "d09c24b24699117c5b412e5e8dda4f712781c095dc7e817cce5e60e4ee672f90",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 7
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_08.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      0,
+      627,
+      314,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "3e4ad72b3b9370b682b9928542b1fe4af8bb361b88a60924710bda315952bd5e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 8
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_09.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      314,
+      627,
+      627,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "fa7d47c1cdef5b0376534c1cedb6ef5198176b04895aab357120106324f1eced",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 9
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_10.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      627,
+      627,
+      941,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "a7959a9b91b0ab545afa484d24d9a3f397439462d6e1b2b1406492b69e9ba7d6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 10
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_11.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      941,
+      627,
+      1254,
+      941
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "88166d1e9c7b9e6c424d7a9055557d3ac2dcdf4b214b84189375aaa4b3747407",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 11
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_12.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      0,
+      941,
+      314,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "32ec7bfc015bd8dc29c82d2f895a49e99739e48c20597bc143b92398b30b8ca3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 12
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_13.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      314,
+      941,
+      627,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "13f620a31935f0fb52dc6feb7c1b77ee6cb84c641af70d1f143e44abae62564e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 13
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_14.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      627,
+      941,
+      941,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "02aa03d947dc0324832fc1be3ad6c1357877920b8961e84d6c4738d679865ffd",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 14
+  },
+  {
+    "file": "assets/lava_ash/lava_ash_15.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      0,
+      0
+    ],
+    "family": "lava_ash",
+    "source": "Source_Generated/a6/lava_revision1.png",
+    "source_sha256": "41cc4458ad79b4719e252a96f633b00b193827fa1648436d58e69d300defa410",
+    "source_crop": [
+      941,
+      941,
+      1254,
+      1254
+    ],
+    "sampling_stride": 10,
+    "sampling_offset": 1,
+    "placement": [
+      0,
+      0
+    ],
+    "export_sha256": "a4934e417b5be8256ff15012eed18f1f987f5c9ef3150fa0d66d64189734ef91",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "mask": 15
+  },
+  {
     "file": "assets/corpses/parasaurolophus_decayed_S_0.png",
     "size": [
       144,

@@ -12,7 +12,7 @@
     const shell = document.createElement('div'); shell.className = 'primal-shell';
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
       <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space angriber, Shift bruger evne, F spiser, Escape pauser."></canvas>
-      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="hud-chips"><span id="food-chip"></span><span id="dna-chip"></span><span id="zone-chip"></span></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
+      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
       <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div></div></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div></main>
       <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space">ANGREB</button><button data-key="ShiftLeft">EVNE</button><button data-key="KeyE">UNDERSØG</button><button data-key="KeyF">SPIS</button></div></div>
@@ -372,6 +372,32 @@
       if (loaded) { const dc = icon.getContext('2d'); dc.imageSmoothingEnabled = false;
         dc.clearRect(0, 0, 16, 16); drawAsset(dc,images[path], 0, 0); icon.dataset.sprite = path; }
     }
+    function drawHUDChip(id, name, text, fallback) {
+      const chip = shell.querySelector('#'+id+'-chip'), icon = chip.querySelector('canvas');
+      const path = 'assets/a6_hud/'+name+'.png';
+      if (C.FEATURES.hudIcons && catalog[path] && !images[path]) loadImage(path).catch(()=>{});
+      const loaded = !!text && C.FEATURES.hudIcons && images[path];
+      icon.hidden = !loaded; chip.hidden = !text;
+      chip.querySelector('.chip-value').textContent = (loaded ? '' : fallback)+text;
+      if (loaded && icon.dataset.sprite !== path) {
+        const dc = icon.getContext('2d'); dc.imageSmoothingEnabled = false;
+        dc.clearRect(0,0,24,24); drawAsset(dc,images[path],0,0); icon.dataset.sprite = path;
+      }
+    }
+    function drawA6Controls(r) {
+      // Part C may add these controls later; keep its text, events and visibility intact.
+      for (const [selector,name] of [['.pack-key',r.packFocus?.until>r.seconds?'pack_focus':'pack_follow'],['[data-reroll]','reroll']]) {
+        const control = shell.querySelector(selector); if (!control) continue;
+        let icon = control.querySelector('.a6-control-icon');
+        const path = 'assets/a6_hud/'+name+'.png';
+        if (C.FEATURES.hudIcons && catalog[path] && !images[path]) loadImage(path).catch(()=>{});
+        if (!icon) { icon=document.createElement('canvas'); icon.className='a6-control-icon';
+          icon.width=icon.height=24; icon.setAttribute('aria-hidden','true'); control.prepend(icon); }
+        icon.hidden = !C.FEATURES.hudIcons || !images[path];
+        if (!icon.hidden && icon.dataset.sprite !== path) { const dc=icon.getContext('2d');
+          dc.imageSmoothingEnabled=false; dc.clearRect(0,0,24,24); drawAsset(dc,images[path],0,0); icon.dataset.sprite=path; }
+      }
+    }
     function insect(p,time) {
       if(game.save.settings.reducedMotion||reducedMotion.matches)return;
       const flying=p.kind!=='beetle',phase=time*2+p.phase;
@@ -555,14 +581,23 @@
 
       }
       }
-      const waterTime=game.run?game.run.seconds:menuClock;const tiledWater=C.FEATURES.waterTiles&&catalog['assets/water_transitions/shore_soil_15.png'];canvas.dataset.waterTiles=tiledWater?'true':'false';for(const pond of map.ponds||[])drawDryBank(pond,stage);if(tiledWater)drawWaterTiles(stage,map,view);for(const pond of map.ponds||[])drawPond(pond,waterTime,tiledWater);
+      const waterTime=game.run?game.run.seconds:menuClock;const tiledWater=C.FEATURES.waterTiles&&catalog['assets/water_transitions/shore_soil_15.png'];canvas.dataset.waterTiles=tiledWater?'true':'false';if(stage!==3){canvas.dataset.lavaTiles='false';canvas.dataset.lavaTilesReady='false';canvas.dataset.lavaTileCount='0';}for(const pond of map.ponds||[])drawDryBank(pond,stage);if(tiledWater)drawWaterTiles(stage,map,view);for(const pond of map.ponds||[])drawPond(pond,waterTime,tiledWater);
       ctx.lineCap = 'round'; ctx.lineJoin = 'round';
       if (stage === 1) {
         drawRiver(map,waterTime,tiledWater);
       }
       if (stage === 3) {
-        trace(map.river); ctx.strokeStyle = '#3b4144'; ctx.lineWidth = 58; ctx.stroke(); ctx.strokeStyle = '#54282d'; ctx.lineWidth = 42; ctx.stroke(); ctx.strokeStyle = '#c6663c'; ctx.lineWidth = 26; ctx.stroke();
-        ctx.save(); ctx.globalAlpha = calm() ? .8 : .55 + .35 * Math.sin(waterTime * 3); ctx.strokeStyle = '#de954a'; ctx.lineWidth = 10; ctx.stroke(); ctx.globalAlpha = .9; ctx.strokeStyle = '#ded392'; ctx.lineWidth = 3; ctx.setLineDash([12, 18]); ctx.lineDashOffset = calm() ? 0 : -waterTime * 20; ctx.stroke(); ctx.restore();
+        const lava = prepareLavaTiles(map,view);
+        if (!lava || !lava.complete) {
+          trace(map.river); ctx.strokeStyle = '#3b4144'; ctx.lineWidth = 58; ctx.stroke(); ctx.strokeStyle = '#54282d'; ctx.lineWidth = 42; ctx.stroke(); ctx.strokeStyle = '#c6663c'; ctx.lineWidth = 26; ctx.stroke();
+        }
+        if (lava) for (const tile of lava.visible) if (tile.image) drawAsset(ctx,tile.image,tile.x,tile.y);
+        canvas.dataset.lavaTiles=String(!!lava); canvas.dataset.lavaTilesReady=String(!!lava?.complete);
+        canvas.dataset.lavaTileCount=String(lava?.visible.filter(t=>t.image).length||0);
+        trace(map.river);
+        ctx.save();
+        if(lava?.complete){ctx.beginPath();for(const tile of lava.visible)for(const [x,y,w] of tile.image.hazardRuns)ctx.rect(tile.x+x,tile.y+y,w,1);ctx.clip();trace(map.river);}
+        ctx.globalAlpha = calm() ? .8 : .55 + .35 * Math.sin(waterTime * 3); ctx.strokeStyle = '#de954a'; ctx.lineWidth = 10; ctx.stroke(); ctx.globalAlpha = .9; ctx.strokeStyle = '#ded392'; ctx.lineWidth = 3; ctx.setLineDash([12, 18]); ctx.lineDashOffset = calm() ? 0 : -waterTime * 20; ctx.stroke(); ctx.restore();
         // B1b basalt crossings: approved native art, with the original procedural fallback.
         for (const c of map.lavaCrossings || []) {
           if (drawApprovedCrossing(c)) continue;
@@ -673,6 +708,52 @@
         if(!data[i+3])data[i]=data[i+1]=data[i+2]=0;
       }
       lc.putImageData(pixels,0,0);shoreBlendCache.set(path,layer);return layer;
+    }
+    const lavaCaches = new WeakMap(), lavaSources = new Map();
+    function lavaSource(path) {
+      if (lavaSources.has(path)) return lavaSources.get(path);
+      if (!catalog[path]) return null;
+      if (!images[path]) { loadImage(path).catch(()=>{}); return null; }
+      const sample=document.createElement('canvas'); sample.width=sample.height=32;
+      const sc=sample.getContext('2d'); drawAsset(sc,images[path],0,0);
+      const pixels=sc.getImageData(0,0,32,32).data; lavaSources.set(path,pixels); return pixels;
+    }
+    function prepareLavaTiles(map,view) {
+      if (!C.FEATURES.lavaTiles) return null;
+      const sources=Array.from({length:16},(_,i)=>lavaSource('assets/lava_ash/lava_ash_'+String(i).padStart(2,'0')+'.png'));
+      if (sources.some(s=>!s)) return null;
+      const signature=JSON.stringify([map.riverCurve||map.river,map.lavaCrossings]);
+      let cache=lavaCaches.get(map);
+      if (!cache || cache.signature!==signature) { cache={signature,tiles:new Map()}; lavaCaches.set(map,cache); }
+      const visible=[],started=performance.now(),still=['paused','mutation','cleared'].includes(game.phase); let builds=0;
+      for(let y=Math.floor(view.y/32)*32;y<view.y+canvas.height;y+=32)for(let x=Math.floor(view.x/32)*32;x<view.x+canvas.width;x+=32){
+        if(C.riverDistance(map,{x:x+16,y:y+16})>52)continue;
+        const key=x+','+y; let image=cache.tiles.get(key);
+        if(!image&&(still||builds<4&&(builds===0||performance.now()-started<4))){
+          const mask=[[x,y],[x+32,y],[x+32,y+32],[x,y+32]].reduce((m,[vx,vy],i)=>m|(C.isLava(3,map,{x:vx,y:vy})?1<<i:0),0);
+          const path='assets/lava_ash/lava_ash_'+String(mask).padStart(2,'0')+'.png';
+          image=document.createElement('canvas'); image.width=image.height=32;
+          image.spritePath=path; image.lavaTile=true; image.lavaMask=mask; image.lavaX=x; image.lavaY=y;
+          image.hazardRuns=[];const hazardPixels=new Uint8Array(32*32);
+          const ic=image.getContext('2d'),pixels=ic.createImageData(32,32);
+          for(let py=0;py<32;py++)for(let px=0;px<32;px++){
+            const point={x:x+px+.5,y:y+py+.5},i=(py*32+px)*4;
+            if(C.riverDistance(map,point)>=29)continue;
+            const hazard=C.isLava(3,map,point),sample=sources[mask];
+            hazardPixels[py*32+px]=+hazard;
+            const warm=sample[i]>75&&sample[i]>sample[i+2]*1.2&&sample[i]>sample[i+1]*.95;
+            // Preserve authored bank pixels where possible; fill thin channels and cut crossings
+            // using the same real geometry as damage, never a second approximation of the hitbox.
+            const source=hazard?(warm?sample:sources[15]):(warm?sources[0]:sample);
+            pixels.data.set(source.subarray(i,i+3),i);pixels.data[i+3]=255;
+          }
+          for(let py=0;py<32;py++)for(let px=0;px<32;){if(!hazardPixels[py*32+px]){px++;continue;}const start=px;while(px<32&&hazardPixels[py*32+px])px++;image.hazardRuns.push([start,py,px-start]);}
+          ic.putImageData(pixels,0,0); cache.tiles.set(key,image);builds++;
+          if(cache.tiles.size>512)cache.tiles.delete(cache.tiles.keys().next().value);
+        }
+        visible.push({x,y,image});
+      }
+      return {visible,complete:visible.every(t=>t.image)};
     }
     function waterCorner(stage,map,x,y){
       let cache=waterVertexCache.get(map);if(!cache){cache=new Map();waterVertexCache.set(map,cache);}
@@ -939,8 +1020,8 @@
       shell.querySelector('.stamina i').style.width = r.stamina + '%';
       { const cost = C.abilityCost(r), staminaBar = shell.querySelector('.stamina'); shell.querySelector('.cost-mark').style.left = Math.min(100, cost) + '%'; staminaBar.dataset.low = String(r.stamina < cost); staminaBar.dataset.winded = String((r.winded || 0) > 0);
         shell.querySelector('.health .segments').style.backgroundSize = (100 * 20 / r.maxHealth) + '% 100%'; shell.querySelector('.health').dataset.low = String(r.health < r.maxHealth * .3);
-        const diet = C.PLAYER_SPECIES[r.species].diet; shell.querySelector('#food-chip').textContent = (diet === 'herbivore' ? '❧ ' : diet === 'piscivore' ? '≈ ' : '◆ ') + r.meat + '/' + game.currentLevel().target;
-        shell.querySelector('#dna-chip').textContent = '⬡ ' + r.dna; const zone = r.zone !== null && r.zone !== undefined && r.map.zones ? r.map.zones[r.zone] : null; shell.querySelector('#zone-chip').textContent = zone ? zone.name : '';
+        const diet = C.PLAYER_SPECIES[r.species].diet; drawHUDChip('food', 'food_'+(diet==='herbivore'?'plants':diet==='piscivore'?'fish':'meat'), r.meat+'/'+game.currentLevel().target, diet==='herbivore'?'❧ ':diet==='piscivore'?'≈ ':'◆ ');
+        drawHUDChip('dna', 'dna_chip', String(r.dna), '⬡ '); const zone = r.zone !== null && r.zone !== undefined && r.map.zones ? r.map.zones[r.zone] : null; drawHUDChip('zone', 'zone_chip', zone ? zone.name : '', '');
         drawPortrait(r); }
       canvas.dataset.surface=r.surface;canvas.dataset.hidden=String(r.hidden);shell.querySelector('#terrain-label').textContent=r.hidden?'SKJULT · angrib for at afsløre dig':({water:['baryonyx','deinosuchus'].includes(r.species)?'VAND · FLODJÆGER':'VAND · 60 % fart',mud:'MUDDER · 75 % fart',bush:'BUSKE · stå stille / hold C',ground:''})[r.surface];
       shell.querySelector('#biome-label').textContent = 'BANE ' + (r.levelIndex + 1) + '/' + r.campaign.length + ' · ' + game.currentLevel().name;
@@ -952,6 +1033,7 @@
       shell.querySelector('#level-label').textContent = 'LEVEL ' + r.level + ' · ' + r.xp + '/' + r.nextXP + ' XP';
       shell.querySelector('#dna-label').textContent = '+' + r.dna + ' DNA · ' + r.kills + ' JAGTER';
       drawTimeIcon(r); // Approved native HUD art, with the existing glyph as fallback.
+      drawA6Controls(r);
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
       shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : keyLabel('ability')+' KLAR');
       const config=C.PLAYER_SPECIES[r.species],cost=C.abilityCost(r),attackFraction=1-r.attackCooldown/(r.attackDuration||config.cooldown),abilityFraction=1-r.pounceCooldown/(r.abilityCooldownDuration||config.abilityCooldown);
@@ -1109,7 +1191,7 @@
     function evictUnused(stage,species){nightFrames.clear();const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);for(const path of Object.keys(images))if(/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete frameCanvases[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);prepared.delete(path);}for(const file of Object.keys(sheets))if(!Object.values(images).some(image=>image.sheet===sheets[file])){delete sheets[file];delete sheetLoads[file];}}
     const querySeed=new URL(location.href).searchParams.get('seed');if(querySeed&&/^\d{1,10}$/.test(querySeed)&&Number(querySeed)<=4294967295)seedInput=querySeed;
     const load = preload({ menu: true }).then(() => { ready = true; renderScreen(true); return true; }).catch(e => { game.phase = 'error'; renderScreen(true); screen.querySelector('.load-error').textContent = e.message; return false; });
-    const api = { telegraphShape: (e, r = game.run) => telegraphShape(r, e), warningLabelY: (e, width = 120, r = game.run) => warningLabelY(r, e, width), preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,atlasSheets:Object.keys(sheets).length,nightFrames:nightFrames.size,decodedBytes:[...Object.values(sheets),...Object.values(images).filter(i=>!i.sheet),...Object.values(frameCanvases),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values(),...nightFrames.values()].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
+    const api = { telegraphShape: (e, r = game.run) => telegraphShape(r, e), warningLabelY: (e, width = 120, r = game.run) => warningLabelY(r, e, width), preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,atlasSheets:Object.keys(sheets).length,nightFrames:nightFrames.size,lavaTiles:lavaCaches.get(game.run?.map)?.tiles.size||0,decodedBytes:[...Object.values(sheets),...Object.values(images).filter(i=>!i.sheet),...Object.values(frameCanvases),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values(),...nightFrames.values(),...(lavaCaches.get(game.run?.map)?.tiles.values()||[])].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
     root.primalRun = api; renderScreen(true); if (!driven) animationId = requestAnimationFrame(frame);
     return api;
   }

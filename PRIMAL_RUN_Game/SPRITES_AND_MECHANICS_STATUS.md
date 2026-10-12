@@ -24,7 +24,7 @@ Se NIGHT_PALETTE.md for scope og aktuelle tests.
 | A3 såret gang | 312 frames for 13 arter: 88 tegnede keyposes og 224 byte-identiske native frames | 16 afviste keyposes bruger fallback; Compy har kun originalerne, Deinonychus har fem fallback-keyposes |
 | A4 vand | 48 tiles: jord/lavt vand, sand/lavt vand og lavt/dybt vand; syv hjørnetiles rettet | Hjørne-/renderer-kontrol PASS; synlige gentagelser kræver visuel polering |
 | A5 raptor-ådsler | 192 ådsel-/skeletposes: gamle 160 uændrede, 32 nye til Velociraptor/Utahraptor | NPC-klare assets er ikke en påstand om nye spawn-regler |
-| A6 lava/HUD/natpaletter | Natpalet implementeret; eksisterende sol/måne, basalt og askeskyer bevares | Nye mad/DNA/zone-chips og komplette lava/aske-kanter mangler |
+| A6 lava/HUD/natpaletter | Natpalet, otte HUD-ikoner og seksten lava/aske-masker er implementeret; Part C-følg/fokus/reroll er forberedt | Visuel produktionsgodkendelse og ny GDJS-eksport mangler; se A6_HUD_AND_LAVA.md |
 
 De 632 tidligere behavior-studieframes er i karantæne med runtime slået fra.
 Forkastede og review-only exports er bevaret under Source_Generated.

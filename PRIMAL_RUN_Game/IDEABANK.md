@@ -6,7 +6,7 @@ Ideer til senere. Ikke godkendt til implementering endnu.
 
 **Bygget:** A1–A5 er integreret og godkendt til implementering/push af Jonas.
 A6 fortsætter med natpalet-skift af eksisterende dyr og ådsler, også med skins.
-Nye mad/DNA/zone-chips og komplette lava/aske-kanter er fortsat åbne.
+Mad/DNA/zone-chips og seksten lava/aske-masker er nu bygget som prototyper. Part C har desuden fået forberedte flok- og reroll-ikoner; se A6_HUD_AND_LAVA.md.
 Se NIGHT_PALETTE.md og SPRITES_AND_MECHANICS_STATUS.md.
 
 ## Større eller procedurale baner (tilføjet 9. okt. 2026)
