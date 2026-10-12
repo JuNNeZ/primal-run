@@ -25,9 +25,9 @@ test('each class has a distinct primary attack; Ankylosaurus tail hits behind an
 test('ability costs, immunity, contact damage once per animal, and defensive brace differ by class',()=>{
  for(const species of Object.keys(C.PLAYER_SPECIES)){
   const g=make(species),r=g.run;r.player.facing='E';const e=g.spawn('tyrannosaurus',{x:505,y:340});e.cooldown=999;e.speed=0;
-  g.step(.01,{pounce:true,x:1});assert.ok(r.pounce>0);assert.ok(r.stamina<100);const hp=e.hp;g.step(.01,{x:1});assert.equal(e.hp,hp,'ability cannot damage same target twice');
-  const health=r.health;g.damage(20);assert.equal(r.health,health-(species==='ankylosaurus'?5:['compy','utahraptor','velociraptor','deinonychus'].includes(species)?0:20));
-  if(['utahraptor','velociraptor','carnotaurus','triceratops','pachycephalosaurus','baryonyx','deinosuchus'].includes(species))assert.ok(hp<e.maxHP);else assert.equal(hp,e.maxHP);
+  g.step(.01,{pounce:true,x:1});assert.ok(r.pounce>0||r.hop,'ability started (the pachy hops back right after its headbutt lands)');assert.ok(r.stamina<100);const hp=e.hp;g.step(.01,{x:1});assert.equal(e.hp,hp,'ability cannot damage same target twice');
+  const health=r.health;g.damage(20);assert.equal(r.health,health-(species==='ankylosaurus'?5:['compy','utahraptor','velociraptor','deinonychus','gallimimus','pachycephalosaurus'].includes(species)?0:20)); // dust cloud and the hop back protect briefly
+  if(['utahraptor','velociraptor','carnotaurus','triceratops','pachycephalosaurus','baryonyx','deinosuchus'].includes(species))assert.ok(hp<e.maxHP);else if(species==='compy')assert.ok(r.raptors.some(a=>a.temp&&a.kind==='compy'),'the dodge calls wild compies');else assert.equal(hp,e.maxHP);
  }
 });
 test('mutation pool contains shared and own mutations, never another species skill',()=>{
@@ -65,36 +65,32 @@ test('an Ankylosaurus tail slam misses a player standing in front of its head',(
   assert.equal(r.health<health,hurt,label);
  }
 });
-test('mutation rerolls: off by default, earned per boss, give a fresh offer; species bias shows an own-species choice',()=>{
- const g=make('compy'),r=g.run;r.xp=r.nextXP;g.maybeLevelUp();assert.equal(g.phase,'mutation');assert.equal(g.rerollsLeft(),0);assert.equal(g.reroll(),false);
- const saved={...C.FEATURES};
- try{
-  C.FEATURES.mutationRerolls=true;const before=[...r.choices];r.rerolls=1;assert.equal(g.reroll(),true);assert.equal(g.rerollsLeft(),0);
-  assert.ok(r.choices.every(id=>!before.includes(id)),'fresh choices');assert.equal(g.reroll(),false);
-  const b=g.spawn('pachycephalosaurus',{x:900,y:900},true);g.kill(b);assert.equal(g.rerollsLeft(),1,'+1 reroll per boss');
-  C.FEATURES.speciesMutationBias=true;const h=make('triceratops');h.run.xp=h.run.nextXP;h.maybeLevelUp();
-  assert.ok(h.run.choices.some(id=>C.MUTATIONS.find(m=>m.id===id).species==='triceratops'),'own-species choice until one is taken');
- }finally{Object.assign(C.FEATURES,saved);}
+test('mutation rerolls: 1 at start, +1 per boss and elite, at most 3; species bias shows an own-species choice',()=>{
+ const g=make('compy'),r=g.run;assert.equal(g.rerollsLeft(),C.REROLLS.start);r.xp=r.nextXP;g.maybeLevelUp();assert.equal(g.phase,'mutation');
+ const before=[...r.choices];assert.equal(g.reroll(),true);assert.equal(g.rerollsLeft(),0);
+ assert.ok(r.choices.every(id=>!before.includes(id)),'fresh choices');assert.equal(g.reroll(),false);
+ const b=g.spawn('pachycephalosaurus',{x:900,y:900},true);g.kill(b);assert.equal(g.rerollsLeft(),1,'+1 reroll per boss');
+ g.phase='playing';const elite=g.spawn('carnotaurus',{x:900,y:900});elite.elite=true;g.kill(elite);assert.equal(g.rerollsLeft(),2,'+1 reroll per elite');
+ assert.equal(g.addRerolls(5),1);assert.equal(g.rerollsLeft(),C.REROLLS.max,'the stock is capped');
+ const h=make('triceratops');h.run.xp=h.run.nextXP;h.maybeLevelUp();
+ assert.ok(h.run.choices.some(id=>C.MUTATIONS.find(m=>m.id===id).species==='triceratops'),'own-species choice until one is taken');
+ const saved={...C.FEATURES};try{C.FEATURES.mutationRerolls=false;assert.equal(make('compy').rerollsLeft(),0,'flag off: no rerolls');}finally{Object.assign(C.FEATURES,saved);}
 });
 test('boss strength rises through the journey and lab upgrades scale with UPGRADE_STEP',()=>{
  assert.equal(C.BOSS_TUNING.hp.length,8);assert.equal(C.BOSS_TUNING.damage.length,8);
  const g=make('compy');g.save.upgrades.health=5;g.start({seed:9});assert.equal(g.run.maxHealth,Math.round(C.PLAYER_SPECIES.compy.hp*(1+5*C.UPGRADE_STEP.health))||g.run.maxHealth);
  assert.match(C.UPGRADES[0].text,new RegExp('\\+'+Math.round(100*C.UPGRADE_STEP.health)+' %'));
 });
-test('simulation prototypes stay off by default: 4 mutation choices, second wind, alternative abilities',()=>{
- assert.equal(C.MUTATION_CHOICES.count,3);assert.equal(C.FEATURES.secondWind,false);assert.ok(Object.values(C.ALT_ABILITIES).every(v=>v===false));
+test('new abilities are on: 1.2 s pin, dust cloud, Pachycephalosaurus hop back; 4 cards and second wind come from the lab',()=>{
+ assert.equal(C.MUTATION_CHOICES.count,3);assert.equal(C.FEATURES.secondWind,false);assert.ok(Object.values(C.ALT_ABILITIES).every(v=>v===true));
  const pin=()=>{const v=make('velociraptor'),r=v.run,t=v.spawn('parasaurolophus',{x:r.player.x,y:r.player.y+25});r.stamina=100;v.step(1/30,{pounce:true,x:0,y:1});return t;};
- assert.ok(!(pin().stagger>0),'no pin without the flag');
- const features={...C.FEATURES},alt={...C.ALT_ABILITIES};
- try{
-  C.MUTATION_CHOICES.count=4;const g=make('compy');g.run.xp=g.run.nextXP;g.maybeLevelUp();assert.equal(g.run.choices.length,4);
-  C.FEATURES.secondWind=true;const s=make('compy');s.run.invulnerable=0;s.damage(9999);assert.equal(s.phase,'playing');assert.equal(s.run.health,1);
-  s.run.invulnerable=0;s.damage(9999);assert.notEqual(s.phase,'playing','only once per run');
-  Object.assign(C.ALT_ABILITIES,{gallimimus:true,pachycephalosaurus:true,velociraptor:true});
-  assert.ok(pin().stagger>0,'Velociraptor pin staggers');
-  const d=make('gallimimus'),dr=d.run,prey=d.spawn('carnotaurus',{x:dr.player.x+80,y:dr.player.y}),boss=d.spawn('carnotaurus',{x:dr.player.x-100,y:dr.player.y},true);
-  dr.stamina=100;d.step(1/30,{pounce:true,x:0,y:1});assert.ok(prey.stagger>0,'dust cloud staggers animals');assert.ok(boss.breakMeter>0||boss.mode==='broken','and fills the boss break meter');
-  const p=make('pachycephalosaurus'),pr=p.run;p.spawn('parasaurolophus',{x:pr.player.x,y:pr.player.y+30});pr.stamina=100;const cost=C.abilityCost(pr);
-  p.step(1/30,{pounce:true,x:0,y:1});assert.equal(pr.abilityChained,true);assert.ok(pr.pounceCooldown<=.35);assert.ok(Math.abs(pr.stamina-(100-cost/2))<1e-6,'half the stamina back');
- }finally{Object.assign(C.FEATURES,features);Object.assign(C.ALT_ABILITIES,alt);C.MUTATION_CHOICES.count=3;}
+ assert.ok(pin().stagger>1.1,'Velociraptor pin holds about 1.2 s');
+ const g=make('compy');g.save.upgrades.widerPool=1;g.start({seed:123});g.run.xp=g.run.nextXP;g.maybeLevelUp();assert.equal(g.run.choices.length,4,'wider gene pool: 4 cards');
+ const s=make('compy');s.save.upgrades.secondWind=1;s.start({seed:123});s.run.invulnerable=0;s.damage(9999);assert.equal(s.phase,'playing');assert.equal(s.run.health,1);
+ s.run.invulnerable=0;s.damage(9999);assert.notEqual(s.phase,'playing','only once per run');
+ const d=make('gallimimus'),dr=d.run,prey=d.spawn('carnotaurus',{x:dr.player.x+80,y:dr.player.y}),boss=d.spawn('carnotaurus',{x:dr.player.x-100,y:dr.player.y},true);
+ dr.stamina=100;d.step(1/30,{pounce:true,x:0,y:1});assert.ok(prey.stagger>0,'dust cloud staggers animals');assert.ok(boss.breakMeter>0||boss.mode==='broken','and fills the boss break meter');assert.ok(dr.dustCloud,'the cloud is drawn');
+ const p=make('pachycephalosaurus'),pr=p.run,t=p.spawn('parasaurolophus',{x:pr.player.x,y:pr.player.y+30});pr.stamina=100;const y=pr.player.y;
+ p.step(1/30,{pounce:true,x:0,y:1});assert.ok(t.hp<t.maxHP,'the charge hits');assert.equal(pr.pounce,0,'the charge stops at the first hit');assert.ok(pr.invulnerable>0);
+ for(let i=0;i<8;i++)p.step(1/30,{});assert.ok(pr.player.y<y,'and hops back, away from the target');
 });

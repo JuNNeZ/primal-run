@@ -144,7 +144,7 @@ test('four guaranteed boss awards, transitions preserve mutations, and final bos
   for (let stage = 0; stage < 4; stage++) {
     r.enemies = []; r.pickups = []; r.meat = C.STAGES[stage].target; tick(g);
     const boss = r.enemies.find(e => e.boss); assert.equal(boss.kind, C.STAGES[stage].boss);
-    boss.hp = 0; tick(g); assert.equal(g.phase, 'cleared');
+    boss.hp = 0; tick(g); if (g.run.trophySelection) { assert.equal(g.run.choices.length, C.TROPHY_PICKS); assert.equal(g.choose(g.run.choices[0]), true); } assert.equal(g.phase, 'cleared');
     const bank = g.save.dna; tick(g); assert.equal(g.save.dna, bank);
     assert.equal(g.nextStage(), true); assert.equal(r.mutations.teeth, 2);
   }

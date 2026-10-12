@@ -76,9 +76,9 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
         if (boss.mode === 'recover' && Math.hypot(boss.x - r.player.x, boss.y - r.player.y) < 90) attack = true;
         g.step(1 / 60, { x, y, attack });
       }
-      return { phase: g.phase, seconds: r.seconds, health: r.health, dna: r.dna, modes: [...modes] };
+      return { phase: g.phase, trophy: !!r.trophySelection, seconds: r.seconds, health: r.health, dna: r.dna, modes: [...modes] };
     });
-    assert.equal(fight.phase, 'cleared'); assert.ok(fight.dna >= 15, 'boss DNA (plus any achievement DNA)'); assert.ok(fight.health > 0 && fight.seconds < 90);
+    assert.ok(fight.phase === 'cleared' || fight.phase === 'mutation' && fight.trophy, fight.phase); // Part C: a boss kill may open the trophy pick first assert.ok(fight.dna >= 15, 'boss DNA (plus any achievement DNA)'); assert.ok(fight.health > 0 && fight.seconds < 90);
     for (const mode of ['1:charge', '1:bite', '2:enrage', '2:charge', '2:bite', '2:slam']) assert.ok(fight.modes.includes(mode));
     if (process.env.PRIMAL_EXPECT_GDEVELOP) assert.equal(await page.evaluate(() => typeof gdjs.RuntimeGame), 'function'); assert.deepEqual(errors, []);
     if (process.env.PRIMAL_POLISH_REPORT) fs.writeFileSync(process.env.PRIMAL_POLISH_REPORT, JSON.stringify({ runtime: process.env.PRIMAL_EXPECT_GDEVELOP ? 'official GDevelop GDJS 5.6.283' : 'standalone browser', status: 'PASS', terrain: terrain.map(({ props, ...t }) => ({ ...t, propTypes: [...new Set(props)] })), fight, checks: ['four rendered biomes', 'native sprites/no smoothing', 'contact particles/hit-stop/recovery weak point', 'paused FX', 'phase-two HUD and double-charge warning', 'full first-boss fight through normal simulation inputs without HP edits'] }, null, 2) + '\n');
