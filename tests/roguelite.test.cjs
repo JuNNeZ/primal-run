@@ -18,7 +18,8 @@ test('random wilderness is repeatable by seed, varies between seeds and keeps bo
 test('each class has a distinct primary attack; Ankylosaurus tail hits behind and beside it, never in front of its head',()=>{
  for(const species of Object.keys(C.PLAYER_SPECIES)){
   const g=make(species),r=g.run;r.player.facing='E';const front=g.spawn('compy',{x:520,y:340}),back=g.spawn('compy',{x:440,y:340});g.resolveBite('E');
-  assert.equal(front.hp,species==='ankylosaurus'?C.SPECIES.compy.hp:C.SPECIES.compy.hp-C.PLAYER_SPECIES[species].damage);assert.equal(back.hp,species==='ankylosaurus'?C.SPECIES.compy.hp-12:C.SPECIES.compy.hp);
+  const tail=C.kindOf({species})==='ankylosaurus',bite=C.PLAYER_SPECIES[species].damage; // Stegosaurus swings its tail like the Ankylosaurus
+  assert.equal(front.hp,tail?C.SPECIES.compy.hp:C.SPECIES.compy.hp-bite);assert.equal(back.hp,tail?C.SPECIES.compy.hp-bite:C.SPECIES.compy.hp);
  }
  const g=make('ankylosaurus'),side=g.spawn('compy',{x:480,y:290});g.run.player.facing='E';g.resolveBite('E');assert.equal(side.hp,C.SPECIES.compy.hp-12,'270° arc reaches the flanks');
 });
@@ -26,8 +27,8 @@ test('ability costs, immunity, contact damage once per animal, and defensive bra
  for(const species of Object.keys(C.PLAYER_SPECIES)){
   const g=make(species),r=g.run;r.player.facing='E';const e=g.spawn('tyrannosaurus',{x:505,y:340});e.cooldown=999;e.speed=0;
   g.step(.01,{pounce:true,x:1});assert.ok(r.pounce>0||r.hop,'ability started (the pachy hops back right after its headbutt lands)');assert.ok(r.stamina<100);const hp=e.hp;g.step(.01,{x:1});assert.equal(e.hp,hp,'ability cannot damage same target twice');
-  const health=r.health;g.damage(20);assert.equal(r.health,health-(species==='ankylosaurus'?5:['compy','utahraptor','velociraptor','deinonychus','gallimimus','pachycephalosaurus'].includes(species)?0:20)); // dust cloud and the hop back protect briefly
-  if(['utahraptor','velociraptor','carnotaurus','triceratops','pachycephalosaurus','baryonyx','deinosuchus'].includes(species))assert.ok(hp<e.maxHP);else if(species==='compy')assert.ok(r.raptors.some(a=>a.temp&&a.kind==='compy'),'the dodge calls wild compies');else assert.equal(hp,e.maxHP);
+  const health=r.health;g.damage(20);assert.equal(r.health,health-(['ankylosaurus','stegosaurus'].includes(species)?5:['compy','utahraptor','velociraptor','deinonychus','gallimimus','pachycephalosaurus','therizinosaurus','pteranodon','microraptor','oviraptor'].includes(species)?0:20)); // dust cloud, glides and the hop back protect briefly; the Parasaurolophus trumpets instead of raising dust
+  if(['utahraptor','velociraptor','carnotaurus','triceratops','pachycephalosaurus','baryonyx','deinosuchus','allosaurus','spinosaurus','parasaurolophus','therizinosaurus','microraptor','pachyrhinosaurus'].includes(species))assert.ok(hp<e.maxHP);else if(species==='compy')assert.ok(r.raptors.some(a=>a.temp&&a.kind==='compy'),'the dodge calls wild compies');else assert.equal(hp,e.maxHP);
  }
 });
 test('mutation pool contains shared and own mutations, never another species skill',()=>{

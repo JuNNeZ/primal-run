@@ -6,7 +6,7 @@
   'use strict';
   // Records/titles live in records.js; review pages that load only core.js keep working without them.
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
-  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true};
+  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true};
   const WIDTH = 960, HEIGHT = 640, SAVE_KEY = 'primalRun.save.v1';
   const BITE_ANIMATION = { frames: 6, fps: 14, duration: 6 / 14, contactFrame: 3, contactTime: 3 / 14 };
   const STAGES = [
@@ -94,7 +94,7 @@
     if(stage===1&&riverDistance(map,p)<DEEP_WATER&&!nearFord(map,p))return true;
     return (map.ponds||[]).some(pond=>pondContains(pond,p,0,.45));
   }
-  const canSwim=entity=>['deinosuchus','baryonyx'].includes(entity.kind)||entity.radius>=28;
+  const canSwim=entity=>['deinosuchus','baryonyx','spinosaurus','archelon'].includes(entity.kind)||entity.radius>=28;
   // B1b: lava is off within 70 px of a basalt crossing (05 §4.1).
   function isLava(stage,map,p){return stage===3&&riverDistance(map,p)<LAVA_CORE&&!(map.lavaCrossings||[]).some(c=>Math.hypot(p.x-c.x,p.y-c.y)<70);}
   // B1a boss reachability (05_BOSS_EXPLOIT_REVIEW §4): a 32 px terrain nav grid per map and nav class,
@@ -148,8 +148,8 @@
     if (!BIOMES[stage].animals.includes(kind) && STAGES[stage].boss!==kind) return false;
     const distance=riverDistance(map,p);
     if(stage===3 && distance<90) return false; // No animals spawn in lava.
-    if(stage===1) return kind==='deinosuchus' ? distance>=38 && distance<=135 : kind==='baryonyx'?distance>=58&&distance<=175:distance>=85;
-    return kind!=='deinosuchus';
+    if(stage===1) return kind==='deinosuchus'||kind==='archelon' ? distance>=38 && distance<=135 : kind==='baryonyx'?distance>=58&&distance<=175:distance>=85;
+    return kind!=='deinosuchus'&&kind!=='archelon';
   }
   // Display-only mapping stays within the existing Primal Earth 32 palette.
   const SPECIES_COLORS={};
@@ -190,7 +190,7 @@
   for(const [id,cost] of Object.entries({utahraptor:36,carnotaurus:50,ankylosaurus:55,triceratops:55,pachycephalosaurus:38,gallimimus:30,baryonyx:40,tyrannosaurus:60,velociraptor:30}))PLAYER_SPECIES[id].abilityCost=cost;
   PLAYER_SPECIES.velociraptor.text='Lille startjæger. Hurtige bid og et kort beskyttet kløspring. Shift: 30 stamina.';PLAYER_SPECIES.compy.text='Lille challenge-art. Små bid og korte undvigelser; vær forsigtig blandt store dyr.';
   for(const [id,config] of Object.entries(PLAYER_SPECIES))config.diet=config.diet||(id==='ankylosaurus'?'herbivore':'carnivore');
-  const herbivorousNPC=kind=>['parasaurolophus','ankylosaurus','triceratops','pachycephalosaurus','gallimimus'].includes(kind);
+  const HERBIVORE_KINDS=new Set(['parasaurolophus','ankylosaurus','triceratops','pachycephalosaurus','gallimimus']);const herbivorousNPC=kind=>HERBIVORE_KINDS.has(kind);
   const legacyPlayerFrame=(species,state,direction,frame)=>'assets/'+(['parasaurolophus','triceratops','tyrannosaurus','deinosuchus'].includes(species)?'enemy_full/':'player_full/')+species+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';
   // A3: retain the six drawn poses and their fixed hips; hold the loaded step
   // longer instead of deforming the body or inventing intermediate limbs.
@@ -209,7 +209,7 @@
     if(!activity)return null;
     return 'assets/behavior/'+species+'_'+activity+'_'+direction+'_'+String(Math.floor(time*1.5)%2).padStart(3,'0')+'.png';
   }
-  const playerFrame=(species,state,direction,frame)=>FEATURES.speciesAttacks&&state==='attack'&&['ankylosaurus','triceratops','pachycephalosaurus','gallimimus','parasaurolophus'].includes(species)?'assets/species_attacks/'+species+'_attack_'+direction+'_'+String(frame).padStart(3,'0')+'.png':legacyPlayerFrame(species,state,direction,frame);
+  const playerFrame=(species,state,direction,frame)=>staticFrame(species,direction,state)||(FEATURES.speciesAttacks&&state==='attack'&&['ankylosaurus','triceratops','pachycephalosaurus','gallimimus','parasaurolophus'].includes(species)?'assets/species_attacks/'+species+'_attack_'+direction+'_'+String(frame).padStart(3,'0')+'.png':legacyPlayerFrame(species,state,direction,frame));
   const abilityCost=r=>Math.max(16,PLAYER_SPECIES[r.species].abilityCost-2*r.mutations.deinonychus_common-5*r.mutations.crocEconomy-5*r.mutations.pounce+6*r.mutations.overclock-abilityDiscount(r));
   const mutationWeight=(mutation,ranks)=>MUTATION_RARITIES[mutation.rarity].weight*(1+Math.min(.4,.2*(ranks[mutation.id]||0)));
   function seeded(seed) { let x = seed >>> 0; return () => { x += 0x6D2B79F5; let t = Math.imul(x ^ x >>> 15, 1 | x); t ^= t + Math.imul(t ^ t >>> 7, 61 | t); return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
@@ -300,7 +300,7 @@
     {id:'bonebreak',name:'Knoglebrud',text:'Kritiske træf stagger 0,15 sek. længere og fylder bossens brud-meter 50 % hurtigere pr. rang.',icon:'bone',max:2,rarity:'rare'}
   );
   MUTATIONS.push(...[{"id":"deinoFeint","name":"Fjerklædt finte","text":"+15 % ekstra flankebonus til fintens næste bid pr. rang.","icon":"escape","max":3,"rarity":"rare","species":"deinonychus"},{"id":"deinoPrime","name":"Fjerstorm","text":"Finten gør næste flankebid 30 % stærkere og giver 0,5 sek. beskyttelse efter undvigelsen.","icon":"insulating_feathers","max":1,"rarity":"legendary","species":"deinonychus","effects":{"flankDamage":0.3}},{"id":"deinonychus_common","name":"Kontrolleret finte","text":"Din arts evne koster 2 mindre stamina pr. rang.","icon":"insulating_feathers","max":3,"rarity":"common","species":"deinonychus","effects":{"abilityCost":-2}},{"id":"deinonychus_uncommon","name":"Varme fjer","text":"15 % hurtigere spisning pr. rang; giver ikke ekstra føde.","icon":"insulating_feathers","max":3,"rarity":"uncommon","species":"deinonychus","effects":{"feeding":0.15}},{"id":"deinonychus_epic","name":"Præcisionsjæger","text":"+15 % angrebsskade fra siden/bagfra pr. rang; ingen bonus forfra.","icon":"serrated_teeth","max":3,"rarity":"epic","species":"deinonychus","effects":{"flankDamage":0.15}}]);
-  const critChance=(r,e)=>Math.min(.75,CRIT.base+.06*r.mutations.keenClaws+(e&&!e.alert?.2*r.mutations.instinct:0)+(r.species==='pachycephalosaurus'?.1:0)+(r.species==='compy'?.04:0)+critBonus(r,e));
+  const critChance=(r,e)=>Math.min(.75,CRIT.base+.06*r.mutations.keenClaws+(e&&!e.alert?.2*r.mutations.instinct:0)+(kindOf(r)==='pachycephalosaurus'?.1:0)+(kindOf(r)==='compy'?.04:0)+critBonus(r,e));
   // XP needed for dino level n+1: first + (n-1)*step. Rerolls (FEATURES.mutationRerolls): start per run, +perBoss per boss/miniboss.
   const XP_CURVE = { first: 6, step: 2 };
   const REROLLS = { start: 1, perBoss: 1, perMiniboss: 1, perEgg: 1, max: 3 };
@@ -730,11 +730,11 @@
       e.sex=seeded(r.seed^Math.imul(e.id,123457))()<.5?'female':'male';e.pattern=e.pattern||0; e.visualScale=['deinosuchus','tyrannosaurus'].includes(kind)||boss&&kind==='carnotaurus'?2:1; e.herdId=['compy','parasaurolophus','gallimimus','pachycephalosaurus'].includes(kind)?(r.enemies.find(o=>o.kind===kind&&Math.hypot(o.homeX-p.x,o.homeY-p.y)<220)?.herdId||kind+':'+e.id):null;e.naturalTime=(e.id*1.73)%12;e.activity='roam';e.territoryRadius=['carnotaurus','ankylosaurus','deinosuchus','triceratops','tyrannosaurus'].includes(kind)?330:180; e.bossPhase = 1; e.attackCycle = 0; e.attackName = ''; e.followUp = false; e.trailTimer = 0; e.homeX = p.x; e.homeY = p.y; e.alert = boss; e.lastAttackedAt = -1000; e.disengagedUntil = 0; r.enemies.push(e); return e;
     }
     terrainAt(entity) {
-      const r=this.run,map=r.map;
+      const r=this.run,map=r.map,kind=waterKind(entity);
       if(isLava(r.stage,map,entity))return {kind:'lava',speed:.7,cover:false,burn:entity===r.player};
-      if(isWater(r.stage,map,entity)&&isDeepWater(r.stage,map,entity))return {kind:'deep',speed:entity.kind==='deinosuchus'?(entity===r.player?1.35*(1+.08*r.mutations.crocCurrent):1):entity.kind==='baryonyx'?1.1*(1+(entity===r.player?.15*r.mutations.riverHunter:0)):.45,cover:false};
-      if(isWater(r.stage,map,entity))return {kind:'water',speed:entity.kind==='deinosuchus'?(entity===r.player?1.35*(1+.08*r.mutations.crocCurrent):1):entity.kind==='baryonyx'?1.05*(1+(entity===r.player?.15*r.mutations.riverHunter:0)):.6,cover:false};
-      if((map.mud||[]).some(p=>((entity.x-p.x)/p.rx)**2+((entity.y-p.y)/p.ry)**2<1))return {kind:'mud',speed:entity.kind==='deinosuchus'?.9:.75,cover:false};
+      if(isWater(r.stage,map,entity)&&isDeepWater(r.stage,map,entity))return {kind:'deep',speed:kind==='deinosuchus'?(entity===r.player?1.35*(1+.08*r.mutations.crocCurrent):1):kind==='baryonyx'?1.1*(1+(entity===r.player?.15*r.mutations.riverHunter:0)):.45,cover:false};
+      if(isWater(r.stage,map,entity))return {kind:'water',speed:kind==='deinosuchus'?(entity===r.player?1.35*(1+.08*r.mutations.crocCurrent):1):kind==='baryonyx'?1.05*(1+(entity===r.player?.15*r.mutations.riverHunter:0)):.6,cover:false};
+      if((map.mud||[]).some(p=>((entity.x-p.x)/p.rx)**2+((entity.y-p.y)/p.ry)**2<1))return {kind:'mud',speed:kind==='deinosuchus'?.9:.75,cover:false};
       const zone=r.stage>=2?zoneAt(map,entity):null;
       if(zone&&zone.id==='ash')return {kind:'ash',speed:.9,cover:false};
       if(zone&&zone.id==='canyon'&&!(map.cover||[]).some(p=>Math.hypot(entity.x-p.x,entity.y-p.y)<p.radius))return {kind:'gravel',speed:1.05,cover:false};
@@ -813,7 +813,7 @@
       if(attack&&!entry.attacks.includes(attack)){entry.attacks.push(attack);changed=true;}
       if(changed)this.persist();
     }
-    runSummary(){const r=this.run;return r.species==='baryonyx'&&r.stats.fishCaught>=6?'Flodjæger':r.bosses>=2?'Boss-specialist':r.health>0&&r.health<=3?'Overlevede med '+Math.ceil(r.health)+' liv':r.exploration>=3?'Dalens opdagelsesrejsende':r.kills>=10?'Vedholdende jæger':'En ny gren på stamtræet';}
+    runSummary(){const r=this.run;return kindOf(r)==='baryonyx'&&r.stats.fishCaught>=6?'Flodjæger':r.bosses>=2?'Boss-specialist':r.health>0&&r.health<=3?'Overlevede med '+Math.ceil(r.health)+' liv':r.exploration>=3?'Dalens opdagelsesrejsende':r.kills>=10?'Vedholdende jæger':'En ny gren på stamtræet';}
     statistics(stageOnly=false){
       const r=this.run,previous=stageOnly&&r.stageStats.length?r.stageStats[r.stageStats.length-1]:null,stats={};
       for(const [key,value] of Object.entries(r.stats))if(typeof value==='number')stats[key]=value-(previous?.[key]||0);
@@ -864,9 +864,9 @@
       return true;
     }
     damage(amount, source) {
-      const r = this.run; if (r.invulnerable > 0 || (r.pounce > 0 && ['compy', 'utahraptor','velociraptor','deinonychus'].includes(r.species)) || this.phase !== 'playing') {if(this.phase==='playing'&&source){r.stats.avoidedHits++;if(!r.lastDodgeText||r.seconds-r.lastDodgeText>.6){r.lastDodgeText=r.seconds;r.effects.push({x:r.player.x,y:r.player.y,text:'UNDVIGET',color:'#a2d4c1',life:.55});}}return;}
-      r.eating=null;r.staminaDelay=Math.max(r.staminaDelay,1);r.revealedUntil=r.seconds+1;r.hidden=false;r.concealTime=0; const facing={N:[0,-1],S:[0,1],E:[1,0],W:[-1,0]}[r.player.facing];const sx=source?source.x-r.player.x:0,sy=source?source.y-r.player.y:0,sd=Math.hypot(sx,sy);const front=r.species==='triceratops'&&sd>0&&(sx*facing[0]+sy*facing[1])/sd>.35;amount*=(1+.12*r.mutations.glassCannon+.15*r.mutations.lightFrame)*(front?1-.25-.1*r.mutations.frill-.15*r.mutations.hornWall:1); amount*= (1 - .08 * r.mutations.armor) * (r.species === 'ankylosaurus' && r.pounce > 0 ? .25 : 1) * takenMul(r,source);const shielded=Math.min(r.shield,amount);r.shield-=shielded;amount-=shielded;r.stats.damageTaken+=Math.min(r.health,amount);if(source&&source.boss)source.hitPlayer=true;r.lastHit=source&&Object.hasOwn(SPECIES,source.kind)?{kind:source.kind,direction:source.direction,mode:source.mode,boss:!!source.boss,sex:source.sex}:null;r.health = Math.max(0, r.health - amount); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
-      if (r.species === 'ankylosaurus' && r.mutations.spikes) { for (const e of r.enemies) if (Math.hypot(e.x-r.player.x,e.y-r.player.y)<110) { e.hp -= 4*r.mutations.spikes*(e.npcGuardUntil>r.seconds?.25:1); this.provoke(e); } }
+      const r = this.run; if (r.invulnerable > 0 || (r.pounce > 0 && ['compy', 'utahraptor','velociraptor','deinonychus'].includes(kindOf(r))) || this.phase !== 'playing') {if(this.phase==='playing'&&source){r.stats.avoidedHits++;if(!r.lastDodgeText||r.seconds-r.lastDodgeText>.6){r.lastDodgeText=r.seconds;r.effects.push({x:r.player.x,y:r.player.y,text:'UNDVIGET',color:'#a2d4c1',life:.55});}}return;}
+      r.eating=null;r.staminaDelay=Math.max(r.staminaDelay,1);r.revealedUntil=r.seconds+1;r.hidden=false;r.concealTime=0; const facing={N:[0,-1],S:[0,1],E:[1,0],W:[-1,0]}[r.player.facing];const sx=source?source.x-r.player.x:0,sy=source?source.y-r.player.y:0,sd=Math.hypot(sx,sy);const front=kindOf(r)==='triceratops'&&sd>0&&(sx*facing[0]+sy*facing[1])/sd>.35;amount*=(1+.12*r.mutations.glassCannon+.15*r.mutations.lightFrame)*(front?1-.25-.1*r.mutations.frill-.15*r.mutations.hornWall-fx(r,'front'):1); amount*= (1 - .08 * r.mutations.armor) * (kindOf(r) === 'ankylosaurus' && r.pounce > 0 ? .25 : 1) * takenMul(r,source);const shielded=Math.min(r.shield,amount);r.shield-=shielded;amount-=shielded;r.stats.damageTaken+=Math.min(r.health,amount);if(source&&source.boss)source.hitPlayer=true;r.lastHit=source&&Object.hasOwn(SPECIES,source.kind)?{kind:source.kind,direction:source.direction,mode:source.mode,boss:!!source.boss,sex:source.sex}:null;r.health = Math.max(0, r.health - amount); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
+      if (kindOf(r) === 'ankylosaurus' && r.mutations.spikes) { for (const e of r.enemies) if (Math.hypot(e.x-r.player.x,e.y-r.player.y)<110) { e.hp -= 4*r.mutations.spikes*(e.npcGuardUntil>r.seconds?.25:1); this.provoke(e); } }
       onPlayerHurt(this,r,source);
       if (r.health <= 0 && (FEATURES.secondWind || FEATURES.labTracks && r.upgrades.secondWind > 0) && !r.secondWindUsed) { r.secondWindUsed = true; r.health = 1; r.invulnerable = Math.max(r.invulnerable, 1.5); r.effects.push({ x: r.player.x, y: r.player.y, text: 'ANDET PUST', color: '#e9b75a', life: 1 }); this.emit('second_wind'); }
       if (r.health <= 0) this.finish(false);
@@ -904,13 +904,13 @@
       let hits = 0, strong = false;
       for (const e of r.enemies) {
         const dx = e.x - r.player.x, dy = e.y - r.player.y, dist = Math.hypot(dx, dy);
-        if (dist > PLAYER_SPECIES[r.species].range + e.radius + 10 * r.mutations.reach + (r.species === 'ankylosaurus' ? 12 * r.mutations.sweep : 0) || (r.species !== 'ankylosaurus' && dist > 24 && (dx * dir[0] + dy * dir[1]) / dist < .35) || (r.species === 'ankylosaurus' && dist > 24 && (dx * dir[0] + dy * dir[1]) / dist > tailFront(TAIL_ARC.player))) continue;
+        if (dist > PLAYER_SPECIES[r.species].range + e.radius + 10 * r.mutations.reach + (kindOf(r) === 'ankylosaurus' ? 12 * r.mutations.sweep : 0) || (kindOf(r) !== 'ankylosaurus' && dist > 24 && (dx * dir[0] + dy * dir[1]) / dist < .35) || (kindOf(r) === 'ankylosaurus' && dist > 24 && (dx * dir[0] + dy * dir[1]) / dist > tailFront(TAIL_ARC.player))) continue;
         const frontal = dist > 0 && ((-dx * e.facingX - dy * e.facingY) / dist > .6);
         const armor = ['triceratops', 'ankylosaurus'].includes(e.kind) && frontal ? .5 : 1;
         const vulnerable = e.boss && (e.mode === 'broken' || e.mode === 'recover' && !frontal);
         const crit = forcedCrit(r,e) || this.random() < critChance(r,e);
-        const damage = (crit ? critMultiplier(r) : 1) * PLAYER_SPECIES[r.species].damage * (1 + UPGRADE_STEP.damage * r.upgrades.damage + .2*r.mutations.rexJaw + .15*r.mutations.crocJaw + .2*r.mutations.rexKing + .2 * r.mutations.teeth + .2*r.mutations.apexGenome + .25*r.mutations.glassCannon + .2*r.mutations.heavyMuscle + (r.species === 'compy' && e.kind === 'parasaurolophus' ? .25 * r.mutations.hunter : 0) + (r.species === 'utahraptor' && !e.alert ? .5 * r.mutations.ambush : 0) + (r.health < r.maxHealth * .4 ? .2 * r.mutations.fury : 0)) * armor * (e.npcGuardUntil>r.seconds?.25:1) * (vulnerable ? 1.25 : 1)*(r.species==='deinonychus'&&!frontal?(r.precisionTime>0?(1.5+.15*r.mutations.deinoFeint)*(1+.3*r.mutations.deinoPrime):1)*(1+.15*r.mutations.deinonychus_epic):1)*(r.tailEmpowered>0?2:1)*biteBonus(this,r,e);
-        if(r.species==='deinonychus'&&r.precisionTime>0&&!frontal)r.stats.finteHits=(r.stats.finteHits||0)+1;
+        const damage = (crit ? critMultiplier(r) : 1) * PLAYER_SPECIES[r.species].damage * (1 + UPGRADE_STEP.damage * r.upgrades.damage + .2*r.mutations.rexJaw + .15*r.mutations.crocJaw + .2*r.mutations.rexKing + .2 * r.mutations.teeth + .2*r.mutations.apexGenome + .25*r.mutations.glassCannon + .2*r.mutations.heavyMuscle + (kindOf(r) === 'compy' && e.kind === 'parasaurolophus' ? .25 * r.mutations.hunter : 0) + (kindOf(r) === 'utahraptor' && !e.alert ? .5 * r.mutations.ambush : 0) + (r.health < r.maxHealth * .4 ? .2 * r.mutations.fury : 0)) * armor * (e.npcGuardUntil>r.seconds?.25:1) * (vulnerable ? 1.25 : 1)*(kindOf(r)==='deinonychus'&&!frontal?(r.precisionTime>0?(1.5+.15*r.mutations.deinoFeint)*(1+.3*r.mutations.deinoPrime):1)*(1+.15*r.mutations.deinonychus_epic):1)*(r.tailEmpowered>0?2:1)*biteBonus(this,r,e);
+        if(kindOf(r)==='deinonychus'&&r.precisionTime>0&&!frontal)r.stats.finteHits=(r.stats.finteHits||0)+1;
         e.hp -= damage; this.provoke(e); hits++; strong ||= crit || vulnerable || damage >= 16;if(crit){r.stats.crits=(r.stats.crits||0)+1;this.emit('crit');}
         this.burst(e.x, e.y, 'blood', vulnerable ? 12 : 8, e.id);
         e.bleed = r.mutations.bleed ? 3 : 0; e.hit = .15; onBiteHit(this,r,e,crit,damage);
@@ -919,13 +919,13 @@
           this.move(e, (dist > 1 ? dx / dist : dir[0]) * distance, (dist > 1 ? dy / dist : dir[1]) * distance);
           // Only critical hits interrupt ordinary animals; Pachy's dome lengthens its stagger.
           e.flinch = .12; // brief movement pause; never cancels an attack in progress
-          if (crit) e.stagger = Math.max(e.stagger||0, CRIT.stagger + .15 * r.mutations.bonebreak + (r.species==='pachycephalosaurus' ? .2 * r.mutations.dome : 0));
+          if (crit) e.stagger = Math.max(e.stagger||0, CRIT.stagger + .15 * r.mutations.bonebreak + (kindOf(r)==='pachycephalosaurus' ? .2 * r.mutations.dome : 0));
         } else if (crit) this.breakBoss(e, CRIT.bossBreak * (1 + .5 * r.mutations.bonebreak));
         r.effects.push({ x: e.x, y: e.y, text: (crit ? 'KRITISK · ' : armor < 1 ? 'PANSSER · ' : vulnerable ? 'ÅBEN FLANKE · ' : '') + Math.round(damage), color: crit ? '#dfbc52' : undefined, crit, life: crit ? .8 : .55 });
       }
-      if(hits){if(r.species==='deinonychus')r.precisionTime=0;r.stats.landedAttacks++;r.stats.hits+=hits;}
+      if(hits){if(kindOf(r)==='deinonychus')r.precisionTime=0;r.stats.landedAttacks++;r.stats.hits+=hits;}
       if (hits) { r.hitStop = Math.max(r.hitStop, strong || hits > 1 ? .05 : .033); r.shake = Math.max(r.shake, strong ? .1 : .055); this.emit('bite_hit', { hits, strong }); }
-      if(r.species==='ankylosaurus')r.tailEmpowered=0;
+      if(kindOf(r)==='ankylosaurus')r.tailEmpowered=0;
     }
     breakBoss(e,amount){
       if(!e.boss||e.mode==='broken')return;
@@ -1109,7 +1109,7 @@
       e.mode='recover';e.timer=.6;e.pattern=0;
     }
     // B1a: player's melee reach against e (resolveBite's hit test), used for the stalk distance.
-    playerReach(e){const r=this.run;return PLAYER_SPECIES[r.species].range+e.radius+10*r.mutations.reach+(r.species==='ankylosaurus'?12*r.mutations.sweep:0);}
+    playerReach(e){const r=this.run;return PLAYER_SPECIES[r.species].range+e.radius+10*r.mutations.reach+(kindOf(r)==='ankylosaurus'?12*r.mutations.sweep:0);}
     // B1a: is the straight charge lane from e toward the player free of terrain e cannot cross (05 §4.2)?
     chargeLaneClear(e){const r=this.run;return navLineClear(r.stage,r.map,canSwim(e),e,r.player);}
     // B1a reachability states (05 §4.3). Called only from a boss's free 'chase' step; returns true when it
@@ -1307,7 +1307,7 @@
       const dx=tx-e.x,dy=ty-e.y,d=Math.hypot(dx,dy);if(d>8){e.facingX=dx/d;e.facingY=dy/d;this.travel(e,dx/d*e.speed*.3*dt,dy/d*e.speed*.3*dt);}
     }
     npcAbility(e,dt){
-      const r=this.run,c=PLAYER_SPECIES[e.kind];if(!c||e.boss||e.kind==='deinosuchus')return false; // Preserve existing NPC windup/AI until the boss-mechanics package.
+      const r=this.run,c=PLAYER_SPECIES[e.kind];if(!c||e.boss||e.kind==='deinosuchus'||NEW_PLAYERS[e.kind])return false; // new playable species keep plain NPC behaviour // Preserve existing NPC windup/AI until the boss-mechanics package.
       e.skillCooldown=Math.max(0,e.skillCooldown-dt);e.skillDelay=Math.max(0,e.skillDelay-dt);
       if(!e.skillDelay)e.stamina=Math.min(100,e.stamina+18*dt);
       if(e.speciesSkill){
@@ -1552,17 +1552,17 @@
       if(r.staminaDelay===0&&r.pounce===0)r.stamina=Math.min(100,r.stamina+dt*(inCombat?STAMINA.combatRegen:STAMINA.regen)*(1+UPGRADE_STEP.regen*r.upgrades.regen+.2*m.feathers)*(1-.15*m.metabolicRush)*(r.roarDebuff>0?.5:1)*regenBonus(r,inCombat));
       let dx = clamp(finite(input.x), -1, 1), dy = clamp(finite(input.y), -1, 1), n = Math.hypot(dx, dy);
       const config = PLAYER_SPECIES[r.species], cost = abilityCost(r);
-      if (input.pounce && (n || ['ankylosaurus','tyrannosaurus'].includes(r.species)) && r.pounceCooldown === 0 && r.stamina >= cost) {
-        r.revealedUntil=r.seconds+2;r.hidden=false;r.concealTime=0; r.stamina -= cost;r.staminaDelay=STAMINA.delay;if(r.stamina<STAMINA.windedBelow){r.winded=STAMINA.windedTime;this.emit('winded');} r.pounce = config.abilityTime*(1+.15*m.utahLeap); r.stats.abilities++;r.stats.staminaSpent+=cost;r.abilityCooldownDuration=config.abilityCooldown*(1-.12*m.scurry)*cooldownBonus(r);r.pounceCooldown=r.abilityCooldownDuration; r.abilityHits = []; r.abilityRefund=0;if(r.species==='deinonychus'){r.precisionTime=2;if(m.deinoPrime)r.invulnerable=config.abilityTime+.5;}if(r.species==='velociraptor'&&m.velociPrime)r.invulnerable=2;if(m.compyFrenzy)r.frenzy=3;if(m.raptorAmbush)r.invulnerable=Math.max(r.invulnerable,config.abilityTime+1);if(m.galliWind)r.invulnerable=Math.max(r.invulnerable,1);if(m.triceBulwark){r.shield=20;r.shieldTime=4;}if(m.ankyBastion){r.shield=20;r.shieldTime=4;r.tailEmpowered=4;} r.abilityX = n ? dx/n : 0; r.abilityY = n ? dy/n : 1;
-        if(r.species==='tyrannosaurus'){for(const e of r.enemies)if(!e.boss&&!e.guard&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<250){e.scaredUntil=r.seconds+2+.5*m.rexVoice;e.alert=false;e.mode='flee';}this.emit('roar');}
-        if(r.species==='deinosuchus'&&m.crocAncient&&isWater(r.stage,r.map,r.player)){r.shield=20;r.shieldTime=4;}
-        if(r.species==='baryonyx'){const school=r.map.fishSchools.find(f=>f.stock>0&&isWater(r.stage,r.map,f,14)&&Math.hypot(f.x-r.player.x,f.y-r.player.y)<110+(m.harpoonClaw?60:0));if(school)this.catchFish(school,m.baryTide?3:1);}
-        if (r.species === 'ankylosaurus' && m.guard) r.health = Math.min(r.maxHealth, r.health + 5 * m.guard);
+      if (input.pounce && (n || ['ankylosaurus','tyrannosaurus'].includes(kindOf(r))) && r.pounceCooldown === 0 && r.stamina >= cost) {
+        r.revealedUntil=r.seconds+2;r.hidden=false;r.concealTime=0; r.stamina -= cost;r.staminaDelay=STAMINA.delay;if(r.stamina<STAMINA.windedBelow){r.winded=STAMINA.windedTime;this.emit('winded');} r.pounce = config.abilityTime*(1+.15*m.utahLeap); r.stats.abilities++;r.stats.staminaSpent+=cost;r.abilityCooldownDuration=config.abilityCooldown*(1-.12*m.scurry)*cooldownBonus(r);r.pounceCooldown=r.abilityCooldownDuration; r.abilityHits = []; r.abilityRefund=0;if(kindOf(r)==='deinonychus'){r.precisionTime=2;if(m.deinoPrime)r.invulnerable=config.abilityTime+.5;}if(kindOf(r)==='velociraptor'&&m.velociPrime)r.invulnerable=2;if(m.compyFrenzy)r.frenzy=3;if(m.raptorAmbush)r.invulnerable=Math.max(r.invulnerable,config.abilityTime+1);if(m.galliWind)r.invulnerable=Math.max(r.invulnerable,1);if(m.triceBulwark){r.shield=20;r.shieldTime=4;}if(m.ankyBastion){r.shield=20;r.shieldTime=4;r.tailEmpowered=4;} r.abilityX = n ? dx/n : 0; r.abilityY = n ? dy/n : 1;
+        if(kindOf(r)==='tyrannosaurus'){for(const e of r.enemies)if(!e.boss&&!e.guard&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<250){e.scaredUntil=r.seconds+2+.5*m.rexVoice;e.alert=false;e.mode='flee';}this.emit('roar');}
+        if(kindOf(r)==='deinosuchus'&&m.crocAncient&&isWater(r.stage,r.map,r.player)){r.shield=20;r.shieldTime=4;}
+        if(kindOf(r)==='baryonyx'){const school=r.map.fishSchools.find(f=>f.stock>0&&isWater(r.stage,r.map,f,14)&&Math.hypot(f.x-r.player.x,f.y-r.player.y)<110+(m.harpoonClaw?60:0));if(school)this.catchFish(school,m.baryTide?3:1);}
+        if (kindOf(r) === 'ankylosaurus' && m.guard) r.health = Math.min(r.maxHealth, r.health + 5 * m.guard);
         r.abilityChained = false;
         abilityStart(this,r,config); // Part C: dust cloud, pack calls, roar buffs
         this.burst(r.player.x, r.player.y, 'dust', 10, r.level); this.emit('pounce');
       }
-      if (['carnotaurus','triceratops','pachycephalosaurus','baryonyx','deinosuchus'].includes(r.species) && r.pounce > 0) { dx = r.abilityX; dy = r.abilityY; n = 1; }
+      if (['carnotaurus','triceratops','pachycephalosaurus','baryonyx','deinosuchus'].includes(kindOf(r)) && r.pounce > 0) { dx = r.abilityX; dy = r.abilityY; n = 1; }
       if (input.interact) { this.interact(); if (this.phase !== 'playing') return; }
       for (const site of r.map.sites) if (Math.hypot(site.x-r.player.x,site.y-r.player.y)<550) site.discovered = true;
       r.player.moving = false;
@@ -1571,15 +1571,15 @@
         const facing = Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? 'E' : 'W') : (dy > 0 ? 'S' : 'N');
         // Keep gait phase across turns rather than restarting with every key change.
         r.player.facing = facing;
-        const speed = config.speed * (input.sneak ? .45 : 1) * (r.slow > 0 ? .65 : 1) * (r.inAsh ? .85 : 1) * (r.winded > 0 ? STAMINA.windedSpeed : 1) * (1 + .08 * m.legs+.15*m.lightFrame)*(1-.08*m.heavyMuscle)*(r.species==='deinosuchus'&&!isWater(r.stage,r.map,r.player)?1-.05*m.crocRush:1)*speedBonus(r) * (r.pounce > 0 ? ['ankylosaurus','tyrannosaurus'].includes(r.species) ? .3 : r.species==='gallimimus'?1.6*(1+.12*m.stride):2.5 : r.attack ? .7 : 1);
+        const speed = config.speed * (input.sneak ? .45 : 1) * (r.slow > 0 ? .65 : 1) * (r.inAsh ? .85 : 1) * (r.winded > 0 ? STAMINA.windedSpeed : 1) * (1 + .08 * m.legs+.15*m.lightFrame)*(1-.08*m.heavyMuscle)*(kindOf(r)==='deinosuchus'&&!isWater(r.stage,r.map,r.player)?1-.05*m.crocRush:1)*speedBonus(r) * (r.pounce > 0 ? ['ankylosaurus','tyrannosaurus'].includes(kindOf(r)) ? .3 : kindOf(r)==='gallimimus'?1.6*(1+.12*m.stride):2.5 : r.attack ? .7 : 1);
         this.travel(r.player, dx / n * speed * dt, dy / n * speed * dt);
         r.stats.distance+=Math.hypot(r.player.x-beforeX,r.player.y-beforeY);r.player.moving = Math.hypot(r.player.x - beforeX, r.player.y - beforeY) > .001;
       }
       if(r.player.moving)r.player.gaitPhase=((r.player.gaitPhase||0)+dt*(r.pounce>0?2:8/6))%1;
       r.player.walk = r.player.moving ? (r.player.walk + dt) % 1.5 : r.player.walk;
-      if (r.pounce > 0 && ['utahraptor','velociraptor', 'carnotaurus','triceratops','pachycephalosaurus','baryonyx','deinosuchus'].includes(r.species)) for (const e of r.enemies) {
+      if (r.pounce > 0 && ['utahraptor','velociraptor', 'carnotaurus','triceratops','pachycephalosaurus','baryonyx','deinosuchus'].includes(kindOf(r))) for (const e of r.enemies) {
         if (!r.abilityHits.includes(e.id) && Math.hypot(e.x-r.player.x,e.y-r.player.y)<e.radius+r.player.radius+12) {
-          r.abilityHits.push(e.id); e.hp -= (r.species==='deinosuchus'?25+8*m.crocRush:r.species==='triceratops'?22+12*m.horns+20*m.triceBulwark:r.species==='pachycephalosaurus'?14+10*m.impact+25*m.pachyMeteor:r.species==='baryonyx'?14+12*m.baryTide:r.species === 'carnotaurus' ? 20 + 12*m.gore+20*m.carnoBreaker : 8*(1+.4*m.velociClaw) + 8*m.claws+18*m.raptorAmbush)*(e.npcGuardUntil>r.seconds?.25:1)*abilityHitMul(r,e); this.provoke(e);if(!e.boss&&(m.carnoBreaker||r.species==='pachycephalosaurus'))e.stagger=r.species==='pachycephalosaurus'?(m.pachyMeteor?1:.55):.65; e.hit = .15;
+          r.abilityHits.push(e.id); e.hp -= (kindOf(r)==='deinosuchus'?25+8*m.crocRush:kindOf(r)==='triceratops'?22+12*m.horns+20*m.triceBulwark:kindOf(r)==='pachycephalosaurus'?14+10*m.impact+25*m.pachyMeteor:kindOf(r)==='baryonyx'?14+12*m.baryTide:kindOf(r) === 'carnotaurus' ? 20 + 12*m.gore+20*m.carnoBreaker : 8*(1+.4*m.velociClaw) + 8*m.claws+18*m.raptorAmbush)*(e.npcGuardUntil>r.seconds?.25:1)*abilityHitMul(r,e); this.provoke(e);if(!e.boss&&(m.carnoBreaker||kindOf(r)==='pachycephalosaurus'))e.stagger=kindOf(r)==='pachycephalosaurus'?(m.pachyMeteor?1:.55):.65; e.hit = .15;
           abilityHit(this,r,e); // Part C: pin, hop back, boss break, shields
           if(m.momentum){const refund=Math.min(4*m.momentum,12-(r.abilityRefund||0));r.abilityRefund=(r.abilityRefund||0)+refund;r.stamina=Math.min(100,r.stamina+refund);}
           r.hitStop = Math.max(r.hitStop,.04); this.burst(e.x,e.y,'blood',10,e.id); this.emit('bite_hit', {hits:1,strong:true});
@@ -2305,8 +2305,8 @@
   const giveShield=(r,amount,time)=>{r.shield=Math.max(r.shield||0,amount);r.shieldTime=Math.max(r.shieldTime||0,time);};
   const allyNear=(r,range)=>(r.raptors||[]).some(a=>a.ally&&Math.hypot(a.x-r.player.x,a.y-r.player.y)<range);
   // Hooks called from the combat code above. Each returns a neutral value (1 or 0) without the matching mutation.
-  function abilityDiscount(r){const m=r.mutations;return 3*(m.utahLeap||0)+5*(m.stomp||0)+(setActive(r,'ability')?6:0);}
-  function critBonus(r){return r.mutations.hunterEye?.08:0;}
+  function abilityDiscount(r){const m=r.mutations;return 3*(m.utahLeap||0)+5*(m.stomp||0)+(setActive(r,'ability')?6:0)+fx(r,'cost');}
+  function critBonus(r){return (r.mutations.hunterEye?.08:0)+fx(r,'crit');}
   function forcedCrit(r,e){const m=r.mutations;return !!(m.frenzyJaws&&(r.frenzyBites||0)%4===3||m.packClaw&&e.pinnedUntil>r.seconds||r.roarCrit);}
   function critMultiplier(r){return r.mutations.killerInstinct?2:CRIT.multiplier;}
   function biteBonus(g,r,e){
@@ -2322,17 +2322,18 @@
     if(m.deathGrip&&e.hp<(e.maxHP||e.hp)*.5)b*=1.25;
     if(m.hornCrown&&e.boss)b*=1.2;
     if(r.species==='compy'&&m.hunter&&!e.damage&&e.kind!=='parasaurolophus')b*=1+.25*m.hunter; // every peaceful animal, not only Parasaurolophus
-    return b;
+    return b*newBiteBonus(r,e);
   }
   function onBiteHit(g,r,e,crit,damage){
     const m=r.mutations;
     if(m.serratedJaws&&m.bleed){e.bleedStacks=e.bleedStacks&&e.lastBleedAt>r.seconds-3?Math.min(3,e.bleedStacks+1):1;e.lastBleedAt=r.seconds;}
     if(m.frenzyJaws)r.frenzyBites=(r.frenzyBites||0)+1;
     if(crit&&r.roarCrit)r.roarCrit=0;
-    if(r.species==='ankylosaurus'){if(!e.boss&&(m.tailShock||m.quakeTail))e.stagger=Math.max(e.stagger||0,.25*m.tailShock+(m.quakeTail?.6:0));if(e.boss&&m.quakeTail)g.breakBoss(e,15);}
+    if(kindOf(r)==='ankylosaurus'){if(!e.boss&&(m.tailShock||m.quakeTail))e.stagger=Math.max(e.stagger||0,.25*m.tailShock+(m.quakeTail?.6:0));if(e.boss&&m.quakeTail)g.breakBoss(e,15);}
     if(m.featherDance&&(r.stats.finteHits||0)>(r.featherSeen||0)){r.featherSeen=r.stats.finteHits;r.stamina=Math.min(100,r.stamina+15);r.pounceCooldown=0;}
     const heal=(crit&&setActive(r,'crit')?2:0)+(m.lifeBite?damage*.05*m.lifeBite:0);
     if(heal>0&&r.health>0){const before=r.health;r.health=Math.min(r.maxHealth,r.health+heal);r.stats.healing+=r.health-before;}
+    newBiteHit(g,r,e,crit);
   }
   function speedBonus(r){
     const m=r.mutations;let s=1;
@@ -2344,10 +2345,10 @@
     if(m.chargeLegs)s*=1.08;
     if(m.compyRush&&r.rushTime>0)s*=1+.25*m.compyRush;
     if(m.ashRunner&&r.inAsh)s/=.85;
-    return s;
+    return s*newSpeedBonus(r);
   }
-  function regenBonus(r,inCombat){const m=r.mutations;return (m.windHeir&&inCombat?STAMINA.regen/STAMINA.combatRegen:1)*(m.keeperCalm?1.3:1);}
-  function cooldownBonus(r){return (setActive(r,'speed')?.9:1)*(1-.12*(r.mutations.quickClaw||0));}
+  function regenBonus(r,inCombat){const m=r.mutations;return (m.windHeir&&inCombat?STAMINA.regen/STAMINA.combatRegen:1)*(m.keeperCalm?1.3:1)*(1+fx(r,'regen'));}
+  function cooldownBonus(r){return (setActive(r,'speed')?.9:1)*(1-.12*(r.mutations.quickClaw||0))*Math.max(.4,1-fx(r,'cooldown'));}
   function attackSpeedBonus(r){const m=r.mutations;return (m.adrenaline&&r.health<r.maxHealth*.3?.85:1)*(m.emberFury?.9:1);}
   function takenMul(r,source){
     const m=r.mutations,animal=source&&!source.hazard;let t=1;
@@ -2356,14 +2357,16 @@
     if(m.armorHide&&animal)t*=.88;
     if(m.ashRunner&&source&&source.hazard==='lava')t*=.5;
     if(m.batteringRam&&r.species==='carnotaurus'&&r.pounce>0)t*=.5;
-    return t;
+    return t*newTakenMul(r);
   }
   function onPlayerHurt(g,r,source){
+    newPlayerHurt(g,r,source);
     if(r.mutations.clubBone&&source&&!source.hazard)for(const e of r.enemies)if(Math.hypot(e.x-r.player.x,e.y-r.player.y)<100){e.hp-=8*(e.npcGuardUntil>r.seconds?.25:1);g.provoke(e);}
   }
   function foodHeal(r,value,fish=false){
     const m=r.mutations;if(m.bloodthirst)return 0;
     let heal=value*(m.scavenger+(setActive(r,'food')?1:0)+(m.fishHook?1:0)+(fish?0:m.carrionKing||0))+(fish?2*(m.fishOil||0)+(m.harpoonClaw?3:0):0);
+    heal+=newFoodHeal(r,value,fish);
     if(m.ironStomach)heal*=2;
     return heal;
   }
@@ -2378,6 +2381,7 @@
       if(m.compyRush)r.rushTime=2;
       if(FEATURES.allyCalls&&ALT_ABILITIES.compy&&!(r.callCooldown>0)){g.callAllies('compy',(m.swarmKing?3:2)+m.compyPack,m.swarmKing?12:8);r.callCooldown=CALL.cooldown;}
     }
+    newAbilityStart(g,r);
     if(r.species==='tyrannosaurus'){if(m.rexKing)r.roarCrit=1;if(m.primalRoar){r.roarBuff=5;for(const e of r.enemies)if(e.boss&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<250)g.breakBoss(e,30);}}
   }
   function abilityHitMul(r,e){
@@ -2386,11 +2390,12 @@
     if(r.species==='utahraptor'&&m.butcherLeap)k*=2;
     if(r.species==='deinosuchus'&&m.deathRoll)k*=2;
     if(r.species==='pachycephalosaurus'&&m.bossBash&&(e.boss||e.elite))k*=1+.35*m.bossBash;
+    k*=1+fx(r,'ability');if(e.boss||e.elite)k*=1+fx(r,'bossBite');
     return k;
   }
   function abilityHit(g,r,e){
     const m=r.mutations;
-    if(ALT_ABILITIES.velociraptor&&r.species==='velociraptor'){ // pin
+    if(ALT_ABILITIES.velociraptor&&kindOf(r)==='velociraptor'){ // pin (Microraptor too)
       const hold=(m.packClaw?2:PIN.time)+.4*(m.pinGrip||0);
       if(e.boss)g.breakBoss(e,PIN.bossBreak+15*(m.pinGrip||0));else{e.stagger=Math.max(e.stagger||0,hold);e.pinnedUntil=r.seconds+hold;}
     }
@@ -2408,6 +2413,7 @@
       if(m.hornWall&&!e.boss){const dx=e.x-r.player.x,dy=e.y-r.player.y,d=Math.hypot(dx,dy)||1;g.move(e,dx/d*40,dy/d*40);}
     }
     if(r.species==='deinosuchus'&&m.deathRoll&&!e.boss)e.stagger=Math.max(e.stagger||0,1.5);
+    newAbilityHit(g,r,e);
   }
   // ---- Game additions
   Game.prototype.choiceCount=function(){const r=this.run;return MUTATION_CHOICES.count+(FEATURES.labTracks&&r&&r.upgrades.widerPool>0?1:0);};
@@ -2465,7 +2471,7 @@
     r.choices=ids;r.trophySelection=true;this.phase='mutation';this.emit('level_up',{trophy:true});return true;
   };
   function applyPick(g,r,id){
-    const add=id==='livingMountain'?30:id==='bullyNeck'?20:0;
+    const add=(id==='livingMountain'?30:id==='bullyNeck'?20:0)+(FX[id]&&FX[id].hp||0);
     if(add){const before=r.health;r.maxHealth+=add;r.health=Math.min(r.maxHealth,r.health+add);r.stats.healing+=r.health-before;}
   }
   const choosePartC=Game.prototype.choose;
@@ -2564,6 +2570,213 @@
     if(this.run===r&&this.phase==='cleared')this.offerTrophy();
     return out;
   };
+  // ---- New species (FEATURES.newSpecies, 2026-10-12). They are drawn as static 2D poses in assets/new_species/
+  // (one per direction) until Codex animates them. Each playable species borrows an existing ability (`base`)
+  // and adds one twist. New NPC herbivores only defend themselves; the small ones flee.
+  const NEW_PLAYERS={
+    allosaurus:{name:'Allosaurus',base:'carnotaurus',dna:160,hp:140,damage:16,speed:135,radius:22,cooldown:.8,duration:.5,range:76,skill:'Flænsestorm',abilityCost:50,abilityTime:.4,abilityCooldown:3.4,diet:'carnivore',
+      role:'Flænsejæger',text:'Stor jæger med flænsende kæber. Rammer hårdt i stormløbet og følger op med bid.',skillText:'Stormløb med kontaktskade; dyr, du rammer, tager +30 % bidskade i 4 sek.'},
+    spinosaurus:{name:'Spinosaurus',base:'baryonyx',dna:260,hp:175,damage:20,speed:120,radius:30,cooldown:1,duration:.6,range:88,skill:'Sejlstød',abilityCost:45,abilityTime:.28,abilityCooldown:3.2,diet:'piscivore',
+      role:'Flodkæmpe',text:'Kæmpe fiskejæger med sejl på ryggen. Svømmer hurtigt, men er langsom på land.',skillText:'Fang fisk eller ram tæt bytte. Du er 25 % hurtigere i vand.'},
+    stegosaurus:{name:'Stegosaurus',base:'ankylosaurus',dna:200,hp:165,damage:14,speed:100,radius:26,cooldown:.95,duration:.58,range:92,skill:'Pigpanser',abilityCost:55,abilityTime:1,abilityCooldown:5,diet:'herbivore',
+      role:'Pigget forsvarer',text:'Planteæder med rygplader og halepigge. Dit angreb er et haleslag bagud og til siderne.',skillText:'75 % mindre skade i ét sekund; dyr, der bider dig imens, får 10 skade af piggene.'},
+    parasaurolophus:{name:'Parasaurolophus',base:'gallimimus',dna:100,hp:120,damage:6,speed:170,radius:18,cooldown:.6,duration:.36,range:56,skill:'Trompetkald',abilityCost:30,abilityTime:.9,abilityCooldown:3.5,diet:'herbivore',animated:true,
+      role:'Flokkalder',text:'Planteæder med trompetkam. Svag alene, men kalder flokken til hjælp.',skillText:'Kort sprint. Højst hvert 10. sek. kalder trompeten 2 parasaurolophusser, der kæmper med i 8 sek.'},
+    therizinosaurus:{name:'Therizinosaurus',base:'utahraptor',dna:190,hp:160,damage:18,speed:115,radius:26,cooldown:.9,duration:.55,range:84,skill:'Leklo-spring',abilityCost:45,abilityTime:.26,abilityCooldown:3,diet:'herbivore',
+      role:'Kloplanteæder',text:'Stor planteæder med meterlange kløer. Langsom, men kløerne slår hårdt.',skillText:'Kort beskyttet spring med kløerne forrest; dyr, du rammer, vakler i 0,6 sek.'},
+    pteranodon:{name:'Pteranodon',base:'compy',dna:120,hp:95,damage:8,speed:185,radius:16,cooldown:.5,duration:.3,range:58,skill:'Glideflugt',abilityCost:30,abilityTime:.32,abilityCooldown:2.2,diet:'piscivore',
+      role:'Svæveflyver',text:'Flyveøgle med lange vinger. Hurtig og let; hold dig fra store kæber.',skillText:'Lang glideflugt; du kan ikke rammes, mens du flyver.'},
+    microraptor:{name:'Microraptor',base:'velociraptor',dna:70,hp:75,damage:7,speed:190,radius:9,cooldown:.45,duration:.28,range:50,skill:'Glidespring',abilityCost:28,abilityTime:.26,abilityCooldown:1.9,diet:'carnivore',
+      role:'Firvinget glider',text:'Lille fjerklædt jæger med fire vinger. Den hurtigste art, men skrøbelig.',skillText:'Langt glidespring; du er beskyttet, og dyret, du rammer, holdes fast i 1,2 sek.'},
+    pachyrhinosaurus:{name:'Pachyrhinosaurus',base:'triceratops',dna:210,hp:160,damage:15,speed:105,radius:26,cooldown:.9,duration:.58,range:80,skill:'Næsestød',abilityCost:50,abilityTime:.4,abilityCooldown:3.8,diet:'herbivore',
+      role:'Knoglepude',text:'Planteæder med en tyk knoglepude på næsen. 25 % frontpanser.',skillText:'Hornstorm med knoglepuden; hvert træf fylder bossens brud-måler +15.'},
+    oviraptor:{name:'Oviraptor',base:'deinonychus',dna:90,hp:95,damage:8,speed:175,radius:13,cooldown:.5,duration:.3,range:54,skill:'Æggerøver',abilityCost:26,abilityTime:.18,abilityCooldown:2.2,diet:'omnivore',
+      role:'Æggerøver',text:'Omnivor med næb. Spiser planter og kød, og æg fra reder giver et ekstra omvalg.',skillText:'Kort undvigelse; dit næste bid fra siden eller bagfra gør +50 % skade i 2 sek.'}
+  };
+  const NEW_NPCS={
+    dryosaurus:{hp:20,speed:100,damage:0,meat:2,chance:.1,dna:1,radius:12,herd:true,biome:0,zone:'clearing'},
+    hypsilophodon:{hp:14,speed:105,damage:0,meat:1,chance:.05,dna:1,radius:9,herd:true,biome:0,zone:'thicket'},
+    psittacosaurus:{hp:18,speed:80,damage:0,meat:2,chance:.1,dna:1,radius:11,herd:true,biome:0,zone:'bog'},
+    oviraptor:{hp:22,speed:95,damage:0,meat:2,chance:.1,dna:1,radius:13,biome:0,zone:'oldgrowth'},
+    edmontosaurus:{hp:55,speed:62,damage:0,meat:5,chance:.3,dna:3,radius:24,herd:true,biome:1,zone:'meadow'},
+    archelon:{hp:70,speed:40,damage:10,meat:5,chance:.3,dna:4,radius:26,biome:1,zone:'bank'},
+    iguanodon:{hp:60,speed:55,damage:14,meat:5,chance:.3,dna:3,radius:24,biome:1,zone:'gallery'},
+    protoceratops:{hp:34,speed:55,damage:8,meat:3,chance:.15,dna:2,radius:15,herd:true,biome:2,zone:'drygrass'},
+    allosaurus:{hp:70,speed:72,damage:18,meat:5,chance:.3,dna:4,radius:22,carnivore:true,biome:2,zone:'canyon'},
+    stegosaurus:{hp:75,speed:40,damage:15,meat:5,chance:.3,dna:4,radius:26,biome:2,zone:'plateau'},
+    therizinosaurus:{hp:70,speed:50,damage:16,meat:5,chance:.3,dna:4,radius:26,biome:2,zone:'thorn'},
+    leaellynasaura:{hp:12,speed:100,damage:0,meat:1,chance:.05,dna:1,radius:8,herd:true,biome:3,zone:'ash'},
+    pachyrhinosaurus:{hp:72,speed:48,damage:16,meat:5,chance:.3,dna:4,radius:26,herd:true,biome:3,zone:'steam'}
+  };
+  // Drawn size relative to the 144 px frame (the drawings use the same scale as the existing sprites).
+  const STATIC_SCALE={spinosaurus:2};
+  const STATIC_SPECIES=new Set();
+  const HERD_KINDS=new Set(['compy','parasaurolophus','gallimimus','pachycephalosaurus']);
+  // Generic mutation effects (fx) so the new species' mutations need no new inline code.
+  const NEW_MUTATIONS=[
+    ['allosaurus',[
+      ['alloJaw','Flænsekæber','+8 % bidskade pr. rang.','serrated_teeth',3,'common','attack',{bite:.08}],
+      ['alloStride','Lange ben','+5 % fart og 4 mindre stamina på evnen pr. rang.','powerful_legs',3,'uncommon','speed',{speed:.05,cost:4}],
+      ['alloRend','Dybe flænger','Flængerne holder 2 sek. længere og giver +10 % ekstra bidskade pr. rang.','serrated_teeth',2,'rare','attack',{rendTime:2,rendBonus:.1}],
+      ['alloHunt','Storvildtjæger','+15 % skade mod bosser og elitedyr pr. rang.','bone',2,'epic','attack',{bossBite:.15}],
+      ['alloApex','Jura-tyrann','Stormløb fylder bossens brud-måler +30, og hvert drab giver 10 stamina.','serrated_teeth',1,'legendary','ability',{breakHit:30,killStamina:10}]],
+     ['alloButcher','Kødøkse','Flænsede dyr tager dobbelt bidskade i stedet for +30 %.','serrated_teeth',[['alloRend',2],['teeth',1]]]],
+    ['spinosaurus',[
+      ['spinoSail','Sejlryg','+10 % fart i vand pr. rang.','insulating_feathers',3,'common','speed',{swim:.1}],
+      ['spinoJaw','Krokodillesnude','+15 % bidskade mod dyr i vand pr. rang.','serrated_teeth',3,'uncommon','attack',{waterBite:.15}],
+      ['spinoFeast','Fiskefest','Hver fisk heler 4 liv pr. rang.','hunger',2,'rare','food',{fishHeal:4}],
+      ['spinoBulk','Flodkæmpe','+20 maksimalt liv pr. rang.','health',2,'epic','defense',{hp:20}],
+      ['spinoKing','Flodens konge','Du tager 30 % mindre skade og gør 20 % mere skade, når du er i vand.','armor',1,'legendary','defense',{}]],
+     ['spinoTide','Tidevandskonge','Hver fisk heler 6 liv og giver 10 stamina.','hunger',[['spinoFeast',2],['scavenger',1]],{fishHeal:6,fishStamina:10}]],
+    ['stegosaurus',[
+      ['stegoPlates','Rygplader','Tag 4 % mindre skade pr. rang.','armor',3,'common','defense',{armor:.04}],
+      ['stegoSpikes','Halepigge','Haleslag gør +10 % skade pr. rang.','bone',3,'uncommon','attack',{bite:.1}],
+      ['stegoThorns','Tornepanser','Piggene gør 8 ekstra skade pr. rang.','armor',2,'rare','defense',{thorns:8}],
+      ['stegoGraze','Bladæder','Føde heler 2 ekstra liv pr. portion pr. rang.','hunger',2,'epic','food',{food:2}],
+      ['stegoThagomizer','Thagomizer','Haleslag stagger almindelige dyr 0,5 sek. og fylder bossens brud-måler +10.','bone',1,'legendary','crit',{tailStagger:.5,tailBreak:10}]],
+     ['stegoFortress','Pigfæstning','Panserstillingen varer dobbelt så længe, og piggene gør dobbelt skade.','armor',[['stegoThorns',2],['armor',1]]]],
+    ['parasaurolophus',[
+      ['paraHerd','Flokdyr','+6 % fart pr. rang, når en flokfælle er inden for 200 pixels.','escape',3,'common','speed',{herdSpeed:.06}],
+      ['paraCall','Langt kald','Trompetkaldet kan bruges 2 sek. oftere pr. rang.','escape',2,'uncommon','ability',{callCd:2}],
+      ['paraCrest','Resonanskam','Trompetkaldet skræmmer almindelige rovdyr inden for 200 pixels i 2 sek. pr. rang.','bone',2,'rare','ability',{callScare:2}],
+      ['paraGraze','Sumpgræsser','Føde heler 2 ekstra liv pr. portion pr. rang.','hunger',2,'epic','food',{food:2}],
+      ['paraChorus','Kor','Trompetkaldet kalder 2 ekstra parasaurolophusser.','escape',1,'legendary','ability',{callExtra:2}]],
+     ['paraThunder','Tordenkald','Trompetkaldet kalder 4 parasaurolophusser, der kæmper med i 12 sek.','escape',[['paraCall',2],['legs',1]]]],
+    ['therizinosaurus',[
+      ['theriClaw','Leklø','+8 % bidskade pr. rang.','serrated_teeth',3,'common','attack',{bite:.08}],
+      ['theriBulk','Tung krop','+15 maksimalt liv pr. rang.','health',3,'uncommon','defense',{hp:15}],
+      ['theriReach','Lange arme','Springet gør +20 % skade pr. rang.','powerful_legs',2,'rare','ability',{ability:.2}],
+      ['theriCalm','Rolig kæmpe','Stamina genvindes 15 % hurtigere pr. rang.','stamina',2,'epic','food',{regen:.15}],
+      ['theriScythe','Lieklør','Spring-træf får dyr til at vakle 0,6 sek. længere og fylder bossens brud-måler +25.','serrated_teeth',1,'legendary','ability',{abilityStagger:.6,breakHit:25}]],
+     ['theriHarvest','Høstkløer','Spring-træf giver også 15 skade til alle andre dyr inden for 70 pixels.','serrated_teeth',[['theriReach',2],['teeth',1]]]],
+    ['pteranodon',[
+      ['pteroWing','Lange vinger','+6 % fart pr. rang.','insulating_feathers',3,'common','speed',{speed:.06}],
+      ['pteroLight','Let krop','Glideflugten koster 4 mindre stamina pr. rang.','insulating_feathers',3,'uncommon','ability',{cost:4}],
+      ['pteroBeak','Spydnæb','+12 % bidskade pr. rang.','serrated_teeth',2,'rare','attack',{bite:.12}],
+      ['pteroThermal','Termik','Glideflugten får 15 % kortere cooldown pr. rang.','escape',2,'epic','speed',{cooldown:.15}],
+      ['pteroSky','Himmelherre','Efter en glideflugt er dit næste bid et sikkert kritisk træf.','escape',1,'legendary','crit',{}]],
+     ['pteroStorm','Stormsvæver','+15 % fart, og glideflugten varer 50 % længere.','insulating_feathers',[['pteroWing',2],['legs',1]],{speed:.15}]],
+    ['microraptor',[
+      ['microFeather','Fire vinger','+5 % fart pr. rang.','insulating_feathers',3,'common','speed',{speed:.05}],
+      ['microClaw','Nålekløer','+10 % bidskade pr. rang.','serrated_teeth',3,'uncommon','attack',{bite:.1}],
+      ['microGlide','Glidefly','Glidespringet får 12 % kortere cooldown pr. rang.','escape',2,'rare','ability',{cooldown:.12}],
+      ['microOpportunist','Opportunist','+20 % bidskade mod fastholdte dyr pr. rang.','serrated_teeth',2,'epic','crit',{pinnedBite:.2}],
+      ['microNight','Mørkeflyver','+12 % chance for kritisk træf, og kritiske træf giver 8 stamina.','insulating_feathers',1,'legendary','crit',{crit:.12,critStamina:8}]],
+     ['microNeedle','Nåleregn','Glidespringet holder også alle dyr inden for 60 pixels fast.','serrated_teeth',[['microGlide',2],['legs',1]]]],
+    ['pachyrhinosaurus',[
+      ['pachyrBoss','Knoglepude','Tag 4 % mindre skade pr. rang.','armor',3,'common','defense',{armor:.04}],
+      ['pachyrHorn','Hornkrans','Hornstorm gør +10 % skade pr. rang.','bone',3,'uncommon','ability',{ability:.1}],
+      ['pachyrNose','Stålnæse','Hornstorm fylder bossens brud-måler +10 pr. rang.','bone',2,'rare','ability',{breakHit:10}],
+      ['pachyrGraze','Tundragræsser','Føde heler 2 ekstra liv pr. portion pr. rang.','hunger',2,'epic','food',{food:2}],
+      ['pachyrRam','Kamprambuk','Hornstorm stagger almindelige dyr 1 sek. og koster 10 mindre stamina.','bone',1,'legendary','ability',{abilityStagger:1,cost:10}]],
+     ['pachyrBulwark','Knoglebolværk','Frontpanseret dækker yderligere 20 %, og hornstorm giver 10 skjold i 4 sek.','armor',[['pachyrBoss',3],['armor',1]],{front:.2}]],
+    ['oviraptor',[
+      ['oviBeak','Knusenæb','+8 % bidskade pr. rang.','serrated_teeth',3,'common','attack',{bite:.08}],
+      ['oviNest','Redeplyndrer','Æg fra reder heler 10 liv pr. rang.','hunger',3,'uncommon','food',{eggHeal:10}],
+      ['oviQuick','Kvik','+6 % fart pr. rang.','powerful_legs',3,'rare','speed',{speed:.06}],
+      ['oviOmni','Altæder','Føde heler 2 ekstra liv pr. portion pr. rang.','hunger',2,'epic','food',{food:2}],
+      ['oviKing','Ægkonge','Hvert drab har 10 % chance for at give et omvalg.','dna',1,'legendary','food',{killReroll:.1}]],
+     ['oviThief','Mestertyv','Finten varer dobbelt så længe og koster 8 mindre stamina.','escape',[['oviQuick',2],['scavenger',1]],{cost:8}]]
+  ];
+  const FX={};
+  if(FEATURES.newSpecies){
+    for(const [id,p] of Object.entries(NEW_PLAYERS)){
+      const {dna,role,text,skillText,animated,...stats}=p;
+      PLAYER_SPECIES[id]={...stats,cost:dna,text};Object.assign(PLAYER_SPECIES[id],{role,skillText});
+      SPECIES_UNLOCKS[id]={dna};if(!animated)STATIC_SPECIES.add(id);
+    }
+    for(const [id,n] of Object.entries(NEW_NPCS)){
+      const {herd,biome,zone,carnivore,animated,...stats}=n;SPECIES[id]=stats;SPECIES_LABELS[id]=id[0].toUpperCase()+id.slice(1);if(!animated)STATIC_SPECIES.add(id);
+      if(!carnivore)HERBIVORE_KINDS.add(id);if(herd)HERD_KINDS.add(id);
+      BIOMES[biome].animals.push(id);const z=ZONES[biome].find(z=>z.id===zone);if(z)z.animals.push(id);
+    }
+    for(const [species,list,[eid,ename,etext,eicon,requires,efx]] of NEW_MUTATIONS){
+      for(const [id,name,text,icon,max,rarity,tag,fx] of list){MUTATIONS.push({id,name,text,icon,max,rarity,species,tag});FX[id]=fx;}
+      const evo={id:eid,species,name:ename,text:etext,requires,icon:eicon};EVOLUTIONS.push(evo);MUTATIONS.push({...evo,max:1,rarity:'evolution',evolution:true});if(efx)FX[eid]=efx;
+    }
+  }
+  const FX_IDS=Object.keys(FX);
+  function fx(r,key){let s=0;for(const id of FX_IDS){const n=r.mutations[id];if(n&&FX[id][key])s+=n*FX[id][key];}return s;}
+  function kindOf(r){return r.kind||(PLAYER_SPECIES[r.species]&&PLAYER_SPECIES[r.species].base)||r.species;}
+  function waterKind(entity){return ({spinosaurus:'baryonyx',archelon:'deinosuchus'})[entity.kind]||entity.kind;}
+  function staticFrame(species,direction,state){return STATIC_SPECIES.has(species)?'assets/new_species/'+species+(state==='death'?'_corpse':'_'+direction)+'.png':null;}
+  // Twists on top of the borrowed abilities; called from the Part C hooks.
+  function newAbilityStart(g,r){
+    const m=r.mutations;
+    if(r.species==='parasaurolophus'&&FEATURES.allyCalls&&!(r.callCooldown>0)){
+      g.callAllies('parasaurolophus',m.paraThunder?4:2+fx(r,'callExtra'),m.paraThunder?12:8);r.callCooldown=Math.max(3,CALL.cooldown-fx(r,'callCd'));
+      const scare=fx(r,'callScare');if(scare)for(const e of r.enemies)if(!e.boss&&!e.guard&&e.damage&&!herbivorousNPC(e.kind)&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<200){e.scaredUntil=r.seconds+scare;e.alert=false;e.mode='flee';}
+    }
+    if(r.species==='stegosaurus'&&m.stegoFortress)r.pounce*=2;
+    if(r.species==='pteranodon'){if(m.pteroSky)r.roarCrit=1;if(m.pteroStorm)r.pounce*=1.5;}
+    if(r.species==='oviraptor'&&m.oviThief)r.precisionTime=Math.max(r.precisionTime||0,4);
+  }
+  function newAbilityHit(g,r,e){
+    const m=r.mutations,stagger=fx(r,'abilityStagger')+(r.species==='therizinosaurus'?.6:0),brk=fx(r,'breakHit')+(r.species==='pachyrhinosaurus'?15:0);
+    if(r.species==='allosaurus')e.rendUntil=r.seconds+4+fx(r,'rendTime');
+    if(e.boss){if(brk)g.breakBoss(e,brk);}else if(stagger)e.stagger=Math.max(e.stagger||0,stagger);
+    if(m.pachyrBulwark)giveShield(r,10,4);
+    if(m.theriHarvest)for(const o of r.enemies)if(o!==e&&!o.boss&&o.hp>0&&Math.hypot(o.x-e.x,o.y-e.y)<70){o.hp-=15*(o.npcGuardUntil>r.seconds?.25:1);g.provoke(o);}
+    if(m.microNeedle)for(const o of r.enemies)if(o!==e&&!o.boss&&Math.hypot(o.x-e.x,o.y-e.y)<60){o.stagger=Math.max(o.stagger||0,PIN.time);o.pinnedUntil=r.seconds+PIN.time;}
+  }
+  function newBiteBonus(r,e){
+    const m=r.mutations;let b=1+fx(r,'bite');
+    if(isWater(r.stage,r.map,e))b*=1+fx(r,'waterBite');
+    if(e.boss||e.elite)b*=1+fx(r,'bossBite');
+    if(e.pinnedUntil>r.seconds)b*=1+fx(r,'pinnedBite');
+    if(e.rendUntil>r.seconds)b*=m.alloButcher?2:1.3+fx(r,'rendBonus');
+    if(m.spinoKing&&isWater(r.stage,r.map,r.player))b*=1.2;
+    return b;
+  }
+  function newSpeedBonus(r){
+    let s=1+fx(r,'speed');const wet=(r.species==='spinosaurus'||fx(r,'swim'))&&isWater(r.stage,r.map,r.player);
+    if(wet)s*=(r.species==='spinosaurus'?1.25:1)*(1+fx(r,'swim'));
+    if(fx(r,'herdSpeed')&&allyNear(r,200))s*=1+fx(r,'herdSpeed');
+    return s;
+  }
+  function newTakenMul(r){let t=1-fx(r,'armor');if(r.mutations.spinoKing&&isWater(r.stage,r.map,r.player))t*=.7;return Math.max(.3,t);}
+  function newPlayerHurt(g,r,source){
+    if(r.species==='stegosaurus'&&r.pounce>0&&source&&!source.hazard&&source.hp>0){source.hp-=(10+fx(r,'thorns'))*(r.mutations.stegoFortress?2:1)*(source.npcGuardUntil>r.seconds?.25:1);source.hit=.15;g.provoke(source);}
+  }
+  function newFoodHeal(r,value,fish){
+    let heal=value*fx(r,'food');
+    if(fish){heal+=fx(r,'fishHeal');const st=fx(r,'fishStamina');if(st)r.stamina=Math.min(100,r.stamina+st);}
+    return heal;
+  }
+  function newBiteHit(g,r,e,crit){
+    const st=fx(r,'critStamina');if(crit&&st)r.stamina=Math.min(100,r.stamina+st);
+    if(kindOf(r)==='ankylosaurus'){const ts=fx(r,'tailStagger'),tb=fx(r,'tailBreak');if(!e.boss&&ts)e.stagger=Math.max(e.stagger||0,ts);if(e.boss&&tb)g.breakBoss(e,tb);}
+  }
+  const spawnNew=Game.prototype.spawn;
+  Game.prototype.spawn=function(kind,position,boss=false){
+    const e=spawnNew.call(this,kind,position,boss);
+    if(e&&STATIC_SCALE[kind]&&!boss)e.visualScale=STATIC_SCALE[kind];
+    if(e&&!e.herdId&&HERD_KINDS.has(kind)){const r=this.run;e.herdId=(r.enemies.find(o=>o!==e&&o.kind===kind&&o.herdId&&Math.hypot((o.homeX??o.x)-e.x,(o.homeY??o.y)-e.y)<220)||{}).herdId||kind+':'+e.id;}
+    return e;
+  };
+  const startNew=Game.prototype.start;
+  Game.prototype.start=function(options){
+    const out=startNew.call(this,options);const r=this.run;
+    if(r){r.kind=kindOf({species:r.species});r.visualScale=STATIC_SCALE[r.species]||1;}
+    return out;
+  };
+  const killNew=Game.prototype.kill;
+  Game.prototype.kill=function(e){
+    const r=this.run,fresh=!e.rewarded,out=killNew.call(this,e);
+    if(!fresh||!r||!FX_IDS.length)return out;
+    const st=fx(r,'killStamina');if(st)r.stamina=Math.min(100,r.stamina+st);
+    const chance=fx(r,'killReroll');if(chance&&this.random()<chance){const got=this.addRerolls(1);if(got)r.effects.push({x:e.x,y:e.y-50,text:'+'+got+' OMVALG',color:'#e9b75a',life:1.4});}
+    return out;
+  };
+  const exploreNew=Game.prototype.explore;
+  Game.prototype.explore=function(take){
+    const r=this.run,site=r&&r.map.sites.find(s=>s.id===r.activeSite),wasClaimed=site&&site.claimed,out=exploreNew.call(this,take);
+    if(take&&site&&site.type==='nest'&&!wasClaimed&&site.claimed){
+      if(r.species==='oviraptor'&&FEATURES.nestEggs){const got=this.addRerolls(1);if(got)r.effects.push({x:site.x,y:site.y-50,text:'+'+got+' OMVALG',color:'#edd0a0',life:1.6});}
+      const heal=fx(r,'eggHeal');if(heal){const before=r.health;r.health=Math.min(r.maxHealth,r.health+heal);r.stats.healing+=r.health-before;}
+    }
+    return out;
+  };
   if (RECORDS) RECORDS.install({ Game, LEVELS, PLAYER_SPECIES, MUTATIONS });
-  return { TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  return { NEW_PLAYERS, NEW_NPCS, STATIC_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
 });
