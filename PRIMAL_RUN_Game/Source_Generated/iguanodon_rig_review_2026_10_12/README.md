@@ -1,11 +1,14 @@
-# Iguanodon rig review — AFVIST
+# Iguanodon rig review — godkendt østdesign og nye retninger
 
-Læs [kvalitetsrapporten](QUALITY_REPORT.md). Opgavens Definition of Done er
-ikke opfyldt. Ingen af disse billeder er godkendt til spillet.
+Aktuelt: [fire enkeltposer N/S/W/E](cardinal_review/REVIEW.md), med uændret,
+visuelt godkendt østdesign og tre nye retninger til review. Intet er integreret.
+
+Den oprindelige animationsopgaves Definition of Done er ikke opfyldt.
+Læs [kvalitetsrapporten](QUALITY_REPORT.md) for de tidligere afviste walk-forsøg.
 
 Efter Jonas' afvisning af hovedets artsgenkendelighed er et enkelt nyt
-[hovedstudie](head_revision/REVIEW.md) vedlagt. Det er fortsat ikke godkendt;
-før/efter og de præcise begrænsninger står i studiets rapport.
+[hovedstudie](head_revision/REVIEW.md) vedlagt. Jonas har siden godkendt
+det højre østdesign som reference. Før/efter og rig-begrænsningerne er bevaret.
 
 - Root-mappens 24 walk-frames er det mindst fejlende v1-forsøg, ikke et godkendt sæt.
 - `rejected_v1/` og `rejected_v2/` indeholder begge bevarede forsøg.

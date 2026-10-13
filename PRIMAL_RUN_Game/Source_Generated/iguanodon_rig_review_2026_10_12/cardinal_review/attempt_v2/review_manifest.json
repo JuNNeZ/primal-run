@@ -1,0 +1,175 @@
+[
+  {
+    "source": "../source_N_v2.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      7,
+      7,
+      1247,
+      1247
+    ],
+    "sample_step": 10,
+    "sample_phase": [
+      5,
+      5
+    ],
+    "source_anchor": [
+      627,
+      627
+    ],
+    "registration_offset": [
+      10,
+      10
+    ],
+    "alpha_threshold": 192,
+    "reused_byte_identical": false,
+    "visual_design_approved": false,
+    "file": "iguanodon_walk_N_000.png",
+    "direction": "N",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source_sha256": "18099f678fa63f22d682c75d24c124198f948a844956b718647c73b1ffb5bf53",
+    "export_sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "purpose": "One static direction study. Frame000 naming matches the pose guide only."
+  },
+  {
+    "source": "../source_S_v2.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      7,
+      7,
+      1247,
+      1247
+    ],
+    "sample_step": 10,
+    "sample_phase": [
+      5,
+      5
+    ],
+    "source_anchor": [
+      627,
+      627
+    ],
+    "registration_offset": [
+      10,
+      10
+    ],
+    "alpha_threshold": 192,
+    "reused_byte_identical": false,
+    "visual_design_approved": false,
+    "file": "iguanodon_walk_S_000.png",
+    "direction": "S",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source_sha256": "505c310830cd745fa66c1b791aa68a94b844ea704c2d366534a0ed20085fb12c",
+    "export_sha256": "cb29e7c689e9b62af285065d88a8b1367ca96c7495d26f4c185fbf8ef80890e8",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "purpose": "One static direction study. Frame000 naming matches the pose guide only."
+  },
+  {
+    "source": "../source_W_v2.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      7,
+      7,
+      1247,
+      1247
+    ],
+    "sample_step": 10,
+    "sample_phase": [
+      5,
+      5
+    ],
+    "source_anchor": [
+      627,
+      627
+    ],
+    "registration_offset": [
+      10,
+      10
+    ],
+    "alpha_threshold": 192,
+    "reused_byte_identical": false,
+    "visual_design_approved": false,
+    "file": "iguanodon_walk_W_000.png",
+    "direction": "W",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source_sha256": "6d2ca5ebbdb7471ca62054e824fabe1fb086f661f1a4ac05d4de69c538820189",
+    "export_sha256": "d19d2cb18bdd72563232e2b8fff9a7da6678aa3081540c7b8d909f77ff3a97c6",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "purpose": "One static direction study. Frame000 naming matches the pose guide only."
+  },
+  {
+    "source": "../../head_revision/iguanodon_walk_E_000.png",
+    "reused_byte_identical": true,
+    "visual_design_approved": true,
+    "approved_by": "Jonas / user",
+    "file": "iguanodon_walk_E_000.png",
+    "direction": "E",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "body_anchor": [
+      72,
+      72
+    ],
+    "source_sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e",
+    "export_sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "purpose": "One static direction study. Frame000 naming matches the pose guide only."
+  }
+]

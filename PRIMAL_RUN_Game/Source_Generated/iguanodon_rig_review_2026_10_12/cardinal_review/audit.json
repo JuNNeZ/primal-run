@@ -1,0 +1,54 @@
+{
+  "directions": {
+    "N": {
+      "technical_export": "PASS",
+      "candidate_pixels_outside_2px": 4,
+      "guide_pixels_outside_2px": 188,
+      "individual_errors": [
+        "iguanodon_walk_N_000: bbox size differs from the rig by 13% (scale or angle changed)",
+        "iguanodon_walk_N_000: legs do not follow the rig pose (leg band 0.56, need 0.7)"
+      ],
+      "visual_design_approved": false
+    },
+    "S": {
+      "technical_export": "PASS",
+      "candidate_pixels_outside_2px": 159,
+      "guide_pixels_outside_2px": 104,
+      "individual_errors": [
+        "iguanodon_walk_S_000: bbox centre 4.5 px from the rig (camera or anchor moved)",
+        "iguanodon_walk_S_000: centroid 3.7 px from the rig (anchor 72,72 moved)",
+        "iguanodon_walk_S_000: legs do not follow the rig pose (leg band 0.54, need 0.7)"
+      ],
+      "visual_design_approved": false
+    },
+    "W": {
+      "technical_export": "PASS",
+      "candidate_pixels_outside_2px": 76,
+      "guide_pixels_outside_2px": 152,
+      "individual_errors": [
+        "iguanodon_walk_W_000: centroid 4.2 px from the rig (anchor 72,72 moved)"
+      ],
+      "visual_design_approved": false
+    },
+    "E": {
+      "technical_export": "PASS",
+      "candidate_pixels_outside_2px": 12,
+      "guide_pixels_outside_2px": 40,
+      "individual_errors": [],
+      "visual_design_approved": true
+    }
+  },
+  "frame_count": 4,
+  "validator_exit_code": 1,
+  "missing_animation_frames": 20,
+  "pose_and_direction_errors": [
+    "iguanodon_walk_S_000: bbox centre 4.5 px from the rig (camera or anchor moved)",
+    "iguanodon_walk_S_000: centroid 3.7 px from the rig (anchor 72,72 moved)",
+    "iguanodon_walk_S_000: legs do not follow the rig pose (leg band 0.54, need 0.7)",
+    "iguanodon_walk_N_000: bbox size differs from the rig by 13% (scale or angle changed)",
+    "iguanodon_walk_N_000: legs do not follow the rig pose (leg band 0.56, need 0.7)",
+    "iguanodon_walk_W_000: centroid 4.2 px from the rig (anchor 72,72 moved)"
+  ],
+  "E_reused_byte_identical": true,
+  "animation_ready": false
+}

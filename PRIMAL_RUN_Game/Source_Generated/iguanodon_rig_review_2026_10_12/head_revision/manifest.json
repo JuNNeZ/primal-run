@@ -42,5 +42,8 @@
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "purpose": "One anatomical head study; not an animation or approved replacement."
+  "purpose": "User-approved East appearance reference; no animation or integration approval.",
+  "visual_design_approved": true,
+  "approved_by": "Jonas / user",
+  "approval_record": "../cardinal_review/approval.json"
 }

@@ -1,0 +1,95 @@
+{
+ "species": "iguanodon",
+ "rig": true,
+ "limits": {
+  "margin": 2,
+  "silhouette": 0.85,
+  "bbox_centre": 3.0,
+  "bbox_size": 0.1,
+  "centroid": 3.0,
+  "leg_band": 0.7,
+  "leg_phase": 0.03,
+  "leg_motion": 0.5,
+  "frozen": 0.004,
+  "outline_motion": 0.07,
+  "loop_seam": 3.0,
+  "mirror": 0.8,
+  "pair_size": 0.1,
+  "small_px": 3,
+  "aspect": 0.12,
+  "drift": 4.0
+ },
+ "errors": [
+  "iguanodon_walk_S_001: missing",
+  "iguanodon_walk_S_002: missing",
+  "iguanodon_walk_S_003: missing",
+  "iguanodon_walk_S_004: missing",
+  "iguanodon_walk_S_005: missing",
+  "iguanodon_walk_N_001: missing",
+  "iguanodon_walk_N_002: missing",
+  "iguanodon_walk_N_003: missing",
+  "iguanodon_walk_N_004: missing",
+  "iguanodon_walk_N_005: missing",
+  "iguanodon_walk_E_001: missing",
+  "iguanodon_walk_E_002: missing",
+  "iguanodon_walk_E_003: missing",
+  "iguanodon_walk_E_004: missing",
+  "iguanodon_walk_E_005: missing",
+  "iguanodon_walk_W_001: missing",
+  "iguanodon_walk_W_002: missing",
+  "iguanodon_walk_W_003: missing",
+  "iguanodon_walk_W_004: missing",
+  "iguanodon_walk_W_005: missing",
+  "iguanodon_walk_S_000: bbox centre 4.5 px from the rig (camera or anchor moved)",
+  "iguanodon_walk_S_000: centroid 3.7 px from the rig (anchor 72,72 moved)",
+  "iguanodon_walk_S_000: legs do not follow the rig pose (leg band 0.54, need 0.7)",
+  "iguanodon_walk_N_000: bbox size differs from the rig by 28% (scale or angle changed)",
+  "iguanodon_walk_N_000: legs do not follow the rig pose (leg band 0.18, need 0.7)",
+  "iguanodon_walk_W_000: centroid 4.2 px from the rig (anchor 72,72 moved)",
+  "iguanodon_walk_000: N and S differ 22% more in size than they should (same camera expected)"
+ ],
+ "warnings": [],
+ "metrics": {
+  "iguanodon_walk_S_000": {
+   "silhouette_precision": 0.9289,
+   "silhouette_recall": 0.9521,
+   "bbox_centre_px": 4.5,
+   "bbox_w": 0.0741,
+   "bbox_h": 0.0714,
+   "centroid_px": 3.6691,
+   "leg_band": 0.5403
+  },
+  "iguanodon_walk_N_000": {
+   "silhouette_precision": 0.9962,
+   "silhouette_recall": 0.8788,
+   "bbox_centre_px": 1.5811,
+   "bbox_w": 0.2778,
+   "bbox_h": 0.0097,
+   "centroid_px": 0.569,
+   "leg_band": 0.1782
+  },
+  "iguanodon_walk_E_000": {
+   "silhouette_precision": 0.9948,
+   "silhouette_recall": 0.9823,
+   "bbox_centre_px": 2.0616,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0217,
+   "centroid_px": 2.0563,
+   "leg_band": 0.9314
+  },
+  "iguanodon_walk_W_000": {
+   "silhouette_precision": 0.9644,
+   "silhouette_recall": 0.9308,
+   "bbox_centre_px": 2.5,
+   "bbox_w": 0.0656,
+   "bbox_h": 0.0222,
+   "centroid_px": 4.1749,
+   "leg_band": 0.799
+  },
+  "iguanodon_walk_000": {
+   "w_vs_mirrored_e": 0.9438,
+   "e_width_over_s_height": 1.1048,
+   "reference": 1.2449
+  }
+ }
+}

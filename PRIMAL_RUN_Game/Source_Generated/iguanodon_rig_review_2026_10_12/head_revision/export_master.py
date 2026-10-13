@@ -37,6 +37,11 @@ manifest = dict(file=output.name, source=source.name,
                 size=[144, 144], alpha_threshold=192, status='prototype_static',
                 production_approved=False, animation_ready=False,
                 purpose='One anatomical head study; not an animation or approved replacement.')
+approval = HERE.parent / 'cardinal_review/approval.json'
+if approval.exists():
+    manifest.update(visual_design_approved=True, approved_by='Jonas / user',
+                    approval_record='../cardinal_review/approval.json',
+                    purpose='User-approved East appearance reference; no animation or integration approval.')
 (HERE / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
 old = Image.open(HERE.parent / output.name).convert('RGBA')
 new = Image.fromarray(canvas)

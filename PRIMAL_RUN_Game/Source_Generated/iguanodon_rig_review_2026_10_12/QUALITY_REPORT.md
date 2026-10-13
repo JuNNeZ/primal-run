@@ -7,8 +7,10 @@ animationer er ikke påbegyndt, fordi opgaven kræver godkendt walk først.
 
 Efterfølgende feedback: Jonas afviste hovedets artsgenkendelighed. Et enkelt
 nyt E_000-hovedstudie er bevaret under `head_revision/`, med før/efter,
-uændret validator og separat rapport. Studiet har ingen individuelle
-validatorfejl, men består ikke den præcise 2 px-regel og er ikke godkendt.
+uændret validator og separat rapport. Jonas har siden visuelt godkendt
+det højre østdesign og bedt om fire enkeltretninger først. De er leveret
+under `cardinal_review/`, med samme godkendte øst-PNG. Hovedstudiet har ingen
+individuelle validatorfejl, men består fortsat ikke den præcise 2 px-regel.
 Tallene nedenfor beskriver de to oprindelige 24-frame-forsøg; det nye studie
 tilføjer én revisionspose, ikke en ny unik animationstidsframe.
 

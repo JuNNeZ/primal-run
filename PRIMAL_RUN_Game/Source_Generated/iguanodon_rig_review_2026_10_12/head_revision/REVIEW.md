@@ -1,4 +1,10 @@
-# Hovedstudie efter Jonas' feedback — ikke godkendt
+# Hovedstudie efter Jonas' feedback — visuelt godkendt østdesign
+
+Senere godkendelse: Jonas har godkendt højre/øst-spriten og bedt om fire
+enkeltretninger ud fra skelettet først. PNG'en er bevaret uændret og genbruges
+i `../cardinal_review/`. Den følgende rapport beskriver afprøvningen før
+godkendelsen; rig-afvigelserne består fortsat. Godkendelsen gælder udseendet,
+ikke animation, dispensation fra rig-krav eller integration.
 
 Jonas kunne ikke genkende den tidligere sprite som Iguanodon uden den store
 klo. Feedbacken behandles som en afvisning af hoveddesignet, ikke som en
