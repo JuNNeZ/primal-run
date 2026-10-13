@@ -1,0 +1,85 @@
+{
+ "species": "iguanodon",
+ "rig": true,
+ "limits": {
+  "margin": 2,
+  "silhouette": 0.85,
+  "bbox_centre": 3.0,
+  "bbox_size": 0.1,
+  "centroid": 3.0,
+  "leg_band": 0.7,
+  "leg_phase": 0.03,
+  "leg_motion": 0.5,
+  "frozen": 0.004,
+  "outline_motion": 0.07,
+  "loop_seam": 3.0,
+  "mirror": 0.8,
+  "pair_size": 0.1,
+  "small_px": 3,
+  "aspect": 0.12,
+  "drift": 4.0
+ },
+ "errors": [],
+ "warnings": [],
+ "metrics": {
+  "iguanodon_attack_E_000": {
+   "silhouette_precision": 0.9958,
+   "silhouette_recall": 0.991,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0496,
+   "bbox_h": 0.0667,
+   "centroid_px": 1.5105,
+   "leg_band": 0.9797
+  },
+  "iguanodon_attack_E_001": {
+   "silhouette_precision": 0.9962,
+   "silhouette_recall": 0.9978,
+   "bbox_centre_px": 2.5,
+   "bbox_w": 0.0084,
+   "bbox_h": 0.0435,
+   "centroid_px": 2.0227,
+   "leg_band": 1.0,
+   "change_from_previous": 0.7942
+  },
+  "iguanodon_attack_E_002": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9929,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0496,
+   "bbox_h": 0.0444,
+   "centroid_px": 0.5507,
+   "leg_band": 0.9507,
+   "change_from_previous": 0.7435
+  },
+  "iguanodon_attack_E_003": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9269,
+   "bbox_centre_px": 2.6926,
+   "bbox_w": 0.088,
+   "bbox_h": 0.0889,
+   "centroid_px": 1.7835,
+   "leg_band": 0.8636,
+   "change_from_previous": 0.859
+  },
+  "iguanodon_attack_E_004": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.988,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0645,
+   "bbox_h": 0.0444,
+   "centroid_px": 0.5208,
+   "leg_band": 0.9766,
+   "change_from_previous": 0.7184
+  },
+  "iguanodon_attack_E_005": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9896,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0444,
+   "centroid_px": 0.2108,
+   "leg_band": 0.9747,
+   "change_from_previous": 0.714
+  }
+ }
+}

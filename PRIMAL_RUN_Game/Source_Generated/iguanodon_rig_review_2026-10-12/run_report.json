@@ -1,0 +1,375 @@
+{
+ "species": "iguanodon",
+ "rig": true,
+ "limits": {
+  "margin": 2,
+  "silhouette": 0.85,
+  "bbox_centre": 3.0,
+  "bbox_size": 0.1,
+  "centroid": 3.0,
+  "leg_band": 0.7,
+  "leg_phase": 0.03,
+  "leg_motion": 0.5,
+  "frozen": 0.004,
+  "outline_motion": 0.07,
+  "loop_seam": 3.0,
+  "mirror": 0.8,
+  "pair_size": 0.1,
+  "small_px": 3,
+  "aspect": 0.12,
+  "drift": 4.0
+ },
+ "errors": [
+  "iguanodon_run_W_002: bbox size differs from the rig by 10% (scale or angle changed)",
+  "iguanodon_run_002: W and E differ 10% more in size than they should (same camera expected)"
+ ],
+ "warnings": [],
+ "metrics": {
+  "iguanodon_run_S_000": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9973,
+   "bbox_centre_px": 1.118,
+   "bbox_w": 0.0556,
+   "bbox_h": 0.0404,
+   "centroid_px": 0.4714,
+   "leg_band": 0.9864,
+   "leg_phase_best": 0,
+   "leg_phase_own": 0.9801,
+   "leg_phase_top": 0.9801
+  },
+  "iguanodon_run_S_001": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.979,
+   "bbox_centre_px": 1.0,
+   "bbox_w": 0.0741,
+   "bbox_h": 0.0594,
+   "centroid_px": 0.5826,
+   "leg_band": 0.9854,
+   "leg_phase_best": 1,
+   "leg_phase_own": 0.9614,
+   "leg_phase_top": 0.9614,
+   "change_from_previous": 0.7197
+  },
+  "iguanodon_run_S_002": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9968,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0741,
+   "bbox_h": 0.0396,
+   "centroid_px": 0.2848,
+   "leg_band": 0.9668,
+   "leg_phase_best": 2,
+   "leg_phase_own": 0.8994,
+   "leg_phase_top": 0.8994,
+   "change_from_previous": 0.8589
+  },
+  "iguanodon_run_S_003": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9936,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0741,
+   "bbox_h": 0.0505,
+   "centroid_px": 0.2241,
+   "leg_band": 0.9773,
+   "leg_phase_best": 3,
+   "leg_phase_own": 0.9404,
+   "leg_phase_top": 0.9404,
+   "change_from_previous": 0.8371
+  },
+  "iguanodon_run_S_004": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9982,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0741,
+   "bbox_h": 0.0495,
+   "centroid_px": 0.1263,
+   "leg_band": 1.0,
+   "leg_phase_best": 4,
+   "leg_phase_own": 0.9711,
+   "leg_phase_top": 0.9711,
+   "change_from_previous": 0.8065
+  },
+  "iguanodon_run_S_005": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9982,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0741,
+   "bbox_h": 0.0495,
+   "centroid_px": 0.2173,
+   "leg_band": 0.9953,
+   "leg_phase_best": 5,
+   "leg_phase_own": 0.9591,
+   "leg_phase_top": 0.9591,
+   "change_from_previous": 0.7969
+  },
+  "iguanodon_run_N_000": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.999,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0,
+   "bbox_h": 0.0196,
+   "centroid_px": 0.5696,
+   "leg_band": 1.0,
+   "leg_phase_best": 0,
+   "leg_phase_own": 0.981,
+   "leg_phase_top": 0.981
+  },
+  "iguanodon_run_N_001": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0,
+   "bbox_h": 0.0198,
+   "centroid_px": 0.6522,
+   "leg_band": 1.0,
+   "leg_phase_best": 1,
+   "leg_phase_own": 0.9858,
+   "leg_phase_top": 0.9858,
+   "change_from_previous": 0.6894
+  },
+  "iguanodon_run_N_002": {
+   "silhouette_precision": 0.9973,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0,
+   "bbox_h": 0.0297,
+   "centroid_px": 1.4608,
+   "leg_band": 1.0,
+   "leg_phase_best": 2,
+   "leg_phase_own": 0.9345,
+   "leg_phase_top": 0.9345,
+   "change_from_previous": 0.7657
+  },
+  "iguanodon_run_N_003": {
+   "silhouette_precision": 0.9982,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0185,
+   "bbox_h": 0.0196,
+   "centroid_px": 0.0903,
+   "leg_band": 1.0,
+   "leg_phase_best": 3,
+   "leg_phase_own": 0.9504,
+   "leg_phase_top": 0.9504,
+   "change_from_previous": 0.7617
+  },
+  "iguanodon_run_N_004": {
+   "silhouette_precision": 0.9982,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 2.0616,
+   "bbox_w": 0.0185,
+   "bbox_h": 0.0,
+   "centroid_px": 0.5336,
+   "leg_band": 1.0,
+   "leg_phase_best": 4,
+   "leg_phase_own": 0.9578,
+   "leg_phase_top": 0.9578,
+   "change_from_previous": 0.6618
+  },
+  "iguanodon_run_N_005": {
+   "silhouette_precision": 0.9982,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0,
+   "bbox_h": 0.0297,
+   "centroid_px": 0.2627,
+   "leg_band": 1.0,
+   "leg_phase_best": 5,
+   "leg_phase_own": 0.9929,
+   "leg_phase_top": 0.9929,
+   "change_from_previous": 0.7001
+  },
+  "iguanodon_run_E_000": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 1.0,
+   "bbox_w": 0.0,
+   "bbox_h": 0.0,
+   "centroid_px": 0.699,
+   "leg_band": 1.0,
+   "leg_phase_best": 0,
+   "leg_phase_own": 1.0,
+   "leg_phase_top": 1.0
+  },
+  "iguanodon_run_E_001": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.7071,
+   "bbox_w": 0.0082,
+   "bbox_h": 0.0222,
+   "centroid_px": 0.653,
+   "leg_band": 1.0,
+   "leg_phase_best": 1,
+   "leg_phase_own": 0.9921,
+   "leg_phase_top": 0.9921,
+   "change_from_previous": 0.7282
+  },
+  "iguanodon_run_E_002": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0082,
+   "bbox_h": 0.0,
+   "centroid_px": 0.2634,
+   "leg_band": 1.0,
+   "leg_phase_best": 2,
+   "leg_phase_own": 1.0,
+   "leg_phase_top": 1.0,
+   "change_from_previous": 0.66
+  },
+  "iguanodon_run_E_003": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0082,
+   "bbox_h": 0.0,
+   "centroid_px": 0.1743,
+   "leg_band": 1.0,
+   "leg_phase_best": 3,
+   "leg_phase_own": 0.9971,
+   "leg_phase_top": 0.9971,
+   "change_from_previous": 0.6439
+  },
+  "iguanodon_run_E_004": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0,
+   "bbox_h": 0.0,
+   "centroid_px": 0.1345,
+   "leg_band": 1.0,
+   "leg_phase_best": 4,
+   "leg_phase_own": 0.9975,
+   "leg_phase_top": 0.9975,
+   "change_from_previous": 0.6892
+  },
+  "iguanodon_run_E_005": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0082,
+   "bbox_h": 0.0,
+   "centroid_px": 0.3695,
+   "leg_band": 1.0,
+   "leg_phase_best": 5,
+   "leg_phase_own": 1.0,
+   "leg_phase_top": 1.0,
+   "change_from_previous": 0.682
+  },
+  "iguanodon_run_W_000": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9915,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0444,
+   "centroid_px": 0.254,
+   "leg_band": 0.9636,
+   "leg_phase_best": 0,
+   "leg_phase_own": 0.9091,
+   "leg_phase_top": 0.9091
+  },
+  "iguanodon_run_W_001": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.988,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0652,
+   "centroid_px": 0.5397,
+   "leg_band": 0.9762,
+   "leg_phase_best": 1,
+   "leg_phase_own": 0.9378,
+   "leg_phase_top": 0.9378,
+   "change_from_previous": 0.779
+  },
+  "iguanodon_run_W_002": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9637,
+   "bbox_centre_px": 1.5811,
+   "bbox_w": 0.0574,
+   "bbox_h": 0.1042,
+   "centroid_px": 1.027,
+   "leg_band": 0.899,
+   "leg_phase_best": 4,
+   "leg_phase_own": 0.8757,
+   "leg_phase_top": 0.892,
+   "change_from_previous": 0.6983
+  },
+  "iguanodon_run_W_003": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9821,
+   "bbox_centre_px": 0.7071,
+   "bbox_w": 0.041,
+   "bbox_h": 0.0652,
+   "centroid_px": 0.4445,
+   "leg_band": 0.9406,
+   "leg_phase_best": 3,
+   "leg_phase_own": 0.9147,
+   "leg_phase_top": 0.9147,
+   "change_from_previous": 0.7296
+  },
+  "iguanodon_run_W_004": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9901,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0667,
+   "centroid_px": 0.2509,
+   "leg_band": 0.9639,
+   "leg_phase_best": 4,
+   "leg_phase_own": 0.8947,
+   "leg_phase_top": 0.8947,
+   "change_from_previous": 0.6872
+  },
+  "iguanodon_run_W_005": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9928,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0465,
+   "centroid_px": 0.4016,
+   "leg_band": 0.967,
+   "leg_phase_best": 5,
+   "leg_phase_own": 0.9068,
+   "leg_phase_top": 0.9068,
+   "change_from_previous": 0.6749
+  },
+  "iguanodon_run_S": {
+   "leg_motion_ratio": 1.0376,
+   "outline_motion": 0.1744,
+   "loop_seam": 0.9891
+  },
+  "iguanodon_run_N": {
+   "leg_motion_ratio": 0.9289,
+   "outline_motion": 0.1619,
+   "loop_seam": 0.9483
+  },
+  "iguanodon_run_E": {
+   "leg_motion_ratio": 1.0,
+   "outline_motion": 0.1584,
+   "loop_seam": 1.1091
+  },
+  "iguanodon_run_W": {
+   "leg_motion_ratio": 1.0102,
+   "outline_motion": 0.1736,
+   "loop_seam": 1.1233
+  },
+  "iguanodon_run_000": {
+   "w_vs_mirrored_e": 0.8701
+  },
+  "iguanodon_run_001": {
+   "w_vs_mirrored_e": 0.9462
+  },
+  "iguanodon_run_002": {
+   "w_vs_mirrored_e": 0.904
+  },
+  "iguanodon_run_003": {
+   "w_vs_mirrored_e": 0.8853
+  },
+  "iguanodon_run_004": {
+   "w_vs_mirrored_e": 0.8749
+  },
+  "iguanodon_run_005": {
+   "w_vs_mirrored_e": 0.8523
+  }
+ }
+}

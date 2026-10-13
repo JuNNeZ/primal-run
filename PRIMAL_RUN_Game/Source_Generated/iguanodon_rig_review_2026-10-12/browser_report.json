@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "document": "standalone copied to /tmp",
+  "offline": true,
+  "externalRequests": [],
+  "pageErrors": [],
+  "stateDirections": [
+    {
+      "state": "idle",
+      "d": "S",
+      "frame": 1
+    },
+    {
+      "state": "idle",
+      "d": "N",
+      "frame": 1
+    },
+    {
+      "state": "idle",
+      "d": "E",
+      "frame": 1
+    },
+    {
+      "state": "idle",
+      "d": "W",
+      "frame": 1
+    },
+    {
+      "state": "walk",
+      "d": "S",
+      "frame": 1
+    },
+    {
+      "state": "walk",
+      "d": "N",
+      "frame": 1
+    },
+    {
+      "state": "walk",
+      "d": "E",
+      "frame": 1
+    },
+    {
+      "state": "walk",
+      "d": "W",
+      "frame": 1
+    },
+    {
+      "state": "run",
+      "d": "S",
+      "frame": 1
+    },
+    {
+      "state": "run",
+      "d": "N",
+      "frame": 1
+    },
+    {
+      "state": "run",
+      "d": "E",
+      "frame": 1
+    },
+    {
+      "state": "run",
+      "d": "W",
+      "frame": 1
+    },
+    {
+      "state": "attack",
+      "d": "S",
+      "frame": 1
+    },
+    {
+      "state": "attack",
+      "d": "N",
+      "frame": 1
+    },
+    {
+      "state": "attack",
+      "d": "E",
+      "frame": 1
+    },
+    {
+      "state": "attack",
+      "d": "W",
+      "frame": 1
+    },
+    {
+      "state": "hurt",
+      "d": "S",
+      "frame": 1
+    },
+    {
+      "state": "hurt",
+      "d": "N",
+      "frame": 1
+    },
+    {
+      "state": "hurt",
+      "d": "E",
+      "frame": 1
+    },
+    {
+      "state": "hurt",
+      "d": "W",
+      "frame": 1
+    },
+    {
+      "state": "death",
+      "d": "S",
+      "frame": 1
+    },
+    {
+      "state": "death",
+      "d": "N",
+      "frame": 1
+    },
+    {
+      "state": "death",
+      "d": "E",
+      "frame": 1
+    },
+    {
+      "state": "death",
+      "d": "W",
+      "frame": 1
+    }
+  ],
+  "death": {
+    "ready": true,
+    "frame": 5,
+    "name": "iguanodon_death_S_005",
+    "playing": false
+  },
+  "canvases": [
+    {
+      "id": "art",
+      "width": 576,
+      "changedPixels": 28464,
+      "smoothing": false
+    },
+    {
+      "id": "guide",
+      "width": 576,
+      "changedPixels": 24880,
+      "smoothing": false
+    }
+  ],
+  "fileProtocolTest": "Managed Chromium blocks file://; content tested through an intercepted document with all network assets blocked.",
+  "finalDocumentVerified": true,
+  "finalDocumentStatus": {
+    "rigValidator": "PASS",
+    "strictContourFailedFrames": 115
+  }
+}

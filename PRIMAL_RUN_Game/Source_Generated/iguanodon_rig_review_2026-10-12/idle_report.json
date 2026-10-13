@@ -1,0 +1,233 @@
+{
+ "species": "iguanodon",
+ "rig": true,
+ "limits": {
+  "margin": 2,
+  "silhouette": 0.85,
+  "bbox_centre": 3.0,
+  "bbox_size": 0.1,
+  "centroid": 3.0,
+  "leg_band": 0.7,
+  "leg_phase": 0.03,
+  "leg_motion": 0.5,
+  "frozen": 0.004,
+  "outline_motion": 0.07,
+  "loop_seam": 3.0,
+  "mirror": 0.8,
+  "pair_size": 0.1,
+  "small_px": 3,
+  "aspect": 0.12,
+  "drift": 4.0
+ },
+ "errors": [
+  "iguanodon_idle_S_000: silhouette differs from the rig (precision 0.83, recall 0.99, need 0.85)",
+  "iguanodon_idle_S_000: bbox centre 5.5 px from the rig (camera or anchor moved)",
+  "iguanodon_idle_S_000: bbox size differs from the rig by 13% (scale or angle changed)",
+  "iguanodon_idle_S_000: centroid 6.4 px from the rig (anchor 72,72 moved)",
+  "iguanodon_idle_S_001: silhouette differs from the rig (precision 0.83, recall 0.99, need 0.85)",
+  "iguanodon_idle_S_001: bbox centre 6.1 px from the rig (camera or anchor moved)",
+  "iguanodon_idle_S_001: bbox size differs from the rig by 15% (scale or angle changed)",
+  "iguanodon_idle_S_001: centroid 6.5 px from the rig (anchor 72,72 moved)",
+  "iguanodon_idle_S_002: silhouette differs from the rig (precision 0.83, recall 0.99, need 0.85)",
+  "iguanodon_idle_S_002: bbox centre 5.5 px from the rig (camera or anchor moved)",
+  "iguanodon_idle_S_002: bbox size differs from the rig by 13% (scale or angle changed)",
+  "iguanodon_idle_S_002: centroid 6.2 px from the rig (anchor 72,72 moved)",
+  "iguanodon_idle_S_003: silhouette differs from the rig (precision 0.79, recall 0.99, need 0.85)",
+  "iguanodon_idle_S_003: bbox centre 7.5 px from the rig (camera or anchor moved)",
+  "iguanodon_idle_S_003: bbox size differs from the rig by 13% (scale or angle changed)",
+  "iguanodon_idle_S_003: centroid 8.2 px from the rig (anchor 72,72 moved)",
+  "iguanodon_idle_001: N and S differ 11% more in size than they should (same camera expected)",
+  "iguanodon_idle_001: E length / S length is 1.09, reference 1.24 (different camera tilt between directions)"
+ ],
+ "warnings": [],
+ "metrics": {
+  "iguanodon_idle_S_000": {
+   "silhouette_precision": 0.8297,
+   "silhouette_recall": 0.9935,
+   "bbox_centre_px": 5.5227,
+   "bbox_w": 0.1296,
+   "bbox_h": 0.1313,
+   "centroid_px": 6.4444,
+   "leg_band": 0.9343
+  },
+  "iguanodon_idle_S_001": {
+   "silhouette_precision": 0.8274,
+   "silhouette_recall": 0.993,
+   "bbox_centre_px": 6.0828,
+   "bbox_w": 0.1481,
+   "bbox_h": 0.1429,
+   "centroid_px": 6.5188,
+   "leg_band": 0.9293,
+   "change_from_previous": 0.3126
+  },
+  "iguanodon_idle_S_002": {
+   "silhouette_precision": 0.8312,
+   "silhouette_recall": 0.9926,
+   "bbox_centre_px": 5.5227,
+   "bbox_w": 0.1296,
+   "bbox_h": 0.1313,
+   "centroid_px": 6.2058,
+   "leg_band": 0.955,
+   "change_from_previous": 0.3487
+  },
+  "iguanodon_idle_S_003": {
+   "silhouette_precision": 0.7909,
+   "silhouette_recall": 0.9879,
+   "bbox_centre_px": 7.5166,
+   "bbox_w": 0.1296,
+   "bbox_h": 0.1313,
+   "centroid_px": 8.209,
+   "leg_band": 0.8788,
+   "change_from_previous": 0.4466
+  },
+  "iguanodon_idle_N_000": {
+   "silhouette_precision": 0.9982,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 1.118,
+   "bbox_w": 0.0185,
+   "bbox_h": 0.0392,
+   "centroid_px": 1.4008,
+   "leg_band": 1.0
+  },
+  "iguanodon_idle_N_001": {
+   "silhouette_precision": 0.9982,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.7071,
+   "bbox_w": 0.0185,
+   "bbox_h": 0.0291,
+   "centroid_px": 1.176,
+   "leg_band": 1.0,
+   "change_from_previous": 0.3783
+  },
+  "iguanodon_idle_N_002": {
+   "silhouette_precision": 0.9978,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 1.118,
+   "bbox_w": 0.0185,
+   "bbox_h": 0.0392,
+   "centroid_px": 1.0112,
+   "leg_band": 1.0,
+   "change_from_previous": 0.3873
+  },
+  "iguanodon_idle_N_003": {
+   "silhouette_precision": 0.9859,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 2.0616,
+   "bbox_w": 0.0185,
+   "bbox_h": 0.0588,
+   "centroid_px": 2.015,
+   "leg_band": 1.0,
+   "change_from_previous": 0.5662
+  },
+  "iguanodon_idle_E_000": {
+   "silhouette_precision": 0.9986,
+   "silhouette_recall": 0.9986,
+   "bbox_centre_px": 2.0616,
+   "bbox_w": 0.0,
+   "bbox_h": 0.0222,
+   "centroid_px": 1.7179,
+   "leg_band": 0.9947
+  },
+  "iguanodon_idle_E_001": {
+   "silhouette_precision": 0.9977,
+   "silhouette_recall": 0.9991,
+   "bbox_centre_px": 2.0616,
+   "bbox_w": 0.0,
+   "bbox_h": 0.0222,
+   "centroid_px": 1.6953,
+   "leg_band": 0.9897,
+   "change_from_previous": 0.2674
+  },
+  "iguanodon_idle_E_002": {
+   "silhouette_precision": 0.9986,
+   "silhouette_recall": 0.9968,
+   "bbox_centre_px": 2.0616,
+   "bbox_w": 0.0,
+   "bbox_h": 0.0222,
+   "centroid_px": 1.6615,
+   "leg_band": 0.9897,
+   "change_from_previous": 0.2966
+  },
+  "iguanodon_idle_E_003": {
+   "silhouette_precision": 0.9986,
+   "silhouette_recall": 0.9968,
+   "bbox_centre_px": 2.0616,
+   "bbox_w": 0.0,
+   "bbox_h": 0.0222,
+   "centroid_px": 1.7098,
+   "leg_band": 0.9949,
+   "change_from_previous": 0.3331
+  },
+  "iguanodon_idle_W_000": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0164,
+   "bbox_h": 0.0222,
+   "centroid_px": 0.705,
+   "leg_band": 1.0
+  },
+  "iguanodon_idle_W_001": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0164,
+   "bbox_h": 0.0222,
+   "centroid_px": 0.4849,
+   "leg_band": 1.0,
+   "change_from_previous": 0.2559
+  },
+  "iguanodon_idle_W_002": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0164,
+   "bbox_h": 0.0222,
+   "centroid_px": 0.3766,
+   "leg_band": 1.0,
+   "change_from_previous": 0.2692
+  },
+  "iguanodon_idle_W_003": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 1.0,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0164,
+   "bbox_h": 0.0,
+   "centroid_px": 0.6208,
+   "leg_band": 1.0,
+   "change_from_previous": 0.3431
+  },
+  "iguanodon_idle_S": {
+   "loop_seam": 1.1493
+  },
+  "iguanodon_idle_N": {
+   "loop_seam": 1.3546
+  },
+  "iguanodon_idle_E": {
+   "loop_seam": 0.7804
+  },
+  "iguanodon_idle_W": {
+   "loop_seam": 1.0292
+  },
+  "iguanodon_idle_000": {
+   "w_vs_mirrored_e": 0.9982,
+   "e_width_over_s_height": 1.0893,
+   "reference": 1.2323
+  },
+  "iguanodon_idle_001": {
+   "w_vs_mirrored_e": 0.9955,
+   "e_width_over_s_height": 1.0893,
+   "reference": 1.2449
+  },
+  "iguanodon_idle_002": {
+   "w_vs_mirrored_e": 0.9977,
+   "e_width_over_s_height": 1.0893,
+   "reference": 1.2323
+  },
+  "iguanodon_idle_003": {
+   "w_vs_mirrored_e": 0.9982,
+   "e_width_over_s_height": 1.0893,
+   "reference": 1.2323
+  }
+ }
+}

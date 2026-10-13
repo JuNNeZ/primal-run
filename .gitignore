@@ -12,3 +12,6 @@ Thumbs.db
 
 # Local simulator output
 PRIMAL_RUN_Game/balance_runs/playstyle_*/runs.jsonl
+
+# Reproducible rig guide output; never runtime game art
+PRIMAL_RUN_Rig/

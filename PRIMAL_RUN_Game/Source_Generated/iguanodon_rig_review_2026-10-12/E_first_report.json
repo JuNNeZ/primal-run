@@ -1,0 +1,108 @@
+{
+ "species": "iguanodon",
+ "rig": true,
+ "limits": {
+  "margin": 2,
+  "silhouette": 0.85,
+  "bbox_centre": 3.0,
+  "bbox_size": 0.1,
+  "centroid": 3.0,
+  "leg_band": 0.7,
+  "leg_phase": 0.03,
+  "leg_motion": 0.5,
+  "frozen": 0.004,
+  "outline_motion": 0.07,
+  "loop_seam": 3.0,
+  "mirror": 0.8,
+  "pair_size": 0.1,
+  "small_px": 3,
+  "aspect": 0.12,
+  "drift": 4.0
+ },
+ "errors": [],
+ "warnings": [],
+ "metrics": {
+  "iguanodon_walk_E_000": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9929,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0652,
+   "centroid_px": 0.4981,
+   "leg_band": 0.9755,
+   "leg_phase_best": 0,
+   "leg_phase_own": 0.9481,
+   "leg_phase_top": 0.9481
+  },
+  "iguanodon_walk_E_001": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9915,
+   "bbox_centre_px": 0.5,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0652,
+   "centroid_px": 0.2273,
+   "leg_band": 0.9755,
+   "leg_phase_best": 1,
+   "leg_phase_own": 0.9379,
+   "leg_phase_top": 0.9379,
+   "change_from_previous": 0.7956
+  },
+  "iguanodon_walk_E_002": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9946,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0496,
+   "bbox_h": 0.0909,
+   "centroid_px": 0.7165,
+   "leg_band": 0.99,
+   "leg_phase_best": 2,
+   "leg_phase_own": 0.9325,
+   "leg_phase_top": 0.9325,
+   "change_from_previous": 0.6563
+  },
+  "iguanodon_walk_E_003": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9909,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0444,
+   "centroid_px": 0.1981,
+   "leg_band": 0.9569,
+   "leg_phase_best": 3,
+   "leg_phase_own": 0.915,
+   "leg_phase_top": 0.915,
+   "change_from_previous": 0.7346
+  },
+  "iguanodon_walk_E_004": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.988,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0444,
+   "centroid_px": 0.5061,
+   "leg_band": 0.9312,
+   "leg_phase_best": 4,
+   "leg_phase_own": 0.9179,
+   "leg_phase_top": 0.9179,
+   "change_from_previous": 0.8257
+  },
+  "iguanodon_walk_E_005": {
+   "silhouette_precision": 1.0,
+   "silhouette_recall": 0.9916,
+   "bbox_centre_px": 0.0,
+   "bbox_w": 0.0496,
+   "bbox_h": 0.0444,
+   "centroid_px": 0.2391,
+   "leg_band": 0.9906,
+   "leg_phase_best": 5,
+   "leg_phase_own": 0.946,
+   "leg_phase_top": 0.946,
+   "change_from_previous": 0.712
+  },
+  "iguanodon_walk_E": {
+   "leg_motion_ratio": 1.0852,
+   "outline_motion": 0.1603,
+   "loop_seam": 1.0916
+  }
+ }
+}

@@ -1,0 +1,5018 @@
+{
+  "iguanodon_walk_E_000": {
+    "file": "iguanodon_walk_E_000.png",
+    "raw": "raw/iguanodon_walk_E_000_revision1.png",
+    "revision": 1,
+    "raw_sha256": "53087fea7bca7b3f869047c375bdef51baf16383b99bcdc83b68a0f76ae4d319",
+    "export_sha256": "de3ebf2856ea0442fee2e9cba62f2a5f861f7890083d650ed4764105b437b035",
+    "rig_sha256": "370b14e848facce9e0088a6773918cdedf19f159a1a60f50d609723e3114bcf0",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/iguanodon_walk_E_000_head_revision5.png",
+      "raw_sha256": "d3ebe843d27c35c97c0a87bc68fa9154931dc8bb9b22ca2bc85c4b38275c29ad",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        -21,
+        -21,
+        1275,
+        1275
+      ],
+      "stride": 9,
+      "sampling_offset": 4,
+      "source_landmark": [
+        627,
+        627
+      ],
+      "native_override": [
+        98,
+        49,
+        136,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_E_000.png",
+      "body_reused_sha256": "5ce87ee32cb67068c4cf204f6dd525ff02c0e0e53143547865b14333b4f7e214",
+      "export_sha256": "de3ebf2856ea0442fee2e9cba62f2a5f861f7890083d650ed4764105b437b035",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_E_001": {
+    "file": "iguanodon_walk_E_001.png",
+    "raw": "raw/iguanodon_walk_E_001_revision1.png",
+    "revision": 1,
+    "raw_sha256": "85ee30a5aa7ea293837fd3e96fbb22a1c4624c42d9c09e0eb112f01e5453d6a1",
+    "export_sha256": "ce5ff8a8779bfcb603c0c9b809407528b38f62e4845760768551185a86f0f6e9",
+    "rig_sha256": "bd4d611a3131ca75336f73c8db9e9f189f235e58fee3df5fd43dee438eef6e92",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_E_head_sheet.png",
+      "raw_sha256": "25f746d9e14a7e8db3630adb56ada189d9217b1203d98a2b02348cce000aba84",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        552,
+        40,
+        984,
+        472
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        768,
+        256
+      ],
+      "native_override": [
+        98,
+        49,
+        136,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_E_001.png",
+      "body_reused_sha256": "e4894f82778c747dd9202f7d71f756f209023cec24c36ffe7101e788ac780c40",
+      "export_sha256": "ce5ff8a8779bfcb603c0c9b809407528b38f62e4845760768551185a86f0f6e9",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_E_002": {
+    "file": "iguanodon_walk_E_002.png",
+    "raw": "raw/iguanodon_walk_E_002_revision1.png",
+    "revision": 1,
+    "raw_sha256": "6183f973b426be88e85a1aa1c0c161cafe4e1d1b2207c7a4172ae6646c91955a",
+    "export_sha256": "87f84d12d5d0286ffec8df077142c50cb5286d905e91bb5febe9f180b7390739",
+    "rig_sha256": "555910a7acda1cf37412d983a4ec9a6fddd558ef89de78294d11c986c1be33ff",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/iguanodon_walk_E_002_head_revision5.png",
+      "raw_sha256": "87b8c0c97090b69c8f6f0241b069bc30270c73edae099bd1e27af1b110a5c577",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        -21,
+        -21,
+        1275,
+        1275
+      ],
+      "stride": 9,
+      "sampling_offset": 4,
+      "source_landmark": [
+        627,
+        627
+      ],
+      "native_override": [
+        98,
+        49,
+        136,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_E_002.png",
+      "body_reused_sha256": "89d83d40dc45d4a4f6dad5b17b382dc683e0afd2bb9c42f4fd1bf666845a08cc",
+      "export_sha256": "87f84d12d5d0286ffec8df077142c50cb5286d905e91bb5febe9f180b7390739",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_E_003": {
+    "file": "iguanodon_walk_E_003.png",
+    "raw": "raw/iguanodon_walk_E_003_revision1.png",
+    "revision": 1,
+    "raw_sha256": "4b559ad89c9c5bd4c3004defb4ac38915f3763e5372709f9fae03a8126903639",
+    "export_sha256": "6c8e5499d1718c60233a2053f63918be7f5ac6dc633d772c25bc7644b8c44c56",
+    "rig_sha256": "2b49de5a55ab0eb80121724e9a31016c63fccb1ec350cbc55d0015a806d32593",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_E_head_sheet.png",
+      "raw_sha256": "25f746d9e14a7e8db3630adb56ada189d9217b1203d98a2b02348cce000aba84",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        40,
+        552,
+        472,
+        984
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        256,
+        768
+      ],
+      "native_override": [
+        98,
+        49,
+        136,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_E_003.png",
+      "body_reused_sha256": "356f537d413a710f5e46035403127b035df2030e3bb6d5f2eb4c754bc6a3205f",
+      "export_sha256": "6c8e5499d1718c60233a2053f63918be7f5ac6dc633d772c25bc7644b8c44c56",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_E_004": {
+    "file": "iguanodon_walk_E_004.png",
+    "raw": "raw/iguanodon_walk_E_004_revision1.png",
+    "revision": 1,
+    "raw_sha256": "86ac3a9c99f02471efc14c81c64f6de525e4d81ec54c661aada70d45a6b09343",
+    "export_sha256": "ba68ab6f9fa4028d22091e5e1f08fbdff8ebc72c6a923d2f53f815844cd7a621",
+    "rig_sha256": "dd6aad6cb34341b760456f77a22a10d702a6b53d0b33cfdad118d53306934bd1",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_E_head_sheet.png",
+      "raw_sha256": "25f746d9e14a7e8db3630adb56ada189d9217b1203d98a2b02348cce000aba84",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        552,
+        552,
+        984,
+        984
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        768,
+        768
+      ],
+      "native_override": [
+        98,
+        49,
+        136,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_E_004.png",
+      "body_reused_sha256": "119c8f711d42422546d4524b20afe7ef2f04fb12279b2bde397816e56bd4b765",
+      "export_sha256": "ba68ab6f9fa4028d22091e5e1f08fbdff8ebc72c6a923d2f53f815844cd7a621",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_E_005": {
+    "file": "iguanodon_walk_E_005.png",
+    "raw": "raw/iguanodon_walk_E_005_revision1.png",
+    "revision": 1,
+    "raw_sha256": "f6fc2b738091ec0256a8944ea434b00860c7172f5f586e62467a15c5b4fe76af",
+    "export_sha256": "d7258660fbd6c9d238ac662772c215c023b5755214a3196f175b48695ef5098a",
+    "rig_sha256": "f82abadc695ae6a586316e2411896f14ba001a9316a2e7d7fe621161c3269999",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_E_head_sheet.png",
+      "raw_sha256": "25f746d9e14a7e8db3630adb56ada189d9217b1203d98a2b02348cce000aba84",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        1064,
+        552,
+        1496,
+        984
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        1280,
+        768
+      ],
+      "native_override": [
+        98,
+        49,
+        136,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_E_005.png",
+      "body_reused_sha256": "d783f3eef0087c8a1e173eae1a4f6eb8011e3d7dcc34ae04696d69c51e05abdc",
+      "export_sha256": "d7258660fbd6c9d238ac662772c215c023b5755214a3196f175b48695ef5098a",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_S_000": {
+    "file": "iguanodon_walk_S_000.png",
+    "raw": "raw/iguanodon_walk_S_000_revision1.png",
+    "revision": 1,
+    "raw_sha256": "7cbb6bac82af3181746b6887297f0ceba4e57241ca5e4a31f8bd31a76abb848f",
+    "export_sha256": "591af375aec68eb4bef9f4f04701e88ba2f7451f34aa211dc6049286040fb011",
+    "rig_sha256": "961d8f0bf73292981953501f9de233764dd54cb6a82af4114b0eb278457d5350",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_S_head_sheet.png",
+      "raw_sha256": "496498fa2a0b863bae294b5cf3ecb3548c8a783e03312756d520c547acbf5575",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        40,
+        40,
+        472,
+        472
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        256,
+        256
+      ],
+      "native_override": [
+        60,
+        94,
+        86,
+        123
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_S_000.png",
+      "body_reused_sha256": "af518869c3bb7814d8f9332a7ac72db892f7d0cb6a4c3f137f9469dd650b4308",
+      "export_sha256": "591af375aec68eb4bef9f4f04701e88ba2f7451f34aa211dc6049286040fb011",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_S_001": {
+    "file": "iguanodon_walk_S_001.png",
+    "raw": "raw/iguanodon_walk_S_001_revision1.png",
+    "revision": 1,
+    "raw_sha256": "f3a7ced93e798e6de4335bacc71cdf7bd11d62c5e94e9146790c23e5ae1cc32c",
+    "export_sha256": "5936a4479e08c452381443dfd8153531bd51ad959fb6f7e8ec7069bd5f6b5a87",
+    "rig_sha256": "f2b9fd0355f97c173438971cc781eea4c673b98664ed3a3127f68a4160be28a9",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_S_head_sheet.png",
+      "raw_sha256": "496498fa2a0b863bae294b5cf3ecb3548c8a783e03312756d520c547acbf5575",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        552,
+        40,
+        984,
+        472
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        768,
+        256
+      ],
+      "native_override": [
+        60,
+        94,
+        86,
+        123
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_S_001.png",
+      "body_reused_sha256": "ed5ab857aabc7a2cd5f576d2f730e107cd0041b977fa64d63b5598ab33d79ca7",
+      "export_sha256": "5936a4479e08c452381443dfd8153531bd51ad959fb6f7e8ec7069bd5f6b5a87",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_S_002": {
+    "file": "iguanodon_walk_S_002.png",
+    "raw": "raw/iguanodon_walk_S_002_revision1.png",
+    "revision": 1,
+    "raw_sha256": "ddc20a020f1f768e0a8fe7ee5980ef6d184d04d7296a40de1d7ffcf19d43c524",
+    "export_sha256": "ad454836025c52074b721eabe9a2d4d41dc4e8e7ceb8f61d3e43e7a4c2e004a1",
+    "rig_sha256": "ad13982a04f656f6316ea104e2a0b28f49331a1e3405c5f6881869cf84c25f11",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_S_head_sheet.png",
+      "raw_sha256": "496498fa2a0b863bae294b5cf3ecb3548c8a783e03312756d520c547acbf5575",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        1064,
+        40,
+        1496,
+        472
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        1280,
+        256
+      ],
+      "native_override": [
+        60,
+        94,
+        86,
+        123
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_S_002.png",
+      "body_reused_sha256": "0137e08c51c50a427a9c8a4b3b578157c48fa4fe2d4fe341bd2c2540d97b7af6",
+      "export_sha256": "ad454836025c52074b721eabe9a2d4d41dc4e8e7ceb8f61d3e43e7a4c2e004a1",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_S_003": {
+    "file": "iguanodon_walk_S_003.png",
+    "raw": "raw/iguanodon_walk_S_003_revision1.png",
+    "revision": 1,
+    "raw_sha256": "c8af816864063555becc362577cb06d12eadce1c18ddd5b2bda15f6f92772824",
+    "export_sha256": "bc07ea45e9a8b33770dbedf5092320c55e3cb247eb3dae2ee3798dfb4ac39269",
+    "rig_sha256": "868393a4d5ac295cc0eb06eb01d451dadecc6ac6d4dfc2e99b2436bebf823ff7",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_S_head_sheet.png",
+      "raw_sha256": "496498fa2a0b863bae294b5cf3ecb3548c8a783e03312756d520c547acbf5575",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        40,
+        552,
+        472,
+        984
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        256,
+        768
+      ],
+      "native_override": [
+        60,
+        94,
+        86,
+        123
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_S_003.png",
+      "body_reused_sha256": "7e1dea7261299a8c14d5d41f8531aa5e623c71eac856f5762c406d1acb540acb",
+      "export_sha256": "bc07ea45e9a8b33770dbedf5092320c55e3cb247eb3dae2ee3798dfb4ac39269",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_S_004": {
+    "file": "iguanodon_walk_S_004.png",
+    "raw": "raw/iguanodon_walk_S_004_revision1.png",
+    "revision": 1,
+    "raw_sha256": "20333e07a4835ea68f02a35aeb44b17d4ee97c122a6ff293bd6cf5de581c2996",
+    "export_sha256": "e235f5bfa74c6a57076b785fc2719ed98102b7a8ccf1ada39fbc5bd5d3bf6beb",
+    "rig_sha256": "b708bb7b256f93ad2bbe890356b0b4c003afbde16755d235df4c1ea8216605f1",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_S_head_sheet.png",
+      "raw_sha256": "496498fa2a0b863bae294b5cf3ecb3548c8a783e03312756d520c547acbf5575",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        552,
+        552,
+        984,
+        984
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        768,
+        768
+      ],
+      "native_override": [
+        60,
+        94,
+        86,
+        123
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_S_004.png",
+      "body_reused_sha256": "a7e32da07ec2df5a720f760d28b8e7e872944ba8d01bb8b61de6868162a793af",
+      "export_sha256": "e235f5bfa74c6a57076b785fc2719ed98102b7a8ccf1ada39fbc5bd5d3bf6beb",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_S_005": {
+    "file": "iguanodon_walk_S_005.png",
+    "raw": "raw/iguanodon_walk_S_005_revision1.png",
+    "revision": 1,
+    "raw_sha256": "2d7e81068bd6b957efd7919b4ea078f89f13a26fd0ced8ec07cb7e54506432df",
+    "export_sha256": "ea805f25bba017ac57c3c56b5964dc1672d08630d85053a6d775ef7e6a647270",
+    "rig_sha256": "330938645838b4e9b46256eec0c48d13f892c9233e6ea0afb1b1a59de9cdf3b6",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_S_head_sheet.png",
+      "raw_sha256": "496498fa2a0b863bae294b5cf3ecb3548c8a783e03312756d520c547acbf5575",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        1064,
+        552,
+        1496,
+        984
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        1280,
+        768
+      ],
+      "native_override": [
+        60,
+        94,
+        86,
+        123
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_S_005.png",
+      "body_reused_sha256": "d4c49cfa88481bd8761174f9c482da4f7a503ac80b289e63aa610f90b944f2f8",
+      "export_sha256": "ea805f25bba017ac57c3c56b5964dc1672d08630d85053a6d775ef7e6a647270",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_N_000": {
+    "file": "iguanodon_walk_N_000.png",
+    "raw": "raw/iguanodon_walk_N_000_revision1.png",
+    "revision": 1,
+    "raw_sha256": "c9558e73fd3f82f9e97130f47290e7ef8ba2e384617d00001bc37280650e4b20",
+    "export_sha256": "d075c779498ceae8b26ba976f04e811304a3c5196e487afb748819133b74cb1f",
+    "rig_sha256": "bbb1999faca2b652ec5f455ed09731b0fde8c2d1b3970b6f896fa18827e61fa3",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_N_head_sheet.png",
+      "raw_sha256": "38737030f52b99af1ca1c704af0040b9f80b357f1b449f62dd6366e2a2a43b14",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        40,
+        40,
+        472,
+        472
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        256,
+        256
+      ],
+      "native_override": [
+        60,
+        9,
+        86,
+        45
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_N_000.png",
+      "body_reused_sha256": "e2c1ca1cbd64d261dac808b652391fd7e0914cf2bf053ee7d897fcbf1568171f",
+      "export_sha256": "d075c779498ceae8b26ba976f04e811304a3c5196e487afb748819133b74cb1f",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_N_001": {
+    "file": "iguanodon_walk_N_001.png",
+    "raw": "raw/iguanodon_walk_N_001_revision1.png",
+    "revision": 1,
+    "raw_sha256": "df0e80ac47085b032f5c2bef4a7fedcb1bfff75da3ee03772f3d7e7a530e4418",
+    "export_sha256": "d8e4ce5aa97456e0632f980c35b3970ec651e9e904ee832995da79556bc9cc59",
+    "rig_sha256": "6e50b0e381364347ba1f6141cf82b4ec46b42f2df46e18de699c4738ca72cf3c",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_N_head_sheet.png",
+      "raw_sha256": "38737030f52b99af1ca1c704af0040b9f80b357f1b449f62dd6366e2a2a43b14",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        552,
+        40,
+        984,
+        472
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        768,
+        256
+      ],
+      "native_override": [
+        60,
+        9,
+        86,
+        45
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_N_001.png",
+      "body_reused_sha256": "7d75eb373897ce408e7085bd4395f70d2e5ef106bcd9abbbb23400b24a375608",
+      "export_sha256": "d8e4ce5aa97456e0632f980c35b3970ec651e9e904ee832995da79556bc9cc59",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_N_002": {
+    "file": "iguanodon_walk_N_002.png",
+    "raw": "raw/iguanodon_walk_N_002_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b78413bda42ee08eaa89ffe70d022b2304a13fd5bc6a3a97ce6f930a79090693",
+    "export_sha256": "3e583684c00f6e6802f202980b97619e6db97ab6cf73ca93e994dd01c877eb2f",
+    "rig_sha256": "b440a9a6e963e6236ecd15eae0f8dbcb8735e8456006589e4ec421cdb8b5350d",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_N_head_sheet.png",
+      "raw_sha256": "38737030f52b99af1ca1c704af0040b9f80b357f1b449f62dd6366e2a2a43b14",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        1064,
+        40,
+        1496,
+        472
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        1280,
+        256
+      ],
+      "native_override": [
+        60,
+        9,
+        86,
+        45
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_N_002.png",
+      "body_reused_sha256": "d773f61ee9f26e3816e537bf8108025182dc87529970fc20ca378e812d7b672f",
+      "export_sha256": "3e583684c00f6e6802f202980b97619e6db97ab6cf73ca93e994dd01c877eb2f",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_N_003": {
+    "file": "iguanodon_walk_N_003.png",
+    "raw": "raw/iguanodon_walk_N_003_revision1.png",
+    "revision": 1,
+    "raw_sha256": "8907003f8c64244f21cd1a1c0d19fd5bbadcac1c0e3c0570e82fc9a0706973e8",
+    "export_sha256": "c2a9b30a1a8cb13ec8ac8d682a00256d5e718172c9eca21b072e3adbd54d8cf4",
+    "rig_sha256": "678d1048b66b89bda14fe4c08a11610a393a41478a14589a98efa5fa9aae8e67",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/iguanodon_walk_N_003_head_revision5.png",
+      "raw_sha256": "32c212800036470cad9328103c4629cdfd9ae30de2a7d3a9d772a0b467a52eec",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        -21,
+        -21,
+        1275,
+        1275
+      ],
+      "stride": 9,
+      "sampling_offset": 4,
+      "source_landmark": [
+        627,
+        627
+      ],
+      "native_override": [
+        60,
+        9,
+        86,
+        45
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_N_003.png",
+      "body_reused_sha256": "c1f6bac4889555b4e8f66d9bc51248369878aabbd6b14e6a072ea678e3679049",
+      "export_sha256": "c2a9b30a1a8cb13ec8ac8d682a00256d5e718172c9eca21b072e3adbd54d8cf4",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_N_004": {
+    "file": "iguanodon_walk_N_004.png",
+    "raw": "raw/iguanodon_walk_N_004_revision1.png",
+    "revision": 1,
+    "raw_sha256": "c54c1a1962c1b9eafffb1fc5652b33476339e05678a26d205b1bf57096f9dc0a",
+    "export_sha256": "ad53d7f6916e6b9a9900187472d98f307bcfb67f423b37dcfd257697f579c3ff",
+    "rig_sha256": "24e88c3826f40a01098052ab1d50516e0326f03fbcdbd9ed7842224ae162c1eb",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/iguanodon_walk_N_004_head_revision5.png",
+      "raw_sha256": "bb7ee9b99f6b4df80439082cd1aeb78b895962589b60328454b80b12e2382725",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        -21,
+        -21,
+        1275,
+        1275
+      ],
+      "stride": 9,
+      "sampling_offset": 4,
+      "source_landmark": [
+        627,
+        627
+      ],
+      "native_override": [
+        60,
+        9,
+        86,
+        45
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_N_004.png",
+      "body_reused_sha256": "d0942a31ce4a2c6981f239652301359a83a45a4708b8b7e7c2f41218d0e07264",
+      "export_sha256": "ad53d7f6916e6b9a9900187472d98f307bcfb67f423b37dcfd257697f579c3ff",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_N_005": {
+    "file": "iguanodon_walk_N_005.png",
+    "raw": "raw/iguanodon_walk_N_005_revision1.png",
+    "revision": 1,
+    "raw_sha256": "138e5bfdef99009693088c292505566289b0bd416dbe2dc7cb2046a17ecf0981",
+    "export_sha256": "e02b10c1d115664348283529acbf9712bf2c6907159adebcfd2b61b40f510b50",
+    "rig_sha256": "01a9bce4efd5f1238ab56b78835ef1d786c43f002a1fe099ccb66d5ca78d5c1f",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/iguanodon_walk_N_005_head_revision5.png",
+      "raw_sha256": "7935e5e8ab58bb2c3c560f921af73a4dfabef676832b24b2c6d1842a85450fcc",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        -21,
+        -21,
+        1275,
+        1275
+      ],
+      "stride": 9,
+      "sampling_offset": 4,
+      "source_landmark": [
+        627,
+        627
+      ],
+      "native_override": [
+        60,
+        9,
+        86,
+        45
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_N_005.png",
+      "body_reused_sha256": "7a41a03ccf5f61aef070081efbd5a7377f5783bcaa4b877dfee8dfebbb351dc9",
+      "export_sha256": "e02b10c1d115664348283529acbf9712bf2c6907159adebcfd2b61b40f510b50",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_W_000": {
+    "file": "iguanodon_walk_W_000.png",
+    "raw": "raw/iguanodon_walk_W_000_revision1.png",
+    "revision": 1,
+    "raw_sha256": "7c0d5bdc5bedd6353e6e7fa416ca7e4b50c09ee31d24e613f32a9f38b14c53e6",
+    "export_sha256": "f0b10ca332779da92b55c10247fef873c989317de0330e3012bab278fb6ca3f2",
+    "rig_sha256": "03300905cbd642419a73aeb8ef7c37422067d5270a07d5e1f68888b3662f808f",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_W_head_sheet.png",
+      "raw_sha256": "6f07c84856079726f23e1424f9c44eae478b65f4e80217ec30f2e7084cda521f",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        40,
+        40,
+        472,
+        472
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        256,
+        256
+      ],
+      "native_override": [
+        8,
+        49,
+        45,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_W_000.png",
+      "body_reused_sha256": "e56b80f36d24891b701d4006eb75e3c0b8fb8f86ade7a6d00c6673cb27d49d8f",
+      "export_sha256": "f0b10ca332779da92b55c10247fef873c989317de0330e3012bab278fb6ca3f2",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_W_001": {
+    "file": "iguanodon_walk_W_001.png",
+    "raw": "raw/iguanodon_walk_W_001_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b5b12a14cdbaafa8f1ec80db2e5df3e8e47939686b597e23ece60df194025cb6",
+    "export_sha256": "b2ca99ba720e3a976267b9088e52b35ab99b7fc1425e9acd1490feb5fc3705a5",
+    "rig_sha256": "f8e48039f91975087ba420ea7a739f7fd621a8cf596b5ff10e6ebeda4b09822f",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_W_head_sheet.png",
+      "raw_sha256": "6f07c84856079726f23e1424f9c44eae478b65f4e80217ec30f2e7084cda521f",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        552,
+        40,
+        984,
+        472
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        768,
+        256
+      ],
+      "native_override": [
+        8,
+        49,
+        45,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_W_001.png",
+      "body_reused_sha256": "fa27e01eee193d03b178a60fe8b3f0b209d96e477e7b4dc81f892f31d489ce67",
+      "export_sha256": "b2ca99ba720e3a976267b9088e52b35ab99b7fc1425e9acd1490feb5fc3705a5",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_W_002": {
+    "file": "iguanodon_walk_W_002.png",
+    "raw": "raw/iguanodon_walk_W_002_revision1.png",
+    "revision": 1,
+    "raw_sha256": "9b00fe5ad6e2fc93ffc603a2a3f81d2d71d03c2aec1bd90072dbc928185b0b61",
+    "export_sha256": "1f84a6928d5656521cf4bc63b51aacb6a40a9748a64543fded5860fc5cceb628",
+    "rig_sha256": "ee2ec36470a2abe69942b9787be6a59b6f61bd4ff7b3118b8d98011b6dba3914",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_W_head_sheet.png",
+      "raw_sha256": "6f07c84856079726f23e1424f9c44eae478b65f4e80217ec30f2e7084cda521f",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        1064,
+        40,
+        1496,
+        472
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        1280,
+        256
+      ],
+      "native_override": [
+        8,
+        49,
+        45,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_W_002.png",
+      "body_reused_sha256": "a1347bcb02b7a7629f07d773e97aed20753ede9a0a37d37d85afc16eabb85ccb",
+      "export_sha256": "1f84a6928d5656521cf4bc63b51aacb6a40a9748a64543fded5860fc5cceb628",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_W_003": {
+    "file": "iguanodon_walk_W_003.png",
+    "raw": "raw/iguanodon_walk_W_003_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b1980898e1dbe3ad86e83d00d4a37aca25d58d71b5c7d0d564134695908f90d4",
+    "export_sha256": "14f0680cdabf25f26e4795e0e3c018ce9701fd14da7763707179c3aa8a547536",
+    "rig_sha256": "3c975170f06620ea841fcdae6e703ac4725a3e79984f0dccc2fd41ed3e6f8958",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_W_head_sheet.png",
+      "raw_sha256": "6f07c84856079726f23e1424f9c44eae478b65f4e80217ec30f2e7084cda521f",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        40,
+        552,
+        472,
+        984
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        256,
+        768
+      ],
+      "native_override": [
+        8,
+        49,
+        45,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_W_003.png",
+      "body_reused_sha256": "d319dc4fd1b089800d4f7649140407d9210e3fe8562b1c48847adbfc223440cf",
+      "export_sha256": "14f0680cdabf25f26e4795e0e3c018ce9701fd14da7763707179c3aa8a547536",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_W_004": {
+    "file": "iguanodon_walk_W_004.png",
+    "raw": "raw/iguanodon_walk_W_004_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b33812cb01fc4cda23e87bfeacd7a2bdd57890ae2039273491acd32cf53a3c47",
+    "export_sha256": "37e1c25c83380f33e96f326ae5522f33beeffab2c33059f8aafecd14f33fdee7",
+    "rig_sha256": "29f1f2c821353a2f769965ca88a613e642913f79527e068eef10f269357bb2d3",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_W_head_sheet.png",
+      "raw_sha256": "6f07c84856079726f23e1424f9c44eae478b65f4e80217ec30f2e7084cda521f",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        552,
+        552,
+        984,
+        984
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        768,
+        768
+      ],
+      "native_override": [
+        8,
+        49,
+        45,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_W_004.png",
+      "body_reused_sha256": "d902be316836ffc1fb6b87b1c5d3837ba895fc6aa1097d5bf9d21760ebd43594",
+      "export_sha256": "37e1c25c83380f33e96f326ae5522f33beeffab2c33059f8aafecd14f33fdee7",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_walk_W_005": {
+    "file": "iguanodon_walk_W_005.png",
+    "raw": "raw/iguanodon_walk_W_005_revision1.png",
+    "revision": 1,
+    "raw_sha256": "9deb2f15c8581b443678822a00f4e1526747e19d527f47d750ba37675920335f",
+    "export_sha256": "18415dcd37452b0c619760638953dcc615cb1ede910d31dc48bac55fc146b6e6",
+    "rig_sha256": "a2f3aedf21306b75299ead64025a2a5b8d0f5acdaeee42669f85b1b24253f664",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static",
+    "head_patch": {
+      "raw": "raw/walk_W_head_sheet.png",
+      "raw_sha256": "6f07c84856079726f23e1424f9c44eae478b65f4e80217ec30f2e7084cda521f",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        1064,
+        552,
+        1496,
+        984
+      ],
+      "stride": 3,
+      "sampling_offset": 1,
+      "source_landmark": [
+        1280,
+        768
+      ],
+      "native_override": [
+        8,
+        49,
+        45,
+        79
+      ],
+      "body_reused_from": "revisions/pre_head_patch/iguanodon_walk_W_005.png",
+      "body_reused_sha256": "c02cfeaa3c011d303f150f14b8cfea12dfe66c5da1bbb15256eb77353fc4471b",
+      "export_sha256": "18415dcd37452b0c619760638953dcc615cb1ede910d31dc48bac55fc146b6e6",
+      "outside_override_identical": true,
+      "origin": [
+        72,
+        72
+      ]
+    }
+  },
+  "iguanodon_run_S_000": {
+    "file": "iguanodon_run_S_000.png",
+    "raw": "raw/iguanodon_run_S_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "b57e780d13d83bb5bbd0b1f2751996e5ec78af77a12b3a904ada241be4ace8db",
+    "export_sha256": "dd6f0fbbb89fe5c3029cef3109d74b1a2feaa9589d5d7afdc05a5dbe4a1adcad",
+    "rig_sha256": "d6b82381b9a6a6e940890ffaafb031a27ebb9db1bc1919ec678c798ff4a0a102",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_S_001": {
+    "file": "iguanodon_run_S_001.png",
+    "raw": "raw/iguanodon_run_S_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "51063eb6247ef0fb37a1c0e07a8e6f9d76cf7dca048141fa06d160b818e3248e",
+    "export_sha256": "1c8b7b8c9c368f7d76cc5e97d01a7ab257ff8d1d7dec6cb740a9584f946ba832",
+    "rig_sha256": "4af89e5ffa30b0ca527f35522d82c122bd94d4c6a4cff79358d1d9c45793cafc",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_S_002": {
+    "file": "iguanodon_run_S_002.png",
+    "raw": "raw/iguanodon_run_S_002_revision2.png",
+    "revision": 2,
+    "raw_sha256": "7aead9e06c561553efb54f35e056416972d540aa7efc1644499eb38c90f4307f",
+    "export_sha256": "3d96e4f03ced93bda90fb110fe7943974d33dfbe7255cb745c381ae93975d09f",
+    "rig_sha256": "4f0e254b45e09b1481dc4436243870b4e17000809192da73ae99bef5c7429520",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_S_003": {
+    "file": "iguanodon_run_S_003.png",
+    "raw": "raw/iguanodon_run_S_003_revision2.png",
+    "revision": 2,
+    "raw_sha256": "d2a299016015680a60572195375acf4ecd5d11d87bfa90d1dd38665eb4f50690",
+    "export_sha256": "cf19952f686882fa58deb6c91b41a6a511ecd4c59437294ea90f35444384504b",
+    "rig_sha256": "ea5f76dfdcc29665fa2e424b8181471b9fcc760742faa9f827d8fbd7e98104ce",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_S_004": {
+    "file": "iguanodon_run_S_004.png",
+    "raw": "raw/iguanodon_run_S_004_revision2.png",
+    "revision": 2,
+    "raw_sha256": "1501b5fc3b34926a5a1b2c5f7b68989c17454b7fe333b0ea1eb5dc00ce7afcd6",
+    "export_sha256": "b109b91baa63872e4a8fe3de14b909c1597ac8906186b317278d2ea4deaea9c1",
+    "rig_sha256": "b2a76c5799e673a9fae6264d0853db1de5c1b29f29f953e5b2401387b880fd47",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_S_005": {
+    "file": "iguanodon_run_S_005.png",
+    "raw": "raw/iguanodon_run_S_005_revision2.png",
+    "revision": 2,
+    "raw_sha256": "68747c69e4edef3279ba864fdeb6518df0cb3823d58d520036279d5c9fd85ab7",
+    "export_sha256": "25df6f40a7a5430013c89f772688198f7376621260a69c807ca70c175c377342",
+    "rig_sha256": "943c134994bcd474cce1c83d791e228c575b113f30bdb36fd8e6a2e963363c51",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_N_000": {
+    "file": "iguanodon_run_N_000.png",
+    "raw": "raw/iguanodon_run_N_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "c054058f2a92c377c62cea18abb3e0b3603f3a7cd447749a6119edda20cc12d5",
+    "export_sha256": "7ca199e54f7e1b3692b3d06b38dfad149584832bb4822cedad7652ea1e24e4b8",
+    "rig_sha256": "bce9d5fb216b11a7558fabbf5c36e42f25d746bbf6e9c7eeb62ac716e5e0dbc2",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      40,
+      472,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_N_001": {
+    "file": "iguanodon_run_N_001.png",
+    "raw": "raw/iguanodon_run_N_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "c054058f2a92c377c62cea18abb3e0b3603f3a7cd447749a6119edda20cc12d5",
+    "export_sha256": "e502d403af800cf54dde799d6ed59e4afd85da1d95e1b8a93124391e1e44aa69",
+    "rig_sha256": "5576f4850eb74178fd616268236e637ab14dde6835641b454fc19ce4ab4cad60",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      552,
+      40,
+      984,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      768,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_N_002": {
+    "file": "iguanodon_run_N_002.png",
+    "raw": "raw/iguanodon_run_N_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "c054058f2a92c377c62cea18abb3e0b3603f3a7cd447749a6119edda20cc12d5",
+    "export_sha256": "a3b9817a1bada6e3202d73cc21e6e0f1990e401819baad13b54fffc35282840f",
+    "rig_sha256": "61887394ca07c83883c3f959f1d35dba3eaf9dbf0392682fd91fd159255e8b0e",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      1064,
+      40,
+      1496,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      1280,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_N_003": {
+    "file": "iguanodon_run_N_003.png",
+    "raw": "raw/iguanodon_run_N_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "c054058f2a92c377c62cea18abb3e0b3603f3a7cd447749a6119edda20cc12d5",
+    "export_sha256": "76cb455bc23b7220b03c89181e1727489e4b705a3a1e51b866a3682f857499de",
+    "rig_sha256": "6d9ccf3b246e0a8b36033bb70a9935704ad4d2d90f3496dc6bf815e30fe7daad",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      552,
+      472,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_N_004": {
+    "file": "iguanodon_run_N_004.png",
+    "raw": "raw/iguanodon_run_N_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "c054058f2a92c377c62cea18abb3e0b3603f3a7cd447749a6119edda20cc12d5",
+    "export_sha256": "89b41eb7f0cd5ec43fbfe52c425196a5a83e08b757f3bb3fe1c065ecad6ebe24",
+    "rig_sha256": "30d9b05b34b0b3777c069ee41d4e9d116fff0f86f92f1683aaf6db66236008f3",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      552,
+      552,
+      984,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      768,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_N_005": {
+    "file": "iguanodon_run_N_005.png",
+    "raw": "raw/iguanodon_run_N_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "c054058f2a92c377c62cea18abb3e0b3603f3a7cd447749a6119edda20cc12d5",
+    "export_sha256": "5caa9dc9cdea9d0f3f95f0863b4f43e12804898397c3dd38d241f0aeb1a0e948",
+    "rig_sha256": "431b52b5e05cd2e94a3237497001bc1bd3544427e56b2343ad3a69fb9525f009",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      1064,
+      552,
+      1496,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      1280,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_E_000": {
+    "file": "iguanodon_run_E_000.png",
+    "raw": "raw/iguanodon_run_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "12e093d61d291ddc9bdbc58e2fdf9ba3de25507be681d1d99540a4a33bbbf63f",
+    "export_sha256": "904f60483bdb07a5f921bf2abdf0d830a6539576306787a956ee9c3aaefa40c5",
+    "rig_sha256": "452fb41069e3a979f5ac108133798b18f539d29462fbfe17438d4f4e3d31b134",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      40,
+      472,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_E_001": {
+    "file": "iguanodon_run_E_001.png",
+    "raw": "raw/iguanodon_run_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "12e093d61d291ddc9bdbc58e2fdf9ba3de25507be681d1d99540a4a33bbbf63f",
+    "export_sha256": "8aee47a21aa8eda681089bc3439ae971cfb2557dbb5dc938d50ddb2b8e61863f",
+    "rig_sha256": "7003a2791384c618422b898e9561d01aa29f9487719ae4f3933c4aeb40b71274",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      552,
+      40,
+      984,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      768,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_E_002": {
+    "file": "iguanodon_run_E_002.png",
+    "raw": "raw/iguanodon_run_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "12e093d61d291ddc9bdbc58e2fdf9ba3de25507be681d1d99540a4a33bbbf63f",
+    "export_sha256": "e4b26a6f216e3b44d377bc5f6c62da1a7dcb1c04f86d78345df44885ddd05fe3",
+    "rig_sha256": "305ba40d6fe7ff64cb3f7262d2c1e67f3224579b9903d6d4b0e6a01d05ab2e79",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      1064,
+      40,
+      1496,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      1280,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_E_003": {
+    "file": "iguanodon_run_E_003.png",
+    "raw": "raw/iguanodon_run_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "12e093d61d291ddc9bdbc58e2fdf9ba3de25507be681d1d99540a4a33bbbf63f",
+    "export_sha256": "beefa10560d3413388c97aea767be1a0f776d8c431b984649ea3e320334028e0",
+    "rig_sha256": "d52cad019bd82828a5a357fd14a4da3ad622d225ff67b9621558d3d4edfb6ca0",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      552,
+      472,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_E_004": {
+    "file": "iguanodon_run_E_004.png",
+    "raw": "raw/iguanodon_run_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "12e093d61d291ddc9bdbc58e2fdf9ba3de25507be681d1d99540a4a33bbbf63f",
+    "export_sha256": "2fd6f8128e53bdee1e8dc22cccc899c2cf7b21e1622d6c9e84bb57dffcf062d6",
+    "rig_sha256": "dcc9b905b3645286b2f9a536d4a7ec9a49820c6713f9827a3117fb2e865968d9",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      552,
+      552,
+      984,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      768,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_E_005": {
+    "file": "iguanodon_run_E_005.png",
+    "raw": "raw/iguanodon_run_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "12e093d61d291ddc9bdbc58e2fdf9ba3de25507be681d1d99540a4a33bbbf63f",
+    "export_sha256": "a805d5d9e5dbeb215a61c06303c43606fe7ddd0112809a6c367f4fe1cc887cda",
+    "rig_sha256": "c5422386240f73214abc9164da2ccb6e0d28dcf06368977c4362c16548aa14b4",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      1064,
+      552,
+      1496,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      1280,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_W_000": {
+    "file": "iguanodon_run_W_000.png",
+    "raw": "raw/iguanodon_run_W_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "4c5eda9c9e98a02735378cd0c900e912df1d1d10d35a274f95fcf0a7fdad6104",
+    "export_sha256": "ec5f7716e7a8d041b925fb14e0167176aa68a9c0456bf07e12a1461302cffd7e",
+    "rig_sha256": "f24abcb0a24c6fbebc0986cdbeafb7fca60218ae89a8ef6ad22408db16c2284b",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_W_001": {
+    "file": "iguanodon_run_W_001.png",
+    "raw": "raw/iguanodon_run_W_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "e7fe7da3680f243c3611b4f5d7803af8f195d502d1496d6d426781356b3f8a77",
+    "export_sha256": "968d5f29cd860ec73768a7d68b6aff99e3129451e3a29ad8920ed76ae89ece65",
+    "rig_sha256": "564e8b8ca6e943a4ed1a6de5657ad8e035505a53a48f77e7cacdad1b500170a6",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_W_002": {
+    "file": "iguanodon_run_W_002.png",
+    "raw": "raw/iguanodon_run_W_002_revision3.png",
+    "revision": 3,
+    "raw_sha256": "3094b37a5a02dd7f8ca353099cb3a905171e1759b1cfe0ba2901f6ffe72d69fd",
+    "export_sha256": "eaad1214b678aa9d356027178bc222c6f89e935e8fffc57c11aff4776c1bcc86",
+    "rig_sha256": "acc1bc18781054e137fd2799731b83d20c0a0784583fa38bfa03dea01b8afb58",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_W_003": {
+    "file": "iguanodon_run_W_003.png",
+    "raw": "raw/iguanodon_run_W_003_revision2.png",
+    "revision": 2,
+    "raw_sha256": "8c0ded4474a26d52796f3706c658a3ca8b10280365fa1e8bc05bc9db2096bc0a",
+    "export_sha256": "716fc4a8f8cc969d0f0d4f5465a0c2138474de8bf43aad65f7aef6079f2e5c2e",
+    "rig_sha256": "a6649342c506dba3cb5b271d72b4356fdfaa3174173adf373dcf4478ff867de0",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_W_004": {
+    "file": "iguanodon_run_W_004.png",
+    "raw": "raw/iguanodon_run_W_004_revision2.png",
+    "revision": 2,
+    "raw_sha256": "b4df549096367f96b532749f5792d71d5560ca1a6587410b032395f4487ab51d",
+    "export_sha256": "d9f72102133088cbfa20d87bf53a1f2b036270aed7f3a1d7c41f5a08e2ed42e0",
+    "rig_sha256": "5bd7f8b1b23c430d0361449fe31e02cdf2d28f4ccef67307c0541d45842478f6",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_run_W_005": {
+    "file": "iguanodon_run_W_005.png",
+    "raw": "raw/iguanodon_run_W_005_revision2.png",
+    "revision": 2,
+    "raw_sha256": "10e58625bc2a28d7c403511e2846de6f9ff0a85f9d242bc1a152f66dd91d55f0",
+    "export_sha256": "69c4da298afd09620eaba0bb79ea8fdefb92200fca09588b86b2354fc47e534a",
+    "rig_sha256": "eeb7c82d8d858adfa52f7e6e6ebc2afe451b7fbdef126955da62bcbdfb05e246",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_S_000": {
+    "file": "iguanodon_idle_S_000.png",
+    "raw": "raw/iguanodon_idle_S_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "686a8ebe3c6fc6e9a38218de671cb3020b2cea64c5891d0681f8c256d72df2c0",
+    "export_sha256": "043add24f65ef0ce2fac5a9c56b7c6286f3a67ab87180858df43198ee5d0ae05",
+    "rig_sha256": "d9568c88b91eaafd6e04cdc98ff71bf61217967473949b64ef0ae71547f44cf7",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_S_001": {
+    "file": "iguanodon_idle_S_001.png",
+    "raw": "raw/iguanodon_idle_S_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "befe528f45a8f567e11b2c6a7c3987375321eba790417c425466371e134330cf",
+    "export_sha256": "d60f867cf8591991ae1d10e10009833e52ae066de1cf05027169afc5f24fce48",
+    "rig_sha256": "4dd1bf13d05ec09a6bb5d4adf6665ca2f0d753981d063d50b6c1943a1de00a4d",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_S_002": {
+    "file": "iguanodon_idle_S_002.png",
+    "raw": "raw/iguanodon_idle_S_002_revision2.png",
+    "revision": 2,
+    "raw_sha256": "8bcd9c4b55d4ea8b467ff1b1d6c63bcc739b63baa3ccceb3612e175f495aeebe",
+    "export_sha256": "600bf3ca0e0c5a4bc20a411766f7ff3191e598aabf57cd8ce7c5619ed40af350",
+    "rig_sha256": "e0629ab306622d3eed5adcee93e9fff38680c0ed763f4d824c2c8a6a1a77b0dc",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_S_003": {
+    "file": "iguanodon_idle_S_003.png",
+    "raw": "raw/iguanodon_idle_S_003_revision2.png",
+    "revision": 2,
+    "raw_sha256": "5caf40450f387e51d81ea5dde3399098b5ab49efe8e834d92740053018136842",
+    "export_sha256": "9f000e0440b1c6819622d21f692fcf80d4ce22eec3704165ccf16bd65527656a",
+    "rig_sha256": "d0db46e79f907c9463c6b09d4cef36b21f214b85dd2e3ad662a0919cd105d74e",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_N_000": {
+    "file": "iguanodon_idle_N_000.png",
+    "raw": "raw/iguanodon_idle_N_000_revision3.png",
+    "revision": 3,
+    "raw_sha256": "251fbd1380cff79fee4a5d484f4651baf93da247adb028f0e286c6cea766e56a",
+    "export_sha256": "53a77b0d3741854b3d08d380d6615c602e8ff5a0e9346eeacee09b2a2ebc73b6",
+    "rig_sha256": "6a7fb4bff6cd5b795c9f0021ee0eee149509831a4af34d7cc1bed606a0296f8c",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_N_001": {
+    "file": "iguanodon_idle_N_001.png",
+    "raw": "raw/iguanodon_idle_N_001_revision3.png",
+    "revision": 3,
+    "raw_sha256": "9736cb9664da18cd9d3db379da260bb5af426237a328ed7c134489674d848003",
+    "export_sha256": "607f3f11a0396b81494de653bec963bb26721c6c071e9e1ba4c37cdfb15052f0",
+    "rig_sha256": "98f1bf6c5ccca32c894467bda363bae8cede90e5e5c1b69fc07522ba6ca009cf",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_N_002": {
+    "file": "iguanodon_idle_N_002.png",
+    "raw": "raw/iguanodon_idle_N_002_revision3.png",
+    "revision": 3,
+    "raw_sha256": "09193c76708998a414b03eabd08943e73b97430d96bdf71f54e679823d61bd51",
+    "export_sha256": "805fc0c1cbb11f3bdd85b635d655a744b845f18293b74dd4a30cb7ac13e1beee",
+    "rig_sha256": "1d4c12d2b8a71981f799be363cea6e424f7b710bdf34842c22bff943a3ef63ca",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_N_003": {
+    "file": "iguanodon_idle_N_003.png",
+    "raw": "raw/iguanodon_idle_N_003_revision3.png",
+    "revision": 3,
+    "raw_sha256": "f53d15450761cc2e003a1447e0e6cd8206e50651a970659555997136993fa045",
+    "export_sha256": "f0009e785176826fd3368585aa6afeac51e5265adc704b0417590fa367b15d0b",
+    "rig_sha256": "0f6a72fbd4a8e19159796b6219e8f91fc34a96cfd52590870b44af7e3e749209",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_E_000": {
+    "file": "iguanodon_idle_E_000.png",
+    "raw": "raw/iguanodon_idle_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "ce89fc461617d22bf3bf4ac4b12d55cc4e151006f0e266c520a16d7c1546b88f",
+    "export_sha256": "77215cf106ab1937bd1e6d8c548dfbbba141f917f82e4f137d7aa5d242c90860",
+    "rig_sha256": "95a35e5e2b78612519fb6be13fa7256a07eb61f16375b335a2b2a6e838b42226",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      40,
+      472,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_E_001": {
+    "file": "iguanodon_idle_E_001.png",
+    "raw": "raw/iguanodon_idle_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "ce89fc461617d22bf3bf4ac4b12d55cc4e151006f0e266c520a16d7c1546b88f",
+    "export_sha256": "c515f64e975c6ca98d294690421ca649e09def5d07b4d5a944daa3c46c488169",
+    "rig_sha256": "0fc2103a4a8baebd9586eda9ae6d4a683d8bb5891600acd27bcc6665e28604b7",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      552,
+      40,
+      984,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      768,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_E_002": {
+    "file": "iguanodon_idle_E_002.png",
+    "raw": "raw/iguanodon_idle_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "ce89fc461617d22bf3bf4ac4b12d55cc4e151006f0e266c520a16d7c1546b88f",
+    "export_sha256": "d7f7192f03de09f7cfc26b16d8a6f5d56ebcc314376266b7805485b6e52ffa50",
+    "rig_sha256": "60a6f590fe1c1633f5c4f4edb9de2c5f5899ec61f13c9b1b1d683ba81f7e20e4",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      1064,
+      40,
+      1496,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      1280,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_E_003": {
+    "file": "iguanodon_idle_E_003.png",
+    "raw": "raw/iguanodon_idle_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "ce89fc461617d22bf3bf4ac4b12d55cc4e151006f0e266c520a16d7c1546b88f",
+    "export_sha256": "e4c036e14de8fccda6daa5f6712556742ee3c59707fa43bc0161758ed1f37af5",
+    "rig_sha256": "2de2262f9f71ddcf8ac9f02a127ca5209703683643bca730fcd86ae38ab53b23",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      552,
+      472,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_W_000": {
+    "file": "iguanodon_idle_W_000.png",
+    "raw": "raw/iguanodon_idle_W_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b9da810b7b3393d68c956d0863df9a3e76a2cb5670281b13db4efed9f08bcdcc",
+    "export_sha256": "2069a66c90620f703a0205ae8d687606a13129facb616915ba578b6e3c1c7cf9",
+    "rig_sha256": "27d53015498981a2b3e9a76ebad8c029ed5748b7f5ccd72a75ef9e18bcfb1b54",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      40,
+      472,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_W_001": {
+    "file": "iguanodon_idle_W_001.png",
+    "raw": "raw/iguanodon_idle_W_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b9da810b7b3393d68c956d0863df9a3e76a2cb5670281b13db4efed9f08bcdcc",
+    "export_sha256": "12ecb79675a055d11e2bfba8e95ae7194ac5974d5f2c2ff30944a56d3ae33251",
+    "rig_sha256": "aca6719b344b46935f765a34a95012b88b547c74083e1ec1659089b94e4a8257",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      552,
+      40,
+      984,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      768,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_W_002": {
+    "file": "iguanodon_idle_W_002.png",
+    "raw": "raw/iguanodon_idle_W_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b9da810b7b3393d68c956d0863df9a3e76a2cb5670281b13db4efed9f08bcdcc",
+    "export_sha256": "617141e96a017c0c3ac6172ded3b6be9bd92c166032af38ffb480acb3c249914",
+    "rig_sha256": "b1a5fd622bee5561ca6f703953bb9455fbb333b37a5a5e0f7bb1b0dbbfb2ba81",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      1064,
+      40,
+      1496,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      1280,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_idle_W_003": {
+    "file": "iguanodon_idle_W_003.png",
+    "raw": "raw/iguanodon_idle_W_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b9da810b7b3393d68c956d0863df9a3e76a2cb5670281b13db4efed9f08bcdcc",
+    "export_sha256": "1e506492235a3969f0f53ea37aaa22632d5418ae550c704b46c858679a242e3a",
+    "rig_sha256": "a0d8ce6704b0bfbb054fa9c019733f8a37aae3734f88084f08e6379b09e7452e",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      552,
+      472,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_S_000": {
+    "file": "iguanodon_attack_S_000.png",
+    "raw": "raw/iguanodon_attack_S_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "67d3f4b8fee76453e1074cb4b4fe380ac8927f10e862a0a2c3dfe8dba660ae07",
+    "export_sha256": "4820b7a1852898a175f1abeef77cd1d8c07e87f26f6c6c1b915392a5430d9de9",
+    "rig_sha256": "b65c7bb693333c37253ece9ea3556a291e6c481c353036be589b1689799361d1",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_S_001": {
+    "file": "iguanodon_attack_S_001.png",
+    "raw": "raw/iguanodon_attack_S_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "45bd28912d8900902514d6bc0b7e214528760f536ff2f206448135d3759e673e",
+    "export_sha256": "0bc13dae61e716a2ba619439e93642b7fded8dd30b2fd0a665ee23f73d518f7a",
+    "rig_sha256": "6c3f854351c64b8ea387124c1acab532cf7af3dae918a8e68fcbf501ed4f2b3d",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_S_002": {
+    "file": "iguanodon_attack_S_002.png",
+    "raw": "raw/iguanodon_attack_S_002_revision2.png",
+    "revision": 2,
+    "raw_sha256": "da31bc998a52cada659d20f94d44b52275a7ad75a6180687f7e71c3129750668",
+    "export_sha256": "3eae9d5e6b85ac9d9130fb8df80c377c30b900f306081c1df237484491dbbb3b",
+    "rig_sha256": "751acdc90d4b7d5189ba8f47b02eebb2357dfd4d68c7293114b331e5baa92ca4",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_S_003": {
+    "file": "iguanodon_attack_S_003.png",
+    "raw": "raw/iguanodon_attack_S_003_revision2.png",
+    "revision": 2,
+    "raw_sha256": "571e602ada96144ba76685c352e56d51466284c9f1cd9554573f04efbb0dcaa5",
+    "export_sha256": "1cf3e6fe1f52a516d4a963c60a9b5a3c7a178df3008a3a2c75fee8264fa0fd7e",
+    "rig_sha256": "44561f9c51124c1ebf62e315a84d3abc1bd7af5fbbc019cca47f798c9dd611cb",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_S_004": {
+    "file": "iguanodon_attack_S_004.png",
+    "raw": "raw/iguanodon_attack_S_004_revision2.png",
+    "revision": 2,
+    "raw_sha256": "e6822cf90c847a5ff29c5561966c9882a77a23927c17266190d1eed15c990549",
+    "export_sha256": "93b06dec75fa00439fcb0c5b57a8cae85cb8046d85af101388d74002368b67d2",
+    "rig_sha256": "cf1a2ede4df913b11195963dd211713d2500c6f231aebd6f82b25fa4dd4d49cb",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_S_005": {
+    "file": "iguanodon_attack_S_005.png",
+    "raw": "raw/iguanodon_attack_S_005_revision2.png",
+    "revision": 2,
+    "raw_sha256": "727e3627600fd1aa0e798937deb664d96f4c60ed0457f068231269612d9914c3",
+    "export_sha256": "73e0d6a9270fa51f941ed0105b403c1fb787d731bf666e478d138d11b61afb0b",
+    "rig_sha256": "b2bbca50e474eb0ba87d92cb9d53cc948247a9e718bf7183d4382b6635186db0",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_N_000": {
+    "file": "iguanodon_attack_N_000.png",
+    "raw": "raw/iguanodon_attack_N_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "9d36086826edc313abeaf9051a6ffad5870b409a7fbacb84d5e1a835df043f69",
+    "export_sha256": "e76212ffcbd1bed68e4983a9ed9e30233afd8db6861dca4d0203614f1fb5800c",
+    "rig_sha256": "8798618f5363a336b33c23a20fd909edc96a60b3449e9e77b5c6b53a8658dd6e",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_N_001": {
+    "file": "iguanodon_attack_N_001.png",
+    "raw": "raw/iguanodon_attack_N_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "0e23d5f8f4087f8505845a4f5edaf3b406449f28f879483c91740482bc9687d1",
+    "export_sha256": "0d96fcb0ea1cf2ac0fc68d4c055dabbbcb5f1dd55647903f9fab73b4741e4021",
+    "rig_sha256": "b7897e184bf79b26c28bcf2ca2d5037e163aa0088a3dc67a70b0e5186e94b019",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_N_002": {
+    "file": "iguanodon_attack_N_002.png",
+    "raw": "raw/iguanodon_attack_N_002_revision2.png",
+    "revision": 2,
+    "raw_sha256": "da205dbe040591bf5b5feb42e2f34cb1244ba8ee74a8cb76291d07ed6e98b43b",
+    "export_sha256": "3fb079d0765183e811cc3df885e50c168af950d96c9f60a65a6135b3aafa3e98",
+    "rig_sha256": "831176fbc312043dbf823e4d678cd738aa57d59da00bc2a714ceec1f56374670",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_N_003": {
+    "file": "iguanodon_attack_N_003.png",
+    "raw": "raw/iguanodon_attack_N_003_revision2.png",
+    "revision": 2,
+    "raw_sha256": "0a880cd8b14adadf34f40eb1fa57b628b0c68eefd89deb9804d5a1866ef9d15f",
+    "export_sha256": "264222491ff7d2bc3435a4a95efcd5b997a9ac9577f5015407b86c512bddf4ce",
+    "rig_sha256": "5d4022ea583270793ff354656e38e21b445f002293b92585424c8d389fb4c8dc",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_N_004": {
+    "file": "iguanodon_attack_N_004.png",
+    "raw": "raw/iguanodon_attack_N_004_revision2.png",
+    "revision": 2,
+    "raw_sha256": "b15f6fd72a8ab2786e1476db986a09adbc5279a394f0a1c272c4fa9f50543a31",
+    "export_sha256": "afff0013685a386284a80f08924384f286973b42e4f85c1b94470556d29190cf",
+    "rig_sha256": "96af051653094f369962e27b0935680d3b5fd381d1791ccb62ca60f7961d9060",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_N_005": {
+    "file": "iguanodon_attack_N_005.png",
+    "raw": "raw/iguanodon_attack_N_005_revision2.png",
+    "revision": 2,
+    "raw_sha256": "088e1d747316d959536bf7b676661c2ee6e32590221a33cb009f524bfa2666ee",
+    "export_sha256": "53aae874e924ff5c4f412ff871cdc5468493ee3288870dcb90f42f0460609351",
+    "rig_sha256": "f971c6d116508d555c8920f67a6eb24c715e8472a5bdf49f61b4fe94f46d9af6",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_E_000": {
+    "file": "iguanodon_attack_E_000.png",
+    "raw": "raw/iguanodon_attack_E_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "5f735e7482b063c2692f7715b13beb9268884b42562ae2658c1a10b40f63a0a9",
+    "export_sha256": "867be32a9d71a37b43bb6066478c96c85d0bd421ab3089b48c3097c7548f4b7b",
+    "rig_sha256": "8d1466704029f9e5d078b416002248f1dfc0aa426c3bf4b42d4e82b29911ff29",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_E_001": {
+    "file": "iguanodon_attack_E_001.png",
+    "raw": "raw/iguanodon_attack_E_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "6e8bbba98dfcd27ffb2cc32c2dc44e30d1a1a9aa49823e6d3c2749a026c8f090",
+    "export_sha256": "885c456b0c01adcc2610d8ab7aaa2ab81a1936987f4ddf78da2f8c1a9897f0fb",
+    "rig_sha256": "7a8f40c02aff40dc983ebda6235a118ff996d5720117f34c6f6b731d89f0413a",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_E_002": {
+    "file": "iguanodon_attack_E_002.png",
+    "raw": "raw/iguanodon_attack_E_002_revision2.png",
+    "revision": 2,
+    "raw_sha256": "dfbd5f3c820ff96b22184e27845fe8728005cd80554d562ce565e926458a6898",
+    "export_sha256": "058d652a4151b63832d3be0330a319ceed125426123f315ef4beb4d32f26dc82",
+    "rig_sha256": "31676dbde3d5692388a65aaa84f9b179dbc051c64e3cf8266d44fd3425513e2e",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_E_003": {
+    "file": "iguanodon_attack_E_003.png",
+    "raw": "raw/iguanodon_attack_E_003_revision2.png",
+    "revision": 2,
+    "raw_sha256": "27375ac41aaa7207040aa9b4ba00ca4b2c52e68106f857b398c008d1af486f7b",
+    "export_sha256": "1609c4e0f53f08b3e1005a157b85e41204bfc1353b474e079d809b164aba054e",
+    "rig_sha256": "03d0d86a1ea08f6e4a4a089fb752329e62bf44b005f89546340690029b9f9c58",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_E_004": {
+    "file": "iguanodon_attack_E_004.png",
+    "raw": "raw/iguanodon_attack_E_004_revision2.png",
+    "revision": 2,
+    "raw_sha256": "f33c98fd51e2a40bcc6bc874b3761cee09fe0c68d00ffa3865ca3a5f6773ad9f",
+    "export_sha256": "18ff212d2403923575cdcc37d60b1d97c6ec7ab97bb2e7a8ba21133f610f6765",
+    "rig_sha256": "a6294e095d241a75db545aeed409ddf4f184af7bbc9f5969f402ccec829a2229",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_E_005": {
+    "file": "iguanodon_attack_E_005.png",
+    "raw": "raw/iguanodon_attack_E_005_revision2.png",
+    "revision": 2,
+    "raw_sha256": "e88c25ef46bd0e55d1c69f41e113b41b2a8e50c0c21d2dbe1c36e6cf94e3858b",
+    "export_sha256": "78221f39312417435d0493698178f4f2ba17ec58dcc65f2d7f3ccb08532f336f",
+    "rig_sha256": "359f449f845483cca9ad5f9016c28c921e0df632cb660c539a6698127a9f493a",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_W_000": {
+    "file": "iguanodon_attack_W_000.png",
+    "raw": "raw/iguanodon_attack_W_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "3c18141a80d86129417aaad3abe85f9291b7da25f2b791ff10bcf8ab45616d14",
+    "export_sha256": "6e7768a03237a6f55d9abbe3832af1068dd824a9159fb3c606644a2886aa0acd",
+    "rig_sha256": "77ff7e0ff3c7f0ae6922040d615d9017f54ee5f165baebd0b831237a6c9dbc19",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_W_001": {
+    "file": "iguanodon_attack_W_001.png",
+    "raw": "raw/iguanodon_attack_W_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "58eaadd93086a51c6b6c9a96cd27973ca6448047a26b2e6619c9b216a98cee97",
+    "export_sha256": "0e072e75c4b6c24c818e0f5477594ec08be5f337ae308ffa3637da7276f3a344",
+    "rig_sha256": "e4a7869763dc918e6846d9fc7c7fa52c7e1c494067ff7db384c551b80bfff19f",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_W_002": {
+    "file": "iguanodon_attack_W_002.png",
+    "raw": "raw/iguanodon_attack_W_002_revision2.png",
+    "revision": 2,
+    "raw_sha256": "07f22e1cef1aaa6e46b52a59dd8777b048edc607428b494156aeea0e9b662840",
+    "export_sha256": "dfc8361cfc191c8d13835407045a4b74a3b501d7e60e1d9c2bde25522725c6a1",
+    "rig_sha256": "3a9df8dbfc003507216eb9117012aeeb44f1f06b1b2494140de8b5c733f47cc3",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_W_003": {
+    "file": "iguanodon_attack_W_003.png",
+    "raw": "raw/iguanodon_attack_W_003_revision3.png",
+    "revision": 3,
+    "raw_sha256": "69e1e9cfc68a63859eb507e7772f34c9f0e3da861ed7dbd1d47a3dad45298e93",
+    "export_sha256": "8f386d19f8e4bca7dbd35953b23c88ef8629936651d7fbc36a33d8879589f140",
+    "rig_sha256": "090c6dfa6dadbed4d2bd0862c7b74dd71e89a74cb944c6fd62b44d09218e1c5f",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_W_004": {
+    "file": "iguanodon_attack_W_004.png",
+    "raw": "raw/iguanodon_attack_W_004_revision3.png",
+    "revision": 3,
+    "raw_sha256": "7d907bd404a688ab05740cae76c8c63ec913203f68cb36a6d66fc874b52f7e99",
+    "export_sha256": "e005987bd936c999c6c30d91b871f80f8965de1429eb81c7d40ba7a4ffc2ab07",
+    "rig_sha256": "363f38993df6476262dc27125b012f56ca38b6e7b2b74d17266856a76bc4fffa",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_attack_W_005": {
+    "file": "iguanodon_attack_W_005.png",
+    "raw": "raw/iguanodon_attack_W_005_revision3.png",
+    "revision": 3,
+    "raw_sha256": "e976d10dad5fb4d173fdcfc8575d6e14aed5b77a1e62d59da156868ccac47943",
+    "export_sha256": "81df618e01004a7eb0dad04a81dd145b290a23dbab99adbf98cf181604146b53",
+    "rig_sha256": "58bf1fe55e0e60cdc16bf1ab1ee50daa5ff705b1cac7604facd55f2b927bed5a",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_hurt_S_000": {
+    "file": "iguanodon_hurt_S_000.png",
+    "raw": "raw/iguanodon_hurt_S_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "2ca1ce7350e21da75bf0567f3cc019edb53406cd29a98366be52b1facb654a60",
+    "export_sha256": "cea711758783248159141c0693f812174f6018ccbd5d43cd1b8bf7e0b333f454",
+    "rig_sha256": "531d09c3484097ebd0131ab7610861b440a8a52eddb6377e7ff4e10c312e004f",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      40,
+      472,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_hurt_S_001": {
+    "file": "iguanodon_hurt_S_001.png",
+    "raw": "raw/iguanodon_hurt_S_001_revision3.png",
+    "revision": 3,
+    "raw_sha256": "c86a7062ccebd6a535209f66d59c0c7be8962bef0199c832257289c7cea2e3dc",
+    "export_sha256": "5b670ab6aaa2659524c77479859ea2fa0672039487ef5df8d296b1c6354eff4b",
+    "rig_sha256": "6d84b000d05eafc131777dc119bc5e6854f9cbab64d49d072f3635982ff78e5a",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_hurt_N_000": {
+    "file": "iguanodon_hurt_N_000.png",
+    "raw": "raw/iguanodon_hurt_N_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "45b8d8fb0adc5ca964846ebdcee2cc72cb0a7cbeac10759cc74353b73d1cf346",
+    "export_sha256": "629258464b27f5c1f4f6ee98e20bce884a291e8e27ecc8f5d2519337f3ec1baa",
+    "rig_sha256": "cae83e86f19a67512bf45bdbde46cf9c1adbe6681ff2958b0e333b212a50764b",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_hurt_N_001": {
+    "file": "iguanodon_hurt_N_001.png",
+    "raw": "raw/iguanodon_hurt_N_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "18cd0c80b2300b571208850abdca59c6517053cfb809b1739f631a019eab1023",
+    "export_sha256": "ee0e5e56b36cbb89eb52fb3dc7473413ce23043ef3814991ff668b74d9f0d747",
+    "rig_sha256": "c5a1788e3293f1112f8639b1eb8b0b4476965e853c3c9f9bb94f3c8f58889fe4",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_hurt_E_000": {
+    "file": "iguanodon_hurt_E_000.png",
+    "raw": "raw/iguanodon_hurt_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b76d983229661e9c3894e51f00d5bb72e8077dec04187714c383eea7eaca8735",
+    "export_sha256": "9b934d9580de8894372722ebcd13e5b98075839d1970b0c8012a9832ef0cf89f",
+    "rig_sha256": "470603fe0db4e2fb4ef731f7f3c3bb559a46007b64bba19349193f19d177137e",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      40,
+      472,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_hurt_E_001": {
+    "file": "iguanodon_hurt_E_001.png",
+    "raw": "raw/iguanodon_hurt_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b76d983229661e9c3894e51f00d5bb72e8077dec04187714c383eea7eaca8735",
+    "export_sha256": "a47d1efc9691eb46f011921fa7c0a7070b9458067d390c10d077f17561bba118",
+    "rig_sha256": "562859b37730cd2d2c32968cb62207dd9c47b85f06386946f641203919e793c4",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      552,
+      40,
+      984,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      768,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_hurt_W_000": {
+    "file": "iguanodon_hurt_W_000.png",
+    "raw": "raw/iguanodon_hurt_W_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "33fc046fb5fc5c9bb066bda8ba2f9d634d191e544ba3b6dc681b3409f07c2d7e",
+    "export_sha256": "b51697a3ac5f8aae7dd2488a3d209f5c8eac6517af732043484bd199a3bd5e2d",
+    "rig_sha256": "c9ffaf676b38ab982cf01b4ea09d06e6a4e97f6e5ec71c1158cd4cbb138a924a",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_hurt_W_001": {
+    "file": "iguanodon_hurt_W_001.png",
+    "raw": "raw/iguanodon_hurt_W_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "aea65a08af5abfba5c7cd41fef29bafb8e784fea6ec5d73406446c14f71d7d7e",
+    "export_sha256": "636abee92f5bd8add9413979fc2bd7e4217682db00fa79c65db4e3edc3177ba7",
+    "rig_sha256": "9328653a1e8c381b20134cbaacf66fca7514d372c85b6b5d5510ba2153e20328",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_S_000": {
+    "file": "iguanodon_death_S_000.png",
+    "raw": "raw/iguanodon_death_S_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "f83d2e939d75a228d5855604ff00ff33c10675c1ab0d85ec031dd39fca2a199f",
+    "export_sha256": "7bc8f7f6914f83a618a3938fb2301557bba5d1e1a42a091a25a38b8898c27ca4",
+    "rig_sha256": "464608776b29027409776de90805faf750bf52969db7274466dcafc4d16b7d48",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_S_001": {
+    "file": "iguanodon_death_S_001.png",
+    "raw": "raw/iguanodon_death_S_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "c8ebf79bb2918fae04d21fb2cc847fb9d2bcee2e5122c89b027a415f74f7c07c",
+    "export_sha256": "dca86b3ea238ac7a7c66c8d0c733175cf63e5d3387ccfdf3f80dbf1d44297ba2",
+    "rig_sha256": "f930cef8b8df0eaa4499fb40e235ad677010301af26caa192347327f7b4eb585",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_S_002": {
+    "file": "iguanodon_death_S_002.png",
+    "raw": "raw/iguanodon_death_S_002_revision2.png",
+    "revision": 2,
+    "raw_sha256": "4624037163d00982435d37e5f3b7f19fc6b7e2ec92ea03e7f9f0b5ae36cfd674",
+    "export_sha256": "743e2bba22062538f6c26b8acd5fae578ad2d758e6b9e41ccfd197f9a790b0bd",
+    "rig_sha256": "6f92cab2ef6c3b2840e432ec287299b1c0b8e77a4c1d70ff43bb300681605444",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_S_003": {
+    "file": "iguanodon_death_S_003.png",
+    "raw": "raw/iguanodon_death_S_003_revision2.png",
+    "revision": 2,
+    "raw_sha256": "9c7cbaeb2dd644c62376010e27b6a7d08d6db0147f00fad54df956538030cf2c",
+    "export_sha256": "a83301f088b1602e034e2d6ba6176dcc557da4a5d501c0fd65d23866e98be988",
+    "rig_sha256": "4986f31d85fdc025e4d868b2d5823f27338ef6d30e7b6b4da9b1df0eda7ee59d",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_S_004": {
+    "file": "iguanodon_death_S_004.png",
+    "raw": "raw/iguanodon_death_S_004_revision2.png",
+    "revision": 2,
+    "raw_sha256": "1a22c0b7b720faf110b15cf3722fa1b61fd5d21840d418320b2496b953a89ef9",
+    "export_sha256": "9d9a8e85f238882566ab4323601775d44cba1417324da54909483f8a19964464",
+    "rig_sha256": "b8b88942d4aa6499eea850514ab8d2306809a4e0e31411e083596fc396231c63",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_S_005": {
+    "file": "iguanodon_death_S_005.png",
+    "raw": "raw/iguanodon_death_S_005_revision2.png",
+    "revision": 2,
+    "raw_sha256": "894c12698d8acec41c539f0009a33e051d9852a74e1aa0c6dfe8de32eb3a88b7",
+    "export_sha256": "6c0d0ef17e348e6e098f515c43488c020fb5c9a44166a6b756a029f6ddf578dc",
+    "rig_sha256": "56ff7f8dfaf0d0faf47fe8cb7f0d4141e06dd2c7c04a4ec3e0ae18a1e5415e2d",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_N_000": {
+    "file": "iguanodon_death_N_000.png",
+    "raw": "raw/iguanodon_death_N_000_revision2.png",
+    "revision": 2,
+    "raw_sha256": "ceb18be3e40bf4066bf45895dd9bf3ab6ad7f49807c5dbcf7d5ad7381f878dda",
+    "export_sha256": "4b0d9ceced6a59cc5a347cce262471fbfb11b6692a0290223465af8f7597446f",
+    "rig_sha256": "83a257a52f4a818b1fc17e4174344e3572a7d31e2037cbddb48a4e6fdc88b005",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_N_001": {
+    "file": "iguanodon_death_N_001.png",
+    "raw": "raw/iguanodon_death_N_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "a0da66cd9da8d11b704b9ce0d3435fdd0f741714a704c7e054f22ea2845b8f60",
+    "export_sha256": "388282a0a7b65f8166ac0790ea0e9e08f28eb1339ef5cd386c0ea170b95dab6a",
+    "rig_sha256": "1c81ef4c02bf846ed234bcd6725b3cf761792b05cd8d637cdb7d5ecf5b2c5cdd",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_N_002": {
+    "file": "iguanodon_death_N_002.png",
+    "raw": "raw/iguanodon_death_N_002_revision2.png",
+    "revision": 2,
+    "raw_sha256": "13e35b7a3bd82f9625024d069d3ece6e94961caf37a4c461c5ad37f831898b9d",
+    "export_sha256": "e5062aa9c8f42328dfc0d7a3bd569ebebc8e53080ea114b441ffbeea89c2ff87",
+    "rig_sha256": "d54aa63845a4d1d576ff47a3cbaf330d51f91fd8c6099dc63e8b68fa20834ef8",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_N_003": {
+    "file": "iguanodon_death_N_003.png",
+    "raw": "raw/iguanodon_death_N_003_revision2.png",
+    "revision": 2,
+    "raw_sha256": "4834a66578cc55fe1c98fcea2bf714a82ab38378e78eea8b2682acad28189f5b",
+    "export_sha256": "19f32ddc0c9ff7fa4f4c644cb7b89f3b84d471537306025ee158ee5f427db766",
+    "rig_sha256": "c86ea54cda54dbfd7cde6ec37152c4c5768923f4073ad0c63ce3b6da176f189a",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_N_004": {
+    "file": "iguanodon_death_N_004.png",
+    "raw": "raw/iguanodon_death_N_004_revision2.png",
+    "revision": 2,
+    "raw_sha256": "923dd465fe5d157141ccc259a00152fbdfcb73fd5c3e12cfc08ba498e8ed505b",
+    "export_sha256": "2bc045dcf0f3df382524b782425ae7e8e7718893bf97b4e7ff43c36b823f2a0c",
+    "rig_sha256": "daa7a6898bb8496f6f1f32a3bf19cba1d32f06c7434411f848aa88082baa31c3",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_N_005": {
+    "file": "iguanodon_death_N_005.png",
+    "raw": "raw/iguanodon_death_N_005_revision2.png",
+    "revision": 2,
+    "raw_sha256": "2d77cb4f5260b3633b5a77ea7fd2b75a4ff199a9984848900f3851d214b87c49",
+    "export_sha256": "d3d495d4c908e2b253051743bde6ed261ea0ec0d44bbba4950e04c3e40367d9c",
+    "rig_sha256": "0388e5c8e03c78718f30227272ee1e2e61ab76371c65a23f48ad1af041f12a2e",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_E_000": {
+    "file": "iguanodon_death_E_000.png",
+    "raw": "raw/iguanodon_death_E_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "b68cb6da5a628fa6a91ac3c7cc95ef1694a2cc35a3a502631d2f347ccbe6184f",
+    "export_sha256": "ec8192d3cddb89c385537ba52637b0d8f7be2e10d05823ae21e5ddd37a6befe7",
+    "rig_sha256": "293aa0523440e231f8b4622e14d80f46fe2db9a536168f40fdc04d8762c28d9a",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      40,
+      472,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_E_001": {
+    "file": "iguanodon_death_E_001.png",
+    "raw": "raw/iguanodon_death_E_001_revision2.png",
+    "revision": 2,
+    "raw_sha256": "d26a2ae7b71a548e5e878cfe382ce304d9053261286211696ab449016309b9b2",
+    "export_sha256": "8764d0b52c85aaa2f26d35b2dfd703975f2eda2283c58e5426b933976fe7075f",
+    "rig_sha256": "fe489b4532ffc5f4452fe4a53916919c2d8c9456e2cb9aacb846f189097ba16f",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_E_002": {
+    "file": "iguanodon_death_E_002.png",
+    "raw": "raw/iguanodon_death_E_002_revision2.png",
+    "revision": 2,
+    "raw_sha256": "22072f37fd7093a35795fe31bc776edb016fcc012b285edf8ed3256205cc7eec",
+    "export_sha256": "35ef6a0b13af274db0568e69c46ce69cc21b5250d175592dea9ba6de524b3af7",
+    "rig_sha256": "6e2403a29c11220717af827945df2329c6cb0c269fbc2686e2ee3502818d6db6",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_E_003": {
+    "file": "iguanodon_death_E_003.png",
+    "raw": "raw/iguanodon_death_E_003_revision3.png",
+    "revision": 3,
+    "raw_sha256": "b1ffc43599849cc9baf4488ee2f80157741343a2bd1af30c855e0f01f3011c57",
+    "export_sha256": "1b29a0ea2adfbb123011153ad9c7d9777ef3ad567931bd4a480ca06b9f6f81d9",
+    "rig_sha256": "e145a6a53a01f95f135ba77f2690824a96edb0cc8d9e88d28479acec9e29316f",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_E_004": {
+    "file": "iguanodon_death_E_004.png",
+    "raw": "raw/iguanodon_death_E_004_revision2.png",
+    "revision": 2,
+    "raw_sha256": "5e63686e0cce5ed38934c6eedb5b0c65510ef72fc4a59193b7c4c802941067b0",
+    "export_sha256": "06c4b718d84855666283e3e28aee2d8c32ff3fceae848497313f024e2707afdf",
+    "rig_sha256": "3518e6b0694425450a74d1ccd46964491f0374b4c673d4027354339cc39b982b",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_E_005": {
+    "file": "iguanodon_death_E_005.png",
+    "raw": "raw/iguanodon_death_E_005_revision2.png",
+    "revision": 2,
+    "raw_sha256": "cdbb6b738bdb94d21d59174bae716bfb496653675108ae2666e595406fd9c0a2",
+    "export_sha256": "88a6d8b62a524db11eb2c41906553060801ab9b18ca0e285a2780fb5230b2c2f",
+    "rig_sha256": "a4ed725874bdc93401ca7f4de55b4171595c31170a896502cc0425dcff75c085",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_crop": [
+      -21,
+      -21,
+      1275,
+      1275
+    ],
+    "stride": 9,
+    "sampling_offset": 4,
+    "source_landmark": [
+      627,
+      627
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_W_000": {
+    "file": "iguanodon_death_W_000.png",
+    "raw": "raw/iguanodon_death_W_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "95701c02fc327181607e702a8f2158370971b1348d73d9c50fc15f1b345aaef7",
+    "export_sha256": "e8d6069a3df18173a1fbf563bc8054e4b8e497cabb3b577893c2bf227777a743",
+    "rig_sha256": "d18f063c9fa4d2d300394a6bba444cfc544880f8dd6448ed4e38b7539af13e57",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      40,
+      472,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_W_001": {
+    "file": "iguanodon_death_W_001.png",
+    "raw": "raw/iguanodon_death_W_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "95701c02fc327181607e702a8f2158370971b1348d73d9c50fc15f1b345aaef7",
+    "export_sha256": "7ce590b3a8025d41564c3ecd3463e3d032904b26f16372e9f5a2c3bef08d47b7",
+    "rig_sha256": "23b7c83af95eaf1d91c9d9caa95ca40d1c4028a5600892b390f8bf0b5e65c440",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      552,
+      40,
+      984,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      768,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_W_002": {
+    "file": "iguanodon_death_W_002.png",
+    "raw": "raw/iguanodon_death_W_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "95701c02fc327181607e702a8f2158370971b1348d73d9c50fc15f1b345aaef7",
+    "export_sha256": "1ea6ae72704f341740d2837037fac23bf280b6fe84be234c5d84582cf4fd4277",
+    "rig_sha256": "02d43e0096ecd816fb1d8d3a328da04181238ac1cd436bc27959f69c869d253d",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      1064,
+      40,
+      1496,
+      472
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      1280,
+      256
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_W_003": {
+    "file": "iguanodon_death_W_003.png",
+    "raw": "raw/iguanodon_death_W_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "95701c02fc327181607e702a8f2158370971b1348d73d9c50fc15f1b345aaef7",
+    "export_sha256": "dd24683e9d827e48da8eb757c5c9f31a1faacee58ffa04577b3b90b3eaf64759",
+    "rig_sha256": "e0d6b010d720f158735f0db3f4541d616e259465b758e720049af6614573981e",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      40,
+      552,
+      472,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      256,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_W_004": {
+    "file": "iguanodon_death_W_004.png",
+    "raw": "raw/iguanodon_death_W_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "95701c02fc327181607e702a8f2158370971b1348d73d9c50fc15f1b345aaef7",
+    "export_sha256": "ebe94d0bedcfe27315ae57dd2af1a91cbf428e64d5268da82c58c88e6ec4b77d",
+    "rig_sha256": "42d823358d3c0de41c4adad264fbc96dda1ad26c03a51849689e47a8c283d934",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      552,
+      552,
+      984,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      768,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  },
+  "iguanodon_death_W_005": {
+    "file": "iguanodon_death_W_005.png",
+    "raw": "raw/iguanodon_death_W_batch_revision1.png",
+    "revision": 1,
+    "raw_sha256": "95701c02fc327181607e702a8f2158370971b1348d73d9c50fc15f1b345aaef7",
+    "export_sha256": "d92a43038754d5b3bcf61ff133a1a7b324a5d53ca0047b45f141c063a0f9f3bb",
+    "rig_sha256": "4f1b11efc7a044201b2092531114077abcac627458c30343cdfa78e80d899105",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_crop": [
+      1064,
+      552,
+      1496,
+      984
+    ],
+    "stride": 3,
+    "sampling_offset": 1,
+    "source_landmark": [
+      1280,
+      768
+    ],
+    "alpha_threshold": 192,
+    "origin": [
+      72,
+      72
+    ],
+    "registration_offset": [
+      0,
+      0
+    ],
+    "production_approved": false,
+    "status": "prototype_static"
+  }
+}
