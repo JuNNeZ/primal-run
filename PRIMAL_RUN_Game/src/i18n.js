@@ -32,8 +32,10 @@
     }
     return null;
   }
-  // Numbers become # and key names (W, F, SPACE, SHIFT, ESC, WASD) become @ in dictionary keys.
-  const KEY = /(?<![A-Za-zÆØÅæøå])(?:SPACE|SHIFT|ESC|WASD|[A-Z])(?![A-Za-zÆØÅæøå])/g;
+  // Numbers become # and key names (W, F, SPACE, SHIFT, ESC, WASD, gamepad RB/LB) become @ in dictionary keys.
+  // A touch/gamepad button name in brackets ([SPIS]) is a key name too, but its word is translated on its own.
+  const KEY = /(?<![A-Za-zÆØÅæøå])(?:\[[^\[\]]{1,24}\]|SPACE|SHIFT|ESC|WASD|RB|LB|[A-Z])(?![A-Za-zÆØÅæøå])/g;
+  function keyText(k) { return k && k[0] === '[' ? '[' + translate(k.slice(1, -1)) + ']' : k; }
   function withNumbers(text) {
     const numbers = [], keys = [];
     const key = text.replace(/(?<!\{)\d+(?:[.,]\d+)?(?!\})/g, n => { numbers.push(n); return '#'; }).replace(KEY, k => { keys.push(k); return '@'; });
@@ -42,11 +44,11 @@
       const plain = text.replace(/\d+(?:[.,]\d+)?/g, '#'); hit = lookup(lang, plain); if (hit !== null) keys.length = 0;
     }
     if (hit === null) return null;
-    let i = 0, j = 0; return hit.replace(/#/g, () => numbers[i++] ?? '#').replace(/@/g, () => keys[j++] ?? '@');
+    let i = 0, j = 0; return hit.replace(/#/g, () => numbers[i++] ?? '#').replace(/@/g, () => keyText(keys[j++]) ?? '@');
   }
   function translate(text) {
     if (lang === 'da' || typeof text !== 'string') return text;
-    const trimmed = text.trim(); if (!trimmed || !/[A-Za-zÆØÅæøåÉé]/.test(trimmed.replace(KEY, ''))) return text;
+    const trimmed = text.trim(); if (!trimmed || !/[A-Za-zÆØÅæøåÉé]/.test(trimmed.replace(KEY, ''))) return text.replace(KEY, keyText);
     const k = lang + '\u0000' + trimmed; if (cache.has(k)) return pad(text, cache.get(k));
     let out = withNumbers(trimmed);
     if (out === null && trimmed.includes(' · ')) out = trimmed.split(' · ').map(part => translateCore(part)).join(' · ');

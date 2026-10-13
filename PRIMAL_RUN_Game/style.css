@@ -105,3 +105,13 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .species-card .unlock-hint{margin:0 0 8px;font-size:11px;color:#e5b55b}
 .species-card button{margin-top:0}
 .species-grid .species-card img{width:120px;height:120px;margin:0 auto;display:block}
+/* HUD time icon: the generic ".arena canvas" rule stretched it over the whole arena as brown blocks. */
+.arena canvas.time-icon{position:static!important;inset:auto!important;width:16px!important;height:16px!important;display:inline-block;vertical-align:-3px;margin-right:4px;transform:none!important;pointer-events:none}
+/* Holding a touch button must not select HUD or button text; form fields stay selectable. */
+.arena,.touch-controls,footer{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.arena input,.arena textarea,.arena select{-webkit-user-select:text;user-select:text}
+.touch-controls button{-webkit-tap-highlight-color:transparent}
+/* Control hints follow the last input: touch shows the on-screen buttons, a gamepad hides them. */
+.primal-shell[data-input="touch"] .touch-controls:not([hidden]){display:flex}
+.primal-shell[data-input="gamepad"] .touch-controls{display:none!important}
+.primal-shell[data-input="touch"] footer .control-hints{display:none}
