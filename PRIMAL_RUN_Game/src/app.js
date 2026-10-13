@@ -9,6 +9,12 @@
     const game = new C.Game({ storage });
     const I18N=root.PrimalI18n||{t:x=>x,translateNode(){},setLanguage(){},lang:'da',LANGUAGES:[{id:'da',name:'Dansk'}]};I18N.setLanguage(game.save.settings.language||'da');const tr=text=>I18N.t(text);const listSep=()=>({ja:'、',zh:'、',yue:'、',ar:'، ',ur:'، '})[I18N.lang]||', '; // field-guide lists: each item is translated on its own
     const keyLabel=action=>game.save.bindings[action].replace('Key','').replace(/Shift(Left|Right)/,'SHIFT').replace('Space','SPACE');
+    // Control hints follow the last input used: keyboard, touch or gamepad (Xbox layout: Steam Deck, ROG Ally, Xbox/PC pads).
+    // Bracketed button names are translated by I18N like key names, so every sentence keeps one dictionary entry.
+    const PAD_CONTROLS={attack:'A',ability:'B',eat:'X',interact:'Y',sneak:'RB',move:'[VENSTRE PIND]',pause:'[☰]'},TOUCH_CONTROLS={attack:'[ANGREB]',ability:'[EVNE]',eat:'[SPIS]',interact:'[UNDERSØG]',sneak:'',move:'[JOYSTICK]',pause:'[PAUSE]'};
+    let inputMode=root.matchMedia&&root.matchMedia('(pointer:coarse)').matches?'touch':'keyboard',inputModeTimer=0;
+    const control=action=>inputMode==='gamepad'?PAD_CONTROLS[action]:inputMode==='touch'?TOUCH_CONTROLS[action]:action==='move'?['up','left','down','right'].map(keyLabel).join(''):action==='pause'?'ESC':keyLabel(action);
+    const controlWord=action=>control(action).replace(/^\[(.*)\]$/,'$1'),controlName=action=>tr(controlWord(action)); // HUD text (translated per frame) / ready-made <kbd> text
     const shell = document.createElement('div'); shell.className = 'primal-shell';
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
       <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space angriber, Shift bruger evne, F spiser, Escape pauser."></canvas>
@@ -16,7 +22,7 @@
       <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div></div></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div></main>
       <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space">ANGREB</button><button data-key="ShiftLeft">EVNE</button><button data-key="KeyE">UNDERSØG</button><button data-key="KeyF">SPIS</button></div></div>
-      <footer><span><kbd>${['up','left','down','right'].map(keyLabel).join('')}</kbd> Bevæg · <kbd>${keyLabel('attack')}</kbd> Angreb · <kbd>${keyLabel('ability')}</kbd> Evne · <kbd>${keyLabel('sneak')}</kbd> Snig / skjul · <kbd>${keyLabel('eat')}</kbd> Hold for at spise · <kbd>${keyLabel('interact')}</kbd> Undersøg · <kbd>ESC</kbd> Pause</span><span class="save-status"></span></footer>`;
+      <footer><span class="control-hints"><span data-control="move"><kbd></kbd> Bevæg</span><span data-control="attack"> · <kbd></kbd> Angreb</span><span data-control="ability"> · <kbd></kbd> Evne</span><span data-control="sneak"> · <kbd></kbd> Snig / skjul</span><span data-control="eat"> · <kbd></kbd> Hold for at spise</span><span data-control="interact"> · <kbd></kbd> Undersøg</span><span data-control="pause"> · <kbd></kbd> Pause</span></span><span class="save-status"></span></footer>`;
     host.appendChild(shell); I18N.translateNode(shell);
     const canvas = shell.querySelector('canvas'), ctx = canvas.getContext('2d');
     const screen = shell.querySelector('.screen'), images = {}, flashes = {}, skins = {}, displayURLs = {}, decomposition = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
@@ -61,12 +67,27 @@
       return `<img class="${className}" data-sprite-path="${htmlEscape(path)}"${crop ? ' data-crop="1"' : ''} src="${htmlEscape(crop ? (croppedURL(path) || displayImageURL(path)) : displayImageURL(path))}" alt="">`;
     }
     function button(action, text, className = '') { return `<button class="${className}" data-action="${action}">${text}</button>`; }
+    function updateControlHints() {
+      shell.dataset.input = inputMode;
+      shell.querySelectorAll('[data-control]').forEach(el => { const label = controlName(el.dataset.control); el.hidden = !label; el.querySelector('kbd').textContent = label; });
+    }
+    // Species texts say "Space:", "Shift:" and "Hold F"; after translation they get the active control's name.
+    function adaptControls(node) {
+      if (inputMode === 'keyboard') return;
+      for (const el of node.querySelectorAll('[data-controls]')) { el.setAttribute('translate', 'no'); for (const n of el.childNodes) if (n.nodeType === 3) n.nodeValue = n.nodeValue.replace(/\bShift\b/g, controlName('ability')).replace(/\bSpace\b/g, controlName('attack')).replace(/(?<!\p{L})F(?!\p{L})/gu, controlName('eat')); }
+    }
+    // Switch hints a moment after the input changes, so the tap or key press that caused it still reaches its button.
+    function setInputMode(mode) {
+      if (mode === inputMode) return;
+      inputMode = mode; updateControlHints(); clearTimeout(inputModeTimer);
+      inputModeTimer = setTimeout(() => { const active = document.activeElement; if (disposed || !['intro', 'help', 'species', 'shop'].includes(game.phase) || active && screen.contains(active) && active.matches('input,select,textarea')) return; renderScreen(true); }, 400);
+    }
     function heading(kicker, title, text = '') { return `<small class="eyebrow">${kicker}</small><h1>${title}</h1>${text ? `<p class="intro">${text}</p>` : ''}`; }
     function renderScreen(force = false) {
       screen.dir = I18N.rtl ? 'rtl' : 'ltr'; if (root.document) root.document.documentElement.lang = I18N.lang || 'da'; // RTL menus for Arabic/Urdu
       const phase = game.phase, r = game.run;
       if (phase === previousPhase && !force) return;
-      const codes=[['up','left','down','right'].map(keyLabel).join(''),keyLabel('attack'),keyLabel('ability'),keyLabel('sneak'),keyLabel('eat'),keyLabel('interact'),'ESC'];shell.querySelectorAll('footer kbd').forEach((el,i)=>el.textContent=codes[i]);
+      updateControlHints();
       previousPhase = phase; screen.dataset.phase = phase; keys.clear();
       const running = ['build','playing', 'paused', 'mutation', 'exploration', 'cleared'].includes(phase);
       shell.querySelector('.meat-progress').hidden = !running; shell.querySelector('.hud').hidden = !running; shell.querySelector('.run-info').hidden = !running;
@@ -87,10 +108,10 @@
           </section>`;
         screen.querySelector('[data-action="start"]').disabled = !ready;
       } else if (phase === 'intro') {
-        const sp = game.save.selectedSpecies, diet = C.PLAYER_SPECIES[sp].diet, foodText = diet === 'herbivore' ? 'Hold ' + keyLabel('eat') + ' ved planter med en lysende ring' : diet === 'omnivore' ? 'Hold ' + keyLabel('eat') + ' ved planter eller lig' : sp === 'baryonyx' ? 'Hold ' + keyLabel('eat') + ' ved fisk eller lig' : 'Nedlæg dyr og hold ' + keyLabel('eat') + ' ved liget';
+        const sp = game.save.selectedSpecies, diet = C.PLAYER_SPECIES[sp].diet, foodText = diet === 'herbivore' ? 'Hold ' + control('eat') + ' ved planter med en lysende ring' : diet === 'omnivore' ? 'Hold ' + control('eat') + ' ved planter eller lig' : sp === 'baryonyx' ? 'Hold ' + control('eat') + ' ved fisk eller lig' : 'Nedlæg dyr og hold ' + control('eat') + ' ved liget';
         screen.innerHTML = `<section class="panel hunt-intro">${heading(Number(seedInput)===C.SECRET_SEED?'HEMMELIGT SEED FUNDET':'KLAR PÅ 10 SEKUNDER', Number(seedInput)===C.SECRET_SEED?'Compy-tyvenes banket':'Sådan overlever du')}${Number(seedInput)===C.SECRET_SEED?'<p>Én hemmelig bane med ekstra kødtyve.</p>':''}
           <div class="intro-cards">
-            <article>${imageTag(C.playerFrame(sp, 'attack', 'E', 3), 'thumb', true)}<b>Bevæg og angrib</b><p><kbd>${['up','left','down','right'].map(keyLabel).join('')}</kbd> bevæg · <kbd>${keyLabel('attack')}</kbd> angrib · <kbd>${keyLabel('ability')}</kbd> ${C.PLAYER_SPECIES[sp].skill}</p></article>
+            <article>${imageTag(C.playerFrame(sp, 'attack', 'E', 3), 'thumb', true)}<b>Bevæg og angrib</b><p><kbd>${controlWord('move')}</kbd> bevæg · <kbd>${controlWord('attack')}</kbd> angrib · <kbd>${controlWord('ability')}</kbd> ${C.PLAYER_SPECIES[sp].skill}</p></article>
             <article>${imageTag(diet === 'herbivore' ? 'assets/ecology/herb.png' : 'assets/pickups/meat.png', 'thumb', true)}<b>Spis din føde</b><p>${foodText}. Føde giver mutationer og kalder bossen.</p></article>
             <article><span class="intro-warning" aria-hidden="true">▼</span><b>Undvig de røde varsler</b><p>Feltet fyldes op, før angrebet rammer. Gå ud af det i tide.</p></article>
           </div>
@@ -105,7 +126,7 @@
           const lock = C.SPECIES_UNLOCKS[id], achievement = lock.achievement && C.ACHIEVEMENTS.find(a => a.id === lock.achievement);
           const buttonText = selected ? 'VALGT' : unlocked ? 'VÆLG' : achievement ? '🔒 ' + achievement.name.toUpperCase() : 'LÅS OP · ' + d.cost + ' DNA';
           if (C.FEATURES.speciesCards) return speciesCard(id, d, { unlocked, selected, path, achievement, buttonText });
-          return `<article class="${selected ? 'selected-species' : ''}${unlocked ? '' : ' locked-species'}">${imageTag(path)}<h2>${d.name}</h2><p>${d.text}</p><small>${d.hp} LIV · ${d.damage} SKADE · ${d.speed} FART</small>${!unlocked && achievement ? `<p class="unlock-hint">${achievement.text}</p>` : ''}<button data-species="${id}" ${selected || !unlocked && (achievement || game.save.dna < d.cost) ? 'disabled' : ''}>${buttonText}</button></article>`;
+          return `<article class="${selected ? 'selected-species' : ''}${unlocked ? '' : ' locked-species'}">${imageTag(path)}<h2>${d.name}</h2><p data-controls>${d.text}</p><small>${d.hp} LIV · ${d.damage} SKADE · ${d.speed} FART</small>${!unlocked && achievement ? `<p class="unlock-hint">${achievement.text}</p>` : ''}<button data-species="${id}" ${selected || !unlocked && (achievement || game.save.dna < d.cost) ? 'disabled' : ''}>${buttonText}</button></article>`;
         }).join('')}</div><div class="skin-picker"><h2>Farvedragt</h2><div>${Object.entries(C.SKINS).map(([id, skin]) => { const owned = game.save.skins.includes(id), req = skin.achievement && C.ACHIEVEMENTS.find(a => a.id === skin.achievement); return `<button data-skin="${id}" class="${game.save.skin === id ? 'selected' : ''}" ${owned ? '' : 'disabled'} title="${owned ? skin.name : 'Låses op af: ' + (req ? req.name : '')}">${owned ? '' : '🔒 '}${skin.name}${skin.species ? ' <small>' + (owned ? 'kun ' + speciesName(skin.species) : req.text) + '</small>' : ''}</button>`; }).join('')}</div>${C.FEATURES.fishKing && !game.save.skins.includes('fishKing') ? `<p class="fine fish-king-progress">${I18N.tf('Fiskekonge: {0}/{1} fisk som Baryonyx', Math.min(C.FISH_KING, game.save.baryonyxFish || 0), C.FISH_KING)}</p>` : ''}</div><p class="fine">Et fantasiunivers: arterne kommer fra forskellige perioder. Compy: sen Jura. Utahraptor: tidlig Kridt. Baryonyx: tidlig Kridt. De øvrige arter: sen Kridt. Deinosuchus er en krokodilleslægt.</p>${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'achievements') {
         const done = C.ACHIEVEMENTS.filter(a => game.save.achievements[a.id]).length, life = game.save.lifetime;
@@ -113,7 +134,7 @@
       } else if (phase === 'guide') {
         screen.innerHTML=`<section class="panel">${heading('DALENS ARTSBOG','Observerede dinosaurer','Nye arter og angreb registreres, når du ser dem tæt på. Gemmes mellem runs.')}<div class="upgrade-grid">${Object.keys(C.SPECIES).map(id=>{const entry=game.save.fieldGuide[id];return `<article><h2>${entry?C.SPECIES_LABELS[id]:'Ukendt art'}</h2>${entry?`${C.FEATURES.guideModels?`<canvas class="guide-model" data-kind="${id}" width="240" height="120" aria-hidden="true"></canvas>`:''}<p>Observeret i: ${entry.biomes.map(i=>tr(C.STAGES[i].name)).join(listSep())}</p><p>Føde: ${['parasaurolophus','ankylosaurus','triceratops','pachycephalosaurus'].includes(id)?'Planter':id==='gallimimus'?'Planter og smådyr':id==='baryonyx'?'Fisk og kød':'Kød'}</p><p>Observerede angreb: ${entry.attacks.map(a=>tr(({bite:'Bid',charge:'Stormløb',slam:'Slag/tramp',roar:'Brøl'})[a])).join(listSep())||'Ingen endnu'}</p>`:'<p>Udforsk dalen for at lære arten at kende.</p>'}</article>`;}).join('')}</div>${button('menu','← Tilbage')}</section>`;
       } else if (phase === 'shop') {
-        screen.innerHTML = `<section class="panel">${heading('PERMANENT EVOLUTION', 'DNA-laboratoriet', 'Permanente forbedringer til alle arter.')}<div class="bank">${imageTag('assets/ui/dna.png')}<b>${game.save.dna} DNA</b></div><div class="lab-summary"><h2>${C.PLAYER_SPECIES[game.save.selectedSpecies].name}</h2><p>${C.PLAYER_SPECIES[game.save.selectedSpecies].text}</p><p>Startliv: ${Math.round(C.PLAYER_SPECIES[game.save.selectedSpecies].hp*(1+.02*game.save.upgrades.health))} · Angreb: ${(C.PLAYER_SPECIES[game.save.selectedSpecies].damage*(1+.02*game.save.upgrades.damage)).toFixed(1)} · Evne: ${C.PLAYER_SPECIES[game.save.selectedSpecies].abilityCost} stamina</p>${button('species','Artsarkiv · '+game.save.unlockedSpecies.length+' / '+Object.keys(C.PLAYER_SPECIES).length+' arter')}</div><div class="upgrade-grid">${C.UPGRADES.map(u => {
+        screen.innerHTML = `<section class="panel">${heading('PERMANENT EVOLUTION', 'DNA-laboratoriet', 'Permanente forbedringer til alle arter.')}<div class="bank">${imageTag('assets/ui/dna.png')}<b>${game.save.dna} DNA</b></div><div class="lab-summary"><h2>${C.PLAYER_SPECIES[game.save.selectedSpecies].name}</h2><p data-controls>${C.PLAYER_SPECIES[game.save.selectedSpecies].text}</p><p>Startliv: ${Math.round(C.PLAYER_SPECIES[game.save.selectedSpecies].hp*(1+.02*game.save.upgrades.health))} · Angreb: ${(C.PLAYER_SPECIES[game.save.selectedSpecies].damage*(1+.02*game.save.upgrades.damage)).toFixed(1)} · Evne: ${C.PLAYER_SPECIES[game.save.selectedSpecies].abilityCost} stamina</p>${button('species','Artsarkiv · '+game.save.unlockedSpecies.length+' / '+Object.keys(C.PLAYER_SPECIES).length+' arter')}</div><div class="upgrade-grid">${C.UPGRADES.map(u => {
           const rank = game.save.upgrades[u.id], cost = C.upgradeCost(rank);
           return `<article><h2>${u.name}</h2><p>${u.text}</p><p>Rang ${rank} → ${Math.min(u.max,rank+1)} / ${u.max} · ${rank>=u.max?'Maksimum':game.save.dna>=cost?'Klar til udvikling':'Mangler '+(cost-game.save.dna)+' DNA'}</p><div class="ranks">${'●'.repeat(rank)}${'○'.repeat(u.max - rank)}</div><button data-buy="${u.id}" ${rank >= u.max || game.save.dna < cost ? 'disabled' : ''}>${rank >= u.max ? 'Fuldt udviklet' : cost + ' DNA · Køb rang ' + (rank + 1)}</button></article>`;
         }).join('')}</div>${button('menu', '← Tilbage')}</section>`;
@@ -138,14 +159,14 @@
         screen.innerHTML = `<section class="panel">${heading('LOKALE REKORDER', 'Rekorder', 'Hall of Fame og Hall of Shame i denne browser. Ingen globale ranglister.')}${recordsHTML()}${recordsTab==='top'?`<div class="table-scroll"><table><thead><tr><th>#</th><th>Jæger</th><th>Score</th><th>Bane</th><th>Bosser</th><th>Tid</th></tr></thead><tbody>${game.save.scores.map((s, i) => `<tr><td>${i + 1}</td><td>${htmlEscape(s.name)}${s.victory ? ' ♛' : ''}</td><td>${s.score}</td><td>${s.stage}</td><td>${s.bosses}</td><td>${timeLabel(s.seconds)}</td></tr>`).join('') || '<tr><td colspan="6">Din første jagt venter.</td></tr>'}</tbody></table></div>`:''}${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'help') {
         screen.innerHTML = `<section class="panel">${heading('LÆR AT JAGE', 'Sådan spiller du')}<ol class="instructions">
-          <li><b>Bevæg og angrib.</b> Gå tæt på og tryk ${keyLabel('attack')}. Kritiske træf giver ekstra skade og stagger.</li>
-          <li><b>Brug din evne.</b> ${keyLabel('ability')} bruger artens evne. Den koster stamina – løber du tør, bliver du forpustet.</li>
-          <li><b>Spis din føde.</b> Hold ${keyLabel('eat')} ved føde. Føde giver mutationer og kalder bossen frem.</li>
+          <li><b>Bevæg og angrib.</b> Gå tæt på og tryk ${control('attack')}. Kritiske træf giver ekstra skade og stagger.</li>
+          <li><b>Brug din evne.</b> ${control('ability')} bruger artens evne. Den koster stamina – løber du tør, bliver du forpustet.</li>
+          <li><b>Spis din føde.</b> Hold ${control('eat')} ved føde. Føde giver mutationer og kalder bossen frem.</li>
           <li><b>Undvig de røde felter.</b> De fyldes op før angrebet. Bosser drejer efter dig i starten, så undvig sent.</li>
           <li><b>Udforsk.</b> Hver bane har områder med egne dyr, skjulte belønninger og en valgfri rival (☠).</li>
-          <li><b>Skjul dig.</b> Stå stille eller hold ${keyLabel('sneak')} i buske. Dybt vand kan kun krydses ved vadesteder.</li>
+          <li><b>Skjul dig.</b> ${control('sneak')?'Stå stille eller hold '+control('sneak')+' i buske. Dybt vand kan kun krydses ved vadesteder.':'Stå stille i buske. Dybt vand kan kun krydses ved vadesteder.'}</li>
           <li><b>DNA beholdes.</b> Køb arter og opgraderinger. Nogle arter låses op med bedrifter.</li></ol>
-          <p class="fine">Kød rådner efter et stykke tid. Escape pauser spillet.</p>${button('menu', '← Klar til jagt', 'primary')}</section>`;
+          <p class="fine">Kød rådner efter et stykke tid. ${control('pause')} pauser spillet.</p>${button('menu', '← Klar til jagt', 'primary')}</section>`;
       } else if (phase === 'paused') {
         screen.innerHTML = `<section class="panel compact">${heading('TAG EN PAUSE', 'Jagten venter', 'Kort-seed: ' + r.seed)}${button('resume', 'FORTSÆT · Esc', 'primary')}${button('build', 'DIT BUILD')}${button('share', 'DEL KORT-SEED')}<label>Seed-link<input class="seed-link" readonly value="${htmlEscape((()=>{const url=new URL(location.href);url.searchParams.set('seed',r.seed);return url.href;})())}"></label><div class="actions">${button('settings', 'Indstillinger')}${button('abandon', 'Afslut run')}</div><p class="fine">Opsamlet DNA er allerede gemt. Afslut run registrerer din score.</p></section>`;
       } else if (phase === 'build') {
@@ -167,7 +188,7 @@
       } else if (phase === 'error') {
         screen.innerHTML = `<section class="panel">${heading('INDLÆSNING FEJLEDE', 'Assets mangler')}<p>Kontrollér, at assets-mappen følger med spillet. Genindlæs siden efter rettelsen.</p><p class="load-error"></p></section>`;
       }
-      I18N.translateNode(screen);
+      I18N.translateNode(screen); adaptControls(screen);
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
       shell.querySelector('.save-status').textContent = tr(game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session');
     }
@@ -183,8 +204,8 @@
       const price=achievement?`<span class="species-price achievement-price">🏆 <span>Bedrift</span></span>`:d.cost?`<span class="species-price">${d.cost} DNA</span>`:`<span class="species-price free-price">Gratis</span>`;
       const stat=(k,label)=>`<div class="species-stat"><span>${label}</span><i><b style="width:${Math.round(100*d[k]/SPECIES_MAX[k])}%"></b></i><em>${d[k]}</em></div>`;
       const seconds=String(d.abilityCooldown).replace('.',I18N.lang==='da'?',':'.');
-      return `<article data-species-card="${id}" class="species-card${selected?' selected-species':''}${unlocked?'':' locked-species'}"><header>${price}<span class="species-diet diet-${d.diet}">${diet}</span></header>${imageTag(path)}<h2>${d.name}</h2><p class="species-role">${d.role}</p><p class="species-text">${d.text}</p>`
-        +`<div class="species-skill"><div><kbd>${keyLabel('ability')}</kbd><b>${d.skill}</b></div><p>${d.skillText}</p><small><span>${d.abilityCost} stamina</span> · <span>${seconds} s</span></small></div>`
+      return `<article data-species-card="${id}" class="species-card${selected?' selected-species':''}${unlocked?'':' locked-species'}"><header>${price}<span class="species-diet diet-${d.diet}">${diet}</span></header>${imageTag(path)}<h2>${d.name}</h2><p class="species-role">${d.role}</p><p class="species-text" data-controls>${d.text}</p>`
+        +`<div class="species-skill"><div><kbd>${controlWord('ability')}</kbd><b>${d.skill}</b></div><p>${d.skillText}</p><small><span>${d.abilityCost} stamina</span> · <span>${seconds} s</span></small></div>`
         +`<div class="species-stats">${stat('hp','Liv')}${stat('damage','Skade')}${stat('speed','Fart')}</div>`
         +`${!unlocked&&achievement?`<p class="unlock-hint">${achievement.text}</p>`:''}<button data-species="${id}" ${selected||!unlocked&&(achievement||game.save.dna<d.cost)?'disabled':''}>${buttonText}</button></article>`;
     };
@@ -798,7 +819,7 @@
         // A float identifies a fishing spot; fish frames only appear on a successful catch.
         ctx.save();const x=Math.round(school.x+32),y=Math.round(school.y+(calm()?0:Math.sin(r.seconds*2+school.x)*2));ctx.fillStyle='#151b19';ctx.fillRect(x-3,y-7,6,10);ctx.fillStyle=school.stock?'#e9b75a':'#929387';ctx.fillRect(x-2,y-6,4,4);ctx.fillStyle='#e8ece1';ctx.fillRect(x-2,y-2,4,3);ctx.restore();
         label(school.stock?'FISKESTED · '+school.stock+'/'+(school.capacity||school.stock):'FISKESTED · TØMT',school.x+32,school.y+18,school.stock?'#a2d4c1':'#929387');
-        if(school.stock&&r.species==='baryonyx')label('HOLD '+keyLabel('eat')+' · FISK',school.x+32,school.y+34,'#e8ece1');
+        if(school.stock&&r.species==='baryonyx')label('HOLD '+control('eat')+' · FISK',school.x+32,school.y+34,'#e8ece1');
       }
       const objects = map.rocks.map(p => ({ ...p, path: 'assets/environment/rock.png' }));
       objects.push(...map.decorations.filter(o=>o.x>=view.x-200&&o.x<=view.x+canvas.width+200&&o.y>=view.y-200&&o.y<=view.y+canvas.height+200));
@@ -807,7 +828,7 @@
         objects.push({ ...site, path: 'assets/props/' + (site.type === 'fossil' ? 'skull' : 'nest_eggs') + '.png' });
         if (Math.hypot(site.x-r.player.x,site.y-r.player.y)<160) label((site.type === 'fossil' ? 'FOSSIL' : site.guardDefeated?'FORLADT REDE':'BEVOGTET REDE')+' · E',site.x,site.y-42,'#e9b75a');
       }
-      if(r&&['herbivore','omnivore'].includes(C.PLAYER_SPECIES[r.species].diet))for(const plant of map.forage)if(!plant.depleted){objects.push({...plant,edible:true,path:plant.foodType&&plant.foodType!=='herb'?'assets/forage/'+(plant.toxic?'toxic_mushrooms':plant.foodType)+'_'+((String(plant.id).length+Math.floor(plant.x))%2)+'.png':'assets/ecology/herb.png'});if(Math.hypot(plant.x-r.player.x,plant.y-r.player.y)<180)label((plant.toxic?'⚠ GIFTIGE SVAMPE ':({fruit:'FRUGT ',roots:'RØDDER ',mushrooms:'SVAMPE '}[plant.foodType]||'❧ '))+plant.value+' · '+keyLabel('eat')+' SPIS',plant.x,plant.y-42,C.MEAT_RARITIES[plant.rarity].color);}
+      if(r&&['herbivore','omnivore'].includes(C.PLAYER_SPECIES[r.species].diet))for(const plant of map.forage)if(!plant.depleted){objects.push({...plant,edible:true,path:plant.foodType&&plant.foodType!=='herb'?'assets/forage/'+(plant.toxic?'toxic_mushrooms':plant.foodType)+'_'+((String(plant.id).length+Math.floor(plant.x))%2)+'.png':'assets/ecology/herb.png'});if(Math.hypot(plant.x-r.player.x,plant.y-r.player.y)<180)label((plant.toxic?'⚠ GIFTIGE SVAMPE ':({fruit:'FRUGT ',roots:'RØDDER ',mushrooms:'SVAMPE '}[plant.foodType]||'❧ '))+plant.value+' · '+(inputMode==='touch'?'SPIS':control('eat')+' SPIS'),plant.x,plant.y-42,C.MEAT_RARITIES[plant.rarity].color);}
       if (r) {
         for (const e of r.enemies) {
           const attacking=['charge','bite','slam','fishstrike'].includes(e.mode), winding=e.mode==='windup';
@@ -852,7 +873,7 @@
         if (o.raptor) { const a = o.raptor, d = r ? Math.hypot(a.x - r.player.x, a.y - r.player.y) : 1e9;
           if (a.ally) { if (!presentation('assets/ui/raptor_ally.png', a.x, a.y - 46)) { ctx.save(); ctx.fillStyle = '#a2d4c1'; ctx.strokeStyle = '#151b19'; ctx.lineWidth = 2; const mx = Math.round(a.x), my = Math.round(a.y) - 46; ctx.beginPath(); ctx.moveTo(mx, my - 5); ctx.lineTo(mx + 5, my); ctx.lineTo(mx, my + 5); ctx.lineTo(mx - 5, my); ctx.closePath(); ctx.stroke(); ctx.fill(); ctx.restore(); }
             ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(a.x) - 14, Math.round(a.y) + 14, 28, 3); ctx.fillStyle = a.mode === 'flee' ? '#de954a' : '#a2d4c1'; ctx.fillRect(Math.round(a.x) - 14, Math.round(a.y) + 14, Math.round(28 * a.hp / a.maxHP), 3); }
-          else if (d < 300) { const fed = r.pickups.some(p => p.corpseId !== undefined && p.value > 0 && Math.hypot(p.x - a.x, p.y - a.y) < C.PACK.meatReach); label(d < 160 && fed ? 'VILD RAPTOR · ' + keyLabel('interact') + ' FODR' : d < 160 ? 'VILD RAPTOR · LÆG KØD HER' : 'VILD RAPTOR', a.x, a.y - 44, '#a2d4c1'); } }
+          else if (d < 300) { const fed = r.pickups.some(p => p.corpseId !== undefined && p.value > 0 && Math.hypot(p.x - a.x, p.y - a.y) < C.PACK.meatReach); label(d < 160 && fed ? 'VILD RAPTOR · ' + control('interact') + ' FODR' : d < 160 ? 'VILD RAPTOR · LÆG KØD HER' : 'VILD RAPTOR', a.x, a.y - 44, '#a2d4c1'); } }
         if (o.enemy) { const e = o.enemy, near = r && Math.hypot(e.x - r.player.x, e.y - r.player.y) < 230, special = e.boss || e.elite || e.rare || e.miniboss;
           if ((special || near) && !menuScene()) label((e.boss ? '◆ ' : e.miniboss ? '☠ ' : e.elite ? '★ ' : e.rare ? '✦ ' : e.damage ? '⚠ ' : '') + (e.rivalName || C.SPECIES_LABELS[e.kind]), o.x, o.y - enemyLabelOffset(e), e.miniboss ? '#e9b75a' : e.damage ? '#ed7869' : '#8eaa60');
           const icon = MODE_ICON[e.mode]; if (icon && !e.boss && !(near && /^assets\/behavior(?:_native)?\//.test(o.path) && ['graze','drink','rest','fish'].includes(e.mode))) { ctx.save(); ctx.font = 'bold 14px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713'; const iy = Math.round(o.y - enemyLabelOffset(e) - (special || near ? 16 : 0)); ctx.strokeText(icon[0], Math.round(o.x), iy); ctx.fillStyle = icon[1]; ctx.fillText(icon[0], Math.round(o.x), iy); ctx.restore(); } }
@@ -868,7 +889,7 @@
       }
       if(r)for(const c of r.ashClouds||[])if(c.until>r.seconds){if(drawApprovedAsh(c,r))continue;const fade=Math.min(1,c.until-r.seconds);ctx.save();ctx.globalAlpha=.32*fade;ctx.fillStyle='#626861';for(let i=0;i<5;i++){const a=i*1.26+c.x*.01;ctx.beginPath();ctx.arc(c.x+Math.cos(a)*c.radius*.35,c.y+Math.sin(a)*c.radius*.25,c.radius*.55,0,Math.PI*2);ctx.fill();}ctx.restore();} // B1c native ash clouds, with procedural fallback.
       if(r)drawTelegraphs(r);
-      if(r&&C.PLAYER_SPECIES[r.species].diet!=='herbivore')for(const food of r.pickups.filter(p=>p.corpseId!==undefined)){const corpse=r.corpses.find(c=>c.id===food.corpseId);if(corpse)label(C.MEAT_RARITIES[food.rarity].symbol+' '+food.value+(corpse.age>=7?' · FORDÆRVER':' · FRISK')+' · '+keyLabel('eat')+' SPIS',food.x,food.y+enemyLabelOffset(corpse),C.MEAT_RARITIES[food.rarity].color);}
+      if(r&&C.PLAYER_SPECIES[r.species].diet!=='herbivore')for(const food of r.pickups.filter(p=>p.corpseId!==undefined)){const corpse=r.corpses.find(c=>c.id===food.corpseId);if(corpse)label(C.MEAT_RARITIES[food.rarity].symbol+' '+food.value+(corpse.age>=7?' · FORDÆRVER':' · FRISK')+' · '+(inputMode==='touch'?'SPIS':control('eat')+' SPIS'),food.x,food.y+enemyLabelOffset(corpse),C.MEAT_RARITIES[food.rarity].color);}
       for(const ambient of map.ambience || [])if(ambient.x>view.x-40&&ambient.x<view.x+canvas.width+40&&ambient.y>view.y-40&&ambient.y<view.y+canvas.height+40)insect(ambient,r?r.seconds:0);
       if (r) {
         if (r.species === 'ankylosaurus' && r.pounce > 0) { ctx.strokeStyle='#a2d4c1'; ctx.lineWidth=4; ctx.beginPath(); ctx.arc(Math.round(r.player.x),Math.round(r.player.y),38,0,Math.PI*2); ctx.stroke(); }
@@ -911,7 +932,7 @@
         const diet = C.PLAYER_SPECIES[r.species].diet; shell.querySelector('#food-chip').textContent = (diet === 'herbivore' ? '❧ ' : diet === 'piscivore' ? '≈ ' : '◆ ') + r.meat + '/' + game.currentLevel().target;
         shell.querySelector('#dna-chip').textContent = '⬡ ' + r.dna; const zone = r.zone !== null && r.zone !== undefined && r.map.zones ? r.map.zones[r.zone] : null; shell.querySelector('#zone-chip').textContent = zone ? zone.name : '';
         drawPortrait(r); }
-      canvas.dataset.surface=r.surface;canvas.dataset.hidden=String(r.hidden);shell.querySelector('#terrain-label').textContent=r.hidden?'SKJULT · angrib for at afsløre dig':({water:['baryonyx','deinosuchus'].includes(r.species)?'VAND · FLODJÆGER':'VAND · 60 % fart',mud:'MUDDER · 75 % fart',bush:'BUSKE · stå stille / hold C',ground:''})[r.surface];
+      canvas.dataset.surface=r.surface;canvas.dataset.hidden=String(r.hidden);shell.querySelector('#terrain-label').textContent=r.hidden?'SKJULT · angrib for at afsløre dig':({water:['baryonyx','deinosuchus'].includes(r.species)?'VAND · FLODJÆGER':'VAND · 60 % fart',mud:'MUDDER · 75 % fart',bush:control('sneak')?'BUSKE · stå stille / hold '+control('sneak'):'BUSKE · stå stille',ground:''})[r.surface];
       shell.querySelector('#biome-label').textContent = 'BANE ' + (r.levelIndex + 1) + '/' + r.campaign.length + ' · ' + game.currentLevel().name;
       shell.querySelector('#meat-label').textContent = r.bossSpawned ? 'BOSSEN ER HER' : r.meat + ' / ' + game.currentLevel().target + ({herbivore:' PLANTEFØDE',omnivore:' FØDE',piscivore:' FISK / KØD',carnivore:' KØD'})[C.PLAYER_SPECIES[r.species].diet];
       const progress = shell.querySelector('.meat-progress'), percent = Math.min(100, Math.floor(r.xp / r.nextXP * 100));
@@ -922,10 +943,10 @@
       shell.querySelector('#dna-label').textContent = '+' + r.dna + ' DNA · ' + r.kills + ' JAGTER';
       drawTimeIcon(r); // Approved native HUD art, with the existing glyph as fallback.
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
-      shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : keyLabel('ability')+' KLAR');
+      shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : control('ability')+' KLAR');
       const config=C.PLAYER_SPECIES[r.species],cost=C.abilityCost(r),attackFraction=1-r.attackCooldown/(r.attackDuration||config.cooldown),abilityFraction=1-r.pounceCooldown/(r.abilityCooldownDuration||config.abilityCooldown);
       shell.querySelector('#attack-fill').style.width=Math.max(0,Math.min(100,attackFraction*100))+'%';shell.querySelector('#ability-fill').style.width=Math.max(0,Math.min(100,abilityFraction*100))+'%';
-      shell.querySelector('#attack-ready').textContent=keyLabel('attack')+' · '+(r.attackCooldown>0?r.attackCooldown.toFixed(1)+' s':'KLAR');shell.querySelector('#ability-ready').textContent=keyLabel('ability')+' · '+(r.pounceCooldown>0?r.pounceCooldown.toFixed(1)+' s':r.stamina<cost?'MANGLER STAMINA':'KLAR')+' · '+cost+' ⚡';
+      shell.querySelector('#attack-ready').textContent=controlWord('attack')+' · '+(r.attackCooldown>0?r.attackCooldown.toFixed(1)+' s':'KLAR');shell.querySelector('#ability-ready').textContent=controlWord('ability')+' · '+(r.pounceCooldown>0?r.pounceCooldown.toFixed(1)+' s':r.stamina<cost?'MANGLER STAMINA':'KLAR')+' · '+cost+' ⚡';
       shell.querySelector('.action-cooldowns').dataset.ready=String(r.pounceCooldown===0&&r.stamina>=cost);
       bossHUD.hidden = !boss || !['playing', 'paused', 'mutation'].includes(game.phase);
       if (boss) { bossHUD.querySelector('b').textContent = (boss.bossName || game.currentLevel().bossName) + (' · FASE ' + boss.bossPhase) + ' · ' + Math.round(Math.hypot(boss.x - r.player.x, boss.y - r.player.y) / 32) + ' m · find ◆ på kortet' + (boss.mode === 'stalk' ? ' · LURER VED BREDDEN' : boss.mode === 'leash' ? ' · VENDER HJEM' : boss.mode === 'reposition' ? ' · SØGER EN VEJ' : ''); bossHUD.dataset.bossPhase = boss.bossPhase; const tip = bossHUD.querySelector('.boss-tip'); tip.hidden = false; tip.textContent = boss.mode === 'recover' ? 'ÅBEN FLANKE · +50 % SKADE BAGFRA' : boss.mode === 'enrage' ? ({carnotaurus:'FASE 2 · DOBBELT STORMLØB OG TRAMP',deinosuchus:'FASE 2 · HURTIGT BAGHOLD OG STØRRE HALEBØLGE',triceratops:'FASE 2 · DOBBELT HORNSTORM',tyrannosaurus:'FASE 2 · DOBBELTBID OG BRØL',pachycephalosaurus:'FASE 2 · HURTIGERE KUPPELSTØD',baryonyx:'FASE 2 · HURTIGERE KLØGAB',ankylosaurus:'FASE 2 · HURTIGERE HALESVING'})[boss.kind] : boss.mode === 'windup' ? boss.attackName : 'UNDVIG SIDEVÆRT · BID, NÅR DEN HVILER'; bossHUD.querySelector('i').style.width = Math.max(0, boss.hp / boss.maxHP * 100) + '%'; }
@@ -939,6 +960,7 @@
       const pad=Array.from(navigator.getGamepads?.()||[]).find(Boolean),buttons=pad?pad.buttons.map(b=>b.pressed):[];
       if(buttons[9]&&!padPrevious[9]){if(game.phase==='playing')game.pause();else if(game.phase==='paused')game.resume();}
       if(game.phase!=='playing'&&pad){const focusables=Array.from(screen.querySelectorAll('button:not(:disabled)'));if((buttons[12]&&!padPrevious[12])||(buttons[13]&&!padPrevious[13])){const index=focusables.indexOf(document.activeElement),delta=buttons[12]?-1:1;focusables[(index+delta+focusables.length)%focusables.length]?.focus();}if(buttons[0]&&!padPrevious[0]&&screen.contains(document.activeElement))document.activeElement.click();}
+      if(pad&&(buttons.some(Boolean)||pad.axes.some(a=>Math.abs(a)>.5)))setInputMode('gamepad');
       padPrevious=buttons;
       const held=action=>keys.has(game.save.bindings[action]);
       const ax=pad&&Math.abs(pad.axes[0])>.18?pad.axes[0]:0,ay=pad&&Math.abs(pad.axes[1])>.18?pad.axes[1]:0;
@@ -1031,6 +1053,9 @@
     listen(window, 'keyup', e => {if(e.code==='Space'&&!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName))e.preventDefault();keys.delete(e.code);});
     const unfocus = () => {joystick={x:0,y:0};keys.clear(); accumulator = 0; last = 0; game.pause(); renderScreen(); };
     listen(window, 'blur', unfocus); listen(document, 'visibilitychange', () => { if (document.hidden) unfocus(); });
+    listen(window, 'keydown', e => { if (!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName) && !bindingAction) setInputMode('keyboard'); });
+    listen(shell, 'pointerdown', e => { if (e.pointerType === 'touch' || e.pointerType === 'pen') setInputMode('touch'); });
+    listen(shell.querySelector('.touch-controls'), 'contextmenu', e => e.preventDefault()); // long press opens no menu
     listen(shell, 'pointerdown', e => { audio.unlock(); const target = e.target.closest('[data-key]'); if (!target || game.phase !== 'playing') return; e.preventDefault(); target.setPointerCapture(e.pointerId); const action=Object.keys(game.save.bindings).find(a=>({attack:'Space',ability:'ShiftLeft',interact:'KeyE',eat:'KeyF'})[a]===target.dataset.key);target.dataset.activeKey=action?game.save.bindings[action]:target.dataset.key;keys.add(target.dataset.activeKey); });
     const releasePointer = e => { const target = e.target.closest('[data-key]'); if (target) keys.delete(target.dataset.activeKey||target.dataset.key); };
     listen(shell, 'pointerup', releasePointer); listen(shell, 'pointercancel', releasePointer); listen(shell, 'lostpointercapture', releasePointer);
