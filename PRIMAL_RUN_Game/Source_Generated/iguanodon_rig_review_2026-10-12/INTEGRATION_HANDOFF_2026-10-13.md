@@ -29,3 +29,12 @@ returnere exit 1, indtil den strenge konturfejl faktisk er løst.
 
 Afspiller: `iguanodon_animation_review_standalone.html` i denne mappe.
 Intet er sendt til gh-pages eller publiceret som et nyt spilrelease.
+
+## Kontrolleret før integration
+
+Base: `358211c` (seneste integration ved overførsel). `python tools/rebuild_generated.py`
+gav ingen ændringer i runtime eller genererede manifests. `npm test` bestod med
+251 unit-/simulationstests, alle spilbrowserkontroller og kit-kontroller. Den separate
+PNG-kit-validator bestod for 104 assets. Rig/model/validator-hashes er uændrede.
+Review-afspilleren er desuden kontrolleret offline med frame-step og synlig FAIL-status
+for den strenge konturkontrol. Testgenererede rapporter/screenshots er holdt ude af push.
