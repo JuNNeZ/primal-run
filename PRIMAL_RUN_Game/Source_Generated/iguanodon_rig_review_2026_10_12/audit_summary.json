@@ -1,0 +1,363 @@
+{
+  "versions": {
+    "v1": {
+      "exported_frames": 24,
+      "validator_exit_code": 1,
+      "validator_errors": 10,
+      "frames_without_individual_errors": 16,
+      "frames_without_individual_or_sequence_errors": 13,
+      "affected_frames": [
+        "iguanodon_walk_E_003",
+        "iguanodon_walk_N_000",
+        "iguanodon_walk_N_001",
+        "iguanodon_walk_N_002",
+        "iguanodon_walk_N_003",
+        "iguanodon_walk_N_004",
+        "iguanodon_walk_N_005",
+        "iguanodon_walk_S_000",
+        "iguanodon_walk_S_003",
+        "iguanodon_walk_S_005",
+        "iguanodon_walk_W_005"
+      ],
+      "strict_2px_silhouette_audit": [
+        {
+          "frame": "iguanodon_walk_E_000.png",
+          "outside_2px_guide": 20,
+          "guide_outside_2px_candidate": 24
+        },
+        {
+          "frame": "iguanodon_walk_E_001.png",
+          "outside_2px_guide": 46,
+          "guide_outside_2px_candidate": 11
+        },
+        {
+          "frame": "iguanodon_walk_E_002.png",
+          "outside_2px_guide": 42,
+          "guide_outside_2px_candidate": 2
+        },
+        {
+          "frame": "iguanodon_walk_E_003.png",
+          "outside_2px_guide": 60,
+          "guide_outside_2px_candidate": 8
+        },
+        {
+          "frame": "iguanodon_walk_E_004.png",
+          "outside_2px_guide": 33,
+          "guide_outside_2px_candidate": 3
+        },
+        {
+          "frame": "iguanodon_walk_E_005.png",
+          "outside_2px_guide": 36,
+          "guide_outside_2px_candidate": 20
+        },
+        {
+          "frame": "iguanodon_walk_N_000.png",
+          "outside_2px_guide": 130,
+          "guide_outside_2px_candidate": 87
+        },
+        {
+          "frame": "iguanodon_walk_N_001.png",
+          "outside_2px_guide": 121,
+          "guide_outside_2px_candidate": 71
+        },
+        {
+          "frame": "iguanodon_walk_N_002.png",
+          "outside_2px_guide": 104,
+          "guide_outside_2px_candidate": 58
+        },
+        {
+          "frame": "iguanodon_walk_N_003.png",
+          "outside_2px_guide": 133,
+          "guide_outside_2px_candidate": 73
+        },
+        {
+          "frame": "iguanodon_walk_N_004.png",
+          "outside_2px_guide": 100,
+          "guide_outside_2px_candidate": 54
+        },
+        {
+          "frame": "iguanodon_walk_N_005.png",
+          "outside_2px_guide": 143,
+          "guide_outside_2px_candidate": 64
+        },
+        {
+          "frame": "iguanodon_walk_S_000.png",
+          "outside_2px_guide": 89,
+          "guide_outside_2px_candidate": 70
+        },
+        {
+          "frame": "iguanodon_walk_S_001.png",
+          "outside_2px_guide": 56,
+          "guide_outside_2px_candidate": 37
+        },
+        {
+          "frame": "iguanodon_walk_S_002.png",
+          "outside_2px_guide": 91,
+          "guide_outside_2px_candidate": 24
+        },
+        {
+          "frame": "iguanodon_walk_S_003.png",
+          "outside_2px_guide": 84,
+          "guide_outside_2px_candidate": 22
+        },
+        {
+          "frame": "iguanodon_walk_S_004.png",
+          "outside_2px_guide": 52,
+          "guide_outside_2px_candidate": 49
+        },
+        {
+          "frame": "iguanodon_walk_S_005.png",
+          "outside_2px_guide": 80,
+          "guide_outside_2px_candidate": 29
+        },
+        {
+          "frame": "iguanodon_walk_W_000.png",
+          "outside_2px_guide": 46,
+          "guide_outside_2px_candidate": 4
+        },
+        {
+          "frame": "iguanodon_walk_W_001.png",
+          "outside_2px_guide": 33,
+          "guide_outside_2px_candidate": 6
+        },
+        {
+          "frame": "iguanodon_walk_W_002.png",
+          "outside_2px_guide": 20,
+          "guide_outside_2px_candidate": 9
+        },
+        {
+          "frame": "iguanodon_walk_W_003.png",
+          "outside_2px_guide": 28,
+          "guide_outside_2px_candidate": 14
+        },
+        {
+          "frame": "iguanodon_walk_W_004.png",
+          "outside_2px_guide": 9,
+          "guide_outside_2px_candidate": 2
+        },
+        {
+          "frame": "iguanodon_walk_W_005.png",
+          "outside_2px_guide": 21,
+          "guide_outside_2px_candidate": 0
+        }
+      ],
+      "strict_2px_frames_passing": 0,
+      "visually_approved_frames": 0
+    },
+    "v2": {
+      "exported_frames": 24,
+      "validator_exit_code": 1,
+      "validator_errors": 35,
+      "frames_without_individual_errors": 2,
+      "frames_without_individual_or_sequence_errors": 0,
+      "affected_frames": [
+        "iguanodon_walk_E_000",
+        "iguanodon_walk_E_001",
+        "iguanodon_walk_E_002",
+        "iguanodon_walk_E_003",
+        "iguanodon_walk_E_004",
+        "iguanodon_walk_E_005",
+        "iguanodon_walk_N_000",
+        "iguanodon_walk_N_001",
+        "iguanodon_walk_N_002",
+        "iguanodon_walk_N_003",
+        "iguanodon_walk_N_004",
+        "iguanodon_walk_N_005",
+        "iguanodon_walk_S_000",
+        "iguanodon_walk_S_001",
+        "iguanodon_walk_S_002",
+        "iguanodon_walk_S_003",
+        "iguanodon_walk_S_004",
+        "iguanodon_walk_S_005",
+        "iguanodon_walk_W_000",
+        "iguanodon_walk_W_001",
+        "iguanodon_walk_W_002",
+        "iguanodon_walk_W_003",
+        "iguanodon_walk_W_004",
+        "iguanodon_walk_W_005"
+      ],
+      "strict_2px_silhouette_audit": [
+        {
+          "frame": "iguanodon_walk_E_000.png",
+          "outside_2px_guide": 112,
+          "guide_outside_2px_candidate": 2
+        },
+        {
+          "frame": "iguanodon_walk_E_001.png",
+          "outside_2px_guide": 198,
+          "guide_outside_2px_candidate": 1
+        },
+        {
+          "frame": "iguanodon_walk_E_002.png",
+          "outside_2px_guide": 212,
+          "guide_outside_2px_candidate": 0
+        },
+        {
+          "frame": "iguanodon_walk_E_003.png",
+          "outside_2px_guide": 207,
+          "guide_outside_2px_candidate": 0
+        },
+        {
+          "frame": "iguanodon_walk_E_004.png",
+          "outside_2px_guide": 147,
+          "guide_outside_2px_candidate": 0
+        },
+        {
+          "frame": "iguanodon_walk_E_005.png",
+          "outside_2px_guide": 160,
+          "guide_outside_2px_candidate": 0
+        },
+        {
+          "frame": "iguanodon_walk_N_000.png",
+          "outside_2px_guide": 255,
+          "guide_outside_2px_candidate": 19
+        },
+        {
+          "frame": "iguanodon_walk_N_001.png",
+          "outside_2px_guide": 239,
+          "guide_outside_2px_candidate": 2
+        },
+        {
+          "frame": "iguanodon_walk_N_002.png",
+          "outside_2px_guide": 270,
+          "guide_outside_2px_candidate": 1
+        },
+        {
+          "frame": "iguanodon_walk_N_003.png",
+          "outside_2px_guide": 217,
+          "guide_outside_2px_candidate": 14
+        },
+        {
+          "frame": "iguanodon_walk_N_004.png",
+          "outside_2px_guide": 253,
+          "guide_outside_2px_candidate": 3
+        },
+        {
+          "frame": "iguanodon_walk_N_005.png",
+          "outside_2px_guide": 249,
+          "guide_outside_2px_candidate": 4
+        },
+        {
+          "frame": "iguanodon_walk_S_000.png",
+          "outside_2px_guide": 178,
+          "guide_outside_2px_candidate": 1
+        },
+        {
+          "frame": "iguanodon_walk_S_001.png",
+          "outside_2px_guide": 233,
+          "guide_outside_2px_candidate": 6
+        },
+        {
+          "frame": "iguanodon_walk_S_002.png",
+          "outside_2px_guide": 266,
+          "guide_outside_2px_candidate": 10
+        },
+        {
+          "frame": "iguanodon_walk_S_003.png",
+          "outside_2px_guide": 210,
+          "guide_outside_2px_candidate": 0
+        },
+        {
+          "frame": "iguanodon_walk_S_004.png",
+          "outside_2px_guide": 284,
+          "guide_outside_2px_candidate": 5
+        },
+        {
+          "frame": "iguanodon_walk_S_005.png",
+          "outside_2px_guide": 245,
+          "guide_outside_2px_candidate": 4
+        },
+        {
+          "frame": "iguanodon_walk_W_000.png",
+          "outside_2px_guide": 266,
+          "guide_outside_2px_candidate": 3
+        },
+        {
+          "frame": "iguanodon_walk_W_001.png",
+          "outside_2px_guide": 170,
+          "guide_outside_2px_candidate": 0
+        },
+        {
+          "frame": "iguanodon_walk_W_002.png",
+          "outside_2px_guide": 173,
+          "guide_outside_2px_candidate": 0
+        },
+        {
+          "frame": "iguanodon_walk_W_003.png",
+          "outside_2px_guide": 167,
+          "guide_outside_2px_candidate": 3
+        },
+        {
+          "frame": "iguanodon_walk_W_004.png",
+          "outside_2px_guide": 193,
+          "guide_outside_2px_candidate": 0
+        },
+        {
+          "frame": "iguanodon_walk_W_005.png",
+          "outside_2px_guide": 268,
+          "guide_outside_2px_candidate": 26
+        }
+      ],
+      "strict_2px_frames_passing": 0,
+      "visually_approved_frames": 0
+    }
+  },
+  "tools": {
+    "tools/rig_animate.py": "3a80bdfd099e143f9f878c4162f0a178129b17830763643b0b83d57b4cf1280f",
+    "tools/validate_rig_frames.py": "562504281d2119d679dc2c04db43e8cc15531643cfee821ae73e18ff9b022194",
+    "tools/draw_new_species.py": "9ea8d49338ffb1d7ea029025af78fa108ff18bdff5588bf723253e0cb60ddf39"
+  },
+  "references": [
+    {
+      "file": "PRIMAL_RUN_Game/assets/new_species/iguanodon_S.png",
+      "sha256": "464608776b29027409776de90805faf750bf52969db7274466dcafc4d16b7d48",
+      "status": "existing reference; repository documents prototype_static, not independent art approval"
+    },
+    {
+      "file": "PRIMAL_RUN_Game/assets/new_species/iguanodon_N.png",
+      "sha256": "83a257a52f4a818b1fc17e4174344e3572a7d31e2037cbddb48a4e6fdc88b005",
+      "status": "existing reference; repository documents prototype_static, not independent art approval"
+    },
+    {
+      "file": "PRIMAL_RUN_Game/assets/new_species/iguanodon_E.png",
+      "sha256": "293aa0523440e231f8b4622e14d80f46fe2db9a536168f40fdc04d8762c28d9a",
+      "status": "existing reference; repository documents prototype_static, not independent art approval"
+    },
+    {
+      "file": "PRIMAL_RUN_Game/assets/new_species/iguanodon_W.png",
+      "sha256": "3cf0d250f84201318b390750272d2d9ff46ef873b824b8044a7e952a24d73cb8",
+      "status": "existing reference; repository documents prototype_static, not independent art approval"
+    },
+    {
+      "file": "PRIMAL_RUN_Game/assets/enemy_full/parasaurolophus_walk_S_000.png",
+      "sha256": "3616bdd8cdaefa3fd7100f044b25e221593e9338de8efb659b34eb51b718e902",
+      "status": "existing reference; repository documents prototype_static, not independent art approval"
+    },
+    {
+      "file": "PRIMAL_RUN_Game/assets/enemy_full/parasaurolophus_walk_E_000.png",
+      "sha256": "780b0a1d8ecd12a5f40f7c78e4c096ca76dc243d682cb1eea90b03b554956096",
+      "status": "existing reference; repository documents prototype_static, not independent art approval"
+    },
+    {
+      "file": "PRIMAL_RUN_Game/assets/enemy_full/triceratops_walk_S_000.png",
+      "sha256": "ff0bf088b87c2e9b29eb6d24e976bf62cc6371b4d68137c1eb4efda79049ab35",
+      "status": "existing reference; repository documents prototype_static, not independent art approval"
+    },
+    {
+      "file": "PRIMAL_RUN_Game/assets/enemy_full/triceratops_walk_E_000.png",
+      "sha256": "09d13bca278c277a2738a181af7ef4a69d8f46917430f0d8d16db0b5ce2011dc",
+      "status": "existing reference; repository documents prototype_static, not independent art approval"
+    },
+    {
+      "file": "PRIMAL_RUN_Game/assets/enemy_full/tyrannosaurus_walk_S_000.png",
+      "sha256": "d2d666cfe76a26659fb40b09152fd467b854472050a6c7c5cb5ed590ac81e6de",
+      "status": "existing reference; repository documents prototype_static, not independent art approval"
+    },
+    {
+      "file": "PRIMAL_RUN_Game/assets/enemy_full/tyrannosaurus_walk_E_000.png",
+      "sha256": "b5ba2cde7fd3757ed3bb32bb1c7aa2815234b357dc1cbbb0f634697b55f286a0",
+      "status": "existing reference; repository documents prototype_static, not independent art approval"
+    }
+  ],
+  "base_commit": "2565cd77ba9372299038a11ec3e2f70a676fe82b"
+}

@@ -1,0 +1,107 @@
+FAIL iguanodon_idle_S_000: missing
+FAIL iguanodon_idle_S_001: missing
+FAIL iguanodon_idle_S_002: missing
+FAIL iguanodon_idle_S_003: missing
+FAIL iguanodon_idle_N_000: missing
+FAIL iguanodon_idle_N_001: missing
+FAIL iguanodon_idle_N_002: missing
+FAIL iguanodon_idle_N_003: missing
+FAIL iguanodon_idle_E_000: missing
+FAIL iguanodon_idle_E_001: missing
+FAIL iguanodon_idle_E_002: missing
+FAIL iguanodon_idle_E_003: missing
+FAIL iguanodon_idle_W_000: missing
+FAIL iguanodon_idle_W_001: missing
+FAIL iguanodon_idle_W_002: missing
+FAIL iguanodon_idle_W_003: missing
+FAIL iguanodon_run_S_000: missing
+FAIL iguanodon_run_S_001: missing
+FAIL iguanodon_run_S_002: missing
+FAIL iguanodon_run_S_003: missing
+FAIL iguanodon_run_S_004: missing
+FAIL iguanodon_run_S_005: missing
+FAIL iguanodon_run_N_000: missing
+FAIL iguanodon_run_N_001: missing
+FAIL iguanodon_run_N_002: missing
+FAIL iguanodon_run_N_003: missing
+FAIL iguanodon_run_N_004: missing
+FAIL iguanodon_run_N_005: missing
+FAIL iguanodon_run_E_000: missing
+FAIL iguanodon_run_E_001: missing
+FAIL iguanodon_run_E_002: missing
+FAIL iguanodon_run_E_003: missing
+FAIL iguanodon_run_E_004: missing
+FAIL iguanodon_run_E_005: missing
+FAIL iguanodon_run_W_000: missing
+FAIL iguanodon_run_W_001: missing
+FAIL iguanodon_run_W_002: missing
+FAIL iguanodon_run_W_003: missing
+FAIL iguanodon_run_W_004: missing
+FAIL iguanodon_run_W_005: missing
+FAIL iguanodon_attack_S_000: missing
+FAIL iguanodon_attack_S_001: missing
+FAIL iguanodon_attack_S_002: missing
+FAIL iguanodon_attack_S_003: missing
+FAIL iguanodon_attack_S_004: missing
+FAIL iguanodon_attack_S_005: missing
+FAIL iguanodon_attack_N_000: missing
+FAIL iguanodon_attack_N_001: missing
+FAIL iguanodon_attack_N_002: missing
+FAIL iguanodon_attack_N_003: missing
+FAIL iguanodon_attack_N_004: missing
+FAIL iguanodon_attack_N_005: missing
+FAIL iguanodon_attack_E_000: missing
+FAIL iguanodon_attack_E_001: missing
+FAIL iguanodon_attack_E_002: missing
+FAIL iguanodon_attack_E_003: missing
+FAIL iguanodon_attack_E_004: missing
+FAIL iguanodon_attack_E_005: missing
+FAIL iguanodon_attack_W_000: missing
+FAIL iguanodon_attack_W_001: missing
+FAIL iguanodon_attack_W_002: missing
+FAIL iguanodon_attack_W_003: missing
+FAIL iguanodon_attack_W_004: missing
+FAIL iguanodon_attack_W_005: missing
+FAIL iguanodon_hurt_S_000: missing
+FAIL iguanodon_hurt_S_001: missing
+FAIL iguanodon_hurt_N_000: missing
+FAIL iguanodon_hurt_N_001: missing
+FAIL iguanodon_hurt_E_000: missing
+FAIL iguanodon_hurt_E_001: missing
+FAIL iguanodon_hurt_W_000: missing
+FAIL iguanodon_hurt_W_001: missing
+FAIL iguanodon_death_S_000: missing
+FAIL iguanodon_death_S_001: missing
+FAIL iguanodon_death_S_002: missing
+FAIL iguanodon_death_S_003: missing
+FAIL iguanodon_death_S_004: missing
+FAIL iguanodon_death_S_005: missing
+FAIL iguanodon_death_N_000: missing
+FAIL iguanodon_death_N_001: missing
+FAIL iguanodon_death_N_002: missing
+FAIL iguanodon_death_N_003: missing
+FAIL iguanodon_death_N_004: missing
+FAIL iguanodon_death_N_005: missing
+FAIL iguanodon_death_E_000: missing
+FAIL iguanodon_death_E_001: missing
+FAIL iguanodon_death_E_002: missing
+FAIL iguanodon_death_E_003: missing
+FAIL iguanodon_death_E_004: missing
+FAIL iguanodon_death_E_005: missing
+FAIL iguanodon_death_W_000: missing
+FAIL iguanodon_death_W_001: missing
+FAIL iguanodon_death_W_002: missing
+FAIL iguanodon_death_W_003: missing
+FAIL iguanodon_death_W_004: missing
+FAIL iguanodon_death_W_005: missing
+FAIL iguanodon_walk_S_000: centroid 3.6 px from the rig (anchor 72,72 moved)
+FAIL iguanodon_walk_S_003: centroid 3.1 px from the rig (anchor 72,72 moved)
+FAIL iguanodon_walk_S_005: centroid 3.3 px from the rig (anchor 72,72 moved)
+FAIL iguanodon_walk_N_000: legs do not follow the rig pose (leg band 0.69, need 0.7)
+FAIL iguanodon_walk_W_005: bbox size differs from the rig by 11% (scale or angle changed)
+FAIL iguanodon_walk_S_005: legs match rig frame 003 better than their own frame (static or out-of-phase legs)
+FAIL iguanodon_walk_N_001: legs match rig frame 002 better than their own frame (static or out-of-phase legs)
+FAIL iguanodon_walk_N_003: legs match rig frame 005 better than their own frame (static or out-of-phase legs)
+FAIL iguanodon_walk_N: legs move 48% as much as in the rig (need 50%)
+FAIL iguanodon_walk_E_003: legs match rig frame 004 better than their own frame (static or out-of-phase legs)
+FAIL: iguanodon, 24 frames checked against the rig; 106 errors, 0 warnings. Technical check only; it does not approve the art.

@@ -1,0 +1,1187 @@
+{
+  "export": "Fixed 2px integer sampling; alpha>=192; fixed32; explicit cell registration. No silhouette substitution, drawing, smoothing, mirroring or bbox centering.",
+  "frames": [
+    {
+      "file": "iguanodon_walk_S_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "S",
+      "frame": 0,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "aef3b4f622c23d3d3659f3a7d51a1e2c066ed0390cf9986431d00219599fccf8",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_S_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "S",
+      "frame": 1,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        256,
+        0,
+        512,
+        256
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "810460b228939bbd5c6d6b9dbbb6d952318d7e34c3b5a1dd690c5815a84ab9b5",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_S_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "S",
+      "frame": 2,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        512,
+        0,
+        768,
+        256
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "5c73336c3deebd1bf24e8f302cf16fcc9204201d839ca31c064a4b5c320b14e6",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_S_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "S",
+      "frame": 3,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        768,
+        0,
+        1024,
+        256
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "4b1e389e2761f2b521a9b1f68703b9ae48708a5bb6da8518f414099651b3ee99",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_S_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "S",
+      "frame": 4,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        1024,
+        0,
+        1280,
+        256
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "6d42a5d36ad55892e700b1f48e2008e4c61e568b35dd601a8ec2115dd238b500",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_S_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "S",
+      "frame": 5,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        1280,
+        0,
+        1536,
+        256
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "8eed0715a4ad8619cf02b52ddeeb7771c047295e44c34065dc454f60edbcd1c6",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_N_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "N",
+      "frame": 0,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        0,
+        256,
+        256,
+        512
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "f78f53f7a4ee8fcebd6d8e30ba543f511df5f5838601356d30b654da14668f7a",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_N_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "N",
+      "frame": 1,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        256,
+        256,
+        512,
+        512
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "ea36d43d37bd714de41936f22cddd9bc0d077013d5b6cf6a9ab662033de86e27",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_N_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "N",
+      "frame": 2,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        512,
+        256,
+        768,
+        512
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "5b328168e749f0bf1b60500864df4fffcc0ccd3fe3682510bfe34ea76611b0b8",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_N_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "N",
+      "frame": 3,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        768,
+        256,
+        1024,
+        512
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "0fd467ef27123dd43ef74a970de70fb7f7e5be67d28d031dc1839109b37570e0",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_N_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "N",
+      "frame": 4,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        1024,
+        256,
+        1280,
+        512
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "159a546d0d2cb50cbefe5f99a28a5e8d740fe1192ba64ae6efbf8191b6cf76c4",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_N_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "N",
+      "frame": 5,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        1280,
+        256,
+        1536,
+        512
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "a504f4353a76f102c8c6427bf32ba7c8532ac1a5387587498f68ad5c76455901",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_E_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "E",
+      "frame": 0,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        0,
+        512,
+        256,
+        768
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "84ab5384cd1a766c7bc014cc57a3bf070f8b7a45ce663cb60f665d345c9d1871",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_E_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "E",
+      "frame": 1,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        256,
+        512,
+        512,
+        768
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "c25c870bd8697dee7abebccd4b2d7bd3e721edff2847f6128a8c4f0ef1a3a4ed",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_E_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "E",
+      "frame": 2,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        512,
+        512,
+        768,
+        768
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "767ab4c40d43abc263d5c78057636de2a9b1aeba8c9e0edd90f082789fd182ee",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_E_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "E",
+      "frame": 3,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        768,
+        512,
+        1024,
+        768
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "9fd0cdd12374e429c1c6f308cb1b892093256dabe92378ca61857dafe0f23dbc",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_E_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "E",
+      "frame": 4,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        1024,
+        512,
+        1280,
+        768
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "0e48900419dcf461d1d490f7b7daf1dbd71b7421f9d6387711f1a3d8f33e4b1d",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_E_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "E",
+      "frame": 5,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        1280,
+        512,
+        1536,
+        768
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "95e53b561bbdbeb84932956bba5b0464d991a133531f0d913c48eadc16c2909b",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_W_000.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "W",
+      "frame": 0,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        0,
+        768,
+        256,
+        1024
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "c1e8f465ca6115ab081ff35c80f4f64dbc05ae8133a3dfd0798fe4b68aad9830",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_W_001.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "W",
+      "frame": 1,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        256,
+        768,
+        512,
+        1024
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "f2604091e34d0abf5e5af26abe98af53f58825c88195ede3585abe6cf64fdf26",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_W_002.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "W",
+      "frame": 2,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        512,
+        768,
+        768,
+        1024
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "ef6b4ff3eb96163bb688f89008c9f969cd75e9e52b144f6a97e8dc16d2d7f494",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_W_003.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "W",
+      "frame": 3,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        768,
+        768,
+        1024,
+        1024
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "10f52a2f88f9c176836a54f3aadc768b0decc762fb87345eb31a380e86e88668",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_W_004.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "W",
+      "frame": 4,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        1024,
+        768,
+        1280,
+        1024
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "ea10d659d5e16475700636cea54503f657bf328bcac0c3d5af82b219d72231e0",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    },
+    {
+      "file": "iguanodon_walk_W_005.png",
+      "size": [
+        144,
+        144
+      ],
+      "origin": [
+        72,
+        72
+      ],
+      "body_anchor": [
+        72,
+        72
+      ],
+      "species": "iguanodon",
+      "state": "walk",
+      "direction": "W",
+      "frame": 5,
+      "source": "walk_source_v1.png",
+      "source_sha256": "3130b2d49024282e05dec17844a8bb298451ee3fb75badf7b0abaad58b4a927a",
+      "source_crop": [
+        1280,
+        768,
+        1536,
+        1024
+      ],
+      "source_cell_anchor": [
+        128,
+        128
+      ],
+      "registration_offset": [
+        8,
+        8
+      ],
+      "export_sha256": "3d346969219a864efbefbc9f1010cad71736654961b222737916bf400a26bff9",
+      "sample_step": 2,
+      "sample_phase": [
+        1,
+        1
+      ],
+      "alpha_threshold": 192,
+      "status": "prototype_static",
+      "production_approved": false,
+      "animation_ready": false,
+      "anchor_visual_verified": false
+    }
+  ],
+  "animations": [
+    {
+      "state": "walk",
+      "direction": "S",
+      "frames": [
+        "iguanodon_walk_S_000.png",
+        "iguanodon_walk_S_001.png",
+        "iguanodon_walk_S_002.png",
+        "iguanodon_walk_S_003.png",
+        "iguanodon_walk_S_004.png",
+        "iguanodon_walk_S_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "validated_animation": false
+    },
+    {
+      "state": "walk",
+      "direction": "N",
+      "frames": [
+        "iguanodon_walk_N_000.png",
+        "iguanodon_walk_N_001.png",
+        "iguanodon_walk_N_002.png",
+        "iguanodon_walk_N_003.png",
+        "iguanodon_walk_N_004.png",
+        "iguanodon_walk_N_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "validated_animation": false
+    },
+    {
+      "state": "walk",
+      "direction": "E",
+      "frames": [
+        "iguanodon_walk_E_000.png",
+        "iguanodon_walk_E_001.png",
+        "iguanodon_walk_E_002.png",
+        "iguanodon_walk_E_003.png",
+        "iguanodon_walk_E_004.png",
+        "iguanodon_walk_E_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "validated_animation": false
+    },
+    {
+      "state": "walk",
+      "direction": "W",
+      "frames": [
+        "iguanodon_walk_W_000.png",
+        "iguanodon_walk_W_001.png",
+        "iguanodon_walk_W_002.png",
+        "iguanodon_walk_W_003.png",
+        "iguanodon_walk_W_004.png",
+        "iguanodon_walk_W_005.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "origin": [
+        72,
+        72
+      ],
+      "validated_animation": false
+    }
+  ]
+}

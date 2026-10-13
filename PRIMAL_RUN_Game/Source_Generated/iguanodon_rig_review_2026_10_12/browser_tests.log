@@ -1,0 +1,19 @@
+PASS part A: reused tail swings, low-health gait, hit flash, pause
+PASS part A ecology, water, raptor props and pause
+PASS welcome/build/105 HUD reactions/four A1 attacks
+PASS Deinosuchus: Doris unlock, mobile intro, actual shared 2x sprite, water movement and stamina
+PASS: Velociraptor starter, secret1993 UI, tiny Compy flocks, accurate NPC skill telegraph, named boss and intentional victory confirm.
+PASS: visible pond water, river schools, real Baryonyx fishing and herbivore exclusion.
+PASS: 368 actual corpse props and 63 end scene combinations.
+PASS: persistent observations, species book, actual killer/cinematic type, statistics, reduced motion, mobile layout and no errors/missing assets.
+PASS: DNA migration/purchase, twelve-class archive, T rex portrait/gameplay attack render, mobile layout, no missing assets or browser errors.
+PASS: browser game · menu/name · sound controls/music · movement/bite/meat · pause · mutations · 8 bosses/victory · DNA shop · reload/highscore · death/restart · storage denial
+PASS: browser player attack animation · S: all six actual drawn frames, native size, registered pivot, pause and idle · N: all six actual drawn frames, native size, registered pivot, pause and idle · E: all six actual drawn frames, native size, registered pivot, pause and idle · W: all six actual drawn frames, native size, registered pivot, pause and idle · contact-only damage, locked attack aim while moving, single hit and recovery
+PASS: 2760 actual enemy frames · 23 species · six states · four directions · integer scales · pause
+PASS: world browser · desktop/portrait/landscape/ultrawide · camera · facing · XP bar · rarity/rank cards · safe selection · Jonas
+PASS: terrain/combat/boss · four rendered biomes · hit-stop/particles · phase/range hints · full first-boss fight without HP edits
+page.waitForFunction: Timeout 30000ms exceeded.
+    at /tmp/primal-iguanodon-checks/tests/roguelite-browser.cjs:16:139 {
+  log: [],
+  name: 'TimeoutError'
+}

@@ -1,0 +1,7 @@
+
+> primal-run-prototype@0.1.0 test:kit
+> node check_kit_directions.cjs && node check_kit_progression.cjs && node check_kit_files.cjs
+
+{"result":"PASS","engine":"Chrome browser; GDevelop NOT RUN","checks":["S movement/idle/loop","N movement/idle/loop","E movement/idle/loop","W movement/idle/loop","S blockage","N blockage","E blockage","W blockage","diagonal tie facing","pixel smoothing disabled"]}
+{"result":"PASS","engine":"Chrome offline browser prototype; GDevelop NOT RUN","checks":["hunt XP triggers three-choice pause","pause freezes time/movement/damage","keyboard selection resumes","legs +15 percent speed","mutation stacks","feathers +20 percent regeneration","stamina pounce and boost","teeth adds bleed damage","food heals","death DNA once","DNA survives reload","60-second victory DNA bonus","restart clears run upgrades"]}
+{"result":"PASS","checks":["104 catalog PNGs load","all entrypoint/guide/demo local links exist","guide includes five documents","HUD displays correct direction and UTF-8 text"],"scope":"Chromium over local HTTP; file:// access is not certified"}

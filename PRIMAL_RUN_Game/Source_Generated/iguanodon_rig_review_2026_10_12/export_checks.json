@@ -1,0 +1,20 @@
+[
+  {
+    "folder": ".",
+    "png_frames": 24,
+    "gif_previews": 16,
+    "technical_export": "PASS"
+  },
+  {
+    "folder": "rejected_v1",
+    "png_frames": 24,
+    "gif_previews": 16,
+    "technical_export": "PASS"
+  },
+  {
+    "folder": "rejected_v2",
+    "png_frames": 24,
+    "gif_previews": 16,
+    "technical_export": "PASS"
+  }
+]
