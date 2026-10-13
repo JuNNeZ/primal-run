@@ -1,0 +1,46 @@
+{
+  "file": "iguanodon_walk_E_000.png",
+  "source": "head_source_v1.png",
+  "source_sha256": "a24924482888023bf0db7d4a0b31767bdd99897f4c0c0a24d63a9ad420db425e",
+  "export_sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "source_crop": [
+    7,
+    7,
+    1247,
+    1247
+  ],
+  "sample_step": 10,
+  "sample_phase": [
+    5,
+    5
+  ],
+  "source_anchor": [
+    627,
+    627
+  ],
+  "registration_offset": [
+    10,
+    10
+  ],
+  "origin": [
+    72,
+    72
+  ],
+  "body_anchor": [
+    72,
+    72
+  ],
+  "size": [
+    144,
+    144
+  ],
+  "alpha_threshold": 192,
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "purpose": "One anatomical head study; not an animation or approved replacement."
+}

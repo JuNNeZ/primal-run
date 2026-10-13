@@ -1,0 +1,17 @@
+{
+  "candidate_pixels_beyond_2px": 12,
+  "guide_pixels_beyond_2px": 40,
+  "pixels_changed_outside_declared_head_region": 813,
+  "head_audit_region": [
+    105,
+    55,
+    136,
+    82
+  ],
+  "strict_2px_pass": false,
+  "native_png_technical": "PASS",
+  "individual_validator_errors": 0,
+  "validator_exit_code": 1,
+  "missing_animation_frames": 5,
+  "visually_approved": false
+}

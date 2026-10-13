@@ -3,6 +3,10 @@
 Læs [kvalitetsrapporten](QUALITY_REPORT.md). Opgavens Definition of Done er
 ikke opfyldt. Ingen af disse billeder er godkendt til spillet.
 
+Efter Jonas' afvisning af hovedets artsgenkendelighed er et enkelt nyt
+[hovedstudie](head_revision/REVIEW.md) vedlagt. Det er fortsat ikke godkendt;
+før/efter og de præcise begrænsninger står i studiets rapport.
+
 - Root-mappens 24 walk-frames er det mindst fejlende v1-forsøg, ikke et godkendt sæt.
 - `rejected_v1/` og `rejected_v2/` indeholder begge bevarede forsøg.
 - `overlay.png` og `report.json` viser slutkørslen med alle tilstande.

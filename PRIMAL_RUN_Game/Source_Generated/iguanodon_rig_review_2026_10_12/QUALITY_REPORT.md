@@ -5,6 +5,13 @@ De to imagegen-forsøg opfylder hverken rig-kravene eller den samlede visuelle
 arts- og stilkontrol. Ingen frames er godkendt til integration. De øvrige
 animationer er ikke påbegyndt, fordi opgaven kræver godkendt walk først.
 
+Efterfølgende feedback: Jonas afviste hovedets artsgenkendelighed. Et enkelt
+nyt E_000-hovedstudie er bevaret under `head_revision/`, med før/efter,
+uændret validator og separat rapport. Studiet har ingen individuelle
+validatorfejl, men består ikke den præcise 2 px-regel og er ikke godkendt.
+Tallene nedenfor beskriver de to oprindelige 24-frame-forsøg; det nye studie
+tilføjer én revisionspose, ikke en ny unik animationstidsframe.
+
 Branch: `codex/iguanodon-rig-anim-2026-10-12`, baseret på
 `origin/claude/project-thread-9luicd`. Base-commit og SHA-256 for uændrede
 rig-værktøjer, validator og referencer står i `audit_summary.json`.

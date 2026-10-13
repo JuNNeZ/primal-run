@@ -1,0 +1,41 @@
+{
+ "species": "iguanodon",
+ "rig": true,
+ "limits": {
+  "margin": 2,
+  "silhouette": 0.85,
+  "bbox_centre": 3.0,
+  "bbox_size": 0.1,
+  "centroid": 3.0,
+  "leg_band": 0.7,
+  "leg_phase": 0.03,
+  "leg_motion": 0.5,
+  "frozen": 0.004,
+  "outline_motion": 0.07,
+  "loop_seam": 3.0,
+  "mirror": 0.8,
+  "pair_size": 0.1,
+  "small_px": 3,
+  "aspect": 0.12,
+  "drift": 4.0
+ },
+ "errors": [
+  "iguanodon_walk_E_001: missing",
+  "iguanodon_walk_E_002: missing",
+  "iguanodon_walk_E_003: missing",
+  "iguanodon_walk_E_004: missing",
+  "iguanodon_walk_E_005: missing"
+ ],
+ "warnings": [],
+ "metrics": {
+  "iguanodon_walk_E_000": {
+   "silhouette_precision": 0.9948,
+   "silhouette_recall": 0.9823,
+   "bbox_centre_px": 2.0616,
+   "bbox_w": 0.0492,
+   "bbox_h": 0.0217,
+   "centroid_px": 2.0563,
+   "leg_band": 0.9314
+  }
+ }
+}
