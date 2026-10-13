@@ -176,7 +176,7 @@ function install(C, exp) {
     }
     if (on('powerups') && !e.boss) {
       if ((e.elite || e.rare) && POWERUP_SPAWN.eliteDrop) dropPowerup(this, e.x + 24, e.y);
-      else if (this.random() < POWERUP_SPAWN.killChance) dropPowerup(this, e.x + 24, e.y);
+      else if (this.random() < (opt('powerups', 'killChance') ?? POWERUP_SPAWN.killChance)) dropPowerup(this, e.x + 24, e.y);
     }
     if (on('nightHunt') && r.night && !e.boss) { const got = r.dna - dnaBefore, bonus = Math.round(got * (NIGHT_HUNT.dna - 1)); if (bonus > 0) this.addDNA(bonus, true); }
     if (on('bounty') && e.bounty) { S(r).bounties++; this.addDNA(Math.max(2, (C.SPECIES[e.kind].dna || 1) * BOUNTY.dnaMul), true); r.xbuff ||= {}; r.xbuff.rage = POWERUPS.rage.time; }
@@ -209,7 +209,7 @@ function install(C, exp) {
   G.start = function (options) {
     const out = start.call(this, options), r = this.run; if (!r) return out;
     r.xbuff = {}; r.streak = 0; r.rageMeter = 0; S(r);
-    if (on('babyStart')) { r.babyBaseHP = r.maxHealth; r.maxHealth = Math.round(r.maxHealth * BABY.hp); r.health = r.maxHealth; r.babyMul = BABY.damage; r.nextXP = Math.max(1, Math.round(r.nextXP * BABY.xp)); }
+    if (on('babyStart')) { r.babyBaseHP = r.maxHealth; r.maxHealth = Math.round(r.maxHealth * (opt('babyStart', 'hp') ?? BABY.hp)); r.health = r.maxHealth; r.babyMul = opt('babyStart', 'damage') ?? BABY.damage; r.nextXP = Math.max(1, Math.round(r.nextXP * BABY.xp)); }
     placeShrines(this);
     return out;
   };
