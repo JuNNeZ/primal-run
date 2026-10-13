@@ -1,0 +1,1 @@
+{"result":"PASS","checks":["104 catalog PNGs load","all entrypoint/guide/demo local links exist","guide includes five documents","HUD displays correct direction and UTF-8 text"],"scope":"Chromium over local HTTP; file:// access is not certified"}
