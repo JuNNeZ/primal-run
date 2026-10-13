@@ -1,0 +1,5 @@
+page.waitForFunction: Timeout 30000ms exceeded.
+    at /home/runner/work/primal-run/primal-run/tests/game-browser.cjs:69:18 {
+  log: [],
+  name: 'TimeoutError'
+}
