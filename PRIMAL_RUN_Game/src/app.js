@@ -21,7 +21,7 @@
       <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div><div id="extras-chip" class="extras-chip" hidden></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
       <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div></div></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div></main>
-      <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space">ANGREB</button><button data-key="ShiftLeft">EVNE</button><button data-key="KeyE">UNDERSØG</button><button data-key="KeyF">SPIS</button><button data-key="KeyQ" class="pack-key" hidden>FLOK</button></div></div>
+      <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space" class="pad-a">ANGREB</button><button data-key="ShiftLeft" class="pad-b">EVNE</button><button data-key="KeyE" class="pad-x">UNDERSØG</button><button data-key="KeyF" class="pad-y">SPIS</button><button data-key="KeyQ" class="pack-key pad-l" hidden>FLOK</button></div></div>
       <footer><span class="control-hints"><span data-control="move"><kbd></kbd> Bevæg</span><span data-control="attack"> · <kbd></kbd> Angreb</span><span data-control="ability"> · <kbd></kbd> Evne</span><span data-control="sneak"> · <kbd></kbd> Snig / skjul</span><span data-control="eat"> · <kbd></kbd> Hold for at spise</span><span data-control="interact"> · <kbd></kbd> Undersøg</span><span data-control="pause"> · <kbd></kbd> Pause</span></span><span class="save-status"></span></footer>`;
     host.appendChild(shell); I18N.translateNode(shell);
     const canvas = shell.querySelector('canvas'), ctx = canvas.getContext('2d');
@@ -92,7 +92,7 @@
       const phase = game.phase, r = game.run;
       if (phase === previousPhase && !force) return;
       updateControlHints();
-      previousPhase = phase; screen.dataset.phase = phase; keys.clear();
+      previousPhase = phase; screen.dataset.phase = phase; shell.dataset.phase = phase; keys.clear();
       const running = ['build','playing', 'paused', 'mutation', 'exploration', 'cleared'].includes(phase);
       shell.querySelector('.meat-progress').hidden = !running; shell.querySelector('.hud').hidden = !running; shell.querySelector('.run-info').hidden = !running;
       shell.querySelector('#pause-button').hidden = !['playing', 'paused'].includes(phase);
@@ -682,9 +682,19 @@
       p.strokeStyle='#c3a35c';p.beginPath();p.arc(32,32,29,-Math.PI/2,-Math.PI/2+Math.PI*2*Math.min(1,r.xp/r.nextXP));p.stroke();
       p.fillStyle='#c3a35c';p.beginPath();p.arc(52,52,10,0,Math.PI*2);p.fill();p.fillStyle='#15221a';p.font='bold 11px monospace';p.textAlign='center';p.textBaseline='middle';p.fillText(String(r.level),52,53);
     }
+    // Touch play is full screen: joystick and round buttons sit on the game, so the bottom HUD moves up.
+    // Run info goes under the top HUD, the minimap under the level card, and food/XP and toasts above the buttons.
+    const touchPlay=()=>shell.dataset.input==='touch'&&shell.dataset.phase==='playing';
+    function touchLayout(){
+      const info=shell.querySelector('.run-info'),meat=shell.querySelector('.meat-progress'),pad=shell.querySelector('.touch-controls');
+      if(!touchPlay()){info.style.top='';meat.style.bottom=(info.offsetHeight+24)+'px';shell.style.removeProperty('--touch-h');return;}
+      const hud=shell.querySelector('.hud'),arena=shell.querySelector('.arena'),top=hud.getBoundingClientRect().bottom-arena.getBoundingClientRect().top+6;
+      info.style.top=Math.round(top)+'px';meat.style.top='';meat.style.bottom='';
+      shell.style.setProperty('--touch-h',(pad.offsetHeight||0)+'px');
+    }
     function minimap(r) {
       const width = Math.min(120, canvas.width * .25), height = width * r.map.height / r.map.width;
-      const x = canvas.width - width - 12, y = canvas.height - height - shell.querySelector('.run-info').offsetHeight - 24;
+      const card=shell.querySelector('.hunt-counter'),x = canvas.width - width - 12, y = touchPlay()&&card ? Math.round((card.getBoundingClientRect().bottom-canvas.getBoundingClientRect().top+8)*canvas.height/Math.max(1,canvas.getBoundingClientRect().height)) : canvas.height - height - shell.querySelector('.run-info').offsetHeight - 24;
       ctx.fillStyle = '#101713dc'; ctx.fillRect(x, y, width, height); ctx.strokeStyle = '#b6c0a9'; ctx.strokeRect(x, y, width, height);
       const seen=p=>r.explored[Math.floor(p.x/192)+','+Math.floor(p.y/192)];
       if(r.map.rival&&r.enemies.some(e=>e.id===r.map.rival.id)&&seen(r.map.rival)){const rx=Math.round(x+r.map.rival.x/r.map.width*width),ry=Math.round(y+r.map.rival.y/r.map.height*height);ctx.font='bold 9px monospace';ctx.textAlign='center';ctx.fillStyle='#e9b75a';ctx.fillText('☠',rx,ry+3);}
@@ -983,7 +993,7 @@
       const html=parts.join(' · ');if(chip.dataset.html!==html){chip.innerHTML=html;chip.dataset.html=html;}chip.hidden=!parts.length;
     }
     function draw() {
-      resize();shell.querySelector('.meat-progress').style.bottom=(shell.querySelector('.run-info').offsetHeight+24)+'px';
+      resize();touchLayout();
       if (!ready) { ctx.fillStyle = '#151b19'; ctx.fillRect(0, 0, canvas.width, canvas.height); return; }
       if(menuScene()&&!renderOverride){ctx.imageSmoothingEnabled=false;drawMenu();return;}
       canvas.dataset.scene='game';

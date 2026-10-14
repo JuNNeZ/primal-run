@@ -9,13 +9,13 @@
   "source_sha256": {
     "src/run_titles.js": "11d200cfe8af66b5555bb7b23e1e676bdd8d80c398d458c967fbd3f0d435d06e",
     "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
-    "src/run_extras.js": "d807139c28c881a814f3ce9b4e7b6cfd5e929137eafa8cd2d57aad7c60da9890",
+    "src/run_extras.js": "c15a62b4063301e680256ff500cb799df1b457e4887feb4384cc9a166388ceb2",
     "src/core.js": "53f9ddb865656b414c6c15080e93218ab16c243fa1986e4b7f4d46fe7e54a99f",
     "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
     "src/lang.js": "bfc435e4c124a388289d7a6fe9157b2b38373b3d9a60de0c4844e662940a40a6",
     "src/assets.js": "39c980f66c3002b19e2ebee49ad9a263de62f5652f3a3d7c103b6b651beb80d2",
     "src/audio.js": "a9bfc49f350af4a209d69cbeb50f5156f34bba953075ddb0ef50dbf10fc50985",
-    "src/app.js": "e6970307dab2eb2b8b304ff7daf2bfb322745793dbf0bb8289b28767bef2f72b",
-    "style.css": "5b516e47025bcd8c69210a7a8a2d5f833c9da66f57463a9652f04ed2e24c0561"
+    "src/app.js": "856d82b97d0a5e0e4feb04b8744fecfbd689ccb41a3716f18d7d38c4274717a2",
+    "style.css": "7c573cf2230a3fb39d749afcf553dd052c69ba80dbc586e142ff31eeccefee66"
   }
 }
