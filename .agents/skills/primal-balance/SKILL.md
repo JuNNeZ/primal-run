@@ -5,7 +5,7 @@ description: Run reproducible bot experiments against the actual gameplay core.
 
 # primal-balance
 
-Use npm run simulate:balance -- --help and tools/simulate_balance.cjs. It calls the real Game.step; never duplicate combat formulas.
+Use npm run simulate:balance -- --help and tools/simulate_balance.cjs for scenarios/duels, and tools/playstyle_sim.cjs for play-style runs (baseline core via PRIMAL_CORE env, not --core). It calls the real Game.step; never duplicate combat formulas.
 Specify seed, species, profile/build, upgrades, mode, duration, policy and target/stage. Keep all settings in outputs with core SHA.
 Run mode uses normal map, AI and progression. Duel mode is an isolated enemy encounter with documented fixture changes. Neither is a human win-rate benchmark.
 Starting mutations are research grants; permanent DNA upgrades use actual levels/prices. Banked DNA alone does not strengthen a dinosaur.
