@@ -21,7 +21,7 @@ const assert=require('node:assert/strict'),path=require('node:path');const {chro
    r.powerups=[];r.powerups.push({id:9001,kind:'powerup',type:'heart',x:r.player.x+120,y:r.player.y,value:1,shrine:true});
    const e=g.spawn('carnotaurus',{x:r.player.x-140,y:r.player.y+40});e.elite=true;e.alert=false;e.mode='roam';g.step(1/30,{});window.__affix=e.affix;`);
  if(shots)await page.screenshot({path:path.join(shots,'powerup_and_elite.png')});
- assert.match(world,/shrine|world_run_extras/,'shrine drawn');
+ assert.match(world,/shrine|world_extras/,'shrine drawn');
  const affix=await page.evaluate(()=>window.__affix);assert.ok(PrimalAffixOk(affix),'elite got a trait: '+affix);
  function PrimalAffixOk(a){return ['brutal','armored','swift','thorns','regen'].includes(a);}
  // 2. walking onto the powerup applies it and shows the HUD line
@@ -32,7 +32,7 @@ const assert=require('node:assert/strict'),path=require('node:path');const {chro
  const hatch=await drawn(`const g=primalRun.game;g.phase='menu';g.setSetting('babyHard',true);g.start({seed:92});const r=g.run;r.enemies=[];r.spawnTimer=999;window.__baby={hp:r.maxHealth,full:PrimalCore.PLAYER_SPECIES.velociraptor.hp,hatch:r.extras.baby.hatch};`);
  if(shots)await page.screenshot({path:path.join(shots,'baby_hatch.png')});
  const baby=await page.evaluate(()=>window.__baby);assert.ok(baby.hatch>0&&baby.hp<baby.full,'baby starts small: '+JSON.stringify(baby));
- assert.ok(/egg_hatch|world_run_extras/.test(hatch),'egg hatch drawn');
+ assert.ok(/egg_hatch|world_extras/.test(hatch),'egg hatch drawn');
  await page.evaluate(()=>{const g=primalRun.game;g.setSetting('babyHard',false);});
  // 4. dusk: own clock icon, light, bats; amber glint near the player
  const dusk=await drawn(`const g=primalRun.game;g.phase='menu';g.start({seed:93});const r=g.run;r.enemies=[];r.spawnTimer=999;r.seconds=PrimalCore.DAYNIGHT.dusk+9;g.step(1/30,{});
@@ -47,7 +47,7 @@ const assert=require('node:assert/strict'),path=require('node:path');const {chro
  const day=await drawn(`const g=primalRun.game;g.phase='menu';g.start({seed:94});const r=g.run;r.enemies=[];r.spawnTimer=999;const life=r.map.ambientLife||null;
    const h=r.map.habitats.filter((_,i)=>i%6===1)[0];if(h){r.player.x=h.x;r.player.y=h.y+80;g.setView(960,640);}`);
  if(shots)await page.screenshot({path:path.join(shots,'ambient_day.png')});
- assert.ok(/butterfly|world_ambient/.test(day),'ambient animals drawn');
+ assert.ok(/butterfly|world_extras/.test(day),'ambient animals drawn');
  assert.deepEqual(errors,[]);
  console.log(JSON.stringify({result:'PASS',engine:'Chrome browser; GDevelop NOT RUN',checks:['baby toggle in menu','shrine + powerup drawn','elite trait badge','powerup pickup (+12 max hp)','HUD streak + timer','egg hatch + smaller baby','dusk clock icon','amber pickup','ambient animals','no page errors']}));
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1);});

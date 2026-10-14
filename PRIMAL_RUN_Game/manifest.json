@@ -179886,7 +179886,7 @@
       16
     ],
     "ambient": "butterfly",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -179901,7 +179901,7 @@
       16
     ],
     "ambient": "butterfly",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -179916,7 +179916,7 @@
       16
     ],
     "ambient": "frog",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -179931,7 +179931,7 @@
       16
     ],
     "ambient": "frog",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -179946,7 +179946,7 @@
       16
     ],
     "ambient": "small_mammal",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -179961,7 +179961,7 @@
       16
     ],
     "ambient": "small_mammal",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -179976,7 +179976,7 @@
       8
     ],
     "ambient": "firefly_glow",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -179991,7 +179991,7 @@
       8
     ],
     "ambient": "firefly_glow",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -180006,7 +180006,7 @@
       24
     ],
     "ambient": "pterosaur_shadow",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -180021,7 +180021,7 @@
       24
     ],
     "ambient": "pterosaur_shadow",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -180036,7 +180036,7 @@
       16
     ],
     "ambient": "millipede",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -180051,7 +180051,7 @@
       16
     ],
     "ambient": "millipede",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -180066,7 +180066,7 @@
       6
     ],
     "ambient": "ash_ember",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -180081,7 +180081,7 @@
       6
     ],
     "ambient": "ash_ember",
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false
   },
@@ -180095,7 +180095,7 @@
       12,
       12
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180110,7 +180110,7 @@
       12,
       12
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180125,7 +180125,7 @@
       12,
       12
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180140,7 +180140,7 @@
       12,
       12
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180155,7 +180155,7 @@
       12,
       12
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180170,7 +180170,7 @@
       12,
       12
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180185,7 +180185,7 @@
       12,
       12
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180200,7 +180200,7 @@
       12,
       12
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180215,7 +180215,7 @@
       16,
       16
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180230,7 +180230,7 @@
       16,
       16
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180245,7 +180245,7 @@
       24,
       38
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180260,7 +180260,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180275,7 +180275,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180290,7 +180290,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180305,7 +180305,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180320,7 +180320,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180335,7 +180335,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180350,7 +180350,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180365,7 +180365,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180380,7 +180380,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180395,7 +180395,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180410,7 +180410,7 @@
       8,
       8
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180425,7 +180425,7 @@
       24,
       40
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180440,7 +180440,7 @@
       24,
       40
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180455,7 +180455,7 @@
       24,
       40
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180470,7 +180470,7 @@
       24,
       40
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180485,7 +180485,7 @@
       24,
       40
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180500,7 +180500,7 @@
       24,
       40
     ],
-    "atlas_group": "world_run_extras",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180515,7 +180515,7 @@
       12,
       16
     ],
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180530,7 +180530,7 @@
       12,
       16
     ],
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180545,7 +180545,7 @@
       12,
       16
     ],
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180560,7 +180560,7 @@
       12,
       12
     ],
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
@@ -180575,7 +180575,7 @@
       12,
       12
     ],
-    "atlas_group": "world_ambient",
+    "atlas_group": "world_extras",
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false

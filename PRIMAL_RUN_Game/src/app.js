@@ -688,12 +688,12 @@
     function touchLayout(){
       const info=shell.querySelector('.run-info'),meat=shell.querySelector('.meat-progress'),pad=shell.querySelector('.touch-controls');
       if(!touchPlay()){info.style.top='';meat.style.bottom=(info.offsetHeight+24)+'px';shell.style.removeProperty('--touch-h');return;}
-      const hud=shell.querySelector('.hud'),arena=shell.querySelector('.arena'),top=hud.getBoundingClientRect().bottom-arena.getBoundingClientRect().top+6;
+      const hud=shell.querySelector('.hud-card')||shell.querySelector('.hud'),arena=shell.querySelector('.arena'),top=hud.getBoundingClientRect().bottom-arena.getBoundingClientRect().top+6;
       info.style.top=Math.round(top)+'px';meat.style.top='';meat.style.bottom='';
       shell.style.setProperty('--touch-h',(pad.offsetHeight||0)+'px');
     }
     function minimap(r) {
-      const width = Math.min(120, canvas.width * .25), height = width * r.map.height / r.map.width;
+      const width = Math.min(touchPlay()&&canvas.height<canvas.width*.6?88:120, canvas.width * .25), height = width * r.map.height / r.map.width;
       const card=shell.querySelector('.hunt-counter'),x = canvas.width - width - 12, y = touchPlay()&&card ? Math.round((card.getBoundingClientRect().bottom-canvas.getBoundingClientRect().top+8)*canvas.height/Math.max(1,canvas.getBoundingClientRect().height)) : canvas.height - height - shell.querySelector('.run-info').offsetHeight - 24;
       ctx.fillStyle = '#101713dc'; ctx.fillRect(x, y, width, height); ctx.strokeStyle = '#b6c0a9'; ctx.strokeRect(x, y, width, height);
       const seen=p=>r.explored[Math.floor(p.x/192)+','+Math.floor(p.y/192)];
@@ -932,8 +932,9 @@
     // ---- Run extras (run_extras.js): powerups, shrines, amber, elite badges, egg hatch, day rhythm light and
     // ambient animals (FEATURES.ambientLife). Display only; positions come from the map, so a seed always looks the same.
     const EXTRA='assets/run_extras/',AMB='assets/new_species/ambient/';
+    const AMBIENT_CACHE=new WeakMap();
     function ambientLife(map,stage){
-      if(map.ambientLife)return map.ambientLife;
+      const cached=AMBIENT_CACHE.get(map);if(cached)return cached; // cached beside the map, never in run state
       let seed=(map.seed^0x2c1b3c6d)>>>0;const rnd=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
       const dry=p=>!C.isWater(stage,map,p,-10)&&!(C.isLava&&C.isLava(stage,map,p));
       const life={holes:[],frogs:[],millipedes:[],jumps:[],swarms:[],bats:[],shadows:[]};
@@ -944,7 +945,7 @@
       if(stage<3)for(const h of (map.habitats||[]).filter((_,i)=>i%6===1).slice(0,7))life.swarms.push({x:h.x,y:h.y-30,phase:rnd()*6});
       for(const h of (map.habitats||[]).filter((_,i)=>i%7===3).slice(0,6))life.bats.push({x:h.x,y:h.y-60,phase:rnd()*6});
       if(stage>0)for(let i=0;i<2;i++)life.shadows.push({y:Math.round(map.height*(.3+.4*i)),speed:70+40*rnd(),phase:rnd()*4000});
-      return map.ambientLife=life;
+      AMBIENT_CACHE.set(map,life);return life;
     }
     const near=(p,view,m=60)=>p.x>view.x-m&&p.x<view.x+canvas.width+m&&p.y>view.y-m&&p.y<view.y+canvas.height+m;
     function drawPowerup(p,time){
@@ -1170,7 +1171,7 @@
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
       shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : control('ability')+' KLAR');
       const config=C.PLAYER_SPECIES[r.species],cost=C.abilityCost(r),attackFraction=1-r.attackCooldown/(r.attackDuration||config.cooldown),abilityFraction=1-r.pounceCooldown/(r.abilityCooldownDuration||config.abilityCooldown);
-      shell.querySelector('#attack-fill').style.width=Math.max(0,Math.min(100,attackFraction*100))+'%';shell.querySelector('#ability-fill').style.width=Math.max(0,Math.min(100,abilityFraction*100))+'%';
+      shell.querySelector('#attack-fill').style.width=Math.max(0,Math.min(100,attackFraction*100))+'%';shell.querySelector('#ability-fill').style.width=Math.max(0,Math.min(100,abilityFraction*100))+'%';const padA=shell.querySelector('.pad-a'),padB=shell.querySelector('.pad-b');if(padA)padA.style.setProperty('--cd',Math.max(0,Math.min(1,1-attackFraction)).toFixed(3));if(padB){padB.style.setProperty('--cd',Math.max(0,Math.min(1,1-abilityFraction)).toFixed(3));padB.classList.toggle('pad-tired',r.stamina<cost);}
       shell.querySelector('#attack-ready').textContent=controlWord('attack')+' · '+(r.attackCooldown>0?r.attackCooldown.toFixed(1)+' s':'KLAR');shell.querySelector('#ability-ready').textContent=controlWord('ability')+' · '+(r.pounceCooldown>0?r.pounceCooldown.toFixed(1)+' s':r.stamina<cost?'MANGLER STAMINA':'KLAR')+' · '+cost+' ⚡';
       shell.querySelector('.action-cooldowns').dataset.ready=String(r.pounceCooldown===0&&r.stamina>=cost);
       bossHUD.hidden = !boss || !['playing', 'paused', 'mutation'].includes(game.phase);

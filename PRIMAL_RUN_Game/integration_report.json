@@ -13,9 +13,9 @@
     "src/core.js": "53f9ddb865656b414c6c15080e93218ab16c243fa1986e4b7f4d46fe7e54a99f",
     "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
     "src/lang.js": "bfc435e4c124a388289d7a6fe9157b2b38373b3d9a60de0c4844e662940a40a6",
-    "src/assets.js": "39c980f66c3002b19e2ebee49ad9a263de62f5652f3a3d7c103b6b651beb80d2",
+    "src/assets.js": "f55bd17abd095bebb74da5a083827933570b61d66b6182e504edf4981e5e6c2b",
     "src/audio.js": "a9bfc49f350af4a209d69cbeb50f5156f34bba953075ddb0ef50dbf10fc50985",
-    "src/app.js": "856d82b97d0a5e0e4feb04b8744fecfbd689ccb41a3716f18d7d38c4274717a2",
-    "style.css": "7c573cf2230a3fb39d749afcf553dd052c69ba80dbc586e142ff31eeccefee66"
+    "src/app.js": "f672923b53e6714b902a715722cb6c5c5a67106ac18db244814a25512f5dfe3b",
+    "style.css": "2c65994df132eed50c42a8f437f2b475fc23aface1b21affe2b5f5075b07bb87"
   }
 }
