@@ -1,0 +1,1332 @@
+{
+  "assets/ecology/beetle_0.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 295,
+    "y": 847
+  },
+  "assets/ecology/beetle_1.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 685
+  },
+  "assets/ecology/broad_fern.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 389,
+    "y": 1
+  },
+  "assets/ecology/conifer.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 389,
+    "y": 115
+  },
+  "assets/ecology/cycad.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 389,
+    "y": 229
+  },
+  "assets/ecology/dragonfly_0.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 719
+  },
+  "assets/ecology/dragonfly_1.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 753
+  },
+  "assets/ecology/dry_grass.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 389,
+    "y": 343
+  },
+  "assets/ecology/firefly_0.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 787
+  },
+  "assets/ecology/firefly_1.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 821
+  },
+  "assets/ecology/flowers.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 259,
+    "y": 391
+  },
+  "assets/ecology/fruit_bush.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 373,
+    "y": 457
+  },
+  "assets/ecology/herb.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 259,
+    "y": 505
+  },
+  "assets/ecology/horsetail.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 373,
+    "y": 571
+  },
+  "assets/ecology/leaf_litter.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 1,
+    "y": 517
+  },
+  "assets/ecology/lichen.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 115,
+    "y": 517
+  },
+  "assets/ecology/moss.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 229,
+    "y": 619
+  },
+  "assets/ecology/mushrooms.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 343,
+    "y": 685
+  },
+  "assets/ecology/reeds.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 1,
+    "y": 631
+  },
+  "assets/ecology/roots.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 115,
+    "y": 631
+  },
+  "assets/ecology/seed_fern.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 229,
+    "y": 733
+  },
+  "assets/ecology/shrub.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 343,
+    "y": 799
+  },
+  "assets/ecology/succulent.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 1,
+    "y": 745
+  },
+  "assets/ecology/twigs.png": {
+    "anchor": [
+      56,
+      56
+    ],
+    "h": 112,
+    "w": 112,
+    "x": 115,
+    "y": 745
+  },
+  "assets/environment/fern.png": {
+    "anchor": [
+      32,
+      36
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 229,
+    "y": 847
+  },
+  "assets/environment/grass.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 855
+  },
+  "assets/environment/rock.png": {
+    "anchor": [
+      32,
+      36
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1,
+    "y": 859
+  },
+  "assets/ground/basalt_crossing_0.png": {
+    "anchor": [
+      128,
+      128
+    ],
+    "h": 256,
+    "w": 256,
+    "x": 1,
+    "y": 1
+  },
+  "assets/ground/basalt_crossing_1.png": {
+    "anchor": [
+      128,
+      128
+    ],
+    "h": 256,
+    "w": 256,
+    "x": 1,
+    "y": 259
+  },
+  "assets/ground/dried_mud_edge_N_0.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 889
+  },
+  "assets/ground/dried_mud_edge_N_1.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 923
+  },
+  "assets/ground/dried_mud_edge_N_2.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 463,
+    "y": 957
+  },
+  "assets/ground/dried_mud_edge_N_3.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 199,
+    "y": 979
+  },
+  "assets/ground/forest_0.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 991
+  },
+  "assets/ground/forest_1.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 991
+  },
+  "assets/ground/forest_2.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 991
+  },
+  "assets/ground/forest_3.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 991
+  },
+  "assets/ground/river_0.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 991
+  },
+  "assets/ground/river_1.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 233,
+    "y": 979
+  },
+  "assets/ground/river_2.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 267,
+    "y": 979
+  },
+  "assets/ground/river_3.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 301,
+    "y": 979
+  },
+  "assets/ground/rocks_0.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 335,
+    "y": 979
+  },
+  "assets/ground/rocks_1.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 369,
+    "y": 979
+  },
+  "assets/ground/rocks_2.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 403,
+    "y": 979
+  },
+  "assets/ground/rocks_3.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 437,
+    "y": 991
+  },
+  "assets/ground/volcano_0.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 471,
+    "y": 991
+  },
+  "assets/ground/volcano_1.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 1013
+  },
+  "assets/ground/volcano_2.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 1025
+  },
+  "assets/ground/volcano_3.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 1025
+  },
+  "assets/lava_ash/lava_ash_00.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 1025
+  },
+  "assets/lava_ash/lava_ash_01.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 1025
+  },
+  "assets/lava_ash/lava_ash_02.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 1025
+  },
+  "assets/lava_ash/lava_ash_03.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 1013
+  },
+  "assets/lava_ash/lava_ash_04.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 239,
+    "y": 1013
+  },
+  "assets/lava_ash/lava_ash_05.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 273,
+    "y": 1013
+  },
+  "assets/lava_ash/lava_ash_06.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 307,
+    "y": 1013
+  },
+  "assets/lava_ash/lava_ash_07.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 341,
+    "y": 1013
+  },
+  "assets/lava_ash/lava_ash_08.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 375,
+    "y": 1013
+  },
+  "assets/lava_ash/lava_ash_09.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 409,
+    "y": 1025
+  },
+  "assets/lava_ash/lava_ash_10.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 443,
+    "y": 1025
+  },
+  "assets/lava_ash/lava_ash_11.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 477,
+    "y": 1025
+  },
+  "assets/lava_ash/lava_ash_12.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 1047
+  },
+  "assets/lava_ash/lava_ash_13.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 1059
+  },
+  "assets/lava_ash/lava_ash_14.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 1059
+  },
+  "assets/lava_ash/lava_ash_15.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 1059
+  },
+  "assets/props/boulder_large.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 67,
+    "y": 859
+  },
+  "assets/props/dead_tree.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 259,
+    "y": 1
+  },
+  "assets/props/fallen_log.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 133,
+    "y": 859
+  },
+  "assets/props/fern_large.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 199,
+    "y": 913
+  },
+  "assets/props/flower_bush.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 1,
+    "y": 925
+  },
+  "assets/props/lava_rock.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 67,
+    "y": 925
+  },
+  "assets/props/meteorite.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 133,
+    "y": 925
+  },
+  "assets/props/nest_eggs.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 265,
+    "y": 913
+  },
+  "assets/props/nest_empty.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 331,
+    "y": 913
+  },
+  "assets/props/ribcage.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 259,
+    "y": 131
+  },
+  "assets/props/skull.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 397,
+    "y": 913
+  },
+  "assets/props/tree_canopy.png": {
+    "anchor": [
+      64,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 259,
+    "y": 261
+  },
+  "assets/tiles/deep_water.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 1059
+  },
+  "assets/tiles/dirt.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 1059
+  },
+  "assets/tiles/forest_floor.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 1047
+  },
+  "assets/tiles/grass_alt.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 239,
+    "y": 1047
+  },
+  "assets/tiles/gravel.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 273,
+    "y": 1047
+  },
+  "assets/tiles/sand.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 307,
+    "y": 1047
+  },
+  "assets/tiles/shallow_water.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 341,
+    "y": 1047
+  },
+  "assets/tiles/volcanic.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 375,
+    "y": 1047
+  },
+  "assets/water_transitions/shore_sand_00.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 409,
+    "y": 1059
+  },
+  "assets/water_transitions/shore_sand_01.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 443,
+    "y": 1059
+  },
+  "assets/water_transitions/shore_sand_02.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 477,
+    "y": 1059
+  },
+  "assets/water_transitions/shore_sand_03.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 1081
+  },
+  "assets/water_transitions/shore_sand_04.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 1093
+  },
+  "assets/water_transitions/shore_sand_05.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 1093
+  },
+  "assets/water_transitions/shore_sand_06.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 1093
+  },
+  "assets/water_transitions/shore_sand_07.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 1093
+  },
+  "assets/water_transitions/shore_sand_08.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 1093
+  },
+  "assets/water_transitions/shore_sand_09.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 1081
+  },
+  "assets/water_transitions/shore_sand_10.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 239,
+    "y": 1081
+  },
+  "assets/water_transitions/shore_sand_11.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 273,
+    "y": 1081
+  },
+  "assets/water_transitions/shore_sand_12.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 307,
+    "y": 1081
+  },
+  "assets/water_transitions/shore_sand_13.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 341,
+    "y": 1081
+  },
+  "assets/water_transitions/shore_sand_14.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 375,
+    "y": 1081
+  },
+  "assets/water_transitions/shore_sand_15.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 409,
+    "y": 1093
+  },
+  "assets/water_transitions/shore_soil_00.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 443,
+    "y": 1093
+  },
+  "assets/water_transitions/shore_soil_01.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 477,
+    "y": 1093
+  },
+  "assets/water_transitions/shore_soil_02.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 1115
+  },
+  "assets/water_transitions/shore_soil_03.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 1127
+  },
+  "assets/water_transitions/shore_soil_04.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 1127
+  },
+  "assets/water_transitions/shore_soil_05.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 1127
+  },
+  "assets/water_transitions/shore_soil_06.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 1127
+  },
+  "assets/water_transitions/shore_soil_07.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 1127
+  },
+  "assets/water_transitions/shore_soil_08.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 1115
+  },
+  "assets/water_transitions/shore_soil_09.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 239,
+    "y": 1115
+  },
+  "assets/water_transitions/shore_soil_10.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 273,
+    "y": 1115
+  },
+  "assets/water_transitions/shore_soil_11.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 307,
+    "y": 1115
+  },
+  "assets/water_transitions/shore_soil_12.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 341,
+    "y": 1115
+  },
+  "assets/water_transitions/shore_soil_13.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 375,
+    "y": 1115
+  },
+  "assets/water_transitions/shore_soil_14.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 409,
+    "y": 1127
+  },
+  "assets/water_transitions/shore_soil_15.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 443,
+    "y": 1127
+  },
+  "assets/water_transitions/water_depth_00.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 477,
+    "y": 1127
+  },
+  "assets/water_transitions/water_depth_01.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 1149
+  },
+  "assets/water_transitions/water_depth_02.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 1161
+  },
+  "assets/water_transitions/water_depth_03.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 1161
+  },
+  "assets/water_transitions/water_depth_04.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 1161
+  },
+  "assets/water_transitions/water_depth_05.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 1161
+  },
+  "assets/water_transitions/water_depth_06.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 1161
+  },
+  "assets/water_transitions/water_depth_07.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 1149
+  },
+  "assets/water_transitions/water_depth_08.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 239,
+    "y": 1149
+  },
+  "assets/water_transitions/water_depth_09.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 273,
+    "y": 1149
+  },
+  "assets/water_transitions/water_depth_10.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 307,
+    "y": 1149
+  },
+  "assets/water_transitions/water_depth_11.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 341,
+    "y": 1149
+  },
+  "assets/water_transitions/water_depth_12.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 375,
+    "y": 1149
+  },
+  "assets/water_transitions/water_depth_13.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 409,
+    "y": 1161
+  },
+  "assets/water_transitions/water_depth_14.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 443,
+    "y": 1161
+  },
+  "assets/water_transitions/water_depth_15.png": {
+    "anchor": [
+      0,
+      0
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 477,
+    "y": 1161
+  }
+}

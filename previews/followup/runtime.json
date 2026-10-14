@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "heads": 60,
+  "attacks": 4,
+  "forage": {
+    "types": [
+      "fruit",
+      "roots",
+      "mushrooms",
+      "toxic_mushrooms"
+    ],
+    "moving": "hue-rotate(0deg) saturate(1.15)",
+    "still": ""
+  },
+  "checks": [
+    "native-name welcome persists English choice",
+    "Deinonychus free starter",
+    "build fully freezes simulation",
+    "12 species x5 head reactions",
+    "4 A1 species attacks render",
+    "four actual food types and reduced-motion poison effect"
+  ],
+  "production_approved": false
+}

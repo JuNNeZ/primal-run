@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-10T12:35:43.188Z",
+  "runs": 216,
+  "titled": 187,
+  "timeouts": 29,
+  "seconds": 900,
+  "distinctPrimaries": 18,
+  "maxNonFallback": {
+    "id": "speed_slayer",
+    "pct": 53.5
+  },
+  "fallbackPct": 0,
+  "pass": false,
+  "primaryShare": {
+    "speed_slayer": 53.5,
+    "palle_pushover": 9.1,
+    "untouchable": 7.5,
+    "tiny_terror": 6.4,
+    "speedrun_to_death": 6.4,
+    "apex_predator": 4.3,
+    "glass_jaw": 2.7,
+    "ghost_of_the_valley": 2.1,
+    "efficient_killer": 1.6,
+    "green_teeth": 1.1,
+    "dodger": 1.1,
+    "flawless_stretch": 1.1,
+    "herbivore_casualty": 0.5,
+    "by_a_thread": 0.5,
+    "river_hunter": 0.5,
+    "predator_path": 0.5,
+    "first_blood": 0.5,
+    "persistent_hunter": 0.5
+  }
+}

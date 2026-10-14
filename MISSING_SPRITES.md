@@ -14,8 +14,8 @@ sprites. Se [PRESENTATION_AND_ATLAS.md](PRESENTATION_AND_ATLAS.md) for status,
 godkendelseshashes, fallbacks og tests. Tabellen nedenfor beskriver den tidligere
 placeholder og de øvrige åbne ønsker.
 
-A1–A5 har nu integrerede **prototyper**. Produktionsgodkendelse og den samlede
-slutverifikation mangler; se `SPRITES_AND_MECHANICS_STATUS.md`.
+A1–A5 har nu integrerede **prototyper**. Produktionsgodkendelse og en ny GDJS-sluttest mangler. Browser- og
+assetchecks er verificeret i fortsættelsen den 12. oktober; se `SPRITES_AND_MECHANICS_STATUS.md`.
 
 1. **Kryds-state konsistens:** finpuds kropsform, markeringer og loop-overgange.
    Fem arter har 120 artsangrebsframes, inklusive Parasaurolophus-spark.
@@ -31,7 +31,7 @@ slutverifikation mangler; se `SPRITES_AND_MECHANICS_STATUS.md`.
    færdiggøres uden at ændre vandreglerne for at skjule grafikfejl.
 5. **Raptor-ådsler:** Velociraptor/Utahraptor har nu 32 NPC-klare ådsel-/skeletposes.
    De 160 ældre poses er uændrede. Endelig anatomi- og farvereview mangler.
-6. **Valgfri A6:** lava/aske-overgange, pixel-HUD-chips og natpaletter.
+6. **A6 bygget:** natpalet, otte HUD-ikoner (mad/DNA/zone samt Part C-flok/reroll) og seksten lava/aske-masker er integreret. Originale sol/måne, basalt og askeskyer bevares. Sømløs art og ny GDJS-eksport mangler særskilt review; se A6_HUD_AND_LAVA.md.
 7. **Fremtid:** æg, udklækning og baby-/ungestadier pr. art, efter gameplay-/balancevalg.
 
 De 632 tidligere behavior-studieframes er runtime-deaktiveret og bevaret som
@@ -73,3 +73,12 @@ Banens grafik hentes nu først ved START, men en bane koster stadig flere hundre
 - Atlas-JSON skal gemme `{path: {x,y,w,h,anchor}}`, så `catalog` og de faste ankre er uændrede. `sprite(path)` slår op i atlasset og tegner med `drawImage(sheet, x,y,w,h, …)`.
 - Behold Primal Earth 32 og de nøjagtige pixels. Brug ingen skalering, ingen komprimering med tab, og 1 px gennemsigtig padding mod bleeding.
 - Mål: højst ca. 40 requests pr. bane og ca. 30 i menuen. Validatorerne (`validate:game-sprites` / `validate:enemy-sprites`) skal køre på kilde-PNG'erne som i dag.
+
+## Nye behov fra Part C · kontrolleret 12. oktober
+
+Flok-følg/fokus og reroll-ikoner er leveret med A6. På snapshot `4e14a27`
+(`claude/project-thread-9luicd`) bruger vækststadier stadig fraktionel
+visualScale (1 + 0.04 × growth, app.js:849). Det kræver native vækst-frames
+eller en separat rettelse af skalaen; vores A6-pakke ændrer ikke Part C-regler.
+Gallimimus-støvskyen bruger en procedural ellipse og kan få en native FX-pakke
+senere. Se A6_HUD_AND_LAVA.md for scope og kompatibilitetsbevis.

@@ -1,0 +1,73 @@
+{
+  "assets/avatars/utahraptor_sneak_003.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 651,
+    "y": 1
+  },
+  "assets/player_combat/utahraptor_bite_W_000.png": {
+    "anchor": [
+      60,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1,
+    "y": 1
+  },
+  "assets/player_combat/utahraptor_bite_W_001.png": {
+    "anchor": [
+      60,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 131,
+    "y": 1
+  },
+  "assets/player_combat/utahraptor_bite_W_002.png": {
+    "anchor": [
+      60,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 261,
+    "y": 1
+  },
+  "assets/player_combat/utahraptor_bite_W_003.png": {
+    "anchor": [
+      60,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 391,
+    "y": 1
+  },
+  "assets/player_combat/utahraptor_bite_W_004.png": {
+    "anchor": [
+      60,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 521,
+    "y": 1
+  },
+  "assets/player_combat/utahraptor_bite_W_005.png": {
+    "alias_of": "assets/player_combat/utahraptor_bite_W_000.png",
+    "anchor": [
+      60,
+      64
+    ],
+    "h": 128,
+    "w": 128,
+    "x": 1,
+    "y": 1
+  }
+}

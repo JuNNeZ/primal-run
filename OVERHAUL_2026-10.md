@@ -3,6 +3,14 @@
 Godkendt af Jonas: M2, M4, M5, G1–G11, A1–A6, B1–B5, P1–P5, L1–L5 + procedurale baner.
 Alt ligger på branchen `claude/overhaul`. Hver fase er sin egen commit.
 
+## A-serien · godkendt fortsættelse, 12. oktober
+
+A1–A5 er allerede integreret på integration/next; Jonas har godkendt
+implementering og push. A6 får et natpalet-skift på eksisterende dyr og ådsler
+uden nye tegninger. Artsfarver og skins behandles før natfarver; tilbagevenden
+til dag gendanner de samme pixels. FEATURE-flags kan deaktivere skiftet.
+HUD-chips og seksten lava/aske-masker er nu implementeret som prototyper. Part C-følg/fokus/reroll er forberedt og kompatibilitet testes særskilt. Se A6_HUD_AND_LAVA.md.
+
 ## Del A — integrerede prototyper, 10. oktober
 
 Fem arter har nu 120 artsangrebsframes. Ankylosaurus bruger de 24 oprindelige

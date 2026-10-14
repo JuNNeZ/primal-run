@@ -1,0 +1,472 @@
+{
+  "assets/new_species/ambient/ash_ember_0.png": {
+    "anchor": [
+      6,
+      6
+    ],
+    "h": 12,
+    "w": 12,
+    "x": 243,
+    "y": 141
+  },
+  "assets/new_species/ambient/ash_ember_1.png": {
+    "anchor": [
+      6,
+      6
+    ],
+    "h": 12,
+    "w": 12,
+    "x": 243,
+    "y": 155
+  },
+  "assets/new_species/ambient/butterfly_0.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 201,
+    "y": 51
+  },
+  "assets/new_species/ambient/butterfly_1.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 201,
+    "y": 85
+  },
+  "assets/new_species/ambient/firefly_glow_0.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 171,
+    "y": 101
+  },
+  "assets/new_species/ambient/firefly_glow_1.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 239,
+    "y": 51
+  },
+  "assets/new_species/ambient/frog_0.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 101
+  },
+  "assets/new_species/ambient/frog_1.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 35,
+    "y": 101
+  },
+  "assets/new_species/ambient/millipede_0.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 69,
+    "y": 101
+  },
+  "assets/new_species/ambient/millipede_1.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 103,
+    "y": 101
+  },
+  "assets/new_species/ambient/pterosaur_shadow_0.png": {
+    "anchor": [
+      24,
+      24
+    ],
+    "h": 48,
+    "w": 48,
+    "x": 1,
+    "y": 1
+  },
+  "assets/new_species/ambient/pterosaur_shadow_1.png": {
+    "anchor": [
+      24,
+      24
+    ],
+    "h": 48,
+    "w": 48,
+    "x": 51,
+    "y": 1
+  },
+  "assets/new_species/ambient/small_mammal_0.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 137,
+    "y": 101
+  },
+  "assets/new_species/ambient/small_mammal_1.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 171,
+    "y": 119
+  },
+  "assets/run_extras/affix_armored.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 239,
+    "y": 69
+  },
+  "assets/run_extras/affix_brutal.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 239,
+    "y": 87
+  },
+  "assets/run_extras/affix_regen.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 239,
+    "y": 105
+  },
+  "assets/run_extras/affix_swift.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 239,
+    "y": 123
+  },
+  "assets/run_extras/affix_thorns.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 139,
+    "y": 161
+  },
+  "assets/run_extras/amber_0.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 139,
+    "y": 179
+  },
+  "assets/run_extras/amber_1.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 157,
+    "y": 179
+  },
+  "assets/run_extras/bat_0.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 35,
+    "y": 135
+  },
+  "assets/run_extras/bat_1.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 61,
+    "y": 135
+  },
+  "assets/run_extras/egg_hatch_0.png": {
+    "anchor": [
+      24,
+      40
+    ],
+    "h": 48,
+    "w": 48,
+    "x": 101,
+    "y": 1
+  },
+  "assets/run_extras/egg_hatch_1.png": {
+    "anchor": [
+      24,
+      40
+    ],
+    "h": 48,
+    "w": 48,
+    "x": 151,
+    "y": 1
+  },
+  "assets/run_extras/egg_hatch_2.png": {
+    "anchor": [
+      24,
+      40
+    ],
+    "h": 48,
+    "w": 48,
+    "x": 201,
+    "y": 1
+  },
+  "assets/run_extras/egg_hatch_3.png": {
+    "anchor": [
+      24,
+      40
+    ],
+    "h": 48,
+    "w": 48,
+    "x": 1,
+    "y": 51
+  },
+  "assets/run_extras/egg_hatch_4.png": {
+    "anchor": [
+      24,
+      40
+    ],
+    "h": 48,
+    "w": 48,
+    "x": 51,
+    "y": 51
+  },
+  "assets/run_extras/egg_hatch_5.png": {
+    "anchor": [
+      24,
+      40
+    ],
+    "h": 48,
+    "w": 48,
+    "x": 101,
+    "y": 51
+  },
+  "assets/run_extras/fish_jump_0.png": {
+    "anchor": [
+      12,
+      16
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 87,
+    "y": 135
+  },
+  "assets/run_extras/fish_jump_1.png": {
+    "anchor": [
+      12,
+      16
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 113,
+    "y": 135
+  },
+  "assets/run_extras/fish_jump_2.png": {
+    "anchor": [
+      12,
+      16
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 139,
+    "y": 135
+  },
+  "assets/run_extras/powerup_amber.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 165,
+    "y": 153
+  },
+  "assets/run_extras/powerup_comet.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 191,
+    "y": 153
+  },
+  "assets/run_extras/powerup_frost.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 217,
+    "y": 153
+  },
+  "assets/run_extras/powerup_glow_0.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 205,
+    "y": 119
+  },
+  "assets/run_extras/powerup_glow_1.png": {
+    "anchor": [
+      16,
+      16
+    ],
+    "h": 32,
+    "w": 32,
+    "x": 1,
+    "y": 135
+  },
+  "assets/run_extras/powerup_heart.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 35,
+    "y": 161
+  },
+  "assets/run_extras/powerup_leech.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 1,
+    "y": 169
+  },
+  "assets/run_extras/powerup_rage.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 61,
+    "y": 161
+  },
+  "assets/run_extras/powerup_stamina.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 87,
+    "y": 161
+  },
+  "assets/run_extras/powerup_wind.png": {
+    "anchor": [
+      12,
+      12
+    ],
+    "h": 24,
+    "w": 24,
+    "x": 113,
+    "y": 161
+  },
+  "assets/run_extras/shrine.png": {
+    "anchor": [
+      24,
+      38
+    ],
+    "h": 48,
+    "w": 48,
+    "x": 151,
+    "y": 51
+  },
+  "assets/run_extras/streak_flame_0.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 175,
+    "y": 179
+  },
+  "assets/run_extras/streak_flame_1.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 193,
+    "y": 179
+  },
+  "assets/run_extras/time_dawn.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 211,
+    "y": 179
+  },
+  "assets/run_extras/time_dusk.png": {
+    "anchor": [
+      8,
+      8
+    ],
+    "h": 16,
+    "w": 16,
+    "x": 229,
+    "y": 179
+  }
+}

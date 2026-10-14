@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-10T09:27:13.106Z",
+  "runs": 72,
+  "titled": 58,
+  "timeouts": 14,
+  "seconds": 600,
+  "distinctPrimaries": 10,
+  "maxNonFallback": {
+    "id": "speed_slayer",
+    "pct": 60.3
+  },
+  "fallbackPct": 0,
+  "pass": false,
+  "primaryShare": {
+    "speed_slayer": 60.3,
+    "palle_pushover": 12.1,
+    "tiny_terror": 6.9,
+    "untouchable": 5.2,
+    "speedrun_to_death": 5.2,
+    "efficient_killer": 3.4,
+    "apex_predator": 1.7,
+    "glass_jaw": 1.7,
+    "predator_path": 1.7,
+    "ghost_of_the_valley": 1.7
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-10T11:35:07.707Z",
+  "species": "carnotaurus",
+  "seeds": 50,
+  "firstSeed": 2000,
+  "seconds": 200,
+  "across": false,
+  "styles": [
+    "optimizer"
+  ],
+  "flagsOffBaseline": [
+    "bossReach",
+    "lavaCrossings",
+    "bossSignatures"
+  ],
+  "candidate": [
+    {
+      "level": 2,
+      "boss": "Carl - Skovens Vogter",
+      "style": "optimizer",
+      "seeds": 50,
+      "wins": 31,
+      "deaths": 19,
+      "bossHpLostPct": 94,
+      "damageTaken": 110,
+      "seconds": 34.8
+    }
+  ],
+  "baseline": [
+    {
+      "level": 2,
+      "boss": "Carl - Skovens Vogter",
+      "style": "optimizer",
+      "seeds": 50,
+      "wins": 31,
+      "deaths": 19,
+      "bossHpLostPct": 94,
+      "damageTaken": 110,
+      "seconds": 34.8
+    }
+  ]
+}

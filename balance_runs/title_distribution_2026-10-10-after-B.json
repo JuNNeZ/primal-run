@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-10T14:28:29.122Z",
+  "runs": 252,
+  "titled": 230,
+  "timeouts": 22,
+  "seconds": 900,
+  "distinctPrimaries": 23,
+  "maxNonFallback": {
+    "id": "speed_slayer",
+    "pct": 27
+  },
+  "fallbackPct": 0,
+  "pass": false,
+  "primaryShare": {
+    "speed_slayer": 27,
+    "untouchable": 11.7,
+    "predator_path": 9.1,
+    "speedrun_to_death": 7.4,
+    "tiny_terror": 6.5,
+    "palle_pushover": 6.5,
+    "apex_predator": 3.9,
+    "by_a_thread": 3.5,
+    "carrion_connoisseur": 2.6,
+    "achiever": 2.6,
+    "river_hunter": 2.6,
+    "ghost_of_the_valley": 1.7,
+    "efficient_killer": 1.7,
+    "persistent_hunter": 1.7,
+    "epic_genome": 1.7,
+    "carls_lunch": 1.7,
+    "dodger": 1.7,
+    "glass_jaw": 1.3,
+    "green_teeth": 1.3,
+    "first_blood": 1.3,
+    "living_dangerously": 0.9,
+    "compy_snack": 0.9,
+    "fish_king": 0.4
+  }
+}

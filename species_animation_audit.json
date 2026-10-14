@@ -1,0 +1,1229 @@
+{
+  "technical_result": "PASS",
+  "species": 13,
+  "sequences": 312,
+  "frames": 1560,
+  "coverage": {
+    "compy": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "utahraptor": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "carnotaurus": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "ankylosaurus": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "pachycephalosaurus": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "gallimimus": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "baryonyx": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "velociraptor": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "deinonychus": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "parasaurolophus": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "deinosuchus": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "triceratops": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    },
+    "tyrannosaurus": {
+      "states": {
+        "idle": 4,
+        "walk": 6,
+        "run": 6,
+        "attack": 6,
+        "hurt": 2,
+        "death": 6
+      },
+      "directions": [
+        "S",
+        "E",
+        "N",
+        "W"
+      ],
+      "frames": 120
+    }
+  },
+  "errors": [],
+  "exact_cross_species_RGBA_matches": [],
+  "review_candidates": [
+    {
+      "species": "utahraptor",
+      "direction": "S",
+      "state": "death",
+      "area_ratio": 1.446,
+      "adjacent_centroid_steps": [
+        3.725,
+        1.178,
+        2.198,
+        2.961,
+        1.983
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "utahraptor",
+      "direction": "W",
+      "state": "idle",
+      "area_ratio": 1.021,
+      "adjacent_centroid_steps": [
+        2.11,
+        2.53,
+        2.423
+      ],
+      "loop_centroid_step": 7.02
+    },
+    {
+      "species": "utahraptor",
+      "direction": "W",
+      "state": "death",
+      "area_ratio": 1.16,
+      "adjacent_centroid_steps": [
+        6.288,
+        3.869,
+        7.788,
+        2.165,
+        1.56
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "S",
+      "state": "death",
+      "area_ratio": 1.654,
+      "adjacent_centroid_steps": [
+        6.228,
+        0.596,
+        13.701,
+        12.469,
+        4.565
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "W",
+      "state": "walk",
+      "area_ratio": 1.06,
+      "adjacent_centroid_steps": [
+        1.939,
+        1.191,
+        8.787,
+        1.97,
+        0.583
+      ],
+      "loop_centroid_step": 10.561
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "W",
+      "state": "run",
+      "area_ratio": 1.186,
+      "adjacent_centroid_steps": [
+        2.119,
+        2.537,
+        2.294,
+        8.253,
+        2.624
+      ],
+      "loop_centroid_step": 9.076
+    },
+    {
+      "species": "carnotaurus",
+      "direction": "W",
+      "state": "attack",
+      "area_ratio": 1.105,
+      "adjacent_centroid_steps": [
+        1.803,
+        3.023,
+        0.869,
+        7.712,
+        3.838
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "S",
+      "state": "walk",
+      "area_ratio": 1.032,
+      "adjacent_centroid_steps": [
+        0.43,
+        0.738,
+        7.774,
+        2.742,
+        1.639
+      ],
+      "loop_centroid_step": 6.586
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "S",
+      "state": "run",
+      "area_ratio": 1.06,
+      "adjacent_centroid_steps": [
+        0.828,
+        0.594,
+        7.466,
+        3.138,
+        2.187
+      ],
+      "loop_centroid_step": 7.149
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "S",
+      "state": "attack",
+      "area_ratio": 1.146,
+      "adjacent_centroid_steps": [
+        2.227,
+        7.847,
+        1.218,
+        6.68,
+        1.98
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "S",
+      "state": "hurt",
+      "area_ratio": 1.068,
+      "adjacent_centroid_steps": [
+        10.792
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "E",
+      "state": "idle",
+      "area_ratio": 1.024,
+      "adjacent_centroid_steps": [
+        3.693,
+        3.036,
+        1.864
+      ],
+      "loop_centroid_step": 8.591
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "E",
+      "state": "walk",
+      "area_ratio": 1.029,
+      "adjacent_centroid_steps": [
+        4.28,
+        2.423,
+        3.152,
+        2.208,
+        0.969
+      ],
+      "loop_centroid_step": 12.397
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "E",
+      "state": "run",
+      "area_ratio": 1.04,
+      "adjacent_centroid_steps": [
+        1.058,
+        2.386,
+        1.541,
+        4.599,
+        1.306
+      ],
+      "loop_centroid_step": 7.813
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "E",
+      "state": "attack",
+      "area_ratio": 1.047,
+      "adjacent_centroid_steps": [
+        3.126,
+        1.52,
+        7.017,
+        3.796,
+        4.964
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "E",
+      "state": "death",
+      "area_ratio": 1.037,
+      "adjacent_centroid_steps": [
+        7.204,
+        4.478,
+        0.632,
+        4.69,
+        1.517
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "N",
+      "state": "run",
+      "area_ratio": 1.066,
+      "adjacent_centroid_steps": [
+        1.095,
+        1.251,
+        3.479,
+        2.146,
+        2.796
+      ],
+      "loop_centroid_step": 9.363
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "N",
+      "state": "attack",
+      "area_ratio": 1.05,
+      "adjacent_centroid_steps": [
+        1.909,
+        13.368,
+        13.074,
+        5.429,
+        2.025
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "N",
+      "state": "hurt",
+      "area_ratio": 1.007,
+      "adjacent_centroid_steps": [
+        9.158
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "ankylosaurus",
+      "direction": "W",
+      "state": "attack",
+      "area_ratio": 1.139,
+      "adjacent_centroid_steps": [
+        5.45,
+        5.779,
+        10.236,
+        0.299,
+        3.474
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "N",
+      "state": "idle",
+      "area_ratio": 1.059,
+      "adjacent_centroid_steps": [
+        8.562,
+        2.527,
+        2.258
+      ],
+      "loop_centroid_step": 13.343
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "N",
+      "state": "walk",
+      "area_ratio": 1.068,
+      "adjacent_centroid_steps": [
+        6.534,
+        1.697,
+        4.977,
+        1.347,
+        7.223
+      ],
+      "loop_centroid_step": 19.052
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "N",
+      "state": "run",
+      "area_ratio": 1.039,
+      "adjacent_centroid_steps": [
+        5.586,
+        2.704,
+        3.564,
+        1.635,
+        7.487
+      ],
+      "loop_centroid_step": 18.116
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "N",
+      "state": "hurt",
+      "area_ratio": 1.044,
+      "adjacent_centroid_steps": [
+        9.766
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "N",
+      "state": "death",
+      "area_ratio": 1.155,
+      "adjacent_centroid_steps": [
+        10.939,
+        6.578,
+        3.715,
+        5.48,
+        7.081
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "W",
+      "state": "idle",
+      "area_ratio": 1.101,
+      "adjacent_centroid_steps": [
+        1.399,
+        7.712,
+        3.296
+      ],
+      "loop_centroid_step": 9.705
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "W",
+      "state": "run",
+      "area_ratio": 1.143,
+      "adjacent_centroid_steps": [
+        2.534,
+        1.994,
+        1.976,
+        4.609,
+        3.22
+      ],
+      "loop_centroid_step": 7.945
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "W",
+      "state": "attack",
+      "area_ratio": 1.102,
+      "adjacent_centroid_steps": [
+        1.564,
+        0.75,
+        1.141,
+        1.278,
+        7.882
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "pachycephalosaurus",
+      "direction": "W",
+      "state": "hurt",
+      "area_ratio": 1.095,
+      "adjacent_centroid_steps": [
+        7.205
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "gallimimus",
+      "direction": "S",
+      "state": "death",
+      "area_ratio": 1.348,
+      "adjacent_centroid_steps": [
+        1.688,
+        1.141,
+        7.566,
+        9.681,
+        0.624
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "gallimimus",
+      "direction": "E",
+      "state": "death",
+      "area_ratio": 1.177,
+      "adjacent_centroid_steps": [
+        2.415,
+        2.216,
+        3.704,
+        7.174,
+        3.567
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "gallimimus",
+      "direction": "W",
+      "state": "idle",
+      "area_ratio": 1.122,
+      "adjacent_centroid_steps": [
+        3.841,
+        3.152,
+        1.527
+      ],
+      "loop_centroid_step": 8.459
+    },
+    {
+      "species": "gallimimus",
+      "direction": "W",
+      "state": "walk",
+      "area_ratio": 1.092,
+      "adjacent_centroid_steps": [
+        4.408,
+        2.881,
+        3.169,
+        2.737,
+        4.085
+      ],
+      "loop_centroid_step": 12.158
+    },
+    {
+      "species": "gallimimus",
+      "direction": "W",
+      "state": "run",
+      "area_ratio": 1.06,
+      "adjacent_centroid_steps": [
+        4.761,
+        2.514,
+        4.264,
+        0.966,
+        2.843
+      ],
+      "loop_centroid_step": 13.477
+    },
+    {
+      "species": "gallimimus",
+      "direction": "W",
+      "state": "death",
+      "area_ratio": 1.077,
+      "adjacent_centroid_steps": [
+        1.01,
+        7.137,
+        5.38,
+        4.117,
+        6.204
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "baryonyx",
+      "direction": "S",
+      "state": "death",
+      "area_ratio": 1.478,
+      "adjacent_centroid_steps": [
+        4.918,
+        2.105,
+        0.556,
+        2.25,
+        2.199
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "baryonyx",
+      "direction": "N",
+      "state": "death",
+      "area_ratio": 1.478,
+      "adjacent_centroid_steps": [
+        4.918,
+        2.105,
+        0.556,
+        2.25,
+        2.199
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "velociraptor",
+      "direction": "S",
+      "state": "death",
+      "area_ratio": 1.509,
+      "adjacent_centroid_steps": [
+        1.999,
+        1.135,
+        1.177,
+        1.355,
+        0.738
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "deinonychus",
+      "direction": "W",
+      "state": "death",
+      "area_ratio": 1.137,
+      "adjacent_centroid_steps": [
+        2.57,
+        5.896,
+        6.825,
+        5.6,
+        11.792
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "S",
+      "state": "hurt",
+      "area_ratio": 1.072,
+      "adjacent_centroid_steps": [
+        9.466
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "S",
+      "state": "death",
+      "area_ratio": 1.481,
+      "adjacent_centroid_steps": [
+        6.103,
+        0.994,
+        4.162,
+        4.007,
+        5.8
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "E",
+      "state": "death",
+      "area_ratio": 1.379,
+      "adjacent_centroid_steps": [
+        3.187,
+        5.81,
+        5.405,
+        2.764,
+        6.928
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "parasaurolophus",
+      "direction": "N",
+      "state": "death",
+      "area_ratio": 1.479,
+      "adjacent_centroid_steps": [
+        2.458,
+        4.524,
+        3.188,
+        2.54,
+        1.83
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "S",
+      "state": "death",
+      "area_ratio": 1.475,
+      "adjacent_centroid_steps": [
+        1.751,
+        1.736,
+        4.29,
+        9.501,
+        3.922
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "E",
+      "state": "death",
+      "area_ratio": 1.142,
+      "adjacent_centroid_steps": [
+        1.804,
+        5.539,
+        8.194,
+        3.295,
+        4.106
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "walk",
+      "area_ratio": 1.05,
+      "adjacent_centroid_steps": [
+        3.143,
+        3.453,
+        2.352,
+        1.374,
+        1.944
+      ],
+      "loop_centroid_step": 11.864
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "run",
+      "area_ratio": 1.098,
+      "adjacent_centroid_steps": [
+        3.519,
+        6.839,
+        5.587,
+        1.874,
+        1.06
+      ],
+      "loop_centroid_step": 8.979
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "attack",
+      "area_ratio": 1.132,
+      "adjacent_centroid_steps": [
+        4.207,
+        4.005,
+        3.431,
+        7.306,
+        5.021
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "N",
+      "state": "death",
+      "area_ratio": 1.31,
+      "adjacent_centroid_steps": [
+        3.569,
+        2.866,
+        10.046,
+        2.734,
+        6.321
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "walk",
+      "area_ratio": 1.065,
+      "adjacent_centroid_steps": [
+        0.329,
+        5.163,
+        2.406,
+        2.034,
+        3.599
+      ],
+      "loop_centroid_step": 8.16
+    },
+    {
+      "species": "deinosuchus",
+      "direction": "W",
+      "state": "death",
+      "area_ratio": 1.24,
+      "adjacent_centroid_steps": [
+        2.145,
+        5.313,
+        3.972,
+        7.955,
+        5.906
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "triceratops",
+      "direction": "S",
+      "state": "idle",
+      "area_ratio": 1.023,
+      "adjacent_centroid_steps": [
+        2.586,
+        0.948,
+        14.55
+      ],
+      "loop_centroid_step": 14.827
+    },
+    {
+      "species": "triceratops",
+      "direction": "S",
+      "state": "run",
+      "area_ratio": 1.068,
+      "adjacent_centroid_steps": [
+        12.291,
+        10.198,
+        11.831,
+        5.169,
+        0.868
+      ],
+      "loop_centroid_step": 17.548
+    },
+    {
+      "species": "triceratops",
+      "direction": "S",
+      "state": "attack",
+      "area_ratio": 1.055,
+      "adjacent_centroid_steps": [
+        3.731,
+        3.799,
+        13.651,
+        13.929,
+        1.787
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "triceratops",
+      "direction": "S",
+      "state": "death",
+      "area_ratio": 1.291,
+      "adjacent_centroid_steps": [
+        1.148,
+        4.701,
+        3.765,
+        7.488,
+        2.743
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "triceratops",
+      "direction": "E",
+      "state": "death",
+      "area_ratio": 1.214,
+      "adjacent_centroid_steps": [
+        5.643,
+        0.947,
+        7.757,
+        6.345,
+        4.211
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "triceratops",
+      "direction": "N",
+      "state": "idle",
+      "area_ratio": 1.046,
+      "adjacent_centroid_steps": [
+        1.053,
+        10.525,
+        2.45
+      ],
+      "loop_centroid_step": 11.479
+    },
+    {
+      "species": "triceratops",
+      "direction": "N",
+      "state": "walk",
+      "area_ratio": 1.083,
+      "adjacent_centroid_steps": [
+        1.143,
+        7.482,
+        4.424,
+        3.033,
+        3.974
+      ],
+      "loop_centroid_step": 12.569
+    },
+    {
+      "species": "triceratops",
+      "direction": "N",
+      "state": "run",
+      "area_ratio": 1.066,
+      "adjacent_centroid_steps": [
+        3.308,
+        5.311,
+        4.505,
+        0.16,
+        3.919
+      ],
+      "loop_centroid_step": 13.862
+    },
+    {
+      "species": "triceratops",
+      "direction": "N",
+      "state": "death",
+      "area_ratio": 1.228,
+      "adjacent_centroid_steps": [
+        3.105,
+        4.354,
+        9.784,
+        1.655,
+        1.266
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "triceratops",
+      "direction": "W",
+      "state": "walk",
+      "area_ratio": 1.049,
+      "adjacent_centroid_steps": [
+        0.871,
+        1.315,
+        1.007,
+        5.562,
+        1.648
+      ],
+      "loop_centroid_step": 7.598
+    },
+    {
+      "species": "triceratops",
+      "direction": "W",
+      "state": "run",
+      "area_ratio": 1.067,
+      "adjacent_centroid_steps": [
+        14.426,
+        2.96,
+        2.705,
+        4.288,
+        4.481
+      ],
+      "loop_centroid_step": 13.24
+    },
+    {
+      "species": "triceratops",
+      "direction": "W",
+      "state": "hurt",
+      "area_ratio": 1.008,
+      "adjacent_centroid_steps": [
+        11.18
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "triceratops",
+      "direction": "W",
+      "state": "death",
+      "area_ratio": 1.109,
+      "adjacent_centroid_steps": [
+        2.413,
+        6.869,
+        10.13,
+        7.868,
+        3.404
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "S",
+      "state": "idle",
+      "area_ratio": 1.046,
+      "adjacent_centroid_steps": [
+        1.224,
+        1.312,
+        8.259
+      ],
+      "loop_centroid_step": 9.115
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "S",
+      "state": "walk",
+      "area_ratio": 1.147,
+      "adjacent_centroid_steps": [
+        3.705,
+        14.589,
+        2.106,
+        2.979,
+        1.548
+      ],
+      "loop_centroid_step": 9.623
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "S",
+      "state": "run",
+      "area_ratio": 1.128,
+      "adjacent_centroid_steps": [
+        7.271,
+        5.809,
+        10.278,
+        6.152,
+        3.357
+      ],
+      "loop_centroid_step": 15.429
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "S",
+      "state": "attack",
+      "area_ratio": 1.091,
+      "adjacent_centroid_steps": [
+        14.881,
+        6.932,
+        5.152,
+        3.116,
+        2.62
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "S",
+      "state": "death",
+      "area_ratio": 1.439,
+      "adjacent_centroid_steps": [
+        10.157,
+        7.971,
+        5.21,
+        2.621,
+        7.512
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "E",
+      "state": "attack",
+      "area_ratio": 1.109,
+      "adjacent_centroid_steps": [
+        2.624,
+        2.422,
+        13.954,
+        15.258,
+        12.039
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "E",
+      "state": "death",
+      "area_ratio": 1.093,
+      "adjacent_centroid_steps": [
+        3.356,
+        2.922,
+        1.509,
+        1.012,
+        11.118
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "W",
+      "state": "hurt",
+      "area_ratio": 1.006,
+      "adjacent_centroid_steps": [
+        8.679
+      ],
+      "loop_centroid_step": null
+    },
+    {
+      "species": "tyrannosaurus",
+      "direction": "W",
+      "state": "death",
+      "area_ratio": 1.249,
+      "adjacent_centroid_steps": [
+        2.422,
+        1.504,
+        3.635,
+        10.98,
+        7.903
+      ],
+      "loop_centroid_step": null
+    }
+  ],
+  "visual_result": "SOURCE_POLISH_IMPLEMENTED",
+  "production_approved": false,
+  "metric_scope": "Centroid/area changes are review flags. Tail swing, limb motion and death can legitimately change them. Fixed declared hips do not prove fixed drawn hips. No bbox recentering or pixel edits.",
+  "runtime_policy": {
+    "stable_idle": "ordinary/player/pack idle holds pose0; stored4 poses are reviewed independently",
+    "pack": "nonlethal companions use idle/walk/run/attack; hp is clamped at1, so death is deliberately unavailable",
+    "attack": "gameplay duration/contact timing; species weapon differs; six poses in order",
+    "extras": "diet-specific forage/drink/sleep/scratch and wounded poses are separate overlays, with documented native fallbacks"
+  },
+  "source_review": "ANIMATION_POLISH.md",
+  "source_facts": [
+    "Tyrannosaurus N uses one complete state revision master; the earlier mixed-source explanation was incorrect",
+    "Explicit lossless registration corrects large pose/source-row placement differences; logical origins and physical game sizes are retained",
+    "Triceratops/Pachycephalosaurus/Gallimimus/Ankylosaurus weapon overlays reuse the matching native species action",
+    "Deinonychus S hurt is a local two-cell anatomical edit; Parasaurolophus kicks use local canonical-master/contact edits"
+  ],
+  "visual_limits": "Anatomical points were reviewed separately; automatic centroid/area flags do not certify an animation. Small authored silhouette/marking variation remains in prototype art.",
+  "source_policy": "Original raw masters remain immutable. Active native derivatives are rebuilt from recorded local revisions and registration. No anatomical approval inferred from technical checks"
+}
