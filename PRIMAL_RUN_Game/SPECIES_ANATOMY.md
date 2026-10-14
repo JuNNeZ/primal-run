@@ -39,6 +39,14 @@ existing declared integer scale of two. Do not normalize every animal to one siz
 Status: existing and revised generated sheets are prototypes. This table is an
 audit checklist, not a claim all legacy frames are anatomically approved.
 
+Species identity gate (12 Oct 2026): Utahraptor must not be a scaled/recoloured
+Velociraptor. Check robust teal/blue Utah proportions and feather forms against
+slender olive/cream Velociraptor's narrow head/light limbs, and chestnut/cream
+Deinonychus' distinct feather patches. Keep each canonical body's proportions,
+markings and landmarks through every state; colours or sprite IDs alone do not
+certify identity. Compare at similar visible size using integer previews and in
+the actual renderer. See SPECIES_ANIMATION_AUDIT.md and species_animation_review.html.
+
 Baryonyx north: one continuous tapering tail behind pelvis; two short hindlegs
 with visible toes must not look like a second tail. Inspect native extraction
 for disconnected neighbouring tail fragments as well as drawn anatomy.

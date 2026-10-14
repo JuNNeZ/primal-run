@@ -104,6 +104,6 @@
   "validated_pngs": 312,
   "validated_reused_native_hashes": 224,
   "validated_authored_source_hashes": 88,
-  "runtime_validation": "Parent-agent browser tests required; PNG validation is not runtime or anatomy approval",
-  "validated_authored_source_reextractions": 88
+  "validated_authored_source_reextractions": 88,
+  "runtime_validation": "Parent-agent browser tests required; PNG validation is not runtime or anatomy approval"
 }

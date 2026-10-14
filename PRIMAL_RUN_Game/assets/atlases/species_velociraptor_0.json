@@ -16,8 +16,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 943,
-    "y": 1607
+    "x": 877,
+    "y": 1673
   },
   "assets/avatars/velociraptor_eat_002.png": {
     "anchor": [
@@ -26,8 +26,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1009,
-    "y": 1607
+    "x": 877,
+    "y": 1739
   },
   "assets/avatars/velociraptor_eat_003.png": {
     "anchor": [
@@ -36,8 +36,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1075,
-    "y": 1607
+    "x": 877,
+    "y": 1805
   },
   "assets/avatars/velociraptor_fight_000.png": {
     "anchor": [
@@ -46,8 +46,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1141,
-    "y": 1607
+    "x": 877,
+    "y": 1871
   },
   "assets/avatars/velociraptor_fight_001.png": {
     "anchor": [
@@ -56,8 +56,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1207,
-    "y": 1607
+    "x": 877,
+    "y": 1937
   },
   "assets/avatars/velociraptor_fight_002.png": {
     "anchor": [
@@ -66,7 +66,7 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1273,
+    "x": 943,
     "y": 1607
   },
   "assets/avatars/velociraptor_fight_003.png": {
@@ -76,8 +76,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1339,
-    "y": 1607
+    "x": 943,
+    "y": 1673
   },
   "assets/avatars/velociraptor_hurt_000.png": {
     "anchor": [
@@ -86,8 +86,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1405,
-    "y": 1607
+    "x": 943,
+    "y": 1739
   },
   "assets/avatars/velociraptor_hurt_001.png": {
     "anchor": [
@@ -96,8 +96,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1471,
-    "y": 1607
+    "x": 943,
+    "y": 1805
   },
   "assets/avatars/velociraptor_hurt_002.png": {
     "anchor": [
@@ -106,8 +106,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1537,
-    "y": 1607
+    "x": 943,
+    "y": 1871
   },
   "assets/avatars/velociraptor_hurt_003.png": {
     "anchor": [
@@ -116,8 +116,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1603,
-    "y": 1607
+    "x": 943,
+    "y": 1937
   },
   "assets/avatars/velociraptor_idle_000.png": {
     "anchor": [
@@ -126,7 +126,7 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1669,
+    "x": 1009,
     "y": 1607
   },
   "assets/avatars/velociraptor_idle_001.png": {
@@ -136,8 +136,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1735,
-    "y": 1607
+    "x": 1009,
+    "y": 1673
   },
   "assets/avatars/velociraptor_idle_002.png": {
     "anchor": [
@@ -146,8 +146,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1801,
-    "y": 1607
+    "x": 1009,
+    "y": 1739
   },
   "assets/avatars/velociraptor_idle_003.png": {
     "anchor": [
@@ -156,8 +156,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1867,
-    "y": 1607
+    "x": 1009,
+    "y": 1805
   },
   "assets/avatars/velociraptor_sneak_000.png": {
     "anchor": [
@@ -166,8 +166,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1933,
-    "y": 1607
+    "x": 1009,
+    "y": 1871
   },
   "assets/avatars/velociraptor_sneak_001.png": {
     "anchor": [
@@ -176,8 +176,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 1,
-    "y": 1753
+    "x": 1009,
+    "y": 1937
   },
   "assets/avatars/velociraptor_sneak_002.png": {
     "anchor": [
@@ -186,8 +186,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 67,
-    "y": 1753
+    "x": 1023,
+    "y": 1023
   },
   "assets/avatars/velociraptor_sneak_003.png": {
     "anchor": [
@@ -196,8 +196,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 133,
-    "y": 1753
+    "x": 1023,
+    "y": 1089
   },
   "assets/behavior_injured/velociraptor_limp_E_000.png": {
     "anchor": [
@@ -356,8 +356,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 147
+    "x": 1,
+    "y": 293
   },
   "assets/behavior_injured/velociraptor_limp_S_004.png": {
     "anchor": [
@@ -366,8 +366,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 147
+    "x": 1,
+    "y": 439
   },
   "assets/behavior_injured/velociraptor_limp_S_005.png": {
     "anchor": [
@@ -376,8 +376,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 147
+    "x": 1,
+    "y": 585
   },
   "assets/behavior_injured/velociraptor_limp_W_000.png": {
     "anchor": [
@@ -386,8 +386,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 147
+    "x": 1,
+    "y": 731
   },
   "assets/behavior_injured/velociraptor_limp_W_001.png": {
     "anchor": [
@@ -396,8 +396,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 147
+    "x": 1,
+    "y": 877
   },
   "assets/behavior_injured/velociraptor_limp_W_002.png": {
     "anchor": [
@@ -406,8 +406,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 147
+    "x": 1,
+    "y": 1023
   },
   "assets/behavior_injured/velociraptor_limp_W_003.png": {
     "anchor": [
@@ -416,8 +416,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 147
+    "x": 1,
+    "y": 1169
   },
   "assets/behavior_injured/velociraptor_limp_W_004.png": {
     "anchor": [
@@ -426,8 +426,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 147
+    "x": 1,
+    "y": 1315
   },
   "assets/behavior_injured/velociraptor_limp_W_005.png": {
     "anchor": [
@@ -436,8 +436,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 147
+    "x": 1,
+    "y": 1461
   },
   "assets/corpses/velociraptor_decayed_E_0.png": {
     "anchor": [
@@ -446,8 +446,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 147
+    "x": 1,
+    "y": 1607
   },
   "assets/corpses/velociraptor_decayed_E_1.png": {
     "anchor": [
@@ -456,8 +456,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 147
+    "x": 1,
+    "y": 1753
   },
   "assets/corpses/velociraptor_decayed_N_0.png": {
     "anchor": [
@@ -466,8 +466,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 147
+    "x": 1,
+    "y": 1899
   },
   "assets/corpses/velociraptor_decayed_N_1.png": {
     "anchor": [
@@ -476,7 +476,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
+    "x": 147,
     "y": 147
   },
   "assets/corpses/velociraptor_decayed_S_0.png": {
@@ -486,8 +486,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 293
+    "x": 293,
+    "y": 147
   },
   "assets/corpses/velociraptor_decayed_S_1.png": {
     "anchor": [
@@ -496,8 +496,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 293
+    "x": 439,
+    "y": 147
   },
   "assets/corpses/velociraptor_decayed_W_0.png": {
     "anchor": [
@@ -506,8 +506,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 293
+    "x": 585,
+    "y": 147
   },
   "assets/corpses/velociraptor_decayed_W_1.png": {
     "anchor": [
@@ -516,8 +516,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 293
+    "x": 731,
+    "y": 147
   },
   "assets/corpses/velociraptor_skeleton_E_0.png": {
     "anchor": [
@@ -526,8 +526,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 293
+    "x": 877,
+    "y": 147
   },
   "assets/corpses/velociraptor_skeleton_E_1.png": {
     "anchor": [
@@ -536,8 +536,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 293
+    "x": 1023,
+    "y": 147
   },
   "assets/corpses/velociraptor_skeleton_N_0.png": {
     "anchor": [
@@ -546,8 +546,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 293
+    "x": 1169,
+    "y": 147
   },
   "assets/corpses/velociraptor_skeleton_N_1.png": {
     "anchor": [
@@ -556,8 +556,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 293
+    "x": 1315,
+    "y": 147
   },
   "assets/corpses/velociraptor_skeleton_S_0.png": {
     "anchor": [
@@ -566,8 +566,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 293
+    "x": 1461,
+    "y": 147
   },
   "assets/corpses/velociraptor_skeleton_S_1.png": {
     "anchor": [
@@ -576,8 +576,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 293
+    "x": 1607,
+    "y": 147
   },
   "assets/corpses/velociraptor_skeleton_W_0.png": {
     "anchor": [
@@ -586,8 +586,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 293
+    "x": 1753,
+    "y": 147
   },
   "assets/corpses/velociraptor_skeleton_W_1.png": {
     "anchor": [
@@ -596,8 +596,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 293
+    "x": 1899,
+    "y": 147
   },
   "assets/player_full/velociraptor_attack_E_000.png": {
     "anchor": [
@@ -606,7 +606,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
+    "x": 147,
     "y": 293
   },
   "assets/player_full/velociraptor_attack_E_001.png": {
@@ -616,8 +616,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 293
+    "x": 147,
+    "y": 439
   },
   "assets/player_full/velociraptor_attack_E_002.png": {
     "anchor": [
@@ -626,8 +626,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 439
+    "x": 147,
+    "y": 585
   },
   "assets/player_full/velociraptor_attack_E_003.png": {
     "anchor": [
@@ -637,7 +637,7 @@
     "h": 144,
     "w": 144,
     "x": 147,
-    "y": 439
+    "y": 731
   },
   "assets/player_full/velociraptor_attack_E_004.png": {
     "anchor": [
@@ -646,8 +646,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 439
+    "x": 147,
+    "y": 877
   },
   "assets/player_full/velociraptor_attack_E_005.png": {
     "anchor": [
@@ -656,8 +656,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 439
+    "x": 147,
+    "y": 1023
   },
   "assets/player_full/velociraptor_attack_N_000.png": {
     "anchor": [
@@ -666,8 +666,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 439
+    "x": 147,
+    "y": 1169
   },
   "assets/player_full/velociraptor_attack_N_001.png": {
     "anchor": [
@@ -676,8 +676,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 439
+    "x": 147,
+    "y": 1315
   },
   "assets/player_full/velociraptor_attack_N_002.png": {
     "anchor": [
@@ -686,8 +686,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 439
+    "x": 147,
+    "y": 1461
   },
   "assets/player_full/velociraptor_attack_N_003.png": {
     "anchor": [
@@ -696,8 +696,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 439
+    "x": 147,
+    "y": 1607
   },
   "assets/player_full/velociraptor_attack_N_004.png": {
     "anchor": [
@@ -706,8 +706,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 439
+    "x": 147,
+    "y": 1753
   },
   "assets/player_full/velociraptor_attack_N_005.png": {
     "anchor": [
@@ -716,8 +716,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 439
+    "x": 147,
+    "y": 1899
   },
   "assets/player_full/velociraptor_attack_S_000.png": {
     "anchor": [
@@ -726,8 +726,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 439
+    "x": 293,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_S_001.png": {
     "anchor": [
@@ -736,8 +736,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 439
+    "x": 439,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_S_002.png": {
     "anchor": [
@@ -746,8 +746,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 439
+    "x": 585,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_S_003.png": {
     "anchor": [
@@ -756,8 +756,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 439
+    "x": 731,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_S_004.png": {
     "anchor": [
@@ -766,8 +766,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 585
+    "x": 877,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_S_005.png": {
     "anchor": [
@@ -776,8 +776,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 585
+    "x": 1023,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_W_000.png": {
     "anchor": [
@@ -786,8 +786,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 585
+    "x": 1169,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_W_001.png": {
     "anchor": [
@@ -796,8 +796,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 585
+    "x": 1315,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_W_002.png": {
     "anchor": [
@@ -806,8 +806,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 585
+    "x": 1461,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_W_003.png": {
     "anchor": [
@@ -816,8 +816,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 585
+    "x": 1607,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_W_004.png": {
     "anchor": [
@@ -826,8 +826,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 585
+    "x": 1753,
+    "y": 293
   },
   "assets/player_full/velociraptor_attack_W_005.png": {
     "anchor": [
@@ -836,8 +836,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 585
+    "x": 1899,
+    "y": 293
   },
   "assets/player_full/velociraptor_death_E_000.png": {
     "anchor": [
@@ -846,8 +846,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 585
+    "x": 293,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_E_001.png": {
     "anchor": [
@@ -856,7 +856,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
+    "x": 293,
     "y": 585
   },
   "assets/player_full/velociraptor_death_E_002.png": {
@@ -866,8 +866,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 585
+    "x": 293,
+    "y": 731
   },
   "assets/player_full/velociraptor_death_E_003.png": {
     "anchor": [
@@ -876,8 +876,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 585
+    "x": 293,
+    "y": 877
   },
   "assets/player_full/velociraptor_death_E_004.png": {
     "anchor": [
@@ -886,8 +886,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 585
+    "x": 293,
+    "y": 1023
   },
   "assets/player_full/velociraptor_death_E_005.png": {
     "anchor": [
@@ -896,8 +896,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 585
+    "x": 293,
+    "y": 1169
   },
   "assets/player_full/velociraptor_death_N_000.png": {
     "anchor": [
@@ -906,8 +906,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 731
+    "x": 293,
+    "y": 1315
   },
   "assets/player_full/velociraptor_death_N_001.png": {
     "anchor": [
@@ -916,8 +916,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 731
+    "x": 293,
+    "y": 1461
   },
   "assets/player_full/velociraptor_death_N_002.png": {
     "anchor": [
@@ -927,7 +927,7 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 731
+    "y": 1607
   },
   "assets/player_full/velociraptor_death_N_003.png": {
     "anchor": [
@@ -936,8 +936,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 731
+    "x": 293,
+    "y": 1753
   },
   "assets/player_full/velociraptor_death_N_004.png": {
     "anchor": [
@@ -946,8 +946,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 731
+    "x": 293,
+    "y": 1899
   },
   "assets/player_full/velociraptor_death_N_005.png": {
     "anchor": [
@@ -956,8 +956,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 731
+    "x": 439,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_S_000.png": {
     "anchor": [
@@ -966,8 +966,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 731
+    "x": 585,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_S_001.png": {
     "anchor": [
@@ -976,8 +976,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 731
+    "x": 731,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_S_002.png": {
     "anchor": [
@@ -986,8 +986,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 731
+    "x": 877,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_S_003.png": {
     "anchor": [
@@ -996,8 +996,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 731
+    "x": 1023,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_S_004.png": {
     "anchor": [
@@ -1006,8 +1006,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 731
+    "x": 1169,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_S_005.png": {
     "anchor": [
@@ -1016,8 +1016,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 731
+    "x": 1315,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_W_000.png": {
     "anchor": [
@@ -1026,8 +1026,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 731
+    "x": 1461,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_W_001.png": {
     "anchor": [
@@ -1036,8 +1036,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 731
+    "x": 1607,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_W_002.png": {
     "anchor": [
@@ -1046,8 +1046,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 877
+    "x": 1753,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_W_003.png": {
     "anchor": [
@@ -1056,8 +1056,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 877
+    "x": 1899,
+    "y": 439
   },
   "assets/player_full/velociraptor_death_W_004.png": {
     "anchor": [
@@ -1066,8 +1066,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 877
+    "x": 439,
+    "y": 585
   },
   "assets/player_full/velociraptor_death_W_005.png": {
     "anchor": [
@@ -1077,7 +1077,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 877
+    "y": 731
   },
   "assets/player_full/velociraptor_hurt_E_000.png": {
     "anchor": [
@@ -1086,7 +1086,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
+    "x": 439,
     "y": 877
   },
   "assets/player_full/velociraptor_hurt_E_001.png": {
@@ -1096,8 +1096,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 877
+    "x": 439,
+    "y": 1023
   },
   "assets/player_full/velociraptor_hurt_N_000.png": {
     "anchor": [
@@ -1106,8 +1106,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 877
+    "x": 439,
+    "y": 1169
   },
   "assets/player_full/velociraptor_hurt_N_001.png": {
     "anchor": [
@@ -1116,8 +1116,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 877
+    "x": 439,
+    "y": 1315
   },
   "assets/player_full/velociraptor_hurt_S_000.png": {
     "anchor": [
@@ -1126,8 +1126,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 877
+    "x": 439,
+    "y": 1461
   },
   "assets/player_full/velociraptor_hurt_S_001.png": {
     "anchor": [
@@ -1136,8 +1136,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 877
+    "x": 439,
+    "y": 1607
   },
   "assets/player_full/velociraptor_hurt_W_000.png": {
     "anchor": [
@@ -1146,8 +1146,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 877
+    "x": 439,
+    "y": 1753
   },
   "assets/player_full/velociraptor_hurt_W_001.png": {
     "anchor": [
@@ -1156,8 +1156,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 877
+    "x": 439,
+    "y": 1899
   },
   "assets/player_full/velociraptor_idle_E_000.png": {
     "anchor": [
@@ -1166,8 +1166,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 877
+    "x": 585,
+    "y": 585
   },
   "assets/player_full/velociraptor_idle_E_001.png": {
     "anchor": [
@@ -1176,8 +1176,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 877
+    "x": 731,
+    "y": 585
   },
   "assets/player_full/velociraptor_idle_E_002.png": {
     "anchor": [
@@ -1186,8 +1186,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 1023
+    "x": 877,
+    "y": 585
   },
   "assets/player_full/velociraptor_idle_E_003.png": {
     "anchor": [
@@ -1196,8 +1196,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 1023
+    "x": 1023,
+    "y": 585
   },
   "assets/player_full/velociraptor_idle_N_000.png": {
     "anchor": [
@@ -1206,8 +1206,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1023
+    "x": 1169,
+    "y": 585
   },
   "assets/player_full/velociraptor_idle_N_001.png": {
     "anchor": [
@@ -1216,8 +1216,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 1023
+    "x": 1315,
+    "y": 585
   },
   "assets/player_full/velociraptor_idle_N_002.png": {
     "anchor": [
@@ -1226,8 +1226,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 1023
+    "x": 1461,
+    "y": 585
   },
   "assets/player_full/velociraptor_idle_N_003.png": {
     "anchor": [
@@ -1236,8 +1236,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 1023
+    "x": 1607,
+    "y": 585
   },
   "assets/player_full/velociraptor_idle_S_000.png": {
     "anchor": [
@@ -1246,8 +1246,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 1023
+    "x": 1753,
+    "y": 585
   },
   "assets/player_full/velociraptor_idle_S_001.png": {
     "anchor": [
@@ -1256,8 +1256,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 1023
+    "x": 1899,
+    "y": 585
   },
   "assets/player_full/velociraptor_idle_S_002.png": {
     "anchor": [
@@ -1266,8 +1266,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 1023
+    "x": 585,
+    "y": 731
   },
   "assets/player_full/velociraptor_idle_S_003.png": {
     "anchor": [
@@ -1276,8 +1276,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 1023
+    "x": 585,
+    "y": 877
   },
   "assets/player_full/velociraptor_idle_W_000.png": {
     "anchor": [
@@ -1286,7 +1286,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
+    "x": 585,
     "y": 1023
   },
   "assets/player_full/velociraptor_idle_W_001.png": {
@@ -1296,8 +1296,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 1023
+    "x": 585,
+    "y": 1169
   },
   "assets/player_full/velociraptor_idle_W_002.png": {
     "anchor": [
@@ -1306,8 +1306,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 1023
+    "x": 585,
+    "y": 1315
   },
   "assets/player_full/velociraptor_idle_W_003.png": {
     "anchor": [
@@ -1316,8 +1316,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 1023
+    "x": 585,
+    "y": 1461
   },
   "assets/player_full/velociraptor_run_E_000.png": {
     "anchor": [
@@ -1326,8 +1326,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 1169
+    "x": 585,
+    "y": 1607
   },
   "assets/player_full/velociraptor_run_E_001.png": {
     "anchor": [
@@ -1336,8 +1336,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 1169
+    "x": 585,
+    "y": 1753
   },
   "assets/player_full/velociraptor_run_E_002.png": {
     "anchor": [
@@ -1346,8 +1346,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1169
+    "x": 585,
+    "y": 1899
   },
   "assets/player_full/velociraptor_run_E_003.png": {
     "anchor": [
@@ -1356,8 +1356,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 1169
+    "x": 731,
+    "y": 731
   },
   "assets/player_full/velociraptor_run_E_004.png": {
     "anchor": [
@@ -1366,8 +1366,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 1169
+    "x": 877,
+    "y": 731
   },
   "assets/player_full/velociraptor_run_E_005.png": {
     "anchor": [
@@ -1376,8 +1376,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 1169
+    "x": 1023,
+    "y": 731
   },
   "assets/player_full/velociraptor_run_N_000.png": {
     "anchor": [
@@ -1386,8 +1386,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 1169
+    "x": 1169,
+    "y": 731
   },
   "assets/player_full/velociraptor_run_N_001.png": {
     "anchor": [
@@ -1396,8 +1396,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 1169
+    "x": 1315,
+    "y": 731
   },
   "assets/player_full/velociraptor_run_N_002.png": {
     "anchor": [
@@ -1406,8 +1406,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 1169
+    "x": 1461,
+    "y": 731
   },
   "assets/player_full/velociraptor_run_N_003.png": {
     "anchor": [
@@ -1416,8 +1416,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 1169
+    "x": 1607,
+    "y": 731
   },
   "assets/player_full/velociraptor_run_N_004.png": {
     "anchor": [
@@ -1426,8 +1426,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 1169
+    "x": 1753,
+    "y": 731
   },
   "assets/player_full/velociraptor_run_N_005.png": {
     "anchor": [
@@ -1436,8 +1436,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 1169
+    "x": 1899,
+    "y": 731
   },
   "assets/player_full/velociraptor_run_S_000.png": {
     "anchor": [
@@ -1446,8 +1446,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 1169
+    "x": 731,
+    "y": 877
   },
   "assets/player_full/velociraptor_run_S_001.png": {
     "anchor": [
@@ -1456,8 +1456,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 1169
+    "x": 731,
+    "y": 1023
   },
   "assets/player_full/velociraptor_run_S_002.png": {
     "anchor": [
@@ -1466,8 +1466,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 1315
+    "x": 731,
+    "y": 1169
   },
   "assets/player_full/velociraptor_run_S_003.png": {
     "anchor": [
@@ -1476,7 +1476,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
+    "x": 731,
     "y": 1315
   },
   "assets/player_full/velociraptor_run_S_004.png": {
@@ -1486,8 +1486,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1315
+    "x": 731,
+    "y": 1461
   },
   "assets/player_full/velociraptor_run_S_005.png": {
     "anchor": [
@@ -1496,8 +1496,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 1315
+    "x": 731,
+    "y": 1607
   },
   "assets/player_full/velociraptor_run_W_000.png": {
     "anchor": [
@@ -1506,8 +1506,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 1315
+    "x": 731,
+    "y": 1753
   },
   "assets/player_full/velociraptor_run_W_001.png": {
     "anchor": [
@@ -1517,7 +1517,7 @@
     "h": 144,
     "w": 144,
     "x": 731,
-    "y": 1315
+    "y": 1899
   },
   "assets/player_full/velociraptor_run_W_002.png": {
     "anchor": [
@@ -1527,7 +1527,7 @@
     "h": 144,
     "w": 144,
     "x": 877,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/velociraptor_run_W_003.png": {
     "anchor": [
@@ -1537,7 +1537,7 @@
     "h": 144,
     "w": 144,
     "x": 1023,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/velociraptor_run_W_004.png": {
     "anchor": [
@@ -1547,7 +1547,7 @@
     "h": 144,
     "w": 144,
     "x": 1169,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/velociraptor_run_W_005.png": {
     "anchor": [
@@ -1557,27 +1557,29 @@
     "h": 144,
     "w": 144,
     "x": 1315,
-    "y": 1315
+    "y": 877
   },
   "assets/player_full/velociraptor_walk_E_000.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_E_000.png",
     "anchor": [
       76,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 1315
+    "x": 1,
+    "y": 1
   },
   "assets/player_full/velociraptor_walk_E_001.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_E_001.png",
     "anchor": [
       76,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 1315
+    "x": 147,
+    "y": 1
   },
   "assets/player_full/velociraptor_walk_E_002.png": {
     "anchor": [
@@ -1586,8 +1588,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 1315
+    "x": 1461,
+    "y": 877
   },
   "assets/player_full/velociraptor_walk_E_003.png": {
     "anchor": [
@@ -1596,48 +1598,52 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 1315
+    "x": 1607,
+    "y": 877
   },
   "assets/player_full/velociraptor_walk_E_004.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_E_004.png",
     "anchor": [
       76,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 1,
-    "y": 1461
+    "x": 585,
+    "y": 1
   },
   "assets/player_full/velociraptor_walk_E_005.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_E_005.png",
     "anchor": [
       76,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 1461
+    "x": 731,
+    "y": 1
   },
   "assets/player_full/velociraptor_walk_N_000.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_N_000.png",
     "anchor": [
       72,
       64
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1461
+    "x": 877,
+    "y": 1
   },
   "assets/player_full/velociraptor_walk_N_001.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_N_001.png",
     "anchor": [
       72,
       64
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 1461
+    "x": 1023,
+    "y": 1
   },
   "assets/player_full/velociraptor_walk_N_002.png": {
     "anchor": [
@@ -1646,8 +1652,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 1461
+    "x": 1753,
+    "y": 877
   },
   "assets/player_full/velociraptor_walk_N_003.png": {
     "anchor": [
@@ -1656,48 +1662,52 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 1461
+    "x": 1899,
+    "y": 877
   },
   "assets/player_full/velociraptor_walk_N_004.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_N_004.png",
     "anchor": [
       72,
       64
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
-    "y": 1461
+    "x": 1461,
+    "y": 1
   },
   "assets/player_full/velociraptor_walk_N_005.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_N_005.png",
     "anchor": [
       72,
       64
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
-    "y": 1461
+    "x": 1607,
+    "y": 1
   },
   "assets/player_full/velociraptor_walk_S_000.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_S_000.png",
     "anchor": [
       72,
       80
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
-    "y": 1461
+    "x": 1753,
+    "y": 1
   },
   "assets/player_full/velociraptor_walk_S_001.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_S_001.png",
     "anchor": [
       72,
       80
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
-    "y": 1461
+    "x": 1899,
+    "y": 1
   },
   "assets/player_full/velociraptor_walk_S_002.png": {
     "anchor": [
@@ -1706,8 +1716,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
-    "y": 1461
+    "x": 877,
+    "y": 1023
   },
   "assets/player_full/velociraptor_walk_S_003.png": {
     "anchor": [
@@ -1716,30 +1726,33 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
-    "y": 1461
+    "x": 877,
+    "y": 1169
   },
   "assets/player_full/velociraptor_walk_S_004.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_S_004.png",
     "anchor": [
       72,
       80
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
-    "y": 1461
+    "x": 1,
+    "y": 439
   },
   "assets/player_full/velociraptor_walk_S_005.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_S_005.png",
     "anchor": [
       72,
       80
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
-    "y": 1461
+    "x": 1,
+    "y": 585
   },
   "assets/player_full/velociraptor_walk_W_000.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_W_000.png",
     "anchor": [
       68,
       72
@@ -1747,17 +1760,18 @@
     "h": 144,
     "w": 144,
     "x": 1,
-    "y": 1607
+    "y": 731
   },
   "assets/player_full/velociraptor_walk_W_001.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_W_001.png",
     "anchor": [
       68,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 1607
+    "x": 1,
+    "y": 877
   },
   "assets/player_full/velociraptor_walk_W_002.png": {
     "anchor": [
@@ -1766,8 +1780,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1607
+    "x": 877,
+    "y": 1315
   },
   "assets/player_full/velociraptor_walk_W_003.png": {
     "anchor": [
@@ -1776,27 +1790,29 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 1607
+    "x": 877,
+    "y": 1461
   },
   "assets/player_full/velociraptor_walk_W_004.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_W_004.png",
     "anchor": [
       68,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 1607
+    "x": 1,
+    "y": 1315
   },
   "assets/player_full/velociraptor_walk_W_005.png": {
+    "alias_of": "assets/behavior_injured/velociraptor_limp_W_005.png",
     "anchor": [
       68,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
-    "y": 1607
+    "x": 1,
+    "y": 1461
   }
 }

@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-12",
+  "source_branch": "codex/a-series-approval-2026-10-12",
+  "integration_snapshot": "1c96b47",
+  "other_developer_snapshot": {
+    "branch": "claude/project-thread-9luicd",
+    "commit": "4e14a27",
+    "integrated_into_A6_branch": false
+  },
+  "new_assets": {
+    "native24_hud_icons": 8,
+    "native32_lava_ash_masks": 16
+  },
+  "checks": {
+    "npm_test": "PASS: 249 unit tests, 32 game browser suites, 3 kit checks in isolated final copy",
+    "a6_native_sources": "PASS: 24 exact samples, hashes, palette, alpha, padding and all 16 actual corner masks",
+    "sprite_atlases": "PASS: 3033 active frames in 38 sheets; originals unchanged",
+    "existing_game_enemy_kit_assets": "PASS",
+    "a6_renderer": "PASS: 110592 pixel samples match damage, crossing-cache refresh, diet/zone/control icons, rollback, pause, 390px",
+    "Part_C_compatibility": "PASS in temporary local combined snapshot: A6 renderer, existing Part C unit script, actual Q pack focus + mutation reroll click at 390px",
+    "GDevelop_runtime": "not run; generated project source hashes current"
+  },
+  "expanded_for_Part_C": [
+    "pack_follow/pack_focus icons",
+    "mutation reroll icon",
+    "conditional control adapter preserves text and events"
+  ],
+  "separate_followups": [
+    "Part C app.js:849 uses fractional growth scaling; needs native growth poses or a separate scale correction",
+    "Gallimimus procedural dustCloud can receive a native effects package"
+  ],
+  "limitations": [
+    "art remains prototype_static; repeated native lava texture visible",
+    "GDJS exporter not run; standalone Chromium evidence only"
+  ],
+  "source_sha256": {
+    "src/core.js": "3a42a615edae4801bb299b35347d03cd666d88d1053746bdaef8475e93e0a73f",
+    "src/app.js": "d07c7edefc54e00f11f1ad59d1eb6eb5382d4a02b422289ad8f69a43e98027fc",
+    "style.css": "9835a24b079946db1354019c851418bfa0700340076304959da9883d3cfa7d17",
+    "a6_manifest.json": "21b33130e1d40535dae397b1f80f1ff1a9844989614930122aefe4dfe882b17a"
+  },
+  "logs": [
+    "a6-final-test.log",
+    "a6-part-c-unit.log"
+  ]
+}

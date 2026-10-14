@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="da"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PRIMAL RUN · A6 natpalet</title>
+<style>
+body{background:#151b19;color:#e8ece1;font:16px system-ui;margin:24px}select{font:inherit;margin:8px;padding:8px}section{display:flex;gap:16px;flex-wrap:wrap}figure{margin:0;padding:16px;background:#3b4144}canvas{display:block;image-rendering:pixelated;max-width:100%}.light{background:#e8ece1}.dark{background:#151b19}p{max-width:760px}
+</style>
+<h1>A6 · natpalet på bevarede sprites</h1>
+<p>Udviklingspreview: samme alpha, mål og anker i dag og nat. Artsfarver anvendes før natpaletten. Originale PNG-filer ændres ikke. Ingen produktions- eller GDJS-godkendelse.</p>
+<label>Art <select id="species"></select></label>
+<label>Retning <select id="direction"><option>S</option><option>N</option><option>E</option><option>W</option></select></label>
+<label>Pose <select id="state"><option>idle</option><option>walk</option><option>attack</option><option>death</option></select></label>
+<label>Skala <select id="scale"><option value="1">1×</option><option value="4">4×</option></select></label>
+<p id="status" role="status"></p>
+<section>
+<figure><figcaption>Dag · lys</figcaption><canvas class="light"></canvas></figure>
+<figure><figcaption>Nat · lys</figcaption><canvas class="light"></canvas></figure>
+<figure><figcaption>Dag · mørk</figcaption><canvas class="dark"></canvas></figure>
+<figure><figcaption>Nat · mørk</figcaption><canvas class="dark"></canvas></figure>
+</section>
+<script src="src/core.js"></script>
+<script src="src/assets.js"></script>
+<script>
+const species=document.querySelector('#species'),direction=document.querySelector('#direction'),state=document.querySelector('#state'),scale=document.querySelector('#scale');
+for(const [id,entry] of Object.entries(PrimalCore.PLAYER_SPECIES))species.add(new Option(entry.name,id));
+let revision=0;
+async function render(){
+ const ticket=++revision,path=PrimalCore.playerFrame(species.value,state.value,direction.value,0),image=new Image();image.src=path;
+ try{await image.decode();}catch{if(ticket===revision)document.querySelector('#status').textContent='Billedet kunne ikke indlæses: '+path;return;}
+ if(ticket!==revision)return;
+ const source=document.createElement('canvas');source.width=image.width;source.height=image.height;const sc=source.getContext('2d');sc.drawImage(image,0,0);
+ const pixels=sc.getImageData(0,0,image.width,image.height),mapping=PrimalCore.SPECIES_COLORS[species.value]||{};
+ for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[...pixels.data.slice(i,i+3)].map(v=>v.toString(16).padStart(2,'0')).join(''),target=mapping[key];if(target)for(let j=0;j<3;j++)pixels.data[i+j]=parseInt(target.slice(j*2,j*2+2),16);}
+ const day=new Uint8ClampedArray(pixels.data);
+ for(let panel=0;panel<4;panel++){
+  pixels.data.set(day);
+  if(panel%2)for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[...pixels.data.slice(i,i+3)].map(v=>v.toString(16).padStart(2,'0')).join(''),target=PrimalCore.NIGHT_PALETTE[key];if(target)for(let j=0;j<3;j++)pixels.data[i+j]=parseInt(target.slice(j*2,j*2+2),16);}
+  sc.putImageData(pixels,0,0);const canvas=document.querySelectorAll('figure canvas')[panel];canvas.width=image.width*+scale.value;canvas.height=image.height*+scale.value;const ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.drawImage(source,0,0,canvas.width,canvas.height);
+ }
+ document.querySelector('#status').textContent=path+' · '+image.width+'×'+image.height+' · origin '+PrimalAssets[path].origin.join(',');
+}
+for(const input of [species,direction,state,scale])input.addEventListener('change',render);render();
+</script></html>

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "cases": 192,
+  "changed": 301407,
+  "stats": {
+    "loaded": 3009,
+    "total": 3653,
+    "atlasSheets": 36,
+    "nightFrames": 128,
+    "decodedBytes": 305590272
+  },
+  "pause": true,
+  "checks": [
+    "exact palette after species/skins",
+    "native alpha/origin/pose unchanged",
+    "day pixels restored",
+    "both feature rollbacks",
+    "bounded cache",
+    "paused run",
+    "390px mobile"
+  ],
+  "GDevelop_runtime": "not run",
+  "production_approved": false
+}

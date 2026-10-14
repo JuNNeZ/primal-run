@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "max_dimension": 2048,
+  "padding": 1,
+  "world_bundles": {
+    "ui": "world_shared",
+    "a6_hud": "world_shared",
+    "effects": "world_shared",
+    "pickups": "world_shared",
+    "forage": "world_shared",
+    "fishing": "world_shared",
+    "ground": "world_terrain",
+    "tiles": "world_terrain",
+    "water_transitions": "world_terrain",
+    "lava_ash": "world_terrain",
+    "environment": "world_terrain",
+    "props": "world_terrain",
+    "ecology": "world_terrain"
+  }
+}

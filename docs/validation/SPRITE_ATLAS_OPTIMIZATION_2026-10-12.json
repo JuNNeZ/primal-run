@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-12",
+  "baseline_commit": "fe7ab435d651cf2a52bed71b0438b5ea31bba8e2",
+  "runtime": "standalone Chromium; same presentation-atlas-browser menu + Velociraptor/stage3 fixture",
+  "before": {
+    "sheets": 38,
+    "logical_frames": 3033,
+    "png_bytes": 8859873,
+    "decoded_sheet_bytes": 239138816,
+    "menu_png_requests": 20,
+    "menu_and_volcanic_stage_png_requests": 29,
+    "scene_decoded_bytes": 152694784
+  },
+  "after": {
+    "sheets": 20,
+    "logical_frames": 3033,
+    "unique_frames": 2773,
+    "exact_aliases": 260,
+    "png_bytes": 8513505,
+    "decoded_sheet_bytes": 226949936,
+    "menu_png_requests": 6,
+    "menu_and_volcanic_stage_png_requests": 12,
+    "scene_decoded_bytes": 145034544
+  },
+  "reduction_percent": {
+    "sheets": 47.37,
+    "png_bytes": 3.91,
+    "decoded_sheet_bytes": 5.1,
+    "menu_png_requests": 70.0,
+    "menu_and_volcanic_stage_png_requests": 58.62,
+    "scene_decoded_bytes": 5.02
+  },
+  "validation": {
+    "native_pixels_anchors_gutters_coverage": "PASS: all3033 logical crops",
+    "prototype_kit": "PASS",
+    "packing_and_species_plan": "PASS: 3 independent Python tests",
+    "browser": "PASS: request budgets, species selection, presentation draw IDs, missing sheet/PNG fallback",
+    "full_npm_test": "PASS: 249 unit tests,32 game browser suites,3 kit checks,3 Python packing/plan tests in isolated final copy",
+    "web_build": "PASS: all20 PNGs + indices copied exactly; stale page fixture removed",
+    "actual_animation_draws": "PASS: 1440 player frames +1200 NPC frames; native sizes/anchors, aliases, pause and transitions",
+    "A6": "PASS: 110592 exact lava/damage pixels, HUD, crossings, missing assets, rollback and390px"
+  },
+  "background_branches": {
+    "integration/next": "1c96b4715f828ca2acd2b26e0ab25b2fa597e729",
+    "claude/project-thread-9luicd": "4e14a27; unchanged from A6 snapshot"
+  },
+  "limitations": [
+    "Measured standalone Chromium, not official GDJS export or physical-device timing/FPS",
+    "Per-species pages remain capped at2048; some species require two pages",
+    "Raw masters and standalone exports are preserved; no art/production approval changes",
+    "Total decoded sheet memory includes all species; scene memory includes caches/canvases as reported by assetStats",
+    "Decoded-byte figures are pixel-buffer estimates (width*height*4), not OS/GPU memory profiling"
+  ],
+  "source_preservation": "git diff has no changed source masters or individual exported PNGs",
+  "logs": [
+    "sprite-atlas-final-test.log"
+  ]
+}

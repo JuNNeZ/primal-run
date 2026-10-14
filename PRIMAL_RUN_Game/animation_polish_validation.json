@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "registered_poses": 844,
+  "translated_poses": 812,
+  "canonical_targets": 38,
+  "byte_identical_weapon_poses": 96,
+  "errors": [],
+  "production_approved": false,
+  "scope": "Independent inverse translation/pixel digests, source binding, canonical anatomical targets, padding and native weapon reuse. Does not certify anatomy or interpolate motion."
+}

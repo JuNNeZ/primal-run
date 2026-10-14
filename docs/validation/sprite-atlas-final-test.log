@@ -1,0 +1,334 @@
+
+> primal-run-prototype@0.1.0 test
+> npm run test:atlas-tools && npm run test:game && npm run test:kit
+
+
+> primal-run-prototype@0.1.0 test:atlas-tools
+> python -m unittest discover -s tests -p test_sprite_atlases.py
+
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.018s
+
+OK
+
+> primal-run-prototype@0.1.0 test:game
+> node --test tests/night-palette.test.cjs tests/natural-fishing.test.cjs tests/part-a-reuse.test.cjs tests/part-a-environment.test.cjs tests/followup-mechanics.test.cjs tests/reward-regression.test.cjs tests/deinosuchus.test.cjs tests/journey.test.cjs tests/research.test.cjs tests/carrion-rex.test.cjs tests/expansion.test.cjs tests/combat-feedback.test.cjs tests/game.test.cjs tests/roguelite.test.cjs tests/pursuit.test.cjs tests/ecology.test.cjs tests/adaptive-audio.test.cjs tests/layout.test.cjs tests/terrain-behavior.test.cjs tests/eating-discovery.test.cjs tests/overhaul.test.cjs tests/i18n.test.cjs tests/records.test.cjs tests/boss-exploit.test.cjs tests/boss-reach.test.cjs tests/boss-signatures.test.cjs tests/daily-hunt.test.cjs tests/challenges.test.cjs tests/fish-king.test.cjs tests/scent-trails.test.cjs tests/drought.test.cjs tests/day-night.test.cjs tests/raptor-pack.test.cjs tests/natural-ecology.test.cjs tests/menu-pilot.test.cjs tests/species-cards.test.cjs && node tests/part-a-browser.cjs && node tests/part-a-environment-browser.cjs && node tests/followup-browser.cjs && node tests/deinosuchus-browser.cjs && node tests/journey-browser.cjs && node tests/water-fishing-browser.cjs && node tests/corpse-scenes-browser.cjs && node tests/research-browser.cjs && node tests/carrion-rex-browser.cjs && node tests/game-browser.cjs && node tests/player-animation-browser.cjs && node tests/enemy-animation-browser.cjs && node tests/world-browser.cjs && node tests/polish-browser.cjs && node tests/roguelite-browser.cjs && node tests/player-full-browser.cjs && node tests/jungle-browser.cjs && node tests/adaptive-browser.cjs && node tests/terrain-browser.cjs && node tests/eating-accessibility-browser.cjs && node tests/combat-feedback-browser.cjs && node tests/species-colour-browser.cjs && node tests/records-browser.cjs && node tests/part-b-browser.cjs && node tests/field-guide-browser.cjs && node tests/presentation-atlas-browser.cjs && node tests/native-ground-browser.cjs && node tests/shore-blend-browser.cjs && node tests/natural-fishing-browser.cjs && node tests/natural-ecology-browser.cjs && node tests/night-palette-browser.cjs && node tests/a6-browser.cjs
+
+✔ menu, four biomes, four bosses and results have distinct actual compositions (2.550198ms)
+✔ health layers have 50/25/10 thresholds, hysteresis, coexist with boss music and duck on pause (0.316418ms)
+✔ crossfades reuse unchanged scenes, retire buses and mute avoids new music voices (0.301053ms)
+✔ ambient layer schedules independently from muted music and changes calls with biome; music varies after 64 beats (0.629739ms)
+✔ repro (bossReach off): a stationary Ankylosaurus holding Space across the lava kills Karl while barely hurt (346.364845ms)
+✔ repro (bossReach off) is deterministic and also works for other species (raptor bite, triceratops) (412.931565ms)
+✔ X1 (acceptance, B1a): across lava with no crossing Karl loses ≤ 25 % HP to a static attacker at 18–110 px (12645.985616ms)
+✔ X1 with the B1b crossings: Karl comes over, so no static stand is cost-free (Karl ≤ 25 % or the player loses ≥ 50 %) (4527.874269ms)
+✔ X1 holds for long reach, AoE and ability users too (T. rex, Deinosuchus, compy, Anky with reach/sweep/spikes + Shift) (14971.219955ms)
+✔ X11: deep water on level 2 is no exploit either (Carl swims, as before) (942.428788ms)
+✔ X3: across lava Karl never selects a charge (stalk, and the lane check at selection) (1177.055359ms)
+✔ X4: a charge whose path enters lava skids to a stop with recover ≤ 0.5 s (33.351354ms)
+✔ X5: a charge dodged on open ground keeps the full 1.5 s / 1.2 s recover (92.642995ms)
+✔ X6: player on an unreachable island → stalk within 3 s, outside the player reach + 20 px in ≥ 95 % of frames (972.466248ms)
+✔ X7: bosses never step into lava during 1000 random steps next to it (1707.004039ms)
+✔ stalk: a boss cornered against the map edge inside the player reach fights back (no free hits) (87.57018ms)
+✔ X7: a rock at the lava edge cannot push a boss into the lava (move() push-out is reverted) (23.235406ms)
+✔ X8: flow-field updates cost ≤ 1.5 ms and run at most twice per second per boss (241.030076ms)
+✔ X12: leash after 12 s unreachable and 8 s undamaged: back toward the arena, HP unchanged (360.458029ms)
+✔ X10: Carl normal fights (optimizer bot, 12 seeds here, 50 in balance_runs) are unchanged by B1a (win rate and damage within ±5 %) (67800.086947ms)
+✔ X2 (B1b): a bot that walks to a basalt crossing and fights takes Karl within ±10 % of the open-ground fight (12323.272877ms)
+✔ B1b: two basalt crossings on every level-7 map, ≥ 900 px apart, ≥ 600 px from the start, lava off within 70 px (814.501582ms)
+✔ X9: every damaging boss action on all 8 levels follows a windup of ≥ 0.45 s (5869.717288ms)
+✔ B1c Benny: the dive has a 1.2 s windup with bubbles, locks its 70 px circle at 65 % left and can be dodged (217.678388ms)
+✔ B1c Ragnar: the roar stampedes nearby small game toward the player and halves stamina regen for 4 s (32.312554ms)
+✔ B1c Karl: a finished charge leaves a 3 s ash cloud (−15 % speed inside); Carl leaves none (79.803439ms)
+✔ B1c Karl ASKEKAST: a stalking Karl hurt in the last 2 s answers with a locked 70 px circle (0.9 s) for 0.6 × bite (211.314047ms)
+✔ B1c keeps Carl unchanged: optimizer duels with all B1 flags off vs on are identical (12 seeds) (62518.223716ms)
+✔ food spoils in portions and disappears with corpse, while pause freezes decay (52.329605ms)
+✔ escape regeneration needs distance, ten seconds, no combat and no bleed; bosses never regen (28.323352ms)
+✔ predators prefer food clusters, walk gradually and consume without player rewards (33.772134ms)
+✔ T rex unlock persists and slow attack locks heading before heavy contact (18.443831ms)
+✔ stationary T rex roar spends stamina, scares normals and leaves boss unchanged (21.710328ms)
+✔ digestion DNA upgrade migrates safely, costs DNA and improves feeding (114.925892ms)
+✔ at most 3 known challenges; unknown ids and duplicates are dropped; normal runs report challengeCount 0 (296.007482ms)
+✔ each modifier changes exactly its rule (563.123857ms)
+✔ DNA bonus: +15 % per challenge on the DNA of the run, paid once at the end and only after at least one boss (174.091794ms)
+✔ RunSummary.challengeCount and the masochist title (victory with 3 challenges) (347.52754ms)
+✔ daily hunt ignores challenges; flag off disables everything; bots can play with challenges (6591.192826ms)
+✔ abilities consume their full stamina cost and recovery pauses after casting (426.780935ms)
+✔ herbivores eat plants and ignore corpse meat, including exploration rewards (38.535755ms)
+✔ ordinary large predators telegraph before contact damage (51.986519ms)
+✔ all herbivorous NPCs graze when unprovoked (57.446609ms)
+✔ legendary shield absorbs final damage after armour and stance (14.008232ms)
+✔ legendary mutation pool contains one shared and one per playable species (3.520785ms)
+✔ seed is the local date as YYYYMMDD and the species rotates over the unlocked species (4.382724ms)
+✔ the same date gives the same map and species; startDaily does not change the chosen species (159.014335ms)
+✔ finishing a daily hunt stores a local top 5 for that date that survives save/load and corrupt data (796.229986ms)
+✔ RunSummary.dailySeed and the daily_champion title (cleared 4 levels in the daily hunt) (232.997162ms)
+✔ flag off: no daily hunt (history kept); bots can play the daily hunt (4184.338218ms)
+✔ the cycle: day 0–150 s, dusk, night 165–225 s, dawn, repeating every 240 s (200.906947ms)
+✔ herbivores sleep in a huddle at night and notice a moving player later (409.885266ms)
+✔ compy packs are bold at night: two alert compys attack instead of rallying/watching for 4 (103.342385ms)
+✔ kills at night count as nightKills; the night_stalker title needs 15 (160.152943ms)
+✔ flag off: always day, no nightKills field (23.617641ms)
+✔ Deinosuchus unlocks from Doris and preserves existing selected species (72.379748ms)
+✔ Deinosuchus shares 120 existing native frames and has all five personal rarities (1.474364ms)
+✔ maw rush spends stamina once, hits each enemy once and does not grant invulnerability (96.905935ms)
+✔ water mobility and jaw/rush mutations implement real tradeoffs (26.757651ms)
+✔ Deinosuchus remains a carnivore and cannot catch fish (147.95269ms)
+✔ epic maw-rush mutation increases contact damage and slows only land travel (65.966488ms)
+✔ ponds keep their size for 180 s, then shrink over 120 s to 35 % (the seeded last water to 70 %) (61.859117ms)
+✔ a new level brings fresh ponds and restarts the clock (99.454742ms)
+✔ thirsty herbivores walk to the remaining water and drink; the last water wins over a nearer dry hole (80.585519ms)
+✔ flag off: ponds never shrink and animals behave as before (153.546795ms)
+✔ corpse meat requires stationary held eating, awards portions and preserves leftovers (233.637613ms)
+✔ attacks cancel eating, choices freeze its clock, corpse expiry removes linked leftovers (43.295648ms)
+✔ exploration reveals bounded cells and rare discoveries award once; stage clears fog (49.503684ms)
+✔ seed reproduces events and alternative arenas; settings and duplicate bindings stay safe (164.672071ms)
+✔ boss arena clearing removes matching cover, while explicit spawns leave the world unchanged (59.498812ms)
+✔ all naturally populated animals and nest guardians match the biome and local shore/lava habitat across seeds (10005.297212ms)
+✔ offscreen reinforcements respect species habitats and an aquatic boss can use a remote riverbank (2283.022503ms)
+✔ plants and ambient insects follow biome pools, are deterministic, and avoid lava (1844.223132ms)
+✔ species display ramps use only the fixed palette and retain different identities and stable torso sizes (12.873266ms)
+✔ DNA species unlock with banked DNA, achievement species cannot be bought, and selection survives saving (5.202961ms)
+✔ Triceratops armour protects the front and leaves rear vulnerable (65.845909ms)
+✔ Pachycephalosaurus crits stagger normal dinosaurs, fill a boss break meter and never stun-lock bosses (74.873789ms)
+✔ Gallimimus eats plants and meat, but sprint does not grant basic invulnerability (19.691212ms)
+✔ fishing consumes stamina and finite stock, stops on movement and freezes in mutation choices (23.504058ms)
+✔ fish and plant supplies support full progression in every biome without lava fishing (3495.724068ms)
+✔ tradeoffs change both sides of their bargain (19.636692ms)
+✔ already owned mutations gain modest weight, caps stay excluded and species/rarities still apply (303.01528ms)
+✔ coordinated Compy packs reserve at most two simultaneous windups (12.840187ms)
+✔ fish stay in visible water, plants and tall vegetation clear shores across seeded biomes (8041.362339ms)
+✔ herbivores and omnivores cannot fish; invalid dry-land schools cannot reward Baryonyx (100.302405ms)
+✔ stray fish pickups do not become generic healing or food for herbivores (13.368632ms)
+✔ only fish caught as Baryonyx count; 30 unlock "Fiskekonge" (+15 DNA) and its skin, once (175.597022ms)
+✔ other species never count (their catchFish is a no-op for non-piscivores) (279.580823ms)
+✔ the count and the skin survive save/load; old skins and unlocks are preserved; corrupt counts become 0 (100.477457ms)
+✔ the skin only applies to Baryonyx; the flag off stops counting; the Baryonyx bot fishes toward it (26536.773129ms)
+✔ Deinonychus starts free, preserves old choices and owns all five rarity ranks (4.13084ms)
+✔ Deinonychus finte has no contact damage, costs 26 stamina and empowers one flanking bite (61.794312ms)
+✔ Compy calls existing friends and waits for four nearby packmates before attacks (184.283111ms)
+✔ nest cannot be looted before death, territorial guardian detects intrusion, reward once (55.854039ms)
+✔ varied forage is deterministic and toxic mushrooms apply a bounded paused DoT (114.613381ms)
+✔ Deinonychus legendary strengthens the finte bite by 30 percent, not all attacks; feeding grants no extra food (45.518169ms)
+✔ directional bites damage targets ahead, not targets behind; body collision stays fixed (191.737792ms)
+✔ bite contact happens once, aim is locked, quick jaws scale the whole animation, and pause freezes it (401.93281ms)
+✔ kills drop meat, but XP, levels and boss threshold require actual pickup (223.792982ms)
+✔ successful bite gives one impact, damage number and a short knockback stagger; misses stay quiet (87.190145ms)
+✔ first biome opens with three weak enemies and ramps composition, caps and cadence toward a 24-meat boss (33.479425ms)
+✔ Compy separates from its pack and telegraphs one bite instead of unavoidable contact damage (57.506947ms)
+✔ Parasaurolophus flees harmlessly and steers along an edge rather than getting stuck (37.989503ms)
+✔ ordinary Carnotaurus charges from the first biome, locks its warning aim and allows a sideways dodge (70.553121ms)
+✔ Ankylosaurus warns before tail strike, hits once and has weaker rear armor (25.342685ms)
+✔ first biome waits for meat progression before unlocking a stronger predator and caps it at one (52.71984ms)
+✔ mutation choices are distinct, pause simulation, and queued levels resolve (30.505785ms)
+✔ mutation menu freezes enemies, attacks, pickups and damage; choosing grants brief protection (110.329308ms)
+✔ DNA rolls use species chances and pickups are banked once, surviving reload/death (117.032043ms)
+✔ four guaranteed boss awards, transitions preserve mutations, and final boss wins once (281.865245ms)
+✔ shop validates balances/ranks and applies permanent upgrades only to a new run (71.698097ms)
+✔ boss windup freezes its aim, deals damage during charge, and pounce evades it (26.659894ms)
+✔ fatal damage stops updates; paused world and stamina do not advance (68.505679ms)
+✔ malformed saves, disabled storage, and injected names remain bounded (21.721906ms)
+✔ GDevelop event matches shared source; all integrated PNGs preserve original pixels (605.198315ms)
+✔ meat quality changes pickup value and XP; large species have better rare-drop odds (424.415923ms)
+✔ map exploration follows world bounds; reinforcements and bosses never spawn inside the viewport (66.865157ms)
+✔ weighted mutation rarity retains unique choices and ranks, and Jonas unlocks a cosmetic secret (136.554115ms)
+✔ mixed dinosaurs separate fixed bodies even at identical coordinates without dealing damage or changing attack aim (39.247783ms)
+✔ crowded herds, bosses and map-edge collisions resolve without escaping bounds or blocking charge patterns (23.408148ms)
+✔ successful bites freeze simulation briefly, misses do not, and blood/dust decay with bounded counts (192.493418ms)
+✔ first boss alternates a locked charge and a directional bite with useful recovery openings (19.787524ms)
+✔ half-health first boss signals phase two once and telegraphs each leg of its double charge (12.976109ms)
+✔ first-boss stomp hits once and later bosses now also signal phase two (9.86231ms)
+✔ terrain layouts provide seeded wilderness and biome-specific scenery without changing world bounds (412.806192ms)
+✔ every full language translates all mutation, species, level, zone and achievement texts (17.869006ms)
+✔ numbers, key names, segments and templates survive translation; fun languages fall back to English (0.568484ms)
+✔ Deinonychus is the free starter; old chosen Compy and purchased species survive migration (99.142046ms)
+✔ eight named bosses progress through new maps, including repeat biomes, and keep mutations (637.789261ms)
+✔ seed1993 enters the one-level Compy secret, normal seeds retain the full journey (128.136574ms)
+✔ tiny Compy thieves consume corpse food without awarding the player, depleted packs scatter (85.696414ms)
+✔ ordinary species abilities share baseline costs and cooldowns, telegraph and freeze during mutation choices (330.493675ms)
+✔ NPC skills ignore player mutations, bosses keep their independent attack pattern, Bary can only catch actual water fish (16.183827ms)
+✔ simulator starting biome respects the eight-level route; isolated seed1993 duels use the classic fixture (399.101939ms)
+✔ opening rocks, foliage clusters and river orientation visibly vary for repeat runs of the same level (9526.368636ms)
+✔ map constraints preserve safe start and broad access to habitats and sites (4064.89505ms)
+✔ walks to the goal when nothing hunts it; fights a lone Compy; flees a boss (47.00249ms)
+✔ Compies no longer pile up on the menu dinosaur (the bug in the live menu) (132015.840512ms)
+✔ a hungry predator hunts with real windup and bite, the kill leaves an unrewarded natural corpse (212.236904ms)
+✔ armed herbivores fight back, unarmed ones run, and the herd reacts (89.904595ms)
+✔ predators only pick fights they can win and never across lava or deep water (50.041113ms)
+✔ your attack comes first: provoking a fighting animal ends its NPC fight (42.693276ms)
+✔ carrion smell grows with hunger and predators skip food that rots before they arrive (146.480036ms)
+✔ large carnivores wait while you are near the corpse and eat once you leave (21.804094ms)
+✔ rivals: the higher-ranked eats, the other waits; a clearly stronger one drives it off (15.001992ms)
+✔ a fight to the death only when the awaited corpse rotted and the waiting predator is starving (37.46736ms)
+✔ Baryonyx fishes standing at the school instead of charging across the water (68.834105ms)
+✔ grid neighbour search matches a brute-force search (42.725049ms)
+✔ with the flag off the old hunt rules apply (41.25206ms)
+✔ all seeded lakes have varied natural outlines and finite repeatable catch plans (887.584955ms)
+✔ rarity sets food per fish, mutation bonus applies once, and depleted lake never rewards again (36.140715ms)
+✔ shore fishing takes time and stamina, movement cancels, pause and choices freeze stock (34.066458ms)
+✔ burst fishing consumes only remaining fish and invalid or dry spots give no food (65.712115ms)
+✔ night ramp covers the fixed palette without introducing colours (4.02825ms)
+✔ critical hits are the only bite stagger and boss crits build a break meter (85.627545ms)
+✔ stamina refills slower in combat and an empty bar leaves you winded (57.40893ms)
+✔ every journey level has one optional rival miniboss that rewards an epic genome (33.327671ms)
+✔ compys steal food near you instead of attacking, then run off with it (48.30657ms)
+✔ a wounded compy retreats, heals out of sight and returns while hungry (27.700729ms)
+✔ territorial herbivores only warn a herbivore player unless crowded or hit (52.826735ms)
+✔ hungry predators can hunt prey; natural kills leave a carcass but give the player nothing (28.752189ms)
+✔ maps are larger and split into named zones whose animals differ; the start zone is gentle (1167.54248ms)
+✔ entering a new zone is announced and rewards exploration once (18.704012ms)
+✔ achievements unlock once, pay DNA, unlock species and skins, and survive saving (10.686349ms)
+✔ fresh saves unlock Deinonychus and retain Velociraptor; pre-overhaul saves keep Compy; lifetime stats bank once per run (19.725262ms)
+✔ deep river water blocks small walkers except at fords; swimmers and big species cross; lava burns (29.17412ms)
+✔ ecology poses use the paused natural clock and leave attacks/death untouched (0.958125ms)
+✔ drawn injured poses are quarantined; six original poses remain byte-identical fallbacks (82.286196ms)
+✔ raptor decomposition has two distinct poses for every stage and direction (2.899232ms)
+✔ Ankylosaurus overlay reuses all 24 native tail swings without changing source pixels (6.862952ms)
+✔ limp timing retains all six poses in order, triggers below 30% and restores the normal gait (0.665821ms)
+✔ a successful bite refreshes eight seconds with exactly zero give-up chance (49.495392ms)
+✔ give-up hazard increases with distance and time, excludes bosses and does not consume loot random rolls (30.278063ms)
+✔ disengaged enemies move home and cannot instantly re-aggro; new player attacks override disengagement (13.915024ms)
+✔ prey ignore a still distant observer, flee a moving hunter until out of sight, remember it, and ignore a herbivore player (45.620336ms)
+✔ pause freezes pursuit grace, random decisions and prey distance state (22.43962ms)
+✔ every level places 2 wild raptors on land, ≥ 600 px from the start, deterministically per seed (67.354515ms)
+✔ feeding: E next to a wild raptor with meat within 140 px recruits it, uses one portion, max 2 allies (22.061541ms)
+✔ allies follow you, attack the animal you fight, never land the killing blow, take hits and flee below 35 % (339.231897ms)
+✔ allies travel with you to the next level; new wild raptors appear; summary + pack_leader title (53.246581ms)
+✔ flag off: no raptors; the bot can recruit when meat lies next to a raptor (192.80481ms)
+✔ review fixes: allies leave bosses alone until you fight them, bite bosses at half strength, never across lava (217.781983ms)
+✔ Q16: 60 s of movement gives 3–13 m/s for every playable species (907.37916ms)
+✔ Q17: idle, teleport and level transitions never add distance (52.537421ms)
+✔ Q18: walking into a rock for 10 s adds less than one metre (26.724103ms)
+✔ Q19: every level is 150–400 m wide at PX_PER_METER (122.13241ms)
+✔ distances display as metres/km, are stored in pixels, and the Gallimimus unlock needs 10 km without revoking old unlocks (0.67047ms)
+✔ death by Karl records a journey boss id, the level, and increments S2 only (Q3) (13.741446ms)
+✔ classic and secret-seed bosses never count as named journey bosses (15.824955ms)
+✔ lava burns through the real step path are recorded as a lava death (Q4) (12.518036ms)
+✔ abandoning counts as abandoned and defeat streak, not as a failed run (Q5) (18.602101ms)
+✔ boss kills, attempts, no-hit kills, minibosses, mutations and terrain time are tracked once (25.138403ms)
+✔ Q9: an ecology hunt beside an idle player does not raise damageDealt (96.015823ms)
+✔ Q1: the same RunSummary sequence gives byte-identical records (163.177671ms)
+✔ Q2: day, ISO week across new year and month roll over and archive the previous period (0.661506ms)
+✔ best boards keep the earlier record on ties; least and eligibility rules hold (1.228139ms)
+✔ embarrassment and nemesis follow the deterministic weights (1.428124ms)
+✔ Q6: v2 saves migrate to v3 with lifetime-seeded sums, "—" boards and no NaN (2.691035ms)
+✔ Q7: records + titles stay under 64 KB after 1000 runs (649.391259ms)
+✔ there are 29 Hall of Fame and 25 Hall of Shame statistics (0.227753ms)
+✔ Q10: every one of the 96 title conditions has a satisfying and a failing fixture (5.409094ms)
+✔ Q11: pickTitles is deterministic and independent of object key order (30.835068ms)
+✔ Q12: a victory never yields a shame primary; secondaries never share a category (8.698157ms)
+✔ Part B and untracked titles are gated; the fallback appears when nothing else applies (0.491394ms)
+✔ Q13 (unit): a compy death names the compy and earns Compy-snack (13.231093ms)
+✔ Q15: every variable a title needs is produced by buildRunSummary (10.751242ms)
+✔ Q41: every records label, title name and title description is translated to en/de/sv/no/ja/zh (50.81695ms)
+✔ a single lethal lava tick is included in the summary (lavaDamage, flawless span) (9.437833ms)
+✔ boss chips keep the campaign boss: classic runs never show journey names (9.812505ms)
+✔ a boss attempt starts on engagement, not when the boss spawns far away (12.763582ms)
+✔ record keys from storage are plain ids; weighted ties go to weight then alphabet (0.703842ms)
+✔ Q27: river levels always place their rival (riverside fallback), 150 seeds × levels 3 and 4 (15499.194813ms)
+✔ runs are deterministic for identical seed/species/build and preserve timeout outcome (105.531121ms)
+✔ all registered species and new profiles run without NaN metrics (193.451622ms)
+✔ albino/elite kills open their own epic reward at once, paused, cannot repeat, and caps fall back to DNA (19.406715ms)
+✔ injuries slow only wounded normal animals and leave an actual trail (8.939423ms)
+✔ field guide persists only nearby observations and sanitizes unknown species (15.498199ms)
+✔ telemetry records landed attacks, effective damage, distance and freezes in pause (8.681962ms)
+✔ two new tradeoffs affect mobility, vulnerability, feeding and stamina (45.637133ms)
+✔ aggregates keep deaths/timeouts separate and report uncertainty (0.601053ms)
+✔ missed secrets accumulate across stages but per-stage results stay separate (62.637451ms)
+✔ field guide does not claim a roar before it was observed (12.21827ms)
+✔ dead albino is removed before mutation UI and cannot reward twice (71.893811ms)
+✔ separate rare animals each grant one reward (31.127538ms)
+✔ herbivores cannot receive carnivore instinct through either reward pool (18.828571ms)
+✔ fresh saves start as Deinonychus; legacy DNA and upgrades survive unlock migration (226.160196ms)
+✔ random wilderness is repeatable by seed, varies between seeds and keeps bounded safe habitats (4756.793764ms)
+✔ each class has a distinct primary attack; Ankylosaurus tail hits behind it (107.912776ms)
+✔ ability costs, immunity, contact damage once per animal, and defensive brace differ by class (139.59179ms)
+✔ mutation pool contains shared and own mutations, never another species skill (106.759608ms)
+✔ fossils award permanent DNA once; nest reward is locked until guardian death and its choice freezes simulation (11.776442ms)
+✔ optional elites and rare prey exist before exploration and grant better loot (8.701234ms)
+✔ later bosses have locked warnings, phase two, and flank recovery; T. rex roar drains stamina (42.423321ms)
+✔ tracks every 40 px (80 px sneaking), at most 200, oldest dropped first (404.166981ms)
+✔ tracks fade after 40 s, after 20 s in rain; a wounded player leaves blood scent (265.109442ms)
+✔ an idle predator follows the scent to the player; herbivores and bosses ignore it (143.406016ms)
+✔ blood scent carries 320 px instead of 200; a hidden player is only found at 90 px; LOD beyond 900 px (131.327555ms)
+✔ cost: a scent scan over a full 200-point trail is cheap (≤ 0.05 ms per predator scan, best of 5) (134.374589ms)
+✔ species selection order: free starters, then DNA cost ascending, then achievement unlocks (1.818193ms)
+✔ every species has the same card texts: role, playstyle and ability (0.448132ms)
+✔ water and mud slow travel while crocodiles retain water speed and collision corrections remain independent (123.561599ms)
+✔ bush concealment requires a quiet delay, reduces detection, and attacks reveal immediately (31.959841ms)
+✔ normal movement breaks concealment, sneaking preserves it and bosses keep targeting hidden players (25.597297ms)
+✔ herds share alarms without granting an unhit animal the attack grace, and resume grazing/rest (18.425586ms)
+✔ territorial predators warn before entry, pursue attacks for eight seconds, then leave players beyond their home (21.15024ms)
+✔ death series remain for 60–70 simulation seconds, cap memory, and freeze during mutation choices (68.764598ms)
+✔ momentum refunds are capped per cast even when a Carnotaurus hits an entire pack (14.889059ms)
+✔ shared damage and hunter stack additively while armour and defensive stance multiply without invulnerability (24.102927ms)
+✔ turning preserves stride phase and walk/run clocks close their loops without an extra-frame reset (12.996546ms)
+ℹ tests 249
+ℹ suites 0
+ℹ pass 249
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 446486.056663
+PASS part A: reused tail swings, low-health gait, hit flash, pause
+PASS part A ecology, water, raptor props and pause
+PASS welcome/build/60 HUD reactions/four A1 attacks
+PASS Deinosuchus: Doris unlock, mobile intro, actual shared 2x sprite, water movement and stamina
+PASS: Velociraptor starter, secret1993 UI, tiny Compy flocks, accurate NPC skill telegraph, named boss and intentional victory confirm.
+PASS: visible pond water, river schools, real Baryonyx fishing and herbivore exclusion.
+PASS:160 actual corpse props and36 end scene combinations.
+PASS: persistent observations, species book, actual killer/cinematic type, statistics, reduced motion, mobile layout and no errors/missing assets.
+PASS: DNA migration/purchase, twelve-class archive, T rex portrait/gameplay attack render, mobile layout, no missing assets or browser errors.
+PASS: browser game · menu/name · sound controls/music · movement/bite/meat · pause · mutations · 8 bosses/victory · DNA shop · reload/highscore · death/restart · storage denial
+PASS: browser player attack animation · S: all six actual drawn frames, native size, registered pivot, pause and idle · N: all six actual drawn frames, native size, registered pivot, pause and idle · E: all six actual drawn frames, native size, registered pivot, pause and idle · W: all six actual drawn frames, native size, registered pivot, pause and idle · contact-only damage, locked attack aim while moving, single hit and recovery
+PASS: 1200 actual enemy frames · ten species · six states · four directions · integer scales · pause
+PASS: world browser · desktop/portrait/landscape/ultrawide · camera · facing · XP bar · rarity/rank cards · safe selection · Jonas
+PASS: terrain/combat/boss · four rendered biomes · hit-stop/particles · phase/range hints · full first-boss fight without HP edits
+PASS: roguelite · Compy/classes · wilderness · names · paused nest · unlock persistence · responsive UI
+PASS: full playable animation · 1440 actual frames · 12 classes/4 directions/6 states · hurt/death · pause · native origins
+PASS: cinematic jungle menu, responsive controls, reduced motion, actual species palettes, pause isolation
+PASS: adaptive music, health layers, Space selection guard and fresh-run layouts
+PASS: terrain and concealment browser controls/HUD/pause
+PASS: eating, joystick, remapping, gamepad, scaling, fog and lazy assets; phone-size cloud render p95 9.90 ms
+PASS: combat HUD cooldowns, stamina warning, minimap diamond, desktop/mobile, no browser errors
+PASS: all twelve selector portraits exactly match runtime palettes and preserve alpha, including initially unloaded Utahraptor
+records browser: PASS
+da: compy death card, 29 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844
+de: compy death card, 29 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844
+ja: compy death card, 29 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844
+part-b browser OK
+- B1a da: Karl stalks across lava, HP intact, HUD "LURER VED BREDDEN"
+- B1a en: Karl stalks across lava, HP intact, HUD "LURKING ON THE BANK"
+- B1b: 2 basalt crossings, crossing centre is not lava
+- B1c: telegraph shapes for 7 bosses × 6 patterns, Benny dive telegraph "DYK · FLYT DIG"
+- B7 da: daily seed 20261012 (deinonychus), result "Dagens jagt · 12.10.2026 · plads 1 af 1", list 1 row, 390 px
+- B7 de: daily seed 20261012 (deinonychus), result "Tagesjagd · 12.10.2026 · Platz 1 von 1", list 1 row, 390 px
+- B6 da: 3 challenges (4th disabled), forced intro, result "Udfordringer · Skrøbelig · Seje bosser · Hurtige fjender · +0 DNA", next normal hunt has none
+- B6 ja: 3 challenges (4th disabled), forced intro, result "チャレンジ · もろい体 · タフなボス · 素早い敵 · +0 DNA", next normal hunt has none
+- B8 da: progress "Fiskekonge: 12/30 fisk som Baryonyx", skin unlocked + selected, label "Fiskekongens farver kun Baryonyx"
+- B8 sv: progress "Fiskkung: 12/30 fiskar som Baryonyx", skin unlocked + selected, label "Fiskkungens färger endast Baryonyx"
+- B3: 200 tracks drawn + updated: 32.67 ms/frame vs 30.97 ms (4× CPU, 390 px), ≤ +10 %
+- B4 da: pond 91 → 32 px, notice "TØRKE · VANDHULLERNE SKRUMPER"
+- B4 en: pond 91 → 32 px, notice "DROUGHT · THE WATER HOLES ARE SHRINKING"
+- B2: night darkness 1, edge brightness 68 → 36, HUD "☾ 2:56", herbivore asleep
+- B5 en: E press recruited 1 ally, label "WILD RAPTOR · E FEED"
+- B5 da: E press recruited 1 ally, label "VILD RAPTOR · E FODR"
+- Languages: es/ar/hi/ur/yue/ta/pcm/ru menus translated, RTL for ar/ur, no horizontal scroll at 390 px
+- Species cards: order deinonychus > velociraptor > utahraptor > pachycephalosaurus > carnotaurus > ankylosaurus > compy > gallimimus > baryonyx > deinosuchus > triceratops > tyrannosaurus; all cards complete in da/en/de/ar, card texts translated
+PASS field guide follows the menu language
+PASS: approved presentation art, reduced motion, HUD fallback, atlas failure fallback; 6 menu / 12 menu + volcanic-stage PNG requests
+PASS: four native biomes, textured mud/drought, binary pixel edges, unchanged terrain rules and pause
+PASS shore blend: soil/sand fades, original water/foam, pause and rollback
+PASS natural fishing: indicators, bank catches, rarity, stock, oriented shadows and pause
+{"result":"PASS","engine":"Chrome browser; GDevelop NOT RUN","checks":["Baryonyx fishes with drink pose","fish strike uses attack frames, no charge","NPC windup has no player telegraph","no page errors"],"fishing":{"roam":115,"fish":55,"fishstrike":7}}
+PASS night palette: 192 sprite/skin cases, preserved native pixels and bounded cache
+PASS A6: 110592 exact lava/damage pixel checks, crossing refresh, diet/HUD/Part C icons, rollback, pause and 390px
+
+> primal-run-prototype@0.1.0 test:kit
+> node check_kit_directions.cjs && node check_kit_progression.cjs && node check_kit_files.cjs
+
+{"result":"PASS","engine":"Chrome browser; GDevelop NOT RUN","checks":["S movement/idle/loop","N movement/idle/loop","E movement/idle/loop","W movement/idle/loop","S blockage","N blockage","E blockage","W blockage","diagonal tie facing","pixel smoothing disabled"]}
+{"result":"PASS","engine":"Chrome offline browser prototype; GDevelop NOT RUN","checks":["hunt XP triggers three-choice pause","pause freezes time/movement/damage","keyboard selection resumes","legs +15 percent speed","mutation stacks","feathers +20 percent regeneration","stamina pounce and boost","teeth adds bleed damage","food heals","death DNA once","DNA survives reload","60-second victory DNA bonus","restart clears run upgrades"]}
+{"result":"PASS","checks":["104 catalog PNGs load","all entrypoint/guide/demo local links exist","guide includes five documents","HUD displays correct direction and UTF-8 text"],"scope":"Chromium over local HTTP; file:// access is not certified"}

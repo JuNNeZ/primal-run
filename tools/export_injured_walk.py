@@ -4,6 +4,7 @@ No anatomy is drawn here. Registration/extraction lives in preserved revision2 r
 """
 from pathlib import Path
 import hashlib,json,shutil
+import numpy as np
 from PIL import Image,ImageDraw
 G=Path(__file__).resolve().parents[1]/'PRIMAL_RUN_Game'
 legacy={e['file']:e for family in ('player_full','enemy_full') for e in json.loads((G/f'{family}_manifest.json').read_text())}
@@ -22,8 +23,13 @@ for name in species:
    canonical=f'assets/{family}/{name}_walk_{direction}_{frame:03}.png';old=legacy[canonical];pose=poses.get((direction,frame));technical=pose and pose.get('technical_candidate',pose.get('technical_usable',pose.get('runtime_enabled',False)));visual=pose and pose.get('visual_candidate',pose.get('runtime_enabled',False));accepted=bool(technical and visual)
    file=f'assets/behavior_injured/{name}_limp_{direction}_{frame:03}.png';target=G/file;target.parent.mkdir(parents=True,exist_ok=True)
    if accepted:
-    source=G/pose['file'];assert sha(source)==pose['export_sha256'],source;shutil.copyfile(source,target)
-    e={**pose,'file':file,'review_export':pose['file'],'origin':old['origin'],'species':name,'state':'limp','direction':direction,'frame':frame,'runtime_enabled':True,'status':'prototype_static','production_approved':False,'animation_ready':False,'export_sha256':sha(target),'authored_injury_keypose':True,'review_manifest':reviewPath.relative_to(G).as_posix()};counts['drawn']+=1
+    source=G/pose['file'];assert sha(source)==pose['export_sha256'],source
+    delta=old.get('native_registration_delta',[0,0]);pixels=np.array(Image.open(source).convert('RGBA'));ys,xs=np.where(pixels[:,:,3]>0);tx,ty=xs+delta[0],ys+delta[1]
+    if min(tx)<2 or min(ty)<2 or max(tx)>141 or max(ty)>141:raise ValueError(f'Injury registration would clip reviewed anatomy: {file}')
+    if delta==[0,0]:shutil.copyfile(source,target)
+    else:
+     registered=np.zeros_like(pixels);registered[ty,tx]=pixels[ys,xs];Image.fromarray(registered).save(target)
+    e={**pose,'file':file,'review_export':pose['file'],'review_export_sha256':pose['export_sha256'],'origin':old['origin'],'species':name,'state':'limp','direction':direction,'frame':frame,'runtime_enabled':True,'status':'prototype_static','production_approved':False,'animation_ready':False,'export_sha256':sha(target),'authored_injury_keypose':True,'review_manifest':reviewPath.relative_to(G).as_posix(),'native_registration_delta':delta,'inherited_registration_from':canonical,'registration_offset':[pose['registration_offset'][i]+delta[i] for i in range(2)]};counts['drawn']+=1
    else:
     shutil.copyfile(G/canonical,target);reason=(pose.get('rejection_reason') or 'Drawn keypose did not pass native visual/geometry review') if pose else 'Preserve canonical gait continuity around injury keyposes'
     e={**old,'file':file,'origin':old['origin'],'species':name,'state':'limp','direction':direction,'frame':frame,'runtime_enabled':True,'status':'prototype_static','production_approved':False,'animation_ready':False,'reused_from':canonical,'reused_sha256':sha(G/canonical),'export_sha256':sha(target),'authored_injury_keypose':False,'fallback_reason':reason,'rejected_review_export':pose['file'] if pose else None};counts['rejected_keypose_fallback' if pose else 'native_continuity']+=1

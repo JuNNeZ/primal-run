@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "runtime": "standalone Chromium",
+  "checks": [
+    "real Q command sets focus and native pack icon",
+    "actual mutation reroll button renders native icon",
+    "click spends exactly one reroll",
+    "390px layout",
+    "no page errors"
+  ],
+  "GDevelop_runtime": "not run",
+  "tested_source_branch": "claude/project-thread-9luicd",
+  "tested_source_commit": "4e14a27",
+  "integration_snapshot": "1c96b47",
+  "scope": "Temporary local merge for compatibility verification; Part C is not integrated into the A6 source branch.",
+  "combined_source_sha256": {
+    "src/core.js": "ac547623ed11f31127b5405747f742cf68169e6e08396838fbc26a2a51cf09b7",
+    "src/app.js": "76799c830b1aa83fef675213ceb3561b0574044b87ac6eb84ab97e3def758f73",
+    "style.css": "fbd9222e715721416bd4b2637e121b67c6b91231038fda8adbf63c17d3f2eda2"
+  }
+}

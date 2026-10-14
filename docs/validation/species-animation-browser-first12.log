@@ -1,0 +1,48 @@
+PASS part A: reused tail swings, low-health gait, hit flash, pause
+PASS part A ecology, water, raptor props and pause
+PASS welcome/build/60 HUD reactions/four A1 attacks
+PASS Deinosuchus: Doris unlock, mobile intro, actual shared 2x sprite, water movement and stamina
+PASS: Velociraptor starter, secret1993 UI, tiny Compy flocks, accurate NPC skill telegraph, named boss and intentional victory confirm.
+PASS: visible pond water, river schools, real Baryonyx fishing and herbivore exclusion.
+PASS:160 actual corpse props and36 end scene combinations.
+PASS: persistent observations, species book, actual killer/cinematic type, statistics, reduced motion, mobile layout and no errors/missing assets.
+PASS: DNA migration/purchase, twelve-class archive, T rex portrait/gameplay attack render, mobile layout, no missing assets or browser errors.
+PASS: browser game · menu/name · sound controls/music · movement/bite/meat · pause · mutations · 8 bosses/victory · DNA shop · reload/highscore · death/restart · storage denial
+PASS: browser player attack animation · S: all six actual drawn frames, native size, registered pivot, pause and idle · N: all six actual drawn frames, native size, registered pivot, pause and idle · E: all six actual drawn frames, native size, registered pivot, pause and idle · W: all six actual drawn frames, native size, registered pivot, pause and idle · contact-only damage, locked attack aim while moving, single hit and recovery
+PASS: 1200 actual enemy frames · ten species · six states · four directions · integer scales · pause
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(state.view.x > 0 && state.view.y > 0)
+
+    at /tmp/primal-animation-final-check/tests/world-browser.cjs:47:14 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+node:child_process:981
+    throw err;
+    ^
+
+Error: Command failed: node tests/world-browser.cjs
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at [stdin]:3:29
+    at runScriptInThisContext (node:internal/vm:219:10)
+    at node:internal/process/execution:451:12
+    at [stdin]-wrapper:6:24
+    at runScriptInContext (node:internal/process/execution:449:60)
+    at evalFunction (node:internal/process/execution:283:30) {
+  status: 1,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 36979,
+  stdout: null,
+  stderr: null
+}
+
+Node.js v24.19.0

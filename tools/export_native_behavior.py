@@ -21,7 +21,7 @@ for item in config:
     cache[src]=Image.open(src).convert('RGBA');assert cache[src].size==(1536,1024),(src,cache[src].size)
    im=cache[src]
    crop=[col*384,row*256,(col+1)*384,(row+1)*256];a=np.array(im.crop(crop))[offset::step,offset::step].copy();visible=a[:,:,3]>=item.get('alpha_threshold',248);ys,xs=np.where(visible)
-   registration=[origin[i]-round((anchor[i]-offset)/step) for i in range(2)];tx=xs+registration[0];ty=ys+registration[1]
+   delta=legacy[ref].get('native_registration_delta',[0,0]);registration=[origin[i]-round((anchor[i]-offset)/step)+delta[i] for i in range(2)];tx=xs+registration[0];ty=ys+registration[1]
    reason=next((item.get('rejected_poses',{}).get(f'{state}_{direction}_{f:03}') for f in [0,1] if item.get('rejected_poses',{}).get(f'{state}_{direction}_{f:03}')), '')
    if not len(xs):reason=reason or 'Empty authored pose; canonical idle fallback.'
    elif min(tx)<2 or min(ty)<2 or max(tx)>141 or max(ty)>141:reason=reason or f'Authored pose clips fixed native canvas: {min(tx)},{min(ty)}-{max(tx)},{max(ty)}; canonical idle fallback.'

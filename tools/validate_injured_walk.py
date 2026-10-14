@@ -20,7 +20,7 @@ for e in manifest:
  if e.get('reused_from'):
   assert path.read_bytes()==(G/e['reused_from']).read_bytes();assert e['reused_sha256']==sha(G/e['reused_from']);counts['reused']+=1
  else:
-  assert e['authored_injury_keypose'] and e['frame'] in (2,3);assert sha(G/e['source'])==e['source_sha256'];assert sha(G/e['review_export'])==e['export_sha256'];counts['authored']+=1
+  assert e['authored_injury_keypose'] and e['frame'] in (2,3);assert sha(G/e['source'])==e['source_sha256'];assert sha(G/e['review_export'])==e.get('review_export_sha256',e['export_sha256']);counts['authored']+=1
   # Rebuild exactly from tracked source/cell/anchor metadata, never temporary tools.
   step=e['sampling_stride'];offset=e['sampling_offset'];source=np.array(Image.open(G/e['source']).convert('RGBA').crop(e['source_crop']))[offset::step,offset::step].copy();mask=source[:,:,3]>=e.get('alpha_threshold',192);sy,sx=np.where(mask);rgb=source[:,:,:3].astype(np.int32)
   # Palette order determines equidistant colour ties, so use the original declared order.

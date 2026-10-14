@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-12",
+  "technical_coverage": {
+    "species": 13,
+    "sequences": 312,
+    "frames": 1560,
+    "result": "PASS"
+  },
+  "art_gate": "REQUIRES_SOURCE_POLISH",
+  "review_candidates": 81,
+  "source_art_changes": false,
+  "fixes": [
+    "All6 cinematic attack poses within0.5s; cinematic run12fps",
+    "Pack gait8/12fps, phase preserved through state changes, paused/stopped phase frozen",
+    "Pack/victory stable idle uses same pose0 policy"
+  ],
+  "checks": {
+    "targeted_browser": "PASS:30/60fps, pack paths, pause,13-species review",
+    "targeted_gait_tests": "PASS",
+    "source_family_validators": "PASS: player_full, enemy_full, HUD/species attacks, native behavior, injured walk, sprite atlas",
+    "packaged_review": "PASS:13 species render native atlas crops in dist; no page errors",
+    "unit_tests": "PASS:251 tests +3 Python atlas/plan tests",
+    "final_check_set": "PASS:251 unit tests,33 game browser suites,3 kit checks,3 Python atlas/plan tests; browser/kit checks resumed after two fixture readiness corrections",
+    "guarded_build": "PASS: build:game regenerates audit/review data;20 sheets/3033 crops remain pixel-identical"
+  },
+  "source_sha256": {
+    "PRIMAL_RUN_Game/src/core.js": "64cfdf9319fbef3bbe55f756754ede89f94f6388e65dd0c8634b35d1d31765da",
+    "PRIMAL_RUN_Game/src/app.js": "02a15dc4f1f404bcbc2930f41c25279145ed2063912414637d3868706e36c676",
+    "PRIMAL_RUN_Game/species_animation_review.html": "b7d940ff7714e09a97cb84d089ae278918d176293e4ff1996a613a45b6a3876d",
+    "PRIMAL_RUN_Game/species_animation_review_data.js": "0fe81e5320ac92454b30b744d34f9c62027d7e87ac19d174224759fbee7d430d",
+    "tools/build_game.py": "565ddf30cecd44d238f4c7eb691fe37faa116d11f656571cac33208961f06d97",
+    "tools/audit_species_animations.py": "9dcb7359cd7c737a328a71c2341d72f568f46aa93db4cc4b2fd49b5dcb7cfba0",
+    "tests/journey-browser.cjs": "be9c63084a905aae18d1b17c1df899d5b56c0af1e340c659a54f4354687f3dfd",
+    "tests/world-browser.cjs": "3e5ac3dbcb797fbbbb671bc0cca9a766c9f9a3276c4a3db13ebdc71873c74e3e"
+  },
+  "reports": [
+    "../../PRIMAL_RUN_Game/species_animation_audit.json",
+    "../../PRIMAL_RUN_Game/animation_continuity_runtime_report.json"
+  ],
+  "limitations": [
+    "Technical completeness/pixel difference does not certify smooth source animation or species anatomy",
+    "No new GDJS export; browser evidence is standalone Chromium",
+    "Known T.rex N cross-state volume and Deinonychus S hurt shift remain source-polish tasks",
+    "Background branches contain separate Part C growth scaling work; not integrated in this audit"
+  ],
+  "logs": [
+    "species-animation-unit-and-initial-browser.log",
+    "species-animation-browser-first12.log",
+    "species-animation-browser-rest-and-kit.log"
+  ],
+  "test_fixture_fixes": [
+    "Journey test waits for rendered secret-level label after entering playing phase",
+    "World test explicitly renders its paused teleport/XP fixture and waits for the rendered settled camera instead of a fixed100ms delay"
+  ],
+  "background_snapshots": {
+    "integration/next": "1c96b47",
+    "claude/project-thread-9luicd": "4e14a27; unchanged"
+  },
+  "test_execution": "Initial npm test passed all units/Python tests, then stopped at a UI-readiness race in journey. Browser first12 passed on rerun; world fixture snapshot readiness was corrected and remaining21 browsers +3 kit checks passed. Game implementation was unchanged between these runs."
+}

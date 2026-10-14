@@ -18,7 +18,7 @@
     const shell = document.createElement('div'); shell.className = 'primal-shell';
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
       <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space angriber, Shift bruger evne, F spiser, Escape pauser."></canvas>
-      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="hud-chips"><span id="food-chip"></span><span id="dna-chip"></span><span id="zone-chip"></span></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
+      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
       <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div></div></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div></main>
       <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space">ANGREB</button><button data-key="ShiftLeft">EVNE</button><button data-key="KeyE">UNDERSØG</button><button data-key="KeyF">SPIS</button></div></div>
@@ -38,9 +38,13 @@
     function drawAsset(context, image, ...args) {
       if (!image.sheet) { context.drawImage(image, ...args); return; }
       const {sheet,x,y,width,height}=image;
-      if(args.length===2) context.drawImage(sheet,x,y,width,height,args[0],args[1],width,height);
-      else if(args.length===4) context.drawImage(sheet,x,y,width,height,...args);
-      else context.drawImage(sheet,x+args[0],y+args[1],...args.slice(2));
+      // Several logical frames can share one exact crop. Keep the identity of this draw.
+      const previous=sheet.primalDrawPath;sheet.primalDrawPath=image.spritePath;
+      try {
+        if(args.length===2) context.drawImage(sheet,x,y,width,height,args[0],args[1],width,height);
+        else if(args.length===4) context.drawImage(sheet,x,y,width,height,...args);
+        else context.drawImage(sheet,x+args[0],y+args[1],...args.slice(2));
+      } finally { sheet.primalDrawPath=previous; }
     }
     function frameCanvas(image) {
       if (!image.sheet) return image;
@@ -278,8 +282,11 @@
     function drawEndScene(now){const scene=screen.querySelector('.end-scene');if(!scene)return;const r=game.run;if(endSceneRun!==r){endSceneRun=r;endSceneStarted=now;}const t=(now-endSceneStarted)/1000,dc=scene.getContext('2d');dc.imageSmoothingEnabled=false;dc.fillStyle='#151b19';dc.fillRect(0,0,480,180);dc.fillStyle='#28372a';dc.fillRect(0,130,480,50);
       const reduced=reducedMotion.matches||game.save.settings.reducedMotion,phase=reduced?2:Math.min(3,t),killer=r.result.victory?null:r.lastHit,charge=killer?.mode==='charge',slam=killer?.mode==='slam',style=charge?'stormløb':slam?'slag':'bid';scene.dataset.scene=style;scene.dataset.species=r.species;
       const paint=(path,x,y,scale=1)=>{prepareImage(path);const im=skins[path]||images[path],meta=catalog[path];if(!im){if(meta)loadImage(path).catch(()=>{});return;}drawAsset(dc,im,Math.round(x-meta.origin[0]*scale),Math.round(y-meta.origin[1]*scale),im.width*scale,im.height*scale);};
-      const state=r.result.victory?'idle':phase<1?'hurt':'death',frame=state==='death'?Math.min(5,Math.floor((phase-1)*8)):state==='hurt'?0:Math.floor(phase*4)%4;paint(C.playerFrame(r.species,state,'W',Math.max(0,frame)),310,100,['tyrannosaurus','deinosuchus'].includes(r.species)?2:1);
-      if(killer){const state=phase<1?'run':phase<1.5?'attack':'idle',frame=state==='idle'?0:Math.min(5,Math.floor((phase%1)*6));paint(enemyFrame(killer.kind,state,'E',frame),phase<1?70+phase*(charge?170:140):charge?240:210,slam?110:100,['tyrannosaurus','deinosuchus'].includes(killer.kind)?2:1);}
+      const state=r.result.victory?'idle':phase<1?'hurt':'death',frame=state==='death'?Math.min(5,Math.floor((phase-1)*8)):state==='hurt'?0:C.FEATURES.stableIdle?0:Math.floor(phase*4)%4;paint(C.playerFrame(r.species,state,'W',Math.max(0,frame)),310,100,['tyrannosaurus','deinosuchus'].includes(r.species)?2:1);
+      if(killer){const state=phase<1?'run':phase<1.5?'attack':'idle';
+        // The attack occupies half a second: play all six poses within that window.
+        const frame=state==='attack'?Math.min(5,Math.floor((phase-1)/.5*6)):state==='run'?Math.floor(phase*12)%6:0;
+        paint(enemyFrame(killer.kind,state,'E',frame),phase<1?70+phase*(charge?170:140):charge?240:210,slam?110:100,['tyrannosaurus','deinosuchus'].includes(killer.kind)?2:1);}
     }
     const prepared=new Set();
     function prepareImage(path){if(prepared.has(path)||!images[path])return;prepared.add(path);const image=images[path];
@@ -287,7 +294,7 @@
         if(species&&!path.startsWith('assets/corpses/')) {
           const layer=document.createElement('canvas');layer.width=image.width;layer.height=image.height;const lc=layer.getContext('2d');drawAsset(lc,image,0,0);const pixels=lc.getImageData(0,0,image.width,image.height),mapping=C.SPECIES_COLORS[species];
           for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[pixels.data[i],pixels.data[i+1],pixels.data[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('');const color=mapping[key];if(color){pixels.data[i]=parseInt(color.slice(0,2),16);pixels.data[i+1]=parseInt(color.slice(2,4),16);pixels.data[i+2]=parseInt(color.slice(4,6),16);}}
-          lc.putImageData(pixels,0,0);skins[path]=layer;
+          lc.putImageData(pixels,0,0);layer.spritePath=path;skins[path]=layer;
         }
         if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/') || path.startsWith('assets/enemy_full/') || path.startsWith('assets/player_full/') || path.startsWith('assets/species_attacks/') || path.startsWith('assets/behavior/') || path.startsWith('assets/behavior_native/') || path.startsWith('assets/behavior_injured/'))) {
           const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
@@ -299,12 +306,43 @@
     const npcVariants=new Map();
     function npcVariant(path,variant){const key=path+':'+variant;if(npcVariants.has(key))return npcVariants.get(key);const source=skins[path]||images[path];if(!source)return null;const layer=document.createElement('canvas');layer.width=source.width;layer.height=source.height;const lc=layer.getContext('2d');drawAsset(lc,source,0,0);const pixels=lc.getImageData(0,0,layer.width,layer.height),swaps={male:{'799447':'a8b15b','69a4a0':'3c7180','b98252':'d4a36c','929387':'626861'},elite:{'799447':'de954a','69a4a0':'e9b75a','929387':'de954a','b98252':'e9b75a'},fishKing:{'799447':'3c7180','69a4a0':'a2d4c1','929387':'2466a0','b98252':'69a4a0'}};
       for(let i=0;i<pixels.data.length;i+=4){if(!pixels.data[i+3])continue;const rgb=[...pixels.data.slice(i,i+3)],key=rgb.map(v=>v.toString(16).padStart(2,'0')).join('');let value=swaps[variant]?.[key];if(variant==='albino'&&Math.max(...rgb)>55)value=Math.max(...rgb)>145?'e8ece1':'bab8a2';if(value)for(let j=0;j<3;j++)pixels.data[i+j]=parseInt(value.slice(j*2,j*2+2),16);}
-      lc.putImageData(pixels,0,0);npcVariants.set(key,layer);if(npcVariants.size>128)npcVariants.delete(npcVariants.keys().next().value);return layer;
+      lc.putImageData(pixels,0,0);layer.spritePath=path;npcVariants.set(key,layer);if(npcVariants.size>128)npcVariants.delete(npcVariants.keys().next().value);return layer;
+    }
+    const nightFrames = new Map(), NIGHT_FRAME_LIMIT = 128;
+    function nightFrame(path, source, variant) {
+      // Recolour the final species/skin pixels, preserving alpha, silhouettes and origins.
+      const key = path + ':' + (variant || 'classic');
+      if (nightFrames.has(key)) return nightFrames.get(key);
+      const layer = document.createElement('canvas');
+      layer.width = source.width; layer.height = source.height;
+      layer.spritePath = path; layer.nightPalette = true;
+      const lc = layer.getContext('2d'); lc.imageSmoothingEnabled = false;
+      drawAsset(lc, source, 0, 0);
+      const pixels = lc.getImageData(0, 0, layer.width, layer.height);
+      for (let i = 0; i < pixels.data.length; i += 4) {
+        if (!pixels.data[i + 3]) continue;
+        const rgb = [pixels.data[i], pixels.data[i+1], pixels.data[i+2]]
+          .map(v => v.toString(16).padStart(2, '0')).join('');
+        const target = C.NIGHT_PALETTE[rgb];
+        if (target) for (let j = 0; j < 3; j++) pixels.data[i+j] = parseInt(target.slice(j*2, j*2+2), 16);
+      }
+      lc.putImageData(pixels, 0, 0); nightFrames.set(key, layer);
+      if (nightFrames.size > NIGHT_FRAME_LIMIT) nightFrames.delete(nightFrames.keys().next().value);
+      return layer;
     }
     function sprite(path, x, y, alpha = 1, flash = false, rotation = 0, scale = 1, variant=null) {
       prepareImage(path);const image = flash ? flashes[path] : images[path], meta = catalog[path]; if(!image&&meta){loadImage(path).catch(()=>{});return;}if(!meta)return;
       ctx.globalAlpha = alpha;
+      const night = !flash && C.FEATURES.dayNight && C.FEATURES.nightPalette && game.run?.night
+        && /^assets\/(enemies|enemy_animations|enemy_full|player_full|player_combat|species_attacks|behavior_native|behavior_injured|corpses)\//.test(path);
+      const finalImage = night ? nightFrame(path, (variant ? npcVariant(path,variant) : skins[path]) || image, variant) : null;
       const paint=(img,dx,dy)=>{if(scale===1)drawAsset(ctx,img,dx,dy);else drawAsset(ctx,img,dx,dy,img.width*scale,img.height*scale);};
+      if (finalImage) {
+        const dx = -meta.origin[0]*scale, dy = -meta.origin[1]*scale;
+        if (rotation) { ctx.save(); ctx.translate(Math.round(x),Math.round(y)); ctx.rotate(rotation); paint(finalImage,dx,dy); ctx.restore(); }
+        else paint(finalImage,Math.round(x)+dx,Math.round(y)+dy);
+        ctx.globalAlpha = 1; return;
+      }
       if(rotation){ctx.save();ctx.translate(Math.round(x),Math.round(y));ctx.rotate(rotation);paint(image,-meta.origin[0]*scale,-meta.origin[1]*scale);if(!flash&&(variant?npcVariant(path,variant):skins[path]))paint(variant?npcVariant(path,variant):skins[path],-meta.origin[0]*scale,-meta.origin[1]*scale);ctx.restore();}
       else {paint(image,Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);if(!flash&&(variant?npcVariant(path,variant):skins[path]))paint(variant?npcVariant(path,variant):skins[path],Math.round(x)-meta.origin[0]*scale,Math.round(y)-meta.origin[1]*scale);}
       ctx.globalAlpha = 1;
@@ -361,6 +399,32 @@
       icon.hidden = !loaded; glyph.hidden = loaded;
       if (loaded) { const dc = icon.getContext('2d'); dc.imageSmoothingEnabled = false;
         dc.clearRect(0, 0, 16, 16); drawAsset(dc,images[path], 0, 0); icon.dataset.sprite = path; }
+    }
+    function drawHUDChip(id, name, text, fallback) {
+      const chip = shell.querySelector('#'+id+'-chip'), icon = chip.querySelector('canvas');
+      const path = 'assets/a6_hud/'+name+'.png';
+      if (C.FEATURES.hudIcons && catalog[path] && !images[path]) loadImage(path).catch(()=>{});
+      const loaded = !!text && C.FEATURES.hudIcons && images[path];
+      icon.hidden = !loaded; chip.hidden = !text;
+      chip.querySelector('.chip-value').textContent = (loaded ? '' : fallback)+text;
+      if (loaded && icon.dataset.sprite !== path) {
+        const dc = icon.getContext('2d'); dc.imageSmoothingEnabled = false;
+        dc.clearRect(0,0,24,24); drawAsset(dc,images[path],0,0); icon.dataset.sprite = path;
+      }
+    }
+    function drawA6Controls(r) {
+      // Part C may add these controls later; keep its text, events and visibility intact.
+      for (const [selector,name] of [['.pack-key',r.packFocus?.until>r.seconds?'pack_focus':'pack_follow'],['[data-reroll]','reroll']]) {
+        const control = shell.querySelector(selector); if (!control) continue;
+        let icon = control.querySelector('.a6-control-icon');
+        const path = 'assets/a6_hud/'+name+'.png';
+        if (C.FEATURES.hudIcons && catalog[path] && !images[path]) loadImage(path).catch(()=>{});
+        if (!icon) { icon=document.createElement('canvas'); icon.className='a6-control-icon';
+          icon.width=icon.height=24; icon.setAttribute('aria-hidden','true'); control.prepend(icon); }
+        icon.hidden = !C.FEATURES.hudIcons || !images[path];
+        if (!icon.hidden && icon.dataset.sprite !== path) { const dc=icon.getContext('2d');
+          dc.imageSmoothingEnabled=false; dc.clearRect(0,0,24,24); drawAsset(dc,images[path],0,0); icon.dataset.sprite=path; }
+      }
     }
     function insect(p,time) {
       if(game.save.settings.reducedMotion||reducedMotion.matches)return;
@@ -545,14 +609,23 @@
 
       }
       }
-      const waterTime=game.run?game.run.seconds:menuClock;const tiledWater=C.FEATURES.waterTiles&&catalog['assets/water_transitions/shore_soil_15.png'];canvas.dataset.waterTiles=tiledWater?'true':'false';for(const pond of map.ponds||[])drawDryBank(pond,stage);if(tiledWater)drawWaterTiles(stage,map,view);for(const pond of map.ponds||[])drawPond(pond,waterTime,tiledWater);
+      const waterTime=game.run?game.run.seconds:menuClock;const tiledWater=C.FEATURES.waterTiles&&catalog['assets/water_transitions/shore_soil_15.png'];canvas.dataset.waterTiles=tiledWater?'true':'false';if(stage!==3){canvas.dataset.lavaTiles='false';canvas.dataset.lavaTilesReady='false';canvas.dataset.lavaTileCount='0';}for(const pond of map.ponds||[])drawDryBank(pond,stage);if(tiledWater)drawWaterTiles(stage,map,view);for(const pond of map.ponds||[])drawPond(pond,waterTime,tiledWater);
       ctx.lineCap = 'round'; ctx.lineJoin = 'round';
       if (stage === 1) {
         drawRiver(map,waterTime,tiledWater);
       }
       if (stage === 3) {
-        trace(map.river); ctx.strokeStyle = '#3b4144'; ctx.lineWidth = 58; ctx.stroke(); ctx.strokeStyle = '#54282d'; ctx.lineWidth = 42; ctx.stroke(); ctx.strokeStyle = '#c6663c'; ctx.lineWidth = 26; ctx.stroke();
-        ctx.save(); ctx.globalAlpha = calm() ? .8 : .55 + .35 * Math.sin(waterTime * 3); ctx.strokeStyle = '#de954a'; ctx.lineWidth = 10; ctx.stroke(); ctx.globalAlpha = .9; ctx.strokeStyle = '#ded392'; ctx.lineWidth = 3; ctx.setLineDash([12, 18]); ctx.lineDashOffset = calm() ? 0 : -waterTime * 20; ctx.stroke(); ctx.restore();
+        const lava = prepareLavaTiles(map,view);
+        if (!lava || !lava.complete) {
+          trace(map.river); ctx.strokeStyle = '#3b4144'; ctx.lineWidth = 58; ctx.stroke(); ctx.strokeStyle = '#54282d'; ctx.lineWidth = 42; ctx.stroke(); ctx.strokeStyle = '#c6663c'; ctx.lineWidth = 26; ctx.stroke();
+        }
+        if (lava) for (const tile of lava.visible) if (tile.image) drawAsset(ctx,tile.image,tile.x,tile.y);
+        canvas.dataset.lavaTiles=String(!!lava); canvas.dataset.lavaTilesReady=String(!!lava?.complete);
+        canvas.dataset.lavaTileCount=String(lava?.visible.filter(t=>t.image).length||0);
+        trace(map.river);
+        ctx.save();
+        if(lava?.complete){ctx.beginPath();for(const tile of lava.visible)for(const [x,y,w] of tile.image.hazardRuns)ctx.rect(tile.x+x,tile.y+y,w,1);ctx.clip();trace(map.river);}
+        ctx.globalAlpha = calm() ? .8 : .55 + .35 * Math.sin(waterTime * 3); ctx.strokeStyle = '#de954a'; ctx.lineWidth = 10; ctx.stroke(); ctx.globalAlpha = .9; ctx.strokeStyle = '#ded392'; ctx.lineWidth = 3; ctx.setLineDash([12, 18]); ctx.lineDashOffset = calm() ? 0 : -waterTime * 20; ctx.stroke(); ctx.restore();
         // B1b basalt crossings: approved native art, with the original procedural fallback.
         for (const c of map.lavaCrossings || []) {
           if (drawApprovedCrossing(c)) continue;
@@ -664,6 +737,52 @@
       }
       lc.putImageData(pixels,0,0);shoreBlendCache.set(path,layer);return layer;
     }
+    const lavaCaches = new WeakMap(), lavaSources = new Map();
+    function lavaSource(path) {
+      if (lavaSources.has(path)) return lavaSources.get(path);
+      if (!catalog[path]) return null;
+      if (!images[path]) { loadImage(path).catch(()=>{}); return null; }
+      const sample=document.createElement('canvas'); sample.width=sample.height=32;
+      const sc=sample.getContext('2d'); drawAsset(sc,images[path],0,0);
+      const pixels=sc.getImageData(0,0,32,32).data; lavaSources.set(path,pixels); return pixels;
+    }
+    function prepareLavaTiles(map,view) {
+      if (!C.FEATURES.lavaTiles) return null;
+      const sources=Array.from({length:16},(_,i)=>lavaSource('assets/lava_ash/lava_ash_'+String(i).padStart(2,'0')+'.png'));
+      if (sources.some(s=>!s)) return null;
+      const signature=JSON.stringify([map.riverCurve||map.river,map.lavaCrossings]);
+      let cache=lavaCaches.get(map);
+      if (!cache || cache.signature!==signature) { cache={signature,tiles:new Map()}; lavaCaches.set(map,cache); }
+      const visible=[],started=performance.now(),still=['paused','mutation','cleared'].includes(game.phase); let builds=0;
+      for(let y=Math.floor(view.y/32)*32;y<view.y+canvas.height;y+=32)for(let x=Math.floor(view.x/32)*32;x<view.x+canvas.width;x+=32){
+        if(C.riverDistance(map,{x:x+16,y:y+16})>52)continue;
+        const key=x+','+y; let image=cache.tiles.get(key);
+        if(!image&&(still||builds<4&&(builds===0||performance.now()-started<4))){
+          const mask=[[x,y],[x+32,y],[x+32,y+32],[x,y+32]].reduce((m,[vx,vy],i)=>m|(C.isLava(3,map,{x:vx,y:vy})?1<<i:0),0);
+          const path='assets/lava_ash/lava_ash_'+String(mask).padStart(2,'0')+'.png';
+          image=document.createElement('canvas'); image.width=image.height=32;
+          image.spritePath=path; image.lavaTile=true; image.lavaMask=mask; image.lavaX=x; image.lavaY=y;
+          image.hazardRuns=[];const hazardPixels=new Uint8Array(32*32);
+          const ic=image.getContext('2d'),pixels=ic.createImageData(32,32);
+          for(let py=0;py<32;py++)for(let px=0;px<32;px++){
+            const point={x:x+px+.5,y:y+py+.5},i=(py*32+px)*4;
+            if(C.riverDistance(map,point)>=29)continue;
+            const hazard=C.isLava(3,map,point),sample=sources[mask];
+            hazardPixels[py*32+px]=+hazard;
+            const warm=sample[i]>75&&sample[i]>sample[i+2]*1.2&&sample[i]>sample[i+1]*.95;
+            // Preserve authored bank pixels where possible; fill thin channels and cut crossings
+            // using the same real geometry as damage, never a second approximation of the hitbox.
+            const source=hazard?(warm?sample:sources[15]):(warm?sources[0]:sample);
+            pixels.data.set(source.subarray(i,i+3),i);pixels.data[i+3]=255;
+          }
+          for(let py=0;py<32;py++)for(let px=0;px<32;){if(!hazardPixels[py*32+px]){px++;continue;}const start=px;while(px<32&&hazardPixels[py*32+px])px++;image.hazardRuns.push([start,py,px-start]);}
+          ic.putImageData(pixels,0,0); cache.tiles.set(key,image);builds++;
+          if(cache.tiles.size>512)cache.tiles.delete(cache.tiles.keys().next().value);
+        }
+        visible.push({x,y,image});
+      }
+      return {visible,complete:visible.every(t=>t.image)};
+    }
     function waterCorner(stage,map,x,y){
       let cache=waterVertexCache.get(map);if(!cache){cache=new Map();waterVertexCache.set(map,cache);}
       const key=stage+':'+x+':'+y;if(cache.has(key))return cache.get(key);
@@ -743,7 +862,7 @@
     function screenAmbience(r,time){
       const w=canvas.width,h=canvas.height,[tint,alpha]=LEVEL_LIGHT[Math.min(LEVEL_LIGHT.length-1,r.levelIndex||0)],kind=weather(r);
       if(alpha){ctx.save();ctx.globalAlpha=alpha;ctx.globalCompositeOperation='multiply';ctx.fillStyle=tint;ctx.fillRect(0,0,w,h);ctx.restore();}
-      if(C.FEATURES.dayNight&&r.darkness>0){ // B2 night: procedural darkening with a soft light around the player (night palette = A6 asset)
+      if(C.FEATURES.dayNight&&r.darkness>0){ // B2 lighting remains separate from A6's native sprite palette.
         const px=r.player.x-r.view.x,py=r.player.y-r.view.y,inner=110,outer=Math.max(w,h)*.55,g=ctx.createRadialGradient(px,py,inner,px,py,outer);
         g.addColorStop(0,'rgba(21,27,25,0)');g.addColorStop(1,'rgba(21,27,25,'+(.62*r.darkness).toFixed(3)+')');
         ctx.save();ctx.globalCompositeOperation='multiply';ctx.fillStyle=g;ctx.fillRect(0,0,w,h);ctx.globalAlpha=.18*r.darkness;ctx.fillStyle='#3c7180';ctx.fillRect(0,0,w,h);ctx.restore();
@@ -853,7 +972,7 @@
         canvas.dataset.playerState = r.attack ? 'Bite_' + r.attack.facing : (p.moving ? 'Walk_' : 'Idle_') + p.facing;
         if (C.FEATURES.raptorPack) for (const a of r.raptors || []) { // B5 raptors drawn with the existing Velociraptor frames
           const dir = Math.abs(a.facingX) > Math.abs(a.facingY) ? (a.facingX > 0 ? 'E' : 'W') : (a.facingY > 0 ? 'S' : 'N'), biting = a.mode === 'attack' && a.cooldown > C.PACK.cooldown - .3;
-          const state = biting ? 'attack' : a.moving ? (a.mode === 'flee' ? 'run' : 'walk') : 'idle', frame = biting ? Math.min(5, Math.floor((C.PACK.cooldown - a.cooldown) / .05)) : a.moving ? Math.floor(a.walk * 6) % 6 : Math.floor(r.seconds * 4) % 4;
+          const state = biting ? 'attack' : a.moving ? (a.mode === 'flee' ? 'run' : 'walk') : 'idle', frame = biting ? Math.min(5, Math.floor((C.PACK.cooldown - a.cooldown) / .05)) : a.moving ? C.locomotionFrame(a.gaitPhase??a.walk,a.hp,a.maxHP) : C.FEATURES.stableIdle?0:Math.floor(r.seconds * 4) % 4;
           objects.push({ x: a.x, y: a.y, radius: a.radius, raptor: a, path: C.playerFrame('velociraptor', state, dir, frame) });
         }
         objects.push({ ...p, visualScale:['tyrannosaurus','deinosuchus'].includes(r.species)?2:1, player: true, path: playerPath });
@@ -929,8 +1048,8 @@
       shell.querySelector('.stamina i').style.width = r.stamina + '%';
       { const cost = C.abilityCost(r), staminaBar = shell.querySelector('.stamina'); shell.querySelector('.cost-mark').style.left = Math.min(100, cost) + '%'; staminaBar.dataset.low = String(r.stamina < cost); staminaBar.dataset.winded = String((r.winded || 0) > 0);
         shell.querySelector('.health .segments').style.backgroundSize = (100 * 20 / r.maxHealth) + '% 100%'; shell.querySelector('.health').dataset.low = String(r.health < r.maxHealth * .3);
-        const diet = C.PLAYER_SPECIES[r.species].diet; shell.querySelector('#food-chip').textContent = (diet === 'herbivore' ? '❧ ' : diet === 'piscivore' ? '≈ ' : '◆ ') + r.meat + '/' + game.currentLevel().target;
-        shell.querySelector('#dna-chip').textContent = '⬡ ' + r.dna; const zone = r.zone !== null && r.zone !== undefined && r.map.zones ? r.map.zones[r.zone] : null; shell.querySelector('#zone-chip').textContent = zone ? zone.name : '';
+        const diet = C.PLAYER_SPECIES[r.species].diet; drawHUDChip('food', 'food_'+(diet==='herbivore'?'plants':diet==='piscivore'?'fish':'meat'), r.meat+'/'+game.currentLevel().target, diet==='herbivore'?'❧ ':diet==='piscivore'?'≈ ':'◆ ');
+        drawHUDChip('dna', 'dna_chip', String(r.dna), '⬡ '); const zone = r.zone !== null && r.zone !== undefined && r.map.zones ? r.map.zones[r.zone] : null; drawHUDChip('zone', 'zone_chip', zone ? zone.name : '', '');
         drawPortrait(r); }
       canvas.dataset.surface=r.surface;canvas.dataset.hidden=String(r.hidden);shell.querySelector('#terrain-label').textContent=r.hidden?'SKJULT · angrib for at afsløre dig':({water:['baryonyx','deinosuchus'].includes(r.species)?'VAND · FLODJÆGER':'VAND · 60 % fart',mud:'MUDDER · 75 % fart',bush:control('sneak')?'BUSKE · stå stille / hold '+control('sneak'):'BUSKE · stå stille',ground:''})[r.surface];
       shell.querySelector('#biome-label').textContent = 'BANE ' + (r.levelIndex + 1) + '/' + r.campaign.length + ' · ' + game.currentLevel().name;
@@ -942,6 +1061,7 @@
       shell.querySelector('#level-label').textContent = 'LEVEL ' + r.level + ' · ' + r.xp + '/' + r.nextXP + ' XP';
       shell.querySelector('#dna-label').textContent = '+' + r.dna + ' DNA · ' + r.kills + ' JAGTER';
       drawTimeIcon(r); // Approved native HUD art, with the existing glyph as fallback.
+      drawA6Controls(r);
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
       shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : control('ability')+' KLAR');
       const config=C.PLAYER_SPECIES[r.species],cost=C.abilityCost(r),attackFraction=1-r.attackCooldown/(r.attackDuration||config.cooldown),abilityFraction=1-r.pounceCooldown/(r.abilityCooldownDuration||config.abilityCooldown);
@@ -1098,18 +1218,41 @@
         failedImages.add(path);return false;
       })();
     }
-    function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[],menu=false}={},onProgress=null){if(menu){const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||path.includes('/'+species+'_idle_')));return Promise.all(paths.map(p=>loadImage(p)));} // menu: UI + chosen species only (shared atlas requests; frame-level progress remains compatible). Everything else loads at START or on demand.
-    const animals=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss),...kinds]);const paths=Object.keys(catalog).filter(path=>catalog[path].runtime_enabled!==false&&(!/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)||Array.from(animals).some(id=>path.includes('/'+id+'_'))));let loadedCount=0;const total=paths.length;return Promise.all(paths.map(p=>loadImage(p).then(ok=>{loadedCount++;if(onProgress)onProgress(loadedCount,total);return ok;})));}
-    function evictUnused(stage,species){const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);for(const path of Object.keys(images))if(/(behavior|behavior_native|behavior_injured|species_attacks|avatars|player_full|enemy_full|enemy_animations|enemies|player_combat|corpses)\//.test(path)&&!Array.from(allowed).some(id=>path.includes('/'+id+'_'))){delete images[path];delete frameCanvases[path];delete loading[path];delete skins[path];delete displayURLs[path];delete flashes[path];delete decomposition[path];for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);prepared.delete(path);}for(const file of Object.keys(sheets))if(!Object.values(images).some(image=>image.sheet===sheets[file])){delete sheets[file];delete sheetLoads[file];}}
+    function preload({species=game.run?.species||game.save.selectedSpecies,stage=game.run?.stage||0,kinds=[],menu=false}={},onProgress=null) {
+      // Catalog species includes legacy frames and future asset families as well.
+      const animals=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss),...kinds]);
+      const paths=Object.keys(catalog).filter(path=>{
+        const meta=catalog[path];if(meta.runtime_enabled===false)return false;
+        if(!meta.species)return true;
+        return menu?meta.species===species&&path.includes('/'+species+'_idle_'):animals.has(meta.species);
+      });
+      let loadedCount=0;const total=paths.length;
+      return Promise.all(paths.map(path=>loadImage(path).then(ok=>{
+        loadedCount++;if(onProgress)onProgress(loadedCount,total);return ok;
+      })));
+    }
+    function evictUnused(stage,species) {
+      nightFrames.clear();
+      const allowed=new Set([species,...(C.FEATURES.raptorPack?['velociraptor']:[]),...C.BIOMES[stage].animals,C.STAGES[stage].boss,...C.LEVELS.filter(l=>l.biome===stage).map(l=>l.boss)]);
+      for(const path of Object.keys(images))if(catalog[path]?.species&&!allowed.has(catalog[path].species)) {
+        delete images[path];delete frameCanvases[path];delete loading[path];delete skins[path];
+        delete displayURLs[path];delete flashes[path];delete decomposition[path];
+        for(const key of npcVariants.keys())if(key.startsWith(path+':'))npcVariants.delete(key);
+        prepared.delete(path);
+      }
+      for(const file of Object.keys(sheets))if(!Object.values(images).some(image=>image.sheet===sheets[file])) {
+        delete sheets[file];delete sheetLoads[file];
+      }
+    }
     const querySeed=new URL(location.href).searchParams.get('seed');if(querySeed&&/^\d{1,10}$/.test(querySeed)&&Number(querySeed)<=4294967295)seedInput=querySeed;
     const load = preload({ menu: true }).then(() => { ready = true; renderScreen(true); return true; }).catch(e => { game.phase = 'error'; renderScreen(true); screen.querySelector('.load-error').textContent = e.message; return false; });
-    const api = { telegraphShape: (e, r = game.run) => telegraphShape(r, e), warningLabelY: (e, width = 120, r = game.run) => warningLabelY(r, e, width), preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,atlasSheets:Object.keys(sheets).length,decodedBytes:[...Object.values(sheets),...Object.values(images).filter(i=>!i.sheet),...Object.values(frameCanvases),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values()].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
+    const api = { telegraphShape: (e, r = game.run) => telegraphShape(r, e), warningLabelY: (e, width = 120, r = game.run) => warningLabelY(r, e, width), preload,assetStats:()=>({loaded:Object.keys(images).length,total:Object.keys(catalog).length,atlasSheets:Object.keys(sheets).length,nightFrames:nightFrames.size,lavaTiles:lavaCaches.get(game.run?.map)?.tiles.size||0,decodedBytes:[...Object.values(sheets),...Object.values(images).filter(i=>!i.sheet),...Object.values(frameCanvases),...Object.values(skins),...Object.values(flashes),...Object.values(decomposition),...npcVariants.values(),...nightFrames.values(),...(lavaCaches.get(game.run?.map)?.tiles.values()||[])].reduce((n,i)=>n+i.width*i.height*4,0)}),game, audio, keys, ready: load, update, dispose() { if (disposed) return; disposed = true; cancelAnimationFrame(animationId); cleanups.forEach(f => f()); audio.dispose(); shell.remove(); if (root.primalRun === api) delete root.primalRun; } };
     root.primalRun = api; renderScreen(true); if (!driven) animationId = requestAnimationFrame(frame);
     return api;
   }
   // Normalize actual canvas draws for runtime checks, including atlas crops.
   function drawRecord(image,args) {
-    const path=image.primalFrames&&args.length===8?image.primalFrames[args.slice(0,4).join(',')]:image.spritePath;
+    const path=image.primalDrawPath||(image.primalFrames&&args.length===8?image.primalFrames[args.slice(0,4).join(',')]:image.spritePath);
     if(!path)return {image,args};
     const meta=root.PrimalAssets[path];
     return {image:{src:path,width:meta.size[0],height:meta.size[1],naturalWidth:meta.size[0],naturalHeight:meta.size[1]},args:image.primalFrames?args.slice(4):args};
