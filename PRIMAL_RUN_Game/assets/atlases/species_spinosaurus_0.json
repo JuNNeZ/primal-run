@@ -1,0 +1,72 @@
+{
+  "assets/new_species/spinosaurus_E.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 1,
+    "y": 1
+  },
+  "assets/new_species/spinosaurus_N.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 147,
+    "y": 1
+  },
+  "assets/new_species/spinosaurus_S.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 293,
+    "y": 1
+  },
+  "assets/new_species/spinosaurus_W.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 439,
+    "y": 1
+  },
+  "assets/new_species/spinosaurus_avatar.png": {
+    "anchor": [
+      32,
+      32
+    ],
+    "h": 64,
+    "w": 64,
+    "x": 877,
+    "y": 1
+  },
+  "assets/new_species/spinosaurus_corpse.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1
+  },
+  "assets/new_species/spinosaurus_skeleton.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 731,
+    "y": 1
+  }
+}

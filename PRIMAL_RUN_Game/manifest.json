@@ -178082,5 +178082,2007 @@
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/spinosaurus_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "spinosaurus",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/spinosaurus_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "spinosaurus",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/spinosaurus_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "spinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/spinosaurus_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "spinosaurus",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/spinosaurus_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "spinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/spinosaurus_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "spinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/spinosaurus_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "spinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/allosaurus_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "allosaurus",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/allosaurus_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "allosaurus",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/allosaurus_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "allosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/allosaurus_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "allosaurus",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/allosaurus_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "allosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/allosaurus_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "allosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/allosaurus_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "allosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/stegosaurus_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "stegosaurus",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/stegosaurus_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "stegosaurus",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/stegosaurus_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "stegosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/stegosaurus_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "stegosaurus",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/stegosaurus_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "stegosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/stegosaurus_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "stegosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/stegosaurus_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "stegosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/therizinosaurus_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "therizinosaurus",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/therizinosaurus_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "therizinosaurus",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/therizinosaurus_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "therizinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/therizinosaurus_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "therizinosaurus",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/therizinosaurus_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "therizinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/therizinosaurus_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "therizinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/therizinosaurus_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "therizinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pteranodon_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pteranodon",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pteranodon_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pteranodon",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pteranodon_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pteranodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pteranodon_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pteranodon",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pteranodon_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pteranodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pteranodon_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pteranodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pteranodon_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "pteranodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/microraptor_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "microraptor",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/microraptor_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "microraptor",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/microraptor_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "microraptor",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/microraptor_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "microraptor",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/microraptor_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "microraptor",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/microraptor_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "microraptor",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/microraptor_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "microraptor",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pachyrhinosaurus_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachyrhinosaurus",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pachyrhinosaurus_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachyrhinosaurus",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pachyrhinosaurus_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachyrhinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pachyrhinosaurus_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachyrhinosaurus",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pachyrhinosaurus_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachyrhinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pachyrhinosaurus_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "pachyrhinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/pachyrhinosaurus_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "pachyrhinosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/oviraptor_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "oviraptor",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/oviraptor_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "oviraptor",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/oviraptor_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "oviraptor",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/oviraptor_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "oviraptor",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/oviraptor_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "oviraptor",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/oviraptor_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "oviraptor",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/oviraptor_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "oviraptor",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/dryosaurus_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "dryosaurus",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/dryosaurus_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "dryosaurus",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/dryosaurus_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "dryosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/dryosaurus_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "dryosaurus",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/dryosaurus_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "dryosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/dryosaurus_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "dryosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/dryosaurus_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "dryosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/hypsilophodon_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "hypsilophodon",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/hypsilophodon_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "hypsilophodon",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/hypsilophodon_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "hypsilophodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/hypsilophodon_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "hypsilophodon",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/hypsilophodon_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "hypsilophodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/hypsilophodon_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "hypsilophodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/hypsilophodon_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "hypsilophodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/leaellynasaura_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "leaellynasaura",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/leaellynasaura_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "leaellynasaura",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/leaellynasaura_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "leaellynasaura",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/leaellynasaura_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "leaellynasaura",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/leaellynasaura_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "leaellynasaura",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/leaellynasaura_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "leaellynasaura",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/leaellynasaura_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "leaellynasaura",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/protoceratops_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "protoceratops",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/protoceratops_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "protoceratops",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/protoceratops_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "protoceratops",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/protoceratops_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "protoceratops",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/protoceratops_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "protoceratops",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/protoceratops_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "protoceratops",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/protoceratops_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "protoceratops",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/iguanodon_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "iguanodon",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/iguanodon_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "iguanodon",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/iguanodon_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "iguanodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/iguanodon_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "iguanodon",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/iguanodon_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "iguanodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/iguanodon_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "iguanodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/iguanodon_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "iguanodon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/psittacosaurus_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "psittacosaurus",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/psittacosaurus_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "psittacosaurus",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/psittacosaurus_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "psittacosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/psittacosaurus_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "psittacosaurus",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/psittacosaurus_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "psittacosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/psittacosaurus_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "psittacosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/psittacosaurus_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "psittacosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/edmontosaurus_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "edmontosaurus",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/edmontosaurus_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "edmontosaurus",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/edmontosaurus_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "edmontosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/edmontosaurus_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "edmontosaurus",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/edmontosaurus_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "edmontosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/edmontosaurus_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "edmontosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/edmontosaurus_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "edmontosaurus",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/archelon_S.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "archelon",
+    "status": "prototype_static",
+    "direction": "S",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/archelon_N.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "archelon",
+    "status": "prototype_static",
+    "direction": "N",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/archelon_E.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "archelon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/archelon_W.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "archelon",
+    "status": "prototype_static",
+    "direction": "W",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/archelon_corpse.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "archelon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/archelon_skeleton.png",
+    "size": [
+      144,
+      144
+    ],
+    "origin": [
+      72,
+      72
+    ],
+    "species": "archelon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/archelon_avatar.png",
+    "size": [
+      64,
+      64
+    ],
+    "origin": [
+      32,
+      32
+    ],
+    "species": "archelon",
+    "status": "prototype_static",
+    "direction": "E",
+    "frame_count": 1,
+    "animation_ready": false
+  },
+  {
+    "file": "assets/new_species/ambient/butterfly_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "species": "butterfly",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/butterfly_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "species": "butterfly",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/frog_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "species": "frog",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/frog_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "species": "frog",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/small_mammal_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "species": "small_mammal",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/small_mammal_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "species": "small_mammal",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/firefly_glow_0.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "species": "firefly_glow",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/firefly_glow_1.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "species": "firefly_glow",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/pterosaur_shadow_0.png",
+    "size": [
+      48,
+      48
+    ],
+    "origin": [
+      24,
+      24
+    ],
+    "species": "pterosaur_shadow",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/pterosaur_shadow_1.png",
+    "size": [
+      48,
+      48
+    ],
+    "origin": [
+      24,
+      24
+    ],
+    "species": "pterosaur_shadow",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/millipede_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "species": "millipede",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/millipede_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "species": "millipede",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/ash_ember_0.png",
+    "size": [
+      12,
+      12
+    ],
+    "origin": [
+      6,
+      6
+    ],
+    "species": "ash_ember",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
+  },
+  {
+    "file": "assets/new_species/ambient/ash_ember_1.png",
+    "size": [
+      12,
+      12
+    ],
+    "origin": [
+      6,
+      6
+    ],
+    "species": "ash_ember",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "runtime_enabled": false
   }
 ]

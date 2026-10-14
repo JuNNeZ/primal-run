@@ -10,7 +10,7 @@ GAME = Path(__file__).resolve().parents[1] / 'PRIMAL_RUN_Game'
 CONFIG = Path(__file__).with_name('atlas_config.json')
 ANIMALS = {'behavior','behavior_native','behavior_injured','species_attacks','avatars',
            'player_full','enemy_full','enemy_animations','enemies','player_combat','corpses',
-           'player','player_actions','enemy'}
+           'player','player_actions','enemy','new_species'}
 
 def group_for(entry, config):
     family = entry['file'].split('/')[1]

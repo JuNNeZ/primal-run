@@ -1,7 +1,7 @@
 {
   "result": "PASS",
   "copied_assets": 104,
-  "new_combat_assets": 3573,
+  "new_combat_assets": 3699,
   "byte_identical_to_kit": true,
   "errors": [],
   "production_approved": false,
@@ -9,12 +9,12 @@
   "source_sha256": {
     "src/run_titles.js": "11d200cfe8af66b5555bb7b23e1e676bdd8d80c398d458c967fbd3f0d435d06e",
     "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
-    "src/core.js": "64cfdf9319fbef3bbe55f756754ede89f94f6388e65dd0c8634b35d1d31765da",
+    "src/core.js": "5c3fd92a88ebacd88691e1048949d4bd06f7fd7d5e0b58c9c960858502813226",
     "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
-    "src/lang.js": "564df1c10c35eaf0da3978cab685287a65306a41ce9199046bfe15f53d2e7d91",
-    "src/assets.js": "373b2c8e4f24da6681bab511bfbd359f3eb891c77daae1e747a02dd7ad68b7d4",
-    "src/audio.js": "1b434e95d7062acfedc2e736f105d559b409f2fa82ca7fe65140abd008d6fc69",
-    "src/app.js": "7308394d8c54364b9349199cce1b77549037dc00d33e1b7d47549d1ef9af5099",
-    "style.css": "214f71df08788425ca73695f7b7f44b66beedbe70b1b38d84b4aabc7452ea1f7"
+    "src/lang.js": "3d4863748d86d50ff8a6830397550991b64549075f91dc2002e0c018c940e486",
+    "src/assets.js": "d3014c35a9ea6c1024bb0e66476cfc8a2fb211a1dc30309cd9df96aabcdf531b",
+    "src/audio.js": "4011c9ba813e1e53c780d52a59d26e068b53d783eec2708e56dcfeec856a40ca",
+    "src/app.js": "ded47764fe7bfea35c9c685567920833b516437f4ecc1815b1cb2b022537d12d",
+    "style.css": "8fadea6143cbe1d5d33bc5b35230b5609d6299269d78a4a20bc4391f912f13a8"
   }
 }

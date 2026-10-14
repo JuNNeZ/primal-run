@@ -69,6 +69,8 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       await page.waitForFunction(() => primalRun.game.run.enemies.some(e => e.boss));
       await page.waitForSelector('.boss-hud:not([hidden])');
       await page.evaluate(() => { primalRun.game.run.enemies.find(e => e.boss).hp = 0; });
+      await page.waitForFunction(() => ['cleared','mutation','result'].includes(primalRun.game.phase));
+      if (await page.evaluate(() => primalRun.game.phase === 'mutation')) { assert.ok(await page.evaluate(() => primalRun.game.run.trophySelection), 'a boss kill offers a trophy'); await page.locator('[data-mutation]').first().click(); } // Part C boss trophy
       await page.waitForSelector('[data-action="next"]');
       await page.locator('[data-action="next"]').click();await page.waitForFunction(expected=>primalRun.game.phase==='result'||primalRun.game.run.levelIndex===expected,stage+1);
     }
@@ -86,7 +88,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     assert.equal(await page.evaluate(() => primalRun.game.save.settings.music), .2);
     await page.locator('[data-action="start"]').click();
     await page.locator('[data-action="begin"]').click();await page.waitForFunction(()=>primalRun.game.phase==='playing');
-    assert.equal(await page.evaluate(() => primalRun.game.run.maxHealth), 102);
+    assert.ok(Math.abs(await page.evaluate(() => primalRun.game.run.maxHealth) - 100 * (1 + require('../PRIMAL_RUN_Game/src/core.js').UPGRADE_STEP.health)) < 1e-8);
     await page.evaluate(() => { primalRun.game.run.invulnerable = 0; primalRun.game.damage(9999); });
     await page.waitForSelector('[data-action="shop"]');
     assert.equal(await page.evaluate(() => primalRun.game.save.scores.length), 2);
