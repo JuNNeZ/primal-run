@@ -398,7 +398,7 @@ def main():
         entries[f'assets/run_extras/{name}.png'] = {'kind': kind, 'size': [img.width, img.height], 'origin': list(origin), 'status': 'prototype_static',
                                                     'production_approved': False, 'note': note, 'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
     MANIFEST.write_text(json.dumps({'tool': 'tools/draw_run_extras.py', 'palette': 'Primal Earth 32 (palette.json)', 'rules': 'PRIMAL_RUN_Sprites/SPRITE_RULES.md, PRIMAL_RUN_Game/SPRITE_RULES.md',
-                                    'approval': 'pending Jonas (approval card)', 'assets': entries, 'validation': {'errors': errors, 'result': 'PASS' if not errors else 'FAIL'}}, indent=2, ensure_ascii=False) + '\n')
+                                    'approval': 'Visual style approved by Jonas on the approval card, 2026-10-14. Status stays prototype_static: animation frames (egg hatch, fish jump, bat, streak flame) are not reviewed as animation.', 'assets': entries, 'validation': {'errors': errors, 'result': 'PASS' if not errors else 'FAIL'}}, indent=2, ensure_ascii=False) + '\n')
     preview()
     print(json.dumps({'assets': len(entries), 'errors': errors}))
     if errors:
