@@ -11,7 +11,7 @@ const offer = g => { g.run.xp = g.run.nextXP; g.maybeLevelUp(); assert.equal(g.p
 
 test('every playable species owns five mutations: common, uncommon, rare, epic and legendary', () => {
   for (const id of Object.keys(C.PLAYER_SPECIES)) {
-    const own = C.MUTATIONS.filter(m => m.species === id && !m.evolution);
+    const own = C.MUTATIONS.filter(m => m.species === id && !m.evolution && !m.twist);
     assert.deepEqual(own.map(m => m.rarity).sort(), ['common', 'epic', 'legendary', 'rare', 'uncommon'], id);
     assert.equal(C.MUTATIONS.filter(m => m.species === id && m.evolution).length, 1, id + ' has one species evolution');
   }

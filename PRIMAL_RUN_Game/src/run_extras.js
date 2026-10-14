@@ -35,14 +35,14 @@
   // heal · speed [×k, s] · scare [r, s] · zap: damage in a radius. Only the twists that measured ≥ +0.3 levels,
   // plus a new T. rex twist (bite bonuses did not help it).
   const TWISTS = {
-    parasaurolophus:    { id: 'twistTrumpet',  name: 'Trompetstød',       text: 'Trompetkaldet skræmmer rovdyr inden for # pixels væk i # sek. og heler # liv.', args: [200, 2, 4], icon: 'escape', scare: { r: 200, time: 2 }, heal: 4 },
-    utahraptor:         { id: 'twistButcher',  name: 'Slagterspring',     text: 'Springet gør # skade til alle dyr inden for # pixels.', args: [14, 70], icon: 'serrated_teeth', zap: { r: 70, dmg: 14 } },
+    parasaurolophus:    { id: 'twistTrumpet',  name: 'Trompetstød',       text: 'Trompetkaldet skræmmer rovdyr inden for # pixels i # sek. og heler # liv.', args: [200, 2, 4], icon: 'escape', scare: { r: 200, time: 2 }, heal: 4 },
+    utahraptor:         { id: 'twistButcher',  name: 'Blodigt spring',     text: 'Springet gør # skade til alle dyr inden for # pixels.', args: [14, 70], icon: 'serrated_teeth', zap: { r: 70, dmg: 14 } },
     ankylosaurus:       { id: 'twistClub',     name: 'Halekølle-ladning', text: 'Efter panserstillingen gør dit næste haleslag dobbelt skade inden for # sek.', args: [3], icon: 'bone', empower: [2, 3] },
     gallimimus:         { id: 'twistWindrun',  name: 'Vindløb',           text: 'Sprinten giver +# % fart i # sek. og heler # liv.', args: [25, 3, 6], icon: 'powerful_legs', heal: 6, speed: [1.25, 3] },
     pachycephalosaurus: { id: 'twistConcuss',  name: 'Hjernerystelse',    text: 'Hovedstødet får dyr inden for # pixels til at vakle i # sek.', args: [90, 1], icon: 'bone', aoe: { r: 90, stagger: 1, brk: 20 } },
     allosaurus:         { id: 'twistRend',     name: 'Flænserus',         text: 'Efter stormløbet gør dit næste bid # % mere skade inden for # sek.', args: [60, 3], icon: 'serrated_teeth', empower: [1.6, 3] },
-    deinosuchus:        { id: 'twistDeathgrip',name: 'Dødsgreb',          text: 'Gabstormen får dyr inden for # pixels til at vakle i # sek.', args: [80, 1.2], icon: 'serrated_teeth', aoe: { r: 80, stagger: 1.2, brk: 15 } },
-    deinonychus:        { id: 'twistFeather',  name: 'Fjerdans',          text: 'Efter finten gør dit næste bid # % mere skade inden for # sek.', args: [60, 2], icon: 'escape', empower: [1.6, 2] },
+    deinosuchus:        { id: 'twistDeathgrip',name: 'Knusende greb',          text: 'Gabstormen får dyr inden for # pixels til at vakle i # sek.', args: [80, 1.2], icon: 'serrated_teeth', aoe: { r: 80, stagger: 1.2, brk: 15 } },
+    deinonychus:        { id: 'twistFeather',  name: 'Seglklodans',          text: 'Efter finten gør dit næste bid # % mere skade inden for # sek.', args: [60, 2], icon: 'escape', empower: [1.6, 2] },
     compy:              { id: 'twistSnap',     name: 'Smutbid',           text: 'Efter et smut gør dit næste bid dobbelt skade inden for # sek.', args: [1.5], icon: 'escape', empower: [2, 1.5] },
     triceratops:        { id: 'twistHerdwall', name: 'Flokmur',           text: 'Hornstormen giver # skjold i # sek.', args: [18, 4], icon: 'armor', shield: [18, 4] },
     tyrannosaurus:      { id: 'twistTyrant',   name: 'Tyrannens brøl',    text: 'Brølet giver # skjold i # sek. og heler # liv.', args: [20, 4, 8], icon: 'armor', shield: [20, 4], heal: 8 },
@@ -71,7 +71,7 @@
 
   function install(C) {
     const F = C.FEATURES, G = C.Game.prototype;
-    for (const [flag, on] of Object.entries({ huntStreak: true, powerups: true, abilityTwists: true, ecologyPressure: true, eliteAffixes: true, babyMode: true, circadian: true, amber: true, ambientLife: true, foodTheftCount: true }))
+    for (const [flag, on] of Object.entries({ huntStreak: true, powerups: true, abilityTwists: true, ecologyPressure: true, eliteAffixes: true, babyMode: true, circadian: true, amber: true, ambientLife: true, foodTheftCount: true, glideOver: true, remoteRares: true }))
       if (F[flag] === undefined) F[flag] = on;
     const PREDATOR = kind => !!C.SPECIES[kind] && C.SPECIES[kind].damage > 0 && !C.HERBIVORE_KINDS.has(kind);
     const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
@@ -80,7 +80,9 @@
 
     // Twists are legendary species mutations, so they appear in level-up offers like any other legendary.
     for (const [species, t] of Object.entries(TWISTS)) if (!C.MUTATIONS.some(m => m.id === t.id))
-      C.MUTATIONS.push({ id: t.id, name: t.name, text: t.args.reduce((s, a) => s.replace('#', String(a).replace('.', ',')), t.text), icon: t.icon, max: 1, rarity: 'legendary', species, twist: true });
+      C.MUTATIONS.push({ id: t.id, name: t.name, text: t.args.reduce((s, a) => s.replace('#', String(a).replace('.', ',')), t.text), icon: t.icon, tag: 'ability', max: 1, rarity: 'legendary', species, twist: true });
+    const mutationAvailable = G.mutationAvailable;
+    G.mutationAvailable = function (m) { return (!m.twist || F.abilityTwists) && mutationAvailable.call(this, m); };
     const twistOf = r => { const t = TWISTS[r.species]; return F.abilityTwists && t && r.mutations[t.id] > 0 ? t : null; };
 
     const dayPhase = seconds => { const D = C.DAYNIGHT, t = ((seconds % D.period) + D.period) % D.period; return t < D.dusk ? 'day' : t < D.night ? 'dusk' : t < D.dawn ? 'night' : 'dawn'; };
@@ -101,6 +103,14 @@
     function placeLevelExtras(g) {
       const r = g.run; if (!r || !r.map || !r.map.habitats) return;
       const ground = h => !C.isWater(r.stage, r.map, h, -40) && !(C.isLava && C.isLava(r.stage, r.map, h));
+      // Rare albinos live only in remote areas (idea bank): the rare site moves to the farthest suitable habitat.
+      if (F.remoteRares) for (const site of r.map.sites || []) {
+        const e = site.type === 'rare' && !site.claimed && r.enemies.find(o => o.id === site.animalId); if (!e) continue;
+        const far = r.map.habitats.filter(ground).map(h => g.habitatPosition('parasaurolophus', h)).filter(Boolean)
+          .sort((a, b) => Math.hypot(b.x - r.player.x, b.y - r.player.y) - Math.hypot(a.x - r.player.x, a.y - r.player.y))[0];
+        if (far && Math.hypot(far.x - r.player.x, far.y - r.player.y) > Math.hypot(e.x - r.player.x, e.y - r.player.y)) { site.x = e.x = e.homeX = far.x; site.y = e.y = e.homeY = far.y; }
+      }
+      r.powerups = [];
       if (F.powerups) {
         const spots = r.map.habitats.filter(h => ground(h) && dist(h, r.player) > POWERUP_SPAWN.shrineMinDistance);
         for (let i = 0; i < POWERUP_SPAWN.shrines && spots.length; i++) { const h = spots.splice(Math.floor(g.random() * spots.length), 1)[0]; dropPowerup(g, h.x, h.y, null, true); }
@@ -115,7 +125,7 @@
     function dropPowerup(g, x, y, type, shrine = false) {
       const r = g.run;
       type = type || TEMP_POWERUPS[Math.floor(g.random() * TEMP_POWERUPS.length)];
-      r.pickups.push({ id: ++g.nextId, kind: 'powerup', type, x: Math.round(x), y: Math.round(y), value: 1, shrine });
+      (r.powerups || (r.powerups = [])).push({ id: ++g.nextId, kind: 'powerup', type, x: Math.round(x), y: Math.round(y), value: 1, shrine });
     }
     function applyPowerup(g, p) {
       const r = g.run, x = X(r), def = POWERUPS[p.type]; x.powerups++;
@@ -124,7 +134,7 @@
       else if (p.type === 'comet') { x.comet = 4; x.buffs.comet = def.time; }
       else x.buffs[p.type] = def.time;
       r.effects.push({ x: r.player.x, y: r.player.y - 34, text: def.name.toUpperCase(), color: def.color, life: 1.4 });
-      g.emit('powerup', { type: p.type, shrine: !!p.shrine });
+      g.emit('powerup', { powerup: p.type, shrine: !!p.shrine });
     }
 
     // ---- outgoing damage: streak, rage, baby size, twist empower, comet crits, leech
@@ -165,10 +175,16 @@
       return ok;
     };
 
+    // ---- Pteranodon glides over lava and deep water (idea bank): while the glide ability runs it takes no lava burn,
+    // keeps full speed and may cross into deep water. Landing in deep water just slows it like any non-swimmer.
+    const gliding = (g, entity) => { const r = g.run; return F.glideOver && r && entity === r.player && r.species === 'pteranodon' && r.pounce > 0; };
+    const terrainAt = G.terrainAt;
+    G.terrainAt = function (entity) { const t = terrainAt.call(this, entity); return gliding(this, entity) && (t.kind === 'lava' || t.kind === 'deep') ? { kind: 'air', speed: 1, cover: false } : t; };
     // ---- movement: streak, wind, twist speed, frost, elite swift, crepuscular predators
     const travel = G.travel;
     G.travel = function (entity, dx, dy) {
       const r = this.run;
+      if (gliding(this, entity)) return this.move(entity, dx, dy);
       if (r && r.extras) {
         const x = r.extras;
         if (entity === r.player) {
@@ -277,10 +293,10 @@
       for (const k of Object.keys(x.buffs)) x.buffs[k] = Math.max(0, x.buffs[k] - dt);
       if (x.baby && x.baby.hatch > 0) x.baby.hatch = Math.max(0, x.baby.hatch - dt);
       if (timed(r, 'stamina')) { r.stamina = 100; r.winded = 0; }
-      // Powerups are taken before core collects pickups (core would treat them as healing).
+      // Powerups live in their own list (r.powerups), so meat, thieves and core pickup rules never see them.
       if (F.powerups) {
-        const radius = POWERUP_SPAWN.pickupRadius, taken = r.pickups.filter(p => p.kind === 'powerup' && dist(p, r.player) < radius);
-        if (taken.length) { r.pickups = r.pickups.filter(p => !taken.includes(p)); for (const p of taken) applyPowerup(this, p); }
+        const radius = POWERUP_SPAWN.pickupRadius, taken = (r.powerups || []).filter(p => dist(p, r.player) < radius);
+        if (taken.length) { r.powerups = r.powerups.filter(p => !taken.includes(p)); for (const p of taken) applyPowerup(this, p); }
       }
       if (F.eliteAffixes) for (const e of r.enemies) if (e.elite && !e.affix && !e.boss) {
         e.affix = AFFIX_ORDER[(e.id * 7 + r.levelIndex) % AFFIX_ORDER.length];

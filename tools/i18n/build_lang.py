@@ -13,10 +13,11 @@ from tr_part_c import PART_C
 from tr_species_d import SPECIES_D
 from tr_fun import TLH, SJN
 from tr_input import INPUT
+from tr_extras import EXTRAS
 LANGS = ['en', 'de', 'sv', 'no', 'ja', 'zh']
 dicts = {l: {} for l in LANGS}
 seen = {}
-for row in CORE + UI + RECORDS + PART_B + INPUT + PART_C + SPECIES_D:
+for row in CORE + UI + RECORDS + PART_B + INPUT + PART_C + SPECIES_D + EXTRAS:
     da, *rest = row
     if len(rest) != len(LANGS):
         raise SystemExit(f'Row needs {len(LANGS)} translations: {da}')

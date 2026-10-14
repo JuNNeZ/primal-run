@@ -58,9 +58,13 @@ def build():
         for species, info in art['species'].items():
             for key, file in info['files'].items():
                 manifest.append({'file': file, 'size': info['size'][key], 'origin': info['origin'][key], 'species': species, 'status': 'prototype_static', 'direction': key if key in ('S', 'N', 'E', 'W') else 'E', 'frame_count': 1, 'animation_ready': False})
-        for kind, info in art.get('ambient', {}).items():  # ambient creatures are drawn but not used by the game yet
+        for kind, info in art.get('ambient', {}).items():  # ambient creatures (FEATURES.ambientLife): one shared world bundle, not a species
             for file in info['files']:
-                manifest.append({'file': file, 'size': info['size'], 'origin': [info['size'][0] // 2, info['size'][1] // 2], 'species': kind, 'status': 'prototype_static', 'animation_ready': False, 'runtime_enabled': False})
+                manifest.append({'file': file, 'size': info['size'], 'origin': [info['size'][0] // 2, info['size'][1] // 2], 'ambient': kind, 'atlas_group': 'world_ambient', 'status': 'prototype_static', 'animation_ready': False})
+    extras = GAME / 'run_extras_manifest.json'
+    if extras.exists():  # run extras (tools/draw_run_extras.py): powerups, shrine, badges, egg hatch, ambient animals
+        for file, info in json.loads(extras.read_text(encoding='utf-8'))['assets'].items():
+            manifest.append({'file': file, 'size': info['size'], 'origin': info['origin'], 'atlas_group': 'world_ambient' if info['kind'] == 'ambient' else 'world_run_extras', 'status': 'prototype_static', 'animation_ready': False, 'production_approved': False})
     if len({entry['file'] for entry in manifest}) != len(manifest):
         raise SystemExit('Duplicate resource paths in combined manifest')
     for folder in ('assets', 'sounds', 'Source_Generated'):

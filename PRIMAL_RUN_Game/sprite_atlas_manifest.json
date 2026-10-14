@@ -1,6 +1,6 @@
 {
   "alias_frames": 332,
-  "decoded_bytes": 232425520,
+  "decoded_bytes": 232640896,
   "frames": {
     "assets/a6_hud/dna_chip.png": {
       "anchor": [
@@ -18595,6 +18595,160 @@
       "x": 731,
       "y": 1
     },
+    "assets/new_species/ambient/ash_ember_0.png": {
+      "anchor": [
+        6,
+        6
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 12,
+      "w": 12,
+      "x": 237,
+      "y": 19
+    },
+    "assets/new_species/ambient/ash_ember_1.png": {
+      "anchor": [
+        6,
+        6
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 12,
+      "w": 12,
+      "x": 213,
+      "y": 61
+    },
+    "assets/new_species/ambient/butterfly_0.png": {
+      "anchor": [
+        16,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 101,
+      "y": 1
+    },
+    "assets/new_species/ambient/butterfly_1.png": {
+      "anchor": [
+        16,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 135,
+      "y": 1
+    },
+    "assets/new_species/ambient/firefly_glow_0.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 237,
+      "y": 1
+    },
+    "assets/new_species/ambient/firefly_glow_1.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 195,
+      "y": 61
+    },
+    "assets/new_species/ambient/frog_0.png": {
+      "anchor": [
+        16,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 169,
+      "y": 1
+    },
+    "assets/new_species/ambient/frog_1.png": {
+      "anchor": [
+        16,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 203,
+      "y": 1
+    },
+    "assets/new_species/ambient/millipede_0.png": {
+      "anchor": [
+        16,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 101,
+      "y": 35
+    },
+    "assets/new_species/ambient/millipede_1.png": {
+      "anchor": [
+        16,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 1,
+      "y": 51
+    },
+    "assets/new_species/ambient/pterosaur_shadow_0.png": {
+      "anchor": [
+        24,
+        24
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 48,
+      "w": 48,
+      "x": 1,
+      "y": 1
+    },
+    "assets/new_species/ambient/pterosaur_shadow_1.png": {
+      "anchor": [
+        24,
+        24
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 48,
+      "w": 48,
+      "x": 51,
+      "y": 1
+    },
+    "assets/new_species/ambient/small_mammal_0.png": {
+      "anchor": [
+        16,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 35,
+      "y": 51
+    },
+    "assets/new_species/ambient/small_mammal_1.png": {
+      "anchor": [
+        16,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 135,
+      "y": 35
+    },
     "assets/new_species/archelon_E.png": {
       "anchor": [
         72,
@@ -32732,6 +32886,369 @@
       "x": 259,
       "y": 261
     },
+    "assets/run_extras/affix_armored.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 1,
+      "y": 101
+    },
+    "assets/run_extras/affix_brutal.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 19,
+      "y": 101
+    },
+    "assets/run_extras/affix_regen.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 37,
+      "y": 101
+    },
+    "assets/run_extras/affix_swift.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 55,
+      "y": 101
+    },
+    "assets/run_extras/affix_thorns.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 73,
+      "y": 101
+    },
+    "assets/run_extras/amber_0.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 153,
+      "y": 103
+    },
+    "assets/run_extras/amber_1.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 91,
+      "y": 111
+    },
+    "assets/run_extras/bat_0.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 69,
+      "y": 51
+    },
+    "assets/run_extras/bat_1.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 169,
+      "y": 35
+    },
+    "assets/run_extras/egg_hatch_0.png": {
+      "anchor": [
+        24,
+        40
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 48,
+      "w": 48,
+      "x": 1,
+      "y": 1
+    },
+    "assets/run_extras/egg_hatch_1.png": {
+      "anchor": [
+        24,
+        40
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 48,
+      "w": 48,
+      "x": 51,
+      "y": 1
+    },
+    "assets/run_extras/egg_hatch_2.png": {
+      "anchor": [
+        24,
+        40
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 48,
+      "w": 48,
+      "x": 101,
+      "y": 1
+    },
+    "assets/run_extras/egg_hatch_3.png": {
+      "anchor": [
+        24,
+        40
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 48,
+      "w": 48,
+      "x": 151,
+      "y": 1
+    },
+    "assets/run_extras/egg_hatch_4.png": {
+      "anchor": [
+        24,
+        40
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 48,
+      "w": 48,
+      "x": 201,
+      "y": 1
+    },
+    "assets/run_extras/egg_hatch_5.png": {
+      "anchor": [
+        24,
+        40
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 48,
+      "w": 48,
+      "x": 1,
+      "y": 51
+    },
+    "assets/run_extras/fish_jump_0.png": {
+      "anchor": [
+        12,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 195,
+      "y": 35
+    },
+    "assets/run_extras/fish_jump_1.png": {
+      "anchor": [
+        12,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 221,
+      "y": 35
+    },
+    "assets/run_extras/fish_jump_2.png": {
+      "anchor": [
+        12,
+        16
+      ],
+      "file": "assets/atlases/world_ambient_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 169,
+      "y": 61
+    },
+    "assets/run_extras/powerup_amber.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 169,
+      "y": 51
+    },
+    "assets/run_extras/powerup_comet.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 195,
+      "y": 51
+    },
+    "assets/run_extras/powerup_frost.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 221,
+      "y": 51
+    },
+    "assets/run_extras/powerup_glow_0.png": {
+      "anchor": [
+        16,
+        16
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 101,
+      "y": 51
+    },
+    "assets/run_extras/powerup_glow_1.png": {
+      "anchor": [
+        16,
+        16
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 32,
+      "w": 32,
+      "x": 135,
+      "y": 51
+    },
+    "assets/run_extras/powerup_heart.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 169,
+      "y": 77
+    },
+    "assets/run_extras/powerup_leech.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 195,
+      "y": 77
+    },
+    "assets/run_extras/powerup_rage.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 221,
+      "y": 77
+    },
+    "assets/run_extras/powerup_stamina.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 101,
+      "y": 85
+    },
+    "assets/run_extras/powerup_wind.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 127,
+      "y": 85
+    },
+    "assets/run_extras/shrine.png": {
+      "anchor": [
+        24,
+        38
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 48,
+      "w": 48,
+      "x": 51,
+      "y": 51
+    },
+    "assets/run_extras/streak_flame_0.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 109,
+      "y": 111
+    },
+    "assets/run_extras/streak_flame_1.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 127,
+      "y": 111
+    },
+    "assets/run_extras/time_dawn.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 171,
+      "y": 103
+    },
+    "assets/run_extras/time_dusk.png": {
+      "anchor": [
+        8,
+        8
+      ],
+      "file": "assets/atlases/world_run_extras_0.png",
+      "h": 16,
+      "w": 16,
+      "x": 189,
+      "y": 103
+    },
     "assets/species_attacks/ankylosaurus_attack_E_000.png": {
       "alias_of": "assets/player_full/ankylosaurus_attack_E_000.png",
       "anchor": [
@@ -34933,7 +35450,7 @@
   "max_dimension": 2048,
   "padding": 1,
   "pixels": "unaltered RGBA; no scaling or palette conversion; exact duplicate aliases only",
-  "png_bytes": 8399562,
+  "png_bytes": 8409244,
   "sheets": [
     {
       "file": "assets/atlases/species_allosaurus_0.png",
@@ -35277,6 +35794,28 @@
       "unique_frames": 164
     },
     {
+      "file": "assets/atlases/world_ambient_0.png",
+      "frames": 19,
+      "group": "world_ambient",
+      "sha256": "f6b89455aa4ae9f48c8a79f6da835af866a2c9a42d718fa473786fa82d83079a",
+      "size": [
+        254,
+        86
+      ],
+      "unique_frames": 19
+    },
+    {
+      "file": "assets/atlases/world_run_extras_0.png",
+      "frames": 28,
+      "group": "world_run_extras",
+      "sha256": "7e376efbb1a3c604ed270a7633a95da6c733b06981f32a073157d70650d65225",
+      "size": [
+        250,
+        128
+      ],
+      "unique_frames": 28
+    },
+    {
       "file": "assets/atlases/world_shared_0.png",
       "frames": 60,
       "group": "world_shared",
@@ -35299,6 +35838,6 @@
       "unique_frames": 133
     }
   ],
-  "unique_frames": 2813,
+  "unique_frames": 2860,
   "version": 2
 }

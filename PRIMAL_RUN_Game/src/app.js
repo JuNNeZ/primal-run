@@ -18,7 +18,7 @@
     const shell = document.createElement('div'); shell.className = 'primal-shell';
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
       <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space angriber, Shift bruger evne, F spiser, Escape pauser."></canvas>
-      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
+      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div><div id="extras-chip" class="extras-chip" hidden></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b></div></div>
       <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div></div></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div></main>
       <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space">ANGREB</button><button data-key="ShiftLeft">EVNE</button><button data-key="KeyE">UNDERSØG</button><button data-key="KeyF">SPIS</button><button data-key="KeyQ" class="pack-key" hidden>FLOK</button></div></div>
@@ -107,7 +107,7 @@
           <div class="chosen-dino">${imageTag(C.playerFrame(game.save.selectedSpecies, 'idle', 'S', 0), 'thumb', true)}<div><b>${chosen.name}</b><small>${chosen.skill}</small></div>${button('species', 'Skift art')}</div>
           ${button('start', ready ? 'START JAGTEN <span>→</span>' : 'INDLÆSER…', 'primary')}
           <div class="menu-grid">${button('shop', '⬡ DNA-lab <b>' + game.save.dna + '</b>')}${button('achievements', '★ Bedrifter <b>' + done + '/' + C.ACHIEVEMENTS.length + '</b>')}${button('guide', '❧ Artsbog')}${button('scores', '♛ Rekorder')}${C.FEATURES.dailyHunt ? button('daily', '☀ Dagens jagt <b>' + speciesName(game.dailyHunt().species) + '</b>') : ''}${C.FEATURES.challenges ? button('challenges', '⚔ Udfordringer') : ''}${button('settings', '⚙ Indstillinger')}${button('help', '? Sådan spiller du')}</div>
-          <div class="menu-fields"><label class="name-label">DIT NAVN<input id="player-name" maxlength="20" autocomplete="nickname" value="${htmlEscape(game.save.name)}"></label><label class="name-label">KORT-SEED<input id="map-seed" inputmode="numeric" maxlength="10" placeholder="tilfældigt" value="${htmlEscape(seedInput)}"></label></div>
+          <div class="menu-fields"><label class="name-label">DIT NAVN<input id="player-name" maxlength="20" autocomplete="nickname" value="${htmlEscape(game.save.name)}"></label><label class="name-label">KORT-SEED<input id="map-seed" inputmode="numeric" maxlength="10" placeholder="tilfældigt" value="${htmlEscape(seedInput)}"></label></div>${C.FEATURES.babyMode?`<label class="check baby-toggle"><input type="checkbox" id="baby-hard" ${game.save.settings.babyHard?'checked':''}><span><b>Babystart (svær)</b> <small>Start som nyklækket unge: 60 % liv og 70 % skade, du vokser for hver boss. +50 % DNA.</small></span></label>`:''}
           <a class="patch-link" href="PATCH_NOTES.html?lang=${I18N.lang}" target="_blank" rel="noopener">✦ Nyt i oktober-opdateringen →</a>
           </section>`;
         screen.querySelector('[data-action="start"]').disabled = !ready;
@@ -120,6 +120,7 @@
             <article><span class="intro-warning" aria-hidden="true">▼</span><b>Undvig de røde varsler</b><p>Feltet fyldes op, før angrebet rammer. Gå ud af det i tide.</p></article>
           </div>
           ${(game.pendingChallenges || []).length ? `<div class="intro-challenges"><b>Udfordringer</b> · <b>+${Math.round(100 * C.CHALLENGE_DNA * game.pendingChallenges.length)} % DNA</b><ul>${game.pendingChallenges.map(id => C.CHALLENGES.find(c => c.id === id)).map(c => `<li><b>${c.name}</b> · ${c.text}</li>`).join('')}</ul></div>` : ''}
+          ${C.FEATURES.babyMode&&game.save.settings.babyHard?`<div class="intro-challenges"><b>Babystart (svær)</b> · <b>+50 % DNA</b><ul><li>Start som nyklækket unge: 60 % liv og 70 % skade, du vokser for hver boss.</li></ul></div>`:''}
           <p class="fine">DNA beholdes, når du dør. Mere hjælp under "Sådan spiller du".</p>
           <label class="check skip-intro"><input type="checkbox" id="skip-intro" ${game.save.settings.skipIntro ? 'checked' : ''}> Spring introen over næste gang</label>
           <div class="actions">${button('menu', '← Tilbage')}${button('begin', 'START JAGTEN →', 'primary')}</div></section>`;
@@ -262,7 +263,7 @@
       if(s.longestNoHitSeconds>=30)cells.push(cell('Længste skadefri periode',timeLabel(s.longestNoHitSeconds)));
       const bosses=s.bossKills.map(b=>`<span class="chip">${htmlEscape(b.name||bossName(b.id||b.kind))} ${timeLabel(b.seconds)} ✓</span>`).join('');
       const fresh=picked.fresh.map(titleOf).filter(Boolean).map(t=>`<span class="chip new">✦ ${t.name.da}</span>`).join('');
-      return `<div class="run-card"><p class="run-header"><b>${speciesName(s.species)}</b> · Bane ${s.levelReached}/${r.campaign.length} · ${timeLabel(s.seconds)}</p><p class="run-title rarity-${primary.rarity}">★ ${primary.name.da}</p><p class="run-title-text">${primary.description.da}</p>${secondary.length?`<p class="run-secondary">${secondary.map(t=>t.name.da).join(' · ')}</p>`:''}<div class="stat-grid run-card-grid">${cells.join('')}</div>${bosses?`<p class="chips">${bosses}</p>`:''}${fresh?`<p class="chips"><small>Ny titel</small> ${fresh}</p>`:''}<div class="actions">${button('share-card','Del resultat')}</div></div>`;
+      return `<div class="run-card"><p class="run-header"><b>${speciesName(s.species)}</b> · Bane ${s.levelReached}/${r.campaign.length} · ${timeLabel(s.seconds)}</p><p class="run-title rarity-${primary.rarity}">★ ${primary.name.da}</p><p class="run-title-text">${primary.description.da}</p>${secondary.length?`<p class="run-secondary">${secondary.map(t=>t.name.da).join(' · ')}</p>`:''}<div class="stat-grid run-card-grid">${cells.join('')}</div>${bosses?`<p class="chips">${bosses}</p>`:''}${fresh?`<p class="chips"><small>Ny titel</small> ${fresh}</p>`:''}<div class="actions">${button('share-card','Del resultat')}${button('share-image','Gem billede')}</div></div>`;
     }
     // Plain-text result card for sharing (clipboard only, no network); numbers come from the RunSummary.
     function shareText(r){
@@ -270,6 +271,17 @@
       const cause=s.victory?tr('Jagten er fuldført'):s.abandoned?tr('Opgivet'):tr('Dødsårsag')+': '+tr(s.deathCauseType==='lava'?'Lava':s.deathBossId?bossName(s.deathBossId):C.SPECIES_LABELS[s.deathCauseKind]||'Ingen registreret dræber');
       return ['PRIMAL RUN · ★ '+tr(t.name.da),tr(speciesName(s.species))+' · '+tr('Bane '+s.levelReached+'/'+r.campaign.length)+' · '+timeLabel(s.seconds),
         tr('Nedlæggelser')+' '+s.kills+' · '+tr('Bosser')+' '+s.bosses+' · '+tr('Distance')+' '+C.formatDistance(s.distancePx,I18N.lang),cause,'Seed '+r.seed].join(String.fromCharCode(10));
+    }
+    // PNG result card for "Del resultat" (no network): the share text drawn on a 600×315 canvas with the HUD portrait.
+    function shareImage(r){
+      const lines=shareText(r).split(String.fromCharCode(10));if(!lines[0])return null;
+      const c=document.createElement('canvas');c.width=600;c.height=315;const g=c.getContext('2d');g.imageSmoothingEnabled=false;
+      g.fillStyle='#151b19';g.fillRect(0,0,600,315);g.strokeStyle='#586d38';g.lineWidth=4;g.strokeRect(10,10,580,295);
+      const pc=shell.querySelector('.hud-portrait');if(pc)g.drawImage(pc,32,92,128,128);
+      g.textBaseline='top';g.fillStyle='#e9d9a6';g.font='bold 30px monospace';g.fillText('PRIMAL RUN',32,30);
+      g.fillStyle='#e9b75a';g.font='bold 20px monospace';g.fillText(lines[0].replace(/^PRIMAL RUN · /,''),184,96,384);
+      g.fillStyle='#d8dccd';g.font='15px monospace';lines.slice(1).forEach((l,i)=>g.fillText(l,184,136+i*26,384));
+      return c;
     }
     // Field guide models (FEATURES.guideModels): each seen species walks in place facing east and attacks every ~5 s.
     // Only the frames of discovered species are fetched, on demand (GitHub Pages request budget).
@@ -402,7 +414,7 @@
     }
     function drawTimeIcon(r) {
       const icon = shell.querySelector('.time-icon'), glyph = shell.querySelector('.time-glyph');
-      const path = 'assets/ui/time_' + (r.night ? 'moon' : 'sun') + '.png';
+      const phase = C.FEATURES.circadian && r.dayPhase, path = phase === 'dusk' || phase === 'dawn' ? EXTRA + 'time_' + phase + '.png' : 'assets/ui/time_' + (r.night ? 'moon' : 'sun') + '.png';
       shell.querySelector('.time-value').textContent = timeLabel(r.seconds);
       glyph.textContent = C.FEATURES.dayNight ? (r.night ? '☾ ' : '☀ ') : '';
       const loaded = C.FEATURES.dayNight && presentationReady(path);
@@ -878,6 +890,7 @@
         g.addColorStop(0,'rgba(21,27,25,0)');g.addColorStop(1,'rgba(21,27,25,'+(.62*r.darkness).toFixed(3)+')');
         ctx.save();ctx.globalCompositeOperation='multiply';ctx.fillStyle=g;ctx.fillRect(0,0,w,h);ctx.globalAlpha=.18*r.darkness;ctx.fillStyle='#3c7180';ctx.fillRect(0,0,w,h);ctx.restore();
       }
+      dayRhythmLight(r,w,h);
       if(!calm()){
         ctx.save();
         const count=kind==='rain'?90:kind==='ash'?60:36;
@@ -906,6 +919,69 @@
       ctx.restore();
     }
     const MODE_ICON={fish:['≈','#a2d4c1'],sleep:['z','#a2d4c1'],track:['∴','#ed7869'],rally:['♪','#e9b75a'],drink:['≈','#a2d4c1'],graze:['❀','#b6c0a9'],rest:['z','#b6c0a9'],warning:['!','#e9b75a'],wary:['?','#e9b75a'],flee:['»','#bbd899'],steal:['$','#de954a'],hunt:['♨','#ed7869'],scavenge:['☠','#b6c0a9'],watch:['…','#b6c0a9'],return:['↩','#b6c0a9']};
+    // ---- Run extras (run_extras.js): powerups, shrines, amber, elite badges, egg hatch, day rhythm light and
+    // ambient animals (FEATURES.ambientLife). Display only; positions come from the map, so a seed always looks the same.
+    const EXTRA='assets/run_extras/',AMB='assets/new_species/ambient/';
+    function ambientLife(map,stage){
+      if(map.ambientLife)return map.ambientLife;
+      let seed=(map.seed^0x2c1b3c6d)>>>0;const rnd=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
+      const dry=p=>!C.isWater(stage,map,p,-10)&&!(C.isLava&&C.isLava(stage,map,p));
+      const life={holes:[],frogs:[],millipedes:[],jumps:[],swarms:[],bats:[],shadows:[]};
+      if(stage<3)for(const rock of (map.rocks||[]).filter((_,i)=>i%5===2).slice(0,10)){const p={x:Math.round(rock.x+28),y:Math.round(rock.y+18)};if(dry(p))life.holes.push({...p,phase:rnd()*6});}
+      for(const pond of (map.ponds||[]).slice(0,8)){const a=rnd()*Math.PI*2,d=(pond.radius||60)+8;life.frogs.push({x:Math.round(pond.x+Math.cos(a)*d),y:Math.round(pond.y+Math.sin(a)*d*.7),phase:rnd()*6});}
+      if(stage!==2)for(const h of (map.habitats||[]).filter((_,i)=>i%9===4).slice(0,6))if(dry(h))life.millipedes.push({x:Math.round(h.x-30),y:Math.round(h.y+26),phase:rnd()*6,dir:rnd()<.5?-1:1});
+      for(const s of (map.fishSchools||[]).slice(0,10))life.jumps.push({x:s.x,y:s.y,phase:rnd()*9});
+      if(stage<3)for(const h of (map.habitats||[]).filter((_,i)=>i%6===1).slice(0,7))life.swarms.push({x:h.x,y:h.y-30,phase:rnd()*6});
+      for(const h of (map.habitats||[]).filter((_,i)=>i%7===3).slice(0,6))life.bats.push({x:h.x,y:h.y-60,phase:rnd()*6});
+      if(stage>0)for(let i=0;i<2;i++)life.shadows.push({y:Math.round(map.height*(.3+.4*i)),speed:70+40*rnd(),phase:rnd()*4000});
+      return map.ambientLife=life;
+    }
+    const near=(p,view,m=60)=>p.x>view.x-m&&p.x<view.x+canvas.width+m&&p.y>view.y-m&&p.y<view.y+canvas.height+m;
+    function drawPowerup(p,time){
+      if(p.shrine)sprite(EXTRA+'shrine.png',p.x,p.y+22);
+      const lift=p.shrine?-14:0,bob=calm()?0:Math.round(Math.sin(time*3+p.id)*2);
+      sprite(EXTRA+'powerup_glow_'+(Math.floor(time*4+p.id)%2)+'.png',p.x,p.y+lift+bob);
+      sprite(EXTRA+'powerup_'+p.type+'.png',p.x,p.y+lift+bob);
+      if(game.run&&Math.hypot(p.x-game.run.player.x,p.y-game.run.player.y)<220)label(C.POWERUPS[p.type].name.toUpperCase(),p.x,p.y+lift-22,C.POWERUPS[p.type].color);
+    }
+    function drawGroundExtras(r,view,time){
+      const a=r.amberPiece;
+      if(C.FEATURES.amber&&a&&near(a,view)){const d=Math.hypot(a.x-r.player.x,a.y-r.player.y);
+        if(d<C.AMBER.glint){sprite(EXTRA+'amber_'+(Math.floor(time*1.5)%3===0?1:0)+'.png',a.x,a.y);if(d<C.AMBER.reach+20)label(control('interact')+' · RAV',a.x,a.y-18,'#dfbc52');}
+        else if(Math.floor(time/4)%2===0&&Math.floor(time*8)%8===0)sprite(EXTRA+'amber_1.png',a.x,a.y,.5);} // a faint glint every 4 s
+      if(!C.FEATURES.ambientLife)return;
+      const life=ambientLife(r.map,r.stage),moving=!calm();
+      for(const h of life.holes)if(near(h,view)&&Math.hypot(h.x-r.player.x,h.y-r.player.y)>140&&(time+h.phase)%9<6)sprite(AMB+'small_mammal_'+(moving?Math.floor((time+h.phase)*1.4)%2:0)+'.png',h.x,h.y);
+      if(!(C.FEATURES.drought&&r.drought))for(const f of life.frogs)if(near(f,view)&&Math.hypot(f.x-r.player.x,f.y-r.player.y)>90)sprite(AMB+'frog_'+(moving&&(time+f.phase)%5<1.2?1:0)+'.png',f.x,f.y); // frogs fall silent and hide in a drought
+      for(const m of life.millipedes)if(near(m,view)){const x=m.x+(moving?Math.round(Math.sin((time+m.phase)*.25)*22)*m.dir:0);sprite(AMB+'millipede_'+(moving?Math.floor(time*3+m.phase)%2:0)+'.png',x,m.y);}
+      if(moving)for(const j of life.jumps)if(near(j,view)){const t=(time+j.phase)%9;if(t<.75)sprite(EXTRA+'fish_jump_'+Math.min(2,Math.floor(t/.25))+'.png',j.x+18,j.y-6);}
+    }
+    function drawAirExtras(r,view,time){
+      if(!C.FEATURES.ambientLife||calm())return;
+      const life=ambientLife(r.map,r.stage),dark=r.darkness||0;
+      if(dark<.5)for(const s of life.swarms)if(near(s,view,120))for(let i=0;i<4;i++){const a=(time+s.phase)*.9+i*1.6;sprite(AMB+'butterfly_'+(Math.floor(time*6+i)%2)+'.png',s.x+Math.round(Math.cos(a)*(30+i*8)),s.y+Math.round(Math.sin(a*1.3)*16));}
+      if(dark>.3)for(const b of life.bats)if(near(b,view,160)){const a=(time+b.phase)*1.4;sprite(EXTRA+'bat_'+(Math.floor(time*8+b.phase)%2)+'.png',b.x+Math.round(Math.cos(a)*70),b.y+Math.round(Math.sin(a*2)*24),Math.min(1,dark*1.5));}
+      if(dark>.4&&r.stage<2)for(let i=0;i<14;i++){const x=view.x+((i*331+Math.round(time*6))%canvas.width),y=view.y+((i*197)%canvas.height)+Math.round(Math.sin(time*1.3+i)*8);sprite(AMB+'firefly_glow_'+(Math.floor(time*2+i)%2)+'.png',x,y,dark);}
+      if(r.stage===3)for(let i=0;i<10;i++){const h=canvas.height+40,y=view.y+h-((i*173+Math.round(time*(20+i*3)))%h),x=view.x+((i*409)%canvas.width)+Math.round(Math.sin(time+i)*10);sprite(AMB+'ash_ember_'+(Math.floor(time*4+i)%2)+'.png',x,y,.85);}
+      if(dark<.5)for(const s of life.shadows){const span=r.map.width+400,x=((s.phase+time*s.speed)%span)-200;if(near({x,y:s.y},view,80))sprite(AMB+'pterosaur_shadow_'+(Math.floor(time*2)%2)+'.png',x,s.y,.35);}
+    }
+    // Dusk is warm, dawn is rose; both fade in and out with the darkness ramp on top of the night overlay.
+    function dayRhythmLight(r,w,h){
+      if(!C.FEATURES.circadian||!C.FEATURES.dayNight||!r.dayPhase||r.dayPhase==='day'||r.dayPhase==='night')return;
+      const d=r.darkness||0,k=Math.max(0,1-Math.abs(2*d-1));if(k<=0)return;
+      ctx.save();ctx.globalCompositeOperation='soft-light';ctx.globalAlpha=.5*k;ctx.fillStyle=r.dayPhase==='dusk'?'#de954a':'#bb80d9';ctx.fillRect(0,0,w,h);ctx.restore();
+    }
+    function babyScale(r){const b=r.extras&&r.extras.baby;if(!b)return 1;return C.BABY.scale+(1-C.BABY.scale)*Math.max(0,(b.growth-C.BABY.damage)/(C.BABY.cap-C.BABY.damage));}
+    function drawHatch(r){const b=r.extras&&r.extras.baby;if(!b||!(b.hatch>0))return false;const f=Math.min(5,Math.floor((1-b.hatch/C.BABY.hatch)*6));sprite(EXTRA+'egg_hatch_'+f+'.png',r.player.x,r.player.y,1,false,0,1.5);return f<4;}
+    function drawExtrasHUD(r){
+      const chip=shell.querySelector('#extras-chip');if(!chip)return;
+      const parts=[],stacks=C.streakOf?C.streakOf(r):0;
+      if(stacks>=2)parts.push('<span class="streak">'+tr('JAGTRUS')+' ×'+stacks+'</span>');
+      for(const b of (C.buffsOf?C.buffsOf(r):[]))if(C.POWERUPS[b.type])parts.push('<span style="color:'+C.POWERUPS[b.type].color+'">'+tr(C.POWERUPS[b.type].name)+' '+Math.ceil(b.time)+'s</span>');
+      if(r.extras&&r.extras.baby)parts.push('<span class="baby">'+tr('BABY')+' '+Math.round(100*babyScale(r))+' %</span>');
+      if(r.extras&&r.extras.amber)parts.push('<span class="amber-count">'+tr('RAV')+' '+r.extras.amber+'/'+C.LEVELS.length+'</span>');
+      const html=parts.join(' · ');if(chip.dataset.html!==html){chip.innerHTML=html;chip.dataset.html=html;}chip.hidden=!parts.length;
+    }
     function draw() {
       resize();shell.querySelector('.meat-progress').style.bottom=(shell.querySelector('.run-info').offsetHeight+24)+'px';
       if (!ready) { ctx.fillStyle = '#151b19'; ctx.fillRect(0, 0, canvas.width, canvas.height); return; }
@@ -930,6 +1006,7 @@
           ctx.globalAlpha = 1;
         }
         for (const p of r.decals) { ctx.fillStyle = '#913b32'; ctx.globalAlpha = Math.min(.6, p.life * .25); ctx.fillRect(Math.round(p.x) - 5, Math.round(p.y) - 3, 10, 6); ctx.fillRect(Math.round(p.x) + 6, Math.round(p.y) + 4, 3, 2); } ctx.globalAlpha = 1;
+        for (const p of r.powerups || []) drawPowerup(p, r.seconds);
         for (const p of r.pickups) {
           if (p.kind === 'meat') {
             const rarity = C.MEAT_RARITIES[p.rarity || 0];
@@ -940,6 +1017,7 @@
           sprite(p.kind === 'meat' ? 'assets/pickups/meat.png' : p.kind === 'dna' ? 'assets/pickups/dna_pickup.png' : 'assets/ui/health.png', p.x, p.y);
         }
       }
+      if(r)drawGroundExtras(r,view,r.seconds);
       canvas.dataset.fishingSpots='0';
       if(r)for(const school of map.fishSchools||[])if(C.isWater(stage,map,school,14)){
         if(!C.FEATURES.fishingSpots){if(school.stock>0)sprite('assets/fishing/fish_'+String(Math.floor(r.seconds*4)%4).padStart(3,'0')+'.png',school.x,school.y);continue;}
@@ -986,13 +1064,14 @@
           const state = biting ? 'attack' : a.moving ? (a.mode === 'flee' ? 'run' : 'walk') : 'idle', frame = biting ? Math.min(5, Math.floor((C.PACK.cooldown - a.cooldown) / .05)) : a.moving ? C.locomotionFrame(a.gaitPhase??a.walk,a.hp,a.maxHP) : C.FEATURES.stableIdle?0:Math.floor(r.seconds * 4) % 4;
           objects.push({ x: a.x, y: a.y, radius: a.radius, raptor: a, path: C.playerFrame(a.kind || 'velociraptor', state, dir, frame) });
         }
-        objects.push({ ...p, visualScale:(r.visualScale>1?r.visualScale:['tyrannosaurus','deinosuchus'].includes(r.species)?2:1)*(1+C.GROWTH.scale*(r.growth||0)), player: true, path: playerPath });
+        objects.push({ ...p, visualScale:(r.visualScale>1?r.visualScale:['tyrannosaurus','deinosuchus'].includes(r.species)?2:1)*(1+C.GROWTH.scale*(r.growth||0))*babyScale(r), player: true, path: playerPath, hatching: !!(r.extras&&r.extras.baby&&r.extras.baby.hatch>0) });
       } else objects.push({ x: 780, y: 390, path: C.playerFrame(game.save.selectedSpecies,'idle','S',0) });
       for(let i=objects.length-1;i>=0;i--)if(objects[i].x<view.x-200||objects[i].x>view.x+canvas.width+200||objects[i].y<view.y-200||objects[i].y>view.y+canvas.height+200)objects.splice(i,1);
       objects.sort((a, b) => a.y - b.y);
       for (const o of objects) {
         if (o.x < view.x - 160 || o.y < view.y - 160 || o.x > view.x + canvas.width + 160 || o.y > view.y + canvas.height + 160) continue;
         shadowUnder(o);
+        if (o.hatching && drawHatch(r)) continue;
         if (!C.FEATURES.cleanMarkers && (o.player || o.enemy)) { ctx.strokeStyle = o.player ? '#69a4a0' : o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869aa' : '#8eaa6088'; ctx.lineWidth = o.player ? 3 : 1.5; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), o.player ? 24 : o.enemy.boss ? o.radius + 14 : o.radius + 6, 10, 0, 0, Math.PI * 2); ctx.stroke(); }
         if (!C.FEATURES.cleanMarkers && o.enemy && o.enemy.boss) { ctx.strokeStyle = '#e9b75a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), 35, 17, 0, 0, Math.PI * 2); ctx.stroke(); }
         if (o.edible) { const t = (r ? r.seconds : 0) * 3 + o.x * .01, glow = .45 + .25 * Math.sin(t); ctx.save(); ctx.globalAlpha = glow; ctx.strokeStyle = C.MEAT_RARITIES[o.rarity || 0].color === '#e8ece1' ? '#bbd899' : C.MEAT_RARITIES[o.rarity || 0].color; if(!C.FEATURES.cleanMarkers){ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y) + 2, 20, 8, 0, 0, Math.PI * 2); ctx.stroke();} ctx.globalAlpha = 1; ctx.fillStyle = '#bbd899'; ctx.font = '700 13px monospace'; ctx.textAlign = 'center'; ctx.fillText('❧', Math.round(o.x), Math.round(o.y) - 30 + Math.round(Math.sin(t) * 2)); ctx.restore(); }
@@ -1006,7 +1085,8 @@
             ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(a.x) - 14, Math.round(a.y) + 14, 28, 3); ctx.fillStyle = a.mode === 'flee' ? '#de954a' : '#a2d4c1'; ctx.fillRect(Math.round(a.x) - 14, Math.round(a.y) + 14, Math.round(28 * a.hp / a.maxHP), 3); }
           else if (d < 300) { const fed = r.pickups.some(p => p.corpseId !== undefined && p.value > 0 && Math.hypot(p.x - a.x, p.y - a.y) < C.PACK.meatReach); label(d < 160 && fed ? 'VILD RAPTOR · ' + control('interact') + ' FODR' : d < 160 ? 'VILD RAPTOR · LÆG KØD HER' : 'VILD RAPTOR', a.x, a.y - 44, '#a2d4c1'); } }
         if (o.enemy) { const e = o.enemy, near = r && Math.hypot(e.x - r.player.x, e.y - r.player.y) < 230, special = e.boss || e.elite || e.rare || e.miniboss;
-          if ((special || near) && !menuScene()) label((e.boss ? '◆ ' : e.miniboss ? '☠ ' : e.elite ? '★ ' : e.rare ? '✦ ' : e.damage ? '⚠ ' : '') + (e.rivalName || C.SPECIES_LABELS[e.kind]), o.x, o.y - enemyLabelOffset(e), e.miniboss ? '#e9b75a' : e.damage ? '#ed7869' : '#8eaa60');
+          if ((special || near) && !menuScene()) label((e.boss ? '◆ ' : e.miniboss ? '☠ ' : e.elite ? '★ ' : e.rare ? '✦ ' : e.damage ? '⚠ ' : '') + (e.affix && C.ELITE_AFFIXES ? tr(C.ELITE_AFFIXES[e.affix].name) + ' ' : '') + (e.rivalName || C.SPECIES_LABELS[e.kind]), o.x, o.y - enemyLabelOffset(e), e.affix && C.ELITE_AFFIXES ? C.ELITE_AFFIXES[e.affix].color : e.miniboss ? '#e9b75a' : e.damage ? '#ed7869' : '#8eaa60');
+          if (e.affix && !menuScene()) sprite(EXTRA + 'affix_' + e.affix + '.png', o.x, o.y - enemyLabelOffset(e) - 16);
           const icon = MODE_ICON[e.mode]; if (icon && !e.boss && !(near && /^assets\/behavior(?:_native)?\//.test(o.path) && ['graze','drink','rest','fish'].includes(e.mode))) { ctx.save(); ctx.font = 'bold 14px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713'; const iy = Math.round(o.y - enemyLabelOffset(e) - (special || near ? 16 : 0)); ctx.strokeText(icon[0], Math.round(o.x), iy); ctx.fillStyle = icon[1]; ctx.fillText(icon[0], Math.round(o.x), iy); ctx.restore(); } }
         if (o.enemy && o.enemy.boss) {
           if (o.enemy.mode === 'recover') {
@@ -1021,6 +1101,7 @@
       if(r)for(const c of r.ashClouds||[])if(c.until>r.seconds){if(drawApprovedAsh(c,r))continue;const fade=Math.min(1,c.until-r.seconds);ctx.save();ctx.globalAlpha=.32*fade;ctx.fillStyle='#626861';for(let i=0;i<5;i++){const a=i*1.26+c.x*.01;ctx.beginPath();ctx.arc(c.x+Math.cos(a)*c.radius*.35,c.y+Math.sin(a)*c.radius*.25,c.radius*.55,0,Math.PI*2);ctx.fill();}ctx.restore();} // B1c native ash clouds, with procedural fallback.
       if(r)drawTelegraphs(r);
       if(r&&C.PLAYER_SPECIES[r.species].diet!=='herbivore')for(const food of r.pickups.filter(p=>p.corpseId!==undefined)){const corpse=r.corpses.find(c=>c.id===food.corpseId);if(corpse)label(C.MEAT_RARITIES[food.rarity].symbol+' '+food.value+(corpse.age>=7?' · FORDÆRVER':' · FRISK')+' · '+(inputMode==='touch'?'SPIS':control('eat')+' SPIS'),food.x,food.y+enemyLabelOffset(corpse),C.MEAT_RARITIES[food.rarity].color);}
+      if(r)drawAirExtras(r,view,r.seconds);
       for(const ambient of map.ambience || [])if(ambient.x>view.x-40&&ambient.x<view.x+canvas.width+40&&ambient.y>view.y-40&&ambient.y<view.y+canvas.height+40)insect(ambient,r?r.seconds:0);
       if (r) {
         if (r.species === 'ankylosaurus' && r.pounce > 0) { ctx.strokeStyle='#a2d4c1'; ctx.lineWidth=4; ctx.beginPath(); ctx.arc(Math.round(r.player.x),Math.round(r.player.y),38,0,Math.PI*2); ctx.stroke(); }
@@ -1074,7 +1155,7 @@
       progress.querySelector('small').textContent = Math.max(0, r.nextXP - r.xp) + ' fødeværdi til level ' + (r.level + 1);
       shell.querySelector('#level-label').textContent = 'LEVEL ' + r.level + ' · ' + r.xp + '/' + r.nextXP + ' XP';
       shell.querySelector('#dna-label').textContent = '+' + r.dna + ' DNA · ' + r.kills + ' JAGTER';
-      drawTimeIcon(r); // Approved native HUD art, with the existing glyph as fallback.
+      drawExtrasHUD(r);drawTimeIcon(r); // Approved native HUD art, with the existing glyph as fallback.
       drawA6Controls(r);
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
       shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : control('ability')+' KLAR');
@@ -1106,7 +1187,7 @@
         }
       } else accumulator = 0;
       if (game.phase !== phaseBefore) accumulator = 0;
-      for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast(['FASE 2 · Dobbelt stormløb og tramp!', 'FASE 2 · Hurtigere baghold og stor halebølge!', 'FASE 2 · Dobbelt hornstorm!', 'FASE 2 · Dobbeltbid og brøl!'][game.run.stage]); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if(event.type==='discovery')toast(event.text); if (event.type === 'dna' && !event.quiet) toast('+' + event.amount + ' DNA · gemt'); if(event.type==='achievement')toast('★ ACHIEVEMENT · '+event.name.toUpperCase()+(event.species?' · '+I18N.tf('{0} låst op!',C.PLAYER_SPECIES[event.species].name):event.skin?' · ny farvedragt':' · +'+event.dna+' DNA'));if(event.type==='zone')toast(event.first?'NYT OMRÅDE · '+event.name.toUpperCase()+' · +1 DNA':event.name.toUpperCase()); if(event.type==='boss_break')toast('BRUDT! · Angrib nu'); if(event.type==='winded')toast('FORPUSTET · vent på stamina'); }
+      for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast(['FASE 2 · Dobbelt stormløb og tramp!', 'FASE 2 · Hurtigere baghold og stor halebølge!', 'FASE 2 · Dobbelt hornstorm!', 'FASE 2 · Dobbeltbid og brøl!'][game.run.stage]); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if(event.type==='discovery')toast(event.text); if (event.type === 'dna' && !event.quiet) toast('+' + event.amount + ' DNA · gemt'); if(event.type==='achievement')toast('★ ACHIEVEMENT · '+event.name.toUpperCase()+(event.species?' · '+I18N.tf('{0} låst op!',C.PLAYER_SPECIES[event.species].name):event.skin?' · ny farvedragt':' · +'+event.dna+' DNA'));if(event.type==='zone')toast(event.first?'NYT OMRÅDE · '+event.name.toUpperCase()+' · +1 DNA':event.name.toUpperCase()); if(event.type==='boss_break')toast('BRUDT! · Angrib nu'); if(event.type==='winded')toast('FORPUSTET · vent på stamina'); if(event.type==='powerup'&&C.POWERUPS&&C.POWERUPS[event.powerup])toast(tr(C.POWERUPS[event.powerup].name.toUpperCase())+' · '+tr(C.POWERUPS[event.powerup].text)); if(event.type==='amber')toast(I18N.tf('RAV FUNDET · {0}/{1} · +3 DNA',event.count,C.LEVELS.length)); if(event.type==='day_phase'&&event.phase==='dusk')toast('SKUMRING · Rovdyrene vågner'); if(event.type==='day_phase'&&event.phase==='dawn')toast('DAGGRY · Natten slipper'); if(event.type==='hatch')toast('BABYSTART · Du er lige klækket'); }
       const musicRun=game.run;audio.setScene({phase:game.phase==='build'?'paused':game.phase==='settings'&&returnPhase==='paused'?'paused':game.phase,stage:musicRun?musicRun.stage:0,boss:!!(musicRun&&musicRun.bossSpawned&&!musicRun.bossDefeated),health:musicRun?musicRun.health:1,maxHealth:musicRun?musicRun.maxHealth:1,victory:!!(musicRun&&musicRun.result&&musicRun.result.victory)});audio.sync();
       shell.style.setProperty('--hud-scale',game.save.settings.hudScale);shell.style.setProperty('--text-scale',game.save.settings.textScale);
       renderScreen(); draw();drawEndScene(now);drawGuideModels(now);
@@ -1141,10 +1222,11 @@
       const action = target.dataset.action;
       if (action) e.preventDefault();
       if (action === 'challenge-start' && ready && game.phase === 'challenges' && (game.pendingChallenges || []).length) { seedInput = ''; game.phase = 'intro'; }
-      else if (action === 'start' && ready) { game.setChallenges && game.setChallenges([]); const name = shell.querySelector('#player-name'); if (name) game.setName(name.value);const seed=shell.querySelector('#map-seed');if(seed)seedInput=seed.value.trim();if(seedInput&&!/^\d{1,10}$/.test(seedInput)){toast('Seed skal være et heltal fra 0 til 4294967295');return;}if(Number(seedInput)>4294967295){toast('Seed er for stort');return;}game.phase = 'intro'; if(game.save.settings.skipIntro){renderScreen(true);const begin=screen.querySelector('[data-action="begin"]');if(begin)begin.click();return;} }
+      else if (action === 'start' && ready) { game.setChallenges && game.setChallenges([]); const baby = shell.querySelector('#baby-hard'); if (baby) game.setSetting('babyHard', baby.checked); const name = shell.querySelector('#player-name'); if (name) game.setName(name.value);const seed=shell.querySelector('#map-seed');if(seed)seedInput=seed.value.trim();if(seedInput&&!/^\d{1,10}$/.test(seedInput)){toast('Seed skal være et heltal fra 0 til 4294967295');return;}if(Number(seedInput)>4294967295){toast('Seed er for stort');return;}game.phase = 'intro'; if(game.save.settings.skipIntro){renderScreen(true);const begin=screen.querySelector('[data-action="begin"]');if(begin)begin.click();return;} }
       else if (action === 'begin' && ready && game.phase === 'intro'){const skip=shell.querySelector('#skip-intro');if(skip)game.setSetting('skipIntro',skip.checked);target.disabled=true;try{await preload({species:game.save.selectedSpecies,stage:0},(n,t)=>{target.textContent='Indlæser '+Math.round(100*n/t)+' %';});game.start(seedInput?{seed:Number(seedInput)}:{});}catch(error){console.error(error);toast('Banen kunne ikke starte – prøv igen.');target.disabled=false;target.textContent='Prøv igen';}}
       else if (action === 'daily-start' && ready && game.phase === 'daily') { target.disabled = true; try { await preload({ species: game.dailyHunt().species, stage: 0 }, (n, t) => { target.textContent = 'Indlæser ' + Math.round(100 * n / t) + ' %'; }); game.startDaily(); } catch (error) { console.error(error); toast('Banen kunne ikke starte – prøv igen.'); target.disabled = false; } }
       else if (['shop', 'scores', 'help', 'species','guide','achievements','daily','challenges'].includes(action)) { if (game.phase === 'menu') { const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); } game.phase = action; }
+      else if(action==='share-image'){const c=shareImage(game.run);if(!c){toast('Billedet kunne ikke laves');return;}c.toBlob(blob=>{if(!blob){toast('Billedet kunne ikke laves');return;}const file=new File([blob],'primal-run-'+game.run.seed+'.png',{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[file]}))navigator.share({files:[file],title:'PRIMAL RUN'}).catch(()=>{});else{const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=file.name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);toast('Billede gemt');}},'image/png');}
       else if(action==='share-card'){const text=shareText(game.run);if(navigator.clipboard&&text)navigator.clipboard.writeText(text).then(()=>toast('Resultat kopieret')).catch(()=>toast('Resultatet kunne ikke kopieres'));else toast('Resultatet kunne ikke kopieres');}
       else if(action==='share'){const url=new URL(location.href);url.searchParams.set('seed',game.run.seed);navigator.clipboard?.writeText(url.href).then(()=>toast('Seed-link kopieret')).catch(()=>toast('Markér seed-linket og kopiér det'));if(!navigator.clipboard)toast('Markér seed-linket og kopiér det');}
       else if (action === 'settings') { returnPhase = game.phase === 'paused' ? 'paused' : 'menu'; const name = shell.querySelector('#player-name'); if (name) game.setName(name.value); game.phase = 'settings'; }

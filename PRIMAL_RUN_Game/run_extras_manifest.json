@@ -1,0 +1,507 @@
+{
+  "tool": "tools/draw_run_extras.py",
+  "palette": "Primal Earth 32 (palette.json)",
+  "rules": "PRIMAL_RUN_Sprites/SPRITE_RULES.md, PRIMAL_RUN_Game/SPRITE_RULES.md",
+  "approval": "pending Jonas (approval card)",
+  "assets": {
+    "assets/run_extras/powerup_rage.png": {
+      "kind": "pickup",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Powerup pickup: rage",
+      "sha256": "63500fb1a403d4539c0599baf8228860acbe9471845680fd0c4cde991dc5e798"
+    },
+    "assets/run_extras/powerup_amber.png": {
+      "kind": "pickup",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Powerup pickup: amber",
+      "sha256": "2dd1849001920a45d1a047f91da2bfd8c02e2f9aa351ccb5d531727cbe80e529"
+    },
+    "assets/run_extras/powerup_stamina.png": {
+      "kind": "pickup",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Powerup pickup: stamina",
+      "sha256": "d5df5f13395d558afa395e2e1d3dde00d22eae1a2129f7a44594543885ed1fa0"
+    },
+    "assets/run_extras/powerup_wind.png": {
+      "kind": "pickup",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Powerup pickup: wind",
+      "sha256": "3f30a8907912ab03831f97b9a378f07c9d2eed7e43b8c18615a902d7ad6ab4d1"
+    },
+    "assets/run_extras/powerup_frost.png": {
+      "kind": "pickup",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Powerup pickup: frost",
+      "sha256": "e649cfc64eb35500f9ad4e27857d6d82f8fec2f64847188329044d1aa14a960f"
+    },
+    "assets/run_extras/powerup_comet.png": {
+      "kind": "pickup",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Powerup pickup: comet",
+      "sha256": "6cb00767974d0afbe9474239747d53bfdb22ed0d720e54188b2c84705455a776"
+    },
+    "assets/run_extras/powerup_leech.png": {
+      "kind": "pickup",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Powerup pickup: leech",
+      "sha256": "6a73eaa0818f4004d54d1e72df69a63a3862ce265490d4ee58287d69889a8db4"
+    },
+    "assets/run_extras/powerup_heart.png": {
+      "kind": "pickup",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Powerup pickup: heart",
+      "sha256": "a5a1fe3225c75e060d07a32c128cde3c15c9178b8a7d4e3bf19dd837fa78afdb"
+    },
+    "assets/run_extras/powerup_glow_0.png": {
+      "kind": "vfx",
+      "size": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        16
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Sparkle ring around powerups, 2 frames at 4 fps",
+      "sha256": "b4f8b04cc616b7a891a4afcc97b7870c0c0dac356cb4ba0965bd0839375eb21c"
+    },
+    "assets/run_extras/powerup_glow_1.png": {
+      "kind": "vfx",
+      "size": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        16
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Sparkle ring around powerups, 2 frames at 4 fps",
+      "sha256": "4f241a560b86363dd8bbd0362e39592ccdb0bf21a7f2dc1a61ee160505902fdd"
+    },
+    "assets/run_extras/shrine.png": {
+      "kind": "prop",
+      "size": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        38
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Powerup shrine (one per level); the powerup floats over its top",
+      "sha256": "6bdb115deaf16373d9aa8f401118ee0d0796be6281945d490e2263202fc45bad"
+    },
+    "assets/run_extras/affix_brutal.png": {
+      "kind": "badge",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Elite trait badge: brutal",
+      "sha256": "9a20a62fce0a8a006cfe375e5e4578f83f490a72262cc5373f9c04d84b064b66"
+    },
+    "assets/run_extras/affix_armored.png": {
+      "kind": "badge",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Elite trait badge: armored",
+      "sha256": "2d1e69a5c8043498cee7180df5e84c3c4888805635721da9c6d8006fa7525d6a"
+    },
+    "assets/run_extras/affix_swift.png": {
+      "kind": "badge",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Elite trait badge: swift",
+      "sha256": "2ee84bd51a4a4a95615916fa348a5c1d19bb50ff3a0e5639137788415d03d761"
+    },
+    "assets/run_extras/affix_thorns.png": {
+      "kind": "badge",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Elite trait badge: thorns",
+      "sha256": "4b73db2f9d2ebb904e6f210dab06452c03fb3db0f57a66ac9cfc5ec2606229d8"
+    },
+    "assets/run_extras/affix_regen.png": {
+      "kind": "badge",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Elite trait badge: regen",
+      "sha256": "993810a608d06a78f2cc48a019f8123bb73505dcb0218c21d2c35f531f8cea35"
+    },
+    "assets/run_extras/streak_flame_0.png": {
+      "kind": "hud",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Hunting-streak flame next to the health bar, 2 frames",
+      "sha256": "594ebe567043dcf3492bdb32ea5556e9c20463df2abe6d5f3aa50dde593ac13f"
+    },
+    "assets/run_extras/streak_flame_1.png": {
+      "kind": "hud",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Hunting-streak flame next to the health bar, 2 frames",
+      "sha256": "be9039058b74d03aa8c5a23891d142c69cf9aceb7c0c5e030e3a4cd4e598c9ef"
+    },
+    "assets/run_extras/time_dusk.png": {
+      "kind": "hud",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "HUD clock icon for dusk (pairs with ui/time_sun and ui/time_moon)",
+      "sha256": "48c997343583ebd369e836222cc01bae45ac48eeacc4634d51fd9b61bdb2e4a4"
+    },
+    "assets/run_extras/time_dawn.png": {
+      "kind": "hud",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "HUD clock icon for dawn (pairs with ui/time_sun and ui/time_moon)",
+      "sha256": "bdfb98190e459b491243597b8b8ef7f31fa41c8cb5e80e807d23fc5461262aed"
+    },
+    "assets/run_extras/amber_0.png": {
+      "kind": "pickup",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Hidden amber piece with a trapped insect; frame 1 glints",
+      "sha256": "75be19784cbc2f4ef9d29adf5d4815664f9781cff11b78c413d6834c180a09af"
+    },
+    "assets/run_extras/amber_1.png": {
+      "kind": "pickup",
+      "size": [
+        16,
+        16
+      ],
+      "origin": [
+        8,
+        8
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Hidden amber piece with a trapped insect; frame 1 glints",
+      "sha256": "bb0116cd0a64391f890665ba8c0b50a070d86e7c7a258bc65184ddcd02432fd8"
+    },
+    "assets/run_extras/egg_hatch_0.png": {
+      "kind": "vfx",
+      "size": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        40
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Hard baby start: egg hatching at run start, 6 frames at 4 fps",
+      "sha256": "3449c6a5a909d4a6a3cbec55fbaa874ef7a9760efe579b2b8040a7c7cd368f46"
+    },
+    "assets/run_extras/egg_hatch_1.png": {
+      "kind": "vfx",
+      "size": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        40
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Hard baby start: egg hatching at run start, 6 frames at 4 fps",
+      "sha256": "67178f7accc5516e2476e31b00d3e6573e67a48e4a84a3f24e256141c420aff1"
+    },
+    "assets/run_extras/egg_hatch_2.png": {
+      "kind": "vfx",
+      "size": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        40
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Hard baby start: egg hatching at run start, 6 frames at 4 fps",
+      "sha256": "29dcb3798e344c3d79cae63442a46b76926cdfeaafc0f37c9d555f3ac0b3f26e"
+    },
+    "assets/run_extras/egg_hatch_3.png": {
+      "kind": "vfx",
+      "size": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        40
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Hard baby start: egg hatching at run start, 6 frames at 4 fps",
+      "sha256": "197777f72168e2b4ccb1360cbcc6f738663de5938c12bbb9487af1a3fac837a7"
+    },
+    "assets/run_extras/egg_hatch_4.png": {
+      "kind": "vfx",
+      "size": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        40
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Hard baby start: egg hatching at run start, 6 frames at 4 fps",
+      "sha256": "2fa8f918a7da46e556986675c63a36eb27c85ca899be36acff9b4ad3a466c8b9"
+    },
+    "assets/run_extras/egg_hatch_5.png": {
+      "kind": "vfx",
+      "size": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        40
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Hard baby start: egg hatching at run start, 6 frames at 4 fps",
+      "sha256": "58972894a7a9da333887992a45bec274076807752a0226533979482c5fee8267"
+    },
+    "assets/run_extras/fish_jump_0.png": {
+      "kind": "ambient",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        16
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Ambient fish jumping in ponds and rivers, 3 frames",
+      "sha256": "f31f2677cc371ee53a6944471735ffcd2d4ff2affcbc303c9051b1d98df9a745"
+    },
+    "assets/run_extras/fish_jump_1.png": {
+      "kind": "ambient",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        16
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Ambient fish jumping in ponds and rivers, 3 frames",
+      "sha256": "8d3e2493e86e286f0727891bdcbc5dc9ce4a314f206336db0e40fc610d1951d3"
+    },
+    "assets/run_extras/fish_jump_2.png": {
+      "kind": "ambient",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        16
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Ambient fish jumping in ponds and rivers, 3 frames",
+      "sha256": "59a6217f684520303acda863e7e63030acbc631775dcf528b6d4dd022e837847"
+    },
+    "assets/run_extras/bat_0.png": {
+      "kind": "ambient",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Ambient bat at dusk and night, 2 frames",
+      "sha256": "5f18d06b19cb9964f4a1c06e96f5b6ef1fee64de462931fdf30136bf87aa9005"
+    },
+    "assets/run_extras/bat_1.png": {
+      "kind": "ambient",
+      "size": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Ambient bat at dusk and night, 2 frames",
+      "sha256": "de4c16bd8e0171f29a37aa28e5eb0a230f8e671f67ddfcd304ec0e75ef861320"
+    }
+  },
+  "validation": {
+    "errors": [],
+    "result": "PASS"
+  }
+}

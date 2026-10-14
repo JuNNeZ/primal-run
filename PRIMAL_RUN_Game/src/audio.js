@@ -122,7 +122,7 @@
         const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
         const osc = c.createOscillator(), gain = c.createGain(), t = c.currentTime; osc.type = 'sawtooth'; osc.frequency.setValueAtTime(event === 'boss_enrage' ? 95 : 70, t); osc.frequency.exponentialRampToValueAtTime(32, t + .32); gain.gain.setValueAtTime(.06, t); gain.gain.exponentialRampToValueAtTime(.0001, t + .35); osc.connect(gain); gain.connect(this.effects); osc.start(t); osc.stop(t + .36); osc.onended = () => { osc.disconnect(); gain.disconnect(); }; return;
       }
-      const names = { bite: 'bite', hit: 'hit', pickup: 'pickup', dna: 'pickup', pounce: 'pounce', level_up: 'level_up', death: 'death', ui: 'ui_select', boss: 'meteor', boss_dead: 'level_up', victory: 'level_up', stage: 'ui_select', start: 'ui_select', egg: 'pickup', growth: 'level_up', mastery: 'level_up', ally_call: 'pounce', pack_command: 'ui_select' };
+      const names = { bite: 'bite', hit: 'hit', pickup: 'pickup', dna: 'pickup', pounce: 'pounce', level_up: 'level_up', death: 'death', ui: 'ui_select', boss: 'meteor', boss_dead: 'level_up', victory: 'level_up', stage: 'ui_select', start: 'ui_select', egg: 'pickup', growth: 'level_up', mastery: 'level_up', ally_call: 'pounce', pack_command: 'ui_select', powerup: 'level_up', amber: 'pickup', hatch: 'pounce', twist: 'pounce' };
       const name = names[event]; if (!name || this.settings.master * this.settings.sfx === 0 || this.active.size > 8) return;
       const audio = new Audio(this.resolve('sounds/' + name + '.wav')); audio.volume = this.settings.master * this.settings.sfx;
       this.active.add(audio);

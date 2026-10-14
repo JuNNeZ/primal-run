@@ -179885,10 +179885,10 @@
       16,
       16
     ],
-    "species": "butterfly",
+    "ambient": "butterfly",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/butterfly_1.png",
@@ -179900,10 +179900,10 @@
       16,
       16
     ],
-    "species": "butterfly",
+    "ambient": "butterfly",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/frog_0.png",
@@ -179915,10 +179915,10 @@
       16,
       16
     ],
-    "species": "frog",
+    "ambient": "frog",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/frog_1.png",
@@ -179930,10 +179930,10 @@
       16,
       16
     ],
-    "species": "frog",
+    "ambient": "frog",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/small_mammal_0.png",
@@ -179945,10 +179945,10 @@
       16,
       16
     ],
-    "species": "small_mammal",
+    "ambient": "small_mammal",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/small_mammal_1.png",
@@ -179960,10 +179960,10 @@
       16,
       16
     ],
-    "species": "small_mammal",
+    "ambient": "small_mammal",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/firefly_glow_0.png",
@@ -179975,10 +179975,10 @@
       8,
       8
     ],
-    "species": "firefly_glow",
+    "ambient": "firefly_glow",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/firefly_glow_1.png",
@@ -179990,10 +179990,10 @@
       8,
       8
     ],
-    "species": "firefly_glow",
+    "ambient": "firefly_glow",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/pterosaur_shadow_0.png",
@@ -180005,10 +180005,10 @@
       24,
       24
     ],
-    "species": "pterosaur_shadow",
+    "ambient": "pterosaur_shadow",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/pterosaur_shadow_1.png",
@@ -180020,10 +180020,10 @@
       24,
       24
     ],
-    "species": "pterosaur_shadow",
+    "ambient": "pterosaur_shadow",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/millipede_0.png",
@@ -180035,10 +180035,10 @@
       16,
       16
     ],
-    "species": "millipede",
+    "ambient": "millipede",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/millipede_1.png",
@@ -180050,10 +180050,10 @@
       16,
       16
     ],
-    "species": "millipede",
+    "ambient": "millipede",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/ash_ember_0.png",
@@ -180065,10 +180065,10 @@
       6,
       6
     ],
-    "species": "ash_ember",
+    "ambient": "ash_ember",
+    "atlas_group": "world_ambient",
     "status": "prototype_static",
-    "animation_ready": false,
-    "runtime_enabled": false
+    "animation_ready": false
   },
   {
     "file": "assets/new_species/ambient/ash_ember_1.png",
@@ -180080,9 +180080,504 @@
       6,
       6
     ],
-    "species": "ash_ember",
+    "ambient": "ash_ember",
+    "atlas_group": "world_ambient",
+    "status": "prototype_static",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/run_extras/powerup_rage.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "atlas_group": "world_run_extras",
     "status": "prototype_static",
     "animation_ready": false,
-    "runtime_enabled": false
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/powerup_amber.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/powerup_stamina.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/powerup_wind.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/powerup_frost.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/powerup_comet.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/powerup_leech.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/powerup_heart.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/powerup_glow_0.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/powerup_glow_1.png",
+    "size": [
+      32,
+      32
+    ],
+    "origin": [
+      16,
+      16
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/shrine.png",
+    "size": [
+      48,
+      48
+    ],
+    "origin": [
+      24,
+      38
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/affix_brutal.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/affix_armored.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/affix_swift.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/affix_thorns.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/affix_regen.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/streak_flame_0.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/streak_flame_1.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/time_dusk.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/time_dawn.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/amber_0.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/amber_1.png",
+    "size": [
+      16,
+      16
+    ],
+    "origin": [
+      8,
+      8
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/egg_hatch_0.png",
+    "size": [
+      48,
+      48
+    ],
+    "origin": [
+      24,
+      40
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/egg_hatch_1.png",
+    "size": [
+      48,
+      48
+    ],
+    "origin": [
+      24,
+      40
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/egg_hatch_2.png",
+    "size": [
+      48,
+      48
+    ],
+    "origin": [
+      24,
+      40
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/egg_hatch_3.png",
+    "size": [
+      48,
+      48
+    ],
+    "origin": [
+      24,
+      40
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/egg_hatch_4.png",
+    "size": [
+      48,
+      48
+    ],
+    "origin": [
+      24,
+      40
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/egg_hatch_5.png",
+    "size": [
+      48,
+      48
+    ],
+    "origin": [
+      24,
+      40
+    ],
+    "atlas_group": "world_run_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/fish_jump_0.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      16
+    ],
+    "atlas_group": "world_ambient",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/fish_jump_1.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      16
+    ],
+    "atlas_group": "world_ambient",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/fish_jump_2.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      16
+    ],
+    "atlas_group": "world_ambient",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/bat_0.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "atlas_group": "world_ambient",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/run_extras/bat_1.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "atlas_group": "world_ambient",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
   }
 ]
