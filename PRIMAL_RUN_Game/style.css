@@ -173,3 +173,18 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
   .primal-shell[data-input="touch"][data-phase="playing"] .meat-progress{padding:4px 8px;font-size:9px}
   .primal-shell[data-input="touch"][data-phase="playing"] .joystick{width:118px;height:118px;flex-basis:118px}
 }
+
+/* Hidden admin panel (src/admin.js): developer tool, only after the secret tap code. */
+.admin-fab{position:fixed;left:8px;bottom:8px;z-index:9998;padding:4px 8px;font:700 11px/1 monospace;color:#fff;background:#8d2028;border:2px solid #edd0a0;border-radius:6px;opacity:.85;cursor:pointer}
+.admin-panel{position:fixed;inset:auto 8px 44px 8px;max-width:520px;max-height:min(78vh,640px);overflow:auto;z-index:9999;padding:10px 12px;color:#edd0a0;background:#14241ce6;border:2px solid #8d2028;border-radius:10px;font:13px/1.35 system-ui,sans-serif;box-shadow:0 8px 24px #0009}
+.admin-panel[hidden]{display:none}
+.admin-panel header{display:flex;gap:8px;align-items:center;margin-bottom:6px}
+.admin-panel header span{flex:1;font-size:11px;opacity:.8}
+.admin-panel header button{min-width:32px;min-height:32px;font-size:20px}
+.admin-panel h3{margin:8px 0 4px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#dfbc52}
+.admin-panel section{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.admin-panel h3{flex-basis:100%}
+.admin-panel button,.admin-panel select{min-height:34px;padding:4px 10px;font:inherit;color:#14241c;background:#edd0a0;border:0;border-radius:6px;cursor:pointer}
+.admin-panel label{display:flex;gap:4px;align-items:center}
+.admin-panel button[data-admin=off]{background:#c6663c;color:#fff}
+.admin-log{min-height:1.4em;margin:8px 0 0;color:#a2d4c1}

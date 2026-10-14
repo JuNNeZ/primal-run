@@ -376,7 +376,7 @@
     };
 
     // Exposed for the renderer, the HUD and tests.
-    Object.assign(C, { PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, BABY, CIRCADIAN, AMBER, dayPhase,
+    Object.assign(C, { PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
       extrasOf: r => r && r.extras || null,
       streakOf: r => (r && r.extras && F.huntStreak ? r.extras.streak : 0),
       buffsOf: r => (r && r.extras ? Object.entries(r.extras.buffs).filter(([, t]) => t > 0).map(([type, time]) => ({ type, time })) : []) });
