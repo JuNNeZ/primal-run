@@ -297,7 +297,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     lowHPPct: +(100 * m.lowHPTime / Math.max(r.seconds, 1e-6)).toFixed(1), eatingPct: +(100 * m.eatingTime / Math.max(r.seconds, 1e-6)).toFixed(1),
     stuckSeconds: +m.stuckTime.toFixed(1), plantsEaten: st.plantsEaten, fishCaught: st.fishCaught, exploration: r.exploration,
     allies: (r.partB && r.partB.alliesRecruited) || 0, nightKills: (r.partB && r.partB.nightKills) || 0,
-    exp: st.exp || null, rerolls: st.rerolls || 0, ownSpecies: Object.entries(r.mutations).filter(([id, v]) => v && (C.MUTATIONS.find(x => x.id === id) || {}).species === r.species).reduce((s, [, v]) => s + v, 0), distanceKm: +(st.distance / 1000).toFixed(2), mutations: Object.fromEntries(Object.entries(r.mutations).filter(([, v]) => v)),
+    exp: st.exp || null, extras: r.extras ? { streakMax: r.extras.streakMax || 0, powerups: r.extras.powerups, twists: r.extras.twists, guests: r.extras.guests, defenders: r.extras.defenders, trails: r.extras.trails, amber: r.extras.amber, nightKills: r.extras.nightKills, baby: !!r.extras.baby } : null, rerolls: st.rerolls || 0, ownSpecies: Object.entries(r.mutations).filter(([id, v]) => v && (C.MUTATIONS.find(x => x.id === id) || {}).species === r.species).reduce((s, [, v]) => s + v, 0), distanceKm: +(st.distance / 1000).toFixed(2), mutations: Object.fromEntries(Object.entries(r.mutations).filter(([, v]) => v)),
   };
 }
 
