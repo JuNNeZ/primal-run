@@ -71,7 +71,7 @@
 
   function install(C) {
     const F = C.FEATURES, G = C.Game.prototype;
-    for (const [flag, on] of Object.entries({ huntStreak: true, powerups: true, abilityTwists: true, ecologyPressure: true, eliteAffixes: true, babyMode: true, circadian: true, amber: true, ambientLife: true, foodTheftCount: true, glideOver: true, remoteRares: true }))
+    for (const [flag, on] of Object.entries({ huntStreak: true, powerups: true, abilityTwists: true, ecologyPressure: true, eliteAffixes: true, babyMode: true, circadian: true, amber: true, ambientLife: true, foodTheftCount: true, glideOver: true, remoteRares: true, packLimits: true }))
       if (F[flag] === undefined) F[flag] = on;
     const PREDATOR = kind => !!C.SPECIES[kind] && C.SPECIES[kind].damage > 0 && !C.HERBIVORE_KINDS.has(kind);
     const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
@@ -175,6 +175,14 @@
       return ok;
     };
 
+    // ---- Raptor pack per species (FEATURES.packLimits): how many wild velociraptors a species can recruit.
+    // Species not listed keep PACK.max. Numbers come from paired sims with and without the raptor pack.
+    const PACK_LIMITS = {};
+    const feedRaptor = G.feedRaptor;
+    if (feedRaptor) G.feedRaptor = function () {
+      const r = this.run, P = C.PACK, max = P.max, limit = F.packLimits && r && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : max;
+      P.max = Math.min(max, limit); try { return feedRaptor.apply(this, arguments); } finally { P.max = max; }
+    };
     // ---- Pteranodon glides over lava and deep water (idea bank): while the glide ability runs it takes no lava burn,
     // keeps full speed and may cross into deep water. Landing in deep water just slows it like any non-swimmer.
     const gliding = (g, entity) => { const r = g.run; return F.glideOver && r && entity === r.player && r.species === 'pteranodon' && r.pounce > 0; };
@@ -365,7 +373,7 @@
     };
 
     // Exposed for the renderer, the HUD and tests.
-    Object.assign(C, { STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, BABY, CIRCADIAN, AMBER, dayPhase,
+    Object.assign(C, { PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, BABY, CIRCADIAN, AMBER, dayPhase,
       extrasOf: r => r && r.extras || null,
       streakOf: r => (r && r.extras && F.huntStreak ? r.extras.streak : 0),
       buffsOf: r => (r && r.extras ? Object.entries(r.extras.buffs).filter(([, t]) => t > 0).map(([type, time]) => ({ type, time })) : []) });

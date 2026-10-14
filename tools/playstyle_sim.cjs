@@ -155,7 +155,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     const tracker = (C.FEATURES || {}).scentTrails ? nearest(r.enemies.filter(e => e.activity === 'track' && dist(e) < 500)) : null;
     if (tracker && (S.sneak || S.dodge > .5) && hpFrac < .6) { const dx = p.x - tracker.x, dy = p.y - tracker.y, n = Math.hypot(dx, dy) || 1; return { ...steer(p.x + dx / n * 200, p.y + dy / n * 200), sneak: true }; }
     // B5: feed a wild raptor when meat lies next to it (careful and exploring players recruit up to 2).
-    if ((C.FEATURES || {}).raptorPack && (S.explore || S.dodge > .5) && (r.raptors || []).filter(a => a.ally).length < C.PACK.max && !hostile.length) {
+    if ((C.FEATURES || {}).raptorPack && (S.explore || S.dodge > .5) && (r.raptors || []).filter(a => a.ally).length < (C.packLimitOf ? C.packLimitOf(r) : C.PACK.max) && !hostile.length) {
       const wild = nearest((r.raptors || []).filter(a => !a.ally && dist(a) < 500 && r.pickups.some(f => f.corpseId !== undefined && f.value > 0 && Math.hypot(f.x - a.x, f.y - a.y) < C.PACK.meatReach)));
       if (wild) return dist(wild) < C.PACK.feedReach - 10 ? { interact: true } : steer(wild.x, wild.y);
     }
