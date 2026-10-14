@@ -176,8 +176,11 @@
     };
 
     // ---- Raptor pack per species (FEATURES.packLimits): how many wild velociraptors a species can recruit.
-    // Species not listed keep PACK.max. Numbers come from paired sims with and without the raptor pack.
-    const PACK_LIMITS = {};
+    // Species not listed keep PACK.max (2). Jonas chose "by strength" (2026-10-14): the strongest species in the
+    // 420-run sim (Spinosaurus mean level 6.6; Baryonyx, Ankylosaurus, Pteranodon, Therizinosaurus, Allosaurus
+    // 4.4-5.1) get 0-1 raptors. The sim bots rarely recruit (0-0.2 allies a run), so the measured lift is noise;
+    // the cap guards against human players stacking a pack on an already strong species.
+    const PACK_LIMITS = { spinosaurus: 0, baryonyx: 1, ankylosaurus: 1, pteranodon: 1, therizinosaurus: 1, allosaurus: 1 };
     const feedRaptor = G.feedRaptor;
     if (feedRaptor) G.feedRaptor = function () {
       const r = this.run, P = C.PACK, max = P.max, limit = F.packLimits && r && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : max;

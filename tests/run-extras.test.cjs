@@ -81,3 +81,15 @@ test('rare albinos are moved to the most remote suitable habitat', () => {
   for (const h of r.map.habitats) { const p = g.habitatPosition('parasaurolophus', h); if (p && !C.isWater(r.stage, r.map, p, -40)) assert.ok(Math.hypot(p.x - r.player.x, p.y - r.player.y) <= d + 1); }
   assert.equal(site.x, e.x);
 });
+
+test('raptor pack is capped by species strength: Spinosaurus recruits none, Baryonyx one, Velociraptor two', () => {
+  const recruits = species => {
+    const g = make(species, 3), r = g.run; r.invulnerable = 1e9; let n = 0;
+    for (const a of r.raptors.slice(0, 2)) { Object.assign(r.player, { x: a.x + 50, y: a.y }); r.pickups.push({ id: 9100 + n, kind: 'meat', corpseId: 77, value: 3, x: a.x + 20, y: a.y + 10 }); g.step(1 / 30, { interact: true }); n++; }
+    return r.raptors.filter(a => a.ally).length;
+  };
+  assert.equal(C.PACK.max, 2);
+  assert.deepEqual([recruits('spinosaurus'), recruits('baryonyx'), recruits('velociraptor')], [0, 1, 2]);
+  assert.equal(C.packLimitOf({ species: 'spinosaurus' }), 0); assert.equal(C.packLimitOf({ species: 'compy' }), 2);
+  assert.equal(C.PACK.max, 2, 'the cap is restored after each feed');
+});
