@@ -99,6 +99,7 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .species-card header{display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
 .species-price,.species-diet{padding:3px 7px;border:1px solid #50623d;border-radius:3px;background:#172019;white-space:nowrap}
 .species-price{color:#c3a35c;border-color:#c3a35c88}.free-price{color:#69a4a0;border-color:#69a4a088}.achievement-price{color:#e5b55b}
+.wip-badge{display:inline-block;margin-left:6px;padding:2px 7px;border:1px solid #e5b55b;border-radius:3px;background:#3a2a10;color:#f0c46a;font-size:12px;font-weight:700;letter-spacing:.08em;vertical-align:middle;white-space:nowrap}
 .species-diet{color:#b6c0a9}.diet-herbivore{color:#9cc27a}.diet-omnivore{color:#d5c499}.diet-piscivore{color:#7fb3c8}.diet-carnivore{color:#d88a6a}
 .species-card h2{margin:6px 0 0;text-align:center}
 .species-grid .species-card p.species-role{margin:2px 0 8px;text-align:center;color:#c3a35c;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
