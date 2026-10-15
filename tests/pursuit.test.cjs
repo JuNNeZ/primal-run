@@ -21,7 +21,8 @@ test('prey ignore a still distant observer, flee a moving hunter until out of si
  const g=game(),r=g.run,e=g.spawn('parasaurolophus',{x:680,y:340});r.player.moving=false;g.enemyStep(e,.05);assert.notEqual(e.mode,'flee');
  r.player.moving=true;g.enemyStep(e,.05);assert.equal(e.mode,'flee');assert.ok(e.x>680);
  r.player.moving=false;for(let i=0;i<20;i++)g.enemyStep(e,.05);assert.equal(e.mode,'flee','keeps running while it can still see you');
- for(let i=0;i<400&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<480;i++)g.enemyStep(e,.05);assert.ok(Math.hypot(e.x-r.player.x,e.y-r.player.y)>=470);
+ for(let i=0;i<400&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<480;i++)g.enemyStep(e,.05);assert.equal(e.mode,'flee','hysteresis: does not stop right at the sight edge');
+ for(let i=0;i<400&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<480*1.15;i++)g.enemyStep(e,.05);assert.ok(Math.hypot(e.x-r.player.x,e.y-r.player.y)>=545);
  g.enemyStep(e,.05);assert.equal(e.mode,'wary','remembers the threat after losing sight');
  r.seconds=e.fleeUntil+1;g.enemyStep(e,.05);assert.ok(['graze','rest','roam'].includes(e.mode));
  const h=game('triceratops'),p=h.spawn('parasaurolophus',{x:600,y:340});h.run.player.moving=true;h.enemyStep(p,.05);assert.notEqual(p.mode,'flee','herbivore player is no threat');

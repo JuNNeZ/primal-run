@@ -8,7 +8,7 @@
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
   // Run extras (streak, powerups, twists, ecology pressure, elite traits, baby start, day rhythm, amber) live in run_extras.js.
   const EXTRAS = (typeof module === 'object' && module.exports ? require('./run_extras.js') : globalThis.PrimalExtras) || null;
-  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,bossLook:true,combatColors:true};
+  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true};
   // A6: display-only moonlight ramp, entirely within Primal Earth 32.
   FEATURES.nightPalette = true;
   FEATURES.hudIcons = true;
@@ -164,6 +164,7 @@
     if (!BIOMES[stage].animals.includes(kind) && STAGES[stage].boss!==kind) return false;
     const distance=riverDistance(map,p);
     if(stage===3 && distance<90) return false; // No animals spawn in lava.
+    if(FEATURES.npcSteering&&!canSwim({kind,radius:SPECIES[kind]?.radius||0})&&(map.ponds||[]).some(pond=>pondContains(pond,p,-12)))return false; // nor non-swimmers in a pond
     if(stage===1) return kind==='deinosuchus'||kind==='archelon' ? distance>=38 && distance<=135 : kind==='baryonyx'?distance>=58&&distance<=175:distance>=85;
     return kind!=='deinosuchus'&&kind!=='archelon';
   }
@@ -680,7 +681,10 @@
         this.spawn(kind,point);break;
       }
       // Small thieves gather in actual independently colliding flocks.
-      for(const centre of r.map.habitats.filter((_,i)=>i%4===0).slice(0,r.secret?6:3))for(let n=0;n<6;n++){const angle=n*Math.PI/3,point={x:centre.x+Math.cos(angle)*24,y:centre.y+Math.sin(angle)*24};if(!suitableHabitat(r.stage,r.map,'compy',point))continue;const e=this.spawn('compy',point);if(e){e.thiefPack=true;e.herdId='thieves:'+centre.x+':'+centre.y;}}
+      for(let centre of r.map.habitats.filter((_,i)=>i%4===0).slice(0,r.secret?6:3)){
+        // A thief pack whose habitat lies in a pond gathers on the nearest dry bank instead.
+        if(FEATURES.npcSteering&&isWater(r.stage,r.map,centre,-40))for(let k=1;k<=24;k++){const a=k*2.399963,d=60+k*14,q={x:centre.x+Math.cos(a)*d,y:centre.y+Math.sin(a)*d};if(q.x>80&&q.y>110&&q.x<r.map.width-80&&q.y<r.map.height-80&&!isWater(r.stage,r.map,q,-40)&&!r.map.rocks.some(o=>Math.hypot(o.x-q.x,o.y-q.y)<70)){centre={x:Math.round(q.x),y:Math.round(q.y)};break;}}
+        for(let n=0;n<6;n++){const angle=n*Math.PI/3,point={x:centre.x+Math.cos(angle)*24,y:centre.y+Math.sin(angle)*24};if(!suitableHabitat(r.stage,r.map,'compy',point))continue;const e=this.spawn('compy',point);if(e){e.thiefPack=true;e.herdId='thieves:'+centre.x+':'+centre.y;}}}
       const pool = r.stage===0?['compy','parasaurolophus','compy','gallimimus','pachycephalosaurus']:BIOMES[r.stage].animals;
       r.map.habitats.forEach((p, i) => {
         if (isWater(r.stage, r.map, p, -20)) return;
@@ -761,6 +765,7 @@
     }
     travel(entity,dx,dy){
       const r=this.run;if(entity!==r.player&&!entity.boss&&entity.hp<entity.maxHP*.35){dx*=.72;dy*=.72;}const surface=this.terrainAt(entity);dx*=surface.speed;dy*=surface.speed;
+      if(FEATURES.npcSteering&&entity!==r.player&&entity.mode!=='charge'&&!entity.speciesSkill)({dx,dy}=this.steerAroundRocks(entity,dx,dy));
       // Non-swimmers cannot step from shallow into deep water; animals also refuse lava.
       const blocked=p=>!canSwim(entity)&&isDeepWater(r.stage,r.map,p)&&!isDeepWater(r.stage,r.map,entity)||entity!==r.player&&isLava(r.stage,r.map,p)&&!isLava(r.stage,r.map,entity);
       if(blocked({x:entity.x+dx,y:entity.y+dy})){if(!blocked({x:entity.x+dx,y:entity.y}))dy=0;else if(!blocked({x:entity.x,y:entity.y+dy}))dx=0;else{dx=0;dy=0;}}
@@ -775,6 +780,20 @@
         const x = entity.x - rock.x, y = entity.y - rock.y, d = Math.hypot(x, y), min = entity.radius + rock.radius;
         if (d < min) { entity.x = rock.x + (d > .001 ? x / d : 1) * min; entity.y = rock.y + (d > .001 ? y / d : 0) * min; }
       }
+    }
+    // NPC steering: a rock in the way turns the step along its rim instead of pressing into it. The side is kept
+    // (also onto the next rock of a cluster) while the animal stays blocked, so it never flips sides frame by frame.
+    steerAroundRocks(e,dx,dy){
+      const s=Math.hypot(dx,dy),r=this.run;if(s<1e-6)return {dx,dy};
+      const ux=dx/s,uy=dy/s;let hit=null,best=Infinity;
+      for(const rock of r.map.rocks){const cx=rock.x-e.x,cy=rock.y-e.y,clear=rock.radius+e.radius+4,along=cx*ux+cy*uy;
+        if(along<=0||along>clear+24||Math.abs(cx*uy-cy*ux)>=clear||along>=best)continue;best=along;hit=rock;}
+      if(!hit)return {dx,dy};
+      const ox=e.x-hit.x,oy=e.y-hit.y,od=Math.max(1,Math.hypot(ox,oy)),tx=-oy/od,ty=ox/od;
+      if(!(e.rockSideUntil>r.seconds))e.rockSide=Math.abs(tx*ux+ty*uy)>.05?Math.sign(tx*ux+ty*uy):e.id%2?1:-1;
+      e.rockSideUntil=r.seconds+.6;
+      let vx=tx*e.rockSide+ux*.3,vy=ty*e.rockSide+uy*.3;const inward=-(vx*ox+vy*oy)/od;if(inward>0){vx+=ox/od*inward;vy+=oy/od*inward;}
+      const n=Math.max(1e-6,Math.hypot(vx,vy));return {dx:vx/n*s,dy:vy/n*s};
     }
     separateDinosaurs() {
       if (this.phase !== 'playing') return;
@@ -1018,7 +1037,11 @@
     }
     disengage(e) { e.alert = false; e.mode = 'return'; e.disengagedUntil = this.run.seconds + 4; e.cooldown = Math.max(e.cooldown, .8); }
     returnHome(e, dt) {
-      const dx=e.homeX-e.x,dy=e.homeY-e.y,d=Math.hypot(dx,dy);
+      const dx=e.homeX-e.x,dy=e.homeY-e.y,d=Math.hypot(dx,dy),now=this.run.seconds;
+      // Herd mates share one home and push each other off it: no progress for 1.5 s near home counts as arrived.
+      if(FEATURES.npcSteering){if(!(now-e.returnAt<.25)||e.returnBest===undefined){e.returnBest=d;e.returnStall=0;}e.returnAt=now;
+        if(d<e.returnBest-2){e.returnBest=d;e.returnStall=0;}else e.returnStall+=dt;
+        if(e.returnStall>(d<160?1.5:4)){e.mode='wander';e.returnBest=undefined;return;}}
       if(d<10){e.mode='wander';return;}
       e.facingX=dx/d;e.facingY=dy/d;this.travel(e,dx/d*e.speed*.7*dt,dy/d*e.speed*.7*dt);
     }
@@ -1360,10 +1383,11 @@
         const room=px>42+e.radius&&px<r.map.width-42-e.radius&&py>76+e.radius&&py<r.map.height-42-e.radius;
         const clear=r.map.rocks.every(rock=>Math.hypot(px-rock.x,py-rock.y)>rock.radius+e.radius+4);
         const wet=e.kind!=='deinosuchus'&&e.kind!=='baryonyx'&&isWater(r.stage,r.map,{x:px,y:py});
-        const score=(-dx*vx-dy*vy)/d+(room?0:-4)+(clear?0:-3)+(wet?-1.5:0);
+        const keep=FEATURES.npcSteering&&e.mode==='flee'&&e.fleeX!==undefined?.4*(vx*e.fleeX+vy*e.fleeY):0; // keep running the same way unless it is clearly worse
+        const score=(-dx*vx-dy*vy)/d+(room?0:-4)+(clear?0:-3)+(wet?-1.5:0)+keep;
         if(!best||score>best.score)best={vx,vy,score};
       }
-      e.mode=e.activity='flee';e.facingX=best.vx;e.facingY=best.vy;this.travel(e,best.vx*e.speed*mult*dt,best.vy*e.speed*mult*dt);
+      e.fleeX=best.vx;e.fleeY=best.vy;e.mode=e.activity='flee';e.facingX=best.vx;e.facingY=best.vy;this.travel(e,best.vx*e.speed*mult*dt,best.vy*e.speed*mult*dt);
     }
     alarmHerd(e){const r=this.run;if(!e.herdId)return;for(const mate of r.enemies)if(mate!==e&&mate.herdId===e.herdId&&Math.hypot(mate.x-e.x,mate.y-e.y)<300){mate.fleeUntil=Math.max(mate.fleeUntil||0,r.seconds+18);mate.herdAlarmUntil=r.seconds+4;}}
     nearestHunter(e){const r=this.run;let best=null,bd=320;for(const o of r.enemies)if(o.huntTarget===e.id){const d=Math.hypot(o.x-e.x,o.y-e.y);if(d<bd){bd=d;best=o;}}return best;}
@@ -1413,8 +1437,9 @@
         }
         const pack=e.herdId?r.enemies.filter(o=>o.herdId===e.herdId&&o.alert).length:1,bold=(pack>=4||FEATURES.dayNight&&r.night&&pack>=2)&&(e.hunger>.6||FEATURES.dayNight&&r.night) /* B2: bolder compys at night */;
         if(e.alert&&!bold){
-          if(d<110){this.fleeFrom(e,r.player.x,r.player.y,dt,.6);e.mode=e.activity='watch';return true;}
-          if(d<320){e.mode=e.activity='watch';e.facingX=dx/d;e.facingY=dy/d;return true;}
+          const wary=FEATURES.npcSteering&&e.mode==='watch'; // hysteresis: a watching compy keeps watching until the gap clearly changes
+          if(d<(wary&&e.backingOff?140:110)){this.fleeFrom(e,r.player.x,r.player.y,dt,.6);e.mode=e.activity='watch';e.backingOff=true;return true;}
+          e.backingOff=false;if(d<(wary?370:320)){e.mode=e.activity='watch';e.facingX=dx/d;e.facingY=dy/d;return true;}
         }
       }
       // Herbivores leave a herbivore player alone unless crowded or attacked.
@@ -1430,7 +1455,7 @@
         const playerThreat=(diet!=='herbivore'||recent)&&(!r.hidden||d<90||recent);
         let tx=null,ty=null;
         if(hunter){tx=hunter.x;ty=hunter.y;}
-        else if(playerThreat&&(d<(r.player.moving||recent?280:150)*(FEATURES.dayNight&&e.activity==='sleep'&&!recent?.45:1) /* B2: sleeping herds notice late */||(e.fleeUntil>r.seconds||e.herdAlarmUntil>r.seconds)&&d<sight)){tx=r.player.x;ty=r.player.y;}
+        else if(playerThreat&&(d<(r.player.moving||recent?280:150)*(FEATURES.npcSteering&&e.mode==='flee'?1.25:1)*(FEATURES.dayNight&&e.activity==='sleep'&&!recent?.45:1) /* B2: sleeping herds notice late */||(e.fleeUntil>r.seconds||e.herdAlarmUntil>r.seconds)&&d<sight*(FEATURES.npcSteering&&e.mode==='flee'?1.15:1))){tx=r.player.x;ty=r.player.y;}
         if(tx!==null){if(!(e.fleeUntil>r.seconds))this.alarmHerd(e);e.fleeUntil=r.seconds+20+(e.id*7)%10;e.alert=true;this.fleeFrom(e,tx,ty,dt,1.25);return true;}
         if(e.fleeUntil>r.seconds){e.alert=false;e.mode=e.activity='wary';e.facingX=-dx/d;e.facingY=-dy/d;this.travel(e,-dx/d*e.speed*.3*dt,-dy/d*e.speed*.3*dt);return true;}
         e.alert=false;this.naturalBehavior(e,dt);return true;
@@ -1453,14 +1478,15 @@
         const mates=r.enemies.filter(o=>o!==e&&o.kind===e.kind&&o.hp>0&&!o.boss&&!o.guard&&Math.hypot(o.x-e.x,o.y-e.y)<500);
         if(!e.packLeaderId)e.packLeaderId=e.id;if(!r.enemies.some(o=>o.id===e.packLeaderId&&o.hp>0))e.packLeaderId=e.id;
         if(e.packLeaderId===e.id&&(e.callUntil||0)<=r.seconds){e.callUntil=r.seconds+8;e.herdId=e.herdId||'call:'+e.id;for(const mate of mates){mate.herdId=e.herdId;mate.packLeaderId=e.packLeaderId;mate.alert=true;mate.rallyX=e.x;mate.rallyY=e.y;}r.effects.push({x:e.x,y:e.y-16,text:'!',life:.7});}
-        const ready=mates.filter(o=>o.herdId===e.herdId&&Math.hypot(o.x-e.x,o.y-e.y)<200).length+1>=(FEATURES.dayNight&&r.night?2:4); // B2: at night a pair is enough
+        let ready=mates.filter(o=>o.herdId===e.herdId&&Math.hypot(o.x-e.x,o.y-e.y)<200).length+1>=(FEATURES.dayNight&&r.night?2:4); // B2: at night a pair is enough
+        if(FEATURES.npcSteering){if(ready)e.packGoUntil=r.seconds+3;else ready=e.packGoUntil>r.seconds;} // a launched attack is not called off by one mate stepping out of range
         if(!ready){e.mode=e.activity='rally';e.facingX=dx/d;e.facingY=dy/d;if(d<140)this.travel(e,-dx/d*e.speed*.6*dt,-dy/d*e.speed*.6*dt);else if(e.rallyX!==undefined){const rx=e.rallyX-e.x,ry=e.rallyY-e.y,rd=Math.hypot(rx,ry);if(rd>45)this.travel(e,rx/rd*e.speed*dt,ry/rd*e.speed*dt);}return;}
       }
       if(!e.boss&&!(e.scaredUntil>r.seconds)&&this.npcAbility(e,dt))return;
       e.cooldown = Math.max(0, e.cooldown - dt); e.hit = Math.max(0, e.hit - dt);
       if(FEATURES.bossSignatures&&e.stampedeUntil>r.seconds&&this.stampede(e,dt))return;
       if(!e.boss&&e.scaredUntil>r.seconds){e.alert=false;e.mode=e.activity='flee';e.facingX=-dx/d;e.facingY=-dy/d;this.travel(e,-dx/d*e.speed*dt,-dy/d*e.speed*dt);return;}
-      if(FEATURES.territorialNests&&e.guard){const homeDistance=Math.hypot(r.player.x-e.homeX,r.player.y-e.homeY);if(homeDistance<220){e.alert=true;if(['watch','return','wander','rest'].includes(e.mode))e.mode='chase';}else if(homeDistance>340&&!['windup','charge','bite','slam'].includes(e.mode)){e.alert=false;e.mode='return';this.returnHome(e,dt);return;}}
+      if(FEATURES.territorialNests&&e.guard){const homeDistance=Math.hypot(r.player.x-e.homeX,r.player.y-e.homeY);if(homeDistance<220){e.alert=true;if(['watch','return','wander','rest'].includes(e.mode))e.mode='chase';}else if(homeDistance>340&&!['windup','charge','bite','slam'].includes(e.mode)){e.alert=false;if(FEATURES.npcSteering&&e.mode!=='return'&&Math.hypot(e.homeX-e.x,e.homeY-e.y)<40)return;e.mode='return';this.returnHome(e,dt);return;}}
       if (e.guard && !e.alert && e.mode !== 'return') return;
       if (e.stagger > 0) { e.stagger = Math.max(0, e.stagger - dt); return; }
       if (e.flinch > 0) { e.flinch = Math.max(0, e.flinch - dt); if (!['windup', 'charge', 'slam', 'bite', 'recover'].includes(e.mode)) return; }
@@ -1513,10 +1539,10 @@
           const threatened = r.seconds-e.lastAttackedAt < 8 || e.herdAlarmUntil>r.seconds;
           // A stationary observer is not an endless threat. Maintain a small
           // personal-space bubble only; moving hunters trigger a wider flight zone.
-          const flightDistance = threatened || r.player.moving ? 260 : 110;
+          const flightDistance = (threatened || r.player.moving ? 260 : 110) * (FEATURES.npcSteering && e.mode === 'flee' ? 1.25 : 1);
           if (d >= flightDistance) { e.mode='watch'; e.facingX=dx/d; e.facingY=dy/d; if(d>550)e.alert=false; return; }
 
-          e.mode = 'flee';
+          const wasFleeing = e.mode === 'flee'; e.mode = 'flee';
           // Pick a free escape heading rather than running forever into an edge or rock.
           let best = null;
           for (let i = 0; i < 8; i++) {
@@ -1524,10 +1550,10 @@
             const vx = Math.cos(angle), vy = Math.sin(angle), px = e.x + vx * 65, py = e.y + vy * 65;
             const room = px > 42 + e.radius && px < r.map.width - 42 - e.radius && py > 76 + e.radius && py < r.map.height - 42 - e.radius;
             const clear = r.map.rocks.every(rock => Math.hypot(px - rock.x, py - rock.y) > rock.radius + e.radius + 4);
-            const score = (-dx * vx - dy * vy) / d + (room ? 0 : -4) + (clear ? 0 : -3);
+            const score = (-dx * vx - dy * vy) / d + (room ? 0 : -4) + (clear ? 0 : -3) + (FEATURES.npcSteering && e.fleeX !== undefined && wasFleeing ? .4 * (vx * e.fleeX + vy * e.fleeY) : 0);
             if (!best || score > best.score) best = { vx, vy, score };
           }
-          e.facingX = best.vx; e.facingY = best.vy; this.travel(e, best.vx * e.speed * 1.25 * dt, best.vy * e.speed * 1.25 * dt); return;
+          e.fleeX = best.vx; e.fleeY = best.vy; e.facingX = best.vx; e.facingY = best.vy; this.travel(e, best.vx * e.speed * 1.25 * dt, best.vy * e.speed * 1.25 * dt); return;
         }
         e.mode = 'chase';
         let vx = dx / d, vy = dy / d, speed = e.speed;
