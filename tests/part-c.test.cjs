@@ -146,3 +146,4 @@ test('legendary species mutations change the ability: T. rex roar crit, Pachycep
   const hit = p.spawn('parasaurolophus', { x: pr.player.x, y: pr.player.y + 30 }), near = p.spawn('compy', { x: pr.player.x + 40, y: pr.player.y + 60 }); near.hp = near.maxHP = 100;
   p.step(1 / 30, { pounce: true, x: 0, y: 1 }); assert.ok(hit.hp < hit.maxHP); assert.equal(near.hp, 75, 'the meteor hits animals around the target'); assert.ok(near.stagger >= 1);
 });
+C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start

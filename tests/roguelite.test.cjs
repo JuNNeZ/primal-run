@@ -95,3 +95,4 @@ test('new abilities are on: 1.2 s pin, dust cloud, Pachycephalosaurus hop back; 
  p.step(1/30,{pounce:true,x:0,y:1});assert.ok(t.hp<t.maxHP,'the charge hits');assert.equal(pr.pounce,0,'the charge stops at the first hit');assert.ok(pr.invulnerable>0);
  for(let i=0;i<8;i++)p.step(1/30,{});assert.ok(pr.player.y<y,'and hops back, away from the target');
 });
+C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start

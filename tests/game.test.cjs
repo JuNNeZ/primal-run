@@ -340,3 +340,4 @@ test('terrain layouts provide seeded wilderness and biome-specific scenery witho
     if (stage === 3) assert.ok(map.decorations.some(p => p.path.endsWith('lava_rock.png')));
   }
 });
+C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start

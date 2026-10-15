@@ -110,3 +110,4 @@ test('deep river water blocks small walkers except at fords; swimmers and big sp
   const lava = game('velociraptor'), l = lava.run; l.stage = 3; l.map.river = [{ x: 0, y: 340 }, { x: 4000, y: 340 }]; l.map.riverCurve = l.map.river; l.player.y = 340;
   const hp = l.health; lava.step(.05, {}); assert.ok(l.health < hp, 'lava burns'); assert.equal(l.surface, 'lava');
 });
+C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start

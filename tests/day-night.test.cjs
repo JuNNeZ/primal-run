@@ -56,3 +56,4 @@ test('flag off: always day, no nightKills field', () => {
   try { const { g, r } = field(); r.seconds = 170; g.step(DT, {}); assert.equal(r.night, false); assert.equal(r.darkness, 0); assert.equal('nightKills' in r.partB, false); }
   finally { C.FEATURES.dayNight = true; }
 });
+C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start
