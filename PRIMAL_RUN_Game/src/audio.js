@@ -117,12 +117,20 @@
       const snap = c.createBufferSource(), snapGain = c.createGain(); snap.buffer = buffer; snapGain.gain.value = strong ? .13 : .08; snap.connect(snapGain); snapGain.connect(this.effects); snap.start(t); snap.onended = () => { snap.disconnect(); snapGain.disconnect(); };
     }
     play(event, detail = {}) {
+      if (event === 'critter') { // a bitten frog croaks, a mouse squeaks, a millipede crunches
+        const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
+        const t = c.currentTime + .01;
+        if (detail.kind === 'frog') { this.tone(150, t, .11, .09, 'square', 85, this.effects); this.tone(120, t + .13, .14, .07, 'square', 70, this.effects); }
+        else if (detail.kind === 'mouse') { this.tone(2300, t, .06, .05, 'sine', 3300, this.effects); this.tone(2600, t + .08, .05, .04, 'sine', 3600, this.effects); }
+        else { this.tone(900, t, .03, .06, 'square', 300, this.effects); this.tone(700, t + .04, .03, .05, 'square', 250, this.effects); this.tone(500, t + .08, .04, .04, 'square', 200, this.effects); }
+        return;
+      }
       if (event === 'bite_hit') { if (this.settings.master * this.settings.sfx > 0) this.impact(detail.strong); return; }
       if (['roar', 'boss_enrage'].includes(event)) {
         const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
         const osc = c.createOscillator(), gain = c.createGain(), t = c.currentTime; osc.type = 'sawtooth'; osc.frequency.setValueAtTime(event === 'boss_enrage' ? 95 : 70, t); osc.frequency.exponentialRampToValueAtTime(32, t + .32); gain.gain.setValueAtTime(.06, t); gain.gain.exponentialRampToValueAtTime(.0001, t + .35); osc.connect(gain); gain.connect(this.effects); osc.start(t); osc.stop(t + .36); osc.onended = () => { osc.disconnect(); gain.disconnect(); }; return;
       }
-      const names = { bite: 'bite', hit: 'hit', pickup: 'pickup', dna: 'pickup', pounce: 'pounce', level_up: 'level_up', death: 'death', ui: 'ui_select', boss: 'meteor', boss_dead: 'level_up', victory: 'level_up', stage: 'ui_select', start: 'ui_select', egg: 'pickup', growth: 'level_up', mastery: 'level_up', ally_call: 'pounce', pack_command: 'ui_select', powerup: 'level_up', amber: 'pickup', hatch: 'pounce', twist: 'pounce' };
+      const names = { bite: 'bite', hit: 'hit', pickup: 'pickup', dna: 'pickup', pounce: 'pounce', level_up: 'level_up', death: 'death', ui: 'ui_select', boss: 'meteor', meteor: 'meteor', boss_dead: 'level_up', victory: 'level_up', stage: 'ui_select', start: 'ui_select', egg: 'pickup', growth: 'level_up', mastery: 'level_up', ally_call: 'pounce', pack_command: 'ui_select', powerup: 'level_up', amber: 'pickup', hatch: 'pounce', twist: 'pounce' };
       const name = names[event]; if (!name || this.settings.master * this.settings.sfx === 0 || this.active.size > 8) return;
       const audio = new Audio(this.resolve('sounds/' + name + '.wav')); audio.volume = this.settings.master * this.settings.sfx;
       this.active.add(audio);

@@ -65,6 +65,10 @@ def build():
     if extras.exists():  # run extras (tools/draw_run_extras.py): powerups, shrine, badges, egg hatch, ambient animals
         for file, info in json.loads(extras.read_text(encoding='utf-8'))['assets'].items():
             manifest.append({'file': file, 'size': info['size'], 'origin': info['origin'], 'atlas_group': 'world_extras', 'status': 'prototype_static', 'animation_ready': False, 'production_approved': False})
+    ash_world = GAME / 'ash_world_manifest.json'
+    if ash_world.exists():  # Askebanen craters (tools/draw_ash_world.py)
+        for file, info in json.loads(ash_world.read_text(encoding='utf-8'))['assets'].items():
+            manifest.append({'file': file, 'size': info['size'], 'origin': info['origin'], 'atlas_group': 'world_extras', 'status': 'prototype_static', 'animation_ready': False, 'production_approved': False})
     if len({entry['file'] for entry in manifest}) != len(manifest):
         raise SystemExit('Duplicate resource paths in combined manifest')
     for folder in ('assets', 'sounds', 'Source_Generated'):

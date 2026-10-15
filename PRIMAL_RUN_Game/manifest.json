@@ -180579,5 +180579,140 @@
     "status": "prototype_static",
     "animation_ready": false,
     "production_approved": false
+  },
+  {
+    "file": "assets/ash_world/crater_s_0.png",
+    "size": [
+      48,
+      30
+    ],
+    "origin": [
+      24,
+      15
+    ],
+    "atlas_group": "world_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ash_world/crater_s_1.png",
+    "size": [
+      48,
+      30
+    ],
+    "origin": [
+      24,
+      15
+    ],
+    "atlas_group": "world_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ash_world/crater_s_2.png",
+    "size": [
+      48,
+      30
+    ],
+    "origin": [
+      24,
+      15
+    ],
+    "atlas_group": "world_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ash_world/crater_m_0.png",
+    "size": [
+      72,
+      44
+    ],
+    "origin": [
+      36,
+      22
+    ],
+    "atlas_group": "world_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ash_world/crater_m_1.png",
+    "size": [
+      72,
+      44
+    ],
+    "origin": [
+      36,
+      22
+    ],
+    "atlas_group": "world_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ash_world/crater_m_2.png",
+    "size": [
+      72,
+      44
+    ],
+    "origin": [
+      36,
+      22
+    ],
+    "atlas_group": "world_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ash_world/crater_l_0.png",
+    "size": [
+      104,
+      62
+    ],
+    "origin": [
+      52,
+      31
+    ],
+    "atlas_group": "world_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ash_world/crater_l_1.png",
+    "size": [
+      104,
+      62
+    ],
+    "origin": [
+      52,
+      31
+    ],
+    "atlas_group": "world_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
+  },
+  {
+    "file": "assets/ash_world/crater_l_2.png",
+    "size": [
+      104,
+      62
+    ],
+    "origin": [
+      52,
+      31
+    ],
+    "atlas_group": "world_extras",
+    "status": "prototype_static",
+    "animation_ready": false,
+    "production_approved": false
   }
 ]

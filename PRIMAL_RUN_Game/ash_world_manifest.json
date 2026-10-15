@@ -1,0 +1,142 @@
+{
+  "tool": "tools/draw_ash_world.py",
+  "palette": "Primal Earth 32",
+  "approval": "Ash level art liked by Jonas 2026-10-15; craters redrawn on his request. Status stays prototype_static until the approval card.",
+  "assets": {
+    "assets/ash_world/crater_s_0.png": {
+      "kind": "ground_decal",
+      "size": [
+        48,
+        30
+      ],
+      "origin": [
+        24,
+        15
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Askebanen: crater from a meteor fragment",
+      "sha256": "fb1a35a4c4e9169e8fc124abb24704ba55dff13b475e2b57aeb66a03a015db61"
+    },
+    "assets/ash_world/crater_s_1.png": {
+      "kind": "ground_decal",
+      "size": [
+        48,
+        30
+      ],
+      "origin": [
+        24,
+        15
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Askebanen: crater from a meteor fragment",
+      "sha256": "c7f2b0965237b6767ab48e4700b195926bcbea00d41b8b5e179301291a860912"
+    },
+    "assets/ash_world/crater_s_2.png": {
+      "kind": "ground_decal",
+      "size": [
+        48,
+        30
+      ],
+      "origin": [
+        24,
+        15
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Askebanen: crater from a meteor fragment",
+      "sha256": "9f0182dc0c31271e3e3cb06e3748323df9cf4b369e4be2c87ed7ed68aebf0c4d"
+    },
+    "assets/ash_world/crater_m_0.png": {
+      "kind": "ground_decal",
+      "size": [
+        72,
+        44
+      ],
+      "origin": [
+        36,
+        22
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Askebanen: crater from a meteor fragment",
+      "sha256": "1e65cea74cf5b72d8c72226ae4231aa5101fe02dbcb77d1ecbeeed3a57a7d7a4"
+    },
+    "assets/ash_world/crater_m_1.png": {
+      "kind": "ground_decal",
+      "size": [
+        72,
+        44
+      ],
+      "origin": [
+        36,
+        22
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Askebanen: crater from a meteor fragment",
+      "sha256": "abd6f2ca1bf67e81df08bd183a3739ba5d01ba86abf4293ada33ac00dc8c3484"
+    },
+    "assets/ash_world/crater_m_2.png": {
+      "kind": "ground_decal",
+      "size": [
+        72,
+        44
+      ],
+      "origin": [
+        36,
+        22
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Askebanen: crater from a meteor fragment",
+      "sha256": "fdca05839211e370d092a932b19958e8ade72e0f9b547b4f826c38fc478371bc"
+    },
+    "assets/ash_world/crater_l_0.png": {
+      "kind": "ground_decal",
+      "size": [
+        104,
+        62
+      ],
+      "origin": [
+        52,
+        31
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Askebanen: crater from a meteor fragment",
+      "sha256": "c09005531b494a733d55c386d054b9bfbe9ba68333b326866137b2c82a66924f"
+    },
+    "assets/ash_world/crater_l_1.png": {
+      "kind": "ground_decal",
+      "size": [
+        104,
+        62
+      ],
+      "origin": [
+        52,
+        31
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Askebanen: crater from a meteor fragment",
+      "sha256": "a83a71fc007201b91499282802bdedd685c4b3b7b5967d434cb2537358a04a7e"
+    },
+    "assets/ash_world/crater_l_2.png": {
+      "kind": "ground_decal",
+      "size": [
+        104,
+        62
+      ],
+      "origin": [
+        52,
+        31
+      ],
+      "status": "prototype_static",
+      "production_approved": false,
+      "note": "Askebanen: crater from a meteor fragment",
+      "sha256": "7c96b0b6eb88d760ff92f5c3c2ec3644e5cc6cc27272406d3f40dd215954ac93"
+    }
+  }
+}

@@ -40,5 +40,5 @@ test('species display ramps use only the fixed palette and retain different iden
  assert.equal(new Set(signatures).size,ramped.length);for(const id of ramped)assert.ok(C.SPECIES_COLORS[id],id+' has a display ramp');
  for(const id of Object.keys(C.PLAYER_SPECIES))if(C.SPECIES[id])assert.equal(C.PLAYER_SPECIES[id].radius,C.SPECIES[id].radius,id+' is the same size wild and played');
  const g=new C.Game();g.start({seed:2});const regular=g.spawn('carnotaurus',{x:900,y:900}),boss=g.spawn('carnotaurus',{x:1100,y:900},true);
- assert.equal(regular.visualScale,1);assert.equal(boss.visualScale,2);assert.equal(boss.radius,regular.radius*2);
+ assert.equal(regular.visualScale,1);assert.equal(boss.visualScale,C.FEATURES.bossLook?Math.max(C.BOSS_LOOK.minScale,2*C.BOSS_LOOK.scale):2);assert.equal(boss.radius,regular.radius*2);
 });

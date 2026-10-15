@@ -38,6 +38,12 @@
       if (r.levelIndex >= r.campaign.length - 1) return 'Sidste bane';
       g.phase = 'cleared'; r.bossDefeated = true; g.nextStage(); return 'Bane ' + (g.run.levelIndex + 1);
     },
+    ash() {
+      const g = game(); if (!g.enterAshWorld) return 'Askebanen er slået fra';
+      if (!g.run) { g.phase = 'menu'; g.start({}); for (let i = 1; i < 8; i++) { g.phase = 'cleared'; g.run.bossDefeated = true; g.nextStage(); } }
+      if (g.run.ashWorld) return 'Allerede i askebanen';
+      g.enterAshWorld(); pausedHere = false; toggle(false); return 'Meteoren rammer';
+    },
     start() {
       const g = game(), species = panel.querySelector('[name=species]').value, level = Number(panel.querySelector('[name=level]').value) || 1;
       if (!g.save.unlockedSpecies.includes(species)) g.save.unlockedSpecies.push(species);
@@ -79,7 +85,7 @@
       <section><h3>Nyt run</h3><label>Art <select name="species">${opt(species, name)}</select></label>
         <label>Bane <select name="level">${opt([1, 2, 3, 4, 5, 6, 7, 8])}</select></label><button type="button" data-admin="start">Start</button></section>
       <section><h3>Dette run</h3><button type="button" data-admin="god">Gud-tilstand</button><button type="button" data-admin="heal">Fuldt liv</button>
-        <button type="button" data-admin="levelup">Mutationsvalg</button><button type="button" data-admin="boss">Kald boss</button><button type="button" data-admin="skip">Spring bane over</button></section>
+        <button type="button" data-admin="levelup">Mutationsvalg</button><button type="button" data-admin="boss">Kald boss</button><button type="button" data-admin="skip">Spring bane over</button><button type="button" data-admin="ash">Askebanen</button></section>
       <section><h3>Nye ting</h3><label>Powerup <select name="powerup">${opt(Object.keys(c.POWERUPS), k => c.POWERUPS[k].name)}</select></label><button type="button" data-admin="powerup">Læg</button>
         <label>Elite <select name="elite">${opt(elites)}</select></label><button type="button" data-admin="elite">Spawn</button>
         <button type="button" data-admin="twist">Giv evne-twist</button><button type="button" data-admin="streak">Jagtrus ×5</button><button type="button" data-admin="amber">Rav ved mig</button><button type="button" data-admin="baby">Baby-start til/fra</button></section>
