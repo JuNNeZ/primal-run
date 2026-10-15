@@ -162,7 +162,7 @@
           ${rows ? `<table class="daily-list"><thead><tr><th>#</th><th>Navn</th><th>Art</th><th>Bane</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table>` : '<p class="fine">Ingen forsøg i dag endnu. Dine 5 bedste forsøg gemmes lokalt i denne browser.</p>'}
           ${button('daily-start', 'START DAGENS JAGT <span>→</span>', 'primary')}<div class="actions">${button('menu', 'Hovedmenu')}</div></section>`;
       } else if (phase === 'scores') {
-        screen.innerHTML = `<section class="panel">${heading('LOKALE REKORDER', 'Rekorder', 'Hall of Fame og Hall of Shame i denne browser. Ingen globale ranglister.')}${recordsHTML()}${recordsTab==='top'?`<div class="table-scroll"><table><thead><tr><th>#</th><th>Jæger</th><th>Score</th><th>Bane</th><th>Bosser</th><th>Tid</th></tr></thead><tbody>${game.save.scores.map((s, i) => `<tr><td>${i + 1}</td><td>${htmlEscape(s.name)}${s.victory ? ' ♛' : ''}</td><td>${s.score}</td><td>${s.stage}</td><td>${s.bosses}</td><td>${timeLabel(s.seconds)}</td></tr>`).join('') || '<tr><td colspan="6">Din første jagt venter.</td></tr>'}</tbody></table></div>`:''}${button('menu', '← Tilbage')}</section>`;
+        screen.innerHTML = `<section class="panel">${heading('LOKALE REKORDER', 'Rekorder', 'Hall of Fame og Hall of Shame i denne browser. Ingen globale ranglister.')}${recordsHTML()}${recordsTab==='top'?`<div class="table-scroll"><table><thead><tr><th>#</th><th>Jæger</th><th>Score</th><th>Bane</th><th>Bosser</th><th>Tid</th></tr></thead><tbody>${game.save.scores.map((s, i) => `<tr><td>${i + 1}</td><td>${htmlEscape(s.name)}${s.victory ? ' ♛' : ''}${s.ash ? ' ☄' : ''}</td><td>${s.score}</td><td>${s.stage}</td><td>${s.bosses}</td><td>${timeLabel(s.seconds)}</td></tr>`).join('') || '<tr><td colspan="6">Din første jagt venter.</td></tr>'}</tbody></table></div>`:''}${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'help') {
         screen.innerHTML = `<section class="panel">${heading('LÆR AT JAGE', 'Sådan spiller du')}<ol class="instructions">
           <li><b>Bevæg og angrib.</b> Gå tæt på og tryk ${control('attack')}. Kritiske træf giver ekstra skade og stagger.</li>
@@ -197,7 +197,7 @@
         screen.innerHTML = `<section class="panel compact">${heading('BOSS BESEJRET', I18N.tf('{0} er faldet', tr(stage.bossName)), '+' + stage.dna + ' DNA er gemt.')}${statisticsHTML(true)}<div class="bank">${imageTag('assets/ui/dna.png')}<b>${game.save.dna} DNA</b></div>${button('next', r.levelIndex === r.campaign.length-1 ? 'AFSLUT JAGTEN →' : 'NÆSTE BANE →', 'primary')}<p class="fine">${r.levelIndex === r.campaign.length-1 ? 'Jagten er fuldført.' : 'Du beholder mutationerne og genvinder 30 % af dit maksimale liv.'}</p></section>`;
       } else if (phase === 'result') {
         const result = r.result;
-        screen.innerHTML = `<section class="panel compact">${heading(result.victory ? 'DALENS NYE KONGE' : 'EVOLUTIONEN FORTSÆTTER', result.victory ? 'Jagten er vundet' : 'Jagten er slut', htmlEscape(result.name) + ' · Bane ' + result.stage + ' · ' + result.bosses + ' bosser')}${result.victory ? "" : "<img class=\"death-preview\" alt=\"Din dinosaur efter jagten\">"}<div class="result-stats"><div><small>SCORE</small><b>${result.score}</b></div><div><small>DNA I RUN</small><b>+${r.dna}</b></div><div><small>TID</small><b>${timeLabel(result.seconds)}</b></div></div>${(r.challenges || []).length ? `<p class="daily-result challenge-result"><span>Udfordringer</span> · ${r.challenges.map(id => `<b>${C.CHALLENGES.find(c => c.id === id).name}</b>`).join(' · ')} · <span>+${r.challengeBonus || 0} DNA</span></p>` : ''}${r.daily ? `<p class="daily-result">${tr('Dagens jagt')} · ${r.daily.key.slice(6, 8)}.${r.daily.key.slice(4, 6)}.${r.daily.key.slice(0, 4)} · ${I18N.tf('plads {0} af {1}', r.daily.rank || '–', r.daily.entries || 1)}</p>` : ''}${C.FEATURES.speciesMastery?masteryLine(r.species,r.masteryTierReached):''}${runCardHTML(r)}<canvas class="end-scene" width="480" height="180" aria-label="Afslutningsscene"></canvas>${causeHTML(r)}${statisticsHTML(false)}${button('start', 'NY JAGT →', 'primary')}<div class="actions">${r.daily ? button('daily', 'Dagens jagt') : ''}${button('shop', 'DNA-laboratorium')}${button('scores', 'Rekorder')}${button('menu', 'Hovedmenu')}</div></section>`;
+        screen.innerHTML = `<section class="panel compact">${heading(result.ashSurvivor ? 'UDRYDDELSENS OVERLEVER' : result.ash ? 'ASKEN TOG DIG' : result.victory ? 'DALENS NYE KONGE' : 'EVOLUTIONEN FORTSÆTTER', result.ashSurvivor ? 'Du overlevede meteoren' : result.ash ? 'Sejren over Ragnar er stadig din' : result.victory ? 'Jagten er vundet' : 'Jagten er slut', htmlEscape(result.name) + ' · Bane ' + result.stage + ' · ' + result.bosses + ' bosser')}${result.victory ? "" : "<img class=\"death-preview\" alt=\"Din dinosaur efter jagten\">"}<div class="result-stats"><div><small>SCORE</small><b>${result.score}</b></div><div><small>DNA I RUN</small><b>+${r.dna}</b></div><div><small>TID</small><b>${timeLabel(result.seconds)}</b></div></div>${(r.challenges || []).length ? `<p class="daily-result challenge-result"><span>Udfordringer</span> · ${r.challenges.map(id => `<b>${C.CHALLENGES.find(c => c.id === id).name}</b>`).join(' · ')} · <span>+${r.challengeBonus || 0} DNA</span></p>` : ''}${r.daily ? `<p class="daily-result">${tr('Dagens jagt')} · ${r.daily.key.slice(6, 8)}.${r.daily.key.slice(4, 6)}.${r.daily.key.slice(0, 4)} · ${I18N.tf('plads {0} af {1}', r.daily.rank || '–', r.daily.entries || 1)}</p>` : ''}${C.FEATURES.speciesMastery?masteryLine(r.species,r.masteryTierReached):''}${runCardHTML(r)}<canvas class="end-scene" width="480" height="180" aria-label="Afslutningsscene"></canvas>${causeHTML(r)}${statisticsHTML(false)}${button('start', 'NY JAGT →', 'primary')}<div class="actions">${r.daily ? button('daily', 'Dagens jagt') : ''}${button('shop', 'DNA-laboratorium')}${button('scores', 'Rekorder')}${button('menu', 'Hovedmenu')}</div></section>`;
       } else if (phase === 'error') {
         screen.innerHTML = `<section class="panel">${heading('INDLÆSNING FEJLEDE', 'Assets mangler')}<p>Kontrollér, at assets-mappen følger med spillet. Genindlæs siden efter rettelsen.</p><p class="load-error"></p></section>`;
       }
@@ -325,9 +325,18 @@
         }
 
     }
+    // Ragnar den Arrede: ash-grey hide by brightness (Primal Earth 32 greys, outline kept) with glowing claw-scar rakes.
+    function scarredPixel(rgb,x,y,pixels,width){
+      const lum=(rgb[0]*3+rgb[1]*6+rgb[2])/10;if(lum<40)return null;
+      const edge=[[1,0],[-1,0],[0,1],[0,-1]].some(([dx,dy])=>!pixels.data[((y+dy)*width+x+dx)*4+3]);
+      const rake=!edge&&[0,7,14].some(o=>{const d=((x+y*.9+o)%46+46)%46;return d<1.6&&((y+o*2)%40)<26;});
+      if(rake)return ((x*7+y*3)%5)?'c6663c':'de954a';
+      return ashGrey(lum);
+    }
+    function ashGrey(lum){return lum<75?'3b4144':lum<120?'626861':lum<170?'929387':'bab8a2';}
     const npcVariants=new Map();
     function npcVariant(path,variant){const key=path+':'+variant;if(npcVariants.has(key))return npcVariants.get(key);const source=skins[path]||images[path];if(!source)return null;const layer=document.createElement('canvas');layer.width=source.width;layer.height=source.height;const lc=layer.getContext('2d');drawAsset(lc,source,0,0);const pixels=lc.getImageData(0,0,layer.width,layer.height),swaps={male:{'799447':'a8b15b','69a4a0':'3c7180','b98252':'d4a36c','929387':'626861'},elite:{'799447':'de954a','69a4a0':'e9b75a','929387':'de954a','b98252':'e9b75a'},fishKing:{'799447':'3c7180','69a4a0':'a2d4c1','929387':'2466a0','b98252':'69a4a0'}};
-      for(let i=0;i<pixels.data.length;i+=4){if(!pixels.data[i+3])continue;const rgb=[...pixels.data.slice(i,i+3)],key=rgb.map(v=>v.toString(16).padStart(2,'0')).join('');let value=swaps[variant]?.[key];if(variant==='albino'&&Math.max(...rgb)>55)value=Math.max(...rgb)>145?'e8ece1':'bab8a2';if(value)for(let j=0;j<3;j++)pixels.data[i+j]=parseInt(value.slice(j*2,j*2+2),16);}
+      for(let i=0;i<pixels.data.length;i+=4){if(!pixels.data[i+3])continue;const rgb=[...pixels.data.slice(i,i+3)],key=rgb.map(v=>v.toString(16).padStart(2,'0')).join('');let value=swaps[variant]?.[key];if(variant==='albino'&&Math.max(...rgb)>55)value=Math.max(...rgb)>145?'e8ece1':'bab8a2';if(variant==='ash'){const lum=(rgb[0]*3+rgb[1]*6+rgb[2])/10;if(lum>=40)value=ashGrey(lum);}if(variant==='scarred')value=scarredPixel(rgb,(i>>2)%layer.width,Math.floor((i>>2)/layer.width),pixels,layer.width);if(value)for(let j=0;j<3;j++)pixels.data[i+j]=parseInt(value.slice(j*2,j*2+2),16);}
       lc.putImageData(pixels,0,0);layer.spritePath=path;npcVariants.set(key,layer);if(npcVariants.size>128)npcVariants.delete(npcVariants.keys().next().value);return layer;
     }
     const nightFrames = new Map(), NIGHT_FRAME_LIMIT = 128;
@@ -378,6 +387,39 @@
       if (!presentationReady(path)) return false;
       sprite(path, Math.round(x), Math.round(y), alpha);
       return true;
+    }
+    // Askebanen (FEATURES.ashLevel): the dying world after the meteor. Ground is drained of colour and dimmed red,
+    // glowing impact craters smoulder, ash and embers fall, and the run opens with the meteor strike itself.
+    function drawAshGround(r,view){
+      ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.globalCompositeOperation='saturation';ctx.globalAlpha=.78;ctx.fillStyle='#808080';ctx.fillRect(0,0,canvas.width,canvas.height);
+      ctx.globalCompositeOperation='multiply';ctx.globalAlpha=.22;ctx.fillStyle='#913b32';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.restore();
+      const pulse=.55+.25*Math.sin(r.seconds*1.7);
+      for(const c of r.ashCraters||[]){if(c.x<view.x-c.rx-40||c.x>view.x+canvas.width+c.rx+40||c.y<view.y-c.rx||c.y>view.y+canvas.height+c.rx)continue;
+        ctx.save();ctx.translate(Math.round(c.x),Math.round(c.y));ctx.fillStyle='#3b4144';ctx.beginPath();ctx.ellipse(0,0,c.rx+14,(c.rx+14)*.5,0,0,Math.PI*2);ctx.fill();
+        ctx.fillStyle='#151b19';ctx.beginPath();ctx.ellipse(0,2,c.rx,c.rx*.44,0,0,Math.PI*2);ctx.fill();
+        ctx.globalAlpha=pulse;ctx.fillStyle='#913b32';ctx.beginPath();ctx.ellipse(0,4,c.rx*.62,c.rx*.26,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#c6663c';ctx.beginPath();ctx.ellipse(0,5,c.rx*.32,c.rx*.13,0,0,Math.PI*2);ctx.fill();
+        ctx.globalAlpha=1;ctx.strokeStyle='#54282d';ctx.lineWidth=2;for(let i=0;i<5;i++){const a=c.seed+i*1.31;ctx.beginPath();ctx.moveTo(Math.cos(a)*(c.rx+10),Math.sin(a)*(c.rx+10)*.5);ctx.lineTo(Math.cos(a+.15)*(c.rx+34),Math.sin(a+.15)*(c.rx+34)*.5);ctx.stroke();}
+        ctx.restore();}
+    }
+    function drawAshAir(r){
+      const w=canvas.width,h=canvas.height,calmView=game.save.settings.reducedMotion||reducedMotion.matches,t=(C.ASH?C.ASH.intro:5.5)-(r.ashIntro||0);
+      ctx.save();ctx.setTransform(1,0,0,1,0,0);
+      const sky=ctx.createLinearGradient(0,0,0,h*.45);sky.addColorStop(0,'rgba(84,40,45,.55)');sky.addColorStop(1,'rgba(84,40,45,0)');ctx.fillStyle=sky;ctx.fillRect(0,0,w,h*.45);
+      const flakes=calmView?40:110;
+      for(let i=0;i<flakes;i++){const sx=(i*137.5)%1,sy=(i*61.8)%1,speed=18+(i%7)*6,ember=i%9===0;
+        const x=((sx*w+Math.sin(r.seconds*.6+i)*14-r.seconds*8)%w+w)%w,y=((sy*h+(calmView?0:r.seconds*speed))%h+h)%h;
+        ctx.globalAlpha=ember?.55+.35*Math.sin(r.seconds*4+i):.5;ctx.fillStyle=ember?'#de954a':i%3?'#bab8a2':'#929387';ctx.fillRect(Math.round(x),Math.round(y),ember?2:3,ember?2:3);}
+      if(r.ashIntro>0){
+        if(t<2.6){const k=t/2.6,mx=w*(1.05-.55*k),my=h*(-.08+.5*k),size=10+26*k;
+          ctx.globalAlpha=Math.min(1,k*3)*.5;ctx.fillStyle='#913b32';ctx.fillRect(0,0,w,h);
+          ctx.globalAlpha=1;const tail=ctx.createLinearGradient(mx,my,mx+w*.28,my-h*.25);tail.addColorStop(0,'rgba(237,208,160,.95)');tail.addColorStop(.3,'rgba(222,149,74,.7)');tail.addColorStop(1,'rgba(145,59,50,0)');
+          ctx.strokeStyle=tail;ctx.lineWidth=size*1.2;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(mx,my);ctx.lineTo(mx+w*.28,my-h*.25);ctx.stroke();
+          ctx.fillStyle='#edd0a0';ctx.beginPath();ctx.arc(mx,my,size*.7,0,Math.PI*2);ctx.fill();ctx.fillStyle='#e8ece1';ctx.beginPath();ctx.arc(mx,my,size*.4,0,Math.PI*2);ctx.fill();}
+        else{const k=Math.min(1,(t-2.6)/1.6);ctx.globalAlpha=(1-k)*(calmView?.6:1);ctx.fillStyle='#e8ece1';ctx.fillRect(0,0,w,h);}
+        if(t>2.2){ctx.globalAlpha=Math.min(1,(t-2.2)*1.5)*Math.min(1,(r.ashIntro||0)/1.2);ctx.font='bold 26px monospace';ctx.textAlign='center';ctx.lineWidth=5;ctx.strokeStyle='#151b19';ctx.fillStyle='#de954a';
+          const a=tr('65 MILLIONER ÅR SIDEN'),b=tr('Meteoren rammer. Kun de stærkeste overlever.');ctx.strokeText(a,w/2,h*.32);ctx.fillText(a,w/2,h*.32);ctx.font='bold 15px monospace';ctx.fillStyle='#edd0a0';ctx.strokeText(b,w/2,h*.32+30);ctx.fillText(b,w/2,h*.32+30);}
+      }
+      ctx.restore();
     }
     function drawApprovedCrossing(c) {
       const path = 'assets/ground/basalt_crossing_' + ((Math.floor(c.x) ^ Math.floor(c.y)) & 1) + '.png';
@@ -1079,6 +1121,7 @@
       } else objects.push({ x: 780, y: 390, path: C.playerFrame(game.save.selectedSpecies,'idle','S',0) });
       for(let i=objects.length-1;i>=0;i--)if(objects[i].x<view.x-200||objects[i].x>view.x+canvas.width+200||objects[i].y<view.y-200||objects[i].y>view.y+canvas.height+200)objects.splice(i,1);
       objects.sort((a, b) => a.y - b.y);
+      if(r&&r.ashWorld)drawAshGround(r,view);
       for (const o of objects) {
         if (o.x < view.x - 160 || o.y < view.y - 160 || o.x > view.x + canvas.width + 160 || o.y > view.y + canvas.height + 160) continue;
         shadowUnder(o);
@@ -1088,7 +1131,7 @@
         if (o.edible) { const t = (r ? r.seconds : 0) * 3 + o.x * .01, glow = .45 + .25 * Math.sin(t); ctx.save(); ctx.globalAlpha = glow; ctx.strokeStyle = C.MEAT_RARITIES[o.rarity || 0].color === '#e8ece1' ? '#bbd899' : C.MEAT_RARITIES[o.rarity || 0].color; if(!C.FEATURES.cleanMarkers){ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y) + 2, 20, 8, 0, 0, Math.PI * 2); ctx.stroke();} ctx.globalAlpha = 1; ctx.fillStyle = '#bbd899'; ctx.font = '700 13px monospace'; ctx.textAlign = 'center'; ctx.fillText('❧', Math.round(o.x), Math.round(o.y) - 30 + Math.round(Math.sin(t) * 2)); ctx.restore(); }
         const alpha = o.corpse ? Math.max(0,Math.min(1,((o.lifetime||30)-o.age)/5)) : o.player && r.hidden ? .6 : o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
         const bob=o.path&&o.path.startsWith('assets/new_species/')&&!o.corpse&&(o.player?r.player.moving:o.moving)?-Math.round(2*Math.abs(Math.sin(((o.player?r.player.gaitPhase:o.gaitPhase)||0)*Math.PI*2))):0;
-        sprite(o.path, o.x, o.y+bob, o.enemy && o.enemy.submerged && o.enemy.mode === 'windup' && o.enemy.pattern === 4 ? alpha * .3 : alpha, false, o.rotation, o.visualScale || 1,o.enemy?(o.enemy.rare?'albino':o.enemy.elite?'elite':o.enemy.sex==='male'?'male':null):o.corpse?(o.variant||null):o.player&&game.save.skin!=='classic'&&C.skinFits(game.save.skin,r?r.species:game.save.selectedSpecies)?game.save.skin:null);
+        sprite(o.path, o.x, o.y+bob, o.enemy && o.enemy.submerged && o.enemy.mode === 'windup' && o.enemy.pattern === 4 ? alpha * .3 : alpha, false, o.rotation, o.visualScale || 1,o.enemy?(o.enemy.scarred?'scarred':o.enemy.rare?'albino':o.enemy.elite?'elite':o.enemy.sex==='male'?'male':null):o.corpse?(o.variant||null):r&&r.ashWorld&&!o.player&&!o.raptor&&!o.edible&&!o.forage?'ash':o.player&&game.save.skin!=='classic'&&C.skinFits(game.save.skin,r?r.species:game.save.selectedSpecies)?game.save.skin:null);
         if (o.player && r.jonas) { ctx.fillStyle = '#e9b75a'; const x = Math.round(o.x), y = Math.round(o.y) - 46; ctx.fillRect(x - 9, y, 18, 5); ctx.fillRect(x - 9, y - 5, 4, 5); ctx.fillRect(x - 2, y - 7, 4, 7); ctx.fillRect(x + 5, y - 5, 4, 5); }
         // Less text: names only for special animals or nearby ones; behaviour as a small icon.
         if (o.raptor) { const a = o.raptor, d = r ? Math.hypot(a.x - r.player.x, a.y - r.player.y) : 1e9;
@@ -1109,6 +1152,7 @@
         if (o.enemy && o.enemy.hit > 0) sprite(o.path, o.x, o.y, .7 * o.enemy.hit / .15, true, o.rotation, o.visualScale || 1);
         if (o.enemy && o.enemy.hp < o.enemy.maxHP && !o.enemy.boss) { ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, 40, 4); ctx.fillStyle = '#c45f45'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, Math.round(40 * o.enemy.hp / o.enemy.maxHP), 4); }
       }
+      if(r&&r.ashWorld)drawAshAir(r);
       if(r)for(const c of r.ashClouds||[])if(c.until>r.seconds){if(drawApprovedAsh(c,r))continue;const fade=Math.min(1,c.until-r.seconds);ctx.save();ctx.globalAlpha=.32*fade;ctx.fillStyle='#626861';for(let i=0;i<5;i++){const a=i*1.26+c.x*.01;ctx.beginPath();ctx.arc(c.x+Math.cos(a)*c.radius*.35,c.y+Math.sin(a)*c.radius*.25,c.radius*.55,0,Math.PI*2);ctx.fill();}ctx.restore();} // B1c native ash clouds, with procedural fallback.
       if(r)drawTelegraphs(r);
       if(r&&C.PLAYER_SPECIES[r.species].diet!=='herbivore')for(const food of r.pickups.filter(p=>p.corpseId!==undefined)){const corpse=r.corpses.find(c=>c.id===food.corpseId);if(corpse)label(C.MEAT_RARITIES[food.rarity].symbol+' '+food.value+(corpse.age>=7?' · FORDÆRVER':' · FRISK')+' · '+(inputMode==='touch'?'SPIS':control('eat')+' SPIS'),food.x,food.y+enemyLabelOffset(corpse),C.MEAT_RARITIES[food.rarity].color);}
