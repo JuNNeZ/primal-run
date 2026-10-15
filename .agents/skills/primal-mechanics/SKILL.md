@@ -11,7 +11,7 @@ Mutation/level/result screens pause the simulation. Space is combat input and mu
 Every damaging enemy attack gets a visible windup and a committed/recovering phase. Stamina costs, regen delay and cooldowns are real gameplay constraints.
 NPCs obey their biome/diet, territory, group roles and attack grace period. Wounded ordinary animals slow and leave bounded temporary trails; bosses retain reliable timings.
 Plants feed herbivores; omnivores have both options, Baryonyx can fish. Corpses lose food separately from their later skeleton visuals.
-Do not add corpse scent until an explicit territorial/interspecies conflict system makes it meaningful.
+Corpse/carrion scent exists (carrionTarget in core.js, FEATURES.scentTrails); extend it rather than adding a second system.
 Rare albino rewards are queued epic choices, capped by species/rank, pause normally and fall back to DNA when no choice remains. Never switch phases halfway through an enemy removal loop.
 Record statistics from real actions/damage; distinguish attempted attacks, landed attacks, avoided hits and estimated steps. Random DNA percentage excludes guaranteed rewards.
 Save migrations filter known species/IDs and bounded fields. Decorative NPC sex/palette randomness must not consume loot RNG or alter combat stats.

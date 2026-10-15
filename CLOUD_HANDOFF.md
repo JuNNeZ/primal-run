@@ -32,16 +32,11 @@ eller få environmentet klargjort via UI, hvis installationen er begrænset.
 Officiel dokumentation, kontrolleret 5. oktober 2026:
 https://learn.chatgpt.com/docs/cloud
 
-## Prompt du kan indsætte i morgen
+## Prompt til en ny session
 
-> Fortsæt PRIMAL RUN. Læs AGENTS.md, README.md og
-> PRIMAL_RUN_Prototype_Kit/HANDOFF.md. Vi bygger en GDevelop-prototype med
-> Utahraptor, WASD, bite, fjender, XP, pause ved level-up med 1 af 3 mutationer,
-> death og restart. Bevar den fælles pixelstil og alle tidligere assetpakker.
-> Browserdemoen er en fungerende reference; der findes endnu ikke et GDevelop
-> project.json. Start med at kontrollere assets og køre npm test. Arbejd derefter
-> på et konkret GDevelop-projekt til den lille kerne. Hold action-poser som
-> placeholders og rapportér GDevelop-test separat fra browser-tests.
+> Fortsæt PRIMAL RUN fra `integration/next`. Læs AGENTS.md og CLAUDE.md først.
+
+(Resten af filen nedenfor er historik fra oktober 2026's første uge.)
 
 ## Projektets vigtigste beslutninger
 

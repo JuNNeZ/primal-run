@@ -102,4 +102,4 @@ include settings, outcomes and caveats. Corpse assets use their own
 Focused recipes in [.agents/skills](.agents/skills) cover sprites, asset generation,
 mechanics and balance; AGENTS.md routes future work to the relevant recipe.
 
-[Deinosuchus: spillerintegration og animation-review](PRIMAL_RUN_Game/deinosuchus_playable_review.html). Låses op ved Doris på bane4; udviklingsbranch `codex/sprites-and-mechanics`, ikke automatisk publiceret.
+[Deinosuchus: spillerintegration og animation-review](PRIMAL_RUN_Game/deinosuchus_playable_review.html). Låses op ved Doris på bane4; udviklingsbranch `integration/next`, ikke automatisk publiceret.
