@@ -89,5 +89,12 @@
  "Planteædere får ikke længere \"tryk F for at spise\" ved kød.": "植食者在肉旁边不会再看到“按 F 进食”。",
  "<a href=\"./\">← Tilbage til spillet</a>": "<a href=\"./\">← 返回游戏</a>",
  "<b>Hovedmenuen:</b> Baggrunden fylder nu hele skærmen. Dinosauren i menuen kæmper mod små angribere og flygter fra bosser og store flokke, så den ikke længere bliver overløbet af Compyer. Patch notes står på det sprog, du har valgt, og menuen henter langt færre filer, når siden åbner.": "<b>主菜单：</b>背景现在铺满整个屏幕。菜单里的恐龙会迎战小型来敌，遇到首领和大群敌人则会逃跑，不会再被美颌龙淹没。更新日志会以你选择的语言显示，页面打开时菜单加载的文件也大大减少。",
- "<b>Artsbogen:</b> Hver art, du har set, vises nu som en lille model, der går på stedet og angriber en gang imellem. Områder og angreb står nu på dit eget sprog.": "<b>物种图鉴：</b>你见过的每个物种现在都会以小模型展示，原地行走并不时发动攻击。区域和攻击现在也以你的语言显示。"
+ "<b>Artsbogen:</b> Hver art, du har set, vises nu som en lille model, der går på stedet og angriber en gang imellem. Områder og angreb står nu på dit eget sprog.": "<b>物种图鉴：</b>你见过的每个物种现在都会以小模型展示，原地行走并不时发动攻击。区域和攻击现在也以你的语言显示。",
+ "The Snowflake equilibrium patch · 15. oktober 2026": "The Snowflake equilibrium patch · 2026年10月15日",
+ "<b>Sværere jagt:</b> Din dinosaur har lidt mindre liv og gør lidt mindre skade. Alle andre dyr og alle bosser har mere liv og gør mere skade.": "<b>更难的狩猎:</b> 你的恐龙生命和伤害略有降低。其他所有动物和所有首领的生命和伤害都提高了。",
+ "<b>Mutationer med plus og minus:</b> Seks nye episke og to andre nye mutationer giver en klar fordel, men koster noget. Et episk genom har nu flere end tre kort at vælge imellem.": "<b>有利有弊的突变:</b> 六个新的史诗突变和另外两个新突变带来明显优势，但也有代价。史诗基因组现在可选的卡牌多于三张。",
+ "<b>Raptorflokken:</b> En vild raptor følger dig, når du har givet den 8 portioner af din egen føde. En bar over dens hoved viser, hvor meget den har fået.": "<b>迅猛龙兽群:</b> 给野生迅猛龙8份你自己的食物后，它就会跟随你。它头上的条显示已经喂了多少。",
+ "<b>Ankylosaurus:</b> Pigpanser og Halekølle-knogle rammer kun dyr, der angriber dig, og lava, gift og torne udløser dem ikke længere. Auto-angreb går kun efter dyr, der angriber dig.": "<b>甲龙:</b> 尖刺装甲和尾锤骨只会击中攻击你的动物，熔岩、毒和荆棘不再触发它们。自动攻击只针对攻击你的动物。",
+ "<b>Tekster:</b> Mutationer, der gælder alle arter, siger nu angrebsskade og angrebsrækkevidde i stedet for bid.": "<b>文本:</b> 适用于所有物种的突变现在写作攻击伤害和攻击范围，而不是撕咬。",
+ "Tak til spiltesteren Snowflake for fundene.": "感谢测试玩家 Snowflake 的发现。"
 }
