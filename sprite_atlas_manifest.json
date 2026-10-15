@@ -1,6 +1,6 @@
 {
   "alias_frames": 332,
-  "decoded_bytes": 232626224,
+  "decoded_bytes": 232798256,
   "frames": {
     "assets/a6_hud/dna_chip.png": {
       "anchor": [
@@ -89,6 +89,105 @@
       "w": 24,
       "x": 487,
       "y": 157
+    },
+    "assets/ash_world/crater_l_0.png": {
+      "anchor": [
+        52,
+        31
+      ],
+      "file": "assets/atlases/world_extras_0.png",
+      "h": 62,
+      "w": 104,
+      "x": 1,
+      "y": 1
+    },
+    "assets/ash_world/crater_l_1.png": {
+      "anchor": [
+        52,
+        31
+      ],
+      "file": "assets/atlases/world_extras_0.png",
+      "h": 62,
+      "w": 104,
+      "x": 107,
+      "y": 1
+    },
+    "assets/ash_world/crater_l_2.png": {
+      "anchor": [
+        52,
+        31
+      ],
+      "file": "assets/atlases/world_extras_0.png",
+      "h": 62,
+      "w": 104,
+      "x": 1,
+      "y": 65
+    },
+    "assets/ash_world/crater_m_0.png": {
+      "anchor": [
+        36,
+        22
+      ],
+      "file": "assets/atlases/world_extras_0.png",
+      "h": 44,
+      "w": 72,
+      "x": 107,
+      "y": 65
+    },
+    "assets/ash_world/crater_m_1.png": {
+      "anchor": [
+        36,
+        22
+      ],
+      "file": "assets/atlases/world_extras_0.png",
+      "h": 44,
+      "w": 72,
+      "x": 181,
+      "y": 65
+    },
+    "assets/ash_world/crater_m_2.png": {
+      "anchor": [
+        36,
+        22
+      ],
+      "file": "assets/atlases/world_extras_0.png",
+      "h": 44,
+      "w": 72,
+      "x": 107,
+      "y": 111
+    },
+    "assets/ash_world/crater_s_0.png": {
+      "anchor": [
+        24,
+        15
+      ],
+      "file": "assets/atlases/world_extras_0.png",
+      "h": 30,
+      "w": 48,
+      "x": 1,
+      "y": 229
+    },
+    "assets/ash_world/crater_s_1.png": {
+      "anchor": [
+        24,
+        15
+      ],
+      "file": "assets/atlases/world_extras_0.png",
+      "h": 30,
+      "w": 48,
+      "x": 51,
+      "y": 229
+    },
+    "assets/ash_world/crater_s_2.png": {
+      "anchor": [
+        24,
+        15
+      ],
+      "file": "assets/atlases/world_extras_0.png",
+      "h": 30,
+      "w": 48,
+      "x": 151,
+      "y": 211
     },
     "assets/avatars/ankylosaurus_eat_000.png": {
       "anchor": [
@@ -18603,8 +18702,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 12,
       "w": 12,
-      "x": 243,
-      "y": 141
+      "x": 87,
+      "y": 261
     },
     "assets/new_species/ambient/ash_ember_1.png": {
       "anchor": [
@@ -18614,8 +18713,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 12,
       "w": 12,
-      "x": 243,
-      "y": 155
+      "x": 87,
+      "y": 275
     },
     "assets/new_species/ambient/butterfly_0.png": {
       "anchor": [
@@ -18625,8 +18724,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 32,
       "w": 32,
-      "x": 201,
-      "y": 51
+      "x": 213,
+      "y": 1
     },
     "assets/new_species/ambient/butterfly_1.png": {
       "anchor": [
@@ -18637,7 +18736,7 @@
       "h": 32,
       "w": 32,
       "x": 201,
-      "y": 85
+      "y": 211
     },
     "assets/new_species/ambient/firefly_glow_0.png": {
       "anchor": [
@@ -18647,8 +18746,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 171,
-      "y": 101
+      "x": 239,
+      "y": 35
     },
     "assets/new_species/ambient/firefly_glow_1.png": {
       "anchor": [
@@ -18658,8 +18757,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 239,
-      "y": 51
+      "x": 113,
+      "y": 291
     },
     "assets/new_species/ambient/frog_0.png": {
       "anchor": [
@@ -18669,8 +18768,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 32,
       "w": 32,
-      "x": 1,
-      "y": 101
+      "x": 151,
+      "y": 243
     },
     "assets/new_species/ambient/frog_1.png": {
       "anchor": [
@@ -18680,8 +18779,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 32,
       "w": 32,
-      "x": 35,
-      "y": 101
+      "x": 101,
+      "y": 257
     },
     "assets/new_species/ambient/millipede_0.png": {
       "anchor": [
@@ -18691,8 +18790,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 32,
       "w": 32,
-      "x": 69,
-      "y": 101
+      "x": 185,
+      "y": 245
     },
     "assets/new_species/ambient/millipede_1.png": {
       "anchor": [
@@ -18702,8 +18801,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 32,
       "w": 32,
-      "x": 103,
-      "y": 101
+      "x": 219,
+      "y": 245
     },
     "assets/new_species/ambient/pterosaur_shadow_0.png": {
       "anchor": [
@@ -18713,8 +18812,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 48,
       "w": 48,
-      "x": 1,
-      "y": 1
+      "x": 181,
+      "y": 111
     },
     "assets/new_species/ambient/pterosaur_shadow_1.png": {
       "anchor": [
@@ -18724,8 +18823,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 48,
       "w": 48,
-      "x": 51,
-      "y": 1
+      "x": 1,
+      "y": 129
     },
     "assets/new_species/ambient/small_mammal_0.png": {
       "anchor": [
@@ -18735,8 +18834,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 32,
       "w": 32,
-      "x": 137,
-      "y": 101
+      "x": 135,
+      "y": 277
     },
     "assets/new_species/ambient/small_mammal_1.png": {
       "anchor": [
@@ -18746,8 +18845,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 32,
       "w": 32,
-      "x": 171,
-      "y": 119
+      "x": 169,
+      "y": 279
     },
     "assets/new_species/archelon_E.png": {
       "anchor": [
@@ -32894,8 +32993,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 239,
-      "y": 69
+      "x": 237,
+      "y": 279
     },
     "assets/run_extras/affix_brutal.png": {
       "anchor": [
@@ -32905,8 +33004,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 239,
-      "y": 87
+      "x": 237,
+      "y": 297
     },
     "assets/run_extras/affix_regen.png": {
       "anchor": [
@@ -32916,8 +33015,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 239,
-      "y": 105
+      "x": 235,
+      "y": 211
     },
     "assets/run_extras/affix_swift.png": {
       "anchor": [
@@ -32927,8 +33026,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 239,
-      "y": 123
+      "x": 231,
+      "y": 137
     },
     "assets/run_extras/affix_thorns.png": {
       "anchor": [
@@ -32938,8 +33037,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 139,
-      "y": 161
+      "x": 79,
+      "y": 317
     },
     "assets/run_extras/amber_0.png": {
       "anchor": [
@@ -32949,8 +33048,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 139,
-      "y": 179
+      "x": 79,
+      "y": 335
     },
     "assets/run_extras/amber_1.png": {
       "anchor": [
@@ -32960,8 +33059,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 157,
-      "y": 179
+      "x": 27,
+      "y": 339
     },
     "assets/run_extras/bat_0.png": {
       "anchor": [
@@ -32971,8 +33070,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 35,
-      "y": 135
+      "x": 231,
+      "y": 111
     },
     "assets/run_extras/bat_1.png": {
       "anchor": [
@@ -32982,8 +33081,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 61,
-      "y": 135
+      "x": 213,
+      "y": 35
     },
     "assets/run_extras/egg_hatch_0.png": {
       "anchor": [
@@ -32993,8 +33092,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 48,
       "w": 48,
-      "x": 101,
-      "y": 1
+      "x": 51,
+      "y": 129
     },
     "assets/run_extras/egg_hatch_1.png": {
       "anchor": [
@@ -33004,8 +33103,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 48,
       "w": 48,
-      "x": 151,
-      "y": 1
+      "x": 101,
+      "y": 157
     },
     "assets/run_extras/egg_hatch_2.png": {
       "anchor": [
@@ -33015,8 +33114,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 48,
       "w": 48,
-      "x": 201,
-      "y": 1
+      "x": 1,
+      "y": 179
     },
     "assets/run_extras/egg_hatch_3.png": {
       "anchor": [
@@ -33026,8 +33125,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 48,
       "w": 48,
-      "x": 1,
-      "y": 51
+      "x": 51,
+      "y": 179
     },
     "assets/run_extras/egg_hatch_4.png": {
       "anchor": [
@@ -33037,8 +33136,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 48,
       "w": 48,
-      "x": 51,
-      "y": 51
+      "x": 151,
+      "y": 161
     },
     "assets/run_extras/egg_hatch_5.png": {
       "anchor": [
@@ -33049,7 +33148,7 @@
       "h": 48,
       "w": 48,
       "x": 101,
-      "y": 51
+      "y": 207
     },
     "assets/run_extras/fish_jump_0.png": {
       "anchor": [
@@ -33059,8 +33158,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 87,
-      "y": 135
+      "x": 35,
+      "y": 261
     },
     "assets/run_extras/fish_jump_1.png": {
       "anchor": [
@@ -33070,8 +33169,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 113,
-      "y": 135
+      "x": 61,
+      "y": 261
     },
     "assets/run_extras/fish_jump_2.png": {
       "anchor": [
@@ -33081,8 +33180,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 139,
-      "y": 135
+      "x": 35,
+      "y": 287
     },
     "assets/run_extras/powerup_amber.png": {
       "anchor": [
@@ -33092,8 +33191,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 165,
-      "y": 153
+      "x": 1,
+      "y": 295
     },
     "assets/run_extras/powerup_comet.png": {
       "anchor": [
@@ -33103,8 +33202,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 191,
-      "y": 153
+      "x": 61,
+      "y": 287
     },
     "assets/run_extras/powerup_frost.png": {
       "anchor": [
@@ -33114,8 +33213,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 217,
-      "y": 153
+      "x": 87,
+      "y": 291
     },
     "assets/run_extras/powerup_glow_0.png": {
       "anchor": [
@@ -33125,8 +33224,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 32,
       "w": 32,
-      "x": 205,
-      "y": 119
+      "x": 203,
+      "y": 279
     },
     "assets/run_extras/powerup_glow_1.png": {
       "anchor": [
@@ -33137,7 +33236,7 @@
       "h": 32,
       "w": 32,
       "x": 1,
-      "y": 135
+      "y": 261
     },
     "assets/run_extras/powerup_heart.png": {
       "anchor": [
@@ -33147,8 +33246,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 35,
-      "y": 161
+      "x": 113,
+      "y": 311
     },
     "assets/run_extras/powerup_leech.png": {
       "anchor": [
@@ -33158,8 +33257,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 1,
-      "y": 169
+      "x": 139,
+      "y": 311
     },
     "assets/run_extras/powerup_rage.png": {
       "anchor": [
@@ -33169,8 +33268,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 61,
-      "y": 161
+      "x": 27,
+      "y": 313
     },
     "assets/run_extras/powerup_stamina.png": {
       "anchor": [
@@ -33180,8 +33279,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 87,
-      "y": 161
+      "x": 1,
+      "y": 321
     },
     "assets/run_extras/powerup_wind.png": {
       "anchor": [
@@ -33191,8 +33290,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 24,
       "w": 24,
-      "x": 113,
-      "y": 161
+      "x": 53,
+      "y": 313
     },
     "assets/run_extras/shrine.png": {
       "anchor": [
@@ -33202,8 +33301,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 48,
       "w": 48,
-      "x": 151,
-      "y": 51
+      "x": 201,
+      "y": 161
     },
     "assets/run_extras/streak_flame_0.png": {
       "anchor": [
@@ -33213,8 +33312,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 175,
-      "y": 179
+      "x": 1,
+      "y": 347
     },
     "assets/run_extras/streak_flame_1.png": {
       "anchor": [
@@ -33224,8 +33323,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 193,
-      "y": 179
+      "x": 45,
+      "y": 339
     },
     "assets/run_extras/time_dawn.png": {
       "anchor": [
@@ -33235,8 +33334,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 211,
-      "y": 179
+      "x": 165,
+      "y": 313
     },
     "assets/run_extras/time_dusk.png": {
       "anchor": [
@@ -33246,8 +33345,8 @@
       "file": "assets/atlases/world_extras_0.png",
       "h": 16,
       "w": 16,
-      "x": 229,
-      "y": 179
+      "x": 183,
+      "y": 313
     },
     "assets/species_attacks/ankylosaurus_attack_E_000.png": {
       "alias_of": "assets/player_full/ankylosaurus_attack_E_000.png",
@@ -35450,7 +35549,7 @@
   "max_dimension": 2048,
   "padding": 1,
   "pixels": "unaltered RGBA; no scaling or palette conversion; exact duplicate aliases only",
-  "png_bytes": 8408907,
+  "png_bytes": 8423621,
   "sheets": [
     {
       "file": "assets/atlases/species_allosaurus_0.png",
@@ -35795,14 +35894,14 @@
     },
     {
       "file": "assets/atlases/world_extras_0.png",
-      "frames": 47,
+      "frames": 56,
       "group": "world_extras",
-      "sha256": "273f6797c4ea3f3ccf646ac2a7a15c2aa238329d392a29e4e619951018ee5e15",
+      "sha256": "6a52a48ce9a06936ddc00f13937cdd2ee39e705aee945e0e974c17a7b0819a22",
       "size": [
         256,
-        196
+        364
       ],
-      "unique_frames": 47
+      "unique_frames": 56
     },
     {
       "file": "assets/atlases/world_shared_0.png",
@@ -35827,6 +35926,6 @@
       "unique_frames": 133
     }
   ],
-  "unique_frames": 2860,
+  "unique_frames": 2869,
   "version": 2
 }
