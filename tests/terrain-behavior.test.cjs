@@ -37,3 +37,4 @@ test('shared damage and hunter stack additively while armour and defensive stanc
 });
 
 test('turning preserves stride phase and walk/run clocks close their loops without an extra-frame reset',()=>{const g=setup(),r=g.run;r.player.walk=.72;g.step(.04,{x:1});assert.ok(Math.abs(r.player.walk-.76)<1e-8);r.player.walk=1.49;g.step(.02,{y:1});assert.ok(Math.abs(r.player.walk-.01)<1e-8);assert.equal(r.player.facing,'S');});
+C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start

@@ -30,3 +30,4 @@ test('prey ignore a still distant observer, flee a moving hunter until out of si
 test('pause freezes pursuit grace, random decisions and prey distance state',()=>{
  const g=game(),e=g.spawn('compy',{x:700,y:340});g.provoke(e);g.pause();const before=JSON.stringify(g.run);let calls=0;g.behaviorRandom=()=>{calls++;return 0;};for(let i=0;i<200;i++)g.step(.05);assert.equal(JSON.stringify(g.run),before);assert.equal(calls,0);
 });
+C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start

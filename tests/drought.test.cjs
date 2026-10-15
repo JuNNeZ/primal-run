@@ -43,3 +43,4 @@ test('flag off: ponds never shrink and animals behave as before', () => {
   try { const { g, r } = level(); const base = r.map.ponds.map(p => p.radius); at(g, 400); assert.deepEqual(r.map.ponds.map(p => p.radius), base); assert.ok(!r.drought); }
   finally { C.FEATURES.drought = true; }
 });
+C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start

@@ -7,7 +7,7 @@ const assert=require('node:assert/strict'),path=require('node:path'),fs=require(
  const resources=typeof gdjs!=='undefined'&&gdjs.projectData?new Map(gdjs.projectData.resources.resources.map(r=>[r.name,r.file])):new Map();ctx.drawImage=function(nativeImage,...nativeArgs){const {image:im,args:args}=PrimalApp.drawRecord(nativeImage,nativeArgs);if(im.src)calls.push({file:im.src.startsWith('assets/')?im.src:([...resources].find(([,file])=>file.split('/').pop()===decodeURIComponent(im.src).split('/').pop())?.[0]||im.src),w:im.naturalWidth,h:im.naturalHeight,args});return old.call(this,nativeImage,...nativeArgs);};
  try{g.pause();r.pickups=[];r.attack=null;r.shake=0;r.corpses=[];const plan={idle:4,walk:6,run:6,attack:6,hurt:2,death:6};
  for(const species of Object.keys(PrimalCore.SPECIES)){
- r.enemies=[];const e=g.spawn(species,{x:480,y:260});
+ r.enemies=[];const e=g.spawn(species,{x:r.player.x,y:r.player.y-80});
  for(const d of ['S','E','N','W'])for(const [state,count]of Object.entries(plan))for(let f=0;f<count;f++){
  e.direction=d;e.hit=state==='hurt'?.15-(f+.1)/8:0;e.mode=state==='run'?'flee':state==='attack'?(f<3?'windup':'charge'):'chase';e.windupDuration=.6;e.timer=state==='attack'?(f<3?.6*(1-(f+.1)/3):.55*(1-(f-3+.1)/3)):0;e.moving=['walk','run'].includes(state);e.walk=(f+.1)/(state==='run'?12:8);e.poseTime=(f+.1)/4;
  r.enemies=state==='death'?[]:[e];r.corpses=state==='death'?[{kind:species,x:e.x,y:e.y,direction:d,visualScale:e.visualScale,age:(f+.1)/8}]:[];

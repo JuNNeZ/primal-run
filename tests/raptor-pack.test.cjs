@@ -30,7 +30,7 @@ test('allies follow you, attack the animal you fight, never land the killing blo
   Object.assign(r.player, { x: 1500, y: 1200 }); for (let i = 0; i < 6 * 30; i++) g.step(DT, {});
   assert.ok(Math.hypot(ally.x - r.player.x, ally.y - r.player.y) < 160, 'follows the player');
   const prey = g.spawn('parasaurolophus', { x: r.player.x + 120, y: r.player.y }); prey.lastAttackedAt = r.seconds; Object.assign(prey, { speed: 0 });
-  const kills = r.kills; for (let i = 0; i < 12 * 30; i++) g.step(DT, {});
+  const kills = r.kills; for (let i = 0; i < 12 * 30; i++) { g.step(DT, {}); prey.lastAttackedAt = r.seconds; } // you keep fighting it (Snowflake +10 % HP needs one more bite)
   assert.ok(ally.bites > 0, 'it bites'); assert.equal(prey.hp, 1, 'left at 1 HP for you'); assert.equal(r.kills, kills, 'allies never count as kills');
   const hunter = g.spawn('carnotaurus', { x: r.player.x + 140, y: r.player.y }); Object.assign(hunter, { alert: true, speed: 0, damage: 40 }); hunter.lastAttackedAt = r.seconds;
   let fled = false; for (let i = 0; i < 10 * 30 && !fled; i++) { g.step(DT, {}); hunter.lastAttackedAt = r.seconds; fled = ally.mode === 'flee'; }

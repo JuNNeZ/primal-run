@@ -169,3 +169,4 @@ test('B1b: two basalt crossings on every level-7 map, ≥ 900 px apart, ≥ 600 
   }
   for (const stage of [0, 1, 2]) assert.deepEqual(C.createMap(stage, 3).lavaCrossings, []);
 });
+C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start
