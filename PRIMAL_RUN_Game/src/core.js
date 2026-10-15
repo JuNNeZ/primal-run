@@ -2632,7 +2632,7 @@
   // Drawn size relative to the 144 px frame (the drawings use the same scale as the existing sprites).
   const STATIC_SCALE={spinosaurus:2};
   // bossLook: bosses are drawn bigger and with their own tint. combatColors: red = enemy attack, yellow = your dodge/defence.
-  const BOSS_LOOK={scale:1.15,minScale:1.35},COMBAT_COLORS={attack:'#e5483c',defense:'#dfbc52'};
+  const BOSS_LOOK={scale:1.15,minScale:1.35,glow:'#e9b75a'},COMBAT_COLORS={attack:'#e5483c',defense:'#dfbc52'};
   const STATIC_SPECIES=new Set();
   const HERD_KINDS=new Set(['compy','parasaurolophus','gallimimus','pachycephalosaurus']);
   // Generic mutation effects (fx) so the new species' mutations need no new inline code.
