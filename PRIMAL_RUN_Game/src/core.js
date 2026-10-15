@@ -2935,7 +2935,7 @@
   // FEATURES.equilibrium: player max health and damage down, every animal and boss up (HP and damage), tuned with the
   // expert/optimizer sim bots on top of BOSS_TUNING. FEATURES.raptorDonate: a wild raptor joins after you give it
   // `PACK.donate` of your own food (E, `PACK.donateStep` per press); a bar over its head shows how much it has had.
-  const EQUILIBRIUM={player:{hp:.9,damage:.9},npc:{hp:1.2,damage:1.15},boss:{hp:1.15,damage:1.1}};
+  const EQUILIBRIUM={player:{hp:.95,damage:.95},npc:{hp:1.1,damage:1.05},boss:{hp:1.1,damage:1.05}}; // sim 2026-10-15 (expert+optimizer, 84 runs): 6.1 levels / 29 % wins → 5.1 / 19 %
   const startEq=Game.prototype.start;
   Game.prototype.start=function(options){
     startEq.call(this,options);const r=this.run;
