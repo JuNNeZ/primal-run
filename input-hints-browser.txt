@@ -1,0 +1,1 @@
+PASS: HUD time icon, no text selection on touch, keyboard/touch/gamepad control hints in all languages
