@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "每級 +# 最大生命，但攻擊傷害 −# %。",
  "@ GIV FØDE": "@ 餵食",
  "MANGLER FØDE": "冇食物可以餵",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "用 @ 餵一隻野生盜龍 # 份你自己嘅食物，佢就會跟住你。佢頭頂嘅條顯示佢食咗幾多。龍群會保護你，你咬乜佢就咬乜。@ 會叫佢去追你嘅獵物。"
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "用 @ 餵一隻野生盜龍 # 份你自己嘅食物，佢就會跟住你。佢頭頂嘅條顯示佢食咗幾多。龍群會保護你，你咬乜佢就咬乜。@ 會叫佢去追你嘅獵物。",
+ "Sværhedsgrad": "難度",
+ "Normal": "普通",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction：敵人有 +# % 生命同 +# % 傷害，BOSS 有 +# % 生命同 +# % 傷害，而你嘅生命同傷害少咗 # %。",
+ "Fjender og bosser er stærkere, og du er svagere.": "敵人同 BOSS 更強，你就更弱。"
 }

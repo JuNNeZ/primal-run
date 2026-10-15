@@ -1,90 +1,110 @@
 [
-{
-"da": "+# pixels angrebsrækkevidde og opsamlingsradius.",
-"en": "+# pixels attack reach and pickup radius."
-},
-{
-"da": "# % af din angrebsskade heler dig pr. rang.",
-"en": "# % of your attack damage heals you per rank."
-},
-{
-"da": "+# % kloskade pr. rang.",
-"en": "+# % claw damage per rank."
-},
-{
-"da": "Blodpagt",
-"en": "Blood Pact"
-},
-{
-"da": "+# % angrebsskade, men −# maksimalt liv.",
-"en": "+# % attack damage, but −# max health."
-},
-{
-"da": "Stenhud",
-"en": "Stone Skin"
-},
-{
-"da": "Tag # % mindre skade, men −# % fart.",
-"en": "Take # % less damage, but −# % speed."
-},
-{
-"da": "Jagtpuls",
-"en": "Hunt Pulse"
-},
-{
-"da": "# % hurtigere angreb, men −# % stamina-regeneration.",
-"en": "# % faster attacks, but −# % stamina regeneration."
-},
-{
-"da": "Kæmpevækst",
-"en": "Giant Growth"
-},
-{
-"da": "+# maksimalt liv, men −# % fart og # % langsommere angreb.",
-"en": "+# max health, but −# % speed and # % slower attacks."
-},
-{
-"da": "Adrenalinkirtel",
-"en": "Adrenal Gland"
-},
-{
-"da": "Evner koster # mindre stamina og gør +# % skade, men du tager # % mere skade.",
-"en": "Abilities cost # less stamina and deal +# % damage, but you take # % more damage."
-},
-{
-"da": "Dræberblik",
-"en": "Killer's Eye"
-},
-{
-"da": "+# % chance for kritisk træf, men −# % angrebsskade.",
-"en": "+# % critical hit chance, but −# % attack damage."
-},
-{
-"da": "Smidig krop",
-"en": "Nimble Frame"
-},
-{
-"da": "+# % fart og # % hurtigere angreb, men −# maksimalt liv pr. rang.",
-"en": "+# % speed and # % faster attacks, but −# max health per rank."
-},
-{
-"da": "Tyk pande",
-"en": "Thick Skull"
-},
-{
-"da": "+# maksimalt liv, men −# % angrebsskade pr. rang.",
-"en": "+# max health, but −# % attack damage per rank."
-},
-{
-"da": "@ GIV FØDE",
-"en": "@ GIVE FOOD"
-},
-{
-"da": "MANGLER FØDE",
-"en": "NO FOOD TO GIVE"
-},
-{
-"da": "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.",
-"en": "Give a wild raptor # of your own food with @ and it follows you. The bar over its head shows how much it has had. The pack defends you and bites what you bite. @ sends it after your prey."
-}
+ {
+  "da": "+# pixels angrebsrækkevidde og opsamlingsradius.",
+  "en": "+# pixels attack reach and pickup radius."
+ },
+ {
+  "da": "# % af din angrebsskade heler dig pr. rang.",
+  "en": "# % of your attack damage heals you per rank."
+ },
+ {
+  "da": "+# % kloskade pr. rang.",
+  "en": "+# % claw damage per rank."
+ },
+ {
+  "da": "Blodpagt",
+  "en": "Blood Pact"
+ },
+ {
+  "da": "+# % angrebsskade, men −# maksimalt liv.",
+  "en": "+# % attack damage, but −# max health."
+ },
+ {
+  "da": "Stenhud",
+  "en": "Stone Skin"
+ },
+ {
+  "da": "Tag # % mindre skade, men −# % fart.",
+  "en": "Take # % less damage, but −# % speed."
+ },
+ {
+  "da": "Jagtpuls",
+  "en": "Hunt Pulse"
+ },
+ {
+  "da": "# % hurtigere angreb, men −# % stamina-regeneration.",
+  "en": "# % faster attacks, but −# % stamina regeneration."
+ },
+ {
+  "da": "Kæmpevækst",
+  "en": "Giant Growth"
+ },
+ {
+  "da": "+# maksimalt liv, men −# % fart og # % langsommere angreb.",
+  "en": "+# max health, but −# % speed and # % slower attacks."
+ },
+ {
+  "da": "Adrenalinkirtel",
+  "en": "Adrenal Gland"
+ },
+ {
+  "da": "Evner koster # mindre stamina og gør +# % skade, men du tager # % mere skade.",
+  "en": "Abilities cost # less stamina and deal +# % damage, but you take # % more damage."
+ },
+ {
+  "da": "Dræberblik",
+  "en": "Killer's Eye"
+ },
+ {
+  "da": "+# % chance for kritisk træf, men −# % angrebsskade.",
+  "en": "+# % critical hit chance, but −# % attack damage."
+ },
+ {
+  "da": "Smidig krop",
+  "en": "Nimble Frame"
+ },
+ {
+  "da": "+# % fart og # % hurtigere angreb, men −# maksimalt liv pr. rang.",
+  "en": "+# % speed and # % faster attacks, but −# max health per rank."
+ },
+ {
+  "da": "Tyk pande",
+  "en": "Thick Skull"
+ },
+ {
+  "da": "+# maksimalt liv, men −# % angrebsskade pr. rang.",
+  "en": "+# max health, but −# % attack damage per rank."
+ },
+ {
+  "da": "@ GIV FØDE",
+  "en": "@ GIVE FOOD"
+ },
+ {
+  "da": "MANGLER FØDE",
+  "en": "NO FOOD TO GIVE"
+ },
+ {
+  "da": "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.",
+  "en": "Give a wild raptor # of your own food with @ and it follows you. The bar over its head shows how much it has had. The pack defends you and bites what you bite. @ sends it after your prey."
+ },
+ {
+  "da": "Sværhedsgrad",
+  "en": "Difficulty"
+ },
+ {
+  "da": "Normal",
+  "en": "Normal"
+ },
+ {
+  "da": "Extinction difficulty",
+  "en": "Extinction difficulty"
+ },
+ {
+  "da": "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.",
+  "en": "Extinction: enemies have +# % health and +# % damage, bosses +# % health and +# % damage, and you have # % less health and damage."
+ },
+ {
+  "da": "Fjender og bosser er stærkere, og du er svagere.",
+  "en": "Enemies and bosses are stronger, and you are weaker."
+ }
 ]

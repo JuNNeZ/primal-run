@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "Her seviyede +# maksimum can, ama −# % saldırı hasarı.",
  "@ GIV FØDE": "@ YEM VER",
  "MANGLER FØDE": "VERECEK YEM YOK",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "Vahşi bir raptora kendi yeminden # tane @ ile ver, seni takip etsin. Başının üstündeki çubuk ne kadar aldığını gösterir. Sürü seni korur ve senin ısırdığını ısırır. @ onu avının peşine gönderir."
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "Vahşi bir raptora kendi yeminden # tane @ ile ver, seni takip etsin. Başının üstündeki çubuk ne kadar aldığını gösterir. Sürü seni korur ve senin ısırdığını ısırır. @ onu avının peşine gönderir.",
+ "Sværhedsgrad": "Zorluk",
+ "Normal": "Normal",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: düşmanların canı +# %, hasarı +# %, boss'ların canı +# %, hasarı +# % olur; senin canın ve hasarın ise # % azalır.",
+ "Fjender og bosser er stærkere, og du er svagere.": "Düşmanlar ve bosslar daha güçlü, sen ise daha zayıfsın."
 }

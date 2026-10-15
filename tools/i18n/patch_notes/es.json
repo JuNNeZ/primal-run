@@ -96,5 +96,13 @@
  "<b>Raptorflokken:</b> En vild raptor følger dig, når du har givet den 8 portioner af din egen føde. En bar over dens hoved viser, hvor meget den har fået.": "<b>La manada de raptores:</b> Un raptor salvaje te sigue cuando le has dado 8 raciones de tu propia comida. Una barra sobre su cabeza muestra cuánto ha recibido.",
  "<b>Ankylosaurus:</b> Pigpanser og Halekølle-knogle rammer kun dyr, der angriber dig, og lava, gift og torne udløser dem ikke længere. Auto-angreb går kun efter dyr, der angriber dig.": "<b>Ankylosaurus:</b> Armadura de púas y Hueso de maza caudal solo golpean a los animales que te atacan, y la lava, el veneno y las espinas ya no los activan. El ataque automático solo apunta a los animales que te atacan.",
  "<b>Tekster:</b> Mutationer, der gælder alle arter, siger nu angrebsskade og angrebsrækkevidde i stedet for bid.": "<b>Textos:</b> Las mutaciones que sirven para todas las especies ahora dicen daño de ataque y alcance de ataque en lugar de mordisco.",
- "Tak til spiltesteren Snowflake for fundene.": "Gracias al tester Snowflake por sus hallazgos."
+ "Tak til spiltesteren Snowflake for fundene.": "Gracias al tester Snowflake por sus hallazgos.",
+ "A6 · nye ikoner og lavakanter · 12. oktober 2026": "A6 · nuevos iconos y bordes de lava · 12 de octubre de 2026",
+ "Mad, DNA og område har nye pixelikoner ved siden af de eksisterende tal og navne.": "La comida, el ADN y la zona tienen nuevos iconos de píxeles junto a los números y nombres existentes.",
+ "Lavaen får teksturerede aske- og basaltkanter. Sikre basaltpassager følger fortsat de samme regler.": "La lava recibe bordes de ceniza y basalto con textura. Los pasos seguros de basalto siguen las mismas reglas.",
+ "Flok- og reroll-ikoner er klar til den kommende Part C-opdatering.": "Los iconos de manada y reroll están listos para la próxima actualización de la Parte C.",
+ "A-serien · nattens farver · 12. oktober 2026": "Serie A · los colores de la noche · 12 de octubre de 2026",
+ "Dinosaurer og ådsler får mørkere natfarver fra spillets fælles palet. Farvedragter følger med, og de almindelige farver vender tilbage om dagen.": "Los dinosaurios y los cadáveres adoptan colores nocturnos más oscuros de la paleta común del juego. Las pieles de color los acompañan, y los colores normales vuelven de día.",
+ "Artsangreb, dyreadfærd, såret gang, vandkanter og raptor-ådsler fra A1–A5 er integreret i udviklingsversionen.": "Los ataques por especie, el comportamiento animal, el andar herido, los bordes de agua y los cadáveres de raptor de A1–A5 están integrados en la versión de desarrollo.",
+ "<b>Sværhedsgrad:</b> Vælg Normal eller Extinction difficulty, før jagten starter. Extinction gør fjender og bosser endnu stærkere og dig svagere.": "<b>Dificultad:</b> Elige Normal o Extinction difficulty antes de que empiece la caza. Extinction hace a los enemigos y los jefes aún más fuertes y a ti más débil."
 }

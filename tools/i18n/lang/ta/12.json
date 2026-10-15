@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "ஒரு ரேங்கிற்கு +# அதிகபட்ச உயிர், ஆனால் −# % தாக்குதல் சேதம்.",
  "@ GIV FØDE": "@ உணவு கொடு",
  "MANGLER FØDE": "கொடுக்க உணவு இல்லை",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "ஒரு காட்டு ராப்டருக்கு உன் சொந்த உணவில் # பங்கை @ மூலம் கொடு, அது உன்னைப் பின்தொடரும். அதன் தலைக்கு மேல் உள்ள பார் அது எவ்வளவு பெற்றது என்று காட்டும். கூட்டம் உன்னைக் காக்கும், நீ கடிப்பதை அதுவும் கடிக்கும். @ அதை உன் இரையைத் துரத்த அனுப்பும்."
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "ஒரு காட்டு ராப்டருக்கு உன் சொந்த உணவில் # பங்கை @ மூலம் கொடு, அது உன்னைப் பின்தொடரும். அதன் தலைக்கு மேல் உள்ள பார் அது எவ்வளவு பெற்றது என்று காட்டும். கூட்டம் உன்னைக் காக்கும், நீ கடிப்பதை அதுவும் கடிக்கும். @ அதை உன் இரையைத் துரத்த அனுப்பும்.",
+ "Sværhedsgrad": "சிரமம்",
+ "Normal": "நார்மல்",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: எதிரிகளுக்கு +# % உயிரும் +# % சேதமும், பாஸ்களுக்கு +# % உயிரும் +# % சேதமும் கிடைக்கும், உன் உயிரும் சேதமும் # % குறையும்.",
+ "Fjender og bosser er stærkere, og du er svagere.": "எதிரிகளும் பாஸ்களும் வலிமையானவர்கள், நீ பலவீனமானவன்."
 }

@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "فی رینک +# زیادہ سے زیادہ ہیلتھ، مگر −# % حملے کا نقصان۔",
  "@ GIV FØDE": "@ خوراک دیں",
  "MANGLER FØDE": "دینے کو خوراک نہیں",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "جنگلی ریپٹر کو اپنی خوراک کے # حصے @ سے دیں تو وہ آپ کے پیچھے چلے گا۔ اس کے سر کے اوپر والی بار بتاتی ہے کہ اسے کتنا مل چکا ہے۔ جھنڈ آپ کا دفاع کرتا ہے اور اسی کو کاٹتا ہے جسے آپ کاٹتے ہیں۔ @ اسے آپ کے شکار کے پیچھے بھیجتا ہے۔"
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "جنگلی ریپٹر کو اپنی خوراک کے # حصے @ سے دیں تو وہ آپ کے پیچھے چلے گا۔ اس کے سر کے اوپر والی بار بتاتی ہے کہ اسے کتنا مل چکا ہے۔ جھنڈ آپ کا دفاع کرتا ہے اور اسی کو کاٹتا ہے جسے آپ کاٹتے ہیں۔ @ اسے آپ کے شکار کے پیچھے بھیجتا ہے۔",
+ "Sværhedsgrad": "مشکل کی سطح",
+ "Normal": "نارمل",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: دشمنوں کو +# % لائف اور +# % نقصان ملتا ہے، باسز کو +# % لائف اور +# % نقصان، اور آپ کی لائف اور نقصان # % کم ہو جاتے ہیں۔",
+ "Fjender og bosser er stærkere, og du er svagere.": "دشمن اور باسز زیادہ طاقتور ہیں، اور آپ کمزور۔"
 }

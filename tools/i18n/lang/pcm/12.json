@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "+# max health, but −# % attack damage per rank.",
  "@ GIV FØDE": "@ GIVE FOOD",
  "MANGLER FØDE": "FOOD NO DEY",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "Give one wild raptor # of your own food with @, and e go follow you. The bar for top of im head dey show how much e don chop. The pack go defend you and bite wetin you bite. @ go send am go catch your prey."
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "Give one wild raptor # of your own food with @, and e go follow you. The bar for top of im head dey show how much e don chop. The pack go defend you and bite wetin you bite. @ go send am go catch your prey.",
+ "Sværhedsgrad": "Difficulty",
+ "Normal": "Normal",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: enemies get +# % health and +# % damage, bosses get +# % health and +# % damage, and your health and damage reduce by # %.",
+ "Fjender og bosser er stærkere, og du er svagere.": "Enemies and bosses strong pass, and you weak."
 }

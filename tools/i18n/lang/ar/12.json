@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "+# أقصى صحة، لكن −# % ضرر الهجوم لكل رتبة.",
  "@ GIV FØDE": "@ أعطِ طعامًا",
  "MANGLER FØDE": "لا طعام لتعطيه",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "أعطِ رابتورًا بريًا # من طعامك بـ @ فيتبعك. الشريط فوق رأسه يُظهر كم أخذ. القطيع يدافع عنك ويعضّ ما تعضّه. @ يرسله خلف فريستك."
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "أعطِ رابتورًا بريًا # من طعامك بـ @ فيتبعك. الشريط فوق رأسه يُظهر كم أخذ. القطيع يدافع عنك ويعضّ ما تعضّه. @ يرسله خلف فريستك.",
+ "Sværhedsgrad": "مستوى الصعوبة",
+ "Normal": "عادي",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: يحصل الأعداء على +# % من الصحة و+# % من الضرر، والزعماء على +# % من الصحة و+# % من الضرر، وتقل صحتك وضررك بنسبة # %.",
+ "Fjender og bosser er stærkere, og du er svagere.": "الأعداء والزعماء أقوى، وأنت أضعف."
 }

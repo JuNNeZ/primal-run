@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "हर रैंक पर +# मैक्स हेल्थ, लेकिन −# % अटैक डैमेज।",
  "@ GIV FØDE": "@ खाना दो",
  "MANGLER FØDE": "देने को खाना नहीं",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "जंगली रैप्टर को अपने खाने में से # हिस्से @ से दो, तो वह आपके पीछे चलेगा। उसके सिर के ऊपर की बार दिखाती है कि उसे कितना मिल चुका है। पैक आपकी रक्षा करता है और उसी को काटता है जिसे आप काटते हैं। @ उसे आपके शिकार के पीछे भेजता है।"
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "जंगली रैप्टर को अपने खाने में से # हिस्से @ से दो, तो वह आपके पीछे चलेगा। उसके सिर के ऊपर की बार दिखाती है कि उसे कितना मिल चुका है। पैक आपकी रक्षा करता है और उसी को काटता है जिसे आप काटते हैं। @ उसे आपके शिकार के पीछे भेजता है।",
+ "Sværhedsgrad": "कठिनाई",
+ "Normal": "नॉर्मल",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: दुश्मनों को +# % हेल्थ और +# % डैमेज मिलता है, बॉस को +# % हेल्थ और +# % डैमेज, और आपकी हेल्थ और डैमेज # % कम हो जाती है।",
+ "Fjender og bosser er stærkere, og du er svagere.": "दुश्मन और बॉस ज़्यादा ताकतवर हैं, और आप कमज़ोर।"
 }

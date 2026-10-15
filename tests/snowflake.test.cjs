@@ -44,3 +44,15 @@ test('equilibrium: less player health and damage, more animal and boss health an
     assert.ok(on.r.maxHealth < off.r.maxHealth); assert.ok(e.hp > o.hp && e.damage > o.damage);
   } finally { C.FEATURES.equilibrium = true; }
 });
+
+test('difficulty choice: Normal is the equilibrium numbers, Extinction is harder, and the run keeps its choice', () => {
+  const stats = difficulty => { const g = new C.Game({ random: () => .5 }); g.save.selectedSpecies = 'deinonychus'; g.setSetting('difficulty', difficulty); g.start({ seed: 3 }); const r = g.run; r.enemies = []; r.spawnTimer = 1e9;
+    const e = g.spawn('carnotaurus', { x: r.player.x + 300, y: r.player.y }), b = g.spawn('carnotaurus', { x: r.player.x + 300, y: r.player.y }, true); return { g, r, e, b }; };
+  const n = stats('normal'), x = stats('extinction'), bad = stats('nightmare');
+  assert.equal(n.r.difficulty, 'normal'); assert.equal(x.r.difficulty, 'extinction'); assert.equal(bad.g.save.settings.difficulty, 'normal');
+  assert.ok(x.r.maxHealth < n.r.maxHealth); assert.ok(x.e.maxHP > n.e.maxHP && x.e.damage > n.e.damage); assert.ok(x.b.maxHP > n.b.maxHP && x.b.damage > n.b.damage);
+  assert.ok(Math.abs(x.e.maxHP / n.e.maxHP - 1.2 / 1.1) < 1e-9, 'Extinction enemies +20 % HP vs base');
+  x.g.save.settings.difficulty = 'normal'; const later = x.g.spawn('carnotaurus', { x: 0, y: 0 }); assert.equal(later.maxHP, x.e.maxHP, 'a run keeps the difficulty it started with');
+  assert.equal(C.sanitizeSave({ settings: { difficulty: 'extinction' } }).settings.difficulty, 'extinction');
+  assert.equal(C.sanitizeSave({}).settings.difficulty, 'normal');
+});

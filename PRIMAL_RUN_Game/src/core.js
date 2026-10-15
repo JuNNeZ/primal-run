@@ -8,7 +8,7 @@
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
   // Run extras (streak, powerups, twists, ecology pressure, elite traits, baby start, day rhythm, amber) live in run_extras.js.
   const EXTRAS = (typeof module === 'object' && module.exports ? require('./run_extras.js') : globalThis.PrimalExtras) || null;
-  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true};
+  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true};
   // A6: display-only moonlight ramp, entirely within Primal Earth 32.
   FEATURES.nightPalette = true;
   FEATURES.hudIcons = true;
@@ -525,7 +525,7 @@
     for (const u of UPGRADES) save.upgrades[u.id] = Math.floor(clamp(finite(x.upgrades && x.upgrades[u.id]), 0, u.max));
     for (const key of ['master', 'music', 'sfx', 'ambient']) save.settings[key] = clamp(finite(x.settings && x.settings[key], key === 'music' ? .4 : .7), 0, 1);
     save.settings.languageChosen=!!(x.settings&&(x.settings.languageChosen||typeof x.settings.language==='string'));
-    save.settings.autoAttack=!!(x.settings&&x.settings.autoAttack);save.settings.skipIntro=!!(x.settings&&x.settings.skipIntro);save.settings.language=typeof (x.settings&&x.settings.language)==='string'?x.settings.language.slice(0,8):'da';save.settings.reducedMotion=!!(x.settings&&x.settings.reducedMotion);save.settings.babyHard=!!(x.settings&&x.settings.babyHard);
+    save.settings.autoAttack=!!(x.settings&&x.settings.autoAttack);save.settings.skipIntro=!!(x.settings&&x.settings.skipIntro);save.settings.language=typeof (x.settings&&x.settings.language)==='string'?x.settings.language.slice(0,8):'da';save.settings.reducedMotion=!!(x.settings&&x.settings.reducedMotion);save.settings.babyHard=!!(x.settings&&x.settings.babyHard);save.settings.difficulty=x.settings&&x.settings.difficulty==='extinction'?'extinction':'normal';
     for(const key of ['hudScale','textScale'])save.settings[key]=clamp(finite(x.settings&&x.settings[key],1),.85,1.4);
     const defaults={up:'KeyW',down:'KeyS',left:'KeyA',right:'KeyD',attack:'Space',ability:'ShiftLeft',sneak:'KeyC',eat:'KeyF',interact:'KeyE'};save.bindings={...defaults};
     if(x.bindings){const candidate={...defaults};for(const key of Object.keys(defaults))if(/^(Key[A-Z]|Space|ShiftLeft|ShiftRight)$/.test(x.bindings[key]||''))candidate[key]=x.bindings[key];if(new Set(Object.values(candidate)).size===Object.keys(candidate).length)save.bindings=candidate;}
@@ -2936,19 +2936,28 @@
   // expert/optimizer sim bots on top of BOSS_TUNING. FEATURES.raptorDonate: a wild raptor joins after you give it
   // `PACK.donate` of your own food (E, `PACK.donateStep` per press); a bar over its head shows how much it has had.
   const EQUILIBRIUM={player:{hp:.95,damage:.95},npc:{hp:1.1,damage:1.05},boss:{hp:1.1,damage:1.05}}; // sim 2026-10-15 (expert+optimizer, 84 runs): 6.1 levels / 29 % wins → 5.1 / 19 %
+  // Difficulty choice: "normal" is EQUILIBRIUM; "extinction" is the sim's hard variant (3.85 levels, 1 of 84 bot runs won).
+  const DIFFICULTIES={normal:EQUILIBRIUM,extinction:{player:{hp:.9,damage:.9},npc:{hp:1.2,damage:1.15},boss:{hp:1.15,damage:1.1}}};
+  const difficultyOf=g=>{const d=g&&g.run&&g.run.difficulty||FEATURES.difficulties&&g&&g.save&&g.save.settings.difficulty;return DIFFICULTIES[d]?d:'normal';};
+  const eqFor=g=>DIFFICULTIES[difficultyOf(g)];
   const startEq=Game.prototype.start;
   Game.prototype.start=function(options){
-    startEq.call(this,options);const r=this.run;
-    if(r&&FEATURES.equilibrium){r.maxHealth=Math.round(r.maxHealth*EQUILIBRIUM.player.hp);r.health=Math.min(r.health,r.maxHealth);}
+    startEq.call(this,options);const r=this.run;if(r)r.difficulty=difficultyOf({save:this.save});
+    if(r&&FEATURES.equilibrium){r.maxHealth=Math.round(r.maxHealth*eqFor(this).player.hp);r.health=Math.min(r.health,r.maxHealth);}
   };
   const spawnEq=Game.prototype.spawn;
   Game.prototype.spawn=function(kind,position,boss=false){
     const e=spawnEq.call(this,kind,position,boss);
-    if(e&&FEATURES.equilibrium&&!e.equilibrium){const k=e.boss?EQUILIBRIUM.boss:EQUILIBRIUM.npc;e.equilibrium=true;e.hp*=k.hp;e.maxHP*=k.hp;e.damage*=k.damage;}
+    if(e&&FEATURES.equilibrium&&!e.equilibrium){const q=eqFor(this),k=e.boss?q.boss:q.npc;e.equilibrium=true;e.hp*=k.hp;e.maxHP*=k.hp;e.damage*=k.damage;}
     return e;
   };
-  const biteEq=biteBonus;biteBonus=(g,r,e)=>biteEq(g,r,e)*(FEATURES.equilibrium?EQUILIBRIUM.player.damage:1);
-  const abilityEq=abilityHitMul;abilityHitMul=(r,e)=>abilityEq(r,e)*(FEATURES.equilibrium?EQUILIBRIUM.player.damage:1);
+  const biteEq=biteBonus;biteBonus=(g,r,e)=>biteEq(g,r,e)*(FEATURES.equilibrium?DIFFICULTIES[r&&DIFFICULTIES[r.difficulty]?r.difficulty:'normal'].player.damage:1);
+  const abilityEq=abilityHitMul;abilityHitMul=(r,e)=>abilityEq(r,e)*(FEATURES.equilibrium?DIFFICULTIES[r&&DIFFICULTIES[r.difficulty]?r.difficulty:'normal'].player.damage:1);
+  const settingEq=Game.prototype.setSetting;
+  Game.prototype.setSetting=function(key,value){
+    if(key==='difficulty'){this.save.settings.difficulty=FEATURES.difficulties&&DIFFICULTIES[value]?value:'normal';this.persist();return;}
+    return settingEq.call(this,key,value);
+  };
   Object.assign(PACK,{donate:8,donateStep:2});
   const feedEq=Game.prototype.feedRaptor;
   Game.prototype.feedRaptor=function(){
@@ -2962,7 +2971,7 @@
     Object.assign(raptor,{ally:true,mode:'follow',slot:allies,hp:raptor.maxHP});r.partB.alliesRecruited=(r.partB.alliesRecruited||0)+1;
     r.effects.push({x:raptor.x,y:raptor.y-30,text:'NY FLOKFÆLLE',color:'#a2d4c1',life:1.6});this.emit('ally',{id:raptor.id});return true;
   };
-  const API = { EQUILIBRIUM, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, STATIC_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  const API = { EQUILIBRIUM, DIFFICULTIES, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, STATIC_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
   if (EXTRAS) EXTRAS.install(API);
   return API;
 });

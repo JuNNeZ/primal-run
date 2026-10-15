@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "+# de salud máxima, pero −# % de daño de ataque por rango.",
  "@ GIV FØDE": "@ DAR COMIDA",
  "MANGLER FØDE": "SIN COMIDA",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "Dale # de tu propia comida a un raptor salvaje con @ y te seguirá. La barra sobre su cabeza muestra cuánto ha recibido. La manada te defiende y muerde lo que tú muerdes. @ la envía a por tu presa."
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "Dale # de tu propia comida a un raptor salvaje con @ y te seguirá. La barra sobre su cabeza muestra cuánto ha recibido. La manada te defiende y muerde lo que tú muerdes. @ la envía a por tu presa.",
+ "Sværhedsgrad": "Dificultad",
+ "Normal": "Normal",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: los enemigos tienen +# % de vida y +# % de daño, los jefes +# % de vida y +# % de daño, y tú tienes # % menos de vida y daño.",
+ "Fjender og bosser er stærkere, og du er svagere.": "Los enemigos y los jefes son más fuertes, y tú eres más débil."
 }

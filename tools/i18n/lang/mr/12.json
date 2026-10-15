@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "प्रत्येक रँकला +# कमाल हेल्थ, पण −# % हल्ला नुकसान.",
  "@ GIV FØDE": "@ खाद्य द्या",
  "MANGLER FØDE": "द्यायला खाद्य नाही",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "जंगली रॅप्टरला तुमच्या खाद्यातील # भाग @ ने द्या, मग तो तुमच्या मागे येईल. त्याच्या डोक्यावरची बार दाखवते की त्याला किती मिळाले आहे. कळप तुमचे रक्षण करतो आणि तुम्ही ज्याला चावता त्याला चावतो. @ त्याला तुमच्या सावजामागे पाठवते."
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "जंगली रॅप्टरला तुमच्या खाद्यातील # भाग @ ने द्या, मग तो तुमच्या मागे येईल. त्याच्या डोक्यावरची बार दाखवते की त्याला किती मिळाले आहे. कळप तुमचे रक्षण करतो आणि तुम्ही ज्याला चावता त्याला चावतो. @ त्याला तुमच्या सावजामागे पाठवते.",
+ "Sværhedsgrad": "अडचण पातळी",
+ "Normal": "नॉर्मल",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: शत्रूंना +# % हेल्थ आणि +# % डॅमेज मिळते, बॉसना +# % हेल्थ आणि +# % डॅमेज, आणि तुमचे हेल्थ आणि डॅमेज # % कमी होते.",
+ "Fjender og bosser er stærkere, og du er svagere.": "शत्रू आणि बॉस जास्त बलवान आहेत, आणि तुम्ही कमकुवत."
 }

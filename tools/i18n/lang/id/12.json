@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "+# HP maks, tapi −# % damage serangan per rank.",
  "@ GIV FØDE": "@ BERI MAKANAN",
  "MANGLER FØDE": "TIDAK ADA MAKANAN",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "Beri raptor liar # makananmu sendiri dengan @, dan ia akan mengikutimu. Bar di atas kepalanya menunjukkan berapa banyak yang sudah ia dapat. Kawanan membelamu dan menggigit apa yang kamu gigit. @ menyuruhnya mengejar mangsamu."
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "Beri raptor liar # makananmu sendiri dengan @, dan ia akan mengikutimu. Bar di atas kepalanya menunjukkan berapa banyak yang sudah ia dapat. Kawanan membelamu dan menggigit apa yang kamu gigit. @ menyuruhnya mengejar mangsamu.",
+ "Sværhedsgrad": "Tingkat kesulitan",
+ "Normal": "Normal",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: musuh mendapat +# % nyawa dan +# % damage, bos +# % nyawa dan +# % damage, dan nyawa serta damage-mu berkurang # %.",
+ "Fjender og bosser er stærkere, og du er svagere.": "Musuh dan bos lebih kuat, dan kamu lebih lemah."
 }

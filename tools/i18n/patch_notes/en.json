@@ -96,5 +96,13 @@
  "<b>Raptorflokken:</b> En vild raptor følger dig, når du har givet den 8 portioner af din egen føde. En bar over dens hoved viser, hvor meget den har fået.": "<b>The raptor pack:</b> A wild raptor follows you once you have given it 8 portions of your own food. A bar over its head shows how much it has had.",
  "<b>Ankylosaurus:</b> Pigpanser og Halekølle-knogle rammer kun dyr, der angriber dig, og lava, gift og torne udløser dem ikke længere. Auto-angreb går kun efter dyr, der angriber dig.": "<b>Ankylosaurus:</b> Spiked Armour and Tail Club Bone only hit animals that attack you, and lava, poison and thorns no longer trigger them. Auto-attack only targets animals that attack you.",
  "<b>Tekster:</b> Mutationer, der gælder alle arter, siger nu angrebsskade og angrebsrækkevidde i stedet for bid.": "<b>Texts:</b> Mutations that apply to every species now say attack damage and attack reach instead of bite.",
- "Tak til spiltesteren Snowflake for fundene.": "Thanks to playtester Snowflake for the finds."
+ "Tak til spiltesteren Snowflake for fundene.": "Thanks to playtester Snowflake for the finds.",
+ "A6 · nye ikoner og lavakanter · 12. oktober 2026": "A6 · new icons and lava edges · 12 October 2026",
+ "Mad, DNA og område har nye pixelikoner ved siden af de eksisterende tal og navne.": "Food, DNA and area now have new pixel icons next to the existing numbers and names.",
+ "Lavaen får teksturerede aske- og basaltkanter. Sikre basaltpassager følger fortsat de samme regler.": "Lava gets textured ash and basalt edges. Safe basalt passages still follow the same rules.",
+ "Flok- og reroll-ikoner er klar til den kommende Part C-opdatering.": "Pack and reroll icons are ready for the upcoming Part C update.",
+ "A-serien · nattens farver · 12. oktober 2026": "A series · colors of the night · 12 October 2026",
+ "Dinosaurer og ådsler får mørkere natfarver fra spillets fælles palet. Farvedragter følger med, og de almindelige farver vender tilbage om dagen.": "Dinosaurs and carcasses get darker night colors from the game's shared palette. Color skins follow along, and the normal colors return during the day.",
+ "Artsangreb, dyreadfærd, såret gang, vandkanter og raptor-ådsler fra A1–A5 er integreret i udviklingsversionen.": "Species attacks, animal behavior, wounded gait, water edges and raptor carcasses from A1–A5 are integrated into the development build.",
+ "<b>Sværhedsgrad:</b> Vælg Normal eller Extinction difficulty, før jagten starter. Extinction gør fjender og bosser endnu stærkere og dig svagere.": "<b>Difficulty:</b> Choose Normal or Extinction difficulty before the hunt starts. Extinction makes enemies and bosses even stronger and you weaker."
 }

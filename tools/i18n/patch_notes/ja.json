@@ -96,5 +96,13 @@
  "<b>Raptorflokken:</b> En vild raptor følger dig, når du har givet den 8 portioner af din egen føde. En bar over dens hoved viser, hvor meget den har fået.": "<b>ラプトルの群れ:</b> 野生のラプトルは、自分の食料を8個与えると仲間になる。頭上のバーがもらった量を示す。",
  "<b>Ankylosaurus:</b> Pigpanser og Halekølle-knogle rammer kun dyr, der angriber dig, og lava, gift og torne udløser dem ikke længere. Auto-angreb går kun efter dyr, der angriber dig.": "<b>アンキロサウルス:</b> トゲの装甲と尾槌の骨は、きみを攻撃する動物にだけ当たり、溶岩・毒・トゲでは発動しなくなった。オート攻撃もきみを攻撃する動物だけを狙う。",
  "<b>Tekster:</b> Mutationer, der gælder alle arter, siger nu angrebsskade og angrebsrækkevidde i stedet for bid.": "<b>テキスト:</b> 全種共通の突然変異は「噛みつき」ではなく攻撃ダメージ・攻撃範囲と表記するようになった。",
- "Tak til spiltesteren Snowflake for fundene.": "テスターのSnowflakeさん、発見をありがとう。"
+ "Tak til spiltesteren Snowflake for fundene.": "テスターのSnowflakeさん、発見をありがとう。",
+ "A6 · nye ikoner og lavakanter · 12. oktober 2026": "A6 · 新アイコンと溶岩の縁 · 2026年10月12日",
+ "Mad, DNA og område har nye pixelikoner ved siden af de eksisterende tal og navne.": "食料、DNA、エリアに、既存の数字や名前の横に表示される新しいピクセルアイコンが加わりました。",
+ "Lavaen får teksturerede aske- og basaltkanter. Sikre basaltpassager følger fortsat de samme regler.": "溶岩に、灰と玄武岩のテクスチャ付きの縁が追加されました。安全な玄武岩の通路は、これまでと同じルールのままです。",
+ "Flok- og reroll-ikoner er klar til den kommende Part C-opdatering.": "群れとリロールのアイコンは、次のパートCアップデートに向けて準備できています。",
+ "A-serien · nattens farver · 12. oktober 2026": "Aシリーズ · 夜の色 · 2026年10月12日",
+ "Dinosaurer og ådsler får mørkere natfarver fra spillets fælles palet. Farvedragter følger med, og de almindelige farver vender tilbage om dagen.": "恐竜と死骸が、ゲーム共通パレットのより暗い夜の色になります。カラースキンも連動し、昼には通常の色に戻ります。",
+ "Artsangreb, dyreadfærd, såret gang, vandkanter og raptor-ådsler fra A1–A5 er integreret i udviklingsversionen.": "A1–A5の種ごとの攻撃、動物の行動、負傷時の歩行、水辺、ラプトルの死骸が開発版に統合されました。",
+ "<b>Sværhedsgrad:</b> Vælg Normal eller Extinction difficulty, før jagten starter. Extinction gør fjender og bosser endnu stærkere og dig svagere.": "<b>難易度：</b>狩りを始める前にノーマルかExtinction difficultyを選べます。Extinctionでは敵とボスがさらに強くなり、あなたは弱くなります。"
 }

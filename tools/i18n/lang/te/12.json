@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "ప్రతి ర్యాంక్కు +# గరిష్ట హెల్త్, కానీ −# % ఎటాక్ డ్యామేజ్.",
  "@ GIV FØDE": "@ ఆహారం ఇవ్వు",
  "MANGLER FØDE": "ఇవ్వడానికి ఆహారం లేదు",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "మీ సొంత ఆహారంలో # భాగాలను @ తో ఒక అడవి రాప్టర్కు ఇవ్వండి, అది మిమ్మల్ని అనుసరిస్తుంది. దాని తల మీద ఉన్న బార్ అది ఎంత తిన్నదో చూపిస్తుంది. గుంపు మిమ్మల్ని కాపాడుతుంది, మీరు కొరికేదాన్నే అదీ కొరుకుతుంది. @ దాన్ని మీ వేట వెంట పంపుతుంది."
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "మీ సొంత ఆహారంలో # భాగాలను @ తో ఒక అడవి రాప్టర్కు ఇవ్వండి, అది మిమ్మల్ని అనుసరిస్తుంది. దాని తల మీద ఉన్న బార్ అది ఎంత తిన్నదో చూపిస్తుంది. గుంపు మిమ్మల్ని కాపాడుతుంది, మీరు కొరికేదాన్నే అదీ కొరుకుతుంది. @ దాన్ని మీ వేట వెంట పంపుతుంది.",
+ "Sværhedsgrad": "కష్టం స్థాయి",
+ "Normal": "నార్మల్",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: శత్రువులకు +# % హెల్త్, +# % డ్యామేజ్ వస్తాయి, బాస్‌లకు +# % హెల్త్, +# % డ్యామేజ్ వస్తాయి, మీ హెల్త్, డ్యామేజ్ # % తగ్గుతాయి.",
+ "Fjender og bosser er stærkere, og du er svagere.": "శత్రువులు, బాస్‌లు బలంగా ఉంటారు, మీరు బలహీనంగా ఉంటారు."
 }

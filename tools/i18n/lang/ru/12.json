@@ -20,5 +20,10 @@
  "+# maksimalt liv, men −# % angrebsskade pr. rang.": "+# к макс. здоровью, но −# % к урону атаки за ранг.",
  "@ GIV FØDE": "@ ДАТЬ ЕДУ",
  "MANGLER FØDE": "НЕТ ЕДЫ",
- "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "Дайте дикому раптору # своей еды с помощью @, и он пойдёт за вами. Полоска над его головой показывает, сколько он уже получил. Стая защищает вас и кусает то, что кусаете вы. @ отправляет её за вашей добычей."
+ "Giv en vild raptor # af din egen føde med @, så følger den dig. Baren over dens hoved viser, hvor meget den har fået. Flokken forsvarer dig og bider det, du bider. @ sender den efter dit bytte.": "Дайте дикому раптору # своей еды с помощью @, и он пойдёт за вами. Полоска над его головой показывает, сколько он уже получил. Стая защищает вас и кусает то, что кусаете вы. @ отправляет её за вашей добычей.",
+ "Sværhedsgrad": "Сложность",
+ "Normal": "Нормальная",
+ "Extinction difficulty": "Extinction difficulty",
+ "Extinction: fjender har +# % liv og +# % skade, bosser +# % liv og +# % skade, og du har # % mindre liv og skade.": "Extinction: у врагов +# % здоровья и +# % урона, у боссов +# % здоровья и +# % урона, а у вас на # % меньше здоровья и урона.",
+ "Fjender og bosser er stærkere, og du er svagere.": "Враги и боссы сильнее, а вы слабее."
 }
