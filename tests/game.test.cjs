@@ -2,6 +2,7 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const C = require('../PRIMAL_RUN_Game/src/core.js');
+C.FEATURES.equilibrium = false; // exact pre-Snowflake HP/damage numbers; tests/snowflake.test.cjs covers the multipliers
 const fs = require('node:fs'), path = require('node:path'), crypto = require('node:crypto');
 function storage() { const values = new Map(); return { getItem: key => values.get(key) || null, setItem: (key, value) => values.set(key, value) }; }
 function make(random = () => .5, store = storage()) { const g = new C.Game({ storage: store, random }); g.save.unlockedSpecies.push('utahraptor'); g.selectSpecies('utahraptor'); g.start({campaign:'classic'}); g.run.enemies = []; g.run.spawnTimer = 999; return g; }
