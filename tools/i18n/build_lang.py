@@ -15,10 +15,11 @@ from tr_fun import TLH, SJN
 from tr_input import INPUT
 from tr_extras import EXTRAS
 from tr_ash import ASH
+from tr_snowflake import SNOWFLAKE
 LANGS = ['en', 'de', 'sv', 'no', 'ja', 'zh']
 dicts = {l: {} for l in LANGS}
 seen = {}
-for row in CORE + UI + RECORDS + PART_B + INPUT + PART_C + SPECIES_D + EXTRAS + ASH:
+for row in CORE + UI + RECORDS + PART_B + INPUT + PART_C + SPECIES_D + EXTRAS + ASH + SNOWFLAKE:
     da, *rest = row
     if len(rest) != len(LANGS):
         raise SystemExit(f'Row needs {len(LANGS)} translations: {da}')

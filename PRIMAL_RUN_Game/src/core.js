@@ -8,7 +8,7 @@
   const RECORDS = (typeof module === 'object' && module.exports ? require('./records.js') : globalThis.PrimalRecords) || null, PX_PER_METER = RECORDS ? RECORDS.PX_PER_METER : 20;
   // Run extras (streak, powerups, twists, ecology pressure, elite traits, baby start, day rhythm, amber) live in run_extras.js.
   const EXTRAS = (typeof module === 'object' && module.exports ? require('./run_extras.js') : globalThis.PrimalExtras) || null;
-  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true};
+  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true};
   // A6: display-only moonlight ramp, entirely within Primal Earth 32.
   FEATURES.nightPalette = true;
   FEATURES.hudIcons = true;
@@ -239,7 +239,7 @@
     { id: 'feathers', name: 'Udholdenhed', text: '+20 % stamina-regeneration.', icon: 'insulating_feathers', max: 3 },
     { id: 'heart', name: 'Stærkt hjerte', text: '+15 maksimalt liv. Hel også 15 liv.', icon: 'health', max: 3 },
     { id: 'armor', name: 'Sej hud', text: 'Tag 8 % mindre skade.', icon: 'armor', max: 3 },
-    { id: 'reach', name: 'Jagtinstinkt', text: '+10 pixels bidrækkevidde og opsamlingsradius.', icon: 'hunger', max: 3 },
+    { id: 'reach', name: 'Jagtinstinkt', text: '+10 pixels angrebsrækkevidde og opsamlingsradius.', icon: 'hunger', max: 3 },
     { id: 'pounce', name: 'Effektiv evne', text: 'Din arts evne koster 5 mindre stamina.', icon: 'escape', max: 3 },
     { id: 'quick', name: 'Hurtige angreb', text: '8 % kortere cooldown mellem angreb.', icon: 'bone', max: 3 },
     { id: 'scavenger', name: 'Effektiv fordøjelse', text: 'Din arts føde heler 1 liv pr. fødeværdi pr. rang.', icon: 'hunger', max: 3 },
@@ -525,7 +525,7 @@
     for (const u of UPGRADES) save.upgrades[u.id] = Math.floor(clamp(finite(x.upgrades && x.upgrades[u.id]), 0, u.max));
     for (const key of ['master', 'music', 'sfx', 'ambient']) save.settings[key] = clamp(finite(x.settings && x.settings[key], key === 'music' ? .4 : .7), 0, 1);
     save.settings.languageChosen=!!(x.settings&&(x.settings.languageChosen||typeof x.settings.language==='string'));
-    save.settings.autoAttack=!!(x.settings&&x.settings.autoAttack);save.settings.skipIntro=!!(x.settings&&x.settings.skipIntro);save.settings.language=typeof (x.settings&&x.settings.language)==='string'?x.settings.language.slice(0,8):'da';save.settings.reducedMotion=!!(x.settings&&x.settings.reducedMotion);save.settings.babyHard=!!(x.settings&&x.settings.babyHard);
+    save.settings.autoAttack=!!(x.settings&&x.settings.autoAttack);save.settings.skipIntro=!!(x.settings&&x.settings.skipIntro);save.settings.language=typeof (x.settings&&x.settings.language)==='string'?x.settings.language.slice(0,8):'da';save.settings.reducedMotion=!!(x.settings&&x.settings.reducedMotion);save.settings.babyHard=!!(x.settings&&x.settings.babyHard);save.settings.difficulty=x.settings&&x.settings.difficulty==='extinction'?'extinction':'normal';
     for(const key of ['hudScale','textScale'])save.settings[key]=clamp(finite(x.settings&&x.settings[key],1),.85,1.4);
     const defaults={up:'KeyW',down:'KeyS',left:'KeyA',right:'KeyD',attack:'Space',ability:'ShiftLeft',sneak:'KeyC',eat:'KeyF',interact:'KeyE'};save.bindings={...defaults};
     if(x.bindings){const candidate={...defaults};for(const key of Object.keys(defaults))if(/^(Key[A-Z]|Space|ShiftLeft|ShiftRight)$/.test(x.bindings[key]||''))candidate[key]=x.bindings[key];if(new Set(Object.values(candidate)).size===Object.keys(candidate).length)save.bindings=candidate;}
@@ -835,7 +835,7 @@
     abandon() { if (this.run && !this.run.result) this.finish(false); this.phase = 'menu'; }
     addDNA(amount,quiet=false) { this.save.dna += amount; this.run.dna += amount;this.run.stats.dna+=amount; this.persist(); this.emit('dna', { amount, quiet }); }
     addXP(amount) { this.run.xp += amount; this.maybeLevelUp(); }
-    mutationAvailable(m){const r=this.run;return (!m.species||m.species===r.species)&&(!m.diets||m.diets.includes(PLAYER_SPECIES[r.species].diet))&&r.mutations[m.id]<m.max;}
+    mutationAvailable(m){const r=this.run;if(m.tradeoff&&!FEATURES.tradeoffMutations)return false;return (!m.species||m.species===r.species)&&(!m.diets||m.diets.includes(PLAYER_SPECIES[r.species].diet))&&r.mutations[m.id]<m.max;}
     offerRareReward(){
       const r=this.run;if(this.phase!=='playing'||!r.rareRewards)return false;r.rareRewards--;if(r.rareRewardSources?.length)r.rewardSource=r.rareRewardSources.shift();
       const pool=MUTATIONS.filter(m=>m.rarity==='epic'&&this.mutationAvailable(m));
@@ -904,7 +904,7 @@
     damage(amount, source) {
       const r = this.run; if (r.invulnerable > 0 || (r.pounce > 0 && ['compy', 'utahraptor','velociraptor','deinonychus'].includes(kindOf(r))) || this.phase !== 'playing') {if(this.phase==='playing'&&source){r.stats.avoidedHits++;if(!r.lastDodgeText||r.seconds-r.lastDodgeText>.6){r.lastDodgeText=r.seconds;r.effects.push({x:r.player.x,y:r.player.y,text:'UNDVIGET',color:FEATURES.combatColors?'#dfbc52':'#a2d4c1',life:.55});}}return;}
       r.eating=null;r.staminaDelay=Math.max(r.staminaDelay,1);r.revealedUntil=r.seconds+1;r.hidden=false;r.concealTime=0; const facing={N:[0,-1],S:[0,1],E:[1,0],W:[-1,0]}[r.player.facing];const sx=source?source.x-r.player.x:0,sy=source?source.y-r.player.y:0,sd=Math.hypot(sx,sy);const front=kindOf(r)==='triceratops'&&sd>0&&(sx*facing[0]+sy*facing[1])/sd>.35;amount*=(1+.12*r.mutations.glassCannon+.15*r.mutations.lightFrame)*(front?1-.25-.1*r.mutations.frill-.15*r.mutations.hornWall-fx(r,'front'):1); amount*= (1 - .08 * r.mutations.armor) * (kindOf(r) === 'ankylosaurus' && r.pounce > 0 ? .25 : 1) * takenMul(r,source);const shielded=Math.min(r.shield,amount);r.shield-=shielded;amount-=shielded;r.stats.damageTaken+=Math.min(r.health,amount);if(source&&source.boss)source.hitPlayer=true;r.lastHit=source&&Object.hasOwn(SPECIES,source.kind)?{kind:source.kind,direction:source.direction,mode:source.mode,boss:!!source.boss,sex:source.sex}:null;r.health = Math.max(0, r.health - amount); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
-      if (kindOf(r) === 'ankylosaurus' && r.mutations.spikes) { for (const e of r.enemies) if (Math.hypot(e.x-r.player.x,e.y-r.player.y)<110) { e.hp -= 4*r.mutations.spikes*(e.npcGuardUntil>r.seconds?.25:1); this.provoke(e); } }
+      if (kindOf(r) === 'ankylosaurus' && r.mutations.spikes && source && !source.hazard) { for (const e of r.enemies) if (Math.hypot(e.x-r.player.x,e.y-r.player.y)<110 && (e === source || e.alert && e.damage)) { /* only a real attacker and hostile animals, never grazers or lava/poison ticks */ e.hp -= 4*r.mutations.spikes*(e.npcGuardUntil>r.seconds?.25:1); this.provoke(e); } }
       onPlayerHurt(this,r,source);
       if (r.health <= 0 && (FEATURES.secondWind || FEATURES.labTracks && r.upgrades.secondWind > 0) && !r.secondWindUsed) { r.secondWindUsed = true; r.health = 1; r.invulnerable = Math.max(r.invulnerable, 1.5); r.effects.push({ x: r.player.x, y: r.player.y, text: 'ANDET PUST', color: '#e9b75a', life: 1 }); this.emit('second_wind'); }
       if (r.health <= 0) this.finish(false);
@@ -2278,7 +2278,7 @@
     {id:'thickHide',name:'Tyk hud, tung krop',text:'Tag 20 % mindre skade, men −10 % fart.',icon:'armor',max:1,rarity:'uncommon',blueprint:true},
     {id:'bloodthirst',name:'Blodtørst',text:'+30 % angrebsskade, men føde heler dig ikke.',icon:'serrated_teeth',max:1,rarity:'rare',blueprint:true},
     {id:'adrenaline',name:'Adrenalin',text:'Under 30 % liv: +20 % fart og 15 % hurtigere angreb.',icon:'powerful_legs',max:1,rarity:'uncommon',blueprint:true},
-    {id:'lifeBite',name:'Livsbid',text:'5 % af din bidskade heler dig pr. rang.',icon:'health',max:2,rarity:'rare',blueprint:true}
+    {id:'lifeBite',name:'Livsbid',text:'5 % af din angrebsskade heler dig pr. rang.',icon:'health',max:2,rarity:'rare',blueprint:true}
   );
   const BLUEPRINTS=[{id:'preyDrive',cost:30},{id:'thickHide',cost:40},{id:'bloodthirst',cost:40},{id:'adrenaline',cost:50},{id:'lifeBite',cost:60}];
   // Evolutions (proposal 7): a mutation at max rank plus a partner unlocks a stronger card; one per species.
@@ -2395,7 +2395,7 @@
   }
   function regenBonus(r,inCombat){const m=r.mutations;return (m.windHeir&&inCombat?STAMINA.regen/STAMINA.combatRegen:1)*(m.keeperCalm?1.3:1)*(1+fx(r,'regen'));}
   function cooldownBonus(r){return (setActive(r,'speed')?.9:1)*(1-.12*(r.mutations.quickClaw||0))*Math.max(.4,1-fx(r,'cooldown'));}
-  function attackSpeedBonus(r){const m=r.mutations;return (m.adrenaline&&r.health<r.maxHealth*.3?.85:1)*(m.emberFury?.9:1);}
+  function attackSpeedBonus(r){const m=r.mutations;return (m.adrenaline&&r.health<r.maxHealth*.3?.85:1)*(m.emberFury?.9:1)*Math.max(.5,1-fx(r,'atk'));}
   function takenMul(r,source){
     const m=r.mutations,animal=source&&!source.hazard;let t=1;
     if(m.thickHide)t*=.8;
@@ -2407,7 +2407,7 @@
   }
   function onPlayerHurt(g,r,source){
     newPlayerHurt(g,r,source);
-    if(r.mutations.clubBone&&source&&!source.hazard)for(const e of r.enemies)if(Math.hypot(e.x-r.player.x,e.y-r.player.y)<100){e.hp-=8*(e.npcGuardUntil>r.seconds?.25:1);g.provoke(e);}
+    if(r.mutations.clubBone&&source&&!source.hazard)for(const e of r.enemies)if(Math.hypot(e.x-r.player.x,e.y-r.player.y)<100&&(e===source||e.alert&&e.damage)){e.hp-=8*(e.npcGuardUntil>r.seconds?.25:1);g.provoke(e);}
   }
   function foodHeal(r,value,fish=false){
     const m=r.mutations;if(m.bloodthirst)return 0;
@@ -2693,7 +2693,7 @@
       ['paraChorus','Kor','Trompetkaldet kalder 2 ekstra parasaurolophusser.','escape',1,'legendary','ability',{callExtra:2}]],
      ['paraThunder','Tordenkald','Trompetkaldet kalder 4 parasaurolophusser, der kæmper med i 12 sek.','escape',[['paraCall',2],['legs',1]]]],
     ['therizinosaurus',[
-      ['theriClaw','Leklø','+8 % bidskade pr. rang.','serrated_teeth',3,'common','attack',{bite:.08}],
+      ['theriClaw','Leklø','+8 % kloskade pr. rang.','serrated_teeth',3,'common','attack',{bite:.08}],
       ['theriBulk','Tung krop','+15 maksimalt liv pr. rang.','health',3,'uncommon','defense',{hp:15}],
       ['theriReach','Lange arme','Springet gør +20 % skade pr. rang.','powerful_legs',2,'rare','ability',{ability:.2}],
       ['theriCalm','Rolig kæmpe','Stamina genvindes 15 % hurtigere pr. rang.','stamina',2,'epic','food',{regen:.15}],
@@ -2745,6 +2745,20 @@
       const evo={id:eid,species,name:ename,text:etext,requires,icon:eicon};EVOLUTIONS.push(evo);MUTATIONS.push({...evo,max:1,rarity:'evolution',evolution:true});if(efx)FX[eid]=efx;
     }
   }
+  // The Snowflake equilibrium patch (FEATURES.tradeoffMutations): plus/minus mutations, mostly epic, so an epic
+  // genome (elite/albino reward) offers more than the same three cards. Pure FX data; `hp` changes max health when
+  // chosen (Part C choose hook), `atk` shortens (+) or lengthens (−) the attack cooldown.
+  const TRADEOFF_MUTATIONS=[
+    ['bloodPact','Blodpagt','+30 % angrebsskade, men −20 maksimalt liv.','serrated_teeth',1,'epic','attack',{bite:.3,hp:-20}],
+    ['stoneSkin','Stenhud','Tag 25 % mindre skade, men −12 % fart.','armor',1,'epic','defense',{armor:.25,speed:-.12}],
+    ['huntPulse','Jagtpuls','20 % hurtigere angreb, men −25 % stamina-regeneration.','bone',1,'epic','attack',{atk:.2,regen:-.25}],
+    ['giantGrowth','Kæmpevækst','+40 maksimalt liv, men −15 % fart og 10 % langsommere angreb.','health',1,'epic','defense',{hp:40,speed:-.15,atk:-.1}],
+    ['adrenalGland','Adrenalinkirtel','Evner koster 10 mindre stamina og gør +30 % skade, men du tager 15 % mere skade.','escape',1,'epic','ability',{cost:10,ability:.3,armor:-.15}],
+    ['killerEye','Dræberblik','+15 % chance for kritisk træf, men −10 % angrebsskade.','dna',1,'epic','crit',{crit:.15,bite:-.1}],
+    ['nimbleFrame','Smidig krop','+10 % fart og 10 % hurtigere angreb, men −10 maksimalt liv pr. rang.','powerful_legs',2,'rare','speed',{speed:.1,atk:.1,hp:-10}],
+    ['thickSkull','Knoglehjelm','+20 maksimalt liv, men −8 % angrebsskade pr. rang.','health',2,'uncommon','defense',{hp:20,bite:-.08}]
+  ];
+  if(FEATURES.tradeoffMutations)for(const [id,name,text,icon,max,rarity,tag,effect] of TRADEOFF_MUTATIONS){MUTATIONS.push({id,name,text,icon,max,rarity,tag,tradeoff:true});FX[id]=effect;}
   const FX_IDS=Object.keys(FX);
   function fx(r,key){let s=0;for(const id of FX_IDS){const n=r.mutations[id];if(n&&FX[id][key])s+=n*FX[id][key];}return s;}
   function kindOf(r){return r.kind||(PLAYER_SPECIES[r.species]&&PLAYER_SPECIES[r.species].base)||r.species;}
@@ -2917,7 +2931,47 @@
     return out;
   };
   if(FEATURES.ashLevel)ACHIEVEMENTS.push({id:'ashSurvivor',name:'Udryddelsens overlever',text:'Besejr Ragnar den Arrede i den hemmelige askebane.',dna:50,check:c=>!!c.flags.ashSurvivor});
-  const API = { ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, STATIC_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  // ---- The Snowflake equilibrium patch (2026-10-15, tester Snowflake/Mikkel): the game was still too easy.
+  // FEATURES.equilibrium: player max health and damage down, every animal and boss up (HP and damage), tuned with the
+  // expert/optimizer sim bots on top of BOSS_TUNING. FEATURES.raptorDonate: a wild raptor joins after you give it
+  // `PACK.donate` of your own food (E, `PACK.donateStep` per press); a bar over its head shows how much it has had.
+  const EQUILIBRIUM={player:{hp:.95,damage:.95},npc:{hp:1.1,damage:1.05},boss:{hp:1.1,damage:1.05}}; // sim 2026-10-15 (expert+optimizer, 84 runs): 6.1 levels / 29 % wins → 5.1 / 19 %
+  // Difficulty choice: "normal" is EQUILIBRIUM; "extinction" is the sim's hard variant (3.85 levels, 1 of 84 bot runs won).
+  const DIFFICULTIES={normal:EQUILIBRIUM,extinction:{player:{hp:.9,damage:.9},npc:{hp:1.2,damage:1.15},boss:{hp:1.15,damage:1.1}}};
+  const difficultyOf=g=>{const d=g&&g.run&&g.run.difficulty||FEATURES.difficulties&&g&&g.save&&g.save.settings.difficulty;return DIFFICULTIES[d]?d:'normal';};
+  const eqFor=g=>DIFFICULTIES[difficultyOf(g)];
+  const startEq=Game.prototype.start;
+  Game.prototype.start=function(options){
+    startEq.call(this,options);const r=this.run;if(r)r.difficulty=difficultyOf({save:this.save});
+    if(r&&FEATURES.equilibrium){r.maxHealth=Math.round(r.maxHealth*eqFor(this).player.hp);r.health=Math.min(r.health,r.maxHealth);}
+  };
+  const spawnEq=Game.prototype.spawn;
+  Game.prototype.spawn=function(kind,position,boss=false){
+    const e=spawnEq.call(this,kind,position,boss);
+    if(e&&FEATURES.equilibrium&&!e.equilibrium){const q=eqFor(this),k=e.boss?q.boss:q.npc;e.equilibrium=true;e.hp*=k.hp;e.maxHP*=k.hp;e.damage*=k.damage;}
+    return e;
+  };
+  const biteEq=biteBonus;biteBonus=(g,r,e)=>biteEq(g,r,e)*(FEATURES.equilibrium?DIFFICULTIES[r&&DIFFICULTIES[r.difficulty]?r.difficulty:'normal'].player.damage:1);
+  const abilityEq=abilityHitMul;abilityHitMul=(r,e)=>abilityEq(r,e)*(FEATURES.equilibrium?DIFFICULTIES[r&&DIFFICULTIES[r.difficulty]?r.difficulty:'normal'].player.damage:1);
+  const settingEq=Game.prototype.setSetting;
+  Game.prototype.setSetting=function(key,value){
+    if(key==='difficulty'){this.save.settings.difficulty=FEATURES.difficulties&&DIFFICULTIES[value]?value:'normal';this.persist();return;}
+    return settingEq.call(this,key,value);
+  };
+  Object.assign(PACK,{donate:8,donateStep:2});
+  const feedEq=Game.prototype.feedRaptor;
+  Game.prototype.feedRaptor=function(){
+    if(!FEATURES.raptorDonate)return feedEq.call(this);
+    const r=this.run,allies=(r.raptors||[]).filter(a=>a.ally&&!a.temp).length;if(!FEATURES.raptorPack||allies>=PACK.max)return false;
+    const raptor=(r.raptors||[]).find(a=>!a.ally&&Math.hypot(a.x-r.player.x,a.y-r.player.y)<PACK.feedReach);if(!raptor)return false;
+    if(r.meat<1){r.effects.push({x:raptor.x,y:raptor.y-30,text:'MANGLER FØDE',color:'#de954a',life:1});return true;}
+    const give=Math.min(PACK.donateStep,r.meat,PACK.donate-(raptor.fed||0));r.meat-=give;raptor.fed=(raptor.fed||0)+give;
+    r.stats.donated=(r.stats.donated||0)+give;this.emit('pickup');
+    if(raptor.fed<PACK.donate){r.effects.push({x:raptor.x,y:raptor.y-30,text:raptor.fed+'/'+PACK.donate,color:'#e9b75a',life:.8});return true;}
+    Object.assign(raptor,{ally:true,mode:'follow',slot:allies,hp:raptor.maxHP});r.partB.alliesRecruited=(r.partB.alliesRecruited||0)+1;
+    r.effects.push({x:raptor.x,y:raptor.y-30,text:'NY FLOKFÆLLE',color:'#a2d4c1',life:1.6});this.emit('ally',{id:raptor.id});return true;
+  };
+  const API = { EQUILIBRIUM, DIFFICULTIES, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, STATIC_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
   if (EXTRAS) EXTRAS.install(API);
   return API;
 });

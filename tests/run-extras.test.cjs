@@ -85,7 +85,7 @@ test('rare albinos are moved to the most remote suitable habitat', () => {
 test('raptor pack is capped by species strength: Spinosaurus recruits none, Baryonyx one, Velociraptor two', () => {
   const recruits = species => {
     const g = make(species, 3), r = g.run; r.invulnerable = 1e9; let n = 0;
-    for (const a of r.raptors.slice(0, 2)) { Object.assign(r.player, { x: a.x + 50, y: a.y }); r.pickups.push({ id: 9100 + n, kind: 'meat', corpseId: 77, value: 3, x: a.x + 20, y: a.y + 10 }); g.step(1 / 30, { interact: true }); n++; }
+    for (const a of r.raptors.slice(0, 2)) { Object.assign(r.player, { x: a.x + 50, y: a.y }); r.pickups.push({ id: 9100 + n, kind: 'meat', corpseId: 77, value: 3, x: a.x + 20, y: a.y + 10 }); r.meat = 20; for (let i = 0; i < (C.FEATURES.raptorDonate ? C.PACK.donate / C.PACK.donateStep : 1); i++) g.step(1 / 30, { interact: true }); n++; }
     return r.raptors.filter(a => a.ally).length;
   };
   assert.equal(C.PACK.max, 2);

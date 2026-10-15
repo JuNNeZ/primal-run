@@ -206,7 +206,7 @@ const shots = path.resolve(__dirname, '../PRIMAL_RUN_Game/previews');
     // ---- B5 Raptor-flok: a real E key press next to a wild raptor with a corpse beside it recruits it (en label + da).
     for (const lang of ['en', 'da']) {
       await open(lang);
-      const label = await page.evaluate(() => { const g = primalRun.game; g.phase = 'menu'; g.start({ seed: 3 }); const r = g.run; r.enemies = []; r.spawnTimer = 1e9; r.invulnerable = 1e9;
+      const label = await page.evaluate(() => { PrimalCore.FEATURES.raptorDonate = false; /* classic corpse recruit; donation is covered by snowflake.test.cjs */ const g = primalRun.game; g.phase = 'menu'; g.start({ seed: 3 }); const r = g.run; r.enemies = []; r.spawnTimer = 1e9; r.invulnerable = 1e9;
         const a = r.raptors[0]; Object.assign(r.player, { x: a.x + 60, y: a.y }); const prey = g.spawn('parasaurolophus', { x: a.x + 15, y: a.y + 20 }); prey.hp = 0; g.kill(prey); r.enemies = [];
         return PrimalI18n.t('VILD RAPTOR · ' + 'E' + ' FODR'); });
       await page.waitForTimeout(120); await page.keyboard.down('KeyE'); await page.waitForTimeout(120); await page.keyboard.up('KeyE');

@@ -23,6 +23,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     }
     assert.equal(new Set(terrain.map(t => t.brightness)).size, 4, 'four distinct actual rendered biome views'); assert.ok(terrain.every(t => t.trails === 0 && t.regions > 4 && !t.smoothing));
     await page.evaluate(() => {
+      PrimalCore.FEATURES.equilibrium = false; /* exact pre-Snowflake damage numbers */
       const g = primalRun.game; g.start({campaign:'classic'}); const r = g.run; r.enemies = []; r.pickups = []; r.spawnTimer = 999;
       r.player.x = 1450; r.player.y = 950; r.player.facing = 'E';
       g.random = () => .99; // no critical hit, exact flank number

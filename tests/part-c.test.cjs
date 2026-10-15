@@ -1,6 +1,7 @@
 'use strict';
 // Part C (2026-10-12): mutation systems, full species sets, lab tracks, abilities, pack leash/command, growth and eggs.
 const { test } = require('node:test'), assert = require('node:assert/strict'), C = require('../PRIMAL_RUN_Game/src/core.js');
+C.FEATURES.equilibrium = false; // exact pre-Snowflake HP/damage numbers; tests/snowflake.test.cjs covers the multipliers
 function make(species = 'compy', seed = 123, save = {}) {
   const g = new C.Game({ random: () => .5 }); g.save.unlockedSpecies = Object.keys(C.PLAYER_SPECIES); Object.assign(g.save.upgrades, save.upgrades || {});
   if (save.blueprints) g.save.blueprints = save.blueprints; if (save.mastery) g.save.mastery = save.mastery;

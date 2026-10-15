@@ -89,5 +89,20 @@
  "Planteædere får ikke længere \"tryk F for at spise\" ved kød.": "草食恐龍喺肉隔離唔會再見到「撳 F 食嘢」。",
  "<a href=\"./\">← Tilbage til spillet</a>": "<a href=\"./\">← 返回遊戲</a>",
  "<b>Hovedmenuen:</b> Baggrunden fylder nu hele skærmen. Dinosauren i menuen kæmper mod små angribere og flygter fra bosser og store flokke, så den ikke længere bliver overløbet af Compyer. Patch notes står på det sprog, du har valgt, og menuen henter langt færre filer, når siden åbner.": "<b>主選單：</b>背景而家會鋪滿成個畫面。選單入面隻恐龍會同細隻嘅敵人打，見到 BOSS 同大群就走，唔會再俾美頜龍淹冇。更新日誌會用你揀咗嘅語言顯示，開網頁嗰陣選單要載入嘅檔案亦少咗好多。",
- "<b>Artsbogen:</b> Hver art, du har set, vises nu som en lille model, der går på stedet og angriber en gang imellem. Områder og angreb står nu på dit eget sprog.": "<b>恐龍圖鑑：</b>你見過嘅每個物種而家都會以細模型展示，喺原地行並且間中出招。區域同攻擊而家都用你嘅語言顯示。"
+ "<b>Artsbogen:</b> Hver art, du har set, vises nu som en lille model, der går på stedet og angriber en gang imellem. Områder og angreb står nu på dit eget sprog.": "<b>恐龍圖鑑：</b>你見過嘅每個物種而家都會以細模型展示，喺原地行並且間中出招。區域同攻擊而家都用你嘅語言顯示。",
+ "The Snowflake equilibrium patch · 15. oktober 2026": "The Snowflake equilibrium patch · 2026 年 10 月 15 日",
+ "<b>Sværere jagt:</b> Din dinosaur har lidt mindre liv og gør lidt mindre skade. Alle andre dyr og alle bosser har mere liv og gør mere skade.": "<b>狩獵更難：</b>你隻恐龍嘅生命少咗少少，傷害都低咗少少。其他所有動物同所有 BOSS 嘅生命更多，傷害更高。",
+ "<b>Mutationer med plus og minus:</b> Seks nye episke og to andre nye mutationer giver en klar fordel, men koster noget. Et episk genom har nu flere end tre kort at vælge imellem.": "<b>有加有減嘅突變：</b>六個新史詩突變同另外兩個新突變帶嚟明顯優勢，但要付出代價。史詩基因而家有多過三張卡可以揀。",
+ "<b>Raptorflokken:</b> En vild raptor følger dig, når du har givet den 8 portioner af din egen føde. En bar over dens hoved viser, hvor meget den har fået.": "<b>盜龍群：</b>只要你餵咗一隻野生盜龍 8 份你自己嘅食物，佢就會跟住你。佢頭頂嘅條顯示佢食咗幾多。",
+ "<b>Ankylosaurus:</b> Pigpanser og Halekølle-knogle rammer kun dyr, der angriber dig, og lava, gift og torne udløser dem ikke længere. Auto-angreb går kun efter dyr, der angriber dig.": "<b>甲龍：</b>尖刺甲同尾錘骨只會打中攻擊你嘅動物，熔岩、毒同荊棘唔會再觸發佢哋。自動攻擊只會鎖定攻擊你嘅動物。",
+ "<b>Tekster:</b> Mutationer, der gælder alle arter, siger nu angrebsskade og angrebsrækkevidde i stedet for bid.": "<b>文字：</b>適用於所有恐龍嘅突變而家寫攻擊傷害同攻擊範圍，唔再寫咬擊。",
+ "Tak til spiltesteren Snowflake for fundene.": "多謝玩測員 Snowflake 嘅發現。",
+ "A6 · nye ikoner og lavakanter · 12. oktober 2026": "A6 · 新圖示同岩漿邊緣 · 2026 年 10 月 12 日",
+ "Mad, DNA og område har nye pixelikoner ved siden af de eksisterende tal og navne.": "食物、DNA 同區域喺現有嘅數字同名稱隔離，有新嘅像素圖示。",
+ "Lavaen får teksturerede aske- og basaltkanter. Sikre basaltpassager følger fortsat de samme regler.": "岩漿有咗有質感嘅灰燼同玄武岩邊緣。安全嘅玄武岩通道仍然跟同一套規則。",
+ "Flok- og reroll-ikoner er klar til den kommende Part C-opdatering.": "群體同重擲（reroll）圖示已經為即將推出嘅 C 部分更新準備好。",
+ "A-serien · nattens farver · 12. oktober 2026": "A 系列 · 夜晚顏色 · 2026 年 10 月 12 日",
+ "Dinosaurer og ådsler får mørkere natfarver fra spillets fælles palet. Farvedragter følger med, og de almindelige farver vender tilbage om dagen.": "恐龍同屍體會用遊戲共用色板入面較深嘅夜晚顏色。顏色造型會跟住轉，日頭就會變返正常顏色。",
+ "Artsangreb, dyreadfærd, såret gang, vandkanter og raptor-ådsler fra A1–A5 er integreret i udviklingsversionen.": "A1–A5 嘅物種攻擊、動物行為、受傷步姿、水邊同盜龍屍體已經整合入開發版本。",
+ "<b>Sværhedsgrad:</b> Vælg Normal eller Extinction difficulty, før jagten starter. Extinction gør fjender og bosser endnu stærkere og dig svagere.": "<b>難度：</b>開始狩獵之前揀普通或者 Extinction difficulty。Extinction 會令敵人同 BOSS 更強，你就更弱。"
 }

@@ -2,6 +2,7 @@
 // B5 Raptor-flok (PART_B_PLAN, FEATURES.raptorPack): feed → ally (max 2), attacks your target, flees when hurt, no kills.
 const test = require('node:test'), assert = require('node:assert/strict');
 const C = require('../PRIMAL_RUN_Game/src/core.js');
+C.FEATURES.raptorDonate = false; // this suite covers the original meat-on-the-ground rules; tests/snowflake.test.cjs covers food donation
 const { runOne } = require('../tools/playstyle_sim.cjs');
 const DT = 1 / 30;
 function field(seed = 3) { const g = new C.Game({ random: () => .5 }); g.start({ seed }); const r = g.run; r.enemies = []; r.spawnTimer = 1e9; r.invulnerable = 1e9; return { g, r }; }

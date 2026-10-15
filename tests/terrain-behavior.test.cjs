@@ -1,5 +1,6 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),C=require('../PRIMAL_RUN_Game/src/core.js');
+C.FEATURES.equilibrium = false; // exact pre-Snowflake HP/damage numbers; tests/snowflake.test.cjs covers the multipliers
 function setup(species='compy'){const g=new C.Game({random:()=>.9});g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:33});Object.assign(g.run,{enemies:[],spawnTimer:999});Object.assign(g.run.map,{rocks:[],cover:[],mud:[]});return g;}
 test('water and mud slow travel while crocodiles retain water speed and collision corrections remain independent',()=>{
  const g=setup(),r=g.run,p=r.player;r.stage=1;r.map.river=[{x:0,y:380},{x:2880,y:380}];r.map.riverCurve=r.map.river;r.map.fords=[];r.map.ponds=[]; // player stands in the shallow band
