@@ -2824,11 +2824,11 @@
     for(const f of r.map.fishSchools||[]){f.stock=Math.ceil(f.stock*ASH.fishStock);f.capacity=f.stock;}
     const rand=seeded(r.seed^0xA5);r.ashCraters=Array.from({length:ASH.craters},()=>({x:Math.round(160+rand()*(r.map.width-320)),y:Math.round(160+rand()*(r.map.height-320)),art:'assets/ash_world/crater_'+'ssmml'[Math.floor(rand()*5)]+'_'+Math.floor(rand()*3)+'.png'})).filter(c=>Math.hypot(c.x-r.player.x,c.y-r.player.y)>160);
     const kinds=Object.keys(SPECIES).filter(k=>k!=='compy'||rand()<.5);
-    // Fewer and smaller giant ribcages (Jonas 2026-10-15): thin them out, shrink the rest and swap half for species skeletons.
+    // Fewer and smaller giant ribcages (Jonas 2026-10-15): thin them out, shrink the rest and swap half for species skeletons; ribcages range 10-100 %.
     const bones=['tyrannosaurus','triceratops','ankylosaurus','parasaurolophus','carnotaurus','deinosuchus','baryonyx','pachycephalosaurus','gallimimus','utahraptor'];
     r.map.decorations=r.map.decorations.filter(d=>!d.path.endsWith('/ribcage.png')||rand()<ASH.ribcages).map(d=>{if(!d.path.endsWith('/ribcage.png'))return d;
       if(rand()<.5){const kind=bones[Math.floor(rand()*bones.length)];return {...d,path:'assets/corpses/'+kind+'_skeleton_'+'SNEW'[Math.floor(rand()*4)]+'_'+Math.floor(rand()*2)+'.png',visualScale:['tyrannosaurus','deinosuchus'].includes(kind)?1.6:1};}
-      return {...d,visualScale:.5+rand()*.3};});
+      return {...d,visualScale:.1+rand()*.9};});
     r.ashBodies=Array.from({length:ASH.bodies},(_,i)=>{const kind=kinds[Math.floor(rand()*kinds.length)],bones=rand()<.6;return {id:'ash:'+i,kind,x:Math.round(140+rand()*(r.map.width-280)),y:Math.round(140+rand()*(r.map.height-280)),direction:'SNEW'[Math.floor(rand()*4)],poseVariant:Math.floor(rand()*2),age:bones?40:10,foodLifetime:18,lifetime:1e9,visualScale:['tyrannosaurus','deinosuchus'].includes(kind)?2:1};}).filter(b=>Math.hypot(b.x-r.player.x,b.y-r.player.y)>140);
     r.invulnerable=Math.max(r.invulnerable,ASH.intro);r.ashFed=r.seconds;r.ashFood=r.stats.food;r.ashStalker={hp:ASH.stalker.hp,maxHP:ASH.stalker.hp,back:r.seconds+ASH.stalkerAt};
     this.emit('meteor');return true;
