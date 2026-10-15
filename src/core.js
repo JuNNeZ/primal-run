@@ -192,9 +192,10 @@
     ankylosaurus: { name: 'Ankylosaurus', cost: 75, hp: 150, damage: 12, speed: 110, radius: 23, cooldown: .9, duration: .56, range: 90, skill: 'Panserstilling', text: 'Space: haleslag bagud og til siderne. Shift: 75 % mindre skade i ét sekund.', abilityCost: 45, abilityTime: 1, abilityCooldown: 5 },
   };
   Object.assign(PLAYER_SPECIES,{
-    // 2026-10-14: Triceratops hp 170 -> 195, Pachycephalosaurus 100/9 -> 108/10 (both under mean level 3.4 with run extras).
+    // 2026-10-14: Triceratops hp 170 -> 195, Pachycephalosaurus hp 100 -> 108 (both under mean level 3.4 with run extras;
+    // 108/10 overshot to 4.5, 108/9 measured 4.0 on 20 runs, 2026-10-15).
     triceratops:{name:'Triceratops',cost:90,hp:195,damage:16,speed:100,radius:28,cooldown:.95,duration:.6,range:82,skill:'Hornstorm',text:'Planteæder. 25 % frontpanser. Shift: hornstorm; stærk foran, åben bagtil.',abilityCost:45,abilityTime:.42,abilityCooldown:4,diet:'herbivore'},
-    pachycephalosaurus:{name:'Pachycephalosaurus',cost:35,hp:108,damage:10,speed:155,radius:16,cooldown:.65,duration:.4,range:58,skill:'Hovedstød',text:'Planteæder. Hovedstød holder små dyr tilbage. Shift: ram og forskyd fjenden.',abilityCost:35,abilityTime:.24,abilityCooldown:2.6,diet:'herbivore'},
+    pachycephalosaurus:{name:'Pachycephalosaurus',cost:35,hp:108,damage:9,speed:155,radius:16,cooldown:.65,duration:.4,range:58,skill:'Hovedstød',text:'Planteæder. Hovedstød holder små dyr tilbage. Shift: ram og forskyd fjenden.',abilityCost:35,abilityTime:.24,abilityCooldown:2.6,diet:'herbivore'},
     gallimimus:{name:'Gallimimus',cost:20,hp:100,damage:7,speed:215,radius:15,cooldown:.5,duration:.3,range:50,skill:'Flugtsprint',text:'Omnivor: spis urter eller kød. Shift: hurtig flugt; lav skade, ingen usårlighed.',abilityCost:24,abilityTime:1.1,abilityCooldown:3.5,diet:'omnivore'},
     baryonyx:{name:'Baryonyx',cost:65,hp:120,damage:12,speed:140,radius:22,cooldown:.7,duration:.46,range:74,skill:'Fiskestød',text:'Fiskejæger. Hold F ved fiskestimer; også kød. Shift: fang fisk eller ram tæt bytte.',abilityCost:35,abilityTime:.25,abilityCooldown:3,diet:'piscivore'}
   });
