@@ -71,7 +71,7 @@
 
   function install(C) {
     const F = C.FEATURES, G = C.Game.prototype;
-    for (const [flag, on] of Object.entries({ huntStreak: true, powerups: true, abilityTwists: true, ecologyPressure: true, eliteAffixes: true, babyMode: true, circadian: true, amber: true, ambientLife: true, foodTheftCount: true, glideOver: true, remoteRares: true, packLimits: true }))
+    for (const [flag, on] of Object.entries({ huntStreak: true, powerups: true, abilityTwists: true, ecologyPressure: true, eliteAffixes: true, babyMode: true, circadian: true, amber: true, ambientLife: true, foodTheftCount: true, glideOver: true, remoteRares: true, packLimits: true, critters: true }))
       if (F[flag] === undefined) F[flag] = on;
     const PREDATOR = kind => !!C.SPECIES[kind] && C.SPECIES[kind].damage > 0 && !C.HERBIVORE_KINDS.has(kind);
     const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
@@ -375,8 +375,72 @@
       return settings.call(this, key, value);
     };
 
+    // ---- Small ambient animals (FEATURES.critters): frogs at ponds, mice at rock holes and millipedes by plants live in
+    // the run, scurry, hop or crawl away from the player instead of vanishing, and one bite makes them vanish with a
+    // fitting sound. Jonas (2026-10-15): they give no meat.
+    const CRITTER = { mouse: { flee: 130, speed: 150, leash: 220 }, frog: { flee: 100, hop: 40, leash: 160 }, millipede: { flee: 70, speed: 26, leash: 80 }, reach: 8, max: 24 };
+    const placeCritters = g => {
+      const r = g.run, map = r && r.map; if (!F.critters || !map) return;
+      let seed = ((r.seed || 1) ^ 0x3e1c7a55 ^ (r.levelIndex || 0) * 7919) >>> 0; const rnd = () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
+      const dry = p => !C.isWater(r.stage, map, p, -10) && !(C.isLava && C.isLava(r.stage, map, p)), list = [];
+      if (r.stage < 3) for (const rock of (map.rocks || []).filter((_, i) => i % 5 === 2).slice(0, 10)) { const p = { x: Math.round(rock.x + 28), y: Math.round(rock.y + 18) }; if (dry(p)) list.push({ kind: 'mouse', ...p }); }
+      for (const pond of (map.ponds || []).slice(0, 8)) { const a = rnd() * Math.PI * 2, d = (pond.radius || 60) + 8, p = { x: Math.round(pond.x + Math.cos(a) * d), y: Math.round(pond.y + Math.sin(a) * d * .7) }; if (dry(p)) list.push({ kind: 'frog', ...p }); }
+      if (r.stage !== 2) for (const h of (map.habitats || []).filter((_, i) => i % 9 === 4).slice(0, 6)) { const p = { x: Math.round(h.x - 30), y: Math.round(h.y + 26) }; if (dry(p)) list.push({ kind: 'millipede', ...p }); }
+      r.critters = list.slice(0, CRITTER.max).map((c, i) => ({ ...c, id: 'critter:' + (r.levelIndex || 0) + ':' + i, homeX: c.x, homeY: c.y, phase: rnd() * 6, timer: rnd() * 2, seed: (rnd() * 4294967296) >>> 0, vx: 0, vy: 0, moving: false }));
+    };
+    const startCritters = G.start;
+    G.start = function () { const out = startCritters.apply(this, arguments); if (this.run) this.run.critters = []; placeCritters(this); return out; };
+    const nextCritters = G.nextStage;
+    G.nextStage = function () { const level = this.run && this.run.levelIndex, out = nextCritters.apply(this, arguments); if (this.run && this.run.levelIndex !== level) placeCritters(this); return out; };
+    const frogsHidden = r => F.drought && r.drought;
+    const cr = c => { c.seed = (Math.imul(c.seed || 1, 1664525) + 1013904223) >>> 0; return c.seed / 4294967296; }; // own stream, so the game's seeded RNG is untouched
+    const stepCritters = G.step;
+    G.step = function (dt, input) {
+      const out = stepCritters.apply(this, arguments), r = this.run;
+      if (!F.critters || !r || !r.critters || this.phase !== 'playing' || !(dt > 0)) return out;
+      const map = r.map, pl = r.player, dry = p => !C.isWater(r.stage, map, p, -10) && !(C.isLava && C.isLava(r.stage, map, p));
+      for (const c of r.critters) {
+        const dx = c.x - pl.x, dy = c.y - pl.y, d = Math.hypot(dx, dy) || 1, home = Math.hypot(c.x - c.homeX, c.y - c.homeY);
+        c.timer -= dt; c.moving = false;
+        if (c.kind !== 'frog') {
+          const T = CRITTER[c.kind], scared = d < T.flee;
+          if (scared || c.timer > 0 && (c.vx || c.vy)) {
+            if (scared) { let ux = dx / d, uy = dy / d; if (home > T.leash && (ux * (c.homeX - c.x) + uy * (c.homeY - c.y)) < 0) { const t = ux; ux = -uy; uy = t; } c.vx = ux * T.speed; c.vy = uy * T.speed; c.timer = .4; }
+            const n = { x: c.x + c.vx * dt, y: c.y + c.vy * dt }; if (dry(n)) { c.x = n.x; c.y = n.y; c.moving = true; c.heading = Math.atan2(c.vy, c.vx); } else c.timer = 0;
+          } else if (c.timer <= 0) { const a = Math.atan2(c.homeY - c.y, c.homeX - c.x) + (cr(c) - .5) * 2.4, s = T.speed * (c.kind === 'millipede' ? .7 : .45); c.vx = Math.cos(a) * s; c.vy = Math.sin(a) * s; c.timer = home > T.leash * .2 ? .35 : c.kind === 'millipede' ? 1 + cr(c) * 2 : (cr(c) < .5 ? .25 : -1.5 - cr(c) * 2); if (c.timer < 0) { c.vx = c.vy = 0; c.timer = -c.timer; } }
+        } else {
+          const T = CRITTER.frog, scared = d < T.flee;
+          if (frogsHidden(r)) continue;
+          if (c.timer <= 0) {
+            let a = scared ? Math.atan2(dy, dx) + (cr(c) - .5) * .8 : home > 50 ? Math.atan2(c.homeY - c.y, c.homeX - c.x) : cr(c) * Math.PI * 2;
+            if (scared && home > T.leash) a = Math.atan2(c.homeY - c.y, c.homeX - c.x) + (cr(c) < .5 ? 1.2 : -1.2);
+            const n = { x: c.x + Math.cos(a) * T.hop * (scared ? 1 : .5), y: c.y + Math.sin(a) * T.hop * (scared ? 1 : .5) };
+            if (dry(n)) { c.x = n.x; c.y = n.y; c.hopTime = .25; c.heading = a; }
+            c.timer = scared ? .4 : 1.5 + cr(c) * 2.5;
+          }
+          if (c.hopTime > 0) { c.hopTime -= dt; c.moving = true; }
+        }
+        c.x = Math.max(40, Math.min(map.width - 40, c.x)); c.y = Math.max(60, Math.min(map.height - 40, c.y));
+      }
+      return out;
+    };
+    const biteCritters = G.resolveBite;
+    G.resolveBite = function (facing) {
+      const out = biteCritters.apply(this, arguments), r = this.run;
+      if (!F.critters || !r || !r.critters || !r.critters.length) return out;
+      const dir = { N: [0, -1], S: [0, 1], E: [1, 0], W: [-1, 0] }[facing] || [0, 1], range = C.PLAYER_SPECIES[r.species].range + CRITTER.reach + 10 * (r.mutations.reach || 0), tail = C.kindOf(r) === 'ankylosaurus';
+      r.critters = r.critters.filter(c => {
+        if (c.kind === 'frog' && frogsHidden(r)) return true;
+        const dx = c.x - r.player.x, dy = c.y - r.player.y, d = Math.hypot(dx, dy);
+        if (d > range || (!tail && d > 24 && (dx * dir[0] + dy * dir[1]) / d < .35)) return true;
+        this.burst(c.x, c.y, 'dust', 4, c.x | 0); this.emit('critter', { kind: c.kind }); r.stats.critters = (r.stats.critters || 0) + 1;
+        return false;
+      });
+      return out;
+    };
+
     // Exposed for the renderer, the HUD and tests.
-    Object.assign(C, { PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
+    Object.assign(C, { CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
       extrasOf: r => r && r.extras || null,
       streakOf: r => (r && r.extras && F.huntStreak ? r.extras.streak : 0),
       buffsOf: r => (r && r.extras ? Object.entries(r.extras.buffs).filter(([, t]) => t > 0).map(([type, time]) => ({ type, time })) : []) });
