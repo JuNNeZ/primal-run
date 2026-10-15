@@ -43,3 +43,4 @@ test('Compies no longer pile up on the menu dinosaur (the bug in the live menu)'
     assert.ok(on.near <= 5, `${species}: with the pilot ${on.near} attackers remain`); assert.ok(on.kills > 5);
   }
 });
+C.FEATURES.randomStart = false; // runs after module load, before the tests: seed 20372 was measured from the classic 480,340 start
