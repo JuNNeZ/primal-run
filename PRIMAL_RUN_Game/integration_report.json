@@ -1,7 +1,7 @@
 {
   "result": "PASS",
   "copied_assets": 104,
-  "new_combat_assets": 3732,
+  "new_combat_assets": 3741,
   "byte_identical_to_kit": true,
   "errors": [],
   "production_approved": false,
@@ -10,12 +10,12 @@
     "src/run_titles.js": "11d200cfe8af66b5555bb7b23e1e676bdd8d80c398d458c967fbd3f0d435d06e",
     "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
     "src/run_extras.js": "f97eb6375f3faea78d72355913db223644e540b3e77a0234b82a2e394dfe31d7",
-    "src/core.js": "5e04d0723f0a9cfa4d4006305eef46ed2e1440bd472b5695fa2b1a9c2efb7692",
+    "src/core.js": "40dc8b6ec16954953fb4efccc66ceac0e7019d5798c3bb93fe54b2f2919af65e",
     "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
     "src/lang.js": "522b7a43911a545625943feb9dd14899371519d6ea04cfddbb9792a424ce69e4",
-    "src/assets.js": "f55bd17abd095bebb74da5a083827933570b61d66b6182e504edf4981e5e6c2b",
+    "src/assets.js": "6fb8267ac2e2c6790aeeed8aea4f23e8a41319504d0602a6cc00ec81c976466c",
     "src/audio.js": "b726e18982b98c265381494727055ba73bb224519bd3be0fd35ecdef164355fc",
-    "src/app.js": "9437a2c8219521a64e95c15b2a7a8c78a5d49f545e0673b4786ca535491c2a4b",
+    "src/app.js": "ca418078e620d4d2b6694ebc4486e8966d072c26eb9d20d0078f9bdf99822daa",
     "style.css": "ff62115de3a0366304a19f39c2d59357d1b49a3f77e117d965c96359e47df4d9"
   }
 }

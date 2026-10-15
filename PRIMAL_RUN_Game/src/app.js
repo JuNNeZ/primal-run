@@ -389,17 +389,11 @@
       return true;
     }
     // Askebanen (FEATURES.ashLevel): the dying world after the meteor. Ground is drained of colour and dimmed red,
-    // glowing impact craters smoulder, ash and embers fall, and the run opens with the meteor strike itself.
+    // small craters from meteor fragments smoulder, ash and embers fall, and the run opens with the meteor strike itself.
     function drawAshGround(r,view){
       ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.globalCompositeOperation='saturation';ctx.globalAlpha=.78;ctx.fillStyle='#808080';ctx.fillRect(0,0,canvas.width,canvas.height);
       ctx.globalCompositeOperation='multiply';ctx.globalAlpha=.22;ctx.fillStyle='#913b32';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.restore();
-      const pulse=.55+.25*Math.sin(r.seconds*1.7);
-      for(const c of r.ashCraters||[]){if(c.x<view.x-c.rx-40||c.x>view.x+canvas.width+c.rx+40||c.y<view.y-c.rx||c.y>view.y+canvas.height+c.rx)continue;
-        ctx.save();ctx.translate(Math.round(c.x),Math.round(c.y));ctx.fillStyle='#3b4144';ctx.beginPath();ctx.ellipse(0,0,c.rx+14,(c.rx+14)*.5,0,0,Math.PI*2);ctx.fill();
-        ctx.fillStyle='#151b19';ctx.beginPath();ctx.ellipse(0,2,c.rx,c.rx*.44,0,0,Math.PI*2);ctx.fill();
-        ctx.globalAlpha=pulse;ctx.fillStyle='#913b32';ctx.beginPath();ctx.ellipse(0,4,c.rx*.62,c.rx*.26,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#c6663c';ctx.beginPath();ctx.ellipse(0,5,c.rx*.32,c.rx*.13,0,0,Math.PI*2);ctx.fill();
-        ctx.globalAlpha=1;ctx.strokeStyle='#54282d';ctx.lineWidth=2;for(let i=0;i<5;i++){const a=c.seed+i*1.31;ctx.beginPath();ctx.moveTo(Math.cos(a)*(c.rx+10),Math.sin(a)*(c.rx+10)*.5);ctx.lineTo(Math.cos(a+.15)*(c.rx+34),Math.sin(a+.15)*(c.rx+34)*.5);ctx.stroke();}
-        ctx.restore();}
+      for(const c of r.ashCraters||[])if(c.x>view.x-80&&c.x<view.x+canvas.width+80&&c.y>view.y-60&&c.y<view.y+canvas.height+60)sprite(c.art,c.x,c.y);
     }
     function drawAshAir(r){
       const w=canvas.width,h=canvas.height,calmView=game.save.settings.reducedMotion||reducedMotion.matches,t=(C.ASH?C.ASH.intro:5.5)-(r.ashIntro||0);
@@ -1099,7 +1093,7 @@
           const path=behavior&&catalog[behavior]&&catalog[behavior].runtime_enabled!==false?behavior:enemyFrame(e.kind,state,e.direction,frame);
           objects.push({...e,enemy:e,path,rotation:0});
         }
-        for(const corpse of r.corpses||[]){const stage=corpse.age>=(corpse.foodLifetime||18)?'skeleton':corpse.age>=7?'decayed':null,prop=C.STATIC_SPECIES&&C.STATIC_SPECIES.has(corpse.kind)?'assets/new_species/'+corpse.kind+(stage==='skeleton'?'_skeleton':'_corpse')+'.png':stage?'assets/corpses/'+corpse.kind+'_'+stage+'_'+corpse.direction+'_'+(corpse.poseVariant||0)+'.png':null;objects.push({...corpse,corpse:true,path:prop&&catalog[prop]?prop:enemyFrame(corpse.kind,'death',corpse.direction,Math.min(5,Math.floor(corpse.age*8)))});}
+        for(const corpse of r.ashBodies?[...(r.corpses||[]),...r.ashBodies]:r.corpses||[]){const stage=corpse.age>=(corpse.foodLifetime||18)?'skeleton':corpse.age>=7?'decayed':null,prop=C.STATIC_SPECIES&&C.STATIC_SPECIES.has(corpse.kind)?'assets/new_species/'+corpse.kind+(stage==='skeleton'?'_skeleton':'_corpse')+'.png':stage?'assets/corpses/'+corpse.kind+'_'+stage+'_'+corpse.direction+'_'+(corpse.poseVariant||0)+'.png':null;objects.push({...corpse,corpse:true,path:prop&&catalog[prop]?prop:enemyFrame(corpse.kind,'death',corpse.direction,Math.min(5,Math.floor(corpse.age*8)))});}
         const p = r.player;
         const animationState = r.deathTime >= 0 ? 'death' : r.attack ? 'attack' : r.hurt > 0 ? 'hurt' : p.moving ? (r.pounce > 0 ? 'run' : 'walk') : 'idle';
         const animationDirection = r.attack && animationState === 'attack' ? r.attack.facing : p.facing;

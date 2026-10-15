@@ -2804,8 +2804,12 @@
   const ASH={level:{biome:3,name:'Askebanen',subtitle:'Verden efter meteoren',target:30,boss:'tyrannosaurus',bossName:'Ragnar den Arrede - Den Sidste Overlevende',dna:50,ash:true},
     intro:5.5,keepAnimals:.25,keepForage:.3,fishStock:.3,spawnDelay:2.5,meatValue:.6,corpseFood:.5,
     hunger:.004,hungerGrace:8,hungerFloor:.15,stalkerAt:20,stalkerReturn:40,stalkerLeave:30,stalkerWound:.3,stalker:{hp:420,damage:30,speed:82,scale:2.3},
-    boss:{hp:1.6,damage:1.3,scale:2.5,radius:40},bonus:5000};
-  const secretsAllFound=r=>!r.missedSecrets&&r.map.sites.every(s=>s.claimed)&&r.map.events.every(e=>e.claimed);
+    secretShare:.5,craters:110,bodies:70,aggroRange:340,boss:{hp:1.6,damage:1.3,scale:2.5,radius:40},bonus:5000};
+  // Opening rule (Jonas 2026-10-15: between "all secrets" and "one per level"): at least one secret found on every
+  // level and at least half of all the run's secrets.
+  const secretTally=r=>{const all=[...r.map.sites,...r.map.events];return {found:all.filter(x=>x.claimed).length,total:all.length};};
+  const secretsAllFound=r=>{const list=[...(r.ashSecrets||[]),secretTally(r)],found=list.reduce((a,t)=>a+t.found,0),total=list.reduce((a,t)=>a+t.total,0);
+    return list.length>=LEVELS.length&&list.every(t=>t.found>=1)&&found>=total*ASH.secretShare;};
   function stalkerLeaves(g,r,e,why){
     r.enemies=r.enemies.filter(o=>o!==e);r.ashStalker={hp:Math.max(e.hp,e.maxHP*.2),maxHP:e.maxHP,back:r.seconds+ASH.stalkerReturn};
     (r.ashClouds||(r.ashClouds=[])).push({x:e.x,y:e.y,radius:90,until:r.seconds+4});
@@ -2818,7 +2822,9 @@
     const keep=(list,share)=>list.filter((_,i)=>(i*7919%100)/100<share);
     r.enemies=keep(r.enemies.filter(e=>e.kind!=='tyrannosaurus'),ASH.keepAnimals);r.map.forage=keep(r.map.forage,ASH.keepForage);
     for(const f of r.map.fishSchools||[]){f.stock=Math.ceil(f.stock*ASH.fishStock);f.capacity=f.stock;}
-    const rand=seeded(r.seed^0xA5);r.ashCraters=Array.from({length:9},(_,i)=>({x:Math.round(240+rand()*(r.map.width-480)),y:Math.round(240+rand()*(r.map.height-480)),rx:Math.round(46+rand()*40),seed:rand()*6.28})).filter(c=>Math.hypot(c.x-r.player.x,c.y-r.player.y)>260);
+    const rand=seeded(r.seed^0xA5);r.ashCraters=Array.from({length:ASH.craters},()=>({x:Math.round(160+rand()*(r.map.width-320)),y:Math.round(160+rand()*(r.map.height-320)),art:'assets/ash_world/crater_'+'ssmml'[Math.floor(rand()*5)]+'_'+Math.floor(rand()*3)+'.png'})).filter(c=>Math.hypot(c.x-r.player.x,c.y-r.player.y)>160);
+    const kinds=Object.keys(SPECIES).filter(k=>k!=='compy'||rand()<.5);
+    r.ashBodies=Array.from({length:ASH.bodies},(_,i)=>{const kind=kinds[Math.floor(rand()*kinds.length)],bones=rand()<.6;return {id:'ash:'+i,kind,x:Math.round(140+rand()*(r.map.width-280)),y:Math.round(140+rand()*(r.map.height-280)),direction:'SNEW'[Math.floor(rand()*4)],poseVariant:Math.floor(rand()*2),age:bones?40:10,foodLifetime:18,lifetime:1e9,visualScale:['tyrannosaurus','deinosuchus'].includes(kind)?2:1};}).filter(b=>Math.hypot(b.x-r.player.x,b.y-r.player.y)>140);
     r.invulnerable=Math.max(r.invulnerable,ASH.intro);r.ashFed=r.seconds;r.ashFood=r.stats.food;r.ashStalker={hp:ASH.stalker.hp,maxHP:ASH.stalker.hp,back:r.seconds+ASH.stalkerAt};
     this.emit('meteor');return true;
   };
@@ -2828,6 +2834,7 @@
     if(FEATURES.ashLevel&&r&&this.phase==='cleared'&&!r.ashWorld&&!r.daily&&r.campaign===LEVELS&&r.levelIndex===LEVELS.length-1&&secretsAllFound(r)){
       return this.enterAshWorld();
     }
+    if(r&&this.phase==='cleared'&&!r.ashWorld&&r.levelIndex<r.campaign.length-1)(r.ashSecrets||(r.ashSecrets=[])).push(secretTally(r));
     return nextStageAsh.call(this);
   };
   const stepAsh=Game.prototype.step;
@@ -2846,6 +2853,7 @@
       Object.assign(boss,{ashTuned:true,scarred:true,rivalName:'Ragnar den Arrede',hp,maxHP:hp,damage:boss.damage*ASH.boss.damage,visualScale:ASH.boss.scale,radius:ASH.boss.radius});
       const s=r.enemies.find(e=>e.ashStalker);if(s)r.enemies=r.enemies.filter(e=>e!==s);r.ashStalker=null;this.emit('roar');
     }
+    for(const e of r.enemies)if(!e.boss&&!e.ashStalker&&e.damage>0&&!e.alert&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<ASH.aggroRange){this.provoke(e);e.mode='chase';}
     const stalker=r.enemies.find(e=>e.ashStalker);
     if(stalker){stalker.homeX=r.player.x;stalker.homeY=r.player.y;if(!['chase','windup','bite','slam','charge','recover'].includes(stalker.mode)){this.provoke(stalker);stalker.mode='chase';}
       if(stalker.hp<stalker.engagedHP-stalker.maxHP*ASH.stalkerWound)stalkerLeaves(this,r,stalker,'hurt');else if(r.seconds>stalker.leaveAt)stalkerLeaves(this,r,stalker,'time');}
@@ -2874,7 +2882,7 @@
     return out;
   };
   if(FEATURES.ashLevel)ACHIEVEMENTS.push({id:'ashSurvivor',name:'Udryddelsens overlever',text:'Besejr Ragnar den Arrede i den hemmelige askebane.',dna:50,check:c=>!!c.flags.ashSurvivor});
-  const API = { ASH, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, STATIC_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  const API = { ASH, ashGateOpen:r=>secretsAllFound(r), NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, STATIC_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
   if (EXTRAS) EXTRAS.install(API);
   return API;
 });

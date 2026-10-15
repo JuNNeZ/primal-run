@@ -1,5 +1,6 @@
 'use strict';
-// Askebanen (FEATURES.ashLevel): the secret 9th level after Ragnar, opened only when every secret of the run was found.
+// Askebanen (FEATURES.ashLevel): the secret 9th level after Ragnar. Opens with at least one secret found on every
+// level and at least half of all the run's secrets.
 const test = require('node:test'), assert = require('node:assert/strict');
 const C = require('../PRIMAL_RUN_Game/src/core.js');
 const DT = 1 / 30;
@@ -8,11 +9,19 @@ function atRagnar(seed = 5) {
   for (let i = 0; i < 7; i++) { g.phase = 'cleared'; g.run.bossDefeated = true; g.nextStage(); }
   return g;
 }
-function findAll(r) { r.missedSecrets = 0; for (const s of r.map.sites) s.claimed = true; for (const e of r.map.events) e.claimed = true; }
+function findAll(r) { r.ashSecrets = r.ashSecrets.map(t => ({ ...t, found: Math.ceil(t.total / 2) })); for (const s of r.map.sites) s.claimed = true; for (const e of r.map.events) e.claimed = true; }
 const clear = g => { g.phase = 'cleared'; g.run.bossDefeated = true; return g.nextStage(); };
 const steps = (g, seconds) => { for (let i = 0; i < seconds / DT && g.phase === 'playing'; i++) g.step(DT, {}); };
 
-test('a missed secret ends the run with the normal victory after Ragnar', () => {
+test('the gate needs a secret on every level and half of them in total', () => {
+  const g = atRagnar(), r = g.run; assert.equal(r.ashSecrets.length, 7);
+  findAll(r); assert.equal(C.ashGateOpen(r), true);
+  r.ashSecrets[2].found = 0; assert.equal(C.ashGateOpen(r), false, 'a level with no secret found');
+  findAll(r); r.ashSecrets = r.ashSecrets.map(t => ({ ...t, found: 1 })); for (const s of r.map.sites) s.claimed = false; for (const e of r.map.events) e.claimed = false; r.map.sites[0].claimed = true;
+  assert.equal(C.ashGateOpen(r), false, 'one per level is not enough');
+});
+
+test('too few secrets ends the run with the normal victory after Ragnar', () => {
   const g = atRagnar(); clear(g);
   assert.equal(g.phase, 'result'); assert.equal(g.run.result.victory, true); assert.equal(g.run.ashWorld, undefined);
 });
