@@ -2756,7 +2756,7 @@
     ['adrenalGland','Adrenalinkirtel','Evner koster 10 mindre stamina og gør +30 % skade, men du tager 15 % mere skade.','escape',1,'epic','ability',{cost:10,ability:.3,armor:-.15}],
     ['killerEye','Dræberblik','+15 % chance for kritisk træf, men −10 % angrebsskade.','dna',1,'epic','crit',{crit:.15,bite:-.1}],
     ['nimbleFrame','Smidig krop','+10 % fart og 10 % hurtigere angreb, men −10 maksimalt liv pr. rang.','powerful_legs',2,'rare','speed',{speed:.1,atk:.1,hp:-10}],
-    ['thickSkull','Tyk pande','+20 maksimalt liv, men −8 % angrebsskade pr. rang.','health',2,'uncommon','defense',{hp:20,bite:-.08}]
+    ['thickSkull','Knoglehjelm','+20 maksimalt liv, men −8 % angrebsskade pr. rang.','health',2,'uncommon','defense',{hp:20,bite:-.08}]
   ];
   if(FEATURES.tradeoffMutations)for(const [id,name,text,icon,max,rarity,tag,effect] of TRADEOFF_MUTATIONS){MUTATIONS.push({id,name,text,icon,max,rarity,tag,tradeoff:true});FX[id]=effect;}
   const FX_IDS=Object.keys(FX);

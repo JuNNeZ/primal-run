@@ -18,7 +18,7 @@ SNOWFLAKE = [
 ("+# % chance for kritisk træf, men −# % angrebsskade.","+# % critical hit chance, but −# % attack damage.","+# % kritische Trefferchance, aber −# % Angriffsschaden.","+# % chans för kritisk träff, men −# % attackskada.","+# % sjanse for kritisk treff, men −# % angrepsskade.","クリティカル率 +# %、ただし攻撃ダメージ −# %。","暴击率 +# %，但攻击伤害 −# %。"),
 ("Smidig krop","Nimble Frame","Wendiger Körper","Smidig kropp","Smidig kropp","しなやかな体","灵巧身躯"),
 ("+# % fart og # % hurtigere angreb, men −# maksimalt liv pr. rang.","+# % speed and # % faster attacks, but −# max health per rank.","+# % Tempo und # % schnellere Angriffe, aber −# maximales Leben pro Rang.","+# % fart och # % snabbare attacker, men −# maxhälsa per rang.","+# % fart og # % raskere angrep, men −# maks liv per rang.","ランクごとに移動速度 +# %、攻撃速度 +# %、ただし最大HP −#。","每级速度 +# %，攻击速度 +# %，但最大生命 −#。"),
-("Tyk pande","Thick Skull","Dicker Schädel","Tjock skalle","Tykk skalle","分厚い頭骨","厚实头骨"),
+("Knoglehjelm","Bone Helmet","Knochenhelm","Benhjälm","Beinhjelm","骨の兜","骨盔"),
 ("+# maksimalt liv, men −# % angrebsskade pr. rang.","+# max health, but −# % attack damage per rank.","+# maximales Leben, aber −# % Angriffsschaden pro Rang.","+# maxhälsa, men −# % attackskada per rang.","+# maks liv, men −# % angrepsskade per rang.","ランクごとに最大HP +#、ただし攻撃ダメージ −# %。","每级最大生命 +#，但攻击伤害 −# %。"),
 ("@ GIV FØDE","@ GIVE FOOD","@ FUTTER GEBEN","@ GE MAT","@ GI MAT","@ 食料を与える","@ 喂食物"),
 ("MANGLER FØDE","NO FOOD TO GIVE","KEIN FUTTER","INGEN MAT ATT GE","INGEN MAT Å GI","与える食料がない","没有食物可给"),
