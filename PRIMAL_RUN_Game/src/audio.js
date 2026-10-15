@@ -117,6 +117,14 @@
       const snap = c.createBufferSource(), snapGain = c.createGain(); snap.buffer = buffer; snapGain.gain.value = strong ? .13 : .08; snap.connect(snapGain); snapGain.connect(this.effects); snap.start(t); snap.onended = () => { snap.disconnect(); snapGain.disconnect(); };
     }
     play(event, detail = {}) {
+      if (event === 'critter') { // a bitten frog croaks, a mouse squeaks, a millipede crunches
+        const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
+        const t = c.currentTime + .01;
+        if (detail.kind === 'frog') { this.tone(150, t, .11, .09, 'square', 85, this.effects); this.tone(120, t + .13, .14, .07, 'square', 70, this.effects); }
+        else if (detail.kind === 'mouse') { this.tone(2300, t, .06, .05, 'sine', 3300, this.effects); this.tone(2600, t + .08, .05, .04, 'sine', 3600, this.effects); }
+        else { this.tone(900, t, .03, .06, 'square', 300, this.effects); this.tone(700, t + .04, .03, .05, 'square', 250, this.effects); this.tone(500, t + .08, .04, .04, 'square', 200, this.effects); }
+        return;
+      }
       if (event === 'bite_hit') { if (this.settings.master * this.settings.sfx > 0) this.impact(detail.strong); return; }
       if (['roar', 'boss_enrage'].includes(event)) {
         const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
