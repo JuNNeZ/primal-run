@@ -40,6 +40,7 @@ const STYLES = {
   kiter:     { label: 'Hit-and-run (kiter)',    reaction: 0.10, dodge: 0.85, aimError: 8, ability: 'smart', retreatHP: 0.35, explore: false, picks: 'mixed', foodGreed: 0.5, sneak: false, kite: true, tailTurn: .9 },
   turtle:    { label: 'Forsigtig (skildpadde)', reaction: 0.15, dodge: 0.8, aimError: 12, ability: 'smart', retreatHP: 0.6, explore: true, picks: 'defence', foodGreed: 0.9, sneak: true, tailTurn: .8 },
   rusher:    { label: 'Speedrunner (haster)',   reaction: 0.10, dodge: 0.5, aimError: 10, ability: 'spam', retreatHP: 0.15, explore: false, picks: 'offence', foodGreed: 0.1, sneak: false, tailTurn: .6 },
+  expert:    { label: 'Dygtig spiller (ekspert)', reaction: 0.04, dodge: 1, aimError: 0, ability: 'smart', retreatHP: 0.4, explore: false, picks: 'best', foodGreed: 0.6, sneak: false, kite: true, tailTurn: 1 },
   newbie:    { label: 'Ny spiller',             reaction: 0.45, dodge: 0.15, aimError: 40, ability: 'never', retreatHP: 0.2, explore: false, picks: 'random', foodGreed: 0.3, sneak: false , tailTurn: 0.1 },
 };
 
@@ -91,6 +92,18 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
   const prevStagger = new Map(), prevMode = new Map();
   const dist = e => Math.hypot(e.x - r.player.x, e.y - r.player.y);
   const nearest = items => { let best = null, bd = Infinity; for (const it of items) { const d = dist(it); if (d < bd) { bd = d; best = it; } } return best; };
+  // Stall breaker: a player gives up on a fixed goal (food, loot, site) they have not got closer to in 4 s
+  // (e.g. a pickup wedged behind a rock) and ignores it for 25 s, instead of circling it for the rest of the run.
+  const ignored = new Map(), goal = { key: null, best: Infinity, at: 0 };
+  const goalKey = it => it.id !== undefined ? it.id : it.x + ',' + it.y;
+  const usable = it => !(ignored.get(goalKey(it)) > r.seconds);
+  const chase = it => {
+    const key = goalKey(it), d = dist(it);
+    if (goal.key !== key) Object.assign(goal, { key, best: d, at: r.seconds });
+    else if (d < goal.best - 8) Object.assign(goal, { best: d, at: r.seconds });
+    else if (r.seconds - goal.at > 4) { ignored.set(key, r.seconds + 25); goal.key = null; }
+    return steer(it.x, it.y);
+  };
 
   function steer(x, y) {
     // B1b: like a player, path around the lava to a basalt crossing (same nav grid as the bosses) instead of wading through.
@@ -179,19 +192,19 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     if (diet === 'herbivore' || diet === 'omnivore') foods.push(...r.map.forage.filter(f => !f.depleted));
     if (diet === 'piscivore') foods.push(...r.map.fishSchools.filter(f => f.stock > 0 && C.isWater(r.stage,r.map,f,14)));
     if (diet !== 'herbivore') foods.push(...r.pickups.filter(f => f.corpseId !== undefined));
-    const food = nearest(foods);
+    const food = nearest(foods.filter(usable));
     const hungry = !boss || hpFrac < 0.5;
     if (food && hungry && (!hostile.length || dist(food) < 100 || R() < S.foodGreed * 0.1)) {
       if (food.kind === 'fish' && C.fishReach ? C.fishReach(r.map,p,food) : dist(food) < 42) return { eat: true };
-      return steer(food.x, food.y);
+      return chase(food);
     }
     // Pick up DNA/heal pickups
-    const loot = nearest(r.pickups.filter(f => f.corpseId === undefined && dist(f) < (f.kind === 'powerup' && style !== 'newbie' ? 600 : 300))); // --exp powerups glow, so players see them from further away
-    if (loot) return steer(loot.x, loot.y);
+    const loot = nearest(r.pickups.filter(f => f.corpseId === undefined && usable(f) && dist(f) < (f.kind === 'powerup' && style !== 'newbie' ? 600 : 300))); // --exp powerups glow, so players see them from further away
+    if (loot) return chase(loot);
     // Explore sites
     if (S.explore && !boss) {
-      const site = nearest(r.map.sites.filter(s => !s.claimed && s.type !== 'rare' && s.discovered));
-      if (site && dist(site) < 900) { if (dist(site) < 60) return { interact: true }; return steer(site.x, site.y); }
+      const site = nearest(r.map.sites.filter(s => !s.claimed && s.type !== 'rare' && s.discovered && usable(s)));
+      if (site && dist(site) < 900) { if (dist(site) < 60) return { interact: true }; return chase(site); }
     }
     // B4: in a drought prey gathers at the last water; hunters wait there when nothing is close.
     if (r.drought && diet !== 'herbivore' && !boss && (r.map.ponds || []).length) {
