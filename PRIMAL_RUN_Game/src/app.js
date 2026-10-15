@@ -937,7 +937,7 @@
       const cached=AMBIENT_CACHE.get(map);if(cached)return cached; // cached beside the map, never in run state
       let seed=(map.seed^0x2c1b3c6d)>>>0;const rnd=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
       const dry=p=>!C.isWater(stage,map,p,-10)&&!(C.isLava&&C.isLava(stage,map,p));
-      const life={holes:[],frogs:[],millipedes:[],jumps:[],swarms:[],bats:[],shadows:[]};
+      const life={holes:[],frogs:[],millipedes:[],jumps:[],swarms:[],bats:[],shadows:[],fireflies:[]};
       if(stage<3)for(const rock of (map.rocks||[]).filter((_,i)=>i%5===2).slice(0,10)){const p={x:Math.round(rock.x+28),y:Math.round(rock.y+18)};if(dry(p))life.holes.push({...p,phase:rnd()*6});}
       for(const pond of (map.ponds||[]).slice(0,8)){const a=rnd()*Math.PI*2,d=(pond.radius||60)+8;life.frogs.push({x:Math.round(pond.x+Math.cos(a)*d),y:Math.round(pond.y+Math.sin(a)*d*.7),phase:rnd()*6});}
       if(stage!==2)for(const h of (map.habitats||[]).filter((_,i)=>i%9===4).slice(0,6))if(dry(h))life.millipedes.push({x:Math.round(h.x-30),y:Math.round(h.y+26),phase:rnd()*6,dir:rnd()<.5?-1:1});
@@ -945,6 +945,7 @@
       if(stage<3)for(const h of (map.habitats||[]).filter((_,i)=>i%6===1).slice(0,7))life.swarms.push({x:h.x,y:h.y-30,phase:rnd()*6});
       for(const h of (map.habitats||[]).filter((_,i)=>i%7===3).slice(0,6))life.bats.push({x:h.x,y:h.y-60,phase:rnd()*6});
       if(stage>0)for(let i=0;i<2;i++)life.shadows.push({y:Math.round(map.height*(.3+.4*i)),speed:70+40*rnd(),phase:rnd()*4000});
+      if(stage<2)for(const h of (map.habitats||[]).filter((_,i)=>i%4===2).slice(0,24))if(dry(h))life.fireflies.push({x:Math.round(h.x+(rnd()-.5)*60),y:Math.round(h.y-20-rnd()*30),phase:rnd()*6}); // anchored in the level near vegetation, not to the camera
       AMBIENT_CACHE.set(map,life);return life;
     }
     const near=(p,view,m=60)=>p.x>view.x-m&&p.x<view.x+canvas.width+m&&p.y>view.y-m&&p.y<view.y+canvas.height+m;
@@ -962,9 +963,14 @@
         else if(Math.floor(time/4)%2===0&&Math.floor(time*8)%8===0)sprite(EXTRA+'amber_1.png',a.x,a.y,.5);} // a faint glint every 4 s
       if(!C.FEATURES.ambientLife)return;
       const life=ambientLife(r.map,r.stage),moving=!calm();
+      if(C.FEATURES.critters&&r.critters){ // live frogs, mice and millipedes from the run
+        const dry=C.FEATURES.drought&&r.drought;
+        for(const c of r.critters)if(near(c,view)&&!(dry&&c.kind==='frog'))sprite(AMB+(c.kind==='mouse'?'small_mammal_':c.kind==='millipede'?'millipede_':'frog_')+(c.moving?Math.floor((time+c.phase)*(c.kind==='frog'?4:c.kind==='mouse'?10:3))%2:0)+'.png',c.x,c.y,1,false,c.heading===undefined?0:c.heading+Math.PI/2); // sprites face north; turn them to the way they run
+      } else {
       for(const h of life.holes)if(near(h,view)&&Math.hypot(h.x-r.player.x,h.y-r.player.y)>140&&(time+h.phase)%9<6)sprite(AMB+'small_mammal_'+(moving?Math.floor((time+h.phase)*1.4)%2:0)+'.png',h.x,h.y);
       if(!(C.FEATURES.drought&&r.drought))for(const f of life.frogs)if(near(f,view)&&Math.hypot(f.x-r.player.x,f.y-r.player.y)>90)sprite(AMB+'frog_'+(moving&&(time+f.phase)%5<1.2?1:0)+'.png',f.x,f.y); // frogs fall silent and hide in a drought
-      for(const m of life.millipedes)if(near(m,view)){const x=m.x+(moving?Math.round(Math.sin((time+m.phase)*.25)*22)*m.dir:0);sprite(AMB+'millipede_'+(moving?Math.floor(time*3+m.phase)%2:0)+'.png',x,m.y);}
+      }
+      if(!(C.FEATURES.critters&&r.critters))for(const m of life.millipedes)if(near(m,view)){const t=(time+m.phase)*.25,x=m.x+(moving?Math.round(Math.sin(t)*22)*m.dir:0),y=m.y+(moving?Math.round(Math.sin(t*2)*10):0),heading=Math.atan2(Math.cos(t*2)*20,Math.cos(t)*22*m.dir);sprite(AMB+'millipede_'+(moving?Math.floor(time*3+m.phase)%2:0)+'.png',x,y,1,false,moving?heading+Math.PI/2:0);} // figure-of-eight crawl, head first
       if(moving)for(const j of life.jumps)if(near(j,view)){const t=(time+j.phase)%9;if(t<.75)sprite(EXTRA+'fish_jump_'+Math.min(2,Math.floor(t/.25))+'.png',j.x+18,j.y-6);}
     }
     function drawAirExtras(r,view,time){
@@ -972,7 +978,7 @@
       const life=ambientLife(r.map,r.stage),dark=r.darkness||0;
       if(dark<.5)for(const s of life.swarms)if(near(s,view,120))for(let i=0;i<4;i++){const a=(time+s.phase)*.9+i*1.6;sprite(AMB+'butterfly_'+(Math.floor(time*6+i)%2)+'.png',s.x+Math.round(Math.cos(a)*(30+i*8)),s.y+Math.round(Math.sin(a*1.3)*16));}
       if(dark>.3)for(const b of life.bats)if(near(b,view,160)){const a=(time+b.phase)*1.4;sprite(EXTRA+'bat_'+(Math.floor(time*8+b.phase)%2)+'.png',b.x+Math.round(Math.cos(a)*70),b.y+Math.round(Math.sin(a*2)*24),Math.min(1,dark*1.5));}
-      if(dark>.4&&r.stage<2)for(let i=0;i<14;i++){const x=view.x+((i*331+Math.round(time*6))%canvas.width),y=view.y+((i*197)%canvas.height)+Math.round(Math.sin(time*1.3+i)*8);sprite(AMB+'firefly_glow_'+(Math.floor(time*2+i)%2)+'.png',x,y,dark);}
+      if(dark>.4)for(const f of life.fireflies)if(near(f,view,60))for(let i=0;i<3;i++){const a=(time+f.phase)*.6+i*2.1;sprite(AMB+'firefly_glow_'+(Math.floor(time*2+f.phase+i)%2)+'.png',f.x+Math.round(Math.cos(a)*(14+i*7)),f.y+Math.round(Math.sin(a*1.4)*(8+i*3)),dark);}
       if(r.stage===3)for(let i=0;i<10;i++){const h=canvas.height+40,y=view.y+h-((i*173+Math.round(time*(20+i*3)))%h),x=view.x+((i*409)%canvas.width)+Math.round(Math.sin(time+i)*10);sprite(AMB+'ash_ember_'+(Math.floor(time*4+i)%2)+'.png',x,y,.85);}
       if(dark<.5)for(const s of life.shadows){const span=r.map.width+400,x=((s.phase+time*s.speed)%span)-200;if(near({x,y:s.y},view,80))sprite(AMB+'pterosaur_shadow_'+(Math.floor(time*2)%2)+'.png',x,s.y,.35);}
     }
@@ -1094,7 +1100,7 @@
         if (o.raptor) { const a = o.raptor, d = r ? Math.hypot(a.x - r.player.x, a.y - r.player.y) : 1e9;
           if (a.ally) { if (!presentation('assets/ui/raptor_ally.png', a.x, a.y - 46)) { ctx.save(); ctx.fillStyle = '#a2d4c1'; ctx.strokeStyle = '#151b19'; ctx.lineWidth = 2; const mx = Math.round(a.x), my = Math.round(a.y) - 46; ctx.beginPath(); ctx.moveTo(mx, my - 5); ctx.lineTo(mx + 5, my); ctx.lineTo(mx, my + 5); ctx.lineTo(mx - 5, my); ctx.closePath(); ctx.stroke(); ctx.fill(); ctx.restore(); }
             ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(a.x) - 14, Math.round(a.y) + 14, 28, 3); ctx.fillStyle = a.mode === 'flee' ? '#de954a' : '#a2d4c1'; ctx.fillRect(Math.round(a.x) - 14, Math.round(a.y) + 14, Math.round(28 * a.hp / a.maxHP), 3); }
-          else if (d < 300) { const fed = r.pickups.some(p => p.corpseId !== undefined && p.value > 0 && Math.hypot(p.x - a.x, p.y - a.y) < C.PACK.meatReach); label(d < 160 && fed ? 'VILD RAPTOR · ' + control('interact') + ' FODR' : d < 160 ? 'VILD RAPTOR · LÆG KØD HER' : 'VILD RAPTOR', a.x, a.y - 44, '#a2d4c1'); } }
+          else if (d < 300) { const full = C.packLimitOf && r.raptors.filter(x => x.ally && !x.temp).length >= C.packLimitOf(r), fed = !full && r.pickups.some(p => p.corpseId !== undefined && p.value > 0 && Math.hypot(p.x - a.x, p.y - a.y) < C.PACK.meatReach); label(full ? 'VILD RAPTOR' : d < 160 && fed ? 'VILD RAPTOR · ' + control('interact') + ' FODR' : d < 160 ? 'VILD RAPTOR · LÆG KØD HER' : 'VILD RAPTOR', a.x, a.y - 44, '#a2d4c1'); } }
         if (o.enemy) { const e = o.enemy, near = r && Math.hypot(e.x - r.player.x, e.y - r.player.y) < 230, special = e.boss || e.elite || e.rare || e.miniboss;
           if ((special || near) && !menuScene()) label((e.boss ? '◆ ' : e.miniboss ? '☠ ' : e.elite ? '★ ' : e.rare ? '✦ ' : e.damage ? '⚠ ' : '') + (e.affix && C.ELITE_AFFIXES ? tr(C.ELITE_AFFIXES[e.affix].name) + ' ' : '') + (e.rivalName || C.SPECIES_LABELS[e.kind]), o.x, o.y - enemyLabelOffset(e), e.affix && C.ELITE_AFFIXES ? C.ELITE_AFFIXES[e.affix].color : e.miniboss ? '#e9b75a' : e.damage ? '#ed7869' : '#8eaa60');
           if (e.affix && !menuScene()) sprite(EXTRA + 'affix_' + e.affix + '.png', o.x, o.y - enemyLabelOffset(e) - 16);
