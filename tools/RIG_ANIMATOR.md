@@ -8,8 +8,8 @@ glemmes. To værktøjer løser det:
 - `tools/validate_rig_frames.py` **kontrollerer** Codex' egne frames mod guiden og afviser frames, hvor benene
   står stille, kommer i forkert fase, eller hvor kamera, skala eller anker har flyttet sig.
 
-Ingen af dem ændrer spillet. Status for rig-frames er guide/prototype. Om de må bruges direkte som spil-assets,
-bestemmer Jonas.
+Ingen af dem ændrer spillet. Jonas besluttede 14. okt 2026, at rig-frames må bruges direkte som prototype-grafik
+(`prototype_static`). De bliver først godkendt grafik, når Jonas har godkendt dem visuelt.
 
 ## 1. Lav guiden
 
@@ -17,7 +17,7 @@ bestemmer Jonas.
 python tools/rig_animate.py --species iguanodon                     # -> PRIMAL_RUN_Rig/iguanodon/
 python tools/rig_animate.py --species iguanodon --sheet ark.png      # kontaktark med led og fodkontakt
 python tools/rig_animate.py --species iguanodon --gif gif/           # preview-GIFs (ikke assets)
-python tools/rig_animate.py --species all                            # alle 16 nye arter
+python tools/rig_animate.py --species all                            # alle nye arter
 ```
 
 Det tager ca. 30 sekunder pr. art. Ud kommer:
