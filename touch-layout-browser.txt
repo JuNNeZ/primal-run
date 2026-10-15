@@ -1,0 +1,1 @@
+{"result":"PASS","engine":"Chrome browser; GDevelop NOT RUN","checks":["full-screen arena on touch","joystick bottom-left","round SNES-style diamond bottom-right","no overlap, no sideways scroll","portrait + landscape"]}
