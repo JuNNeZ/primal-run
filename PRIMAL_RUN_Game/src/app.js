@@ -922,6 +922,16 @@
       }
       if(!calm()){const k=(time*.6+pond.x*.001)%1;ctx.save();ctx.globalAlpha=.24*(1-k);ctx.strokeStyle='#e8ece1';ctx.lineWidth=1;pondContour(pond,.3+.55*k);ctx.stroke();ctx.restore();}
     }
+    // FEATURES.sizeAware: the art is seen from above, so draw order follows height, not only y. Ground cover, rocks,
+    // corpses and food lie under every animal; animals sort by y; tree crowns are on top and turn see-through while
+    // an animal stands under them. The prop kind comes from C.PROP_SIZE (tools/measure_props.py).
+    function depthLayers(objects){
+      const kindOf=o=>C.PROP_SIZE[o.path]&&C.PROP_SIZE[o.path][0];
+      for(const o of objects)o.layer=o.player||o.enemy||o.raptor?1:o.corpse||o.edible||o.forage||/^assets\/corpses\//.test(o.path)?0:kindOf(o)==='canopy'?2:kindOf(o)?0:1;
+      const animals=objects.filter(o=>o.layer===1&&(o.player||o.enemy||o.raptor));
+      for(const o of objects)if(o.layer===2){const reach=C.PROP_SIZE[o.path][1]*(o.visualScale||1)*.8;o.seeThrough=animals.some(a=>Math.hypot(a.x-o.x,a.y-o.y)<reach);}
+      objects.sort((a,b)=>a.layer-b.layer||a.y-b.y);
+    }
     function shadowUnder(o){
       const scale=o.visualScale||1;let rx,ry,ox=0,oy=3,alpha=.28;
       if(o.player||o.enemy){rx=Math.max(9,(o.radius||14))*1.15*scale;ry=rx*.38;alpha=C.FEATURES.cleanMarkers?.18:.28;const vertical=o.player?/^[NS]$/.test(o.facing):Math.abs(o.enemy.facingY||0)>Math.abs(o.enemy.facingX||0);if(C.FEATURES.cleanMarkers&&vertical){const swap=rx;rx=ry;ry=swap;}}
@@ -1094,7 +1104,7 @@
         label(school.stock?'FISKESTED · '+school.stock+'/'+(school.capacity||school.stock):'FISKESTED · TØMT',school.x+32,school.y+18,school.stock?'#a2d4c1':'#929387');
         if(school.stock&&r.species==='baryonyx')label('HOLD '+control('eat')+' · FISK',school.x+32,school.y+34,'#e8ece1');
       }
-      const objects = map.rocks.map(p => ({ ...p, path: 'assets/environment/rock.png' }));
+      const objects = map.rocks.map(p => ({ ...p, path: p.path || 'assets/environment/rock.png' }));
       objects.push(...map.decorations.filter(o=>o.x>=view.x-200&&o.x<=view.x+canvas.width+200&&o.y>=view.y-200&&o.y<=view.y+canvas.height+200));
       if(r)for(const event of map.events)if(!event.claimed&&Math.hypot(event.x-r.player.x,event.y-r.player.y)<400){objects.push({...event,path:event.type==='spring'?'assets/props/flower_bush.png':'assets/props/skull.png'});label(event.type==='spring'?'✚ HELENDE KILDE':'✦ SJÆLDENT FOSSIL',event.x,event.y-30,'#bbd899');}
       if (r) for (const site of map.sites) if (!site.claimed && site.type !== 'rare') {
@@ -1132,7 +1142,7 @@
         objects.push({ ...p, visualScale:(r.visualScale>1?r.visualScale:['tyrannosaurus','deinosuchus'].includes(r.species)?2:1)*(1+C.GROWTH.scale*(r.growth||0))*babyScale(r), player: true, path: playerPath, hatching: !!(r.extras&&r.extras.baby&&r.extras.baby.hatch>0) });
       } else objects.push({ x: 780, y: 390, path: C.playerFrame(game.save.selectedSpecies,'idle','S',0) });
       for(let i=objects.length-1;i>=0;i--)if(objects[i].x<view.x-200||objects[i].x>view.x+canvas.width+200||objects[i].y<view.y-200||objects[i].y>view.y+canvas.height+200)objects.splice(i,1);
-      objects.sort((a, b) => a.y - b.y);
+      if(C.FEATURES.sizeAware)depthLayers(objects);else objects.sort((a, b) => a.y - b.y);
       if(r&&r.ashWorld)drawAshGround(r,view);
       for (const o of objects) {
         if (o.x < view.x - 160 || o.y < view.y - 160 || o.x > view.x + canvas.width + 160 || o.y > view.y + canvas.height + 160) continue;
@@ -1141,7 +1151,7 @@
         if (!C.FEATURES.cleanMarkers && (o.player || o.enemy)) { ctx.strokeStyle = o.player ? '#69a4a0' : o.enemy.boss ? '#e9b75a' : o.enemy.damage ? '#ed7869aa' : '#8eaa6088'; ctx.lineWidth = o.player ? 3 : 1.5; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), o.player ? 24 : o.enemy.boss ? o.radius + 14 : o.radius + 6, 10, 0, 0, Math.PI * 2); ctx.stroke(); }
         if (!C.FEATURES.cleanMarkers && o.enemy && o.enemy.boss) { ctx.strokeStyle = '#e9b75a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y), 35, 17, 0, 0, Math.PI * 2); ctx.stroke(); }
         if (o.edible) { const t = (r ? r.seconds : 0) * 3 + o.x * .01, glow = .45 + .25 * Math.sin(t); ctx.save(); ctx.globalAlpha = glow; ctx.strokeStyle = C.MEAT_RARITIES[o.rarity || 0].color === '#e8ece1' ? '#bbd899' : C.MEAT_RARITIES[o.rarity || 0].color; if(!C.FEATURES.cleanMarkers){ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(Math.round(o.x), Math.round(o.y) + 2, 20, 8, 0, 0, Math.PI * 2); ctx.stroke();} ctx.globalAlpha = 1; ctx.fillStyle = '#bbd899'; ctx.font = '700 13px monospace'; ctx.textAlign = 'center'; ctx.fillText('❧', Math.round(o.x), Math.round(o.y) - 30 + Math.round(Math.sin(t) * 2)); ctx.restore(); }
-        const alpha = o.corpse ? Math.max(0,Math.min(1,((o.lifetime||30)-o.age)/5)) : o.player && r.hidden ? .6 : o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
+        const alpha = o.corpse ? Math.max(0,Math.min(1,((o.lifetime||30)-o.age)/5)) : o.player && r.hidden ? .6 : C.FEATURES.sizeAware ? (o.seeThrough ? .35 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1) : o.foliage && r && Math.hypot(o.x - r.player.x, o.y - r.player.y) < 110 ? .25 : o.player && r.invulnerable > 0 && Math.floor(r.invulnerable * 20) % 2 ? .45 : 1;
         const bob=o.path&&o.path.startsWith('assets/new_species/')&&!o.corpse&&(o.player?r.player.moving:o.moving)?-Math.round(2*Math.abs(Math.sin(((o.player?r.player.gaitPhase:o.gaitPhase)||0)*Math.PI*2))):0;
         if(o.enemy&&o.enemy.boss&&C.FEATURES.bossLook)bossAura(o.enemy,r,o.path,o.x,o.y+bob,o.visualScale||1);
         sprite(o.path, o.x, o.y+bob, o.enemy && o.enemy.submerged && o.enemy.mode === 'windup' && o.enemy.pattern === 4 ? alpha * .3 : alpha, false, o.rotation, o.visualScale || 1,o.enemy?(o.enemy.scarred?'scarred':o.enemy.rare?'albino':o.enemy.elite?'elite':o.enemy.sex==='male'?'male':null):o.corpse?(o.variant||null):r&&r.ashWorld&&!o.player&&!o.raptor&&!o.edible&&!o.forage?'ash':o.player&&game.save.skin!=='classic'&&C.skinFits(game.save.skin,r?r.species:game.save.selectedSpecies)?game.save.skin:null);
