@@ -13,10 +13,10 @@
     "src/telemetry.js": "b5cf2a84f30129c0d72874aadc5e6b45b695d1985856484be580004e76426b9c",
     "src/core.js": "c4b8b38425fbf5d4fdf568187e676337f2279687a5f54eb2b4edc11cf718190c",
     "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
-    "src/lang.js": "a2e5eb45ced358b50968123289ba8babfc7293c505e6abd6edbbf6e0606b27c2",
+    "src/lang.js": "dc12163286c0e21dcfc53e57035af53a1b3852774d3de45819f0712beca31dc1",
     "src/assets.js": "6fb8267ac2e2c6790aeeed8aea4f23e8a41319504d0602a6cc00ec81c976466c",
     "src/audio.js": "34d68f923f702b183bc10bb49f753cdb92c03c44a79aaacecdcfd9a0295fcf40",
-    "src/app.js": "462ee0969047c78aa5168b72344b6dbbb234d219cca7cc5a1ff0391034ad0f1e",
+    "src/app.js": "d9b021c8317e14260dbda2cfe57de87087c6354b3ad9ceaa0e7757dc3a5a4958",
     "style.css": "fed4bb75cd672ea48e03b052a5383a3b4e1fffe796cf1c39b3cf090b09e50b03"
   }
 }

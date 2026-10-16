@@ -23,7 +23,7 @@
       a:[[2,3,32,17,'#101b16e0'],[4,5,7,12,'#c3a35c'],[13,6,19,4,'#c05e4a'],[13,11,19,2,'#8eaa60'],[13,15,19,2,'#c3a35c'],[74,3,24,44,'#101b16e0'],[76,6,14,4,'#efdfb8aa'],[76,12,20,2,'#c3a35c'],[76,18,20,26,'#0b120e'],[32,78,36,18,'#101b16e0'],[35,81,6,11,'#dfbc52'],[43,81,6,11,'#657044'],[52,83,4,8,'#657044'],[57,83,4,8,'#657044'],[62,83,4,8,'#657044']],
       b:[[0,0,100,3,'#101b16'],[0,0,9,3,'#c3a35c'],[2,6,8,4,'#efdfb8'],[45,6,10,5,'#efdfb8'],[84,7,14,5,'#efdfb8aa'],[82,15,16,22,'#0b120e'],[46,58,8,2,'#c05e4a'],[46,61,8,1,'#8eaa60'],[44,85,5,9,'#dfbc52'],[51,85,5,9,'#657044']],
       c:[[78,3,20,28,'#101b16e0'],[80,8,16,20,'#0b120e'],[20,76,60,21,'#101b16e8'],[22,79,7,13,'#c3a35c'],[31,80,17,4,'#c05e4a'],[31,86,17,2,'#8eaa60'],[31,89,17,2,'#c3a35c'],[51,79,6,11,'#dfbc52'],[58,79,6,11,'#657044'],[66,80,12,4,'#efdfb8aa'],[66,86,9,3,'#efdfb8aa']]};
-    const HUD_NAMES={classic:['Klassisk','Den oprindelige HUD'],a:['A · Ryd op','Liv øverst til venstre, mål og kort øverst til højre, evner forneden i midten'],b:['B · Fokus på midten','XP langs toppen, liv under din dinosaur, kun de vigtigste evner'],c:['C · Samlet konsol','Alt om dig i én bjælke forneden, kortet øverst til højre']};
+    const HUD_NAMES={classic:['Klassisk','Den oprindelige HUD'],a:['A · Hjørner','Liv øverst til venstre, mål og kort øverst til højre, evner forneden i midten'],b:['B · Fokus på midten','XP langs toppen, liv under din dinosaur, kun de vigtigste evner'],c:['C · Samlet konsol','Alt om dig i én bjælke forneden, kortet øverst til højre']};
     const hudThumb=id=>`<span class="hud-thumb" aria-hidden="true">${HUD_THUMBS[id].map(([x,y,w,h,c])=>`<i style="left:${x}%;top:${y}%;width:${w}%;height:${h}%;background:${c}"></i>`).join('')}<i class="thumb-player"></i></span>`;
     const hudPickerHTML=ids=>`<div class="hud-picker"><b>Vælg din HUD</b><div class="hud-picks">${ids.map(id=>`<button data-hud-pick="${id}" class="${game.save.settings.hudLayout===id?'picked':''}" aria-pressed="${game.save.settings.hudLayout===id}">${hudThumb(id)}<b>${HUD_NAMES[id][0]}</b><small>${HUD_NAMES[id][1]}</small></button>`).join('')}</div><small>Du kan altid skifte i Indstillinger.</small></div>`;
     let hudPickOpen=false;
@@ -764,23 +764,25 @@
       const slot=(id,fraction)=>{const el=actions.querySelector(`[data-slot="${id}"]`),f=Math.max(0,Math.min(1,fraction));el.style.setProperty('--cd',(1-f).toFixed(3));el.dataset.ready=String(f>=1);return el;};
       slot('attack',attackFraction);const ability=slot('ability',abilityFraction),parts=ability.querySelectorAll('small span');ability.dataset.tired=String(r.stamina<cost);ability.dataset.ready=String(abilityFraction>=1&&r.stamina>=cost);parts[0].textContent=config.skill;parts[1].textContent=cost+' ⚡';
     }
-    // mapBiomes: the minimap shows the land itself, Minecraft-map style. Each sub-biome (zone) gets its own colour,
-    // with water, lava, mud, groves and rocks on top; drawn once per map, fog of war still hides unexplored ground.
+    // mapBiomes: the minimap shows the land itself, Minecraft-map style. Each sub-biome (zone) gets its own colour, blended
+    // softly into its neighbours, with water, lava, mud, groves and rocks on top; drawn once per map, fog of war still hides unexplored ground.
     const ZONE_COLORS={clearing:'#7f9a4a',thicket:'#56803c',oldgrowth:'#2f5a32',bog:'#5c6a3c',meadow:'#9aac5a',reeds:'#6f9460',bank:'#a99b69',gallery:'#3f6f3f',drygrass:'#b9a262',canyon:'#9a6a4a',plateau:'#8a7b62',thorn:'#7a7040',ash:'#6b6561',deadwood:'#4c4139',steam:'#7c8c8a',lavarim:'#5c3b31'},mapArt=new WeakMap();
     function minimapTerrain(r){
       let art=mapArt.get(r.map);if(art)return art;
-      const m=r.map,cols=180,rows=Math.max(1,Math.round(cols*m.height/m.width)),cw=m.width/cols,ch=m.height/rows,zone=new Array(cols*rows);
+      const m=r.map,cols=180,rows=Math.max(1,Math.round(cols*m.height/m.width)),cw=m.width/cols,ch=m.height/rows;
       art=document.createElement('canvas');art.width=cols;art.height=rows;const a=art.getContext('2d'),img=a.createImageData(cols,rows),hex=c=>[parseInt(c.slice(1,3),16),parseInt(c.slice(3,5),16),parseInt(c.slice(5,7),16)];
+      // Soft borders: every zone within reach adds its colour, weighted by how much farther it is than the nearest one,
+      // and a little hash noise wobbles the sample point so the edges look like land, not ruler lines.
+      const base=r.stage===3?'#5c4a40':'#5d7a44',zones=(m.zones||[]).map(z=>({x:z.x,y:z.y,c:hex(ZONE_COLORS[z.id]||base)})),noise=(gx,gy)=>{const n=Math.sin(gx*127.1+gy*311.7)*43758.5453;return n-Math.floor(n)-.5;},mix=(a,b,t)=>a.map((v,k)=>v+(b[k]-v)*t);
       for(let gy=0;gy<rows;gy++)for(let gx=0;gx<cols;gx++){
-        const p={x:(gx+.5)*cw,y:(gy+.5)*ch},z=C.zoneAt(m,p);zone[gy*cols+gx]=z?z.index:-1;
-        let col=z&&ZONE_COLORS[z.id]||(r.stage===3?'#5c4a40':'#5d7a44');
-        if((m.groves||[]).some(g=>Math.hypot(p.x-g.x,p.y-g.y)<g.radius*.55))col=r.stage===3?'#3f3530':'#35603a';
-        if((m.mud||[]).some(d=>((p.x-d.x)/d.rx)**2+((p.y-d.y)/d.ry)**2<1))col='#6b5236';
-        if(C.isLava(r.stage,m,p))col='#d8662e';else if(C.isDeepWater(r.stage,m,p))col='#2f5f7a';else if(C.isWater(r.stage,m,p))col='#4f90a2';
-        const [R,G,B]=hex(col),i=(gy*cols+gx)*4;img.data[i]=R;img.data[i+1]=G;img.data[i+2]=B;img.data[i+3]=255;
+        const p={x:(gx+.5)*cw,y:(gy+.5)*ch},q={x:p.x+noise(gx,gy)*cw*3,y:p.y+noise(gy,gx)*ch*3};
+        let col=hex(base);
+        if(zones.length){const d=zones.map(z=>Math.hypot(q.x-z.x,q.y-z.y)),near=Math.min(...d);let sum=0;col=[0,0,0];zones.forEach((z,k)=>{const w=Math.exp(-(d[k]-near)/150);sum+=w;for(let c=0;c<3;c++)col[c]+=z.c[c]*w;});col=col.map(v=>v/sum);}
+        for(const g of m.groves||[]){const t=Math.max(0,Math.min(1,(g.radius*.65-Math.hypot(q.x-g.x,q.y-g.y))/(g.radius*.3)));if(t)col=mix(col,hex(r.stage===3?'#3f3530':'#35603a'),t*.85);}
+        if((m.mud||[]).some(d=>((p.x-d.x)/d.rx)**2+((p.y-d.y)/d.ry)**2<1))col=mix(col,hex('#6b5236'),.8);
+        if(C.isLava(r.stage,m,p))col=hex('#d8662e');else if(C.isDeepWater(r.stage,m,p))col=hex('#2f5f7a');else if(C.isWater(r.stage,m,p))col=hex('#4f90a2');
+        const i=(gy*cols+gx)*4,shade=1+noise(gx+7,gy+3)*.08;for(let c=0;c<3;c++)img.data[i+c]=Math.round(Math.max(0,Math.min(255,col[c]*shade)));img.data[i+3]=255;
       }
-      // Darker seams where two sub-biomes meet.
-      for(let gy=1;gy<rows;gy++)for(let gx=1;gx<cols;gx++){const k=gy*cols+gx;if(zone[k]!==zone[k-1]||zone[k]!==zone[k-cols]){const i=k*4;for(let c=0;c<3;c++)img.data[i+c]=Math.round(img.data[i+c]*.72);}}
       a.putImageData(img,0,0);a.fillStyle='#9a978c';for(const rock of m.rocks||[])a.fillRect(Math.floor(rock.x/cw),Math.floor(rock.y/ch),1,1);
       mapArt.set(m,art);return art;
     }
