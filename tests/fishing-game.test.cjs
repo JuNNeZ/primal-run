@@ -43,3 +43,9 @@ test('maps hold fewer, smaller fish but still enough food to finish a stage',()=
     assert.ok(m.fishSchools.reduce((n,p)=>n+p.stock*p.value,0)>=C.STAGES[stage].target);
   }
 });
+// "Vis tips og råd" (FEATURES.tipsToggle): on by default, survives saves, and can be switched off.
+test('tips setting defaults on, sanitizes and toggles',()=>{
+  assert.equal(C.FEATURES.tipsToggle,true);
+  assert.equal(C.sanitizeSave({}).settings.tips,true);assert.equal(C.sanitizeSave({settings:{tips:false}}).settings.tips,false);
+  const {g}=setup();g.setSetting('tips',false);assert.equal(g.save.settings.tips,false);g.setSetting('tips',true);assert.equal(g.save.settings.tips,true);
+});
