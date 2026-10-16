@@ -191,3 +191,61 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .admin-panel button[data-admin=off]{background:#c6663c;color:#fff}
 .admin-log{min-height:1.4em;margin:8px 0 0;color:#a2d4c1}
 .share-ask{border:1px solid #e9b75a;padding:10px 12px;margin:10px 0;text-align:center}.share-ask p{margin:6px 0;font-size:.9em}.share-ask .actions{justify-content:center}
+/* hudLayouts (2026-10-16): PC HUD layouts A/B/C. app.js sets data-hud per frame; touch always stays classic. */
+.hud-x{display:none}
+.hud-picker{margin:14px 0;padding:12px;border:1px solid #c3a35c66;background:#101b16cc;text-align:left}.hud-picker>b{font-size:12px;letter-spacing:2px;color:#dfbd72}.hud-picker>small{font-size:11px;color:#8e9d87}
+.hud-picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0 8px}
+.hud-picks button{display:flex;flex-direction:column;gap:6px;padding:8px;text-align:left;font-size:12px}.hud-picks button small{font-size:10px;color:#b6c0a9;line-height:1.4}
+.hud-picks button.picked{border-color:#dfbc52;box-shadow:inset 0 0 0 2px #dfbc52;background:#2d4433}
+.hud-thumb{position:relative;display:block;aspect-ratio:16/9;background:radial-gradient(circle at 30% 70%,#3c6436,#26412a 60%,#1d3322);border:1px solid #50623d;border-radius:3px;overflow:hidden}
+.hud-thumb i{position:absolute;display:block;border-radius:1px}.hud-thumb .thumb-player{left:48%;top:47%;width:4%;height:7%;background:#d9a066;border-radius:40%}
+.settings .hud-picker{margin:22px 0}
+.primal-shell:is([data-hud="a"],[data-hud="b"],[data-hud="c"])[data-phase] :is(.run-info,.meat-progress){display:none!important}
+.primal-shell:is([data-hud="a"],[data-hud="b"],[data-hud="c"]) :is(#food-chip,#dna-chip){display:none!important}
+.primal-shell:is([data-hud="a"],[data-hud="c"])[data-phase="playing"] footer .control-hints{visibility:hidden}
+.primal-shell:is([data-hud="a"],[data-hud="b"],[data-hud="c"]) .hud #meat-label{font-size:calc(18px*var(--hud-scale,1));margin-top:4px}
+.primal-shell:is([data-hud="a"],[data-hud="b"],[data-hud="c"]) .toast{bottom:auto;top:110px}
+.primal-shell:is([data-hud="a"],[data-hud="c"]) :is(.meter.xp,.meter.goal){display:block}
+.primal-shell:is([data-hud="a"],[data-hud="c"]) #xp-label{display:block;font-size:calc(10px*var(--hud-scale,1));letter-spacing:1px;color:#b6c0a9;font-weight:700}
+.primal-shell:is([data-hud="a"],[data-hud="b"],[data-hud="c"]) .goal-row{display:flex;justify-content:space-between;gap:12px;margin-top:6px;font-size:calc(12px*var(--hud-scale,1));font-weight:700;color:#efdfb8}
+.meter.xp i{background:#c3a35c}.meter.goal{width:100%!important;height:calc(7px*var(--hud-scale,1))}.meter.goal i{background:#e9b75a}
+.hud-actions{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);display:flex;gap:14px;align-items:flex-end;padding:10px 16px 8px;background:#101b16e0;border:1px solid #50623d88;border-radius:10px;pointer-events:none;user-select:none;zoom:var(--hud-scale,1)}
+.hud-slot{--s:54px;position:relative;min-width:var(--s);display:flex;flex-direction:column;align-items:center}
+.hud-slot.small{--s:40px;opacity:.88}
+.slot-icon{width:var(--s);height:var(--s);box-sizing:border-box;border:2px solid #657044;border-radius:8px;background:#14241c;display:grid;place-items:center;font-size:20px;font-weight:800;color:#efdfb8;overflow:hidden}
+.slot-icon img{width:70%;height:70%;object-fit:contain;image-rendering:pixelated}
+.hud-slot .slot-cd{position:absolute;left:50%;top:0;width:var(--s);height:var(--s);transform:translateX(-50%);border-radius:8px;background:conic-gradient(#000b calc(var(--cd,0)*360deg),transparent 0)}
+.hud-slot[data-ready="true"] .slot-icon{border-color:#dfbc52;box-shadow:0 0 10px #dfbc5266}
+.hud-slot[data-tired="true"] .slot-icon{border-color:#de954a}
+.hud-slot kbd{position:relative;margin-top:-9px;background:#23352b;border:1px solid #c3a35c;border-radius:3px;font-size:10px;font-weight:800;padding:0 5px;color:#f1dfbd;white-space:nowrap}
+.hud-slot small{margin-top:3px;font-size:10px;color:#b6c0a9;white-space:nowrap;font-weight:600}
+.slot-gap{width:1px;align-self:stretch;background:#50623d}
+.hud-prompt{position:absolute;left:50%;bottom:122px;transform:translateX(-50%);padding:5px 14px;background:#101b16cc;border:1px solid #657044;border-radius:20px;font-size:calc(12px*var(--hud-scale,1));color:#efdfb8;pointer-events:none;white-space:nowrap}
+/* A: tidy corners. */
+.primal-shell[data-hud="a"] .hud{align-items:flex-start}
+.primal-shell[data-hud="a"] .hud-card{border-radius:10px;padding:10px 14px 10px 10px;gap:12px;background:#101b16e0}
+.primal-shell[data-hud="a"] .hud-bars .meter{width:calc(220px*var(--hud-scale,1))}.primal-shell[data-hud="a"] .hud-bars .meter.health{height:calc(14px*var(--hud-scale,1))}
+.primal-shell[data-hud="a"] .hud .hunt-counter{min-width:calc(250px*var(--hud-scale,1));background:#101b16e0;border:1px solid #50623d88;padding:10px 12px;border-radius:10px;text-align:left}
+/* B: focus on the middle. */
+.hud-top{position:absolute;left:0;right:0;top:0;pointer-events:none;user-select:none;color:#efdfb8;text-shadow:0 2px 4px #000}
+.hud-top .meter{width:100%;height:8px;margin:0;border:0;border-bottom:1px solid #50623d;background:#101b16cc}
+.hud-top #top-level{position:absolute;left:18px;top:16px;font-size:calc(16px*var(--hud-scale,1));font-weight:900}
+.hud-top #top-time{position:absolute;left:50%;transform:translateX(-50%);top:14px;font-size:calc(22px*var(--hud-scale,1));font-weight:800}
+.primal-shell[data-hud="b"] .hud{top:20px}.primal-shell[data-hud="b"] .hud-card{display:none!important}
+.primal-shell[data-hud="b"] .hud .hunt-counter{background:none;text-shadow:0 2px 4px #000}
+.primal-shell[data-hud="b"] .meter.goal{display:block;width:calc(180px*var(--hud-scale,1))!important;margin-left:auto}
+.primal-shell[data-hud="b"] .goal-row{justify-content:flex-end}.primal-shell[data-hud="b"] #goal-time{display:none}
+.primal-shell[data-hud="b"] :is(.hud-slot.small,.slot-gap){display:none}
+.primal-shell[data-hud="b"] .hud-actions{background:none;border:0;padding:0}
+.primal-shell[data-hud="b"] .hud-prompt{bottom:100px}
+/* C: one console at the bottom. */
+.primal-shell[data-hud="c"] .hud{top:auto;bottom:14px;left:50%;right:auto;transform:translateX(-50%);gap:18px;align-items:center;background:#101b16e8;border:1px solid #50623d;border-radius:12px;padding:10px 18px 12px}
+.primal-shell[data-hud="c"] .hud-card{background:none;border:0;padding:0}
+.primal-shell[data-hud="c"] .hud-bars .meter{width:calc(210px*var(--hud-scale,1))}.primal-shell[data-hud="c"] .hud-bars .meter.health{height:calc(14px*var(--hud-scale,1))}
+.primal-shell[data-hud="c"] .hud .hud-actions{position:static;transform:none;background:none;border:0;border-left:1px solid #50623d;border-right:1px solid #50623d;border-radius:0;padding:0 18px;min-width:0}
+.primal-shell[data-hud="c"] .hud .hunt-counter{margin-left:0;text-align:left;background:none;padding:0;min-width:120px}
+.primal-shell[data-hud="c"] #biome-label{display:none}.primal-shell[data-hud="c"] .meter.goal{width:140px!important}
+.primal-shell[data-hud="c"] .goal-row{flex-direction:column;gap:2px}
+.primal-shell[data-hud="c"] .hud-prompt{bottom:136px}
+.primal-shell[data-hud="b"] .hud-slot small{color:#efdfb8;text-shadow:0 1px 3px #000,0 0 6px #000}
+#goal-dna::before{content:'⬡ '}
