@@ -742,6 +742,13 @@
       return null;
     }
     function enemyFrame(kind,state,direction,frame){if(C.STATIC_SPECIES&&C.STATIC_SPECIES.has(kind))return C.playerFrame(kind,state,direction,frame);const attack=C.playerFrame(kind,state,direction,frame);if(state==='attack'&&attack.startsWith('assets/species_attacks/')&&catalog[attack])return attack;return 'assets/'+(['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx','utahraptor','velociraptor','deinonychus'].includes(kind)?'player_full/':'enemy_full/')+kind+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';}
+    // Fiskeminigame: a ring closes in on the fish's shadow; it turns green inside the strike window (gold = perfect).
+    function drawFishGame(r){const F=C.FISH_GAME,g=r.fishGame,x=Math.round(g.x-r.view.x),y=Math.round(g.y-r.view.y),p=Math.min(1,g.progress),rad=q=>14+(1-q)*96,hit=p>=F.hit[0]&&p<=F.hit[1],perfect=p>=F.perfect[0]&&p<=F.perfect[1];
+      ctx.save();ctx.fillStyle='rgba(16,23,19,.55)';ctx.beginPath();ctx.ellipse(x,y,16,7,0,0,Math.PI*2);ctx.fill();
+      ctx.lineWidth=rad(F.hit[0])-rad(F.hit[1]);ctx.strokeStyle='rgba(121,148,71,.45)';ctx.beginPath();ctx.arc(x,y,(rad(F.hit[0])+rad(F.hit[1]))/2,0,Math.PI*2);ctx.stroke();
+      ctx.lineWidth=rad(F.perfect[0])-rad(F.perfect[1]);ctx.strokeStyle='rgba(223,188,82,.55)';ctx.beginPath();ctx.arc(x,y,(rad(F.perfect[0])+rad(F.perfect[1]))/2,0,Math.PI*2);ctx.stroke();
+      ctx.lineWidth=5;ctx.strokeStyle='#101713';ctx.beginPath();ctx.arc(x,y,rad(p),0,Math.PI*2);ctx.stroke();ctx.lineWidth=3;ctx.strokeStyle=perfect?'#dfbc52':hit?'#a8b15b':'#fff1c9';ctx.beginPath();ctx.arc(x,y,rad(p),0,Math.PI*2);ctx.stroke();
+      ctx.restore();label('SLIP NÅR RINGEN ER GRØN',x,y-rad(0)-10,hit?'#a8b15b':'#fff1c9');canvas.dataset.fishGame=p.toFixed(2);}
     function label(text, x, y, color) {
       text = tr(text);
       ctx.font = 'bold 11px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713';
@@ -1194,6 +1201,7 @@
         canvas.dataset.fishingSpots=String(+canvas.dataset.fishingSpots+1);
         // A float identifies a fishing spot; fish frames only appear on a successful catch.
         ctx.save();const x=Math.round(school.x+32),y=Math.round(school.y+(calm()?0:Math.sin(r.seconds*2+school.x)*2));ctx.fillStyle='#151b19';ctx.fillRect(x-3,y-7,6,10);ctx.fillStyle=school.stock?'#e9b75a':'#929387';ctx.fillRect(x-2,y-6,4,4);ctx.fillStyle='#e8ece1';ctx.fillRect(x-2,y-2,4,3);ctx.restore();
+        if(C.FEATURES.fishingGame&&r.fishGame&&r.fishGame.id===school.id)continue; // the ring replaces the labels while striking
         label(school.stock?'FISKESTED · '+school.stock+'/'+(school.capacity||school.stock):'FISKESTED · TØMT',school.x+32,school.y+18,school.stock?'#a2d4c1':'#929387');
         if(school.stock&&r.species==='baryonyx')label('HOLD '+control('eat')+' · FISK',school.x+32,school.y+34,'#e8ece1');
       }
@@ -1373,7 +1381,8 @@
       const poisonVisible=game.run?.poisonTime>0&&['playing','paused','build','mutation','exploration'].includes(game.phase);canvas.style.filter=poisonVisible&&!game.save.settings.reducedMotion&&!reducedMotion.matches?'hue-rotate('+Math.round(18*Math.sin(game.run.seconds*1.2))+'deg) saturate(1.15)':'';
       if(poisonVisible){ctx.save();ctx.strokeStyle=game.save.settings.reducedMotion?'#a8b15b':'hsl('+Math.round(50+60*Math.sin(game.run.seconds*2))+',55%,60%)';ctx.lineWidth=game.save.settings.reducedMotion?6:12+4*Math.sin(game.run.seconds*3);ctx.strokeRect(4,4,canvas.width-8,canvas.height-8);ctx.restore();}
       if(I18N.lang!=='da'&&game.run)for(const sel of ['.hud','.run-info','.meat-progress','.boss-hud','.hud-top','.hud-actions','.hud-prompt'])I18N.translateNode(shell.querySelector(sel));
-      if(game.phase==='playing'&&game.run&&game.run.eating){const r=game.run,x=Math.round(r.player.x-r.view.x),y=Math.round(r.player.y-r.view.y+102);ctx.fillStyle='#101713';ctx.fillRect(x-42,y,84,8);ctx.fillStyle='#fff1c9';ctx.fillRect(x-40,y+2,80*r.eating.progress,4);}
+      if(C.FEATURES.fishingGame&&game.run&&game.run.fishGame&&['playing','paused'].includes(game.phase))drawFishGame(game.run);
+      else if(game.phase==='playing'&&game.run&&game.run.eating){const r=game.run,x=Math.round(r.player.x-r.view.x),y=Math.round(r.player.y-r.view.y+102);ctx.fillStyle='#101713';ctx.fillRect(x-42,y,84,8);ctx.fillStyle='#fff1c9';ctx.fillRect(x-40,y+2,80*r.eating.progress,4);}
       shell.querySelector('.toast').hidden = now > toastUntil;
       const packKey = shell.querySelector('.pack-key'), allies = game.phase === 'playing' && game.run && (game.run.raptors || []).some(a => a.ally); if (packKey && packKey.hidden === !!allies) packKey.hidden = !allies; const sneakKey = shell.querySelector('[data-sneak-toggle]'); if (sneakKey && sneakKey.hidden === !!C.FEATURES.stealth) sneakKey.hidden = !C.FEATURES.stealth; if (game.run !== stealthState.run) { stealthState.run = game.run; setSneak(false); }
       shell.querySelector('.save-status').textContent = tr(game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · kun denne session');
