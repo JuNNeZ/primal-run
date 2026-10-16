@@ -86,7 +86,7 @@ audit/report og review-data og stopper ved manglende grundframes eller ustabilt
 deklareret origin; CI kører også auditten. Kildepolering markeres særskilt og
 bliver aldrig automatisk en visuel godkendelse. Resultater og aktuelt
 testlog findes i `animation_continuity_runtime_report.json` samt
-`../docs/validation/SPECIES_ANIMATION_AUDIT_2026-10-12.json`.
+`../archive/docs/validation/SPECIES_ANIMATION_AUDIT_2026-10-12.json`.
 Tekniske checks og standalone Chromium er adskilt fra anatomisk godkendelse og
 faktisk GDJS-runtime. Art forbliver prototype_static; teknisk audit er ikke produktionsgodkendelse.
 Den efterfølgende native/standalone/GDJS-kontrol registreres separat i

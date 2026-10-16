@@ -68,7 +68,7 @@ adfærd, farver/nat og atlasudtagning. Framerate-kravet betyder ikke, at vilkår
 korte modifier-angreb kan vise seks forskellige displayframes på en30fps-skærm.
 
 Standalone Chromium og den officielle GDevelop GDJS5.6.283-eksport registreres
-separat i runtime-rapporterne. Se `../docs/validation/ANIMATION_POLISH_2026-10-12.json`
+separat i runtime-rapporterne. Se `../archive/docs/validation/ANIMATION_POLISH_2026-10-12.json`
 for de færdige kørsler. Rå originalmasters og historiske V2–V5/kit-pakker er bevaret.
 
 Dette er en visuelt gennemgået udviklingsrevision. Små tegnede variationer i

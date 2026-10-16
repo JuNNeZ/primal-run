@@ -120,7 +120,7 @@ Offentlige kilder, læst 12. oktober 2026:
 
 ## Måling
 
-Se `../docs/validation/SPRITE_ATLAS_OPTIMIZATION_2026-10-12.json` for samme
+Se `../archive/docs/validation/SPRITE_ATLAS_OPTIMIZATION_2026-10-12.json` for samme
 menu/vulkanbane før og efter. Målingen gælder standalone Chromium. Færre
 hentninger er verificeret; FPS og indlæsningstid på fysiske mobiler er ikke målt.
 Bevarede fallback-PNGs betyder, at repository/deployment stadig indeholder dem.

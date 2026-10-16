@@ -32,10 +32,10 @@ Alle nye assets er `prototype_static`, `production_approved:false` og
 `animation_ready:false`. Tekniske checks godkender ikke anatomi eller animation.
 
 Slutpakken består **141 unit-tests, 22 browser-suiter og tre kit-kontroller**.
-Se docs/validation/PART_A_FINAL_VERIFICATION.json og part-a-final-test.log.
+Se archive/docs/validation/PART_A_FINAL_VERIFICATION.json og part-a-final-test.log.
 Den aktuelle GDJS/GDevelop-eksport er ikke kørt; browserresultater holdes særskilt.
 GitHub API til PR-oprettelse er fortsat blokeret af netværksadgang; Git-push er
-separat. Se `docs/GITHUB_API_ACCESS.md` og `docs/PART_A_PR_DRAFT.md`.
+separat. Se `archive/docs/GITHUB_API_ACCESS.md` og `archive/docs/PART_A_PR_DRAFT.md`.
 
 ## Tidligere implementeret
 
