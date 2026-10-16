@@ -5,6 +5,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
   const page=await browser.newPage({viewport:{width:1100,height:860}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
   await page.goto(await localURL(path.resolve(__dirname,process.env.PRIMAL_TEST_PAGES?'../dist/index.html':'../PRIMAL_RUN_Game/index.html')));await page.evaluate(()=>primalRun.ready);
   await page.evaluate(async()=>{
+    PrimalCore.FEATURES.fishingGame=false; // legacy hold-to-fish behaviour; the minigame has its own test
     await primalRun.preload({species:'baryonyx',stage:0});const g=primalRun.game,C=PrimalCore;g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies('baryonyx');g.start({seed:83});g.pause();
     const r=g.run,f=r.map.fishSchools[0];r.enemies=[];r.corpses=[];r.pickups=[];r.raptors=[];r.spawnTimer=999;r.nextXP=9999;r.player.x=f.x;r.player.y=f.y+75;r.player.facing='E';r.view.x=f.x-470;r.view.y=f.y-290;r.map.weather='pollen';r.seconds=0;r.night=false;
     window.fishingEvidence={fish:[],ellipses:[],strokes:[]};const ctx=document.querySelector('canvas[aria-label]').getContext('2d'),draw=ctx.drawImage,ellipse=ctx.ellipse,stroke=ctx.stroke;

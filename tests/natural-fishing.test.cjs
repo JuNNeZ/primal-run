@@ -1,5 +1,6 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),C=require('../PRIMAL_RUN_Game/src/core.js');
+C.FEATURES.fishingGame=false; // these cover the legacy hold-to-fish rules; tests/fishing-game.test.cjs covers the minigame
 function fishing(){
   const g=new C.Game({random:()=>.5});g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies('baryonyx');g.start({seed:83});
   const r=g.run;r.enemies=[];r.spawnTimer=999;r.nextXP=9999;
