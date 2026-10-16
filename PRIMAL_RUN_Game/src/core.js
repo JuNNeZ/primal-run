@@ -398,15 +398,20 @@
     for(const f of parts.forage){const z=near(f);if(['clearing','meadow','drygrass','steam','thorn','bog'].includes(z.id)&&f.rarity===0&&random()<.35)f.rarity=1;}
     return zones.map(z=>({index:z.index,id:z.id,name:z.name,x:z.x,y:z.y,animals:z.animals.slice(),start:!!z.start}));
   }
-  // FEATURES.randomStart: each map starts in one of its four corners, chosen and jittered by its own seed, so the
-  // rest of the map stream is untouched. The corners keep clear of the river/lava band (48–80 % across the map in
-  // either direction) whichever way it runs. dx/dy point from the corner into the map. Flag off: (480, 340).
+  // FEATURES.randomStart: each map starts anywhere on dry ground, chosen by its own seed. The river comes from its own
+  // seeded stream too (riverPlan), so the start can keep 340 px from the river/lava before the rest of the map is laid
+  // out around it. dx/dy point from the start towards the map centre. Flag off: the classic (480, 340) and river.
+  function riverPlan(stage,seed,width,height){
+    const random=seeded((seed^0x6A09E667^Math.imul(stage+3,40503))>>>0),horizontal=random()<.5,riverOffset=.48+random()*.25;
+    const river=Array.from({length:7},(_,i)=>horizontal?{x:Math.round(width*i/6),y:Math.round(height*(riverOffset+(random()-.5)*.14))}:{x:Math.round(width*(riverOffset+(random()-.5)*.14)),y:Math.round(height*i/6)});
+    return {horizontal,river,riverCurve:riverCurve(river)};
+  }
   function mapStart(stage,seed){
-    if(!FEATURES.randomStart)return {x:480,y:340,dx:1,dy:1,corner:0};
-    const width=Math.round((2880+stage*320)*MAP_SCALE),height=Math.round((1920+stage*256)*MAP_SCALE),random=seeded((seed^0x2F0A71^Math.imul(stage+7,97531))>>>0);
-    const corner=Math.floor(random()*4),right=corner%2===1,bottom=corner>1;
-    const x=right?Math.round(width*.88+random()*(width*.12-280)):Math.round(width*.1+random()*width*.18),y=bottom?Math.round(height*.885+random()*Math.max(0,height*.115-280)):Math.round(height*.11+random()*height*.17);
-    return {x,y,dx:right?-1:1,dy:bottom?-1:1,corner};
+    if(!FEATURES.randomStart)return {x:480,y:340,dx:1,dy:1};
+    const width=Math.round((2880+stage*320)*MAP_SCALE),height=Math.round((1920+stage*256)*MAP_SCALE),random=seeded((seed^0x2F0A71^Math.imul(stage+7,97531))>>>0),plan=riverPlan(stage,seed,width,height);
+    let best=null;
+    for(let i=0;i<60;i++){const p={x:Math.round(260+random()*(width-520)),y:Math.round(260+random()*(height-520))},d=riverDistance(plan,p);if(d>=340){best=p;break;}if(!best||d>best.d)best={...p,d};}
+    return {x:best.x,y:best.y,dx:best.x<width/2?1:-1,dy:best.y<height/2?1:-1,plan};
   }
   function createMap(stage, seed = 1) {
     const random = seeded((seed ^ Math.imul(stage + 1, 2654435761)) >>> 0);
@@ -435,8 +440,9 @@
     }
     for(const grove of groves)regions.push({...grove,seed:random()*100});
     for (let i = 0; i < Math.round(28 * AREA); i++) regions.push({ x: Math.round(random() * width), y: Math.round(random() * height), radius: 90 + random() * 170, seed: random() * 100 });
-    const horizontal=random()<.5,riverOffset=.48+random()*.25;
-    const river=Array.from({length:7},(_,i)=>horizontal?{x:Math.round(width*i/6),y:Math.round(height*(riverOffset+(random()-.5)*.14))}:{x:Math.round(width*(riverOffset+(random()-.5)*.14)),y:Math.round(height*i/6)});
+    let horizontal=random()<.5;const riverOffset=.48+random()*.25;
+    let river=Array.from({length:7},(_,i)=>horizontal?{x:Math.round(width*i/6),y:Math.round(height*(riverOffset+(random()-.5)*.14))}:{x:Math.round(width*(riverOffset+(random()-.5)*.14)),y:Math.round(height*i/6)});
+    if(S.plan){horizontal=S.plan.horizontal;river=S.plan.river;} // the start was chosen against this river
     const curve=riverCurve(river);
     if(stage===1)for(let i=6;i<curve.length;i+=10){
       const a=curve[i-1],b=curve[i],dx=b.x-a.x,dy=b.y-a.y,length=Math.hypot(dx,dy);
