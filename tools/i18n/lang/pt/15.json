@@ -34,5 +34,16 @@
  "Fang fisk fra bredden på længere afstand, eller ram bytte tæt på. Fisk heler # liv ekstra.": "Apanha peixe da margem com mais alcance, ou ataca uma presa próxima. O peixe cura # de vida extra.",
  "Langt glidespring, hvor du er beskyttet. Lander du i en busk, er du straks skjult til et baghold.": "Salto planado longo em que estás protegido. Se aterrares num arbusto ficas logo escondido para uma emboscada.",
  "Kort undvigelse, der snupper mad og fund inden for rækkevidde og jager ædende dyr væk.": "Esquiva curta que rouba comida e achados ao alcance e afugenta os animais que estão a comer.",
- "SNUPPET ×#": "ROUBADO ×#"
+ "SNUPPET ×#": "ROUBADO ×#",
+ "◎ DUSØR": "◎ RECOMPENSA",
+ "NYT DUSØRDYR": "NOVA RECOMPENSA",
+ "DUSØR +# DNA": "RECOMPENSA +# ADN",
+ "Tip": "Dica",
+ "Lava brænder hurtigt. Gå udenom, eller find en vej over.": "A lava queima depressa. Contorna-a ou encontra um caminho para atravessar.",
+ "Bossens røde felt viser angrebet. Gå ud af det, før det er fyldt.": "A zona vermelha do chefe mostra o ataque. Sai antes de encher.",
+ "Rivalen er stærkere end resten. Brug DNA i laben, og kom tilbage.": "O rival é mais forte do que os outros. Gasta ADN no laboratório e volta.",
+ "Spis mellem kampene. Mad heler dig, før næste kamp.": "Come entre lutas. A comida cura-te antes da próxima.",
+ "Stormløb kommer i en lige linje. Træd til siden, når feltet lyser op.": "As investidas vêm em linha reta. Afasta-te quando a faixa acender.",
+ "Snig dig ind på farlige dyr, og bid først for baghold-skade.": "Aproxima-te às escondidas de animais perigosos e morde primeiro para dano de emboscada.",
+ "Kæmp mod ét dyr ad gangen, og træk dig, når flere angriber.": "Luta contra um animal de cada vez e recua quando vários atacarem."
 }

@@ -142,5 +142,49 @@
  {
   "da": "SNUPPET ×#",
   "en": "SNATCHED ×#"
+ },
+ {
+  "da": "◎ DUSØR",
+  "en": "◎ BOUNTY"
+ },
+ {
+  "da": "NYT DUSØRDYR",
+  "en": "NEW BOUNTY"
+ },
+ {
+  "da": "DUSØR +# DNA",
+  "en": "BOUNTY +# DNA"
+ },
+ {
+  "da": "Tip",
+  "en": "Tip"
+ },
+ {
+  "da": "Lava brænder hurtigt. Gå udenom, eller find en vej over.",
+  "en": "Lava burns fast. Go around it, or find a way across."
+ },
+ {
+  "da": "Bossens røde felt viser angrebet. Gå ud af det, før det er fyldt.",
+  "en": "The boss's red zone shows the attack. Step out before it fills up."
+ },
+ {
+  "da": "Rivalen er stærkere end resten. Brug DNA i laben, og kom tilbage.",
+  "en": "The rival is stronger than the rest. Spend DNA in the lab and come back."
+ },
+ {
+  "da": "Spis mellem kampene. Mad heler dig, før næste kamp.",
+  "en": "Eat between fights. Food heals you before the next one."
+ },
+ {
+  "da": "Stormløb kommer i en lige linje. Træd til siden, når feltet lyser op.",
+  "en": "Charges come in a straight line. Step aside when the lane lights up."
+ },
+ {
+  "da": "Snig dig ind på farlige dyr, og bid først for baghold-skade.",
+  "en": "Sneak up on dangerous animals and bite first for ambush damage."
+ },
+ {
+  "da": "Kæmp mod ét dyr ad gangen, og træk dig, når flere angriber.",
+  "en": "Fight one animal at a time, and pull back when several attack."
  }
 ]

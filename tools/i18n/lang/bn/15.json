@@ -34,5 +34,16 @@
  "Fang fisk fra bredden på længere afstand, eller ram bytte tæt på. Fisk heler # liv ekstra.": "পাড় থেকে আরও দূরের মাছ ধরো, বা কাছের শিকারকে আঘাত করো। মাছ # অতিরিক্ত জীবন সারায়।",
  "Langt glidespring, hvor du er beskyttet. Lander du i en busk, er du straks skjult til et baghold.": "সুরক্ষিত লম্বা গ্লাইড-লাফ। ঝোপে নামলে সঙ্গে সঙ্গে লুকিয়ে পড়ো, ওত পাতার জন্য।",
  "Kort undvigelse, der snupper mad og fund inden for rækkevidde og jager ædende dyr væk.": "ছোট এড়ানো, যা নাগালের খাবার ও জিনিস ছিনিয়ে নেয় আর খাওয়া প্রাণীদের তাড়িয়ে দেয়।",
- "SNUPPET ×#": "ছিনিয়ে নেওয়া ×#"
+ "SNUPPET ×#": "ছিনিয়ে নেওয়া ×#",
+ "◎ DUSØR": "◎ পুরস্কার",
+ "NYT DUSØRDYR": "নতুন পুরস্কার-শিকার",
+ "DUSØR +# DNA": "পুরস্কার +# DNA",
+ "Tip": "টিপ",
+ "Lava brænder hurtigt. Gå udenom, eller find en vej over.": "লাভা দ্রুত পোড়ায়। ঘুরে যাও, বা পার হওয়ার পথ খোঁজো।",
+ "Bossens røde felt viser angrebet. Gå ud af det, før det er fyldt.": "বসের লাল ক্ষেত্র আক্রমণ দেখায়। ভরে ওঠার আগে বেরিয়ে যাও।",
+ "Rivalen er stærkere end resten. Brug DNA i laben, og kom tilbage.": "প্রতিদ্বন্দ্বী বাকিদের চেয়ে শক্তিশালী। ল্যাবে DNA খরচ করে ফিরে এসো।",
+ "Spis mellem kampene. Mad heler dig, før næste kamp.": "লড়াইয়ের ফাঁকে খাও। খাবার পরের লড়াইয়ের আগে তোমাকে সারিয়ে তোলে।",
+ "Stormløb kommer i en lige linje. Træd til siden, når feltet lyser op.": "ধেয়ে আসা আক্রমণ সোজা লাইনে আসে। পথ জ্বলে উঠলে পাশে সরে যাও।",
+ "Snig dig ind på farlige dyr, og bid først for baghold-skade.": "বিপজ্জনক প্রাণীর দিকে চুপিসারে এগোও, আর আগে কামড় দিয়ে অতর্কিত ক্ষতি করো।",
+ "Kæmp mod ét dyr ad gangen, og træk dig, når flere angriber.": "একবারে একটি প্রাণীর সঙ্গে লড়ো, অনেকে আক্রমণ করলে পিছিয়ে যাও।"
 }

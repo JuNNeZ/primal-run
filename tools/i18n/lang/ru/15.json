@@ -34,5 +34,16 @@
  "Fang fisk fra bredden på længere afstand, eller ram bytte tæt på. Fisk heler # liv ekstra.": "Лови рыбу с берега на большем расстоянии или бей добычу рядом. Рыба лечит на # здоровья больше.",
  "Langt glidespring, hvor du er beskyttet. Lander du i en busk, er du straks skjult til et baghold.": "Длинный планирующий прыжок под защитой. Приземлившись в куст, ты сразу скрыт для засады.",
  "Kort undvigelse, der snupper mad og fund inden for rækkevidde og jager ædende dyr væk.": "Короткий уворот, который хватает еду и находки рядом и прогоняет кормящихся животных.",
- "SNUPPET ×#": "СХВАЧЕНО ×#"
+ "SNUPPET ×#": "СХВАЧЕНО ×#",
+ "◎ DUSØR": "◎ НАГРАДА",
+ "NYT DUSØRDYR": "НОВАЯ НАГРАДА",
+ "DUSØR +# DNA": "НАГРАДА +# ДНК",
+ "Tip": "Совет",
+ "Lava brænder hurtigt. Gå udenom, eller find en vej over.": "Лава жжёт быстро. Обойди её или найди путь на ту сторону.",
+ "Bossens røde felt viser angrebet. Gå ud af det, før det er fyldt.": "Красная зона босса показывает атаку. Выйди, пока она не заполнилась.",
+ "Rivalen er stærkere end resten. Brug DNA i laben, og kom tilbage.": "Соперник сильнее остальных. Потрать ДНК в лаборатории и возвращайся.",
+ "Spis mellem kampene. Mad heler dig, før næste kamp.": "Ешь между боями. Еда лечит перед следующим.",
+ "Stormløb kommer i en lige linje. Træd til siden, når feltet lyser op.": "Рывок идёт по прямой. Отойди в сторону, когда полоса загорится.",
+ "Snig dig ind på farlige dyr, og bid først for baghold-skade.": "Подкрадывайся к опасным животным и кусай первым ради урона из засады.",
+ "Kæmp mod ét dyr ad gangen, og træk dig, når flere angriber.": "Сражайся с одним зверем за раз и отступай, когда нападают несколько."
 }
