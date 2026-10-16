@@ -1,0 +1,42 @@
+[
+ {
+  "da": "Vælg din HUD",
+  "en": "Choose your HUD"
+ },
+ {
+  "da": "Du kan altid skifte i Indstillinger.",
+  "en": "You can always switch in Settings."
+ },
+ {
+  "da": "Klassisk",
+  "en": "Classic"
+ },
+ {
+  "da": "Den oprindelige HUD",
+  "en": "The original HUD"
+ },
+ {
+  "da": "A · Hjørner",
+  "en": "A · Corners"
+ },
+ {
+  "da": "Liv øverst til venstre, mål og kort øverst til højre, evner forneden i midten",
+  "en": "Health top left, goal and map top right, abilities bottom centre"
+ },
+ {
+  "da": "B · Fokus på midten",
+  "en": "B · Focus on the centre"
+ },
+ {
+  "da": "XP langs toppen, liv under din dinosaur, kun de vigtigste evner",
+  "en": "XP along the top, health under your dinosaur, only the key abilities"
+ },
+ {
+  "da": "C · Samlet konsol",
+  "en": "C · One console"
+ },
+ {
+  "da": "Alt om dig i én bjælke forneden, kortet øverst til højre",
+  "en": "Everything about you in one bar at the bottom, map top right"
+ }
+]
