@@ -1273,6 +1273,7 @@
       if(r)for(const c of r.ashClouds||[])if(c.until>r.seconds){if(drawApprovedAsh(c,r))continue;const fade=Math.min(1,c.until-r.seconds);ctx.save();ctx.globalAlpha=.32*fade;ctx.fillStyle='#626861';for(let i=0;i<5;i++){const a=i*1.26+c.x*.01;ctx.beginPath();ctx.arc(c.x+Math.cos(a)*c.radius*.35,c.y+Math.sin(a)*c.radius*.25,c.radius*.55,0,Math.PI*2);ctx.fill();}ctx.restore();} // B1c native ash clouds, with procedural fallback.
       if(r)drawTelegraphs(r);
       if(r&&C.FEATURES.combatColors&&!renderOverride)drawDefense(r);
+      if(r&&r.tailSweep){const t=r.tailSweep,k=Math.max(0,t.life/.35);ctx.save();ctx.globalAlpha=.7*k;ctx.lineWidth=5;ctx.strokeStyle='#dfbc52';ctx.beginPath();ctx.arc(Math.round(r.player.x),Math.round(r.player.y),Math.round(t.radius*(1.15-.35*k)),0,Math.PI*2);ctx.stroke();ctx.restore();} // Stegosaurus tail sweep arc
       if(r&&C.FEATURES.stealth&&!renderOverride)drawStealthEye(r); // the menu world is invulnerable, so no defence ring there
       if(r&&C.PLAYER_SPECIES[r.species].diet!=='herbivore')for(const food of r.pickups.filter(p=>p.corpseId!==undefined)){const corpse=r.corpses.find(c=>c.id===food.corpseId);if(corpse)label(C.MEAT_RARITIES[food.rarity].symbol+' '+food.value+(corpse.age>=7?' · FORDÆRVER':' · FRISK')+' · '+(inputMode==='touch'?'SPIS':control('eat')+' SPIS'),food.x,food.y+enemyLabelOffset(corpse),C.MEAT_RARITIES[food.rarity].color);}
       if(r)drawAirExtras(r,view,r.seconds);

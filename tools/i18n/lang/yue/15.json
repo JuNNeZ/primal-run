@@ -28,5 +28,11 @@
  "Få en legendarisk titel.": "攞一個傳奇稱號。",
  "Det skjulte navn": "隱藏嘅名",
  "Få en hemmelig titel.": "攞一個秘密稱號。",
- "Tryk @ eller Ctrl for at snige. Dyrene opdager dig langsommere, og øjet viser hvor tæt de er på at se dig. Stå stille i buske for at skjule dig. Dybt vand kan kun krydses ved vadesteder.": "撳 @ 或 Ctrl 潛行。動物會慢啲發現你，隻眼會顯示佢哋幾接近見到你。喺草叢企定就可以匿埋。深水淨係可以喺淺灘過。"
+ "Tryk @ eller Ctrl for at snige. Dyrene opdager dig langsommere, og øjet viser hvor tæt de er på at se dig. Stå stille i buske for at skjule dig. Dybt vand kan kun krydses ved vadesteder.": "撳 @ 或 Ctrl 潛行。動物會慢啲發現你，隻眼會顯示佢哋幾接近見到你。喺草叢企定就可以匿埋。深水淨係可以喺淺灘過。",
+ "Haleslag hele vejen rundt: # skade, og dyrene vakler. Imens tager du # % mindre skade.": "打圈掃尾：造成 # 點傷害，動物會踉蹌。期間你受嘅傷害少 # %。",
+ "Fang fisk eller ram tæt bytte. I vand er du skjult og # % hurtigere, på land # % langsommere.": "捉魚或者打近身獵物。喺水入面匿埋兼快 # %，喺陸地慢 # %。",
+ "Fang fisk fra bredden på længere afstand, eller ram bytte tæt på. Fisk heler # liv ekstra.": "喺岸邊遠啲都捉到魚，或者打近身嘅獵物。魚會多補 # 點生命。",
+ "Langt glidespring, hvor du er beskyttet. Lander du i en busk, er du straks skjult til et baghold.": "受保護嘅長距離滑翔跳。落喺草叢就即刻匿埋，準備伏擊。",
+ "Kort undvigelse, der snupper mad og fund inden for rækkevidde og jager ædende dyr væk.": "短閃避，搶走範圍內嘅食物同拾到嘅嘢，仲趕走緊食嘢嘅動物。",
+ "SNUPPET ×#": "搶到 ×#"
 }

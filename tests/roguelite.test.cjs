@@ -28,8 +28,8 @@ test('ability costs, immunity, contact damage once per animal, and defensive bra
  for(const species of Object.keys(C.PLAYER_SPECIES)){
   const g=make(species),r=g.run;r.player.facing='E';const e=g.spawn('tyrannosaurus',{x:505,y:340});e.cooldown=999;e.speed=0;
   g.step(.01,{pounce:true,x:1});assert.ok(r.pounce>0||r.hop,'ability started (the pachy hops back right after its headbutt lands)');assert.ok(r.stamina<100);const hp=e.hp;g.step(.01,{x:1});assert.equal(e.hp,hp,'ability cannot damage same target twice');
-  const health=r.health;g.damage(20);assert.equal(r.health,health-(['ankylosaurus','stegosaurus'].includes(species)?5:['compy','utahraptor','velociraptor','deinonychus','gallimimus','pachycephalosaurus','therizinosaurus','pteranodon','microraptor','oviraptor'].includes(species)?0:20)); // dust cloud, glides and the hop back protect briefly; the Parasaurolophus trumpets instead of raising dust
-  if(['utahraptor','velociraptor','carnotaurus','triceratops','pachycephalosaurus','baryonyx','deinosuchus','allosaurus','spinosaurus','parasaurolophus','therizinosaurus','microraptor','pachyrhinosaurus'].includes(species))assert.ok(hp<e.maxHP);else if(species==='compy')assert.ok(r.raptors.some(a=>a.temp&&a.kind==='compy'),'the dodge calls wild compies');else assert.equal(hp,e.maxHP);
+  const health=r.health;g.damage(20);assert.equal(r.health,health-(species==='stegosaurus'&&C.FEATURES.speciesIdentity?20*C.IDENTITY.stego.stance:['ankylosaurus','stegosaurus'].includes(species)?5:['compy','utahraptor','velociraptor','deinonychus','gallimimus','pachycephalosaurus','therizinosaurus','pteranodon','microraptor','oviraptor'].includes(species)?0:20)); // dust cloud, glides and the hop back protect briefly; the Parasaurolophus trumpets instead of raising dust
+  if(['utahraptor','velociraptor','carnotaurus','triceratops','pachycephalosaurus','baryonyx','deinosuchus','allosaurus','spinosaurus','parasaurolophus','therizinosaurus','microraptor','pachyrhinosaurus'].includes(species)||species==='stegosaurus'&&C.FEATURES.speciesIdentity)assert.ok(hp<e.maxHP,'Stegosaurus swings its tail all around');else if(species==='compy')assert.ok(r.raptors.some(a=>a.temp&&a.kind==='compy'),'the dodge calls wild compies');else assert.equal(hp,e.maxHP);
  }
 });
 test('mutation pool contains shared and own mutations, never another species skill',()=>{
@@ -97,3 +97,4 @@ test('new abilities are on: 1.2 s pin, dust cloud, Pachycephalosaurus hop back; 
  for(let i=0;i<8;i++)p.step(1/30,{});assert.ok(pr.player.y<y,'and hops back, away from the target');
 });
 C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start
+C.FEATURES.waterStart = false; // same reason: fish eaters would start beside a fish school instead
