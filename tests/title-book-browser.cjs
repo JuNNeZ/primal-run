@@ -19,7 +19,7 @@ const shots=process.env.PRIMAL_SHOTS;
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,'no horizontal scroll');
   if(shots)await page.screenshot({path:path.join(shots,`titelbog_${name}.png`),fullPage:false});
   await page.locator('[data-action="menu"]').last().click();
-  await page.evaluate(()=>{const g=primalRun.game;g.start({seed:7});const r=g.run;r.stats.kills=12;r.seconds=200;g.finish(false);});
+  await page.evaluate(()=>{const g=primalRun.game;g.start({seed:7});const r=g.run;r.stats.kills=12;r.seconds=200;g.finish(false);r.titles.secondary=['persistent_hunter','boss_hunter'];r.titles.fresh=['boss_hunter'];});
   await page.waitForSelector('.run-card');
   const chips=page.locator('.run-card [data-title-tip]');
   if(await chips.count()){
@@ -27,6 +27,8 @@ const shots=process.env.PRIMAL_SHOTS;
    await chips.first().click();assert.doesNotMatch(await page.locator('#title-tip').innerText(),/Tryk på en titel/);
   }
   assert.ok((await page.locator('.run-card .run-title').getAttribute('title')).includes('·'),'primary title has count');
+  // Regression: secondary.map(titleChip) passed the array index/array as class/prefix and printed "[object Object]".
+  assert.doesNotMatch(await page.locator('.run-card').innerText(),/object Object/);assert.ok(await page.locator('.run-secondary .title-chip').count()>=2,'secondary chips shown');
   if(shots)await page.screenshot({path:path.join(shots,`slutskaerm_${name}.png`),fullPage:false});
   assert.deepEqual(errors,[]);await page.close();
  }
