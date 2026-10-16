@@ -11,12 +11,12 @@
     "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
     "src/run_extras.js": "195ac921de2199f418d97ffc4f279c64c1d63f34ffc6b2fda92ed3781d0bdfbe",
     "src/telemetry.js": "b5cf2a84f30129c0d72874aadc5e6b45b695d1985856484be580004e76426b9c",
-    "src/core.js": "c4b8b38425fbf5d4fdf568187e676337f2279687a5f54eb2b4edc11cf718190c",
+    "src/core.js": "7cf06f7a529b6d0ce511bc86d3164d4804751fef1fbfe16dc81d18083f44d5ab",
     "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
-    "src/lang.js": "dc12163286c0e21dcfc53e57035af53a1b3852774d3de45819f0712beca31dc1",
+    "src/lang.js": "6bc5a0099658963a24b6f3a4ff0ada23938ddcf9d5aa8b041f4b177d2559760e",
     "src/assets.js": "6fb8267ac2e2c6790aeeed8aea4f23e8a41319504d0602a6cc00ec81c976466c",
     "src/audio.js": "34d68f923f702b183bc10bb49f753cdb92c03c44a79aaacecdcfd9a0295fcf40",
-    "src/app.js": "d9b021c8317e14260dbda2cfe57de87087c6354b3ad9ceaa0e7757dc3a5a4958",
-    "style.css": "fed4bb75cd672ea48e03b052a5383a3b4e1fffe796cf1c39b3cf090b09e50b03"
+    "src/app.js": "7e81dae3adc5739efb1320d3b4df2bc654400d3effc665b2e4b90934c3154a34",
+    "style.css": "c5a4bfa5802e6b948f931ed04d837ed2ecc0bd59b33710e47db048b3a870da84"
   }
 }

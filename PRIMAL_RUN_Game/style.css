@@ -249,3 +249,12 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .primal-shell[data-hud="c"] .hud-prompt{bottom:136px}
 .primal-shell[data-hud="b"] .hud-slot small{color:#efdfb8;text-shadow:0 1px 3px #000,0 0 6px #000}
 #goal-dna::before{content:'⬡ '}
+/* Title tips and title book (FEATURES.titleTips / titleBook, 2026-10-16) */
+.title-chip{font:inherit;cursor:help;background:transparent;border:1px solid currentColor;padding:2px 8px;margin:2px;min-height:0;width:auto}
+.run-secondary .title-chip{font-size:12px}
+.title-tip{font-size:12px;color:#b6c0a9;min-height:1.4em;margin:4px 0 0}.title-tip.shown{color:#f1dfbd}
+.title-book-group{font-size:14px;letter-spacing:1px;margin:14px 0 6px;color:#f1dfbd}.title-book-group small{color:#8eaa60;font-size:11px}
+.title-book-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px}
+.title-entry{padding:8px 10px;background:#1b2b22;border:1px solid #3d4c33;opacity:.6}.title-entry.done{opacity:1;border-color:currentColor;background:#26392c}
+.title-entry b{font-size:13px}.title-entry p{font-size:12px;color:#b6c0a9;margin:4px 0}.title-entry small{font-size:10px;letter-spacing:1px;color:#8eaa60}
+.title-entry.rarity-common{color:#f1dfbd}
