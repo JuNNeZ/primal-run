@@ -190,3 +190,4 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .admin-panel label{display:flex;gap:4px;align-items:center}
 .admin-panel button[data-admin=off]{background:#c6663c;color:#fff}
 .admin-log{min-height:1.4em;margin:8px 0 0;color:#a2d4c1}
+.share-ask{border:1px solid #e9b75a;padding:10px 12px;margin:10px 0;text-align:center}.share-ask p{margin:6px 0;font-size:.9em}.share-ask .actions{justify-content:center}
