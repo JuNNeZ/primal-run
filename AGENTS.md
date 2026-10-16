@@ -1,9 +1,5 @@
 # PRIMAL RUN - sprite work
 
-> **On `main`:** these are the current rules, copied from `integration/next`. The playable game
-> (`PRIMAL_RUN_Game/`, `tools/`, tests) lives on `integration/next`; `main` only receives releases.
-> Start every task with `git switch -c <codex|claude>/<task> origin/integration/next`.
-
 ## Shared branches (from 10 Oct 2026)
 
 - `integration/next` is the combined game: Codex work + Claude work, merged and tested
@@ -26,7 +22,8 @@
 ## Repository and cloud work
 
 Read README.md and CLOUD_HANDOFF.md before continuing. The active deliverable is
-PRIMAL_RUN_Game; Prototype_Kit and earlier packs are preserved references.
+PRIMAL_RUN_Game; Prototype_Kit is the preserved asset pack the game build copies,
+and older demos, one-off scripts and dated reports live in `archive/`.
 PRIMAL_RUN_Game/project.json is a generated GDevelop 5 project using JavaScript
 events and the shared canvas/HTML game. Edit src/*.js and style.css, then run
 `npm run build:game`; do not hand-edit its generated event. Keep standalone
@@ -43,19 +40,8 @@ the original Windows user profile or temporary clipboard paths.
 Read and follow `PRIMAL_RUN_Sprites/SPRITE_RULES.md` before creating, extracting,
 editing, exporting or integrating any art. This is the user's project-wide rule.
 Include the rule, manifest and validation report with every sprite delivery.
-For original v2 demo assets, also follow `PRIMAL_RUN_Demo_v2/SPRITE_RULES.md`.
-Its documented native export sizes, shared palette and static-pose scope apply
-to that package. The original concept-sheet export must remain unchanged.
-For the preserved v3 south walk demo, follow `PRIMAL_RUN_Demo_v3/SPRITE_RULES.md` and its
-animation manifest. Preserve V2. Validate the entire fixed-body region and test
-movement, stopped and blocked animation states before repackaging V3.
-For the corrected v4 walk, follow `PRIMAL_RUN_Demo_v4/SPRITE_RULES.md`.
-The user's body-motion and arm-anatomy corrections override the v3 fixed-body
-constraint. Preserve V3; export whole poses and verify controlled motion,
-loop closure, palette, transparency and browser state changes for V4.
-For V5 cardinal directions, follow `PRIMAL_RUN_Demo_v5/SPRITE_RULES.md`.
-North is the user's explicit prototype rotation exception; retain its lighting
-caveat. Validate all four direction origins and movement/stop/blocked states.
+The V2–V5 demo packs are archived under `archive/demos/` (see `archive/README.md`);
+read their own SPRITE_RULES.md only if a task explicitly touches that history.
 For the active game's player combat sprites, also read
 `PRIMAL_RUN_Game/SPRITE_RULES_PLAYER_COMBAT.md`. Keep new attacks in
 assets/player_combat and player_combat_manifest.json; the build combines this
