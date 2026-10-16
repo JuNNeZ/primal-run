@@ -1,105 +1,68 @@
 # PRIMAL RUN
 
 Arbejdsrepository til et top-down dinosaur-roguelite i pixel art.
+Live: https://junnez.github.io/primal-run/ (branchen `gh-pages`).
 
-Det aktive spil er **PRIMAL_RUN_Game**: en spilbar udviklingsversion med
-Velociraptor som startart, elleve spilbare arter, otte tilfældige baner og navngivne bosser,
-kød/levels, fælles og artsmutationer, permanente DNA-unlocks og upgrades,
-startmenu, lokale highscores, lydindstillinger og original proceduremusik.
-Den fælles spilkerne kører i browseren og i et GDevelop 5-projekt.
+Det aktive spil er **[PRIMAL_RUN_Game](PRIMAL_RUN_Game/README.md)**: 21 spilbare arter,
+otte tilfældige baner i fire biomer med navngivne bosser, en hemmelig askebane efter
+bane 8, mutationer, DNA-lab og permanente unlocks, lokale rekorder og titler,
+sværhedsgrader, PC-HUD-layouts og 24 sprog. Den fælles spilkerne (`src/core.js`)
+kører både i browseren og i et genereret GDevelop 5-projekt (`project.json`).
 
-Alle ti fjendearter har komplette serier for idle, gang, løb, angreb, skade
-og død i fire retninger:1200 runtime-frames.
-[Se fjendeanimationerne](PRIMAL_RUN_Game/enemy_full_review.html).
-Vand/mudder sænker bevægelse; hold C i buske for at snige/skjule dig.
-Flokke alarmerer hinanden, bytte græsser/hviler, og rovdyr har territorier.
-[Spiltest og balanceændringer1–4](PRIMAL_RUN_Game/PRIORITIES_1_4.md).
+## Branches og udgivelse
 
-Otte separate spillerarter har960 frames; tre arter deler deres fjendeserier.
-Elleve spilbare arter har1320 frames for idle, gang, løb, angreb, skade og død. [Se spilleranimationerne](PRIMAL_RUN_Game/player_full_review.html).
-Almindelige fjender kan opgive jagten efter 8 sekunder uden en ny træffer;
-chancen stiger med afstand og tid. Uforstyrrede byttedyr holder cirka 110 pixels
-afstand, når spilleren står stille. Bosser opgiver ikke.
+- Udvikling sker på `integration/next`; `main` får kun releases.
+- Claude arbejder på `claude/*`, Codex på `codex/*`; begge laver draft-PR'er mod `integration/next`.
+- Live-siden opdateres kun, når Jonas skriver "udgiv". Fremgangsmåden står i
+  [CLAUDE.md](CLAUDE.md) under "Going live".
+- Nye funktioner ligger bag `FEATURES.<flag>` i `PRIMAL_RUN_Game/src/core.js`.
 
-Menu, fire biomer og fire bosskampe har nu særskilte musiktemaer med farelag
-ved50/25/10%liv. Startområder, naturklynger og flodretning varierer mellem runs.
-Space angriber kun; mutationer og næste biome kræver et bevidst valg.
-
-Startmenuen har en animeret jungle med dinosaurer, parallax og smådyr.
-18 nye plante-/jorddetaljer og seks insektposes varierer mellem biomerne;
-Deinosuchus spawner ved floden, og dyr undgår lava ved spawn.
-Arterne har forskellige farver, og stabile kropsradier er gennemgået.
-[Se jungle, farver og størrelser](PRIMAL_RUN_Game/ecology_review.html).
-[Foreslåede næste forbedringer](PRIMAL_RUN_Game/NEXT_IMPROVEMENTS.md).
-
-**PRIMAL_RUN_Prototype_Kit** er den bevarede assetpakke og tidligere browserdemo
-med 104 PNG-assets, otte WAV-placeholderlyde og GDevelop-byggeguides.
-
-[Ny rute, Compy-flokke, NPC-evner og seed1993](PRIMAL_RUN_Game/JOURNEY_AND_COMPY.md).
-
-## Start
-
-Kør `npm run preview`, og åbn
-`http://localhost:8000/PRIMAL_RUN_Game/index.html`.
-
-I GDevelop åbnes **[PRIMAL_RUN_Game/project.json](PRIMAL_RUN_Game/project.json)**
-direkte. Behold hele projektmappen samlet. Mekanikkerne bruger JavaScript-events
-og redigeres i `src/`; de er ikke individuelle visuelle events i sceneeditoren.
-Projektet er indlæst og eksporteret med GDevelop 5.6.283, og eksporten er testet
-i Chromium. Se [spillets vejledning](PRIMAL_RUN_Game/README.md) og
-[udviklingsplanen](PRIMAL_RUN_Game/DEVELOPMENT_PLAN.md).
-
-`npm run build:web` klargør `dist/` til GitHub Pages. Den manuelle workflow
-**Publish PRIMAL RUN to GitHub Pages** publicerer efter opsætning i GitHub.
-Den færdige webdemo ligger også på branchen **gh-pages**. Vælg
-**Settings → Pages → Deploy from a branch → gh-pages → / (root) → Save**.
-Efter GitHubs deployment er adressen https://junnez.github.io/primal-run/.
-Publicering er først aktiv, når Pages er slået til i repositoryets indstillinger.
-
-Læs [cloud-overdragelsen](CLOUD_HANDOFF.md), når arbejdet fortsættes på en anden computer.
-Den komplette asset-guide ligger i
-[HANDOFF.md](PRIMAL_RUN_Prototype_Kit/HANDOFF.md) og
-[GUIDE.html](PRIMAL_RUN_Prototype_Kit/GUIDE.html).
-
-## Udvikling og tests
+## Start lokalt
 
 ```sh
 python -m pip install -r requirements.txt
 npm ci
-npx playwright install --with-deps chromium
-python PRIMAL_RUN_Prototype_Kit/tools/validate_kit.py
-npm test
-npm run build:game
-npm run build:web
+npm run preview   # http://localhost:8000/PRIMAL_RUN_Game/
 ```
 
-På Windows kan de installerede Chrome-filer bruges automatisk. En anden browsersti
-kan sættes med `PRIMAL_CHROME_PATH`. På Linux/cloud bruges Playwright Chromium.
-GitHub Actions kører asset- og browserkontroller ved push og PR.
+## Tests og bygning
 
-`npm run test:game` tester den nye spilkerne og browserversionen.
-`npm run test:kit` tester den tidligere prototype via lokal HTTP. Kit-testene
-skriver rapporter og screenshots; brug en midlertidig kopi, hvis historiske
-rapporter skal bevares. `npm run build:game` opdaterer det genererede GDevelop-
-event og kopierer kit-assets byte-for-byte; kør det efter ændringer i `src/`.
+```sh
+node --test tests/*.test.cjs          # hurtige enhedstests
+npm run test:game                     # enheds- og browsertests af spillet
+npm run validate:game-sprites
+npm run validate:enemy-sprites
+npm test                              # alt inkl. atlas-værktøjer og Prototype Kit
+python tools/rebuild_generated.py     # genererede filer efter merge
+npm run build:web                     # webudgaven i dist/
+```
 
-Tidligere V2–V5-pakker og konceptudklip er bevaret som referencer. Arbejd videre
-i PRIMAL_RUN_Game; regenerér ikke historiske pakker uden en konkret grund.
-ZIP-filer, som kan genskabes lokalt, er udeladt fra Git.
+I cloud bruges Playwright Chromium (`PRIMAL_CHROME_PATH=/opt/pw-browsers/chromium`).
+Browsertests omskriver tracked `*_report.json` og `previews/*.png`; gendan dem med
+`git checkout`, medmindre ændringen er tilsigtet. Balance simuleres med
+`npm run simulate:styles` eller `SIMULER_BALANCE.bat` på Windows.
 
-Alle assets er prototyper. Action-poser og enemy-stillbilleder er ikke færdige
-animationer. Den nye GDevelop-runtime er funktionelt testet, men det godkender
-ikke grafikkens stil, anatomi eller animationskvalitet. Balance, mobilstyring og
-endelige animationer kræver videre spiltest. Se sprite-regler og rapporter.
+## Mapper
 
-## Current ecology, corpse art and research workflow
+| Mappe | Indhold |
+| --- | --- |
+| `PRIMAL_RUN_Game/` | Spillet: `src/`, assets, lyde, GDevelop-projekt, sprite-regler og feature-dokumenter |
+| `tests/` | Node- og Playwright-tests |
+| `tools/` | Byggeværktøjer, eksportører, validatorer, balance-simulator, i18n-pipeline, rig-animator |
+| `PRIMAL_RUN_Prototype_Kit/` | Bevaret assetpakke; `npm run build:game` kopierer dens assets |
+| `PRIMAL_RUN_Sprites/` | Projektets sprite-regel (`SPRITE_RULES.md`) og de oprindelige sprites |
+| `PRIMAL_RUN_Art_Handoff/` | Kildekunst til præsentation og ground-reuse |
+| `docs/` | Design- og opgavenoter |
+| `archive/` | Pensionerede demoer, engangsscripts og daterede rapporter ([oversigt](archive/README.md)) |
 
-See [RESEARCH_AND_ECOLOGY.md](PRIMAL_RUN_Game/RESEARCH_AND_ECOLOGY.md) for the
-species book, wounded animals, rare rewards, run statistics/cinematics and
-seeded balance CLI. [Balance samples](PRIMAL_RUN_Game/balance_runs/README.md)
-include settings, outcomes and caveats. Corpse assets use their own
-[rule](PRIMAL_RUN_Game/SPRITE_RULES_CORPSES.md); living sprites are preserved.
-Focused recipes in [.agents/skills](.agents/skills) cover sprites, asset generation,
-mechanics and balance; AGENTS.md routes future work to the relevant recipe.
+## Videre læsning
 
-[Deinosuchus: spillerintegration og animation-review](PRIMAL_RUN_Game/deinosuchus_playable_review.html). Låses op ved Doris på bane4; udviklingsbranch `integration/next`, ikke automatisk publiceret.
+- [Spillets vejledning](PRIMAL_RUN_Game/README.md) og [udviklingsplanen](PRIMAL_RUN_Game/DEVELOPMENT_PLAN.md)
+- [AGENTS.md](AGENTS.md) og [CLAUDE.md](CLAUDE.md): regler for Codex og Claude
+- [CLOUD_HANDOFF.md](CLOUD_HANDOFF.md): opsætning af cloud-miljø
+- [Forskning, økologi og balance-CLI](PRIMAL_RUN_Game/RESEARCH_AND_ECOLOGY.md),
+  [balance-kørsler](PRIMAL_RUN_Game/balance_runs/README.md)
+- [Rig-animatoren](tools/RIG_ANIMATOR.md)
+
+Al grafik er prototype, indtil Jonas har godkendt den visuelt. Automatiske fil- og
+runtime-tests godkender ikke stil, anatomi eller animation.

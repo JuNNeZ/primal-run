@@ -65,11 +65,11 @@ binary alpha. `python tools/validate_a6.py` kontrollerer kildehashes, de faktisk
 samplede pixels, padding og maskebits. `tests/a6-browser.cjs` kontrollerer 110.592
 native lava-pixels mod skadereglen, passage-refresh, HUD-diæter/tekst, Part C's
 ikonadapter, feature/missing-PNG-fallbacks, pause og 390px layout.
-`tests/a6-part-c-compat.cjs` kører kun dér, hvor Part C er til stede; på den
+`archive/legacy_scripts/a6-part-c-compat.cjs` (arkiveret; Part C er nu integreret) kører kun dér, hvor Part C er til stede; på den
 isolerede kombination tester den rigtig Q-kommando og reroll-knap.
 
-Se `a6_validation.json`, `a6_runtime_report.json`, `a6_part_c_compat_report.json`
-og `../docs/validation/A6_2026-10-12.json`. Previews og mobil/desktop-evidens
+Se `a6_validation.json`, `a6_runtime_report.json`, `../archive/legacy_scripts/a6_part_c_compat_report.json`
+og `../archive/docs/validation/A6_2026-10-12.json`. Previews og mobil/desktop-evidens
 ligger under `previews/a6/`. Kildedimensioner og eksportafvigelser er dokumenteret
 i `SPRITE_RULES_A6.md` og `Source_Generated/a6/PROMPTS.md`.
 
