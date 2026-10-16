@@ -338,7 +338,7 @@ test('terrain layouts provide seeded wilderness and biome-specific scenery witho
     assert.ok(map.decorations.length > 10); assert.ok(map.decorations.every(p => p.x > 0 && p.x < map.width && p.y > 0 && p.y < map.height));
     assert.ok(map.trails.every(points => points.every(p => p.x >= 0 && p.y >= 0 && p.x <= map.width && p.y <= map.height)));
     if (stage === 0) assert.ok(map.decorations.some(p => p.canopy));
-    if (stage === 3) assert.ok(map.decorations.some(p => p.path.endsWith('lava_rock.png')));
+    if (stage === 3) assert.ok([...map.decorations, ...map.rocks].some(p => p.path && p.path.endsWith('lava_rock.png'))); // FEATURES.sizeAware turns lava rocks into rocks
   }
 });
 C.FEATURES.randomStart = false; // runs after module load, before the tests: these place things around the classic 480,340 start
