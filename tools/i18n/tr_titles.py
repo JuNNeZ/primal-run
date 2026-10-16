@@ -1,5 +1,5 @@
-# Title book, title tips and title achievements (2026-10-16, FEATURES.titleBook/titleTips/titleAchievements).
-# Rows: (da, en, de, sv, no, ja, zh). Source: tools/i18n/source/chunk15.json.
+# Title book, title tips, title achievements and the stealth help text (2026-10-16, FEATURES.titleBook/titleTips/
+# titleAchievements/stealth). Rows: (da, en, de, sv, no, ja, zh). Source: tools/i18n/source/chunk15.json.
 TITLES = [
 ("Titelbog","Title Book","Titelbuch","Titelbok","Tittelbok","称号の書","称号之书"),
 ("TITELBOG","TITLE BOOK","TITELBUCH","TITELBOK","TITTELBOK","称号の書","称号之书"),
@@ -30,4 +30,5 @@ TITLES = [
 ("Få en legendarisk titel.","Earn a legendary title.","Erhalte einen legendären Titel.","Få en legendarisk titel.","Få en legendarisk tittel.","伝説の称号を獲得する。","获得一个传奇称号。"),
 ("Det skjulte navn","The Hidden Name","Der verborgene Name","Det dolda namnet","Det skjulte navnet","隠された名","隐藏之名"),
 ("Få en hemmelig titel.","Earn a secret title.","Erhalte einen geheimen Titel.","Få en hemlig titel.","Få en hemmelig tittel.","秘密の称号を獲得する。","获得一个秘密称号。"),
+("Tryk @ eller Ctrl for at snige. Dyrene opdager dig langsommere, og øjet viser hvor tæt de er på at se dig. Stå stille i buske for at skjule dig. Dybt vand kan kun krydses ved vadesteder.","Press @ or Ctrl to sneak. Animals notice you more slowly, and the eye shows how close they are to spotting you. Stand still in bushes to hide. Deep water can only be crossed at fords.","Drücke @ oder Strg zum Schleichen. Tiere bemerken dich langsamer, und das Auge zeigt, wie kurz sie davor sind, dich zu entdecken. Steh still in Büschen, um dich zu verstecken. Tiefes Wasser kann nur an Furten überquert werden.","Tryck @ eller Ctrl för att smyga. Djuren märker dig långsammare, och ögat visar hur nära de är att se dig. Stå still i buskar för att gömma dig. Djupt vatten kan bara korsas vid vadställen.","Trykk @ eller Ctrl for å snike. Dyrene oppdager deg saktere, og øyet viser hvor nær de er å se deg. Stå stille i busker for å gjemme deg. Dypt vann kan bare krysses ved vadesteder.","@またはCtrlでしのび足。動物に気づかれにくくなり、目のマークが見つかりそうな度合いを示します。茂みで止まると隠れられます。深い水は浅瀬でしか渡れません。","按 @ 或 Ctrl 潜行。动物发现你会更慢，眼睛图标显示它们离发现你还有多近。在灌木丛中静止即可躲藏。深水只能从浅滩渡过。"),
 ]

@@ -33,11 +33,11 @@
       <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="meter xp hud-x" title="XP"><i></i></div><small id="xp-label" class="hud-x"></small><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div><div id="extras-chip" class="extras-chip" hidden></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b><div class="meter goal hud-x"><i></i></div><div class="goal-row hud-x"><span id="goal-dna"></span><span id="goal-time"></span></div></div></div><div class="hud-top" hidden><div class="meter"><i></i></div><b id="top-level"></b><b id="top-time"></b></div><div class="hud-actions" hidden><div class="hud-slot" data-slot="attack"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small>Angreb</small></div><div class="hud-slot" data-slot="ability"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small></small></div><span class="slot-gap"></span><div class="hud-slot small" data-slot="eat"><span class="slot-icon"></span><kbd></kbd><small>Spis</small></div><div class="hud-slot small" data-slot="sneak"><span class="slot-icon">◐</span><kbd></kbd><small>Snig</small></div><div class="hud-slot small" data-slot="interact"><span class="slot-icon">?</span><kbd></kbd><small>Undersøg</small></div></div><div class="hud-prompt" hidden></div>
       <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div></div></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div></main>
-      <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space" class="pad-a">ANGREB</button><button data-key="ShiftLeft" class="pad-b">EVNE</button><button data-key="KeyE" class="pad-x">UNDERSØG</button><button data-key="KeyF" class="pad-y">SPIS</button><button data-key="KeyQ" class="pack-key pad-l" hidden>FLOK</button></div></div>
+      <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space" class="pad-a">ANGREB</button><button data-key="ShiftLeft" class="pad-b">EVNE</button><button data-key="KeyE" class="pad-x">UNDERSØG</button><button data-key="KeyF" class="pad-y">SPIS</button><button data-key="KeyQ" class="pack-key pad-l" hidden>FLOK</button><button data-sneak-toggle class="pad-sneak" aria-pressed="false" hidden>SNIG</button></div></div>
       <footer><span class="control-hints"><span data-control="move"><kbd></kbd> Bevæg</span><span data-control="attack"> · <kbd></kbd> Angreb</span><span data-control="ability"> · <kbd></kbd> Evne</span><span data-control="sneak"> · <kbd></kbd> Snig / skjul</span><span data-control="eat"> · <kbd></kbd> Hold for at spise</span><span data-control="interact"> · <kbd></kbd> Undersøg</span><span data-control="pause"> · <kbd></kbd> Pause</span></span><span class="save-status"></span></footer>`;
     host.appendChild(shell); I18N.translateNode(shell);
     const canvas = shell.querySelector('canvas'), ctx = canvas.getContext('2d');
-    const screen = shell.querySelector('.screen'), images = {}, flashes = {}, skins = {}, displayURLs = {}, decomposition = {}, keys = new Set(), cleanups = [], backgrounds = new Map();
+    const screen = shell.querySelector('.screen'), images = {}, flashes = {}, skins = {}, displayURLs = {}, decomposition = {}, keys = new Set(), cleanups = [], stealthState = { on: false }, backgrounds = new Map();
     const audio = new root.PrimalAudio(resolve, game.save.settings);
     let ready = false, disposed = false, previousPhase = '', returnPhase = 'menu', last = 0, accumulator = 0, animationId = 0, toastUntil = 0;
     const sheets = {}, sheetLoads = {}, frameCanvases = {};
@@ -185,7 +185,7 @@
           <li><b>Spis din føde.</b> Hold ${control('eat')} ved føde. Føde giver mutationer og kalder bossen frem.</li>
           <li><b>Undvig de røde felter.</b> De fyldes op før angrebet. Bosser drejer efter dig i starten, så undvig sent.</li>
           <li><b>Udforsk.</b> Hver bane har områder med egne dyr, skjulte belønninger og en valgfri rival (☠).</li>
-          <li><b>Skjul dig.</b> ${control('sneak')?'Stå stille eller hold '+control('sneak')+' i buske. Dybt vand kan kun krydses ved vadesteder.':'Stå stille i buske. Dybt vand kan kun krydses ved vadesteder.'}</li>
+          <li><b>Skjul dig.</b> ${control('sneak')?(C.FEATURES.stealth?'Tryk '+control('sneak')+' eller Ctrl for at snige. Dyrene opdager dig langsommere, og øjet viser hvor tæt de er på at se dig. Stå stille i buske for at skjule dig.':'Stå stille eller hold '+control('sneak')+' i buske.')+' Dybt vand kan kun krydses ved vadesteder.':'Stå stille i buske. Dybt vand kan kun krydses ved vadesteder.'}</li>
           <li><b>DNA beholdes.</b> Køb arter og opgraderinger. Nogle arter låses op med bedrifter.</li></ol>
           <li><b>Flokken.</b> ${C.FEATURES.raptorDonate ? `Giv en vild raptor ${C.PACK.donate} af din egen føde med ${control('interact')}, så følger den dig. Baren over dens hoved viser, hvor meget den har fået.` : 'Fodr en vild raptor med kød, så følger den dig.'} Flokken forsvarer dig og bider det, du bider. ${control('command')} sender den efter dit bytte.</li></ol>
           <p class="fine">Kød rådner efter et stykke tid. ${control('pause')} pauser spillet.</p>${button('menu', '← Klar til jagt', 'primary')}</section>`;
@@ -853,6 +853,19 @@
       if(!bossGlows[path]){const pad=12,layer=document.createElement('canvas');layer.width=im.width+pad*2;layer.height=im.height+pad*2;const lc=layer.getContext('2d');lc.filter='blur(4px)';for(const [ox,oy] of [[-3,0],[3,0],[0,-3],[0,3],[0,0]])drawAsset(lc,im,pad+ox,pad+oy);lc.filter='none';lc.globalCompositeOperation='source-in';lc.fillStyle=C.BOSS_LOOK.glow;lc.fillRect(0,0,layer.width,layer.height);layer.pad=pad;bossGlows[path]=layer;}
       const glow=bossGlows[path];ctx.save();ctx.globalAlpha=.6+.4*pulse;drawAsset(ctx,glow,Math.round(x-(meta.origin[0]+glow.pad)*scale),Math.round(y-(meta.origin[1]+glow.pad)*scale),glow.width*scale,glow.height*scale);ctx.restore();}
     // combatColors: yellow ring while you dodge or defend (i-frames, shield, dash); enemy attacks stay red.
+    // FEATURES.stealth: a Skyrim-style eye over your dinosaur. Closed while nothing has noticed you, it opens as the most
+    // aware animal nearby gets closer to spotting you: green, then yellow when one is suspicious, red when you are seen.
+    function drawStealthEye(r){
+      const a=Math.max(0,Math.min(1,r.eye||0));if(!(r.sneaking||r.hidden||a>.05&&a<1))return;
+      const x=Math.round(r.player.x),y=Math.round(r.player.y)-130,w=17,open=a>=1?1:.12+.88*a,color=a>=1?'#e5483c':a>=C.STEALTH.suspicious?'#dfbc52':'#a2d4c1';
+      ctx.save();ctx.lineWidth=2;ctx.strokeStyle='#101713';ctx.fillStyle='#101713cc';
+      const lid=dir=>{ctx.moveTo(x-w,y);ctx.quadraticCurveTo(x,y+dir*11*open,x+w,y);};
+      ctx.beginPath();lid(-1);lid(1);ctx.fill();
+      if(open>.15){ctx.save();ctx.beginPath();lid(-1);ctx.quadraticCurveTo(x,y+11*open,x-w,y);ctx.clip();ctx.fillStyle=color;ctx.beginPath();ctx.arc(x,y,5.5,0,Math.PI*2);ctx.fill();ctx.fillStyle='#101713';ctx.beginPath();ctx.arc(x,y,2.2,0,Math.PI*2);ctx.fill();ctx.restore();}
+      ctx.strokeStyle=color;ctx.lineWidth=2;ctx.beginPath();lid(-1);ctx.stroke();ctx.beginPath();lid(1);ctx.stroke();
+      if(r.sneaking){ctx.fillStyle='#101713cc';ctx.fillRect(x-24,y+13,48,4);ctx.fillStyle='#a2d4c1';ctx.fillRect(x-24,y+13,Math.round(48*Math.min(1,(r.stamina||0)/100)),4);}
+      ctx.restore();
+    }
     function defenseActive(r){return r.invulnerable>0||r.shield>0||r.pounce>0&&['compy','utahraptor','velociraptor','deinonychus','ankylosaurus'].includes(C.kindOf(r));}
     function drawDefense(r){if(!defenseActive(r))return;const x=Math.round(r.player.x),y=Math.round(r.player.y),rad=Math.round((r.player.radius||18)+14);ctx.save();ctx.beginPath();ctx.arc(x,y,rad,0,Math.PI*2);ctx.fillStyle=C.COMBAT_COLORS.defense+'33';ctx.fill();ctx.lineWidth=3;ctx.strokeStyle=C.COMBAT_COLORS.defense;ctx.stroke();ctx.restore();}
     function drawTelegraphs(r){
@@ -1243,6 +1256,7 @@
             else label(full ? 'VILD RAPTOR' : d < 160 && fed ? 'VILD RAPTOR · ' + control('interact') + ' FODR' : d < 160 ? 'VILD RAPTOR · LÆG KØD HER' : 'VILD RAPTOR', a.x, a.y - 44, '#a2d4c1'); } }
         if (o.enemy) { const e = o.enemy, near = r && Math.hypot(e.x - r.player.x, e.y - r.player.y) < 230, special = e.boss || e.elite || e.rare || e.miniboss;
           if ((special || near) && !menuScene()) label((e.boss ? '◆ ' : e.miniboss ? '☠ ' : e.elite ? '★ ' : e.rare ? '✦ ' : e.damage ? '⚠ ' : '') + (e.affix && C.ELITE_AFFIXES ? tr(C.ELITE_AFFIXES[e.affix].name) + ' ' : '') + (e.boss && C.FEATURES.bossLook && e.bossName ? tr(e.bossName).toUpperCase() : e.rivalName || C.SPECIES_LABELS[e.kind]), o.x, o.y - enemyLabelOffset(e), e.boss && C.FEATURES.bossLook ? C.BOSS_LOOK.glow : e.affix && C.ELITE_AFFIXES ? C.ELITE_AFFIXES[e.affix].color : e.miniboss ? '#e9b75a' : e.damage ? '#ed7869' : '#8eaa60');
+          if (C.FEATURES.stealth && e.suspicious && !e.alert && !menuScene()) label('?', o.x, o.y - enemyLabelOffset(e) - (e.affix ? 34 : 16), '#dfbc52');
           if (e.affix && !menuScene()) sprite(EXTRA + 'affix_' + e.affix + '.png', o.x, o.y - enemyLabelOffset(e) - 16);
           const icon = MODE_ICON[e.mode]; if (icon && !e.boss && !(near && /^assets\/behavior(?:_native)?\//.test(o.path) && ['graze','drink','rest','fish'].includes(e.mode))) { ctx.save(); ctx.font = 'bold 14px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713'; const iy = Math.round(o.y - enemyLabelOffset(e) - (special || near ? 16 : 0)); ctx.strokeText(icon[0], Math.round(o.x), iy); ctx.fillStyle = icon[1]; ctx.fillText(icon[0], Math.round(o.x), iy); ctx.restore(); } }
         if (o.enemy && o.enemy.boss) {
@@ -1258,7 +1272,8 @@
       if(r&&r.ashWorld)drawAshAir(r);
       if(r)for(const c of r.ashClouds||[])if(c.until>r.seconds){if(drawApprovedAsh(c,r))continue;const fade=Math.min(1,c.until-r.seconds);ctx.save();ctx.globalAlpha=.32*fade;ctx.fillStyle='#626861';for(let i=0;i<5;i++){const a=i*1.26+c.x*.01;ctx.beginPath();ctx.arc(c.x+Math.cos(a)*c.radius*.35,c.y+Math.sin(a)*c.radius*.25,c.radius*.55,0,Math.PI*2);ctx.fill();}ctx.restore();} // B1c native ash clouds, with procedural fallback.
       if(r)drawTelegraphs(r);
-      if(r&&C.FEATURES.combatColors)drawDefense(r);
+      if(r&&C.FEATURES.combatColors&&!renderOverride)drawDefense(r);
+      if(r&&C.FEATURES.stealth&&!renderOverride)drawStealthEye(r); // the menu world is invulnerable, so no defence ring there
       if(r&&C.PLAYER_SPECIES[r.species].diet!=='herbivore')for(const food of r.pickups.filter(p=>p.corpseId!==undefined)){const corpse=r.corpses.find(c=>c.id===food.corpseId);if(corpse)label(C.MEAT_RARITIES[food.rarity].symbol+' '+food.value+(corpse.age>=7?' · FORDÆRVER':' · FRISK')+' · '+(inputMode==='touch'?'SPIS':control('eat')+' SPIS'),food.x,food.y+enemyLabelOffset(corpse),C.MEAT_RARITIES[food.rarity].color);}
       if(r)drawAirExtras(r,view,r.seconds);
       for(const ambient of map.ambience || [])if(ambient.x>view.x-40&&ambient.x<view.x+canvas.width+40&&ambient.y>view.y-40&&ambient.y<view.y+canvas.height+40)insect(ambient,r?r.seconds:0);
@@ -1343,7 +1358,7 @@
       if (ready && game.phase === 'playing') {
         while (accumulator >= 1 / 60 && game.phase === 'playing') {
           const eat=held('eat')||buttons[2];
-          game.step(1 / 60, { x:joystick.x+ax+(held('right')||keys.has('ArrowRight')||buttons[15]?1:0)-(held('left')||keys.has('ArrowLeft')||buttons[14]?1:0),y:joystick.y+ay+(held('down')||keys.has('ArrowDown')||buttons[13]?1:0)-(held('up')||keys.has('ArrowUp')||buttons[12]?1:0),eat,sneak:held('sneak')||buttons[5],attack:held('attack')||buttons[0]||game.save.settings.autoAttack&&!eat&&game.run.enemies.some(e=>(e.alert&&e.damage||e.lastAttackedAt>game.run.seconds-8)&&Math.hypot(e.x-game.run.player.x,e.y-game.run.player.y)<65+e.radius),interact:held('interact')||buttons[3],pounce:held('ability')||buttons[1],command:held('command')||buttons[4] });
+          game.step(1 / 60, { x:joystick.x+ax+(held('right')||keys.has('ArrowRight')||buttons[15]?1:0)-(held('left')||keys.has('ArrowLeft')||buttons[14]?1:0),y:joystick.y+ay+(held('down')||keys.has('ArrowDown')||buttons[13]?1:0)-(held('up')||keys.has('ArrowUp')||buttons[12]?1:0),eat,sneak:(C.FEATURES.stealth?stealthState.on:held('sneak'))||buttons[5],attack:held('attack')||buttons[0]||game.save.settings.autoAttack&&!eat&&game.run.enemies.some(e=>(e.alert&&e.damage||e.lastAttackedAt>game.run.seconds-8)&&Math.hypot(e.x-game.run.player.x,e.y-game.run.player.y)<65+e.radius),interact:held('interact')||buttons[3],pounce:held('ability')||buttons[1],command:held('command')||buttons[4] });
           accumulator -= 1 / 60;
         }
       } else accumulator = 0;
@@ -1357,7 +1372,7 @@
       if(I18N.lang!=='da'&&game.run)for(const sel of ['.hud','.run-info','.meat-progress','.boss-hud','.hud-top','.hud-actions','.hud-prompt'])I18N.translateNode(shell.querySelector(sel));
       if(game.phase==='playing'&&game.run&&game.run.eating){const r=game.run,x=Math.round(r.player.x-r.view.x),y=Math.round(r.player.y-r.view.y+102);ctx.fillStyle='#101713';ctx.fillRect(x-42,y,84,8);ctx.fillStyle='#fff1c9';ctx.fillRect(x-40,y+2,80*r.eating.progress,4);}
       shell.querySelector('.toast').hidden = now > toastUntil;
-      const packKey = shell.querySelector('.pack-key'), allies = game.phase === 'playing' && game.run && (game.run.raptors || []).some(a => a.ally); if (packKey && packKey.hidden === !!allies) packKey.hidden = !allies;
+      const packKey = shell.querySelector('.pack-key'), allies = game.phase === 'playing' && game.run && (game.run.raptors || []).some(a => a.ally); if (packKey && packKey.hidden === !!allies) packKey.hidden = !allies; const sneakKey = shell.querySelector('[data-sneak-toggle]'); if (sneakKey && sneakKey.hidden === !!C.FEATURES.stealth) sneakKey.hidden = !C.FEATURES.stealth; if (game.run !== stealthState.run) { stealthState.run = game.run; setSneak(false); }
       shell.querySelector('.save-status').textContent = tr(game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · kun denne session');
     }
     // A single thrown error used to stop requestAnimationFrame for good, which froze the game.
@@ -1433,6 +1448,8 @@
       if (game.phase !== 'playing') return;
       if (e.code === game.save.bindings.interact && !e.repeat) { e.preventDefault(); game.interact(); accumulator = 0; renderScreen(); return; }
       if (['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) e.preventDefault();
+      // FEATURES.stealth: sneak is a toggle (the sneak key or Ctrl), so Ctrl is never held together with W.
+      if (C.FEATURES.stealth && (e.code === game.save.bindings.sneak || e.code === 'ControlLeft' || e.code === 'ControlRight')) { e.preventDefault(); if (!e.repeat) setSneak(!stealthState.on); return; }
       keys.add(e.code);
     });
     listen(window, 'keyup', e => {if(e.code==='Space'&&!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName))e.preventDefault();keys.delete(e.code);});
@@ -1441,6 +1458,8 @@
     listen(window, 'keydown', e => { if (!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName) && !bindingAction) setInputMode('keyboard'); });
     listen(shell, 'pointerdown', e => { if (e.pointerType === 'touch' || e.pointerType === 'pen') setInputMode('touch'); });
     listen(shell.querySelector('.touch-controls'), 'contextmenu', e => e.preventDefault()); // long press opens no menu
+    function setSneak(on){stealthState.on=!!on;const b=shell.querySelector('[data-sneak-toggle]');if(b)b.setAttribute('aria-pressed',String(stealthState.on));}
+    listen(shell, 'pointerdown', e => { const t = e.target.closest('[data-sneak-toggle]'); if (!t || game.phase !== 'playing') return; e.preventDefault(); audio.unlock(); setSneak(!stealthState.on); });
     listen(shell, 'pointerdown', e => { audio.unlock(); const target = e.target.closest('[data-key]'); if (!target || game.phase !== 'playing') return; e.preventDefault(); target.setPointerCapture(e.pointerId); const action=Object.keys(game.save.bindings).find(a=>({attack:'Space',ability:'ShiftLeft',interact:'KeyE',eat:'KeyF',command:'KeyQ'})[a]===target.dataset.key);target.dataset.activeKey=action?game.save.bindings[action]:target.dataset.key;keys.add(target.dataset.activeKey); });
     const releasePointer = e => { const target = e.target.closest('[data-key]'); if (target) keys.delete(target.dataset.activeKey||target.dataset.key); };
     listen(shell, 'pointerup', releasePointer); listen(shell, 'pointercancel', releasePointer); listen(shell, 'lostpointercapture', releasePointer);
