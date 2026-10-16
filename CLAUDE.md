@@ -27,6 +27,9 @@ The live site is the `gh-pages` branch. Publish ONLY after Jonas explicitly writ
 - Checks: `node --test tests/*.test.cjs`, `npm run test:game`, `npm run validate:game-sprites`, `npm run validate:enemy-sprites`. Browser tests rewrite tracked `*_report.json` and `previews/*.png`; restore them with `git checkout` before committing unless the change is intended.
 - Preview: `npm run preview` → http://localhost:8000/PRIMAL_RUN_Game/
 
+## Archive
+`archive/` holds retired demos (V2–V5), one-off build/migration scripts and dated reports; see `archive/README.md`. Nothing there is built, tested or shipped. Don't edit or run it unless a task is explicitly about that history; move a file back out if it becomes live again.
+
 ## Known pitfalls
 - Merge conflict hotspots: the one-line `FEATURES={...}` list in `core.js` (keep both sides' flags), the `test:game` list in `package.json` (keep both sides' test files), generated `project.json` + `integration_report.json` (take either side, then rebuild).
 - `roguelite-browser` and `player-full-browser` are timing-sensitive: one re-run is fine, a second failure is real.

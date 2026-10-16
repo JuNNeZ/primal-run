@@ -33,4 +33,4 @@ Verifikation: 249 unit-tests, alle 31 spil-browser-suiter og tre kit-checks
 består, kørt i en separat kopi. En kendt zone/rede-race i browserfixturet
 er isoleret, og den rettede suite samt resten af testkomponenterne består.
 Asset- og sourcechecks består også. Se
-`../docs/validation/A_SERIES_2026-10-12.json` med manifester og logs.
+`../archive/docs/validation/A_SERIES_2026-10-12.json` med manifester og logs.
