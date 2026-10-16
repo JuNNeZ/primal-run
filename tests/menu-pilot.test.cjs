@@ -3,6 +3,7 @@
 const test = require('node:test'), assert = require('node:assert/strict');
 const C = require('../PRIMAL_RUN_Game/src/core.js');
 C.FEATURES.equilibrium = false; // measured on pre-Snowflake numbers; with the multipliers seed 20372 leaves 7 instead of ≤5 attackers
+C.FEATURES.stealth = false; // the pilot walks sneaking; the pile-up baseline was measured with the old sight rules
 
 function menuWorld(species, seed) { // same setup as createMenuWorld() in app.js
   const local = (s => () => { s = (Math.imul(s, 1664525) + 1013904223) >>> 0; return s / 4294967296; })(seed * 7919 + 13);

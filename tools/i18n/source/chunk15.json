@@ -1,0 +1,190 @@
+[
+ {
+  "da": "Titelbog",
+  "en": "Title Book"
+ },
+ {
+  "da": "TITELBOG",
+  "en": "TITLE BOOK"
+ },
+ {
+  "da": "{0} af {1} titler fundet",
+  "en": "{0} of {1} titles found"
+ },
+ {
+  "da": "Fået {0} gange",
+  "en": "Earned {0} times"
+ },
+ {
+  "da": "Første gang",
+  "en": "First time"
+ },
+ {
+  "da": "Ikke fået endnu",
+  "en": "Not earned yet"
+ },
+ {
+  "da": "Tryk på en titel for at se hvorfor",
+  "en": "Tap a title to see why"
+ },
+ {
+  "da": "Hemmelig titel",
+  "en": "Secret title"
+ },
+ {
+  "da": "Kamp",
+  "en": "Combat"
+ },
+ {
+  "da": "Overlevelse",
+  "en": "Survival"
+ },
+ {
+  "da": "Udforskning",
+  "en": "Exploration"
+ },
+ {
+  "da": "Økologi",
+  "en": "Ecology"
+ },
+ {
+  "da": "Miljø",
+  "en": "Environment"
+ },
+ {
+  "da": "Mutationer",
+  "en": "Mutations"
+ },
+ {
+  "da": "Arter",
+  "en": "Species"
+ },
+ {
+  "da": "Skam",
+  "en": "Shame"
+ },
+ {
+  "da": "Hemmelige",
+  "en": "Secret"
+ },
+ {
+  "da": "Titelsamler",
+  "en": "Title Collector"
+ },
+ {
+  "da": "Få # forskellige titler.",
+  "en": "Earn # different titles."
+ },
+ {
+  "da": "Titeljæger",
+  "en": "Title Hunter"
+ },
+ {
+  "da": "Levende legende",
+  "en": "Living Legend"
+ },
+ {
+  "da": "Vanedyr",
+  "en": "Creature of Habit"
+ },
+ {
+  "da": "Få den samme titel # gange.",
+  "en": "Earn the same title # times."
+ },
+ {
+  "da": "Tre på stribe",
+  "en": "Three in a Row"
+ },
+ {
+  "da": "Få # titler i ét run.",
+  "en": "Earn # titles in one run."
+ },
+ {
+  "da": "Sagnomspunden",
+  "en": "The Stuff of Legend"
+ },
+ {
+  "da": "Få en legendarisk titel.",
+  "en": "Earn a legendary title."
+ },
+ {
+  "da": "Det skjulte navn",
+  "en": "The Hidden Name"
+ },
+ {
+  "da": "Få en hemmelig titel.",
+  "en": "Earn a secret title."
+ },
+ {
+  "da": "Tryk @ eller Ctrl for at snige. Dyrene opdager dig langsommere, og øjet viser hvor tæt de er på at se dig. Stå stille i buske for at skjule dig. Dybt vand kan kun krydses ved vadesteder.",
+  "en": "Press @ or Ctrl to sneak. Animals notice you more slowly, and the eye shows how close they are to spotting you. Stand still in bushes to hide. Deep water can only be crossed at fords."
+ },
+ {
+  "da": "Haleslag hele vejen rundt: # skade, og dyrene vakler. Imens tager du # % mindre skade.",
+  "en": "Tail sweep all around: # damage, and animals stagger. Meanwhile you take # % less damage."
+ },
+ {
+  "da": "Fang fisk eller ram tæt bytte. I vand er du skjult og # % hurtigere, på land # % langsommere.",
+  "en": "Catch fish or hit nearby prey. In water you are hidden and # % faster, on land # % slower."
+ },
+ {
+  "da": "Fang fisk fra bredden på længere afstand, eller ram bytte tæt på. Fisk heler # liv ekstra.",
+  "en": "Catch fish from the bank at a longer reach, or hit nearby prey. Fish heal # extra health."
+ },
+ {
+  "da": "Langt glidespring, hvor du er beskyttet. Lander du i en busk, er du straks skjult til et baghold.",
+  "en": "Long gliding leap while you are protected. Land in a bush and you are hidden at once, ready to ambush."
+ },
+ {
+  "da": "Kort undvigelse, der snupper mad og fund inden for rækkevidde og jager ædende dyr væk.",
+  "en": "Short dodge that snatches food and finds within reach and chases feeding animals away."
+ },
+ {
+  "da": "SNUPPET ×#",
+  "en": "SNATCHED ×#"
+ },
+ {
+  "da": "◎ DUSØR",
+  "en": "◎ BOUNTY"
+ },
+ {
+  "da": "NYT DUSØRDYR",
+  "en": "NEW BOUNTY"
+ },
+ {
+  "da": "DUSØR +# DNA",
+  "en": "BOUNTY +# DNA"
+ },
+ {
+  "da": "Tip",
+  "en": "Tip"
+ },
+ {
+  "da": "Lava brænder hurtigt. Gå udenom, eller find en vej over.",
+  "en": "Lava burns fast. Go around it, or find a way across."
+ },
+ {
+  "da": "Bossens røde felt viser angrebet. Gå ud af det, før det er fyldt.",
+  "en": "The boss's red zone shows the attack. Step out before it fills up."
+ },
+ {
+  "da": "Rivalen er stærkere end resten. Brug DNA i laben, og kom tilbage.",
+  "en": "The rival is stronger than the rest. Spend DNA in the lab and come back."
+ },
+ {
+  "da": "Spis mellem kampene. Mad heler dig, før næste kamp.",
+  "en": "Eat between fights. Food heals you before the next one."
+ },
+ {
+  "da": "Stormløb kommer i en lige linje. Træd til siden, når feltet lyser op.",
+  "en": "Charges come in a straight line. Step aside when the lane lights up."
+ },
+ {
+  "da": "Snig dig ind på farlige dyr, og bid først for baghold-skade.",
+  "en": "Sneak up on dangerous animals and bite first for ambush damage."
+ },
+ {
+  "da": "Kæmp mod ét dyr ad gangen, og træk dig, når flere angriber.",
+  "en": "Fight one animal at a time, and pull back when several attack."
+ }
+]
