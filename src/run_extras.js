@@ -181,6 +181,8 @@
     // 4.4-5.1) get 0-1 raptors. The sim bots rarely recruit (0-0.2 allies a run), so the measured lift is noise;
     // the cap guards against human players stacking a pack on an already strong species.
     const PACK_LIMITS = { spinosaurus: 0, baryonyx: 1, ankylosaurus: 1, pteranodon: 1, therizinosaurus: 1, allosaurus: 1 };
+    // Species identity: the Stegosaurus tank with its 360° tail sweep holds the line itself, so it hires one raptor.
+    if (F.speciesIdentity) PACK_LIMITS.stegosaurus = 1;
     const feedRaptor = G.feedRaptor;
     if (feedRaptor) G.feedRaptor = function () {
       const r = this.run, P = C.PACK, max = P.max, limit = F.packLimits && r && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : max;
