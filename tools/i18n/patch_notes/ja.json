@@ -104,5 +104,6 @@
  "A-serien · nattens farver · 12. oktober 2026": "Aシリーズ · 夜の色 · 2026年10月12日",
  "Dinosaurer og ådsler får mørkere natfarver fra spillets fælles palet. Farvedragter følger med, og de almindelige farver vender tilbage om dagen.": "恐竜と死骸が、ゲーム共通パレットのより暗い夜の色になります。カラースキンも連動し、昼には通常の色に戻ります。",
  "Artsangreb, dyreadfærd, såret gang, vandkanter og raptor-ådsler fra A1–A5 er integreret i udviklingsversionen.": "A1–A5の種ごとの攻撃、動物の行動、負傷時の歩行、水辺、ラプトルの死骸が開発版に統合されました。",
- "<b>Sværhedsgrad:</b> Vælg Normal eller Extinction difficulty, før jagten starter. Extinction gør fjender og bosser endnu stærkere og dig svagere.": "<b>難易度：</b>狩りを始める前にノーマルかExtinction difficultyを選べます。Extinctionでは敵とボスがさらに強くなり、あなたは弱くなります。"
+ "<b>Sværhedsgrad:</b> Vælg Normal eller Extinction difficulty, før jagten starter. Extinction gør fjender og bosser endnu stærkere og dig svagere.": "<b>難易度：</b>狩りを始める前にノーマルかExtinction difficultyを選べます。Extinctionでは敵とボスがさらに強くなり、あなたは弱くなります。",
+ "<b>Startplads:</b> Hver bane starter et tilfældigt sted på kortet, aldrig i vand, lava eller op ad en sten.": "<b>スタート位置:</b> 各ステージはマップ上のランダムな場所から始まり、水中、溶岩の中、岩の真横になることはありません。"
 }

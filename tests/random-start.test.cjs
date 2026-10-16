@@ -1,19 +1,19 @@
 'use strict';
-// FEATURES.randomStart: each map starts in one of its four corners (seeded), never in water/lava or against a rock.
+// FEATURES.randomStart: each map starts anywhere (seeded), never in water/lava, near the river or against a rock.
 const test = require('node:test'), assert = require('node:assert/strict');
 const C = require('../PRIMAL_RUN_Game/src/core.js');
 
-test('start position varies between the four corners, is deterministic and is safe ground', () => {
-  const corners = new Set();
+test('start position varies over the whole map, is deterministic and is safe ground', () => {
+  const areas = new Set();
   for (let stage = 0; stage < 4; stage++) for (let seed = 1; seed <= 80; seed++) {
     const m = C.createMap(stage, seed), s = m.start;
     assert.deepEqual(s, C.createMap(stage, seed).start, 'same seed, same start');
-    corners.add((s.x > m.width / 2 ? 'E' : 'W') + (s.y > m.height / 2 ? 'S' : 'N'));
+    areas.add(Math.floor(3 * s.x / m.width) + ',' + Math.floor(3 * s.y / m.height));
     assert.ok(s.x > 200 && s.y > 150 && s.x < m.width - 200 && s.y < m.height - 150, 'inside the map ' + stage + '/' + seed);
-    assert.ok(!C.isWater(stage, m, s, 40) && !C.isLava(stage, m, s), 'dry, lava-free start ' + stage + '/' + seed);
+    assert.ok(!C.isWater(stage, m, s, 40) && !C.isLava(stage, m, s) && C.riverDistance(m, s) >= 340, 'dry start away from the river/lava ' + stage + '/' + seed);
     assert.ok(m.rocks.every(r => Math.hypot(r.x - s.x, r.y - s.y) > 150), 'no rock on the start ' + stage + '/' + seed);
   }
-  assert.equal(corners.size, 4, 'all four corners are used');
+  assert.equal(areas.size, 9, 'corners, edges and the middle are all used');
 });
 
 test('a run and every later stage put the player on the map start', () => {
