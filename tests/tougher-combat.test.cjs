@@ -20,17 +20,19 @@ test('after a stagger ends the animal is immune to new stagger for a while',()=>
   e.stagger=1;g.enemyAI(e,.05);assert.equal(e.stagger,0);
   r.seconds=e.staggerImmuneUntil+.01;e.stagger=1;g.enemyAI(e,.05);assert.ok(e.stagger>0);
 });
-test('enemy windups aim at the player until just before they commit',()=>{
-  const g=setup(),r=g.run,e=near(g,'allosaurus',30);e.cooldown=0;g.enemyStep(e,.02);assert.equal(e.mode,'windup');
+test('on Extinction enemy windups aim at the player until just before they commit; Normal keeps the old aim',()=>{
+  const n=setup(),ne=near(n,'allosaurus',30);ne.cooldown=0;n.enemyStep(ne,.02);assert.equal(ne.windupDuration,.85);
+  const g=setup('compy','extinction'),r=g.run,e=near(g,'allosaurus',30);e.cooldown=0;g.enemyStep(e,.02);assert.equal(e.mode,'windup');
   assert.ok(e.windupDuration<.85,'shorter windup');
   r.player.y+=60;g.enemyAI(e,.05);assert.ok(e.chargeY>0,'turns toward the sidestep');
   e.timer=C.TOUGH.lock/2;const y=e.chargeY;r.player.y-=120;g.enemyAI(e,.01);assert.equal(e.chargeY,y,'locked');
 });
-test('player bites cost stamina, have an attack-speed floor, and Compy bites slower',()=>{
-  const g=setup(),r=g.run;r.mutations.quick=3;r.mutations.overclock=2;r.stamina=50;g.attack();
+test('on Extinction player bites cost stamina, have an attack-speed floor, and Compy bites slower',()=>{
+  const n=setup(),nr=n.run;n.attack();assert.equal(nr.stamina,100);
+  const g=setup('compy','extinction'),r=g.run;r.mutations.quick=3;r.mutations.overclock=2;r.stamina=50;g.attack();
   assert.equal(r.stamina,50-C.TOUGH.biteStamina);
   assert.ok(Math.abs(r.attackCooldown-C.PLAYER_SPECIES.compy.cooldown*C.TOUGH.speedFloor*C.TOUGH.attackSlow*C.TOUGH.speciesSlow.compy)<1e-9);
-  const t=setup(),tr=t.run;tr.stamina=0;t.attack();assert.ok(Math.abs(tr.attackCooldown-C.PLAYER_SPECIES.compy.cooldown*C.TOUGH.attackSlow*C.TOUGH.speciesSlow.compy*C.TOUGH.tiredSlow)<1e-9,'tired bites are slower');
+  const t=setup('compy','extinction'),tr=t.run;tr.stamina=0;t.attack();assert.ok(Math.abs(tr.attackCooldown-C.PLAYER_SPECIES.compy.cooldown*C.TOUGH.attackSlow*C.TOUGH.speciesSlow.compy*C.TOUGH.tiredSlow)<1e-9,'tired bites are slower');
 });
 test('epic offers per level are capped by difficulty; the rival always pays its epic',()=>{
   for(const [difficulty,budget] of [['normal',2],['extinction',1]]){

@@ -336,7 +336,7 @@
   // after a stagger the animal is immune to new stagger for a while. Enemy windups are shorter and track the player until
   // just before they commit, bites lunge, and player bites cost stamina with a floor on attack speed. Tuning: sim numbers in PR.
   const TOUGH = { flinchImmune: .7, staggerImmune: 1.2, armorFrom: .4, turn: 4, lock: .15, bossTurn: 1.6, bossLock: .3, windup: .85, lunge: 22,
-    biteStamina: 3, tiredSlow: 1.5, speedFloor: .75, attackSlow: 1.15, speciesSlow: { compy: 1.25 }, epicBudget: { normal: 2, extinction: 1 } };
+    biteStamina: 3, tiredSlow: 1.5, speedFloor: .75, attackSlow: 1.15, speciesSlow: { compy: 1.25 }, epicBudget: { normal: 2, extinction: 1 }, extinctionOnly: true };
   const poiseOpen = (r, e) => !FEATURES.tougherCombat || !(['bite', 'slam', 'charge'].includes(e.mode) || e.mode === 'windup' && e.timer < (e.windupDuration || .9) * TOUGH.armorFrom || e.poiseUntil > r.seconds);
   MUTATIONS.push(
     {id:'keenClaws',name:'Præcise træf',text:'+6 % chance for kritisk træf pr. rang. Kritiske træf gør 50 % ekstra skade og stagger.',icon:'serrated_teeth',max:3,rarity:'common'},
@@ -3241,6 +3241,8 @@
   };
   const biteStealth=biteBonus;biteBonus=(g,r,e)=>biteStealth(g,r,e)*(FEATURES.stealth&&(r.sneaking||r.hidden)&&e&&!e.boss&&!e.alert&&(e.awareness||0)<1?(r.hidden?STEALTH.coverAmbush:STEALTH.ambush):1);
   // ---- Tougher combat (FEATURES.tougherCombat / epicBudget / ankyTailTurn, 2026-10-17); constants in TOUGH above.
+  // poise, the Anky turn and the epic budget apply on every difficulty; aimed/faster enemy attacks and slower bites only on Extinction
+  const hardTough=r=>TOUGH.extinctionOnly?r.difficulty==='extinction':true;
   const aiTough=Game.prototype.enemyAI;
   Game.prototype.enemyAI=function(e,dt){
     const r=this.run;if(!FEATURES.tougherCombat&&!FEATURES.ankyTailTurn)return aiTough.call(this,e,dt);
@@ -3249,23 +3251,23 @@
     if(e.staggerOn&&!(e.stagger>0)){e.staggerOn=false;e.staggerImmuneUntil=r.seconds+TOUGH.staggerImmune;}
     const dx=r.player.x-e.x,dy=r.player.y-e.y,d=Math.max(1,Math.hypot(dx,dy)),tail=e.kind==='ankylosaurus'&&e.pattern===2&&!e.spin;
     if(e.mode==='windup'&&before!=='windup'&&!e.speciesSkill){
-      if(FEATURES.tougherCombat&&!e.boss){e.timer*=TOUGH.windup;e.windupDuration=(e.windupDuration||e.timer)*TOUGH.windup;}
+      if(FEATURES.tougherCombat&&hardTough(r)&&!e.boss){e.timer*=TOUGH.windup;e.windupDuration=(e.windupDuration||e.timer)*TOUGH.windup;}
       // the tail swings at the player, so the animal turns its back: the safe gap is in front of its head
       if(FEATURES.ankyTailTurn&&tail){e.facingX=-(e.chargeX||0);e.facingY=-(e.chargeY||0);e.direction=Math.abs(e.facingX)>Math.abs(e.facingY)?(e.facingX>0?'E':'W'):(e.facingY>0?'S':'N');}
     }
-    if(FEATURES.tougherCombat&&e.mode==='windup'&&!e.speciesSkill&&!tail&&!e.spin&&e.pattern!==3&&e.pattern!==5&&e.timer>(e.boss?TOUGH.bossLock:TOUGH.lock)){
+    if(FEATURES.tougherCombat&&hardTough(r)&&e.mode==='windup'&&!e.speciesSkill&&!tail&&!e.spin&&e.pattern!==3&&e.pattern!==5&&e.timer>(e.boss?TOUGH.bossLock:TOUGH.lock)){
       const a=Math.atan2(e.chargeY||0,e.chargeX||1);let diff=Math.atan2(dy,dx)-a;diff=Math.atan2(Math.sin(diff),Math.cos(diff));
       const turn=Math.max(-1,Math.min(1,diff/((e.boss?TOUGH.bossTurn:TOUGH.turn)*dt||1)))*(e.boss?TOUGH.bossTurn:TOUGH.turn)*dt,n=a+turn;
       e.chargeX=e.facingX=Math.cos(n);e.chargeY=e.facingY=Math.sin(n);
     }
-    if(FEATURES.tougherCombat&&!e.boss&&before==='windup'&&e.mode==='bite'&&d<e.attackRadius+TOUGH.lunge*2)this.travel(e,e.facingX*TOUGH.lunge,e.facingY*TOUGH.lunge);
+    if(FEATURES.tougherCombat&&hardTough(r)&&!e.boss&&before==='windup'&&e.mode==='bite'&&d<e.attackRadius+TOUGH.lunge*2)this.travel(e,e.facingX*TOUGH.lunge,e.facingY*TOUGH.lunge);
     return out;
   };
   const killTough=Game.prototype.kill;
   Game.prototype.kill=function(e){const r=this.run;if(e&&e.miniboss&&e.elite&&!e.rewarded&&!e.rare&&r)r.rivalRewards=(r.rivalRewards||0)+1;return killTough.call(this,e);};
   const attackTough=Game.prototype.attack;
   Game.prototype.attack=function(){
-    const out=attackTough.call(this),r=this.run;if(!out||!FEATURES.tougherCombat)return out;
+    const out=attackTough.call(this),r=this.run;if(!out||!FEATURES.tougherCombat||!hardTough(r))return out;
     const base=PLAYER_SPECIES[r.species].cooldown,mult=r.attackCooldown/base,tired=r.stamina<TOUGH.biteStamina;
     const scale=Math.max(TOUGH.speedFloor,mult)/mult*TOUGH.attackSlow*(TOUGH.speciesSlow[r.species]||1)*(tired?TOUGH.tiredSlow:1);
     r.stamina=Math.max(0,r.stamina-TOUGH.biteStamina);r.stats.staminaSpent+=TOUGH.biteStamina;
