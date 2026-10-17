@@ -67,7 +67,7 @@
   // instead of 60 % at night); herbivores drink at dusk; compys scavenge kills by day. Night kills give +50 % DNA.
   const CIRCADIAN = { damage: .2, speed: .1, nightSight: .85, nightDNA: 1.5, duskThirst: .7 };
   // Rav: one hidden amber piece per journey level, far from the start; E picks it up (+3 DNA).
-  const AMBER = { dna: 3, minDistance: 900, reach: 70, glint: 260 };
+  const AMBER = { dna: 3, minDistance: 900, reach: 70, glint: 260, ring: [60, 85, 110], margin: 14, hint: 400 };
 
   function install(C) {
     const F = C.FEATURES, G = C.Game.prototype;
@@ -120,7 +120,28 @@
         const far = r.map.habitats.filter(h => ground(h) && dist(h, r.player) > AMBER.minDistance && !(r.map.sites || []).some(s => dist(s, h) < 120)).sort((a, b) => dist(b, r.player) - dist(a, r.player));
         const h = far[Math.floor(g.random() * Math.min(3, far.length))];
         r.amberPiece = h ? { x: Math.round(h.x + 18), y: Math.round(h.y - 12), level: r.levelIndex } : null;
+        // FEATURES.amberFair: still far away at the edge of the vegetation, but never fully under a tree, bush or rock.
+        if (F.amberFair && h) { const spot = amberSpot(g, [h, ...far.filter(o => o !== h)]); if (spot) Object.assign(r.amberPiece, spot); }
       } else r.amberPiece = null;
+    }
+    // A free amber spot: AMBER.ring px out from a habitat, dry, inside the map, clear of props that are drawn over it.
+    function amberClear(r, p) {
+      const m = r.map, size = d => ((C.PROP_SIZE || {})[d.path] || ['soft', 30])[1] * (d.visualScale || 1);
+      if (p.x < 80 || p.y < 110 || p.x > m.width - 80 || p.y > m.height - 80) return false;
+      if (C.isWater(r.stage, m, p, -40) || (C.isLava && C.isLava(r.stage, m, p))) return false;
+      if ((m.rocks || []).some(o => dist(o, p) < (o.radius || 22) + 24)) return false;
+      if ([...(m.sites || []), ...(m.events || [])].some(o => dist(o, p) < 90)) return false;
+      if (C.coverAt && C.coverAt(m, p)) return false;
+      // A prop sprite stands on its anchor and reaches up, so test against a centre raised by part of its radius.
+      return ![...(m.decorations || []), ...(m.forage || [])].some(d => { const k = size(d); return dist({ x: d.x, y: d.y - k * .6 }, p) < k + AMBER.margin; });
+    }
+    function amberSpot(g, habitats) {
+      const r = g.run, turn = (habitats[0].roll || 0) * Math.PI * 2; // from the map, so the run's random stream is untouched
+      for (const h of habitats) for (const radius of AMBER.ring) for (let i = 0; i < 12; i++) {
+        const a = turn + i * Math.PI / 6, p = { x: Math.round(h.x + Math.cos(a) * radius), y: Math.round(h.y + Math.sin(a) * radius) };
+        if (dist(p, r.player) > AMBER.minDistance && amberClear(r, p)) return p;
+      }
+      return null;
     }
     function dropPowerup(g, x, y, type, shrine = false) {
       const r = g.run;
@@ -306,6 +327,8 @@
       for (const k of Object.keys(x.buffs)) x.buffs[k] = Math.max(0, x.buffs[k] - dt);
       if (x.baby && x.baby.hatch > 0) x.baby.hatch = Math.max(0, x.baby.hatch - dt);
       if (timed(r, 'stamina')) { r.stamina = 100; r.winded = 0; }
+      // A quiet chime the first time you come near this level's amber: it is close, but not where.
+      if (F.amber && F.amberFair && r.amberPiece && !r.amberPiece.hinted && dist(r.amberPiece, r.player) < AMBER.hint) { r.amberPiece.hinted = true; this.emit('amber_near'); }
       // Powerups live in their own list (r.powerups), so meat, thieves and core pickup rules never see them.
       if (F.powerups) {
         const radius = POWERUP_SPAWN.pickupRadius, taken = (r.powerups || []).filter(p => dist(p, r.player) < radius);
