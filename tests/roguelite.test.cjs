@@ -1,6 +1,7 @@
 'use strict';
 const {test}=require('node:test'), assert=require('node:assert/strict'), C=require('../PRIMAL_RUN_Game/src/core.js');
 C.FEATURES.equilibrium = false; // exact pre-Snowflake HP/damage numbers; tests/snowflake.test.cjs covers the multipliers
+C.FEATURES.tougherCombat = false; C.FEATURES.epicBudget = false; // exact pre-poise combat timings; tests/tougher-combat.test.cjs covers the new rules
 function make(species='compy'){const g=new C.Game({random:()=>.5});g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:123});g.run.enemies=[];g.run.spawnTimer=999;return g;}
 test('fresh saves start as Deinonychus; legacy DNA and upgrades survive unlock migration',()=>{
  const values=new Map([[C.SAVE_KEY,JSON.stringify({dna:90,name:'Jonas',upgrades:{health:2},settings:{music:.2}})]]), storage={getItem:k=>values.get(k),setItem:(k,v)=>values.set(k,v)};
