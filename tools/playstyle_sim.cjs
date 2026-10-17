@@ -257,6 +257,11 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     if (wall >= nextDecision) { decision = decide(); nextDecision = wall + S.reaction * (0.7 + R() * 0.6); }
     const input = { ...decision };
     if (decision.eat) input.eat = true;
+    // Fishing minigame: a player lets go of the hold near the middle of the green window; slower players aim less precisely.
+    if (input.eat && r.fishGame && C.FISH_GAME) {
+      if (m.fishAimFor !== r.fishGame.n) { m.fishAimFor = r.fishGame.n; m.fishAim = (C.FISH_GAME.perfect[0] + C.FISH_GAME.perfect[1]) / 2 + (R() * 2 - 1) * S.reaction * 0.35; }
+      if (r.fishGame.progress >= m.fishAim) input.eat = false;
+    }
     // Ankylosaurus with a limited tail arc: a player who knows it turns away from the target as the swing starts.
     if (species === 'ankylosaurus' && input.attack && !r.attack && !r.attackCooldown && C.TAIL_ARC && C.TAIL_ARC.player < 360 && R() < S.tailTurn) {
       const near = nearest(r.enemies.filter(e => dist(e) < config.range + e.radius + 40));
