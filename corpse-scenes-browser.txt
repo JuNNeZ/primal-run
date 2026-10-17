@@ -1,0 +1,1 @@
+PASS: 368 actual corpse props and 63 end scene combinations.
