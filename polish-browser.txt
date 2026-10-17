@@ -1,0 +1,1 @@
+PASS: terrain/combat/boss · four rendered biomes · hit-stop/particles · phase/range hints · full first-boss fight without HP edits

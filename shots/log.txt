@@ -1,0 +1,5 @@
+FATAL page.waitForSelector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('[data-action="start"]:not(:disabled)') to be visible
+
+    at /home/runner/work/primal-run/primal-run/tools/screenshots.cjs:17:16
