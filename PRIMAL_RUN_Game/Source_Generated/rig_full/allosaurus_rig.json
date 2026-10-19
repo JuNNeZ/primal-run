@@ -73,7 +73,7 @@
  "frames": {
   "allosaurus_idle_S_000": {
    "file": "allosaurus_idle_S_000.png",
-   "sha256": "fa9dfccea318df0e770b90d121e5eb975b7a6e40fa80f030b8f0b7a68ffe4068",
+   "sha256": "d7c1c7899e30856ece77c69a444af0a769149e79960f15351fd1456c98523175",
    "bbox": [
     45,
     18,
@@ -153,7 +153,7 @@
   },
   "allosaurus_idle_N_000": {
    "file": "allosaurus_idle_N_000.png",
-   "sha256": "0587c498cd45cd28b14389f35622f21067170dacbb810992cc85b77e26083847",
+   "sha256": "763fcee0dd1ea517e100ff7ce9b28f05457473593587b7a5eb6daa7978dcbb47",
    "bbox": [
     45,
     13,
@@ -233,7 +233,7 @@
   },
   "allosaurus_idle_E_000": {
    "file": "allosaurus_idle_E_000.png",
-   "sha256": "f1a4f33d9566fa5851285a9c2c38cc045af03b20d7fc6dc0105b0b65cb4339f2",
+   "sha256": "2ad128421d5a51d91800dced6c3c0eaf5c339be58824d37b5f259b7416855c7a",
    "bbox": [
     8,
     49,
@@ -313,7 +313,7 @@
   },
   "allosaurus_idle_W_000": {
    "file": "allosaurus_idle_W_000.png",
-   "sha256": "1cc214fe0105c59e3ff656146a84ea7784756740d46a300e0598a44dad2b48bb",
+   "sha256": "86b54b6cf86db18d895069920e79d4b0640552c156d468cfd5a8cbb3d1743ede",
    "bbox": [
     6,
     49,
@@ -393,7 +393,7 @@
   },
   "allosaurus_idle_S_001": {
    "file": "allosaurus_idle_S_001.png",
-   "sha256": "dada5b7ded9014f20dd3cd60db5fffe61eb43f9acb3d010572ed5054c2c93f6f",
+   "sha256": "9ee1af140d6e4ded62c1c8d6b508f08a1091e369d2b9252973cb90a15d45eada",
    "bbox": [
     45,
     18,
@@ -473,7 +473,7 @@
   },
   "allosaurus_idle_N_001": {
    "file": "allosaurus_idle_N_001.png",
-   "sha256": "07e216b873a3b645c4f484d7d77c33726efe9799a5fc228c24db13b3258847c6",
+   "sha256": "7a09020f1fe4474da374a46e1099d920021c4f7ad60d50ff9f0f3180488dac8b",
    "bbox": [
     45,
     13,
@@ -553,7 +553,7 @@
   },
   "allosaurus_idle_E_001": {
    "file": "allosaurus_idle_E_001.png",
-   "sha256": "13a25054c365c2c30bd913ed989a25a73c2a8124768f14a488315eb7625cbcab",
+   "sha256": "887f8234179f55b7b261df1b1438d91e383854c4b315b0f06bcdaef107902fb1",
    "bbox": [
     8,
     49,
@@ -633,7 +633,7 @@
   },
   "allosaurus_idle_W_001": {
    "file": "allosaurus_idle_W_001.png",
-   "sha256": "695dde4c86de2b170c44acc40dd4dda42d68f26640f7cad6dee4146ea0ed8518",
+   "sha256": "c30e33345d75e77c70d5a5da0686001b91f1b389d2625a3484efb4918e4508bd",
    "bbox": [
     6,
     49,
@@ -713,7 +713,7 @@
   },
   "allosaurus_idle_S_002": {
    "file": "allosaurus_idle_S_002.png",
-   "sha256": "ed3a98d41af165af01dbaea5b1c01d4c631f452386dc912a866821bae2264300",
+   "sha256": "4346413e475f5f345d3711619a66c60fdba4042988019ced45f63af165823614",
    "bbox": [
     45,
     18,
@@ -793,7 +793,7 @@
   },
   "allosaurus_idle_N_002": {
    "file": "allosaurus_idle_N_002.png",
-   "sha256": "7a581c39e5167f60c744be66b28c4426ce6c03f67a6c7084915746522f37501f",
+   "sha256": "c79adae67782b1ffb2997974b64ae56741008864aff6a149e480e519e3c39135",
    "bbox": [
     45,
     13,
@@ -873,7 +873,7 @@
   },
   "allosaurus_idle_E_002": {
    "file": "allosaurus_idle_E_002.png",
-   "sha256": "ae1ba58e125e05a5b8d6e2e0e422776e7e8aa397871c1117c2f94287674223ae",
+   "sha256": "11728406ac80233c9c3938bc1a9391b03293bea8c6d58d4407a9f1f0f58d9db6",
    "bbox": [
     8,
     49,
@@ -953,7 +953,7 @@
   },
   "allosaurus_idle_W_002": {
    "file": "allosaurus_idle_W_002.png",
-   "sha256": "b396b1b89ade08d3cb2cfe0db2ef7722f65b3d02d2880b39ef998d9e3af7cd0d",
+   "sha256": "471aabc866c6ee029224f5ef35790fc6e03c9f1d11b7e3d247edd5d00e24b5ee",
    "bbox": [
     6,
     49,
@@ -1033,12 +1033,12 @@
   },
   "allosaurus_idle_S_003": {
    "file": "allosaurus_idle_S_003.png",
-   "sha256": "e9fde43dee382fcd605e945fc5e5d547ae36e526a6fb6f903c6e0b625581439f",
+   "sha256": "005bf14a96d8e8242c99e23ef212e9d40b1168471faa486b961c99ff724d7dd2",
    "bbox": [
     45,
     18,
     99,
-    122
+    123
    ],
    "joints": {
     "hind_L": [
@@ -1113,7 +1113,7 @@
   },
   "allosaurus_idle_N_003": {
    "file": "allosaurus_idle_N_003.png",
-   "sha256": "54f038575fca380025cae923a322b9de361664e5aa76b818e07fd221ef8d76dd",
+   "sha256": "e149e6ff667b26ad344408928cd80cac1f688dba2818709176b3bd5c886f148f",
    "bbox": [
     45,
     14,
@@ -1193,7 +1193,7 @@
   },
   "allosaurus_idle_E_003": {
    "file": "allosaurus_idle_E_003.png",
-   "sha256": "c6ecf32793645845a0fef3db92e947fe0af28330d9e712003ac01970f6597c80",
+   "sha256": "41c1a07d37f41441edfd40b14f59b76f9649c29ed86156bf3537aeb13b8f99c5",
    "bbox": [
     8,
     49,
@@ -1273,7 +1273,7 @@
   },
   "allosaurus_idle_W_003": {
    "file": "allosaurus_idle_W_003.png",
-   "sha256": "7368f5b1d34027345f39152916fe2092b43abe84248e6aa3a449e89175d9d615",
+   "sha256": "327f03266e59fed1a25df6c84ceff156170964168ab3107e0bc41ddea527e09b",
    "bbox": [
     6,
     49,
@@ -1353,7 +1353,7 @@
   },
   "allosaurus_walk_S_000": {
    "file": "allosaurus_walk_S_000.png",
-   "sha256": "df770fac0078a5512c64a0f58c91449f4c5ee62ddc3a9b5f80cd640a53e477e4",
+   "sha256": "f8c45435e52bff803a9b8418767a50ab8edb4fb3e9c60bc198d840ab088de862",
    "bbox": [
     45,
     19,
@@ -1433,7 +1433,7 @@
   },
   "allosaurus_walk_N_000": {
    "file": "allosaurus_walk_N_000.png",
-   "sha256": "8a949a2d8063cfe8ef96f5032f1b3f7b2ceed494bf715e64e479552a95f83462",
+   "sha256": "b2e7740570031b6b23721d95facaf0e89599aee76da70bac92a0e48f09a845a5",
    "bbox": [
     45,
     13,
@@ -1513,7 +1513,7 @@
   },
   "allosaurus_walk_E_000": {
    "file": "allosaurus_walk_E_000.png",
-   "sha256": "eaea53a33b3c1c66f8786c5689381469c0242d6a39249e8c34c7f16c829e05a3",
+   "sha256": "8cbe0237beb5fd7528fe7f926d740b1aade7c8d415ad962598bc1e9a2dc76398",
    "bbox": [
     9,
     49,
@@ -1593,7 +1593,7 @@
   },
   "allosaurus_walk_W_000": {
    "file": "allosaurus_walk_W_000.png",
-   "sha256": "f511190065127cfb6bd3e3fe98576abd0f252684ddf3a8038eba7f44ce7e29e3",
+   "sha256": "22b3aa718b0b640d4cea325f33884ab98dc615fa07ec897793bdbf929a97c98f",
    "bbox": [
     6,
     49,
@@ -1673,7 +1673,7 @@
   },
   "allosaurus_walk_S_001": {
    "file": "allosaurus_walk_S_001.png",
-   "sha256": "52c785b6f3f6938a5279eb72c658877567b1122aa27a9a6e25370a94daff9b1d",
+   "sha256": "fc093707de8403b6afafa86296b8b65c578ab5139ca85db352901453f157f7f9",
    "bbox": [
     45,
     18,
@@ -1753,10 +1753,10 @@
   },
   "allosaurus_walk_N_001": {
    "file": "allosaurus_walk_N_001.png",
-   "sha256": "433c5e35b14aaec3de1555521f7ca276d78532cf56a4af934eab42c627b65673",
+   "sha256": "ef6c8976a3ac34cf910a99187f9fd04ba6392ffc01c67918cdab6865b46acabb",
    "bbox": [
     45,
-    14,
+    13,
     99,
     123
    ],
@@ -1833,7 +1833,7 @@
   },
   "allosaurus_walk_E_001": {
    "file": "allosaurus_walk_E_001.png",
-   "sha256": "5a6f01c238549663f454067a5e58373e5ce10d98f08ce98a13bc5ccdda127d6d",
+   "sha256": "7e8039d5f946f1aa99549e518964bf66ab75abd76a2b36b0da2d059d446d5051",
    "bbox": [
     9,
     49,
@@ -1913,7 +1913,7 @@
   },
   "allosaurus_walk_W_001": {
    "file": "allosaurus_walk_W_001.png",
-   "sha256": "a26d1e5336fdb7fe4f91eafe20e2e97bf86ea015a88aae631cd59122f2482bf0",
+   "sha256": "7292c3eca2a5e5489d4e5c0f2658300942c548d34b4811503707285062c74726",
    "bbox": [
     6,
     49,
@@ -1993,7 +1993,7 @@
   },
   "allosaurus_walk_S_002": {
    "file": "allosaurus_walk_S_002.png",
-   "sha256": "b31fe3715e8a6cbc7f85a9132e06b5cba0f0bd1bf0b333bfd2f6e1517f61c3cf",
+   "sha256": "5ad240124724e37196c6dce91d0dcb074d77b50630c1f47b496d3269286904ad",
    "bbox": [
     45,
     19,
@@ -2073,10 +2073,10 @@
   },
   "allosaurus_walk_N_002": {
    "file": "allosaurus_walk_N_002.png",
-   "sha256": "d6dba71a0c06050f94a7cd84a9e9877be609662595f088fe24c56f358f86fe9e",
+   "sha256": "3530a140c82f4515c559e2947c1d1becc1138aea05245b84f8fc9edc636526eb",
    "bbox": [
     45,
-    14,
+    13,
     99,
     122
    ],
@@ -2153,7 +2153,7 @@
   },
   "allosaurus_walk_E_002": {
    "file": "allosaurus_walk_E_002.png",
-   "sha256": "fdcb27de8b114b0246b365f5a8e62fed6f6698212324fd3fac4998b97488e1e7",
+   "sha256": "298f6769019971d7f2649ad7700420efac81360a14b61f3670127c4930294fae",
    "bbox": [
     9,
     49,
@@ -2233,7 +2233,7 @@
   },
   "allosaurus_walk_W_002": {
    "file": "allosaurus_walk_W_002.png",
-   "sha256": "75f5d43effb317fb92e0831343875baf2d103cc715863b7b682d4645a548013d",
+   "sha256": "fbb27829bde32dfb89ca8ff44d91e22f71f8b315546bf1ae3eb4cdf5b434cd4b",
    "bbox": [
     6,
     48,
@@ -2313,7 +2313,7 @@
   },
   "allosaurus_walk_S_003": {
    "file": "allosaurus_walk_S_003.png",
-   "sha256": "20ce2e3cfa68b51d42aa2c72455c8fb56e049b7e5d089400f301b42f858ca448",
+   "sha256": "30a442b2b79a92118619144b4f9572dfcafb9e9bb54c877eb8fe61abf37a2c89",
    "bbox": [
     45,
     19,
@@ -2393,7 +2393,7 @@
   },
   "allosaurus_walk_N_003": {
    "file": "allosaurus_walk_N_003.png",
-   "sha256": "dfb0509cb255cad07f91352e26bfd3b5daf94a0dde9e2c59648f26a91fc2e8ce",
+   "sha256": "9db8088b4b282337e7be17f1d3f9612d1d449edbf91afd48b3715232d726f3c2",
    "bbox": [
     45,
     13,
@@ -2473,7 +2473,7 @@
   },
   "allosaurus_walk_E_003": {
    "file": "allosaurus_walk_E_003.png",
-   "sha256": "315aa389a0b8d8b2f02969a26132d02de71d4bf6d16358b3414f7fd866abf586",
+   "sha256": "97647cefa96337edc3caf3d13e1dc46cd832022ca4836cf855f8d0bf89d59920",
    "bbox": [
     9,
     49,
@@ -2553,7 +2553,7 @@
   },
   "allosaurus_walk_W_003": {
    "file": "allosaurus_walk_W_003.png",
-   "sha256": "ac4353acbcd7a331c44aebba515be17e2e9a667f77bcd7e27718aadc68388282",
+   "sha256": "6e9d9a134e6e34619f967f8f147566623af4c8357a47e60ba12a1be3956bed8f",
    "bbox": [
     6,
     49,
@@ -2633,7 +2633,7 @@
   },
   "allosaurus_walk_S_004": {
    "file": "allosaurus_walk_S_004.png",
-   "sha256": "04e3b9fad43cf8809eb5f303a807833aa9fe9f2626f2e2ac32ef09cbe99b3f03",
+   "sha256": "6edbae911b63967a4a2d9f2deeff1e1e175ca354de9d3eed653889009e69f418",
    "bbox": [
     45,
     18,
@@ -2713,10 +2713,10 @@
   },
   "allosaurus_walk_N_004": {
    "file": "allosaurus_walk_N_004.png",
-   "sha256": "4359b1d7de09af7a8e4cf691803eb350b5142fea74ee39a17c7a24f0039e1fb9",
+   "sha256": "1c40cdddfe086796c15c4d81fead8403311401f621d30a96bc9dce5132a2d7dd",
    "bbox": [
     45,
-    14,
+    13,
     99,
     123
    ],
@@ -2793,7 +2793,7 @@
   },
   "allosaurus_walk_E_004": {
    "file": "allosaurus_walk_E_004.png",
-   "sha256": "20fbcf40ebd30d0188d1a0805b697f6b3b479cf6f2f22b82a61b1908cebda825",
+   "sha256": "38a63a13f3bcfe0e6a781d5c23ffaa8e5b9f0109072bb6149da0b9104846ca14",
    "bbox": [
     8,
     49,
@@ -2873,7 +2873,7 @@
   },
   "allosaurus_walk_W_004": {
    "file": "allosaurus_walk_W_004.png",
-   "sha256": "31b34a2d8ad1d680e753e1a2f0a4994d8d16d1729c4dc23e6a1d1c5a2197f20e",
+   "sha256": "9be0278f1e13cb04f2e9b6c0c4272cf164582745eebe46a6e7354a599e0e34fd",
    "bbox": [
     6,
     49,
@@ -2953,7 +2953,7 @@
   },
   "allosaurus_walk_S_005": {
    "file": "allosaurus_walk_S_005.png",
-   "sha256": "1d6223fb076fe486a87bf6b4cb1b245c968576a42c557732836fffc9ac69694e",
+   "sha256": "05badbcfeb3dfd82d215b174a6fad9d7cf32e69734c928b2542f98f194c75a5f",
    "bbox": [
     45,
     19,
@@ -3033,10 +3033,10 @@
   },
   "allosaurus_walk_N_005": {
    "file": "allosaurus_walk_N_005.png",
-   "sha256": "6b88a95fac46dfcec9d3f8fb77934512d73e4c42fb81f2761b3bcb5654fd234f",
+   "sha256": "aa117321d12a5ed9f767f2227b850e12647547700a89325afc9b79f4fb5ea724",
    "bbox": [
     45,
-    14,
+    13,
     99,
     122
    ],
@@ -3113,7 +3113,7 @@
   },
   "allosaurus_walk_E_005": {
    "file": "allosaurus_walk_E_005.png",
-   "sha256": "b6e91be86c4e0afc9fda49d4ddb10e37ee57074a9c962900982ad5e7dd187567",
+   "sha256": "9a64549ecf9162ebd08dbd1570fbe3b35a6655d91256bac55d2ae5f3b22811e4",
    "bbox": [
     9,
     48,
@@ -3193,7 +3193,7 @@
   },
   "allosaurus_walk_W_005": {
    "file": "allosaurus_walk_W_005.png",
-   "sha256": "7809ae49f1c8e6b8a86971abc024153c933f902c90c9878158bc4cf077448447",
+   "sha256": "b733901794b7e9ec49475305a26a8a7392058d50b81b4ea88a464c495264603e",
    "bbox": [
     6,
     49,
@@ -3273,7 +3273,7 @@
   },
   "allosaurus_run_S_000": {
    "file": "allosaurus_run_S_000.png",
-   "sha256": "81b6b2468725daa0ea36c788717340e5030418eb7d0852df837d64550f7508d9",
+   "sha256": "6138a38b8e7d328ad0e34c443cfa2832e228759e592b7a1c3d851b9e70359417",
    "bbox": [
     45,
     18,
@@ -3353,7 +3353,7 @@
   },
   "allosaurus_run_N_000": {
    "file": "allosaurus_run_N_000.png",
-   "sha256": "4f519bfb1f15b2a205b8eea0462a9d0d691d2e27542c7133e56403d938d10303",
+   "sha256": "c24fdf931a287ccf47b15cc311235f3dc54212f1328ce7bc8387a7daca268421",
    "bbox": [
     45,
     14,
@@ -3433,7 +3433,7 @@
   },
   "allosaurus_run_E_000": {
    "file": "allosaurus_run_E_000.png",
-   "sha256": "15a797603bc1bb16401326c8b2ab3011e40d37efc5a0c85c0eb075be719394a8",
+   "sha256": "58e7e7f6cca407ca66371d4de665f9034d5bbd80c547fcf87c7589639bb733e5",
    "bbox": [
     8,
     49,
@@ -3513,7 +3513,7 @@
   },
   "allosaurus_run_W_000": {
    "file": "allosaurus_run_W_000.png",
-   "sha256": "e1b024e1e78aab5bb4db1746fbe711d281ef16b23f92a66472a943de63297c66",
+   "sha256": "7140b568631ee8099e94a8c1cf8000a1deaff3957f0ebf19a5134641634f9af9",
    "bbox": [
     6,
     49,
@@ -3593,7 +3593,7 @@
   },
   "allosaurus_run_S_001": {
    "file": "allosaurus_run_S_001.png",
-   "sha256": "ce8fe6a4506d96be84bf67cb32ec486475db6b78eced763005ceb990c71008b4",
+   "sha256": "16398181d81e646592732eb24cb71812e388e21aec77c92d37395405683ec6fb",
    "bbox": [
     45,
     17,
@@ -3673,10 +3673,10 @@
   },
   "allosaurus_run_N_001": {
    "file": "allosaurus_run_N_001.png",
-   "sha256": "22c599afe1680dcdeaa4c36ceee100023bc125dba639a926202edddcac0ab341",
+   "sha256": "fb6e5f9a5453577bbb337d7468f5f9518bbc53ea8013ca17cb1937501f2948b2",
    "bbox": [
     45,
-    15,
+    14,
     99,
     122
    ],
@@ -3753,7 +3753,7 @@
   },
   "allosaurus_run_E_001": {
    "file": "allosaurus_run_E_001.png",
-   "sha256": "e83be3e42cab9ec162015a27985e02270594a3be5224a9a64ec7d0b1aecbeb77",
+   "sha256": "64919f158a2e6378c4cc5eb034da6c51300fc6651395a80deaf90d3e9652caec",
    "bbox": [
     8,
     49,
@@ -3833,7 +3833,7 @@
   },
   "allosaurus_run_W_001": {
    "file": "allosaurus_run_W_001.png",
-   "sha256": "a363df9882d346ae96dc92707620d53d5b8c2855814b90fe073c664fbbab8740",
+   "sha256": "2440853631bc3ccd8ae98e2212cf21f4747408fbfd43020923741e6636dce97f",
    "bbox": [
     6,
     47,
@@ -3913,7 +3913,7 @@
   },
   "allosaurus_run_S_002": {
    "file": "allosaurus_run_S_002.png",
-   "sha256": "055ace6f4256478dbee2ffa7430c9cd9d2eeb32c44835d09cf1d3325e30bdd1d",
+   "sha256": "4e54a0e1252572bc189090f309b8234e99fe061c6c1dfa4697d55f843eecea15",
    "bbox": [
     45,
     17,
@@ -3993,10 +3993,10 @@
   },
   "allosaurus_run_N_002": {
    "file": "allosaurus_run_N_002.png",
-   "sha256": "cc7e2cc39ba9fb9b48f393259ac201b4dfc22b7c9a3b034ebbf324976f8db51b",
+   "sha256": "9d64f707755c78dede11cd774b41bad056a6c795e0cb1dcf7f00db172af954df",
    "bbox": [
     45,
-    15,
+    14,
     99,
     122
    ],
@@ -4073,7 +4073,7 @@
   },
   "allosaurus_run_E_002": {
    "file": "allosaurus_run_E_002.png",
-   "sha256": "09d17bc32a246eaa77df7d659e79205ded8c85425d29ce0931f86ed3ceb2b21f",
+   "sha256": "ce099d3836180c0ab2deb9ed9c308a9424eeacadc76c0d3ef59e7685ddc4671b",
    "bbox": [
     9,
     49,
@@ -4153,7 +4153,7 @@
   },
   "allosaurus_run_W_002": {
    "file": "allosaurus_run_W_002.png",
-   "sha256": "a9466f849c68301667806cb4efed211ec400f94ff32e39d03469f7decdf4cb0b",
+   "sha256": "29de189f95d5fb8d1650c594cc81d9cf500ec92a2dd4ca64743110108e93fd43",
    "bbox": [
     6,
     48,
@@ -4233,7 +4233,7 @@
   },
   "allosaurus_run_S_003": {
    "file": "allosaurus_run_S_003.png",
-   "sha256": "5b45ffe04238fd86ad5143766886234e9caf9f291359575b2d9533bf00ec9382",
+   "sha256": "3a7c4a6281efc8ac74eae738d8ab2cb949b68d6d35037a19a8aea7a1da5df616",
    "bbox": [
     45,
     18,
@@ -4313,7 +4313,7 @@
   },
   "allosaurus_run_N_003": {
    "file": "allosaurus_run_N_003.png",
-   "sha256": "e00d9a40732d59b52aa4b2faeb6de7ac3b573089a52c24034015bcf2d2262da0",
+   "sha256": "2680279aecb7218d3ab04e272c9bdb295d3dc2a8ecee9df28e6bdeec433cc6aa",
    "bbox": [
     45,
     14,
@@ -4393,7 +4393,7 @@
   },
   "allosaurus_run_E_003": {
    "file": "allosaurus_run_E_003.png",
-   "sha256": "224cf43b0b695cfa5aa47e57486bbb37a4847d27d75167f56ffd76ac20ac6a12",
+   "sha256": "935730bfa15e2c84a5c089660934bd49aeb98e63f1371cd34a731d7449dce1cf",
    "bbox": [
     8,
     49,
@@ -4473,7 +4473,7 @@
   },
   "allosaurus_run_W_003": {
    "file": "allosaurus_run_W_003.png",
-   "sha256": "593da60a929b14d81e6e4856dac666865978df13ffad713fa6963ef40fe38fe1",
+   "sha256": "e2ce6e933bc5fa4912705cb204a6aba734cf6f12a404ec20e0a8bdd198278926",
    "bbox": [
     6,
     49,
@@ -4553,7 +4553,7 @@
   },
   "allosaurus_run_S_004": {
    "file": "allosaurus_run_S_004.png",
-   "sha256": "dc22a1c7ed78a50a8956afec5f6d0d792c858a32ed3cc43f7cde3e005e6c468d",
+   "sha256": "88006850af4e648258798fd9d2a9f971bf42ffcb1188d2b1e35053ea5efae3e5",
    "bbox": [
     45,
     17,
@@ -4633,10 +4633,10 @@
   },
   "allosaurus_run_N_004": {
    "file": "allosaurus_run_N_004.png",
-   "sha256": "0eb3f5b2322b82561e8108f6ce27368b6ccc65399dca872fcf1c5c931014e11d",
+   "sha256": "f4eb35cd1edf46535a0cc5af74352363bbfc36f0595e62c83fafc6874d186b7e",
    "bbox": [
     45,
-    15,
+    14,
     99,
     122
    ],
@@ -4713,7 +4713,7 @@
   },
   "allosaurus_run_E_004": {
    "file": "allosaurus_run_E_004.png",
-   "sha256": "e6ec16c181b716a38ce73041801329ac0a1afb25896e1e7b8f081f6815500853",
+   "sha256": "2deddc00dd2e0c45988abcfbaa760b418168eba7017cabb5ea62fe229b87d902",
    "bbox": [
     8,
     47,
@@ -4793,7 +4793,7 @@
   },
   "allosaurus_run_W_004": {
    "file": "allosaurus_run_W_004.png",
-   "sha256": "3d9394e5ae43fba68f6d70e669a8820d3116b3516328a257f858478b3fa2cab3",
+   "sha256": "0bd4201bda797294b8bbb973f3b05dd0829d57c2b48660d35c4f8d22751cd328",
    "bbox": [
     6,
     49,
@@ -4873,7 +4873,7 @@
   },
   "allosaurus_run_S_005": {
    "file": "allosaurus_run_S_005.png",
-   "sha256": "4689a66dedab5f38347a45663792ffb1433e0e12b76f907c65481dced8dbfd6b",
+   "sha256": "da231d13626c831267aab2b28b54d5456a505696da878d921f8d099c91f00e7e",
    "bbox": [
     45,
     17,
@@ -4953,10 +4953,10 @@
   },
   "allosaurus_run_N_005": {
    "file": "allosaurus_run_N_005.png",
-   "sha256": "3a3c218181f5e152369089c1615856c831947483bfe63097782428705ef87c0b",
+   "sha256": "93d29591e645bfe483994c52bc1c7619c8e45ea7433646a92b63f4ebbcd3eab8",
    "bbox": [
     45,
-    15,
+    14,
     99,
     122
    ],
@@ -5033,7 +5033,7 @@
   },
   "allosaurus_run_E_005": {
    "file": "allosaurus_run_E_005.png",
-   "sha256": "575331b375ccaaae2c9ab5c0fff2048796981327ae064129152898cd3c186d73",
+   "sha256": "ca23bbffb51d8fdfa1f25d7c64bb1f016ba7cd9b76db129eaf8063b055deeb1f",
    "bbox": [
     9,
     48,
@@ -5113,7 +5113,7 @@
   },
   "allosaurus_run_W_005": {
    "file": "allosaurus_run_W_005.png",
-   "sha256": "f7f5522537697b7b761ed73f72118d5307db41c407942a725715682f45db92ab",
+   "sha256": "3b1177ca91b5ba7922eb5dfc3452ecd9ef271d2ef2e65682378d243ac26d8365",
    "bbox": [
     6,
     49,
@@ -5193,7 +5193,7 @@
   },
   "allosaurus_attack_S_000": {
    "file": "allosaurus_attack_S_000.png",
-   "sha256": "939f1f3f6e4170cd33efa75c19b772bccad92a97c8c72033440f4b924820a6be",
+   "sha256": "d330c18351db3e65ec2001314cec7028fa95a7c671e3533154f55d80f0d4cf04",
    "bbox": [
     45,
     18,
@@ -5273,7 +5273,7 @@
   },
   "allosaurus_attack_N_000": {
    "file": "allosaurus_attack_N_000.png",
-   "sha256": "fa3993c9cebe3541337fb7166d07858f1456d260c6d6796679d46eeb1038819a",
+   "sha256": "b1fb50480f927212c84b98e2e57b357f9567d5a6e2dc7ca16e4c2eaa13cf3f55",
    "bbox": [
     45,
     13,
@@ -5353,7 +5353,7 @@
   },
   "allosaurus_attack_E_000": {
    "file": "allosaurus_attack_E_000.png",
-   "sha256": "ec5343915f20a351bac0b72c6ecf425fce85639d0f5549ddc56912dd6c7eb736",
+   "sha256": "029919213006c11af9cc67138d56d5e2eb294fb849e8f06de5f6425f0f992022",
    "bbox": [
     7,
     49,
@@ -5433,7 +5433,7 @@
   },
   "allosaurus_attack_W_000": {
    "file": "allosaurus_attack_W_000.png",
-   "sha256": "15fb7c068cae3570b1e4aa4c259b491d7ff29b510ad5ce67091d18430113c670",
+   "sha256": "cee13498b2362900d9376cd6308cc29cc4602237c4795b04010a0a9ac55c786d",
    "bbox": [
     9,
     49,
@@ -5513,7 +5513,7 @@
   },
   "allosaurus_attack_S_001": {
    "file": "allosaurus_attack_S_001.png",
-   "sha256": "6225117af4a6c1990d708f40395ca3290f489369f0d77c6832a088186f18fd01",
+   "sha256": "ac8e63d852c0675228f59f2ed21b7ee3bd0c98d0d3a6924cc3a367a841483fdf",
    "bbox": [
     45,
     18,
@@ -5593,7 +5593,7 @@
   },
   "allosaurus_attack_N_001": {
    "file": "allosaurus_attack_N_001.png",
-   "sha256": "2820b232150721fd5d80a83ba853333c6c68c1ea4fbf98d5b08a91a5d2518c8b",
+   "sha256": "c115dba860f201b451d22e44a82836057651e02624bc615d0e47df016d909aa0",
    "bbox": [
     45,
     14,
@@ -5673,7 +5673,7 @@
   },
   "allosaurus_attack_E_001": {
    "file": "allosaurus_attack_E_001.png",
-   "sha256": "538702c056cfd201895a26092617d876e5d7c54f2975f5b9d53d3e9038765833",
+   "sha256": "221a989c5ccceda7c35496c756f4643a3bcea002826f47986cbf3e54fb7f873a",
    "bbox": [
     6,
     49,
@@ -5753,7 +5753,7 @@
   },
   "allosaurus_attack_W_001": {
    "file": "allosaurus_attack_W_001.png",
-   "sha256": "0e9cca37594b861fd10687b60f6e9998734641c8480c066b89aedb57f8d450ee",
+   "sha256": "258f2bc8b1b99b0aa4726c53d631ce3d4d3fec9124738849186074abf8e9458e",
    "bbox": [
     11,
     49,
@@ -5833,7 +5833,7 @@
   },
   "allosaurus_attack_S_002": {
    "file": "allosaurus_attack_S_002.png",
-   "sha256": "89294cea4ee7159ce8cb5ba81bd2fbd8005be8497bb73742d24a9da78b2b8d53",
+   "sha256": "0ecf6ab18bf6056e895c13e53362412aecb61650253d5b697b6b0254a782b4da",
    "bbox": [
     45,
     18,
@@ -5913,7 +5913,7 @@
   },
   "allosaurus_attack_N_002": {
    "file": "allosaurus_attack_N_002.png",
-   "sha256": "c4392115696e32590b26cfeef94fc28ab110539acc7169f98077cb7e8d128bb3",
+   "sha256": "31ea19f994f6947c83e2b0f4209794d8a2d178a191e0c42b17417217b190b50b",
    "bbox": [
     45,
     13,
@@ -5993,7 +5993,7 @@
   },
   "allosaurus_attack_E_002": {
    "file": "allosaurus_attack_E_002.png",
-   "sha256": "b97a768f240c09eca399c7b9bee54cdbb2679864b6e56606b5ef8ae03a1ed9ac",
+   "sha256": "ff1a86c36f2d833cd4a159de26aabcf6d4f77170c0266df115b38055f5c6abd8",
    "bbox": [
     8,
     49,
@@ -6073,7 +6073,7 @@
   },
   "allosaurus_attack_W_002": {
    "file": "allosaurus_attack_W_002.png",
-   "sha256": "315ad21a175d2586e14b85eb463757f378d58b1475f2640e5ac11620a1c59d29",
+   "sha256": "6ea4b3dbde17406358c9d93e47667eb8a1ec3aa818fde8405bb4e3cfb334fa82",
    "bbox": [
     8,
     49,
@@ -6153,7 +6153,7 @@
   },
   "allosaurus_attack_S_003": {
    "file": "allosaurus_attack_S_003.png",
-   "sha256": "24b1fe71bedb5c0d923b66537e98c36fe7336cd6797c2c6abec8014026740e24",
+   "sha256": "f7f9e1d33d9f7395a646bae7d193d57d65bf87cedddaf584dbdd65ce91f44cc6",
    "bbox": [
     45,
     18,
@@ -6233,7 +6233,7 @@
   },
   "allosaurus_attack_N_003": {
    "file": "allosaurus_attack_N_003.png",
-   "sha256": "e64aafeb9d8c72deeab46330af103cf172c23e4ab43b762e72243fff2a4a1764",
+   "sha256": "f1edc5ca6408da238dc79554edc12f9c2d2a983e505df804d08ca015b6f8894e",
    "bbox": [
     45,
     16,
@@ -6313,7 +6313,7 @@
   },
   "allosaurus_attack_E_003": {
    "file": "allosaurus_attack_E_003.png",
-   "sha256": "1878c127ba94a2e6a84f8b6c5a4e4dccbd0832f6ffbbb6562299b97e8d8c0a3c",
+   "sha256": "a56ff8d47281d0415aa08e4ba3bc9e1eeb8cad6743a91e800485b74efb2811b4",
    "bbox": [
     9,
     49,
@@ -6393,7 +6393,7 @@
   },
   "allosaurus_attack_W_003": {
    "file": "allosaurus_attack_W_003.png",
-   "sha256": "6530a2ad258f56582e73e06c8d8e05df5407f938c52af664e5307027292d785a",
+   "sha256": "3bfaeffe9ef77dd11571adbb927cb33abf24e952b42a8616b8bf55fb50db8a14",
    "bbox": [
     5,
     49,
@@ -6473,7 +6473,7 @@
   },
   "allosaurus_attack_S_004": {
    "file": "allosaurus_attack_S_004.png",
-   "sha256": "6bc5494e22d253b6075b03d3262ec5384e908434ec4d72a2953349ab89f08491",
+   "sha256": "e0ec1d3369faf3ea4f2c04aaee37627f06f5a4eb64f746618b6b48eae77ebf9c",
    "bbox": [
     45,
     18,
@@ -6553,7 +6553,7 @@
   },
   "allosaurus_attack_N_004": {
    "file": "allosaurus_attack_N_004.png",
-   "sha256": "86f5a164738ae04e484840d81dd835bc9f9a8fb8bba72bd7f8d6f3ab540845cd",
+   "sha256": "d3d29d35733ea195198ee11b1239370a30f651c9c65b28292c9082c2fdd5a99e",
    "bbox": [
     45,
     14,
@@ -6633,7 +6633,7 @@
   },
   "allosaurus_attack_E_004": {
    "file": "allosaurus_attack_E_004.png",
-   "sha256": "1c2238238e376a28e69c1612648eb5341b75195e1238a686132baaa3dd8ebec5",
+   "sha256": "42f7abf83f62640cc5f113c6469e321524c37cb9d8e61ac8a2fcc6bc77e18fe4",
    "bbox": [
     9,
     49,
@@ -6713,7 +6713,7 @@
   },
   "allosaurus_attack_W_004": {
    "file": "allosaurus_attack_W_004.png",
-   "sha256": "05fde99a0710e7843768af1ccb3e309e9cf684190899eb504bc24e6773152adb",
+   "sha256": "7d857afa78c0a689487b62810349d1124b6fda81dc500e4ead537e386ef0462c",
    "bbox": [
     5,
     49,
@@ -6793,7 +6793,7 @@
   },
   "allosaurus_attack_S_005": {
    "file": "allosaurus_attack_S_005.png",
-   "sha256": "8a505fbe4b1231ecd1e00476f8b478f3fbb9472cff0e7a88d66adbfe88913d27",
+   "sha256": "73874a94ea6e30c74c28011e9665b7a463613cfdc75b6274b8c404aa8f1d3230",
    "bbox": [
     45,
     18,
@@ -6873,10 +6873,10 @@
   },
   "allosaurus_attack_N_005": {
    "file": "allosaurus_attack_N_005.png",
-   "sha256": "3aa273b0b49afef33b1af9a4075566c56f167e95bc15b5a48a2e9587ed69545b",
+   "sha256": "67bcbe386d49c24b86904a3f47133aa0252d43d243dd05c04eb7b3d74fd03bbe",
    "bbox": [
     45,
-    14,
+    13,
     99,
     123
    ],
@@ -6953,7 +6953,7 @@
   },
   "allosaurus_attack_E_005": {
    "file": "allosaurus_attack_E_005.png",
-   "sha256": "26b1c8eaeafe97c11ca1edb8bfa6759e20f39da3fa1b2362b692fceb126cef66",
+   "sha256": "5f3daa5bda62b927ce7ca7202d2584dde84bbeae2cd681719d91bae488121435",
    "bbox": [
     8,
     49,
@@ -7033,7 +7033,7 @@
   },
   "allosaurus_attack_W_005": {
    "file": "allosaurus_attack_W_005.png",
-   "sha256": "2cfcc80911575f8dc4559e2a33308c24d226784ecc0d72eea6fd9015ff188a77",
+   "sha256": "ac75a6f45a6d4fd24e61dccaec787584ccaa1eb847947928319cdf5a027b0b58",
    "bbox": [
     6,
     49,
@@ -7113,7 +7113,7 @@
   },
   "allosaurus_hurt_S_000": {
    "file": "allosaurus_hurt_S_000.png",
-   "sha256": "0c3fd2476e5e533ece3158682774401a591c1452c6ed09f7fd171c0aa5d09763",
+   "sha256": "e7bbae4fb20271050e793e5bcecbc891c5a55082c89b46ad35138ab12ea0a55f",
    "bbox": [
     45,
     18,
@@ -7193,7 +7193,7 @@
   },
   "allosaurus_hurt_N_000": {
    "file": "allosaurus_hurt_N_000.png",
-   "sha256": "e77082d72a8b99ff7368562462aa8eacca6a937eda7151736e3826c6a62c0088",
+   "sha256": "7a247c884855105ca0bd7dced7a202174189cd40097bceec034c8141c52614f5",
    "bbox": [
     45,
     14,
@@ -7273,7 +7273,7 @@
   },
   "allosaurus_hurt_E_000": {
    "file": "allosaurus_hurt_E_000.png",
-   "sha256": "100dc4cf00aea6752a2de4924e48b00bdc814408e4f27dba281b22638f11bd35",
+   "sha256": "ea2ca347ca1d4b4fa38f557f6e98f95b0e89ccb5330836e86244c1dc50fb5d47",
    "bbox": [
     7,
     49,
@@ -7353,7 +7353,7 @@
   },
   "allosaurus_hurt_W_000": {
    "file": "allosaurus_hurt_W_000.png",
-   "sha256": "5ced07181d851eabdfde5dc28fd045f5c6fcbcb488de05e80e2191fad4b73b95",
+   "sha256": "ae3b615b5561d8864c459de1bf0abe32b5fccbb98941d972be0217b7c4ba81be",
    "bbox": [
     11,
     49,
@@ -7433,7 +7433,7 @@
   },
   "allosaurus_hurt_S_001": {
    "file": "allosaurus_hurt_S_001.png",
-   "sha256": "03a657de72fdffc9a54d8af20e3713511fa1b2b80ee3326867071953ac2626a9",
+   "sha256": "d0d89d7ce84e334f61dd0181832eb3e4104aba44a0fdafff549ae29fe02c0597",
    "bbox": [
     45,
     18,
@@ -7513,7 +7513,7 @@
   },
   "allosaurus_hurt_N_001": {
    "file": "allosaurus_hurt_N_001.png",
-   "sha256": "2c2b982c336a93b9f508034549bcca86b46e39fe5d2fc81b72977aa6a3eb05bd",
+   "sha256": "cc9b4def42623055c5900aeabba91e880a9691f187850eb95abb6ec3f2d94c9e",
    "bbox": [
     45,
     13,
@@ -7593,11 +7593,11 @@
   },
   "allosaurus_hurt_E_001": {
    "file": "allosaurus_hurt_E_001.png",
-   "sha256": "3df1afe0b592fd989d2f42039a728216b8cc5d3c62485b3bdf17f5ee8b58033a",
+   "sha256": "515d18059679de7577249307bf8ad350e53869b5e8e5b724be8bbe8958b34d31",
    "bbox": [
     8,
     49,
-    135,
+    136,
     94
    ],
    "joints": {
@@ -7673,9 +7673,9 @@
   },
   "allosaurus_hurt_W_001": {
    "file": "allosaurus_hurt_W_001.png",
-   "sha256": "e6e99cf1d25dd6e11df6fd540894ae6641b10f3dd3f1f24eff798cf06338b70c",
+   "sha256": "78cc0ebf835bd4d847ad3f4e764fc12d0053019561bb449c61dd0d6cc84b165b",
    "bbox": [
-    9,
+    8,
     49,
     136,
     94
@@ -7753,7 +7753,7 @@
   },
   "allosaurus_death_S_000": {
    "file": "allosaurus_death_S_000.png",
-   "sha256": "dad99563c351b443a84644aec90583405c6367b785cd01c2c473c59ddb89c33b",
+   "sha256": "bf3a59478e932e8af653d10ab6ffd6fb3f56443842a87ac672c9c77797e39995",
    "bbox": [
     45,
     18,
@@ -7763,7 +7763,7 @@
   },
   "allosaurus_death_N_000": {
    "file": "allosaurus_death_N_000.png",
-   "sha256": "27091be74ccf0c570f82ffb4314e486ac68c4a1c10ea5e707f245cae1168709b",
+   "sha256": "b15f33d1d01fb949692f58a6c5db772959ccf4dade8376ca428cfca33c119d02",
    "bbox": [
     45,
     13,
@@ -7773,7 +7773,7 @@
   },
   "allosaurus_death_E_000": {
    "file": "allosaurus_death_E_000.png",
-   "sha256": "4bae358ccdf51bf100253dc022ba6fa3cbd7d6de8238c61992599a86e5f463a0",
+   "sha256": "7cacf494402b88247f2690ce2fe9faf68e9369d3b2a741eb35484c2faeb7b5d2",
    "bbox": [
     8,
     49,
@@ -7783,7 +7783,7 @@
   },
   "allosaurus_death_W_000": {
    "file": "allosaurus_death_W_000.png",
-   "sha256": "51cb5e3bbe8151d872b01f96ae8ac92e2979b073cb061c7d8d09a3640d690b97",
+   "sha256": "2d5b717a4b498a7117940a0fe8e53376a9615670ee30567a92bbede3e30e6f47",
    "bbox": [
     6,
     49,
@@ -7793,7 +7793,7 @@
   },
   "allosaurus_death_S_001": {
    "file": "allosaurus_death_S_001.png",
-   "sha256": "68a8b3b44f1cc3dd03c893b564d71b085b114e3fe5b612aeaad293aa95879afb",
+   "sha256": "8aa427a2caa0a9a3c504ce55cf003ffa85cadc8dddfb338c6cb9662e64a23cbc",
    "bbox": [
     45,
     16,
@@ -7803,7 +7803,7 @@
   },
   "allosaurus_death_N_001": {
    "file": "allosaurus_death_N_001.png",
-   "sha256": "48e4329ed4bc62c453a6071cab6c5390fd031681859889c19aceec5a69b24e11",
+   "sha256": "cbedae2dca23045959a229dfb626471ab280ce8d746a7b8ad4208005fe75d6b1",
    "bbox": [
     45,
     13,
@@ -7813,7 +7813,7 @@
   },
   "allosaurus_death_E_001": {
    "file": "allosaurus_death_E_001.png",
-   "sha256": "55e2d9f35ccd474ef64126fda04410f31c547a8f7eaf6a1b5f2ce7c75eee4646",
+   "sha256": "b8da8dc25d765fde0e28bd7141844eecd67e79dc4bb094df49748341229e47db",
    "bbox": [
     8,
     51,
@@ -7823,7 +7823,7 @@
   },
   "allosaurus_death_W_001": {
    "file": "allosaurus_death_W_001.png",
-   "sha256": "9bc99dca257d7207e6dfd0d8b6275c67d70943fe61abd9463bd945cf4b0379d8",
+   "sha256": "028fb8a913506925b65bb845aa0cb0c4bd31afdde0e08ba280eb9d1fecef271d",
    "bbox": [
     6,
     48,
@@ -7833,7 +7833,7 @@
   },
   "allosaurus_death_S_002": {
    "file": "allosaurus_death_S_002.png",
-   "sha256": "901ad3848693ff7e9e964a2270a05d7ee6e2d07e8ccc2c9be6d1bd1b697ae8e0",
+   "sha256": "fd4d80520c860f7084024458cfa9b5c5b14fa4d73ced9043bca0da108df91290",
    "bbox": [
     49,
     14,
@@ -7843,7 +7843,7 @@
   },
   "allosaurus_death_N_002": {
    "file": "allosaurus_death_N_002.png",
-   "sha256": "a44013ea745f0a021de5951e845ce10c6a272990224f203e615fcdfc512b0678",
+   "sha256": "da2fc6ad0b76890585392ee2967d099101ec339f48ecc9ae1e4e359492883d34",
    "bbox": [
     48,
     13,
@@ -7853,7 +7853,7 @@
   },
   "allosaurus_death_E_002": {
    "file": "allosaurus_death_E_002.png",
-   "sha256": "15fd3374588fb0fe90449884e3e4ffa603a52928c9e59e274a4cc7768c6debe0",
+   "sha256": "b4b33a3aaf78d5ce47076265179f16d736c1249d5d1e11dfde1fc710a8b9dc99",
    "bbox": [
     10,
     50,
@@ -7863,7 +7863,7 @@
   },
   "allosaurus_death_W_002": {
    "file": "allosaurus_death_W_002.png",
-   "sha256": "c1d78a158d7ed68ac063d074c99c435235f3f373c14d780cc39a512ccae7eaef",
+   "sha256": "295788c51e2afdcf63cc19138b0259153b2f12bb575a714696bf2ad493371ece",
    "bbox": [
     7,
     48,
@@ -7873,7 +7873,7 @@
   },
   "allosaurus_death_S_003": {
    "file": "allosaurus_death_S_003.png",
-   "sha256": "2e09700f84f1bf0dbfccf312ad60219c117f2d6ec1fe0fcd45f344e5686bbf06",
+   "sha256": "5ae30ec9fbc7fa25ece96d90deaf1fa223f6f4dbae20d6e27647d7be61a0ff73",
    "bbox": [
     58,
     21,
@@ -7883,7 +7883,7 @@
   },
   "allosaurus_death_N_003": {
    "file": "allosaurus_death_N_003.png",
-   "sha256": "9e1a6bed3776de6d76b6c72486ba293eb0969ba916801a2359af6775a9cbba9a",
+   "sha256": "804ea2eb0929064db8762976b1372bab2c21fe15a30d47d5ef206f0a4b053fc3",
    "bbox": [
     38,
     16,
@@ -7893,7 +7893,7 @@
   },
   "allosaurus_death_E_003": {
    "file": "allosaurus_death_E_003.png",
-   "sha256": "cafcbe2315d1be5e74cc2a103e4f0f7d9519b4c3a23bc6e2259f48ced659b247",
+   "sha256": "e25b436efdd351d4935c94c08523b2fb5747083b1b3670a16777e99c0817a03a",
    "bbox": [
     18,
     37,
@@ -7903,7 +7903,7 @@
   },
   "allosaurus_death_W_003": {
    "file": "allosaurus_death_W_003.png",
-   "sha256": "75c2bcb0e0b80f69fe90ba1246120119cbcabf1c006d93e3c7f28f5d54cda664",
+   "sha256": "43a155ec9ce7833fb4defe7c918578d795a4c721bbe445360d6eb765a1206b46",
    "bbox": [
     10,
     52,
@@ -7913,7 +7913,7 @@
   },
   "allosaurus_death_S_004": {
    "file": "allosaurus_death_S_004.png",
-   "sha256": "31142b466ef9c7db44b9156722aaa3750d50e181ddae288fa9734e81b85aa648",
+   "sha256": "07302657db2103042a941a9f48393c41c6d17c05c2d73ddb0613cab0b2e17b03",
    "bbox": [
     67,
     34,
@@ -7923,7 +7923,7 @@
   },
   "allosaurus_death_N_004": {
    "file": "allosaurus_death_N_004.png",
-   "sha256": "2edbf26f27d372d35e9027d12177a4ea9b3839bf3aeee68159f13e1221934418",
+   "sha256": "14d419e428d02144ae4b3b267b11fc27decf0bc7d6b6b9d78d0f69ca1f66d593",
    "bbox": [
     24,
     21,
@@ -7933,7 +7933,7 @@
   },
   "allosaurus_death_E_004": {
    "file": "allosaurus_death_E_004.png",
-   "sha256": "f30345f5ad8cc7236de052ef033e9d645e00b270ed7c9d1e12d203f063e7ca2f",
+   "sha256": "077a9f36546915eaf2bde8a5858005e5e4e3ccb8bd6fc05ef9fd1efda14f4f66",
    "bbox": [
     29,
     30,
@@ -7943,7 +7943,7 @@
   },
   "allosaurus_death_W_004": {
    "file": "allosaurus_death_W_004.png",
-   "sha256": "33cb602b37428a7d35e1c3e458e3fbef643dc35210fec5ae4a73470b07c76023",
+   "sha256": "8632c94484d76182de24670226def58190bd1c713724bcd60d23e787664219f8",
    "bbox": [
     13,
     59,
@@ -7953,7 +7953,7 @@
   },
   "allosaurus_death_S_005": {
    "file": "allosaurus_death_S_005.png",
-   "sha256": "bcbf33f0002493e169062bbbd7b3bef72e20bda1c2a821dd256a0a3049e60980",
+   "sha256": "e66d45065f95a122b5ebc89c403d623cfa3de49fab761f789821cfdd2d8f81d2",
    "bbox": [
     70,
     39,
@@ -7963,7 +7963,7 @@
   },
   "allosaurus_death_N_005": {
    "file": "allosaurus_death_N_005.png",
-   "sha256": "cd43950df4b8d08c67d43a066929a2a0218441a643f12c745cceae7c2e70b23b",
+   "sha256": "185e5f9094d310d5a17ae38856d5fc098f636021ae15e756db0b191960e6e3ea",
    "bbox": [
     21,
     24,
@@ -7973,7 +7973,7 @@
   },
   "allosaurus_death_E_005": {
    "file": "allosaurus_death_E_005.png",
-   "sha256": "b2cfec99e3493baadd6da1d556c3b451dffe760d2a82f644e0611e74bf60625c",
+   "sha256": "36daa357afe14b162482c9a55c27c30a8b7dcfcbb238e7f66735dde602bec232",
    "bbox": [
     32,
     29,
@@ -7983,7 +7983,7 @@
   },
   "allosaurus_death_W_005": {
    "file": "allosaurus_death_W_005.png",
-   "sha256": "4f92bb49057000056b19e9714e6ad35a10b78491900335a90e3689b81f1dd222",
+   "sha256": "f58e092687d950e64111303825ed1c7edd90da1e3cde89efa67c5245d43c84ef",
    "bbox": [
     14,
     62,

@@ -71,7 +71,7 @@
  "frames": {
   "oviraptor_idle_S_000": {
    "file": "oviraptor_idle_S_000.png",
-   "sha256": "2ce45ff102f9e0d1c72fcd62b6918c8db7d82c5d576b32918e88cb04283af923",
+   "sha256": "9405618e3cd827911a6b94ba948b2d11e5c093477f05fee6c354ba9641317203",
    "bbox": [
     57,
     28,
@@ -123,7 +123,7 @@
   },
   "oviraptor_idle_N_000": {
    "file": "oviraptor_idle_N_000.png",
-   "sha256": "5fe9c93db2355abe73ce75abb5e0eb6a5592598bfe11954e21292ae59bcfce33",
+   "sha256": "1908a080400b833df999bff69bfcfb5791fe6588f328f60536af3947e731f6e7",
    "bbox": [
     57,
     36,
@@ -175,7 +175,7 @@
   },
   "oviraptor_idle_E_000": {
    "file": "oviraptor_idle_E_000.png",
-   "sha256": "42315b693e31251fa6d97b55a86ade6dca57542a8f005c7cda876194d916b185",
+   "sha256": "f7617659237af95aca6793117dd919f14919afb2641d8651c62b43dbe9fa12eb",
    "bbox": [
     22,
     56,
@@ -227,7 +227,7 @@
   },
   "oviraptor_idle_W_000": {
    "file": "oviraptor_idle_W_000.png",
-   "sha256": "51f52e199f40cd9c1d81cf0ab2349fa81f3288e5dd9c65ca4d53f1eaf8c2ad27",
+   "sha256": "378b648dbdff07b372a26c8c925117602497b2c6960f26b64f78afb30bf69adf",
    "bbox": [
     34,
     56,
@@ -279,7 +279,7 @@
   },
   "oviraptor_idle_S_001": {
    "file": "oviraptor_idle_S_001.png",
-   "sha256": "de2d5db587e367e67931bd4d4bd96492dd88540a87f8ccd4b8723a3702065fda",
+   "sha256": "7a57bd5c9c542f473bd4262763b31b6d6b487867b60082a47fec68cde40549cd",
    "bbox": [
     57,
     28,
@@ -331,7 +331,7 @@
   },
   "oviraptor_idle_N_001": {
    "file": "oviraptor_idle_N_001.png",
-   "sha256": "39ee6a9b3d1163bdd7428f91a75fe08b06e0c243320a593016a2fa54cfdf64f3",
+   "sha256": "e2751dae1d98edf57c95e45440666d18a473bfbffdc110481aee52705acb6c6e",
    "bbox": [
     57,
     36,
@@ -383,7 +383,7 @@
   },
   "oviraptor_idle_E_001": {
    "file": "oviraptor_idle_E_001.png",
-   "sha256": "bd02e5d0eff5bf50fd18ddf42417ac9cdb9262fd0388091b9fbd67e8e4de381c",
+   "sha256": "cc340cd71e65a1d7bf97efc407ace6df4976bcbd3693a8a77c8b59cbaaf42041",
    "bbox": [
     22,
     56,
@@ -435,7 +435,7 @@
   },
   "oviraptor_idle_W_001": {
    "file": "oviraptor_idle_W_001.png",
-   "sha256": "ff3d2d5b52ec28431759beafeadca8467128bf8fecf957628f3d858e48483387",
+   "sha256": "33b4345f48dad38b6be28f9695a9728d38ec502a1613ebe16f0b56224540a1f9",
    "bbox": [
     34,
     56,
@@ -487,7 +487,7 @@
   },
   "oviraptor_idle_S_002": {
    "file": "oviraptor_idle_S_002.png",
-   "sha256": "a139feba84981b331014cdc0fafcde5ed9bb2db2a15bed1df952d6e62e981080",
+   "sha256": "9c8e9af03f14b9d01da2c5f07c8a32178d6fa39904bc3cc1176d4091e69b9988",
    "bbox": [
     57,
     28,
@@ -539,7 +539,7 @@
   },
   "oviraptor_idle_N_002": {
    "file": "oviraptor_idle_N_002.png",
-   "sha256": "792fb7f0205541ea40dea9f4c984e39877820b0628c168da7fedfaa74556f100",
+   "sha256": "07cb3a7d235c9bf4f77d48b31c51ec0dce617038e3a75378c62d9c29a0378434",
    "bbox": [
     57,
     36,
@@ -591,7 +591,7 @@
   },
   "oviraptor_idle_E_002": {
    "file": "oviraptor_idle_E_002.png",
-   "sha256": "49d4003174f49ecdc5f4bb90d017edc07539d5a8cd5c122a517c8b42cf00cb43",
+   "sha256": "cc5d110b07666bd61bd9e83881e3b361ba07112f33ff052f9a287def87164e94",
    "bbox": [
     22,
     56,
@@ -643,7 +643,7 @@
   },
   "oviraptor_idle_W_002": {
    "file": "oviraptor_idle_W_002.png",
-   "sha256": "9a8089e99da57ef49740ae757cb52d4fe7152740ec90abffff62cbbb93c71f5f",
+   "sha256": "0a9b1c9676a53ac256be0f1d155d1222d80df4aa1cb2e33fd1af2bc26527462a",
    "bbox": [
     34,
     56,
@@ -695,7 +695,7 @@
   },
   "oviraptor_idle_S_003": {
    "file": "oviraptor_idle_S_003.png",
-   "sha256": "626ad3bfbf30f0dceea52607d80a42475cc2741d37692eefbd002f36efa58a51",
+   "sha256": "4eb1eff8ab1688da0ba299e4e1c18d11a95a9c2cd45640cdb6e2a1cfc321e144",
    "bbox": [
     57,
     28,
@@ -747,7 +747,7 @@
   },
   "oviraptor_idle_N_003": {
    "file": "oviraptor_idle_N_003.png",
-   "sha256": "434dbe7eaea4ca4b7ddc400c51bc8b3e47824ed209c10bd85da8418533b58187",
+   "sha256": "125c98eb8d578e025bc0fef87996f4f352f0de518c85aac15aa0421e31882fba",
    "bbox": [
     57,
     36,
@@ -799,7 +799,7 @@
   },
   "oviraptor_idle_E_003": {
    "file": "oviraptor_idle_E_003.png",
-   "sha256": "f2f259caefc53d44d6a599cbd7f924df3dcaeb1d55511467b307be4b6ba9f2fb",
+   "sha256": "2c7db8ab2b2c2387c981c30e67aed1572df6c9fa3796ba210d560b78240a74db",
    "bbox": [
     22,
     56,
@@ -851,7 +851,7 @@
   },
   "oviraptor_idle_W_003": {
    "file": "oviraptor_idle_W_003.png",
-   "sha256": "445f4189f11ea00dafc39376eaed2c0e230d03fa13011f3af5aa87a1c59171b7",
+   "sha256": "b7ff960bd5093a54008c0ba56c3cddb8588da5c9d9c31c9e34062702e2687ebf",
    "bbox": [
     34,
     56,
@@ -903,7 +903,7 @@
   },
   "oviraptor_walk_S_000": {
    "file": "oviraptor_walk_S_000.png",
-   "sha256": "9680e058afb42123cc09ff8eb4e79caa53fa717c3f58d98b237d8072edef4508",
+   "sha256": "2de6d092e1d9fa372abf1e3cd3579ceefe16cb73c157b1fc026d2ecf0dbc44ed",
    "bbox": [
     57,
     29,
@@ -955,7 +955,7 @@
   },
   "oviraptor_walk_N_000": {
    "file": "oviraptor_walk_N_000.png",
-   "sha256": "b41a46ea9b21c78a719d69c8b3701ab8a8a5daf8993223910526c89a7cfd54b2",
+   "sha256": "206f214952267b4b70997299751dbb31331be40634fb4a19188cc37ed098caf0",
    "bbox": [
     57,
     36,
@@ -1007,7 +1007,7 @@
   },
   "oviraptor_walk_E_000": {
    "file": "oviraptor_walk_E_000.png",
-   "sha256": "9e21f6a9fd83c15c4f2600b1610e6d3599e6fcac866bf9ad086210814d710a62",
+   "sha256": "2ef9b78d5d63bb8e6498f4586d26f686f8e131b1f825b9939d15abba0f631f15",
    "bbox": [
     22,
     56,
@@ -1059,7 +1059,7 @@
   },
   "oviraptor_walk_W_000": {
    "file": "oviraptor_walk_W_000.png",
-   "sha256": "2bd8693de6d1d97bc81ef530ccf067af99a562d5d05fa244948dbd75fbabd626",
+   "sha256": "9e1d004f4c18b3c3b7799c531cb532b58e59a1d173bb792f4e18c7fcb5a38fa8",
    "bbox": [
     34,
     56,
@@ -1111,7 +1111,7 @@
   },
   "oviraptor_walk_S_001": {
    "file": "oviraptor_walk_S_001.png",
-   "sha256": "29c71509d549c05fabbb868e8bae4b9d70f0a9891a939694c8dcf93686ffba4a",
+   "sha256": "d53232a4e38e759de8ed9df644bd3f763df709cd84eeb43c46ad3b24c63c9753",
    "bbox": [
     57,
     28,
@@ -1163,7 +1163,7 @@
   },
   "oviraptor_walk_N_001": {
    "file": "oviraptor_walk_N_001.png",
-   "sha256": "401e932299db3907fe0459a06527a8cacaaba9cd5e037a80630b2c2932ac25d8",
+   "sha256": "28998df07485b06715efdb299885139c428036bf0e78d500fd7e1985c5e02ad4",
    "bbox": [
     57,
     36,
@@ -1215,7 +1215,7 @@
   },
   "oviraptor_walk_E_001": {
    "file": "oviraptor_walk_E_001.png",
-   "sha256": "08c1ab3593920d5e4d97c8b938e3df48feeb07bb1489df211314dec0bf481ced",
+   "sha256": "2b3e03916595b7a9c1255a9e922ad8356c5dd3639e10529098fef07284ace60c",
    "bbox": [
     22,
     56,
@@ -1267,7 +1267,7 @@
   },
   "oviraptor_walk_W_001": {
    "file": "oviraptor_walk_W_001.png",
-   "sha256": "004ccc070b0715c59473ef1ddf18e8a39e0083aa4234e330e23c95cc60d54396",
+   "sha256": "2427faf6d0cde97500a21b0d800a8547f4a7fa7f8209d21270177fd8776b55a9",
    "bbox": [
     34,
     56,
@@ -1319,7 +1319,7 @@
   },
   "oviraptor_walk_S_002": {
    "file": "oviraptor_walk_S_002.png",
-   "sha256": "2dc30ad0b081e6bad19d5318e68b401ff81da854f217ab98eafe547486af33ae",
+   "sha256": "012cd1a774bc89387303aa0f346b4efef3bedd5f456ca8cf99d3fa926b6f4c88",
    "bbox": [
     57,
     29,
@@ -1371,7 +1371,7 @@
   },
   "oviraptor_walk_N_002": {
    "file": "oviraptor_walk_N_002.png",
-   "sha256": "bfb467592e92a8c138438288ec01bb6e10743059779d1c1b071998d51971f2a3",
+   "sha256": "27bd5e92ed7039a30008f4b28a30b8a1b5b7489baa8d33a5c97c9a88ed5520f0",
    "bbox": [
     57,
     36,
@@ -1423,7 +1423,7 @@
   },
   "oviraptor_walk_E_002": {
    "file": "oviraptor_walk_E_002.png",
-   "sha256": "2b762a6fb711c6b782e1f6337b6055989dbf47acef83764f14a3902a8ea4b41c",
+   "sha256": "9a28f5ea4203fd1e278425ec672d4a4d7abe85d21c924e9b20af6b44a4bcfe05",
    "bbox": [
     23,
     56,
@@ -1475,7 +1475,7 @@
   },
   "oviraptor_walk_W_002": {
    "file": "oviraptor_walk_W_002.png",
-   "sha256": "9e07e4613a75c75843a3b0404c0b01fe300808bf280b5ae066c81cee6128965e",
+   "sha256": "56fb9cf47f8324e07fe5e1c47d372b1e86d2644f9d82eab8bbd1622919ff29ae",
    "bbox": [
     34,
     56,
@@ -1527,7 +1527,7 @@
   },
   "oviraptor_walk_S_003": {
    "file": "oviraptor_walk_S_003.png",
-   "sha256": "4b63e357168a33fbe0aef77cee232c19c2a231cc52a5d11c4eca00c074e7aa9d",
+   "sha256": "510999b957b97f5f9229256236757ac83ef2bcf1c5ac0115ec7af52c4e82a864",
    "bbox": [
     57,
     29,
@@ -1579,7 +1579,7 @@
   },
   "oviraptor_walk_N_003": {
    "file": "oviraptor_walk_N_003.png",
-   "sha256": "7a23720e756cb2d5594c5ef37de9c2e650cf9a401715cc1f9dab58e2f249ccba",
+   "sha256": "988563fa55d4bed8bab21f56df73cbef059d77e431bbd4e9ac1457469d79a761",
    "bbox": [
     57,
     36,
@@ -1631,7 +1631,7 @@
   },
   "oviraptor_walk_E_003": {
    "file": "oviraptor_walk_E_003.png",
-   "sha256": "a774d89066a3b1c3ae01ba7d0822f4ea52d8e45e594857d1137f7c7402b67ae9",
+   "sha256": "0a14058b0b69ed5a52d3a6955004f76d76a461053daaad403c3b4a3b97314624",
    "bbox": [
     22,
     56,
@@ -1683,7 +1683,7 @@
   },
   "oviraptor_walk_W_003": {
    "file": "oviraptor_walk_W_003.png",
-   "sha256": "321cee8c7d8b1a7188032fbdb88afb7e775811c56685ddc9fee07c8640efb5dd",
+   "sha256": "4b79727ce67475ddc8ff5cb99a14d032851c906886ff37530a93d566e8811b09",
    "bbox": [
     34,
     56,
@@ -1735,7 +1735,7 @@
   },
   "oviraptor_walk_S_004": {
    "file": "oviraptor_walk_S_004.png",
-   "sha256": "092c36aa4ea4dd151a65835c57cc9c6a94c00332cbeacd6aec837826fdeca55c",
+   "sha256": "41d99a353a56f7506fafbec5b8beb843dc886f8fe2000350ebcf6d24fc70949b",
    "bbox": [
     57,
     28,
@@ -1787,7 +1787,7 @@
   },
   "oviraptor_walk_N_004": {
    "file": "oviraptor_walk_N_004.png",
-   "sha256": "20f353a5e58637aaea4ecc9add83594937512bbe3d1e8a0f7cf32bec4fab5473",
+   "sha256": "4463439698e794607000ab4693fa84768eb67d8036faa7fc287b260aa129fc23",
    "bbox": [
     57,
     36,
@@ -1839,7 +1839,7 @@
   },
   "oviraptor_walk_E_004": {
    "file": "oviraptor_walk_E_004.png",
-   "sha256": "6064a7a9fc7005086502d662057a298b7c9ba9e030cd22eed6ab6684de974511",
+   "sha256": "98bdaac487ccb02b9a2362c5d4768af68ddf28600a95514f49b4e707958e4f66",
    "bbox": [
     22,
     56,
@@ -1891,7 +1891,7 @@
   },
   "oviraptor_walk_W_004": {
    "file": "oviraptor_walk_W_004.png",
-   "sha256": "def8bbd5e967f76cacd82e2307867ffff2e3a95597ecd8bf219e23b6e9b87d75",
+   "sha256": "078a0fef391060f389ba0ed9ed7b8fcf76c850c880d998bcebe2e792cd125c55",
    "bbox": [
     34,
     56,
@@ -1943,7 +1943,7 @@
   },
   "oviraptor_walk_S_005": {
    "file": "oviraptor_walk_S_005.png",
-   "sha256": "b57eae6963b6e38398a9c05b6f5eb3568b67d36afa1946d24703fd283de26f40",
+   "sha256": "b1e8c9f414c45bbaa7669f38edff4d6b792ad95c2ac60db71d72e3fb14889dde",
    "bbox": [
     57,
     29,
@@ -1995,7 +1995,7 @@
   },
   "oviraptor_walk_N_005": {
    "file": "oviraptor_walk_N_005.png",
-   "sha256": "50d333d2c6871955329779803f47873046e4647f35c4612834d542aab0e49b5f",
+   "sha256": "fda6d42a4944f21c562edb1345aac4b80b78291ce83d78d6484101da91c294b3",
    "bbox": [
     57,
     36,
@@ -2047,7 +2047,7 @@
   },
   "oviraptor_walk_E_005": {
    "file": "oviraptor_walk_E_005.png",
-   "sha256": "030565ccac3a44e1779b8de179da8a9837e4bed588dffec94304a82b87c9e894",
+   "sha256": "0d4b1f1dfd3f27f08aba35facda597bbf8bc536f21f706feeb7f8a929e6ee4ad",
    "bbox": [
     23,
     56,
@@ -2099,7 +2099,7 @@
   },
   "oviraptor_walk_W_005": {
    "file": "oviraptor_walk_W_005.png",
-   "sha256": "dd09ee5e1795a9c359147b56567cbcbeb6ae73accef63d2cfb0fedcc5e7b99bf",
+   "sha256": "0928e4d4c57e1fd88218bb0c859544001bf86ab0b6037876910b66f668604c70",
    "bbox": [
     34,
     56,
@@ -2151,7 +2151,7 @@
   },
   "oviraptor_run_S_000": {
    "file": "oviraptor_run_S_000.png",
-   "sha256": "c3360b20dccee20e03c6c25f8dee9610a5a983bd4e3b1ced755d3d14e9ce14a0",
+   "sha256": "4488a799b26895877fd49c374396e43819f78b8dad76b7e737abb16f2b875f61",
    "bbox": [
     57,
     28,
@@ -2203,7 +2203,7 @@
   },
   "oviraptor_run_N_000": {
    "file": "oviraptor_run_N_000.png",
-   "sha256": "01c014d6f8c43cdcc8640dabcef6097e88f3d7283c466039894febcefa95f241",
+   "sha256": "3e734e9bd0441febf0010d0b23e4e2d49e45bf9e11004a89264d8b24f348a18f",
    "bbox": [
     57,
     36,
@@ -2255,11 +2255,11 @@
   },
   "oviraptor_run_E_000": {
    "file": "oviraptor_run_E_000.png",
-   "sha256": "c1f39423ee9f00711876c7a87b5f6bad1c50d6b66c10a8753252c3ba508a377b",
+   "sha256": "6b3f319b366a31e64dbd5e55935f38b3e8ed60a9cb9c5249debb1d6dc6e39ff2",
    "bbox": [
     22,
     57,
-    111,
+    110,
     84
    ],
    "joints": {
@@ -2307,9 +2307,9 @@
   },
   "oviraptor_run_W_000": {
    "file": "oviraptor_run_W_000.png",
-   "sha256": "aad6cc54ef291b10bb33f4cc5de412c1641c7d332655b54f1b3bd1ec1c37f8f7",
+   "sha256": "0323e1d9cd120c8c8e5292ce317d96b5731b54591842b68db393493f3a56b5d7",
    "bbox": [
-    33,
+    34,
     57,
     122,
     84
@@ -2359,7 +2359,7 @@
   },
   "oviraptor_run_S_001": {
    "file": "oviraptor_run_S_001.png",
-   "sha256": "52d1dbac071406ef6d3e2229c9e42bae178cca047f3e26a32c874745ca4d9546",
+   "sha256": "86000486637aabb3e24fde3c73f635a5958a87bab2ee2ab5f3ea0c2f672735dc",
    "bbox": [
     57,
     28,
@@ -2411,7 +2411,7 @@
   },
   "oviraptor_run_N_001": {
    "file": "oviraptor_run_N_001.png",
-   "sha256": "6ed5f10ea294355de03606e1b9318dc5f812a0a6a337f2f533fd5a9c821185f9",
+   "sha256": "fe102dd15afc7b46cecb23d3481d84bdeebbc5b32c5ac17b81062ee02b79799b",
    "bbox": [
     57,
     36,
@@ -2463,11 +2463,11 @@
   },
   "oviraptor_run_E_001": {
    "file": "oviraptor_run_E_001.png",
-   "sha256": "76aacbb286a511846285cb3c84b95ea61a92c6deaee6415b511ccd19d5884441",
+   "sha256": "c23cf04eb2babab339a9a92cb7323ecde61c4bcaa9aa373a22f3f4d5f7d2eb27",
    "bbox": [
     22,
     56,
-    111,
+    110,
     84
    ],
    "joints": {
@@ -2515,7 +2515,7 @@
   },
   "oviraptor_run_W_001": {
    "file": "oviraptor_run_W_001.png",
-   "sha256": "9af6775596d10a279b98ee778db3af668124afd2f19815988c734af165fe197e",
+   "sha256": "5fa2ce6655d3f7bc39ad3f4f6a4e044ed0a31c52eec56c498c2f5ed47a0787a0",
    "bbox": [
     34,
     56,
@@ -2567,7 +2567,7 @@
   },
   "oviraptor_run_S_002": {
    "file": "oviraptor_run_S_002.png",
-   "sha256": "21db7d37c73533aa313a37427e7a6b45b7b89d003677f79e1547dc3479d2f4d4",
+   "sha256": "86fbe87b6974ed0ea70bd7c5a3a5a0c4b4dfd1e1d2ea1deb45460d2e2d7f9b6a",
    "bbox": [
     57,
     28,
@@ -2619,7 +2619,7 @@
   },
   "oviraptor_run_N_002": {
    "file": "oviraptor_run_N_002.png",
-   "sha256": "c7fd46407c284491dd409d0bb39c24a2120936363ab6e9cef61c81402645d341",
+   "sha256": "f001305b37c8801608d1d89fc38d85478a7321f136c5b8ed0702f7b98adeeae9",
    "bbox": [
     57,
     36,
@@ -2671,11 +2671,11 @@
   },
   "oviraptor_run_E_002": {
    "file": "oviraptor_run_E_002.png",
-   "sha256": "5a4fc72abb5b317eb6aeb6c5a77921b822b28dc52ea1e2f979988c96f28dd733",
+   "sha256": "c0166f12f6843a2e49e0a92a2e2b4490a535263b9a586737f40aed8693b61feb",
    "bbox": [
     23,
     56,
-    111,
+    110,
     84
    ],
    "joints": {
@@ -2723,7 +2723,7 @@
   },
   "oviraptor_run_W_002": {
    "file": "oviraptor_run_W_002.png",
-   "sha256": "708a24b63a4ee6aae67c555a6caee24d51c267713f4345b14950aea447b9b563",
+   "sha256": "e9fa208fd0f244aff666782709799807e754f67b5d4e3e51b08a143ff054b5d5",
    "bbox": [
     34,
     56,
@@ -2775,7 +2775,7 @@
   },
   "oviraptor_run_S_003": {
    "file": "oviraptor_run_S_003.png",
-   "sha256": "91045c941c5d24cef960e96785a5b0c275ce932a3f56953e7198602d3748d6a8",
+   "sha256": "122207f928ee96748cde023f1e272ce5bdbef21a63622aea3c8acdc0cfffbf38",
    "bbox": [
     57,
     28,
@@ -2827,7 +2827,7 @@
   },
   "oviraptor_run_N_003": {
    "file": "oviraptor_run_N_003.png",
-   "sha256": "161c13c01b1b4c4979e7c8a801471375c5ee419f1adae24a409fbadef22e0914",
+   "sha256": "6582251d77544760d300b5f6166f60b78ea82b12443b6c816bf853e4e6c4f4fc",
    "bbox": [
     57,
     36,
@@ -2879,11 +2879,11 @@
   },
   "oviraptor_run_E_003": {
    "file": "oviraptor_run_E_003.png",
-   "sha256": "0ff2212a4dc152a553bbfd532dc68f3beb4b293ffdbb4189c09c88f4897d5d3c",
+   "sha256": "4b0281f5556ab571d3cfb77fa1877be0caa35d986b462ae0074af02487d93a2a",
    "bbox": [
     22,
     57,
-    111,
+    110,
     84
    ],
    "joints": {
@@ -2931,9 +2931,9 @@
   },
   "oviraptor_run_W_003": {
    "file": "oviraptor_run_W_003.png",
-   "sha256": "d448862feb24dc6b6cde169f52b99f776c12ee0df6de8232ec51f4340141fbe6",
+   "sha256": "39d1f5ec32b221c828910cdaf46d140cc24204bf4f71d6ddfd86021400e4445a",
    "bbox": [
-    33,
+    34,
     57,
     122,
     84
@@ -2983,7 +2983,7 @@
   },
   "oviraptor_run_S_004": {
    "file": "oviraptor_run_S_004.png",
-   "sha256": "b75740e3040e730df4edeabae5f7cc327e4edd347bf7d6d27fd36749100480db",
+   "sha256": "bb7a5968331654670740d36428242d994b4ac2f989ae53a14a8d2686f7404460",
    "bbox": [
     57,
     28,
@@ -3035,7 +3035,7 @@
   },
   "oviraptor_run_N_004": {
    "file": "oviraptor_run_N_004.png",
-   "sha256": "38b13e2c7f54819bb37c23221491ef73bef1e4c05014bf818fc3a29f85637a79",
+   "sha256": "a58e66110ea1bf43ebc1b789b82f170e66b128ed7f59c5115587ac069a5c2f75",
    "bbox": [
     57,
     36,
@@ -3087,7 +3087,7 @@
   },
   "oviraptor_run_E_004": {
    "file": "oviraptor_run_E_004.png",
-   "sha256": "beb40989d1c773b6d02d75280026f8ce8d37c8bffa755467477f370884369d7d",
+   "sha256": "f72d79feb2b47982d1e2e0fa89a4663f66d7fc69b1b12e67372f1324b7e77d25",
    "bbox": [
     22,
     56,
@@ -3139,9 +3139,9 @@
   },
   "oviraptor_run_W_004": {
    "file": "oviraptor_run_W_004.png",
-   "sha256": "5b39a3313b34020532c434eed530279b71d61277ea5190539efaab9d11550fb4",
+   "sha256": "787c2c76fb9382ccbadba5e8ac5dd867075189abaddba25b7830bd67c028fe85",
    "bbox": [
-    33,
+    34,
     56,
     122,
     84
@@ -3191,7 +3191,7 @@
   },
   "oviraptor_run_S_005": {
    "file": "oviraptor_run_S_005.png",
-   "sha256": "8bc3c2e4a8c11affe0e8bc2aae6b8e1377dec2ea645800f968a0a2d481f1b8f7",
+   "sha256": "f45bea3e7deb0616902f5aaa0e81e01e756d83b98a745162437af60e9582b19a",
    "bbox": [
     57,
     28,
@@ -3243,7 +3243,7 @@
   },
   "oviraptor_run_N_005": {
    "file": "oviraptor_run_N_005.png",
-   "sha256": "a7af8c3e96854f6ec52d4acbe3ee84c2a02850e098e8cf7af5f7f33df30987af",
+   "sha256": "abf721ee2c16c46932ed28588128c81b8e5274eddf6a1f1250a9a86a92923f45",
    "bbox": [
     57,
     36,
@@ -3295,7 +3295,7 @@
   },
   "oviraptor_run_E_005": {
    "file": "oviraptor_run_E_005.png",
-   "sha256": "ef8d1cf9792fa8b8ca4ff81704385a02c8aa2d39f6e0de2fd2c57fb8563f490b",
+   "sha256": "7ba60c805c01cf98f8eb1ff99253d3ec772483a70923ae42a18d86654a2e619c",
    "bbox": [
     23,
     56,
@@ -3347,9 +3347,9 @@
   },
   "oviraptor_run_W_005": {
    "file": "oviraptor_run_W_005.png",
-   "sha256": "14ebcc95597beba954afdb87574ce55b0202fef32e737d6c08a9c2377a66f2c5",
+   "sha256": "be1a44cbf3c846c40cd4831b176c85e1a8f1447a8dd8c400aae8af52a07b0996",
    "bbox": [
-    33,
+    34,
     56,
     121,
     84
@@ -3399,7 +3399,7 @@
   },
   "oviraptor_attack_S_000": {
    "file": "oviraptor_attack_S_000.png",
-   "sha256": "229776d1a8ad96bd66e165ee53d98dc4298fa1b905cd72cce4bb509a8567b26a",
+   "sha256": "f0416d0edca641b2fcc7aebadcce5fcd7302ea64f6f55e6eac2e27978686cd68",
    "bbox": [
     57,
     28,
@@ -3451,7 +3451,7 @@
   },
   "oviraptor_attack_N_000": {
    "file": "oviraptor_attack_N_000.png",
-   "sha256": "fe3e72088b9b00cbab74bfca363f4a3a3c225ef6974a6ddd46ba0b310b46e1c9",
+   "sha256": "e0e1dc85084a3cb0c132d2a2e1b770af34a36d1a8eab79bf2f92cded6dda1144",
    "bbox": [
     57,
     36,
@@ -3503,7 +3503,7 @@
   },
   "oviraptor_attack_E_000": {
    "file": "oviraptor_attack_E_000.png",
-   "sha256": "54d381b2efba22bf3347603e77ac35a405c673dc53d7833b3cddb52829f7d935",
+   "sha256": "708990d5d95dc5409f7abd3bb78587ad8bea32e876e6f9c042b0be33bac4f0cb",
    "bbox": [
     22,
     56,
@@ -3555,7 +3555,7 @@
   },
   "oviraptor_attack_W_000": {
    "file": "oviraptor_attack_W_000.png",
-   "sha256": "585275baaa7cf06e0ec104b24acfbd3dcc1586787813c620cd30fecd5ca4ff72",
+   "sha256": "9b297371a92578d8f720a3c24fa7d75a579864cacdee8e1fb07809fa52a3c7ea",
    "bbox": [
     35,
     56,
@@ -3607,12 +3607,12 @@
   },
   "oviraptor_attack_S_001": {
    "file": "oviraptor_attack_S_001.png",
-   "sha256": "0292316a9ad097c4d3605ef63cd930a010b7cd5493ff0c366d4228052660932f",
+   "sha256": "d272a3190028f826dc16a62901733f73f65d21e8ffd84becf856d7fb224e8ba3",
    "bbox": [
     57,
     28,
     87,
-    94
+    95
    ],
    "joints": {
     "hind_L": [
@@ -3659,10 +3659,10 @@
   },
   "oviraptor_attack_N_001": {
    "file": "oviraptor_attack_N_001.png",
-   "sha256": "7f4acd1ae83c14a3ea7bb25c4a58d3ad6d17cbdb81a86478c22e5d7baade1227",
+   "sha256": "3aa8ac764faa4fe6334709684ec21849edf13ba0a6380a0a0e9fd9dfd377a5af",
    "bbox": [
     57,
-    36,
+    37,
     87,
     111
    ],
@@ -3711,7 +3711,7 @@
   },
   "oviraptor_attack_E_001": {
    "file": "oviraptor_attack_E_001.png",
-   "sha256": "b28b84d4c6eb0f4f2834e01009fa2845554f6a6ef8a5fad2947715e21b89ce9f",
+   "sha256": "18ab25a9247c38396c63255b1fbfd505631dd950d1be5b9d5e292aca4290f524",
    "bbox": [
     22,
     56,
@@ -3763,7 +3763,7 @@
   },
   "oviraptor_attack_W_001": {
    "file": "oviraptor_attack_W_001.png",
-   "sha256": "3e4aa894cecfb09cc2c20152212b2695583b6d3029c0706f9a46745c8251ebd4",
+   "sha256": "8e7afe36b618c4d6e9a0abdf7dcdd0b128e2b7449332237d7c9152d43f653604",
    "bbox": [
     37,
     56,
@@ -3815,7 +3815,7 @@
   },
   "oviraptor_attack_S_002": {
    "file": "oviraptor_attack_S_002.png",
-   "sha256": "ac163ead54d56d72088e21cc7cb2f43f296a64369cf97c737c1ffe19c0dc4683",
+   "sha256": "98c77fb86f5ecb200183d32dc21610e53c1011920a155ab8b1da806bb2594cfc",
    "bbox": [
     57,
     28,
@@ -3867,10 +3867,10 @@
   },
   "oviraptor_attack_N_002": {
    "file": "oviraptor_attack_N_002.png",
-   "sha256": "8a819b79eb1d3c3fb5ffb920a9e48c81ee884f8a9b91105fd3a600e06474d7fc",
+   "sha256": "c246da180a42853eb7d68654a87422dcd8bba7c8f914c0a1987893a08c86b3c6",
    "bbox": [
     57,
-    35,
+    36,
     87,
     110
    ],
@@ -3919,7 +3919,7 @@
   },
   "oviraptor_attack_E_002": {
    "file": "oviraptor_attack_E_002.png",
-   "sha256": "301555fdd1e1271f8fdf93c1a4b959a582c4d6989e0252958ea37d79ff8b7eb3",
+   "sha256": "3e06774b6b9d3cf2164dfcb86d8072972c7530287db50551d394f4093f1627ad",
    "bbox": [
     22,
     56,
@@ -3971,7 +3971,7 @@
   },
   "oviraptor_attack_W_002": {
    "file": "oviraptor_attack_W_002.png",
-   "sha256": "974f942d5ad5a6d393d6088e624258b04bdd1f547371db2692a0adc3256ac490",
+   "sha256": "6ba72e8f8222e694a4c675d704ec1c94be23b53a2a1f7df6b69da2813c0c38fc",
    "bbox": [
     34,
     56,
@@ -4023,12 +4023,12 @@
   },
   "oviraptor_attack_S_003": {
    "file": "oviraptor_attack_S_003.png",
-   "sha256": "6fffa87b23821333f0ea1102738cf47fdc382177a2409243bc3fa945c3ea5f36",
+   "sha256": "68b16997d8c569eed18dd5baa5b13bf407ef38437feee534849c0b8a73454a69",
    "bbox": [
     57,
     29,
     87,
-    107
+    106
    ],
    "joints": {
     "hind_L": [
@@ -4075,10 +4075,10 @@
   },
   "oviraptor_attack_N_003": {
    "file": "oviraptor_attack_N_003.png",
-   "sha256": "5b9476f71e1e1ee0966f32b19c9fdc802e96126c417857be35feeb20dfe4b48f",
+   "sha256": "750e133becf7c84fd895360a77563453d4d50ba862e307b9edcb518efa88b7c0",
    "bbox": [
     57,
-    34,
+    32,
     87,
     109
    ],
@@ -4127,7 +4127,7 @@
   },
   "oviraptor_attack_E_003": {
    "file": "oviraptor_attack_E_003.png",
-   "sha256": "f3c261a7eb2827ff51ae7dcd039fa87ae42cf3576dfbbf28c3740d77e416a305",
+   "sha256": "68ccab94c5ad1eba1c8884a0e750615f95902fac15b0a7f5ee3a91f81258ab1b",
    "bbox": [
     23,
     56,
@@ -4179,7 +4179,7 @@
   },
   "oviraptor_attack_W_003": {
    "file": "oviraptor_attack_W_003.png",
-   "sha256": "049764e8827f3b464a2931fcff03d43e2dd243917200a2098a83f0a72565c53f",
+   "sha256": "dccaef1a05fe2b9132d7611286ac293e69acd8dfacb3784e71dcbad6d13bf29c",
    "bbox": [
     28,
     56,
@@ -4231,12 +4231,12 @@
   },
   "oviraptor_attack_S_004": {
    "file": "oviraptor_attack_S_004.png",
-   "sha256": "87d12799b08af34e7fcce3545d92400d798ba4b37d125626fcfc1366dbd64984",
+   "sha256": "30f6a6eda4f0b855975764ed121490bc80c544a2f090fa2b2d420b26666a8137",
    "bbox": [
     57,
     28,
     87,
-    104
+    103
    ],
    "joints": {
     "hind_L": [
@@ -4283,10 +4283,10 @@
   },
   "oviraptor_attack_N_004": {
    "file": "oviraptor_attack_N_004.png",
-   "sha256": "e5465c5f6fb1561f722f52a791401977a9f7c069356ed206cde4f6e85869dfc0",
+   "sha256": "a2b9030776d3670e36dc871041ab15ba45d6064a85faa0ff3499aa972d897ae0",
    "bbox": [
     57,
-    35,
+    34,
     87,
     110
    ],
@@ -4335,11 +4335,11 @@
   },
   "oviraptor_attack_E_004": {
    "file": "oviraptor_attack_E_004.png",
-   "sha256": "bbffd8939f36bf312c1df490c2f8dc0ce3d7568426c69c6d881d5894dc028683",
+   "sha256": "f533acd538ac1566167e74e42cb80ec1d8ccd0efddd69c1723f2d555f53fb58b",
    "bbox": [
     23,
     56,
-    114,
+    113,
     84
    ],
    "joints": {
@@ -4387,9 +4387,9 @@
   },
   "oviraptor_attack_W_004": {
    "file": "oviraptor_attack_W_004.png",
-   "sha256": "c41cc8efed6df0f05c6326039a44f05b71aeac560bb8a196f8a56bddeff5e61a",
+   "sha256": "df9a07f713eee350ef4d42fe2a844440b6493c63cdf011ee8b53f62ae12c0a1d",
    "bbox": [
-    30,
+    31,
     56,
     121,
     84
@@ -4439,7 +4439,7 @@
   },
   "oviraptor_attack_S_005": {
    "file": "oviraptor_attack_S_005.png",
-   "sha256": "e615ebda45f360d222ac22ac255278ed507938ad868290b9cedb6f340ad05e0b",
+   "sha256": "e16ec3e2bbaa855103301fcdb608410cee7b239d1ab0115fcf01f0f14ea1da6c",
    "bbox": [
     57,
     28,
@@ -4491,7 +4491,7 @@
   },
   "oviraptor_attack_N_005": {
    "file": "oviraptor_attack_N_005.png",
-   "sha256": "ab2327e3b6cc52ab9a50c026c7ec96c7df4d7258b2004fa1dc6d9d2d7a0dc92f",
+   "sha256": "c768192ea7c60a95751d107a9f9c4e67fe0d04980e82f55ba06934bd73b9005e",
    "bbox": [
     57,
     36,
@@ -4543,11 +4543,11 @@
   },
   "oviraptor_attack_E_005": {
    "file": "oviraptor_attack_E_005.png",
-   "sha256": "43a6034efdf519c44a69ce7f3b6f5335527bed96de97c565e5f0a56e1d926786",
+   "sha256": "3d1a023dbc0782ea9cea0cb4bfc7310fff75284fee1aa5e2c19aecb1e13c506a",
    "bbox": [
     22,
     56,
-    111,
+    110,
     84
    ],
    "joints": {
@@ -4595,9 +4595,9 @@
   },
   "oviraptor_attack_W_005": {
    "file": "oviraptor_attack_W_005.png",
-   "sha256": "251d0dcab9f06e98b349442004cd811e1f5928e38fe13dca5444859226648af2",
+   "sha256": "a926eccfb03ea8d9c7ca7b82e947f2f73f74469e5961880682671008007698bc",
    "bbox": [
-    33,
+    34,
     56,
     122,
     84
@@ -4647,7 +4647,7 @@
   },
   "oviraptor_hurt_S_000": {
    "file": "oviraptor_hurt_S_000.png",
-   "sha256": "26b277f98b99a6812b6c515385f87eddc137fef91e8df76c8e7a045e3ab941ba",
+   "sha256": "ad19ff1c1be0eb349077c8ea145b1761738a458bee78ceae45551a3114680186",
    "bbox": [
     57,
     28,
@@ -4699,7 +4699,7 @@
   },
   "oviraptor_hurt_N_000": {
    "file": "oviraptor_hurt_N_000.png",
-   "sha256": "109a026904bc0aba5290811a8fd6d2311dba8e0c5097def3c6b62ae1d595b02f",
+   "sha256": "1e5ca2c7e4ec203fac894f7a1bfd9bbfac602b4f09e4e1b91213fca205f44cee",
    "bbox": [
     57,
     37,
@@ -4751,7 +4751,7 @@
   },
   "oviraptor_hurt_E_000": {
    "file": "oviraptor_hurt_E_000.png",
-   "sha256": "a0bf33645685c057341c4f8834677c337c9e031c218df346ef4a57648bfd841e",
+   "sha256": "aee71cd6866a4f78fe5f9b4465dad197c3ce6421b884ead1caf4fe699622605d",
    "bbox": [
     21,
     56,
@@ -4803,7 +4803,7 @@
   },
   "oviraptor_hurt_W_000": {
    "file": "oviraptor_hurt_W_000.png",
-   "sha256": "a76e245067ac368bde841822709b7b7f0f6befb6eac226f6b2a9673243c3f1e5",
+   "sha256": "b6820f7ec2bbe420e90c225f5539c1303c9eeef5f4e548ae33f9a94fa020b7f8",
    "bbox": [
     38,
     56,
@@ -4855,12 +4855,12 @@
   },
   "oviraptor_hurt_S_001": {
    "file": "oviraptor_hurt_S_001.png",
-   "sha256": "a9241844467854e7f18e177589b7b8fc7046bd5c09d5159b3f8c5df8355b7f30",
+   "sha256": "18413073b872bc049a257c93b2918a1cd722886d25a6fa0e1251e79e9477ace6",
    "bbox": [
     57,
     28,
     87,
-    96
+    97
    ],
    "joints": {
     "hind_L": [
@@ -4907,10 +4907,10 @@
   },
   "oviraptor_hurt_N_001": {
    "file": "oviraptor_hurt_N_001.png",
-   "sha256": "5a4f964b5f9a74fb1c23e7433a2d3f7ea9d8d94206be5e8b5e75e3930c8fad35",
+   "sha256": "0516f9415813c42ca13b19b38e318f3bd8569f3e27ed88b470ba1cd96bf054bb",
    "bbox": [
     57,
-    36,
+    37,
     87,
     112
    ],
@@ -4959,11 +4959,11 @@
   },
   "oviraptor_hurt_E_001": {
    "file": "oviraptor_hurt_E_001.png",
-   "sha256": "b55d8c5b8f64457aa04eebcdebcdeb657837f49615bec9a8f02870840eeb9945",
+   "sha256": "73afd96106bf1910ec8831c3f78d63f1561da29b21734deec7c7d6de525a4686",
    "bbox": [
     21,
     56,
-    109,
+    108,
     84
    ],
    "joints": {
@@ -5011,9 +5011,9 @@
   },
   "oviraptor_hurt_W_001": {
    "file": "oviraptor_hurt_W_001.png",
-   "sha256": "6adb561b81cd7c100931ad3d3ee2ba428224b0a234212c6cb86890b621aedbd5",
+   "sha256": "38b639633972cab7638bb7398b7bdd2a85b48053f9f1b80cb4443d27b271fe84",
    "bbox": [
-    35,
+    36,
     56,
     122,
     84
@@ -5063,7 +5063,7 @@
   },
   "oviraptor_death_S_000": {
    "file": "oviraptor_death_S_000.png",
-   "sha256": "e640cde44066e3e9fddac66745285b7177df916a7bd6c8d45045d00a98b9c139",
+   "sha256": "6a2e05f058e3902b186668ba3b2278067b540364372bf7481831e855d3b38894",
    "bbox": [
     57,
     28,
@@ -5073,7 +5073,7 @@
   },
   "oviraptor_death_N_000": {
    "file": "oviraptor_death_N_000.png",
-   "sha256": "20077085e987437b9300eb3313decb2a8051ddd2451d6b87a4d4accc729fcfb8",
+   "sha256": "5cd91f6e8742c04b53ef62eabcd9e1f38b3708d426a95da43cb34d5bfc5f850b",
    "bbox": [
     57,
     36,
@@ -5083,7 +5083,7 @@
   },
   "oviraptor_death_E_000": {
    "file": "oviraptor_death_E_000.png",
-   "sha256": "16e19c36d443dc52ef3ef96628ad59fbd6168472c9b5a42d36e8c18d05d096fd",
+   "sha256": "17acd014a43e272a26272b021fcc33619f7f592fde2fce1f911ed50787cb7561",
    "bbox": [
     22,
     56,
@@ -5093,7 +5093,7 @@
   },
   "oviraptor_death_W_000": {
    "file": "oviraptor_death_W_000.png",
-   "sha256": "ac6dcfdedc0891715412630e418691d8766eac1200f1261bde3af655cf7ebb99",
+   "sha256": "17c51d2bb04764c0ab53e4f825d58e6898278fbdcaee26664610578ff5459a9e",
    "bbox": [
     34,
     56,
@@ -5103,27 +5103,27 @@
   },
   "oviraptor_death_S_001": {
    "file": "oviraptor_death_S_001.png",
-   "sha256": "9dbc051b61d30604189c5dffcb55390fc7b9c426c28c667573e825ba061e2ddc",
+   "sha256": "a888f7b6241843d648e07d23926ec58b4c0b37f27320e91cf8861fc3be285d82",
    "bbox": [
     57,
     28,
     88,
-    98
+    99
    ]
   },
   "oviraptor_death_N_001": {
    "file": "oviraptor_death_N_001.png",
-   "sha256": "4d529569e6a03ac126736d06c66712ffec03b4c18914b94f9e425f05188f9531",
+   "sha256": "0a197d188de34669461e313d2a47f0cf39d15055be8f765508a244b331c5d408",
    "bbox": [
     56,
-    35,
+    36,
     87,
     111
    ]
   },
   "oviraptor_death_E_001": {
    "file": "oviraptor_death_E_001.png",
-   "sha256": "e1f17d24c8a5768625fc0a47a5d18be3fcc49b32929b36c1c9d555a28896337b",
+   "sha256": "172bb4d63498efa4f83d324d8c2ba271675db330b3cf08bf7ed88312e7734372",
    "bbox": [
     22,
     56,
@@ -5133,7 +5133,7 @@
   },
   "oviraptor_death_W_001": {
    "file": "oviraptor_death_W_001.png",
-   "sha256": "722820f534916f0754020aa5ed1e5a82371d2dc9453c29804694127faf489cf8",
+   "sha256": "514bb92563b648bb6d1c3c8e932b7df9287d927880d54aa48897155278e4710a",
    "bbox": [
     34,
     57,
@@ -5143,17 +5143,17 @@
   },
   "oviraptor_death_S_002": {
    "file": "oviraptor_death_S_002.png",
-   "sha256": "50ef386574ad99c97fdd6666f4cfd3a97b5e157abddd972d9cd397860e971a3f",
+   "sha256": "5c8a06800706c02987d4db23fad7039c0fa78561c2a34b765c1620af7a7b6282",
    "bbox": [
     59,
     29,
     90,
-    97
+    98
    ]
   },
   "oviraptor_death_N_002": {
    "file": "oviraptor_death_N_002.png",
-   "sha256": "eeb83947d96a898f839a2a2fb210804d2ee0f7409d3b550b2d0e46bce74692cd",
+   "sha256": "dfd7520d81f13cf66eae1f5b2880fa1a8c9c63221a869be52149dcfbf6c712df",
    "bbox": [
     54,
     36,
@@ -5163,17 +5163,17 @@
   },
   "oviraptor_death_E_002": {
    "file": "oviraptor_death_E_002.png",
-   "sha256": "4fb23cbd52318cdfea7e8a431ea74e3d41617b629e90901ed8bd451119ef9f2a",
+   "sha256": "796bf103a25d7a3d371b1b03475d709c6c8703d02af9fc7042217987dc0c0531",
    "bbox": [
     22,
-    54,
+    53,
     109,
     80
    ]
   },
   "oviraptor_death_W_002": {
    "file": "oviraptor_death_W_002.png",
-   "sha256": "25b93ff65c0333bfd0a039037ee86f779441e8c8e7ac1db9463fec9965d00438",
+   "sha256": "d14b95c1ee53c9567d124d9345e44149a9083dbc6bd3c302f9a8bd76a3dec1a6",
    "bbox": [
     35,
     59,
@@ -5183,19 +5183,19 @@
   },
   "oviraptor_death_S_003": {
    "file": "oviraptor_death_S_003.png",
-   "sha256": "ac83063e7b58d0ab79bad72da109a3f5ca8aecba385e1a003d95395920aa5dd4",
+   "sha256": "c9d2502c8950c303e55ad6d0daa50df5b67f9e351e0589f0ee1f8ba7aa8efebd",
    "bbox": [
     64,
     29,
-    95,
+    96,
     97
    ]
   },
   "oviraptor_death_N_003": {
    "file": "oviraptor_death_N_003.png",
-   "sha256": "27156794cd0c4af5566d6857b21b0046f5a0e704de073ea92eae6b3fa2dcdc0d",
+   "sha256": "5349a7612dcff163ad3ad076b1cdd03c5cfcd1fc11e6e5cd1d0482678c9d87e1",
    "bbox": [
-    49,
+    48,
     39,
     80,
     112
@@ -5203,17 +5203,17 @@
   },
   "oviraptor_death_E_003": {
    "file": "oviraptor_death_E_003.png",
-   "sha256": "53bc1aa82ca1c000955463e08ffa90375d5767f779978965a3953f8361e9fe3b",
+   "sha256": "8fd38e19e2c05b63f9667889651aea14db1020719f678410b73e4bff20fc2074",
    "bbox": [
     22,
-    48,
+    47,
     107,
     75
    ]
   },
   "oviraptor_death_W_003": {
    "file": "oviraptor_death_W_003.png",
-   "sha256": "2d9ef3a89e820e1840266fd22040901ebcb021e70b295dacc50385a304e114e4",
+   "sha256": "46f7cd729286ef40bb150d47af364684c517cf4e0fa326277841b1d6f9bad0b8",
    "bbox": [
     37,
     61,
@@ -5223,19 +5223,19 @@
   },
   "oviraptor_death_S_004": {
    "file": "oviraptor_death_S_004.png",
-   "sha256": "433cf376c4f453513e29e146f86fb5ae2e287ac3345358cd89d13bd1f9c4ccd0",
+   "sha256": "60232bf5b8c493db4ea8aa9648601e233c6e16fc400465430bde60a7c32e1160",
    "bbox": [
     69,
     31,
-    100,
+    102,
     98
    ]
   },
   "oviraptor_death_N_004": {
    "file": "oviraptor_death_N_004.png",
-   "sha256": "9c0c424c324fd7ee0487f3f96cba5b148fd8b00749b7c1e12633e5656687548e",
+   "sha256": "03e5a109b034ec3f9d881cc5432aa3644567aaf20195626808ebf8e5ed143298",
    "bbox": [
-    44,
+    42,
     44,
     75,
     113
@@ -5243,39 +5243,39 @@
   },
   "oviraptor_death_E_004": {
    "file": "oviraptor_death_E_004.png",
-   "sha256": "ff26998002b13f714ca7523ae20f6827bf425da8f2b31e79bbbbd660e1b5a7a9",
+   "sha256": "6a5a93b05a7a8ac135806596470305b492853b06310b786696e4ef3e8f5cb21e",
    "bbox": [
     22,
-    47,
-    104,
+    46,
+    105,
     76
    ]
   },
   "oviraptor_death_W_004": {
    "file": "oviraptor_death_W_004.png",
-   "sha256": "68b75135a2bd530690c20d6924496e22f34808cc6c5be8f41b61615b5a3bd992",
+   "sha256": "3c699e69afbf5d121752bc6688adcdd0afc013bb2533ca95bd49df5ad34527c6",
    "bbox": [
-    40,
+    39,
     64,
     122,
-    94
+    95
    ]
   },
   "oviraptor_death_S_005": {
    "file": "oviraptor_death_S_005.png",
-   "sha256": "c80c8e834bd1f92e730ce99e8a12c83a12187cd410203f78f8dafd1bf69e44ca",
+   "sha256": "28532c7b96811adaf31e099e0be9e4fbc093fb8f4d1d35520bc16d68e6d2eeb7",
    "bbox": [
     71,
     31,
-    101,
+    102,
     98
    ]
   },
   "oviraptor_death_N_005": {
    "file": "oviraptor_death_N_005.png",
-   "sha256": "f1bde16aa611d51480c3a2edc1ab83f1c417ec0a9c73f017cea20eb6a224117b",
+   "sha256": "f2b820a139be2a9d6c29f15057bc7eea2dcc0c4716544a397da4ab2f16db83bc",
    "bbox": [
-    43,
+    42,
     46,
     73,
     113
@@ -5283,22 +5283,22 @@
   },
   "oviraptor_death_E_005": {
    "file": "oviraptor_death_E_005.png",
-   "sha256": "b1286a7bdd0655a8b407768fc23a392442ea77a5470d5be40e78958bf8f8f0ac",
+   "sha256": "5a8d60978bfac66f83c7ce5fb1eaad8d7b38f7203351ca8981f7326ea92a7d3a",
    "bbox": [
     22,
-    48,
-    103,
+    47,
+    104,
     78
    ]
   },
   "oviraptor_death_W_005": {
    "file": "oviraptor_death_W_005.png",
-   "sha256": "9b428774e36cbe34977bd62fff058d23ed71bea03f607f96f4b71d8a8602ccf8",
+   "sha256": "ae32667ee24f8fe9f363c293097cdb246d570d081461a7c399ae80a1df695bb5",
    "bbox": [
-    41,
+    40,
     66,
     122,
-    96
+    97
    ]
   }
  }

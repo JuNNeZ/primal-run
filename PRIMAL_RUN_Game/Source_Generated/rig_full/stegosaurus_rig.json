@@ -71,12 +71,12 @@
  "frames": {
   "stegosaurus_idle_S_000": {
    "file": "stegosaurus_idle_S_000.png",
-   "sha256": "66fd56bf6fae814e0be1d96e9272ef1e94157b67d82f5834389be4d3d5873ed7",
+   "sha256": "fd9e2da9e53513db4420cd880b458ba705781c0346097c4ab5aa3d64f84cb181",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -115,10 +115,10 @@
   },
   "stegosaurus_idle_N_000": {
    "file": "stegosaurus_idle_N_000.png",
-   "sha256": "78f97b9266d2dee2c9de6b7c8ecdaa58a13baa8da01d87517f13d20f0c7e5b74",
+   "sha256": "856b18b1a6400fc812a0798ce8f5fb7cf3d7e2060b566a97d74c18f34327413a",
    "bbox": [
     48,
-    26,
+    24,
     96,
     119
    ],
@@ -159,11 +159,11 @@
   },
   "stegosaurus_idle_E_000": {
    "file": "stegosaurus_idle_E_000.png",
-   "sha256": "9b10e0a67cdb1fae4e030a000101de14074349dbb855f603ca24bec2a1b94efc",
+   "sha256": "c9a602bd434135ce701d6adc7f11d41ea12ec5e35f17d24293ec3d9532fffac0",
    "bbox": [
     12,
     50,
-    126,
+    127,
     92
    ],
    "joints": {
@@ -203,9 +203,9 @@
   },
   "stegosaurus_idle_W_000": {
    "file": "stegosaurus_idle_W_000.png",
-   "sha256": "3803799b7baee028eb299415f5cedc06000130cbdce4c3973f567853ca428595",
+   "sha256": "b2608a0ca40ec890ab7cf0682b5d5f03f229908e35e66b240a0535f9377405a2",
    "bbox": [
-    18,
+    17,
     50,
     132,
     92
@@ -247,12 +247,12 @@
   },
   "stegosaurus_idle_S_001": {
    "file": "stegosaurus_idle_S_001.png",
-   "sha256": "e36d39ae4d2785ed1f14980863b9b81704b5d577dc806a33f6bafdcf90f83111",
+   "sha256": "1739c7a2f218d6d03b3b71c030b490cf6bc304df27c3ede82f87109625dc5e67",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -291,10 +291,10 @@
   },
   "stegosaurus_idle_N_001": {
    "file": "stegosaurus_idle_N_001.png",
-   "sha256": "a810da66759580792c64a72bcf61264660f7fc3cd9368e129ea6820ff0b9ab84",
+   "sha256": "ef60895d6b7f874b9e79fb1c57f5903ad48fd5033b960ae4d134a0739df754e3",
    "bbox": [
     48,
-    25,
+    24,
     96,
     119
    ],
@@ -335,11 +335,11 @@
   },
   "stegosaurus_idle_E_001": {
    "file": "stegosaurus_idle_E_001.png",
-   "sha256": "e323457a10f47907532401d49b9094b77460d91071ef82bab79a31e2e7f7dc47",
+   "sha256": "8b27a90d332838c18d976174645a57ff503505e8031dd070d1ea218450c31741",
    "bbox": [
     12,
     50,
-    126,
+    128,
     92
    ],
    "joints": {
@@ -379,9 +379,9 @@
   },
   "stegosaurus_idle_W_001": {
    "file": "stegosaurus_idle_W_001.png",
-   "sha256": "9dde9801a5af7405bc534d7eb070e539d97c3c16cd2f8220d21a0b0a508bc2e8",
+   "sha256": "ffd8aa678895724f76a6d0a1d80de2668cfc124aa90cdef150e8d54e8f61e871",
    "bbox": [
-    18,
+    16,
     50,
     132,
     92
@@ -423,12 +423,12 @@
   },
   "stegosaurus_idle_S_002": {
    "file": "stegosaurus_idle_S_002.png",
-   "sha256": "c10b94339426cf2b99ed3f2fcfff66de051e97b08e4a177c27eca58a71253143",
+   "sha256": "14766de47d2a91644630580d8a259866dbba7ec597d55079b77e7d41326e408e",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -467,10 +467,10 @@
   },
   "stegosaurus_idle_N_002": {
    "file": "stegosaurus_idle_N_002.png",
-   "sha256": "ec3345b6700d108e1fdf099e02723a8cc755b599ea6b3b8b5abca5b3f8fb3354",
+   "sha256": "aa23c53524a21e8e091782045c44f9063893628b856238bc836e8e265f459d3e",
    "bbox": [
     48,
-    26,
+    24,
     96,
     119
    ],
@@ -511,11 +511,11 @@
   },
   "stegosaurus_idle_E_002": {
    "file": "stegosaurus_idle_E_002.png",
-   "sha256": "dbfb9899f66e7cb38f9937b4a0c386ce5e10ee7066d1985633f013b31740e9e3",
+   "sha256": "e3935cda239bd0b2ca5a178fcaf33b0ebdad44d1d92a2011882663f161053012",
    "bbox": [
     12,
     50,
-    126,
+    128,
     92
    ],
    "joints": {
@@ -555,9 +555,9 @@
   },
   "stegosaurus_idle_W_002": {
    "file": "stegosaurus_idle_W_002.png",
-   "sha256": "bd6e1028d719fd33782122ad436516653b69e8da7e72f7acad6a67ee24d95cce",
+   "sha256": "bb117de64bc193799f884760818e1f9fb78c21afcecfa9f235869067b2679e7c",
    "bbox": [
-    18,
+    16,
     50,
     132,
     92
@@ -599,12 +599,12 @@
   },
   "stegosaurus_idle_S_003": {
    "file": "stegosaurus_idle_S_003.png",
-   "sha256": "9a82314e74eacb1ef9f09a67a634e0622b11a73eedae0d4f875b00721b7b98bf",
+   "sha256": "e076f7bf681fb25f694cbc769943786e5a47e587baacc7fbc28b1858fe711668",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -643,10 +643,10 @@
   },
   "stegosaurus_idle_N_003": {
    "file": "stegosaurus_idle_N_003.png",
-   "sha256": "de970f4825bbc5e00c43ba36e0d71928c17d9409c96a53488f102dfadb129a30",
+   "sha256": "fee4abc7f7e73a34a4755e1345047c8bf678d9372a68f3cd9ed2d588381c542c",
    "bbox": [
     48,
-    26,
+    25,
     96,
     119
    ],
@@ -687,11 +687,11 @@
   },
   "stegosaurus_idle_E_003": {
    "file": "stegosaurus_idle_E_003.png",
-   "sha256": "74c7fcdc992b37fa2388214228779d3ad25827edb3a9bd48b2965a5b5feb2306",
+   "sha256": "210f05458210abdd668c02887443875a3847fc365af937e58633e4acc110b504",
    "bbox": [
     12,
     50,
-    126,
+    128,
     92
    ],
    "joints": {
@@ -731,9 +731,9 @@
   },
   "stegosaurus_idle_W_003": {
    "file": "stegosaurus_idle_W_003.png",
-   "sha256": "541e282008fdaebcbb5443bebb5c71ede5aaa5269edd553506748f7f5eeff172",
+   "sha256": "ac193197968f6885f4aca90903d2622047d8302e872244b73642c5b251ad94d0",
    "bbox": [
-    18,
+    16,
     50,
     132,
     92
@@ -775,12 +775,12 @@
   },
   "stegosaurus_walk_S_000": {
    "file": "stegosaurus_walk_S_000.png",
-   "sha256": "c63af31fb8fe55bcaa06c549476f8156d51dc1acdfde5c4d59844c6545d35a18",
+   "sha256": "c1917d691c860088ed46a5c645df0cdb5a919d3e062c60357bd87cc8c902b5bd",
    "bbox": [
     48,
     21,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -819,10 +819,10 @@
   },
   "stegosaurus_walk_N_000": {
    "file": "stegosaurus_walk_N_000.png",
-   "sha256": "b1d2191b1cead4cdeb255810e2b6e2423672238ffcd05084076f7927097ec5ed",
+   "sha256": "12ca6bc5c3fe0e4d783d2cb39d03784789bd7b341419c60546ca271d292a97d9",
    "bbox": [
     48,
-    26,
+    24,
     96,
     119
    ],
@@ -863,11 +863,11 @@
   },
   "stegosaurus_walk_E_000": {
    "file": "stegosaurus_walk_E_000.png",
-   "sha256": "c3ef0d98a6fb079ba9069b5ea74fee7930e6008332735609317c0e79ab010d7e",
+   "sha256": "051024646adf8ae702174528c2aa759cb1f65d677a05dfd29aa7e350a3fd43c7",
    "bbox": [
     12,
     50,
-    126,
+    128,
     91
    ],
    "joints": {
@@ -907,9 +907,9 @@
   },
   "stegosaurus_walk_W_000": {
    "file": "stegosaurus_walk_W_000.png",
-   "sha256": "924742dd6aea387aad9e158a788a20e946dedb0d399a4d109826dea3bc60017a",
+   "sha256": "d81a0327d68b7724df1c968cb5da25fbc816742e183036bbb8d56409301633a3",
    "bbox": [
-    18,
+    16,
     50,
     132,
     92
@@ -951,12 +951,12 @@
   },
   "stegosaurus_walk_S_001": {
    "file": "stegosaurus_walk_S_001.png",
-   "sha256": "f23aadabb0eee7741150b2eafa759fa9a8e7cffe4c26361407a41bbb7989cf12",
+   "sha256": "26e7bacb560cfa2a13fae45a8881dd7653b22199d6c038bf20131a96a17341e1",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -995,10 +995,10 @@
   },
   "stegosaurus_walk_N_001": {
    "file": "stegosaurus_walk_N_001.png",
-   "sha256": "bc79209772e63123b39dc9839f895238de0308b43678621be659ef42c3fd8534",
+   "sha256": "dee287f0763719ddf3d691643e57f6c124267308f8ed989acd71139b5bfe2552",
    "bbox": [
     48,
-    26,
+    24,
     96,
     119
    ],
@@ -1039,11 +1039,11 @@
   },
   "stegosaurus_walk_E_001": {
    "file": "stegosaurus_walk_E_001.png",
-   "sha256": "d0a160097e507b5e21c9cfed9e47a20de61c0159a11c1abec6504fe738fb0c48",
+   "sha256": "4351bc59224621843d0fe669c651df94111f3449177bd3a84874b77836902101",
    "bbox": [
     12,
     50,
-    126,
+    128,
     91
    ],
    "joints": {
@@ -1083,9 +1083,9 @@
   },
   "stegosaurus_walk_W_001": {
    "file": "stegosaurus_walk_W_001.png",
-   "sha256": "19f389c4f4221ddc943be61710df0efb559885dfad76e0f91752b71b91bead50",
+   "sha256": "b9a3e94c99d1db5bf9120904a7bdc9b0bf08379790d82294ea142d27d677b34a",
    "bbox": [
-    19,
+    17,
     49,
     132,
     92
@@ -1127,12 +1127,12 @@
   },
   "stegosaurus_walk_S_002": {
    "file": "stegosaurus_walk_S_002.png",
-   "sha256": "bcccd6c6ef576680075c4d69d4039efc6a41ea957395b9e1d0c745f023a1b082",
+   "sha256": "4cb87016eb20a6de31ce89cbb4ec96d6437fa201f369e7af28750608114ae354",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -1171,10 +1171,10 @@
   },
   "stegosaurus_walk_N_002": {
    "file": "stegosaurus_walk_N_002.png",
-   "sha256": "09f710f0b93643ea3eea26f170697918ceb605af5f9c62ca9611d26e5d86e387",
+   "sha256": "3879a9935d231879d6a285fe5e7269c3268f1dc0fe2f1cc36085080b5f51b1ab",
    "bbox": [
     48,
-    26,
+    24,
     96,
     118
    ],
@@ -1215,11 +1215,11 @@
   },
   "stegosaurus_walk_E_002": {
    "file": "stegosaurus_walk_E_002.png",
-   "sha256": "400168979021e87eee6e2d4d88577b24d453b3a8fec6f63f4ef805d00716b0c0",
+   "sha256": "f98a0a8e89ea0200f39d00f3f75f65474f534dde959f1cf3ccebd998697e0e98",
    "bbox": [
     13,
     50,
-    126,
+    128,
     92
    ],
    "joints": {
@@ -1259,9 +1259,9 @@
   },
   "stegosaurus_walk_W_002": {
    "file": "stegosaurus_walk_W_002.png",
-   "sha256": "aee3c200d16f39e1df021911f6efb99d1b06b9047c6fdfb6f6a430f47528599a",
+   "sha256": "b8e359c28a7210dd809d28fc274e06a6ee6611dbd60fe70c86a83fdb46d7dba7",
    "bbox": [
-    19,
+    17,
     50,
     131,
     92
@@ -1303,12 +1303,12 @@
   },
   "stegosaurus_walk_S_003": {
    "file": "stegosaurus_walk_S_003.png",
-   "sha256": "d2d43b83b1c22106dd1135b2f7905022960a506f68294567e854f71ee58d3760",
+   "sha256": "cf2cab8f8134c22b7b416daecd24954827e892c4d6c765c67db9d9f78f702d0e",
    "bbox": [
     48,
     21,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -1347,10 +1347,10 @@
   },
   "stegosaurus_walk_N_003": {
    "file": "stegosaurus_walk_N_003.png",
-   "sha256": "b3be9b1d567085e0a4f87115b38326b7208d38490bf868e0359051939324f3d3",
+   "sha256": "3aa55299b362297469bb0466a838d5df864dedb70a3b89db63a51852ec333ccd",
    "bbox": [
     48,
-    26,
+    24,
     96,
     119
    ],
@@ -1391,11 +1391,11 @@
   },
   "stegosaurus_walk_E_003": {
    "file": "stegosaurus_walk_E_003.png",
-   "sha256": "e4fa7b7d258d2f4b808b5ecf40029cdaea5a6c8c098ead6e3e7b8f5bab5ffdf4",
+   "sha256": "fafced7059150222e6c18899c982cc040066ac0cbad4f271c6702ab3921923d5",
    "bbox": [
     12,
     50,
-    126,
+    128,
     92
    ],
    "joints": {
@@ -1435,9 +1435,9 @@
   },
   "stegosaurus_walk_W_003": {
    "file": "stegosaurus_walk_W_003.png",
-   "sha256": "7025e52371700abce8aa0b43cc8c2d126bdeafb58122524ddc569d49c26d3d88",
+   "sha256": "083bc251fa7d322e8001d2d1dd1b7ca4aabfbae0eba8920b3252f40143c808c4",
    "bbox": [
-    18,
+    16,
     50,
     132,
     91
@@ -1479,12 +1479,12 @@
   },
   "stegosaurus_walk_S_004": {
    "file": "stegosaurus_walk_S_004.png",
-   "sha256": "9c3cd83ace82200dbc117348751fb857fad35afdad3bb23c44f6487fb5302217",
+   "sha256": "9614de07e3a124025e24dbe989d95799d7388fdaff3284747793d066a7d69ff1",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -1523,10 +1523,10 @@
   },
   "stegosaurus_walk_N_004": {
    "file": "stegosaurus_walk_N_004.png",
-   "sha256": "718e414a1f0420641decf6b46b0e572da3813ad97418aed1231b21af40b41cb7",
+   "sha256": "6eb679c64c5edcbe51cad9f85f051b2148a1f0d1ff81869ac240c9735eb51aa5",
    "bbox": [
     48,
-    26,
+    24,
     96,
     119
    ],
@@ -1567,11 +1567,11 @@
   },
   "stegosaurus_walk_E_004": {
    "file": "stegosaurus_walk_E_004.png",
-   "sha256": "a8e361ebbe655d83c2013059a65a3a05dbeb63eb974e54a22ff009bd1206fec0",
+   "sha256": "c2b4ca126617c6cf43091badbc5f8bd5dfe0024f437b0ef295a58f46753b29f9",
    "bbox": [
     12,
     49,
-    125,
+    127,
     92
    ],
    "joints": {
@@ -1611,9 +1611,9 @@
   },
   "stegosaurus_walk_W_004": {
    "file": "stegosaurus_walk_W_004.png",
-   "sha256": "33c68004c8027a7b43dd84fa1beecd91df5f883d0b26b287e2846c09604a0769",
+   "sha256": "2b7d41e09ea99d948aa9e695fae69f544449cac535238f11135223c677072187",
    "bbox": [
-    18,
+    16,
     50,
     132,
     91
@@ -1655,12 +1655,12 @@
   },
   "stegosaurus_walk_S_005": {
    "file": "stegosaurus_walk_S_005.png",
-   "sha256": "ace93fa7aecf8ad37e26bf0d0f43cb6f64ec28aaffe8b71eefa55e8ef6d0e135",
+   "sha256": "ae87e3c72eafc01f8197a36f2b0ad57324a61aed7641299fe1f7133f14fa2c67",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -1699,10 +1699,10 @@
   },
   "stegosaurus_walk_N_005": {
    "file": "stegosaurus_walk_N_005.png",
-   "sha256": "65b17e136a33d7638eda63e39599e219db263802e708400244cdba300fc0c4e5",
+   "sha256": "9340199cd68f87833f6b2154b5a2947b900bb43c728fdf6b70edcaeca30683ce",
    "bbox": [
     48,
-    26,
+    24,
     96,
     118
    ],
@@ -1743,11 +1743,11 @@
   },
   "stegosaurus_walk_E_005": {
    "file": "stegosaurus_walk_E_005.png",
-   "sha256": "874fed654cea971aaf89834750ea8d6e3f8831bb93d838f50f4f212f9b91b54c",
+   "sha256": "80afe11e84cb62e6400d8416ec306dda7a57c0c04b73171f1883658100ea7389",
    "bbox": [
     13,
     50,
-    125,
+    127,
     92
    ],
    "joints": {
@@ -1787,9 +1787,9 @@
   },
   "stegosaurus_walk_W_005": {
    "file": "stegosaurus_walk_W_005.png",
-   "sha256": "db0a20da0c3d5e708fbb5b63228dcd9026913d681feef735682b5ef019701d2f",
+   "sha256": "eb80b4ab78cce1e61a46e6f11318b7e8d6ac696c8baaec9e21f9fd6bc7ad6767",
    "bbox": [
-    18,
+    16,
     50,
     131,
     92
@@ -1831,12 +1831,12 @@
   },
   "stegosaurus_run_S_000": {
    "file": "stegosaurus_run_S_000.png",
-   "sha256": "8f545e1d0e3a086cfaee576180716d5b8aa05e771abba1d093ad22f199093219",
+   "sha256": "5d989bcadbf6bd14f72473d82cf655625cfe19ed0659fcd11e07c87be4eb5c4b",
    "bbox": [
     48,
     20,
     96,
-    115
+    116
    ],
    "joints": {
     "fore_L": [
@@ -1875,10 +1875,10 @@
   },
   "stegosaurus_run_N_000": {
    "file": "stegosaurus_run_N_000.png",
-   "sha256": "cb16fc9f30802ad6dcf5c6116acebdd502480c393c3ad5381e51569b20a5aba4",
+   "sha256": "6f2723f3b6dc1d5d3ded4a47cf6579ccf48ce64660dab0989c16d171822b3986",
    "bbox": [
     48,
-    27,
+    25,
     96,
     118
    ],
@@ -1919,11 +1919,11 @@
   },
   "stegosaurus_run_E_000": {
    "file": "stegosaurus_run_E_000.png",
-   "sha256": "000e59fd591c7bffa048bd3e4c8b859a1008f6541a709e98f4e54ac155eb4378",
+   "sha256": "5c37eae4f89268519d5fb90aeea4d300d2c6fcee41b6a1410269d517cecf9aa2",
    "bbox": [
     12,
     49,
-    126,
+    127,
     91
    ],
    "joints": {
@@ -1963,9 +1963,9 @@
   },
   "stegosaurus_run_W_000": {
    "file": "stegosaurus_run_W_000.png",
-   "sha256": "c74cec208f8b9c0e49874828c052c9a0d0b5069c906f19054583f092e27a87fa",
+   "sha256": "4094a27c2b989a008906f47ac9ecfc0c2e729a4d574cc7dee7ee56b3aa718fac",
    "bbox": [
-    18,
+    17,
     49,
     132,
     91
@@ -2007,12 +2007,12 @@
   },
   "stegosaurus_run_S_001": {
    "file": "stegosaurus_run_S_001.png",
-   "sha256": "3aa680e6d6a65336e27f8e5b6aea13c792722c4dd23426282abe094cd4084592",
+   "sha256": "6a222b64d3640dd5795cd912e36103ecfde162b68c32546f63101db9e13ce833",
    "bbox": [
     48,
     19,
     96,
-    115
+    117
    ],
    "joints": {
     "fore_L": [
@@ -2051,10 +2051,10 @@
   },
   "stegosaurus_run_N_001": {
    "file": "stegosaurus_run_N_001.png",
-   "sha256": "2f1cf99985b23d7342aed1192638377214bb1eb3c3084980525d2d739ae0da24",
+   "sha256": "00f6251868181e1e187be2ccfd200dc255296997637e54992f4f65cdcd4cad09",
    "bbox": [
     48,
-    27,
+    26,
     96,
     118
    ],
@@ -2095,11 +2095,11 @@
   },
   "stegosaurus_run_E_001": {
    "file": "stegosaurus_run_E_001.png",
-   "sha256": "c434a95373bc9caa3c49c865d795747414cd9e0db6515a74b1aeeb0569c5fa08",
+   "sha256": "121d51d29cef28db71eb1313dd30defe54cd4f14ae92d4fb13fc856a00faa35b",
    "bbox": [
     12,
     50,
-    125,
+    127,
     92
    ],
    "joints": {
@@ -2139,9 +2139,9 @@
   },
   "stegosaurus_run_W_001": {
    "file": "stegosaurus_run_W_001.png",
-   "sha256": "20c5f8e25b6eeed3325bdeb62cf4eb3a29474e78a9c8f58bd9c1e803479205b1",
+   "sha256": "0188e782a3d407f75a40d7eae36d924becdc5995534ac5a5c2635be500655cdd",
    "bbox": [
-    19,
+    17,
     50,
     132,
     90
@@ -2183,12 +2183,12 @@
   },
   "stegosaurus_run_S_002": {
    "file": "stegosaurus_run_S_002.png",
-   "sha256": "5a94f5fe8092f1f6351a0557b0363904af1696d9d8d35bd4e6f0a1b5a5fd93af",
+   "sha256": "557c2ba6cdd140576d8d3ae1fd010eb33bdf4c2f636a8db226b0e07a4e2a6355",
    "bbox": [
     48,
     19,
     96,
-    115
+    117
    ],
    "joints": {
     "fore_L": [
@@ -2227,10 +2227,10 @@
   },
   "stegosaurus_run_N_002": {
    "file": "stegosaurus_run_N_002.png",
-   "sha256": "407b80d327a961370f27bc0c93417d60974fb13d5c80fd04432510d3e269e796",
+   "sha256": "5b2b42741172bba1fe5470938b4360940680ee8f8e004ce37fb9aea759213361",
    "bbox": [
     48,
-    27,
+    26,
     96,
     118
    ],
@@ -2271,11 +2271,11 @@
   },
   "stegosaurus_run_E_002": {
    "file": "stegosaurus_run_E_002.png",
-   "sha256": "0e5fe1ad7cfe8c78bd0903140d45e58e826565eae77f65a24da1371b286a7f64",
+   "sha256": "dea8f94f6bed90cfc93885b6da0c75df513f4502f25f187f131984a61f2c9317",
    "bbox": [
     12,
     48,
-    125,
+    127,
     92
    ],
    "joints": {
@@ -2315,9 +2315,9 @@
   },
   "stegosaurus_run_W_002": {
    "file": "stegosaurus_run_W_002.png",
-   "sha256": "69322d459cda6092192905d10f94d89590a8ae674378977e553fa701f9f82778",
+   "sha256": "d03a06156fe36eadaa6f52c48d332f088be055df3c607ae6ee9e2247421e73d8",
    "bbox": [
-    19,
+    17,
     50,
     132,
     90
@@ -2359,12 +2359,12 @@
   },
   "stegosaurus_run_S_003": {
    "file": "stegosaurus_run_S_003.png",
-   "sha256": "4646890164f662dba6f96deedf84cfbda58e37d20fc4eb7ddaf5f896a80b321d",
+   "sha256": "20316b86291c169181fe8ba348389749c9da662304652cc81fc351c56bcb5f17",
    "bbox": [
     48,
     20,
     96,
-    115
+    116
    ],
    "joints": {
     "fore_L": [
@@ -2403,10 +2403,10 @@
   },
   "stegosaurus_run_N_003": {
    "file": "stegosaurus_run_N_003.png",
-   "sha256": "e1244b2bfbeb82d72672f556bfb91e3711bf992a2531edc8dba537f4f25a7da3",
+   "sha256": "4bb1590c96cf93ca76771b4c11d44fa584d8d714f3a32c1747c810e42dd0b1e8",
    "bbox": [
     48,
-    27,
+    25,
     96,
     118
    ],
@@ -2447,11 +2447,11 @@
   },
   "stegosaurus_run_E_003": {
    "file": "stegosaurus_run_E_003.png",
-   "sha256": "aed44e7c76fe7fa44fde343148b1823f320b0c72d82260bdd80c5b950682348b",
+   "sha256": "de61f037155a1756559493b627330860d50a4f411576d23203ce1b7e1777e395",
    "bbox": [
     12,
     49,
-    126,
+    127,
     91
    ],
    "joints": {
@@ -2491,9 +2491,9 @@
   },
   "stegosaurus_run_W_003": {
    "file": "stegosaurus_run_W_003.png",
-   "sha256": "0e33f7afe9dcd4a5f86d52ec4a8d63f3683e79abdf31a4b7ce33c416f51bb2c2",
+   "sha256": "f2bfdade30e5a2cc80123075c3e04ff3ed2801bef343dc0cc084a989d367e621",
    "bbox": [
-    18,
+    17,
     49,
     132,
     91
@@ -2535,12 +2535,12 @@
   },
   "stegosaurus_run_S_004": {
    "file": "stegosaurus_run_S_004.png",
-   "sha256": "fb2d6cb65928c3444ed56c8944cc5abeb4efc8784998a2f14289dc9a453c93d7",
+   "sha256": "1699a09c1a6e9473c1f95239739f4b528ca1bc866711514986844fc288a3aabb",
    "bbox": [
     48,
     19,
     96,
-    115
+    117
    ],
    "joints": {
     "fore_L": [
@@ -2579,10 +2579,10 @@
   },
   "stegosaurus_run_N_004": {
    "file": "stegosaurus_run_N_004.png",
-   "sha256": "9903815723876a8f556afad84f740e8a58bf16337062520e3949539484a530dc",
+   "sha256": "ec0dadaf1c99af222e690c8f5d658345365b8c22132c2b1ba3f4babf7a8d01ae",
    "bbox": [
     48,
-    27,
+    26,
     96,
     118
    ],
@@ -2623,11 +2623,11 @@
   },
   "stegosaurus_run_E_004": {
    "file": "stegosaurus_run_E_004.png",
-   "sha256": "0c6272122943a5fcf758417f4091907cb07ebb7f5cb7ef0ff252d4f867f9cb33",
+   "sha256": "8d25863f346ae2a910f52320f6b52810a1dd9512dadd1bad333e3e18fbe65d0a",
    "bbox": [
     12,
     50,
-    125,
+    127,
     90
    ],
    "joints": {
@@ -2667,9 +2667,9 @@
   },
   "stegosaurus_run_W_004": {
    "file": "stegosaurus_run_W_004.png",
-   "sha256": "7198cfe466c3777b377750a9c29c9e5a0a55330df755e706ec30314fbe0327a1",
+   "sha256": "b39d9b5970f52d1084ccb68ad955531cd924348908c5832b83d345b78fabebca",
    "bbox": [
-    19,
+    17,
     50,
     132,
     92
@@ -2711,12 +2711,12 @@
   },
   "stegosaurus_run_S_005": {
    "file": "stegosaurus_run_S_005.png",
-   "sha256": "a705ede0a981d6dba25ef888cf9aa4273f2566b4f3220ca95cd5939c5b1ee454",
+   "sha256": "b117f4d73eab962102bc481918b8d9deefd281d822b47b77aa612ec43c6b1779",
    "bbox": [
     48,
     19,
     96,
-    115
+    117
    ],
    "joints": {
     "fore_L": [
@@ -2755,10 +2755,10 @@
   },
   "stegosaurus_run_N_005": {
    "file": "stegosaurus_run_N_005.png",
-   "sha256": "a3195fce2e48a76804ff7d65c9bea42b3196c6938aa23ca20c4d63dbc8946a5a",
+   "sha256": "58d04d80f535855df49c002788d7bef84036c81bf4139a8b769abf3b184c5ac6",
    "bbox": [
     48,
-    27,
+    26,
     96,
     118
    ],
@@ -2799,11 +2799,11 @@
   },
   "stegosaurus_run_E_005": {
    "file": "stegosaurus_run_E_005.png",
-   "sha256": "5e00e9ef081fc9d97fb020cdc081af7e99ee00e263b7efd8aeb3dddd291a72ad",
+   "sha256": "0b28b4a2a7d34affd91dd253d9899eaca486ce414318a401318026e8b0f068f7",
    "bbox": [
     12,
     50,
-    125,
+    127,
     90
    ],
    "joints": {
@@ -2843,9 +2843,9 @@
   },
   "stegosaurus_run_W_005": {
    "file": "stegosaurus_run_W_005.png",
-   "sha256": "f27f57ff82e23bacfda2c4ed995a4a7b390d884120ab1e8856b7ecbd436e156f",
+   "sha256": "3b2d112eceea93119db5b1cf3c30662fac44269404f462cf480369f09f085043",
    "bbox": [
-    19,
+    17,
     48,
     132,
     92
@@ -2887,12 +2887,12 @@
   },
   "stegosaurus_attack_S_000": {
    "file": "stegosaurus_attack_S_000.png",
-   "sha256": "c0f333c2ed21ea8011bea622df4ae679f2e7a9e536046184ac83badea8a57bff",
+   "sha256": "64c88e3ff9d2186620d22bb9e4ec5e59a1b2ba2f063a2718f5bf438b86090faa",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -2931,10 +2931,10 @@
   },
   "stegosaurus_attack_N_000": {
    "file": "stegosaurus_attack_N_000.png",
-   "sha256": "c6c9a90374c30f5918b58e924f8f1cf970bd3a91ac94be89f354c2634df70d61",
+   "sha256": "02dc6329a930375550eac0da7cc843cfa90bce3cf4e25ba3d857179208116c82",
    "bbox": [
     48,
-    25,
+    24,
     96,
     118
    ],
@@ -2975,11 +2975,11 @@
   },
   "stegosaurus_attack_E_000": {
    "file": "stegosaurus_attack_E_000.png",
-   "sha256": "659f123928a36e750a638c4de78e32b90ff15538e31852980a9a118992a7838d",
+   "sha256": "006325818a0a7064ffd62b75be53725dbd8d0cfe515ba71a38fc934f78407081",
    "bbox": [
     13,
     50,
-    126,
+    128,
     92
    ],
    "joints": {
@@ -3019,9 +3019,9 @@
   },
   "stegosaurus_attack_W_000": {
    "file": "stegosaurus_attack_W_000.png",
-   "sha256": "aeb76d95aec314360c740d66d75c0e84a2f5c765f9a840881233749a053ef6fd",
+   "sha256": "7087f397c69d9bcbddaa8883dbe3d169c48fdc44745854df34ac67cfd923830a",
    "bbox": [
-    18,
+    16,
     50,
     131,
     92
@@ -3063,12 +3063,12 @@
   },
   "stegosaurus_attack_S_001": {
    "file": "stegosaurus_attack_S_001.png",
-   "sha256": "5ae65e9c4ffdde3df81d6ab094ee088627ab86b67b3822e98c4e71b5892779b6",
+   "sha256": "7a9e1e6a54898ad3df093dd75a666e850bf7939c214dd4e01cb715ae5cda6e64",
    "bbox": [
     48,
     21,
     96,
-    113
+    115
    ],
    "joints": {
     "fore_L": [
@@ -3107,10 +3107,10 @@
   },
   "stegosaurus_attack_N_001": {
    "file": "stegosaurus_attack_N_001.png",
-   "sha256": "bbc37bf43ca40e57b63b33869bbb9d172dd354410f32929d42139c0faf6a87fd",
+   "sha256": "25048a1beb9056ba99c5b9e80304fd3ce4c2c967fd3ff05dc8a3d5345e7cb08b",
    "bbox": [
     48,
-    26,
+    24,
     96,
     118
    ],
@@ -3151,11 +3151,11 @@
   },
   "stegosaurus_attack_E_001": {
    "file": "stegosaurus_attack_E_001.png",
-   "sha256": "46fa50a430d49eaaeb884ce08a5240850a31696f6f9902ac476586489dc3bee9",
+   "sha256": "1982b32d9bc7f83ca45a8be60d6b92e8a720f4da64d91aadcb0ddbc0992eb233",
    "bbox": [
     14,
     50,
-    125,
+    127,
     92
    ],
    "joints": {
@@ -3195,9 +3195,9 @@
   },
   "stegosaurus_attack_W_001": {
    "file": "stegosaurus_attack_W_001.png",
-   "sha256": "da091acaa5d8a742cd3dc17c4a4fb6305d550c4ed34a15b987bd8c2368cb2252",
+   "sha256": "9b0a2c71ff602d5e3df0fe5c20f36d65be12c8ce7f8fb173a8caaf541bd0c959",
    "bbox": [
-    19,
+    17,
     50,
     130,
     92
@@ -3239,12 +3239,12 @@
   },
   "stegosaurus_attack_S_002": {
    "file": "stegosaurus_attack_S_002.png",
-   "sha256": "6ecc9a7bb652cd851095260e92c31f5d9faeee4d7e00898ac214b408ce46e0b5",
+   "sha256": "e48fd860b95708232cc425cdc7625dd8b90e9ed1267a5f6fc7d4e697a1cd8ed5",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -3283,10 +3283,10 @@
   },
   "stegosaurus_attack_N_002": {
    "file": "stegosaurus_attack_N_002.png",
-   "sha256": "5282bc007c0ed299e09007af7eab0c600af3f72b6113843796a9082a22e5c5a3",
+   "sha256": "b466fc08e05625e0df2ec0db5cd01badd2137d72a591df574f4fa3e5d0b245aa",
    "bbox": [
     48,
-    26,
+    24,
     96,
     118
    ],
@@ -3327,11 +3327,11 @@
   },
   "stegosaurus_attack_E_002": {
    "file": "stegosaurus_attack_E_002.png",
-   "sha256": "59f6625e88af7b7432be4dd0a9b110103b3ec0df1ff21de455eff5336d163070",
+   "sha256": "a924711bcf839b39b81f699bcf6500840a1a947dfad644906de47a575fa83c87",
    "bbox": [
     13,
     50,
-    126,
+    128,
     92
    ],
    "joints": {
@@ -3371,9 +3371,9 @@
   },
   "stegosaurus_attack_W_002": {
    "file": "stegosaurus_attack_W_002.png",
-   "sha256": "01efe240894005bf7e671a420c33c324da884a0185e7d7e145970a36d8186fb6",
+   "sha256": "c6c98601958773bbe961ab74e6bdde081754a78a7b87470732fb2b407d3d00bf",
    "bbox": [
-    18,
+    16,
     50,
     131,
     92
@@ -3415,12 +3415,12 @@
   },
   "stegosaurus_attack_S_003": {
    "file": "stegosaurus_attack_S_003.png",
-   "sha256": "9861c4116c46a81aab7f3c06867fe40a5be25ec4e3f4dd9dbb9062260a9a6bc1",
+   "sha256": "6f148a5d150400b0b7800a5a634d1c2d0894d41132ce5ffaaa4b0e0a1f5d9acb",
    "bbox": [
     48,
     23,
     97,
-    115
+    117
    ],
    "joints": {
     "fore_L": [
@@ -3459,10 +3459,10 @@
   },
   "stegosaurus_attack_N_003": {
    "file": "stegosaurus_attack_N_003.png",
-   "sha256": "f2b95a41e9108a6e51ef70d962aa5561601de1c71669e1c3774b76f0f7f9286b",
+   "sha256": "2a691caa5ff0249902a864864c5ef1e7f5f73a181423596a66d2e4aa611baaff",
    "bbox": [
     48,
-    25,
+    24,
     96,
     114
    ],
@@ -3503,11 +3503,11 @@
   },
   "stegosaurus_attack_E_003": {
    "file": "stegosaurus_attack_E_003.png",
-   "sha256": "97b3b3a2916fa2ae1c7274801b55b9b9c47380ec955ef259690556b759da5cc7",
+   "sha256": "47ac099726f1c71caac8247eef2e782d062faef90a32cccbaf805d9d072d0f66",
    "bbox": [
     17,
     47,
-    126,
+    128,
     92
    ],
    "joints": {
@@ -3547,9 +3547,9 @@
   },
   "stegosaurus_attack_W_003": {
    "file": "stegosaurus_attack_W_003.png",
-   "sha256": "ef6de2a1b5b5b56dddf1ab4703e2aeed56db78d8660b828725d6e2ffa5678f5c",
+   "sha256": "edcc6e5663e3394393537e0444b1a0d2f080d74d359264a5c9f1d7dc94c919b6",
    "bbox": [
-    18,
+    16,
     50,
     127,
     92
@@ -3591,12 +3591,12 @@
   },
   "stegosaurus_attack_S_004": {
    "file": "stegosaurus_attack_S_004.png",
-   "sha256": "a964c6cf52950af5ef45be3aa4b204cfdd27cf3ef4f688c448fe5db56111030b",
+   "sha256": "91bce26ead3b2e887d43a49de0fb82ca8d729bb1edc8d89c3d530da5096dba38",
    "bbox": [
     48,
     22,
     96,
-    115
+    116
    ],
    "joints": {
     "fore_L": [
@@ -3635,10 +3635,10 @@
   },
   "stegosaurus_attack_N_004": {
    "file": "stegosaurus_attack_N_004.png",
-   "sha256": "51ede840d536e09e3a7263719bb2228a228e373fc890c97b4a12e5faae823c73",
+   "sha256": "dc1fa2c4244f2d9f30188f7be1253c514662c57389a5c6506f0d6d0c83aec29d",
    "bbox": [
     48,
-    26,
+    24,
     96,
     116
    ],
@@ -3679,11 +3679,11 @@
   },
   "stegosaurus_attack_E_004": {
    "file": "stegosaurus_attack_E_004.png",
-   "sha256": "078fc8991ea82b056faf846732eee5df51f805fe1f35fb0c80704e01a7842882",
+   "sha256": "c7b4449f3349d0520a57cdbe2edb6063a389cec94bf569f3fb8acfed233337dc",
    "bbox": [
     15,
     50,
-    126,
+    128,
     92
    ],
    "joints": {
@@ -3723,9 +3723,9 @@
   },
   "stegosaurus_attack_W_004": {
    "file": "stegosaurus_attack_W_004.png",
-   "sha256": "bea95e30e08ef2a529b8c4c2ed4b721d7b0b65e282e01636fefa9c3d00bfbdb4",
+   "sha256": "dd8570027046375772c2f8c2839ad5dbc7737b9cde36e2c4457edc4595b20362",
    "bbox": [
-    18,
+    16,
     50,
     129,
     92
@@ -3767,12 +3767,12 @@
   },
   "stegosaurus_attack_S_005": {
    "file": "stegosaurus_attack_S_005.png",
-   "sha256": "5317b6d8669e3e74662a6f9672a2a98f45c476f7b8edadbba96fd35c02345796",
+   "sha256": "b60577ec6a929e2b3aac6c09db6cda5f620a2870a2183cee8c8f3277b78c6df7",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ],
    "joints": {
     "fore_L": [
@@ -3811,10 +3811,10 @@
   },
   "stegosaurus_attack_N_005": {
    "file": "stegosaurus_attack_N_005.png",
-   "sha256": "93c363539bb0541b5bf869f4759c3886d5ae99bd7a5adf9d113ccd09b4c60b62",
+   "sha256": "69490834da22cd4b1192913f7135158fa56ad5a8e34f31a63a4d37fe3532ab53",
    "bbox": [
     48,
-    26,
+    24,
     96,
     119
    ],
@@ -3855,11 +3855,11 @@
   },
   "stegosaurus_attack_E_005": {
    "file": "stegosaurus_attack_E_005.png",
-   "sha256": "aa0579c21336996ea115e02c6ee623db42119b0655388e7e9e78a4b7ffb11d83",
+   "sha256": "ddc4969be354294f59b9feccd8ea579428d9b083dc985afd4d5d09cd2f4d0916",
    "bbox": [
     13,
     50,
-    126,
+    127,
     92
    ],
    "joints": {
@@ -3899,9 +3899,9 @@
   },
   "stegosaurus_attack_W_005": {
    "file": "stegosaurus_attack_W_005.png",
-   "sha256": "2eab55efaf13a2c5a9d46523c5b1e199e2cf2bec6a0d838dee83f665b39d4e0d",
+   "sha256": "a6452f7d0da059ac7e55da6699226bfa022e606dfce334241c345d52cfeaf3da",
    "bbox": [
-    18,
+    17,
     50,
     131,
     92
@@ -3943,12 +3943,12 @@
   },
   "stegosaurus_hurt_S_000": {
    "file": "stegosaurus_hurt_S_000.png",
-   "sha256": "d5266f834711ecaa051430446c9d247a632e5f62f126c75e59375590b06cc6da",
+   "sha256": "8dc64ac38a91b4485501f4d59b3c855c9b763fdfe80ac4a4856d08565a5fa261",
    "bbox": [
     48,
     19,
     96,
-    106
+    108
    ],
    "joints": {
     "fore_L": [
@@ -3987,10 +3987,10 @@
   },
   "stegosaurus_hurt_N_000": {
    "file": "stegosaurus_hurt_N_000.png",
-   "sha256": "9beb22737bebc825f0f08725f2e76124aeb6ccdf403e812b7fc0ff2b43e2e618",
+   "sha256": "1236e2457e35d8986ef63cc9a11d499d082a8c5c86b752ef5ca1b87214937356",
    "bbox": [
     48,
-    28,
+    27,
     96,
     122
    ],
@@ -4031,11 +4031,11 @@
   },
   "stegosaurus_hurt_E_000": {
    "file": "stegosaurus_hurt_E_000.png",
-   "sha256": "739559b1987a4e4997fcf5dcc23c8354ef9dcf3f543ec78e960c9e135c4df054",
+   "sha256": "12a1f6c258071000667bf5ecca0e1d7820cfb0fe212339b62683c9edfdda31fc",
    "bbox": [
     10,
     50,
-    119,
+    121,
     92
    ],
    "joints": {
@@ -4075,9 +4075,9 @@
   },
   "stegosaurus_hurt_W_000": {
    "file": "stegosaurus_hurt_W_000.png",
-   "sha256": "c381fdd69049dafc8c454e7f6b5538831d8e8d80ef7d4360fda10b4713658198",
+   "sha256": "fd17a20bf80f458e0d85e604dc628575e95120653471391a9b6e28ae351db776",
    "bbox": [
-    25,
+    23,
     50,
     134,
     92
@@ -4119,12 +4119,12 @@
   },
   "stegosaurus_hurt_S_001": {
    "file": "stegosaurus_hurt_S_001.png",
-   "sha256": "04b2221dbe3a7d5bef6c9ad8eed904d4e959eab6fd18524c78a07cf1e7b0c367",
+   "sha256": "9a22765badd1d9ca33ff6855bfb5f6a1b27372a57e115dd7654629296bb6cb35",
    "bbox": [
     48,
     20,
     96,
-    110
+    112
    ],
    "joints": {
     "fore_L": [
@@ -4163,10 +4163,10 @@
   },
   "stegosaurus_hurt_N_001": {
    "file": "stegosaurus_hurt_N_001.png",
-   "sha256": "341b28dee7e9e1246082215946441c16fec753528a241b12956491e334328879",
+   "sha256": "dd34c6c6274a9ce030d4aa64a64cfe7105bcf53885fb51b7bb3d2b2cbdcd0ff9",
    "bbox": [
     48,
-    27,
+    25,
     96,
     120
    ],
@@ -4207,11 +4207,11 @@
   },
   "stegosaurus_hurt_E_001": {
    "file": "stegosaurus_hurt_E_001.png",
-   "sha256": "b1bbe6d5da26581a84c8a37d1f31109d44f368e45c60a1f2683b406d724d676b",
+   "sha256": "8c2fa5f5e8ff02a8c314fb7ac1c482686f0aec2f252191908e99f39316e9cdde",
    "bbox": [
     11,
     50,
-    123,
+    125,
     92
    ],
    "joints": {
@@ -4251,9 +4251,9 @@
   },
   "stegosaurus_hurt_W_001": {
    "file": "stegosaurus_hurt_W_001.png",
-   "sha256": "22fca0ad764cccb1ea5aec70158d9cd6799f4163be462c6e602bdcac2c5340a2",
+   "sha256": "c53f30325d9687da23f32c3e8d6433476025ce6dc1751f3cac998330ef47e1fa",
    "bbox": [
-    21,
+    19,
     50,
     133,
     92
@@ -4295,39 +4295,39 @@
   },
   "stegosaurus_death_S_000": {
    "file": "stegosaurus_death_S_000.png",
-   "sha256": "e6a97581b136c029dae9bba45cf134b32a2edc8de832b1abb1b8c94c568e5abd",
+   "sha256": "e153130a006ed5f752bd1f64203351623105245faeda9c143c75f6f935f9fcf8",
    "bbox": [
     48,
     20,
     96,
-    114
+    116
    ]
   },
   "stegosaurus_death_N_000": {
    "file": "stegosaurus_death_N_000.png",
-   "sha256": "3e60e7c6efcda5df95580869282f79077d052b5bc6adb73ada9ef80a4057568a",
+   "sha256": "6a84492c28041ab6c7351b92a4234231d01b3bf9050212a22d9f32c0071e9ad7",
    "bbox": [
     48,
-    26,
+    24,
     96,
     119
    ]
   },
   "stegosaurus_death_E_000": {
    "file": "stegosaurus_death_E_000.png",
-   "sha256": "1d060a85bf327099b709cda5a6dd63843b1af7f23de2a18d2ab98cf1f4742fe1",
+   "sha256": "72b4f533b7a4ceb48a2588ee0510efa48d17487c52731310dc3a7ad9849594e3",
    "bbox": [
     12,
     50,
-    126,
+    127,
     92
    ]
   },
   "stegosaurus_death_W_000": {
    "file": "stegosaurus_death_W_000.png",
-   "sha256": "28b4ac8d2a758dbef7b44f6ac67249e6d56f8306b3687339b2545e865c920dc5",
+   "sha256": "58bd939fb11c907127d435e2223324dde3a705a2bd171816ab505232256adb03",
    "bbox": [
-    18,
+    17,
     50,
     132,
     92
@@ -4335,39 +4335,39 @@
   },
   "stegosaurus_death_S_001": {
    "file": "stegosaurus_death_S_001.png",
-   "sha256": "9686fa6be13f15328d6ce03a993bc362856202ac998925298ff2dc03f94c1eda",
+   "sha256": "cc9e5a00171ccc36a40c298f77f4a52c37ecbc99ca4717b4b85d5f72cbcaf7f7",
    "bbox": [
     48,
     19,
     97,
-    114
+    116
    ]
   },
   "stegosaurus_death_N_001": {
    "file": "stegosaurus_death_N_001.png",
-   "sha256": "dce060c239291725644a1b367589ddbe57ddf0829668e388ae8bcbbdd554f7d3",
+   "sha256": "37906a95acf175b35e621231de3e443aab6dfecc0c29da1d46ad73c27bb3ca05",
    "bbox": [
     47,
-    25,
+    24,
     96,
     118
    ]
   },
   "stegosaurus_death_E_001": {
    "file": "stegosaurus_death_E_001.png",
-   "sha256": "9d6cbcfb448bd9617d88bbba53691ec0146ea9aa55f03d4d4bd5311b911fcca6",
+   "sha256": "1337c27f36819fb864c271700924b2eb2d24c64414e078eb176adfddb7f49f85",
    "bbox": [
     12,
     48,
-    126,
+    128,
     90
    ]
   },
   "stegosaurus_death_W_001": {
    "file": "stegosaurus_death_W_001.png",
-   "sha256": "e809973081d0632ffcfaff49ad9624b4fbda94b4fc03440b928c16224957e90d",
+   "sha256": "a8359f3b37300ae3152cc499adb8a889a90a2742ce6f20968faaf0e9c0d481dd",
    "bbox": [
-    18,
+    16,
     50,
     132,
     93
@@ -4375,39 +4375,39 @@
   },
   "stegosaurus_death_S_002": {
    "file": "stegosaurus_death_S_002.png",
-   "sha256": "bb916905d4f17a253ca05b33de699aa492ee580a89a305c612c5d65812c0110a",
+   "sha256": "6577b3bf04f22c2db430bf53e1c97d71ed92da829e501c733ca138eabeb12525",
    "bbox": [
     52,
     17,
     98,
-    114
+    115
    ]
   },
   "stegosaurus_death_N_002": {
    "file": "stegosaurus_death_N_002.png",
-   "sha256": "f9957725a1cf4da11b655641fed8da42e78f6176e9507fc8f846401331c9c2fa",
+   "sha256": "6d8a35d019b2d5d1cf5f3f4c2bf1a9f835839bca80bdb1e6c5e1ede1e3756583",
    "bbox": [
     46,
-    24,
+    23,
     92,
     117
    ]
   },
   "stegosaurus_death_E_002": {
    "file": "stegosaurus_death_E_002.png",
-   "sha256": "c314e67770850cad6a1f2e87cfad679b457933140e6193bb30e2478309b9403a",
+   "sha256": "410e0fdc191b685e92828199266faebc58f6edbba40a51e43291992f57793072",
    "bbox": [
     12,
     38,
-    126,
+    128,
     85
    ]
   },
   "stegosaurus_death_W_002": {
    "file": "stegosaurus_death_W_002.png",
-   "sha256": "418a34e2551cde571a710435d1f63410fa979ddc012ca5e72f1a5d762c9c2020",
+   "sha256": "5a77dc00d6a48193d6dec3764bf5750e590669f249ab7a5a930e7d276b3d53e2",
    "bbox": [
-    18,
+    16,
     50,
     132,
     94
@@ -4415,39 +4415,39 @@
   },
   "stegosaurus_death_S_003": {
    "file": "stegosaurus_death_S_003.png",
-   "sha256": "eb73fb828bb2e4c5392277c3848dbaa6ffaaed70a561fb792e23b4981aaf59fb",
+   "sha256": "ad16aa0084332e6f64ddb60e556337cab8753946595df0e3567eb81752b674f7",
    "bbox": [
     59,
     19,
     111,
-    114
+    115
    ]
   },
   "stegosaurus_death_N_003": {
    "file": "stegosaurus_death_N_003.png",
-   "sha256": "2d8da375300bf7563d7516d66cc9493c41bfaa0fa369463fa3707671dccf1628",
+   "sha256": "6d16520f2e55ef45e9a4a3a4c3c423a8ca910a198e647dfce86b85aaa6fbde2f",
    "bbox": [
     33,
-    25,
+    23,
     85,
     116
    ]
   },
   "stegosaurus_death_E_003": {
    "file": "stegosaurus_death_E_003.png",
-   "sha256": "9a9f62f44eabd752df3a263dc198160f7a9f4fad53829287d885028d7a9f31ef",
+   "sha256": "b4a441472aa29d4cdcea307981ff54faf39b75b8323afd44abcca8ca48d7f044",
    "bbox": [
     13,
     34,
-    126,
+    128,
     77
    ]
   },
   "stegosaurus_death_W_003": {
    "file": "stegosaurus_death_W_003.png",
-   "sha256": "04bf231c5b502518bbe62fd7413a4ff9812929ef6c08ea4d439cd74f5b856233",
+   "sha256": "752fee04a273ac4645e61d6cf4cd795f820c03410604926008f612ee77c8090f",
    "bbox": [
-    18,
+    16,
     54,
     131,
     98
@@ -4455,39 +4455,39 @@
   },
   "stegosaurus_death_S_004": {
    "file": "stegosaurus_death_S_004.png",
-   "sha256": "4912101f6187c80ceb0fd5d551a696705d0278e0d11663d77f0f892a0bfa3062",
+   "sha256": "04a0e573dce438a448eed58ded2a25f5596170fa3d979b91e7c9137a535dc66a",
    "bbox": [
     67,
     24,
     114,
-    115
+    116
    ]
   },
   "stegosaurus_death_N_004": {
    "file": "stegosaurus_death_N_004.png",
-   "sha256": "672a836cac5feae08ab3a1651e1822e3cf26cde088872351abe451df36773b72",
+   "sha256": "5ae053cb59b0fa8e06523a3fdbaf86d4da17a83e33436fd77c2f2cf23dccecf8",
    "bbox": [
     30,
-    27,
+    26,
     77,
     117
    ]
   },
   "stegosaurus_death_E_004": {
    "file": "stegosaurus_death_E_004.png",
-   "sha256": "80a91af39d2baf78ec67358357901e120d8da68825a80f74cdccc76d13882a9c",
+   "sha256": "19e270b587eda63299c6cf8908de611e8254276175ab70228cbf542540eab6a7",
    "bbox": [
     16,
     35,
-    125,
+    127,
     79
    ]
   },
   "stegosaurus_death_W_004": {
    "file": "stegosaurus_death_W_004.png",
-   "sha256": "054ede8cc40745cf5acc3dffb361bf4650e26bd6bf1f2996f850d033dbd32c6e",
+   "sha256": "026726d2d09b9a3b942703fa967876f027cd4b5f3a50f3dd70088857c7d68cf8",
    "bbox": [
-    19,
+    17,
     60,
     128,
     106
@@ -4495,39 +4495,39 @@
   },
   "stegosaurus_death_S_005": {
    "file": "stegosaurus_death_S_005.png",
-   "sha256": "dd8449c7b412f10e00c884a214cffcb0130a8a4c43d7f4a5e5b3b8b4fc1ba755",
+   "sha256": "751881b1132bb5282ce49bdc465d898e39e812839a6bf6cecda7659fb2311992",
    "bbox": [
     70,
     27,
     114,
-    116
+    117
    ]
   },
   "stegosaurus_death_N_005": {
    "file": "stegosaurus_death_N_005.png",
-   "sha256": "21db288a6ea6468f5fe3b94313cf0ce03a8f0acd77ec2800b37086fd6641bdd6",
+   "sha256": "14b64626442b404be44ea77b21918addc0ca4f8914165f8dbd8d6c3b874d946e",
    "bbox": [
     30,
-    28,
+    27,
     74,
     117
    ]
   },
   "stegosaurus_death_E_005": {
    "file": "stegosaurus_death_E_005.png",
-   "sha256": "8e7b8a37d376dae0a8e108c17119aaec44941cb755b93247e3988484e5dd1050",
+   "sha256": "260f10a06084e83b358aa18643e0a0e9838689a0553aa90feedd34d96bde4f6e",
    "bbox": [
     17,
     36,
-    125,
+    126,
     81
    ]
   },
   "stegosaurus_death_W_005": {
    "file": "stegosaurus_death_W_005.png",
-   "sha256": "f8a25e6e4e6dc8a15a17d1a3eb3edeef4095465dec783f5751be8c7a3b282321",
+   "sha256": "0c21696b41d5e022caf1d2e7414a9394578afb088fed399d1b21565afba2a66f",
    "bbox": [
-    19,
+    18,
     63,
     127,
     108

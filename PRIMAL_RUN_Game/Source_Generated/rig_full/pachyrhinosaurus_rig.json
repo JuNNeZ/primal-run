@@ -71,7 +71,7 @@
  "frames": {
   "pachyrhinosaurus_idle_S_000": {
    "file": "pachyrhinosaurus_idle_S_000.png",
-   "sha256": "5421ec4a4d1ba72fedaa6081da00a2a10d1ce45d9436f0e15238e2f4ac648a00",
+   "sha256": "8d79302a795c39d98e2051431d1b97aff6b881cfb828918f31608bda6b297328",
    "bbox": [
     50,
     30,
@@ -115,7 +115,7 @@
   },
   "pachyrhinosaurus_idle_N_000": {
    "file": "pachyrhinosaurus_idle_N_000.png",
-   "sha256": "8210acbafd567cf11e01996a59dec6501d7203e9c993b450a4a4555b15fbe6f1",
+   "sha256": "bd5a48523e80e7df5abd07f14329baf5aa23f6043101c9edaf7f75fd34a1c89e",
    "bbox": [
     50,
     27,
@@ -159,7 +159,7 @@
   },
   "pachyrhinosaurus_idle_E_000": {
    "file": "pachyrhinosaurus_idle_E_000.png",
-   "sha256": "d03bf404b9f4723616f9632a551d6723cf965b4c0dcb2a66fb98ee85fcc138a8",
+   "sha256": "9e310864d0e05e14e4eaad787823f29c3caeda27b9b4ccca09b839624e970e78",
    "bbox": [
     23,
     50,
@@ -203,7 +203,7 @@
   },
   "pachyrhinosaurus_idle_W_000": {
    "file": "pachyrhinosaurus_idle_W_000.png",
-   "sha256": "758fd4c6fd4cd303cbd53f26abd014f3e7ac14a9e6e52a7cabfc597cd995b9ff",
+   "sha256": "dfacce540918f144db518d4fca950cfbb640f53a6860aa226547911d25e2bb61",
    "bbox": [
     21,
     50,
@@ -247,7 +247,7 @@
   },
   "pachyrhinosaurus_idle_S_001": {
    "file": "pachyrhinosaurus_idle_S_001.png",
-   "sha256": "1c9cb7c15cd1ab2cfad559f7120721d8a76a19cac529d93ab78e1ea2db8cafc9",
+   "sha256": "6dfff6c4302331689424304875ec891e83a5ba0d1c3d48422aff144e3a2c8b61",
    "bbox": [
     50,
     30,
@@ -291,7 +291,7 @@
   },
   "pachyrhinosaurus_idle_N_001": {
    "file": "pachyrhinosaurus_idle_N_001.png",
-   "sha256": "c4af1dda8aedb628a3594701be180bfc849cf142800d68379486ff78742b1be4",
+   "sha256": "43468bab4263215fb747b8f59d43cd4f5c8112da5386872d396b99aca40e6429",
    "bbox": [
     50,
     27,
@@ -335,7 +335,7 @@
   },
   "pachyrhinosaurus_idle_E_001": {
    "file": "pachyrhinosaurus_idle_E_001.png",
-   "sha256": "5a8adec4c6070a45a79453d955c21fb9bccc7062c965aea7f3f6c09cb51e93d0",
+   "sha256": "1c438d1595c733cb013c9bbfd819d8b726494000fb1af5fa406d81cf72c20584",
    "bbox": [
     23,
     50,
@@ -379,7 +379,7 @@
   },
   "pachyrhinosaurus_idle_W_001": {
    "file": "pachyrhinosaurus_idle_W_001.png",
-   "sha256": "725fc464189d3ab473e6027e02e17f8d7bee0b650a38857d6cbd50b8ff7158d0",
+   "sha256": "0d4b533b8c79cbc331616439b9b610eb0505664330614bf637c8ee9720ec0ae6",
    "bbox": [
     21,
     50,
@@ -423,7 +423,7 @@
   },
   "pachyrhinosaurus_idle_S_002": {
    "file": "pachyrhinosaurus_idle_S_002.png",
-   "sha256": "9523444514129546849b626fa4fa5c890c6a65e0d487554e49c1e5a487820bff",
+   "sha256": "3260b88840599e62883212f81bed23a1afcba961022fc60938aa24cbb0619c82",
    "bbox": [
     50,
     30,
@@ -467,7 +467,7 @@
   },
   "pachyrhinosaurus_idle_N_002": {
    "file": "pachyrhinosaurus_idle_N_002.png",
-   "sha256": "281a66c489147e541b71eacb19359533b97f6adfa3b61697cbfc42efefe87a40",
+   "sha256": "e4506f3377d484f7e305d0b69833e134669a2aa65ec995e9c27ffbfec374d614",
    "bbox": [
     50,
     28,
@@ -511,7 +511,7 @@
   },
   "pachyrhinosaurus_idle_E_002": {
    "file": "pachyrhinosaurus_idle_E_002.png",
-   "sha256": "d86681c32378a4ba2926a24ca0a117e237906d9c796548e84a2794bd41f879d5",
+   "sha256": "91537459572f00334ddc7d977c1bbe50a52e85cf79800f6abac3b954fb57cdf3",
    "bbox": [
     23,
     50,
@@ -555,7 +555,7 @@
   },
   "pachyrhinosaurus_idle_W_002": {
    "file": "pachyrhinosaurus_idle_W_002.png",
-   "sha256": "77437d2de11e759b8e9ca44fba226567e6715230e69159d4ca2a61462e1a012b",
+   "sha256": "a793a6b553ec01e512e6e5349dcd870afeed1a68273a9e498c5dbafc7b5c114c",
    "bbox": [
     21,
     50,
@@ -599,7 +599,7 @@
   },
   "pachyrhinosaurus_idle_S_003": {
    "file": "pachyrhinosaurus_idle_S_003.png",
-   "sha256": "e91fbb78b089db3182a886dfbab91fa8e57bc23301fadc2135556da4a9a1f666",
+   "sha256": "e63c6a69356cdbfbfa70669d99347fc8fc9f0bbe66bde536a18880d155ada4ce",
    "bbox": [
     50,
     30,
@@ -643,7 +643,7 @@
   },
   "pachyrhinosaurus_idle_N_003": {
    "file": "pachyrhinosaurus_idle_N_003.png",
-   "sha256": "021992d80b0cd82841d424490a81012537a9157733de8ad1af11ed274935b705",
+   "sha256": "63d8d36a51c471ca923d56b73e975a7b709caa0752a0f9b19fad594437b48ff6",
    "bbox": [
     50,
     28,
@@ -687,7 +687,7 @@
   },
   "pachyrhinosaurus_idle_E_003": {
    "file": "pachyrhinosaurus_idle_E_003.png",
-   "sha256": "6d492132b3f00fd7c626d4ac68f62eecfd6addaf0565a17ae8cf25c7facd56cf",
+   "sha256": "5c09786acb2d401860f7c8db1260d1f9a12289a21b0c40a59be7c62b1852da20",
    "bbox": [
     23,
     50,
@@ -731,7 +731,7 @@
   },
   "pachyrhinosaurus_idle_W_003": {
    "file": "pachyrhinosaurus_idle_W_003.png",
-   "sha256": "adc00cfa290b0e3e6221f4be2cb9ff4cebf8f2eb6ba042711e71190b3e370d16",
+   "sha256": "a8ff68c3a28658be0021cf04dc4e7f196d06675c56d17edadd7d3388d5d768d9",
    "bbox": [
     21,
     50,
@@ -775,7 +775,7 @@
   },
   "pachyrhinosaurus_walk_S_000": {
    "file": "pachyrhinosaurus_walk_S_000.png",
-   "sha256": "8a0e0fcf9e0d44aa85ea28628c4bda6a02194d66da562d74bc79c8be2bfc8c58",
+   "sha256": "40e1f08b8dd55d0523c7e26c14531d4e12300c08b2e41c7ef14bf920be56239c",
    "bbox": [
     50,
     30,
@@ -819,7 +819,7 @@
   },
   "pachyrhinosaurus_walk_N_000": {
    "file": "pachyrhinosaurus_walk_N_000.png",
-   "sha256": "3a3a0555f1656e1615d24724eb560fb2cfa230efcfc31d47c3df5537fb52e4c3",
+   "sha256": "45f29b539a0af67df050125a90e8fc81f8e9488ca26dfb79848536853e64c372",
    "bbox": [
     50,
     27,
@@ -863,7 +863,7 @@
   },
   "pachyrhinosaurus_walk_E_000": {
    "file": "pachyrhinosaurus_walk_E_000.png",
-   "sha256": "afd250be27a1d09a3bfccde9aedb25709d129c63268616ce7794ec6fbdb60130",
+   "sha256": "7b3144634b64bae99eb36b69895612ec5f693ada2a542ccf178321291837c9e6",
    "bbox": [
     23,
     50,
@@ -907,7 +907,7 @@
   },
   "pachyrhinosaurus_walk_W_000": {
    "file": "pachyrhinosaurus_walk_W_000.png",
-   "sha256": "68c7a99a2003721d66ebe16d36309554f4112785fef37288941178be8afcb497",
+   "sha256": "aff54298cdf656feb80c782e925d1b671dffd60cff8999064bc51c7f8fc4b646",
    "bbox": [
     21,
     50,
@@ -951,7 +951,7 @@
   },
   "pachyrhinosaurus_walk_S_001": {
    "file": "pachyrhinosaurus_walk_S_001.png",
-   "sha256": "84bdada79697db18a80e56ff28f1a2a914d9d272426f329b2ebc91e6d33a0045",
+   "sha256": "4658a018fe55a4818714a18700254089eb647997073c0bb9666d102eeef6697a",
    "bbox": [
     50,
     30,
@@ -995,7 +995,7 @@
   },
   "pachyrhinosaurus_walk_N_001": {
    "file": "pachyrhinosaurus_walk_N_001.png",
-   "sha256": "fa028f265892cb3c51bb6de5506642fe9fecbe4c56c8d9517dcb2791b785c7b6",
+   "sha256": "eb4dea06fe05b29350cf987376b827b777dfb2b1f321fcd7cba113617f211522",
    "bbox": [
     50,
     28,
@@ -1039,7 +1039,7 @@
   },
   "pachyrhinosaurus_walk_E_001": {
    "file": "pachyrhinosaurus_walk_E_001.png",
-   "sha256": "3429faf4d5f7bd7a592d8226a18b464991cdff074122221a21a6ed2007afc634",
+   "sha256": "3e8d58ac125789720c8dd017c748d437588fcdac5ba6c33650ab1ea5a5c4e594",
    "bbox": [
     23,
     50,
@@ -1083,7 +1083,7 @@
   },
   "pachyrhinosaurus_walk_W_001": {
    "file": "pachyrhinosaurus_walk_W_001.png",
-   "sha256": "eb3a255293ad8a8f5303389d0b92a164a769e0f8c294bb6226e0776cdefb9049",
+   "sha256": "bb03383e82f0bc29a3d38b0ac6859421c1517c93ee34b12203bc8d1cbb32942c",
    "bbox": [
     21,
     50,
@@ -1127,7 +1127,7 @@
   },
   "pachyrhinosaurus_walk_S_002": {
    "file": "pachyrhinosaurus_walk_S_002.png",
-   "sha256": "2f5fa6334c2f03bdc3f123b89d7b6e0d63ba772d16389f86082c40d5f667c971",
+   "sha256": "121f6a1ae8eedf8b5e72b862b3c36f0b3f51d22f1d4d9b1419fde4a5a44802c8",
    "bbox": [
     50,
     30,
@@ -1171,7 +1171,7 @@
   },
   "pachyrhinosaurus_walk_N_002": {
    "file": "pachyrhinosaurus_walk_N_002.png",
-   "sha256": "1601a068688ceab01be5f051e67a134fe841dbaddc9b2359466adbfa3ca75db6",
+   "sha256": "1863baa1b0465bab9003f7eb4cd7dbfc68b6178d5b0441065efbfe3f12b725ab",
    "bbox": [
     50,
     28,
@@ -1215,7 +1215,7 @@
   },
   "pachyrhinosaurus_walk_E_002": {
    "file": "pachyrhinosaurus_walk_E_002.png",
-   "sha256": "864d95fe005c81a50e04137312211b8f75d21ae25060ed98989ae32dedc0008e",
+   "sha256": "8a613b2668f54d6d6e770d01f54f0b9f1c58c0ecdf4b6713aab4a75ba252ff42",
    "bbox": [
     24,
     50,
@@ -1259,7 +1259,7 @@
   },
   "pachyrhinosaurus_walk_W_002": {
    "file": "pachyrhinosaurus_walk_W_002.png",
-   "sha256": "bfa6468f3a1ed37d95f846b4e94b95e4c7f974311c22ba4627cbb62a9f0bddf1",
+   "sha256": "5c2ba0b343e0e3e47780aa182f3ce29705da6ce6916a2be0d75ce863d9bf9cb6",
    "bbox": [
     21,
     50,
@@ -1303,7 +1303,7 @@
   },
   "pachyrhinosaurus_walk_S_003": {
    "file": "pachyrhinosaurus_walk_S_003.png",
-   "sha256": "33ba95a1f78409e57f5c314e9890ef34b85a94d0516195b9d6e2a1fecae346fb",
+   "sha256": "11db642def09fd268de17171408795289fd1200bc63fdf4774eea6f2d47c58a6",
    "bbox": [
     50,
     30,
@@ -1347,7 +1347,7 @@
   },
   "pachyrhinosaurus_walk_N_003": {
    "file": "pachyrhinosaurus_walk_N_003.png",
-   "sha256": "fde421aa3e001963dd20aef3bcc043b04a3d12eb9b11a2c3d591fc028aa28a28",
+   "sha256": "e023c8c045233bd13b2b70d6396f182177676663ab09e1361f1d3491e604469c",
    "bbox": [
     50,
     27,
@@ -1391,7 +1391,7 @@
   },
   "pachyrhinosaurus_walk_E_003": {
    "file": "pachyrhinosaurus_walk_E_003.png",
-   "sha256": "86cd596906ef4254b673a4dcb31a5c32fb0931de990299bd17d1da3938884b39",
+   "sha256": "be78cdbdeb1112f75fac87306ece9bcd93bff5dda8df88639273a5362d13e881",
    "bbox": [
     23,
     50,
@@ -1435,7 +1435,7 @@
   },
   "pachyrhinosaurus_walk_W_003": {
    "file": "pachyrhinosaurus_walk_W_003.png",
-   "sha256": "39e53ef1ccebc017002970a22fe52b9ab95b72bf17ad592acece61e1ffb31551",
+   "sha256": "4cb967894684c5f17051a7698af5396222378adaf35f8a927a9aa60f0f1ee936",
    "bbox": [
     21,
     50,
@@ -1479,7 +1479,7 @@
   },
   "pachyrhinosaurus_walk_S_004": {
    "file": "pachyrhinosaurus_walk_S_004.png",
-   "sha256": "41a5b1b2fdca70ff7131ed96c3f7e4fca770b95e2a3233d7c72fa58686191707",
+   "sha256": "9ce4bf6ba0c8057ce41f49c0dfab08ee4d31107157b262eaf0eda1728aac9249",
    "bbox": [
     50,
     30,
@@ -1523,7 +1523,7 @@
   },
   "pachyrhinosaurus_walk_N_004": {
    "file": "pachyrhinosaurus_walk_N_004.png",
-   "sha256": "3198f557a9cb07eb5fdc07be1adc27d28798f90b01880ff0759262c8bdf3dd0e",
+   "sha256": "d4af914305b1c8a5b0dc3d6aaaac89ce124ce709bd4214c75df65f3cbb81f064",
    "bbox": [
     50,
     28,
@@ -1567,7 +1567,7 @@
   },
   "pachyrhinosaurus_walk_E_004": {
    "file": "pachyrhinosaurus_walk_E_004.png",
-   "sha256": "74df09fd7043157356b7a0fe5865e2a193220886b2fa7b72b5bffd6b97694ece",
+   "sha256": "af48264cc9af81594c2d96e6e224a0a5c6d8f236fbbeba4f603f2ca671d23174",
    "bbox": [
     23,
     50,
@@ -1611,7 +1611,7 @@
   },
   "pachyrhinosaurus_walk_W_004": {
    "file": "pachyrhinosaurus_walk_W_004.png",
-   "sha256": "6798d544fe36f3b0ab0a18f3d19c8ee17bd7586ede06119238fd55cb836310a6",
+   "sha256": "f1f23a3f203ed87ea47d035ac9f71e105d8c816b3f5c9a35ff4fb48ca5aa5992",
    "bbox": [
     21,
     50,
@@ -1655,7 +1655,7 @@
   },
   "pachyrhinosaurus_walk_S_005": {
    "file": "pachyrhinosaurus_walk_S_005.png",
-   "sha256": "4f55c191ac2e029ee8d71aba2bb74dcc00aa3c7da6d0b916adfbf2c2d3cbde16",
+   "sha256": "b4c7f7760ee6eebc8816d4f31b6a589baab2a0f36d62fd06f2179022c10ddc2f",
    "bbox": [
     50,
     30,
@@ -1699,7 +1699,7 @@
   },
   "pachyrhinosaurus_walk_N_005": {
    "file": "pachyrhinosaurus_walk_N_005.png",
-   "sha256": "ce5a6c7663ce70110c3be5bf4289d4a0b0f2c4dd8d03c4ad93b116baef7370c0",
+   "sha256": "c12e88c59687beaf258c144044ed7b11e97e4d2e546d1ef6c358109d57ffe7cf",
    "bbox": [
     50,
     28,
@@ -1743,7 +1743,7 @@
   },
   "pachyrhinosaurus_walk_E_005": {
    "file": "pachyrhinosaurus_walk_E_005.png",
-   "sha256": "39095d0bfbe91758936be18f3cd78124073828c1355efec592de1a3a50044d9c",
+   "sha256": "b9b5b091c3c065384c4b924a7d12494b8261a6f165935a54342b985f0433b4cb",
    "bbox": [
     23,
     50,
@@ -1787,7 +1787,7 @@
   },
   "pachyrhinosaurus_walk_W_005": {
    "file": "pachyrhinosaurus_walk_W_005.png",
-   "sha256": "4da91d339fec4426ad6f5af637616c177589aeb9694ca67e52bbea50a46a72d8",
+   "sha256": "c688e96b478ece0b7859c7632704537ef5dc0c0b548817aa4ff488128b66f0b1",
    "bbox": [
     21,
     50,
@@ -1831,7 +1831,7 @@
   },
   "pachyrhinosaurus_run_S_000": {
    "file": "pachyrhinosaurus_run_S_000.png",
-   "sha256": "dd128502d2f61a22fd0f046d5fb693890d1a4c456baab0d51f37bf7d62697b8f",
+   "sha256": "d2783b411c5316d3d13df156656e1aa66d441594f6733e5b0a2382d9ec6706b4",
    "bbox": [
     50,
     29,
@@ -1875,7 +1875,7 @@
   },
   "pachyrhinosaurus_run_N_000": {
    "file": "pachyrhinosaurus_run_N_000.png",
-   "sha256": "ac53016ef795e051c05d94db68e972f902162f8d67e082049de33b6c2219f499",
+   "sha256": "04616cdd2a0b68e2f7cc36534f69e77ae96aee0167f61e90ba080c7e6fb41310",
    "bbox": [
     50,
     28,
@@ -1919,7 +1919,7 @@
   },
   "pachyrhinosaurus_run_E_000": {
    "file": "pachyrhinosaurus_run_E_000.png",
-   "sha256": "d892c7b100f7af945602a63ff0161445bc54e92010aa19da1a1b53c44f69cd52",
+   "sha256": "96682bc9a9d769ec80d4fb9ec7d27ed492a4c4a6e817e1d809b1daacbf51dbbf",
    "bbox": [
     23,
     51,
@@ -1963,7 +1963,7 @@
   },
   "pachyrhinosaurus_run_W_000": {
    "file": "pachyrhinosaurus_run_W_000.png",
-   "sha256": "0425813adc36b1d29f6502fa0098dda5bd0056ff899a167c0401efab24892d5d",
+   "sha256": "e8024eb8dbea8547162b3a723464000ba0bb46c5e2bab739ad53eed7d015a00c",
    "bbox": [
     21,
     51,
@@ -2007,7 +2007,7 @@
   },
   "pachyrhinosaurus_run_S_001": {
    "file": "pachyrhinosaurus_run_S_001.png",
-   "sha256": "66665a8065fa57e41b3e3deec3a3b205903118b0599814b29ab53c035b7d1d00",
+   "sha256": "e5e1fe411f84d82498cdad4b59ab2f484fd6944649b5de8463f6aaf90d3279fa",
    "bbox": [
     50,
     29,
@@ -2051,7 +2051,7 @@
   },
   "pachyrhinosaurus_run_N_001": {
    "file": "pachyrhinosaurus_run_N_001.png",
-   "sha256": "fafc8033d05065d21f4962167bb0a898b5969af4b54983b8aa94d92dc1eb86d6",
+   "sha256": "2e40aa22a3bb1ffa07442bffe0eaf10c7a3d9fe2bfc2b9b4592fbf53a8098df1",
    "bbox": [
     50,
     29,
@@ -2095,7 +2095,7 @@
   },
   "pachyrhinosaurus_run_E_001": {
    "file": "pachyrhinosaurus_run_E_001.png",
-   "sha256": "8dad676418f17f9508c9020c8ddc30593866de43b7427094ab47d96cbd58a39c",
+   "sha256": "a4935f5591392c931e5f402506fbbcbc1364ddc398f105eb4341e328a1fc10ea",
    "bbox": [
     23,
     50,
@@ -2139,7 +2139,7 @@
   },
   "pachyrhinosaurus_run_W_001": {
    "file": "pachyrhinosaurus_run_W_001.png",
-   "sha256": "ac64c94e3214ae95bcc99aee33b3d2a1d0f93de7b0764db1f501a6b88a12e289",
+   "sha256": "f6f1039e57dbc773923d397ef275387e3ec3b2a15db68a75bf6545330e03af1c",
    "bbox": [
     22,
     51,
@@ -2183,7 +2183,7 @@
   },
   "pachyrhinosaurus_run_S_002": {
    "file": "pachyrhinosaurus_run_S_002.png",
-   "sha256": "55cda96ea72ade75d1cfdfb995d6b2067fc490e85d7d17f032e9cdd9256dea53",
+   "sha256": "fe18908aac54317191f9c3f29cb5d9ce8fe509bdd0e72b229b68040864623046",
    "bbox": [
     50,
     29,
@@ -2227,7 +2227,7 @@
   },
   "pachyrhinosaurus_run_N_002": {
    "file": "pachyrhinosaurus_run_N_002.png",
-   "sha256": "84db02c351026420b48d65fc3013f7c892b69c807dd450ec61894e299e0e6c70",
+   "sha256": "a02bf5848a2c050a2c86067104ff60c27812ba009beb5a8219b56f41e6228806",
    "bbox": [
     50,
     29,
@@ -2271,7 +2271,7 @@
   },
   "pachyrhinosaurus_run_E_002": {
    "file": "pachyrhinosaurus_run_E_002.png",
-   "sha256": "2e068841a89badfcb3c272d27ec6571e9a5fcc0e9f43372ed1ddb385bb80fa30",
+   "sha256": "658fdfdc4acbe07211c1952702e9c1dab9ab535a76de8233872e719c710cb532",
    "bbox": [
     23,
     50,
@@ -2315,7 +2315,7 @@
   },
   "pachyrhinosaurus_run_W_002": {
    "file": "pachyrhinosaurus_run_W_002.png",
-   "sha256": "c56d073b3977e5b9c6aec98e7158ce05b71395edfba37709628f739a7e4e8f64",
+   "sha256": "ecc805df19794eaa1df980384bb4e95ce91a43837f7095008b2f5adec442e7c3",
    "bbox": [
     22,
     51,
@@ -2359,7 +2359,7 @@
   },
   "pachyrhinosaurus_run_S_003": {
    "file": "pachyrhinosaurus_run_S_003.png",
-   "sha256": "a229f415b62fc4f83b75258cd55351e4137ff4448ae5e457227351443899d49d",
+   "sha256": "b4bff6eb2922f8f0db8a709026df2a2aba8cc74a2d32cc444f95841e599dbfc7",
    "bbox": [
     50,
     29,
@@ -2403,7 +2403,7 @@
   },
   "pachyrhinosaurus_run_N_003": {
    "file": "pachyrhinosaurus_run_N_003.png",
-   "sha256": "f72790f039019ad295b27717f195b1e6763389c97d48a140a2278c011afd184e",
+   "sha256": "23687684c6e2873d4c8693b667811cf56c0dfe1d6fc4e4f0c996cc64442f7cba",
    "bbox": [
     50,
     28,
@@ -2447,7 +2447,7 @@
   },
   "pachyrhinosaurus_run_E_003": {
    "file": "pachyrhinosaurus_run_E_003.png",
-   "sha256": "5182af1d1b3a497b498b1422714698e86e203baa8dbfdf25b8868afc63db8802",
+   "sha256": "3a7c6c12530e68571665539ed99f27468232e9bc6180e162b09cf40584cb852e",
    "bbox": [
     23,
     51,
@@ -2491,7 +2491,7 @@
   },
   "pachyrhinosaurus_run_W_003": {
    "file": "pachyrhinosaurus_run_W_003.png",
-   "sha256": "909dede8dde8e9295ff5f73a8c967d02c30e55417b561ed24d7d80e5cb9590f5",
+   "sha256": "b1f7f789c0f2fb0a93b5a1297d783a205d481cf889835ba8bb53cd48cd3a99a8",
    "bbox": [
     21,
     51,
@@ -2535,7 +2535,7 @@
   },
   "pachyrhinosaurus_run_S_004": {
    "file": "pachyrhinosaurus_run_S_004.png",
-   "sha256": "1514ddc2fdfdb84243e0e4bec65b881f2f419d6164dbece396a805ed5c894aa5",
+   "sha256": "b8b2e4b9b53f04f36df56974764749c586e47b5c0e27549f12d2e61e77906dca",
    "bbox": [
     50,
     29,
@@ -2579,7 +2579,7 @@
   },
   "pachyrhinosaurus_run_N_004": {
    "file": "pachyrhinosaurus_run_N_004.png",
-   "sha256": "2759de2823406901f08302baa90ae91ca28530936b04290abdb85adc468d94e2",
+   "sha256": "a85d618fa42ec20ce19846962db8f8ac759c6656292862d1268c4fde64fa7952",
    "bbox": [
     50,
     29,
@@ -2623,7 +2623,7 @@
   },
   "pachyrhinosaurus_run_E_004": {
    "file": "pachyrhinosaurus_run_E_004.png",
-   "sha256": "2f87bf2684235bfb2760effbf49b5b1aff873627dfe099fba022e84a353d85e6",
+   "sha256": "49ca1de7611aed290ebc225c0156099bc72ab1e6b4bb590393aff09f3bdad532",
    "bbox": [
     23,
     50,
@@ -2667,7 +2667,7 @@
   },
   "pachyrhinosaurus_run_W_004": {
    "file": "pachyrhinosaurus_run_W_004.png",
-   "sha256": "162850c3bb9e141be2e6e65db10176efbf92e53ba6a84305f1cbac75102f95da",
+   "sha256": "fb8dc0e6247dbc9ad57db7d78eb1268cd3275ffce4f6235e02cd7d58107d6339",
    "bbox": [
     22,
     51,
@@ -2711,7 +2711,7 @@
   },
   "pachyrhinosaurus_run_S_005": {
    "file": "pachyrhinosaurus_run_S_005.png",
-   "sha256": "0eaa00a00c38cacb9fe28999d7273a28d12e1f7dc02c61a7e2e2699f6d2b40a1",
+   "sha256": "8d3ac89be2b7af298a983bd44c4ca9331864dc7e22fa785cddd090fde165bc33",
    "bbox": [
     50,
     29,
@@ -2755,7 +2755,7 @@
   },
   "pachyrhinosaurus_run_N_005": {
    "file": "pachyrhinosaurus_run_N_005.png",
-   "sha256": "bc670f5c959a65380e765f8401ffa2235bef6b3c9bb26875fd1b38ff04ee104d",
+   "sha256": "68d6f7ea290caef4b483587845518c9c4976a2b72839f1c4f382595ac70b3180",
    "bbox": [
     50,
     29,
@@ -2799,7 +2799,7 @@
   },
   "pachyrhinosaurus_run_E_005": {
    "file": "pachyrhinosaurus_run_E_005.png",
-   "sha256": "ff35f2d1aea62dfb77d826c6a219e9861b81d3e236f1743bc82e28c0c47dbcce",
+   "sha256": "0f78945798b4ae01508143878a0b81ccda8dee0af445b20751e78c0f1b0d9c80",
    "bbox": [
     23,
     50,
@@ -2843,7 +2843,7 @@
   },
   "pachyrhinosaurus_run_W_005": {
    "file": "pachyrhinosaurus_run_W_005.png",
-   "sha256": "fd4d47899dbddb0dba90041510c9c7b3526ef6f8ff1ee47d85cf39a14e5ddc1b",
+   "sha256": "6031718cc382c49bf5e040c844f2a61020d1043403fefcbc110104ab6b4beb55",
    "bbox": [
     22,
     51,
@@ -2887,7 +2887,7 @@
   },
   "pachyrhinosaurus_attack_S_000": {
    "file": "pachyrhinosaurus_attack_S_000.png",
-   "sha256": "3ba5165bb0e58fb1339d489cdb00054e1d2814cf0b36b937bcb03aabded5f639",
+   "sha256": "89bfa68d95bbca63210ed85ee2cd5fb6ec1d69968d5c37a1101e0aadd9aae293",
    "bbox": [
     50,
     29,
@@ -2931,7 +2931,7 @@
   },
   "pachyrhinosaurus_attack_N_000": {
    "file": "pachyrhinosaurus_attack_N_000.png",
-   "sha256": "bae083fe0539ecfe782e9c97b32c18fe41aaa11ba4f1f33c1e0e02b783d218b8",
+   "sha256": "d476a3f0739d928afc29abf261e9bc3675f4a800bd957823b45850a763de37f1",
    "bbox": [
     50,
     28,
@@ -2975,7 +2975,7 @@
   },
   "pachyrhinosaurus_attack_E_000": {
    "file": "pachyrhinosaurus_attack_E_000.png",
-   "sha256": "c491f630ea7f985081f6b7b5caf7a964ece172da6bded7f75f2b022bdea45250",
+   "sha256": "db5e7ed7d4d162a2cfc3f355018ad446bfe6df3b77e8273d232f163dec50f21c",
    "bbox": [
     22,
     50,
@@ -3019,7 +3019,7 @@
   },
   "pachyrhinosaurus_attack_W_000": {
    "file": "pachyrhinosaurus_attack_W_000.png",
-   "sha256": "30adf8ee17401500c1870c9cda4cdcbbcc18fccefcd0236f5bba524da31be152",
+   "sha256": "ac49b2eea0172033313f61fd625d3b642cd12f539428bdbc5314d7bb729d1624",
    "bbox": [
     23,
     50,
@@ -3063,7 +3063,7 @@
   },
   "pachyrhinosaurus_attack_S_001": {
    "file": "pachyrhinosaurus_attack_S_001.png",
-   "sha256": "5f71917bfa8d926717381df76b798d4551dcf80481429abf200bcd4d322fa0cb",
+   "sha256": "5635d7b011d39f71c0ccf7764ab293467012c57bb7e7790e4e82412c79f19a9a",
    "bbox": [
     50,
     28,
@@ -3107,7 +3107,7 @@
   },
   "pachyrhinosaurus_attack_N_001": {
    "file": "pachyrhinosaurus_attack_N_001.png",
-   "sha256": "68a2c1a6b449baae575d83b8f420ef4cbe0263b57f4d83d8e1fbe31b6539d592",
+   "sha256": "33bee7babce8cd1491bb18c1d7d63c69cda598ddaa16f0a8ea078498d6a9cdd8",
    "bbox": [
     50,
     29,
@@ -3151,7 +3151,7 @@
   },
   "pachyrhinosaurus_attack_E_001": {
    "file": "pachyrhinosaurus_attack_E_001.png",
-   "sha256": "c6f9373dbbbffe1a3321df78b14c7350f08f12882cfe6b75bfec3bc5368aa403",
+   "sha256": "6b1b47c6b08803709555995801ea89c6c83f6a1ff86cc176141d592318cf0e75",
    "bbox": [
     21,
     50,
@@ -3195,7 +3195,7 @@
   },
   "pachyrhinosaurus_attack_W_001": {
    "file": "pachyrhinosaurus_attack_W_001.png",
-   "sha256": "7db3d5af87d27ceed711b2ddca601497d3c7b3c5e49c31779fe236f67c5b2621",
+   "sha256": "8d59122cfe9511986f3c1b82ea1079effbc7da3f976f412e1898a902ab3096b2",
    "bbox": [
     25,
     50,
@@ -3239,7 +3239,7 @@
   },
   "pachyrhinosaurus_attack_S_002": {
    "file": "pachyrhinosaurus_attack_S_002.png",
-   "sha256": "365c6b86be1a21eb62418cdd23a7024ec5089a0e444506b3c5685359ed455f2b",
+   "sha256": "cbe32b6b22de81d325adbc9a32f477569e641be63c270a9f6db417b493af76cc",
    "bbox": [
     50,
     29,
@@ -3283,7 +3283,7 @@
   },
   "pachyrhinosaurus_attack_N_002": {
    "file": "pachyrhinosaurus_attack_N_002.png",
-   "sha256": "35954126e8feaf8da22749a8f4e79a355b9ef683ddb70b3d58a21504bc493e0c",
+   "sha256": "19c4a8410a7b35c2a749cf9fd1604c3426727087d9d9b196ccc400428598dc6b",
    "bbox": [
     50,
     30,
@@ -3327,7 +3327,7 @@
   },
   "pachyrhinosaurus_attack_E_002": {
    "file": "pachyrhinosaurus_attack_E_002.png",
-   "sha256": "dc6f04dc2190dad868c591c6b3a2fec9edd5acc44902c9e05891ab9f8e6555a4",
+   "sha256": "386d04637f1cfaeb7b1e3a451b1be9fe3d61436e971e6713e256caf2a28d3c62",
    "bbox": [
     22,
     50,
@@ -3371,7 +3371,7 @@
   },
   "pachyrhinosaurus_attack_W_002": {
    "file": "pachyrhinosaurus_attack_W_002.png",
-   "sha256": "e5b49583d2f6a6a6bd47a7723096862044ecbb7882f3cca638d3afcaa21aae88",
+   "sha256": "8188589e0d2978fbbf681e8f03e2fb89e82b99a46a14b1a81ca85441434b115f",
    "bbox": [
     23,
     50,
@@ -3415,7 +3415,7 @@
   },
   "pachyrhinosaurus_attack_S_003": {
    "file": "pachyrhinosaurus_attack_S_003.png",
-   "sha256": "51326d476cfcc05993f1725b305bf955a9229de0b4734a634e5d35a0c0f74ae0",
+   "sha256": "cb34558544e112bd0ea6c4041fa58fb0adc6302ad5cf61ebd4b1e52de7a4dcf3",
    "bbox": [
     50,
     32,
@@ -3459,7 +3459,7 @@
   },
   "pachyrhinosaurus_attack_N_003": {
    "file": "pachyrhinosaurus_attack_N_003.png",
-   "sha256": "91695180d04c01040432d0072456396ff75722101512442215772553bedbebc9",
+   "sha256": "74f86c21301b46f6bdb8a91618a106fe79af32424883657d1655ac03359a9f4e",
    "bbox": [
     50,
     27,
@@ -3503,7 +3503,7 @@
   },
   "pachyrhinosaurus_attack_E_003": {
    "file": "pachyrhinosaurus_attack_E_003.png",
-   "sha256": "970d822b6c004154123d6f13bef344407b5f4ebc7d176a57fe1bfe40b5cead5c",
+   "sha256": "c2ffa1754db76c233b09a088d2b8098c375350dd4b84b825073a94ec5a3de056",
    "bbox": [
     28,
     51,
@@ -3547,7 +3547,7 @@
   },
   "pachyrhinosaurus_attack_W_003": {
    "file": "pachyrhinosaurus_attack_W_003.png",
-   "sha256": "120904b4be23e3ef0aac5d5c4dca614d1601e8573b272ba1647f582b4f40e6f9",
+   "sha256": "514df44c68db57e1736a48f3a9d9b96c525b003522f387bf7f66024e360d94a2",
    "bbox": [
     17,
     51,
@@ -3591,7 +3591,7 @@
   },
   "pachyrhinosaurus_attack_S_004": {
    "file": "pachyrhinosaurus_attack_S_004.png",
-   "sha256": "91b35ab68741a90186a48357d81d56dff030d50a94c8974f9f2d751fc967856c",
+   "sha256": "8b328a8b2fed1230bf2a9674a29f7f5cce2b40d54b85e5e3b060f822a2648db4",
    "bbox": [
     50,
     31,
@@ -3635,7 +3635,7 @@
   },
   "pachyrhinosaurus_attack_N_004": {
    "file": "pachyrhinosaurus_attack_N_004.png",
-   "sha256": "535d8697cfeb613fab9f35dce6002af7b00593304e956d4098df01fad587a2b9",
+   "sha256": "0388f763b23657a484809fbd5a1710470de76d911611401f423e7af82f72daee",
    "bbox": [
     50,
     27,
@@ -3679,7 +3679,7 @@
   },
   "pachyrhinosaurus_attack_E_004": {
    "file": "pachyrhinosaurus_attack_E_004.png",
-   "sha256": "b1b7c319ef095396503733846bd5fc12e3c93ad5dcf18b1b35740b0660a56fcd",
+   "sha256": "9a8c09955e4e6f73bfe8e9d50c007af2c97e9bc01cd63dd3a34216d9b1c92231",
    "bbox": [
     26,
     50,
@@ -3723,7 +3723,7 @@
   },
   "pachyrhinosaurus_attack_W_004": {
    "file": "pachyrhinosaurus_attack_W_004.png",
-   "sha256": "2c1dded335452184b304fe450643e35089e434df1c7695f3f844b080fa4851ee",
+   "sha256": "92d9920396f1dd9800be70afa8c7febca343ee7134645b321644f715bf69df36",
    "bbox": [
     19,
     50,
@@ -3767,7 +3767,7 @@
   },
   "pachyrhinosaurus_attack_S_005": {
    "file": "pachyrhinosaurus_attack_S_005.png",
-   "sha256": "27bffc687a7e3a20d2171cb4090f9ba33e742a9aab0243c9f79e491b7d6cc331",
+   "sha256": "5139d5bc021460ecd8fc767d338eae08139d4bce60b76b90ae12d211f2c7f281",
    "bbox": [
     50,
     30,
@@ -3811,7 +3811,7 @@
   },
   "pachyrhinosaurus_attack_N_005": {
    "file": "pachyrhinosaurus_attack_N_005.png",
-   "sha256": "2e3befe81d8f1ae050983998af316eaf57a997f1eda1e7ced0f912e5b02de1d3",
+   "sha256": "50d97b99d837d03fc9536098f5b70724d9c1ef0baaca3b637668a786bc02b30e",
    "bbox": [
     50,
     27,
@@ -3855,7 +3855,7 @@
   },
   "pachyrhinosaurus_attack_E_005": {
    "file": "pachyrhinosaurus_attack_E_005.png",
-   "sha256": "0051695fd50ddefaeb5d6f02f504a7ace8360cac6c706a2363144226d147c630",
+   "sha256": "3029010d5622aa32aeb598c08fe86995dfdce07b5ef958bc8339ec155575b1f0",
    "bbox": [
     24,
     50,
@@ -3899,7 +3899,7 @@
   },
   "pachyrhinosaurus_attack_W_005": {
    "file": "pachyrhinosaurus_attack_W_005.png",
-   "sha256": "a44d682d45ff9009ac288aec4cad6f85b99ae3f07601b1e7c1112df6c42f3720",
+   "sha256": "cbd7d980dd03f9dc53b174653bad7e4322eacb26da7ad7f45240a222e5b8b5e7",
    "bbox": [
     21,
     50,
@@ -3943,7 +3943,7 @@
   },
   "pachyrhinosaurus_hurt_S_000": {
    "file": "pachyrhinosaurus_hurt_S_000.png",
-   "sha256": "3a430204210b906959b3b19d5cc557d09eaab588b1a4322e2c33312451db97f5",
+   "sha256": "b4c42f7d1ae187d599b045f998a0d20321bc7f8540cf021646c0442e1d873b69",
    "bbox": [
     50,
     29,
@@ -3987,7 +3987,7 @@
   },
   "pachyrhinosaurus_hurt_N_000": {
    "file": "pachyrhinosaurus_hurt_N_000.png",
-   "sha256": "41d2a04a9bb133c9d125935493dbab90356e96eab0d58ff0bd7eb2a35aff907e",
+   "sha256": "9135b798fe699521865c6a480fdf2029db4fdbf43f076ce0d7337581fa77e7fb",
    "bbox": [
     50,
     28,
@@ -4031,7 +4031,7 @@
   },
   "pachyrhinosaurus_hurt_E_000": {
    "file": "pachyrhinosaurus_hurt_E_000.png",
-   "sha256": "6ddf6a8154e6901410788ef3e2998482982beea6e34299f842f2933372cc6f1b",
+   "sha256": "6ffcd55d5f55d867e1d59b8fa098fdf1bbfdff573e3b47abf71bb41d8bd5d6f1",
    "bbox": [
     22,
     49,
@@ -4075,7 +4075,7 @@
   },
   "pachyrhinosaurus_hurt_W_000": {
    "file": "pachyrhinosaurus_hurt_W_000.png",
-   "sha256": "f464baf58064db206dd2ec4f96a29e84c19de1278bae84955020917e7ac5a9e2",
+   "sha256": "87b110a145866560723c2419bcab0fa5d0ed7cc5de331f6731e47a95a79f3310",
    "bbox": [
     26,
     49,
@@ -4119,7 +4119,7 @@
   },
   "pachyrhinosaurus_hurt_S_001": {
    "file": "pachyrhinosaurus_hurt_S_001.png",
-   "sha256": "343c330743c0bb9d9c3d02d16efa85ae1f2e05e8536effa187d28206ed6a17cd",
+   "sha256": "6652937d75254d2f793ddca0783dc9b01d8755ea06901f284174f46201eded6b",
    "bbox": [
     50,
     29,
@@ -4163,7 +4163,7 @@
   },
   "pachyrhinosaurus_hurt_N_001": {
    "file": "pachyrhinosaurus_hurt_N_001.png",
-   "sha256": "cc17a187acea9570105836ae367fe60e487b504fb97a09b56e1cea8c1f5523bd",
+   "sha256": "48f8304312743879ecac682297a6d3f5c72c5cda43c6412756b020e85019a79a",
    "bbox": [
     50,
     27,
@@ -4207,7 +4207,7 @@
   },
   "pachyrhinosaurus_hurt_E_001": {
    "file": "pachyrhinosaurus_hurt_E_001.png",
-   "sha256": "b5a7815aa030dd3a6b53fa0a7dd2dafd33ab61802c0a6b670c1894cfb3e6ac3b",
+   "sha256": "99ddd62d41a64bcc3db8ff96a35ebbd1ef736bb56bd0151ee48b9100a10ee8e2",
    "bbox": [
     22,
     50,
@@ -4251,7 +4251,7 @@
   },
   "pachyrhinosaurus_hurt_W_001": {
    "file": "pachyrhinosaurus_hurt_W_001.png",
-   "sha256": "f884d5f6e2c7a3a95a569f5ffb5b871630ebccf61b9350d824cb2f111865d2b5",
+   "sha256": "80519047fe188977f207180994c1485b0e2cadc6df60cc9c9efd3306a0f3fa44",
    "bbox": [
     23,
     50,
@@ -4295,7 +4295,7 @@
   },
   "pachyrhinosaurus_death_S_000": {
    "file": "pachyrhinosaurus_death_S_000.png",
-   "sha256": "41cf284a728876eb84a36a858c1fac2d36097cccdfce3f1d545ffca07f51f35b",
+   "sha256": "77009725ad467247fce30183a1ab0baa5f64a502b85e4430b714a683b51e84f8",
    "bbox": [
     50,
     30,
@@ -4305,7 +4305,7 @@
   },
   "pachyrhinosaurus_death_N_000": {
    "file": "pachyrhinosaurus_death_N_000.png",
-   "sha256": "ff3ca420216b791e7db68d5785d9ccea284a81b0f5ab987e0cfcc87ee7465521",
+   "sha256": "f7899bbfca6e3879e01700dcb7aafecfbbb9afd5231698e03caa9c505bb64a12",
    "bbox": [
     50,
     27,
@@ -4315,7 +4315,7 @@
   },
   "pachyrhinosaurus_death_E_000": {
    "file": "pachyrhinosaurus_death_E_000.png",
-   "sha256": "c67f90f501ad84780adbeeb8f67e305141ff4509179816cbfbe186946d1ce618",
+   "sha256": "80eb55e2a83915ac18285a18832e22d2dc4fca26523a1718a02ae6a045a90584",
    "bbox": [
     23,
     50,
@@ -4325,7 +4325,7 @@
   },
   "pachyrhinosaurus_death_W_000": {
    "file": "pachyrhinosaurus_death_W_000.png",
-   "sha256": "96dce3ff5b9ed4511123aeb806e3552c0037f637c374f58b63dd2c9134cbb4f5",
+   "sha256": "926316c50c28dd7cd53da7004ea19d92bfc3964376e770d881410d5aaa88fb66",
    "bbox": [
     21,
     50,
@@ -4335,7 +4335,7 @@
   },
   "pachyrhinosaurus_death_S_001": {
    "file": "pachyrhinosaurus_death_S_001.png",
-   "sha256": "5659bc8eb67709c54eef8a6851a3ce876fa0f8f14d9c877d5dfb6c579fdda618",
+   "sha256": "f42ae92f3f7c1c9d32d4bad4460d60ee1d6d7a97643f6f951d24380bb0224b70",
    "bbox": [
     51,
     29,
@@ -4345,7 +4345,7 @@
   },
   "pachyrhinosaurus_death_N_001": {
    "file": "pachyrhinosaurus_death_N_001.png",
-   "sha256": "e07694ed424debd7caabcc2c3124768a4e07785a7f1f788f5f149c7c371d83f2",
+   "sha256": "92dd4945741a8b43e049d58a29855bbac5dfdcd51fd08e0f1ff8f4f508e253ec",
    "bbox": [
     50,
     27,
@@ -4355,17 +4355,17 @@
   },
   "pachyrhinosaurus_death_E_001": {
    "file": "pachyrhinosaurus_death_E_001.png",
-   "sha256": "883603bff1d79ca7e96ab202cecff0d6a85ac8aa8296f7a1d44060fd5f70dd55",
+   "sha256": "5300f2d23895967031689b7cb34dcfa05a035f6fdc764d161d3f0627e360df9b",
    "bbox": [
     23,
-    49,
+    48,
     123,
     88
    ]
   },
   "pachyrhinosaurus_death_W_001": {
    "file": "pachyrhinosaurus_death_W_001.png",
-   "sha256": "fbda54db48e7cabe2fd0a64a3ffe6e32293fb42ae377abebfb6df7cecab1c74d",
+   "sha256": "4d3518399af78cad249f95bd93ee06b08c5e98866253d5fabc1e9f171fa02fe3",
    "bbox": [
     21,
     51,
@@ -4375,19 +4375,19 @@
   },
   "pachyrhinosaurus_death_S_002": {
    "file": "pachyrhinosaurus_death_S_002.png",
-   "sha256": "ab68e8893c28334426fa4ca5f4be09ed84377e78f14b589a7e0b4abeb76a2443",
+   "sha256": "d836ce0f80e4624e99a2085bad3dbdfaf5e72a1821a604f61144a8ba27d18709",
    "bbox": [
     54,
     28,
-    97,
+    98,
     111
    ]
   },
   "pachyrhinosaurus_death_N_002": {
    "file": "pachyrhinosaurus_death_N_002.png",
-   "sha256": "7e3200cdf0ef765997906ea6988259d37239371e0fe86a4b71f1ebe0cfc8be71",
+   "sha256": "f751b5d037b198ea648c4613e183e2b303e00ece5156220f7d182163bb6369b0",
    "bbox": [
-    47,
+    46,
     27,
     90,
     109
@@ -4395,17 +4395,17 @@
   },
   "pachyrhinosaurus_death_E_002": {
    "file": "pachyrhinosaurus_death_E_002.png",
-   "sha256": "e448300c9f3c8cd19964eab6f47c4e77bb8c5b0153596334d20328dd9092a823",
+   "sha256": "70846450c0d8278169d8a185b232b120d9349bd2b79e16d9de7539d1d9e6894b",
    "bbox": [
     23,
-    46,
+    43,
     123,
     83
    ]
   },
   "pachyrhinosaurus_death_W_002": {
    "file": "pachyrhinosaurus_death_W_002.png",
-   "sha256": "bd2be4ae854b45339a557d87ec604339f699554f63345ca71ee30e588012bcd3",
+   "sha256": "79df154a95071ffcb355b1315b712de843ae198f8177754f73b78c76db1b3f7b",
    "bbox": [
     21,
     53,
@@ -4415,19 +4415,19 @@
   },
   "pachyrhinosaurus_death_S_003": {
    "file": "pachyrhinosaurus_death_S_003.png",
-   "sha256": "6357db8d4d77a4850a469865ca3b776e2d7168cc599ee6fbc826dc4670eac54f",
+   "sha256": "7f78c7ac527270ae3efe67dfd8861c1154186b1aeed95e0a9fa9be2dbdf3592e",
    "bbox": [
     61,
     29,
-    102,
+    105,
     112
    ]
   },
   "pachyrhinosaurus_death_N_003": {
    "file": "pachyrhinosaurus_death_N_003.png",
-   "sha256": "7b06a066dadf6274b81c8565014952a6d48db0829d1002b7c1f1f84a3cf23a0d",
+   "sha256": "446982da7741051fa0bd02d1263fdc1ed7fbb64d70e0d29d7995dab09ca2d278",
    "bbox": [
-    42,
+    39,
     28,
     83,
     109
@@ -4435,39 +4435,39 @@
   },
   "pachyrhinosaurus_death_E_003": {
    "file": "pachyrhinosaurus_death_E_003.png",
-   "sha256": "2bb28082d242f73b7dbbdc2984cbc6ab158be63ae9b9624bcc75b2dfa64334c4",
+   "sha256": "3192ea9b9f3009d48fa1607218a37c7adea28bf344970cf47261500089e6bd89",
    "bbox": [
     24,
-    44,
+    43,
     123,
     76
    ]
   },
   "pachyrhinosaurus_death_W_003": {
    "file": "pachyrhinosaurus_death_W_003.png",
-   "sha256": "9071dd547336c29738fdc7745f4791a4666130a3c9d0ad45f16b8c1c91843631",
+   "sha256": "ac402d66a70ce139f1eecf0e54f021954433b697da6695d512eef548ac7ea6d0",
    "bbox": [
     21,
     57,
     120,
-    96
+    97
    ]
   },
   "pachyrhinosaurus_death_S_004": {
    "file": "pachyrhinosaurus_death_S_004.png",
-   "sha256": "29398a9261afe13278343aac6d7c2dc55b07bc111e7f3ab6e5f1fcb896113aa0",
+   "sha256": "8fd96d938aa248e14f3b17ff635d330d8695d09348175998ef9479cff7147c70",
    "bbox": [
     67,
     32,
-    103,
+    105,
     113
    ]
   },
   "pachyrhinosaurus_death_N_004": {
    "file": "pachyrhinosaurus_death_N_004.png",
-   "sha256": "b5c96288cec563371353f488515e9f9528873ab2a5d40079027c94ea502be53a",
+   "sha256": "6a49df2f7f1f27769079601162a622c8fe803b5a73fd26ef70d0389b128d2a57",
    "bbox": [
-    41,
+    39,
     29,
     77,
     110
@@ -4475,39 +4475,39 @@
   },
   "pachyrhinosaurus_death_E_004": {
    "file": "pachyrhinosaurus_death_E_004.png",
-   "sha256": "67af01adc61060b581bc6da86eac7d60848907de2e98fecd67c444733597f440",
+   "sha256": "89555bcfd9858baa893e72f0b9c54ff046ea2677c123e01d84e24b4b23842df0",
    "bbox": [
     25,
-    44,
+    42,
     123,
     78
    ]
   },
   "pachyrhinosaurus_death_W_004": {
    "file": "pachyrhinosaurus_death_W_004.png",
-   "sha256": "90865623f1c9226116bd26de6bed97d6a522279b3df918fc5f8c9b44c8d8fdcd",
+   "sha256": "ee05fb69d74d3563e2df0ed7995a8e8d640f7a95747e589850c040a9d7ca2d3d",
    "bbox": [
     21,
     61,
     119,
-    99
+    101
    ]
   },
   "pachyrhinosaurus_death_S_005": {
    "file": "pachyrhinosaurus_death_S_005.png",
-   "sha256": "8909c3408086948438150d15985a8d33379903d13c2c8eced1a5c37a9364a14d",
+   "sha256": "ba51d507579914c847c65c1f86b3bb19f379870aa4d277c83fb8308dfe5c19d7",
    "bbox": [
     70,
     34,
-    103,
+    104,
     114
    ]
   },
   "pachyrhinosaurus_death_N_005": {
    "file": "pachyrhinosaurus_death_N_005.png",
-   "sha256": "1f9fdf7c21199d97cf415e8a385323f69c80e42d1d9e5cf2a30b4d4e57601cf8",
+   "sha256": "5dd51d5100fac5e604bbf6d0e73d3d776632f08ebff324cdea686155bb41b38d",
    "bbox": [
-    41,
+    40,
     30,
     74,
     110
@@ -4515,22 +4515,22 @@
   },
   "pachyrhinosaurus_death_E_005": {
    "file": "pachyrhinosaurus_death_E_005.png",
-   "sha256": "eb20b3071df13dfd216f1a97fbdc7d8951490e377f8c2bbe1f4d07b2775c261a",
+   "sha256": "013a6cbf7b98bcff9a9f2a59a5dbf5e53540fec87b7352043b92ce46b9e8f786",
    "bbox": [
     26,
-    44,
+    42,
     123,
     80
    ]
   },
   "pachyrhinosaurus_death_W_005": {
    "file": "pachyrhinosaurus_death_W_005.png",
-   "sha256": "972ead2c76249a26cb05e5d09914165b3e52f828f7f97031a2f41e759bcc47c8",
+   "sha256": "a906dea9390a3486caab1a59d8ed7fdb569eab2b68947c689b1e08fbda6fb05a",
    "bbox": [
     21,
     64,
     118,
-    100
+    102
    ]
   }
  }

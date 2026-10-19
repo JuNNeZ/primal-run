@@ -73,12 +73,12 @@
  "frames": {
   "edmontosaurus_idle_S_000": {
    "file": "edmontosaurus_idle_S_000.png",
-   "sha256": "03abc3c728b96f670e88af6e4e3f21f8ee55df162b94159bcc14b1dc576ff87c",
+   "sha256": "1af4112efa8c6a84f6d888c881320893d7be94c0c3a6b8cfa2db8942096be159",
    "bbox": [
     45,
     19,
     99,
-    118
+    119
    ],
    "joints": {
     "hind_L": [
@@ -155,7 +155,7 @@
   },
   "edmontosaurus_idle_N_000": {
    "file": "edmontosaurus_idle_N_000.png",
-   "sha256": "b70a6daaf61a51f52d3418462a1a4567ed5cc1d33c164e9c9dcb8767af76f81b",
+   "sha256": "c7f039144a83cbb6089a4aaf5f45df78b21af813cf1fd72fb22cda6ad1e7a05d",
    "bbox": [
     45,
     17,
@@ -237,11 +237,11 @@
   },
   "edmontosaurus_idle_E_000": {
    "file": "edmontosaurus_idle_E_000.png",
-   "sha256": "e44684d8f58a7fa22e93bccaf75ca1abd984a01386dd2f0112e58851ea98a972",
+   "sha256": "1fe5c292565ad0a62b2a3bd4f2b886eb4f838de3c46b258d7de638f16024de2d",
    "bbox": [
     10,
     49,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -319,9 +319,9 @@
   },
   "edmontosaurus_idle_W_000": {
    "file": "edmontosaurus_idle_W_000.png",
-   "sha256": "2c77c11718ac0f9b134e7c4b84371ef82a52fc0eed48d4cda686a73344691eaa",
+   "sha256": "cb7d47015c7ff6d57ea38e73c8f0cd0be27d6e39a1c5ba3976d83d8e7847275b",
    "bbox": [
-    11,
+    10,
     49,
     134,
     94
@@ -401,12 +401,12 @@
   },
   "edmontosaurus_idle_S_001": {
    "file": "edmontosaurus_idle_S_001.png",
-   "sha256": "385f08afd746d4ce7f123afec9dc8ad889b1985ab724d7df64732acf7f8f5596",
+   "sha256": "901fbd8a0768152f21250eb708e3321fb3e6bbdcd837ecd96920cc350e317088",
    "bbox": [
     45,
     19,
     99,
-    118
+    119
    ],
    "joints": {
     "hind_L": [
@@ -483,7 +483,7 @@
   },
   "edmontosaurus_idle_N_001": {
    "file": "edmontosaurus_idle_N_001.png",
-   "sha256": "9dd812e284b43c01dda228b1683c511f4181d202bd6fe995d90bc30af9e281df",
+   "sha256": "6c8db30bbab49cf2a2ebac579fb81d4a354ccec3fdf3fb1f55555ed999b7aad9",
    "bbox": [
     45,
     17,
@@ -565,11 +565,11 @@
   },
   "edmontosaurus_idle_E_001": {
    "file": "edmontosaurus_idle_E_001.png",
-   "sha256": "4548f6eed9e5dddf528a55a57e6ff4c8234135a6396be47c726b5429d9e95c3e",
+   "sha256": "62a128c7d1b9881b017154e8e420bc48b06e247cbff1e29ff253e60826f72ce2",
    "bbox": [
     10,
     49,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -647,9 +647,9 @@
   },
   "edmontosaurus_idle_W_001": {
    "file": "edmontosaurus_idle_W_001.png",
-   "sha256": "32710698d5a2becfdab40d07f41b16be3776d3036191173b2cac6343e41d0110",
+   "sha256": "42081455438fed5556bccb7798acef927589e64dcb3bc5ef4d11faaeacfb7ad6",
    "bbox": [
-    11,
+    10,
     49,
     134,
     94
@@ -729,7 +729,7 @@
   },
   "edmontosaurus_idle_S_002": {
    "file": "edmontosaurus_idle_S_002.png",
-   "sha256": "154630a1a04a3bfdd54f0f1c92c9f7f88d313426f9b3a3363581f79a2e577b72",
+   "sha256": "d96733824b383d6d4c17a589ba9b4fcec39cbc9f15a1c3318b94ae6e4e25c7ba",
    "bbox": [
     45,
     19,
@@ -811,7 +811,7 @@
   },
   "edmontosaurus_idle_N_002": {
    "file": "edmontosaurus_idle_N_002.png",
-   "sha256": "7b5bf064bb74a774af0e6ef5566d7828a285aef1796819dee9541a96397eb5ca",
+   "sha256": "879f8e9f93c4595a25fb301ca2874a2d0bb98068362244484267a56bf4d76541",
    "bbox": [
     45,
     17,
@@ -893,11 +893,11 @@
   },
   "edmontosaurus_idle_E_002": {
    "file": "edmontosaurus_idle_E_002.png",
-   "sha256": "bc95388b3773d36bae3709789f05dca9d65f4c6c1c5294e8618da5d08df06ee5",
+   "sha256": "40b7908dba036f9bf79401bdfcf527e26710cb2808e4f84f73afa637842772da",
    "bbox": [
     10,
     49,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -975,9 +975,9 @@
   },
   "edmontosaurus_idle_W_002": {
    "file": "edmontosaurus_idle_W_002.png",
-   "sha256": "8a23a6e1bc23ea035a882695720f9e6ed4822444a7f010daad67f1bb57f81298",
+   "sha256": "e802d30b85c9082c7da71b30c91715f572e4b82f9e151557a495a05313a25ea1",
    "bbox": [
-    11,
+    10,
     49,
     134,
     94
@@ -1057,7 +1057,7 @@
   },
   "edmontosaurus_idle_S_003": {
    "file": "edmontosaurus_idle_S_003.png",
-   "sha256": "82c37ee5eed60ebe51254c1ec5f682ddea7faf18358d6db45472f672744101b2",
+   "sha256": "c8e4d0028f59752fe0a1d9d6c57c88ce77d64de296f4933c9278ee7b2fedab2a",
    "bbox": [
     45,
     19,
@@ -1139,7 +1139,7 @@
   },
   "edmontosaurus_idle_N_003": {
    "file": "edmontosaurus_idle_N_003.png",
-   "sha256": "5e95d79c468c551406db17000def868751a1dbe65f630423d85dd7da5824f1fa",
+   "sha256": "a8342b515e38f10fc421ff4dfcd3928c987542c169abd786840c83d7baeb61f3",
    "bbox": [
     45,
     18,
@@ -1221,11 +1221,11 @@
   },
   "edmontosaurus_idle_E_003": {
    "file": "edmontosaurus_idle_E_003.png",
-   "sha256": "832cb1ab3d1d484806d503a93be7fe080feb76093e08f2d75b2c1c52745fd71b",
+   "sha256": "1b197e4268180fd4ded733aedba8dc9cc3a4b5220399e9980a587da98b780e12",
    "bbox": [
     10,
     49,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -1303,9 +1303,9 @@
   },
   "edmontosaurus_idle_W_003": {
    "file": "edmontosaurus_idle_W_003.png",
-   "sha256": "b42af4d85a4c8e67cc9fbf791bb871d61ca5d44b668d583e2526795900851622",
+   "sha256": "37d76e41e6889b5b708ab7c21423bd3302170d6c9b5b4ec66bf48f3ffcd342d1",
    "bbox": [
-    11,
+    10,
     49,
     134,
     94
@@ -1385,12 +1385,12 @@
   },
   "edmontosaurus_walk_S_000": {
    "file": "edmontosaurus_walk_S_000.png",
-   "sha256": "6ca33c0f024fb08d029c0eb1596f9d53c490f058ffc37f993e7b6ca433156974",
+   "sha256": "f0d252484f0cf15b286217235f57a8be7e498d7ae7df989961f35594724ea140",
    "bbox": [
     45,
     19,
     99,
-    118
+    119
    ],
    "joints": {
     "hind_L": [
@@ -1467,7 +1467,7 @@
   },
   "edmontosaurus_walk_N_000": {
    "file": "edmontosaurus_walk_N_000.png",
-   "sha256": "82187bec3157f11cf157358eec662a904f934d3b3cbaa5abce49de728e4da2d3",
+   "sha256": "1dc344d55e829405a6effd74939dd53b437869ab11a28b4046b31a58b2acba4a",
    "bbox": [
     45,
     17,
@@ -1549,11 +1549,11 @@
   },
   "edmontosaurus_walk_E_000": {
    "file": "edmontosaurus_walk_E_000.png",
-   "sha256": "a17a42e79a361c9813852e46997580030533524b323d2dcbf67e83afd1511e31",
+   "sha256": "7d0b4887827aabe2a55f3def4235e5316a38696f4da66d433e0f761193178fb5",
    "bbox": [
     10,
     48,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -1631,9 +1631,9 @@
   },
   "edmontosaurus_walk_W_000": {
    "file": "edmontosaurus_walk_W_000.png",
-   "sha256": "12fb27306489bef8d066b66f7b547e1b0c8c1675a7370f1eba197ddbce2de104",
+   "sha256": "c926d38f0858380b68a1d69dc0e165edd9e7e8e7b345b0c3ce8ff51a251f5a96",
    "bbox": [
-    11,
+    10,
     49,
     134,
     94
@@ -1713,7 +1713,7 @@
   },
   "edmontosaurus_walk_S_001": {
    "file": "edmontosaurus_walk_S_001.png",
-   "sha256": "6203fe10bde0e82c6a063949d5a632028ef3bbd2629594cc59546834b0f8b3c4",
+   "sha256": "c0cf98b7f76537a430ae0f40396c673c6d6c0348f49c09039da0813863f70843",
    "bbox": [
     45,
     19,
@@ -1795,10 +1795,10 @@
   },
   "edmontosaurus_walk_N_001": {
    "file": "edmontosaurus_walk_N_001.png",
-   "sha256": "dde4868a67716410ef19c3aabf2db51bf0295eac924edce51ed12bbc831956bb",
+   "sha256": "32f7825271d748ccca750ab4442a684cf6b2a2e9a65e64c8918ba9c15024fb5a",
    "bbox": [
     45,
-    18,
+    17,
     99,
     121
    ],
@@ -1877,11 +1877,11 @@
   },
   "edmontosaurus_walk_E_001": {
    "file": "edmontosaurus_walk_E_001.png",
-   "sha256": "4c11b45717646a409788e6de18467329a5e1623a84b4bb0921c62a5e71bf726b",
+   "sha256": "89fbd56561471578c6455019389269280b215f1f811d15beda800bf6feb55be1",
    "bbox": [
     10,
     48,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -1959,9 +1959,9 @@
   },
   "edmontosaurus_walk_W_001": {
    "file": "edmontosaurus_walk_W_001.png",
-   "sha256": "3f29227e9dc73b89239a4e1b3ed379fb062474c10d75f96fc379817fd771a3b3",
+   "sha256": "3e9f798b153f3bc79371aa5dd811b6fca33950c52c91c144891191d566dc4c4d",
    "bbox": [
-    11,
+    10,
     49,
     134,
     94
@@ -2041,7 +2041,7 @@
   },
   "edmontosaurus_walk_S_002": {
    "file": "edmontosaurus_walk_S_002.png",
-   "sha256": "8a4c9234614792e3ac45b227cd6ced3052b3af58d2edc9bf87ed18661636c334",
+   "sha256": "5e6f32d874d9b8cd59b13dc32c4ef1dcdc45ca2cb993699fb0fc27b1e461d464",
    "bbox": [
     45,
     19,
@@ -2123,10 +2123,10 @@
   },
   "edmontosaurus_walk_N_002": {
    "file": "edmontosaurus_walk_N_002.png",
-   "sha256": "7009c4cabc26c906c367c03e8e07c304c680a3e4a738f995fbc7d0986c7a66fd",
+   "sha256": "94d9911b8ae337a671d87e06341fc0704cf520f7136e33650a01e67fd24c5d34",
    "bbox": [
     45,
-    18,
+    17,
     99,
     120
    ],
@@ -2205,11 +2205,11 @@
   },
   "edmontosaurus_walk_E_002": {
    "file": "edmontosaurus_walk_E_002.png",
-   "sha256": "c99114541c0771e2eda02d597beadf4bdf2e30143db7cfe60089536f6e4b1232",
+   "sha256": "75faa350921b3286a501d7e4bec0d16da7e0c2e727826177ba616ac10ea01f8f",
    "bbox": [
     11,
     49,
-    133,
+    134,
     93
    ],
    "joints": {
@@ -2287,9 +2287,9 @@
   },
   "edmontosaurus_walk_W_002": {
    "file": "edmontosaurus_walk_W_002.png",
-   "sha256": "bcbf1c7d893ba6a96e1b45dbc27f95f0ceee4e07a783b9b800e0af1b67cb72fd",
+   "sha256": "07ba260c65f807adb0595c0a5ff08a650ca633e18dc1ff6114556308725e2f93",
    "bbox": [
-    11,
+    10,
     49,
     133,
     94
@@ -2369,12 +2369,12 @@
   },
   "edmontosaurus_walk_S_003": {
    "file": "edmontosaurus_walk_S_003.png",
-   "sha256": "e2c94599f438d147e2a7dec4dfc14f0859974d8f3e3935e2794b56a1b29db405",
+   "sha256": "006f73650f5f89827e65875de9c4d50e9946f596ac37fd691bb63d11383c5616",
    "bbox": [
     45,
     19,
     99,
-    118
+    119
    ],
    "joints": {
     "hind_L": [
@@ -2451,7 +2451,7 @@
   },
   "edmontosaurus_walk_N_003": {
    "file": "edmontosaurus_walk_N_003.png",
-   "sha256": "d0bd5095f276d5c27451405983bb939cfc24c81a0f6b5ff0ed23937465b8afa5",
+   "sha256": "6d9ab1ee9695d3096fe65ea774a753ab085403a6f74b185162c28776fbc99a37",
    "bbox": [
     45,
     17,
@@ -2533,11 +2533,11 @@
   },
   "edmontosaurus_walk_E_003": {
    "file": "edmontosaurus_walk_E_003.png",
-   "sha256": "9bbad736f2dd50ce633b4a0d185e1387f402a84d00797c8be5b11fb7c1bed238",
+   "sha256": "5840abad4a9d9d6db8cac0e5c9da0deb3ac3b7010ae9dec657fd0d9f4c5c64a0",
    "bbox": [
     10,
     49,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -2615,9 +2615,9 @@
   },
   "edmontosaurus_walk_W_003": {
    "file": "edmontosaurus_walk_W_003.png",
-   "sha256": "e05284870c959d900e1dc0670fbb91cc3221546fbc2554ecacba30a38882827d",
+   "sha256": "6da8eeed4caa8ac22ab7d1b6da4fc34e83fbb843505a94edb030cd7300cfacd8",
    "bbox": [
-    11,
+    10,
     48,
     134,
     94
@@ -2697,7 +2697,7 @@
   },
   "edmontosaurus_walk_S_004": {
    "file": "edmontosaurus_walk_S_004.png",
-   "sha256": "becce99f121fe37edb97bba7cf61c67100548627143fbc6ad77a576cf3cbf868",
+   "sha256": "4dcb6dd8d213776c434bd62e6871cb6c21dd7408eb3d4d04577cd0b87a29766e",
    "bbox": [
     45,
     19,
@@ -2779,10 +2779,10 @@
   },
   "edmontosaurus_walk_N_004": {
    "file": "edmontosaurus_walk_N_004.png",
-   "sha256": "7f67d2d14eabbf19d4d2ea41836387fb6fb7618fef2a4a99e5d9675dd996087d",
+   "sha256": "dbf9ac68e1401557c05f42f938e17337393cde76c382b007d4f6c28bd669c60f",
    "bbox": [
     45,
-    18,
+    17,
     99,
     121
    ],
@@ -2861,11 +2861,11 @@
   },
   "edmontosaurus_walk_E_004": {
    "file": "edmontosaurus_walk_E_004.png",
-   "sha256": "7e893951faf04aceb818df6fee04c7de2e6bc6ed4e2cbd248d96b5dd155de6f0",
+   "sha256": "1a7b9403c17e1ad1ecf4699e6dd976bb093d65d7c6dd110ae72bdf74b8b92cc1",
    "bbox": [
     10,
     49,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -2943,9 +2943,9 @@
   },
   "edmontosaurus_walk_W_004": {
    "file": "edmontosaurus_walk_W_004.png",
-   "sha256": "2bfde544e0d3bef7648d0066f7b1e42caced6b761a881278b66f1bcda31771d5",
+   "sha256": "ab44362dca1a694268f0920287514a61f1b00f260167a8545dc137e092377f68",
    "bbox": [
-    11,
+    10,
     48,
     134,
     94
@@ -3025,7 +3025,7 @@
   },
   "edmontosaurus_walk_S_005": {
    "file": "edmontosaurus_walk_S_005.png",
-   "sha256": "ecde9393fa64c0f3bb5b0629a9e47816bd3532e0f8afe85b809f808ad67dbb00",
+   "sha256": "78d5168fff4b32fd62e4b7ddf5e7dbe12b141cdc4a25d509be47a02afded21cb",
    "bbox": [
     45,
     19,
@@ -3107,10 +3107,10 @@
   },
   "edmontosaurus_walk_N_005": {
    "file": "edmontosaurus_walk_N_005.png",
-   "sha256": "b74d5cafde81d350a659b71771c197807e070b2e32bdc2256e7caa1fb37a613b",
+   "sha256": "ddb42b2f0a1dd70ea558c865030ef187c357b6bbc410c801c25a267fa3b757c4",
    "bbox": [
     45,
-    18,
+    17,
     99,
     120
    ],
@@ -3189,11 +3189,11 @@
   },
   "edmontosaurus_walk_E_005": {
    "file": "edmontosaurus_walk_E_005.png",
-   "sha256": "f1611d4a6cdfc4e01063785ede1b0c397fba173b78f9df85c39c43b4da92c938",
+   "sha256": "84f84b4abc2d6f9ddca6a34a03d234d18bb67123e94d38056b4151c8519a5a1e",
    "bbox": [
     11,
     49,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -3271,9 +3271,9 @@
   },
   "edmontosaurus_walk_W_005": {
    "file": "edmontosaurus_walk_W_005.png",
-   "sha256": "8ffa9404b5fe8b696f05168acb6236a6b67a6a911b8d1845d0a48c655c2f62dd",
+   "sha256": "e6689ad1bf3b2a15b032f9e3684d72d5a29537376046a35d0250a715a38a9539",
    "bbox": [
-    11,
+    10,
     49,
     133,
     93
@@ -3353,12 +3353,12 @@
   },
   "edmontosaurus_run_S_000": {
    "file": "edmontosaurus_run_S_000.png",
-   "sha256": "ca77745fe9cb81fb200cef1a8ce5eaba3d63fbe8105c66d653da9f1955137cc5",
+   "sha256": "b92b2023138ab723b5443ae61ee0f0931e999222d6c04d695558c05c93381da5",
    "bbox": [
     45,
     18,
     99,
-    119
+    120
    ],
    "joints": {
     "hind_L": [
@@ -3517,11 +3517,11 @@
   },
   "edmontosaurus_run_E_000": {
    "file": "edmontosaurus_run_E_000.png",
-   "sha256": "b71526abb9abdfd00cc1c27f2960a4dd574c58bb8488458fa7c13d3e78680f70",
+   "sha256": "f5379fcd0b7da4d71afe3c5de5f2669512aaae54dc4aba8b68aeab40b3778e76",
    "bbox": [
     10,
     48,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -3599,9 +3599,9 @@
   },
   "edmontosaurus_run_W_000": {
    "file": "edmontosaurus_run_W_000.png",
-   "sha256": "b7e4d265a8c4eaeec0af8d665be1852a11ff88686d6bd43e26531e17955f3a58",
+   "sha256": "23206afd1df5ff10c94393c27cf0b6f045247f92ec6df7d236d83fcb57841b8d",
    "bbox": [
-    11,
+    10,
     49,
     134,
     94
@@ -3681,7 +3681,7 @@
   },
   "edmontosaurus_run_S_001": {
    "file": "edmontosaurus_run_S_001.png",
-   "sha256": "9069e829e8ce154141f23da3e06d9129de93bd6be5e9d1e6574c0f2f5c8ebcb2",
+   "sha256": "3d48fa6d390b96d5f52a45f5f21067c277c5b2fd6e5c52736cd0a403ec6ca553",
    "bbox": [
     45,
     18,
@@ -3763,7 +3763,7 @@
   },
   "edmontosaurus_run_N_001": {
    "file": "edmontosaurus_run_N_001.png",
-   "sha256": "0bba1585b02c4b06d97c6f6ffdcd066a297e131ba02646f88f0a8e6455d569d8",
+   "sha256": "1397da8ec59bcb83824b4a6a578e3cddc870111f48ea9b95cc393392bdf6ff85",
    "bbox": [
     45,
     19,
@@ -3845,11 +3845,11 @@
   },
   "edmontosaurus_run_E_001": {
    "file": "edmontosaurus_run_E_001.png",
-   "sha256": "91c382d1863150ea4dd69276c64e7477109aec426417f6e8ba4e1689b66f72b1",
+   "sha256": "9a8d83f6168d7ab194e11b8eb8457e6ad8ee2d5ba158fb5ca905ed78fe71b7be",
    "bbox": [
     10,
     48,
-    133,
+    134,
     93
    ],
    "joints": {
@@ -3927,9 +3927,9 @@
   },
   "edmontosaurus_run_W_001": {
    "file": "edmontosaurus_run_W_001.png",
-   "sha256": "29e486cbfc3fc3ab1e62f30579b6f8eda7c0ad0ea980328bfd24f12c8ea08f28",
+   "sha256": "acf044b4f09ff483af5e0679b9dca12cd6296bbd28cc7bbb4196cebfc1c8dab5",
    "bbox": [
-    11,
+    10,
     48,
     134,
     94
@@ -4009,7 +4009,7 @@
   },
   "edmontosaurus_run_S_002": {
    "file": "edmontosaurus_run_S_002.png",
-   "sha256": "cc79fa636f35d16572276dfd7019be7be0b65644784aad2ba1e8839c1131630d",
+   "sha256": "bc1db655b85b5d12c21a64228ab51b4284fd6983930b74c8ced577b2914fb20b",
    "bbox": [
     45,
     18,
@@ -4091,7 +4091,7 @@
   },
   "edmontosaurus_run_N_002": {
    "file": "edmontosaurus_run_N_002.png",
-   "sha256": "74b2d062583b64156d7334c2f23dcce41d399eaf86d949232e7ffa246d9ec3cc",
+   "sha256": "f1a174219bf32c7b4f4213fde5521ea819e5943ef34e35febc90009296b586b8",
    "bbox": [
     45,
     19,
@@ -4173,11 +4173,11 @@
   },
   "edmontosaurus_run_E_002": {
    "file": "edmontosaurus_run_E_002.png",
-   "sha256": "4f2e193cc0f9d411ef6bffaa7f6597953b04b14a06cace2a727bade15db910e6",
+   "sha256": "8f2ca8d46c65556a023fa8f84a3195c2f9049bd07a68b6ea290cf02438e7f579",
    "bbox": [
     10,
     50,
-    133,
+    134,
     93
    ],
    "joints": {
@@ -4255,9 +4255,9 @@
   },
   "edmontosaurus_run_W_002": {
    "file": "edmontosaurus_run_W_002.png",
-   "sha256": "82410752c3adbd3da3b11c65dad535f10a2c255026972af02a07bd6327bfc4ea",
+   "sha256": "d98b2cc3afb7f471e1780696b9836bba4ed6afe71d0e7a9bcfd7f3abbdd04d6e",
    "bbox": [
-    11,
+    10,
     46,
     134,
     94
@@ -4337,12 +4337,12 @@
   },
   "edmontosaurus_run_S_003": {
    "file": "edmontosaurus_run_S_003.png",
-   "sha256": "be217c624b2402725270edccf14266675d8692b3a6b9cfe924b10132c246c95f",
+   "sha256": "6236dba530570c1d5c223963e598728289fdb43af7e96b992747debec61bcb2f",
    "bbox": [
     45,
     18,
     99,
-    119
+    120
    ],
    "joints": {
     "hind_L": [
@@ -4501,11 +4501,11 @@
   },
   "edmontosaurus_run_E_003": {
    "file": "edmontosaurus_run_E_003.png",
-   "sha256": "abe4cb996d2065998851801d83dbded96d09aefa5a8ba47d9e3e8a85570566fb",
+   "sha256": "54757cbd2ada72eeb35bf3f0c7afca99d29c197c628ab1e0f27fbf62253f506a",
    "bbox": [
     10,
     49,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -4583,9 +4583,9 @@
   },
   "edmontosaurus_run_W_003": {
    "file": "edmontosaurus_run_W_003.png",
-   "sha256": "232e9d6a1941e8b56c99e689af315e27395af9af2704608cfcc1d47fffb9a674",
+   "sha256": "1b452e335acacd5affd65d9f6314536033aaa9b476629c06bdf931f2aaef3e50",
    "bbox": [
-    11,
+    10,
     48,
     134,
     94
@@ -4665,7 +4665,7 @@
   },
   "edmontosaurus_run_S_004": {
    "file": "edmontosaurus_run_S_004.png",
-   "sha256": "6f1d422936ff1d71082d2e7b7e9f25d4ec3f9647c8a9d130bf8be944fb1fe03b",
+   "sha256": "c49d36bf5dfe3a10108495572d087754b175894dff5cc94424c939ad11b750f0",
    "bbox": [
     45,
     18,
@@ -4747,7 +4747,7 @@
   },
   "edmontosaurus_run_N_004": {
    "file": "edmontosaurus_run_N_004.png",
-   "sha256": "baaccb7f55ff4bf8db2a7569a1a3a2c4079521f50a0cfdef20d2ba3cc2c10f60",
+   "sha256": "eaedba4e0cef3285f63baec3c4bc24edd8ac3fd02dce4130c6686368f7f546f6",
    "bbox": [
     45,
     19,
@@ -4829,11 +4829,11 @@
   },
   "edmontosaurus_run_E_004": {
    "file": "edmontosaurus_run_E_004.png",
-   "sha256": "258ad92252dc59656dcc8da7a757888152d736ae85c7d677e61ed971f1a1b284",
+   "sha256": "1440c1c095a088d6ed1d73a8f1e5ec4f75b7d18f4b921e0bb8f78926939b7c3a",
    "bbox": [
     10,
     48,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -4911,9 +4911,9 @@
   },
   "edmontosaurus_run_W_004": {
    "file": "edmontosaurus_run_W_004.png",
-   "sha256": "3eddd476adcc085f206ef83c4d2232d92faed89d72687a5e1a66f775955b3bdb",
+   "sha256": "46d0f0130c97bfdf2cf1626ad13d4f99fdb95e990bb166cc5b28e0ba8f7f097a",
    "bbox": [
-    11,
+    10,
     48,
     134,
     93
@@ -4993,7 +4993,7 @@
   },
   "edmontosaurus_run_S_005": {
    "file": "edmontosaurus_run_S_005.png",
-   "sha256": "721b60320554d6815756b2bacc5ef3d2662ab70ff23b43e95655e035f670032a",
+   "sha256": "f04b1341486cce5d116b6b27519c3c7113123a0aaee5d6afb8975dbac83d6729",
    "bbox": [
     45,
     18,
@@ -5075,7 +5075,7 @@
   },
   "edmontosaurus_run_N_005": {
    "file": "edmontosaurus_run_N_005.png",
-   "sha256": "6e20d2bf00451c8ef479f12ca210102228ab6d33ffe2e84ff7b4919a407bdd9e",
+   "sha256": "4d724ae7ab192053084d637653cd61cb55dddfdb8da3ec7add3f2bfb833e3c53",
    "bbox": [
     45,
     19,
@@ -5157,11 +5157,11 @@
   },
   "edmontosaurus_run_E_005": {
    "file": "edmontosaurus_run_E_005.png",
-   "sha256": "961a5ddbe5b858845859bd0ccc273339cb77d5de50fd20fe8b8dbd684d8a5ca3",
+   "sha256": "0d867afa9b45709e2324ba40b25c6fbd57acda1f163ab78f0773d8e50bc45b87",
    "bbox": [
     10,
     46,
-    133,
+    134,
     94
    ],
    "joints": {
@@ -5239,9 +5239,9 @@
   },
   "edmontosaurus_run_W_005": {
    "file": "edmontosaurus_run_W_005.png",
-   "sha256": "ee12c5baeaf0809530377105969e7c0786c2e8cb4cc71f62049d9546571310e9",
+   "sha256": "b38e7292d0aab64dc4d4db938885f2738d7eb714164aa4cc92b64c6f91676431",
    "bbox": [
-    11,
+    10,
     50,
     134,
     93
@@ -5321,7 +5321,7 @@
   },
   "edmontosaurus_attack_S_000": {
    "file": "edmontosaurus_attack_S_000.png",
-   "sha256": "8626dba711399a6b20a11b27c0f4d3f5411c665a144b0743f71f9f41b24b55b9",
+   "sha256": "da5e24759de97215e41747335b5cf3bcef4398cfb369e528938ad2b53345b2f8",
    "bbox": [
     45,
     19,
@@ -5403,10 +5403,10 @@
   },
   "edmontosaurus_attack_N_000": {
    "file": "edmontosaurus_attack_N_000.png",
-   "sha256": "dd51085f2510129a6f7248b24fd725ab0da32c3ff77498025c055106165fdf0b",
+   "sha256": "77b1f2a138fddb805919a64e1cc58ff2a3d9753807477005d643e85ca6a35aaf",
    "bbox": [
     45,
-    18,
+    17,
     99,
     123
    ],
@@ -5485,11 +5485,11 @@
   },
   "edmontosaurus_attack_E_000": {
    "file": "edmontosaurus_attack_E_000.png",
-   "sha256": "9ace65dd9c1e173476f4237acd584ec774d602c8e417cf6a08dd39b2f06797f0",
+   "sha256": "a50d158f461d2b1e936224fcfc3cca4adf0f5596b5213352761ded4d3bf30eca",
    "bbox": [
     9,
     49,
-    130,
+    131,
     94
    ],
    "joints": {
@@ -5567,9 +5567,9 @@
   },
   "edmontosaurus_attack_W_000": {
    "file": "edmontosaurus_attack_W_000.png",
-   "sha256": "a07453ccfef8d83da6fb5708329182900ae3b0ca0a46b0546527ba36d6b35cfe",
+   "sha256": "bac94df2939c21f34c87b1c40db9beea19cdd9dae95943b3acc5d94e5098e9e6",
    "bbox": [
-    14,
+    13,
     49,
     135,
     94
@@ -5649,7 +5649,7 @@
   },
   "edmontosaurus_attack_S_001": {
    "file": "edmontosaurus_attack_S_001.png",
-   "sha256": "83afd53d3f1cd15713bebcd02e9f2e884f0a77406599a4eb8d782a7b79ff42d6",
+   "sha256": "fead7b8bec7c46e0408850af498a5a67520fe32c3b2e28302ef33eb83628e507",
    "bbox": [
     45,
     18,
@@ -5731,10 +5731,10 @@
   },
   "edmontosaurus_attack_N_001": {
    "file": "edmontosaurus_attack_N_001.png",
-   "sha256": "fd2c57620db004d81f1924ed433ec5053fa2357b06957cfcb73b81044ed2744e",
+   "sha256": "036eec402cfd50606cf3ba60f1c5502207b3917384af471999ccfecf1f6ce725",
    "bbox": [
     45,
-    19,
+    18,
     99,
     124
    ],
@@ -5813,11 +5813,11 @@
   },
   "edmontosaurus_attack_E_001": {
    "file": "edmontosaurus_attack_E_001.png",
-   "sha256": "d343847f536aa3362146050d78e26d6236e43167aa15fbcd280995f2ece208ac",
+   "sha256": "8d5c0059a82e9e234f636055424bb289aa5392e102520f1113621ef4271c8bf0",
    "bbox": [
     8,
     48,
-    127,
+    128,
     94
    ],
    "joints": {
@@ -5895,9 +5895,9 @@
   },
   "edmontosaurus_attack_W_001": {
    "file": "edmontosaurus_attack_W_001.png",
-   "sha256": "524aa2740d567f8b48f885de9099fc6915a5033101d1b0ed10cc6fca2d98e092",
+   "sha256": "22c91efe196690ba33b22714ad502787ff2b78c1f3e1064a2b225362468ea61b",
    "bbox": [
-    17,
+    16,
     48,
     136,
     94
@@ -5977,7 +5977,7 @@
   },
   "edmontosaurus_attack_S_002": {
    "file": "edmontosaurus_attack_S_002.png",
-   "sha256": "fc1e0ec7806d158ba7fb88b10b766c1a9de76a16238e5ab9d8eb205c6936ff32",
+   "sha256": "9a7c97cebbbb3aeddbbf4c6c5dc0d96881ba120535cc6a7451b2dedb782931e2",
    "bbox": [
     45,
     18,
@@ -6059,7 +6059,7 @@
   },
   "edmontosaurus_attack_N_002": {
    "file": "edmontosaurus_attack_N_002.png",
-   "sha256": "80580a6f2311f7df45ab0636cd90318dba92088cd57e441f1172dca8fc0d6790",
+   "sha256": "67f9e58c8491be83d71cdfd918bf31ccf81ee8e54309b152b13924800ceb1417",
    "bbox": [
     45,
     17,
@@ -6141,7 +6141,7 @@
   },
   "edmontosaurus_attack_E_002": {
    "file": "edmontosaurus_attack_E_002.png",
-   "sha256": "73a55e16f332ac40de4f6a6fe88892b057eaafd244682994b4f6aebe14719978",
+   "sha256": "25fc9a9039e993f0c7dfa37f01b6011e46b54717214fbbcb3de095d783e834c4",
    "bbox": [
     9,
     49,
@@ -6223,7 +6223,7 @@
   },
   "edmontosaurus_attack_W_002": {
    "file": "edmontosaurus_attack_W_002.png",
-   "sha256": "ac6dfc8a81a070281f2afc6d8d59300e2fbb7e811b4cd455130ae9bdcc6cbc82",
+   "sha256": "6d49d13081e4935caa0633965693587436f2c4b0d654a7a937d8a0000286f4e5",
    "bbox": [
     12,
     49,
@@ -6305,7 +6305,7 @@
   },
   "edmontosaurus_attack_S_003": {
    "file": "edmontosaurus_attack_S_003.png",
-   "sha256": "24d5997f8dc7acd15de661c9445e5cc25acfdf5f2438448f4928a0dd684086a7",
+   "sha256": "ef48152204013a7552a4c84d1acc0e5fc662b393cc6865f1282714ce70b53367",
    "bbox": [
     45,
     20,
@@ -6316,11 +6316,11 @@
     "hind_L": [
      [
       82.2,
-      70.25
+      69.95
      ],
      [
       91.2,
-      77.9
+      77.7
      ],
      [
       93.0,
@@ -6334,11 +6334,11 @@
     "hind_R": [
      [
       61.8,
-      70.25
+      69.95
      ],
      [
       52.8,
-      77.9
+      77.7
      ],
      [
       51.0,
@@ -6352,11 +6352,11 @@
     "fore_L": [
      [
       81.0,
-      89.3
+      89.0
      ],
      [
       88.8,
-      90.13
+      90.14
      ],
      [
       90.6,
@@ -6366,11 +6366,11 @@
     "fore_R": [
      [
       63.0,
-      89.3
+      89.0
      ],
      [
       55.2,
-      90.13
+      90.14
      ],
      [
       53.4,
@@ -6387,10 +6387,10 @@
   },
   "edmontosaurus_attack_N_003": {
    "file": "edmontosaurus_attack_N_003.png",
-   "sha256": "de4a6ab8db7703340c47202a8eb2409bde6876a354b40c75d58973945ec8ca59",
+   "sha256": "1a56cf85a43226c50855774c14b56603697c095a4880c571ca8814addd9d14b1",
    "bbox": [
     45,
-    16,
+    17,
     99,
     118
    ],
@@ -6398,11 +6398,11 @@
     "hind_L": [
      [
       61.8,
-      66.07
+      66.37
      ],
      [
       52.8,
-      62.63
+      62.62
      ],
      [
       51.0,
@@ -6416,11 +6416,11 @@
     "hind_R": [
      [
       82.2,
-      66.07
+      66.37
      ],
      [
       91.2,
-      62.63
+      62.62
      ],
      [
       93.0,
@@ -6434,11 +6434,11 @@
     "fore_L": [
      [
       63.0,
-      49.25
+      49.55
      ],
      [
       55.2,
-      51.92
+      51.97
      ],
      [
       53.4,
@@ -6448,11 +6448,11 @@
     "fore_R": [
      [
       81.0,
-      49.25
+      49.55
      ],
      [
       88.8,
-      51.92
+      51.97
      ],
      [
       90.6,
@@ -6469,22 +6469,22 @@
   },
   "edmontosaurus_attack_E_003": {
    "file": "edmontosaurus_attack_E_003.png",
-   "sha256": "8d481045fdd8d700c2d300091999e7268c4dad4f92f1d70611e8a6e3c5d527f2",
+   "sha256": "319c3bb9c2e4ca4d440d5e3f4d56f5b31c7a188f5b0ee18258ec4024c03d36f0",
    "bbox": [
-    13,
+    12,
     49,
-    139,
+    138,
     94
    ],
    "joints": {
     "hind_L": [
      [
-      74.55,
+      74.18,
       59.79
      ],
      [
-      81.31,
-      54.52
+      81.2,
+      54.41
      ],
      [
       75.0,
@@ -6497,12 +6497,12 @@
     ],
     "hind_R": [
      [
-      74.55,
+      74.18,
       76.52
      ],
      [
-      81.31,
-      86.01
+      81.2,
+      85.9
      ],
      [
       75.0,
@@ -6515,12 +6515,12 @@
     ],
     "fore_L": [
      [
-      96.42,
+      96.05,
       61.89
      ],
      [
-      95.3,
-      57.25
+      95.27,
+      57.28
      ],
      [
       100.0,
@@ -6529,12 +6529,12 @@
     ],
     "fore_R": [
      [
-      96.42,
+      96.05,
       76.65
      ],
      [
-      95.3,
-      84.8
+      95.27,
+      84.83
      ],
      [
       100.0,
@@ -6551,22 +6551,22 @@
   },
   "edmontosaurus_attack_W_003": {
    "file": "edmontosaurus_attack_W_003.png",
-   "sha256": "1b418fe7256c81aedda608e0f072f656220248e46b4bde6319497c574129bb06",
+   "sha256": "c9810186d988351216a431841dcafb593f2cbecb4c1df98f23de451ff6a0a18d",
    "bbox": [
-    5,
+    6,
     49,
-    131,
+    132,
     94
    ],
    "joints": {
     "hind_L": [
      [
-      69.45,
+      69.82,
       76.52
      ],
      [
-      62.69,
-      86.01
+      62.8,
+      85.9
      ],
      [
       69.0,
@@ -6579,12 +6579,12 @@
     ],
     "hind_R": [
      [
-      69.45,
+      69.82,
       59.79
      ],
      [
-      62.69,
-      54.52
+      62.8,
+      54.41
      ],
      [
       69.0,
@@ -6597,12 +6597,12 @@
     ],
     "fore_L": [
      [
-      47.58,
+      47.95,
       76.65
      ],
      [
-      48.7,
-      84.8
+      48.73,
+      84.83
      ],
      [
       44.0,
@@ -6611,12 +6611,12 @@
     ],
     "fore_R": [
      [
-      47.58,
+      47.95,
       61.89
      ],
      [
-      48.7,
-      57.25
+      48.73,
+      57.28
      ],
      [
       44.0,
@@ -6633,7 +6633,7 @@
   },
   "edmontosaurus_attack_S_004": {
    "file": "edmontosaurus_attack_S_004.png",
-   "sha256": "cd7188c6933ed0ad5be6c2dddc8c8d872c78bf272f6f6c36d81bd24de2826c50",
+   "sha256": "992739919fb5d455c30aea8f79e8336f81cc3580a6c5ad5354c6b816d6d081e1",
    "bbox": [
     45,
     19,
@@ -6644,11 +6644,11 @@
     "hind_L": [
      [
       82.2,
-      69.29
+      69.11
      ],
      [
       91.2,
-      77.14
+      77.0
      ],
      [
       93.0,
@@ -6662,11 +6662,11 @@
     "hind_R": [
      [
       61.8,
-      69.29
+      69.11
      ],
      [
       52.8,
-      77.14
+      77.0
      ],
      [
       51.0,
@@ -6680,11 +6680,11 @@
     "fore_L": [
      [
       81.0,
-      88.23
+      88.05
      ],
      [
       88.8,
-      90.13
+      90.14
      ],
      [
       90.6,
@@ -6694,11 +6694,11 @@
     "fore_R": [
      [
       63.0,
-      88.23
+      88.05
      ],
      [
       55.2,
-      90.13
+      90.14
      ],
      [
       53.4,
@@ -6715,10 +6715,10 @@
   },
   "edmontosaurus_attack_N_004": {
    "file": "edmontosaurus_attack_N_004.png",
-   "sha256": "9ac429b7dec0e56fb74df468dd0cd41d609fbb8e76a9903bf8e1d34783b36b54",
+   "sha256": "f719f9b225057a80c2fd1ae32f5842bf52947c17262a443cb5be3b84a45c6136",
    "bbox": [
     45,
-    16,
+    17,
     99,
     119
    ],
@@ -6726,11 +6726,11 @@
     "hind_L": [
      [
       61.8,
-      66.79
+      66.97
      ],
      [
       52.8,
-      62.65
+      62.67
      ],
      [
       51.0,
@@ -6744,11 +6744,11 @@
     "hind_R": [
      [
       82.2,
-      66.79
+      66.97
      ],
      [
       91.2,
-      62.65
+      62.67
      ],
      [
       93.0,
@@ -6762,11 +6762,11 @@
     "fore_L": [
      [
       63.0,
-      49.76
+      49.94
      ],
      [
       55.2,
-      51.46
+      51.45
      ],
      [
       53.4,
@@ -6776,11 +6776,11 @@
     "fore_R": [
      [
       81.0,
-      49.76
+      49.94
      ],
      [
       88.8,
-      51.46
+      51.45
      ],
      [
       90.6,
@@ -6797,22 +6797,22 @@
   },
   "edmontosaurus_attack_E_004": {
    "file": "edmontosaurus_attack_E_004.png",
-   "sha256": "65edd89dda03fc6f119dbbfd786e210522e7edb56063d1aae86026fd49c43398",
+   "sha256": "f9c9093536ade411ff18363ac0efa3734671f05d25ddb4dc7dda0ed1b02f0541",
    "bbox": [
-    12,
+    11,
     49,
-    137,
+    136,
     94
    ],
    "joints": {
     "hind_L": [
      [
-      73.53,
+      73.31,
       59.68
      ],
      [
-      80.84,
-      54.15
+      80.74,
+      54.09
      ],
      [
       75.0,
@@ -6825,12 +6825,12 @@
     ],
     "hind_R": [
      [
-      73.53,
+      73.31,
       76.4
      ],
      [
-      80.84,
-      85.64
+      80.74,
+      85.58
      ],
      [
       75.0,
@@ -6843,11 +6843,11 @@
     ],
     "fore_L": [
      [
-      95.46,
+      95.24,
       61.62
      ],
      [
-      95.58,
+      95.59,
       57.02
      ],
      [
@@ -6857,11 +6857,11 @@
     ],
     "fore_R": [
      [
-      95.46,
+      95.24,
       76.38
      ],
      [
-      95.58,
+      95.59,
       84.57
      ],
      [
@@ -6879,22 +6879,22 @@
   },
   "edmontosaurus_attack_W_004": {
    "file": "edmontosaurus_attack_W_004.png",
-   "sha256": "86b4cac89dbbf97d256583528b39b49f18a093275b45372935c09a78d56e4234",
+   "sha256": "dcaf0f26a22e6eac36d2886fa952a8fc7c3bb6f8dd8064693a43731acd6a75a6",
    "bbox": [
-    7,
+    8,
     49,
-    132,
+    133,
     94
    ],
    "joints": {
     "hind_L": [
      [
-      70.47,
+      70.69,
       76.4
      ],
      [
-      63.16,
-      85.64
+      63.26,
+      85.58
      ],
      [
       69.0,
@@ -6907,12 +6907,12 @@
     ],
     "hind_R": [
      [
-      70.47,
+      70.69,
       59.68
      ],
      [
-      63.16,
-      54.15
+      63.26,
+      54.09
      ],
      [
       69.0,
@@ -6925,11 +6925,11 @@
     ],
     "fore_L": [
      [
-      48.54,
+      48.76,
       76.38
      ],
      [
-      48.42,
+      48.41,
       84.57
      ],
      [
@@ -6939,11 +6939,11 @@
     ],
     "fore_R": [
      [
-      48.54,
+      48.76,
       61.62
      ],
      [
-      48.42,
+      48.41,
       57.02
      ],
      [
@@ -6961,7 +6961,7 @@
   },
   "edmontosaurus_attack_S_005": {
    "file": "edmontosaurus_attack_S_005.png",
-   "sha256": "3624853ae7066d01a35bec52185f75bff892b6aef06e56ac05af39cb658d71c1",
+   "sha256": "0ce0cda2c655be29837376bc753925e0db9cfdc892d0fdad8e1081f0d303efe5",
    "bbox": [
     45,
     19,
@@ -6972,11 +6972,11 @@
     "hind_L": [
      [
       82.2,
-      68.35
+      68.31
      ],
      [
       91.2,
-      76.33
+      76.29
      ],
      [
       93.0,
@@ -6990,11 +6990,11 @@
     "hind_R": [
      [
       61.8,
-      68.35
+      68.31
      ],
      [
       52.8,
-      76.33
+      76.29
      ],
      [
       51.0,
@@ -7008,11 +7008,11 @@
     "fore_L": [
      [
       81.0,
-      87.11
+      87.07
      ],
      [
       88.8,
-      90.37
+      90.38
      ],
      [
       90.6,
@@ -7022,11 +7022,11 @@
     "fore_R": [
      [
       63.0,
-      87.11
+      87.07
      ],
      [
       55.2,
-      90.37
+      90.38
      ],
      [
       53.4,
@@ -7043,7 +7043,7 @@
   },
   "edmontosaurus_attack_N_005": {
    "file": "edmontosaurus_attack_N_005.png",
-   "sha256": "5a09b337a8334b100a428aef661ce28bfab6e0e1161f045579bc5bc90cfdc47f",
+   "sha256": "7dbcd231620e4335c4d85aea7072e462d6e210d5cd048f58245a33a718e5b8c2",
    "bbox": [
     45,
     17,
@@ -7054,11 +7054,11 @@
     "hind_L": [
      [
       61.8,
-      67.73
+      67.77
      ],
      [
       52.8,
-      62.83
+      62.84
      ],
      [
       51.0,
@@ -7072,11 +7072,11 @@
     "hind_R": [
      [
       82.2,
-      67.73
+      67.77
      ],
      [
       91.2,
-      62.83
+      62.84
      ],
      [
       93.0,
@@ -7090,11 +7090,11 @@
     "fore_L": [
      [
       63.0,
-      50.41
+      50.45
      ],
      [
       55.2,
-      50.47
+      50.42
      ],
      [
       53.4,
@@ -7104,11 +7104,11 @@
     "fore_R": [
      [
       81.0,
-      50.41
+      50.45
      ],
      [
       88.8,
-      50.47
+      50.42
      ],
      [
       90.6,
@@ -7125,7 +7125,7 @@
   },
   "edmontosaurus_attack_E_005": {
    "file": "edmontosaurus_attack_E_005.png",
-   "sha256": "0b908bbfda7d3ef14046b133538b46340530f824b5a37351d2ba57139e7fcff6",
+   "sha256": "c7fa715062f7cd3d96c054005e1b437c618ebf71a25c14979f8215156cbd9238",
    "bbox": [
     11,
     49,
@@ -7135,12 +7135,12 @@
    "joints": {
     "hind_L": [
      [
-      72.38,
+      72.33,
       59.68
      ],
      [
-      80.24,
-      53.84
+      80.2,
+      53.82
      ],
      [
       75.0,
@@ -7153,12 +7153,12 @@
     ],
     "hind_R": [
      [
-      72.38,
+      72.33,
       76.4
      ],
      [
-      80.24,
-      85.32
+      80.2,
+      85.31
      ],
      [
       75.0,
@@ -7171,12 +7171,12 @@
     ],
     "fore_L": [
      [
-      94.38,
+      94.33,
       61.38
      ],
      [
-      96.33,
-      56.64
+      96.37,
+      56.63
      ],
      [
       100.0,
@@ -7185,12 +7185,12 @@
     ],
     "fore_R": [
      [
-      94.38,
+      94.33,
       76.14
      ],
      [
-      96.33,
-      84.19
+      96.37,
+      84.18
      ],
      [
       100.0,
@@ -7207,7 +7207,7 @@
   },
   "edmontosaurus_attack_W_005": {
    "file": "edmontosaurus_attack_W_005.png",
-   "sha256": "41c715c30bb191fb219fb9cbcd9f068bd66aeb84f8a39a88dd8dc8ea0ef607a9",
+   "sha256": "da13d51294c578a033a7e710ecdd244d2049bb0ad6a78cbc6538b582ff00c41f",
    "bbox": [
     10,
     49,
@@ -7217,12 +7217,12 @@
    "joints": {
     "hind_L": [
      [
-      71.62,
+      71.67,
       76.4
      ],
      [
-      63.76,
-      85.32
+      63.8,
+      85.31
      ],
      [
       69.0,
@@ -7235,12 +7235,12 @@
     ],
     "hind_R": [
      [
-      71.62,
+      71.67,
       59.68
      ],
      [
-      63.76,
-      53.84
+      63.8,
+      53.82
      ],
      [
       69.0,
@@ -7253,12 +7253,12 @@
     ],
     "fore_L": [
      [
-      49.62,
+      49.67,
       76.14
      ],
      [
-      47.67,
-      84.19
+      47.63,
+      84.18
      ],
      [
       44.0,
@@ -7267,12 +7267,12 @@
     ],
     "fore_R": [
      [
-      49.62,
+      49.67,
       61.38
      ],
      [
-      47.67,
-      56.64
+      47.63,
+      56.63
      ],
      [
       44.0,
@@ -7289,7 +7289,7 @@
   },
   "edmontosaurus_hurt_S_000": {
    "file": "edmontosaurus_hurt_S_000.png",
-   "sha256": "9e23fec69ff4f08910ead24ccacc08ecb520b4271e1bf4f30dddbfbf57b261c1",
+   "sha256": "5aa35f56132562cff919e0a165c16ac03392967c541234fcb46616e246a1a310",
    "bbox": [
     45,
     19,
@@ -7371,10 +7371,10 @@
   },
   "edmontosaurus_hurt_N_000": {
    "file": "edmontosaurus_hurt_N_000.png",
-   "sha256": "964133f532dbf3f6a0dd8ae8b119ec86629fc7f4dca6a0e54b2632b3bb31234c",
+   "sha256": "7f286b1200c0d02345dedeb55de03e358c9e622298e5b6953cdcf7b801c68a9f",
    "bbox": [
     45,
-    19,
+    18,
     99,
     123
    ],
@@ -7453,7 +7453,7 @@
   },
   "edmontosaurus_hurt_E_000": {
    "file": "edmontosaurus_hurt_E_000.png",
-   "sha256": "93942de4dcd87d5523a060eaabdf8bdac7005b6734e4808d45615a4da1e6b497",
+   "sha256": "c9d4f197427a543e2b8dd2307e8d5d74e3645e4d862b8fad1975ffc575cdf015",
    "bbox": [
     9,
     48,
@@ -7535,7 +7535,7 @@
   },
   "edmontosaurus_hurt_W_000": {
    "file": "edmontosaurus_hurt_W_000.png",
-   "sha256": "12f9c4f712495efbf2cb652afc9d9ca84aa6a9c5f93b5d67cec3beb4efd10904",
+   "sha256": "92a7bdcc38e542f2ca8e88a4c909f8c38a03fb87f62025573f5814c013269b68",
    "bbox": [
     16,
     48,
@@ -7617,7 +7617,7 @@
   },
   "edmontosaurus_hurt_S_001": {
    "file": "edmontosaurus_hurt_S_001.png",
-   "sha256": "6caa601fe1fb7c2883e95964c8e62610810dd96c80aaf53ffdfea8758b8aa37e",
+   "sha256": "61e59fe1a048e971dc7c5ac9197b23bc8a46075eed5ba1702b8b60e66437a684",
    "bbox": [
     45,
     19,
@@ -7699,10 +7699,10 @@
   },
   "edmontosaurus_hurt_N_001": {
    "file": "edmontosaurus_hurt_N_001.png",
-   "sha256": "1a3cc9be9cd21d5a1471efdaa78f134b22d5bc6e95fdd8b337da0df00016e1ba",
+   "sha256": "cf21f776fc39c610c0573076275c62b281b13c174cce4e904d99fb80a6301411",
    "bbox": [
     45,
-    18,
+    17,
     99,
     122
    ],
@@ -7781,7 +7781,7 @@
   },
   "edmontosaurus_hurt_E_001": {
    "file": "edmontosaurus_hurt_E_001.png",
-   "sha256": "3b510beb155e72c4a8f4cea1bdf1660b362d81e2465500bd3345b249e733e621",
+   "sha256": "7c83bf375c7dc2e98c9d609a6b96c9964244014d41a99b6e7df03276c4f323d0",
    "bbox": [
     9,
     49,
@@ -7863,7 +7863,7 @@
   },
   "edmontosaurus_hurt_W_001": {
    "file": "edmontosaurus_hurt_W_001.png",
-   "sha256": "25b3aa50be9ef4079f76f5b7a9c1fd7c7a344b38db4c465cd54cd77c22759ba1",
+   "sha256": "b21b4f6495561dd4ad7efd35575fafdaee6fbbfaa4c02da4aa12f401910fe5b7",
    "bbox": [
     13,
     49,
@@ -7945,17 +7945,17 @@
   },
   "edmontosaurus_death_S_000": {
    "file": "edmontosaurus_death_S_000.png",
-   "sha256": "5f8531eb3b187795df81968acf98fa4a205a1e0c36865f9645928467ddfebd60",
+   "sha256": "1055dbf74df7be6bb8199b3e6faa49df0a7b984fe3cdb3d09a2fe95d8a73fbc4",
    "bbox": [
     45,
     19,
     99,
-    118
+    119
    ]
   },
   "edmontosaurus_death_N_000": {
    "file": "edmontosaurus_death_N_000.png",
-   "sha256": "405b983ff0f27de06b0ef54abeea53ef6f283502874c58603f7207e734d15361",
+   "sha256": "58d54481018bd0e7013f223fe67ff0867c42d41dbfeb0865e67d40879a8f78f9",
    "bbox": [
     45,
     17,
@@ -7965,19 +7965,19 @@
   },
   "edmontosaurus_death_E_000": {
    "file": "edmontosaurus_death_E_000.png",
-   "sha256": "e9dc87c3c30bcbaee1a854543b958ad0aae7e7450f23c7391be99bda92c5faf6",
+   "sha256": "2441846221fed9c0dfb307b0227bd8f747868fa6925021450bd179d7a0ff70df",
    "bbox": [
     10,
     49,
-    133,
+    134,
     94
    ]
   },
   "edmontosaurus_death_W_000": {
    "file": "edmontosaurus_death_W_000.png",
-   "sha256": "701ebc318195e19d613eaeb7b309976036457f4f9b65491ac02bcd204ab78af7",
+   "sha256": "76747a0076663bda89b832372c87fae7c261885256bc1913fa9766256e36c845",
    "bbox": [
-    11,
+    10,
     49,
     134,
     94
@@ -7985,7 +7985,7 @@
   },
   "edmontosaurus_death_S_001": {
    "file": "edmontosaurus_death_S_001.png",
-   "sha256": "032fc7cf6b4c86c71aea39ab4b4790af7750d76b0cd746e090c1059f4c0b9d41",
+   "sha256": "fe2ac624a42031146e0d8828dcfb3c93faf267d098ff54ea82a2c92b3bf2c106",
    "bbox": [
     45,
     17,
@@ -7995,29 +7995,29 @@
   },
   "edmontosaurus_death_N_001": {
    "file": "edmontosaurus_death_N_001.png",
-   "sha256": "8301ee5129588eb7468704951da02c5c7b044575246dbc739f3852c6d19c841f",
+   "sha256": "4b4a12be52ad50a56423b07bc7ee43f1b89612ad4bdfde1fad1c6beefe5ce4f8",
    "bbox": [
     45,
-    17,
+    16,
     99,
     120
    ]
   },
   "edmontosaurus_death_E_001": {
    "file": "edmontosaurus_death_E_001.png",
-   "sha256": "d5bb44c769816a354886df85f374797991f25a64322a33834030a1a31a3264d6",
+   "sha256": "28840bfb9e423f3f5a75ed46cf83789523c1215de4516ff3b74c58074f12cec2",
    "bbox": [
     10,
     49,
-    133,
+    134,
     93
    ]
   },
   "edmontosaurus_death_W_001": {
    "file": "edmontosaurus_death_W_001.png",
-   "sha256": "b5cda7c85f6336f10a9f13e2fb0004373ecaaa51214f6ad56c89bd1bd8079ad9",
+   "sha256": "852b446c53eadc585f8669312a84f96529010afbca4cf260081f549664fc836d",
    "bbox": [
-    11,
+    10,
     48,
     134,
     95
@@ -8025,7 +8025,7 @@
   },
   "edmontosaurus_death_S_002": {
    "file": "edmontosaurus_death_S_002.png",
-   "sha256": "73711e40e96859fdf04c278e02e6206c11820c2e377dfc0cce7fdff3fd899400",
+   "sha256": "dbd2b61d32f9b4398e36c60647a68e48fef121ef934c42e458a5cb8eca704fe4",
    "bbox": [
     49,
     15,
@@ -8035,17 +8035,17 @@
   },
   "edmontosaurus_death_N_002": {
    "file": "edmontosaurus_death_N_002.png",
-   "sha256": "28de5466773ef2ece788be8fe7699c07a61aeafcf5600abd409b1d7d2d5065c7",
+   "sha256": "ab5f65feaf131631ead403c7390498129ae388281705130a145e31d36f477780",
    "bbox": [
     47,
-    16,
+    15,
     95,
     116
    ]
   },
   "edmontosaurus_death_E_002": {
    "file": "edmontosaurus_death_E_002.png",
-   "sha256": "16a08644c8c57b03abe2212aa6ae07cf2e7d7c7dd95915897f65ca757d3738a8",
+   "sha256": "409d1795972e00a0c581453e879b5a8831021459561e40a6ba18c69cdf699641",
    "bbox": [
     11,
     51,
@@ -8055,7 +8055,7 @@
   },
   "edmontosaurus_death_W_002": {
    "file": "edmontosaurus_death_W_002.png",
-   "sha256": "fb8c4ea511731d94d27d91c8acb65780b4ceabf4281f964472187954be998d5c",
+   "sha256": "9b1726f0e931f6ec369e953fae927df5d71abe5cef7f764c6528f74a916b272d",
    "bbox": [
     11,
     48,
@@ -8065,39 +8065,39 @@
   },
   "edmontosaurus_death_S_003": {
    "file": "edmontosaurus_death_S_003.png",
-   "sha256": "ca01f4e6f72c51d065c1c69e527f343cfc2203a7baf70b28ecf01675a4b01df1",
+   "sha256": "1329bb6c9de6d97cda5a4ffd2b578f6776d38c3f78962baa9cc24be68fccd160",
    "bbox": [
     58,
     19,
     103,
-    117
+    118
    ]
   },
   "edmontosaurus_death_N_003": {
    "file": "edmontosaurus_death_N_003.png",
-   "sha256": "1978bd85c286e24bca84099f08ec146ac6b3f7a92182aa023b2f0d0d95ecd9ad",
+   "sha256": "7caf13a276baf626753ae74a399cfcd2970db77f5a07d54dc5f0eec3950ba1b2",
    "bbox": [
     41,
-    18,
+    17,
     86,
     112
    ]
   },
   "edmontosaurus_death_E_003": {
    "file": "edmontosaurus_death_E_003.png",
-   "sha256": "65cb7545cb58e5682e3334eee6859979dc1ba2abfe8bd82c06fd0c6bdc7f536e",
+   "sha256": "e4775740bd256a5084130b2e4ef861cbeea0724ec96477b5b8e140257a42380a",
    "bbox": [
     16,
     40,
-    131,
+    132,
     77
    ]
   },
   "edmontosaurus_death_W_003": {
    "file": "edmontosaurus_death_W_003.png",
-   "sha256": "f49f3ef78010c8f67e10cc6768a62386b1f53e6e722632803dbbb2bf2a3b0987",
+   "sha256": "36e5ad1b9927a4399d96feae71f94b6c81172fd4fbb2d3edba0c35fd693b8e09",
    "bbox": [
-    13,
+    12,
     52,
     128,
     94
@@ -8105,7 +8105,7 @@
   },
   "edmontosaurus_death_S_004": {
    "file": "edmontosaurus_death_S_004.png",
-   "sha256": "9d22b441310099981db54fc71e5722b901e099f77fb92b2da6aa586342609f93",
+   "sha256": "e805deced8775f94506ce6cd9449bd516e28bb1f2c7bc6ad2410faab0f5dcdaa",
    "bbox": [
     67,
     28,
@@ -8115,7 +8115,7 @@
   },
   "edmontosaurus_death_N_004": {
    "file": "edmontosaurus_death_N_004.png",
-   "sha256": "92726a12275f5cec98058aeb99efe3db9e4ca5922982dfee98413045773b867a",
+   "sha256": "9a1b35649f440d7cb17d3ae9c0448103b1c3b88dc1dcebac0bcec7e6b7cfdf1c",
    "bbox": [
     27,
     22,
@@ -8125,19 +8125,19 @@
   },
   "edmontosaurus_death_E_004": {
    "file": "edmontosaurus_death_E_004.png",
-   "sha256": "3fd8b4d5c1b3362725371ea7d1d008c5eab81f3729d71e169f6217a38d845403",
+   "sha256": "70877fd6e4ccf4cfffa908ca5fc9d38e3ed213d23f60ee0fb4242a20144e9d3b",
    "bbox": [
     22,
     33,
-    129,
+    130,
     79
    ]
   },
   "edmontosaurus_death_W_004": {
    "file": "edmontosaurus_death_W_004.png",
-   "sha256": "3196a68a7caf34677480433492bfb963eed18623d5f1169f7e036803767a8d2c",
+   "sha256": "f087850c1c0af8a84678e6096d6b9faf6630b71696cddebda430fe9edb83ed99",
    "bbox": [
-    15,
+    14,
     59,
     122,
     107
@@ -8145,27 +8145,27 @@
   },
   "edmontosaurus_death_S_005": {
    "file": "edmontosaurus_death_S_005.png",
-   "sha256": "912e075c85bfa3bfdd2c7ad1033612fa067168f1791de28fd0eb91a550852541",
+   "sha256": "d832c1fddefeade07ee61dc94d90fdb22ffdd0d49653a9b4e1422ec0ebf68c66",
    "bbox": [
     70,
     33,
     120,
-    119
+    120
    ]
   },
   "edmontosaurus_death_N_005": {
    "file": "edmontosaurus_death_N_005.png",
-   "sha256": "df9a9f0a103de462081fdec692d5fb0559bdd5dd6d190cd4bcdbb09ea5ef43be",
+   "sha256": "b202992d0b2ce0878568c2c058ae3da9fc7fc493e28115d81f455dd7d6aeeca0",
    "bbox": [
     24,
-    25,
+    24,
     74,
     111
    ]
   },
   "edmontosaurus_death_E_005": {
    "file": "edmontosaurus_death_E_005.png",
-   "sha256": "951b332594834f826dceb53cd2e82b499b220ad54891dd1bd77e98e1061a7601",
+   "sha256": "291a9ccb7a620dccf150f8e7431be6d2be8f6ebd1ea39f794a45c853f9125d76",
    "bbox": [
     25,
     32,
@@ -8175,7 +8175,7 @@
   },
   "edmontosaurus_death_W_005": {
    "file": "edmontosaurus_death_W_005.png",
-   "sha256": "9063aa55111db170ff6c2edabdef4b3d3d7b27e042493cc5905344b7a6524bc5",
+   "sha256": "d3275d1255291df2bca61b0cfb658c16b5cd813d0585954736c4e60aef2d0442",
    "bbox": [
     15,
     62,

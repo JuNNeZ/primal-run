@@ -1068,8 +1068,8 @@ def spinosaurus(m):
         (-24, 8.0, 4.6, 5.4, 'tail'), (-9, 9.0, 8.0, 7.4, 'body'), (3, 9.5, 10.2, 8.4, 'body'),
         (15, 9.8, 10.6, 8.6, 'body'), (26, 9.8, 8.0, 7.0, 'body'), (33, 10.5, 4.8, 4.6, 'neck'),
         (39, 11.4, 3.8, 3.8, 'neck'), (44, 12.2, 4.6, 3.9, 'head'), (49, 12.2, 4.0, 3.4, 'head'),
-        (55, 11.6, 2.6, 2.6, 'head'), (62, 11.2, 2.2, 2.1, 'head'), (67, 11.0, 3.1, 2.0, 'head'),
-        (69.5, 11.0, 2.2, 1.6, 'head')])
+        (55, 11.6, 2.4, 2.5, 'head'), (61, 11.2, 1.8, 2.0, 'head'), (66.5, 11.0, 3.3, 2.0, 'head'),
+        (70, 10.8, 2.4, 1.6, 'head')])
     paint = body_paint(belly='tealgrey_belly', band='tealgrey_belly', period=7.5, duty=0.25, bx0=-62, bx1=-14, ridge=0.1)
     m.body(spine, 'tealgrey', paint, torso=(-6, 26))
     head_parts(m, [(42, 0, 9.6, 3.6, 2.2, 'head'), (52, 0, 9.5, 2.5, 1.5, 'head'), (62, 0, 9.4, 2.0, 1.2, 'head'),
@@ -1091,8 +1091,10 @@ def spinosaurus(m):
             idx[f < 0.08] = 1
             return idx, 0.32 * f - 0.04
         fin(m, top, base, 2.2, 'sail', Paint(sail_fn, ['sail_dark', 'tealgrey']))
-        fin(m, [(-62, 4.5), (-56, 8), (-46, 11), (-36, 12.5), (-28, 13.5)],
-            lambda x: float(np.interp(x, [-62, -28], [3.5, 11])), 0.0, 'tealgrey')
+        # paddle tail (Ibrahim et al. 2020): tall, flat fin of neural spines along the whole tail
+        fin(m, [(-67, 2.5), (-62, 8.5), (-54, 12.5), (-44, 15.0), (-34, 16.0), (-26, 15.0), (-20, 13.5)],
+            lambda x: float(np.interp(x, [-66, -54, -40, -24, -20], [1.8, 4.5, 6.8, 10.0, 11.0])), 1.4, 'sail',
+            Paint(lambda s, t, n: (np.where(np.abs(((s + 0.5) / 3.0) % 1.0 - 0.5) < 0.1, 0, -1), 0.2), ['sail_dark']))
     else:
         for x in np.arange(-18, 31, 3.0):
             t = float(np.interp(x, [p[0] for p in top], [p[1] for p in top]))
@@ -1102,25 +1104,28 @@ def spinosaurus(m):
     m.mirror(lambda s: theropod_arm(m, s, (25, 6, 8.5), (28, 11, 7), (33, 12, 6), [2.4, 1.8, 1.2], 'tealgrey', claw_len=2.6, claw_r=0.55))
     for side in (1, -1):
         m.eye((45.6, side * 4.1, 13.9), 'eye_gold')
-        m.eye((66.5, side * 1.4, 12.6), 'nostril')
+        m.eye((55.0, side * 1.6, 13.4), 'nostril')  # nostrils sit far back on the snout
 
 
 def allosaurus(m):
     spine = ys([
         (-62, 4.0, 0.8, 1.0, 'tail'), (-50, 5.5, 1.8, 2.4, 'tail'), (-36, 7.0, 3.2, 3.8, 'tail'),
         (-20, 8.5, 5.2, 5.6, 'tail'), (-6, 9.5, 8.6, 7.6, 'body'), (6, 10.0, 10.6, 8.8, 'body'),
-        (17, 10.0, 10.0, 8.4, 'body'), (26, 10.5, 7.4, 6.8, 'body'), (32, 11.5, 5.4, 5.0, 'neck'),
-        (38, 12.5, 5.2, 4.8, 'neck'), (43, 13.4, 7.2, 5.4, 'head'), (49, 13.2, 6.8, 5.0, 'head'),
-        (55, 12.6, 5.4, 4.0, 'head'), (60, 12.2, 4.0, 3.2, 'head'), (63.5, 11.9, 2.6, 2.3, 'head')])
+        (17, 10.0, 10.0, 8.4, 'body'), (26, 10.5, 7.4, 6.8, 'body'), (32, 11.5, 5.0, 5.0, 'neck'),
+        (38, 12.5, 4.4, 4.8, 'neck'), (43, 13.4, 7.8, 5.6, 'head'), (49, 13.2, 6.6, 5.2, 'head'),
+        (55, 12.6, 4.8, 4.2, 'head'), (60, 12.2, 3.6, 3.4, 'head'), (63.5, 11.9, 2.4, 2.4, 'head')])
     paint = body_paint(belly='sandbelly', band='tan_band', period=6.5, duty=0.42, bx0=-56, bx1=36, ridge=0.12)
     m.body(spine, 'tan', paint, torso=(-6, 26))
     head_parts(m, [(42, 0, 10.0, 5.8, 3.0, 'head'), (51, 0, 9.8, 4.9, 2.3, 'head'), (59, 0, 9.8, 3.5, 1.7, 'head'),
                    (63, 0, 9.8, 2.4, 1.3, 'head')], 'sandbelly',
-               brows=[((46.5, s * 5.2, 16.6), (2.6, 1.5, 1.1), 'tan') for s in (1, -1)] + [((55, 0, 15.8), (5.0, 1.3, 1.2), 'tan')])
+               brows=[((46.0, s * 5.2, 16.6), (2.6, 1.5, 1.1), 'tan') for s in (1, -1)]
+               # paired rugose nasal ridges running from the horns to the snout tip
+               + [((x, s * 1.8, 18.0 - 0.45 * (x - 51)), (1.3, 0.8, 0.9), 'rust') for s in (1, -1) for x in (51, 53.5, 56, 58.5)])
     teeth(m, np.arange(48, 63, 1.8), lambda x: np.interp(x, [43, 55, 60, 63], [6.0, 5.2, 3.8, 2.6]), 10.2)
     for side in (1, -1):
-        m.horn((47.5, side * 4.4, 17.2), (50.0, side * 5.0, 20.4), 1.6, mat='rust', curve=(0, side * 0.3, 0.3))
-        m.eye((46.5, side * 6.1, 15.0), 'eye_red')
+        # lacrimal horns sit in front of the eyes, short and triangular
+        m.horn((49.0, side * 4.0, 17.8), (50.2, side * 4.6, 22.0), 1.6, mat='rust', curve=(0, side * 0.2, 0.1))
+        m.eye((46.0, side * 6.1, 15.0), 'eye_red')
         m.eye((61.6, side * 2.0, 13.8), 'nostril')
     m.mirror(lambda s: theropod_leg(m, s, (1, 7, 8), (9, 15, 6), (4, 17.5, 2.5), (10, 19, 0.8), [5.0, 3.4, 2.1, 1.7], 'tan', toe=3.2, claw=0.75,
                                     thigh=(8.0, 4.8, 5.4)))
@@ -1170,14 +1175,16 @@ def pteranodon(m):
     spine = ys([
         (-12, 10.0, 0.8, 0.8, 'tail'), (-8, 10.0, 2.4, 2.4, 'body'), (-1, 10.2, 4.0, 3.4, 'body'),
         (6, 10.4, 3.6, 3.0, 'body'), (11, 10.8, 2.2, 2.2, 'neck'), (15, 11.2, 1.9, 1.9, 'neck'),
-        (19, 11.6, 2.6, 2.4, 'head'), (23, 11.6, 1.8, 1.7, 'head'), (29, 11.3, 1.1, 1.1, 'head'),
-        (35, 11.0, 0.5, 0.5, 'head')])
+        (19, 11.6, 2.6, 2.4, 'head'), (24, 11.6, 1.7, 1.8, 'head'), (31, 11.3, 1.1, 1.2, 'head'),
+        (37, 11.0, 0.7, 0.7, 'head'), (41.5, 10.9, 0.35, 0.35, 'head')])
     m.body(spine, 'pale', body_paint(belly='pale', back='wing', back_level=0.55), torso=(-6, 8))
     # backward crest
     if not m.skel:
-        m.tube([(21, 0, 12.6, 1.4, 1.6, 'head'), (16, 0, 14.0, 1.6, 1.8, 'head'), (11, 0, 15.2, 1.0, 1.0, 'head'),
-                (7.5, 0, 16.0, 0.4, 0.5, 'head')], 'rust', tag='head')
-        m.tube([(22, 0, 10.4, 1.3, 0.9, 'head'), (28, 0, 10.5, 0.9, 0.7, 'head'), (34, 0, 10.6, 0.4, 0.4, 'head')], 'beak', tag='head')
+        # skull about as long as the torso is wide-spread: long toothless beak, blade crest swept far back
+        m.tube([(21, 0, 12.6, 1.2, 1.8, 'head'), (15, 0, 14.4, 1.0, 2.2, 'head'), (9, 0, 15.8, 0.8, 1.8, 'head'),
+                (4, 0, 16.8, 0.5, 1.0, 'head'), (1.5, 0, 17.2, 0.3, 0.4, 'head')], 'rust', tag='head')
+        m.tube([(22, 0, 10.4, 1.3, 0.9, 'head'), (30, 0, 10.5, 0.9, 0.7, 'head'), (36, 0, 10.6, 0.55, 0.5, 'head'),
+                (41, 0, 10.7, 0.25, 0.25, 'head')], 'beak', tag='head')
     else:
         m.tube([(21, 0, 12.6, 1.0, 1.2, 'head'), (16, 0, 14.0, 1.0, 1.2, 'head'), (10, 0, 15.2, 0.5, 0.5, 'head')], 'bone', tag='head')
 
@@ -1245,8 +1252,9 @@ def oviraptor(m):
     m.body(spine, 'brown', feather_paint('brown_dark', belly='sandbelly', bars='brown_dark', bar_period=4.5, bar_x=(-40, -12)),
            torso=(-6, 12))
     if not m.skel:
-        m.ell((35, 0, 12.8), (2.4, 1.6, 1.7), mat='beak', tag='head')
-        m.ell((30.5, 0, 17.0), (3.0, 1.4, 2.6), mat='orange_crest', tag='head')
+        m.ell((34.6, 0, 13.0), (2.2, 1.6, 2.0), mat='beak', tag='head')
+        m.ell((36.0, 0, 11.6), (1.0, 1.0, 1.1), mat='beak', tag='head')  # hooked tip
+        m.ell((31.5, 0, 17.6), (3.2, 1.0, 3.4), mat='orange_crest', tag='head')
         fan = [(-30, 0), (-34, 3.0), (-37, 2.4), (-40, 4.0), (-43, 3.0), (-46, 3.6), (-48, 1.6), (-49, 0)]
         fan = fan + [(x, -y) for x, y in fan[::-1][1:-1]]
         m.slab((0, 0, 7.4), (1, 0, 0), (0, 1, 0), fan, th=0.8, mat='brown_dark',
@@ -1314,7 +1322,7 @@ def hypsilophodon(m):
 
 def leaellynasaura(m):
     small_ornithopod(m, 0.44, 'greyblue', None, body_paint(belly='pale', band='greyblue_dark', period=5.0, duty=0.3,
-                     bx0=-120, bx1=-8), tail=1.75, eye='eye_big', head_big=1.3)
+                     bx0=-120, bx1=-8), tail=2.2, eye='eye_big', head_big=1.35)
 
 
 def psittacosaurus(m):
@@ -1323,8 +1331,9 @@ def psittacosaurus(m):
                      eye='eye_gold')
     k = 0.62
     if not m.skel:
+        m.ell(P3((32.6, 0, 9.6), k), (1.1 * k, 1.2 * k, 1.4 * k), mat='beak', tag='head')  # hooked lower beak
         for side in (1, -1):
-            m.horn(P3((27.0, 2.6, 11.2), k, side), P3((27.5, 4.6, 10.6), k, side), 0.55, mat='horn')
+            m.horn(P3((27.2, 3.6, 11.4), k, side), P3((27.0, 6.8, 10.4), k, side), 0.9, mat='beak')
 
 
 # ---------------------------------------------------------------- quadrupeds
@@ -1333,8 +1342,8 @@ def stegosaurus(m):
         (-58, 7.0, 1.2, 1.2, 'tail'), (-48, 9.0, 2.2, 2.4, 'tail'), (-36, 12.0, 3.8, 4.2, 'tail'),
         (-22, 15.0, 6.4, 7.0, 'tail'), (-8, 16.5, 10.4, 10.2, 'body'), (4, 15.8, 11.6, 10.8, 'body'),
         (16, 13.6, 10.2, 9.2, 'body'), (25, 11.0, 7.0, 6.4, 'body'), (31, 9.0, 4.2, 3.8, 'neck'),
-        (37, 8.0, 3.0, 2.8, 'neck'), (42, 7.6, 3.2, 2.9, 'head'), (47, 7.0, 2.4, 2.2, 'head'),
-        (51, 6.4, 1.4, 1.4, 'head')])
+        (37, 8.0, 2.8, 2.8, 'neck'), (42, 7.6, 2.8, 2.9, 'head'), (47, 7.0, 2.2, 2.2, 'head'),
+        (51, 6.4, 1.5, 1.6, 'head'), (53.5, 6.0, 1.0, 1.1, 'head')])
     m.body(spine, 'olive', body_paint(belly='sandbelly', spots='olive_dark', back=None), torso=(-10, 20))
     back = lambda x: float(np.interp(x, [-58, -48, -36, -22, -8, 4, 16, 25, 31, 37],
                                      [8.2, 11.4, 16.2, 22.0, 26.7, 26.6, 22.8, 17.4, 12.8, 10.8]))
@@ -1367,16 +1376,16 @@ def stegosaurus(m):
     m.mirror(lambda s: quad_leg(m, s, (-8, 9, 14), (-6, 15, 7), (-9, 16.5, 1.0), [6.2, 4.4, 3.6], 'olive', toe=1.6, claw=0.8, claw_mat='horn'))
     m.mirror(lambda s: quad_leg(m, s, (22, 7, 9), (24, 12.5, 5), (26, 14, 1.0), [4.4, 3.4, 2.8], 'olive', toe=1.4, claw=0.7, claw_mat='horn'))
     if not m.skel:
-        m.ell((51.2, 0, 5.8), (1.6, 1.1, 1.1), mat='beak', tag='head')
+        m.ell((53.4, 0, 5.4), (1.4, 1.0, 1.0), mat='beak', tag='head')
     for side in (1, -1):
-        m.eye((44.0, side * 2.6, 9.0), 'eye')
-        m.eye((50.0, side * 0.9, 7.6), 'nostril')
+        m.eye((44.0, side * 2.4, 9.0), 'eye')
+        m.eye((52.0, side * 0.9, 7.2), 'nostril')
     if not m.skel:
         m.tube([(40, 0, 6.0, 2.4, 1.6, 'head'), (47, 0, 5.4, 1.7, 1.1, 'head'), (50, 0, 5.2, 1.1, 0.8, 'head')], 'sandbelly', tag='head')
 
 
 def ceratopsian(m, k, base, frill_mat, rim_mat, boss=False, horns=False, beak_len=1.0, frill_w=13, frill_h=14,
-                frill_spikes=0, big_spikes=False, paint=None, girth=1.2):
+                frill_spikes=0, big_spikes=False, paint=None, girth=1.2, jugal=0.0, unicorn=False, nasal=0.0):
     spine = scaled(ys([
         (-48, 6.0, 1.2, 1.2, 'tail'), (-38, 8.0, 2.6, 2.8, 'tail'), (-26, 10.5, 5.0, 5.4, 'tail'),
         (-12, 12.5, 10.0, 9.4, 'body'), (2, 13.0, 12.0, 10.4, 'body'), (14, 12.5, 11.0, 9.6, 'body'),
@@ -1412,7 +1421,10 @@ def ceratopsian(m, k, base, frill_mat, rim_mat, boss=False, horns=False, beak_le
         top = np.array(P3((28, 0, 14.5), k)) + np.array(e2) * frill_h * k
         for side in (1, -1):
             b = top + np.array([0, side * 3.0 * k, 0])
-            m.horn(b, b + np.array([-5.5 * k, side * 4.0 * k, 4.0 * k]), 1.3 * k, mat='horn', curve=(0, side * 1.0 * k, 1.2 * k))
+            # the paired parietal spikes sweep out and up from the frill top
+            m.horn(b, b + np.array([-2.0 * k, side * 8.0 * k, 5.0 * k]), 1.5 * k, mat='horn', curve=(0, side * 1.0 * k, 1.6 * k))
+        if unicorn:  # short midline spike on the frill (P. lakustai)
+            m.horn(top - np.array(e2) * 2.0 * k, top + np.array([-1.0 * k, 0, 4.0 * k]), 1.0 * k, mat='horn')
     if boss:
         bp = None if m.skel else Paint(lambda u, q, n: (None, 0.18 * np.sin(u * 2.3) * np.sin(q[:, 1] * 6)), [])
         m.ell(P3((41.5, 0, 13.4), k), (6.0 * k, 4.0 * k, 2.4 * k), mat='boss', tag='head', paint=bp)
@@ -1421,6 +1433,11 @@ def ceratopsian(m, k, base, frill_mat, rim_mat, boss=False, horns=False, beak_le
     if horns:
         for side in (1, -1):
             m.horn(P3((40, 4.6, 11.0), k, side), P3((41, 6.4, 10.4), k, side), 0.8 * k, mat='horn')
+    if jugal and not m.skel:  # cheek bones flare out sideways below the eyes
+        for side in (1, -1):
+            m.horn(P3((35.5, 5.8, 10.6), k, side), P3((35.0, 6.4 + jugal, 8.8), k, side), 1.6 * k, mat='beak')
+    if nasal and not m.skel:  # low bump on top of the snout
+        m.ell(P3((44.0, 0, 12.6), k), (2.6 * k, 1.2 * k, nasal * k), mat=base, tag='head')
     m.mirror(lambda s: quad_leg(m, s, P3((22, 8, 8), k), P3((24, 13.5, 4), k), P3((25, 14, 0.8), k),
                                 [4.0 * k, 3.2 * k, 2.6 * k], base, toe=1.4 * k, claw=max(0.35, 0.7 * k), claw_mat='horn'))
     m.mirror(lambda s: quad_leg(m, s, P3((-8, 8.5, 9), k), P3((-6, 14, 4.5), k), P3((-8, 14.5, 0.8), k),
@@ -1431,12 +1448,12 @@ def ceratopsian(m, k, base, frill_mat, rim_mat, boss=False, horns=False, beak_le
 
 
 def pachyrhinosaurus(m):
-    ceratopsian(m, 0.98, 'brown', 'brown', 'rust', boss=True, frill_spikes=True, big_spikes=True, frill_w=16, frill_h=16,
+    ceratopsian(m, 0.98, 'brown', 'brown', 'rust', boss=True, frill_spikes=True, big_spikes=True, frill_w=16, frill_h=16, unicorn=True,
                 paint=body_paint(belly='sandbelly', band='brown_dark', period=7.0, duty=0.12, bx0=-46, bx1=20))
 
 
 def protoceratops(m):
-    ceratopsian(m, 0.56, 'sand', 'sand_dark', 'brown_dark', frill_w=21, frill_h=19, beak_len=1.6, girth=1.12,
+    ceratopsian(m, 0.56, 'sand', 'sand_dark', 'brown_dark', frill_w=21, frill_h=19, beak_len=1.6, girth=1.12, jugal=3.0, nasal=1.6,
                 paint=body_paint(belly='sandbelly', spots='sand_dark'))
 
 
@@ -1473,7 +1490,9 @@ def edmontosaurus(m):
         (56.5, 12.4, 4.6, 1.8, 'head'), (59, 12.2, 4.2, 1.5, 'head')])
     m.body(spine, 'brown', body_paint(belly='sandbelly', back='olive', back_level=0.72, spots='brown_dark'), torso=(-6, 22))
     if not m.skel:
-        m.tube([(52, 0, 11.4, 3.6, 1.2, 'head'), (57, 0, 11.0, 4.2, 1.0, 'head'), (59.5, 0, 11.0, 3.8, 0.9, 'head')], 'beak', tag='head')
+        m.tube([(52, 0, 11.4, 3.6, 1.2, 'head'), (57, 0, 11.0, 4.6, 1.0, 'head'), (60, 0, 11.0, 4.4, 0.9, 'head')], 'beak', tag='head')
+        m.slab((0, 0, 17.6), (1, 0, 0), (0, 0, 1), [(38, 0), (39, 1.8), (41, 2.6), (43, 2.2), (45, 1.4), (47, 0)],
+               th=1.2, mat='rust', tag='head')
         m.tube([(41, 0, 12.4, 3.6, 2.2, 'head'), (49, 0, 11.6, 3.0, 1.6, 'head')], 'sandbelly', tag='head')
     m.mirror(lambda s: theropod_leg(m, s, (0, 8.5, 11), (8, 16, 7), (3, 17.5, 2.5), (8, 18.5, 0.8), [5.8, 4.0, 2.6, 2.0], 'brown', toe=2.2, claw=0.9,
                                     thigh=(8.0, 5.0, 5.6)))
@@ -1512,7 +1531,8 @@ def archelon(m):
     m.tube([(30, 0, 5.0, 6.6, 4.6, 'head'), (38, 0, 5.6, 6.6, 5.0, 'head'), (44, 0, 5.2, 5.0, 4.0, 'head'),
             (48.5, 0, 4.4, 2.6, 2.8, 'head')], 'turtle_skin', tag='head')
     if not m.skel:
-        m.tube([(47, 0, 4.0, 2.2, 2.2, 'head'), (50, 0, 3.0, 1.1, 1.2, 'head')], 'beak', tag='head')
+        m.tube([(46.5, 0, 4.4, 2.6, 2.6, 'head'), (50, 0, 3.6, 1.6, 1.8, 'head'), (52, 0, 2.2, 0.9, 1.1, 'head'),
+                (52.4, 0, 1.0, 0.5, 0.5, 'head')], 'beak', tag='head')
     m.tube([(-34, 0, 4.0, 3.0, 2.0, 'tail'), (-42, 0, 3.6, 1.2, 1.2, 'tail')], 'turtle_skin')
     fp = membrane_paint('turtle_skin', span=56.0)
     skin_spots = Paint(lambda s, t, n: (np.where(np.sin(s * 1.3) * np.sin(t * 1.1) > 0.6, 0, -1), 0.2 * np.clip(np.abs(t) / 56, 0, 1)), ['shell_dark'])

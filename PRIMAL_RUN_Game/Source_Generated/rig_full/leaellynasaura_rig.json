@@ -73,10 +73,10 @@
  "frames": {
   "leaellynasaura_idle_S_000": {
    "file": "leaellynasaura_idle_S_000.png",
-   "sha256": "a887b9c3dc1d11f244c33cb292ed76891fd48a2c01f38ea08c9389cbd65079d1",
+   "sha256": "821f8069409d155b70e217a5db474d7d114b7b69882ffc164a013cca7c1e8c54",
    "bbox": [
     64,
-    46,
+    40,
     80,
     83
    ],
@@ -153,12 +153,12 @@
   },
   "leaellynasaura_idle_N_000": {
    "file": "leaellynasaura_idle_N_000.png",
-   "sha256": "0b4740ceb257e41bd8b0f8490c1b9e39e414e67caca7e9bda4620bf1cd91f427",
+   "sha256": "7411d38423dba0e03197a1eae742c0cd0dffee88cd6624dbe0804b6c7a3ab89d",
    "bbox": [
     64,
-    58,
+    57,
     80,
-    96
+    103
    ],
    "joints": {
     "hind_L": [
@@ -233,9 +233,9 @@
   },
   "leaellynasaura_idle_E_000": {
    "file": "leaellynasaura_idle_E_000.png",
-   "sha256": "9610f277d5747e0d2c05febdcb4f75ea4691993e07059fad8d2d341027ff4b52",
+   "sha256": "f364d120b25a9bd2cefd2879b5d1ceaa5e5b32f3a7e24be479ba7b155af0d8b9",
    "bbox": [
-    41,
+    34,
     65,
     87,
     79
@@ -313,11 +313,11 @@
   },
   "leaellynasaura_idle_W_000": {
    "file": "leaellynasaura_idle_W_000.png",
-   "sha256": "15fc39c5b9834b1c9c3446de2f9c51542aea51bae16c8cb97ecea2a8eaab6511",
+   "sha256": "f375d15e374c702e8f543e45f6da000b2594671ebb87e8c2bd477c7056d1a323",
    "bbox": [
     57,
     65,
-    100,
+    110,
     79
    ],
    "joints": {
@@ -393,10 +393,10 @@
   },
   "leaellynasaura_idle_S_001": {
    "file": "leaellynasaura_idle_S_001.png",
-   "sha256": "a6c4e51a5aad95bb176ea4811dfa235a6a9ed07fb3c785a211861ada25127d49",
+   "sha256": "365453e1819a5f2c7d4530f49d39242d890f732bbcde1eb68886918fb3b5598a",
    "bbox": [
     64,
-    46,
+    40,
     80,
     83
    ],
@@ -473,12 +473,12 @@
   },
   "leaellynasaura_idle_N_001": {
    "file": "leaellynasaura_idle_N_001.png",
-   "sha256": "8fc055f4cee95bd6f9a7cf64c9cc50937e21c32d522855c5be3828a72cfdf4ea",
+   "sha256": "b10d85873d1fe28a1ffbd6f087a40c5095c40f27c0aeeceadcf370dff447068d",
    "bbox": [
     64,
     57,
     80,
-    96
+    103
    ],
    "joints": {
     "hind_L": [
@@ -553,9 +553,9 @@
   },
   "leaellynasaura_idle_E_001": {
    "file": "leaellynasaura_idle_E_001.png",
-   "sha256": "a5b1404a8766fa544de4c81f758cb1e70432f6571d7d6667751270369fb34a87",
+   "sha256": "d493d6e8d5c57e94890a8a7a652cdeb949f6c0aa7deeeefcdc1653ef3fa99dd8",
    "bbox": [
-    41,
+    35,
     65,
     87,
     79
@@ -633,11 +633,11 @@
   },
   "leaellynasaura_idle_W_001": {
    "file": "leaellynasaura_idle_W_001.png",
-   "sha256": "77b5d43c6e31e52892ef0dd1ae64c714da9d3e27d55a1176a55a5e83a9652739",
+   "sha256": "df652988d3ab4b6c9115e721a85b91d70d11afe11c29bb58adfa1cbd5a61ec35",
    "bbox": [
     57,
     65,
-    98,
+    106,
     79
    ],
    "joints": {
@@ -713,10 +713,10 @@
   },
   "leaellynasaura_idle_S_002": {
    "file": "leaellynasaura_idle_S_002.png",
-   "sha256": "f459dbb550c465aa8a6f9174381b854ad9def8cfa4603e80b9d024bb10d8ba9b",
+   "sha256": "db68d38f975f347cc9eef8efb8fb79a3080fbb599a51322a6e175b53d52680e6",
    "bbox": [
     64,
-    46,
+    40,
     80,
     83
    ],
@@ -793,12 +793,12 @@
   },
   "leaellynasaura_idle_N_002": {
    "file": "leaellynasaura_idle_N_002.png",
-   "sha256": "3a73c2d30b5fe9d54d47609ceb055adfb6664faa083f075420b93a00bd24e7e3",
+   "sha256": "d8eb92ac1a9675edb6b86648a9a450dcb276af55ebc4de339659364fe819716b",
    "bbox": [
     64,
     58,
     80,
-    97
+    103
    ],
    "joints": {
     "hind_L": [
@@ -873,9 +873,9 @@
   },
   "leaellynasaura_idle_E_002": {
    "file": "leaellynasaura_idle_E_002.png",
-   "sha256": "2acc24fd20899e789203bc6fbf53b23389566cebc2c3bad073bcd4279af2eb42",
+   "sha256": "7d4b2f40c96be3884854363bdb89d2523c82db8d7a43c920e582d91b035aa3f7",
    "bbox": [
-    44,
+    34,
     65,
     87,
     79
@@ -953,11 +953,11 @@
   },
   "leaellynasaura_idle_W_002": {
    "file": "leaellynasaura_idle_W_002.png",
-   "sha256": "789cfe9acce11e190b4cbf542eec0f4f6a677b2b224d8203d78a6c163971883f",
+   "sha256": "e36c2e3601bcef0a1134701013dbf269b4b2415925a31f4a368f39bb33c91aca",
    "bbox": [
     57,
     65,
-    103,
+    110,
     79
    ],
    "joints": {
@@ -1033,10 +1033,10 @@
   },
   "leaellynasaura_idle_S_003": {
    "file": "leaellynasaura_idle_S_003.png",
-   "sha256": "37cc2582ed73f1d8ab76022009c3fc656064b5a178a2a2ac0a890145112bb05c",
+   "sha256": "1b8030723299df5b85be889b72fdc6bf75983df9c2d1af0701354bb276279943",
    "bbox": [
     64,
-    46,
+    40,
     80,
     83
    ],
@@ -1113,12 +1113,12 @@
   },
   "leaellynasaura_idle_N_003": {
    "file": "leaellynasaura_idle_N_003.png",
-   "sha256": "156db1ff3bc364c0b336bc3a74d9acb73b179eae554763254947f355dc67ac93",
+   "sha256": "f869f0a3b8c24a993f7f3c8ff64c6b364e7a00415f8694c0a6bad672570da6a7",
    "bbox": [
     64,
     58,
     80,
-    96
+    103
    ],
    "joints": {
     "hind_L": [
@@ -1193,9 +1193,9 @@
   },
   "leaellynasaura_idle_E_003": {
    "file": "leaellynasaura_idle_E_003.png",
-   "sha256": "9b56c98b67199e2b9a2680e5d9f8267b85d05c14fc7b2d1877fd85e6cea05dcf",
+   "sha256": "6a77cd198ba87106d6264be2f0c4c08e93ea160e034e180d4a0696fede7860bb",
    "bbox": [
-    46,
+    38,
     65,
     88,
     79
@@ -1273,11 +1273,11 @@
   },
   "leaellynasaura_idle_W_003": {
    "file": "leaellynasaura_idle_W_003.png",
-   "sha256": "a1e7f72af73f63c790e13e326d3b88b04a315bfa1467ecf014d6f3369bb09caa",
+   "sha256": "5da0c44f185abc26b95cb6d99ce9212039b6d94d94b0525353e9c16209461beb",
    "bbox": [
     56,
     65,
-    103,
+    109,
     79
    ],
    "joints": {
@@ -1353,10 +1353,10 @@
   },
   "leaellynasaura_walk_S_000": {
    "file": "leaellynasaura_walk_S_000.png",
-   "sha256": "07a27991be09826bfe0571dd21ad0efb4ab039dd0cbc34193492f2561d53b11c",
+   "sha256": "8a300356af0a2e51ff6a6ba44c3d6b6c49e354cc1bf4456aea0154142d0fca7b",
    "bbox": [
     64,
-    46,
+    40,
     80,
     83
    ],
@@ -1433,12 +1433,12 @@
   },
   "leaellynasaura_walk_N_000": {
    "file": "leaellynasaura_walk_N_000.png",
-   "sha256": "7c13c553a6ee73c7baca325d897fcca4057f8e1fef9f097c0f36170b91ea63ac",
+   "sha256": "ad3b761fde95828996ce405275489cbf0303b58d7d0f93e21c5c9e351abcbf6c",
    "bbox": [
     64,
     58,
     80,
-    95
+    102
    ],
    "joints": {
     "hind_L": [
@@ -1513,9 +1513,9 @@
   },
   "leaellynasaura_walk_E_000": {
    "file": "leaellynasaura_walk_E_000.png",
-   "sha256": "5525302e67b7559c2f5270ff9e9a85ade05821614cd3b5b40a402c51c980646b",
+   "sha256": "2aa633a5ffb284873144383323ab797c277cf24d1ae30814e44320557ddb4d50",
    "bbox": [
-    42,
+    35,
     65,
     87,
     79
@@ -1593,11 +1593,11 @@
   },
   "leaellynasaura_walk_W_000": {
    "file": "leaellynasaura_walk_W_000.png",
-   "sha256": "b1570fb8874706bb72fc741815df3cd4a30f262c6c5d5015994513e89e7aeb9d",
+   "sha256": "ebb588f4b56891c76a2d72d037f0d3ecfd89c64f56d9739c885259f8186640a2",
    "bbox": [
     57,
     65,
-    101,
+    110,
     79
    ],
    "joints": {
@@ -1673,10 +1673,10 @@
   },
   "leaellynasaura_walk_S_001": {
    "file": "leaellynasaura_walk_S_001.png",
-   "sha256": "3bcfb43db01f609a5cfd021823a3dbdb65457ee25ea4d90a8ca4a433ac415fd2",
+   "sha256": "ffd7e1bbeb54623f123a65afaea3f07f3e14a23963bdff543d0abe16cfb32d01",
    "bbox": [
     64,
-    49,
+    40,
     80,
     83
    ],
@@ -1753,12 +1753,12 @@
   },
   "leaellynasaura_walk_N_001": {
    "file": "leaellynasaura_walk_N_001.png",
-   "sha256": "f50c4362132a0edd7ebebcf04e5236fb35d7c77217965380a96c8be58fbcc5b3",
+   "sha256": "a5ccae48145e3c549816b93895817d3b01c9323874c9a69c1a0a56dc30452991",
    "bbox": [
     64,
     57,
     80,
-    94
+    103
    ],
    "joints": {
     "hind_L": [
@@ -1833,9 +1833,9 @@
   },
   "leaellynasaura_walk_E_001": {
    "file": "leaellynasaura_walk_E_001.png",
-   "sha256": "717f0307bf7e6ae35d0f971325235df589c40460463a00e79039ed34a020db9f",
+   "sha256": "6bad3de129577f1f568298939ddb4d5977912219ee958fc2fb2cd67ec3fbd5aa",
    "bbox": [
-    42,
+    34,
     65,
     88,
     79
@@ -1913,11 +1913,11 @@
   },
   "leaellynasaura_walk_W_001": {
    "file": "leaellynasaura_walk_W_001.png",
-   "sha256": "63e436c3681771f2d4c898f0465fdc431f6aff94886294326360f38b661fb7ae",
+   "sha256": "7a833cde903182e802c2fb23501f66bc331009858366b4d75c53417d65ad3363",
    "bbox": [
     57,
     65,
-    102,
+    110,
     79
    ],
    "joints": {
@@ -1993,10 +1993,10 @@
   },
   "leaellynasaura_walk_S_002": {
    "file": "leaellynasaura_walk_S_002.png",
-   "sha256": "3b2b0cd39ff1d4e7b251f183494773f3413a27ed74b1322b4f3e8206f0f174e0",
+   "sha256": "7f390a1afcc3b5fa7ae5276b7eb8d3649222b24366a31946f637214b0708c55a",
    "bbox": [
     64,
-    47,
+    40,
     80,
     83
    ],
@@ -2073,12 +2073,12 @@
   },
   "leaellynasaura_walk_N_002": {
    "file": "leaellynasaura_walk_N_002.png",
-   "sha256": "a4b9b455f3f158eba7cfcb8a89c64c6781602a9dc1a517a150e8d62661cbcaf6",
+   "sha256": "c4ba6a553155e8afe9aa390027a1e24f62527993af47c753b570b4dbbc9bd100",
    "bbox": [
     64,
     57,
     80,
-    95
+    101
    ],
    "joints": {
     "hind_L": [
@@ -2153,9 +2153,9 @@
   },
   "leaellynasaura_walk_E_002": {
    "file": "leaellynasaura_walk_E_002.png",
-   "sha256": "61afb2e52ac1b810bf685d9213f901f5db76f84e896172d018de175c980c1edd",
+   "sha256": "ca03d00353b47bb6bb007100b6de530ab2e090e3c80fe64574da84974c2b2b07",
    "bbox": [
-    42,
+    34,
     65,
     88,
     79
@@ -2233,11 +2233,11 @@
   },
   "leaellynasaura_walk_W_002": {
    "file": "leaellynasaura_walk_W_002.png",
-   "sha256": "9e1759bf3f3c730bb8e6918997a995d767f9f534b7cc8c8b5bba268eedeeef85",
+   "sha256": "7671d07e0e4c35a71a0c6d800b4cd3ebd0adf8052aa01172445bc774dfdd8459",
    "bbox": [
     57,
     65,
-    100,
+    108,
     79
    ],
    "joints": {
@@ -2313,10 +2313,10 @@
   },
   "leaellynasaura_walk_S_003": {
    "file": "leaellynasaura_walk_S_003.png",
-   "sha256": "b234bfc3431c78ee838bcaeec2952ad329fc053139a2f1f3bf3736238cc3d09f",
+   "sha256": "3c10dda0d958696b5e06e2bb4d9e1c751838e01eb0f76cd93c9e2adcfc39d5e0",
    "bbox": [
     64,
-    46,
+    40,
     80,
     83
    ],
@@ -2393,12 +2393,12 @@
   },
   "leaellynasaura_walk_N_003": {
    "file": "leaellynasaura_walk_N_003.png",
-   "sha256": "be19ebcdc992f47a7ae549402f5098950a522ce15942c813615e8abb35b17c04",
+   "sha256": "fa961d83918221aa8649b31c15619a88153671196ff496ede03a00d65e64890d",
    "bbox": [
     64,
     58,
     80,
-    95
+    102
    ],
    "joints": {
     "hind_L": [
@@ -2473,9 +2473,9 @@
   },
   "leaellynasaura_walk_E_003": {
    "file": "leaellynasaura_walk_E_003.png",
-   "sha256": "988fd3f8570d6f3444b573638ebea531008e5aaab190fbd4b616a397e4297ba3",
+   "sha256": "61059c34cdbeebf99287ddae4d8f9127ea9e893df5b55a32b6cf78881088b3bf",
    "bbox": [
-    43,
+    34,
     65,
     87,
     79
@@ -2553,11 +2553,11 @@
   },
   "leaellynasaura_walk_W_003": {
    "file": "leaellynasaura_walk_W_003.png",
-   "sha256": "04e6e95bac6c507e9f11441a29a311853ec21f38f654e178951818929e72fd74",
+   "sha256": "368d881d8fc72be9bc85b6c4629dd62284ccc55fbd696e5d1f5a982fbedf5312",
    "bbox": [
     57,
     65,
-    102,
+    109,
     79
    ],
    "joints": {
@@ -2633,10 +2633,10 @@
   },
   "leaellynasaura_walk_S_004": {
    "file": "leaellynasaura_walk_S_004.png",
-   "sha256": "7fd5a86911ca55b07fae12ca249c757ae28c7d90441d265c3b08f4b9464bdf72",
+   "sha256": "6e6eaefe5937a20ec04e3517b2bbcab8fc71d6efe7f24ee6ffa1cecaedea82d2",
    "bbox": [
     64,
-    49,
+    40,
     80,
     83
    ],
@@ -2713,12 +2713,12 @@
   },
   "leaellynasaura_walk_N_004": {
    "file": "leaellynasaura_walk_N_004.png",
-   "sha256": "38eeabd1224c638c0ec1a16a8a00a58887dd258b10beda3ad8d99e88c22cb8bf",
+   "sha256": "48257af0619d3648a04779bef7f02c9fd90a4b58bc34374945ae924676035e14",
    "bbox": [
     64,
     57,
     80,
-    94
+    103
    ],
    "joints": {
     "hind_L": [
@@ -2793,9 +2793,9 @@
   },
   "leaellynasaura_walk_E_004": {
    "file": "leaellynasaura_walk_E_004.png",
-   "sha256": "67bf1d908b67481eda94954eecce4c79f10c213593d307612255d43810d37613",
+   "sha256": "5049cd270a7bc8cf290cc649461bbb170509182920efd02b825c93ca79270681",
    "bbox": [
-    42,
+    34,
     65,
     87,
     79
@@ -2873,11 +2873,11 @@
   },
   "leaellynasaura_walk_W_004": {
    "file": "leaellynasaura_walk_W_004.png",
-   "sha256": "9b4d1bd99820c50d69996be660d72f51dc2d9a742f0e65082e90286136b1c54d",
+   "sha256": "68c76dcc95e4a040ec19148f502c3cbd7cfb0b5863cca41c2327e806996d0ed3",
    "bbox": [
     56,
     65,
-    102,
+    110,
     79
    ],
    "joints": {
@@ -2953,10 +2953,10 @@
   },
   "leaellynasaura_walk_S_005": {
    "file": "leaellynasaura_walk_S_005.png",
-   "sha256": "c515b0328e696f5e09245b89dc826ecd793301f4bc6c0dff36fa42cc101aa9e5",
+   "sha256": "9b6824910929abb5253207325df0d3ccfd441c382955b5ede26d9570d1d279db",
    "bbox": [
     64,
-    47,
+    40,
     80,
     83
    ],
@@ -3033,12 +3033,12 @@
   },
   "leaellynasaura_walk_N_005": {
    "file": "leaellynasaura_walk_N_005.png",
-   "sha256": "40725b49eb95ff787abbdc08f648741b6bfec2e28954f56377375045a7430597",
+   "sha256": "2ba3710f33bcec7599ed0ddc89d4f388945797a15cfeb4d85d046453b3972428",
    "bbox": [
     64,
     57,
     80,
-    95
+    101
    ],
    "joints": {
     "hind_L": [
@@ -3113,9 +3113,9 @@
   },
   "leaellynasaura_walk_E_005": {
    "file": "leaellynasaura_walk_E_005.png",
-   "sha256": "8fcb5c3b45e1758cd17c033a8df3ebfad60b3b352dd5a6022147c3f62596050e",
+   "sha256": "43aefbf23afe1de88ae7e6f4df230723b754a5e66fd1ab47b3938c7f6b359786",
    "bbox": [
-    44,
+    36,
     65,
     87,
     79
@@ -3193,11 +3193,11 @@
   },
   "leaellynasaura_walk_W_005": {
    "file": "leaellynasaura_walk_W_005.png",
-   "sha256": "99f65dc951e94b78e28a0c3e9621174b4fcff476bc71c22f2819b4b3f46856de",
+   "sha256": "ee68e0b7fd9773559092ed407361d8d266683ab064970dec872143fdb1f4584a",
    "bbox": [
     56,
     65,
-    102,
+    110,
     79
    ],
    "joints": {
@@ -3273,10 +3273,10 @@
   },
   "leaellynasaura_run_S_000": {
    "file": "leaellynasaura_run_S_000.png",
-   "sha256": "47eb9ffec52668ebcffa3d32b71268f8220fe77ded837c2828eff802fdbaae7c",
+   "sha256": "86d90d1d251049aad48ceecba20698f0f4e3c39e20a947e294bf47ffaa0b0418",
    "bbox": [
     64,
-    46,
+    41,
     80,
     83
    ],
@@ -3353,12 +3353,12 @@
   },
   "leaellynasaura_run_N_000": {
    "file": "leaellynasaura_run_N_000.png",
-   "sha256": "507bd44c0a0f6881f57f557a8d363f440c41e2be1458ecece301dbe306332a9e",
+   "sha256": "3c885630f26b44f22defc254622785548a73a9d980b1108095847403d09193e6",
    "bbox": [
     64,
     58,
     80,
-    96
+    101
    ],
    "joints": {
     "hind_L": [
@@ -3433,9 +3433,9 @@
   },
   "leaellynasaura_run_E_000": {
    "file": "leaellynasaura_run_E_000.png",
-   "sha256": "377f53186367a1f0795a4e4c31df1e798d3788ee7f40f03f00bceb8a7f08e2a4",
+   "sha256": "2c14da0e9a705efac11c68fd4ed5c7861837d03e301ccbc318bcfeb6579270c3",
    "bbox": [
-    41,
+    35,
     65,
     88,
     79
@@ -3513,11 +3513,11 @@
   },
   "leaellynasaura_run_W_000": {
    "file": "leaellynasaura_run_W_000.png",
-   "sha256": "4e323057d694d9cae05a131352ca8ee845900ecd25fd9c949e566b5909fe88f6",
+   "sha256": "56cbede7b5f185be46cbcad273f3787a3ec9521d3ea02c73cb7d14af82d5d967",
    "bbox": [
     56,
     65,
-    100,
+    109,
     79
    ],
    "joints": {
@@ -3593,10 +3593,10 @@
   },
   "leaellynasaura_run_S_001": {
    "file": "leaellynasaura_run_S_001.png",
-   "sha256": "51496c41421762ecde8d63f8ac6965b8e39bf9d84e48953251db37c46955780c",
+   "sha256": "76791256eae087bcb09ead1b9744ddcaa6dd6e68ee0d263ce7ef2a0c36337fad",
    "bbox": [
     64,
-    46,
+    39,
     80,
     84
    ],
@@ -3673,12 +3673,12 @@
   },
   "leaellynasaura_run_N_001": {
    "file": "leaellynasaura_run_N_001.png",
-   "sha256": "1b92492057dc49f0c8a87b1debae973ea7f5c749f7a05e78d30716d4fa3c4c3a",
+   "sha256": "dc8a791769aba6c5c539ab9b841a202da1838299e7fbe95aa7f1a6163661f5df",
    "bbox": [
     64,
-    58,
+    57,
     80,
-    96
+    102
    ],
    "joints": {
     "hind_L": [
@@ -3753,9 +3753,9 @@
   },
   "leaellynasaura_run_E_001": {
    "file": "leaellynasaura_run_E_001.png",
-   "sha256": "2ee91dbb26595cdec3cf0cfe458aa5b6c01723220faf83b474de150a29764b31",
+   "sha256": "ffa31a981c13c00690d4dcd8cef57b93318d85f35265b67c74bb228675ba122b",
    "bbox": [
-    45,
+    35,
     65,
     87,
     79
@@ -3833,11 +3833,11 @@
   },
   "leaellynasaura_run_W_001": {
    "file": "leaellynasaura_run_W_001.png",
-   "sha256": "794c6fcea180c3b7953aaa48998a798dfeec7738c8adeb35cbba2b8b965b2052",
+   "sha256": "c8788e1eeaee644f5260d5f2fd80e14495306f047f0dab5c33777b4796c14f70",
    "bbox": [
     57,
     64,
-    102,
+    110,
     79
    ],
    "joints": {
@@ -3913,10 +3913,10 @@
   },
   "leaellynasaura_run_S_002": {
    "file": "leaellynasaura_run_S_002.png",
-   "sha256": "7d1cbd6fe06abcb5cbc239026d1b02c527c977094fffabf2e4cea69081102ead",
+   "sha256": "737c8442920a156deb2d648386292cc494373714bc5df431fc97e423e77c2bb1",
    "bbox": [
     64,
-    47,
+    40,
     80,
     84
    ],
@@ -3993,12 +3993,12 @@
   },
   "leaellynasaura_run_N_002": {
    "file": "leaellynasaura_run_N_002.png",
-   "sha256": "c297c74bbb5264416d7d83511abc7d0c8b472c648c3fb74ec9db8cb450edebb2",
+   "sha256": "8e47c3c807fb203db23c21ed02a95590b793606acc648614c8a042d3f328ac2b",
    "bbox": [
     64,
-    58,
+    57,
     80,
-    95
+    101
    ],
    "joints": {
     "hind_L": [
@@ -4073,9 +4073,9 @@
   },
   "leaellynasaura_run_E_002": {
    "file": "leaellynasaura_run_E_002.png",
-   "sha256": "15ba36ae175f12ab5bf546d592505b4a3ffa4d20e2df3798d6c42f43533b1966",
+   "sha256": "bcf63c171fb6a6053eb7c9a0a7b579df4806e78992396a6e851a3f174854ddd9",
    "bbox": [
-    42,
+    35,
     65,
     87,
     79
@@ -4153,11 +4153,11 @@
   },
   "leaellynasaura_run_W_002": {
    "file": "leaellynasaura_run_W_002.png",
-   "sha256": "d0366c417abba008686d0884b79ee8d8a38bea29cb3506812b870c2727fbfc85",
+   "sha256": "640e9973ba0f61a91bf20d2df394f4e9105396c4559b4c4e28ed5a457b0dcfc8",
    "bbox": [
     57,
     65,
-    102,
+    110,
     79
    ],
    "joints": {
@@ -4233,10 +4233,10 @@
   },
   "leaellynasaura_run_S_003": {
    "file": "leaellynasaura_run_S_003.png",
-   "sha256": "4b6a7e01f3fea0865601b556389ac9026936247fcf808fb541cc066a4b577b8d",
+   "sha256": "e2e4a83a2355588008c69ce309c1f42405fce3c2f4e4b7b8d6abcd1ba17e164e",
    "bbox": [
     64,
-    46,
+    41,
     80,
     83
    ],
@@ -4313,12 +4313,12 @@
   },
   "leaellynasaura_run_N_003": {
    "file": "leaellynasaura_run_N_003.png",
-   "sha256": "44040a11c154ec1c1f6176220f6519f6183ab95be056abfd559135cd16b30c5f",
+   "sha256": "16bad597d1bc9f2229039d5571810b2d8a17995a183c884530767fc65b07f1a1",
    "bbox": [
     64,
     58,
     80,
-    96
+    101
    ],
    "joints": {
     "hind_L": [
@@ -4393,9 +4393,9 @@
   },
   "leaellynasaura_run_E_003": {
    "file": "leaellynasaura_run_E_003.png",
-   "sha256": "69bfda7851bd027d20267091e63fe4d37a7c42090171c9ed96ae1e4b339fe738",
+   "sha256": "f6485885b31982ecc3a7820a8cf4f80684acb7d1d3f7c9528f414f12032c00d1",
    "bbox": [
-    44,
+    35,
     65,
     88,
     79
@@ -4473,11 +4473,11 @@
   },
   "leaellynasaura_run_W_003": {
    "file": "leaellynasaura_run_W_003.png",
-   "sha256": "a7154c26c64fdd5d5d438410b2aef305aaf1bf06c7ea67e684dfcf0aacdcc2d6",
+   "sha256": "c16ab5509ffc88555fea60c1ba028a2dd98f6ee976a72f523f9ec058cbcf4e7d",
    "bbox": [
     56,
     65,
-    103,
+    109,
     79
    ],
    "joints": {
@@ -4553,10 +4553,10 @@
   },
   "leaellynasaura_run_S_004": {
    "file": "leaellynasaura_run_S_004.png",
-   "sha256": "975e17c063f294f03e93848cfab159d8a4a470ee368fcc373b3e6a64d6b92080",
+   "sha256": "28a9eee20d9620923d84b431cf22c8196007519b7b95eb8313bcc4281c3fda10",
    "bbox": [
     64,
-    46,
+    39,
     80,
     84
    ],
@@ -4633,12 +4633,12 @@
   },
   "leaellynasaura_run_N_004": {
    "file": "leaellynasaura_run_N_004.png",
-   "sha256": "2184c838d2b41512a2737f911e6d7395d67050d9c62294049bbf244fa0ae8ae9",
+   "sha256": "41e31cb9d59cc093ae634a2e60155beb8e7a860a62828c506be0a7c4134215c8",
    "bbox": [
     64,
-    58,
+    57,
     80,
-    96
+    102
    ],
    "joints": {
     "hind_L": [
@@ -4713,9 +4713,9 @@
   },
   "leaellynasaura_run_E_004": {
    "file": "leaellynasaura_run_E_004.png",
-   "sha256": "5de273dc7aae7513335d8a768dac4ce1173fd79bceeba59023040168fe30d883",
+   "sha256": "a24c07d5bd3dc2580d9de676150333cbba30c69c378c0c02e7b6d1af01e3b392",
    "bbox": [
-    42,
+    34,
     64,
     87,
     79
@@ -4793,11 +4793,11 @@
   },
   "leaellynasaura_run_W_004": {
    "file": "leaellynasaura_run_W_004.png",
-   "sha256": "72ae1ec70f9a2227622f2529f73b2ee518d78c473e1c7950a023c2c9577cc3e5",
+   "sha256": "33e0ab5b7dab7ec0299485e81f6f0ead3a3d26f055ded5b335963f33229c96a2",
    "bbox": [
     57,
     65,
-    99,
+    109,
     79
    ],
    "joints": {
@@ -4873,10 +4873,10 @@
   },
   "leaellynasaura_run_S_005": {
    "file": "leaellynasaura_run_S_005.png",
-   "sha256": "bb654e8f0c7b63ceb5572063c134b301ec63200f37cf1ddc522e5b35c8b3e8ac",
+   "sha256": "87d97d1c11b9816aaa7d7561cf20c443c76d87b39b6d072ef4f7ac61b3866282",
    "bbox": [
     64,
-    47,
+    40,
     80,
     84
    ],
@@ -4953,12 +4953,12 @@
   },
   "leaellynasaura_run_N_005": {
    "file": "leaellynasaura_run_N_005.png",
-   "sha256": "d7ed0e73473fa3a268554e5906d8455b9fb0f9d38ce3a2dc13a068b372790d2e",
+   "sha256": "f11f0ec03fbf41744dc671157d4d9611f5ab817406ee068fe1e7426ddaf4bdf4",
    "bbox": [
     64,
-    58,
+    57,
     80,
-    95
+    101
    ],
    "joints": {
     "hind_L": [
@@ -5033,9 +5033,9 @@
   },
   "leaellynasaura_run_E_005": {
    "file": "leaellynasaura_run_E_005.png",
-   "sha256": "3e981f0c6b7c6495c91c6f89bfb2280fdabeb68b6b59dda338a9a37c62a4b831",
+   "sha256": "b3664a58ae3eddef838ac91d56cf7b98d47b5a7acbe87a4789422480508fe8aa",
    "bbox": [
-    42,
+    34,
     65,
     87,
     79
@@ -5113,11 +5113,11 @@
   },
   "leaellynasaura_run_W_005": {
    "file": "leaellynasaura_run_W_005.png",
-   "sha256": "73ea8030da9ba051c571248a8eb29e69a221fbf5a7626bb199e56925321056d9",
+   "sha256": "839e2a552595939adb3a17cf26a7a59d74d9deb4671201abe52d9e7a75b0c839",
    "bbox": [
     57,
     65,
-    102,
+    109,
     79
    ],
    "joints": {
@@ -5193,10 +5193,10 @@
   },
   "leaellynasaura_attack_S_000": {
    "file": "leaellynasaura_attack_S_000.png",
-   "sha256": "367adfdde0d299576b9b08670ff23eec444c5382907193ad21b84f48bd0fc3d2",
+   "sha256": "f079b3722b402a82828fa6c8b2ee034d57ce1394b3bf09ab42b6463535d1c801",
    "bbox": [
     64,
-    49,
+    44,
     80,
     82
    ],
@@ -5273,12 +5273,12 @@
   },
   "leaellynasaura_attack_N_000": {
    "file": "leaellynasaura_attack_N_000.png",
-   "sha256": "ecfc372f6e70022f12a7ccfe9bc2823021be252b1e64de200ff1a17001c47353",
+   "sha256": "608c2d00f87027febd52d3d0b4edf6b0d65e0c133645435fe63c8434c8381c68",
    "bbox": [
     64,
     58,
     80,
-    94
+    99
    ],
    "joints": {
     "hind_L": [
@@ -5353,11 +5353,11 @@
   },
   "leaellynasaura_attack_E_000": {
    "file": "leaellynasaura_attack_E_000.png",
-   "sha256": "305f4dfe4c57f8732ed70dcb0769322c08caecee7eb5a25e0865ccaf7aa4ee14",
+   "sha256": "90254884180a644298af221c0ef2894e817273db9d2404a142dd93b53a00dc40",
    "bbox": [
-    41,
+    34,
     65,
-    86,
+    87,
     79
    ],
    "joints": {
@@ -5433,11 +5433,11 @@
   },
   "leaellynasaura_attack_W_000": {
    "file": "leaellynasaura_attack_W_000.png",
-   "sha256": "4242335f76cdad04be85e223ec784d5bb61f6a4b83ca3435bdcfb285f7b8cbd0",
+   "sha256": "bb44a0f1144f688a0041b8be7b1cb723957f1fa7d273fe67776382c476c802f8",
    "bbox": [
-    58,
+    57,
     65,
-    103,
+    110,
     79
    ],
    "joints": {
@@ -5513,10 +5513,10 @@
   },
   "leaellynasaura_attack_S_001": {
    "file": "leaellynasaura_attack_S_001.png",
-   "sha256": "86328cba0060977f561343ae192022517a2ff1bcbae82903fc013b8c7cc31dad",
+   "sha256": "81ffe58b800c0f16d85ddd3cf9ca280ccdfb25793abc156e8f041279e68f454a",
    "bbox": [
     64,
-    49,
+    44,
     80,
     81
    ],
@@ -5593,12 +5593,12 @@
   },
   "leaellynasaura_attack_N_001": {
    "file": "leaellynasaura_attack_N_001.png",
-   "sha256": "b651413f555ae4c99800094d9630d444443a304fa4807e7e84fcef2c0f28d5f6",
+   "sha256": "cdbf00efc8afc3d3fbb330b80abf9319859dff80296638a7b13489b16b232025",
    "bbox": [
     64,
     58,
     80,
-    94
+    100
    ],
    "joints": {
     "hind_L": [
@@ -5673,9 +5673,9 @@
   },
   "leaellynasaura_attack_E_001": {
    "file": "leaellynasaura_attack_E_001.png",
-   "sha256": "aec81c622ee8ab06be97cdbba472f88aaf3dff611c4896619316f2ca733ae9c6",
+   "sha256": "7c9f8b89e2540ba8e7d756dca03ba5f2488c38fd70b8572adc727478cfedfdde",
    "bbox": [
-    42,
+    37,
     65,
     86,
     79
@@ -5753,11 +5753,11 @@
   },
   "leaellynasaura_attack_W_001": {
    "file": "leaellynasaura_attack_W_001.png",
-   "sha256": "d5a0e1028f1c1e04bf1270f8df071a52f0bb07279b5d4e8479adb03f174f229a",
+   "sha256": "08001588f90f4e76c28edc70a2a44e19dde3ddb1fb45e02294b8317829236393",
    "bbox": [
     58,
     65,
-    102,
+    107,
     79
    ],
    "joints": {
@@ -5833,10 +5833,10 @@
   },
   "leaellynasaura_attack_S_002": {
    "file": "leaellynasaura_attack_S_002.png",
-   "sha256": "72dfb79d5e133584da9273c87342a7962099f861a2048c9f4ebbdeeddeb175a9",
+   "sha256": "8b7bc45fe0946bdad6d6e42ee3b7e07b9901d87ab17ad62d0c7dead797ae4428",
    "bbox": [
     64,
-    49,
+    44,
     80,
     82
    ],
@@ -5913,12 +5913,12 @@
   },
   "leaellynasaura_attack_N_002": {
    "file": "leaellynasaura_attack_N_002.png",
-   "sha256": "52dead4b786f0cdaae78869aa49fe4431decb4decb3e9e9d5c3fe8994972d9c7",
+   "sha256": "b9b2d7fb53cffe616815e0cc84d70f3ff543deb6dea7612cb1addebe4722e737",
    "bbox": [
     64,
     58,
     80,
-    94
+    99
    ],
    "joints": {
     "hind_L": [
@@ -5993,9 +5993,9 @@
   },
   "leaellynasaura_attack_E_002": {
    "file": "leaellynasaura_attack_E_002.png",
-   "sha256": "3122bc3ecabe417d90e814395c37aed23d8fd04de75c8a22fe6b8f8e1a3135f0",
+   "sha256": "e3fcabdd0d70e5bb4a2232113d68a04769a7748e8153ed947a0978312dce2e4b",
    "bbox": [
-    41,
+    34,
     65,
     87,
     79
@@ -6073,11 +6073,11 @@
   },
   "leaellynasaura_attack_W_002": {
    "file": "leaellynasaura_attack_W_002.png",
-   "sha256": "84f058d14860e3a3275ea6cec5f99fd5bc9fbf5672bbf1e0e63a9fd3231baa6d",
+   "sha256": "8ceee880e9eceb3c05b7fecaca020d7de53f1171d4f01ff6270f7e7b002bd464",
    "bbox": [
     57,
     65,
-    103,
+    110,
     79
    ],
    "joints": {
@@ -6153,10 +6153,10 @@
   },
   "leaellynasaura_attack_S_003": {
    "file": "leaellynasaura_attack_S_003.png",
-   "sha256": "1b01268b25bbb5bd16a84debc6c83c968f1f7fe138307761f4ecaf66330bf908",
+   "sha256": "19d1eb9b37987b493627fb83407b88ab87407f5655eb3c7c26be1e59a021344f",
    "bbox": [
     64,
-    49,
+    44,
     80,
     86
    ],
@@ -6233,12 +6233,12 @@
   },
   "leaellynasaura_attack_N_003": {
    "file": "leaellynasaura_attack_N_003.png",
-   "sha256": "d8332c19e0173a099384575f555440fa0379ceacb4a65e5062214a49f296253d",
+   "sha256": "15cb00968dcc2d32d75b84fae75dbfe09ae1204b0a2199b08a1e6d767e9b0d63",
    "bbox": [
     64,
     56,
     80,
-    92
+    97
    ],
    "joints": {
     "hind_L": [
@@ -6313,9 +6313,9 @@
   },
   "leaellynasaura_attack_E_003": {
    "file": "leaellynasaura_attack_E_003.png",
-   "sha256": "f2828c732f1c2bf29361f3cddb75f9175e3304a7929a79b3bad4eb331c136620",
+   "sha256": "3a804165a87c156e10a0a01cde50498ee1137b5e7c5d3c077275bd7f06ec8aa8",
    "bbox": [
-    42,
+    35,
     65,
     90,
     79
@@ -6393,11 +6393,11 @@
   },
   "leaellynasaura_attack_W_003": {
    "file": "leaellynasaura_attack_W_003.png",
-   "sha256": "5dc782c0b6c8adf04395337582ce987c43878b70d33dfcc87a0feddecfe1ad2c",
+   "sha256": "0c9ace9075d8698b37335c5e5f6a88df7ed0ca92decf508f3f4b3b770b77b307",
    "bbox": [
     54,
     65,
-    102,
+    109,
     79
    ],
    "joints": {
@@ -6473,10 +6473,10 @@
   },
   "leaellynasaura_attack_S_004": {
    "file": "leaellynasaura_attack_S_004.png",
-   "sha256": "5ef578e8054e4eda2c534bf1f6539c5d55596013cf621eac5494614f89115b7d",
+   "sha256": "1f87c4256c0c03346ed77149de16b2714d9ed232895d75d5553b398b5039022f",
    "bbox": [
     64,
-    49,
+    44,
     80,
     85
    ],
@@ -6553,12 +6553,12 @@
   },
   "leaellynasaura_attack_N_004": {
    "file": "leaellynasaura_attack_N_004.png",
-   "sha256": "f0aaa304e9146d6022d3fa5427ee74c89ce5f263e8ff82ef5ee43e6e440336cb",
+   "sha256": "7a53898a13fd929d5b8909560c5121205d07a6ca4115d4170cd594509dd438ef",
    "bbox": [
     64,
-    57,
+    56,
     80,
-    92
+    98
    ],
    "joints": {
     "hind_L": [
@@ -6633,9 +6633,9 @@
   },
   "leaellynasaura_attack_E_004": {
    "file": "leaellynasaura_attack_E_004.png",
-   "sha256": "dd9d325b85d78ea49ac9de3570039a40496cbfd115c76b71a74e1bc40153215d",
+   "sha256": "f99253b4723fcca370bb7e8fa260cf06d1282cc5b810aa14ce8bd4c09a5dadc3",
    "bbox": [
-    45,
+    36,
     65,
     89,
     79
@@ -6713,11 +6713,11 @@
   },
   "leaellynasaura_attack_W_004": {
    "file": "leaellynasaura_attack_W_004.png",
-   "sha256": "4aa3d2e9218c196ba74b9afe2ae70732c1c94c42deb8d07f59127c08389f89d6",
+   "sha256": "a7381b9473b8c6c83bf39c95c69eec87c9b77bc3fa610434039e3ea0b3866d4e",
    "bbox": [
     55,
     65,
-    99,
+    108,
     79
    ],
    "joints": {
@@ -6793,10 +6793,10 @@
   },
   "leaellynasaura_attack_S_005": {
    "file": "leaellynasaura_attack_S_005.png",
-   "sha256": "d46a2026cc340da53e889eaff5748dfb375e84cfca166d3910f6fafff9ef62a8",
+   "sha256": "ee54e5d684dcfd1fe286e1ea262ed27d8818ebfa06e6105461edf1d28cb55818",
    "bbox": [
     64,
-    49,
+    44,
     80,
     83
    ],
@@ -6873,12 +6873,12 @@
   },
   "leaellynasaura_attack_N_005": {
    "file": "leaellynasaura_attack_N_005.png",
-   "sha256": "dc4c98dd9e2343cfede27c1e8481b76a820c028d212f295f824a121d307cd125",
+   "sha256": "9d3af26d5ccfdefb8457b91e401fdf337b53edcdc4159ec5f51f71eed3c509e3",
    "bbox": [
     64,
     57,
     80,
-    93
+    98
    ],
    "joints": {
     "hind_L": [
@@ -6953,9 +6953,9 @@
   },
   "leaellynasaura_attack_E_005": {
    "file": "leaellynasaura_attack_E_005.png",
-   "sha256": "e496d8bb6222c42f9549caed33ca1bf7beb8ed476c14d444e28ac3e7f1531cea",
+   "sha256": "6741ef30ae72ef419b8cb668beb23b65c9ec6f09b4ef41e29d46adbfa431820e",
    "bbox": [
-    42,
+    34,
     65,
     88,
     79
@@ -7033,11 +7033,11 @@
   },
   "leaellynasaura_attack_W_005": {
    "file": "leaellynasaura_attack_W_005.png",
-   "sha256": "5f71a667a887fdd5a705b7037135c980beaec218099ff886a3a1a973a39b3c97",
+   "sha256": "94361a80f4d285a3028097333306efc5d5be07efc238e3f8db3da3b2aa077aec",
    "bbox": [
     56,
     65,
-    102,
+    110,
     79
    ],
    "joints": {
@@ -7113,10 +7113,10 @@
   },
   "leaellynasaura_hurt_S_000": {
    "file": "leaellynasaura_hurt_S_000.png",
-   "sha256": "83eca9569d03b1f1f52de4814de195f3d370b1abc3c1cc4a4aa4b45bd60115ea",
+   "sha256": "6af0558bcbe66150d41eaf41db0152f0232317edfb6376fc5c99837895c19d4c",
    "bbox": [
     64,
-    46,
+    40,
     80,
     81
    ],
@@ -7193,12 +7193,12 @@
   },
   "leaellynasaura_hurt_N_000": {
    "file": "leaellynasaura_hurt_N_000.png",
-   "sha256": "2307be1776cccfba1e866b99808085ff5a4e0f790eb0fad3e86bd5a2a8ae614b",
+   "sha256": "5211ed665e5f607126e6e48ff79fa1d91cc8a1fcc3770e1e404ffc004a8fc122",
    "bbox": [
     64,
     58,
     80,
-    97
+    104
    ],
    "joints": {
     "hind_L": [
@@ -7273,9 +7273,9 @@
   },
   "leaellynasaura_hurt_E_000": {
    "file": "leaellynasaura_hurt_E_000.png",
-   "sha256": "68d4b559c710582669c0a7ffb2ad8dd547ce4f998116cceda35da53ce451e852",
+   "sha256": "cad7ec771049bdd5432d1188e23b7ba6eb6f286f97e56ad7070c0e2e2604f0d4",
    "bbox": [
-    43,
+    34,
     65,
     86,
     79
@@ -7353,11 +7353,11 @@
   },
   "leaellynasaura_hurt_W_000": {
    "file": "leaellynasaura_hurt_W_000.png",
-   "sha256": "5bc4fee7a57f3024984a1538fa4a7207658009918831628c1ef8b013987a5ad3",
+   "sha256": "c81966619dc7df37d748064c56945f9d98c884db0c1fd45d2d700879e8535d5a",
    "bbox": [
     58,
     65,
-    103,
+    109,
     79
    ],
    "joints": {
@@ -7433,10 +7433,10 @@
   },
   "leaellynasaura_hurt_S_001": {
    "file": "leaellynasaura_hurt_S_001.png",
-   "sha256": "f914b9c88e66a11a1e8d3cc2025bf443c56141bfc06b10814b7c24265830eaed",
+   "sha256": "b863de2f3e6d468cf28dad9f6b5ea01487560514353aac18eee0be5069c48359",
    "bbox": [
     64,
-    46,
+    40,
     80,
     82
    ],
@@ -7513,12 +7513,12 @@
   },
   "leaellynasaura_hurt_N_001": {
    "file": "leaellynasaura_hurt_N_001.png",
-   "sha256": "16aab84b113ba8c35ad4365f3b5b7d8a9d070e3a4c872b367b4c72955daf9f5c",
+   "sha256": "05a58bd456c0505a6481debda16bb79e4e5a4ae5b157985aea615013acbbd499",
    "bbox": [
     64,
     58,
     80,
-    97
+    103
    ],
    "joints": {
     "hind_L": [
@@ -7593,9 +7593,9 @@
   },
   "leaellynasaura_hurt_E_001": {
    "file": "leaellynasaura_hurt_E_001.png",
-   "sha256": "569d52deac34481d10e5971dc1f1ec39d6bc757a5a2854bc370d38a53fa381e3",
+   "sha256": "a346d8aa0f0d48862057e2cbda13e6bcbb9039c6db4f71bbc2d3decfcd7ea740",
    "bbox": [
-    41,
+    36,
     65,
     87,
     79
@@ -7673,11 +7673,11 @@
   },
   "leaellynasaura_hurt_W_001": {
    "file": "leaellynasaura_hurt_W_001.png",
-   "sha256": "00e6f1b14bf7bf691b6a258a6f36e197de7fd912c5c0fa4e3fb50b6f9b050e6d",
+   "sha256": "43e9e4cc5063f0e2db5d133e83f00724583bdff7b1fc4a70328c96e0cd2bcdd5",
    "bbox": [
     57,
     65,
-    103,
+    109,
     79
    ],
    "joints": {
@@ -7753,29 +7753,29 @@
   },
   "leaellynasaura_death_S_000": {
    "file": "leaellynasaura_death_S_000.png",
-   "sha256": "18efb111abdbe56126c97df81bb70123dfe71e22912ab508569e4484d4af8ab4",
+   "sha256": "746fe62fe09fc8f6e58aea6fa8d5e124f775868b6c21d94f17f7150cf0d29c8f",
    "bbox": [
     64,
-    49,
+    44,
     80,
     83
    ]
   },
   "leaellynasaura_death_N_000": {
    "file": "leaellynasaura_death_N_000.png",
-   "sha256": "2756fef78c9ba788852532712b90bde42220b2f2cac0667cd14df4644e0f9339",
+   "sha256": "c9e92881796f85aad210cea62abe8dc36539b00246f8ce05815b1812b704df95",
    "bbox": [
     64,
-    58,
+    57,
     80,
-    93
+    99
    ]
   },
   "leaellynasaura_death_E_000": {
    "file": "leaellynasaura_death_E_000.png",
-   "sha256": "84c6c57c4ba62eae1745a8ad841fa9885cd98aff5585c2031fb7b04ad2591ad6",
+   "sha256": "45397858d10877d291e1bb548ba6b697a0ba19e05212077e5cd4b302bd8349f5",
    "bbox": [
-    41,
+    34,
     65,
     87,
     79
@@ -7783,39 +7783,39 @@
   },
   "leaellynasaura_death_W_000": {
    "file": "leaellynasaura_death_W_000.png",
-   "sha256": "86f6d9a32185fcf3fff95c041c927e8efcb8e8a1fe384b5a75f4cc84770712c4",
+   "sha256": "85961cd36d457816dd4d7676bd53f01a77213ee547a9ff6a1929ad93ad2e8160",
    "bbox": [
     57,
     65,
-    103,
+    110,
     79
    ]
   },
   "leaellynasaura_death_S_001": {
    "file": "leaellynasaura_death_S_001.png",
-   "sha256": "4256c1f5062c2c8cef5fd58451800b9c1ebedfdd327ee87fd3b4e3f3bfca7127",
+   "sha256": "03cea73fa7740e23d5d473857ceb93f6514a601f37a08498d49f58e62aae12d5",
    "bbox": [
     64,
-    45,
+    41,
     80,
     83
    ]
   },
   "leaellynasaura_death_N_001": {
    "file": "leaellynasaura_death_N_001.png",
-   "sha256": "fbf8724c803e937649a7f62f8a59c8124da327daec1f3bc3d0d5ea63b5fd9871",
+   "sha256": "e4bdc69144d859d71c3ccb3f81446c914d9d65ac6a7112ebf0a0b0d3d624e7b1",
    "bbox": [
     64,
     57,
     80,
-    95
+    99
    ]
   },
   "leaellynasaura_death_E_001": {
    "file": "leaellynasaura_death_E_001.png",
-   "sha256": "12f1318db891a48fc4ec70e9a58556ccdb83c57607cdca2c768d5b870d1fc4b1",
+   "sha256": "ffacd923256bece2be65d9f97761025e0d58d6d7e4a12aaf5c27984570816e36",
    "bbox": [
-    41,
+    34,
     65,
     87,
     78
@@ -7823,69 +7823,69 @@
   },
   "leaellynasaura_death_W_001": {
    "file": "leaellynasaura_death_W_001.png",
-   "sha256": "10fc6d47e101649afa5e4f0847c4c7f140d9a6613fe9d44a899047689165b922",
+   "sha256": "c810994ed63e024b06cb4a42b30f6e5e2b6881169f0f5df8defab658a99de495",
    "bbox": [
     57,
     65,
-    98,
+    110,
     79
    ]
   },
   "leaellynasaura_death_S_002": {
    "file": "leaellynasaura_death_S_002.png",
-   "sha256": "ad459113987dfd6696f6c9e93b27bcc6c493acd1438424a4cb39b8dd1fe60842",
+   "sha256": "a9a8cb253aec7897109302724d743c265949aa6615cbcb3458350c9ae1c1a7bb",
    "bbox": [
     65,
-    45,
-    79,
+    38,
+    83,
     82
    ]
   },
   "leaellynasaura_death_N_002": {
    "file": "leaellynasaura_death_N_002.png",
-   "sha256": "9ec444146dd977b14a2acc1345c556dd0f2a4fba26adfffd1dcb8898f872213e",
+   "sha256": "448a485fe922972a0f6a9bafb53899622e924cd261187d03b0b6d7107141741b",
    "bbox": [
-    65,
+    63,
     57,
     79,
-    92
+    94
    ]
   },
   "leaellynasaura_death_E_002": {
    "file": "leaellynasaura_death_E_002.png",
-   "sha256": "b48c8fd849f5cd925fdcc4766687f30adef3949add259ed3432aab2e5a1a7c7c",
+   "sha256": "61bcba71ee753fa553edeb4f9be5b748d305f27d1a48ebf516028452c18c40b5",
    "bbox": [
-    44,
-    63,
+    38,
+    58,
     87,
     77
    ]
   },
   "leaellynasaura_death_W_002": {
    "file": "leaellynasaura_death_W_002.png",
-   "sha256": "7930257cdd20905445cbd5a50c2c8ea1d6cb343a0ec7030ad4e9c4f5eb731deb",
+   "sha256": "13902111bb43b75f2684c57a562404f9f3c5b93d5efc30c296c6a6b816ea08de",
    "bbox": [
     57,
     64,
-    101,
+    104,
     80
    ]
   },
   "leaellynasaura_death_S_003": {
    "file": "leaellynasaura_death_S_003.png",
-   "sha256": "446155984ce1bf373916d73e78403ea0bfba6a21f5c3758fe39c1d7e5aa9730c",
+   "sha256": "194dac03221e212c65a043446c96c6b4c6f3646c03f1ead42b89eac2d9eb2fad",
    "bbox": [
     67,
-    48,
-    89,
+    47,
+    97,
     82
    ]
   },
   "leaellynasaura_death_N_003": {
    "file": "leaellynasaura_death_N_003.png",
-   "sha256": "7e663e9f81b00b79d195f415315141e23897db73d0fb06f79351479b079c79d8",
+   "sha256": "7c5dd860d8a947ddf30d81d1b4e198bdea42f6c29515e64f24e4cf455655a24c",
    "bbox": [
-    55,
+    47,
     59,
     77,
     89
@@ -7893,39 +7893,39 @@
   },
   "leaellynasaura_death_E_003": {
    "file": "leaellynasaura_death_E_003.png",
-   "sha256": "7df345833c958dd18eefce9ee586b6e38d540b3eec5fa2c74e2bc32bfcae2fc6",
+   "sha256": "7bc85baf122b5d2e58250c59e9db4b99851666422e1a9fd2c82550ecfed4d478",
    "bbox": [
     47,
-    55,
+    47,
     86,
     74
    ]
   },
   "leaellynasaura_death_W_003": {
    "file": "leaellynasaura_death_W_003.png",
-   "sha256": "3ada97ba975fc0fd046e2a0ddeab7c8d709a64794ee885f122681850c2659d87",
+   "sha256": "d53d90f0e153ea7e37c1577ca0342632fe952861163a286787d88c755b72afc6",
    "bbox": [
     58,
     65,
     97,
-    83
+    88
    ]
   },
   "leaellynasaura_death_S_004": {
    "file": "leaellynasaura_death_S_004.png",
-   "sha256": "d16f859ea87b8fdfc1d676c79a3efd077f6058fd9c9d9d7826046bad84739d0b",
+   "sha256": "3b61bf688db05ec03c11b691522a4897b83a648d7d07b4b53684fcd554cd329c",
    "bbox": [
     70,
     54,
-    95,
+    104,
     83
    ]
   },
   "leaellynasaura_death_N_004": {
    "file": "leaellynasaura_death_N_004.png",
-   "sha256": "0dae28488b4ac27b53380e8e1a5840f96c7110ea98124d263f63112d70c765c2",
+   "sha256": "480e0f69fcf119beec5c200c23900f0aa66209568fbf0fe37c97c2a082ca82b2",
    "bbox": [
-    49,
+    40,
     60,
     74,
     88
@@ -7933,39 +7933,39 @@
   },
   "leaellynasaura_death_E_004": {
    "file": "leaellynasaura_death_E_004.png",
-   "sha256": "fde79696714fa5806bf5e5b2e02fbc8dc95596839c3addcc09d55e1557d1d167",
+   "sha256": "da18c38355628988f6ca21bde10526a69371f6c64238d8a8d05efb7db2532d60",
    "bbox": [
     52,
-    52,
+    44,
     85,
     75
    ]
   },
   "leaellynasaura_death_W_004": {
    "file": "leaellynasaura_death_W_004.png",
-   "sha256": "e040ac0c2fceaa8c1e8d38c76253c022c4860af447bdc972f5b3c6ceb88cb0a6",
+   "sha256": "2b75acf9584f4f9ca206701505cc7febbffa610c078ab754b863c89b7b297205",
    "bbox": [
     59,
     67,
-    93,
-    90
+    92,
+    98
    ]
   },
   "leaellynasaura_death_S_005": {
    "file": "leaellynasaura_death_S_005.png",
-   "sha256": "e81b1f5f78cacd3a3caf7e3f35f2b56f90dc8e544dfb2b4b862d34d2a25b7923",
+   "sha256": "85484469f2c6656b4b8ca7a396fa3ba79bbb7014e6b092ca1bb80f5b0a65950b",
    "bbox": [
     71,
     56,
-    96,
+    105,
     83
    ]
   },
   "leaellynasaura_death_N_005": {
    "file": "leaellynasaura_death_N_005.png",
-   "sha256": "722231cb2a95af67dd716d3cc89bd2b54b5a3a1bf194b8aee14fe56a2ff533ea",
+   "sha256": "d7c09f7a8e075b48e831a9efbfb7afbaf8ba899d9f9ecb13b963765c1f162b1a",
    "bbox": [
-    48,
+    39,
     61,
     73,
     88
@@ -7973,22 +7973,22 @@
   },
   "leaellynasaura_death_E_005": {
    "file": "leaellynasaura_death_E_005.png",
-   "sha256": "47d3c7b5e1580ff71bcf35227ab8f360da56f07de650c7f1e999965583cb33b8",
+   "sha256": "99c13155651f97d6bf0a16f6cf9e9815d3489f56ac30273d93eb4eadc02e7d64",
    "bbox": [
     53,
-    52,
+    44,
     85,
     76
    ]
   },
   "leaellynasaura_death_W_005": {
    "file": "leaellynasaura_death_W_005.png",
-   "sha256": "68465745533ec8e002e730b1f934565b8e6e46ddb9e3ba7e4176a7550d933db6",
+   "sha256": "cb797a3625c3d84dfa21bdabb5a646eca76909cd425d9e353087307e6634a0cd",
    "bbox": [
     59,
     68,
     91,
-    92
+    100
    ]
   }
  }

@@ -73,12 +73,12 @@
  "frames": {
   "psittacosaurus_idle_S_000": {
    "file": "psittacosaurus_idle_S_000.png",
-   "sha256": "1158dc40f0d7ba7f50c96fda8ef8b3463c1536ca68d4a84b230ac278fec652b0",
+   "sha256": "858c77bcf92a8a1c8f3a1ec51069c648bfb67f36ec16209da34aed3192e2f073",
    "bbox": [
     61,
     50,
     83,
-    87
+    88
    ],
    "joints": {
     "hind_L": [
@@ -153,7 +153,7 @@
   },
   "psittacosaurus_idle_N_000": {
    "file": "psittacosaurus_idle_N_000.png",
-   "sha256": "071f2ccb69324fab66c73770dfe041233b1c1dbd6a74d1cbb353825360cfb2eb",
+   "sha256": "a97f572e6600d8022822386962f918704c08e5367b79da29a20ab11e0fa67de0",
    "bbox": [
     61,
     52,
@@ -233,7 +233,7 @@
   },
   "psittacosaurus_idle_E_000": {
    "file": "psittacosaurus_idle_E_000.png",
-   "sha256": "42466cfb705e73efdd537ab082cba73659d5a5b39b8f6dacf3b1eedf3795d504",
+   "sha256": "1f015d6ce321ef14a9c037680178034054f3fd0c00832c9e48b0d09afb8b1718",
    "bbox": [
     47,
     63,
@@ -313,7 +313,7 @@
   },
   "psittacosaurus_idle_W_000": {
    "file": "psittacosaurus_idle_W_000.png",
-   "sha256": "e560e6170ffbf81c86cf1a79fb196c93f55349f97a9566f6e92ae66fb3b8102f",
+   "sha256": "ead0e87d6a5b1e255a0ab714eb1b7298e78be539a8ab063169e8fdb7362feb2c",
    "bbox": [
     50,
     63,
@@ -393,12 +393,12 @@
   },
   "psittacosaurus_idle_S_001": {
    "file": "psittacosaurus_idle_S_001.png",
-   "sha256": "5d76587b57edff8a91204bf24f5e0d8f9b53700f08f9709ef91e8a07a92c2e5a",
+   "sha256": "3809dbf78fd8bcb30cfda8308f1c0c8928f2fe587a6a3f05366fc3979acda211",
    "bbox": [
     61,
     50,
     83,
-    87
+    88
    ],
    "joints": {
     "hind_L": [
@@ -473,7 +473,7 @@
   },
   "psittacosaurus_idle_N_001": {
    "file": "psittacosaurus_idle_N_001.png",
-   "sha256": "0e7a51e642f3dbf43bf54989a8be0eec6826ecfe929c4ab4e06e4e1a543cfc68",
+   "sha256": "f34cb56c1032aa18eb1ea8c85d700244641fe3c06eafa50edd49b6945e391a92",
    "bbox": [
     61,
     52,
@@ -553,7 +553,7 @@
   },
   "psittacosaurus_idle_E_001": {
    "file": "psittacosaurus_idle_E_001.png",
-   "sha256": "210586ce47a458476abd9b5ed5b5efbeb59e5353fa6c711db6f4b5a579345d48",
+   "sha256": "1e89d7b194bda93ecc3d5437d18c61d2d7a01fc9817c2282f400bc233b112ff8",
    "bbox": [
     49,
     63,
@@ -633,7 +633,7 @@
   },
   "psittacosaurus_idle_W_001": {
    "file": "psittacosaurus_idle_W_001.png",
-   "sha256": "55a8dba3f8484b9154130e696d5d2571f3e6b949cc95a91b71b9c8194b0aaa44",
+   "sha256": "c234c6f36234c5d2bb9c4d922da5e43b4899d0a8ef184b6dd677fdb54d5fd3b3",
    "bbox": [
     50,
     63,
@@ -713,12 +713,12 @@
   },
   "psittacosaurus_idle_S_002": {
    "file": "psittacosaurus_idle_S_002.png",
-   "sha256": "4b33707775a7d4055618782a65727c652eb8d286856c1b6100613366510572d9",
+   "sha256": "11c3285693f94b8e92d6882d550b6873b627cb186afe2772d4f858150b3015fd",
    "bbox": [
     61,
     50,
     83,
-    87
+    88
    ],
    "joints": {
     "hind_L": [
@@ -793,7 +793,7 @@
   },
   "psittacosaurus_idle_N_002": {
    "file": "psittacosaurus_idle_N_002.png",
-   "sha256": "d2d0b0f8635ef18eb3c69b0b62d78b31040598b9f2553ab7c3fae3b0f7d3562b",
+   "sha256": "aa8060d43528d86334a63e0cd2d20821e9098321393498411275a7a58a8ae020",
    "bbox": [
     61,
     52,
@@ -873,7 +873,7 @@
   },
   "psittacosaurus_idle_E_002": {
    "file": "psittacosaurus_idle_E_002.png",
-   "sha256": "0a99f85e5ada2210aa43b86e51d60787991b51e8dfa93b963f22ab5962a6f142",
+   "sha256": "f581624308c72bc01696eb149e7f7d35a893e3b5e140b79640a855bcc12f2fbc",
    "bbox": [
     47,
     63,
@@ -953,7 +953,7 @@
   },
   "psittacosaurus_idle_W_002": {
    "file": "psittacosaurus_idle_W_002.png",
-   "sha256": "91fb213a2565e5e436767e797ed89fe0d50c99fa193564ddae78716b3de34d9f",
+   "sha256": "d08af4cfd33defc9e5fcee3dce98bd3472109d38b1190c1fe7a350e7295f8f1e",
    "bbox": [
     50,
     63,
@@ -1033,12 +1033,12 @@
   },
   "psittacosaurus_idle_S_003": {
    "file": "psittacosaurus_idle_S_003.png",
-   "sha256": "d5bdb94cb50a1a61d48c9e1338d9400a192e36e370b6ce5d36b3b8f7dac69cea",
+   "sha256": "2b60a5277a16127575453bd6ed2118786e54f5b50950ff04a23813402ae71f5f",
    "bbox": [
     61,
     50,
     83,
-    87
+    88
    ],
    "joints": {
     "hind_L": [
@@ -1113,7 +1113,7 @@
   },
   "psittacosaurus_idle_N_003": {
    "file": "psittacosaurus_idle_N_003.png",
-   "sha256": "5223fbf5156589219e7cb32536265c1cb0f7c24218771d06bbbc4957e6cdede4",
+   "sha256": "5780c825de954f11d2ea3224ad3f6f1bcfcfc29c0630d0769d8c0b8cdd5122b1",
    "bbox": [
     61,
     52,
@@ -1193,7 +1193,7 @@
   },
   "psittacosaurus_idle_E_003": {
    "file": "psittacosaurus_idle_E_003.png",
-   "sha256": "e2404a1536f62c552c6fa2fcac3571af975b70215cd46b212540e049b3bf42f8",
+   "sha256": "941fc3eeeec56e752ad75c02d739481a22f6f75e2de1529c497430d190548ba7",
    "bbox": [
     47,
     63,
@@ -1273,7 +1273,7 @@
   },
   "psittacosaurus_idle_W_003": {
    "file": "psittacosaurus_idle_W_003.png",
-   "sha256": "f49b84f59f2dabf41a5228293c277b3808655542e8a011b2a983afafec3c3b8f",
+   "sha256": "2a834b08457ed48f04802a02ef32102231e7b0a2197a70f4a95971130aed7919",
    "bbox": [
     50,
     63,
@@ -1353,12 +1353,12 @@
   },
   "psittacosaurus_walk_S_000": {
    "file": "psittacosaurus_walk_S_000.png",
-   "sha256": "e58779fce292a321a2f857bd95aee5326d679be13d3e4f9417d694d5873637d7",
+   "sha256": "ade85e582993d2c65da4bd374298b5b9365f5fefdb0591cabb6d440bcb6504b8",
    "bbox": [
     61,
     50,
     83,
-    87
+    88
    ],
    "joints": {
     "hind_L": [
@@ -1433,7 +1433,7 @@
   },
   "psittacosaurus_walk_N_000": {
    "file": "psittacosaurus_walk_N_000.png",
-   "sha256": "50e5f5f83bebcd52400fe4c0b801cf06795d769ed944fa53bbc0d7f5e16e738d",
+   "sha256": "399e9eb89a5f447ed9afd3a86adbd3fac8bf1ec8ed86373325c32e3aa921ad63",
    "bbox": [
     61,
     52,
@@ -1513,7 +1513,7 @@
   },
   "psittacosaurus_walk_E_000": {
    "file": "psittacosaurus_walk_E_000.png",
-   "sha256": "80f32a09bbff7c1dc04d460beb49d0bf132c5c9d7ac9def1d32d0a2510fe5044",
+   "sha256": "577fb31e1625d28a4a193403b087ec961603235f925c8fec050df40c7df300fb",
    "bbox": [
     47,
     63,
@@ -1593,7 +1593,7 @@
   },
   "psittacosaurus_walk_W_000": {
    "file": "psittacosaurus_walk_W_000.png",
-   "sha256": "555701ce217f0445a204ad64b02080b08f37559ef7b6e984efbfe2cc3ed12ce6",
+   "sha256": "19b5c6106f7085f038c8c5c661060bbdc5e9473363627229f08d59e7d1beddfb",
    "bbox": [
     50,
     62,
@@ -1673,7 +1673,7 @@
   },
   "psittacosaurus_walk_S_001": {
    "file": "psittacosaurus_walk_S_001.png",
-   "sha256": "561eb539bffb70616ce97567c901bcadf70ffe351ecfaa1ea9431db69d1cf96e",
+   "sha256": "47c6bd3dd6e6458b8b3620de520de83654d2bf65ca21b6bf2f5d47853e95d82e",
    "bbox": [
     61,
     50,
@@ -1753,7 +1753,7 @@
   },
   "psittacosaurus_walk_N_001": {
    "file": "psittacosaurus_walk_N_001.png",
-   "sha256": "a6f16f594c61b1dd5b6d12f109d0d37c9b9169bcd237c2a6185c42ee0e3c2ced",
+   "sha256": "98fcb4833d44efaed2d9232f734d5ba1904baaa83c161e71fd7a90028c63488e",
    "bbox": [
     61,
     52,
@@ -1833,7 +1833,7 @@
   },
   "psittacosaurus_walk_E_001": {
    "file": "psittacosaurus_walk_E_001.png",
-   "sha256": "f0687d23f6527ce93859a580236aa7534663079793fd5ff35c1ba0aaa9691e49",
+   "sha256": "e652c8b1159ef602b6057424e41649f97703535cda9b3afbea95627691a4a803",
    "bbox": [
     49,
     63,
@@ -1913,7 +1913,7 @@
   },
   "psittacosaurus_walk_W_001": {
    "file": "psittacosaurus_walk_W_001.png",
-   "sha256": "6f5d74a137f210c05dadcaf3e1e52ec91a8bee9a9dd020453bae7eaefca6901b",
+   "sha256": "b941cb930b37edeee4951f94eabe9dad0144fd8407b3a68322eb1077a7d34bc6",
    "bbox": [
     50,
     63,
@@ -1993,7 +1993,7 @@
   },
   "psittacosaurus_walk_S_002": {
    "file": "psittacosaurus_walk_S_002.png",
-   "sha256": "a8bf1898ce1a95ff4eb6fb3ff95d2908ceb83ea4513742e3aff59bcabfc9711e",
+   "sha256": "7984a8ea81da7279d2fa040159e46443eebecbd9250a576d876d9c837b59241e",
    "bbox": [
     61,
     51,
@@ -2073,7 +2073,7 @@
   },
   "psittacosaurus_walk_N_002": {
    "file": "psittacosaurus_walk_N_002.png",
-   "sha256": "b8ee443796a045c3331e76ea307064c7bc5de603e3e1d8bea798755b8afee32c",
+   "sha256": "fb40ebf93aafcdb005764047bf49834a60c9ab3d0485ac9a660f84636dea880e",
    "bbox": [
     61,
     52,
@@ -2153,7 +2153,7 @@
   },
   "psittacosaurus_walk_E_002": {
    "file": "psittacosaurus_walk_E_002.png",
-   "sha256": "14a357f1c4154bf3ad937606fecf099015e3ffc443cd0d6a35db2c5b253f4bcd",
+   "sha256": "95a4ba1c72636e0390a1b10cb9e5a1c876c885f792b8a76a9aae2fdb6b0091b6",
    "bbox": [
     47,
     63,
@@ -2233,7 +2233,7 @@
   },
   "psittacosaurus_walk_W_002": {
    "file": "psittacosaurus_walk_W_002.png",
-   "sha256": "2b28e03b52b758c9c34d510dcbeb81743436c11b1f95dd27ff6f92bdd5407bc1",
+   "sha256": "2578397d28b80dc1b93b2933680410b763f8d4c1e896c633f1c94bb08c0c69b8",
    "bbox": [
     50,
     62,
@@ -2313,12 +2313,12 @@
   },
   "psittacosaurus_walk_S_003": {
    "file": "psittacosaurus_walk_S_003.png",
-   "sha256": "158af9e1f004172cab277554d8d5215a1099f2f4befdd5e186916c2d4d80a2e7",
+   "sha256": "00548bbf480062f543378a1d894cfd65febf6c93bd563eeffc56c4e879d4daf5",
    "bbox": [
     61,
     50,
     83,
-    87
+    88
    ],
    "joints": {
     "hind_L": [
@@ -2393,7 +2393,7 @@
   },
   "psittacosaurus_walk_N_003": {
    "file": "psittacosaurus_walk_N_003.png",
-   "sha256": "0ab0e76e5f4351bdbc628022f7ec53f6b29a49e933d3ca4c07ebf76682d5634a",
+   "sha256": "c640105639b9b6497a8b65dc2e1e035c8a95970b6ffd0b2c50612b45b04985df",
    "bbox": [
     61,
     52,
@@ -2473,7 +2473,7 @@
   },
   "psittacosaurus_walk_E_003": {
    "file": "psittacosaurus_walk_E_003.png",
-   "sha256": "a6754b5afa6443cce26085bcd3a2b5bac97283769ee161e88e3d95c0c63c78fc",
+   "sha256": "fcc1a963ba81c751040065d0be7da5286f89a80a64355931ccee4f9c37efcf7a",
    "bbox": [
     47,
     62,
@@ -2553,7 +2553,7 @@
   },
   "psittacosaurus_walk_W_003": {
    "file": "psittacosaurus_walk_W_003.png",
-   "sha256": "e3567e94104c9d3b52fd34b9bcb1693d93c03038b8dee7251fe4df4d10c3a8ce",
+   "sha256": "bbefc6f647fa5fa184aa928bf45d280fd97e2b60a0f043ab3374e1bc4bc958bd",
    "bbox": [
     50,
     63,
@@ -2633,7 +2633,7 @@
   },
   "psittacosaurus_walk_S_004": {
    "file": "psittacosaurus_walk_S_004.png",
-   "sha256": "0d4f73e0c6a94b4e551daffb8a47dfd2e916969276febfda32a44eaa8b480560",
+   "sha256": "a3e362a96cf41b11576584849ee4f1f6a6d3ea306432b25026d9d623fe2ecb7b",
    "bbox": [
     61,
     50,
@@ -2713,7 +2713,7 @@
   },
   "psittacosaurus_walk_N_004": {
    "file": "psittacosaurus_walk_N_004.png",
-   "sha256": "c2ea8d4e968397854f849bbdbc91ae822bc1dca3b000da5b7dc6deda2497b91d",
+   "sha256": "821a450c2cb50d50f3be5b25351da2a9a5a8595d5d0ff0ae346f00f46bc6fd1c",
    "bbox": [
     61,
     52,
@@ -2793,7 +2793,7 @@
   },
   "psittacosaurus_walk_E_004": {
    "file": "psittacosaurus_walk_E_004.png",
-   "sha256": "9b6216cfd15ca760434fd866f08df5e50c25949e7fb4d01edb1cb6601ecd4437",
+   "sha256": "a54aeb2605df6e97f440f6408cc68d9baed2bf6caf9a76434a3ace27e67e75af",
    "bbox": [
     47,
     63,
@@ -2873,7 +2873,7 @@
   },
   "psittacosaurus_walk_W_004": {
    "file": "psittacosaurus_walk_W_004.png",
-   "sha256": "f3a6dd1edf14f5ca7ef9ec3c6ab877346dbbbbe40b0b70414a37cc14401045b0",
+   "sha256": "f2b524d7971d418fe0a2cfcd55780207d16e90efdfdd4893ee5640024be802e1",
    "bbox": [
     50,
     63,
@@ -2953,7 +2953,7 @@
   },
   "psittacosaurus_walk_S_005": {
    "file": "psittacosaurus_walk_S_005.png",
-   "sha256": "a63b170660db79e4428b1148ac9a39fbd17e45ff4a9caff75ed84f492d0804fb",
+   "sha256": "e21d826809c7e32097fd237a202c70edc9f8b14b04a4744a235826e8a5189b89",
    "bbox": [
     61,
     51,
@@ -3033,7 +3033,7 @@
   },
   "psittacosaurus_walk_N_005": {
    "file": "psittacosaurus_walk_N_005.png",
-   "sha256": "3a89eda3c2b1fc6e52ec4ab3a1e7b8845da221e3f15624655ef90c71daebc809",
+   "sha256": "a36e59756fee59cfd65306519e77e2f3bd8e77c283a1f352a9386db6ffcd4022",
    "bbox": [
     61,
     52,
@@ -3113,7 +3113,7 @@
   },
   "psittacosaurus_walk_E_005": {
    "file": "psittacosaurus_walk_E_005.png",
-   "sha256": "25bbce67f30108dbf63c43e4a503bf3606bcc927327ff27212305a05bc661ec6",
+   "sha256": "d768659e62a312406ca7ba11d8f07b07770f67d82a3bf3d9c98c7b4d7b32e718",
    "bbox": [
     47,
     62,
@@ -3193,7 +3193,7 @@
   },
   "psittacosaurus_walk_W_005": {
    "file": "psittacosaurus_walk_W_005.png",
-   "sha256": "d37084fe1cbc824cbc653ebb2cf1bd20c271e37539228bdcc36d4c0eeb019207",
+   "sha256": "c9594106253e7a378bd83a7e41814d7fbf059ef07fe22e7434ed99b221309a0c",
    "bbox": [
     50,
     63,
@@ -3273,7 +3273,7 @@
   },
   "psittacosaurus_run_S_000": {
    "file": "psittacosaurus_run_S_000.png",
-   "sha256": "780acad1f5979ad76cc2b0709436485785402521a6784f9d370bb65053e359d1",
+   "sha256": "d9af89b4a75a8ac9a8fbad5f3079a329f9bb1c161e0ecbbfda0fa9f85fd09339",
    "bbox": [
     61,
     50,
@@ -3433,7 +3433,7 @@
   },
   "psittacosaurus_run_E_000": {
    "file": "psittacosaurus_run_E_000.png",
-   "sha256": "4dea3273560180c8afd1e90c8e6687bd0f195389bfe78f9f20c872c834471355",
+   "sha256": "9f3fd1e64e573cefb2331d0ba8aa1d094f754276145615d9832e48e959f88330",
    "bbox": [
     47,
     63,
@@ -3513,7 +3513,7 @@
   },
   "psittacosaurus_run_W_000": {
    "file": "psittacosaurus_run_W_000.png",
-   "sha256": "7eecd7a1b996139e7bcfc21be4a2f12b7ec67ea5825daca96e43cb9bee427fc6",
+   "sha256": "24a860c8140806c39645b22178f010ba2edcbde552b5ed9ab7b5889d38fec8f0",
    "bbox": [
     50,
     62,
@@ -3593,7 +3593,7 @@
   },
   "psittacosaurus_run_S_001": {
    "file": "psittacosaurus_run_S_001.png",
-   "sha256": "47650defe85b6be09b73eab52fc3bbbcb6edae2d9939924b8caed6bbfa1c5a12",
+   "sha256": "65a7c885be937c051d371a9c7e13b012247f06c4ebac9f64b11db70ac5613370",
    "bbox": [
     61,
     51,
@@ -3673,7 +3673,7 @@
   },
   "psittacosaurus_run_N_001": {
    "file": "psittacosaurus_run_N_001.png",
-   "sha256": "074bd0375cd22f3853a492a25d8c2ad676e39b55868efe44781de090abcc66b6",
+   "sha256": "920667c0efd7d7f58b0e4c33ef2b1a728c739d512ebcaf59f46f555e45111af2",
    "bbox": [
     61,
     52,
@@ -3753,7 +3753,7 @@
   },
   "psittacosaurus_run_E_001": {
    "file": "psittacosaurus_run_E_001.png",
-   "sha256": "eea944099adcd0010dc4b4793fb0c66a02cefc2023cb87f3def63621dbb940b5",
+   "sha256": "c90822cfa9e0fe66ccfb383b89c7643759d09f5b3fb878b8d11ae8da131accd8",
    "bbox": [
     47,
     62,
@@ -3833,7 +3833,7 @@
   },
   "psittacosaurus_run_W_001": {
    "file": "psittacosaurus_run_W_001.png",
-   "sha256": "79b2275b98c60bf6fd6fa2c214c433f9470c110cc7154b8b12c0eae13a307508",
+   "sha256": "1996b43460434fac4f3bc4dc496c347131587e936fb8e6ed8b1c70ce299931ae",
    "bbox": [
     50,
     61,
@@ -3913,7 +3913,7 @@
   },
   "psittacosaurus_run_S_002": {
    "file": "psittacosaurus_run_S_002.png",
-   "sha256": "55241628f0872b2bb9f5a6d9225bde6c38fb72a4ffbf044ebd7c82052fed6f99",
+   "sha256": "a11928c36aec2c705058095102dee183691ed09921128aac12949f47b18e06cf",
    "bbox": [
     61,
     50,
@@ -3993,7 +3993,7 @@
   },
   "psittacosaurus_run_N_002": {
    "file": "psittacosaurus_run_N_002.png",
-   "sha256": "3b7ce02511f68de13b8aaf07a2fe9e45ffd0e994eb96883d6ab6ac051fdf0a05",
+   "sha256": "48fdcf0a7ca7b3a3db6575a25c5b46fcecfe10da20ec99ce4da643e2663ad617",
    "bbox": [
     61,
     52,
@@ -4073,7 +4073,7 @@
   },
   "psittacosaurus_run_E_002": {
    "file": "psittacosaurus_run_E_002.png",
-   "sha256": "3785705ecbbbcc8145031b2756b5be6615e204148d8f678302817c6424dc54b4",
+   "sha256": "c3a69b56f9301446a07bf90f163b19ccb259fb6152b055dd44afb4df524008ea",
    "bbox": [
     47,
     63,
@@ -4153,7 +4153,7 @@
   },
   "psittacosaurus_run_W_002": {
    "file": "psittacosaurus_run_W_002.png",
-   "sha256": "b1393fd4c8a49d9ef4362790f60324e39cb26345ec28bb3e55340c0875649fee",
+   "sha256": "5c400e32b0a0651df36dcb85a022b10ea9648962565af1156593a57473f6f08f",
    "bbox": [
     50,
     62,
@@ -4233,7 +4233,7 @@
   },
   "psittacosaurus_run_S_003": {
    "file": "psittacosaurus_run_S_003.png",
-   "sha256": "13b88cb62dbf10d6dd1fde8e946fb6793f4fec137d8e5fb1b292c9ddaa5f0797",
+   "sha256": "87070299a9924431632677f012bb2578e24f7d644a8248f2601337dc69928743",
    "bbox": [
     61,
     50,
@@ -4393,7 +4393,7 @@
   },
   "psittacosaurus_run_E_003": {
    "file": "psittacosaurus_run_E_003.png",
-   "sha256": "6514ee358cb9fa8bbd9d688c95f4705fb29686edb3307aa250ef185c59fd58ee",
+   "sha256": "39f8a1505cda98bef90db47bbd28e0d863988d811e2d74949745eae1c9263a0d",
    "bbox": [
     47,
     62,
@@ -4473,7 +4473,7 @@
   },
   "psittacosaurus_run_W_003": {
    "file": "psittacosaurus_run_W_003.png",
-   "sha256": "c58abf04b256c7c5367561870329d9175d76dd6de82cd23ee52668d73846ccb7",
+   "sha256": "2689a61d255c69b38973efaf40c4b24ceff7eb51ac435c91a6a156546fa84840",
    "bbox": [
     50,
     63,
@@ -4553,7 +4553,7 @@
   },
   "psittacosaurus_run_S_004": {
    "file": "psittacosaurus_run_S_004.png",
-   "sha256": "8a9c15a0bf0b5299e44fb678a110bfae003822bea8fc9d6c31c059c077e9b5ba",
+   "sha256": "ff39f896381899c7ac39dbabe738916494829f94fa6b448106404cde9372cd64",
    "bbox": [
     61,
     51,
@@ -4633,7 +4633,7 @@
   },
   "psittacosaurus_run_N_004": {
    "file": "psittacosaurus_run_N_004.png",
-   "sha256": "a166ed8429d5d214bd8d69ec73d8368a7043e6ca0f6dfe81d11fc0e6af2b6a6a",
+   "sha256": "348af4dcced59ef5947e68eaf8c67b4828f50e144b4d1ecca08228bfe2a8e102",
    "bbox": [
     61,
     52,
@@ -4713,7 +4713,7 @@
   },
   "psittacosaurus_run_E_004": {
    "file": "psittacosaurus_run_E_004.png",
-   "sha256": "c094de7596a47fe43e0204703dd44d77bc2ac6b46c912ae12c29d07d7c85acd1",
+   "sha256": "4d7d650610f8345ba6d482682a35ee42d5930efcb86655ffca7eb94314d0d14b",
    "bbox": [
     47,
     61,
@@ -4793,7 +4793,7 @@
   },
   "psittacosaurus_run_W_004": {
    "file": "psittacosaurus_run_W_004.png",
-   "sha256": "f0b2c7e346519e03a88ee7982141b962d5d11960cccf863013e80e64e8bc4ca3",
+   "sha256": "fba2711b8f1bce3c19c62d0bc7929ebae3470ccc440bb33ca7515726d7e63eaf",
    "bbox": [
     50,
     62,
@@ -4873,7 +4873,7 @@
   },
   "psittacosaurus_run_S_005": {
    "file": "psittacosaurus_run_S_005.png",
-   "sha256": "53fdb67b354de92c69250d216fc0dccdcf086630912394cc81e5d088fd9a8d10",
+   "sha256": "25917e1c87bc3d9bb4b95a88a83574b212879392df82e7c909a71802a7941d3f",
    "bbox": [
     61,
     50,
@@ -4953,7 +4953,7 @@
   },
   "psittacosaurus_run_N_005": {
    "file": "psittacosaurus_run_N_005.png",
-   "sha256": "3438ded6180c18b83c897307d0a96e382a8995f88356eeae1f7d463981f69bd1",
+   "sha256": "82abda3fe4941fcbc54de0c8c531028bceec5ffdb8dbba84b27f5847388a4846",
    "bbox": [
     61,
     52,
@@ -5033,7 +5033,7 @@
   },
   "psittacosaurus_run_E_005": {
    "file": "psittacosaurus_run_E_005.png",
-   "sha256": "ad7909f03bbe341988c98a9ce398d1ffdcb8be7bb0895c02a03b24b6441db128",
+   "sha256": "89387d4aec8f58b6588756f37e6a9720bf694ba0c57d238190e2f70dd82c3892",
    "bbox": [
     47,
     62,
@@ -5113,7 +5113,7 @@
   },
   "psittacosaurus_run_W_005": {
    "file": "psittacosaurus_run_W_005.png",
-   "sha256": "bc810c103244ff7952bddfc8fe70575a3061c717af6dfe7cae0b1d5b1a5589d1",
+   "sha256": "d8b430511d45407b4fc05a5af35dcedcfb7e6e198326072f51ec6e322e08b477",
    "bbox": [
     50,
     63,
@@ -5193,12 +5193,12 @@
   },
   "psittacosaurus_attack_S_000": {
    "file": "psittacosaurus_attack_S_000.png",
-   "sha256": "9134754beb072d3a7aff5a6ba3483f60556708f10303f36eab3ba647ae607f7d",
+   "sha256": "e9ea69ba3925b02e09738eb758ee568147f8e99dee1f212e1b259a8f1d539c56",
    "bbox": [
     61,
     52,
     83,
-    86
+    87
    ],
    "joints": {
     "hind_L": [
@@ -5353,7 +5353,7 @@
   },
   "psittacosaurus_attack_E_000": {
    "file": "psittacosaurus_attack_E_000.png",
-   "sha256": "182c58c76e4113cdf78969bd0b2a07834594db9f2e2eba97279e9e9fbd97f477",
+   "sha256": "8a166bba936572431996bdab086d1e1c7b82ac71fc4aa350fbfd8543fd12030c",
    "bbox": [
     47,
     63,
@@ -5433,7 +5433,7 @@
   },
   "psittacosaurus_attack_W_000": {
    "file": "psittacosaurus_attack_W_000.png",
-   "sha256": "d6c9662ed42b5c12e78c12e439a7d8d0662ed894a1f941cee186a0506e99b577",
+   "sha256": "cd28995db2241b2338cc109dd24e568ec32c835a7d4a9fbb5d4e3ba22c2b47db",
    "bbox": [
     51,
     63,
@@ -5513,7 +5513,7 @@
   },
   "psittacosaurus_attack_S_001": {
    "file": "psittacosaurus_attack_S_001.png",
-   "sha256": "40efd4ca852ef0c5568e3ef4b6049f9d078ce795f3e6a228e73f453e20bf0d84",
+   "sha256": "f1004d5c7cf3fd4d290086b77ad342fefa09bf29e22a4a5e6ab15570711093bb",
    "bbox": [
     61,
     52,
@@ -5593,7 +5593,7 @@
   },
   "psittacosaurus_attack_N_001": {
    "file": "psittacosaurus_attack_N_001.png",
-   "sha256": "66dff41cd4e70aa3413bd0e28666b37e90de689c1c2bb7879fb42764ba456a99",
+   "sha256": "b97328357065bb29c975ff88dc5051e21496f0bf1451c37e1156c690deb01d4c",
    "bbox": [
     61,
     52,
@@ -5673,7 +5673,7 @@
   },
   "psittacosaurus_attack_E_001": {
    "file": "psittacosaurus_attack_E_001.png",
-   "sha256": "517a4ee9d0b49b4c8b6abd073d100f83272db767922ef5d02141bd15ddbfd573",
+   "sha256": "5d724ac0f4a9bfb6a972293d06b416233a5fcee8b63c69007fd784c913426573",
    "bbox": [
     49,
     63,
@@ -5753,7 +5753,7 @@
   },
   "psittacosaurus_attack_W_001": {
    "file": "psittacosaurus_attack_W_001.png",
-   "sha256": "9a2abe771662d01dffaf9577b41748917ddcc3021a66274a7d9c5f77481fa111",
+   "sha256": "1f43041017e9768fe1034eaa32e29d21539c11d842930cfa43e33276a5dba756",
    "bbox": [
     52,
     63,
@@ -5833,7 +5833,7 @@
   },
   "psittacosaurus_attack_S_002": {
    "file": "psittacosaurus_attack_S_002.png",
-   "sha256": "999b984bc909e1f659b0c6b26d2e92c67064f800230ef5bd073d61e73c17f607",
+   "sha256": "f1828d14a00c31e1ca26008ee26f8b46e73ae69c0cea9cbe2cd969b52cf9a457",
    "bbox": [
     61,
     52,
@@ -5913,7 +5913,7 @@
   },
   "psittacosaurus_attack_N_002": {
    "file": "psittacosaurus_attack_N_002.png",
-   "sha256": "fc4c91410aa6260e222997997d44587b219b413b50b85d231a470fb64486ba56",
+   "sha256": "29e998302209a0bffa74196e731d7fae8e058b129c1e0ef20615b80868f86c5d",
    "bbox": [
     61,
     52,
@@ -5993,11 +5993,11 @@
   },
   "psittacosaurus_attack_E_002": {
    "file": "psittacosaurus_attack_E_002.png",
-   "sha256": "d30772e90181a59d502a11befab65aaa5a1fc8c04441c30804448fc4eabe4ae5",
+   "sha256": "5bdf7defb5f892d0ffbc98844c1061099a2a04b630e81d77c0e28148fb7036a4",
    "bbox": [
     47,
     63,
-    93,
+    94,
     81
    ],
    "joints": {
@@ -6073,9 +6073,9 @@
   },
   "psittacosaurus_attack_W_002": {
    "file": "psittacosaurus_attack_W_002.png",
-   "sha256": "8afabd00351c68ab2bab3ca203b36481ee33bbfb76f1c8b306705536beb548c5",
+   "sha256": "db630bd595393a2d59a56d44cac0661b4688acc603616fb548983f5e8e5e287f",
    "bbox": [
-    51,
+    50,
     63,
     97,
     81
@@ -6153,7 +6153,7 @@
   },
   "psittacosaurus_attack_S_003": {
    "file": "psittacosaurus_attack_S_003.png",
-   "sha256": "cff82e3699603f125598546c50244cfc56e656cdb9a4849293799d42233acab8",
+   "sha256": "efc7824f9681183430ad4615b73c9056ac68f8a262b2c9e61ba277ed41643418",
    "bbox": [
     61,
     52,
@@ -6233,7 +6233,7 @@
   },
   "psittacosaurus_attack_N_003": {
    "file": "psittacosaurus_attack_N_003.png",
-   "sha256": "f0f05c809d276103c4acbe76df4334e74f4dd48e40f545c747bba1e7073129da",
+   "sha256": "27db5c517039d6684d14333694c8930c31979221f2eeb8229372951614cdf402",
    "bbox": [
     61,
     50,
@@ -6313,7 +6313,7 @@
   },
   "psittacosaurus_attack_E_003": {
    "file": "psittacosaurus_attack_E_003.png",
-   "sha256": "c4bfa2665af80b23674913464fa30767f85bec8b16d065be4ac1262c19564bea",
+   "sha256": "0665276846c7f1555b778988970fb4620c89e040b6b75faa2ef232eda96f9358",
    "bbox": [
     48,
     63,
@@ -6393,7 +6393,7 @@
   },
   "psittacosaurus_attack_W_003": {
    "file": "psittacosaurus_attack_W_003.png",
-   "sha256": "76ac08dab462dc2aa41f5e14742a60a59c19a3b0e4bdfe42e925a856b0b5b2df",
+   "sha256": "20756bae5c1ae85eff7dd6bc1412eee95851bd0e7baa20b9cde02b1d6a18c2ed",
    "bbox": [
     47,
     63,
@@ -6473,7 +6473,7 @@
   },
   "psittacosaurus_attack_S_004": {
    "file": "psittacosaurus_attack_S_004.png",
-   "sha256": "cd4e511ab2e07d6ae83621ca6a32c5f1764c4bc1dbeb3d5f0bd8945a75392f8e",
+   "sha256": "2486d4ef95aeddbb43cb151a48fe10f953ca92751dac1adf0bab3bb5324cbb8c",
    "bbox": [
     61,
     52,
@@ -6553,7 +6553,7 @@
   },
   "psittacosaurus_attack_N_004": {
    "file": "psittacosaurus_attack_N_004.png",
-   "sha256": "d9277fe6b8ea30021880b6166efca39ec64e7eba8d35759918c4a990f25bd51a",
+   "sha256": "860733f014b8cd97ecd78afc7b9c1e743320d3dab5323ba2bab18ebb22b8dd95",
    "bbox": [
     61,
     51,
@@ -6633,7 +6633,7 @@
   },
   "psittacosaurus_attack_E_004": {
    "file": "psittacosaurus_attack_E_004.png",
-   "sha256": "4813c3390bd8ef0c59ee7de150e8f09ee78d1b067f64032f6069a0fceb5bc975",
+   "sha256": "8958e6cc64129b7cb57a874dc64036f3ae28c4b5138f146dd0faf15dd146e332",
    "bbox": [
     47,
     63,
@@ -6713,7 +6713,7 @@
   },
   "psittacosaurus_attack_W_004": {
    "file": "psittacosaurus_attack_W_004.png",
-   "sha256": "09a820912ea4e4268df3f9f9d376ebbab2dc4c1a38f02e48d1884310df33abba",
+   "sha256": "385f82bfb0bed0c42437dd54458aac774a11a6e02e88edb6715f6683d38ad1ff",
    "bbox": [
     48,
     63,
@@ -6793,7 +6793,7 @@
   },
   "psittacosaurus_attack_S_005": {
    "file": "psittacosaurus_attack_S_005.png",
-   "sha256": "962c4abcb99ae09e1cfbe32e625b2bed2ed2b72a4b08dcba136802ba8371c849",
+   "sha256": "17c0c3af5335d2b00262faff856ee93e57a4103e9e6760c5daf1a4c2427c42b3",
    "bbox": [
     61,
     52,
@@ -6873,7 +6873,7 @@
   },
   "psittacosaurus_attack_N_005": {
    "file": "psittacosaurus_attack_N_005.png",
-   "sha256": "0069505b34bffa895e55863662e1d6a56511a2ad42e405d69e342e4e69b34469",
+   "sha256": "dac5095e70ce137a97166f7458c7fd2fd8b85429a878d426f0d5f06228b55201",
    "bbox": [
     61,
     52,
@@ -6953,7 +6953,7 @@
   },
   "psittacosaurus_attack_E_005": {
    "file": "psittacosaurus_attack_E_005.png",
-   "sha256": "e44fbcc323ebfbe670b7514d9689fe36ca837e2dfb1d00d53ef80ac3a0be2ad1",
+   "sha256": "86e4611e81a16b027d92922fc074a7359c7d5374652edd7a03725d9071e16599",
    "bbox": [
     47,
     63,
@@ -7033,7 +7033,7 @@
   },
   "psittacosaurus_attack_W_005": {
    "file": "psittacosaurus_attack_W_005.png",
-   "sha256": "3771192681e6edffd8ce67864382c8cdded004e4c921615d7ae8277dcaa5ceef",
+   "sha256": "5775ab8c28c1aff76defdd4a0ea8ac910f65d07e9ba15d2509ff1403519ddd80",
    "bbox": [
     50,
     63,
@@ -7113,12 +7113,12 @@
   },
   "psittacosaurus_hurt_S_000": {
    "file": "psittacosaurus_hurt_S_000.png",
-   "sha256": "108df266f0d89289e8cc5a79f06beedf497e8bbf33c132839b8e025cd8bea92d",
+   "sha256": "48dee9f459842b2e4dabaeba17d3392407172b7e3c53dabe19fc52e9ac8e11f2",
    "bbox": [
     61,
     51,
     83,
-    84
+    85
    ],
    "joints": {
     "hind_L": [
@@ -7193,7 +7193,7 @@
   },
   "psittacosaurus_hurt_N_000": {
    "file": "psittacosaurus_hurt_N_000.png",
-   "sha256": "abfb8006adb3a3bfed96f0021d4db9732066e41246959ae1843b2f260dfe9123",
+   "sha256": "d613e5fb40d14ad9f3ce3c1e0a3a390c957ee0e800c7dcf16cae351ca49be2b6",
    "bbox": [
     61,
     53,
@@ -7273,11 +7273,11 @@
   },
   "psittacosaurus_hurt_E_000": {
    "file": "psittacosaurus_hurt_E_000.png",
-   "sha256": "750bc225b730424e09ebc03358f9de60bb51c2cb60fe6432febc06084d5ad09a",
+   "sha256": "3b21c8a3da0f97853e7fc166d822948e0af02d94d50db0edfeeb62713966f29b",
    "bbox": [
     47,
     63,
-    91,
+    92,
     81
    ],
    "joints": {
@@ -7353,9 +7353,9 @@
   },
   "psittacosaurus_hurt_W_000": {
    "file": "psittacosaurus_hurt_W_000.png",
-   "sha256": "1e472d1093d9839389fc480aee90fa23cae33c9ddd86f24bf31a6e6241982c50",
+   "sha256": "e0dca9ecdd092befebf0027c42cf00a8f6f46437cbd005e8eb5aabaa00116f57",
    "bbox": [
-    53,
+    52,
     63,
     98,
     81
@@ -7433,7 +7433,7 @@
   },
   "psittacosaurus_hurt_S_001": {
    "file": "psittacosaurus_hurt_S_001.png",
-   "sha256": "1a0b5ba482acbd4249ecdcaa42068f157db743b9bc934463d093904f00e63ee6",
+   "sha256": "3c2e61b6d5c58c7c86c9a9d860c1657c2aec0f6fc299b4e664d3e24793fe1da2",
    "bbox": [
     61,
     51,
@@ -7513,7 +7513,7 @@
   },
   "psittacosaurus_hurt_N_001": {
    "file": "psittacosaurus_hurt_N_001.png",
-   "sha256": "86564dffcac04c8187fb338ac099769e8f56ed77c7741ecb75fdaa2c5995fcfe",
+   "sha256": "77d26f5d25e5aebf27f42121cbeb863f022a3bf26b734587f55582124f9e520b",
    "bbox": [
     61,
     52,
@@ -7593,11 +7593,11 @@
   },
   "psittacosaurus_hurt_E_001": {
    "file": "psittacosaurus_hurt_E_001.png",
-   "sha256": "b32f797237c4bd0128736a0a65a477d890e5d274ae4bdadcbb8120366995a203",
+   "sha256": "92146e3ea7a820798f91712d4f061916b4af53d544d4bf8684146efbcecd837e",
    "bbox": [
     48,
     63,
-    92,
+    93,
     81
    ],
    "joints": {
@@ -7673,9 +7673,9 @@
   },
   "psittacosaurus_hurt_W_001": {
    "file": "psittacosaurus_hurt_W_001.png",
-   "sha256": "597638ec523a21b69aa702f08095460841883caa990213a8aac41986eb0f300b",
+   "sha256": "5604b471e8e78620a2ca37ceae85794cfe39fd5a4f33266a4cffc905d6014b88",
    "bbox": [
-    52,
+    51,
     63,
     97,
     81
@@ -7753,17 +7753,17 @@
   },
   "psittacosaurus_death_S_000": {
    "file": "psittacosaurus_death_S_000.png",
-   "sha256": "87aec853610a25a287a7abf991fc363a32c721c3f74911a243b6fa07d15a2cdb",
+   "sha256": "82d71cc2c16cccbc77cf3b2a926f35a9ac5b58c59df45b40530cece9799568f7",
    "bbox": [
     61,
     52,
     83,
-    87
+    88
    ]
   },
   "psittacosaurus_death_N_000": {
    "file": "psittacosaurus_death_N_000.png",
-   "sha256": "40ef10f0c6d31d4e82b839e5b3c8bf684cf9695336482a651e964e1554aefa56",
+   "sha256": "b9360c5e625ff354181b48f5ce1451cfa85e6e47acbdc9d3821151fd947604c2",
    "bbox": [
     61,
     52,
@@ -7773,7 +7773,7 @@
   },
   "psittacosaurus_death_E_000": {
    "file": "psittacosaurus_death_E_000.png",
-   "sha256": "d63cbfdac486f921a3e0549340976c85bfc53300ff30d1b7c963931cc2ea0a95",
+   "sha256": "6934825592398376e9b6252caab1fcc5426373f16f82fd961ca40984297c95e9",
    "bbox": [
     47,
     63,
@@ -7783,7 +7783,7 @@
   },
   "psittacosaurus_death_W_000": {
    "file": "psittacosaurus_death_W_000.png",
-   "sha256": "7b5882d50ccb843f30ec1451484d06c6d295d2548c6117d02b7927fbb2c698d2",
+   "sha256": "98eb004df8ce0376bdd823e2e0b2f64d112171297512b4a479cb3a6bac60493a",
    "bbox": [
     50,
     63,
@@ -7793,17 +7793,17 @@
   },
   "psittacosaurus_death_S_001": {
    "file": "psittacosaurus_death_S_001.png",
-   "sha256": "734641609b06d1be12c5933cc7d0555bea568e9417c58f3b1642f5a4587e4bde",
+   "sha256": "6d1ef6c1e01c381e29eb205120604ec5a17537b67148c4e076fb17f035258676",
    "bbox": [
     61,
     50,
     83,
-    87
+    88
    ]
   },
   "psittacosaurus_death_N_001": {
    "file": "psittacosaurus_death_N_001.png",
-   "sha256": "3f7d4fcd86d0e0088425c6f5ae7f04c39f77bc3743485f91bacc9b094e45429b",
+   "sha256": "6ffc9514fd071513aaca460a6093348effb85fda57cf4e8e483823edd5497ed3",
    "bbox": [
     61,
     52,
@@ -7813,7 +7813,7 @@
   },
   "psittacosaurus_death_E_001": {
    "file": "psittacosaurus_death_E_001.png",
-   "sha256": "168acb799564a254416856964c8ee9761b65d6cd8149ac29853c50de8c13d7f9",
+   "sha256": "b1c15a53edaa4d8b77851f4f6f8ed6e8289e3494bbe328db588555c45f23dcd0",
    "bbox": [
     49,
     63,
@@ -7823,7 +7823,7 @@
   },
   "psittacosaurus_death_W_001": {
    "file": "psittacosaurus_death_W_001.png",
-   "sha256": "2ab5c7a510010c4f7708c5d464b310ce027b9c53d02c13ea49c9184b82a00126",
+   "sha256": "e0984d91fdde3541d8017360a2ee34649060473f435ad6a99a92ede0e7723f3e",
    "bbox": [
     50,
     62,
@@ -7833,37 +7833,37 @@
   },
   "psittacosaurus_death_S_002": {
    "file": "psittacosaurus_death_S_002.png",
-   "sha256": "624fcbc660ac0a4e769a31761e99a6cf64db3cb3c9daab000af8dc4a9bd73dc9",
+   "sha256": "66ab65b727070f1ce21ec4345bd9f836b9308583f4ab1fce1085efff16d6d7f8",
    "bbox": [
     62,
     49,
     82,
-    87
+    88
    ]
   },
   "psittacosaurus_death_N_002": {
    "file": "psittacosaurus_death_N_002.png",
-   "sha256": "2e176b44aac2237ee3d4fb40faa4b8909e247abe7a19e226d6dd6d11fc87c447",
+   "sha256": "f8f952660bad4293f2f94d7d7d1ac1b356dde65f1b4dc4bab2b20316e1bfe855",
    "bbox": [
     62,
-    52,
+    51,
     82,
     90
    ]
   },
   "psittacosaurus_death_E_002": {
    "file": "psittacosaurus_death_E_002.png",
-   "sha256": "a62c99ab2d0621d03346149feaa09f86645fd1b297d53224e573b7e8bc1086ca",
+   "sha256": "603694153ecb63a0b258214caa0e05f29d36d55e8888d2d3d47213b15ba203d5",
    "bbox": [
     47,
     63,
-    93,
+    94,
     78
    ]
   },
   "psittacosaurus_death_W_002": {
    "file": "psittacosaurus_death_W_002.png",
-   "sha256": "e9ad1c6137bf91c5ab09a97fc548dbc82df5da23f38733c94233b08e631646cf",
+   "sha256": "bd523944ec91bc61e0c77c66590a3dfa1b34e1334c125efc29d5aca1bf84c749",
    "bbox": [
     51,
     62,
@@ -7873,17 +7873,17 @@
   },
   "psittacosaurus_death_S_003": {
    "file": "psittacosaurus_death_S_003.png",
-   "sha256": "6a3ee5a26b0549de95db61965972f01e9ce2c85ee98200595548bc0bdd4c2027",
+   "sha256": "02be28ea2a6091601d4fb1c06b71e42b6058a6333856b0aeddf34f0724f01562",
    "bbox": [
     66,
     51,
     84,
-    87
+    88
    ]
   },
   "psittacosaurus_death_N_003": {
    "file": "psittacosaurus_death_N_003.png",
-   "sha256": "61c227ebde7ba4418182e3c9ce52b34442b2d4ab5f22ded86bc0bdaf10b69af2",
+   "sha256": "dc9268abde3630cb2f5657e1bb823623ad43759caa6413c8ae5f84756c1b17c0",
    "bbox": [
     60,
     53,
@@ -7893,7 +7893,7 @@
   },
   "psittacosaurus_death_E_003": {
    "file": "psittacosaurus_death_E_003.png",
-   "sha256": "f3784e554947f271e47adf669a800034acdc4d6867767730e39ccaaa1190fcd4",
+   "sha256": "921681f586788a93e39251fe8b9af4d26d15f9edb8a40a94d3c1c5a65f0ce66b",
    "bbox": [
     48,
     60,
@@ -7903,7 +7903,7 @@
   },
   "psittacosaurus_death_W_003": {
    "file": "psittacosaurus_death_W_003.png",
-   "sha256": "2df6ebfd2c2e8b21872fa369dfacea3ef7e741065fbd0d034bf366a9dfe13926",
+   "sha256": "b5cc3b12ab35eb06e76cef2e4d5c43125cbd5b02ffb07faf295723b32ef48803",
    "bbox": [
     51,
     63,
@@ -7913,7 +7913,7 @@
   },
   "psittacosaurus_death_S_004": {
    "file": "psittacosaurus_death_S_004.png",
-   "sha256": "bcbcac89cc4163361ee2fc1a76559dc538b19dedb8246cce117b25317023b987",
+   "sha256": "565b8dfe8067ce45016e1d56d0cb63d50d0b0bca971502b32fcb9a864cede6a7",
    "bbox": [
     69,
     53,
@@ -7923,17 +7923,17 @@
   },
   "psittacosaurus_death_N_004": {
    "file": "psittacosaurus_death_N_004.png",
-   "sha256": "2f27f2e3efc3a4a6196dd27c76ad2cfe1da697cc6c6fd8f7ef1d26f439eb5425",
+   "sha256": "cf9266b4d951f059c6c2524e8283f6053caf0e83cd9d7f429bcbcc828fed2872",
    "bbox": [
     58,
-    55,
+    54,
     75,
     90
    ]
   },
   "psittacosaurus_death_E_004": {
    "file": "psittacosaurus_death_E_004.png",
-   "sha256": "57743814d6887dbe03b494d1f8c5f69792dc92b95b4dae51b3046655ee00ddd6",
+   "sha256": "c6c7fa13b3cd52feecf24c3c6be09e399ccf845ce33a8a0beae5080c04407315",
    "bbox": [
     50,
     59,
@@ -7943,7 +7943,7 @@
   },
   "psittacosaurus_death_W_004": {
    "file": "psittacosaurus_death_W_004.png",
-   "sha256": "abb493d4d3061ce4390a003fa51257990ec04d86f1661ef468fb1090125a4dce",
+   "sha256": "840207d87e4032a3e02635b80bf764ed897e4547bb09a03324d32f39a062636e",
    "bbox": [
     52,
     66,
@@ -7953,7 +7953,7 @@
   },
   "psittacosaurus_death_S_005": {
    "file": "psittacosaurus_death_S_005.png",
-   "sha256": "4c8e9f1cbb8bfa4cf765aeaa3882162c498983bf9bcf881d38bff808fbb0906b",
+   "sha256": "55614534a5dd4294d2fbc5f7b0ac961a091177da0cf091d9763b1ccb2a8e44e8",
    "bbox": [
     71,
     54,
@@ -7963,7 +7963,7 @@
   },
   "psittacosaurus_death_N_005": {
    "file": "psittacosaurus_death_N_005.png",
-   "sha256": "92be37fe7bd2330822722a9db2bbbeb767d60704d80c924cadefcea5e73f4541",
+   "sha256": "2c6c3b8f16a4ab745d84fa73066125531f44ffda7457576b8f747bbca46eae55",
    "bbox": [
     57,
     56,
@@ -7973,19 +7973,19 @@
   },
   "psittacosaurus_death_E_005": {
    "file": "psittacosaurus_death_E_005.png",
-   "sha256": "04adb173f6eb9839aad8a98d9f9fa5c57622ab99e5b79fa7977a52f2ca4726dc",
+   "sha256": "97d891607c0c783f86521cc53916a12aef0ee04393ec70ad70da59cec18cfe3e",
    "bbox": [
     51,
     59,
-    91,
+    92,
     77
    ]
   },
   "psittacosaurus_death_W_005": {
    "file": "psittacosaurus_death_W_005.png",
-   "sha256": "fc1f5506039c766edf336a07de2125e7715a00be906b7ed880406a1a09839edb",
+   "sha256": "130c8d29390f202bf910545ccb098ec026dc2bd8f510879e19edcd768d127772",
    "bbox": [
-    53,
+    52,
     67,
     93,
     85

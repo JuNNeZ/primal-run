@@ -71,7 +71,7 @@
  "frames": {
   "protoceratops_idle_S_000": {
    "file": "protoceratops_idle_S_000.png",
-   "sha256": "4c330bdfe9a74d7f357a4c0ccde757bc1cb5fdbaa014deb1fed5cb90cc4a0619",
+   "sha256": "0ec3d2572260065ff9e9b477260c25d283a9621794c6e948cae7c9e7fbc99259",
    "bbox": [
     59,
     47,
@@ -115,7 +115,7 @@
   },
   "protoceratops_idle_N_000": {
    "file": "protoceratops_idle_N_000.png",
-   "sha256": "7ff351fe1325f5a5499485913f1adc1d797296614c5555befc1ca6d09568292f",
+   "sha256": "d42b272b8761dbf3f121c1a29a4913e308117627e6fe2b87437ee517efc69c42",
    "bbox": [
     59,
     46,
@@ -159,7 +159,7 @@
   },
   "protoceratops_idle_E_000": {
    "file": "protoceratops_idle_E_000.png",
-   "sha256": "fca3e3ccd805d610319021c7188f7ea7492227c521954ea9abefa2c91da9811e",
+   "sha256": "f2c8377d650c7a8459235bc206cabc33f22c0b21610c8c46b294900950b4a4f5",
    "bbox": [
     44,
     58,
@@ -203,7 +203,7 @@
   },
   "protoceratops_idle_W_000": {
    "file": "protoceratops_idle_W_000.png",
-   "sha256": "ffc46c409e41112c1433bcb1009c90e0ef5f1ac8fe78d92de368d89239ea47cc",
+   "sha256": "fb4d6f89cbb28c3f1a8bc1ab32120ee0bfa7d11e4e25b746a5d5c0604cc85937",
    "bbox": [
     42,
     58,
@@ -247,7 +247,7 @@
   },
   "protoceratops_idle_S_001": {
    "file": "protoceratops_idle_S_001.png",
-   "sha256": "86d97a991d8dfb7c43640eb3652ec48d3f50e58edf6bd1e0980256e433ccb645",
+   "sha256": "078f0ded1137c858f5c5a44a9bbca331d65645931dd7d327da046525679bb489",
    "bbox": [
     59,
     47,
@@ -291,7 +291,7 @@
   },
   "protoceratops_idle_N_001": {
    "file": "protoceratops_idle_N_001.png",
-   "sha256": "165fd70f120d67c44fedf9ec567718fe6dd8d35eeb5a4295bfe8c62cf9a56815",
+   "sha256": "2ef00e767074195556b6373b5d94139ae98624fcc6b53e60c488b59893f5ede2",
    "bbox": [
     59,
     46,
@@ -335,7 +335,7 @@
   },
   "protoceratops_idle_E_001": {
    "file": "protoceratops_idle_E_001.png",
-   "sha256": "17a3f31c74a43ae8b6b477344f9e105cd0c9c15efe4961b4dd8d493a58947f31",
+   "sha256": "7260b9274785f29f204b17e457dc6bd7e1b67fb1df93480c38129c78510c160a",
    "bbox": [
     44,
     58,
@@ -379,7 +379,7 @@
   },
   "protoceratops_idle_W_001": {
    "file": "protoceratops_idle_W_001.png",
-   "sha256": "847016026c893077bd76d21c2cef2bea9e3e43e93efcbc9c6bc058c0c6d2ac1c",
+   "sha256": "e5daeadcc6206d62aebed20a8ec9d82657c04afd046a143bed4c7f565ab04847",
    "bbox": [
     42,
     58,
@@ -423,7 +423,7 @@
   },
   "protoceratops_idle_S_002": {
    "file": "protoceratops_idle_S_002.png",
-   "sha256": "eebc6babc44e8c1459a19fa994a3ec019825eed217baab003653209d68f6dae3",
+   "sha256": "380ecda470d28e86fc71588574aa25603bf8c60365ad55225cabe385f29556e7",
    "bbox": [
     59,
     47,
@@ -467,7 +467,7 @@
   },
   "protoceratops_idle_N_002": {
    "file": "protoceratops_idle_N_002.png",
-   "sha256": "e2d2aa869823e5653ed04e8d5c403b5f4a4a37be5bf0a722a8e2b329d8c8c050",
+   "sha256": "cfebc681e8ab3e8c0840b49c760d8fc7226652f751daf2c0deb73980092d6072",
    "bbox": [
     59,
     46,
@@ -511,7 +511,7 @@
   },
   "protoceratops_idle_E_002": {
    "file": "protoceratops_idle_E_002.png",
-   "sha256": "48e4e20350c21943b049524006364561a2e4263a310018060653e08b84446e92",
+   "sha256": "f5a464e241ee76ce397e8f982c130f5ec2801cde516eaa170f527bc6afc9b4ba",
    "bbox": [
     43,
     58,
@@ -555,7 +555,7 @@
   },
   "protoceratops_idle_W_002": {
    "file": "protoceratops_idle_W_002.png",
-   "sha256": "80a186b5773b755f44a79348115bbbaf641a6f65f02ae43702dfa21de24c7b1b",
+   "sha256": "60b9399f0e9581392465dd036c6cdbdb0430c56542966ee091b1307fcb1a36cc",
    "bbox": [
     42,
     58,
@@ -599,7 +599,7 @@
   },
   "protoceratops_idle_S_003": {
    "file": "protoceratops_idle_S_003.png",
-   "sha256": "24ae935a971c77a46543634694f71eaf52c6d734351d9f639bb8b7fc3fd8df4b",
+   "sha256": "d4966d9d9bc5edc7a586b52f0446fac4d43de711b567581fe014b567b04d6171",
    "bbox": [
     59,
     47,
@@ -643,7 +643,7 @@
   },
   "protoceratops_idle_N_003": {
    "file": "protoceratops_idle_N_003.png",
-   "sha256": "df0aae43f871aab5b64484acfa8d9694e290cc0f5e38c45109841366cf942e2c",
+   "sha256": "a399a856463ae754cf258c71881b23aeb6df10a44bc7d26626efd67f2edbef5b",
    "bbox": [
     59,
     46,
@@ -687,7 +687,7 @@
   },
   "protoceratops_idle_E_003": {
    "file": "protoceratops_idle_E_003.png",
-   "sha256": "860139a2c2455ab26063dc92ebac1cd20c419a88ffc77aef2a49a24432b12d81",
+   "sha256": "28f468f7c8bfb82dcb71337bdd086d1d0086f6286fc3e20cf847fbebf23c821e",
    "bbox": [
     43,
     58,
@@ -731,7 +731,7 @@
   },
   "protoceratops_idle_W_003": {
    "file": "protoceratops_idle_W_003.png",
-   "sha256": "14b77bdb89f66140d939fc426f2ce5e3050233ea53fce39c8daebe7a50584386",
+   "sha256": "f23f59d293c542e176681a1ac970210e7ba6368a540dc5dc71ce80843982a071",
    "bbox": [
     42,
     58,
@@ -775,7 +775,7 @@
   },
   "protoceratops_walk_S_000": {
    "file": "protoceratops_walk_S_000.png",
-   "sha256": "df4714989c88512e840e223d56429a00759a16e2254b860c648a8bdd2440e9df",
+   "sha256": "cdfad077918cf62589c3318fd38e479c683eb3eaed822c1db28bc2dacd7a913b",
    "bbox": [
     59,
     47,
@@ -819,7 +819,7 @@
   },
   "protoceratops_walk_N_000": {
    "file": "protoceratops_walk_N_000.png",
-   "sha256": "69f100a5b97b9a6d413705d616e541b4051a811f7c9df582eed538b9af007e5d",
+   "sha256": "18919e9b65b40ff85103632f57860e9ec057962ade031d1975c850aa5fe62938",
    "bbox": [
     59,
     46,
@@ -863,7 +863,7 @@
   },
   "protoceratops_walk_E_000": {
    "file": "protoceratops_walk_E_000.png",
-   "sha256": "d9a5d99cf038a06470e79226ee81a931b1a2c9445c19ca5980d29347c48cb140",
+   "sha256": "50c0b5f4042e072ad8baa65e7e3fc3284bdf41253065fd77408469879ca1710c",
    "bbox": [
     44,
     58,
@@ -907,7 +907,7 @@
   },
   "protoceratops_walk_W_000": {
    "file": "protoceratops_walk_W_000.png",
-   "sha256": "bcf9478650de65e013a5857ed059ba6da2abd300a610ae8ff7f7b029f456a671",
+   "sha256": "ea4e50491c1b7657f91b25fcd9f0c3b9e68bab3d6bda9fe0be12f2e08cd9096d",
    "bbox": [
     42,
     58,
@@ -951,7 +951,7 @@
   },
   "protoceratops_walk_S_001": {
    "file": "protoceratops_walk_S_001.png",
-   "sha256": "9195ce67959bb2d479acfbb7020f4122c663188982e076767962c63b66d078cb",
+   "sha256": "674a00839b7c41c392360bc014fcbc55089452ab16f955095aa447c2dc670676",
    "bbox": [
     59,
     48,
@@ -995,7 +995,7 @@
   },
   "protoceratops_walk_N_001": {
    "file": "protoceratops_walk_N_001.png",
-   "sha256": "1ed5c1ddd3573a2556031a18b077c09f20bddec016c46ed359ccf97eeea265d4",
+   "sha256": "362895ed054117608a5d2752c1852d926f7da3ec8b3d0102e1d359ac982066d6",
    "bbox": [
     59,
     46,
@@ -1039,7 +1039,7 @@
   },
   "protoceratops_walk_E_001": {
    "file": "protoceratops_walk_E_001.png",
-   "sha256": "bd136a43a8f4f02573bb6e700f8bdae54b427f26d555ec2b226fb04731d5af0a",
+   "sha256": "6514a1f6650a718f8feff7c5e3928f612e4c1274d4f933c09505b2d2a353767f",
    "bbox": [
     43,
     58,
@@ -1083,7 +1083,7 @@
   },
   "protoceratops_walk_W_001": {
    "file": "protoceratops_walk_W_001.png",
-   "sha256": "6cb889eb569bf58eeea4389ae50ef3a58d95d6a7e35bbeb95f352a210a34096c",
+   "sha256": "0729540ed9204f6d8fb6ed3fc99c22af74b886d9436f09488c582487693a23e3",
    "bbox": [
     42,
     58,
@@ -1127,7 +1127,7 @@
   },
   "protoceratops_walk_S_002": {
    "file": "protoceratops_walk_S_002.png",
-   "sha256": "0f1d9e69e60a899b1d34f400c9be71a1a1a1c25a4a2b4c09a997f9265874ebdc",
+   "sha256": "db8bc65d265d6d4633a4ab2a3ad91f341c5bbc8351dff968f8f68d84a0a8bac1",
    "bbox": [
     59,
     47,
@@ -1171,7 +1171,7 @@
   },
   "protoceratops_walk_N_002": {
    "file": "protoceratops_walk_N_002.png",
-   "sha256": "ace29039cd07e5cd81c69bdaa3a5f2a5cc39326d58314c67d2d910539787afa1",
+   "sha256": "905bab77bbcdca5d1f43b87bd4cfa11214650dcbf29577bb2d4adc823306ef2b",
    "bbox": [
     59,
     46,
@@ -1215,7 +1215,7 @@
   },
   "protoceratops_walk_E_002": {
    "file": "protoceratops_walk_E_002.png",
-   "sha256": "bd44741159da2d1341fffa1ded578023cdb02d8a2e4415a8b26326124c885aa5",
+   "sha256": "b8e58ab75506fe1bcf08f7fd4cfd34fb761ce1d2b7a36e4106db16fa8d2c0454",
    "bbox": [
     44,
     58,
@@ -1259,7 +1259,7 @@
   },
   "protoceratops_walk_W_002": {
    "file": "protoceratops_walk_W_002.png",
-   "sha256": "3234f5c9f1f573548d8aeb0d3d6560c79bc0af6702205112e35bc6645b602402",
+   "sha256": "f8c82ff7668b8564daa957e766e800cdaedbc76543d3a4e466404c97b1c0062e",
    "bbox": [
     42,
     58,
@@ -1303,7 +1303,7 @@
   },
   "protoceratops_walk_S_003": {
    "file": "protoceratops_walk_S_003.png",
-   "sha256": "71355908156184cdb631b6b5213f5b1e7e177ca0fea3d0ae74b9de707a2261e7",
+   "sha256": "94ae5c87ffbcc1abcd70101b7951e1d21bf77ef534ec645e198b39bc880d48b1",
    "bbox": [
     59,
     47,
@@ -1347,7 +1347,7 @@
   },
   "protoceratops_walk_N_003": {
    "file": "protoceratops_walk_N_003.png",
-   "sha256": "131efb451bb9cd2cb58442d80341106b65b29d9397f61c342a7e726ba67265b8",
+   "sha256": "031de2bf4892ed415e69ac46db5c79839d938b79a9cfc105860c024ed7741d20",
    "bbox": [
     59,
     46,
@@ -1391,7 +1391,7 @@
   },
   "protoceratops_walk_E_003": {
    "file": "protoceratops_walk_E_003.png",
-   "sha256": "73d3023172a4435c54a85b509c98a6518e796629486966744fc62e9a3bbff0b5",
+   "sha256": "a6aeb969a0e881d6ab055d9d87609774d3175a9841b433d32e064b32b2944abf",
    "bbox": [
     44,
     58,
@@ -1435,7 +1435,7 @@
   },
   "protoceratops_walk_W_003": {
    "file": "protoceratops_walk_W_003.png",
-   "sha256": "e023f92da562a91b1e533222e7af369dd3d1ed751e43e009fd7c67f8186ff67a",
+   "sha256": "4757b7fae92de4c219f0730cffd2239c8acefb3dd9828463e572dc282e017c4d",
    "bbox": [
     42,
     58,
@@ -1479,7 +1479,7 @@
   },
   "protoceratops_walk_S_004": {
    "file": "protoceratops_walk_S_004.png",
-   "sha256": "023b2cc6afcb08b7d55fce4cb5c9fdc8720fb9e361089ea56241f71e9445b8bf",
+   "sha256": "5a58af0407241231c4b9ebd7312e2903019bed8be6dd27247796e33d4e950f8b",
    "bbox": [
     59,
     48,
@@ -1523,7 +1523,7 @@
   },
   "protoceratops_walk_N_004": {
    "file": "protoceratops_walk_N_004.png",
-   "sha256": "d75b051aab58af4ec705df0527840f343485b5bee9ba2633dc72b0f9da777b9b",
+   "sha256": "c38b83ea5b67772a6a7111f026909b1a174ee8158e332152cc2995b5ac94fda2",
    "bbox": [
     59,
     46,
@@ -1567,7 +1567,7 @@
   },
   "protoceratops_walk_E_004": {
    "file": "protoceratops_walk_E_004.png",
-   "sha256": "7529dc539131661c9e397c134577ae5eb86cb3ee23b152651a01b48188b46ab4",
+   "sha256": "f5e63ddc9d8c8c04ab566c85531974f41fd58716d5e6bb3445d29c480e53f3cc",
    "bbox": [
     44,
     58,
@@ -1611,7 +1611,7 @@
   },
   "protoceratops_walk_W_004": {
    "file": "protoceratops_walk_W_004.png",
-   "sha256": "129fbb21a7519d7d7988c039f809387a3243833be14ef0af8d9bb75314fd9b6e",
+   "sha256": "fdca2c6678301f16c2ed1108bf7e320932f27cf42b9cd9bd93f04b98c01bc848",
    "bbox": [
     42,
     58,
@@ -1655,7 +1655,7 @@
   },
   "protoceratops_walk_S_005": {
    "file": "protoceratops_walk_S_005.png",
-   "sha256": "8f9157155cf023ab76b3a57a1f67efe9b424e84a5868ea68e4473c6fb843cd9e",
+   "sha256": "4a22b4b2f7526d2fa38744d0e541ad4cf9a5b2d0dfe3c83829ac66dedf6b163f",
    "bbox": [
     59,
     47,
@@ -1699,7 +1699,7 @@
   },
   "protoceratops_walk_N_005": {
    "file": "protoceratops_walk_N_005.png",
-   "sha256": "e40c22b7d2f97a64301c20d51c4fdf5ddf83378f10f9722db36c3ee3d3dceb4c",
+   "sha256": "aa58cfc542549ffecc73764123ed2fe7107660000e7ed8c3a1ba208115a2b406",
    "bbox": [
     59,
     46,
@@ -1743,7 +1743,7 @@
   },
   "protoceratops_walk_E_005": {
    "file": "protoceratops_walk_E_005.png",
-   "sha256": "4e0c2af1e23c5b6ef341b30b29036288024a100f4face9f50ba21309c78543c0",
+   "sha256": "65c268c8637fa905ef1da4adcae4d3e029eff31c289c49509ccaa0e8337012e5",
    "bbox": [
     44,
     58,
@@ -1787,7 +1787,7 @@
   },
   "protoceratops_walk_W_005": {
    "file": "protoceratops_walk_W_005.png",
-   "sha256": "45cbe3ee823ef2898ce80779148797955ec3e1bc5e74b7644f9fe7e09d6e1ef5",
+   "sha256": "974517d44b20902518d6192f1769451a3ed7df72b36d0531eb8fb87a50c30f65",
    "bbox": [
     42,
     58,
@@ -1831,7 +1831,7 @@
   },
   "protoceratops_run_S_000": {
    "file": "protoceratops_run_S_000.png",
-   "sha256": "c269ee49e354e5b0c4cac65534cbd277b9518b35075726ed8916847ecb8e6442",
+   "sha256": "c9989f8ed8533bf625c47c5184771af2673874d734ce04d9ee45b1c6a34fb6c5",
    "bbox": [
     59,
     47,
@@ -1875,7 +1875,7 @@
   },
   "protoceratops_run_N_000": {
    "file": "protoceratops_run_N_000.png",
-   "sha256": "8ed86d0f36ee9b5725f87a8dda33f92b9cc07362349154b00497f9f1a3fc9a53",
+   "sha256": "df14981b14d74d6f9b5880c64f257e0761f9431e3d326f63b0a961438e1dda22",
    "bbox": [
     59,
     46,
@@ -1919,7 +1919,7 @@
   },
   "protoceratops_run_E_000": {
    "file": "protoceratops_run_E_000.png",
-   "sha256": "359673879b112effc7a2cfbc316baf67e93164a791d90fb15501afd35d32a62e",
+   "sha256": "5ff4528e8fc8e4012f1a5c0a274f438f062915e0ca7cf3fed43c833e25cbe0e0",
    "bbox": [
     44,
     58,
@@ -1963,7 +1963,7 @@
   },
   "protoceratops_run_W_000": {
    "file": "protoceratops_run_W_000.png",
-   "sha256": "40d747a1dc28db333c9d8784776bbd39ffbfb808023cdf6f4b767ca99e2ac55b",
+   "sha256": "915532547e2fcdb6efdba34f87ff7471c6913ef855cd745ac4e9d27a83637429",
    "bbox": [
     42,
     58,
@@ -2007,7 +2007,7 @@
   },
   "protoceratops_run_S_001": {
    "file": "protoceratops_run_S_001.png",
-   "sha256": "6385df5da8821104334b04f6adab50cb43fb44575943a8c06281cba589accbb1",
+   "sha256": "5389223f47e5a4b7b70621be022d6f12158bb2e09414216a89f2a94bdba87a71",
    "bbox": [
     59,
     47,
@@ -2051,7 +2051,7 @@
   },
   "protoceratops_run_N_001": {
    "file": "protoceratops_run_N_001.png",
-   "sha256": "1fbed920078745bd13ee6849c581b6f93c6e48b3ca95bc2e62db75f91d4523ea",
+   "sha256": "1421907ce124a9d9dfcd900728838e7bf74f4803ed020d784dbad44b9aae303a",
    "bbox": [
     59,
     47,
@@ -2095,7 +2095,7 @@
   },
   "protoceratops_run_E_001": {
    "file": "protoceratops_run_E_001.png",
-   "sha256": "4bbf003eea846d7d2a2b37ff9a69ceb4b1d12305f3fc00269ac8bd0c371eb5db",
+   "sha256": "bdb872be738c705d66bcd64c5952a4decb6b5d882fbedae00596550636b31118",
    "bbox": [
     44,
     58,
@@ -2139,7 +2139,7 @@
   },
   "protoceratops_run_W_001": {
    "file": "protoceratops_run_W_001.png",
-   "sha256": "83d6adb874817b3276f90bc020f5f2e8f108c6380bec989f15f33c4022734175",
+   "sha256": "b6aacc7cccffc01527bd66c9f1ac6ae33fdb6bdf6c36b89e121a63d697aa1f18",
    "bbox": [
     42,
     58,
@@ -2183,7 +2183,7 @@
   },
   "protoceratops_run_S_002": {
    "file": "protoceratops_run_S_002.png",
-   "sha256": "abea3a1bdf26467fac71c6c23ad4fbf9835757b68acf394e7000f21193fe72bf",
+   "sha256": "c54d438277938b16701cd0079fbd4a77aba7f9253304ca1d633954b76da4a8fb",
    "bbox": [
     59,
     47,
@@ -2227,7 +2227,7 @@
   },
   "protoceratops_run_N_002": {
    "file": "protoceratops_run_N_002.png",
-   "sha256": "c2cbb4feb719b5517ac902e905940c00a59f8b11fec05dc8f94ad5bb6beff8f2",
+   "sha256": "02446ce57a571987b1b9ce65dd26c6fce740215c992fc374ae22a490e8eac99b",
    "bbox": [
     59,
     47,
@@ -2271,7 +2271,7 @@
   },
   "protoceratops_run_E_002": {
    "file": "protoceratops_run_E_002.png",
-   "sha256": "8897e67b8f9409b482ec78e515073fbcfcc3d153334d3f66178bd78b79f3f6ab",
+   "sha256": "22612c8e08d71153ed8de5021ded6cdd7e8d3cad1bad187aff0f360fb8229164",
    "bbox": [
     44,
     58,
@@ -2315,7 +2315,7 @@
   },
   "protoceratops_run_W_002": {
    "file": "protoceratops_run_W_002.png",
-   "sha256": "d46f9c1262b06183c42e1ab2763fdd91cb6d269d72906ae6935b0f20651c8bb0",
+   "sha256": "ae1090c8aa6e8f9368f083018cee314e5697eeb34b42e9aed2a1a831a564de93",
    "bbox": [
     42,
     58,
@@ -2359,7 +2359,7 @@
   },
   "protoceratops_run_S_003": {
    "file": "protoceratops_run_S_003.png",
-   "sha256": "14189ce1147a786fc1e6a02f3e32227c2d19dd29527c191ff1e54675ea4522e9",
+   "sha256": "1bb8e396849894288480b1b3df74e55a4d8ecd7fd414fe41c5edf9b4c0fa0fc2",
    "bbox": [
     59,
     47,
@@ -2403,7 +2403,7 @@
   },
   "protoceratops_run_N_003": {
    "file": "protoceratops_run_N_003.png",
-   "sha256": "ab07b9b09e0a8ce0427e15dd29aed05b11eff63841f2c525e87a3bcfe5e6bfd1",
+   "sha256": "4f23360047fcf1b7654344052174632355db8c2fcb12fc1e6e7bf2b1b279dc99",
    "bbox": [
     59,
     46,
@@ -2447,7 +2447,7 @@
   },
   "protoceratops_run_E_003": {
    "file": "protoceratops_run_E_003.png",
-   "sha256": "ab877f47c264687a619199ea0ab1ed57cc9e779e2039363b330516e943f223e8",
+   "sha256": "718cf6ac0fa5549ce562b3142a702ab19946706c05db6eb539e2ca2e4704aa1e",
    "bbox": [
     43,
     58,
@@ -2491,7 +2491,7 @@
   },
   "protoceratops_run_W_003": {
    "file": "protoceratops_run_W_003.png",
-   "sha256": "e6887de117318e1400f58f32c29e66f1be0ff61b0c0fdc0883a80abc1e4c76a7",
+   "sha256": "c20eb81b5bb779d476a5c982a2fa3c924b8161ad2f2cdcfef5e55d14b5738e93",
    "bbox": [
     42,
     58,
@@ -2535,7 +2535,7 @@
   },
   "protoceratops_run_S_004": {
    "file": "protoceratops_run_S_004.png",
-   "sha256": "d406f12caaa2d9de64360d395705e58cea088e46f352b1a14fe1993bcf072b64",
+   "sha256": "190020583ccb465489e2b47c22e0a873bc55c205fbb80f1a9bfff2f368d061b5",
    "bbox": [
     59,
     47,
@@ -2579,7 +2579,7 @@
   },
   "protoceratops_run_N_004": {
    "file": "protoceratops_run_N_004.png",
-   "sha256": "f529c69c8679ea672154a69548de64a1829a8c40cfb4c00b2ea6feb980fcc026",
+   "sha256": "bf624d366a1136e10d886d2873a357e1d82f3a74745b66937817555c3bfa39e9",
    "bbox": [
     59,
     47,
@@ -2623,7 +2623,7 @@
   },
   "protoceratops_run_E_004": {
    "file": "protoceratops_run_E_004.png",
-   "sha256": "9347d165475fb9fee04314e976bf9a778baf091a0e990d1ebc4e317fe0bec734",
+   "sha256": "585f14ea42ec86769457cdc97523579f011eb8e9f41da9238b3f8bc0ea910063",
    "bbox": [
     44,
     58,
@@ -2667,7 +2667,7 @@
   },
   "protoceratops_run_W_004": {
    "file": "protoceratops_run_W_004.png",
-   "sha256": "73cbea2f4507d29d09707bff0ecd93e7db86107b550d2f2057561c358493485c",
+   "sha256": "3bd9b79cda5fccf1eae8f4ee5a7d6a7da9267699c0c0e1088b013b3ff86ee90f",
    "bbox": [
     42,
     58,
@@ -2711,7 +2711,7 @@
   },
   "protoceratops_run_S_005": {
    "file": "protoceratops_run_S_005.png",
-   "sha256": "02c3ebf2d5d5fa9d25a87e955cf3da63e05e9b2e507f498dbfd538ca3bf6eea2",
+   "sha256": "e72416b43abe5563be89b5302057b404bdc7e3a5c89a72eff4be138b06ab9fb6",
    "bbox": [
     59,
     47,
@@ -2755,7 +2755,7 @@
   },
   "protoceratops_run_N_005": {
    "file": "protoceratops_run_N_005.png",
-   "sha256": "e0e6a969146f6fa6a51db371ecfd8839582c1137b221d62d5743c5da5e885eaa",
+   "sha256": "055baab73b31cfeb224e8e8d6f89b212d38e22fbf60389118df766a255b964ac",
    "bbox": [
     59,
     47,
@@ -2799,7 +2799,7 @@
   },
   "protoceratops_run_E_005": {
    "file": "protoceratops_run_E_005.png",
-   "sha256": "694d67643200f40c817c1140a1d05c297d238261a48d88c586875dff3ef940e5",
+   "sha256": "e9e317b995ef0c38bb28e1bc60af21d515b8d878e3db5a45f4937e87163f2daa",
    "bbox": [
     44,
     58,
@@ -2843,7 +2843,7 @@
   },
   "protoceratops_run_W_005": {
    "file": "protoceratops_run_W_005.png",
-   "sha256": "03251dc3b42d31e3434d5952bc96c20588e99506ecc4b3bd17859b27ca4c9578",
+   "sha256": "87382329d33f417904942c2e8765d6d88fd888a03522aaf34d0a58d1943e47fc",
    "bbox": [
     42,
     58,
@@ -2887,7 +2887,7 @@
   },
   "protoceratops_attack_S_000": {
    "file": "protoceratops_attack_S_000.png",
-   "sha256": "2d2d9f7718a225557cda1978b67abce4b7f61584bffe63be759ce15db147d264",
+   "sha256": "955597909a9ba26fbaf4399ee9895b0bf62e91bc66922973c04b18dbb2ab815b",
    "bbox": [
     59,
     47,
@@ -2931,7 +2931,7 @@
   },
   "protoceratops_attack_N_000": {
    "file": "protoceratops_attack_N_000.png",
-   "sha256": "fe0a50a28351f6dd822f8bb696e6dd8cca22c5c3134e403635d8bdd26feaf90b",
+   "sha256": "10fda57e0fc54f8af2f636c5a758591ff42c7ae55e7779880a5347b28e244a03",
    "bbox": [
     59,
     46,
@@ -2975,7 +2975,7 @@
   },
   "protoceratops_attack_E_000": {
    "file": "protoceratops_attack_E_000.png",
-   "sha256": "a710daaf6f49832e736815bad6d7162d255079a4af63506b67553ff7ed1a3637",
+   "sha256": "1c086df07cb2b884a97d8ac112ffb63718306ada88240722919d4e4ae93b16e5",
    "bbox": [
     43,
     58,
@@ -3019,7 +3019,7 @@
   },
   "protoceratops_attack_W_000": {
    "file": "protoceratops_attack_W_000.png",
-   "sha256": "caf26170fbb538e9b07374532126b9ca470f639d558a2b76141230274f1ecdc5",
+   "sha256": "5c17e243330e1f5ec2dd9142452cb6d8e76c9cf5cee31169ddc38f1fa17698cc",
    "bbox": [
     43,
     58,
@@ -3063,7 +3063,7 @@
   },
   "protoceratops_attack_S_001": {
    "file": "protoceratops_attack_S_001.png",
-   "sha256": "afb5a766948b4c90ed1e3a2eea587dc733482a35d3fe900ec0d945506b22cdc3",
+   "sha256": "d6c1b64222740d722397d5c36edc194d285fc7a5694b3013f525b247a5ab0b28",
    "bbox": [
     59,
     47,
@@ -3107,7 +3107,7 @@
   },
   "protoceratops_attack_N_001": {
    "file": "protoceratops_attack_N_001.png",
-   "sha256": "e1bc2d82c6b17c63fe392535b7afc8a7e039dd578442bf21e86391e6a67da74e",
+   "sha256": "5a761e0a4563dbd9f88b5c479a4e5ca0fb15cc4e58589a97558e8950100aeefb",
    "bbox": [
     59,
     47,
@@ -3151,7 +3151,7 @@
   },
   "protoceratops_attack_E_001": {
    "file": "protoceratops_attack_E_001.png",
-   "sha256": "0687a9893c21ead5523bcdc8a0644b67e7a9050877a3b547d6dbf1811e102b03",
+   "sha256": "0f676932b64a0d0dc6af692cbc99fbf0bf476cbf5d0e95d01509015297a2bb92",
    "bbox": [
     42,
     58,
@@ -3195,7 +3195,7 @@
   },
   "protoceratops_attack_W_001": {
    "file": "protoceratops_attack_W_001.png",
-   "sha256": "dfa7a39f544ca7ccfbbe0f22aaed76ccc9d78fda00cd5fbe5c28cb96924866f3",
+   "sha256": "9425b63680c2588f4a38782eddb0455d99590e274a7ba88149028bb7876ced79",
    "bbox": [
     44,
     58,
@@ -3239,7 +3239,7 @@
   },
   "protoceratops_attack_S_002": {
    "file": "protoceratops_attack_S_002.png",
-   "sha256": "9a969d4636adc8652234bc8f48c8cebbc3fcd41306a61036c5efccf2c2b25900",
+   "sha256": "8fc2365bfb8ca86e769d6753812e937f4dd32aaaeaca71396814f8d4524527a6",
    "bbox": [
     59,
     47,
@@ -3283,7 +3283,7 @@
   },
   "protoceratops_attack_N_002": {
    "file": "protoceratops_attack_N_002.png",
-   "sha256": "9bcceb9cfe8c84e6aa4fbce0695c55de3fe48e44aa0d9467e7692e69b4188d2a",
+   "sha256": "dd281f162eecba14429457eca4271cd2e632a248b6dc7b32de95e7231f0b8f44",
    "bbox": [
     59,
     48,
@@ -3327,7 +3327,7 @@
   },
   "protoceratops_attack_E_002": {
    "file": "protoceratops_attack_E_002.png",
-   "sha256": "277bc3ba5d31e10b7044f8b2a3f010d5f1352aa4f614d811403092b17a00c7eb",
+   "sha256": "fa736417db586680013ec9bb3424bb09167fbe2cdf051d13e088523bcf1a150b",
    "bbox": [
     43,
     58,
@@ -3371,7 +3371,7 @@
   },
   "protoceratops_attack_W_002": {
    "file": "protoceratops_attack_W_002.png",
-   "sha256": "75d2d8bb31b646bd9d684c10d497616d9d11363176f7860e3f8352dd16eddf41",
+   "sha256": "656b16d7d2b5c1142d18293d359707737c91ce968daad51c5ac19066ec32b36d",
    "bbox": [
     43,
     58,
@@ -3415,7 +3415,7 @@
   },
   "protoceratops_attack_S_003": {
    "file": "protoceratops_attack_S_003.png",
-   "sha256": "83822ec9224cb70870c55d6cbf503bb12a13fef046f84a2d0944b1834f7a1355",
+   "sha256": "388425806af93c3171022b9bc5cc5fe42bced7b5d5fab3a70d825a47e1011fab",
    "bbox": [
     59,
     49,
@@ -3459,7 +3459,7 @@
   },
   "protoceratops_attack_N_003": {
    "file": "protoceratops_attack_N_003.png",
-   "sha256": "b3c8ca9853d67ac034cc53d4f5d15ad9babba319d85ac8f13e8af67a0869c435",
+   "sha256": "3d0f0325e5e31bf41cbd25304ae46dfe24690ebb75ec5b4e95f4fd685df36ad0",
    "bbox": [
     59,
     46,
@@ -3503,7 +3503,7 @@
   },
   "protoceratops_attack_E_003": {
    "file": "protoceratops_attack_E_003.png",
-   "sha256": "e61f1c83df52df2a89aa3d477da6d716d0dda81de0c537869038309926e8e9c5",
+   "sha256": "2fb12c93a9e2cff161b3af0669c21fbf3972f0230493aa5820621717f07e6c5c",
    "bbox": [
     46,
     58,
@@ -3547,7 +3547,7 @@
   },
   "protoceratops_attack_W_003": {
    "file": "protoceratops_attack_W_003.png",
-   "sha256": "503c66598c79faa156e4a54f2a410a5588e45e173b75bc44c742496958e97767",
+   "sha256": "7b40b63ae68dd17248ce5dc140f9e0199c7430f6ad32770305b5f375e8f3b448",
    "bbox": [
     40,
     58,
@@ -3591,7 +3591,7 @@
   },
   "protoceratops_attack_S_004": {
    "file": "protoceratops_attack_S_004.png",
-   "sha256": "d84d9b0ec787cdc1598b7fccf8f94dd53373f47f2c19491a7c6a0e68f365027b",
+   "sha256": "e667b38f187ee89da33c48811a4bd1ca74f79c438eb3b34c95befa3382f3b66c",
    "bbox": [
     59,
     48,
@@ -3635,7 +3635,7 @@
   },
   "protoceratops_attack_N_004": {
    "file": "protoceratops_attack_N_004.png",
-   "sha256": "caf2185b0910d2040e1010b2d99d97a43de295b6fae666cddb9b27886064af32",
+   "sha256": "935335447b60f8994f6e9432276070992d4dc69193e07d69afccef254611b8c9",
    "bbox": [
     59,
     46,
@@ -3679,7 +3679,7 @@
   },
   "protoceratops_attack_E_004": {
    "file": "protoceratops_attack_E_004.png",
-   "sha256": "a14768478eee0e36b85355be8aad75b27720bbb8f5aa418f23accf5ab04fb702",
+   "sha256": "7316609d23f810e981cbf915762704f4a5231df25c588e4b7bd4bdb311f9429b",
    "bbox": [
     45,
     58,
@@ -3723,7 +3723,7 @@
   },
   "protoceratops_attack_W_004": {
    "file": "protoceratops_attack_W_004.png",
-   "sha256": "2fa249604c31e17008bd98c26ec5713282ce57574944202faa374d003dd02710",
+   "sha256": "101fc543c23a2df769178ad5e8a074ea4f4c5510a6ead617d6b201c487a81d96",
    "bbox": [
     41,
     58,
@@ -3767,7 +3767,7 @@
   },
   "protoceratops_attack_S_005": {
    "file": "protoceratops_attack_S_005.png",
-   "sha256": "8904c6bf1d5315d107e1bd1d808fc8aadc5f0907b91c5ebac48746a8aec2d2c6",
+   "sha256": "7240518bce301bf27de6eb1824a500ce30dffe9c6a29842eadf0c7b0436ee61e",
    "bbox": [
     59,
     48,
@@ -3811,7 +3811,7 @@
   },
   "protoceratops_attack_N_005": {
    "file": "protoceratops_attack_N_005.png",
-   "sha256": "d49cd23defc31bf5b0630499d3ee5bb435957d1127ce573f97ef153316974801",
+   "sha256": "5c04c557aab8511ab7d9608945aac0fcc3c4b59fa0d4bb221ced7010e8cc17e8",
    "bbox": [
     59,
     46,
@@ -3855,7 +3855,7 @@
   },
   "protoceratops_attack_E_005": {
    "file": "protoceratops_attack_E_005.png",
-   "sha256": "6b8ceea74f4d1783072fa18a618a81a40c0dd835672f0c451d2fd42904b63761",
+   "sha256": "c844c3ed07afff631730bcdff3df74f2d352a0fb5e033bc6a9ce8d0c1c2e7638",
    "bbox": [
     44,
     58,
@@ -3899,7 +3899,7 @@
   },
   "protoceratops_attack_W_005": {
    "file": "protoceratops_attack_W_005.png",
-   "sha256": "6a19dd1ffba69e2ece3d90156880b7ea8056aacf05ffa967dc046e2ba64f6c77",
+   "sha256": "38f351c586d7223a98df455b57c05632c2807a6a09bfe630cd5f8750debb2618",
    "bbox": [
     42,
     58,
@@ -3943,7 +3943,7 @@
   },
   "protoceratops_hurt_S_000": {
    "file": "protoceratops_hurt_S_000.png",
-   "sha256": "89085d491938c6e8b1e570801517ec812b073083ab2618f83b17fe996ab9064a",
+   "sha256": "cabe3b14d315d80b81b6b7b0e2161add9ad1947592c4be7cf026d0a051b1d3b3",
    "bbox": [
     59,
     47,
@@ -3987,7 +3987,7 @@
   },
   "protoceratops_hurt_N_000": {
    "file": "protoceratops_hurt_N_000.png",
-   "sha256": "58e42a5e82cf162c7a718f6d40e6dea8c4db71710e6fe3bf2b680c75de5785af",
+   "sha256": "51a515c38a3c2f391417c9b3e53481258863c033e76eeee3a471ee88245b4218",
    "bbox": [
     59,
     46,
@@ -4031,7 +4031,7 @@
   },
   "protoceratops_hurt_E_000": {
    "file": "protoceratops_hurt_E_000.png",
-   "sha256": "ec688815e8deafafe02a63610af1775bcebb10f46c15cd494b255ab485d13124",
+   "sha256": "ce5d99a7e45d0d792cb98edb140f6944465202912bc2c8cce49a9639a8e37fe2",
    "bbox": [
     43,
     58,
@@ -4075,7 +4075,7 @@
   },
   "protoceratops_hurt_W_000": {
    "file": "protoceratops_hurt_W_000.png",
-   "sha256": "90dd82c066ce3286a734aa31813c371a4e20b5cc7ae7becc5f4735cfb26b7200",
+   "sha256": "1761e6ec842a40754f252ed9cb6f23c8e2ae82ae7085ba21c6da6e224206f661",
    "bbox": [
     45,
     58,
@@ -4119,7 +4119,7 @@
   },
   "protoceratops_hurt_S_001": {
    "file": "protoceratops_hurt_S_001.png",
-   "sha256": "5195a62260b2716b7975e97975ed9e53b98a246cd9a3bba3ab9d844be4526e76",
+   "sha256": "39933fc659c181ba1dbd207f3e6ca3741c60d6e54c4c8b7608a2e899f6de5498",
    "bbox": [
     59,
     47,
@@ -4163,7 +4163,7 @@
   },
   "protoceratops_hurt_N_001": {
    "file": "protoceratops_hurt_N_001.png",
-   "sha256": "388f9488193066b808d97ac94b60f94f7c4c20f908f9d0f6f26cfe382cc41ecb",
+   "sha256": "cd4dbf61d1a726a5b4cd805f1be0e43d6fa711ff14267121146c26e7ba2df569",
    "bbox": [
     59,
     46,
@@ -4207,7 +4207,7 @@
   },
   "protoceratops_hurt_E_001": {
    "file": "protoceratops_hurt_E_001.png",
-   "sha256": "1204e207d887593d9c94f16b6211f59deab9c907e2a032d3e5872a4197274245",
+   "sha256": "65f2c9be72b3fae88e841da4f9b140bb894fac30f10925ad00c1227d43fde049",
    "bbox": [
     43,
     58,
@@ -4251,7 +4251,7 @@
   },
   "protoceratops_hurt_W_001": {
    "file": "protoceratops_hurt_W_001.png",
-   "sha256": "88e46212c42110d0751eb681c658175891746a3b5808cb8066d92a720b880072",
+   "sha256": "87dfda11e298c5b464c8a6e0fe401b132344884a8f44b998ec58d291239f7a32",
    "bbox": [
     43,
     58,
@@ -4295,7 +4295,7 @@
   },
   "protoceratops_death_S_000": {
    "file": "protoceratops_death_S_000.png",
-   "sha256": "6505f4030bb7f7c0935270e709a79a91fbb5f3131fbf2b11314d7596aff7fb7a",
+   "sha256": "1742045c26740c0d8f48fb0f64a7b176815f5c013a6d2e2f4078f0f1b22a2dd0",
    "bbox": [
     59,
     47,
@@ -4305,7 +4305,7 @@
   },
   "protoceratops_death_N_000": {
    "file": "protoceratops_death_N_000.png",
-   "sha256": "8e84937b88088cea7aebf52617aa39f4b0df5aecac0b300a3e952d9258b19e8e",
+   "sha256": "219f3e4bb677635694c28d5ca958fa7829934316e4df2d066f254a32f8b5a0a3",
    "bbox": [
     59,
     46,
@@ -4315,7 +4315,7 @@
   },
   "protoceratops_death_E_000": {
    "file": "protoceratops_death_E_000.png",
-   "sha256": "108d043095719c88b6fdab2d61116dfced2e595afed10b24467e8b1079a812fe",
+   "sha256": "c0ab8630e0818b2fb7a307d8c187fce2d579cee69dd1b7237c6731640be2b2aa",
    "bbox": [
     44,
     58,
@@ -4325,7 +4325,7 @@
   },
   "protoceratops_death_W_000": {
    "file": "protoceratops_death_W_000.png",
-   "sha256": "226805c0dfef986aaf240d206b576a129ce1090d87797539a62ed71f8d38e362",
+   "sha256": "c53a15ac177b96ef1fbda32daed9cb5bc38b608f88465ca89bb3c2dbd2a9f418",
    "bbox": [
     42,
     58,
@@ -4335,7 +4335,7 @@
   },
   "protoceratops_death_S_001": {
    "file": "protoceratops_death_S_001.png",
-   "sha256": "6447e3bf3634e07da75e632e3955d8f4b882e151cc8caec4e190c7f6a8f176e7",
+   "sha256": "c87fc0c2f9372c4f76219dc3d81ebefb9ada6fb95ae687859db89526467d2578",
    "bbox": [
     60,
     47,
@@ -4345,7 +4345,7 @@
   },
   "protoceratops_death_N_001": {
    "file": "protoceratops_death_N_001.png",
-   "sha256": "82024279ce2b47974e5f11dcf323abe9cb059160ca0466dc6b9a50cc94c74ac4",
+   "sha256": "71de6dc37202bc124be5f96d683b73ecd5ad6f7a80dfcb9bf675ddb44dbe35cd",
    "bbox": [
     58,
     46,
@@ -4355,7 +4355,7 @@
   },
   "protoceratops_death_E_001": {
    "file": "protoceratops_death_E_001.png",
-   "sha256": "29a373753822bf415bd8416f3786da6a16c62bb1280ff3e2c90c16b07fcee0a5",
+   "sha256": "6f4c791214610a6f52f892cb8831373e0b02dac33e962985a695c5c6c7f96e95",
    "bbox": [
     44,
     57,
@@ -4365,7 +4365,7 @@
   },
   "protoceratops_death_W_001": {
    "file": "protoceratops_death_W_001.png",
-   "sha256": "ee1ec4ef01ed9b4a443ccb50a40ee8839de469c118b487858d3d7542ae6fb831",
+   "sha256": "6354144ed7dfff5d8862be29475eca386fc6c25428fccd841378833a7b2c9e4c",
    "bbox": [
     42,
     59,
@@ -4375,7 +4375,7 @@
   },
   "protoceratops_death_S_002": {
    "file": "protoceratops_death_S_002.png",
-   "sha256": "05514c21821f0c947e2fd09e64719465f949e7cb568b43430f802878e9efda2c",
+   "sha256": "02df56120e5fabe782030bf14cd313c63f5be9efd9e54a4fa68f39ae719156a1",
    "bbox": [
     61,
     46,
@@ -4385,7 +4385,7 @@
   },
   "protoceratops_death_N_002": {
    "file": "protoceratops_death_N_002.png",
-   "sha256": "e40dab7da9384ecaff1cd698ae61043be42d8f6e079db59cacde9aa28085d25c",
+   "sha256": "1025c8bf0b1ab695e30c057364a0918093f4ce3148a6b389cd82fadecb34af4e",
    "bbox": [
     56,
     46,
@@ -4395,7 +4395,7 @@
   },
   "protoceratops_death_E_002": {
    "file": "protoceratops_death_E_002.png",
-   "sha256": "65b04c192671597b5782d385720a32d5d967eb84ecd56137d3cfc0b2d894f2d0",
+   "sha256": "777d7fc865e59ca9c8075a2dc00234aabb6a49f481a14c9d996ed871994827a7",
    "bbox": [
     44,
     57,
@@ -4405,7 +4405,7 @@
   },
   "protoceratops_death_W_002": {
    "file": "protoceratops_death_W_002.png",
-   "sha256": "b65bf9d7b70a5e8bf5e3ed425dc618a0aed607e76dc9576c0ee07168b053171d",
+   "sha256": "8a3bf52c24424e72aeac6b6a014d98981cb34d763e7b010bfc4c09d663c5095b",
    "bbox": [
     42,
     61,
@@ -4415,7 +4415,7 @@
   },
   "protoceratops_death_S_003": {
    "file": "protoceratops_death_S_003.png",
-   "sha256": "2affaa237b809e42bf65ebbcfd9c36d9dda8ae7a8e8e17784c271f000d402bf9",
+   "sha256": "123c8d133906b49a06a721f582b24d773ec3a2d5b8cd2a5e2df8d6051504469c",
    "bbox": [
     65,
     47,
@@ -4425,7 +4425,7 @@
   },
   "protoceratops_death_N_003": {
    "file": "protoceratops_death_N_003.png",
-   "sha256": "e74e05f9b469655af61036e81949f0fcb1d70993be56daa52944de04a7317505",
+   "sha256": "40f9eb660457042ce906354207a40f848df9810cc86131e9fff7401b9203e674",
    "bbox": [
     55,
     46,
@@ -4435,7 +4435,7 @@
   },
   "protoceratops_death_E_003": {
    "file": "protoceratops_death_E_003.png",
-   "sha256": "d1b4820f5407ce67b1ff6ac7f1fa7481351ab039920a24895d7f6a5c29a7e0eb",
+   "sha256": "f54b3fac1f6f2325c834fbc4e323f0b9fa1672801f9e5eb939e87fef0a706798",
    "bbox": [
     44,
     57,
@@ -4445,7 +4445,7 @@
   },
   "protoceratops_death_W_003": {
    "file": "protoceratops_death_W_003.png",
-   "sha256": "ca2d0dcbf6368f8082dcc9c0287a9fc518ba4f93ab53e80fd70e932f5192b5d4",
+   "sha256": "b2b2b37706eff677ec2b026049c0a44243a5519c9447a5981d004187545f0fc4",
    "bbox": [
     42,
     63,
@@ -4455,7 +4455,7 @@
   },
   "protoceratops_death_S_004": {
    "file": "protoceratops_death_S_004.png",
-   "sha256": "6a8803000cc3bd44921afbf3cd78781fb70988bb0b72aaf74fb8ebfd4197f9e9",
+   "sha256": "2dc08a938f2ff770a0bc3452978f5889264b6f08b53c13cc2fa0ee713bed9cab",
    "bbox": [
     69,
     49,
@@ -4465,7 +4465,7 @@
   },
   "protoceratops_death_N_004": {
    "file": "protoceratops_death_N_004.png",
-   "sha256": "33178ac1638ddfe78a4d1e65fd23f404f2172374d2b259ab38c48a8ba70818a0",
+   "sha256": "d7836df6aad9947e2ace98d231ff71954b331f7448498a3b9dee9a9f558e7969",
    "bbox": [
     55,
     47,
@@ -4475,7 +4475,7 @@
   },
   "protoceratops_death_E_004": {
    "file": "protoceratops_death_E_004.png",
-   "sha256": "286ec07920321444d8a01a85fcef3076ce6eb0382c27ebd3989af0e12f5d99ef",
+   "sha256": "c096fac731e690e3a9407ce5851a302b344e776168a953152c901d3dd3fa8a04",
    "bbox": [
     45,
     57,
@@ -4485,7 +4485,7 @@
   },
   "protoceratops_death_W_004": {
    "file": "protoceratops_death_W_004.png",
-   "sha256": "86b12498c9a4714c5e68a1af4e01a24428ce632f13f26aad4b36b1f6e2bce354",
+   "sha256": "6eeb1512ccf8dd3aef4aa189b944d49952647bfcf408b83ff09097aa84361353",
    "bbox": [
     42,
     66,
@@ -4495,7 +4495,7 @@
   },
   "protoceratops_death_S_005": {
    "file": "protoceratops_death_S_005.png",
-   "sha256": "b1aef0af00d140f480d3a51dede8ff359cf7e9e7e66f9d7bd7cc279c30382b05",
+   "sha256": "b6dabde49d110bd45dbc8b74542f284f12d47e71365a9615bf6d262a162a5de1",
    "bbox": [
     70,
     50,
@@ -4505,7 +4505,7 @@
   },
   "protoceratops_death_N_005": {
    "file": "protoceratops_death_N_005.png",
-   "sha256": "66b2c33c327952ed300a878fe782f04ac186fc7475efd9c41813e71b963fb355",
+   "sha256": "b7478bb8a4bb01a2c967c22a319b2619b1b6d4d6b9b35da6e1c8ecf2a524cb27",
    "bbox": [
     56,
     47,
@@ -4515,7 +4515,7 @@
   },
   "protoceratops_death_E_005": {
    "file": "protoceratops_death_E_005.png",
-   "sha256": "dad7984f3fb74754a654efcdea66487c737ec9ecd99cb30c5289474af795163b",
+   "sha256": "66bdf658b374b9f667017d6431b71b93576d9fb4f2ae1c56e89d4a2b778f2bc5",
    "bbox": [
     46,
     57,
@@ -4525,7 +4525,7 @@
   },
   "protoceratops_death_W_005": {
    "file": "protoceratops_death_W_005.png",
-   "sha256": "478f756ede7fa3430ae1e270f190984b974071317bfb80d60288957077bd82b8",
+   "sha256": "178c9cb24a0143db438040971174ee3ee3cfab69fe8b20da6e63427fcbdff7b4",
    "bbox": [
     42,
     67,

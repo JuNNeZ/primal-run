@@ -56716,13 +56716,13 @@
   "max_dimension": 2048,
   "padding": 1,
   "pixels": "unaltered RGBA; no scaling or palette conversion; exact duplicate aliases only",
-  "png_bytes": 10920305,
+  "png_bytes": 10949183,
   "sheets": [
     {
       "file": "assets/atlases/species_allosaurus_0.png",
       "frames": 127,
       "group": "species_allosaurus",
-      "sha256": "42ba6a2a717b4c043baf2f5d87856d69a33b2f8f3cacbf982ed280e3efc19580",
+      "sha256": "7ed144204a1762680ee411ef61cb663bfb69d64a5d10322d4ab29b2b1db11921",
       "size": [
         2044,
         2044
@@ -56744,7 +56744,7 @@
       "file": "assets/atlases/species_archelon_0.png",
       "frames": 127,
       "group": "species_archelon",
-      "sha256": "094df8d12d271b5604f9832ccb2e8186b9e0fab4252d22c357869d177ddb9a14",
+      "sha256": "d15a549614e3b35b4839aefe95bd85d7c4f0c721b8aecca650b83cc14b703ef5",
       "size": [
         2044,
         2044
@@ -56821,7 +56821,7 @@
       "file": "assets/atlases/species_edmontosaurus_0.png",
       "frames": 127,
       "group": "species_edmontosaurus",
-      "sha256": "3d60efdd8d4d298e08b7eff8b899317868108112d684d8dc95a8541f773916b1",
+      "sha256": "da7823301e0bd409ffb80e7a777956e318612967b6212dc5b37b5e181d2912ba",
       "size": [
         2044,
         2044
@@ -56865,7 +56865,7 @@
       "file": "assets/atlases/species_leaellynasaura_0.png",
       "frames": 127,
       "group": "species_leaellynasaura",
-      "sha256": "b14c06714dbb02f16315bdae27650dd37ecd190f955619d2c1a2a4613604d680",
+      "sha256": "377c5bf9cd7cb5c1f6fc79be17150af31552fb70817c140c0a3b5ccc1357703b",
       "size": [
         2044,
         2044
@@ -56887,7 +56887,7 @@
       "file": "assets/atlases/species_oviraptor_0.png",
       "frames": 127,
       "group": "species_oviraptor",
-      "sha256": "59dad7ea3c1229660ef4929bafaaaceb876524fdfd435f8f5279e745a2544e94",
+      "sha256": "8124f8978d4cd9977fcc95d7ff0bbfd2c7469d0e8b573bc842ef325832747a23",
       "size": [
         2044,
         2044
@@ -56909,7 +56909,7 @@
       "file": "assets/atlases/species_pachyrhinosaurus_0.png",
       "frames": 127,
       "group": "species_pachyrhinosaurus",
-      "sha256": "99ba3114a8baf99b54031ce2f8e5e7df368e556d6507d6db6b7c72194f796f94",
+      "sha256": "1ff3e735995d508bf00c15a3877375bc5fe7f7a5fd43f1d930575b80c60e2e3d",
       "size": [
         2044,
         2044
@@ -56942,7 +56942,7 @@
       "file": "assets/atlases/species_protoceratops_0.png",
       "frames": 127,
       "group": "species_protoceratops",
-      "sha256": "c60b04de4f3a5096855a52a99d3b3470e057e2b583e4a7438775877a0547a24f",
+      "sha256": "d0a3f68b75ce020af2144d79ccc1177c9ef8fd7e23febc0508e0aa6793c911bd",
       "size": [
         2044,
         2044
@@ -56953,7 +56953,7 @@
       "file": "assets/atlases/species_psittacosaurus_0.png",
       "frames": 127,
       "group": "species_psittacosaurus",
-      "sha256": "32df8cf333ddeff9f328d6d84909f6a996be6757a03dd303e9b93cc69cfabc58",
+      "sha256": "0fd71762888d4a74b7ab9b13f5f4d8df263cbc7785a11e8a3fcb7022bc873cfe",
       "size": [
         2044,
         2044
@@ -56964,7 +56964,7 @@
       "file": "assets/atlases/species_pteranodon_0.png",
       "frames": 127,
       "group": "species_pteranodon",
-      "sha256": "1798271f84d6a73cb644fdaae8963f20355afca79a943683928f0ffd1369035c",
+      "sha256": "579688fa97b92fc22f24172dcbf305d64a9fbb1a518a39d6f108d10579a692bf",
       "size": [
         2044,
         2044
@@ -56975,7 +56975,7 @@
       "file": "assets/atlases/species_spinosaurus_0.png",
       "frames": 127,
       "group": "species_spinosaurus",
-      "sha256": "b13ba0f2d949a8500b7fadce7ddda5d9e5477f1b14241d639bf5059165b61ac9",
+      "sha256": "de7f4068bb32d713990375d631335f3ba5bcb7ae23465ad5923e1072d7263559",
       "size": [
         2044,
         2044
@@ -56986,7 +56986,7 @@
       "file": "assets/atlases/species_stegosaurus_0.png",
       "frames": 127,
       "group": "species_stegosaurus",
-      "sha256": "df00c7ef3b5920aff3ec3e96d0ea02aa7df9fe5a3b3357f1e93991d14e51430a",
+      "sha256": "669733e9112a9bdb1dcbcf9501958c8a27837a1814f6be6da82df92edff13d64",
       "size": [
         2044,
         2044

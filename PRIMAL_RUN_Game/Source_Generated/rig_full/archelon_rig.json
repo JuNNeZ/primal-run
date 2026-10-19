@@ -73,12 +73,12 @@
  "frames": {
   "archelon_idle_S_000": {
    "file": "archelon_idle_S_000.png",
-   "sha256": "bf7309c5b643c28615c4bf8a61d4d793529d4500d76c9e8cdf84162a576be110",
+   "sha256": "883390a21f9622410a12ea017359bd835d07496e562ebffbeb8d2cc10b7fc7f7",
    "bbox": [
     11,
     35,
     133,
-    113
+    116
    ],
    "joints": {
     "front_L": [
@@ -126,10 +126,10 @@
   },
   "archelon_idle_N_000": {
    "file": "archelon_idle_N_000.png",
-   "sha256": "7e76f133303be5a56805c5df9b8d9df711859f3af14d22010e26b6b733d42c79",
+   "sha256": "6d22a163adbf8fd65e81eb2c85a63761abf6d87a0b7ed932c7bf874673491cdf",
    "bbox": [
     11,
-    28,
+    27,
     133,
     107
    ],
@@ -179,11 +179,11 @@
   },
   "archelon_idle_E_000": {
    "file": "archelon_idle_E_000.png",
-   "sha256": "f76d3ba35220a33eebadd169ad1a5f35ee6287a276774fac58301c4f5e3d8385",
+   "sha256": "70b025b7de18af2373687392bfdbd8e9ec2558524d384374d9f7256ab2ca7180",
    "bbox": [
     28,
     22,
-    124,
+    126,
     122
    ],
    "joints": {
@@ -232,9 +232,9 @@
   },
   "archelon_idle_W_000": {
    "file": "archelon_idle_W_000.png",
-   "sha256": "086244d449a58c2a033fd475b43a441b2ddb8a93a4755ec650d8a9d5c256fd94",
+   "sha256": "cf6648f1cb45d0a6541e44d98696785717adbd08718bcdbf9c32f8897a8f3320",
    "bbox": [
-    20,
+    18,
     22,
     116,
     122
@@ -285,12 +285,12 @@
   },
   "archelon_idle_S_001": {
    "file": "archelon_idle_S_001.png",
-   "sha256": "e74cca6bb93cb5fbe796b91a51f3e8e754f88dfae11a7912e39e9fe495dca1f9",
+   "sha256": "5daa01c7b6853e7876730a68f38fc6645f8901e72661a395c0617db490be72cc",
    "bbox": [
     13,
     35,
     131,
-    113
+    116
    ],
    "joints": {
     "front_L": [
@@ -338,10 +338,10 @@
   },
   "archelon_idle_N_001": {
    "file": "archelon_idle_N_001.png",
-   "sha256": "10b83f954f5115acd193fb71640e6bfb678566caaa465fcbc813018357fb718e",
+   "sha256": "baf43cd41bded3a717255770793ca400cecb59db7602290efd8fc78ee6ffa887",
    "bbox": [
     13,
-    28,
+    26,
     131,
     107
    ],
@@ -391,11 +391,11 @@
   },
   "archelon_idle_E_001": {
    "file": "archelon_idle_E_001.png",
-   "sha256": "b64b2864cc1a27dc622f8f5c2318b0c2d901554a8283c18b6f73a0d8f92df00f",
+   "sha256": "d0949056876adbeaeb6badc029ab230fbad574d7f7c5e288bcc8b8ef2af00da3",
    "bbox": [
     28,
     23,
-    124,
+    126,
     121
    ],
    "joints": {
@@ -444,9 +444,9 @@
   },
   "archelon_idle_W_001": {
    "file": "archelon_idle_W_001.png",
-   "sha256": "9330f9f59b05f55c10ec48184cd6118d77e63f3ca96cf20696c71ff586abe067",
+   "sha256": "f327d5092ec1ebeb89095504c094f20ec01f9042d894f18f2257381e379b6d12",
    "bbox": [
-    20,
+    18,
     23,
     116,
     121
@@ -497,12 +497,12 @@
   },
   "archelon_idle_S_002": {
    "file": "archelon_idle_S_002.png",
-   "sha256": "4c701660ab8681a44bb46a13c18a83e145f391431fc1a988cca0cd7e73d3244e",
+   "sha256": "10e285d85abd107bad8d79a66db3dea9d54dd7c5931cf47c282d1a7ab3993b0d",
    "bbox": [
     11,
     35,
     133,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -550,10 +550,10 @@
   },
   "archelon_idle_N_002": {
    "file": "archelon_idle_N_002.png",
-   "sha256": "8fa61e3936ef1137166057c2cab975fc15cf91d6c1ca5c5e8a860d4feeb7b945",
+   "sha256": "bfc66525dc2b472507a384e0720e2d689f9db3ad75de16ed5be523b4f73c79cb",
    "bbox": [
     11,
-    28,
+    27,
     133,
     107
    ],
@@ -603,11 +603,11 @@
   },
   "archelon_idle_E_002": {
    "file": "archelon_idle_E_002.png",
-   "sha256": "c6425a9f1c150081134d7a3d6089c7630a0c43cd76c44ccfc0ba6d972de2aeb4",
+   "sha256": "f90100f4510c8ef7c2cda9a782a6edae3c7e58143b28e94b902ae9fe3d0a3aac",
    "bbox": [
     28,
     22,
-    124,
+    126,
     122
    ],
    "joints": {
@@ -656,9 +656,9 @@
   },
   "archelon_idle_W_002": {
    "file": "archelon_idle_W_002.png",
-   "sha256": "4f53e57f42ed7db3b4af18e5c5275e4829ed273d3ee6a10ed6a5cf54a878ea54",
+   "sha256": "e5221038601d298bb503137a092bed2b8a8ac704e48e7a3433d9339301b353df",
    "bbox": [
-    20,
+    18,
     22,
     116,
     122
@@ -709,12 +709,12 @@
   },
   "archelon_idle_S_003": {
    "file": "archelon_idle_S_003.png",
-   "sha256": "9533921111823375646eda9a744fcce3d6def0b3a8bc675527f69dde61a40ea9",
+   "sha256": "fc4f7dddfb520d73c39c73a6c1153740d998372a13d50ab6e168715b18f1c8b4",
    "bbox": [
     10,
     35,
     134,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -762,10 +762,10 @@
   },
   "archelon_idle_N_003": {
    "file": "archelon_idle_N_003.png",
-   "sha256": "263238b8a2619c776a5e1325b5696d4e027029eb218c243b03d6efae25efb533",
+   "sha256": "baff2e40b4ccae35c2776d4e85184919ec3198cc60998ecd069e5214a7b31331",
    "bbox": [
     10,
-    28,
+    27,
     134,
     107
    ],
@@ -815,11 +815,11 @@
   },
   "archelon_idle_E_003": {
    "file": "archelon_idle_E_003.png",
-   "sha256": "922d885e20cf3e313305695c4475e2c56bad96b7590402ce5c496b2343b25d3b",
+   "sha256": "bf794e8949b6968042a8e9434a255d39a8eb3ebba795ab0ed756aff3cd021b48",
    "bbox": [
     28,
     20,
-    124,
+    126,
     123
    ],
    "joints": {
@@ -868,9 +868,9 @@
   },
   "archelon_idle_W_003": {
    "file": "archelon_idle_W_003.png",
-   "sha256": "d29e9bf59076b8bd36c430cd5c4122a820e23c17b35e03d4a53b300c6cb12c58",
+   "sha256": "1fb15f51830ff94c627eeb14ae5337ad15d16aa00cfcd5631aa0804dc7a0fbba",
    "bbox": [
-    20,
+    18,
     20,
     116,
     123
@@ -921,12 +921,12 @@
   },
   "archelon_walk_S_000": {
    "file": "archelon_walk_S_000.png",
-   "sha256": "b964d02db00322935b1be2c1c132760a26e26419b7584bc0306a44aabf4bab28",
+   "sha256": "aec5212a1f859aa5f6ee4b54799e902c38f0b2cd4d70832922f53be85929c7a3",
    "bbox": [
     12,
     35,
     132,
-    113
+    116
    ],
    "joints": {
     "front_L": [
@@ -974,10 +974,10 @@
   },
   "archelon_walk_N_000": {
    "file": "archelon_walk_N_000.png",
-   "sha256": "919aa3ce56fe39a6aad9898bfece0df7995318ed939d0e7b0b4d91259ea2c897",
+   "sha256": "40ef3c080138255372f5baa737fac134c891f1e90ceb2003877216f26c2792b8",
    "bbox": [
     12,
-    28,
+    27,
     132,
     107
    ],
@@ -1027,11 +1027,11 @@
   },
   "archelon_walk_E_000": {
    "file": "archelon_walk_E_000.png",
-   "sha256": "0dda426d87d1e7e7e259f4484ee79a81c553a89636c26699dd134604ca50ee8f",
+   "sha256": "8e6ad649231f7be8286858771432b1801c53091b339bd2194426612c323e18d0",
    "bbox": [
     28,
     19,
-    124,
+    126,
     118
    ],
    "joints": {
@@ -1080,9 +1080,9 @@
   },
   "archelon_walk_W_000": {
    "file": "archelon_walk_W_000.png",
-   "sha256": "78402607f8998ee0886849a1aa23c06bd8c5f377f76fb0c427e2e650ea20d859",
+   "sha256": "a73032101e574e2f496ab8f0e74290a2aefbfec0674cfe8b109b090ebe1b1222",
    "bbox": [
-    20,
+    18,
     19,
     116,
     118
@@ -1133,12 +1133,12 @@
   },
   "archelon_walk_S_001": {
    "file": "archelon_walk_S_001.png",
-   "sha256": "f83c7e01323a49dd3e0012779ab1cf6b36e5a56b2e656ab685048f4b5972764e",
+   "sha256": "851f2aea7e3a0c8906f5b97548d7748192deeebc9afa9c7140109a10310b0e3f",
    "bbox": [
     20,
     35,
     124,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -1186,10 +1186,10 @@
   },
   "archelon_walk_N_001": {
    "file": "archelon_walk_N_001.png",
-   "sha256": "253d76464b98806f3f99a36160b19daf0b1a6baaf47e584d127a2a75c434a579",
+   "sha256": "661480da785e27d26d4dafc2000b0fefb9ec98bcebcdba838ccc2c471b8243fb",
    "bbox": [
     20,
-    28,
+    27,
     124,
     107
    ],
@@ -1239,11 +1239,11 @@
   },
   "archelon_walk_E_001": {
    "file": "archelon_walk_E_001.png",
-   "sha256": "2edaa6dfc4bb813d11f754fb1f669464c6ec9ad1db4b318e3637758ece15f449",
+   "sha256": "8f02a0c894ebbba1095b0c37531c2af2d8d8253df542bff1bb403fa6012cb5dd",
    "bbox": [
     28,
     27,
-    124,
+    126,
     113
    ],
    "joints": {
@@ -1292,9 +1292,9 @@
   },
   "archelon_walk_W_001": {
    "file": "archelon_walk_W_001.png",
-   "sha256": "3d1f1a46ab77674c6ce18ab2aca71c6735f7c16af906d5d7f3a2540b0db0f8fd",
+   "sha256": "9359f52ac90870d1c1f7de86f230d6c6dd60e8405ff7ae9d3e12ec11c0bb7810",
    "bbox": [
-    20,
+    18,
     27,
     116,
     113
@@ -1345,12 +1345,12 @@
   },
   "archelon_walk_S_002": {
    "file": "archelon_walk_S_002.png",
-   "sha256": "55ddd6e6d62056b0288f26d342bfc1a4c58199849fe374ecc950095530e7cd7c",
+   "sha256": "c3c54d7a354c30801fbb33b0ec155a9461e67d24d5ac7c93ad1aff9cee2ce39e",
    "bbox": [
     21,
     35,
     123,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -1398,10 +1398,10 @@
   },
   "archelon_walk_N_002": {
    "file": "archelon_walk_N_002.png",
-   "sha256": "ae0d9bd23c1c3876374390769fde8884c1f728454b4bfc50369c64b70639c9b7",
+   "sha256": "c6a7fb5311dfcff66b297a8ee196551b44f162ee16c4dbb0769f0d8561aabc68",
    "bbox": [
     21,
-    28,
+    27,
     123,
     107
    ],
@@ -1451,11 +1451,11 @@
   },
   "archelon_walk_E_002": {
    "file": "archelon_walk_E_002.png",
-   "sha256": "22998146676380e370dd35c7e5a715ee7800ce0a79551ab78f465e5740ff1ded",
+   "sha256": "5ee28707810cdccd2d13df451d7ce69d333dc12f795f103c541b4d0ac7f7d458",
    "bbox": [
     28,
     31,
-    124,
+    126,
     116
    ],
    "joints": {
@@ -1504,9 +1504,9 @@
   },
   "archelon_walk_W_002": {
    "file": "archelon_walk_W_002.png",
-   "sha256": "14b46b7c75ab1f43d7488ccf93e2ad327d76d1200f66baf7f535f95c51587735",
+   "sha256": "dc5f363361297e3e02544b94dd323521a43dd50d6939dd420af0aeeb527aa6eb",
    "bbox": [
-    20,
+    18,
     31,
     116,
     116
@@ -1557,12 +1557,12 @@
   },
   "archelon_walk_S_003": {
    "file": "archelon_walk_S_003.png",
-   "sha256": "a777c8e593f2356131046dad872f57a4e87573f1d3317a34b93735030df21b59",
+   "sha256": "422c7e8f897c9f2cd553e70f7ccbcefc1a3ef950ffc936e92523d97618b319e9",
    "bbox": [
     13,
     35,
     131,
-    113
+    116
    ],
    "joints": {
     "front_L": [
@@ -1610,10 +1610,10 @@
   },
   "archelon_walk_N_003": {
    "file": "archelon_walk_N_003.png",
-   "sha256": "5bc459aa7b3bbb7be42b5cc6c069828bc811191d7dd1b442868483c0c2982c1b",
+   "sha256": "4ff7645ee7e293539c26c98e63467d9b81ec8f813a876af1c6cbdd263bdba8c8",
    "bbox": [
     13,
-    28,
+    27,
     131,
     107
    ],
@@ -1663,11 +1663,11 @@
   },
   "archelon_walk_E_003": {
    "file": "archelon_walk_E_003.png",
-   "sha256": "6a6477a7a2ea63c75551e8f579f65ce872b53e5e9c40e1d20af87f39ca88e0f7",
+   "sha256": "d95a6082b1d69b75b336efc649162b1031423ffa114adf9506e13b2dfafb5079",
    "bbox": [
     28,
     27,
-    124,
+    126,
     124
    ],
    "joints": {
@@ -1716,9 +1716,9 @@
   },
   "archelon_walk_W_003": {
    "file": "archelon_walk_W_003.png",
-   "sha256": "293d72957999bb0cf59ac437115a759a75bf0ec34f25c49daab91e21a16d911e",
+   "sha256": "f1a81efcee2ca9335a3d97716ed2ac538e2128ae02ec1b42095e5451ec4de4c8",
    "bbox": [
-    20,
+    18,
     27,
     116,
     124
@@ -1769,12 +1769,12 @@
   },
   "archelon_walk_S_004": {
    "file": "archelon_walk_S_004.png",
-   "sha256": "40f9eaaf1d9ed16604905cfc4e617bb430bd085688d0b6fd351c829a0d9ec2a5",
+   "sha256": "ffe8514ad4dddcfb7cff47a021e195a512bf4cbc79b4eaf686df086f4c0bdd0a",
    "bbox": [
     9,
     35,
     135,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -1822,10 +1822,10 @@
   },
   "archelon_walk_N_004": {
    "file": "archelon_walk_N_004.png",
-   "sha256": "8191143e68c163653ecb2e92cdcf64c537fd9b5259f888b8c3f366c2ac3ead1c",
+   "sha256": "13951e02b4aaa85e07e504083f2a4166bcc38df41d27756806ebb8449b8dd624",
    "bbox": [
     9,
-    28,
+    27,
     135,
     107
    ],
@@ -1875,11 +1875,11 @@
   },
   "archelon_walk_E_004": {
    "file": "archelon_walk_E_004.png",
-   "sha256": "485b1d51ac9ad562d17630f2dab1293e31a556323d66966e5b065a8154e2e0e9",
+   "sha256": "b8ed7d1f17932e94ee7b97103b7fe0a81ec13aaa59282f3850789d8ec0d02ce0",
    "bbox": [
     28,
     21,
-    124,
+    126,
     126
    ],
    "joints": {
@@ -1928,9 +1928,9 @@
   },
   "archelon_walk_W_004": {
    "file": "archelon_walk_W_004.png",
-   "sha256": "e4b93c9d04f70448f4f96464cbcf8e7baab66734981132f6a68791fc334af46a",
+   "sha256": "6906cb7f87d3042231cf9a3b54cae2b313c25babaa8cd076a1f22a3edfdc1f64",
    "bbox": [
-    20,
+    18,
     21,
     116,
     126
@@ -1981,12 +1981,12 @@
   },
   "archelon_walk_S_005": {
    "file": "archelon_walk_S_005.png",
-   "sha256": "9f3afd429d5ab15c1a4b8bd4e4e257c95979beb7b7653f605f2b4a77e1f8f02b",
+   "sha256": "6b9f70142fdc1b89b28951eb70ccedc37af8ee47e9eceed2ac01ccbdb54f1525",
    "bbox": [
     8,
     35,
     136,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -2034,10 +2034,10 @@
   },
   "archelon_walk_N_005": {
    "file": "archelon_walk_N_005.png",
-   "sha256": "81508ae8b092df438c8b231b9d6fec1ac49e1ce00737c5a12e0c777d101ca667",
+   "sha256": "494291d15d9e0cc60ef5bd355eb48b979c4c717b6b7f7780ac675b069486466e",
    "bbox": [
     8,
-    28,
+    27,
     136,
     108
    ],
@@ -2087,11 +2087,11 @@
   },
   "archelon_walk_E_005": {
    "file": "archelon_walk_E_005.png",
-   "sha256": "c078516b1519a023ae0574181975803cd820f0b1deec75bc5f5b4bd93b812165",
+   "sha256": "69e6d80d2bb8c4a2ac9f7833ac88b2537edbe08f470632cecff081c4bb283854",
    "bbox": [
     28,
     17,
-    124,
+    126,
     123
    ],
    "joints": {
@@ -2140,9 +2140,9 @@
   },
   "archelon_walk_W_005": {
    "file": "archelon_walk_W_005.png",
-   "sha256": "1ebf142e5c80534d55c039a7ebbaa3f33b5f6d4adf6870b0b5adf40f3448dc28",
+   "sha256": "077e2e4925216d20696b260f1b6432e90f412d9ba79e4bdbdd5f56333e5381b4",
    "bbox": [
-    20,
+    18,
     17,
     116,
     123
@@ -2193,12 +2193,12 @@
   },
   "archelon_run_S_000": {
    "file": "archelon_run_S_000.png",
-   "sha256": "686b818050f5e6152f4b79383d898addf9df40586949f45d7e8caf464ff58c86",
+   "sha256": "5135c564a93307769ccabce4160e7899719a06bfa68de20b582ef23f151602df",
    "bbox": [
     13,
     35,
     131,
-    113
+    116
    ],
    "joints": {
     "front_L": [
@@ -2246,10 +2246,10 @@
   },
   "archelon_run_N_000": {
    "file": "archelon_run_N_000.png",
-   "sha256": "e7fd49264643c1a27b21c105315d43b249e976d969d0dfe06940cfad7f1639ac",
+   "sha256": "c4de17d7add330c67553f3a0a9070b50c96f24f00c2a676b40e67a872737d4cf",
    "bbox": [
     13,
-    28,
+    27,
     131,
     107
    ],
@@ -2299,11 +2299,11 @@
   },
   "archelon_run_E_000": {
    "file": "archelon_run_E_000.png",
-   "sha256": "c6dac1e00b1883b1ca34731be29cd38a629f06f81e8c62544a715734b6cad33b",
+   "sha256": "ec2befd3338bf913adbe779f0fd8eac9521d2eea9305d91def3b8cec959ee869",
    "bbox": [
     28,
     18,
-    124,
+    126,
     116
    ],
    "joints": {
@@ -2352,9 +2352,9 @@
   },
   "archelon_run_W_000": {
    "file": "archelon_run_W_000.png",
-   "sha256": "31a23d80716a8149177245512f5677bbdacfef7be7e941663807df8b82229ed3",
+   "sha256": "ab0949958664463a510d73dbe1dd778554c2a0071ec8b1651ba1861860d14600",
    "bbox": [
-    20,
+    18,
     18,
     116,
     116
@@ -2405,12 +2405,12 @@
   },
   "archelon_run_S_001": {
    "file": "archelon_run_S_001.png",
-   "sha256": "1fea06e02e28eb705da5de0085d1680c273a1b6fe6adefb61a677311a8fb3a4a",
+   "sha256": "a6a32fec047bd4f06021524e2ae823e0c7ee838133d77d8f9246864ba13fe342",
    "bbox": [
     25,
     35,
     119,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -2458,10 +2458,10 @@
   },
   "archelon_run_N_001": {
    "file": "archelon_run_N_001.png",
-   "sha256": "8ba94e545358d70c2f49eea6cb751fdac3007e8ef72199694d88582929cee5ff",
+   "sha256": "d46cca7faa4d6cf27ae457263e2ba42e23355d8c0e3574bec45646566e3625f4",
    "bbox": [
     25,
-    28,
+    27,
     119,
     107
    ],
@@ -2511,11 +2511,11 @@
   },
   "archelon_run_E_001": {
    "file": "archelon_run_E_001.png",
-   "sha256": "0536946203e8477d38877d2fe1ca57810aa9795dfc223adc2e7c4bb679a1b73d",
+   "sha256": "ae63479470af529a8c5ceb678b1116d5175348231fa2e374b50064224b0ecb25",
    "bbox": [
     28,
     30,
-    124,
+    126,
     108
    ],
    "joints": {
@@ -2564,9 +2564,9 @@
   },
   "archelon_run_W_001": {
    "file": "archelon_run_W_001.png",
-   "sha256": "670a02ecbeab5ca950cdbf6ba393bcb16dc7cd24c562c54c6fee88a6af41aeed",
+   "sha256": "ae57bcfe2decbb738f8e01a2cc4ea8228f2ddcaf577c26141e24215192c6a3dd",
    "bbox": [
-    20,
+    18,
     30,
     116,
     108
@@ -2617,12 +2617,12 @@
   },
   "archelon_run_S_002": {
    "file": "archelon_run_S_002.png",
-   "sha256": "0d6e8587e6b19a8f1383989c64622173ee4fdc781e725e428dfc76f54206c561",
+   "sha256": "cc943b7c0573229e2f820c5ab8b980e696746a5b1137e1f378ca57e2304b7f72",
    "bbox": [
     25,
     35,
     119,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -2670,10 +2670,10 @@
   },
   "archelon_run_N_002": {
    "file": "archelon_run_N_002.png",
-   "sha256": "d71a5fb22afdcb731f140d827436c8075bf06eb16f290c1413add9fca7603dd1",
+   "sha256": "3dcfeec71263e2f69f5de47e96fe26f51f09e5d1a60a8a626a97c88fee7ddcde",
    "bbox": [
     25,
-    28,
+    27,
     119,
     107
    ],
@@ -2723,11 +2723,11 @@
   },
   "archelon_run_E_002": {
    "file": "archelon_run_E_002.png",
-   "sha256": "3f2b3b86a728d0ee9ab37945dc4901c635c64f946097d590ffb33bdbfb90c776",
+   "sha256": "34d9467c4c1071f6ef7948557728ec71ed6e3c98b1474815f07d7e058214bcba",
    "bbox": [
     28,
     36,
-    124,
+    126,
     113
    ],
    "joints": {
@@ -2776,9 +2776,9 @@
   },
   "archelon_run_W_002": {
    "file": "archelon_run_W_002.png",
-   "sha256": "eb67798d9085e352bad3e734a8f7aff35aeb55f880bced54a802f88aa8b7ed80",
+   "sha256": "1a6c470f06b941a1f505793ac3b1b94ea751f75f59abbf9ee87c3f201585ea11",
    "bbox": [
-    20,
+    18,
     36,
     116,
     113
@@ -2829,12 +2829,12 @@
   },
   "archelon_run_S_003": {
    "file": "archelon_run_S_003.png",
-   "sha256": "3dca0c371cfa8c16b6e8857aaabbac5c512d57805aabb32a9caabfdd578c8785",
+   "sha256": "2a9151a95adb0e4b74f2a191f194353596ba923de1f0754dd61138a9c873e2d1",
    "bbox": [
     14,
     35,
     130,
-    113
+    116
    ],
    "joints": {
     "front_L": [
@@ -2882,10 +2882,10 @@
   },
   "archelon_run_N_003": {
    "file": "archelon_run_N_003.png",
-   "sha256": "afffc268e4a52437bbbd51aeb85e402aed3daf314543b2744ddd894cfaefb19e",
+   "sha256": "4d82c5990c4c01c930ed0893f710b18132a00099ece307ff302700c4743d9811",
    "bbox": [
     14,
-    28,
+    27,
     130,
     107
    ],
@@ -2935,11 +2935,11 @@
   },
   "archelon_run_E_003": {
    "file": "archelon_run_E_003.png",
-   "sha256": "ef14ff5fce3cb0dace276f128804081bdd9e0dfcf5fb29ab94c80ac6644a8450",
+   "sha256": "66ed5ceb0bfdbaef7cae8442ebb6b6af875bbbc6cbfcee34ea0a51bfe0b70e9c",
    "bbox": [
     28,
     29,
-    124,
+    126,
     124
    ],
    "joints": {
@@ -2988,9 +2988,9 @@
   },
   "archelon_run_W_003": {
    "file": "archelon_run_W_003.png",
-   "sha256": "d9b7e2dd47ec48825d5d83a09286c283bae6cd0b2fb2245d4837f5c11aa3a493",
+   "sha256": "258372f678fc3e6a089d433dcbdcd077ea27cb61659418729e5286c629dbea4f",
    "bbox": [
-    20,
+    18,
     29,
     116,
     124
@@ -3041,12 +3041,12 @@
   },
   "archelon_run_S_004": {
    "file": "archelon_run_S_004.png",
-   "sha256": "60f877c84f70127fd3d986ee182e7f0b011ec45cb6ed6d3929a9486024fdf608",
+   "sha256": "0fb6dad5f783ed3f08faa093b781541556cb8f3ba0a6599da14e0d14ca4d0e42",
    "bbox": [
     9,
     34,
     135,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -3094,10 +3094,10 @@
   },
   "archelon_run_N_004": {
    "file": "archelon_run_N_004.png",
-   "sha256": "c1d385e93578c40a5d325c3c304fc5e66030cbf05ac2b02db3f94934d70d1749",
+   "sha256": "0027cdd672f2fc210785375076c99fb0f0e8802a15272954dd0fd29dbea12787",
    "bbox": [
     9,
-    28,
+    27,
     135,
     108
    ],
@@ -3147,11 +3147,11 @@
   },
   "archelon_run_E_004": {
    "file": "archelon_run_E_004.png",
-   "sha256": "242ea4d657711b623f4087bd7f6034c6579b1796cd563c3274646fa928ca40c5",
+   "sha256": "1565e8759a1de8f192a14896a1bd22a1f3e3aef1798ad01be0b202defe955995",
    "bbox": [
     28,
     23,
-    124,
+    126,
     126
    ],
    "joints": {
@@ -3200,9 +3200,9 @@
   },
   "archelon_run_W_004": {
    "file": "archelon_run_W_004.png",
-   "sha256": "568d5158983f60ac4c1815af2f4beb5b76a1307b423a998b07d7d54ba47f0369",
+   "sha256": "b8a64e1c24e340c0f42b3e3d51b6be8f581c4bdde31b712382c5bc3aaa5d6a31",
    "bbox": [
-    20,
+    18,
     23,
     116,
     126
@@ -3253,12 +3253,12 @@
   },
   "archelon_run_S_005": {
    "file": "archelon_run_S_005.png",
-   "sha256": "41bb352899f0262c59aa0e40ad05b6dc7ae677b12a1c95a5879e94bb29444d4d",
+   "sha256": "486c0fa316329ac3aee93dc5922949a918a19b39a2b153222974f4b8f13a1cc2",
    "bbox": [
     9,
     35,
     135,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -3306,10 +3306,10 @@
   },
   "archelon_run_N_005": {
    "file": "archelon_run_N_005.png",
-   "sha256": "d9097f9de5b303123b8377229128cca02baa209b26856efc70ab1f28c592e2a0",
+   "sha256": "1a67f4de6c11684bd6e3c0cffa8551ff1ada3751a98d234290bc76d6614a2adf",
    "bbox": [
     9,
-    28,
+    27,
     135,
     108
    ],
@@ -3359,11 +3359,11 @@
   },
   "archelon_run_E_005": {
    "file": "archelon_run_E_005.png",
-   "sha256": "d3d224dcd80441872cc8a3d71c354d53c3f04506558f7390de50fe4f99984f12",
+   "sha256": "1040e5d1f2045048e01e8c09fb79cd6d5de12341c69e50ecb61ca75d9189be0a",
    "bbox": [
     28,
     17,
-    124,
+    126,
     122
    ],
    "joints": {
@@ -3412,9 +3412,9 @@
   },
   "archelon_run_W_005": {
    "file": "archelon_run_W_005.png",
-   "sha256": "f4bff556cac4a346aa7b22ff39575405b36c1993c1283bbb41c6f14d0d65095c",
+   "sha256": "b797492bd3dc64b380402d43ee83f6bf507ec59cba6403bfa41f9810de683b6e",
    "bbox": [
-    20,
+    18,
     17,
     116,
     122
@@ -3465,12 +3465,12 @@
   },
   "archelon_attack_S_000": {
    "file": "archelon_attack_S_000.png",
-   "sha256": "dd02468f5112ba746d88e953f39b5334c2b65d83fdc5fc4af9b5da5d7d03bb63",
+   "sha256": "13c549565114c2f90e0aad1aaba9219ece768b1e40f6c1d680325d24c66a8e39",
    "bbox": [
     9,
     35,
     135,
-    111
+    113
    ],
    "joints": {
     "front_L": [
@@ -3518,10 +3518,10 @@
   },
   "archelon_attack_N_000": {
    "file": "archelon_attack_N_000.png",
-   "sha256": "6c99bab88b0394a295377cc91c8b80a34d972ca15264608d423dcd721455b845",
+   "sha256": "ffa272379542f7796ae9d21192b7d07374df2e86d3a86981d78552245fc99f3b",
    "bbox": [
     9,
-    27,
+    26,
     135,
     108
    ],
@@ -3571,11 +3571,11 @@
   },
   "archelon_attack_E_000": {
    "file": "archelon_attack_E_000.png",
-   "sha256": "a824d81090704ac8ffd37f7d97900f8beb03e5a43eec5ce1ec0072fbe48f310f",
+   "sha256": "03d4112334b6b6607e63784880006bb4f4f3cd52f925038f47e66803a99bdd1c",
    "bbox": [
     28,
     19,
-    123,
+    125,
     124
    ],
    "joints": {
@@ -3624,9 +3624,9 @@
   },
   "archelon_attack_W_000": {
    "file": "archelon_attack_W_000.png",
-   "sha256": "7de6527bc3005620c6437d7ee21644768e36bd3fdafcbb61c7a4e25276cf5320",
+   "sha256": "0fa02c27953dc79cd944f4b4840927dc61bf9e8937f70e4a99245a49793cc3f3",
    "bbox": [
-    21,
+    19,
     19,
     116,
     124
@@ -3677,12 +3677,12 @@
   },
   "archelon_attack_S_001": {
    "file": "archelon_attack_S_001.png",
-   "sha256": "71b2d5666f88ebe2da84a015e5ba611e39a1d76c13157f7f401b936520f72413",
+   "sha256": "f2527c11552c2b89fc95371855d430117915a4739d57252b3cf2170189f436b1",
    "bbox": [
     8,
     35,
     136,
-    109
+    111
    ],
    "joints": {
     "front_L": [
@@ -3730,10 +3730,10 @@
   },
   "archelon_attack_N_001": {
    "file": "archelon_attack_N_001.png",
-   "sha256": "d2055d983cb437014faee75a22eb212c1819dfc4618c6314a6a5c055c246c7f0",
+   "sha256": "f79b728179db6e7da3d5904b14f0177ae71e43adc858495e6c9119e322afa949",
    "bbox": [
     8,
-    28,
+    26,
     136,
     109
    ],
@@ -3783,11 +3783,11 @@
   },
   "archelon_attack_E_001": {
    "file": "archelon_attack_E_001.png",
-   "sha256": "674e98f264470ec2a9d363e900e24fa957ef3377b24fda4b381e34d2f1b86ac4",
+   "sha256": "07d56fa0c678e73e480426510c44361662584899802e6cb0f826e807c8419be0",
    "bbox": [
     27,
     19,
-    121,
+    124,
     124
    ],
    "joints": {
@@ -3836,9 +3836,9 @@
   },
   "archelon_attack_W_001": {
    "file": "archelon_attack_W_001.png",
-   "sha256": "33996e88573334c8b7665bfd4f73002b670cd5cc083ded453f3b76cf1c978524",
+   "sha256": "54c03147e272d1cbe88e4c5f5b1a80adeb6c6d9cc2c8477f5068b08e77c2ac65",
    "bbox": [
-    23,
+    20,
     19,
     117,
     124
@@ -3889,12 +3889,12 @@
   },
   "archelon_attack_S_002": {
    "file": "archelon_attack_S_002.png",
-   "sha256": "8bae51f11b3cf3a9220e5361ab9793b710e3d944697b15cbda829882ef7f562f",
+   "sha256": "40f5159136cf93fac87e1da833f82b64535d0afebce4d8642d2399c43aeeb836",
    "bbox": [
     9,
     35,
     135,
-    112
+    114
    ],
    "joints": {
     "front_L": [
@@ -3942,10 +3942,10 @@
   },
   "archelon_attack_N_002": {
    "file": "archelon_attack_N_002.png",
-   "sha256": "ced5c26fc559f9a4ea38224b31562f3aab08a26728280cc53e80fcc3b1e0fe4f",
+   "sha256": "9a31ed093ee801f4ea69e3226034ae39158bc0847e2667c52a8446ec7bcb419a",
    "bbox": [
     9,
-    28,
+    26,
     135,
     107
    ],
@@ -3995,11 +3995,11 @@
   },
   "archelon_attack_E_002": {
    "file": "archelon_attack_E_002.png",
-   "sha256": "7050cdbb044026c5c2c49e9926baf9dcf773d3ce3462f1170bbae568a735a710",
+   "sha256": "40283d23280d670ef89012af662f987c4a71a21c07d032dd5eb488a4bdc0e2e3",
    "bbox": [
     28,
     19,
-    123,
+    126,
     124
    ],
    "joints": {
@@ -4048,9 +4048,9 @@
   },
   "archelon_attack_W_002": {
    "file": "archelon_attack_W_002.png",
-   "sha256": "76c11d997d7ee3db26f74182274da3363f21074f7e88b31f366d60d0410ae770",
+   "sha256": "e0d64782170dbdb5b1d304276b9edc173d4d8af6057b02fa0643d14ba8da44f1",
    "bbox": [
-    21,
+    18,
     19,
     116,
     124
@@ -4101,12 +4101,12 @@
   },
   "archelon_attack_S_003": {
    "file": "archelon_attack_S_003.png",
-   "sha256": "38766020f23f6412491d8bd4d06e17f953d3bf0e86f4f9a8c785b8946383a462",
+   "sha256": "6ac72421f7c29a7a0badb5232ff60c904139d2198b885d26a4eafb2790672ee9",
    "bbox": [
     21,
     35,
     123,
-    119
+    121
    ],
    "joints": {
     "front_L": [
@@ -4154,10 +4154,10 @@
   },
   "archelon_attack_N_003": {
    "file": "archelon_attack_N_003.png",
-   "sha256": "c26d32d040c2fbcdf3349b94385628b6b0a80d95e1035e1cae625542e7e8bcb3",
+   "sha256": "cf15edc8026f2c404288f91b94684ba5e139ab1b14a5b2acc35643a699b8db77",
    "bbox": [
     21,
-    27,
+    26,
     123,
     106
    ],
@@ -4207,11 +4207,11 @@
   },
   "archelon_attack_E_003": {
    "file": "archelon_attack_E_003.png",
-   "sha256": "a44b6084e8a778986a1ef931f7bd14921baf674525bf9accc1b30690e9b0e7da",
+   "sha256": "b2efaa9dd8e27e47b22d44b4559ee239c7a9e571acc571c08a04437d1f40cf33",
    "bbox": [
     30,
     29,
-    127,
+    129,
     114
    ],
    "joints": {
@@ -4260,9 +4260,9 @@
   },
   "archelon_attack_W_003": {
    "file": "archelon_attack_W_003.png",
-   "sha256": "b7f2ef3d6dc395c33b57fca8c4aa9959cfd5e6ac04defde9dbcf5e4808ea3ffc",
+   "sha256": "3c4ee39e224fb477d750c2df295641fe42a517adc8990076c3fd63234db7ab4f",
    "bbox": [
-    17,
+    15,
     29,
     114,
     114
@@ -4313,12 +4313,12 @@
   },
   "archelon_attack_S_004": {
    "file": "archelon_attack_S_004.png",
-   "sha256": "24b812bd9c7a4cef4fb1ffd7bbec1796e7a37794e9de79b16f1f7273e8f6802a",
+   "sha256": "eafb2e3d864de60ebff070c35c370bdad78c6385f5642e67d97dbc4396918116",
    "bbox": [
     16,
     35,
     128,
-    117
+    119
    ],
    "joints": {
     "front_L": [
@@ -4419,11 +4419,11 @@
   },
   "archelon_attack_E_004": {
    "file": "archelon_attack_E_004.png",
-   "sha256": "54ddf3d13dda3ee1d635328bd0d5e0aa78afa26d5a38def9b25ac16e8bdabdf2",
+   "sha256": "fc322c887b7d1d253ccda3b5e873805fdb01cae780a9060d0b9525b00839fd6f",
    "bbox": [
     29,
     26,
-    126,
+    128,
     118
    ],
    "joints": {
@@ -4472,9 +4472,9 @@
   },
   "archelon_attack_W_004": {
    "file": "archelon_attack_W_004.png",
-   "sha256": "917679d8ae36c3d5cbc7954d15d012a4b68b4db5c768ead8c2f9d26498f450f3",
+   "sha256": "4813355c7c0075a88f91c9f54d163dafa5cdc01ab587f3d310684e2e47d25150",
    "bbox": [
-    18,
+    16,
     26,
     115,
     118
@@ -4525,12 +4525,12 @@
   },
   "archelon_attack_S_005": {
    "file": "archelon_attack_S_005.png",
-   "sha256": "a0e0389d7f7b005d0ffe4dfc8b908a10b7e490f25aae5cc60f2f448d89771c6e",
+   "sha256": "9c27ea78fcd427c327ebcc8c000f4e964566f7162a375f25cb9e7ce70338cfba",
    "bbox": [
     12,
     35,
     132,
-    114
+    116
    ],
    "joints": {
     "front_L": [
@@ -4578,10 +4578,10 @@
   },
   "archelon_attack_N_005": {
    "file": "archelon_attack_N_005.png",
-   "sha256": "f9e250d5fc41a75b7ce7fd6160089650153452fe80fa3985b534406360d1a3d0",
+   "sha256": "e901887a739fedc947abae83141d21697b7fd3469ebac05970e2b1f07c6907cd",
    "bbox": [
     12,
-    28,
+    27,
     132,
     107
    ],
@@ -4631,11 +4631,11 @@
   },
   "archelon_attack_E_005": {
    "file": "archelon_attack_E_005.png",
-   "sha256": "d15a3bfcfc304c257524cb3561f368660561a329852eaaa35ef05c0cc4e992cc",
+   "sha256": "9ff23c9e545eca41fa259b964f59e66b63b690a04ca8e502b83ae39400a3488d",
    "bbox": [
     29,
     22,
-    124,
+    127,
     121
    ],
    "joints": {
@@ -4684,9 +4684,9 @@
   },
   "archelon_attack_W_005": {
    "file": "archelon_attack_W_005.png",
-   "sha256": "8c4b66984549b4ee4f7e9d5a12d35323dd19f0f3e48e9e185151bb87770c236e",
+   "sha256": "c048491c0610d5c90f6ec8d498029833888a86659b34dac2b1347f0a89d77d5d",
    "bbox": [
-    20,
+    17,
     22,
     115,
     121
@@ -4737,12 +4737,12 @@
   },
   "archelon_hurt_S_000": {
    "file": "archelon_hurt_S_000.png",
-   "sha256": "6cc70ff3a34b4628bd4c121d54f60ac0cb49e8345c158440258979e5a5fb046e",
+   "sha256": "745f542a38e4f26bc40db9219a88ab13478b8a0e0262cbf3af4cbad9b8699f4f",
    "bbox": [
     18,
     35,
     126,
-    109
+    111
    ],
    "joints": {
     "front_L": [
@@ -4790,10 +4790,10 @@
   },
   "archelon_hurt_N_000": {
    "file": "archelon_hurt_N_000.png",
-   "sha256": "54e2c39c776dc2d85e97a481dd142b88eafe0d935dd5a6410548188f90db49b5",
+   "sha256": "d347278df0ca95dbc351e68a355c194566505e643cb49557c9bbb97657464c14",
    "bbox": [
     18,
-    27,
+    26,
     126,
     110
    ],
@@ -4843,11 +4843,11 @@
   },
   "archelon_hurt_E_000": {
    "file": "archelon_hurt_E_000.png",
-   "sha256": "b960d3a32f17768681e6fd3fbd88bab6e8fd83a1a369e518995ad1d84de893b1",
+   "sha256": "2262e84221843d897c660e1cd1cbba3d0601a607ccd63abefa2fdabe383a18ee",
    "bbox": [
     27,
     27,
-    121,
+    124,
     117
    ],
    "joints": {
@@ -4896,9 +4896,9 @@
   },
   "archelon_hurt_W_000": {
    "file": "archelon_hurt_W_000.png",
-   "sha256": "3ae2e5c7934fc4401b68cade77283232517ac04dd884e73b9781585f1b0df246",
+   "sha256": "9097baae96298f4b7794a2d8ef68d735b697532826784486f810dc41b46f36c1",
    "bbox": [
-    23,
+    20,
     27,
     117,
     117
@@ -4949,12 +4949,12 @@
   },
   "archelon_hurt_S_001": {
    "file": "archelon_hurt_S_001.png",
-   "sha256": "d47d59f028cef7e034dbedd54a596153609e8dfc6a4df42ef9068b667ac5367f",
+   "sha256": "0ef085a1a7b1c086295c7ef15ad9a2c4c5665dd2b9e74bcb26e05f8705d96a0e",
    "bbox": [
     14,
     35,
     130,
-    111
+    114
    ],
    "joints": {
     "front_L": [
@@ -5002,10 +5002,10 @@
   },
   "archelon_hurt_N_001": {
    "file": "archelon_hurt_N_001.png",
-   "sha256": "3aa5f7547e9e439712db17eefeee5a9a1f41fb697d1582cb32c9d32a4c7cbf71",
+   "sha256": "c73d9c610641a2c569fcb35f7d4877423cb8dc2306f75f9fdc2e1c8df6489448",
    "bbox": [
     14,
-    28,
+    26,
     130,
     108
    ],
@@ -5055,11 +5055,11 @@
   },
   "archelon_hurt_E_001": {
    "file": "archelon_hurt_E_001.png",
-   "sha256": "522d65ecfd029d032b041818b0630bb98df5b399380df2c7769d203b443a164a",
+   "sha256": "905bd1527a8aa9ac0d04689aef246b69245883479f831c6a0821b09271459a68",
    "bbox": [
     28,
     24,
-    123,
+    125,
     120
    ],
    "joints": {
@@ -5108,9 +5108,9 @@
   },
   "archelon_hurt_W_001": {
    "file": "archelon_hurt_W_001.png",
-   "sha256": "42e76a038242720407056fb13b8f491fac95f6a35a7923723cfb30c22b98d925",
+   "sha256": "5a3d2ecd85b27641e39749513382e87c570d1f2e52339eb677a652bd0cd69741",
    "bbox": [
-    21,
+    19,
     24,
     116,
     120
@@ -5161,39 +5161,39 @@
   },
   "archelon_death_S_000": {
    "file": "archelon_death_S_000.png",
-   "sha256": "bf7309c5b643c28615c4bf8a61d4d793529d4500d76c9e8cdf84162a576be110",
+   "sha256": "883390a21f9622410a12ea017359bd835d07496e562ebffbeb8d2cc10b7fc7f7",
    "bbox": [
     11,
     35,
     133,
-    113
+    116
    ]
   },
   "archelon_death_N_000": {
    "file": "archelon_death_N_000.png",
-   "sha256": "4bfb88dcab1406fcd0a82cbd098454b218004ab940bb7a62219c51f5ab28de85",
+   "sha256": "7b89fb989f2456d435ec82284a9c50a81677b66274ed2779060873306e0536ff",
    "bbox": [
     11,
-    28,
+    27,
     133,
     107
    ]
   },
   "archelon_death_E_000": {
    "file": "archelon_death_E_000.png",
-   "sha256": "b736cae49827d724c94136dc11c4d465a990dab397a3cf6edce987026492f7eb",
+   "sha256": "3f059ee0ea7ee130b78b87b9093c69a2c7ece2dc4e11b35c7ec8ddefe3585dad",
    "bbox": [
     28,
     22,
-    124,
+    126,
     122
    ]
   },
   "archelon_death_W_000": {
    "file": "archelon_death_W_000.png",
-   "sha256": "086244d449a58c2a033fd475b43a441b2ddb8a93a4755ec650d8a9d5c256fd94",
+   "sha256": "cf6648f1cb45d0a6541e44d98696785717adbd08718bcdbf9c32f8897a8f3320",
    "bbox": [
-    20,
+    18,
     22,
     116,
     122
@@ -5201,39 +5201,39 @@
   },
   "archelon_death_S_001": {
    "file": "archelon_death_S_001.png",
-   "sha256": "2e1076ae0b9024ab52868e500acaf308d897f05f68ef47ae70395d6dd91504b7",
+   "sha256": "65540914fa58719eee9ab0c734b6e434877fed9b3efe6930d48156b15470c49c",
    "bbox": [
     13,
     34,
     130,
-    114
+    116
    ]
   },
   "archelon_death_N_001": {
    "file": "archelon_death_N_001.png",
-   "sha256": "c01f1e54d7f68dbf64ae5a6b6a57c5173ca340cd53ed7c429c9814154bbd765b",
+   "sha256": "7b6be9464338d029c912188a0f56e45a713bf14705ad714bfe20af7543574b7a",
    "bbox": [
     14,
-    28,
+    27,
     131,
     109
    ]
   },
   "archelon_death_E_001": {
    "file": "archelon_death_E_001.png",
-   "sha256": "0b6abed343b366a1326fbbb1ca2cab61ca4aa5f96632e3993dac0e1e976fd87d",
+   "sha256": "85974de818152a7296e19065449cd6fb7b52d008c2c9bf883c7a5a7da1050c02",
    "bbox": [
     28,
     18,
-    124,
+    126,
     126
    ]
   },
   "archelon_death_W_001": {
    "file": "archelon_death_W_001.png",
-   "sha256": "0f6fe9fe4b23b98739b95567e499322399b9cd0aa6b29c994fde0159b98eb101",
+   "sha256": "ceaceff851e5782149b0d32c77f20ce23f0834dc8d39a56dd1ce8cb52537c9ab",
    "bbox": [
-    20,
+    18,
     30,
     116,
     114
@@ -5241,39 +5241,39 @@
   },
   "archelon_death_S_002": {
    "file": "archelon_death_S_002.png",
-   "sha256": "1d5294ee2b56f3434761eba3ff5d95a6566fcded57647f230f5cef3da9409233",
+   "sha256": "e2127c892a4d69e5a58de6ca6a44c2a78ed4724289a1cae9b2bd6d742ddf75c6",
    "bbox": [
     42,
     29,
     101,
-    114
+    116
    ]
   },
   "archelon_death_N_002": {
    "file": "archelon_death_N_002.png",
-   "sha256": "756923e0a7ed09cf078cc33aeb2d6ad0480003c5a18fc6a6982241ac171e58e7",
+   "sha256": "ce3113cb0ed95578e366179451afc1d79109f4c024c18c537839e231f0d45f9f",
    "bbox": [
     43,
-    29,
+    27,
     102,
     115
    ]
   },
   "archelon_death_E_002": {
    "file": "archelon_death_E_002.png",
-   "sha256": "6b4e1c347ea340d6f6434120cfdc2459d287c68377dd83974b2dd70ef4335301",
+   "sha256": "2cef8356dae6b65c71bb3676b271e58dc5c52ed57dcb0aabe6e080cfc863a1c1",
    "bbox": [
     28,
     29,
-    124,
+    126,
     116
    ]
   },
   "archelon_death_W_002": {
    "file": "archelon_death_W_002.png",
-   "sha256": "f3fedeb7496011708b6412bea980f45feb440f67b6c04b2f155bda7159b9eef8",
+   "sha256": "2fb3b70a031c41883e6e97a81bc8793693336002b7fa6077c031c08a87389544",
    "bbox": [
-    20,
+    18,
     59,
     116,
     77
@@ -5281,39 +5281,39 @@
   },
   "archelon_death_S_003": {
    "file": "archelon_death_S_003.png",
-   "sha256": "b574118a7df3ea6ba3563034dc5b1d66e32dd9170d6404bc015e50a778b27892",
+   "sha256": "d5c6a4eaf21fbe4a0710d1b559b3219fd01e53b4a2fa5a039dc78b389ad6086b",
    "bbox": [
     42,
     29,
     101,
-    115
+    117
    ]
   },
   "archelon_death_N_003": {
    "file": "archelon_death_N_003.png",
-   "sha256": "e5320cc0271fbb45626b3eb652bd6bb7aee80b5cf17f7713e0b692d92cb08062",
+   "sha256": "7a7fdb01505aa795c72bc4250a49d24901a88effb0e2a3e65cb38152cfd57819",
    "bbox": [
     43,
-    30,
+    28,
     102,
     115
    ]
   },
   "archelon_death_E_003": {
    "file": "archelon_death_E_003.png",
-   "sha256": "e32d1523e7b256b9a3494963b51ffae2ad46436635e68f58e0693e8c54babfc0",
+   "sha256": "aa0e2467d446771383daa93414380aea15d180d0317c4dbdafeef649af4c3883",
    "bbox": [
     28,
     67,
-    124,
+    126,
     85
    ]
   },
   "archelon_death_W_003": {
    "file": "archelon_death_W_003.png",
-   "sha256": "b2778c113324cf09dbe94bd8807dcd6d7445584a5145343059309f94bdbdf6ce",
+   "sha256": "ab35f73dc73645828291fc365c202dc22fdcd9f9735a2d522c2e1335870eb41e",
    "bbox": [
-    20,
+    18,
     28,
     116,
     115
@@ -5321,39 +5321,39 @@
   },
   "archelon_death_S_004": {
    "file": "archelon_death_S_004.png",
-   "sha256": "0446c29715b71e821ce63009a1aa86574c3a8cccd5eb6c1cb3bf59d07800f03c",
+   "sha256": "0a65ae8a5e14c6788d0198789edb718e01ba9a6e2a7971fa6c1cae4d30e7f9a1",
    "bbox": [
     13,
     35,
     130,
-    116
+    117
    ]
   },
   "archelon_death_N_004": {
    "file": "archelon_death_N_004.png",
-   "sha256": "c591e17d5055715276f46c9d8f386221883bb114c6c8ddf91cb8cdcc283d2294",
+   "sha256": "eb30f63364a61d92c2acf91fe4ab981c5ab9dc1fd8720cdb9ca8f60767374c1a",
    "bbox": [
     14,
-    30,
+    28,
     131,
     110
    ]
   },
   "archelon_death_E_004": {
    "file": "archelon_death_E_004.png",
-   "sha256": "3b2779cf5fadab3eebbc55074f6673892afb1bd153e365afa15a25d82be60b5f",
+   "sha256": "74ddd0420ccfe786c0935dafdf181e3b3fb02bf09e2fc12b0a05a17d07323377",
    "bbox": [
     28,
     30,
-    124,
+    126,
     114
    ]
   },
   "archelon_death_W_004": {
    "file": "archelon_death_W_004.png",
-   "sha256": "78ade2eb871bedc6d95e92d0a908b09472330a9fbc986efbc8500086c5e28f90",
+   "sha256": "3e3443d66832b025ccdc9f11d4663225f86f5eff5cca62e442172e43cac37a03",
    "bbox": [
-    20,
+    18,
     18,
     116,
     126
@@ -5361,39 +5361,39 @@
   },
   "archelon_death_S_005": {
    "file": "archelon_death_S_005.png",
-   "sha256": "ba72e6a762c288b07286139688cd3fc2a593ddcb3be25710a0ba188bb5541843",
+   "sha256": "b9b4e3aed4a67def9f2d7acf05c3af6c01c1e948dbf41db708eb8460a64c4e07",
    "bbox": [
     11,
     37,
     133,
-    116
+    117
    ]
   },
   "archelon_death_N_005": {
    "file": "archelon_death_N_005.png",
-   "sha256": "8175edd5e33b8dede452f932605f3a608e30156c71fc0a3701649c5568e91af2",
+   "sha256": "20657594df07006eff130af1773486b2e53e13011bd7e258d8bd1a5fa88a382a",
    "bbox": [
     11,
-    31,
+    28,
     133,
     109
    ]
   },
   "archelon_death_E_005": {
    "file": "archelon_death_E_005.png",
-   "sha256": "7f16827bf4a36d42b0e113acdd82dd210afdcd7d9c1348826359639f176a65ce",
+   "sha256": "3ccb16ccff907b0e891f49db3f9982ad9bdbda9e0a1562c1c5ada304b0dc9a1e",
    "bbox": [
     28,
     22,
-    124,
+    126,
     122
    ]
   },
   "archelon_death_W_005": {
    "file": "archelon_death_W_005.png",
-   "sha256": "4690c2dd699caa6ffbc053df459309214a9375c7aad401f89859923bf66897ef",
+   "sha256": "560b6926b62536aa328056de5ad0b915293f6300bef6cc750507ecbd11948514",
    "bbox": [
-    20,
+    18,
     22,
     116,
     123
