@@ -125,6 +125,11 @@
         else { this.tone(900, t, .03, .06, 'square', 300, this.effects); this.tone(700, t + .04, .03, .05, 'square', 250, this.effects); this.tone(500, t + .08, .04, .04, 'square', 200, this.effects); }
         return;
       }
+      if (event === 'amber_near') { // FEATURES.amberFair: a soft, high two-note chime, quieter than any pickup
+        const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
+        const t = c.currentTime + .01; this.tone(1760, t, .18, .025, 'sine', 1760, this.effects); this.tone(2349, t + .12, .26, .02, 'sine', 2349, this.effects);
+        return;
+      }
       if (event === 'bite_hit') { if (this.settings.master * this.settings.sfx > 0) this.impact(detail.strong); return; }
       if (['roar', 'boss_enrage'].includes(event)) {
         const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
