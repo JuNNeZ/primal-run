@@ -15619,11 +15619,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "8d1466704029f9e5d078b416002248f1dfc0aa426c3bf4b42d4e82b29911ff29",
+  "export_sha256": "e98e5941d139937a11e927ea8121bea6f54526b0873545188c0fb36963e2ef5f",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_E_001.png",
@@ -15645,11 +15671,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "7a8f40c02aff40dc983ebda6235a118ff996d5720117f34c6f6b731d89f0413a",
+  "export_sha256": "85c32ef486cac14d07e6bad1e7b4e9c69a53808eb683290ac10eb276948fb76c",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_E_002.png",
@@ -15671,11 +15723,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "31676dbde3d5692388a65aaa84f9b179dbc051c64e3cf8266d44fd3425513e2e",
+  "export_sha256": "706817ead97adcfca3e1dcc32652ec3756e39e50cf8e9aa34921afd9ddc67be3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_E_003.png",
@@ -15697,11 +15775,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "03d0d86a1ea08f6e4a4a089fb752329e62bf44b005f89546340690029b9f9c58",
+  "export_sha256": "a17ff3e865c8af1fafab2915c57a1b027491a28c3282305c95cfead3886bcd6f",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_E_004.png",
@@ -15723,11 +15827,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "a6294e095d241a75db545aeed409ddf4f184af7bbc9f5969f402ccec829a2229",
+  "export_sha256": "9b7790dc1c8f7872668790fc2d727603c8f85c8a90a0403d21a0c089d6ec95c1",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_E_005.png",
@@ -15749,11 +15879,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "359f449f845483cca9ad5f9016c28c921e0df632cb660c539a6698127a9f493a",
+  "export_sha256": "fc068e559f4838164429fe5e79f7ca08c91f55e9fb68ad3722bc9ff51a690365",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_000.png",
@@ -15775,11 +15931,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "8798618f5363a336b33c23a20fd909edc96a60b3449e9e77b5c6b53a8658dd6e",
+  "export_sha256": "da57229797461981d69c50140d538b956f0233c91b33563f1780efd02519a14f",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_001.png",
@@ -15801,11 +15983,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "b7897e184bf79b26c28bcf2ca2d5037e163aa0088a3dc67a70b0e5186e94b019",
+  "export_sha256": "6a2a9971afbea53571a56f7f4b7bacd9c47af3c390a3e20b5e15877ce05d53b3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_002.png",
@@ -15827,11 +16035,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "831176fbc312043dbf823e4d678cd738aa57d59da00bc2a714ceec1f56374670",
+  "export_sha256": "091f4d3c91e48fd364763266cefd0081a7f04b3be9fd2b68fe7f0d3f13170966",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_003.png",
@@ -15853,11 +16087,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "5d4022ea583270793ff354656e38e21b445f002293b92585424c8d389fb4c8dc",
+  "export_sha256": "afb4dfe899dc121d426386c18484ad2aabb69a3ca24cb607fd8f8cd4486dc953",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_004.png",
@@ -15879,11 +16139,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "96af051653094f369962e27b0935680d3b5fd381d1791ccb62ca60f7961d9060",
+  "export_sha256": "03dc4565d2401162dfc6cc65067b8f643c3bdd39dadc82b633127d7b7ccaa0d8",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_005.png",
@@ -15905,11 +16191,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "f971c6d116508d555c8920f67a6eb24c715e8472a5bdf49f61b4fe94f46d9af6",
+  "export_sha256": "36c908898b9d1d7f8399898f6b94a6e71168abd38a778053145b30bcad6a6f78",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_000.png",
@@ -15931,11 +16243,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "b65c7bb693333c37253ece9ea3556a291e6c481c353036be589b1689799361d1",
+  "export_sha256": "339687d7e3e919ca5348b12fd0e51f3fb1c94fe4a1a420750d1502dfa4d6d31e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_001.png",
@@ -15957,11 +16295,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "6c3f854351c64b8ea387124c1acab532cf7af3dae918a8e68fcbf501ed4f2b3d",
+  "export_sha256": "5cb2425e801daa30e650d997c44d14ba65490238747748a3f6a4a51e7b683c3e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_002.png",
@@ -15983,11 +16347,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "751acdc90d4b7d5189ba8f47b02eebb2357dfd4d68c7293114b331e5baa92ca4",
+  "export_sha256": "0a73334b1036c4c4f1366908144230f4f6742c23fe5bc56aefc481fb16d21d60",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_003.png",
@@ -16009,11 +16399,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "44561f9c51124c1ebf62e315a84d3abc1bd7af5fbbc019cca47f798c9dd611cb",
+  "export_sha256": "f2929ae7ae1834d77f227c5cfc4c2748ee2566c5d44536c82264c0f0f11ac093",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_004.png",
@@ -16035,11 +16451,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "cf1a2ede4df913b11195963dd211713d2500c6f231aebd6f82b25fa4dd4d49cb",
+  "export_sha256": "90e160dca261852feb2eb113a01be14123e89d1ae874a9ab938e0ae8a60c3f42",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_005.png",
@@ -16061,11 +16503,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "b2bbca50e474eb0ba87d92cb9d53cc948247a9e718bf7183d4382b6635186db0",
+  "export_sha256": "5fff94909a1ae43c980eb4d786440cb5fe732ee802921a65161cd84414b2400f",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_000.png",
@@ -16087,11 +16555,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "77ff7e0ff3c7f0ae6922040d615d9017f54ee5f165baebd0b831237a6c9dbc19",
+  "export_sha256": "c988a14749b8dc4080276abeaea7a39e6a46ead0f56502a73b3c4a7a1547be82",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_001.png",
@@ -16113,11 +16607,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "e4a7869763dc918e6846d9fc7c7fa52c7e1c494067ff7db384c551b80bfff19f",
+  "export_sha256": "37679cb0feda3a91e809f9c7522c48011e9530f8c857668d1b2143fa50061bee",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_002.png",
@@ -16139,11 +16659,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "3a9df8dbfc003507216eb9117012aeeb44f1f06b1b2494140de8b5c733f47cc3",
+  "export_sha256": "0bcdeadc69bc06bb9cd68062b235ddc11d40b30fc9ed0a320fac32468ee08f0c",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_003.png",
@@ -16165,11 +16711,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "090c6dfa6dadbed4d2bd0862c7b74dd71e89a74cb944c6fd62b44d09218e1c5f",
+  "export_sha256": "2100f7d256089ee9af61b4ce93aad572bb08a82dd2b3c72f84c4ba634b51c3a5",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_004.png",
@@ -16191,11 +16763,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "363f38993df6476262dc27125b012f56ca38b6e7b2b74d17266856a76bc4fffa",
+  "export_sha256": "7b8d41ce9577e7514583244ffc9b63a1105e873e7a724f4e2342782fbc903433",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_005.png",
@@ -16217,11 +16815,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "58bf1fe55e0e60cdc16bf1ab1ee50daa5ff705b1cac7604facd55f2b927bed5a",
+  "export_sha256": "44f553e72892670374bd56c00ef90d073f825477819b91942888b3919a171ec8",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_000.png",
@@ -16243,11 +16867,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "293aa0523440e231f8b4622e14d80f46fe2db9a536168f40fdc04d8762c28d9a",
+  "export_sha256": "eda27109854db6a703e122a8463864e45a1fe0e69d2a4d4ce2b1dcd6943a69e7",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_001.png",
@@ -16269,11 +16919,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "fe489b4532ffc5f4452fe4a53916919c2d8c9456e2cb9aacb846f189097ba16f",
+  "export_sha256": "23b5c751a84a7aeae5c4a951dd65bfd456dfa4c79666f9f1fb731cc99738fe5a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_002.png",
@@ -16295,11 +16971,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "6e2403a29c11220717af827945df2329c6cb0c269fbc2686e2ee3502818d6db6",
+  "export_sha256": "5ff1174137d13c88c17e65c44f65622176eee210333220d7dac968dfa187aaed",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_003.png",
@@ -16321,11 +17023,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "e145a6a53a01f95f135ba77f2690824a96edb0cc8d9e88d28479acec9e29316f",
+  "export_sha256": "c86aa4ea3f423585265f0e2fca5e837bcd5e641338ca50f9a28ed87435c0e8ac",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_004.png",
@@ -16347,11 +17075,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "3518e6b0694425450a74d1ccd46964491f0374b4c673d4027354339cc39b982b",
+  "export_sha256": "b0a3d5f38ec65f0140a5633fd6f7939c8948b1ac8788adc2f83e7506a4d41373",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_005.png",
@@ -16373,11 +17127,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "a4ed725874bdc93401ca7f4de55b4171595c31170a896502cc0425dcff75c085",
+  "export_sha256": "56f8dad67b7f9ed0b346979b5072cbd95ee00e021c73ee694424b447ff925bcb",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_000.png",
@@ -16399,11 +17179,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "83a257a52f4a818b1fc17e4174344e3572a7d31e2037cbddb48a4e6fdc88b005",
+  "export_sha256": "67ba0f4885e03ade22e047250780c20171505f4139214ee10d69650cb690203e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_001.png",
@@ -16425,11 +17231,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "1c81ef4c02bf846ed234bcd6725b3cf761792b05cd8d637cdb7d5ecf5b2c5cdd",
+  "export_sha256": "773673ddcdf45ccde5472bc5bee570a14782607f3eca3c9eeac4b19b57edd706",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_002.png",
@@ -16451,11 +17283,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "d54aa63845a4d1d576ff47a3cbaf330d51f91fd8c6099dc63e8b68fa20834ef8",
+  "export_sha256": "1f7c7fe1e83ae80ee8ecaae7188ac7879189194ad06918402362dfb8d2d82afd",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_003.png",
@@ -16477,11 +17335,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "c86ea54cda54dbfd7cde6ec37152c4c5768923f4073ad0c63ce3b6da176f189a",
+  "export_sha256": "f3d35db4af6989939f91bddb7d35a15a5c6f63eb52666aace84c158b69638180",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_004.png",
@@ -16503,11 +17387,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "daa7a6898bb8496f6f1f32a3bf19cba1d32f06c7434411f848aa88082baa31c3",
+  "export_sha256": "743404b09eff36fae86bbdae8888103588afaee5a6cac272cfceb1a13b528758",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_005.png",
@@ -16529,11 +17439,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "0388e5c8e03c78718f30227272ee1e2e61ab76371c65a23f48ad1af041f12a2e",
+  "export_sha256": "b08a30f2a0a0a047ab89545c0cffe78e1377aa89bd77d87c5ac6919f086ad0d5",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_000.png",
@@ -16555,11 +17491,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "464608776b29027409776de90805faf750bf52969db7274466dcafc4d16b7d48",
+  "export_sha256": "59d7392966a143fa48860befc2538e18e0620ae24b052791465fdd648669ff09",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_001.png",
@@ -16581,11 +17543,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "f930cef8b8df0eaa4499fb40e235ad677010301af26caa192347327f7b4eb585",
+  "export_sha256": "a3f42c9f51c1977c10246787eac153d68704f732000d557a81452fb8fea0acc6",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_002.png",
@@ -16607,11 +17595,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "6f92cab2ef6c3b2840e432ec287299b1c0b8e77a4c1d70ff43bb300681605444",
+  "export_sha256": "46c64d248f832a37257ebf7429797b1b259d889329fcd20ec5549e1f95316b62",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_003.png",
@@ -16633,11 +17647,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "4986f31d85fdc025e4d868b2d5823f27338ef6d30e7b6b4da9b1df0eda7ee59d",
+  "export_sha256": "7894f13cd0544b8ac74bd8656f11125a1735c03148b5760595963ea996282825",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_004.png",
@@ -16659,11 +17699,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "b8b88942d4aa6499eea850514ab8d2306809a4e0e31411e083596fc396231c63",
+  "export_sha256": "ae1d549c15ffb02a7d261a439fefb5e9e7d8d109c642a43f44332aab4d1378fd",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_005.png",
@@ -16685,11 +17751,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "56ff7f8dfaf0d0faf47fe8cb7f0d4141e06dd2c7c04a4ec3e0ae18a1e5415e2d",
+  "export_sha256": "6dce32afb4b5f0c5acb82b5b3c05077e9d1a1577194d273e38e2431edcb78d23",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_000.png",
@@ -16711,11 +17803,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "d18f063c9fa4d2d300394a6bba444cfc544880f8dd6448ed4e38b7539af13e57",
+  "export_sha256": "6d73a9382db6461c41014a384762a26a8d7e355a4d06b95fd5561b1924132193",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_001.png",
@@ -16737,11 +17855,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "23b7c83af95eaf1d91c9d9caa95ca40d1c4028a5600892b390f8bf0b5e65c440",
+  "export_sha256": "cf26e6d2a35b6bca8f11d804a19d147d46951f62ca35a4f73c90dc2b2c823e29",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_002.png",
@@ -16763,11 +17907,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "02d43e0096ecd816fb1d8d3a328da04181238ac1cd436bc27959f69c869d253d",
+  "export_sha256": "829eab27334ae823e64c8cb912edebc63b69446ab1ef02a7ea615739aed22688",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_003.png",
@@ -16789,11 +17959,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "e0d6b010d720f158735f0db3f4541d616e259465b758e720049af6614573981e",
+  "export_sha256": "f69eb61095b0422e29df7314ef8b73b307e946964b21d582878cb06cc9c79a10",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_004.png",
@@ -16815,11 +18011,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "42d823358d3c0de41c4adad264fbc96dda1ad26c03a51849689e47a8c283d934",
+  "export_sha256": "41890aef8db8f1e66d57c553ee6aacd19012d9747e1cf9d11d699aa36a0201d4",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_005.png",
@@ -16841,11 +18063,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "4f1b11efc7a044201b2092531114077abcac627458c30343cdfa78e80d899105",
+  "export_sha256": "727ec437727c256040bef687b039680fb5985037e0263b37aa982ec80514f9e5",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_E_000.png",
@@ -16867,11 +18115,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "470603fe0db4e2fb4ef731f7f3c3bb559a46007b64bba19349193f19d177137e",
+  "export_sha256": "858f394898232e1a1129cee20b0923f3670bc99da4dd58d2a1eb403ad7d29c79",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_E_001.png",
@@ -16893,11 +18167,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "562859b37730cd2d2c32968cb62207dd9c47b85f06386946f641203919e793c4",
+  "export_sha256": "31ddd2397290257d41e021dd14cdca171e7f37c662ed9119a7ff2b4f1964da0a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_N_000.png",
@@ -16919,11 +18219,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "cae83e86f19a67512bf45bdbde46cf9c1adbe6681ff2958b0e333b212a50764b",
+  "export_sha256": "fd2bea1a03c6e76c941ad31abf62e581015381d40cc07de3aca63353fb8369d5",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_N_001.png",
@@ -16945,11 +18271,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "c5a1788e3293f1112f8639b1eb8b0b4476965e853c3c9f9bb94f3c8f58889fe4",
+  "export_sha256": "49e0ce667030862ce4f47c144bc2420735ed848000b0f8e226aebc41e8d94a78",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_S_000.png",
@@ -16971,11 +18323,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "531d09c3484097ebd0131ab7610861b440a8a52eddb6377e7ff4e10c312e004f",
+  "export_sha256": "72b60657d805a2ef61fb448adda65993c5179cf3d62a4dd38e937ac125743fc0",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_S_001.png",
@@ -16997,11 +18375,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "6d84b000d05eafc131777dc119bc5e6854f9cbab64d49d072f3635982ff78e5a",
+  "export_sha256": "1cdc97f6a905b0b176a34cf2f0d5caa36a6e2caa034b1df35b153b4909b3175a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_W_000.png",
@@ -17023,11 +18427,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "c9ffaf676b38ab982cf01b4ea09d06e6a4e97f6e5ec71c1158cd4cbb138a924a",
+  "export_sha256": "4f041487002d84e1bf260eb144ef943332d4c550a92eb9dc825945a8549d84b8",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_W_001.png",
@@ -17049,11 +18479,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "9328653a1e8c381b20134cbaacf66fca7514d372c85b6b5d5510ba2153e20328",
+  "export_sha256": "01a0d331dd1cded21439ec81a8cd73f935e7232bbd178240bd626430856fb45b",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_E_000.png",
@@ -17075,11 +18531,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "95a35e5e2b78612519fb6be13fa7256a07eb61f16375b335a2b2a6e838b42226",
+  "export_sha256": "1621835f599738bca46dbe9ba0ec235e7255af41b808f6713f05f90dbcf9bbcd",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_E_001.png",
@@ -17101,11 +18583,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "0fc2103a4a8baebd9586eda9ae6d4a683d8bb5891600acd27bcc6665e28604b7",
+  "export_sha256": "479aa0d51c4bb9bf5b0d9f1e9aabee1df5081a15d069f12101c0a0ebf3c6182c",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_E_002.png",
@@ -17127,11 +18635,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "60a6f590fe1c1633f5c4f4edb9de2c5f5899ec61f13c9b1b1d683ba81f7e20e4",
+  "export_sha256": "9b0f02e15517d77c126cde5449d43f92fdea5cbf41baee50b39df28ccc2e0fff",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_E_003.png",
@@ -17153,11 +18687,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "2de2262f9f71ddcf8ac9f02a127ca5209703683643bca730fcd86ae38ab53b23",
+  "export_sha256": "49fe9306ee20ccb0586a4f82432d0eee624bf44786b8dfe246c8b16c8d533ca4",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_N_000.png",
@@ -17179,11 +18739,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "6a7fb4bff6cd5b795c9f0021ee0eee149509831a4af34d7cc1bed606a0296f8c",
+  "export_sha256": "17b9d53f39e405d12262fb55e88707005d128c9a14c494f8597f571d04637fac",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_N_001.png",
@@ -17205,11 +18791,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "98f1bf6c5ccca32c894467bda363bae8cede90e5e5c1b69fc07522ba6ca009cf",
+  "export_sha256": "46f8550a4a0a24d42f2c0c2dd2e2bea19181972abc72e545bd872afa27c6e78c",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_N_002.png",
@@ -17231,11 +18843,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "1d4c12d2b8a71981f799be363cea6e424f7b710bdf34842c22bff943a3ef63ca",
+  "export_sha256": "1726cb6d7745f1d0cc71f260f1992a21ab6bae7f152452e8e72c72bd696a0815",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_N_003.png",
@@ -17257,11 +18895,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "0f6a72fbd4a8e19159796b6219e8f91fc34a96cfd52590870b44af7e3e749209",
+  "export_sha256": "3e74094fe6a0d5bf572f2b1eb1da0d1936e1fac17937292618917f760b314e4d",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_S_000.png",
@@ -17283,11 +18947,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "d9568c88b91eaafd6e04cdc98ff71bf61217967473949b64ef0ae71547f44cf7",
+  "export_sha256": "72261893a29ee53f5dbd31a1b2917bf1ee50dbe0dd416257c1f2a3b90792afd6",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_S_001.png",
@@ -17309,11 +18999,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "4dd1bf13d05ec09a6bb5d4adf6665ca2f0d753981d063d50b6c1943a1de00a4d",
+  "export_sha256": "5b9bbb3f801cc6630b479282f838ff2a0ac6532a9f9cc7944676a8a9deb1f586",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_S_002.png",
@@ -17335,11 +19051,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "e0629ab306622d3eed5adcee93e9fff38680c0ed763f4d824c2c8a6a1a77b0dc",
+  "export_sha256": "532f18b6181f86e63c37a4814b48dd445575f4fc9bf4364a5d50ca3ed48be84f",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_S_003.png",
@@ -17361,11 +19103,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "d0db46e79f907c9463c6b09d4cef36b21f214b85dd2e3ad662a0919cd105d74e",
+  "export_sha256": "ad3828b54a634e5a1fc07de6a09564dc6288a925513b2b0500952742082c23ad",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_W_000.png",
@@ -17387,11 +19155,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "27d53015498981a2b3e9a76ebad8c029ed5748b7f5ccd72a75ef9e18bcfb1b54",
+  "export_sha256": "5fe1e6001960f922f3131448e467b280da55ab57b1e85596bc7336e3db17c37f",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_W_001.png",
@@ -17413,11 +19207,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "aca6719b344b46935f765a34a95012b88b547c74083e1ec1659089b94e4a8257",
+  "export_sha256": "0097c54169f9230d9111cf1381d1fa1a663351541d5ddeaadb01ed5615f11a0a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_W_002.png",
@@ -17439,11 +19259,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "b1a5fd622bee5561ca6f703953bb9455fbb333b37a5a5e0f7bb1b0dbbfb2ba81",
+  "export_sha256": "a8d7666a91c72334ae845c7443a7cc26e347d22b3e14f9ff42d042c4c7ef52e5",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_W_003.png",
@@ -17465,11 +19311,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "a0d8ce6704b0bfbb054fa9c019733f8a37aae3734f88084f08e6379b09e7452e",
+  "export_sha256": "0fe99d7e88c1366a4d24b2de0deb181940b81e25e7e3a129d1d3d0330bb64ac8",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_000.png",
@@ -17491,11 +19363,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "452fb41069e3a979f5ac108133798b18f539d29462fbfe17438d4f4e3d31b134",
+  "export_sha256": "ea5d279fc8bfb138036e0f84c194d777bac8592e74537c145dfa0ea68235c0c3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_001.png",
@@ -17517,11 +19415,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "7003a2791384c618422b898e9561d01aa29f9487719ae4f3933c4aeb40b71274",
+  "export_sha256": "f0db741c37f06bfa42680444bf15ae8ab41a06230f433ea6fa45fda713c9ef07",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_002.png",
@@ -17543,11 +19467,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "305ba40d6fe7ff64cb3f7262d2c1e67f3224579b9903d6d4b0e6a01d05ab2e79",
+  "export_sha256": "1b1b8ee6eac1f4dd9bf8dc2e5ae8e727afa7c0489715c1353b00d4977ec3a81b",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_003.png",
@@ -17569,11 +19519,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "d52cad019bd82828a5a357fd14a4da3ad622d225ff67b9621558d3d4edfb6ca0",
+  "export_sha256": "f15a6c434f1b7a276970bd660c2c0546e436753346553e69b2ff1c04e87c79e9",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_004.png",
@@ -17595,11 +19571,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "dcc9b905b3645286b2f9a536d4a7ec9a49820c6713f9827a3117fb2e865968d9",
+  "export_sha256": "a5d000eaab0f0489c4bd288c90e8fac3b5dcf065cd6d2bd1ab9aeb77cc6f21f4",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_005.png",
@@ -17621,11 +19623,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "c5422386240f73214abc9164da2ccb6e0d28dcf06368977c4362c16548aa14b4",
+  "export_sha256": "f6e63f8458ef222433e58060c893d36773398cf3aad1584dedd4a44df7f1284d",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_000.png",
@@ -17647,11 +19675,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "bce9d5fb216b11a7558fabbf5c36e42f25d746bbf6e9c7eeb62ac716e5e0dbc2",
+  "export_sha256": "bf926c5246600aec7c7e18839155d1f22781eaf6502d9b3181292f55a967130e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_001.png",
@@ -17673,11 +19727,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "5576f4850eb74178fd616268236e637ab14dde6835641b454fc19ce4ab4cad60",
+  "export_sha256": "41302d9e1a1871c6b11e9b5c0c6431bbf6e3b85f68fb22b6e59205934ef03ee3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_002.png",
@@ -17699,11 +19779,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "61887394ca07c83883c3f959f1d35dba3eaf9dbf0392682fd91fd159255e8b0e",
+  "export_sha256": "f99e634657c7ca70c12a27f63d4a7df0f2ba655c018bded2bffb35d3dc1dc463",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_003.png",
@@ -17725,11 +19831,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "6d9ccf3b246e0a8b36033bb70a9935704ad4d2d90f3496dc6bf815e30fe7daad",
+  "export_sha256": "24585b4fa7ffbf91e4a94fd654838a8c3fab668a68443ff9f2e7163da7305dc0",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_004.png",
@@ -17751,11 +19883,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "30d9b05b34b0b3777c069ee41d4e9d116fff0f86f92f1683aaf6db66236008f3",
+  "export_sha256": "9a5777e5ebfbfb487ea7f3f94e30bfb1c9eb40a1a4806706de16eb44569fef84",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_005.png",
@@ -17777,11 +19935,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "431b52b5e05cd2e94a3237497001bc1bd3544427e56b2343ad3a69fb9525f009",
+  "export_sha256": "43a0715e3eb8d5b160c4e9b6ab006528c50c920a90f822b782367726ea647fa4",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_000.png",
@@ -17803,11 +19987,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "d6b82381b9a6a6e940890ffaafb031a27ebb9db1bc1919ec678c798ff4a0a102",
+  "export_sha256": "d962c85f2ac3e021deea98172b838925572bd17167c8a87f81ba95ac8e263aa3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_001.png",
@@ -17829,11 +20039,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "4af89e5ffa30b0ca527f35522d82c122bd94d4c6a4cff79358d1d9c45793cafc",
+  "export_sha256": "1bc2e5e28e96659b6231dedf114dfc00e3de7580942bdb16a242c49d846a5a78",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_002.png",
@@ -17855,11 +20091,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "4f0e254b45e09b1481dc4436243870b4e17000809192da73ae99bef5c7429520",
+  "export_sha256": "ed155bed654f65c192b6d3ae43d33d25ed9d8e0804fd2bd5e37df54cd79c9e37",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_003.png",
@@ -17881,11 +20143,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "ea5f76dfdcc29665fa2e424b8181471b9fcc760742faa9f827d8fbd7e98104ce",
+  "export_sha256": "3af7a74646a73b0950bda4a7df2ed562c0d701a3d40482ce739857645c34a27c",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_004.png",
@@ -17907,11 +20195,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "b2a76c5799e673a9fae6264d0853db1de5c1b29f29f953e5b2401387b880fd47",
+  "export_sha256": "8242a5e1f54d0b74af676c1521b4804ddc51c9f1254e17e3df9019cfb6dbe3e3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_005.png",
@@ -17933,11 +20247,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "943c134994bcd474cce1c83d791e228c575b113f30bdb36fd8e6a2e963363c51",
+  "export_sha256": "1aaebe36724e79c9af92707c2da137bf11cbe3b582e5d43c9157ce3a75a5b499",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_000.png",
@@ -17959,11 +20299,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "f24abcb0a24c6fbebc0986cdbeafb7fca60218ae89a8ef6ad22408db16c2284b",
+  "export_sha256": "352b7b0403add9130aec9fa40a7b3dd9c1819bb0aef2626e8bca4f34f9284371",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_001.png",
@@ -17985,11 +20351,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "564e8b8ca6e943a4ed1a6de5657ad8e035505a53a48f77e7cacdad1b500170a6",
+  "export_sha256": "492174811401064b17dd5271554d1822ec3e84a7b96c5d8c70deb3e8218eae87",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_002.png",
@@ -18011,11 +20403,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "acc1bc18781054e137fd2799731b83d20c0a0784583fa38bfa03dea01b8afb58",
+  "export_sha256": "004b32587d01250b65d2e321182e4f03fcb88a74a9b781db5b222f80c84fe4f6",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_003.png",
@@ -18037,11 +20455,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "a6649342c506dba3cb5b271d72b4356fdfaa3174173adf373dcf4478ff867de0",
+  "export_sha256": "1c5218c37ac79bca3e1094cdc9eaf632385657a1c96a0a3b6b79d2f994a42bef",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_004.png",
@@ -18063,11 +20507,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "5bd7f8b1b23c430d0361449fe31e02cdf2d28f4ccef67307c0541d45842478f6",
+  "export_sha256": "22e3187d9e719ec8d069c9f11ac274d4d47ad3969e337c73d1cac9fcf3b7d446",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_005.png",
@@ -18089,11 +20559,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "eeb7c82d8d858adfa52f7e6e6ebc2afe451b7fbdef126955da62bcbdfb05e246",
+  "export_sha256": "b51c7b41acd56b0dc61e0219d1bfa76b031f823ccc44ff9e0e7a1004e78721e2",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_000.png",
@@ -18115,11 +20611,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "370b14e848facce9e0088a6773918cdedf19f159a1a60f50d609723e3114bcf0",
+  "export_sha256": "bfe19576ceb83346be69f3addbc10ba4f0e9d7173d44a97eea479ae00a946d3e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_001.png",
@@ -18141,11 +20663,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "bd4d611a3131ca75336f73c8db9e9f189f235e58fee3df5fd43dee438eef6e92",
+  "export_sha256": "dcc055cdefa8ed720beaffa726ce61bddad04110feda8d4851a36ffbc6c2cb2e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_002.png",
@@ -18167,11 +20715,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "555910a7acda1cf37412d983a4ec9a6fddd558ef89de78294d11c986c1be33ff",
+  "export_sha256": "93e480fc119070309f55553ea2a6ecdfd7a6d6ed76b5cb790f0d51760f514491",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_003.png",
@@ -18193,11 +20767,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "2b49de5a55ab0eb80121724e9a31016c63fccb1ec350cbc55d0015a806d32593",
+  "export_sha256": "19e8863009caf36cf2c8fb4c9f31829d08063395c71b956f435965ed86919dca",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_004.png",
@@ -18219,11 +20819,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "dd6aad6cb34341b760456f77a22a10d702a6b53d0b33cfdad118d53306934bd1",
+  "export_sha256": "8fd9c19e53990c36ccc0807cf73f59ebbcbc3dde8f58493fa72ad428b2f0a65a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_005.png",
@@ -18245,11 +20871,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "f82abadc695ae6a586316e2411896f14ba001a9316a2e7d7fe621161c3269999",
+  "export_sha256": "67a20f29b69fbdf297bea83cccff23716e67b2724edc7d392d7e22c6ba778158",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_000.png",
@@ -18271,11 +20923,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "bbb1999faca2b652ec5f455ed09731b0fde8c2d1b3970b6f896fa18827e61fa3",
+  "export_sha256": "197fb270207769c96023ed4a10dfad098a9096522b5c7b54101b1fac19e169dc",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_001.png",
@@ -18297,11 +20975,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "6e50b0e381364347ba1f6141cf82b4ec46b42f2df46e18de699c4738ca72cf3c",
+  "export_sha256": "79ece61d46138a642ccd42fa8c7024006a1730c95641e4235a4a3a8724f2df78",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_002.png",
@@ -18323,11 +21027,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "b440a9a6e963e6236ecd15eae0f8dbcb8735e8456006589e4ec421cdb8b5350d",
+  "export_sha256": "68aeb7428c40afaccf04d2d71ed8b5e90193bf806540cd998a1e02beb51f33e3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_003.png",
@@ -18349,11 +21079,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "678d1048b66b89bda14fe4c08a11610a393a41478a14589a98efa5fa9aae8e67",
+  "export_sha256": "1f99cd07e788948a9140dbbf9720c887e7927861d9aae49ac74b6c7fe564ea7e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_004.png",
@@ -18375,11 +21131,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "24e88c3826f40a01098052ab1d50516e0326f03fbcdbd9ed7842224ae162c1eb",
+  "export_sha256": "e747904c577cbcb76334690c42f58405a3ff0e2882407d2917e6a9b4c76da96a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_005.png",
@@ -18401,11 +21183,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "01a9bce4efd5f1238ab56b78835ef1d786c43f002a1fe099ccb66d5ca78d5c1f",
+  "export_sha256": "91006bb4b97410b709ec41b78c96b01f136b7d7633f8bc77e0ba576511ae065f",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_000.png",
@@ -18427,11 +21235,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "961d8f0bf73292981953501f9de233764dd54cb6a82af4114b0eb278457d5350",
+  "export_sha256": "119a4b863f19bf8066524c47c80aa05aa8e2657cdf79b9efb53a994f99243b71",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_001.png",
@@ -18453,11 +21287,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "f2b9fd0355f97c173438971cc781eea4c673b98664ed3a3127f68a4160be28a9",
+  "export_sha256": "ffb56b8c6e33da6ac97e26b34032b1bd715e162284ec47069a852bfb5c2a892d",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_002.png",
@@ -18479,11 +21339,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "ad13982a04f656f6316ea104e2a0b28f49331a1e3405c5f6881869cf84c25f11",
+  "export_sha256": "8c741a1b5fe57507bf84856efcf3cc29ebb85c9f0f94993862c5c44d4112a23f",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_003.png",
@@ -18505,11 +21391,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "868393a4d5ac295cc0eb06eb01d451dadecc6ac6d4dfc2e99b2436bebf823ff7",
+  "export_sha256": "2598c4add7f3f5110065c9a88bfea685d5d6e283e1b31fb44c58d382bf15490e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_004.png",
@@ -18531,11 +21443,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "b708bb7b256f93ad2bbe890356b0b4c003afbde16755d235df4c1ea8216605f1",
+  "export_sha256": "812cfbf132ea7ab71c4f8cbe29daf5389c75dd4847415ccf90f232d307d34867",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_005.png",
@@ -18557,11 +21495,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "330938645838b4e9b46256eec0c48d13f892c9233e6ea0afb1b1a59de9cdf3b6",
+  "export_sha256": "d4362efa51728f42a8c27576f4026bcc1e9e4e0232ac800c2a2e38e87137cde2",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_000.png",
@@ -18583,11 +21547,37 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "03300905cbd642419a73aeb8ef7c37422067d5270a07d5e1f68888b3662f808f",
+  "export_sha256": "c86538200f46a2ac2d2041b63c17186d16dcff1796a9b03fbef2fe8716dfab2a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_001.png",
@@ -18609,11 +21599,37 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "f8e48039f91975087ba420ea7a739f7fd621a8cf596b5ff10e6ebeda4b09822f",
+  "export_sha256": "f4bac12fc3e240daadfdc9968a20363f3840879f4fe9570eb13d91c17d3a4ff2",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_002.png",
@@ -18635,11 +21651,37 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "ee2ec36470a2abe69942b9787be6a59b6f61bd4ff7b3118b8d98011b6dba3914",
+  "export_sha256": "a3663d8012d70b8f3f0f24219df23d2c541b49df45da7c1a1a3a17c027d7298d",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_003.png",
@@ -18661,11 +21703,37 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "3c975170f06620ea841fcdae6e703ac4725a3e79984f0dccc2fd41ed3e6f8958",
+  "export_sha256": "27799a4f331c9e64ecbe07ffe5170e6bcb1a7d3ea65e55482d6b3d51c2589434",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_004.png",
@@ -18687,11 +21755,37 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "29f1f2c821353a2f769965ca88a613e642913f79527e068eef10f269357bb2d3",
+  "export_sha256": "2aef20c70f10fd13e0dbe57bd352250e33a756fe67c2cd358fcec581b03fb6aa",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_005.png",
@@ -18713,11 +21807,37 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-  "export_sha256": "a2f3aedf21306b75299ead64025a2a5b8d0f5acdaeee42669f85b1b24253f664",
+  "export_sha256": "418b1eaf4978bdfb7a35deed9542ab79a9dded8b430db2f2b4604eb02ff2ed5d",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "direction": "S",
+    "file": "Source_Generated/rig_full/paint/iguanodon_S.png",
+    "pose": "walk:0",
+    "sha256": "6fd09d376dc5a17ccc8b9eff951570cf29dd8b147beb6b64c5f725d668395a99"
+   },
+   {
+    "direction": "N",
+    "file": "Source_Generated/rig_full/paint/iguanodon_N.png",
+    "pose": "walk:0",
+    "sha256": "0034ebe583ab5221b1d5d7a178b026e41f309fed0c680194ed84f5bbb10063c3"
+   },
+   {
+    "direction": "E",
+    "file": "Source_Generated/rig_full/paint/iguanodon_E.png",
+    "pose": "walk:0",
+    "sha256": "851998fd15921ad4f69350e51afcaab65b7b649bec0661136c9dcb2d56c5695e"
+   },
+   {
+    "direction": "W",
+    "file": "Source_Generated/rig_full/paint/iguanodon_W.png",
+    "pose": "walk:0",
+    "sha256": "f51e03eada324954985c5becd7f91da3ddd914c0496d654c7e3b3965ce471475"
+   }
+  ],
+  "export": "tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; passes validate_rig_frames.py. Not approved art."
  },
  {
   "file": "assets/rig_full/leaellynasaura_attack_E_000.png",

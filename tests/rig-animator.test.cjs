@@ -95,3 +95,26 @@ test('rigSprites: every RIG_SPECIES has its 120 rig frames in the game, byte-ide
   for (const name of ['leaellynasaura_walk_E_003.png', 'leaellynasaura_attack_N_003.png'])
     assert.deepEqual(fs.readFileSync(path.join(out, name)), fs.readFileSync(path.join(game, 'assets/rig_full', name)), name);
 });
+
+test('paint transfer: four painted poses colour every frame and still pass the rig check', () => {
+  const {out} = render('leaellynasaura', 'walk,attack');
+  const tpl = path.join(tmp, 'tpl'), painted = path.join(tmp, 'painted');
+  let r = run(['tools/rig_paint_transfer.py', '--species', 'leaellynasaura', '--templates', tpl]);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  // repaint: every body pixel becomes palette red #913b32, the outline stays
+  r = run(['-c', `import sys,numpy as np;from PIL import Image;from pathlib import Path
+src,dst=Path(sys.argv[1]),Path(sys.argv[2]);dst.mkdir(exist_ok=True)
+for f in src.glob('*.png'):
+    a=np.array(Image.open(f));b=(a[...,3]>0)&~np.all(a[...,:3]==(21,27,25),axis=-1);a[b,:3]=(145,59,50);Image.fromarray(a).save(dst/f.name)`, tpl, painted]);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  const frames = path.join(tmp, 'painted_out');
+  r = run(['tools/rig_paint_transfer.py', '--species', 'leaellynasaura', '--paint', painted, '--states', 'walk', '--out', frames]);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  assert.match(r.stdout, /24 frames/);
+  r = run(['tools/validate_rig_frames.py', '--species', 'leaellynasaura', '--frames', frames, '--rig', out, '--states', 'walk']);
+  assert.equal(r.status, 0, r.stdout);
+  r = run(['-c', `import sys,numpy as np;from PIL import Image
+a=np.array(Image.open(sys.argv[1]));b=(a[...,3]>0)&~np.all(a[...,:3]==(21,27,25),axis=-1);print(round(float(np.all(a[b][:,:3]==(145,59,50),axis=-1).mean()),3))`,
+    path.join(frames, 'leaellynasaura_walk_E_003.png')]);
+  assert.ok(Number(r.stdout) > 0.95, 'painted share ' + r.stdout);
+});

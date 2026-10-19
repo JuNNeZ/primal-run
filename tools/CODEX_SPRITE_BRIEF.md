@@ -13,7 +13,21 @@ python tools/rebuild_generated.py && npm test
 Arten skal stå i `RIG_SPECIES` i `PRIMAL_RUN_Game/src/core.js` (scriptet siger til, hvis den mangler). Så viser spillet
 rig-animationen i stedet for stillbilledet. Arten beholder WIP-mærket, indtil Jonas har godkendt grafikken.
 
-## Når du skal forbedre grafikken
+## Flottere grafik: tegn kun fire poser
+
+Tegn én pose pr. retning (S, N, E, W), så farver alle 120 frames sig selv ud fra dem:
+
+```
+python tools/rig_paint_transfer.py --species <id> --templates SKABELONER   # <id>_rest_<D>.png at male oven på
+python tools/rig_to_game.py --species <id> --paint MIN_MAPPE               # alle 120 frames med din maling
+python tools/rebuild_generated.py && npm test
+```
+
+Mal inden for skabelonens silhuet (S/N/E er de statiske tegninger; W er sin egen render, ikke spejlet). Har du
+tegnet en anden rig-pose, så angiv den: `--pattern '{sid}_walk_{d}_000.png' --ref walk:0`. Små forskydninger på
+nogle få pixels rettes automatisk. Silhuet og omrids følger riggen, så hovedform og kontur skal stemme med riggen.
+
+## Når du skal rette enkelte frames
 
 Tegn kun det, der er bestilt (fx én tilstand i én retning), ikke hele sættet. Brug rig-framen med samme navn som
 posereference og den statiske tegning i `assets/new_species/<id>_<retning>.png` som udseende.

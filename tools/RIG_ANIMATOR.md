@@ -92,6 +92,9 @@ Kontrollen er teknisk og godkender ikke kunsten.
 **Rig-frames direkte (nemmeste vej):** `python tools/rig_to_game.py --species <id>` renderer, kontrollerer og kopierer de 120
 frames til `assets/rig_full/` med manifest (`rig_full_manifest.json`, `rig_full_animations.json`). Arter i `RIG_SPECIES`
 i `src/core.js` bruger dem bag `FEATURES.rigSprites` og beholder WIP-mærket. Kør derefter `python tools/rebuild_generated.py`.
+Med `--paint MAPPE` farves alle frames fra fire tegnede poser (`tools/rig_paint_transfer.py`): for hver pixel finder
+værktøjet samme sted på modellen i den tegnede pose og kopierer farven. Afprøvet på Codex' Iguanodon N/S/E/W
+(`--pattern '{sid}_walk_{d}_000.png' --ref walk:0`): 120 frames, rig-kontrollen består.
 Kort brief til Codex: `tools/CODEX_SPRITE_BRIEF.md`.
 
 **Egne, tegnede frames:**

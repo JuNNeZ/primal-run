@@ -2,8 +2,8 @@
   "status": "PASS",
   "approved_exports": 17,
   "frames": 5121,
-  "unique_frames": 4739,
-  "alias_frames": 382,
+  "unique_frames": 4742,
+  "alias_frames": 379,
   "sheets": 34,
   "checks": [
     "exact native RGBA bytes",
