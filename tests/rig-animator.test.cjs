@@ -73,3 +73,25 @@ test('validator passes the rig and rejects static legs', () => {
   assert.match(r.stdout, /better than their own frame/);
   assert.match(r.stdout, /legs and tail look frozen/);
 });
+
+test('rigSprites: every RIG_SPECIES has its 120 rig frames in the game, byte-identical to a fresh render', () => {
+  const C = require('../PRIMAL_RUN_Game/src/core.js');
+  const game = path.join(ROOT, 'PRIMAL_RUN_Game');
+  const manifest = JSON.parse(fs.readFileSync(path.join(game, 'rig_full_manifest.json'), 'utf8'));
+  const assets = fs.readFileSync(path.join(game, 'src/assets.js'), 'utf8');
+  for (const id of C.RIG_SPECIES) {
+    assert.ok(C.STATIC_SPECIES.has(id), id + ' keeps its WIP badge until the art is approved');
+    const files = manifest.filter((e) => e.species === id);
+    assert.equal(files.length, 120, id);
+    for (const e of files) {
+      assert.equal(e.status, 'prototype_static');
+      assert.equal(e.production_approved, false);
+      assert.ok(fs.existsSync(path.join(game, e.file)), e.file);
+      assert.ok(assets.includes('"' + e.file + '"'), 'not built into src/assets.js: ' + e.file);
+    }
+    assert.equal(C.playerFrame(id, 'walk', 'E', 3), `assets/rig_full/${id}_walk_E_003.png`);
+  }
+  const {out} = render('leaellynasaura', 'walk,attack');
+  for (const name of ['leaellynasaura_walk_E_003.png', 'leaellynasaura_attack_N_003.png'])
+    assert.deepEqual(fs.readFileSync(path.join(out, name)), fs.readFileSync(path.join(game, 'assets/rig_full', name)), name);
+});

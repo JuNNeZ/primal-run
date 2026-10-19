@@ -24,7 +24,8 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
     for(const direction of ['S','N','E','W'])for(const running of [false,true]){
      e.hp=e.maxHP*.29;e.direction=direction;e.gaitPhase=.7;e.hit=0;e.moving=true;e.mode=running?'flee':'chase';e.sex='female';
      calls.length=0;primalRun.update(performance.now());const family=['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx'].includes(species)?'player_full':'enemy_full',name=PrimalCore.STATIC_SPECIES.has(species)?`${species}_${direction}.png`:PrimalAssets[`assets/behavior_injured/${species}_limp_${direction}_003.png`]?`${species}_limp_${direction}_003.png`:`${species}_${running?'run':'walk'}_${direction}_003.png`; // new species are static drawings until Codex animates them
-     if(!calls.some(c=>c.file===name))throw Error('NPC gait not drawn '+family+'/'+name);npcs++;
+     const rig=PrimalCore.FEATURES.rigSprites&&PrimalCore.RIG_SPECIES&&PrimalCore.RIG_SPECIES.has(species),gait=new RegExp('^'+species+'_(walk|run)_'+direction+'_00[0-5]\\.png$'); // rig species animate from assets/rig_full
+     if(!calls.some(c=>rig?gait.test(c.file):c.file===name))throw Error('NPC gait not drawn '+family+'/'+name);npcs++;
     }
    }
    r.enemies=[];r.species='ankylosaurus';r.player.radius=23;r.hurt=0;

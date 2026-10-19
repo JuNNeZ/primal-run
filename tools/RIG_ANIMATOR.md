@@ -89,6 +89,13 @@ Kontrollen er teknisk og godkender ikke kunsten.
 
 ## 4. Ind i spillet
 
+**Rig-frames direkte (nemmeste vej):** `python tools/rig_to_game.py --species <id>` renderer, kontrollerer og kopierer de 120
+frames til `assets/rig_full/` med manifest (`rig_full_manifest.json`, `rig_full_animations.json`). Arter i `RIG_SPECIES`
+i `src/core.js` bruger dem bag `FEATURES.rigSprites` og beholder WIP-mærket. Kør derefter `python tools/rebuild_generated.py`.
+Kort brief til Codex: `tools/CODEX_SPRITE_BRIEF.md`.
+
+**Egne, tegnede frames:**
+
 Eksportér til `assets/player_full` (spilbare) eller `assets/enemy_full` (vilde) med navne og manifester som i
 `PRIMAL_RUN_Game/NEW_SPECIES_ART.md`. Sæt `animated:true` på arten i `NEW_PLAYERS`/`NEW_NPCS` i `src/core.js`,
 og kør `python tools/rebuild_generated.py`, `npm test`, `npm run validate:game-sprites` og

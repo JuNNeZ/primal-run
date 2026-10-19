@@ -1,0 +1,112 @@
+#!/usr/bin/env python3
+"""Rig frames straight into the game: one command per species, no hand drawing.
+
+Renders the rig (tools/rig_animate.py), checks every frame (tools/validate_rig_frames.py),
+copies the 120 frames to PRIMAL_RUN_Game/assets/rig_full/ and writes their manifest and
+animation entries.  The game shows them behind FEATURES.rigSprites for the ids in
+RIG_SPECIES in src/core.js.  Everything stays prototype_static: Jonas approves the art,
+file checks never do.
+
+  python tools/rig_to_game.py --species allosaurus            # one species
+  python tools/rig_to_game.py --species all --jobs 4          # every new species
+  python tools/rig_to_game.py --species allosaurus --review DIR   # also GIFs + contact sheet
+
+Then: python tools/rebuild_generated.py, npm test.
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import shutil
+import subprocess
+import sys
+import tempfile
+from concurrent.futures import ProcessPoolExecutor
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+GAME = ROOT / 'PRIMAL_RUN_Game'
+ASSETS = GAME / 'assets' / 'rig_full'
+SOURCE = GAME / 'Source_Generated' / 'rig_full'
+MANIFEST = GAME / 'rig_full_manifest.json'
+ANIMATIONS = GAME / 'rig_full_animations.json'
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+
+def render(sid: str, review: str) -> tuple[str, list, list]:
+    """Render, validate and copy one species; returns (id, manifest entries, animations)."""
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp) / sid
+        cmd = [sys.executable, str(ROOT / 'tools/rig_animate.py'), '--species', sid, '--out', str(out)]
+        if review:
+            cmd += ['--sheet', str(Path(review) / f'{sid}_sheet.png'), '--gif', str(Path(review) / sid)]
+        subprocess.run(cmd, cwd=ROOT, check=True, capture_output=True)
+        check = subprocess.run([sys.executable, str(ROOT / 'tools/validate_rig_frames.py'), '--species', sid,
+                                '--frames', str(out), '--rig', str(out)], cwd=ROOT, capture_output=True, text=True)
+        if check.returncode:
+            raise SystemExit(f'{sid}: rig frames fail validate_rig_frames\n{check.stdout[-2000:]}')
+        rig = json.loads((out / f'{sid}_rig.json').read_text())
+        SOURCE.mkdir(parents=True, exist_ok=True)
+        ASSETS.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(out / f'{sid}_rig.json', SOURCE / f'{sid}_rig.json')
+        rig_sha = hashlib.sha256((out / f'{sid}_rig.json').read_bytes()).hexdigest()
+        entries, animations = [], []
+        for state, info in rig['states'].items():
+            for d in ('S', 'N', 'E', 'W'):
+                frames = []
+                for f in range(info['frames']):
+                    name = f'{sid}_{state}_{d}_{f:03d}.png'
+                    shutil.copy2(out / name, ASSETS / name)
+                    file = f'assets/rig_full/{name}'
+                    frames.append(file)
+                    entries.append({'file': file, 'size': [144, 144], 'origin': [72, 72], 'body_anchor': [72, 72],
+                                    'species': sid, 'direction': d, 'state': state, 'frame': f,
+                                    'source': f'Source_Generated/rig_full/{sid}_rig.json', 'source_sha256': rig_sha,
+                                    'export_sha256': hashlib.sha256((ASSETS / name).read_bytes()).hexdigest(),
+                                    'status': 'prototype_static', 'production_approved': False, 'animation_ready': False,
+                                    'export': 'tools/rig_to_game.py: rig_animate.py render copied byte for byte; '
+                                              'passes validate_rig_frames.py. Not approved art.'})
+                animations.append({'name': f'{sid}_{state}_{d}', 'species': sid, 'state': state, 'direction': d,
+                                   'frames': frames, 'fps': info['fps'], 'loop': info['loop'], 'origin': [72, 72],
+                                   'contact_frame': info['contact_frame'], 'validated_animation': False,
+                                   'production_approved': False})
+        return sid, entries, animations
+
+
+def main():
+    import draw_new_species as D
+    ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
+    ap.add_argument('--species', required=True, help='comma separated ids, or "all"')
+    ap.add_argument('--jobs', type=int, default=1)
+    ap.add_argument('--review', default='', help='folder for review GIFs and contact sheets (not game assets)')
+    a = ap.parse_args()
+    ids = list(D.SPECIES) if a.species == 'all' else [s for s in a.species.split(',') if s]
+    for sid in ids:
+        if sid not in D.SPECIES:
+            raise SystemExit(f'unknown species {sid}')
+    if a.review:
+        Path(a.review).mkdir(parents=True, exist_ok=True)
+    with ProcessPoolExecutor(max_workers=max(1, a.jobs)) as pool:
+        results = list(pool.map(render, ids, [a.review] * len(ids)))
+    done = {sid for sid, _, _ in results}
+    manifest = [e for e in (json.loads(MANIFEST.read_text()) if MANIFEST.exists() else []) if e['species'] not in done]
+    animations = [x for x in (json.loads(ANIMATIONS.read_text())['animations'] if ANIMATIONS.exists() else [])
+                  if x['species'] not in done]
+    for _, entries, anims in results:
+        manifest += entries
+        animations += anims
+    manifest.sort(key=lambda e: e['file'])
+    animations.sort(key=lambda x: x['name'])
+    MANIFEST.write_text(json.dumps(manifest, indent=1) + '\n')
+    ANIMATIONS.write_text(json.dumps({'animations': animations}, indent=1) + '\n')
+    core = (GAME / 'src/core.js').read_text()
+    missing = [s for s in sorted(done) if f"'{s}'" not in core.split('RIG_SPECIES=new Set(')[-1].split(')')[0]]
+    print(f'{len(done)} species, {sum(len(e) for _, e, _ in results)} frames -> assets/rig_full/')
+    if missing:
+        print('add to RIG_SPECIES in src/core.js so the game uses them:', ', '.join(missing))
+    print('next: python tools/rebuild_generated.py && npm test')
+
+
+if __name__ == '__main__':
+    main()

@@ -30,6 +30,9 @@ def build():
     enemy_full_overlay = GAME / 'enemy_full_manifest.json'
     if enemy_full_overlay.exists():
         manifest += json.loads(enemy_full_overlay.read_text(encoding='utf-8'))
+    rig_full_overlay = GAME / 'rig_full_manifest.json'
+    if rig_full_overlay.exists():  # prototype rig animations for the new species (tools/rig_to_game.py)
+        manifest += json.loads(rig_full_overlay.read_text(encoding='utf-8'))
     ecology_overlay = GAME / 'ecology_manifest.json'
     if ecology_overlay.exists():
         manifest += json.loads(ecology_overlay.read_text(encoding='utf-8'))
@@ -108,6 +111,12 @@ def build():
         animations = json.loads((GAME / 'animation_manifest.json').read_text())
         animations['animations'] += json.loads(enemy_full.read_text())['animations']
         animations['enemy_full_frame_plan'] = 'idle4/walk6/run6/attack6/hurt2/death6 in separately drawn cardinal directions; shared playable sets for Compy, Carnotaurus and Ankylosaurus.'
+        (GAME / 'animation_manifest.json').write_text(json.dumps(animations, indent=2)+'\n')
+    rig_full = GAME / 'rig_full_animations.json'
+    if rig_full.exists():
+        animations = json.loads((GAME / 'animation_manifest.json').read_text())
+        animations['animations'] += json.loads(rig_full.read_text())['animations']
+        animations['rig_full_frame_plan'] = 'Prototype rig renders (tools/rig_to_game.py): idle4/walk6/run6/attack6/hurt2/death6 per cardinal direction; not approved art.'
         (GAME / 'animation_manifest.json').write_text(json.dumps(animations, indent=2)+'\n')
     if not audit_species_animations():
         raise ValueError('Active dinosaur animation inventory/registration audit failed')

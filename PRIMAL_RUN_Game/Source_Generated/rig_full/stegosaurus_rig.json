@@ -1,0 +1,4537 @@
+{
+ "species": "stegosaurus",
+ "canvas": [
+  144,
+  144
+ ],
+ "origin": [
+  72,
+  72
+ ],
+ "model_scale": 1.0,
+ "visual_scale": 1,
+ "camera": {
+  "image_x": "x",
+  "image_up": "0.82*y + 0.36*z",
+  "light": [
+   -0.4915,
+   0.4129,
+   0.7668
+  ],
+  "note": "Same fixed overhead camera and light for every direction; each direction is its own render."
+ },
+ "skeleton": {
+  "locomotion": "legs",
+  "quadruped": true,
+  "hip_height": 14.0,
+  "chains": [
+   "fore_L",
+   "fore_R"
+  ],
+  "attack_style": "tail"
+ },
+ "states": {
+  "idle": {
+   "frames": 4,
+   "fps": 4,
+   "loop": true,
+   "contact_frame": null
+  },
+  "walk": {
+   "frames": 6,
+   "fps": 8,
+   "loop": true,
+   "contact_frame": null
+  },
+  "run": {
+   "frames": 6,
+   "fps": 12,
+   "loop": true,
+   "contact_frame": null
+  },
+  "attack": {
+   "frames": 6,
+   "fps": 12,
+   "loop": false,
+   "contact_frame": 3
+  },
+  "hurt": {
+   "frames": 2,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  },
+  "death": {
+   "frames": 6,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  }
+ },
+ "frames": {
+  "stegosaurus_idle_S_000": {
+   "file": "stegosaurus_idle_S_000.png",
+   "sha256": "66fd56bf6fae814e0be1d96e9272ef1e94157b67d82f5834389be4d3d5873ed7",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.8
+     ],
+     [
+      87.0,
+      89.84
+     ],
+     [
+      88.8,
+      92.96
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.8
+     ],
+     [
+      57.0,
+      89.84
+     ],
+     [
+      55.2,
+      92.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_N_000": {
+   "file": "stegosaurus_idle_N_000.png",
+   "sha256": "78f97b9266d2dee2c9de6b7c8ecdaa58a13baa8da01d87517f13d20f0c7e5b74",
+   "bbox": [
+    48,
+    26,
+    96,
+    119
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.72
+     ],
+     [
+      57.0,
+      50.58
+     ],
+     [
+      55.2,
+      50.32
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.72
+     ],
+     [
+      87.0,
+      50.58
+     ],
+     [
+      88.8,
+      50.32
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_E_000": {
+   "file": "stegosaurus_idle_E_000.png",
+   "sha256": "9b10e0a67cdb1fae4e030a000101de14074349dbb855f603ca24bec2a1b94efc",
+   "bbox": [
+    12,
+    50,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      61.87
+     ],
+     [
+      95.94,
+      57.91
+     ],
+     [
+      98.0,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.65
+     ],
+     [
+      95.94,
+      82.51
+     ],
+     [
+      98.0,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_W_000": {
+   "file": "stegosaurus_idle_W_000.png",
+   "sha256": "3803799b7baee028eb299415f5cedc06000130cbdce4c3973f567853ca428595",
+   "bbox": [
+    18,
+    50,
+    132,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.65
+     ],
+     [
+      48.06,
+      82.51
+     ],
+     [
+      46.0,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      61.87
+     ],
+     [
+      48.06,
+      57.91
+     ],
+     [
+      46.0,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_S_001": {
+   "file": "stegosaurus_idle_S_001.png",
+   "sha256": "e36d39ae4d2785ed1f14980863b9b81704b5d577dc806a33f6bafdcf90f83111",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.88
+     ],
+     [
+      87.0,
+      89.4
+     ],
+     [
+      88.8,
+      92.96
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.88
+     ],
+     [
+      57.0,
+      89.4
+     ],
+     [
+      55.2,
+      92.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_N_001": {
+   "file": "stegosaurus_idle_N_001.png",
+   "sha256": "a810da66759580792c64a72bcf61264660f7fc3cd9368e129ea6820ff0b9ab84",
+   "bbox": [
+    48,
+    25,
+    96,
+    119
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.8
+     ],
+     [
+      57.0,
+      51.37
+     ],
+     [
+      55.2,
+      50.32
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.8
+     ],
+     [
+      87.0,
+      51.37
+     ],
+     [
+      88.8,
+      50.32
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_E_001": {
+   "file": "stegosaurus_idle_E_001.png",
+   "sha256": "e323457a10f47907532401d49b9094b77460d91071ef82bab79a31e2e7f7dc47",
+   "bbox": [
+    12,
+    50,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      61.95
+     ],
+     [
+      95.19,
+      58.09
+     ],
+     [
+      98.0,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.72
+     ],
+     [
+      95.19,
+      82.69
+     ],
+     [
+      98.0,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_W_001": {
+   "file": "stegosaurus_idle_W_001.png",
+   "sha256": "9dde9801a5af7405bc534d7eb070e539d97c3c16cd2f8220d21a0b0a508bc2e8",
+   "bbox": [
+    18,
+    50,
+    132,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.72
+     ],
+     [
+      48.81,
+      82.69
+     ],
+     [
+      46.0,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      61.95
+     ],
+     [
+      48.81,
+      58.09
+     ],
+     [
+      46.0,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_S_002": {
+   "file": "stegosaurus_idle_S_002.png",
+   "sha256": "c10b94339426cf2b99ed3f2fcfff66de051e97b08e4a177c27eca58a71253143",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.95
+     ],
+     [
+      87.0,
+      89.24
+     ],
+     [
+      88.8,
+      92.96
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.95
+     ],
+     [
+      57.0,
+      89.24
+     ],
+     [
+      55.2,
+      92.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_N_002": {
+   "file": "stegosaurus_idle_N_002.png",
+   "sha256": "ec3345b6700d108e1fdf099e02723a8cc755b599ea6b3b8b5abca5b3f8fb3354",
+   "bbox": [
+    48,
+    26,
+    96,
+    119
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.87
+     ],
+     [
+      57.0,
+      51.74
+     ],
+     [
+      55.2,
+      50.32
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.87
+     ],
+     [
+      87.0,
+      51.74
+     ],
+     [
+      88.8,
+      50.32
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_E_002": {
+   "file": "stegosaurus_idle_E_002.png",
+   "sha256": "dbfb9899f66e7cb38f9937b4a0c386ce5e10ee7066d1985633f013b31740e9e3",
+   "bbox": [
+    12,
+    50,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      62.02
+     ],
+     [
+      94.87,
+      58.19
+     ],
+     [
+      98.0,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.8
+     ],
+     [
+      94.87,
+      82.79
+     ],
+     [
+      98.0,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_W_002": {
+   "file": "stegosaurus_idle_W_002.png",
+   "sha256": "bd6e1028d719fd33782122ad436516653b69e8da7e72f7acad6a67ee24d95cce",
+   "bbox": [
+    18,
+    50,
+    132,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.8
+     ],
+     [
+      49.13,
+      82.79
+     ],
+     [
+      46.0,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      62.02
+     ],
+     [
+      49.13,
+      58.19
+     ],
+     [
+      46.0,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_S_003": {
+   "file": "stegosaurus_idle_S_003.png",
+   "sha256": "9a82314e74eacb1ef9f09a67a634e0622b11a73eedae0d4f875b00721b7b98bf",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.88
+     ],
+     [
+      87.0,
+      89.4
+     ],
+     [
+      88.8,
+      92.96
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.88
+     ],
+     [
+      57.0,
+      89.4
+     ],
+     [
+      55.2,
+      92.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_N_003": {
+   "file": "stegosaurus_idle_N_003.png",
+   "sha256": "de970f4825bbc5e00c43ba36e0d71928c17d9409c96a53488f102dfadb129a30",
+   "bbox": [
+    48,
+    26,
+    96,
+    119
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.8
+     ],
+     [
+      57.0,
+      51.37
+     ],
+     [
+      55.2,
+      50.32
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.8
+     ],
+     [
+      87.0,
+      51.37
+     ],
+     [
+      88.8,
+      50.32
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_E_003": {
+   "file": "stegosaurus_idle_E_003.png",
+   "sha256": "74c7fcdc992b37fa2388214228779d3ad25827edb3a9bd48b2965a5b5feb2306",
+   "bbox": [
+    12,
+    50,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      61.95
+     ],
+     [
+      95.19,
+      58.09
+     ],
+     [
+      98.0,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.72
+     ],
+     [
+      95.19,
+      82.69
+     ],
+     [
+      98.0,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_idle_W_003": {
+   "file": "stegosaurus_idle_W_003.png",
+   "sha256": "541e282008fdaebcbb5443bebb5c71ede5aaa5269edd553506748f7f5eeff172",
+   "bbox": [
+    18,
+    50,
+    132,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.72
+     ],
+     [
+      48.81,
+      82.69
+     ],
+     [
+      46.0,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      61.95
+     ],
+     [
+      48.81,
+      58.09
+     ],
+     [
+      46.0,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_S_000": {
+   "file": "stegosaurus_walk_S_000.png",
+   "sha256": "c63af31fb8fe55bcaa06c549476f8156d51dc1acdfde5c4d59844c6545d35a18",
+   "bbox": [
+    48,
+    21,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      87.05
+     ],
+     [
+      87.0,
+      90.69
+     ],
+     [
+      88.8,
+      94.38
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      87.05
+     ],
+     [
+      57.0,
+      85.27
+     ],
+     [
+      55.2,
+      86.36
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_walk_N_000": {
+   "file": "stegosaurus_walk_N_000.png",
+   "sha256": "b1d2191b1cead4cdeb255810e2b6e2423672238ffcd05084076f7927097ec5ed",
+   "bbox": [
+    48,
+    26,
+    96,
+    119
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.97
+     ],
+     [
+      57.0,
+      49.74
+     ],
+     [
+      55.2,
+      48.39
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.97
+     ],
+     [
+      87.0,
+      54.82
+     ],
+     [
+      88.8,
+      56.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_walk_E_000": {
+   "file": "stegosaurus_walk_E_000.png",
+   "sha256": "c3ef0d98a6fb079ba9069b5ea74fee7930e6008332735609317c0e79ab010d7e",
+   "bbox": [
+    12,
+    50,
+    126,
+    91
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      62.12
+     ],
+     [
+      96.97,
+      57.92
+     ],
+     [
+      100.04,
+      57.61
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.9
+     ],
+     [
+      90.57,
+      82.35
+     ],
+     [
+      89.95,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_walk_W_000": {
+   "file": "stegosaurus_walk_W_000.png",
+   "sha256": "924742dd6aea387aad9e158a788a20e946dedb0d399a4d109826dea3bc60017a",
+   "bbox": [
+    18,
+    50,
+    132,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.9
+     ],
+     [
+      47.03,
+      82.52
+     ],
+     [
+      43.96,
+      85.16
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      62.12
+     ],
+     [
+      53.43,
+      57.75
+     ],
+     [
+      54.05,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_walk_S_001": {
+   "file": "stegosaurus_walk_S_001.png",
+   "sha256": "f23aadabb0eee7741150b2eafa759fa9a8e7cffe4c26361407a41bbb7989cf12",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.86
+     ],
+     [
+      87.0,
+      88.59
+     ],
+     [
+      88.8,
+      92.23
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.86
+     ],
+     [
+      57.0,
+      90.81
+     ],
+     [
+      55.2,
+      94.77
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_walk_N_001": {
+   "file": "stegosaurus_walk_N_001.png",
+   "sha256": "bc79209772e63123b39dc9839f895238de0308b43678621be659ef42c3fd8534",
+   "bbox": [
+    48,
+    26,
+    96,
+    119
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.78
+     ],
+     [
+      57.0,
+      52.27
+     ],
+     [
+      55.2,
+      51.05
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.78
+     ],
+     [
+      87.0,
+      48.62
+     ],
+     [
+      88.8,
+      46.35
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_walk_E_001": {
+   "file": "stegosaurus_walk_E_001.png",
+   "sha256": "d0a160097e507b5e21c9cfed9e47a20de61c0159a11c1abec6504fe738fb0c48",
+   "bbox": [
+    12,
+    50,
+    126,
+    91
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      61.94
+     ],
+     [
+      94.15,
+      58.13
+     ],
+     [
+      97.11,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.71
+     ],
+     [
+      97.73,
+      82.01
+     ],
+     [
+      101.52,
+      84.34
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_walk_W_001": {
+   "file": "stegosaurus_walk_W_001.png",
+   "sha256": "19f389c4f4221ddc943be61710df0efb559885dfad76e0f91752b71b91bead50",
+   "bbox": [
+    19,
+    49,
+    132,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.71
+     ],
+     [
+      49.85,
+      82.73
+     ],
+     [
+      46.89,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      61.94
+     ],
+     [
+      46.27,
+      57.41
+     ],
+     [
+      42.48,
+      56.79
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_walk_S_002": {
+   "file": "stegosaurus_walk_S_002.png",
+   "sha256": "bcccd6c6ef576680075c4d69d4039efc6a41ea957395b9e1d0c745f023a1b082",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.86
+     ],
+     [
+      87.0,
+      86.27
+     ],
+     [
+      88.8,
+      89.29
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.86
+     ],
+     [
+      57.0,
+      90.74
+     ],
+     [
+      55.2,
+      94.65
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_N_002": {
+   "file": "stegosaurus_walk_N_002.png",
+   "sha256": "09f710f0b93643ea3eea26f170697918ceb605af5f9c62ca9611d26e5d86e387",
+   "bbox": [
+    48,
+    26,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.78
+     ],
+     [
+      57.0,
+      54.1
+     ],
+     [
+      55.2,
+      53.99
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.78
+     ],
+     [
+      87.0,
+      48.9
+     ],
+     [
+      88.8,
+      46.9
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_E_002": {
+   "file": "stegosaurus_walk_E_002.png",
+   "sha256": "400168979021e87eee6e2d4d88577b24d453b3a8fec6f63f4ef805d00716b0c0",
+   "bbox": [
+    13,
+    50,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      61.94
+     ],
+     [
+      91.61,
+      57.88
+     ],
+     [
+      93.53,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.71
+     ],
+     [
+      97.52,
+      82.12
+     ],
+     [
+      101.11,
+      84.55
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_W_002": {
+   "file": "stegosaurus_walk_W_002.png",
+   "sha256": "aee3c200d16f39e1df021911f6efb99d1b06b9047c6fdfb6f6a430f47528599a",
+   "bbox": [
+    19,
+    50,
+    131,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.71
+     ],
+     [
+      52.39,
+      82.48
+     ],
+     [
+      50.47,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      61.94
+     ],
+     [
+      46.48,
+      57.52
+     ],
+     [
+      42.89,
+      57.0
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_S_003": {
+   "file": "stegosaurus_walk_S_003.png",
+   "sha256": "d2d43b83b1c22106dd1135b2f7905022960a506f68294567e854f71ee58d3760",
+   "bbox": [
+    48,
+    21,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      87.05
+     ],
+     [
+      87.0,
+      85.27
+     ],
+     [
+      88.8,
+      86.36
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      87.05
+     ],
+     [
+      57.0,
+      90.69
+     ],
+     [
+      55.2,
+      94.38
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_N_003": {
+   "file": "stegosaurus_walk_N_003.png",
+   "sha256": "b3be9b1d567085e0a4f87115b38326b7208d38490bf868e0359051939324f3d3",
+   "bbox": [
+    48,
+    26,
+    96,
+    119
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.97
+     ],
+     [
+      57.0,
+      54.82
+     ],
+     [
+      55.2,
+      56.92
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.97
+     ],
+     [
+      87.0,
+      49.74
+     ],
+     [
+      88.8,
+      48.39
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_E_003": {
+   "file": "stegosaurus_walk_E_003.png",
+   "sha256": "e4fa7b7d258d2f4b808b5ecf40029cdaea5a6c8c098ead6e3e7b8f5bab5ffdf4",
+   "bbox": [
+    12,
+    50,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      62.12
+     ],
+     [
+      90.57,
+      57.75
+     ],
+     [
+      89.95,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.9
+     ],
+     [
+      96.97,
+      82.52
+     ],
+     [
+      100.04,
+      85.16
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_W_003": {
+   "file": "stegosaurus_walk_W_003.png",
+   "sha256": "7025e52371700abce8aa0b43cc8c2d126bdeafb58122524ddc569d49c26d3d88",
+   "bbox": [
+    18,
+    50,
+    132,
+    91
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.9
+     ],
+     [
+      53.43,
+      82.35
+     ],
+     [
+      54.05,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      62.12
+     ],
+     [
+      47.03,
+      57.92
+     ],
+     [
+      43.96,
+      57.61
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_S_004": {
+   "file": "stegosaurus_walk_S_004.png",
+   "sha256": "9c3cd83ace82200dbc117348751fb857fad35afdad3bb23c44f6487fb5302217",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.86
+     ],
+     [
+      87.0,
+      90.81
+     ],
+     [
+      88.8,
+      94.77
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.86
+     ],
+     [
+      57.0,
+      88.59
+     ],
+     [
+      55.2,
+      92.23
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_N_004": {
+   "file": "stegosaurus_walk_N_004.png",
+   "sha256": "718e414a1f0420641decf6b46b0e572da3813ad97418aed1231b21af40b41cb7",
+   "bbox": [
+    48,
+    26,
+    96,
+    119
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.78
+     ],
+     [
+      57.0,
+      48.62
+     ],
+     [
+      55.2,
+      46.35
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.78
+     ],
+     [
+      87.0,
+      52.27
+     ],
+     [
+      88.8,
+      51.05
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_E_004": {
+   "file": "stegosaurus_walk_E_004.png",
+   "sha256": "a8e361ebbe655d83c2013059a65a3a05dbeb63eb974e54a22ff009bd1206fec0",
+   "bbox": [
+    12,
+    49,
+    125,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      61.94
+     ],
+     [
+      97.73,
+      57.41
+     ],
+     [
+      101.52,
+      56.79
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.71
+     ],
+     [
+      94.15,
+      82.73
+     ],
+     [
+      97.11,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_W_004": {
+   "file": "stegosaurus_walk_W_004.png",
+   "sha256": "33c68004c8027a7b43dd84fa1beecd91df5f883d0b26b287e2846c09604a0769",
+   "bbox": [
+    18,
+    50,
+    132,
+    91
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.71
+     ],
+     [
+      46.27,
+      82.01
+     ],
+     [
+      42.48,
+      84.34
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      61.93
+     ],
+     [
+      49.85,
+      58.13
+     ],
+     [
+      46.89,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_S_005": {
+   "file": "stegosaurus_walk_S_005.png",
+   "sha256": "ace93fa7aecf8ad37e26bf0d0f43cb6f64ec28aaffe8b71eefa55e8ef6d0e135",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.86
+     ],
+     [
+      87.0,
+      90.74
+     ],
+     [
+      88.8,
+      94.65
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.86
+     ],
+     [
+      57.0,
+      86.27
+     ],
+     [
+      55.2,
+      89.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_N_005": {
+   "file": "stegosaurus_walk_N_005.png",
+   "sha256": "65b17e136a33d7638eda63e39599e219db263802e708400244cdba300fc0c4e5",
+   "bbox": [
+    48,
+    26,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.78
+     ],
+     [
+      57.0,
+      48.9
+     ],
+     [
+      55.2,
+      46.9
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.78
+     ],
+     [
+      87.0,
+      54.1
+     ],
+     [
+      88.8,
+      53.99
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_E_005": {
+   "file": "stegosaurus_walk_E_005.png",
+   "sha256": "874fed654cea971aaf89834750ea8d6e3f8831bb93d838f50f4f212f9b91b54c",
+   "bbox": [
+    13,
+    50,
+    125,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      61.94
+     ],
+     [
+      97.52,
+      57.52
+     ],
+     [
+      101.11,
+      57.0
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.71
+     ],
+     [
+      91.61,
+      82.48
+     ],
+     [
+      93.53,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_walk_W_005": {
+   "file": "stegosaurus_walk_W_005.png",
+   "sha256": "db0a20da0c3d5e708fbb5b63228dcd9026913d681feef735682b5ef019701d2f",
+   "bbox": [
+    18,
+    50,
+    131,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.71
+     ],
+     [
+      46.48,
+      82.12
+     ],
+     [
+      42.89,
+      84.55
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      61.94
+     ],
+     [
+      52.39,
+      57.88
+     ],
+     [
+      50.47,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_S_000": {
+   "file": "stegosaurus_run_S_000.png",
+   "sha256": "8f545e1d0e3a086cfaee576180716d5b8aa05e771abba1d093ad22f199093219",
+   "bbox": [
+    48,
+    20,
+    96,
+    115
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      87.34
+     ],
+     [
+      87.0,
+      84.97
+     ],
+     [
+      88.8,
+      84.35
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      87.34
+     ],
+     [
+      57.0,
+      91.34
+     ],
+     [
+      55.2,
+      95.35
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_N_000": {
+   "file": "stegosaurus_run_N_000.png",
+   "sha256": "cb16fc9f30802ad6dcf5c6116acebdd502480c393c3ad5381e51569b20a5aba4",
+   "bbox": [
+    48,
+    27,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      51.62
+     ],
+     [
+      57.0,
+      55.6
+     ],
+     [
+      55.2,
+      58.93
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      51.62
+     ],
+     [
+      87.0,
+      48.87
+     ],
+     [
+      88.8,
+      46.04
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_E_000": {
+   "file": "stegosaurus_run_E_000.png",
+   "sha256": "000e59fd591c7bffa048bd3e4c8b859a1008f6541a709e98f4e54ac155eb4378",
+   "bbox": [
+    12,
+    49,
+    126,
+    91
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      93.78,
+      62.59
+     ],
+     [
+      89.91,
+      57.98
+     ],
+     [
+      87.5,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      93.78,
+      76.37
+     ],
+     [
+      97.9,
+      82.41
+     ],
+     [
+      102.06,
+      84.47
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_W_000": {
+   "file": "stegosaurus_run_W_000.png",
+   "sha256": "c74cec208f8b9c0e49874828c052c9a0d0b5069c906f19054583f092e27a87fa",
+   "bbox": [
+    18,
+    49,
+    132,
+    91
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.22,
+      76.37
+     ],
+     [
+      54.09,
+      82.58
+     ],
+     [
+      56.5,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.22,
+      62.59
+     ],
+     [
+      46.1,
+      57.81
+     ],
+     [
+      41.94,
+      56.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_S_001": {
+   "file": "stegosaurus_run_S_001.png",
+   "sha256": "3aa680e6d6a65336e27f8e5b6aea13c792722c4dd23426282abe094cd4084592",
+   "bbox": [
+    48,
+    19,
+    96,
+    115
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      87.04
+     ],
+     [
+      87.0,
+      83.32
+     ],
+     [
+      88.8,
+      87.17
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      87.04
+     ],
+     [
+      57.0,
+      90.83
+     ],
+     [
+      55.2,
+      94.66
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_N_001": {
+   "file": "stegosaurus_run_N_001.png",
+   "sha256": "2f1cf99985b23d7342aed1192638377214bb1eb3c3084980525d2d739ae0da24",
+   "bbox": [
+    48,
+    27,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      51.31
+     ],
+     [
+      57.0,
+      54.93
+     ],
+     [
+      55.2,
+      53.14
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      51.31
+     ],
+     [
+      87.0,
+      49.69
+     ],
+     [
+      88.8,
+      47.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_E_001": {
+   "file": "stegosaurus_run_E_001.png",
+   "sha256": "c434a95373bc9caa3c49c865d795747414cd9e0db6515a74b1aeeb0569c5fa08",
+   "bbox": [
+    12,
+    50,
+    125,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      93.78,
+      62.29
+     ],
+     [
+      89.31,
+      56.83
+     ],
+     [
+      92.75,
+      56.38
+     ]
+    ],
+    "fore_R": [
+     [
+      93.78,
+      76.06
+     ],
+     [
+      97.08,
+      82.56
+     ],
+     [
+      100.47,
+      85.09
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_W_001": {
+   "file": "stegosaurus_run_W_001.png",
+   "sha256": "20c5f8e25b6eeed3325bdeb62cf4eb3a29474e78a9c8f58bd9c1e803479205b1",
+   "bbox": [
+    19,
+    50,
+    132,
+    90
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.22,
+      76.06
+     ],
+     [
+      54.69,
+      81.43
+     ],
+     [
+      51.25,
+      83.93
+     ]
+    ],
+    "fore_R": [
+     [
+      50.22,
+      62.29
+     ],
+     [
+      46.92,
+      57.96
+     ],
+     [
+      43.53,
+      57.54
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_S_002": {
+   "file": "stegosaurus_run_S_002.png",
+   "sha256": "5a94f5fe8092f1f6351a0557b0363904af1696d9d8d35bd4e6f0a1b5a5fd93af",
+   "bbox": [
+    48,
+    19,
+    96,
+    115
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      87.04
+     ],
+     [
+      87.0,
+      91.01
+     ],
+     [
+      88.8,
+      94.98
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      87.04
+     ],
+     [
+      57.0,
+      86.34
+     ],
+     [
+      55.2,
+      90.09
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_N_002": {
+   "file": "stegosaurus_run_N_002.png",
+   "sha256": "407b80d327a961370f27bc0c93417d60974fb13d5c80fd04432510d3e269e796",
+   "bbox": [
+    48,
+    27,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      51.31
+     ],
+     [
+      57.0,
+      48.27
+     ],
+     [
+      55.2,
+      45.16
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      51.31
+     ],
+     [
+      87.0,
+      54.69
+     ],
+     [
+      88.8,
+      53.19
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_E_002": {
+   "file": "stegosaurus_run_E_002.png",
+   "sha256": "0e5fe1ad7cfe8c78bd0903140d45e58e826565eae77f65a24da1371b286a7f64",
+   "bbox": [
+    12,
+    48,
+    125,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      93.78,
+      62.29
+     ],
+     [
+      98.06,
+      57.34
+     ],
+     [
+      102.38,
+      56.29
+     ]
+    ],
+    "fore_R": [
+     [
+      93.78,
+      76.06
+     ],
+     [
+      91.3,
+      82.82
+     ],
+     [
+      94.5,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_W_002": {
+   "file": "stegosaurus_run_W_002.png",
+   "sha256": "69322d459cda6092192905d10f94d89590a8ae674378977e553fa701f9f82778",
+   "bbox": [
+    19,
+    50,
+    132,
+    90
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.22,
+      76.06
+     ],
+     [
+      45.94,
+      81.94
+     ],
+     [
+      41.62,
+      83.84
+     ]
+    ],
+    "fore_R": [
+     [
+      50.22,
+      62.29
+     ],
+     [
+      52.7,
+      58.22
+     ],
+     [
+      49.5,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_run_S_003": {
+   "file": "stegosaurus_run_S_003.png",
+   "sha256": "4646890164f662dba6f96deedf84cfbda58e37d20fc4eb7ddaf5f896a80b321d",
+   "bbox": [
+    48,
+    20,
+    96,
+    115
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      87.34
+     ],
+     [
+      87.0,
+      91.34
+     ],
+     [
+      88.8,
+      95.35
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      87.34
+     ],
+     [
+      57.0,
+      84.97
+     ],
+     [
+      55.2,
+      84.35
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_N_003": {
+   "file": "stegosaurus_run_N_003.png",
+   "sha256": "e1244b2bfbeb82d72672f556bfb91e3711bf992a2531edc8dba537f4f25a7da3",
+   "bbox": [
+    48,
+    27,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      51.62
+     ],
+     [
+      57.0,
+      48.87
+     ],
+     [
+      55.2,
+      46.04
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      51.62
+     ],
+     [
+      87.0,
+      55.6
+     ],
+     [
+      88.8,
+      58.93
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_E_003": {
+   "file": "stegosaurus_run_E_003.png",
+   "sha256": "aed44e7c76fe7fa44fde343148b1823f320b0c72d82260bdd80c5b950682348b",
+   "bbox": [
+    12,
+    49,
+    126,
+    91
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      93.78,
+      62.59
+     ],
+     [
+      97.9,
+      57.81
+     ],
+     [
+      102.06,
+      56.92
+     ]
+    ],
+    "fore_R": [
+     [
+      93.78,
+      76.37
+     ],
+     [
+      89.91,
+      82.58
+     ],
+     [
+      87.5,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_W_003": {
+   "file": "stegosaurus_run_W_003.png",
+   "sha256": "0e33f7afe9dcd4a5f86d52ec4a8d63f3683e79abdf31a4b7ce33c416f51bb2c2",
+   "bbox": [
+    18,
+    49,
+    132,
+    91
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.22,
+      76.37
+     ],
+     [
+      46.1,
+      82.41
+     ],
+     [
+      41.94,
+      84.47
+     ]
+    ],
+    "fore_R": [
+     [
+      50.22,
+      62.59
+     ],
+     [
+      54.09,
+      57.98
+     ],
+     [
+      56.5,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_S_004": {
+   "file": "stegosaurus_run_S_004.png",
+   "sha256": "fb2d6cb65928c3444ed56c8944cc5abeb4efc8784998a2f14289dc9a453c93d7",
+   "bbox": [
+    48,
+    19,
+    96,
+    115
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      87.04
+     ],
+     [
+      87.0,
+      90.83
+     ],
+     [
+      88.8,
+      94.66
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      87.04
+     ],
+     [
+      57.0,
+      83.32
+     ],
+     [
+      55.2,
+      87.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_N_004": {
+   "file": "stegosaurus_run_N_004.png",
+   "sha256": "9903815723876a8f556afad84f740e8a58bf16337062520e3949539484a530dc",
+   "bbox": [
+    48,
+    27,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      51.31
+     ],
+     [
+      57.0,
+      49.69
+     ],
+     [
+      55.2,
+      47.96
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      51.31
+     ],
+     [
+      87.0,
+      54.93
+     ],
+     [
+      88.8,
+      53.14
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_E_004": {
+   "file": "stegosaurus_run_E_004.png",
+   "sha256": "0c6272122943a5fcf758417f4091907cb07ebb7f5cb7ef0ff252d4f867f9cb33",
+   "bbox": [
+    12,
+    50,
+    125,
+    90
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      93.78,
+      62.29
+     ],
+     [
+      97.08,
+      57.96
+     ],
+     [
+      100.47,
+      57.54
+     ]
+    ],
+    "fore_R": [
+     [
+      93.78,
+      76.06
+     ],
+     [
+      89.31,
+      81.43
+     ],
+     [
+      92.75,
+      83.93
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_W_004": {
+   "file": "stegosaurus_run_W_004.png",
+   "sha256": "7198cfe466c3777b377750a9c29c9e5a0a55330df755e706ec30314fbe0327a1",
+   "bbox": [
+    19,
+    50,
+    132,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.22,
+      76.06
+     ],
+     [
+      46.92,
+      82.56
+     ],
+     [
+      43.53,
+      85.09
+     ]
+    ],
+    "fore_R": [
+     [
+      50.22,
+      62.29
+     ],
+     [
+      54.69,
+      56.83
+     ],
+     [
+      51.25,
+      56.38
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_S_005": {
+   "file": "stegosaurus_run_S_005.png",
+   "sha256": "a705ede0a981d6dba25ef888cf9aa4273f2566b4f3220ca95cd5939c5b1ee454",
+   "bbox": [
+    48,
+    19,
+    96,
+    115
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      87.04
+     ],
+     [
+      87.0,
+      86.34
+     ],
+     [
+      88.8,
+      90.09
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      87.04
+     ],
+     [
+      57.0,
+      91.01
+     ],
+     [
+      55.2,
+      94.98
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_N_005": {
+   "file": "stegosaurus_run_N_005.png",
+   "sha256": "a3195fce2e48a76804ff7d65c9bea42b3196c6938aa23ca20c4d63dbc8946a5a",
+   "bbox": [
+    48,
+    27,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      51.31
+     ],
+     [
+      57.0,
+      54.69
+     ],
+     [
+      55.2,
+      53.19
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      51.31
+     ],
+     [
+      87.0,
+      48.27
+     ],
+     [
+      88.8,
+      45.16
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_E_005": {
+   "file": "stegosaurus_run_E_005.png",
+   "sha256": "5e00e9ef081fc9d97fb020cdc081af7e99ee00e263b7efd8aeb3dddd291a72ad",
+   "bbox": [
+    12,
+    50,
+    125,
+    90
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      93.78,
+      62.29
+     ],
+     [
+      91.3,
+      58.22
+     ],
+     [
+      94.5,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      93.78,
+      76.06
+     ],
+     [
+      98.06,
+      81.94
+     ],
+     [
+      102.38,
+      83.84
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_run_W_005": {
+   "file": "stegosaurus_run_W_005.png",
+   "sha256": "f27f57ff82e23bacfda2c4ed995a4a7b390d884120ab1e8856b7ecbd436e156f",
+   "bbox": [
+    19,
+    48,
+    132,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.22,
+      76.06
+     ],
+     [
+      52.7,
+      82.82
+     ],
+     [
+      49.5,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.22,
+      62.29
+     ],
+     [
+      45.94,
+      57.34
+     ],
+     [
+      41.62,
+      56.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "stegosaurus_attack_S_000": {
+   "file": "stegosaurus_attack_S_000.png",
+   "sha256": "c0f333c2ed21ea8011bea622df4ae679f2e7a9e536046184ac83badea8a57bff",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.8
+     ],
+     [
+      87.0,
+      89.84
+     ],
+     [
+      88.8,
+      92.96
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.8
+     ],
+     [
+      57.0,
+      89.84
+     ],
+     [
+      55.2,
+      92.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_N_000": {
+   "file": "stegosaurus_attack_N_000.png",
+   "sha256": "c6c9a90374c30f5918b58e924f8f1cf970bd3a91ac94be89f354c2634df70d61",
+   "bbox": [
+    48,
+    25,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.72
+     ],
+     [
+      57.0,
+      50.58
+     ],
+     [
+      55.2,
+      50.32
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.72
+     ],
+     [
+      87.0,
+      50.58
+     ],
+     [
+      88.8,
+      50.32
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_E_000": {
+   "file": "stegosaurus_attack_E_000.png",
+   "sha256": "659f123928a36e750a638c4de78e32b90ff15538e31852980a9a118992a7838d",
+   "bbox": [
+    13,
+    50,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      61.87
+     ],
+     [
+      95.94,
+      57.91
+     ],
+     [
+      98.0,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.65
+     ],
+     [
+      95.94,
+      82.51
+     ],
+     [
+      98.0,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_W_000": {
+   "file": "stegosaurus_attack_W_000.png",
+   "sha256": "aeb76d95aec314360c740d66d75c0e84a2f5c765f9a840881233749a053ef6fd",
+   "bbox": [
+    18,
+    50,
+    131,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.65
+     ],
+     [
+      48.06,
+      82.51
+     ],
+     [
+      46.0,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      61.87
+     ],
+     [
+      48.06,
+      57.91
+     ],
+     [
+      46.0,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_S_001": {
+   "file": "stegosaurus_attack_S_001.png",
+   "sha256": "5ae65e9c4ffdde3df81d6ab094ee088627ab86b67b3822e98c4e71b5892779b6",
+   "bbox": [
+    48,
+    21,
+    96,
+    113
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.11
+     ],
+     [
+      87.0,
+      89.35
+     ],
+     [
+      88.8,
+      92.66
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.11
+     ],
+     [
+      57.0,
+      89.35
+     ],
+     [
+      55.2,
+      92.66
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_N_001": {
+   "file": "stegosaurus_attack_N_001.png",
+   "sha256": "bbc37bf43ca40e57b63b33869bbb9d172dd354410f32929d42139c0faf6a87fd",
+   "bbox": [
+    48,
+    26,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      51.41
+     ],
+     [
+      57.0,
+      50.95
+     ],
+     [
+      55.2,
+      50.37
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      51.41
+     ],
+     [
+      87.0,
+      50.95
+     ],
+     [
+      88.8,
+      50.37
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_E_001": {
+   "file": "stegosaurus_attack_E_001.png",
+   "sha256": "46fa50a430d49eaaeb884ce08a5240850a31696f6f9902ac476586489dc3bee9",
+   "bbox": [
+    14,
+    50,
+    125,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      93.16,
+      61.87
+     ],
+     [
+      95.42,
+      57.85
+     ],
+     [
+      97.79,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      93.16,
+      75.65
+     ],
+     [
+      95.42,
+      82.45
+     ],
+     [
+      97.79,
+      85.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_W_001": {
+   "file": "stegosaurus_attack_W_001.png",
+   "sha256": "da091acaa5d8a742cd3dc17c4a4fb6305d550c4ed34a15b987bd8c2368cb2252",
+   "bbox": [
+    19,
+    50,
+    130,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.84,
+      75.65
+     ],
+     [
+      48.58,
+      82.45
+     ],
+     [
+      46.21,
+      85.29
+     ]
+    ],
+    "fore_R": [
+     [
+      50.84,
+      61.87
+     ],
+     [
+      48.58,
+      57.85
+     ],
+     [
+      46.21,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_S_002": {
+   "file": "stegosaurus_attack_S_002.png",
+   "sha256": "6ecc9a7bb652cd851095260e92c31f5d9faeee4d7e00898ac214b408ce46e0b5",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.8
+     ],
+     [
+      87.0,
+      89.84
+     ],
+     [
+      88.8,
+      92.96
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.8
+     ],
+     [
+      57.0,
+      89.84
+     ],
+     [
+      55.2,
+      92.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_N_002": {
+   "file": "stegosaurus_attack_N_002.png",
+   "sha256": "5282bc007c0ed299e09007af7eab0c600af3f72b6113843796a9082a22e5c5a3",
+   "bbox": [
+    48,
+    26,
+    96,
+    118
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.72
+     ],
+     [
+      57.0,
+      50.58
+     ],
+     [
+      55.2,
+      50.32
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.72
+     ],
+     [
+      87.0,
+      50.58
+     ],
+     [
+      88.8,
+      50.32
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_E_002": {
+   "file": "stegosaurus_attack_E_002.png",
+   "sha256": "59f6625e88af7b7432be4dd0a9b110103b3ec0df1ff21de455eff5336d163070",
+   "bbox": [
+    13,
+    50,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      61.87
+     ],
+     [
+      95.94,
+      57.91
+     ],
+     [
+      98.0,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.65
+     ],
+     [
+      95.94,
+      82.51
+     ],
+     [
+      98.0,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_W_002": {
+   "file": "stegosaurus_attack_W_002.png",
+   "sha256": "01efe240894005bf7e671a420c33c324da884a0185e7d7e145970a36d8186fb6",
+   "bbox": [
+    18,
+    50,
+    131,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.65
+     ],
+     [
+      48.06,
+      82.51
+     ],
+     [
+      46.0,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      61.87
+     ],
+     [
+      48.06,
+      57.91
+     ],
+     [
+      46.0,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_S_003": {
+   "file": "stegosaurus_attack_S_003.png",
+   "sha256": "9861c4116c46a81aab7f3c06867fe40a5be25ec4e3f4dd9dbb9062260a9a6bc1",
+   "bbox": [
+    48,
+    23,
+    97,
+    115
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      87.49
+     ],
+     [
+      87.0,
+      89.45
+     ],
+     [
+      88.8,
+      92.96
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      87.49
+     ],
+     [
+      57.0,
+      89.45
+     ],
+     [
+      55.2,
+      92.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_N_003": {
+   "file": "stegosaurus_attack_N_003.png",
+   "sha256": "f2b95a41e9108a6e51ef70d962aa5561601de1c71669e1c3774b76f0f7f9286b",
+   "bbox": [
+    48,
+    25,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.03
+     ],
+     [
+      57.0,
+      51.27
+     ],
+     [
+      55.2,
+      50.32
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.03
+     ],
+     [
+      87.0,
+      51.27
+     ],
+     [
+      88.8,
+      50.32
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_E_003": {
+   "file": "stegosaurus_attack_E_003.png",
+   "sha256": "97b3b3a2916fa2ae1c7274801b55b9b9c47380ec955ef259690556b759da5cc7",
+   "bbox": [
+    17,
+    47,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.84,
+      61.87
+     ],
+     [
+      95.28,
+      58.06
+     ],
+     [
+      98.0,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.84,
+      75.65
+     ],
+     [
+      95.28,
+      82.66
+     ],
+     [
+      98.0,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_W_003": {
+   "file": "stegosaurus_attack_W_003.png",
+   "sha256": "ef6de2a1b5b5b56dddf1ab4703e2aeed56db78d8660b828725d6e2ffa5678f5c",
+   "bbox": [
+    18,
+    50,
+    127,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      49.16,
+      75.65
+     ],
+     [
+      48.72,
+      82.66
+     ],
+     [
+      46.0,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      49.16,
+      61.87
+     ],
+     [
+      48.72,
+      58.06
+     ],
+     [
+      46.0,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_S_004": {
+   "file": "stegosaurus_attack_S_004.png",
+   "sha256": "a964c6cf52950af5ef45be3aa4b204cfdd27cf3ef4f688c448fe5db56111030b",
+   "bbox": [
+    48,
+    22,
+    96,
+    115
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      87.14
+     ],
+     [
+      87.0,
+      89.52
+     ],
+     [
+      88.8,
+      92.96
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      87.14
+     ],
+     [
+      57.0,
+      89.52
+     ],
+     [
+      55.2,
+      92.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_N_004": {
+   "file": "stegosaurus_attack_N_004.png",
+   "sha256": "51ede840d536e09e3a7263719bb2228a228e373fc890c97b4a12e5faae823c73",
+   "bbox": [
+    48,
+    26,
+    96,
+    116
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.38
+     ],
+     [
+      57.0,
+      51.15
+     ],
+     [
+      55.2,
+      50.32
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.38
+     ],
+     [
+      87.0,
+      51.15
+     ],
+     [
+      88.8,
+      50.32
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_E_004": {
+   "file": "stegosaurus_attack_E_004.png",
+   "sha256": "078fc8991ea82b056faf846732eee5df51f805fe1f35fb0c80704e01a7842882",
+   "bbox": [
+    15,
+    50,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.42,
+      61.87
+     ],
+     [
+      95.4,
+      58.03
+     ],
+     [
+      98.0,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.42,
+      75.65
+     ],
+     [
+      95.4,
+      82.63
+     ],
+     [
+      98.0,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_W_004": {
+   "file": "stegosaurus_attack_W_004.png",
+   "sha256": "bea95e30e08ef2a529b8c4c2ed4b721d7b0b65e282e01636fefa9c3d00bfbdb4",
+   "bbox": [
+    18,
+    50,
+    129,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      49.58,
+      75.65
+     ],
+     [
+      48.6,
+      82.63
+     ],
+     [
+      46.0,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      49.58,
+      61.87
+     ],
+     [
+      48.6,
+      58.03
+     ],
+     [
+      46.0,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_S_005": {
+   "file": "stegosaurus_attack_S_005.png",
+   "sha256": "5317b6d8669e3e74662a6f9672a2a98f45c476f7b8edadbba96fd35c02345796",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      86.8
+     ],
+     [
+      87.0,
+      89.84
+     ],
+     [
+      88.8,
+      92.96
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      86.8
+     ],
+     [
+      57.0,
+      89.84
+     ],
+     [
+      55.2,
+      92.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_N_005": {
+   "file": "stegosaurus_attack_N_005.png",
+   "sha256": "93c363539bb0541b5bf869f4759c3886d5ae99bd7a5adf9d113ccd09b4c60b62",
+   "bbox": [
+    48,
+    26,
+    96,
+    119
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      50.72
+     ],
+     [
+      57.0,
+      50.58
+     ],
+     [
+      55.2,
+      50.32
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      50.72
+     ],
+     [
+      87.0,
+      50.58
+     ],
+     [
+      88.8,
+      50.32
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_E_005": {
+   "file": "stegosaurus_attack_E_005.png",
+   "sha256": "aa0579c21336996ea115e02c6ee623db42119b0655388e7e9e78a4b7ffb11d83",
+   "bbox": [
+    13,
+    50,
+    126,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      94.0,
+      61.87
+     ],
+     [
+      95.94,
+      57.91
+     ],
+     [
+      98.0,
+      57.86
+     ]
+    ],
+    "fore_R": [
+     [
+      94.0,
+      75.65
+     ],
+     [
+      95.94,
+      82.51
+     ],
+     [
+      98.0,
+      85.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_attack_W_005": {
+   "file": "stegosaurus_attack_W_005.png",
+   "sha256": "2eab55efaf13a2c5a9d46523c5b1e199e2cf2bec6a0d838dee83f665b39d4e0d",
+   "bbox": [
+    18,
+    50,
+    131,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      50.0,
+      75.65
+     ],
+     [
+      48.06,
+      82.51
+     ],
+     [
+      46.0,
+      85.42
+     ]
+    ],
+    "fore_R": [
+     [
+      50.0,
+      61.87
+     ],
+     [
+      48.06,
+      57.91
+     ],
+     [
+      46.0,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_hurt_S_000": {
+   "file": "stegosaurus_hurt_S_000.png",
+   "sha256": "d5266f834711ecaa051430446c9d247a632e5f62f126c75e59375590b06cc6da",
+   "bbox": [
+    48,
+    19,
+    96,
+    106
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      84.01
+     ],
+     [
+      87.0,
+      87.44
+     ],
+     [
+      88.8,
+      90.94
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      84.01
+     ],
+     [
+      57.0,
+      87.44
+     ],
+     [
+      55.2,
+      90.94
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_hurt_N_000": {
+   "file": "stegosaurus_hurt_N_000.png",
+   "sha256": "9beb22737bebc825f0f08725f2e76124aeb6ccdf403e812b7fc0ff2b43e2e618",
+   "bbox": [
+    48,
+    28,
+    96,
+    122
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      52.55
+     ],
+     [
+      57.0,
+      51.75
+     ],
+     [
+      55.2,
+      50.82
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      52.55
+     ],
+     [
+      87.0,
+      51.75
+     ],
+     [
+      88.8,
+      50.82
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_hurt_E_000": {
+   "file": "stegosaurus_hurt_E_000.png",
+   "sha256": "739559b1987a4e4997fcf5dcc23c8354ef9dcf3f543ec78e960c9e135c4df054",
+   "bbox": [
+    10,
+    50,
+    119,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      91.18,
+      61.39
+     ],
+     [
+      93.77,
+      57.3
+     ],
+     [
+      96.46,
+      57.1
+     ]
+    ],
+    "fore_R": [
+     [
+      91.18,
+      75.17
+     ],
+     [
+      93.77,
+      81.9
+     ],
+     [
+      96.46,
+      84.66
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_hurt_W_000": {
+   "file": "stegosaurus_hurt_W_000.png",
+   "sha256": "c381fdd69049dafc8c454e7f6b5538831d8e8d80ef7d4360fda10b4713658198",
+   "bbox": [
+    25,
+    50,
+    134,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      52.82,
+      75.17
+     ],
+     [
+      50.23,
+      81.9
+     ],
+     [
+      47.54,
+      84.66
+     ]
+    ],
+    "fore_R": [
+     [
+      52.82,
+      61.39
+     ],
+     [
+      50.23,
+      57.3
+     ],
+     [
+      47.54,
+      57.1
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_hurt_S_001": {
+   "file": "stegosaurus_hurt_S_001.png",
+   "sha256": "04b2221dbe3a7d5bef6c9ad8eed904d4e959eab6fd18524c78a07cf1e7b0c367",
+   "bbox": [
+    48,
+    20,
+    96,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.4,
+      85.41
+     ],
+     [
+      87.0,
+      88.69
+     ],
+     [
+      88.8,
+      92.03
+     ]
+    ],
+    "fore_R": [
+     [
+      63.6,
+      85.41
+     ],
+     [
+      57.0,
+      88.69
+     ],
+     [
+      55.2,
+      92.03
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_hurt_N_001": {
+   "file": "stegosaurus_hurt_N_001.png",
+   "sha256": "341b28dee7e9e1246082215946441c16fec753528a241b12956491e334328879",
+   "bbox": [
+    48,
+    27,
+    96,
+    120
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.6,
+      51.63
+     ],
+     [
+      57.0,
+      51.12
+     ],
+     [
+      55.2,
+      50.48
+     ]
+    ],
+    "fore_R": [
+     [
+      80.4,
+      51.63
+     ],
+     [
+      87.0,
+      51.12
+     ],
+     [
+      88.8,
+      50.48
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_hurt_E_001": {
+   "file": "stegosaurus_hurt_E_001.png",
+   "sha256": "b1bbe6d5da26581a84c8a37d1f31109d44f368e45c60a1f2683b406d724d676b",
+   "bbox": [
+    11,
+    50,
+    123,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      92.6,
+      61.63
+     ],
+     [
+      94.91,
+      57.6
+     ],
+     [
+      97.33,
+      57.48
+     ]
+    ],
+    "fore_R": [
+     [
+      92.6,
+      75.41
+     ],
+     [
+      94.91,
+      82.2
+     ],
+     [
+      97.33,
+      85.03
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_hurt_W_001": {
+   "file": "stegosaurus_hurt_W_001.png",
+   "sha256": "22fca0ad764cccb1ea5aec70158d9cd6799f4163be462c6e602bdcac2c5340a2",
+   "bbox": [
+    21,
+    50,
+    133,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      51.4,
+      75.41
+     ],
+     [
+      49.09,
+      82.2
+     ],
+     [
+      46.67,
+      85.03
+     ]
+    ],
+    "fore_R": [
+     [
+      51.4,
+      61.63
+     ],
+     [
+      49.09,
+      57.6
+     ],
+     [
+      46.67,
+      57.48
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "stegosaurus_death_S_000": {
+   "file": "stegosaurus_death_S_000.png",
+   "sha256": "e6a97581b136c029dae9bba45cf134b32a2edc8de832b1abb1b8c94c568e5abd",
+   "bbox": [
+    48,
+    20,
+    96,
+    114
+   ]
+  },
+  "stegosaurus_death_N_000": {
+   "file": "stegosaurus_death_N_000.png",
+   "sha256": "3e60e7c6efcda5df95580869282f79077d052b5bc6adb73ada9ef80a4057568a",
+   "bbox": [
+    48,
+    26,
+    96,
+    119
+   ]
+  },
+  "stegosaurus_death_E_000": {
+   "file": "stegosaurus_death_E_000.png",
+   "sha256": "1d060a85bf327099b709cda5a6dd63843b1af7f23de2a18d2ab98cf1f4742fe1",
+   "bbox": [
+    12,
+    50,
+    126,
+    92
+   ]
+  },
+  "stegosaurus_death_W_000": {
+   "file": "stegosaurus_death_W_000.png",
+   "sha256": "28b4ac8d2a758dbef7b44f6ac67249e6d56f8306b3687339b2545e865c920dc5",
+   "bbox": [
+    18,
+    50,
+    132,
+    92
+   ]
+  },
+  "stegosaurus_death_S_001": {
+   "file": "stegosaurus_death_S_001.png",
+   "sha256": "9686fa6be13f15328d6ce03a993bc362856202ac998925298ff2dc03f94c1eda",
+   "bbox": [
+    48,
+    19,
+    97,
+    114
+   ]
+  },
+  "stegosaurus_death_N_001": {
+   "file": "stegosaurus_death_N_001.png",
+   "sha256": "dce060c239291725644a1b367589ddbe57ddf0829668e388ae8bcbbdd554f7d3",
+   "bbox": [
+    47,
+    25,
+    96,
+    118
+   ]
+  },
+  "stegosaurus_death_E_001": {
+   "file": "stegosaurus_death_E_001.png",
+   "sha256": "9d6cbcfb448bd9617d88bbba53691ec0146ea9aa55f03d4d4bd5311b911fcca6",
+   "bbox": [
+    12,
+    48,
+    126,
+    90
+   ]
+  },
+  "stegosaurus_death_W_001": {
+   "file": "stegosaurus_death_W_001.png",
+   "sha256": "e809973081d0632ffcfaff49ad9624b4fbda94b4fc03440b928c16224957e90d",
+   "bbox": [
+    18,
+    50,
+    132,
+    93
+   ]
+  },
+  "stegosaurus_death_S_002": {
+   "file": "stegosaurus_death_S_002.png",
+   "sha256": "bb916905d4f17a253ca05b33de699aa492ee580a89a305c612c5d65812c0110a",
+   "bbox": [
+    52,
+    17,
+    98,
+    114
+   ]
+  },
+  "stegosaurus_death_N_002": {
+   "file": "stegosaurus_death_N_002.png",
+   "sha256": "f9957725a1cf4da11b655641fed8da42e78f6176e9507fc8f846401331c9c2fa",
+   "bbox": [
+    46,
+    24,
+    92,
+    117
+   ]
+  },
+  "stegosaurus_death_E_002": {
+   "file": "stegosaurus_death_E_002.png",
+   "sha256": "c314e67770850cad6a1f2e87cfad679b457933140e6193bb30e2478309b9403a",
+   "bbox": [
+    12,
+    38,
+    126,
+    85
+   ]
+  },
+  "stegosaurus_death_W_002": {
+   "file": "stegosaurus_death_W_002.png",
+   "sha256": "418a34e2551cde571a710435d1f63410fa979ddc012ca5e72f1a5d762c9c2020",
+   "bbox": [
+    18,
+    50,
+    132,
+    94
+   ]
+  },
+  "stegosaurus_death_S_003": {
+   "file": "stegosaurus_death_S_003.png",
+   "sha256": "eb73fb828bb2e4c5392277c3848dbaa6ffaaed70a561fb792e23b4981aaf59fb",
+   "bbox": [
+    59,
+    19,
+    111,
+    114
+   ]
+  },
+  "stegosaurus_death_N_003": {
+   "file": "stegosaurus_death_N_003.png",
+   "sha256": "2d8da375300bf7563d7516d66cc9493c41bfaa0fa369463fa3707671dccf1628",
+   "bbox": [
+    33,
+    25,
+    85,
+    116
+   ]
+  },
+  "stegosaurus_death_E_003": {
+   "file": "stegosaurus_death_E_003.png",
+   "sha256": "9a9f62f44eabd752df3a263dc198160f7a9f4fad53829287d885028d7a9f31ef",
+   "bbox": [
+    13,
+    34,
+    126,
+    77
+   ]
+  },
+  "stegosaurus_death_W_003": {
+   "file": "stegosaurus_death_W_003.png",
+   "sha256": "04bf231c5b502518bbe62fd7413a4ff9812929ef6c08ea4d439cd74f5b856233",
+   "bbox": [
+    18,
+    54,
+    131,
+    98
+   ]
+  },
+  "stegosaurus_death_S_004": {
+   "file": "stegosaurus_death_S_004.png",
+   "sha256": "4912101f6187c80ceb0fd5d551a696705d0278e0d11663d77f0f892a0bfa3062",
+   "bbox": [
+    67,
+    24,
+    114,
+    115
+   ]
+  },
+  "stegosaurus_death_N_004": {
+   "file": "stegosaurus_death_N_004.png",
+   "sha256": "672a836cac5feae08ab3a1651e1822e3cf26cde088872351abe451df36773b72",
+   "bbox": [
+    30,
+    27,
+    77,
+    117
+   ]
+  },
+  "stegosaurus_death_E_004": {
+   "file": "stegosaurus_death_E_004.png",
+   "sha256": "80a91af39d2baf78ec67358357901e120d8da68825a80f74cdccc76d13882a9c",
+   "bbox": [
+    16,
+    35,
+    125,
+    79
+   ]
+  },
+  "stegosaurus_death_W_004": {
+   "file": "stegosaurus_death_W_004.png",
+   "sha256": "054ede8cc40745cf5acc3dffb361bf4650e26bd6bf1f2996f850d033dbd32c6e",
+   "bbox": [
+    19,
+    60,
+    128,
+    106
+   ]
+  },
+  "stegosaurus_death_S_005": {
+   "file": "stegosaurus_death_S_005.png",
+   "sha256": "dd8449c7b412f10e00c884a214cffcb0130a8a4c43d7f4a5e5b3b8b4fc1ba755",
+   "bbox": [
+    70,
+    27,
+    114,
+    116
+   ]
+  },
+  "stegosaurus_death_N_005": {
+   "file": "stegosaurus_death_N_005.png",
+   "sha256": "21db288a6ea6468f5fe3b94313cf0ce03a8f0acd77ec2800b37086fd6641bdd6",
+   "bbox": [
+    30,
+    28,
+    74,
+    117
+   ]
+  },
+  "stegosaurus_death_E_005": {
+   "file": "stegosaurus_death_E_005.png",
+   "sha256": "8e7b8a37d376dae0a8e108c17119aaec44941cb755b93247e3988484e5dd1050",
+   "bbox": [
+    17,
+    36,
+    125,
+    81
+   ]
+  },
+  "stegosaurus_death_W_005": {
+   "file": "stegosaurus_death_W_005.png",
+   "sha256": "f8a25e6e4e6dc8a15a17d1a3eb3edeef4095465dec783f5751be8c7a3b282321",
+   "bbox": [
+    19,
+    63,
+    127,
+    108
+   ]
+  }
+ }
+}
