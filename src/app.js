@@ -1150,6 +1150,12 @@
     }
     function babyScale(r){const b=r.extras&&r.extras.baby;if(!b)return 1;return C.BABY.scale+(1-C.BABY.scale)*Math.max(0,(b.growth-C.BABY.damage)/(C.BABY.cap-C.BABY.damage));}
     function drawHatch(r){const b=r.extras&&r.extras.baby;if(!b||!(b.hatch>0))return false;const f=Math.min(5,Math.floor((1-b.hatch/C.BABY.hatch)*6));sprite(EXTRA+'egg_hatch_'+f+'.png',r.player.x,r.player.y,1,false,0,1.5);return f<4;}
+    function drawAmberGlint(r,view,time){
+      const a=r.amberPiece;if(!C.FEATURES.amber||!a||!near(a,view))return;
+      const d=Math.hypot(a.x-r.player.x,a.y-r.player.y),on=d<C.AMBER.glint?Math.floor(time*1.5)%3===0:Math.floor(time/4)%2===0&&Math.floor(time*8)%8===0; // same rhythm as the ground glint
+      if(!on)return;const x=Math.round(a.x),y=Math.round(a.y)-8,k=d<C.AMBER.glint?3:2;
+      ctx.save();ctx.globalAlpha=d<C.AMBER.glint?.9:.6;ctx.fillStyle='#fff1c9';ctx.fillRect(x-1,y-k,2,k*2);ctx.fillRect(x-k,y-1,k*2,2);ctx.fillStyle='#dfbc52';ctx.fillRect(x-1,y-1,2,2);ctx.restore();canvas.dataset.amberGlint=String(x)+','+String(y);
+    }
     function drawExtrasHUD(r){
       const chip=shell.querySelector('#extras-chip');if(!chip)return;
       const parts=[],stacks=C.streakOf?C.streakOf(r):0;
@@ -1281,6 +1287,7 @@
         if (o.enemy && o.enemy.hit > 0) sprite(o.path, o.x, o.y, .7 * o.enemy.hit / .15, true, o.rotation, o.visualScale || 1);
         if (o.enemy && o.enemy.hp < o.enemy.maxHP && !o.enemy.boss) { ctx.fillStyle = '#151b19'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, 40, 4); ctx.fillStyle = '#c45f45'; ctx.fillRect(Math.round(o.x) - 20, Math.round(o.y) - enemyLabelOffset(o.enemy) + 7, Math.round(40 * o.enemy.hp / o.enemy.maxHP), 4); }
       }
+      if(r&&C.FEATURES.amberFair)drawAmberGlint(r,view,r.seconds); // the glint stays visible above plants; the stone itself may hide
       if(r&&r.ashWorld)drawAshAir(r);
       if(r)for(const c of r.ashClouds||[])if(c.until>r.seconds){if(drawApprovedAsh(c,r))continue;const fade=Math.min(1,c.until-r.seconds);ctx.save();ctx.globalAlpha=.32*fade;ctx.fillStyle='#626861';for(let i=0;i<5;i++){const a=i*1.26+c.x*.01;ctx.beginPath();ctx.arc(c.x+Math.cos(a)*c.radius*.35,c.y+Math.sin(a)*c.radius*.25,c.radius*.55,0,Math.PI*2);ctx.fill();}ctx.restore();} // B1c native ash clouds, with procedural fallback.
       if(r)drawTelegraphs(r);
