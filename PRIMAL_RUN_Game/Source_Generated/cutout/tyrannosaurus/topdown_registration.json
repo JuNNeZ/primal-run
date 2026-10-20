@@ -1,0 +1,1023 @@
+{
+  "species": "tyrannosaurus",
+  "camera": "oblique overhead E/W; upper-left light",
+  "directions": {
+    "E": {
+      "parts": {
+        "body": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            885,
+            75,
+            1350,
+            420
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            1005,
+            255
+          ],
+          "source_tip": [
+            1290,
+            255
+          ],
+          "sampled_pivot": [
+            8,
+            12
+          ],
+          "sampled_tip": [
+            27,
+            12
+          ],
+          "target_pivot": [
+            72,
+            72
+          ],
+          "parent": null,
+          "cap_edges": [
+            "left",
+            "right"
+          ]
+        },
+        "tail1": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            686,
+            84,
+            994,
+            420
+          ],
+          "integer_sample": 14,
+          "source_pivot": [
+            952,
+            252
+          ],
+          "source_tip": [
+            742,
+            252
+          ],
+          "sampled_pivot": [
+            19,
+            12
+          ],
+          "sampled_tip": [
+            4,
+            12
+          ],
+          "target_pivot": [
+            67,
+            72
+          ],
+          "parent": "body",
+          "cap_edges": [
+            "left",
+            "right"
+          ]
+        },
+        "tail2": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            406,
+            84,
+            784,
+            420
+          ],
+          "integer_sample": 14,
+          "source_pivot": [
+            742,
+            252
+          ],
+          "source_tip": [
+            462,
+            252
+          ],
+          "sampled_pivot": [
+            24,
+            12
+          ],
+          "sampled_tip": [
+            4,
+            12
+          ],
+          "target_pivot": {
+            "part": "tail1",
+            "point": "tip"
+          },
+          "parent": "tail1",
+          "cap_edges": [
+            "left",
+            "right"
+          ]
+        },
+        "tail3": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            56,
+            84,
+            504,
+            420
+          ],
+          "integer_sample": 14,
+          "source_pivot": [
+            462,
+            252
+          ],
+          "source_tip": [
+            84,
+            196
+          ],
+          "sampled_pivot": [
+            29,
+            12
+          ],
+          "sampled_tip": [
+            2,
+            7
+          ],
+          "target_pivot": {
+            "part": "tail2",
+            "point": "tip"
+          },
+          "parent": "tail2",
+          "cap_edges": [
+            "right"
+          ]
+        },
+        "neck": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            1245,
+            120,
+            1485,
+            390
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            1290,
+            255
+          ],
+          "source_tip": [
+            1425,
+            255
+          ],
+          "sampled_pivot": [
+            3,
+            9
+          ],
+          "sampled_tip": [
+            12,
+            9
+          ],
+          "target_pivot": {
+            "part": "body",
+            "point": "tip"
+          },
+          "parent": "body",
+          "cap_edges": [
+            "left",
+            "right"
+          ]
+        },
+        "head": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            1380,
+            120,
+            1740,
+            390
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            1425,
+            255
+          ],
+          "source_tip": [
+            1695,
+            270
+          ],
+          "sampled_pivot": [
+            3,
+            9
+          ],
+          "sampled_tip": [
+            21,
+            10
+          ],
+          "target_pivot": {
+            "part": "neck",
+            "point": "tip"
+          },
+          "parent": "neck",
+          "cap_edges": [
+            "left"
+          ]
+        },
+        "jaw": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            1425,
+            270,
+            1725,
+            375
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            1455,
+            285
+          ],
+          "source_tip": [
+            1695,
+            315
+          ],
+          "sampled_pivot": [
+            2,
+            1
+          ],
+          "sampled_tip": [
+            18,
+            3
+          ],
+          "target_pivot": [
+            102,
+            74
+          ],
+          "parent": "head"
+        },
+        "thigh_L": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            680,
+            200,
+            875,
+            355
+          ],
+          "integer_sample": 12,
+          "source_pivot": [
+            715,
+            315
+          ],
+          "source_tip": [
+            840,
+            240
+          ],
+          "sampled_pivot": [
+            3,
+            10
+          ],
+          "sampled_tip": [
+            13,
+            3
+          ],
+          "target_pivot": [
+            72,
+            66
+          ],
+          "parent": "body"
+        },
+        "shin_L": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            945,
+            225,
+            1110,
+            320
+          ],
+          "integer_sample": 16,
+          "source_pivot": [
+            1080,
+            290
+          ],
+          "source_tip": [
+            970,
+            255
+          ],
+          "sampled_pivot": [
+            8,
+            4
+          ],
+          "sampled_tip": [
+            2,
+            2
+          ],
+          "target_pivot": {
+            "part": "thigh_L",
+            "point": "tip"
+          },
+          "parent": "thigh_L"
+        },
+        "foot_L": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            1200,
+            205,
+            1390,
+            350
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            1230,
+            280
+          ],
+          "source_tip": [
+            1340,
+            275
+          ],
+          "sampled_pivot": [
+            2,
+            5
+          ],
+          "sampled_tip": [
+            9,
+            5
+          ],
+          "target_pivot": {
+            "part": "shin_L",
+            "point": "tip"
+          },
+          "parent": "shin_L"
+        },
+        "thigh_R": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            105,
+            360,
+            290,
+            520
+          ],
+          "integer_sample": 11,
+          "source_pivot": [
+            143,
+            400
+          ],
+          "source_tip": [
+            250,
+            470
+          ],
+          "sampled_pivot": [
+            3,
+            4
+          ],
+          "sampled_tip": [
+            13,
+            10
+          ],
+          "target_pivot": [
+            72,
+            78
+          ],
+          "parent": "body"
+        },
+        "shin_R": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            405,
+            375,
+            560,
+            500
+          ],
+          "integer_sample": 14,
+          "source_pivot": [
+            530,
+            411
+          ],
+          "source_tip": [
+            435,
+            460
+          ],
+          "sampled_pivot": [
+            9,
+            3
+          ],
+          "sampled_tip": [
+            2,
+            6
+          ],
+          "target_pivot": {
+            "part": "thigh_R",
+            "point": "tip"
+          },
+          "parent": "thigh_R"
+        },
+        "foot_R": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            660,
+            370,
+            855,
+            515
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            721,
+            443
+          ],
+          "source_tip": [
+            810,
+            441
+          ],
+          "sampled_pivot": [
+            4,
+            5
+          ],
+          "sampled_tip": [
+            10,
+            5
+          ],
+          "target_pivot": {
+            "part": "shin_R",
+            "point": "tip"
+          },
+          "parent": "shin_R"
+        },
+        "arm_L": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            960,
+            400,
+            1110,
+            485
+          ],
+          "integer_sample": 20,
+          "source_pivot": [
+            990,
+            445
+          ],
+          "source_tip": [
+            1080,
+            445
+          ],
+          "sampled_pivot": [
+            2,
+            2
+          ],
+          "sampled_tip": [
+            6,
+            3
+          ],
+          "target_pivot": [
+            90,
+            66
+          ],
+          "parent": "body"
+        },
+        "arm_R": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            1215,
+            400,
+            1375,
+            485
+          ],
+          "integer_sample": 20,
+          "source_pivot": [
+            1247,
+            445
+          ],
+          "source_tip": [
+            1345,
+            445
+          ],
+          "sampled_pivot": [
+            2,
+            2
+          ],
+          "sampled_tip": [
+            6,
+            1
+          ],
+          "target_pivot": [
+            90,
+            77
+          ],
+          "parent": "body"
+        }
+      },
+      "order": [
+        "thigh_L",
+        "shin_L",
+        "foot_L",
+        "arm_L",
+        "tail3",
+        "tail2",
+        "tail1",
+        "thigh_R",
+        "shin_R",
+        "body",
+        "neck",
+        "jaw",
+        "head",
+        "foot_R",
+        "arm_R"
+      ]
+    },
+    "W": {
+      "parts": {
+        "body": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            420,
+            495,
+            1050,
+            825
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            900,
+            660
+          ],
+          "source_tip": [
+            480,
+            660
+          ],
+          "sampled_pivot": [
+            32,
+            11
+          ],
+          "sampled_tip": [
+            4,
+            11
+          ],
+          "target_pivot": [
+            72,
+            72
+          ],
+          "parent": null,
+          "cap_edges": [
+            "left",
+            "right"
+          ]
+        },
+        "tail1": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            938,
+            490,
+            1232,
+            798
+          ],
+          "integer_sample": 14,
+          "source_pivot": [
+            980,
+            658
+          ],
+          "source_tip": [
+            1190,
+            658
+          ],
+          "sampled_pivot": [
+            3,
+            12
+          ],
+          "sampled_tip": [
+            18,
+            12
+          ],
+          "target_pivot": [
+            80,
+            72
+          ],
+          "parent": "body",
+          "cap_edges": [
+            "left",
+            "right"
+          ]
+        },
+        "tail2": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            1148,
+            490,
+            1470,
+            798
+          ],
+          "integer_sample": 14,
+          "source_pivot": [
+            1190,
+            658
+          ],
+          "source_tip": [
+            1428,
+            658
+          ],
+          "sampled_pivot": [
+            3,
+            12
+          ],
+          "sampled_tip": [
+            20,
+            12
+          ],
+          "target_pivot": {
+            "part": "tail1",
+            "point": "tip"
+          },
+          "parent": "tail1",
+          "cap_edges": [
+            "left",
+            "right"
+          ]
+        },
+        "tail3": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            1386,
+            490,
+            1736,
+            798
+          ],
+          "integer_sample": 14,
+          "source_pivot": [
+            1428,
+            658
+          ],
+          "source_tip": [
+            1694,
+            588
+          ],
+          "sampled_pivot": [
+            3,
+            12
+          ],
+          "sampled_tip": [
+            22,
+            7
+          ],
+          "target_pivot": {
+            "part": "tail2",
+            "point": "tip"
+          },
+          "parent": "tail2",
+          "cap_edges": [
+            "left"
+          ]
+        },
+        "neck": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            345,
+            525,
+            525,
+            795
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            480,
+            660
+          ],
+          "source_tip": [
+            390,
+            660
+          ],
+          "sampled_pivot": [
+            9,
+            9
+          ],
+          "sampled_tip": [
+            3,
+            9
+          ],
+          "target_pivot": {
+            "part": "body",
+            "point": "tip"
+          },
+          "parent": "body",
+          "cap_edges": [
+            "left",
+            "right"
+          ]
+        },
+        "head": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            45,
+            525,
+            435,
+            795
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            390,
+            660
+          ],
+          "source_tip": [
+            90,
+            660
+          ],
+          "sampled_pivot": [
+            23,
+            9
+          ],
+          "sampled_tip": [
+            3,
+            9
+          ],
+          "target_pivot": {
+            "part": "neck",
+            "point": "tip"
+          },
+          "parent": "neck",
+          "cap_edges": [
+            "right"
+          ]
+        },
+        "jaw": {
+          "source": "sources/topdown_core_v3.png",
+          "crop": [
+            60,
+            690,
+            390,
+            780
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            360,
+            705
+          ],
+          "source_tip": [
+            90,
+            735
+          ],
+          "sampled_pivot": [
+            20,
+            1
+          ],
+          "sampled_tip": [
+            2,
+            2
+          ],
+          "target_pivot": [
+            36,
+            75
+          ],
+          "parent": "head"
+        },
+        "thigh_R": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            660,
+            725,
+            865,
+            870
+          ],
+          "integer_sample": 12,
+          "source_pivot": [
+            822,
+            829
+          ],
+          "source_tip": [
+            695,
+            760
+          ],
+          "sampled_pivot": [
+            14,
+            9
+          ],
+          "sampled_tip": [
+            3,
+            3
+          ],
+          "target_pivot": [
+            72,
+            66
+          ],
+          "parent": "body"
+        },
+        "shin_R": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            945,
+            740,
+            1115,
+            850
+          ],
+          "integer_sample": 16,
+          "source_pivot": [
+            1085,
+            810
+          ],
+          "source_tip": [
+            975,
+            780
+          ],
+          "sampled_pivot": [
+            9,
+            4
+          ],
+          "sampled_tip": [
+            2,
+            2
+          ],
+          "target_pivot": {
+            "part": "thigh_R",
+            "point": "tip"
+          },
+          "parent": "thigh_R"
+        },
+        "foot_R": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            1185,
+            725,
+            1390,
+            875
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            1355,
+            800
+          ],
+          "source_tip": [
+            1230,
+            800
+          ],
+          "sampled_pivot": [
+            11,
+            5
+          ],
+          "sampled_tip": [
+            3,
+            5
+          ],
+          "target_pivot": {
+            "part": "shin_R",
+            "point": "tip"
+          },
+          "parent": "shin_R"
+        },
+        "thigh_L": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            85,
+            885,
+            290,
+            1045
+          ],
+          "integer_sample": 11,
+          "source_pivot": [
+            240,
+            922
+          ],
+          "source_tip": [
+            117,
+            1000
+          ],
+          "sampled_pivot": [
+            14,
+            3
+          ],
+          "sampled_tip": [
+            3,
+            10
+          ],
+          "target_pivot": [
+            72,
+            78
+          ],
+          "parent": "body"
+        },
+        "shin_L": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            410,
+            890,
+            585,
+            1030
+          ],
+          "integer_sample": 14,
+          "source_pivot": [
+            445,
+            928
+          ],
+          "source_tip": [
+            550,
+            985
+          ],
+          "sampled_pivot": [
+            2,
+            3
+          ],
+          "sampled_tip": [
+            10,
+            7
+          ],
+          "target_pivot": {
+            "part": "thigh_L",
+            "point": "tip"
+          },
+          "parent": "thigh_L"
+        },
+        "foot_L": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            655,
+            895,
+            860,
+            1040
+          ],
+          "integer_sample": 15,
+          "source_pivot": [
+            830,
+            962
+          ],
+          "source_tip": [
+            710,
+            962
+          ],
+          "sampled_pivot": [
+            12,
+            4
+          ],
+          "sampled_tip": [
+            4,
+            4
+          ],
+          "target_pivot": {
+            "part": "shin_L",
+            "point": "tip"
+          },
+          "parent": "shin_L"
+        },
+        "arm_R": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            970,
+            915,
+            1120,
+            1010
+          ],
+          "integer_sample": 20,
+          "source_pivot": [
+            1095,
+            960
+          ],
+          "source_tip": [
+            999,
+            960
+          ],
+          "sampled_pivot": [
+            6,
+            2
+          ],
+          "sampled_tip": [
+            1,
+            1
+          ],
+          "target_pivot": [
+            54,
+            65
+          ],
+          "parent": "body"
+        },
+        "arm_L": {
+          "source": "sources/topdown_EW_v2.png",
+          "crop": [
+            1220,
+            915,
+            1375,
+            1015
+          ],
+          "integer_sample": 20,
+          "source_pivot": [
+            1340,
+            965
+          ],
+          "source_tip": [
+            1250,
+            970
+          ],
+          "sampled_pivot": [
+            6,
+            2
+          ],
+          "sampled_tip": [
+            2,
+            3
+          ],
+          "target_pivot": [
+            54,
+            79
+          ],
+          "parent": "body"
+        }
+      },
+      "order": [
+        "thigh_R",
+        "shin_R",
+        "foot_R",
+        "arm_R",
+        "tail3",
+        "tail2",
+        "tail1",
+        "thigh_L",
+        "shin_L",
+        "body",
+        "neck",
+        "jaw",
+        "head",
+        "foot_L",
+        "arm_L"
+      ]
+    }
+  },
+  "revision": "v3 continuous overhead spine, v2 separate limbs; v2 spines rejected for seams"
+}
