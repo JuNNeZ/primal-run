@@ -117,21 +117,26 @@ Lav en gren `codex/<id>-cutout` fra `claude/project-thread-klzsxf` (der ligger v
 
 ## Arterne, i den rækkefølge de skal laves
 
-| # | art (`<id>`) | bygning | det vigtigste at få rigtigt |
-|---|---|---|---|
-| 1 | `tyrannosaurus` | tobenet + arme | Dyb, bred, kasseformet kranie med kraftig underkæbe og tykke tænder; små ru knuder over øjnene, øjnene vender lidt frem. Tyk, muskuløs hals. Ganske små arme med to fingre. Tykke lår, lange skinneben, vandret krop med halen som modvægt. Behold farverne fra `assets/enemy_full/tyrannosaurus_*` (kobber/rødbrun med mørke striber) og den samme størrelse på lærredet. Det er bossen, så den skal se tung og farlig ud. |
-| 2 | `spinosaurus` | tobenet + arme | Lang, smal krokodillesnude med næsebor langt tilbage. Højt sejl (rust/orange) langs ryggen. Korte bagben, kraftige arme med stor tommelklo, høj padleformet hale. |
-| 3 | `stegosaurus` | firbenet | Korte forben og lange bagben, så ryggen er højest over hoften. To forskudte rækker af plader, fire halepigge, lille, lavt hoved helt nede ved jorden. |
-| 4 | `iguanodon` | tobenet bagben + forben | Kraftige bagben, forben der kan bære vægt, tommelpig på hver hånd, langt hestelignende hoved med næb. |
-| 5 | `edmontosaurus` | tobenet bagben + forben | Bredt, fladt andenæb uden kam, lang lav krop, kraftig hale. |
-| 6 | `therizinosaurus` | tobenet (armene i `body`) | Oprejst krop med tyk mave, lang hals, lille næbhoved, lange arme med tre meget lange seglkløer. Grå/creme fjer. |
-| 7 | `pachyrhinosaurus` | firbenet | Tyk, flad, lys næseknude (intet næsehorn), krave med pigge, tungt bygget. |
-| 8 | `protoceratops` | firbenet | Lille og sandfarvet, krave og papegøjenæb, ingen horn. |
-| 9 | `oviraptor` | tobenet (armene i `body`) | Fjer, tandløst papegøjenæb, rund orange kam, lange arme med kløer. |
-| 10 | `psittacosaurus` | tobenet + arme | Papegøjenæb, små horn på kinderne, børster på halen. |
-| 11 | `dryosaurus` | tobenet + arme | Lille og slank planteæder, lange ben, lang hale. |
-| 12 | `hypsilophodon` | tobenet + arme | Lille, grønbrun med mørke striber, store øjne. |
-| 13 | `leaellynasaura` | tobenet + arme | Bitte lille, meget lang hale, store lyse øjne, grå/blå. |
-| 14 | `pteranodon` | vinger | Set oppefra i flugt. Lang, tandløs næb og en kam der peger bagud. Vingerne er hele dele fra skulderen. |
-| 15 | `microraptor` | fire vinger | Lille rovdinosaur med vinger på både arme og ben, sort-iriserende fjer. |
-| 16 | `archelon` | luffer | Kæmpe havskildpadde med riflet skjold, krogformet næb og fire luffer. |
+`længde i E` er dyrets længde fra snude til halespids i E-retningen på 144×144-lærredet. Den følger arternes rigtige
+længde (små dyr er lidt større end virkeligheden, så de kan ses), så alle arter passer sammen i spillet. T-rex og
+Spinosaurus tegnes ved halv længde, fordi spillet viser dem dobbelt så store. Tegn i den længde, i stedet for at
+spillet skalerer bagefter, ellers bliver pixelkunsten ujævn. 130 px er det længste, der er plads til på lærredet.
+
+| # | art (`<id>`) | bygning | længde i E | det vigtigste at få rigtigt |
+|---|---|---|---|---|
+| 1 | `tyrannosaurus` | tobenet + arme | 115 px | Dyb, bred, kasseformet kranie med kraftig underkæbe og tykke tænder; små ru knuder over øjnene, øjnene vender lidt frem. Tyk, muskuløs hals. Ganske små arme med to fingre. Tykke lår, lange skinneben, vandret krop med halen som modvægt. Behold farverne fra `assets/enemy_full/tyrannosaurus_*` (kobber/rødbrun med mørke striber) og den samme størrelse på lærredet. Det er bossen, så den skal se tung og farlig ud. |
+| 2 | `spinosaurus` | tobenet + arme | 130 px (maks.) | Lang, smal krokodillesnude med næsebor langt tilbage. Højt sejl (rust/orange) langs ryggen. Korte bagben, kraftige arme med stor tommelklo, høj padleformet hale. |
+| 3 | `stegosaurus` | firbenet | 130 px (maks.) | Korte forben og lange bagben, så ryggen er højest over hoften. To forskudte rækker af plader, fire halepigge, lille, lavt hoved helt nede ved jorden. |
+| 4 | `iguanodon` | tobenet bagben + forben | 130 px (maks.) | Kraftige bagben, forben der kan bære vægt, tommelpig på hver hånd, langt hestelignende hoved med næb. |
+| 5 | `edmontosaurus` | tobenet bagben + forben | 130 px (maks.) | Bredt, fladt andenæb uden kam, lang lav krop, kraftig hale. |
+| 6 | `therizinosaurus` | tobenet (armene i `body`) | 130 px (maks.) | Oprejst krop med tyk mave, lang hals, lille næbhoved, lange arme med tre meget lange seglkløer. Grå/creme fjer. |
+| 7 | `pachyrhinosaurus` | firbenet | 115 px | Tyk, flad, lys næseknude (intet næsehorn), krave med pigge, tungt bygget. |
+| 8 | `protoceratops` | firbenet | 56 px | Lille og sandfarvet, krave og papegøjenæb, ingen horn. |
+| 9 | `oviraptor` | tobenet (armene i `body`) | 53 px | Fjer, tandløst papegøjenæb, rund orange kam, lange arme med kløer. |
+| 10 | `psittacosaurus` | tobenet + arme | 56 px | Papegøjenæb, små horn på kinderne, børster på halen. |
+| 11 | `dryosaurus` | tobenet + arme | 71 px | Lille og slank planteæder, lange ben, lang hale. |
+| 12 | `hypsilophodon` | tobenet + arme | 53 px | Lille, grønbrun med mørke striber, store øjne. |
+| 13 | `leaellynasaura` | tobenet + arme | 56 px | Bitte lille, meget lang hale, store lyse øjne, grå/blå. |
+| 14 | `pteranodon` | vinger | 106 px vingefang | Set oppefra i flugt. Lang, tandløs næb og en kam der peger bagud. Vingerne er hele dele fra skulderen. |
+| 15 | `microraptor` | fire vinger | 33 px | Lille rovdinosaur med vinger på både arme og ben, sort-iriserende fjer. |
+| 16 | `archelon` | luffer | 91 px | Kæmpe havskildpadde med riflet skjold, krogformet næb og fire luffer. |
