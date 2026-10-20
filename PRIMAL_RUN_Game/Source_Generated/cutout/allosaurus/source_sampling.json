@@ -1122,21 +1122,29 @@
     "source_sha256": "a6b6acfdf6427c868717b0ee772baf6cca0206d72fa162a58c3b8ecc06f791fd"
   },
   "E/body": {
-    "source": "sources/continuous.png",
+    "source": "sources/topdown_core_v3.png",
     "crop": [
-      815,
-      285,
-      1060,
-      460
+      832,
+      130,
+      1378,
+      442
     ],
-    "integer_sample": 5,
+    "integer_sample": 13,
     "source_pivot": [
-      865,
-      370
+      936,
+      273
     ],
     "source_tip": [
-      975,
-      370
+      1300,
+      273
+    ],
+    "sampled_pivot": [
+      8,
+      11
+    ],
+    "sampled_tip": [
+      36,
+      11
     ],
     "target_pivot": [
       72,
@@ -1144,38 +1152,40 @@
     ],
     "parent": null,
     "cap_edges": [
-      "left"
+      "left",
+      "right"
     ],
-    "sampled_pivot": [
-      10,
-      17
-    ],
-    "sampled_tip": [
-      32,
-      17
-    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      62,
-      55
+      64,
+      61
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/neck": {
-    "source": "sources/continuous.png",
+    "source": "sources/topdown_core_v3.png",
     "crop": [
-      660,
-      740,
-      900,
-      920
+      1261,
+      156,
+      1534,
+      416
     ],
-    "integer_sample": 10,
+    "integer_sample": 13,
     "source_pivot": [
-      700,
-      830
+      1300,
+      273
     ],
     "source_tip": [
-      850,
-      830
+      1469,
+      273
+    ],
+    "sampled_pivot": [
+      3,
+      9
+    ],
+    "sampled_tip": [
+      16,
+      9
     ],
     "target_pivot": {
       "part": "body",
@@ -1186,114 +1196,117 @@
       "left",
       "right"
     ],
-    "sampled_pivot": [
-      4,
-      9
-    ],
-    "sampled_tip": [
-      19,
-      9
-    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      90,
+      97,
       63
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/head": {
-    "source": "sources/continuous.png",
+    "source": "sources/topdown_core_v3.png",
     "crop": [
-      800,
-      740,
-      1060,
-      920
+      1430,
+      156,
+      1768,
+      390
     ],
-    "integer_sample": 10,
+    "integer_sample": 13,
     "source_pivot": [
-      850,
-      830
+      1469,
+      273
     ],
     "source_tip": [
-      1030,
-      830
-    ],
-    "target_pivot": {
-      "part": "neck",
-      "point": "tip"
-    },
-    "parent": "neck",
-    "cap_edges": [
-      "left"
+      1729,
+      299
     ],
     "sampled_pivot": [
-      5,
+      3,
       9
     ],
     "sampled_tip": [
       23,
-      9
+      11
     ],
+    "target_pivot": {
+      "part": "neck",
+      "point": "tip"
+    },
+    "parent": "neck",
+    "cap_edges": [
+      "left"
+    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      104,
+      110,
       63
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/jaw": {
-    "source": "sources/E.png",
+    "source": "sources/topdown_core_v3.png",
     "crop": [
-      1060,
-      170,
-      1235,
-      219
+      1482,
+      299,
+      1755,
+      351
     ],
-    "integer_sample": 8,
+    "integer_sample": 13,
     "source_pivot": [
-      1083,
-      194
+      1508,
+      312
     ],
     "source_tip": [
-      1210,
-      197
+      1729,
+      325
     ],
-    "target_pivot": [
-      109,
-      75
-    ],
-    "parent": "head",
     "sampled_pivot": [
-      3,
-      3
+      2,
+      1
     ],
     "sampled_tip": [
       19,
-      3
-    ],
-    "translation": [
-      106,
-      72
-    ],
-    "source_sha256": "a9954be0e1efe71c378e2ba1c0b7f361f3caad2b548b8e0c68df0b179fead4b5"
-  },
-  "E/tail1": {
-    "source": "sources/continuous.png",
-    "crop": [
-      748,
-      316,
-      848,
-      428
-    ],
-    "integer_sample": 4,
-    "source_pivot": [
-      832,
-      372
-    ],
-    "source_tip": [
-      764,
-      372
+      1
     ],
     "target_pivot": [
-      64,
+      116,
+      75
+    ],
+    "parent": "head",
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
+    "translation": [
+      114,
+      74
+    ],
+    "camera": "oblique overhead, independently drawn"
+  },
+  "E/tail1": {
+    "source": "sources/topdown_core_v3.png",
+    "crop": [
+      585,
+      130,
+      949,
+      429
+    ],
+    "integer_sample": 13,
+    "source_pivot": [
+      897,
+      273
+    ],
+    "source_tip": [
+      624,
+      273
+    ],
+    "sampled_pivot": [
+      24,
+      11
+    ],
+    "sampled_tip": [
+      3,
+      11
+    ],
+    "target_pivot": [
+      69,
       72
     ],
     "parent": "body",
@@ -1301,36 +1314,37 @@
       "left",
       "right"
     ],
-    "sampled_pivot": [
-      21,
-      14
-    ],
-    "sampled_tip": [
-      4,
-      14
-    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      43,
-      58
+      45,
+      61
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/tail2": {
-    "source": "sources/continuous.png",
+    "source": "sources/topdown_core_v3.png",
     "crop": [
-      688,
-      332,
-      780,
-      412
+      286,
+      156,
+      663,
+      390
     ],
-    "integer_sample": 4,
+    "integer_sample": 13,
     "source_pivot": [
-      764,
-      372
+      624,
+      273
     ],
     "source_tip": [
-      704,
-      372
+      325,
+      273
+    ],
+    "sampled_pivot": [
+      26,
+      9
+    ],
+    "sampled_tip": [
+      3,
+      8
     ],
     "target_pivot": {
       "part": "tail1",
@@ -1341,36 +1355,37 @@
       "left",
       "right"
     ],
-    "sampled_pivot": [
-      19,
-      10
-    ],
-    "sampled_tip": [
-      4,
-      10
-    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      28,
-      62
+      22,
+      63
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/tail3": {
-    "source": "sources/continuous.png",
+    "source": "sources/topdown_core_v3.png",
     "crop": [
-      616,
-      344,
-      720,
-      400
+      65,
+      182,
+      364,
+      364
     ],
-    "integer_sample": 4,
+    "integer_sample": 13,
     "source_pivot": [
-      704,
-      372
+      325,
+      273
     ],
     "source_tip": [
-      632,
-      372
+      78,
+      273
+    ],
+    "sampled_pivot": [
+      20,
+      6
+    ],
+    "sampled_tip": [
+      0,
+      7
     ],
     "target_pivot": {
       "part": "tail2",
@@ -1380,324 +1395,333 @@
     "cap_edges": [
       "right"
     ],
-    "sampled_pivot": [
-      22,
-      7
-    ],
-    "sampled_tip": [
-      4,
-      7
-    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      10,
+      5,
       65
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/thigh_L": {
-    "source": "sources/E.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      1054,
-      412,
-      1188,
-      567
+      640,
+      200,
+      815,
+      380
     ],
-    "integer_sample": 8,
+    "integer_sample": 14,
     "source_pivot": [
-      1094,
-      456
+      682,
+      306
     ],
     "source_tip": [
-      1146,
-      539
+      764,
+      247
     ],
-    "target_pivot": [
-      73,
-      76
-    ],
-    "parent": "body",
     "sampled_pivot": [
-      5,
-      6
+      3,
+      8
     ],
     "sampled_tip": [
-      12,
-      16
+      9,
+      3
     ],
+    "target_pivot": [
+      72,
+      66
+    ],
+    "parent": "body",
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
-      68,
-      70
+      69,
+      58
     ],
-    "source_sha256": "a9954be0e1efe71c378e2ba1c0b7f361f3caad2b548b8e0c68df0b179fead4b5"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/shin_L": {
-    "source": "sources/east_first.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      143,
-      787,
-      211,
-      915
+      880,
+      205,
+      1050,
+      375
     ],
-    "integer_sample": 10,
+    "integer_sample": 17,
     "source_pivot": [
-      183,
-      813
+      1000,
+      252
     ],
     "source_tip": [
-      168,
-      892
+      920,
+      333
+    ],
+    "sampled_pivot": [
+      7,
+      3
+    ],
+    "sampled_tip": [
+      2,
+      8
     ],
     "target_pivot": {
       "part": "thigh_L",
       "point": "tip"
     },
     "parent": "thigh_L",
-    "sampled_pivot": [
-      4,
-      3
-    ],
-    "sampled_tip": [
-      2,
-      10
-    ],
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
-      76,
-      83
+      71,
+      58
     ],
-    "source_sha256": "346ea20822e68dee8bf73139a3aa24241a8e5b780a6a78c7203cd5658364120a"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/foot_L": {
-    "source": "sources/limbs.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      900,
-      40,
-      1328,
-      273
+      1140,
+      215,
+      1330,
+      365
     ],
-    "integer_sample": 25,
+    "integer_sample": 15,
     "source_pivot": [
-      945,
-      168
+      1175,
+      288
     ],
     "source_tip": [
-      1288,
-      166
+      1280,
+      288
+    ],
+    "sampled_pivot": [
+      2,
+      5
+    ],
+    "sampled_tip": [
+      9,
+      5
     ],
     "target_pivot": {
       "part": "shin_L",
       "point": "tip"
     },
     "parent": "shin_L",
-    "sampled_pivot": [
-      2,
-      5
-    ],
-    "sampled_tip": [
-      15,
-      5
-    ],
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
-      76,
-      88
+      71,
+      61
     ],
-    "source_sha256": "63f7edd8c524734c10941bd567fb1d6a556a644d39091e540f2974a2cecc47e0"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/thigh_R": {
-    "source": "sources/E.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      718,
-      693,
-      866,
-      847
+      65,
+      375,
+      260,
+      540
     ],
-    "integer_sample": 9,
+    "integer_sample": 14,
     "source_pivot": [
-      757,
-      733
+      116,
+      419
     ],
     "source_tip": [
-      816,
-      803
+      218,
+      479
     ],
-    "target_pivot": [
-      72,
-      65
-    ],
-    "parent": "body",
     "sampled_pivot": [
-      6,
-      4
+      4,
+      3
     ],
     "sampled_tip": [
       11,
-      12
+      7
     ],
+    "target_pivot": [
+      72,
+      78
+    ],
+    "parent": "body",
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
-      66,
-      61
+      68,
+      75
     ],
-    "source_sha256": "a9954be0e1efe71c378e2ba1c0b7f361f3caad2b548b8e0c68df0b179fead4b5"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/shin_R": {
-    "source": "sources/east_first.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      1040,
-      740,
-      1125,
-      864
+      360,
+      380,
+      535,
+      540
     ],
-    "integer_sample": 10,
+    "integer_sample": 17,
     "source_pivot": [
-      1096,
-      768
+      492,
+      419
     ],
     "source_tip": [
-      1069,
-      839
+      398,
+      510
+    ],
+    "sampled_pivot": [
+      8,
+      2
+    ],
+    "sampled_tip": [
+      2,
+      8
     ],
     "target_pivot": {
       "part": "thigh_R",
       "point": "tip"
     },
     "parent": "thigh_R",
-    "sampled_pivot": [
-      6,
-      3
-    ],
-    "sampled_tip": [
-      3,
-      10
-    ],
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
       71,
-      70
+      80
     ],
-    "source_sha256": "346ea20822e68dee8bf73139a3aa24241a8e5b780a6a78c7203cd5658364120a"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/foot_R": {
-    "source": "sources/limbs.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      1340,
-      40,
-      1765,
-      273
+      620,
+      390,
+      805,
+      535
     ],
-    "integer_sample": 25,
+    "integer_sample": 15,
     "source_pivot": [
-      1383,
-      168
+      650,
+      465
     ],
     "source_tip": [
-      1728,
-      166
+      763,
+      465
+    ],
+    "sampled_pivot": [
+      2,
+      5
+    ],
+    "sampled_tip": [
+      10,
+      5
     ],
     "target_pivot": {
       "part": "shin_R",
       "point": "tip"
     },
     "parent": "shin_R",
-    "sampled_pivot": [
-      2,
-      5
-    ],
-    "sampled_tip": [
-      15,
-      5
-    ],
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
-      72,
-      75
+      71,
+      83
     ],
-    "source_sha256": "63f7edd8c524734c10941bd567fb1d6a556a644d39091e540f2974a2cecc47e0"
+    "camera": "oblique overhead, independently drawn"
   },
   "E/arm_L": {
-    "source": "sources/E.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      399,
-      1018,
-      556,
-      1138
+      855,
+      410,
+      1050,
+      515
     ],
-    "integer_sample": 10,
+    "integer_sample": 20,
     "source_pivot": [
-      430,
-      1052
+      890,
+      460
     ],
     "source_tip": [
-      531,
-      1099
+      1000,
+      460
     ],
-    "target_pivot": [
-      95,
-      78
-    ],
-    "parent": "body",
     "sampled_pivot": [
-      3,
-      3
+      2,
+      2
     ],
     "sampled_tip": [
-      13,
-      7
-    ],
-    "translation": [
-      92,
-      75
-    ],
-    "source_sha256": "a9954be0e1efe71c378e2ba1c0b7f361f3caad2b548b8e0c68df0b179fead4b5"
-  },
-  "E/arm_R": {
-    "source": "sources/E.png",
-    "crop": [
-      701,
-      1018,
-      858,
-      1138
-    ],
-    "integer_sample": 10,
-    "source_pivot": [
-      833,
-      1053
-    ],
-    "source_tip": [
-      729,
-      1097
+      7,
+      2
     ],
     "target_pivot": [
-      95,
+      90,
       65
     ],
     "parent": "body",
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
+    "translation": [
+      88,
+      63
+    ],
+    "camera": "oblique overhead, independently drawn"
+  },
+  "E/arm_R": {
+    "source": "sources/topdown_EW_v2.png",
+    "crop": [
+      1135,
+      420,
+      1330,
+      520
+    ],
+    "integer_sample": 20,
+    "source_pivot": [
+      1166,
+      470
+    ],
+    "source_tip": [
+      1280,
+      470
+    ],
     "sampled_pivot": [
-      13,
-      4
+      2,
+      2
+    ],
+    "sampled_tip": [
+      7,
+      2
+    ],
+    "target_pivot": [
+      90,
+      79
+    ],
+    "parent": "body",
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
+    "translation": [
+      88,
+      77
+    ],
+    "camera": "oblique overhead, independently drawn"
+  },
+  "W/body": {
+    "source": "sources/topdown_core_v3.png",
+    "crop": [
+      390,
+      481,
+      1001,
+      793
+    ],
+    "integer_sample": 13,
+    "source_pivot": [
+      910,
+      650
+    ],
+    "source_tip": [
+      429,
+      650
+    ],
+    "sampled_pivot": [
+      40,
+      13
     ],
     "sampled_tip": [
       3,
-      7
-    ],
-    "translation": [
-      82,
-      61
-    ],
-    "source_sha256": "a9954be0e1efe71c378e2ba1c0b7f361f3caad2b548b8e0c68df0b179fead4b5"
-  },
-  "W/body": {
-    "source": "sources/continuous.png",
-    "crop": [
-      1125,
-      285,
-      1335,
-      460
-    ],
-    "integer_sample": 5,
-    "source_pivot": [
-      1290,
-      370
-    ],
-    "source_tip": [
-      1170,
-      370
+      13
     ],
     "target_pivot": [
       72,
@@ -1705,38 +1729,40 @@
     ],
     "parent": null,
     "cap_edges": [
+      "left",
       "right"
     ],
-    "sampled_pivot": [
-      33,
-      17
-    ],
-    "sampled_tip": [
-      9,
-      17
-    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      39,
-      55
+      32,
+      59
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "W/neck": {
-    "source": "sources/continuous.png",
+    "source": "sources/topdown_core_v3.png",
     "crop": [
-      1250,
-      740,
-      1520,
-      920
+      260,
+      520,
+      468,
+      767
     ],
-    "integer_sample": 10,
+    "integer_sample": 13,
     "source_pivot": [
-      1460,
-      830
+      429,
+      650
     ],
     "source_tip": [
-      1310,
-      830
+      299,
+      650
+    ],
+    "sampled_pivot": [
+      13,
+      10
+    ],
+    "sampled_tip": [
+      3,
+      10
     ],
     "target_pivot": {
       "part": "body",
@@ -1747,36 +1773,37 @@
       "left",
       "right"
     ],
-    "sampled_pivot": [
-      21,
-      9
-    ],
-    "sampled_tip": [
-      6,
-      9
-    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      27,
-      63
+      22,
+      62
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "W/head": {
-    "source": "sources/continuous.png",
+    "source": "sources/topdown_core_v3.png",
     "crop": [
-      1110,
-      740,
-      1360,
-      920
+      13,
+      520,
+      338,
+      754
     ],
-    "integer_sample": 10,
+    "integer_sample": 13,
     "source_pivot": [
-      1310,
-      830
+      299,
+      650
     ],
     "source_tip": [
-      1150,
-      830
+      39,
+      663
+    ],
+    "sampled_pivot": [
+      22,
+      10
+    ],
+    "sampled_tip": [
+      2,
+      11
     ],
     "target_pivot": {
       "part": "neck",
@@ -1786,112 +1813,115 @@
     "cap_edges": [
       "right"
     ],
-    "sampled_pivot": [
-      20,
-      9
-    ],
-    "sampled_tip": [
-      4,
-      9
-    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      13,
-      63
+      3,
+      62
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "W/jaw": {
-    "source": "sources/W.png",
+    "source": "sources/topdown_core_v3.png",
     "crop": [
-      1005,
-      219,
-      1213,
-      309
+      26,
+      663,
+      312,
+      728
     ],
-    "integer_sample": 10,
+    "integer_sample": 13,
     "source_pivot": [
-      1189,
-      266
+      273,
+      676
     ],
     "source_tip": [
-      1025,
-      265
+      52,
+      689
     ],
-    "target_pivot": [
-      33,
-      75
-    ],
-    "parent": "head",
     "sampled_pivot": [
-      18,
-      5
+      19,
+      1
     ],
     "sampled_tip": [
       2,
-      5
-    ],
-    "translation": [
-      15,
-      70
-    ],
-    "source_sha256": "9ca6cef59b1d5b27fd82547b4645c87178f32540286e3ff5d0fc6132b8750e37"
-  },
-  "W/tail1": {
-    "source": "sources/continuous.png",
-    "crop": [
-      1292,
-      316,
-      1396,
-      428
-    ],
-    "integer_sample": 4,
-    "source_pivot": [
-      1312,
-      372
-    ],
-    "source_tip": [
-      1380,
-      372
+      0
     ],
     "target_pivot": [
-      76,
-      72
+      23,
+      74
+    ],
+    "parent": "head",
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
+    "translation": [
+      4,
+      73
+    ],
+    "camera": "oblique overhead, independently drawn"
+  },
+  "W/tail1": {
+    "source": "sources/topdown_core_v3.png",
+    "crop": [
+      949,
+      494,
+      1300,
+      780
+    ],
+    "integer_sample": 13,
+    "source_pivot": [
+      988,
+      650
+    ],
+    "source_tip": [
+      1261,
+      650
+    ],
+    "sampled_pivot": [
+      3,
+      12
+    ],
+    "sampled_tip": [
+      24,
+      12
+    ],
+    "target_pivot": [
+      77,
+      71
     ],
     "parent": "body",
     "cap_edges": [
       "left",
       "right"
     ],
-    "sampled_pivot": [
-      5,
-      14
-    ],
-    "sampled_tip": [
-      22,
-      14
-    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      71,
-      58
+      74,
+      59
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "W/tail2": {
-    "source": "sources/continuous.png",
+    "source": "sources/topdown_core_v3.png",
     "crop": [
-      1364,
-      328,
-      1452,
-      416
+      1222,
+      520,
+      1547,
+      754
     ],
-    "integer_sample": 4,
+    "integer_sample": 13,
     "source_pivot": [
-      1380,
-      372
+      1261,
+      650
     ],
     "source_tip": [
-      1436,
-      372
+      1508,
+      650
+    ],
+    "sampled_pivot": [
+      3,
+      10
+    ],
+    "sampled_tip": [
+      23,
+      8
     ],
     "target_pivot": {
       "part": "tail1",
@@ -1902,36 +1932,37 @@
       "left",
       "right"
     ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
+    "translation": [
+      95,
+      61
+    ],
+    "camera": "oblique overhead, independently drawn"
+  },
+  "W/tail3": {
+    "source": "sources/topdown_core_v3.png",
+    "crop": [
+      1469,
+      546,
+      1729,
+      728
+    ],
+    "integer_sample": 13,
+    "source_pivot": [
+      1508,
+      650
+    ],
+    "source_tip": [
+      1703,
+      637
+    ],
     "sampled_pivot": [
       4,
-      11
+      6
     ],
     "sampled_tip": [
       18,
-      11
-    ],
-    "translation": [
-      89,
-      61
-    ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
-  },
-  "W/tail3": {
-    "source": "sources/continuous.png",
-    "crop": [
-      1420,
-      348,
-      1532,
-      400
-    ],
-    "integer_sample": 4,
-    "source_pivot": [
-      1436,
-      372
-    ],
-    "source_tip": [
-      1508,
-      372
+      7
     ],
     "target_pivot": {
       "part": "tail2",
@@ -1941,306 +1972,307 @@
     "cap_edges": [
       "left"
     ],
-    "sampled_pivot": [
-      4,
-      6
-    ],
-    "sampled_tip": [
-      22,
-      6
-    ],
+    "source_sha256": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea",
     "translation": [
-      103,
-      66
+      114,
+      63
     ],
-    "source_sha256": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2"
+    "camera": "oblique overhead, independently drawn"
   },
   "W/thigh_R": {
-    "source": "sources/W.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      638,
-      678,
-      834,
-      887
+      635,
+      755,
+      825,
+      935
     ],
-    "integer_sample": 10,
+    "integer_sample": 14,
     "source_pivot": [
-      783,
-      737
+      780,
+      876
     ],
     "source_tip": [
-      684,
-      847
+      685,
+      808
+    ],
+    "sampled_pivot": [
+      10,
+      8
+    ],
+    "sampled_tip": [
+      4,
+      4
     ],
     "target_pivot": [
       72,
-      74
+      66
     ],
     "parent": "body",
-    "sampled_pivot": [
-      14,
-      6
-    ],
-    "sampled_tip": [
-      5,
-      17
-    ],
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
-      58,
-      68
+      62,
+      58
     ],
-    "source_sha256": "9ca6cef59b1d5b27fd82547b4645c87178f32540286e3ff5d0fc6132b8750e37"
+    "camera": "oblique overhead, independently drawn"
   },
   "W/shin_R": {
-    "source": "sources/W.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      1015,
-      696,
-      1126,
-      867
+      885,
+      750,
+      1065,
+      925
     ],
-    "integer_sample": 15,
+    "integer_sample": 17,
     "source_pivot": [
-      1071,
-      735
+      1010,
+      885
     ],
     "source_tip": [
-      1061,
-      839
+      925,
+      797
+    ],
+    "sampled_pivot": [
+      7,
+      8
+    ],
+    "sampled_tip": [
+      2,
+      3
     ],
     "target_pivot": {
       "part": "thigh_R",
       "point": "tip"
     },
     "parent": "thigh_R",
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
+    "translation": [
+      59,
+      54
+    ],
+    "camera": "oblique overhead, independently drawn"
+  },
+  "W/foot_R": {
+    "source": "sources/topdown_EW_v2.png",
+    "crop": [
+      1135,
+      760,
+      1335,
+      905
+    ],
+    "integer_sample": 15,
+    "source_pivot": [
+      1303,
+      836
+    ],
+    "source_tip": [
+      1177,
+      836
+    ],
     "sampled_pivot": [
-      4,
-      3
+      11,
+      5
     ],
     "sampled_tip": [
       3,
-      10
-    ],
-    "translation": [
-      59,
-      82
-    ],
-    "source_sha256": "9ca6cef59b1d5b27fd82547b4645c87178f32540286e3ff5d0fc6132b8750e37"
-  },
-  "W/foot_R": {
-    "source": "sources/limbs.png",
-    "crop": [
-      459,
-      40,
-      881,
-      273
-    ],
-    "integer_sample": 25,
-    "source_pivot": [
-      831,
-      168
-    ],
-    "source_tip": [
-      493,
-      166
+      4
     ],
     "target_pivot": {
       "part": "shin_R",
       "point": "tip"
     },
     "parent": "shin_R",
-    "sampled_pivot": [
-      15,
-      5
-    ],
-    "sampled_tip": [
-      2,
-      5
-    ],
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
-      47,
-      87
+      50,
+      52
     ],
-    "source_sha256": "63f7edd8c524734c10941bd567fb1d6a556a644d39091e540f2974a2cecc47e0"
+    "camera": "oblique overhead, independently drawn"
   },
   "W/thigh_L": {
-    "source": "sources/W.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      989,
-      431,
-      1175,
-      636
+      65,
+      925,
+      270,
+      1100
     ],
-    "integer_sample": 11,
+    "integer_sample": 14,
     "source_pivot": [
-      1046,
-      475
+      228,
+      981
     ],
     "source_tip": [
-      1134,
-      580
+      113,
+      1045
     ],
-    "target_pivot": [
-      70,
-      63
-    ],
-    "parent": "body",
     "sampled_pivot": [
-      5,
+      12,
       4
     ],
     "sampled_tip": [
-      13,
-      14
+      3,
+      9
     ],
+    "target_pivot": [
+      71,
+      76
+    ],
+    "parent": "body",
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
-      65,
-      59
+      59,
+      72
     ],
-    "source_sha256": "9ca6cef59b1d5b27fd82547b4645c87178f32540286e3ff5d0fc6132b8750e37"
+    "camera": "oblique overhead, independently drawn"
   },
   "W/shin_L": {
-    "source": "sources/W.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      123,
-      688,
-      225,
-      868
+      340,
+      925,
+      520,
+      1100
     ],
-    "integer_sample": 15,
+    "integer_sample": 17,
     "source_pivot": [
-      164,
-      731
+      385,
+      972
     ],
     "source_tip": [
-      188,
-      837
+      481,
+      1054
+    ],
+    "sampled_pivot": [
+      3,
+      3
+    ],
+    "sampled_tip": [
+      8,
+      8
     ],
     "target_pivot": {
       "part": "thigh_L",
       "point": "tip"
     },
     "parent": "thigh_L",
-    "sampled_pivot": [
-      3,
-      3
-    ],
-    "sampled_tip": [
-      4,
-      10
-    ],
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
-      75,
-      70
+      59,
+      78
     ],
-    "source_sha256": "9ca6cef59b1d5b27fd82547b4645c87178f32540286e3ff5d0fc6132b8750e37"
+    "camera": "oblique overhead, independently drawn"
   },
   "W/foot_L": {
-    "source": "sources/limbs.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      12,
-      40,
-      439,
-      273
+      590,
+      945,
+      780,
+      1090
     ],
-    "integer_sample": 25,
+    "integer_sample": 15,
     "source_pivot": [
-      392,
-      168
+      748,
+      1016
     ],
     "source_tip": [
-      53,
-      166
+      627,
+      1016
     ],
-    "target_pivot": {
-      "part": "shin_L",
-      "point": "tip"
-    },
-    "parent": "shin_L",
     "sampled_pivot": [
-      15,
+      11,
       5
     ],
     "sampled_tip": [
       2,
       5
     ],
+    "target_pivot": {
+      "part": "shin_L",
+      "point": "tip"
+    },
+    "parent": "shin_L",
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
-      64,
-      75
+      56,
+      81
     ],
-    "source_sha256": "63f7edd8c524734c10941bd567fb1d6a556a644d39091e540f2974a2cecc47e0"
+    "camera": "oblique overhead, independently drawn"
   },
   "W/arm_R": {
-    "source": "sources/W.png",
+    "source": "sources/topdown_EW_v2.png",
     "crop": [
-      563,
-      964,
-      745,
-      1121
+      875,
+      960,
+      1085,
+      1065
     ],
-    "integer_sample": 12,
+    "integer_sample": 20,
     "source_pivot": [
-      699,
-      1011
+      1046,
+      1013
     ],
     "source_tip": [
-      602,
-      1081
+      923,
+      1013
     ],
-    "target_pivot": [
-      48,
-      78
-    ],
-    "parent": "body",
     "sampled_pivot": [
-      11,
-      4
+      9,
+      3
     ],
     "sampled_tip": [
-      3,
-      10
-    ],
-    "translation": [
-      37,
-      74
-    ],
-    "source_sha256": "9ca6cef59b1d5b27fd82547b4645c87178f32540286e3ff5d0fc6132b8750e37"
-  },
-  "W/arm_L": {
-    "source": "sources/W.png",
-    "crop": [
-      316,
-      961,
-      506,
-      1121
-    ],
-    "integer_sample": 12,
-    "source_pivot": [
-      357,
-      1006
-    ],
-    "source_tip": [
-      473,
-      1079
+      2,
+      3
     ],
     "target_pivot": [
-      48,
+      54,
       65
     ],
     "parent": "body",
-    "sampled_pivot": [
-      3,
-      4
-    ],
-    "sampled_tip": [
-      13,
-      10
-    ],
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
     "translation": [
       45,
-      61
+      62
     ],
-    "source_sha256": "9ca6cef59b1d5b27fd82547b4645c87178f32540286e3ff5d0fc6132b8750e37"
+    "camera": "oblique overhead, independently drawn"
+  },
+  "W/arm_L": {
+    "source": "sources/topdown_EW_v2.png",
+    "crop": [
+      1130,
+      960,
+      1330,
+      1065
+    ],
+    "integer_sample": 20,
+    "source_pivot": [
+      1300,
+      1013
+    ],
+    "source_tip": [
+      1180,
+      1024
+    ],
+    "sampled_pivot": [
+      8,
+      3
+    ],
+    "sampled_tip": [
+      1,
+      3
+    ],
+    "target_pivot": [
+      54,
+      79
+    ],
+    "parent": "body",
+    "source_sha256": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
+    "translation": [
+      46,
+      76
+    ],
+    "camera": "oblique overhead, independently drawn"
   }
 }
