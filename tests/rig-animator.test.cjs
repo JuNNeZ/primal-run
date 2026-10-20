@@ -101,7 +101,8 @@ test('rigSprites: every RIG_SPECIES has its 120 rig frames in the game, byte-ide
   assert.equal(rex.length, 120);
   assert.ok(rex.every((e) => e.status === 'prototype_static' && e.production_approved === false && assets.includes('"' + e.file + '"')));
   assert.ok(!C.STATIC_SPECIES.has('tyrannosaurus'));
-  assert.equal(C.playerFrame('tyrannosaurus', 'death', 'W', 5), 'assets/rig_full/tyrannosaurus_death_W_005.png');
+  if (C.FEATURES.rexCutout) assert.equal(C.playerFrame('tyrannosaurus', 'death', 'W', 5), 'assets/rig_full/tyrannosaurus_death_W_005.png');
+  else assert.ok(C.playerFrame('tyrannosaurus', 'death', 'W', 5).includes('enemy_full/tyrannosaurus'));
   const {out} = render('leaellynasaura', 'walk,attack');
   for (const name of ['leaellynasaura_walk_E_003.png', 'leaellynasaura_attack_N_003.png'])
     assert.deepEqual(fs.readFileSync(path.join(out, name)), fs.readFileSync(path.join(game, 'assets/rig_full', name)), name);
