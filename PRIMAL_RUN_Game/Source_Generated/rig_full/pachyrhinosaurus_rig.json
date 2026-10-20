@@ -1,0 +1,4537 @@
+{
+ "species": "pachyrhinosaurus",
+ "canvas": [
+  144,
+  144
+ ],
+ "origin": [
+  72,
+  72
+ ],
+ "model_scale": 1.0,
+ "visual_scale": 1,
+ "camera": {
+  "image_x": "x",
+  "image_up": "0.82*y + 0.36*z",
+  "light": [
+   -0.4915,
+   0.4129,
+   0.7668
+  ],
+  "note": "Same fixed overhead camera and light for every direction; each direction is its own render."
+ },
+ "skeleton": {
+  "locomotion": "legs",
+  "quadruped": true,
+  "hip_height": 8.82,
+  "chains": [
+   "fore_L",
+   "fore_R"
+  ],
+  "attack_style": "horns"
+ },
+ "states": {
+  "idle": {
+   "frames": 4,
+   "fps": 4,
+   "loop": true,
+   "contact_frame": null
+  },
+  "walk": {
+   "frames": 6,
+   "fps": 8,
+   "loop": true,
+   "contact_frame": null
+  },
+  "run": {
+   "frames": 6,
+   "fps": 12,
+   "loop": true,
+   "contact_frame": null
+  },
+  "attack": {
+   "frames": 6,
+   "fps": 12,
+   "loop": false,
+   "contact_frame": 3
+  },
+  "hurt": {
+   "frames": 2,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  },
+  "death": {
+   "frames": 6,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  }
+ },
+ "frames": {
+  "pachyrhinosaurus_idle_S_000": {
+   "file": "pachyrhinosaurus_idle_S_000.png",
+   "sha256": "8d79302a795c39d98e2051431d1b97aff6b881cfb828918f31608bda6b297328",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.4
+     ],
+     [
+      88.46,
+      65.59
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.4
+     ],
+     [
+      55.54,
+      65.59
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_N_000": {
+   "file": "pachyrhinosaurus_idle_N_000.png",
+   "sha256": "bd5a48523e80e7df5abd07f14329baf5aa23f6043101c9edaf7f75fd34a1c89e",
+   "bbox": [
+    50,
+    27,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.25
+     ],
+     [
+      55.54,
+      75.23
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.25
+     ],
+     [
+      88.46,
+      75.23
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_E_000": {
+   "file": "pachyrhinosaurus_idle_E_000.png",
+   "sha256": "9e310864d0e05e14e4eaad787823f29c3caeda27b9b4ccca09b839624e970e78",
+   "bbox": [
+    23,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.16,
+      60.63
+     ],
+     [
+      66.12,
+      56.91
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.16,
+      77.02
+     ],
+     [
+      66.12,
+      83.91
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_W_000": {
+   "file": "pachyrhinosaurus_idle_W_000.png",
+   "sha256": "dfacce540918f144db518d4fca950cfbb640f53a6860aa226547911d25e2bb61",
+   "bbox": [
+    21,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.84,
+      77.02
+     ],
+     [
+      77.88,
+      83.91
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.84,
+      60.63
+     ],
+     [
+      77.88,
+      56.91
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_S_001": {
+   "file": "pachyrhinosaurus_idle_S_001.png",
+   "sha256": "6dfff6c4302331689424304875ec891e83a5ba0d1c3d48422aff144e3a2c8b61",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.44
+     ],
+     [
+      88.46,
+      65.72
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.44
+     ],
+     [
+      55.54,
+      65.72
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_N_001": {
+   "file": "pachyrhinosaurus_idle_N_001.png",
+   "sha256": "43468bab4263215fb747b8f59d43cd4f5c8112da5386872d396b99aca40e6429",
+   "bbox": [
+    50,
+    27,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.3
+     ],
+     [
+      55.54,
+      75.15
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.3
+     ],
+     [
+      88.46,
+      75.15
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_E_001": {
+   "file": "pachyrhinosaurus_idle_E_001.png",
+   "sha256": "1c438d1595c733cb013c9bbfd819d8b726494000fb1af5fa406d81cf72c20584",
+   "bbox": [
+    23,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.16,
+      60.68
+     ],
+     [
+      66.25,
+      56.94
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.16,
+      77.07
+     ],
+     [
+      66.25,
+      83.94
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_W_001": {
+   "file": "pachyrhinosaurus_idle_W_001.png",
+   "sha256": "0d4b533b8c79cbc331616439b9b610eb0505664330614bf637c8ee9720ec0ae6",
+   "bbox": [
+    21,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.84,
+      77.07
+     ],
+     [
+      77.75,
+      83.94
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.84,
+      60.68
+     ],
+     [
+      77.75,
+      56.94
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_S_002": {
+   "file": "pachyrhinosaurus_idle_S_002.png",
+   "sha256": "3260b88840599e62883212f81bed23a1afcba961022fc60938aa24cbb0619c82",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.49
+     ],
+     [
+      88.46,
+      65.85
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.49
+     ],
+     [
+      55.54,
+      65.85
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_N_002": {
+   "file": "pachyrhinosaurus_idle_N_002.png",
+   "sha256": "e4506f3377d484f7e305d0b69833e134669a2aa65ec995e9c27ffbfec374d614",
+   "bbox": [
+    50,
+    28,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.35
+     ],
+     [
+      55.54,
+      75.08
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.35
+     ],
+     [
+      88.46,
+      75.08
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_E_002": {
+   "file": "pachyrhinosaurus_idle_E_002.png",
+   "sha256": "91537459572f00334ddc7d977c1bbe50a52e85cf79800f6abac3b954fb57cdf3",
+   "bbox": [
+    23,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.16,
+      60.72
+     ],
+     [
+      66.37,
+      56.96
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.16,
+      77.12
+     ],
+     [
+      66.37,
+      83.97
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_W_002": {
+   "file": "pachyrhinosaurus_idle_W_002.png",
+   "sha256": "a793a6b553ec01e512e6e5349dcd870afeed1a68273a9e498c5dbafc7b5c114c",
+   "bbox": [
+    21,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.84,
+      77.12
+     ],
+     [
+      77.63,
+      83.97
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.84,
+      60.72
+     ],
+     [
+      77.63,
+      56.96
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_S_003": {
+   "file": "pachyrhinosaurus_idle_S_003.png",
+   "sha256": "e63c6a69356cdbfbfa70669d99347fc8fc9f0bbe66bde536a18880d155ada4ce",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.44
+     ],
+     [
+      88.46,
+      65.72
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.44
+     ],
+     [
+      55.54,
+      65.72
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_N_003": {
+   "file": "pachyrhinosaurus_idle_N_003.png",
+   "sha256": "63d8d36a51c471ca923d56b73e975a7b709caa0752a0f9b19fad594437b48ff6",
+   "bbox": [
+    50,
+    28,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.3
+     ],
+     [
+      55.54,
+      75.15
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.3
+     ],
+     [
+      88.46,
+      75.15
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_E_003": {
+   "file": "pachyrhinosaurus_idle_E_003.png",
+   "sha256": "5c09786acb2d401860f7c8db1260d1f9a12289a21b0c40a59be7c62b1852da20",
+   "bbox": [
+    23,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.16,
+      60.68
+     ],
+     [
+      66.25,
+      56.94
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.16,
+      77.07
+     ],
+     [
+      66.25,
+      83.94
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_idle_W_003": {
+   "file": "pachyrhinosaurus_idle_W_003.png",
+   "sha256": "a8ff68c3a28658be0021cf04dc4e7f196d06675c56d17edadd7d3388d5d768d9",
+   "bbox": [
+    21,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.84,
+      77.07
+     ],
+     [
+      77.75,
+      83.94
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.84,
+      60.68
+     ],
+     [
+      77.75,
+      56.94
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_S_000": {
+   "file": "pachyrhinosaurus_walk_S_000.png",
+   "sha256": "40e1f08b8dd55d0523c7e26c14531d4e12300c08b2e41c7ef14bf920be56239c",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.55
+     ],
+     [
+      88.46,
+      66.42
+     ],
+     [
+      89.05,
+      66.68
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.55
+     ],
+     [
+      55.54,
+      61.86
+     ],
+     [
+      54.95,
+      61.16
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_walk_N_000": {
+   "file": "pachyrhinosaurus_walk_N_000.png",
+   "sha256": "45f29b539a0af67df050125a90e8fc81f8e9488ca26dfb79848536853e64c372",
+   "bbox": [
+    50,
+    27,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.41
+     ],
+     [
+      55.54,
+      74.22
+     ],
+     [
+      54.95,
+      76.76
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.41
+     ],
+     [
+      88.46,
+      79.02
+     ],
+     [
+      89.05,
+      82.16
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_walk_E_000": {
+   "file": "pachyrhinosaurus_walk_E_000.png",
+   "sha256": "7b3144634b64bae99eb36b69895612ec5f693ada2a542ccf178321291837c9e6",
+   "bbox": [
+    23,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.16,
+      60.79
+     ],
+     [
+      67.24,
+      56.82
+     ],
+     [
+      65.85,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.16,
+      77.18
+     ],
+     [
+      61.54,
+      83.94
+     ],
+     [
+      59.19,
+      85.64
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_walk_W_000": {
+   "file": "pachyrhinosaurus_walk_W_000.png",
+   "sha256": "aff54298cdf656feb80c782e925d1b671dffd60cff8999064bc51c7f8fc4b646",
+   "bbox": [
+    21,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.84,
+      77.18
+     ],
+     [
+      76.76,
+      83.82
+     ],
+     [
+      78.15,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.84,
+      60.79
+     ],
+     [
+      82.46,
+      56.94
+     ],
+     [
+      84.81,
+      57.68
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_walk_S_001": {
+   "file": "pachyrhinosaurus_walk_S_001.png",
+   "sha256": "4658a018fe55a4818714a18700254089eb647997073c0bb9666d102eeef6697a",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.44
+     ],
+     [
+      88.46,
+      65.48
+     ],
+     [
+      89.05,
+      64.83
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.44
+     ],
+     [
+      55.54,
+      66.73
+     ],
+     [
+      54.95,
+      66.76
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_walk_N_001": {
+   "file": "pachyrhinosaurus_walk_N_001.png",
+   "sha256": "eb4dea06fe05b29350cf987376b827b777dfb2b1f321fcd7cba113617f211522",
+   "bbox": [
+    50,
+    28,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.29
+     ],
+     [
+      55.54,
+      75.49
+     ],
+     [
+      54.95,
+      78.61
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.29
+     ],
+     [
+      88.46,
+      72.77
+     ],
+     [
+      89.05,
+      75.46
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_walk_E_001": {
+   "file": "pachyrhinosaurus_walk_E_001.png",
+   "sha256": "3e8d58ac125789720c8dd017c748d437588fcdac5ba6c33650ab1ea5a5c4e594",
+   "bbox": [
+    23,
+    50,
+    123,
+    88
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.16,
+      60.67
+     ],
+     [
+      65.89,
+      56.99
+     ],
+     [
+      63.6,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.16,
+      77.06
+     ],
+     [
+      68.31,
+      83.25
+     ],
+     [
+      66.7,
+      85.1
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_walk_W_001": {
+   "file": "pachyrhinosaurus_walk_W_001.png",
+   "sha256": "bb03383e82f0bc29a3d38b0ac6859421c1517c93ee34b12203bc8d1cbb32942c",
+   "bbox": [
+    21,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.84,
+      77.06
+     ],
+     [
+      78.11,
+      83.99
+     ],
+     [
+      80.4,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.84,
+      60.67
+     ],
+     [
+      75.69,
+      56.25
+     ],
+     [
+      77.3,
+      57.13
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_walk_S_002": {
+   "file": "pachyrhinosaurus_walk_S_002.png",
+   "sha256": "121f6a1ae8eedf8b5e72b862b3c36f0b3f51d22f1d4d9b1419fde4a5a44802c8",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.44
+     ],
+     [
+      88.46,
+      64.09
+     ],
+     [
+      89.05,
+      62.98
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.44
+     ],
+     [
+      55.54,
+      66.1
+     ],
+     [
+      54.95,
+      68.52
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_N_002": {
+   "file": "pachyrhinosaurus_walk_N_002.png",
+   "sha256": "1863baa1b0465bab9003f7eb4cd7dbfc68b6178d5b0441065efbfe3f12b725ab",
+   "bbox": [
+    50,
+    28,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.29
+     ],
+     [
+      55.54,
+      77.11
+     ],
+     [
+      54.95,
+      80.46
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.29
+     ],
+     [
+      88.46,
+      74.51
+     ],
+     [
+      89.05,
+      74.91
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_E_002": {
+   "file": "pachyrhinosaurus_walk_E_002.png",
+   "sha256": "8a613b2668f54d6d6e770d01f54f0b9f1c58c0ecdf4b6713aab4a75ba252ff42",
+   "bbox": [
+    24,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.16,
+      60.67
+     ],
+     [
+      64.06,
+      57.1
+     ],
+     [
+      61.34,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.16,
+      77.06
+     ],
+     [
+      66.87,
+      83.8
+     ],
+     [
+      68.1,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_W_002": {
+   "file": "pachyrhinosaurus_walk_W_002.png",
+   "sha256": "5c2ba0b343e0e3e47780aa182f3ce29705da6ce6916a2be0d75ce863d9bf9cb6",
+   "bbox": [
+    21,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.84,
+      77.06
+     ],
+     [
+      79.94,
+      84.1
+     ],
+     [
+      82.66,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.84,
+      60.67
+     ],
+     [
+      77.13,
+      56.8
+     ],
+     [
+      75.9,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_S_003": {
+   "file": "pachyrhinosaurus_walk_S_003.png",
+   "sha256": "11db642def09fd268de17171408795289fd1200bc63fdf4774eea6f2d47c58a6",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.55
+     ],
+     [
+      88.46,
+      61.86
+     ],
+     [
+      89.05,
+      61.16
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.55
+     ],
+     [
+      55.54,
+      66.42
+     ],
+     [
+      54.95,
+      66.68
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_N_003": {
+   "file": "pachyrhinosaurus_walk_N_003.png",
+   "sha256": "e023c8c045233bd13b2b70d6396f182177676663ab09e1361f1d3491e604469c",
+   "bbox": [
+    50,
+    27,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.41
+     ],
+     [
+      55.54,
+      79.02
+     ],
+     [
+      54.95,
+      82.16
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.41
+     ],
+     [
+      88.46,
+      74.22
+     ],
+     [
+      89.05,
+      76.76
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_E_003": {
+   "file": "pachyrhinosaurus_walk_E_003.png",
+   "sha256": "be78cdbdeb1112f75fac87306ece9bcd93bff5dda8df88639273a5362d13e881",
+   "bbox": [
+    23,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.16,
+      60.79
+     ],
+     [
+      61.54,
+      56.94
+     ],
+     [
+      59.19,
+      57.68
+     ]
+    ],
+    "fore_R": [
+     [
+      64.16,
+      77.18
+     ],
+     [
+      67.24,
+      83.82
+     ],
+     [
+      65.85,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_W_003": {
+   "file": "pachyrhinosaurus_walk_W_003.png",
+   "sha256": "4cb967894684c5f17051a7698af5396222378adaf35f8a927a9aa60f0f1ee936",
+   "bbox": [
+    21,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.84,
+      77.18
+     ],
+     [
+      82.46,
+      83.94
+     ],
+     [
+      84.81,
+      85.64
+     ]
+    ],
+    "fore_R": [
+     [
+      79.84,
+      60.79
+     ],
+     [
+      76.76,
+      56.82
+     ],
+     [
+      78.15,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_S_004": {
+   "file": "pachyrhinosaurus_walk_S_004.png",
+   "sha256": "9ce4bf6ba0c8057ce41f49c0dfab08ee4d31107157b262eaf0eda1728aac9249",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.44
+     ],
+     [
+      88.46,
+      66.73
+     ],
+     [
+      89.05,
+      66.76
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.44
+     ],
+     [
+      55.54,
+      65.48
+     ],
+     [
+      54.95,
+      64.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_N_004": {
+   "file": "pachyrhinosaurus_walk_N_004.png",
+   "sha256": "d4af914305b1c8a5b0dc3d6aaaac89ce124ce709bd4214c75df65f3cbb81f064",
+   "bbox": [
+    50,
+    28,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.29
+     ],
+     [
+      55.54,
+      72.77
+     ],
+     [
+      54.95,
+      75.46
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.29
+     ],
+     [
+      88.46,
+      75.49
+     ],
+     [
+      89.05,
+      78.61
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_E_004": {
+   "file": "pachyrhinosaurus_walk_E_004.png",
+   "sha256": "af48264cc9af81594c2d96e6e224a0a5c6d8f236fbbeba4f603f2ca671d23174",
+   "bbox": [
+    23,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.16,
+      60.67
+     ],
+     [
+      68.31,
+      56.25
+     ],
+     [
+      66.7,
+      57.13
+     ]
+    ],
+    "fore_R": [
+     [
+      64.16,
+      77.06
+     ],
+     [
+      65.89,
+      83.99
+     ],
+     [
+      63.6,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_W_004": {
+   "file": "pachyrhinosaurus_walk_W_004.png",
+   "sha256": "f1f23a3f203ed87ea47d035ac9f71e105d8c816b3f5c9a35ff4fb48ca5aa5992",
+   "bbox": [
+    21,
+    50,
+    121,
+    88
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.84,
+      77.06
+     ],
+     [
+      75.69,
+      83.25
+     ],
+     [
+      77.3,
+      85.1
+     ]
+    ],
+    "fore_R": [
+     [
+      79.84,
+      60.67
+     ],
+     [
+      78.11,
+      56.99
+     ],
+     [
+      80.4,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_S_005": {
+   "file": "pachyrhinosaurus_walk_S_005.png",
+   "sha256": "b4c7f7760ee6eebc8816d4f31b6a589baab2a0f36d62fd06f2179022c10ddc2f",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.44
+     ],
+     [
+      88.46,
+      66.1
+     ],
+     [
+      89.05,
+      68.52
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.44
+     ],
+     [
+      55.54,
+      64.09
+     ],
+     [
+      54.95,
+      62.98
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_N_005": {
+   "file": "pachyrhinosaurus_walk_N_005.png",
+   "sha256": "c12e88c59687beaf258c144044ed7b11e97e4d2e546d1ef6c358109d57ffe7cf",
+   "bbox": [
+    50,
+    28,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.29
+     ],
+     [
+      55.54,
+      74.51
+     ],
+     [
+      54.95,
+      74.91
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.29
+     ],
+     [
+      88.46,
+      77.11
+     ],
+     [
+      89.05,
+      80.46
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_E_005": {
+   "file": "pachyrhinosaurus_walk_E_005.png",
+   "sha256": "b9b5b091c3c065384c4b924a7d12494b8261a6f165935a54342b985f0433b4cb",
+   "bbox": [
+    23,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.16,
+      60.67
+     ],
+     [
+      66.87,
+      56.8
+     ],
+     [
+      68.1,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.16,
+      77.06
+     ],
+     [
+      64.06,
+      84.1
+     ],
+     [
+      61.34,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_walk_W_005": {
+   "file": "pachyrhinosaurus_walk_W_005.png",
+   "sha256": "c688e96b478ece0b7859c7632704537ef5dc0c0b548817aa4ff488128b66f0b1",
+   "bbox": [
+    21,
+    50,
+    120,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.84,
+      77.06
+     ],
+     [
+      77.13,
+      83.8
+     ],
+     [
+      75.9,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.84,
+      60.67
+     ],
+     [
+      79.94,
+      57.1
+     ],
+     [
+      82.66,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_S_000": {
+   "file": "pachyrhinosaurus_run_S_000.png",
+   "sha256": "d2783b411c5316d3d13df156656e1aa66d441594f6733e5b0a2382d9ec6706b4",
+   "bbox": [
+    50,
+    29,
+    94,
+    112
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.54
+     ],
+     [
+      88.46,
+      61.32
+     ],
+     [
+      89.05,
+      60.17
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.54
+     ],
+     [
+      55.54,
+      66.47
+     ],
+     [
+      54.95,
+      69.78
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_N_000": {
+   "file": "pachyrhinosaurus_run_N_000.png",
+   "sha256": "04616cdd2a0b68e2f7cc36534f69e77ae96aee0167f61e90ba080c7e6fb41310",
+   "bbox": [
+    50,
+    28,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.39
+     ],
+     [
+      55.54,
+      79.27
+     ],
+     [
+      54.95,
+      82.63
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.39
+     ],
+     [
+      88.46,
+      74.06
+     ],
+     [
+      89.05,
+      73.03
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_E_000": {
+   "file": "pachyrhinosaurus_run_E_000.png",
+   "sha256": "96682bc9a9d769ec80d4fb9ec7d27ed492a4c4a6e817e1d809b1daacbf51dbbf",
+   "bbox": [
+    23,
+    51,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.17,
+      60.77
+     ],
+     [
+      61.06,
+      56.79
+     ],
+     [
+      58.31,
+      57.42
+     ]
+    ],
+    "fore_R": [
+     [
+      64.17,
+      77.16
+     ],
+     [
+      67.37,
+      83.76
+     ],
+     [
+      70.02,
+      85.39
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_W_000": {
+   "file": "pachyrhinosaurus_run_W_000.png",
+   "sha256": "e8024eb8dbea8547162b3a723464000ba0bb46c5e2bab739ad53eed7d015a00c",
+   "bbox": [
+    21,
+    51,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.83,
+      77.16
+     ],
+     [
+      82.94,
+      83.8
+     ],
+     [
+      85.69,
+      85.38
+     ]
+    ],
+    "fore_R": [
+     [
+      79.83,
+      60.77
+     ],
+     [
+      76.63,
+      56.76
+     ],
+     [
+      73.98,
+      57.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_S_001": {
+   "file": "pachyrhinosaurus_run_S_001.png",
+   "sha256": "e5e1fe411f84d82498cdad4b59ab2f484fd6944649b5de8463f6aaf90d3279fa",
+   "bbox": [
+    50,
+    29,
+    94,
+    112
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.35
+     ],
+     [
+      88.46,
+      64.67
+     ],
+     [
+      89.05,
+      61.64
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.35
+     ],
+     [
+      55.54,
+      65.94
+     ],
+     [
+      54.95,
+      67.1
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_N_001": {
+   "file": "pachyrhinosaurus_run_N_001.png",
+   "sha256": "2e40aa22a3bb1ffa07442bffe0eaf10c7a3d9fe2bfc2b9b4592fbf53a8098df1",
+   "bbox": [
+    50,
+    29,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.2
+     ],
+     [
+      55.54,
+      76.32
+     ],
+     [
+      54.95,
+      79.92
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.2
+     ],
+     [
+      88.46,
+      74.54
+     ],
+     [
+      89.05,
+      76.34
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_E_001": {
+   "file": "pachyrhinosaurus_run_E_001.png",
+   "sha256": "a4935f5591392c931e5f402506fbbcbc1364ddc398f105eb4341e328a1fc10ea",
+   "bbox": [
+    23,
+    50,
+    122,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.17,
+      60.58
+     ],
+     [
+      64.89,
+      56.99
+     ],
+     [
+      60.85,
+      56.8
+     ]
+    ],
+    "fore_R": [
+     [
+      64.17,
+      76.97
+     ],
+     [
+      66.76,
+      83.74
+     ],
+     [
+      66.36,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_W_001": {
+   "file": "pachyrhinosaurus_run_W_001.png",
+   "sha256": "f6f1039e57dbc773923d397ef275387e3ec3b2a15db68a75bf6545330e03af1c",
+   "bbox": [
+    22,
+    51,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.83,
+      76.97
+     ],
+     [
+      79.11,
+      83.99
+     ],
+     [
+      83.15,
+      84.77
+     ]
+    ],
+    "fore_R": [
+     [
+      79.83,
+      60.58
+     ],
+     [
+      77.24,
+      56.74
+     ],
+     [
+      77.64,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_S_002": {
+   "file": "pachyrhinosaurus_run_S_002.png",
+   "sha256": "fe18908aac54317191f9c3f29cb5d9ce8fe509bdd0e72b229b68040864623046",
+   "bbox": [
+    50,
+    29,
+    94,
+    112
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.35
+     ],
+     [
+      88.46,
+      66.66
+     ],
+     [
+      89.05,
+      67.07
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.35
+     ],
+     [
+      55.54,
+      64.24
+     ],
+     [
+      54.95,
+      63.48
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_N_002": {
+   "file": "pachyrhinosaurus_run_N_002.png",
+   "sha256": "a02bf5848a2c050a2c86067104ff60c27812ba009beb5a8219b56f41e6228806",
+   "bbox": [
+    50,
+    29,
+    94,
+    109
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.2
+     ],
+     [
+      55.54,
+      72.07
+     ],
+     [
+      54.95,
+      74.5
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.2
+     ],
+     [
+      88.46,
+      76.78
+     ],
+     [
+      89.05,
+      79.95
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_E_002": {
+   "file": "pachyrhinosaurus_run_E_002.png",
+   "sha256": "658fdfdc4acbe07211c1952702e9c1dab9ab535a76de8233872e719c710cb532",
+   "bbox": [
+    23,
+    50,
+    122,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.17,
+      60.58
+     ],
+     [
+      68.7,
+      55.87
+     ],
+     [
+      67.47,
+      56.8
+     ]
+    ],
+    "fore_R": [
+     [
+      64.17,
+      76.97
+     ],
+     [
+      64.36,
+      84.01
+     ],
+     [
+      61.95,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_W_002": {
+   "file": "pachyrhinosaurus_run_W_002.png",
+   "sha256": "ecc805df19794eaa1df980384bb4e95ce91a43837f7095008b2f5adec442e7c3",
+   "bbox": [
+    22,
+    51,
+    121,
+    88
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.83,
+      76.97
+     ],
+     [
+      75.3,
+      82.87
+     ],
+     [
+      76.53,
+      84.77
+     ]
+    ],
+    "fore_R": [
+     [
+      79.83,
+      60.58
+     ],
+     [
+      79.64,
+      57.01
+     ],
+     [
+      82.05,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_run_S_003": {
+   "file": "pachyrhinosaurus_run_S_003.png",
+   "sha256": "b4bff6eb2922f8f0db8a709026df2a2aba8cc74a2d32cc444f95841e599dbfc7",
+   "bbox": [
+    50,
+    29,
+    94,
+    112
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.54
+     ],
+     [
+      88.46,
+      66.47
+     ],
+     [
+      89.05,
+      69.78
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.54
+     ],
+     [
+      55.54,
+      61.32
+     ],
+     [
+      54.95,
+      60.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_N_003": {
+   "file": "pachyrhinosaurus_run_N_003.png",
+   "sha256": "23687684c6e2873d4c8693b667811cf56c0dfe1d6fc4e4f0c996cc64442f7cba",
+   "bbox": [
+    50,
+    28,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.39
+     ],
+     [
+      55.54,
+      74.06
+     ],
+     [
+      54.95,
+      73.03
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.39
+     ],
+     [
+      88.46,
+      79.27
+     ],
+     [
+      89.05,
+      82.63
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_E_003": {
+   "file": "pachyrhinosaurus_run_E_003.png",
+   "sha256": "3a7c6c12530e68571665539ed99f27468232e9bc6180e162b09cf40584cb852e",
+   "bbox": [
+    23,
+    51,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.17,
+      60.77
+     ],
+     [
+      67.37,
+      56.76
+     ],
+     [
+      70.02,
+      57.42
+     ]
+    ],
+    "fore_R": [
+     [
+      64.17,
+      77.16
+     ],
+     [
+      61.06,
+      83.8
+     ],
+     [
+      58.31,
+      85.38
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_W_003": {
+   "file": "pachyrhinosaurus_run_W_003.png",
+   "sha256": "b1f7f789c0f2fb0a93b5a1297d783a205d481cf889835ba8bb53cd48cd3a99a8",
+   "bbox": [
+    21,
+    51,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.83,
+      77.16
+     ],
+     [
+      76.63,
+      83.76
+     ],
+     [
+      73.98,
+      85.39
+     ]
+    ],
+    "fore_R": [
+     [
+      79.83,
+      60.77
+     ],
+     [
+      82.94,
+      56.79
+     ],
+     [
+      85.69,
+      57.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_S_004": {
+   "file": "pachyrhinosaurus_run_S_004.png",
+   "sha256": "b8b2e4b9b53f04f36df56974764749c586e47b5c0e27549f12d2e61e77906dca",
+   "bbox": [
+    50,
+    29,
+    94,
+    112
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.35
+     ],
+     [
+      88.46,
+      65.94
+     ],
+     [
+      89.05,
+      67.1
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.35
+     ],
+     [
+      55.54,
+      64.67
+     ],
+     [
+      54.95,
+      61.64
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_N_004": {
+   "file": "pachyrhinosaurus_run_N_004.png",
+   "sha256": "a85d618fa42ec20ce19846962db8f8ac759c6656292862d1268c4fde64fa7952",
+   "bbox": [
+    50,
+    29,
+    94,
+    110
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.2
+     ],
+     [
+      55.54,
+      74.54
+     ],
+     [
+      54.95,
+      76.34
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.2
+     ],
+     [
+      88.46,
+      76.32
+     ],
+     [
+      89.05,
+      79.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_E_004": {
+   "file": "pachyrhinosaurus_run_E_004.png",
+   "sha256": "49ca1de7611aed290ebc225c0156099bc72ab1e6b4bb590393aff09f3bdad532",
+   "bbox": [
+    23,
+    50,
+    122,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.17,
+      60.58
+     ],
+     [
+      66.76,
+      56.74
+     ],
+     [
+      66.37,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.17,
+      76.97
+     ],
+     [
+      64.89,
+      83.99
+     ],
+     [
+      60.85,
+      84.77
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_W_004": {
+   "file": "pachyrhinosaurus_run_W_004.png",
+   "sha256": "fb8dc0e6247dbc9ad57db7d78eb1268cd3275ffce4f6235e02cd7d58107d6339",
+   "bbox": [
+    22,
+    51,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.83,
+      76.97
+     ],
+     [
+      77.24,
+      83.74
+     ],
+     [
+      77.63,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.83,
+      60.58
+     ],
+     [
+      79.11,
+      56.99
+     ],
+     [
+      83.15,
+      56.8
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_S_005": {
+   "file": "pachyrhinosaurus_run_S_005.png",
+   "sha256": "8d3ac89be2b7af298a983bd44c4ca9331864dc7e22fa785cddd090fde165bc33",
+   "bbox": [
+    50,
+    29,
+    94,
+    112
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.35
+     ],
+     [
+      88.46,
+      64.24
+     ],
+     [
+      89.05,
+      63.48
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.35
+     ],
+     [
+      55.54,
+      66.66
+     ],
+     [
+      54.95,
+      67.07
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_N_005": {
+   "file": "pachyrhinosaurus_run_N_005.png",
+   "sha256": "68d6f7ea290caef4b483587845518c9c4976a2b72839f1c4f382595ac70b3180",
+   "bbox": [
+    50,
+    29,
+    94,
+    109
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      75.2
+     ],
+     [
+      55.54,
+      76.78
+     ],
+     [
+      54.95,
+      79.95
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      75.2
+     ],
+     [
+      88.46,
+      72.07
+     ],
+     [
+      89.05,
+      74.5
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_E_005": {
+   "file": "pachyrhinosaurus_run_E_005.png",
+   "sha256": "0f78945798b4ae01508143878a0b81ccda8dee0af445b20751e78c0f1b0d9c80",
+   "bbox": [
+    23,
+    50,
+    122,
+    88
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.17,
+      60.58
+     ],
+     [
+      64.36,
+      57.01
+     ],
+     [
+      61.95,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.17,
+      76.97
+     ],
+     [
+      68.7,
+      82.87
+     ],
+     [
+      67.47,
+      84.77
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_run_W_005": {
+   "file": "pachyrhinosaurus_run_W_005.png",
+   "sha256": "6031718cc382c49bf5e040c844f2a61020d1043403fefcbc110104ab6b4beb55",
+   "bbox": [
+    22,
+    51,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.83,
+      76.97
+     ],
+     [
+      79.64,
+      84.01
+     ],
+     [
+      82.05,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.83,
+      60.58
+     ],
+     [
+      75.3,
+      55.87
+     ],
+     [
+      76.53,
+      56.8
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "pachyrhinosaurus_attack_S_000": {
+   "file": "pachyrhinosaurus_attack_S_000.png",
+   "sha256": "89bfa68d95bbca63210ed85ee2cd5fb6ec1d69968d5c37a1101e0aadd9aae293",
+   "bbox": [
+    50,
+    29,
+    94,
+    108
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      61.18
+     ],
+     [
+      88.46,
+      64.93
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      61.18
+     ],
+     [
+      55.54,
+      64.93
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_N_000": {
+   "file": "pachyrhinosaurus_attack_N_000.png",
+   "sha256": "d476a3f0739d928afc29abf261e9bc3675f4a800bd957823b45850a763de37f1",
+   "bbox": [
+    50,
+    28,
+    94,
+    112
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      76.64
+     ],
+     [
+      55.54,
+      75.69
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      76.64
+     ],
+     [
+      88.46,
+      75.69
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_E_000": {
+   "file": "pachyrhinosaurus_attack_E_000.png",
+   "sha256": "db5e7ed7d4d162a2cfc3f355018ad446bfe6df3b77e8273d232f163dec50f21c",
+   "bbox": [
+    22,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.58,
+      60.71
+     ],
+     [
+      65.44,
+      56.81
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      62.58,
+      77.11
+     ],
+     [
+      65.44,
+      83.81
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_W_000": {
+   "file": "pachyrhinosaurus_attack_W_000.png",
+   "sha256": "ac49b2eea0172033313f61fd625d3b642cd12f539428bdbc5314d7bb729d1624",
+   "bbox": [
+    23,
+    50,
+    122,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      81.42,
+      77.11
+     ],
+     [
+      78.56,
+      83.81
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      81.42,
+      60.71
+     ],
+     [
+      78.56,
+      56.81
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_S_001": {
+   "file": "pachyrhinosaurus_attack_S_001.png",
+   "sha256": "5635d7b011d39f71c0ccf7764ab293467012c57bb7e7790e4e82412c79f19a9a",
+   "bbox": [
+    50,
+    28,
+    94,
+    107
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      60.26
+     ],
+     [
+      88.46,
+      64.27
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      60.26
+     ],
+     [
+      55.54,
+      64.27
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_N_001": {
+   "file": "pachyrhinosaurus_attack_N_001.png",
+   "sha256": "33bee7babce8cd1491bb18c1d7d63c69cda598ddaa16f0a8ea078498d6a9cdd8",
+   "bbox": [
+    50,
+    29,
+    94,
+    113
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      77.74
+     ],
+     [
+      55.54,
+      76.23
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      77.74
+     ],
+     [
+      88.46,
+      76.23
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_E_001": {
+   "file": "pachyrhinosaurus_attack_E_001.png",
+   "sha256": "6b1b47c6b08803709555995801ea89c6c83f6a1ff86cc176141d592318cf0e75",
+   "bbox": [
+    21,
+    50,
+    119,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      61.34,
+      60.8
+     ],
+     [
+      64.71,
+      56.75
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      61.34,
+      77.2
+     ],
+     [
+      64.71,
+      83.75
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_W_001": {
+   "file": "pachyrhinosaurus_attack_W_001.png",
+   "sha256": "8d59122cfe9511986f3c1b82ea1079effbc7da3f976f412e1898a902ab3096b2",
+   "bbox": [
+    25,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.66,
+      77.2
+     ],
+     [
+      79.29,
+      83.75
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      82.66,
+      60.8
+     ],
+     [
+      79.29,
+      56.75
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_S_002": {
+   "file": "pachyrhinosaurus_attack_S_002.png",
+   "sha256": "cbe32b6b22de81d325adbc9a32f477569e641be63c270a9f6db417b493af76cc",
+   "bbox": [
+    50,
+    29,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      61.71
+     ],
+     [
+      88.46,
+      65.24
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      61.71
+     ],
+     [
+      55.54,
+      65.24
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_N_002": {
+   "file": "pachyrhinosaurus_attack_N_002.png",
+   "sha256": "19c4a8410a7b35c2a749cf9fd1604c3426727087d9d9b196ccc400428598dc6b",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      76.01
+     ],
+     [
+      55.54,
+      75.46
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      76.01
+     ],
+     [
+      88.46,
+      75.46
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_E_002": {
+   "file": "pachyrhinosaurus_attack_E_002.png",
+   "sha256": "386d04637f1cfaeb7b1e3a451b1be9fe3d61436e971e6713e256caf2a28d3c62",
+   "bbox": [
+    22,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.28,
+      60.67
+     ],
+     [
+      65.77,
+      56.85
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      63.28,
+      77.06
+     ],
+     [
+      65.77,
+      83.85
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_W_002": {
+   "file": "pachyrhinosaurus_attack_W_002.png",
+   "sha256": "8188589e0d2978fbbf681e8f03e2fb89e82b99a46a14b1a81ca85441434b115f",
+   "bbox": [
+    23,
+    50,
+    122,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.72,
+      77.06
+     ],
+     [
+      78.23,
+      83.85
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      80.72,
+      60.67
+     ],
+     [
+      78.23,
+      56.85
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_S_003": {
+   "file": "pachyrhinosaurus_attack_S_003.png",
+   "sha256": "cb34558544e112bd0ea6c4041fa58fb0adc6302ad5cf61ebd4b1e52de7a4dcf3",
+   "bbox": [
+    50,
+    32,
+    94,
+    119
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      66.32
+     ],
+     [
+      88.46,
+      65.86
+     ],
+     [
+      89.05,
+      65.36
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      66.32
+     ],
+     [
+      55.54,
+      65.86
+     ],
+     [
+      54.95,
+      65.36
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_N_003": {
+   "file": "pachyrhinosaurus_attack_N_003.png",
+   "sha256": "74f86c21301b46f6bdb8a91618a106fe79af32424883657d1655ac03359a9f4e",
+   "bbox": [
+    50,
+    27,
+    94,
+    105
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      71.19
+     ],
+     [
+      55.54,
+      74.66
+     ],
+     [
+      54.95,
+      77.7
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      71.19
+     ],
+     [
+      88.46,
+      74.66
+     ],
+     [
+      89.05,
+      77.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_E_003": {
+   "file": "pachyrhinosaurus_attack_E_003.png",
+   "sha256": "c2ffa1754db76c233b09a088d2b8098c375350dd4b84b825073a94ec5a3de056",
+   "bbox": [
+    28,
+    51,
+    127,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      69.03,
+      60.56
+     ],
+     [
+      66.63,
+      56.76
+     ],
+     [
+      64.47,
+      57.54
+     ]
+    ],
+    "fore_R": [
+     [
+      69.03,
+      76.95
+     ],
+     [
+      66.63,
+      83.76
+     ],
+     [
+      64.47,
+      85.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_W_003": {
+   "file": "pachyrhinosaurus_attack_W_003.png",
+   "sha256": "514df44c68db57e1736a48f3a9d9b96c525b003522f387bf7f66024e360d94a2",
+   "bbox": [
+    17,
+    51,
+    116,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      74.97,
+      76.95
+     ],
+     [
+      77.37,
+      83.76
+     ],
+     [
+      79.53,
+      85.51
+     ]
+    ],
+    "fore_R": [
+     [
+      74.97,
+      60.56
+     ],
+     [
+      77.37,
+      56.76
+     ],
+     [
+      79.53,
+      57.54
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_S_004": {
+   "file": "pachyrhinosaurus_attack_S_004.png",
+   "sha256": "8b328a8b2fed1230bf2a9674a29f7f5cce2b40d54b85e5e3b060f822a2648db4",
+   "bbox": [
+    50,
+    31,
+    94,
+    116
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      64.67
+     ],
+     [
+      88.46,
+      66.02
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      64.67
+     ],
+     [
+      55.54,
+      66.02
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_N_004": {
+   "file": "pachyrhinosaurus_attack_N_004.png",
+   "sha256": "0388f763b23657a484809fbd5a1710470de76d911611401f423e7af82f72daee",
+   "bbox": [
+    50,
+    27,
+    94,
+    107
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      72.88
+     ],
+     [
+      55.54,
+      74.99
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      72.88
+     ],
+     [
+      88.46,
+      74.99
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_E_004": {
+   "file": "pachyrhinosaurus_attack_E_004.png",
+   "sha256": "9a8c09955e4e6f73bfe8e9d50c007af2c97e9bc01cd63dd3a34216d9b1c92231",
+   "bbox": [
+    26,
+    50,
+    125,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.99,
+      60.58
+     ],
+     [
+      66.54,
+      57.0
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      66.99,
+      76.97
+     ],
+     [
+      66.54,
+      84.01
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_W_004": {
+   "file": "pachyrhinosaurus_attack_W_004.png",
+   "sha256": "92d9920396f1dd9800be70afa8c7febca343ee7134645b321644f715bf69df36",
+   "bbox": [
+    19,
+    50,
+    118,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.01,
+      76.97
+     ],
+     [
+      77.46,
+      84.01
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      77.01,
+      60.58
+     ],
+     [
+      77.46,
+      57.0
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_S_005": {
+   "file": "pachyrhinosaurus_attack_S_005.png",
+   "sha256": "5139d5bc021460ecd8fc767d338eae08139d4bce60b76b90ae12d211f2c7f281",
+   "bbox": [
+    50,
+    30,
+    94,
+    112
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      62.97
+     ],
+     [
+      88.46,
+      65.88
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      62.97
+     ],
+     [
+      55.54,
+      65.88
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_N_005": {
+   "file": "pachyrhinosaurus_attack_N_005.png",
+   "sha256": "50d97b99d837d03fc9536098f5b70724d9c1ef0baaca3b637668a786bc02b30e",
+   "bbox": [
+    50,
+    27,
+    94,
+    109
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      74.68
+     ],
+     [
+      55.54,
+      75.06
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      74.68
+     ],
+     [
+      88.46,
+      75.06
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_E_005": {
+   "file": "pachyrhinosaurus_attack_E_005.png",
+   "sha256": "3029010d5622aa32aeb598c08fe86995dfdce07b5ef958bc8339ec155575b1f0",
+   "bbox": [
+    24,
+    50,
+    123,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      64.87,
+      60.63
+     ],
+     [
+      66.4,
+      56.97
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      64.87,
+      77.02
+     ],
+     [
+      66.4,
+      83.97
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_attack_W_005": {
+   "file": "pachyrhinosaurus_attack_W_005.png",
+   "sha256": "cbd7d980dd03f9dc53b174653bad7e4322eacb26da7ad7f45240a222e5b8b5e7",
+   "bbox": [
+    21,
+    50,
+    120,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      79.13,
+      77.02
+     ],
+     [
+      77.6,
+      83.97
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      79.13,
+      60.63
+     ],
+     [
+      77.6,
+      56.97
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_hurt_S_000": {
+   "file": "pachyrhinosaurus_hurt_S_000.png",
+   "sha256": "b4c42f7d1ae187d599b045f998a0d20321bc7f8540cf021646c0442e1d873b69",
+   "bbox": [
+    50,
+    29,
+    94,
+    105
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      60.99
+     ],
+     [
+      88.46,
+      64.9
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      60.99
+     ],
+     [
+      55.54,
+      64.9
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_hurt_N_000": {
+   "file": "pachyrhinosaurus_hurt_N_000.png",
+   "sha256": "9135b798fe699521865c6a480fdf2029db4fdbf43f076ce0d7337581fa77e7fb",
+   "bbox": [
+    50,
+    28,
+    94,
+    112
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      77.0
+     ],
+     [
+      55.54,
+      75.71
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      77.0
+     ],
+     [
+      88.46,
+      75.71
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_hurt_E_000": {
+   "file": "pachyrhinosaurus_hurt_E_000.png",
+   "sha256": "6ffcd55d5f55d867e1d59b8fa098fdf1bbfdff573e3b47abf71bb41d8bd5d6f1",
+   "bbox": [
+    22,
+    49,
+    118,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.23,
+      60.8
+     ],
+     [
+      65.41,
+      56.8
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      62.23,
+      77.19
+     ],
+     [
+      65.41,
+      83.8
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_hurt_W_000": {
+   "file": "pachyrhinosaurus_hurt_W_000.png",
+   "sha256": "87b110a145866560723c2419bcab0fa5d0ed7cc5de331f6731e47a95a79f3310",
+   "bbox": [
+    26,
+    49,
+    122,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      81.77,
+      77.19
+     ],
+     [
+      78.59,
+      83.8
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      81.77,
+      60.8
+     ],
+     [
+      78.59,
+      56.8
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_hurt_S_001": {
+   "file": "pachyrhinosaurus_hurt_S_001.png",
+   "sha256": "6652937d75254d2f793ddca0783dc9b01d8755ea06901f284174f46201eded6b",
+   "bbox": [
+    50,
+    29,
+    94,
+    108
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      82.0,
+      61.69
+     ],
+     [
+      88.46,
+      65.31
+     ],
+     [
+      89.05,
+      65.29
+     ]
+    ],
+    "fore_R": [
+     [
+      62.0,
+      61.69
+     ],
+     [
+      55.54,
+      65.31
+     ],
+     [
+      54.95,
+      65.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_hurt_N_001": {
+   "file": "pachyrhinosaurus_hurt_N_001.png",
+   "sha256": "48f8304312743879ecac682297a6d3f5c72c5cda43c6412756b020e85019a79a",
+   "bbox": [
+    50,
+    27,
+    94,
+    111
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      62.0,
+      76.13
+     ],
+     [
+      55.54,
+      75.41
+     ],
+     [
+      54.95,
+      78.15
+     ]
+    ],
+    "fore_R": [
+     [
+      82.0,
+      76.13
+     ],
+     [
+      88.46,
+      75.41
+     ],
+     [
+      89.05,
+      78.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_hurt_E_001": {
+   "file": "pachyrhinosaurus_hurt_E_001.png",
+   "sha256": "99ddd62d41a64bcc3db8ff96a35ebbd1ef736bb56bd0151ee48b9100a10ee8e2",
+   "bbox": [
+    22,
+    50,
+    121,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      63.19,
+      60.71
+     ],
+     [
+      65.84,
+      56.86
+     ],
+     [
+      64.16,
+      57.74
+     ]
+    ],
+    "fore_R": [
+     [
+      63.19,
+      77.11
+     ],
+     [
+      65.84,
+      83.86
+     ],
+     [
+      64.16,
+      85.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_hurt_W_001": {
+   "file": "pachyrhinosaurus_hurt_W_001.png",
+   "sha256": "80519047fe188977f207180994c1485b0e2cadc6df60cc9c9efd3306a0f3fa44",
+   "bbox": [
+    23,
+    50,
+    122,
+    89
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      80.81,
+      77.11
+     ],
+     [
+      78.16,
+      83.86
+     ],
+     [
+      79.84,
+      85.7
+     ]
+    ],
+    "fore_R": [
+     [
+      80.81,
+      60.71
+     ],
+     [
+      78.16,
+      56.86
+     ],
+     [
+      79.84,
+      57.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "pachyrhinosaurus_death_S_000": {
+   "file": "pachyrhinosaurus_death_S_000.png",
+   "sha256": "77009725ad467247fce30183a1ab0baa5f64a502b85e4430b714a683b51e84f8",
+   "bbox": [
+    50,
+    30,
+    94,
+    111
+   ]
+  },
+  "pachyrhinosaurus_death_N_000": {
+   "file": "pachyrhinosaurus_death_N_000.png",
+   "sha256": "f7899bbfca6e3879e01700dcb7aafecfbbb9afd5231698e03caa9c505bb64a12",
+   "bbox": [
+    50,
+    27,
+    94,
+    110
+   ]
+  },
+  "pachyrhinosaurus_death_E_000": {
+   "file": "pachyrhinosaurus_death_E_000.png",
+   "sha256": "80eb55e2a83915ac18285a18832e22d2dc4fca26523a1718a02ae6a045a90584",
+   "bbox": [
+    23,
+    50,
+    123,
+    89
+   ]
+  },
+  "pachyrhinosaurus_death_W_000": {
+   "file": "pachyrhinosaurus_death_W_000.png",
+   "sha256": "926316c50c28dd7cd53da7004ea19d92bfc3964376e770d881410d5aaa88fb66",
+   "bbox": [
+    21,
+    50,
+    121,
+    89
+   ]
+  },
+  "pachyrhinosaurus_death_S_001": {
+   "file": "pachyrhinosaurus_death_S_001.png",
+   "sha256": "f42ae92f3f7c1c9d32d4bad4460d60ee1d6d7a97643f6f951d24380bb0224b70",
+   "bbox": [
+    51,
+    29,
+    94,
+    111
+   ]
+  },
+  "pachyrhinosaurus_death_N_001": {
+   "file": "pachyrhinosaurus_death_N_001.png",
+   "sha256": "92dd4945741a8b43e049d58a29855bbac5dfdcd51fd08e0f1ff8f4f508e253ec",
+   "bbox": [
+    50,
+    27,
+    93,
+    110
+   ]
+  },
+  "pachyrhinosaurus_death_E_001": {
+   "file": "pachyrhinosaurus_death_E_001.png",
+   "sha256": "5300f2d23895967031689b7cb34dcfa05a035f6fdc764d161d3f0627e360df9b",
+   "bbox": [
+    23,
+    48,
+    123,
+    88
+   ]
+  },
+  "pachyrhinosaurus_death_W_001": {
+   "file": "pachyrhinosaurus_death_W_001.png",
+   "sha256": "4d3518399af78cad249f95bd93ee06b08c5e98866253d5fabc1e9f171fa02fe3",
+   "bbox": [
+    21,
+    51,
+    121,
+    90
+   ]
+  },
+  "pachyrhinosaurus_death_S_002": {
+   "file": "pachyrhinosaurus_death_S_002.png",
+   "sha256": "d836ce0f80e4624e99a2085bad3dbdfaf5e72a1821a604f61144a8ba27d18709",
+   "bbox": [
+    54,
+    28,
+    98,
+    111
+   ]
+  },
+  "pachyrhinosaurus_death_N_002": {
+   "file": "pachyrhinosaurus_death_N_002.png",
+   "sha256": "f751b5d037b198ea648c4613e183e2b303e00ece5156220f7d182163bb6369b0",
+   "bbox": [
+    46,
+    27,
+    90,
+    109
+   ]
+  },
+  "pachyrhinosaurus_death_E_002": {
+   "file": "pachyrhinosaurus_death_E_002.png",
+   "sha256": "70846450c0d8278169d8a185b232b120d9349bd2b79e16d9de7539d1d9e6894b",
+   "bbox": [
+    23,
+    43,
+    123,
+    83
+   ]
+  },
+  "pachyrhinosaurus_death_W_002": {
+   "file": "pachyrhinosaurus_death_W_002.png",
+   "sha256": "79df154a95071ffcb355b1315b712de843ae198f8177754f73b78c76db1b3f7b",
+   "bbox": [
+    21,
+    53,
+    121,
+    92
+   ]
+  },
+  "pachyrhinosaurus_death_S_003": {
+   "file": "pachyrhinosaurus_death_S_003.png",
+   "sha256": "7f78c7ac527270ae3efe67dfd8861c1154186b1aeed95e0a9fa9be2dbdf3592e",
+   "bbox": [
+    61,
+    29,
+    105,
+    112
+   ]
+  },
+  "pachyrhinosaurus_death_N_003": {
+   "file": "pachyrhinosaurus_death_N_003.png",
+   "sha256": "446982da7741051fa0bd02d1263fdc1ed7fbb64d70e0d29d7995dab09ca2d278",
+   "bbox": [
+    39,
+    28,
+    83,
+    109
+   ]
+  },
+  "pachyrhinosaurus_death_E_003": {
+   "file": "pachyrhinosaurus_death_E_003.png",
+   "sha256": "3192ea9b9f3009d48fa1607218a37c7adea28bf344970cf47261500089e6bd89",
+   "bbox": [
+    24,
+    43,
+    123,
+    76
+   ]
+  },
+  "pachyrhinosaurus_death_W_003": {
+   "file": "pachyrhinosaurus_death_W_003.png",
+   "sha256": "ac402d66a70ce139f1eecf0e54f021954433b697da6695d512eef548ac7ea6d0",
+   "bbox": [
+    21,
+    57,
+    120,
+    97
+   ]
+  },
+  "pachyrhinosaurus_death_S_004": {
+   "file": "pachyrhinosaurus_death_S_004.png",
+   "sha256": "8fd96d938aa248e14f3b17ff635d330d8695d09348175998ef9479cff7147c70",
+   "bbox": [
+    67,
+    32,
+    105,
+    113
+   ]
+  },
+  "pachyrhinosaurus_death_N_004": {
+   "file": "pachyrhinosaurus_death_N_004.png",
+   "sha256": "6a49df2f7f1f27769079601162a622c8fe803b5a73fd26ef70d0389b128d2a57",
+   "bbox": [
+    39,
+    29,
+    77,
+    110
+   ]
+  },
+  "pachyrhinosaurus_death_E_004": {
+   "file": "pachyrhinosaurus_death_E_004.png",
+   "sha256": "89555bcfd9858baa893e72f0b9c54ff046ea2677c123e01d84e24b4b23842df0",
+   "bbox": [
+    25,
+    42,
+    123,
+    78
+   ]
+  },
+  "pachyrhinosaurus_death_W_004": {
+   "file": "pachyrhinosaurus_death_W_004.png",
+   "sha256": "ee05fb69d74d3563e2df0ed7995a8e8d640f7a95747e589850c040a9d7ca2d3d",
+   "bbox": [
+    21,
+    61,
+    119,
+    101
+   ]
+  },
+  "pachyrhinosaurus_death_S_005": {
+   "file": "pachyrhinosaurus_death_S_005.png",
+   "sha256": "ba51d507579914c847c65c1f86b3bb19f379870aa4d277c83fb8308dfe5c19d7",
+   "bbox": [
+    70,
+    34,
+    104,
+    114
+   ]
+  },
+  "pachyrhinosaurus_death_N_005": {
+   "file": "pachyrhinosaurus_death_N_005.png",
+   "sha256": "5dd51d5100fac5e604bbf6d0e73d3d776632f08ebff324cdea686155bb41b38d",
+   "bbox": [
+    40,
+    30,
+    74,
+    110
+   ]
+  },
+  "pachyrhinosaurus_death_E_005": {
+   "file": "pachyrhinosaurus_death_E_005.png",
+   "sha256": "013a6cbf7b98bcff9a9f2a59a5dbf5e53540fec87b7352043b92ce46b9e8f786",
+   "bbox": [
+    26,
+    42,
+    123,
+    80
+   ]
+  },
+  "pachyrhinosaurus_death_W_005": {
+   "file": "pachyrhinosaurus_death_W_005.png",
+   "sha256": "a906dea9390a3486caab1a59d8ed7fdb569eab2b68947c689b1e08fbda6fb05a",
+   "bbox": [
+    21,
+    64,
+    118,
+    102
+   ]
+  }
+ }
+}

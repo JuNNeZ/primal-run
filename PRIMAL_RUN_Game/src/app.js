@@ -355,7 +355,7 @@
           for(let i=0;i<pixels.data.length;i+=4)if(pixels.data[i+3]){const key=[pixels.data[i],pixels.data[i+1],pixels.data[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('');const color=mapping[key];if(color){pixels.data[i]=parseInt(color.slice(0,2),16);pixels.data[i+1]=parseInt(color.slice(2,4),16);pixels.data[i+2]=parseInt(color.slice(4,6),16);}}
           lc.putImageData(pixels,0,0);layer.spritePath=path;skins[path]=layer;
         }
-        if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/') || path.startsWith('assets/enemy_full/') || path.startsWith('assets/player_full/') || path.startsWith('assets/species_attacks/') || path.startsWith('assets/behavior/') || path.startsWith('assets/behavior_native/') || path.startsWith('assets/behavior_injured/'))) {
+        if ((path.startsWith('assets/enemies/') || path.startsWith('assets/enemy_animations/') || path.startsWith('assets/enemy_full/') || path.startsWith('assets/player_full/') || path.startsWith('assets/rig_full/') || path.startsWith('assets/species_attacks/') || path.startsWith('assets/behavior/') || path.startsWith('assets/behavior_native/') || path.startsWith('assets/behavior_injured/'))) {
           const tint = document.createElement('canvas'); tint.width = image.width; tint.height = image.height;
           const tintCtx = tint.getContext('2d'); drawAsset(tintCtx,image, 0, 0); tintCtx.globalCompositeOperation = 'source-in';
           tintCtx.fillStyle = '#fff1c9'; tintCtx.fillRect(0, 0, tint.width, tint.height); flashes[path] = tint;
@@ -741,7 +741,7 @@
       for(const path of [revised,legacy])if(catalog[path]&&catalog[path].runtime_enabled!==false)return path;
       return null;
     }
-    function enemyFrame(kind,state,direction,frame){if(C.STATIC_SPECIES&&C.STATIC_SPECIES.has(kind))return C.playerFrame(kind,state,direction,frame);const attack=C.playerFrame(kind,state,direction,frame);if(state==='attack'&&attack.startsWith('assets/species_attacks/')&&catalog[attack])return attack;return 'assets/'+(['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx','utahraptor','velociraptor','deinonychus'].includes(kind)?'player_full/':'enemy_full/')+kind+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';}
+    function enemyFrame(kind,state,direction,frame){const cut=C.cutoutFrame&&C.cutoutFrame(kind,state,direction,frame);if(cut)return cut;if(C.STATIC_SPECIES&&C.STATIC_SPECIES.has(kind))return C.playerFrame(kind,state,direction,frame);const attack=C.playerFrame(kind,state,direction,frame);if(state==='attack'&&attack.startsWith('assets/species_attacks/')&&catalog[attack])return attack;return 'assets/'+(['compy','carnotaurus','ankylosaurus','pachycephalosaurus','gallimimus','baryonyx','utahraptor','velociraptor','deinonychus'].includes(kind)?'player_full/':'enemy_full/')+kind+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';}
     // Fiskeminigame: a ring closes in on the fish's shadow; it turns green inside the strike window (gold = perfect).
     function drawFishGame(r){const F=C.FISH_GAME,g=r.fishGame,x=Math.round(g.x-r.view.x),y=Math.round(g.y-r.view.y),p=Math.min(1,g.progress),rad=q=>14+(1-q)*96,hit=p>=F.hit[0]&&p<=F.hit[1],perfect=p>=F.perfect[0]&&p<=F.perfect[1];
       ctx.save();ctx.fillStyle='rgba(16,23,19,.55)';ctx.beginPath();ctx.ellipse(x,y,16,7,0,0,Math.PI*2);ctx.fill();

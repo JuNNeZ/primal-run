@@ -1,0 +1,4537 @@
+{
+ "species": "protoceratops",
+ "canvas": [
+  144,
+  144
+ ],
+ "origin": [
+  72,
+  72
+ ],
+ "model_scale": 1.0,
+ "visual_scale": 1,
+ "camera": {
+  "image_x": "x",
+  "image_up": "0.82*y + 0.36*z",
+  "light": [
+   -0.4915,
+   0.4129,
+   0.7668
+  ],
+  "note": "Same fixed overhead camera and light for every direction; each direction is its own render."
+ },
+ "skeleton": {
+  "locomotion": "legs",
+  "quadruped": true,
+  "hip_height": 5.04,
+  "chains": [
+   "fore_L",
+   "fore_R"
+  ],
+  "attack_style": "horns"
+ },
+ "states": {
+  "idle": {
+   "frames": 4,
+   "fps": 4,
+   "loop": true,
+   "contact_frame": null
+  },
+  "walk": {
+   "frames": 6,
+   "fps": 8,
+   "loop": true,
+   "contact_frame": null
+  },
+  "run": {
+   "frames": 6,
+   "fps": 12,
+   "loop": true,
+   "contact_frame": null
+  },
+  "attack": {
+   "frames": 6,
+   "fps": 12,
+   "loop": false,
+   "contact_frame": 3
+  },
+  "hurt": {
+   "frames": 2,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  },
+  "death": {
+   "frames": 6,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  }
+ },
+ "frames": {
+  "protoceratops_idle_S_000": {
+   "file": "protoceratops_idle_S_000.png",
+   "sha256": "0ec3d2572260065ff9e9b477260c25d283a9621794c6e948cae7c9e7fbc99259",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.51
+     ],
+     [
+      81.41,
+      68.34
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.51
+     ],
+     [
+      62.59,
+      68.34
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_N_000": {
+   "file": "protoceratops_idle_N_000.png",
+   "sha256": "d42b272b8761dbf3f121c1a29a4913e308117627e6fe2b87437ee517efc69c42",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.86
+     ],
+     [
+      62.59,
+      73.85
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.86
+     ],
+     [
+      81.41,
+      73.85
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_E_000": {
+   "file": "protoceratops_idle_E_000.png",
+   "sha256": "f2c8377d650c7a8459235bc206cabc33f22c0b21610c8c46b294900950b4a4f5",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.5
+     ],
+     [
+      68.64,
+      63.38
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.87
+     ],
+     [
+      68.64,
+      78.81
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_W_000": {
+   "file": "protoceratops_idle_W_000.png",
+   "sha256": "fb4d6f89cbb28c3f1a8bc1ab32120ee0bfa7d11e4e25b746a5d5c0604cc85937",
+   "bbox": [
+    42,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.87
+     ],
+     [
+      75.36,
+      78.81
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.5
+     ],
+     [
+      75.36,
+      63.38
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_S_001": {
+   "file": "protoceratops_idle_S_001.png",
+   "sha256": "078f0ded1137c858f5c5a44a9bbca331d65645931dd7d327da046525679bb489",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.54
+     ],
+     [
+      81.41,
+      68.41
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.54
+     ],
+     [
+      62.59,
+      68.41
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_N_001": {
+   "file": "protoceratops_idle_N_001.png",
+   "sha256": "2ef00e767074195556b6373b5d94139ae98624fcc6b53e60c488b59893f5ede2",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.89
+     ],
+     [
+      62.59,
+      73.8
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.89
+     ],
+     [
+      81.41,
+      73.8
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_E_001": {
+   "file": "protoceratops_idle_E_001.png",
+   "sha256": "7260b9274785f29f204b17e457dc6bd7e1b67fb1df93480c38129c78510c160a",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.53
+     ],
+     [
+      68.71,
+      63.39
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.9
+     ],
+     [
+      68.71,
+      78.82
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_W_001": {
+   "file": "protoceratops_idle_W_001.png",
+   "sha256": "e5daeadcc6206d62aebed20a8ec9d82657c04afd046a143bed4c7f565ab04847",
+   "bbox": [
+    42,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.9
+     ],
+     [
+      75.29,
+      78.82
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.53
+     ],
+     [
+      75.29,
+      63.39
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_S_002": {
+   "file": "protoceratops_idle_S_002.png",
+   "sha256": "380ecda470d28e86fc71588574aa25603bf8c60365ad55225cabe385f29556e7",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.57
+     ],
+     [
+      81.41,
+      68.48
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.57
+     ],
+     [
+      62.59,
+      68.48
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_N_002": {
+   "file": "protoceratops_idle_N_002.png",
+   "sha256": "cfebc681e8ab3e8c0840b49c760d8fc7226652f751daf2c0deb73980092d6072",
+   "bbox": [
+    59,
+    46,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.91
+     ],
+     [
+      62.59,
+      73.76
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.91
+     ],
+     [
+      81.41,
+      73.76
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_E_002": {
+   "file": "protoceratops_idle_E_002.png",
+   "sha256": "f5a464e241ee76ce397e8f982c130f5ec2801cde516eaa170f527bc6afc9b4ba",
+   "bbox": [
+    43,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.56
+     ],
+     [
+      68.78,
+      63.41
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.92
+     ],
+     [
+      68.78,
+      78.84
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_W_002": {
+   "file": "protoceratops_idle_W_002.png",
+   "sha256": "60b9399f0e9581392465dd036c6cdbdb0430c56542966ee091b1307fcb1a36cc",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.92
+     ],
+     [
+      75.22,
+      78.84
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.56
+     ],
+     [
+      75.22,
+      63.41
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_S_003": {
+   "file": "protoceratops_idle_S_003.png",
+   "sha256": "d4966d9d9bc5edc7a586b52f0446fac4d43de711b567581fe014b567b04d6171",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.54
+     ],
+     [
+      81.41,
+      68.41
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.54
+     ],
+     [
+      62.59,
+      68.41
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_N_003": {
+   "file": "protoceratops_idle_N_003.png",
+   "sha256": "a399a856463ae754cf258c71881b23aeb6df10a44bc7d26626efd67f2edbef5b",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.89
+     ],
+     [
+      62.59,
+      73.8
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.89
+     ],
+     [
+      81.41,
+      73.8
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_E_003": {
+   "file": "protoceratops_idle_E_003.png",
+   "sha256": "28f468f7c8bfb82dcb71337bdd086d1d0086f6286fc3e20cf847fbebf23c821e",
+   "bbox": [
+    43,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.53
+     ],
+     [
+      68.71,
+      63.39
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.9
+     ],
+     [
+      68.71,
+      78.82
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_idle_W_003": {
+   "file": "protoceratops_idle_W_003.png",
+   "sha256": "f23f59d293c542e176681a1ac970210e7ba6368a540dc5dc71ce80843982a071",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.9
+     ],
+     [
+      75.29,
+      78.82
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.53
+     ],
+     [
+      75.29,
+      63.39
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_S_000": {
+   "file": "protoceratops_walk_S_000.png",
+   "sha256": "cdfad077918cf62589c3318fd38e479c683eb3eaed822c1db28bc2dacd7a913b",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.6
+     ],
+     [
+      81.41,
+      68.81
+     ],
+     [
+      81.74,
+      68.96
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.6
+     ],
+     [
+      62.59,
+      66.22
+     ],
+     [
+      62.26,
+      65.81
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_walk_N_000": {
+   "file": "protoceratops_walk_N_000.png",
+   "sha256": "18919e9b65b40ff85103632f57860e9ec057962ade031d1975c850aa5fe62938",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.95
+     ],
+     [
+      62.59,
+      73.27
+     ],
+     [
+      62.26,
+      74.72
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.95
+     ],
+     [
+      81.41,
+      76.01
+     ],
+     [
+      81.74,
+      77.81
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_walk_E_000": {
+   "file": "protoceratops_walk_E_000.png",
+   "sha256": "50c0b5f4042e072ad8baa65e7e3fc3284bdf41253065fd77408469879ca1710c",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.59
+     ],
+     [
+      69.28,
+      63.33
+     ],
+     [
+      68.49,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.96
+     ],
+     [
+      66.03,
+      78.83
+     ],
+     [
+      64.68,
+      79.8
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_walk_W_000": {
+   "file": "protoceratops_walk_W_000.png",
+   "sha256": "ea4e50491c1b7657f91b25fcd9f0c3b9e68bab3d6bda9fe0be12f2e08cd9096d",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.96
+     ],
+     [
+      74.72,
+      78.76
+     ],
+     [
+      75.51,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.59
+     ],
+     [
+      77.97,
+      63.4
+     ],
+     [
+      79.32,
+      63.82
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_walk_S_001": {
+   "file": "protoceratops_walk_S_001.png",
+   "sha256": "674a00839b7c41c392360bc014fcbc55089452ab16f955095aa447c2dc670676",
+   "bbox": [
+    59,
+    48,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.53
+     ],
+     [
+      81.41,
+      68.27
+     ],
+     [
+      81.74,
+      67.9
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.53
+     ],
+     [
+      62.59,
+      68.99
+     ],
+     [
+      62.26,
+      69.01
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_walk_N_001": {
+   "file": "protoceratops_walk_N_001.png",
+   "sha256": "362895ed054117608a5d2752c1852d926f7da3ec8b3d0102e1d359ac982066d6",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.88
+     ],
+     [
+      62.59,
+      74.0
+     ],
+     [
+      62.26,
+      75.78
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.88
+     ],
+     [
+      81.41,
+      72.44
+     ],
+     [
+      81.74,
+      73.98
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_walk_E_001": {
+   "file": "protoceratops_walk_E_001.png",
+   "sha256": "6514a1f6650a718f8feff7c5e3928f612e4c1274d4f933c09505b2d2a353767f",
+   "bbox": [
+    43,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.52
+     ],
+     [
+      68.51,
+      63.42
+     ],
+     [
+      67.2,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.89
+     ],
+     [
+      69.89,
+      78.43
+     ],
+     [
+      68.97,
+      79.48
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_walk_W_001": {
+   "file": "protoceratops_walk_W_001.png",
+   "sha256": "0729540ed9204f6d8fb6ed3fc99c22af74b886d9436f09488c582487693a23e3",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.89
+     ],
+     [
+      75.49,
+      78.85
+     ],
+     [
+      76.8,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.52
+     ],
+     [
+      74.11,
+      63.0
+     ],
+     [
+      75.03,
+      63.5
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_walk_S_002": {
+   "file": "protoceratops_walk_S_002.png",
+   "sha256": "db8bc65d265d6d4633a4ab2a3ad91f341c5bbc8351dff968f8f68d84a0a8bac1",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.53
+     ],
+     [
+      81.41,
+      67.48
+     ],
+     [
+      81.74,
+      66.84
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.53
+     ],
+     [
+      62.59,
+      68.63
+     ],
+     [
+      62.26,
+      70.01
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_N_002": {
+   "file": "protoceratops_walk_N_002.png",
+   "sha256": "905bab77bbcdca5d1f43b87bd4cfa11214650dcbf29577bb2d4adc823306ef2b",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.88
+     ],
+     [
+      62.59,
+      74.92
+     ],
+     [
+      62.26,
+      76.83
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.88
+     ],
+     [
+      81.41,
+      73.43
+     ],
+     [
+      81.74,
+      73.66
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_E_002": {
+   "file": "protoceratops_walk_E_002.png",
+   "sha256": "b8e58ab75506fe1bcf08f7fd4cfd34fb761ce1d2b7a36e4106db16fa8d2c0454",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.52
+     ],
+     [
+      67.46,
+      63.49
+     ],
+     [
+      65.91,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.89
+     ],
+     [
+      69.07,
+      78.74
+     ],
+     [
+      69.77,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_W_002": {
+   "file": "protoceratops_walk_W_002.png",
+   "sha256": "f8c82ff7668b8564daa957e766e800cdaedbc76543d3a4e466404c97b1c0062e",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.89
+     ],
+     [
+      76.54,
+      78.92
+     ],
+     [
+      78.09,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.52
+     ],
+     [
+      74.93,
+      63.32
+     ],
+     [
+      74.23,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_S_003": {
+   "file": "protoceratops_walk_S_003.png",
+   "sha256": "94ae5c87ffbcc1abcd70101b7951e1d21bf77ef534ec645e198b39bc880d48b1",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.6
+     ],
+     [
+      81.41,
+      66.22
+     ],
+     [
+      81.74,
+      65.81
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.6
+     ],
+     [
+      62.59,
+      68.81
+     ],
+     [
+      62.26,
+      68.96
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_N_003": {
+   "file": "protoceratops_walk_N_003.png",
+   "sha256": "031de2bf4892ed415e69ac46db5c79839d938b79a9cfc105860c024ed7741d20",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.95
+     ],
+     [
+      62.59,
+      76.01
+     ],
+     [
+      62.26,
+      77.81
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.95
+     ],
+     [
+      81.41,
+      73.27
+     ],
+     [
+      81.74,
+      74.72
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_E_003": {
+   "file": "protoceratops_walk_E_003.png",
+   "sha256": "a6aeb969a0e881d6ab055d9d87609774d3175a9841b433d32e064b32b2944abf",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.59
+     ],
+     [
+      66.03,
+      63.4
+     ],
+     [
+      64.68,
+      63.82
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.96
+     ],
+     [
+      69.28,
+      78.76
+     ],
+     [
+      68.49,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_W_003": {
+   "file": "protoceratops_walk_W_003.png",
+   "sha256": "4757b7fae92de4c219f0730cffd2239c8acefb3dd9828463e572dc282e017c4d",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.96
+     ],
+     [
+      77.97,
+      78.83
+     ],
+     [
+      79.32,
+      79.8
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.59
+     ],
+     [
+      74.72,
+      63.33
+     ],
+     [
+      75.51,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_S_004": {
+   "file": "protoceratops_walk_S_004.png",
+   "sha256": "5a58af0407241231c4b9ebd7312e2903019bed8be6dd27247796e33d4e950f8b",
+   "bbox": [
+    59,
+    48,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.53
+     ],
+     [
+      81.41,
+      68.99
+     ],
+     [
+      81.74,
+      69.01
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.53
+     ],
+     [
+      62.59,
+      68.27
+     ],
+     [
+      62.26,
+      67.9
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_N_004": {
+   "file": "protoceratops_walk_N_004.png",
+   "sha256": "c38b83ea5b67772a6a7111f026909b1a174ee8158e332152cc2995b5ac94fda2",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.88
+     ],
+     [
+      62.59,
+      72.44
+     ],
+     [
+      62.26,
+      73.98
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.88
+     ],
+     [
+      81.41,
+      74.0
+     ],
+     [
+      81.74,
+      75.78
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_E_004": {
+   "file": "protoceratops_walk_E_004.png",
+   "sha256": "f5e63ddc9d8c8c04ab566c85531974f41fd58716d5e6bb3445d29c480e53f3cc",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.52
+     ],
+     [
+      69.89,
+      63.0
+     ],
+     [
+      68.97,
+      63.5
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.89
+     ],
+     [
+      68.51,
+      78.85
+     ],
+     [
+      67.2,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_W_004": {
+   "file": "protoceratops_walk_W_004.png",
+   "sha256": "fdca2c6678301f16c2ed1108bf7e320932f27cf42b9cd9bd93f04b98c01bc848",
+   "bbox": [
+    42,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.89
+     ],
+     [
+      74.11,
+      78.43
+     ],
+     [
+      75.03,
+      79.48
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.52
+     ],
+     [
+      75.49,
+      63.42
+     ],
+     [
+      76.8,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_S_005": {
+   "file": "protoceratops_walk_S_005.png",
+   "sha256": "4a22b4b2f7526d2fa38744d0e541ad4cf9a5b2d0dfe3c83829ac66dedf6b163f",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.53
+     ],
+     [
+      81.41,
+      68.63
+     ],
+     [
+      81.74,
+      70.01
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.53
+     ],
+     [
+      62.59,
+      67.48
+     ],
+     [
+      62.26,
+      66.84
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_N_005": {
+   "file": "protoceratops_walk_N_005.png",
+   "sha256": "aa58cfc542549ffecc73764123ed2fe7107660000e7ed8c3a1ba208115a2b406",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.88
+     ],
+     [
+      62.59,
+      73.43
+     ],
+     [
+      62.26,
+      73.66
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.88
+     ],
+     [
+      81.41,
+      74.92
+     ],
+     [
+      81.74,
+      76.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_E_005": {
+   "file": "protoceratops_walk_E_005.png",
+   "sha256": "65c268c8637fa905ef1da4adcae4d3e029eff31c289c49509ccaa0e8337012e5",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.52
+     ],
+     [
+      69.07,
+      63.32
+     ],
+     [
+      69.77,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.89
+     ],
+     [
+      67.46,
+      78.92
+     ],
+     [
+      65.91,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_walk_W_005": {
+   "file": "protoceratops_walk_W_005.png",
+   "sha256": "974517d44b20902518d6192f1769451a3ed7df72b36d0531eb8fb87a50c30f65",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.89
+     ],
+     [
+      74.93,
+      78.74
+     ],
+     [
+      74.23,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.52
+     ],
+     [
+      76.54,
+      63.49
+     ],
+     [
+      78.09,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_S_000": {
+   "file": "protoceratops_run_S_000.png",
+   "sha256": "c9989f8ed8533bf625c47c5184771af2673874d734ce04d9ee45b1c6a34fb6c5",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.6
+     ],
+     [
+      81.41,
+      65.91
+     ],
+     [
+      81.74,
+      65.24
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.6
+     ],
+     [
+      62.59,
+      68.84
+     ],
+     [
+      62.26,
+      70.73
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_N_000": {
+   "file": "protoceratops_run_N_000.png",
+   "sha256": "df14981b14d74d6f9b5880c64f257e0761f9431e3d326f63b0a961438e1dda22",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.94
+     ],
+     [
+      62.59,
+      76.15
+     ],
+     [
+      62.26,
+      78.07
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.94
+     ],
+     [
+      81.41,
+      73.17
+     ],
+     [
+      81.74,
+      72.59
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_E_000": {
+   "file": "protoceratops_run_E_000.png",
+   "sha256": "5ff4528e8fc8e4012f1a5c0a274f438f062915e0ca7cf3fed43c833e25cbe0e0",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.58
+     ],
+     [
+      65.76,
+      63.31
+     ],
+     [
+      64.18,
+      63.67
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.95
+     ],
+     [
+      69.37,
+      78.72
+     ],
+     [
+      70.87,
+      79.65
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_W_000": {
+   "file": "protoceratops_run_W_000.png",
+   "sha256": "915532547e2fcdb6efdba34f87ff7471c6913ef855cd745ac4e9d27a83637429",
+   "bbox": [
+    42,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.95
+     ],
+     [
+      78.24,
+      78.74
+     ],
+     [
+      79.82,
+      79.65
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.58
+     ],
+     [
+      74.63,
+      63.29
+     ],
+     [
+      73.13,
+      63.67
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_S_001": {
+   "file": "protoceratops_run_S_001.png",
+   "sha256": "5389223f47e5a4b7b70621be022d6f12158bb2e09414216a89f2a94bdba87a71",
+   "bbox": [
+    59,
+    47,
+    85,
+    96
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.49
+     ],
+     [
+      81.41,
+      67.81
+     ],
+     [
+      81.74,
+      66.08
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.49
+     ],
+     [
+      62.59,
+      68.54
+     ],
+     [
+      62.26,
+      69.2
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_N_001": {
+   "file": "protoceratops_run_N_001.png",
+   "sha256": "1421907ce124a9d9dfcd900728838e7bf74f4803ed020d784dbad44b9aae303a",
+   "bbox": [
+    59,
+    47,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.83
+     ],
+     [
+      62.59,
+      74.47
+     ],
+     [
+      62.26,
+      76.53
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.83
+     ],
+     [
+      81.41,
+      73.45
+     ],
+     [
+      81.74,
+      74.48
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_E_001": {
+   "file": "protoceratops_run_E_001.png",
+   "sha256": "bdb872be738c705d66bcd64c5952a4decb6b5d882fbedae00596550636b31118",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.47
+     ],
+     [
+      67.94,
+      63.42
+     ],
+     [
+      65.63,
+      63.31
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.84
+     ],
+     [
+      69.01,
+      78.71
+     ],
+     [
+      68.78,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_W_001": {
+   "file": "protoceratops_run_W_001.png",
+   "sha256": "b6aacc7cccffc01527bd66c9f1ac6ae33fdb6bdf6c36b89e121a63d697aa1f18",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.84
+     ],
+     [
+      76.06,
+      78.85
+     ],
+     [
+      78.37,
+      79.29
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.47
+     ],
+     [
+      74.99,
+      63.28
+     ],
+     [
+      75.22,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_S_002": {
+   "file": "protoceratops_run_S_002.png",
+   "sha256": "c54d438277938b16701cd0079fbd4a77aba7f9253304ca1d633954b76da4a8fb",
+   "bbox": [
+    59,
+    47,
+    85,
+    96
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.49
+     ],
+     [
+      81.41,
+      68.95
+     ],
+     [
+      81.74,
+      69.18
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.49
+     ],
+     [
+      62.59,
+      67.57
+     ],
+     [
+      62.26,
+      67.13
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_N_002": {
+   "file": "protoceratops_run_N_002.png",
+   "sha256": "02446ce57a571987b1b9ce65dd26c6fce740215c992fc374ae22a490e8eac99b",
+   "bbox": [
+    59,
+    47,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.83
+     ],
+     [
+      62.59,
+      72.04
+     ],
+     [
+      62.26,
+      73.43
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.83
+     ],
+     [
+      81.41,
+      74.73
+     ],
+     [
+      81.74,
+      76.55
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_E_002": {
+   "file": "protoceratops_run_E_002.png",
+   "sha256": "22612c8e08d71153ed8de5021ded6cdd7e8d3cad1bad187aff0f360fb8229164",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.47
+     ],
+     [
+      70.12,
+      62.78
+     ],
+     [
+      69.41,
+      63.31
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.84
+     ],
+     [
+      67.63,
+      78.86
+     ],
+     [
+      66.26,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_W_002": {
+   "file": "protoceratops_run_W_002.png",
+   "sha256": "ae1090c8aa6e8f9368f083018cee314e5697eeb34b42e9aed2a1a831a564de93",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.84
+     ],
+     [
+      73.88,
+      78.21
+     ],
+     [
+      74.59,
+      79.29
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.47
+     ],
+     [
+      76.37,
+      63.43
+     ],
+     [
+      77.74,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": false,
+    "fore_R": true
+   }
+  },
+  "protoceratops_run_S_003": {
+   "file": "protoceratops_run_S_003.png",
+   "sha256": "1bb8e396849894288480b1b3df74e55a4d8ecd7fd414fe41c5edf9b4c0fa0fc2",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.6
+     ],
+     [
+      81.41,
+      68.84
+     ],
+     [
+      81.74,
+      70.73
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.6
+     ],
+     [
+      62.59,
+      65.91
+     ],
+     [
+      62.26,
+      65.24
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_N_003": {
+   "file": "protoceratops_run_N_003.png",
+   "sha256": "4f23360047fcf1b7654344052174632355db8c2fcb12fc1e6e7bf2b1b279dc99",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.94
+     ],
+     [
+      62.59,
+      73.17
+     ],
+     [
+      62.26,
+      72.59
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.94
+     ],
+     [
+      81.41,
+      76.15
+     ],
+     [
+      81.74,
+      78.07
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_E_003": {
+   "file": "protoceratops_run_E_003.png",
+   "sha256": "718cf6ac0fa5549ce562b3142a702ab19946706c05db6eb539e2ca2e4704aa1e",
+   "bbox": [
+    43,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.58
+     ],
+     [
+      69.37,
+      63.29
+     ],
+     [
+      70.87,
+      63.67
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.95
+     ],
+     [
+      65.76,
+      78.74
+     ],
+     [
+      64.18,
+      79.65
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_W_003": {
+   "file": "protoceratops_run_W_003.png",
+   "sha256": "c20eb81b5bb779d476a5c982a2fa3c924b8161ad2f2cdcfef5e55d14b5738e93",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.95
+     ],
+     [
+      74.63,
+      78.72
+     ],
+     [
+      73.13,
+      79.65
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.58
+     ],
+     [
+      78.24,
+      63.31
+     ],
+     [
+      79.82,
+      63.67
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_S_004": {
+   "file": "protoceratops_run_S_004.png",
+   "sha256": "190020583ccb465489e2b47c22e0a873bc55c205fbb80f1a9bfff2f368d061b5",
+   "bbox": [
+    59,
+    47,
+    85,
+    96
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.49
+     ],
+     [
+      81.41,
+      68.54
+     ],
+     [
+      81.74,
+      69.2
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.49
+     ],
+     [
+      62.59,
+      67.81
+     ],
+     [
+      62.26,
+      66.08
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_N_004": {
+   "file": "protoceratops_run_N_004.png",
+   "sha256": "bf624d366a1136e10d886d2873a357e1d82f3a74745b66937817555c3bfa39e9",
+   "bbox": [
+    59,
+    47,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.83
+     ],
+     [
+      62.59,
+      73.45
+     ],
+     [
+      62.26,
+      74.48
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.83
+     ],
+     [
+      81.41,
+      74.47
+     ],
+     [
+      81.74,
+      76.53
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_E_004": {
+   "file": "protoceratops_run_E_004.png",
+   "sha256": "585f14ea42ec86769457cdc97523579f011eb8e9f41da9238b3f8bc0ea910063",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.47
+     ],
+     [
+      69.01,
+      63.28
+     ],
+     [
+      68.78,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.84
+     ],
+     [
+      67.94,
+      78.85
+     ],
+     [
+      65.63,
+      79.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_W_004": {
+   "file": "protoceratops_run_W_004.png",
+   "sha256": "3bd9b79cda5fccf1eae8f4ee5a7d6a7da9267699c0c0e1088b013b3ff86ee90f",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.84
+     ],
+     [
+      74.99,
+      78.71
+     ],
+     [
+      75.22,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.47
+     ],
+     [
+      76.06,
+      63.42
+     ],
+     [
+      78.37,
+      63.31
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_S_005": {
+   "file": "protoceratops_run_S_005.png",
+   "sha256": "e72416b43abe5563be89b5302057b404bdc7e3a5c89a72eff4be138b06ab9fb6",
+   "bbox": [
+    59,
+    47,
+    85,
+    96
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.49
+     ],
+     [
+      81.41,
+      67.57
+     ],
+     [
+      81.74,
+      67.13
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.49
+     ],
+     [
+      62.59,
+      68.95
+     ],
+     [
+      62.26,
+      69.18
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_N_005": {
+   "file": "protoceratops_run_N_005.png",
+   "sha256": "055baab73b31cfeb224e8e8d6f89b212d38e22fbf60389118df766a255b964ac",
+   "bbox": [
+    59,
+    47,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.83
+     ],
+     [
+      62.59,
+      74.73
+     ],
+     [
+      62.26,
+      76.55
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.83
+     ],
+     [
+      81.41,
+      72.04
+     ],
+     [
+      81.74,
+      73.43
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_E_005": {
+   "file": "protoceratops_run_E_005.png",
+   "sha256": "e9e317b995ef0c38bb28e1bc60af21d515b8d878e3db5a45f4937e87163f2daa",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.52,
+      65.47
+     ],
+     [
+      67.63,
+      63.43
+     ],
+     [
+      66.26,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.52,
+      74.84
+     ],
+     [
+      70.12,
+      78.21
+     ],
+     [
+      69.41,
+      79.29
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_run_W_005": {
+   "file": "protoceratops_run_W_005.png",
+   "sha256": "87382329d33f417904942c2e8765d6d88fd888a03522aaf34d0a58d1943e47fc",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.48,
+      74.84
+     ],
+     [
+      76.37,
+      78.86
+     ],
+     [
+      77.74,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.48,
+      65.47
+     ],
+     [
+      73.88,
+      62.78
+     ],
+     [
+      74.59,
+      63.31
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": false
+   }
+  },
+  "protoceratops_attack_S_000": {
+   "file": "protoceratops_attack_S_000.png",
+   "sha256": "955597909a9ba26fbaf4399ee9895b0bf62e91bc66922973c04b18dbb2ab815b",
+   "bbox": [
+    59,
+    47,
+    85,
+    93
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      65.82
+     ],
+     [
+      81.41,
+      67.96
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      65.82
+     ],
+     [
+      62.59,
+      67.96
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_N_000": {
+   "file": "protoceratops_attack_N_000.png",
+   "sha256": "10fda57e0fc54f8af2f636c5a758591ff42c7ae55e7779880a5347b28e244a03",
+   "bbox": [
+    59,
+    46,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      74.65
+     ],
+     [
+      62.59,
+      74.11
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      74.65
+     ],
+     [
+      81.41,
+      74.11
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_E_000": {
+   "file": "protoceratops_attack_E_000.png",
+   "sha256": "1c086df07cb2b884a97d8ac112ffb63718306ada88240722919d4e4ae93b16e5",
+   "bbox": [
+    43,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.61,
+      65.55
+     ],
+     [
+      68.25,
+      63.32
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      66.61,
+      74.92
+     ],
+     [
+      68.25,
+      78.75
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_W_000": {
+   "file": "protoceratops_attack_W_000.png",
+   "sha256": "5c17e243330e1f5ec2dd9142452cb6d8e76c9cf5cee31169ddc38f1fa17698cc",
+   "bbox": [
+    43,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.39,
+      74.92
+     ],
+     [
+      75.75,
+      78.75
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      77.39,
+      65.55
+     ],
+     [
+      75.75,
+      63.32
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_S_001": {
+   "file": "protoceratops_attack_S_001.png",
+   "sha256": "d6c1b64222740d722397d5c36edc194d285fc7a5694b3013f525b247a5ab0b28",
+   "bbox": [
+    59,
+    47,
+    85,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      65.29
+     ],
+     [
+      81.41,
+      67.58
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      65.29
+     ],
+     [
+      62.59,
+      67.58
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_N_001": {
+   "file": "protoceratops_attack_N_001.png",
+   "sha256": "5a761e0a4563dbd9f88b5c479a4e5ca0fb15cc4e58589a97558e8950100aeefb",
+   "bbox": [
+    59,
+    47,
+    85,
+    96
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      75.28
+     ],
+     [
+      62.59,
+      74.42
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      75.28
+     ],
+     [
+      81.41,
+      74.42
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_E_001": {
+   "file": "protoceratops_attack_E_001.png",
+   "sha256": "0f676932b64a0d0dc6af692cbc99fbf0bf476cbf5d0e95d01509015297a2bb92",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      65.91,
+      65.6
+     ],
+     [
+      67.83,
+      63.28
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      65.91,
+      74.97
+     ],
+     [
+      67.83,
+      78.71
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_W_001": {
+   "file": "protoceratops_attack_W_001.png",
+   "sha256": "9425b63680c2588f4a38782eddb0455d99590e274a7ba88149028bb7876ced79",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      78.09,
+      74.97
+     ],
+     [
+      76.17,
+      78.71
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      78.09,
+      65.6
+     ],
+     [
+      76.17,
+      63.28
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_S_002": {
+   "file": "protoceratops_attack_S_002.png",
+   "sha256": "8fc2365bfb8ca86e769d6753812e937f4dd32aaaeaca71396814f8d4524527a6",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.12
+     ],
+     [
+      81.41,
+      68.14
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.12
+     ],
+     [
+      62.59,
+      68.14
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_N_002": {
+   "file": "protoceratops_attack_N_002.png",
+   "sha256": "dd281f162eecba14429457eca4271cd2e632a248b6dc7b32de95e7231f0b8f44",
+   "bbox": [
+    59,
+    48,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      74.29
+     ],
+     [
+      62.59,
+      73.98
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      74.29
+     ],
+     [
+      81.41,
+      73.98
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_E_002": {
+   "file": "protoceratops_attack_E_002.png",
+   "sha256": "fa736417db586680013ec9bb3424bb09167fbe2cdf051d13e088523bcf1a150b",
+   "bbox": [
+    43,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.02,
+      65.52
+     ],
+     [
+      68.44,
+      63.34
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.02,
+      74.89
+     ],
+     [
+      68.44,
+      78.77
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_W_002": {
+   "file": "protoceratops_attack_W_002.png",
+   "sha256": "656b16d7d2b5c1142d18293d359707737c91ce968daad51c5ac19066ec32b36d",
+   "bbox": [
+    43,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.98,
+      74.89
+     ],
+     [
+      75.56,
+      78.77
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.98,
+      65.52
+     ],
+     [
+      75.56,
+      63.34
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_S_003": {
+   "file": "protoceratops_attack_S_003.png",
+   "sha256": "388425806af93c3171022b9bc5cc5fe42bced7b5d5fab3a70d825a47e1011fab",
+   "bbox": [
+    59,
+    49,
+    85,
+    99
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      68.75
+     ],
+     [
+      81.41,
+      68.5
+     ],
+     [
+      81.74,
+      68.2
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      68.75
+     ],
+     [
+      62.59,
+      68.5
+     ],
+     [
+      62.26,
+      68.2
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_N_003": {
+   "file": "protoceratops_attack_N_003.png",
+   "sha256": "3d0f0325e5e31bf41cbd25304ae46dfe24690ebb75ec5b4e95f4fd685df36ad0",
+   "bbox": [
+    59,
+    46,
+    85,
+    91
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      71.54
+     ],
+     [
+      62.59,
+      73.52
+     ],
+     [
+      62.26,
+      75.26
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      71.54
+     ],
+     [
+      81.41,
+      73.52
+     ],
+     [
+      81.74,
+      75.26
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_E_003": {
+   "file": "protoceratops_attack_E_003.png",
+   "sha256": "2fb12c93a9e2cff161b3af0669c21fbf3972f0230493aa5820621717f07e6c5c",
+   "bbox": [
+    46,
+    58,
+    104,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      70.3,
+      65.46
+     ],
+     [
+      68.94,
+      63.29
+     ],
+     [
+      67.7,
+      63.74
+     ]
+    ],
+    "fore_R": [
+     [
+      70.3,
+      74.83
+     ],
+     [
+      68.94,
+      78.72
+     ],
+     [
+      67.7,
+      79.72
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_W_003": {
+   "file": "protoceratops_attack_W_003.png",
+   "sha256": "7b40b63ae68dd17248ce5dc140f9e0199c7430f6ad32770305b5f375e8f3b448",
+   "bbox": [
+    40,
+    58,
+    98,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      73.7,
+      74.83
+     ],
+     [
+      75.06,
+      78.72
+     ],
+     [
+      76.3,
+      79.72
+     ]
+    ],
+    "fore_R": [
+     [
+      73.7,
+      65.46
+     ],
+     [
+      75.06,
+      63.29
+     ],
+     [
+      76.3,
+      63.74
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_S_004": {
+   "file": "protoceratops_attack_S_004.png",
+   "sha256": "e667b38f187ee89da33c48811a4bd1ca74f79c438eb3b34c95befa3382f3b66c",
+   "bbox": [
+    59,
+    48,
+    85,
+    98
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      67.81
+     ],
+     [
+      81.41,
+      68.59
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      67.81
+     ],
+     [
+      62.59,
+      68.59
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_N_004": {
+   "file": "protoceratops_attack_N_004.png",
+   "sha256": "935335447b60f8994f6e9432276070992d4dc69193e07d69afccef254611b8c9",
+   "bbox": [
+    59,
+    46,
+    85,
+    92
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      72.51
+     ],
+     [
+      62.59,
+      73.71
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      72.51
+     ],
+     [
+      81.41,
+      73.71
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_E_004": {
+   "file": "protoceratops_attack_E_004.png",
+   "sha256": "7316609d23f810e981cbf915762704f4a5231df25c588e4b7bd4bdb311f9429b",
+   "bbox": [
+    45,
+    58,
+    103,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      69.14,
+      65.47
+     ],
+     [
+      68.88,
+      63.43
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      69.14,
+      74.84
+     ],
+     [
+      68.88,
+      78.86
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_W_004": {
+   "file": "protoceratops_attack_W_004.png",
+   "sha256": "101fc543c23a2df769178ad5e8a074ea4f4c5510a6ead617d6b201c487a81d96",
+   "bbox": [
+    41,
+    58,
+    99,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      74.86,
+      74.84
+     ],
+     [
+      75.12,
+      78.86
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      74.86,
+      65.47
+     ],
+     [
+      75.12,
+      63.43
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_S_005": {
+   "file": "protoceratops_attack_S_005.png",
+   "sha256": "7240518bce301bf27de6eb1824a500ce30dffe9c6a29842eadf0c7b0436ee61e",
+   "bbox": [
+    59,
+    48,
+    85,
+    96
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.84
+     ],
+     [
+      81.41,
+      68.5
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.84
+     ],
+     [
+      62.59,
+      68.5
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_N_005": {
+   "file": "protoceratops_attack_N_005.png",
+   "sha256": "5c04c557aab8511ab7d9608945aac0fcc3c4b59fa0d4bb221ced7010e8cc17e8",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      73.53
+     ],
+     [
+      62.59,
+      73.75
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      73.53
+     ],
+     [
+      81.41,
+      73.75
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_E_005": {
+   "file": "protoceratops_attack_E_005.png",
+   "sha256": "c844c3ed07afff631730bcdff3df74f2d352a0fb5e033bc6a9ce8d0c1c2e7638",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      67.92,
+      65.5
+     ],
+     [
+      68.8,
+      63.41
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      67.92,
+      74.87
+     ],
+     [
+      68.8,
+      78.84
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_attack_W_005": {
+   "file": "protoceratops_attack_W_005.png",
+   "sha256": "38f351c586d7223a98df455b57c05632c2807a6a09bfe630cd5f8750debb2618",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      76.08,
+      74.87
+     ],
+     [
+      75.2,
+      78.84
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      76.08,
+      65.5
+     ],
+     [
+      75.2,
+      63.41
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_hurt_S_000": {
+   "file": "protoceratops_hurt_S_000.png",
+   "sha256": "cabe3b14d315d80b81b6b7b0e2161add9ad1947592c4be7cf026d0a051b1d3b3",
+   "bbox": [
+    59,
+    47,
+    85,
+    91
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      65.71
+     ],
+     [
+      81.41,
+      67.94
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      65.71
+     ],
+     [
+      62.59,
+      67.94
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_hurt_N_000": {
+   "file": "protoceratops_hurt_N_000.png",
+   "sha256": "51a515c38a3c2f391417c9b3e53481258863c033e76eeee3a471ee88245b4218",
+   "bbox": [
+    59,
+    46,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      74.86
+     ],
+     [
+      62.59,
+      74.12
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      74.86
+     ],
+     [
+      81.41,
+      74.12
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_hurt_E_000": {
+   "file": "protoceratops_hurt_E_000.png",
+   "sha256": "ce5d99a7e45d0d792cb98edb140f6944465202912bc2c8cce49a9639a8e37fe2",
+   "bbox": [
+    43,
+    58,
+    99,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.42,
+      65.6
+     ],
+     [
+      68.23,
+      63.32
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      66.42,
+      74.97
+     ],
+     [
+      68.23,
+      78.75
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_hurt_W_000": {
+   "file": "protoceratops_hurt_W_000.png",
+   "sha256": "1761e6ec842a40754f252ed9cb6f23c8e2ae82ae7085ba21c6da6e224206f661",
+   "bbox": [
+    45,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.58,
+      74.97
+     ],
+     [
+      75.77,
+      78.75
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      77.58,
+      65.6
+     ],
+     [
+      75.77,
+      63.32
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_hurt_S_001": {
+   "file": "protoceratops_hurt_S_001.png",
+   "sha256": "39933fc659c181ba1dbd207f3e6ca3741c60d6e54c4c8b7608a2e899f6de5498",
+   "bbox": [
+    59,
+    47,
+    85,
+    93
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.71,
+      66.11
+     ],
+     [
+      81.41,
+      68.18
+     ],
+     [
+      81.74,
+      68.17
+     ]
+    ],
+    "fore_R": [
+     [
+      66.29,
+      66.11
+     ],
+     [
+      62.59,
+      68.18
+     ],
+     [
+      62.26,
+      68.17
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_hurt_N_001": {
+   "file": "protoceratops_hurt_N_001.png",
+   "sha256": "cd4dbf61d1a726a5b4cd805f1be0e43d6fa711ff14267121146c26e7ba2df569",
+   "bbox": [
+    59,
+    46,
+    85,
+    95
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.29,
+      74.36
+     ],
+     [
+      62.59,
+      73.95
+     ],
+     [
+      62.26,
+      75.51
+     ]
+    ],
+    "fore_R": [
+     [
+      77.71,
+      74.36
+     ],
+     [
+      81.41,
+      73.95
+     ],
+     [
+      81.74,
+      75.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_hurt_E_001": {
+   "file": "protoceratops_hurt_E_001.png",
+   "sha256": "65f2c9be72b3fae88e841da4f9b140bb894fac30f10925ad00c1227d43fde049",
+   "bbox": [
+    43,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      66.97,
+      65.55
+     ],
+     [
+      68.48,
+      63.35
+     ],
+     [
+      67.52,
+      63.85
+     ]
+    ],
+    "fore_R": [
+     [
+      66.97,
+      74.92
+     ],
+     [
+      68.48,
+      78.78
+     ],
+     [
+      67.52,
+      79.83
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_hurt_W_001": {
+   "file": "protoceratops_hurt_W_001.png",
+   "sha256": "87dfda11e298c5b464c8a6e0fe401b132344884a8f44b998ec58d291239f7a32",
+   "bbox": [
+    43,
+    58,
+    101,
+    82
+   ],
+   "joints": {
+    "fore_L": [
+     [
+      77.03,
+      74.92
+     ],
+     [
+      75.52,
+      78.78
+     ],
+     [
+      76.48,
+      79.83
+     ]
+    ],
+    "fore_R": [
+     [
+      77.03,
+      65.55
+     ],
+     [
+      75.52,
+      63.35
+     ],
+     [
+      76.48,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "fore_L": true,
+    "fore_R": true
+   }
+  },
+  "protoceratops_death_S_000": {
+   "file": "protoceratops_death_S_000.png",
+   "sha256": "1742045c26740c0d8f48fb0f64a7b176815f5c013a6d2e2f4078f0f1b22a2dd0",
+   "bbox": [
+    59,
+    47,
+    85,
+    95
+   ]
+  },
+  "protoceratops_death_N_000": {
+   "file": "protoceratops_death_N_000.png",
+   "sha256": "219f3e4bb677635694c28d5ca958fa7829934316e4df2d066f254a32f8b5a0a3",
+   "bbox": [
+    59,
+    46,
+    85,
+    94
+   ]
+  },
+  "protoceratops_death_E_000": {
+   "file": "protoceratops_death_E_000.png",
+   "sha256": "c0ab8630e0818b2fb7a307d8c187fce2d579cee69dd1b7237c6731640be2b2aa",
+   "bbox": [
+    44,
+    58,
+    102,
+    82
+   ]
+  },
+  "protoceratops_death_W_000": {
+   "file": "protoceratops_death_W_000.png",
+   "sha256": "c53a15ac177b96ef1fbda32daed9cb5bc38b608f88465ca89bb3c2dbd2a9f418",
+   "bbox": [
+    42,
+    58,
+    100,
+    82
+   ]
+  },
+  "protoceratops_death_S_001": {
+   "file": "protoceratops_death_S_001.png",
+   "sha256": "c87fc0c2f9372c4f76219dc3d81ebefb9ada6fb95ae687859db89526467d2578",
+   "bbox": [
+    60,
+    47,
+    86,
+    95
+   ]
+  },
+  "protoceratops_death_N_001": {
+   "file": "protoceratops_death_N_001.png",
+   "sha256": "71de6dc37202bc124be5f96d683b73ecd5ad6f7a80dfcb9bf675ddb44dbe35cd",
+   "bbox": [
+    58,
+    46,
+    84,
+    94
+   ]
+  },
+  "protoceratops_death_E_001": {
+   "file": "protoceratops_death_E_001.png",
+   "sha256": "6f4c791214610a6f52f892cb8831373e0b02dac33e962985a695c5c6c7f96e95",
+   "bbox": [
+    44,
+    57,
+    102,
+    81
+   ]
+  },
+  "protoceratops_death_W_001": {
+   "file": "protoceratops_death_W_001.png",
+   "sha256": "6354144ed7dfff5d8862be29475eca386fc6c25428fccd841378833a7b2c9e4c",
+   "bbox": [
+    42,
+    59,
+    100,
+    83
+   ]
+  },
+  "protoceratops_death_S_002": {
+   "file": "protoceratops_death_S_002.png",
+   "sha256": "02df56120e5fabe782030bf14cd313c63f5be9efd9e54a4fa68f39ae719156a1",
+   "bbox": [
+    61,
+    46,
+    88,
+    95
+   ]
+  },
+  "protoceratops_death_N_002": {
+   "file": "protoceratops_death_N_002.png",
+   "sha256": "1025c8bf0b1ab695e30c057364a0918093f4ce3148a6b389cd82fadecb34af4e",
+   "bbox": [
+    56,
+    46,
+    83,
+    94
+   ]
+  },
+  "protoceratops_death_E_002": {
+   "file": "protoceratops_death_E_002.png",
+   "sha256": "777d7fc865e59ca9c8075a2dc00234aabb6a49f481a14c9d996ed871994827a7",
+   "bbox": [
+    44,
+    57,
+    102,
+    79
+   ]
+  },
+  "protoceratops_death_W_002": {
+   "file": "protoceratops_death_W_002.png",
+   "sha256": "8a3bf52c24424e72aeac6b6a014d98981cb34d763e7b010bfc4c09d663c5095b",
+   "bbox": [
+    42,
+    61,
+    100,
+    85
+   ]
+  },
+  "protoceratops_death_S_003": {
+   "file": "protoceratops_death_S_003.png",
+   "sha256": "123c8d133906b49a06a721f582b24d773ec3a2d5b8cd2a5e2df8d6051504469c",
+   "bbox": [
+    65,
+    47,
+    89,
+    96
+   ]
+  },
+  "protoceratops_death_N_003": {
+   "file": "protoceratops_death_N_003.png",
+   "sha256": "40f9eb660457042ce906354207a40f848df9810cc86131e9fff7401b9203e674",
+   "bbox": [
+    55,
+    46,
+    79,
+    93
+   ]
+  },
+  "protoceratops_death_E_003": {
+   "file": "protoceratops_death_E_003.png",
+   "sha256": "f54b3fac1f6f2325c834fbc4e323f0b9fa1672801f9e5eb939e87fef0a706798",
+   "bbox": [
+    44,
+    57,
+    102,
+    75
+   ]
+  },
+  "protoceratops_death_W_003": {
+   "file": "protoceratops_death_W_003.png",
+   "sha256": "b2b2b37706eff677ec2b026049c0a44243a5519c9447a5981d004187545f0fc4",
+   "bbox": [
+    42,
+    63,
+    100,
+    87
+   ]
+  },
+  "protoceratops_death_S_004": {
+   "file": "protoceratops_death_S_004.png",
+   "sha256": "2dc08a938f2ff770a0bc3452978f5889264b6f08b53c13cc2fa0ee713bed9cab",
+   "bbox": [
+    69,
+    49,
+    89,
+    96
+   ]
+  },
+  "protoceratops_death_N_004": {
+   "file": "protoceratops_death_N_004.png",
+   "sha256": "d7836df6aad9947e2ace98d231ff71954b331f7448498a3b9dee9a9f558e7969",
+   "bbox": [
+    55,
+    47,
+    75,
+    94
+   ]
+  },
+  "protoceratops_death_E_004": {
+   "file": "protoceratops_death_E_004.png",
+   "sha256": "c096fac731e690e3a9407ce5851a302b344e776168a953152c901d3dd3fa8a04",
+   "bbox": [
+    45,
+    57,
+    102,
+    76
+   ]
+  },
+  "protoceratops_death_W_004": {
+   "file": "protoceratops_death_W_004.png",
+   "sha256": "6eeb1512ccf8dd3aef4aa189b944d49952647bfcf408b83ff09097aa84361353",
+   "bbox": [
+    42,
+    66,
+    99,
+    87
+   ]
+  },
+  "protoceratops_death_S_005": {
+   "file": "protoceratops_death_S_005.png",
+   "sha256": "b6dabde49d110bd45dbc8b74542f284f12d47e71365a9615bf6d262a162a5de1",
+   "bbox": [
+    70,
+    50,
+    88,
+    97
+   ]
+  },
+  "protoceratops_death_N_005": {
+   "file": "protoceratops_death_N_005.png",
+   "sha256": "b7478bb8a4bb01a2c967c22a319b2619b1b6d4d6b9b35da6e1c8ecf2a524cb27",
+   "bbox": [
+    56,
+    47,
+    74,
+    94
+   ]
+  },
+  "protoceratops_death_E_005": {
+   "file": "protoceratops_death_E_005.png",
+   "sha256": "66bdf658b374b9f667017d6431b71b93576d9fb4f2ae1c56e89d4a2b778f2bc5",
+   "bbox": [
+    46,
+    57,
+    102,
+    77
+   ]
+  },
+  "protoceratops_death_W_005": {
+   "file": "protoceratops_death_W_005.png",
+   "sha256": "178c9cb24a0143db438040971174ee3ee3cfab69fe8b20da6e63427fcbdff7b4",
+   "bbox": [
+    42,
+    67,
+    98,
+    87
+   ]
+  }
+ }
+}

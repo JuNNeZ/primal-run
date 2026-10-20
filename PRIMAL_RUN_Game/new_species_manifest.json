@@ -96,7 +96,7 @@
         72
       ],
       "corpse_model_anchor": [
-        76,
+        78,
         94
       ],
       "alpha_bbox": {
@@ -104,16 +104,16 @@
           48,
           18,
           96,
-          124
+          125
         ],
         "N": [
           48,
           12,
           96,
-          123
+          125
         ],
         "E": [
-          8,
+          7,
           52,
           140,
           92
@@ -121,39 +121,39 @@
         "W": [
           4,
           52,
-          136,
+          137,
           92
         ],
         "corpse": [
-          16,
+          13,
           52,
-          133,
+          136,
           103
         ],
         "skeleton": [
-          37,
+          39,
           53,
-          133,
+          136,
           103
         ],
         "avatar": [
           21,
           10,
           43,
-          48
+          49
         ]
       },
       "derived": {
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "31dd8e5f7c064e14f3cd62ae0efcff8b88b37e2405780b9fed5e5247817a1b7e",
-        "N": "73e6586e78fb33ee3f4706cea3a0ea68f46017aeb78a5402dba3943907599a21",
-        "E": "4434068df96f3919ae1993b7b87d30f445d263ddc9fa536ac433a50b8f2e8ca9",
-        "W": "7bbf2b7c4b1225b7cac8b9f85972bb381158ed826b6b7dee134cf31e06ca9e23",
-        "corpse": "1d1702001e8ed9634972462ea986347120fb6f0c9cb949dd1db958730b87faa1",
-        "skeleton": "d64c8d9e77881d1ee4c0d36461e0d2e2d151dece33e7f8401c6686f6cca3cfff",
-        "avatar": "741f796bf5ee88ddd5901152f936886a16b73a35f7be58718a8b9a08e46fc87c"
+        "S": "d8d241c2fef83c410e177a85303bee73344bb36e4c606cc36deff085f47a3b7e",
+        "N": "42339d02e8fb3b37e5303249688bebf2bb2d17432f3425d85922d13212ee1751",
+        "E": "0e08122ebd39f994bc71b18268c8f7f6393f3e07b62821ee983f18dc94941f77",
+        "W": "e7d8d07ba2914b017402ff5327965a5a7ad680a93ba47b080671d640ec081fd9",
+        "corpse": "fe04278eb454184a39a13b95e27f01db11206f30632f99dda691ebbfa4b54692",
+        "skeleton": "dbb553595468d4c055be21ea0db22d34c96e369a8e465c0f49cd1f4d70ec09ea",
+        "avatar": "da9f8614baa2df467d750b962b562d704c04cc18445a71b7c0066658b050a21d"
       }
     },
     "allosaurus": {
@@ -276,27 +276,27 @@
         "skeleton": [
           27,
           52,
-          122,
+          123,
           104
         ],
         "avatar": [
           19,
-          13,
+          15,
           45,
-          45
+          44
         ]
       },
       "derived": {
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "dad99563c351b443a84644aec90583405c6367b785cd01c2c473c59ddb89c33b",
-        "N": "27091be74ccf0c570f82ffb4314e486ac68c4a1c10ea5e707f245cae1168709b",
-        "E": "4bae358ccdf51bf100253dc022ba6fa3cbd7d6de8238c61992599a86e5f463a0",
-        "W": "25127025e8b02fc6659fb7e716945abc44c9cade4417d8e0b249147293bda2e4",
-        "corpse": "eddf6ec212d7deb0f7291464ae240239a192f70324f091d5df4bb4737f7d13f3",
-        "skeleton": "139a8dedd135e9695e3b6431e8e0d9f2ccd323ad5b9da904875f5ab2612d1d2d",
-        "avatar": "c8d3892653912811f93deb111c2597d36098e2696e9750d5ab54dc97c5f4da5e"
+        "S": "bf3a59478e932e8af653d10ab6ffd6fb3f56443842a87ac672c9c77797e39995",
+        "N": "b15f33d1d01fb949692f58a6c5db772959ccf4dade8376ca428cfca33c119d02",
+        "E": "7cacf494402b88247f2690ce2fe9faf68e9369d3b2a741eb35484c2faeb7b5d2",
+        "W": "8efd1b05ee1cb7ee7785ed17df2651715c1288a42e6d810833327b9a3cc0dc55",
+        "corpse": "79d777f336287857fe7158dfa6a3fb3849872359fb6c12abfe142d45c98b3889",
+        "skeleton": "d335e3a5eaeeb87a6ee7c1f81f24572942f72e47e0e675f413da3fbfe78e7b38",
+        "avatar": "aada1ed9f3f5f80b5d5eb4e3a357713368fe6661216510730b73acd6e2c9ca01"
       }
     },
     "stegosaurus": {
@@ -382,7 +382,7 @@
         72
       ],
       "corpse_model_anchor": [
-        75,
+        74,
         92
       ],
       "alpha_bbox": {
@@ -390,42 +390,42 @@
           48,
           20,
           96,
-          114
+          116
         ],
         "N": [
           48,
-          26,
+          24,
           96,
           119
         ],
         "E": [
           12,
           50,
-          126,
+          127,
           92
         ],
         "W": [
-          18,
+          17,
           50,
           132,
           92
         ],
         "corpse": [
-          20,
+          19,
           56,
           128,
           101
         ],
         "skeleton": [
-          21,
+          20,
           56,
-          127,
+          128,
           101
         ],
         "avatar": [
-          20,
-          13,
-          44,
+          22,
+          12,
+          42,
           46
         ]
       },
@@ -433,13 +433,13 @@
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "e6a97581b136c029dae9bba45cf134b32a2edc8de832b1abb1b8c94c568e5abd",
-        "N": "3e60e7c6efcda5df95580869282f79077d052b5bc6adb73ada9ef80a4057568a",
-        "E": "1d060a85bf327099b709cda5a6dd63843b1af7f23de2a18d2ab98cf1f4742fe1",
-        "W": "393b8e5c2fc6ff63739bf144105f823bf36ff970804d27b37bd1387863e7981c",
-        "corpse": "f4a6b73a9f8553f1fd2ccb599f46a84416312a12c3d866d2afb706aa888a4532",
-        "skeleton": "11e11edefaf0f2bbac7bc91d003c0cc4f447d8c3971ebf75ccd1ebe1e5812ed1",
-        "avatar": "bf101b4c3ba70676c9bc7a798e40a933cd45cda521d83ef35c10e07a3f6d063e"
+        "S": "e153130a006ed5f752bd1f64203351623105245faeda9c143c75f6f935f9fcf8",
+        "N": "6a84492c28041ab6c7351b92a4234231d01b3bf9050212a22d9f32c0071e9ad7",
+        "E": "72b4f533b7a4ceb48a2588ee0510efa48d17487c52731310dc3a7ad9849594e3",
+        "W": "779e8a26ebedf9672b5df6865d43d5445de52f921f45cdfefe9a934d297132a9",
+        "corpse": "503fe8e96c68ded3dcc60e330fb0513a7aa627af504736cc16ee5bbcba7efe07",
+        "skeleton": "6c7fc05b2fdce272b8d5b86e06a64aed102be098c53ce853d75f36b547fb2afa",
+        "avatar": "a8428f80c890a1930de39661329ac10d7d1e761932433c2f4641fbd965a19e18"
       }
     },
     "therizinosaurus": {
@@ -668,7 +668,7 @@
         72
       ],
       "corpse_model_anchor": [
-        66,
+        64,
         96
       ],
       "alpha_bbox": {
@@ -676,56 +676,56 @@
           10,
           55,
           134,
-          98
+          102
         ],
         "N": [
           10,
-          38,
+          35,
           134,
           82
         ],
         "E": [
           56,
           17,
-          107,
+          113,
           118
         ],
         "W": [
-          37,
+          31,
           17,
           88,
           118
         ],
         "corpse": [
-          49,
+          47,
           41,
-          99,
+          101,
           115
         ],
         "skeleton": [
-          50,
+          48,
           41,
-          98,
+          101,
           115
         ],
         "avatar": [
-          25,
-          10,
-          39,
-          49
+          26,
+          8,
+          38,
+          51
         ]
       },
       "derived": {
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "c21d267f8ab581d2be0aa153723290780350bd4056904a9e54bc5bbe77ba2ffa",
-        "N": "c7a79e42f70efbd6095bca290a9f9672b0eb404dd3584fe7d3069a082248ea56",
-        "E": "a964f7ec2c86e6345096446dea2e4006e5ca2e81a631be6a9018665ae89d18f9",
-        "W": "4214e7568baa4816452f978863aef0d60e7001eefea6434b1b8362187601975c",
-        "corpse": "0fc2c6154e125065028461f4d8f5db17f48bacd4d9fadc496ed85792c44ca5a6",
-        "skeleton": "02bd05f515b16265151bf396e57b76f2c663026a5c5cb500e3e1d121ea1d22f3",
-        "avatar": "c7e71e15edc76edaf37dbe09e453285221b095e85e384801a2c15a2df9a10d4d"
+        "S": "db2dcebb16525014fd37cb9c019c8ae197e0803b3d7c72dd4037fbd936c09b76",
+        "N": "93f916a00cefcb57891952c2b9291a2e400324a025c024044e6205580f37fe49",
+        "E": "072b68ca69fbe9de71d2fb79f44ae8f510a5bffbb462d701dfcc4bd0a59fe09a",
+        "W": "4248679cc0dcb075883f4299f0d5c55ac33c38b0228b5a22009383915bd8c431",
+        "corpse": "5819d2e4e690e204594ea13b8d5e4f7277e666f8309f482aaa4df4463d548580",
+        "skeleton": "f82985b9e394c438e5c63ecf94b7863d32f74eab0d227d072bf35fe21637e283",
+        "avatar": "d9c1527db381b61b6fc8fe599c3f287b476eb266cecbf0979a9d3e17489eb276"
       }
     },
     "microraptor": {
@@ -955,7 +955,7 @@
       ],
       "corpse_model_anchor": [
         72,
-        88
+        89
       ],
       "alpha_bbox": {
         "S": [
@@ -984,20 +984,20 @@
         ],
         "corpse": [
           26,
-          60,
+          59,
           123,
-          96
+          97
         ],
         "skeleton": [
           26,
-          60,
+          59,
           121,
-          96
+          97
         ],
         "avatar": [
-          18,
+          19,
           15,
-          46,
+          45,
           43
         ]
       },
@@ -1005,13 +1005,13 @@
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "41cf284a728876eb84a36a858c1fac2d36097cccdfce3f1d545ffca07f51f35b",
-        "N": "ff3ca420216b791e7db68d5785d9ccea284a81b0f5ab987e0cfcc87ee7465521",
-        "E": "c67f90f501ad84780adbeeb8f67e305141ff4509179816cbfbe186946d1ce618",
-        "W": "149c4896997cfcd702d2f50b4fd6a933124d5138ec85c0bb8c88c1e55433fb96",
-        "corpse": "8772a990af8cf07264847ad25b1e7779e04b43b95fe0d1a9276a9d42ce86d6af",
-        "skeleton": "dd2eeabeddb98c80477e007d4b57612b4751468641628053c53af9fa0407d579",
-        "avatar": "f8337f7a66ea09e97eb2e007a0de9383d786470d471bf0edf4263458a1942ddd"
+        "S": "77009725ad467247fce30183a1ab0baa5f64a502b85e4430b714a683b51e84f8",
+        "N": "f7899bbfca6e3879e01700dcb7aafecfbbb9afd5231698e03caa9c505bb64a12",
+        "E": "80eb55e2a83915ac18285a18832e22d2dc4fca26523a1718a02ae6a045a90584",
+        "W": "001d08eb9e9a2639567c45d35420857fad4c565431cc6363926922144f01015f",
+        "corpse": "fa77341f0fe35e3aeb42f8040813d89dd26cfe0e7fb4e9776d849d93b207eec2",
+        "skeleton": "633ae253f750c7b95aebf7f08ac00bfc7a303921433dc8578ce5f3f2d3d86b67",
+        "avatar": "6adf72b121457ed0ba5f07895c73aaf01b0dc512e8f4c58cc6ef6e7d85802609"
       }
     },
     "oviraptor": {
@@ -1097,8 +1097,8 @@
         72
       ],
       "corpse_model_anchor": [
-        84,
-        87
+        83,
+        88
       ],
       "alpha_bbox": {
         "S": [
@@ -1126,35 +1126,35 @@
           84
         ],
         "corpse": [
-          34,
+          33,
           63,
           115,
-          93
+          94
         ],
         "skeleton": [
-          51,
-          64,
-          115,
-          93
+          50,
+          65,
+          114,
+          94
         ],
         "avatar": [
           22,
-          11,
+          10,
           42,
-          47
+          48
         ]
       },
       "derived": {
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "e640cde44066e3e9fddac66745285b7177df916a7bd6c8d45045d00a98b9c139",
-        "N": "20077085e987437b9300eb3313decb2a8051ddd2451d6b87a4d4accc729fcfb8",
-        "E": "16e19c36d443dc52ef3ef96628ad59fbd6168472c9b5a42d36e8c18d05d096fd",
-        "W": "b6612a31975730bbde8049e37f99064d7290f4498a47b182c9c9847b0bf7e84e",
-        "corpse": "3266a1cbb960166090730332044e733ab1214a35cd669196eece8e3d31adde24",
-        "skeleton": "474ee1b72d5c9e1dd1294c4bf1f36567e26dafba667318d051092830b0bee9af",
-        "avatar": "7f7f4e94e4189684814ba5b6779191d4e8e29a6037e375775a60daf0c87f72b9"
+        "S": "6a2e05f058e3902b186668ba3b2278067b540364372bf7481831e855d3b38894",
+        "N": "5cd91f6e8742c04b53ef62eabcd9e1f38b3708d426a95da43cb34d5bfc5f850b",
+        "E": "17acd014a43e272a26272b021fcc33619f7f592fde2fce1f911ed50787cb7561",
+        "W": "9e5af00a9901850d344ec8ee50948cad47200252b648b7d1ccb5de0869241136",
+        "corpse": "aa4597d8e1a414b5ef16a60526fe48ba39a9c6b3e8033de90c1bc8abec808120",
+        "skeleton": "ba6841859b98b0273c11489a9018d547e2b4eac74d20de2a1240bdf68f38d57d",
+        "avatar": "a2415bab01e659b6eee58ea1ff398e7ff44afc964cd5c45c2e9fba57729736a6"
       }
     },
     "dryosaurus": {
@@ -1527,23 +1527,23 @@
       ],
       "corpse_model_anchor": [
         77,
-        86
+        90
       ],
       "alpha_bbox": {
         "S": [
           64,
-          49,
+          44,
           80,
           83
         ],
         "N": [
           64,
-          58,
+          57,
           80,
-          93
+          99
         ],
         "E": [
-          41,
+          34,
           65,
           87,
           79
@@ -1551,25 +1551,25 @@
         "W": [
           57,
           65,
-          103,
+          110,
           79
         ],
         "corpse": [
           58,
-          66,
+          62,
           90,
-          90
+          94
         ],
         "skeleton": [
           58,
-          65,
+          62,
           90,
-          90
+          94
         ],
         "avatar": [
-          24,
+          23,
           20,
-          40,
+          41,
           38
         ]
       },
@@ -1577,13 +1577,13 @@
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "18efb111abdbe56126c97df81bb70123dfe71e22912ab508569e4484d4af8ab4",
-        "N": "2756fef78c9ba788852532712b90bde42220b2f2cac0667cd14df4644e0f9339",
-        "E": "84c6c57c4ba62eae1745a8ad841fa9885cd98aff5585c2031fb7b04ad2591ad6",
-        "W": "2db45b411a143191272ef3b3f784d3769aaa4f44168671dc384deed783b1bdf7",
-        "corpse": "5108bd1dc0ec0e8b21f605791fca1bcfc0a48268773a6c61e402d9893522313c",
-        "skeleton": "c6d38c8309fc686cf501b869186a883cbe4013a8112c966a408b0f8e5389ba7d",
-        "avatar": "a1c1f083cbb134667df79d49a13e9e0c512a1ef86aa847ae5f4852187331372b"
+        "S": "746fe62fe09fc8f6e58aea6fa8d5e124f775868b6c21d94f17f7150cf0d29c8f",
+        "N": "c9e92881796f85aad210cea62abe8dc36539b00246f8ce05815b1812b704df95",
+        "E": "45397858d10877d291e1bb548ba6b697a0ba19e05212077e5cd4b302bd8349f5",
+        "W": "7c96c5fb43f2deedf29fb5001e35535d502ace238c71ce2d452f98f7761aaf5c",
+        "corpse": "beaf3d9f7f19f859bd4d504a0af6491ac6c783c68e4846d47a6936d38c85a6cc",
+        "skeleton": "69bb22a82a050ca698140c121b876fad8016e7ed52ca4d5642d83bf59d5375d3",
+        "avatar": "c3303546fe04f533a9f78992309dd70542660b43857fb50ff7d674806bde8794"
       }
     },
     "protoceratops": {
@@ -1720,13 +1720,13 @@
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "6505f4030bb7f7c0935270e709a79a91fbb5f3131fbf2b11314d7596aff7fb7a",
-        "N": "8e84937b88088cea7aebf52617aa39f4b0df5aecac0b300a3e952d9258b19e8e",
-        "E": "108d043095719c88b6fdab2d61116dfced2e595afed10b24467e8b1079a812fe",
-        "W": "949956dcf1e6886d75773f532235640637cea680ea30b782831ac7d28854dd20",
-        "corpse": "8b3e73aa89244015c571eba82cf910016acf1f99503c67de328364ae441909ad",
+        "S": "1742045c26740c0d8f48fb0f64a7b176815f5c013a6d2e2f4078f0f1b22a2dd0",
+        "N": "219f3e4bb677635694c28d5ca958fa7829934316e4df2d066f254a32f8b5a0a3",
+        "E": "c0ab8630e0818b2fb7a307d8c187fce2d579cee69dd1b7237c6731640be2b2aa",
+        "W": "00a8471d135aabd8277d123361d8886d6e5b3d68e038680fb7c30c2ad5e95dca",
+        "corpse": "b909ce6d2ab3b7c1b186091bfb3fadbde55c47395fb72b9c312a919dc26a4766",
         "skeleton": "9bf1a10dfaf0fdc8798ed86f7c27c6a93bd62b9794e981d517c1388066612ee8",
-        "avatar": "4411ffccb82767233981369aba80fead467691482a1e8b5ff18841d11bbf6968"
+        "avatar": "70b76a6a1637fdea5b92f8298215a687c06756c4326629814ae5b8d8db7d162b"
       }
     },
     "iguanodon": {
@@ -1955,7 +1955,7 @@
         72
       ],
       "corpse_model_anchor": [
-        75,
+        74,
         82
       ],
       "alpha_bbox": {
@@ -1963,7 +1963,7 @@
           61,
           52,
           83,
-          87
+          88
         ],
         "N": [
           61,
@@ -1984,35 +1984,35 @@
           81
         ],
         "corpse": [
-          54,
+          53,
           69,
           94,
           87
         ],
         "skeleton": [
-          54,
+          53,
           69,
-          94,
+          93,
           87
         ],
         "avatar": [
-          20,
           19,
-          44,
-          39
+          20,
+          45,
+          38
         ]
       },
       "derived": {
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "87aec853610a25a287a7abf991fc363a32c721c3f74911a243b6fa07d15a2cdb",
-        "N": "40ef10f0c6d31d4e82b839e5b3c8bf684cf9695336482a651e964e1554aefa56",
-        "E": "d63cbfdac486f921a3e0549340976c85bfc53300ff30d1b7c963931cc2ea0a95",
-        "W": "3a9e461b7916c22d9ad05b28cd8373cd695befd174f934ec35e3e9e583998178",
-        "corpse": "2bcf783f7391cec92dfb2d33a16d3dde2ff681eadf9f82abb9386bfe83a9b757",
-        "skeleton": "1b1495e5d50ba78c0b501f7512f0d467c34fe0dcd373de25b97a69c234638f1f",
-        "avatar": "c740ea2ab9d0d6d61e418dd18f40c420fea564a6db4da4c2253b24adb837fbe0"
+        "S": "82d71cc2c16cccbc77cf3b2a926f35a9ac5b58c59df45b40530cece9799568f7",
+        "N": "b9360c5e625ff354181b48f5ce1451cfa85e6e47acbdc9d3821151fd947604c2",
+        "E": "6934825592398376e9b6252caab1fcc5426373f16f82fd961ca40984297c95e9",
+        "W": "b6ef1722bcca1c63f40ccd903aa25ece71e194a2e9c9c1249299f76db1971821",
+        "corpse": "30132f4ea76d58720205dd37c2dd26427c645dd93242497d42a48586eb4e3eb4",
+        "skeleton": "052380bd29cd17e0bedfe21854d1f13cbe8c59678e3eace7821c8a9f87a93536",
+        "avatar": "c105e558f6f8f95894fea24b7ceee0a654d36342bf72b05d04ee8cee797eb740"
       }
     },
     "edmontosaurus": {
@@ -2106,7 +2106,7 @@
           45,
           19,
           99,
-          118
+          119
         ],
         "N": [
           45,
@@ -2117,11 +2117,11 @@
         "E": [
           10,
           49,
-          133,
+          134,
           94
         ],
         "W": [
-          11,
+          10,
           49,
           134,
           94
@@ -2149,13 +2149,13 @@
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "5f8531eb3b187795df81968acf98fa4a205a1e0c36865f9645928467ddfebd60",
-        "N": "405b983ff0f27de06b0ef54abeea53ef6f283502874c58603f7207e734d15361",
-        "E": "e9dc87c3c30bcbaee1a854543b958ad0aae7e7450f23c7391be99bda92c5faf6",
-        "W": "b9488e6ebbd6fb4f940d439c9170cb799d1b28d8471bec5bd44ccc6c85ec47d3",
-        "corpse": "c63fe14f4d905c9734fbca53fd77204e22a55774cc39377606ecd303319b7388",
+        "S": "1055dbf74df7be6bb8199b3e6faa49df0a7b984fe3cdb3d09a2fe95d8a73fbc4",
+        "N": "58d54481018bd0e7013f223fe67ff0867c42d41dbfeb0865e67d40879a8f78f9",
+        "E": "2441846221fed9c0dfb307b0227bd8f747868fa6925021450bd179d7a0ff70df",
+        "W": "b0530121227706234ef8cc76514661395a5ada37ef9e2cd9dc38c89f813791de",
+        "corpse": "fc058eb53f25f15280614d649f70d723c15f43b0acfa67c086c249ec95477c3e",
         "skeleton": "aaecbc05b2d51614f70eb62716bf5647b51a133890ce6c1bf484d4e29f44e811",
-        "avatar": "d20ba6b0128881f12d5c730d1dfd0b7c2b87b423bb08628d76a1a52de9554c3a"
+        "avatar": "57b35df136ccfd8a2892caa23bdd553f1a0abc82b601e2eeae06aebb850220de"
       }
     },
     "archelon": {
@@ -2241,7 +2241,7 @@
         72
       ],
       "corpse_model_anchor": [
-        70,
+        69,
         78
       ],
       "alpha_bbox": {
@@ -2249,56 +2249,56 @@
           11,
           35,
           133,
-          113
+          116
         ],
         "N": [
           11,
-          28,
+          27,
           133,
           107
         ],
         "E": [
           28,
           22,
-          124,
+          126,
           122
         ],
         "W": [
-          20,
+          18,
           22,
           116,
           122
         ],
         "corpse": [
-          26,
+          25,
           28,
-          122,
+          123,
           128
         ],
         "skeleton": [
-          26,
+          25,
           36,
-          121,
+          120,
           123
         ],
         "avatar": [
           20,
-          15,
+          13,
           44,
-          44
+          45
         ]
       },
       "derived": {
         "W": "exact horizontal mirror of E"
       },
       "sha256": {
-        "S": "bf7309c5b643c28615c4bf8a61d4d793529d4500d76c9e8cdf84162a576be110",
-        "N": "4bfb88dcab1406fcd0a82cbd098454b218004ab940bb7a62219c51f5ab28de85",
-        "E": "b736cae49827d724c94136dc11c4d465a990dab397a3cf6edce987026492f7eb",
-        "W": "73436d74943f487231130ccce515b638d924083fe99f5f8aae8ff365a400b289",
-        "corpse": "3d049b3ef9267184331f7676a3b5021557fbdfca1be442fda7c30686538a8c65",
-        "skeleton": "2f8e6e9f8656418144ab52142faee2a1dbd422b5785001f0ca3ccf592aff5ba5",
-        "avatar": "7722b76140b8c4ce11a60206f68252ec72e2cfc784f09f79001d3ca22ab500a1"
+        "S": "883390a21f9622410a12ea017359bd835d07496e562ebffbeb8d2cc10b7fc7f7",
+        "N": "7b89fb989f2456d435ec82284a9c50a81677b66274ed2779060873306e0536ff",
+        "E": "3f059ee0ea7ee130b78b87b9093c69a2c7ece2dc4e11b35c7ec8ddefe3585dad",
+        "W": "80c28c7c4ebe458f0afcd011fd578c6f4a175d0bdac719bb8a97aa4dbba5bf22",
+        "corpse": "8ffb763699a476be0a356af89fbf99679fa1db380d74cb2e569939afb17a1717",
+        "skeleton": "136f9acf2617c7cce9325923d91de46c9707fc4bfbd669e3208c5a7e00c90f02",
+        "avatar": "289e5973e2275d7c7f3f73e7e10692b03e2f450703759fbb94ad59d8a025bfb8"
       }
     }
   },

@@ -1,0 +1,3481 @@
+{
+ "species": "pteranodon",
+ "canvas": [
+  144,
+  144
+ ],
+ "origin": [
+  72,
+  72
+ ],
+ "model_scale": 1.0,
+ "visual_scale": 1,
+ "camera": {
+  "image_x": "x",
+  "image_up": "0.82*y + 0.36*z",
+  "light": [
+   -0.4915,
+   0.4129,
+   0.7668
+  ],
+  "note": "Same fixed overhead camera and light for every direction; each direction is its own render."
+ },
+ "skeleton": {
+  "locomotion": "flap",
+  "quadruped": false,
+  "hip_height": 10.26,
+  "chains": [
+   "wing_L",
+   "wing_R"
+  ],
+  "attack_style": "peck"
+ },
+ "states": {
+  "idle": {
+   "frames": 4,
+   "fps": 4,
+   "loop": true,
+   "contact_frame": null
+  },
+  "walk": {
+   "frames": 6,
+   "fps": 8,
+   "loop": true,
+   "contact_frame": null
+  },
+  "run": {
+   "frames": 6,
+   "fps": 12,
+   "loop": true,
+   "contact_frame": null
+  },
+  "attack": {
+   "frames": 6,
+   "fps": 12,
+   "loop": false,
+   "contact_frame": 3
+  },
+  "hurt": {
+   "frames": 2,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  },
+  "death": {
+   "frames": 6,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  }
+ },
+ "frames": {
+  "pteranodon_idle_S_000": {
+   "file": "pteranodon_idle_S_000.png",
+   "sha256": "4629d707c9edec4ed69c61be77106b37cb542cb5f555edc791296e363da99447",
+   "bbox": [
+    10,
+    54,
+    134,
+    102
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.07
+     ],
+     [
+      132.24,
+      60.5
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.07
+     ],
+     [
+      11.76,
+      60.5
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_N_000": {
+   "file": "pteranodon_idle_N_000.png",
+   "sha256": "a7350fdb4be0d201122afdcd5b4c911a648a7ca2a978786795d38c67380b6e95",
+   "bbox": [
+    10,
+    35,
+    134,
+    82
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.87
+     ],
+     [
+      11.76,
+      68.7
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.87
+     ],
+     [
+      132.24,
+      68.7
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_E_000": {
+   "file": "pteranodon_idle_E_000.png",
+   "sha256": "1317033cbf0fa230d276c9b340fb989725b3df802d7ceb57a418e90a7b9ab67c",
+   "bbox": [
+    55,
+    15,
+    113,
+    115
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.51
+     ],
+     [
+      67.0,
+      15.2
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.43
+     ],
+     [
+      67.0,
+      114.0
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_W_000": {
+   "file": "pteranodon_idle_W_000.png",
+   "sha256": "1e88cf97fd30db1c31fe9763acbc9fecd40a7d7f4b8d52a27a1d4f4af404a67b",
+   "bbox": [
+    31,
+    15,
+    88,
+    115
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.43
+     ],
+     [
+      77.0,
+      114.0
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.51
+     ],
+     [
+      77.0,
+      15.2
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_S_001": {
+   "file": "pteranodon_idle_S_001.png",
+   "sha256": "af7395868b99a3d0e4f49dcb4d8e52cfe0191cbaf5c8bfd78ad49a5b3909d70c",
+   "bbox": [
+    10,
+    55,
+    134,
+    101
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.12
+     ],
+     [
+      132.95,
+      63.05
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.12
+     ],
+     [
+      11.05,
+      63.05
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_N_001": {
+   "file": "pteranodon_idle_N_001.png",
+   "sha256": "775783e82dbc707de96b7839cf96cd3e6ea65f916e28749a88661df665e6e4c0",
+   "bbox": [
+    10,
+    34,
+    134,
+    83
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.92
+     ],
+     [
+      11.05,
+      71.25
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.92
+     ],
+     [
+      132.95,
+      71.25
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_E_001": {
+   "file": "pteranodon_idle_E_001.png",
+   "sha256": "d7151d3a86b8046284406319513caef9a0e2c3ac76d25c2c2e9c4d00bdfae31d",
+   "bbox": [
+    55,
+    17,
+    115,
+    118
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.56
+     ],
+     [
+      67.0,
+      17.17
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.48
+     ],
+     [
+      67.0,
+      117.13
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_W_001": {
+   "file": "pteranodon_idle_W_001.png",
+   "sha256": "2801ed20a02bb64bbd7400b5ec620a55bb6b6f913ffea1c9edc03d74ff7bf33e",
+   "bbox": [
+    29,
+    17,
+    88,
+    118
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.48
+     ],
+     [
+      77.0,
+      117.13
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.56
+     ],
+     [
+      77.0,
+      17.17
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_S_002": {
+   "file": "pteranodon_idle_S_002.png",
+   "sha256": "354d7dacec2bb6170e69d3d4deba1431bb442d95dc09bf04d5d2e051d6d424d7",
+   "bbox": [
+    10,
+    55,
+    134,
+    102
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.18
+     ],
+     [
+      132.83,
+      65.6
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.18
+     ],
+     [
+      11.17,
+      65.6
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_N_002": {
+   "file": "pteranodon_idle_N_002.png",
+   "sha256": "6a546fbe398c37c89c523f17bdbc79b4616a7f51b2efc27d7fdc65acb6419841",
+   "bbox": [
+    10,
+    35,
+    134,
+    83
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.98
+     ],
+     [
+      11.17,
+      73.8
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.98
+     ],
+     [
+      132.83,
+      73.8
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_E_002": {
+   "file": "pteranodon_idle_E_002.png",
+   "sha256": "9ca0609b65ac439998f588b4ff89d28c61b274cbf1af1132fc1fc3fe2506069e",
+   "bbox": [
+    56,
+    19,
+    115,
+    120
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.62
+     ],
+     [
+      67.0,
+      19.83
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.54
+     ],
+     [
+      67.0,
+      119.58
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_W_002": {
+   "file": "pteranodon_idle_W_002.png",
+   "sha256": "3117ed33d0125d8ce559e89661b17cda0f1f961525644d68f70cb5d77d1ef912",
+   "bbox": [
+    29,
+    19,
+    88,
+    120
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.54
+     ],
+     [
+      77.0,
+      119.58
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.62
+     ],
+     [
+      77.0,
+      19.83
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_S_003": {
+   "file": "pteranodon_idle_S_003.png",
+   "sha256": "58bc09575985453fec32055ea7e970e9176a6fa988aacd8c7b0233c0c0c80b8d",
+   "bbox": [
+    10,
+    55,
+    134,
+    102
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.12
+     ],
+     [
+      132.95,
+      63.05
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.12
+     ],
+     [
+      11.05,
+      63.05
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_N_003": {
+   "file": "pteranodon_idle_N_003.png",
+   "sha256": "af19b0da5d161a35dbed346f47600577a5b06310b2d2621267fdb500d44b2b70",
+   "bbox": [
+    10,
+    35,
+    134,
+    83
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.92
+     ],
+     [
+      11.05,
+      71.25
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.92
+     ],
+     [
+      132.95,
+      71.25
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_E_003": {
+   "file": "pteranodon_idle_E_003.png",
+   "sha256": "1bdc83f6991cfceeeceb147c73db4b514b5c1fc240db9750fe924bac19983b64",
+   "bbox": [
+    56,
+    17,
+    115,
+    118
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.56
+     ],
+     [
+      67.0,
+      17.17
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.48
+     ],
+     [
+      67.0,
+      117.13
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_idle_W_003": {
+   "file": "pteranodon_idle_W_003.png",
+   "sha256": "cbd5c5a9c212badcd83d632e820c2a7220f759a1dc78412310f154ee73433e26",
+   "bbox": [
+    29,
+    17,
+    89,
+    118
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.48
+     ],
+     [
+      77.0,
+      117.13
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.56
+     ],
+     [
+      77.0,
+      17.17
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_S_000": {
+   "file": "pteranodon_walk_S_000.png",
+   "sha256": "ff75a68a2e7cfbb9de5b5d49c2fa5b95e15a2f47c908c9a87855a485749373a2",
+   "bbox": [
+    13,
+    52,
+    131,
+    101
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.07
+     ],
+     [
+      128.6,
+      55.89
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.07
+     ],
+     [
+      15.4,
+      55.89
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_N_000": {
+   "file": "pteranodon_walk_N_000.png",
+   "sha256": "923bf8137da63397478289801a8b86838ac7171fe5b88348508c0a8cc12685f5",
+   "bbox": [
+    13,
+    34,
+    131,
+    83
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.87
+     ],
+     [
+      15.4,
+      64.09
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.87
+     ],
+     [
+      128.6,
+      64.09
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_E_000": {
+   "file": "pteranodon_walk_E_000.png",
+   "sha256": "b83907e99a5a9cf35af8238f4b08b17c74555bac8b2b14bb7682a112c324d4d6",
+   "bbox": [
+    55,
+    13,
+    115,
+    108
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.51
+     ],
+     [
+      67.0,
+      13.58
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.43
+     ],
+     [
+      67.0,
+      106.4
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_W_000": {
+   "file": "pteranodon_walk_W_000.png",
+   "sha256": "48147084b200f8ea2c732fc198deab7c6d021587674a9e5ba30197d8f425a661",
+   "bbox": [
+    29,
+    13,
+    89,
+    108
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.43
+     ],
+     [
+      77.0,
+      106.4
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.51
+     ],
+     [
+      77.0,
+      13.58
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_S_001": {
+   "file": "pteranodon_walk_S_001.png",
+   "sha256": "8c827352bc151b56c1e3505537713b9422221329ee16f873ee2568b4a4951a2c",
+   "bbox": [
+    12,
+    54,
+    132,
+    101
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      71.81
+     ],
+     [
+      131.64,
+      59.12
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      71.81
+     ],
+     [
+      12.36,
+      59.12
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_N_001": {
+   "file": "pteranodon_walk_N_001.png",
+   "sha256": "60ed4591da7b45b56b3f47ccde3aebd05a0a4a4b522c1e7f11c9b19c2ac97726",
+   "bbox": [
+    11,
+    35,
+    133,
+    82
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.61
+     ],
+     [
+      12.36,
+      67.32
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.61
+     ],
+     [
+      131.64,
+      67.32
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_E_001": {
+   "file": "pteranodon_walk_E_001.png",
+   "sha256": "a32acbcb0d0696b420fe665b97b3b8789b7767fb955812f18d000496eecceb05",
+   "bbox": [
+    55,
+    14,
+    112,
+    114
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.25
+     ],
+     [
+      67.0,
+      14.31
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.17
+     ],
+     [
+      67.0,
+      112.12
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_W_001": {
+   "file": "pteranodon_walk_W_001.png",
+   "sha256": "549b42273825b51ad7d927939719a708134a916b7930b8bb8ea9257950d275d9",
+   "bbox": [
+    32,
+    14,
+    89,
+    114
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.17
+     ],
+     [
+      77.0,
+      112.12
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.25
+     ],
+     [
+      77.0,
+      14.31
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_S_002": {
+   "file": "pteranodon_walk_S_002.png",
+   "sha256": "ac8bbd44ed01c65613adf0bc5a67abe316fc3af6d3196073461e856655ddb2a9",
+   "bbox": [
+    10,
+    54,
+    134,
+    101
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      71.81
+     ],
+     [
+      132.49,
+      66.38
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      71.81
+     ],
+     [
+      11.51,
+      66.38
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_N_002": {
+   "file": "pteranodon_walk_N_002.png",
+   "sha256": "3b8d189ff59686acae0d2b58bfbd67232db107ec90ae34477ac096a3c2570d21",
+   "bbox": [
+    11,
+    35,
+    133,
+    83
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.61
+     ],
+     [
+      11.51,
+      74.58
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.61
+     ],
+     [
+      132.49,
+      74.58
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_E_002": {
+   "file": "pteranodon_walk_E_002.png",
+   "sha256": "01fe34a14428f1e9b200c573bf4d95f6e26661b6c1e2c27da46c7be739741993",
+   "bbox": [
+    55,
+    20,
+    112,
+    121
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.25
+     ],
+     [
+      67.0,
+      20.88
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.17
+     ],
+     [
+      67.0,
+      120.08
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_W_002": {
+   "file": "pteranodon_walk_W_002.png",
+   "sha256": "e857ab4413c432df3ababf3ec38572f558b78dffeeb98d8fddba147533517e09",
+   "bbox": [
+    32,
+    20,
+    89,
+    121
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.17
+     ],
+     [
+      77.0,
+      120.08
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.25
+     ],
+     [
+      77.0,
+      20.88
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_S_003": {
+   "file": "pteranodon_walk_S_003.png",
+   "sha256": "a70618cc0ef38b9dfac93fc5c6ed8ce7c44b53cd8c45f7d7b2dd4ac35ca0e01e",
+   "bbox": [
+    13,
+    55,
+    131,
+    101
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.07
+     ],
+     [
+      130.27,
+      70.2
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.07
+     ],
+     [
+      13.73,
+      70.2
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_N_003": {
+   "file": "pteranodon_walk_N_003.png",
+   "sha256": "47b50012d3c3283a10f52186c0978512c9a3b6d7345979876a70b43d0db91552",
+   "bbox": [
+    13,
+    34,
+    131,
+    83
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.87
+     ],
+     [
+      13.73,
+      78.4
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.87
+     ],
+     [
+      130.27,
+      78.4
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_E_003": {
+   "file": "pteranodon_walk_E_003.png",
+   "sha256": "805260228aa686d2ae0762e1942583387e7e11f8330124dc1ef167a116ca9860",
+   "bbox": [
+    55,
+    26,
+    115,
+    122
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.51
+     ],
+     [
+      67.0,
+      26.51
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.43
+     ],
+     [
+      67.0,
+      122.08
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_W_003": {
+   "file": "pteranodon_walk_W_003.png",
+   "sha256": "3cc02db4b257ded22a5f2dd5c0e9df8874cca6bb00ed9e37fe8a8e0e89862e97",
+   "bbox": [
+    29,
+    26,
+    89,
+    122
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.43
+     ],
+     [
+      77.0,
+      122.08
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.51
+     ],
+     [
+      77.0,
+      26.51
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_S_004": {
+   "file": "pteranodon_walk_S_004.png",
+   "sha256": "1511b4ada03f993ca5705f6cec0e1684e604588ad6f86e3727e455de055dca6d",
+   "bbox": [
+    15,
+    52,
+    129,
+    102
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.32
+     ],
+     [
+      127.99,
+      55.06
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.32
+     ],
+     [
+      16.01,
+      55.06
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_N_004": {
+   "file": "pteranodon_walk_N_004.png",
+   "sha256": "911f3505bacfbccbe34da5db0d028ff58d522d3d74a5e154cacdcd63c889d6ed",
+   "bbox": [
+    15,
+    35,
+    129,
+    89
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      64.12
+     ],
+     [
+      16.01,
+      86.93
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      64.12
+     ],
+     [
+      127.99,
+      86.93
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_E_004": {
+   "file": "pteranodon_walk_E_004.png",
+   "sha256": "832e656960d80009a5776d4a765715a8dc2d89bd4982cc957565f0f2b8410456",
+   "bbox": [
+    50,
+    24,
+    114,
+    119
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.76
+     ],
+     [
+      52.57,
+      25.08
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.68
+     ],
+     [
+      52.57,
+      116.91
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_W_004": {
+   "file": "pteranodon_walk_W_004.png",
+   "sha256": "152890887331d7649afa4d2fde815f30a7c2a730bbb9531762570b192f8c01cd",
+   "bbox": [
+    30,
+    24,
+    94,
+    119
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.68
+     ],
+     [
+      91.43,
+      116.91
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.76
+     ],
+     [
+      91.43,
+      25.08
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_S_005": {
+   "file": "pteranodon_walk_S_005.png",
+   "sha256": "fca154e5f6b1c55718aca244e4108b3d3c61435b3989d093d4341ce32d4b517b",
+   "bbox": [
+    15,
+    46,
+    129,
+    102
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.32
+     ],
+     [
+      127.17,
+      47.97
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.32
+     ],
+     [
+      16.83,
+      47.97
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_N_005": {
+   "file": "pteranodon_walk_N_005.png",
+   "sha256": "008bd1ee1e0c79882efbb125cb0f1c3f23d0374744d427111588024c597820da",
+   "bbox": [
+    15,
+    35,
+    129,
+    83
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      64.12
+     ],
+     [
+      16.83,
+      79.48
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      64.12
+     ],
+     [
+      127.17,
+      79.48
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_E_005": {
+   "file": "pteranodon_walk_E_005.png",
+   "sha256": "ba9308d6f4302fb3cd2231abbca0fbf0fefe8afef4184d16b2230e7a4d3be68c",
+   "bbox": [
+    50,
+    18,
+    114,
+    111
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.76
+     ],
+     [
+      52.78,
+      18.49
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.68
+     ],
+     [
+      52.78,
+      108.97
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_walk_W_005": {
+   "file": "pteranodon_walk_W_005.png",
+   "sha256": "41bb9f5fdcfd01861504d13f2a184b5e13fd21f504fa33d93754d659801645a1",
+   "bbox": [
+    30,
+    18,
+    94,
+    111
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.68
+     ],
+     [
+      91.22,
+      108.97
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.76
+     ],
+     [
+      91.22,
+      18.49
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_S_000": {
+   "file": "pteranodon_run_S_000.png",
+   "sha256": "90ab8e2ad4a5619f3d7b0c86dbe20abe28968559db51fa5ed9e09802d8eb10d7",
+   "bbox": [
+    21,
+    49,
+    123,
+    101
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.07
+     ],
+     [
+      121.45,
+      51.36
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.07
+     ],
+     [
+      22.55,
+      51.36
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_N_000": {
+   "file": "pteranodon_run_N_000.png",
+   "sha256": "3516b148442291dbcb2cc946fc3956269674a0da3cbc4a3a79faaf1b72b13218",
+   "bbox": [
+    21,
+    34,
+    123,
+    83
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.87
+     ],
+     [
+      22.55,
+      59.56
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.87
+     ],
+     [
+      121.45,
+      59.56
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_E_000": {
+   "file": "pteranodon_run_E_000.png",
+   "sha256": "2290a279442d2a3938e43b1376ebc6488d91cabe3bb3fa0ec1f94ff779eba792",
+   "bbox": [
+    55,
+    14,
+    115,
+    98
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.51
+     ],
+     [
+      67.0,
+      14.91
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.43
+     ],
+     [
+      67.0,
+      96.01
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_W_000": {
+   "file": "pteranodon_run_W_000.png",
+   "sha256": "8f5ff0f10e4791531cbbf41532d50821b7db9a249ffe565561177349590e080d",
+   "bbox": [
+    29,
+    14,
+    89,
+    98
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.43
+     ],
+     [
+      77.0,
+      96.01
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.51
+     ],
+     [
+      77.0,
+      14.91
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_S_001": {
+   "file": "pteranodon_run_S_001.png",
+   "sha256": "5d019f10a7b5cc0d6685bf6351c324786d454b43929969418bf416aa020deb55",
+   "bbox": [
+    12,
+    52,
+    132,
+    101
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      71.81
+     ],
+     [
+      129.64,
+      56.61
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      71.81
+     ],
+     [
+      14.36,
+      56.61
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_N_001": {
+   "file": "pteranodon_run_N_001.png",
+   "sha256": "d62dc7afcfd959711cd3761a6082cdbdc239af0f910f754e2016a50f7f686885",
+   "bbox": [
+    12,
+    35,
+    132,
+    82
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.61
+     ],
+     [
+      14.36,
+      64.81
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.61
+     ],
+     [
+      129.64,
+      64.81
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_E_001": {
+   "file": "pteranodon_run_E_001.png",
+   "sha256": "bbdd969d3e42fad8fdc79b91e540a2f05ccf3b8003092904037036aa8a380f2a",
+   "bbox": [
+    55,
+    13,
+    112,
+    110
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.25
+     ],
+     [
+      67.0,
+      13.44
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.17
+     ],
+     [
+      67.0,
+      107.98
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_W_001": {
+   "file": "pteranodon_run_W_001.png",
+   "sha256": "4a7a29a1558707070ed149a2a9cefa921751e3af5d502c6cfa53416d0a90a606",
+   "bbox": [
+    32,
+    13,
+    89,
+    110
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.17
+     ],
+     [
+      77.0,
+      107.98
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.25
+     ],
+     [
+      77.0,
+      13.44
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_S_002": {
+   "file": "pteranodon_run_S_002.png",
+   "sha256": "80b7334319ad60718763c17b3738c2db48b584876928163ecc14008db692d670",
+   "bbox": [
+    12,
+    54,
+    132,
+    101
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      71.81
+     ],
+     [
+      131.08,
+      68.94
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      71.81
+     ],
+     [
+      12.92,
+      68.94
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_N_002": {
+   "file": "pteranodon_run_N_002.png",
+   "sha256": "a36b357b2eb51838c5bbf390cc1a4d5186c69e51cf035332ff71cdb1022d20f6",
+   "bbox": [
+    12,
+    35,
+    132,
+    83
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.61
+     ],
+     [
+      12.92,
+      77.14
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.61
+     ],
+     [
+      131.08,
+      77.14
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_E_002": {
+   "file": "pteranodon_run_E_002.png",
+   "sha256": "3e7a74296e5c1380482c9a7e6123c9a1a1bcc8c26fa65622c334bb569dd4c3e0",
+   "bbox": [
+    55,
+    24,
+    112,
+    122
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.25
+     ],
+     [
+      67.0,
+      24.59
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.17
+     ],
+     [
+      67.0,
+      121.49
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_W_002": {
+   "file": "pteranodon_run_W_002.png",
+   "sha256": "853f7d48ce1d239d783bb6ee61c7ae99fb5ecf0948bb1c03521d0121f72f7753",
+   "bbox": [
+    32,
+    24,
+    89,
+    122
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.17
+     ],
+     [
+      77.0,
+      121.49
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.25
+     ],
+     [
+      77.0,
+      24.59
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_S_003": {
+   "file": "pteranodon_run_S_003.png",
+   "sha256": "3ebface541af4f3c95bd3751cc0d6b47320b57edd74aa24e71771dc03207c779",
+   "bbox": [
+    19,
+    55,
+    125,
+    101
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.07
+     ],
+     [
+      124.21,
+      74.92
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.07
+     ],
+     [
+      19.79,
+      74.92
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_N_003": {
+   "file": "pteranodon_run_N_003.png",
+   "sha256": "e0a2d2189d9b745ed2e558152d0eb96843b4ae4e794233abbb53b082100afee2",
+   "bbox": [
+    19,
+    34,
+    125,
+    86
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.87
+     ],
+     [
+      19.79,
+      83.12
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.87
+     ],
+     [
+      124.21,
+      83.12
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_E_003": {
+   "file": "pteranodon_run_E_003.png",
+   "sha256": "68c8fe1fa3f7bd669c12bd3b591dc78dabe6f746b802ec8759728fe41956e253",
+   "bbox": [
+    55,
+    35,
+    115,
+    122
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.51
+     ],
+     [
+      67.0,
+      36.21
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.43
+     ],
+     [
+      67.0,
+      121.83
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_W_003": {
+   "file": "pteranodon_run_W_003.png",
+   "sha256": "a6f0933e8930f4b34517a742090fdadb789d135547951d86c3ae7d2311bf538d",
+   "bbox": [
+    29,
+    35,
+    89,
+    122
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.43
+     ],
+     [
+      77.0,
+      121.83
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.51
+     ],
+     [
+      77.0,
+      36.21
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_S_004": {
+   "file": "pteranodon_run_S_004.png",
+   "sha256": "804610feb9069b4be0d9b206b3aeac986bf5931dbea1c77d7104031e13e9717b",
+   "bbox": [
+    21,
+    49,
+    123,
+    102
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.32
+     ],
+     [
+      121.71,
+      50.91
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.32
+     ],
+     [
+      22.29,
+      50.91
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_N_004": {
+   "file": "pteranodon_run_N_004.png",
+   "sha256": "7a31d19c867cd4556ea7785b56ba23a19c913572cfa375299b1482684e4c3e49",
+   "bbox": [
+    21,
+    35,
+    123,
+    98
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      64.12
+     ],
+     [
+      22.29,
+      96.19
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      64.12
+     ],
+     [
+      121.71,
+      96.19
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_E_004": {
+   "file": "pteranodon_run_E_004.png",
+   "sha256": "bc83381e2e0b1214cf3e88f05b9b8767051a94eb92d48177f868ac91ea21be35",
+   "bbox": [
+    43,
+    32,
+    114,
+    116
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.76
+     ],
+     [
+      44.39,
+      32.79
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.68
+     ],
+     [
+      44.39,
+      114.31
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_W_004": {
+   "file": "pteranodon_run_W_004.png",
+   "sha256": "9b1b8c0f5d56cdadbbd57abf43f299cbc2e6cd28218f76a9fe53d84e624194fa",
+   "bbox": [
+    30,
+    32,
+    101,
+    116
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.68
+     ],
+     [
+      99.61,
+      114.31
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.76
+     ],
+     [
+      99.61,
+      32.79
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_S_005": {
+   "file": "pteranodon_run_S_005.png",
+   "sha256": "24490c5c118f00f53ba92da27350a1fbce078d08357091d6e9d19444eb4a5a86",
+   "bbox": [
+    22,
+    38,
+    122,
+    102
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.32
+     ],
+     [
+      120.4,
+      39.08
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.32
+     ],
+     [
+      23.6,
+      39.08
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_N_005": {
+   "file": "pteranodon_run_N_005.png",
+   "sha256": "f8b6c4761c666d691a7caf6c32820f67a3fa3c485b55cba1a3559a91b7c19275",
+   "bbox": [
+    22,
+    35,
+    122,
+    86
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      64.12
+     ],
+     [
+      23.6,
+      83.36
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      64.12
+     ],
+     [
+      120.4,
+      83.36
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_E_005": {
+   "file": "pteranodon_run_E_005.png",
+   "sha256": "c8d9337bae557e64db34bb824a8b92fd95246de5756f2a4b16b846fa520a1a9f",
+   "bbox": [
+    44,
+    21,
+    114,
+    103
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.76
+     ],
+     [
+      44.99,
+      21.53
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.68
+     ],
+     [
+      44.99,
+      100.91
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_run_W_005": {
+   "file": "pteranodon_run_W_005.png",
+   "sha256": "f88f52e0728c2a481a5f4d050d8a28d107a0e00b508bd5bcb0723399f1092f06",
+   "bbox": [
+    30,
+    21,
+    100,
+    103
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.68
+     ],
+     [
+      99.01,
+      100.91
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.76
+     ],
+     [
+      99.01,
+      21.53
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_S_000": {
+   "file": "pteranodon_attack_S_000.png",
+   "sha256": "fcfb3a0e88fe3b693767f3a48a227d44507a88e2d357463c8bb31a018381ab10",
+   "bbox": [
+    12,
+    53,
+    132,
+    99
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.07
+     ],
+     [
+      130.55,
+      57.86
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.07
+     ],
+     [
+      13.45,
+      57.86
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_N_000": {
+   "file": "pteranodon_attack_N_000.png",
+   "sha256": "2fa8ca97dbb814c4d73470b96929837d398fee2746a5d77c011f9ebfbbc2af80",
+   "bbox": [
+    12,
+    35,
+    132,
+    82
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.87
+     ],
+     [
+      13.45,
+      66.06
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.87
+     ],
+     [
+      130.55,
+      66.06
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_E_000": {
+   "file": "pteranodon_attack_E_000.png",
+   "sha256": "3106cb2ed983ba23f638f321ad41eef1827516eada1a7eb5ac9166f3271cb7f3",
+   "bbox": [
+    56,
+    14,
+    113,
+    112
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.51
+     ],
+     [
+      67.0,
+      13.95
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.43
+     ],
+     [
+      67.0,
+      109.96
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_W_000": {
+   "file": "pteranodon_attack_W_000.png",
+   "sha256": "ffdc93708be661e9e36a2fb0d328d400eafdcdbba94c0b30cf27d6e169f1da51",
+   "bbox": [
+    31,
+    14,
+    88,
+    112
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.43
+     ],
+     [
+      77.0,
+      109.96
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.51
+     ],
+     [
+      77.0,
+      13.95
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_S_001": {
+   "file": "pteranodon_attack_S_001.png",
+   "sha256": "15ae5218da467c9e6af3e3afbdc3e84316f36f729c651c8468c77f9649483ee6",
+   "bbox": [
+    18,
+    47,
+    126,
+    94
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      71.34
+     ],
+     [
+      124.87,
+      48.8
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      71.34
+     ],
+     [
+      19.13,
+      48.8
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_N_001": {
+   "file": "pteranodon_attack_N_001.png",
+   "sha256": "21b7ab2055db43929a3222970ec97cad92ed003152c116ec864621afae4fcbce",
+   "bbox": [
+    18,
+    36,
+    126,
+    83
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      64.52
+     ],
+     [
+      19.13,
+      67.56
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      64.52
+     ],
+     [
+      124.87,
+      67.56
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_E_001": {
+   "file": "pteranodon_attack_E_001.png",
+   "sha256": "e6f8da04d5df9b7c4c98b0756d10d21dee398292d0ed56f074011695d34033e8",
+   "bbox": [
+    54,
+    13,
+    109,
+    104
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      76.16,
+      65.47
+     ],
+     [
+      60.56,
+      14.83
+     ]
+    ],
+    "wing_R": [
+     [
+      76.16,
+      70.39
+     ],
+     [
+      60.56,
+      101.53
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_W_001": {
+   "file": "pteranodon_attack_W_001.png",
+   "sha256": "5e66ffe56403e5b089efa5a431a61cc750b76502d8ce55912356a8dca0239818",
+   "bbox": [
+    35,
+    13,
+    90,
+    104
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.84,
+      70.39
+     ],
+     [
+      83.44,
+      101.53
+     ]
+    ],
+    "wing_R": [
+     [
+      67.84,
+      65.47
+     ],
+     [
+      83.44,
+      14.83
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_S_002": {
+   "file": "pteranodon_attack_S_002.png",
+   "sha256": "7bf991f8b5291ae4c33d13b7000fe6d443c2b3194f4a5494a3634edffbf36a78",
+   "bbox": [
+    12,
+    53,
+    132,
+    100
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.07
+     ],
+     [
+      129.64,
+      56.86
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.07
+     ],
+     [
+      14.36,
+      56.86
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_N_002": {
+   "file": "pteranodon_attack_N_002.png",
+   "sha256": "246928c2a62edb84cbf896c4be5ab853dba331861417609a68721b9537e57118",
+   "bbox": [
+    12,
+    34,
+    132,
+    82
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.87
+     ],
+     [
+      14.36,
+      65.06
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.87
+     ],
+     [
+      129.64,
+      65.06
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_E_002": {
+   "file": "pteranodon_attack_E_002.png",
+   "sha256": "f9a3d59e8a31cab98217f7ab126775e8492818e20ccd81ca17720ff336b01e45",
+   "bbox": [
+    56,
+    13,
+    112,
+    110
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.51
+     ],
+     [
+      67.0,
+      13.7
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.43
+     ],
+     [
+      67.0,
+      108.23
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_W_002": {
+   "file": "pteranodon_attack_W_002.png",
+   "sha256": "11d877b3474ede29feb6035c651f17a542bd91cc09b25c9773ac6fed631861b3",
+   "bbox": [
+    32,
+    13,
+    88,
+    110
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.43
+     ],
+     [
+      77.0,
+      108.23
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.51
+     ],
+     [
+      77.0,
+      13.7
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_S_003": {
+   "file": "pteranodon_attack_S_003.png",
+   "sha256": "8479426cc7a8cd3da4baa732c3198860a9efbc1a6d110a764a8c0a2c23bd3210",
+   "bbox": [
+    11,
+    57,
+    133,
+    114
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      73.85
+     ],
+     [
+      131.8,
+      75.06
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      73.85
+     ],
+     [
+      12.2,
+      75.06
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_N_003": {
+   "file": "pteranodon_attack_N_003.png",
+   "sha256": "a30039567a01fdfa2de46d416cf27cf3abfc2e0be7f922a0e8fa406df0b9b8d7",
+   "bbox": [
+    11,
+    32,
+    133,
+    80
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      62.23
+     ],
+     [
+      12.2,
+      71.54
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      62.23
+     ],
+     [
+      131.8,
+      71.54
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_E_003": {
+   "file": "pteranodon_attack_E_003.png",
+   "sha256": "2313cecdfe75f5fe72dad353354f6c0d2fb980d4a961db4ef94fa9830bbe38e3",
+   "bbox": [
+    58,
+    24,
+    122,
+    123
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      79.09,
+      65.58
+     ],
+     [
+      74.15,
+      24.26
+     ]
+    ],
+    "wing_R": [
+     [
+      79.09,
+      70.5
+     ],
+     [
+      74.15,
+      122.34
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_W_003": {
+   "file": "pteranodon_attack_W_003.png",
+   "sha256": "45fe5aaaac0b317e5732678194f6f4af7b5640a4b0a49e215b1e1258ef61d07c",
+   "bbox": [
+    22,
+    24,
+    86,
+    123
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      64.91,
+      70.5
+     ],
+     [
+      69.85,
+      122.34
+     ]
+    ],
+    "wing_R": [
+     [
+      64.91,
+      65.58
+     ],
+     [
+      69.85,
+      24.26
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_S_004": {
+   "file": "pteranodon_attack_S_004.png",
+   "sha256": "1025d8bc404c1665d40e85ee1bb06881830bc674aff9da3fdaa021647614e444",
+   "bbox": [
+    10,
+    56,
+    134,
+    109
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.96
+     ],
+     [
+      132.66,
+      66.84
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.96
+     ],
+     [
+      11.34,
+      66.84
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_N_004": {
+   "file": "pteranodon_attack_N_004.png",
+   "sha256": "bb540843f3fe97152a658fc4ee39f7c16f23ebaf743acf1bf4b66566945cf1ad",
+   "bbox": [
+    10,
+    32,
+    134,
+    81
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.05
+     ],
+     [
+      11.34,
+      73.53
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.05
+     ],
+     [
+      132.66,
+      73.53
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_E_004": {
+   "file": "pteranodon_attack_E_004.png",
+   "sha256": "acebce0e872c53fd59e6e264e51a69757d01a600b84aee880172b8d123c9b24a",
+   "bbox": [
+    56,
+    20,
+    120,
+    121
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      78.04,
+      65.54
+     ],
+     [
+      67.92,
+      20.44
+     ]
+    ],
+    "wing_R": [
+     [
+      78.04,
+      70.46
+     ],
+     [
+      67.92,
+      119.93
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_W_004": {
+   "file": "pteranodon_attack_W_004.png",
+   "sha256": "cb42cc08de05800573a46b29e0d40cc069890d31c1a3d6b6dfcc48d3e53f10e0",
+   "bbox": [
+    24,
+    20,
+    88,
+    121
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      65.96,
+      70.46
+     ],
+     [
+      76.08,
+      119.93
+     ]
+    ],
+    "wing_R": [
+     [
+      65.96,
+      65.54
+     ],
+     [
+      76.08,
+      20.44
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_S_005": {
+   "file": "pteranodon_attack_S_005.png",
+   "sha256": "2892723c40ab81cf170e1e72c1349cba10c727910b50e1e5de212668421134c9",
+   "bbox": [
+    10,
+    55,
+    134,
+    103
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      72.07
+     ],
+     [
+      132.95,
+      62.99
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      72.07
+     ],
+     [
+      11.05,
+      62.99
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_N_005": {
+   "file": "pteranodon_attack_N_005.png",
+   "sha256": "a56e50ea0ec26dd9d500155518a758e396a6b64616f24d1efa7dfbbde1a7b2b0",
+   "bbox": [
+    10,
+    34,
+    134,
+    82
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      63.87
+     ],
+     [
+      11.05,
+      71.19
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      63.87
+     ],
+     [
+      132.95,
+      71.19
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_E_005": {
+   "file": "pteranodon_attack_E_005.png",
+   "sha256": "ff9617a3a401179bb5f8b72fc22b82218c6744851a44c0a12e5f07e58f47a473",
+   "bbox": [
+    56,
+    17,
+    116,
+    118
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      77.0,
+      65.51
+     ],
+     [
+      67.0,
+      17.11
+     ]
+    ],
+    "wing_R": [
+     [
+      77.0,
+      70.43
+     ],
+     [
+      67.0,
+      117.07
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_attack_W_005": {
+   "file": "pteranodon_attack_W_005.png",
+   "sha256": "b6cd2862f7cbf54fca2577972548c214fc4f3a93de425b438a7c78cbd820730d",
+   "bbox": [
+    28,
+    17,
+    88,
+    118
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      67.0,
+      70.43
+     ],
+     [
+      77.0,
+      117.07
+     ]
+    ],
+    "wing_R": [
+     [
+      67.0,
+      65.51
+     ],
+     [
+      77.0,
+      17.11
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_hurt_S_000": {
+   "file": "pteranodon_hurt_S_000.png",
+   "sha256": "e1fc8e4fba86f226175b702d6cc0845ce80fe7ee393526bef3324399c9f77b0f",
+   "bbox": [
+    18,
+    41,
+    126,
+    94
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      70.06
+     ],
+     [
+      123.32,
+      41.86
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      70.06
+     ],
+     [
+      20.68,
+      41.86
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_hurt_N_000": {
+   "file": "pteranodon_hurt_N_000.png",
+   "sha256": "9dccd01cce9937209e4aa61587e056cee282ab5df11dc9708f426b02bea35837",
+   "bbox": [
+    19,
+    36,
+    125,
+    85
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      65.67
+     ],
+     [
+      20.68,
+      77.01
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      65.67
+     ],
+     [
+      123.32,
+      77.01
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_hurt_E_000": {
+   "file": "pteranodon_hurt_E_000.png",
+   "sha256": "2c226a0f65e1a8e07678a277128818b4f27ddd37e7f91b1a7bcec038062c2e81",
+   "bbox": [
+    48,
+    16,
+    107,
+    103
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      74.68,
+      65.4
+     ],
+     [
+      50.57,
+      17.35
+     ]
+    ],
+    "wing_R": [
+     [
+      74.68,
+      70.32
+     ],
+     [
+      50.57,
+      101.52
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_hurt_W_000": {
+   "file": "pteranodon_hurt_W_000.png",
+   "sha256": "7cf758aeae58a72469a7cf1cf323b918c447ed06df99b515a45e911ece00440e",
+   "bbox": [
+    37,
+    16,
+    96,
+    103
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.32,
+      70.32
+     ],
+     [
+      93.43,
+      101.52
+     ]
+    ],
+    "wing_R": [
+     [
+      69.32,
+      65.4
+     ],
+     [
+      93.43,
+      17.35
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_hurt_S_001": {
+   "file": "pteranodon_hurt_S_001.png",
+   "sha256": "4497a337853bcf770bd6076428763968dc01c14b2c97f927a9f837e9731d6cc3",
+   "bbox": [
+    13,
+    49,
+    131,
+    98
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.0,
+      71.06
+     ],
+     [
+      129.63,
+      52.02
+     ]
+    ],
+    "wing_R": [
+     [
+      69.0,
+      71.06
+     ],
+     [
+      14.37,
+      52.02
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_hurt_N_001": {
+   "file": "pteranodon_hurt_N_001.png",
+   "sha256": "0f6f916250f055f48daf8b1894b2f31b03207bd10e975aa3c568bb29758d9e9e",
+   "bbox": [
+    13,
+    35,
+    131,
+    84
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      69.0,
+      64.76
+     ],
+     [
+      14.37,
+      74.17
+     ]
+    ],
+    "wing_R": [
+     [
+      75.0,
+      64.76
+     ],
+     [
+      129.63,
+      74.17
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_hurt_E_001": {
+   "file": "pteranodon_hurt_E_001.png",
+   "sha256": "3c6fc8c1185bbafd358867cb79ad51779e8ed8e101e9cb438d6ecff308fdf548",
+   "bbox": [
+    53,
+    15,
+    112,
+    113
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      75.84,
+      65.45
+     ],
+     [
+      58.49,
+      15.84
+     ]
+    ],
+    "wing_R": [
+     [
+      75.84,
+      70.37
+     ],
+     [
+      58.49,
+      110.35
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_hurt_W_001": {
+   "file": "pteranodon_hurt_W_001.png",
+   "sha256": "362e0d3b7f9083434cd3c04820fd300d852ee42cf1c40eb727e998c017f45a8a",
+   "bbox": [
+    32,
+    15,
+    91,
+    113
+   ],
+   "joints": {
+    "wing_L": [
+     [
+      68.16,
+      70.37
+     ],
+     [
+      85.51,
+      110.35
+     ]
+    ],
+    "wing_R": [
+     [
+      68.16,
+      65.45
+     ],
+     [
+      85.51,
+      15.84
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "pteranodon_death_S_000": {
+   "file": "pteranodon_death_S_000.png",
+   "sha256": "db2dcebb16525014fd37cb9c019c8ae197e0803b3d7c72dd4037fbd936c09b76",
+   "bbox": [
+    10,
+    55,
+    134,
+    102
+   ]
+  },
+  "pteranodon_death_N_000": {
+   "file": "pteranodon_death_N_000.png",
+   "sha256": "93f916a00cefcb57891952c2b9291a2e400324a025c024044e6205580f37fe49",
+   "bbox": [
+    10,
+    35,
+    134,
+    82
+   ]
+  },
+  "pteranodon_death_E_000": {
+   "file": "pteranodon_death_E_000.png",
+   "sha256": "072b68ca69fbe9de71d2fb79f44ae8f510a5bffbb462d701dfcc4bd0a59fe09a",
+   "bbox": [
+    56,
+    17,
+    113,
+    118
+   ]
+  },
+  "pteranodon_death_W_000": {
+   "file": "pteranodon_death_W_000.png",
+   "sha256": "e8536f9345c1177bc3ad368e48636fd1d4e41fd1aaf51b70d585bc9077e1358a",
+   "bbox": [
+    31,
+    17,
+    88,
+    118
+   ]
+  },
+  "pteranodon_death_S_001": {
+   "file": "pteranodon_death_S_001.png",
+   "sha256": "1883e26960c5539aa5eef2e55188fd3443aed8f45b2af4a752d6ba257309386d",
+   "bbox": [
+    11,
+    54,
+    133,
+    101
+   ]
+  },
+  "pteranodon_death_N_001": {
+   "file": "pteranodon_death_N_001.png",
+   "sha256": "1185bba5744bdd2c552b2494aaa2d4fd26c1825cb550719a77ffdd3c2d771452",
+   "bbox": [
+    11,
+    34,
+    133,
+    82
+   ]
+  },
+  "pteranodon_death_E_001": {
+   "file": "pteranodon_death_E_001.png",
+   "sha256": "47140ab3bbbc916b025debdcdcee69f7db69b2e95952db3f03d86a06084c8428",
+   "bbox": [
+    55,
+    18,
+    115,
+    118
+   ]
+  },
+  "pteranodon_death_W_001": {
+   "file": "pteranodon_death_W_001.png",
+   "sha256": "b633bd7eec888e302e3bc4abba1a26ac010d98e7762de0ab237b72cc7b9d5f4f",
+   "bbox": [
+    29,
+    18,
+    89,
+    118
+   ]
+  },
+  "pteranodon_death_S_002": {
+   "file": "pteranodon_death_S_002.png",
+   "sha256": "67b650a775168f9ff5f3c91973e1b7ccc60bb9e62afcdb1472ec006c7ca628bc",
+   "bbox": [
+    16,
+    48,
+    128,
+    99
+   ]
+  },
+  "pteranodon_death_N_002": {
+   "file": "pteranodon_death_N_002.png",
+   "sha256": "c9079e7bb7023bd1c6d6f7d2c2072bae142c98e1b759f432018fc1f2529be8b4",
+   "bbox": [
+    16,
+    33,
+    128,
+    88
+   ]
+  },
+  "pteranodon_death_E_002": {
+   "file": "pteranodon_death_E_002.png",
+   "sha256": "b765cb7ccdcdf42dcfb8207225010f6cd4ed60ea2d51515b046814fc65b52551",
+   "bbox": [
+    48,
+    22,
+    114,
+    115
+   ]
+  },
+  "pteranodon_death_W_002": {
+   "file": "pteranodon_death_W_002.png",
+   "sha256": "deb1de28b48290edb59f5390829f21661ae431156b2372b9a25491493b2f6448",
+   "bbox": [
+    30,
+    22,
+    96,
+    115
+   ]
+  },
+  "pteranodon_death_S_003": {
+   "file": "pteranodon_death_S_003.png",
+   "sha256": "26c08c54e25926a234f34158ee9af9d402d2a4dd16ca6e2c5622d406d90c6e01",
+   "bbox": [
+    25,
+    39,
+    119,
+    97
+   ]
+  },
+  "pteranodon_death_N_003": {
+   "file": "pteranodon_death_N_003.png",
+   "sha256": "ce9787c3d1c9213934db84785a59ccde8925e3eb3c3f7a5297841f71255ef5e0",
+   "bbox": [
+    25,
+    33,
+    119,
+    100
+   ]
+  },
+  "pteranodon_death_E_003": {
+   "file": "pteranodon_death_E_003.png",
+   "sha256": "68f18dedbc219b91d345c31168887c7b3c91fdb670ff9041beb69c2c19cd1631",
+   "bbox": [
+    35,
+    31,
+    113,
+    108
+   ]
+  },
+  "pteranodon_death_W_003": {
+   "file": "pteranodon_death_W_003.png",
+   "sha256": "e2ac02c65d2cf7fc245b064a77ea8f5f2da6a2ef200ef7e59071865306cd1d3f",
+   "bbox": [
+    31,
+    31,
+    109,
+    108
+   ]
+  },
+  "pteranodon_death_S_004": {
+   "file": "pteranodon_death_S_004.png",
+   "sha256": "52f38c54cd8b1f2d85dce90d58e35e3a7cb3d7d02b6f6e99efff5c19bf653ae6",
+   "bbox": [
+    35,
+    33,
+    109,
+    95
+   ]
+  },
+  "pteranodon_death_N_004": {
+   "file": "pteranodon_death_N_004.png",
+   "sha256": "ecff2f8ea79ef1ac5f35ec2b59fe92fba20c041655f4a3cbc5f56a6f0c365a20",
+   "bbox": [
+    35,
+    32,
+    109,
+    108
+   ]
+  },
+  "pteranodon_death_E_004": {
+   "file": "pteranodon_death_E_004.png",
+   "sha256": "d3ea7699437518b1b2b2cfe98df4b5dd2e8d621de585d9aced1220eb3ab40c2d",
+   "bbox": [
+    27,
+    40,
+    112,
+    101
+   ]
+  },
+  "pteranodon_death_W_004": {
+   "file": "pteranodon_death_W_004.png",
+   "sha256": "a17578af1a6578013c3dab3d00c9b398ce6323d6a774f019f17bbec6b48fd378",
+   "bbox": [
+    32,
+    40,
+    117,
+    101
+   ]
+  },
+  "pteranodon_death_S_005": {
+   "file": "pteranodon_death_S_005.png",
+   "sha256": "ec4d94c74b62db9b1d4163e7062167f963890d0c3ecdd640af537529ee109755",
+   "bbox": [
+    40,
+    31,
+    104,
+    94
+   ]
+  },
+  "pteranodon_death_N_005": {
+   "file": "pteranodon_death_N_005.png",
+   "sha256": "b5b41f8800e8bcdb0b7e7c760f548c2b5d8964d1e8aaf51f51c74e0626955b3f",
+   "bbox": [
+    40,
+    33,
+    104,
+    110
+   ]
+  },
+  "pteranodon_death_E_005": {
+   "file": "pteranodon_death_E_005.png",
+   "sha256": "cf64505453116459a08e1b0e90c735b56cd3e6bfc19eff2e91b49c830756915a",
+   "bbox": [
+    24,
+    44,
+    109,
+    97
+   ]
+  },
+  "pteranodon_death_W_005": {
+   "file": "pteranodon_death_W_005.png",
+   "sha256": "2d8b618aca5dd6a0719b64b33e7bbd20d2391dd916bdcf79b825fc803624e747",
+   "bbox": [
+    35,
+    44,
+    120,
+    97
+   ]
+  }
+ }
+}

@@ -73,3 +73,111 @@ test('validator passes the rig and rejects static legs', () => {
   assert.match(r.stdout, /better than their own frame/);
   assert.match(r.stdout, /legs and tail look frozen/);
 });
+
+test('rigSprites: every RIG_SPECIES has its 120 rig frames in the game, byte-identical to a fresh render', () => {
+  const C = require('../PRIMAL_RUN_Game/src/core.js');
+  const game = path.join(ROOT, 'PRIMAL_RUN_Game');
+  const manifest = JSON.parse(fs.readFileSync(path.join(game, 'rig_full_manifest.json'), 'utf8'));
+  const assets = fs.readFileSync(path.join(game, 'src/assets.js'), 'utf8');
+  for (const id of C.RIG_SPECIES) {
+    assert.ok(C.STATIC_SPECIES.has(id), id + ' keeps its WIP badge until the art is approved');
+    const files = manifest.filter((e) => e.species === id);
+    assert.equal(files.length, 120, id);
+    for (const e of files) {
+      if (e.approval) {  // Jonas approved this cutout's animation (approval.json next to its parts)
+        assert.equal(e.status, 'approved_animation');
+        assert.equal(e.production_approved, true);
+      } else {
+        assert.equal(e.status, 'prototype_static');
+        assert.equal(e.production_approved, false);
+      }
+      assert.ok(fs.existsSync(path.join(game, e.file)), e.file);
+      assert.ok(assets.includes('"' + e.file + '"'), 'not built into src/assets.js: ' + e.file);
+    }
+    assert.equal(C.playerFrame(id, 'walk', 'E', 3), `assets/rig_full/${id}_walk_E_003.png`);
+  }
+  // rexCutout: T-rex is an original species, so it gets the cutout frames by its own flag, not the WIP badge
+  const rex = manifest.filter((e) => e.species === 'tyrannosaurus');
+  assert.equal(rex.length, 120);
+  assert.ok(rex.every((e) => e.status === 'prototype_static' && e.production_approved === false && assets.includes('"' + e.file + '"')));
+  assert.ok(!C.STATIC_SPECIES.has('tyrannosaurus'));
+  assert.equal(C.playerFrame('tyrannosaurus', 'death', 'W', 5), 'assets/rig_full/tyrannosaurus_death_W_005.png');
+  const {out} = render('leaellynasaura', 'walk,attack');
+  for (const name of ['leaellynasaura_walk_E_003.png', 'leaellynasaura_attack_N_003.png'])
+    assert.deepEqual(fs.readFileSync(path.join(out, name)), fs.readFileSync(path.join(game, 'assets/rig_full', name)), name);
+});
+
+test('paint transfer: four painted poses colour every frame and still pass the rig check', () => {
+  const {out} = render('leaellynasaura', 'walk,attack');
+  const tpl = path.join(tmp, 'tpl'), painted = path.join(tmp, 'painted');
+  let r = run(['tools/rig_paint_transfer.py', '--species', 'leaellynasaura', '--templates', tpl]);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  // repaint: every body pixel becomes palette red #913b32, the outline stays
+  r = run(['-c', `import sys,numpy as np;from PIL import Image;from pathlib import Path
+src,dst=Path(sys.argv[1]),Path(sys.argv[2]);dst.mkdir(exist_ok=True)
+for f in src.glob('*.png'):
+    a=np.array(Image.open(f));b=(a[...,3]>0)&~np.all(a[...,:3]==(21,27,25),axis=-1);a[b,:3]=(145,59,50);Image.fromarray(a).save(dst/f.name)`, tpl, painted]);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  const frames = path.join(tmp, 'painted_out');
+  r = run(['tools/rig_paint_transfer.py', '--species', 'leaellynasaura', '--paint', painted, '--states', 'walk', '--out', frames]);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  assert.match(r.stdout, /24 frames/);
+  r = run(['tools/validate_rig_frames.py', '--species', 'leaellynasaura', '--frames', frames, '--rig', out, '--states', 'walk']);
+  assert.equal(r.status, 0, r.stdout);
+  r = run(['-c', `import sys,numpy as np;from PIL import Image
+a=np.array(Image.open(sys.argv[1]));b=(a[...,3]>0)&~np.all(a[...,:3]==(21,27,25),axis=-1);print(round(float(np.all(a[b][:,:3]==(145,59,50),axis=-1).mean()),3))`,
+    path.join(frames, 'leaellynasaura_walk_E_003.png')]);
+  assert.ok(Number(r.stdout) > 0.95, 'painted share ' + r.stdout);
+});
+
+test('cutout rig: parts cut from the model move with the rig and pass the rig check outside death', () => {
+  const {out} = render('oviraptor', 'walk,attack');
+  const parts = path.join(tmp, 'cutout_parts'), frames = path.join(tmp, 'cutout_frames');
+  let r = run(['tools/cutout_rig.py', '--species', 'oviraptor', '--template', parts]);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  r = run(['tools/cutout_rig.py', '--species', 'oviraptor', '--parts', parts, '--out', frames, '--states', 'walk,attack']);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  assert.match(r.stdout, /48 frames/);
+  r = run(['tools/validate_rig_frames.py', '--species', 'oviraptor', '--frames', frames, '--rig', out, '--states', 'walk,attack']);
+  assert.equal(r.status, 0, r.stdout);
+  // a part off the palette is refused
+  r = run(['-c', `import sys,numpy as np;from PIL import Image
+p=sys.argv[1];a=np.array(Image.open(p));a[a[...,3]>0,:3]=(1,2,3);Image.fromarray(a).save(p)`,
+    path.join(parts, 'oviraptor_E_head.png')]);
+  assert.equal(r.status, 0, r.stderr);
+  r = run(['tools/cutout_rig.py', '--species', 'oviraptor', '--parts', parts, '--out', frames, '--states', 'idle']);
+  assert.notEqual(r.status, 0);
+  assert.match(r.stderr + r.stdout, /outside Primal Earth 32/);
+});
+
+test('cutout rig: four legs, wings and a borrowed motion get their own parts', () => {
+  const parts = (sid) => JSON.parse(fs.readFileSync(path.join(tmp, 'cut_' + sid, sid + '_parts.json'), 'utf8')).directions.E.parts;
+  for (const sid of ['stegosaurus', 'pteranodon', 'allosaurus']) {
+    const r = run(['tools/cutout_rig.py', '--species', sid, '--template', path.join(tmp, 'cut_' + sid)]);
+    assert.equal(r.status, 0, r.stderr || r.stdout);
+  }
+  assert.ok(['thigh_L', 'shin_L', 'upperarm_L', 'forearm_R'].every((n) => n in parts('stegosaurus')), Object.keys(parts('stegosaurus')).join());
+  assert.ok('wing_L' in parts('pteranodon') && !('thigh_L' in parts('pteranodon')));
+  // T-rex has no 3D model: its drawn parts move with the Allosaurus motion
+  const src = path.join(tmp, 'cut_allosaurus'), rex = path.join(tmp, 'cut_rex');
+  fs.mkdirSync(rex);
+  for (const f of fs.readdirSync(src)) fs.copyFileSync(path.join(src, f), path.join(rex, f.replace('allosaurus', 'tyrannosaurus')));
+  let r = run(['tools/cutout_rig.py', '--species', 'tyrannosaurus', '--parts', rex, '--out', path.join(tmp, 'rex_frames'), '--states', 'walk']);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  assert.match(r.stdout, /24 frames/);
+  const rig = JSON.parse(fs.readFileSync(path.join(tmp, 'rex_frames', 'tyrannosaurus_cutout.json'), 'utf8'));
+  assert.equal(rig.motion, 'allosaurus');
+  assert.ok(Math.abs(rig.motion_gain - 1) < 0.15, 'same legs, same stride: ' + rig.motion_gain);
+  r = run(['tools/cutout_rig.py', '--species', 'tyrannosaurus', '--template', path.join(tmp, 'rex_tpl')]);
+  assert.notEqual(r.status, 0);
+});
+
+test('cutout approval only holds for the exact parts Jonas saw', () => {
+  const game = path.join(ROOT, 'PRIMAL_RUN_Game');
+  const manifest = JSON.parse(fs.readFileSync(path.join(game, 'rig_full_manifest.json'), 'utf8'));
+  const approved = manifest.filter((e) => e.status === 'approved_animation');
+  assert.deepEqual([...new Set(approved.map((e) => e.species))], ['iguanodon']);
+  const r = run(['-c', "import sys; sys.path.insert(0, 'tools'); from pathlib import Path; import rig_to_game as R; "
+    + "f = Path('PRIMAL_RUN_Game/Source_Generated/cutout/iguanodon'); print(R.approval(f, 'iguanodon') is not None)"]);
+  assert.equal(r.stdout.trim(), 'True', r.stdout + r.stderr);
+});

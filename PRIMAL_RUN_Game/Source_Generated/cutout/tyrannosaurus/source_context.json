@@ -1,0 +1,90 @@
+{
+  "base_branch": "claude/project-thread-klzsxf",
+  "base_commit": "1eb6680f33721f6d6fa88bb05c06e4ad94b04a7e",
+  "brief_blob": "de495068f60f3af864125b53b88d3fab3d21989e",
+  "template_command": "python tools/cutout_rig.py --species allosaurus --template /tmp/tyrannosaurus-SKABELON",
+  "reference_files": {
+    "S": {
+      "path": "PRIMAL_RUN_Game/assets/enemy_full/tyrannosaurus_idle_S_000.png",
+      "sha256": "2cad87251d9d847860a4389209f15f532d3eaac67c9273de6e6d796e068b3525",
+      "reference_canvas": [
+        144,
+        144
+      ],
+      "reference_bbox": [
+        61,
+        24,
+        104,
+        118
+      ],
+      "cutout_bbox": [
+        52,
+        22,
+        92,
+        122
+      ]
+    },
+    "N": {
+      "path": "PRIMAL_RUN_Game/assets/enemy_full/tyrannosaurus_idle_N_000.png",
+      "sha256": "813868e83b0ec6cd32b0d75925d76c53389961d0569c22fd5d771612b3c01d51",
+      "reference_canvas": [
+        144,
+        144
+      ],
+      "reference_bbox": [
+        51,
+        29,
+        93,
+        130
+      ],
+      "cutout_bbox": [
+        51,
+        15,
+        94,
+        122
+      ]
+    },
+    "E": {
+      "path": "PRIMAL_RUN_Game/assets/enemy_full/tyrannosaurus_idle_E_000.png",
+      "sha256": "243e120135282bccb7f4b9e7bc1e0930947cfd9714e8eb8a5223eb9782b1946b",
+      "reference_canvas": [
+        144,
+        144
+      ],
+      "reference_bbox": [
+        12,
+        48,
+        138,
+        112
+      ],
+      "cutout_bbox": [
+        17,
+        55,
+        131,
+        92
+      ]
+    },
+    "W": {
+      "path": "PRIMAL_RUN_Game/assets/enemy_full/tyrannosaurus_idle_W_000.png",
+      "sha256": "78136382063a49ad9dc1fc58b08167aca25f47a5bc46f8dbbb7b1b768d33db36",
+      "reference_canvas": [
+        144,
+        144
+      ],
+      "reference_bbox": [
+        18,
+        33,
+        137,
+        103
+      ],
+      "cutout_bbox": [
+        13,
+        55,
+        126,
+        94
+      ]
+    }
+  },
+  "status": "prototype_static",
+  "visual_status": "unapproved"
+}

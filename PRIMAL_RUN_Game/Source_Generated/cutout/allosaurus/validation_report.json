@@ -1,0 +1,227 @@
+{
+  "status": "PASS",
+  "scope": "rest-pose cutout files only",
+  "art_status": "prototype_static",
+  "visual_approval": "pending Jonas",
+  "animation_frames_created": 0,
+  "runtime_tested": false,
+  "checks": [
+    "64 native RGBA PNGs, 144x144",
+    "Primal Earth 32 only",
+    "binary alpha and zero transparent RGB",
+    "2px transparent margins",
+    "four 15-part hierarchies and orders",
+    "all body pivots at 72,72",
+    "all pivots and tips opaque in their own part",
+    "all child pivots opaque in parent, with overlapping joint surfaces",
+    "child chain pivots equal parent tips",
+    "exact ordered compositing",
+    "W differs from mirrored E",
+    "source SHA-256 provenance"
+  ],
+  "directions": {
+    "S": {
+      "parts": 15,
+      "full_sha256": "11b2822998efa89989ddd45c23b8915e39aaf3820cf331c0037254481ceeb718",
+      "joints": {
+        "neck": {
+          "overlapping_pixels": 113
+        },
+        "head": {
+          "overlapping_pixels": 93
+        },
+        "jaw": {
+          "overlapping_pixels": 59
+        },
+        "tail1": {
+          "overlapping_pixels": 62
+        },
+        "tail2": {
+          "overlapping_pixels": 56
+        },
+        "tail3": {
+          "overlapping_pixels": 38
+        },
+        "thigh_L": {
+          "overlapping_pixels": 73
+        },
+        "shin_L": {
+          "overlapping_pixels": 5
+        },
+        "foot_L": {
+          "overlapping_pixels": 5
+        },
+        "thigh_R": {
+          "overlapping_pixels": 64
+        },
+        "shin_R": {
+          "overlapping_pixels": 7
+        },
+        "foot_R": {
+          "overlapping_pixels": 6
+        },
+        "arm_L": {
+          "overlapping_pixels": 5
+        },
+        "arm_R": {
+          "overlapping_pixels": 11
+        }
+      }
+    },
+    "N": {
+      "parts": 15,
+      "full_sha256": "0fe8f70cce44903d9cbb9db2534cf1911996b9a93bf1f66606ce45a953428bef",
+      "joints": {
+        "neck": {
+          "overlapping_pixels": 97
+        },
+        "head": {
+          "overlapping_pixels": 61
+        },
+        "jaw": {
+          "overlapping_pixels": 96
+        },
+        "tail1": {
+          "overlapping_pixels": 97
+        },
+        "tail2": {
+          "overlapping_pixels": 42
+        },
+        "tail3": {
+          "overlapping_pixels": 27
+        },
+        "thigh_L": {
+          "overlapping_pixels": 61
+        },
+        "shin_L": {
+          "overlapping_pixels": 11
+        },
+        "foot_L": {
+          "overlapping_pixels": 13
+        },
+        "thigh_R": {
+          "overlapping_pixels": 62
+        },
+        "shin_R": {
+          "overlapping_pixels": 6
+        },
+        "foot_R": {
+          "overlapping_pixels": 12
+        },
+        "arm_L": {
+          "overlapping_pixels": 63
+        },
+        "arm_R": {
+          "overlapping_pixels": 67
+        }
+      }
+    },
+    "E": {
+      "parts": 15,
+      "full_sha256": "f7014737ad877845b7f3d4b1d476df9aef8a1f8b7ea249e0045448491617c7b3",
+      "joints": {
+        "neck": {
+          "overlapping_pixels": 203
+        },
+        "head": {
+          "overlapping_pixels": 107
+        },
+        "jaw": {
+          "overlapping_pixels": 58
+        },
+        "tail1": {
+          "overlapping_pixels": 67
+        },
+        "tail2": {
+          "overlapping_pixels": 71
+        },
+        "tail3": {
+          "overlapping_pixels": 43
+        },
+        "thigh_L": {
+          "overlapping_pixels": 157
+        },
+        "shin_L": {
+          "overlapping_pixels": 13
+        },
+        "foot_L": {
+          "overlapping_pixels": 10
+        },
+        "thigh_R": {
+          "overlapping_pixels": 129
+        },
+        "shin_R": {
+          "overlapping_pixels": 17
+        },
+        "foot_R": {
+          "overlapping_pixels": 8
+        },
+        "arm_L": {
+          "overlapping_pixels": 32
+        },
+        "arm_R": {
+          "overlapping_pixels": 52
+        }
+      }
+    },
+    "W": {
+      "parts": 15,
+      "full_sha256": "d16aab81e98124960d513294d9644616fc2d405ca35dddc7ed385b9f6f749105",
+      "joints": {
+        "neck": {
+          "overlapping_pixels": 132
+        },
+        "head": {
+          "overlapping_pixels": 125
+        },
+        "jaw": {
+          "overlapping_pixels": 102
+        },
+        "tail1": {
+          "overlapping_pixels": 196
+        },
+        "tail2": {
+          "overlapping_pixels": 94
+        },
+        "tail3": {
+          "overlapping_pixels": 59
+        },
+        "thigh_R": {
+          "overlapping_pixels": 218
+        },
+        "shin_R": {
+          "overlapping_pixels": 20
+        },
+        "foot_R": {
+          "overlapping_pixels": 6
+        },
+        "thigh_L": {
+          "overlapping_pixels": 174
+        },
+        "shin_L": {
+          "overlapping_pixels": 24
+        },
+        "foot_L": {
+          "overlapping_pixels": 8
+        },
+        "arm_R": {
+          "overlapping_pixels": 33
+        },
+        "arm_L": {
+          "overlapping_pixels": 70
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "sources/continuous.png": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2",
+    "sources/S.png": "c71a542b9bfee28f9f2d9aa0ef489886d6422fa662a682011935dc60c47f16b6",
+    "sources/limbs.png": "63f7edd8c524734c10941bd567fb1d6a556a644d39091e540f2974a2cecc47e0",
+    "sources/N.png": "2088c571e3a17eab83e0a75aeff1f363960f0e959d9f40d7219bfaf448578787",
+    "sources/corrections.png": "a6b6acfdf6427c868717b0ee772baf6cca0206d72fa162a58c3b8ecc06f791fd",
+    "sources/E.png": "a9954be0e1efe71c378e2ba1c0b7f361f3caad2b548b8e0c68df0b179fead4b5",
+    "sources/east_first.png": "346ea20822e68dee8bf73139a3aa24241a8e5b780a6a78c7203cd5658364120a",
+    "sources/W.png": "9ca6cef59b1d5b27fd82547b4645c87178f32540286e3ff5d0fc6132b8750e37"
+  },
+  "native_png_count": 64
+}

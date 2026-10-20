@@ -1,0 +1,5305 @@
+{
+ "species": "therizinosaurus",
+ "canvas": [
+  144,
+  144
+ ],
+ "origin": [
+  72,
+  72
+ ],
+ "model_scale": 1.0,
+ "visual_scale": 1,
+ "camera": {
+  "image_x": "x",
+  "image_up": "0.82*y + 0.36*z",
+  "light": [
+   -0.4915,
+   0.4129,
+   0.7668
+  ],
+  "note": "Same fixed overhead camera and light for every direction; each direction is its own render."
+ },
+ "skeleton": {
+  "locomotion": "legs",
+  "quadruped": false,
+  "hip_height": 12.0,
+  "chains": [
+   "hind_L",
+   "hind_R"
+  ],
+  "attack_style": "claws"
+ },
+ "states": {
+  "idle": {
+   "frames": 4,
+   "fps": 4,
+   "loop": true,
+   "contact_frame": null
+  },
+  "walk": {
+   "frames": 6,
+   "fps": 8,
+   "loop": true,
+   "contact_frame": null
+  },
+  "run": {
+   "frames": 6,
+   "fps": 12,
+   "loop": true,
+   "contact_frame": null
+  },
+  "attack": {
+   "frames": 6,
+   "fps": 12,
+   "loop": false,
+   "contact_frame": 3
+  },
+  "hurt": {
+   "frames": 2,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  },
+  "death": {
+   "frames": 6,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  }
+ },
+ "frames": {
+  "therizinosaurus_idle_S_000": {
+   "file": "therizinosaurus_idle_S_000.png",
+   "sha256": "a4d7c2f6daf3b277ec195901e2a248ed0d602d24d42dc20614fa05eab7c1bf64",
+   "bbox": [
+    45,
+    23,
+    99,
+    113
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.68
+     ],
+     [
+      91.2,
+      74.86
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.68
+     ],
+     [
+      52.8,
+      74.86
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_N_000": {
+   "file": "therizinosaurus_idle_N_000.png",
+   "sha256": "7b27822d971e3d52bc74a80cfee8813b7d93ecb34b243c8d41e0c7a6bf664a75",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.68
+     ],
+     [
+      52.8,
+      63.38
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.68
+     ],
+     [
+      91.2,
+      63.38
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_E_000": {
+   "file": "therizinosaurus_idle_E_000.png",
+   "sha256": "9b1aa89c5b0857337fdc2bea63eb186a2311dbd372c50860635fd7b2d1726545",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.81
+     ],
+     [
+      79.0,
+      53.38
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.55
+     ],
+     [
+      79.0,
+      84.86
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_W_000": {
+   "file": "therizinosaurus_idle_W_000.png",
+   "sha256": "c2354e8964b519d9c181e97ae2d1404a0fbf4d8dc3aff6f19a3c14644527ec54",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.55
+     ],
+     [
+      65.0,
+      84.86
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.81
+     ],
+     [
+      65.0,
+      53.38
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_S_001": {
+   "file": "therizinosaurus_idle_S_001.png",
+   "sha256": "d7287996ffb55dd727ad9adf9d7b5f52c98e0e31f03d2b1a8a9821ec09f26597",
+   "bbox": [
+    45,
+    23,
+    99,
+    113
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.74
+     ],
+     [
+      91.2,
+      74.94
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.74
+     ],
+     [
+      52.8,
+      74.94
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_N_001": {
+   "file": "therizinosaurus_idle_N_001.png",
+   "sha256": "0d3443c5c364ebd83a939fa984ce30b9fe61507a379db605f1bc84bbf75c3cb6",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.74
+     ],
+     [
+      52.8,
+      63.35
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.74
+     ],
+     [
+      91.2,
+      63.35
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_E_001": {
+   "file": "therizinosaurus_idle_E_001.png",
+   "sha256": "7cecf9437612401a1bd06cd323fa4dc478d2e12c79f093f1cf7f2263e2ef4912",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.87
+     ],
+     [
+      79.07,
+      53.4
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.62
+     ],
+     [
+      79.07,
+      84.89
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_W_001": {
+   "file": "therizinosaurus_idle_W_001.png",
+   "sha256": "30259534e819b727a6c19d1b3df8d66288d05cd181847836391305d820589c39",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.62
+     ],
+     [
+      64.93,
+      84.89
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.87
+     ],
+     [
+      64.93,
+      53.4
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_S_002": {
+   "file": "therizinosaurus_idle_S_002.png",
+   "sha256": "cc8c508c947992bc0c210235625026e8fe7e712abae15d1c4a4a5adf128eb2fd",
+   "bbox": [
+    45,
+    23,
+    99,
+    111
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.81
+     ],
+     [
+      91.2,
+      75.01
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.81
+     ],
+     [
+      52.8,
+      75.01
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_N_002": {
+   "file": "therizinosaurus_idle_N_002.png",
+   "sha256": "cc05c16280af8e542b32f598ec297d9fa499498cd8657c83279561f373a101a7",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.81
+     ],
+     [
+      52.8,
+      63.32
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.81
+     ],
+     [
+      91.2,
+      63.32
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_E_002": {
+   "file": "therizinosaurus_idle_E_002.png",
+   "sha256": "ae54976df63b4db451063a00e532ff67d5b88d2bfa3902faa50219cf36f5432b",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.94
+     ],
+     [
+      79.13,
+      53.42
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.68
+     ],
+     [
+      79.13,
+      84.91
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_W_002": {
+   "file": "therizinosaurus_idle_W_002.png",
+   "sha256": "f77327a206e9557adc7313d4c65f5a3a4d1ed6e0ae77fe7a3f23d5b887feb4e0",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.68
+     ],
+     [
+      64.87,
+      84.91
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.94
+     ],
+     [
+      64.87,
+      53.42
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_S_003": {
+   "file": "therizinosaurus_idle_S_003.png",
+   "sha256": "d5afe87de8e07504b46f4f9cd5a0edd2f090eee56cae3ca86d1eda8902cfeea4",
+   "bbox": [
+    45,
+    23,
+    99,
+    113
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.74
+     ],
+     [
+      91.2,
+      74.94
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.74
+     ],
+     [
+      52.8,
+      74.94
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_N_003": {
+   "file": "therizinosaurus_idle_N_003.png",
+   "sha256": "ea4b8cb2326c754a8ccf24ec22be117d9f063deee3ca4dddefda6e3b06e54b21",
+   "bbox": [
+    45,
+    19,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.74
+     ],
+     [
+      52.8,
+      63.35
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.74
+     ],
+     [
+      91.2,
+      63.35
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_E_003": {
+   "file": "therizinosaurus_idle_E_003.png",
+   "sha256": "99f66c69f849a744d13eaf8ca6a274e4dae306bc730e45380469770d0e3c1a61",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.87
+     ],
+     [
+      79.07,
+      53.4
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.62
+     ],
+     [
+      79.07,
+      84.89
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_idle_W_003": {
+   "file": "therizinosaurus_idle_W_003.png",
+   "sha256": "c08b308a8fe015e38a7bdbe09e8328380d32220d7774f54424db8526749b85f4",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.62
+     ],
+     [
+      64.93,
+      84.89
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.87
+     ],
+     [
+      64.93,
+      53.4
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_S_000": {
+   "file": "therizinosaurus_walk_S_000.png",
+   "sha256": "37103dd25199b548fe7edce2b06bc8a827cde2633ac5495698c05301dc84b710",
+   "bbox": [
+    45,
+    23,
+    99,
+    113
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      68.03
+     ],
+     [
+      91.2,
+      75.06
+     ],
+     [
+      93.0,
+      78.63
+     ],
+     [
+      94.2,
+      83.93
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      68.03
+     ],
+     [
+      52.8,
+      74.3
+     ],
+     [
+      51.0,
+      69.5
+     ],
+     [
+      49.8,
+      74.8
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_N_000": {
+   "file": "therizinosaurus_walk_N_000.png",
+   "sha256": "ffa6f8171fd912b8e1c94623c8274adfe409917eeeafdcbf240e40d9922cb679",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      68.03
+     ],
+     [
+      52.8,
+      62.06
+     ],
+     [
+      51.0,
+      63.21
+     ],
+     [
+      49.8,
+      59.49
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      68.03
+     ],
+     [
+      91.2,
+      66.41
+     ],
+     [
+      93.0,
+      72.34
+     ],
+     [
+      94.2,
+      68.62
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_E_000": {
+   "file": "therizinosaurus_walk_E_000.png",
+   "sha256": "32804b49a17d9eb15bdfe1946f9711e3e65d7c5038fbbe8689c35af8ce0a7ade",
+   "bbox": [
+    17,
+    48,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      60.15
+     ],
+     [
+      79.93,
+      52.81
+     ],
+     [
+      81.4,
+      53.7
+     ],
+     [
+      86.9,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.9
+     ],
+     [
+      76.81,
+      86.1
+     ],
+     [
+      70.27,
+      88.14
+     ],
+     [
+      75.77,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_W_000": {
+   "file": "therizinosaurus_walk_W_000.png",
+   "sha256": "3621e359493840d4357ff3c82afc8a3a21face649942245ec1f9e5ee523c75c4",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.9
+     ],
+     [
+      64.07,
+      84.3
+     ],
+     [
+      62.6,
+      88.14
+     ],
+     [
+      57.1,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      60.15
+     ],
+     [
+      67.19,
+      54.61
+     ],
+     [
+      73.73,
+      53.7
+     ],
+     [
+      68.23,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_S_001": {
+   "file": "therizinosaurus_walk_S_001.png",
+   "sha256": "2eb78903ea93ee4379bc01ddb2bc806cdf3433d1a3b04d47d94d23e4826f8d3f",
+   "bbox": [
+    45,
+    23,
+    99,
+    112
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.77
+     ],
+     [
+      91.2,
+      74.94
+     ],
+     [
+      93.0,
+      75.59
+     ],
+     [
+      94.2,
+      80.89
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.77
+     ],
+     [
+      52.8,
+      73.13
+     ],
+     [
+      51.0,
+      67.43
+     ],
+     [
+      49.8,
+      72.67
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_walk_N_001": {
+   "file": "therizinosaurus_walk_N_001.png",
+   "sha256": "f661e079f038e864970c4dd6ec703eb8c12af6e4b0353de8c62ecbc83927db91",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.77
+     ],
+     [
+      52.8,
+      62.29
+     ],
+     [
+      51.0,
+      66.25
+     ],
+     [
+      49.8,
+      62.54
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.77
+     ],
+     [
+      91.2,
+      67.69
+     ],
+     [
+      93.0,
+      72.98
+     ],
+     [
+      94.2,
+      70.04
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_walk_E_001": {
+   "file": "therizinosaurus_walk_E_001.png",
+   "sha256": "c91a0a76828f0d869203c9b4893459442e2e61c290e5d7d0cd3ea4fec1af78e9",
+   "bbox": [
+    16,
+    48,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.89
+     ],
+     [
+      79.71,
+      52.87
+     ],
+     [
+      77.69,
+      53.7
+     ],
+     [
+      83.19,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.64
+     ],
+     [
+      75.32,
+      86.16
+     ],
+     [
+      68.62,
+      87.43
+     ],
+     [
+      73.61,
+      89.56
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_walk_W_001": {
+   "file": "therizinosaurus_walk_W_001.png",
+   "sha256": "f0ac38c59a1fe3ef18a0af9794c4b9390dae9d91f2e4415cb5310b69b4fbbd94",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.64
+     ],
+     [
+      64.29,
+      84.35
+     ],
+     [
+      66.31,
+      88.14
+     ],
+     [
+      60.81,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.89
+     ],
+     [
+      68.68,
+      54.67
+     ],
+     [
+      75.38,
+      52.99
+     ],
+     [
+      70.39,
+      53.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_walk_S_002": {
+   "file": "therizinosaurus_walk_S_002.png",
+   "sha256": "74a0064629472014a92d935bae93647a29dcc2291f6f66ee957d618d5fa4748a",
+   "bbox": [
+    45,
+    23,
+    99,
+    112
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.77
+     ],
+     [
+      91.2,
+      74.93
+     ],
+     [
+      93.0,
+      72.54
+     ],
+     [
+      94.2,
+      77.85
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.77
+     ],
+     [
+      52.8,
+      73.13
+     ],
+     [
+      51.0,
+      73.66
+     ],
+     [
+      49.8,
+      78.42
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_walk_N_002": {
+   "file": "therizinosaurus_walk_N_002.png",
+   "sha256": "e0625df5d44f9b7750d4a15610df9c4206dfe0bc38bb0c81af060045aaaf55d1",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.77
+     ],
+     [
+      52.8,
+      63.61
+     ],
+     [
+      51.0,
+      69.3
+     ],
+     [
+      49.8,
+      65.58
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.77
+     ],
+     [
+      91.2,
+      60.58
+     ],
+     [
+      93.0,
+      64.63
+     ],
+     [
+      94.2,
+      63.13
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_walk_E_002": {
+   "file": "therizinosaurus_walk_E_002.png",
+   "sha256": "7885dcfae34609a64e87db7457d30fd53671e098e6e4e09bc755b74e44920176",
+   "bbox": [
+    17,
+    49,
+    128,
+    93
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.89
+     ],
+     [
+      78.9,
+      53.52
+     ],
+     [
+      73.98,
+      53.7
+     ],
+     [
+      79.48,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.64
+     ],
+     [
+      79.65,
+      82.6
+     ],
+     [
+      77.51,
+      86.37
+     ],
+     [
+      81.32,
+      88.98
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_walk_W_002": {
+   "file": "therizinosaurus_walk_W_002.png",
+   "sha256": "99db1d19affce0d57f085c63251c8eed5466d7e73e0e6e7aef7231f6fc4e0806",
+   "bbox": [
+    16,
+    46,
+    127,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.64
+     ],
+     [
+      65.1,
+      85.01
+     ],
+     [
+      70.02,
+      88.14
+     ],
+     [
+      64.52,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.89
+     ],
+     [
+      64.35,
+      51.11
+     ],
+     [
+      66.49,
+      51.93
+     ],
+     [
+      62.68,
+      52.58
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_walk_S_003": {
+   "file": "therizinosaurus_walk_S_003.png",
+   "sha256": "7264a882b6cc47f08fa0f9bea36f693053acda3d309a6fbe7262083e189778ab",
+   "bbox": [
+    45,
+    23,
+    99,
+    113
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      68.03
+     ],
+     [
+      91.2,
+      74.3
+     ],
+     [
+      93.0,
+      69.5
+     ],
+     [
+      94.2,
+      74.8
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      68.03
+     ],
+     [
+      52.8,
+      75.06
+     ],
+     [
+      51.0,
+      78.63
+     ],
+     [
+      49.8,
+      83.93
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_N_003": {
+   "file": "therizinosaurus_walk_N_003.png",
+   "sha256": "6885f89404ab53cec17f69cba88f593cec97f7b77182a2d32c450c8c0da958d6",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      68.03
+     ],
+     [
+      52.8,
+      66.41
+     ],
+     [
+      51.0,
+      72.34
+     ],
+     [
+      49.8,
+      68.62
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      68.03
+     ],
+     [
+      91.2,
+      62.06
+     ],
+     [
+      93.0,
+      63.21
+     ],
+     [
+      94.2,
+      59.49
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_E_003": {
+   "file": "therizinosaurus_walk_E_003.png",
+   "sha256": "f2c810b9f4eca61434242a6d18a3b8433cf48cf13747fe6cf7f7d4c3edbcdcde",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      60.15
+     ],
+     [
+      76.81,
+      54.61
+     ],
+     [
+      70.27,
+      53.7
+     ],
+     [
+      75.77,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.9
+     ],
+     [
+      79.93,
+      84.3
+     ],
+     [
+      81.4,
+      88.14
+     ],
+     [
+      86.9,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_W_003": {
+   "file": "therizinosaurus_walk_W_003.png",
+   "sha256": "35e5d408091558f7d2a86bd8d9876609ede93122def190fbd98991e97f2c5f1e",
+   "bbox": [
+    16,
+    48,
+    127,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.9
+     ],
+     [
+      67.19,
+      86.1
+     ],
+     [
+      73.73,
+      88.14
+     ],
+     [
+      68.23,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      60.15
+     ],
+     [
+      64.07,
+      52.81
+     ],
+     [
+      62.6,
+      53.7
+     ],
+     [
+      57.1,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_S_004": {
+   "file": "therizinosaurus_walk_S_004.png",
+   "sha256": "fef5c7abeff084a1b3d65ae524b6827ff24e80f3eb977d85a620ac160ffc36a7",
+   "bbox": [
+    45,
+    23,
+    99,
+    112
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.77
+     ],
+     [
+      91.2,
+      73.13
+     ],
+     [
+      93.0,
+      67.43
+     ],
+     [
+      94.2,
+      72.67
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.77
+     ],
+     [
+      52.8,
+      74.94
+     ],
+     [
+      51.0,
+      75.59
+     ],
+     [
+      49.8,
+      80.89
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_N_004": {
+   "file": "therizinosaurus_walk_N_004.png",
+   "sha256": "c8b68d34d76707711ca683e09b280948ac6ec60ce93ee5d4d0c5a6242a1f8e5e",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.77
+     ],
+     [
+      52.8,
+      67.69
+     ],
+     [
+      51.0,
+      72.98
+     ],
+     [
+      49.8,
+      70.04
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.77
+     ],
+     [
+      91.2,
+      62.29
+     ],
+     [
+      93.0,
+      66.25
+     ],
+     [
+      94.2,
+      62.54
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_E_004": {
+   "file": "therizinosaurus_walk_E_004.png",
+   "sha256": "b6df31a64c9ee3f82b8f0ac8d8d41f10bf09546918b41068c00b60e8fa9ae093",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.89
+     ],
+     [
+      75.32,
+      54.67
+     ],
+     [
+      68.62,
+      52.99
+     ],
+     [
+      73.61,
+      53.15
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.64
+     ],
+     [
+      79.71,
+      84.35
+     ],
+     [
+      77.69,
+      88.14
+     ],
+     [
+      83.19,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_W_004": {
+   "file": "therizinosaurus_walk_W_004.png",
+   "sha256": "49f50909a5ca5b6276c54f2c791a50b4d6c6f46f072d10b9fb43685ee34e9d35",
+   "bbox": [
+    16,
+    48,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.64
+     ],
+     [
+      68.68,
+      86.16
+     ],
+     [
+      75.38,
+      87.43
+     ],
+     [
+      70.39,
+      89.56
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.89
+     ],
+     [
+      64.29,
+      52.87
+     ],
+     [
+      66.31,
+      53.7
+     ],
+     [
+      60.81,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_S_005": {
+   "file": "therizinosaurus_walk_S_005.png",
+   "sha256": "9733989413e6f9198a6e08985420c2a17bc8877b21cb28b4a531beeea6d6c8ae",
+   "bbox": [
+    45,
+    23,
+    99,
+    112
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.77
+     ],
+     [
+      91.2,
+      73.13
+     ],
+     [
+      93.0,
+      73.66
+     ],
+     [
+      94.2,
+      78.42
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.77
+     ],
+     [
+      52.8,
+      74.93
+     ],
+     [
+      51.0,
+      72.54
+     ],
+     [
+      49.8,
+      77.85
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_N_005": {
+   "file": "therizinosaurus_walk_N_005.png",
+   "sha256": "45f85d75acca81ba7b056123b4060add3d72a7ab6ccfaf1dfc181585929ab441",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.77
+     ],
+     [
+      52.8,
+      60.58
+     ],
+     [
+      51.0,
+      64.63
+     ],
+     [
+      49.8,
+      63.13
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.77
+     ],
+     [
+      91.2,
+      63.61
+     ],
+     [
+      93.0,
+      69.3
+     ],
+     [
+      94.2,
+      65.58
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_E_005": {
+   "file": "therizinosaurus_walk_E_005.png",
+   "sha256": "e78a2e8a6a371b2867c10034ba7d6411ee733626a9496f50e93d0e7ca4fe9fe9",
+   "bbox": [
+    17,
+    46,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.89
+     ],
+     [
+      79.65,
+      51.11
+     ],
+     [
+      77.51,
+      51.93
+     ],
+     [
+      81.32,
+      52.58
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.64
+     ],
+     [
+      78.9,
+      85.01
+     ],
+     [
+      73.98,
+      88.14
+     ],
+     [
+      79.48,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_walk_W_005": {
+   "file": "therizinosaurus_walk_W_005.png",
+   "sha256": "f89a073d5d2269386552f054496382f46ce6443dcb16d5f2d1570a15aef24334",
+   "bbox": [
+    16,
+    49,
+    127,
+    93
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.64
+     ],
+     [
+      64.35,
+      82.6
+     ],
+     [
+      66.49,
+      86.37
+     ],
+     [
+      62.68,
+      88.98
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.89
+     ],
+     [
+      65.1,
+      53.52
+     ],
+     [
+      70.02,
+      53.7
+     ],
+     [
+      64.52,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_S_000": {
+   "file": "therizinosaurus_run_S_000.png",
+   "sha256": "c20090190b23c48f2404c49a674873435f2762bdb7bb55ef1d2a10fc31882f3c",
+   "bbox": [
+    45,
+    23,
+    99,
+    114
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      68.23
+     ],
+     [
+      91.2,
+      75.33
+     ],
+     [
+      93.0,
+      80.35
+     ],
+     [
+      94.2,
+      85.65
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      68.23
+     ],
+     [
+      52.8,
+      72.0
+     ],
+     [
+      51.0,
+      66.54
+     ],
+     [
+      49.8,
+      71.38
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_N_000": {
+   "file": "therizinosaurus_run_N_000.png",
+   "sha256": "dbeaa2a4a0292ae8be595e8e470682559320098837d2df2635160df9dc4ee4c5",
+   "bbox": [
+    45,
+    19,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      68.23
+     ],
+     [
+      52.8,
+      62.44
+     ],
+     [
+      51.0,
+      61.49
+     ],
+     [
+      49.8,
+      57.77
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      68.23
+     ],
+     [
+      91.2,
+      70.22
+     ],
+     [
+      93.0,
+      72.04
+     ],
+     [
+      94.2,
+      70.37
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_E_000": {
+   "file": "therizinosaurus_run_E_000.png",
+   "sha256": "929499eaf00008dafd1503ce4c9a666a8b9e406e974ab307a39ceefcbbb121c0",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      60.36
+     ],
+     [
+      79.86,
+      53.14
+     ],
+     [
+      83.5,
+      53.7
+     ],
+     [
+      89.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      76.1
+     ],
+     [
+      73.08,
+      86.85
+     ],
+     [
+      68.65,
+      86.51
+     ],
+     [
+      72.61,
+      89.08
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_W_000": {
+   "file": "therizinosaurus_run_W_000.png",
+   "sha256": "8e10282a216f40c31b9e382f7edb86d8f2f377f12d2c7231e8e20b1de0e7b39a",
+   "bbox": [
+    16,
+    48,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      76.1
+     ],
+     [
+      64.14,
+      84.63
+     ],
+     [
+      60.5,
+      88.14
+     ],
+     [
+      55.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      60.36
+     ],
+     [
+      70.92,
+      55.37
+     ],
+     [
+      75.35,
+      52.07
+     ],
+     [
+      71.39,
+      52.67
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_S_001": {
+   "file": "therizinosaurus_run_S_001.png",
+   "sha256": "9a01e263bb29a631441f33dc7fcecf90f236d9167b2077b2cfe92ac913100eb4",
+   "bbox": [
+    45,
+    22,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.82
+     ],
+     [
+      91.2,
+      75.04
+     ],
+     [
+      93.0,
+      73.88
+     ],
+     [
+      94.2,
+      79.18
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.82
+     ],
+     [
+      52.8,
+      70.92
+     ],
+     [
+      51.0,
+      72.1
+     ],
+     [
+      49.8,
+      75.94
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_N_001": {
+   "file": "therizinosaurus_run_N_001.png",
+   "sha256": "6d3983829f090c02140f953d09be92f0655bc96892a82baac14f59216b7c8301",
+   "bbox": [
+    45,
+    19,
+    99,
+    114
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.82
+     ],
+     [
+      52.8,
+      62.83
+     ],
+     [
+      51.0,
+      67.96
+     ],
+     [
+      49.8,
+      64.25
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.82
+     ],
+     [
+      91.2,
+      60.92
+     ],
+     [
+      93.0,
+      64.47
+     ],
+     [
+      94.2,
+      64.56
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_E_001": {
+   "file": "therizinosaurus_run_E_001.png",
+   "sha256": "dc7b6bf2981fa784d9aa7ccb992392ee63d4e0df6b9c4be3a51ec3518417ba9a",
+   "bbox": [
+    16,
+    49,
+    128,
+    93
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.95
+     ],
+     [
+      79.45,
+      53.19
+     ],
+     [
+      75.61,
+      53.7
+     ],
+     [
+      81.11,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.69
+     ],
+     [
+      78.1,
+      81.66
+     ],
+     [
+      76.65,
+      85.51
+     ],
+     [
+      78.94,
+      88.46
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_W_001": {
+   "file": "therizinosaurus_run_W_001.png",
+   "sha256": "5777494ae19e94f05d3cd36ebbe9244ade777fd6914cc64a0ae29f2918994084",
+   "bbox": [
+    16,
+    45,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.69
+     ],
+     [
+      64.55,
+      84.68
+     ],
+     [
+      68.39,
+      88.14
+     ],
+     [
+      62.89,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.95
+     ],
+     [
+      65.9,
+      50.18
+     ],
+     [
+      67.35,
+      51.07
+     ],
+     [
+      65.06,
+      52.05
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_S_002": {
+   "file": "therizinosaurus_run_S_002.png",
+   "sha256": "127744641b406270c3cfec1b67cc36197bd068fb3cd6ec0f1511bc1b96a2a354",
+   "bbox": [
+    45,
+    22,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.82
+     ],
+     [
+      91.2,
+      72.54
+     ],
+     [
+      93.0,
+      67.4
+     ],
+     [
+      94.2,
+      72.7
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.82
+     ],
+     [
+      52.8,
+      72.83
+     ],
+     [
+      51.0,
+      77.59
+     ],
+     [
+      49.8,
+      82.07
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_N_002": {
+   "file": "therizinosaurus_run_N_002.png",
+   "sha256": "392c7f3174fcdaab750a127132a15a20f54a8482556aa3bf7cf09054de30ad5e",
+   "bbox": [
+    45,
+    19,
+    99,
+    114
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.82
+     ],
+     [
+      52.8,
+      68.64
+     ],
+     [
+      51.0,
+      74.44
+     ],
+     [
+      49.8,
+      70.72
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.82
+     ],
+     [
+      91.2,
+      60.6
+     ],
+     [
+      93.0,
+      60.09
+     ],
+     [
+      94.2,
+      59.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_E_002": {
+   "file": "therizinosaurus_run_E_002.png",
+   "sha256": "705d31f2ad60db55caaf2b939d69caefd2bcdee1b52a3c79ef42efd2d765420c",
+   "bbox": [
+    17,
+    49,
+    128,
+    93
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.95
+     ],
+     [
+      74.38,
+      54.85
+     ],
+     [
+      67.71,
+      53.7
+     ],
+     [
+      73.21,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.69
+     ],
+     [
+      79.46,
+      82.46
+     ],
+     [
+      82.67,
+      86.06
+     ],
+     [
+      85.98,
+      88.82
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_W_002": {
+   "file": "therizinosaurus_run_W_002.png",
+   "sha256": "4c33e44c81aef740377701935ebe9d12a779734b5e13626174c4f07588185e82",
+   "bbox": [
+    16,
+    46,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.69
+     ],
+     [
+      69.62,
+      86.34
+     ],
+     [
+      76.29,
+      88.14
+     ],
+     [
+      70.79,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.95
+     ],
+     [
+      64.54,
+      50.97
+     ],
+     [
+      61.33,
+      51.62
+     ],
+     [
+      58.02,
+      52.41
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": false
+   }
+  },
+  "therizinosaurus_run_S_003": {
+   "file": "therizinosaurus_run_S_003.png",
+   "sha256": "578e42acb8e747816d79e5c54370e3778d4187056782a7bbded3669f04e2e91a",
+   "bbox": [
+    45,
+    23,
+    99,
+    114
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      68.23
+     ],
+     [
+      91.2,
+      72.0
+     ],
+     [
+      93.0,
+      66.54
+     ],
+     [
+      94.2,
+      71.38
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      68.23
+     ],
+     [
+      52.8,
+      75.33
+     ],
+     [
+      51.0,
+      80.35
+     ],
+     [
+      49.8,
+      85.65
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_N_003": {
+   "file": "therizinosaurus_run_N_003.png",
+   "sha256": "055c3905e6fd25e8fb2c5d7b7bb4ba26f35886213517d980ddb4437b90e768db",
+   "bbox": [
+    45,
+    19,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      68.23
+     ],
+     [
+      52.8,
+      70.22
+     ],
+     [
+      51.0,
+      72.04
+     ],
+     [
+      49.8,
+      70.37
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      68.23
+     ],
+     [
+      91.2,
+      62.44
+     ],
+     [
+      93.0,
+      61.49
+     ],
+     [
+      94.2,
+      57.77
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_E_003": {
+   "file": "therizinosaurus_run_E_003.png",
+   "sha256": "6c2aa4b748f59763798fc75b1a0c93b061abda6ebc7268870c1f6a838589be84",
+   "bbox": [
+    16,
+    48,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      60.36
+     ],
+     [
+      73.08,
+      55.37
+     ],
+     [
+      68.65,
+      52.07
+     ],
+     [
+      72.61,
+      52.67
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      76.1
+     ],
+     [
+      79.86,
+      84.63
+     ],
+     [
+      83.5,
+      88.14
+     ],
+     [
+      89.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_W_003": {
+   "file": "therizinosaurus_run_W_003.png",
+   "sha256": "67df9bcd5d21d48da5e186c29287c2e939e03327d9e84949283d2e6f361df6a0",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      76.1
+     ],
+     [
+      70.92,
+      86.85
+     ],
+     [
+      75.35,
+      86.51
+     ],
+     [
+      71.39,
+      89.08
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      60.36
+     ],
+     [
+      64.14,
+      53.14
+     ],
+     [
+      60.5,
+      53.7
+     ],
+     [
+      55.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_S_004": {
+   "file": "therizinosaurus_run_S_004.png",
+   "sha256": "ec93bff972144d72a00a853b5c74faffb5c9f61f8def4e998048bc17a739739e",
+   "bbox": [
+    45,
+    22,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.82
+     ],
+     [
+      91.2,
+      70.92
+     ],
+     [
+      93.0,
+      72.1
+     ],
+     [
+      94.2,
+      75.94
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.82
+     ],
+     [
+      52.8,
+      75.04
+     ],
+     [
+      51.0,
+      73.88
+     ],
+     [
+      49.8,
+      79.18
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_N_004": {
+   "file": "therizinosaurus_run_N_004.png",
+   "sha256": "dfe992bebf0544f6766d2e203a3a703660e312e2ba9694f3bed627e8926a7443",
+   "bbox": [
+    45,
+    19,
+    99,
+    114
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.82
+     ],
+     [
+      52.8,
+      60.92
+     ],
+     [
+      51.0,
+      64.47
+     ],
+     [
+      49.8,
+      64.56
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.82
+     ],
+     [
+      91.2,
+      62.83
+     ],
+     [
+      93.0,
+      67.96
+     ],
+     [
+      94.2,
+      64.25
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_E_004": {
+   "file": "therizinosaurus_run_E_004.png",
+   "sha256": "e3b99c9c9568616613687ccac6716389de95c3ec2db009130268563a2ce86ab3",
+   "bbox": [
+    16,
+    45,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.95
+     ],
+     [
+      78.1,
+      50.18
+     ],
+     [
+      76.65,
+      51.07
+     ],
+     [
+      78.94,
+      52.05
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.69
+     ],
+     [
+      79.45,
+      84.68
+     ],
+     [
+      75.61,
+      88.14
+     ],
+     [
+      81.11,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_W_004": {
+   "file": "therizinosaurus_run_W_004.png",
+   "sha256": "df2d93e08484142d6ffff5c42a444cfd10f3e8a675995205679e07ff1ad0943a",
+   "bbox": [
+    16,
+    49,
+    128,
+    93
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.69
+     ],
+     [
+      65.9,
+      81.66
+     ],
+     [
+      67.35,
+      85.51
+     ],
+     [
+      65.06,
+      88.46
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.95
+     ],
+     [
+      64.55,
+      53.19
+     ],
+     [
+      68.39,
+      53.7
+     ],
+     [
+      62.89,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_S_005": {
+   "file": "therizinosaurus_run_S_005.png",
+   "sha256": "7134ab1ba0bb26a83b89f78b0bdd6bca27bca087171176b4a129af52980e0628",
+   "bbox": [
+    45,
+    22,
+    99,
+    115
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.82
+     ],
+     [
+      91.2,
+      72.83
+     ],
+     [
+      93.0,
+      77.59
+     ],
+     [
+      94.2,
+      82.07
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.82
+     ],
+     [
+      52.8,
+      72.54
+     ],
+     [
+      51.0,
+      67.4
+     ],
+     [
+      49.8,
+      72.7
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_N_005": {
+   "file": "therizinosaurus_run_N_005.png",
+   "sha256": "eacfaa805e0953722abb3447d624454ed62caa7b3b3d9788128e2a3ff39d7326",
+   "bbox": [
+    45,
+    19,
+    99,
+    114
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.82
+     ],
+     [
+      52.8,
+      60.6
+     ],
+     [
+      51.0,
+      60.09
+     ],
+     [
+      49.8,
+      59.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.82
+     ],
+     [
+      91.2,
+      68.64
+     ],
+     [
+      93.0,
+      74.44
+     ],
+     [
+      94.2,
+      70.72
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_E_005": {
+   "file": "therizinosaurus_run_E_005.png",
+   "sha256": "395c9c8507c87245bef81d601fb567f6ae32b0e7a479c47b971fde7b4cc85bfc",
+   "bbox": [
+    16,
+    46,
+    128,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      59.95
+     ],
+     [
+      79.46,
+      50.97
+     ],
+     [
+      82.67,
+      51.62
+     ],
+     [
+      85.98,
+      52.41
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      75.69
+     ],
+     [
+      74.38,
+      86.34
+     ],
+     [
+      67.71,
+      88.14
+     ],
+     [
+      73.21,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_run_W_005": {
+   "file": "therizinosaurus_run_W_005.png",
+   "sha256": "3088fc85f5508e23f068488db287cc6ff1d26cc7d5141d7bbac49bc7754b97d6",
+   "bbox": [
+    16,
+    49,
+    127,
+    93
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.0,
+      75.69
+     ],
+     [
+      64.54,
+      82.46
+     ],
+     [
+      61.33,
+      86.06
+     ],
+     [
+      58.02,
+      88.82
+     ]
+    ],
+    "hind_R": [
+     [
+      72.0,
+      59.95
+     ],
+     [
+      69.62,
+      54.85
+     ],
+     [
+      76.29,
+      53.7
+     ],
+     [
+      70.79,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": false,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_S_000": {
+   "file": "therizinosaurus_attack_S_000.png",
+   "sha256": "9e439546cd0b6d0dcf9f760d39f2e189396795124e10d524682db57e6d159f35",
+   "bbox": [
+    45,
+    23,
+    99,
+    110
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      66.7
+     ],
+     [
+      91.2,
+      73.92
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      66.7
+     ],
+     [
+      52.8,
+      73.92
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_N_000": {
+   "file": "therizinosaurus_attack_N_000.png",
+   "sha256": "da8a57a83bc0711787b87c600c537e8ec814a3c1512c76824a45d3a7c5ea35f8",
+   "bbox": [
+    45,
+    18,
+    99,
+    116
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      68.66
+     ],
+     [
+      52.8,
+      63.85
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      68.66
+     ],
+     [
+      91.2,
+      63.85
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_E_000": {
+   "file": "therizinosaurus_attack_E_000.png",
+   "sha256": "e4f0fdf958ea1dea1489152b776456aa99b52853e095543cb80627bc5c547dce",
+   "bbox": [
+    15,
+    48,
+    125,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      70.8,
+      59.81
+     ],
+     [
+      78.14,
+      53.14
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      70.8,
+      75.55
+     ],
+     [
+      78.14,
+      84.63
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_W_000": {
+   "file": "therizinosaurus_attack_W_000.png",
+   "sha256": "7e799c4b40581fa5ddbd6a8fca4cd8d3a178ec1e056ae8a64aadad5db43dce3f",
+   "bbox": [
+    19,
+    48,
+    129,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      73.2,
+      75.55
+     ],
+     [
+      65.86,
+      84.63
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      73.2,
+      59.81
+     ],
+     [
+      65.86,
+      53.14
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_S_001": {
+   "file": "therizinosaurus_attack_S_001.png",
+   "sha256": "a061090b07b02927016ccb9a022ad3c05aa3b21c4ef2b80bb7c779d29aa7a5f9",
+   "bbox": [
+    45,
+    23,
+    99,
+    108
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      65.71
+     ],
+     [
+      91.2,
+      72.92
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      65.71
+     ],
+     [
+      52.8,
+      72.92
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_N_001": {
+   "file": "therizinosaurus_attack_N_001.png",
+   "sha256": "b9b5bad817ca483fbbd06865c1e098d41f01887664b5c2f750ef63fd1244fc86",
+   "bbox": [
+    45,
+    19,
+    99,
+    118
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      69.65
+     ],
+     [
+      52.8,
+      64.47
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      69.65
+     ],
+     [
+      91.2,
+      64.47
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_E_001": {
+   "file": "therizinosaurus_attack_E_001.png",
+   "sha256": "dce9965f9d9043786b8dc4e8fe7134828b1465ab9cf09e7875eabebb8ed4bb24",
+   "bbox": [
+    14,
+    48,
+    123,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      69.6,
+      59.81
+     ],
+     [
+      77.15,
+      52.95
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      69.6,
+      75.55
+     ],
+     [
+      77.15,
+      84.44
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_W_001": {
+   "file": "therizinosaurus_attack_W_001.png",
+   "sha256": "a4133811de694bb3d0d0e18babc6fb4ff894e6f4ca97c3fd9aa7f36ec8b1f4e4",
+   "bbox": [
+    21,
+    48,
+    130,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      74.4,
+      75.55
+     ],
+     [
+      66.85,
+      84.44
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      74.4,
+      59.81
+     ],
+     [
+      66.85,
+      52.95
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_S_002": {
+   "file": "therizinosaurus_attack_S_002.png",
+   "sha256": "e8e38b38ae021f50b9307a44428cb30a23321be768ee89a913502353d3ec4b99",
+   "bbox": [
+    45,
+    23,
+    99,
+    112
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      67.09
+     ],
+     [
+      91.2,
+      74.3
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      67.09
+     ],
+     [
+      52.8,
+      74.3
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_N_002": {
+   "file": "therizinosaurus_attack_N_002.png",
+   "sha256": "948bdb48626ddfecef64b5acb3a2c25bb77f08a4ebb4af9d822d1c37859acd47",
+   "bbox": [
+    45,
+    18,
+    99,
+    116
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      68.27
+     ],
+     [
+      52.8,
+      63.64
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      68.27
+     ],
+     [
+      91.2,
+      63.64
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_E_002": {
+   "file": "therizinosaurus_attack_E_002.png",
+   "sha256": "779c9e84a2a86f446b0868e8bb376e1a87d09ea13d629f9d005e5d770030db54",
+   "bbox": [
+    15,
+    48,
+    127,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      71.28,
+      59.81
+     ],
+     [
+      78.5,
+      53.23
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      71.28,
+      75.55
+     ],
+     [
+      78.5,
+      84.72
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_W_002": {
+   "file": "therizinosaurus_attack_W_002.png",
+   "sha256": "f3fa802edf0966a7dd9f273f07cf9c2ef932b7b8cd6ad86cbf406cbee7b9fbc2",
+   "bbox": [
+    17,
+    48,
+    129,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.72,
+      75.55
+     ],
+     [
+      65.5,
+      84.72
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      72.72,
+      59.81
+     ],
+     [
+      65.5,
+      53.23
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_S_003": {
+   "file": "therizinosaurus_attack_S_003.png",
+   "sha256": "2b4bfbf29c6ac101bf321582a8fa5389e35f8bb1e3bf5bdf60c05d8ec7bbad3f",
+   "bbox": [
+    45,
+    25,
+    99,
+    120
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      70.92
+     ],
+     [
+      91.2,
+      77.26
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      70.92
+     ],
+     [
+      52.8,
+      77.26
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_N_003": {
+   "file": "therizinosaurus_attack_N_003.png",
+   "sha256": "b695087f3ceefd290c41e71ff409fceb93fce92d1a711ded4824fbed9dfe74d0",
+   "bbox": [
+    45,
+    14,
+    99,
+    111
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      64.62
+     ],
+     [
+      52.8,
+      62.85
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      64.62
+     ],
+     [
+      91.2,
+      62.85
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_E_003": {
+   "file": "therizinosaurus_attack_E_003.png",
+   "sha256": "8d2135277a2dc084e634d3328958e9deff1aefcf5a55a923b1c78b3cf5661b00",
+   "bbox": [
+    20,
+    49,
+    136,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      75.84,
+      59.89
+     ],
+     [
+      80.79,
+      54.31
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      75.84,
+      75.64
+     ],
+     [
+      80.79,
+      85.8
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_W_003": {
+   "file": "therizinosaurus_attack_W_003.png",
+   "sha256": "ddc77ac79245d40ba47a21d0a43e7372d18bae91a323baacb4168e8c9a540a1f",
+   "bbox": [
+    8,
+    49,
+    124,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      68.16,
+      75.64
+     ],
+     [
+      63.21,
+      85.8
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      68.16,
+      59.89
+     ],
+     [
+      63.21,
+      54.31
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_S_004": {
+   "file": "therizinosaurus_attack_S_004.png",
+   "sha256": "6c96fbc451058f6c615b8aff572da51ca9324192d88890849affe320bbcf8971",
+   "bbox": [
+    45,
+    24,
+    99,
+    116
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      69.45
+     ],
+     [
+      91.2,
+      76.31
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      69.45
+     ],
+     [
+      52.8,
+      76.31
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_N_004": {
+   "file": "therizinosaurus_attack_N_004.png",
+   "sha256": "18f59f59e9120576d178e4ee955170f566cb80208193095e70fa6f7cdf938f2e",
+   "bbox": [
+    45,
+    16,
+    99,
+    113
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      65.91
+     ],
+     [
+      52.8,
+      62.92
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      65.91
+     ],
+     [
+      91.2,
+      62.92
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_E_004": {
+   "file": "therizinosaurus_attack_E_004.png",
+   "sha256": "7e2dab1cf10082313b5ca06a38604fb02a150f8a4879729dbf4b721f85c6c7e3",
+   "bbox": [
+    18,
+    49,
+    132,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      74.16,
+      59.81
+     ],
+     [
+      80.17,
+      53.87
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      74.16,
+      75.55
+     ],
+     [
+      80.17,
+      85.36
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_W_004": {
+   "file": "therizinosaurus_attack_W_004.png",
+   "sha256": "9678c356abe760b11786bc0e9eea15ed31e3113c84409c9eb1f7e351f968f1a2",
+   "bbox": [
+    12,
+    49,
+    126,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      69.84,
+      75.55
+     ],
+     [
+      63.83,
+      85.36
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      69.84,
+      59.81
+     ],
+     [
+      63.83,
+      53.87
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_S_005": {
+   "file": "therizinosaurus_attack_S_005.png",
+   "sha256": "e474303623c522b114d6f7e738f189390358bd277f95347023f13fdaeabb4285",
+   "bbox": [
+    45,
+    23,
+    99,
+    114
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      68.07
+     ],
+     [
+      91.2,
+      75.22
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      68.07
+     ],
+     [
+      52.8,
+      75.22
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_N_005": {
+   "file": "therizinosaurus_attack_N_005.png",
+   "sha256": "cd8a2e744c28ca6647371d9bf8d5755abe56d9002df37a34416273bc49576ad2",
+   "bbox": [
+    45,
+    18,
+    99,
+    114
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      67.29
+     ],
+     [
+      52.8,
+      63.24
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      67.29
+     ],
+     [
+      91.2,
+      63.24
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_E_005": {
+   "file": "therizinosaurus_attack_E_005.png",
+   "sha256": "32e071397ae9bf97515ae57a835ff6c39fe6c082cc1e8e9f179604eb4f5ede6f",
+   "bbox": [
+    17,
+    49,
+    129,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      72.48,
+      59.81
+     ],
+     [
+      79.3,
+      53.48
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      72.48,
+      75.55
+     ],
+     [
+      79.3,
+      84.97
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_attack_W_005": {
+   "file": "therizinosaurus_attack_W_005.png",
+   "sha256": "b140b1341f9694cfb8fbe2af949d53c44c1789597aa5eb018fa649b97dd9efd9",
+   "bbox": [
+    15,
+    49,
+    127,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      71.52,
+      75.55
+     ],
+     [
+      64.7,
+      84.97
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      71.52,
+      59.81
+     ],
+     [
+      64.7,
+      53.48
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_hurt_S_000": {
+   "file": "therizinosaurus_hurt_S_000.png",
+   "sha256": "ad5fc14e8ecd574ae5a2b9f42d82da9da1fe82b22f45ca22c356e82ae5a178f8",
+   "bbox": [
+    45,
+    22,
+    99,
+    105
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      65.52
+     ],
+     [
+      91.2,
+      72.72
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      65.52
+     ],
+     [
+      52.8,
+      72.72
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_hurt_N_000": {
+   "file": "therizinosaurus_hurt_N_000.png",
+   "sha256": "ccaf669df84c26cb588b3fb37d642f3d4cd3d9d36ca92cc0f25f932a769f4c20",
+   "bbox": [
+    45,
+    21,
+    99,
+    118
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      69.84
+     ],
+     [
+      52.8,
+      64.61
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      69.84
+     ],
+     [
+      91.2,
+      64.61
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_hurt_E_000": {
+   "file": "therizinosaurus_hurt_E_000.png",
+   "sha256": "f23a2c101b1d66aec5859f2c92b05cac76e56fe8dba7f278178cc57f46acae7b",
+   "bbox": [
+    14,
+    48,
+    121,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      69.36,
+      59.81
+     ],
+     [
+      76.94,
+      52.92
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      69.36,
+      75.55
+     ],
+     [
+      76.94,
+      84.41
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_hurt_W_000": {
+   "file": "therizinosaurus_hurt_W_000.png",
+   "sha256": "76f39829f108c70deb900fb73815293d4596772f6ce59c9cc5f43a81631a2594",
+   "bbox": [
+    23,
+    48,
+    130,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      74.64,
+      75.55
+     ],
+     [
+      67.06,
+      84.41
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      74.64,
+      59.81
+     ],
+     [
+      67.06,
+      52.92
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_hurt_S_001": {
+   "file": "therizinosaurus_hurt_S_001.png",
+   "sha256": "6bdb8b03ce10c667f176ae97c768d2b11dce2c461ddf97ffa637d42ea5025d45",
+   "bbox": [
+    45,
+    22,
+    99,
+    110
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      81.6,
+      66.6
+     ],
+     [
+      91.2,
+      73.82
+     ],
+     [
+      93.0,
+      72.97
+     ],
+     [
+      94.2,
+      78.27
+     ]
+    ],
+    "hind_R": [
+     [
+      62.4,
+      66.6
+     ],
+     [
+      52.8,
+      73.82
+     ],
+     [
+      51.0,
+      72.97
+     ],
+     [
+      49.8,
+      78.27
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_hurt_N_001": {
+   "file": "therizinosaurus_hurt_N_001.png",
+   "sha256": "b6e7af80e360162ade1d5a175444968605b8822bfbb12a4d623711e00e4e8405",
+   "bbox": [
+    45,
+    19,
+    99,
+    116
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      62.4,
+      68.76
+     ],
+     [
+      52.8,
+      63.91
+     ],
+     [
+      51.0,
+      68.87
+     ],
+     [
+      49.8,
+      65.15
+     ]
+    ],
+    "hind_R": [
+     [
+      81.6,
+      68.76
+     ],
+     [
+      91.2,
+      63.91
+     ],
+     [
+      93.0,
+      68.87
+     ],
+     [
+      94.2,
+      65.15
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_hurt_E_001": {
+   "file": "therizinosaurus_hurt_E_001.png",
+   "sha256": "513eb08c156a606564b082f81b15a06ae1be64b2e173a4d46bbd16140adf2087",
+   "bbox": [
+    15,
+    49,
+    125,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      70.68,
+      59.81
+     ],
+     [
+      78.04,
+      53.12
+     ],
+     [
+      74.5,
+      53.7
+     ],
+     [
+      80.0,
+      53.51
+     ]
+    ],
+    "hind_R": [
+     [
+      70.68,
+      75.55
+     ],
+     [
+      78.04,
+      84.61
+     ],
+     [
+      74.5,
+      88.14
+     ],
+     [
+      80.0,
+      89.92
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_hurt_W_001": {
+   "file": "therizinosaurus_hurt_W_001.png",
+   "sha256": "5a25d3567164253637e18ba06b1907dbb451692b35bba676bcf8ac9889b813e5",
+   "bbox": [
+    19,
+    49,
+    129,
+    94
+   ],
+   "joints": {
+    "hind_L": [
+     [
+      73.32,
+      75.55
+     ],
+     [
+      65.96,
+      84.61
+     ],
+     [
+      69.5,
+      88.14
+     ],
+     [
+      64.0,
+      89.92
+     ]
+    ],
+    "hind_R": [
+     [
+      73.32,
+      59.81
+     ],
+     [
+      65.96,
+      53.12
+     ],
+     [
+      69.5,
+      53.7
+     ],
+     [
+      64.0,
+      53.51
+     ]
+    ]
+   },
+   "foot_contact": {
+    "hind_L": true,
+    "hind_R": true
+   }
+  },
+  "therizinosaurus_death_S_000": {
+   "file": "therizinosaurus_death_S_000.png",
+   "sha256": "6741546ccd5cde446912aac48cfd400059f9868e60c96035864fe493ca8e3a13",
+   "bbox": [
+    45,
+    23,
+    99,
+    113
+   ]
+  },
+  "therizinosaurus_death_N_000": {
+   "file": "therizinosaurus_death_N_000.png",
+   "sha256": "4c054fa4c204c9be747af93822048dbbb0876b3141476fe850493bd349d4b306",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ]
+  },
+  "therizinosaurus_death_E_000": {
+   "file": "therizinosaurus_death_E_000.png",
+   "sha256": "44ccd836fd84751f3e0a1c2caed6b3c4adaeede52afe9eab5560fbecc26e5a06",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ]
+  },
+  "therizinosaurus_death_W_000": {
+   "file": "therizinosaurus_death_W_000.png",
+   "sha256": "f4d65acfde1bd4339761592101152505f698e3c3253f615890a5ca82bd303425",
+   "bbox": [
+    16,
+    49,
+    128,
+    94
+   ]
+  },
+  "therizinosaurus_death_S_001": {
+   "file": "therizinosaurus_death_S_001.png",
+   "sha256": "4f0bb569923580be7323f8a4e5a1359afc393e1553cca85f1b1d7d9d312063c8",
+   "bbox": [
+    45,
+    23,
+    99,
+    113
+   ]
+  },
+  "therizinosaurus_death_N_001": {
+   "file": "therizinosaurus_death_N_001.png",
+   "sha256": "c35908bded62aeab282dd47af9bff64b7108418c94df7ed98514d60b6ed096b2",
+   "bbox": [
+    45,
+    18,
+    99,
+    115
+   ]
+  },
+  "therizinosaurus_death_E_001": {
+   "file": "therizinosaurus_death_E_001.png",
+   "sha256": "c0e651395d25d600a840483916ff9bb9553a778e5c38e5122750f0d23c9b77c9",
+   "bbox": [
+    16,
+    49,
+    128,
+    93
+   ]
+  },
+  "therizinosaurus_death_W_001": {
+   "file": "therizinosaurus_death_W_001.png",
+   "sha256": "3e4164c780fb3e5544cd24307bc0b91d3895df007099eac2a9b9ae3a1691c7a5",
+   "bbox": [
+    16,
+    48,
+    128,
+    96
+   ]
+  },
+  "therizinosaurus_death_S_002": {
+   "file": "therizinosaurus_death_S_002.png",
+   "sha256": "5db81b5f01a1d49f45516b48f6b1db9dc02d95a71584efd35d8d0d71094bbad3",
+   "bbox": [
+    49,
+    23,
+    100,
+    114
+   ]
+  },
+  "therizinosaurus_death_N_002": {
+   "file": "therizinosaurus_death_N_002.png",
+   "sha256": "2f8af625503368830d588758658886c4c262f8ba5fb6e9c423de0b1494a0a6d7",
+   "bbox": [
+    44,
+    19,
+    95,
+    115
+   ]
+  },
+  "therizinosaurus_death_E_002": {
+   "file": "therizinosaurus_death_E_002.png",
+   "sha256": "51cdef1284c070b6b2648d65fc2615b83de4d90a4aed0411381559a65b40f752",
+   "bbox": [
+    16,
+    46,
+    125,
+    86
+   ]
+  },
+  "therizinosaurus_death_W_002": {
+   "file": "therizinosaurus_death_W_002.png",
+   "sha256": "ebac1f6477f7d7861294d714dfff27544657f146ad0d8392b93ceb6c1bc009a7",
+   "bbox": [
+    18,
+    48,
+    128,
+    96
+   ]
+  },
+  "therizinosaurus_death_S_003": {
+   "file": "therizinosaurus_death_S_003.png",
+   "sha256": "67e3ac7099848c73ec3c1a770588030a662bfc1b7a828ed8bf7039af397efc08",
+   "bbox": [
+    58,
+    24,
+    107,
+    115
+   ]
+  },
+  "therizinosaurus_death_N_003": {
+   "file": "therizinosaurus_death_N_003.png",
+   "sha256": "79ee8fce3b0603379af8c7d097a20dfb1ec93d9c9ea81a5fafead836e0eb05a9",
+   "bbox": [
+    37,
+    20,
+    86,
+    116
+   ]
+  },
+  "therizinosaurus_death_E_003": {
+   "file": "therizinosaurus_death_E_003.png",
+   "sha256": "34e49426c9ffeef625e3a6ee8e28c099a934321fa280bba3365199aa30bd006d",
+   "bbox": [
+    16,
+    36,
+    124,
+    76
+   ]
+  },
+  "therizinosaurus_death_W_003": {
+   "file": "therizinosaurus_death_W_003.png",
+   "sha256": "7506f1ff80c6a1968a4562849cad834d6e4d4d03db8485350d1e4d62b68b9d57",
+   "bbox": [
+    20,
+    52,
+    128,
+    100
+   ]
+  },
+  "therizinosaurus_death_S_004": {
+   "file": "therizinosaurus_death_S_004.png",
+   "sha256": "27b617909fdd353041600d59b247a5f2a6d0b7381d8fbbee8d1d08f443123e0a",
+   "bbox": [
+    67,
+    26,
+    117,
+    117
+   ]
+  },
+  "therizinosaurus_death_N_004": {
+   "file": "therizinosaurus_death_N_004.png",
+   "sha256": "79fc828210731fa8175bcf53c66ce47b7a955e3659e4a90b3a3fc7273a9d7b52",
+   "bbox": [
+    27,
+    24,
+    77,
+    117
+   ]
+  },
+  "therizinosaurus_death_E_004": {
+   "file": "therizinosaurus_death_E_004.png",
+   "sha256": "03c4ac35b3c1d4abb8b64ddff3431515f3d14579c177a55ac1a97ddbf897922f",
+   "bbox": [
+    16,
+    33,
+    121,
+    79
+   ]
+  },
+  "therizinosaurus_death_W_004": {
+   "file": "therizinosaurus_death_W_004.png",
+   "sha256": "e8cb650c0f0e5cbd6545254b10476ee58a8fc06161a35cf68804cff8b018b09a",
+   "bbox": [
+    23,
+    59,
+    128,
+    107
+   ]
+  },
+  "therizinosaurus_death_S_005": {
+   "file": "therizinosaurus_death_S_005.png",
+   "sha256": "808178460319c287ab576da1e91d05fcf3295a436a077f6d870403666a2fec3c",
+   "bbox": [
+    70,
+    26,
+    119,
+    117
+   ]
+  },
+  "therizinosaurus_death_N_005": {
+   "file": "therizinosaurus_death_N_005.png",
+   "sha256": "5f99e12d9b5ba80f189300c17d1afb471e7d052bf824a1925bdc42b4c7983ea2",
+   "bbox": [
+    25,
+    27,
+    74,
+    118
+   ]
+  },
+  "therizinosaurus_death_E_005": {
+   "file": "therizinosaurus_death_E_005.png",
+   "sha256": "2e309fcaab1524fd6bdfd9917b65227f7a8961392db8951719deecea10a023a3",
+   "bbox": [
+    16,
+    33,
+    119,
+    82
+   ]
+  },
+  "therizinosaurus_death_W_005": {
+   "file": "therizinosaurus_death_W_005.png",
+   "sha256": "27214df92ac4908fd58fcc77f54b7f2693f184d2d46283c4df57243bab6aea3d",
+   "bbox": [
+    25,
+    62,
+    128,
+    111
+   ]
+  }
+ }
+}

@@ -1,0 +1,5403 @@
+{
+ "species": "microraptor",
+ "canvas": [
+  144,
+  144
+ ],
+ "origin": [
+  72,
+  72
+ ],
+ "model_scale": 1.0,
+ "visual_scale": 1,
+ "camera": {
+  "image_x": "x",
+  "image_up": "0.82*y + 0.36*z",
+  "light": [
+   -0.4915,
+   0.4129,
+   0.7668
+  ],
+  "note": "Same fixed overhead camera and light for every direction; each direction is its own render."
+ },
+ "skeleton": {
+  "locomotion": "flap",
+  "quadruped": false,
+  "hip_height": 6.89,
+  "chains": [
+   "forewing_L",
+   "forewing_R",
+   "hindwing_L",
+   "hindwing_R"
+  ],
+  "attack_style": "claws"
+ },
+ "states": {
+  "idle": {
+   "frames": 4,
+   "fps": 4,
+   "loop": true,
+   "contact_frame": null
+  },
+  "walk": {
+   "frames": 6,
+   "fps": 8,
+   "loop": true,
+   "contact_frame": null
+  },
+  "run": {
+   "frames": 6,
+   "fps": 12,
+   "loop": true,
+   "contact_frame": null
+  },
+  "attack": {
+   "frames": 6,
+   "fps": 12,
+   "loop": false,
+   "contact_frame": 3
+  },
+  "hurt": {
+   "frames": 2,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  },
+  "death": {
+   "frames": 6,
+   "fps": 8,
+   "loop": false,
+   "contact_frame": null
+  }
+ },
+ "frames": {
+  "microraptor_idle_S_000": {
+   "file": "microraptor_idle_S_000.png",
+   "sha256": "dcea5fc627d8b2a3cf2531bec396acfd5cb8a124806501a4e543142128e2564b",
+   "bbox": [
+    51,
+    43,
+    93,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.58
+     ],
+     [
+      92.02,
+      69.59
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.38
+     ],
+     [
+      81.92,
+      53.05
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.58
+     ],
+     [
+      51.98,
+      69.59
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.38
+     ],
+     [
+      62.08,
+      53.05
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_N_000": {
+   "file": "microraptor_idle_N_000.png",
+   "sha256": "38985eb262bc52f47a2488af0cc0ef2c271d8ce66d27eeb03e0e4adce22eae3c",
+   "bbox": [
+    51,
+    53,
+    93,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.38
+     ],
+     [
+      51.98,
+      66.31
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.02
+     ],
+     [
+      62.08,
+      86.67
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.38
+     ],
+     [
+      92.02,
+      66.31
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.02
+     ],
+     [
+      81.92,
+      86.67
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_E_000": {
+   "file": "microraptor_idle_E_000.png",
+   "sha256": "e7a822c93f78fd5360c29e93a2d9e671cec3c2528a44caecbb4a096e17c175a9",
+   "bbox": [
+    40,
+    51,
+    91,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.0
+     ],
+     [
+      74.0,
+      51.53
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.56
+     ],
+     [
+      51.5,
+      61.72
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.96
+     ],
+     [
+      74.0,
+      84.37
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.84
+     ],
+     [
+      51.5,
+      77.99
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_W_000": {
+   "file": "microraptor_idle_W_000.png",
+   "sha256": "088997663ebda6603dfcfe7fc132cd0e8b2c9d3637c536f0e470dfa384dae6d6",
+   "bbox": [
+    53,
+    51,
+    104,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.96
+     ],
+     [
+      70.0,
+      84.37
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.84
+     ],
+     [
+      92.5,
+      77.99
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.0
+     ],
+     [
+      70.0,
+      51.53
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.56
+     ],
+     [
+      92.5,
+      61.72
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_S_001": {
+   "file": "microraptor_idle_S_001.png",
+   "sha256": "1468f69d773af544ab0281e73cd37d7e678ac117926b4b88482f353eb9ceaccc",
+   "bbox": [
+    51,
+    43,
+    93,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.62
+     ],
+     [
+      92.4,
+      70.42
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.42
+     ],
+     [
+      81.98,
+      53.43
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.62
+     ],
+     [
+      51.6,
+      70.42
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.42
+     ],
+     [
+      62.02,
+      53.43
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_N_001": {
+   "file": "microraptor_idle_N_001.png",
+   "sha256": "fe00f61701519cd5479f2fd12a50447346e317930d70b39b73e04ef78bddd8c1",
+   "bbox": [
+    51,
+    53,
+    93,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.42
+     ],
+     [
+      51.6,
+      67.14
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.06
+     ],
+     [
+      62.02,
+      87.05
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.42
+     ],
+     [
+      92.4,
+      67.14
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.06
+     ],
+     [
+      81.98,
+      87.05
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_E_001": {
+   "file": "microraptor_idle_E_001.png",
+   "sha256": "8e5833bb3e65d6725c94ff306a5a4e05c9465b5b256e0c9c926a2cacdf0806b6",
+   "bbox": [
+    40,
+    51,
+    91,
+    86
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.04
+     ],
+     [
+      74.0,
+      52.06
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.6
+     ],
+     [
+      51.5,
+      62.05
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.99
+     ],
+     [
+      74.0,
+      85.51
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.88
+     ],
+     [
+      51.5,
+      78.42
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_W_001": {
+   "file": "microraptor_idle_W_001.png",
+   "sha256": "b2b33e57c2629621eb4d1ba1103ded21bb716b04410ea60f688e8022e1ace39d",
+   "bbox": [
+    53,
+    51,
+    104,
+    86
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.99
+     ],
+     [
+      70.0,
+      85.51
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.88
+     ],
+     [
+      92.5,
+      78.42
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.04
+     ],
+     [
+      70.0,
+      52.06
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.6
+     ],
+     [
+      92.5,
+      62.05
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_S_002": {
+   "file": "microraptor_idle_S_002.png",
+   "sha256": "93ed6bd926c39f0ae1d9d09ddd00c23df132c62fe66b80b97c8ca9ff0a5a63cd",
+   "bbox": [
+    51,
+    43,
+    93,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.65
+     ],
+     [
+      92.51,
+      71.27
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.45
+     ],
+     [
+      81.92,
+      53.81
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.65
+     ],
+     [
+      51.49,
+      71.27
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.45
+     ],
+     [
+      62.08,
+      53.81
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_N_002": {
+   "file": "microraptor_idle_N_002.png",
+   "sha256": "199adbd0a5e45e82fc4e936cf894856f25d51fe4a901a5848cad3315216d400b",
+   "bbox": [
+    51,
+    53,
+    93,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.45
+     ],
+     [
+      51.49,
+      67.99
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.09
+     ],
+     [
+      62.08,
+      87.43
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.45
+     ],
+     [
+      92.51,
+      67.99
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.09
+     ],
+     [
+      81.92,
+      87.43
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_E_002": {
+   "file": "microraptor_idle_E_002.png",
+   "sha256": "a24f91cfd52199051a51c0abb1ff5bf7273bec2a220eb7cdf4f7475882192916",
+   "bbox": [
+    40,
+    52,
+    91,
+    87
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.08
+     ],
+     [
+      74.0,
+      52.81
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.63
+     ],
+     [
+      51.5,
+      62.48
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      71.03
+     ],
+     [
+      74.0,
+      86.44
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.91
+     ],
+     [
+      51.5,
+      78.76
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_W_002": {
+   "file": "microraptor_idle_W_002.png",
+   "sha256": "a5c5b200449190a5c0e442acacb3a39d77da802d6f85ab6a2339ce31831e76d8",
+   "bbox": [
+    53,
+    52,
+    104,
+    87
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      71.03
+     ],
+     [
+      70.0,
+      86.44
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.91
+     ],
+     [
+      92.5,
+      78.76
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.08
+     ],
+     [
+      70.0,
+      52.81
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.63
+     ],
+     [
+      92.5,
+      62.48
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_S_003": {
+   "file": "microraptor_idle_S_003.png",
+   "sha256": "c6cf68c448058c28b5a7aa5952996a23d5eb3fe3adcfdc8f6e95cf10fe257b15",
+   "bbox": [
+    51,
+    43,
+    93,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.62
+     ],
+     [
+      92.4,
+      70.42
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.42
+     ],
+     [
+      81.98,
+      53.43
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.62
+     ],
+     [
+      51.6,
+      70.42
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.42
+     ],
+     [
+      62.02,
+      53.43
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_N_003": {
+   "file": "microraptor_idle_N_003.png",
+   "sha256": "f87da98935ba2a569d60d6ba02b63c3f88c7e81fcb458338a555043c28760be2",
+   "bbox": [
+    51,
+    53,
+    93,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.42
+     ],
+     [
+      51.6,
+      67.14
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.06
+     ],
+     [
+      62.02,
+      87.05
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.42
+     ],
+     [
+      92.4,
+      67.14
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.06
+     ],
+     [
+      81.98,
+      87.05
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_E_003": {
+   "file": "microraptor_idle_E_003.png",
+   "sha256": "1e4e74587c56fc267d870140a83a6950e00e6189df4eda32759428ff0a9426cb",
+   "bbox": [
+    40,
+    51,
+    91,
+    86
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.04
+     ],
+     [
+      74.0,
+      52.06
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.6
+     ],
+     [
+      51.5,
+      62.05
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.99
+     ],
+     [
+      74.0,
+      85.51
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.88
+     ],
+     [
+      51.5,
+      78.42
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_idle_W_003": {
+   "file": "microraptor_idle_W_003.png",
+   "sha256": "4cfd5fb6156035d4370c4bb75442391cc2465412352075ac3b1be39ad57bae75",
+   "bbox": [
+    53,
+    51,
+    104,
+    86
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.99
+     ],
+     [
+      70.0,
+      85.51
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.88
+     ],
+     [
+      92.5,
+      78.42
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.04
+     ],
+     [
+      70.0,
+      52.06
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.6
+     ],
+     [
+      92.5,
+      62.05
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_S_000": {
+   "file": "microraptor_walk_S_000.png",
+   "sha256": "48ebb4942c13f0b3a4918f9b88c846a4c55ab658c9c1dca729440ba7ed41bbf5",
+   "bbox": [
+    52,
+    43,
+    92,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.58
+     ],
+     [
+      90.57,
+      68.13
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.38
+     ],
+     [
+      81.81,
+      52.79
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.58
+     ],
+     [
+      53.43,
+      68.13
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.38
+     ],
+     [
+      62.19,
+      52.79
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_N_000": {
+   "file": "microraptor_walk_N_000.png",
+   "sha256": "f168a1786b2b292355f2d3075aa3edc8a7e6441405c220cb617f3d726f703418",
+   "bbox": [
+    53,
+    53,
+    91,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.38
+     ],
+     [
+      53.43,
+      64.85
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.02
+     ],
+     [
+      62.19,
+      86.41
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.38
+     ],
+     [
+      90.57,
+      64.85
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.02
+     ],
+     [
+      81.81,
+      86.41
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_E_000": {
+   "file": "microraptor_walk_E_000.png",
+   "sha256": "cdf723083b7bd8643ee04c46053e24a08a1b3c9234a95b21252663c6b2508663",
+   "bbox": [
+    40,
+    51,
+    91,
+    83
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.0
+     ],
+     [
+      74.0,
+      51.27
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.56
+     ],
+     [
+      51.5,
+      61.56
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.96
+     ],
+     [
+      74.0,
+      81.72
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.84
+     ],
+     [
+      51.5,
+      77.64
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_W_000": {
+   "file": "microraptor_walk_W_000.png",
+   "sha256": "86cfc31db868ee06a125da859ff35b36a9fce61d15bbcf76560977ebad2867fe",
+   "bbox": [
+    53,
+    51,
+    104,
+    83
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.96
+     ],
+     [
+      70.0,
+      81.72
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.84
+     ],
+     [
+      92.5,
+      77.64
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.0
+     ],
+     [
+      70.0,
+      51.27
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.56
+     ],
+     [
+      92.5,
+      61.56
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_S_001": {
+   "file": "microraptor_walk_S_001.png",
+   "sha256": "58bd69503a51d985fdd24e2d3538eb433f93f88ebd5d5b1a4be1bfb66eccc875",
+   "bbox": [
+    51,
+    43,
+    93,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.41
+     ],
+     [
+      91.76,
+      69.06
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.21
+     ],
+     [
+      81.94,
+      52.92
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.41
+     ],
+     [
+      52.24,
+      69.06
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.21
+     ],
+     [
+      62.06,
+      52.92
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_N_001": {
+   "file": "microraptor_walk_N_001.png",
+   "sha256": "9904aa3916a7de5e15955512eb27cbd046d30073e29e489a73e6d81fb7e5123f",
+   "bbox": [
+    51,
+    53,
+    93,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.21
+     ],
+     [
+      52.24,
+      65.78
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      70.85
+     ],
+     [
+      62.06,
+      86.54
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.21
+     ],
+     [
+      91.76,
+      65.78
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      70.85
+     ],
+     [
+      81.94,
+      86.54
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_E_001": {
+   "file": "microraptor_walk_E_001.png",
+   "sha256": "a148a3de50503ddd816ee9e326caa945175d2cf2bb60d7e61bcd7bcd7fccb5a8",
+   "bbox": [
+    40,
+    51,
+    91,
+    84
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      67.83
+     ],
+     [
+      74.0,
+      51.22
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.39
+     ],
+     [
+      51.5,
+      61.58
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.78
+     ],
+     [
+      74.0,
+      83.62
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.67
+     ],
+     [
+      51.5,
+      77.88
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_W_001": {
+   "file": "microraptor_walk_W_001.png",
+   "sha256": "fd2c38f4dccb8b23ab734ae520d12a1125942cff89adcfac299cb1e6b22d8313",
+   "bbox": [
+    53,
+    51,
+    104,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.78
+     ],
+     [
+      70.0,
+      83.62
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.67
+     ],
+     [
+      92.5,
+      77.88
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      67.83
+     ],
+     [
+      70.0,
+      51.22
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.39
+     ],
+     [
+      92.5,
+      61.58
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_S_002": {
+   "file": "microraptor_walk_S_002.png",
+   "sha256": "0a6a54837fdb219005dafd7f2dc12a4f17fabd5cc0eb375f83da59b8f3f53230",
+   "bbox": [
+    51,
+    43,
+    93,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.41
+     ],
+     [
+      92.47,
+      71.39
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.21
+     ],
+     [
+      81.94,
+      53.52
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.41
+     ],
+     [
+      51.53,
+      71.39
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.21
+     ],
+     [
+      62.06,
+      53.52
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_N_002": {
+   "file": "microraptor_walk_N_002.png",
+   "sha256": "58397c069327e9dfef264a920356de5988b5b39dcd42f3d1483f233c6a8f8a6d",
+   "bbox": [
+    51,
+    53,
+    93,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.21
+     ],
+     [
+      51.53,
+      68.11
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      70.85
+     ],
+     [
+      62.06,
+      87.14
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.21
+     ],
+     [
+      92.47,
+      68.11
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      70.85
+     ],
+     [
+      81.94,
+      87.14
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_E_002": {
+   "file": "microraptor_walk_E_002.png",
+   "sha256": "e8d2468c8621b5abf7f71bb07c69527f57c62b944fa617705b83460bf7aab7d8",
+   "bbox": [
+    40,
+    52,
+    91,
+    87
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      67.83
+     ],
+     [
+      74.0,
+      52.97
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.39
+     ],
+     [
+      51.5,
+      62.18
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.78
+     ],
+     [
+      74.0,
+      86.54
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.67
+     ],
+     [
+      51.5,
+      78.48
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_W_002": {
+   "file": "microraptor_walk_W_002.png",
+   "sha256": "47804d28f5aaaeb9c31114634132bac70c49c4568954879853b660caa90633b5",
+   "bbox": [
+    53,
+    52,
+    104,
+    87
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.78
+     ],
+     [
+      70.0,
+      86.54
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.67
+     ],
+     [
+      92.5,
+      78.48
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      67.83
+     ],
+     [
+      70.0,
+      52.97
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.39
+     ],
+     [
+      92.5,
+      62.18
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_S_003": {
+   "file": "microraptor_walk_S_003.png",
+   "sha256": "db915f96e81306421df732c6f1d067c09782e11bb326342e9d4591d265306684",
+   "bbox": [
+    51,
+    43,
+    93,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.58
+     ],
+     [
+      91.97,
+      72.73
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.38
+     ],
+     [
+      81.81,
+      53.99
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.58
+     ],
+     [
+      52.03,
+      72.73
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.38
+     ],
+     [
+      62.19,
+      53.99
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_N_003": {
+   "file": "microraptor_walk_N_003.png",
+   "sha256": "e046ff5021fa8e9403cf5e65928304fb11cd56d11330fdd07821e5e132c8effe",
+   "bbox": [
+    51,
+    53,
+    93,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.38
+     ],
+     [
+      52.03,
+      69.45
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.02
+     ],
+     [
+      62.19,
+      87.61
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.38
+     ],
+     [
+      91.97,
+      69.45
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.02
+     ],
+     [
+      81.81,
+      87.61
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_E_003": {
+   "file": "microraptor_walk_E_003.png",
+   "sha256": "fc812bc99d248b46cdd7226b6a8bc3771a4beabacb87c14a2d2eeb286fede46e",
+   "bbox": [
+    40,
+    54,
+    91,
+    88
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.0
+     ],
+     [
+      74.0,
+      54.71
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.56
+     ],
+     [
+      51.5,
+      62.76
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.96
+     ],
+     [
+      74.0,
+      87.46
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.84
+     ],
+     [
+      51.5,
+      78.84
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_W_003": {
+   "file": "microraptor_walk_W_003.png",
+   "sha256": "85c1a699514acafc85b48f9a52567dcdd45120e9b06eaee76cc54ddabbf582cc",
+   "bbox": [
+    53,
+    54,
+    104,
+    88
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.96
+     ],
+     [
+      70.0,
+      87.46
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.84
+     ],
+     [
+      92.5,
+      78.84
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.0
+     ],
+     [
+      70.0,
+      54.71
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.56
+     ],
+     [
+      92.5,
+      62.76
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_S_004": {
+   "file": "microraptor_walk_S_004.png",
+   "sha256": "274c0014dd070c6f71ce8fb947d83a63edc8bef7185145db0a730e5edabed29f",
+   "bbox": [
+    52,
+    44,
+    92,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.75
+     ],
+     [
+      91.07,
+      67.88
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.55
+     ],
+     [
+      78.81,
+      53.05
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.75
+     ],
+     [
+      52.93,
+      67.88
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.55
+     ],
+     [
+      65.19,
+      53.05
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_N_004": {
+   "file": "microraptor_walk_N_004.png",
+   "sha256": "46432e4be7c895fb7253448a0b7e52a507c9461053b9eb73e65a559fe9fe6f40",
+   "bbox": [
+    52,
+    53,
+    92,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.55
+     ],
+     [
+      52.93,
+      72.3
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.19
+     ],
+     [
+      65.19,
+      88.3
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.55
+     ],
+     [
+      91.07,
+      72.3
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.19
+     ],
+     [
+      78.81,
+      88.3
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_E_004": {
+   "file": "microraptor_walk_E_004.png",
+   "sha256": "9c91eac3fe56d4639dfa0f222fbed40e25c682476fe1fbed8ad528eb5a08fb8a",
+   "bbox": [
+    40,
+    53,
+    91,
+    87
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.18
+     ],
+     [
+      69.3,
+      54.46
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.73
+     ],
+     [
+      50.5,
+      65.09
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      71.13
+     ],
+     [
+      69.3,
+      85.73
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      72.01
+     ],
+     [
+      50.5,
+      76.26
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_W_004": {
+   "file": "microraptor_walk_W_004.png",
+   "sha256": "96d97e19bead88300fab71ea5e9638fe063062a78ffaeb13733f0a7f6301131b",
+   "bbox": [
+    53,
+    53,
+    104,
+    87
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      71.13
+     ],
+     [
+      74.7,
+      85.73
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      72.01
+     ],
+     [
+      93.5,
+      76.26
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.18
+     ],
+     [
+      74.7,
+      54.46
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.73
+     ],
+     [
+      93.5,
+      65.09
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_S_005": {
+   "file": "microraptor_walk_S_005.png",
+   "sha256": "e94cc8df5d944d75a2bf0fbe002d56a58a99f2503acbe031343debe4496641b0",
+   "bbox": [
+    53,
+    44,
+    91,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.75
+     ],
+     [
+      90.39,
+      65.7
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.55
+     ],
+     [
+      78.81,
+      52.44
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.75
+     ],
+     [
+      53.61,
+      65.7
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.55
+     ],
+     [
+      65.19,
+      52.44
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_N_005": {
+   "file": "microraptor_walk_N_005.png",
+   "sha256": "d4260464a4e640dd5eede1a58854957686c7db2f29f1d745679e2f3d7a469c1f",
+   "bbox": [
+    53,
+    53,
+    91,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.55
+     ],
+     [
+      53.61,
+      69.82
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.19
+     ],
+     [
+      65.19,
+      87.7
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.55
+     ],
+     [
+      90.39,
+      69.82
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.19
+     ],
+     [
+      78.81,
+      87.7
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_E_005": {
+   "file": "microraptor_walk_E_005.png",
+   "sha256": "c30c2efdfb6272f02595476126413f020a3893a2552f399de05c1f9b86e12a7e",
+   "bbox": [
+    40,
+    52,
+    91,
+    84
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.18
+     ],
+     [
+      69.49,
+      52.69
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.73
+     ],
+     [
+      50.5,
+      64.48
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      71.13
+     ],
+     [
+      69.49,
+      82.84
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      72.01
+     ],
+     [
+      50.5,
+      75.66
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_walk_W_005": {
+   "file": "microraptor_walk_W_005.png",
+   "sha256": "62604b5a6d5afb1067a622e5415a2b76c42c2cff8ea1582682f82d3ed6a06f2e",
+   "bbox": [
+    53,
+    52,
+    104,
+    84
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      71.13
+     ],
+     [
+      74.51,
+      82.84
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      72.01
+     ],
+     [
+      93.5,
+      75.66
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.18
+     ],
+     [
+      74.51,
+      52.69
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.73
+     ],
+     [
+      93.5,
+      64.48
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_S_000": {
+   "file": "microraptor_run_S_000.png",
+   "sha256": "5f58d0cc47fe41037c87dcd2a590375ad6dc596b394ea985ec6780c862c35e0a",
+   "bbox": [
+    55,
+    43,
+    89,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.58
+     ],
+     [
+      88.0,
+      66.73
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.38
+     ],
+     [
+      81.47,
+      52.38
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.58
+     ],
+     [
+      56.0,
+      66.73
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.38
+     ],
+     [
+      62.53,
+      52.38
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_N_000": {
+   "file": "microraptor_run_N_000.png",
+   "sha256": "77dc72e9fb92a0d358d595e96d71cb126814392ae105d567cdb70747c568c0a8",
+   "bbox": [
+    55,
+    53,
+    89,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.38
+     ],
+     [
+      56.0,
+      63.45
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.02
+     ],
+     [
+      62.53,
+      86.0
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.38
+     ],
+     [
+      88.0,
+      63.45
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.02
+     ],
+     [
+      81.47,
+      86.0
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_E_000": {
+   "file": "microraptor_run_E_000.png",
+   "sha256": "d32d823bfbdfcfd63ec44109d8eb817a5f6b12d1eff55e524048f62a3f1e8601",
+   "bbox": [
+    40,
+    51,
+    91,
+    80
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.0
+     ],
+     [
+      74.0,
+      51.98
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.56
+     ],
+     [
+      51.5,
+      61.42
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.96
+     ],
+     [
+      74.0,
+      78.21
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.84
+     ],
+     [
+      51.5,
+      76.95
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_W_000": {
+   "file": "microraptor_run_W_000.png",
+   "sha256": "511e2cf217b5eaeb2d524e9c958760f3466299d3d5b753bd16b95e5b3a4ffc8f",
+   "bbox": [
+    53,
+    51,
+    104,
+    80
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.96
+     ],
+     [
+      70.0,
+      78.21
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.84
+     ],
+     [
+      92.5,
+      76.95
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.0
+     ],
+     [
+      70.0,
+      51.98
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.56
+     ],
+     [
+      92.5,
+      61.42
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_S_001": {
+   "file": "microraptor_run_S_001.png",
+   "sha256": "22096a53b13afc7cef922a6a3c7b0d957ef7e7d99a8a4139684d21c667fec284",
+   "bbox": [
+    52,
+    43,
+    92,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.41
+     ],
+     [
+      90.96,
+      68.27
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.21
+     ],
+     [
+      81.85,
+      52.7
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.41
+     ],
+     [
+      53.04,
+      68.27
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.21
+     ],
+     [
+      62.15,
+      52.7
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_N_001": {
+   "file": "microraptor_run_N_001.png",
+   "sha256": "f1bd8f7c947cc330cf68953af67d478bace8499009f7c0241ac15bc533b5a7a4",
+   "bbox": [
+    52,
+    53,
+    92,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.21
+     ],
+     [
+      53.04,
+      64.99
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      70.85
+     ],
+     [
+      62.15,
+      86.32
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.21
+     ],
+     [
+      90.96,
+      64.99
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      70.85
+     ],
+     [
+      81.85,
+      86.32
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_E_001": {
+   "file": "microraptor_run_E_001.png",
+   "sha256": "0d12097834153b3e20ea41e26b2b92e7423dcd81f570c8f7d0c7fd7c62a68d1e",
+   "bbox": [
+    40,
+    50,
+    91,
+    83
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      67.83
+     ],
+     [
+      74.0,
+      51.08
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.39
+     ],
+     [
+      51.5,
+      61.43
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.78
+     ],
+     [
+      74.0,
+      82.18
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.67
+     ],
+     [
+      51.5,
+      77.59
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_W_001": {
+   "file": "microraptor_run_W_001.png",
+   "sha256": "7e3ccab3b7ca42908fc9bd978520d5d12c8556c9ff62566397ee163b64038891",
+   "bbox": [
+    53,
+    50,
+    104,
+    83
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.78
+     ],
+     [
+      70.0,
+      82.18
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.67
+     ],
+     [
+      92.5,
+      77.59
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      67.83
+     ],
+     [
+      70.0,
+      51.08
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.39
+     ],
+     [
+      92.5,
+      61.43
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_S_002": {
+   "file": "microraptor_run_S_002.png",
+   "sha256": "6c4bdc57fc9ec893c7f93e41f10dba91488a633dfc97b38ba993e1295377fd91",
+   "bbox": [
+    51,
+    43,
+    93,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.41
+     ],
+     [
+      92.17,
+      72.23
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.21
+     ],
+     [
+      81.85,
+      53.73
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.41
+     ],
+     [
+      51.83,
+      72.23
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.21
+     ],
+     [
+      62.15,
+      53.73
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_N_002": {
+   "file": "microraptor_run_N_002.png",
+   "sha256": "594eadb35f106a9a49cbef261a3fb97c0da13d01f4d2512519a409ef35ed2788",
+   "bbox": [
+    51,
+    53,
+    93,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.21
+     ],
+     [
+      51.83,
+      68.95
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      70.85
+     ],
+     [
+      62.15,
+      87.35
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.21
+     ],
+     [
+      92.17,
+      68.95
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      70.85
+     ],
+     [
+      81.85,
+      87.35
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_E_002": {
+   "file": "microraptor_run_E_002.png",
+   "sha256": "c86ac8cc292b5e61b8d3d853bb48a5a00c4d1b406e3dfc411935c2b4e2549529",
+   "bbox": [
+    40,
+    53,
+    91,
+    88
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      67.83
+     ],
+     [
+      74.0,
+      54.05
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.39
+     ],
+     [
+      51.5,
+      62.46
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.78
+     ],
+     [
+      74.0,
+      87.12
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.67
+     ],
+     [
+      51.5,
+      78.62
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_W_002": {
+   "file": "microraptor_run_W_002.png",
+   "sha256": "d426b566cde6e4a6b1bfa93736103ad13a740211b00b43904453e2802cc9e70a",
+   "bbox": [
+    53,
+    53,
+    104,
+    88
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.78
+     ],
+     [
+      70.0,
+      87.12
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.67
+     ],
+     [
+      92.5,
+      78.62
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      67.83
+     ],
+     [
+      70.0,
+      54.05
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.39
+     ],
+     [
+      92.5,
+      62.46
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_S_003": {
+   "file": "microraptor_run_S_003.png",
+   "sha256": "346aff1116e8e29f720e93da3875e9078e2655a735d970d300d7d0c74c52c256",
+   "bbox": [
+    53,
+    43,
+    91,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.58
+     ],
+     [
+      90.3,
+      74.29
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.38
+     ],
+     [
+      81.47,
+      54.4
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.58
+     ],
+     [
+      53.7,
+      74.29
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.38
+     ],
+     [
+      62.53,
+      54.4
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_N_003": {
+   "file": "microraptor_run_N_003.png",
+   "sha256": "da631b7c0b0cd587b58aef7cf35c02b8b479ae5394d97d63e9d6c7171d4ed21f",
+   "bbox": [
+    53,
+    53,
+    91,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.38
+     ],
+     [
+      53.7,
+      71.01
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.02
+     ],
+     [
+      62.53,
+      88.02
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.38
+     ],
+     [
+      90.3,
+      71.01
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.02
+     ],
+     [
+      81.47,
+      88.02
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_E_003": {
+   "file": "microraptor_run_E_003.png",
+   "sha256": "90db256c9757c5e31376be9abb4be119f27ff04fca002431be34bf74d3198f53",
+   "bbox": [
+    40,
+    57,
+    91,
+    88
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.0
+     ],
+     [
+      74.0,
+      57.65
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.56
+     ],
+     [
+      51.5,
+      63.45
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      70.96
+     ],
+     [
+      74.0,
+      87.66
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      71.84
+     ],
+     [
+      51.5,
+      78.98
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_W_003": {
+   "file": "microraptor_run_W_003.png",
+   "sha256": "c6ce4e9963f71245c4347d39131ddfad4de3879ef7f99705ed9b12fa1d4455c8",
+   "bbox": [
+    53,
+    57,
+    104,
+    88
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      70.96
+     ],
+     [
+      70.0,
+      87.66
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      71.84
+     ],
+     [
+      92.5,
+      78.98
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.0
+     ],
+     [
+      70.0,
+      57.65
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.56
+     ],
+     [
+      92.5,
+      63.45
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_S_004": {
+   "file": "microraptor_run_S_004.png",
+   "sha256": "23b556cbac2bdc7eb66268262df4fd99c37ca07e1b3101f8bb147bd0361bdabc",
+   "bbox": [
+    54,
+    44,
+    90,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.75
+     ],
+     [
+      89.22,
+      66.48
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.55
+     ],
+     [
+      76.58,
+      52.96
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.75
+     ],
+     [
+      54.78,
+      66.48
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.55
+     ],
+     [
+      67.42,
+      52.96
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_N_004": {
+   "file": "microraptor_run_N_004.png",
+   "sha256": "036a25dc684a006d117736b3be8f49c2f5c256f4e067d04b1342ddd70ad77166",
+   "bbox": [
+    54,
+    53,
+    90,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.55
+     ],
+     [
+      54.78,
+      75.38
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.19
+     ],
+     [
+      67.42,
+      88.81
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.55
+     ],
+     [
+      89.22,
+      75.38
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.19
+     ],
+     [
+      76.58,
+      88.81
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_E_004": {
+   "file": "microraptor_run_E_004.png",
+   "sha256": "12b06e2e3a8d509a228d52b043c47b8730845aaf10028af513807ed8594409c8",
+   "bbox": [
+    40,
+    56,
+    91,
+    86
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.18
+     ],
+     [
+      66.57,
+      56.81
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.73
+     ],
+     [
+      50.14,
+      67.13
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      71.13
+     ],
+     [
+      66.57,
+      85.05
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      72.01
+     ],
+     [
+      50.14,
+      74.64
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_W_004": {
+   "file": "microraptor_run_W_004.png",
+   "sha256": "87147d09980724baf22a7ff25aabb94d775c769cc3fa093a91b0e96c011e86a0",
+   "bbox": [
+    53,
+    56,
+    104,
+    86
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      71.13
+     ],
+     [
+      77.43,
+      85.05
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      72.01
+     ],
+     [
+      93.86,
+      74.64
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.18
+     ],
+     [
+      77.43,
+      56.81
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.73
+     ],
+     [
+      93.86,
+      67.13
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_S_005": {
+   "file": "microraptor_run_S_005.png",
+   "sha256": "2047256fbb95af66a046d8cd5c2c5a95c51331891dbb7a5f8e5b96fe5f33fbcc",
+   "bbox": [
+    55,
+    44,
+    89,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.75
+     ],
+     [
+      88.12,
+      62.93
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.55
+     ],
+     [
+      76.58,
+      51.93
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.75
+     ],
+     [
+      55.88,
+      62.93
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.55
+     ],
+     [
+      67.42,
+      51.93
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_N_005": {
+   "file": "microraptor_run_N_005.png",
+   "sha256": "f4da240cb24e9e544ad360a832256583cec33638b7e46db7764ed8482794d124",
+   "bbox": [
+    55,
+    53,
+    89,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.55
+     ],
+     [
+      55.88,
+      71.01
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.19
+     ],
+     [
+      67.42,
+      87.79
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.55
+     ],
+     [
+      88.12,
+      71.01
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.19
+     ],
+     [
+      76.58,
+      87.79
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_E_005": {
+   "file": "microraptor_run_E_005.png",
+   "sha256": "69289351b9d5bba9973ddf1609cd1fbdb85fad008d32176738a829b7dc831319",
+   "bbox": [
+    40,
+    53,
+    91,
+    81
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.0,
+      68.18
+     ],
+     [
+      67.07,
+      53.75
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.0,
+      68.73
+     ],
+     [
+      50.14,
+      66.1
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.0,
+      71.13
+     ],
+     [
+      67.07,
+      80.19
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.0,
+      72.01
+     ],
+     [
+      50.14,
+      73.61
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_run_W_005": {
+   "file": "microraptor_run_W_005.png",
+   "sha256": "a8682776644841419442733e3c78a7caca55f525726268c3da433c6b53a69134",
+   "bbox": [
+    53,
+    53,
+    104,
+    81
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.0,
+      71.13
+     ],
+     [
+      76.93,
+      80.19
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.0,
+      72.01
+     ],
+     [
+      93.86,
+      73.61
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.0,
+      68.18
+     ],
+     [
+      76.93,
+      53.75
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.0,
+      68.73
+     ],
+     [
+      93.86,
+      66.1
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_S_000": {
+   "file": "microraptor_attack_S_000.png",
+   "sha256": "f55fc566dbc7aaa25f3328c82f4d10e91ac8b76aebc10565c585e650474fc730",
+   "bbox": [
+    52,
+    43,
+    92,
+    83
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      72.92
+     ],
+     [
+      91.32,
+      67.88
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      68.91
+     ],
+     [
+      81.89,
+      52.81
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      72.92
+     ],
+     [
+      52.68,
+      67.88
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      68.91
+     ],
+     [
+      62.11,
+      52.81
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_N_000": {
+   "file": "microraptor_attack_N_000.png",
+   "sha256": "2278f2e1dd95e196143848793720eaee3e9dc9cdc69e8c29f4879f6565999802",
+   "bbox": [
+    52,
+    53,
+    92,
+    98
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.86
+     ],
+     [
+      52.68,
+      66.28
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.52
+     ],
+     [
+      62.11,
+      87.46
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.86
+     ],
+     [
+      91.32,
+      66.28
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.52
+     ],
+     [
+      81.89,
+      87.46
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_E_000": {
+   "file": "microraptor_attack_E_000.png",
+   "sha256": "6451b750299a17dd96348295b6e3e6c8a571ba689eb278ac6a9d35580daa10b5",
+   "bbox": [
+    39,
+    51,
+    90,
+    84
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      76.3,
+      67.91
+     ],
+     [
+      72.97,
+      51.24
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.41,
+      68.58
+     ],
+     [
+      50.87,
+      62.03
+     ]
+    ],
+    "forewing_R": [
+     [
+      76.3,
+      70.87
+     ],
+     [
+      72.97,
+      82.92
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.41,
+      71.86
+     ],
+     [
+      50.87,
+      78.25
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_W_000": {
+   "file": "microraptor_attack_W_000.png",
+   "sha256": "e6b6f4c59b5344beee0ed5a24e22926d848c80820bae5593919425b5a48f545c",
+   "bbox": [
+    54,
+    51,
+    105,
+    84
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.7,
+      70.87
+     ],
+     [
+      71.03,
+      82.92
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.59,
+      71.86
+     ],
+     [
+      93.13,
+      78.25
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.7,
+      67.91
+     ],
+     [
+      71.03,
+      51.24
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.59,
+      68.58
+     ],
+     [
+      93.13,
+      62.03
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_S_001": {
+   "file": "microraptor_attack_S_001.png",
+   "sha256": "cee3999c16d8e8ee59d0ee53d82d9734629976baa5c16f7c5b668b350a0fb1ba",
+   "bbox": [
+    54,
+    43,
+    90,
+    82
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      72.29
+     ],
+     [
+      89.28,
+      64.47
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      68.4
+     ],
+     [
+      80.51,
+      51.79
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      72.29
+     ],
+     [
+      54.72,
+      64.47
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      68.4
+     ],
+     [
+      63.49,
+      51.79
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_N_001": {
+   "file": "microraptor_attack_N_001.png",
+   "sha256": "54b4bb3a948fc617574dd597a73dbe79a281dc56c83442ecacc0453ce10029c6",
+   "bbox": [
+    54,
+    54,
+    90,
+    99
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      66.39
+     ],
+     [
+      54.72,
+      67.34
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      72.05
+     ],
+     [
+      63.49,
+      88.29
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      66.39
+     ],
+     [
+      89.28,
+      67.34
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      72.05
+     ],
+     [
+      80.51,
+      88.29
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_E_001": {
+   "file": "microraptor_attack_E_001.png",
+   "sha256": "afe0a2a6feb7734734624820bb76cfbced8e0021986d8d9215e5587aeb856dd3",
+   "bbox": [
+    38,
+    51,
+    89,
+    81
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      75.6,
+      67.86
+     ],
+     [
+      70.25,
+      51.74
+     ]
+    ],
+    "hindwing_L": [
+     [
+      69.78,
+      68.59
+     ],
+     [
+      49.74,
+      63.06
+     ]
+    ],
+    "forewing_R": [
+     [
+      75.6,
+      70.81
+     ],
+     [
+      70.25,
+      80.08
+     ]
+    ],
+    "hindwing_R": [
+     [
+      69.78,
+      71.87
+     ],
+     [
+      49.74,
+      77.01
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_W_001": {
+   "file": "microraptor_attack_W_001.png",
+   "sha256": "ff2b8b38588851f22cb26c3e370dc799d577fdc15776305450def07ca5ee2c2e",
+   "bbox": [
+    55,
+    51,
+    106,
+    81
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      68.4,
+      70.81
+     ],
+     [
+      73.75,
+      80.08
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.22,
+      71.87
+     ],
+     [
+      94.26,
+      77.01
+     ]
+    ],
+    "forewing_R": [
+     [
+      68.4,
+      67.86
+     ],
+     [
+      73.75,
+      51.74
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.22,
+      68.59
+     ],
+     [
+      94.26,
+      63.06
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_S_002": {
+   "file": "microraptor_attack_S_002.png",
+   "sha256": "668805c7c490c0501d5bdddc7dd7360a7bf1d80ce5da2f9300d3852cd173f1b7",
+   "bbox": [
+    52,
+    43,
+    92,
+    84
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.16
+     ],
+     [
+      90.96,
+      67.83
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.12
+     ],
+     [
+      81.85,
+      52.86
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.16
+     ],
+     [
+      53.04,
+      67.83
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.12
+     ],
+     [
+      62.15,
+      52.86
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_N_002": {
+   "file": "microraptor_attack_N_002.png",
+   "sha256": "8fe53f5528dca798ac20c964275579ee29710cdf0bccbb6bd06cfcffb2cf8af5",
+   "bbox": [
+    52,
+    53,
+    92,
+    98
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.65
+     ],
+     [
+      53.04,
+      65.72
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.31
+     ],
+     [
+      62.15,
+      87.1
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.65
+     ],
+     [
+      90.96,
+      65.72
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.31
+     ],
+     [
+      81.85,
+      87.1
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_E_002": {
+   "file": "microraptor_attack_E_002.png",
+   "sha256": "baa813bf8017526ec27b255d1e44327c31c29524186cfbf703532d753b738419",
+   "bbox": [
+    39,
+    50,
+    91,
+    83
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      76.58,
+      67.93
+     ],
+     [
+      73.28,
+      51.22
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.66,
+      68.57
+     ],
+     [
+      51.12,
+      61.9
+     ]
+    ],
+    "forewing_R": [
+     [
+      76.58,
+      70.88
+     ],
+     [
+      73.28,
+      82.32
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.66,
+      71.85
+     ],
+     [
+      51.12,
+      78.06
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_W_002": {
+   "file": "microraptor_attack_W_002.png",
+   "sha256": "7ba73e3afb985460fc77471cf5e96022d40594e430a1ae0471b82e10df1bcaf6",
+   "bbox": [
+    53,
+    50,
+    105,
+    83
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.42,
+      70.88
+     ],
+     [
+      70.72,
+      82.32
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.34,
+      71.85
+     ],
+     [
+      92.88,
+      78.06
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.42,
+      67.93
+     ],
+     [
+      70.72,
+      51.22
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.34,
+      68.57
+     ],
+     [
+      92.88,
+      61.9
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_S_003": {
+   "file": "microraptor_attack_S_003.png",
+   "sha256": "af3bb54e5a0c88f8f2749ee86693e557084baa5d70ceddbc94469f352d3a1a30",
+   "bbox": [
+    51,
+    45,
+    93,
+    89
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      75.51
+     ],
+     [
+      92.38,
+      75.71
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      71.16
+     ],
+     [
+      83.01,
+      55.79
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      75.51
+     ],
+     [
+      51.62,
+      75.71
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      71.16
+     ],
+     [
+      60.99,
+      55.79
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_N_003": {
+   "file": "microraptor_attack_N_003.png",
+   "sha256": "2e23486605868111ec2bd951d7d81713f3c9b5d1bbeed598f23c4a882f6b0220",
+   "bbox": [
+    51,
+    50,
+    93,
+    95
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      63.69
+     ],
+     [
+      51.62,
+      66.01
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      69.31
+     ],
+     [
+      60.99,
+      85.16
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      63.69
+     ],
+     [
+      92.38,
+      66.01
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      69.31
+     ],
+     [
+      83.01,
+      85.16
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_E_003": {
+   "file": "microraptor_attack_E_003.png",
+   "sha256": "15fc48b18db2668b353a4946ddd7a5e5f9758caa94bd9c7069da5f4672ba101e",
+   "bbox": [
+    42,
+    53,
+    96,
+    88
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      79.21,
+      68.13
+     ],
+     [
+      77.91,
+      54.15
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.13,
+      68.59
+     ],
+     [
+      54.09,
+      61.45
+     ]
+    ],
+    "forewing_R": [
+     [
+      79.21,
+      71.08
+     ],
+     [
+      77.91,
+      87.57
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.13,
+      71.87
+     ],
+     [
+      54.09,
+      79.5
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_W_003": {
+   "file": "microraptor_attack_W_003.png",
+   "sha256": "a26f6f536eacea84b54dcabc274442e79efb9c0a2cc0806da23fddac05c32b04",
+   "bbox": [
+    48,
+    53,
+    102,
+    88
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      64.79,
+      71.08
+     ],
+     [
+      66.09,
+      87.57
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.87,
+      71.87
+     ],
+     [
+      89.91,
+      79.5
+     ]
+    ],
+    "forewing_R": [
+     [
+      64.79,
+      68.13
+     ],
+     [
+      66.09,
+      54.15
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.87,
+      68.59
+     ],
+     [
+      89.91,
+      61.45
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_S_004": {
+   "file": "microraptor_attack_S_004.png",
+   "sha256": "02e58a91934814c29f95f34a9659c63e3eb37a97ecffb3e062f39f2ff98eb2d5",
+   "bbox": [
+    51,
+    44,
+    93,
+    87
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      74.63
+     ],
+     [
+      92.49,
+      72.41
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      70.36
+     ],
+     [
+      81.95,
+      54.48
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      74.63
+     ],
+     [
+      51.51,
+      72.41
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      70.36
+     ],
+     [
+      62.05,
+      54.48
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_N_004": {
+   "file": "microraptor_attack_N_004.png",
+   "sha256": "b1fef7c445d64e51eb7e7355d670f4d4ff9834ac8bd5d279ca14b070f1b8b6eb",
+   "bbox": [
+    51,
+    51,
+    93,
+    96
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      64.4
+     ],
+     [
+      51.51,
+      67.12
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      70.03
+     ],
+     [
+      62.05,
+      86.14
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      64.4
+     ],
+     [
+      92.49,
+      67.12
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      70.03
+     ],
+     [
+      81.95,
+      86.14
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_E_004": {
+   "file": "microraptor_attack_E_004.png",
+   "sha256": "6908f13e489a17ce07e09eb466c6c7c57c282714fa274183d6b68c29cd32d9e1",
+   "bbox": [
+    41,
+    52,
+    94,
+    88
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      78.24,
+      68.04
+     ],
+     [
+      75.23,
+      52.96
+     ]
+    ],
+    "hindwing_L": [
+     [
+      72.2,
+      68.55
+     ],
+     [
+      52.69,
+      62.15
+     ]
+    ],
+    "forewing_R": [
+     [
+      78.24,
+      70.99
+     ],
+     [
+      75.23,
+      86.57
+     ]
+    ],
+    "hindwing_R": [
+     [
+      72.2,
+      71.83
+     ],
+     [
+      52.69,
+      78.47
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_W_004": {
+   "file": "microraptor_attack_W_004.png",
+   "sha256": "8defde99a3c8eae334ce766b72e0acf5bcbf6fd8abbc7c06b97a12c76e910d7b",
+   "bbox": [
+    50,
+    52,
+    103,
+    88
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      65.76,
+      70.99
+     ],
+     [
+      68.77,
+      86.57
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.8,
+      71.83
+     ],
+     [
+      91.31,
+      78.47
+     ]
+    ],
+    "forewing_R": [
+     [
+      65.76,
+      68.04
+     ],
+     [
+      68.77,
+      52.96
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.8,
+      68.55
+     ],
+     [
+      91.31,
+      62.15
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_S_005": {
+   "file": "microraptor_attack_S_005.png",
+   "sha256": "f12c967e9ae04ea153fc59ea8cae8d6ba10a6817ccee24d2f103de902f3df8f7",
+   "bbox": [
+    51,
+    44,
+    93,
+    85
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      73.81
+     ],
+     [
+      92.4,
+      70.61
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      69.61
+     ],
+     [
+      81.98,
+      53.62
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      73.81
+     ],
+     [
+      51.6,
+      70.61
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      69.61
+     ],
+     [
+      62.02,
+      53.62
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_N_005": {
+   "file": "microraptor_attack_N_005.png",
+   "sha256": "ad9b353c21534c50c160e89b1ab55d60648178f8425d7ade7fe8d2135f914981",
+   "bbox": [
+    51,
+    53,
+    93,
+    97
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.15
+     ],
+     [
+      51.6,
+      66.88
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      70.79
+     ],
+     [
+      62.02,
+      86.78
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.15
+     ],
+     [
+      92.4,
+      66.88
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      70.79
+     ],
+     [
+      81.98,
+      86.78
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_E_005": {
+   "file": "microraptor_attack_E_005.png",
+   "sha256": "012f11a2ff3de4ec18f2169d16f53387e2e58827c4ace058f0de8a959bc43995",
+   "bbox": [
+    40,
+    51,
+    92,
+    87
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      77.28,
+      68.0
+     ],
+     [
+      74.28,
+      52.02
+     ]
+    ],
+    "hindwing_L": [
+     [
+      71.28,
+      68.56
+     ],
+     [
+      51.78,
+      62.02
+     ]
+    ],
+    "forewing_R": [
+     [
+      77.28,
+      70.96
+     ],
+     [
+      74.28,
+      85.47
+     ]
+    ],
+    "hindwing_R": [
+     [
+      71.28,
+      71.84
+     ],
+     [
+      51.78,
+      78.39
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_attack_W_005": {
+   "file": "microraptor_attack_W_005.png",
+   "sha256": "16dd5e7d264b4bd2a66f29d4b320aede3a9e5b3e0d7704e2d53b6b7d3129af87",
+   "bbox": [
+    52,
+    51,
+    104,
+    87
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      66.72,
+      70.96
+     ],
+     [
+      69.72,
+      85.47
+     ]
+    ],
+    "hindwing_L": [
+     [
+      72.72,
+      71.84
+     ],
+     [
+      92.22,
+      78.39
+     ]
+    ],
+    "forewing_R": [
+     [
+      66.72,
+      68.0
+     ],
+     [
+      69.72,
+      52.02
+     ]
+    ],
+    "hindwing_R": [
+     [
+      72.72,
+      68.56
+     ],
+     [
+      92.22,
+      62.02
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_hurt_S_000": {
+   "file": "microraptor_hurt_S_000.png",
+   "sha256": "7e43a693c358976ee1405244a3d4b461ec28090ba4cc698d138f919cff59628b",
+   "bbox": [
+    54,
+    43,
+    90,
+    81
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      72.22
+     ],
+     [
+      88.89,
+      62.95
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      68.25
+     ],
+     [
+      76.3,
+      50.48
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      72.22
+     ],
+     [
+      55.11,
+      62.95
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      68.25
+     ],
+     [
+      67.7,
+      50.48
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_hurt_N_000": {
+   "file": "microraptor_hurt_N_000.png",
+   "sha256": "39aafb0c3ab5efe6cc7431b82ba59f8ae6d37f9b83cb403af703dc7cd84a7a79",
+   "bbox": [
+    54,
+    55,
+    90,
+    99
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      66.53
+     ],
+     [
+      55.11,
+      69.54
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      72.19
+     ],
+     [
+      67.7,
+      88.63
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      66.53
+     ],
+     [
+      88.89,
+      69.54
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      72.19
+     ],
+     [
+      76.3,
+      88.63
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_hurt_E_000": {
+   "file": "microraptor_hurt_E_000.png",
+   "sha256": "bfdd132ead7ba62ca4944312c866f0e255aa42dbe4713bbce361c4f8e59cfd94",
+   "bbox": [
+    39,
+    51,
+    88,
+    81
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      75.47,
+      67.9
+     ],
+     [
+      67.99,
+      52.4
+     ]
+    ],
+    "hindwing_L": [
+     [
+      69.6,
+      68.58
+     ],
+     [
+      48.74,
+      66.03
+     ]
+    ],
+    "forewing_R": [
+     [
+      75.47,
+      70.85
+     ],
+     [
+      67.99,
+      80.09
+     ]
+    ],
+    "hindwing_R": [
+     [
+      69.6,
+      71.86
+     ],
+     [
+      48.74,
+      73.08
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_hurt_W_000": {
+   "file": "microraptor_hurt_W_000.png",
+   "sha256": "36e9bac9166c88e39cd4036c29eb3566695cef901bb0b93bf5e3a760490d5873",
+   "bbox": [
+    56,
+    51,
+    106,
+    81
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      68.53,
+      70.85
+     ],
+     [
+      76.01,
+      80.09
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.4,
+      71.86
+     ],
+     [
+      95.26,
+      73.08
+     ]
+    ],
+    "forewing_R": [
+     [
+      68.53,
+      67.9
+     ],
+     [
+      76.01,
+      52.4
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.4,
+      68.58
+     ],
+     [
+      95.26,
+      66.03
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_hurt_S_001": {
+   "file": "microraptor_hurt_S_001.png",
+   "sha256": "1e81a3805b075ad154f93e2c5cedd781b7887b0395c137ebfbe31aec097a904e",
+   "bbox": [
+    52,
+    43,
+    92,
+    83
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      73.8,
+      72.9
+     ],
+     [
+      91.11,
+      66.51
+     ]
+    ],
+    "hindwing_L": [
+     [
+      74.0,
+      68.82
+     ],
+     [
+      79.33,
+      51.77
+     ]
+    ],
+    "forewing_R": [
+     [
+      70.2,
+      72.9
+     ],
+     [
+      52.89,
+      66.51
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.0,
+      68.82
+     ],
+     [
+      64.67,
+      51.77
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_hurt_N_001": {
+   "file": "microraptor_hurt_N_001.png",
+   "sha256": "1a6e89e63be34f2f8eb261e3efd43dda8e3c42088e4eab171f7fc798ca5ea757",
+   "bbox": [
+    52,
+    54,
+    92,
+    98
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      70.2,
+      65.95
+     ],
+     [
+      52.89,
+      68.36
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.0,
+      71.61
+     ],
+     [
+      64.67,
+      87.95
+     ]
+    ],
+    "forewing_R": [
+     [
+      73.8,
+      65.95
+     ],
+     [
+      91.11,
+      68.36
+     ]
+    ],
+    "hindwing_R": [
+     [
+      74.0,
+      71.61
+     ],
+     [
+      79.33,
+      87.95
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_hurt_E_001": {
+   "file": "microraptor_hurt_E_001.png",
+   "sha256": "4ba91a8161910c0f1d9cb7bb794889601cdb917762e68466be51d3865fe86fc9",
+   "bbox": [
+    39,
+    51,
+    90,
+    84
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      76.24,
+      67.95
+     ],
+     [
+      70.87,
+      51.76
+     ]
+    ],
+    "hindwing_L": [
+     [
+      70.3,
+      68.57
+     ],
+     [
+      49.94,
+      63.85
+     ]
+    ],
+    "forewing_R": [
+     [
+      76.24,
+      70.9
+     ],
+     [
+      70.87,
+      83.1
+     ]
+    ],
+    "hindwing_R": [
+     [
+      70.3,
+      71.85
+     ],
+     [
+      49.94,
+      75.87
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_hurt_W_001": {
+   "file": "microraptor_hurt_W_001.png",
+   "sha256": "fe944e83a70d5711cad0f0c994ee357c339cba79b186ac3b95bfd1a02d3a4cf5",
+   "bbox": [
+    54,
+    51,
+    105,
+    84
+   ],
+   "joints": {
+    "forewing_L": [
+     [
+      67.76,
+      70.9
+     ],
+     [
+      73.13,
+      83.1
+     ]
+    ],
+    "hindwing_L": [
+     [
+      73.7,
+      71.85
+     ],
+     [
+      94.06,
+      75.87
+     ]
+    ],
+    "forewing_R": [
+     [
+      67.76,
+      67.95
+     ],
+     [
+      73.13,
+      51.76
+     ]
+    ],
+    "hindwing_R": [
+     [
+      73.7,
+      68.57
+     ],
+     [
+      94.06,
+      63.85
+     ]
+    ]
+   },
+   "foot_contact": {}
+  },
+  "microraptor_death_S_000": {
+   "file": "microraptor_death_S_000.png",
+   "sha256": "474071fe725c994923908e9c158f0a3e1cfcbcb1293f0d44aaeb9df2be4d2413",
+   "bbox": [
+    51,
+    43,
+    93,
+    85
+   ]
+  },
+  "microraptor_death_N_000": {
+   "file": "microraptor_death_N_000.png",
+   "sha256": "d5cfd14340f206c986673ff86da98577f2f9e95f86a8258288e9e41555558da5",
+   "bbox": [
+    51,
+    53,
+    93,
+    97
+   ]
+  },
+  "microraptor_death_E_000": {
+   "file": "microraptor_death_E_000.png",
+   "sha256": "b2e5fd8aef5447e9cdad889f2f8ab1da922da2b4030e7e50340cdaf87acd206d",
+   "bbox": [
+    40,
+    51,
+    91,
+    86
+   ]
+  },
+  "microraptor_death_W_000": {
+   "file": "microraptor_death_W_000.png",
+   "sha256": "97951641bda45b572e935bd3c75c2135cf5c07fda84b1244fb50fb51fc87268b",
+   "bbox": [
+    53,
+    51,
+    104,
+    86
+   ]
+  },
+  "microraptor_death_S_001": {
+   "file": "microraptor_death_S_001.png",
+   "sha256": "96e69e1a8629acc53070548d39e9f5374725044c3704aab7b981035b06cd46bb",
+   "bbox": [
+    52,
+    43,
+    94,
+    85
+   ]
+  },
+  "microraptor_death_N_001": {
+   "file": "microraptor_death_N_001.png",
+   "sha256": "ee513b8abc1b5b7910aad7de247e8972bf827c76b213e581270691f383ddad3a",
+   "bbox": [
+    50,
+    52,
+    92,
+    97
+   ]
+  },
+  "microraptor_death_E_001": {
+   "file": "microraptor_death_E_001.png",
+   "sha256": "3609fb8405039fb6de2dee60fecd0e09eede4339f391707b8919e31d509fa14e",
+   "bbox": [
+    40,
+    52,
+    92,
+    84
+   ]
+  },
+  "microraptor_death_W_001": {
+   "file": "microraptor_death_W_001.png",
+   "sha256": "ea58b19787c6c1b2fff6453e8b4f2ea9d6dbe0ec998fab930b015cef52503b4e",
+   "bbox": [
+    53,
+    52,
+    104,
+    88
+   ]
+  },
+  "microraptor_death_S_002": {
+   "file": "microraptor_death_S_002.png",
+   "sha256": "d2a6ed67ea35123e03a7fe6525ea43011d5fe5661c33b9d40ef02c20e29fef08",
+   "bbox": [
+    59,
+    44,
+    93,
+    85
+   ]
+  },
+  "microraptor_death_N_002": {
+   "file": "microraptor_death_N_002.png",
+   "sha256": "00afcf0af42061ea239fa35c14b71149fbddeb8eaf2af290cc40b6d85acef786",
+   "bbox": [
+    51,
+    53,
+    85,
+    97
+   ]
+  },
+  "microraptor_death_E_002": {
+   "file": "microraptor_death_E_002.png",
+   "sha256": "a81eb03580e27ca2ceed3e0f7b7506fb76418f4f0d9b71e8cdcaf2b7eea92a46",
+   "bbox": [
+    39,
+    55,
+    91,
+    77
+   ]
+  },
+  "microraptor_death_W_002": {
+   "file": "microraptor_death_W_002.png",
+   "sha256": "c898eacac72367dd1b6fe8dd510e5d3d25a082d82ee6b35492ff46845a9e3ba8",
+   "bbox": [
+    53,
+    55,
+    104,
+    90
+   ]
+  },
+  "microraptor_death_S_003": {
+   "file": "microraptor_death_S_003.png",
+   "sha256": "f1d1429500b4f0f18a9529439b29a9c6b6e4406c6b89dc5ea1f809076d2532bb",
+   "bbox": [
+    69,
+    44,
+    88,
+    85
+   ]
+  },
+  "microraptor_death_N_003": {
+   "file": "microraptor_death_N_003.png",
+   "sha256": "79a0facedd5f68a8e38fb3f7c7ec61f468ffa5058a4f2fdc71a44c953f64e136",
+   "bbox": [
+    56,
+    54,
+    75,
+    98
+   ]
+  },
+  "microraptor_death_E_003": {
+   "file": "microraptor_death_E_003.png",
+   "sha256": "df9b95f09085b512bfb96859782e3f065f4a20d013b75bca4a17f474b0e5421c",
+   "bbox": [
+    40,
+    58,
+    90,
+    71
+   ]
+  },
+  "microraptor_death_W_003": {
+   "file": "microraptor_death_W_003.png",
+   "sha256": "5a99e3b95d557588d668cb8a52f7122b47e84e6f97461028d9c3e09078bdb9c1",
+   "bbox": [
+    53,
+    63,
+    104,
+    88
+   ]
+  },
+  "microraptor_death_S_004": {
+   "file": "microraptor_death_S_004.png",
+   "sha256": "279b9ae6bcb1fff34df11486d854a0d216f587dfcda40a1d4fea7832ca059871",
+   "bbox": [
+    73,
+    45,
+    91,
+    86
+   ]
+  },
+  "microraptor_death_N_004": {
+   "file": "microraptor_death_N_004.png",
+   "sha256": "fdc8661447001f8f3e8067321accdcdd6242f4a0c777fdf3e584f133f0a019df",
+   "bbox": [
+    53,
+    57,
+    71,
+    98
+   ]
+  },
+  "microraptor_death_E_004": {
+   "file": "microraptor_death_E_004.png",
+   "sha256": "2349e0aeff9c3a9059d3f195244712a24d106737bdddccebdeb70cab1f4cbe76",
+   "bbox": [
+    39,
+    56,
+    90,
+    72
+   ]
+  },
+  "microraptor_death_W_004": {
+   "file": "microraptor_death_W_004.png",
+   "sha256": "40f3c0761be437159c1c0fd20218abd1fee538ae8c5c351853da5b2446949e6c",
+   "bbox": [
+    55,
+    70,
+    104,
+    86
+   ]
+  },
+  "microraptor_death_S_005": {
+   "file": "microraptor_death_S_005.png",
+   "sha256": "e5fab5b0f311203d87f2ab8f5d1eb02a52554370e6b4912cb1c8d81bc8ee6d58",
+   "bbox": [
+    73,
+    45,
+    92,
+    86
+   ]
+  },
+  "microraptor_death_N_005": {
+   "file": "microraptor_death_N_005.png",
+   "sha256": "87b40287709cd034e324e930cdaa893c77b72151eefe13ad18a7f206a4544831",
+   "bbox": [
+    52,
+    58,
+    71,
+    99
+   ]
+  },
+  "microraptor_death_E_005": {
+   "file": "microraptor_death_E_005.png",
+   "sha256": "60143d70d3caa6e3ba3fc798ced9aa19244052a851fd3b0c224c940e4cf75805",
+   "bbox": [
+    39,
+    56,
+    89,
+    74
+   ]
+  },
+  "microraptor_death_W_005": {
+   "file": "microraptor_death_W_005.png",
+   "sha256": "44e2f9411fbf71f0f78401527ab19073f1e01b1bbf2f6073f21e19f9f75955e3",
+   "bbox": [
+    55,
+    70,
+    104,
+    88
+   ]
+  }
+ }
+}
