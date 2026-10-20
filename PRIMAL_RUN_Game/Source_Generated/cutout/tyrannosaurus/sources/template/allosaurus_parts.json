@@ -1,0 +1,702 @@
+{
+ "species": "allosaurus",
+ "note": "cut from the 3D model by tools/cutout_rig.py --template",
+ "directions": {
+  "S": {
+   "order": [
+    "tail3",
+    "tail2",
+    "tail1",
+    "foot_L",
+    "foot_R",
+    "shin_L",
+    "shin_R",
+    "thigh_L",
+    "thigh_R",
+    "body",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head"
+   ],
+   "parts": {
+    "body": {
+     "parent": null,
+     "pivot": [
+      72.0,
+      69.1
+     ],
+     "tip": [
+      72.0,
+      93.8
+     ]
+    },
+    "neck": {
+     "parent": "body",
+     "pivot": [
+      72.0,
+      93.8
+     ],
+     "tip": [
+      72.0,
+      102.8
+     ]
+    },
+    "head": {
+     "parent": "neck",
+     "pivot": [
+      72.0,
+      102.8
+     ],
+     "tip": [
+      72.0,
+      120.9
+     ]
+    },
+    "tail1": {
+     "parent": "body",
+     "pivot": [
+      72.0,
+      63.2
+     ],
+     "tip": [
+      72.0,
+      48.6
+     ]
+    },
+    "tail2": {
+     "parent": "tail1",
+     "pivot": [
+      72.0,
+      48.6
+     ],
+     "tip": [
+      72.0,
+      34.1
+     ]
+    },
+    "tail3": {
+     "parent": "tail2",
+     "pivot": [
+      72.0,
+      34.1
+     ],
+     "tip": [
+      72.0,
+      19.7
+     ]
+    },
+    "thigh_L": {
+     "parent": "body",
+     "pivot": [
+      80.4,
+      69.9
+     ],
+     "tip": [
+      90.0,
+      77.2
+     ]
+    },
+    "shin_L": {
+     "parent": "thigh_L",
+     "pivot": [
+      90.0,
+      77.2
+     ],
+     "tip": [
+      93.0,
+      74.4
+     ]
+    },
+    "foot_L": {
+     "parent": "shin_L",
+     "pivot": [
+      93.0,
+      74.4
+     ],
+     "tip": [
+      94.8,
+      79.9
+     ]
+    },
+    "thigh_R": {
+     "parent": "body",
+     "pivot": [
+      63.6,
+      69.9
+     ],
+     "tip": [
+      54.0,
+      77.2
+     ]
+    },
+    "shin_R": {
+     "parent": "thigh_R",
+     "pivot": [
+      54.0,
+      77.2
+     ],
+     "tip": [
+      51.0,
+      74.4
+     ]
+    },
+    "foot_R": {
+     "parent": "shin_R",
+     "pivot": [
+      51.0,
+      74.4
+     ],
+     "tip": [
+      49.2,
+      79.9
+     ]
+    },
+    "arm_L": {
+     "parent": "body",
+     "pivot": [
+      79.8,
+      90.1
+     ],
+     "tip": [
+      87.0,
+      98.2
+     ]
+    },
+    "arm_R": {
+     "parent": "body",
+     "pivot": [
+      64.2,
+      90.1
+     ],
+     "tip": [
+      57.0,
+      98.2
+     ]
+    }
+   }
+  },
+  "N": {
+   "order": [
+    "head",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "foot_L",
+    "foot_R",
+    "shin_L",
+    "shin_R",
+    "body",
+    "thigh_L",
+    "thigh_R",
+    "tail1",
+    "tail2",
+    "tail3"
+   ],
+   "parts": {
+    "body": {
+     "parent": null,
+     "pivot": [
+      72.0,
+      69.1
+     ],
+     "tip": [
+      72.0,
+      41.3
+     ]
+    },
+    "neck": {
+     "parent": "body",
+     "pivot": [
+      72.0,
+      41.3
+     ],
+     "tip": [
+      72.0,
+      34.0
+     ]
+    },
+    "head": {
+     "parent": "neck",
+     "pivot": [
+      72.0,
+      34.0
+     ],
+     "tip": [
+      72.0,
+      14.6
+     ]
+    },
+    "tail1": {
+     "parent": "body",
+     "pivot": [
+      72.0,
+      74.0
+     ],
+     "tip": [
+      72.0,
+      89.6
+     ]
+    },
+    "tail2": {
+     "parent": "tail1",
+     "pivot": [
+      72.0,
+      89.6
+     ],
+     "tip": [
+      72.0,
+      105.4
+     ]
+    },
+    "tail3": {
+     "parent": "tail2",
+     "pivot": [
+      72.0,
+      105.4
+     ],
+     "tip": [
+      72.0,
+      121.4
+     ]
+    },
+    "thigh_L": {
+     "parent": "body",
+     "pivot": [
+      63.6,
+      68.3
+     ],
+     "tip": [
+      54.0,
+      62.5
+     ]
+    },
+    "shin_L": {
+     "parent": "thigh_L",
+     "pivot": [
+      54.0,
+      62.5
+     ],
+     "tip": [
+      51.0,
+      67.8
+     ]
+    },
+    "foot_L": {
+     "parent": "shin_L",
+     "pivot": [
+      51.0,
+      67.8
+     ],
+     "tip": [
+      49.2,
+      63.5
+     ]
+    },
+    "thigh_R": {
+     "parent": "body",
+     "pivot": [
+      80.4,
+      68.3
+     ],
+     "tip": [
+      90.0,
+      62.5
+     ]
+    },
+    "shin_R": {
+     "parent": "thigh_R",
+     "pivot": [
+      90.0,
+      62.5
+     ],
+     "tip": [
+      93.0,
+      67.8
+     ]
+    },
+    "foot_R": {
+     "parent": "shin_R",
+     "pivot": [
+      93.0,
+      67.8
+     ],
+     "tip": [
+      94.8,
+      63.5
+     ]
+    },
+    "arm_L": {
+     "parent": "body",
+     "pivot": [
+      64.2,
+      47.4
+     ],
+     "tip": [
+      57.0,
+      40.8
+     ]
+    },
+    "arm_R": {
+     "parent": "body",
+     "pivot": [
+      79.8,
+      47.4
+     ],
+     "tip": [
+      87.0,
+      40.8
+     ]
+    }
+   }
+  },
+  "E": {
+   "order": [
+    "foot_L",
+    "shin_L",
+    "arm_L",
+    "thigh_L",
+    "tail3",
+    "tail2",
+    "tail1",
+    "body",
+    "foot_R",
+    "neck",
+    "thigh_R",
+    "shin_R",
+    "arm_R",
+    "head"
+   ],
+   "parts": {
+    "body": {
+     "parent": null,
+     "pivot": [
+      72.0,
+      69.1
+     ],
+     "tip": [
+      104.0,
+      67.5
+     ]
+    },
+    "neck": {
+     "parent": "body",
+     "pivot": [
+      104.0,
+      67.5
+     ],
+     "tip": [
+      114.0,
+      68.4
+     ]
+    },
+    "head": {
+     "parent": "neck",
+     "pivot": [
+      114.0,
+      68.4
+     ],
+     "tip": [
+      136.8,
+      67.7
+     ]
+    },
+    "tail1": {
+     "parent": "body",
+     "pivot": [
+      65.5,
+      68.6
+     ],
+     "tip": [
+      47.0,
+      69.1
+     ]
+    },
+    "tail2": {
+     "parent": "tail1",
+     "pivot": [
+      47.0,
+      69.1
+     ],
+     "tip": [
+      28.5,
+      69.8
+     ]
+    },
+    "tail3": {
+     "parent": "tail2",
+     "pivot": [
+      28.5,
+      69.8
+     ],
+     "tip": [
+      10.0,
+      70.6
+     ]
+    },
+    "thigh_L": {
+     "parent": "body",
+     "pivot": [
+      73.0,
+      62.2
+     ],
+     "tip": [
+      81.0,
+      55.1
+     ]
+    },
+    "shin_L": {
+     "parent": "thigh_L",
+     "pivot": [
+      81.0,
+      55.1
+     ],
+     "tip": [
+      76.0,
+      53.9
+     ]
+    },
+    "foot_L": {
+     "parent": "shin_L",
+     "pivot": [
+      76.0,
+      53.9
+     ],
+     "tip": [
+      82.0,
+      53.0
+     ]
+    },
+    "thigh_R": {
+     "parent": "body",
+     "pivot": [
+      73.0,
+      76.0
+     ],
+     "tip": [
+      81.0,
+      84.6
+     ]
+    },
+    "shin_R": {
+     "parent": "thigh_R",
+     "pivot": [
+      81.0,
+      84.6
+     ],
+     "tip": [
+      76.0,
+      88.3
+     ]
+    },
+    "foot_R": {
+     "parent": "shin_R",
+     "pivot": [
+      76.0,
+      88.3
+     ],
+     "tip": [
+      82.0,
+      90.4
+     ]
+    },
+    "arm_L": {
+     "parent": "body",
+     "pivot": [
+      98.0,
+      62.4
+     ],
+     "tip": [
+      107.0,
+      57.2
+     ]
+    },
+    "arm_R": {
+     "parent": "body",
+     "pivot": [
+      98.0,
+      75.2
+     ],
+     "tip": [
+      107.0,
+      81.8
+     ]
+    }
+   }
+  },
+  "W": {
+   "order": [
+    "foot_R",
+    "shin_R",
+    "arm_R",
+    "thigh_R",
+    "tail3",
+    "tail2",
+    "tail1",
+    "body",
+    "foot_L",
+    "neck",
+    "thigh_L",
+    "shin_L",
+    "arm_L",
+    "head"
+   ],
+   "parts": {
+    "body": {
+     "parent": null,
+     "pivot": [
+      72.0,
+      69.1
+     ],
+     "tip": [
+      40.0,
+      67.5
+     ]
+    },
+    "neck": {
+     "parent": "body",
+     "pivot": [
+      40.0,
+      67.5
+     ],
+     "tip": [
+      30.0,
+      68.4
+     ]
+    },
+    "head": {
+     "parent": "neck",
+     "pivot": [
+      30.0,
+      68.4
+     ],
+     "tip": [
+      7.2,
+      67.7
+     ]
+    },
+    "tail1": {
+     "parent": "body",
+     "pivot": [
+      78.5,
+      68.6
+     ],
+     "tip": [
+      97.0,
+      69.1
+     ]
+    },
+    "tail2": {
+     "parent": "tail1",
+     "pivot": [
+      97.0,
+      69.1
+     ],
+     "tip": [
+      115.5,
+      69.8
+     ]
+    },
+    "tail3": {
+     "parent": "tail2",
+     "pivot": [
+      115.5,
+      69.8
+     ],
+     "tip": [
+      134.0,
+      70.6
+     ]
+    },
+    "thigh_L": {
+     "parent": "body",
+     "pivot": [
+      71.0,
+      76.0
+     ],
+     "tip": [
+      63.0,
+      84.6
+     ]
+    },
+    "shin_L": {
+     "parent": "thigh_L",
+     "pivot": [
+      63.0,
+      84.6
+     ],
+     "tip": [
+      68.0,
+      88.3
+     ]
+    },
+    "foot_L": {
+     "parent": "shin_L",
+     "pivot": [
+      68.0,
+      88.3
+     ],
+     "tip": [
+      62.0,
+      90.4
+     ]
+    },
+    "thigh_R": {
+     "parent": "body",
+     "pivot": [
+      71.0,
+      62.2
+     ],
+     "tip": [
+      63.0,
+      55.1
+     ]
+    },
+    "shin_R": {
+     "parent": "thigh_R",
+     "pivot": [
+      63.0,
+      55.1
+     ],
+     "tip": [
+      68.0,
+      53.9
+     ]
+    },
+    "foot_R": {
+     "parent": "shin_R",
+     "pivot": [
+      68.0,
+      53.9
+     ],
+     "tip": [
+      62.0,
+      53.0
+     ]
+    },
+    "arm_L": {
+     "parent": "body",
+     "pivot": [
+      46.0,
+      75.2
+     ],
+     "tip": [
+      37.0,
+      81.8
+     ]
+    },
+    "arm_R": {
+     "parent": "body",
+     "pivot": [
+      46.0,
+      62.4
+     ],
+     "tip": [
+      37.0,
+      57.2
+     ]
+    }
+   }
+  }
+ }
+}
