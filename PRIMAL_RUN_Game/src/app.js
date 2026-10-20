@@ -402,7 +402,7 @@
       prepareImage(path);const image = flash ? flashes[path] : images[path], meta = catalog[path]; if(!image&&meta){loadImage(path).catch(()=>{});return;}if(!meta)return;
       ctx.globalAlpha = alpha;
       const night = !flash && C.FEATURES.dayNight && C.FEATURES.nightPalette && game.run?.night
-        && /^assets\/(enemies|enemy_animations|enemy_full|player_full|player_combat|species_attacks|behavior_native|behavior_injured|corpses)\//.test(path);
+        && /^assets\/(enemies|enemy_animations|enemy_full|player_full|rig_full|player_combat|species_attacks|behavior_native|behavior_injured|corpses)\//.test(path);
       const finalImage = night ? nightFrame(path, (variant ? npcVariant(path,variant) : skins[path]) || image, variant) : null;
       const paint=(img,dx,dy)=>{if(scale===1)drawAsset(ctx,img,dx,dy);else drawAsset(ctx,img,dx,dy,img.width*scale,img.height*scale);};
       if (finalImage) {
