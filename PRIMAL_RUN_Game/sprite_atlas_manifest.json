@@ -58037,7 +58037,7 @@
   "max_dimension": 2048,
   "padding": 1,
   "pixels": "unaltered RGBA; no scaling or palette conversion; exact duplicate aliases only",
-  "png_bytes": 11305691,
+  "png_bytes": 11263191,
   "sheets": [
     {
       "file": "assets/atlases/species_allosaurus_0.png",
@@ -58175,7 +58175,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "frames": 127,
       "group": "species_iguanodon",
-      "sha256": "a213b598b2685bc73a69654f5ff5efd08107f3322f32ff6f7a12272699942d29",
+      "sha256": "ee27e965dbafc4d33d48f2e93dfe96cfd0b9a2a4bf43845b537d4829dd86d40e",
       "size": [
         2044,
         2044
