@@ -195,7 +195,9 @@ test('GDevelop event matches shared source; all integrated PNGs preserve origina
   assert.equal(original.length, 104);
   for (const asset of original) assert.deepEqual(fs.readFileSync(path.join(folder, asset.file)), fs.readFileSync(path.resolve(folder, '../PRIMAL_RUN_Prototype_Kit', asset.file)));
   for (const asset of manifest) {
-    assert.equal(asset.status, 'prototype_static');
+    // art is prototype until Jonas approves it; an approved frame carries his approval record
+    if (asset.status === 'approved_animation') assert.ok(asset.approval && asset.approval.approved_by && asset.production_approved === true, asset.file);
+    else assert.equal(asset.status, 'prototype_static');
     assert.ok(project.resources.resources.some(r => r.name === asset.file && r.file === asset.file && r.smoothed === false));
   }
 });

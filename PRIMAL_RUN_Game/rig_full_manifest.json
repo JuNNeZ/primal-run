@@ -16460,9 +16460,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "9844664642c70fa418369811628610e012f1f3dc94541b1f00bcc415993614e8",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16470,7 +16476,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_E_001.png",
@@ -16493,9 +16499,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "976d9a072c1ad228dfaf4a4c03306d3c25225ccbf344e9fe0d78e70dcc7cacb9",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16503,7 +16515,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_E_002.png",
@@ -16526,9 +16538,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "c3584adb00c1024fa61f556c1b17b1ea369891de7058ddf7a7d80dab750125fb",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16536,7 +16554,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_E_003.png",
@@ -16559,9 +16577,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "1d09bd51bd451c867ee9dd4850d1315515057fc25bc6835c370054af64b45346",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16569,7 +16593,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_E_004.png",
@@ -16592,9 +16616,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "3aafdc0ca349dd222850016906b890e36f34a63e68f597855f66a5008bf9c0f5",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16602,7 +16632,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_E_005.png",
@@ -16625,9 +16655,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "2d9fc64bf3bdb882fc244e4d1b1a50576cc58a387a153e0a81426bff3221d8b4",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16635,7 +16671,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_000.png",
@@ -16658,9 +16694,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "fb9786a1ffa499b748a3827a6493a6c8441a633bd086f254b0f7afc5f4cbe3a9",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16668,7 +16710,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_001.png",
@@ -16691,9 +16733,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "e515dc133926b4c2e0b5d40191907e1af7a5964c6623d13026c8aa050b0a68e2",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16701,7 +16749,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_002.png",
@@ -16724,9 +16772,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "cc63bc03bc58e0d85e27f2786a626b3ab892e5825a95ec2ec14cc0b18ee96a2d",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16734,7 +16788,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_003.png",
@@ -16757,9 +16811,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "ae278737fa785485364472de22002e2e76b597d4a04e033ce28eb7ff4e7e6d7d",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16767,7 +16827,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_004.png",
@@ -16790,9 +16850,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "ccd4240424eedf5f2fc2c7f56bb8105e8cb11cfb8d89f58abdb8dd413e7f9c62",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16800,7 +16866,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_N_005.png",
@@ -16823,9 +16889,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "10171d49a218e2c5136a43a7b43dbcca31c08bb6d2ea35739dc11c48fa21a84f",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16833,7 +16905,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_000.png",
@@ -16856,9 +16928,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "bc6f52354f0705641acf04999b50182023301fdeddae3fd2dea0c08e995daec0",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16866,7 +16944,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_001.png",
@@ -16889,9 +16967,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "24077bca3e5a36521060916fde901402c560f77209d588a8afef32a6b071a0f8",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16899,7 +16983,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_002.png",
@@ -16922,9 +17006,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "166d6ed505e481aee4164c6593cc735bb25ab8f2b6714cac68e6b8867f385ccf",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16932,7 +17022,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_003.png",
@@ -16955,9 +17045,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "fd780dcca63b03b0854c6febacce28c6cd546d3daa3c46757e08442be787827a",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16965,7 +17061,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_004.png",
@@ -16988,9 +17084,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "2f9e26e56bd5fe1bd85467a8d50fb4e74dc30fd1a76b5580a6340bcaa5cebf4c",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -16998,7 +17100,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_S_005.png",
@@ -17021,9 +17123,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "d1e27f15843b03bcf6babc3c64bf7652586df117a79963b4392cd940cba6818c",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17031,7 +17139,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_000.png",
@@ -17054,9 +17162,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "4157d20b38a4c587a2ae8c337271484cd731933b6b821aaf214f024aa5042ac1",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17064,7 +17178,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_001.png",
@@ -17087,9 +17201,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "882ba695dfcf66e6f22b42db534450519bd6cccc1217f5e1d00619e72fdc23f0",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17097,7 +17217,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_002.png",
@@ -17120,9 +17240,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "8a0cab9be13cc779b35480612a8beb90d1c1450ca8b33a2510ff3fb463a260af",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17130,7 +17256,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_003.png",
@@ -17153,9 +17279,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "90f58eab557005a1d7981e70f33d1c5784a9c41798b3ec993c780a8493079e71",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17163,7 +17295,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_004.png",
@@ -17186,9 +17318,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "45bdfcee9bb742a828c8cb32ef69e8a0935c548a2df4dc8689b2e46e55a74a76",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17196,7 +17334,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_attack_W_005.png",
@@ -17219,9 +17357,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "ece11a03e86e087e62032d8594cbe1e0242dffe62b89b9a2f0622a72fc8dd187",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17229,7 +17373,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_000.png",
@@ -17252,9 +17396,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "dad4e674b6d814344b35f2dd328a7dad970a097409d65ed4d10104a3db622994",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17262,7 +17412,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_001.png",
@@ -17285,9 +17435,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "1a78e30f7f780d1b6644ec79825ea2251917618c6150a3ddd776d5b058dfa652",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17295,7 +17451,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_002.png",
@@ -17318,9 +17474,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "c000eb59c52798bbf3092229d8bd08c6e92fd253e8549da7aac64094e2b0c339",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17328,7 +17490,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_003.png",
@@ -17351,9 +17513,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "370499aaf83b6cb004ad949f1ffdb1d3870725d0a1c59192774158333f991fd1",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17361,7 +17529,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_004.png",
@@ -17384,9 +17552,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "65af65abe10d2a937acfbcd6c9700b3ee23e87ac065c9e1e489023835bdd8ed1",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17394,7 +17568,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_E_005.png",
@@ -17417,9 +17591,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "dc24f6fa82f90dde68d2327d4cb85fc4b539c72cf2910d9f6859f797da97514d",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17427,7 +17607,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_000.png",
@@ -17450,9 +17630,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "66b73e60e68457ab7712cff08adacf76ab3e4c955a19e6fc760d839807dfd955",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17460,7 +17646,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_001.png",
@@ -17483,9 +17669,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "34728342f3fbef2eca75818440f97cdd376ea4be7a7e70f94defd900294ce243",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17493,7 +17685,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_002.png",
@@ -17516,9 +17708,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "274b90b68450f8698520df017030a5bbc7d5e86bc06b95c99da4c21922ca4d2c",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17526,7 +17724,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_003.png",
@@ -17549,9 +17747,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "21846aea2c28b0dbcabfffaf1b907823def60450bbcab1a3407dd3c6a93ca10d",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17559,7 +17763,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_004.png",
@@ -17582,9 +17786,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "4ab83108136f5af940ad18e6af2da07dc3bca0f0495e2297f270f4102647a3ca",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17592,7 +17802,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_N_005.png",
@@ -17615,9 +17825,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "aaa682a716ac0a10a842186e8c95421d5a228c474fc3128e55431a2d5198507e",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17625,7 +17841,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_000.png",
@@ -17648,9 +17864,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "a7763f2864485a207166b99179891ea7c1123dd971f0d28f701ee92f4a5d11a5",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17658,7 +17880,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_001.png",
@@ -17681,9 +17903,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "be3220bafc58feafd99fda7c572ec060d44ec03a548294f63d76c54cd84980c3",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17691,7 +17919,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_002.png",
@@ -17714,9 +17942,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "290a3874ebacfa948c09edd8b7130dd2fcc1cd80cf039d046f2f226fd0621c18",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17724,7 +17958,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_003.png",
@@ -17747,9 +17981,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "450141673085c21c6a09a73f8491dfb3d729c93d77a6ce42a0898d097606d257",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17757,7 +17997,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_004.png",
@@ -17780,9 +18020,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "869e2d75aad0727bc67d863beb9568969472fbf4f394ec25d97a5fcde1008a14",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17790,7 +18036,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_S_005.png",
@@ -17813,9 +18059,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "eb730d30a27aa05d8965ce7686ccce11bab949fe82b32375d12cec7cc1467b5d",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17823,7 +18075,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_000.png",
@@ -17846,9 +18098,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "860f1029493035483f11ddc018262aefcc591c4f4376f1f684491e5c7a3b5872",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17856,7 +18114,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_001.png",
@@ -17879,9 +18137,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "ecd0c6f607c8bed95434505a7c7fd515a75b976295b4ffa4a5f95ec8604ff197",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17889,7 +18153,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_002.png",
@@ -17912,9 +18176,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "6b45ce1b10683b3181c6521846ec0499633669a99c639d42a2dd8410c811b897",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17922,7 +18192,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_003.png",
@@ -17945,9 +18215,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "6d7b5240bbeb29276ec99df2349e06b7f65d6274e2a3512a1780a2675daf3521",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17955,7 +18231,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_004.png",
@@ -17978,9 +18254,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "2c2806da0cc925226077cd5892f84ec178d1a59f7f0f3f49c65cee32ada23758",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -17988,7 +18270,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_death_W_005.png",
@@ -18011,9 +18293,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "d9eb3e7aec16765aa530a031cb2ab9b13e2cac1104c9a2d9b843951a9db4b915",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18021,7 +18309,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_E_000.png",
@@ -18044,9 +18332,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "fba37cde50e0ef96683450fecd9d5a676133314fa5c3152798452415b5e8fcaf",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18054,7 +18348,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_E_001.png",
@@ -18077,9 +18371,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "13620f9afa17cd17f40781c7c37ada69a4be289c7978c8b87c9f9d4495dcdb74",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18087,7 +18387,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_N_000.png",
@@ -18110,9 +18410,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "3fe6c52a14b15f2fed0db7aa1d6865ddc79c78858748829656e063e513d3e3df",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18120,7 +18426,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_N_001.png",
@@ -18143,9 +18449,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "78e646872a07c66092ad300bda8ecb38fe67dea83de9bc015d0848b6d8a9d60d",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18153,7 +18465,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_S_000.png",
@@ -18176,9 +18488,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "a1f8ac3a6f785e9d054515d5781c7b8455034a8b9608a8b4ade84e8848d11659",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18186,7 +18504,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_S_001.png",
@@ -18209,9 +18527,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "a8e98b4eeecd2de8d8118d4120f9b6117ca95aa0de2578868020a3bc8ff60b9f",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18219,7 +18543,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_W_000.png",
@@ -18242,9 +18566,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "35d5b48401acfec1101510ad698b112b4d07364f42ac069108c9b778cd0ff597",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18252,7 +18582,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_hurt_W_001.png",
@@ -18275,9 +18605,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "2e868f26d9205f2dcb190f94f06ebd04d4c35d7d4aae5eb5dc0d06b3185b697c",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18285,7 +18621,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_E_000.png",
@@ -18308,9 +18644,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "48e7eb37a866932b95d7a140ad9db899986e1b3b8c60f1a9ec19026efee47e3f",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18318,7 +18660,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_E_001.png",
@@ -18341,9 +18683,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "79413913af458f1012689ecfa007e5ee441a8444c37ba91e365524989d6578f7",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18351,7 +18699,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_E_002.png",
@@ -18374,9 +18722,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "e40b761524bf5d17011f560f14623c97641404c0f6a9383efe2a991ed96bbf21",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18384,7 +18738,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_E_003.png",
@@ -18407,9 +18761,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "40203c298b0be120d3bfa9a0c596f59a9c7497c8838cbb26ce034e938a9b0489",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18417,7 +18777,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_N_000.png",
@@ -18440,9 +18800,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "6fec911cccd32b307b8d11bf491f01b022e7d16d90b1549b1cc68a852bb807eb",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18450,7 +18816,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_N_001.png",
@@ -18473,9 +18839,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "d051956148de245b739e93c1db8727fac5cb239d983934a255b8868a6918348f",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18483,7 +18855,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_N_002.png",
@@ -18506,9 +18878,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "405161b007767ce836298d1341b35f697db5f57a352a634e200d0fcae3063faa",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18516,7 +18894,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_N_003.png",
@@ -18539,9 +18917,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "60510cf83feb2b8e39c838fd02e8043a8ab707cbb10c5a2ebb992cb505da1973",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18549,7 +18933,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_S_000.png",
@@ -18572,9 +18956,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "882790e69cbc982e3c40996f2de0b4bbf99e48e6991d24da295220203f8c8486",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18582,7 +18972,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_S_001.png",
@@ -18605,9 +18995,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "91afe13661c7ef5b1883c76a7ce1f30e01c549d6409c436894c88803ce24f6aa",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18615,7 +19011,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_S_002.png",
@@ -18638,9 +19034,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "7afab94adc396cc11b1600d32f70d28211209120788a6a66bc57bc0eecc866a1",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18648,7 +19050,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_S_003.png",
@@ -18671,9 +19073,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "c131009fcb88d431cb0589138d250af5d84605c1449b839f0fee9ca4c8225aeb",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18681,7 +19089,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_W_000.png",
@@ -18704,9 +19112,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "8bc16949b6b2f9042797e2672c874cb41410d341c88a5c5adab6a43bd6e199cb",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18714,7 +19128,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_W_001.png",
@@ -18737,9 +19151,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "860f1029493035483f11ddc018262aefcc591c4f4376f1f684491e5c7a3b5872",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18747,7 +19167,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_W_002.png",
@@ -18770,9 +19190,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "ccf8650ca7d1d989abc03660d7531f1c7ef545bc914ef25f85856379d3bd64b5",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18780,7 +19206,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_idle_W_003.png",
@@ -18803,9 +19229,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "dd2c6b63f6ca4513f74b3a6715bd4bf910b028b0a31eb45b30954a77aa223229",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18813,7 +19245,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_000.png",
@@ -18836,9 +19268,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "177d24df3a5fd05684796609f4dd957d87ae2a352e9c02a16d92e61814f3d4ef",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18846,7 +19284,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_001.png",
@@ -18869,9 +19307,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "9b945980d73d295c588908fd573ae9a3627c854ddb9c21ab1eec1277bda426c7",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18879,7 +19323,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_002.png",
@@ -18902,9 +19346,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "eb08424a830de76772d1b7695b91a548ea931d41cf0b664a00f8e47fea9c86a4",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18912,7 +19362,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_003.png",
@@ -18935,9 +19385,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "2e9ad25f0a1bb096010776f2dfdffa13927c5491ca758bd9bc33ca7d0bac28a3",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18945,7 +19401,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_004.png",
@@ -18968,9 +19424,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "f73dc5d6a73f1709c3a98aec765b25835d52d71bffdc4b6fe275eb3f44119e8f",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -18978,7 +19440,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_E_005.png",
@@ -19001,9 +19463,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "605cd93209c3a4df7012be66138aa58f2345cb8030231f94108f04f1d5fb6592",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19011,7 +19479,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_000.png",
@@ -19034,9 +19502,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "9f6a86f455ecac760b61069b57d2576872c5a1f96df089a92d2ebee6fba14c42",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19044,7 +19518,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_001.png",
@@ -19067,9 +19541,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "f0f67a442c844c6a1962e6b1eabb214abba32cc50619b8747818c99ce0506ef4",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19077,7 +19557,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_002.png",
@@ -19100,9 +19580,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "91003858a1e04bec09b60a36bc796ad93ce0d44d5b6a211b6491a08342e86532",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19110,7 +19596,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_003.png",
@@ -19133,9 +19619,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "04f0caf023d4a4240f75920d305a70ff53ef3422ff95952774f6412c3d0d42a1",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19143,7 +19635,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_004.png",
@@ -19166,9 +19658,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "44c837c8041437888207fb7913a98289cb8ef8b8cd312813abba4b52bef1ec31",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19176,7 +19674,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_N_005.png",
@@ -19199,9 +19697,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "7e2c2454694ee957159b5cd322993e40853cd45d477edf788020ea0c8c4ddb08",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19209,7 +19713,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_000.png",
@@ -19232,9 +19736,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "e1f999dae5124d8ccaa85f6c2057c0a4cc24907f3463492b33ba8e71519c7d89",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19242,7 +19752,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_001.png",
@@ -19265,9 +19775,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "f13e7c990cc80488e647d789ed48788ac8796b6aa2d2cb186142699fcd7cf69e",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19275,7 +19791,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_002.png",
@@ -19298,9 +19814,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "b54341e0f59b3d8c760c150c303e41e1f99db33e0f35d0bc1532372635e6ba3d",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19308,7 +19830,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_003.png",
@@ -19331,9 +19853,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "199f3e5eda97fb3547e044e500ec6f60e2fd39e644166fa932e60adf42741681",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19341,7 +19869,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_004.png",
@@ -19364,9 +19892,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "4dd3d2b703bbaf8935b865eb87d903b67d83ac2dad32a0ca7be806bb6ba753bd",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19374,7 +19908,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_S_005.png",
@@ -19397,9 +19931,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "ee791a1672a2c13856b82a5b409c630499305d7bb8cc048cb8620826a4733956",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19407,7 +19947,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_000.png",
@@ -19430,9 +19970,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "d918e5182f083e27e5ccd9e4ed661906c45089a955d967fb361648dea95e8793",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19440,7 +19986,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_001.png",
@@ -19463,9 +20009,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "881a87f4ed7d9f0c41dd6eddc2358f827e25ae8877459b51ba4aedd6da781e81",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19473,7 +20025,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_002.png",
@@ -19496,9 +20048,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "724ec3351c658cf3911e37ffde1c6fc830d30974a40cba480b52410355950ef5",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19506,7 +20064,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_003.png",
@@ -19529,9 +20087,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "14f9d7dfe4dd83992b3e88fead8c1952a0ba5ef92891b3d760aecdea8ec31625",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19539,7 +20103,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_004.png",
@@ -19562,9 +20126,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "c203f37c0e3b924389cc644ef508d768717216646d5bb7a879a9e48ff4ceff21",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19572,7 +20142,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_run_W_005.png",
@@ -19595,9 +20165,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "b39e3d8b54ac906b30b4109429829c3fada5bc44ebeec5c47e4ffc25e56a6a85",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19605,7 +20181,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_000.png",
@@ -19628,9 +20204,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "916b9b85a4a19b1fa7b6186503c561bac70ab0ae9a3db12f67e0252c9e2c3640",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19638,7 +20220,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_001.png",
@@ -19661,9 +20243,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "a77e02aad9491ce79dcd5279e0595bd712575efa61c9eb2de4eb63b1543e3fe9",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19671,7 +20259,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_002.png",
@@ -19694,9 +20282,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "61f568de15e120dc8785814dc4b74b8df56ece73631a1ec591ab6e2a35adb90c",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19704,7 +20298,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_003.png",
@@ -19727,9 +20321,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "dd5333a6ce7944940f3171e33e673dc9a68e5b8647eb9473247e37f5ad1991d1",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19737,7 +20337,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_004.png",
@@ -19760,9 +20360,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "0a0247ceb6b262537a1b09e13f02dfefe9492565982a617084147ac59ed30f31",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19770,7 +20376,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_E_005.png",
@@ -19793,9 +20399,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "60f5121b53efaceafdb4efb8e03219e79d9791ecb4ce31db8c2c14075caba5c2",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19803,7 +20415,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_000.png",
@@ -19826,9 +20438,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "ad16ef0e7b0b31472c4167cb47955045a3c65cfbb063e98bf6d6d59718df096b",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19836,7 +20454,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_001.png",
@@ -19859,9 +20477,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "34040fee4e2f1505bdd6e8b4590f1dc921054a9c6afed129a46f67d374f53b8a",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19869,7 +20493,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_002.png",
@@ -19892,9 +20516,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "8d5be08e131860a27f9849a86f43d472ae3e65601cf76189468e8b588ffdceb7",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19902,7 +20532,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_003.png",
@@ -19925,9 +20555,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "f368368818f1506478c1124cbdacfe1331f7eea1e8332d610010759ee7a96ae4",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19935,7 +20571,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_004.png",
@@ -19958,9 +20594,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "dd8697cc729a9dfba4ececdc3c602318beac3ed4d56cb7b74f425b3edf839323",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -19968,7 +20610,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_N_005.png",
@@ -19991,9 +20633,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "a81b2677f658ae962821de9ebab37c8aec78b3da9f8b32e2b924a220cf1bbec2",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20001,7 +20649,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_000.png",
@@ -20024,9 +20672,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "7687a5226f64ba019e32fae035545ef66b505aa9f4da738719fab7ae0e961b5d",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20034,7 +20688,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_001.png",
@@ -20057,9 +20711,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "f34cdd6b5a26a80def03b6a68348e43871234940055b1119f6d63ee3fe3bf396",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20067,7 +20727,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_002.png",
@@ -20090,9 +20750,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "b099a178df8471daae131cd828c798b6981336d14e93b17ad3e8444936938b02",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20100,7 +20766,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_003.png",
@@ -20123,9 +20789,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "6b61af161003898600ab8bb6490384e0426915a7e8672b70eeb40bc29bae0db5",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20133,7 +20805,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_004.png",
@@ -20156,9 +20828,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "1e26b23db2ac886294278743e46b5c9c4af04280d78017d269f30e6e27d2089e",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20166,7 +20844,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_S_005.png",
@@ -20189,9 +20867,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "fe8cae3594a15538abe6a9a52aaa2accb662212a3a0c5c81dd5a6760062c9290",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20199,7 +20883,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_000.png",
@@ -20222,9 +20906,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "ac9733f2e146987eb78b11d791d2b133732f58cf834e24b251ef759827b0941e",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20232,7 +20922,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_001.png",
@@ -20255,9 +20945,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "82b51c9c0521e85fb409357062e04e128ff98353a1dcabf63b4fe3aa4c6e39e4",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20265,7 +20961,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_002.png",
@@ -20288,9 +20984,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "8e9c1e49b1539c9e7306849d11f8970ebb716d31bbfd7125fd819b7d0996294e",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20298,7 +21000,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_003.png",
@@ -20321,9 +21023,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "0cf5d20a6ae9dacf6443844dff41b426ff1043c442c8105e5809dcbb5e0f5d68",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20331,7 +21039,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_004.png",
@@ -20354,9 +21062,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "6ffcd6bc26f53b1fd17d52b09c3e9a7e262923c7c1fc0ad3610487803db5efb2",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20364,7 +21078,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/iguanodon_walk_W_005.png",
@@ -20387,9 +21101,15 @@
   "source": "Source_Generated/rig_full/iguanodon_rig.json",
   "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
   "export_sha256": "ee0595e325c8058651c41935e188eb88b3b2b6b4720b0356d6dc4ac2d3d9ef0f",
-  "status": "prototype_static",
-  "production_approved": false,
-  "animation_ready": false,
+  "status": "approved_animation",
+  "production_approved": true,
+  "animation_ready": true,
+  "approval": {
+   "approved_by": "Jonas (JuNNeZ)",
+   "date": "2026-10-20",
+   "quote": "Godkendt.",
+   "scope": "Iguanodon animation from these cutout parts (PixelLab top-down rest pose, one thumb spike per hand on the inside, spikes moving with the forearm): walk, run, attack, hurt, idle, death in S/N/E/W, shown as GIFs in the project thread \"Iguanodon med PixelLab\"."
+  },
   "paint_sources": [
    {
     "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
@@ -20397,7 +21117,7 @@
     "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
    }
   ],
-  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Approved by Jonas."
  },
  {
   "file": "assets/rig_full/leaellynasaura_attack_E_000.png",
