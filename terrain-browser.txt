@@ -1,0 +1,1 @@
+PASS: terrain and concealment browser controls/HUD/pause
