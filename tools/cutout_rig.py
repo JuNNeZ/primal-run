@@ -42,6 +42,7 @@ STRETCH = (0.6, 1.4)  # on-screen bone length change allowed (foreshortening)
 SPINE = {'body', 'neck', 'head', 'jaw', 'tail1', 'tail2', 'tail3'}  # never outlined against each other
 SEAM_INK = [int(c[0]) * 65536 + int(c[1]) * 256 + int(c[2]) for c in D.PALETTE[[D.OUTLINE, 1]]]  # #151b19, #28372a
 JOINT_R = 5.0  # px around a joint where parent and child melt together without a line
+RIM = 2  # px of a drawn part's own edge shading that is dropped where it lies on kin
 MIN_BONE = 2.0  # px: a drawn bone shorter than this only moves, it does not turn
 
 
@@ -159,6 +160,18 @@ def load_parts(folder, sid):
     if problems:
         raise SystemExit(f'{sid}: parts fail the cutout check\n  ' + '\n  '.join(problems))
     return views
+
+
+def shrink(m, r=1):
+    for _ in range(r):
+        e = m.copy()
+        e[1:] &= m[:-1]
+        e[:-1] &= m[1:]
+        e[:, 1:] &= m[:, :-1]
+        e[:, :-1] &= m[:, 1:]
+        e[0], e[-1], e[:, 0], e[:, -1] = False, False, False, False
+        m = e
+    return m
 
 
 def grow1(m):
@@ -282,12 +295,33 @@ def compose(view, tf, size=D.CANVAS):
             kin = {view['parts'][name]['parent']} | {n for n in order if view['parts'][n]['parent'] == name}
             under = np.isin(owner, [order.index(n) for n in kin if n in SPINE and n in order[:i]])
             ink = np.isin(warped[..., :3] @ [65536, 256, 1], SEAM_INK)
-            under &= ~np.isin(canvas[..., :3] @ [65536, 256, 1], SEAM_INK)
-            on = on & ~(ink & under)
+            on = on & ~(ink & under & ~np.isin(canvas[..., :3] @ [65536, 256, 1], SEAM_INK))
+            # the shaded rim along the piece's edge (2 px) is a seam too where kin lies underneath
+            on = on & ~(under & ~shrink(on, RIM))
+        elif view['parts'][name]['parent'] in order[:i]:
+            # a limb's rim melts into its parent around the joint
+            pj = A @ view['parts'][name]['pivot'] + t
+            yy, xx = np.mgrid[:size, :size]
+            near = (xx - pj[0]) ** 2 + (yy - pj[1]) ** 2 <= JOINT_R ** 2
+            under = owner == order.index(view['parts'][name]['parent'])
+            on = on & ~(near & under & ~shrink(on, RIM))
         canvas[on] = warped[on]
         owner[on] = i
         masks[name] = on
         joints[name] = A @ view['parts'][name]['pivot'] + t
+    # lone pixels and 1 px spurs left by turning the parts with nearest-neighbour sampling
+    for _ in range(2):
+        a = owner >= 0
+        n = np.zeros((size, size), int)
+        n[1:] += a[:-1]
+        n[:-1] += a[1:]
+        n[:, 1:] += a[:, :-1]
+        n[:, :-1] += a[:, 1:]
+        lone = a & (n <= 1)
+        owner[lone] = -1
+        canvas[lone] = 0
+        for m in masks.values():
+            m &= ~lone
     yy, xx = np.mgrid[:size, :size]
     line = np.zeros((size, size), bool)
     for i, name in enumerate(order):

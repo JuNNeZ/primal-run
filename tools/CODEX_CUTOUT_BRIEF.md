@@ -45,7 +45,8 @@ En del, arten ikke har, udelader du (fx `neck` på Archelon). Armene på Therizi
 - Tegn hver del **hel**, også det stykke, der er skjult bag andre dele, og også det fjerne ben, der næsten ikke ses.
   Det kommer til syne, når delen drejer.
 - Lad delene overlappe 2–3 px ved leddet, og gør leddets ende rund, så der ikke opstår huller, når den drejer.
-- **Tegn ikke det sorte omrids,** heller ikke en mørk kant hvor en del møder sin forælder (halsrod, haleled, hofte).
+- **Tegn ikke det sorte omrids,** heller ikke en mørk eller skygget kant langs delens egen kant, hvor den ligger
+  over en anden del (halsrod, haleled, hofte). Den kant bliver en synlig grænse, når delene drejer.
   Riggen tegner selv 1 px `#151b19` rundt om hele dyret og der, hvor en del ligger over en anden, men ikke hen over et
   led. Mørke toner inde i delen (skygger, striber, mundlinje) er fine.
 

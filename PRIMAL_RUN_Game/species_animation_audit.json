@@ -1091,13 +1091,13 @@
       "species": "tyrannosaurus",
       "direction": "E",
       "state": "death",
-      "area_ratio": 1.015,
+      "area_ratio": 1.022,
       "adjacent_centroid_steps": [
-        2.034,
-        7.147,
-        9.093,
-        5.099,
-        0.768
+        2.037,
+        7.059,
+        9.124,
+        5.134,
+        0.771
       ],
       "loop_centroid_step": null
     }
