@@ -138,3 +138,25 @@ p=sys.argv[1];a=np.array(Image.open(p));a[a[...,3]>0,:3]=(1,2,3);Image.fromarray
   assert.notEqual(r.status, 0);
   assert.match(r.stderr + r.stdout, /outside Primal Earth 32/);
 });
+
+test('cutout rig: four legs, wings and a borrowed motion get their own parts', () => {
+  const parts = (sid) => JSON.parse(fs.readFileSync(path.join(tmp, 'cut_' + sid, sid + '_parts.json'), 'utf8')).directions.E.parts;
+  for (const sid of ['stegosaurus', 'pteranodon', 'allosaurus']) {
+    const r = run(['tools/cutout_rig.py', '--species', sid, '--template', path.join(tmp, 'cut_' + sid)]);
+    assert.equal(r.status, 0, r.stderr || r.stdout);
+  }
+  assert.ok(['thigh_L', 'shin_L', 'upperarm_L', 'forearm_R'].every((n) => n in parts('stegosaurus')), Object.keys(parts('stegosaurus')).join());
+  assert.ok('wing_L' in parts('pteranodon') && !('thigh_L' in parts('pteranodon')));
+  // T-rex has no 3D model: its drawn parts move with the Allosaurus motion
+  const src = path.join(tmp, 'cut_allosaurus'), rex = path.join(tmp, 'cut_rex');
+  fs.mkdirSync(rex);
+  for (const f of fs.readdirSync(src)) fs.copyFileSync(path.join(src, f), path.join(rex, f.replace('allosaurus', 'tyrannosaurus')));
+  let r = run(['tools/cutout_rig.py', '--species', 'tyrannosaurus', '--parts', rex, '--out', path.join(tmp, 'rex_frames'), '--states', 'walk']);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  assert.match(r.stdout, /24 frames/);
+  const rig = JSON.parse(fs.readFileSync(path.join(tmp, 'rex_frames', 'tyrannosaurus_cutout.json'), 'utf8'));
+  assert.equal(rig.motion, 'allosaurus');
+  assert.ok(Math.abs(rig.motion_gain - 1) < 0.15, 'same legs, same stride: ' + rig.motion_gain);
+  r = run(['tools/cutout_rig.py', '--species', 'tyrannosaurus', '--template', path.join(tmp, 'rex_tpl')]);
+  assert.notEqual(r.status, 0);
+});

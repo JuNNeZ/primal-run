@@ -26,21 +26,54 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import draw_new_species as D  # noqa: E402
 import rig_animate as R  # noqa: E402
 
-PARENT = {'body': None, 'neck': 'body', 'head': 'neck', 'jaw': 'head', 'tail1': 'body', 'tail2': 'tail1',
-          'tail3': 'tail2', 'thigh_L': 'body', 'shin_L': 'thigh_L', 'foot_L': 'shin_L', 'thigh_R': 'body',
-          'shin_R': 'thigh_R', 'foot_R': 'shin_R', 'arm_L': 'body', 'arm_R': 'body'}
-# bone of each part as (from, to) key points of the 3D rig
-BONE = {'body': ('hip', 'neck0'), 'neck': ('neck0', 'head0'), 'head': ('head0', 'snout'), 'jaw': ('head0', 'snout'),
-        'tail1': ('tail0', 'tail1'), 'tail2': ('tail1', 'tail2'), 'tail3': ('tail2', 'tail3')}
-for s in 'LR':
-    BONE.update({f'thigh_{s}': (f'hind_{s}0', f'hind_{s}1'), f'shin_{s}': (f'hind_{s}1', f'hind_{s}2'),
-                 f'foot_{s}': (f'hind_{s}2', f'hind_{s}3'), f'arm_{s}': (f'arm_{s}0', f'arm_{s}2')})
+# part -> (parent, bone as (from, to) key points of the 3D rig).  Spine parts every species has; limb parts
+# come from the rig's chains and appendages (skeleton()), so quadrupeds, wings and flippers get their own.
+SPINE_PARTS = {'body': (None, ('hip', 'neck0')), 'neck': ('body', ('neck0', 'head0')), 'head': ('neck', ('head0', 'snout')),
+               'jaw': ('head', ('head0', 'snout')), 'tail1': ('body', ('tail0', 'tail1')),
+               'tail2': ('tail1', ('tail1', 'tail2')), 'tail3': ('tail2', ('tail2', 'tail3'))}
+# limb parts per chain kind as (part, from joint, to joint); the first hangs on the body, each next on the one before
+LIMB_PARTS = {'hind': [('thigh', 0, 1), ('shin', 1, 2), ('foot', 2, 3)],  # two-legged hind leg
+              'back': [('thigh', 0, 1), ('shin', 1, 2)],  # four-legged hind leg
+              'fore': [('upperarm', 0, 1), ('forearm', 1, 2)],  # four-legged front leg
+              'arm': [('arm', 0, 2)]}  # small arm held off the ground
+# species without a 3D model borrow another's motion; the joint moves are scaled to the drawn leg length
+MOTION = {'tyrannosaurus': 'allosaurus'}
 STRETCH = (0.6, 1.4)  # on-screen bone length change allowed (foreshortening)
+SPINE = {'body', 'neck', 'head', 'jaw', 'tail1', 'tail2', 'tail3'}  # never outlined against each other
+SEAM_INK = [int(c[0]) * 65536 + int(c[1]) * 256 + int(c[2]) for c in D.PALETTE[[D.OUTLINE, 1]]]  # #151b19, #28372a
 JOINT_R = 5.0  # px around a joint where parent and child melt together without a line
 MIN_BONE = 2.0  # px: a drawn bone shorter than this only moves, it does not turn
 
 
 # ---------------------------------------------------------------- key points of the 3D rig
+def chain_key(c):
+    """Quadrupeds draw both leg pairs with the same helper; the pair behind the hip is the hind ('back') pair."""
+    return 'back' if c.kind == 'fore' and c.rest[0][0] < 0 else c.kind
+
+
+def chain_name(c):
+    return f"{chain_key(c)}_{'L' if c.side > 0 else 'R'}"
+
+
+def skeleton(sid):
+    """Parts this species can be drawn in: part -> (parent, bone)."""
+    sid = MOTION.get(sid, sid)
+    if sid not in D.SPECIES:
+        raise SystemExit(f'unknown species {sid}: no 3D model to take the motion from (see MOTION in tools/cutout_rig.py)')
+    info = R.RigInfo(sid)
+    sk = {n: v for n, v in SPINE_PARTS.items() if info.tail or not n.startswith('tail')}
+    for c in R.build(sid).chains:
+        key, s = chain_key(c), 'L' if c.side > 0 else 'R'
+        prev = 'body'
+        for part, a, b in LIMB_PARTS[key]:
+            sk[f'{part}_{s}'] = (prev, (f'{key}_{s}{a}', f'{key}_{s}{b}'))
+            prev = f'{part}_{s}'
+    for g, side in info.tips:
+        s = 'L' if side > 0 else 'R'
+        sk[f'{g}_{s}'] = ('body', (f'{g}_{s}0', f'{g}_{s}1'))
+    return sk
+
+
 def rest_points(sid, info):
     m = R.build(sid)
     ells = [p for p in m.prims if p.kind == 'ell']
@@ -62,7 +95,10 @@ def rest_points(sid, info):
             pts[f'tail{i}'] = np.array([x, 0.0, axis_z(x, ('tail', 'body'))])
     for c in m.chains:
         for i, p in enumerate(c.rest):
-            pts[f'{c.name}{i}'] = c.world(p)
+            pts[f'{chain_name(c)}{i}'] = c.world(p)
+    for (g, side), tip in info.tips.items():
+        n = f"{g}_{'L' if side > 0 else 'R'}"
+        pts[n + '0'], pts[n + '1'] = R.side_point(info.pivots[g], side), np.asarray(tip, float)
     return pts
 
 
@@ -76,7 +112,9 @@ def posed_points(sid, info, rest, state, frame, nframes):
         out[k] = pose.carry(p)[0]
     for c in m.chains:
         for i, p in enumerate(c.posed):
-            out[f'{c.name}{i}'] = c.world(p)
+            out[f'{chain_name(c)}{i}'] = c.world(p)
+    for n, (piv, tip) in getattr(m, 'app_joints', {}).items():
+        out[n + '0'], out[n + '1'] = np.asarray(piv, float), np.asarray(tip, float)
     return out
 
 
@@ -106,16 +144,17 @@ def death_points(sid, info, rest, frame, nframes):
 def load_parts(folder, sid):
     folder = Path(folder)
     spec = json.loads((folder / f'{sid}_parts.json').read_text())
+    sk = skeleton(sid)
     views = {}
     for d, v in spec['directions'].items():
         parts = {}
         for name, p in v['parts'].items():
-            if name not in PARENT:
-                raise SystemExit(f'{sid} {d}: unknown part {name} (allowed: {", ".join(PARENT)})')
+            if name not in sk:
+                raise SystemExit(f'{sid} {d}: unknown part {name} (allowed: {", ".join(sk)})')
             img = np.array(Image.open(folder / f'{sid}_{d}_{name}.png').convert('RGBA'))
             parts[name] = dict(img=img, pivot=np.array(p['pivot'], float), tip=np.array(p['tip'], float),
-                               parent=p.get('parent', PARENT[name]))
-        views[d] = dict(order=v['order'], parts=parts)
+                               parent=p.get('parent', sk[name][0]))
+        views[d] = dict(order=v['order'], parts=parts, bones={n: sk[n][1] for n in parts})
     problems = check(folder, sid, views)
     if problems:
         raise SystemExit(f'{sid}: parts fail the cutout check\n  ' + '\n  '.join(problems))
@@ -170,14 +209,14 @@ def check(folder, sid, views):
     return bad
 
 
-def bone2d(pts, name, heading, k):
-    a, b = BONE[name]
+def bone2d(pts, bone, heading, k):
+    a, b = bone
     if a not in pts or b not in pts:
         return None
     return np.array(R.project(pts[a], heading, k)), np.array(R.project(pts[b], heading, k))
 
 
-def transforms(view, rest, posed, heading, k):
+def transforms(view, rest, posed, heading, k, rigid_limbs=False, gain=1.0):
     """Per part: 2x2 matrix A and offset t with screen point q = A @ p + t (p in the drawn rest pose)."""
     out = {}
     names = list(view['parts'])
@@ -188,14 +227,22 @@ def transforms(view, rest, posed, heading, k):
             par = part['parent']
             if name in done or (par and par in view['parts'] and par not in done):
                 continue
-            r, q = bone2d(rest, name, heading, k), bone2d(posed, name, heading, k)
+            if rigid_limbs and name not in SPINE and par in out:
+                # dying: legs and arms ride their parent; the roll onto the side would fling them across the frame
+                out[name] = out[par]
+                if par in turned:
+                    turned.add(name)
+                done.add(name)
+                continue
+            bone = view['bones'][name]
+            r, q = bone2d(rest, bone, heading, k), bone2d(posed, bone, heading, k)
             if par and par in out and par in turned:
                 Ap, tp = out[par]
                 pivot = Ap @ part['pivot'] + tp
             else:  # root, or a parent too short on screen to turn: follow the rig's joint directly
-                pivot = part['pivot'] + ((q[0] - r[0]) if r else 0)
+                pivot = part['pivot'] + (gain * (q[0] - r[0]) if r else 0)
             # the drawn tip moves on screen like the rig's joint does; the part turns and stretches to reach it
-            tip = part['tip'] + ((q[1] - r[1]) if r else 0)
+            tip = part['tip'] + (gain * (q[1] - r[1]) if r else 0)
             vr, vp = part['tip'] - part['pivot'], tip - pivot
             A = np.eye(2)
             if np.linalg.norm(vr) >= MIN_BONE and np.linalg.norm(vp) > 1e-6:
@@ -229,6 +276,14 @@ def compose(view, tf, size=D.CANVAS):
         A, t = tf[name]
         warped = warp(view['parts'][name]['img'], A, t, size)
         on = warped[..., 3] > 127
+        if name in SPINE:
+            # a dark edge the artist drew where this piece meets the trunk/tail/neck under it is a seam, not a
+            # contour: keep the colour underneath there
+            kin = {view['parts'][name]['parent']} | {n for n in order if view['parts'][n]['parent'] == name}
+            under = np.isin(owner, [order.index(n) for n in kin if n in SPINE and n in order[:i]])
+            ink = np.isin(warped[..., :3] @ [65536, 256, 1], SEAM_INK)
+            under &= ~np.isin(canvas[..., :3] @ [65536, 256, 1], SEAM_INK)
+            on = on & ~(ink & under)
         canvas[on] = warped[on]
         owner[on] = i
         masks[name] = on
@@ -240,7 +295,9 @@ def compose(view, tf, size=D.CANVAS):
         ring = grow1(m) & ~m & (owner < i)  # background, or a part behind this one
         kin = [n for n in order if view['parts'][n]['parent'] == name] + [view['parts'][name]['parent']]
         for n in kin:
-            if n in masks:
+            if n in SPINE and name in SPINE and n in masks:  # trunk, neck, head and tail are one surface,
+                ring &= ~masks[n]  # even where a limb behind them peeks over the joint
+            elif n in masks:
                 j = joints[name] if n == view['parts'][name]['parent'] else joints[n]
                 near = (xx - j[0]) ** 2 + (yy - j[1]) ** 2 <= JOINT_R ** 2
                 ring &= ~(near & (owner == order.index(n)))
@@ -251,20 +308,37 @@ def compose(view, tf, size=D.CANVAS):
     return canvas
 
 
+def motion_gain(views, rest, k):
+    """Drawn hind-leg length over the borrowed rig's, side views: a bigger animal takes longer strides."""
+    drawn = model = 0.0
+    for d in ('E', 'W'):
+        view = views.get(d)
+        for name in (view or {}).get('parts', {}):
+            if name.split('_')[0] in ('thigh', 'shin', 'foot'):
+                part, bone = view['parts'][name], view['bones'][name]
+                a, b = bone2d(rest, bone, R.HEADING[d], k) or (np.zeros(2),) * 2
+                drawn += float(np.linalg.norm(part['tip'] - part['pivot']))
+                model += float(np.linalg.norm(b - a))
+    return float(np.clip(drawn / model, 0.5, 2.5)) if model > 1 else 1.0
+
+
 def animate(sid, views, out, states=tuple(R.STATES)):
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
-    k = D.SPECIES[sid].get('scale', 1.0)
-    info = R.RigInfo(sid)
-    rest = rest_points(sid, info)
-    rig = {'species': sid, 'source': 'tools/cutout_rig.py', 'states': {}, 'frames': {}}
+    msid = MOTION.get(sid, sid)
+    k = D.SPECIES[msid].get('scale', 1.0)
+    info = R.RigInfo(msid)
+    rest = rest_points(msid, info)
+    gain = motion_gain(views, rest, k) if msid != sid else 1.0
+    rig = {'species': sid, 'source': 'tools/cutout_rig.py', 'motion': msid, 'motion_gain': round(gain, 3),
+           'states': {}, 'frames': {}}
     for state in states:
         n, fps, loop, contact = R.STATES[state]
         rig['states'][state] = {'frames': n, 'fps': fps, 'loop': loop, 'contact_frame': contact}
         for f in range(n):
-            posed = posed_points(sid, info, rest, state, f, n)
+            posed = posed_points(msid, info, rest, state, f, n)
             for d, view in views.items():
-                img = compose(view, transforms(view, rest, posed, R.HEADING[d], k))
+                img = compose(view, transforms(view, rest, posed, R.HEADING[d], k, rigid_limbs=state == 'death', gain=gain))
                 name = f'{sid}_{state}_{d}_{f:03d}'
                 Image.fromarray(img, 'RGBA').save(out / f'{name}.png')
                 rig['frames'][name] = {'file': f'{name}.png', 'bbox': list(Image.fromarray(img).getbbox() or (0, 0, 0, 0))}
@@ -285,11 +359,15 @@ def assign(m, info, rest):
         world = [c.world(p) for p in c.rest]
         segs = list(zip(world[:-1], world[1:]))
         side = 'L' if c.side > 0 else 'R'
-        labels = ['thigh', 'shin', 'foot'] if c.kind == 'hind' and len(segs) == 3 else ['arm'] * len(segs)
+        labels = [next(part for part, a, b in LIMB_PARTS[chain_key(c)] if a <= i < b) for i in range(len(segs))]
         for i in range(c.start, c.end):
             p = m.prims[i]
             q = p.c if p.kind == 'ell' else R.slab_centre(p)
             names[i] = f'{labels[int(np.argmin([seg_dist(q, a, b) for a, b in segs]))]}_{side}'
+    for (g, side), parts in R.appendage_parts(m, info.pivots).items():
+        for start, end, _, _ in parts:
+            for i in range(start, end):
+                names[i] = f"{g}_{'L' if side > 0 else 'R'}"
     t = [rest.get(f'tail{i}', None) for i in range(4)]
     for i, p in enumerate(m.prims):
         if names[i]:
@@ -328,9 +406,12 @@ def template(sid, folder):
     import copy
     folder = Path(folder)
     folder.mkdir(parents=True, exist_ok=True)
+    if sid not in D.SPECIES:
+        raise SystemExit(f'{sid} has no 3D model to cut; start from --template {MOTION.get(sid, "allosaurus")}')
     k = D.SPECIES[sid].get('scale', 1.0)
     info = R.RigInfo(sid)
     rest = rest_points(sid, info)
+    sk = skeleton(sid)
     m = R.build(sid)
     names = assign(m, info, rest)
     spec = {'species': sid, 'note': 'cut from the 3D model by tools/cutout_rig.py --template', 'directions': {}}
@@ -340,19 +421,19 @@ def template(sid, folder):
         parts, depth = {}, {}
         full = D.draw_view(m, heading, D.seed_for(sid, d), scale=k)
         Image.fromarray(full, 'RGBA').save(folder / f'{sid}_{d}_full.png')
-        for name in sorted(set(names), key=list(PARENT).index):
+        for name in sorted(set(names), key=list(sk).index):
             sub = copy.copy(m)
             sub.prims = [p for p, n in zip(m.prims, names) if n == name]
             sub.decals = m.decals if name == 'head' else []
             img = strip_outline(D.draw_view(sub, heading, D.seed_for(sid, d), scale=k))
             Image.fromarray(img, 'RGBA').save(folder / f'{sid}_{d}_{name}.png')
-            a, b = bone2d(rest, name, heading, k) or (np.array(R.project(rest['hip'], heading, k)),) * 2
+            a, b = bone2d(rest, sk[name][1], heading, k) or (np.array(R.project(rest['hip'], heading, k)),) * 2
             ys, xs = np.nonzero(img[..., 3] > 0)
 
             def snap(q):  # keep the point on the part's own pixels (a thin tip can end past them)
                 i = int(np.argmin((xs - q[0]) ** 2 + (ys - q[1]) ** 2))
                 return q if (xs[i] - q[0]) ** 2 + (ys[i] - q[1]) ** 2 <= 4 else np.array([xs[i], ys[i]], float)
-            parts[name] = {'parent': PARENT[name], 'pivot': [round(float(v), 1) for v in snap(a)],
+            parts[name] = {'parent': sk[name][0], 'pivot': [round(float(v), 1) for v in snap(a)],
                            'tip': [round(float(v), 1) for v in snap(b)]}
             cs = [Mz @ (p.c if p.kind == 'ell' else R.slab_centre(p)) for p in sub.prims]
             depth[name] = float(np.mean([0.82 * c[2] - 0.36 * c[1] for c in cs]))  # nearer the camera = larger

@@ -36,9 +36,10 @@ ANIMATIONS = GAME / 'rig_full_animations.json'
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 
-def render(sid: str, review: str, paint: tuple | None = None) -> tuple[str, list, list]:
+def render(sid: str, review: str, paint: tuple | None = None, cutout: str = '') -> tuple[str, list, list]:
     """Render, validate and copy one species; returns (id, manifest entries, animations).
-    paint = (folder, file pattern, painted pose): recolour every frame from four drawn poses."""
+    paint = (folder, file pattern, painted pose): recolour every frame from four drawn poses.
+    cutout = folder of parts drawn by an artist (tools/cutout_rig.py): the rig's motion moves those parts."""
     with tempfile.TemporaryDirectory() as tmp:
         rig_out = out = Path(tmp) / sid
         cmd = [sys.executable, str(ROOT / 'tools/rig_animate.py'), '--species', sid, '--out', str(out)]
@@ -46,6 +47,17 @@ def render(sid: str, review: str, paint: tuple | None = None) -> tuple[str, list
             cmd += ['--sheet', str(Path(review) / f'{sid}_sheet.png'), '--gif', str(Path(review) / sid)]
         subprocess.run(cmd, cwd=ROOT, check=True, capture_output=True)
         paint_sources = []
+        if cutout:
+            out = Path(tmp) / f'{sid}_cutout'
+            cmd = [sys.executable, str(ROOT / 'tools/cutout_rig.py'), '--species', sid, '--parts', cutout, '--out', str(out)]
+            if review:
+                cmd += ['--sheet', str(Path(review) / f'{sid}_cutout_sheet.png'), '--gif', str(Path(review) / f'{sid}_cutout')]
+            done = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
+            if done.returncode:
+                raise SystemExit(f'{sid}: cutout parts refused\n{done.stdout[-2000:]}{done.stderr[-2000:]}')
+            parts = Path(cutout) / f'{sid}_parts.json'
+            paint_sources.append({'file': str(parts.resolve().relative_to(GAME)), 'kind': 'cutout parts',
+                                  'sha256': hashlib.sha256(parts.read_bytes()).hexdigest()})
         if paint:
             folder, pattern, ref = paint
             out = Path(tmp) / f'{sid}_painted'
@@ -58,9 +70,10 @@ def render(sid: str, review: str, paint: tuple | None = None) -> tuple[str, list
                 shutil.copy2(src, dst)
                 paint_sources.append({'direction': d, 'file': f'Source_Generated/rig_full/paint/{dst.name}', 'pose': ref,
                                       'sha256': hashlib.sha256(dst.read_bytes()).hexdigest()})
+        # cutout art has its own silhouette, so the rig-shape check does not apply; cutout_rig.py checked the parts
         check = subprocess.run([sys.executable, str(ROOT / 'tools/validate_rig_frames.py'), '--species', sid,
                                 '--frames', str(out), '--rig', str(rig_out)], cwd=ROOT, capture_output=True, text=True)
-        if check.returncode:
+        if check.returncode and not cutout:
             raise SystemExit(f'{sid}: rig frames fail validate_rig_frames\n{check.stdout[-2000:]}')
         rig = json.loads((rig_out / f'{sid}_rig.json').read_text())
         SOURCE.mkdir(parents=True, exist_ok=True)
@@ -82,9 +95,11 @@ def render(sid: str, review: str, paint: tuple | None = None) -> tuple[str, list
                                     'export_sha256': hashlib.sha256((ASSETS / name).read_bytes()).hexdigest(),
                                     'status': 'prototype_static', 'production_approved': False, 'animation_ready': False,
                                     **({'paint_sources': paint_sources} if paint_sources else {}),
-                                    'export': ('tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; '
-                                               if paint_sources else 'tools/rig_to_game.py: rig_animate.py render copied byte for byte; ')
-                                              + 'passes validate_rig_frames.py. Not approved art.'})
+                                    'export': ('tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. '
+                                               if cutout else
+                                               ('tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; '
+                                                if paint_sources else 'tools/rig_to_game.py: rig_animate.py render copied byte for byte; ')
+                                               + 'passes validate_rig_frames.py. ') + 'Not approved art.'})
                 animations.append({'name': f'{sid}_{state}_{d}', 'species': sid, 'state': state, 'direction': d,
                                    'frames': frames, 'fps': info['fps'], 'loop': info['loop'], 'origin': [72, 72],
                                    'contact_frame': info['contact_frame'], 'validated_animation': False,
@@ -100,19 +115,21 @@ def main():
     ap.add_argument('--review', default='', help='folder for review GIFs and contact sheets (not game assets)')
     ap.add_argument('--paint', default='', help='one species: folder with four drawn poses to paint every frame from')
     ap.add_argument('--pattern', default='{sid}_rest_{d}.png', help='drawn pose file names, e.g. {sid}_walk_{d}_000.png')
+    ap.add_argument('--cutout', default='', help='one species: folder with drawn parts (tools/CODEX_CUTOUT_BRIEF.md)')
     ap.add_argument('--ref', default='rest', help='pose that was drawn: rest or state:frame (see rig_paint_transfer.py)')
     a = ap.parse_args()
     ids = list(D.SPECIES) if a.species == 'all' else [s for s in a.species.split(',') if s]
     for sid in ids:
         if sid not in D.SPECIES:
             raise SystemExit(f'unknown species {sid}')
-    if a.paint and len(ids) != 1:
-        raise SystemExit('--paint takes one species')
+    if (a.paint or a.cutout) and len(ids) != 1:
+        raise SystemExit('--paint and --cutout take one species')
     paint = (str(Path(a.paint).resolve()), a.pattern, a.ref) if a.paint else None
     if a.review:
         Path(a.review).mkdir(parents=True, exist_ok=True)
     with ProcessPoolExecutor(max_workers=max(1, a.jobs)) as pool:
-        results = list(pool.map(render, ids, [a.review] * len(ids), [paint] * len(ids)))
+        cutout = str(Path(a.cutout).resolve()) if a.cutout else ''
+        results = list(pool.map(render, ids, [a.review] * len(ids), [paint] * len(ids), [cutout] * len(ids)))
     done = {sid for sid, _, _ in results}
     manifest = [e for e in (json.loads(MANIFEST.read_text()) if MANIFEST.exists() else []) if e['species'] not in done]
     animations = [x for x in (json.loads(ANIMATIONS.read_text())['animations'] if ANIMATIONS.exists() else [])

@@ -19,11 +19,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "029919213006c11af9cc67138d56d5e2eb294fb849e8f06de5f6425f0f992022",
+  "export_sha256": "59fe2e9e4aa414801f9f355d74bf1f1037b02ed66d6548d65f89da3f496df867",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_E_001.png",
@@ -45,11 +52,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "221a989c5ccceda7c35496c756f4643a3bcea002826f47986cbf3e54fb7f873a",
+  "export_sha256": "f480540d9f3d38fec119e0c5492acf19f985de42f4a81c2da5506f8064801571",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_E_002.png",
@@ -71,11 +85,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "ff1a86c36f2d833cd4a159de26aabcf6d4f77170c0266df115b38055f5c6abd8",
+  "export_sha256": "9a87958b5c488ae5f1ba96a7da6ffd22b1225af9272cd9efef6bdd641f045d9a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_E_003.png",
@@ -97,11 +118,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "a56ff8d47281d0415aa08e4ba3bc9e1eeb8cad6743a91e800485b74efb2811b4",
+  "export_sha256": "bd7b50610cea3b7d126a6912aba42315cbcda718b609b61e372f804409f912dd",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_E_004.png",
@@ -123,11 +151,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "42f7abf83f62640cc5f113c6469e321524c37cb9d8e61ac8a2fcc6bc77e18fe4",
+  "export_sha256": "7b7494992935d8328a62eb144f769b9e585954240465159cfe3b7c2fd29e67a1",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_E_005.png",
@@ -149,11 +184,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "5f3daa5bda62b927ce7ca7202d2584dde84bbeae2cd681719d91bae488121435",
+  "export_sha256": "233c2b9203372fd820e9f04cb94e8b615625173f34c6d31c410a346cd6adeca4",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_N_000.png",
@@ -175,11 +217,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "b1fb50480f927212c84b98e2e57b357f9567d5a6e2dc7ca16e4c2eaa13cf3f55",
+  "export_sha256": "6e8cf3d6d535a38e3d7fa914fabb39a530e0d2201bd957510e86b364fd008e53",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_N_001.png",
@@ -201,11 +250,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "c115dba860f201b451d22e44a82836057651e02624bc615d0e47df016d909aa0",
+  "export_sha256": "635a8922e5556915727bb0a0c5e9515b90ab947f3968a543ca7d75e53f6f1091",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_N_002.png",
@@ -227,11 +283,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "31ea19f994f6947c83e2b0f4209794d8a2d178a191e0c42b17417217b190b50b",
+  "export_sha256": "f1389b968b6b9392a10f548387517eb2ddc34afab668631d825930017f651bfc",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_N_003.png",
@@ -253,11 +316,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "f1edc5ca6408da238dc79554edc12f9c2d2a983e505df804d08ca015b6f8894e",
+  "export_sha256": "14160b7fdbe305da9282d7c445b9fb4f1452d32f740c000cfce9c18f258e7847",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_N_004.png",
@@ -279,11 +349,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "d3d29d35733ea195198ee11b1239370a30f651c9c65b28292c9082c2fdd5a99e",
+  "export_sha256": "e30378c839a7d85b3ce6f0782a7e45692c64ad239b0eb71c1b0b76185b69bc35",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_N_005.png",
@@ -305,11 +382,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "67bcbe386d49c24b86904a3f47133aa0252d43d243dd05c04eb7b3d74fd03bbe",
+  "export_sha256": "4502c77946eb3c67c9a824a16397e5c2d1d67826aa7d6c66680c860dbbafe3cb",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_S_000.png",
@@ -331,11 +415,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "d330c18351db3e65ec2001314cec7028fa95a7c671e3533154f55d80f0d4cf04",
+  "export_sha256": "f236fec5b5085eaac71980471d9153253ad303df589c552640ebc764e3449b38",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_S_001.png",
@@ -357,11 +448,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "ac8e63d852c0675228f59f2ed21b7ee3bd0c98d0d3a6924cc3a367a841483fdf",
+  "export_sha256": "b7a0431cea1a63ae45998992ed1f2a1f8c629307d65e5a5b9f600e1847dfdb44",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_S_002.png",
@@ -383,11 +481,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "0ecf6ab18bf6056e895c13e53362412aecb61650253d5b697b6b0254a782b4da",
+  "export_sha256": "fc382e5edcff47c3547fd930c994057f1b3f671c9bbc4e33470670595d8510e8",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_S_003.png",
@@ -409,11 +514,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "f7f9e1d33d9f7395a646bae7d193d57d65bf87cedddaf584dbdd65ce91f44cc6",
+  "export_sha256": "765f63504c746aae7b33e0520508b1c1bef6da18636cea1ff0d6773255dbba07",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_S_004.png",
@@ -435,11 +547,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "e0ec1d3369faf3ea4f2c04aaee37627f06f5a4eb64f746618b6b48eae77ebf9c",
+  "export_sha256": "cf204f8ee37b12d40fcf80092b6130aa07f9b1f19d1e9ae3e9b3cb7f001d27f7",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_S_005.png",
@@ -461,11 +580,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "73874a94ea6e30c74c28011e9665b7a463613cfdc75b6274b8c404aa8f1d3230",
+  "export_sha256": "eb5e3ae0770e0d0717a6206e49ac021afb7ca0094cca0166a9b2fad72e9b5fc5",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_W_000.png",
@@ -487,11 +613,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "cee13498b2362900d9376cd6308cc29cc4602237c4795b04010a0a9ac55c786d",
+  "export_sha256": "e41e7175de010464c6bca2cbc520e4e369cca8c3820a82162bde0a804b89362e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_W_001.png",
@@ -513,11 +646,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "258f2bc8b1b99b0aa4726c53d631ce3d4d3fec9124738849186074abf8e9458e",
+  "export_sha256": "d9ea962def6e21781ea9bdf37fabf66f5bb4aa73f93443e253f46f14df7af8de",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_W_002.png",
@@ -539,11 +679,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "6ea4b3dbde17406358c9d93e47667eb8a1ec3aa818fde8405bb4e3cfb334fa82",
+  "export_sha256": "5a5a00a2a0fd8eacc43a06eccb9507a7222b07efe715cd5f35b78365009dbfde",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_W_003.png",
@@ -565,11 +712,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "3bfaeffe9ef77dd11571adbb927cb33abf24e952b42a8616b8bf55fb50db8a14",
+  "export_sha256": "d8ff67314c8433566112020f5e71954e290ff9d6aaa137e7faa4b90c772d5b76",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_W_004.png",
@@ -591,11 +745,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "7d857afa78c0a689487b62810349d1124b6fda81dc500e4ead537e386ef0462c",
+  "export_sha256": "7169698129ae3faab651caa964d623d46025c066a67c07bdb32188598dff55fa",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_attack_W_005.png",
@@ -617,11 +778,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "ac75a6f45a6d4fd24e61dccaec787584ccaa1eb847947928319cdf5a027b0b58",
+  "export_sha256": "78938bc95e14db833a5d26675b5a3a514e666b08c917a21ec746ef01e5f1cc80",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_E_000.png",
@@ -643,11 +811,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "7cacf494402b88247f2690ce2fe9faf68e9369d3b2a741eb35484c2faeb7b5d2",
+  "export_sha256": "d97985cca7fd3519df87dd135c2af8f259f9c0cd42277c249ca1fe5e97e5aae6",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_E_001.png",
@@ -669,11 +844,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "b8da8dc25d765fde0e28bd7141844eecd67e79dc4bb094df49748341229e47db",
+  "export_sha256": "1dcaa8e325457e0f1f448e9f5a20f689463a423ba4e70a44f7bce728cffd6fd5",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_E_002.png",
@@ -695,11 +877,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "b4b33a3aaf78d5ce47076265179f16d736c1249d5d1e11dfde1fc710a8b9dc99",
+  "export_sha256": "80d88ef71cc50529398a1ba97556db120aaa98ff333dd5ef7a40f74eed1a9ffb",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_E_003.png",
@@ -721,11 +910,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "e25b436efdd351d4935c94c08523b2fb5747083b1b3670a16777e99c0817a03a",
+  "export_sha256": "60c9c53f6b45b42ac1852183edc147eeeb383dcba6c0b4c24bc09ec6704a3bf3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_E_004.png",
@@ -747,11 +943,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "077a9f36546915eaf2bde8a5858005e5e4e3ccb8bd6fc05ef9fd1efda14f4f66",
+  "export_sha256": "1a7d106b33b185740fdf2fe132de5f4456e3efdcd0ea87a5c65fc5343bb858fc",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_E_005.png",
@@ -773,11 +976,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "36daa357afe14b162482c9a55c27c30a8b7dcfcbb238e7f66735dde602bec232",
+  "export_sha256": "a0bbaa8cdc7e5a9cf8f7e329b2b38f6fad50e073874a5ccbabeccf9ac014f742",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_N_000.png",
@@ -799,11 +1009,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "b15f33d1d01fb949692f58a6c5db772959ccf4dade8376ca428cfca33c119d02",
+  "export_sha256": "4502c77946eb3c67c9a824a16397e5c2d1d67826aa7d6c66680c860dbbafe3cb",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_N_001.png",
@@ -825,11 +1042,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "cbedae2dca23045959a229dfb626471ab280ce8d746a7b8ad4208005fe75d6b1",
+  "export_sha256": "72f1dbcd2d1aa4620a6b07928555f76c07c0486b97e441f9859533503d548c79",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_N_002.png",
@@ -851,11 +1075,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "da2fc6ad0b76890585392ee2967d099101ec339f48ecc9ae1e4e359492883d34",
+  "export_sha256": "38ebf7c5ec2f263a749eee1bc1cf10d8f1d853bef36c98e448fe82c25c1de243",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_N_003.png",
@@ -877,11 +1108,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "804ea2eb0929064db8762976b1372bab2c21fe15a30d47d5ef206f0a4b053fc3",
+  "export_sha256": "ec2f90a487a9fb70f5a4e11f94c1a8171fc1cb0e354006f054833d09ff0895da",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_N_004.png",
@@ -903,11 +1141,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "14d419e428d02144ae4b3b267b11fc27decf0bc7d6b6b9d78d0f69ca1f66d593",
+  "export_sha256": "a53b32267d59b2e06636f690835dfe3fab017f9e9b6e329ac880e17d87a3c7fd",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_N_005.png",
@@ -929,11 +1174,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "185e5f9094d310d5a17ae38856d5fc098f636021ae15e756db0b191960e6e3ea",
+  "export_sha256": "6f78071f90f7e5f588966ed9b86f58388760330dcf602320d1069a938f9cdee1",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_S_000.png",
@@ -955,11 +1207,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "bf3a59478e932e8af653d10ab6ffd6fb3f56443842a87ac672c9c77797e39995",
+  "export_sha256": "dc451756cb73c51782084920c40ffcedf9e406dbaefbd191024944961299f198",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_S_001.png",
@@ -981,11 +1240,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "8aa427a2caa0a9a3c504ce55cf003ffa85cadc8dddfb338c6cb9662e64a23cbc",
+  "export_sha256": "50867cda31a815f54c91e24ed40b5d86c90e959117e39822c660f833893d4b4b",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_S_002.png",
@@ -1007,11 +1273,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "fd4d80520c860f7084024458cfa9b5c5b14fa4d73ced9043bca0da108df91290",
+  "export_sha256": "cfdd3df6344721dc82898976e9dd8c0add1c3ae94f5ad5789e8920350a70e2d7",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_S_003.png",
@@ -1033,11 +1306,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "5ae30ec9fbc7fa25ece96d90deaf1fa223f6f4dbae20d6e27647d7be61a0ff73",
+  "export_sha256": "137c9d09858535373fd2c9935dd7c310b47c931849900d26078b5c097fb18f79",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_S_004.png",
@@ -1059,11 +1339,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "07302657db2103042a941a9f48393c41c6d17c05c2d73ddb0613cab0b2e17b03",
+  "export_sha256": "fc8133f857b898ba7f85242fad8441194efe882ddd69aa93ef9ed4fa34e0d783",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_S_005.png",
@@ -1085,11 +1372,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "e66d45065f95a122b5ebc89c403d623cfa3de49fab761f789821cfdd2d8f81d2",
+  "export_sha256": "e587e2986496d075b774889a4d3559a5456f8184bfc53295303bc8841b99b901",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_W_000.png",
@@ -1111,11 +1405,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "2d5b717a4b498a7117940a0fe8e53376a9615670ee30567a92bbede3e30e6f47",
+  "export_sha256": "78938bc95e14db833a5d26675b5a3a514e666b08c917a21ec746ef01e5f1cc80",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_W_001.png",
@@ -1137,11 +1438,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "028fb8a913506925b65bb845aa0cb0c4bd31afdde0e08ba280eb9d1fecef271d",
+  "export_sha256": "435c28b8952589ac701c7ce0504eb7f98057b59691692be633117ea51c74709a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_W_002.png",
@@ -1163,11 +1471,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "295788c51e2afdcf63cc19138b0259153b2f12bb575a714696bf2ad493371ece",
+  "export_sha256": "821e576f23243b59628eee8903620d31d2cebbb0daeb834677a6cb25fd716796",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_W_003.png",
@@ -1189,11 +1504,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "43a155ec9ce7833fb4defe7c918578d795a4c721bbe445360d6eb765a1206b46",
+  "export_sha256": "3e5d915b2247ace612129480972715be4cf096dfb53a0dc9e45045e154cd6c4f",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_W_004.png",
@@ -1215,11 +1537,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "8632c94484d76182de24670226def58190bd1c713724bcd60d23e787664219f8",
+  "export_sha256": "d9f8b1a935c5a3a8a8d81cb2786788444c3827c0c95e1866eb605b98aea7f985",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_death_W_005.png",
@@ -1241,11 +1570,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "f58e092687d950e64111303825ed1c7edd90da1e3cde89efa67c5245d43c84ef",
+  "export_sha256": "4c2dd0f4072efefdf2a1544e731ec67d19439ec04fce8f545f7f969384599368",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_hurt_E_000.png",
@@ -1267,11 +1603,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "ea2ca347ca1d4b4fa38f557f6e98f95b0e89ccb5330836e86244c1dc50fb5d47",
+  "export_sha256": "badbee8f815d46acc2136aa68eb769a53c5127d3c0e79f557a04a536e592b8c7",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_hurt_E_001.png",
@@ -1293,11 +1636,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "515d18059679de7577249307bf8ad350e53869b5e8e5b724be8bbe8958b34d31",
+  "export_sha256": "76e242bcb2fb901d5c7852ae6d6d6dfdd94a0f5bc7aeaf9d9de6bbf22fc7d8be",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_hurt_N_000.png",
@@ -1319,11 +1669,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "7a247c884855105ca0bd7dced7a202174189cd40097bceec034c8141c52614f5",
+  "export_sha256": "d884d386f414785696c8a2eab161ff07db7775853e7ac75b9062a44069b1fa28",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_hurt_N_001.png",
@@ -1345,11 +1702,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "cc9b4def42623055c5900aeabba91e880a9691f187850eb95abb6ec3f2d94c9e",
+  "export_sha256": "9fad3d5509d4d05ccb969a3eb9db231f317dd7520026e32b5dd6fecfb8d59551",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_hurt_S_000.png",
@@ -1371,11 +1735,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "e7bbae4fb20271050e793e5bcecbc891c5a55082c89b46ad35138ab12ea0a55f",
+  "export_sha256": "ffdd4c66aa9d53b91ca0ad8ff6f39b2c83ff0100d9df71df5bc5ebdfcf0f62dd",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_hurt_S_001.png",
@@ -1397,11 +1768,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "d0d89d7ce84e334f61dd0181832eb3e4104aba44a0fdafff549ae29fe02c0597",
+  "export_sha256": "ef477774d9c022f0d358e2338e6e8373752ee3cb99e02573dd02b14ee722c9c5",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_hurt_W_000.png",
@@ -1423,11 +1801,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "ae3b615b5561d8864c459de1bf0abe32b5fccbb98941d972be0217b7c4ba81be",
+  "export_sha256": "f4d06a7ffe4acea8e80ae01a377cd8f65d8a9878bfe045ae917273afba21f81d",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_hurt_W_001.png",
@@ -1449,11 +1834,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "78cc0ebf835bd4d847ad3f4e764fc12d0053019561bb449c61dd0d6cc84b165b",
+  "export_sha256": "7f50dba754758fcb4f1d3fd878ac49575c667f03837f0228ec9c4414f6c14386",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_E_000.png",
@@ -1475,11 +1867,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "2ad128421d5a51d91800dced6c3c0eaf5c339be58824d37b5f259b7416855c7a",
+  "export_sha256": "94696a41eae640a2157114f8ed346dd1e138a449ef3048ba47e7ce2a61f165c1",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_E_001.png",
@@ -1501,11 +1900,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "887f8234179f55b7b261df1b1438d91e383854c4b315b0f06bcdaef107902fb1",
+  "export_sha256": "0eda1290408ba8fa5f6f974afe9cfaf226e6558516dede45f23653c8024584a5",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_E_002.png",
@@ -1527,11 +1933,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "11728406ac80233c9c3938bc1a9391b03293bea8c6d58d4407a9f1f0f58d9db6",
+  "export_sha256": "2a9b1a7b704524d6a0cf2150da0d0aa999be968ccf8e75af1db471ec04a998ca",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_E_003.png",
@@ -1553,11 +1966,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "41c1a07d37f41441edfd40b14f59b76f9649c29ed86156bf3537aeb13b8f99c5",
+  "export_sha256": "b2b0615259bd7248aeda88eb8b5edd7a7e2b839efdd1e9b07985602b9bc15807",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_N_000.png",
@@ -1579,11 +1999,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "763fcee0dd1ea517e100ff7ce9b28f05457473593587b7a5eb6daa7978dcbb47",
+  "export_sha256": "4e47768b656326233c56248f29706512dd69c1c616e21dbed172607106d5c597",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_N_001.png",
@@ -1605,11 +2032,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "7a09020f1fe4474da374a46e1099d920021c4f7ad60d50ff9f0f3180488dac8b",
+  "export_sha256": "7e485294c1796442aa9080bc6dd1ad532ed4356dd33fb98b0ab7eae7dd0b75c0",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_N_002.png",
@@ -1631,11 +2065,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "c79adae67782b1ffb2997974b64ae56741008864aff6a149e480e519e3c39135",
+  "export_sha256": "4f06cac8f4a30b3006649c9047dcd3b8adc5b82d536167f3d9e3eba51e64119b",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_N_003.png",
@@ -1657,11 +2098,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "e149e6ff667b26ad344408928cd80cac1f688dba2818709176b3bd5c886f148f",
+  "export_sha256": "dc663def89f21a8eda241393e6348944801c650e3a9fce35f90d3470da57e4e1",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_S_000.png",
@@ -1683,11 +2131,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "d7c1c7899e30856ece77c69a444af0a769149e79960f15351fd1456c98523175",
+  "export_sha256": "66e7efcb1afa502ed7574211659bd9deae17d938ee12862dde17c081f15d8708",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_S_001.png",
@@ -1709,11 +2164,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "9ee1af140d6e4ded62c1c8d6b508f08a1091e369d2b9252973cb90a15d45eada",
+  "export_sha256": "740fcc3ed2b646eb310c1781372797ace7a73bff2016db92b7fa30ed0eeac776",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_S_002.png",
@@ -1735,11 +2197,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "4346413e475f5f345d3711619a66c60fdba4042988019ced45f63af165823614",
+  "export_sha256": "8418a4657cf7fc6db7ac67d1335a063dafbae843b4c8c1719bf08421b28c7cbf",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_S_003.png",
@@ -1761,11 +2230,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "005bf14a96d8e8242c99e23ef212e9d40b1168471faa486b961c99ff724d7dd2",
+  "export_sha256": "b52698c7b540ec3f15c3e0dda361ee23183764de8c7ffc5f3a9a383ae7e02df1",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_W_000.png",
@@ -1787,11 +2263,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "86b54b6cf86db18d895069920e79d4b0640552c156d468cfd5a8cbb3d1743ede",
+  "export_sha256": "1ddefc86525a44e0c8f5e626ac151a60dced22a411f2470cc5bb5633d1786e08",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_W_001.png",
@@ -1813,11 +2296,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "c30e33345d75e77c70d5a5da0686001b91f1b389d2625a3484efb4918e4508bd",
+  "export_sha256": "dc2ecfecb9d5cca3d4a181b2f159ed94d29faf3db3fa8602cd6336d8b421e3ee",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_W_002.png",
@@ -1839,11 +2329,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "471aabc866c6ee029224f5ef35790fc6e03c9f1d11b7e3d247edd5d00e24b5ee",
+  "export_sha256": "111cc26c9fced17f89ead7222b86a991f0e7b804455ed37d2b3a34f69e8d30de",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_idle_W_003.png",
@@ -1865,11 +2362,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "327f03266e59fed1a25df6c84ceff156170964168ab3107e0bc41ddea527e09b",
+  "export_sha256": "9699d40ca2642155369f5fd996585cee84c9405d7be59a73e47771afa27e52c6",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_E_000.png",
@@ -1891,11 +2395,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "58e7e7f6cca407ca66371d4de665f9034d5bbd80c547fcf87c7589639bb733e5",
+  "export_sha256": "88a6b832e9b6b6306d8655862838e59f8d2e7bcf9ce62ac3e62fa37e93b95d43",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_E_001.png",
@@ -1917,11 +2428,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "64919f158a2e6378c4cc5eb034da6c51300fc6651395a80deaf90d3e9652caec",
+  "export_sha256": "ba7717774b833b81f22831b2fef19e8e36e0c050a9f67fcbdd7e5017d3ab7af3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_E_002.png",
@@ -1943,11 +2461,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "ce099d3836180c0ab2deb9ed9c308a9424eeacadc76c0d3ef59e7685ddc4671b",
+  "export_sha256": "416e2c9a5ad5d3c27a411e4ab3842531b2ea3a8335162414307a1c45935b2151",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_E_003.png",
@@ -1969,11 +2494,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "935730bfa15e2c84a5c089660934bd49aeb98e63f1371cd34a731d7449dce1cf",
+  "export_sha256": "3959f2fc544834e46905da277682d42ce641a1e5ca1b0fe67f1c5e286ed6e98f",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_E_004.png",
@@ -1995,11 +2527,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "2deddc00dd2e0c45988abcfbaa760b418168eba7017cabb5ea62fe229b87d902",
+  "export_sha256": "334260dab6bd683ec3efc22f0e59b9902d4c28ede82382a873d78b33770e7495",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_E_005.png",
@@ -2021,11 +2560,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "ca23bbffb51d8fdfa1f25d7c64bb1f016ba7cd9b76db129eaf8063b055deeb1f",
+  "export_sha256": "a7a4b93d33a2db6a521f778cc4f26d9da8642c05bb6ffd5331c6500f170370ed",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_N_000.png",
@@ -2047,11 +2593,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "c24fdf931a287ccf47b15cc311235f3dc54212f1328ce7bc8387a7daca268421",
+  "export_sha256": "ef0456a99b4009893780e82c55aedd234af5a067454c2e99c8325c9ba80b0af5",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_N_001.png",
@@ -2073,11 +2626,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "fb6e5f9a5453577bbb337d7468f5f9518bbc53ea8013ca17cb1937501f2948b2",
+  "export_sha256": "ec8a542980a30b56d42bb731484be70723191e10aa9f9625bbfa8a1aacade082",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_N_002.png",
@@ -2099,11 +2659,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "9d64f707755c78dede11cd774b41bad056a6c795e0cb1dcf7f00db172af954df",
+  "export_sha256": "fbbc565aff64d6a7cd23d0f3f27dceb55190e7e5e3c349f3e8b3488f2f214b4e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_N_003.png",
@@ -2125,11 +2692,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "2680279aecb7218d3ab04e272c9bdb295d3dc2a8ecee9df28e6bdeec433cc6aa",
+  "export_sha256": "6e5763149e4464e371ca73248ae2c17e00f3c9dc20f8e72022321db75d5fddd3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_N_004.png",
@@ -2151,11 +2725,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "f4eb35cd1edf46535a0cc5af74352363bbfc36f0595e62c83fafc6874d186b7e",
+  "export_sha256": "40ad235edc435b783af80a5586fb3f89f2d951ebb3045c03e726c32560313ae9",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_N_005.png",
@@ -2177,11 +2758,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "93d29591e645bfe483994c52bc1c7619c8e45ea7433646a92b63f4ebbcd3eab8",
+  "export_sha256": "23a17a9d8f5a0532b61475716555e18cb850f0a53b784a20c22ec951c54bc451",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_S_000.png",
@@ -2203,11 +2791,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "6138a38b8e7d328ad0e34c443cfa2832e228759e592b7a1c3d851b9e70359417",
+  "export_sha256": "5f6866c3dba45ce9de3d333746d5f9c26c39cbf983c849ad0ea135a4d3593b3b",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_S_001.png",
@@ -2229,11 +2824,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "16398181d81e646592732eb24cb71812e388e21aec77c92d37395405683ec6fb",
+  "export_sha256": "15f88664b55aca5e4e656994e31c902807095c0f3e61f6c4406704a443b84952",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_S_002.png",
@@ -2255,11 +2857,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "4e54a0e1252572bc189090f309b8234e99fe061c6c1dfa4697d55f843eecea15",
+  "export_sha256": "18731ebd786c51a29d05e7e33306e12556010b55c6c810492fe97e67c7b43c95",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_S_003.png",
@@ -2281,11 +2890,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "3a7c4a6281efc8ac74eae738d8ab2cb949b68d6d35037a19a8aea7a1da5df616",
+  "export_sha256": "ceea620a496d890b984fe63636e7dc9b6df24ce61403aa766caee634bf0a8127",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_S_004.png",
@@ -2307,11 +2923,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "88006850af4e648258798fd9d2a9f971bf42ffcb1188d2b1e35053ea5efae3e5",
+  "export_sha256": "8d6657a4dbc1f17f35945e9d2116accefd99a41468583c78f3165e8df0c08d94",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_S_005.png",
@@ -2333,11 +2956,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "da231d13626c831267aab2b28b54d5456a505696da878d921f8d099c91f00e7e",
+  "export_sha256": "e37919e96b3df5b2fab044bb1472f7ee8f64fd4a8808a73ac75f46c57b5218a3",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_W_000.png",
@@ -2359,11 +2989,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "7140b568631ee8099e94a8c1cf8000a1deaff3957f0ebf19a5134641634f9af9",
+  "export_sha256": "d9627a063e8bffaf3df4a0fc555318b106a44b6b38275fe89a896b2d68ba6d60",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_W_001.png",
@@ -2385,11 +3022,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "2440853631bc3ccd8ae98e2212cf21f4747408fbfd43020923741e6636dce97f",
+  "export_sha256": "f9f9e04efcb886d4593957207a97888306fb17330d1446f8e1b2e94da99c92ba",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_W_002.png",
@@ -2411,11 +3055,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "29de189f95d5fb8d1650c594cc81d9cf500ec92a2dd4ca64743110108e93fd43",
+  "export_sha256": "5440283ffbe6a24c8bbb75c48333a972948e30765559ed12ed384941db0fc9be",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_W_003.png",
@@ -2437,11 +3088,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "e2ce6e933bc5fa4912705cb204a6aba734cf6f12a404ec20e0a8bdd198278926",
+  "export_sha256": "cea229c24a77634dab848d8c6b2acd01325913e8b705d32653b79afe19c2058a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_W_004.png",
@@ -2463,11 +3121,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "0bd4201bda797294b8bbb973f3b05dd0829d57c2b48660d35c4f8d22751cd328",
+  "export_sha256": "fcca32912f1549f66b9ae9baaa178622ae8bd3ef8fd37f4bc70d1178afaceb86",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_run_W_005.png",
@@ -2489,11 +3154,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "3b1177ca91b5ba7922eb5dfc3452ecd9ef271d2ef2e65682378d243ac26d8365",
+  "export_sha256": "8d6bdb1ca5056ec539cb9260239c11655a8ae5e1d55ba8d9ea5a913a04528c40",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_E_000.png",
@@ -2515,11 +3187,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "8cbe0237beb5fd7528fe7f926d740b1aade7c8d415ad962598bc1e9a2dc76398",
+  "export_sha256": "a03040cce082c11532f61d52cbfe63f0c0dda779f72c59b8259e498e8eeb5355",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_E_001.png",
@@ -2541,11 +3220,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "7e8039d5f946f1aa99549e518964bf66ab75abd76a2b36b0da2d059d446d5051",
+  "export_sha256": "0dd1006f2c75f3c278d31f66fe49b843f42d1ac40637132139ebcbfb30dae2c6",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_E_002.png",
@@ -2567,11 +3253,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "298f6769019971d7f2649ad7700420efac81360a14b61f3670127c4930294fae",
+  "export_sha256": "bcbcb4a9195eed069c2711dccf9fd7a52386beb9ab0516fe5e742b1dc3e5a082",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_E_003.png",
@@ -2593,11 +3286,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "97647cefa96337edc3caf3d13e1dc46cd832022ca4836cf855f8d0bf89d59920",
+  "export_sha256": "7965866589e41552e2f9ac735d1e149dc0187b7dc576e4cf211d2578b263404b",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_E_004.png",
@@ -2619,11 +3319,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "38a63a13f3bcfe0e6a781d5c23ffaa8e5b9f0109072bb6149da0b9104846ca14",
+  "export_sha256": "7e3c0bbaf31fd7032bc2712e23b05ac547c144a75524e17203fb0a079de0dff6",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_E_005.png",
@@ -2645,11 +3352,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "9a64549ecf9162ebd08dbd1570fbe3b35a6655d91256bac55d2ae5f3b22811e4",
+  "export_sha256": "3571cf8dc7fb914869d67bc7c07a96dc7917f6079a777d37a195d9a3a43e3f53",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_N_000.png",
@@ -2671,11 +3385,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "b2e7740570031b6b23721d95facaf0e89599aee76da70bac92a0e48f09a845a5",
+  "export_sha256": "2e5035a02e9c3dedb83d485fba709912e616b289d4088831ac350aae0dc60042",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_N_001.png",
@@ -2697,11 +3418,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "ef6c8976a3ac34cf910a99187f9fd04ba6392ffc01c67918cdab6865b46acabb",
+  "export_sha256": "103592995373259a4cf443919cf0232c1a5662629a5953124862e8bc68aa0a37",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_N_002.png",
@@ -2723,11 +3451,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "3530a140c82f4515c559e2947c1d1becc1138aea05245b84f8fc9edc636526eb",
+  "export_sha256": "3f1f783791642e7a0b86a8fb13e6d1b08fd693d19103a22fdb12874a7f266a49",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_N_003.png",
@@ -2749,11 +3484,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "9db8088b4b282337e7be17f1d3f9612d1d449edbf91afd48b3715232d726f3c2",
+  "export_sha256": "a28618b6e4d53e20e5f50d53cc8484f4798388888f6d9022eb5ae3cba5b14631",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_N_004.png",
@@ -2775,11 +3517,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "1c40cdddfe086796c15c4d81fead8403311401f621d30a96bc9dce5132a2d7dd",
+  "export_sha256": "718ab3bc372dab4752a4633990f709244ab9dec16dbaf17d2838b0365c5e2399",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_N_005.png",
@@ -2801,11 +3550,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "aa117321d12a5ed9f767f2227b850e12647547700a89325afc9b79f4fb5ea724",
+  "export_sha256": "f1ac3b68f53b48a7f202996f5a4ab86282ce62c9f714d4e8508e1888cfaf84d8",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_S_000.png",
@@ -2827,11 +3583,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "f8c45435e52bff803a9b8418767a50ab8edb4fb3e9c60bc198d840ab088de862",
+  "export_sha256": "e59cb417ecd84fc09d714344c4f759b27ffdef599623f489b084f45eb5c88368",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_S_001.png",
@@ -2853,11 +3616,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "fc093707de8403b6afafa86296b8b65c578ab5139ca85db352901453f157f7f9",
+  "export_sha256": "de07b7dd43d02aae69ecca00d7163884b75d6d54fcb6c7f77b9c0b56d8d27475",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_S_002.png",
@@ -2879,11 +3649,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "5ad240124724e37196c6dce91d0dcb074d77b50630c1f47b496d3269286904ad",
+  "export_sha256": "1383d9bc6df8ae82408fa29470bc47ea0fb9d57b9c2607729de80c5cc166a2d4",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_S_003.png",
@@ -2905,11 +3682,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "30a442b2b79a92118619144b4f9572dfcafb9e9bb54c877eb8fe61abf37a2c89",
+  "export_sha256": "1b66fe2566a9762a22f1f6fd490e198b411c2a516a7ccad589bb8a3aa7ee78bb",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_S_004.png",
@@ -2931,11 +3715,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "6edbae911b63967a4a2d9f2deeff1e1e175ca354de9d3eed653889009e69f418",
+  "export_sha256": "04b32a1440ab26c7e167065ecf95598df696421b11dafba954fa2f20394b332c",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_S_005.png",
@@ -2957,11 +3748,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "05badbcfeb3dfd82d215b174a6fad9d7cf32e69734c928b2542f98f194c75a5f",
+  "export_sha256": "418428de1148db8c81c503beabf51131d11e7590c1b0913c42f822f2e2f80678",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_W_000.png",
@@ -2983,11 +3781,18 @@
   "frame": 0,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "22b3aa718b0b640d4cea325f33884ab98dc615fa07ec897793bdbf929a97c98f",
+  "export_sha256": "a6a5dd6768cc2a261150fb72fc7664916e1472e6745d7afe445c9d34cf359b9a",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_W_001.png",
@@ -3009,11 +3814,18 @@
   "frame": 1,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "7292c3eca2a5e5489d4e5c0f2658300942c548d34b4811503707285062c74726",
+  "export_sha256": "67f221b5a1335748df7b2f8c06f374aaea35363421b0d03c42ddc170b64db675",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_W_002.png",
@@ -3035,11 +3847,18 @@
   "frame": 2,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "fbb27829bde32dfb89ca8ff44d91e22f71f8b315546bf1ae3eb4cdf5b434cd4b",
+  "export_sha256": "e4c6d8b3ae7d71135d5610fe0455d875a75c89ed19f1ca53898207c22036d070",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_W_003.png",
@@ -3061,11 +3880,18 @@
   "frame": 3,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "6e9d9a134e6e34619f967f8f147566623af4c8357a47e60ba12a1be3956bed8f",
+  "export_sha256": "38505aaadc458b9cc957bcb44108028e479886f10a8e994f4df7272c98af0d9e",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_W_004.png",
@@ -3087,11 +3913,18 @@
   "frame": 4,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "9be0278f1e13cb04f2e9b6c0c4272cf164582745eebe46a6e7354a599e0e34fd",
+  "export_sha256": "0a79171442174ddd4b9331093c31eea2312aa2144e721417783746468eb211c6",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/allosaurus_walk_W_005.png",
@@ -3113,11 +3946,18 @@
   "frame": 5,
   "source": "Source_Generated/rig_full/allosaurus_rig.json",
   "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-  "export_sha256": "b733901794b7e9ec49475305a26a8a7392058d50b81b4ea88a464c495264603e",
+  "export_sha256": "7c962f432155fe1a85c61ead99a48e14f4daafa3bf94db99e2a6527316d6dfbd",
   "status": "prototype_static",
   "production_approved": false,
   "animation_ready": false,
-  "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "b57a95635a36e821471a9b98d9cc7abdb4ad8269b27fc3f517489dcce0493aab"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  },
  {
   "file": "assets/rig_full/archelon_attack_E_000.png",
