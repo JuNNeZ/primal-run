@@ -1,5 +1,5 @@
 {
-  "alias_frames": 380,
+  "alias_frames": 381,
   "decoded_bytes": 508095856,
   "frames": {
     "assets/a6_hud/dna_chip.png": {
@@ -19209,7 +19209,7 @@
       "h": 64,
       "w": 64,
       "x": 731,
-      "y": 1169
+      "y": 1023
     },
     "assets/new_species/iguanodon_corpse.png": {
       "anchor": [
@@ -40362,6 +40362,7 @@
       "y": 1899
     },
     "assets/rig_full/iguanodon_idle_W_001.png": {
+      "alias_of": "assets/rig_full/iguanodon_death_W_000.png",
       "anchor": [
         72,
         72
@@ -40369,8 +40370,8 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 439,
-      "y": 439
+      "x": 147,
+      "y": 1461
     },
     "assets/rig_full/iguanodon_idle_W_002.png": {
       "anchor": [
@@ -40380,7 +40381,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 585,
+      "x": 439,
       "y": 439
     },
     "assets/rig_full/iguanodon_idle_W_003.png": {
@@ -40391,7 +40392,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 731,
+      "x": 585,
       "y": 439
     },
     "assets/rig_full/iguanodon_run_E_000.png": {
@@ -40402,7 +40403,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 877,
+      "x": 731,
       "y": 439
     },
     "assets/rig_full/iguanodon_run_E_001.png": {
@@ -40413,7 +40414,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1023,
+      "x": 877,
       "y": 439
     },
     "assets/rig_full/iguanodon_run_E_002.png": {
@@ -40424,7 +40425,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1169,
+      "x": 1023,
       "y": 439
     },
     "assets/rig_full/iguanodon_run_E_003.png": {
@@ -40435,7 +40436,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1315,
+      "x": 1169,
       "y": 439
     },
     "assets/rig_full/iguanodon_run_E_004.png": {
@@ -40446,7 +40447,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1461,
+      "x": 1315,
       "y": 439
     },
     "assets/rig_full/iguanodon_run_E_005.png": {
@@ -40457,7 +40458,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1607,
+      "x": 1461,
       "y": 439
     },
     "assets/rig_full/iguanodon_run_N_000.png": {
@@ -40468,7 +40469,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1753,
+      "x": 1607,
       "y": 439
     },
     "assets/rig_full/iguanodon_run_N_001.png": {
@@ -40479,7 +40480,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1899,
+      "x": 1753,
       "y": 439
     },
     "assets/rig_full/iguanodon_run_N_002.png": {
@@ -40490,8 +40491,8 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 439,
-      "y": 585
+      "x": 1899,
+      "y": 439
     },
     "assets/rig_full/iguanodon_run_N_003.png": {
       "anchor": [
@@ -40502,7 +40503,7 @@
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 731
+      "y": 585
     },
     "assets/rig_full/iguanodon_run_N_004.png": {
       "anchor": [
@@ -40513,7 +40514,7 @@
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 877
+      "y": 731
     },
     "assets/rig_full/iguanodon_run_N_005.png": {
       "anchor": [
@@ -40524,7 +40525,7 @@
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 1023
+      "y": 877
     },
     "assets/rig_full/iguanodon_run_S_000.png": {
       "anchor": [
@@ -40535,7 +40536,7 @@
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 1169
+      "y": 1023
     },
     "assets/rig_full/iguanodon_run_S_001.png": {
       "anchor": [
@@ -40546,7 +40547,7 @@
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 1315
+      "y": 1169
     },
     "assets/rig_full/iguanodon_run_S_002.png": {
       "anchor": [
@@ -40557,7 +40558,7 @@
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 1461
+      "y": 1315
     },
     "assets/rig_full/iguanodon_run_S_003.png": {
       "anchor": [
@@ -40568,7 +40569,7 @@
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 1607
+      "y": 1461
     },
     "assets/rig_full/iguanodon_run_S_004.png": {
       "anchor": [
@@ -40579,7 +40580,7 @@
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 1753
+      "y": 1607
     },
     "assets/rig_full/iguanodon_run_S_005.png": {
       "anchor": [
@@ -40590,7 +40591,7 @@
       "h": 144,
       "w": 144,
       "x": 439,
-      "y": 1899
+      "y": 1753
     },
     "assets/rig_full/iguanodon_run_W_000.png": {
       "anchor": [
@@ -40600,8 +40601,8 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 585,
-      "y": 585
+      "x": 439,
+      "y": 1899
     },
     "assets/rig_full/iguanodon_run_W_001.png": {
       "anchor": [
@@ -40611,7 +40612,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 731,
+      "x": 585,
       "y": 585
     },
     "assets/rig_full/iguanodon_run_W_002.png": {
@@ -40622,7 +40623,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 877,
+      "x": 731,
       "y": 585
     },
     "assets/rig_full/iguanodon_run_W_003.png": {
@@ -40633,7 +40634,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1023,
+      "x": 877,
       "y": 585
     },
     "assets/rig_full/iguanodon_run_W_004.png": {
@@ -40644,7 +40645,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1169,
+      "x": 1023,
       "y": 585
     },
     "assets/rig_full/iguanodon_run_W_005.png": {
@@ -40655,7 +40656,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1315,
+      "x": 1169,
       "y": 585
     },
     "assets/rig_full/iguanodon_walk_E_000.png": {
@@ -40666,7 +40667,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1461,
+      "x": 1315,
       "y": 585
     },
     "assets/rig_full/iguanodon_walk_E_001.png": {
@@ -40677,7 +40678,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1607,
+      "x": 1461,
       "y": 585
     },
     "assets/rig_full/iguanodon_walk_E_002.png": {
@@ -40688,7 +40689,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1753,
+      "x": 1607,
       "y": 585
     },
     "assets/rig_full/iguanodon_walk_E_003.png": {
@@ -40699,7 +40700,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1899,
+      "x": 1753,
       "y": 585
     },
     "assets/rig_full/iguanodon_walk_E_004.png": {
@@ -40710,8 +40711,8 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 585,
-      "y": 731
+      "x": 1899,
+      "y": 585
     },
     "assets/rig_full/iguanodon_walk_E_005.png": {
       "anchor": [
@@ -40722,7 +40723,7 @@
       "h": 144,
       "w": 144,
       "x": 585,
-      "y": 877
+      "y": 731
     },
     "assets/rig_full/iguanodon_walk_N_000.png": {
       "anchor": [
@@ -40733,7 +40734,7 @@
       "h": 144,
       "w": 144,
       "x": 585,
-      "y": 1023
+      "y": 877
     },
     "assets/rig_full/iguanodon_walk_N_001.png": {
       "anchor": [
@@ -40744,7 +40745,7 @@
       "h": 144,
       "w": 144,
       "x": 585,
-      "y": 1169
+      "y": 1023
     },
     "assets/rig_full/iguanodon_walk_N_002.png": {
       "anchor": [
@@ -40755,7 +40756,7 @@
       "h": 144,
       "w": 144,
       "x": 585,
-      "y": 1315
+      "y": 1169
     },
     "assets/rig_full/iguanodon_walk_N_003.png": {
       "anchor": [
@@ -40766,7 +40767,7 @@
       "h": 144,
       "w": 144,
       "x": 585,
-      "y": 1461
+      "y": 1315
     },
     "assets/rig_full/iguanodon_walk_N_004.png": {
       "anchor": [
@@ -40777,7 +40778,7 @@
       "h": 144,
       "w": 144,
       "x": 585,
-      "y": 1607
+      "y": 1461
     },
     "assets/rig_full/iguanodon_walk_N_005.png": {
       "anchor": [
@@ -40788,7 +40789,7 @@
       "h": 144,
       "w": 144,
       "x": 585,
-      "y": 1753
+      "y": 1607
     },
     "assets/rig_full/iguanodon_walk_S_000.png": {
       "anchor": [
@@ -40799,7 +40800,7 @@
       "h": 144,
       "w": 144,
       "x": 585,
-      "y": 1899
+      "y": 1753
     },
     "assets/rig_full/iguanodon_walk_S_001.png": {
       "anchor": [
@@ -40809,8 +40810,8 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 731,
-      "y": 731
+      "x": 585,
+      "y": 1899
     },
     "assets/rig_full/iguanodon_walk_S_002.png": {
       "anchor": [
@@ -40820,7 +40821,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 877,
+      "x": 731,
       "y": 731
     },
     "assets/rig_full/iguanodon_walk_S_003.png": {
@@ -40831,7 +40832,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1023,
+      "x": 877,
       "y": 731
     },
     "assets/rig_full/iguanodon_walk_S_004.png": {
@@ -40842,7 +40843,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1169,
+      "x": 1023,
       "y": 731
     },
     "assets/rig_full/iguanodon_walk_S_005.png": {
@@ -40853,7 +40854,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1315,
+      "x": 1169,
       "y": 731
     },
     "assets/rig_full/iguanodon_walk_W_000.png": {
@@ -40864,7 +40865,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1461,
+      "x": 1315,
       "y": 731
     },
     "assets/rig_full/iguanodon_walk_W_001.png": {
@@ -40875,7 +40876,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1607,
+      "x": 1461,
       "y": 731
     },
     "assets/rig_full/iguanodon_walk_W_002.png": {
@@ -40886,7 +40887,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1753,
+      "x": 1607,
       "y": 731
     },
     "assets/rig_full/iguanodon_walk_W_003.png": {
@@ -40897,7 +40898,7 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 1899,
+      "x": 1753,
       "y": 731
     },
     "assets/rig_full/iguanodon_walk_W_004.png": {
@@ -40908,8 +40909,8 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "h": 144,
       "w": 144,
-      "x": 731,
-      "y": 877
+      "x": 1899,
+      "y": 731
     },
     "assets/rig_full/iguanodon_walk_W_005.png": {
       "anchor": [
@@ -40920,7 +40921,7 @@
       "h": 144,
       "w": 144,
       "x": 731,
-      "y": 1023
+      "y": 877
     },
     "assets/rig_full/leaellynasaura_attack_E_000.png": {
       "anchor": [
@@ -58037,7 +58038,7 @@
   "max_dimension": 2048,
   "padding": 1,
   "pixels": "unaltered RGBA; no scaling or palette conversion; exact duplicate aliases only",
-  "png_bytes": 11265340,
+  "png_bytes": 11262711,
   "sheets": [
     {
       "file": "assets/atlases/species_allosaurus_0.png",
@@ -58175,12 +58176,12 @@
       "file": "assets/atlases/species_iguanodon_0.png",
       "frames": 127,
       "group": "species_iguanodon",
-      "sha256": "ee27e965dbafc4d33d48f2e93dfe96cfd0b9a2a4bf43845b537d4829dd86d40e",
+      "sha256": "69cc0932f0d604f35d2c89f4ccb1a5507d87ba65c2c4c37b2eae39c09ad8e4f8",
       "size": [
         2044,
         2044
       ],
-      "unique_frames": 127
+      "unique_frames": 126
     },
     {
       "file": "assets/atlases/species_leaellynasaura_0.png",
@@ -58425,6 +58426,6 @@
       "unique_frames": 133
     }
   ],
-  "unique_frames": 4861,
+  "unique_frames": 4860,
   "version": 2
 }

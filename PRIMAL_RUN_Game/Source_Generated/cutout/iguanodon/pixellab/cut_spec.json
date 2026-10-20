@@ -1,540 +1,567 @@
 {
  "species": "iguanodon",
- "request": {
+ "first_try": {
+  "note": "E/W came back as side views (wrong camera); kept for reference",
+  "request": {
+   "endpoint": "/v2/edit-images-v2",
+   "method": "edit_with_text",
+   "seed": 11,
+   "size": 128,
+   "offsets": {
+    "S": [
+     8,
+     8
+    ],
+    "N": [
+     8,
+     8
+    ],
+    "E": [
+     6,
+     8
+    ],
+    "W": [
+     10,
+     8
+    ]
+   },
+   "description": "Redraw each sprite as polished 16-bit pixel art of an Iguanodon dinosaur, keeping the exact silhouette, pose, size and camera. Images 1 and 2 are seen from directly above (head toward the bottom in image 1, toward the top in image 2); images 3 and 4 are side views facing right and left. Olive green hide with cream and pale grey cross stripes on the back and tail, darker green belly shading, long horse-like head with a pale beak, small dark eye, a cream conical thumb spike on each hand, muscular thighs, three-toed feet. No outline lines inside the body, no background, no shadow."
+  },
+  "side": {
+   "E": {
+    "near": "R",
+    "far": "L",
+    "spine_y": 81,
+    "cuts": {
+     "tail3": [
+      0,
+      30
+     ],
+     "tail2": [
+      26,
+      49
+     ],
+     "tail1": [
+      45,
+      64
+     ],
+     "body": [
+      60,
+      101
+     ],
+     "neck": [
+      97,
+      115
+     ],
+     "head": [
+      111,
+      144
+     ]
+    },
+    "pivot_x": {
+     "body": 72,
+     "tail1": 62,
+     "tail2": 47,
+     "tail3": 28.5,
+     "neck": 99,
+     "head": 113
+    },
+    "tip_x": {
+     "body": 99,
+     "tail1": 47,
+     "tail2": 28.5,
+     "tail3": 10,
+     "neck": 113,
+     "head": 129
+    },
+    "limbs": {
+     "thigh_R": [
+      [
+       "ell",
+       67.5,
+       74.5,
+       8.5,
+       10
+      ],
+      [
+       68,
+       70
+      ],
+      [
+       63,
+       83
+      ]
+     ],
+     "shin_R": [
+      [
+       [
+        56,
+        81
+       ],
+       [
+        69,
+        81
+       ],
+       [
+        69,
+        92
+       ],
+       [
+        56,
+        92
+       ]
+      ],
+      [
+       63,
+       83
+      ],
+      [
+       60,
+       92
+      ]
+     ],
+     "foot_R": [
+      [
+       [
+        55,
+        91
+       ],
+       [
+        70,
+        91
+       ],
+       [
+        70,
+        98
+       ],
+       [
+        55,
+        98
+       ]
+      ],
+      [
+       60,
+       92
+      ],
+      [
+       66,
+       95
+      ]
+     ],
+     "thigh_L": [
+      [
+       [
+        69,
+        70
+       ],
+       [
+        83,
+        70
+       ],
+       [
+        83,
+        87
+       ],
+       [
+        69,
+        87
+       ]
+      ],
+      [
+       74,
+       73
+      ],
+      [
+       76,
+       86
+      ]
+     ],
+     "shin_L": [
+      [
+       [
+        70,
+        84
+       ],
+       [
+        81,
+        84
+       ],
+       [
+        81,
+        93
+       ],
+       [
+        70,
+        93
+       ]
+      ],
+      [
+       76,
+       86
+      ],
+      [
+       77,
+       93
+      ]
+     ],
+     "foot_L": [
+      [
+       [
+        70,
+        92
+       ],
+       [
+        88,
+        92
+       ],
+       [
+        88,
+        98
+       ],
+       [
+        70,
+        98
+       ]
+      ],
+      [
+       77,
+       93
+      ],
+      [
+       82,
+       94
+      ]
+     ],
+     "upperarm_R": [
+      [
+       "ell",
+       94,
+       81,
+       5,
+       8
+      ],
+      [
+       93,
+       75
+      ],
+      [
+       96,
+       86
+      ]
+     ],
+     "forearm_R": [
+      [
+       [
+        93,
+        83
+       ],
+       [
+        107,
+        77
+       ],
+       [
+        107,
+        95
+       ],
+       [
+        93,
+        95
+       ]
+      ],
+      [
+       96,
+       86
+      ],
+      [
+       102,
+       91
+      ]
+     ]
+    },
+    "far_shift": [
+     3,
+     -2
+    ]
+   },
+   "W": {
+    "near": "L",
+    "far": "R",
+    "spine_y": 81,
+    "cuts": {
+     "head": [
+      0,
+      33
+     ],
+     "neck": [
+      29,
+      47
+     ],
+     "body": [
+      43,
+      84
+     ],
+     "tail1": [
+      80,
+      99
+     ],
+     "tail2": [
+      95,
+      118
+     ],
+     "tail3": [
+      114,
+      144
+     ]
+    },
+    "pivot_x": {
+     "body": 72,
+     "neck": 45,
+     "head": 31,
+     "tail1": 82,
+     "tail2": 97,
+     "tail3": 115.5
+    },
+    "tip_x": {
+     "body": 45,
+     "neck": 31,
+     "head": 15,
+     "tail1": 97,
+     "tail2": 115.5,
+     "tail3": 134
+    },
+    "limbs": {
+     "thigh_L": [
+      [
+       "ell",
+       76.5,
+       74.5,
+       8.5,
+       10
+      ],
+      [
+       76,
+       70
+      ],
+      [
+       80,
+       83
+      ]
+     ],
+     "shin_L": [
+      [
+       [
+        74,
+        81
+       ],
+       [
+        87,
+        81
+       ],
+       [
+        87,
+        92
+       ],
+       [
+        74,
+        92
+       ]
+      ],
+      [
+       80,
+       83
+      ],
+      [
+       80,
+       92
+      ]
+     ],
+     "foot_L": [
+      [
+       [
+        72,
+        91
+       ],
+       [
+        88,
+        91
+       ],
+       [
+        88,
+        98
+       ],
+       [
+        72,
+        98
+       ]
+      ],
+      [
+       80,
+       92
+      ],
+      [
+       75,
+       95
+      ]
+     ],
+     "thigh_R": [
+      [
+       [
+        59,
+        70
+       ],
+       [
+        73,
+        70
+       ],
+       [
+        73,
+        87
+       ],
+       [
+        59,
+        87
+       ]
+      ],
+      [
+       68,
+       73
+      ],
+      [
+       65,
+       86
+      ]
+     ],
+     "shin_R": [
+      [
+       [
+        58,
+        84
+       ],
+       [
+        70,
+        84
+       ],
+       [
+        70,
+        93
+       ],
+       [
+        58,
+        93
+       ]
+      ],
+      [
+       65,
+       86
+      ],
+      [
+       63,
+       93
+      ]
+     ],
+     "foot_R": [
+      [
+       [
+        53,
+        92
+       ],
+       [
+        70,
+        92
+       ],
+       [
+        70,
+        98
+       ],
+       [
+        53,
+        98
+       ]
+      ],
+      [
+       63,
+       93
+      ],
+      [
+       60,
+       94
+      ]
+     ],
+     "upperarm_L": [
+      [
+       "ell",
+       50,
+       81,
+       5,
+       8
+      ],
+      [
+       51,
+       75
+      ],
+      [
+       48,
+       86
+      ]
+     ],
+     "forearm_L": [
+      [
+       [
+        37,
+        77
+       ],
+       [
+        51,
+        83
+       ],
+       [
+        51,
+        95
+       ],
+       [
+        37,
+        95
+       ]
+      ],
+      [
+       48,
+       86
+      ],
+      [
+       43,
+       91
+      ]
+     ]
+    },
+    "far_shift": [
+     -3,
+     -2
+    ]
+   }
+  }
+ },
+ "topdown": {
   "endpoint": "/v2/edit-images-v2",
   "method": "edit_with_text",
-  "seed": 11,
+  "seed": 21,
   "size": 128,
-  "offsets": {
-   "S": [
-    8,
-    8
-   ],
-   "N": [
-    8,
-    8
-   ],
-   "E": [
-    6,
-    8
-   ],
-   "W": [
-    10,
-    8
-   ]
-  },
-  "description": "Redraw each sprite as polished 16-bit pixel art of an Iguanodon dinosaur, keeping the exact silhouette, pose, size and camera. Images 1 and 2 are seen from directly above (head toward the bottom in image 1, toward the top in image 2); images 3 and 4 are side views facing right and left. Olive green hide with cream and pale grey cross stripes on the back and tail, darker green belly shading, long horse-like head with a pale beak, small dark eye, a cream conical thumb spike on each hand, muscular thighs, three-toed feet. No outline lines inside the body, no background, no shadow."
+  "inputs": "topdown_input_<D>.png: first-try S and N, E = S turned 90 deg left, W = S turned 90 deg right",
+  "description": "Pixel art Iguanodon dinosaur seen from directly above (top-down game camera), keep exact size and pose. Image 1 walks toward the bottom, image 2 toward the top, image 3 toward the right, image 4 toward the left: in every image the head points that way, we see the back, hind legs and arms tucked under the body with feet just visible at the sides. Olive green hide with cream and pale grey cross stripes across the back and tail, light from the top left in all four images, long horse-like head with pale beak, cream thumb spikes. No background, no shadow.",
+  "hand_fix": "topdown_<D>.png = topdown_output_<D>.png with the outer spike on each hand painted out (Iguanodon has one thumb spike, on the inside); approved look by Jonas 2026-10-20"
  },
- "side": {
-  "E": {
-   "near": "R",
-   "far": "L",
-   "spine_y": 81,
-   "cuts": {
-    "tail3": [
-     0,
-     30
-    ],
-    "tail2": [
-     26,
-     49
-    ],
-    "tail1": [
-     45,
-     64
-    ],
-    "body": [
-     60,
-     101
-    ],
-    "neck": [
-     97,
-     115
-    ],
-    "head": [
-     111,
-     144
-    ]
-   },
-   "pivot_x": {
-    "body": 72,
-    "tail1": 62,
-    "tail2": 47,
-    "tail3": 28.5,
-    "neck": 99,
-    "head": 113
-   },
-   "tip_x": {
-    "body": 99,
-    "tail1": 47,
-    "tail2": 28.5,
-    "tail3": 10,
-    "neck": 113,
-    "head": 129
-   },
-   "limbs": {
-    "thigh_R": [
-     [
-      "ell",
-      67.5,
-      74.5,
-      8.5,
-      10
-     ],
-     [
-      68,
-      70
-     ],
-     [
-      63,
-      83
-     ]
-    ],
-    "shin_R": [
-     [
-      [
-       56,
-       81
-      ],
-      [
-       69,
-       81
-      ],
-      [
-       69,
-       92
-      ],
-      [
-       56,
-       92
-      ]
-     ],
-     [
-      63,
-      83
-     ],
-     [
-      60,
-      92
-     ]
-    ],
-    "foot_R": [
-     [
-      [
-       55,
-       91
-      ],
-      [
-       70,
-       91
-      ],
-      [
-       70,
-       98
-      ],
-      [
-       55,
-       98
-      ]
-     ],
-     [
-      60,
-      92
-     ],
-     [
-      66,
-      95
-     ]
-    ],
-    "thigh_L": [
-     [
-      [
-       69,
-       70
-      ],
-      [
-       83,
-       70
-      ],
-      [
-       83,
-       87
-      ],
-      [
-       69,
-       87
-      ]
-     ],
-     [
-      74,
-      73
-     ],
-     [
-      76,
-      86
-     ]
-    ],
-    "shin_L": [
-     [
-      [
-       70,
-       84
-      ],
-      [
-       81,
-       84
-      ],
-      [
-       81,
-       93
-      ],
-      [
-       70,
-       93
-      ]
-     ],
-     [
-      76,
-      86
-     ],
-     [
-      77,
-      93
-     ]
-    ],
-    "foot_L": [
-     [
-      [
-       70,
-       92
-      ],
-      [
-       88,
-       92
-      ],
-      [
-       88,
-       98
-      ],
-      [
-       70,
-       98
-      ]
-     ],
-     [
-      77,
-      93
-     ],
-     [
-      82,
-      94
-     ]
-    ],
-    "upperarm_R": [
-     [
-      "ell",
-      94,
-      81,
-      5,
-      8
-     ],
-     [
-      93,
-      75
-     ],
-     [
-      96,
-      86
-     ]
-    ],
-    "forearm_R": [
-     [
-      [
-       93,
-       83
-      ],
-      [
-       107,
-       77
-      ],
-      [
-       107,
-       95
-      ],
-      [
-       93,
-       95
-      ]
-     ],
-     [
-      96,
-      86
-     ],
-     [
-      102,
-      91
-     ]
-    ]
-   },
-   "far_shift": [
-    3,
-    -2
-   ]
-  },
-  "W": {
-   "near": "L",
-   "far": "R",
-   "spine_y": 81,
-   "cuts": {
-    "head": [
-     0,
-     33
-    ],
-    "neck": [
-     29,
-     47
-    ],
-    "body": [
-     43,
-     84
-    ],
-    "tail1": [
-     80,
-     99
-    ],
-    "tail2": [
-     95,
-     118
-    ],
-    "tail3": [
-     114,
-     144
-    ]
-   },
-   "pivot_x": {
-    "body": 72,
-    "neck": 45,
-    "head": 31,
-    "tail1": 82,
-    "tail2": 97,
-    "tail3": 115.5
-   },
-   "tip_x": {
-    "body": 45,
-    "neck": 31,
-    "head": 15,
-    "tail1": 97,
-    "tail2": 115.5,
-    "tail3": 134
-   },
-   "limbs": {
-    "thigh_L": [
-     [
-      "ell",
-      76.5,
-      74.5,
-      8.5,
-      10
-     ],
-     [
-      76,
-      70
-     ],
-     [
-      80,
-      83
-     ]
-    ],
-    "shin_L": [
-     [
-      [
-       74,
-       81
-      ],
-      [
-       87,
-       81
-      ],
-      [
-       87,
-       92
-      ],
-      [
-       74,
-       92
-      ]
-     ],
-     [
-      80,
-      83
-     ],
-     [
-      80,
-      92
-     ]
-    ],
-    "foot_L": [
-     [
-      [
-       72,
-       91
-      ],
-      [
-       88,
-       91
-      ],
-      [
-       88,
-       98
-      ],
-      [
-       72,
-       98
-      ]
-     ],
-     [
-      80,
-      92
-     ],
-     [
-      75,
-      95
-     ]
-    ],
-    "thigh_R": [
-     [
-      [
-       59,
-       70
-      ],
-      [
-       73,
-       70
-      ],
-      [
-       73,
-       87
-      ],
-      [
-       59,
-       87
-      ]
-     ],
-     [
-      68,
-      73
-     ],
-     [
-      65,
-      86
-     ]
-    ],
-    "shin_R": [
-     [
-      [
-       58,
-       84
-      ],
-      [
-       70,
-       84
-      ],
-      [
-       70,
-       93
-      ],
-      [
-       58,
-       93
-      ]
-     ],
-     [
-      65,
-      86
-     ],
-     [
-      63,
-      93
-     ]
-    ],
-    "foot_R": [
-     [
-      [
-       53,
-       92
-      ],
-      [
-       70,
-       92
-      ],
-      [
-       70,
-       98
-      ],
-      [
-       53,
-       98
-      ]
-     ],
-     [
-      63,
-      93
-     ],
-     [
-      60,
-      94
-     ]
-    ],
-    "upperarm_L": [
-     [
-      "ell",
-      50,
-      81,
-      5,
-      8
-     ],
-     [
-      51,
-      75
-     ],
-     [
-      48,
-      86
-     ]
-    ],
-    "forearm_L": [
-     [
-      [
-       37,
-       77
-      ],
-      [
-       51,
-       83
-      ],
-      [
-       51,
-       95
-      ],
-      [
-       37,
-       95
-      ]
-     ],
-     [
-      48,
-      86
-     ],
-     [
-      43,
-      91
-     ]
-    ]
-   },
-   "far_shift": [
-    -3,
-    -2
-   ]
-  }
+ "images": "topdown_{d}.png",
+ "offset": [
+  8,
+  8
+ ],
+ "turn": {
+  "E": [
+   "S",
+   90
+  ],
+  "W": [
+   "S",
+   -90
+  ]
  }
 }

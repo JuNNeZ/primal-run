@@ -107474,7 +107474,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "371a6311ecc67d8f9b4525a258fd52b788c1bb8949664fd04acb1bb1fdf12631",
+    "export_sha256": "88965242850802b46477ae1d2dbdeb62acffd58c844a8e9888976c98fdd9bb7b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107482,7 +107482,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107507,7 +107507,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "028a2fefba000cc7902320f3256683c9eb4c09833e2897d5d6293d1f0877f72d",
+    "export_sha256": "40ca11de1355c14e0b12d62e46d70a660a2d54d6d841b39c38fe204d616a4119",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107515,7 +107515,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107540,7 +107540,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "7c6a0ecd1a3dd9f9ee4082ba26a0b997f159e114750be315a08ddf1979a0d858",
+    "export_sha256": "d00f63dcdca640606b961cf86b24bab2d91dd0ab6b5e0f30cf524033efdb5524",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107548,7 +107548,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107573,7 +107573,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "1f8184c27a4817da50772c8bac73ab7dd3ecf54eb654b2aa0f2ed5467be3ac9c",
+    "export_sha256": "49b77c9f572739ed99617e040a8b73186653d30e121ef2a79be662a064ffdd77",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107581,7 +107581,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107606,7 +107606,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "5cb22e8cb290e4b2fd9ee91a879d67cc7aca097e418df2b8dd341d45c9062133",
+    "export_sha256": "799539abb272518064d8bd0def57ce76abd643157ad2bbfe6c94bb3375fb8a08",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107614,7 +107614,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107639,7 +107639,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "f3896aaf140a33398b5015e80ff59694b40919c377c769ca87c0f7fe5c3bb539",
+    "export_sha256": "097b6cb85ab808e865de778ac142f2c58402816bcd656274f4158718ccb7827e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107647,7 +107647,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107672,7 +107672,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "c01170b248a1fb87cd3bb7b4ccd34ff96ccc2d3c24b297766a71a25c4034316b",
+    "export_sha256": "89358f0b57fcd7af1275bdcdd7037f3a29f974d7099a3fd5d96ec96429d2c67e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107680,7 +107680,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107705,7 +107705,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "e7bd690c3cc49245f34f5ce04f8b7cfa8fcb788adf5bf3c4c925fd11e9983d19",
+    "export_sha256": "c4ebaf7b2f26c42916578f7015e7e755061e789fc73092a70621ceea38de3456",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107713,7 +107713,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107738,7 +107738,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "7c3f8a420337da0cdd62ab2a749ae163512ba297670ebfda40576f4dd57dd0f1",
+    "export_sha256": "d8a26e4a5676341075c27bc06968b196e70f0d3fa32ab939bff9b104c2390680",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107746,7 +107746,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107771,7 +107771,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "e9b225243de49a11dd1f6ebe3e9e1822f90972e1787c72ab3c51284819e9b358",
+    "export_sha256": "da16456a525fac72881f68a071651452805979a1fe5a960932709cfa342a5771",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107779,7 +107779,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107804,7 +107804,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "58961c61a3c33d3e01371bfcc34779d31e50770e035492ebee7f61cbff474b2b",
+    "export_sha256": "fa408a7e7a30b2d4d8b1466e4390dcb384eef5807a595a7b4cef3db247c2bed8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107812,7 +107812,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107837,7 +107837,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "1c51f77239a5d22f791e5c7d1079cf10888c42e6e47666edd6d2abf7fc9898e8",
+    "export_sha256": "a21412c38021bcec2d7c618502ee9c2f1b3cb05f2eadfbcbe41d1a1d764f6bdb",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107845,7 +107845,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107870,7 +107870,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "8b97391224807c1a258691953f1d9883a96f44da884870b3792c7faa72decc2b",
+    "export_sha256": "cf2d4e1582164a4bb2deffd9b5467a27786b7e68aff4baaff38206ccc198f784",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107878,7 +107878,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107903,7 +107903,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "11b70c3312d05aaf91f7010bf4b868220089eb87aab0ee228caabafb8544be9e",
+    "export_sha256": "862bb3ec6645bd682cfc57f40467b405f21f103d3f3de9e09b6ff243ff1c6e10",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107911,7 +107911,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107936,7 +107936,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "4eb4df38a9a2480e1861169aad4ecb904c0d57601dd7b1073e864d2e9238349e",
+    "export_sha256": "f467c22038da1fea455b533e07c692c9e45db9e669872998722b847002a53def",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107944,7 +107944,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -107969,7 +107969,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "84ae683ca3980bce7682d5e0a3f5e78e82effb15764a5e24c7c424de2033205b",
+    "export_sha256": "3e9996e69029173bb7581aea5939edf2dd2de93ec13d5c1ff3925402c71b37c2",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -107977,7 +107977,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108002,7 +108002,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "138ffaa890c83dcd2a41a15b61f5d67b366072428b03f1447e2eada2d91f2721",
+    "export_sha256": "738cfa29b93123134a18f063e97877dc8564a81ec24183d1122df58e9e2dd519",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108010,7 +108010,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108035,7 +108035,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "46d28014c398fbe5a6754d24e5ae7c4f1a9e1db81c2a42931a7d364aae47272d",
+    "export_sha256": "17fb21cd20c1047c692c00e4a61c33872b02fe550b9a8c63a0fd91e93ff3c667",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108043,7 +108043,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108068,7 +108068,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "3c7dc1e26843d6114e85e216500a247255b03dc46de6f532acdc40d255b24148",
+    "export_sha256": "ed9758495309e5a364793eff341d42f5ecb68d28004ee0e84d96fa27c3855e82",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108076,7 +108076,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108101,7 +108101,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "bdd6c0294831b3634eaa09de6e54aa68ae4ff5cf5b9911cbeed844e54ce9231b",
+    "export_sha256": "1226ba042f789f4884249ba1eecf91e7e51427c3b5460ff75a941be60a65cbd1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108109,7 +108109,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108134,7 +108134,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "fc86d6c4689df7131e8533188e91ffdd721fb26c09d7a564c34dbe6351f7feb2",
+    "export_sha256": "d1df1ddf68732430942e3279496d089cd2a8cf521d9228e21f6284c35407581e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108142,7 +108142,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108167,7 +108167,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "a035de915458609bf2de07e71d2dbe783711ca961b116963f836dd1300aee14f",
+    "export_sha256": "cc3dfb99561cbe50c4fa7054c5f8949d8ebcd7efe7c5234c291529f02fb753e1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108175,7 +108175,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108200,7 +108200,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "f6ce48746ef82c91d49fed60b2b84ae9101bb3d7cf2da92b3035cdfcc4fe1908",
+    "export_sha256": "81db6ef9b913bb520cd0feb5b22f1f0024ac98214859713228019048202d4c0e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108208,7 +108208,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108233,7 +108233,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "cae36dc6b62c04cc9df4f5fbfceefe68c57a5edf5455190d00545c42643ff41d",
+    "export_sha256": "ac926d729187791da74ad49399d1793f8944d290d9b9187201cce74389dcc0d9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108241,7 +108241,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108266,7 +108266,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "45b789209fcc82d167b6382cf42e926c1d7902aeb937c267b01610cc56b8234b",
+    "export_sha256": "dad4e674b6d814344b35f2dd328a7dad970a097409d65ed4d10104a3db622994",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108274,7 +108274,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108299,7 +108299,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "7f5c63699639f0f3234692b1ce69a87c35638d8c4879eed217425d5a83ca08ba",
+    "export_sha256": "1a78e30f7f780d1b6644ec79825ea2251917618c6150a3ddd776d5b058dfa652",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108307,7 +108307,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108332,7 +108332,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "f96d52fb91db06635002c2f321aa3256287d98509953b00415fa4f8ecb9579b1",
+    "export_sha256": "f9c4d01e2c129e18db0ec8a3f9a50a9d4d5f09586c11a853a94f428b36b78a2e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108340,7 +108340,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108365,7 +108365,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "a77d4793673211669b984e894d28358a7948057a0e736f4a4ff325be7a35a047",
+    "export_sha256": "6e09f5b713beb3427de2907464cacce2a2c6e902141ffb41638bddea5e60f31b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108373,7 +108373,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108398,7 +108398,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "c36a2396e51cbef8dd4e01038258e3786ca01a6d25ea507a7d0afbc791a4df24",
+    "export_sha256": "d19f3e481e1c0ec639fd472928f5cb9177e9f52287efe1b605449dac7ff0f084",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108406,7 +108406,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108431,7 +108431,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "9ba6b1353b607144f2b797ea01dab43d4e2d85e2c8b8ed4f0ddbbae9ec25522f",
+    "export_sha256": "6ff22e0a47b79fc09f9ed066c6cfbd32d12a3d6d681b157b3460870ac5c96203",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108439,7 +108439,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108464,7 +108464,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "f7f4a912379d3321cf8e45b3d5f600c3a59e3f94ccf09a614702dec847d437a3",
+    "export_sha256": "8230848b52a8eb1c79e6fdbe37ba6b74e3a546fa7b6ad04aea4ae30b1acbdc10",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108472,7 +108472,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108497,7 +108497,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "59dc2b4f9b649f4c291d207b9fd7841fbf2ee0139da044365cd2a94e2fdefbd5",
+    "export_sha256": "5ccd23318ac386abb5cbc3c13d72712961defab70518c1969a82b37418c21ca4",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108505,7 +108505,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108530,7 +108530,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "8ba09e61c9e2060c990bf91dc1fc3d7f31fc5dfc4484a1ea4d6785fe1b891ba7",
+    "export_sha256": "baff7a6a6596cf29f9481531542ca415e553cf4384d0c21f2061973d1bb8264b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108538,7 +108538,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108563,7 +108563,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "63a395057c41b75535cd0447d9e6a5f2a3a3900afe262b625685afe79cf15a86",
+    "export_sha256": "3b59b6943238e7967dc1009e45f99342788e8a4766e9a2a03f7a85441e13b05e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108571,7 +108571,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108596,7 +108596,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "854dd6f43540dc653b6fc1fb151ae4ea137c94c15b3a3b605b23045944e3e59f",
+    "export_sha256": "0ec36eef33887d73c442f947f0b3e8d8a3c31ca9288d284fb2aa9311c6ee5359",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108604,7 +108604,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108629,7 +108629,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "78985defd1a6766ab396a1eb55a287cc3a44389545b9c76e5e71f68fcbf9b822",
+    "export_sha256": "73eda521c2dba7c670eaf94374e7a4abc7dffc7af1bfec4fe2b9b8d2b2543b7d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108637,7 +108637,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108662,7 +108662,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "9088c91f3c0bb67bd47413f65b35849432e49f004fb407cc83d6786fb1be93ab",
+    "export_sha256": "3722ad95953833248131e393ab2137b8a8259c183925df2dfc821b0fd297642f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108670,7 +108670,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108695,7 +108695,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "305ba9926057d1792a03eee3eabe5dd141ce22969959f5290e0eb82fdaff99a5",
+    "export_sha256": "87da22f7831410d06fa1aa59e6d2d4c3c145dbbaa3ee4540c3a639f75518b589",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108703,7 +108703,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108728,7 +108728,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "263c130ba41d72bc6d526e8d095c3bd2251a376b4fe2ac68aef7923cdc61cda0",
+    "export_sha256": "f6f702dd1a66eb1712ea0cd817fa24b3b6cc04839373cad9175ff22ef3fb280c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108736,7 +108736,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108761,7 +108761,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "b825640cb20511791c1c8b6b2be8cfd372f7522b45e0815164cfbcaae9fd8bef",
+    "export_sha256": "325d61e8b10ab16d4ae3e5aa99ed939397d78ce49cd890c9580a5aad3af047f3",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108769,7 +108769,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108794,7 +108794,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "e8d2d29d22e43e51e29ac743ed69e5df8b678574dff0d23e09a639f16814330e",
+    "export_sha256": "a3558a2e3e036cbc02bc17c919c7ebec876dae8fce2d857ed6f9f296c71e6d97",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108802,7 +108802,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108827,7 +108827,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "bfafb9a04beee0259731f17ee442f5423c7fc18a8d5411f1cee8b8e698bf72ce",
+    "export_sha256": "e647dbe6925988cf56bb8fef836e9e36cbc49f59fe6dba38916bcf58d8d18454",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108835,7 +108835,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108860,7 +108860,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "e39f492a4ff65c918629ab89ae55c8fa2d8b71a1691f953b3505743c5d273c5e",
+    "export_sha256": "d765b4034468b17ae3b4dba0f8a2096aa00f699d09e21d52626d44dbd097c058",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108868,7 +108868,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108893,7 +108893,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "0a4f043ce2f998c12245b6799d4346bf0c5f4ac3710b3a4d52e87489e459f7c0",
+    "export_sha256": "ef5440e81ecfba15bf29cfe8329139aa59a0c95f3715a65007498f4aa36345ef",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108901,7 +108901,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108926,7 +108926,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "b9be17ba9507f4e29ad0c52e8313c8c5c8b6feb36dec09723f66138587fd3a06",
+    "export_sha256": "e1bb6f0ebf30e4e8fb57c275eef3f44d67133fe82158fc92f2d7deff922e55b0",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108934,7 +108934,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108959,7 +108959,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "f86772f63ce09a011a05c2e7d661c1ee06b98c04672d8ebce89fa50dfabad716",
+    "export_sha256": "a3ab2ca1b8b1f18e5d67ae86c850e003258e09eabc1cb8eb87e398488c3d7b46",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -108967,7 +108967,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -108992,7 +108992,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "e3718f698f167373fc19a8b34946620f2d152cefb6ed3dd7033a70e274efb2d6",
+    "export_sha256": "fc38c7e1a4918ad4bcf56a75093c762b3d2637b06f6bf7d34308c43f0ec2689c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109000,7 +109000,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109025,7 +109025,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "b4ce1d5f1287d8f072caf836287d9f87c71410d12dd20a85c3f40b52994a6e00",
+    "export_sha256": "26baef545e6083057d327487327f6d5a47ee1c1b238f39fc78e21fca7b0fe234",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109033,7 +109033,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109058,7 +109058,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "2c433e6bad4801646e92873ae68a3942868f66241ae6bc4e9e0269909375c350",
+    "export_sha256": "e84253d2b136ce3d4f212d5dd66f1a8c8af121098d3736221c5589812f2d9a39",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109066,7 +109066,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109091,7 +109091,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "4be09e8e2466cd1a4e13b94deed759af9c4bcd98904a37109ab3ab87f763735c",
+    "export_sha256": "b5334a2ae87a01ff03c918fc652657b6276f2b522fe281f4f3de35c3532ed200",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109099,7 +109099,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109124,7 +109124,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "b5d28a01302f98a64421abf6d812e7da94c7fdd81a646d9f9ca95fc4bde62904",
+    "export_sha256": "d9474a304df002bdd411f5854fe857b49d470ea80ab860759d8970050d877b8c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109132,7 +109132,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109157,7 +109157,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "d6b3ef492f4ed7c10f9c8b276df2ca4ad1044a669f382b6d747e0d79d88aba2b",
+    "export_sha256": "0f9a622a31ea29e05c13045f4caf593d045d20581d7d41e2026c00af21c6ad06",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109165,7 +109165,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109190,7 +109190,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "be0846a7328508da07377331c17113745997c274c8f444095e6f0934a6e86f45",
+    "export_sha256": "adf2d39702a5d29b5378b8f72a376b841cf9449b5659024dbf3a46eb7bb77673",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109198,7 +109198,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109223,7 +109223,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "798a2647624a8cfd7535e331bdfe618a71e2bb50d6bbd41bf214dd04659fb96a",
+    "export_sha256": "a8642afa45fad2d3e5112e26c22185487ad261540fc949742b0f1cba66060492",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109231,7 +109231,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109256,7 +109256,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "a0e813496e8685758b76426ad572c6c0b7316c6ea546fc20324c9605a8d3d733",
+    "export_sha256": "b92276edafdcb1ed5d8897237aab684d0c3db424d6cc08dc81fede3d6dd3b798",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109264,7 +109264,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109289,7 +109289,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "7f542a930a45383088f1a443bcc0661dd21ad613d5232dafb0a68c2e233833fe",
+    "export_sha256": "7eaf0ce3381aa7fcd0ef5adf70910cd40ee6f7d129a5dafffa542b47c8de3ff1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109297,7 +109297,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109322,7 +109322,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "9deb3655aaa88a3f9380d9762c49bf4d332d525bbc29fb12f4c09f6708103f98",
+    "export_sha256": "48e7eb37a866932b95d7a140ad9db899986e1b3b8c60f1a9ec19026efee47e3f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109330,7 +109330,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109355,7 +109355,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "39573f0eaa00ecff7a5dca78210ce7040907b04472af21086bb3479f1decb2a8",
+    "export_sha256": "79413913af458f1012689ecfa007e5ee441a8444c37ba91e365524989d6578f7",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109363,7 +109363,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109388,7 +109388,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "8ca0bd88856161e7d9509a992c36ad69d1d64ab26880c95cf9a1480e6116f401",
+    "export_sha256": "4b5629c50b1199e0900180f74922df80631cc6a128ecf95b682ed822324c059b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109396,7 +109396,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109421,7 +109421,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "0b7b92bedbe33b3695467bd70fc2d5e6906b089d258a5c092d4ac9e7bc039dfb",
+    "export_sha256": "40203c298b0be120d3bfa9a0c596f59a9c7497c8838cbb26ce034e938a9b0489",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109429,7 +109429,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109454,7 +109454,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "461dbc27c2693f37fac1fd7c94821ee4a1121d6042d1873713f07e350d4222b6",
+    "export_sha256": "9eb13b427c6924841f3b03f34539b7085e7ae0ed2750c000e16f8e7eb792697d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109462,7 +109462,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109487,7 +109487,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "e72f7586a04e571ae0a8709b985c7d72dccf707d916b836cd348e7626674a885",
+    "export_sha256": "ceb87de51ae6c9cab5d61503eb90d5ed25fa957f8ec19a3d2e03c00a5f3c241e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109495,7 +109495,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109520,7 +109520,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "bbf57ec986c9c38bbc1d8ce98c4d9a3578896a35c18ce1bd489ce5b4b326a082",
+    "export_sha256": "1391fa834e968fef5b440db55f016b2c4d0ae9db4ccf4b6eba56e86d55d6683f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109528,7 +109528,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109553,7 +109553,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "4777f18067a0b58e04efce3f5afb97ce0d518dfdd58fac163f4dc1e45632c675",
+    "export_sha256": "3cc072ad4e8b9836d310bb25c05c9ae0dadaf4faeff90a7a68a336ffbcc01700",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109561,7 +109561,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109586,7 +109586,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "9718c4bb033bf2dcb0226bceabef14831def35a9711baf24af05c5eb888d0e1b",
+    "export_sha256": "9ebef0ba06340fef3eca6db959b90a297ef27f71e91b46f1366eafcf898993db",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109594,7 +109594,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109619,7 +109619,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "7432bf7928ff36699a7bee706f206ca41e32fbc6210192e6d8764d15bef9124e",
+    "export_sha256": "d6dc2891498c6f6a3552e4df064579a5d04ff5bc43079e02440557ea08dfbdc6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109627,7 +109627,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109652,7 +109652,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "d6c5e90b05d4abf0a68fb4b1f9742a20e6e601d77ac0abcaa43f71095b174f96",
+    "export_sha256": "e97cf62458d9fe39214fa8e71f64479f8f0c07f985c843eb6c8f5d292716bbc2",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109660,7 +109660,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109685,7 +109685,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "b10cb7c4ae484ee4d761a27bb838a11083ccf38602c547fd8103c6d1556d1c6c",
+    "export_sha256": "58083e407339bda7141e24fb573964519f86ab76c68a79a5e0dc3f466f0c80dc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109693,7 +109693,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109718,7 +109718,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "c55af7dee19698e37bc9ec2de3a2f98d0c2ab054ae22c0e581ce6e11b140feae",
+    "export_sha256": "0934826ba2083bc8e9056c66e8e2caf5db30e4f01f98f6551bdb8b55d7ec644c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109726,7 +109726,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109751,7 +109751,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "2f26f53834f578fb32245d1b77b3cf5dd832df4719101277bc19e6addc6f9711",
+    "export_sha256": "d765b4034468b17ae3b4dba0f8a2096aa00f699d09e21d52626d44dbd097c058",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109759,7 +109759,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109784,7 +109784,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "ae649b91bbe40abe60b51a14bcc1d39391827ac95a8b12727984ae130cdfb353",
+    "export_sha256": "b5ba2aadd91ebde0f08d6856c12bd1b65177a8e280f1ea5052c4d98d08623c95",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109792,7 +109792,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109817,7 +109817,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "ec7812433f80d9698ff04a15a634bd27e25f978ca45f3dff3517050d76184ec2",
+    "export_sha256": "87d5401e7a07ae1d21e77fc414a170b3835883a5ff6940da3877d583cc616261",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109825,7 +109825,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109850,7 +109850,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "7d701fdef58e5f6fe6266f465d183baa02030dc32457e9cbb1786fabe7d6611a",
+    "export_sha256": "c9b555acb011f0692466da70f60066bb6a958cb6fe0a652433eca6ebddecbed9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109858,7 +109858,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109883,7 +109883,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "251dd579b8e6c2772632c7b0625ea5b613cceb7cc281585d037da5da5a0477d8",
+    "export_sha256": "7cd8066dc8e3051dce9a021c61bd25343f24268a82297aceec26c092a048847b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109891,7 +109891,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109916,7 +109916,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "f7555e7391c1bc3efb6732a0b1a98a213e1d6efe2980920ad5fe5dadea95b039",
+    "export_sha256": "9fa547f0cc18e2a8d378fc2a9cac53ae229fcf5cfaf1b34683350335f3e89619",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109924,7 +109924,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109949,7 +109949,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "de77988ac8aa5248ae99b07b24cf1b3030513ec3f081ca14770ef60fd593750b",
+    "export_sha256": "d88bfe382244a58c346cd23ebd5d48acff41f86a70574ebaa028699b44f3e7bc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109957,7 +109957,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -109982,7 +109982,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "023be365200504a827350f1f8b899767d8381bd5077d3ba10bfe76e9fea46cdc",
+    "export_sha256": "f728d41cc3ab2bd6dd14fc26bc3f68c311c8bf4cf75518752670378c6b2a92a0",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -109990,7 +109990,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110015,7 +110015,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "e2723504f76a02ae4ef2a32a50bfb656ba882c056e1f9c1be90f0d5bfd9a0b06",
+    "export_sha256": "c9d8a86051051d25a01c097614e1aa4f7f5db9a2e97a704e2e5fb149e43dc7dd",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110023,7 +110023,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110048,7 +110048,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "a31460d4d84d080497a2600e3bf521be7ee89a6c0c162915d194817d94c9569f",
+    "export_sha256": "3613b938c46fcf8c06d303ecf21737583accafb4a982d91271ffd193b7ec3fdf",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110056,7 +110056,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110081,7 +110081,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "45b8bcce602402b27e3f4249ebbce7f48dd243443e3a003b0f0e64c101d1ffbc",
+    "export_sha256": "42a229af2e9d6b4065c7d54c5ee9c7dc6e5b30b1198c851419db224807469f56",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110089,7 +110089,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110114,7 +110114,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "1bcec6693a523f20971b3c9e78ce52b247c9abd3ed69ee1180fad64cda6b43ea",
+    "export_sha256": "0833f2eb95525f9f5c61a847d4e7aff33e464ea55d690cdd7d2b11a61ad01d2a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110122,7 +110122,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110147,7 +110147,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "5ef395fac122c00a7f36d762d7886e0e87c77c3a7c7808261d050e12cf7064d4",
+    "export_sha256": "d937a65a7273f9f2859151fb016cb777fab61c8777f192088fb785b98cb44f86",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110155,7 +110155,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110180,7 +110180,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "372272daabb25c91bd972d23d2d66e6c88e14f00b54bc3982cd3971586ad04bd",
+    "export_sha256": "27af9c7a29c9f60a8e3ec6bf1f020d9be0e5ac0d06a9451cb8de7bdd2753e3b8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110188,7 +110188,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110213,7 +110213,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "608644e2b37fb1ea4a21318dfd6b35f53ee045aa40d9b7dfc92da6820472d6a2",
+    "export_sha256": "b2211da229ffe9eb6ae4f75ec78d211883913a77744dc44b1bd430be309f5e5c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110221,7 +110221,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110246,7 +110246,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "a3ec027f1fd9e10a6e173ffb822a1ab34379989917e73ad9878aac51da2d3888",
+    "export_sha256": "1fd79c47fbf63ff610d6a64f915028d6ec0a2a201e9dec0d3944d5a0f6152f95",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110254,7 +110254,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110279,7 +110279,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "94cb42e2ecfa58a244b665f66abdfdd19a03c79a0dde40044ea46111ab6231a3",
+    "export_sha256": "825496ba9889326df612bac9507600bc0b0913ea875123fdd5897eed9abe2604",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110287,7 +110287,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110312,7 +110312,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "f33e91ae36a0c192ab9ddb92b4de5a13f85745c21f727afafa8bb7f2be3e9afb",
+    "export_sha256": "dd0dfc93790cd92d63294d1bc1df4f75f71a5c6482d05f6752249f6f92cdae6b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110320,7 +110320,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110345,7 +110345,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "505929f1c1610f66c86a8cb14259ed1e44591dc3440318cbc69d97ae33f3b2d5",
+    "export_sha256": "74542404549ccc5cbbeb8904b641f61ff53ec99afc9cf513ea96e2215a665be2",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110353,7 +110353,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110378,7 +110378,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "20eb39dfb84800be4f3b6945ac1f1ceda37126b78a99da108ed78c68bfb7e9df",
+    "export_sha256": "3f19cbbe239e3b8aa05cc98e45e6f5295a852f86731bf186f205e083a08d9bea",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110386,7 +110386,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110411,7 +110411,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "f766abaad9d87bdec350bd9dd8f2643da42f15692ec02843575da22a003b8425",
+    "export_sha256": "075913ae942eccb910a3975223014ac20495cb15b40af6c53e49f346fdae53f8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110419,7 +110419,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110444,7 +110444,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "1a69bcbd620a038998ab4774b0b86c7f7c8fc4d125ae3466bbd1b648d2a7e817",
+    "export_sha256": "5ccfc9d2895ecc5471b54e9b4a895eef871c97999141d7fda656c0c285dca62a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110452,7 +110452,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110477,7 +110477,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "0d45316f4586c4f4c9e8b90f338e52dfd8ac51af2c7148461026f6c8c0aef9fe",
+    "export_sha256": "c755298b63dd634112ce31bab417969c6e5a2877d2b6526cf8bdef1f208f280c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110485,7 +110485,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110510,7 +110510,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "28ce0b16bba696b8871be5c6c5ca8946315bda4bc024b5d208047125be904ee6",
+    "export_sha256": "721481a572cc332b244df41b1af516636058466f2fb688c312d921b9d39fa563",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110518,7 +110518,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110543,7 +110543,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "0e2ccb1ce487c1b369757ecbc9944e7ff6b8528dfe823f3b59aaf4ff698a92a2",
+    "export_sha256": "b9313c544829328e47234238980d2d690189f813c7feb2706cd6921e15a517a7",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110551,7 +110551,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110576,7 +110576,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "b0e915e82aa2b278c691148df4a4418bb095d7e5c66879b5294f176c7dc3c95d",
+    "export_sha256": "8bed86a0e9e1f55041cb172b2f2c969368eb80bc1f855710cbf0af93c635d9ec",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110584,7 +110584,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110609,7 +110609,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "4f5b18b898b0a480792fab2cc7bd07f8efa067f35f5f2dc9eec06b2cd1f6fac0",
+    "export_sha256": "6d5e045d6087ee1820bf1d8741c6cb1550dc4455a139054b65062acea9a06aab",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110617,7 +110617,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110642,7 +110642,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "20edcbd27612a23c98eb4e1461d411f1ea4111bb182f3e7fd8c96d3c524af4eb",
+    "export_sha256": "d796b73fc6d84b12f370130f2d3c1b484cde8e8853278019746bd33176105aea",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110650,7 +110650,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110675,7 +110675,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "3bf411bd7c2fbfbc2e39ba50ed229b6b29fc474b5b28305d2245acd5b2c9c863",
+    "export_sha256": "7326096b81657350217c3c36d9d3451ac0878d1dbe3b1b3188b3b0a297cafee9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110683,7 +110683,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110708,7 +110708,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "cc1744d5a3662d8d24eee643da2f7829593556fde70186003713963d2b26a3df",
+    "export_sha256": "5e065bddca288990a6df681e7bec861a360cc439e1d6faf3d6586b55ba636408",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110716,7 +110716,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110741,7 +110741,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "8595a3f068b2faf797bc6bcf5ec19698d2fefca42b47a7ca10075d9a73b241e0",
+    "export_sha256": "3caef7ef49216f976927e2356f3081721852cdbe74f03f9b386879b0f645bbfa",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110749,7 +110749,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110774,7 +110774,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "51f523ba5c071f5894186e4eb1492ad8f8a16c1a396fbb61aec3c5545bc246eb",
+    "export_sha256": "943aebc5dbfdf4dd0ebf505e645159b3187d087cfd77f74607f3560d601df070",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110782,7 +110782,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110807,7 +110807,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "8cf249d0222ebc6989e88cc0d6e8f56e93f76298670bcc05a1492bcc4b961b10",
+    "export_sha256": "600cf0e21d6b0d7b9aa4fea06d9a6388cc4f93b67352e6256855d4b4d1709326",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110815,7 +110815,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110840,7 +110840,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "1b918c16d3cad87db2c0792f7f88fd156a8f32b72dcab5017ba6055de61425e0",
+    "export_sha256": "676eb1cc46044f47f3cde7347fd6a65b96ac0f639e5d2643e4b619b18ecb3f78",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110848,7 +110848,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110873,7 +110873,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "76429e719f8f6a08802f40197978fd1f9a2e1cf3311a283118dd1d00cde745fa",
+    "export_sha256": "8ef506f9b0b0a62fe1751a8994c3d189c65913072a8ae66e513522de0ccdb681",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110881,7 +110881,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110906,7 +110906,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "c1f243f6c9ec216f67d4f6eba20feb206c2115198a413c28e19ae619e551d91f",
+    "export_sha256": "1b7364ae1c359638d617c96cd6edf5c6e256afc6e1f3af3a2334f411c6eb7863",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110914,7 +110914,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110939,7 +110939,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "8b842921bacc52e5d5c7c36ee7edd0bd3d42d738d421e89c3980091b0698e445",
+    "export_sha256": "5275642f46836675efff2394265a6ebb04825cf67bf53bd44da89ab7494b6adb",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110947,7 +110947,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -110972,7 +110972,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "47d2b3f569208ab49fdb633aa8cb796dec0bdbb3b0d3c23f4be6333d6a3953ab",
+    "export_sha256": "bf8e63b56d97dae039eb5e72f1c1efd86adb7d352dccfdd1a25b197c57a0ea93",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -110980,7 +110980,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111005,7 +111005,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "739164c3219276e52c1392cdf0a762dd41f4ac2a31344a650b0dfc6e2d4c89e8",
+    "export_sha256": "dde3ebd87f7184badaa52b0b70685adad7f818a7a370779b76f8aa99529862d9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111013,7 +111013,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111038,7 +111038,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "a588144b17486e9deda5b01bdea9028d1f180b7fcd443e083222f0c2182471b8",
+    "export_sha256": "a9db23ae2bfefb5e46c20545cdbf4161bf8ea925b2afe4c6aa43c45e9f2c3d57",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111046,7 +111046,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111071,7 +111071,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "b4da695834fd8c9cbc731889432e59f976a8aa68026f0945354114ae468539ae",
+    "export_sha256": "61ea7430846d0cc0e0f19073ca1b778dfac475aa5d6a787766a9fb07e77537f4",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111079,7 +111079,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111104,7 +111104,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "0333a9c856f9d7e39ef6003df1eef76b927dc3653de15b7c9b2c76f231030baf",
+    "export_sha256": "a54337e92e21b8e7ab667852cbc46d7b85722667caba91b14a3c12d070698c61",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111112,7 +111112,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111137,7 +111137,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "226e07b33e8971e4443d690a5ff562c7d96b440a7c643291ff2735017aa0c712",
+    "export_sha256": "c68d164291e7e89db2c26969b194626ea429ce0f29fa490e64fc939d2d181597",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111145,7 +111145,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111170,7 +111170,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "f61ce238954bec984049a360152b22bdddbd35bb9ea0a14ab0266dbcd4113e1b",
+    "export_sha256": "fec8e0b7dadfaa8f3f8b57e7c844ec5b1ce37331b2902e6294dff53a7dc17e23",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111178,7 +111178,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111203,7 +111203,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "ded665eac53655d8e51eb1e233eba68d0c915de2a9649ad5363a5d29b5ac52d7",
+    "export_sha256": "1a879e1fed1dc5670e80b5a33e117e2f8d534ec5bfeb9ffd5111fc6f91a40d44",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111211,7 +111211,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111236,7 +111236,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "e941b42ac7687f96fe7b18cbe29adaf96136903ad18bf7af15442eba0b18d111",
+    "export_sha256": "4305abdadf48719dd862fef0cdeb5c25dfde569c4c6e4e49223364374515ad27",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111244,7 +111244,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111269,7 +111269,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "d8cbd32c6e220d9bb787fe6008cecbcb3a42e1d8ee09290de437dbdd1e4aab77",
+    "export_sha256": "2b5bd4d47c86deceb7650d1a4f6196c3f417aa80e7afebe94211b5a40ea367c6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111277,7 +111277,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111302,7 +111302,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "14f51dc9220c941a23b1b877792f0cea4a5c01f6631ff3e53eb5274070b95fef",
+    "export_sha256": "772aff76efe244725bcd97d76bb0c2b5d8dd118033413b99d851c90d02d65801",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111310,7 +111310,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111335,7 +111335,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "b7d2c7ca494026c55a72243185227ebc417ffd3897cc31c73a39205b44449e43",
+    "export_sha256": "e8b0ee0676dfda64c9c2fd7472b1cbd91e0774e07a3e5ccb4dc8d6b77ef9e35f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111343,7 +111343,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111368,7 +111368,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "ce36bcd845fa61b0f423bba726323d1e026c69996eb68d99d03e890a3eaa1238",
+    "export_sha256": "e0a0ceb68f84cc8e25c0f9c0bede2aff5bdf06324069ce8d98bb82236706b42c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111376,7 +111376,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -111401,7 +111401,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/iguanodon_rig.json",
     "source_sha256": "1d889e906a44c1a216e7fcf36abf29bc977c50d7fb42d71cfba093080bf247ad",
-    "export_sha256": "3477e3ef887154d5e79dd21b27fc540f7d8ac250cf7ccd3df9a67fc2eddbaeeb",
+    "export_sha256": "4aad98ad5080dc477968e60cb3aacf12786c900628a515c6168b7873c0d2c1ac",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -111409,7 +111409,7 @@
       {
         "file": "Source_Generated/cutout/iguanodon/iguanodon_parts.json",
         "kind": "cutout parts",
-        "sha256": "3879ce10a253860d8f372f2385bfecd0177bb3733b98cdd9cf323dc69eac2334"
+        "sha256": "5b38742becda233d6c13bdb4f77034dfe8db845ab71e735bab4365796c445162"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
