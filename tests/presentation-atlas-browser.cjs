@@ -13,7 +13,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
   const menuSpecies=await page.evaluate(()=>[primalRun.game.save.selectedSpecies,...PrimalCore.BIOMES[0].animals,PrimalCore.STAGES[0].boss]);
   assert.ok(requests.every(url=>!url.includes('/species_')||menuSpecies.some(species=>url.includes('/species_'+species+'_'))),'menu loaded an unrelated species atlas');
   await page.evaluate(async()=>{await primalRun.preload({species:'velociraptor',stage:3});});
-  const stageRequests=requests.length;assert.ok(stageRequests<=14,'menu + volcanic stage PNG requests '+stageRequests);
+  const stageRequests=requests.length;/* 15: the volcanic boss T-rex carries its old frames and the rexCutout frames, two atlas pages */assert.ok(stageRequests<=15,'menu + volcanic stage PNG requests '+stageRequests);
   const result=await page.evaluate(()=>{
    const g=primalRun.game,C=PrimalCore;g.phase='menu';g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies('velociraptor');g.start({seed:83});g.pause();
    const r=g.run;r.stage=3;r.map=C.createMap(3,83);r.enemies=[];r.spawnTimer=999;r.player.x=1000;r.player.y=800;r.view.x=520;r.view.y=480;r.seconds=10;

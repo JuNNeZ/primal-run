@@ -43,6 +43,11 @@ SPINE = {'body', 'neck', 'head', 'jaw', 'tail1', 'tail2', 'tail3'}  # never outl
 SEAM_INK = [int(c[0]) * 65536 + int(c[1]) * 256 + int(c[2]) for c in D.PALETTE[[D.OUTLINE, 1]]]  # #151b19, #28372a
 JOINT_R = 5.0  # px around a joint where parent and child melt together without a line
 RIM = 2  # px of a drawn part's own edge shading that is dropped where it lies on kin
+# predators open their jaw in the bite (per frame, 1 = JAW_DROP of the jaw length straight down) and roar when hurt
+BITERS = {'tyrannosaurus', 'allosaurus', 'spinosaurus', 'microraptor'}
+JAW_OPEN = {'attack': [0.0, 0.6, 1.0, 0.8, 0.3, 0.0], 'hurt': [0.5, 0.2]}
+JAW_DROP = 0.45
+MOUTH = (84, 40, 45)  # palette dark red inside the open mouth
 MIN_BONE = 2.0  # px: a drawn bone shorter than this only moves, it does not turn
 
 
@@ -229,7 +234,7 @@ def bone2d(pts, bone, heading, k):
     return np.array(R.project(pts[a], heading, k)), np.array(R.project(pts[b], heading, k))
 
 
-def transforms(view, rest, posed, heading, k, rigid_limbs=False, gain=1.0):
+def transforms(view, rest, posed, heading, k, rigid_limbs=False, gain=1.0, jaw=0.0):
     """Per part: 2x2 matrix A and offset t with screen point q = A @ p + t (p in the drawn rest pose)."""
     out = {}
     names = list(view['parts'])
@@ -256,6 +261,13 @@ def transforms(view, rest, posed, heading, k, rigid_limbs=False, gain=1.0):
                 pivot = part['pivot'] + (gain * (q[0] - r[0]) if r else 0)
             # the drawn tip moves on screen like the rig's joint does; the part turns and stretches to reach it
             tip = part['tip'] + (gain * (q[1] - r[1]) if r else 0)
+            if name == 'jaw' and jaw:
+                # open the mouth: the jaw turns down (straight down on screen in every direction), same length
+                closed = tip
+                L = float(np.linalg.norm(closed - pivot))
+                tip = closed + np.array([0.0, jaw * JAW_DROP * float(np.linalg.norm(part['tip'] - part['pivot']))])
+                tip = pivot + (tip - pivot) * (L / max(float(np.linalg.norm(tip - pivot)), 1e-6))
+                out['_mouth'] = (pivot, closed, tip)
             vr, vp = part['tip'] - part['pivot'], tip - pivot
             A = np.eye(2)
             if np.linalg.norm(vr) >= MIN_BONE and np.linalg.norm(vp) > 1e-6:
@@ -289,6 +301,14 @@ def compose(view, tf, size=D.CANVAS):
         A, t = tf[name]
         warped = warp(view['parts'][name]['img'], A, t, size)
         on = warped[..., 3] > 127
+        if name == 'jaw' and '_mouth' in tf:
+            # the open mouth between upper and lower jaw is dark red, not a hole
+            from PIL import ImageDraw
+            tri = Image.new('L', (size, size), 0)
+            ImageDraw.Draw(tri).polygon([tuple(map(float, q)) for q in tf['_mouth']], fill=255)
+            mouth = (np.array(tri) > 0) & ~on
+            warped[mouth] = (*MOUTH, 255)
+            on = on | mouth
         if name in SPINE:
             # a dark edge the artist drew where this piece meets the trunk/tail/neck under it is a seam, not a
             # contour: keep the colour underneath there
@@ -372,7 +392,9 @@ def animate(sid, views, out, states=tuple(R.STATES)):
         for f in range(n):
             posed = posed_points(msid, info, rest, state, f, n)
             for d, view in views.items():
-                img = compose(view, transforms(view, rest, posed, R.HEADING[d], k, rigid_limbs=state == 'death', gain=gain))
+                jaw = JAW_OPEN.get(state, [0.0] * n)[f] if msid in BITERS or sid in BITERS else 0.0
+                img = compose(view, transforms(view, rest, posed, R.HEADING[d], k, rigid_limbs=state == 'death', gain=gain,
+                                               jaw=jaw))
                 name = f'{sid}_{state}_{d}_{f:03d}'
                 Image.fromarray(img, 'RGBA').save(out / f'{name}.png')
                 rig['frames'][name] = {'file': f'{name}.png', 'bbox': list(Image.fromarray(img).getbbox() or (0, 0, 0, 0))}

@@ -48888,7 +48888,7 @@
             "  PLAYER_SPECIES.velociraptor.text='Lille startjæger. Hurtige bid og et kort beskyttet kløspring. Shift: 30 stamina.';PLAYER_SPECIES.compy.text='Lille challenge-art. Små bid og korte undvigelser; vær forsigtig blandt store dyr.';",
             "  for(const [id,config] of Object.entries(PLAYER_SPECIES))config.diet=config.diet||(id==='ankylosaurus'?'herbivore':'carnivore');",
             "  const HERBIVORE_KINDS=new Set(['parasaurolophus','ankylosaurus','triceratops','pachycephalosaurus','gallimimus']);const herbivorousNPC=kind=>HERBIVORE_KINDS.has(kind);",
-            "  const legacyPlayerFrame=(species,state,direction,frame)=>'assets/'+(['parasaurolophus','triceratops','tyrannosaurus','deinosuchus'].includes(species)?'enemy_full/':'player_full/')+species+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';",
+            "  const legacyPlayerFrame=(species,state,direction,frame)=>cutoutFrame(species,state,direction,frame)||'assets/'+(['parasaurolophus','triceratops','tyrannosaurus','deinosuchus'].includes(species)?'enemy_full/':'player_full/')+species+'_'+state+'_'+direction+'_'+String(frame).padStart(3,'0')+'.png';",
             "  // A3: retain the six drawn poses and their fixed hips; hold the loaded step",
             "  // longer instead of deforming the body or inventing intermediate limbs.",
             "  const locomotionFrame=(phase,health,maxHealth)=>{",
