@@ -92,6 +92,8 @@ Læg alt i `PRIMAL_RUN_Game/Source_Generated/cutout/<id>/`:
 ```
 
 - `order`: lagrækkefølgen bagfra og frem for den retning (det, der er længst væk fra kameraet, kommer først).
+  I E og W skal det fjerne ben (og det fjerne forben) ligge **før halen**, ellers kigger det frem i sprækken mellem
+  hale og krop, når halen svinger.
 - `pivot`: pixel-punktet hvor delen drejer om leddet til sin forælder (hofte, knæ, ankel, skulder, albue, halsrod,
   kæbeled, vingerod).
 - `tip`: pixel-punktet hvor næste del sidder fast (knæ for låret, ankel for skinnebenet, tæer for foden, snudespids

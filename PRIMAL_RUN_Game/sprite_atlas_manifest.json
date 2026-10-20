@@ -56715,13 +56715,13 @@
   "max_dimension": 2048,
   "padding": 1,
   "pixels": "unaltered RGBA; no scaling or palette conversion; exact duplicate aliases only",
-  "png_bytes": 10974571,
+  "png_bytes": 10972158,
   "sheets": [
     {
       "file": "assets/atlases/species_allosaurus_0.png",
       "frames": 127,
       "group": "species_allosaurus",
-      "sha256": "971c3d49788b8906ed38b4d9cc2f6e95306c7dd44dbf621163e73040a9a38b0a",
+      "sha256": "c5c20aad2480162798e3494ad6b1de0a9ca18c1f1fe42d8dcdbb66733be85f22",
       "size": [
         2044,
         2044
