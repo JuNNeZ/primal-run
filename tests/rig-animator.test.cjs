@@ -118,3 +118,23 @@ a=np.array(Image.open(sys.argv[1]));b=(a[...,3]>0)&~np.all(a[...,:3]==(21,27,25)
     path.join(frames, 'leaellynasaura_walk_E_003.png')]);
   assert.ok(Number(r.stdout) > 0.95, 'painted share ' + r.stdout);
 });
+
+test('cutout rig: parts cut from the model move with the rig and pass the rig check outside death', () => {
+  const {out} = render('oviraptor', 'walk,attack');
+  const parts = path.join(tmp, 'cutout_parts'), frames = path.join(tmp, 'cutout_frames');
+  let r = run(['tools/cutout_rig.py', '--species', 'oviraptor', '--template', parts]);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  r = run(['tools/cutout_rig.py', '--species', 'oviraptor', '--parts', parts, '--out', frames, '--states', 'walk,attack']);
+  assert.equal(r.status, 0, r.stderr || r.stdout);
+  assert.match(r.stdout, /48 frames/);
+  r = run(['tools/validate_rig_frames.py', '--species', 'oviraptor', '--frames', frames, '--rig', out, '--states', 'walk,attack']);
+  assert.equal(r.status, 0, r.stdout);
+  // a part off the palette is refused
+  r = run(['-c', `import sys,numpy as np;from PIL import Image
+p=sys.argv[1];a=np.array(Image.open(p));a[a[...,3]>0,:3]=(1,2,3);Image.fromarray(a).save(p)`,
+    path.join(parts, 'oviraptor_E_head.png')]);
+  assert.equal(r.status, 0, r.stderr);
+  r = run(['tools/cutout_rig.py', '--species', 'oviraptor', '--parts', parts, '--out', frames, '--states', 'idle']);
+  assert.notEqual(r.status, 0);
+  assert.match(r.stderr + r.stdout, /outside Primal Earth 32/);
+});

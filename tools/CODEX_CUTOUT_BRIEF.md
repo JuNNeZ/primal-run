@@ -37,7 +37,18 @@ hinanden i lagrækkefølge giver de den færdige tegning.
 
 - Tegn hver del **hel**, også det stykke, der er skjult bag andre dele. Det kommer til syne, når delen drejer.
 - Lad delene overlappe 2–3 px ved leddet, og gør leddets ende rund, så der ikke opstår huller, når den drejer.
-- Ingen omrids mellem dele, der hører sammen. Hver del har kun sit eget ydre omrids (sort `#151b19`, 1 px).
+- **Tegn ikke det sorte omrids.** Riggen tegner selv 1 px `#151b19` rundt om hele dyret og der, hvor en del ligger
+  over en anden, men ikke hen over et led. Mørke toner inde i delen (skygger, striber, mundlinje) er fine.
+
+## Skabelon at starte fra
+
+```
+python tools/cutout_rig.py --species allosaurus --template SKABELON
+```
+
+Det skærer min 3D-model ud i de samme dele med `parts.json`, lagrækkefølge og drejepunkter. Brug den kun til
+filnavne, størrelse og ca. placering. Benene i skabelonen er spredt ud som på en øgle, og det er netop det, du skal
+rette: tegn benene under kroppen og flyt `pivot`/`tip` i `parts.json` med, hvor du har tegnet leddene.
 
 ## Filer
 
@@ -75,10 +86,14 @@ Læg alt i `PRIMAL_RUN_Game/Source_Generated/cutout/<id>/`:
 
 ## Kontrol før du afleverer
 
-1. Alle delene lagt sammen i `order` giver præcis `<id>_<D>_full.png`.
-2. Hver PNG holder sig til paletten, binær alpha, 144×144.
-3. Hver `pivot` og `tip` ligger inde i delens egne pixels.
-4. Vis Jonas de fire `_full.png` side om side. Han godkender udseendet, og filkontroller godkender aldrig kunst.
+```
+python tools/cutout_rig.py --species allosaurus --parts MAPPE --out /tmp/frames --gif /tmp/gif
+```
 
-Commit på en `codex/*`-gren. Claude kører derefter `tools/cutout_rig.py --species <id>`, som lægger rig-bevægelsen på
-delene og laver alle 120 frames.
+Scriptet afviser delene, hvis en PNG ikke er 144×144, har farver uden for paletten, har halvgennemsigtig alpha, hvis
+et `pivot`/`tip` ikke ligger på delen, eller hvis delene lagt sammen afviger fra `<id>_<D>_full.png`. Gå igennem GIF'erne
+(gang, løb, angreb), og ret de dele, der hopper eller åbner huller i leddene. Dødsanimationen bliver en 2D-krumning,
+og spillet viser derefter liget, så den skal du ikke tegne.
+
+Vis Jonas de fire `_full.png` side om side. Han godkender udseendet, og filkontroller godkender aldrig kunst.
+Commit på en `codex/*`-gren. Claude lægger derefter frames i spillet.
