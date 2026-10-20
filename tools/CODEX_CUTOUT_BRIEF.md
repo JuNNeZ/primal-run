@@ -21,6 +21,10 @@ bagefter (gang, løb, angreb, skade, død, 120 frames), så du skal ikke tegne a
 - Hoften (kroppens anker) ligger på pixel **72,72** i alle retninger. Samme kamera og lys som
   `assets/new_species/<id>_<retning>.png`. Brug dem til størrelse, kamera og farver, men ikke til form.
 - Fire retninger: S (mod beskueren), N, E (mod højre), W (mod venstre). W skal tegnes for sig og må ikke spejles.
+- **Set ovenfra i alle fire retninger, også E og W.** Spillet er set skråt oppefra, så i E/W ser man ryggen og begge
+  sider af dyret, og fødderne stikker lidt ud på begge sider. Tegn **ikke** en profil fra siden. Sammenlign med de
+  godkendte `assets/player_full/carnotaurus_idle_E_000.png` og `baryonyx_idle_E_000.png`. (Første udgave af T-rex og
+  Allosaurus var tegnet fra siden i E/W og skal tegnes om.)
 
 ## Delene
 
