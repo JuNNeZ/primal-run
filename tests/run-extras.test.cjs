@@ -67,6 +67,34 @@ test('one amber piece per journey level is found with the interact key', () => {
   assert.equal(r.extras.amber, 1); assert.equal(r.amberPiece, null); assert.ok(r.dna >= dna + C.AMBER.dna);
 });
 
+test('amberFair: every journey level places amber clear of trees, bushes, rocks and water, far from the start', () => {
+  const size = d => (C.PROP_SIZE[d.path] || ['soft', 30])[1] * (d.visualScale || 1), placed = [];
+  for (const seed of [11, 222, 3333]) {
+    const g = make('velociraptor', seed);
+    for (let L = 0; L < C.LEVELS.length; L++) {
+      const r = g.run, a = r.amberPiece, m = r.map;
+      assert.ok(a, 'level ' + (L + 1) + ' has amber (seed ' + seed + ')');
+      const start = { x: m.start.x, y: m.start.y };
+      assert.ok(Math.hypot(a.x - start.x, a.y - start.y) > C.AMBER.minDistance, 'far from the start');
+      assert.ok(!C.isWater(r.stage, m, a, -40), 'on dry ground');
+      assert.ok(!m.rocks.some(o => Math.hypot(o.x - a.x, o.y - a.y) < 40), 'not under a rock');
+      assert.ok(!(m.decorations || []).some(d => Math.hypot(d.x - a.x, d.y - size(d) * .6 - a.y) < size(d)), 'not under a tree or bush');
+      placed.push(a);
+      if (L < C.LEVELS.length - 1) { g.phase = 'cleared'; g.nextStage(); }
+    }
+  }
+  assert.equal(placed.length, 3 * C.LEVELS.length);
+});
+
+test('amberFair: a quiet chime plays once the first time you come near the amber', () => {
+  const g = make(), r = g.run; g.drainEvents();
+  r.amberPiece = { x: r.player.x + C.AMBER.hint - 20, y: r.player.y, level: 0 };
+  g.step(1 / 30, {}); g.step(1 / 30, {});
+  assert.equal(g.drainEvents().filter(e => e.type === 'amber_near').length, 1);
+  r.amberPiece.hinted = false; r.amberPiece.x = r.player.x + C.AMBER.hint + 200; g.step(1 / 30, {});
+  assert.equal(g.drainEvents().filter(e => e.type === 'amber_near').length, 0, 'no chime from far away');
+});
+
 test('Pteranodon glides over lava without burning; on foot lava still burns', () => {
   const g = make('pteranodon'), r = g.run; r.stage = 3; r.map.lavaCrossings = []; r.map.river = [{ x: 0, y: 340 }, { x: 4000, y: 340 }]; r.map.riverCurve = r.map.river; r.player.y = 340;
   r.pounce = 0; assert.equal(g.terrainAt(r.player).kind, 'lava');
