@@ -1,9 +1,12 @@
 # Iguanodon fra PixelLab (prototype)
 
-- `input_<D>.png`: riggens 3D-skabelon (`cutout_rig.py --template`), 128×128-udsnit af 144-lærredet (forskydning i `cut_spec.json`).
-- `output_<D>.png`: PixelLabs svar, ét `edit-images-v2`-kald (edit_with_text, seed 11) for alle fire retninger. Kostede 1 generation af prøveperiodens 40.
-- `cut_spec.json`: prompten og hvordan E/W skæres i dele (S/N bruger skabelonens delmasker).
+Spillet viser dyrene ovenfra i alle fire retninger, også E og W.
 
-Genskab delene: `python tools/pixellab_cutout.py --species iguanodon cut`. Nyt PixelLab-kald: `... generate` (bruger credits).
+- `topdown_input_<D>.png`: S og N fra første forsøg; E = S drejet 90° til venstre, W = S drejet 90° til højre.
+- `topdown_output_<D>.png`: PixelLabs svar, ét `edit-images-v2`-kald (seed 21, prompt i `cut_spec.json`). Kostede 10 generationer.
+- `topdown_<D>.png`: samme, med den yderste pig på hver hånd malet væk (Iguanodon har én tommelpig, på indersiden). Jonas syntes om udseendet 2026-10-20.
+- `input_<D>.png` / `output_<D>.png`: første forsøg, hvor E/W kom tilbage fra siden (forkert kamera). Gemt som reference.
 
-Kunsten er `prototype_static`. Intet er godkendt, før Jonas har set den.
+Genskab delene: `python tools/pixellab_cutout.py --species iguanodon cut`, derefter `python tools/rig_to_game.py --species iguanodon --cutout PRIMAL_RUN_Game/Source_Generated/cutout/iguanodon`.
+
+Kunsten er `prototype_static`, indtil Jonas har godkendt animationen.
