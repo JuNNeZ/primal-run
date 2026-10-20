@@ -1,94 +1,52 @@
-# Tyrannosaurus — cutout-hvilepose S/N/E/W
+# tyrannosaurus — E/W set skråt ovenfra
 
-**Status: `prototype_static`, visuelt ikke godkendt.** Der er ikke foretaget
-runtime-integration eller givet kunst-/animationsgodkendelse.
+Revision fra `claude/project-thread-klzsxf` ved `158d6dde2db675337d621ca93b68c9bd41da869d`.
+Aktuel brief: `tools/CODEX_CUTOUT_BRIEF.md`, inklusive overhead-kameraet i E/W.
+Arbejdsgren: `codex/rex-allo-topdown`.
 
-Gren: `codex/tyrannosaurus-cutout`, fra `claude/project-thread-klzsxf`
-`1eb6680f33721f6d6fa88bb05c06e4ad94b04a7e`. Den læste brief følger med som
-`BRIEF.md`; `source_context.json` registrerer brief-blob og referencehashes.
+E/W er tegnet separat med synlig ryg og begge flanker, fødder på begge sider og
+lys fra øverste venstre. Ingen spejling eller rotation af W. E-længde:
+115 px; 144×144 RGBA, body-pivot 72,72, Primal Earth 32.
+S/N PNG'er og deres komplette `parts.json`-retninger er byte-/dataidentiske med basen.
+Delnavne og forældre er bevaret. Det fjerne ben og den fjerne arm kommer før alle haledele.
 
-## Leverance
+## Aktuelle kilder og genkørsel
 
-- 15 hele dele i hver retning: `body`, `neck`, `head`, `jaw`, `tail1..3`,
-  `thigh_L/R`, `shin_L/R`, `foot_L/R`, `arm_L/R`.
-- 60 native PNG-dele samt fire `tyrannosaurus_<D>_full.png`, alle 144×144 RGBA.
-- `tyrannosaurus_parts.json` med hierarki, anatomiske L/R-navne, rækkefølge,
-  heltalspunkter og body-pivot `[72,72]` i alle retninger.
-- Råkilder, reproducerbar udskæring og teknisk rapport i samme mappe.
-- Lys/mørke kontaktark ved 1×/3×, alle dele ved 2×, GIF-kontaktark og de
-  12 gang-/løbe-/angrebs-GIF'er under `previews/`.
-
-`_full.png` er den pixelidentiske sammensætning af delene i JSON-rækkefølgen,
-før riggen tilføjer sit omrids. Selve delene har ingen sort eller mørkegrøn
-kontur. Den medfølgende projektregel er uændret; den nyere briefs konkrete
-aftale om 144×144-cutouts uden omrids gælder denne leverance.
-
-## Skabelon, anatomi og kilder
-
-Startkommandoen var:
+- `sources/topdown_core_v3.png`: sammenhængende ryg, hals, hoved og hale i E/W.
+  Delene udtages med overlap fra samme tegning, uden mørke tegnede samlingskanter.
+- `sources/topdown_EW_v2.png`: separate hele ben/arme. V2-ryg/hals/hale blev fravalgt
+  på grund af synlige endeflader; kilden er bevaret til historik.
+- `topdown_registration.json`: aktiv registrering for E/W, heltalssampling og navngivne led.
+- `source_sampling.json`: aktuel provenance pr. del; S/N-poster er bevaret.
+- `registration.json` og `extract.py`: tidligere registrering/eksport, bevaret som historik.
+  Brug den nye kommando nedenfor for den aktuelle E/W-revision.
+- `sources/README_before_topdown.md`: tidligere leverances noter.
+- `topdown_manifest.json`, `SPRITE_RULES.md`, `validation_report.json`: leverancekontrakt og kontrol.
 
 ```sh
-python tools/cutout_rig.py --species allosaurus --template /tmp/tyrannosaurus-SKABELON
-```
-
-Skabelonfilerne blev kopieret med `tyrannosaurus_*`-navne. Den oprindelige
-skabelon er bevaret under `sources/template/`. Den giver struktur og
-bevægelsesreference; den er ikke en T-rex-model. Kæben er tilføjet som separat
-del med `head` som forælder, understøttet af riggens skelet.
-
-Farve-/størrelsesreferencerne er de eksisterende
-`assets/enemy_full/tyrannosaurus_idle_{S,N,E,W}_000.png`. Filhashes, lærreder
-og synlige bounding boxes er registreret i `source_context.json`. Den smallere
-E/W-benhøjde følger den rettede placering under kroppen frem for gamle
-spredte ben. Kobber/rødbrun hud, mørke tværstriber og lys fra øverste venstre
-bevares. Hoften er registreret anatomisk, ikke ved bbox-centrering.
-
-Tegningerne har bredt, dybt kassekranie, kraftig underkæbe, tykke tænder,
-små ru knuder over øjnene, tyk hals, tunge lår og små to-finger-arme. Der er
-ingen Allosaurus-horn. S/N-benkæderne står under torsoen, og tæerne er synlige.
-E-L og W-R er de fjerne ben; deres hele tegnede overflader findes i PNG'erne.
-W er selvstændigt tegnet med korrekt lys, ikke spejlet fra E.
-
-`sources/core.png` indeholder sammenhængende torso/hale og hals/kranie.
-`S.png`, `N.png`, `E.png`, `W.png` indeholder hele ben og arme.
-`corrections.png` erstatter de første forkert vendte N-lår og kæber med
-korrekt orienterede kilder. Fravalgte celler i de bevarede ark bruges ikke.
-Prompts følger med i `sources/prompts.json`.
-
-`registration.json` indeholder eksplicitte kildeudsnit, heltalssampling og
-anatomiske landmarks. `source_sampling.json` registrerer de faktisk samplede
-punkter, forskydninger og SHA-256. Udskæringen bruger ingen spejling,
-rotation, interpolation eller tegning af nye kropsflader. Sammenhængende
-kildeudsnit overlapper ved leddene; en 3 px afrundet udskæringsmaske vælger
-eksisterende kildepixels ved navngivne snitplaner. Palettekvantisering og
-alpha-tærskel 192 giver Primal Earth 32, binær alpha og transparent RGB=0.
-Udvendigt kildeblæk (`#151b19`/`#28372a`) fjernes også ved blotlagte snit,
-mens indvendige skygger/striber bevares. Riggen ejer det færdige omrids.
-
-## Rig-kontrol og gennemgang
-
-```sh
-python PRIMAL_RUN_Game/Source_Generated/cutout/tyrannosaurus/extract.py
+python PRIMAL_RUN_Game/Source_Generated/cutout/tyrannosaurus/extract_topdown.py
 python tools/cutout_rig.py --species tyrannosaurus --parts PRIMAL_RUN_Game/Source_Generated/cutout/tyrannosaurus --out /tmp/frames --gif /tmp/gif
-python PRIMAL_RUN_Game/Source_Generated/cutout/tyrannosaurus/review.py
+python PRIMAL_RUN_Game/Source_Generated/cutout/tyrannosaurus/review_topdown.py
 ```
 
-Riggen genererer 120 testframes og 24 GIF-sekvenser fra hvileposen med lånt
-Allosaurus-bevægelse. Frames forbliver i `/tmp/frames`; der er ikke tegnet
-animationsposer eller kopieret frames til runtime-assets. Døden er riggens
-2D-krumning, ikke en ny tegnet dødsserie.
+Eksporten udfører kun heltalssampling, fast paletmapping, binær alpha, fravalg af
+kildens yderste ink-pixels og translation omkring eksplicitte led. Ingen ny anatomi
+tegnes af Python, ingen interpolation eller spejling. Rå kilder og prompts er bevaret.
 
-GIF'erne er gennemgået via samtlige frames i kontaktarkene. Undervejs blev
-N-benstilling, fodsynlighed, arm-/kæbetilslutninger og ankeloverlap rettet.
-Seneste gennemgang af gang/løb/angreb viser sammenhængende ledflader uden
-synlige huller. Alle forælder/barn-par har pixeloverlap i disse 72 frames;
-ingen af de 120 frames er klippet ved lærredskanten.
+## Gennemgang
 
-`validation_report.json` dokumenterer palette, alpha, native lærreder,
-fravær af udvendigt blæk, alle opaque pivot/tip-punkter, tilslutning til
-forældre, synlige S/N-fødder, pixelidentisk lag-sammensætning, kilder,
-GIF-frametider og den beregnede motion gain. Tekniske PASS-resultater
-godkender ikke kunsten eller animationen. Status forbliver ikke godkendt.
+`previews/topdown_compare_SEW_3x.png` viser S/E/W ved samme native skala.
+Lys/mørk kontrol ved 1×/3× findes i `topdown_light_*` og `topdown_dark_*`;
+alle E/W-dele har 2×-grids på begge baggrunde.
+Gang-, løbe- og angrebs-GIF'er er gennemgået frame for frame via
+`topdown_gif_*_contact.png` og E/W-loops under `previews/gif/`.
+120 rigframes genereres uden afklip; E/W-ledflader forbliver i kontakt i gang/løb/angreb.
+S/N i disse kontaktark er referenceoutput fra kontrollen, ikke nye S/N-kildedele.
+Eksisterende S/N-GIF-filer bevares uændret.
 
-Kun denne mappe leveres. Spilkode, værktøjer, eksisterende assets, manifests
-og genererede spilfiler er ikke ændret.
+Kæbeåbning og dødsbevægelse følger den eksisterende 2D-rig. Enkelte yderste
+halepixels kan skifte under riggens nearest-neighbor-sampling. Ingen runtime-assets
+eller GDevelop-integration er ændret eller testet af denne kildegrafikopgave.
+
+**Status: prototype_static; visual_status=unapproved; production_approved=false.**
+Teknisk PASS er ikke kunstgodkendelse. Intet er markeret som godkendt.

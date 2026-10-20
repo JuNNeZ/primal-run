@@ -290,6 +290,34 @@ def warp(img, A, t, size=D.CANVAS):
     return np.array(Image.fromarray(img, 'RGBA').transform((size, size), Image.AFFINE, coeff, resample=Image.NEAREST))
 
 
+def small_islands(a, limit):
+    """Pixels in 8-connected islands under `limit` px, except the largest island."""
+    h, w = a.shape
+    seen = np.zeros_like(a, bool)
+    groups = []
+    for y, x in zip(*np.nonzero(a)):
+        if seen[y, x]:
+            continue
+        seen[y, x] = True
+        stack, pix = [(y, x)], []
+        while stack:
+            cy, cx = stack.pop()
+            pix.append((cy, cx))
+            for ny in (cy - 1, cy, cy + 1):
+                for nx in (cx - 1, cx, cx + 1):
+                    if 0 <= ny < h and 0 <= nx < w and a[ny, nx] and not seen[ny, nx]:
+                        seen[ny, nx] = True
+                        stack.append((ny, nx))
+        groups.append(pix)
+    out = np.zeros_like(a, bool)
+    groups.sort(key=len)
+    for pix in groups[:-1]:
+        if len(pix) < limit:
+            for y, x in pix:
+                out[y, x] = True
+    return out
+
+
 def compose(view, tf, size=D.CANVAS):
     """Paste the moved parts back to front, then draw one outline: around the whole animal and where a part
     lies over another part, but not across the joint where a part meets its parent or child."""
@@ -342,6 +370,12 @@ def compose(view, tf, size=D.CANVAS):
         canvas[lone] = 0
         for m in masks.values():
             m &= ~lone
+    # a thin tail tip can come loose when it turns; drop small islands apart from the body
+    loose = small_islands(owner >= 0, 16)
+    owner[loose] = -1
+    canvas[loose] = 0
+    for m in masks.values():
+        m &= ~loose
     yy, xx = np.mgrid[:size, :size]
     line = np.zeros((size, size), bool)
     for i, name in enumerate(order):

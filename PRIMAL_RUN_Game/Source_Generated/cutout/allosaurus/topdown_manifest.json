@@ -1,0 +1,187 @@
+{
+  "species": "allosaurus",
+  "base_commit": "158d6dde2db675337d621ca93b68c9bd41da869d",
+  "brief_sha256": "31258aff984c58ac68f429e58256edb7ad5525e2314057d29c2c221abc7c1fe0",
+  "art_status": "prototype_static",
+  "visual_status": "unapproved",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_integrated": false,
+  "palette": "PRIMAL_RUN_Game/palette.json",
+  "rule": "SPRITE_RULES.md",
+  "active_registration": "topdown_registration.json",
+  "historical_registration": "registration.json",
+  "native_canvas": [
+    144,
+    144
+  ],
+  "body_anchor": [
+    72,
+    72
+  ],
+  "camera": "oblique overhead in E and W; visible back and both flanks",
+  "light": "upper left",
+  "directions": {
+    "S": {
+      "bbox": [
+        58,
+        13,
+        87,
+        125
+      ],
+      "length_px": 29,
+      "visible_foot_pixels": {
+        "foot_L": 11,
+        "foot_R": 17
+      },
+      "joint_overlap_pixels": {
+        "neck": 113,
+        "head": 93,
+        "jaw": 59,
+        "tail1": 62,
+        "tail2": 56,
+        "tail3": 38,
+        "thigh_L": 73,
+        "shin_L": 5,
+        "foot_L": 5,
+        "thigh_R": 64,
+        "shin_R": 7,
+        "foot_R": 6,
+        "arm_L": 5,
+        "arm_R": 11
+      },
+      "full_sha256": "11b2822998efa89989ddd45c23b8915e39aaf3820cf331c0037254481ceeb718"
+    },
+    "N": {
+      "bbox": [
+        58,
+        23,
+        87,
+        121
+      ],
+      "length_px": 29,
+      "visible_foot_pixels": {
+        "foot_L": 10,
+        "foot_R": 6
+      },
+      "joint_overlap_pixels": {
+        "neck": 97,
+        "head": 61,
+        "jaw": 96,
+        "tail1": 97,
+        "tail2": 42,
+        "tail3": 27,
+        "thigh_L": 61,
+        "shin_L": 11,
+        "foot_L": 13,
+        "thigh_R": 62,
+        "shin_R": 6,
+        "foot_R": 12,
+        "arm_L": 63,
+        "arm_R": 67
+      },
+      "full_sha256": "0fe8f70cce44903d9cbb9db2534cf1911996b9a93bf1f66606ce45a953428bef"
+    },
+    "E": {
+      "bbox": [
+        5,
+        59,
+        135,
+        92
+      ],
+      "length_px": 130,
+      "visible_foot_pixels": {
+        "foot_L": 6,
+        "foot_R": 43
+      },
+      "joint_overlap_pixels": {
+        "tail1": 80,
+        "tail2": 22,
+        "tail3": 10,
+        "neck": 66,
+        "head": 55,
+        "jaw": 42,
+        "thigh_L": 33,
+        "shin_L": 22,
+        "foot_L": 9,
+        "thigh_R": 29,
+        "shin_R": 16,
+        "foot_R": 9,
+        "arm_L": 9,
+        "arm_R": 14
+      },
+      "full_sha256": "d3b74dfccd165eb90fb69823fef617510d4ef70ae49468e620bc795ef4bfb6e8"
+    },
+    "W": {
+      "bbox": [
+        4,
+        54,
+        134,
+        90
+      ],
+      "length_px": 130,
+      "visible_foot_pixels": {
+        "foot_L": 41,
+        "foot_R": 44
+      },
+      "joint_overlap_pixels": {
+        "tail1": 22,
+        "tail2": 15,
+        "tail3": 8,
+        "neck": 37,
+        "head": 35,
+        "jaw": 46,
+        "thigh_R": 29,
+        "shin_R": 11,
+        "foot_R": 8,
+        "thigh_L": 37,
+        "shin_L": 9,
+        "foot_L": 10,
+        "arm_R": 13,
+        "arm_L": 13
+      },
+      "full_sha256": "647ad8fc3f0b0e9b430b0dadc33e775d6617ea50406e902ee2daa6a5f20392fb"
+    }
+  },
+  "preserved_SN": {
+    "allosaurus_S_body.png": "2f469347e53cb2b1041cd1f8e965edb73bba0e6ac140e6ccc192a355b494d938",
+    "allosaurus_S_neck.png": "066a0bf13f47edbb04f39d3f7522f649ff351e338fb234338d743e845e053a55",
+    "allosaurus_S_head.png": "d360700b0c21bafc42e723b30d51c930cbb3ca85f9e5dc98edbe7ace17ef8855",
+    "allosaurus_S_jaw.png": "eda2e8aeebbce95188dda2551f9b97403485ef4347f9810cfebdcc761c9581a7",
+    "allosaurus_S_tail1.png": "c317204f3b3061eb209dfd4287d9f3f233b3742d2a99f9b9da5645571bbd59cb",
+    "allosaurus_S_tail2.png": "72c96ce4efd8df71e19ddb79bed58c55ae9af7ed3c50240f488ef4d452ee83a7",
+    "allosaurus_S_tail3.png": "a2cf6a68f39f675a0d1770e7d079b4cc4e15984c3e7b4d828cce339d7b331a64",
+    "allosaurus_S_thigh_L.png": "b5be94308dd2983e867251cfc9ff181bddbbdd71bcd0c74221121021b9fb358a",
+    "allosaurus_S_shin_L.png": "4b4337421489a08e7b496b255cb8eab9d8b0619bc58efae164ef08991ceb497f",
+    "allosaurus_S_foot_L.png": "f8227a0e047c7d482803e0d6d955c11a74b531f5a82bccf8e220907aadb4d4e4",
+    "allosaurus_S_thigh_R.png": "7712ddcac352d2cdce7ed7f195a567f9fd9af928178eff1ee0362e9a5997faf9",
+    "allosaurus_S_shin_R.png": "d17b17955d194a04e657f19021670a8fdbf845cb77a36645edc25e15e782d7cb",
+    "allosaurus_S_foot_R.png": "81f370f763e3d6536471b5ea4d598a62a17a48399e8f7e5a838498f0e97de0e2",
+    "allosaurus_S_arm_L.png": "e4e531d0177092d8fc2302646df8e14cd815e81792920bd4d4f5c1481d456fc6",
+    "allosaurus_S_arm_R.png": "d467a873867ccf5d4ea7685213e011027c7bad81f627b0185da95841c201a941",
+    "allosaurus_S_full.png": "11b2822998efa89989ddd45c23b8915e39aaf3820cf331c0037254481ceeb718",
+    "allosaurus_N_body.png": "d0f74310442db1090b857387b3970382967f8391212cef1f94b9cc4cda292faf",
+    "allosaurus_N_neck.png": "e57571c5379309ae973cc894d956438d1f2fc3422c9cc2c8d0fe9ad455bba9a1",
+    "allosaurus_N_head.png": "1140e88f311d8057bffef20c2c7b5edc87d0e34d2f7693576c75d37012d838aa",
+    "allosaurus_N_jaw.png": "6c2df6aae419295115712fcf4eeeb01c29147ebdb03239c47c5185bc2a1f65ea",
+    "allosaurus_N_tail1.png": "adcf833ec0e5eeda2c2832de83a19e5d0151fbca2d06a2a6d3bfee5f3793bca6",
+    "allosaurus_N_tail2.png": "ca0d8950558ae0e36b173a10e874027c0d60597625376defa0bb6b734a671d49",
+    "allosaurus_N_tail3.png": "96dc33f146e56b2d99641db2491e9867b57cdacc5f0356c4f1f9a33c71d0d37e",
+    "allosaurus_N_thigh_L.png": "307078e0e9cb93d006ee0e9748ab78967c218c0cf18192f05ed24200756ea6f1",
+    "allosaurus_N_shin_L.png": "164946579b7869aa3ea132a87bac04277ec9b7be92475c9419078fb064ab112d",
+    "allosaurus_N_foot_L.png": "ff78ccc6f234625b1ff8e81c0139e6778cf86a45aaec7b7b91e48dbfd4622e13",
+    "allosaurus_N_thigh_R.png": "4ef7cd1781164cd9d2870d3e3d79416cb07705d2d2477cf4185049d8dc3d2237",
+    "allosaurus_N_shin_R.png": "f78203dd78e1967f59b4ed7a4630c46d01c6ec9a31e5f08fcb3e67e40230c2e2",
+    "allosaurus_N_foot_R.png": "4197204eade83e1b4493244ecd282049bebff4d11274112769523700278700af",
+    "allosaurus_N_arm_L.png": "78d73d2a06d1426eb9045b0d092e0220eac67e0544e4ab31703840bb92b15a91",
+    "allosaurus_N_arm_R.png": "d88ba8bf4388eb854c7177c706b6fed4592b41154091b35e746a268f3ba11aa8",
+    "allosaurus_N_full.png": "0fe8f70cce44903d9cbb9db2534cf1911996b9a93bf1f66606ce45a953428bef"
+  },
+  "sources_sha256": {
+    "topdown_EW_v2_prompt.txt": "61800e4ab995b88520df4c1b4430218b9b2620d05b6975f0243c5f3adf4cafe7",
+    "topdown_EW_v2.png": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
+    "topdown_core_v3_prompt.txt": "772c3292a7a5924411e4ffa88821811738200861d003b70b28948cee54ce2414",
+    "topdown_core_v3.png": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea"
+  },
+  "technical_report": "validation_report.json"
+}

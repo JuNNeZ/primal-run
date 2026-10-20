@@ -91034,7 +91034,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "028d1bfd2cc94a1d20893345f1ca830ea5d737b4aecacd428f585fd17bffc218",
+    "export_sha256": "598f26f8f1def0a4d5870aa04c6e420ead42e3ee4f82a47b6e9e0029c903026d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91042,7 +91042,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91067,7 +91067,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "65b2b3b50a029afc59b2bdfbc1f74f3b4d69e9de6d472b8634b70af05f1c4276",
+    "export_sha256": "63a05d937b3261a9da8668b5de252bd4f074fad4e88dc9c89023406a088355e0",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91075,7 +91075,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91100,7 +91100,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "6f75041d976fda1600eeb46e37c623648fae41fc7b35f942ab93cd0f3537b091",
+    "export_sha256": "d80ef03527a47702e94a73e184828c82027a06abf20528124553f155d2787d48",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91108,7 +91108,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91133,7 +91133,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "b46ef5bc5239a54316d8e9dc971af3b6a98b52c3bd0d38867f03fb866aab82d9",
+    "export_sha256": "32b78d97d47b6130328e4b2c3efa26b742b61585d10c0ad13d6aa7c04de8de01",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91141,7 +91141,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91166,7 +91166,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "e79f7c223c2ecfbd66047c821b48ecd78cf0e948fc63d9b1790ebb902eafc95f",
+    "export_sha256": "cfdba3df978ccf6d52de11df9fb972808fbb739af842a8a571da083267d416c3",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91174,7 +91174,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91199,7 +91199,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "e07f8372988820482e8a529345079711e529c4b722a4ba82f7b29d65afbf00a2",
+    "export_sha256": "f95f9350d1c470a89f2a405d3cdba292a96664dff9b5d88f7ee997bb0c7a43d5",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91207,7 +91207,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91240,7 +91240,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91273,7 +91273,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91306,7 +91306,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91339,7 +91339,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91372,7 +91372,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91405,7 +91405,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91438,7 +91438,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91471,7 +91471,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91504,7 +91504,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91537,7 +91537,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91570,7 +91570,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91603,7 +91603,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91628,7 +91628,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "cad54f4146e7f1efd9f54501dafaa8688334186a5fbef823efb6b2a747c1fb1f",
+    "export_sha256": "791b561282c3729990dd67f6e377247a42eedf4ca31c55e433acf32869c51838",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91636,7 +91636,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91661,7 +91661,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "8969eb75216d7e4ad75eae904ecfcaf51b22df6a47adcbf6be6e7c6e5b430009",
+    "export_sha256": "fe5034e91335ab0203de54c920f288682a12da947361098a10e535cc5525c5b6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91669,7 +91669,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91694,7 +91694,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "000f6f382d9503ef2d30a221310a055a7172a8c638e90650102e598dd0faf2f6",
+    "export_sha256": "e7e86da20a80e460eb39913bde1603e492231fe7b8a97380b5ebbee94a3231e3",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91702,7 +91702,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91727,7 +91727,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "137eb90510bd5ed8cd3916327f6df964cc379a2d72291dc0e97f2dfee3056dad",
+    "export_sha256": "61acdf8ae068117d29bc80b09f2f3351bbe8fa6ac8f01ab9e467c576fd8666ae",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91735,7 +91735,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91760,7 +91760,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "ad6b5e380445bd1e8475f0a1ce855ebb183fb438b9d8207cedae1da44f337558",
+    "export_sha256": "148822e4ddc770f54a2dcc81be8f6d86b51b049e33a390bb61de9e30655b80bd",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91768,7 +91768,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91793,7 +91793,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "6d98af32919a715e081083e9e916723c9daa0362bb87c9ace75391ac2c666beb",
+    "export_sha256": "752f996e81f24aa209ebdf2d00efaba488aa7339a87370aa6b70f1ec814b54d0",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91801,7 +91801,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91826,7 +91826,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "432baf92647a2cb2b255df4f752d21b47ebda0f89c5890aaf64a098b242f3e6d",
+    "export_sha256": "1bd261bf8a5fde8149c3c713fd8ed5038f1dda6feb661e0e71684e7c637b5dd7",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91834,7 +91834,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91859,7 +91859,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "df8927835a8618ec705eea29a7a41eccb057a7a37cd8415be18d9756e506b8cb",
+    "export_sha256": "68f9e4d25cfee6461ecc1932312450f894a16bcb0b76a0830cbc43dd9603ae02",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91867,7 +91867,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91892,7 +91892,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "f8fc5a2d1f502d795ded881dd41f3909cbd3e35faca7a2008028a953135f62e1",
+    "export_sha256": "90c8004ae15d385aa493d18dc9933f446e4bb88799078cb74c18205ba7a95dbe",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91900,7 +91900,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91925,7 +91925,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "3bfccb8a35250164a837283ebcc73987da1bb2df1ba5554aabe89f204a222184",
+    "export_sha256": "859d62d0c52d7710233bf75fb7120a9bf2bf73b8a7d06c6ed76d9009b50b0875",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91933,7 +91933,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91958,7 +91958,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "714372959fb4c3ed5f214dc1f82d0e1d27c8b50054c1d8058d64244c07eb2a42",
+    "export_sha256": "2ac0f3a07bfa1b11d51073fb41034dcd3e4ca864335b12b3c96dcd67270c299f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91966,7 +91966,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -91991,7 +91991,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "8ef941daf9e1162c417f9952ee6f89a7d8b4620215f58639bcb067c5aaa1bbd1",
+    "export_sha256": "902df6df9144e518cd664c0042c3d5c8bc326f8328ccf62472d472f920750c46",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -91999,7 +91999,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92032,7 +92032,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92065,7 +92065,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92098,7 +92098,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92131,7 +92131,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92164,7 +92164,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92197,7 +92197,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92230,7 +92230,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92263,7 +92263,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92296,7 +92296,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92329,7 +92329,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92362,7 +92362,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92395,7 +92395,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92420,7 +92420,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "6d98af32919a715e081083e9e916723c9daa0362bb87c9ace75391ac2c666beb",
+    "export_sha256": "7f1d1c27d9b1e501eab15fbd53360f1e5d0113ea0f812b35c4300bd009182557",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92428,7 +92428,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92453,7 +92453,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "c9bee03c5f4171f83d6be79488d401e5e98d5d70ab0238c19b6e75f52ff2e3b7",
+    "export_sha256": "e199acc831c4d7e870c15d69c710b9f05330f5141723ff91599ae70f1cdcdcac",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92461,7 +92461,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92486,7 +92486,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "94499f4d2673d1977b64571c953cab94a3d02db450092c3e0b715b0df5e128de",
+    "export_sha256": "875c104b5c3cfc066a37fa6c7bf5f34f3798809eeebccac754b4c76aeb7e4b59",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92494,7 +92494,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92519,7 +92519,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "200e30fdeab032f9523441f9f7e845657162aec67206f6d29bc8da67daa56070",
+    "export_sha256": "d03f30f31c4c8e4505f7a23f7a1386fd4756cfcc9d74b2b6b908002ce3c53adb",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92527,7 +92527,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92552,7 +92552,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "58113e30a8698bc1a2150b6c3b793d24d616770acdf35276af7ca4b1e2cda67f",
+    "export_sha256": "19f3593057b9ce19d93fca432e80f9888a8c4be671892b70a82cffe3e1f99bd3",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92560,7 +92560,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92585,7 +92585,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "671a0d13dfe5015baa261d86ba6f412128ba1e2c328823fa1e0162e80274dced",
+    "export_sha256": "a510fbfccce8e12f73af1ceda02eac4473844f0e727182f5d7d3be3e0f230615",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92593,7 +92593,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92618,7 +92618,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "5a55dc88a73ea605d3936f858b2377dcaa074ff0e403785e5675284a9ebd8824",
+    "export_sha256": "c912a832fc3da1650ee79427b352522243b78e86fd8c17e90b2a4bf16f5acdff",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92626,7 +92626,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92651,7 +92651,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "fd4cb9299baf3ca81aad0fa205c769d05f031a9e7171f772d7b0062224a8d998",
+    "export_sha256": "6d0630d71eef9f69983bd2c686300a73957262162c49666d10fb0788a4ed97dd",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92659,7 +92659,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92692,7 +92692,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92725,7 +92725,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92758,7 +92758,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92791,7 +92791,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92816,7 +92816,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "b134d08507ae6cffda2ea2f16186cab3ddf2ab512cbc4353aaa21ceb10a86690",
+    "export_sha256": "8474605c239915f6b0b3a02ef7e283184aca139a813188ac2cfe0232d583ae4c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92824,7 +92824,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92849,7 +92849,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "26fe226b892531ec28785870a2bfc6491f43786ad60346e11370199db17ad663",
+    "export_sha256": "56a1c9e2f28d9f23ca2c25af177f80d9c112cf755505e4dfa2a8126a55ce6902",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92857,7 +92857,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92882,7 +92882,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "8c3e6e7a14861d183d93fef91422decb47dfc964987d31677dee9f3dda895beb",
+    "export_sha256": "70f2aff23caea48ec70f15eaf50b521f6471154ccd14c223a302e6b0c73f55da",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92890,7 +92890,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92915,7 +92915,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "4a2212f394a3053387511ee0539f3a088e1998809ebde7652f06dc6f1346c399",
+    "export_sha256": "e6860d36df3a76127e8b1f999429c41f48e7c1a9ac28125f6ded277fcc9113ef",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92923,7 +92923,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92948,7 +92948,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "d37b75e07960172bba6f54a10f914f62edc4026350ae01a2ce33c0be53ee1bf3",
+    "export_sha256": "80571baaa6812ed3535f24c898fb3ce6faaea5b6e793814cb998dcf4db5a6b31",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92956,7 +92956,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -92981,7 +92981,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "039090b3034637ce342e1232ac20cff59d049208c5573b5121689914b7fc656c",
+    "export_sha256": "60efca175e93c265c439560a33cc9fd6f206d9d726031ba04b77e9328f3d8ae6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -92989,7 +92989,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93022,7 +93022,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93055,7 +93055,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93088,7 +93088,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93121,7 +93121,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93154,7 +93154,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93187,7 +93187,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93220,7 +93220,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93253,7 +93253,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93278,7 +93278,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "142b41962cb410d2529da9c3bdc43904f8c51d3dffa19147a9352175662a8929",
+    "export_sha256": "e1f1e7bbaac5cd28354627157a1e0135e3b9d94a0786660603fe9ba067c6c689",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -93286,7 +93286,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93311,7 +93311,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "6d98af32919a715e081083e9e916723c9daa0362bb87c9ace75391ac2c666beb",
+    "export_sha256": "b1feeefe1f01eeede79f6dd1f09e46073d7f422ad51211df4aac531e4fa01d7e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -93319,7 +93319,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93344,7 +93344,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "31f83641007bc47432d1560a3f3571caa50ec48e56a677dc447852414ca09183",
+    "export_sha256": "1af2bfd0d7aec51d3f6a7483c5d96279c8690b3c392f5712584441f3124431bf",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -93352,7 +93352,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93377,7 +93377,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "aa798c6a3cf00de8a2ec27e6b60390a95ddbe13ba8582fa8975ac1ba283937c8",
+    "export_sha256": "b1feeefe1f01eeede79f6dd1f09e46073d7f422ad51211df4aac531e4fa01d7e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -93385,7 +93385,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93410,7 +93410,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "544caadd5a5da11c82960e38b0249e5549fe1748beaf128f9569a9f4c9774724",
+    "export_sha256": "60f378179411777f181de7cc9bbf675d602401dcd163540c459b43ad52478b91",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -93418,7 +93418,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93443,7 +93443,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "ab56c101d722bdfc7b002c4370c20b548c6f37e29ca1ff9e33588ba4e9ab0de1",
+    "export_sha256": "dd3d018cfdd5730bafbad19f4f97dfd3f3750245a2233589ca27372c55290e5c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -93451,7 +93451,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93476,7 +93476,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "46afe86348898af442f503638e0bd7886f82bbb3fbd2adddb9b47b05eb54604e",
+    "export_sha256": "337498383fd2aa50e1895bc6549a403c96e34630dbcf93c7cf8153a4aecc864d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -93484,7 +93484,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93509,7 +93509,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "997ffd0cc6d53b0dfdfd1876ce05472725ff0635291e7e42ffc570a6f7873d4c",
+    "export_sha256": "c2ecbf343f0d3be1dca2698dc40a68fb2107a366f3b942a3c0b68bc269dadcaa",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -93517,7 +93517,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93542,7 +93542,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "447e60200dad0b01668f40daa4b1fb900ecbbad8d09b53bc981f28ffcbbd4a5e",
+    "export_sha256": "fc53f786f45f3b3624c414b5fab1c726402c8ea2e9185048a0591d363e4f5996",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -93550,7 +93550,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93575,7 +93575,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "643af7e32230f783bb59452f9f8fc01d9350de35bb157c9d014d7309fcc34abd",
+    "export_sha256": "70a45161f83164a7af4598993cf69610970b4c67cdc486827a7e70b7da5fbba2",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -93583,7 +93583,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93616,7 +93616,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93649,7 +93649,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93682,7 +93682,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93715,7 +93715,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93748,7 +93748,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93781,7 +93781,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93814,7 +93814,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93847,7 +93847,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93880,7 +93880,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93913,7 +93913,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93946,7 +93946,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -93979,7 +93979,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94004,7 +94004,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "8f6b9a6fbdb2fc22351b0d1b503825b3ec23e82da5b60abd6c473b87624162fd",
+    "export_sha256": "61b1e9c2dc7bab2de627b3f6f3d500a980b9836c3f9b8e20c365ac9894dc8802",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94012,7 +94012,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94037,7 +94037,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "efc4d6e48704fe86a1519fb76c04a3bd633ba4bd4820adafac7fcd0289aac22b",
+    "export_sha256": "629f4f79a537582139ec4745e3e3310faf0ce1d215113d013fe106397e757ecc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94045,7 +94045,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94070,7 +94070,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "53277bcc87e01045b7b6f63d463fef13f7685c6c971b45dbd5cab80df8716e16",
+    "export_sha256": "a21110a4f13b46fc1b78532229b1ce8e1555788302986fbcb6144ef58f718ed4",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94078,7 +94078,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94103,7 +94103,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "0787441ffc41fb9c73414b37348bf1d549ad9f3f4855cad25ea7e3f407b92b1d",
+    "export_sha256": "4b20d402143416d694d8860bfd49ab09672abf9f8ecaa72ea77c8eaa414d8cc6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94111,7 +94111,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94136,7 +94136,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "b5a13ca9d2ea5420d792c6c775db090410d03cee609ebcf77b55031b3c74771f",
+    "export_sha256": "fb4b3c44d6c998224dffb0a5cd5b6e96831be2ae8d7c43258a20b0ffab32571a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94144,7 +94144,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94169,7 +94169,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "d5cba8a2641ab4642bcdaff05e542bee66dd5d098de129d33136d46dcaa657b7",
+    "export_sha256": "9e57a45a231d7ec0e2769d99afb98ef45756dcda845d3d0f15cc2baf779501ea",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94177,7 +94177,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94202,7 +94202,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "627940a3e41e5fefd534611ce6cb37d25fc2f3e51e46e0b015980a0002018ccf",
+    "export_sha256": "118eb4ea2d171e0908df5aec65a4724433c6ae7622547bceed87ed30bb167394",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94210,7 +94210,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94235,7 +94235,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "868fa14ab4488e11fb5fcff5fb78ecf5b624c1e24d8b030e264dd8d5356ba852",
+    "export_sha256": "151372795c6a12336aa4e10523cb86b98602f1436547074c75aced5fc82d341b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94243,7 +94243,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94268,7 +94268,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "298b347eddff78002bf63e97007618a1c82f77f4ec3f0f1ca2a8ce01073c82b3",
+    "export_sha256": "54c96508eb34980afd94e9ab3a894e4d572e12d3232624be5e6ba06b67d1e2df",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94276,7 +94276,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94301,7 +94301,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "1d2a12997ab08994ed4ac4cefb41967b063c739f84180a5c44f39d01f16dee11",
+    "export_sha256": "64fe9c8f07a8c15196f1342b2c7362d7863794cd14176a7110e821c27b036fbc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94309,7 +94309,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94334,7 +94334,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "a36dfeb934808b7ee0a900cdd8be40b483964f76a57c04d1486da384f7cfdd22",
+    "export_sha256": "37aa067a0afefb251928d1778444fdd50a28251488819412ab1dea96581992d1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94342,7 +94342,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94367,7 +94367,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "11c6b50f9f1f23d726e35a89f31c7c562a1a17eaeebd4f404334d4474f9855dc",
+    "export_sha256": "a1fcaeaa85ec072925bbaeb1fc12c6c2db0107e2abd01620eedb5f40b2435198",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94375,7 +94375,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94408,7 +94408,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94441,7 +94441,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94474,7 +94474,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94507,7 +94507,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94540,7 +94540,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94573,7 +94573,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94606,7 +94606,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94639,7 +94639,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94672,7 +94672,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94705,7 +94705,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94738,7 +94738,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94771,7 +94771,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94796,7 +94796,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "f6dcf266648a23b33db5474c9a0ee06b069baa1ad7f5f886862d7ad96a273e75",
+    "export_sha256": "ecc7c0aab1745214f73dd7d7f4065c7a7328ac23575423462f37da21afe9e170",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94804,7 +94804,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94829,7 +94829,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "34b971001beb7e843666cf8a996101252971e9366e40688fee66121036a82b21",
+    "export_sha256": "1a96ef364f50b8be5a6ce0015e9e860cf01b46d6b424c98b5ed1e8fe1ae2d2bb",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94837,7 +94837,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94862,7 +94862,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "cb934dfd7a3a05bb2ca705e5fa5b2888e3eedfdc60210971b9d9c8a5b90ac76e",
+    "export_sha256": "5965af8f7d99c05b88fc392a980180631e666c0d8d5ac310001a845ce3b05b31",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94870,7 +94870,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94895,7 +94895,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "75a996e6c6a9ef80552c1a0d18e3c4a87fda27cd509536b74f86cb635435c570",
+    "export_sha256": "2d5e3e5e439e4ea48a9239cdf3263d052d14dac266429c1dc4037e34533457b0",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94903,7 +94903,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94928,7 +94928,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "5538d39059ab62e0120a37acc1a510a50820a5e5bc5345a9f7eef5ea0b050158",
+    "export_sha256": "f7300cf6831354dc3af5f1e8b476eaefe7910cfcf66faf8e8d9ecda94c9b9c67",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94936,7 +94936,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -94961,7 +94961,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "ef1cea7a0ddec1037437ad8b87ff31169d7b2310f0b1d101b863acf4ec1bf1c6",
+    "export_sha256": "5a096251da2958bf5e2952af58683c2c8af61e5fd6a79c29a8e4e326b846912b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -94969,7 +94969,7 @@
       {
         "file": "Source_Generated/cutout/allosaurus/allosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "be0480c6498a6c4b066c50149f00ff54a404266cb5a5d161b361514b9e669bf4"
+        "sha256": "6f1fbf137721ad7f447679c78483b89277f51fde6cd8d7b75661db5e6c2947a3"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -144914,7 +144914,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "10d70358b82f38446857755713c3b0f1cb558d421bce86d4b0b5b879df9e20ae",
+    "export_sha256": "1de407f2d8fb3f5bcf01d240cf683fe0263104d02c397c93b8b9e44358e45555",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -144922,7 +144922,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -144947,7 +144947,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "9bb032c30b2ac99bb06079884d05934a013c12e3a34e831de6bacef7deb7a964",
+    "export_sha256": "e9c0589bc39fc22d05e6fc9cbc5c8a0bf9d55d1b03bfafda14f029eeb3697725",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -144955,7 +144955,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -144980,7 +144980,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "50cfc881fb433af93f470c762bad75bf574db6bd2c58e372e3563f4463ee7f67",
+    "export_sha256": "ce083edf1cb056f34e5dcbe38a96ea417377b80c87f4a4e1eb0b11583dfc8735",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -144988,7 +144988,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145013,7 +145013,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "69e8260ff35d2431340ff5d0d9f48c969cc1d72878ae22493040f26742d7153f",
+    "export_sha256": "4170ba23d411b81680ddce783e3d0c89275a44884812314ebfd01b2e010978cf",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145021,7 +145021,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145046,7 +145046,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "1760facd6fbf0cc99fd3144c85bca89b919844aec73b6ec136c919bed976169f",
+    "export_sha256": "6893c4855fcef1e1092182449ee071b7713dd946a20d94640e1b81a1b9b3d067",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145054,7 +145054,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145079,7 +145079,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "9c357dfb218ac8c1752bd467fa76f46487381ada761dace2434a1c4ba3c98d39",
+    "export_sha256": "5acd290f8a2fb23f3eeb496290c7d52ea0091485f1e8ae1f7990238a604ed324",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145087,7 +145087,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145112,7 +145112,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "43c2fe36f8441aa59f647c8bffc1b1ce87ab355469e97430b2d52040ba03a22f",
+    "export_sha256": "457f2630937599dfe5dac04acdc0e10917a615a219852708757407171cda2816",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145120,7 +145120,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145145,7 +145145,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "d3fd1a8d000a5c3be1005f934c9c95a777a75f34d34bd05a3e27bd8f8f948279",
+    "export_sha256": "9a4b01a7f2097844643ac6ede20fb4d0ee411cd0bb0e4514231dedb61ece9527",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145153,7 +145153,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145178,7 +145178,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "aad1c0220c5af03a0bcd3ab6a2b4833417e6889a9f9964afa898e9e994ca5f37",
+    "export_sha256": "76f30e993eef98f3174ebc3020668c742ba0cbdd097477594c7d7c0316ef4b05",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145186,7 +145186,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145211,7 +145211,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "e669cf5c6a02fe9e06397836868296fed23c4793b7fa92fdff4afd208f04e30f",
+    "export_sha256": "054e65d4830e868e3fa056ee4fbdcc03ed275e8f4674de4e0a9f4d55fe5e9b6e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145219,7 +145219,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145244,7 +145244,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "df36f422a19c312995a54fad18ead518263160d9953f9305d712927836f8f204",
+    "export_sha256": "d57ac37302ac43648450d3528729f1128d3ff904a320f6336062e580eea06d7e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145252,7 +145252,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145285,7 +145285,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145310,7 +145310,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "8be1f4b1b4cd633a01687cf7373258079a2933832093cc259bc39ab76cc22695",
+    "export_sha256": "dc4debae9d468e466d4307315175d164312b723b8c37d7326d33908341a5dd2a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145318,7 +145318,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145343,7 +145343,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "35149d59ee197f3db957a8cad05301359102d3c02233f9421fdc4aef93dc2365",
+    "export_sha256": "0f10457b651d45d5c3b1b9e636ecb75e75437ba133a30cbfa734bbca26ed9c16",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145351,7 +145351,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145376,7 +145376,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "ee6b2522020e05b3b35f19c9a3aaf0df7d3f4d8708a434712a2d0e12e8649fa3",
+    "export_sha256": "7ee9a6e19d464c972033a70ecf2fa06f534012ad81310cd4407ef7581382c1c9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145384,7 +145384,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145409,7 +145409,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "b04e6c332a332dcc1c08ff9c8a8b0a3ea737a9cf68b9d9f4240d75b9a719765d",
+    "export_sha256": "4440262b7e4974456077ddec1c8f106acdf294033bf314b7743ad0ff187d256d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145417,7 +145417,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145442,7 +145442,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "269b5a16bcb43b729434e01176a97bc81cec6d940537a44b3a8a79d9b0ac001c",
+    "export_sha256": "5724647812994ceddb021f7ca4f4832288f49ccef0c7642b87a9d9f4d08156f7",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145450,7 +145450,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145475,7 +145475,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "b51cd85a40201b59dde8c6ee30ecc3172de72030822877f41c969ca80e10267d",
+    "export_sha256": "cf02aae56fbe4e03735b881001f055c4085388ace0f5f449cdf14e19436676a6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145483,7 +145483,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145508,7 +145508,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "3aa34d735d3692d0bccadfb929c75f849846e0049e414933f5ec61bfbbb0637f",
+    "export_sha256": "45c474db8fbc606df8ef39d5918ff4fac1a60dd30c153b620643dc54529dea10",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145516,7 +145516,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145541,7 +145541,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "b061f6bf4b955f529a4381ee3eb93e46919f18f8fa4672581654f44a4aa2f766",
+    "export_sha256": "3649f297c3ca855a30a664aa97ac8b3fac25bbf1a3b2ff8522b1080265a52cb1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145549,7 +145549,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145574,7 +145574,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "70c38b85a955838f1e609212fe10a204b1e7b1718caf04e91fa411bb7e3449cf",
+    "export_sha256": "fd8572eed6e48d72ee48284fab1b9de3120a6548f9f68da35c3d415be3588db2",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145582,7 +145582,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145607,7 +145607,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "8bd11a710d819a5fc96dfbcb0bb95a8c3e6beaf446fe0be22e5954f833a54dc1",
+    "export_sha256": "62e3bd6061e9f88a0358c4d4d126c7a9cceeded27e4a515da9c10b593a162c2f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145615,7 +145615,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145640,7 +145640,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "42b247f215b1021b32e94e12dcb0d3c49a3f8645d7b9fc02c1b2faeeffe656a5",
+    "export_sha256": "509de188306bfcc7d1570d3d5a8253434a1349e58758838ab93856a40a70fbe8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145648,7 +145648,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145673,7 +145673,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "cba602195b5d38c745a5af8383a830e6746db3e3d560f4babb5e716cbe449792",
+    "export_sha256": "5ba7db579044f8dac32dc63bb2a789bafba36be2e434334b636386d5c595140c",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145681,7 +145681,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145706,7 +145706,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "c84659fd71413b8beeafd0bff115aa7c690dfa52b6e6f74008adba3b3579f795",
+    "export_sha256": "af70b651a2048bc6d961df67fbcb13d53e0e448c6ba4cf03521927fc072ddf98",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145714,7 +145714,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145739,7 +145739,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "ede51c865947094cfc3413c54e95a0180579c39593e60c5119275d7bd6efab8a",
+    "export_sha256": "8ac355902c1f2dcc493396babbba14ef99d5ebd44a31bd9425a3df44095ada3a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145747,7 +145747,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145772,7 +145772,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "cd70d404b9f05bccaa2d01e9d324140993e79fbb26ff2094c4bc57dfcb53ebb0",
+    "export_sha256": "5177434159c9fc2b3cd486cbfe45d64bb8b513416c29c32d1d1fb29642856a85",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145780,7 +145780,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145805,7 +145805,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "aa2274f745fe1bdffe08a30659e64a63e636fb1a563418c0cd4ef7cb2f051e53",
+    "export_sha256": "94677c4cdbca5177f5f2386836749642f96183b91df81c56f6ae7f86fad80068",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145813,7 +145813,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145838,7 +145838,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "164e0ec687e00cd3564ae1db44ed532b22487837255d93f25aa7a9b28cc89f63",
+    "export_sha256": "efd2fef83e634e0bad4631b46be243c85d153a981797ed80610df628b0621db9",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145846,7 +145846,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145871,7 +145871,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "0946af24d106242ceacaa4325f326840c5ea90f09db19c9363f6116f8158479e",
+    "export_sha256": "6dd4cef57060b58a5fe6ba5e8feecd757032d97df43f81294521aa5fc9687526",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145879,7 +145879,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145912,7 +145912,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145937,7 +145937,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "625201eb1f6cdae0956599877f613b71e7d304d05735edacdaf0dd7917c8a214",
+    "export_sha256": "1df25c4e10a2234cf3779a840bfe255b8f8b9c6e1dae71302d8ec3a609f44297",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145945,7 +145945,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -145970,7 +145970,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "4e8230e3bdef7a28b04fb28918df6f719e6b6a8e4ed4ec4ae9f71ca070df1ee1",
+    "export_sha256": "811d85fa6a4e28bb677bc897385a1a4f581ac3d082d3f715d192c41f002e4bb7",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -145978,7 +145978,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146003,7 +146003,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "aecebb45603074a2b26f93d3f3d39f691f734ed4752e87c21fa72a3e42ad59df",
+    "export_sha256": "ea6a8ab04eb090d4d823e963a320174a21518996890734a71fce024431c53783",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146011,7 +146011,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146036,7 +146036,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "76a9de8d30e368803c559d2965b77d2e7f0b786d934db043482bd30ecc57f48e",
+    "export_sha256": "2d2431b1cefa762751575979495677d8f3c86b88dfdd74a718d8c7c87b5aa726",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146044,7 +146044,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146069,7 +146069,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "4caed65943dad25ccab83e3a8b549ccb259a98d6b16ad10850c1a70a778f0eb0",
+    "export_sha256": "047bcfcf81a785bd2825be0fa57a769b0a5e033b9e0318596e29e0ad063c00b2",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146077,7 +146077,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146110,7 +146110,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146135,7 +146135,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "15ed631dca934d470ffaad4c3935462482d31b2024c047aed7bb235d163ad1f9",
+    "export_sha256": "29b753cf02dcf48211f844695fbb720fd767d7ef498fd320cee1cc52a2833401",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146143,7 +146143,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146168,7 +146168,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "8748ecc61a95964cef5a609182f24242607cdc33888487f3134c3894475e5078",
+    "export_sha256": "530a2879d97a86a2a09b4be11314796e2a800a491afd5e7860668d407c6f3b78",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146176,7 +146176,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146201,7 +146201,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "f448d11945dc3af98baeb94862e20d2cabb940e1765cfcdde4a834e488aa3df5",
+    "export_sha256": "4d35a4f82fc3021bf5c6ef13df43f2cdcc591636902aa03ad8186834627f9cdb",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146209,7 +146209,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146234,7 +146234,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "670020e22923e3fc8e040e4a5ffdfff06a4bb8da60fd43f869493e579a7b43f9",
+    "export_sha256": "5c4270f96cc048d531fdbe2371ae6dca8498b7a10bf47e4d3036031b2d72dc2e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146242,7 +146242,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146267,7 +146267,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "0c77f5affb91d6df1724e57a44bfefd1e960966577ba90330ec20a7c03d779b2",
+    "export_sha256": "c24a7f0cdb694b9a95ef0082aceedecb769dea61c36de5d5f6f4da15efe75549",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146275,7 +146275,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146300,7 +146300,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "40b1287d6ab06deef293f8ced39412a9a0a996b994643e6b36241ae4068555f0",
+    "export_sha256": "9cb08e4f14c723bfd5e13027af1775db3aa2bbc6efae537c2592352266b8c61f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146308,7 +146308,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146333,7 +146333,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "798801ddb9a0bddae4f77c03856f61bfcdaff9d9483d1a10010be86b0659ad32",
+    "export_sha256": "10c735db64f46afb44d7d5159f2c3c443c653ae582221d6cba0f4178c09b65c6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146341,7 +146341,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146366,7 +146366,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "43356dec5dae1ed6f330e74f25a1810822a3276d410eeaf06948d9839265c4af",
+    "export_sha256": "edee650147e192ec6a0bb9a70b3cc0ccad4725db27350d6b25c4cbce6f0524aa",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146374,7 +146374,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146399,7 +146399,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "9dc2742a07e49166ae8127198bfcf9e7cc58d4bba3f4c29a6677ed77106de86c",
+    "export_sha256": "dc51c6f00a88c689913f72c668bc87b78d3ca2c9336d176552ce665b0c1c5c33",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146407,7 +146407,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146432,7 +146432,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "93a4cd76391916dbee079c9dc0938e8f317e84bdf7a060486ecdcb454e40de78",
+    "export_sha256": "cdea7b50eead63696c79b5359723e08fb1bc2eb64304d36566c0e2e4f59633b6",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146440,7 +146440,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146465,7 +146465,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "de4e60c4c90aa212f822bf849c5f741ef72a92a4c4bd7a244b4d1bed25c10c84",
+    "export_sha256": "568774a26c4b237dda84e189a9c6aa088f33441301186d2f4d784caaffaef1c7",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146473,7 +146473,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146498,7 +146498,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "35644cb1bea3322eeac19734931f481853fdab87ed7dec12bded3653c597ba7f",
+    "export_sha256": "d3f864244bcfd50cce0f0b151e309d9bba31b75460f26b94f4c39f3120d8cb98",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146506,7 +146506,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146531,7 +146531,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "4032f051664987a4548600d7b3ef2f6a73646ee6657dd69bd232a4064024182f",
+    "export_sha256": "8c1e04b031e8815e96c5325ed760fe29f6fb968294ad49f90c88ad7f9158a209",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146539,7 +146539,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146564,7 +146564,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "3694ba946b7edea91e9aed9c5a2fd6e47ff5c54b22034ceabfacc65621a27ac1",
+    "export_sha256": "3714eb73ae80e874efe9cc827406dace2c060229b6b0ba584c92accaebb1fb91",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146572,7 +146572,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146597,7 +146597,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "91a1a13156cde8160355f0a49e83cc5c8e4f113d852567e7c5ee44042aa5bae6",
+    "export_sha256": "db4f2e0ef87934caa02bf9f71ff04a2d741b22a5d4f9308eb78aec43c867ad96",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146605,7 +146605,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146630,7 +146630,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "427d9c24ee954947b24f07f21e1448264f407f6c7351deea7e091f8a50555936",
+    "export_sha256": "93be204d63963677fbbcd285a782dbf5fd0f4b7544beb9fac677182bde04a9c8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146638,7 +146638,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146663,7 +146663,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "36ca3ecd609ae177ea773d5c77236ba59d296ae126b3ca56b31ffa50e911548d",
+    "export_sha256": "a4895dcfa9ac16312bb24df03b5789b752b8d6be396f9a66bc039873fe5c3e2b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146671,7 +146671,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146696,7 +146696,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "54a06311800ed3c13fb0dcf8c61b4221446b0fc08655f362255ea802f0bd42c3",
+    "export_sha256": "04b08d8c07add6f00dbb8e995946b7a7aad440b5e07507d9643f18e1a4943a96",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146704,7 +146704,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146729,7 +146729,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "28ecf1abc5c85f1fd0bf720b5963f3c1d4cf9ad1f690dc89e5e43e617ec739b5",
+    "export_sha256": "0ceea2ca546480040930e350f9b112c64d868b988019fa17ed4dbc1d9bd907e1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146737,7 +146737,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146762,7 +146762,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "b5a18827b05657f16e4212feafb80a4887b17d506ebbbf5983ed5df225ec793e",
+    "export_sha256": "48902fd062002e730628bc618ebdf48a6141a10c037939994058dc2115d32abb",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146770,7 +146770,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146795,7 +146795,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "56eece5b4a4a951477f33e06b41afbe0cb5384f866999cec660d91f4856f60da",
+    "export_sha256": "da1a3afd9bb0765b7fff760558d524930c70a995ea490dd21cea11ba07d349ca",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146803,7 +146803,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146828,7 +146828,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "270bcfd046f161fc50b330fef74d9eca1f30c8281b459d63d0d400997b018cb5",
+    "export_sha256": "71e81f28dee55139c95f76dd086ce19aa17cc95478dffefaf3514f9ff228d48d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146836,7 +146836,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146861,7 +146861,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "1df47dddbddd35ba0c37164bf36f30a4908a1f8a4aaf967a45f536be7e47bac3",
+    "export_sha256": "43bcff1b5a26c1e759ef55e3e3d2add455fe1cba9f071d2585657398f39d13bc",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146869,7 +146869,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146894,7 +146894,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "3145a4746939539ee2c56a5b16cb2335a74f646b490d0acfc7b3968d0d5144e0",
+    "export_sha256": "a30e487254940d9cc6df56663bf3fc782d6a6c94b5fcee3e47b297dae3653bcb",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146902,7 +146902,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146927,7 +146927,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "438db09f4e1be02d743298f92386346a5144a9ad173d047e2044f1c5844d5a87",
+    "export_sha256": "5c7b05287d7075250d56a6a7dc6e6f6b8b44664d73ba6be8785d9dff49f8f6d4",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146935,7 +146935,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146960,7 +146960,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "5c5c0a8b77351821d745ae4af901b2b2c5b67d77dec3937c74bd3333103bef56",
+    "export_sha256": "c1d67c5c53997b84481a864afe885f703ef42a72dd81aa1abfa8f79cd1faefa1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -146968,7 +146968,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -146993,7 +146993,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "984d2a48ca6f1c620acc4e89240eeadd04365a16868b1800b6d2cbcf6fb19433",
+    "export_sha256": "18e9950c7723606af2484103f3bb90e5eeea4159b329f501d2a3ec925ed99472",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147001,7 +147001,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147026,7 +147026,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "bab2f358f89bc27a39ec2c569e4e4b5774d8c4c2746634fe86119217b31b0a28",
+    "export_sha256": "539dcbb682ddaabb29cbe1d6223650f413283d9fc0acf76c01a0eebcaaae48ae",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147034,7 +147034,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147059,7 +147059,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "ca18a4158b3fae701770e59e514b61d8227dcd7151071d63b14df253c36e1745",
+    "export_sha256": "cb372f62f60229b86a736d0edc2a5048228c94832282481d34e8d29f65274445",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147067,7 +147067,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147092,7 +147092,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "3fff6122bf6310ede60bee94384072cddde83a86698782671feedb458a3cc900",
+    "export_sha256": "4daa6c406e16c2c9d3a1fc5b2d627aa0a7b10457af1fda1b93d66073c73066ce",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147100,7 +147100,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147125,7 +147125,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "cf79c563fea8c74f8b201d54a965a5bd7eccc8a1a7acee192d66f2c193200c4b",
+    "export_sha256": "494e1ba4f0c9acff3798d04aa531621146632798af70814e70b89f10dd610155",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147133,7 +147133,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147158,7 +147158,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "72efe4441c280f7213231a327d97403541367404d062b1a89bce75699c249b9d",
+    "export_sha256": "a8fcad6bd34ecf793205c8bc08340a90a03d4e14eaa12ef745e640d41dcfe1f1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147166,7 +147166,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147191,7 +147191,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "cbe77bcf59e06b3743f8fd72b9b7b85cb66b4e62e338052b2649a05596ee9de6",
+    "export_sha256": "37c107f44b07ea9713d5ab546162695696f968ce574b978a4ea3a86ab2a4fe63",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147199,7 +147199,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147224,7 +147224,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "9e677695b36bd71358e51c95cb456d36e5ab2c106efe06e7c7ac0147831c8b14",
+    "export_sha256": "8e31ca47405cc2f5b6a0d669d6095382d09da06989cd51b3997b5130e459ec27",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147232,7 +147232,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147257,7 +147257,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "95f23a7642f71c9e2bc1c42d1a651381f799025092e499435bea8e0af95a2324",
+    "export_sha256": "3dc0a48ce42405ac4b110926ffef9f05b2c590af59d162976b7a03cb0618141d",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147265,7 +147265,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147290,7 +147290,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "16ad237082cb8d088a9ebb7e7ffda372f62fa90412b2182feb2336c03ff04954",
+    "export_sha256": "bf7a0831ca9b1ff58f4ccd78d83b2c173b931e8547a2efb32c0002e5983ca466",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147298,7 +147298,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147323,7 +147323,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "a447aba978df178caf9d08c242c62fc623269a05ea6f832064f290cf2814c42d",
+    "export_sha256": "c7586a27648304b1a73cfe4785e51137df85d505ca019b9a365688a72057fbb8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147331,7 +147331,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147356,7 +147356,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "5733e68767472e0708eb802a61f09f06ad11191cc16a60a5631868361521c500",
+    "export_sha256": "f96375c114638d7be37c8162c745cfc7f6b6cceaa382d527b850c0a53902bf29",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147364,7 +147364,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147389,7 +147389,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "f9da0252d41ca6e1b4418e69661b2ad1af2dcf13017df82d19ce77cd27642736",
+    "export_sha256": "82911e8202b2fb90d11a0e942e986559d387a1eae50b8975b22a5ff1e6e2a1ca",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147397,7 +147397,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147422,7 +147422,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "d7f809868036f8152664da57ebf15a617ecaa6df865d4efee11ff6953fe12f87",
+    "export_sha256": "d993b3753b8eb1fa5a93dd29950387ba33a97351eef9809a85d0cf7438afb9eb",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147430,7 +147430,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147455,7 +147455,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "a568479379ae8a7f2802a4669d06d01534f6e37e0497dff003709572ffd739a0",
+    "export_sha256": "d6f2f7f34c9655a94b7f0916c7c3975e1dcddff1eab76ed9887bec642c57c26b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147463,7 +147463,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147488,7 +147488,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "119f95e719654f816ddcadb6b8b2dffa5da0a852a5149e9c28a2dba2fa083cc1",
+    "export_sha256": "953caf45f87ed4f821f1adfc51470ce814e8e73ad2dce286d88998f46d7caf34",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147496,7 +147496,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147521,7 +147521,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "3e30680c2d813a3cc0bffc441c1f9717224397606008cb674f02d94c5b344307",
+    "export_sha256": "ae1c45120e703ec2fed033a74f79479e7852c52e0caa250593bf3c616f2b98b1",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147529,7 +147529,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147554,7 +147554,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "8a0e64e90a78d42d854c72f97a292092df0ffce4c6caac2bd551d2ab07058c90",
+    "export_sha256": "5e1f711dbd47a8eff4f104c62eca326caabf7e0380391179e9991d8fef9db3a8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147562,7 +147562,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147587,7 +147587,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "fe6b8b3256dcbb742e9bd7e6810fc54c31fbd0fd539f561cf96f574793e5e16d",
+    "export_sha256": "dbdd8fc0a907e9bc73d60fe2eba61dd9fbd66e16d7c6b94a6cc5f04aaf84b863",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147595,7 +147595,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147620,7 +147620,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "f1c32d29e9b2dad54edf5d4c7657736ca1e09772174696db56d5dc8931893363",
+    "export_sha256": "2ec7ab3d67fac602356dc0feb016dfa5b4aa51c088ff9fdde6de5619ff307933",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147628,7 +147628,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147653,7 +147653,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "d68f9eb524f00effe5fb0d848b193af1514fe18f56336e7350d1be2bbae8fbc9",
+    "export_sha256": "c0c71377193131048b4bb7cd068ae60299fb309a2f70e3f2f250655d8418a964",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147661,7 +147661,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147686,7 +147686,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "fee76ca4f1b2a8fb01f1cc2e373e2af0d5eb15ac752bb0562e5fd3b9c56a78b2",
+    "export_sha256": "37720f443e51fedf184ea77b50b93ff0b872c18758fb31a44eb17e6dcb6b896a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147694,7 +147694,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147719,7 +147719,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "4f8407caf5d004f93b8e22501f656f913324c4b1c7a022afecb148f5ffc6c513",
+    "export_sha256": "ffe1067e06bcfaee1cb1a18861b49f97302a1c524737bea670b92d2f95e60638",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147727,7 +147727,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147752,7 +147752,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "a1fb1c764a5bff1702aed35e1130f13983c3b0ff70fc1dcffd65d7f74a3069b3",
+    "export_sha256": "5ec019f347a4bb4627fdba1c7ca36b4b0e5b962201a64d55266d98092886ddf8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147760,7 +147760,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147785,7 +147785,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "4a4db67270e44bade628ec04a0b19a3667672d014b6fec377061b6c4a3112174",
+    "export_sha256": "215a94e047516567efbb576cf2896c632bec7cdbe14af7c4d7c0a458f984b530",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147793,7 +147793,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147818,7 +147818,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "e65b00e78603a6b8e77f8f1d83fcab6feb54fe3f2c83a4b27975f6863419bafd",
+    "export_sha256": "f9b72a9e20339daf2f927c6f17ecc330e41c530da5f594fc302626be41fbb9f8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147826,7 +147826,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147851,7 +147851,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "803d5afde1e4831854f945208df0ae730ec3c4d27eb2b8bbf86d89e74e7c05bc",
+    "export_sha256": "70f6d29ba631e4cfc776763b34bc52bb9756187a1906c4e1611f8bf5c2b42319",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147859,7 +147859,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147884,7 +147884,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "20acb43d0e342059fa583889dc3b1e613392c5d922c213a0576af757436190e7",
+    "export_sha256": "4c087bc143c64e4f9c66c16c38b36f60252ed56aaeb97b32e97a1556ae074305",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147892,7 +147892,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147917,7 +147917,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "802d5a2a88ab672bb1f8d4bcc9c09e09b8d079f73bcbee113337e915a9d813f1",
+    "export_sha256": "e31ecd09f264909e3c4e6ef8662c4ec9ca6e81a45e6749d52f4448f30555d954",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147925,7 +147925,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147950,7 +147950,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "048c88de091c20432731dec8906265f68f97a2495cbec0ac0caac76395a8e858",
+    "export_sha256": "519b9e031c209251eccd9a0ef0cc43ccdaf7f85602840882f939ef7198514650",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147958,7 +147958,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -147983,7 +147983,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "f36db8673c0ba3cead2615f6bb27d6a9f124dbe332ba0979bdf9a796438cf637",
+    "export_sha256": "9d62edcbaa022d35886bf29c529c9867331d958f6b3abd0d791d64af59ff71b5",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -147991,7 +147991,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148016,7 +148016,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "ec44ecb80c2adf6d1521b1b33a723a02625e578819e3659d1d7f6504cd4ce225",
+    "export_sha256": "2e2de62884e81f6775df77aeee72e2b4d15c4b4ae0d92976f50f1a159a8aa71e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148024,7 +148024,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148049,7 +148049,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "b34a782c7b571c91760049f3eefd09b13dab76d31ff2a95a5e2797964b4af94c",
+    "export_sha256": "dd634b814d71382b202756cd45c12fffe6db7c30395a9616a15520e3578a6c6b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148057,7 +148057,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148082,7 +148082,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "ac24ef2c043858163c41375580e2047c870030d397cd916325f434775b4136e6",
+    "export_sha256": "05d9ece92a3c220dfaac47adbe651782f67925a00735623c0fc59628a13c8bce",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148090,7 +148090,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148115,7 +148115,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "92d376464b7ad0bdebf2b0d5299fa59856e668d80158497cd0df5997a6a4edf5",
+    "export_sha256": "cd5d73d418a968ba2d690e5dd71876d854dddcac13e805d947232573b792e122",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148123,7 +148123,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148148,7 +148148,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "4780f4de2d703735824e817c17def502709ff61c4b38940aa8e3f62d7a572c08",
+    "export_sha256": "ace249452a50c8c604b0d4521c14ff966ef45ad092b0e4118530581064f41bc5",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148156,7 +148156,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148181,7 +148181,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "a392f3756983216c1081f874e6f170571cafd863992516df1b45649474d3b9e0",
+    "export_sha256": "2fa57a1285b78a5b83f38e723746b71945b041db4edad5c29b7d458f0247f942",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148189,7 +148189,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148214,7 +148214,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "a331a558dd2dac69840bfa18f405325087cade3691bd5262ddc22cda77f1057e",
+    "export_sha256": "795aa669f0071edb5c806a86cc6d7c70a2387734f55c1041dd6202c0f88bb9d0",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148222,7 +148222,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148247,7 +148247,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "3f2445a833fac927ec8753abb469d81a2174d612a00adafe4ca60b69bb560900",
+    "export_sha256": "8772a8b4b84c48ecebc9a6c3f23bf2b6015ae5d610841bf2cbb2f8200113e24f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148255,7 +148255,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148280,7 +148280,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "8cb28dcb166bc05d05946b65cc54ebdf3574cb10fe9aa4c82d436fdd8b7f9695",
+    "export_sha256": "6d6d02266e8b7bd106144d58b98f363acda4a254dde44cc129fa1201da8d5e45",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148288,7 +148288,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148313,7 +148313,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "afc2e527fa94bad4ebae3bad54b55a7b50400fc8261bbae05162c4a07aef2d0a",
+    "export_sha256": "d277a01deecfae401c1ef05a1dc5ac9779e10423c8e4e1db267d7c92fccd18b4",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148321,7 +148321,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148346,7 +148346,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "67553f7a07c06227a7eb28014c7fd74e6e01c4447e1758ecc76aafb266e322a7",
+    "export_sha256": "5b5c57d7776b9bd07e33d4049ddcaa865fdc9baf2c2b6c2d2e8dfab1917228eb",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148354,7 +148354,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148379,7 +148379,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "992a21ea34d7d68f376939f5f2569a22be096eea385a0880d95b6d72830b5c2f",
+    "export_sha256": "71b5e9daae47422c53ae450cf838a16e5d4b8e166288e2b5afb40552cb21ff30",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148387,7 +148387,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148412,7 +148412,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "2b949553d6fe68a16607b44e2704e6a64eebcd0a8400472631c39f79ed4c4bc2",
+    "export_sha256": "419862bed8cde3fb2c73c4efcb239b4243c5b6782d0772ef4ca22b58ecdd23c2",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148420,7 +148420,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148445,7 +148445,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "eaf2f7c7aca6873b1cb6642fc76c77eb57baa63ae0dff6d0b89fffe19a8cf0f4",
+    "export_sha256": "d26e5455bf94b6f24c2aaa9c79fbe0a6e7df7582be38ffec38fe9ecb75e4ab95",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148453,7 +148453,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148478,7 +148478,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "b6cfce3e03e6b4a202d9fe49e7a6167f7ad7711539f3550c5813ecbb1eec7f08",
+    "export_sha256": "85c94412ed0420760a2fa2112030a4d9f6b5095e25663e2c7a931663c4f3e270",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148486,7 +148486,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148511,7 +148511,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "d7b1eaeed81dc8795691b6a9a4da2ff62900bf1a2611af57e061744dda249e0a",
+    "export_sha256": "7f3f4bbf168ce0e725d0ef150aca0bbec341268a469cc5126d59b792357654d8",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148519,7 +148519,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148544,7 +148544,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "5bdc5df2448e25a4f29cb867bf1c10fcba5c3dd3dad686424a6ff47e08665c86",
+    "export_sha256": "3990f04acc9297204c2e299701c197e482b238e4d92cbfac7ac6afe53846f32e",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148552,7 +148552,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148577,7 +148577,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "efd02a090dc0d991ca6cdc8367bed0c94f1a0512873fe09a7f8db27e48b7c33b",
+    "export_sha256": "f8f2d6b494514cd33858df63a039575c0d7912ed98b015bbe5c0db3473b204fa",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148585,7 +148585,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148610,7 +148610,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "8ae6d4368d2068cad48042d576b520fb4c2c2d75fa5a772a2a62f87640ed07b7",
+    "export_sha256": "538ee564e82689cafe0dc755ccce6b00ebacf95d84e2edb1ef13f15814c5869a",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148618,7 +148618,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148643,7 +148643,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "16b3ff31f2222b373bd3beb36a074585b8a618f2d6da432f37127fa76f6f0f09",
+    "export_sha256": "e0aafeb32e950f836f8ca2ea05e07e7a753a0ddc7ed9e61e64f6eee406d245b4",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148651,7 +148651,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148676,7 +148676,7 @@
     "frame": 0,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "564ba789efbed88806c4f10788d69aac21e22846bdddc68ddf35978ca7e0f313",
+    "export_sha256": "4d4120a77cb6e351bfe5be6fdaf224cd88c9449286ab69f08c7cfefca1bf3d55",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148684,7 +148684,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148709,7 +148709,7 @@
     "frame": 1,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "2881cecd9f8ac6b1709e02ed6258a1a648db675e2ea239d4bf039c7358e9fa39",
+    "export_sha256": "edd6b84691dc4d0fc9c695f748dc59233fff30336c990de26340eb0a64b06f5b",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148717,7 +148717,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148742,7 +148742,7 @@
     "frame": 2,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "fa40e07681d03195cb712d3468534b0e59f339fe1ba40335a3303cbd7ae1f9be",
+    "export_sha256": "de6ac01ee082792cb5d46b87f9035f209445ff774edcc8732b52cafd0dfff3e3",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148750,7 +148750,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148775,7 +148775,7 @@
     "frame": 3,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "d4894b48c8447900dec676189424117b352c0329243eef9d143de85afa7e2d84",
+    "export_sha256": "7f463247480934975443db52f35f7e5ce7d750e825073f862314e0e9f329cf86",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148783,7 +148783,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148808,7 +148808,7 @@
     "frame": 4,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "cee4b3159c30eaf1c02a9d6bab24254914c965d19d7e02c4f4924304e94f3f0e",
+    "export_sha256": "b12f0286f1c1c61da56116265e2957a3973179909de33c980196e8eb23b29e49",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148816,7 +148816,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
@@ -148841,7 +148841,7 @@
     "frame": 5,
     "source": "Source_Generated/rig_full/allosaurus_rig.json",
     "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
-    "export_sha256": "46aa47ad22c8a507c461f26896d7a3ed58096702c8ad6637aa682499f6150e48",
+    "export_sha256": "6bec273c0a9f3450e6b12e580bec54c219556343a733db91d53d5561b496304f",
     "status": "prototype_static",
     "production_approved": false,
     "animation_ready": false,
@@ -148849,7 +148849,7 @@
       {
         "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
         "kind": "cutout parts",
-        "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+        "sha256": "2ef74c1efcb072ff9188d76870017ccdcd92a2825500ff84677aac528d0bd806"
       }
     ],
     "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."

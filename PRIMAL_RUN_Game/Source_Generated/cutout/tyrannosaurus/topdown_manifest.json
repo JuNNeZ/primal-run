@@ -1,0 +1,187 @@
+{
+  "species": "tyrannosaurus",
+  "base_commit": "158d6dde2db675337d621ca93b68c9bd41da869d",
+  "brief_sha256": "31258aff984c58ac68f429e58256edb7ad5525e2314057d29c2c221abc7c1fe0",
+  "art_status": "prototype_static",
+  "visual_status": "unapproved",
+  "production_approved": false,
+  "animation_ready": false,
+  "runtime_integrated": false,
+  "palette": "PRIMAL_RUN_Game/palette.json",
+  "rule": "SPRITE_RULES.md",
+  "active_registration": "topdown_registration.json",
+  "historical_registration": "registration.json",
+  "native_canvas": [
+    144,
+    144
+  ],
+  "body_anchor": [
+    72,
+    72
+  ],
+  "camera": "oblique overhead in E and W; visible back and both flanks",
+  "light": "upper left",
+  "directions": {
+    "S": {
+      "bbox": [
+        52,
+        22,
+        92,
+        122
+      ],
+      "length_px": 40,
+      "visible_foot_pixels": {
+        "foot_L": 42,
+        "foot_R": 42
+      },
+      "joint_overlap_pixels": {
+        "tail1": 116,
+        "tail2": 46,
+        "tail3": 31,
+        "neck": 596,
+        "head": 217,
+        "jaw": 173,
+        "thigh_L": 63,
+        "shin_L": 6,
+        "foot_L": 6,
+        "thigh_R": 71,
+        "shin_R": 9,
+        "foot_R": 4,
+        "arm_L": 11,
+        "arm_R": 26
+      },
+      "full_sha256": "8d59cd75307c83774569c755ac34d9ad6a0f1e9f9fca27266b41227328049acf"
+    },
+    "N": {
+      "bbox": [
+        51,
+        15,
+        94,
+        122
+      ],
+      "length_px": 43,
+      "visible_foot_pixels": {
+        "foot_L": 20,
+        "foot_R": 8
+      },
+      "joint_overlap_pixels": {
+        "tail1": 99,
+        "tail2": 49,
+        "tail3": 31,
+        "neck": 369,
+        "head": 124,
+        "jaw": 149,
+        "thigh_L": 54,
+        "shin_L": 28,
+        "foot_L": 8,
+        "thigh_R": 48,
+        "shin_R": 24,
+        "foot_R": 20,
+        "arm_L": 14,
+        "arm_R": 15
+      },
+      "full_sha256": "dc645c6f21321e033d7202402bdde8b3ec44d7549aab4be2716786a52aab6fbd"
+    },
+    "E": {
+      "bbox": [
+        5,
+        54,
+        120,
+        91
+      ],
+      "length_px": 115,
+      "visible_foot_pixels": {
+        "foot_L": 35,
+        "foot_R": 38
+      },
+      "joint_overlap_pixels": {
+        "tail1": 51,
+        "tail2": 54,
+        "tail3": 28,
+        "neck": 55,
+        "head": 59,
+        "jaw": 105,
+        "thigh_L": 56,
+        "shin_L": 16,
+        "foot_L": 13,
+        "thigh_R": 61,
+        "shin_R": 15,
+        "foot_R": 18,
+        "arm_L": 4,
+        "arm_R": 3
+      },
+      "full_sha256": "459927a0c378b98d712a3524bda1d0833d2744d6e4345172c324526d58d57e35"
+    },
+    "W": {
+      "bbox": [
+        17,
+        55,
+        132,
+        94
+      ],
+      "length_px": 115,
+      "visible_foot_pixels": {
+        "foot_L": 42,
+        "foot_R": 44
+      },
+      "joint_overlap_pixels": {
+        "tail1": 32,
+        "tail2": 33,
+        "tail3": 18,
+        "neck": 51,
+        "head": 40,
+        "jaw": 94,
+        "thigh_R": 30,
+        "shin_R": 3,
+        "foot_R": 4,
+        "thigh_L": 27,
+        "shin_L": 12,
+        "foot_L": 18,
+        "arm_R": 7,
+        "arm_L": 8
+      },
+      "full_sha256": "5c2f165aa7ad1c39adea7174c322b965a882447358afe9e2481f0f2dd8327397"
+    }
+  },
+  "preserved_SN": {
+    "tyrannosaurus_S_body.png": "dd8f1687303fc07ce9f68d96797352dc6acea0d2a291d24f3d196764f233b077",
+    "tyrannosaurus_S_tail1.png": "45cb890fb01f3ed703e1e3e8ee30d476ab33fb6f14cd347869385282b15b5612",
+    "tyrannosaurus_S_tail2.png": "4d109de3b4e10c1786ef54a86fc9f087a640a2200f62904982c7713908d55d32",
+    "tyrannosaurus_S_tail3.png": "c4af6b15b4059116c4ddda69db9bee0923362063db45a58c1aa0caff325b554a",
+    "tyrannosaurus_S_neck.png": "1c6d5a205c36ab3b7733d0bb25769967bc4d2664a51b51f6e9f07aba203a75b5",
+    "tyrannosaurus_S_head.png": "c5d9ff9d61c846ee635471d26e8ec9f3b4780444254a4841a419be365206df16",
+    "tyrannosaurus_S_jaw.png": "9f9184b3c5fd9d0293a37652398ed3b8f421149532a1a882132e101e8b9c431b",
+    "tyrannosaurus_S_thigh_L.png": "1ac27a547629b622b7f22c38a61bde60d382d60ac5c7b1d366bbd9cb23da3fbd",
+    "tyrannosaurus_S_shin_L.png": "041cf0c72f773d13be6625de8ed0601306e4a62eb706df84d0605b95c605cc7e",
+    "tyrannosaurus_S_foot_L.png": "aa7842ba7299d4e77e54f296f74c63746d73e5222db97d5d6e4a628fd3d6c378",
+    "tyrannosaurus_S_thigh_R.png": "78f0c75a1c14517e82113e766e5e876aa4c2c5d2ab4e9887a93a5ee81496071f",
+    "tyrannosaurus_S_shin_R.png": "6b58084db23b125d5fab7fcaedd14b40de77b84deae53d5755970dafe859ab24",
+    "tyrannosaurus_S_foot_R.png": "0f151860d55530cea7b3db6b373697530101b834997be9e81222566ed355f608",
+    "tyrannosaurus_S_arm_L.png": "4d9942fda010a82d8c8498b8f7f900e3fc18e4c8824930f8e02c51e6aadc370a",
+    "tyrannosaurus_S_arm_R.png": "cf7c69de3c6e5a5b413510dc4487bd4a05d7aa891a4066a4f3fa994e47e4bf19",
+    "tyrannosaurus_S_full.png": "8d59cd75307c83774569c755ac34d9ad6a0f1e9f9fca27266b41227328049acf",
+    "tyrannosaurus_N_body.png": "1f599b3f619ca9b687e50a450680a6ac7cf54b7a49ba53a01a5c89f54571f863",
+    "tyrannosaurus_N_tail1.png": "aa9ab987d07554fc6266b78be1c4479af19f5e6d32518129fd4f7945d2693421",
+    "tyrannosaurus_N_tail2.png": "a3597750b73782a7c418cb2614b38126371ec4006c725c3ef597e90f7d088047",
+    "tyrannosaurus_N_tail3.png": "9b8b8e29c4b51d0172aee7b29af3d492ecc8b5442a03296e39164d64f4fcd112",
+    "tyrannosaurus_N_neck.png": "50c40a6d57d10e250aa7b3435d2aeffa639c6b60c00141a28713d38ab32cac38",
+    "tyrannosaurus_N_head.png": "73b23d38af4cbdf273e33ef7eba7f3434cec211389da5c3c38202b5dae53a83e",
+    "tyrannosaurus_N_jaw.png": "b904b94c80b8be724c79ea5b6dd42389c6a03fa0c725a8eae2e8588cb65f5ecd",
+    "tyrannosaurus_N_thigh_L.png": "2eefeeddbad1f168c733e08a0cb52a92b9a34975ad4c47885b4fda19795f16bd",
+    "tyrannosaurus_N_shin_L.png": "23de5998ddd948557c3bc08c945340ad63c7aabf0ccabbd36a540a070c656cbe",
+    "tyrannosaurus_N_foot_L.png": "3083cbbbfc4892cadf70b6b01abdab53a3ebc3e4093ed450d440c9f94a1ebfd2",
+    "tyrannosaurus_N_thigh_R.png": "f25be26c27d4b2dbf141e1b45d08dd5728fc87c3e031860504b4398ffbf02cc8",
+    "tyrannosaurus_N_shin_R.png": "8982aa447ed231270aec48ff6927f9d71eefd0e67cdd09c5d3a07e6253a0de5b",
+    "tyrannosaurus_N_foot_R.png": "7599b95ce46693f244bebb2a72c2f7489deadfd5fd2e5fcbbdd415b13f512d4b",
+    "tyrannosaurus_N_arm_L.png": "75c0ad7c5b28f778e4f3c208637743cf428980a7f445651c2d9c998f67abad69",
+    "tyrannosaurus_N_arm_R.png": "8d5fcd50fbc7b85a5f47a6f6e99188c163d637f46274674d33b4fbfdf0584818",
+    "tyrannosaurus_N_full.png": "dc645c6f21321e033d7202402bdde8b3ec44d7549aab4be2716786a52aab6fbd"
+  },
+  "sources_sha256": {
+    "topdown_EW_v2_prompt.txt": "d47c7010c42f04e131fd4e8a9ffe139e3d0b73c686ab180fb76d6d7aca9c528a",
+    "topdown_EW_v2.png": "122e0fd7921d9d11aba946f7b2ff2631e44d33a14fe715739ebcc592b2be310c",
+    "topdown_core_v3_prompt.txt": "845dff3e20c02e074705cf837ea6c76017502b0673c737fdcc5372b6bf6fa7e7",
+    "topdown_core_v3.png": "d7d7a97969cbfd41acc20f268b252d65e39eb7d235cf33ffad21dea60e6dceb8"
+  },
+  "technical_report": "validation_report.json"
+}
