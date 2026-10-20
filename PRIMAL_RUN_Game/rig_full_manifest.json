@@ -53878,5 +53878,3965 @@
   "production_approved": false,
   "animation_ready": false,
   "export": "tools/rig_to_game.py: rig_animate.py render copied byte for byte; passes validate_rig_frames.py. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_E_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "attack",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "4f56be7c375cf75d29fb0d1395b69713e40a11990180580b9df15cac6e0ae0b2",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_E_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "attack",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "bf2c5a48484ad6ec407e3a031a39dbd9528b4bc2db472077e93b32012bd3b164",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_E_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "attack",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "ba5f53bbdf5ea6d4d497225751a15bba2bb2027406009aa7aaf8fcf37463ff01",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_E_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "attack",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "b67279b6abe9aad0411aefb74299d76ab2aa009c8b0cb78f8b032dd888f465f9",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_E_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "attack",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "86c31d892caa72e76784f1b1b24c57d4346cdb37d2f2819d58ed786f35325d94",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_E_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "attack",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "51a62174779d141f18b250339d3f8f618c46e633b0a529eee076a27a428a4abf",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_N_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "attack",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "93428184a76058d3b43e452a9c8c698f6d9127ddb82cba6f850e9ad329e74307",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_N_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "attack",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "8581767cc09e5697e8855acd2bab0b77b51b50988e77917ba95b12c77657e1f6",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_N_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "attack",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "ea14c38d007d5eb6106ab91555e5a65425d0c286c2a6247536e899d547e5061b",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_N_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "attack",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "75c934ad8255ef246e5efa21795a506111bb5cb8f45b318ddfdfc7c8559fd9ff",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_N_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "attack",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "201a4e91bf240c7351c6c3ad4edfe37e8353ad5c3cd6442f6716e5721b32a76e",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_N_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "attack",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "a61a36190aadf4c210c4e9fa60c9d6fcea156a5f6bcbab9c2f50f5ed8dd4f47a",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_S_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "attack",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "d4c666837806678e809ac4aa7ba156802ef2418f0b9d221b1c0d80e49a06d097",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_S_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "attack",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "548ead4f6e5aa5f2fbd195bbf455e41a640640165a96a98e0e3aa97a55761320",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_S_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "attack",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "e2eb9a7f6779f67f09a978d54a6adac135778b63f9d3a7c1b57fe9a1141a95b0",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_S_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "attack",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "4c0621460ad8906472210c2d0ec159aebda468abcbb2e47b66a276b841d1c9e3",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_S_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "attack",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "97debee717c9c451517ea04dd59a24d24e2dd10294665805c15536b6df31bd05",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_S_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "attack",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "4e449d8646e17a7175f9574198c45203bc4ba735716d8f9eee5fe10b6726cebc",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_W_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "attack",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "dc70f8796e60d068e07a73843b4620b9e5defa00e20c0e0d1d7ef2ce680d0ac1",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_W_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "attack",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "68fb2b79cbd1ad65355c6e9da2fed2fc28bc5bf3ae790db1812129c6c4960504",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_W_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "attack",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "7f0d3fe5e8fd69b3efa2ffd1b347179cea70e966b0bd72d06c151d36c9a715f9",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_W_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "attack",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "5aa75b35e6b4d8a99c8831dc39019c9b2b9bdc527e939f31727ebda4ec0eb4e5",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_W_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "attack",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "2f8d2d94ee2b70debbdc8923fc2aae813f1506ac9e00ff5e4d0c66cedb05ec88",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_attack_W_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "attack",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "d9dd80ac22a8e643bb97ae3e25f4d076552913d19be72bf21b31b7b503d2409d",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_E_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "death",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "c1c867714ed3c882096fc997a670c9f7ec59fbf7b2cd14c96c4f21e18da9ac43",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_E_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "death",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "9d79a4d17de310b808d83b464e58931fdf4f470763c0e8566900188435a33f19",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_E_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "death",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "4ef172d6424fb0d660d2868af95d1d8a0cedf69a08d23fb63ae900cfdd340acd",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_E_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "death",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "97f331c31ce814d88fadf53f2520451ce3e8a46b0f6a456e7ada86f3b2319d8e",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_E_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "death",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "e21e4e84e3e81ddc98068942e38baa353c4d3c434891b6f707bfd371c8f5e5c7",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_E_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "death",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "8ae3874998619add0c01e099dcb0bfab9ba01f9a9a01ca8e9e246f07c7c582fe",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_N_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "death",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "a61a36190aadf4c210c4e9fa60c9d6fcea156a5f6bcbab9c2f50f5ed8dd4f47a",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_N_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "death",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "ae196924f68f70cb461f0702cf230c80eae280d6ed45e3f0774b46ba029e0bed",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_N_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "death",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "c2a72f8cd65a0f902f52a2b2e2d972fe9b36c96fef5c42f66e1520f938ab7fd8",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_N_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "death",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "039cb0d3fd41f843420891af5d0f7b80db5865f1bcddaf1dc1614ecf766361df",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_N_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "death",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "bfe917ec5fa908a604371ce3ea14a2f7699e5ec6869ea28c0d07d89ff58b4c55",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_N_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "death",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "bb515519e76ee0bd467179cbc9906e926528c4e3fab73269acfea829f81115b3",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_S_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "death",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "5f7ece82e0f483ed5ff5397a2d3ef5a08cd8379b023276e120b1dc99e107f893",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_S_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "death",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "06c63fa2a1ff925d2e7c2dcb86ae3b2e3f2d26e631f436654ea4132c2d41dd3b",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_S_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "death",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "b32543239e1e7b9ce92f6b6040fc1252b73adae4d8f83d74d92b93d19240484b",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_S_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "death",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "3e47354a1d1ab4438ca14e6eec92a30ce9a5ba04fb083c7b9f0b9964cc6e83bd",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_S_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "death",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "dd8cc947bd73ee2df9555492552b16b81c01a08a2b2a8afdf092388fe1891471",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_S_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "death",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "7e481424c34e08291ee2e51982bfaf66556a478bebbe3cbcedfdc46c5361a7fc",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_W_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "death",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "abd2acac00734e1c750188b616c538e626940d3d64972908d35e74a577cda9bb",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_W_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "death",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "055b9d34a5b5e6284eff3cd24bbd31a25be7610d8958c9121388b8c03c0cf972",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_W_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "death",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "7ba33a3b7fc226b6b70854ff9fb759ee59c5d15756123c6f6878a2de00398791",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_W_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "death",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "04e2f3960f4c2bb8caa1d3c86e766500b0816d617dcf93aa1d984e3f97d1fed8",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_W_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "death",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "e04d74548774f8270ffeb68079e19c9300fbae46a947535e96486576660d9da0",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_death_W_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "death",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "be7f077a1e351478b455050801a22e363ecef528dc2d165125dc6ca4be73f2d4",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_hurt_E_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "hurt",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "b5d67324b3d8bc9799daceaf37cb9a3d1e4f497c311fe59f709a86f3fa23b683",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_hurt_E_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "hurt",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "8f78f986abee048f2260aa0e330a3c7cbaba78ee4092d96beebbba87c18349e1",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_hurt_N_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "hurt",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "029b7a968d46c9e5646940eb37935deae0113031f52590ca18a2d9f1a9003bd8",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_hurt_N_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "hurt",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "ec71727a84ea011188595a0b5041cea6fa5fabea2533db927b755efada94face",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_hurt_S_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "hurt",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "2c39a26d1e138943f86ae6adca805a196ec0ceda2c4306a2f9664c907ef8e454",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_hurt_S_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "hurt",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "2bf67a87137c4e1390f15eb001cc33c2ce8e59e8c54c6b7e19f1f21aec3d3208",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_hurt_W_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "hurt",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "5031983b26ece448ed8686e30d3d4921160ae689d1ff36b8a54547106b7dd66d",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_hurt_W_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "hurt",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "ab844cb8d2d35a321058e3cf75d27a2d5cd2c593a77c3ed1f39e1b3c5f17f52d",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_E_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "idle",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "f7c85c742edd9b2c537b0f2acd152181bf404620ba1db788991ff7a81fde24a9",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_E_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "idle",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "9d884d114833585408f5527ea6446e24855a72ca4a8fd514575ab2a3bf4ab46f",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_E_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "idle",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "014ac40966cddf395c6d3989fc404e877ecfc01d615d33378ead650cb2f3b01a",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_E_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "idle",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "0bbabd5cfe5dd45b85f12caa11f68aed30ed1a6b498bfe617e22613048b2f2ef",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_N_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "idle",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "fa1207d8400bb4d39c15a7b3f29b98302bea6a337646a4199728caa9114de5f2",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_N_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "idle",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "464dd6802c06e55eb22840c2dc59e3e4494af5db2a9576f50c32cdc0bf46b8ac",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_N_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "idle",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "26b8762d3b8d5588f37078f19d07f3b0fe807152668bc4301924957aec8d52ed",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_N_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "idle",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "455635304b421c919de8c8b26808e33713ddf783be23f61266aca38f3ed8c9fc",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_S_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "idle",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "7d65b75580a387bd25bd12b669973345ef020ffcc0a7ff1566f9938c9deda438",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_S_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "idle",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "e35179215c0acda71eaf0492fcd87d9c3be1e7886b53b2add960801da45d6a51",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_S_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "idle",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "d60d6d76c02913035d6914c349bc63b4357cc6c4a30e2bd5ff9cd4431062ed48",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_S_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "idle",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "ab18b6f8bac8c0679b04bebd5e3dfc9d5032134e0550922d4db7269ec35540d1",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_W_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "idle",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "b53297210924fb997468cc6a7a16a50d8d8bedd9505f6d26e8c31705630a93e5",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_W_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "idle",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "a487db69cf3ad9427c1cd5aa55eee5894dc3088afd0181f9d8dc4d07bd4ff650",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_W_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "idle",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "6f626cdbf06cd9144d5e4915269cae6ed6138a47473709e66756e80fcf30b542",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_idle_W_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "idle",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "0e08f940ae208a4b14c70430c785ec3c8c44bf62db63e531e8074a227de0a765",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_E_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "run",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "9cede12eb4af2823c17155ddbaf541a2711b70ab4ab761a45db6e39b7e8cf920",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_E_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "run",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "2fc073c882e6d40a55dcfcc2a00f09b8474ee55454c652e5d7016f9396424b43",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_E_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "run",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "064a93d86380f0c313e98852af93ebfe2d723e8d5916aec65c884f86fec7b135",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_E_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "run",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "c1749e698eb7048513be21922dbc2e5c2567311d5a3f37ec8d30c95c81837023",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_E_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "run",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "e5245e7ff9e99599ee7131405a67b5cda5b6d829116159b9bd3deb1ddc4b6389",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_E_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "run",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "09999f8c9d960c80e0dc313027e6b1f81c3d8286cda54ace7ce89ba5deca912c",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_N_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "run",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "59782372dd3ee6716c8f602655ab14fa56619b7d0b3f1cd7aaa8b366a208b28c",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_N_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "run",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "1b278d5871943ba71f71119a3f6d92fb72446b8d1ef0cc02a7ae274d82a4da31",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_N_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "run",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "da29d26e4506ffffe295c00d422c582e02c6ef20233ac545cb9fabd073b15f8f",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_N_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "run",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "052592bc85cfb76f8953eab0511ede57d018da97000de2bf3791b4f0b6d5bcd5",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_N_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "run",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "018292072ad3f5d8435bcb810c204f0e0fdc4b2d431d9b3e5c7ab8f50bff065c",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_N_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "run",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "a178d6543b43558acef43c3614636bb1162d9c99cb6ce38ff7f7207914cc9860",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_S_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "run",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "dcd5be09dddde6da8765f5b62b92aecf7e2b52d88e4325258d2512b1cf7d3981",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_S_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "run",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "1dbb043e721c3fb28ef4df539506bfbb3fb3b47ecd98ead61647fd97d9f4dc7a",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_S_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "run",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "cf54140ccf29718efb0c69136ba40d55ce3a5a309947dcc51be7ce99617e39dd",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_S_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "run",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "248da2d6973f97f448c579363c26be1fb2394a009e6d24005ccb0385e6366248",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_S_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "run",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "fa55c150cd6bc3e15dcf2303cfff07ff4196c766be3363247eab0a2816eca04f",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_S_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "run",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "74a8fdfa99b2729a34a1ba9e785386f4d6c7826b384f8b34878974855f428337",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_W_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "run",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "0909832f6b0b6eedfc02118f045da95b66e9df306ac6964e553f9759de30e0eb",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_W_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "run",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "aa6c7584f8bcbe87324b7a4936b794c61c8f629622ec15662f1fbe574d9d09f7",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_W_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "run",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "567a11c4fe5ec45e2ee725e3e671f31c5ce2c67bc3d65120a472aa1d0f5855c7",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_W_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "run",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "f98ecfe490f1b29f03a51ba91ef128b009e9ebcf3a2539f5dae8a25a17b03817",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_W_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "run",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "225531eb0af96c13454b71a6623d1fcd6f62a619fceaf6edbef618758678230f",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_run_W_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "run",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "c2130fafd05f9c00d6cd3e34bee095117ba52787cb9831868bad4c1d93387e58",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_E_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "walk",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "9cb74ec4baa6e4ad72d09af94462c48fb37741ec82b6126a4e514ce003ec330f",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_E_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "walk",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "0a718506e0c714e36f9a566d02194fd6ab99e6da77e8760c42d0380a8a8ce3b5",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_E_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "walk",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "10b0587d315e4a161d533ad458793a2fdf4db5edcff65140d2a3bec249ea018a",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_E_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "walk",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "058f1e247521e7c55c9cc321acc7b4d29b185782940fbebcac3709ea789ba7b3",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_E_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "walk",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "6305a30d0d0236b0b9e0b0089e078df50738812351ac3fe93f77149d734595b1",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_E_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "E",
+  "state": "walk",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "2d07903db667f2cefc091844c0d37dc3bdc153091a87ed2e8457f1baf98dbc81",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_N_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "walk",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "8d946b4e91bdecc3314132405df34955a5009c5782b7bf755393ade34bd1d4e9",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_N_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "walk",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "d2217e5e4c40d49cf3a186e9ccc9e5a892893d9561237d05209c2b68b869d724",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_N_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "walk",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "d97974c66aafb827234cbf9141e04c568ee036050b47c726185988453d716769",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_N_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "walk",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "1dc1aace07215a17b117533db0afff880677d4c9f22417a40a623ce6ff28e4f8",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_N_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "walk",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "37802e44edfece2897c8fa22b702ff90f5456322fbb2e57e0ed36371ad9f5642",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_N_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "N",
+  "state": "walk",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "03333a41fd0d94893c668a0327440dbcd436039a9bfb3fd1ccccce8b8cebc2cd",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_S_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "walk",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "e8f0eefe12e7d0efadab5bec9750e185bc5c5b69e598d798ecc13985112c73c8",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_S_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "walk",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "942e4b3830de99e98d1eb791bf21ad492b88508226dcaa77704e7522c0424e1f",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_S_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "walk",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "1696a64094859cddfedbcbf6ab92ccf19cd09fb0e8f91a64b8dd08bc11dcf5f3",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_S_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "walk",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "79f5d3ddd72a91a481e9e75f55d29bc1b92d0f602fe3fedc3ad2cc041be60cb2",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_S_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "walk",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "5a298fe5b2db9fc91d3c16eb208f1b912a6af62d97683cffad632055d49294ee",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_S_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "S",
+  "state": "walk",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "e01ea0cc12739f8c5cabd377a52d7d00e0945a2bafe63fa4db47e8d8c6da67ac",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_W_000.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "walk",
+  "frame": 0,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "91f46316eaa4add888819f228d10c0dd6d6e678c1bda6f62b5bff02f339483fe",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_W_001.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "walk",
+  "frame": 1,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "49cdd1b13ce2b622119e1cb66b56e78c832db61c47392c6c61557bafdceeb53f",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_W_002.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "walk",
+  "frame": 2,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "70563d561ba2de9be03400be0fdd5813d18fad950539176545e4cc73a77c4002",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_W_003.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "walk",
+  "frame": 3,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "21aec90cf640b202208c58ec7575b43d43a47626a68f9ed1afb72954dcb629f2",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_W_004.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "walk",
+  "frame": 4,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "e6c22049784d71d3ac8aa1efd25ed235b7c6c97de792c5653a05ca5ce702e6fd",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
+ },
+ {
+  "file": "assets/rig_full/tyrannosaurus_walk_W_005.png",
+  "size": [
+   144,
+   144
+  ],
+  "origin": [
+   72,
+   72
+  ],
+  "body_anchor": [
+   72,
+   72
+  ],
+  "species": "tyrannosaurus",
+  "direction": "W",
+  "state": "walk",
+  "frame": 5,
+  "source": "Source_Generated/rig_full/allosaurus_rig.json",
+  "source_sha256": "bd43eb6489edacb4c6a2628af016b22c3c3899d9f9abee0e4fa7b85c8337975d",
+  "export_sha256": "1f814167d98ae2dc19a1f8b294e8447f0f3d1850e59ea30cf4d82b2cf89eaa6f",
+  "status": "prototype_static",
+  "production_approved": false,
+  "animation_ready": false,
+  "paint_sources": [
+   {
+    "file": "Source_Generated/cutout/tyrannosaurus/tyrannosaurus_parts.json",
+    "kind": "cutout parts",
+    "sha256": "5cce2299c91edaeed4904cdacba68ec77b7b9a3668a9be38e27ebb1b5f48aedf"
+   }
+  ],
+  "export": "tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. Not approved art."
  }
 ]

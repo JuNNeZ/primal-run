@@ -40,9 +40,11 @@ def render(sid: str, review: str, paint: tuple | None = None, cutout: str = '') 
     """Render, validate and copy one species; returns (id, manifest entries, animations).
     paint = (folder, file pattern, painted pose): recolour every frame from four drawn poses.
     cutout = folder of parts drawn by an artist (tools/cutout_rig.py): the rig's motion moves those parts."""
+    from cutout_rig import MOTION
+    msid = MOTION.get(sid, sid) if cutout else sid  # a species without a 3D model borrows another's motion
     with tempfile.TemporaryDirectory() as tmp:
-        rig_out = out = Path(tmp) / sid
-        cmd = [sys.executable, str(ROOT / 'tools/rig_animate.py'), '--species', sid, '--out', str(out)]
+        rig_out = out = Path(tmp) / msid
+        cmd = [sys.executable, str(ROOT / 'tools/rig_animate.py'), '--species', msid, '--out', str(out)]
         if review:
             cmd += ['--sheet', str(Path(review) / f'{sid}_sheet.png'), '--gif', str(Path(review) / sid)]
         subprocess.run(cmd, cwd=ROOT, check=True, capture_output=True)
@@ -71,15 +73,16 @@ def render(sid: str, review: str, paint: tuple | None = None, cutout: str = '') 
                 paint_sources.append({'direction': d, 'file': f'Source_Generated/rig_full/paint/{dst.name}', 'pose': ref,
                                       'sha256': hashlib.sha256(dst.read_bytes()).hexdigest()})
         # cutout art has its own silhouette, so the rig-shape check does not apply; cutout_rig.py checked the parts
-        check = subprocess.run([sys.executable, str(ROOT / 'tools/validate_rig_frames.py'), '--species', sid,
-                                '--frames', str(out), '--rig', str(rig_out)], cwd=ROOT, capture_output=True, text=True)
-        if check.returncode and not cutout:
-            raise SystemExit(f'{sid}: rig frames fail validate_rig_frames\n{check.stdout[-2000:]}')
-        rig = json.loads((rig_out / f'{sid}_rig.json').read_text())
+        if not cutout:
+            check = subprocess.run([sys.executable, str(ROOT / 'tools/validate_rig_frames.py'), '--species', sid,
+                                    '--frames', str(out), '--rig', str(rig_out)], cwd=ROOT, capture_output=True, text=True)
+            if check.returncode:
+                raise SystemExit(f'{sid}: rig frames fail validate_rig_frames\n{check.stdout[-2000:]}')
+        rig = json.loads((rig_out / f'{msid}_rig.json').read_text())
         SOURCE.mkdir(parents=True, exist_ok=True)
         ASSETS.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(rig_out / f'{sid}_rig.json', SOURCE / f'{sid}_rig.json')
-        rig_sha = hashlib.sha256((rig_out / f'{sid}_rig.json').read_bytes()).hexdigest()
+        shutil.copy2(rig_out / f'{msid}_rig.json', SOURCE / f'{msid}_rig.json')
+        rig_sha = hashlib.sha256((rig_out / f'{msid}_rig.json').read_bytes()).hexdigest()
         entries, animations = [], []
         for state, info in rig['states'].items():
             for d in ('S', 'N', 'E', 'W'):
@@ -91,7 +94,7 @@ def render(sid: str, review: str, paint: tuple | None = None, cutout: str = '') 
                     frames.append(file)
                     entries.append({'file': file, 'size': [144, 144], 'origin': [72, 72], 'body_anchor': [72, 72],
                                     'species': sid, 'direction': d, 'state': state, 'frame': f,
-                                    'source': f'Source_Generated/rig_full/{sid}_rig.json', 'source_sha256': rig_sha,
+                                    'source': f'Source_Generated/rig_full/{msid}_rig.json', 'source_sha256': rig_sha,
                                     'export_sha256': hashlib.sha256((ASSETS / name).read_bytes()).hexdigest(),
                                     'status': 'prototype_static', 'production_approved': False, 'animation_ready': False,
                                     **({'paint_sources': paint_sources} if paint_sources else {}),
@@ -119,8 +122,9 @@ def main():
     ap.add_argument('--ref', default='rest', help='pose that was drawn: rest or state:frame (see rig_paint_transfer.py)')
     a = ap.parse_args()
     ids = list(D.SPECIES) if a.species == 'all' else [s for s in a.species.split(',') if s]
+    from cutout_rig import MOTION
     for sid in ids:
-        if sid not in D.SPECIES:
+        if sid not in D.SPECIES and not (a.cutout and sid in MOTION):
             raise SystemExit(f'unknown species {sid}')
     if (a.paint or a.cutout) and len(ids) != 1:
         raise SystemExit('--paint and --cutout take one species')
@@ -142,7 +146,8 @@ def main():
     MANIFEST.write_text(json.dumps(manifest, indent=1) + '\n')
     ANIMATIONS.write_text(json.dumps({'animations': animations}, indent=1) + '\n')
     core = (GAME / 'src/core.js').read_text()
-    missing = [s for s in sorted(done) if f"'{s}'" not in core.split('RIG_SPECIES=new Set(')[-1].split(')')[0]]
+    from cutout_rig import MOTION  # those are switched on by their own flag (CUTOUT_SPECIES)
+    missing = [s for s in sorted(done) if s not in MOTION and f"'{s}'" not in core.split('RIG_SPECIES=new Set(')[-1].split(')')[0]]
     print(f'{len(done)} species, {sum(len(e) for _, e, _ in results)} frames -> assets/rig_full/')
     if missing:
         print('add to RIG_SPECIES in src/core.js so the game uses them:', ', '.join(missing))

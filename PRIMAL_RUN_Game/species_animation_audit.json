@@ -1089,121 +1089,15 @@
     },
     {
       "species": "tyrannosaurus",
-      "direction": "S",
-      "state": "idle",
-      "area_ratio": 1.046,
-      "adjacent_centroid_steps": [
-        1.224,
-        1.312,
-        8.259
-      ],
-      "loop_centroid_step": 9.115
-    },
-    {
-      "species": "tyrannosaurus",
-      "direction": "S",
-      "state": "walk",
-      "area_ratio": 1.147,
-      "adjacent_centroid_steps": [
-        3.705,
-        14.589,
-        2.106,
-        2.979,
-        1.548
-      ],
-      "loop_centroid_step": 9.623
-    },
-    {
-      "species": "tyrannosaurus",
-      "direction": "S",
-      "state": "run",
-      "area_ratio": 1.128,
-      "adjacent_centroid_steps": [
-        7.271,
-        5.809,
-        10.278,
-        6.152,
-        3.357
-      ],
-      "loop_centroid_step": 15.429
-    },
-    {
-      "species": "tyrannosaurus",
-      "direction": "S",
-      "state": "attack",
-      "area_ratio": 1.091,
-      "adjacent_centroid_steps": [
-        14.881,
-        6.932,
-        5.152,
-        3.116,
-        2.62
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "tyrannosaurus",
-      "direction": "S",
-      "state": "death",
-      "area_ratio": 1.439,
-      "adjacent_centroid_steps": [
-        10.157,
-        7.971,
-        5.21,
-        2.621,
-        7.512
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "tyrannosaurus",
-      "direction": "E",
-      "state": "attack",
-      "area_ratio": 1.109,
-      "adjacent_centroid_steps": [
-        2.624,
-        2.422,
-        13.954,
-        15.258,
-        12.039
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "tyrannosaurus",
       "direction": "E",
       "state": "death",
-      "area_ratio": 1.093,
+      "area_ratio": 1.015,
       "adjacent_centroid_steps": [
-        3.356,
-        2.922,
-        1.509,
-        1.012,
-        11.118
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "tyrannosaurus",
-      "direction": "W",
-      "state": "hurt",
-      "area_ratio": 1.006,
-      "adjacent_centroid_steps": [
-        8.679
-      ],
-      "loop_centroid_step": null
-    },
-    {
-      "species": "tyrannosaurus",
-      "direction": "W",
-      "state": "death",
-      "area_ratio": 1.249,
-      "adjacent_centroid_steps": [
-        2.422,
-        1.504,
-        3.635,
-        10.98,
-        7.903
+        2.034,
+        7.147,
+        9.093,
+        5.099,
+        0.768
       ],
       "loop_centroid_step": null
     }

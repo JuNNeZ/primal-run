@@ -1,6 +1,6 @@
 {
-  "alias_frames": 378,
-  "decoded_bytes": 491384112,
+  "alias_frames": 379,
+  "decoded_bytes": 508095856,
   "frames": {
     "assets/a6_hud/dna_chip.png": {
       "anchor": [
@@ -2240,154 +2240,154 @@
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1461,
-      "y": 1315
+      "x": 439,
+      "y": 1899
     },
     "assets/avatars/tyrannosaurus_fight_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1527,
-      "y": 1315
+      "x": 439,
+      "y": 1965
     },
     "assets/avatars/tyrannosaurus_hurt_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1593,
-      "y": 1315
+      "x": 505,
+      "y": 1899
     },
     "assets/avatars/tyrannosaurus_hurt_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1659,
-      "y": 1315
+      "x": 505,
+      "y": 1965
     },
     "assets/avatars/tyrannosaurus_hurt_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1725,
-      "y": 1315
+      "x": 571,
+      "y": 1899
     },
     "assets/avatars/tyrannosaurus_hurt_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1791,
-      "y": 1315
+      "x": 571,
+      "y": 1965
     },
     "assets/avatars/tyrannosaurus_idle_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1857,
-      "y": 1315
+      "x": 585,
+      "y": 585
     },
     "assets/avatars/tyrannosaurus_idle_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1923,
-      "y": 1315
+      "x": 585,
+      "y": 651
     },
     "assets/avatars/tyrannosaurus_idle_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1461,
-      "y": 1381
+      "x": 585,
+      "y": 717
     },
     "assets/avatars/tyrannosaurus_idle_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1527,
-      "y": 1381
+      "x": 585,
+      "y": 783
     },
     "assets/avatars/tyrannosaurus_sneak_000.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1593,
-      "y": 1381
+      "x": 585,
+      "y": 849
     },
     "assets/avatars/tyrannosaurus_sneak_001.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1659,
-      "y": 1381
+      "x": 585,
+      "y": 915
     },
     "assets/avatars/tyrannosaurus_sneak_002.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1725,
-      "y": 1381
+      "x": 585,
+      "y": 981
     },
     "assets/avatars/tyrannosaurus_sneak_003.png": {
       "anchor": [
         32,
         32
       ],
-      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
       "h": 64,
       "w": 64,
-      "x": 1791,
-      "y": 1381
+      "x": 585,
+      "y": 1047
     },
     "assets/avatars/utahraptor_eat_000.png": {
       "anchor": [
@@ -54151,6 +54151,1327 @@
       "x": 1753,
       "y": 731
     },
+    "assets/rig_full/tyrannosaurus_attack_E_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 1315
+    },
+    "assets/rig_full/tyrannosaurus_attack_E_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 1315
+    },
+    "assets/rig_full/tyrannosaurus_attack_E_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 1315
+    },
+    "assets/rig_full/tyrannosaurus_attack_E_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 1315
+    },
+    "assets/rig_full/tyrannosaurus_attack_E_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1315,
+      "y": 1461
+    },
+    "assets/rig_full/tyrannosaurus_attack_E_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1315,
+      "y": 1607
+    },
+    "assets/rig_full/tyrannosaurus_attack_N_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1315,
+      "y": 1753
+    },
+    "assets/rig_full/tyrannosaurus_attack_N_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1315,
+      "y": 1899
+    },
+    "assets/rig_full/tyrannosaurus_attack_N_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 1461
+    },
+    "assets/rig_full/tyrannosaurus_attack_N_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 1461
+    },
+    "assets/rig_full/tyrannosaurus_attack_N_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 1461
+    },
+    "assets/rig_full/tyrannosaurus_attack_N_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 1461
+    },
+    "assets/rig_full/tyrannosaurus_attack_S_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 1607
+    },
+    "assets/rig_full/tyrannosaurus_attack_S_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 1753
+    },
+    "assets/rig_full/tyrannosaurus_attack_S_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 1899
+    },
+    "assets/rig_full/tyrannosaurus_attack_S_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 1607
+    },
+    "assets/rig_full/tyrannosaurus_attack_S_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 1607
+    },
+    "assets/rig_full/tyrannosaurus_attack_S_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 1607
+    },
+    "assets/rig_full/tyrannosaurus_attack_W_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 1753
+    },
+    "assets/rig_full/tyrannosaurus_attack_W_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 1899
+    },
+    "assets/rig_full/tyrannosaurus_attack_W_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 1753
+    },
+    "assets/rig_full/tyrannosaurus_attack_W_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 1753
+    },
+    "assets/rig_full/tyrannosaurus_attack_W_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 1899
+    },
+    "assets/rig_full/tyrannosaurus_attack_W_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 1899
+    },
+    "assets/rig_full/tyrannosaurus_death_E_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_E_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_E_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_E_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_E_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 585,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_E_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 731,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_N_000.png": {
+      "alias_of": "assets/rig_full/tyrannosaurus_attack_N_005.png",
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_0.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 1461
+    },
+    "assets/rig_full/tyrannosaurus_death_N_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 877,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_N_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1023,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_N_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1169,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_N_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1315,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_N_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_S_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_S_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_S_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 1
+    },
+    "assets/rig_full/tyrannosaurus_death_S_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_death_S_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_death_S_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_death_W_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 585
+    },
+    "assets/rig_full/tyrannosaurus_death_W_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 731
+    },
+    "assets/rig_full/tyrannosaurus_death_W_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 877
+    },
+    "assets/rig_full/tyrannosaurus_death_W_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1023
+    },
+    "assets/rig_full/tyrannosaurus_death_W_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1169
+    },
+    "assets/rig_full/tyrannosaurus_death_W_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1315
+    },
+    "assets/rig_full/tyrannosaurus_hurt_E_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1461
+    },
+    "assets/rig_full/tyrannosaurus_hurt_E_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1607
+    },
+    "assets/rig_full/tyrannosaurus_hurt_N_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1753
+    },
+    "assets/rig_full/tyrannosaurus_hurt_N_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1,
+      "y": 1899
+    },
+    "assets/rig_full/tyrannosaurus_hurt_S_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_hurt_S_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_hurt_W_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_hurt_W_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 585,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_idle_E_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 731,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_idle_E_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 877,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_idle_E_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1023,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_idle_E_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1169,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_idle_N_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1315,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_idle_N_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_idle_N_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_idle_N_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_idle_S_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 147
+    },
+    "assets/rig_full/tyrannosaurus_idle_S_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_idle_S_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_idle_S_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 585
+    },
+    "assets/rig_full/tyrannosaurus_idle_W_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 731
+    },
+    "assets/rig_full/tyrannosaurus_idle_W_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 877
+    },
+    "assets/rig_full/tyrannosaurus_idle_W_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1023
+    },
+    "assets/rig_full/tyrannosaurus_idle_W_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1169
+    },
+    "assets/rig_full/tyrannosaurus_run_E_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1315
+    },
+    "assets/rig_full/tyrannosaurus_run_E_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1461
+    },
+    "assets/rig_full/tyrannosaurus_run_E_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1607
+    },
+    "assets/rig_full/tyrannosaurus_run_E_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1753
+    },
+    "assets/rig_full/tyrannosaurus_run_E_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 147,
+      "y": 1899
+    },
+    "assets/rig_full/tyrannosaurus_run_E_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_N_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_N_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 585,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_N_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 731,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_N_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 877,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_N_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1023,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_N_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1169,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_S_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1315,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_S_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_S_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_S_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_S_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 293
+    },
+    "assets/rig_full/tyrannosaurus_run_S_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_run_W_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 585
+    },
+    "assets/rig_full/tyrannosaurus_run_W_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 731
+    },
+    "assets/rig_full/tyrannosaurus_run_W_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 877
+    },
+    "assets/rig_full/tyrannosaurus_run_W_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1023
+    },
+    "assets/rig_full/tyrannosaurus_run_W_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1169
+    },
+    "assets/rig_full/tyrannosaurus_run_W_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1315
+    },
+    "assets/rig_full/tyrannosaurus_walk_E_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1461
+    },
+    "assets/rig_full/tyrannosaurus_walk_E_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1607
+    },
+    "assets/rig_full/tyrannosaurus_walk_E_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1753
+    },
+    "assets/rig_full/tyrannosaurus_walk_E_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 293,
+      "y": 1899
+    },
+    "assets/rig_full/tyrannosaurus_walk_E_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_E_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 585,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_N_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 731,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_N_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 877,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_N_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1023,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_N_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1169,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_N_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1315,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_N_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1461,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_S_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1607,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_S_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1753,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_S_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 1899,
+      "y": 439
+    },
+    "assets/rig_full/tyrannosaurus_walk_S_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 585
+    },
+    "assets/rig_full/tyrannosaurus_walk_S_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 731
+    },
+    "assets/rig_full/tyrannosaurus_walk_S_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 877
+    },
+    "assets/rig_full/tyrannosaurus_walk_W_000.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1023
+    },
+    "assets/rig_full/tyrannosaurus_walk_W_001.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1169
+    },
+    "assets/rig_full/tyrannosaurus_walk_W_002.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1315
+    },
+    "assets/rig_full/tyrannosaurus_walk_W_003.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1461
+    },
+    "assets/rig_full/tyrannosaurus_walk_W_004.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1607
+    },
+    "assets/rig_full/tyrannosaurus_walk_W_005.png": {
+      "anchor": [
+        72,
+        72
+      ],
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "h": 144,
+      "w": 144,
+      "x": 439,
+      "y": 1753
+    },
     "assets/run_extras/affix_armored.png": {
       "anchor": [
         8,
@@ -56715,7 +58036,7 @@
   "max_dimension": 2048,
   "padding": 1,
   "pixels": "unaltered RGBA; no scaling or palette conversion; exact duplicate aliases only",
-  "png_bytes": 10972158,
+  "png_bytes": 11300279,
   "sheets": [
     {
       "file": "assets/atlases/species_allosaurus_0.png",
@@ -57016,14 +58337,25 @@
     },
     {
       "file": "assets/atlases/species_tyrannosaurus_0.png",
-      "frames": 205,
+      "frames": 216,
       "group": "species_tyrannosaurus",
-      "sha256": "f7bf76b7ef096b7b16542a902edb924b52a6e9522e17a2955b541398971d1ec1",
+      "sha256": "e747a9bb1a8bab9750b84da8b77c6db0c33155344119c0a2f35062203de2a767",
       "size": [
         2044,
         2044
       ],
-      "unique_frames": 189
+      "unique_frames": 199
+    },
+    {
+      "file": "assets/atlases/species_tyrannosaurus_1.png",
+      "frames": 109,
+      "group": "species_tyrannosaurus",
+      "sha256": "aeb57bd4b822304730cc62412f312347b0f26b4289716840083babae1ddcd395",
+      "size": [
+        2044,
+        2044
+      ],
+      "unique_frames": 109
     },
     {
       "file": "assets/atlases/species_utahraptor_0.png",
@@ -57092,6 +58424,6 @@
       "unique_frames": 133
     }
   ],
-  "unique_frames": 4743,
+  "unique_frames": 4862,
   "version": 2
 }

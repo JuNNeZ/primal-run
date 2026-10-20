@@ -1,0 +1,365 @@
+{
+  "species": "tyrannosaurus",
+  "art_status": "prototype_static",
+  "visual_status": "unapproved",
+  "runtime_integration": false,
+  "technical_check": "PASS",
+  "native_png_count": 64,
+  "directions": {
+    "S": {
+      "parts": 15,
+      "visible_foot_pixels": {
+        "foot_L": 42,
+        "foot_R": 42
+      },
+      "joint_overlap_pixels": {
+        "tail1": 116,
+        "tail2": 46,
+        "tail3": 31,
+        "neck": 596,
+        "head": 217,
+        "jaw": 173,
+        "thigh_L": 63,
+        "shin_L": 6,
+        "foot_L": 6,
+        "thigh_R": 71,
+        "shin_R": 9,
+        "foot_R": 4,
+        "arm_L": 11,
+        "arm_R": 26
+      },
+      "full_sha256": "8d59cd75307c83774569c755ac34d9ad6a0f1e9f9fca27266b41227328049acf"
+    },
+    "N": {
+      "parts": 15,
+      "visible_foot_pixels": {
+        "foot_L": 20,
+        "foot_R": 8
+      },
+      "joint_overlap_pixels": {
+        "tail1": 99,
+        "tail2": 49,
+        "tail3": 31,
+        "neck": 369,
+        "head": 124,
+        "jaw": 149,
+        "thigh_L": 54,
+        "shin_L": 28,
+        "foot_L": 8,
+        "thigh_R": 48,
+        "shin_R": 24,
+        "foot_R": 20,
+        "arm_L": 14,
+        "arm_R": 15
+      },
+      "full_sha256": "dc645c6f21321e033d7202402bdde8b3ec44d7549aab4be2716786a52aab6fbd"
+    },
+    "E": {
+      "parts": 15,
+      "visible_foot_pixels": {
+        "foot_L": 0,
+        "foot_R": 47
+      },
+      "joint_overlap_pixels": {
+        "tail1": 100,
+        "tail2": 121,
+        "tail3": 80,
+        "neck": 151,
+        "head": 134,
+        "jaw": 64,
+        "thigh_R": 48,
+        "shin_R": 23,
+        "foot_R": 13,
+        "thigh_L": 75,
+        "shin_L": 23,
+        "foot_L": 13,
+        "arm_R": 21,
+        "arm_L": 29
+      },
+      "full_sha256": "441bceb7f7f74be03162867a1e757047e75eb6b8dd59d5e6106180879c69ad44"
+    },
+    "W": {
+      "parts": 15,
+      "visible_foot_pixels": {
+        "foot_L": 54,
+        "foot_R": 0
+      },
+      "joint_overlap_pixels": {
+        "tail1": 193,
+        "tail2": 85,
+        "tail3": 109,
+        "neck": 102,
+        "head": 156,
+        "jaw": 44,
+        "thigh_L": 72,
+        "shin_L": 26,
+        "foot_L": 8,
+        "thigh_R": 66,
+        "shin_R": 25,
+        "foot_R": 6,
+        "arm_L": 9,
+        "arm_R": 18
+      },
+      "full_sha256": "268e7b613f7c197ec3a9cadc7d5fcc9f5f2bfb9b885377cf63d28389fb261902"
+    }
+  },
+  "rig": {
+    "frames": 120,
+    "motion": "allosaurus",
+    "motion_gain": 1.254,
+    "clipped_frames": [],
+    "command": "python tools/cutout_rig.py --species tyrannosaurus --parts PRIMAL_RUN_Game/Source_Generated/cutout/tyrannosaurus --out /tmp/frames --gif /tmp/gif",
+    "gif_sequences": {
+      "idle_S": {
+        "frames": 4,
+        "duration_ms": [
+          250,
+          250,
+          250,
+          250
+        ]
+      },
+      "idle_N": {
+        "frames": 4,
+        "duration_ms": [
+          250,
+          250,
+          250,
+          250
+        ]
+      },
+      "idle_E": {
+        "frames": 4,
+        "duration_ms": [
+          250,
+          250,
+          250,
+          250
+        ]
+      },
+      "idle_W": {
+        "frames": 4,
+        "duration_ms": [
+          250,
+          250,
+          250,
+          250
+        ]
+      },
+      "walk_S": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "walk_N": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "walk_E": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "walk_W": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "run_S": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "run_N": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "run_E": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "run_W": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "attack_S": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "attack_N": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "attack_E": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "attack_W": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "hurt_S": {
+        "frames": 2,
+        "duration_ms": [
+          120,
+          120
+        ]
+      },
+      "hurt_N": {
+        "frames": 2,
+        "duration_ms": [
+          120,
+          120
+        ]
+      },
+      "hurt_E": {
+        "frames": 2,
+        "duration_ms": [
+          120,
+          120
+        ]
+      },
+      "hurt_W": {
+        "frames": 2,
+        "duration_ms": [
+          120,
+          120
+        ]
+      },
+      "death_S": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "death_N": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "death_E": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "death_W": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      }
+    },
+    "zero_area_joint_overlaps": [],
+    "separated_joints": []
+  },
+  "sources": {
+    "E.png": "7a5a10de14b9a28c22e1b6c42ac6ceba7776120aa28f8479c10f564cb8c0eeda",
+    "N.png": "9a420eec43925896713e9fe515c93ad312152dc4acbfcc3a13fba8d041085531",
+    "S.png": "2eeefe37ab567962e9307d7d61ae57735ade8bf37db0b6458d73b8cf5cecdec1",
+    "W.png": "cb9e80270d8fb6c3327eae5408215a6193fbecae16b27033fd37a5b138140c33",
+    "core.png": "6ff33a7659098d2e9c302733af14c74bc3d692986c659e2a084f9a69f2ff4b5f",
+    "corrections.png": "e1fe22ac61aa038b0ced410ecdb67803bb719a7160d7cb69d36040c19f713f59"
+  }
+}

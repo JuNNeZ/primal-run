@@ -91,6 +91,12 @@ test('rigSprites: every RIG_SPECIES has its 120 rig frames in the game, byte-ide
     }
     assert.equal(C.playerFrame(id, 'walk', 'E', 3), `assets/rig_full/${id}_walk_E_003.png`);
   }
+  // rexCutout: T-rex is an original species, so it gets the cutout frames by its own flag, not the WIP badge
+  const rex = manifest.filter((e) => e.species === 'tyrannosaurus');
+  assert.equal(rex.length, 120);
+  assert.ok(rex.every((e) => e.status === 'prototype_static' && e.production_approved === false && assets.includes('"' + e.file + '"')));
+  assert.ok(!C.STATIC_SPECIES.has('tyrannosaurus'));
+  assert.equal(C.playerFrame('tyrannosaurus', 'death', 'W', 5), 'assets/rig_full/tyrannosaurus_death_W_005.png');
   const {out} = render('leaellynasaura', 'walk,attack');
   for (const name of ['leaellynasaura_walk_E_003.png', 'leaellynasaura_attack_N_003.png'])
     assert.deepEqual(fs.readFileSync(path.join(out, name)), fs.readFileSync(path.join(game, 'assets/rig_full', name)), name);

@@ -1,7 +1,7 @@
 {
   "result": "PASS",
   "copied_assets": 104,
-  "new_combat_assets": 5661,
+  "new_combat_assets": 5781,
   "byte_identical_to_kit": true,
   "errors": [],
   "production_approved": false,
@@ -11,12 +11,12 @@
     "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
     "src/run_extras.js": "fd5c744d8ba596cd695d7dcbdd8733c00d97b940f2fc6f9aa384bf9b1c5ddd1a",
     "src/telemetry.js": "b5cf2a84f30129c0d72874aadc5e6b45b695d1985856484be580004e76426b9c",
-    "src/core.js": "a8a400d3a005feba7ce99ed325263343bd80f7f30566f16ac8bb85d17a1b0fc1",
+    "src/core.js": "06cd2efaa1d60cfe1e1db695dfce3034a2bd5cfac77adf0f7f9b425aa7631e14",
     "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
     "src/lang.js": "d0e68920f86d1446bfe31d964a57ed931ccfb6c129b12f2835cd1e8abbe50fe0",
-    "src/assets.js": "9b9480ae9340b9e1d2f255e722fb96931191f1b5d4cbb8b3dbe0b0cd2cbca892",
+    "src/assets.js": "acb1fe36ba82868ac5949739b9786438276b44c2670cbb9a18cf0ffd2b97dffc",
     "src/audio.js": "f7763a55aae0c0b249b8c470b55baa44078b59d326f39380a3f60bdcd541f500",
-    "src/app.js": "ea13902bef08d406f92be11ff20f7e94f30f72060ab0145f019486aeb3aa7e16",
+    "src/app.js": "b23ac919395613151b5b8d731d0f4f57b421d780f3897c801bbda0769776aac5",
     "style.css": "266e7dda4b2f027083ac22c848c77e190399e5b7cb8c2fd13e5765e4ffeef2c3"
   }
 }
