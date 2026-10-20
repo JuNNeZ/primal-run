@@ -122,6 +122,48 @@ def turn_point(p, deg):
     return [x, y]
 
 
+def blobs(mask):
+    """4-connected components of a boolean mask, as lists of (y, x)."""
+    seen = np.zeros_like(mask)
+    out = []
+    for y, x in zip(*np.nonzero(mask)):
+        if seen[y, x]:
+            continue
+        seen[y, x] = True
+        stack, pts = [(y, x)], []
+        while stack:
+            cy, cx = stack.pop()
+            pts.append((cy, cx))
+            for ny, nx in ((cy + 1, cx), (cy - 1, cx), (cy, cx + 1), (cy, cx - 1)):
+                if 0 <= ny < 144 and 0 <= nx < 144 and mask[ny, nx] and not seen[ny, nx]:
+                    seen[ny, nx] = True
+                    stack.append((ny, nx))
+        out.append(pts)
+    return out
+
+
+def adopt_strays(top, on, n_parts):
+    """A part keeps only its largest blob; a loose bit (a thumb spike the template put in the neck) goes to the
+    part it touches most, so it moves with that limb instead of floating.  Returns per part the pixels it lost."""
+    moved = [np.zeros_like(on) for _ in range(n_parts)]
+    for i in range(n_parts):
+        parts = sorted(blobs(top == i), key=len, reverse=True)
+        for pts in parts[1:]:
+            votes = {}
+            for y, x in pts:
+                for ny, nx in ((y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)):
+                    j = top[ny, nx]
+                    if j >= 0 and j != i:
+                        votes[j] = votes.get(j, 0) + 1
+            if not votes:
+                continue
+            j = max(votes, key=votes.get)
+            for y, x in pts:
+                top[y, x] = j
+                moved[i][y, x] = True
+    return moved
+
+
 def cut(sid, folder, spec, out_dir):
     tmpl = template(sid)
     tspec = json.loads((tmpl / f'{sid}_parts.json').read_text())
@@ -142,10 +184,11 @@ def cut(sid, folder, spec, out_dir):
         for y, x in zip(*np.nonzero(on & (top < 0))):  # painted outside the template: nearest template part
             k = ((ys - y) ** 2 + (xs - x) ** 2).argmin()
             top[y, x] = top[ys[k], xs[k]]
+        moved = adopt_strays(top, on, len(order))
         full = np.zeros_like(a)
         meta = {}
         for i, n in enumerate(order):
-            m = (masks[n] | (top == i)) & on
+            m = ((masks[n] & ~moved[i]) | (top == i)) & on
             part = np.where(m[..., None], a, 0).astype(np.uint8)
             full[m] = part[m]
             Image.fromarray(part).save(out_dir / f'{sid}_{d}_{n}.png')
