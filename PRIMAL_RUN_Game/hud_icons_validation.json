@@ -1,10 +1,13 @@
 {
   "result": "PASS",
-  "files": 30,
+  "files": 57,
   "groups": {
     "relics": 20,
     "sets": 4,
-    "loot": 6
+    "loot": 6,
+    "rarity": 7,
+    "tags": 6,
+    "mutations": 14
   },
   "errors": [],
   "production_approved": false,
@@ -429,6 +432,384 @@
         24
       ],
       "colors": 6
+    },
+    {
+      "id": "common",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 3
+    },
+    {
+      "id": "uncommon",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 4
+    },
+    {
+      "id": "rare",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 4
+    },
+    {
+      "id": "epic",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 4
+    },
+    {
+      "id": "legendary",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 5
+    },
+    {
+      "id": "evolution",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 4
+    },
+    {
+      "id": "trophy",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        3,
+        2,
+        13,
+        14
+      ],
+      "colors": 6
+    },
+    {
+      "id": "attack",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        3,
+        2,
+        13,
+        14
+      ],
+      "colors": 4
+    },
+    {
+      "id": "defense",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        3,
+        3,
+        12,
+        14
+      ],
+      "colors": 4
+    },
+    {
+      "id": "speed",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 5
+    },
+    {
+      "id": "ability",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        3,
+        3,
+        13,
+        13
+      ],
+      "colors": 5
+    },
+    {
+      "id": "food",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        3,
+        13,
+        13
+      ],
+      "colors": 5
+    },
+    {
+      "id": "crit",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        4,
+        14,
+        13
+      ],
+      "colors": 5
+    },
+    {
+      "id": "bleed",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        8,
+        5,
+        26,
+        28
+      ],
+      "colors": 5
+    },
+    {
+      "id": "crit_claw",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        3,
+        5,
+        28,
+        27
+      ],
+      "colors": 5
+    },
+    {
+      "id": "tail",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        3,
+        6,
+        29,
+        27
+      ],
+      "colors": 5
+    },
+    {
+      "id": "horn",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        6,
+        3,
+        27,
+        29
+      ],
+      "colors": 5
+    },
+    {
+      "id": "frill",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        3,
+        4,
+        30,
+        27
+      ],
+      "colors": 6
+    },
+    {
+      "id": "fish_hook",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        21,
+        29
+      ],
+      "colors": 4
+    },
+    {
+      "id": "plant",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        7,
+        2,
+        27,
+        29
+      ],
+      "colors": 6
+    },
+    {
+      "id": "iron_stomach",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        5,
+        4,
+        29,
+        28
+      ],
+      "colors": 6
+    },
+    {
+      "id": "pack_call",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        5,
+        30,
+        25
+      ],
+      "colors": 7
+    },
+    {
+      "id": "roar",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        5,
+        6,
+        30,
+        27
+      ],
+      "colors": 8
+    },
+    {
+      "id": "pounce",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        3,
+        6,
+        30,
+        29
+      ],
+      "colors": 5
+    },
+    {
+      "id": "stealth",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        5,
+        8,
+        28,
+        25
+      ],
+      "colors": 5
+    },
+    {
+      "id": "carrion",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        5,
+        5,
+        27,
+        27
+      ],
+      "colors": 5
+    },
+    {
+      "id": "ability_spark",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "colors": 5
     }
   ]
 }

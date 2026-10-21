@@ -34,7 +34,9 @@ listed={e['file'] for e in entries}
 actual={p.relative_to(GAME).as_posix() for p in (GAME/'assets/hud_icons').rglob('*.png')}
 if listed!=actual or len(listed)!=len(entries): errors.append('inventory/duplicate mismatch')
 expected={'relics':20,'sets':4,'loot':6}
-if {g:sum(e['group']==g for e in entries) for g in expected}!=expected: errors.append('A-C group counts')
+for group,count in {'rarity':7,'tags':6,'mutations':14,'ui':13,'difficulty':2,'future':8}.items():
+    if any(e['group']==group for e in entries): expected[group]=count
+if {g:sum(e['group']==g for e in entries) for g in expected}!=expected: errors.append('group counts')
 frame=Image.open(GAME/'assets/hud_icons/loot/reel_frame.png')
 if frame.crop((8,8,16,16)).getbbox(): errors.append('9-slice center not transparent')
 for box in [(8,0,16,8),(8,16,16,24)]:

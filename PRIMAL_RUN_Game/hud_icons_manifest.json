@@ -628,5 +628,572 @@
     "sha256": "6078c60d3adfe4cfabe06510e363b64cee789635ac777e2e01acdbfc37f460ee",
     "source_pixels": "Source_Generated/hud_icons/native_pixels_ac.json",
     "source_sha256": "a55eee6fe3edb6079fc8ddd84c59c369231c03bfe15ee3ac32a3657a37e16b5a"
+  },
+  {
+    "file": "assets/hud_icons/rarity/common.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "rarity",
+    "id": "common",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "a24dd5e3f9ba19a245494e2f89c09a76992340cfa25e272c3b138d4491731c45",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/rarity/uncommon.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "rarity",
+    "id": "uncommon",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "34ed178ceecab30d1a652b216ae72c859a47ccf27297b111b1a6564ed09da76f",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/rarity/rare.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "rarity",
+    "id": "rare",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "14ce93decc0fde1c1046eb7a17a3ca441078c696b9f812ff343a68220522e5c4",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/rarity/epic.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "rarity",
+    "id": "epic",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "cd31887d0c153f3e1fd37b9c75e7e3f0dfa62f740495ddef28041a242dca1caa",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/rarity/legendary.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "rarity",
+    "id": "legendary",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "c1c4e46f950e7da8e09846747c6a545914c76a7897e73699019b459c55b11be2",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/rarity/evolution.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "rarity",
+    "id": "evolution",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "06615875b26f80a5ad87c704a540037b587676ebc731baf34e815fc2dd54b10d",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/rarity/trophy.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "rarity",
+    "id": "trophy",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "313c15c5932eb6cb95d7428929565475ba1590fa80c93fd61badbf60aecb5123",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/tags/attack.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "tags",
+    "id": "attack",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "2efcbdc2d3375690b2adb6d1500f46e62d3e152215f481c0fe1609287e105d50",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/tags/defense.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "tags",
+    "id": "defense",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "9792a77d9f7bba16efae48f64cf1540ab21eafe4d00e8ca10d18effc50dcbe7c",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/tags/speed.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "tags",
+    "id": "speed",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "306ec040975f9629b1a0fee7efa05b4e8c367781f176beeb2c57af1171cbdcd2",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/tags/ability.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "tags",
+    "id": "ability",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "55fb8afa39285731551eb781f88f489f85b883edd5ba0ef0378c8667b9ce55ff",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/tags/food.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "tags",
+    "id": "food",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "acd962276f6fa94d2bf9eac18a6aa39efa8917485cc6b7fe9df00a57013d47c5",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/tags/crit.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "tags",
+    "id": "crit",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "7709a79f8de49e97d0f8a0a40b2fa825f874d7a9455aab3ab0c8fc705907f679",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/bleed.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "bleed",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "d0cf9c8cc31d5b4c819b746684171b0acfeaa4fb4ac72faf147456c8242ab3ca",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/crit_claw.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "crit_claw",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "ec83da32a2cf000860e16799033d8a5f9dbab7f4766ce7b410a15c75edc67938",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/tail.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "tail",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "1669eefd8124a5d2cb1418820f4b4f576660258de24dcca3b8383f4961bd9dce",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/horn.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "horn",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "5d5e82276cc9127c7c07bda3fc933e440f60314d42932e7f15034d06326c7e77",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/frill.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "frill",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "de0061129f7cf792c63236fbb361034350aea192697bd1b336ddaaf9d8568c18",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/fish_hook.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "fish_hook",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "0f8716c5bb8cc670065864e16a7260f9b74ce027c9b9f0774375525378b59831",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/plant.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "plant",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "458ede5a88e2d9986f5a8655f31f605cd8308c09c17978d6461c8bd8ba7e5bd7",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/iron_stomach.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "iron_stomach",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "7314e87bab5c86bd3f79183378871e8d54177ceeadc730bf7fbfc6fefbf5ef9a",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/pack_call.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "pack_call",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "9f97cfedfb89288437a3772cb38cd5c06670d78a4e59c8f4d978afd56270d270",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/roar.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "roar",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "9c89b8ea19688b0fc7fbe2e8ebb1a138f12e55b35e4796f5b714d25dcc7c9cea",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/pounce.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "pounce",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "3ab6a7a5d439a3709369201a21a007b7e84a6ac2230577b8ec0a51929b2897c6",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/stealth.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "stealth",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "346a42e4a17950374c75aae5dc2702287c12adfc8729cb8e35657b07d6c9a8fd",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/carrion.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "carrion",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "29764b16fc42cf5bcd16789ddeffe7b0c3d9d57a4ce5674e8989929316e755f8",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
+  },
+  {
+    "file": "assets/hud_icons/mutations/ability_spark.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "mutations",
+    "id": "ability_spark",
+    "palette": "Primal Earth 32",
+    "status": "prototype_static",
+    "production_approved": false,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "tools/draw_hud_icons_remaining.py: native integer pixel geometry; no resizing",
+    "sha256": "457fa8a272c3863821db97ea181eb778e1c1d488f46231dcd7392e03d438e629",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_def.json",
+    "source_sha256": "186ba69906ee058247adbd1ebc37094ae286e81647ab52f2fdd5dff6375d9815"
   }
 ]

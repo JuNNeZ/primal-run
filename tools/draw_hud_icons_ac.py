@@ -294,6 +294,8 @@ LOOT={'luck':24,'luck_card':32,'armor_points':24,'nest_cache':32,'relic_drop':24
 
 
 def main():
+    manifest_file=GAME/'hud_icons_manifest.json'
+    remaining=[e for e in json.loads(manifest_file.read_text()) if e['group'] not in ('relics','sets','loot')] if manifest_file.exists() else []
     entries=[]
     for group,items in [('relics',[(name,n) for name in RELICS for n in (32,16)]),('sets',[(name,24) for name in SETS]),('loot',list(LOOT.items()))]:
         (OUT/group).mkdir(parents=True,exist_ok=True)
@@ -313,8 +315,8 @@ def main():
     source_hash=hashlib.sha256(source_file.read_bytes()).hexdigest()
     for e in entries:
         e.update(source_pixels='Source_Generated/hud_icons/native_pixels_ac.json',source_sha256=source_hash)
-    (GAME/'hud_icons_manifest.json').write_text(json.dumps(entries,indent=2)+'\n',encoding='utf-8')
-    preview(entries)
+    (GAME/'hud_icons_manifest.json').write_text(json.dumps(entries+remaining,indent=2)+'\n',encoding='utf-8')
+    preview(entries+remaining)
     print(f'Wrote {len(entries)} native PNGs. All prototype_static.')
 
 
@@ -322,9 +324,9 @@ def preview(entries):
     # Every file appears at 1x and 4x, on both specified backgrounds.
     font=ImageFont.load_default()
     w,h=280,205
-    sheet=Image.new('RGB',(w*5,60+h*6),'#101713')
+    sheet=Image.new('RGB',(w*5,60+h*((len(entries)+4)//5)),'#101713')
     d=ImageDraw.Draw(sheet)
-    d.text((12,10),'PRIMAL RUN / A-C / NATIVE PNG REVIEW / PROTOTYPE_STATIC',font=font,fill=WHITE)
+    d.text((12,10),'PRIMAL RUN / NATIVE PNG REVIEW / PROTOTYPE_STATIC',font=font,fill=WHITE)
     d.text((12,30),'Each file: 1x + 4x on dark and light. No runtime integration. Awaiting Jonas review.',font=font,fill=STONE)
     for i,e in enumerate(entries):
         x=(i%5)*w; y=60+(i//5)*h
