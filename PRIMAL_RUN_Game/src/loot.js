@@ -225,6 +225,13 @@
       { id: 'meat', rarity: 3, weight: 2 },
       { id: 'heal', weight: 2 },
     ] }] },
+    // Ravalter (FEATURES.currencies): one roll per purchase with rav, plus luck rolls like the nest cache.
+    amber_altar: { pools: [{ rolls: 1, unique: true, bonusRollsPerLuck: 1, entries: [
+      { id: 'relic', weight: 2, when: { flag: 'relics' } },
+      { id: 'dna', count: [3, 5], weight: 3 },
+      { id: 'meat', rarity: 3, weight: 2 },
+      { id: 'heal', weight: 2 },
+    ] }] },
     meat_common: meatTier('meat'), meat_uncommon: meatTier('meat'), meat_rare: meatTier('meat'), meat_epic: meatTier('meat'),
   };
 

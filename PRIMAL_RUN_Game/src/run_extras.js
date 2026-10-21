@@ -81,6 +81,9 @@
   // +6 max health, up to 3 times. Jernmave (ironStomach) shrugs it off: no risk, no reward.
   const ROTTEN = { seconds: 60, taken: 1.3, maxHealth: 6, max: 3 };
   const TAR_TOTEM = { fromLevel: 1, minDistance: 700, reach: 70, hp: 1.25 };
+  // FEATURES.currencies: one amber altar per journey level, placed from the run seed (not the main random stream).
+  // E with enough rav buys a loot roll (GAME_TABLES.amber_altar); the price grows ×1,4 and the altar closes after 2 buys.
+  const ALTAR = { minDistance: 500, reach: 70 };
   const AMBER = { dna: 3, minDistance: 900, reach: 70, glint: 260, ring: [60, 85, 110], margin: 14, hint: 400 };
 
   function install(C) {
@@ -129,6 +132,18 @@
         const far = r.map.habitats.filter(h => ground(h) && dist(h, r.player) > TAR_TOTEM.minDistance && !(r.map.sites || []).some(s => dist(s, h) < 120));
         const h = far.length ? far[((r.seed >>> 0) + 7919 * r.levelIndex) % far.length] : null;
         if (h) r.tarTotem = { x: Math.round(h.x - 20), y: Math.round(h.y + 16), level: r.levelIndex, pact: false };
+      }
+      r.amberAltar = null;
+      if (F.currencies && F.lootTables && r.campaign === C.LEVELS) {
+        const spots = r.map.habitats.filter(h => ground(h) && dist(h, r.player) > ALTAR.minDistance && !(r.map.sites || []).some(s => dist(s, h) < 120) && !(r.tarTotem && dist(r.tarTotem, h) < 200));
+        // Start at a seeded habitat and take the first ring spot that no tree, bush or rock is drawn over (as for amber).
+        const k = spots.length ? ((r.seed >>> 0) + 104729 * (r.levelIndex + 1)) % spots.length : 0, order = [...spots.slice(k), ...spots.slice(0, k)].slice(0, 40);
+        let p = null;
+        find: for (const h of order) for (const radius of AMBER.ring) for (let i = 0; i < 12; i++) {
+          const q = { x: Math.round(h.x + Math.cos(i * Math.PI / 6) * radius), y: Math.round(h.y + Math.sin(i * Math.PI / 6) * radius) };
+          if (dist(q, r.player) > ALTAR.minDistance && amberClear(r, q)) { p = q; break find; }
+        }
+        if (p) r.amberAltar = { x: p.x, y: p.y, level: r.levelIndex, buys: 0, price: C.CURRENCY.altar.price };
       }
       r.powerups = [];
       if (F.powerups) {
@@ -350,12 +365,21 @@
         this.addDNA(AMBER.dna, true); this.save.lifetime.amber = (this.save.lifetime.amber || 0) + 1; this.persist();
         r.effects.push({ x: r.player.x, y: r.player.y - 36, text: 'RAV FUNDET · ' + x.amber + '/' + C.LEVELS.length, color: '#dfbc52', life: 1.8 });
         this.emit('amber', { count: x.amber });
+        if (F.currencies) this.earnCurrency('rav', 1, r.player.x, r.player.y - 20);
         return true;
       }
       if (F.tarTotem && r && this.phase === 'playing' && r.tarTotem && !r.tarTotem.pact && !r.bossSpawned && dist(r.tarTotem, r.player) < TAR_TOTEM.reach) {
         r.tarTotem.pact = true; r.stats.tarPacts = (r.stats.tarPacts || 0) + 1;
         r.effects.push({ x: r.player.x, y: r.player.y - 36, text: 'TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT', color: '#bb80d9', life: 2.2 });
         this.emit('tar_pact', { level: r.levelIndex });
+        return true;
+      }
+      const altar = r && r.amberAltar;
+      if (F.currencies && F.lootTables && altar && this.phase === 'playing' && altar.buys < C.CURRENCY.altar.buys && dist(altar, r.player) < ALTAR.reach) {
+        const cur = r.currency || (r.currency = { rav: 0, fossils: 0, iridium: 0 });
+        if (cur.rav < altar.price) { this.emit('altar_poor', { price: altar.price, rav: cur.rav }); return true; }
+        cur.rav -= altar.price; altar.buys++; altar.price = Math.ceil(altar.price * C.CURRENCY.altar.grow); r.stats.altarBuys = (r.stats.altarBuys || 0) + 1;
+        this.openNestCache({ x: altar.x, y: altar.y + 10, id: 'altar' + altar.level + ':' + altar.buys }, { table: 'amber_altar', event: 'amber_altar', label: 'Ravalter', source: 'altar' });
         return true;
       }
       return interact.call(this);
@@ -517,11 +541,11 @@
     };
 
     // Exposed for the renderer, the HUD and tests.
-    Object.assign(C, { CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, ROTTEN, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
+    Object.assign(C, { ALTAR, CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, ROTTEN, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
       extrasOf: r => r && r.extras || null,
       streakOf: r => (r && r.extras && F.huntStreak ? r.extras.streak : 0),
       buffsOf: r => (r && r.extras ? Object.entries(r.extras.buffs).filter(([, t]) => t > 0).map(([type, time]) => ({ type, time })) : []) });
   }
 
-  return { install, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, ROTTEN, BABY, CIRCADIAN, AMBER };
+  return { install, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, ROTTEN, ALTAR, BABY, CIRCADIAN, AMBER };
 });

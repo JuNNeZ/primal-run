@@ -206,5 +206,117 @@
  {
   "da": "HÆRDET MAVE · +# maksimalt liv",
   "en": "HARDENED GUT · +# max health"
+ },
+ {
+  "da": "DEL RESULTAT",
+  "en": "SHARE RESULT"
+ },
+ {
+  "da": "Resultatet er kopieret",
+  "en": "Result copied"
+ },
+ {
+  "da": "Kopiér teksten herunder",
+  "en": "Copy the text below"
+ },
+ {
+  "da": "Bane {0}/{1}",
+  "en": "Level {0}/{1}"
+ },
+ {
+  "da": "Score {0} · tid {1}",
+  "en": "Score {0} · time {1}"
+ },
+ {
+  "da": "Ekstinktionstryk",
+  "en": "Extinction pressure"
+ },
+ {
+  "da": "Hvert trin giver dyr og bosser +{0} % liv og +{1} % skade. Du får +{2} % held og +{3} % DNA. Vind en jagt for at åbne næste trin.",
+  "en": "Each step gives animals and bosses +{0} % health and +{1} % damage. You get +{2} % luck and +{3} % DNA. Win a hunt to open the next step."
+ },
+ {
+  "da": "Startrelikvie",
+  "en": "Starting relic"
+ },
+ {
+  "da": "{0} fossiler",
+  "en": "{0} fossils"
+ },
+ {
+  "da": "{0} iridium",
+  "en": "{0} iridium"
+ },
+ {
+  "da": "Intet",
+  "en": "None"
+ },
+ {
+  "da": "{0} fossiler · Sjælden",
+  "en": "{0} fossils · Rare"
+ },
+ {
+  "da": "{0} iridium · Episk",
+  "en": "{0} iridium · Epic"
+ },
+ {
+  "da": "Fossiler får du ved fossilfund, iridium for en vundet jagt og for legendariske relikvier. Rav får du fra bosser og ravstykker, og du bruger det ved banens ravalter.",
+  "en": "You get fossils from fossil finds, and iridium for a won hunt and for legendary relics. Amber comes from bosses and amber pieces, and you spend it at the level's amber altar."
+ },
+ {
+  "da": "Ekstinktionstryk {0} · +{1} DNA",
+  "en": "Extinction pressure {0} · +{1} DNA"
+ },
+ {
+  "da": "Trin {0} er åbnet",
+  "en": "Step {0} is open"
+ },
+ {
+  "da": "+{0} fossiler",
+  "en": "+{0} fossils"
+ },
+ {
+  "da": "+{0} iridium",
+  "en": "+{0} iridium"
+ },
+ {
+  "da": "RAVALTER · LUKKET",
+  "en": "AMBER ALTAR · CLOSED"
+ },
+ {
+  "da": "RAVALTER · # RAV",
+  "en": "AMBER ALTAR · # AMBER"
+ },
+ {
+  "da": "RAVALTER · {0} FUND",
+  "en": "AMBER ALTAR · {0} FINDS"
+ },
+ {
+  "da": "RAVALTER · Kræver {0} rav, du har {1}",
+  "en": "AMBER ALTAR · Needs {0} amber, you have {1}"
+ },
+ {
+  "da": "IRIDIUM · +{0}",
+  "en": "IRIDIUM · +{0}"
+ },
+ {
+  "da": "TRYK",
+  "en": "PRESSURE"
+ },
+ {
+  "da": "Ravalter",
+  "en": "Amber altar"
+ },
+ {
+  "da": "+# RAV",
+  "en": "+# AMBER"
+ },
+ {
+  "da": "+# FOSSIL",
+  "en": "+# FOSSIL"
+ },
+ {
+  "da": "+# IRIDIUM",
+  "en": "+# IRIDIUM"
  }
 ]
