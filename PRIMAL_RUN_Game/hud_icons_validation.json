@@ -1,13 +1,16 @@
 {
   "result": "PASS",
-  "files": 57,
+  "files": 80,
   "groups": {
     "relics": 20,
     "sets": 4,
     "loot": 6,
     "rarity": 7,
     "tags": 6,
-    "mutations": 14
+    "mutations": 14,
+    "ui": 13,
+    "difficulty": 2,
+    "future": 8
   },
   "errors": [],
   "production_approved": false,
@@ -810,6 +813,328 @@
         28
       ],
       "colors": 5
+    },
+    {
+      "id": "sneak",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        4,
+        4,
+        20,
+        20
+      ],
+      "colors": 4
+    },
+    {
+      "id": "ability_stamina",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        6,
+        3,
+        19,
+        22
+      ],
+      "colors": 3
+    },
+    {
+      "id": "dna_lab",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        2,
+        3,
+        22,
+        21
+      ],
+      "colors": 5
+    },
+    {
+      "id": "species_book",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        5,
+        21,
+        21
+      ],
+      "colors": 7
+    },
+    {
+      "id": "title_book",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        5,
+        21,
+        21
+      ],
+      "colors": 6
+    },
+    {
+      "id": "records",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        4,
+        22,
+        21
+      ],
+      "colors": 6
+    },
+    {
+      "id": "challenges",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        4,
+        4,
+        21,
+        21
+      ],
+      "colors": 5
+    },
+    {
+      "id": "settings",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        3,
+        21,
+        22
+      ],
+      "colors": 5
+    },
+    {
+      "id": "achievement",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        4,
+        21,
+        22
+      ],
+      "colors": 5
+    },
+    {
+      "id": "rival",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        3,
+        21,
+        22
+      ],
+      "colors": 5
+    },
+    {
+      "id": "toxic",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        4,
+        22,
+        21
+      ],
+      "colors": 7
+    },
+    {
+      "id": "ash",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        4,
+        2,
+        22,
+        19
+      ],
+      "colors": 6
+    },
+    {
+      "id": "locked",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        4,
+        3,
+        20,
+        21
+      ],
+      "colors": 5
+    },
+    {
+      "id": "normal",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        4,
+        3,
+        21,
+        21
+      ],
+      "colors": 6
+    },
+    {
+      "id": "extinction",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        2,
+        2,
+        22,
+        22
+      ],
+      "colors": 8
+    },
+    {
+      "id": "amber_chip",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        3,
+        21,
+        22
+      ],
+      "colors": 6
+    },
+    {
+      "id": "fossil_chip",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        3,
+        21,
+        22
+      ],
+      "colors": 5
+    },
+    {
+      "id": "iridium_chip",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        3,
+        21,
+        22
+      ],
+      "colors": 7
+    },
+    {
+      "id": "tar_totem",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        2,
+        3,
+        22,
+        22
+      ],
+      "colors": 6
+    },
+    {
+      "id": "rotten_meat",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        3,
+        22,
+        21
+      ],
+      "colors": 6
+    },
+    {
+      "id": "bounty_target",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        2,
+        2,
+        22,
+        22
+      ],
+      "colors": 6
+    },
+    {
+      "id": "daily_hunt",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        3,
+        21,
+        21
+      ],
+      "colors": 5
+    },
+    {
+      "id": "extinction_pressure",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        3,
+        3,
+        22,
+        22
+      ],
+      "colors": 7
     }
   ]
 }
