@@ -2451,7 +2451,7 @@
   Game.prototype.luck=function(){return runLuck(this.run);};
   // FEATURES.lootReveal (loot step 4): presentation only. The tier is already rolled; the app spins a reel top-down
   // (Legendarisk first) and locks on it. big:true (relics, caches, bosses) pauses the world in the app, small does not.
-  Game.prototype.revealLoot=function(tier,{ceiling=4,kind='loot',label='',big=false}={}){if(FEATURES.lootReveal)this.emit('loot_reveal',{tier,ceiling,kind,label,big});};
+  Game.prototype.revealLoot=function(tier,{ceiling=4,kind='loot',label='',big=false,icon=''}={}){if(FEATURES.lootReveal)this.emit('loot_reveal',{tier,ceiling,kind,label,big,icon});};
   // FEATURES.armorPoints (loot step 2): every armor source adds points and damage taken is K/(armor+K), so a point is
   // worth the same however many you have and it never reaches 100 %. 10 per Sej hud rank keeps today's feel (×1.10/1.20/1.30
   // survival vs ×1.09/1.19/1.32). r.armorBonus is for relics (step 3).
@@ -2491,7 +2491,7 @@
     if(drop.id==='dna'){this.addDNA(drop.count);this.revealLoot(tier,{big:true,kind:'relic',label:'+'+drop.count+' DNA'});return {id:'dna',count:drop.count,tier};}
     const relic=RELICS[drop.id];r.relics[drop.id]=true;r.stats.relics=(r.stats.relics||0)+1;
     if(relic.maxHealth){r.maxHealth+=relic.maxHealth;r.health+=relic.maxHealth;}
-    this.emit('relic',{id:drop.id,name:relic.name,tier,source});this.revealLoot(tier,{big:true,kind:'relic',label:relic.name});
+    this.emit('relic',{id:drop.id,name:relic.name,tier,source});this.revealLoot(tier,{big:true,kind:'relic',label:relic.name,icon:'relics/'+drop.id});
     this.checkAchievements();return {id:drop.id,tier};
   };
   // Panser 3: part of every hit taken goes back to the animal that dealt it (not hazards or thorns).
@@ -2514,7 +2514,7 @@
         else r.pickups.push({id:++this.nextId,kind:'meat',rarity:3,value,x,y});got.push('meat');}
     });
     r.stats.nestCaches=(r.stats.nestCaches||0)+1;this.emit('nest_cache',{count:got.length,items:got});
-    if(!got.includes('relic'))this.revealLoot(got.includes('meat')?3:2,{big:true,kind:'cache',label:'Rede-kiste'});
+    if(!got.includes('relic'))this.revealLoot(got.includes('meat')?3:2,{big:true,kind:'cache',label:'Rede-kiste',icon:'loot/nest_cache'});
     return got;
   };
   const exploreCache=Game.prototype.explore;

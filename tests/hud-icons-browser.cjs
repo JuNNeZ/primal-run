@@ -21,6 +21,18 @@ const assert=require('node:assert/strict'),path=require('node:path');const {chro
  await shot('hud_icons_build');
  const build=await icons();for(const want of ['relics/osteoderm_plates.png','relics/meteor_shard.png','sets/set_armor.png','sets/set_hunter.png','relics/keen_eye_16.png'])assert.ok(build.some(i=>i.src.endsWith(want)),want);
  assert.ok(build.every(i=>i.ok),JSON.stringify(build.filter(i=>!i.ok)));
+ // the reel shows rarity gems while spinning and the relic itself when it locks
+ const reel=await page.evaluate(()=>{const F=PrimalCore.FEATURES,g=primalRun.game;F.lootReveal=true;g.phase='playing';primalRun.update(performance.now());const t0=performance.now();
+   g.revealLoot(3,{big:true,kind:'relic',label:'Seglklo',icon:'relics/sickle_claw'});primalRun.update(t0);primalRun.update(t0+2000);
+   const b=[...document.querySelectorAll('.loot-reel b')];return {first:b[0].querySelector('img')?.getAttribute('src'),last:b.pop().querySelector('img')?.getAttribute('src')};});
+ assert.deepEqual(reel,{first:'assets/hud_icons/rarity/legendary.png',last:'assets/hud_icons/relics/sickle_claw.png'});
+ await shot('hud_icons_reel');
+ // main menu: menu glyphs and difficulty icons
+ await page.evaluate(()=>{const g=primalRun.game;PrimalCore.FEATURES.difficulties=true;g.abandon();primalRun.update(performance.now());});
+ await page.waitForTimeout(100);await shot('hud_icons_menu');
+ const menu=await icons();for(const want of ['ui/dna_lab.png','ui/achievement.png','ui/settings.png','ui/records.png','difficulty/normal.png','difficulty/extinction.png'])assert.ok(menu.some(i=>i.src.endsWith(want)),want);
+ assert.ok(menu.every(i=>i.ok),JSON.stringify(menu.filter(i=>!i.ok)));
+ assert.equal(await page.evaluate(()=>document.querySelector('.menu-grid').textContent.includes('⬡')),false,'glyph replaced');
  assert.deepEqual(errors,[]);
- console.log('PASS: HUD icons · glyphs with the flag off · rarity gems and tags on cards · relic and set icons on the build screen · relic chip · all '+build.length+' icons load · no page errors');
+ console.log('PASS: HUD icons · glyphs with the flag off · rarity gems and tags on cards · relic and set icons on the build screen · relic chip · reel gems + relic · menu and difficulty icons · all icons load · no page errors');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1);});

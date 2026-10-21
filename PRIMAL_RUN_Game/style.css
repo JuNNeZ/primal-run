@@ -268,3 +268,6 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .rarity-name img.hud-icon,.mutation-tag img.hud-icon,.set-progress img.hud-icon{height:16px}
 .relic-card strong img.hud-icon{height:32px}.set-card strong img.hud-icon{height:24px}
 .relic-count img.hud-icon{height:16px;margin-right:2px}
+.loot-reel.locked b:last-child img.hud-icon{height:32px}
+.difficulty-pick img.hud-icon{height:24px}
+.menu-grid img.hud-icon{height:24px}
