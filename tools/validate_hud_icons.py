@@ -1,4 +1,4 @@
-"""Independent native PNG and source integrity gate; no visual approval implied."""
+"""Independent native PNG and source integrity gate. Approval comes only from approval.json (Jonas), never from these checks."""
 from pathlib import Path
 import hashlib
 import json
@@ -9,6 +9,9 @@ GAME=ROOT/'PRIMAL_RUN_Game'
 entries=json.loads((GAME/'hud_icons_manifest.json').read_text(encoding='utf-8'))
 palette={tuple(bytes.fromhex(c[1:])) for c in json.loads((GAME/'palette.json').read_text())['colors']}
 errors=[]
+# Jonas' visual approval lives in assets/hud_icons/approval.json, tied to each PNG hash, so a redraw drops it again.
+approval_file=GAME/'assets/hud_icons/approval.json'
+approval=json.loads(approval_file.read_text(encoding='utf-8')) if approval_file.exists() else {'icons':{}}
 details=[]
 for e in entries:
     file=GAME/e['file']
@@ -18,7 +21,8 @@ for e in entries:
     if not all(p[3] in (0,255) for p in pixels): errors.append(e['id']+': alpha')
     if not all(p[:3] in palette for p in pixels if p[3]): errors.append(e['id']+': palette')
     if not all(p[:3]==(0,0,0) for p in pixels if not p[3]): errors.append(e['id']+': transparent RGB')
-    if e['status']!='prototype_static' or e['production_approved']: errors.append(e['id']+': status')
+    ok=approval['icons'].get(e['id'])==e['sha256']
+    if (e['status'],e['production_approved'])!=(('approved_static',True) if ok else ('prototype_static',False)): errors.append(e['id']+': status')
     if hashlib.sha256(file.read_bytes()).hexdigest()!=e['sha256']: errors.append(e['id']+': PNG hash')
     source=GAME/e['source_pixels']
     if hashlib.sha256(source.read_bytes()).hexdigest()!=e['source_sha256']: errors.append(e['id']+': source hash')
@@ -47,7 +51,7 @@ for box in [(0,8,8,16),(16,8,24,16)]:
     if any(list(strip.crop((0,y,8,y+1)).getdata())!=list(strip.crop((0,0,8,1)).getdata()) for y in range(8)): errors.append('9-slice vertical seam')
 armor=Image.open(GAME/'assets/hud_icons/loot/armor_points.png')
 if armor.crop((16,0,24,24)).getbbox(): errors.append('armor number space occupied')
-report=dict(result='FAIL' if errors else 'PASS',files=len(entries),groups=expected,errors=errors,production_approved=False,scope='Native dimensions, RGBA, fixed palette, binary alpha, transparent RGB, padding, inventory, source reconstruction, hashes, 9-slice seams, armor number space. No runtime or visual approval.',icons=details)
+report=dict(result='FAIL' if errors else 'PASS',files=len(entries),groups=expected,errors=errors,approved=sum(e['status']=='approved_static' for e in entries),scope='Native dimensions, RGBA, fixed palette, binary alpha, transparent RGB, padding, inventory, source reconstruction, hashes, 9-slice seams, armor number space. No runtime or visual approval.',icons=details)
 (GAME/'hud_icons_validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({k:v for k,v in report.items() if k!='icons'},indent=2))
 raise SystemExit(bool(errors))

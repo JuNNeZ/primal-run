@@ -13,7 +13,7 @@
     "future": 8
   },
   "errors": [],
-  "production_approved": false,
+  "approved": 76,
   "scope": "Native dimensions, RGBA, fixed palette, binary alpha, transparent RGB, padding, inventory, source reconstruction, hashes, 9-slice seams, armor number space. No runtime or visual approval.",
   "icons": [
     {
