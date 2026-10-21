@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "KATRAN TOTEMİ · ÇİFT GANİMET",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "KATRAN ANTLAŞMASI · BOSS GÜÇLENİR · ÇİFT GANİMET",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "KATRAN ANTLAŞMASI · Boss bir elit özellik kazanır · çift ganimet",
- "TJÆREPAGT INDFRIET · dobbelt loot": "KATRAN ANTLAŞMASI YERİNE GELDİ · çift ganimet"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "KATRAN ANTLAŞMASI YERİNE GELDİ · çift ganimet",
+ "RÅDDEN MAVE": "ÇÜRÜK MİDE",
+ "HÆRDET MAVE": "ÇELİK MİDE",
+ "RÅDDENT KØD · +# % SKADE I # S": "ÇÜRÜK ET · +# % HASAR, # SN",
+ "HÆRDET MAVE · +# LIV": "ÇELİK MİDE · +# CAN",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "ÇÜRÜK ET · # % daha fazla hasar alırsın, # sn boyunca.",
+ "HÆRDET MAVE · +# maksimalt liv": "ÇELİK MİDE · +# azami can"
 }

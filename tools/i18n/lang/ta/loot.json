@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "தார் டோட்டம் · இரட்டைக் கொள்ளை",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "தார் ஒப்பந்தம் · தலைவன் வலுவாகிறான் · இரட்டைக் கொள்ளை",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "தார் ஒப்பந்தம் · தலைவனுக்கு உயர்நிலைப் பண்பு · இரட்டைக் கொள்ளை",
- "TJÆREPAGT INDFRIET · dobbelt loot": "தார் ஒப்பந்தம் நிறைவேறியது · இரட்டைக் கொள்ளை"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "தார் ஒப்பந்தம் நிறைவேறியது · இரட்டைக் கொள்ளை",
+ "RÅDDEN MAVE": "அழுகிய வயிறு",
+ "HÆRDET MAVE": "கடினமான வயிறு",
+ "RÅDDENT KØD · +# % SKADE I # S": "அழுகிய இறைச்சி · +# % சேதம், # வி.",
+ "HÆRDET MAVE · +# LIV": "கடினமான வயிறு · +# உயிர்",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "அழுகிய இறைச்சி · # % அதிக சேதம் பெறுவாய், # வி.",
+ "HÆRDET MAVE · +# maksimalt liv": "கடினமான வயிறு · +# அதிகபட்ச உயிர்"
 }

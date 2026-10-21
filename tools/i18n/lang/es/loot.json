@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "TÓTEM DE BREA · BOTÍN DOBLE",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "PACTO DE BREA · EL JEFE SE HACE MÁS FUERTE · BOTÍN DOBLE",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "PACTO DE BREA · El jefe gana un rasgo de élite · botín doble",
- "TJÆREPAGT INDFRIET · dobbelt loot": "PACTO DE BREA CUMPLIDO · botín doble"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "PACTO DE BREA CUMPLIDO · botín doble",
+ "RÅDDEN MAVE": "TRIPA PODRIDA",
+ "HÆRDET MAVE": "TRIPA CURTIDA",
+ "RÅDDENT KØD · +# % SKADE I # S": "CARNE PODRIDA · +# % DE DAÑO DURANTE # S",
+ "HÆRDET MAVE · +# LIV": "TRIPA CURTIDA · +# DE VIDA",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "CARNE PODRIDA · Recibes un # % más de daño durante # s.",
+ "HÆRDET MAVE · +# maksimalt liv": "TRIPA CURTIDA · +# de vida máxima"
 }

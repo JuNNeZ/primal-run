@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "डांबर टोटेम · दुप्पट लूट",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "डांबर करार · बॉस अधिक बलवान · दुप्पट लूट",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "डांबर करार · बॉसला एलिट गुण मिळतो · दुप्पट लूट",
- "TJÆREPAGT INDFRIET · dobbelt loot": "डांबर करार पूर्ण · दुप्पट लूट"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "डांबर करार पूर्ण · दुप्पट लूट",
+ "RÅDDEN MAVE": "कुजलेले पोट",
+ "HÆRDET MAVE": "कणखर पोट",
+ "RÅDDENT KØD · +# % SKADE I # S": "कुजलेले मांस · +# % हानी, # से.",
+ "HÆRDET MAVE · +# LIV": "कणखर पोट · +# जीवन",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "कुजलेले मांस · तुम्हाला # % जास्त हानी, # से.",
+ "HÆRDET MAVE · +# maksimalt liv": "कणखर पोट · +# कमाल जीवन"
 }

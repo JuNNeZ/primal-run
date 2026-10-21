@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "طوطم القار · غنيمة مضاعفة",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "ميثاق القار · الزعيم يصبح أقوى · غنيمة مضاعفة",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "ميثاق القار · يحصل الزعيم على سمة نخبة · غنيمة مضاعفة",
- "TJÆREPAGT INDFRIET · dobbelt loot": "تحقق ميثاق القار · غنيمة مضاعفة"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "تحقق ميثاق القار · غنيمة مضاعفة",
+ "RÅDDEN MAVE": "معدة فاسدة",
+ "HÆRDET MAVE": "معدة صلبة",
+ "RÅDDENT KØD · +# % SKADE I # S": "لحم فاسد · +# % ضرر لمدة # ث",
+ "HÆRDET MAVE · +# LIV": "معدة صلبة · +# صحة",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "لحم فاسد · تتلقى ضررًا أكثر بـ # % لمدة # ث.",
+ "HÆRDET MAVE · +# maksimalt liv": "معدة صلبة · +# أقصى صحة"
 }

@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "焦油圖騰 · 雙倍戰利品",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "焦油契約 · 首領變強 · 雙倍戰利品",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "焦油契約 · 首領獲得精英特性 · 雙倍戰利品",
- "TJÆREPAGT INDFRIET · dobbelt loot": "焦油契約達成 · 雙倍戰利品"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "焦油契約達成 · 雙倍戰利品",
+ "RÅDDEN MAVE": "腐壞腸胃",
+ "HÆRDET MAVE": "堅韌腸胃",
+ "RÅDDENT KØD · +# % SKADE I # S": "腐肉 · 傷害 +# %（# 秒）",
+ "HÆRDET MAVE · +# LIV": "堅韌腸胃 · 生命 +#",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "腐肉 · 受到嘅傷害增加 # %，持續 # 秒。",
+ "HÆRDET MAVE · +# maksimalt liv": "堅韌腸胃 · 最大生命 +#"
 }

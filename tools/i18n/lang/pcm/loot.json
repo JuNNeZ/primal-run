@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "TAR TOTEM · DOUBLE LOOT",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "TAR AGREEMENT · BOSS DON STRONG PASS · DOUBLE LOOT",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "TAR AGREEMENT · Boss go get elite power · double loot",
- "TJÆREPAGT INDFRIET · dobbelt loot": "TAR AGREEMENT DON COMPLETE · double loot"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "TAR AGREEMENT DON COMPLETE · double loot",
+ "RÅDDEN MAVE": "SPOIL BELLE",
+ "HÆRDET MAVE": "STRONG BELLE",
+ "RÅDDENT KØD · +# % SKADE I # S": "SPOIL MEAT · +# % DAMAGE FOR # S",
+ "HÆRDET MAVE · +# LIV": "STRONG BELLE · +# LIFE",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "SPOIL MEAT · You go take # % more damage for # sec.",
+ "HÆRDET MAVE · +# maksimalt liv": "STRONG BELLE · +# max life"
 }

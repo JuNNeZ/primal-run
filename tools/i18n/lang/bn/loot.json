@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "আলকাতরার টোটেম · দ্বিগুণ লুট",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "আলকাতরার চুক্তি · বস আরও শক্তিশালী · দ্বিগুণ লুট",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "আলকাতরার চুক্তি · বস একটি এলিট গুণ পায় · দ্বিগুণ লুট",
- "TJÆREPAGT INDFRIET · dobbelt loot": "আলকাতরার চুক্তি পূর্ণ · দ্বিগুণ লুট"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "আলকাতরার চুক্তি পূর্ণ · দ্বিগুণ লুট",
+ "RÅDDEN MAVE": "পচা পেট",
+ "HÆRDET MAVE": "শক্ত পেট",
+ "RÅDDENT KØD · +# % SKADE I # S": "পচা মাংস · +# % ক্ষতি, # সে.",
+ "HÆRDET MAVE · +# LIV": "শক্ত পেট · +# জীবন",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "পচা মাংস · তুমি # % বেশি ক্ষতি পাবে, # সে. ধরে।",
+ "HÆRDET MAVE · +# maksimalt liv": "শক্ত পেট · +# সর্বোচ্চ জীবন"
 }

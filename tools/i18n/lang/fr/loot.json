@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "TOTEM DE GOUDRON · BUTIN DOUBLE",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "PACTE DE GOUDRON · LE BOSS SE RENFORCE · BUTIN DOUBLE",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "PACTE DE GOUDRON · Le boss gagne un trait d'élite · butin double",
- "TJÆREPAGT INDFRIET · dobbelt loot": "PACTE DE GOUDRON TENU · butin double"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "PACTE DE GOUDRON TENU · butin double",
+ "RÅDDEN MAVE": "VENTRE POURRI",
+ "HÆRDET MAVE": "VENTRE ENDURCI",
+ "RÅDDENT KØD · +# % SKADE I # S": "VIANDE POURRIE · +# % DE DÉGÂTS PENDANT # S",
+ "HÆRDET MAVE · +# LIV": "VENTRE ENDURCI · +# PV",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "VIANDE POURRIE · Tu subis # % de dégâts en plus pendant # s.",
+ "HÆRDET MAVE · +# maksimalt liv": "VENTRE ENDURCI · +# PV max"
 }

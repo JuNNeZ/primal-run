@@ -50,4 +50,11 @@ LOOT = [
 ("TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT", "TAR PACT · THE BOSS GROWS STRONGER · DOUBLE LOOT", "TEERPAKT · DER BOSS WIRD STÄRKER · DOPPELTE BEUTE", "TJÄRPAKT · BOSSEN BLIR STARKARE · DUBBELT BYTE", "TJÆREPAKT · BOSSEN BLIR STERKERE · DOBBELT BYTTE", "タールの契約 · ボスが強くなる · 戦利品 2 倍", "焦油契约 · 首领变强 · 双倍战利品"),
 ("TJÆREPAGT · Bossen får et elite-træk · dobbelt loot", "TAR PACT · The boss gets an elite trait · double loot", "TEERPAKT · Der Boss erhält ein Elite-Merkmal · doppelte Beute", "TJÄRPAKT · Bossen får ett elitdrag · dubbelt byte", "TJÆREPAKT · Bossen får et elitetrekk · dobbelt bytte", "タールの契約 · ボスがエリート特性を得る · 戦利品 2 倍", "焦油契约 · 首领获得精英特性 · 双倍战利品"),
 ("TJÆREPAGT INDFRIET · dobbelt loot", "TAR PACT FULFILLED · double loot", "TEERPAKT ERFÜLLT · doppelte Beute", "TJÄRPAKT INFRIAD · dubbelt byte", "TJÆREPAKT INNFRIDD · dobbelt bytte", "タールの契約達成 · 戦利品 2 倍", "焦油契约达成 · 双倍战利品"),
+# Loot step 5: rotten meat (FEATURES.rottenMeat).
+("RÅDDEN MAVE", "ROTTEN GUT", "FAULER MAGEN", "RUTTEN MAGE", "RÅTTEN MAGE", "腐った腹", "腐坏肠胃"),
+("HÆRDET MAVE", "HARDENED GUT", "GESTÄHLTER MAGEN", "HÄRDAD MAGE", "HERDET MAGE", "鍛えた腹", "坚韧肠胃"),
+("RÅDDENT KØD · +# % SKADE I # S", "ROTTEN MEAT · +# % DAMAGE FOR # S", "FAULES FLEISCH · +# % SCHADEN FÜR # S", "RUTTET KÖTT · +# % SKADA I # S", "RÅTTENT KJØTT · +# % SKADE I # S", "腐った肉 · ダメージ +# %（# 秒間）", "腐肉 · 伤害 +# %（# 秒）"),
+("HÆRDET MAVE · +# LIV", "HARDENED GUT · +# HEALTH", "GESTÄHLTER MAGEN · +# LEBEN", "HÄRDAD MAGE · +# LIV", "HERDET MAGE · +# LIV", "鍛えた腹 · 体力 +#", "坚韧肠胃 · 生命 +#"),
+("RÅDDENT KØD · Du tager # % mere skade i # sek.", "ROTTEN MEAT · You take # % more damage for # sec.", "FAULES FLEISCH · Du nimmst # % mehr Schaden für # Sek.", "RUTTET KÖTT · Du tar # % mer skada i # sek.", "RÅTTENT KJØTT · Du tar # % mer skade i # sek.", "腐った肉 · 受けるダメージが # % 増える（# 秒間）。", "腐肉 · 受到的伤害增加 # %，持续 # 秒。"),
+("HÆRDET MAVE · +# maksimalt liv", "HARDENED GUT · +# max health", "GESTÄHLTER MAGEN · +# maximales Leben", "HÄRDAD MAGE · +# maximalt liv", "HERDET MAGE · +# maksimalt liv", "鍛えた腹 · 最大体力 +#", "坚韧肠胃 · 最大生命 +#"),
 ]

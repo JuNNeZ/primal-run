@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "TOTEM TER · JARAHAN GANDA",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "PAKTA TER · BOS MAKIN KUAT · JARAHAN GANDA",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "PAKTA TER · Bos mendapat sifat elite · jarahan ganda",
- "TJÆREPAGT INDFRIET · dobbelt loot": "PAKTA TER TERPENUHI · jarahan ganda"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "PAKTA TER TERPENUHI · jarahan ganda",
+ "RÅDDEN MAVE": "PERUT BUSUK",
+ "HÆRDET MAVE": "PERUT BAJA",
+ "RÅDDENT KØD · +# % SKADE I # S": "DAGING BUSUK · +# % KERUSAKAN SELAMA # D",
+ "HÆRDET MAVE · +# LIV": "PERUT BAJA · +# NYAWA",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "DAGING BUSUK · Kamu menerima # % kerusakan lebih selama # detik.",
+ "HÆRDET MAVE · +# maksimalt liv": "PERUT BAJA · +# nyawa maksimal"
 }

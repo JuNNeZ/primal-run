@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "TOTEM DE PICHE · SAQUE DOBRADO",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "PACTO DE PICHE · O CHEFE FICA MAIS FORTE · SAQUE DOBRADO",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "PACTO DE PICHE · O chefe ganha um traço de elite · saque dobrado",
- "TJÆREPAGT INDFRIET · dobbelt loot": "PACTO DE PICHE CUMPRIDO · saque dobrado"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "PACTO DE PICHE CUMPRIDO · saque dobrado",
+ "RÅDDEN MAVE": "BARRIGA PODRE",
+ "HÆRDET MAVE": "BARRIGA CALEJADA",
+ "RÅDDENT KØD · +# % SKADE I # S": "CARNE PODRE · +# % DE DANO POR # S",
+ "HÆRDET MAVE · +# LIV": "BARRIGA CALEJADA · +# DE VIDA",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "CARNE PODRE · Você sofre # % mais dano por # s.",
+ "HÆRDET MAVE · +# maksimalt liv": "BARRIGA CALEJADA · +# de vida máxima"
 }

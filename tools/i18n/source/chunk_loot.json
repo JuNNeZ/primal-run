@@ -182,5 +182,29 @@
  {
   "da": "TJÆREPAGT INDFRIET · dobbelt loot",
   "en": "TAR PACT FULFILLED · double loot"
+ },
+ {
+  "da": "RÅDDEN MAVE",
+  "en": "ROTTEN GUT"
+ },
+ {
+  "da": "HÆRDET MAVE",
+  "en": "HARDENED GUT"
+ },
+ {
+  "da": "RÅDDENT KØD · +# % SKADE I # S",
+  "en": "ROTTEN MEAT · +# % DAMAGE FOR # S"
+ },
+ {
+  "da": "HÆRDET MAVE · +# LIV",
+  "en": "HARDENED GUT · +# HEALTH"
+ },
+ {
+  "da": "RÅDDENT KØD · Du tager # % mere skade i # sek.",
+  "en": "ROTTEN MEAT · You take # % more damage for # sec."
+ },
+ {
+  "da": "HÆRDET MAVE · +# maksimalt liv",
+  "en": "HARDENED GUT · +# max health"
  }
 ]

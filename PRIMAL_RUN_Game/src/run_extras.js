@@ -76,6 +76,10 @@
   // (E) before the boss appears to make a pact: the boss gets one elite trait (+25 % HP with armored as usual), and
   // its kill pays double: the level DNA again and, with FEATURES.relics, a second boss relic. Placement uses the run
   // seed, not the game's random stream, so nothing else in the run moves.
+  // FEATURES.rottenMeat (loot step 5): meat from a corpse that has started to spoil (corpse.age > spoilAt) is rotten.
+  // A bite gives "Rådden mave": 60 s of +30 % damage taken. Survive it and the stomach hardens for the rest of the run:
+  // +6 max health, up to 3 times. Jernmave (ironStomach) shrugs it off: no risk, no reward.
+  const ROTTEN = { seconds: 60, taken: 1.3, maxHealth: 6, max: 3 };
   const TAR_TOTEM = { fromLevel: 1, minDistance: 700, reach: 70, hp: 1.25 };
   const AMBER = { dna: 3, minDistance: 900, reach: 70, glint: 260, ring: [60, 85, 110], margin: 14, hint: 400 };
 
@@ -262,7 +266,21 @@
         if (F.eliteAffixes && hasAffix(source, 'brutal')) amount *= ELITE_AFFIXES.brutal.damage;
         const night = predatorBoost(r, source); if (night) amount *= 1 + CIRCADIAN.damage * night;
       }
+      if (F.rottenMeat && r && X(r).rot && r.seconds < X(r).rot.until) amount *= ROTTEN.taken;
       return damage.call(this, amount, source);
+    };
+    const eat = G.eat;
+    G.eat = function (dt, input) {
+      const r = this.run; if (!F.rottenMeat || !r) return eat.call(this, dt, input);
+      const bites = r.stats.meatEaten, before = r.eating && r.eating.corpseId, out = eat.call(this, dt, input);
+      if (r.stats.meatEaten > bites && !r.mutations.ironStomach) {
+        const id = r.eating && r.eating.corpseId !== undefined ? r.eating.corpseId : before, corpse = r.corpses.find(c => c.id === id), x = X(r);
+        if (corpse && corpse.age > (corpse.spoilAt || 7) && !(x.rot && r.seconds < x.rot.until) && (x.rotStacks || 0) < ROTTEN.max) {
+          x.rot = { until: r.seconds + ROTTEN.seconds }; r.stats.rottenBites = (r.stats.rottenBites || 0) + 1;
+          r.effects.push({ x: r.player.x, y: r.player.y - 36, text: 'RÅDDENT KØD · +30 % SKADE I 60 S', color: '#799447', life: 1.8 }); this.emit('rotten', {});
+        }
+      }
+      return out;
     };
 
     // ---- kills: streak, powerup drops, night DNA, baby growth, carrion guests
@@ -357,6 +375,10 @@
       if (F.powerups) {
         const radius = POWERUP_SPAWN.pickupRadius, taken = (r.powerups || []).filter(p => dist(p, r.player) < radius);
         if (taken.length) { r.powerups = r.powerups.filter(p => !taken.includes(p)); for (const p of taken) applyPowerup(this, p); }
+      }
+      if (F.rottenMeat && x.rot && r.seconds >= x.rot.until) {
+        x.rot = null; x.rotStacks = (x.rotStacks || 0) + 1; r.maxHealth += ROTTEN.maxHealth; r.health += ROTTEN.maxHealth;
+        r.effects.push({ x: r.player.x, y: r.player.y - 36, text: 'HÆRDET MAVE · +' + ROTTEN.maxHealth + ' LIV', color: '#799447', life: 1.8 }); this.emit('rot_cured', { stacks: x.rotStacks });
       }
       if (F.tarTotem && r.tarTotem && r.tarTotem.pact) for (const e of r.enemies) if (e.boss && !e.tarred) {
         e.tarred = true; e.affix = AFFIX_ORDER[((r.seed >>> 0) + r.levelIndex) % AFFIX_ORDER.length]; e.affixes = [e.affix];
@@ -495,11 +517,11 @@
     };
 
     // Exposed for the renderer, the HUD and tests.
-    Object.assign(C, { CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
+    Object.assign(C, { CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, ROTTEN, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
       extrasOf: r => r && r.extras || null,
       streakOf: r => (r && r.extras && F.huntStreak ? r.extras.streak : 0),
       buffsOf: r => (r && r.extras ? Object.entries(r.extras.buffs).filter(([, t]) => t > 0).map(([type, time]) => ({ type, time })) : []) });
   }
 
-  return { install, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, BABY, CIRCADIAN, AMBER };
+  return { install, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, ROTTEN, BABY, CIRCADIAN, AMBER };
 });

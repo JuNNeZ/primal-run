@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "СМОЛЯНОЙ ТОТЕМ · ДВОЙНАЯ ДОБЫЧА",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "СМОЛЯНОЙ ДОГОВОР · БОСС СТАНОВИТСЯ СИЛЬНЕЕ · ДВОЙНАЯ ДОБЫЧА",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "СМОЛЯНОЙ ДОГОВОР · Босс получает элитную черту · двойная добыча",
- "TJÆREPAGT INDFRIET · dobbelt loot": "СМОЛЯНОЙ ДОГОВОР ИСПОЛНЕН · двойная добыча"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "СМОЛЯНОЙ ДОГОВОР ИСПОЛНЕН · двойная добыча",
+ "RÅDDEN MAVE": "ГНИЛОЙ ЖЕЛУДОК",
+ "HÆRDET MAVE": "ЗАКАЛЁННЫЙ ЖЕЛУДОК",
+ "RÅDDENT KØD · +# % SKADE I # S": "ГНИЛОЕ МЯСО · +# % УРОНА НА # С",
+ "HÆRDET MAVE · +# LIV": "ЗАКАЛЁННЫЙ ЖЕЛУДОК · +# ЗДОРОВЬЯ",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "ГНИЛОЕ МЯСО · # с ты получаешь на # % больше урона.",
+ "HÆRDET MAVE · +# maksimalt liv": "ЗАКАЛЁННЫЙ ЖЕЛУДОК · +# к макс. здоровью"
 }

@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "तारकोल टोटम · दोगुनी लूट",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "तारकोल समझौता · बॉस ज़्यादा ताकतवर · दोगुनी लूट",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "तारकोल समझौता · बॉस को एलीट गुण मिलता है · दोगुनी लूट",
- "TJÆREPAGT INDFRIET · dobbelt loot": "तारकोल समझौता पूरा · दोगुनी लूट"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "तारकोल समझौता पूरा · दोगुनी लूट",
+ "RÅDDEN MAVE": "सड़ा पेट",
+ "HÆRDET MAVE": "मज़बूत पेट",
+ "RÅDDENT KØD · +# % SKADE I # S": "सड़ा मांस · +# % क्षति, # से. तक",
+ "HÆRDET MAVE · +# LIV": "मज़बूत पेट · +# जीवन",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "सड़ा मांस · तुम्हें # % ज़्यादा क्षति होगी, # से. तक।",
+ "HÆRDET MAVE · +# maksimalt liv": "मज़बूत पेट · +# अधिकतम जीवन"
 }

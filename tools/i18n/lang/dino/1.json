@@ -1583,5 +1583,11 @@
 "TJÆRETOTEM · DOBBELT LOOT": "KRAAAK · BRRROOOM CHOMP",
 "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "HROOOMPH · KRAAAK GRAAAWR KRAAAK · BRRROOOM CHOMP",
 "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "HROOOMPH · Kraaak hrrk rawr roooh-gnar · brrrooom chomp",
-"TJÆREPAGT INDFRIET · dobbelt loot": "HROOOMPH HROOOMPH · brrrooom chomp"
+"TJÆREPAGT INDFRIET · dobbelt loot": "HROOOMPH HROOOMPH · brrrooom chomp",
+"RÅDDEN MAVE": "ROOOH SNAP",
+"HÆRDET MAVE": "ROOAAR SNAP",
+"RÅDDENT KØD · +# % SKADE I # S": "SKREEE HISS · +# % GRAAAWR Chomp # Huf",
+"HÆRDET MAVE · +# LIV": "ROOAAR SNAP · +# KRAK",
+"RÅDDENT KØD · Du tager # % mere skade i # sek.": "SKREEE HISS · Grr hrooomph # % rawr graaawr chomp # grr.",
+"HÆRDET MAVE · +# maksimalt liv": "ROOAAR SNAP · +# hrooomph krak"
 }

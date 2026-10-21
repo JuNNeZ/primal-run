@@ -44,5 +44,11 @@
  "TJÆRETOTEM · DOBBELT LOOT": "తారు టోటెం · రెట్టింపు దోపిడి",
  "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "తారు ఒప్పందం · బాస్ బలపడుతుంది · రెట్టింపు దోపిడి",
  "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "తారు ఒప్పందం · బాస్‌కు ఎలీట్ లక్షణం · రెట్టింపు దోపిడి",
- "TJÆREPAGT INDFRIET · dobbelt loot": "తారు ఒప్పందం నెరవేరింది · రెట్టింపు దోపిడి"
+ "TJÆREPAGT INDFRIET · dobbelt loot": "తారు ఒప్పందం నెరవేరింది · రెట్టింపు దోపిడి",
+ "RÅDDEN MAVE": "కుళ్ళిన కడుపు",
+ "HÆRDET MAVE": "గట్టి కడుపు",
+ "RÅDDENT KØD · +# % SKADE I # S": "కుళ్ళిన మాంసం · +# % నష్టం, # సె.",
+ "HÆRDET MAVE · +# LIV": "గట్టి కడుపు · +# ప్రాణం",
+ "RÅDDENT KØD · Du tager # % mere skade i # sek.": "కుళ్ళిన మాంసం · # % ఎక్కువ నష్టం, # సె. పాటు.",
+ "HÆRDET MAVE · +# maksimalt liv": "గట్టి కడుపు · +# గరిష్ఠ ప్రాణం"
 }

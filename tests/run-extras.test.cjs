@@ -158,3 +158,24 @@ test('tarTotem: none on level 1 or with the flag off; on level 2 the pact gives 
     assert.equal(gain(g, boss) - gain(plain, pb), g.currentLevel().dna, 'the level DNA once more');
   } finally { [C.FEATURES.tarTotem, C.FEATURES.lootTables] = was; }
 });
+
+test('rottenMeat: a bite of spoiling meat gives 60 s of +30 % damage taken, then +6 max health (max 3); fresh meat and the flag off do nothing', () => {
+  const was = C.FEATURES.rottenMeat;
+  const bite = (on, age, iron = false) => {
+    C.FEATURES.rottenMeat = on; const g = make(), r = g.run; if (iron) r.mutations.ironStomach = 1;
+    const e = g.spawn('carnotaurus', { x: r.player.x + 30, y: r.player.y }); g.kill(e); const c = r.corpses.find(k => k.id === e.id); c.age = age;
+    r.pickups = r.pickups.filter(p => p.corpseId === e.id); for (const p of r.pickups) { p.x = r.player.x + 5; p.y = r.player.y; p.value = 20; }
+    for (let i = 0; i < 40 && !r.stats.meatEaten; i++) g.eat(1 / 30, { eat: true });
+    return { g, r };
+  };
+  try {
+    const fresh = bite(true, 1); assert.ok(fresh.r.stats.meatEaten > 0); assert.equal(fresh.r.extras && fresh.r.extras.rot || null, null, 'fresh meat is safe');
+    const off = bite(false, 12); assert.ok(off.r.stats.meatEaten > 0); assert.equal(off.r.extras && off.r.extras.rot || null, null);
+    const iron = bite(true, 12, true); assert.equal(iron.r.extras && iron.r.extras.rot || null, null, 'Jernmave shrugs it off');
+    const { g, r } = bite(true, 12); assert.ok(r.extras.rot, 'rotten bite'); C.FEATURES.rottenMeat = true;
+    const hit = () => { r.health = r.maxHealth = 1000; r.invulnerable = 0; r.shield = 0; g.damage(10, { x: r.player.x + 20, y: r.player.y }); return 1000 - r.health; };
+    const sick = hit(); r.seconds = r.extras.rot.until + .01; const hp = r.maxHealth; g.step(1 / 30, {});
+    assert.equal(r.extras.rot, null); assert.equal(r.extras.rotStacks, 1); assert.equal(r.maxHealth, hp + C.ROTTEN.maxHealth);
+    const well = hit(); assert.ok(Math.abs(sick / well - C.ROTTEN.taken) < .02, sick + ' vs ' + well);
+  } finally { C.FEATURES.rottenMeat = was; }
+});
