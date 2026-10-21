@@ -1,0 +1,1 @@
+{"result":"PASS","engine":"Chrome browser; GDevelop NOT RUN","checks":["S movement/idle/loop","N movement/idle/loop","E movement/idle/loop","W movement/idle/loop","S blockage","N blockage","E blockage","W blockage","diagonal tie facing","pixel smoothing disabled"]}

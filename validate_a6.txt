@@ -1,0 +1,26 @@
+{
+  "result": "PASS",
+  "assets": 24,
+  "hud_icons": 8,
+  "lava_ash_masks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "errors": [],
+  "production_approved": false,
+  "scope": "Native sampling, palette, alpha, source hashes and actual corner topology. Does not certify seamlessness, art approval or GDJS."
+}
