@@ -39,5 +39,10 @@
  "Alle sæt": "Tüm setler",
  "RELIKVIE · {0}": "KALINTI · {0}",
  "Rede-kiste": "Yuva sandığı",
- "REDE-KISTE · {0} FUND": "YUVA SANDIĞI · {0} BULGU"
+ "REDE-KISTE · {0} FUND": "YUVA SANDIĞI · {0} BULGU",
+ "TJÆREPAGT": "KATRAN ANTLAŞMASI",
+ "TJÆRETOTEM · DOBBELT LOOT": "KATRAN TOTEMİ · ÇİFT GANİMET",
+ "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "KATRAN ANTLAŞMASI · BOSS GÜÇLENİR · ÇİFT GANİMET",
+ "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "KATRAN ANTLAŞMASI · Boss bir elit özellik kazanır · çift ganimet",
+ "TJÆREPAGT INDFRIET · dobbelt loot": "KATRAN ANTLAŞMASI YERİNE GELDİ · çift ganimet"
 }

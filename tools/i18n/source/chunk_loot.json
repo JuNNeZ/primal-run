@@ -162,5 +162,25 @@
  {
   "da": "REDE-KISTE · {0} FUND",
   "en": "NEST CACHE · {0} FINDS"
+ },
+ {
+  "da": "TJÆREPAGT",
+  "en": "TAR PACT"
+ },
+ {
+  "da": "TJÆRETOTEM · DOBBELT LOOT",
+  "en": "TAR TOTEM · DOUBLE LOOT"
+ },
+ {
+  "da": "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT",
+  "en": "TAR PACT · THE BOSS GROWS STRONGER · DOUBLE LOOT"
+ },
+ {
+  "da": "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot",
+  "en": "TAR PACT · The boss gets an elite trait · double loot"
+ },
+ {
+  "da": "TJÆREPAGT INDFRIET · dobbelt loot",
+  "en": "TAR PACT FULFILLED · double loot"
  }
 ]

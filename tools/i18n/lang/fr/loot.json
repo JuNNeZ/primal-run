@@ -39,5 +39,10 @@
  "Alle sæt": "Tous les ensembles",
  "RELIKVIE · {0}": "RELIQUE · {0}",
  "Rede-kiste": "Coffre du nid",
- "REDE-KISTE · {0} FUND": "COFFRE DU NID · {0} TROUVAILLES"
+ "REDE-KISTE · {0} FUND": "COFFRE DU NID · {0} TROUVAILLES",
+ "TJÆREPAGT": "PACTE DE GOUDRON",
+ "TJÆRETOTEM · DOBBELT LOOT": "TOTEM DE GOUDRON · BUTIN DOUBLE",
+ "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "PACTE DE GOUDRON · LE BOSS SE RENFORCE · BUTIN DOUBLE",
+ "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "PACTE DE GOUDRON · Le boss gagne un trait d'élite · butin double",
+ "TJÆREPAGT INDFRIET · dobbelt loot": "PACTE DE GOUDRON TENU · butin double"
 }

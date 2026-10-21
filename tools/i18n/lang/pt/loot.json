@@ -39,5 +39,10 @@
  "Alle sæt": "Todos os conjuntos",
  "RELIKVIE · {0}": "RELÍQUIA · {0}",
  "Rede-kiste": "Baú do ninho",
- "REDE-KISTE · {0} FUND": "BAÚ DO NINHO · {0} ACHADOS"
+ "REDE-KISTE · {0} FUND": "BAÚ DO NINHO · {0} ACHADOS",
+ "TJÆREPAGT": "PACTO DE PICHE",
+ "TJÆRETOTEM · DOBBELT LOOT": "TOTEM DE PICHE · SAQUE DOBRADO",
+ "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "PACTO DE PICHE · O CHEFE FICA MAIS FORTE · SAQUE DOBRADO",
+ "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "PACTO DE PICHE · O chefe ganha um traço de elite · saque dobrado",
+ "TJÆREPAGT INDFRIET · dobbelt loot": "PACTO DE PICHE CUMPRIDO · saque dobrado"
 }

@@ -39,5 +39,10 @@
  "Alle sæt": "Все наборы",
  "RELIKVIE · {0}": "РЕЛИКВИЯ · {0}",
  "Rede-kiste": "Тайник гнезда",
- "REDE-KISTE · {0} FUND": "ТАЙНИК ГНЕЗДА · НАХОДОК: {0}"
+ "REDE-KISTE · {0} FUND": "ТАЙНИК ГНЕЗДА · НАХОДОК: {0}",
+ "TJÆREPAGT": "СМОЛЯНОЙ ДОГОВОР",
+ "TJÆRETOTEM · DOBBELT LOOT": "СМОЛЯНОЙ ТОТЕМ · ДВОЙНАЯ ДОБЫЧА",
+ "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "СМОЛЯНОЙ ДОГОВОР · БОСС СТАНОВИТСЯ СИЛЬНЕЕ · ДВОЙНАЯ ДОБЫЧА",
+ "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "СМОЛЯНОЙ ДОГОВОР · Босс получает элитную черту · двойная добыча",
+ "TJÆREPAGT INDFRIET · dobbelt loot": "СМОЛЯНОЙ ДОГОВОР ИСПОЛНЕН · двойная добыча"
 }

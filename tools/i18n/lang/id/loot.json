@@ -39,5 +39,10 @@
  "Alle sæt": "Semua set",
  "RELIKVIE · {0}": "RELIK · {0}",
  "Rede-kiste": "Peti sarang",
- "REDE-KISTE · {0} FUND": "PETI SARANG · {0} TEMUAN"
+ "REDE-KISTE · {0} FUND": "PETI SARANG · {0} TEMUAN",
+ "TJÆREPAGT": "PAKTA TER",
+ "TJÆRETOTEM · DOBBELT LOOT": "TOTEM TER · JARAHAN GANDA",
+ "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "PAKTA TER · BOS MAKIN KUAT · JARAHAN GANDA",
+ "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "PAKTA TER · Bos mendapat sifat elite · jarahan ganda",
+ "TJÆREPAGT INDFRIET · dobbelt loot": "PAKTA TER TERPENUHI · jarahan ganda"
 }

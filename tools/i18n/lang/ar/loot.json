@@ -39,5 +39,10 @@
  "Alle sæt": "كل المجموعات",
  "RELIKVIE · {0}": "أثر · {0}",
  "Rede-kiste": "كنز العش",
- "REDE-KISTE · {0} FUND": "كنز العش · {0} غنائم"
+ "REDE-KISTE · {0} FUND": "كنز العش · {0} غنائم",
+ "TJÆREPAGT": "ميثاق القار",
+ "TJÆRETOTEM · DOBBELT LOOT": "طوطم القار · غنيمة مضاعفة",
+ "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "ميثاق القار · الزعيم يصبح أقوى · غنيمة مضاعفة",
+ "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "ميثاق القار · يحصل الزعيم على سمة نخبة · غنيمة مضاعفة",
+ "TJÆREPAGT INDFRIET · dobbelt loot": "تحقق ميثاق القار · غنيمة مضاعفة"
 }

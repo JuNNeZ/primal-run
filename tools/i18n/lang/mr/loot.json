@@ -39,5 +39,10 @@
  "Alle sæt": "सर्व संच",
  "RELIKVIE · {0}": "अवशेष · {0}",
  "Rede-kiste": "घरट्याचा खजिना",
- "REDE-KISTE · {0} FUND": "घरट्याचा खजिना · {0} वस्तू"
+ "REDE-KISTE · {0} FUND": "घरट्याचा खजिना · {0} वस्तू",
+ "TJÆREPAGT": "डांबर करार",
+ "TJÆRETOTEM · DOBBELT LOOT": "डांबर टोटेम · दुप्पट लूट",
+ "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "डांबर करार · बॉस अधिक बलवान · दुप्पट लूट",
+ "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "डांबर करार · बॉसला एलिट गुण मिळतो · दुप्पट लूट",
+ "TJÆREPAGT INDFRIET · dobbelt loot": "डांबर करार पूर्ण · दुप्पट लूट"
 }

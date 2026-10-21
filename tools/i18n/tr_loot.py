@@ -44,4 +44,10 @@ LOOT = [
 # Loot: nest caches (FEATURES.nestCaches).
 ("Rede-kiste", "Nest cache", "Nestschatz", "Bokista", "Reirkiste", "巣の宝", "巢穴宝箱"),
 ("REDE-KISTE · {0} FUND", "NEST CACHE · {0} FINDS", "NESTSCHATZ · {0} FUNDE", "BOKISTA · {0} FYND", "REIRKISTE · {0} FUNN", "巣の宝 · {0} 個", "巢穴宝箱 · {0} 件"),
+# Loot step 5: tar totem pact (FEATURES.tarTotem).
+("TJÆREPAGT", "TAR PACT", "TEERPAKT", "TJÄRPAKT", "TJÆREPAKT", "タールの契約", "焦油契约"),
+("TJÆRETOTEM · DOBBELT LOOT", "TAR TOTEM · DOUBLE LOOT", "TEERTOTEM · DOPPELTE BEUTE", "TJÄRTOTEM · DUBBELT BYTE", "TJÆRETOTEM · DOBBELT BYTTE", "タールのトーテム · 戦利品 2 倍", "焦油图腾 · 双倍战利品"),
+("TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT", "TAR PACT · THE BOSS GROWS STRONGER · DOUBLE LOOT", "TEERPAKT · DER BOSS WIRD STÄRKER · DOPPELTE BEUTE", "TJÄRPAKT · BOSSEN BLIR STARKARE · DUBBELT BYTE", "TJÆREPAKT · BOSSEN BLIR STERKERE · DOBBELT BYTTE", "タールの契約 · ボスが強くなる · 戦利品 2 倍", "焦油契约 · 首领变强 · 双倍战利品"),
+("TJÆREPAGT · Bossen får et elite-træk · dobbelt loot", "TAR PACT · The boss gets an elite trait · double loot", "TEERPAKT · Der Boss erhält ein Elite-Merkmal · doppelte Beute", "TJÄRPAKT · Bossen får ett elitdrag · dubbelt byte", "TJÆREPAKT · Bossen får et elitetrekk · dobbelt bytte", "タールの契約 · ボスがエリート特性を得る · 戦利品 2 倍", "焦油契约 · 首领获得精英特性 · 双倍战利品"),
+("TJÆREPAGT INDFRIET · dobbelt loot", "TAR PACT FULFILLED · double loot", "TEERPAKT ERFÜLLT · doppelte Beute", "TJÄRPAKT INFRIAD · dubbelt byte", "TJÆREPAKT INNFRIDD · dobbelt bytte", "タールの契約達成 · 戦利品 2 倍", "焦油契约达成 · 双倍战利品"),
 ]

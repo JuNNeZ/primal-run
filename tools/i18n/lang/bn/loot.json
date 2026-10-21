@@ -39,5 +39,10 @@
  "Alle sæt": "সব সেট",
  "RELIKVIE · {0}": "স্মারক · {0}",
  "Rede-kiste": "বাসার ভান্ডার",
- "REDE-KISTE · {0} FUND": "বাসার ভান্ডার · {0}টি জিনিস"
+ "REDE-KISTE · {0} FUND": "বাসার ভান্ডার · {0}টি জিনিস",
+ "TJÆREPAGT": "আলকাতরার চুক্তি",
+ "TJÆRETOTEM · DOBBELT LOOT": "আলকাতরার টোটেম · দ্বিগুণ লুট",
+ "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "আলকাতরার চুক্তি · বস আরও শক্তিশালী · দ্বিগুণ লুট",
+ "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "আলকাতরার চুক্তি · বস একটি এলিট গুণ পায় · দ্বিগুণ লুট",
+ "TJÆREPAGT INDFRIET · dobbelt loot": "আলকাতরার চুক্তি পূর্ণ · দ্বিগুণ লুট"
 }

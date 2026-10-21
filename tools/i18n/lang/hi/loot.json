@@ -39,5 +39,10 @@
  "Alle sæt": "सभी सेट",
  "RELIKVIE · {0}": "अवशेष · {0}",
  "Rede-kiste": "घोंसले का खज़ाना",
- "REDE-KISTE · {0} FUND": "घोंसले का खज़ाना · {0} चीज़ें"
+ "REDE-KISTE · {0} FUND": "घोंसले का खज़ाना · {0} चीज़ें",
+ "TJÆREPAGT": "तारकोल समझौता",
+ "TJÆRETOTEM · DOBBELT LOOT": "तारकोल टोटम · दोगुनी लूट",
+ "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "तारकोल समझौता · बॉस ज़्यादा ताकतवर · दोगुनी लूट",
+ "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "तारकोल समझौता · बॉस को एलीट गुण मिलता है · दोगुनी लूट",
+ "TJÆREPAGT INDFRIET · dobbelt loot": "तारकोल समझौता पूरा · दोगुनी लूट"
 }

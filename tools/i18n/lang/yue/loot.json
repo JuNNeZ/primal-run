@@ -39,5 +39,10 @@
  "Alle sæt": "所有套裝",
  "RELIKVIE · {0}": "遺物 · {0}",
  "Rede-kiste": "巢穴寶箱",
- "REDE-KISTE · {0} FUND": "巢穴寶箱 · {0} 件"
+ "REDE-KISTE · {0} FUND": "巢穴寶箱 · {0} 件",
+ "TJÆREPAGT": "焦油契約",
+ "TJÆRETOTEM · DOBBELT LOOT": "焦油圖騰 · 雙倍戰利品",
+ "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT": "焦油契約 · 首領變強 · 雙倍戰利品",
+ "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot": "焦油契約 · 首領獲得精英特性 · 雙倍戰利品",
+ "TJÆREPAGT INDFRIET · dobbelt loot": "焦油契約達成 · 雙倍戰利品"
 }

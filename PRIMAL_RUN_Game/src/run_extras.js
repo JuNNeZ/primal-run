@@ -72,6 +72,11 @@
   // instead of 60 % at night); herbivores drink at dusk; compys scavenge kills by day. Night kills give +50 % DNA.
   const CIRCADIAN = { damage: .2, speed: .1, nightSight: .85, nightDNA: 1.5, duskThirst: .7 };
   // Rav: one hidden amber piece per journey level, far from the start; E picks it up (+3 DNA).
+  // FEATURES.tarTotem (loot step 5, needs lootTables): from level 2 a tar-pit totem stands far from the start. Touch it
+  // (E) before the boss appears to make a pact: the boss gets one elite trait (+25 % HP with armored as usual), and
+  // its kill pays double: the level DNA again and, with FEATURES.relics, a second boss relic. Placement uses the run
+  // seed, not the game's random stream, so nothing else in the run moves.
+  const TAR_TOTEM = { fromLevel: 1, minDistance: 700, reach: 70, hp: 1.25 };
   const AMBER = { dna: 3, minDistance: 900, reach: 70, glint: 260, ring: [60, 85, 110], margin: 14, hint: 400 };
 
   function install(C) {
@@ -114,6 +119,12 @@
         const far = r.map.habitats.filter(ground).map(h => g.habitatPosition('parasaurolophus', h)).filter(Boolean)
           .sort((a, b) => Math.hypot(b.x - r.player.x, b.y - r.player.y) - Math.hypot(a.x - r.player.x, a.y - r.player.y))[0];
         if (far && Math.hypot(far.x - r.player.x, far.y - r.player.y) > Math.hypot(e.x - r.player.x, e.y - r.player.y)) { site.x = e.x = e.homeX = far.x; site.y = e.y = e.homeY = far.y; }
+      }
+      r.tarTotem = null;
+      if (F.tarTotem && F.lootTables && r.campaign === C.LEVELS && r.levelIndex >= TAR_TOTEM.fromLevel) {
+        const far = r.map.habitats.filter(h => ground(h) && dist(h, r.player) > TAR_TOTEM.minDistance && !(r.map.sites || []).some(s => dist(s, h) < 120));
+        const h = far.length ? far[((r.seed >>> 0) + 7919 * r.levelIndex) % far.length] : null;
+        if (h) r.tarTotem = { x: Math.round(h.x - 20), y: Math.round(h.y + 16), level: r.levelIndex, pact: false };
       }
       r.powerups = [];
       if (F.powerups) {
@@ -261,7 +272,8 @@
       const out = kill.call(this, e);
       if (!fresh || !e.rewarded || !this.run) return out;
       const x = X(r);
-      if (F.eliteAffixes && F.affixStages && e.affixes && e.affixes.length > 1) this.addDNA(AFFIX_STAGES.dna * (e.affixes.length - 1));
+      if (F.eliteAffixes && F.affixStages && !e.boss && e.affixes && e.affixes.length > 1) this.addDNA(AFFIX_STAGES.dna * (e.affixes.length - 1));
+      if (F.tarTotem && e.boss && e.tarred) { this.addDNA(this.currentLevel().dna); this.grantRelic && this.grantRelic('boss'); this.emit('tar_reward', { level: r.levelIndex }); }
       if (F.huntStreak && !e.boss) {
         x.streak = r.seconds - x.lastKillAt <= STREAK.window ? Math.min(STREAK.max, x.streak + 1) : 1; x.lastKillAt = r.seconds;
         x.streakMax = Math.max(x.streakMax || 0, x.streak);
@@ -322,6 +334,12 @@
         this.emit('amber', { count: x.amber });
         return true;
       }
+      if (F.tarTotem && r && this.phase === 'playing' && r.tarTotem && !r.tarTotem.pact && !r.bossSpawned && dist(r.tarTotem, r.player) < TAR_TOTEM.reach) {
+        r.tarTotem.pact = true; r.stats.tarPacts = (r.stats.tarPacts || 0) + 1;
+        r.effects.push({ x: r.player.x, y: r.player.y - 36, text: 'TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT', color: '#bb80d9', life: 2.2 });
+        this.emit('tar_pact', { level: r.levelIndex });
+        return true;
+      }
       return interact.call(this);
     };
 
@@ -339,6 +357,10 @@
       if (F.powerups) {
         const radius = POWERUP_SPAWN.pickupRadius, taken = (r.powerups || []).filter(p => dist(p, r.player) < radius);
         if (taken.length) { r.powerups = r.powerups.filter(p => !taken.includes(p)); for (const p of taken) applyPowerup(this, p); }
+      }
+      if (F.tarTotem && r.tarTotem && r.tarTotem.pact) for (const e of r.enemies) if (e.boss && !e.tarred) {
+        e.tarred = true; e.affix = AFFIX_ORDER[((r.seed >>> 0) + r.levelIndex) % AFFIX_ORDER.length]; e.affixes = [e.affix];
+        e.hp *= TAR_TOTEM.hp; e.maxHP *= TAR_TOTEM.hp; if (e.affix === 'armored') { e.hp *= ELITE_AFFIXES.armored.hp; e.maxHP *= ELITE_AFFIXES.armored.hp; }
       }
       if (F.eliteAffixes) for (const e of r.enemies) if (e.elite && !e.affix && !e.boss) {
         e.affix = AFFIX_ORDER[(e.id * 7 + r.levelIndex) % AFFIX_ORDER.length];
@@ -473,11 +495,11 @@
     };
 
     // Exposed for the renderer, the HUD and tests.
-    Object.assign(C, { CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
+    Object.assign(C, { CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
       extrasOf: r => r && r.extras || null,
       streakOf: r => (r && r.extras && F.huntStreak ? r.extras.streak : 0),
       buffsOf: r => (r && r.extras ? Object.entries(r.extras.buffs).filter(([, t]) => t > 0).map(([type, time]) => ({ type, time })) : []) });
   }
 
-  return { install, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, BABY, CIRCADIAN, AMBER };
+  return { install, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, BABY, CIRCADIAN, AMBER };
 });

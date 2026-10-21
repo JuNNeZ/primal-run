@@ -140,3 +140,21 @@ test('affixStages: later levels stack distinct traits on one elite, and each ext
   } finally { C.FEATURES.affixStages = flag; }
 });
 function close(a, b) { assert.ok(Math.abs(a - b) < 1e-9, a + ' vs ' + b); }
+
+test('tarTotem: none on level 1 or with the flag off; on level 2 the pact gives the boss a trait and the kill pays double', () => {
+  const was = [C.FEATURES.tarTotem, C.FEATURES.lootTables], set = on => { C.FEATURES.tarTotem = C.FEATURES.lootTables = on; };
+  const level2 = () => { const g = make(); g.phase = 'cleared'; g.run.bossDefeated = true; g.nextStage(); g.phase = 'playing'; g.run.enemies = []; g.run.spawnTimer = 999; return g; };
+  try {
+    set(false); assert.equal(level2().run.tarTotem, null);
+    set(true); assert.equal(make().run.tarTotem, null, 'no totem on level 1');
+    const g = level2(), r = g.run; assert.equal(r.levelIndex, 1); assert.ok(r.tarTotem, 'totem from level 2');
+    assert.deepEqual(level2().run.tarTotem, r.tarTotem, 'placement follows the seed');
+    const far = { ...r.player }; assert.equal(g.interact(), false, 'too far away');
+    r.player.x = r.tarTotem.x; r.player.y = r.tarTotem.y; assert.equal(g.interact(), true); assert.equal(r.tarTotem.pact, true);
+    const boss = g.spawn(g.currentLevel().boss, { x: far.x + 600, y: far.y }, true); const hp = boss.maxHP; g.step(1 / 30, {});
+    assert.ok(boss.tarred && C.ELITE_AFFIXES[boss.affix]); assert.ok(boss.maxHP >= hp * C.TAR_TOTEM.hp - 1e-6);
+    const plain = level2(), pb = plain.spawn(plain.currentLevel().boss, { x: far.x + 600, y: far.y }, true); plain.step(1 / 30, {}); assert.ok(!pb.tarred);
+    const gain = (game, b) => { const before = game.run.dna; game.kill(b); game.kill(b); return game.run.dna - before; };
+    assert.equal(gain(g, boss) - gain(plain, pb), g.currentLevel().dna, 'the level DNA once more');
+  } finally { [C.FEATURES.tarTotem, C.FEATURES.lootTables] = was; }
+});
