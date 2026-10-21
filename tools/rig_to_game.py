@@ -5,7 +5,8 @@ Renders the rig (tools/rig_animate.py), checks every frame (tools/validate_rig_f
 copies the 120 frames to PRIMAL_RUN_Game/assets/rig_full/ and writes their manifest and
 animation entries.  The game shows them behind FEATURES.rigSprites for the ids in
 RIG_SPECIES in src/core.js.  Everything stays prototype_static: Jonas approves the art,
-file checks never do.
+file checks never do.  A cutout folder with approval.json (his approval, tied to a hash of the
+parts) exports approved_animation instead.
 
   python tools/rig_to_game.py --species allosaurus            # one species
   python tools/rig_to_game.py --species all --jobs 4          # every new species
@@ -36,6 +37,28 @@ ANIMATIONS = GAME / 'rig_full_animations.json'
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 
+def parts_sha(folder: Path, sid: str) -> str:
+    """One hash over a cutout's parts.json and every part PNG: approval holds only for exactly these parts."""
+    h = hashlib.sha256()
+    for f in sorted(folder.glob(f'{sid}_*')):
+        if f.suffix in ('.png', '.json'):
+            h.update(f.name.encode() + f.read_bytes())
+    return h.hexdigest()
+
+
+def approval(folder: Path, sid: str) -> dict | None:
+    """<cutout>/approval.json records Jonas' visual approval of the animation (an approval card in the thread; file
+    checks never approve art).  It only counts while the parts are unchanged."""
+    path = folder / 'approval.json'
+    if not path.exists():
+        return None
+    rec = json.loads(path.read_text())
+    if rec.get('parts_sha256') != parts_sha(folder, sid):
+        print(f'{sid}: parts changed since approval.json, frames stay prototype_static')
+        return None
+    return {k: rec[k] for k in ('approved_by', 'date', 'quote', 'scope') if k in rec}
+
+
 def render(sid: str, review: str, paint: tuple | None = None, cutout: str = '') -> tuple[str, list, list]:
     """Render, validate and copy one species; returns (id, manifest entries, animations).
     paint = (folder, file pattern, painted pose): recolour every frame from four drawn poses.
@@ -48,7 +71,7 @@ def render(sid: str, review: str, paint: tuple | None = None, cutout: str = '') 
         if review:
             cmd += ['--sheet', str(Path(review) / f'{sid}_sheet.png'), '--gif', str(Path(review) / sid)]
         subprocess.run(cmd, cwd=ROOT, check=True, capture_output=True)
-        paint_sources = []
+        paint_sources, approved = [], None
         if cutout:
             out = Path(tmp) / f'{sid}_cutout'
             cmd = [sys.executable, str(ROOT / 'tools/cutout_rig.py'), '--species', sid, '--parts', cutout, '--out', str(out)]
@@ -60,6 +83,7 @@ def render(sid: str, review: str, paint: tuple | None = None, cutout: str = '') 
             parts = Path(cutout) / f'{sid}_parts.json'
             paint_sources.append({'file': str(parts.resolve().relative_to(GAME)), 'kind': 'cutout parts',
                                   'sha256': hashlib.sha256(parts.read_bytes()).hexdigest()})
+            approved = approval(Path(cutout), sid)
         if paint:
             folder, pattern, ref = paint
             out = Path(tmp) / f'{sid}_painted'
@@ -96,17 +120,19 @@ def render(sid: str, review: str, paint: tuple | None = None, cutout: str = '') 
                                     'species': sid, 'direction': d, 'state': state, 'frame': f,
                                     'source': f'Source_Generated/rig_full/{msid}_rig.json', 'source_sha256': rig_sha,
                                     'export_sha256': hashlib.sha256((ASSETS / name).read_bytes()).hexdigest(),
-                                    'status': 'prototype_static', 'production_approved': False, 'animation_ready': False,
+                                    'status': 'approved_animation' if approved else 'prototype_static',
+                                    'production_approved': bool(approved), 'animation_ready': bool(approved),
+                                    **({'approval': approved} if approved else {}),
                                     **({'paint_sources': paint_sources} if paint_sources else {}),
                                     'export': ('tools/cutout_rig.py: drawn rest-pose parts moved by the rig motion; parts pass the cutout check. '
                                                if cutout else
                                                ('tools/rig_paint_transfer.py: rig frame recoloured from the four drawn poses in paint_sources; '
                                                 if paint_sources else 'tools/rig_to_game.py: rig_animate.py render copied byte for byte; ')
-                                               + 'passes validate_rig_frames.py. ') + 'Not approved art.'})
+                                               + 'passes validate_rig_frames.py. ') + ('Approved by Jonas.' if approved else 'Not approved art.')})
                 animations.append({'name': f'{sid}_{state}_{d}', 'species': sid, 'state': state, 'direction': d,
                                    'frames': frames, 'fps': info['fps'], 'loop': info['loop'], 'origin': [72, 72],
-                                   'contact_frame': info['contact_frame'], 'validated_animation': False,
-                                   'production_approved': False})
+                                   'contact_frame': info['contact_frame'], 'validated_animation': bool(approved),
+                                   'production_approved': bool(approved)})
         return sid, entries, animations
 
 

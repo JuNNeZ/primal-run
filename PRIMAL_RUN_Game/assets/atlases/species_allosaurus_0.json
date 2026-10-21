@@ -46,8 +46,8 @@
     ],
     "h": 64,
     "w": 64,
-    "x": 731,
-    "y": 877
+    "x": 1899,
+    "y": 731
   },
   "assets/new_species/allosaurus_corpse.png": {
     "anchor": [
@@ -491,14 +491,15 @@
     "y": 1169
   },
   "assets/rig_full/allosaurus_death_W_000.png": {
+    "alias_of": "assets/rig_full/allosaurus_attack_W_005.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 147,
-    "y": 1315
+    "x": 439,
+    "y": 147
   },
   "assets/rig_full/allosaurus_death_W_001.png": {
     "anchor": [
@@ -508,7 +509,7 @@
     "h": 144,
     "w": 144,
     "x": 147,
-    "y": 1461
+    "y": 1315
   },
   "assets/rig_full/allosaurus_death_W_002.png": {
     "anchor": [
@@ -518,7 +519,7 @@
     "h": 144,
     "w": 144,
     "x": 147,
-    "y": 1607
+    "y": 1461
   },
   "assets/rig_full/allosaurus_death_W_003.png": {
     "anchor": [
@@ -528,7 +529,7 @@
     "h": 144,
     "w": 144,
     "x": 147,
-    "y": 1753
+    "y": 1607
   },
   "assets/rig_full/allosaurus_death_W_004.png": {
     "anchor": [
@@ -538,7 +539,7 @@
     "h": 144,
     "w": 144,
     "x": 147,
-    "y": 1899
+    "y": 1753
   },
   "assets/rig_full/allosaurus_death_W_005.png": {
     "anchor": [
@@ -547,8 +548,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 293
+    "x": 147,
+    "y": 1899
   },
   "assets/rig_full/allosaurus_hurt_E_000.png": {
     "anchor": [
@@ -557,7 +558,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
+    "x": 293,
     "y": 293
   },
   "assets/rig_full/allosaurus_hurt_E_001.png": {
@@ -567,7 +568,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
+    "x": 439,
     "y": 293
   },
   "assets/rig_full/allosaurus_hurt_N_000.png": {
@@ -577,7 +578,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
+    "x": 585,
     "y": 293
   },
   "assets/rig_full/allosaurus_hurt_N_001.png": {
@@ -587,7 +588,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
+    "x": 731,
     "y": 293
   },
   "assets/rig_full/allosaurus_hurt_S_000.png": {
@@ -597,7 +598,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
+    "x": 877,
     "y": 293
   },
   "assets/rig_full/allosaurus_hurt_S_001.png": {
@@ -607,7 +608,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
+    "x": 1023,
     "y": 293
   },
   "assets/rig_full/allosaurus_hurt_W_000.png": {
@@ -617,7 +618,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
+    "x": 1169,
     "y": 293
   },
   "assets/rig_full/allosaurus_hurt_W_001.png": {
@@ -627,7 +628,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
+    "x": 1315,
     "y": 293
   },
   "assets/rig_full/allosaurus_idle_E_000.png": {
@@ -637,7 +638,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
+    "x": 1461,
     "y": 293
   },
   "assets/rig_full/allosaurus_idle_E_001.png": {
@@ -647,7 +648,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
+    "x": 1607,
     "y": 293
   },
   "assets/rig_full/allosaurus_idle_E_002.png": {
@@ -657,7 +658,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
+    "x": 1753,
     "y": 293
   },
   "assets/rig_full/allosaurus_idle_E_003.png": {
@@ -667,8 +668,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 439
+    "x": 1899,
+    "y": 293
   },
   "assets/rig_full/allosaurus_idle_N_000.png": {
     "anchor": [
@@ -678,7 +679,7 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 585
+    "y": 439
   },
   "assets/rig_full/allosaurus_idle_N_001.png": {
     "anchor": [
@@ -688,7 +689,7 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 731
+    "y": 585
   },
   "assets/rig_full/allosaurus_idle_N_002.png": {
     "anchor": [
@@ -698,7 +699,7 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 877
+    "y": 731
   },
   "assets/rig_full/allosaurus_idle_N_003.png": {
     "anchor": [
@@ -708,7 +709,7 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 1023
+    "y": 877
   },
   "assets/rig_full/allosaurus_idle_S_000.png": {
     "anchor": [
@@ -718,7 +719,7 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 1169
+    "y": 1023
   },
   "assets/rig_full/allosaurus_idle_S_001.png": {
     "anchor": [
@@ -728,7 +729,7 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 1315
+    "y": 1169
   },
   "assets/rig_full/allosaurus_idle_S_002.png": {
     "anchor": [
@@ -738,7 +739,7 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 1461
+    "y": 1315
   },
   "assets/rig_full/allosaurus_idle_S_003.png": {
     "anchor": [
@@ -748,7 +749,7 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 1607
+    "y": 1461
   },
   "assets/rig_full/allosaurus_idle_W_000.png": {
     "anchor": [
@@ -758,17 +759,18 @@
     "h": 144,
     "w": 144,
     "x": 293,
-    "y": 1753
+    "y": 1607
   },
   "assets/rig_full/allosaurus_idle_W_001.png": {
+    "alias_of": "assets/rig_full/allosaurus_attack_W_005.png",
     "anchor": [
       72,
       72
     ],
     "h": 144,
     "w": 144,
-    "x": 293,
-    "y": 1899
+    "x": 439,
+    "y": 147
   },
   "assets/rig_full/allosaurus_idle_W_002.png": {
     "anchor": [
@@ -777,11 +779,10 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 439
+    "x": 293,
+    "y": 1753
   },
   "assets/rig_full/allosaurus_idle_W_003.png": {
-    "alias_of": "assets/rig_full/allosaurus_idle_W_001.png",
     "anchor": [
       72,
       72
@@ -798,7 +799,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
+    "x": 439,
     "y": 439
   },
   "assets/rig_full/allosaurus_run_E_001.png": {
@@ -808,7 +809,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
+    "x": 585,
     "y": 439
   },
   "assets/rig_full/allosaurus_run_E_002.png": {
@@ -818,7 +819,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
+    "x": 731,
     "y": 439
   },
   "assets/rig_full/allosaurus_run_E_003.png": {
@@ -828,7 +829,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
+    "x": 877,
     "y": 439
   },
   "assets/rig_full/allosaurus_run_E_004.png": {
@@ -838,7 +839,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
+    "x": 1023,
     "y": 439
   },
   "assets/rig_full/allosaurus_run_E_005.png": {
@@ -848,7 +849,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
+    "x": 1169,
     "y": 439
   },
   "assets/rig_full/allosaurus_run_N_000.png": {
@@ -858,7 +859,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
+    "x": 1315,
     "y": 439
   },
   "assets/rig_full/allosaurus_run_N_001.png": {
@@ -868,7 +869,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
+    "x": 1461,
     "y": 439
   },
   "assets/rig_full/allosaurus_run_N_002.png": {
@@ -878,7 +879,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
+    "x": 1607,
     "y": 439
   },
   "assets/rig_full/allosaurus_run_N_003.png": {
@@ -888,7 +889,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
+    "x": 1753,
     "y": 439
   },
   "assets/rig_full/allosaurus_run_N_004.png": {
@@ -898,8 +899,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 439,
-    "y": 585
+    "x": 1899,
+    "y": 439
   },
   "assets/rig_full/allosaurus_run_N_005.png": {
     "anchor": [
@@ -909,7 +910,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 731
+    "y": 585
   },
   "assets/rig_full/allosaurus_run_S_000.png": {
     "anchor": [
@@ -919,7 +920,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 877
+    "y": 731
   },
   "assets/rig_full/allosaurus_run_S_001.png": {
     "anchor": [
@@ -929,7 +930,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 1023
+    "y": 877
   },
   "assets/rig_full/allosaurus_run_S_002.png": {
     "anchor": [
@@ -939,7 +940,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 1169
+    "y": 1023
   },
   "assets/rig_full/allosaurus_run_S_003.png": {
     "anchor": [
@@ -949,7 +950,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 1315
+    "y": 1169
   },
   "assets/rig_full/allosaurus_run_S_004.png": {
     "anchor": [
@@ -959,7 +960,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 1461
+    "y": 1315
   },
   "assets/rig_full/allosaurus_run_S_005.png": {
     "anchor": [
@@ -969,7 +970,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 1607
+    "y": 1461
   },
   "assets/rig_full/allosaurus_run_W_000.png": {
     "anchor": [
@@ -979,7 +980,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 1753
+    "y": 1607
   },
   "assets/rig_full/allosaurus_run_W_001.png": {
     "anchor": [
@@ -989,7 +990,7 @@
     "h": 144,
     "w": 144,
     "x": 439,
-    "y": 1899
+    "y": 1753
   },
   "assets/rig_full/allosaurus_run_W_002.png": {
     "anchor": [
@@ -998,8 +999,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 585
+    "x": 439,
+    "y": 1899
   },
   "assets/rig_full/allosaurus_run_W_003.png": {
     "anchor": [
@@ -1008,7 +1009,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 731,
+    "x": 585,
     "y": 585
   },
   "assets/rig_full/allosaurus_run_W_004.png": {
@@ -1018,7 +1019,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 877,
+    "x": 731,
     "y": 585
   },
   "assets/rig_full/allosaurus_run_W_005.png": {
@@ -1028,7 +1029,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1023,
+    "x": 877,
     "y": 585
   },
   "assets/rig_full/allosaurus_walk_E_000.png": {
@@ -1038,7 +1039,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1169,
+    "x": 1023,
     "y": 585
   },
   "assets/rig_full/allosaurus_walk_E_001.png": {
@@ -1048,7 +1049,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1315,
+    "x": 1169,
     "y": 585
   },
   "assets/rig_full/allosaurus_walk_E_002.png": {
@@ -1058,7 +1059,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1461,
+    "x": 1315,
     "y": 585
   },
   "assets/rig_full/allosaurus_walk_E_003.png": {
@@ -1068,7 +1069,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1607,
+    "x": 1461,
     "y": 585
   },
   "assets/rig_full/allosaurus_walk_E_004.png": {
@@ -1078,7 +1079,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1753,
+    "x": 1607,
     "y": 585
   },
   "assets/rig_full/allosaurus_walk_E_005.png": {
@@ -1088,7 +1089,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
+    "x": 1753,
     "y": 585
   },
   "assets/rig_full/allosaurus_walk_N_000.png": {
@@ -1098,8 +1099,8 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 585,
-    "y": 731
+    "x": 1899,
+    "y": 585
   },
   "assets/rig_full/allosaurus_walk_N_001.png": {
     "anchor": [
@@ -1109,7 +1110,7 @@
     "h": 144,
     "w": 144,
     "x": 585,
-    "y": 877
+    "y": 731
   },
   "assets/rig_full/allosaurus_walk_N_002.png": {
     "anchor": [
@@ -1119,7 +1120,7 @@
     "h": 144,
     "w": 144,
     "x": 585,
-    "y": 1023
+    "y": 877
   },
   "assets/rig_full/allosaurus_walk_N_003.png": {
     "anchor": [
@@ -1129,7 +1130,7 @@
     "h": 144,
     "w": 144,
     "x": 585,
-    "y": 1169
+    "y": 1023
   },
   "assets/rig_full/allosaurus_walk_N_004.png": {
     "anchor": [
@@ -1139,7 +1140,7 @@
     "h": 144,
     "w": 144,
     "x": 585,
-    "y": 1315
+    "y": 1169
   },
   "assets/rig_full/allosaurus_walk_N_005.png": {
     "anchor": [
@@ -1149,7 +1150,7 @@
     "h": 144,
     "w": 144,
     "x": 585,
-    "y": 1461
+    "y": 1315
   },
   "assets/rig_full/allosaurus_walk_S_000.png": {
     "anchor": [
@@ -1159,7 +1160,7 @@
     "h": 144,
     "w": 144,
     "x": 585,
-    "y": 1607
+    "y": 1461
   },
   "assets/rig_full/allosaurus_walk_S_001.png": {
     "anchor": [
@@ -1169,7 +1170,7 @@
     "h": 144,
     "w": 144,
     "x": 585,
-    "y": 1753
+    "y": 1607
   },
   "assets/rig_full/allosaurus_walk_S_002.png": {
     "anchor": [
@@ -1179,9 +1180,19 @@
     "h": 144,
     "w": 144,
     "x": 585,
-    "y": 1899
+    "y": 1753
   },
   "assets/rig_full/allosaurus_walk_S_003.png": {
+    "anchor": [
+      72,
+      72
+    ],
+    "h": 144,
+    "w": 144,
+    "x": 585,
+    "y": 1899
+  },
+  "assets/rig_full/allosaurus_walk_S_004.png": {
     "anchor": [
       72,
       72
@@ -1191,7 +1202,7 @@
     "x": 731,
     "y": 731
   },
-  "assets/rig_full/allosaurus_walk_S_004.png": {
+  "assets/rig_full/allosaurus_walk_S_005.png": {
     "anchor": [
       72,
       72
@@ -1201,7 +1212,7 @@
     "x": 877,
     "y": 731
   },
-  "assets/rig_full/allosaurus_walk_S_005.png": {
+  "assets/rig_full/allosaurus_walk_W_000.png": {
     "anchor": [
       72,
       72
@@ -1211,7 +1222,7 @@
     "x": 1023,
     "y": 731
   },
-  "assets/rig_full/allosaurus_walk_W_000.png": {
+  "assets/rig_full/allosaurus_walk_W_001.png": {
     "anchor": [
       72,
       72
@@ -1221,7 +1232,7 @@
     "x": 1169,
     "y": 731
   },
-  "assets/rig_full/allosaurus_walk_W_001.png": {
+  "assets/rig_full/allosaurus_walk_W_002.png": {
     "anchor": [
       72,
       72
@@ -1231,7 +1242,7 @@
     "x": 1315,
     "y": 731
   },
-  "assets/rig_full/allosaurus_walk_W_002.png": {
+  "assets/rig_full/allosaurus_walk_W_003.png": {
     "anchor": [
       72,
       72
@@ -1241,7 +1252,7 @@
     "x": 1461,
     "y": 731
   },
-  "assets/rig_full/allosaurus_walk_W_003.png": {
+  "assets/rig_full/allosaurus_walk_W_004.png": {
     "anchor": [
       72,
       72
@@ -1251,16 +1262,6 @@
     "x": 1607,
     "y": 731
   },
-  "assets/rig_full/allosaurus_walk_W_004.png": {
-    "anchor": [
-      72,
-      72
-    ],
-    "h": 144,
-    "w": 144,
-    "x": 1753,
-    "y": 731
-  },
   "assets/rig_full/allosaurus_walk_W_005.png": {
     "anchor": [
       72,
@@ -1268,7 +1269,7 @@
     ],
     "h": 144,
     "w": 144,
-    "x": 1899,
+    "x": 1753,
     "y": 731
   }
 }

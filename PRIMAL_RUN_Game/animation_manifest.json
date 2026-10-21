@@ -10709,8 +10709,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_attack_N",
@@ -10732,8 +10732,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_attack_S",
@@ -10755,8 +10755,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_attack_W",
@@ -10778,8 +10778,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_death_E",
@@ -10801,8 +10801,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_death_N",
@@ -10824,8 +10824,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_death_S",
@@ -10847,8 +10847,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_death_W",
@@ -10870,8 +10870,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_hurt_E",
@@ -10889,8 +10889,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_hurt_N",
@@ -10908,8 +10908,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_hurt_S",
@@ -10927,8 +10927,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_hurt_W",
@@ -10946,8 +10946,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_idle_E",
@@ -10967,8 +10967,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_idle_N",
@@ -10988,8 +10988,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_idle_S",
@@ -11009,8 +11009,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_idle_W",
@@ -11030,8 +11030,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_run_E",
@@ -11053,8 +11053,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_run_N",
@@ -11076,8 +11076,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_run_S",
@@ -11099,8 +11099,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_run_W",
@@ -11122,8 +11122,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_walk_E",
@@ -11145,8 +11145,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_walk_N",
@@ -11168,8 +11168,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_walk_S",
@@ -11191,8 +11191,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "iguanodon_walk_W",
@@ -11214,8 +11214,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "leaellynasaura_attack_E",

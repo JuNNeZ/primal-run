@@ -84,8 +84,13 @@ test('rigSprites: every RIG_SPECIES has its 120 rig frames in the game, byte-ide
     const files = manifest.filter((e) => e.species === id);
     assert.equal(files.length, 120, id);
     for (const e of files) {
-      assert.equal(e.status, 'prototype_static');
-      assert.equal(e.production_approved, false);
+      if (e.approval) {  // Jonas approved this cutout's animation (approval.json next to its parts)
+        assert.equal(e.status, 'approved_animation');
+        assert.equal(e.production_approved, true);
+      } else {
+        assert.equal(e.status, 'prototype_static');
+        assert.equal(e.production_approved, false);
+      }
       assert.ok(fs.existsSync(path.join(game, e.file)), e.file);
       assert.ok(assets.includes('"' + e.file + '"'), 'not built into src/assets.js: ' + e.file);
     }
@@ -96,7 +101,8 @@ test('rigSprites: every RIG_SPECIES has its 120 rig frames in the game, byte-ide
   assert.equal(rex.length, 120);
   assert.ok(rex.every((e) => e.status === 'prototype_static' && e.production_approved === false && assets.includes('"' + e.file + '"')));
   assert.ok(!C.STATIC_SPECIES.has('tyrannosaurus'));
-  assert.equal(C.playerFrame('tyrannosaurus', 'death', 'W', 5), 'assets/rig_full/tyrannosaurus_death_W_005.png');
+  if (C.FEATURES.rexCutout) assert.equal(C.playerFrame('tyrannosaurus', 'death', 'W', 5), 'assets/rig_full/tyrannosaurus_death_W_005.png');
+  else assert.ok(C.playerFrame('tyrannosaurus', 'death', 'W', 5).includes('enemy_full/tyrannosaurus'));
   const {out} = render('leaellynasaura', 'walk,attack');
   for (const name of ['leaellynasaura_walk_E_003.png', 'leaellynasaura_attack_N_003.png'])
     assert.deepEqual(fs.readFileSync(path.join(out, name)), fs.readFileSync(path.join(game, 'assets/rig_full', name)), name);
@@ -165,4 +171,14 @@ test('cutout rig: four legs, wings and a borrowed motion get their own parts', (
   assert.ok(Math.abs(rig.motion_gain - 1) < 0.15, 'same legs, same stride: ' + rig.motion_gain);
   r = run(['tools/cutout_rig.py', '--species', 'tyrannosaurus', '--template', path.join(tmp, 'rex_tpl')]);
   assert.notEqual(r.status, 0);
+});
+
+test('cutout approval only holds for the exact parts Jonas saw', () => {
+  const game = path.join(ROOT, 'PRIMAL_RUN_Game');
+  const manifest = JSON.parse(fs.readFileSync(path.join(game, 'rig_full_manifest.json'), 'utf8'));
+  const approved = manifest.filter((e) => e.status === 'approved_animation');
+  assert.deepEqual([...new Set(approved.map((e) => e.species))], ['iguanodon']);
+  const r = run(['-c', "import sys; sys.path.insert(0, 'tools'); from pathlib import Path; import rig_to_game as R; "
+    + "f = Path('PRIMAL_RUN_Game/Source_Generated/cutout/iguanodon'); print(R.approval(f, 'iguanodon') is not None)"]);
+  assert.equal(r.stdout.trim(), 'True', r.stdout + r.stderr);
 });
