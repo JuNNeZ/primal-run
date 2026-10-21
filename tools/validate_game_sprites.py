@@ -8,6 +8,11 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 GAME = ROOT / 'PRIMAL_RUN_Game'
 manifest = json.loads((GAME / 'manifest.json').read_text())
+# Review-only HUD assets have a separate manifest; do not register them in runtime.
+hud_manifest = GAME / 'hud_icons_manifest.json'
+if hud_manifest.exists():
+    known = {entry['file'] for entry in manifest}
+    manifest += [entry for entry in json.loads(hud_manifest.read_text(encoding='utf-8')) if entry['file'] not in known]
 palette = {tuple(int(c[i:i+2], 16) for i in (1, 3, 5)) for c in json.loads((GAME / 'palette.json').read_text())['colors']}
 errors, stats = [], {}
 for entry in manifest:

@@ -1,0 +1,434 @@
+{
+  "result": "PASS",
+  "files": 30,
+  "groups": {
+    "relics": 20,
+    "sets": 4,
+    "loot": 6
+  },
+  "errors": [],
+  "production_approved": false,
+  "scope": "Native dimensions, RGBA, fixed palette, binary alpha, transparent RGB, padding, inventory, source reconstruction, hashes, 9-slice seams, armor number space. No runtime or visual approval.",
+  "icons": [
+    {
+      "id": "osteoderm_plates",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "colors": 7
+    },
+    {
+      "id": "osteoderm_plates_16",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        3,
+        2,
+        13,
+        14
+      ],
+      "colors": 3
+    },
+    {
+      "id": "horn_shield",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "colors": 7
+    },
+    {
+      "id": "horn_shield_16",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 4
+    },
+    {
+      "id": "club_knob",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "colors": 9
+    },
+    {
+      "id": "club_knob_16",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        13
+      ],
+      "colors": 4
+    },
+    {
+      "id": "feathered_arms",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "colors": 7
+    },
+    {
+      "id": "feathered_arms_16",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        3,
+        13,
+        13
+      ],
+      "colors": 5
+    },
+    {
+      "id": "keen_eye",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "colors": 8
+    },
+    {
+      "id": "keen_eye_16",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        3,
+        14,
+        13
+      ],
+      "colors": 4
+    },
+    {
+      "id": "sickle_claw",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "colors": 7
+    },
+    {
+      "id": "sickle_claw_16",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        3,
+        2,
+        14,
+        13
+      ],
+      "colors": 4
+    },
+    {
+      "id": "gizzard_stones",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "colors": 7
+    },
+    {
+      "id": "gizzard_stones_16",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        3,
+        14,
+        14
+      ],
+      "colors": 4
+    },
+    {
+      "id": "fat_hump",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "colors": 7
+    },
+    {
+      "id": "fat_hump_16",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        3,
+        14,
+        14
+      ],
+      "colors": 4
+    },
+    {
+      "id": "display_crest",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "colors": 7
+    },
+    {
+      "id": "display_crest_16",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 5
+    },
+    {
+      "id": "meteor_shard",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "colors": 7
+    },
+    {
+      "id": "meteor_shard_16",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 5
+    },
+    {
+      "id": "set_armor",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        2,
+        2,
+        22,
+        22
+      ],
+      "colors": 8
+    },
+    {
+      "id": "set_hunter",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        2,
+        2,
+        22,
+        22
+      ],
+      "colors": 8
+    },
+    {
+      "id": "set_survivor",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        2,
+        2,
+        22,
+        22
+      ],
+      "colors": 9
+    },
+    {
+      "id": "set_joker",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        2,
+        2,
+        22,
+        22
+      ],
+      "colors": 9
+    },
+    {
+      "id": "luck",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        4,
+        5,
+        22,
+        21
+      ],
+      "colors": 7
+    },
+    {
+      "id": "luck_card",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        5,
+        5,
+        28,
+        28
+      ],
+      "colors": 7
+    },
+    {
+      "id": "armor_points",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        2,
+        4,
+        16,
+        21
+      ],
+      "colors": 5
+    },
+    {
+      "id": "nest_cache",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        3,
+        4,
+        29,
+        28
+      ],
+      "colors": 10
+    },
+    {
+      "id": "relic_drop",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        4,
+        5,
+        20,
+        20
+      ],
+      "colors": 4
+    },
+    {
+      "id": "reel_frame",
+      "size": [
+        24,
+        24
+      ],
+      "bbox": [
+        0,
+        0,
+        24,
+        24
+      ],
+      "colors": 6
+    }
+  ]
+}
