@@ -54,7 +54,7 @@
       const order=REEL_TIERS.slice(0,ev.ceiling+1).reverse(),loops=calm()?0:3,items=[];
       for(let i=0;i<loops;i++)items.push(...order);items.push(...order.slice(0,order.indexOf(REEL_TIERS[ev.tier])+1));
       const strip=el.querySelector('.loot-strip'),name=t=>t===REEL_TIERS[ev.tier]&&ev.label?ev.label:C.MUTATION_RARITIES[t].name;
-      const pic=(t,i)=>C.FEATURES.hudIcons?(i===items.length-1&&ev.icon?`<img class="hud-icon" src="assets/hud_icons/${ev.icon}.png" alt="">`:hudIcon('rarity',t)):'';
+      const pic=(t,i)=>C.FEATURES.hudIconSet?(i===items.length-1&&ev.icon?`<img class="hud-icon" src="assets/hud_icons/${ev.icon}.png" alt="">`:hudIcon('rarity',t)):'';
       strip.innerHTML=items.map((t,i)=>`<b style="--rarity:${C.MUTATION_RARITIES[t].color}">${pic(t,i)}${tr(name(t))}</b>`).join('');
       el.hidden=false;el.classList.toggle('big',!!ev.big);el.classList.remove('locked');
       reel={ev,items,start:now??null,dur:calm()?0:1200,n:items.length,last:-1,strip,el};el.onclick=()=>finishReel(true);
@@ -69,11 +69,11 @@
       const r=reel;if(!r)return;reel=null;r.strip.style.transform=`translateY(${-(r.n-1)*100/r.n}%)`;r.el.style.setProperty('--rarity',C.MUTATION_RARITIES[REEL_TIERS[r.ev.tier]].color);r.el.classList.add('locked');
       audio.play('loot_lock',{tier:r.ev.tier});setTimeout(()=>{if(!reel)r.el.hidden=true;},skip?0:1400);
     }
-    // FEATURES.hudIcons: Codex' native HUD icons (assets/hud_icons, approval in approval.json); the old glyphs stay as fallback.
-    const hudIcon = (group, id) => C.FEATURES.hudIcons ? `<img class="hud-icon" src="assets/hud_icons/${group}/${id}.png" alt="" draggable="false">` : '';
+    // FEATURES.hudIconSet: Codex' native HUD icons (assets/hud_icons, approval in approval.json); the old glyphs stay as fallback.
+    const hudIcon = (group, id) => C.FEATURES.hudIconSet ? `<img class="hud-icon" src="assets/hud_icons/${group}/${id}.png" alt="" draggable="false">` : '';
     const RARITY_GLYPH = { common: '•', uncommon: '◆', rare: '✦', epic: '★', legendary: '♛', evolution: '❂', trophy: '♜' };
     const rarityMark = rarity => hudIcon('rarity', rarity) || RARITY_GLYPH[rarity] || '';
-    // Menu label: the icon when FEATURES.hudIcons is on, otherwise the old glyph and a space.
+    // Menu label: the icon when FEATURES.hudIconSet is on, otherwise the old glyph and a space.
     const mark = (group, id, glyph) => hudIcon(group, id) || glyph + ' ';
     const tagMark = tag => hudIcon('tags', tag) || C.MUTATION_TAGS[tag].glyph;
     // Achievements behind an off flag (fx FEATURES.relics) are not shown or counted.
@@ -1210,7 +1210,7 @@
       if(stacks>=2)parts.push('<span class="streak">'+tr('JAGTRUS')+' ×'+stacks+'</span>');
       for(const b of (C.buffsOf?C.buffsOf(r):[]))if(C.POWERUPS[b.type])parts.push('<span style="color:'+C.POWERUPS[b.type].color+'">'+tr(C.POWERUPS[b.type].name)+' '+Math.ceil(b.time)+'s</span>');
       if(r.extras&&r.extras.baby)parts.push('<span class="baby">'+tr('BABY')+' '+Math.round(100*babyScale(r))+' %</span>');
-      if(C.FEATURES.relics&&r.relics){const n=Object.keys(r.relics).length;if(n)parts.push('<span class="relic-count">'+(C.FEATURES.hudIcons?Object.keys(r.relics).map(id=>hudIcon('relics',id+'_16')).join(''):tr('RELIKVIER')+' ')+(C.FEATURES.hudIcons?'':n)+'</span>');}
+      if(C.FEATURES.relics&&r.relics){const n=Object.keys(r.relics).length;if(n)parts.push('<span class="relic-count">'+(C.FEATURES.hudIconSet?Object.keys(r.relics).map(id=>hudIcon('relics',id+'_16')).join(''):tr('RELIKVIER')+' ')+(C.FEATURES.hudIconSet?'':n)+'</span>');}
       if(C.FEATURES.rottenMeat&&r.extras){const x=r.extras;if(x.rot&&r.seconds<x.rot.until)parts.push('<span class="rotten">'+hudIcon('future','rotten_meat')+tr('RÅDDEN MAVE')+' '+Math.ceil(x.rot.until-r.seconds)+'s</span>');if(x.rotStacks)parts.push('<span class="rotten">'+tr('HÆRDET MAVE')+' ×'+x.rotStacks+'</span>');}
       if(r.extras&&r.extras.amber)parts.push('<span class="amber-count">'+tr('RAV')+' '+r.extras.amber+'/'+C.LEVELS.length+'</span>');
       const html=parts.join(' · ');if(chip.dataset.html!==html){chip.innerHTML=html;chip.dataset.html=html;}chip.hidden=!parts.length;

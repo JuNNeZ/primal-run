@@ -1,5 +1,5 @@
 'use strict';
-// FEATURES.hudIcons: Codex' native icons on the build screen (relics, relic sets), the mutation cards (rarity gems, tags)
+// FEATURES.hudIconSet: Codex' native icons on the build screen (relics, relic sets), the mutation cards (rarity gems, tags)
 // and the HUD relic chip. Every icon must load; with the flag off the old glyphs stay. PRIMAL_SHOTS=<dir> saves screenshots.
 const assert=require('node:assert/strict'),path=require('node:path');const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
 (async()=>{const browser=await chromium.launch(browserOptions());try{
@@ -10,7 +10,7 @@ const assert=require('node:assert/strict'),path=require('node:path');const {chro
  await page.locator('[data-action="start"]').click();await page.locator('[data-action="begin"]').click();
  const shots=process.env.PRIMAL_SHOTS,shot=async n=>{if(shots)await page.screenshot({path:path.join(shots,n+'.png')});};
  const icons=()=>page.evaluate(async()=>{const imgs=[...document.querySelectorAll('img.hud-icon')];await Promise.all(imgs.map(i=>i.complete?0:new Promise(r=>{i.onload=i.onerror=r;})));return imgs.map(i=>({src:i.getAttribute('src'),ok:i.naturalWidth>0}));});
- const choices=on=>page.evaluate(on=>{const F=PrimalCore.FEATURES;F.hudIcons=on;const g=primalRun.game,r=g.run;r.enemies=[];r.spawnTimer=999;r.health=r.maxHealth=1e6;
+ const choices=on=>page.evaluate(on=>{const F=PrimalCore.FEATURES;F.hudIconSet=on;const g=primalRun.game,r=g.run;r.enemies=[];r.spawnTimer=999;r.health=r.maxHealth=1e6;
    r.mutations.keenClaws=1;const pick=['common','rare','legendary'].map(k=>PrimalCore.MUTATIONS.find(m=>m.rarity===k&&g.mutationAvailable(m)&&m.tag)||PrimalCore.MUTATIONS.find(m=>m.rarity===k&&g.mutationAvailable(m)));
    g.phase='playing';primalRun.update(performance.now());r.choices=pick.map(m=>m.id);g.phase='mutation';primalRun.update(performance.now());return document.querySelector('.mutation-grid').textContent.includes('♛');},on);
  assert.equal(await choices(false),true,'flag off: the old ♛ glyph');assert.deepEqual(await icons(),[]);
