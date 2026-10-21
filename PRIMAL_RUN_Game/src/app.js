@@ -68,14 +68,19 @@
       const r=reel;if(!r)return;reel=null;r.strip.style.transform=`translateY(${-(r.n-1)*100/r.n}%)`;r.el.style.setProperty('--rarity',C.MUTATION_RARITIES[REEL_TIERS[r.ev.tier]].color);r.el.classList.add('locked');
       audio.play('loot_lock',{tier:r.ev.tier});setTimeout(()=>{if(!reel)r.el.hidden=true;},skip?0:1400);
     }
+    // FEATURES.hudIcons: Codex' native HUD icons (assets/hud_icons, approval in approval.json); the old glyphs stay as fallback.
+    const hudIcon = (group, id) => C.FEATURES.hudIcons ? `<img class="hud-icon" src="assets/hud_icons/${group}/${id}.png" alt="" draggable="false">` : '';
+    const RARITY_GLYPH = { common: '•', uncommon: '◆', rare: '✦', epic: '★', legendary: '♛', evolution: '❂', trophy: '♜' };
+    const rarityMark = rarity => hudIcon('rarity', rarity) || RARITY_GLYPH[rarity] || '';
+    const tagMark = tag => hudIcon('tags', tag) || C.MUTATION_TAGS[tag].glyph;
     // Achievements behind an off flag (fx FEATURES.relics) are not shown or counted.
     const achievementList = () => C.ACHIEVEMENTS.filter(a => !a.flag || C.FEATURES[a.flag]);
     // FEATURES.relics: owned relics and set progress on the build screen, coloured by rarity.
     function relicCards(r) {
       if (!C.FEATURES.relics || !C.FEATURES.lootTables || !r.relics) return '';
       const owned = Object.keys(r.relics).filter(id => C.RELICS[id]);
-      const cards = owned.map(id => { const x = C.RELICS[id], set = C.RELIC_SETS[x.set]; return `<article class="rarity-card relic-card" style="--rarity:${C.MUTATION_RARITIES[x.rarity].color}"><strong>${tr(x.name)}</strong><p>${tr('Relikvie')} · ${set ? tr(set.name) : tr('Alle sæt')} · ${tr(C.MUTATION_RARITIES[x.rarity].name)}</p><p>${tr(x.text)}</p></article>`; });
-      const sets = Object.entries(C.RELIC_SETS).map(([id, s]) => ({ s, n: C.relicSet(r, id) })).filter(x => x.n > 0).map(({ s, n }) => `<article class="rarity-card set-card" style="--rarity:#dfbc52"><strong>${tr(s.name)} ${Math.min(n, 3)}/3</strong><p>${n >= 2 ? '✓' : '○'} 2: ${tr(s.two)}</p><p>${n >= 3 ? '✓' : '○'} 3: ${tr(s.three)}</p></article>`);
+      const cards = owned.map(id => { const x = C.RELICS[id], set = C.RELIC_SETS[x.set]; return `<article class="rarity-card relic-card" style="--rarity:${C.MUTATION_RARITIES[x.rarity].color}"><strong>${hudIcon('relics', id)} ${tr(x.name)}</strong><p>${tr('Relikvie')} · ${set ? tr(set.name) : tr('Alle sæt')} · ${tr(C.MUTATION_RARITIES[x.rarity].name)}</p><p>${tr(x.text)}</p></article>`; });
+      const sets = Object.entries(C.RELIC_SETS).map(([id, s]) => ({ id, s, n: C.relicSet(r, id) })).filter(x => x.n > 0).map(({ id, s, n }) => `<article class="rarity-card set-card" style="--rarity:#dfbc52"><strong>${hudIcon('sets', 'set_' + id)} ${tr(s.name)} ${Math.min(n, 3)}/3</strong><p>${n >= 2 ? '✓' : '○'} 2: ${tr(s.two)}</p><p>${n >= 3 ? '✓' : '○'} 3: ${tr(s.three)}</p></article>`);
       return cards.concat(sets).join('');
     }
     function toast(text) { shell.querySelector('.toast').textContent = tr(text); toastUntil = performance.now() + 2600; }
@@ -233,10 +238,10 @@
           const m = C.MUTATIONS.find(m => m.id === id);
           const rarity = C.MUTATION_RARITIES[m.rarity], tag = m.tag && C.MUTATION_TAGS[m.tag];
           const rank = m.trophy || m.evolution ? `VALG ${i + 1} · ${m.trophy ? 'BOSSTROFÆ' : 'EVOLUTION'}` : `VALG ${i + 1} · RANG ${r.mutations[id]} → ${r.mutations[id] + 1} / ${m.max}`;
-          const card = `<button data-mutation="${id}" style="--rarity:${rarity.color}" class="rarity-card"><strong class="rarity-name">${({common:'•',uncommon:'◆',rare:'✦',epic:'★',legendary:'♛',evolution:'❂',trophy:'♜'})[m.rarity]} ${rarity.name.toUpperCase()}</strong>${imageTag('assets/ui/' + m.icon + '.png')}<small>${rank}</small><h2>${m.name}</h2><small>${m.species ? C.PLAYER_SPECIES[m.species].name.toUpperCase() : m.trophy ? 'BOSSTROFÆ' : "FÆLLES MUTATION"}</small>${tag ? `<small class="mutation-tag"><span aria-hidden="true">${tag.glyph}</span> <b>${tag.name}</b> <span>${Math.min(C.SET_SIZE, C.tagCount(r, m.tag))}/${C.SET_SIZE}</span></small>` : ''}<p>${m.text}</p>${m.evolution ? `<small class="evolution-recipe">${m.requires.map(([need, rank]) => `<b>${C.MUTATIONS.find(x => x.id === need).name}</b> ${rank}`).join(' + ')}</small>` : ''}${r.mutations[id]>0&&!m.trophy?'<small>BYG VIDERE · '+Math.round(Math.min(.4,.2*r.mutations[id])*100)+' % VALGVÆGT</small>':''}</button>`;
+          const card = `<button data-mutation="${id}" style="--rarity:${rarity.color}" class="rarity-card"><strong class="rarity-name">${rarityMark(m.rarity)} ${rarity.name.toUpperCase()}</strong>${imageTag('assets/ui/' + m.icon + '.png')}<small>${rank}</small><h2>${m.name}</h2><small>${m.species ? C.PLAYER_SPECIES[m.species].name.toUpperCase() : m.trophy ? 'BOSSTROFÆ' : "FÆLLES MUTATION"}</small>${tag ? `<small class="mutation-tag"><span aria-hidden="true">${tagMark(m.tag)}</span> <b>${tag.name}</b> <span>${Math.min(C.SET_SIZE, C.tagCount(r, m.tag))}/${C.SET_SIZE}</span></small>` : ''}<p>${m.text}</p>${m.evolution ? `<small class="evolution-recipe">${m.requires.map(([need, rank]) => `<b>${C.MUTATIONS.find(x => x.id === need).name}</b> ${rank}`).join(' + ')}</small>` : ''}${r.mutations[id]>0&&!m.trophy?'<small>BYG VIDERE · '+Math.round(Math.min(.4,.2*r.mutations[id])*100)+' % VALGVÆGT</small>':''}</button>`;
           const banish = game.banishLeft && game.banishLeft() > 0 && !m.evolution && !r.trophySelection ? `<button class="banish" data-banish="${id}">✕ UDELUK</button>` : '';
           return `<div class="mutation-option">${card}${banish}</div>`;
-        }).join('')}</div>${sets.length ? `<p class="set-progress">${sets.map(x => `<span class="${x.count >= C.SET_SIZE ? 'set-on' : ''}"><i aria-hidden="true">${x.t.glyph}</i> <b>${x.t.name}</b> <span>${Math.min(x.count, C.SET_SIZE)}/${C.SET_SIZE}</span>${x.count >= C.SET_SIZE ? ` <em>${C.SET_BONUSES[x.tag].name}</em>` : ''}</span>`).join('')}</p>` : ''}${game.rerollsLeft&&game.rerollsLeft()>0&&!r.trophySelection?`<div class="actions"><button data-reroll="1">NYE VALG · R · ${game.rerollsLeft()} TILBAGE</button></div>`:''}${game.banishLeft && game.banishLeft() > 0 && !r.trophySelection ? `<p class="fine">${I18N.tf('Udeluk fjerner et kort resten af runnet. {0} tilbage.', game.banishLeft())}</p>` : ''}</section>`;
+        }).join('')}</div>${sets.length ? `<p class="set-progress">${sets.map(x => `<span class="${x.count >= C.SET_SIZE ? 'set-on' : ''}"><i aria-hidden="true">${tagMark(x.tag)}</i> <b>${x.t.name}</b> <span>${Math.min(x.count, C.SET_SIZE)}/${C.SET_SIZE}</span>${x.count >= C.SET_SIZE ? ` <em>${C.SET_BONUSES[x.tag].name}</em>` : ''}</span>`).join('')}</p>` : ''}${game.rerollsLeft&&game.rerollsLeft()>0&&!r.trophySelection?`<div class="actions"><button data-reroll="1">NYE VALG · R · ${game.rerollsLeft()} TILBAGE</button></div>`:''}${game.banishLeft && game.banishLeft() > 0 && !r.trophySelection ? `<p class="fine">${I18N.tf('Udeluk fjerner et kort resten af runnet. {0} tilbage.', game.banishLeft())}</p>` : ''}</section>`;
       } else if (phase === 'exploration') {
         screen.innerHTML = `<section class="panel compact">${heading('VALGFRI RISIKO · SPILLET ER PAUSET', 'En bevogtet rede', 'Tag sjælden føde og væk den nærliggende elitevogter, eller lad reden være.')}<div class="actions"><button data-explore="leave">LAD DEN VÆRE</button><button class="primary" data-explore="take">TAG FØDEN · +${8 + r.stage * 2}</button></div></section>`;
       } else if (phase === 'cleared') {
@@ -1194,7 +1199,7 @@
       if(stacks>=2)parts.push('<span class="streak">'+tr('JAGTRUS')+' ×'+stacks+'</span>');
       for(const b of (C.buffsOf?C.buffsOf(r):[]))if(C.POWERUPS[b.type])parts.push('<span style="color:'+C.POWERUPS[b.type].color+'">'+tr(C.POWERUPS[b.type].name)+' '+Math.ceil(b.time)+'s</span>');
       if(r.extras&&r.extras.baby)parts.push('<span class="baby">'+tr('BABY')+' '+Math.round(100*babyScale(r))+' %</span>');
-      if(C.FEATURES.relics&&r.relics){const n=Object.keys(r.relics).length;if(n)parts.push('<span class="relic-count">'+tr('RELIKVIER')+' '+n+'</span>');}
+      if(C.FEATURES.relics&&r.relics){const n=Object.keys(r.relics).length;if(n)parts.push('<span class="relic-count">'+(C.FEATURES.hudIcons?Object.keys(r.relics).map(id=>hudIcon('relics',id+'_16')).join(''):tr('RELIKVIER')+' ')+(C.FEATURES.hudIcons?'':n)+'</span>');}
       if(r.extras&&r.extras.amber)parts.push('<span class="amber-count">'+tr('RAV')+' '+r.extras.amber+'/'+C.LEVELS.length+'</span>');
       const html=parts.join(' · ');if(chip.dataset.html!==html){chip.innerHTML=html;chip.dataset.html=html;}chip.hidden=!parts.length;
     }
