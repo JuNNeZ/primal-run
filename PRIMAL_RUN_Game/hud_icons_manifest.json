@@ -15,10 +15,10 @@
       16,
       16
     ],
-    "source": "tools/draw_hud_icons_ac.py: hand-plotted native integer pixels; independent small-chip drawings; no resizing",
-    "sha256": "f7dea3854e90b0b584741677b3228e576e6c3cbe1e772028249e2c9188f46c48",
-    "source_pixels": "Source_Generated/hud_icons/native_pixels_ac.json",
-    "source_sha256": "07931e5c87159113b5eac5a006edf2dbb8dbd3ab2772c71a2338f6d678b4128c"
+    "source": "Native hand-plotted pixel redraw following Jonas review: flat bone plates, four heart leaves, broad shield; no resizing. Indexed pixels: Source_Generated/hud_icons/native_pixels_redraw.json",
+    "sha256": "9d8f38a1982d6922b4d93e35a538f3d492672fbe1e996804d321a0a181909783",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_redraw.json",
+    "source_sha256": "b74c43c45674b901ca5a616a09d474d7bc2bf0e09a5cb90c265ec92a2dda0fc7"
   },
   {
     "file": "assets/hud_icons/relics/osteoderm_plates_16.png",
@@ -36,10 +36,10 @@
       8,
       8
     ],
-    "source": "tools/draw_hud_icons_ac.py: hand-plotted native integer pixels; independent small-chip drawings; no resizing",
-    "sha256": "3b215ab6c4cd5b86418b652494ae61ddcf8b2092793851fcf0fd481ab872727c",
-    "source_pixels": "Source_Generated/hud_icons/native_pixels_ac.json",
-    "source_sha256": "07931e5c87159113b5eac5a006edf2dbb8dbd3ab2772c71a2338f6d678b4128c"
+    "source": "Native hand-plotted pixel redraw following Jonas review: flat bone plates, four heart leaves, broad shield; no resizing. Indexed pixels: Source_Generated/hud_icons/native_pixels_redraw.json",
+    "sha256": "ccb8700d4307c46f56a4c4154c7e58635d3b6a2413d76c4b12c7bebbf2f06992",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_redraw.json",
+    "source_sha256": "b74c43c45674b901ca5a616a09d474d7bc2bf0e09a5cb90c265ec92a2dda0fc7"
   },
   {
     "file": "assets/hud_icons/relics/horn_shield.png",
@@ -519,10 +519,10 @@
       12,
       12
     ],
-    "source": "tools/draw_hud_icons_ac.py: hand-plotted native integer pixels; independent small-chip drawings; no resizing",
-    "sha256": "3b22eb4906f81deb89321015f02677ab8edfbd30b60b2cb4cbd28fab4e5224af",
-    "source_pixels": "Source_Generated/hud_icons/native_pixels_ac.json",
-    "source_sha256": "07931e5c87159113b5eac5a006edf2dbb8dbd3ab2772c71a2338f6d678b4128c"
+    "source": "Native hand-plotted pixel redraw following Jonas review: flat bone plates, four heart leaves, broad shield; no resizing. Indexed pixels: Source_Generated/hud_icons/native_pixels_redraw.json",
+    "sha256": "dcb7effd2065f1b3ad6f2afd467cd4e812a37fa73e793070a1dade5bf843b93c",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_redraw.json",
+    "source_sha256": "b74c43c45674b901ca5a616a09d474d7bc2bf0e09a5cb90c265ec92a2dda0fc7"
   },
   {
     "file": "assets/hud_icons/loot/luck_card.png",
@@ -561,10 +561,10 @@
       12,
       12
     ],
-    "source": "tools/draw_hud_icons_ac.py: hand-plotted native integer pixels; independent small-chip drawings; no resizing",
-    "sha256": "b72e7ea1e8fb4f2becd9c2863914e1c1f9e6a0dc9c43bc962413503b3f086ba6",
-    "source_pixels": "Source_Generated/hud_icons/native_pixels_ac.json",
-    "source_sha256": "07931e5c87159113b5eac5a006edf2dbb8dbd3ab2772c71a2338f6d678b4128c"
+    "source": "Native hand-plotted pixel redraw following Jonas review: flat bone plates, four heart leaves, broad shield; no resizing. Indexed pixels: Source_Generated/hud_icons/native_pixels_redraw.json",
+    "sha256": "a05d00a04e2473d51b9d242666d65ff8f5b4740733dae5b26aef606bb7acebe4",
+    "source_pixels": "Source_Generated/hud_icons/native_pixels_redraw.json",
+    "source_sha256": "b74c43c45674b901ca5a616a09d474d7bc2bf0e09a5cb90c265ec92a2dda0fc7"
   },
   {
     "file": "assets/hud_icons/loot/nest_cache.png",
