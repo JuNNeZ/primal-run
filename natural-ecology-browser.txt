@@ -1,0 +1,1 @@
+{"result":"PASS","engine":"Chrome browser; GDevelop NOT RUN","checks":["Baryonyx fishes with drink pose","fish strike uses attack frames, no charge","NPC windup has no player telegraph","no page errors"],"fishing":{"roam":111,"fish":56,"fishstrike":7}}
