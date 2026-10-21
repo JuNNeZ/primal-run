@@ -41,4 +41,7 @@ LOOT = [
 ("Relikvie", "Relic", "Relikt", "Relik", "Relikvie", "レリック", "遗物"),
 ("Alle sæt", "All sets", "Alle Sets", "Alla set", "Alle sett", "全セット", "所有套装"),
 ("RELIKVIE · {0}", "RELIC · {0}", "RELIKT · {0}", "RELIK · {0}", "RELIKVIE · {0}", "レリック · {0}", "遗物 · {0}"),
+# Loot: nest caches (FEATURES.nestCaches).
+("Rede-kiste", "Nest cache", "Nestschatz", "Bokista", "Reirkiste", "巣の宝", "巢穴宝箱"),
+("REDE-KISTE · {0} FUND", "NEST CACHE · {0} FINDS", "NESTSCHATZ · {0} FUNDE", "BOKISTA · {0} FYND", "REIRKISTE · {0} FUNN", "巣の宝 · {0} 個", "巢穴宝箱 · {0} 件"),
 ]

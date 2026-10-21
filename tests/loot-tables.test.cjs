@@ -124,3 +124,25 @@ test('relics do not move the main random stream',()=>{
   const run=on=>{const was=C.FEATURES.relics;C.FEATURES.relics=on;try{return killRun(true,99);}finally{C.FEATURES.relics=was;}};
   assert.equal(run(true).next,run(false).next);
 });
+
+// FEATURES.nestCaches: a guarded nest taken after its guard died opens a cache once; the old meat and egg stay.
+function nestTake(flags){
+  const keys=Object.keys(flags),was=keys.map(k=>C.FEATURES[k]);keys.forEach(k=>C.FEATURES[k]=flags[k]);
+  try{const g=relicGame(21),r=g.run,site=r.map.sites.find(s=>s.type==='nest');r.enemies=r.enemies.filter(e=>e.id!==site.guardId);
+    r.player.x=site.x;r.player.y=site.y;const dna=g.save.dna;assert.equal(g.interact(),true);g.explore(true);
+    const again=g.openNestCache(site);return {g,r,site,dna:g.save.dna-dna,again,events:g.drainEvents()};}
+  finally{keys.forEach((k,i)=>C.FEATURES[k]=was[i]);}
+}
+test('nest cache: off changes nothing; on opens once with 2+ finds on top of the old nest meat',()=>{
+  const off=nestTake({lootTables:true,nestCaches:false});assert.equal(off.r.stats.nestCaches,undefined);assert.ok(!off.events.some(e=>e.type==='nest_cache'));
+  const on=nestTake({lootTables:true,nestCaches:true});assert.equal(on.r.stats.nestCaches,1);assert.deepEqual(on.again,[],'a cache opens only once');
+  const ev=on.events.find(e=>e.type==='nest_cache');assert.ok(ev&&ev.count>=2);assert.ok(!ev.items.includes('relic'),'no relics while FEATURES.relics is off');
+  assert.ok(on.r.pickups.some(p=>p.kind==='meat'&&p.rarity===2),'the old nest meat is still there');
+});
+test('nest_cache table: two different finds at luck 1, relic only with the relics flag, luck adds rolls',()=>{
+  const loot=L.makeLoot(L.GAME_TABLES),rng=L.seeded(5);let relic=0,n=20000,extra=0;
+  for(let i=0;i<n;i++){const d=loot.roll('nest_cache',{luck:1,flags:{relics:false}},rng);assert.equal(d.length,2);assert.notEqual(d[0].id,d[1].id);assert.ok(d.every(x=>x.id!=='relic'));}
+  for(let i=0;i<n;i++){const d=loot.roll('nest_cache',{luck:1,flags:{relics:true}},rng);if(d.some(x=>x.id==='relic'))relic++;}
+  close(relic/n,1/8+3/8/5+2*(2/8/6),.012); // first pick, or second after dna (3) or meat/heal (2)
+  for(let i=0;i<n;i++)extra+=loot.roll('nest_cache',{luck:1.5,flags:{relics:true}},rng).length-2;close(extra/n,.5,.012);
+});

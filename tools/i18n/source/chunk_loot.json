@@ -154,5 +154,13 @@
  {
   "da": "RELIKVIE · {0}",
   "en": "RELIC · {0}"
+ },
+ {
+  "da": "Rede-kiste",
+  "en": "Nest cache"
+ },
+ {
+  "da": "REDE-KISTE · {0} FUND",
+  "en": "NEST CACHE · {0} FINDS"
  }
 ]

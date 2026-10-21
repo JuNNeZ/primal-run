@@ -217,6 +217,14 @@
     relic_rare: relicTier(RELIC_POOL.rare, [4, 6]),
     relic_epic: relicTier(RELIC_POOL.epic, [8, 10]),
     relic_legendary: relicTier(RELIC_POOL.legendary, [15, 20]),
+    // Rede-kiste (FEATURES.nestCaches): opens when a guarded nest is taken after its guard is dead. Two different rolls,
+    // plus one more per +100 % luck (fractions as a chance). The relic entry needs ctx.flags.relics; core rolls the relic itself.
+    nest_cache: { pools: [{ rolls: 2, unique: true, bonusRollsPerLuck: 1, entries: [
+      { id: 'relic', weight: 1, when: { flag: 'relics' } },
+      { id: 'dna', count: [3, 5], weight: 3 },
+      { id: 'meat', rarity: 3, weight: 2 },
+      { id: 'heal', weight: 2 },
+    ] }] },
     meat_common: meatTier('meat'), meat_uncommon: meatTier('meat'), meat_rare: meatTier('meat'), meat_epic: meatTier('meat'),
   };
 
