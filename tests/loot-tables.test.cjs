@@ -76,3 +76,14 @@ test('QUALITY cascade with pity lands on 1 % Legendary at luck 1, and pity is pe
     const first=g.loot;first.state.pity.quality=150;g.start({seed:10});const e2=g.spawn('compy',{x:g.run.player.x+200,y:g.run.player.y});g.kill(e2);
     assert.notEqual(g.loot,first);assert.equal(g.loot.state.pity.quality||0,0);});
 });
+
+test('armorPoints: off keeps -8 % per Sej hud rank; on uses K/(armor+K) with 10 points per rank plus relic armor',()=>{
+  const g=new C.Game({random:()=>.5});g.start({seed:5});const r=g.run,was=C.FEATURES.armorPoints;
+  try{
+    for(const rank of [0,1,2,3]){r.mutations.armor=rank;C.FEATURES.armorPoints=false;close(C.armorFactor(r),1-.08*rank,1e-12);
+      C.FEATURES.armorPoints=true;close(C.armorFactor(r),100/(100+10*rank),1e-12);}
+    r.mutations.armor=3;r.armorBonus=70;close(C.armorFactor(r),.5,1e-12);
+    const hit=on=>{C.FEATURES.armorPoints=on;r.armorBonus=0;r.mutations.armor=2;r.health=r.maxHealth=1000;r.invulnerable=0;r.shield=0;g.damage(10);return 1000-r.health;};
+    const a=hit(false),b=hit(true);assert.ok(a>0&&b>0,'hits land');close(b/a,(100/120)/.84,.02);
+  }finally{C.FEATURES.armorPoints=was;r.armorBonus=0;}
+});

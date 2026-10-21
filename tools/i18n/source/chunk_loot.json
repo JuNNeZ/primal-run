@@ -14,5 +14,9 @@
  {
   "da": "+# % held pr. rang.",
   "en": "+# % luck per rank."
+ },
+ {
+  "da": "+# panser pr. rang. Hvert point er lige meget værd.",
+  "en": "+# armor per rank. Every point is worth the same."
  }
 ]
