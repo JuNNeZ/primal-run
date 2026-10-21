@@ -47,3 +47,32 @@ test('flag on: kill() rewards once, elites keep the rare floor, and the main ran
   assert.equal(on.eliteKills,off.eliteKills);assert.equal(on.dna,off.dna);
   assert.deepEqual(killRun(true,4242).meat,on.meat,'loot stream is seeded from the run seed');
 });
+
+function withFlag(on,fn){const was=C.FEATURES.lootTables;C.FEATURES.lootTables=on;try{return fn();}finally{C.FEATURES.lootTables=was;}}
+test('luck: 1 with the flag off; lab, Heldig and Ekstinktion add up, capped at 2',()=>{
+  const g=new C.Game({random:()=>.5});g.start({seed:5});const r=g.run;
+  r.upgrades.luck=5;r.mutations.lucky=3;r.difficulty='extinction';
+  assert.equal(withFlag(false,()=>g.luck()),1);
+  withFlag(true,()=>close(g.luck(),1+5*C.LUCK.lab+3*C.LUCK.mutation+C.LUCK.difficulty.extinction,1e-12));
+  r.mutations.lucky=20;assert.equal(withFlag(true,()=>g.luck()),C.LUCK.cap);
+  r.upgrades.luck=0;r.mutations.lucky=0;r.difficulty='normal';assert.equal(withFlag(true,()=>g.luck()),1);
+});
+test('luck sources stay hidden with the flag off',()=>{
+  const g=new C.Game({random:()=>.5});g.start({seed:5});const m=C.MUTATIONS.find(x=>x.id==='lucky'),u=C.UPGRADES.find(x=>x.id==='luck');
+  const save={upgrades:{health:3,damage:0,regen:0,digestion:0,magnet:0}};
+  assert.equal(withFlag(false,()=>g.mutationAvailable(m)),false);assert.equal(withFlag(true,()=>g.mutationAvailable(m)),true);
+  assert.equal(withFlag(false,()=>C.upgradeUnlocked(save,u)),false);assert.equal(withFlag(true,()=>C.upgradeUnlocked(save,u)),true);
+});
+test('luck multiplies only Sjælden and up on mutation cards',()=>{
+  const by=r=>C.MUTATIONS.find(m=>m.rarity===r&&!m.species);
+  for(const r of ['common','uncommon'])assert.equal(C.mutationWeight(by(r),{},1.5),C.mutationWeight(by(r),{},1));
+  for(const r of ['rare','epic','legendary'])close(C.mutationWeight(by(r),{},1.5),1.5*C.mutationWeight(by(r),{},1),1e-12);
+});
+test('QUALITY cascade with pity lands on 1 % Legendary at luck 1, and pity is per run',()=>{
+  const loot=L.makeLoot({}),rng=L.seeded(11),n=400000;let leg=0;
+  for(let i=0;i<n;i++)if(loot.rollRarity(L.QUALITY,{},rng)===4)leg++;
+  close(leg/n,.01,.0008);
+  withFlag(true,()=>{const g=new C.Game({random:()=>.5});g.start({seed:9});const e=g.spawn('compy',{x:g.run.player.x+200,y:g.run.player.y});g.kill(e);
+    const first=g.loot;first.state.pity.quality=150;g.start({seed:10});const e2=g.spawn('compy',{x:g.run.player.x+200,y:g.run.player.y});g.kill(e2);
+    assert.notEqual(g.loot,first);assert.equal(g.loot.state.pity.quality||0,0);});
+});

@@ -9,15 +9,15 @@
   "source_sha256": {
     "src/run_titles.js": "11d200cfe8af66b5555bb7b23e1e676bdd8d80c398d458c967fbd3f0d435d06e",
     "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
-    "src/run_extras.js": "fd5c744d8ba596cd695d7dcbdd8733c00d97b940f2fc6f9aa384bf9b1c5ddd1a",
+    "src/run_extras.js": "bb451d2c0be1174f3273935f3072776ec0a623aa4b763ada3d073bb194df08ce",
     "src/telemetry.js": "b5cf2a84f30129c0d72874aadc5e6b45b695d1985856484be580004e76426b9c",
-    "src/loot.js": "f06e3ab02c5aac9307b6b1b261b474b88cb9865c52f9603156bd0072802a49df",
-    "src/core.js": "77620b90db45d5b547ac24acaacc50ffeabf9fdadfadca01859ca9ec8f05b08c",
+    "src/loot.js": "e77fcb5acbd257511ad6fdfe99bf767579f30e7d6e8e6e9739383ea2206add80",
+    "src/core.js": "dc9b77cac9e674ca7f935dc9d39d0865753a40612978efec09000b814cc4a278",
     "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
-    "src/lang.js": "d0e68920f86d1446bfe31d964a57ed931ccfb6c129b12f2835cd1e8abbe50fe0",
+    "src/lang.js": "e4dd56e4b3b6b233966052e2354d472a0267c1340dd21eea3f8cf7ba24cff098",
     "src/assets.js": "c803627143e4b6c7ba88d017a1df0767dd3108e673024bbd54241f67a00cf403",
     "src/audio.js": "f7763a55aae0c0b249b8c470b55baa44078b59d326f39380a3f60bdcd541f500",
-    "src/app.js": "b23ac919395613151b5b8d731d0f4f57b421d780f3897c801bbda0769776aac5",
+    "src/app.js": "3276870ec57161f0126d30c9d8e21822e32496824cd694be004c4c0f260d7ef1",
     "style.css": "266e7dda4b2f027083ac22c848c77e190399e5b7cb8c2fd13e5765e4ffeef2c3"
   }
 }

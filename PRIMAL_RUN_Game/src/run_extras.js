@@ -264,7 +264,7 @@
       }
       if (F.powerups && !e.boss) {
         if ((e.elite || e.rare) && POWERUP_SPAWN.eliteDrop) dropPowerup(this, e.x + 24, e.y);
-        else if (this.random() < POWERUP_SPAWN.killChance) dropPowerup(this, e.x + 24, e.y);
+        else if (this.random() < POWERUP_SPAWN.killChance * (this.luck ? this.luck() : 1)) dropPowerup(this, e.x + 24, e.y);
       }
       if (F.circadian && F.dayNight && r.night && !e.boss) { x.nightKills++; const bonus = Math.round((r.dna - dnaBefore) * (CIRCADIAN.nightDNA - 1)); if (bonus > 0) this.addDNA(bonus, true); }
       if (x.baby && e.boss) { const add = Math.round(x.baby.baseHP * BABY.perBoss * BABY.hp); x.baby.growth = Math.min(BABY.cap, x.baby.growth + BABY.perBoss); r.maxHealth += add; r.health = Math.min(r.maxHealth, r.health + add); r.effects.push({ x: r.player.x, y: r.player.y - 40, text: 'VOKSER', color: '#a8b15b', life: 1.2 }); }

@@ -241,7 +241,7 @@
   }
   const playerFrame=(species,state,direction,frame)=>cutoutFrame(species,state,direction,frame)||staticFrame(species,direction,state,frame)||(FEATURES.speciesAttacks&&state==='attack'&&['ankylosaurus','triceratops','pachycephalosaurus','gallimimus','parasaurolophus'].includes(species)?'assets/species_attacks/'+species+'_attack_'+direction+'_'+String(frame).padStart(3,'0')+'.png':legacyPlayerFrame(species,state,direction,frame));
   const abilityCost=r=>Math.max(16,PLAYER_SPECIES[r.species].abilityCost-2*r.mutations.deinonychus_common-5*r.mutations.crocEconomy-5*r.mutations.pounce+6*r.mutations.overclock-abilityDiscount(r));
-  const mutationWeight=(mutation,ranks)=>MUTATION_RARITIES[mutation.rarity].weight*(1+Math.min(.4,.2*(ranks[mutation.id]||0)));
+  const mutationWeight=(mutation,ranks,luck=1)=>MUTATION_RARITIES[mutation.rarity].weight*(1+Math.min(.4,.2*(ranks[mutation.id]||0)))*(luck!==1&&LUCK.lucky.includes(mutation.rarity)?luck:1);
   function seeded(seed) { let x = seed >>> 0; return () => { x += 0x6D2B79F5; let t = Math.imul(x ^ x >>> 15, 1 | x); t ^= t + Math.imul(t ^ t >>> 7, 61 | t); return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
   const MUTATIONS = [
     { id: 'teeth', name: 'Kraftigt angreb', text: '+20 % angrebsskade.', icon: 'serrated_teeth', max: 3 },
@@ -894,7 +894,7 @@
     abandon() { if (this.run && !this.run.result) this.finish(false); this.phase = 'menu'; }
     addDNA(amount,quiet=false) { this.save.dna += amount; this.run.dna += amount;this.run.stats.dna+=amount; this.persist(); this.emit('dna', { amount, quiet }); }
     addXP(amount) { this.run.xp += amount; this.maybeLevelUp(); }
-    mutationAvailable(m){const r=this.run;if(m.tradeoff&&!FEATURES.tradeoffMutations)return false;return (!m.species||m.species===r.species)&&(!m.diets||m.diets.includes(PLAYER_SPECIES[r.species].diet))&&r.mutations[m.id]<m.max;}
+    mutationAvailable(m){const r=this.run;if(m.tradeoff&&!FEATURES.tradeoffMutations)return false;if(m.flag&&!FEATURES[m.flag])return false;return (!m.species||m.species===r.species)&&(!m.diets||m.diets.includes(PLAYER_SPECIES[r.species].diet))&&r.mutations[m.id]<m.max;}
     offerRareReward(){
       const r=this.run;if(this.phase!=='playing'||!r.rareRewards)return false;r.rareRewards--;if(r.rareRewardSources?.length)r.rewardSource=r.rareRewardSources.shift();
       const pool=MUTATIONS.filter(m=>m.rarity==='epic'&&this.mutationAvailable(m));
@@ -927,15 +927,15 @@
     rollChoices(pool) {
       const r = this.run, choices = [];
       while (choices.length < this.choiceCount() && pool.length) {
-        const total = pool.reduce((sum, m) => sum + mutationWeight(m,r.mutations), 0);
+        const total = pool.reduce((sum, m) => sum + mutationWeight(m,r.mutations,runLuck(r)), 0);
         let roll = this.random() * total, index = pool.length - 1;
-        for (let i = 0; i < pool.length; i++) { roll -= mutationWeight(pool[i],r.mutations); if (roll < 0) { index = i; break; } }
+        for (let i = 0; i < pool.length; i++) { roll -= mutationWeight(pool[i],r.mutations,runLuck(r)); if (roll < 0) { index = i; break; } }
         choices.push(pool.splice(index, 1)[0].id);
       }
       // Species bias: until the run has an own-species mutation, one offer always shows one when any is left.
       if (FEATURES.speciesMutationBias && choices.length && !MUTATIONS.some(m => m.species === r.species && r.mutations[m.id] > 0) && !choices.some(id => MUTATIONS.find(m => m.id === id).species === r.species)) {
         const own = pool.filter(m => m.species === r.species);
-        if (own.length) { const total = own.reduce((sum, m) => sum + mutationWeight(m, r.mutations), 0); let roll = this.random() * total, pick = own[own.length - 1]; for (const m of own) { roll -= mutationWeight(m, r.mutations); if (roll < 0) { pick = m; break; } } choices[choices.length - 1] = pick.id; }
+        if (own.length) { const total = own.reduce((sum, m) => sum + mutationWeight(m, r.mutations, runLuck(r)), 0); let roll = this.random() * total, pick = own[own.length - 1]; for (const m of own) { roll -= mutationWeight(m, r.mutations, runLuck(r)); if (roll < 0) { pick = m; break; } } choices[choices.length - 1] = pick.id; }
       }
       return choices;
     }
@@ -1048,8 +1048,8 @@
         if (e.elite) { r.eliteKills++; this.addDNA(base.dna + r.stage + 2); if(!e.rare){r.rareRewards++; r.rewardSource='elite';(r.rareRewardSources||(r.rareRewardSources=[])).push('elite');} }
         if (e.rare) {this.addDNA(base.dna+3+r.stage);r.rareRewards++;r.rewardSource='albino';(r.rareRewardSources||(r.rareRewardSources=[])).push('albino'); const site = r.map.sites.find(s => s.animalId === e.id); if (site) site.claimed = true; }
         r.pickups.push({ id: ++this.nextId, kind: 'meat', corpseId:e.id, x: e.x, y: e.y, rarity, value: Math.ceil(base.meat * MEAT_RARITIES[rarity].multiplier) });
-        r.stats.dropRolls++;if (this.random() < base.chance) {r.stats.drops++;r.pickups.push({ id: ++this.nextId, kind: 'dna', x: clamp(e.x + 20, 48, r.map.width - 48), y: e.y, value: base.dna });}
-        if (this.random() < .10) r.pickups.push({ id: ++this.nextId, kind: 'heal', x: e.x, y: clamp(e.y + 18, 80, r.map.height - 54), value: 15 });
+        r.stats.dropRolls++;if (this.random() < base.chance * runLuck(r)) {r.stats.drops++;r.pickups.push({ id: ++this.nextId, kind: 'dna', x: clamp(e.x + 20, 48, r.map.width - 48), y: e.y, value: base.dna });}
+        if (this.random() < .10 * runLuck(r)) r.pickups.push({ id: ++this.nextId, kind: 'heal', x: e.x, y: clamp(e.y + 18, 80, r.map.height - 54), value: 15 });
         // Epic genome is the reward for the kill itself, offered at once on its own screen.
         if ((e.rare || e.elite) && this.phase === 'playing' && !r.processingEnemies) this.offerRareReward();
       }
@@ -1058,7 +1058,7 @@
     // so every other random event in the run stays identical and only the meat draw moves (same distribution as the thresholds).
     lootMeatRarity(e, base) {
       const r = this.run; if (!this.lootRandom) { this.lootRandom = seeded((r.seed ^ 0x10075EED) >>> 0); this.loot = LOOT.makeLoot(LOOT.GAME_TABLES); }
-      const drop = this.loot.roll('kill_meat', { kind: e.kind, meatSize: base.meat, elite: !!e.elite, albino: !!e.rare, floor: e.rare || e.elite ? 'rare' : 'common' }, this.lootRandom)[0];
+      const drop = this.loot.roll('kill_meat', { kind: e.kind, meatSize: base.meat, luck: runLuck(r), elite: !!e.elite, albino: !!e.rare, floor: e.rare || e.elite ? 'rare' : 'common' }, this.lootRandom)[0];
       return drop ? drop.rarity : 0;
     }
     awardFood(value,x,y,label='FØDE') {
@@ -2439,9 +2439,16 @@
     {id:'widerPool',name:'Bredere genpulje',text:'4 kort i hvert mutationstilbud i stedet for 3.',max:1,costs:[50],after:'secondWind'},
     {id:'memory',name:'Genetisk hukommelse',text:'+1 omvalg ved start pr. rang.',max:2,costs:[45,90],after:'widerPool'}
   );
+  // FEATURES.lootTables step 1: luck. One value per run (1,0, loft 2,0) that multiplies the Sjælden+ chances on meat,
+  // mutation cards and the DNA/heal/powerup drop rolls. Sources: lab track, the Heldig mutation, Ekstinktion (relics in step 3).
+  const LUCK={cap:2,lab:.04,mutation:.08,difficulty:{normal:0,extinction:.25},lucky:['rare','epic','legendary']};
+  UPGRADES.push({id:'luck',name:'Heldig stamme',text:'+'+Math.round(100*LUCK.lab)+' % held pr. rang. Held giver oftere sjælden loot og sjældne kort.',max:5,costs:[30,45,65,90,120],requires:3,flag:'lootTables'});
+  MUTATIONS.push({id:'lucky',name:'Heldig',text:'+'+Math.round(100*LUCK.mutation)+' % held pr. rang.',icon:'bone',max:3,rarity:'uncommon',tag:'food',flag:'lootTables'});
+  const runLuck=r=>!FEATURES.lootTables||!r?1:Math.min(LUCK.cap,1+LUCK.lab*((r.upgrades&&r.upgrades.luck)||0)+LUCK.mutation*((r.mutations&&r.mutations.lucky)||0)+(LUCK.difficulty[r.difficulty]||0));
+  Game.prototype.luck=function(){return runLuck(this.run);};
   const upgradePrice=(u,rank)=>u.costs?u.costs[Math.min(rank,u.costs.length-1)]:upgradeCost(rank);
   const baseRanks=save=>UPGRADES.filter(u=>!u.costs).reduce((n,u)=>n+(save.upgrades[u.id]||0),0);
-  const upgradeUnlocked=(save,u)=>!u.costs||FEATURES.labTracks&&(!u.requires||baseRanks(save)>=u.requires)&&(!u.after||(save.upgrades[u.after]||0)>=1);
+  const upgradeUnlocked=(save,u)=>(!u.flag||FEATURES[u.flag])&&(!u.costs||FEATURES.labTracks&&(!u.requires||baseRanks(save)>=u.requires)&&(!u.after||(save.upgrades[u.after]||0)>=1));
   function sanitizePartC(save,x){
     save.blueprints=[...new Set((Array.isArray(x.blueprints)?x.blueprints:[]).filter(id=>BLUEPRINTS.some(b=>b.id===id)))];
     save.mastery={};const mastery=x.mastery&&typeof x.mastery==='object'?x.mastery:{};
@@ -2573,7 +2580,7 @@
   Game.prototype.banishLeft=function(){const r=this.run;return FEATURES.banish&&r?(r.banishLeft??BANISH.perRun):0;};
   Game.prototype.masteryTier=function(id){return masteryTier(this.save,id);};
   Game.prototype.setBonuses=function(){const r=this.run;return r?Object.keys(MUTATION_TAGS).filter(tag=>setActive(r,tag)):[];};
-  const weightedPick=(g,list)=>{const total=list.reduce((n,m)=>n+Math.max(.01,mutationWeight(m,g.run.mutations)),0);let roll=g.random()*total;for(const m of list){roll-=Math.max(.01,mutationWeight(m,g.run.mutations));if(roll<0)return m;}return list[list.length-1];};
+  const weightedPick=(g,list)=>{const total=list.reduce((n,m)=>n+Math.max(.01,mutationWeight(m,g.run.mutations,runLuck(g.run))),0);let roll=g.random()*total;for(const m of list){roll-=Math.max(.01,mutationWeight(m,g.run.mutations,runLuck(g.run)));if(roll<0)return m;}return list[list.length-1];};
   const availablePartC=Game.prototype.mutationAvailable;
   Game.prototype.mutationAvailable=function(m){
     const r=this.run;
@@ -3298,7 +3305,7 @@
     const pool=MUTATIONS.filter(m=>this.mutationAvailable(m));if(!pool.length){this.addDNA(8);return this.offerRareReward();}
     r.choices=this.rollChoices(pool);r.rareSelection=false;this.phase='mutation';this.emit('level_up');return true;
   };
-  const API = { TOUGH, BOUNTY, deathTip, IDENTITY, STEALTH, PROP_SIZE, coverAt, EQUILIBRIUM, DIFFICULTIES, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, CUTOUT_SPECIES, cutoutFrame, STATIC_SPECIES, RIG_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, FISH_GAME, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, HUD_LAYOUTS, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  const API = { LUCK, runLuck, TOUGH, BOUNTY, deathTip, IDENTITY, STEALTH, PROP_SIZE, coverAt, EQUILIBRIUM, DIFFICULTIES, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, CUTOUT_SPECIES, cutoutFrame, STATIC_SPECIES, RIG_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, FISH_GAME, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, HUD_LAYOUTS, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
   if (EXTRAS) EXTRAS.install(API);
   if (TELEMETRY) TELEMETRY.install({ Game, FEATURES });
   return API;

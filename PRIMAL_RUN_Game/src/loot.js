@@ -186,8 +186,15 @@
   // Dagens kødtærskler fra kill() omregnet til top-down-chancer: P(trin) er præcis den samme som før.
   // [t1,t2,t3] = slaget >= t giver Nærende/Sjældent/Episk.
   function cascadeFromThresholds([t1, t2, t3]) {
-    return { mode: 'topdown', ceiling: 'epic', chances: { epic: 1 - t3, rare: (t3 - t2) / t3, uncommon: (t2 - t1) / t2 } };
+    return { mode: 'topdown', ceiling: 'epic', chances: { epic: 1 - t3, rare: (t3 - t2) / t3, uncommon: (t2 - t1) / t2 }, luckTiers: ['rare', 'epic'] };
   }
+  // Shared quality cascade for relics/caches (step 3). Pity is per run (state lives in the run's makeLoot()).
+  // Legendary .008 + pity after 180 rolls (+0,5 pp per roll) lands on 1,0 % overall at luck 1 (Jonas 2026-10-21);
+  // measured with 1e6 rolls: 1,01 %, median wait 85, worst 230.
+  const QUALITY = {
+    mode: 'topdown', chances: { legendary: 0.008, epic: 0.05, rare: 0.15, uncommon: 0.35 },
+    luckTiers: ['rare', 'epic', 'legendary'], pityKey: 'quality', pity: { after: 180, step: 0.005 },
+  };
   const MEAT_THRESHOLDS = { small: [.76, .95, .995], large: [.6, .88, .98], other: [.55, .8, .95] };
   const meatTier = id => ({ pools: [{ entries: [{ id }] }] });
   const GAME_TABLES = {
@@ -200,5 +207,5 @@
     meat_common: meatTier('meat'), meat_uncommon: meatTier('meat'), meat_rare: meatTier('meat'), meat_epic: meatTier('meat'),
   };
 
-  return { TIERS, GAME_TABLES, MEAT_THRESHOLDS, cascadeFromThresholds, seeded, makeLoot, rollRarity: (s, c, r) => rollRarity(s, c || {}, r || Math.random, { pity: {} }), rarityDistribution, CONDITIONS };
+  return { TIERS, GAME_TABLES, QUALITY, MEAT_THRESHOLDS, cascadeFromThresholds, seeded, makeLoot, rollRarity: (s, c, r) => rollRarity(s, c || {}, r || Math.random, { pity: {} }), rarityDistribution, CONDITIONS };
 });
