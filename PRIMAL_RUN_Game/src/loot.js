@@ -50,6 +50,7 @@
     hasMutation: (c, ctx) => !!(ctx.mutations || {})[c.hasMutation],
     notOwned: (c, ctx, rng, entry) => !(ctx.owned || {})[c.notOwned === true ? entry.id : c.notOwned],
     flag: (c, ctx) => !!(ctx.flags || {})[c.flag],
+    allOwned: (c, ctx) => [].concat(c.allOwned).every(id => (ctx.owned || {})[id]),   // fallback once a pool is used up
     meatSize: (c, ctx) => [].concat(c.meatSize).includes(ctx.meatSize),     // SPECIES[kind].meat for byttet
   };
   function check(cond, ctx, rng, entry) {
@@ -196,6 +197,12 @@
     luckTiers: ['rare', 'epic', 'legendary'], pityKey: 'quality', pity: { after: 180, step: 0.005 },
   };
   const MEAT_THRESHOLDS = { small: [.76, .95, .995], large: [.6, .88, .98], other: [.55, .8, .95] };
+  const RELIC_POOL = {
+    rare: ['osteoderm_plates', 'horn_shield', 'feathered_arms', 'keen_eye', 'gizzard_stones', 'fat_hump'],
+    epic: ['club_knob', 'sickle_claw', 'display_crest'],
+    legendary: ['meteor_shard'],
+  };
+  const relicTier = (ids, dna) => ({ pools: [{ entries: [...ids.map(id => ({ id, when: { notOwned: true } })), { id: 'dna', count: dna, when: { allOwned: ids } }] }] });
   const meatTier = id => ({ pools: [{ entries: [{ id }] }] });
   const GAME_TABLES = {
     // Kød ved drab af en almindelig NPC. Elite/albino sender ctx.floor:'rare' (som Math.max(2, …) i dag).
@@ -204,8 +211,14 @@
       { type: 'rarity', prefix: 'meat', cascade: cascadeFromThresholds(MEAT_THRESHOLDS.large), when: { meatSize: 3 } },
       { type: 'rarity', prefix: 'meat', cascade: cascadeFromThresholds(MEAT_THRESHOLDS.other), when: { not: { meatSize: [1, 3] } } },
     ] }] },
+    // Relics (FEATURES.relics): one per tier table, never twice in a run (ctx.owned), DNA only once the tier is used up.
+    relic_common: { pools: [{ entries: [{ id: 'dna', count: [1, 2] }] }] },
+    relic_uncommon: { pools: [{ entries: [{ id: 'dna', count: [2, 3] }] }] },
+    relic_rare: relicTier(RELIC_POOL.rare, [4, 6]),
+    relic_epic: relicTier(RELIC_POOL.epic, [8, 10]),
+    relic_legendary: relicTier(RELIC_POOL.legendary, [15, 20]),
     meat_common: meatTier('meat'), meat_uncommon: meatTier('meat'), meat_rare: meatTier('meat'), meat_epic: meatTier('meat'),
   };
 
-  return { TIERS, GAME_TABLES, QUALITY, MEAT_THRESHOLDS, cascadeFromThresholds, seeded, makeLoot, rollRarity: (s, c, r) => rollRarity(s, c || {}, r || Math.random, { pity: {} }), rarityDistribution, CONDITIONS };
+  return { TIERS, GAME_TABLES, QUALITY, RELIC_POOL, MEAT_THRESHOLDS, cascadeFromThresholds, seeded, makeLoot, rollRarity: (s, c, r) => rollRarity(s, c || {}, r || Math.random, { pity: {} }), rarityDistribution, CONDITIONS };
 });

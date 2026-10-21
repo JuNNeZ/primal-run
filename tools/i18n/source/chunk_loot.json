@@ -18,5 +18,141 @@
  {
   "da": "+# panser pr. rang. Hvert point er lige meget værd.",
   "en": "+# armor per rank. Every point is worth the same."
+ },
+ {
+  "da": "Osteodermplader",
+  "en": "Osteoderm plates"
+ },
+ {
+  "da": "Hornskjold",
+  "en": "Horn shield"
+ },
+ {
+  "da": "Køllehaleknude",
+  "en": "Club tail knob"
+ },
+ {
+  "da": "Fjerarme",
+  "en": "Feathered arms"
+ },
+ {
+  "da": "Skarpt øje",
+  "en": "Keen eye"
+ },
+ {
+  "da": "Seglklo",
+  "en": "Sickle claw"
+ },
+ {
+  "da": "Kråsesten",
+  "en": "Gizzard stones"
+ },
+ {
+  "da": "Fedtpukkel",
+  "en": "Fat hump"
+ },
+ {
+  "da": "Visningskam",
+  "en": "Display crest"
+ },
+ {
+  "da": "Meteorsplint",
+  "en": "Meteor shard"
+ },
+ {
+  "da": "+# panser.",
+  "en": "+# armor."
+ },
+ {
+  "da": "+# panser og +# % stamina-regeneration.",
+  "en": "+# armor and +# % stamina regeneration."
+ },
+ {
+  "da": "+# % fart.",
+  "en": "+# % speed."
+ },
+ {
+  "da": "+# % held og +# % opsamlingsradius.",
+  "en": "+# % luck and +# % pickup radius."
+ },
+ {
+  "da": "+# procentpoint kritisk chance.",
+  "en": "+# percentage points crit chance."
+ },
+ {
+  "da": "Føde heler # ekstra liv pr. portion.",
+  "en": "Food heals # extra health per portion."
+ },
+ {
+  "da": "+# % held og +# % DNA.",
+  "en": "+# % luck and +# % DNA."
+ },
+ {
+  "da": "+# % held og +# panser. Tæller i alle sæt.",
+  "en": "+# % luck and +# armor. Counts for every set."
+ },
+ {
+  "da": "Panser",
+  "en": "Armor"
+ },
+ {
+  "da": "+# % held.",
+  "en": "+# % luck."
+ },
+ {
+  "da": "+# % DNA.",
+  "en": "+# % DNA."
+ },
+ {
+  "da": "# % af den skade, du tager, rammer angriberen.",
+  "en": "# % of the damage you take hits the attacker."
+ },
+ {
+  "da": "Hvert drab giver # stamina.",
+  "en": "Every kill gives # stamina."
+ },
+ {
+  "da": "Overlev ét dødeligt slag pr. run med # liv.",
+  "en": "Survive one lethal hit per run with # health."
+ },
+ {
+  "da": "Levende kampvogn",
+  "en": "Living tank"
+ },
+ {
+  "da": "Spidsjæger",
+  "en": "Apex hunter"
+ },
+ {
+  "da": "Sejlivet",
+  "en": "Hard to kill"
+ },
+ {
+  "da": "Saml hele Panser-sættet i ét run.",
+  "en": "Collect the full Armor set in one run."
+ },
+ {
+  "da": "Saml hele Jæger-sættet i ét run.",
+  "en": "Collect the full Hunter set in one run."
+ },
+ {
+  "da": "Saml hele Overlever-sættet i ét run.",
+  "en": "Collect the full Survivor set in one run."
+ },
+ {
+  "da": "RELIKVIER",
+  "en": "RELICS"
+ },
+ {
+  "da": "Relikvie",
+  "en": "Relic"
+ },
+ {
+  "da": "Alle sæt",
+  "en": "All sets"
+ },
+ {
+  "da": "RELIKVIE · {0}",
+  "en": "RELIC · {0}"
  }
 ]
