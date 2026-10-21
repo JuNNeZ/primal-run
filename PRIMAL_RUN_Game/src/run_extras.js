@@ -60,6 +60,11 @@
     regen:   { name: 'SELVHELENDE', color: '#69a4a0', regen: .02 },
   };
   const AFFIX_ORDER = ['brutal', 'armored', 'swift', 'thorns', 'regen'];
+  // FEATURES.affixStages (loot step 5): later levels stack more traits on one elite (count by level index, the ash level
+  // uses the last). Every trait past the first pays: +2 DNA on the kill and +25 % luck on its meat roll (lootTables).
+  const AFFIX_STAGES = { count: [1, 1, 1, 2, 2, 2, 3, 3], dna: 2, luck: .25 };
+  const hasAffix = (e, a) => e.affix === a || !!(e.affixes && e.affixes.includes(a));
+  const affixCount = r => AFFIX_STAGES.count[Math.min(r.levelIndex || 0, AFFIX_STAGES.count.length - 1)];
   // Hard baby start (optional, menu toggle): 60 % health, 70 % damage, 25 % less XP per level; each boss kill grows
   // you +15 % (up to 115 % damage). 50 % more DNA for the whole run.
   const BABY = { hp: .6, damage: .7, perBoss: .15, cap: 1.15, xp: .75, dna: 1.5, scale: .72, hatch: 1.6 };
@@ -178,7 +183,7 @@
       for (const [e, hp] of before) {
         const d = hp - e.hp; if (!(d > 0)) continue; hit = true;
         const extra = d * (k - 1); e.hp -= extra; dealt += d + extra; if (extra > 0) r.stats.damageDealt += extra;
-        if (F.eliteAffixes && e.affix === 'thorns' && e.hp > 0) this.damage(ELITE_AFFIXES.thorns.thorns, { ...e, hazard: true, thorns: true });
+        if (F.eliteAffixes && hasAffix(e, 'thorns') && e.hp > 0) this.damage(ELITE_AFFIXES.thorns.thorns, { ...e, hazard: true, thorns: true });
       }
       if (hit) {
         if (forced) { x.comet--; if (x.comet <= 0) x.buffs.comet = 0; }
@@ -230,7 +235,7 @@
         } else if (entity && entity.kind) {
           let k = 1;
           if (timed(r, 'frost') && dist(entity, r.player) < POWERUP_SPAWN.frostRange) k *= .5;
-          if (F.eliteAffixes && entity.affix === 'swift') k *= ELITE_AFFIXES.swift.speed;
+          if (F.eliteAffixes && hasAffix(entity, 'swift')) k *= ELITE_AFFIXES.swift.speed;
           const night = predatorBoost(r, entity); if (night) k *= 1 + CIRCADIAN.speed * night;
           dx *= k; dy *= k;
         }
@@ -243,7 +248,7 @@
     G.damage = function (amount, source) {
       const r = this.run;
       if (r && source && !source.hazard) {
-        if (F.eliteAffixes && source.affix === 'brutal') amount *= ELITE_AFFIXES.brutal.damage;
+        if (F.eliteAffixes && hasAffix(source, 'brutal')) amount *= ELITE_AFFIXES.brutal.damage;
         const night = predatorBoost(r, source); if (night) amount *= 1 + CIRCADIAN.damage * night;
       }
       return damage.call(this, amount, source);
@@ -256,6 +261,7 @@
       const out = kill.call(this, e);
       if (!fresh || !e.rewarded || !this.run) return out;
       const x = X(r);
+      if (F.eliteAffixes && F.affixStages && e.affixes && e.affixes.length > 1) this.addDNA(AFFIX_STAGES.dna * (e.affixes.length - 1));
       if (F.huntStreak && !e.boss) {
         x.streak = r.seconds - x.lastKillAt <= STREAK.window ? Math.min(STREAK.max, x.streak + 1) : 1; x.lastKillAt = r.seconds;
         x.streakMax = Math.max(x.streakMax || 0, x.streak);
@@ -336,7 +342,9 @@
       }
       if (F.eliteAffixes) for (const e of r.enemies) if (e.elite && !e.affix && !e.boss) {
         e.affix = AFFIX_ORDER[(e.id * 7 + r.levelIndex) % AFFIX_ORDER.length];
-        if (e.affix === 'armored') { e.hp *= ELITE_AFFIXES.armored.hp; e.maxHP *= ELITE_AFFIXES.armored.hp; }
+        if (F.affixStages) { const first = AFFIX_ORDER.indexOf(e.affix), step = 1 + e.id % 4, n = affixCount(r);
+          e.affixes = Array.from({ length: n }, (_, i) => AFFIX_ORDER[(first + i * step) % AFFIX_ORDER.length]); e.lootLuck = AFFIX_STAGES.luck * (n - 1); }
+        if (hasAffix(e, 'armored')) { e.hp *= ELITE_AFFIXES.armored.hp; e.maxHP *= ELITE_AFFIXES.armored.hp; }
       }
       if (F.circadian && F.dayNight) {
         const phase = dayPhase(r.seconds);
@@ -349,7 +357,7 @@
       const out = step.call(this, dt, input);
       if (!this.run || this.run !== r) return out;
       if (r.stats.abilities > abilitiesBefore) { const t = twistOf(r); if (t) applyTwist(this, r, t); }
-      if (F.eliteAffixes) for (const e of r.enemies) if (e.affix === 'regen' && e.hp > 0 && e.hp < e.maxHP) e.hp = Math.min(e.maxHP, e.hp + e.maxHP * ELITE_AFFIXES.regen.regen * dt);
+      if (F.eliteAffixes) for (const e of r.enemies) if (hasAffix(e, 'regen') && e.hp > 0 && e.hp < e.maxHP) e.hp = Math.min(e.maxHP, e.hp + e.maxHP * ELITE_AFFIXES.regen.regen * dt);
       if (F.huntStreak && x.streak && r.seconds - x.lastKillAt > STREAK.window) x.streak = 0;
       const every = ECOLOGY.trailEvery[Math.min(r.levelIndex, ECOLOGY.trailEvery.length - 1)];
       if (F.ecologyPressure && every && r.health < r.maxHealth * ECOLOGY.trailBelow && (x.trailClock += dt) >= every) {
@@ -465,11 +473,11 @@
     };
 
     // Exposed for the renderer, the HUD and tests.
-    Object.assign(C, { CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
+    Object.assign(C, { CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
       extrasOf: r => r && r.extras || null,
       streakOf: r => (r && r.extras && F.huntStreak ? r.extras.streak : 0),
       buffsOf: r => (r && r.extras ? Object.entries(r.extras.buffs).filter(([, t]) => t > 0).map(([type, time]) => ({ type, time })) : []) });
   }
 
-  return { install, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, BABY, CIRCADIAN, AMBER };
+  return { install, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, BABY, CIRCADIAN, AMBER };
 });

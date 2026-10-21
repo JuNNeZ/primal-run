@@ -121,3 +121,22 @@ test('raptor pack is capped by species strength: Spinosaurus recruits none, Bary
   assert.equal(C.packLimitOf({ species: 'spinosaurus' }), 0); assert.equal(C.packLimitOf({ species: 'compy' }), 2);
   assert.equal(C.PACK.max, 2, 'the cap is restored after each feed');
 });
+
+test('affixStages: later levels stack distinct traits on one elite, and each extra trait pays', () => {
+  const flag = C.FEATURES.affixStages, elite = (on, level) => {
+    C.FEATURES.affixStages = on;
+    const g = make(), r = g.run; r.levelIndex = level; const e = g.spawn('carnotaurus', { x: r.player.x + 400, y: r.player.y }); e.elite = true; g.step(1 / 30, {}); return { g, r, e };
+  };
+  try {
+    const off = elite(false, 6); assert.equal(off.e.affixes, undefined); assert.ok(C.ELITE_AFFIXES[off.e.affix]);
+    for (const [level, n] of [[0, 1], [3, 2], [6, 3], [7, 3]]) {
+      const { e } = elite(true, level); assert.equal(e.affixes.length, n, 'level ' + level); assert.equal(new Set(e.affixes).size, n, 'distinct');
+      assert.equal(e.affixes[0], e.affix); close(e.lootLuck, C.AFFIX_STAGES.luck * (n - 1));
+    }
+    const { g, r, e } = elite(true, 6); e.affixes = ['brutal', 'swift', 'thorns']; assert.ok(C.hasAffix(e, 'thorns')); assert.ok(!C.hasAffix(e, 'regen'));
+    const base = elite(true, 6); base.e.affixes = [base.e.affix];
+    const dna = (game, foe) => { const before = game.run.dna; game.kill(foe); game.kill(foe); return game.run.dna - before; };
+    assert.equal(dna(g, e) - dna(base.g, base.e), 2 * C.AFFIX_STAGES.dna, 'two extra traits give +4 DNA once');
+  } finally { C.FEATURES.affixStages = flag; }
+});
+function close(a, b) { assert.ok(Math.abs(a - b) < 1e-9, a + ' vs ' + b); }
