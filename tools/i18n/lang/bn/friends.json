@@ -1,0 +1,14 @@
+{
+ "{0} udfordrer dig!": "{0} তোমাকে চ্যালেঞ্জ করেছে!",
+ "{0} point som {1} · Bane {2}": "{1} হিসেবে {0} পয়েন্ট · ধাপ {2}",
+ "TAG UDFORDRINGEN": "চ্যালেঞ্জ গ্রহণ করো",
+ "Du slog {0}: {1} mod {2}": "তুমি {0}-কে হারিয়েছ: {1} বনাম {2}",
+ "Uafgjort mod {0}: {1} mod {2}": "{0}-এর সাথে ড্র: {1} বনাম {2}",
+ "{0} vandt: {1} mod {2}": "{0} জিতেছে: {1} বনাম {2}",
+ "UDFORDR EN VEN": "বন্ধুকে চ্যালেঞ্জ করো",
+ "Slå {0}: {1} point": "{0}-কে হারাও: {1} পয়েন্ট",
+ "Du har ikke låst arten op endnu, så du spiller med din egen": "তুমি এখনও এই প্রজাতি আনলক করোনি, তাই নিজেরটা দিয়ে খেলবে",
+ "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "PRIMAL RUN-এ আমাকে হারাতে পারবে? {1} হিসেবে {0} পয়েন্ট",
+ "Udfordrings-link kopieret": "চ্যালেঞ্জ লিংক কপি হয়েছে",
+ "Linket kunne ikke kopieres": "লিংক কপি করা যায়নি"
+}

@@ -1,0 +1,14 @@
+{
+ "{0} udfordrer dig!": "{0} sana meydan okuyor!",
+ "{0} point som {1} · Bane {2}": "{1} olarak {0} puan · Bölüm {2}",
+ "TAG UDFORDRINGEN": "MEYDAN OKUMAYI KABUL ET",
+ "Du slog {0}: {1} mod {2}": "{0} adlı oyuncuyu yendin: {1} - {2}",
+ "Uafgjort mod {0}: {1} mod {2}": "{0} ile berabere: {1} - {2}",
+ "{0} vandt: {1} mod {2}": "{0} kazandı: {1} - {2}",
+ "UDFORDR EN VEN": "BİR ARKADAŞINA MEYDAN OKU",
+ "Slå {0}: {1} point": "{0} adlı oyuncuyu geç: {1} puan",
+ "Du har ikke låst arten op endnu, så du spiller med din egen": "Bu türün kilidini henüz açmadın, bu yüzden kendi türünle oynuyorsun",
+ "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "PRIMAL RUN'da beni yenebilir misin? {1} olarak {0} puan",
+ "Udfordrings-link kopieret": "Meydan okuma bağlantısı kopyalandı",
+ "Linket kunne ikke kopieres": "Bağlantı kopyalanamadı"
+}
