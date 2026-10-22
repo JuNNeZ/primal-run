@@ -1,0 +1,1 @@
+PASS A6: 90112 exact lava/damage pixel checks, crossing refresh, diet/HUD/Part C icons, rollback, pause and 390px
