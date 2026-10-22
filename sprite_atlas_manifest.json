@@ -58038,13 +58038,13 @@
   "max_dimension": 2048,
   "padding": 1,
   "pixels": "unaltered RGBA; no scaling or palette conversion; exact duplicate aliases only",
-  "png_bytes": 11262269,
+  "png_bytes": 11244170,
   "sheets": [
     {
       "file": "assets/atlases/species_allosaurus_0.png",
       "frames": 127,
       "group": "species_allosaurus",
-      "sha256": "9ccf5544ae92a8ef35f613d0bdd8b69644969527825be0f8156e6ccfb69caac2",
+      "sha256": "5b484d1ee015597f322cd5c379d257d72139dc6ebf06d08da7fd88c9852c1cbd",
       "size": [
         2044,
         2044
@@ -58341,7 +58341,7 @@
       "file": "assets/atlases/species_tyrannosaurus_0.png",
       "frames": 216,
       "group": "species_tyrannosaurus",
-      "sha256": "5f4cbeb2a61900ad36b948d0aefb18ece3565949f31fbaa633afec3a4b32c4ee",
+      "sha256": "9a906764506faf3d1e9e78e1dbc62c6334f30c28fbe909d8811bbfdec29b6ec5",
       "size": [
         2044,
         2044
@@ -58352,7 +58352,7 @@
       "file": "assets/atlases/species_tyrannosaurus_1.png",
       "frames": 109,
       "group": "species_tyrannosaurus",
-      "sha256": "94807ceb30a6127d692f604b04bdc2a2817c68c9e9c0257fcce1c24c61ab15cb",
+      "sha256": "2971d91daf1a013ed4acbe4c619fd32b71471d4e04b87b323f49d8e1656f8987",
       "size": [
         2044,
         2044
