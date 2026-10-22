@@ -1,0 +1,2 @@
+{"off":{"names":[228,231],"between":2,"sample":["txt:Gallimimus","txt:⚠ Triceratops","txt:DIG · Deinonychus","txt:DIG • / BOSS ◆","txt:Gallimimus","txt:»","txt:⚠ Triceratops","txt:DIG · Deinonychus","txt:DIG • / BOSS ◆"]},"on":{"names":[261,263],"between":0,"sample":["txt:Gallimimus","txt:»","txt:⚠ Triceratops","txt:DIG · Deinonychus","txt:DIG • / BOSS ◆","txt:Gallimimus","txt:»","txt:⚠ Triceratops","txt:DIG · Deinonychus","txt:DIG • / BOSS ◆"]}}
+PASS: world text and bars draw above every depth-sorted sprite
