@@ -1,5 +1,7 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),C=require('../PRIMAL_RUN_Game/src/core.js');
+// These tests pin the classic game: the loot core (on since 2026-10-22) has its own tests in loot-tables.test.cjs.
+for (const f of ['lootTables', 'armorPoints', 'lootReveal', 'relics', 'nestCaches']) C.FEATURES[f] = false;
 C.FEATURES.tougherCombat = false; // exact pre-poise windup timings; tests/tougher-combat.test.cjs covers the new rules
 function setup(species='compy'){const g=new C.Game({random:()=>.9});g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:33});Object.assign(g.run,{enemies:[],spawnTimer:999});Object.assign(g.run.map,{rocks:[],cover:[],mud:[],events:[],sites:[]});return g;}
 test('abilities consume their full stamina cost and recovery pauses after casting',()=>{for(const species of Object.keys(C.PLAYER_SPECIES)){const g=setup(species),r=g.run;g.step(.02,{x:1,pounce:true});assert.equal(r.stamina,100-C.PLAYER_SPECIES[species].abilityCost);const after=r.stamina;for(let i=0;i<20;i++)g.step(.05);assert.equal(r.stamina,after);g.phase='mutation';const frozen=JSON.stringify(r);g.step(.05);assert.equal(JSON.stringify(r),frozen);}});
