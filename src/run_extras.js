@@ -60,6 +60,11 @@
     regen:   { name: 'SELVHELENDE', color: '#69a4a0', regen: .02 },
   };
   const AFFIX_ORDER = ['brutal', 'armored', 'swift', 'thorns', 'regen'];
+  // FEATURES.affixStages (loot step 5): later levels stack more traits on one elite (count by level index, the ash level
+  // uses the last). Every trait past the first pays: +2 DNA on the kill and +25 % luck on its meat roll (lootTables).
+  const AFFIX_STAGES = { count: [1, 1, 1, 2, 2, 2, 3, 3], dna: 2, luck: .25 };
+  const hasAffix = (e, a) => e.affix === a || !!(e.affixes && e.affixes.includes(a));
+  const affixCount = r => AFFIX_STAGES.count[Math.min(r.levelIndex || 0, AFFIX_STAGES.count.length - 1)];
   // Hard baby start (optional, menu toggle): 60 % health, 70 % damage, 25 % less XP per level; each boss kill grows
   // you +15 % (up to 115 % damage). 50 % more DNA for the whole run.
   const BABY = { hp: .6, damage: .7, perBoss: .15, cap: 1.15, xp: .75, dna: 1.5, scale: .72, hatch: 1.6 };
@@ -67,6 +72,18 @@
   // instead of 60 % at night); herbivores drink at dusk; compys scavenge kills by day. Night kills give +50 % DNA.
   const CIRCADIAN = { damage: .2, speed: .1, nightSight: .85, nightDNA: 1.5, duskThirst: .7 };
   // Rav: one hidden amber piece per journey level, far from the start; E picks it up (+3 DNA).
+  // FEATURES.tarTotem (loot step 5, needs lootTables): from level 2 a tar-pit totem stands far from the start. Touch it
+  // (E) before the boss appears to make a pact: the boss gets one elite trait (+25 % HP with armored as usual), and
+  // its kill pays double: the level DNA again and, with FEATURES.relics, a second boss relic. Placement uses the run
+  // seed, not the game's random stream, so nothing else in the run moves.
+  // FEATURES.rottenMeat (loot step 5): meat from a corpse that has started to spoil (corpse.age > spoilAt) is rotten.
+  // A bite gives "Rådden mave": 60 s of +30 % damage taken. Survive it and the stomach hardens for the rest of the run:
+  // +6 max health, up to 3 times. Jernmave (ironStomach) shrugs it off: no risk, no reward.
+  const ROTTEN = { seconds: 60, taken: 1.3, maxHealth: 6, max: 3 };
+  const TAR_TOTEM = { fromLevel: 1, minDistance: 700, reach: 70, hp: 1.25 };
+  // FEATURES.currencies: one amber altar per journey level, placed from the run seed (not the main random stream).
+  // E with enough rav buys a loot roll (GAME_TABLES.amber_altar); the price grows ×1,4 and the altar closes after 2 buys.
+  const ALTAR = { minDistance: 500, reach: 70 };
   const AMBER = { dna: 3, minDistance: 900, reach: 70, glint: 260, ring: [60, 85, 110], margin: 14, hint: 400 };
 
   function install(C) {
@@ -109,6 +126,24 @@
         const far = r.map.habitats.filter(ground).map(h => g.habitatPosition('parasaurolophus', h)).filter(Boolean)
           .sort((a, b) => Math.hypot(b.x - r.player.x, b.y - r.player.y) - Math.hypot(a.x - r.player.x, a.y - r.player.y))[0];
         if (far && Math.hypot(far.x - r.player.x, far.y - r.player.y) > Math.hypot(e.x - r.player.x, e.y - r.player.y)) { site.x = e.x = e.homeX = far.x; site.y = e.y = e.homeY = far.y; }
+      }
+      r.tarTotem = null;
+      if (F.tarTotem && F.lootTables && r.campaign === C.LEVELS && r.levelIndex >= TAR_TOTEM.fromLevel) {
+        const far = r.map.habitats.filter(h => ground(h) && dist(h, r.player) > TAR_TOTEM.minDistance && !(r.map.sites || []).some(s => dist(s, h) < 120));
+        const h = far.length ? far[((r.seed >>> 0) + 7919 * r.levelIndex) % far.length] : null;
+        if (h) r.tarTotem = { x: Math.round(h.x - 20), y: Math.round(h.y + 16), level: r.levelIndex, pact: false };
+      }
+      r.amberAltar = null;
+      if (F.currencies && F.lootTables && r.campaign === C.LEVELS) {
+        const spots = r.map.habitats.filter(h => ground(h) && dist(h, r.player) > ALTAR.minDistance && !(r.map.sites || []).some(s => dist(s, h) < 120) && !(r.tarTotem && dist(r.tarTotem, h) < 200));
+        // Start at a seeded habitat and take the first ring spot that no tree, bush or rock is drawn over (as for amber).
+        const k = spots.length ? ((r.seed >>> 0) + 104729 * (r.levelIndex + 1)) % spots.length : 0, order = [...spots.slice(k), ...spots.slice(0, k)].slice(0, 40);
+        let p = null;
+        find: for (const h of order) for (const radius of AMBER.ring) for (let i = 0; i < 12; i++) {
+          const q = { x: Math.round(h.x + Math.cos(i * Math.PI / 6) * radius), y: Math.round(h.y + Math.sin(i * Math.PI / 6) * radius) };
+          if (dist(q, r.player) > ALTAR.minDistance && amberClear(r, q)) { p = q; break find; }
+        }
+        if (p) r.amberAltar = { x: p.x, y: p.y, level: r.levelIndex, buys: 0, price: C.CURRENCY.altar.price };
       }
       r.powerups = [];
       if (F.powerups) {
@@ -178,7 +213,7 @@
       for (const [e, hp] of before) {
         const d = hp - e.hp; if (!(d > 0)) continue; hit = true;
         const extra = d * (k - 1); e.hp -= extra; dealt += d + extra; if (extra > 0) r.stats.damageDealt += extra;
-        if (F.eliteAffixes && e.affix === 'thorns' && e.hp > 0) this.damage(ELITE_AFFIXES.thorns.thorns, { ...e, hazard: true, thorns: true });
+        if (F.eliteAffixes && hasAffix(e, 'thorns') && e.hp > 0) this.damage(ELITE_AFFIXES.thorns.thorns, { ...e, hazard: true, thorns: true });
       }
       if (hit) {
         if (forced) { x.comet--; if (x.comet <= 0) x.buffs.comet = 0; }
@@ -230,7 +265,7 @@
         } else if (entity && entity.kind) {
           let k = 1;
           if (timed(r, 'frost') && dist(entity, r.player) < POWERUP_SPAWN.frostRange) k *= .5;
-          if (F.eliteAffixes && entity.affix === 'swift') k *= ELITE_AFFIXES.swift.speed;
+          if (F.eliteAffixes && hasAffix(entity, 'swift')) k *= ELITE_AFFIXES.swift.speed;
           const night = predatorBoost(r, entity); if (night) k *= 1 + CIRCADIAN.speed * night;
           dx *= k; dy *= k;
         }
@@ -243,10 +278,24 @@
     G.damage = function (amount, source) {
       const r = this.run;
       if (r && source && !source.hazard) {
-        if (F.eliteAffixes && source.affix === 'brutal') amount *= ELITE_AFFIXES.brutal.damage;
+        if (F.eliteAffixes && hasAffix(source, 'brutal')) amount *= ELITE_AFFIXES.brutal.damage;
         const night = predatorBoost(r, source); if (night) amount *= 1 + CIRCADIAN.damage * night;
       }
+      if (F.rottenMeat && r && X(r).rot && r.seconds < X(r).rot.until) amount *= ROTTEN.taken;
       return damage.call(this, amount, source);
+    };
+    const eat = G.eat;
+    G.eat = function (dt, input) {
+      const r = this.run; if (!F.rottenMeat || !r) return eat.call(this, dt, input);
+      const bites = r.stats.meatEaten, before = r.eating && r.eating.corpseId, out = eat.call(this, dt, input);
+      if (r.stats.meatEaten > bites && !r.mutations.ironStomach) {
+        const id = r.eating && r.eating.corpseId !== undefined ? r.eating.corpseId : before, corpse = r.corpses.find(c => c.id === id), x = X(r);
+        if (corpse && corpse.age > (corpse.spoilAt || 7) && !(x.rot && r.seconds < x.rot.until) && (x.rotStacks || 0) < ROTTEN.max) {
+          x.rot = { until: r.seconds + ROTTEN.seconds }; r.stats.rottenBites = (r.stats.rottenBites || 0) + 1;
+          r.effects.push({ x: r.player.x, y: r.player.y - 36, text: 'RÅDDENT KØD · +30 % SKADE I 60 S', color: '#799447', life: 1.8 }); this.emit('rotten', {});
+        }
+      }
+      return out;
     };
 
     // ---- kills: streak, powerup drops, night DNA, baby growth, carrion guests
@@ -256,6 +305,8 @@
       const out = kill.call(this, e);
       if (!fresh || !e.rewarded || !this.run) return out;
       const x = X(r);
+      if (F.eliteAffixes && F.affixStages && !e.boss && e.affixes && e.affixes.length > 1) this.addDNA(AFFIX_STAGES.dna * (e.affixes.length - 1));
+      if (F.tarTotem && e.boss && e.tarred) { this.addDNA(this.currentLevel().dna); this.grantRelic && this.grantRelic('boss'); this.emit('tar_reward', { level: r.levelIndex }); }
       if (F.huntStreak && !e.boss) {
         x.streak = r.seconds - x.lastKillAt <= STREAK.window ? Math.min(STREAK.max, x.streak + 1) : 1; x.lastKillAt = r.seconds;
         x.streakMax = Math.max(x.streakMax || 0, x.streak);
@@ -264,7 +315,7 @@
       }
       if (F.powerups && !e.boss) {
         if ((e.elite || e.rare) && POWERUP_SPAWN.eliteDrop) dropPowerup(this, e.x + 24, e.y);
-        else if (this.random() < POWERUP_SPAWN.killChance) dropPowerup(this, e.x + 24, e.y);
+        else if (this.random() < POWERUP_SPAWN.killChance * (this.luck ? this.luck() : 1)) dropPowerup(this, e.x + 24, e.y);
       }
       if (F.circadian && F.dayNight && r.night && !e.boss) { x.nightKills++; const bonus = Math.round((r.dna - dnaBefore) * (CIRCADIAN.nightDNA - 1)); if (bonus > 0) this.addDNA(bonus, true); }
       if (x.baby && e.boss) { const add = Math.round(x.baby.baseHP * BABY.perBoss * BABY.hp); x.baby.growth = Math.min(BABY.cap, x.baby.growth + BABY.perBoss); r.maxHealth += add; r.health = Math.min(r.maxHealth, r.health + add); r.effects.push({ x: r.player.x, y: r.player.y - 40, text: 'VOKSER', color: '#a8b15b', life: 1.2 }); }
@@ -314,6 +365,21 @@
         this.addDNA(AMBER.dna, true); this.save.lifetime.amber = (this.save.lifetime.amber || 0) + 1; this.persist();
         r.effects.push({ x: r.player.x, y: r.player.y - 36, text: 'RAV FUNDET · ' + x.amber + '/' + C.LEVELS.length, color: '#dfbc52', life: 1.8 });
         this.emit('amber', { count: x.amber });
+        if (F.currencies) this.earnCurrency('rav', 1, r.player.x, r.player.y - 20);
+        return true;
+      }
+      if (F.tarTotem && r && this.phase === 'playing' && r.tarTotem && !r.tarTotem.pact && !r.bossSpawned && dist(r.tarTotem, r.player) < TAR_TOTEM.reach) {
+        r.tarTotem.pact = true; r.stats.tarPacts = (r.stats.tarPacts || 0) + 1;
+        r.effects.push({ x: r.player.x, y: r.player.y - 36, text: 'TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT', color: '#bb80d9', life: 2.2 });
+        this.emit('tar_pact', { level: r.levelIndex });
+        return true;
+      }
+      const altar = r && r.amberAltar;
+      if (F.currencies && F.lootTables && altar && this.phase === 'playing' && altar.buys < C.CURRENCY.altar.buys && dist(altar, r.player) < ALTAR.reach) {
+        const cur = r.currency || (r.currency = { rav: 0, fossils: 0, iridium: 0 });
+        if (cur.rav < altar.price) { this.emit('altar_poor', { price: altar.price, rav: cur.rav }); return true; }
+        cur.rav -= altar.price; altar.buys++; altar.price = Math.ceil(altar.price * C.CURRENCY.altar.grow); r.stats.altarBuys = (r.stats.altarBuys || 0) + 1;
+        this.openNestCache({ x: altar.x, y: altar.y + 10, id: 'altar' + altar.level + ':' + altar.buys }, { table: 'amber_altar', event: 'amber_altar', label: 'Ravalter', source: 'altar' });
         return true;
       }
       return interact.call(this);
@@ -334,9 +400,19 @@
         const radius = POWERUP_SPAWN.pickupRadius, taken = (r.powerups || []).filter(p => dist(p, r.player) < radius);
         if (taken.length) { r.powerups = r.powerups.filter(p => !taken.includes(p)); for (const p of taken) applyPowerup(this, p); }
       }
+      if (F.rottenMeat && x.rot && r.seconds >= x.rot.until) {
+        x.rot = null; x.rotStacks = (x.rotStacks || 0) + 1; r.maxHealth += ROTTEN.maxHealth; r.health += ROTTEN.maxHealth;
+        r.effects.push({ x: r.player.x, y: r.player.y - 36, text: 'HÆRDET MAVE · +' + ROTTEN.maxHealth + ' LIV', color: '#799447', life: 1.8 }); this.emit('rot_cured', { stacks: x.rotStacks });
+      }
+      if (F.tarTotem && r.tarTotem && r.tarTotem.pact) for (const e of r.enemies) if (e.boss && !e.tarred) {
+        e.tarred = true; e.affix = AFFIX_ORDER[((r.seed >>> 0) + r.levelIndex) % AFFIX_ORDER.length]; e.affixes = [e.affix];
+        e.hp *= TAR_TOTEM.hp; e.maxHP *= TAR_TOTEM.hp; if (e.affix === 'armored') { e.hp *= ELITE_AFFIXES.armored.hp; e.maxHP *= ELITE_AFFIXES.armored.hp; }
+      }
       if (F.eliteAffixes) for (const e of r.enemies) if (e.elite && !e.affix && !e.boss) {
         e.affix = AFFIX_ORDER[(e.id * 7 + r.levelIndex) % AFFIX_ORDER.length];
-        if (e.affix === 'armored') { e.hp *= ELITE_AFFIXES.armored.hp; e.maxHP *= ELITE_AFFIXES.armored.hp; }
+        if (F.affixStages) { const first = AFFIX_ORDER.indexOf(e.affix), step = 1 + e.id % 4, n = affixCount(r);
+          e.affixes = Array.from({ length: n }, (_, i) => AFFIX_ORDER[(first + i * step) % AFFIX_ORDER.length]); e.lootLuck = AFFIX_STAGES.luck * (n - 1); }
+        if (hasAffix(e, 'armored')) { e.hp *= ELITE_AFFIXES.armored.hp; e.maxHP *= ELITE_AFFIXES.armored.hp; }
       }
       if (F.circadian && F.dayNight) {
         const phase = dayPhase(r.seconds);
@@ -349,7 +425,7 @@
       const out = step.call(this, dt, input);
       if (!this.run || this.run !== r) return out;
       if (r.stats.abilities > abilitiesBefore) { const t = twistOf(r); if (t) applyTwist(this, r, t); }
-      if (F.eliteAffixes) for (const e of r.enemies) if (e.affix === 'regen' && e.hp > 0 && e.hp < e.maxHP) e.hp = Math.min(e.maxHP, e.hp + e.maxHP * ELITE_AFFIXES.regen.regen * dt);
+      if (F.eliteAffixes) for (const e of r.enemies) if (hasAffix(e, 'regen') && e.hp > 0 && e.hp < e.maxHP) e.hp = Math.min(e.maxHP, e.hp + e.maxHP * ELITE_AFFIXES.regen.regen * dt);
       if (F.huntStreak && x.streak && r.seconds - x.lastKillAt > STREAK.window) x.streak = 0;
       const every = ECOLOGY.trailEvery[Math.min(r.levelIndex, ECOLOGY.trailEvery.length - 1)];
       if (F.ecologyPressure && every && r.health < r.maxHealth * ECOLOGY.trailBelow && (x.trailClock += dt) >= every) {
@@ -465,11 +541,11 @@
     };
 
     // Exposed for the renderer, the HUD and tests.
-    Object.assign(C, { CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
+    Object.assign(C, { ALTAR, CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, ROTTEN, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
       extrasOf: r => r && r.extras || null,
       streakOf: r => (r && r.extras && F.huntStreak ? r.extras.streak : 0),
       buffsOf: r => (r && r.extras ? Object.entries(r.extras.buffs).filter(([, t]) => t > 0).map(([type, time]) => ({ type, time })) : []) });
   }
 
-  return { install, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, BABY, CIRCADIAN, AMBER };
+  return { install, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, ROTTEN, ALTAR, BABY, CIRCADIAN, AMBER };
 });

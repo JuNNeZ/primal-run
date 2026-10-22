@@ -10,7 +10,9 @@
   const EXTRAS = (typeof module === 'object' && module.exports ? require('./run_extras.js') : globalThis.PrimalExtras) || null;
   // Opt-in anonymous run data for bot calibration (FEATURES.runTelemetry) lives in telemetry.js.
   const TELEMETRY = (typeof module === 'object' && module.exports ? require('./telemetry.js') : globalThis.PrimalTelemetry) || null;
-  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true,randomStart:true,runTelemetry:true,sizeAware:true,hudLayouts:true,titleTips:true,stealth:true,speciesIdentity:true,waterStart:true,bounties:true,deathTips:true,bossCurve:true,titleBook:true,titleAchievements:true,mapBiomes:true,fishingGame:true,tipsToggle:true,steepBosses:true,tougherCombat:true,epicBudget:true,ankyTailTurn:true,rigSprites:true,rexCutout:false,amberFair:true};
+  // Data-driven loot tables with cascading top-down rarity (FEATURES.lootTables) live in loot.js.
+  const LOOT = (typeof module === 'object' && module.exports ? require('./loot.js') : globalThis.PrimalLoot) || null;
+  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true,randomStart:true,runTelemetry:true,sizeAware:true,hudLayouts:true,titleTips:true,stealth:true,speciesIdentity:true,waterStart:true,bounties:true,deathTips:true,bossCurve:true,titleBook:true,titleAchievements:true,mapBiomes:true,fishingGame:true,tipsToggle:true,steepBosses:true,tougherCombat:true,epicBudget:true,ankyTailTurn:true,rigSprites:true,rexCutout:false,amberFair:true,lootTables:false,armorPoints:false,lootReveal:false,relics:false,nestCaches:false,affixStages:false,hudIconSet:false,tarTotem:false,rottenMeat:false,dailyShare:false,extinctionPressure:false,currencies:false};
   // Size-aware world (FEATURES.sizeAware): a prop's collision and slow radius come from its visible pixels
   // (tools/measure_props.py), only its kind is chosen by hand. Kinds also decide the draw layer in app.js.
   const PROP_SIZE={"assets/ecology/broad_fern.png":["soft",38],"assets/ecology/conifer.png":["canopy",34],"assets/ecology/cycad.png":["soft",36],"assets/ecology/dry_grass.png":["ground",32],"assets/ecology/flowers.png":["ground",30],"assets/ecology/fruit_bush.png":["soft",36],"assets/ecology/herb.png":["ground",36],"assets/ecology/horsetail.png":["soft",34],"assets/ecology/leaf_litter.png":["ground",30],"assets/ecology/lichen.png":["ground",32],"assets/ecology/moss.png":["ground",28],"assets/ecology/mushrooms.png":["ground",26],"assets/ecology/reeds.png":["soft",37],"assets/ecology/roots.png":["ground",34],"assets/ecology/seed_fern.png":["soft",38],"assets/ecology/shrub.png":["soft",35],"assets/ecology/succulent.png":["ground",29],"assets/ecology/twigs.png":["ground",32],"assets/environment/fern.png":["ground",21],"assets/environment/rock.png":["solid",13],"assets/props/boulder_large.png":["solid",22],"assets/props/dead_tree.png":["canopy",51],"assets/props/fallen_log.png":["ground",21],"assets/props/fern_large.png":["soft",24],"assets/props/flower_bush.png":["soft",23],"assets/props/lava_rock.png":["solid",22],"assets/props/meteorite.png":["solid",23],"assets/props/nest_eggs.png":["ground",20],"assets/props/nest_empty.png":["ground",21],"assets/props/skull.png":["ground",23],"assets/props/tree_canopy.png":["canopy",56]}; // generated by tools/measure_props.py: [kind, visible radius px]
@@ -239,7 +241,7 @@
   }
   const playerFrame=(species,state,direction,frame)=>cutoutFrame(species,state,direction,frame)||staticFrame(species,direction,state,frame)||(FEATURES.speciesAttacks&&state==='attack'&&['ankylosaurus','triceratops','pachycephalosaurus','gallimimus','parasaurolophus'].includes(species)?'assets/species_attacks/'+species+'_attack_'+direction+'_'+String(frame).padStart(3,'0')+'.png':legacyPlayerFrame(species,state,direction,frame));
   const abilityCost=r=>Math.max(16,PLAYER_SPECIES[r.species].abilityCost-2*r.mutations.deinonychus_common-5*r.mutations.crocEconomy-5*r.mutations.pounce+6*r.mutations.overclock-abilityDiscount(r));
-  const mutationWeight=(mutation,ranks)=>MUTATION_RARITIES[mutation.rarity].weight*(1+Math.min(.4,.2*(ranks[mutation.id]||0)));
+  const mutationWeight=(mutation,ranks,luck=1)=>MUTATION_RARITIES[mutation.rarity].weight*(1+Math.min(.4,.2*(ranks[mutation.id]||0)))*(luck!==1&&LUCK.lucky.includes(mutation.rarity)?luck:1);
   function seeded(seed) { let x = seed >>> 0; return () => { x += 0x6D2B79F5; let t = Math.imul(x ^ x >>> 15, 1 | x); t ^= t + Math.imul(t ^ t >>> 7, 61 | t); return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
   const MUTATIONS = [
     { id: 'teeth', name: 'Kraftigt angreb', text: '+20 % angrebsskade.', icon: 'serrated_teeth', max: 3 },
@@ -247,7 +249,7 @@
     { id: 'legs', name: 'Kraftige ben', text: '+8 % bevægelseshastighed.', icon: 'powerful_legs', max: 3 },
     { id: 'feathers', name: 'Udholdenhed', text: '+20 % stamina-regeneration.', icon: 'insulating_feathers', max: 3 },
     { id: 'heart', name: 'Stærkt hjerte', text: '+15 maksimalt liv. Hel også 15 liv.', icon: 'health', max: 3 },
-    { id: 'armor', name: 'Sej hud', text: 'Tag 8 % mindre skade.', icon: 'armor', max: 3 },
+    { id: 'armor', name: 'Sej hud', get text() { return FEATURES.armorPoints ? '+' + ARMOR.perRank + ' panser pr. rang. Hvert point er lige meget værd.' : 'Tag 8 % mindre skade.'; }, icon: 'armor', max: 3 },
     { id: 'reach', name: 'Jagtinstinkt', text: '+10 pixels angrebsrækkevidde og opsamlingsradius.', icon: 'hunger', max: 3 },
     { id: 'pounce', name: 'Effektiv evne', text: 'Din arts evne koster 5 mindre stamina.', icon: 'escape', max: 3 },
     { id: 'quick', name: 'Hurtige angreb', text: '8 % kortere cooldown mellem angreb.', icon: 'bone', max: 3 },
@@ -344,7 +346,7 @@
     {id:'bonebreak',name:'Knoglebrud',text:'Kritiske træf stagger 0,15 sek. længere og fylder bossens brud-meter 50 % hurtigere pr. rang.',icon:'bone',max:2,rarity:'rare'}
   );
   MUTATIONS.push(...[{"id":"deinoFeint","name":"Fjerklædt finte","text":"+15 % ekstra flankebonus til fintens næste bid pr. rang.","icon":"escape","max":3,"rarity":"rare","species":"deinonychus"},{"id":"deinoPrime","name":"Fjerstorm","text":"Finten gør næste flankebid 30 % stærkere og giver 0,5 sek. beskyttelse efter undvigelsen.","icon":"insulating_feathers","max":1,"rarity":"legendary","species":"deinonychus","effects":{"flankDamage":0.3}},{"id":"deinonychus_common","name":"Kontrolleret finte","text":"Din arts evne koster 2 mindre stamina pr. rang.","icon":"insulating_feathers","max":3,"rarity":"common","species":"deinonychus","effects":{"abilityCost":-2}},{"id":"deinonychus_uncommon","name":"Varme fjer","text":"15 % hurtigere spisning pr. rang; giver ikke ekstra føde.","icon":"insulating_feathers","max":3,"rarity":"uncommon","species":"deinonychus","effects":{"feeding":0.15}},{"id":"deinonychus_epic","name":"Præcisionsjæger","text":"+15 % angrebsskade fra siden/bagfra pr. rang; ingen bonus forfra.","icon":"serrated_teeth","max":3,"rarity":"epic","species":"deinonychus","effects":{"flankDamage":0.15}}]);
-  const critChance=(r,e)=>Math.min(.75,CRIT.base+.06*r.mutations.keenClaws+(e&&!e.alert?.2*r.mutations.instinct:0)+(kindOf(r)==='pachycephalosaurus'?.1:0)+(kindOf(r)==='compy'?.04:0)+critBonus(r,e));
+  const critChance=(r,e)=>Math.min(.75,CRIT.base+relicStat(r,'crit')+.06*r.mutations.keenClaws+(e&&!e.alert?.2*r.mutations.instinct:0)+(kindOf(r)==='pachycephalosaurus'?.1:0)+(kindOf(r)==='compy'?.04:0)+critBonus(r,e));
   // XP needed for dino level n+1: first + (n-1)*step. Rerolls (FEATURES.mutationRerolls): start per run, +perBoss per boss/miniboss.
   const XP_CURVE = { first: 6, step: 2 };
   const REROLLS = { start: 1, perBoss: 1, perMiniboss: 1, perEgg: 1, max: 3 };
@@ -600,6 +602,7 @@
     save.baryonyxFish=Math.floor(clamp(finite(x.baryonyxFish),0,1e7)); // B8, counted from this version on (kept even with the flag off, so no history is lost)
     if(RECORDS){save.version=3;save.titles=RECORDS.sanitizeTitles(x.titles);save.records=RECORDS.sanitizeRecords(x.records,save);}
     sanitizePartC(save,x); // blueprints and species mastery
+    sanitizeMeta(save,x); // extinction pressure and currencies (loot step 5)
     return save;
   }
   // ---- Progression (overhaul phase 4): a longer unlock ladder, achievements and cosmetic skins.
@@ -719,7 +722,7 @@
       const up = { ...this.save.upgrades }, maxHealth = config.hp * (1 + UPGRADE_STEP.health * up.health);
       this.run = { stats:{attacks:0,landedAttacks:0,hits:0,kills:0,fishCaught:0,plantsEaten:0,meatEaten:0,abilities:0,avoidedHits:0,damageTaken:0,damageDealt:0,healing:0,distance:0,staminaSpent:0,food:0,dna:0,dropRolls:0,drops:0,mutations:0,killsBySpecies:{}},stageStats:[],missedSecrets:0,rareRewards:0,rareSelection:false,corpses: [], eating: null, staminaDelay:0, frenzy:0, shield:0, shieldTime:0, tailEmpowered:0, explored: {}, hidden: false, concealTime: 0, revealedUntil: 0, surface: 'ground', seed: seed === undefined ? Math.floor(this.random() * 4294967296) : seed >>> 0, species, abilityHits: [], exploration: 0, eliteKills: 0, player: { x: 480, y: 340, radius: config.radius,kind:species, facing: 'S', walk: 0, moving: false }, health: maxHealth, maxHealth, stamina: 100, slow: 0, stage: 0, meat: 0, totalMeat: 0, level: 1, xp: 0, nextXP: XP_CURVE.first, mutations: Object.fromEntries(MUTATIONS.map(m => [m.id, 0])), upgrades: up, choices: [], enemies: [], pickups: [], effects: [], particles: [], decals: [], hitStop: 0, hurt: 0, deathTime: -1, seconds: 0, kills: 0, bosses: 0, dna: 0, score: 0, spawnTimer: 1, attackCooldown: 0, attack: null, biteFacing: 'S', bite: 0, pounce: 0, pounceCooldown: 0, invulnerable: 0, shake: 0, bossSpawned: false, bossDefeated: false, result: null };
       this.run.levelIndex=0;this.run.secret=this.run.seed===SECRET_SEED;this.run.campaign=this.run.secret?[{biome:0,name:'Den hemmelige lysning',subtitle:'Compy-tyvenes banket',target:18,boss:'pachycephalosaurus',bossName:'Mathias - Kødvogteren',dna:12,mini:true}]:campaign==='classic'?STAGES.map((v,i)=>({...v,biome:i})):LEVELS;
-      this.behaviorRandom = seeded(this.run.seed ^ 0x9E3779B9); this.run.map = createMap(0, this.run.seed); this.run.player.x=this.run.map.start.x;this.run.player.y=this.run.map.start.y; this.setView(WIDTH, HEIGHT); this.run.jonas = this.save.name.toLowerCase() === 'jonas'; this.phase = 'playing'; this.populate(); this.emit('start'); if (this.run.jonas) this.emit('jonas');
+      this.behaviorRandom = seeded(this.run.seed ^ 0x9E3779B9); this.lootRandom = null; this.run.map = createMap(0, this.run.seed); this.run.player.x=this.run.map.start.x;this.run.player.y=this.run.map.start.y; this.setView(WIDTH, HEIGHT); this.run.jonas = this.save.name.toLowerCase() === 'jonas'; this.phase = 'playing'; this.populate(); this.emit('start'); if (this.run.jonas) this.emit('jonas');
     }
     setView(width, height) {
       if (!this.run) return;
@@ -890,9 +893,9 @@
     pause() { if (this.phase === 'playing') { this.phase = 'paused'; this.emit('pause'); } }
     resume() { if (this.phase === 'paused') this.phase = 'playing'; }
     abandon() { if (this.run && !this.run.result) this.finish(false); this.phase = 'menu'; }
-    addDNA(amount,quiet=false) { this.save.dna += amount; this.run.dna += amount;this.run.stats.dna+=amount; this.persist(); this.emit('dna', { amount, quiet }); }
+    addDNA(amount,quiet=false) { if(amount>0&&this.run)amount=Math.round(amount*(1+relicStat(this.run,'dna'))); this.save.dna += amount; this.run.dna += amount;this.run.stats.dna+=amount; this.persist(); this.emit('dna', { amount, quiet }); }
     addXP(amount) { this.run.xp += amount; this.maybeLevelUp(); }
-    mutationAvailable(m){const r=this.run;if(m.tradeoff&&!FEATURES.tradeoffMutations)return false;return (!m.species||m.species===r.species)&&(!m.diets||m.diets.includes(PLAYER_SPECIES[r.species].diet))&&r.mutations[m.id]<m.max;}
+    mutationAvailable(m){const r=this.run;if(m.tradeoff&&!FEATURES.tradeoffMutations)return false;if(m.flag&&!FEATURES[m.flag])return false;return (!m.species||m.species===r.species)&&(!m.diets||m.diets.includes(PLAYER_SPECIES[r.species].diet))&&r.mutations[m.id]<m.max;}
     offerRareReward(){
       const r=this.run;if(this.phase!=='playing'||!r.rareRewards)return false;r.rareRewards--;if(r.rareRewardSources?.length)r.rewardSource=r.rareRewardSources.shift();
       const pool=MUTATIONS.filter(m=>m.rarity==='epic'&&this.mutationAvailable(m));
@@ -925,15 +928,15 @@
     rollChoices(pool) {
       const r = this.run, choices = [];
       while (choices.length < this.choiceCount() && pool.length) {
-        const total = pool.reduce((sum, m) => sum + mutationWeight(m,r.mutations), 0);
+        const total = pool.reduce((sum, m) => sum + mutationWeight(m,r.mutations,runLuck(r)), 0);
         let roll = this.random() * total, index = pool.length - 1;
-        for (let i = 0; i < pool.length; i++) { roll -= mutationWeight(pool[i],r.mutations); if (roll < 0) { index = i; break; } }
+        for (let i = 0; i < pool.length; i++) { roll -= mutationWeight(pool[i],r.mutations,runLuck(r)); if (roll < 0) { index = i; break; } }
         choices.push(pool.splice(index, 1)[0].id);
       }
       // Species bias: until the run has an own-species mutation, one offer always shows one when any is left.
       if (FEATURES.speciesMutationBias && choices.length && !MUTATIONS.some(m => m.species === r.species && r.mutations[m.id] > 0) && !choices.some(id => MUTATIONS.find(m => m.id === id).species === r.species)) {
         const own = pool.filter(m => m.species === r.species);
-        if (own.length) { const total = own.reduce((sum, m) => sum + mutationWeight(m, r.mutations), 0); let roll = this.random() * total, pick = own[own.length - 1]; for (const m of own) { roll -= mutationWeight(m, r.mutations); if (roll < 0) { pick = m; break; } } choices[choices.length - 1] = pick.id; }
+        if (own.length) { const total = own.reduce((sum, m) => sum + mutationWeight(m, r.mutations, runLuck(r)), 0); let roll = this.random() * total, pick = own[own.length - 1]; for (const m of own) { roll -= mutationWeight(m, r.mutations, runLuck(r)); if (roll < 0) { pick = m; break; } } choices[choices.length - 1] = pick.id; }
       }
       return choices;
     }
@@ -960,10 +963,10 @@
     }
     damage(amount, source) {
       const r = this.run; if (r.invulnerable > 0 || (r.pounce > 0 && ['compy', 'utahraptor','velociraptor','deinonychus'].includes(kindOf(r))) || this.phase !== 'playing') {if(this.phase==='playing'&&source){r.stats.avoidedHits++;if(!r.lastDodgeText||r.seconds-r.lastDodgeText>.6){r.lastDodgeText=r.seconds;r.effects.push({x:r.player.x,y:r.player.y,text:'UNDVIGET',color:FEATURES.combatColors?'#dfbc52':'#a2d4c1',life:.55});}}return;}
-      r.eating=null;r.staminaDelay=Math.max(r.staminaDelay,1);r.revealedUntil=r.seconds+1;r.hidden=false;r.concealTime=0; const facing={N:[0,-1],S:[0,1],E:[1,0],W:[-1,0]}[r.player.facing];const sx=source?source.x-r.player.x:0,sy=source?source.y-r.player.y:0,sd=Math.hypot(sx,sy);const front=kindOf(r)==='triceratops'&&sd>0&&(sx*facing[0]+sy*facing[1])/sd>.35;amount*=(1+.12*r.mutations.glassCannon+.15*r.mutations.lightFrame)*(front?1-.25-.1*r.mutations.frill-.15*r.mutations.hornWall-fx(r,'front'):1); amount*= (1 - .08 * r.mutations.armor) * (kindOf(r) === 'ankylosaurus' && r.pounce > 0 ? (FEATURES.speciesIdentity&&r.species==='stegosaurus'?IDENTITY.stego.stance:.25) : 1) * takenMul(r,source);const shielded=Math.min(r.shield,amount);r.shield-=shielded;amount-=shielded;r.stats.damageTaken+=Math.min(r.health,amount);if(source&&source.boss)source.hitPlayer=true;r.lastHit=source&&Object.hasOwn(SPECIES,source.kind)?{kind:source.kind,direction:source.direction,mode:source.mode,boss:!!source.boss,sex:source.sex}:null;r.health = Math.max(0, r.health - amount); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
+      r.eating=null;r.staminaDelay=Math.max(r.staminaDelay,1);r.revealedUntil=r.seconds+1;r.hidden=false;r.concealTime=0; const facing={N:[0,-1],S:[0,1],E:[1,0],W:[-1,0]}[r.player.facing];const sx=source?source.x-r.player.x:0,sy=source?source.y-r.player.y:0,sd=Math.hypot(sx,sy);const front=kindOf(r)==='triceratops'&&sd>0&&(sx*facing[0]+sy*facing[1])/sd>.35;amount*=(1+.12*r.mutations.glassCannon+.15*r.mutations.lightFrame)*(front?1-.25-.1*r.mutations.frill-.15*r.mutations.hornWall-fx(r,'front'):1); amount*= armorFactor(r) * (kindOf(r) === 'ankylosaurus' && r.pounce > 0 ? (FEATURES.speciesIdentity&&r.species==='stegosaurus'?IDENTITY.stego.stance:.25) : 1) * takenMul(r,source);const shielded=Math.min(r.shield,amount);r.shield-=shielded;amount-=shielded;r.stats.damageTaken+=Math.min(r.health,amount);if(source&&source.boss)source.hitPlayer=true;r.lastHit=source&&Object.hasOwn(SPECIES,source.kind)?{kind:source.kind,direction:source.direction,mode:source.mode,boss:!!source.boss,sex:source.sex}:null;r.health = Math.max(0, r.health - amount); r.invulnerable = .65; r.hurt = .25; r.shake = .18; this.emit('hit');
       if (kindOf(r) === 'ankylosaurus' && r.mutations.spikes && source && !source.hazard) { for (const e of r.enemies) if (Math.hypot(e.x-r.player.x,e.y-r.player.y)<110 && (e === source || e.alert && e.damage)) { /* only a real attacker and hostile animals, never grazers or lava/poison ticks */ e.hp -= 4*r.mutations.spikes*(e.npcGuardUntil>r.seconds?.25:1); this.provoke(e); } }
       onPlayerHurt(this,r,source);
-      if (r.health <= 0 && (FEATURES.secondWind || FEATURES.labTracks && r.upgrades.secondWind > 0) && !r.secondWindUsed) { r.secondWindUsed = true; r.health = 1; r.invulnerable = Math.max(r.invulnerable, 1.5); r.effects.push({ x: r.player.x, y: r.player.y, text: 'ANDET PUST', color: '#e9b75a', life: 1 }); this.emit('second_wind'); }
+      if (r.health <= 0 && (FEATURES.secondWind || FEATURES.labTracks && r.upgrades.secondWind > 0 || relicSet(r,'survivor') >= 3) && !r.secondWindUsed) { r.secondWindUsed = true; r.health = 1; r.invulnerable = Math.max(r.invulnerable, 1.5); r.effects.push({ x: r.player.x, y: r.player.y, text: 'ANDET PUST', color: '#e9b75a', life: 1 }); this.emit('second_wind'); }
       if (r.health <= 0) this.finish(false);
     }
     attack() {
@@ -1034,23 +1037,33 @@
       const r = this.run; r.kills++;r.stats.kills++;r.stats.killsBySpecies[e.kind]=(r.stats.killsBySpecies[e.kind]||0)+1;r.corpses.push({id:e.id,lifetime:60+Math.min(10,e.radius/4),foodLifetime:14+Math.min(4,e.radius/8),poseVariant:e.id%2,spoilAt:7,decayPortions:0,kind:e.kind,x:e.x,y:e.y,direction:e.direction,visualScale:e.visualScale,variant:e.rare?'albino':e.elite?'elite':e.sex==='male'?'male':null,age:0});r.corpses=r.corpses.slice(-32);
       if (e.boss) {
         r.bosses++; r.score += 1000 * (r.stage + 1); r.bossDefeated = true;
-        this.addDNA(this.currentLevel().dna); this.addRerolls(REROLLS.perBoss); this.emit('boss_dead');
+        this.addDNA(this.currentLevel().dna); this.addRerolls(REROLLS.perBoss); this.emit('boss_dead'); if (relicsOn()) this.grantRelic('boss');
         this.checkAchievements({bossKind:e.kind,finalBoss:r.levelIndex===r.campaign.length-1,closeCall:r.health<r.maxHealth*.1,untouchable:!e.hitPlayer});
       } else {
         const base = SPECIES[e.kind]; r.score += base.meat * 15;
         const roll = this.random(), thresholds = base.meat === 1 ? [.76, .95, .995] : base.meat === 3 ? [.6, .88, .98] : [.55, .8, .95];
-        const rarity = e.rare || e.elite ? Math.max(2, thresholds.filter(t => roll >= t).length) : thresholds.filter(t => roll >= t).length;
+        const rarity = FEATURES.lootTables && LOOT ? this.lootMeatRarity(e, base) : e.rare || e.elite ? Math.max(2, thresholds.filter(t => roll >= t).length) : thresholds.filter(t => roll >= t).length;
         if (e.rare) r.stats.albinos=(r.stats.albinos||0)+1;
         if (e.miniboss) r.stats.rivals=(r.stats.rivals||0)+1;
         if ((e.elite||e.miniboss) && PLAYER_SPECIES[r.species].diet==='herbivore') r.stats.herbivoreElites=(r.stats.herbivoreElites||0)+1;
+        if (relicSet(r,'hunter') >= 3) r.stamina = Math.min(100, r.stamina + RELIC_SETS.hunter.stamina);
         if (e.elite) { r.eliteKills++; this.addDNA(base.dna + r.stage + 2); if(!e.rare){r.rareRewards++; r.rewardSource='elite';(r.rareRewardSources||(r.rareRewardSources=[])).push('elite');} }
-        if (e.rare) {this.addDNA(base.dna+3+r.stage);r.rareRewards++;r.rewardSource='albino';(r.rareRewardSources||(r.rareRewardSources=[])).push('albino'); const site = r.map.sites.find(s => s.animalId === e.id); if (site) site.claimed = true; }
+        if (e.rare) {this.addDNA(base.dna+3+r.stage);if(relicsOn())this.grantRelic('albino');else{r.rareRewards++;r.rewardSource='albino';(r.rareRewardSources||(r.rareRewardSources=[])).push('albino');} const site = r.map.sites.find(s => s.animalId === e.id); if (site) site.claimed = true; }
         r.pickups.push({ id: ++this.nextId, kind: 'meat', corpseId:e.id, x: e.x, y: e.y, rarity, value: Math.ceil(base.meat * MEAT_RARITIES[rarity].multiplier) });
-        r.stats.dropRolls++;if (this.random() < base.chance) {r.stats.drops++;r.pickups.push({ id: ++this.nextId, kind: 'dna', x: clamp(e.x + 20, 48, r.map.width - 48), y: e.y, value: base.dna });}
-        if (this.random() < .10) r.pickups.push({ id: ++this.nextId, kind: 'heal', x: e.x, y: clamp(e.y + 18, 80, r.map.height - 54), value: 15 });
+        if (rarity >= 3) this.revealLoot(rarity, { ceiling: 3, kind: 'meat', label: MEAT_RARITIES[rarity].name });
+        r.stats.dropRolls++;if (this.random() < base.chance * runLuck(r)) {r.stats.drops++;r.pickups.push({ id: ++this.nextId, kind: 'dna', x: clamp(e.x + 20, 48, r.map.width - 48), y: e.y, value: base.dna });}
+        if (this.random() < .10 * runLuck(r)) r.pickups.push({ id: ++this.nextId, kind: 'heal', x: e.x, y: clamp(e.y + 18, 80, r.map.height - 54), value: 15 });
         // Epic genome is the reward for the kill itself, offered at once on its own screen.
         if ((e.rare || e.elite) && this.phase === 'playing' && !r.processingEnemies) this.offerRareReward();
       }
+    }
+    // FEATURES.lootTables: meat rarity from loot.js on its own seeded stream. The main stream still spends its one roll in kill(),
+    // so every other random event in the run stays identical and only the meat draw moves (same distribution as the thresholds).
+    ensureLoot() { if (!this.lootRandom) { this.lootRandom = seeded((this.run.seed ^ 0x10075EED) >>> 0); this.loot = LOOT.makeLoot(LOOT.GAME_TABLES); } }
+    lootMeatRarity(e, base) {
+      const r = this.run; this.ensureLoot();
+      const drop = this.loot.roll('kill_meat', { kind: e.kind, meatSize: base.meat, luck: runLuck(r) + (e.lootLuck || 0), elite: !!e.elite, albino: !!e.rare, floor: e.rare || e.elite ? 'rare' : 'common' }, this.lootRandom)[0];
+      return drop ? drop.rarity : 0;
     }
     awardFood(value,x,y,label='FØDE') {
       const r=this.run;r.stats.food+=value;r.meat+=value;r.totalMeat+=value;r.xp+=value;r.score+=value*10;r.health=Math.min(r.maxHealth,r.health+foodHeal(r,value,label==='FISK'));r.effects.push({x,y,text:'+'+value+' '+label,color:'#a2d4c1',life:.55});this.emit('pickup');
@@ -1654,7 +1667,7 @@
       r.inAsh=FEATURES.bossSignatures&&!!r.ashClouds&&r.ashClouds.some(c=>c.until>r.seconds&&Math.hypot(r.player.x-c.x,r.player.y-c.y)<c.radius); // B1c ash cloud: −15 % speed
       if(r.shieldTime===0)r.shield=0;
       const inCombat=r.attack||r.enemies.some(e=>e.alert&&e.damage&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<400);
-      if(r.staminaDelay===0&&r.pounce===0)r.stamina=Math.min(100,r.stamina+dt*(inCombat?STAMINA.combatRegen:STAMINA.regen)*(1+UPGRADE_STEP.regen*r.upgrades.regen+.2*m.feathers)*(1-.15*m.metabolicRush)*(r.roarDebuff>0?.5:1)*regenBonus(r,inCombat));
+      if(r.staminaDelay===0&&r.pounce===0)r.stamina=Math.min(100,r.stamina+dt*(inCombat?STAMINA.combatRegen:STAMINA.regen)*(1+UPGRADE_STEP.regen*r.upgrades.regen+.2*m.feathers+relicStat(r,'regen'))*(1-.15*m.metabolicRush)*(r.roarDebuff>0?.5:1)*regenBonus(r,inCombat));
       let dx = clamp(finite(input.x), -1, 1), dy = clamp(finite(input.y), -1, 1), n = Math.hypot(dx, dy);
       const config = PLAYER_SPECIES[r.species], cost = abilityCost(r);
       if (input.pounce && (n || ['ankylosaurus','tyrannosaurus'].includes(kindOf(r))) && r.pounceCooldown === 0 && r.stamina >= cost) {
@@ -1676,7 +1689,7 @@
         const facing = Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? 'E' : 'W') : (dy > 0 ? 'S' : 'N');
         // Keep gait phase across turns rather than restarting with every key change.
         r.player.facing = facing;
-        const speed = config.speed * (input.sneak ? .45 : 1) * (r.slow > 0 ? .65 : 1) * (r.inAsh ? .85 : 1) * (r.winded > 0 ? STAMINA.windedSpeed : 1) * (1 + .08 * m.legs+.15*m.lightFrame)*(1-.08*m.heavyMuscle)*(kindOf(r)==='deinosuchus'&&!isWater(r.stage,r.map,r.player)?1-.05*m.crocRush:1)*speedBonus(r) * (r.pounce > 0 ? ['ankylosaurus','tyrannosaurus'].includes(kindOf(r)) ? .3 : kindOf(r)==='gallimimus'?1.6*(1+.12*m.stride):2.5 : r.attack ? .7 : 1);
+        const speed = config.speed * (input.sneak ? .45 : 1) * (r.slow > 0 ? .65 : 1) * (r.inAsh ? .85 : 1) * (r.winded > 0 ? STAMINA.windedSpeed : 1) * (1 + .08 * m.legs+.15*m.lightFrame+relicStat(r,'speed'))*(1-.08*m.heavyMuscle)*(kindOf(r)==='deinosuchus'&&!isWater(r.stage,r.map,r.player)?1-.05*m.crocRush:1)*speedBonus(r) * (r.pounce > 0 ? ['ankylosaurus','tyrannosaurus'].includes(kindOf(r)) ? .3 : kindOf(r)==='gallimimus'?1.6*(1+.12*m.stride):2.5 : r.attack ? .7 : 1);
         this.travel(r.player, dx / n * speed * dt, dy / n * speed * dt);
         r.stats.distance+=Math.hypot(r.player.x-beforeX,r.player.y-beforeY);r.player.moving = Math.hypot(r.player.x - beforeX, r.player.y - beforeY) > .001;
       }
@@ -1715,7 +1728,7 @@
       if (this.phase !== 'playing') return;
       r.enemies = survivors; this.separateDinosaurs();
       if(this.offerRareReward())return;
-      const collected = [], radius = 26 * (1 + UPGRADE_STEP.magnet * r.upgrades.magnet) + 10 * m.reach;
+      const collected = [], radius = 26 * (1 + UPGRADE_STEP.magnet * r.upgrades.magnet + relicStat(r,'magnet')) + 10 * m.reach;
       for (const p of r.pickups) {
         if(p.kind==='fish'||p.corpseId!==undefined||PLAYER_SPECIES[r.species].diet==='herbivore'&&p.kind==='meat')continue;
         if (Math.hypot(p.x - r.player.x, p.y - r.player.y) >= radius) continue;
@@ -1811,6 +1824,11 @@
     this.save.dailyHunts[r.daily.key]=ranked.slice(0,5);this.save.dailyHunts=sanitizeDailyHunts(this.save.dailyHunts);
     r.daily.rank=place<=5?place:null;r.daily.entries=this.save.dailyHunts[r.daily.key].length;this.persist();
   };
+  // FEATURES.dailyShare: a spoiler-free result line for the daily hunt (like Wordle); the app adds date, species and score.
+  // One square per journey level: green = boss beaten, red = the level you fell on, black = not reached.
+  const dailySquares=result=>{const n=LEVELS.length,b=Math.min(n,Math.max(0,Math.floor(finite(result&&result.bosses))));
+    return Array.from({length:n},(_,i)=>i<b?'🟩':i===b&&!(result&&result.victory)?'🟥':'⬛').join('')+(result&&result.victory?' 👑':'');};
+  Game.prototype.dailySquares=function(){return dailySquares(this.run&&this.run.result);};
   // ---- B6 Udfordringer: up to 3 modifiers chosen before a run, +15 % DNA each, challengeCount in the RunSummary.
   const CHALLENGES=[
     {id:'fragile',name:'Skrøbelig',text:'−30 % maks. liv.'},
@@ -2430,9 +2448,172 @@
     {id:'widerPool',name:'Bredere genpulje',text:'4 kort i hvert mutationstilbud i stedet for 3.',max:1,costs:[50],after:'secondWind'},
     {id:'memory',name:'Genetisk hukommelse',text:'+1 omvalg ved start pr. rang.',max:2,costs:[45,90],after:'widerPool'}
   );
+  // FEATURES.lootTables step 1: luck. One value per run (1,0, loft 2,0) that multiplies the Sjælden+ chances on meat,
+  // mutation cards and the DNA/heal/powerup drop rolls. Sources: lab track, the Heldig mutation, Ekstinktion (relics in step 3).
+  const LUCK={cap:2,lab:.04,mutation:.08,difficulty:{normal:0,extinction:.25},lucky:['rare','epic','legendary']};
+  UPGRADES.push({id:'luck',name:'Heldig stamme',text:'+'+Math.round(100*LUCK.lab)+' % held pr. rang. Held giver oftere sjælden loot og sjældne kort.',max:5,costs:[30,45,65,90,120],requires:3,flag:'lootTables'});
+  MUTATIONS.push({id:'lucky',name:'Heldig',text:'+'+Math.round(100*LUCK.mutation)+' % held pr. rang.',icon:'bone',max:3,rarity:'uncommon',tag:'food',flag:'lootTables'});
+  const runLuck=r=>!FEATURES.lootTables||!r?1:Math.min(LUCK.cap,1+LUCK.lab*((r.upgrades&&r.upgrades.luck)||0)+LUCK.mutation*((r.mutations&&r.mutations.lucky)||0)+(LUCK.difficulty[r.difficulty]||0)+relicStat(r,'luck')+pressureLuck(r));
+  Game.prototype.luck=function(){return runLuck(this.run);};
+  // FEATURES.lootReveal (loot step 4): presentation only. The tier is already rolled; the app spins a reel top-down
+  // (Legendarisk first) and locks on it. big:true (relics, caches, bosses) pauses the world in the app, small does not.
+  Game.prototype.revealLoot=function(tier,{ceiling=4,kind='loot',label='',big=false,icon=''}={}){if(FEATURES.lootReveal)this.emit('loot_reveal',{tier,ceiling,kind,label,big,icon});};
+  // FEATURES.armorPoints (loot step 2): every armor source adds points and damage taken is K/(armor+K), so a point is
+  // worth the same however many you have and it never reaches 100 %. 10 per Sej hud rank keeps today's feel (×1.10/1.20/1.30
+  // survival vs ×1.09/1.19/1.32). r.armorBonus is for relics (step 3).
+  const ARMOR={K:100,perRank:10};
+  const armorPoints=r=>ARMOR.perRank*(r.mutations.armor||0)+(r.armorBonus||0)+relicStat(r,'armor');
+  const armorFactor=r=>FEATURES.armorPoints?ARMOR.K/(armorPoints(r)+ARMOR.K):(1-.08*r.mutations.armor)*ARMOR.K/((r.armorBonus||0)+relicStat(r,'armor')+ARMOR.K);
+  // FEATURES.relics (loot step 3, needs lootTables): relics sit beside the mutation cards. Never twice in a run; three sets
+  // of three plus Meteorsplint, which counts for every set. Bosses always give one (floor Episk, 15 % Legendarisk); albinos
+  // give one (floor Sjælden) instead of the epic card (Jonas 2026-10-21), elites keep the card. Numbers are starting values.
+  const RELICS={
+    osteoderm_plates:{name:'Osteodermplader',set:'armor',rarity:'rare',text:'+20 panser.',armor:20},
+    horn_shield:{name:'Hornskjold',set:'armor',rarity:'rare',text:'+15 panser og +10 % stamina-regeneration.',armor:15,regen:.1},
+    club_knob:{name:'Køllehaleknude',set:'armor',rarity:'epic',text:'+25 panser.',armor:25},
+    feathered_arms:{name:'Fjerarme',set:'hunter',rarity:'rare',text:'+8 % fart.',speed:.08},
+    keen_eye:{name:'Skarpt øje',set:'hunter',rarity:'rare',text:'+10 % held og +10 % opsamlingsradius.',luck:.1,magnet:.1},
+    sickle_claw:{name:'Seglklo',set:'hunter',rarity:'epic',text:'+10 procentpoint kritisk chance.',crit:.1},
+    gizzard_stones:{name:'Kråsesten',set:'survivor',rarity:'rare',text:'Føde heler 1 ekstra liv pr. portion.',food:1},
+    fat_hump:{name:'Fedtpukkel',set:'survivor',rarity:'rare',text:'+15 maksimalt liv.',maxHealth:15},
+    display_crest:{name:'Visningskam',set:'survivor',rarity:'epic',text:'+15 % held og +10 % DNA.',luck:.15,dna:.1},
+    meteor_shard:{name:'Meteorsplint',set:'joker',rarity:'legendary',text:'+25 % held og +10 panser. Tæller i alle sæt.',luck:.25,armor:10},
+  };
+  const RELIC_SETS={
+    armor:{name:'Panser',two:'+15 panser.',three:'15 % af den skade, du tager, rammer angriberen.',bonus2:{armor:15},reflect:.15},
+    hunter:{name:'Jæger',two:'+10 % held.',three:'Hvert drab giver 10 stamina.',bonus2:{luck:.1},stamina:10},
+    survivor:{name:'Overlever',two:'+10 % DNA.',three:'Overlev ét dødeligt slag pr. run med 1 liv.',bonus2:{dna:.1}},
+  };
+  const RELIC_SOURCES={boss:{floor:'epic',legendary:.15},albino:{floor:'rare'},nest:{floor:'rare'},altar:{floor:'rare'},start_fossil:{floor:'rare'},start_iridium:{floor:'epic'}};
+  const relicsOn=()=>FEATURES.relics&&FEATURES.lootTables&&!!LOOT;
+  const relicSet=(r,set)=>!relicsOn()||!r||!r.relics?0:Object.keys(r.relics).filter(id=>RELICS[id]&&(RELICS[id].set===set||RELICS[id].set==='joker')).length;
+  const relicStat=(r,key)=>{if(!relicsOn()||!r||!r.relics)return 0;let n=0;for(const id of Object.keys(r.relics))n+=(RELICS[id]&&RELICS[id][key])||0;
+    for(const [set,def] of Object.entries(RELIC_SETS))if(relicSet(r,set)>=2)n+=def.bonus2[key]||0;return n;};
+  Game.prototype.grantRelic=function(source){
+    const r=this.run;if(!relicsOn()||!r)return null;this.ensureLoot();r.relics=r.relics||{};const src=RELIC_SOURCES[source]||{};
+    const spec={...LOOT.QUALITY,floor:src.floor||'common',chances:{...LOOT.QUALITY.chances,...(src.legendary?{legendary:src.legendary}:{})}};
+    const tier=this.loot.rollRarity(spec,{luck:runLuck(r)},this.lootRandom),drop=this.loot.roll('relic_'+LOOT.TIERS[tier],{owned:r.relics},this.lootRandom)[0];
+    if(!drop)return null;
+    if(drop.id==='dna'){this.addDNA(drop.count);this.revealLoot(tier,{big:true,kind:'relic',label:'+'+drop.count+' DNA'});return {id:'dna',count:drop.count,tier};}
+    const relic=RELICS[drop.id];r.relics[drop.id]=true;r.stats.relics=(r.stats.relics||0)+1;
+    if(relic.maxHealth){r.maxHealth+=relic.maxHealth;r.health+=relic.maxHealth;}
+    this.emit('relic',{id:drop.id,name:relic.name,tier,source});this.revealLoot(tier,{big:true,kind:'relic',label:relic.name,icon:'relics/'+drop.id});
+    this.checkAchievements();return {id:drop.id,tier};
+  };
+  // Panser 3: part of every hit taken goes back to the animal that dealt it (not hazards or thorns).
+  const relicDamage=Game.prototype.damage;
+  Game.prototype.damage=function(amount,source){const r=this.run,before=r&&r.health,out=relicDamage.call(this,amount,source);
+    if(r&&relicSet(r,'armor')>=3&&source&&!source.hazard&&r.enemies.includes(source)&&before>r.health)source.hp-=(before-r.health)*RELIC_SETS.armor.reflect;return out;};
+  // FEATURES.nestCaches (needs lootTables): a guarded nest taken after its guard died also opens a cache from
+  // GAME_TABLES.nest_cache on the loot stream. The old meat/plant and the egg stay, so the cache is extra.
+  const NEST_CACHE={dnaPerStage:1,meat:{base:12,perStage:3},heal:20};
+  const nestCachesOn=()=>FEATURES.nestCaches&&FEATURES.lootTables&&!!LOOT;
+  // table/event/label let the amber altar (FEATURES.currencies) reuse the cache with its own table.
+  Game.prototype.openNestCache=function(site,{table='nest_cache',event='nest_cache',label='Rede-kiste',source='nest'}={}){
+    const r=this.run;if(table==='nest_cache'&&!nestCachesOn()||!LOOT||!r||!site||site.cacheOpened)return [];site.cacheOpened=true;this.ensureLoot();
+    const drops=this.loot.roll(table,{source,luck:runLuck(r),stage:r.stage,flags:{relics:relicsOn()}},this.lootRandom),got=[];
+    drops.forEach((d,i)=>{const x=site.x+(i-(drops.length-1)/2)*26,y=site.y+24;
+      if(d.id==='relic'){const rel=this.grantRelic(source);if(rel)got.push(rel.id==='dna'?'dna':'relic');return;}
+      if(d.id==='dna'){this.addDNA(d.count+NEST_CACHE.dnaPerStage*r.stage);got.push('dna');return;}
+      if(d.id==='heal'){r.pickups.push({id:++this.nextId,kind:'heal',x,y,value:NEST_CACHE.heal});got.push('heal');return;}
+      if(d.id==='meat'){const value=NEST_CACHE.meat.base+NEST_CACHE.meat.perStage*r.stage;
+        if(['herbivore','omnivore'].includes(PLAYER_SPECIES[r.species].diet))r.map.forage.push({id:'plant:cache:'+site.id+':'+i,kind:'plant',rarity:2,value,x,y,depleted:false});
+        else r.pickups.push({id:++this.nextId,kind:'meat',rarity:3,value,x,y});got.push('meat');}
+    });
+    if(table==='nest_cache')r.stats.nestCaches=(r.stats.nestCaches||0)+1;this.emit(event,{count:got.length,items:got});
+    if(!got.includes('relic'))this.revealLoot(got.includes('meat')?3:2,{big:true,kind:'cache',label,icon:'loot/nest_cache'});
+    return got;
+  };
+  const exploreCache=Game.prototype.explore;
+  Game.prototype.explore=function(take){
+    const r=this.run,site=r&&r.map.sites.find(s=>s.id===r.activeSite),wasClaimed=site&&site.claimed,out=exploreCache.call(this,take);
+    if(nestCachesOn()&&take&&site&&site.type==='nest'&&!wasClaimed&&site.claimed)this.openNestCache(site);
+    return out;
+  };
+  ACHIEVEMENTS.push(
+    {id:'relicSetArmor',name:'Levende kampvogn',text:'Saml hele Panser-sættet i ét run.',dna:15,flag:'relics',check:c=>!!c.run&&relicSet(c.run,'armor')>=3},
+    {id:'relicSetHunter',name:'Spidsjæger',text:'Saml hele Jæger-sættet i ét run.',dna:15,flag:'relics',check:c=>!!c.run&&relicSet(c.run,'hunter')>=3},
+    {id:'relicSetSurvivor',name:'Sejlivet',text:'Saml hele Overlever-sættet i ét run.',dna:15,flag:'relics',check:c=>!!c.run&&relicSet(c.run,'survivor')>=3});
+  // ---- Loot step 5 (Jonas 2026-10-21, "Alle tre"): extinction pressure and currencies. Their save fields are kept with
+  // the flags off too (like baryonyxFish), so switching a flag never loses anything.
+  // FEATURES.extinctionPressure: an optional pressure step 0-5 on top of the difficulty. Each step gives animals and
+  // bosses +8 % HP and +6 % damage, and you +10 % luck and +10 % run DNA (paid at the end after one boss, like the
+  // challenges). Step n opens after a won hunt on step n-1. The daily hunt always runs on step 0, the same for everyone.
+  const PRESSURE={max:5,hp:.08,damage:.06,luck:.1,dna:.1};
+  const pressureOn=()=>!!FEATURES.extinctionPressure;
+  const pressureOpen=save=>Math.min(PRESSURE.max,(save&&Number.isInteger(save.pressureBest)?save.pressureBest:-1)+1);
+  const runPressure=r=>pressureOn()&&r?r.pressure||0:0;
+  const pressureLuck=r=>PRESSURE.luck*runPressure(r);
+  // FEATURES.currencies: rav lives in one run; fossiler and iridium are saved. Rav: +1 per amber piece (its 3 DNA stay)
+  // and per boss, spent at the level's amber altar on a loot roll (CURRENCY.altar). Fossiler: +1 per fossil site or
+  // fossil find. Iridium: +1 for a won hunt, +2 for surviving the ash level, +1 per Legendarisk relic. Before a hunt
+  // you can spend 5 fossiler on a start relic (floor Sjælden) or 1 iridium (floor Episk); that needs relics.
+  const CURRENCY={fossilStart:5,iridiumStart:1,altar:{price:1,grow:1.4,buys:2},iridium:{victory:1,ash:2,legendary:1}};
+  const START_RELICS=['none','fossil','iridium'];
+  const currenciesOn=()=>!!FEATURES.currencies;
+  function sanitizeMeta(save,x){
+    save.pressureBest=Math.floor(clamp(finite(x.pressureBest,-1),-1,PRESSURE.max));
+    save.settings.pressure=Math.floor(clamp(finite(x.settings&&x.settings.pressure),0,PRESSURE.max));
+    save.currency={fossils:Math.floor(clamp(finite(x.currency&&x.currency.fossils),0,1e6)),iridium:Math.floor(clamp(finite(x.currency&&x.currency.iridium),0,1e6))};
+    save.settings.startRelic=START_RELICS.includes(x.settings&&x.settings.startRelic)?x.settings.startRelic:'none';
+  }
+  const startRelicCost=kind=>kind==='fossil'?{fossils:CURRENCY.fossilStart}:kind==='iridium'?{iridium:CURRENCY.iridiumStart}:null;
+  const canStartRelic=(save,kind)=>{const c=startRelicCost(kind);return !!c&&currenciesOn()&&relicsOn()&&Object.entries(c).every(([k,v])=>(save.currency[k]||0)>=v);};
+  Game.prototype.earnCurrency=function(kind,n=1,x,y){
+    const r=this.run;if(!currenciesOn()||!r||!(n>0))return 0;r.currency=r.currency||{rav:0,fossils:0,iridium:0};r.currency[kind]+=n;
+    if(kind!=='rav'){this.save.currency[kind]+=n;this.persist();}
+    if(x!==undefined)r.effects.push({x,y:y-28,text:'+'+n+' '+(kind==='rav'?'RAV':kind==='fossils'?'FOSSIL':'IRIDIUM'),color:kind==='iridium'?'#a2d4c1':'#dfbc52',life:1.4});
+    this.emit('currency',{kind,count:n});return n;
+  };
+  const settingMeta=Game.prototype.setSetting;
+  Game.prototype.setSetting=function(key,value){
+    if(key==='pressure'){this.save.settings.pressure=Math.floor(clamp(finite(Number(value)),0,pressureOpen(this.save)));this.persist();return;}
+    if(key==='startRelic'){this.save.settings.startRelic=START_RELICS.includes(value)?value:'none';this.persist();return;}
+    return settingMeta.call(this,key,value);
+  };
+  const pressEnemy=(r,e)=>{const p=runPressure(r);if(!p||!e||e.pressured)return;e.pressured=true;e.hp*=1+PRESSURE.hp*p;e.maxHP*=1+PRESSURE.hp*p;e.damage*=1+PRESSURE.damage*p;};
+  const dailyMeta=Game.prototype.startDaily;
+  Game.prototype.startDaily=function(date){this.dailyStarting=true;try{return dailyMeta.call(this,date);}finally{this.dailyStarting=false;}};
+  const startMeta=Game.prototype.start;
+  Game.prototype.start=function(options={}){
+    const out=startMeta.call(this,options),r=this.run;if(!r)return out;
+    r.pressure=pressureOn()&&!this.dailyStarting?Math.min(this.save.settings.pressure,pressureOpen(this.save)):0;
+    for(const e of r.enemies)pressEnemy(r,e);
+    r.currency={rav:0,fossils:0,iridium:0};
+    const kind=this.save.settings.startRelic;
+    if(!this.dailyStarting&&kind!=='none'&&canStartRelic(this.save,kind)){
+      for(const [k,v] of Object.entries(startRelicCost(kind)))this.save.currency[k]-=v;this.persist();r.startRelic=kind;this.grantRelic('start_'+kind);}
+    return out;
+  };
+  const spawnMeta=Game.prototype.spawn;
+  Game.prototype.spawn=function(...args){const e=spawnMeta.apply(this,args);if(this.run)pressEnemy(this.run,e);return e;};
+  const relicMeta=Game.prototype.grantRelic;
+  Game.prototype.grantRelic=function(source){const got=relicMeta.call(this,source);
+    if(got&&got.id!=='dna'&&got.tier===4)this.earnCurrency('iridium',CURRENCY.iridium.legendary,this.run.player.x,this.run.player.y);return got;};
+  const killMeta=Game.prototype.kill;
+  Game.prototype.kill=function(e,...rest){const r=this.run,boss=e&&e.boss&&!e.rewarded&&r,out=killMeta.call(this,e,...rest);
+    if(boss&&e.rewarded)this.earnCurrency('rav',1,e.x,e.y);return out;};
+  const exploreMeta=Game.prototype.explore;
+  Game.prototype.explore=function(take){
+    const r=this.run,site=r&&r.map.sites.find(s=>s.id===r.activeSite),was=site&&site.claimed,out=exploreMeta.call(this,take);
+    if(take&&site&&site.type==='fossil'&&!was&&site.claimed)this.earnCurrency('fossils',1,site.x,site.y);return out;
+  };
+  const fossilFinds=r=>{let n=0;for(const ev of r.map.events)if(ev.type==='fossil'&&ev.claimed)n++;return n;};
+  const stepMeta=Game.prototype.step;
+  Game.prototype.step=function(dt,...rest){const r=this.run,before=currenciesOn()&&r&&r.map?fossilFinds(r):null,out=stepMeta.call(this,dt,...rest);
+    if(before!==null&&this.run===r&&fossilFinds(r)>before)this.earnCurrency('fossils',fossilFinds(r)-before,r.player.x,r.player.y);return out;};
+  const finishMeta=Game.prototype.finish;
+  Game.prototype.finish=function(victory){
+    // The ash level is only reached after the L8 boss, so a run that got there counts as won whatever happens there.
+    const r=this.run,fresh=r&&!r.result,p=runPressure(r),won=fresh&&(victory||!!r.ashWorld)&&(r.campaign===LEVELS||!!r.ashWorld);
+    if(fresh&&p&&r.bosses>=1){const bonus=Math.round(r.dna*PRESSURE.dna*p);if(bonus>0){this.save.dna+=bonus;r.dna+=bonus;r.stats.dna+=bonus;}r.pressureBonus=bonus;}
+    if(won&&pressureOn()&&!r.daily&&p>this.save.pressureBest){this.save.pressureBest=p;r.pressureOpened=p<PRESSURE.max?p+1:null;}
+    if(won)this.earnCurrency('iridium',CURRENCY.iridium.victory+(r.ashSurvivor?CURRENCY.iridium.ash:0));
+    return finishMeta.call(this,victory);
+  };
   const upgradePrice=(u,rank)=>u.costs?u.costs[Math.min(rank,u.costs.length-1)]:upgradeCost(rank);
   const baseRanks=save=>UPGRADES.filter(u=>!u.costs).reduce((n,u)=>n+(save.upgrades[u.id]||0),0);
-  const upgradeUnlocked=(save,u)=>!u.costs||FEATURES.labTracks&&(!u.requires||baseRanks(save)>=u.requires)&&(!u.after||(save.upgrades[u.after]||0)>=1);
+  const upgradeUnlocked=(save,u)=>(!u.flag||FEATURES[u.flag])&&(!u.costs||FEATURES.labTracks&&(!u.requires||baseRanks(save)>=u.requires)&&(!u.after||(save.upgrades[u.after]||0)>=1));
   function sanitizePartC(save,x){
     save.blueprints=[...new Set((Array.isArray(x.blueprints)?x.blueprints:[]).filter(id=>BLUEPRINTS.some(b=>b.id===id)))];
     save.mastery={};const mastery=x.mastery&&typeof x.mastery==='object'?x.mastery:{};
@@ -2506,7 +2687,7 @@
   function foodHeal(r,value,fish=false){
     const m=r.mutations;if(m.bloodthirst)return 0;
     let heal=value*(m.scavenger+(setActive(r,'food')?1:0)+(m.fishHook?1:0)+(fish?0:m.carrionKing||0))+(fish?2*(m.fishOil||0)+(m.harpoonClaw?3:0):0);
-    heal+=newFoodHeal(r,value,fish);
+    heal+=newFoodHeal(r,value,fish)+value*relicStat(r,'food');
     if(m.ironStomach)heal*=2;
     return heal;
   }
@@ -2564,7 +2745,7 @@
   Game.prototype.banishLeft=function(){const r=this.run;return FEATURES.banish&&r?(r.banishLeft??BANISH.perRun):0;};
   Game.prototype.masteryTier=function(id){return masteryTier(this.save,id);};
   Game.prototype.setBonuses=function(){const r=this.run;return r?Object.keys(MUTATION_TAGS).filter(tag=>setActive(r,tag)):[];};
-  const weightedPick=(g,list)=>{const total=list.reduce((n,m)=>n+Math.max(.01,mutationWeight(m,g.run.mutations)),0);let roll=g.random()*total;for(const m of list){roll-=Math.max(.01,mutationWeight(m,g.run.mutations));if(roll<0)return m;}return list[list.length-1];};
+  const weightedPick=(g,list)=>{const total=list.reduce((n,m)=>n+Math.max(.01,mutationWeight(m,g.run.mutations,runLuck(g.run))),0);let roll=g.random()*total;for(const m of list){roll-=Math.max(.01,mutationWeight(m,g.run.mutations,runLuck(g.run)));if(roll<0)return m;}return list[list.length-1];};
   const availablePartC=Game.prototype.mutationAvailable;
   Game.prototype.mutationAvailable=function(m){
     const r=this.run;
@@ -3289,7 +3470,7 @@
     const pool=MUTATIONS.filter(m=>this.mutationAvailable(m));if(!pool.length){this.addDNA(8);return this.offerRareReward();}
     r.choices=this.rollChoices(pool);r.rareSelection=false;this.phase='mutation';this.emit('level_up');return true;
   };
-  const API = { TOUGH, BOUNTY, deathTip, IDENTITY, STEALTH, PROP_SIZE, coverAt, EQUILIBRIUM, DIFFICULTIES, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, CUTOUT_SPECIES, cutoutFrame, STATIC_SPECIES, RIG_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, FISH_GAME, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, HUD_LAYOUTS, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  const API = { PRESSURE, pressureOpen, CURRENCY, START_RELICS, canStartRelic, dailySquares, LUCK, runLuck, ARMOR, armorPoints, armorFactor, RELICS, RELIC_SETS, RELIC_SOURCES, relicSet, relicStat, NEST_CACHE, TOUGH, BOUNTY, deathTip, IDENTITY, STEALTH, PROP_SIZE, coverAt, EQUILIBRIUM, DIFFICULTIES, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, CUTOUT_SPECIES, cutoutFrame, STATIC_SPECIES, RIG_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, FISH_GAME, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, HUD_LAYOUTS, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
   if (EXTRAS) EXTRAS.install(API);
   if (TELEMETRY) TELEMETRY.install({ Game, FEATURES });
   return API;
