@@ -12,7 +12,7 @@
   const TELEMETRY = (typeof module === 'object' && module.exports ? require('./telemetry.js') : globalThis.PrimalTelemetry) || null;
   // Data-driven loot tables with cascading top-down rarity (FEATURES.lootTables) live in loot.js.
   const LOOT = (typeof module === 'object' && module.exports ? require('./loot.js') : globalThis.PrimalLoot) || null;
-  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true,randomStart:true,runTelemetry:true,sizeAware:true,hudLayouts:true,titleTips:true,stealth:true,speciesIdentity:true,waterStart:true,bounties:true,deathTips:true,bossCurve:true,titleBook:true,titleAchievements:true,mapBiomes:true,fishingGame:true,tipsToggle:true,steepBosses:true,tougherCombat:true,epicBudget:true,ankyTailTurn:true,rigSprites:true,rexCutout:false,amberFair:true,lootTables:false,armorPoints:false,lootReveal:false,relics:false,nestCaches:false,affixStages:false,hudIconSet:false,tarTotem:false,rottenMeat:false,dailyShare:false,extinctionPressure:false,currencies:false};
+  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true,randomStart:true,runTelemetry:true,sizeAware:true,hudLayouts:true,titleTips:true,stealth:true,speciesIdentity:true,waterStart:true,bounties:true,deathTips:true,bossCurve:true,titleBook:true,titleAchievements:true,mapBiomes:true,fishingGame:true,tipsToggle:true,steepBosses:true,tougherCombat:true,epicBudget:true,ankyTailTurn:true,rigSprites:true,rexCutout:false,amberFair:true,lootTables:false,armorPoints:false,lootReveal:false,relics:false,nestCaches:false,affixStages:false,hudIconSet:false,tarTotem:false,rottenMeat:false,dailyShare:false,extinctionPressure:false,currencies:false,smartAllies:true};
   // Size-aware world (FEATURES.sizeAware): a prop's collision and slow radius come from its visible pixels
   // (tools/measure_props.py), only its kind is chosen by hand. Kinds also decide the draw layer in app.js.
   const PROP_SIZE={"assets/ecology/broad_fern.png":["soft",38],"assets/ecology/conifer.png":["canopy",34],"assets/ecology/cycad.png":["soft",36],"assets/ecology/dry_grass.png":["ground",32],"assets/ecology/flowers.png":["ground",30],"assets/ecology/fruit_bush.png":["soft",36],"assets/ecology/herb.png":["ground",36],"assets/ecology/horsetail.png":["soft",34],"assets/ecology/leaf_litter.png":["ground",30],"assets/ecology/lichen.png":["ground",32],"assets/ecology/moss.png":["ground",28],"assets/ecology/mushrooms.png":["ground",26],"assets/ecology/reeds.png":["soft",37],"assets/ecology/roots.png":["ground",34],"assets/ecology/seed_fern.png":["soft",38],"assets/ecology/shrub.png":["soft",35],"assets/ecology/succulent.png":["ground",29],"assets/ecology/twigs.png":["ground",32],"assets/environment/fern.png":["ground",21],"assets/environment/rock.png":["solid",13],"assets/props/boulder_large.png":["solid",22],"assets/props/dead_tree.png":["canopy",51],"assets/props/fallen_log.png":["ground",21],"assets/props/fern_large.png":["soft",24],"assets/props/flower_bush.png":["soft",23],"assets/props/lava_rock.png":["solid",22],"assets/props/meteorite.png":["solid",23],"assets/props/nest_eggs.png":["ground",20],"assets/props/nest_empty.png":["ground",21],"assets/props/skull.png":["ground",23],"assets/props/tree_canopy.png":["canopy",56]}; // generated by tools/measure_props.py: [kind, visible radius px]
@@ -2063,23 +2063,62 @@
   Game.prototype.stepRaptors=function(dt){
     const r=this.run;
     if((r.raptors||[]).some(a=>a.temp&&a.until<=r.seconds)){for(const a of r.raptors)if(a.temp&&a.until<=r.seconds)this.burst(a.x,a.y,'dust',6,a.slot);r.raptors=r.raptors.filter(a=>!a.temp||a.until>r.seconds);}
-    const target=this.packTarget(),focused=!!(target&&r.packFocus&&r.packFocus.id===target.id),tether=FEATURES.packLeash?(focused?PACK.focusLeash:PACK.leash)+60:Infinity;
+    const shared=this.packTarget(),smart=FEATURES.smartAllies,picks=smart?this.allyTargets(shared):null,fleeAt=smart?ALLY.flee:PACK.flee,backAt=smart?ALLY.back:.7;
     for(const a of r.raptors||[]){
+      const target=picks?picks.get(a)||null:shared,focused=!!(target&&r.packFocus&&r.packFocus.id===target.id),tether=FEATURES.packLeash?(focused?PACK.focusLeash:PACK.leash)+60+(smart&&target&&target.allyThreat?ALLY.threatReach:0):Infinity;
       const x=a.x,y=a.y,speed=a.speed||PACK.speed,home=Math.hypot(a.x-r.player.x,a.y-r.player.y);a.cooldown=Math.max(0,a.cooldown-dt);
       if(!a.ally){const t=r.seconds*.3+a.homeX*.01;this.travel(a,(a.homeX+Math.cos(t)*60-a.x)*dt*.5,(a.homeY+Math.sin(t)*40-a.y)*dt*.5);} // wild: pace near its spot
-      else if(a.mode==='flee'){const t=FEATURES.packLeash&&home>PACK.leash?{x:2*a.x-r.player.x,y:2*a.y-r.player.y}:target||r.enemies.find(e=>e.alert&&e.damage&&Math.hypot(e.x-a.x,e.y-a.y)<400)||{x:r.player.x+(a.x>r.player.x?-120:120),y:r.player.y},dx=a.x-t.x,dy=a.y-t.y,d=Math.max(1,Math.hypot(dx,dy));this.travel(a,dx/d*speed*dt,dy/d*speed*dt); /* beyond the leash it flees back to you */a.hp=Math.min(a.maxHP,a.hp+a.maxHP*PACK.regen*2*dt);if(a.hp>=a.maxHP*.7)a.mode='follow';}
-      else if(target&&a.hp>=a.maxHP*PACK.flee&&home<tether){a.mode='attack';const dx=target.x-a.x,dy=target.y-a.y,d=Math.max(1,Math.hypot(dx,dy)),reach=target.radius+a.radius+14;
+      else if(a.mode==='flee'){const t=FEATURES.packLeash&&home>PACK.leash?{x:2*a.x-r.player.x,y:2*a.y-r.player.y}:target||r.enemies.find(e=>e.alert&&e.damage&&Math.hypot(e.x-a.x,e.y-a.y)<400)||{x:r.player.x+(a.x>r.player.x?-120:120),y:r.player.y},dx=a.x-t.x,dy=a.y-t.y,d=Math.max(1,Math.hypot(dx,dy));this.travel(a,dx/d*speed*dt,dy/d*speed*dt); /* beyond the leash it flees back to you */a.hp=Math.min(a.maxHP,a.hp+a.maxHP*PACK.regen*(smart?ALLY.regen:1)*2*dt);if(a.hp>=a.maxHP*backAt)a.mode='follow';}
+      else if(target&&a.hp>=a.maxHP*fleeAt&&home<tether){a.mode='attack';const dx=target.x-a.x,dy=target.y-a.y,d=Math.max(1,Math.hypot(dx,dy)),reach=target.radius+a.radius+14;
         const across=!navLineClear(r.stage,r.map,true,a,target,0); // never bite across lava/deep water
         if(d>reach||across)this.travel(a,dx/d*speed*dt,dy/d*speed*dt);
         else if(a.cooldown===0){a.cooldown=PACK.cooldown;const frontal=((a.x-target.x)*target.facingX+(a.y-target.y)*target.facingY)/d>.6,armor=['triceratops','ankylosaurus'].includes(target.kind)&&frontal?.5:1,guard=target.npcGuardUntil>r.seconds?.25:1;
-          target.hp=Math.max(1,target.hp-(a.damage||PACK.damage)*(1+r.stage*.25)*armor*guard*(target.boss?.5:1)); /* same armour as your bite; half vs bosses */target.hit=Math.max(target.hit||0,.12);a.bites=(a.bites||0)+1;
-          if(target.damage){a.hp=Math.max(1,a.hp-target.damage*(target.boss?.5:.3));if(a.hp<a.maxHP*PACK.flee){a.mode='flee';r.effects.push({x:a.x,y:a.y-26,text:'FLYGTER',color:'#bbd899',life:1});}}}
+          target.hp=Math.max(1,target.hp-(a.damage||PACK.damage)*(1+r.stage*.25)*armor*guard*(target.boss?.5:1)*(smart?ALLY.damage:1));if(smart)this.allyInterrupt(target); /* same armour as your bite; half vs bosses */target.hit=Math.max(target.hit||0,.12);a.bites=(a.bites||0)+1;
+          if(target.damage){a.hp=Math.max(1,a.hp-target.damage*(target.boss?.5:.3));if(a.hp<a.maxHP*fleeAt){a.mode='flee';r.effects.push({x:a.x,y:a.y-26,text:'FLYGTER',color:'#bbd899',life:1});}}}
         a.facingX=dx/d;a.facingY=dy/d;}
-      else{a.mode=a.hp<a.maxHP*PACK.flee?'flee':'follow';const back=60+30*Math.floor((a.slot||0)/2),sx=r.player.x-(r.player.facing==='E'?back:r.player.facing==='W'?-back:0)+((a.slot||0)%2?-30:30),sy=r.player.y-(r.player.facing==='S'?back:r.player.facing==='N'?-back:0)+20,dx=sx-a.x,dy=sy-a.y,d=Math.hypot(dx,dy);
+      else{a.mode=a.hp<a.maxHP*fleeAt?'flee':'follow';const back=60+30*Math.floor((a.slot||0)/2),sx=r.player.x-(r.player.facing==='E'?back:r.player.facing==='W'?-back:0)+((a.slot||0)%2?-30:30),sy=r.player.y-(r.player.facing==='S'?back:r.player.facing==='N'?-back:0)+20,dx=sx-a.x,dy=sy-a.y,d=Math.hypot(dx,dy);
         if(d>18){const v=Math.min(speed*(d>200?1.4:1),d/dt);this.travel(a,dx/d*v*dt,dy/d*v*dt);a.facingX=dx/d;a.facingY=dy/d;}a.hp=Math.min(a.maxHP,a.hp+a.maxHP*PACK.regen*dt);}
-      a.moving=Math.hypot(a.x-x,a.y-y)>.05;
+      a.moving=Math.hypot(a.x-x,a.y-y)>.05;if(smart&&a.ally)this.allyCatchUp(a,dt,x,y);
       if(a.moving){a.walk=(a.walk+dt)%1;a.gaitPhase=((a.gaitPhase||0)+dt*(a.mode==='flee'?2:8/6))%1;}
     }
+  };
+  // ---- Smarter allies (FEATURES.smartAllies, 2026-10-22): a sim showed allies were on an animal attacking you only 34 %
+  // of the time and fled 12 % of the time. Now an animal winding up, biting, charging or slamming at you (within
+  // `threatReach` px beyond the leash) is always the first target, then one chasing you within `chaseReach` px (a boss
+  // only once you fight it), and two allies split two threats. Allies still leave the killing blow to you, but keep
+  // harrying an attacker left at 1 HP (in the sim 95 % of 'ally follows while you are attacked' were such animals). A non-boss bitten
+  // during its windup is held back `delay` s once per windup. They flee at 25 % HP, come back at 50 %, heal faster and
+  // bite harder (still never the killing blow). An ally more than `catchUp` px away, or stuck for `stuck` s while it
+  // wants to move, reappears beside you.
+  const ALLY={flee:.25,back:.5,regen:1.5,damage:1.5,threatReach:120,chaseReach:180,delay:.35,catchUp:600,stuck:3};
+  const ALLY_THREAT_MODES=['windup','bite','charge','slam'];
+  Game.prototype.allyTargets=function(shared){
+    const r=this.run,P=r.player,away=e=>Math.hypot(e.x-P.x,e.y-P.y),allies=(r.raptors||[]).filter(a=>a.ally),out=new Map();
+    for(const e of r.enemies)e.allyThreat=false;
+    const focus=shared&&r.packFocus&&r.packFocus.id===shared.id?shared:null;
+    const hostile=e=>e.hp>0&&e.damage&&e.alert&&!e.huntTarget, /* a 1 HP attacker is still harried: bites hold back its windups */attacking=e=>ALLY_THREAT_MODES.includes(e.mode)&&away(e)<PACK.leash+ALLY.threatReach,closing=e=>e.mode==='chase'&&(!e.boss||e.lastAttackedAt>r.seconds-6)&&away(e)<ALLY.chaseReach;
+    const threats=focus?[]:r.enemies.filter(e=>hostile(e)&&(attacking(e)||closing(e))).sort((a,b)=>attacking(b)-attacking(a)||away(a)-away(b)); // attacks first, then animals closing in
+    for(const e of threats)e.allyThreat=true;
+    const list=threats.length?threats:shared?[shared]:[];
+    allies.forEach((a,i)=>{
+      if(!list.length)return;
+      // ally i takes threat i when there are enough, else the threat closest to it
+      const t=list.length>i&&threats.length?list[i]:list.reduce((b,e)=>Math.hypot(e.x-a.x,e.y-a.y)<Math.hypot(b.x-a.x,b.y-a.y)?e:b);
+      out.set(a,t);
+    });
+    return out;
+  };
+  Game.prototype.allyInterrupt=function(e){
+    const r=this.run;if(e.boss||e.mode!=='windup'||e.allyDelayedUntil>r.seconds)return; // once per windup
+    e.timer+=ALLY.delay;e.allyDelayedUntil=r.seconds+e.timer+.1;
+  };
+  Game.prototype.allyCatchUp=function(a,dt,x,y){
+    const r=this.run,P=r.player,d=Math.hypot(a.x-P.x,a.y-P.y),wants=a.mode==='attack'&&a.cooldown===0||a.mode==='follow'&&d>110; // an ally that could not bite this step
+    a.stuckFor=wants&&Math.hypot(a.x-x,a.y-y)<(a.speed||PACK.speed)*dt*.15?(a.stuckFor||0)+dt:0;
+    if(d<=ALLY.catchUp&&a.stuckFor<ALLY.stuck)return;
+    for(let k=0;k<12;k++){const ang=k*2.399963+(a.slot||0),q={x:P.x+Math.cos(ang)*(50+k*6),y:P.y+Math.sin(ang)*(50+k*6)};
+      if(isLava(r.stage,r.map,q)||!canSwim(a)&&isDeepWater(r.stage,r.map,q)||r.map.rocks.some(o=>Math.hypot(o.x-q.x,o.y-q.y)<o.radius+a.radius))continue;
+      this.burst(a.x,a.y,'dust',6,a.slot);a.x=q.x;a.y=q.y;a.stuckFor=0;a.mode=a.mode==='flee'?'flee':'follow';this.burst(a.x,a.y,'dust',6,a.slot);return;}
   };
   // The keyboard calls interact() directly (app.js keydown); step() input.interact covers gamepads and bots.
   const interactPack=Game.prototype.interact;
