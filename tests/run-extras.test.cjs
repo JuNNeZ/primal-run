@@ -121,3 +121,61 @@ test('raptor pack is capped by species strength: Spinosaurus recruits none, Bary
   assert.equal(C.packLimitOf({ species: 'spinosaurus' }), 0); assert.equal(C.packLimitOf({ species: 'compy' }), 2);
   assert.equal(C.PACK.max, 2, 'the cap is restored after each feed');
 });
+
+test('affixStages: later levels stack distinct traits on one elite, and each extra trait pays', () => {
+  const flag = C.FEATURES.affixStages, elite = (on, level) => {
+    C.FEATURES.affixStages = on;
+    const g = make(), r = g.run; r.levelIndex = level; const e = g.spawn('carnotaurus', { x: r.player.x + 400, y: r.player.y }); e.elite = true; g.step(1 / 30, {}); return { g, r, e };
+  };
+  try {
+    const off = elite(false, 6); assert.equal(off.e.affixes, undefined); assert.ok(C.ELITE_AFFIXES[off.e.affix]);
+    for (const [level, n] of [[0, 1], [3, 2], [6, 3], [7, 3]]) {
+      const { e } = elite(true, level); assert.equal(e.affixes.length, n, 'level ' + level); assert.equal(new Set(e.affixes).size, n, 'distinct');
+      assert.equal(e.affixes[0], e.affix); close(e.lootLuck, C.AFFIX_STAGES.luck * (n - 1));
+    }
+    const { g, r, e } = elite(true, 6); e.affixes = ['brutal', 'swift', 'thorns']; assert.ok(C.hasAffix(e, 'thorns')); assert.ok(!C.hasAffix(e, 'regen'));
+    const base = elite(true, 6); base.e.affixes = [base.e.affix];
+    const dna = (game, foe) => { const before = game.run.dna; game.kill(foe); game.kill(foe); return game.run.dna - before; };
+    assert.equal(dna(g, e) - dna(base.g, base.e), 2 * C.AFFIX_STAGES.dna, 'two extra traits give +4 DNA once');
+  } finally { C.FEATURES.affixStages = flag; }
+});
+function close(a, b) { assert.ok(Math.abs(a - b) < 1e-9, a + ' vs ' + b); }
+
+test('tarTotem: none on level 1 or with the flag off; on level 2 the pact gives the boss a trait and the kill pays double', () => {
+  const was = [C.FEATURES.tarTotem, C.FEATURES.lootTables], set = on => { C.FEATURES.tarTotem = C.FEATURES.lootTables = on; };
+  const level2 = () => { const g = make(); g.phase = 'cleared'; g.run.bossDefeated = true; g.nextStage(); g.phase = 'playing'; g.run.enemies = []; g.run.spawnTimer = 999; return g; };
+  try {
+    set(false); assert.equal(level2().run.tarTotem, null);
+    set(true); assert.equal(make().run.tarTotem, null, 'no totem on level 1');
+    const g = level2(), r = g.run; assert.equal(r.levelIndex, 1); assert.ok(r.tarTotem, 'totem from level 2');
+    assert.deepEqual(level2().run.tarTotem, r.tarTotem, 'placement follows the seed');
+    const far = { ...r.player }; assert.equal(g.interact(), false, 'too far away');
+    r.player.x = r.tarTotem.x; r.player.y = r.tarTotem.y; assert.equal(g.interact(), true); assert.equal(r.tarTotem.pact, true);
+    const boss = g.spawn(g.currentLevel().boss, { x: far.x + 600, y: far.y }, true); const hp = boss.maxHP; g.step(1 / 30, {});
+    assert.ok(boss.tarred && C.ELITE_AFFIXES[boss.affix]); assert.ok(boss.maxHP >= hp * C.TAR_TOTEM.hp - 1e-6);
+    const plain = level2(), pb = plain.spawn(plain.currentLevel().boss, { x: far.x + 600, y: far.y }, true); plain.step(1 / 30, {}); assert.ok(!pb.tarred);
+    const gain = (game, b) => { const before = game.run.dna; game.kill(b); game.kill(b); return game.run.dna - before; };
+    assert.equal(gain(g, boss) - gain(plain, pb), g.currentLevel().dna, 'the level DNA once more');
+  } finally { [C.FEATURES.tarTotem, C.FEATURES.lootTables] = was; }
+});
+
+test('rottenMeat: a bite of spoiling meat gives 60 s of +30 % damage taken, then +6 max health (max 3); fresh meat and the flag off do nothing', () => {
+  const was = C.FEATURES.rottenMeat;
+  const bite = (on, age, iron = false) => {
+    C.FEATURES.rottenMeat = on; const g = make(), r = g.run; if (iron) r.mutations.ironStomach = 1;
+    const e = g.spawn('carnotaurus', { x: r.player.x + 30, y: r.player.y }); g.kill(e); const c = r.corpses.find(k => k.id === e.id); c.age = age;
+    r.pickups = r.pickups.filter(p => p.corpseId === e.id); for (const p of r.pickups) { p.x = r.player.x + 5; p.y = r.player.y; p.value = 20; }
+    for (let i = 0; i < 40 && !r.stats.meatEaten; i++) g.eat(1 / 30, { eat: true });
+    return { g, r };
+  };
+  try {
+    const fresh = bite(true, 1); assert.ok(fresh.r.stats.meatEaten > 0); assert.equal(fresh.r.extras && fresh.r.extras.rot || null, null, 'fresh meat is safe');
+    const off = bite(false, 12); assert.ok(off.r.stats.meatEaten > 0); assert.equal(off.r.extras && off.r.extras.rot || null, null);
+    const iron = bite(true, 12, true); assert.equal(iron.r.extras && iron.r.extras.rot || null, null, 'Jernmave shrugs it off');
+    const { g, r } = bite(true, 12); assert.ok(r.extras.rot, 'rotten bite'); C.FEATURES.rottenMeat = true;
+    const hit = () => { r.health = r.maxHealth = 1000; r.invulnerable = 0; r.shield = 0; g.damage(10, { x: r.player.x + 20, y: r.player.y }); return 1000 - r.health; };
+    const sick = hit(); r.seconds = r.extras.rot.until + .01; const hp = r.maxHealth; g.step(1 / 30, {});
+    assert.equal(r.extras.rot, null); assert.equal(r.extras.rotStacks, 1); assert.equal(r.maxHealth, hp + C.ROTTEN.maxHealth);
+    const well = hit(); assert.ok(Math.abs(sick / well - C.ROTTEN.taken) < .02, sick + ' vs ' + well);
+  } finally { C.FEATURES.rottenMeat = was; }
+});
