@@ -10,5 +10,9 @@
  "Du har ikke låst arten op endnu, så du spiller med din egen": "அந்த இனத்தை நீ இன்னும் திறக்கவில்லை, எனவே உன் சொந்த இனத்துடன் விளையாடுவாய்",
  "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "PRIMAL RUN-இல் என்னை வெல்ல முடியுமா? {1} ஆக {0} புள்ளிகள்",
  "Udfordrings-link kopieret": "சவால் இணைப்பு நகலெடுக்கப்பட்டது",
- "Linket kunne ikke kopieres": "இணைப்பை நகலெடுக்க முடியவில்லை"
+ "Linket kunne ikke kopieres": "இணைப்பை நகலெடுக்க முடியவில்லை",
+ "Flokkammerat (# spillere)": "கூட்டத் தோழன் (# வீரர்கள்)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "வீரர் # IJKL + @ அல்லது கட்டுப்படுத்தி # மூலம் ஒரு ராப்டரை இயக்குகிறார்.",
+ "SPILLER # ER TILBAGE": "வீரர் # திரும்பினார்",
+ "SPILLER # ER SLÅET UD": "வீரர் # வீழ்ந்தார்"
 }

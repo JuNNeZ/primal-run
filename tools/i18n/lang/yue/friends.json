@@ -10,5 +10,9 @@
  "Du har ikke låst arten op endnu, så du spiller med din egen": "你仲未解鎖呢個物種，所以用返你自己嘅",
  "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "你可唔可以喺PRIMAL RUN贏我？用{1}攞到{0}分",
  "Udfordrings-link kopieret": "挑戰連結已複製",
- "Linket kunne ikke kopieres": "複製唔到連結"
+ "Linket kunne ikke kopieres": "複製唔到連結",
+ "Flokkammerat (# spillere)": "族群夥伴（#位玩家）",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "玩家#用IJKL + @或第#個手掣控制一隻迅猛龍。",
+ "SPILLER # ER TILBAGE": "玩家#返嚟喇",
+ "SPILLER # ER SLÅET UD": "玩家#被擊倒"
 }

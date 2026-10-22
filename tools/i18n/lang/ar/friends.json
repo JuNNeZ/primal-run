@@ -10,5 +10,9 @@
  "Du har ikke låst arten op endnu, så du spiller med din egen": "لم تفتح هذا النوع بعد، لذا ستلعب بنوعك",
  "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "هل يمكنك هزيمتي في PRIMAL RUN؟ {0} نقطة بصفتي {1}",
  "Udfordrings-link kopieret": "تم نسخ رابط التحدي",
- "Linket kunne ikke kopieres": "تعذر نسخ الرابط"
+ "Linket kunne ikke kopieres": "تعذر نسخ الرابط",
+ "Flokkammerat (# spillere)": "رفيق القطيع (# لاعبين)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "اللاعب # يتحكم في رابتور بمفاتيح IJKL + @ أو وحدة التحكم #.",
+ "SPILLER # ER TILBAGE": "اللاعب # عاد",
+ "SPILLER # ER SLÅET UD": "اللاعب # سقط"
 }

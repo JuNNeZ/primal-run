@@ -13,4 +13,9 @@ FRIENDS = [
 ("Kan du slå mig i PRIMAL RUN? {0} point som {1}", "Can you beat me in PRIMAL RUN? {0} points as {1}", "Kannst du mich in PRIMAL RUN schlagen? {0} Punkte als {1}", "Kan du slå mig i PRIMAL RUN? {0} poäng som {1}", "Kan du slå meg i PRIMAL RUN? {0} poeng som {1}", "PRIMAL RUNで私に勝てる？ {1}で{0}ポイント", "你能在PRIMAL RUN中打败我吗？以{1}获得{0}分"),
 ("Udfordrings-link kopieret", "Challenge link copied", "Herausforderungslink kopiert", "Utmaningslänk kopierad", "Utfordringslenke kopiert", "挑戦リンクをコピーしました", "挑战链接已复制"),
 ("Linket kunne ikke kopieres", "The link could not be copied", "Der Link konnte nicht kopiert werden", "Länken kunde inte kopieras", "Lenken kunne ikke kopieres", "リンクをコピーできませんでした", "无法复制链接"),
+# Flokkammerat (FEATURES.coopBuddy): local co-op toggle and player 2 events.
+("Flokkammerat (# spillere)", "Pack mate (# players)", "Rudelgefährte (# Spieler)", "Flockkamrat (# spelare)", "Flokkamerat (# spillere)", "群れの仲間（#人プレイ）", "族群伙伴（#名玩家）"),
+("Spiller # styrer en raptor med IJKL + @ eller controller nr. #.", "Player # controls a raptor with IJKL + @ or controller #.", "Spieler # steuert einen Raptor mit IJKL + @ oder Controller #.", "Spelare # styr en raptor med IJKL + @ eller handkontroll #.", "Spiller # styrer en raptor med IJKL + @ eller kontroller #.", "プレイヤー#はIJKL + @またはコントローラー#でラプトルを操作。", "玩家#用IJKL + @或第#个手柄控制一只迅猛龙。"),
+("SPILLER # ER TILBAGE", "PLAYER # IS BACK", "SPIELER # IST ZURÜCK", "SPELARE # ÄR TILLBAKA", "SPILLER # ER TILBAKE", "プレイヤー#が復帰", "玩家#回来了"),
+("SPILLER # ER SLÅET UD", "PLAYER # IS KNOCKED OUT", "SPIELER # IST AUSGEKNOCKT", "SPELARE # ÄR UTSLAGEN", "SPILLER # ER SLÅTT UT", "プレイヤー#がダウン", "玩家#被击倒"),
 ]

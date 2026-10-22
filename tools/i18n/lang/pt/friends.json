@@ -10,5 +10,9 @@
  "Du har ikke låst arten op endnu, så du spiller med din egen": "Você ainda não desbloqueou essa espécie, então joga com a sua",
  "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "Consegue me vencer em PRIMAL RUN? {0} pontos como {1}",
  "Udfordrings-link kopieret": "Link do desafio copiado",
- "Linket kunne ikke kopieres": "Não foi possível copiar o link"
+ "Linket kunne ikke kopieres": "Não foi possível copiar o link",
+ "Flokkammerat (# spillere)": "Companheiro de bando (# jogadores)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "Jogador # controla um raptor com IJKL + @ ou o controle #.",
+ "SPILLER # ER TILBAGE": "JOGADOR # VOLTOU",
+ "SPILLER # ER SLÅET UD": "JOGADOR # FOI NOCAUTEADO"
 }

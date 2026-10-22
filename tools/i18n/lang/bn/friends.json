@@ -10,5 +10,9 @@
  "Du har ikke låst arten op endnu, så du spiller med din egen": "তুমি এখনও এই প্রজাতি আনলক করোনি, তাই নিজেরটা দিয়ে খেলবে",
  "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "PRIMAL RUN-এ আমাকে হারাতে পারবে? {1} হিসেবে {0} পয়েন্ট",
  "Udfordrings-link kopieret": "চ্যালেঞ্জ লিংক কপি হয়েছে",
- "Linket kunne ikke kopieres": "লিংক কপি করা যায়নি"
+ "Linket kunne ikke kopieres": "লিংক কপি করা যায়নি",
+ "Flokkammerat (# spillere)": "দলের সঙ্গী (# জন খেলোয়াড়)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "খেলোয়াড় # IJKL + @ বা কন্ট্রোলার # দিয়ে একটি র‍্যাপ্টর চালায়।",
+ "SPILLER # ER TILBAGE": "খেলোয়াড় # ফিরে এসেছে",
+ "SPILLER # ER SLÅET UD": "খেলোয়াড় # নকআউট"
 }

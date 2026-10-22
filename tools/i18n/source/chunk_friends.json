@@ -46,5 +46,21 @@
  {
   "da": "Linket kunne ikke kopieres",
   "en": "The link could not be copied"
+ },
+ {
+  "da": "Flokkammerat (# spillere)",
+  "en": "Pack mate (# players)"
+ },
+ {
+  "da": "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.",
+  "en": "Player # controls a raptor with IJKL + @ or controller #."
+ },
+ {
+  "da": "SPILLER # ER TILBAGE",
+  "en": "PLAYER # IS BACK"
+ },
+ {
+  "da": "SPILLER # ER SLÅET UD",
+  "en": "PLAYER # IS KNOCKED OUT"
  }
 ]

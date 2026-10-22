@@ -10,5 +10,9 @@
  "Du har ikke låst arten op endnu, så du spiller med din egen": "Kamu belum membuka spesies itu, jadi kamu bermain dengan spesiesmu sendiri",
  "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "Bisakah kamu mengalahkanku di PRIMAL RUN? {0} poin sebagai {1}",
  "Udfordrings-link kopieret": "Tautan tantangan disalin",
- "Linket kunne ikke kopieres": "Tautan tidak dapat disalin"
+ "Linket kunne ikke kopieres": "Tautan tidak dapat disalin",
+ "Flokkammerat (# spillere)": "Teman kawanan (# pemain)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "Pemain # mengendalikan raptor dengan IJKL + @ atau kontroler #.",
+ "SPILLER # ER TILBAGE": "PEMAIN # KEMBALI",
+ "SPILLER # ER SLÅET UD": "PEMAIN # TUMBANG"
 }

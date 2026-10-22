@@ -10,5 +10,9 @@
  "Du har ikke låst arten op endnu, så du spiller med din egen": "Bu türün kilidini henüz açmadın, bu yüzden kendi türünle oynuyorsun",
  "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "PRIMAL RUN'da beni yenebilir misin? {1} olarak {0} puan",
  "Udfordrings-link kopieret": "Meydan okuma bağlantısı kopyalandı",
- "Linket kunne ikke kopieres": "Bağlantı kopyalanamadı"
+ "Linket kunne ikke kopieres": "Bağlantı kopyalanamadı",
+ "Flokkammerat (# spillere)": "Sürü arkadaşı (# oyuncu)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "#. oyuncu IJKL + @ veya #. kumanda ile bir raptor yönetir.",
+ "SPILLER # ER TILBAGE": "#. OYUNCU GERİ DÖNDÜ",
+ "SPILLER # ER SLÅET UD": "#. OYUNCU NAKAVT OLDU"
 }

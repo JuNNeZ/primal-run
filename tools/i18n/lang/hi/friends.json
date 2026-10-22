@@ -10,5 +10,9 @@
  "Du har ikke låst arten op endnu, så du spiller med din egen": "तुमने अभी यह प्रजाति अनलॉक नहीं की है, इसलिए अपनी प्रजाति से खेलोगे",
  "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "क्या तुम मुझे PRIMAL RUN में हरा सकते हो? {1} के रूप में {0} अंक",
  "Udfordrings-link kopieret": "चुनौती लिंक कॉपी हुआ",
- "Linket kunne ikke kopieres": "लिंक कॉपी नहीं हो सका"
+ "Linket kunne ikke kopieres": "लिंक कॉपी नहीं हो सका",
+ "Flokkammerat (# spillere)": "झुंड साथी (# खिलाड़ी)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "खिलाड़ी # IJKL + @ या कंट्रोलर # से एक रैप्टर चलाता है।",
+ "SPILLER # ER TILBAGE": "खिलाड़ी # वापस आया",
+ "SPILLER # ER SLÅET UD": "खिलाड़ी # नॉकआउट"
 }

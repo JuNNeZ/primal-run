@@ -10,5 +10,9 @@
  "Du har ikke låst arten op endnu, så du spiller med din egen": "Этот вид ещё не открыт, поэтому ты играешь своим",
  "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "Сможешь обыграть меня в PRIMAL RUN? {0} очков за {1}",
  "Udfordrings-link kopieret": "Ссылка на вызов скопирована",
- "Linket kunne ikke kopieres": "Не удалось скопировать ссылку"
+ "Linket kunne ikke kopieres": "Не удалось скопировать ссылку",
+ "Flokkammerat (# spillere)": "Напарник по стае (# игрока)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "Игрок # управляет раптором клавишами IJKL + @ или геймпадом #.",
+ "SPILLER # ER TILBAGE": "ИГРОК # ВЕРНУЛСЯ",
+ "SPILLER # ER SLÅET UD": "ИГРОК # ВЫБИТ"
 }

@@ -10,5 +10,9 @@
  "Du har ikke låst arten op endnu, så du spiller med din egen": "ఆ జాతిని నువ్వు ఇంకా అన్‌లాక్ చేయలేదు, కాబట్టి నీ సొంత జాతితో ఆడతావు",
  "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "PRIMAL RUN లో నన్ను ఓడించగలవా? {1} గా {0} పాయింట్లు",
  "Udfordrings-link kopieret": "సవాల్ లింక్ కాపీ అయింది",
- "Linket kunne ikke kopieres": "లింక్ కాపీ చేయలేకపోయాం"
+ "Linket kunne ikke kopieres": "లింక్ కాపీ చేయలేకపోయాం",
+ "Flokkammerat (# spillere)": "గుంపు సహచరుడు (# ఆటగాళ్లు)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "ఆటగాడు # IJKL + @ లేదా కంట్రోలర్ # తో ఒక రాప్టర్‌ను నడుపుతాడు.",
+ "SPILLER # ER TILBAGE": "ఆటగాడు # తిరిగి వచ్చాడు",
+ "SPILLER # ER SLÅET UD": "ఆటగాడు # పడిపోయాడు"
 }
