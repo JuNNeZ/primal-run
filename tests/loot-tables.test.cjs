@@ -29,14 +29,15 @@ test('engine guards: unknown condition and table throw, nesting is depth-limited
 });
 
 function killRun(on,seed){
-  const was=C.FEATURES.lootTables;C.FEATURES.lootTables=on;
+  // The Heldig mutation exists only with the flag on; keep it out of the level-up cards so both runs draw from the same pool.
+  const was=C.FEATURES.lootTables,lucky=C.MUTATIONS.find(m=>m.id==='lucky'),max=lucky.max;C.FEATURES.lootTables=on;lucky.max=0;
   try{
     let x=seed>>>0;const g=new C.Game({random:()=>{x=(Math.imul(x,1664525)+1013904223)>>>0;return x/4294967296;}});
     g.start({seed});g.run.enemies=[];g.run.spawnTimer=999;const r=g.run,meat=[];
     for(let i=0;i<300;i++){const e=g.spawn(['compy','gallimimus','carnotaurus'][i%3],{x:r.player.x+200,y:r.player.y});if(i%50===7)e.elite=true;r.pickups=[];g.kill(e);g.kill(e);
       meat.push(r.pickups.filter(p=>p.kind==='meat').map(p=>p.rarity));if(g.phase!=='playing'){g.choose(r.choices[0]);}}
     return {meat,next:g.random(),kills:r.kills,eliteKills:r.eliteKills,dna:r.dna};
-  }finally{C.FEATURES.lootTables=was;}
+  }finally{C.FEATURES.lootTables=was;lucky.max=max;}
 }
 
 test('flag on: kill() rewards once, elites keep the rare floor, and the main random stream is untouched',()=>{

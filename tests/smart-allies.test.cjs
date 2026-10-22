@@ -52,3 +52,39 @@ test('flag off: the whole pack shares one target and flees at 35 %', () => {
     assert.ok(Math.hypot(ally.x - r.player.x, ally.y - r.player.y) > 700, 'no catch-up');
   } finally { C.FEATURES.smartAllies = true; }
 });
+
+// FEATURES.packMutations: Flokbånd, Alfabrøl, Tredje fælle.
+test('Flokbånd: allies get +20 % damage and +15 % HP per rank', () => {
+  const { g, r, allies } = field(); const ally = allies[0]; allies[1].ally = false; allies[1].x = r.player.x + 2000;
+  r.mutations.packBond = 2; g.stepRaptors(DT); assert.equal(ally.maxHP, Math.round(C.PACK.hp * 1.3));
+  const prey = g.spawn('parasaurolophus', { x: ally.x + 20, y: ally.y }); Object.assign(prey, { speed: 0, hp: 500, maxHP: 500, lastAttackedAt: r.seconds });
+  ally.cooldown = 0; ally.mode = 'follow'; const before = prey.hp; g.stepRaptors(DT);
+  const plain = C.PACK.damage * (1 + r.stage * .25) * 1.5; assert.ok(Math.abs((before - prey.hp) - plain * 1.4) < 1e-6, 'bite x1.4');
+});
+
+test('Alfabrøl: the pack command heals allies 30 % and speeds them up for 6 s', () => {
+  const { g, r, allies } = field(); r.mutations.alphaRoar = 1; g.phase = 'playing';
+  for (const a of allies) a.hp = a.maxHP * .2;
+  g.spawn('parasaurolophus', { x: r.player.x + 100, y: r.player.y });
+  assert.equal(g.packCommand(), true);
+  for (const a of allies) { assert.ok(Math.abs(a.hp - a.maxHP * .5) < 1e-6); assert.ok(a.hasteUntil > r.seconds + 5); }
+});
+
+test('Tredje fælle: one more raptor than the species allows; none of the pack mutations for Spinosaurus', () => {
+  const { g, r } = field(); r.raptors.forEach(a => { a.ally = false; });
+  assert.equal(C.packLimitOf(r), 2); r.mutations.thirdMate = 1; assert.equal(C.packLimitOf(r), 3);
+  r.species = 'baryonyx'; assert.equal(C.packLimitOf(r), 2);
+  r.species = 'spinosaurus'; assert.equal(C.packLimitOf(r), 0);
+  for (const id of ['packBond', 'alphaRoar', 'thirdMate']) assert.equal(g.mutationAvailable(C.MUTATIONS.find(m => m.id === id)), false, id);
+  C.FEATURES.packMutations = false;
+  try { r.species = 'velociraptor'; assert.equal(C.packLimitOf(r), 2); assert.equal(g.mutationAvailable(C.MUTATIONS.find(m => m.id === 'packBond')), false); }
+  finally { C.FEATURES.packMutations = true; }
+});
+
+test('Tredje fælle lets you feed a third raptor', () => {
+  const { g, r } = field(); r.mutations.thirdMate = 1; g.phase = 'playing';
+  const wild = { ...r.raptors[0], id: 'extra', ally: false, mode: 'wild', fed: 0, x: r.player.x + 300, y: r.player.y, homeX: r.player.x + 300, homeY: r.player.y }; r.raptors.push(wild);
+  Object.assign(r.player, { x: wild.x + 40, y: wild.y }); r.meat = 50;
+  for (let i = 0; i < 10 && !wild.ally; i++) g.feedRaptor();
+  assert.equal(wild.ally, true); assert.equal(r.raptors.filter(a => a.ally).length, 3);
+});

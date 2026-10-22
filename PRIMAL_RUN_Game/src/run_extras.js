@@ -241,9 +241,14 @@
     if (F.speciesIdentity) PACK_LIMITS.stegosaurus = 1;
     const feedRaptor = G.feedRaptor;
     if (feedRaptor) G.feedRaptor = function () {
-      const r = this.run, P = C.PACK, max = P.max, limit = F.packLimits && r && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : max;
-      P.max = Math.min(max, limit); try { return feedRaptor.apply(this, arguments); } finally { P.max = max; }
+      const r = this.run, P = C.PACK, max = P.max;
+      P.max = packLimit(r); try { return feedRaptor.apply(this, arguments); } finally { P.max = max; }
     };
+    // Pack mutations (FEATURES.packMutations): Tredje fælle hires one more; none are offered to a species that hires none.
+    const baseLimit = r => Math.min(C.PACK.max, F.packLimits && r && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max);
+    const packLimit = r => { const base = baseLimit(r); return base + (F.packMutations && base > 0 && r && r.mutations && r.mutations.thirdMate ? 1 : 0); };
+    const packAvailable = G.mutationAvailable;
+    G.mutationAvailable = function (m) { return (!m.needsPack || baseLimit(this.run) > 0) && packAvailable.call(this, m); };
     // ---- Pteranodon glides over lava and deep water (idea bank): while the glide ability runs it takes no lava burn,
     // keeps full speed and may cross into deep water. Landing in deep water just slows it like any non-swimmer.
     const gliding = (g, entity) => { const r = g.run; return F.glideOver && r && entity === r.player && r.species === 'pteranodon' && r.pounce > 0; };
@@ -541,7 +546,7 @@
     };
 
     // Exposed for the renderer, the HUD and tests.
-    Object.assign(C, { ALTAR, CRITTER, PACK_LIMITS, packLimitOf: r => Math.min(C.PACK.max, F.packLimits && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max), STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, ROTTEN, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
+    Object.assign(C, { ALTAR, CRITTER, PACK_LIMITS, packLimitOf: packLimit, STREAK, POWERUPS, POWERUP_SPAWN, TWISTS, ECOLOGY, ELITE_AFFIXES, AFFIX_STAGES, hasAffix, TAR_TOTEM, ROTTEN, BABY, CIRCADIAN, AMBER, dayPhase, dropPowerup,
       extrasOf: r => r && r.extras || null,
       streakOf: r => (r && r.extras && F.huntStreak ? r.extras.streak : 0),
       buffsOf: r => (r && r.extras ? Object.entries(r.extras.buffs).filter(([, t]) => t > 0).map(([type, time]) => ({ type, time })) : []) });
