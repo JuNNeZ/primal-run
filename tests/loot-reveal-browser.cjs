@@ -10,7 +10,7 @@ const assert=require('node:assert/strict'),path=require('node:path');const {chro
  await page.evaluate(async()=>{await primalRun.preload({species:'velociraptor',stage:1,kinds:Object.keys(PrimalCore.SPECIES)});});
  await page.locator('[data-action="start"]').click();await page.locator('[data-action="begin"]').click();
  const shots=process.env.PRIMAL_SHOTS,shot=async n=>{if(shots)await page.screenshot({path:path.join(shots,n+'.png')});};
- const off=await page.evaluate(()=>{const g=primalRun.game;g.run.enemies=[];g.run.spawnTimer=999;g.run.health=g.run.maxHealth=1e6;g.revealLoot(3,{ceiling:3});primalRun.update(performance.now());return document.querySelector('.loot-reel').hidden;});
+ const off=await page.evaluate(()=>{PrimalCore.FEATURES.lootReveal=false;const g=primalRun.game;g.run.enemies=[];g.run.spawnTimer=999;g.run.health=g.run.maxHealth=1e6;g.revealLoot(3,{ceiling:3});primalRun.update(performance.now());return document.querySelector('.loot-reel').hidden;});
  assert.equal(off,true,'no reel with the flag off');
  // small reel (epic meat): spins without pausing the world, then locks on Episk
  const small=await page.evaluate(()=>{PrimalCore.FEATURES.lootReveal=true;const g=primalRun.game,t0=performance.now(),s0=g.run.seconds;g.revealLoot(3,{ceiling:3,kind:'meat',label:'Episk'});
