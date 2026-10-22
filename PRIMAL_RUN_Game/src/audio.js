@@ -125,6 +125,13 @@
         else { this.tone(900, t, .03, .06, 'square', 300, this.effects); this.tone(700, t + .04, .03, .05, 'square', 250, this.effects); this.tone(500, t + .08, .04, .04, 'square', 200, this.effects); }
         return;
       }
+      if (event === 'loot_tick' || event === 'loot_lock') { // FEATURES.lootReveal: reel click per tier, then a chord on lock (higher tier = higher)
+        const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
+        const t = c.currentTime + .01, f = 330 * Math.pow(2, (detail.tier || 0) / 4);
+        if (event === 'loot_tick') this.tone(f * 2, t, .025, .035, 'square', f * 1.6, this.effects);
+        else { this.tone(f, t, .3, .07, 'triangle', f, this.effects); this.tone(f * 1.5, t + .05, .3, .05, 'triangle', f * 1.5, this.effects); if ((detail.tier || 0) >= 3) this.tone(f * 2, t + .1, .4, .05, 'sine', f * 2, this.effects); }
+        return;
+      }
       if (event === 'amber_near') { // FEATURES.amberFair: a soft, high two-note chime, quieter than any pickup
         const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
         const t = c.currentTime + .01; this.tone(1760, t, .18, .025, 'sine', 1760, this.effects); this.tone(2349, t + .12, .26, .02, 'sine', 2349, this.effects);

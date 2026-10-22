@@ -1,0 +1,59 @@
+Local validation baseline: 030f613e7af63ed7ec8b675687d74248c24876ff. Remote PR base is integration/next; native files are independent of game code. Generated game files restored after verification. All art remains prototype_static.
+> python tools/rebuild_generated.py
+exit=0
+wrote PRIMAL_RUN_Game\src\run_titles.js 96 titles
+note: duplicate key with different text, keeping first: Flodens gab
+note: duplicate key with different text, keeping first: Bane #
+note: duplicate key with different text, keeping first: Omr�der
+note: duplicate key with different text, keeping first: Pr�cisionsj�ger
+note: duplicate key with different text, keeping first: Bagholdsj�ger
+note: duplicate key with different text, keeping first: Bossj�ger
+note: duplicate key with different text, keeping first: Ur�rlig
+note: duplicate key with different text, keeping first: Flodj�ger
+wrote C:\Users\Jonas\AppData\Roaming\Claude\scratch-workspaces\59d6d39e-74ba-46f6-a6fc-7fd56fb74a85\b4e181ec-3b8f-48f3-bd61-bdc6d8c9ee3a\scratch-2026-10-10-96edd5\primal-run\PRIMAL_RUN_Game\src\lang.js {'en': 939, 'de': 939, 'sv': 939, 'no': 939, 'ja': 939, 'zh': 939, 'tlh': 85, 'sjn': 51}
+Built GDevelop project with 2316 resources; 104 original PNGs preserved and 2204 combat PNGs.
+> C:\Users\Jonas\AppData\Local\Programs\Python\Python311\python.exe tools/build_run_titles.py
+> C:\Users\Jonas\AppData\Local\Programs\Python\Python311\python.exe tools/i18n/build_lang.py
+> C:\Users\Jonas\AppData\Local\Programs\Python\Python311\python.exe tools/build_game.py
+generated files rebuilt; review `git status` before committing
+
+fatal: Unable to create 'C:/Users/Jonas/AppData/Roaming/Claude/scratch-workspaces/59d6d39e-74ba-46f6-a6fc-7fd56fb74a85/b4e181ec-3b8f-48f3-bd61-bdc6d8c9ee3a/scratch-2026-10-10-96edd5/primal-run/.git/index.lock': Permission denied
+
+> npm.cmd run validate:game-sprites
+exit=0
+
+> primal-run-prototype@0.1.0 validate:game-sprites
+> python tools/validate_game_sprites.py
+
+{
+  "technical_export_result": "PASS",
+  "assets": 2338,
+  "new_attack_frames": 24,
+  "errors": [],
+  "production_approved": false,
+  "scope": "Native PNG dimensions, palette, alpha, padding, inventory, source integrity, declared anchors, intentional endpoint reuse and timing plan. Does not certify anatomy, consistent lighting or temporal art quality.",
+  "visual_review": "See player_review.html at 1x/4x on both backgrounds. Generated poses remain studies; legacy walk/idle transitions require further refinement."
+}
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm notice
+npm notice New major version of npm available! 11.17.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+
+> python tools/validate_hud_icons.py
+exit=0
+{
+  "result": "PASS",
+  "files": 30,
+  "groups": {
+    "relics": 20,
+    "sets": 4,
+    "loot": 6
+  },
+  "errors": [],
+  "production_approved": false,
+  "scope": "Native dimensions, RGBA, fixed palette, binary alpha, transparent RGB, padding, inventory, source reconstruction, hashes, 9-slice seams, armor number space. No runtime or visual approval."
+}
+

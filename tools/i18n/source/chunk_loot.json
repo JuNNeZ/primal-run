@@ -1,0 +1,322 @@
+[
+ {
+  "da": "Heldig stamme",
+  "en": "Lucky lineage"
+ },
+ {
+  "da": "+# % held pr. rang. Held giver oftere sjælden loot og sjældne kort.",
+  "en": "+# % luck per rank. Luck brings rare loot and rare cards more often."
+ },
+ {
+  "da": "Heldig",
+  "en": "Lucky"
+ },
+ {
+  "da": "+# % held pr. rang.",
+  "en": "+# % luck per rank."
+ },
+ {
+  "da": "+# panser pr. rang. Hvert point er lige meget værd.",
+  "en": "+# armor per rank. Every point is worth the same."
+ },
+ {
+  "da": "Osteodermplader",
+  "en": "Osteoderm plates"
+ },
+ {
+  "da": "Hornskjold",
+  "en": "Horn shield"
+ },
+ {
+  "da": "Køllehaleknude",
+  "en": "Club tail knob"
+ },
+ {
+  "da": "Fjerarme",
+  "en": "Feathered arms"
+ },
+ {
+  "da": "Skarpt øje",
+  "en": "Keen eye"
+ },
+ {
+  "da": "Seglklo",
+  "en": "Sickle claw"
+ },
+ {
+  "da": "Kråsesten",
+  "en": "Gizzard stones"
+ },
+ {
+  "da": "Fedtpukkel",
+  "en": "Fat hump"
+ },
+ {
+  "da": "Visningskam",
+  "en": "Display crest"
+ },
+ {
+  "da": "Meteorsplint",
+  "en": "Meteor shard"
+ },
+ {
+  "da": "+# panser.",
+  "en": "+# armor."
+ },
+ {
+  "da": "+# panser og +# % stamina-regeneration.",
+  "en": "+# armor and +# % stamina regeneration."
+ },
+ {
+  "da": "+# % fart.",
+  "en": "+# % speed."
+ },
+ {
+  "da": "+# % held og +# % opsamlingsradius.",
+  "en": "+# % luck and +# % pickup radius."
+ },
+ {
+  "da": "+# procentpoint kritisk chance.",
+  "en": "+# percentage points crit chance."
+ },
+ {
+  "da": "Føde heler # ekstra liv pr. portion.",
+  "en": "Food heals # extra health per portion."
+ },
+ {
+  "da": "+# % held og +# % DNA.",
+  "en": "+# % luck and +# % DNA."
+ },
+ {
+  "da": "+# % held og +# panser. Tæller i alle sæt.",
+  "en": "+# % luck and +# armor. Counts for every set."
+ },
+ {
+  "da": "Panser",
+  "en": "Armor"
+ },
+ {
+  "da": "+# % held.",
+  "en": "+# % luck."
+ },
+ {
+  "da": "+# % DNA.",
+  "en": "+# % DNA."
+ },
+ {
+  "da": "# % af den skade, du tager, rammer angriberen.",
+  "en": "# % of the damage you take hits the attacker."
+ },
+ {
+  "da": "Hvert drab giver # stamina.",
+  "en": "Every kill gives # stamina."
+ },
+ {
+  "da": "Overlev ét dødeligt slag pr. run med # liv.",
+  "en": "Survive one lethal hit per run with # health."
+ },
+ {
+  "da": "Levende kampvogn",
+  "en": "Living tank"
+ },
+ {
+  "da": "Spidsjæger",
+  "en": "Apex hunter"
+ },
+ {
+  "da": "Sejlivet",
+  "en": "Hard to kill"
+ },
+ {
+  "da": "Saml hele Panser-sættet i ét run.",
+  "en": "Collect the full Armor set in one run."
+ },
+ {
+  "da": "Saml hele Jæger-sættet i ét run.",
+  "en": "Collect the full Hunter set in one run."
+ },
+ {
+  "da": "Saml hele Overlever-sættet i ét run.",
+  "en": "Collect the full Survivor set in one run."
+ },
+ {
+  "da": "RELIKVIER",
+  "en": "RELICS"
+ },
+ {
+  "da": "Relikvie",
+  "en": "Relic"
+ },
+ {
+  "da": "Alle sæt",
+  "en": "All sets"
+ },
+ {
+  "da": "RELIKVIE · {0}",
+  "en": "RELIC · {0}"
+ },
+ {
+  "da": "Rede-kiste",
+  "en": "Nest cache"
+ },
+ {
+  "da": "REDE-KISTE · {0} FUND",
+  "en": "NEST CACHE · {0} FINDS"
+ },
+ {
+  "da": "TJÆREPAGT",
+  "en": "TAR PACT"
+ },
+ {
+  "da": "TJÆRETOTEM · DOBBELT LOOT",
+  "en": "TAR TOTEM · DOUBLE LOOT"
+ },
+ {
+  "da": "TJÆREPAGT · BOSSEN BLIVER STÆRKERE · DOBBELT LOOT",
+  "en": "TAR PACT · THE BOSS GROWS STRONGER · DOUBLE LOOT"
+ },
+ {
+  "da": "TJÆREPAGT · Bossen får et elite-træk · dobbelt loot",
+  "en": "TAR PACT · The boss gets an elite trait · double loot"
+ },
+ {
+  "da": "TJÆREPAGT INDFRIET · dobbelt loot",
+  "en": "TAR PACT FULFILLED · double loot"
+ },
+ {
+  "da": "RÅDDEN MAVE",
+  "en": "ROTTEN GUT"
+ },
+ {
+  "da": "HÆRDET MAVE",
+  "en": "HARDENED GUT"
+ },
+ {
+  "da": "RÅDDENT KØD · +# % SKADE I # S",
+  "en": "ROTTEN MEAT · +# % DAMAGE FOR # S"
+ },
+ {
+  "da": "HÆRDET MAVE · +# LIV",
+  "en": "HARDENED GUT · +# HEALTH"
+ },
+ {
+  "da": "RÅDDENT KØD · Du tager # % mere skade i # sek.",
+  "en": "ROTTEN MEAT · You take # % more damage for # sec."
+ },
+ {
+  "da": "HÆRDET MAVE · +# maksimalt liv",
+  "en": "HARDENED GUT · +# max health"
+ },
+ {
+  "da": "DEL RESULTAT",
+  "en": "SHARE RESULT"
+ },
+ {
+  "da": "Resultatet er kopieret",
+  "en": "Result copied"
+ },
+ {
+  "da": "Kopiér teksten herunder",
+  "en": "Copy the text below"
+ },
+ {
+  "da": "Bane {0}/{1}",
+  "en": "Level {0}/{1}"
+ },
+ {
+  "da": "Score {0} · tid {1}",
+  "en": "Score {0} · time {1}"
+ },
+ {
+  "da": "Ekstinktionstryk",
+  "en": "Extinction pressure"
+ },
+ {
+  "da": "Hvert trin giver dyr og bosser +{0} % liv og +{1} % skade. Du får +{2} % held og +{3} % DNA. Vind en jagt for at åbne næste trin.",
+  "en": "Each step gives animals and bosses +{0} % health and +{1} % damage. You get +{2} % luck and +{3} % DNA. Win a hunt to open the next step."
+ },
+ {
+  "da": "Startrelikvie",
+  "en": "Starting relic"
+ },
+ {
+  "da": "{0} fossiler",
+  "en": "{0} fossils"
+ },
+ {
+  "da": "{0} iridium",
+  "en": "{0} iridium"
+ },
+ {
+  "da": "Intet",
+  "en": "None"
+ },
+ {
+  "da": "{0} fossiler · Sjælden",
+  "en": "{0} fossils · Rare"
+ },
+ {
+  "da": "{0} iridium · Episk",
+  "en": "{0} iridium · Epic"
+ },
+ {
+  "da": "Fossiler får du ved fossilfund, iridium for en vundet jagt og for legendariske relikvier. Rav får du fra bosser og ravstykker, og du bruger det ved banens ravalter.",
+  "en": "You get fossils from fossil finds, and iridium for a won hunt and for legendary relics. Amber comes from bosses and amber pieces, and you spend it at the level's amber altar."
+ },
+ {
+  "da": "Ekstinktionstryk {0} · +{1} DNA",
+  "en": "Extinction pressure {0} · +{1} DNA"
+ },
+ {
+  "da": "Trin {0} er åbnet",
+  "en": "Step {0} is open"
+ },
+ {
+  "da": "+{0} fossiler",
+  "en": "+{0} fossils"
+ },
+ {
+  "da": "+{0} iridium",
+  "en": "+{0} iridium"
+ },
+ {
+  "da": "RAVALTER · LUKKET",
+  "en": "AMBER ALTAR · CLOSED"
+ },
+ {
+  "da": "RAVALTER · # RAV",
+  "en": "AMBER ALTAR · # AMBER"
+ },
+ {
+  "da": "RAVALTER · {0} FUND",
+  "en": "AMBER ALTAR · {0} FINDS"
+ },
+ {
+  "da": "RAVALTER · Kræver {0} rav, du har {1}",
+  "en": "AMBER ALTAR · Needs {0} amber, you have {1}"
+ },
+ {
+  "da": "IRIDIUM · +{0}",
+  "en": "IRIDIUM · +{0}"
+ },
+ {
+  "da": "TRYK",
+  "en": "PRESSURE"
+ },
+ {
+  "da": "Ravalter",
+  "en": "Amber altar"
+ },
+ {
+  "da": "+# RAV",
+  "en": "+# AMBER"
+ },
+ {
+  "da": "+# FOSSIL",
+  "en": "+# FOSSIL"
+ },
+ {
+  "da": "+# IRIDIUM",
+  "en": "+# IRIDIUM"
+ }
+]

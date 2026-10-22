@@ -20,10 +20,11 @@ from tr_telemetry import TELEMETRY
 from tr_hud import HUD
 from tr_titles import TITLES
 from tr_fishing import FISHING
+from tr_loot import LOOT
 LANGS = ['en', 'de', 'sv', 'no', 'ja', 'zh']
 dicts = {l: {} for l in LANGS}
 seen = {}
-for row in CORE + UI + RECORDS + PART_B + INPUT + PART_C + SPECIES_D + EXTRAS + ASH + SNOWFLAKE + TELEMETRY + HUD + TITLES + FISHING:
+for row in CORE + UI + RECORDS + PART_B + INPUT + PART_C + SPECIES_D + EXTRAS + ASH + SNOWFLAKE + TELEMETRY + HUD + TITLES + FISHING + LOOT:
     da, *rest = row
     if len(rest) != len(LANGS):
         raise SystemExit(f'Row needs {len(LANGS)} translations: {da}')

@@ -9,14 +9,15 @@
   "source_sha256": {
     "src/run_titles.js": "11d200cfe8af66b5555bb7b23e1e676bdd8d80c398d458c967fbd3f0d435d06e",
     "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
-    "src/run_extras.js": "fd5c744d8ba596cd695d7dcbdd8733c00d97b940f2fc6f9aa384bf9b1c5ddd1a",
+    "src/run_extras.js": "bd38e9ed947288f8b1ebcf03ce110c98703c6dd2f2f567f4fc9a6c0ff3cb860d",
     "src/telemetry.js": "b5cf2a84f30129c0d72874aadc5e6b45b695d1985856484be580004e76426b9c",
-    "src/core.js": "ef27a6701c8a3113ed702b6688b640ee5ec72f9db3714023c75baf450340e1ac",
+    "src/loot.js": "e50c75dd172ea37f998b2ee19d1b230a828897ae6d6cc2ef1aa197c1b632c54e",
+    "src/core.js": "ed91682eeb3f3f5606ba5cf0ca7663a1deaee10b2ef0c2b257020c72ac943dfd",
     "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
-    "src/lang.js": "d0e68920f86d1446bfe31d964a57ed931ccfb6c129b12f2835cd1e8abbe50fe0",
+    "src/lang.js": "fd1c27d945b699eed5067be1f10e8177026e777c93119754defdce97a854e4a0",
     "src/assets.js": "c803627143e4b6c7ba88d017a1df0767dd3108e673024bbd54241f67a00cf403",
-    "src/audio.js": "f7763a55aae0c0b249b8c470b55baa44078b59d326f39380a3f60bdcd541f500",
-    "src/app.js": "b23ac919395613151b5b8d731d0f4f57b421d780f3897c801bbda0769776aac5",
-    "style.css": "266e7dda4b2f027083ac22c848c77e190399e5b7cb8c2fd13e5765e4ffeef2c3"
+    "src/audio.js": "c771de3eff07c18a1b3f32b0fb583a3acdb9529ae874380d7ebe9f603e469cd5",
+    "src/app.js": "7b3288b14023beb0ff8c3b769c074f6660b09651cc7c10c67af7c50d5214d7a1",
+    "style.css": "bff95fed4c4960f730994d6b444e1ea06354d3cceb87c84f80e8f0b1cd8b9310"
   }
 }
