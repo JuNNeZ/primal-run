@@ -42,8 +42,13 @@ const STYLES = {
   rusher:    { label: 'Speedrunner (haster)',   reaction: 0.10, dodge: 0.5, aimError: 10, ability: 'spam', retreatHP: 0.15, explore: false, picks: 'offence', foodGreed: 0.1, sneak: false, tailTurn: .6 },
   expert:    { label: 'Dygtig spiller (ekspert)', reaction: 0.04, dodge: 1, aimError: 0, ability: 'smart', retreatHP: 0.4, explore: false, picks: 'best', foodGreed: 0.6, sneak: false, kite: true, tailTurn: 1 },
   newbie:    { label: 'Ny spiller',             reaction: 0.45, dodge: 0.15, aimError: 40, ability: 'never', retreatHP: 0.2, explore: false, picks: 'random', foodGreed: 0.3, sneak: false , tailTurn: 0.1 },
+  // Calibrated to Jonas' own wins (2026-10-21, 840 runs): the expert plus human tricks (grind XP before the boss,
+  // keep eating, skip fights it cannot win) and a skill factor on player hp/damage for what bots cannot do (read windups).
+  player:    { label: 'Spillerniveau (kalibreret)', reaction: 0.04, dodge: 1, aimError: 0, ability: 'smart', retreatHP: 0.4, explore: false, picks: 'best', foodGreed: 0.6, sneak: false, kite: true, tailTurn: 1, grind: 3, feast: true, avoid: 1.5, skill: 2.3 },
 };
 
+// PRIMAL_BOT='{"grind":3}' overrides style parameters for every style (env, so worker threads see it too).
+const BOT = JSON.parse(process.env.PRIMAL_BOT || '{}'); for (const k of Object.keys(STYLES)) Object.assign(STYLES[k], BOT);
 const OFFENCE = ['teeth', 'quick', 'claws', 'reach', 'hunter', 'ambush', 'frenzy', 'glassCannon', 'heavyMuscle', 'overclock', 'crit'];
 const DEFENCE = ['armor', 'heart', 'scavenger', 'feathers', 'guard', 'thick', 'legs', 'regen'];
 
@@ -65,8 +70,15 @@ function bandPoint(map, p) {
 
 // level: start at this journey level (0-based) via the game's own nextStage(); bossDuel: the boss spawns at once
 // and the run ends when it dies (outcome 'boss_win'). Used by X10 and the B1 before/after comparisons.
-function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null, challenges = [], alone = false, mutations = 0, startPicks = 0, difficulty = null, baby = false }) {
+function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bossDuel = false, open = false, across = false, daily = null, challenges = [], alone = false, mutations = 0, startPicks = 0, difficulty = null, baby = false, skill = null }) {
   const S = STYLES[style]; if (!S) throw Error('Unknown style ' + style);
+  // skill: factor on the difficulty's player hp/damage for this run only (style 'player' default 2.3, --skill N overrides).
+  const k = skill || S.skill || 1, eq = k !== 1 && C.DIFFICULTIES ? Object.values(C.DIFFICULTIES).map(d => [d.player, { ...d.player }]) : [];
+  for (const [pl] of eq) { pl.hp *= k; pl.damage *= k; }
+  try { return runInner(C, S, { species, style, seed, seconds, dt, upgrades, level, bossDuel, open, across, daily, challenges, alone, mutations, startPicks, difficulty, baby }); }
+  finally { for (const [pl, o] of eq) Object.assign(pl, o); }
+}
+function runInner(C, S, { species, style, seed, seconds, dt, upgrades, level, bossDuel, open, across, daily, challenges, alone, mutations, startPicks, difficulty, baby }) {
   const R = rng(seed * 7919 + style.length * 104729);
   const g = new C.Game({ random: rng(seed ^ 0xABCDEF) });
   g.save.unlockedSpecies = Object.keys(C.PLAYER_SPECIES);
@@ -135,6 +147,11 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     else if (S.picks === 'offence') choice = picks.find(p => OFFENCE.includes(p.id)) || picks[0];
     else if (S.picks === 'defence') choice = picks.find(p => DEFENCE.includes(p.id)) || picks[0];
     else if (S.picks === 'mixed') choice = R() < 0.5 ? picks[Math.floor(R() * picks.length)] : (picks.find(p => OFFENCE.includes(p.id) || DEFENCE.includes(p.id)) || picks[0]);
+    else if (S.picks === 'synergy') { // stack what you have, your species' own, rarity, then offence > defence
+      const order = { legendary: 5, epic: 4, rare: 3, uncommon: 2, common: 1 }, have = id => (r.mutations && r.mutations[id]) || 0;
+      const score = m => (m.species === species ? 6 : 0) + 2 * Math.min(3, have(m.id)) + (order[m.rarity] || 0) + (OFFENCE.includes(m.id) ? 2 : DEFENCE.includes(m.id) ? 1.5 : 0) + (r.health < r.maxHealth * .5 && DEFENCE.includes(m.id) ? 2 : 0);
+      choice = picks.slice().sort((a, b) => score(b) - score(a))[0];
+    }
     else { // best: rarity first, then known strong ids
       const order = { legendary: 5, epic: 4, rare: 3, uncommon: 2, common: 1 };
       choice = picks.slice().sort((a, b) => (order[b.rarity] || 0) - (order[a.rarity] || 0) || (OFFENCE.concat(DEFENCE).includes(b.id) ? 1 : 0) - (OFFENCE.concat(DEFENCE).includes(a.id) ? 1 : 0))[0];
@@ -148,6 +165,9 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
   function decide() {
     const p = r.player, hpFrac = r.health / r.maxHealth, cost = C.abilityCost(r), alt = C.ALT_ABILITIES || {};
     const hostile = r.enemies.filter(e => e.damage && e.alert && dist(e) < 260);
+    // Trick 'avoid': a player does not pick fights it cannot win. Threat = enemy hp×damage vs own health×damage.
+    const myPow = r.health * (config.damage || 10), threat = e => !e.boss && e.damage ? (e.hp * e.damage) / Math.max(1, myPow) : 0;
+    const scary = S.avoid ? nearest(r.enemies.filter(e => threat(e) > S.avoid && e.alert && dist(e) < (S.avoidR || 240))) : null;
     const warning = nearest(r.enemies.filter(e => ['windup', 'charge', 'slam', 'bite'].includes(e.mode) && dist(e) < (e.attackRadius || 60) + 80));
     // Dodge telegraphed attacks like a player would: wait for the late, locked part of a boss
     // windup, then step out of the shape (sideways from a charge lane, outward from a circle).
@@ -174,12 +194,16 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
       const wild = nearest((r.raptors || []).filter(a => !a.ally && dist(a) < 500 && r.pickups.some(f => f.corpseId !== undefined && f.value > 0 && Math.hypot(f.x - a.x, f.y - a.y) < C.PACK.meatReach)));
       if (wild) return dist(wild) < C.PACK.feedReach - 10 ? { interact: true } : steer(wild.x, wild.y);
     }
+    if (scary && !r.enemies.some(e => e.boss && dist(e) < 500)) { const dx = p.x - scary.x, dy = p.y - scary.y, n = Math.hypot(dx, dy) || 1; return { ...steer(p.x + dx / n * 220, p.y + dy / n * 220), pounce: S.ability === 'smart' && r.stamina >= cost && ['compy','velociraptor','deinonychus','gallimimus','utahraptor'].includes(species) && dist(scary) < 90 }; }
     // Retreat when hurt
     if (S.retreatHP && hpFrac < S.retreatHP && hostile.length) {
       const t = nearest(hostile), dx = p.x - t.x, dy = p.y - t.y, n = Math.hypot(dx, dy) || 1;
       return { ...steer(p.x + dx / n * 200, p.y + dy / n * 200), sneak: S.sneak };
     }
     const boss = nearest(r.enemies.filter(e => e.boss));
+    // grind: a human levels up on normal prey before taking the boss on, and keeps away from it meanwhile.
+    const grinding = S.grind && boss && r.level < S.grind * ((r.levelIndex || 0) + 1) + 2;
+    if (grinding && dist(boss) < (S.grindR || 280)) { const dx = p.x - boss.x, dy = p.y - boss.y, n = Math.hypot(dx, dy) || 1; return steer(p.x + dx / n * 220, p.y + dy / n * 220); }
     // Exploiter: stand across lava (or deep water for non-swimming bosses) from the boss and only attack from there.
     if (S.exploit && boss && (r.stage === 3 || r.stage === 1 && !C.canSwim(boss))) {
       const band = bandPoint(r.map, boss);
@@ -195,7 +219,7 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
     if (diet === 'piscivore') foods.push(...r.map.fishSchools.filter(f => f.stock > 0 && C.isWater(r.stage,r.map,f,14)));
     if (diet !== 'herbivore') foods.push(...r.pickups.filter(f => f.corpseId !== undefined));
     const food = nearest(foods.filter(usable));
-    const hungry = !boss || hpFrac < 0.5;
+    const hungry = !boss || hpFrac < 0.5 || grinding || S.feast;
     if (food && hungry && (!hostile.length || dist(food) < 100 || R() < S.foodGreed * 0.1)) {
       if (food.kind === 'fish' && C.fishReach ? C.fishReach(r.map,p,food) : dist(food) < 42) return { eat: true };
       return chase(food);
@@ -214,10 +238,10 @@ function runOne(C, { species, style, seed, seconds, dt, upgrades, level = 0, bos
       if (!near && Math.hypot(pond.x - p.x, pond.y - p.y) > pond.radius + 60) return steer(pond.x, pond.y);
     }
     // Fight
-    const prey = r.enemies.filter(e => !e.guard || style === 'brawler');
+    const prey = r.enemies.filter(e => (!e.guard || style === 'brawler') && !(S.avoid && threat(e) > S.avoid));
     // B2: at night a sleeping herd is the easy meal for hunters who know it.
     const sleeper = r.night && diet !== 'herbivore' && S.dodge > .5 ? nearest(prey.filter(e => e.activity === 'sleep' && dist(e) < 900)) : null;
-    const target = boss || sleeper || nearest(prey.filter(e => dist(e) < 900)) || nearest(prey);
+    const target = (grinding ? null : boss) || sleeper || nearest(prey.filter(e => dist(e) < 900)) || nearest(prey);
     if (target) {
       const aim = S.aimError ? { x: target.x + (R() - .5) * S.aimError, y: target.y + (R() - .5) * S.aimError } : target;
       const inRange = dist(target) < config.range + target.radius - 10;
@@ -402,7 +426,7 @@ function args() {
 async function main() {
   const { help, quick, get } = args();
   if (help) {
-    console.log(`PRIMAL RUN play-style simulator\n\n  --runs N         seeds per species×style (default 20, --quick: 3)\n  --seconds N      simulated seconds per run (default 1500)\n  --species a,b    default: all playable\n  --styles a,b     ${Object.keys(STYLES).join(', ')} (default: all)\n  --threads N      default: CPU cores - 1\n  --seed N         first seed (default 1000)\n  --out DIR        default balance_runs/playstyle_<date>\n  --upgrades JSON  DNA start upgrades, e.g. '{"health":2}'\n  --exp JSON       simulator-only prototypes from tools/experiments.cjs, e.g. '{"powerups":true}'\n  --set JSON       deep-merge into core exports, e.g. '{"BOSS_TUNING":{"hp":[1,1,1,1,1,1,1,1]}}' (--set-file FILE reads it from a file)\n  --level N        start on level N (1-8)\n  --start-mutations N  N mutation picks before the run starts\n  --quick          small smoke test`);
+    console.log(`PRIMAL RUN play-style simulator\n\n  --runs N         seeds per species×style (default 20, --quick: 3)\n  --seconds N      simulated seconds per run (default 1500)\n  --species a,b    default: all playable\n  --styles a,b     ${Object.keys(STYLES).join(', ')} (default: all)\n  --threads N      default: CPU cores - 1\n  --seed N         first seed (default 1000)\n  --out DIR        default balance_runs/playstyle_<date>\n  --upgrades JSON  DNA start upgrades, e.g. '{"health":2}'\n  --exp JSON       simulator-only prototypes from tools/experiments.cjs, e.g. '{"powerups":true}'\n  --set JSON       deep-merge into core exports, e.g. '{"BOSS_TUNING":{"hp":[1,1,1,1,1,1,1,1]}}' (--set-file FILE reads it from a file)\n  --level N        start on level N (1-8)\n  --skill N        factor on player hp/damage (style 'player' uses 2.3; 1 = none)\n  --start-mutations N  N mutation picks before the run starts\n  --quick          small smoke test`);
     return;
   }
   const C = require(CORE_PATH);
@@ -419,7 +443,7 @@ async function main() {
   const out = path.resolve(get('out', path.join(__dirname, '../PRIMAL_RUN_Game/balance_runs/playstyle_' + date)));
   fs.mkdirSync(out, { recursive: true });
   const jobs = [];
-  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades, challenges, level: Number(get('level', 1)) - 1, startPicks: Number(get('start-mutations', 0)), difficulty: get('difficulty', null), baby: a2.includes('--baby') });
+  for (const sp of species) for (const st of styles) for (let i = 0; i < runs; i++) jobs.push({ species: sp, style: st, seed: firstSeed + i, seconds, dt: 1 / 30, upgrades, challenges, level: Number(get('level', 1)) - 1, startPicks: Number(get('start-mutations', 0)), difficulty: get('difficulty', null), baby: a2.includes('--baby'), skill: get('skill', null) === null ? null : Number(get('skill')) });
   // interleave so every worker gets a mix of slow and fast species
   const buckets = Array.from({ length: threads }, () => []); jobs.forEach((j, i) => buckets[i % threads].push(j));
   const t0 = Date.now(); let done = 0;
