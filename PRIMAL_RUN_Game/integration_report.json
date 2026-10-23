@@ -8,16 +8,16 @@
   "scope": "Integration preserves source pixels, manifest origins and prototype status. Not a visual or animation approval.",
   "source_sha256": {
     "src/run_titles.js": "11d200cfe8af66b5555bb7b23e1e676bdd8d80c398d458c967fbd3f0d435d06e",
-    "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
+    "src/records.js": "3ebdcecde22ae3918620a82775fcdf9922715517d9442b160c138303dcdadebc",
     "src/run_extras.js": "7001cd4cc3acaaf2dd5afc6981b2cefd52a1e29b8ade530fad72a406954f15c1",
     "src/telemetry.js": "b5cf2a84f30129c0d72874aadc5e6b45b695d1985856484be580004e76426b9c",
     "src/loot.js": "e50c75dd172ea37f998b2ee19d1b230a828897ae6d6cc2ef1aa197c1b632c54e",
-    "src/core.js": "9da3f4d418207c8bdc4086e4c377b782be1640f60f32eabfe59b57eec37271cb",
+    "src/core.js": "bb2ce22e9fdbfd3feeb6fe4aa4ca88bede5b99d2a27898ea1312b71267e7867b",
     "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
-    "src/lang.js": "78b8e806b207e483d91db821522e9b780ca0523c7ecd7939c481a06983742746",
+    "src/lang.js": "3fa06327f95a4d0778b0983dfbdad6355813f137fd38092fc250967dd694f6e3",
     "src/assets.js": "c803627143e4b6c7ba88d017a1df0767dd3108e673024bbd54241f67a00cf403",
     "src/audio.js": "c771de3eff07c18a1b3f32b0fb583a3acdb9529ae874380d7ebe9f603e469cd5",
-    "src/app.js": "2aa8e8d7a591f663c3fc381b92c05a936df2e3d1265b361060905ed6556ffb69",
+    "src/app.js": "d6319a853ed7162f03ca973dcacd5d30364555bd979d62386ae15a141f6dfe79",
     "style.css": "bff95fed4c4960f730994d6b444e1ea06354d3cceb87c84f80e8f0b1cd8b9310"
   }
 }

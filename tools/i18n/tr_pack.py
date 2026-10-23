@@ -8,4 +8,7 @@ PACK_MUTATIONS = [
 ("Tredje fælle","Third Mate","Dritter Gefährte","Tredje kamrat","Tredje flokkfelle","三匹目の仲間","第三同伴"),
 ("Du kan hyre én raptor mere, end din art normalt kan.","You can hire one more raptor than your species normally can.","Du kannst einen Raptor mehr anheuern, als deine Art normalerweise kann.","Du kan värva en raptor mer än din art normalt kan.","Du kan hyre én raptor mer enn arten din vanligvis kan.","種族の上限より1匹多くラプトルを仲間にできる。","你可以比本物种通常多招募一只迅猛龙。"),
 ("ALFABRØL","ALPHA ROAR","ALPHABRÜLLEN","ALFAVRÅL","ALFABRØL","アルファの咆哮","首领咆哮"),
+# Pack kills records (FEATURES.allyKills, 2026-10-23).
+("Flest drab af flokken i ét run","Most pack kills in one run","Meiste Rudel-Kills in einem Run","Flest flockdödanden på ett run","Flest flokkdrap i ett run","1回のランでの群れの最多キル","单局兽群最多击杀"),
+("Drab af flokken i alt","Pack kills in total","Rudel-Kills insgesamt","Flockdödanden totalt","Flokkdrap totalt","群れのキル合計","兽群击杀总数"),
 ]

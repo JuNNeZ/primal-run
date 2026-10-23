@@ -942,7 +942,7 @@
     function defenseActive(r){return r.invulnerable>0||r.shield>0||r.pounce>0&&['compy','utahraptor','velociraptor','deinonychus','ankylosaurus'].includes(C.kindOf(r));}
     function drawDefense(r){if(!defenseActive(r))return;const x=Math.round(r.player.x),y=Math.round(r.player.y),rad=Math.round((r.player.radius||18)+14);ctx.save();ctx.beginPath();ctx.arc(x,y,rad,0,Math.PI*2);ctx.fillStyle=C.COMBAT_COLORS.defense+'33';ctx.fill();ctx.lineWidth=3;ctx.strokeStyle=C.COMBAT_COLORS.defense;ctx.stroke();ctx.restore();}
     function drawTelegraphs(r){
-      for(const e of r.enemies)if(e.mode==='windup'&&!(e.huntTarget&&!e.alert)){ // NPC-vs-NPC windups are no danger zone for you
+      for(const e of r.enemies)if(e.mode==='windup'&&!(e.huntTarget&&!e.alert)&&!e.allyFoe){ // NPC-vs-NPC and NPC-vs-ally windups are no danger zone for you
         const shape=telegraphShape(r,e),total=e.windupDuration||.8,progress=Math.max(0,Math.min(1,1-e.timer/total)),late=e.timer<.25,base=C.FEATURES.combatColors?C.COMBAT_COLORS.attack:e.boss||e.miniboss?'#de954a':'#ed7869';
         ctx.save();
         telegraphPath(e,shape,1);ctx.fillStyle=base+'33';ctx.fill();ctx.lineWidth=e.boss?3:2;ctx.strokeStyle=late&&Math.floor(e.timer*20)%2===0?'#fff1c9':base;ctx.setLineDash([8,6]);ctx.stroke();ctx.setLineDash([]);

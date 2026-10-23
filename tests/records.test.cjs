@@ -164,9 +164,9 @@ test('Q7: records + titles stay under 64 KB after 1000 runs', () => {
   const bytes = Buffer.byteLength(JSON.stringify(rec) + JSON.stringify(titles));
   assert.ok(bytes < 64 * 1024, bytes + ' bytes'); assert.equal(rec.recent.length, 50);
 });
-test('there are 29 Hall of Fame and 25 Hall of Shame statistics', () => {
-  assert.equal(R.STATS.filter(x => x.board === 'fame').length, 29); assert.equal(R.STATS.filter(x => x.board === 'shame').length, 25);
-  assert.equal(new Set(R.STAT_IDS).size, 54);
+test('there are 31 Hall of Fame and 25 Hall of Shame statistics', () => {
+  assert.equal(R.STATS.filter(x => x.board === 'fame').length, 31); assert.equal(R.STATS.filter(x => x.board === 'shame').length, 25);
+  assert.equal(new Set(R.STAT_IDS).size, 56);
 });
 
 // ---- R-REPORT ------------------------------------------------------------------------------------

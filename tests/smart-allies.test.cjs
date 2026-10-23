@@ -88,3 +88,41 @@ test('Tredje fælle lets you feed a third raptor', () => {
   for (let i = 0; i < 10 && !wild.ally; i++) g.feedRaptor();
   assert.equal(wild.ally, true); assert.equal(r.raptors.filter(a => a.ally).length, 3);
 });
+
+// FEATURES.allyAggro: an animal turns on whoever hit it last, with a switch lock.
+test('aggro: a bitten animal turns on the ally and really hurts it; you are left alone', () => {
+  const { g, r, allies } = field(); const ally = allies[0]; allies[1].ally = false; allies[1].x = r.player.x + 3000;
+  r.invulnerable = 0; const hp = r.health;
+  const foe = g.spawn('carnotaurus', { x: r.player.x + 160, y: r.player.y }); Object.assign(foe, { alert: true, damage: 10 });
+  assert.equal(g.allyProvoke(foe, ally), true); assert.equal(foe.allyFoe, ally.id);
+  Object.assign(r.player, { x: r.player.x - 120 }); ally.x = foe.x - 40; ally.y = foe.y; ally.cooldown = 99;
+  let bitten = false; for (let i = 0; i < 4 * 30 && !bitten; i++) { const before = ally.hp; g.step(DT, {}); bitten = ally.hp < before; }
+  assert.ok(bitten, 'the animal bites the ally'); assert.equal(r.health, hp, 'not you');
+});
+
+test('aggro lock: no switching back and forth within 3 s; bosses never switch', () => {
+  const { g, r, allies } = field(); const [a, b] = allies;
+  const foe = g.spawn('carnotaurus', { x: r.player.x + 160, y: r.player.y }); foe.alert = true;
+  g.allyProvoke(foe, a); assert.equal(g.allyProvoke(foe, b), false, 'second ally within the lock'); assert.equal(foe.allyFoe, a.id);
+  g.provoke(foe); assert.equal(foe.allyFoe, a.id, 'your hit within the lock does not take it back');
+  r.seconds += 3.1; g.provoke(foe); assert.equal(foe.allyFoe, null, 'after the lock your hit wins it back');
+  assert.equal(g.allyProvoke(foe, b), false, 'and that switch is locked too');
+  const boss = g.spawn('carnotaurus', { x: r.player.x - 160, y: r.player.y }); boss.boss = true;
+  assert.equal(g.allyProvoke(boss, a), false); assert.equal(boss.allyFoe, undefined);
+});
+
+test('aggro: the animal lets go when the ally flees', () => {
+  const { g, r, allies } = field(); const ally = allies[0];
+  const foe = g.spawn('carnotaurus', { x: r.player.x + 160, y: r.player.y }); foe.alert = true;
+  g.allyProvoke(foe, ally); ally.mode = 'flee'; ally.hp = 1;
+  g.ecologyAI(foe, DT, r.player.x - foe.x, r.player.y - foe.y, 160); assert.equal(foe.allyFoe, null);
+});
+
+test('aggro flag off: allies only take the 30 % chip and animals never turn on them', () => {
+  C.FEATURES.allyAggro = false;
+  try {
+    const { g, r, allies } = field(); const ally = allies[0]; allies[1].ally = false; allies[1].x = r.player.x + 3000;
+    const foe = g.spawn('carnotaurus', { x: r.player.x + 90, y: r.player.y }); Object.assign(foe, { alert: true, speed: 0, mode: 'windup', timer: 5, windupDuration: 5 });
+    ally.x = foe.x - 40; ally.y = foe.y; g.stepRaptors(DT); assert.equal(foe.allyFoe, undefined); assert.ok(ally.hp < ally.maxHP);
+  } finally { C.FEATURES.allyAggro = true; }
+});
