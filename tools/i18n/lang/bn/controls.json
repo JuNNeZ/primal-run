@@ -11,5 +11,10 @@
  "Nulstil alle": "সব রিসেট",
  "Nulstillet til standard": "ডিফল্টে ফেরানো হয়েছে",
  "Byttet med {0}": "{0}-এর সাথে বদল হয়েছে",
- "Tasten understøttes ikke": "এই কী সমর্থিত নয়"
+ "Tasten understøttes ikke": "এই কী সমর্থিত নয়",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "খেলা থেমে আছে। @ দিয়ে বাছো, @ দিয়ে নিশ্চিত করো।",
+ "Vibration i controller": "কন্ট্রোলারের কম্পন",
+ "Controller tilsluttet": "কন্ট্রোলার যুক্ত হয়েছে",
+ "Controller frakoblet": "কন্ট্রোলার বিচ্ছিন্ন হয়েছে",
+ "FORTSÆT · @": "চালিয়ে যাও · @"
 }

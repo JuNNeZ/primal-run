@@ -11,5 +11,10 @@
  "Nulstil alle": "Restablecer todo",
  "Nulstillet til standard": "Restablecido a los valores predeterminados",
  "Byttet med {0}": "Intercambiada con {0}",
- "Tasten understøttes ikke": "Esa tecla no es compatible"
+ "Tasten understøttes ikke": "Esa tecla no es compatible",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "El juego está en pausa. Elige con @ y confirma con @.",
+ "Vibration i controller": "Vibración del mando",
+ "Controller tilsluttet": "Mando conectado",
+ "Controller frakoblet": "Mando desconectado",
+ "FORTSÆT · @": "CONTINUAR · @"
 }

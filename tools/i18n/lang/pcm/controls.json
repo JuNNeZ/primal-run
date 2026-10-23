@@ -11,5 +11,10 @@
  "Nulstil alle": "Reset all",
  "Nulstillet til standard": "E don go back to default",
  "Byttet med {0}": "E don swap with {0}",
- "Tasten understøttes ikke": "Dat key no dey work"
+ "Tasten understøttes ikke": "Dat key no dey work",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "Game don pause. Choose with @ and confam with @.",
+ "Vibration i controller": "Controller go shake",
+ "Controller tilsluttet": "Controller don connect",
+ "Controller frakoblet": "Controller don comot",
+ "FORTSÆT · @": "CONTINUE · @"
 }

@@ -132,7 +132,7 @@ def build():
         assets[path]['atlas'] = frame
     asset_code = 'globalThis.PrimalAssets = ' + json.dumps(assets, ensure_ascii=False, separators=(',', ':')) + ';\n'
     (GAME / 'src/assets.js').write_text(asset_code, encoding='utf-8')
-    sources = ['src/run_titles.js', 'src/records.js', 'src/run_extras.js', 'src/telemetry.js', 'src/loot.js', 'src/core.js', 'src/i18n.js', 'src/lang.js', 'src/assets.js', 'src/audio.js', 'src/app.js']
+    sources = ['src/run_titles.js', 'src/records.js', 'src/run_extras.js', 'src/telemetry.js', 'src/loot.js', 'src/core.js', 'src/i18n.js', 'src/lang.js', 'src/assets.js', 'src/audio.js', 'src/gamepad.js', 'src/app.js']
     source = '\n'.join((GAME / filename).read_text(encoding='utf-8') for filename in sources)
     css = (GAME / 'style.css').read_text(encoding='utf-8')
     boot = '''// GENERATED from src/*.js and style.css by tools/build_game.py.

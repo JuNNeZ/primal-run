@@ -14,4 +14,10 @@ CONTROLS = [
 ("Nulstillet til standard", "Reset to default", "Auf Standard zurückgesetzt", "Återställd till standard", "Tilbakestilt til standard", "初期設定に戻しました", "已恢复默认"),
 ("Byttet med {0}", "Swapped with {0}", "Getauscht mit {0}", "Bytt med {0}", "Byttet med {0}", "{0}と入れ替えました", "已与{0}互换"),
 ("Tasten understøttes ikke", "That key is not supported", "Diese Taste wird nicht unterstützt", "Tangenten stöds inte", "Tasten støttes ikke", "このキーは使えません", "不支持该按键"),
+# Controller support (2026-10-23, FEATURES.gamepadFull).
+("Spillet er pauset. Vælg med @ og bekræft med @.", "The game is paused. Choose with @ and confirm with @.", "Das Spiel ist pausiert. Wähle mit @ und bestätige mit @.", "Spelet är pausat. Välj med @ och bekräfta med @.", "Spillet er satt på pause. Velg med @ og bekreft med @.", "ゲームは一時停止中。@で選び、@で決定。", "游戏已暂停。用@选择，用@确认。"),
+("Vibration i controller", "Controller vibration", "Controller-Vibration", "Vibration i handkontrollen", "Vibrasjon i kontrolleren", "コントローラーの振動", "手柄振动"),
+("Controller tilsluttet", "Controller connected", "Controller verbunden", "Handkontroll ansluten", "Kontroller tilkoblet", "コントローラー接続", "手柄已连接"),
+("Controller frakoblet", "Controller disconnected", "Controller getrennt", "Handkontroll frånkopplad", "Kontroller frakoblet", "コントローラー切断", "手柄已断开"),
+("FORTSÆT · @", "CONTINUE · @", "WEITER · @", "FORTSÄTT · @", "FORTSETT · @", "続ける · @", "继续 · @"),
 ]

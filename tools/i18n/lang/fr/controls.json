@@ -11,5 +11,10 @@
  "Nulstil alle": "Tout réinitialiser",
  "Nulstillet til standard": "Valeurs par défaut rétablies",
  "Byttet med {0}": "Échangée avec {0}",
- "Tasten understøttes ikke": "Cette touche n'est pas prise en charge"
+ "Tasten understøttes ikke": "Cette touche n'est pas prise en charge",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "Le jeu est en pause. Choisis avec @ et valide avec @.",
+ "Vibration i controller": "Vibration de la manette",
+ "Controller tilsluttet": "Manette connectée",
+ "Controller frakoblet": "Manette déconnectée",
+ "FORTSÆT · @": "REPRENDRE · @"
 }

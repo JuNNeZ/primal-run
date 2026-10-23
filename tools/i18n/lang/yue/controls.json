@@ -11,5 +11,10 @@
  "Nulstil alle": "全部重設",
  "Nulstillet til standard": "已經還原預設",
  "Byttet med {0}": "同{0}交換咗",
- "Tasten understøttes ikke": "唔支援呢個鍵"
+ "Tasten understøttes ikke": "唔支援呢個鍵",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "遊戲暫停咗。用@揀，用@確認。",
+ "Vibration i controller": "手掣震動",
+ "Controller tilsluttet": "手掣已連接",
+ "Controller frakoblet": "手掣已斷開",
+ "FORTSÆT · @": "繼續 · @"
 }

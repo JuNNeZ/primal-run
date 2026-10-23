@@ -12,12 +12,13 @@
     "src/run_extras.js": "424113dc08d634293ec59e61fbbb433b22fd347c56ec86635c7480bb016371d7",
     "src/telemetry.js": "b5cf2a84f30129c0d72874aadc5e6b45b695d1985856484be580004e76426b9c",
     "src/loot.js": "e50c75dd172ea37f998b2ee19d1b230a828897ae6d6cc2ef1aa197c1b632c54e",
-    "src/core.js": "85c3e260e6375e1f13b8a2c24e1eb85bd0bc904a734f71b28f38b375b051d046",
+    "src/core.js": "3d0453327b9ee9fb2a56c32c8645c07f3571da8cc09dfb1b6255ca5b72554b9a",
     "src/i18n.js": "299178f7ce0ec801b9d8f7e16dd7ace589e8b8ad4ae040b0aaa32ff2f0292bb6",
-    "src/lang.js": "f36c287b52a3529b20929b2f7fb2f6930be6dd9819febb89699d066435397843",
+    "src/lang.js": "05670af298bcd4d0233dc337ad6dabeeb34f1fd05396856cf9aabcd398d49b1d",
     "src/assets.js": "82ba0947f38e5a1071071e14e8f6731121afb70d6bb69a4fb0fad78faf35e725",
     "src/audio.js": "c771de3eff07c18a1b3f32b0fb583a3acdb9529ae874380d7ebe9f603e469cd5",
-    "src/app.js": "62d5762c7480ee7e8bc62f1b611fa024f8c8b115b11e9dd0460849cb4a3d7922",
-    "style.css": "ad381bbf3dac288a43ea64a2d7f092c98f42c9fd005af6f5d1d1fac3c58e21c8"
+    "src/gamepad.js": "5d6356b5e0196ee5969e1883dc3d7038968800b6b0d43d012d6f5648d1ddfc25",
+    "src/app.js": "955bee3b14fbae22b714871c944f02919842741ca0935acf6501c481c3a24448",
+    "style.css": "5cceb262a1bd9efa6cc95c3b4fcdcd7e4d2d5729421c9548b4e9d046054dea00"
   }
 }

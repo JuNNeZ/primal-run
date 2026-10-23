@@ -11,5 +11,10 @@
  "Nulstil alle": "Сбросить всё",
  "Nulstillet til standard": "Восстановлено по умолчанию",
  "Byttet med {0}": "Обмен с: {0}",
- "Tasten understøttes ikke": "Эта клавиша не поддерживается"
+ "Tasten understøttes ikke": "Эта клавиша не поддерживается",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "Игра на паузе. Выбирай @ и подтверждай @.",
+ "Vibration i controller": "Вибрация геймпада",
+ "Controller tilsluttet": "Геймпад подключён",
+ "Controller frakoblet": "Геймпад отключён",
+ "FORTSÆT · @": "ПРОДОЛЖИТЬ · @"
 }

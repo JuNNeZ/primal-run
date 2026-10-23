@@ -11,5 +11,10 @@
  "Nulstil alle": "إعادة ضبط الكل",
  "Nulstillet til standard": "أُعيد إلى الافتراضي",
  "Byttet med {0}": "تم التبديل مع {0}",
- "Tasten understøttes ikke": "هذا المفتاح غير مدعوم"
+ "Tasten understøttes ikke": "هذا المفتاح غير مدعوم",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "اللعبة متوقفة مؤقتًا. اختر بـ @ وأكّد بـ @.",
+ "Vibration i controller": "اهتزاز وحدة التحكم",
+ "Controller tilsluttet": "تم توصيل وحدة التحكم",
+ "Controller frakoblet": "تم فصل وحدة التحكم",
+ "FORTSÆT · @": "متابعة · @"
 }

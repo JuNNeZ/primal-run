@@ -285,3 +285,7 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 /* Flok 2.0 (FEATURES.packOrders / packFeedback): pack order chip, a fourth intro card and the pack line on the result card */
 #pack-chip{color:#a2d4c1}.intro-cards.four{grid-template-columns:repeat(4,1fr)}.run-pack{margin:4px 0;color:#a2d4c1}
 @media(max-width:800px){.hud-chips > #pack-chip{display:none}.intro-cards.four{grid-template-columns:1fr}}
+/* FEATURES.gamepadFull: the controller's menu focus is always visible, also on mutation cards and settings. */
+.primal-shell[data-input="gamepad"] .screen :is(button,select,input,a):focus{outline:4px solid #f4cf6a;outline-offset:3px;box-shadow:0 0 0 8px #f4cf6a33,0 0 22px #f4cf6a66}
+.primal-shell[data-input="gamepad"] .screen .rarity-card:focus{transform:translateY(-4px);background:#2f4632}
+.primal-shell[data-input="gamepad"] .screen .check input:focus{outline-offset:2px}
