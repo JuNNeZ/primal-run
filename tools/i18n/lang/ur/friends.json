@@ -1,0 +1,18 @@
+{
+ "{0} udfordrer dig!": "{0} آپ کو چیلنج کر رہا ہے!",
+ "{0} point som {1} · Bane {2}": "{1} کے طور پر {0} پوائنٹس · مرحلہ {2}",
+ "TAG UDFORDRINGEN": "چیلنج قبول کریں",
+ "Du slog {0}: {1} mod {2}": "آپ نے {0} کو ہرایا: {1} بمقابلہ {2}",
+ "Uafgjort mod {0}: {1} mod {2}": "{0} کے ساتھ برابر: {1} بمقابلہ {2}",
+ "{0} vandt: {1} mod {2}": "{0} جیت گیا: {1} بمقابلہ {2}",
+ "UDFORDR EN VEN": "دوست کو چیلنج کریں",
+ "Slå {0}: {1} point": "{0} کو ہرائیں: {1} پوائنٹس",
+ "Du har ikke låst arten op endnu, så du spiller med din egen": "آپ نے ابھی یہ نسل ان لاک نہیں کی، اس لیے آپ اپنی نسل سے کھیلیں گے",
+ "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "کیا آپ مجھے PRIMAL RUN میں ہرا سکتے ہیں؟ {1} کے طور پر {0} پوائنٹس",
+ "Udfordrings-link kopieret": "چیلنج لنک کاپی ہو گیا",
+ "Linket kunne ikke kopieres": "لنک کاپی نہیں ہو سکا",
+ "Flokkammerat (# spillere)": "غول کا ساتھی (# کھلاڑی)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "کھلاڑی # IJKL + @ یا کنٹرولر # سے ایک ریپٹر چلاتا ہے۔",
+ "SPILLER # ER TILBAGE": "کھلاڑی # واپس آ گیا",
+ "SPILLER # ER SLÅET UD": "کھلاڑی # ناک آؤٹ"
+}
