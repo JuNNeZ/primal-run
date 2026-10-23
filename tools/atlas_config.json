@@ -5,6 +5,7 @@
   "world_bundles": {
     "ui": "world_shared",
     "a6_hud": "world_shared",
+    "pack_hud": "world_shared",
     "effects": "world_shared",
     "pickups": "world_shared",
     "forage": "world_shared",

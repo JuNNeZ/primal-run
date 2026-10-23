@@ -277,3 +277,6 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 /* FEATURES.extinctionPressure / currencies: closed pressure steps and unaffordable start relics. */
 .difficulty-pick label.locked{opacity:.4}.difficulty-pick legend img.hud-icon{height:16px;vertical-align:-3px;margin-right:4px}
 .friend-challenge{display:flex;flex-direction:column;align-items:center;gap:4px;margin:6px 0 10px;padding:8px 10px;border:1px solid #dfbc52;background:rgba(21,27,25,.6);text-align:center}.friend-challenge b{color:#dfbc52}.friend-challenge .actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+/* Flok 2.0 (FEATURES.packOrders / packFeedback): pack order chip, a fourth intro card and the pack line on the result card */
+#pack-chip{color:#a2d4c1}.intro-cards.four{grid-template-columns:repeat(4,1fr)}.run-pack{margin:4px 0;color:#a2d4c1}
+@media(max-width:800px){.hud-chips > #pack-chip{display:none}.intro-cards.four{grid-template-columns:1fr}}

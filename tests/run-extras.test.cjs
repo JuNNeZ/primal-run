@@ -111,6 +111,8 @@ test('rare albinos are moved to the most remote suitable habitat', () => {
 });
 
 test('raptor pack is capped by species strength: Spinosaurus recruits none, Baryonyx one, Velociraptor two', () => {
+  const keep = { kinPack: C.FEATURES.kinPack }; Object.assign(C.FEATURES, { kinPack: false }); // the pre-Flok 2.0 pack; tests/pack-two.test.cjs covers the new one
+  try {
   const recruits = species => {
     const g = make(species, 3), r = g.run; r.invulnerable = 1e9; let n = 0;
     for (const a of r.raptors.slice(0, 2)) { Object.assign(r.player, { x: a.x + 50, y: a.y }); r.pickups.push({ id: 9100 + n, kind: 'meat', corpseId: 77, value: 3, x: a.x + 20, y: a.y + 10 }); r.meat = 20; for (let i = 0; i < (C.FEATURES.raptorDonate ? C.PACK.donate / C.PACK.donateStep : 1); i++) g.step(1 / 30, { interact: true }); n++; }
@@ -120,6 +122,7 @@ test('raptor pack is capped by species strength: Spinosaurus recruits none, Bary
   assert.deepEqual([recruits('spinosaurus'), recruits('baryonyx'), recruits('velociraptor')], [0, 1, 2]);
   assert.equal(C.packLimitOf({ species: 'spinosaurus' }), 0); assert.equal(C.packLimitOf({ species: 'compy' }), 2);
   assert.equal(C.PACK.max, 2, 'the cap is restored after each feed');
+  } finally { Object.assign(C.FEATURES, keep); }
 });
 
 test('affixStages: later levels stack distinct traits on one elite, and each extra trait pays', () => {
