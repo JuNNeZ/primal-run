@@ -34,9 +34,9 @@
     const shell = document.createElement('div'); shell.className = 'primal-shell';
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
       <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space angriber, Shift bruger evne, F spiser, Escape pauser."></canvas>
-      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="meter xp hud-x" title="XP"><i></i></div><small id="xp-label" class="hud-x"></small><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="pack-chip" hidden><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div><div id="extras-chip" class="extras-chip" hidden></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b><div class="meter goal hud-x"><i></i></div><div class="goal-row hud-x"><span id="goal-dna"></span><span id="goal-time"></span></div></div></div><div class="hud-top" hidden><div class="meter"><i></i></div><b id="top-level"></b><b id="top-time"></b></div><div class="hud-actions" hidden><div class="hud-slot" data-slot="attack"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small>Angreb</small></div><div class="hud-slot" data-slot="ability"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small></small></div><span class="slot-gap"></span><div class="hud-slot small" data-slot="eat"><span class="slot-icon"></span><kbd></kbd><small>Spis</small></div><div class="hud-slot small" data-slot="sneak"><span class="slot-icon">◐</span><kbd></kbd><small>Snig</small></div><div class="hud-slot small" data-slot="interact"><span class="slot-icon">?</span><kbd></kbd><small>Undersøg</small></div><div class="hud-slot small" data-slot="command" hidden><span class="slot-icon"></span><kbd></kbd><small>Flok</small></div></div><div class="hud-prompt" hidden></div>
+      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="meter xp hud-x" title="XP"><i></i></div><small id="xp-label" class="hud-x"></small><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="pack-chip" hidden><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div><div id="extras-chip" class="extras-chip" hidden></div><div class="build-bar" hidden></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b><div class="meter goal hud-x"><i></i></div><div class="goal-row hud-x"><span id="goal-dna"></span><span id="goal-time"></span></div></div></div><div class="hud-top" hidden><div class="meter"><i></i></div><b id="top-level"></b><b id="top-time"></b></div><div class="hud-actions" hidden><div class="hud-slot" data-slot="attack"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small>Angreb</small></div><div class="hud-slot" data-slot="ability"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small></small></div><span class="slot-gap"></span><div class="hud-slot small" data-slot="eat"><span class="slot-icon"></span><kbd></kbd><small>Spis</small></div><div class="hud-slot small" data-slot="sneak"><span class="slot-icon">◐</span><kbd></kbd><small>Snig</small></div><div class="hud-slot small" data-slot="interact"><span class="slot-icon">?</span><kbd></kbd><small>Undersøg</small></div><div class="hud-slot small" data-slot="command" hidden><span class="slot-icon"></span><kbd></kbd><small>Flok</small></div></div><div class="hud-prompt" hidden></div>
       <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div><b id="pack-ready" hidden></b></div></div>
-      <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div><div class="loot-reel" hidden aria-live="polite"><div class="loot-strip"></div></div></main>
+      <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div><div class="build-tip" hidden></div><div class="loot-reel" hidden aria-live="polite"><div class="loot-strip"></div></div></main>
       <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space" class="pad-a">ANGREB</button><button data-key="ShiftLeft" class="pad-b">EVNE</button><button data-key="KeyE" class="pad-x">UNDERSØG</button><button data-key="KeyF" class="pad-y">SPIS</button><button data-key="KeyQ" class="pack-key pad-l" hidden>FLOK</button><button data-sneak-toggle class="pad-sneak" aria-pressed="false" hidden>SNIG</button></div></div>
       <footer><span class="control-hints"><span data-control="move"><kbd></kbd> Bevæg</span><span data-control="attack"> · <kbd></kbd> Angreb</span><span data-control="ability"> · <kbd></kbd> Evne</span><span data-control="sneak"> · <kbd></kbd> Snig / skjul</span><span data-control="eat"> · <kbd></kbd> Hold for at spise</span><span data-control="interact"> · <kbd></kbd> Undersøg</span><span data-control="pause"> · <kbd></kbd> Pause</span></span><span class="save-status"></span></footer>`;
     host.appendChild(shell); I18N.translateNode(shell);
@@ -59,6 +59,7 @@
       const el=shell.querySelector('.loot-reel');if(!el||!C.FEATURES.lootReveal)return;if(reel)finishReel(true);
       const order=REEL_TIERS.slice(0,ev.ceiling+1).reverse(),loops=calm()?0:3,items=[];
       for(let i=0;i<loops;i++)items.push(...order);items.push(...order.slice(0,order.indexOf(REEL_TIERS[ev.tier])+1));
+      el.classList.remove('card');el.querySelector('.loot-card-info')?.remove();lootHold=null;
       const strip=el.querySelector('.loot-strip'),name=t=>t===REEL_TIERS[ev.tier]&&ev.label?ev.label:C.MUTATION_RARITIES[t].name;
       const pic=(t,i)=>C.FEATURES.hudIconSet?(i===items.length-1&&ev.icon?`<img class="hud-icon" src="assets/hud_icons/${ev.icon}.png" alt="">`:hudIcon('rarity',t)):'';
       strip.innerHTML=items.map((t,i)=>`<b style="--rarity:${C.MUTATION_RARITIES[t].color}">${pic(t,i)}${tr(name(t))}</b>`).join('');
@@ -73,8 +74,54 @@
     }
     function finishReel(skip){
       const r=reel;if(!r)return;reel=null;r.strip.style.transform=`translateY(${-(r.n-1)*100/r.n}%)`;r.el.style.setProperty('--rarity',C.MUTATION_RARITIES[REEL_TIERS[r.ev.tier]].color);r.el.classList.add('locked');
-      audio.play('loot_lock',{tier:r.ev.tier});setTimeout(()=>{if(!reel)r.el.hidden=true;},skip?0:1400);
+      audio.play('loot_lock',{tier:r.ev.tier});if(C.FEATURES.lootCard){showLootCard(r);return;}setTimeout(()=>{if(!reel)r.el.hidden=true;},skip?0:1400);
     }
+    // FEATURES.lootCard: the locked reel unfolds into a card that says what you got and what it does. Big finds (relics,
+    // caches) keep the world paused until a tap, key or button; small ones (epic meat) stay ~3 s while the world runs.
+    let lootHold=null;const LOOT_ITEMS={meat:'Kød',dna:'DNA',heal:'Helbredelse',relic:'Relikvie'};
+    function showLootCard(r){
+      const ev=r.ev,x=ev.relic&&C.RELICS[ev.relic],set=x&&C.RELIC_SETS[x.set],lines=[];
+      if(x){lines.push(tr(x.text));lines.push(set?tr(set.name)+' '+Math.min(3,C.relicSet(game.run,x.set))+'/3':tr('Tæller i alle sæt'));}
+      else if(ev.items&&ev.items.length)lines.push(ev.items.map(i=>tr(LOOT_ITEMS[i]||i)).join(' · '));
+      else if(ev.kind==='relic')lines.push(tr('Gemt i din DNA-bank'));
+      else if(ev.kind==='meat')lines.push(tr('Ådslet giver ekstra føde'));
+      r.strip.style.transform='none';r.strip.innerHTML=r.strip.lastElementChild.outerHTML;
+      r.el.insertAdjacentHTML('beforeend',`<div class="loot-card-info">${lines.map(l=>`<p>${htmlEscape(l)}</p>`).join('')}${ev.big?`<small>${tr('Tryk for at fortsætte')}</small>`:''}</div>`);
+      r.el.classList.add('card');
+      if(ev.big){lootHold={el:r.el,run:game.run};r.el.onclick=dismissLoot;}else setTimeout(()=>{if(!reel&&!lootHold)r.el.hidden=true;},3000);
+    }
+    function dismissLoot(){const h=lootHold;lootHold=null;if(h&&!reel)h.el.hidden=true;}
+    const lootHeld=()=>!!lootHold&&lootHold.run===game.run;
+    // FEATURES.mutationReel: each offered card spins like a slot reel through real mutations from the pool and stops left to
+    // right (~0.6/0.9/1.2 s; rerolls and banish replace only changed cards, shorter), so you see what you missed. Presentation
+    // only: the choices are already rolled and fillers use Math.random, so seeds stay the same. A tap or key skips, never picks.
+    let mreel=null,mreelShown=null;
+    const mTier=m=>m.trophy||m.evolution?4:Math.max(0,REEL_TIERS.indexOf(m.rarity)),mRarity=m=>C.MUTATION_RARITIES[m.rarity]||C.MUTATION_RARITIES.common;
+    function startMutationReel(){
+      const ids=game.run.choices,prev=mreelShown,slots=[];mreelShown=ids.slice();mreel=null;if(!C.FEATURES.mutationReel||calm())return;
+      ids.forEach((id,i)=>{
+        const m=C.MUTATIONS.find(x=>x.id===id),card=screen.querySelector(`[data-mutation="${id}"]`);if(!m||!card||prev&&prev[i]===id)return;
+        const pool=C.MUTATIONS.filter(x=>!ids.includes(x.id)&&!x.evolution&&!!x.trophy===!!m.trophy&&(!game.mutationAvailable||game.mutationAvailable(x)));if(!pool.length)return;
+        const items=[],n=prev?5+2*i:8+4*i,pick=list=>list[Math.floor(Math.random()*list.length)];for(let k=0;k<n;k++)items.push(pick(pool));
+        const better=pool.filter(x=>mTier(x)>mTier(m));if(better.length&&Math.random()<.5)items[n-1]=pick(better); // a near miss now and then
+        items.push(m);
+        card.insertAdjacentHTML('beforeend',`<span class="mreel" aria-hidden="true"><span class="mreel-strip">${items.map(x=>`<b style="--rarity:${mRarity(x).color}"><small>${rarityMark(x.rarity)} ${tr(mRarity(x).name).toUpperCase()}</small>${imageTag('assets/ui/'+x.icon+'.png')}<span>${tr(x.name)}</span></b>`).join('')}</span></span>`);
+        card.classList.add('spinning');slots.push({card,el:card.lastElementChild,strip:card.querySelector('.mreel-strip'),items,n:items.length,dur:prev?350+175*i:600+300*i,last:-1,tier:mTier(m),color:mRarity(m).color});
+      });
+      if(slots.length)mreel={slots,start:null,tick:-1e9};
+    }
+    function stepMutationReel(now){
+      if(!mreel)return;if(game.phase!=='mutation'){mreel=null;return;}if(mreel.start===null)mreel.start=now;let busy=false;
+      for(const s of mreel.slots){
+        if(s.done)continue;const k=Math.max(0,Math.min(1,(now-mreel.start)/s.dur)),pos=(1-Math.pow(1-k,3))*(s.n-1),i=Math.floor(pos);
+        s.strip.style.transform=`translateY(${-pos*100}%)`;s.card.style.setProperty('--rarity',mRarity(s.items[Math.round(pos)]).color);
+        if(i!==s.last&&k<1){s.last=i;if(now-mreel.tick>45){mreel.tick=now;audio.play('loot_tick',{tier:s.tier});}}
+        if(k>=1)lockMutationSlot(s);else busy=true;
+      }
+      if(!busy)mreel=null;
+    }
+    function lockMutationSlot(s){s.done=true;s.el.remove();s.card.style.setProperty('--rarity',s.color);s.card.classList.remove('spinning');s.card.classList.add('reel-locked');audio.play('loot_lock',{tier:s.tier});}
+    function finishMutationReel(){if(!mreel)return;for(const s of mreel.slots)if(!s.done)lockMutationSlot(s);mreel=null;}
     // FEATURES.hudIconSet: Codex' native HUD icons (assets/hud_icons, approval in approval.json); the old glyphs stay as fallback.
     const hudIcon = (group, id) => C.FEATURES.hudIconSet ? `<img class="hud-icon" src="assets/hud_icons/${group}/${id}.png" alt="" draggable="false">` : '';
     const RARITY_GLYPH = { common: '•', uncommon: '◆', rare: '✦', epic: '★', legendary: '♛', evolution: '❂', trophy: '♜' };
@@ -260,6 +307,8 @@
       const phase = game.phase, r = game.run;
       if (phase === previousPhase && !force) return;
       updateControlHints();
+      if (phase !== 'mutation') { mreelShown = null; mreel = null; } // FEATURES.mutationReel: a new offer spins all cards
+      showBuildTip(null); // FEATURES.buildBar / statSheet tooltips never outlive their screen
       previousPhase = phase; screen.dataset.phase = phase; shell.dataset.phase = phase; keys.clear();
       const running = ['build','playing', 'paused', 'mutation', 'exploration', 'cleared'].includes(phase);
       shell.querySelector('.meat-progress').hidden = !running; shell.querySelector('.hud').hidden = !running; shell.querySelector('.run-info').hidden = !running;if(!running)for(const sel of ['.hud-top','.hud-actions','.hud-prompt'])shell.querySelector(sel).hidden=true;
@@ -351,7 +400,7 @@
       } else if (phase === 'keys') {
         screen.innerHTML = keysHTML();
       } else if (phase === 'build') {
-        screen.innerHTML=`<section class="panel">${heading(C.PLAYER_SPECIES[r.species].name,'Dit build','Spillet er pauset.')}<p>${tr('Liv')}: ${Math.ceil(r.health)} / ${r.maxHealth} · Stamina: ${Math.round(r.stamina)} / 100 · ${tr('Evne')}: ${C.abilityCost(r)} stamina</p><div class="mutation-grid">${C.MUTATIONS.filter(m=>r.mutations[m.id]>0).map(m=>`<article class="rarity-card" style="--rarity:${C.MUTATION_RARITIES[m.rarity].color}"><strong>${tr(m.name)}</strong><p>${tr('Rang')} ${r.mutations[m.id]} / ${m.max} · ${tr(C.MUTATION_RARITIES[m.rarity].name)}</p><p>${tr(m.text)}</p></article>`).join('')||`<p>${tr('Ingen mutationer endnu.')}</p>`}${(game.setBonuses?game.setBonuses():[]).map(tag=>`<article class="rarity-card set-card" style="--rarity:#dfbc52"><strong>${C.MUTATION_TAGS[tag].glyph} ${tr(C.SET_BONUSES[tag].name)}</strong><p>${tr('Sæt-bonus')} · ${tr(C.MUTATION_TAGS[tag].name)} ×${C.SET_SIZE}</p><p>${tr(C.SET_BONUSES[tag].text)}</p></article>`).join('')}${relicCards(r)}</div>${button('build-back','← Tilbage til pause')}</section>`;
+        screen.innerHTML=`<section class="panel">${heading(C.PLAYER_SPECIES[r.species].name,'Dit build','Spillet er pauset.')}<p>${tr('Liv')}: ${Math.ceil(r.health)} / ${r.maxHealth} · Stamina: ${Math.round(r.stamina)} / 100 · ${tr('Evne')}: ${C.abilityCost(r)} stamina</p>${statSheetHTML()}<div class="mutation-grid">${C.MUTATIONS.filter(m=>r.mutations[m.id]>0).map(m=>`<article class="rarity-card" style="--rarity:${C.MUTATION_RARITIES[m.rarity].color}"><strong>${tr(m.name)}</strong><p>${tr('Rang')} ${r.mutations[m.id]} / ${m.max} · ${tr(C.MUTATION_RARITIES[m.rarity].name)}</p><p>${tr(m.text)}</p></article>`).join('')||`<p>${tr('Ingen mutationer endnu.')}</p>`}${(game.setBonuses?game.setBonuses():[]).map(tag=>`<article class="rarity-card set-card" style="--rarity:#dfbc52"><strong>${C.MUTATION_TAGS[tag].glyph} ${tr(C.SET_BONUSES[tag].name)}</strong><p>${tr('Sæt-bonus')} · ${tr(C.MUTATION_TAGS[tag].name)} ×${C.SET_SIZE}</p><p>${tr(C.SET_BONUSES[tag].text)}</p></article>`).join('')}${relicCards(r)}</div>${button('build-back','← Tilbage til pause')}</section>`;
       } else if (phase === 'mutation') {
         const level = r.campaign[r.levelIndex], n = r.choices.length, press = C.FEATURES.gamepadFull && inputMode === 'gamepad' ? 'Spillet er pauset. Vælg med [VENSTRE PIND] og bekræft med ' + padControl('attack') + '.' : n === 2 ? 'Spillet er pauset. Tryk 1 eller 2.' : n === 4 ? 'Spillet er pauset. Tryk 1, 2, 3 eller 4.' : 'Spillet er pauset. Tryk 1, 2 eller 3.';
         const top = r.trophySelection ? heading('BOSSTROFÆ', I18N.tf('Trofæ fra {0}', tr(level.bossName)), press) : r.innateSelection ? heading('MEDFØDT MUTATION', 'Vælg din mutation', press) : heading(r.rareSelection?(r.rewardSource==='elite'?'ELITE NEDLAGT · EPISK GENOM':'SJÆLDEN ALBINO NEDLAGT · EPISK GENOM'):'DINO-LEVEL ' + r.level, 'Vælg din mutation', press);
@@ -376,6 +425,8 @@
         screen.innerHTML = `<section class="panel">${heading('INDLÆSNING FEJLEDE', 'Assets mangler')}<p>Kontrollér, at assets-mappen følger med spillet. Genindlæs siden efter rettelsen.</p><p class="load-error"></p></section>`;
       }
       I18N.translateNode(screen); adaptControls(screen); padGlyphs(screen);
+      if (phase === 'mutation') startMutationReel();
+      if (phase === 'build') { const c = screen.querySelector('.sheet-portrait'), pc = shell.querySelector('.hud-portrait'); if (c && pc) c.getContext('2d').drawImage(pc, 0, 0); } // FEATURES.statSheet
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
       if (C.FEATURES.gamepadFull && inputMode === 'gamepad' && padFocusKey) { const same = padItems().find(x => padKey(x) === padFocusKey); if (same) padFocus(same); }
       shell.querySelector('.save-status').textContent = tr(game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session');
@@ -1376,13 +1427,53 @@
       if(stacks>=2)parts.push('<span class="streak">'+tr('JAGTRUS')+' ×'+stacks+'</span>');
       for(const b of (C.buffsOf?C.buffsOf(r):[]))if(C.POWERUPS[b.type])parts.push('<span style="color:'+C.POWERUPS[b.type].color+'">'+tr(C.POWERUPS[b.type].name)+' '+Math.ceil(b.time)+'s</span>');
       if(r.extras&&r.extras.baby)parts.push('<span class="baby">'+tr('BABY')+' '+Math.round(100*babyScale(r))+' %</span>');
-      if(C.FEATURES.relics&&r.relics){const n=Object.keys(r.relics).length;if(n)parts.push('<span class="relic-count">'+(C.FEATURES.hudIconSet?Object.keys(r.relics).map(id=>hudIcon('relics',id+'_16')).join(''):tr('RELIKVIER')+' ')+(C.FEATURES.hudIconSet?'':n)+'</span>');}
+      if(C.FEATURES.relics&&r.relics&&!C.FEATURES.buildBar){const n=Object.keys(r.relics).length;if(n)parts.push('<span class="relic-count">'+(C.FEATURES.hudIconSet?Object.keys(r.relics).map(id=>hudIcon('relics',id+'_16')).join(''):tr('RELIKVIER')+' ')+(C.FEATURES.hudIconSet?'':n)+'</span>');}
       if(C.FEATURES.rottenMeat&&r.extras){const x=r.extras;if(x.rot&&r.seconds<x.rot.until)parts.push('<span class="rotten">'+hudIcon('future','rotten_meat')+tr('RÅDDEN MAVE')+' '+Math.ceil(x.rot.until-r.seconds)+'s</span>');if(x.rotStacks)parts.push('<span class="rotten">'+tr('HÆRDET MAVE')+' ×'+x.rotStacks+'</span>');}
       if(C.FEATURES.extinctionPressure&&r.pressure)parts.push('<span class="pressure">'+hudIcon('future','extinction_pressure')+tr('TRYK')+' '+r.pressure+'</span>');
       if(C.FEATURES.currencies&&r.currency)parts.push('<span class="amber-count">'+hudIcon('future','amber_chip')+tr('RAV')+' '+r.currency.rav+'</span>');
       else if(r.extras&&r.extras.amber)parts.push('<span class="amber-count">'+tr('RAV')+' '+r.extras.amber+'/'+C.LEVELS.length+'</span>');
 
       const html=parts.join(' · ');if(chip.dataset.html!==html){chip.innerHTML=html;chip.dataset.html=html;}chip.hidden=!parts.length;
+    }
+    // FEATURES.buildBar: your mutations (with rank) and relics as small HUD icons; hover (or tap) shows name, rank and effect.
+    function drawBuildBar(r){
+      const bar=shell.querySelector('.build-bar');if(!bar)return;if(!C.FEATURES.buildBar){bar.hidden=true;return;}
+      const muts=C.MUTATIONS.filter(m=>r.mutations[m.id]>0),relics=C.FEATURES.relics&&r.relics?Object.keys(r.relics).filter(id=>C.RELICS[id]):[];
+      const key=muts.map(m=>m.id+r.mutations[m.id]).join()+'|'+relics.join()+'|'+I18N.lang;if(bar.dataset.key===key)return;bar.dataset.key=key;
+      bar.innerHTML=muts.map(m=>`<span class="build-item" data-tip-mutation="${m.id}" style="--rarity:${(C.MUTATION_RARITIES[m.rarity]||C.MUTATION_RARITIES.common).color}">${imageTag('assets/ui/'+m.icon+'.png')}${m.max>1?`<b>${r.mutations[m.id]}</b>`:''}</span>`).join('')
+        +relics.map(id=>`<span class="build-item relic" data-tip-relic="${id}" style="--rarity:${C.MUTATION_RARITIES[C.RELICS[id].rarity].color}">${hudIcon('relics',id+'_16')||'◆'}</span>`).join('');
+      bar.hidden=!muts.length&&!relics.length;
+    }
+    // FEATURES.statSheet: a WoW-style character panel on "Dit build". Value plus change from the base; hover/tap lists the sources.
+    const num=(v,d=0)=>new Intl.NumberFormat(I18N.lang==='dino'?'da':I18N.lang||'da',{maximumFractionDigits:d,minimumFractionDigits:d}).format(v);
+    const sheetValue=row=>row.points?num(100*row.value)+' %':num(row.value,row.unit||row.id==='damage'?1:0)+row.unit;
+    const sheetDelta=(row,d)=>row.pct?(d>=0?'+':'−')+num(Math.abs(100*d/(row.base||1)))+' %':row.points?(d>=0?'+':'−')+num(Math.abs(100*d)):(d>=0?'+':'−')+num(Math.abs(d),Number.isInteger(d)?0:1);
+    // Grouped like a character panel. Codex' stat icons (assets/hud_icons/stats, 2026-10-23) behind FEATURES.statIcons, which
+    // waits for Jonas' approval; until then the older game icons and a glyph for luck.
+    const SHEET_GROUPS=[['Angreb',['damage','crit']],['Overlevelse',['health','armor','regen']],['Jagt',['speed','ability','luck']]];
+    const OLD_SHEET_ICONS={health:'assets/ui/health.png',damage:'assets/ui/serrated_teeth.png',speed:'assets/ui/powerful_legs.png',regen:'assets/ui/stamina.png',armor:'assets/ui/armor.png',crit:'assets/hud_icons/tags/crit.png',ability:'assets/hud_icons/ui/ability_stamina.png'};
+    const sheetIcon=id=>C.FEATURES.statIcons?'assets/hud_icons/stats/'+id+'.png':OLD_SHEET_ICONS[id];
+    function statSheetHTML(){
+      if(!C.FEATURES.statSheet||!game.statSheet)return '';
+      const rows=Object.fromEntries(game.statSheet().map(x=>[x.id,x])),r=game.run;
+      const row=x=>{const d=x.value-x.base,good=Math.abs(d)<1e-6?'':(d>0)!==(x.id==='ability')?'up':'down',scale=Math.max(x.value,x.base)*1.25||1;
+        const icon=sheetIcon(x.id)?`<img src="${sheetIcon(x.id)}" alt="" draggable="false">`:'<i class="stat-icon" aria-hidden="true">☘</i>';
+        return `<div class="stat-row ${good}" data-tip-stat="${x.id}" tabindex="0">${icon}<span>${tr(x.name)}</span><b>${sheetValue(x)}${x.note?` <small>${x.note}</small>`:''}</b><em>${good?sheetDelta(x,d):''}</em><i class="stat-bar" aria-hidden="true"><s style="width:${Math.min(100,100*x.value/scale).toFixed(1)}%"></s><u style="left:${Math.min(100,100*x.base/scale).toFixed(1)}%"></u></i></div>`;};
+      return `<div class="stat-sheet"><header><canvas class="sheet-portrait" width="64" height="64" aria-hidden="true"></canvas><div><small>${tr('Level')} ${r.level} · ${tr('Bane')} ${r.stage+1}</small><strong>${tr(C.PLAYER_SPECIES[r.species].name)}</strong></div></header>${SHEET_GROUPS.map(([name,ids])=>{const list=ids.filter(id=>rows[id]);return list.length?`<section><h3>${tr(name)}</h3>${list.map(id=>row(rows[id])).join('')}</section>`:'';}).join('')}<p class="fine">${tr('Hold musen over eller tryk på en værdi for at se grund og kilder.')}</p></div>`;
+    }
+    function buildTipHTML(el){
+      const r=game.run;if(!r)return '';const color=c=>`style="--rarity:${c}"`;
+      if(el.dataset.tipStat){const row=game.statSheet().find(x=>x.id===el.dataset.tipStat);if(!row)return '';
+        return `<div ${color('#dfbc52')}><strong>${tr(row.name)} ${sheetValue(row)}</strong><small>${tr('Grund')} ${sheetValue({...row,value:row.base})}</small>${row.parts.map(x=>`<p>${tr(x.name)} ${sheetDelta(row,x.delta)}</p>`).join('')||`<p>${tr('Ingen bonusser endnu.')}</p>`}</div>`;}
+      if(el.dataset.tipMutation){const m=C.MUTATIONS.find(x=>x.id===el.dataset.tipMutation);if(!m)return '';const rr=C.MUTATION_RARITIES[m.rarity]||C.MUTATION_RARITIES.common,tag=m.tag&&C.MUTATION_TAGS[m.tag];
+        return `<div ${color(rr.color)}><strong>${tr(m.name)}</strong><small>${tr('Rang')} ${r.mutations[m.id]} / ${m.max} · ${tr(rr.name)}${tag?' · '+tr(tag.name)+' '+Math.min(C.SET_SIZE,C.tagCount(r,m.tag))+'/'+C.SET_SIZE:''}</small><p>${tr(m.text)}</p></div>`;}
+      if(el.dataset.tipRelic){const x=C.RELICS[el.dataset.tipRelic];if(!x)return '';const set=C.RELIC_SETS[x.set];
+        return `<div ${color(C.MUTATION_RARITIES[x.rarity].color)}><strong>${tr(x.name)}</strong><small>${tr('Relikvie')} · ${tr(C.MUTATION_RARITIES[x.rarity].name)}${set?' · '+tr(set.name)+' '+Math.min(3,C.relicSet(r,x.set))+'/3':''}</small><p>${tr(x.text)}</p></div>`;}
+      return '';
+    }
+    function showBuildTip(el){
+      const tip=shell.querySelector('.build-tip');if(!tip)return;if(!el){tip.hidden=true;return;}tip.innerHTML=buildTipHTML(el);tip.hidden=!tip.innerHTML;if(tip.hidden)return; // visible first, so offsetParent is the real host
+      const box=el.getBoundingClientRect(),host=(tip.offsetParent||shell).getBoundingClientRect();tip.style.left=Math.max(4,box.left-host.left)+'px';tip.style.top=(box.bottom-host.top+6)+'px';
     }
     function draw() {
       resize();touchLayout();
@@ -1581,7 +1672,7 @@
       progress.querySelector('small').textContent = Math.max(0, r.nextXP - r.xp) + ' fødeværdi til level ' + (r.level + 1);
       shell.querySelector('#level-label').textContent = 'LEVEL ' + r.level + ' · ' + r.xp + '/' + r.nextXP + ' XP';
       shell.querySelector('#dna-label').textContent = '+' + r.dna + ' DNA · ' + r.kills + ' JAGTER';
-      drawExtrasHUD(r);drawTimeIcon(r); // Approved native HUD art, with the existing glyph as fallback.
+      drawExtrasHUD(r);drawBuildBar(r);drawTimeIcon(r); // Approved native HUD art, with the existing glyph as fallback.
       drawA6Controls(r);
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
       shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : (C.FEATURES.gamepadFull?controlWord('ability'):control('ability'))+' KLAR');if(padGlyphOn())padGlyphs(shell.querySelector('#skill-label'));
@@ -1606,11 +1697,12 @@
       if(padFull)padMenu(pad,buttons,dt);
       else if(game.phase!=='playing'&&pad){const focusables=Array.from(screen.querySelectorAll('button:not(:disabled)'));if((buttons[12]&&!padPrevious[12])||(buttons[13]&&!padPrevious[13])){const index=focusables.indexOf(document.activeElement),delta=buttons[12]?-1:1;focusables[(index+delta+focusables.length)%focusables.length]?.focus();}if(buttons[0]&&!padPrevious[0]&&screen.contains(document.activeElement))document.activeElement.click();}
       if(pad&&(buttons.some(Boolean)||pad.axes.some(a=>Math.abs(a)>.5)))setInputMode('gamepad');
+      if(lootHeld()&&game.phase==='playing'&&buttons.some((b,i)=>b&&!padPrevious[i]))dismissLoot(); // FEATURES.lootCard
       padPrevious=buttons;
       const held=action=>keys.has(game.save.bindings[action]);
       const stick=padFull&&pad?GP.radial(pad.axes[0],pad.axes[1]):null,ax=stick?stick.x:pad&&Math.abs(pad.axes[0])>.18?pad.axes[0]:0,ay=stick?stick.y:pad&&Math.abs(pad.axes[1])>.18?pad.axes[1]:0;
-      stepReel(now);
-      if (ready && game.phase === 'playing' && !(reel && reel.ev.big)) {
+      stepReel(now); stepMutationReel(now);
+      if (ready && game.phase === 'playing' && !(reel && reel.ev.big) && !(lootHeld() && game.phase === 'playing')) {
         // Flokkammerat (FEATURES.coopBuddy): player 2 uses IJKL + U, or the second controller (the only one when just one is connected).
         const coopOn=C.FEATURES.coopBuddy&&!!game.run.buddy,pads=coopOn?Array.from(navigator.getGamepads?.()||[]).filter(Boolean):[],p2pad=coopOn?(pads.length>1?pads[1]:pads[0]):null,p1n=padFull&&coopOn&&pads.length>1?GP.normalize(pads[0]):null,p1s=p1n?GP.radial(p1n.axes[0],p1n.axes[1]):null,p1b=p1n?p1n.buttons:coopOn&&pads.length===1?[]:buttons,p1x=p1s?p1s.x:p1b===buttons?ax:0,p1y=p1s?p1s.y:p1b===buttons?ay:0;
         const p2b=p2pad?p2pad.buttons.map(b=>b.pressed):[],p2ax=p2pad&&Math.abs(p2pad.axes[0])>.18?p2pad.axes[0]:0,p2ay=p2pad&&Math.abs(p2pad.axes[1])>.18?p2pad.axes[1]:0;
@@ -1640,6 +1732,11 @@
     // A single thrown error used to stop requestAnimationFrame for good, which froze the game.
     let frameErrors=0;
     function frame(now) { try { update(now); frameErrors=0; } catch (error) { frameErrors++; console.error('PRIMAL RUN frame error',error); if(frameErrors===1)toast('Der opstod en fejl – spillet forsøger at fortsætte.'); } finally { if (!disposed) animationId = requestAnimationFrame(frame); } }
+    // FEATURES.buildBar tooltips: mouse hover on PC, a tap on touch screens (closes after 3 s).
+    let tipTimer=0;
+    listen(shell,'pointerover',e=>{const el=e.target.closest&&e.target.closest('.build-item,[data-tip-stat]');if(el&&e.pointerType==='mouse')showBuildTip(el);});
+    listen(shell,'pointerout',e=>{const el=e.target.closest&&e.target.closest('.build-item,[data-tip-stat]');if(el&&e.pointerType==='mouse'&&!el.contains(e.relatedTarget))showBuildTip(null);});
+    listen(shell,'pointerdown',e=>{const el=e.target.closest&&e.target.closest('.build-item,[data-tip-stat]');if(!el||e.pointerType==='mouse')return;showBuildTip(el);clearTimeout(tipTimer);tipTimer=setTimeout(()=>showBuildTip(null),3000);});
     listen(shell, 'click', async e => {
       // Never let a pending AudioContext.resume() block menu/level buttons.
       Promise.race([audio.unlock(),new Promise(done=>setTimeout(done,250))]).catch(()=>{});
@@ -1650,6 +1747,7 @@
       if (target.dataset.skin) { game.setSkin(target.dataset.skin); renderScreen(true); return; }
       if (target.dataset.species) { const id = target.dataset.species; if (!game.save.unlockedSpecies.includes(id)) game.unlockSpecies(id); game.selectSpecies(id); renderScreen(true); return; }
       if (target.dataset.explore) { game.explore(target.dataset.explore === 'take'); keys.clear(); accumulator = 0; renderScreen(); return; }
+      if (mreel && (target.dataset.mutation || target.dataset.reroll || target.dataset.banish)) { finishMutationReel(); return; } // first tap only stops the reel
       if (target.dataset.reroll) { game.reroll(); renderScreen(true); return; }
       if (target.dataset.banish) { game.banish(target.dataset.banish); renderScreen(true); return; }
       if (target.dataset.blueprint) { game.buyBlueprint(target.dataset.blueprint); renderScreen(true); return; }
@@ -1723,6 +1821,8 @@
         renderScreen(); return;
       }
       if (C.FEATURES.pauseGuide && game.phase === 'paused' && e.code === 'KeyH' && !e.repeat) { game.setSetting('pauseGuide', !game.save.settings.pauseGuide); renderScreen(true); return; }
+      if (lootHeld() && game.phase === 'playing' && !e.repeat) { e.preventDefault(); dismissLoot(); return; } // FEATURES.lootCard: any key closes the card
+      if (game.phase === 'mutation' && mreel && !e.repeat && (e.code === 'KeyR' || /^Digit[1-4]$/.test(e.code))) { finishMutationReel(); return; }
       if (game.phase === 'mutation' && e.code === 'KeyR' && !e.repeat && game.reroll()) { renderScreen(true); return; }
       if (game.phase === 'mutation' && /^Digit[1-4]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); keys.clear(); accumulator = 0; last = 0; renderScreen(true); return; }
       if(e.code==='Space'){e.preventDefault();if(game.phase!=='playing'){keys.delete('Space');return;}}

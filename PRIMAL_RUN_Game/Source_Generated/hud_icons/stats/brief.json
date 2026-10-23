@@ -1,0 +1,26 @@
+{
+  "status": "prototype_static",
+  "production_approved": false,
+  "generator": "image_gen built-in",
+  "requested_native_size": [
+    16,
+    16
+  ],
+  "derivative_size": [
+    32,
+    32
+  ],
+  "alpha_threshold": 128,
+  "method": "Fixed integer source samples, nearest palette quantization, binary alpha. No smoothing, drawing, or geometry interpolation.",
+  "palette": "Primal Earth 32 with explicit #101b16 contour exception from user brief",
+  "prompts": {
+    "health": "a red heart, clearly two lobes and pointed bottom, with a small ivory bone rim on lower right",
+    "damage": "exactly three separate jagged ivory dinosaur teeth pointing down, compact diagonal arrangement",
+    "crit": "a single curved ivory sickle claw with one tiny golden sparkle",
+    "armor": "a single broad ivory osteoderm bone armor shield plate, faceted raised central ridge",
+    "regen": "a green stamina droplet on left, small green upward arrow on right",
+    "speed": "a green three-toed dinosaur footprint on right, two short horizontal speed streaks on left",
+    "ability": "a golden lightning bolt enclosed in a thin muted teal ring",
+    "luck": "a green four leaf clover with exactly four leaves and a small golden sparkle"
+  }
+}

@@ -23,8 +23,9 @@ const assert=require('node:assert/strict'),path=require('node:path');const {chro
  assert.ok(build.every(i=>i.ok),JSON.stringify(build.filter(i=>!i.ok)));
  // the reel shows rarity gems while spinning and the relic itself when it locks
  const reel=await page.evaluate(()=>{const F=PrimalCore.FEATURES,g=primalRun.game;F.lootReveal=true;g.phase='playing';primalRun.update(performance.now());const t0=performance.now();
-   g.revealLoot(3,{big:true,kind:'relic',label:'Seglklo',icon:'relics/sickle_claw'});primalRun.update(t0);primalRun.update(t0+2000);
-   const b=[...document.querySelectorAll('.loot-reel b')];return {first:b[0].querySelector('img')?.getAttribute('src'),last:b.pop().querySelector('img')?.getAttribute('src')};});
+   g.revealLoot(3,{big:true,kind:'relic',label:'Seglklo',icon:'relics/sickle_claw'});primalRun.update(t0);primalRun.update(t0+300);
+   const first=document.querySelector('.loot-reel b img')?.getAttribute('src');primalRun.update(t0+2000); // read while spinning: FEATURES.lootCard keeps only the result after the lock
+   const b=[...document.querySelectorAll('.loot-reel b')];document.querySelector('.loot-reel').click();return {first,last:b.pop().querySelector('img')?.getAttribute('src')};});
  assert.deepEqual(reel,{first:'assets/hud_icons/rarity/legendary.png',last:'assets/hud_icons/relics/sickle_claw.png'});
  await shot('hud_icons_reel');
  // main menu: menu glyphs and difficulty icons

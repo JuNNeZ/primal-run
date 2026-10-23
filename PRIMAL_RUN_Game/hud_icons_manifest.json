@@ -1682,5 +1682,485 @@
     "sha256": "a30618e995aa576ad0c08f8526c330131bbd904ff9c8fa030664f1fbec3fb6fb",
     "source_pixels": "Source_Generated/hud_icons/native_pixels_ghi.json",
     "source_sha256": "ae5b629ae8ea26abdad84c938a6098010a331e95bdb2bc68280a04b13649f3ce"
+  },
+  {
+    "id": "stat_health",
+    "file": "assets/hud_icons/stats/health.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "Source_Generated/hud_icons/stats/health.png",
+    "source_sha256": "a8be0282a68af5677a807788009ea2d9d1c9673ac16c6e12af4f81a1ade861ca",
+    "source_crop": [
+      229,
+      255,
+      53,
+      16,
+      16
+    ],
+    "sha256": "95495d6c03afefe0997100f1f5ece9ea4eeb6a2b41212ee9798214034f661768",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_health_32",
+    "file": "assets/hud_icons/stats/health_32.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/hud_icons/stats/health.png",
+    "source_sha256": "a8be0282a68af5677a807788009ea2d9d1c9673ac16c6e12af4f81a1ade861ca",
+    "source_crop": [
+      229,
+      255,
+      53,
+      16,
+      16
+    ],
+    "sha256": "fd2eb9f14060c1b3e9d658c34a13a5daf2e3caea6fd48c26a74b7ad23fa12463",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_damage",
+    "file": "assets/hud_icons/stats/damage.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "Source_Generated/hud_icons/stats/damage.png",
+    "source_sha256": "9e4eb6c4d95fc80c8857b903acf9924498080a8adf4c3d5cf1d4f8146e7609a5",
+    "source_crop": [
+      135,
+      155,
+      64,
+      16,
+      16
+    ],
+    "sha256": "b15ccb5aaaea194ef457de91dbb487cf0f5fd34ab158a85a773be389dd394b5a",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_damage_32",
+    "file": "assets/hud_icons/stats/damage_32.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/hud_icons/stats/damage.png",
+    "source_sha256": "9e4eb6c4d95fc80c8857b903acf9924498080a8adf4c3d5cf1d4f8146e7609a5",
+    "source_crop": [
+      135,
+      155,
+      64,
+      16,
+      16
+    ],
+    "sha256": "f670e48c10b1fac034469fc309f275cdcd52f0dff329c3dcba7a7dd4dd3c7c54",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_crit",
+    "file": "assets/hud_icons/stats/crit.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "Source_Generated/hud_icons/stats/crit.png",
+    "source_sha256": "93d47e04f1d937b5693ba6ee6d9c86ad8795a7c5754b2981077cba1aefbbd2ff",
+    "source_crop": [
+      115,
+      62,
+      76,
+      16,
+      16
+    ],
+    "sha256": "8b2295cabb054bc722f71124549abb4a912d276aa3b36412eb97bf8ae633d52f",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_crit_32",
+    "file": "assets/hud_icons/stats/crit_32.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/hud_icons/stats/crit.png",
+    "source_sha256": "93d47e04f1d937b5693ba6ee6d9c86ad8795a7c5754b2981077cba1aefbbd2ff",
+    "source_crop": [
+      115,
+      62,
+      76,
+      16,
+      16
+    ],
+    "sha256": "24598c2c7af6acb47017401d85a6ef6c95803684c540dd6b89c6bf751148ddd4",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_armor",
+    "file": "assets/hud_icons/stats/armor.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "Source_Generated/hud_icons/stats/armor.png",
+    "source_sha256": "a64052d75546d130c39e76a7aacee281cd25830bc7c538faefe0b5f2305411be",
+    "source_crop": [
+      -41,
+      -31,
+      89,
+      16,
+      16
+    ],
+    "sha256": "7261ed1edb812c8f09944a89ed9ff3d3afad67857cbbd2c70c9a6d5adffa102e",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_armor_32",
+    "file": "assets/hud_icons/stats/armor_32.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/hud_icons/stats/armor.png",
+    "source_sha256": "a64052d75546d130c39e76a7aacee281cd25830bc7c538faefe0b5f2305411be",
+    "source_crop": [
+      -41,
+      -31,
+      89,
+      16,
+      16
+    ],
+    "sha256": "2be0e74608d86411844e71387732b5e3134e87f7e01ccba2089d2e7a72a43ffc",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_regen",
+    "file": "assets/hud_icons/stats/regen.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "Source_Generated/hud_icons/stats/regen.png",
+    "source_sha256": "4909c61b0782f8a83055abcb79cf18cd362cc364ce93be3780faca82567038a4",
+    "source_crop": [
+      132,
+      132,
+      66,
+      16,
+      16
+    ],
+    "sha256": "be9aa7a4f53d578c47100dafd93a39ac526ddb2e0645dffd4e43ad11fe34f151",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_regen_32",
+    "file": "assets/hud_icons/stats/regen_32.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/hud_icons/stats/regen.png",
+    "source_sha256": "4909c61b0782f8a83055abcb79cf18cd362cc364ce93be3780faca82567038a4",
+    "source_crop": [
+      132,
+      132,
+      66,
+      16,
+      16
+    ],
+    "sha256": "a8bafa635b19158d579ec032edc1e9fd87b205b86c2611a2f2100eda1d6e22a9",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_speed",
+    "file": "assets/hud_icons/stats/speed.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "Source_Generated/hud_icons/stats/speed.png",
+    "source_sha256": "679c68bf1f1c8dc8be22d347b2629a25e28a6f1caac241d0f5a988d2e93a3f3e",
+    "source_crop": [
+      35,
+      61,
+      79,
+      16,
+      16
+    ],
+    "sha256": "8333be01f1437b75c493120e1822f63323c9d678aa25c4d4952daaf04c260649",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_speed_32",
+    "file": "assets/hud_icons/stats/speed_32.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/hud_icons/stats/speed.png",
+    "source_sha256": "679c68bf1f1c8dc8be22d347b2629a25e28a6f1caac241d0f5a988d2e93a3f3e",
+    "source_crop": [
+      35,
+      61,
+      79,
+      16,
+      16
+    ],
+    "sha256": "dcae99e92864f9afb65dd32c9acd42d26c7762adcf814c5c4325795d76bbddf5",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_ability",
+    "file": "assets/hud_icons/stats/ability.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "Source_Generated/hud_icons/stats/ability.png",
+    "source_sha256": "59f5bdab4713386428cef47fc80a3111c07ce84d64b812b14896d915ce83134d",
+    "source_crop": [
+      27,
+      27,
+      80,
+      16,
+      16
+    ],
+    "sha256": "12226e74f02cdae83641afb41d37ed0d02681c4aec36a49ca198db0ea4019d98",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_ability_32",
+    "file": "assets/hud_icons/stats/ability_32.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/hud_icons/stats/ability.png",
+    "source_sha256": "59f5bdab4713386428cef47fc80a3111c07ce84d64b812b14896d915ce83134d",
+    "source_crop": [
+      27,
+      27,
+      80,
+      16,
+      16
+    ],
+    "sha256": "2a59a88b9539c343bb1b796e323856956ab2494622d847f493ef39e8ccc24590",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_luck",
+    "file": "assets/hud_icons/stats/luck.png",
+    "size": [
+      16,
+      16
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      8,
+      8
+    ],
+    "source": "Source_Generated/hud_icons/stats/luck.png",
+    "source_sha256": "fe2819567231a2fb114f765a3655fca4b7d8a8622bd96006b345ddc89f395c07",
+    "source_crop": [
+      43,
+      6,
+      82,
+      16,
+      16
+    ],
+    "sha256": "d52d61478233268c49a0f977210e33da9055e910b199a65346835cb0607dac27",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
+  },
+  {
+    "id": "stat_luck_32",
+    "file": "assets/hud_icons/stats/luck_32.png",
+    "size": [
+      32,
+      32
+    ],
+    "group": "stats",
+    "palette": "Primal Earth 32 + explicitly requested #101b16 contour",
+    "status": "approved_static",
+    "production_approved": true,
+    "animation_ready": false,
+    "origin": [
+      16,
+      16
+    ],
+    "source": "Source_Generated/hud_icons/stats/luck.png",
+    "source_sha256": "fe2819567231a2fb114f765a3655fca4b7d8a8622bd96006b345ddc89f395c07",
+    "source_crop": [
+      43,
+      6,
+      82,
+      16,
+      16
+    ],
+    "sha256": "c97283c8f33525cca376d9d2e5ec7a8c193a0bbf2a8b319fcec02746b6f54e0e",
+    "source_pixels": "Source_Generated/hud_icons/stats/native_pixels.json",
+    "review": "Awaiting Jonas; no runtime integration. Fixed integer samples; no smoothing.",
+    "source_pixels_sha256": "e2dbc663e8feb886f9eead5948cd7714ce14b244db176ffe82b29b2062060585"
   }
 ]

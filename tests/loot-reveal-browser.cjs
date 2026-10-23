@@ -25,7 +25,15 @@ const assert=require('node:assert/strict'),path=require('node:path');const {chro
  const big=await page.evaluate(()=>{const g=primalRun.game,t0=performance.now()+2000;g.revealLoot(4,{big:true});primalRun.update(t0);const s0=g.run.seconds;primalRun.update(t0+300);
    const el=document.querySelector('.loot-reel'),paused=g.run.seconds===s0,spinning=!el.classList.contains('locked');el.click();primalRun.update(t0+340);
    return {paused,spinning,locked:el.classList.contains('locked'),big:el.classList.contains('big'),last:[...el.querySelectorAll('b')].pop().textContent,resumed:g.run.seconds>s0};});
- assert.deepEqual(big,{paused:true,spinning:true,locked:true,big:true,last:'Legendarisk',resumed:true});
+ assert.deepEqual(big,{paused:true,spinning:true,locked:true,big:true,last:'Legendarisk',resumed:false},'FEATURES.lootCard: a big card holds the world after the lock');
+ // FEATURES.lootCard: the locked reel says what the relic does and its set progress; a tap (or any key) closes it
+ const card=await page.evaluate(()=>{const g=primalRun.game,el=document.querySelector('.loot-reel');el.click();const t0=performance.now()+3000;primalRun.update(t0);const s0=g.run.seconds;primalRun.update(t0+40);const closed=el.hidden&&g.run.seconds>s0;
+   g.run.relics={sickle_claw:true};g.revealLoot(3,{big:true,kind:'relic',label:'Seglklo',relic:'sickle_claw'});primalRun.update(t0+80);primalRun.update(t0+2000);
+   return {closed,card:el.classList.contains('card'),info:el.querySelector('.loot-card-info')?.textContent||'',items:el.querySelectorAll('.loot-strip b').length};});
+ await shot('reel_card');
+ assert.equal(card.closed,true,'a tap closes the card and the world runs again');assert.equal(card.card,true);assert.equal(card.items,1,'only the result stays');
+ assert.ok(card.info.includes('kritisk chance')&&card.info.includes('Jæger 1/3'),card.info);
+ await page.keyboard.press('KeyX');assert.equal(await page.evaluate(()=>document.querySelector('.loot-reel').hidden),true,'any key closes the card');
  assert.deepEqual(errors,[]);
- console.log('PASS: loot reveal reel · hidden when off · small reel keeps playing · locks top-down on the rolled tier · big reel pauses · tap skips · no page errors');
+ console.log('PASS: loot reveal reel · hidden when off · small reel keeps playing · locks top-down on the rolled tier · big reel pauses · tap skips · loot card holds and explains the relic · no page errors');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1);});

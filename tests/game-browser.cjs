@@ -10,7 +10,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
     page.on('pageerror', error => errors.push(String(error)));
     page.on('response', response => { if (response.status() >= 400) failures.push(response.status() + ' ' + response.url()); });
     const base = process.env.PRIMAL_GAME_URL || await localURL(path.resolve(__dirname, '../PRIMAL_RUN_Game/index.html'));
-    await page.goto(base);await page.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{});
+    await page.goto(base);await page.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{});await page.evaluate(()=>{PrimalCore.FEATURES.mutationReel=false;PrimalCore.FEATURES.lootCard=false;}); // the 8-boss run never stops for a relic card // cards are clicked at once; tests/mutation-reel-browser.cjs covers the reel
     await page.waitForFunction(() => window.primalRun && document.querySelector('[data-action="start"]:not(:disabled)'), null, { timeout: 30000 });
     assert.equal(await page.evaluate(() => primalRun.ready), true);
     assert.equal(await page.evaluate(() => document.querySelector('canvas[aria-label]').getContext('2d').imageSmoothingEnabled), false);

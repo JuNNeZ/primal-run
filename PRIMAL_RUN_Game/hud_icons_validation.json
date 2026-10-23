@@ -1,6 +1,6 @@
 {
   "result": "PASS",
-  "files": 80,
+  "files": 96,
   "groups": {
     "relics": 20,
     "sets": 4,
@@ -10,10 +10,11 @@
     "mutations": 14,
     "ui": 13,
     "difficulty": 2,
-    "future": 8
+    "future": 8,
+    "stats": 16
   },
   "errors": [],
-  "approved": 76,
+  "approved": 92,
   "scope": "Native dimensions, RGBA, fixed palette, binary alpha, transparent RGB, padding, inventory, source reconstruction, hashes, 9-slice seams, armor number space. No runtime or visual approval.",
   "icons": [
     {
@@ -1135,6 +1136,230 @@
         22
       ],
       "colors": 7
+    },
+    {
+      "id": "stat_health",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 11
+    },
+    {
+      "id": "stat_health_32",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "colors": 11
+    },
+    {
+      "id": "stat_damage",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 10
+    },
+    {
+      "id": "stat_damage_32",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "colors": 10
+    },
+    {
+      "id": "stat_crit",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        3,
+        14,
+        14
+      ],
+      "colors": 9
+    },
+    {
+      "id": "stat_crit_32",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        6,
+        28,
+        28
+      ],
+      "colors": 9
+    },
+    {
+      "id": "stat_armor",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        3,
+        2,
+        13,
+        14
+      ],
+      "colors": 9
+    },
+    {
+      "id": "stat_armor_32",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        6,
+        4,
+        26,
+        28
+      ],
+      "colors": 9
+    },
+    {
+      "id": "stat_regen",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        3,
+        14,
+        13
+      ],
+      "colors": 7
+    },
+    {
+      "id": "stat_regen_32",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        6,
+        28,
+        26
+      ],
+      "colors": 7
+    },
+    {
+      "id": "stat_speed",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        3,
+        14,
+        12
+      ],
+      "colors": 8
+    },
+    {
+      "id": "stat_speed_32",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        6,
+        28,
+        24
+      ],
+      "colors": 8
+    },
+    {
+      "id": "stat_ability",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "colors": 9
+    },
+    {
+      "id": "stat_ability_32",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "colors": 9
+    },
+    {
+      "id": "stat_luck",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        3,
+        2,
+        14,
+        14
+      ],
+      "colors": 8
+    },
+    {
+      "id": "stat_luck_32",
+      "size": [
+        32,
+        32
+      ],
+      "bbox": [
+        6,
+        4,
+        28,
+        28
+      ],
+      "colors": 8
     }
   ]
 }
