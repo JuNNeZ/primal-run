@@ -12,7 +12,7 @@
   const TELEMETRY = (typeof module === 'object' && module.exports ? require('./telemetry.js') : globalThis.PrimalTelemetry) || null;
   // Data-driven loot tables with cascading top-down rarity (FEATURES.lootTables) live in loot.js.
   const LOOT = (typeof module === 'object' && module.exports ? require('./loot.js') : globalThis.PrimalLoot) || null;
-  const FEATURES={naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true,randomStart:true,runTelemetry:true,sizeAware:true,hudLayouts:true,titleTips:true,stealth:true,speciesIdentity:true,waterStart:true,bounties:true,deathTips:true,bossCurve:true,titleBook:true,titleAchievements:true,mapBiomes:true,fishingGame:true,tipsToggle:true,steepBosses:true,tougherCombat:true,epicBudget:true,ankyTailTurn:true,rigSprites:true,rexCutout:true,amberFair:true,lootTables:true,armorPoints:true,lootReveal:true,relics:true,nestCaches:true,affixStages:false,hudIconSet:true,tarTotem:false,rottenMeat:false,dailyShare:false,extinctionPressure:false,currencies:false,textOnTop:true,smartAllies:true,packMutations:true,allyAggro:true,allyKills:true};
+  const FEATURES={coopBuddy:true,seededRuns:true,friendChallenge:true,naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true,randomStart:true,runTelemetry:true,sizeAware:true,hudLayouts:true,titleTips:true,stealth:true,speciesIdentity:true,waterStart:true,bounties:true,deathTips:true,bossCurve:true,titleBook:true,titleAchievements:true,mapBiomes:true,fishingGame:true,tipsToggle:true,steepBosses:true,tougherCombat:true,epicBudget:true,ankyTailTurn:true,rigSprites:true,rexCutout:true,amberFair:true,lootTables:true,armorPoints:true,lootReveal:true,relics:true,nestCaches:true,affixStages:false,hudIconSet:true,tarTotem:false,rottenMeat:false,dailyShare:false,extinctionPressure:false,currencies:false,textOnTop:true,smartAllies:true,packMutations:true,allyAggro:true,allyKills:true};
   // Size-aware world (FEATURES.sizeAware): a prop's collision and slow radius come from its visible pixels
   // (tools/measure_props.py), only its kind is chosen by hand. Kinds also decide the draw layer in app.js.
   const PROP_SIZE={"assets/ecology/broad_fern.png":["soft",38],"assets/ecology/conifer.png":["canopy",34],"assets/ecology/cycad.png":["soft",36],"assets/ecology/dry_grass.png":["ground",32],"assets/ecology/flowers.png":["ground",30],"assets/ecology/fruit_bush.png":["soft",36],"assets/ecology/herb.png":["ground",36],"assets/ecology/horsetail.png":["soft",34],"assets/ecology/leaf_litter.png":["ground",30],"assets/ecology/lichen.png":["ground",32],"assets/ecology/moss.png":["ground",28],"assets/ecology/mushrooms.png":["ground",26],"assets/ecology/reeds.png":["soft",37],"assets/ecology/roots.png":["ground",34],"assets/ecology/seed_fern.png":["soft",38],"assets/ecology/shrub.png":["soft",35],"assets/ecology/succulent.png":["ground",29],"assets/ecology/twigs.png":["ground",32],"assets/environment/fern.png":["ground",21],"assets/environment/rock.png":["solid",13],"assets/props/boulder_large.png":["solid",22],"assets/props/dead_tree.png":["canopy",51],"assets/props/fallen_log.png":["ground",21],"assets/props/fern_large.png":["soft",24],"assets/props/flower_bush.png":["soft",23],"assets/props/lava_rock.png":["solid",22],"assets/props/meteorite.png":["solid",23],"assets/props/nest_eggs.png":["ground",20],"assets/props/nest_empty.png":["ground",21],"assets/props/skull.png":["ground",23],"assets/props/tree_canopy.png":["canopy",56]}; // generated by tools/measure_props.py: [kind, visible radius px]
@@ -3574,7 +3574,115 @@
     const pool=MUTATIONS.filter(m=>this.mutationAvailable(m));if(!pool.length){this.addDNA(8);return this.offerRareReward();}
     r.choices=this.rollChoices(pool);r.rareSelection=false;this.phase='mutation';this.emit('level_up');return true;
   };
-  const API = { PRESSURE, pressureOpen, CURRENCY, START_RELICS, canStartRelic, dailySquares, LUCK, runLuck, ARMOR, armorPoints, armorFactor, RELICS, RELIC_SETS, RELIC_SOURCES, relicSet, relicStat, NEST_CACHE, TOUGH, BOUNTY, deathTip, IDENTITY, STEALTH, PROP_SIZE, coverAt, EQUILIBRIUM, DIFFICULTIES, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, CUTOUT_SPECIES, cutoutFrame, STATIC_SPECIES, RIG_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, FISH_GAME, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, HUD_LAYOUTS, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  // Friend challenge. FEATURES.seededRuns: a run's random stream comes from its seed and is re-seeded at every level,
+  // and each mutation offer draws from its own stream, so two players on one seed get the same levels and the same
+  // offers whatever happens in combat. Only games built with the default Math.random are seeded; tests and sims that
+  // inject their own random keep it. FEATURES.friendChallenge: the run records a ghost (level, x, y) FRIEND.rate times
+  // a second, and encodeChallenge/decodeChallenge pack seed, species, score and ghost into a link (no server).
+  const FRIEND={rate:2,maxSamples:7200,maxName:20,salt:0x2f6b1d3,levelSalt:0x7a31c5,offerSalt:0x51ed27};
+  const mixSeed=(seed,key)=>(seed^Math.imul((key>>>0)+1,0x9e3779b1))>>>0;
+  function runStream(base,seed,key){const s=seeded(mixSeed(seed,key));s.runSeeded=true;s.base=base;return s;}
+  const startFriend=Game.prototype.start;
+  Game.prototype.start=function(options={}){
+    const base=this.random&&this.random.runSeeded?this.random.base:this.random;let opts=options||{};
+    if(FEATURES.seededRuns&&base===Math.random){const seed=opts.seed===undefined?Math.floor(base()*4294967296):opts.seed>>>0;this.random=runStream(base,seed,FRIEND.salt);opts={...opts,seed};}
+    else this.random=base;
+    const out=startFriend.call(this,opts),r=this.run;
+    if(r){r.offerCount=0;r.ghostLevelStart=0;r.ghostTick=-1;if(FEATURES.friendChallenge)r.ghostTrack=[];}
+    return out;
+  };
+  const nextStageFriend=Game.prototype.nextStage;
+  Game.prototype.nextStage=function(){
+    const r=this.run,level=r&&r.levelIndex,before=this.random;
+    if(r&&before&&before.runSeeded)this.random=runStream(before.base,r.seed,FRIEND.levelSalt+(level+1)*7919);
+    const out=nextStageFriend.call(this);
+    if(this.run&&this.run.levelIndex!==level)this.run.ghostLevelStart=this.run.seconds;else if(this.random!==before&&before&&before.runSeeded)this.random=before;
+    return out;
+  };
+  for(const name of ['rollChoices','reroll','offerRareReward']){
+    const plain=Game.prototype[name];
+    Game.prototype[name]=function(...args){
+      const r=this.run,main=this.random;if(!r||!main||!main.runSeeded)return plain.apply(this,args);
+      r.offerCount=(r.offerCount||0)+1;this.random=runStream(main.base,r.seed,FRIEND.offerSalt+r.offerCount*7919);
+      try{return plain.apply(this,args);}finally{this.random=main;}
+    };
+  }
+  const stepFriend=Game.prototype.step;
+  Game.prototype.step=function(dt,input){
+    const before=this.run&&this.run.seconds,out=stepFriend.call(this,dt,input),r=this.run;
+    if(r&&r.ghostTrack&&r.player&&r.seconds>before&&r.ghostTrack.length<FRIEND.maxSamples){ /* only while the world moves */const tick=Math.floor(r.seconds*FRIEND.rate);if(tick>r.ghostTick){r.ghostTick=tick;r.ghostTrack.push([r.levelIndex||0,Math.round(r.player.x),Math.round(r.player.y)]);}}
+    return out;
+  };
+  const B64='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
+  function toB64(bytes){let s='';for(let i=0;i<bytes.length;i+=3){const n=bytes[i]<<16|(bytes[i+1]||0)<<8|(bytes[i+2]||0);s+=B64[n>>18&63]+B64[n>>12&63]+(i+1<bytes.length?B64[n>>6&63]:'')+(i+2<bytes.length?B64[n&63]:'');}return s;}
+  function fromB64(s){const out=[];let buf=0,bits=0;for(const c of s){const v=B64.indexOf(c);if(v<0)return null;buf=(buf<<6|v)&0xffffff;bits+=6;if(bits>=8){bits-=8;out.push(buf>>bits&255);}}return Uint8Array.from(out);}
+  function encodeChallenge(run){
+    const res=run&&run.result;if(!res)return null;
+    const head={v:1,seed:run.seed>>>0,sp:run.species,d:run.difficulty||'normal',sc:res.score,st:res.stage,n:String(res.name||'').slice(0,FRIEND.maxName),w:res.victory?1:0,t:res.seconds};
+    const track=(run.ghostTrack||[]).slice(0,FRIEND.maxSamples),bytes=new Uint8Array(track.length*5);
+    track.forEach(([l,x,y],i)=>{const qx=Math.max(0,Math.min(65535,Math.round(x/4))),qy=Math.max(0,Math.min(65535,Math.round(y/4)));bytes.set([l&255,qx>>8,qx&255,qy>>8,qy&255],i*5);});
+    return toB64(new TextEncoder().encode(JSON.stringify(head)))+'.'+toB64(bytes);
+  }
+  function decodeChallenge(text){
+    try{
+      const [a,b='']=String(text||'').split('.');const raw=fromB64(a||''),bytes=fromB64(b);if(!raw||!bytes||bytes.length%5||bytes.length>FRIEND.maxSamples*5)return null;
+      const h=JSON.parse(new TextDecoder().decode(raw)),int=(v,max)=>Number.isInteger(v)&&v>=0&&v<=max;
+      if(!h||h.v!==1||!int(h.seed,4294967295)||!PLAYER_SPECIES[h.sp]||!int(h.sc,1e9)||!int(h.st,99))return null;
+      const levels={};for(let i=0;i<bytes.length;i+=5)(levels[bytes[i]]||(levels[bytes[i]]=[])).push([(bytes[i+1]<<8|bytes[i+2])*4,(bytes[i+3]<<8|bytes[i+4])*4]);
+      return {seed:h.seed,species:h.sp,difficulty:h.d==='extinction'?'extinction':'normal',score:h.sc,stage:h.st,name:String(h.n||'').replace(/[<>&"]/g,'').slice(0,FRIEND.maxName)||'?',victory:h.w===1,seconds:int(h.t,1e6)?h.t:0,levels};
+    }catch(error){return null;}
+  }
+  // Where the ghost is `t` seconds into level `level` (null once it left or died there).
+  function ghostAt(challenge,level,t){
+    const list=challenge&&challenge.levels&&challenge.levels[level];if(!list||!list.length||!(t>=0))return null;
+    const f=t*FRIEND.rate,i=Math.floor(f);if(i>=list.length)return null;const p=list[i],q=list[Math.min(i+1,list.length-1)],k=f-i;
+    return {x:p[0]+(q[0]-p[0])*k,y:p[1]+(q[1]-p[1])*k,dx:q[0]-p[0],dy:q[1]-p[1]};
+  }
+  // Flokkammerat (FEATURES.coopBuddy): local co-op where player 2 steers a pack raptor of their own with input.buddy
+  // {x,y,attack}. The app turns it on per session (game.coopBuddy). Kills count for the shared run; the buddy never dies
+  // for good: knocked down it rests BUDDY.downTime s and comes back at your side, and it is pulled to you when it falls
+  // too far behind the camera.
+  const BUDDY={kind:'velociraptor',hp:90,speed:175,radius:12,damage:9,cooldown:.55,reach:24,hurtCooldown:.8,downTime:6,reviveHP:.5,regen:.02,leashX:560,leashY:360};
+  function placeBuddy(r){const b=r.buddy;if(!b)return;b.x=r.player.x+40;b.y=r.player.y+30;b.moving=false;}
+  const startBuddy=Game.prototype.start;
+  Game.prototype.start=function(options){
+    const out=startBuddy.call(this,options),r=this.run;
+    if(r&&FEATURES.coopBuddy&&this.coopBuddy){r.buddy={id:'buddy',kind:BUDDY.kind,x:0,y:0,radius:BUDDY.radius,hp:BUDDY.hp,maxHP:BUDDY.hp,facingX:0,facingY:1,cooldown:0,hurtCooldown:0,down:0,walk:0,moving:false,bites:0,kills:0,biteTime:0};placeBuddy(r);}
+    return out;
+  };
+  const nextStageBuddy=Game.prototype.nextStage;
+  Game.prototype.nextStage=function(){const r=this.run,level=r&&r.levelIndex,out=nextStageBuddy.call(this);if(this.run&&this.run.levelIndex!==level)placeBuddy(this.run);return out;};
+  Game.prototype.stepBuddy=function(dt,input={}){
+    const r=this.run,b=r&&r.buddy;if(!b)return;const x0=b.x,y0=b.y;
+    b.cooldown=Math.max(0,b.cooldown-dt);b.hurtCooldown=Math.max(0,b.hurtCooldown-dt);b.biteTime=Math.max(0,b.biteTime-dt);
+    if(b.down>0){b.down=Math.max(0,b.down-dt);if(!b.down){b.hp=b.maxHP*BUDDY.reviveHP;placeBuddy(r);r.effects.push({x:b.x,y:b.y-30,text:'SPILLER 2 ER TILBAGE',color:'#a2d4c1',life:1.4});}b.moving=false;return;}
+    let dx=clamp(finite(input.x),-1,1),dy=clamp(finite(input.y),-1,1);const n=Math.hypot(dx,dy);if(n>1){dx/=n;dy/=n;}
+    if(n>.1){this.travel(b,dx*BUDDY.speed*dt,dy*BUDDY.speed*dt);const m=Math.hypot(dx,dy);b.facingX=dx/m;b.facingY=dy/m;b.walk+=dt*Math.hypot(dx,dy)*2.4;}
+    if(Math.abs(b.x-r.player.x)>BUDDY.leashX||Math.abs(b.y-r.player.y)>BUDDY.leashY)placeBuddy(r);
+    b.moving=Math.hypot(b.x-x0,b.y-y0)>.05;
+    if(input.attack&&b.cooldown===0){
+      b.cooldown=BUDDY.cooldown;b.biteTime=.3;let target=null,best=Infinity;
+      for(const e of r.enemies){if(e.hp<=0||e.ally)continue;const d=Math.hypot(e.x-b.x,e.y-b.y)-e.radius;if(d<BUDDY.reach+b.radius&&d<best){best=d;target=e;}}
+      if(target){const d=Math.max(1,Math.hypot(target.x-b.x,target.y-b.y)),frontal=((b.x-target.x)*(target.facingX||0)+(b.y-target.y)*(target.facingY||0))/d>.6,armor=['triceratops','ankylosaurus'].includes(target.kind)&&frontal?.5:1;
+        const damage=BUDDY.damage*(1+r.stage*.25)*armor*(target.boss?.5:1);target.hp-=damage;target.hit=Math.max(target.hit||0,.12);target.alert=true;target.lastAttackedAt=r.seconds;b.bites++;
+        b.facingX=(target.x-b.x)/d;b.facingY=(target.y-b.y)/d;if(target.hp<=0)b.kills++;
+        r.effects.push({x:target.x,y:target.y,text:'P2 · '+Math.round(damage),color:'#a2d4c1',life:.55});this.emit('bite_hit',{hits:1,strong:false});
+        if(target.damage&&target.hp>0)this.hurtBuddy(target.damage*(target.boss?.5:.3));}
+    }
+    for(const e of r.enemies)if(e.hp>0&&e.damage&&!e.ally&&['bite','charge','slam'].includes(e.mode)&&Math.hypot(e.x-b.x,e.y-b.y)<e.radius+b.radius+10)this.hurtBuddy(e.damage*.6);
+    if(b.down===0)b.hp=Math.min(b.maxHP,b.hp+b.maxHP*BUDDY.regen*dt);
+  };
+  Game.prototype.hurtBuddy=function(amount){
+    const r=this.run,b=r&&r.buddy;if(!b||b.down>0||b.hurtCooldown>0)return;b.hurtCooldown=BUDDY.hurtCooldown;b.hp=Math.max(0,b.hp-amount);b.hurt=.25;
+    if(b.hp<=0){b.down=BUDDY.downTime;r.effects.push({x:b.x,y:b.y-30,text:'SPILLER 2 ER SLÅET UD',color:'#de954a',life:1.4});this.emit('ally_down',{id:b.id});}
+  };
+  const stepBuddyWrap=Game.prototype.step;
+  Game.prototype.step=function(dt,input={}){
+    const before=this.run&&this.run.seconds,out=stepBuddyWrap.call(this,dt,input),r=this.run;
+    if(r&&r.buddy&&this.phase==='playing'&&r.seconds>before)this.stepBuddy(dt,(input&&input.buddy)||{});
+    return out;
+  };
+  const API = { BUDDY, FRIEND, encodeChallenge, decodeChallenge, ghostAt, PRESSURE, pressureOpen, CURRENCY, START_RELICS, canStartRelic, dailySquares, LUCK, runLuck, ARMOR, armorPoints, armorFactor, RELICS, RELIC_SETS, RELIC_SOURCES, relicSet, relicStat, NEST_CACHE, TOUGH, BOUNTY, deathTip, IDENTITY, STEALTH, PROP_SIZE, coverAt, EQUILIBRIUM, DIFFICULTIES, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, CUTOUT_SPECIES, cutoutFrame, STATIC_SPECIES, RIG_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, FISH_GAME, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, HUD_LAYOUTS, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
   if (EXTRAS) EXTRAS.install(API);
   if (TELEMETRY) TELEMETRY.install({ Game, FEATURES });
   // ---- Pack kills (FEATURES.allyKills, 2026-10-23, Jonas: "Byttet er mit, men den skal rekorde det som kills af

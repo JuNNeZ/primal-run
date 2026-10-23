@@ -1,0 +1,18 @@
+{
+ "{0} udfordrer dig!": "{0} te desafia!",
+ "{0} point som {1} · Bane {2}": "{0} pontos como {1} · Fase {2}",
+ "TAG UDFORDRINGEN": "ACEITAR O DESAFIO",
+ "Du slog {0}: {1} mod {2}": "Você venceu {0}: {1} a {2}",
+ "Uafgjort mod {0}: {1} mod {2}": "Empate com {0}: {1} a {2}",
+ "{0} vandt: {1} mod {2}": "{0} venceu: {1} a {2}",
+ "UDFORDR EN VEN": "DESAFIAR UM AMIGO",
+ "Slå {0}: {1} point": "Vença {0}: {1} pontos",
+ "Du har ikke låst arten op endnu, så du spiller med din egen": "Você ainda não desbloqueou essa espécie, então joga com a sua",
+ "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "Consegue me vencer em PRIMAL RUN? {0} pontos como {1}",
+ "Udfordrings-link kopieret": "Link do desafio copiado",
+ "Linket kunne ikke kopieres": "Não foi possível copiar o link",
+ "Flokkammerat (# spillere)": "Companheiro de bando (# jogadores)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "Jogador # controla um raptor com IJKL + @ ou o controle #.",
+ "SPILLER # ER TILBAGE": "JOGADOR # VOLTOU",
+ "SPILLER # ER SLÅET UD": "JOGADOR # FOI NOCAUTEADO"
+}

@@ -1,0 +1,18 @@
+{
+ "{0} udfordrer dig!": "{0} бросает тебе вызов!",
+ "{0} point som {1} · Bane {2}": "{0} очков за {1} · Уровень {2}",
+ "TAG UDFORDRINGEN": "ПРИНЯТЬ ВЫЗОВ",
+ "Du slog {0}: {1} mod {2}": "Ты победил {0}: {1} против {2}",
+ "Uafgjort mod {0}: {1} mod {2}": "Ничья с {0}: {1} против {2}",
+ "{0} vandt: {1} mod {2}": "{0} победил: {1} против {2}",
+ "UDFORDR EN VEN": "БРОСИТЬ ВЫЗОВ ДРУГУ",
+ "Slå {0}: {1} point": "Обгони {0}: {1} очков",
+ "Du har ikke låst arten op endnu, så du spiller med din egen": "Этот вид ещё не открыт, поэтому ты играешь своим",
+ "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "Сможешь обыграть меня в PRIMAL RUN? {0} очков за {1}",
+ "Udfordrings-link kopieret": "Ссылка на вызов скопирована",
+ "Linket kunne ikke kopieres": "Не удалось скопировать ссылку",
+ "Flokkammerat (# spillere)": "Напарник по стае (# игрока)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "Игрок # управляет раптором клавишами IJKL + @ или геймпадом #.",
+ "SPILLER # ER TILBAGE": "ИГРОК # ВЕРНУЛСЯ",
+ "SPILLER # ER SLÅET UD": "ИГРОК # ВЫБИТ"
+}

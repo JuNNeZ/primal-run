@@ -1,0 +1,18 @@
+{
+ "{0} udfordrer dig!": "{0} menantangmu!",
+ "{0} point som {1} · Bane {2}": "{0} poin sebagai {1} · Tahap {2}",
+ "TAG UDFORDRINGEN": "TERIMA TANTANGAN",
+ "Du slog {0}: {1} mod {2}": "Kamu mengalahkan {0}: {1} lawan {2}",
+ "Uafgjort mod {0}: {1} mod {2}": "Seri dengan {0}: {1} lawan {2}",
+ "{0} vandt: {1} mod {2}": "{0} menang: {1} lawan {2}",
+ "UDFORDR EN VEN": "TANTANG TEMAN",
+ "Slå {0}: {1} point": "Kalahkan {0}: {1} poin",
+ "Du har ikke låst arten op endnu, så du spiller med din egen": "Kamu belum membuka spesies itu, jadi kamu bermain dengan spesiesmu sendiri",
+ "Kan du slå mig i PRIMAL RUN? {0} point som {1}": "Bisakah kamu mengalahkanku di PRIMAL RUN? {0} poin sebagai {1}",
+ "Udfordrings-link kopieret": "Tautan tantangan disalin",
+ "Linket kunne ikke kopieres": "Tautan tidak dapat disalin",
+ "Flokkammerat (# spillere)": "Teman kawanan (# pemain)",
+ "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.": "Pemain # mengendalikan raptor dengan IJKL + @ atau kontroler #.",
+ "SPILLER # ER TILBAGE": "PEMAIN # KEMBALI",
+ "SPILLER # ER SLÅET UD": "PEMAIN # TUMBANG"
+}

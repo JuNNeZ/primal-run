@@ -1,0 +1,66 @@
+[
+ {
+  "da": "{0} udfordrer dig!",
+  "en": "{0} challenges you!"
+ },
+ {
+  "da": "{0} point som {1} · Bane {2}",
+  "en": "{0} points as {1} · Stage {2}"
+ },
+ {
+  "da": "TAG UDFORDRINGEN",
+  "en": "ACCEPT THE CHALLENGE"
+ },
+ {
+  "da": "Du slog {0}: {1} mod {2}",
+  "en": "You beat {0}: {1} to {2}"
+ },
+ {
+  "da": "Uafgjort mod {0}: {1} mod {2}",
+  "en": "Tied with {0}: {1} to {2}"
+ },
+ {
+  "da": "{0} vandt: {1} mod {2}",
+  "en": "{0} won: {1} to {2}"
+ },
+ {
+  "da": "UDFORDR EN VEN",
+  "en": "CHALLENGE A FRIEND"
+ },
+ {
+  "da": "Slå {0}: {1} point",
+  "en": "Beat {0}: {1} points"
+ },
+ {
+  "da": "Du har ikke låst arten op endnu, så du spiller med din egen",
+  "en": "You haven't unlocked that species yet, so you play as your own"
+ },
+ {
+  "da": "Kan du slå mig i PRIMAL RUN? {0} point som {1}",
+  "en": "Can you beat me in PRIMAL RUN? {0} points as {1}"
+ },
+ {
+  "da": "Udfordrings-link kopieret",
+  "en": "Challenge link copied"
+ },
+ {
+  "da": "Linket kunne ikke kopieres",
+  "en": "The link could not be copied"
+ },
+ {
+  "da": "Flokkammerat (# spillere)",
+  "en": "Pack mate (# players)"
+ },
+ {
+  "da": "Spiller # styrer en raptor med IJKL + @ eller controller nr. #.",
+  "en": "Player # controls a raptor with IJKL + @ or controller #."
+ },
+ {
+  "da": "SPILLER # ER TILBAGE",
+  "en": "PLAYER # IS BACK"
+ },
+ {
+  "da": "SPILLER # ER SLÅET UD",
+  "en": "PLAYER # IS KNOCKED OUT"
+ }
+]
