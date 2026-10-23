@@ -1,0 +1,5 @@
+page.waitForFunction: Timeout 30000ms exceeded.
+    at /home/runner/work/primal-run/primal-run/tests/gamepad-browser.cjs:34:26 {
+  log: [],
+  name: 'TimeoutError'
+}
