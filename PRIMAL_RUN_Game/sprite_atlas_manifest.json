@@ -11770,7 +11770,7 @@
       "h": 16,
       "w": 16,
       "x": 491,
-      "y": 183
+      "y": 287
     },
     "assets/effects/bubble_001.png": {
       "anchor": [
@@ -11781,7 +11781,7 @@
       "h": 16,
       "w": 16,
       "x": 491,
-      "y": 201
+      "y": 305
     },
     "assets/effects/bubble_002.png": {
       "anchor": [
@@ -11792,7 +11792,7 @@
       "h": 16,
       "w": 16,
       "x": 491,
-      "y": 219
+      "y": 323
     },
     "assets/effects/bubble_003.png": {
       "anchor": [
@@ -11803,7 +11803,7 @@
       "h": 16,
       "w": 16,
       "x": 491,
-      "y": 237
+      "y": 341
     },
     "assets/effects/dust_000.png": {
       "anchor": [
@@ -20002,6 +20002,50 @@
       "w": 144,
       "x": 731,
       "y": 1
+    },
+    "assets/pack_hud/pack_aggro.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_shared_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 487,
+      "y": 183
+    },
+    "assets/pack_hud/pack_alpha.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_shared_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 487,
+      "y": 209
+    },
+    "assets/pack_hud/pack_defend.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_shared_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 487,
+      "y": 235
+    },
+    "assets/pack_hud/pack_passive.png": {
+      "anchor": [
+        12,
+        12
+      ],
+      "file": "assets/atlases/world_shared_0.png",
+      "h": 24,
+      "w": 24,
+      "x": 487,
+      "y": 261
     },
     "assets/pickups/dna_pickup.png": {
       "anchor": [
@@ -57437,8 +57481,8 @@
       "file": "assets/atlases/world_shared_0.png",
       "h": 12,
       "w": 12,
-      "x": 497,
-      "y": 291
+      "x": 491,
+      "y": 377
     },
     "assets/ui/serrated_teeth.png": {
       "anchor": [
@@ -57482,7 +57526,7 @@
       "h": 16,
       "w": 16,
       "x": 491,
-      "y": 255
+      "y": 359
     },
     "assets/ui/time_sun.png": {
       "anchor": [
@@ -57492,8 +57536,8 @@
       "file": "assets/atlases/world_shared_0.png",
       "h": 16,
       "w": 16,
-      "x": 487,
-      "y": 273
+      "x": 365,
+      "y": 491
     },
     "assets/ui/xp.png": {
       "anchor": [
@@ -58038,7 +58082,7 @@
   "max_dimension": 2048,
   "padding": 1,
   "pixels": "unaltered RGBA; no scaling or palette conversion; exact duplicate aliases only",
-  "png_bytes": 11244170,
+  "png_bytes": 11244803,
   "sheets": [
     {
       "file": "assets/atlases/species_allosaurus_0.png",
@@ -58405,14 +58449,14 @@
     },
     {
       "file": "assets/atlases/world_shared_0.png",
-      "frames": 60,
+      "frames": 64,
       "group": "world_shared",
-      "sha256": "1ee12fd0d13bfbed2376eb43b8fe4e0fb01a24cad00b02a43e40e5a52d722348",
+      "sha256": "b847039696b596c53e9eb4e7c61c17f46cc399fcc162d2b2577199c73df3cca3",
       "size": [
         512,
         622
       ],
-      "unique_frames": 60
+      "unique_frames": 64
     },
     {
       "file": "assets/atlases/world_terrain_0.png",
@@ -58426,6 +58470,6 @@
       "unique_frames": 133
     }
   ],
-  "unique_frames": 4860,
+  "unique_frames": 4864,
   "version": 2
 }

@@ -37,7 +37,7 @@
   // ---- RunSummary -----------------------------------------------------------------------------
   const HERBIVORES = ['parasaurolophus', 'ankylosaurus', 'triceratops', 'pachycephalosaurus'];
   // Variables whose source does not exist yet stay null: titles needing them are gated, boards show "—".
-  const UNTRACKED = ['foodStolen', 'secretsFound', 'secretLevel', 'secretEnding', 'nightKills', 'alliesRecruited', 'challengeCount', 'dailySeed'];
+  const UNTRACKED = ['foodStolen', 'secretsFound', 'secretLevel', 'secretEnding', 'nightKills', 'alliesRecruited', 'challengeCount', 'dailySeed', 'packKills'];
   function newTrack() {
     return { minibossKills: 0, eliteKills: 0, rareKills: 0, bossAttempts: 0, bossNoHitKills: 0, bossCloseCalls: 0, bossKills: [],
       maxHitDamage: 0, longestNoHitSeconds: 0, lastHitAt: 0, lowHpSeconds: 0, lavaDamage: 0, lavaSeconds: 0, deepWaterSeconds: 0,
@@ -81,7 +81,7 @@
     return s;
   }
 
-  // ---- R-RECORDS: 29 Fame + 25 Shame (02_STATISTICS_AND_RECORDS.md §4–5) -----------------------
+  // ---- R-RECORDS: 31 Fame (2 pack-kill records, FEATURES.allyKills) + 25 Shame (02_STATISTICS_AND_RECORDS.md §4–5) -----------------------
   const BOSS_IDS = { deaths_carl: 'carnotaurus@2', deaths_karl: 'carnotaurus@7', deaths_palle: 'pachycephalosaurus@1', deaths_benny: 'baryonyx@3',
     deaths_doris: 'deinosuchus@4', deaths_asta: 'ankylosaurus@5', deaths_tina: 'triceratops@6', deaths_ragnar: 'tyrannosaurus@8' };
   const died = s => !s.victory && !s.abandoned;
@@ -89,6 +89,8 @@
   const STATS = [
     S('most_kills_run', 'fame', 'Flest nedlæggelser i ét run', 'best', s => s.kills),
     S('total_kills', 'fame', 'Nedlæggelser i alt', 'sum', s => s.kills, { seed: l => l.kills }),
+    S('most_pack_kills_run', 'fame', 'Flest drab af flokken i ét run', 'best', s => s.packKills), // FEATURES.allyKills; null without it
+    S('total_pack_kills', 'fame', 'Drab af flokken i alt', 'sum', s => s.packKills),
     S('most_bosses_run', 'fame', 'Flest bosser i ét run', 'best', s => s.bosses, { tie: (s, ref) => s.seconds < ref.seconds }),
     S('total_bosses', 'fame', 'Bosser i alt', 'sum', s => s.bosses, { seed: l => l.bosses }),
     S('total_minibosses', 'fame', 'Mini-bosser i alt', 'sum', s => s.minibossKills),

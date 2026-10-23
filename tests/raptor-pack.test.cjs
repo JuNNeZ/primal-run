@@ -3,6 +3,7 @@
 const test = require('node:test'), assert = require('node:assert/strict');
 const C = require('../PRIMAL_RUN_Game/src/core.js');
 C.FEATURES.raptorDonate = false; // this suite covers the original meat-on-the-ground rules; tests/snowflake.test.cjs covers food donation
+C.FEATURES.allyKills = false; C.FEATURES.allyAggro = false; // and the original 1 HP / 30 % chip rules; tests/smart-allies.test.cjs covers the new ones
 const { runOne } = require('../tools/playstyle_sim.cjs');
 const DT = 1 / 30;
 function field(seed = 3) { const g = new C.Game({ random: () => .5 }); g.start({ seed }); const r = g.run; r.enemies = []; r.spawnTimer = 1e9; r.invulnerable = 1e9; return { g, r }; }

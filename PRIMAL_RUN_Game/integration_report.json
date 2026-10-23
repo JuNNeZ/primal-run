@@ -1,23 +1,23 @@
 {
   "result": "PASS",
   "copied_assets": 104,
-  "new_combat_assets": 5781,
+  "new_combat_assets": 5785,
   "byte_identical_to_kit": true,
   "errors": [],
   "production_approved": false,
   "scope": "Integration preserves source pixels, manifest origins and prototype status. Not a visual or animation approval.",
   "source_sha256": {
-    "src/run_titles.js": "11d200cfe8af66b5555bb7b23e1e676bdd8d80c398d458c967fbd3f0d435d06e",
-    "src/records.js": "bf65b852a182ad17de0c1ac3b2c62e8388355bd94e54aad5ea480cf15de80e97",
-    "src/run_extras.js": "bd38e9ed947288f8b1ebcf03ce110c98703c6dd2f2f567f4fc9a6c0ff3cb860d",
+    "src/run_titles.js": "33ec49512863aa1757370a997240d28aaca7bf94daec35d4b07815d9ea43e376",
+    "src/records.js": "3ebdcecde22ae3918620a82775fcdf9922715517d9442b160c138303dcdadebc",
+    "src/run_extras.js": "424113dc08d634293ec59e61fbbb433b22fd347c56ec86635c7480bb016371d7",
     "src/telemetry.js": "b5cf2a84f30129c0d72874aadc5e6b45b695d1985856484be580004e76426b9c",
     "src/loot.js": "e50c75dd172ea37f998b2ee19d1b230a828897ae6d6cc2ef1aa197c1b632c54e",
-    "src/core.js": "f63657c90726b2de180c69de64fe72dd7ac9fc19c143602024ec781e17f9f5b9",
+    "src/core.js": "85c3e260e6375e1f13b8a2c24e1eb85bd0bc904a734f71b28f38b375b051d046",
     "src/i18n.js": "299178f7ce0ec801b9d8f7e16dd7ace589e8b8ad4ae040b0aaa32ff2f0292bb6",
-    "src/lang.js": "581044f506f957fec6990fcb32f13efe9e1677e8e1923efc7b11d8a66c09fe6c",
-    "src/assets.js": "c803627143e4b6c7ba88d017a1df0767dd3108e673024bbd54241f67a00cf403",
+    "src/lang.js": "f36c287b52a3529b20929b2f7fb2f6930be6dd9819febb89699d066435397843",
+    "src/assets.js": "82ba0947f38e5a1071071e14e8f6731121afb70d6bb69a4fb0fad78faf35e725",
     "src/audio.js": "c771de3eff07c18a1b3f32b0fb583a3acdb9529ae874380d7ebe9f603e469cd5",
-    "src/app.js": "0474ba40b8c9fa2cf93f40a9d0f0e8dc4dc4f28cd5dafeeed13d507ff2a77cf5",
-    "style.css": "7d145d655b7a4f7825b8710a07c387cc4d0ee8f30a72ab296623972dabeb9491"
+    "src/app.js": "62d5762c7480ee7e8bc62f1b611fa024f8c8b115b11e9dd0460849cb4a3d7922",
+    "style.css": "ad381bbf3dac288a43ea64a2d7f092c98f42c9fd005af6f5d1d1fac3c58e21c8"
   }
 }

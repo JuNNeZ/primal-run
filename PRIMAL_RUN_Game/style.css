@@ -282,3 +282,6 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 /* FEATURES.keybindMenu: one row per action with its key and a reset button. */
 .keys-panel{max-width:560px}.key-list{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;margin:14px 0}.key-row{display:flex;align-items:center;gap:8px}.key-row>span{flex:1;font-size:13px;color:#b6c0a9}.key-cap{min-width:92px;padding:7px 10px;font-size:12px}.key-reset{padding:7px 10px;font-size:13px}
 @media(max-width:800px){.pause-layout{flex-direction:column;align-items:stretch}.pause-guide{max-width:none}.pause-guide.folded{align-self:center}.key-list{grid-template-columns:1fr}}
+/* Flok 2.0 (FEATURES.packOrders / packFeedback): pack order chip, a fourth intro card and the pack line on the result card */
+#pack-chip{color:#a2d4c1}.intro-cards.four{grid-template-columns:repeat(4,1fr)}.run-pack{margin:4px 0;color:#a2d4c1}
+@media(max-width:800px){.hud-chips > #pack-chip{display:none}.intro-cards.four{grid-template-columns:1fr}}

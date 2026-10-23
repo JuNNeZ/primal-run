@@ -1921,6 +1921,26 @@
    "implementationStatus": "built in Part B (B5)"
   },
   {
+   "id": "pack_master",
+   "name": {
+    "da": "Flokkens Fører",
+    "en": "Leader of the Pack"
+   },
+   "description": {
+    "da": "Din flok nedlagde 10 dyr i ét run.",
+    "en": "Your pack killed 10 animals in one run."
+   },
+   "condition": "s.packKills >= 10",
+   "priority": 50,
+   "rarity": "rare",
+   "tieBreak": "margin:packKills",
+   "category": "partB",
+   "requiredVariables": [
+    "packKills"
+   ],
+   "implementationStatus": "built in Flok 2.0 (FEATURES.allyKills)"
+  },
+  {
    "id": "masochist",
    "name": {
     "da": "Masochisten",
