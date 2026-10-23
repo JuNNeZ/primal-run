@@ -119,6 +119,7 @@ for n, art in ICONS.items():
             if c != '.': h = P[c]; im.putpixel((x, y), (int(h[:2], 16), int(h[2:4], 16), int(h[4:], 16), 255))
     out = GAME / 'assets/pack_hud' / (n + '.png'); out.parent.mkdir(exist_ok=True); im.save(out)
     manifest.append({'file': 'assets/pack_hud/' + n + '.png', 'size': [24, 24], 'origin': [12, 12], 'family': 'hud_chip', 'source': 'tools/draw_pack_icons.py',
-                     'export_sha256': hashlib.sha256(out.read_bytes()).hexdigest(), 'status': 'approved_static', 'production_approved': True, 'approved_by': 'Jonas', 'approved_at': '2026-10-23', 'animation_ready': False})
+                     'export_sha256': hashlib.sha256(out.read_bytes()).hexdigest(), 'status': 'approved_animation', 'production_approved': True, # the manifest's approved status, with Jonas' record
+                     'approval': {'approved_by': 'Jonas', 'date': '2026-10-23', 'via': 'approval card in the Flok 2.0 thread'}, 'animation_ready': False})
 (GAME / 'pack_icons_manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
 print('wrote', len(manifest), 'pack icons')
