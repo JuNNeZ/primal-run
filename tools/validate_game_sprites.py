@@ -26,7 +26,9 @@ for entry in manifest:
         if np.any(a[a[:, :, 3] == 0, :3]):
             errors.append(file + ': nonzero transparent RGB')
         colors = {tuple(c) for c in a[a[:, :, 3] == 255, :3]}
-        if colors - palette:
+        # Explicit stat-icon brief contour exception; keep other families strict.
+        allowed = palette | ({(16, 27, 22)} if file.startswith('assets/hud_icons/stats/') else set())
+        if colors - allowed:
             errors.append(file + ': outside palette')
         if file.startswith('assets/player_combat/'):
             bbox = pic.getbbox()
@@ -58,6 +60,6 @@ report = {
     'scope': 'Native PNG dimensions, palette, alpha, padding, inventory, source integrity, declared anchors, intentional endpoint reuse and timing plan. Does not certify anatomy, consistent lighting or temporal art quality.',
     'visual_review': 'See player_review.html at 1x/4x on both backgrounds. Generated poses remain studies; legacy walk/idle transitions require further refinement.',
 }
-(GAME / 'player_sprite_validation.json').write_text(json.dumps(report, indent=2) + '\n')
+(GAME / 'player_sprite_validation.json').write_text(json.dumps(report, indent=2) + '\n', newline='\n')
 print(json.dumps({k: v for k, v in report.items() if k != 'frames'}, indent=2))
 raise SystemExit(1 if errors else 0)
