@@ -1675,5 +1675,12 @@
 "Giv en vild artsfælle føde med @, så følger den dig. @ skifter ordre.": "Snap hiss grr snarrgh rawr rawr @, gnar snarrgh grr gnar. @ rooaar skreee.",
 "Giv en vild artsfælle # af din egen føde med @, så følger den dig. Store arter fylder mere i flokken, og en alfa vil have dobbelt så meget føde. Flokken forsvarer dig og bider det, du bider. @ skifter ordre: Angrib, Forsvar mig eller Hold dig væk. Flokfæller har en ring om fødderne, og klømærket viser, at en flokfælle har taget et dyr.": "Snap hiss grr snarrgh # hrrk gnar grr rawr rawr @, gnar snarrgh grr gnar. Hrooomph rawrrr hrooomph rawr chomp snarrgh, hiss hiss krak krak snap brrrooom gnar skriiik rawr. Snarrgh graaawr gnar hiss brrrooom chomp, grr brrrooom. @ rooaar skreee: Grrraah, Brrrooom snap roooh Krak gnar snap. Graaawr rawr hiss hiss snap graaawr, hiss roooh rooaar, hiss hiss kraaak rawr grrraah rawr huf.",
 "Flokkens Fører": "Rawrrr Skriiik",
-"Din flok nedlagde # dyr i ét run.": "Gnar huf roooh # huf chomp hrrk snap."
+"Din flok nedlagde # dyr i ét run.": "Gnar huf roooh # huf chomp hrrk snap.",
+"Spillet er pauset. Vælg med @ og bekræft med @.": "Rawr krak grrraah. Hiss @ chomp skreee @.",
+"Vibration i controller": "Rrrumble grrr",
+"Controller tilsluttet": "Krak rawr!",
+"Controller frakoblet": "Krak hnnngh.",
+"FORTSÆT · @": "RAWRRR · @",
+"Controller": "Krak",
+"Tryk en knap på controlleren · @ annullerer": "Rawr krak hiss · @ grrr"
 }

@@ -11,5 +11,12 @@
  "Nulstil alle": "سب ری سیٹ کریں",
  "Nulstillet til standard": "ڈیفالٹ پر واپس",
  "Byttet med {0}": "{0} سے تبادلہ ہوا",
- "Tasten understøttes ikke": "یہ کی معاون نہیں"
+ "Tasten understøttes ikke": "یہ کی معاون نہیں",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "کھیل رکا ہوا ہے۔ @ سے چنیں اور @ سے تصدیق کریں۔",
+ "Vibration i controller": "کنٹرولر کی وائبریشن",
+ "Controller tilsluttet": "کنٹرولر جڑ گیا",
+ "Controller frakoblet": "کنٹرولر منقطع ہو گیا",
+ "FORTSÆT · @": "جاری رکھیں · @",
+ "Controller": "کنٹرولر",
+ "Tryk en knap på controlleren · @ annullerer": "کنٹرولر کا بٹن دبائیں · @ منسوخ"
 }
