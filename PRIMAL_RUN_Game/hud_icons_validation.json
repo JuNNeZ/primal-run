@@ -14,7 +14,7 @@
     "stats": 16
   },
   "errors": [],
-  "approved": 76,
+  "approved": 92,
   "scope": "Native dimensions, RGBA, fixed palette, binary alpha, transparent RGB, padding, inventory, source reconstruction, hashes, 9-slice seams, armor number space. No runtime or visual approval.",
   "icons": [
     {

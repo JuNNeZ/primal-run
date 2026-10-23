@@ -85,6 +85,48 @@
     "rotten_meat": "4fb09352c8e58d3b97df66c99f3006e3bcbe8a9818b3265a4730f6ed498c725f",
     "bounty_target": "1d505f14381b9de390e0691ee8e294fa9effa473a08afa6f8e69a34117b70344",
     "daily_hunt": "7ad7a4ca67c5088462cf4eaa5ec1e6f5b873af9dd8a36c1643820597d002c812",
-    "extinction_pressure": "a30618e995aa576ad0c08f8526c330131bbd904ff9c8fa030664f1fbec3fb6fb"
-  }
+    "extinction_pressure": "a30618e995aa576ad0c08f8526c330131bbd904ff9c8fa030664f1fbec3fb6fb",
+    "stat_health": "95495d6c03afefe0997100f1f5ece9ea4eeb6a2b41212ee9798214034f661768",
+    "stat_health_32": "fd2eb9f14060c1b3e9d658c34a13a5daf2e3caea6fd48c26a74b7ad23fa12463",
+    "stat_damage": "b15ccb5aaaea194ef457de91dbb487cf0f5fd34ab158a85a773be389dd394b5a",
+    "stat_damage_32": "f670e48c10b1fac034469fc309f275cdcd52f0dff329c3dcba7a7dd4dd3c7c54",
+    "stat_crit": "8b2295cabb054bc722f71124549abb4a912d276aa3b36412eb97bf8ae633d52f",
+    "stat_crit_32": "24598c2c7af6acb47017401d85a6ef6c95803684c540dd6b89c6bf751148ddd4",
+    "stat_armor": "7261ed1edb812c8f09944a89ed9ff3d3afad67857cbbd2c70c9a6d5adffa102e",
+    "stat_armor_32": "2be0e74608d86411844e71387732b5e3134e87f7e01ccba2089d2e7a72a43ffc",
+    "stat_regen": "be9aa7a4f53d578c47100dafd93a39ac526ddb2e0645dffd4e43ad11fe34f151",
+    "stat_regen_32": "a8bafa635b19158d579ec032edc1e9fd87b205b86c2611a2f2100eda1d6e22a9",
+    "stat_speed": "8333be01f1437b75c493120e1822f63323c9d678aa25c4d4952daaf04c260649",
+    "stat_speed_32": "dcae99e92864f9afb65dd32c9acd42d26c7762adcf814c5c4325795d76bbddf5",
+    "stat_ability": "12226e74f02cdae83641afb41d37ed0d02681c4aec36a49ca198db0ea4019d98",
+    "stat_ability_32": "2a59a88b9539c343bb1b796e323856956ab2494622d847f493ef39e8ccc24590",
+    "stat_luck": "d52d61478233268c49a0f977210e33da9055e910b199a65346835cb0607dac27",
+    "stat_luck_32": "c97283c8f33525cca376d9d2e5ec7a8c193a0bbf2a8b319fcec02746b6f54e0e"
+  },
+  "later_approvals": [
+    {
+      "approved_by": "Jonas",
+      "date": "2026-10-23",
+      "decision": "Approval card 'Godkend og udgiv med ikonerne' (20:33) in thread 'Rulle-animation ved mutationsvalg'",
+      "reviewed_sheet": "previews/stat_icons_review.png",
+      "icons": [
+        "stat_ability",
+        "stat_ability_32",
+        "stat_armor",
+        "stat_armor_32",
+        "stat_crit",
+        "stat_crit_32",
+        "stat_damage",
+        "stat_damage_32",
+        "stat_health",
+        "stat_health_32",
+        "stat_luck",
+        "stat_luck_32",
+        "stat_regen",
+        "stat_regen_32",
+        "stat_speed",
+        "stat_speed_32"
+      ]
+    }
+  ]
 }
