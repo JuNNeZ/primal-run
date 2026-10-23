@@ -373,5 +373,10 @@
   "status": "new",
   "source": "r.stats.abilityKills",
   "description": "Kills where the final hit was the species ability"
+ },
+ "packKills": {
+  "status": "flok2",
+  "source": "r.stats.packKills (FEATURES.allyKills, via r.partB)",
+  "description": "Animals your pack finished off this run"
  }
 }

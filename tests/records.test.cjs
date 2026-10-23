@@ -198,8 +198,8 @@ function fixture(t, flip) {
   });
   return s;
 }
-test('Q10: every one of the 96 title conditions has a satisfying and a failing fixture', () => {
-  assert.equal(R.TITLES.length, 96);
+test('Q10: every one of the 97 title conditions has a satisfying and a failing fixture', () => {
+  assert.equal(R.TITLES.length, 97);
   let checked = 0;
   for (const t of R.TITLES) {
     if (t.condition === 'true') { assert.equal(R.evalCondition(t, summary()), true); checked++; continue; }
@@ -207,7 +207,7 @@ test('Q10: every one of the 96 title conditions has a satisfying and a failing f
     assert.equal(R.evalCondition(t, fixture(t, true)), false, t.id + ' false');
     checked++;
   }
-  assert.equal(checked, 96);
+  assert.equal(checked, 97);
 });
 test('Q11: pickTitles is deterministic and independent of object key order', () => {
   const shuffle = o => Object.fromEntries(Object.entries(o).reverse());

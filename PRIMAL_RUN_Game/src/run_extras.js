@@ -245,8 +245,10 @@
       P.max = packLimit(r); try { return feedRaptor.apply(this, arguments); } finally { P.max = max; }
     };
     // Pack mutations (FEATURES.packMutations): Tredje fælle hires one more; none are offered to a species that hires none.
-    const baseLimit = r => Math.min(C.PACK.max, F.packLimits && r && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max);
-    const packLimit = r => { const base = baseLimit(r); return base + (F.packMutations && base > 0 && r && r.mutations && r.mutations.thirdMate ? 1 : 0); };
+    // FEATURES.kinPack replaces both with core's size budget (C.kinLimit: 2 points, Tredje fælle +1 point).
+    const kin = r => F.kinPack && C.kinLimit && r && r.species;
+    const baseLimit = r => kin(r) ? C.kinLimit(r, false) : Math.min(C.PACK.max, F.packLimits && r && PACK_LIMITS[r.species] !== undefined ? PACK_LIMITS[r.species] : C.PACK.max);
+    const packLimit = r => { if (kin(r)) return C.kinLimit(r, true); const base = baseLimit(r); return base + (F.packMutations && base > 0 && r && r.mutations && r.mutations.thirdMate ? 1 : 0); };
     const packAvailable = G.mutationAvailable;
     G.mutationAvailable = function (m) { return (!m.needsPack || baseLimit(this.run) > 0) && packAvailable.call(this, m); };
     // ---- Pteranodon glides over lava and deep water (idea bank): while the glide ability runs it takes no lava burn,

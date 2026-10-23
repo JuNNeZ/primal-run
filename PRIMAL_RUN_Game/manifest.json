@@ -212773,6 +212773,82 @@
     "mask": 15
   },
   {
+    "file": "assets/pack_hud/pack_defend.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "tools/draw_pack_icons.py",
+    "export_sha256": "227fd7bf7b8a947a39e4b2dd7bfc43c7fd218aa830df20997dd4350e69f1ef49",
+    "status": "approved_static",
+    "production_approved": true,
+    "approved_by": "Jonas",
+    "approved_at": "2026-10-23",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/pack_hud/pack_passive.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "tools/draw_pack_icons.py",
+    "export_sha256": "dddeb501c4f1dbe42c268306662890ddbef5b8bfacd2cd20710b83baf17dfaf7",
+    "status": "approved_static",
+    "production_approved": true,
+    "approved_by": "Jonas",
+    "approved_at": "2026-10-23",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/pack_hud/pack_aggro.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "tools/draw_pack_icons.py",
+    "export_sha256": "1d8c7433196318f2df1c159da267c54327c432751ac1ed40dfd3cfd0ea15538b",
+    "status": "approved_static",
+    "production_approved": true,
+    "approved_by": "Jonas",
+    "approved_at": "2026-10-23",
+    "animation_ready": false
+  },
+  {
+    "file": "assets/pack_hud/pack_alpha.png",
+    "size": [
+      24,
+      24
+    ],
+    "origin": [
+      12,
+      12
+    ],
+    "family": "hud_chip",
+    "source": "tools/draw_pack_icons.py",
+    "export_sha256": "d95ba3225ba6d2600faf11735d44f1cd4932cb1017ac1fa8c3c3676ec48e8717",
+    "status": "approved_static",
+    "production_approved": true,
+    "approved_by": "Jonas",
+    "approved_at": "2026-10-23",
+    "animation_ready": false
+  },
+  {
     "file": "assets/corpses/parasaurolophus_decayed_S_0.png",
     "size": [
       144,

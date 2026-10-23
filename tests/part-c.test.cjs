@@ -120,6 +120,8 @@ test('old saves keep their bindings; the pack command takes Q or the first free 
 });
 
 test('allies stay on a leash: they ignore far animals and come back; Q sends them after your prey', () => {
+  const keep = { kinPack: C.FEATURES.kinPack, packFollow: C.FEATURES.packFollow, packOrders: C.FEATURES.packOrders }; Object.assign(C.FEATURES, { kinPack: false, packFollow: false, packOrders: false }); // the pre-Flok 2.0 pack; tests/pack-two.test.cjs covers the new one
+  try {
   const g = make('velociraptor'), r = g.run; r.invulnerable = 1e9;
   const a = r.raptors[0]; Object.assign(a, { ally: true, mode: 'follow', slot: 0, x: r.player.x - 40, y: r.player.y });
   const far = g.spawn('carnotaurus', { x: r.player.x + 320, y: r.player.y }); Object.assign(far, { alert: true, speed: 0, cooldown: 1e9 }); far.lastAttackedAt = r.seconds;
@@ -129,6 +131,7 @@ test('allies stay on a leash: they ignore far animals and come back; Q sends the
   for (let i = 0; i < 90; i++) g.step(1 / 30, {}); assert.ok(far.hp < far.maxHP, 'and they bite it');
   r.packFocus.until = 0; r.player.x -= 600; for (let i = 0; i < 150; i++) g.step(1 / 30, {});
   assert.ok(Math.hypot(a.x - r.player.x, a.y - r.player.y) < C.PACK.leash + 60, 'they come back when you leave');
+  } finally { Object.assign(C.FEATURES, keep); }
 });
 
 test('Compy pack call: the dodge calls wild compies for 8 s, at most every 10 s', () => {

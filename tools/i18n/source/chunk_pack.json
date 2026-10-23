@@ -34,5 +34,85 @@
  {
   "da": "Drab af flokken i alt",
   "en": "Pack kills in total"
+ },
+ {
+  "da": "UNGEN VOKSER",
+  "en": "THE YOUNG ONE GROWS"
+ },
+ {
+  "da": "SKÆNDES OM KØDET",
+  "en": "SQUABBLING OVER MEAT"
+ },
+ {
+  "da": "FLOK: ANGRIB",
+  "en": "PACK: ATTACK"
+ },
+ {
+  "da": "FLOK: FORSVAR MIG",
+  "en": "PACK: DEFEND ME"
+ },
+ {
+  "da": "FLOK: HOLD DIG VÆK",
+  "en": "PACK: STAY OUT"
+ },
+ {
+  "da": "FLOKDRAB",
+  "en": "PACK KILL"
+ },
+ {
+  "da": "ANGRIB",
+  "en": "ATTACK"
+ },
+ {
+  "da": "FORSVAR MIG",
+  "en": "DEFEND ME"
+ },
+ {
+  "da": "HOLD DIG VÆK",
+  "en": "STAY OUT"
+ },
+ {
+  "da": "VILD ARTSFÆLLE",
+  "en": "WILD KIN"
+ },
+ {
+  "da": "ALFA-ARTSFÆLLE",
+  "en": "ALPHA KIN"
+ },
+ {
+  "da": "◆ FLOK",
+  "en": "◆ PACK"
+ },
+ {
+  "da": "Flokken",
+  "en": "Pack"
+ },
+ {
+  "da": "drab",
+  "en": "kills"
+ },
+ {
+  "da": "skade taget for dig",
+  "en": "damage taken for you"
+ },
+ {
+  "da": "Din flok",
+  "en": "Your pack"
+ },
+ {
+  "da": "Giv en vild artsfælle føde med @, så følger den dig. @ skifter ordre.",
+  "en": "Give a wild kin food with @ and it follows you. @ changes orders."
+ },
+ {
+  "da": "Giv en vild artsfælle # af din egen føde med @, så følger den dig. Store arter fylder mere i flokken, og en alfa vil have dobbelt så meget føde. Flokken forsvarer dig og bider det, du bider. @ skifter ordre: Angrib, Forsvar mig eller Hold dig væk. Flokfæller har en ring om fødderne, og klømærket viser, at en flokfælle har taget et dyr.",
+  "en": "Give a wild member of your species # of your own food with @ and it follows you. Big species take up more room in the pack, and an alpha wants twice the food. The pack defends you and bites what you bite. @ changes orders: Attack, Defend me or Stay out. Pack mates have a ring around their feet, and the claw mark shows that a pack mate has taken on an animal."
+ },
+ {
+  "da": "Flokkens Fører",
+  "en": "Leader of the Pack"
+ },
+ {
+  "da": "Din flok nedlagde # dyr i ét run.",
+  "en": "Your pack killed # animals in one run."
  }
 ]
