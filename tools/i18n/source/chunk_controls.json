@@ -1,0 +1,54 @@
+[
+ {
+  "da": "Vis guide",
+  "en": "Show guide"
+ },
+ {
+  "da": "Skjul guide",
+  "en": "Hide guide"
+ },
+ {
+  "da": "Dine knapper",
+  "en": "Your controls"
+ },
+ {
+  "da": "@ viser eller skjuler guiden.",
+  "en": "@ shows or hides the guide."
+ },
+ {
+  "da": "Tastatur",
+  "en": "Keyboard"
+ },
+ {
+  "da": "Dine taster",
+  "en": "Your keys"
+ },
+ {
+  "da": "Klik på en handling, og tryk en ny tast.",
+  "en": "Click an action, then press a new key."
+ },
+ {
+  "da": "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.",
+  "en": "If the key is taken, the two actions swap keys. The arrow keys always move you, and Esc pauses."
+ },
+ {
+  "da": "Nulstil",
+  "en": "Reset"
+ },
+ {
+  "da": "Nulstil alle",
+  "en": "Reset all"
+ },
+ {
+  "da": "Nulstillet til standard",
+  "en": "Reset to default"
+ },
+ {
+  "da": "Byttet med {0}",
+  "en": "Swapped with {0}"
+ },
+ {
+  "da": "Tasten understøttes ikke",
+  "en": "That key is not supported"
+ }
+]

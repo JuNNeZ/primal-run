@@ -1,0 +1,15 @@
+{
+ "Vis guide": "गाइड दिखाएँ",
+ "Skjul guide": "गाइड छिपाएँ",
+ "Dine knapper": "तुम्हारे बटन",
+ "@ viser eller skjuler guiden.": "@ गाइड दिखाता या छिपाता है।",
+ "Tastatur": "कीबोर्ड",
+ "Dine taster": "तुम्हारी कुंजियाँ",
+ "Klik på en handling, og tryk en ny tast.": "किसी क्रिया पर क्लिक करो, फिर नई कुंजी दबाओ।",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "अगर कुंजी पहले से इस्तेमाल में है, तो दोनों क्रियाएँ कुंजियाँ बदल लेती हैं। तीर कुंजियाँ हमेशा तुम्हें चलाती हैं, और Esc रोकता है।",
+ "Nulstil": "रीसेट",
+ "Nulstil alle": "सब रीसेट करो",
+ "Nulstillet til standard": "डिफ़ॉल्ट पर लौटाया",
+ "Byttet med {0}": "{0} से बदला गया",
+ "Tasten understøttes ikke": "यह कुंजी समर्थित नहीं है"
+}

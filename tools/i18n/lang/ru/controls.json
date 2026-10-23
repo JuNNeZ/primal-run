@@ -1,0 +1,15 @@
+{
+ "Vis guide": "Показать подсказки",
+ "Skjul guide": "Скрыть подсказки",
+ "Dine knapper": "Твоё управление",
+ "@ viser eller skjuler guiden.": "@ показывает или скрывает подсказки.",
+ "Tastatur": "Клавиатура",
+ "Dine taster": "Твои клавиши",
+ "Klik på en handling, og tryk en ny tast.": "Нажми на действие, затем нажми новую клавишу.",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "Если клавиша занята, два действия меняются клавишами. Стрелки всегда двигают тебя, а Esc ставит паузу.",
+ "Nulstil": "Сбросить",
+ "Nulstil alle": "Сбросить всё",
+ "Nulstillet til standard": "Восстановлено по умолчанию",
+ "Byttet med {0}": "Обмен с: {0}",
+ "Tasten understøttes ikke": "Эта клавиша не поддерживается"
+}

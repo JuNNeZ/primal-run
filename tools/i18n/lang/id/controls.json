@@ -1,0 +1,15 @@
+{
+ "Vis guide": "Tampilkan panduan",
+ "Skjul guide": "Sembunyikan panduan",
+ "Dine knapper": "Kontrolmu",
+ "@ viser eller skjuler guiden.": "@ menampilkan atau menyembunyikan panduan.",
+ "Tastatur": "Keyboard",
+ "Dine taster": "Tombolmu",
+ "Klik på en handling, og tryk en ny tast.": "Klik sebuah aksi, lalu tekan tombol baru.",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "Jika tombol sudah dipakai, kedua aksi bertukar tombol. Tombol panah selalu menggerakkanmu, dan Esc menjeda.",
+ "Nulstil": "Atur ulang",
+ "Nulstil alle": "Atur ulang semua",
+ "Nulstillet til standard": "Kembali ke bawaan",
+ "Byttet med {0}": "Ditukar dengan {0}",
+ "Tasten understøttes ikke": "Tombol itu tidak didukung"
+}

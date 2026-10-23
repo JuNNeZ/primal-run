@@ -1,0 +1,15 @@
+{
+ "Vis guide": "Afficher le guide",
+ "Skjul guide": "Masquer le guide",
+ "Dine knapper": "Tes commandes",
+ "@ viser eller skjuler guiden.": "@ affiche ou masque le guide.",
+ "Tastatur": "Clavier",
+ "Dine taster": "Tes touches",
+ "Klik på en handling, og tryk en ny tast.": "Clique sur une action, puis appuie sur une nouvelle touche.",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "Si la touche est prise, les deux actions échangent leurs touches. Les flèches te déplacent toujours, et Échap met en pause.",
+ "Nulstil": "Réinitialiser",
+ "Nulstil alle": "Tout réinitialiser",
+ "Nulstillet til standard": "Valeurs par défaut rétablies",
+ "Byttet med {0}": "Échangée avec {0}",
+ "Tasten understøttes ikke": "Cette touche n'est pas prise en charge"
+}

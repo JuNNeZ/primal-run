@@ -1,0 +1,15 @@
+{
+ "Vis guide": "Mostrar guia",
+ "Skjul guide": "Ocultar guia",
+ "Dine knapper": "Seus controles",
+ "@ viser eller skjuler guiden.": "@ mostra ou oculta o guia.",
+ "Tastatur": "Teclado",
+ "Dine taster": "Suas teclas",
+ "Klik på en handling, og tryk en ny tast.": "Clique em uma ação e pressione uma nova tecla.",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "Se a tecla estiver em uso, as duas ações trocam de tecla. As setas sempre movem você, e Esc pausa.",
+ "Nulstil": "Redefinir",
+ "Nulstil alle": "Redefinir tudo",
+ "Nulstillet til standard": "Padrão restaurado",
+ "Byttet med {0}": "Trocada com {0}",
+ "Tasten understøttes ikke": "Essa tecla não é suportada"
+}

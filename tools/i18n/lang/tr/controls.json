@@ -1,0 +1,15 @@
+{
+ "Vis guide": "Rehberi göster",
+ "Skjul guide": "Rehberi gizle",
+ "Dine knapper": "Kontrollerin",
+ "@ viser eller skjuler guiden.": "@ rehberi gösterir veya gizler.",
+ "Tastatur": "Klavye",
+ "Dine taster": "Tuşların",
+ "Klik på en handling, og tryk en ny tast.": "Bir eyleme tıkla, sonra yeni bir tuşa bas.",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "Tuş kullanılıyorsa iki eylem tuşlarını değiştirir. Ok tuşları seni her zaman hareket ettirir, Esc duraklatır.",
+ "Nulstil": "Sıfırla",
+ "Nulstil alle": "Tümünü sıfırla",
+ "Nulstillet til standard": "Varsayılana döndürüldü",
+ "Byttet med {0}": "{0} ile değiştirildi",
+ "Tasten understøttes ikke": "Bu tuş desteklenmiyor"
+}

@@ -12,12 +12,12 @@
     "src/run_extras.js": "bd38e9ed947288f8b1ebcf03ce110c98703c6dd2f2f567f4fc9a6c0ff3cb860d",
     "src/telemetry.js": "b5cf2a84f30129c0d72874aadc5e6b45b695d1985856484be580004e76426b9c",
     "src/loot.js": "e50c75dd172ea37f998b2ee19d1b230a828897ae6d6cc2ef1aa197c1b632c54e",
-    "src/core.js": "88f10162680f50e15fedd253204a0ec3066e6ca7279a37d3b8ca5e6e635b8240",
-    "src/i18n.js": "665f9e64a4198c0a8e72172de7ceef0350230768c6015716c00b9d1baedf85ec",
-    "src/lang.js": "2109b4e0097efc084543eb43174e8f27e67c39223435a0a4768685504d2a080e",
+    "src/core.js": "f63657c90726b2de180c69de64fe72dd7ac9fc19c143602024ec781e17f9f5b9",
+    "src/i18n.js": "299178f7ce0ec801b9d8f7e16dd7ace589e8b8ad4ae040b0aaa32ff2f0292bb6",
+    "src/lang.js": "581044f506f957fec6990fcb32f13efe9e1677e8e1923efc7b11d8a66c09fe6c",
     "src/assets.js": "c803627143e4b6c7ba88d017a1df0767dd3108e673024bbd54241f67a00cf403",
     "src/audio.js": "c771de3eff07c18a1b3f32b0fb583a3acdb9529ae874380d7ebe9f603e469cd5",
-    "src/app.js": "97dd4c95a2c8ce4395e76eb12f73ff4f6a2be77926b4081f3e3c13f9835a791c",
-    "style.css": "d1a076d3edacd4e933bb4986bb98d9f8cadf5565f1485e904d9bac5a922c3307"
+    "src/app.js": "0474ba40b8c9fa2cf93f40a9d0f0e8dc4dc4f28cd5dafeeed13d507ff2a77cf5",
+    "style.css": "7d145d655b7a4f7825b8710a07c387cc4d0ee8f30a72ab296623972dabeb9491"
   }
 }

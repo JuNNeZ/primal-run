@@ -33,12 +33,12 @@
     return null;
   }
   // Numbers become # and key names (W, F, SPACE, SHIFT, ESC, WASD, gamepad RB/LB) become @ in dictionary keys.
-  // A touch/gamepad button name in brackets ([SPIS]) is a key name too, but its word is translated on its own.
+  // A touch/gamepad button name in brackets ([SPIS]) is a key name too, but its word is translated on its own. A digit in brackets ([5], a rebound key) is not a number.
   const KEY = /(?<![A-Za-zÆØÅæøå])(?:\[[^\[\]]{1,24}\]|SPACE|SHIFT|ESC|WASD|RB|LB|[A-Z])(?![A-Za-zÆØÅæøå])/g;
   function keyText(k) { return k && k[0] === '[' ? '[' + translate(k.slice(1, -1)) + ']' : k; }
   function withNumbers(text) {
     const numbers = [], keys = [];
-    const key = text.replace(/(?<!\{)\d+(?:[.,]\d+)?(?!\})/g, n => { numbers.push(n); return '#'; }).replace(KEY, k => { keys.push(k); return '@'; });
+    const key = text.replace(/(?<![{\[])\d+(?:[.,]\d+)?(?![}\]])/g, n => { numbers.push(n); return '#'; }).replace(KEY, k => { keys.push(k); return '@'; });
     let hit = lookup(lang, key);
     if (hit === null && keys.length) { // retry without key placeholders
       const plain = text.replace(/\d+(?:[.,]\d+)?/g, '#'); hit = lookup(lang, plain); if (hit !== null) keys.length = 0;
