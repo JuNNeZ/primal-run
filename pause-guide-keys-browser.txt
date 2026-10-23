@@ -1,0 +1,1 @@
+PASS: pause guide (fold, H, saved), keyboard page (swap, digit, reset), hints follow, phone + English

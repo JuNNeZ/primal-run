@@ -1,0 +1,1 @@
+PASS night palette: 300 sprite/skin cases, preserved native pixels and bounded cache
