@@ -27,7 +27,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       // Records screen (Q8): both boards and every scope render without horizontal scroll and without missing translations.
       await page.evaluate(() => { PrimalI18n.missing.clear(); });
       await page.locator('.run-card ~ .actions [data-action="scores"], [data-action="scores"]').first().click();
-      assert.equal(await page.locator('.record-row').count(), 29);
+      assert.equal(await page.locator('.record-row').count(), 31);
       assert.match(await page.locator('.records-list').innerText(), lang === 'da' ? /Distance i alt\s+5,2 km/ : lang === 'de' ? /Distanz insgesamt\s+5,2 km/ : /累計距離\s+5\.2 km/);
       await noScroll(lang + ' fame');
       await page.locator('[data-records-tab="shame"]').click(); assert.equal(await page.locator('.record-row').count(), 25);
@@ -40,7 +40,7 @@ const { chromium, browserOptions, localURL } = require('../tools/browser.cjs');
       if (lang !== 'da') { await page.locator('[data-records-tab="fame"]').click(); const text = await page.locator('.screen').innerText();
         assert.deepEqual(await page.evaluate(t => PrimalCore.RECORDS.STATS.map(d => d.label).filter(l => PrimalI18n.t(l) !== l && t.includes(l)), text), [], lang + ' Danish labels left'); }
       await page.screenshot({ path: path.join(process.env.PRIMAL_SCREENSHOT_DIR || require('node:os').tmpdir(), `records-${lang}-390.png`) });
-      checks.push(lang + ': compy death card, 29 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844');
+      checks.push(lang + ': compy death card, 31 fame / 25 shame rows, 4 scopes, top 10, no horizontal scroll at 390x844');
     }
     assert.deepEqual(errors, []);
     if (process.env.PRIMAL_RECORDS_REPORT) fs.writeFileSync(process.env.PRIMAL_RECORDS_REPORT, JSON.stringify({ status: 'PASS', runtime: 'standalone Chromium', checks }, null, 2) + '\n');
