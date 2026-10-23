@@ -1,0 +1,1 @@
+PASS: browser game · menu/name · sound controls/music · movement/bite/meat · pause · mutations · 8 bosses/victory · DNA shop · reload/highscore · death/restart · storage denial
