@@ -17,8 +17,8 @@
     "src/lang.js": "05670af298bcd4d0233dc337ad6dabeeb34f1fd05396856cf9aabcd398d49b1d",
     "src/assets.js": "82ba0947f38e5a1071071e14e8f6731121afb70d6bb69a4fb0fad78faf35e725",
     "src/audio.js": "c771de3eff07c18a1b3f32b0fb583a3acdb9529ae874380d7ebe9f603e469cd5",
-    "src/gamepad.js": "5d6356b5e0196ee5969e1883dc3d7038968800b6b0d43d012d6f5648d1ddfc25",
-    "src/app.js": "955bee3b14fbae22b714871c944f02919842741ca0935acf6501c481c3a24448",
-    "style.css": "5cceb262a1bd9efa6cc95c3b4fcdcd7e4d2d5729421c9548b4e9d046054dea00"
+    "src/gamepad.js": "7491cb532734054673f92f66528d208f50f579d913295fd5c7732bb9321abbf5",
+    "src/app.js": "17647da161252ca505c0d81ffa74bb0ede8c71839217f78ef909076cfc420457",
+    "style.css": "d13653aca00a2687ebad83179cfeb33fc14fd33c88efbaaa8f6f84f635e0be10"
   }
 }

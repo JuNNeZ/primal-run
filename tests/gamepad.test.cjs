@@ -14,7 +14,9 @@ test('controller families: Xbox, PlayStation, Nintendo by position; unknown and 
   assert.equal(G.family('045e-0b12-Microsoft Xbox Series S|X Controller'),'xbox');
   assert.equal(G.family('DualSense Wireless Controller (STANDARD GAMEPAD Vendor: 054c Product: 0ce6)'),'playstation');
   assert.equal(G.family('Pro Controller (STANDARD GAMEPAD Vendor: 057e Product: 2009)'),'nintendo');
-  assert.equal(G.family('Steam Deck Controller'),'xbox');assert.equal(G.family(''),'xbox');
+  assert.equal(G.family(''),'xbox');
+  assert.equal(G.family('Steam Deck Controller'),'deck');assert.equal(G.label('deck','south'),'A');
+  assert.equal(G.glyph('xbox','A').bg,'#55a93b');assert.equal(G.glyph('playstation','[○]').button,'east');assert.equal(G.glyph('nintendo','ZR').shape,'pill');assert.equal(G.glyph('xbox','Q'),null);
   assert.equal(G.label('xbox','south'),'A');assert.equal(G.label('playstation','south'),'[✕]');assert.equal(G.label('nintendo','south'),'B');assert.equal(G.label('nintendo','east'),'A');
 });
 test('round dead zone: rest is zero, diagonals stay diagonal, full tilt reaches 1',()=>{

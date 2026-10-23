@@ -36,7 +36,8 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
  await tap(9);await page.waitForFunction(()=>primalRun.game.phase==='paused');await tap(1);await page.waitForFunction(()=>primalRun.game.phase==='playing');
  // A PlayStation pad renames the hints; RT attacks.
  await page.evaluate(()=>{pads[0].id='DualSense Wireless Controller (STANDARD GAMEPAD Vendor: 054c)';});await tap(13);await page.waitForTimeout(100);
- assert.match(await page.locator('#attack-ready').textContent(),/^✕ · /);assert.match(await page.locator('#ability-ready').textContent(),/^○ · /);
+ assert.match(await page.locator('#attack-ready').textContent(),/^✕ · /);assert.ok(await page.locator('#attack-ready .pad-glyph').count(),'real button glyph on the HUD');assert.ok(await page.locator('footer .control-hints .pad-glyph').count()>=4,'glyphs in the footer');
+ assert.equal(await page.locator('#pack-ready').isVisible(),true,'pack button is on the HUD even without a pack');assert.match(await page.locator('#ability-ready').textContent(),/^○ · /);
  const attacks=await page.evaluate(()=>primalRun.game.run.stats.attacks||0);await page.evaluate(()=>{pads[0].buttons[7].pressed=true;});await page.waitForFunction(a=>(primalRun.game.run.stats.attacks||0)>a,attacks);await page.evaluate(()=>{pads[0].buttons[7].pressed=false;});
  assert.deepEqual(errors,[]);await page.close();
  console.log('gamepad browser test passed');

@@ -15,11 +15,28 @@
     playstation: { south: '[✕]', east: '[○]', west: '[□]', north: '[△]', lb: '[L1]', rb: '[R1]', lt: '[L2]', rt: '[R2]', view: '[CREATE]', menu: '[OPTIONS]' },
     nintendo: { south: 'B', east: 'A', west: 'Y', north: 'X', lb: 'L', rb: 'R', lt: 'ZL', rt: 'ZR', view: '[−]', menu: '[+]' }
   };
+  LABELS.deck = LABELS.xbox; // Steam Deck: Xbox letters on dark buttons
+  // How each button looks on the real pad: face buttons are round, shoulders/triggers are pills, view/menu are small dark rounds.
+  const DARK = '#2a2f35', FACE = { south: 1, east: 1, west: 1, north: 1 };
+  const COLORS = {
+    xbox: { south: ['#55a93b', '#fff'], east: ['#d8473b', '#fff'], west: ['#2f7fd4', '#fff'], north: ['#e9b52c', '#1c2024'] },
+    playstation: { south: [DARK, '#8fb6f0'], east: [DARK, '#f06b74'], west: [DARK, '#e597d4'], north: [DARK, '#4fd1b4'] },
+    nintendo: {}, deck: {}
+  };
+  // Glyph for a label as control() returns it (brackets optional): { button, text, bg, fg, shape } or null.
+  function glyph(fam, word) {
+    const labels = LABELS[fam] || LABELS.xbox, w = String(word || '').replace(/^\[(.*)\]$/, '$1');
+    const button = Object.keys(labels).find(b => labels[b].replace(/^\[(.*)\]$/, '$1') === w);
+    if (!button) return null;
+    const [bg, fg] = (COLORS[fam] || {})[button] || [FACE[button] ? '#30363c' : DARK, '#f1f1f1'];
+    return { button, text: w, bg, fg, shape: FACE[button] ? 'round' : button === 'view' || button === 'menu' ? 'small' : 'pill' };
+  }
   function family(id) {
     const s = String(id || '');
     if (/xbox|xinput|045e/i.test(s)) return 'xbox';
     if (/054c|sony|dualshock|dualsense|playstation/i.test(s)) return 'playstation';
     if (/057e|nintendo|joy-con|^pro controller/i.test(s)) return 'nintendo';
+    if (/steam deck|28de.*1205/i.test(s)) return 'deck';
     return 'xbox';
   }
   function label(fam, button) { return (LABELS[fam] || LABELS.xbox)[button] || ''; }
@@ -119,5 +136,5 @@
     });
     return best >= 0 ? best : wrap >= 0 ? wrap : current;
   }
-  return { BUTTON, LABELS, family, label, radial, createTracker, normalize, rumble, direction, createRepeater, navigate };
+  return { BUTTON, LABELS, family, label, glyph, radial, createTracker, normalize, rumble, direction, createRepeater, navigate };
 });

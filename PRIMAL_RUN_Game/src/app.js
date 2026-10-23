@@ -33,8 +33,8 @@
     const shell = document.createElement('div'); shell.className = 'primal-shell';
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
       <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space angriber, Shift bruger evne, F spiser, Escape pauser."></canvas>
-      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="meter xp hud-x" title="XP"><i></i></div><small id="xp-label" class="hud-x"></small><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="pack-chip" hidden><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div><div id="extras-chip" class="extras-chip" hidden></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b><div class="meter goal hud-x"><i></i></div><div class="goal-row hud-x"><span id="goal-dna"></span><span id="goal-time"></span></div></div></div><div class="hud-top" hidden><div class="meter"><i></i></div><b id="top-level"></b><b id="top-time"></b></div><div class="hud-actions" hidden><div class="hud-slot" data-slot="attack"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small>Angreb</small></div><div class="hud-slot" data-slot="ability"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small></small></div><span class="slot-gap"></span><div class="hud-slot small" data-slot="eat"><span class="slot-icon"></span><kbd></kbd><small>Spis</small></div><div class="hud-slot small" data-slot="sneak"><span class="slot-icon">◐</span><kbd></kbd><small>Snig</small></div><div class="hud-slot small" data-slot="interact"><span class="slot-icon">?</span><kbd></kbd><small>Undersøg</small></div></div><div class="hud-prompt" hidden></div>
-      <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div></div></div>
+      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="meter xp hud-x" title="XP"><i></i></div><small id="xp-label" class="hud-x"></small><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="pack-chip" hidden><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div><div id="extras-chip" class="extras-chip" hidden></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b><div class="meter goal hud-x"><i></i></div><div class="goal-row hud-x"><span id="goal-dna"></span><span id="goal-time"></span></div></div></div><div class="hud-top" hidden><div class="meter"><i></i></div><b id="top-level"></b><b id="top-time"></b></div><div class="hud-actions" hidden><div class="hud-slot" data-slot="attack"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small>Angreb</small></div><div class="hud-slot" data-slot="ability"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small></small></div><span class="slot-gap"></span><div class="hud-slot small" data-slot="eat"><span class="slot-icon"></span><kbd></kbd><small>Spis</small></div><div class="hud-slot small" data-slot="sneak"><span class="slot-icon">◐</span><kbd></kbd><small>Snig</small></div><div class="hud-slot small" data-slot="interact"><span class="slot-icon">?</span><kbd></kbd><small>Undersøg</small></div><div class="hud-slot small" data-slot="command" hidden><span class="slot-icon"></span><kbd></kbd><small>Flok</small></div></div><div class="hud-prompt" hidden></div>
+      <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div><b id="pack-ready" hidden></b></div></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div><div class="loot-reel" hidden aria-live="polite"><div class="loot-strip"></div></div></main>
       <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space" class="pad-a">ANGREB</button><button data-key="ShiftLeft" class="pad-b">EVNE</button><button data-key="KeyE" class="pad-x">UNDERSØG</button><button data-key="KeyF" class="pad-y">SPIS</button><button data-key="KeyQ" class="pack-key pad-l" hidden>FLOK</button><button data-sneak-toggle class="pad-sneak" aria-pressed="false" hidden>SNIG</button></div></div>
       <footer><span class="control-hints"><span data-control="move"><kbd></kbd> Bevæg</span><span data-control="attack"> · <kbd></kbd> Angreb</span><span data-control="ability"> · <kbd></kbd> Evne</span><span data-control="sneak"> · <kbd></kbd> Snig / skjul</span><span data-control="eat"> · <kbd></kbd> Hold for at spise</span><span data-control="interact"> · <kbd></kbd> Undersøg</span><span data-control="pause"> · <kbd></kbd> Pause</span></span><span class="save-status"></span></footer>`;
@@ -140,7 +140,8 @@
     function button(action, text, className = '') { return `<button class="${className}" data-action="${action}">${text}</button>`; }
     function updateControlHints() {
       shell.dataset.input = inputMode;
-      shell.querySelectorAll('[data-control]').forEach(el => { const label = controlName(el.dataset.control); el.hidden = !label; el.querySelector('kbd').textContent = label; });
+      shell.querySelectorAll('[data-control]').forEach(el => { const label = controlName(el.dataset.control); el.hidden = !label; el.querySelector('kbd').textContent = label; el.querySelector('kbd').classList.remove('pad-kbd'); });
+      padGlyphs(shell.querySelector('footer .control-hints'));
     }
     // FEATURES.gamepadFull: menus with D-pad or stick in every direction (held = repeat), A selects, B goes back, Y rerolls
     // mutations, View toggles the pause guide. The focused element always shows a gold frame, and focus survives re-renders.
@@ -173,6 +174,32 @@
         else padFocus(items[GP.navigate(items.map(x=>{const b=x.getBoundingClientRect();return{x:b.left,y:b.top,w:b.width,h:b.height};}),current,dir)]);
       }
       if(pressed(GP.BUTTON.south)&&el){if(el.tagName==='SELECT'){el.selectedIndex=(el.selectedIndex+1)%el.options.length;el.dispatchEvent(new Event('change',{bubbles:true}));}else{padFocusKey=padKey(el);el.click();}}
+    }
+    // Real buttons per controller: a pad label in a <kbd>, a sentence or a world label is drawn as that pad's button
+    // (Xbox coloured A/B/X/Y, PlayStation ✕○□△, Switch and Steam Deck dark buttons). Texts and translations stay as they are.
+    const padGlyphOn=()=>C.FEATURES.gamepadFull&&GP&&inputMode==='gamepad';
+    let padTokenCache={family:'',re:null};
+    function padTokens(){
+      if(padTokenCache.family===padFamily)return padTokenCache.re;
+      const words=[...new Set(Object.values(GP.LABELS[padFamily]||GP.LABELS.xbox).flatMap(w=>/^\[.*\]$/.test(w)?[w,w.slice(1,-1)]:[w]))].sort((a,b)=>b.length-a.length).map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+      padTokenCache={family:padFamily,re:new RegExp('(^|[\\s(·])('+words.join('|')+')(?=$|[\\s).,:;·!?])','g')};return padTokenCache.re;
+    }
+    // Text split into strings and glyphs. A capital letter that starts a sentence before a lowercase word stays a letter ("A cada ...").
+    function padSplit(text){
+      const out=[],re=padTokens();let last=0;re.lastIndex=0;
+      for(let m;(m=re.exec(text));){const start=m.index+m[1].length,before=text.slice(0,start).trimEnd(),g=GP.glyph(padFamily,m[2]);
+        if(!g||/^[A-Z]$/.test(m[2])&&(!before||/[.!?]$/.test(before))&&/^\s\p{Ll}/u.test(text.slice(start+1)))continue;
+        if(start>last)out.push(text.slice(last,start));out.push(g);last=start+m[2].length;}
+      if(last<text.length)out.push(text.slice(last));
+      return out;
+    }
+    const glyphHTML=g=>`<span class="pad-glyph pad-${g.shape}" style="--gbg:${g.bg};--gfg:${g.fg}" translate="no">${htmlEscape(g.text)}</span>`;
+    function padGlyphs(node){
+      if(!node||!padGlyphOn())return;
+      for(const kbd of node.querySelectorAll('kbd')){const g=GP.glyph(padFamily,kbd.textContent.trim());kbd.classList.toggle('pad-kbd',!!g);if(g)kbd.innerHTML=glyphHTML(g);}
+      const walker=document.createTreeWalker(node,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('.pad-glyph,kbd,script,style,select,option,textarea,canvas')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}),texts=[];
+      for(let n;(n=walker.nextNode());)texts.push(n);
+      for(const n of texts){const parts=padSplit(n.nodeValue);if(parts.length===1&&typeof parts[0]==='string'||!parts.length)continue;const span=document.createElement('span');span.innerHTML=parts.map(p=>typeof p==='string'?htmlEscape(p):glyphHTML(p)).join('');n.replaceWith(...span.childNodes);}
     }
     // Rumble when the player loses health (stronger for bigger hits); Chrome/Edge only, off in settings.
     function padRumble(pad){
@@ -332,8 +359,9 @@
       } else if (phase === 'error') {
         screen.innerHTML = `<section class="panel">${heading('INDLÆSNING FEJLEDE', 'Assets mangler')}<p>Kontrollér, at assets-mappen følger med spillet. Genindlæs siden efter rettelsen.</p><p class="load-error"></p></section>`;
       }
-      I18N.translateNode(screen); adaptControls(screen);
+      I18N.translateNode(screen); adaptControls(screen); padGlyphs(screen);
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
+      if (C.FEATURES.gamepadFull && inputMode === 'gamepad' && padFocusKey) { const same = padItems().find(x => padKey(x) === padFocusKey); if (same) padFocus(same); }
       shell.querySelector('.save-status').textContent = tr(game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session');
     }
     // Asked once, after the first finished run: two equal buttons, changeable later in Indstillinger.
@@ -647,6 +675,8 @@
     }
     // Flok 2.0 (FEATURES.packOrders): the FLOK button and HUD chip show the current order.
     const PACK_ORDER_LABEL = { attack: 'ANGRIB', defend: 'FORSVAR MIG', passive: 'HOLD DIG VÆK' };
+    // The pack button is always on the HUD for species that can have a pack: dim with 0, lit with the pack's size and order.
+    const packSlot = r => { if (!C.FEATURES.packOrders || !r) return null; const count = (r.raptors || []).filter(a => a.ally && !a.temp).length; if (!count && C.kinLimit && C.kinLimit(r) <= 0) return null; return { count, order: C.packOrderOf ? C.packOrderOf(r) : 'attack' }; };
     const packIcon = r => { const order = C.FEATURES.packOrders && C.packOrderOf ? C.packOrderOf(r) : 'attack';
       return order === 'defend' ? 'assets/pack_hud/pack_defend.png' : order === 'passive' ? 'assets/pack_hud/pack_passive.png' : 'assets/a6_hud/' + (r.packFocus?.until > r.seconds ? 'pack_focus' : 'pack_follow') + '.png'; };
     function drawA6Controls(r) {
@@ -895,7 +925,21 @@
     function label(text, x, y, color) {
       text = tr(text);
       ctx.font = 'bold 11px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713';
+      const parts = padGlyphOn() ? padSplit(text) : null;
+      if (parts && parts.some(p => typeof p !== 'string')) { drawGlyphLabel(parts, x, y, color); return; }
       ctx.strokeText(text, Math.round(x), Math.round(y)); ctx.fillStyle = color; ctx.fillText(text, Math.round(x), Math.round(y));
+    }
+    // World label with pad buttons: text pieces left to right, each button a small round or pill in its own colours.
+    function drawGlyphLabel(parts, x, y, color) {
+      const glyphW = g => g.shape === 'round' || g.shape === 'small' ? Math.max(14, ctx.measureText(g.text).width + 6) : ctx.measureText(g.text).width + 10;
+      const widths = parts.map(p => typeof p === 'string' ? ctx.measureText(p).width : glyphW(p) + 2); let cx = Math.round(x - widths.reduce((a, b) => a + b, 0) / 2); const cy = Math.round(y);
+      ctx.save(); ctx.textAlign = 'left';
+      parts.forEach((p, i) => {
+        if (typeof p === 'string') { ctx.lineWidth = 3; ctx.strokeStyle = '#101713'; ctx.strokeText(p, cx, cy); ctx.fillStyle = color; ctx.fillText(p, cx, cy); }
+        else { const w = glyphW(p), h = 14, left = cx + 1, top = cy - 11; ctx.beginPath(); if (ctx.roundRect) ctx.roundRect(left, top, w, h, h / 2); else ctx.rect(left, top, w, h); ctx.fillStyle = p.bg; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = '#0b0f0c'; ctx.stroke(); ctx.fillStyle = p.fg; ctx.textAlign = 'center'; ctx.fillText(p.text, left + w / 2, cy - 1); ctx.textAlign = 'left'; }
+        cx += widths[i];
+      });
+      ctx.restore();
     }
     function drawPortrait(r){
       const pc=shell.querySelector('.hud-portrait'),p=pc.getContext('2d'),state=r.hurt>0?'hurt':r.eating?'eat':r.attack||r.pounce>0?'fight':r.hidden||r.concealTime>0?'sneak':'idle',frame=game.save.settings.reducedMotion||reducedMotion.matches?0:Math.floor(r.seconds*4)%4,avatar=C.STATIC_SPECIES&&C.STATIC_SPECIES.has(r.species)?'assets/new_species/'+r.species+'_avatar.png':'assets/avatars/'+r.species+'_'+state+'_'+String(frame).padStart(3,'0')+'.png',path=catalog[avatar]?avatar:C.playerFrame(r.species,'idle','E',0);prepareImage(path);const im=skins[path]||images[path],meta=catalog[path];pc.dataset.species=r.species;pc.dataset.state=state;pc.dataset.sprite=path;if(!im&&meta)loadImage(path).catch(()=>{});
@@ -930,7 +974,9 @@
       if(actions.dataset.species!==r.species){actions.dataset.species=r.species;const icon=(id,html)=>actions.querySelector(`[data-slot="${id}"] .slot-icon`).innerHTML=html;
         icon('attack',imageTag('assets/ui/serrated_teeth.png','',true));icon('ability',imageTag('assets/ui/powerful_legs.png','',true));icon('eat',imageTag(config.diet==='herbivore'?'assets/ecology/herb.png':'assets/pickups/meat.png','',true));
         actions.querySelector('[data-slot="ability"] small').innerHTML='<span></span> · <span></span>';}
-      for(const el of actions.querySelectorAll('[data-slot]')){const word=controlWord(el.dataset.slot);el.hidden=!word;el.querySelector('kbd').textContent=word;}
+      for(const el of actions.querySelectorAll('[data-slot]')){const word=controlWord(el.dataset.slot);el.hidden=!word||el.dataset.slot==='command'&&!packSlot(r);el.querySelector('kbd').textContent=word;}
+      if(packSlot(r)){const p=packSlot(r),el=actions.querySelector('[data-slot="command"]');el.dataset.ready=String(p.count>0);el.querySelector('small').textContent=p.count?tr('FLOK')+' '+p.count+' · '+tr(PACK_ORDER_LABEL[p.order]):tr('FLOK')+' 0';const path=packIcon(r);if(el.dataset.icon!==path){el.dataset.icon=path;el.querySelector('.slot-icon').innerHTML=imageTag(path,'',true);}}
+      padGlyphs(actions);
       const slot=(id,fraction)=>{const el=actions.querySelector(`[data-slot="${id}"]`),f=Math.max(0,Math.min(1,fraction));el.style.setProperty('--cd',(1-f).toFixed(3));el.dataset.ready=String(f>=1);return el;};
       slot('attack',attackFraction);const ability=slot('ability',abilityFraction),parts=ability.querySelectorAll('small span');ability.dataset.tired=String(r.stamina<cost);ability.dataset.ready=String(abilityFraction>=1&&r.stamina>=cost);parts[0].textContent=config.skill;parts[1].textContent=cost+' ⚡';
     }
@@ -1522,11 +1568,12 @@
       drawExtrasHUD(r);drawTimeIcon(r); // Approved native HUD art, with the existing glyph as fallback.
       drawA6Controls(r);
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
-      shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : control('ability')+' KLAR');
+      shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : (C.FEATURES.gamepadFull?controlWord('ability'):control('ability'))+' KLAR');if(padGlyphOn())padGlyphs(shell.querySelector('#skill-label'));
       const config=C.PLAYER_SPECIES[r.species],cost=C.abilityCost(r),attackFraction=1-r.attackCooldown/(r.attackDuration||config.cooldown),abilityFraction=1-r.pounceCooldown/(r.abilityCooldownDuration||config.abilityCooldown);
       shell.querySelector('#attack-fill').style.width=Math.max(0,Math.min(100,attackFraction*100))+'%';shell.querySelector('#ability-fill').style.width=Math.max(0,Math.min(100,abilityFraction*100))+'%';const padA=shell.querySelector('.pad-a'),padB=shell.querySelector('.pad-b');if(padA)padA.style.setProperty('--cd',Math.max(0,Math.min(1,1-attackFraction)).toFixed(3));if(padB){padB.style.setProperty('--cd',Math.max(0,Math.min(1,1-abilityFraction)).toFixed(3));padB.classList.toggle('pad-tired',r.stamina<cost);}
       shell.querySelector('#attack-ready').textContent=controlWord('attack')+' · '+(r.attackCooldown>0?r.attackCooldown.toFixed(1)+' s':'KLAR');shell.querySelector('#ability-ready').textContent=controlWord('ability')+' · '+(r.pounceCooldown>0?r.pounceCooldown.toFixed(1)+' s':r.stamina<cost?'MANGLER STAMINA':'KLAR')+' · '+cost+' ⚡';
-      shell.querySelector('.action-cooldowns').dataset.ready=String(r.pounceCooldown===0&&r.stamina>=cost);
+      {const p=packSlot(r),el=shell.querySelector('#pack-ready');el.hidden=!p||!controlWord('command');if(!el.hidden){el.dataset.ready=String(p.count>0);el.textContent=controlWord('command')+' · '+tr('FLOK')+' '+p.count+(p.count?' · '+tr(PACK_ORDER_LABEL[p.order]):'');}}
+      if(padGlyphOn())padGlyphs(shell.querySelector('.action-cooldowns'));shell.querySelector('.action-cooldowns').dataset.ready=String(r.pounceCooldown===0&&r.stamina>=cost);
       updateHudLayout(r,attackFraction,abilityFraction,cost);
       bossHUD.hidden = !boss || !['playing', 'paused', 'mutation'].includes(game.phase);
       if (boss) { bossHUD.querySelector('b').textContent = (boss.bossName || game.currentLevel().bossName) + (' · FASE ' + boss.bossPhase) + ' · ' + Math.round(Math.hypot(boss.x - r.player.x, boss.y - r.player.y) / 32) + ' m · find ◆ på kortet' + (boss.mode === 'stalk' ? ' · LURER VED BREDDEN' : boss.mode === 'leash' ? ' · VENDER HJEM' : boss.mode === 'reposition' ? ' · SØGER EN VEJ' : ''); bossHUD.dataset.bossPhase = boss.bossPhase; const tip = bossHUD.querySelector('.boss-tip'); tip.hidden = false; tip.textContent = boss.mode === 'recover' ? 'ÅBEN FLANKE · +50 % SKADE BAGFRA' : boss.mode === 'enrage' ? ({carnotaurus:'FASE 2 · DOBBELT STORMLØB OG TRAMP',deinosuchus:'FASE 2 · HURTIGT BAGHOLD OG STØRRE HALEBØLGE',triceratops:'FASE 2 · DOBBELT HORNSTORM',tyrannosaurus:'FASE 2 · DOBBELTBID OG BRØL',pachycephalosaurus:'FASE 2 · HURTIGERE KUPPELSTØD',baryonyx:'FASE 2 · HURTIGERE KLØGAB',ankylosaurus:'FASE 2 · HURTIGERE HALESVING'})[boss.kind] : boss.mode === 'windup' ? boss.attackName : 'UNDVIG SIDEVÆRT · BID, NÅR DEN HVILER'; bossHUD.querySelector('i').style.width = Math.max(0, boss.hp / boss.maxHP * 100) + '%'; }
