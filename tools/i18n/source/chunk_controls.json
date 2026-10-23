@@ -50,5 +50,33 @@
  {
   "da": "Tasten understøttes ikke",
   "en": "That key is not supported"
+ },
+ {
+  "da": "Spillet er pauset. Vælg med @ og bekræft med @.",
+  "en": "The game is paused. Choose with @ and confirm with @."
+ },
+ {
+  "da": "Vibration i controller",
+  "en": "Controller vibration"
+ },
+ {
+  "da": "Controller tilsluttet",
+  "en": "Controller connected"
+ },
+ {
+  "da": "Controller frakoblet",
+  "en": "Controller disconnected"
+ },
+ {
+  "da": "FORTSÆT · @",
+  "en": "CONTINUE · @"
+ },
+ {
+  "da": "Controller",
+  "en": "Controller"
+ },
+ {
+  "da": "Tryk en knap på controlleren · @ annullerer",
+  "en": "Press a controller button · @ cancels"
  }
 ]

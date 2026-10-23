@@ -301,3 +301,16 @@ img.thumb{image-rendering:pixelated;object-fit:contain}.species-grid img.thumb{w
 .stat-row em{font-style:normal;font-size:11px;text-align:right;font-variant-numeric:tabular-nums}.stat-row.up em{color:#9fcf6a}.stat-row.down em{color:#ed7869}
 .stat-bar{grid-column:2/-1;position:relative;display:block;width:auto;height:3px;background:#ffffff14}.stat-bar s{position:absolute;left:0;top:0;bottom:0;background:#c3a35c99;text-decoration:none}.stat-row.up .stat-bar s{background:#9fcf6acc}.stat-row.down .stat-bar s{background:#ed7869cc}.stat-bar u{position:absolute;top:-2px;bottom:-2px;width:2px;margin-left:-1px;background:#efdfb8}
 .stat-sheet>.fine{grid-column:1/-1;margin:4px 0 0;font-size:10px;color:#8b9682}
+/* FEATURES.gamepadFull: the controller's menu focus is always visible, also on mutation cards and settings. */
+.primal-shell[data-input="gamepad"] .screen :is(button,select,input,a):focus{outline:4px solid #f4cf6a;outline-offset:3px;box-shadow:0 0 0 8px #f4cf6a33,0 0 22px #f4cf6a66}
+.primal-shell[data-input="gamepad"] .screen .rarity-card:focus{transform:translateY(-4px);background:#2f4632}
+.primal-shell[data-input="gamepad"] .screen .check input:focus{outline-offset:2px}
+.pad-glyph{display:inline-flex;align-items:center;justify-content:center;min-width:1.55em;height:1.55em;padding:0 .35em;border-radius:999px;background:var(--gbg,#30363c);color:var(--gfg,#f1f1f1);font:800 .82em/1 system-ui,sans-serif;letter-spacing:0;vertical-align:middle;box-shadow:inset 0 -2px 0 #0006,0 0 0 1px #ffffff38,0 1px 0 #0008;text-shadow:none}
+.pad-glyph.pad-round{width:1.55em;padding:0}.pad-glyph.pad-small{min-width:1.35em;height:1.35em;font-size:.75em}.pad-glyph.pad-pill{border-radius:.45em;min-width:2.1em}
+kbd.pad-kbd{padding:0;background:none;border:0;box-shadow:none}
+/* Pack button on the HUD (classic and A/B/C): dim until there is a pack. */
+#pack-ready{flex:0 0 auto;align-self:center;font-size:10px;white-space:nowrap;padding:3px 7px;border:1px solid #c3a35c88;border-radius:3px;color:#efdfb8}#pack-ready[data-ready="false"]{opacity:.5;border-color:#50623d88}
+.hud-slot[data-slot="command"][data-ready="false"]{opacity:.5}
+/* Keys page with a controller column (FEATURES.gamepadFull): action | key | pad button | reset. */
+.key-list.with-pad{grid-template-columns:1fr;gap:5px}.with-pad .key-row,.key-head{display:grid;grid-template-columns:1fr 112px 112px 40px;gap:8px;align-items:center}.key-head{margin-top:10px}.key-head b{font-size:10px;letter-spacing:2px;color:#c3a35c;text-align:center}.pad-cap{white-space:normal;line-height:1.25;font-size:10px;padding:5px 6px}.pad-cap .pad-glyph{font-size:15px}.pad-cap-fixed{text-align:center;font-size:10px;color:#8e9d87}
+@media(max-width:800px){.with-pad .key-row,.key-head{grid-template-columns:1fr 92px 92px 36px}.key-cap{min-width:0}}

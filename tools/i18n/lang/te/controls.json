@@ -11,5 +11,12 @@
  "Nulstil alle": "అన్నీ రీసెట్",
  "Nulstillet til standard": "డిఫాల్ట్‌కు మార్చబడింది",
  "Byttet med {0}": "{0}తో మార్చబడింది",
- "Tasten understøttes ikke": "ఈ కీకి మద్దతు లేదు"
+ "Tasten understøttes ikke": "ఈ కీకి మద్దతు లేదు",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "ఆట ఆగి ఉంది. @ తో ఎంచుకో, @ తో నిర్ధారించు.",
+ "Vibration i controller": "కంట్రోలర్ వైబ్రేషన్",
+ "Controller tilsluttet": "కంట్రోలర్ కనెక్ట్ అయింది",
+ "Controller frakoblet": "కంట్రోలర్ డిస్‌కనెక్ట్ అయింది",
+ "FORTSÆT · @": "కొనసాగించు · @",
+ "Controller": "కంట్రోలర్",
+ "Tryk en knap på controlleren · @ annullerer": "కంట్రోలర్ బటన్ నొక్కు · @ రద్దు"
 }

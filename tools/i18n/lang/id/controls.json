@@ -11,5 +11,12 @@
  "Nulstil alle": "Atur ulang semua",
  "Nulstillet til standard": "Kembali ke bawaan",
  "Byttet med {0}": "Ditukar dengan {0}",
- "Tasten understøttes ikke": "Tombol itu tidak didukung"
+ "Tasten understøttes ikke": "Tombol itu tidak didukung",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "Permainan dijeda. Pilih dengan @ lalu konfirmasi dengan @.",
+ "Vibration i controller": "Getaran kontroler",
+ "Controller tilsluttet": "Kontroler tersambung",
+ "Controller frakoblet": "Kontroler terputus",
+ "FORTSÆT · @": "LANJUT · @",
+ "Controller": "Kontroler",
+ "Tryk en knap på controlleren · @ annullerer": "Tekan tombol kontroler · @ batal"
 }

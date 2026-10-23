@@ -11,5 +11,12 @@
  "Nulstil alle": "सर्व रीसेट",
  "Nulstillet til standard": "डीफॉल्टवर परत",
  "Byttet med {0}": "{0} शी अदलाबदल",
- "Tasten understøttes ikke": "ही की चालत नाही"
+ "Tasten understøttes ikke": "ही की चालत नाही",
+ "Spillet er pauset. Vælg med @ og bekræft med @.": "खेळ थांबला आहे. @ ने निवडा आणि @ ने पक्के करा.",
+ "Vibration i controller": "कंट्रोलर कंपन",
+ "Controller tilsluttet": "कंट्रोलर जोडला",
+ "Controller frakoblet": "कंट्रोलर काढला",
+ "FORTSÆT · @": "सुरू ठेवा · @",
+ "Controller": "कंट्रोलर",
+ "Tryk en knap på controlleren · @ annullerer": "कंट्रोलरचे बटण दाबा · @ रद्द करते"
 }

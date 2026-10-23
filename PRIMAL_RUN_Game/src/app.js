@@ -15,7 +15,11 @@
     // Bracketed button names are translated by I18N like key names, so every sentence keeps one dictionary entry.
     const PAD_CONTROLS={attack:'A',ability:'B',eat:'X',interact:'Y',sneak:'RB',command:'LB',move:'[VENSTRE PIND]',pause:'[☰]'},TOUCH_CONTROLS={attack:'[ANGREB]',ability:'[EVNE]',eat:'[SPIS]',interact:'[UNDERSØG]',sneak:'',command:'[FLOK]',move:'[JOYSTICK]',pause:'[PAUSE]'};
     let inputMode=root.matchMedia&&root.matchMedia('(pointer:coarse)').matches?'touch':'keyboard',inputModeTimer=0;
-    const control=action=>inputMode==='gamepad'?PAD_CONTROLS[action]:inputMode==='touch'?TOUCH_CONTROLS[action]:action==='move'?['up','left','down','right'].map(keyLabel).join(''):action==='pause'?'ESC':keyLabel(action);
+    // FEATURES.gamepadFull: button names follow the pad in use (Xbox A/B/X/Y, PlayStation ✕○□△, Nintendo B/A/Y/X by position).
+    const GP=root.PrimalGamepad,PAD_BUTTON={attack:'south',ability:'east',eat:'west',interact:'north',sneak:'rb',command:'lb',pause:'menu'};let padFamily='xbox';
+    const padButtonOf=action=>C.FEATURES.gamepadFull&&game.save.padBindings&&game.save.padBindings[action]||PAD_BUTTON[action];
+    const padControl=action=>C.FEATURES.gamepadFull&&GP&&PAD_BUTTON[action]?GP.label(padFamily,padButtonOf(action)):PAD_CONTROLS[action];
+    const control=action=>inputMode==='gamepad'?padControl(action):inputMode==='touch'?TOUCH_CONTROLS[action]:action==='move'?['up','left','down','right'].map(keyLabel).join(''):action==='pause'?'ESC':keyLabel(action);
     const controlWord=action=>control(action).replace(/^\[(.*)\]$/,'$1'),controlName=action=>tr(controlWord(action)); // HUD text (translated per frame) / ready-made <kbd> text
     // hudLayouts: the PC HUD layout the player picked (classic, A, B or C); touch always keeps the classic HUD.
     const hudLayout=()=>C.FEATURES.hudLayouts&&inputMode!=='touch'?game.save.settings.hudLayout||'classic':'classic';
@@ -30,8 +34,8 @@
     const shell = document.createElement('div'); shell.className = 'primal-shell';
     shell.innerHTML = `<style>${stylesheet}</style><header class="masthead"><a class="wordmark" href="#" data-action="home">PRIMAL<span>RUN</span></a><span class="edition">DINOSAURER · ROGUELITE</span><button class="quiet" data-action="pause" id="pause-button" hidden>Pause · Esc</button></header>
       <main class="arena"><canvas width="960" height="640" tabindex="0" aria-label="Spilområde. WASD eller piletaster flytter, Space angriber, Shift bruger evne, F spiser, Escape pauser."></canvas>
-      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="meter xp hud-x" title="XP"><i></i></div><small id="xp-label" class="hud-x"></small><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="pack-chip" hidden><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div><div id="extras-chip" class="extras-chip" hidden></div><div class="build-bar" hidden></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b><div class="meter goal hud-x"><i></i></div><div class="goal-row hud-x"><span id="goal-dna"></span><span id="goal-time"></span></div></div></div><div class="hud-top" hidden><div class="meter"><i></i></div><b id="top-level"></b><b id="top-time"></b></div><div class="hud-actions" hidden><div class="hud-slot" data-slot="attack"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small>Angreb</small></div><div class="hud-slot" data-slot="ability"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small></small></div><span class="slot-gap"></span><div class="hud-slot small" data-slot="eat"><span class="slot-icon"></span><kbd></kbd><small>Spis</small></div><div class="hud-slot small" data-slot="sneak"><span class="slot-icon">◐</span><kbd></kbd><small>Snig</small></div><div class="hud-slot small" data-slot="interact"><span class="slot-icon">?</span><kbd></kbd><small>Undersøg</small></div></div><div class="hud-prompt" hidden></div>
-      <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div></div></div>
+      <div class="hud" hidden><div class="hud-card"><canvas class="hud-portrait" width="64" height="64" aria-hidden="true"></canvas><div class="hud-bars"><div class="meter health" title="Liv"><i></i><span class="segments"></span><b id="health-label"></b></div><div class="meter stamina" title="Stamina"><i></i><em class="cost-mark"></em></div><div class="meter xp hud-x" title="XP"><i></i></div><small id="xp-label" class="hud-x"></small><div class="hud-chips"><span id="food-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="dna-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="pack-chip" hidden><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span><span id="zone-chip"><canvas class="chip-icon" width="24" height="24" aria-hidden="true" hidden></canvas><span class="chip-value"></span></span></div><div id="extras-chip" class="extras-chip" hidden></div><div class="build-bar" hidden></div></div></div><div class="hunt-counter"><small id="biome-label"></small><b id="meat-label"></b><div class="meter goal hud-x"><i></i></div><div class="goal-row hud-x"><span id="goal-dna"></span><span id="goal-time"></span></div></div></div><div class="hud-top" hidden><div class="meter"><i></i></div><b id="top-level"></b><b id="top-time"></b></div><div class="hud-actions" hidden><div class="hud-slot" data-slot="attack"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small>Angreb</small></div><div class="hud-slot" data-slot="ability"><span class="slot-icon"></span><i class="slot-cd"></i><kbd></kbd><small></small></div><span class="slot-gap"></span><div class="hud-slot small" data-slot="eat"><span class="slot-icon"></span><kbd></kbd><small>Spis</small></div><div class="hud-slot small" data-slot="sneak"><span class="slot-icon">◐</span><kbd></kbd><small>Snig</small></div><div class="hud-slot small" data-slot="interact"><span class="slot-icon">?</span><kbd></kbd><small>Undersøg</small></div><div class="hud-slot small" data-slot="command" hidden><span class="slot-icon"></span><kbd></kbd><small>Flok</small></div></div><div class="hud-prompt" hidden></div>
+      <div class="boss-hud" hidden><b></b><div class="meter"><i></i></div><small class="boss-tip"></small></div><div class="run-info" hidden><span id="level-label"></span><span id="dna-label"></span><span id="time-label"><canvas class="time-icon" width="16" height="16" aria-hidden="true" hidden></canvas><span class="time-glyph"></span><span class="time-value"></span></span><span id="skill-label"></span><span id="terrain-label"></span><div class="action-cooldowns"><div><b id="attack-ready"></b><div class="meter"><i id="attack-fill"></i></div></div><div><b id="ability-ready"></b><div class="meter"><i id="ability-fill"></i></div></div><b id="pack-ready" hidden></b></div></div>
       <div class="meat-progress" hidden><div><b>LEVEL-UP · FØDE / XP</b><span></span></div><div class="meter"><i></i></div><small></small></div><div class="screen" aria-live="polite"></div><div class="toast" role="status"></div><div class="build-tip" hidden></div><div class="loot-reel" hidden aria-live="polite"><div class="loot-strip"></div></div></main>
       <div class="touch-controls" hidden><div class="joystick" role="group" aria-label="Flytbar joystick"><i></i></div><div class="dpad"><button data-key="ArrowUp" aria-label="Op">↑</button><button data-key="ArrowLeft" aria-label="Venstre">←</button><button data-key="ArrowDown" aria-label="Ned">↓</button><button data-key="ArrowRight" aria-label="Højre">→</button></div><div><button data-key="Space" class="pad-a">ANGREB</button><button data-key="ShiftLeft" class="pad-b">EVNE</button><button data-key="KeyE" class="pad-x">UNDERSØG</button><button data-key="KeyF" class="pad-y">SPIS</button><button data-key="KeyQ" class="pack-key pad-l" hidden>FLOK</button><button data-sneak-toggle class="pad-sneak" aria-pressed="false" hidden>SNIG</button></div></div>
       <footer><span class="control-hints"><span data-control="move"><kbd></kbd> Bevæg</span><span data-control="attack"> · <kbd></kbd> Angreb</span><span data-control="ability"> · <kbd></kbd> Evne</span><span data-control="sneak"> · <kbd></kbd> Snig / skjul</span><span data-control="eat"> · <kbd></kbd> Hold for at spise</span><span data-control="interact"> · <kbd></kbd> Undersøg</span><span data-control="pause"> · <kbd></kbd> Pause</span></span><span class="save-status"></span></footer>`;
@@ -43,6 +47,7 @@
     const sheets = {}, sheetLoads = {}, frameCanvases = {};
     const catalog = root.PrimalAssets, previewMap = C.createMap(0);
     let bindingAction=null,seedInput='',friendChallenge=null,friendRun=null,friendRunOf=null,joystick={x:0,y:0},joyPointer=null,joyOrigin={x:0,y:0},padPrevious=[];
+    const padTracker=GP?GP.createTracker():null,padRepeat=GP?GP.createRepeater():null;let padFocusKey='',padHealth={run:null,hp:0},padMenuOpen=false,padHold=false,padBindingAction=null;
     let menuClock=0;const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
     const menuScene=()=>['menu','species','shop','scores','help','guide','achievements','titles','daily','challenges'].includes(game.phase) || game.phase==='settings' && returnPhase==='menu' || game.phase==='keys' && keysReturn==='settings' && returnPhase==='menu';
     const pausedBehind=()=>game.phase==='settings'&&returnPhase==='paused'||game.phase==='keys'&&(keysReturn==='paused'||returnPhase==='paused'); // a menu opened from the pause screen
@@ -183,7 +188,80 @@
     function button(action, text, className = '') { return `<button class="${className}" data-action="${action}">${text}</button>`; }
     function updateControlHints() {
       shell.dataset.input = inputMode;
-      shell.querySelectorAll('[data-control]').forEach(el => { const label = controlName(el.dataset.control); el.hidden = !label; el.querySelector('kbd').textContent = label; });
+      shell.querySelectorAll('[data-control]').forEach(el => { const label = controlName(el.dataset.control); el.hidden = !label; el.querySelector('kbd').textContent = label; el.querySelector('kbd').classList.remove('pad-kbd'); });
+      padGlyphs(shell.querySelector('footer .control-hints'));
+    }
+    // FEATURES.gamepadFull: menus with D-pad or stick in every direction (held = repeat), A selects, B goes back, Y rerolls
+    // mutations, View toggles the pause guide. The focused element always shows a gold frame, and focus survives re-renders.
+    const padItems=()=>Array.from(screen.querySelectorAll('button:not(:disabled),select:not(:disabled),input:not([type=hidden]):not(:disabled),a[href]')).filter(el=>el.getClientRects().length&&!el.closest('[hidden]'));
+    const padKey=el=>el?[el.tagName,el.id,el.className,...Object.entries(el.dataset||{}).map(([k,v])=>k+'='+v),el.textContent.trim().slice(0,24)].join('|'):'';
+    function padFocus(el){if(!el)return;el.focus({preventScroll:true});el.scrollIntoView?.({block:'nearest',inline:'nearest'});padFocusKey=padKey(el);}
+    function padBack(){
+      if(bindingAction){bindingAction=null;renderScreen(true);return;}
+      const back=Array.from(screen.querySelectorAll('[data-action="back"],[data-action="keys-back"],[data-action="menu"]')).find(b=>b.getClientRects().length&&b.textContent.includes('←'));
+      if(back){back.click();return;}
+      root.dispatchEvent(new KeyboardEvent('keydown',{code:'Escape',key:'Escape'}));
+    }
+    function padMenu(pad,buttons,dt){
+      const open=game.phase!=='playing'&&!!pad&&!screen.hidden,held=open?GP.direction(pad):'';
+      if(open&&!padMenuOpen)padHold=!!held; // a stick still held from the hunt does not move the focus on a new menu
+      padMenuOpen=open;if(!held)padHold=false;
+      const dir=padRepeat(padHold?'':held,dt);
+      if(!open)return;
+      const pressed=i=>buttons[i]&&!padPrevious[i],items=padItems();
+      if(padBindingAction){
+        if(pressed(GP.BUTTON.menu)){padBindingAction=null;renderScreen(true);return;}
+        const button=C.PAD_BUTTONS.find(b=>pressed(GP.BUTTON[b]));if(!button)return;
+        const action=padBindingAction,swap=game.swapPadBinding(action,button);padBindingAction=null;padFocusKey='';renderScreen(true);
+        if(swap&&swap.other){shell.querySelector('.toast').textContent=I18N.tf('Byttet med {0}',tr(ACTION_LABELS[swap.other]));toastUntil=performance.now()+2600;}
+        const cap=screen.querySelector(`[data-pad-binding="${action}"]`);if(cap)padFocus(cap);return;
+      }
+      if(pressed(GP.BUTTON.east)){padBack();return;}
+      if(game.phase==='mutation'&&pressed(GP.BUTTON.north)&&game.reroll&&game.reroll()){renderScreen(true);return;}
+      if(C.FEATURES.pauseGuide&&game.phase==='paused'&&pressed(GP.BUTTON.view)){game.setSetting('pauseGuide',!game.save.settings.pauseGuide);renderScreen(true);return;}
+      if(!items.length)return;
+      let current=items.indexOf(document.activeElement);
+      if(current<0&&inputMode==='gamepad'){const el=items.find(x=>padKey(x)===padFocusKey)||items.find(x=>x.matches('[data-mutation]'))||items.find(x=>x.matches('.primary'))||items[0];padFocus(el);current=items.indexOf(el);}
+      const el=items[current];
+      if(dir){
+        if(el&&(dir==='left'||dir==='right')&&el.matches('input[type=range]')){const min=+el.min||0,max=el.max===''?100:+el.max;el.value=String(Math.max(min,Math.min(max,+el.value+(dir==='left'?-1:1)*(max-min)/20)));el.dispatchEvent(new Event('input',{bubbles:true}));}
+        else if(el&&(dir==='left'||dir==='right')&&el.tagName==='SELECT'){el.selectedIndex=Math.max(0,Math.min(el.options.length-1,el.selectedIndex+(dir==='left'?-1:1)));el.dispatchEvent(new Event('change',{bubbles:true}));}
+        else padFocus(items[GP.navigate(items.map(x=>{const b=x.getBoundingClientRect();return{x:b.left,y:b.top,w:b.width,h:b.height};}),current,dir)]);
+      }
+      if(pressed(GP.BUTTON.south)&&el){if(el.tagName==='SELECT'){el.selectedIndex=(el.selectedIndex+1)%el.options.length;el.dispatchEvent(new Event('change',{bubbles:true}));}else{padFocusKey=padKey(el);el.click();}}
+    }
+    // Real buttons per controller: a pad label in a <kbd>, a sentence or a world label is drawn as that pad's button
+    // (Xbox coloured A/B/X/Y, PlayStation ✕○□△, Switch and Steam Deck dark buttons). Texts and translations stay as they are.
+    const padGlyphOn=()=>C.FEATURES.gamepadFull&&GP&&inputMode==='gamepad';
+    let padTokenCache={family:'',re:null};
+    function padTokens(){
+      if(padTokenCache.family===padFamily)return padTokenCache.re;
+      const words=[...new Set(Object.values(GP.LABELS[padFamily]||GP.LABELS.xbox).flatMap(w=>/^\[.*\]$/.test(w)?[w,w.slice(1,-1)]:[w]))].sort((a,b)=>b.length-a.length).map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+      padTokenCache={family:padFamily,re:new RegExp('(^|[\\s(·])('+words.join('|')+')(?=$|[\\s).,:;·!?])','g')};return padTokenCache.re;
+    }
+    // Text split into strings and glyphs. A capital letter that starts a sentence before a lowercase word stays a letter ("A cada ...").
+    function padSplit(text){
+      const out=[],re=padTokens();let last=0;re.lastIndex=0;
+      for(let m;(m=re.exec(text));){const start=m.index+m[1].length,before=text.slice(0,start).trimEnd(),g=GP.glyph(padFamily,m[2]);
+        if(!g||/^[A-Z]$/.test(m[2])&&(!before||/[.!?]$/.test(before))&&/^\s\p{Ll}/u.test(text.slice(start+1)))continue;
+        if(start>last)out.push(text.slice(last,start));out.push(g);last=start+m[2].length;}
+      if(last<text.length)out.push(text.slice(last));
+      return out;
+    }
+    const glyphHTML=g=>`<span class="pad-glyph pad-${g.shape}" style="--gbg:${g.bg};--gfg:${g.fg}" translate="no">${htmlEscape(g.text)}</span>`;
+    function padGlyphs(node){
+      if(!node||!padGlyphOn())return;
+      for(const kbd of node.querySelectorAll('kbd')){if(kbd.closest('[data-binding]'))continue;const g=GP.glyph(padFamily,kbd.textContent.trim());kbd.classList.toggle('pad-kbd',!!g);if(g)kbd.innerHTML=glyphHTML(g);}
+      const walker=document.createTreeWalker(node,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('.pad-glyph,kbd,script,style,select,option,textarea,canvas')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}),texts=[];
+      for(let n;(n=walker.nextNode());)texts.push(n);
+      for(const n of texts){const parts=padSplit(n.nodeValue);if(parts.length===1&&typeof parts[0]==='string'||!parts.length)continue;const span=document.createElement('span');span.innerHTML=parts.map(p=>typeof p==='string'?htmlEscape(p):glyphHTML(p)).join('');n.replaceWith(...span.childNodes);}
+    }
+    // Rumble when the player loses health (stronger for bigger hits); Chrome/Edge only, off in settings.
+    function padRumble(pad){
+      const r=game.run;if(!r)return;
+      if(padHealth.run!==r){padHealth={run:r,hp:r.health};return;}
+      const lost=padHealth.hp-r.health;padHealth.hp=r.health;
+      if(lost>.5&&pad&&inputMode==='gamepad'&&game.save.settings.rumble!==false)GP.rumble(pad.raw,Math.min(1,.25+lost/30),Math.min(1,.2+lost/50),Math.round(Math.min(320,90+lost*6)));
     }
     // Species texts say "Space:", "Shift:" and "Hold F"; after translation they get the active control's name.
     function adaptControls(node) {
@@ -208,12 +286,20 @@
         ${sp.skillText ? `<p class="pause-skill" data-controls><kbd translate="no">${htmlEscape(controlName('ability'))}</kbd> <b>${sp.skill || ''}</b> · ${sp.skillText}</p>` : ''}
         ${sp.diet ? `<p>${foodHint(r.species)}</p>` : ''}
         <small class="eyebrow">Dine knapper</small><div class="pause-keys">${row('Bevæg', 'move')}${row('Angreb', 'attack')}${row('Evne', 'ability')}${row('Spis', 'eat')}${row('Undersøg', 'interact')}${row('Snig', 'sneak')}${row('Flok', 'command')}${row('Pause', 'pause')}</div>
-        ${inputMode === 'keyboard' ? '<p class="fine">H viser eller skjuler guiden.</p>' : ''}</aside>`;
+        ${inputMode === 'keyboard' ? '<p class="fine">H viser eller skjuler guiden.</p>' : C.FEATURES.gamepadFull && inputMode === 'gamepad' ? `<p class="fine">${GP.label(padFamily,'view')} viser eller skjuler guiden.</p>` : ''}</aside>`;
     }
     // FEATURES.keybindMenu (2026-10-23): own keyboard page from pause and settings; a taken key swaps, every action can be reset.
+    // FEATURES.gamepadFull: a controller column on the keys page. A (or a click) waits for a pad button; a taken button swaps.
+    const padChanged = action => C.FEATURES.gamepadFull && C.PAD_BINDING_DEFAULTS && action in C.PAD_BINDING_DEFAULTS && game.save.padBindings[action] !== C.PAD_BINDING_DEFAULTS[action];
+    function padCap(action) {
+      if (!C.FEATURES.gamepadFull || !GP) return '';
+      if (!(action in (C.PAD_BINDING_DEFAULTS || {}))) return `<span class="pad-cap-fixed">${action === 'up' ? '<small>VENSTRE PIND</small>' : ''}</span>`;
+      const button = padButtonOf(action), g = GP.glyph(padFamily, GP.label(padFamily, button));
+      return `<button class="key-cap pad-cap" data-pad-binding="${action}" aria-label="${ACTION_LABELS[action] || action} · Controller">${padBindingAction === action ? tr('Tryk en knap på controlleren · ' + GP.label(padFamily, 'menu') + ' annullerer') : g ? glyphHTML(g) : htmlEscape(button)}</button>`;
+    }
     function keysHTML() {
-      const b = game.save.bindings, rows = Object.keys(b).map(action => `<div class="key-row"><span>${ACTION_LABELS[action] || action}</span><button class="key-cap" data-binding="${action}" aria-label="${ACTION_LABELS[action] || action}"><kbd translate="no">${htmlEscape(keyLabel(action).replace(/^\[(.*)\]$/, '$1'))}</kbd></button><button class="key-reset" data-reset-binding="${action}" title="Nulstil" aria-label="Nulstil" ${b[action] === C.BINDING_DEFAULTS[action] ? 'disabled' : ''}>↺</button></div>`).join('');
-      return `<section class="panel keys-panel">${heading('DINE TASTER', 'Tastatur', 'Klik på en handling, og tryk en ny tast.')}<div class="key-list">${rows}</div><p class="fine">Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.</p><div class="actions">${button('reset-bindings', 'Nulstil alle')}${button('keys-back', '← Tilbage', 'primary')}</div></section>`;
+      const b = game.save.bindings, rows = Object.keys(b).map(action => `<div class="key-row"><span>${ACTION_LABELS[action] || action}</span><button class="key-cap" data-binding="${action}" aria-label="${ACTION_LABELS[action] || action}"><kbd translate="no">${htmlEscape(keyLabel(action).replace(/^\[(.*)\]$/, '$1'))}</kbd></button>${padCap(action)}<button class="key-reset" data-reset-binding="${action}" title="Nulstil" aria-label="Nulstil" ${b[action] === C.BINDING_DEFAULTS[action] && !padChanged(action) ? 'disabled' : ''}>↺</button></div>`).join('');
+      return `<section class="panel keys-panel">${heading('DINE TASTER', C.FEATURES.gamepadFull && inputMode === 'gamepad' ? 'Controller' : 'Tastatur', 'Klik på en handling, og tryk en ny tast.')}${C.FEATURES.gamepadFull ? '<div class="key-row key-head"><span></span><b>Tastatur</b><b>Controller</b><span></span></div>' : ''}<div class="key-list${C.FEATURES.gamepadFull ? ' with-pad' : ''}">${rows}</div><p class="fine">Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.</p><div class="actions">${button('reset-bindings', 'Nulstil alle')}${button('keys-back', '← Tilbage', 'primary')}</div></section>`;
     }
     function heading(kicker, title, text = '') { return `<small class="eyebrow">${kicker}</small><h1>${title}</h1>${text ? `<p class="intro">${text}</p>` : ''}`; }
     function renderScreen(force = false) {
@@ -280,7 +366,7 @@
           return `<article><h2>${u.name}</h2><p>${u.text}</p><p>Rang ${rank} → ${Math.min(u.max,rank+1)} / ${u.max} · ${rank>=u.max?'Maksimum':game.save.dna>=cost?'Klar til udvikling':'Mangler '+(cost-game.save.dna)+' DNA'}</p><div class="ranks">${'●'.repeat(rank)}${'○'.repeat(u.max - rank)}</div><button data-buy="${u.id}" ${rank >= u.max || game.save.dna < cost ? 'disabled' : ''}>${rank >= u.max ? 'Fuldt udviklet' : cost + ' DNA · Køb rang ' + (rank + 1)}</button></article>`;
         }).join('')}</div>${C.FEATURES.blueprints ? `<h2 class="lab-section">Mutationstegninger</h2><p class="fine">Nye mutationer kommer først i puljen, når tegningen er købt.</p><div class="upgrade-grid">${C.BLUEPRINTS.map(b => { const m = C.MUTATIONS.find(x => x.id === b.id), owned = game.save.blueprints.includes(b.id); return `<article><h2>${m.name}</h2><p>${m.text}</p><p>${C.MUTATION_RARITIES[m.rarity].name}</p><button data-blueprint="${b.id}" ${owned || game.save.dna < b.cost ? 'disabled' : ''}>${owned ? 'I puljen' : b.cost + ' DNA · Køb tegning'}</button></article>`; }).join('')}</div>` : ''}${button('menu', '← Tilbage')}</section>`;
       } else if (phase === 'settings') {
-        screen.innerHTML = `<section class="panel">${heading('FIND DIN BALANCE', 'Indstillinger')}<div class="settings"><label>Sprog / Language<select id="language-select" data-language aria-label="Sprog / Language">${I18N.LANGUAGES.map(l=>`<option value="${l.id}" ${l.id===(game.save.settings.language||'da')?'selected':''} translate="no">${l.name}${l.fun ? ' (' + I18N.t('for sjov') + ')' : ''}</option>`).join('')}</select></label>${[['master', 'Samlet lyd'], ['music', 'Musik'], ['sfx', 'Lydeffekter'], ['ambient', 'Naturlyde']].map(([id, label]) => `<label>${label}<output id="volume-${id}">${Math.round(game.save.settings[id] * 100)} %</output><input aria-label="${label}" data-setting="${id}" type="range" min="0" max="100" value="${Math.round(game.save.settings[id] * 100)}"></label>`).join('')}<label class="check"><input data-setting="shake" type="checkbox" ${game.save.settings.shake ? 'checked' : ''}> Kamerarystelse</label>${['autoAttack','reducedMotion'].map(id=>`<label class="check"><input data-setting="${id}" type="checkbox" ${game.save.settings[id]?'checked':''}>${id==='autoAttack'?'Automatisk angreb':'Reduceret bevægelse'}</label>`).join('')}${C.FEATURES.tipsToggle?`<label class="check"><input data-setting="tips" type="checkbox" ${game.save.settings.tips!==false?'checked':''}>Vis tips og råd</label>`:''}${C.FEATURES.runTelemetry?`<label class="check"><input data-setting="shareData" type="checkbox" ${game.save.settings.shareData?'checked':''}>Del anonyme spildata</label>`:''}${['hudScale','textScale'].map(id=>`<label>${id==='hudScale'?'HUD-størrelse':'Tekststørrelse'}<input data-setting="${id}" type="range" min="85" max="140" value="${game.save.settings[id]*100}"></label>`).join('')}${C.FEATURES.hudLayouts&&inputMode!=='touch'?hudPickerHTML(['classic','a','b','c']):''}${C.FEATURES.keybindMenu?`<div class="actions">${button('keys','Tastatur')}</div>`:''}<div class="bindings"${C.FEATURES.keybindMenu?' hidden':''}>${Object.entries(game.save.bindings).map(([action,code])=>`<button data-binding="${action}">${({up:'Op',down:'Ned',left:'Venstre',right:'Højre',attack:'Angreb',ability:'Evne',sneak:'Snig',eat:'Spis',interact:'Undersøg',command:'Flok'})[action]}: ${code.replace('Key','')}</button>`).join('')}</div><p>Gamepad: venstre pind bevæger · A angriber · B evne · X spiser · Y undersøger · RB sniger · Start pauser.</p></div><div class="actions">${button('mute', 'Slå al lyd fra')}${button('fullscreen', 'Fuldskærm')}${button('back', '← Tilbage', 'primary')}</div><p class="fine">Lyd starter efter et klik. Musikken er et originalt, proceduralt jagttema.</p></section>`;
+        screen.innerHTML = `<section class="panel">${heading('FIND DIN BALANCE', 'Indstillinger')}<div class="settings"><label>Sprog / Language<select id="language-select" data-language aria-label="Sprog / Language">${I18N.LANGUAGES.map(l=>`<option value="${l.id}" ${l.id===(game.save.settings.language||'da')?'selected':''} translate="no">${l.name}${l.fun ? ' (' + I18N.t('for sjov') + ')' : ''}</option>`).join('')}</select></label>${[['master', 'Samlet lyd'], ['music', 'Musik'], ['sfx', 'Lydeffekter'], ['ambient', 'Naturlyde']].map(([id, label]) => `<label>${label}<output id="volume-${id}">${Math.round(game.save.settings[id] * 100)} %</output><input aria-label="${label}" data-setting="${id}" type="range" min="0" max="100" value="${Math.round(game.save.settings[id] * 100)}"></label>`).join('')}<label class="check"><input data-setting="shake" type="checkbox" ${game.save.settings.shake ? 'checked' : ''}> Kamerarystelse</label>${['autoAttack','reducedMotion'].map(id=>`<label class="check"><input data-setting="${id}" type="checkbox" ${game.save.settings[id]?'checked':''}>${id==='autoAttack'?'Automatisk angreb':'Reduceret bevægelse'}</label>`).join('')}${C.FEATURES.tipsToggle?`<label class="check"><input data-setting="tips" type="checkbox" ${game.save.settings.tips!==false?'checked':''}>Vis tips og råd</label>`:''}${C.FEATURES.gamepadFull?`<label class="check"><input data-setting="rumble" type="checkbox" ${game.save.settings.rumble!==false?'checked':''}>Vibration i controller</label>`:''}${C.FEATURES.runTelemetry?`<label class="check"><input data-setting="shareData" type="checkbox" ${game.save.settings.shareData?'checked':''}>Del anonyme spildata</label>`:''}${['hudScale','textScale'].map(id=>`<label>${id==='hudScale'?'HUD-størrelse':'Tekststørrelse'}<input data-setting="${id}" type="range" min="85" max="140" value="${game.save.settings[id]*100}"></label>`).join('')}${C.FEATURES.hudLayouts&&inputMode!=='touch'?hudPickerHTML(['classic','a','b','c']):''}${C.FEATURES.keybindMenu?`<div class="actions">${button('keys','Tastatur')}</div>`:''}<div class="bindings"${C.FEATURES.keybindMenu?' hidden':''}>${Object.entries(game.save.bindings).map(([action,code])=>`<button data-binding="${action}">${({up:'Op',down:'Ned',left:'Venstre',right:'Højre',attack:'Angreb',ability:'Evne',sneak:'Snig',eat:'Spis',interact:'Undersøg',command:'Flok'})[action]}: ${code.replace('Key','')}</button>`).join('')}</div><p>Gamepad: venstre pind bevæger · A angriber · B evne · X spiser · Y undersøger · RB sniger · Start pauser.</p></div><div class="actions">${button('mute', 'Slå al lyd fra')}${button('fullscreen', 'Fuldskærm')}${button('back', '← Tilbage', 'primary')}</div><p class="fine">Lyd starter efter et klik. Musikken er et originalt, proceduralt jagttema.</p></section>`;
       } else if (phase === 'challenges') { // B6 Udfordringer
         const chosen = game.pendingChallenges || [], bonus = Math.round(100 * C.CHALLENGE_DNA * chosen.length);
         screen.innerHTML = `<section class="panel compact challenge-panel">${heading('UDFORDRINGER', 'Gør jagten sværere', I18N.tf('Vælg op til {0}. Hver udfordring giver +{1} % DNA, når du har besejret mindst én boss.', C.MAX_CHALLENGES, Math.round(100 * C.CHALLENGE_DNA)))}
@@ -310,13 +396,13 @@
           <li><b>Flokken.</b> ${C.FEATURES.kinPack && C.FEATURES.raptorDonate ? `Giv en vild artsfælle ${C.PACK.donate} af din egen føde med ${control('interact')}, så følger den dig. Store arter fylder mere i flokken, og en alfa vil have dobbelt så meget føde. Flokken forsvarer dig og bider det, du bider. ${control('command')} skifter ordre: Angrib, Forsvar mig eller Hold dig væk. Flokfæller har en ring om fødderne, og klømærket viser, at en flokfælle har taget et dyr.` : `${C.FEATURES.raptorDonate ? `Giv en vild raptor ${C.PACK.donate} af din egen føde med ${control('interact')}, så følger den dig. Baren over dens hoved viser, hvor meget den har fået.` : 'Fodr en vild raptor med kød, så følger den dig.'} Flokken forsvarer dig og bider det, du bider. ${control('command')} sender den efter dit bytte.`}</li></ol>
           <p class="fine">Kød rådner efter et stykke tid. ${control('pause')} pauser spillet.</p>${button('menu', '← Klar til jagt', 'primary')}</section>`;
       } else if (phase === 'paused') {
-        screen.innerHTML = `${C.FEATURES.pauseGuide?'<div class="pause-layout">':''}<section class="panel compact">${heading('TAG EN PAUSE', 'Jagten venter', 'Kort-seed: ' + r.seed)}${button('resume', 'FORTSÆT · Esc', 'primary')}${button('build', 'DIT BUILD')}${button('share', 'DEL KORT-SEED')}<label>Seed-link<input class="seed-link" readonly value="${htmlEscape((()=>{const url=new URL(location.href);url.searchParams.set('seed',r.seed);return url.href;})())}"></label><div class="actions">${button('settings', 'Indstillinger')}${C.FEATURES.keybindMenu&&inputMode==='keyboard'?button('keys','Tastatur'):''}${button('abandon', 'Afslut run')}</div><p class="fine">Opsamlet DNA er allerede gemt. Afslut run registrerer din score.</p></section>${C.FEATURES.pauseGuide?pauseGuideHTML(r)+'</div>':''}`;
+        screen.innerHTML = `${C.FEATURES.pauseGuide?'<div class="pause-layout">':''}<section class="panel compact">${heading('TAG EN PAUSE', 'Jagten venter', 'Kort-seed: ' + r.seed)}${button('resume', 'FORTSÆT · '+(C.FEATURES.gamepadFull&&inputMode==='gamepad'?padControl('pause'):'Esc'), 'primary')}${button('build', 'DIT BUILD')}${button('share', 'DEL KORT-SEED')}<label>Seed-link<input class="seed-link" readonly value="${htmlEscape((()=>{const url=new URL(location.href);url.searchParams.set('seed',r.seed);return url.href;})())}"></label><div class="actions">${button('settings', 'Indstillinger')}${C.FEATURES.keybindMenu&&inputMode==='keyboard'?button('keys','Tastatur'):C.FEATURES.keybindMenu&&C.FEATURES.gamepadFull&&inputMode==='gamepad'?button('keys','Controller'):''}${button('abandon', 'Afslut run')}</div><p class="fine">Opsamlet DNA er allerede gemt. Afslut run registrerer din score.</p></section>${C.FEATURES.pauseGuide?pauseGuideHTML(r)+'</div>':''}`;
       } else if (phase === 'keys') {
         screen.innerHTML = keysHTML();
       } else if (phase === 'build') {
         screen.innerHTML=`<section class="panel">${heading(C.PLAYER_SPECIES[r.species].name,'Dit build','Spillet er pauset.')}<p>${tr('Liv')}: ${Math.ceil(r.health)} / ${r.maxHealth} · Stamina: ${Math.round(r.stamina)} / 100 · ${tr('Evne')}: ${C.abilityCost(r)} stamina</p>${statSheetHTML()}<div class="mutation-grid">${C.MUTATIONS.filter(m=>r.mutations[m.id]>0).map(m=>`<article class="rarity-card" style="--rarity:${C.MUTATION_RARITIES[m.rarity].color}"><strong>${tr(m.name)}</strong><p>${tr('Rang')} ${r.mutations[m.id]} / ${m.max} · ${tr(C.MUTATION_RARITIES[m.rarity].name)}</p><p>${tr(m.text)}</p></article>`).join('')||`<p>${tr('Ingen mutationer endnu.')}</p>`}${(game.setBonuses?game.setBonuses():[]).map(tag=>`<article class="rarity-card set-card" style="--rarity:#dfbc52"><strong>${C.MUTATION_TAGS[tag].glyph} ${tr(C.SET_BONUSES[tag].name)}</strong><p>${tr('Sæt-bonus')} · ${tr(C.MUTATION_TAGS[tag].name)} ×${C.SET_SIZE}</p><p>${tr(C.SET_BONUSES[tag].text)}</p></article>`).join('')}${relicCards(r)}</div>${button('build-back','← Tilbage til pause')}</section>`;
       } else if (phase === 'mutation') {
-        const level = r.campaign[r.levelIndex], n = r.choices.length, press = n === 2 ? 'Spillet er pauset. Tryk 1 eller 2.' : n === 4 ? 'Spillet er pauset. Tryk 1, 2, 3 eller 4.' : 'Spillet er pauset. Tryk 1, 2 eller 3.';
+        const level = r.campaign[r.levelIndex], n = r.choices.length, press = C.FEATURES.gamepadFull && inputMode === 'gamepad' ? 'Spillet er pauset. Vælg med [VENSTRE PIND] og bekræft med ' + padControl('attack') + '.' : n === 2 ? 'Spillet er pauset. Tryk 1 eller 2.' : n === 4 ? 'Spillet er pauset. Tryk 1, 2, 3 eller 4.' : 'Spillet er pauset. Tryk 1, 2 eller 3.';
         const top = r.trophySelection ? heading('BOSSTROFÆ', I18N.tf('Trofæ fra {0}', tr(level.bossName)), press) : r.innateSelection ? heading('MEDFØDT MUTATION', 'Vælg din mutation', press) : heading(r.rareSelection?(r.rewardSource==='elite'?'ELITE NEDLAGT · EPISK GENOM':'SJÆLDEN ALBINO NEDLAGT · EPISK GENOM'):'DINO-LEVEL ' + r.level, 'Vælg din mutation', press);
         const sets = Object.entries(C.MUTATION_TAGS).map(([tag, t]) => ({ tag, t, count: C.tagCount(r, tag) })).filter(x => x.count > 0);
         screen.innerHTML = `<section class="panel">${top}<div class="mutation-grid">${r.choices.map((id, i) => {
@@ -326,7 +412,7 @@
           const card = `<button data-mutation="${id}" style="--rarity:${rarity.color}" class="rarity-card"><strong class="rarity-name">${rarityMark(m.rarity)} ${rarity.name.toUpperCase()}</strong>${imageTag('assets/ui/' + m.icon + '.png')}<small>${rank}</small><h2>${m.name}</h2><small>${m.species ? C.PLAYER_SPECIES[m.species].name.toUpperCase() : m.trophy ? 'BOSSTROFÆ' : "FÆLLES MUTATION"}</small>${tag ? `<small class="mutation-tag"><span aria-hidden="true">${tagMark(m.tag)}</span> <b>${tag.name}</b> <span>${Math.min(C.SET_SIZE, C.tagCount(r, m.tag))}/${C.SET_SIZE}</span></small>` : ''}<p>${m.text}</p>${m.evolution ? `<small class="evolution-recipe">${m.requires.map(([need, rank]) => `<b>${C.MUTATIONS.find(x => x.id === need).name}</b> ${rank}`).join(' + ')}</small>` : ''}${r.mutations[id]>0&&!m.trophy?'<small>BYG VIDERE · '+Math.round(Math.min(.4,.2*r.mutations[id])*100)+' % VALGVÆGT</small>':''}</button>`;
           const banish = game.banishLeft && game.banishLeft() > 0 && !m.evolution && !r.trophySelection ? `<button class="banish" data-banish="${id}">✕ UDELUK</button>` : '';
           return `<div class="mutation-option">${card}${banish}</div>`;
-        }).join('')}</div>${sets.length ? `<p class="set-progress">${sets.map(x => `<span class="${x.count >= C.SET_SIZE ? 'set-on' : ''}"><i aria-hidden="true">${tagMark(x.tag)}</i> <b>${x.t.name}</b> <span>${Math.min(x.count, C.SET_SIZE)}/${C.SET_SIZE}</span>${x.count >= C.SET_SIZE ? ` <em>${C.SET_BONUSES[x.tag].name}</em>` : ''}</span>`).join('')}</p>` : ''}${game.rerollsLeft&&game.rerollsLeft()>0&&!r.trophySelection?`<div class="actions"><button data-reroll="1">NYE VALG · R · ${game.rerollsLeft()} TILBAGE</button></div>`:''}${game.banishLeft && game.banishLeft() > 0 && !r.trophySelection ? `<p class="fine">${I18N.tf('Udeluk fjerner et kort resten af runnet. {0} tilbage.', game.banishLeft())}</p>` : ''}</section>`;
+        }).join('')}</div>${sets.length ? `<p class="set-progress">${sets.map(x => `<span class="${x.count >= C.SET_SIZE ? 'set-on' : ''}"><i aria-hidden="true">${tagMark(x.tag)}</i> <b>${x.t.name}</b> <span>${Math.min(x.count, C.SET_SIZE)}/${C.SET_SIZE}</span>${x.count >= C.SET_SIZE ? ` <em>${C.SET_BONUSES[x.tag].name}</em>` : ''}</span>`).join('')}</p>` : ''}${game.rerollsLeft&&game.rerollsLeft()>0&&!r.trophySelection?`<div class="actions"><button data-reroll="1">NYE VALG · ${C.FEATURES.gamepadFull&&inputMode==='gamepad'?padControl('interact'):'R'} · ${game.rerollsLeft()} TILBAGE</button></div>`:''}${game.banishLeft && game.banishLeft() > 0 && !r.trophySelection ? `<p class="fine">${I18N.tf('Udeluk fjerner et kort resten af runnet. {0} tilbage.', game.banishLeft())}</p>` : ''}</section>`;
       } else if (phase === 'exploration') {
         screen.innerHTML = `<section class="panel compact">${heading('VALGFRI RISIKO · SPILLET ER PAUSET', 'En bevogtet rede', 'Tag sjælden føde og væk den nærliggende elitevogter, eller lad reden være.')}<div class="actions"><button data-explore="leave">LAD DEN VÆRE</button><button class="primary" data-explore="take">TAG FØDEN · +${8 + r.stage * 2}</button></div></section>`;
       } else if (phase === 'cleared') {
@@ -338,10 +424,11 @@
       } else if (phase === 'error') {
         screen.innerHTML = `<section class="panel">${heading('INDLÆSNING FEJLEDE', 'Assets mangler')}<p>Kontrollér, at assets-mappen følger med spillet. Genindlæs siden efter rettelsen.</p><p class="load-error"></p></section>`;
       }
-      I18N.translateNode(screen); adaptControls(screen);
+      I18N.translateNode(screen); adaptControls(screen); padGlyphs(screen);
       if (phase === 'mutation') startMutationReel();
       if (phase === 'build') { const c = screen.querySelector('.sheet-portrait'), pc = shell.querySelector('.hud-portrait'); if (c && pc) c.getContext('2d').drawImage(pc, 0, 0); } // FEATURES.statSheet
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
+      if (C.FEATURES.gamepadFull && inputMode === 'gamepad' && padFocusKey) { const same = padItems().find(x => padKey(x) === padFocusKey); if (same) padFocus(same); }
       shell.querySelector('.save-status').textContent = tr(game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session');
     }
     // Asked once, after the first finished run: two equal buttons, changeable later in Indstillinger.
@@ -655,6 +742,8 @@
     }
     // Flok 2.0 (FEATURES.packOrders): the FLOK button and HUD chip show the current order.
     const PACK_ORDER_LABEL = { attack: 'ANGRIB', defend: 'FORSVAR MIG', passive: 'HOLD DIG VÆK' };
+    // The pack button is always on the HUD for species that can have a pack: dim with 0, lit with the pack's size and order.
+    const packSlot = r => { if (!C.FEATURES.packOrders || !r) return null; const count = (r.raptors || []).filter(a => a.ally && !a.temp).length; if (!count && C.kinLimit && C.kinLimit(r) <= 0) return null; return { count, order: C.packOrderOf ? C.packOrderOf(r) : 'attack' }; };
     const packIcon = r => { const order = C.FEATURES.packOrders && C.packOrderOf ? C.packOrderOf(r) : 'attack';
       return order === 'defend' ? 'assets/pack_hud/pack_defend.png' : order === 'passive' ? 'assets/pack_hud/pack_passive.png' : 'assets/a6_hud/' + (r.packFocus?.until > r.seconds ? 'pack_focus' : 'pack_follow') + '.png'; };
     function drawA6Controls(r) {
@@ -903,7 +992,21 @@
     function label(text, x, y, color) {
       text = tr(text);
       ctx.font = 'bold 11px monospace'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = '#101713';
+      const parts = padGlyphOn() ? padSplit(text) : null;
+      if (parts && parts.some(p => typeof p !== 'string')) { drawGlyphLabel(parts, x, y, color); return; }
       ctx.strokeText(text, Math.round(x), Math.round(y)); ctx.fillStyle = color; ctx.fillText(text, Math.round(x), Math.round(y));
+    }
+    // World label with pad buttons: text pieces left to right, each button a small round or pill in its own colours.
+    function drawGlyphLabel(parts, x, y, color) {
+      const glyphW = g => g.shape === 'round' || g.shape === 'small' ? Math.max(14, ctx.measureText(g.text).width + 6) : ctx.measureText(g.text).width + 10;
+      const widths = parts.map(p => typeof p === 'string' ? ctx.measureText(p).width : glyphW(p) + 2); let cx = Math.round(x - widths.reduce((a, b) => a + b, 0) / 2); const cy = Math.round(y);
+      ctx.save(); ctx.textAlign = 'left';
+      parts.forEach((p, i) => {
+        if (typeof p === 'string') { ctx.lineWidth = 3; ctx.strokeStyle = '#101713'; ctx.strokeText(p, cx, cy); ctx.fillStyle = color; ctx.fillText(p, cx, cy); }
+        else { const w = glyphW(p), h = 14, left = cx + 1, top = cy - 11; ctx.beginPath(); if (ctx.roundRect) ctx.roundRect(left, top, w, h, h / 2); else ctx.rect(left, top, w, h); ctx.fillStyle = p.bg; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = '#0b0f0c'; ctx.stroke(); ctx.fillStyle = p.fg; ctx.textAlign = 'center'; ctx.fillText(p.text, left + w / 2, cy - 1); ctx.textAlign = 'left'; }
+        cx += widths[i];
+      });
+      ctx.restore();
     }
     function drawPortrait(r){
       const pc=shell.querySelector('.hud-portrait'),p=pc.getContext('2d'),state=r.hurt>0?'hurt':r.eating?'eat':r.attack||r.pounce>0?'fight':r.hidden||r.concealTime>0?'sneak':'idle',frame=game.save.settings.reducedMotion||reducedMotion.matches?0:Math.floor(r.seconds*4)%4,avatar=C.STATIC_SPECIES&&C.STATIC_SPECIES.has(r.species)?'assets/new_species/'+r.species+'_avatar.png':'assets/avatars/'+r.species+'_'+state+'_'+String(frame).padStart(3,'0')+'.png',path=catalog[avatar]?avatar:C.playerFrame(r.species,'idle','E',0);prepareImage(path);const im=skins[path]||images[path],meta=catalog[path];pc.dataset.species=r.species;pc.dataset.state=state;pc.dataset.sprite=path;if(!im&&meta)loadImage(path).catch(()=>{});
@@ -938,7 +1041,9 @@
       if(actions.dataset.species!==r.species){actions.dataset.species=r.species;const icon=(id,html)=>actions.querySelector(`[data-slot="${id}"] .slot-icon`).innerHTML=html;
         icon('attack',imageTag('assets/ui/serrated_teeth.png','',true));icon('ability',imageTag('assets/ui/powerful_legs.png','',true));icon('eat',imageTag(config.diet==='herbivore'?'assets/ecology/herb.png':'assets/pickups/meat.png','',true));
         actions.querySelector('[data-slot="ability"] small').innerHTML='<span></span> · <span></span>';}
-      for(const el of actions.querySelectorAll('[data-slot]')){const word=controlWord(el.dataset.slot);el.hidden=!word;el.querySelector('kbd').textContent=word;}
+      for(const el of actions.querySelectorAll('[data-slot]')){const word=controlWord(el.dataset.slot);el.hidden=!word||el.dataset.slot==='command'&&!packSlot(r);el.querySelector('kbd').textContent=word;}
+      if(packSlot(r)){const p=packSlot(r),el=actions.querySelector('[data-slot="command"]');el.dataset.ready=String(p.count>0);el.querySelector('small').textContent=p.count?tr('FLOK')+' '+p.count+' · '+tr(PACK_ORDER_LABEL[p.order]):tr('FLOK')+' 0';const path=packIcon(r);if(el.dataset.icon!==path){el.dataset.icon=path;el.querySelector('.slot-icon').innerHTML=imageTag(path,'',true);}}
+      padGlyphs(actions);
       const slot=(id,fraction)=>{const el=actions.querySelector(`[data-slot="${id}"]`),f=Math.max(0,Math.min(1,fraction));el.style.setProperty('--cd',(1-f).toFixed(3));el.dataset.ready=String(f>=1);return el;};
       slot('attack',attackFraction);const ability=slot('ability',abilityFraction),parts=ability.querySelectorAll('small span');ability.dataset.tired=String(r.stamina<cost);ability.dataset.ready=String(abilityFraction>=1&&r.stamina>=cost);parts[0].textContent=config.skill;parts[1].textContent=cost+' ⚡';
     }
@@ -1423,7 +1528,7 @@
       if(r)for(const event of map.events)if(!event.claimed&&Math.hypot(event.x-r.player.x,event.y-r.player.y)<400){objects.push({...event,path:event.type==='spring'?'assets/props/flower_bush.png':'assets/props/skull.png'});label(event.type==='spring'?'✚ HELENDE KILDE':'✦ SJÆLDENT FOSSIL',event.x,event.y-30,'#bbd899');}
       if (r) for (const site of map.sites) if (!site.claimed && site.type !== 'rare') {
         objects.push({ ...site, path: 'assets/props/' + (site.type === 'fossil' ? 'skull' : 'nest_eggs') + '.png' });
-        if (Math.hypot(site.x-r.player.x,site.y-r.player.y)<160) label((site.type === 'fossil' ? 'FOSSIL' : site.guardDefeated?'FORLADT REDE':'BEVOGTET REDE')+(tipsOn()?' · E':''),site.x,site.y-42,'#e9b75a');
+        if (Math.hypot(site.x-r.player.x,site.y-r.player.y)<160) label((site.type === 'fossil' ? 'FOSSIL' : site.guardDefeated?'FORLADT REDE':'BEVOGTET REDE')+(tipsOn()?' · '+control('interact'):''),site.x,site.y-42,'#e9b75a');
       }
       if(r&&['herbivore','omnivore'].includes(C.PLAYER_SPECIES[r.species].diet))for(const plant of map.forage)if(!plant.depleted){objects.push({...plant,edible:true,path:plant.foodType&&plant.foodType!=='herb'?'assets/forage/'+(plant.toxic?'toxic_mushrooms':plant.foodType)+'_'+((String(plant.id).length+Math.floor(plant.x))%2)+'.png':'assets/ecology/herb.png'});if(Math.hypot(plant.x-r.player.x,plant.y-r.player.y)<180)label((plant.toxic?'⚠ GIFTIGE SVAMPE ':({fruit:'FRUGT ',roots:'RØDDER ',mushrooms:'SVAMPE '}[plant.foodType]||'❧ '))+plant.value+' · '+(inputMode==='touch'?'SPIS':control('eat')+' SPIS'),plant.x,plant.y-42,C.MEAT_RARITIES[plant.rarity].color);}
       if (r) {
@@ -1570,11 +1675,12 @@
       drawExtrasHUD(r);drawBuildBar(r);drawTimeIcon(r); // Approved native HUD art, with the existing glyph as fallback.
       drawA6Controls(r);
       const boss = r.enemies.find(e => e.boss), bossHUD = shell.querySelector('.boss-hud');
-      shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : control('ability')+' KLAR');
+      shell.querySelector('#skill-label').textContent = C.PLAYER_SPECIES[r.species].skill + ' · ' + (r.pounceCooldown > 0 ? r.pounceCooldown.toFixed(1) + ' s' : (C.FEATURES.gamepadFull?controlWord('ability'):control('ability'))+' KLAR');if(padGlyphOn())padGlyphs(shell.querySelector('#skill-label'));
       const config=C.PLAYER_SPECIES[r.species],cost=C.abilityCost(r),attackFraction=1-r.attackCooldown/(r.attackDuration||config.cooldown),abilityFraction=1-r.pounceCooldown/(r.abilityCooldownDuration||config.abilityCooldown);
       shell.querySelector('#attack-fill').style.width=Math.max(0,Math.min(100,attackFraction*100))+'%';shell.querySelector('#ability-fill').style.width=Math.max(0,Math.min(100,abilityFraction*100))+'%';const padA=shell.querySelector('.pad-a'),padB=shell.querySelector('.pad-b');if(padA)padA.style.setProperty('--cd',Math.max(0,Math.min(1,1-attackFraction)).toFixed(3));if(padB){padB.style.setProperty('--cd',Math.max(0,Math.min(1,1-abilityFraction)).toFixed(3));padB.classList.toggle('pad-tired',r.stamina<cost);}
       shell.querySelector('#attack-ready').textContent=controlWord('attack')+' · '+(r.attackCooldown>0?r.attackCooldown.toFixed(1)+' s':'KLAR');shell.querySelector('#ability-ready').textContent=controlWord('ability')+' · '+(r.pounceCooldown>0?r.pounceCooldown.toFixed(1)+' s':r.stamina<cost?'MANGLER STAMINA':'KLAR')+' · '+cost+' ⚡';
-      shell.querySelector('.action-cooldowns').dataset.ready=String(r.pounceCooldown===0&&r.stamina>=cost);
+      {const p=packSlot(r),el=shell.querySelector('#pack-ready');el.hidden=!p||!controlWord('command');if(!el.hidden){el.dataset.ready=String(p.count>0);el.textContent=controlWord('command')+' · '+tr('FLOK')+' '+p.count+(p.count?' · '+tr(PACK_ORDER_LABEL[p.order]):'');}}
+      if(padGlyphOn())padGlyphs(shell.querySelector('.action-cooldowns'));shell.querySelector('.action-cooldowns').dataset.ready=String(r.pounceCooldown===0&&r.stamina>=cost);
       updateHudLayout(r,attackFraction,abilityFraction,cost);
       bossHUD.hidden = !boss || !['playing', 'paused', 'mutation'].includes(game.phase);
       if (boss) { bossHUD.querySelector('b').textContent = (boss.bossName || game.currentLevel().bossName) + (' · FASE ' + boss.bossPhase) + ' · ' + Math.round(Math.hypot(boss.x - r.player.x, boss.y - r.player.y) / 32) + ' m · find ◆ på kortet' + (boss.mode === 'stalk' ? ' · LURER VED BREDDEN' : boss.mode === 'leash' ? ' · VENDER HJEM' : boss.mode === 'reposition' ? ' · SØGER EN VEJ' : ''); bossHUD.dataset.bossPhase = boss.bossPhase; const tip = bossHUD.querySelector('.boss-tip'); tip.hidden = false; tip.textContent = boss.mode === 'recover' ? 'ÅBEN FLANKE · +50 % SKADE BAGFRA' : boss.mode === 'enrage' ? ({carnotaurus:'FASE 2 · DOBBELT STORMLØB OG TRAMP',deinosuchus:'FASE 2 · HURTIGT BAGHOLD OG STØRRE HALEBØLGE',triceratops:'FASE 2 · DOBBELT HORNSTORM',tyrannosaurus:'FASE 2 · DOBBELTBID OG BRØL',pachycephalosaurus:'FASE 2 · HURTIGERE KUPPELSTØD',baryonyx:'FASE 2 · HURTIGERE KLØGAB',ankylosaurus:'FASE 2 · HURTIGERE HALESVING'})[boss.kind] : boss.mode === 'windup' ? boss.attackName : 'UNDVIG SIDEVÆRT · BID, NÅR DEN HVILER'; bossHUD.querySelector('i').style.width = Math.max(0, boss.hp / boss.maxHP * 100) + '%'; }
@@ -1585,25 +1691,29 @@
       const phaseBefore = game.phase; accumulator += dt;
       if(menuScene() && !document.hidden && !reducedMotion.matches && !game.save.settings.reducedMotion)menuClock+=dt;
       if (game.phase === 'result' && game.run.deathTime >= 0) game.run.deathTime = Math.min(.75, game.run.deathTime + dt);
-      const pad=Array.from(navigator.getGamepads?.()||[]).find(Boolean),buttons=pad?pad.buttons.map(b=>b.pressed):[];
+      const padFull=C.FEATURES.gamepadFull&&GP,pad=padFull?GP.normalize(padTracker.pick(navigator.getGamepads?.())):Array.from(navigator.getGamepads?.()||[]).find(Boolean),buttons=pad?padFull?pad.buttons:pad.buttons.map(b=>b.pressed):[];
+      if(padFull&&pad&&GP.family(pad.id)!==padFamily){padFamily=GP.family(pad.id);updateControlHints();}
       if(buttons[9]&&!padPrevious[9]){if(game.phase==='playing')game.pause();else if(game.phase==='paused')game.resume();}
-      if(game.phase!=='playing'&&pad){const focusables=Array.from(screen.querySelectorAll('button:not(:disabled)'));if((buttons[12]&&!padPrevious[12])||(buttons[13]&&!padPrevious[13])){const index=focusables.indexOf(document.activeElement),delta=buttons[12]?-1:1;focusables[(index+delta+focusables.length)%focusables.length]?.focus();}if(buttons[0]&&!padPrevious[0]&&screen.contains(document.activeElement))document.activeElement.click();}
+      if(padFull)padMenu(pad,buttons,dt);
+      else if(game.phase!=='playing'&&pad){const focusables=Array.from(screen.querySelectorAll('button:not(:disabled)'));if((buttons[12]&&!padPrevious[12])||(buttons[13]&&!padPrevious[13])){const index=focusables.indexOf(document.activeElement),delta=buttons[12]?-1:1;focusables[(index+delta+focusables.length)%focusables.length]?.focus();}if(buttons[0]&&!padPrevious[0]&&screen.contains(document.activeElement))document.activeElement.click();}
       if(pad&&(buttons.some(Boolean)||pad.axes.some(a=>Math.abs(a)>.5)))setInputMode('gamepad');
       if(lootHeld()&&game.phase==='playing'&&buttons.some((b,i)=>b&&!padPrevious[i]))dismissLoot(); // FEATURES.lootCard
       padPrevious=buttons;
       const held=action=>keys.has(game.save.bindings[action]);
-      const ax=pad&&Math.abs(pad.axes[0])>.18?pad.axes[0]:0,ay=pad&&Math.abs(pad.axes[1])>.18?pad.axes[1]:0;
+      const stick=padFull&&pad?GP.radial(pad.axes[0],pad.axes[1]):null,ax=stick?stick.x:pad&&Math.abs(pad.axes[0])>.18?pad.axes[0]:0,ay=stick?stick.y:pad&&Math.abs(pad.axes[1])>.18?pad.axes[1]:0;
       stepReel(now); stepMutationReel(now);
       if (ready && game.phase === 'playing' && !(reel && reel.ev.big) && !(lootHeld() && game.phase === 'playing')) {
         // Flokkammerat (FEATURES.coopBuddy): player 2 uses IJKL + U, or the second controller (the only one when just one is connected).
-        const coopOn=C.FEATURES.coopBuddy&&!!game.run.buddy,pads=coopOn?Array.from(navigator.getGamepads?.()||[]).filter(Boolean):[],p2pad=coopOn?(pads.length>1?pads[1]:pads[0]):null,p1b=coopOn&&pads.length===1?[]:buttons,p1x=p1b===buttons?ax:0,p1y=p1b===buttons?ay:0;
+        const coopOn=C.FEATURES.coopBuddy&&!!game.run.buddy,pads=coopOn?Array.from(navigator.getGamepads?.()||[]).filter(Boolean):[],p2pad=coopOn?(pads.length>1?pads[1]:pads[0]):null,p1n=padFull&&coopOn&&pads.length>1?GP.normalize(pads[0]):null,p1s=p1n?GP.radial(p1n.axes[0],p1n.axes[1]):null,p1b=p1n?p1n.buttons:coopOn&&pads.length===1?[]:buttons,p1x=p1s?p1s.x:p1b===buttons?ax:0,p1y=p1s?p1s.y:p1b===buttons?ay:0;
         const p2b=p2pad?p2pad.buttons.map(b=>b.pressed):[],p2ax=p2pad&&Math.abs(p2pad.axes[0])>.18?p2pad.axes[0]:0,p2ay=p2pad&&Math.abs(p2pad.axes[1])>.18?p2pad.axes[1]:0;
         const buddy=coopOn?{x:p2ax+(keys.has('KeyL')||p2b[15]?1:0)-(keys.has('KeyJ')||p2b[14]?1:0),y:p2ay+(keys.has('KeyK')||p2b[13]?1:0)-(keys.has('KeyI')||p2b[12]?1:0),attack:keys.has('KeyU')||!!p2b[0]}:null;
         while (accumulator >= 1 / 60 && game.phase === 'playing') {
-          const eat=held('eat')||p1b[2];
-          game.step(1 / 60, { x:joystick.x+p1x+(held('right')||keys.has('ArrowRight')||p1b[15]?1:0)-(held('left')||keys.has('ArrowLeft')||p1b[14]?1:0),y:joystick.y+p1y+(held('down')||keys.has('ArrowDown')||p1b[13]?1:0)-(held('up')||keys.has('ArrowUp')||p1b[12]?1:0),eat,sneak:(C.FEATURES.stealth?stealthState.on:held('sneak'))||p1b[5],attack:held('attack')||p1b[0]||game.save.settings.autoAttack&&!eat&&game.run.enemies.some(e=>(e.alert&&e.damage||e.lastAttackedAt>game.run.seconds-8)&&Math.hypot(e.x-game.run.player.x,e.y-game.run.player.y)<65+e.radius),interact:held('interact')||p1b[3],pounce:held('ability')||p1b[1],command:held('command')||p1b[4],buddy });
+          const pb=action=>padFull?!!p1b[GP.BUTTON[padButtonOf(action)]]:!!p1b[{attack:0,ability:1,eat:2,interact:3,command:4,sneak:5}[action]],free=button=>!Object.values(game.save.padBindings||{}).includes(button); // LT/RT sneak/attack while unassigned
+          const eat=held('eat')||pb('eat');
+          game.step(1 / 60, { x:joystick.x+p1x+(held('right')||keys.has('ArrowRight')||p1b[15]?1:0)-(held('left')||keys.has('ArrowLeft')||p1b[14]?1:0),y:joystick.y+p1y+(held('down')||keys.has('ArrowDown')||p1b[13]?1:0)-(held('up')||keys.has('ArrowUp')||p1b[12]?1:0),eat,sneak:(C.FEATURES.stealth?stealthState.on:held('sneak'))||pb('sneak')||padFull&&free('lt')&&p1b[6],attack:held('attack')||pb('attack')||padFull&&free('rt')&&p1b[7]||game.save.settings.autoAttack&&!eat&&game.run.enemies.some(e=>(e.alert&&e.damage||e.lastAttackedAt>game.run.seconds-8)&&Math.hypot(e.x-game.run.player.x,e.y-game.run.player.y)<65+e.radius),interact:held('interact')||pb('interact'),pounce:held('ability')||pb('ability'),command:held('command')||pb('command'),buddy });
           accumulator -= 1 / 60;
         }
+        if(padFull)padRumble(pad);
       } else accumulator = 0;
       if (game.phase !== phaseBefore) accumulator = 0;
       for (const event of game.drainEvents()) { audio.play(event.type, event); if (event.type === 'loot_reveal') lootReveal(event, now); if (event.type === 'boss') toast(game.run.stage === 0 ? 'SKOVENS JÆGER · Undvig sidelæns; bid bagfra, når den hviler!' : 'BOSSEN ER HER · Undvig de røde varsler!'); if (event.type === 'boss_enrage') toast(['FASE 2 · Dobbelt stormløb og tramp!', 'FASE 2 · Hurtigere baghold og stor halebølge!', 'FASE 2 · Dobbelt hornstorm!', 'FASE 2 · Dobbeltbid og brøl!'][game.run.stage]); if (event.type === 'jonas') toast('HEMMELIG JÆGER FUNDET · Jonas, kødens konge! ♛'); if(event.type==='discovery')toast(event.text); if (event.type === 'dna' && !event.quiet) toast('+' + event.amount + ' DNA · gemt'); if(event.type==='achievement')toast('★ ACHIEVEMENT · '+event.name.toUpperCase()+(event.species?' · '+I18N.tf('{0} låst op!',C.PLAYER_SPECIES[event.species].name):event.skin?' · ny farvedragt':' · +'+event.dna+' DNA'));if(event.type==='zone')toast(event.first?'NYT OMRÅDE · '+event.name.toUpperCase()+' · +1 DNA':event.name.toUpperCase()); if(event.type==='boss_break')toast('BRUDT! · Angrib nu'); if(event.type==='winded')toast('FORPUSTET · vent på stamina'); if(event.type==='powerup'&&C.POWERUPS&&C.POWERUPS[event.powerup])toast(tr(C.POWERUPS[event.powerup].name.toUpperCase())+' · '+tr(C.POWERUPS[event.powerup].text)); if(event.type==='nest_cache'&&!event.items.includes('relic'))toast(I18N.tf('REDE-KISTE · {0} FUND',event.count));if(event.type==='relic')toast(I18N.tf('RELIKVIE · {0}',tr(event.name).toUpperCase()));if(event.type==='rotten')toast('RÅDDENT KØD · Du tager 30 % mere skade i 60 sek.');if(event.type==='rot_cured')toast('HÆRDET MAVE · +6 maksimalt liv');if(event.type==='tar_pact')toast('TJÆREPAGT · Bossen får et elite-træk · dobbelt loot');if(event.type==='tar_reward')toast('TJÆREPAGT INDFRIET · dobbelt loot');if(event.type==='amber_altar')toast(I18N.tf('RAVALTER · {0} FUND',event.count));if(event.type==='altar_poor')toast(I18N.tf('RAVALTER · Kræver {0} rav, du har {1}',event.price,event.rav));if(event.type==='currency'&&event.kind==='iridium')toast(I18N.tf('IRIDIUM · +{0}',event.count));if(event.type==='amber')toast(I18N.tf('RAV FUNDET · {0}/{1} · +3 DNA',event.count,C.LEVELS.length)); if(event.type==='day_phase'&&event.phase==='dusk')toast('SKUMRING · Rovdyrene vågner'); if(event.type==='day_phase'&&event.phase==='dawn')toast('DAGGRY · Natten slipper'); if(event.type==='hatch')toast('BABYSTART · Du er lige klækket'); }
@@ -1642,7 +1752,8 @@
       if (target.dataset.banish) { game.banish(target.dataset.banish); renderScreen(true); return; }
       if (target.dataset.blueprint) { game.buyBlueprint(target.dataset.blueprint); renderScreen(true); return; }
       if (target.dataset.mutation) { game.choose(target.dataset.mutation); keys.clear(); accumulator = 0; last = 0; renderScreen(true); return; }
-      if (target.dataset.resetBinding) { if (game.resetBinding(target.dataset.resetBinding)) toast('Nulstillet til standard'); renderScreen(true); return; }
+      if (target.dataset.padBinding) { padBindingAction = target.dataset.padBinding; renderScreen(true); const cap = screen.querySelector(`[data-pad-binding="${padBindingAction}"]`); if (cap) cap.focus({ preventScroll: true }); return; }
+      if (target.dataset.resetBinding) { const a = target.dataset.resetBinding, key = game.resetBinding(a), pad = C.FEATURES.gamepadFull && game.resetPadBinding ? game.resetPadBinding(a) : null; if (key || pad) toast('Nulstillet til standard'); renderScreen(true); return; }
       const binding=e.target.closest('[data-binding]');if(binding){bindingAction=binding.dataset.binding;binding.textContent=tr('Tryk en ny tast · Esc annullerer');return;}
       if(target.dataset.binding){bindingAction=target.dataset.binding;target.textContent=tr('Tryk en ny tast · Esc annullerer');return;}
       if(target.dataset.titleTip){const t=titleOf(target.dataset.titleTip),box=shell.querySelector('#title-tip');if(t&&box){box.textContent=titleTipText(t);box.classList.add('shown');}return;}
@@ -1697,10 +1808,11 @@
     });
     listen(shell, 'input', e => {
       const key = e.target.dataset.setting; if (!key) return;
-      game.setSetting(key, ['shake','autoAttack','reducedMotion','shareData','tips'].includes(key) ? e.target.checked : Number(e.target.value) / 100); audio.sync();
+      game.setSetting(key, ['shake','autoAttack','reducedMotion','shareData','tips','rumble'].includes(key) ? e.target.checked : Number(e.target.value) / 100); audio.sync();
       const output = shell.querySelector('#volume-' + key); if (output) output.textContent = Math.round(game.save.settings[key] * 100) + ' %';
     });
     listen(window, 'keydown', e => {
+      if(padBindingAction&&e.code==='Escape'){padBindingAction=null;renderScreen(true);return;}
       if(bindingAction){e.preventDefault();if(e.code==='Escape'){bindingAction=null;renderScreen(true);return;}if(C.FEATURES.keybindMenu&&game.phase==='keys'){const swap=game.swapBinding(bindingAction,e.code);if(swap){bindingAction=null;renderScreen(true);if(swap.other){shell.querySelector('.toast').textContent=I18N.tf('Byttet med {0}',tr(ACTION_LABELS[swap.other]));toastUntil=performance.now()+2600;}}else toast('Tasten understøttes ikke');return;}if(game.setBinding(bindingAction,e.code)){bindingAction=null;renderScreen(true);}else toast('Tasten er allerede i brug eller understøttes ikke');return;}
       if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
       audio.unlock();
@@ -1723,6 +1835,7 @@
     });
     listen(window, 'keyup', e => {if(e.code==='Space'&&!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName))e.preventDefault();keys.delete(e.code);});
     const unfocus = () => {joystick={x:0,y:0};keys.clear(); accumulator = 0; last = 0; game.pause(); renderScreen(); };
+    if(C.FEATURES.gamepadFull){listen(window,'gamepadconnected',()=>toast('Controller tilsluttet'));listen(window,'gamepaddisconnected',()=>{toast('Controller frakoblet');if(game.phase==='playing')game.pause();renderScreen();});}
     listen(window, 'blur', unfocus); listen(document, 'visibilitychange', () => { if (document.hidden) unfocus(); });
     listen(window, 'keydown', e => { if (!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName) && !bindingAction) setInputMode('keyboard'); });
     listen(shell, 'pointerdown', e => { if (e.pointerType === 'touch' || e.pointerType === 'pen') setInputMode('touch'); });
