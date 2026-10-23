@@ -16,5 +16,7 @@
  "Vibration i controller": "Kumanda titreşimi",
  "Controller tilsluttet": "Kumanda bağlandı",
  "Controller frakoblet": "Kumanda bağlantısı kesildi",
- "FORTSÆT · @": "DEVAM ET · @"
+ "FORTSÆT · @": "DEVAM ET · @",
+ "Controller": "Kumanda",
+ "Tryk en knap på controlleren · @ annullerer": "Kumandada bir tuşa bas · @ iptal"
 }

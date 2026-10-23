@@ -70,5 +70,13 @@
  {
   "da": "FORTSÆT · @",
   "en": "CONTINUE · @"
+ },
+ {
+  "da": "Controller",
+  "en": "Controller"
+ },
+ {
+  "da": "Tryk en knap på controlleren · @ annullerer",
+  "en": "Press a controller button · @ cancels"
  }
 ]

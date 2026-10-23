@@ -16,5 +16,7 @@
  "Vibration i controller": "Vibration de la manette",
  "Controller tilsluttet": "Manette connectée",
  "Controller frakoblet": "Manette déconnectée",
- "FORTSÆT · @": "REPRENDRE · @"
+ "FORTSÆT · @": "REPRENDRE · @",
+ "Controller": "Manette",
+ "Tryk en knap på controlleren · @ annullerer": "Appuie sur un bouton de la manette · @ annule"
 }

@@ -295,3 +295,6 @@ kbd.pad-kbd{padding:0;background:none;border:0;box-shadow:none}
 /* Pack button on the HUD (classic and A/B/C): dim until there is a pack. */
 #pack-ready{flex:0 0 auto;align-self:center;font-size:10px;white-space:nowrap;padding:3px 7px;border:1px solid #c3a35c88;border-radius:3px;color:#efdfb8}#pack-ready[data-ready="false"]{opacity:.5;border-color:#50623d88}
 .hud-slot[data-slot="command"][data-ready="false"]{opacity:.5}
+/* Keys page with a controller column (FEATURES.gamepadFull): action | key | pad button | reset. */
+.key-list.with-pad{grid-template-columns:1fr;gap:5px}.with-pad .key-row,.key-head{display:grid;grid-template-columns:1fr 112px 112px 40px;gap:8px;align-items:center}.key-head{margin-top:10px}.key-head b{font-size:10px;letter-spacing:2px;color:#c3a35c;text-align:center}.pad-cap{white-space:normal;line-height:1.25;font-size:10px;padding:5px 6px}.pad-cap .pad-glyph{font-size:15px}.pad-cap-fixed{text-align:center;font-size:10px;color:#8e9d87}
+@media(max-width:800px){.with-pad .key-row,.key-head{grid-template-columns:1fr 92px 92px 36px}.key-cap{min-width:0}}

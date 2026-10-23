@@ -20,4 +20,6 @@ CONTROLS = [
 ("Controller tilsluttet", "Controller connected", "Controller verbunden", "Handkontroll ansluten", "Kontroller tilkoblet", "コントローラー接続", "手柄已连接"),
 ("Controller frakoblet", "Controller disconnected", "Controller getrennt", "Handkontroll frånkopplad", "Kontroller frakoblet", "コントローラー切断", "手柄已断开"),
 ("FORTSÆT · @", "CONTINUE · @", "WEITER · @", "FORTSÄTT · @", "FORTSETT · @", "続ける · @", "继续 · @"),
+("Controller", "Controller", "Controller", "Handkontroll", "Kontroller", "コントローラー", "手柄"),
+("Tryk en knap på controlleren · @ annullerer", "Press a controller button · @ cancels", "Drücke eine Controller-Taste · @ bricht ab", "Tryck på en knapp på handkontrollen · @ avbryter", "Trykk en knapp på kontrolleren · @ avbryter", "コントローラーのボタンを押す · @でキャンセル", "按下手柄按键 · @ 取消"),
 ]

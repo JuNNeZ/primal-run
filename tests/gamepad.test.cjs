@@ -9,6 +9,16 @@ test('flag is on and the rumble setting defaults to on but can be saved off',()=
   const store={data:{},getItem(k){return this.data[k]||null;},setItem(k,v){this.data[k]=v;}},game=new C.Game({storage:store});assert.equal(game.save.settings.rumble,true);
   game.setSetting('rumble',false);assert.equal(new C.Game({storage:store}).save.settings.rumble,false);
 });
+test('controller buttons can be rebound: a taken button swaps, saves survive, reset restores',()=>{
+  const store={data:{},getItem(k){return this.data[k]||null;},setItem(k,v){this.data[k]=v;}},g=new C.Game({storage:store});
+  assert.deepEqual(g.save.padBindings,C.PAD_BINDING_DEFAULTS);
+  assert.deepEqual(g.swapPadBinding('attack','east'),{other:'ability'});assert.equal(g.save.padBindings.ability,'south');
+  assert.equal(g.swapPadBinding('attack','menu'),null,'menu is reserved');assert.equal(g.swapPadBinding('up','lt'),null,'moving stays on the stick');
+  assert.equal(new C.Game({storage:store}).save.padBindings.attack,'east');
+  g.resetPadBinding('attack');assert.deepEqual(g.save.padBindings,C.PAD_BINDING_DEFAULTS);
+  store.data[Object.keys(store.data)[0]]=JSON.stringify({...JSON.parse(store.data[Object.keys(store.data)[0]]),padBindings:{attack:'lt',ability:'lt'}});
+  assert.deepEqual(new C.Game({storage:store}).save.padBindings,C.PAD_BINDING_DEFAULTS,'a broken save falls back');
+});
 test('controller families: Xbox, PlayStation, Nintendo by position; unknown and Steam Deck use Xbox names',()=>{
   assert.equal(G.family('Xbox Wireless Controller (STANDARD GAMEPAD Vendor: 045e Product: 0b13)'),'xbox');
   assert.equal(G.family('045e-0b12-Microsoft Xbox Series S|X Controller'),'xbox');
@@ -41,7 +51,7 @@ test('Firefox without standard mapping: Linux xpad layout and hat-switch D-pad b
 });
 test('every new controller text exists in every full language',()=>{
   const I=require('../PRIMAL_RUN_Game/src/i18n.js');globalThis.PrimalI18n=I;require('../PRIMAL_RUN_Game/src/lang.js');
-  const texts=['Spillet er pauset. Vælg med [VENSTRE PIND] og bekræft med A.','Spillet er pauset. Vælg med [VENSTRE PIND] og bekræft med [✕].','Vibration i controller','Controller tilsluttet','Controller frakoblet','FORTSÆT · [☰]','[⧉] viser eller skjuler guiden.','NYE VALG · Y · 2 TILBAGE'];
+  const texts=['Spillet er pauset. Vælg med [VENSTRE PIND] og bekræft med A.','Spillet er pauset. Vælg med [VENSTRE PIND] og bekræft med [✕].','Vibration i controller','Controller','Tryk en knap på controlleren · [☰] annullerer','Controller tilsluttet','Controller frakoblet','FORTSÆT · [☰]','[⧉] viser eller skjuler guiden.','NYE VALG · Y · 2 TILBAGE'];
   for(const lang of I.LANGUAGES.filter(l=>!l.fun).map(l=>l.id).filter(l=>l!=='da')){I.setLanguage(lang);I.missing.clear();texts.forEach(t=>I.t(t));assert.deepEqual([...I.missing],[],lang);}
 });
 test('menu navigation goes to the nearest item in a direction and wraps up/down',()=>{

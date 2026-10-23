@@ -39,6 +39,15 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
  assert.match(await page.locator('#attack-ready').textContent(),/^✕ · /);assert.ok(await page.locator('#attack-ready .pad-glyph').count(),'real button glyph on the HUD');assert.ok(await page.locator('footer .control-hints .pad-glyph').count()>=4,'glyphs in the footer');
  assert.equal(await page.locator('#pack-ready').isVisible(),true,'pack button is on the HUD even without a pack');assert.match(await page.locator('#ability-ready').textContent(),/^○ · /);
  const attacks=await page.evaluate(()=>primalRun.game.run.stats.attacks||0);await page.evaluate(()=>{pads[0].buttons[7].pressed=true;});await page.waitForFunction(a=>(primalRun.game.run.stats.attacks||0)>a,attacks);await page.evaluate(()=>{pads[0].buttons[7].pressed=false;});
+ // Rebinding on the keys page: A on the attack button waits for a pad button, R2 takes it, ability keeps ○, hints follow.
+ await tap(9);await page.waitForFunction(()=>primalRun.game.phase==='paused');await page.evaluate(()=>document.querySelector('[data-action="keys"]').focus());await tap(0);await page.waitForSelector('.keys-panel [data-pad-binding="attack"]');
+ await page.evaluate(()=>document.querySelector('[data-pad-binding="attack"]').focus());await tap(0);await page.waitForFunction(()=>/annullerer/.test(document.querySelector('[data-pad-binding="attack"]').textContent));
+ await tap(7);await page.waitForFunction(()=>primalRun.game.save.padBindings.attack==='rt');
+ assert.equal(await page.evaluate(()=>document.activeElement.dataset.padBinding),'attack','focus stays on the rebound button');
+ await page.evaluate(()=>document.querySelector('[data-pad-binding="eat"]').focus());await tap(0);await tap(1);await page.waitForFunction(()=>primalRun.game.save.padBindings.eat==='east');assert.equal(await page.evaluate(()=>primalRun.game.save.padBindings.ability),'west','taken button swaps');
+ await page.evaluate(()=>document.querySelector('[data-pad-binding="sneak"]').focus());await tap(0);await tap(9);await page.waitForFunction(()=>!/annullerer/.test(document.querySelector('[data-pad-binding="sneak"]').textContent));assert.equal(await page.evaluate(()=>primalRun.game.save.padBindings.sneak),'rb','menu cancels');
+ await tap(1);await page.waitForFunction(()=>primalRun.game.phase==='paused');await tap(1);await page.waitForFunction(()=>primalRun.game.phase==='playing');await page.waitForTimeout(100);
+ assert.match(await page.locator('#attack-ready').textContent(),/^R2 · /);
  assert.deepEqual(errors,[]);await page.close();
  console.log('gamepad browser test passed');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1);});
