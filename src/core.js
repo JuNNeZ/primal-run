@@ -12,7 +12,7 @@
   const TELEMETRY = (typeof module === 'object' && module.exports ? require('./telemetry.js') : globalThis.PrimalTelemetry) || null;
   // Data-driven loot tables with cascading top-down rarity (FEATURES.lootTables) live in loot.js.
   const LOOT = (typeof module === 'object' && module.exports ? require('./loot.js') : globalThis.PrimalLoot) || null;
-  const FEATURES={gamepadFull:true,pauseGuide:true,keybindMenu:true,coopBuddy:true,seededRuns:true,friendChallenge:true,naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true,randomStart:true,runTelemetry:true,sizeAware:true,hudLayouts:true,titleTips:true,stealth:true,speciesIdentity:true,waterStart:true,bounties:true,deathTips:true,bossCurve:true,titleBook:true,titleAchievements:true,mapBiomes:true,fishingGame:true,tipsToggle:true,steepBosses:true,tougherCombat:true,epicBudget:true,ankyTailTurn:true,rigSprites:true,rexCutout:true,amberFair:true,lootTables:true,armorPoints:true,lootReveal:true,relics:true,nestCaches:true,affixStages:false,hudIconSet:true,tarTotem:false,rottenMeat:false,dailyShare:false,extinctionPressure:false,currencies:false,textOnTop:true,smartAllies:true,packMutations:true,allyAggro:true,allyKills:true,kinPack:true,packFollow:true,packOrders:true,packFeedback:true};
+  const FEATURES={gamepadFull:true,pauseGuide:true,keybindMenu:true,coopBuddy:true,seededRuns:true,friendChallenge:true,naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true,randomStart:true,runTelemetry:true,sizeAware:true,hudLayouts:true,titleTips:true,stealth:true,speciesIdentity:true,waterStart:true,bounties:true,deathTips:true,bossCurve:true,titleBook:true,titleAchievements:true,mapBiomes:true,fishingGame:true,tipsToggle:true,steepBosses:true,tougherCombat:true,epicBudget:true,ankyTailTurn:true,rigSprites:true,rexCutout:true,amberFair:true,lootTables:true,armorPoints:true,lootReveal:true,relics:true,nestCaches:true,affixStages:false,hudIconSet:true,tarTotem:false,rottenMeat:false,dailyShare:false,extinctionPressure:false,currencies:false,textOnTop:true,smartAllies:true,packMutations:true,allyAggro:true,allyKills:true,kinPack:true,packFollow:true,packOrders:true,packFeedback:true,mutationReel:true,lootCard:true,buildBar:true,statSheet:true,statIcons:true};
   // Size-aware world (FEATURES.sizeAware): a prop's collision and slow radius come from its visible pixels
   // (tools/measure_props.py), only its kind is chosen by hand. Kinds also decide the draw layer in app.js.
   const PROP_SIZE={"assets/ecology/broad_fern.png":["soft",38],"assets/ecology/conifer.png":["canopy",34],"assets/ecology/cycad.png":["soft",36],"assets/ecology/dry_grass.png":["ground",32],"assets/ecology/flowers.png":["ground",30],"assets/ecology/fruit_bush.png":["soft",36],"assets/ecology/herb.png":["ground",36],"assets/ecology/horsetail.png":["soft",34],"assets/ecology/leaf_litter.png":["ground",30],"assets/ecology/lichen.png":["ground",32],"assets/ecology/moss.png":["ground",28],"assets/ecology/mushrooms.png":["ground",26],"assets/ecology/reeds.png":["soft",37],"assets/ecology/roots.png":["ground",34],"assets/ecology/seed_fern.png":["soft",38],"assets/ecology/shrub.png":["soft",35],"assets/ecology/succulent.png":["ground",29],"assets/ecology/twigs.png":["ground",32],"assets/environment/fern.png":["ground",21],"assets/environment/rock.png":["solid",13],"assets/props/boulder_large.png":["solid",22],"assets/props/dead_tree.png":["canopy",51],"assets/props/fallen_log.png":["ground",21],"assets/props/fern_large.png":["soft",24],"assets/props/flower_bush.png":["soft",23],"assets/props/lava_rock.png":["solid",22],"assets/props/meteorite.png":["solid",23],"assets/props/nest_eggs.png":["ground",20],"assets/props/nest_empty.png":["ground",21],"assets/props/skull.png":["ground",23],"assets/props/tree_canopy.png":["canopy",56]}; // generated by tools/measure_props.py: [kind, visible radius px]
@@ -2579,7 +2579,7 @@
   Game.prototype.luck=function(){return runLuck(this.run);};
   // FEATURES.lootReveal (loot step 4): presentation only. The tier is already rolled; the app spins a reel top-down
   // (Legendarisk first) and locks on it. big:true (relics, caches, bosses) pauses the world in the app, small does not.
-  Game.prototype.revealLoot=function(tier,{ceiling=4,kind='loot',label='',big=false,icon=''}={}){if(FEATURES.lootReveal)this.emit('loot_reveal',{tier,ceiling,kind,label,big,icon});};
+  Game.prototype.revealLoot=function(tier,{ceiling=4,kind='loot',label='',big=false,icon='',relic='',items=null}={}){if(FEATURES.lootReveal)this.emit('loot_reveal',{tier,ceiling,kind,label,big,icon,relic,items});}; // relic/items: FEATURES.lootCard
   // FEATURES.armorPoints (loot step 2): every armor source adds points and damage taken is K/(armor+K), so a point is
   // worth the same however many you have and it never reaches 100 %. 10 per Sej hud rank keeps today's feel (×1.10/1.20/1.30
   // survival vs ×1.09/1.19/1.32). r.armorBonus is for relics (step 3).
@@ -2619,7 +2619,7 @@
     if(drop.id==='dna'){this.addDNA(drop.count);this.revealLoot(tier,{big:true,kind:'relic',label:'+'+drop.count+' DNA'});return {id:'dna',count:drop.count,tier};}
     const relic=RELICS[drop.id];r.relics[drop.id]=true;r.stats.relics=(r.stats.relics||0)+1;
     if(relic.maxHealth){r.maxHealth+=relic.maxHealth;r.health+=relic.maxHealth;}
-    this.emit('relic',{id:drop.id,name:relic.name,tier,source});this.revealLoot(tier,{big:true,kind:'relic',label:relic.name,icon:'relics/'+drop.id});
+    this.emit('relic',{id:drop.id,name:relic.name,tier,source});this.revealLoot(tier,{big:true,kind:'relic',label:relic.name,icon:'relics/'+drop.id,relic:drop.id});
     this.checkAchievements();return {id:drop.id,tier};
   };
   // Panser 3: part of every hit taken goes back to the animal that dealt it (not hazards or thorns).
@@ -2643,7 +2643,7 @@
         else r.pickups.push({id:++this.nextId,kind:'meat',rarity:3,value,x,y});got.push('meat');}
     });
     if(table==='nest_cache')r.stats.nestCaches=(r.stats.nestCaches||0)+1;this.emit(event,{count:got.length,items:got});
-    if(!got.includes('relic'))this.revealLoot(got.includes('meat')?3:2,{big:true,kind:'cache',label,icon:'loot/nest_cache'});
+    if(!got.includes('relic'))this.revealLoot(got.includes('meat')?3:2,{big:true,kind:'cache',label,icon:'loot/nest_cache',items:got});
     return got;
   };
   const exploreCache=Game.prototype.explore;
@@ -3796,6 +3796,35 @@
     const r=this.run,order=packOrderOf(r),out=order==='passive'?new Map():targetsOrders.call(this,order==='defend'?null:shared);
     for(const a of out.keys())if(a.quarrelUntil>r.seconds)out.delete(a);
     return out;
+  };
+  // ---- Character sheet (FEATURES.statSheet, 2026-10-23, Jonas: "WoW character panel agtigt"). Build values as the game
+  // uses them right now, outside one-off situations (crit, sneak, prey state). The formulas mirror the build parts of the
+  // bite (Game.step attack), movement and stamina lines; tests/stat-sheet.test.cjs pins them. Each source's share is found
+  // by switching just that source off, so the breakdown can't claim more than the formula gives.
+  const SHEET_STATS=[
+    {id:'damage',name:'Skade',pct:true,f:(g,r)=>{const m=r.mutations,n=id=>m[id]||0;return PLAYER_SPECIES[r.species].damage*(1+UPGRADE_STEP.damage*(r.upgrades.damage||0)+.2*n('rexJaw')+.15*n('crocJaw')+.2*n('rexKing')+.2*n('teeth')+.2*n('apexGenome')+.25*n('glassCannon')+.2*n('heavyMuscle')+(r.health<r.maxHealth*.4?.2*n('fury'):0))*biteBonus(g,r,{x:r.player.x,y:r.player.y,alert:true,damage:1,hp:1,maxHP:1,kind:''});}},
+    {id:'speed',name:'Fart',pct:true,f:(g,r)=>{const m=r.mutations,n=id=>m[id]||0;return PLAYER_SPECIES[r.species].speed*(1+.08*n('legs')+.15*n('lightFrame')+relicStat(r,'speed'))*(1-.08*n('heavyMuscle'))*speedBonus(r);}},
+    {id:'regen',name:'Stamina-regeneration',pct:true,unit:'/s',f:(g,r)=>{const m=r.mutations,n=id=>m[id]||0;return STAMINA.regen*(1+UPGRADE_STEP.regen*(r.upgrades.regen||0)+.2*n('feathers')+relicStat(r,'regen'))*(1-.15*n('metabolicRush'))*regenBonus(r,false);}},
+    {id:'crit',name:'Kritisk chance',points:true,f:(g,r)=>critChance(r,null)},
+    {id:'armor',name:'Panser',f:(g,r)=>armorPoints(r)},
+    {id:'luck',name:'Held',points:true,f:(g,r)=>runLuck(r)},
+    {id:'ability',name:'Evne-pris',f:(g,r)=>abilityCost(r)},
+  ];
+  Game.prototype.statSheet=function(){
+    const r=this.run;if(!r)return [];const zero=o=>Object.fromEntries(Object.keys(o||{}).map(k=>[k,0]));
+    const off=patch=>({...r,...patch}),bare=off({mutations:zero(r.mutations),relics:{},upgrades:zero(r.upgrades),armorBonus:0});
+    const sources=MUTATIONS.filter(m=>r.mutations[m.id]>0).map(m=>({name:m.name,run:off({mutations:{...r.mutations,[m.id]:0}})}))
+      .concat(Object.keys(r.relics||{}).filter(id=>RELICS[id]).map(id=>({name:RELICS[id].name,run:off({relics:Object.fromEntries(Object.keys(r.relics).filter(x=>x!==id).map(x=>[x,true]))})})))
+      .concat(Object.values(r.upgrades||{}).some(v=>v>0)?[{name:'DNA-lab',run:off({upgrades:zero(r.upgrades)})}]:[]);
+    const rows=SHEET_STATS.map(st=>{
+      const value=st.f(this,r),base=st.f(this,bare),parts=sources.map(x=>({name:x.name,delta:value-st.f(this,x.run)})).filter(x=>Math.abs(x.delta)>1e-6);
+      const rest=value-base-parts.reduce((a,x)=>a+x.delta,0);if(Math.abs(rest)>1e-6)parts.push({name:'Samspil',delta:rest});
+      return {id:st.id,name:st.name,value,base,parts,pct:!!st.pct,points:!!st.points,unit:st.unit||''};
+    });
+    rows.unshift({id:'health',name:'Liv',value:r.maxHealth,base:PLAYER_SPECIES[r.species].hp,parts:r.maxHealth!==PLAYER_SPECIES[r.species].hp?[{name:'Bonusser',delta:r.maxHealth-PLAYER_SPECIES[r.species].hp}]:[],pct:true,points:false,unit:''});
+    if(FEATURES.armorPoints){const a=rows.find(x=>x.id==='armor');a.note=Math.round(100*a.value/(a.value+ARMOR.K))+' %';}else rows.splice(rows.findIndex(x=>x.id==='armor'),1);
+    if(!FEATURES.lootTables)rows.splice(rows.findIndex(x=>x.id==='luck'),1);
+    return rows;
   };
   Object.assign(API,{KIN,kinCost,kinBudget,kinLimit,FOLLOW,PACK_ORDERS,packOrderOf});
   return API;
