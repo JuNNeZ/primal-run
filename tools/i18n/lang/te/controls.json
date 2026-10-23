@@ -1,0 +1,15 @@
+{
+ "Vis guide": "గైడ్ చూపించు",
+ "Skjul guide": "గైడ్ దాచు",
+ "Dine knapper": "నీ బటన్లు",
+ "@ viser eller skjuler guiden.": "@ గైడ్‌ను చూపిస్తుంది లేదా దాచుతుంది.",
+ "Tastatur": "కీబోర్డ్",
+ "Dine taster": "నీ కీలు",
+ "Klik på en handling, og tryk en ny tast.": "ఒక చర్యపై క్లిక్ చేసి, కొత్త కీ నొక్కు.",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "కీ ఇప్పటికే వాడుకలో ఉంటే, రెండు చర్యలు కీలను మార్చుకుంటాయి. బాణం కీలు ఎప్పుడూ నిన్ను కదిలిస్తాయి, Esc ఆపుతుంది.",
+ "Nulstil": "రీసెట్",
+ "Nulstil alle": "అన్నీ రీసెట్",
+ "Nulstillet til standard": "డిఫాల్ట్‌కు మార్చబడింది",
+ "Byttet med {0}": "{0}తో మార్చబడింది",
+ "Tasten understøttes ikke": "ఈ కీకి మద్దతు లేదు"
+}

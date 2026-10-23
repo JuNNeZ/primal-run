@@ -1,0 +1,15 @@
+{
+ "Vis guide": "Show guide",
+ "Skjul guide": "Hide guide",
+ "Dine knapper": "Your controls",
+ "@ viser eller skjuler guiden.": "@ dey show or hide the guide.",
+ "Tastatur": "Keyboard",
+ "Dine taster": "Your keys",
+ "Klik på en handling, og tryk en ny tast.": "Click one action, then press new key.",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "If person don use the key already, the two actions go swap keys. Arrow keys go always move you, and Esc dey pause.",
+ "Nulstil": "Reset",
+ "Nulstil alle": "Reset all",
+ "Nulstillet til standard": "E don go back to default",
+ "Byttet med {0}": "E don swap with {0}",
+ "Tasten understøttes ikke": "Dat key no dey work"
+}

@@ -1,0 +1,15 @@
+{
+ "Vis guide": "顯示指南",
+ "Skjul guide": "收埋指南",
+ "Dine knapper": "你嘅按鍵",
+ "@ viser eller skjuler guiden.": "@ 顯示或者收埋指南。",
+ "Tastatur": "鍵盤",
+ "Dine taster": "你嘅鍵",
+ "Klik på en handling, og tryk en ny tast.": "撳一個動作，再撳新嘅鍵。",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "如果個鍵已經用緊，兩個動作會交換按鍵。方向鍵一定可以郁，Esc 暫停。",
+ "Nulstil": "重設",
+ "Nulstil alle": "全部重設",
+ "Nulstillet til standard": "已經還原預設",
+ "Byttet med {0}": "同{0}交換咗",
+ "Tasten understøttes ikke": "唔支援呢個鍵"
+}

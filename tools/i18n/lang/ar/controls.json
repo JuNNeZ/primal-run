@@ -1,0 +1,15 @@
+{
+ "Vis guide": "أظهر الدليل",
+ "Skjul guide": "أخفِ الدليل",
+ "Dine knapper": "أزرارك",
+ "@ viser eller skjuler guiden.": "@ يُظهر الدليل أو يخفيه.",
+ "Tastatur": "لوحة المفاتيح",
+ "Dine taster": "مفاتيحك",
+ "Klik på en handling, og tryk en ny tast.": "انقر على إجراء، ثم اضغط مفتاحًا جديدًا.",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "إذا كان المفتاح مستخدمًا، يتبادل الإجراءان المفاتيح. مفاتيح الأسهم تحرّكك دائمًا، وEsc يوقف اللعبة مؤقتًا.",
+ "Nulstil": "إعادة ضبط",
+ "Nulstil alle": "إعادة ضبط الكل",
+ "Nulstillet til standard": "أُعيد إلى الافتراضي",
+ "Byttet med {0}": "تم التبديل مع {0}",
+ "Tasten understøttes ikke": "هذا المفتاح غير مدعوم"
+}

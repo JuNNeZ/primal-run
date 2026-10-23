@@ -1,0 +1,15 @@
+{
+ "Vis guide": "গাইড দেখাও",
+ "Skjul guide": "গাইড লুকাও",
+ "Dine knapper": "তোমার বোতাম",
+ "@ viser eller skjuler guiden.": "@ গাইড দেখায় বা লুকায়।",
+ "Tastatur": "কিবোর্ড",
+ "Dine taster": "তোমার কী",
+ "Klik på en handling, og tryk en ny tast.": "একটি কাজে ক্লিক করো, তারপর নতুন কী চাপো।",
+ "Er tasten i brug, bytter de to handlinger taster. Piletasterne bevæger dig altid, og Esc pauser.": "কী আগে থেকে ব্যবহৃত হলে দুটি কাজ কী অদলবদল করে। তীর কী সবসময় তোমাকে নড়ায়, আর Esc থামায়।",
+ "Nulstil": "রিসেট",
+ "Nulstil alle": "সব রিসেট",
+ "Nulstillet til standard": "ডিফল্টে ফেরানো হয়েছে",
+ "Byttet med {0}": "{0}-এর সাথে বদল হয়েছে",
+ "Tasten understøttes ikke": "এই কী সমর্থিত নয়"
+}
