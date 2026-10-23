@@ -19,17 +19,24 @@ for e in entries:
     pixels=list(im.getdata())
     if im.mode!='RGBA' or list(im.size)!=e['size']: errors.append(e['id']+': mode/size')
     if not all(p[3] in (0,255) for p in pixels): errors.append(e['id']+': alpha')
-    if not all(p[:3] in palette for p in pixels if p[3]): errors.append(e['id']+': palette')
+    # Stat brief explicitly requests this one contour outside Primal Earth 32.
+    allowed = palette | ({(16,27,22)} if e['group']=='stats' else set())
+    if not all(p[:3] in allowed for p in pixels if p[3]): errors.append(e['id']+': palette')
     if not all(p[:3]==(0,0,0) for p in pixels if not p[3]): errors.append(e['id']+': transparent RGB')
     ok=approval['icons'].get(e['id'])==e['sha256']
     if (e['status'],e['production_approved'])!=(('approved_static',True) if ok else ('prototype_static',False)): errors.append(e['id']+': status')
     if hashlib.sha256(file.read_bytes()).hexdigest()!=e['sha256']: errors.append(e['id']+': PNG hash')
     source=GAME/e['source_pixels']
-    if hashlib.sha256(source.read_bytes()).hexdigest()!=e['source_sha256']: errors.append(e['id']+': source hash')
+    if hashlib.sha256(source.read_bytes()).hexdigest()!=e.get('source_pixels_sha256',e['source_sha256']): errors.append(e['id']+': source hash')
     src=json.loads(source.read_text())
     rows=src['icons'][e['id']]
     reconstructed=[(0,0,0,0) if ch=='.' else (*bytes.fromhex(src['palette'][src['symbols'].index(ch)][1:]),255) for row in rows for ch in row]
     if reconstructed!=pixels: errors.append(e['id']+': source pixels differ')
+    if e['group']=='stats':
+        if hashlib.sha256((GAME/e['source']).read_bytes()).hexdigest()!=e['source_sha256']: errors.append(e['id']+': raw source hash')
+        if e['size']==[32,32]:
+            native=Image.open(file.with_name(file.stem.removesuffix('_32')+'.png'))
+            if list(native.resize((32,32),Image.Resampling.NEAREST).getdata())!=pixels: errors.append(e['id']+': not exact 2x')
     bbox=im.getbbox()
     if not bbox: errors.append(e['id']+': empty')
     if e['id']!='reel_frame' and (min(bbox[:2])<2 or bbox[2]>im.width-2 or bbox[3]>im.height-2): errors.append(e['id']+': padding')
@@ -40,6 +47,10 @@ if listed!=actual or len(listed)!=len(entries): errors.append('inventory/duplica
 expected={'relics':20,'sets':4,'loot':6}
 for group,count in {'rarity':7,'tags':6,'mutations':14,'ui':13,'difficulty':2,'future':8}.items():
     if any(e['group']==group for e in entries): expected[group]=count
+if any(e['group']=='stats' for e in entries):
+    expected['stats']=16
+    wanted={'stat_'+name+suffix for name in ('health','damage','crit','armor','regen','speed','ability','luck') for suffix in ('','_32')}
+    if {e['id'] for e in entries if e['group']=='stats'}!=wanted: errors.append('stat inventory')
 if {g:sum(e['group']==g for e in entries) for g in expected}!=expected: errors.append('group counts')
 frame=Image.open(GAME/'assets/hud_icons/loot/reel_frame.png')
 if frame.crop((8,8,16,16)).getbbox(): errors.append('9-slice center not transparent')
@@ -52,6 +63,6 @@ for box in [(0,8,8,16),(16,8,24,16)]:
 armor=Image.open(GAME/'assets/hud_icons/loot/armor_points.png')
 if armor.crop((16,0,24,24)).getbbox(): errors.append('armor number space occupied')
 report=dict(result='FAIL' if errors else 'PASS',files=len(entries),groups=expected,errors=errors,approved=sum(e['status']=='approved_static' for e in entries),scope='Native dimensions, RGBA, fixed palette, binary alpha, transparent RGB, padding, inventory, source reconstruction, hashes, 9-slice seams, armor number space. No runtime or visual approval.',icons=details)
-(GAME/'hud_icons_validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+(GAME/'hud_icons_validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8', newline='\n')
 print(json.dumps({k:v for k,v in report.items() if k!='icons'},indent=2))
 raise SystemExit(bool(errors))
