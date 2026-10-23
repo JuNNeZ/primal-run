@@ -3,7 +3,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),L=require('../PRIMAL_RUN_Game/src/loot.js'),C=require('../PRIMAL_RUN_Game/src/core.js');
 const close=(a,b,eps)=>assert.ok(Math.abs(a-b)<=eps,a+' vs '+b);
 
-test('lootTables is off by default',()=>{assert.equal(C.FEATURES.lootTables,false);});
+test('the loot core is on (Jonas 2026-10-22: "Kun kernen først")',()=>{for(const f of ['lootTables','armorPoints','lootReveal','relics','nestCaches','hudIconSet'])assert.equal(C.FEATURES[f],true,f);});
 
 test('top-down meat cascades reproduce the old kill() thresholds exactly, with and without the elite floor',()=>{
   for(const t of Object.values(L.MEAT_THRESHOLDS)){
@@ -91,10 +91,10 @@ test('armorPoints: off keeps -8 % per Sej hud rank; on uses K/(armor+K) with 10 
 // FEATURES.relics (loot step 3): relics beside the mutation cards, sets of three plus Meteorsplint as joker.
 function withRelics(fn){const was=[C.FEATURES.lootTables,C.FEATURES.relics];C.FEATURES.lootTables=C.FEATURES.relics=true;try{return fn();}finally{[C.FEATURES.lootTables,C.FEATURES.relics]=was;}}
 const relicGame=seed=>{let x=seed>>>0;const g=new C.Game({random:()=>{x=(Math.imul(x,1664525)+1013904223)>>>0;return x/4294967296;}});g.start({seed});g.run.enemies=[];g.run.spawnTimer=999;return g;};
-test('relics: off by default and inert without the flag',()=>{
-  assert.equal(C.FEATURES.relics,false);const g=relicGame(3);assert.equal(g.grantRelic('boss'),null);
+test('relics: inert with the flag off',()=>{
+  const was=C.FEATURES.relics;C.FEATURES.relics=false;try{const g=relicGame(3);assert.equal(g.grantRelic('boss'),null);
   g.run.relics={osteoderm_plates:true,keen_eye:true,meteor_shard:true};assert.equal(C.relicStat(g.run,'armor'),0);assert.equal(C.relicSet(g.run,'armor'),0);
-  assert.equal(C.ACHIEVEMENTS.filter(a=>a.flag==='relics').length,3);
+  assert.equal(C.ACHIEVEMENTS.filter(a=>a.flag==='relics').length,3);}finally{C.FEATURES.relics=was;}
 });
 test('grantRelic never repeats a relic in a run and falls back to DNA when a tier is used up',()=>withRelics(()=>{
   const g=relicGame(7),r=g.run,seen=[];let dna=0;
@@ -145,4 +145,9 @@ test('nest_cache table: two different finds at luck 1, relic only with the relic
   for(let i=0;i<n;i++){const d=loot.roll('nest_cache',{luck:1,flags:{relics:true}},rng);if(d.some(x=>x.id==='relic'))relic++;}
   close(relic/n,1/8+3/8/5+2*(2/8/6),.012); // first pick, or second after dna (3) or meat/heal (2)
   for(let i=0;i<n;i++)extra+=loot.roll('nest_cache',{luck:1.5,flags:{relics:true}},rng).length-2;close(extra/n,.5,.012);
+});
+
+test('relics on: one albino per level (the second rare site becomes a fossil); relics off keeps two',()=>{
+  const count=on=>{const was=[C.FEATURES.relics,C.FEATURES.lootTables];C.FEATURES.relics=on;C.FEATURES.lootTables=true;try{const g=new C.Game({random:()=>.5});g.start({seed:42});return [g.run.enemies.filter(e=>e.rare).length,g.run.map.sites.filter(s=>s.type==='rare').length];}finally{[C.FEATURES.relics,C.FEATURES.lootTables]=was;}};
+  assert.deepEqual(count(true),[1,1]);assert.deepEqual(count(false),[2,2]);
 });

@@ -1,227 +1,314 @@
 {
+  "species": "allosaurus",
   "status": "PASS",
-  "scope": "rest-pose cutout files only",
   "art_status": "prototype_static",
-  "visual_approval": "pending Jonas",
-  "animation_frames_created": 0,
-  "runtime_tested": false,
-  "checks": [
-    "64 native RGBA PNGs, 144x144",
-    "Primal Earth 32 only",
-    "binary alpha and zero transparent RGB",
-    "2px transparent margins",
-    "four 15-part hierarchies and orders",
-    "all body pivots at 72,72",
-    "all pivots and tips opaque in their own part",
-    "all child pivots opaque in parent, with overlapping joint surfaces",
-    "child chain pivots equal parent tips",
-    "exact ordered compositing",
-    "W differs from mirrored E",
-    "source SHA-256 provenance"
-  ],
+  "visual_status": "unapproved",
+  "production_approved": false,
+  "runtime_integrated": false,
+  "base_commit": "158d6dde2db675337d621ca93b68c9bd41da869d",
   "directions": {
     "S": {
-      "parts": 15,
-      "full_sha256": "11b2822998efa89989ddd45c23b8915e39aaf3820cf331c0037254481ceeb718",
-      "joints": {
-        "neck": {
-          "overlapping_pixels": 113
-        },
-        "head": {
-          "overlapping_pixels": 93
-        },
-        "jaw": {
-          "overlapping_pixels": 59
-        },
-        "tail1": {
-          "overlapping_pixels": 62
-        },
-        "tail2": {
-          "overlapping_pixels": 56
-        },
-        "tail3": {
-          "overlapping_pixels": 38
-        },
-        "thigh_L": {
-          "overlapping_pixels": 73
-        },
-        "shin_L": {
-          "overlapping_pixels": 5
-        },
-        "foot_L": {
-          "overlapping_pixels": 5
-        },
-        "thigh_R": {
-          "overlapping_pixels": 64
-        },
-        "shin_R": {
-          "overlapping_pixels": 7
-        },
-        "foot_R": {
-          "overlapping_pixels": 6
-        },
-        "arm_L": {
-          "overlapping_pixels": 5
-        },
-        "arm_R": {
-          "overlapping_pixels": 11
-        }
-      }
+      "bbox": [
+        58,
+        13,
+        87,
+        125
+      ],
+      "length_px": 29,
+      "visible_foot_pixels": {
+        "foot_L": 11,
+        "foot_R": 17
+      },
+      "joint_overlap_pixels": {
+        "neck": 113,
+        "head": 93,
+        "jaw": 59,
+        "tail1": 62,
+        "tail2": 56,
+        "tail3": 38,
+        "thigh_L": 73,
+        "shin_L": 5,
+        "foot_L": 5,
+        "thigh_R": 64,
+        "shin_R": 7,
+        "foot_R": 6,
+        "arm_L": 5,
+        "arm_R": 11
+      },
+      "full_sha256": "11b2822998efa89989ddd45c23b8915e39aaf3820cf331c0037254481ceeb718"
     },
     "N": {
-      "parts": 15,
-      "full_sha256": "0fe8f70cce44903d9cbb9db2534cf1911996b9a93bf1f66606ce45a953428bef",
-      "joints": {
-        "neck": {
-          "overlapping_pixels": 97
-        },
-        "head": {
-          "overlapping_pixels": 61
-        },
-        "jaw": {
-          "overlapping_pixels": 96
-        },
-        "tail1": {
-          "overlapping_pixels": 97
-        },
-        "tail2": {
-          "overlapping_pixels": 42
-        },
-        "tail3": {
-          "overlapping_pixels": 27
-        },
-        "thigh_L": {
-          "overlapping_pixels": 61
-        },
-        "shin_L": {
-          "overlapping_pixels": 11
-        },
-        "foot_L": {
-          "overlapping_pixels": 13
-        },
-        "thigh_R": {
-          "overlapping_pixels": 62
-        },
-        "shin_R": {
-          "overlapping_pixels": 6
-        },
-        "foot_R": {
-          "overlapping_pixels": 12
-        },
-        "arm_L": {
-          "overlapping_pixels": 63
-        },
-        "arm_R": {
-          "overlapping_pixels": 67
-        }
-      }
+      "bbox": [
+        58,
+        23,
+        87,
+        121
+      ],
+      "length_px": 29,
+      "visible_foot_pixels": {
+        "foot_L": 10,
+        "foot_R": 6
+      },
+      "joint_overlap_pixels": {
+        "neck": 97,
+        "head": 61,
+        "jaw": 96,
+        "tail1": 97,
+        "tail2": 42,
+        "tail3": 27,
+        "thigh_L": 61,
+        "shin_L": 11,
+        "foot_L": 13,
+        "thigh_R": 62,
+        "shin_R": 6,
+        "foot_R": 12,
+        "arm_L": 63,
+        "arm_R": 67
+      },
+      "full_sha256": "0fe8f70cce44903d9cbb9db2534cf1911996b9a93bf1f66606ce45a953428bef"
     },
     "E": {
-      "parts": 15,
-      "full_sha256": "f7014737ad877845b7f3d4b1d476df9aef8a1f8b7ea249e0045448491617c7b3",
-      "joints": {
-        "neck": {
-          "overlapping_pixels": 203
-        },
-        "head": {
-          "overlapping_pixels": 107
-        },
-        "jaw": {
-          "overlapping_pixels": 58
-        },
-        "tail1": {
-          "overlapping_pixels": 67
-        },
-        "tail2": {
-          "overlapping_pixels": 71
-        },
-        "tail3": {
-          "overlapping_pixels": 43
-        },
-        "thigh_L": {
-          "overlapping_pixels": 157
-        },
-        "shin_L": {
-          "overlapping_pixels": 13
-        },
-        "foot_L": {
-          "overlapping_pixels": 10
-        },
-        "thigh_R": {
-          "overlapping_pixels": 129
-        },
-        "shin_R": {
-          "overlapping_pixels": 17
-        },
-        "foot_R": {
-          "overlapping_pixels": 8
-        },
-        "arm_L": {
-          "overlapping_pixels": 32
-        },
-        "arm_R": {
-          "overlapping_pixels": 52
-        }
-      }
+      "bbox": [
+        5,
+        59,
+        135,
+        92
+      ],
+      "length_px": 130,
+      "visible_foot_pixels": {
+        "foot_L": 6,
+        "foot_R": 43
+      },
+      "joint_overlap_pixels": {
+        "tail1": 80,
+        "tail2": 22,
+        "tail3": 10,
+        "neck": 66,
+        "head": 55,
+        "jaw": 42,
+        "thigh_L": 33,
+        "shin_L": 22,
+        "foot_L": 9,
+        "thigh_R": 29,
+        "shin_R": 16,
+        "foot_R": 9,
+        "arm_L": 9,
+        "arm_R": 14
+      },
+      "full_sha256": "d3b74dfccd165eb90fb69823fef617510d4ef70ae49468e620bc795ef4bfb6e8"
     },
     "W": {
-      "parts": 15,
-      "full_sha256": "d16aab81e98124960d513294d9644616fc2d405ca35dddc7ed385b9f6f749105",
-      "joints": {
-        "neck": {
-          "overlapping_pixels": 132
-        },
-        "head": {
-          "overlapping_pixels": 125
-        },
-        "jaw": {
-          "overlapping_pixels": 102
-        },
-        "tail1": {
-          "overlapping_pixels": 196
-        },
-        "tail2": {
-          "overlapping_pixels": 94
-        },
-        "tail3": {
-          "overlapping_pixels": 59
-        },
-        "thigh_R": {
-          "overlapping_pixels": 218
-        },
-        "shin_R": {
-          "overlapping_pixels": 20
-        },
-        "foot_R": {
-          "overlapping_pixels": 6
-        },
-        "thigh_L": {
-          "overlapping_pixels": 174
-        },
-        "shin_L": {
-          "overlapping_pixels": 24
-        },
-        "foot_L": {
-          "overlapping_pixels": 8
-        },
-        "arm_R": {
-          "overlapping_pixels": 33
-        },
-        "arm_L": {
-          "overlapping_pixels": 70
-        }
-      }
+      "bbox": [
+        4,
+        54,
+        134,
+        90
+      ],
+      "length_px": 130,
+      "visible_foot_pixels": {
+        "foot_L": 41,
+        "foot_R": 44
+      },
+      "joint_overlap_pixels": {
+        "tail1": 22,
+        "tail2": 15,
+        "tail3": 8,
+        "neck": 37,
+        "head": 35,
+        "jaw": 46,
+        "thigh_R": 29,
+        "shin_R": 11,
+        "foot_R": 8,
+        "thigh_L": 37,
+        "shin_L": 9,
+        "foot_L": 10,
+        "arm_R": 13,
+        "arm_L": 13
+      },
+      "full_sha256": "647ad8fc3f0b0e9b430b0dadc33e775d6617ea50406e902ee2daa6a5f20392fb"
     }
   },
-  "source_sha256": {
-    "sources/continuous.png": "1f91a3ab58f3e76ab75b3e89ba9e1865400475347fc26ac5f26c7bd34085cfd2",
-    "sources/S.png": "c71a542b9bfee28f9f2d9aa0ef489886d6422fa662a682011935dc60c47f16b6",
-    "sources/limbs.png": "63f7edd8c524734c10941bd567fb1d6a556a644d39091e540f2974a2cecc47e0",
-    "sources/N.png": "2088c571e3a17eab83e0a75aeff1f363960f0e959d9f40d7219bfaf448578787",
-    "sources/corrections.png": "a6b6acfdf6427c868717b0ee772baf6cca0206d72fa162a58c3b8ecc06f791fd",
-    "sources/E.png": "a9954be0e1efe71c378e2ba1c0b7f361f3caad2b548b8e0c68df0b179fead4b5",
-    "sources/east_first.png": "346ea20822e68dee8bf73139a3aa24241a8e5b780a6a78c7203cd5658364120a",
-    "sources/W.png": "9ca6cef59b1d5b27fd82547b4645c87178f32540286e3ff5d0fc6132b8750e37"
+  "preserved_SN": {
+    "allosaurus_S_body.png": "2f469347e53cb2b1041cd1f8e965edb73bba0e6ac140e6ccc192a355b494d938",
+    "allosaurus_S_neck.png": "066a0bf13f47edbb04f39d3f7522f649ff351e338fb234338d743e845e053a55",
+    "allosaurus_S_head.png": "d360700b0c21bafc42e723b30d51c930cbb3ca85f9e5dc98edbe7ace17ef8855",
+    "allosaurus_S_jaw.png": "eda2e8aeebbce95188dda2551f9b97403485ef4347f9810cfebdcc761c9581a7",
+    "allosaurus_S_tail1.png": "c317204f3b3061eb209dfd4287d9f3f233b3742d2a99f9b9da5645571bbd59cb",
+    "allosaurus_S_tail2.png": "72c96ce4efd8df71e19ddb79bed58c55ae9af7ed3c50240f488ef4d452ee83a7",
+    "allosaurus_S_tail3.png": "a2cf6a68f39f675a0d1770e7d079b4cc4e15984c3e7b4d828cce339d7b331a64",
+    "allosaurus_S_thigh_L.png": "b5be94308dd2983e867251cfc9ff181bddbbdd71bcd0c74221121021b9fb358a",
+    "allosaurus_S_shin_L.png": "4b4337421489a08e7b496b255cb8eab9d8b0619bc58efae164ef08991ceb497f",
+    "allosaurus_S_foot_L.png": "f8227a0e047c7d482803e0d6d955c11a74b531f5a82bccf8e220907aadb4d4e4",
+    "allosaurus_S_thigh_R.png": "7712ddcac352d2cdce7ed7f195a567f9fd9af928178eff1ee0362e9a5997faf9",
+    "allosaurus_S_shin_R.png": "d17b17955d194a04e657f19021670a8fdbf845cb77a36645edc25e15e782d7cb",
+    "allosaurus_S_foot_R.png": "81f370f763e3d6536471b5ea4d598a62a17a48399e8f7e5a838498f0e97de0e2",
+    "allosaurus_S_arm_L.png": "e4e531d0177092d8fc2302646df8e14cd815e81792920bd4d4f5c1481d456fc6",
+    "allosaurus_S_arm_R.png": "d467a873867ccf5d4ea7685213e011027c7bad81f627b0185da95841c201a941",
+    "allosaurus_S_full.png": "11b2822998efa89989ddd45c23b8915e39aaf3820cf331c0037254481ceeb718",
+    "allosaurus_N_body.png": "d0f74310442db1090b857387b3970382967f8391212cef1f94b9cc4cda292faf",
+    "allosaurus_N_neck.png": "e57571c5379309ae973cc894d956438d1f2fc3422c9cc2c8d0fe9ad455bba9a1",
+    "allosaurus_N_head.png": "1140e88f311d8057bffef20c2c7b5edc87d0e34d2f7693576c75d37012d838aa",
+    "allosaurus_N_jaw.png": "6c2df6aae419295115712fcf4eeeb01c29147ebdb03239c47c5185bc2a1f65ea",
+    "allosaurus_N_tail1.png": "adcf833ec0e5eeda2c2832de83a19e5d0151fbca2d06a2a6d3bfee5f3793bca6",
+    "allosaurus_N_tail2.png": "ca0d8950558ae0e36b173a10e874027c0d60597625376defa0bb6b734a671d49",
+    "allosaurus_N_tail3.png": "96dc33f146e56b2d99641db2491e9867b57cdacc5f0356c4f1f9a33c71d0d37e",
+    "allosaurus_N_thigh_L.png": "307078e0e9cb93d006ee0e9748ab78967c218c0cf18192f05ed24200756ea6f1",
+    "allosaurus_N_shin_L.png": "164946579b7869aa3ea132a87bac04277ec9b7be92475c9419078fb064ab112d",
+    "allosaurus_N_foot_L.png": "ff78ccc6f234625b1ff8e81c0139e6778cf86a45aaec7b7b91e48dbfd4622e13",
+    "allosaurus_N_thigh_R.png": "4ef7cd1781164cd9d2870d3e3d79416cb07705d2d2477cf4185049d8dc3d2237",
+    "allosaurus_N_shin_R.png": "f78203dd78e1967f59b4ed7a4630c46d01c6ec9a31e5f08fcb3e67e40230c2e2",
+    "allosaurus_N_foot_R.png": "4197204eade83e1b4493244ecd282049bebff4d11274112769523700278700af",
+    "allosaurus_N_arm_L.png": "78d73d2a06d1426eb9045b0d092e0220eac67e0544e4ab31703840bb92b15a91",
+    "allosaurus_N_arm_R.png": "d88ba8bf4388eb854c7177c706b6fed4592b41154091b35e746a268f3ba11aa8",
+    "allosaurus_N_full.png": "0fe8f70cce44903d9cbb9db2534cf1911996b9a93bf1f66606ce45a953428bef"
   },
-  "native_png_count": 64
+  "sources": {
+    "topdown_EW_v2.png": "f9d5aaa3de677b595afbf0d531442ffbcdd9c389e5ddc7bae1415ff967a9c4cc",
+    "topdown_core_v3.png": "998944f407b844a5b9d31bd1da246af985f6b98717cafe5e7ec12f051013b3ea"
+  },
+  "rig": {
+    "frames": 120,
+    "clipped_frames": [],
+    "command": "python tools/cutout_rig.py --species allosaurus --parts PRIMAL_RUN_Game/Source_Generated/cutout/allosaurus --out /tmp/frames --gif /tmp/gif",
+    "gif_sequences": {
+      "walk_S": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "walk_E": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "walk_W": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "walk_N": {
+        "frames": 6,
+        "duration_ms": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "run_S": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "run_E": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "run_W": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "run_N": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "attack_S": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "attack_E": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "attack_W": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      },
+      "attack_N": {
+        "frames": 6,
+        "duration_ms": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ]
+      }
+    },
+    "separated_joints": []
+  },
+  "limitations": [
+    "Prototype art awaiting Jonas visual review.",
+    "No runtime assets or GDevelop integration changed.",
+    "Jaw opening is the existing 2D rig translation."
+  ]
 }

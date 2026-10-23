@@ -12,7 +12,7 @@
   const TELEMETRY = (typeof module === 'object' && module.exports ? require('./telemetry.js') : globalThis.PrimalTelemetry) || null;
   // Data-driven loot tables with cascading top-down rarity (FEATURES.lootTables) live in loot.js.
   const LOOT = (typeof module === 'object' && module.exports ? require('./loot.js') : globalThis.PrimalLoot) || null;
-  const FEATURES={coopBuddy:true,seededRuns:true,friendChallenge:true,naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true,randomStart:true,runTelemetry:true,sizeAware:true,hudLayouts:true,titleTips:true,stealth:true,speciesIdentity:true,waterStart:true,bounties:true,deathTips:true,bossCurve:true,titleBook:true,titleAchievements:true,mapBiomes:true,fishingGame:true,tipsToggle:true,steepBosses:true,tougherCombat:true,epicBudget:true,ankyTailTurn:true,rigSprites:true,rexCutout:false,amberFair:true,lootTables:false,armorPoints:false,lootReveal:false,relics:false,nestCaches:false,affixStages:false,hudIconSet:false,tarTotem:false,rottenMeat:false,dailyShare:false,extinctionPressure:false,currencies:false};
+  const FEATURES={coopBuddy:true,seededRuns:true,friendChallenge:true,naturalPonds:true,fishingSpots:true,cleanMarkers:true,shoreBlend:true,nativeGround:true,presentationArt:true,spriteAtlas:true,bossReach:true,lavaCrossings:true,bossSignatures:true,dailyHunt:true,challenges:true,fishKing:true,scentTrails:true,drought:true,dayNight:true,raptorPack:true,packCalls:true,territorialNests:true,variedForage:true,speciesAttacks:true,stableIdle:true,limpAnimation:true,waterTiles:true,ecologyAnimations:true,injuredPoses:true,menuPilot:true,guideModels:true,speciesCards:true,naturalEcology:true,mutationRerolls:true,speciesMutationBias:true,secondWind:false,banish:true,rarityPity:true,mutationTags:true,evolutions:true,bossTrophies:true,labTracks:true,blueprints:true,speciesMastery:true,growthStages:true,nestEggs:true,packLeash:true,allyCalls:true,newSpecies:true,wipBadges:true,npcSteering:true,bossLook:true,combatColors:true,ashLevel:true,equilibrium:true,tradeoffMutations:true,raptorDonate:true,difficulties:true,randomStart:true,runTelemetry:true,sizeAware:true,hudLayouts:true,titleTips:true,stealth:true,speciesIdentity:true,waterStart:true,bounties:true,deathTips:true,bossCurve:true,titleBook:true,titleAchievements:true,mapBiomes:true,fishingGame:true,tipsToggle:true,steepBosses:true,tougherCombat:true,epicBudget:true,ankyTailTurn:true,rigSprites:true,rexCutout:true,amberFair:true,lootTables:true,armorPoints:true,lootReveal:true,relics:true,nestCaches:true,affixStages:false,hudIconSet:true,tarTotem:false,rottenMeat:false,dailyShare:false,extinctionPressure:false,currencies:false,textOnTop:true};
   // Size-aware world (FEATURES.sizeAware): a prop's collision and slow radius come from its visible pixels
   // (tools/measure_props.py), only its kind is chosen by hand. Kinds also decide the draw layer in app.js.
   const PROP_SIZE={"assets/ecology/broad_fern.png":["soft",38],"assets/ecology/conifer.png":["canopy",34],"assets/ecology/cycad.png":["soft",36],"assets/ecology/dry_grass.png":["ground",32],"assets/ecology/flowers.png":["ground",30],"assets/ecology/fruit_bush.png":["soft",36],"assets/ecology/herb.png":["ground",36],"assets/ecology/horsetail.png":["soft",34],"assets/ecology/leaf_litter.png":["ground",30],"assets/ecology/lichen.png":["ground",32],"assets/ecology/moss.png":["ground",28],"assets/ecology/mushrooms.png":["ground",26],"assets/ecology/reeds.png":["soft",37],"assets/ecology/roots.png":["ground",34],"assets/ecology/seed_fern.png":["soft",38],"assets/ecology/shrub.png":["soft",35],"assets/ecology/succulent.png":["ground",29],"assets/ecology/twigs.png":["ground",32],"assets/environment/fern.png":["ground",21],"assets/environment/rock.png":["solid",13],"assets/props/boulder_large.png":["solid",22],"assets/props/dead_tree.png":["canopy",51],"assets/props/fallen_log.png":["ground",21],"assets/props/fern_large.png":["soft",24],"assets/props/flower_bush.png":["soft",23],"assets/props/lava_rock.png":["solid",22],"assets/props/meteorite.png":["solid",23],"assets/props/nest_eggs.png":["ground",20],"assets/props/nest_empty.png":["ground",21],"assets/props/skull.png":["ground",23],"assets/props/tree_canopy.png":["canopy",56]}; // generated by tools/measure_props.py: [kind, visible radius px]
@@ -518,9 +518,10 @@
       if(stage===3 && riverDistance(habitatMap,{x,y})<145)continue;
       ambience.push({x,y,kind,phase:random()*Math.PI*2});
     }
+    // With relics on (Jonas 2026-10-22: "Én albino pr. bane") the second rare site is a fossil, so the 10 relics last the run.
     for (let i = 0; i < 6; i++) {
       const h = habitats[Math.floor((i + .5) / 6 * habitats.length)];
-      sites.push({ id: i, type: i % 3 === 0 ? 'fossil' : i % 3 === 1 ? 'nest' : 'rare', x: h.x, y: h.y, claimed: false, discovered: false });
+      sites.push({ id: i, type: i % 3 === 0 || i === 5 && FEATURES.relics && FEATURES.lootTables ? 'fossil' : i % 3 === 1 ? 'nest' : 'rare', x: h.x, y: h.y, claimed: false, discovered: false });
     }
     const events=[];
     for(let i=0;i<2;i++){const h=habitats[Math.floor(random()*habitats.length)];events.push({x:h.x,y:h.y,type:random()<.5?'spring':'fossil',claimed:false});}
@@ -1475,7 +1476,7 @@
       const dx=prey.x-e.x,dy=prey.y-e.y,d=Math.max(1,Math.hypot(dx,dy));e.mode=e.activity='hunt';e.facingX=dx/d;e.facingY=dy/d;
       if(r.seconds-e.huntStarted>12){e.huntTarget=null;e.huntCooldownUntil=r.seconds+25;return;}
       if(d>e.radius+prey.radius+6)this.travel(e,dx/d*e.speed*1.05*dt,dy/d*e.speed*1.05*dt);
-      else{e.huntBite=(e.huntBite||0)-dt;if(e.huntBite<=0){e.huntBite=.8;prey.hp-=e.damage;prey.hit=.15;this.burst(prey.x,prey.y,'blood',6,prey.id);if(prey.hp<=0&&r.seconds-prey.lastAttackedAt>3){prey.naturalDeath=true;e.huntTarget=null;e.hunger=Math.max(0,e.hunger-.5);}}}
+      else{e.huntBite=(e.huntBite||0)-dt;if(e.huntBite<=0){e.huntBite=.8;prey.hp-=e.damage;prey.npcTaken=(prey.npcTaken||0)+e.damage;prey.hit=.15;this.burst(prey.x,prey.y,'blood',6,prey.id);if(prey.hp<=0&&r.seconds-prey.lastAttackedAt>3){prey.naturalDeath=true;e.huntTarget=null;e.hunger=Math.max(0,e.hunger-.5);}}}
     }
     naturalDeath(e){
       const r=this.run,base=SPECIES[e.kind];
@@ -1787,10 +1788,11 @@
   const simulationStep=Game.prototype.step;
   Game.prototype.step=function(dt,input){
     const r=this.run;if(!r||this.phase!=='playing')return simulationStep.call(this,dt,input);
-    const health=r.health,taken=r.stats.damageTaken,enemies=r.enemies.map(e=>[e,e.hp]);
+    const health=r.health,taken=r.stats.damageTaken,enemies=r.enemies.map(e=>[e,e.hp,e.npcTaken||0]);
     try{return simulationStep.call(this,dt,input);}finally{
       r.stats.healing+=Math.max(0,r.health-health+r.stats.damageTaken-taken);
-      for(const [e,hp] of enemies)r.stats.damageDealt+=Math.max(0,hp-Math.max(0,e.hp));
+      // HP that animals take from each other (ecology hunts, NPC fights) is not the player's damage (e.npcTaken).
+      for(const [e,hp,npc] of enemies){const d=hp-Math.max(0,e.hp)-((e.npcTaken||0)-npc);if(d>1e-9)r.stats.damageDealt+=d;}
     }
   };
   // ===== Part B (claude/part-b): isolated blocks; each one is gated by its FEATURES flag. =====
@@ -2155,7 +2157,7 @@
   Game.prototype.npcBite=function(e,t){
     const r=this.run,d=Math.max(1,Math.hypot(e.x-t.x,e.y-t.y)),frontal=((e.x-t.x)*t.facingX+(e.y-t.y)*t.facingY)/d>.6;
     const armour=armoured(t.kind)&&frontal&&e.kind!=='tyrannosaurus'?.5:1,guard=t.npcGuardUntil>r.seconds?.25:1;
-    t.hp-=e.damage*armour*guard;t.hit=.15;e.lastBiteAt=r.seconds;this.burst(t.x,t.y,'blood',6,t.id);
+    t.hp-=e.damage*armour*guard;t.npcTaken=(t.npcTaken||0)+e.damage*armour*guard;t.hit=.15;e.lastBiteAt=r.seconds;this.burst(t.x,t.y,'blood',6,t.id);
     t.npcAttacker=e.id;t.npcAttackedAt=r.seconds;
     for(const mate of this.nearbyAnimals(t.x,t.y,260)){ // the herd reacts: armed mates help, unarmed ones scatter
       if(mate===t||mate===e||mate.kind!==t.kind||mate.boss||mate.guard||mate.miniboss||mate.hunting)continue;
@@ -2937,7 +2939,7 @@
   const BOSS_LOOK={scale:1.15,minScale:1.35,glow:'#e9b75a'},COMBAT_COLORS={attack:'#e5483c',defense:'#dfbc52'};
   const STATIC_SPECIES=new Set();
   // rigSprites: prototype rig animations (tools/rig_to_game.py, assets/rig_full/) instead of the still pose. Still WIP art.
-  const RIG_SPECIES=new Set(['iguanodon']); // only approved rig art goes live; the other 15 rig prototypes stay in assets/rig_full until Jonas approves them
+  const RIG_SPECIES=new Set(['iguanodon','allosaurus']); // only approved rig art goes live; the other 15 rig prototypes stay in assets/rig_full until Jonas approves them
   // rexCutout: Codex' T-rex drawn in parts and moved by the Allosaurus rig (tools/cutout_rig.py) replaces enemy_full. Still WIP art.
   const CUTOUT_SPECIES=new Set(['tyrannosaurus']);
   const cutoutFrame=(species,state,direction,frame)=>FEATURES.rexCutout&&CUTOUT_SPECIES.has(species)?'assets/rig_full/'+species+'_'+state+'_'+direction+'_'+String(frame||0).padStart(3,'0')+'.png':null;

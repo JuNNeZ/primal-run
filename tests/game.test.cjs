@@ -2,6 +2,8 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const C = require('../PRIMAL_RUN_Game/src/core.js');
+// These tests pin the classic game: the loot core (on since 2026-10-22) has its own tests in loot-tables.test.cjs.
+for (const f of ['lootTables', 'armorPoints', 'lootReveal', 'relics', 'nestCaches']) C.FEATURES[f] = false;
 C.FEATURES.equilibrium = false; // exact pre-Snowflake HP/damage numbers; tests/snowflake.test.cjs covers the multipliers
 C.FEATURES.tougherCombat = false; C.FEATURES.epicBudget = false; // exact pre-poise combat timings; tests/tougher-combat.test.cjs covers the new rules
 const fs = require('node:fs'), path = require('node:path'), crypto = require('node:crypto');

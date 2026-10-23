@@ -1,5 +1,7 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),C=require('../PRIMAL_RUN_Game/src/core.js');
+// These tests pin the classic game: the loot core (on since 2026-10-22) has its own tests in loot-tables.test.cjs.
+for (const f of ['lootTables', 'armorPoints', 'lootReveal', 'relics', 'nestCaches']) C.FEATURES[f] = false;
 C.FEATURES.equilibrium = false; // exact pre-Snowflake HP/damage numbers; tests/snowflake.test.cjs covers the multipliers
 function setup(species='compy'){const g=new C.Game({random:()=>.9});g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:33});Object.assign(g.run,{enemies:[],spawnTimer:999});Object.assign(g.run.map,{rocks:[],cover:[],mud:[]});return g;}
 test('water and mud slow travel while crocodiles retain water speed and collision corrections remain independent',()=>{

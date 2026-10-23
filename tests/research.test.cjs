@@ -1,5 +1,7 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),C=require('../PRIMAL_RUN_Game/src/core.js'),S=require('../tools/simulate_balance.cjs');
+// These tests pin the classic game: the loot core (on since 2026-10-22) has its own tests in loot-tables.test.cjs.
+for (const f of ['lootTables', 'armorPoints', 'lootReveal', 'relics', 'nestCaches']) C.FEATURES[f] = false;
 function setup(species='compy'){const g=new C.Game({random:()=>.5});g.save.unlockedSpecies=Object.keys(C.PLAYER_SPECIES);g.selectSpecies(species);g.start({seed:12});g.run.enemies=[];g.run.map.rocks=[];g.run.map.mud=[];g.run.map.cover=[];g.run.map.ponds=[];g.run.map.events=[];g.run.spawnTimer=999;return g;}
 test('runs are deterministic for identical seed/species/build and preserve timeout outcome',()=>{const config={species:'gallimimus',build:{name:'test',upgrades:{damage:1},mutations:{teeth:1}},seed:8,seconds:1,mode:'duel'};assert.deepEqual(S.simulate(config),S.simulate(config));assert.equal(S.simulate(config).outcome,'timeout');assert.throws(()=>S.validateBuild('compy',{mutations:{bleed:1}}));assert.throws(()=>S.validateBuild('compy',{upgrades:{health:6}}));});
 test('all registered species and new profiles run without NaN metrics',()=>{for(const species of Object.keys(C.PLAYER_SPECIES)){const row=S.simulate({species,build:S.profiles.baseline,seed:1,seconds:2,mode:'duel'});for(const v of Object.values(row.stats))if(typeof v==='number')assert.ok(Number.isFinite(v));assert.equal(row.stats.summary.length>0,true);}});
