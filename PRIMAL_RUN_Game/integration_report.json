@@ -14,10 +14,10 @@
     "src/loot.js": "e50c75dd172ea37f998b2ee19d1b230a828897ae6d6cc2ef1aa197c1b632c54e",
     "src/core.js": "a0e63df4aa6358ac75398a540cadc731f3ad6b1000f7e1d4071a49242c638ded",
     "src/i18n.js": "299178f7ce0ec801b9d8f7e16dd7ace589e8b8ad4ae040b0aaa32ff2f0292bb6",
-    "src/lang.js": "6af0690895ca3f029b45811f2281dbef4d711c0c33ee0dde348a608db48e6ae8",
+    "src/lang.js": "44282b0749776b5687c7103e16fd9d9566750aa720df4bdbc277716e42fb9b6e",
     "src/assets.js": "82ba0947f38e5a1071071e14e8f6731121afb70d6bb69a4fb0fad78faf35e725",
     "src/audio.js": "c771de3eff07c18a1b3f32b0fb583a3acdb9529ae874380d7ebe9f603e469cd5",
-    "src/app.js": "92f6c451ae0d7f3a6d08c1b259ad8a01c3064f6527e9d7404d1eda25fa993165",
-    "style.css": "05690d232cc91529e1d9385ec95ef0dd8021827fa41bcbaecb1699d789dbac66"
+    "src/app.js": "940c0eb594cfb05761a1af905887cf062c6288452af445d5fedceff2e891a6cb",
+    "style.css": "89f8911b155c3852c2578a9bd150e81b8b0bbae7ba3c81493f1443f2d292ccdc"
   }
 }

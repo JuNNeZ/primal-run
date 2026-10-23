@@ -23,8 +23,9 @@ const assert=require('node:assert/strict'),path=require('node:path');const {chro
  // Dit build: character panel, value with change, base and sources on hover
  await page.keyboard.press('Escape');await page.locator('[data-action="build"]').click();
  const rows=await page.evaluate(()=>Object.fromEntries([...document.querySelectorAll('.stat-row')].map(e=>[e.dataset.tipStat,e.querySelector('em').textContent])));
- assert.deepEqual(Object.keys(rows),['health','damage','speed','regen','crit','armor','luck','ability']);
- assert.equal(rows.damage,'(+40 %)');assert.equal(rows.speed,'(+8 %)');assert.equal(rows.crit,'(+10)');
+ assert.deepEqual(Object.keys(rows),['damage','crit','health','armor','regen','speed','ability','luck'],'grouped: Angreb, Overlevelse, Jagt');
+ assert.deepEqual(await page.evaluate(()=>[...document.querySelectorAll('.stat-sheet h3')].map(h=>h.textContent)),['Angreb','Overlevelse','Jagt']);
+ assert.equal(rows.damage,'+40 %');assert.equal(rows.speed,'+8 %');assert.equal(rows.crit,'+10');
  await page.locator('.stat-row[data-tip-stat="damage"]').hover();
  const sheetTip=await page.locator('.build-tip').textContent();await shot('stat_sheet_tip');
  assert.ok(sheetTip.includes('Grund')&&sheetTip.includes('Kraftigt angreb +40 %'),sheetTip);

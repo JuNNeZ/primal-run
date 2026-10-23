@@ -13,5 +13,8 @@
  "Kritisk chance": "Crit chance",
  "Held": "Luck",
  "Evne-pris": "Ability cost",
- "Rang": "Rank"
+ "Rang": "Rank",
+ "Level": "Level",
+ "Jagt": "Hunt",
+ "Hold musen over eller tryk på en værdi for at se grund og kilder.": "Hover or tap one value to see base and where e come from."
 }

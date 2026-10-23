@@ -58,5 +58,17 @@
  {
   "da": "Rang",
   "en": "Rank"
+ },
+ {
+  "da": "Level",
+  "en": "Level"
+ },
+ {
+  "da": "Jagt",
+  "en": "Hunt"
+ },
+ {
+  "da": "Hold musen over eller tryk på en værdi for at se grund og kilder.",
+  "en": "Hover or tap a value to see its base and sources."
  }
 ]

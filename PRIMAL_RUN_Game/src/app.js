@@ -340,6 +340,7 @@
       }
       I18N.translateNode(screen); adaptControls(screen);
       if (phase === 'mutation') startMutationReel();
+      if (phase === 'build') { const c = screen.querySelector('.sheet-portrait'), pc = shell.querySelector('.hud-portrait'); if (c && pc) c.getContext('2d').drawImage(pc, 0, 0); } // FEATURES.statSheet
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
       shell.querySelector('.save-status').textContent = tr(game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session');
     }
@@ -1342,9 +1343,16 @@
     const num=(v,d=0)=>new Intl.NumberFormat(I18N.lang==='dino'?'da':I18N.lang||'da',{maximumFractionDigits:d,minimumFractionDigits:d}).format(v);
     const sheetValue=row=>row.points?num(100*row.value)+' %':num(row.value,row.unit||row.id==='damage'?1:0)+row.unit;
     const sheetDelta=(row,d)=>row.pct?(d>=0?'+':'−')+num(Math.abs(100*d/(row.base||1)))+' %':row.points?(d>=0?'+':'−')+num(Math.abs(100*d)):(d>=0?'+':'−')+num(Math.abs(d),Number.isInteger(d)?0:1);
+    // Grouped like a character panel; icons are approved game art (assets/ui, hud_icons/tags), luck has no icon yet.
+    const SHEET_GROUPS=[['Angreb',['damage','crit']],['Overlevelse',['health','armor','regen']],['Jagt',['speed','ability','luck']]];
+    const SHEET_ICONS={health:'assets/ui/health.png',damage:'assets/ui/serrated_teeth.png',speed:'assets/ui/powerful_legs.png',regen:'assets/ui/stamina.png',armor:'assets/ui/armor.png',crit:'assets/hud_icons/tags/crit.png',ability:'assets/hud_icons/ui/ability_stamina.png'};
     function statSheetHTML(){
       if(!C.FEATURES.statSheet||!game.statSheet)return '';
-      return `<div class="stat-sheet">${game.statSheet().map(row=>{const d=row.value-row.base;return `<div class="stat-row" data-tip-stat="${row.id}"><span>${tr(row.name)}</span><b>${sheetValue(row)}${row.note?` <small>(${row.note})</small>`:''}</b><em class="${Math.abs(d)<1e-6?'':(d>0)!==(row.id==='ability')?'up':'down'}">${Math.abs(d)<1e-6?'':'('+sheetDelta(row,d)+')'}</em></div>`;}).join('')}</div>`;
+      const rows=Object.fromEntries(game.statSheet().map(x=>[x.id,x])),r=game.run;
+      const row=x=>{const d=x.value-x.base,good=Math.abs(d)<1e-6?'':(d>0)!==(x.id==='ability')?'up':'down',scale=Math.max(x.value,x.base)*1.25||1;
+        const icon=SHEET_ICONS[x.id]?`<img src="${SHEET_ICONS[x.id]}" alt="" draggable="false">`:'<i class="stat-icon" aria-hidden="true">☘</i>';
+        return `<div class="stat-row ${good}" data-tip-stat="${x.id}" tabindex="0">${icon}<span>${tr(x.name)}</span><b>${sheetValue(x)}${x.note?` <small>${x.note}</small>`:''}</b><em>${good?sheetDelta(x,d):''}</em><i class="stat-bar" aria-hidden="true"><s style="width:${Math.min(100,100*x.value/scale).toFixed(1)}%"></s><u style="left:${Math.min(100,100*x.base/scale).toFixed(1)}%"></u></i></div>`;};
+      return `<div class="stat-sheet"><header><canvas class="sheet-portrait" width="64" height="64" aria-hidden="true"></canvas><div><small>${tr('Level')} ${r.level} · ${tr('Bane')} ${r.stage+1}</small><strong>${tr(C.PLAYER_SPECIES[r.species].name)}</strong></div></header>${SHEET_GROUPS.map(([name,ids])=>{const list=ids.filter(id=>rows[id]);return list.length?`<section><h3>${tr(name)}</h3>${list.map(id=>row(rows[id])).join('')}</section>`:'';}).join('')}<p class="fine">${tr('Hold musen over eller tryk på en værdi for at se grund og kilder.')}</p></div>`;
     }
     function buildTipHTML(el){
       const r=game.run;if(!r)return '';const color=c=>`style="--rarity:${c}"`;

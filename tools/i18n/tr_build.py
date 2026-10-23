@@ -16,4 +16,7 @@ BUILD = [
 ("Held","Luck","Glück","Tur","Flaks","運","幸运"),
 ("Evne-pris","Ability cost","Fähigkeitskosten","Förmågekostnad","Evnekostnad","アビリティコスト","技能消耗"),
 ("Rang","Rank","Rang","Rang","Rang","ランク","等级"),
+("Level","Level","Level","Level","Level","レベル","等级"),
+("Jagt","Hunt","Jagd","Jakt","Jakt","狩り","狩猎"),
+("Hold musen over eller tryk på en værdi for at se grund og kilder.","Hover or tap a value to see its base and sources.","Fahre über einen Wert oder tippe darauf, um Basis und Quellen zu sehen.","Håll musen över eller tryck på ett värde för att se bas och källor.","Hold musen over eller trykk på en verdi for å se grunnverdi og kilder.","値にカーソルを合わせるかタップすると、基礎値と内訳が見られる。","悬停或点击数值查看基础值和来源。"),
 ]
