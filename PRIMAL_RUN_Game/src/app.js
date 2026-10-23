@@ -54,6 +54,7 @@
       const el=shell.querySelector('.loot-reel');if(!el||!C.FEATURES.lootReveal)return;if(reel)finishReel(true);
       const order=REEL_TIERS.slice(0,ev.ceiling+1).reverse(),loops=calm()?0:3,items=[];
       for(let i=0;i<loops;i++)items.push(...order);items.push(...order.slice(0,order.indexOf(REEL_TIERS[ev.tier])+1));
+      el.classList.remove('card');el.querySelector('.loot-card-info')?.remove();lootHold=null;
       const strip=el.querySelector('.loot-strip'),name=t=>t===REEL_TIERS[ev.tier]&&ev.label?ev.label:C.MUTATION_RARITIES[t].name;
       const pic=(t,i)=>C.FEATURES.hudIconSet?(i===items.length-1&&ev.icon?`<img class="hud-icon" src="assets/hud_icons/${ev.icon}.png" alt="">`:hudIcon('rarity',t)):'';
       strip.innerHTML=items.map((t,i)=>`<b style="--rarity:${C.MUTATION_RARITIES[t].color}">${pic(t,i)}${tr(name(t))}</b>`).join('');
@@ -68,8 +69,24 @@
     }
     function finishReel(skip){
       const r=reel;if(!r)return;reel=null;r.strip.style.transform=`translateY(${-(r.n-1)*100/r.n}%)`;r.el.style.setProperty('--rarity',C.MUTATION_RARITIES[REEL_TIERS[r.ev.tier]].color);r.el.classList.add('locked');
-      audio.play('loot_lock',{tier:r.ev.tier});setTimeout(()=>{if(!reel)r.el.hidden=true;},skip?0:1400);
+      audio.play('loot_lock',{tier:r.ev.tier});if(C.FEATURES.lootCard){showLootCard(r);return;}setTimeout(()=>{if(!reel)r.el.hidden=true;},skip?0:1400);
     }
+    // FEATURES.lootCard: the locked reel unfolds into a card that says what you got and what it does. Big finds (relics,
+    // caches) keep the world paused until a tap, key or button; small ones (epic meat) stay ~3 s while the world runs.
+    let lootHold=null;const LOOT_ITEMS={meat:'Kød',dna:'DNA',heal:'Helbredelse',relic:'Relikvie'};
+    function showLootCard(r){
+      const ev=r.ev,x=ev.relic&&C.RELICS[ev.relic],set=x&&C.RELIC_SETS[x.set],lines=[];
+      if(x){lines.push(tr(x.text));lines.push(set?tr(set.name)+' '+Math.min(3,C.relicSet(game.run,x.set))+'/3':tr('Tæller i alle sæt'));}
+      else if(ev.items&&ev.items.length)lines.push(ev.items.map(i=>tr(LOOT_ITEMS[i]||i)).join(' · '));
+      else if(ev.kind==='relic')lines.push(tr('Gemt i din DNA-bank'));
+      else if(ev.kind==='meat')lines.push(tr('Ådslet giver ekstra føde'));
+      r.strip.style.transform='none';r.strip.innerHTML=r.strip.lastElementChild.outerHTML;
+      r.el.insertAdjacentHTML('beforeend',`<div class="loot-card-info">${lines.map(l=>`<p>${htmlEscape(l)}</p>`).join('')}${ev.big?`<small>${tr('Tryk for at fortsætte')}</small>`:''}</div>`);
+      r.el.classList.add('card');
+      if(ev.big){lootHold={el:r.el,run:game.run};r.el.onclick=dismissLoot;}else setTimeout(()=>{if(!reel&&!lootHold)r.el.hidden=true;},3000);
+    }
+    function dismissLoot(){const h=lootHold;lootHold=null;if(h&&!reel)h.el.hidden=true;}
+    const lootHeld=()=>!!lootHold&&lootHold.run===game.run;
     // FEATURES.mutationReel: each offered card spins like a slot reel through real mutations from the pool and stops left to
     // right (~0.6/0.9/1.2 s; rerolls and banish replace only changed cards, shorter), so you see what you missed. Presentation
     // only: the choices are already rolled and fillers use Math.random, so seeds stay the same. A tap or key skips, never picks.
@@ -1530,11 +1547,12 @@
       if(buttons[9]&&!padPrevious[9]){if(game.phase==='playing')game.pause();else if(game.phase==='paused')game.resume();}
       if(game.phase!=='playing'&&pad){const focusables=Array.from(screen.querySelectorAll('button:not(:disabled)'));if((buttons[12]&&!padPrevious[12])||(buttons[13]&&!padPrevious[13])){const index=focusables.indexOf(document.activeElement),delta=buttons[12]?-1:1;focusables[(index+delta+focusables.length)%focusables.length]?.focus();}if(buttons[0]&&!padPrevious[0]&&screen.contains(document.activeElement))document.activeElement.click();}
       if(pad&&(buttons.some(Boolean)||pad.axes.some(a=>Math.abs(a)>.5)))setInputMode('gamepad');
+      if(lootHeld()&&game.phase==='playing'&&buttons.some((b,i)=>b&&!padPrevious[i]))dismissLoot(); // FEATURES.lootCard
       padPrevious=buttons;
       const held=action=>keys.has(game.save.bindings[action]);
       const ax=pad&&Math.abs(pad.axes[0])>.18?pad.axes[0]:0,ay=pad&&Math.abs(pad.axes[1])>.18?pad.axes[1]:0;
       stepReel(now); stepMutationReel(now);
-      if (ready && game.phase === 'playing' && !(reel && reel.ev.big)) {
+      if (ready && game.phase === 'playing' && !(reel && reel.ev.big) && !(lootHeld() && game.phase === 'playing')) {
         // Flokkammerat (FEATURES.coopBuddy): player 2 uses IJKL + U, or the second controller (the only one when just one is connected).
         const coopOn=C.FEATURES.coopBuddy&&!!game.run.buddy,pads=coopOn?Array.from(navigator.getGamepads?.()||[]).filter(Boolean):[],p2pad=coopOn?(pads.length>1?pads[1]:pads[0]):null,p1b=coopOn&&pads.length===1?[]:buttons,p1x=p1b===buttons?ax:0,p1y=p1b===buttons?ay:0;
         const p2b=p2pad?p2pad.buttons.map(b=>b.pressed):[],p2ax=p2pad&&Math.abs(p2pad.axes[0])>.18?p2pad.axes[0]:0,p2ay=p2pad&&Math.abs(p2pad.axes[1])>.18?p2pad.axes[1]:0;
@@ -1644,6 +1662,7 @@
         renderScreen(); return;
       }
       if (C.FEATURES.pauseGuide && game.phase === 'paused' && e.code === 'KeyH' && !e.repeat) { game.setSetting('pauseGuide', !game.save.settings.pauseGuide); renderScreen(true); return; }
+      if (lootHeld() && game.phase === 'playing' && !e.repeat) { e.preventDefault(); dismissLoot(); return; } // FEATURES.lootCard: any key closes the card
       if (game.phase === 'mutation' && mreel && !e.repeat && (e.code === 'KeyR' || /^Digit[1-4]$/.test(e.code))) { finishMutationReel(); return; }
       if (game.phase === 'mutation' && e.code === 'KeyR' && !e.repeat && game.reroll()) { renderScreen(true); return; }
       if (game.phase === 'mutation' && /^Digit[1-4]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); keys.clear(); accumulator = 0; last = 0; renderScreen(true); return; }
