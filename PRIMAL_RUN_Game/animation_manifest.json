@@ -8069,8 +8069,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_attack_N",
@@ -8092,8 +8092,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_attack_S",
@@ -8115,8 +8115,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_attack_W",
@@ -8138,8 +8138,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_death_E",
@@ -8161,8 +8161,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_death_N",
@@ -8184,8 +8184,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_death_S",
@@ -8207,8 +8207,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_death_W",
@@ -8230,8 +8230,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_hurt_E",
@@ -8249,8 +8249,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_hurt_N",
@@ -8268,8 +8268,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_hurt_S",
@@ -8287,8 +8287,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_hurt_W",
@@ -8306,8 +8306,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_idle_E",
@@ -8327,8 +8327,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_idle_N",
@@ -8348,8 +8348,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_idle_S",
@@ -8369,8 +8369,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_idle_W",
@@ -8390,8 +8390,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_run_E",
@@ -8413,8 +8413,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_run_N",
@@ -8436,8 +8436,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_run_S",
@@ -8459,8 +8459,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_run_W",
@@ -8482,8 +8482,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_walk_E",
@@ -8505,8 +8505,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_walk_N",
@@ -8528,8 +8528,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_walk_S",
@@ -8551,8 +8551,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "allosaurus_walk_W",
@@ -8574,8 +8574,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "archelon_attack_E",
@@ -16517,8 +16517,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_attack_N",
@@ -16540,8 +16540,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_attack_S",
@@ -16563,8 +16563,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_attack_W",
@@ -16586,8 +16586,8 @@
         72
       ],
       "contact_frame": 3,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_death_E",
@@ -16609,8 +16609,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_death_N",
@@ -16632,8 +16632,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_death_S",
@@ -16655,8 +16655,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_death_W",
@@ -16678,8 +16678,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_hurt_E",
@@ -16697,8 +16697,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_hurt_N",
@@ -16716,8 +16716,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_hurt_S",
@@ -16735,8 +16735,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_hurt_W",
@@ -16754,8 +16754,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_idle_E",
@@ -16775,8 +16775,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_idle_N",
@@ -16796,8 +16796,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_idle_S",
@@ -16817,8 +16817,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_idle_W",
@@ -16838,8 +16838,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_run_E",
@@ -16861,8 +16861,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_run_N",
@@ -16884,8 +16884,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_run_S",
@@ -16907,8 +16907,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_run_W",
@@ -16930,8 +16930,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_walk_E",
@@ -16953,8 +16953,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_walk_N",
@@ -16976,8 +16976,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_walk_S",
@@ -16999,8 +16999,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     },
     {
       "name": "tyrannosaurus_walk_W",
@@ -17022,8 +17022,8 @@
         72
       ],
       "contact_frame": null,
-      "validated_animation": false,
-      "production_approved": false
+      "validated_animation": true,
+      "production_approved": true
     }
   ],
   "direction_origins": {

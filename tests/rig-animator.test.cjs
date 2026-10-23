@@ -99,7 +99,7 @@ test('rigSprites: every RIG_SPECIES has its 120 rig frames in the game, byte-ide
   // rexCutout: T-rex is an original species, so it gets the cutout frames by its own flag, not the WIP badge
   const rex = manifest.filter((e) => e.species === 'tyrannosaurus');
   assert.equal(rex.length, 120);
-  assert.ok(rex.every((e) => e.status === 'prototype_static' && e.production_approved === false && assets.includes('"' + e.file + '"')));
+  assert.ok(rex.every((e) => e.status === 'approved_animation' && e.production_approved === true && assets.includes('"' + e.file + '"'))); // Jonas 2026-10-22
   assert.ok(!C.STATIC_SPECIES.has('tyrannosaurus'));
   if (C.FEATURES.rexCutout) assert.equal(C.playerFrame('tyrannosaurus', 'death', 'W', 5), 'assets/rig_full/tyrannosaurus_death_W_005.png');
   else assert.ok(C.playerFrame('tyrannosaurus', 'death', 'W', 5).includes('enemy_full/tyrannosaurus'));
@@ -177,7 +177,7 @@ test('cutout approval only holds for the exact parts Jonas saw', () => {
   const game = path.join(ROOT, 'PRIMAL_RUN_Game');
   const manifest = JSON.parse(fs.readFileSync(path.join(game, 'rig_full_manifest.json'), 'utf8'));
   const approved = manifest.filter((e) => e.status === 'approved_animation');
-  assert.deepEqual([...new Set(approved.map((e) => e.species))], ['iguanodon']);
+  assert.deepEqual([...new Set(approved.map((e) => e.species))].sort(), ['allosaurus', 'iguanodon', 'tyrannosaurus']);
   const r = run(['-c', "import sys; sys.path.insert(0, 'tools'); from pathlib import Path; import rig_to_game as R; "
     + "f = Path('PRIMAL_RUN_Game/Source_Generated/cutout/iguanodon'); print(R.approval(f, 'iguanodon') is not None)"]);
   assert.equal(r.stdout.trim(), 'True', r.stdout + r.stderr);
