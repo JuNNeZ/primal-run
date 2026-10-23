@@ -70,6 +70,36 @@
       const r=reel;if(!r)return;reel=null;r.strip.style.transform=`translateY(${-(r.n-1)*100/r.n}%)`;r.el.style.setProperty('--rarity',C.MUTATION_RARITIES[REEL_TIERS[r.ev.tier]].color);r.el.classList.add('locked');
       audio.play('loot_lock',{tier:r.ev.tier});setTimeout(()=>{if(!reel)r.el.hidden=true;},skip?0:1400);
     }
+    // FEATURES.mutationReel: each offered card spins like a slot reel through real mutations from the pool and stops left to
+    // right (~0.6/0.9/1.2 s; rerolls and banish replace only changed cards, shorter), so you see what you missed. Presentation
+    // only: the choices are already rolled and fillers use Math.random, so seeds stay the same. A tap or key skips, never picks.
+    let mreel=null,mreelShown=null;
+    const mTier=m=>m.trophy||m.evolution?4:Math.max(0,REEL_TIERS.indexOf(m.rarity)),mRarity=m=>C.MUTATION_RARITIES[m.rarity]||C.MUTATION_RARITIES.common;
+    function startMutationReel(){
+      const ids=game.run.choices,prev=mreelShown,slots=[];mreelShown=ids.slice();mreel=null;if(!C.FEATURES.mutationReel||calm())return;
+      ids.forEach((id,i)=>{
+        const m=C.MUTATIONS.find(x=>x.id===id),card=screen.querySelector(`[data-mutation="${id}"]`);if(!m||!card||prev&&prev[i]===id)return;
+        const pool=C.MUTATIONS.filter(x=>!ids.includes(x.id)&&!x.evolution&&!!x.trophy===!!m.trophy&&(!game.mutationAvailable||game.mutationAvailable(x)));if(!pool.length)return;
+        const items=[],n=prev?5+2*i:8+4*i,pick=list=>list[Math.floor(Math.random()*list.length)];for(let k=0;k<n;k++)items.push(pick(pool));
+        const better=pool.filter(x=>mTier(x)>mTier(m));if(better.length&&Math.random()<.5)items[n-1]=pick(better); // a near miss now and then
+        items.push(m);
+        card.insertAdjacentHTML('beforeend',`<span class="mreel" aria-hidden="true"><span class="mreel-strip">${items.map(x=>`<b style="--rarity:${mRarity(x).color}"><small>${rarityMark(x.rarity)} ${tr(mRarity(x).name).toUpperCase()}</small>${imageTag('assets/ui/'+x.icon+'.png')}<span>${tr(x.name)}</span></b>`).join('')}</span></span>`);
+        card.classList.add('spinning');slots.push({card,el:card.lastElementChild,strip:card.querySelector('.mreel-strip'),items,n:items.length,dur:prev?350+175*i:600+300*i,last:-1,tier:mTier(m),color:mRarity(m).color});
+      });
+      if(slots.length)mreel={slots,start:null,tick:-1e9};
+    }
+    function stepMutationReel(now){
+      if(!mreel)return;if(game.phase!=='mutation'){mreel=null;return;}if(mreel.start===null)mreel.start=now;let busy=false;
+      for(const s of mreel.slots){
+        if(s.done)continue;const k=Math.max(0,Math.min(1,(now-mreel.start)/s.dur)),pos=(1-Math.pow(1-k,3))*(s.n-1),i=Math.floor(pos);
+        s.strip.style.transform=`translateY(${-pos*100}%)`;s.card.style.setProperty('--rarity',mRarity(s.items[Math.round(pos)]).color);
+        if(i!==s.last&&k<1){s.last=i;if(now-mreel.tick>45){mreel.tick=now;audio.play('loot_tick',{tier:s.tier});}}
+        if(k>=1)lockMutationSlot(s);else busy=true;
+      }
+      if(!busy)mreel=null;
+    }
+    function lockMutationSlot(s){s.done=true;s.el.remove();s.card.style.setProperty('--rarity',s.color);s.card.classList.remove('spinning');s.card.classList.add('reel-locked');audio.play('loot_lock',{tier:s.tier});}
+    function finishMutationReel(){if(!mreel)return;for(const s of mreel.slots)if(!s.done)lockMutationSlot(s);mreel=null;}
     // FEATURES.hudIconSet: Codex' native HUD icons (assets/hud_icons, approval in approval.json); the old glyphs stay as fallback.
     const hudIcon = (group, id) => C.FEATURES.hudIconSet ? `<img class="hud-icon" src="assets/hud_icons/${group}/${id}.png" alt="" draggable="false">` : '';
     const RARITY_GLYPH = { common: '•', uncommon: '◆', rare: '✦', epic: '★', legendary: '♛', evolution: '❂', trophy: '♜' };
@@ -174,6 +204,7 @@
       const phase = game.phase, r = game.run;
       if (phase === previousPhase && !force) return;
       updateControlHints();
+      if (phase !== 'mutation') { mreelShown = null; mreel = null; } // FEATURES.mutationReel: a new offer spins all cards
       previousPhase = phase; screen.dataset.phase = phase; shell.dataset.phase = phase; keys.clear();
       const running = ['build','playing', 'paused', 'mutation', 'exploration', 'cleared'].includes(phase);
       shell.querySelector('.meat-progress').hidden = !running; shell.querySelector('.hud').hidden = !running; shell.querySelector('.run-info').hidden = !running;if(!running)for(const sel of ['.hud-top','.hud-actions','.hud-prompt'])shell.querySelector(sel).hidden=true;
@@ -290,6 +321,7 @@
         screen.innerHTML = `<section class="panel">${heading('INDLÆSNING FEJLEDE', 'Assets mangler')}<p>Kontrollér, at assets-mappen følger med spillet. Genindlæs siden efter rettelsen.</p><p class="load-error"></p></section>`;
       }
       I18N.translateNode(screen); adaptControls(screen);
+      if (phase === 'mutation') startMutationReel();
       const focus = screen.querySelector(phase === 'intro' ? '[data-action="begin"]' : 'button:not(:disabled)'); if (focus) focus.focus({ preventScroll: true });
       shell.querySelector('.save-status').textContent = tr(game.storageAvailable ? 'DNA og indstillinger gemmes lokalt' : 'Lagring utilgængelig · fremgang gemmes kun i denne session');
     }
@@ -1501,7 +1533,7 @@
       padPrevious=buttons;
       const held=action=>keys.has(game.save.bindings[action]);
       const ax=pad&&Math.abs(pad.axes[0])>.18?pad.axes[0]:0,ay=pad&&Math.abs(pad.axes[1])>.18?pad.axes[1]:0;
-      stepReel(now);
+      stepReel(now); stepMutationReel(now);
       if (ready && game.phase === 'playing' && !(reel && reel.ev.big)) {
         // Flokkammerat (FEATURES.coopBuddy): player 2 uses IJKL + U, or the second controller (the only one when just one is connected).
         const coopOn=C.FEATURES.coopBuddy&&!!game.run.buddy,pads=coopOn?Array.from(navigator.getGamepads?.()||[]).filter(Boolean):[],p2pad=coopOn?(pads.length>1?pads[1]:pads[0]):null,p1b=coopOn&&pads.length===1?[]:buttons,p1x=p1b===buttons?ax:0,p1y=p1b===buttons?ay:0;
@@ -1540,6 +1572,7 @@
       if (target.dataset.skin) { game.setSkin(target.dataset.skin); renderScreen(true); return; }
       if (target.dataset.species) { const id = target.dataset.species; if (!game.save.unlockedSpecies.includes(id)) game.unlockSpecies(id); game.selectSpecies(id); renderScreen(true); return; }
       if (target.dataset.explore) { game.explore(target.dataset.explore === 'take'); keys.clear(); accumulator = 0; renderScreen(); return; }
+      if (mreel && (target.dataset.mutation || target.dataset.reroll || target.dataset.banish)) { finishMutationReel(); return; } // first tap only stops the reel
       if (target.dataset.reroll) { game.reroll(); renderScreen(true); return; }
       if (target.dataset.banish) { game.banish(target.dataset.banish); renderScreen(true); return; }
       if (target.dataset.blueprint) { game.buyBlueprint(target.dataset.blueprint); renderScreen(true); return; }
@@ -1611,6 +1644,7 @@
         renderScreen(); return;
       }
       if (C.FEATURES.pauseGuide && game.phase === 'paused' && e.code === 'KeyH' && !e.repeat) { game.setSetting('pauseGuide', !game.save.settings.pauseGuide); renderScreen(true); return; }
+      if (game.phase === 'mutation' && mreel && !e.repeat && (e.code === 'KeyR' || /^Digit[1-4]$/.test(e.code))) { finishMutationReel(); return; }
       if (game.phase === 'mutation' && e.code === 'KeyR' && !e.repeat && game.reroll()) { renderScreen(true); return; }
       if (game.phase === 'mutation' && /^Digit[1-4]$/.test(e.code) && !e.repeat) { game.choose(game.run.choices[Number(e.code.slice(-1)) - 1]); keys.clear(); accumulator = 0; last = 0; renderScreen(true); return; }
       if(e.code==='Space'){e.preventDefault();if(game.phase!=='playing'){keys.delete('Space');return;}}
