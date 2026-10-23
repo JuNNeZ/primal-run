@@ -24,10 +24,11 @@ from tr_loot import LOOT
 from tr_friends import FRIENDS
 from tr_controls import CONTROLS
 from tr_pack import PACK_MUTATIONS
+from tr_build import BUILD
 LANGS = ['en', 'de', 'sv', 'no', 'ja', 'zh']
 dicts = {l: {} for l in LANGS}
 seen = {}
-for row in CORE + UI + RECORDS + PART_B + INPUT + PART_C + SPECIES_D + EXTRAS + ASH + SNOWFLAKE + TELEMETRY + HUD + TITLES + FISHING + LOOT + FRIENDS + PACK_MUTATIONS + CONTROLS:
+for row in CORE + UI + RECORDS + PART_B + INPUT + PART_C + SPECIES_D + EXTRAS + ASH + SNOWFLAKE + TELEMETRY + HUD + TITLES + FISHING + LOOT + FRIENDS + PACK_MUTATIONS + CONTROLS + BUILD:
     da, *rest = row
     if len(rest) != len(LANGS):
         raise SystemExit(f'Row needs {len(LANGS)} translations: {da}')
