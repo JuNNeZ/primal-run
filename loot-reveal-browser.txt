@@ -1,0 +1,1 @@
+PASS: loot reveal reel · hidden when off · small reel keeps playing · locks top-down on the rolled tier · big reel pauses · tap skips · no page errors

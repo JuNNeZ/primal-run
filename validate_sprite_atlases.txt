@@ -1,0 +1,1 @@
+{"status": "PASS", "approved_exports": 17, "frames": 5245, "unique_frames": 4864, "alias_frames": 381, "sheets": 35, "checks": ["exact native RGBA bytes", "unaltered anchors and dimensions", "one-pixel zero-RGBA gutters", "nonoverlapping unique frames; aliases share only exact rectangles", "complete active catalog coverage", "unchanged user-approved exports and masters"]}
