@@ -17,6 +17,7 @@ til deres oprindelige placering og kører ikke uændret fra arkivet.
 | `docs/game/TESTING_first_version.md` | Testrapport for første spilbare version | Historisk; aktuelle kommandoer står i rodens README |
 | `docs/CLOUD_HANDOFF_log_2026-10.md` | Dato-log fra `CLOUD_HANDOFF.md` | Historik flyttet ud, så overdragelsen er kort |
 | `docs/PART_A_*`, `docs/GITHUB_API_ACCESS.md`, `docs/validation/` | PR-udkast, QA og logs fra Part A/A6/animation-polish (2026-10-10–12) | Afsluttet arbejde; refereres fra feature-dokumenterne |
+| `docs/game/` (2026-10-24): `DEVELOPMENT_PLAN`, `NEXT_IMPROVEMENTS`, `PRIORITIES_*`, `CODE_AUDIT`, `PART_B_*`, `UNFINISHED_EXPANSION` m.fl. + `*_test_run.txt`; `legacy_scripts/crowd_test.cjs`, `prepare_iguanodon_rig_batches.py` | Plan-, status- og featurenoter fra 8.–12. okt. og to engangsscripts | Afløst af koden, patch notes og PR'erne; intet læser dem |
 
 Stadig aktive, selvom de ser gamle ud: `PRIMAL_RUN_Prototype_Kit/` (kopieres af
 `npm run build:game` og testes af `npm run test:kit`), `PRIMAL_RUN_Sprites/` +

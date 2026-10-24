@@ -1,7 +1,7 @@
 # Recovery source archive
 
 Original PNGs preserved byte-for-byte on 2026-10-09. No runtime integration.
-See ../../UNFINISHED_EXPANSION.md for blockers and unfinished feature status.
+See ../../../archive/docs/game/UNFINISHED_EXPANSION.md for blockers and unfinished feature status.
 See preservation_manifest.json for all 85 originals and their repository paths.
 
 rejected/ contains known unsuitable Para candidates; unreviewed/ contains other

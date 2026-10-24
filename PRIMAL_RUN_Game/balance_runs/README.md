@@ -4,10 +4,10 @@
 
 # Historical bot samples before the water-placement fix
 
-These samples predate WATER_AND_BARYONYX_FIX.md. Their recorded source SHA is
+These samples predate archive/docs/game/WATER_AND_BARYONYX_FIX.md. Their recorded source SHA is
 retained; rerun the CLI to evaluate the changed food/water distribution.
 
-Core SHA-256: `a1028c82077ba94365c8129921bc2a96288f0100c212fe7bd76b773c569492fb`. Commands/settings: ../RESEARCH_AND_ECOLOGY.md.
+Core SHA-256: `a1028c82077ba94365c8129921bc2a96288f0100c212fe7bd76b773c569492fb`. Commands/settings: ../../archive/docs/game/RESEARCH_AND_ECOLOGY.md.
 
 972 experiments:162 normal run budgets +540 ordinary duels +270 boss duels.
 No human win-rate claims. Normal runs have a180-second budget; no full-run

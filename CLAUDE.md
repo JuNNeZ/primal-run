@@ -31,7 +31,7 @@ The live site is the `gh-pages` branch. Publish ONLY after Jonas explicitly writ
 `archive/` holds retired demos (V2–V5), one-off build/migration scripts and dated reports; see `archive/README.md`. Nothing there is built, tested or shipped. Don't edit or run it unless a task is explicitly about that history; move a file back out if it becomes live again.
 
 ## Known pitfalls
-- Merge conflict hotspots: the one-line `FEATURES={...}` list in `core.js` (keep both sides' flags), the `test:game` list in `package.json` (keep both sides' test files), generated `project.json` + `integration_report.json` (take either side, then rebuild).
+- Merge conflict hotspots: the one-line `FEATURES={...}` list in `core.js` (keep both sides' flags), generated `project.json` + `integration_report.json` (take either side, then rebuild).
 - `roguelite-browser` and `player-full-browser` are timing-sensitive: one re-run is fine, a second failure is real.
 - Balance sim against another core: `PRIMAL_CORE=<path> node tools/playstyle_sim.cjs ...` (`--core` does not reach worker threads). Simulator-only prototypes: `--exp`.
 - Windows checkout: `git config core.longpaths true` and `git config core.autocrlf false`, or CRLF breaks the GDevelop source-hash test. `tools/build_game.py` on Windows writes CRLF: convert changed files to LF and recompute `integration_report.json` `source_sha256`.
