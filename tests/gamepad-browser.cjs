@@ -6,7 +6,7 @@ const {chromium,browserOptions,localURL}=require('../tools/browser.cjs');
 (async()=>{const browser=await chromium.launch(browserOptions());try{
  const url=process.env.PRIMAL_GAME_URL||await localURL(path.resolve(__dirname,'../PRIMAL_RUN_Game/index.html'));
  const page=await browser.newPage({viewport:{width:1280,height:900}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
- await page.goto(url);await page.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{});await page.waitForSelector('[data-action="start"]:not(:disabled)');
+ await page.goto(url);await page.evaluate(()=>{PrimalCore.FEATURES.mutationReel=false;});/* the reel spins before a pick; this test picks at once */await page.locator('[data-first-language="da"]').click({timeout:2000}).catch(()=>{});await page.waitForSelector('[data-action="start"]:not(:disabled)');
  await page.evaluate(()=>{const mk=(i,id)=>({index:i,id,mapping:'standard',connected:true,timestamp:0,axes:[0,0,0,0],buttons:Array.from({length:17},()=>({pressed:false,value:0}))});window.pads=[mk(0,'Xbox Wireless Controller (STANDARD GAMEPAD Vendor: 045e)')];Object.defineProperty(navigator,'getGamepads',{configurable:true,value:()=>pads});});
  const tap=async(i,which=0)=>{await page.evaluate(([i,w])=>{pads[w].buttons[i].pressed=true;pads[w].timestamp++;},[i,which]);await page.waitForTimeout(80);await page.evaluate(([i,w])=>{pads[w].buttons[i].pressed=false;},[i,which]);await page.waitForTimeout(80);};
  const focused=()=>page.evaluate(()=>{const a=document.activeElement;return a&&document.querySelector('.screen').contains(a)?(a.dataset.action||a.dataset.mutation||a.dataset.setting||a.tagName):'';});

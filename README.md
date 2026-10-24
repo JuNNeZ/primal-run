@@ -29,7 +29,8 @@ npm run preview   # http://localhost:8000/PRIMAL_RUN_Game/
 
 ```sh
 node --test tests/*.test.cjs          # hurtige enhedstests
-npm run test:game                     # enheds- og browsertests af spillet
+npm run test:game                     # alle tests/*.test.cjs + tests/*-browser.cjs (tests/run-all.cjs)
+npm run test:unit                     # kun enhedstests; test:browser kun browsertests
 npm run validate:game-sprites
 npm run validate:enemy-sprites
 npm test                              # alt inkl. atlas-værktøjer og Prototype Kit
@@ -39,7 +40,7 @@ npm run build:web                     # webudgaven i dist/
 
 I cloud bruges Playwright Chromium (`PRIMAL_CHROME_PATH=/opt/pw-browsers/chromium`).
 Browsertests omskriver tracked `*_report.json` og `previews/*.png`; gendan dem med
-`git checkout`, medmindre ændringen er tilsigtet. Balance simuleres med
+`git checkout`, medmindre ændringen er tilsigtet. Nye testfiler opdages automatisk; tilføj dem ikke i package.json. Balance simuleres med
 `npm run simulate:styles` eller `SIMULER_BALANCE.bat` på Windows.
 
 ## Mapper
@@ -57,10 +58,10 @@ Browsertests omskriver tracked `*_report.json` og `previews/*.png`; gendan dem m
 
 ## Videre læsning
 
-- [Spillets vejledning](PRIMAL_RUN_Game/README.md) og [udviklingsplanen](PRIMAL_RUN_Game/DEVELOPMENT_PLAN.md)
+- [Spillets vejledning](PRIMAL_RUN_Game/README.md) og [patch notes](PRIMAL_RUN_Game/PATCH_NOTES.html)
 - [AGENTS.md](AGENTS.md) og [CLAUDE.md](CLAUDE.md): regler for Codex og Claude
 - [CLOUD_HANDOFF.md](CLOUD_HANDOFF.md): opsætning af cloud-miljø
-- [Forskning, økologi og balance-CLI](PRIMAL_RUN_Game/RESEARCH_AND_ECOLOGY.md),
+- [Forskning, økologi og balance-CLI](archive/docs/game/RESEARCH_AND_ECOLOGY.md) (historisk, okt. 9),
   [balance-kørsler](PRIMAL_RUN_Game/balance_runs/README.md)
 - [Rig-animatoren](tools/RIG_ANIMATOR.md)
 

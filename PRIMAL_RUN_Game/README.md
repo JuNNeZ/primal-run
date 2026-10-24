@@ -3,7 +3,14 @@
 Start som Velociraptor og udforsk otte tilfældige baner i fire biomer. Jagt, saml kød, vælg
 mutationer, og besejr bosser. DNA låser nye arter op og køber start-upgrades.
 
-[Seneste ændringer og begrænsninger](JOURNEY_AND_COMPY.md).
+Seneste ændringer: [patch notes](PATCH_NOTES.html). Ældre status- og plandokumenter ligger i [archive/docs/game](../archive/docs/game/).
+
+Tilføjet 16.–23. okt. 2026 (alle bag `FEATURES`-flag i `src/core.js`, alle tændt og live): titelbog og præstationer,
+snigeøje og artsidentitet, dusører, fiskespil, hårdere kamp (poise, sigtede varsler, bid koster udholdenhed),
+rig-/cutout-sprites (Iguanodon, T. rex, Allosaurus), ravsten, loot-kerne (tabeller, rustning, relikvier, rede-depoter),
+tekst over sprites, smarte flokfæller og Flok 2.0, Udfordr en ven + lokal co-op, fuld controller-understøttelse,
+mutationshjul, loot-kort, byggebjælke og karakterpanel. Slukket og ventende: `affixStages`, `tarTotem`, `rottenMeat`,
+`dailyShare`, `extinctionPressure`, `currencies`.
 
 [Artsopdelte sprite-ark, loadflow og skabelon til nye arter](SPECIES_SHEET_WORKFLOW.md).
 
@@ -83,20 +90,10 @@ GDevelops brugerflade den letteste løsning. Ingen motorfiler ligger i Git.
 
 ## GitHub Pages
 
-Workflowet `.github/workflows/pages.yml` bygger browserudgaven fra samme
-spilkerne; det downloader ikke GDevelop og er ikke GDevelops runtime-eksport.
-
-Efter at ændringerne er lagt på GitHub:
-
-1. Vælg **Settings → Pages → Source: GitHub Actions**.
-2. Kør **Actions → Publish PRIMAL RUN to GitHub Pages → Run workflow**.
-3. Brug den URL, GitHub viser efter en vellykket deployment.
-
-Et privat repository kræver en GitHub-plan med understøttelse af Pages fra
-private repositories. Webspillet og dets leverede assets kan være offentligt
-tilgængelige, selv om kilde-repositoryet er privat. Den aktive demo publiceres også som statiske filer på `gh-pages`:
-https://junnez.github.io/primal-run/. Ved branch-deployment vælges gh-pages / root
-i Pages-indstillingerne. Workflowet ovenfor er en alternativ publiceringsvej.
+Live-siden er branchen `gh-pages` (https://junnez.github.io/primal-run/). Den opdateres kun, når Jonas skriver
+"udgiv"; fremgangsmåden står i rodens `CLAUDE.md` under "Going live". `npm run build:web` bygger `dist/` med kun det,
+spillet indlæser (`index.html`, `style.css`, `src/`, `assets/`, `sounds/`, patch notes). Previews, review-sider og
+rapporter bliver i repoet. `.github/workflows/pages.yml` er en gammel, manuel alternativ vej og bruges ikke.
 
 ## Implementeret
 
@@ -381,7 +378,7 @@ rapport tester også alle eksisterende gameplay- og animationssuiter.
 
 ## Spiltest: prioritet1–4
 
-Se [ændringer og controls](PRIORITIES_1_4.md), [komplette fjendeframes](enemy_full_review.html)
+Se [ændringer og controls](../archive/docs/game/PRIORITIES_1_4.md), [komplette fjendeframes](enemy_full_review.html)
 og [balanceaudit](balance_audit.json). C sniger; buske kan skjule. Vand/mudder
 påvirker fart. Flokke deler alarmer, og territoriale dyr vender hjem.
 Alle syv fjendearter har seks animationsstates i fire retninger.

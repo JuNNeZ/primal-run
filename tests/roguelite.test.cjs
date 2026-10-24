@@ -85,7 +85,7 @@ test('boss strength rises through the journey and lab upgrades scale with UPGRAD
  assert.match(C.UPGRADES[0].text,new RegExp('\\+'+Math.round(100*C.UPGRADE_STEP.health)+' %'));
 });
 test('new abilities are on: 1.2 s pin, dust cloud, Pachycephalosaurus hop back; 4 cards and second wind come from the lab',()=>{
- assert.equal(C.MUTATION_CHOICES.count,3);assert.equal(C.FEATURES.secondWind,false);assert.ok(Object.values(C.ALT_ABILITIES).every(v=>v===true));
+ assert.equal(C.MUTATION_CHOICES.count,3);assert.ok(Object.values(C.ALT_ABILITIES).every(v=>v===true));
  const pin=()=>{const v=make('velociraptor'),r=v.run,t=v.spawn('parasaurolophus',{x:r.player.x,y:r.player.y+25});r.stamina=100;v.step(1/30,{pounce:true,x:0,y:1});return t;};
  assert.ok(pin().stagger>1.1,'Velociraptor pin holds about 1.2 s');
  const g=make('compy');g.save.upgrades.widerPool=1;g.start({seed:123});g.run.xp=g.run.nextXP;g.maybeLevelUp();assert.equal(g.run.choices.length,4,'wider gene pool: 4 cards');

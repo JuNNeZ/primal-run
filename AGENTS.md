@@ -14,8 +14,8 @@
   hand-merged: after a merge run `python tools/rebuild_generated.py`.
 - Live site: only Jonas decides. Nothing goes to `gh-pages` without his explicit "udgiv"
   (full procedure in CLAUDE.md, "Going live").
-- Merge conflict hotspots: the one-line `FEATURES={...}` in `PRIMAL_RUN_Game/src/core.js` and the
-  `test:game` list in `package.json` (keep both sides). `roguelite-browser`/`player-full-browser`
+- Merge conflict hotspot: the one-line `FEATURES={...}` in `PRIMAL_RUN_Game/src/core.js` (keep both
+  sides). Tests are found by `tests/run-all.cjs`; never list them in `package.json`. `roguelite-browser`/`player-full-browser`
   are timing-sensitive: one re-run, then treat as real.
 - Rig frames (`tools/rig_animate.py`) may be used as prototype art; see `tools/RIG_ANIMATOR.md`.
 
