@@ -35,3 +35,8 @@ The live site is the `gh-pages` branch. Publish ONLY after Jonas explicitly writ
 - `roguelite-browser` and `player-full-browser` are timing-sensitive: one re-run is fine, a second failure is real.
 - Balance sim against another core: `PRIMAL_CORE=<path> node tools/playstyle_sim.cjs ...` (`--core` does not reach worker threads). Simulator-only prototypes: `--exp`.
 - Windows checkout: `git config core.longpaths true` and `git config core.autocrlf false`, or CRLF breaks the GDevelop source-hash test. `tools/build_game.py` on Windows writes CRLF: convert changed files to LF and recompute `integration_report.json` `source_sha256`.
+
+## Plugins and tools (added 24 Oct 2026)
+- **Agent Skills** (addyosmani/agent-skills, MIT) is enabled in `.claude/settings.json`; Claude Code offers to install it once the folder is trusted. Use `/spec` and `/plan` for larger features: they save the spec and plan as files, and those files are the "proposal before larger changes" shown to Jonas. `/build` takes the next task from the plan. Small fixes need no spec.
+- **Playwright CLI** (microsoft/playwright-cli, optional): `npm install -g @playwright/cli@latest`, then `playwright-cli install --skills`. Lets Claude open the preview or live site and reproduce a bug in a real browser; the page map goes to a file, not the chat. It does NOT replace the repo's own `*-browser.cjs` tests, which remain the proof of a change.
+- Deliberately not installed: token savers (RTK, Caveman, Ponytail). JetBrains' measurements showed far smaller savings than advertised, and RTK cost more.
