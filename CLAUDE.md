@@ -22,7 +22,7 @@ The live site is the `gh-pages` branch. Publish ONLY after Jonas explicitly writ
 
 ## Code and generated files
 - New features go behind `FEATURES.<flag>` in `PRIMAL_RUN_Game/src/core.js`; keep core edits in small, isolated blocks.
-- Never hand-merge generated files (`project.json`, `integration_report.json`, `manifest.json`, `animation_manifest.json`, `src/assets.js`, `src/lang.js`, `src/run_titles.js`): run `python tools/rebuild_generated.py`.
+- Never hand-merge generated files (`project.json`, `integration_report.json`, `manifest.json`, `animation_manifest.json`, `src/assets.js`, `src/lang.js`, `src/lang/*.js`, `src/run_titles.js`): run `python tools/rebuild_generated.py`.
 - Danish is the source language; all 24 languages in `tools/i18n/lang/` go through the i18n pipeline (`npm run build:lang`).
 - Checks: `node --test tests/*.test.cjs`, `npm run test:game`, `npm run validate:game-sprites`, `npm run validate:enemy-sprites`. Browser tests rewrite tracked `*_report.json` and `previews/*.png`; restore them with `git checkout` before committing unless the change is intended.
 - Preview: `npm run preview` → http://localhost:8000/PRIMAL_RUN_Game/

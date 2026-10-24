@@ -137,6 +137,10 @@
         const t = c.currentTime + .01; this.tone(1760, t, .18, .025, 'sine', 1760, this.effects); this.tone(2349, t + .12, .26, .02, 'sine', 2349, this.effects);
         return;
       }
+      if (event === 'attack_ready') { // FEATURES.attackReadyCue: a quiet low tick, only for slow bites (core sets detail.slow)
+        const c = this.context; if (!detail.slow || !c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;
+        this.tone(330, c.currentTime + .01, .07, .03, 'triangle', 300, this.effects); return;
+      }
       if (event === 'bite_hit') { if (this.settings.master * this.settings.sfx > 0) this.impact(detail.strong); return; }
       if (['roar', 'boss_enrage'].includes(event)) {
         const c = this.context; if (!c || c.state !== 'running' || this.settings.master * this.settings.sfx === 0) return;

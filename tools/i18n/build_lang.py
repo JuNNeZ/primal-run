@@ -63,4 +63,11 @@ for lang, d in dicts.items():
 out.append("})(typeof globalThis!=='undefined'?globalThis:this);")
 target = here.parent.parent / 'PRIMAL_RUN_Game/src/lang.js'
 target.write_text('\n'.join(out) + '\n', encoding='utf-8')
+# FEATURES.langSplit: one file per language for the browser (src/lang_boot.js picks it); lang.js stays for GDevelop and tests.
+split = target.parent / 'lang'
+split.mkdir(exist_ok=True)
+for old in split.glob('*.js'):
+    old.unlink()
+for lang, d in dicts.items():
+    (split / f'{lang}.js').write_text('\n'.join([out[0], out[1], f'I.add({json.dumps(lang)},{json.dumps(d, ensure_ascii=False, separators=(",", ":"))});', out[-1]]) + '\n', encoding='utf-8')
 print('wrote', target, {k: len(v) for k, v in dicts.items()})

@@ -2,7 +2,7 @@
 """Regenerates every generated game file after a merge or source change, identically on
 Windows, macOS and Linux. Generated files are rebuilt, never hand-merged:
   src/run_titles.js   <- tools/build_run_titles.py   (title catalogue JSON)
-  src/lang.js         <- tools/i18n/build_lang.py    (translation tables)
+  src/lang.js, src/lang/*.js <- tools/i18n/build_lang.py (translation tables)
   project.json, integration_report.json, manifest.json, src/assets.js ... <- tools/build_game.py
 Then: CRLF -> LF for files the build touched (Windows writes CRLF), restore
 Source_Generated/README.md (the build truncates it), and recompute integration_report
