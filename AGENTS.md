@@ -88,3 +88,8 @@ family supplement and files for the task, then expand if a dependency requires i
 Species anatomy: PRIMAL_RUN_Game/SPECIES_ANATOMY.md. Corpse overlay supplement:
 PRIMAL_RUN_Game/SPRITE_RULES_CORPSES.md. These routes do not replace the
 project-wide rules or automatically approve generated art.
+
+## Browser reproduction (optional tool)
+Playwright CLI (`npm install -g @playwright/cli@latest`, `playwright-cli install --skills`)
+can open `npm run preview` and reproduce a bug in a real browser. It is an investigation
+tool; the repo's own browser tests remain the proof of a change.
