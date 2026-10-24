@@ -1,0 +1,1 @@
+PASS: loot step 5 · pickers hidden when off · pressure steps 0-2 open · fossil start relic bought · TRYK/RAV chip · amber altar buy and price · daily share text (date, squares, score) · no page errors

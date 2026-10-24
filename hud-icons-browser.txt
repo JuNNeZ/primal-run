@@ -1,0 +1,1 @@
+PASS: HUD icons · glyphs with the flag off · rarity gems and tags on cards · relic and set icons on the build screen · relic chip · reel gems + relic · menu and difficulty icons · all icons load · no page errors
