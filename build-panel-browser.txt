@@ -1,0 +1,1 @@
+PASS: build bar · icons with rank · mutation and relic tooltips · character panel with change and sources · flags off · no page errors
