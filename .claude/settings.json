@@ -5,5 +5,16 @@
       "Bash(git push origin gh-pages:*)",
       "Bash(git push -q origin origin/gh-pages:refs/heads/backup/*)"
     ]
+  },
+  "extraKnownMarketplaces": {
+    "addy-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "addyosmani/agent-skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "agent-skills@addy-agent-skills": true
   }
 }
