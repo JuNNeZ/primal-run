@@ -22,3 +22,13 @@ test('numbers, key names, segments and templates survive translation; fun langua
   I.setLanguage('tlh'); assert.equal(I.t('START JAGTEN'), 'yIwam!'); assert.equal(I.t('Vælg dinosaur'), "Ha'DIbaH tIn yIwIv"); assert.equal(I.t('Musik'), 'QoQ'); assert.equal(I.t('Effektiv evne'), 'Efficient ability');
   I.setLanguage('da'); assert.equal(I.t('Vælg dinosaur'), 'Vælg dinosaur');
 });
+test('FEATURES.langSplit: one generated file per language holds exactly that language from lang.js', () => {
+  const fs = require('node:fs'), path = require('node:path'), dir = path.resolve(__dirname, '../PRIMAL_RUN_Game/src/lang');
+  const all = fs.readFileSync(path.join(dir, '../lang.js'), 'utf8');
+  const I = require('../PRIMAL_RUN_Game/src/i18n.js');
+  for (const l of I.LANGUAGES.filter(l => l.id !== 'da')) {
+    const one = fs.readFileSync(path.join(dir, l.id + '.js'), 'utf8').split('\n').find(x => x.startsWith('I.add('));
+    assert.ok(all.includes(one), l.id + ' matches lang.js');
+  }
+  assert.deepEqual(I.chain('yue'), ['yue', 'zh']); assert.deepEqual(I.chain('tlh'), ['tlh', 'en']); assert.deepEqual(I.chain('da'), []);
+});

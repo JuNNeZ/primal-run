@@ -80,7 +80,7 @@ Alle elementer har i dag en procedurel fallback. Behold den, så spillet virker,
 - Nye spilbare arter og stemnings-NPC'er (`IDEABANK.md` → "Nye arter og dyr").
 
 ## Claude-status (til orientering)
-Opdateres nederst i `PART_B_STATUS.md`. Åbne Claude-punkter: balance pr. pakke, `speed_slayer`-andelen og titel-metadata. Se afsnittet "Opfølgning 10. okt. aften".
+Opdateres nederst i `archive/docs/game/PART_B_STATUS.md`. Åbne Claude-punkter: balance pr. pakke, `speed_slayer`-andelen og titel-metadata. Se afsnittet "Opfølgning 10. okt. aften".
 
 ## Tjekliste før push
 `python tools/rebuild_generated.py` → `node --test tests/*.test.cjs` → `npm run test:game` → `npm run validate:game-sprites` → `npm run validate:enemy-sprites`.

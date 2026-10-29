@@ -22,7 +22,7 @@ The live site is the `gh-pages` branch. Publish ONLY after Jonas explicitly writ
 
 ## Code and generated files
 - New features go behind `FEATURES.<flag>` in `PRIMAL_RUN_Game/src/core.js`; keep core edits in small, isolated blocks.
-- Never hand-merge generated files (`project.json`, `integration_report.json`, `manifest.json`, `animation_manifest.json`, `src/assets.js`, `src/lang.js`, `src/run_titles.js`): run `python tools/rebuild_generated.py`.
+- Never hand-merge generated files (`project.json`, `integration_report.json`, `manifest.json`, `animation_manifest.json`, `src/assets.js`, `src/lang.js`, `src/lang/*.js`, `src/run_titles.js`): run `python tools/rebuild_generated.py`.
 - Danish is the source language; all 24 languages in `tools/i18n/lang/` go through the i18n pipeline (`npm run build:lang`).
 - Checks: `node --test tests/*.test.cjs`, `npm run test:game`, `npm run validate:game-sprites`, `npm run validate:enemy-sprites`. Browser tests rewrite tracked `*_report.json` and `previews/*.png`; restore them with `git checkout` before committing unless the change is intended.
 - Preview: `npm run preview` → http://localhost:8000/PRIMAL_RUN_Game/
@@ -31,7 +31,7 @@ The live site is the `gh-pages` branch. Publish ONLY after Jonas explicitly writ
 `archive/` holds retired demos (V2–V5), one-off build/migration scripts and dated reports; see `archive/README.md`. Nothing there is built, tested or shipped. Don't edit or run it unless a task is explicitly about that history; move a file back out if it becomes live again.
 
 ## Known pitfalls
-- Merge conflict hotspots: the one-line `FEATURES={...}` list in `core.js` (keep both sides' flags), the `test:game` list in `package.json` (keep both sides' test files), generated `project.json` + `integration_report.json` (take either side, then rebuild).
+- Merge conflict hotspots: the one-line `FEATURES={...}` list in `core.js` (keep both sides' flags), generated `project.json` + `integration_report.json` (take either side, then rebuild).
 - `roguelite-browser` and `player-full-browser` are timing-sensitive: one re-run is fine, a second failure is real.
 - Balance sim against another core: `PRIMAL_CORE=<path> node tools/playstyle_sim.cjs ...` (`--core` does not reach worker threads). Simulator-only prototypes: `--exp`.
 - Windows checkout: `git config core.longpaths true` and `git config core.autocrlf false`, or CRLF breaks the GDevelop source-hash test. `tools/build_game.py` on Windows writes CRLF: convert changed files to LF and recompute `integration_report.json` `source_sha256`.

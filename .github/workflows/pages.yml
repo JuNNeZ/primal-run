@@ -1,4 +1,4 @@
-name: Publish PRIMAL RUN to GitHub Pages
+name: Publish PRIMAL RUN to GitHub Pages (unused, live is the gh-pages branch)
 
 # Publication is explicit. Enable Settings > Pages > Source: GitHub Actions,
 # then run this workflow on the branch/version you want to publish.
