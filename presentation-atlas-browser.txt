@@ -1,0 +1,1 @@
+PASS: approved presentation art, reduced motion, HUD fallback, atlas failure fallback; 7 menu / 15 menu + volcanic-stage PNG requests

@@ -1,0 +1,1 @@
+PASS: HUD layout picker, layouts A/B/C on PC, classic in settings and on touch, biome-coloured minimap

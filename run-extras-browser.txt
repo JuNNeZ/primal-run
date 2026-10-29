@@ -1,0 +1,1 @@
+{"result":"PASS","engine":"Chrome browser; GDevelop NOT RUN","checks":["baby toggle in menu","shrine + powerup drawn","elite trait badge","powerup pickup (+12 max hp)","HUD streak + timer","egg hatch + smaller baby","dusk clock icon","amber pickup","ambient animals","no page errors"]}

@@ -1,0 +1,11 @@
+{
+ "result": "PASS",
+ "checks": [
+  "da: intro card \"Din flok\"",
+  "da: pack chip \"FLOK 2 · ANGRIB · Q\" -> \"FLOK 2 · FORSVAR MIG · Q\"",
+  "da: help mentions the orders",
+  "en: intro card \"Your pack\"",
+  "en: pack chip \"PACK 2 · ATTACK · Q\" -> \"PACK 2 · DEFEND ME · Q\"",
+  "en: help mentions the orders"
+ ]
+}
