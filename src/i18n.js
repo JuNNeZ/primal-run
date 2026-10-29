@@ -84,6 +84,17 @@
     // Template with named parts: tf('Låser {0} op', name)
     tf(template, ...args) { return translate(template).replace(/\{(\d)\}/g, (_, i) => args[+i] ?? ''); },
     t: translate, translateNode, missing,
+    // FEATURES.langSplit: the web build loads one language file (+ its fallbacks) from src/lang/<code>.js instead of
+    // all of lang.js. chain() lists what a language needs; load() fetches the missing files.
+    chain(id) { const out = []; for (let code = id; code && code !== 'da' && !out.includes(code); code = (LANGUAGES.find(l => l.id === code) || {}).fallback) out.push(code); return out; },
+    has(id) { return api.chain(id).every(code => dictionaries[code]); },
+    urlFor: code => 'src/lang/' + code + '.js',
+    load(id) {
+      const doc = root.document; if (!doc || api.has(id)) return Promise.resolve(true);
+      return Promise.all(api.chain(id).filter(code => !dictionaries[code]).map(code => new Promise(done => {
+        const s = doc.createElement('script'); s.src = api.urlFor(code); s.onload = () => done(true); s.onerror = () => done(false); doc.head.appendChild(s);
+      }))).then(() => api.has(id));
+    },
     coverage(id) { const d = dictionaries[id] || {}, en = dictionaries.en || {}; return { entries: Object.keys(d).length, english: Object.keys(en).length }; }
   };
   root.PrimalI18n = api;
