@@ -26,7 +26,7 @@
   FEATURES.lavaTiles = true;
   // Feedback tiers (FEATURES.feedbackTiers, from the game-feel skill): one preset per event weight so a kill
   // outweighs a bite and a boss death outweighs a kill. Bites and player hurt keep their own values.
-  FEATURES.feedbackTiers = false;
+  FEATURES.feedbackTiers = true;
   const FEEDBACK_TIERS = Object.freeze({
     small: { hitStop: 0, shake: 0, flash: 0, bursts: [['dust', 5]] },
     medium: { hitStop: .06, shake: .08, flash: 0, bursts: [['blood', 14]] },
