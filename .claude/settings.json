@@ -5,5 +5,30 @@
       "Bash(git push origin gh-pages:*)",
       "Bash(git push -q origin origin/gh-pages:refs/heads/backup/*)"
     ]
+  },
+  "extraKnownMarketplaces": {
+    "addy-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "addyosmani/agent-skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "agent-skills@addy-agent-skills": true
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard.cjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
   }
 }
