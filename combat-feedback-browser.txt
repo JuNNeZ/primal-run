@@ -1,0 +1,1 @@
+PASS: combat HUD cooldowns, stamina warning, minimap diamond, desktop/mobile, no browser errors
