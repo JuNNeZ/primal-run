@@ -1649,6 +1649,7 @@
       if(r&&!renderOverride&&hudLayout()==='b'){const px=Math.round(r.player.x),py=Math.round(r.player.y+64);ctx.fillStyle='#101713';ctx.fillRect(px-26,py,52,10);ctx.fillStyle='#c05e4a';ctx.fillRect(px-25,py+1,50*Math.max(0,r.health/r.maxHealth),5);ctx.fillStyle='#8eaa60';ctx.fillRect(px-25,py+7,50*Math.max(0,r.stamina/100),2);}
       if(r&&!renderOverride){const px=Math.round(r.player.x),py=Math.round(r.player.y+78);ctx.fillStyle='#101713';ctx.fillRect(px-20,py,40,5);ctx.fillRect(px-20,py+7,40,5);ctx.fillStyle='#efdfb8';ctx.fillRect(px-19,py+1,38*Math.max(0,1-r.attackCooldown/(r.attackDuration||C.PLAYER_SPECIES[r.species].cooldown)),3);ctx.fillStyle=r.stamina<C.abilityCost(r)?'#de954a':'#69a4a0';ctx.fillRect(px-19,py+8,38*Math.max(0,1-r.pounceCooldown/(r.abilityCooldownDuration||C.PLAYER_SPECIES[r.species].abilityCooldown)),3);}
       ctx.restore();
+      if (r && r.feedbackFlash > 0 && !calm()) { ctx.save(); ctx.globalAlpha = Math.min(.35, r.feedbackFlash * 1.4); ctx.fillStyle = '#efdfb8'; ctx.fillRect(0, 0, canvas.width, canvas.height); ctx.restore(); } // FEATURES.feedbackTiers
       if (r) screenAmbience(r, r.seconds);
       if (renderOverride) return;
       if (r) minimap(r);

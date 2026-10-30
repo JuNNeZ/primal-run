@@ -60,7 +60,7 @@ test('currencies: rav from bosses and amber, fossiler from fossil sites, iridium
   const restore = flags(true, 'currencies');
   try {
     const g = make(), r = g.run; assert.deepEqual(r.currency, { rav: 0, fossils: 0, iridium: 0 });
-    const boss = g.spawn(g.currentLevel().boss, { x: r.player.x + 40, y: r.player.y }, true); g.kill(boss); g.kill(boss); assert.equal(r.currency.rav, 1, 'once per boss');
+    const boss = g.spawn(g.currentLevel().boss, { x: r.player.x + 40, y: r.player.y }, true); g.kill(boss); g.kill(boss); assert.equal(r.currency.rav, 1, 'once per boss'); r.hitStop = 0; // boss-kill hit-stop (feedbackTiers) would swallow the 1/30 s step below
     if (r.amberPiece) { r.player.x = r.amberPiece.x; r.player.y = r.amberPiece.y; assert.equal(g.interact(), true); assert.equal(r.currency.rav, 2); }
     const site = r.map.sites.find(s => s.type === 'fossil'); site.discovered = true; r.activeSite = site.id; g.phase = 'exploration'; g.explore(true);
     assert.equal(r.currency.fossils, 1); assert.equal(g.save.currency.fossils, 1, 'fossils are saved');
