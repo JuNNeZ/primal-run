@@ -24,6 +24,15 @@
   FEATURES.nightPalette = true;
   FEATURES.hudIcons = true;
   FEATURES.lavaTiles = true;
+  // Feedback tiers (FEATURES.feedbackTiers, from the game-feel skill): one preset per event weight so a kill
+  // outweighs a bite and a boss death outweighs a kill. Bites and player hurt keep their own values.
+  FEATURES.feedbackTiers = false;
+  const FEEDBACK_TIERS = Object.freeze({
+    small: { hitStop: 0, shake: 0, flash: 0, bursts: [['dust', 5]] },
+    medium: { hitStop: .06, shake: .08, flash: 0, bursts: [['blood', 14]] },
+    large: { hitStop: .1, shake: .16, flash: 0, bursts: [['dust', 22]] },
+    huge: { hitStop: .18, shake: .35, flash: .25, bursts: [['blood', 30], ['dust', 20]] }
+  });
   const NIGHT_PALETTE = Object.freeze({
     '151b19':'151b19','28372a':'28372a','3f5030':'28372a','586d38':'3f5030',
     '799447':'586d38','a8b15b':'799447','ded392':'bab8a2','443027':'151b19',
@@ -1008,6 +1017,11 @@
       }
       if (attack.elapsed >= attack.duration) r.attack = null;
     }
+    feedback(tier, x, y, seed = 0) { // FEATURES.feedbackTiers
+      const t = FEATURES.feedbackTiers && FEEDBACK_TIERS[tier], r = this.run; if (!t || !r) return;
+      r.hitStop = Math.max(r.hitStop || 0, t.hitStop); r.shake = Math.max(r.shake || 0, t.shake); r.feedbackFlash = Math.max(r.feedbackFlash || 0, t.flash);
+      for (const [kind, count] of t.bursts) this.burst(x, y, kind, count, seed);
+    }
     burst(x, y, kind = 'blood', count = 8, seed = 0) {
       const r = this.run;
       for (let i = 0; i < count; i++) {
@@ -1050,10 +1064,11 @@
     breakBoss(e,amount){
       if(!e.boss||e.mode==='broken')return;
       e.breakMeter=(e.breakMeter||0)+amount;
-      if(e.breakMeter>=100){e.breakMeter=0;e.mode='broken';e.timer=CRIT.bossBreakStagger;e.attackName='BRUDT · ANGRIB NU';e.followUp=false;e.secondBite=false;this.emit('boss_break');this.burst(e.x,e.y,'dust',16,e.id);}
+      if(e.breakMeter>=100){e.breakMeter=0;e.mode='broken';e.timer=CRIT.bossBreakStagger;e.attackName='BRUDT · ANGRIB NU';e.followUp=false;e.secondBite=false;this.emit('boss_break');this.feedback('large',e.x,e.y,e.id);this.burst(e.x,e.y,'dust',16,e.id);}
     }
     kill(e) {
       if(e.rewarded)return; e.rewarded=true;
+      this.feedback(e.boss ? 'huge' : e.elite || e.rare ? 'large' : 'medium', e.x, e.y, e.id);
       const guarded=this.run.map.sites.find(s=>s.guardId===e.id);if(guarded)guarded.guardDefeated=true;
       const r = this.run; r.kills++;r.stats.kills++;r.stats.killsBySpecies[e.kind]=(r.stats.killsBySpecies[e.kind]||0)+1;r.corpses.push({id:e.id,lifetime:60+Math.min(10,e.radius/4),foodLifetime:14+Math.min(4,e.radius/8),poseVariant:e.id%2,spoilAt:7,decayPortions:0,kind:e.kind,x:e.x,y:e.y,direction:e.direction,visualScale:e.visualScale,variant:e.rare?'albino':e.elite?'elite':e.sex==='male'?'male':null,age:0});r.corpses=r.corpses.slice(-32);
       if (e.boss) {
@@ -1300,7 +1315,7 @@
       const r = this.run, dx = r.player.x-e.x, dy = r.player.y-e.y, d = Math.max(1,Math.hypot(dx,dy));
       e.hit = Math.max(0,e.hit-dt); e.cooldown = Math.max(0,e.cooldown-dt);
       if (this.bossCommon(e,dt)) return;
-      if (e.hp <= e.maxHP*.5 && e.bossPhase === 1) { e.bossPhase=2; e.mode='enrage'; e.timer=1.1; e.attackName='FASE 2 · RASERI'; this.emit('boss_enrage'); return; }
+      if (e.hp <= e.maxHP*.5 && e.bossPhase === 1) { e.bossPhase=2; e.mode='enrage'; e.timer=1.1; e.attackName='FASE 2 · RASERI'; this.emit('boss_enrage'); this.feedback('large',e.x,e.y,e.id); return; }
       if (e.mode === 'enrage' || e.mode === 'recover') { e.timer-=dt; if(e.timer<=0){e.mode='chase';e.cooldown=.35;} return; }
       if (e.mode === 'windup') {
         if(this.chargeLaneLost(e,dt))return;
@@ -1349,7 +1364,7 @@
       if (this.bossCommon(e,dt)) return;
       if (e.hp <= e.maxHP * .5 && e.bossPhase === 1) {
         e.bossPhase = 2; e.mode = 'enrage'; e.timer = 1.1; e.followUp = false; e.attackCycle = 0; e.attackName = 'FASE 2 · RASERI';
-        this.burst(e.x, e.y, 'dust', 18, e.id); this.emit('boss_enrage'); return;
+        this.burst(e.x, e.y, 'dust', 18, e.id); this.emit('boss_enrage'); this.feedback('large', e.x, e.y, e.id); return;
       }
       if (e.mode === 'enrage') {
         e.timer -= dt; if (e.timer <= 0) { e.mode = 'chase'; e.cooldown = .2; } return;
@@ -1686,7 +1701,7 @@
       if (r.hitStop > 0) { const stopped = Math.min(dt, r.hitStop); r.hitStop = Math.max(0, r.hitStop - stopped); dt -= stopped; if (dt <= .000001) return; }
       r.seconds += dt;
       if(r.poisonTime>0){r.poisonTime=Math.max(0,r.poisonTime-dt);r.poisonTick-=dt;if(r.poisonTick<=0){r.poisonTick+=1;this.damage(1,null);if(this.phase!=='playing')return;}}
-      for (const timer of ['attackCooldown', 'bite', 'pounce', 'pounceCooldown', 'invulnerable', 'shake', 'slow', 'hurt','staminaDelay','frenzy','tailEmpowered','shieldTime','precisionTime','winded','roarDebuff']) r[timer] = Math.max(0, (r[timer]||0) - dt);
+      for (const timer of ['attackCooldown', 'bite', 'pounce', 'pounceCooldown', 'invulnerable', 'shake', 'slow', 'hurt','staminaDelay','frenzy','tailEmpowered','shieldTime','precisionTime','winded','roarDebuff','feedbackFlash']) r[timer] = Math.max(0, (r[timer]||0) - dt);
       r.inAsh=FEATURES.bossSignatures&&!!r.ashClouds&&r.ashClouds.some(c=>c.until>r.seconds&&Math.hypot(r.player.x-c.x,r.player.y-c.y)<c.radius); // B1c ash cloud: −15 % speed
       if(r.shieldTime===0)r.shield=0;
       const inCombat=r.attack||r.enemies.some(e=>e.alert&&e.damage&&Math.hypot(e.x-r.player.x,e.y-r.player.y)<400);
@@ -1756,7 +1771,7 @@
       for (const p of r.pickups) {
         if(p.kind==='fish'||p.corpseId!==undefined||PLAYER_SPECIES[r.species].diet==='herbivore'&&p.kind==='meat')continue;
         if (Math.hypot(p.x - r.player.x, p.y - r.player.y) >= radius) continue;
-        collected.push(p.id);
+        collected.push(p.id); this.feedback('small', p.x, p.y, p.id);
         if (p.kind === 'meat') {r.stats.food+=p.value; r.meat += p.value; r.totalMeat += p.value; r.xp += p.value; r.score += p.value * 10; r.health = Math.min(r.maxHealth, r.health + foodHeal(r,p.value)); r.effects.push({ x: p.x, y: p.y, text: '+' + p.value + ' ' + MEAT_RARITIES[p.rarity || 0].name.toUpperCase(), color: MEAT_RARITIES[p.rarity || 0].color, life: .55 }); this.emit('pickup'); }
         else if (p.kind === 'dna') this.addDNA(p.value);
         else { r.health = Math.min(r.maxHealth, r.health + p.value); this.emit('pickup'); }
@@ -3706,7 +3721,7 @@
     if(r&&r.buddy&&this.phase==='playing'&&r.seconds>before)this.stepBuddy(dt,(input&&input.buddy)||{});
     return out;
   };
-  const API = { INPUT, BINDING_DEFAULTS, PAD_BINDING_DEFAULTS, PAD_BUTTONS, bindable, BUDDY, FRIEND, encodeChallenge, decodeChallenge, ghostAt, PRESSURE, pressureOpen, CURRENCY, START_RELICS, canStartRelic, dailySquares, LUCK, runLuck, ARMOR, armorPoints, armorFactor, RELICS, RELIC_SETS, RELIC_SOURCES, relicSet, relicStat, NEST_CACHE, TOUGH, BOUNTY, deathTip, IDENTITY, STEALTH, PROP_SIZE, coverAt, EQUILIBRIUM, DIFFICULTIES, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, CUTOUT_SPECIES, cutoutFrame, STATIC_SPECIES, RIG_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, FISH_GAME, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, HUD_LAYOUTS, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
+  const API = { FEEDBACK_TIERS, INPUT, BINDING_DEFAULTS, PAD_BINDING_DEFAULTS, PAD_BUTTONS, bindable, BUDDY, FRIEND, encodeChallenge, decodeChallenge, ghostAt, PRESSURE, pressureOpen, CURRENCY, START_RELICS, canStartRelic, dailySquares, LUCK, runLuck, ARMOR, armorPoints, armorFactor, RELICS, RELIC_SETS, RELIC_SOURCES, relicSet, relicStat, NEST_CACHE, TOUGH, BOUNTY, deathTip, IDENTITY, STEALTH, PROP_SIZE, coverAt, EQUILIBRIUM, DIFFICULTIES, TRADEOFF_MUTATIONS, ASH, ashGateOpen:r=>secretsAllFound(r), BOSS_LOOK, COMBAT_COLORS, NIGHT_PALETTE, NEW_PLAYERS, NEW_NPCS, CUTOUT_SPECIES, cutoutFrame, STATIC_SPECIES, RIG_SPECIES, STATIC_SCALE, HERBIVORE_KINDS, kindOf, TAIL_ARC, BOSS_TUNING, UPGRADE_STEP, XP_CURVE, REROLLS, MUTATION_CHOICES, ALT_ABILITIES, MUTATION_TAGS, SET_BONUSES, SET_SIZE, BANISH, PITY, GROWTH, MASTERY, TROPHY_PICKS, PIN, HOP, CALL, BLUEPRINTS, EVOLUTIONS, TROPHIES, upgradePrice, upgradeUnlocked, tagCount, evolutionReady, speciesOrder, fishReach, FISH_GAME, pondRadiusFactor, pondContains, menuPilot, PACK, NATURE, isRaining, DAYNIGHT, darknessAt, DROUGHT, TRACKS, FISH_KING, skinFits, CHALLENGES, CHALLENGE_DNA, MAX_CHALLENGES, dailyHunt, dailyKey, sanitizeDailyHunts, NAV:{navGrid,navFlow,navStep,navLineClear,navBlocked,NAV_CELL}, RECORDS, PX_PER_METER, formatDistance: RECORDS ? RECORDS.formatDistance : px => Math.round(px / PX_PER_METER) + ' m', FEATURES, HUD_LAYOUTS, isDeepWater, isLava, canSwim, ACHIEVEMENTS, SKINS, SPECIES_UNLOCKS, ZONES, zoneAt, MAP_SCALE, RIVALS, STAMINA, CRIT, critChance, legacyPlayerFrame, playerFrame,locomotionFrame,behaviorFrame,abilityCost,mutationWeight,LEVELS,SECRET_SEED,Game, isWater, WIDTH, HEIGHT, BITE_ANIMATION, STAGES, SPECIES, SPECIES_LABELS, PLAYER_SPECIES, MUTATIONS, MUTATION_RARITIES, UPGRADES, ROCKS, MEAT_RARITIES, SPECIES_COLORS, BIOMES, riverCurve, riverDistance, suitableHabitat, createMap, SAVE_KEY, sanitizeSave, upgradeCost };
   if (EXTRAS) EXTRAS.install(API);
   if (TELEMETRY) TELEMETRY.install({ Game, FEATURES });
   // ---- Pack kills (FEATURES.allyKills, 2026-10-23, Jonas: "Byttet er mit, men den skal rekorde det som kills af
